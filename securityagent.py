@@ -57,7 +57,7 @@ def encode_all_png_images(directory_path: str) -> Union[List[dict], dict]:
 
     png_files = [f for f in os.listdir(directory_path) if f.lower().endswith(".png")]
     if not png_files:
-        return {"error": "No PNG images found in the directory."}
+        return {"error": ""}
 
     encoded_images = []
     for file_name in png_files:
