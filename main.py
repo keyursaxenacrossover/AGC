@@ -6,6 +6,7 @@ from orchestrator import orchestrate
 from contexter import update_context
 from config import imagedir
 
+os.makedirs(imagedir, exist_ok=True)
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = imagedir  # Directory to temporarily store uploaded images
 app.config['ALLOWED_EXTENSIONS'] = {'png'}
