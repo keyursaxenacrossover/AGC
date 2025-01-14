@@ -19,7 +19,7 @@ prompter = ConversableAgent(
         "For which we suggested this response:\n<original suggested response>\n\n"
         "And we identified these improvements that will enhance the response:\n<list of your improvements>\n\n"
         "```\n"
-        "7. Finally print your revised response to showcase **exactly** how your response is superior to the suggested response. To reiterate, **there is no room for vagueness or supposition or assumptions in your response.** On the last line after your response, also print 'LLM IMPROVEMENT NEEDED'"
+        "7. Finally, print your revised response to showcase **exactly** how your response is superior to the suggested response. To reiterate, **there is no room for vagueness or supposition or assumptions in your response.** On the last line after your response, also print 'LLM IMPROVEMENT NEEDED'"
     ),
     llm_config={
         "config_list": [{"model": "gpt-4o", "api_key": os.getenv("OPENAI_API_KEY")}]
