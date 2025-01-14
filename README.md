@@ -17,6 +17,12 @@ How it works:
 ```
 8. The user is free to resume the conversation.
 
+Note the following helper files:
+1. config.py - handles passing directories for the project dynamically to various other files.
+2. process_json_docs.py - handles chunking of the JSON articles downloaded via the Zendesk API. Uses hashing to determine if chunks need to be updated (in case of new/updated articles) or kept as is for the next run.
+3. generate_embeddings.py - handles embedding the chunks in the FAISS index for speedy lookups and encodes the chunks in metadata. It is regenerated fully every run to avoid any possibility of old info remaining.
+4. testfaisslookup.py - used for testing the FAISS lookup with a query directly outside the chatbot workflow, good for debugging the FAISS index itself.
+
 How to use (for Windows, extrapolate to Mac and Linux based on these instructions, I am not familiar with these systems):
 
 1. Get the 'Source code (zip)' from the latest release: https://github.com/keyursaxenacrossover/AGC/releases and copy the 'AGC-AGC' folder from the archive to your machine. Rename it 'AGC' so in this AGC folder you should see several other folders and several .py files.
