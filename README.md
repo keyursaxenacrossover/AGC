@@ -45,4 +45,17 @@ Extrapolate these instructions for Mac and Linux as needed.
 10. The chatbot interface will load. Use the input box at the bottom to type your message. You can attach PNG images using the browse button or drag and drop them.
 11. Click "Send". The application will process your input, showing a "Processing" message. The workflow can be observed in the PowerShell window.
 
+## Thoughts about Autogen
+Don't.
+
+I have spent a considerable time getting 4o/o1 to code the complex agents in a harmonized workflow. These include group chats, nested chats, swarm chats, captain agent chats, reasoning agent chats. These are good for small "demo" type projects which is evident in the notebook examples in autogen. However, once you start to build a more complex project, things do not align so well. I have the following observations:
+
+1. No clear way to decouple core systems in complex autogen implementations. The only real way I found to clearly isolate my agents to make them "individual" was to utilize the basic conversable agent. The other types of agents/workflows do not provide me with the precise control I need to orchestrate my plan.
+2. No good way to debug to isolate the root cause. As autogen workflows are primarily LLM driven, there is no good way to understand why your captainagent decided that deleting your stylesheet (and did this by recruiting a coder agent and writing code autonomously) was a good solution for when the user asked "I am not happy with my current style, what to do?"
+3. No clear way to control and log key outputs wihtin a chat flow: Taking the example of the captain agent before, the output is also not in a format that I can control. I planned to use this originally to take in the user input -> search the local faiss index -> make a response -> qc the response -> respond -> store context for use next time. Sounds good in theory but fails spectacularly when trying to implement. Neither o1 nor 4o could code such an agent with the degree of control and output structure I desired and log the key interaction points in a file.
+4. Messy group chats: I planned to have 5 agents in a group chat to handle the flow from the user input to the final response: detect malicious intent in input -> query db -> respond -> qc response -> store context -> back to user. It was a complete disaster! Speakers were randomly selected, they made random inputs, at one point my qc decided to query the faiss index about the boiling point of nitroglycerin - I just asked about the local temperature in my area! Same result with swarm.
+
+Long story short, AI, or more accurately, LLM, since these models are not true AI, is **not** ready to be autonomous. It requires clear guidance and structured workflows and constraints to be effective. Same difference where you see the noob in an FPS game firing from the hip and spraying bullets everywhere compared to a veteran aiming down the sights and hitting the targets.
+For me, the best approach to follow the "agentic AI" philosophy by defining "Agents" as core systems where LLM can play to its strengths **but** do **not** rely on a framework. Use basic Python and OpenAI's API to build your own logic tailored to your requirements to get the desired granular control and flexibility.
+
 ---
