@@ -1,44 +1,48 @@
-About:
-This is an autogen-based chatbot that relies on a FAISS based index to lookup answers for user inputs. The index is currently built using the Discover XI (Tivian) knowledge base articles from Zendesk.
+# Autogen-Based Chatbot
 
-How it works:
-1. main.py handles the workflow.
-2. The combined user input (text+images) are sent to securityagent.py which processes it for malicious intent after generating descriptions from attached images. If malicious intent is detected, we inform the user and end the workflow. If not, we proceed with the next step.
-3. The input (with image descriptions) is handed off to orchestrator.py which passes it to thinker.py. This is our first responder that searches the local FAISS index for relevant data. The search is a tool registered with the autogen agent and the function is available in faisslookup.py. If no data is found, it innforms the orchestrator which terminates the workflow and informs the user that we do not have sufficient info to address their input.
-4. If the thinker finds information, if composes a draft response and sends it to the orchestrator.
-5. The orchestrator then sends this to prompter.py which acts as the final responder. It searches for possible improvements to the thinker response using the same FAISS index. It decides whether the thinker response is acceptable as is, or if improvements are needed. If improvements are possible it makes them and composes the final reply.
-6. We then store the chat context so far using contexter.py which we send in subsequent messages.
-7. At this point, the frontend should display the final response based on the outcomes decided by the orchestrator's routing agent:
-```
-"1. If the Thinker's response is 'NO LLM INFO', politely inform the user that we have insufficient knowledge to answer their inquiry."
-"2. If the Prompter's response contains 'LLM APPROVED', output the Thinker's response exactly as it is, minus 'LLM APPROVED'."
-"3. If the Prompter's response contains 'LLM IMPROVEMENT NEEDED', output the Prompter's improved response exactly as it is, minus 'LLM IMPROVEMENT NEEDED'."
-"4. Handle unexpected scenarios with: 'An unexpected error occurred.'"
-```
-8. The user is free to resume the conversation.
+## About
+This is an autogen-based chatbot that relies on a FAISS-based index to lookup answers for user inputs. The index is currently built using the Discover XI (Tivian) knowledge base articles from Zendesk.
 
-Note the following helper files:
-1. config.py - handles passing directories for the project dynamically to various other files.
-2. process_json_docs.py - handles chunking of the JSON articles downloaded via the Zendesk API. Uses hashing to determine if chunks need to be updated (in case of new/updated articles) or kept as is for the next run.
-3. generate_embeddings.py - handles embedding the chunks in the FAISS index for speedy lookups and encodes the chunks in metadata. It is regenerated fully every run to avoid any possibility of old info remaining.
-4. testfaisslookup.py - used for testing the FAISS lookup with a query directly outside the chatbot workflow, good for debugging the FAISS index itself.
+## How It Works
+1. **`main.py`** handles the workflow.
+2. The combined user input (text + images) is sent to **`securityagent.py`**, which processes it for malicious intent after generating descriptions from attached images. If malicious intent is detected, the user is informed, and the workflow ends. Otherwise, the process continues.
+3. If iumages are provided, they are sent to the **`.\images`** directory and after processing, transferred to the **`.\images_to_delete`** directory.
+4. The input (with image descriptions) is handed off to **`orchestrator.py`**, which passes it to **`thinker.py`**. This acts as the first responder, searching the local FAISS index for relevant data using **`faisslookup.py`**, a tool registered with the autogen agent. If no data is found, the orchestrator terminates the workflow and informs the user about the lack of sufficient information.
+5. If the thinker finds information, it composes a draft response and sends it to the orchestrator.
+6. The orchestrator sends this draft to **`prompter.py`**, the final responder. It searches for possible improvements to the thinker response using the same FAISS index. It determines whether the response is acceptable as is or needs improvement. If improvement is possible, it makes the necessary changes and composes the final reply.
+7. The chat context is stored using **`contexter.py`** for subsequent messages.
+8. At this point, the frontend displays the final response based on the outcomes decided by the orchestrator's routing agent:
+    - **Scenario 1**: If the Thinker's response is `NO LLM INFO`, inform the user that insufficient knowledge is available to answer their inquiry.
+    - **Scenario 2**: If the Prompter's response contains `LLM APPROVED`, output the Thinker's response exactly as it is, minus `LLM APPROVED`.
+    - **Scenario 3**: If the Prompter's response contains `LLM IMPROVEMENT NEEDED`, output the Prompter's improved response exactly as it is, minus `LLM IMPROVEMENT NEEDED`.
+    - **Scenario 4**: Handle unexpected scenarios with: `An unexpected error occurred.`
+9. The user can then resume the conversation.
 
-How to use (for Windows, extrapolate to Mac and Linux based on these instructions, I am not familiar with these systems):
+## Helper Files
+1. **`config.py`**: Dynamically passes directories for the project to various other files.
+2. **`process_json_docs.py`**: Handles chunking of the JSON articles downloaded via the Zendesk API. Uses hashing to determine if chunks need updating (for new/updated articles) or can remain unchanged for the next run.
+3. **`generate_embeddings.py`**: Embeds the chunks in the FAISS index for speedy lookups and encodes the chunks in metadata. It is fully regenerated in every run to avoid retaining outdated information.
+4. **`testfaisslookup.py`**: Used for testing the FAISS lookup with a query directly outside the chatbot workflow, useful for debugging the FAISS index.
 
-1. Get the 'Source code (zip)' from the latest release: https://github.com/keyursaxenacrossover/AGC/releases and copy the 'AGC-AGC' folder from the archive to your machine. Rename it 'AGC' so in this AGC folder you should see several other folders and several .py files.
-2. Add the following system level environment variables on the machine where you will be running the code:
-- OPENAI_API_KEY with your key.
-- AUTOGEN_USE_DOCKER set to 0.
-3. Ensure that you have the latest Python 3.12 installed https://www.python.org/downloads/release/python-3128/ (scroll down for installers, not tested with other builds and 3.13 is not compatible with autogen).
-4. Verfy that Python is working my entering `python --version` in PowerShell. You should get an output like 'Python 3.12.8' depending on your build, if you get 'The term 'python' is not recognized' instead, fix your Python installation (probably need to add it to PATH).
-5. Once Python is installed, Navigate to your AGC directory in PowerShell (`cd C:\AGC` if you placed the AGC folder in your C drive directory, for example).
-6. Run `pip install -r requirements.txt`
-7. Once the process is complete, run `python .\main.py`
-8. Wait for the console to show something like:
-```
- * Debugger is active!
- * Debugger PIN: 806-584-423
- ```
- 9. Then, open your web browser (please do not use IE for the sake of everyone's sanity) and navigate to http://127.0.0.1:5000/
- 10. The chatbot interface should load up. At the bottom, you should see 'Type your message here...' where you input text, and a browse button where you can click to select PNG image files to add context to your text input. You can also directly drag and drop the PNG files on this button to attach them.
- 11. Once ready, click send. The application will start processing your input and show a "Processing" message while it prepares a response. You can see the workflow directly in the PowerShell window where you ran `python .\main.py`
+## How to Use (Windows Instructions)
+Extrapolate these instructions for Mac and Linux as needed.
+
+1. Download the 'Source code (zip)' from the [latest release](https://github.com/keyursaxenacrossover/AGC/releases) and extract the application folder from the archive to your machine.
+2. Add the following system-level environment variables to the machine where the code will run:
+    - `OPENAI_API_KEY`: Set this to your OpenAI API key.
+    - `AUTOGEN_USE_DOCKER`: Set this to `0`.
+3. Ensure Python 3.12 is installed. Download it from [Python.org](https://www.python.org/downloads/release/python-3128/). Scroll down for installers. **Do not use Python 3.13 as it is incompatible with autogen**.
+4. Verify Python installation by entering `python --version` in PowerShell. If you see `'The term 'python' is not recognized'`, fix the installation (likely need to add Python to PATH).
+5. Navigate to the application folder directory in PowerShell, e.g., `cd C:\AGC-AGC` if placed in the C drive and if the folder is named AGC-AGC.
+6. Run the command: `pip install -r requirements.txt`.
+7. After installation, run: `python .\main.py`.
+8. Wait for the console to display something like:
+    ```
+     * Debugger is active!
+     * Debugger PIN: 806-584-423
+    ```
+9. Open your web browser (avoid using IE) and go to [http://127.0.0.1:5000/](http://127.0.0.1:5000/).
+10. The chatbot interface will load. Use the input box at the bottom to type your message. You can attach PNG images using the browse button or drag and drop them.
+11. Click "Send". The application will process your input, showing a "Processing" message. The workflow can be observed in the PowerShell window.
+
+---
