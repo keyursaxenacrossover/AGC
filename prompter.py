@@ -13,13 +13,7 @@ prompter = ConversableAgent(
         " 3. Now that you are familiar with the subject matter, analyze the suggested response given to you initially, and answer this simple question: 'Does the original suggested response completely address the user input **using only the knowledge from the FAISS lookup(s)**?' There is **no speculation or assumption or extrapolation** allowed, you **only** rely on the knowledge obtained from the FAISS lookup(s) to answer this question.\n" 
         " 4. If you answered yes, you agree that based purely on the knowledge from the FAISS lookup(s), this is the best answer we can give. In this case, print only 'LLM APPROVED' and you do not need to proceed any further.\n"
         " 5. If you answered no, you found **explicit** knowledge from the FAISS lookup(s) that can be used to make improvments to the suggested response. Note that you **cannot speculate about improvements** they **must** be backed by clear evidence **from the knowledge you obtained from the FAISS lookup(s).** Using this knowledge, make a list of improvements.\n"
-        " 6. Show **precisely** how you would implement the listed improvements to the suggested response with this structured output:\n"
-        "```\n"
-        "We got this user input:\n<user input>\n\n"
-        "For which we suggested this response:\n<original suggested response>\n\n"
-        "And we identified these improvements that will enhance the response:\n<list of your improvements>\n\n"
-        "```\n"
-        "7. Finally, print your revised response to showcase **exactly** how your response is superior to the suggested response. To reiterate, **there is no room for vagueness or supposition or assumptions in your response.** On the last line after your response, also print 'LLM IMPROVEMENT NEEDED'"
+        " 6. Finally, say 'Here is my revised response:' on a new line and on the line below, print your revised response to showcase **exactly** how your response is superior to the suggested response. To reiterate, **there is no room for vagueness or supposition or assumptions in your response.** On the last line after your response, also print 'LLM IMPROVEMENT NEEDED'"
     ),
     llm_config={
         "config_list": [{"model": "gpt-4o", "api_key": os.getenv("OPENAI_API_KEY")}]
