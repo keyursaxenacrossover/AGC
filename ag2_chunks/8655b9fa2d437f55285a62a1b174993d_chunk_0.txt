@@ -1,0 +1,100 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K" class="wysiwyg-text-align-justify">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article provides information on selecting actions for participants in a survey project. It covers various actions that can be applied to selected participants or all participants, including generating codes, inviting participants, sending reminders, and managing participant data.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">The actions listed in the following table can be applied to selected participants or all. To do so, you select the desired participants by ticking the checkboxes in the <strong>Actions</strong> column or via either of the checkboxes <strong>All entries of this page</strong> and <strong>All entries</strong>. Then you specify the desired action in the dropdown list and confirm by clicking Execute.</p>
+<table class="wysiwyg-text-align-justify" style="height: 1199px;" border="1" width="736" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 380.0px;"> <col style="width: 380.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" style="width: 363.872px;" data-highlight-colour="#c0b6f2">
+<p><strong>Action</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 364.826px;" data-highlight-colour="#c0b6f2">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td style="width: 355.851px;">
+<p>Generate codes</p>
+</td>
+<td style="width: 356.806px;">
+<p>If you choose this action, it will generate the access codes that the participants can use to log into the survey.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 355.851px;">
+<p>Invite</p>
+</td>
+<td style="width: 356.806px;">
+<p>Using this action, you can send invitation emails to the selected participants. You can customize the template for an invitation mail.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 355.851px;">
+<p>Remind</p>
+</td>
+<td style="width: 356.806px;">
+<p>Using this action, you can send reminder emails to the selected participants.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 355.851px;">
+<p>Only in project type “Employee survey”: Delete allocations to organizational structure</p>
+</td>
+<td style="width: 356.806px;">
+<p>This action allows you to delete the allocation of the selected participants to a particular unit.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 355.851px;">
+<p>Only in project type “Employee survey”: Allocate participants to an organizational unit</p>
+</td>
+<td style="width: 356.806px;">
+<p>This action allows you to allocate the selected participants to a specific organizational unit. When using the additional feature “Function”, you can also define the function.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 355.851px;">
+<p>Bulk edit</p>
+</td>
+<td style="width: 356.806px;">
+<p>This action allows you to modify several participant records in a single step.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 355.851px;">
+<p>Reset and delete data</p>
+</td>
+<td style="width: 356.806px;">
+<p>The participants will be reset. The participants’ disposition codes will be reset to 11 = “not yet invited” or 12 = “active” (11: participants who have not been invited yet; 12: participants who have already received an invitation mail). Already collected result data of the participants will be deleted. Participants who have already taken part in the survey may participate again.</p>
+<p>For panel and master data surveys, please note: Bonus point allocations from a final page or by bonus trigger cannot be reset by using this action. You can manipulate the bonus points of the affected panelists via the panelist's administration or the detail view.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 355.851px;">
+<p>Reset without deleting survey data</p>
+</td>
+<td style="width: 356.806px;">
+<p>The participants’ disposition codes will be reset as described above. However, the already collected result data will not be deleted.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 355.851px;">
+<p>Disposition code 15 (not available)</p>
+</td>
+<td style="width: 356.806px;">
+<p>If invitation mails are bounced, you can set the corresponding participants to disposition code 15.</p>
+<ul>
+<li>
+<p>These participants will be except from all future mailings.</p>
+</li>
+<li>
+<p>Code 15 will be taken into account in the field report during evaluation.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="width: 355.851px;">
+<p>Delete</

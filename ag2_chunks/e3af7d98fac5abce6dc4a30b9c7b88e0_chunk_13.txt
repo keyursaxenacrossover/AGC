@@ -1,0 +1,79 @@
+>Load Configuration</strong>: If a saved configuration exists, select it from the drop-down list and click <strong>Load configuration</strong>.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017213460626">
+</li>
+<li>
+<strong>Define Base</strong>: If no saved configuration exists:
+<ul>
+<li>
+<strong>Select Panel Statuses</strong>: Choose which panel statuses to include in the evaluation.</li>
+<li>
+<strong>Display Options</strong>: Decide how the results should be displayed.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017226317842">
+</li>
+<li>
+<strong>Select Data</strong>: Choose the performance data and/or master data to be evaluated by clicking on the arrow icons to open and close lists.</li>
+<li>
+<strong>Create Statistics</strong>: Click <strong>Create statistics</strong> to generate the report.</li>
+</ul>
+</li>
+<li>
+<strong>Save Configuration</strong>: If you want to reuse the evaluation setup in the future, save the configuration.</li>
+<li>
+<strong>Download Results</strong>: Click <strong>Excel export of statistics</strong> to download the results.</li>
+</ol>
+<div class="flex-shrink-0 flex flex-col relative items-end wysiwyg-text-align-justify">
+<div>
+<div class="pt-0">
+<div class="gizmo-bot-avatar flex h-8 w-8 items-center justify-center overflow-hidden rounded-full">
+<div class="relative p-1 rounded-sm flex items-center justify-center bg-token-main-surface-primary text-token-text-primary h-8 w-8"> </div>
+</div>
+</div>
+</div>
+</div>
+<div class="group/conversation-turn relative flex w-full min-w-0 flex-col agent-turn wysiwyg-text-align-justify">
+<div class="flex-col gap-1 md:gap-3">
+<div class="flex flex-grow flex-col max-w-full">
+<div class="min-h-[20px] text-message flex w-full flex-col items-end gap-2 whitespace-pre-wrap break-words [.text-message+&amp;]:mt-5 overflow-x-auto" dir="auto" data-message-author-role="assistant" data-message-id="5d2f4365-d715-4020-b2ba-443cda1e82da">
+<div class="flex w-full flex-col gap-1 empty:hidden first:pt-[3px]">
+<div class="markdown prose w-full break-words dark:prose-invert light">
+<h3 id="h_01J3G40MYYF28FF1DVWMQWJMB5">Setting Options in Detail</h3>
+<h4 id="h_01J3G40MYYTCG9RR9M6YR9E65Q">Base Criteria</h4>
+<p>You can limit the base of your panel statistics using the following criteria:</p>
+<ul>
+<li>
+<strong>Panel Group Category</strong>: Defaults to the standard category if none is specified.</li>
+<li>
+<strong>Panel Group</strong>: Defaults to the standard panel group if none is specified.</li>
+<li>
+<strong>Language Version</strong>: Select the desired language version.</li>
+<li>
+<strong>Filter</strong>: Use grouping filters to refine your selection.</li>
+<li>
+<strong>Split Variables 1 and 2</strong>: Options include key system data (u_gender, pstatus, pinput, site_id, reg_code, pci) and all master data.</li>
+<li>
+<strong>Period of Entry into Panel</strong>: Define the time frame for panel entry.</li>
+<li>
+<strong>Panel Status</strong>: You must select at least one panel status, defaulting to “active” if none is checked.</li>
+</ul>
+<h4 id="h_01J3G40MYYTCVBC9PWYQ3WSA2E">Display Options</h4>
+<p>Customize how results are displayed:</p>
+<ul>
+<li>
+<strong>Multiple Variables Display</strong>: Choose whether results are displayed in a single or separate table blocks. For a single table block, check "Display results for all variables in the same table block".</li>
+<li>
+<strong>Display Modes for Multiple Split Variables</strong>:
+<ul>
+<li>
+<strong>Nested</strong>: Shows all possible combinations of split variable characteristics for each characteristic of the analyzed variable.</li>
+<li>
+<strong>Side-by-Side</strong>: Separately counts frequencies and sums of characteristics for split variables, showing percentages.</li>
+<li>
+<strong>Cartesian Product</strong>: Lists frequency and percentage for each combination of characteristics from the analyzed variable and split variable(s).</li>
+</ul>
+</li>
+</ul>
+<h4 id="h_01J3G40MYYN4R5JN3P9FXT0A5T">Performance Data</h4>
+<p>There is a variety of important performance data at your disposal: u_gender, pstatus, pinput, md_status, md_num_updates, md_num_invites, reg_code, site_id, and pci.</p>
+<p>Additionally, you can also use all tracking variables.</p>
+<h4 id="h_01J3G40MYYKPPCV7545CX2CTD4">Master Data</h4>
+<p>All master data with answer categories are available, and you can limit the list to specific master data categories for clarity. Text variables can be made available for specific analysis scenarios upon request to support.</p>
+<h3 id="h_01J3G40MYYRBCJYNHH41NSPWXB">Saving and Deleting Configurations</h3>
+<h4 id="

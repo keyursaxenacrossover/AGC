@@ -1,0 +1,112 @@
+The table lists all the characteristics a poll can have.</p>
+<table class="relative-table wysiwyg-text-align-justify" style="width: 95.8416%; margin-right: auto; margin-left: auto;" border="1">
+<colgroup> <col style="width: 13.9555%;"> <col style="width: 17.0596%;"> <col style="width: 68.99%;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center">Fields</th>
+<th class="wysiwyg-text-align-center">Wildcard</th>
+<th class="wysiwyg-text-align-center">Meaning</th>
+</tr>
+<tr>
+<td>
+<p>Allow participation for non-panelists</p>
+</td>
+<td> </td>
+<td>
+<p>There are two types of polls:</p>
+<ul>
+<li>Panelist polls: Only logged-in panelists can participate.</li>
+<li>Anonymous polls: They can be answered by non-panelists as well.</li>
+</ul>
+<p>With anonymous quick polls, you have fewer possibilities for evaluation. Notably, the result data cannot be matched to panelists.</p>
+</td>
+</tr>
+<tr>
+<td>Title</td>
+<td> </td>
+<td>
+<p>The internal poll title. This title may not contain special characters.</p>
+<p>Optionally, you can enter the internal title in the external view via a wildcard.</p>
+</td>
+</tr>
+<tr>
+<td>Question text</td>
+<td>
+<p>{$poll.poll_question}</p>
+</td>
+<td>
+<p>The actual question, for example: “Who do you think will win the World Cup?”</p>
+<p>Optionally, you may design your text using the rich text editor.</p>
+</td>
+</tr>
+<tr>
+<td>Headline</td>
+<td>{$poll.poll_header}</td>
+<td>
+<p>Optional explanatory text.</p>
+<p>Is displayed in the standard panel below the question text.</p>
+<p>Optionally, you may design your text using the rich text editor.</p>
+</td>
+</tr>
+<tr>
+<td>Footer</td>
+<td>{$poll.poll_footer}</td>
+<td>
+<p>Optional text element, which is displayed in the lower section of the poll.</p>
+<p>Optionally, you may design your text using the rich text editor.</p>
+</td>
+</tr>
+<tr>
+<td>Text on results display</td>
+<td> </td>
+<td>
+<p>Text that is optionally displayed after voting. E.g. “Thank you for voting!”</p>
+<p>Optionally, you may design your text using the rich text editor.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Maximum scale of results display</p>
+</td>
+<td> </td>
+<td>
+<p>Defines how broad result bars may be in relation to the</p>
+<p>complete breadth of the poll table. The entry is in percent.</p>
+</td>
+</tr>
+<tr>
+<td>Question type</td>
+<td> </td>
+<td>
+<p>Desired question type. You can choose between single or multiple response lists.</p>
+</td>
+</tr>
+<tr>
+<td>Active</td>
+<td> </td>
+<td>
+<p>Only active polls will be displayed.</p>
+<p>If several polls are active in a language version, use the “Display quick poll” option in the “Quick Poll” function module to define which of them should be displayed.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Start date / End date for participations</p>
+</td>
+<td> </td>
+<td>
+<p>You can define a participation period. Outside this period, the poll is visible, but participation is only possible during the participation period.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="viewing-results" class="wysiwyg-text-align-justify"><strong>Viewing Results</strong></h2>
+<p class="wysiwyg-text-align-justify">The edit dialog of a poll contains a <strong>View results</strong> button with which you can open the result overview.</p>
+<p class="wysiwyg-text-align-justify">You can delete the results by clicking on <strong>Delete results</strong>. Please note that by doing so the poll results are deleted irrevocably.</p>
+<h2 id="downloading-results-of-panelist-polls" class="wysiwyg-text-align-justify"><strong>Downloading Results of Panelist Polls</strong></h2>
+<p class="wysiwyg-text-align-justify">In normal, personalized polls, the Export Participant Answers function allows you to download a CSV file that contains selected address data and the answers of each participant.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify">Write rights for “panel_quickpolls” are needed for using the export.</p>
+<h1 id="tasks" class="sc-dliRfk eKiWTu wysiwyg-text-align-justify">Tasks</h1>
+<p class="wysiwyg-text-align-justify">Experienced community managers appreciate the broad range of feedback methods offered by EFS: It allows them to switch elegantly between various quantitative and qualitative methods. Freely definable tasks are an additional component of your methodological portfolio.</p>
+<p class="wysiwyg-text-align-justify">A task can be any activity that can be connected with a click on a link in the to-do list. It is up to your creativity to define

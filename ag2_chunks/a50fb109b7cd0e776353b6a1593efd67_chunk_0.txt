@@ -1,0 +1,66 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K" class="wysiwyg-text-align-justify">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article provides a comprehensive guide to EFS Reporting+, TIVIAN's solution for evaluating results from EFS Survey and EFS People projects. It covers the basics of creating and managing reports, selecting source data, and importing external data for analysis.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">EFS Reporting+ is a comprehensive solution for evaluating EFS Survey and People projects. It features intuitive drag-and-drop interfaces and streamlined workflows for efficiency. Supports all quantitative project types, including anonymous, personalized, panel, and master data surveys. Allows data from open-ended questions and external sources. Offers flexible participant pool definition and customizable evaluation tables. Aggregations, key figures, pie, and bar charts enhance the clarity of reports.</p>
+<ul>
+<li><a href="#overview">Report Manager Overview</a></li>
+<li><a href="#building-a-report-structure">Building a report structure</a></li>
+<li><a href="#selecting-source-data">Selecting source data</a></li>
+</ul>
+<h2 id="overview" class="wysiwyg-text-align-justify"><strong>Report Manager Overview</strong></h2>
+<p class="wysiwyg-text-align-justify">To open the report manager, click on the menu item EFS Reporting+ in the survey menu of your project. </p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The head section lists the most important properties of the project.</p>
+</li>
+<li>
+<p>The list below contains all the reports of the projects that have been created so far. Listed are the title, the author, and the date of the last change.</p>
+</li>
+<li>
+<p>In order to edit one of the existing reports, click on it and select the appropriate button below the list:</p>
+<ul>
+<li>
+<p><strong>Open</strong>: This will open the report. Alternatively, you can also open a report by double-clicking on its title. Please note: A report can only be edited by one user at a time. If you try to open a report that is being edited by another user, this will prompt a message telling you that the report is currently blocked. Now you can either wait or view the report in read-only mode. In read-only mode, the drag-and-drop function and other actions are disabled and all icons, buttons, and settings are greyed out.</p>
+</li>
+<li>
+<p><strong>Edit</strong>: You can change the entries for the title, description, and author in the dialog.</p>
+</li>
+<li>
+<p><strong>Copy</strong>: A copy of the report will be created.</p>
+</li>
+<li>
+<p><strong>Delete</strong>: The report will be deleted. Please note that any existing export files will also be deleted. Especially if you wish to keep export files of the report available on EFS Survey Status, you should not delete the report.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>If you wish to create another report, select the <strong>Create Report</strong> button and follow the instructions.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">To use <em>EFS Reporting+</em>, you need to write rights to the ACL right <em>report_reporting</em>. Otherwise, you won’t be able to see the <em>EFS Reporting+</em> menu.</p>
+<h3 id="creating-a-report" class="wysiwyg-text-align-justify"><strong>Creating a report</strong></h3>
+<p class="wysiwyg-text-align-justify">To create a new report, please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>All standard texts in the new report, e.g. information on the project or the labeling of the first chapter, will be automatically preset in your admin area language. Therefore, before opening the report manager, please set your <em>EFS</em> admin area to the language in which you want to create the report. (Some of the preset texts cannot be changed at a later date.)</p>
+</li>
+<li>
+<p>Click on the <strong>Create Report</strong> button.</p>
+</li>
+<li>
+<p>Enter the title.</p>
+</li>
+<li>
+<p>Optionally, you can add a description or name the author of the report.</p>
+</li>
+<li>
+<p>Your report is automatically created in the default survey language shown in the report dialog under <strong>Language</strong>. Optionally, you can import all languages available for your report by selecting <strong>All Languages</strong> from the drop-down list.</p>
+</li>
+<li>
+<p>In personalized surveys, you can optionally select participant or panelist data: These data will then be included in the report and will be available for evaluation. Please note that you will not be able to return to this option later on.</p>
+</li>
+<li>
+<p>In panel and master data surveys, you can select panel-specific data such as master data or performance data (Chapter 4.3, p. 18). Please note that you will not be able to return to this option later on.</p>
+</li>
+<li>
+<p>Furthermore, you can select

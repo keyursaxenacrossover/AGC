@@ -1,0 +1,158 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article provides comprehensive information about tracking variables in EFS (Enterprise Feedback Suite). It covers various types of tracking variables, their meanings, and how they are used to monitor panelist behavior and survey participation.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">Tracking variables are essential for understanding panelist engagement and survey performance. This guide explains the different tracking variables available in EFS, their data types, and their specific purposes.</p>
+<p class="wysiwyg-text-align-justify"><strong>Note: </strong>All tracking data explained below covers at most the 380-day default interval. This applies, in particular, to counter variables e.g. track_num_completed: This value is the number of all completed panel and master data surveys during the last 380 days. </p>
+<p class="auto-cursor-target" style="text-align: center;"> </p>
+<table class="wrapped relative-table" style="width: 84.9946%; margin-right: auto; margin-left: auto;" border="1">
+<colgroup>
+<col style="width: 28.787878%;">
+<col style="width: 14.772727%;">
+<col style="width: 12.878788%;">
+<col style="width: 8.838384%;">
+<col style="width: 34.72025%;">
+</colgroup>
+<tbody>
+<tr>
+<th><span style="color: #000000; text-decoration: none;">Variable</span></th>
+<th>
+<div class="page" style="text-decoration: none;" title="Page 214">
+<div class="section">
+<div class="layoutArea">
+<div class="column">
+<p>Meaning</p>
+</div>
+</div>
+</div>
+</div>
+</th>
+<th>
+<div class="page" style="text-decoration: none;" title="Page 214">
+<div class="section">
+<div class="layoutArea">
+<div class="column">
+<p>Export variable</p>
+</div>
+</div>
+</div>
+</div>
+</th>
+<th>
+<div class="page" style="text-decoration: none;" title="Page 214">
+<div class="section">
+<div class="layoutArea">
+<div class="column">
+<p>Data type</p>
+</div>
+</div>
+</div>
+</div>
+</th>
+<th colspan="1">
+<div class="page" style="text-decoration: none;" title="Page 214">
+<div class="section">
+<div class="layoutArea">
+<div class="column">
+<p>Description</p>
+</div>
+</div>
+</div>
+</div>
+</th>
+</tr>
+<tr>
+<td>
+<div class="page" style="text-decoration: none;" title="Page 214">
+<div class="section">
+<div class="layoutArea">
+<div class="column">
+<p>track_date_avgratinggiven</p>
+</div>
+</div>
+</div>
+</div>
+</td>
+<td>
+<div class="page" style="text-decoration: none;" title="Page 214">
+<div class="section">
+<div class="layoutArea">
+<div class="column">
+<p>Date of the last rating given</p>
+</div>
+</div>
+</div>
+</div>
+</td>
+<td> </td>
+<td>Date</td>
+<td colspan="1">
+<div class="page" style="text-decoration: none;" title="Page 214">
+<div class="section">
+<div class="layoutArea">
+<div class="column">
+<p>From EFS 10.3: Date of last rating given. This date is technically necessary for tracking the average values.</p>
+</div>
+</div>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="page" style="text-decoration: none;" title="Page 214">
+<div class="section">
+<div class="layoutArea">
+<div class="column">
+<p>track_date_avgratingreceived</p>
+</div>
+</div>
+</div>
+</div>
+</td>
+<td>
+<div class="page" style="text-decoration: none;" title="Page 214">
+<div class="section">
+<div class="layoutArea">
+<div class="column">
+<p>Date of the last rating received</p>
+</div>
+</div>
+</div>
+</div>
+</td>
+<td> </td>
+<td>Date</td>
+<td colspan="1">
+<div class="page" style="text-decoration: none;" title="Page 214">
+<div class="section">
+<div class="layoutArea">
+<div class="column">
+<p>From EFS 10.3: Date of last rating received. This date is technically necessary for tracking the average values.</p>
+</div>
+</div>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="page" style="text-decoration: none;" title="Page 214">
+<div class="section">
+<div class="layoutArea">
+<div class="column">
+<p>track_date_completed</p>
+</div>
+</div>
+</div>
+</div>
+</td>
+<td>
+<div class="page" style="text-decoration: none;" title="Page 214">
+<div class="section">
+<div class="layoutArea">
+<div class="column">
+<div class="page" style="text-decoration: none;" title="Page 214">
+<div class="section">
+<div class="layoutArea">
+<div class="column">
+<p>Last

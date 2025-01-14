@@ -1,0 +1,97 @@
+<h1 id="h_01J5WZ5RS47RT76Q4CJHZBZ1S5">Table of Contents</h1>
+<ul>
+<li>
+<a href="#header-1">Architecture Overview</a>
+<ul>
+<li><a href="#header-3">Connecting external AD/LDAP</a></li>
+</ul>
+</li>
+<li>
+<a href="#header-1">Authentication</a>
+<ul>
+<li>
+<a href="#header-3">Code Flow</a>
+<ul>
+<li><a href="#header-5">Implicit Flow</a></li>
+</ul>
+</li>
+<li><a href="#header-7">Session Management</a></li>
+<li><a href="#header-8">Logout</a></li>
+<li><a href="#header-9">Create new EFS account user</a></li>
+<li><a href="#header-10">Update existing EFS user account</a></li>
+<li><a href="#header-11">Create Portal</a></li>
+<li><a href="#header-12">Assign Participant to Portal</a></li>
+<li><a href="#header-13">Sign in to portal</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="header-1">Architecture Overview</h1>
+<p>The overall architecture consists of several high level services and components.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20907732649362"></p>
+<p> </p>
+<h2 id="header-3">Connecting external AD/LDAP</h2>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20907702364178"></p>
+<h1 id="01J5X3KRD8Q2D1Z9WP4AP6RVNT">Authentication</h1>
+<h2 id="01J5X3KRD85C36V1VMVTST5XKD">Code Flow</h2>
+<p> </p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20909657905170" alt="Authentication Code Flow - EFS Admin __ IdP(3).png"></p>
+<pre><code class="language-text">title Authentication Code Flow - EFS Admin &lt;&gt; IdP
+ 
+participant User (Browser)
+participant IdP
+participant EFS
+ 
+ 
+note right of EFS: application secret is set
+User (Browser)-&gt;EFS: Enter landing page
+EFS-&gt;User (Browser): Redirect to IdP
+User (Browser)-&gt;IdP: Follow Redirect
+IdP-&gt;User (Browser):  Show login page
+User (Browser)-&gt;IdP: Enter login credentials, click login
+IdP-&gt;+IdP: Validate credentials
+IdP-&gt;User (Browser): Redirect back with Code and send master session cookie
+User (Browser)-&gt;EFS: Follow Redirect
+EFS-&gt;IdP: Use code and application secret to ask for Access and Refresh token
+IdP-&gt;+EFS: Access and refresh token
+EFS-&gt;EFS: Validate access token
+EFS-&gt;EFS: Store access and refresh token
+EFS-&gt;EFS: Request user existance and authorization
+ 
+alt authorized and exists
+EFS-&gt;User (Browser): Show admin landing page and send session cookie
+else not authorized or not exists
+EFS-&gt;User (Browser): Show Error page</code></pre>
+<p> </p>
+<p><br><br></p>
+<h3 id="header-5">Implicit Flow</h3>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20909686625554" alt="Authentication Implicit Flow - Portals __ IdP(2).png"></p>
+<p> </p>
+<pre><code class="language-text">title Authentication Implicit Flow - Portals &lt;&gt; IdP
+  
+participant User (Browser)
+participant IdP
+participant Portals Frontend
+  
+  
+note right of Portals Frontend: no application secret needed
+User (Browser)-&gt;Portals Frontend: Enter landing page
+Portals Frontend-&gt;User (Browser): Store current hash/query status
+Portals Frontend-&gt;User (Browser): Redirect to IdP
+User (Browser)-&gt;IdP: Follow Redirect
+IdP-&gt;User (Browser):  Show login page
+User (Browser)-&gt;IdP: Enter login credentials, click login
+IdP-&gt;+IdP: Validate credentials
+IdP-&gt;User (Browser): Redirect back with ID and access token in hash
+User (Browser)-&gt;Portals Frontend: Follow Redirect
+Portals Frontend-&gt;User (Browser): Store ID and access token
+Portals Frontend-&gt;User (Browser): Restore hash/query state
+alt authorized and exists
+Portals Frontend-&gt;User (Browser): Show portal private home
+else not authorized or not exists
+Portals Frontend-&gt;User (Browser): Show Error page</code></pre>
+<p> </p>
+<p> </p>
+<p> </p>
+<h2 id="header-7">Session Management</h2>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20909657910162" alt="Session Management - EFS Admin __ IdP(1).png"></p>
+<p> </p

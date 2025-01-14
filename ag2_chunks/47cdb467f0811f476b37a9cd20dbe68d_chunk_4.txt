@@ -1,0 +1,42 @@
+ can add additional participants to your sample at any given time.</p>
+<h3 id="Initial-Preparation" class="wysiwyg-text-align-justify" data-renderer-start-pos="5798"><strong data-renderer-mark="true">Initial Preparation</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="5819">Before you start importing participants into the participant administration, you need to make sure, that it contains all the participant variables you need for your project. The participant variables translate into the different fields you fill out when adding participants, e.g. surname, name, email address, etc. Detailed information on participant variables can be found in our online documentation in the section <a class="cc-1rn59kg" title="https://qbdocs.atlassian.net/wiki/spaces/DOC/pages/3302260790/Participant+Variables#Overview-of-the-standard-variables-of-participant-administration" href="https://qbdocs.atlassian.net/wiki/spaces/DOC/pages/3302260790/Participant+Variables#Overview-of-the-standard-variables-of-participant-administration" data-testid="link-with-safety" data-renderer-mark="true">Overview of the standard variables of participant administration</a>.</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="6298">From the <em data-renderer-mark="true">Survey menu</em>, click on the <em data-renderer-mark="true">Participant administration</em> menu item on the left, and select the <em data-renderer-mark="true">Participant variables</em> menu item.</p>
+</li>
+<li>
+<p data-renderer-start-pos="6434">A list of all available participant variables for personalized surveys is displayed:<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017226375058"></p>
+</li>
+</ul>
+<div class="rich-media-item mediaSingleView-content-wrap image-center cc-1relob8 wysiwyg-text-align-justify" data-layout="center" data-width="760" data-width-type="pixel" data-node-type="mediaSingle" data-renderer-start-pos="6523">
+<div class="cc-b3nqza">
+<div data-context-id="3979575307" data-type="file" data-node-type="media" data-width="1694" data-height="703" data-id="4c67d194-241d-4970-b294-d73d5db39f80" data-collection="contentId-3979575307" data-file-name="file" data-file-size="1" data-file-mime-type="" data-alt="" data-renderer-start-pos="6524">
+<div id="newFileExperienceWrapper" class="new-file-experience-wrapper cc-ktgc13" data-testid="media-card-view">
+<div class="media-file-card-view cc-z40uwk" data-testid="media-file-card-view" data-test-status="complete" data-test-media-name="image-20231204-104937.png" data-test-progress="1" data-test-source="remote">If you don’t need any additional participant variables for your project, there is no need to make any changes. You can just proceed with the next step: <strong>Importing a Participant List</strong>. In case you want to add a variable, for example, the variable u_children for storing information on the number of children a participant has, proceed as follows:</div>
+</div>
+</div>
+</div>
+</div>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="6874">Click on the <strong data-renderer-mark="true">Create variable</strong> button above the list of variables.</p>
+</li>
+<li>
+<p data-renderer-start-pos="6942">In the field <strong data-renderer-mark="true">Internal label</strong>, enter a label starting with “u_”, for example u_children.</p>
+</li>
+<li>
+<p data-renderer-start-pos="7032">For <strong data-renderer-mark="true">Label</strong>, enter the name of the field, for example “No. of children”.</p>
+</li>
+<li>
+<p data-renderer-start-pos="7106">For <strong data-renderer-mark="true">Display type</strong>, select the type of field you want to create. For our example, <strong data-renderer-mark="true">Radio buttons</strong> is a suitable option.</p>
+</li>
+<li>
+<p data-renderer-start-pos="7229">Activate the checkboxes for <strong data-renderer-mark="true">Allow editing of the content of this variable </strong>and<strong data-renderer-mark="true"> Show the content of this variable</strong>. When activating the checkboxes, the newly created variable will be present in the mask for adding new participants and you will be able to select a radio button.</p>
+</li>
+</ul>
+<ul class="wysiwyg-text-align-justify">
+<li>Click on <strong data-renderer-mark="true">Save</strong>.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017226377874">
+</li>
+<li>Expand the menu <strong data-renderer-mark="true">Answer categories for variable u_children</strong>. Here you can define the number and the text of the radio buttons.</li>
+<li>Click on the free text field below <strong data-renderer-mark="true">Answer categories</strong>, and enter the text “1 child”. The field to the

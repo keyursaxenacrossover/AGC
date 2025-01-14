@@ -1,0 +1,91 @@
+p>
+<h2 id="special-features-of-registration-and-data-change-forms" class="wysiwyg-text-align-justify"><strong>Special Features of Registration and Data Change Forms</strong></h2>
+<p class="wysiwyg-text-align-justify">Correct collection of registration data and their subsequent maintenance, in particular of panelists’ contact data, is essential for panel operation:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Collected data should be as accurate as possible.</li>
+<li>Registration data should be stored in such a way that they are available later for processes in which they are necessary. Gender, for example, is often required for forming groups and should therefore be available as a master data item. Panelists’ first names, on the other hand, are not needed for forming groups and drawing samples, but are important for establishing contact: They should be stored as address data items.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The form types “Registration” and “Data change” provide you with great flexibility in adjusting the forms to the requirements of a specific panel:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>As in the past, you can perform plausibility checks on data entered by candidates as soon as on entry. This reduces the risk of erroneous or deliberately false entry of important data, such as names and e-mail addresses. In EFS 6.0 you can define considerably more complex check expressions.</li>
+<li>You can specify where the queried data are to be stored in the database. Contact data such as name, street, and zip code are normally saved in the participant data table. Data that are important for panel operation later on, such as gender and age, are saved in the master data table. Optionally, you can also store data in both tables. (This may be advisable e.g. for “country”.)</li>
+<li>From EFS 6.0 and later, you can convert the data upon saving. For example, you can merge the values of several variables into a single variable.</li>
+</ul>
+<h3 id="configuration-options" class="wysiwyg-text-align-justify"><strong>Configuration Options</strong></h3>
+<p class="wysiwyg-text-align-justify">The following table contains all possible configuration options.</p>
+<table class="relative-table wrapped wysiwyg-text-align-justify" style="width: 100.163%; margin-right: auto; margin-left: auto; height: 1418px;" border="1">
+<colgroup> <col style="width: 27.9274%;"> </colgroup> <colgroup> <col style="width: 72.0913%;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center">Field</th>
+<th class="wysiwyg-text-align-center">Description</th>
+</tr>
+<tr>
+<td>Website / Language version</td>
+<td>
+<p>Website and language version to which the variable belongs. Cannot be changed subsequently.</p>
+</td>
+</tr>
+<tr>
+<td>Form name</td>
+<td>
+<p>This is determined when creating the form. Cannot be changed subsequently.</p>
+</td>
+</tr>
+<tr>
+<td>Form type</td>
+<td>
+<p>This is determined when creating the form. Cannot be changed subsequently.</p>
+</td>
+</tr>
+<tr>
+<td>Variable</td>
+<td>
+<p>The master data item or user variable to which the form’s input field refers to.</p>
+<ul>
+<li>Using the check expressions and transformation formulas described below, you can reformat the data entered, if necessary.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Label in form</td>
+<td>The text is used to label the form’s input field.</td>
+</tr>
+<tr>
+<td>Exclude the following codes</td>
+<td>
+<p>You can hide certain answer characteristics of master data variables. To do so, enter the codes of the answer characteristics you wish to hide. The codes can be entered comma-separated or as a range (e.g. “1,2,3-10”).</p>
+</td>
+</tr>
+<tr>
+<td>Order</td>
+<td>
+<p>Order in which the input fields for the form’s different variables are output.</p>
+</td>
+</tr>
+<tr>
+<td>Group ID</td>
+<td>
+<p>The group ID is available in the templates and can therefore be used in many different ways, for example to group related form fields or to divide the form into different sections. If you assign the same group ID (e.g. 1) to several form fields, for example, you can output these fields next to instead of beneath each other (e.g. day, month, and year for three related date fields). In doing so you can apply the label of the first grouped element to the whole line.</p>
+</td>
+</tr>
+<tr>
+<td>Check expression</td>
+<td>
+<p>You can enter a check expression, which is executed before saving the data. If the check expression is correct, the data are not stored; instead, the specified error message is displayed.</p>
+<ul>
+<li>Move the cursor over the? icon to obtain an overview of available functions.</li>
+<li>You can use the pseudo variable “self” to access the current variable.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Error message</td>
+<td>
+<p>Error message, which is displayed if the aforementioned check expression detects a problem.</p>
+</td>
+</tr>
+<tr>
+<td>Additionally, save in</td>
+<td>
+<p>You can optionally save an entry in

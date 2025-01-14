@@ -1,0 +1,127 @@
+ as follows:</p>
+<ul>
+<li>
+<p>Locate the action you want to copy and click on the <strong>Copy</strong> icon.</p>
+</li>
+<li>
+<p>Define the target of the copying process:</p>
+<ul>
+<li>
+<p>Individual target unit</p>
+</li>
+<li>
+<p>Target area</p>
+</li>
+</ul>
+</li>
+<li>
+<p>In the next dialog, describe the target area more closely:</p>
+<ul>
+<li>
+<p>If you have selected “Individual target unit”, all you need to do is select that target unit.</p>
+</li>
+<li>
+<p>If you have selected “Target area”, define the starting point and the level depth for the copying process.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Confirm by clicking on <strong>Continue</strong>.</p>
+</li>
+<li>
+<p>The action is copied. In the copying log, an entry will be made for every individual copy action.</p>
+</li>
+</ul>
+<h3 id="h_01J3N2HWA9R2D0MNRR8C0E01ED"><strong>Moving actions</strong></h3>
+<p>Now and then, it is necessary to change the unit of an action retroactively. Instead of deleting the action in the old unit and creating it anew in the next unit, you can simply move it. Proceed as follows:</p>
+<ul>
+<li>
+<p>Locate the action you want to move and click on the <strong>Move action</strong> icon.</p>
+</li>
+<li>
+<p>In the field “Move action x to unit” you can select the target unit.</p>
+<ul>
+<li>
+<p>To do so, click on the<strong> binoculars</strong> icon.</p>
+</li>
+<li>
+<p>This prompts a list of all available units. Browse this list and select the desired new parent unit by clicking on Select.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Confirm by clicking on <strong>Save</strong>.</p>
+</li>
+</ul>
+<p>The moving of actions requires the right<em> actionplanner_transfer</em>.</p>
+<h3 id="h_01J3N2HWA9XEZZVBNGAP61ABDX"><strong>Subscribing to reminder emails</strong></h3>
+<p>Optionally, the project manager can activate the automated dispatch of reminder email. If the function is configured for individual-related dispatch, the reminders will be sent to the creator of the respective unit automatically. Alternatively, you can enter recipients manually.</p>
+<ul>
+<li>
+<p>Use the<strong> Edit</strong> icon to open the action for which you want to enter recipients.</p>
+</li>
+<li>
+<p>In the detail view, you can find a new „Reminder recipients“ section, containing a list of the current subscribers.</p>
+</li>
+<li>
+<p>Click on the <strong>Add recipient of reminder</strong> button.</p>
+</li>
+<li>
+<p>A list of the possible recipients is displayed. Click on the <strong>Add e-mail recipient</strong> icon to adopt the appropriate person.</p>
+</li>
+</ul>
+<h3 id="h_01J3N2HWAATW38WP1H4EZBCWEH"><strong>Importing actions and/or updating actions per import</strong></h3>
+<p><em>Action Planner</em> includes an import function that enables you to edit large numbers of actions easily.</p>
+<ul>
+<li>
+<p>Instead of creating actions manually, you can import all actions or a large number of actions via a CSV or Excel file.</p>
+</li>
+<li>
+<p>If you have to edit existing actions, you can export them, edit them externally, and then upload the current data.</p>
+</li>
+</ul>
+<p>Proceed as follows:</p>
+<ul>
+<li>
+<p>Depending on your goal, you may want to choose different starting points:</p>
+<ul>
+<li>
+<p>If you want to create actions via import, use the<strong> Import actions</strong> button to open the import dialog and download the pre-formatted template.</p>
+</li>
+<li>
+<p>If you intend to update existing actions, export the list of existing actions instead.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Open the file in a suitable program, e.g., in Excel, and enter the new actions resp. change the existing data. Please make sure that no action ID (ac_id) is entered for new actions!</p>
+</li>
+<li>
+<p>Then, save the file in Excel or CSV format.</p>
+</li>
+<li>
+<p>Use the<strong> Import actions</strong> button to open the import dialog and import the file as usual.</p>
+</li>
+</ul>
+<p><strong>Formatting of the import file</strong></p>
+<p>Please check the table to learn which data fits into which column of the import file.</p>
+<table class="" border="1" data-layout="default">
+<colgroup>
+<col style="width: 192.0px;">
+<col style="width: 568.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour="#57d9a3">
+<p style="text-align: center;"><strong>Column</strong></p>
+</th>
+<th data-highlight-colour="#57d9a3">
+<p style="text-align: center;"><strong>Description</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p><em>ac_id</em></p>
+</td>
+<td>
+<p>Unique identifier of the action

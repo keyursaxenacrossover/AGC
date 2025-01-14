@@ -1,0 +1,61 @@
+ to check].txt</code></pre>
+</li>
+<li><p>If enough space is there, the returned numbers have a green color. If not, they are red.</p></li>
+</ul><p>For the Upgrade:</p><ul><li>
+<p>connect to salt:</p>
+<pre><code class="language-text">ssh salt
+cd /opt/pdp/saltserver/scripts</code></pre>
+</li></ul><ac:rich-text-body><p><strong>get an overview for all steps needed, Usage:  -I&lt;Installation short name&gt;</strong></p>
+<ul><li>
+<pre><code class="language-text">sh mysql2innodb_commands.sh -Iab1234</code></pre>
+<p>follow the 13 steps given here</p>
+</li></ul></ac:rich-text-body><div class="expand-macro">
+<h4 string="manual steps listed for information"></h4>
+<ul>
+<li>
+<p>if you wish to see which installations are currently under maintenance:</p>
+<pre><code class="language-text">sudo ./maintananceStatus.sh</code></pre>
+</li>
+<li><p>disable <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Monitoring - Nagios, Pingdom" ri:version-at-save="4"></ri:page><ac:link-body>Monitoring - Nagios, Pingdom</ac:link-body></ac:link>, do check Pingdom, too!</p></li>
+<li>
+<p>deactivates crons: (may take a while as the script runs till all running crons have finished)</p>
+<pre><code class="language-text">sudo ./cronDisable.sh ab1234</code></pre>
+</li>
+<li>
+<p>enables the maintenance:</p>
+<pre><code class="language-text">sudo ./maintananceEnable.sh ab1234</code></pre>
+</li>
+<li><p>Port restart:</p></li>
+<li><p>TS does the upgrade</p></li>
+<li>
+<p>TS deactivates the maintenance: (no inst parameter, you will be given a choice)</p>
+<pre><code class="language-text">sudo ./maintananceDisable.sh</code></pre>
+</li>
+<li>
+<p>Ts enables crons:</p>
+<pre><code class="language-text">sudo ./cronEnable.sh ab1234</code></pre>
+</li>
+<li><p>enable <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Monitoring - Nagios, Pingdom" ri:version-at-save="4"></ri:page><ac:link-body>Monitoring - Nagios, Pingdom</ac:link-body></ac:link>, remember if there was a Pingdom check!</p></li>
+</ul>
+</div><h3 id="header-9"><strong>19.5 auf 20.1</strong></h3><ac:rich-text-body><ul>
+<li>
+<p><strong>installations with portals need to be checked for javascript customizings using the viewModel function:</strong></p>
+<pre><code class="language-text">SELECT p.name,p.id,pp.title,pp.id,pm.title,pm.id FROM portals AS p LEFT JOIN portal_pages AS pp ON (p.id = pp.portal_id) LEFT JOIN portal_page_modules AS pm ON (pm.page_id = pp.id) LEFT JOIN portal_page_module_settings AS ps ON (ps.page_module_id = pm.id) WHERE ps.value LIKE '%viewModel%' ORDER BY pm.id ASC;</code></pre>
+</li>
+<li><p><ac:parameter ac:name="server">Questback</ac:parameter><ac:parameter ac:name="serverId">9f8e3c23-9700-315b-9fb0-65f274062d6e</ac:parameter><ac:parameter ac:name="key">KANBAN-14253</ac:parameter></p></li>
+<li><p>run  cd www /opt/pdp/opst/apps/php56/bin/php support/portal_compile_css.php</p></li>
+</ul></ac:rich-text-body><ul>
+<li>
+<p>after the upgrade is done, a script has to be executed to update deprecated layouts of projects:</p>
+<pre><code class="language-text">cd www
+/opt/pdp/opst/apps/php56/bin/php support/build_project_layout.php scope=all list=true</code></pre>
+</li>
+<li><p>this gives you a list of the projects and shows you how many need to be updated</p></li>
+<li><p>to actually do the update just remove the list=true part and execute the script again</p></li>
+<li><p> <strong>you can run the script in parallelmode </strong>- change “temp.txt” and “log.txt” to installation schema [ab1234].txt and add it to a salesforce case  or KANBAN ticket if issues occur </p></li>
+<li>
+<pre><code class="language-text">/opt/pdp/opst/apps/php56/bin/php support/build_project_layout.php scope=all parallel=true batchsize=25 tempfile=~/temp.txt logfile=~/log.txt</code></pre>
+<p></p>
+</li>
+<li><p>Config Flag checken survey_placeholder_security : <ac:inline-comment-marker ac:ref="341520b9-908f-46f4-8b87-fd38eb45b4d9">setzen auf fas</ac:inline-comment-marker>le!</p></li>
+<li><p>If updating “old 20.1”, so build before 0322, run “conti” script from

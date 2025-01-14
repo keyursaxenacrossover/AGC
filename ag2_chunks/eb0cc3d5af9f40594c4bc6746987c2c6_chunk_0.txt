@@ -1,0 +1,48 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K" class="wysiwyg-text-align-justify">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article provides information on how to use and manage the Filter list feature in the Questionnaire editor. It covers displaying filters, testing filter functionality, and updating filter statuses.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">The Filter list menu link allows users to view and manage filters within a specific project. This guide explains how to access the filter list, test filters, and update their statuses.</p>
+<ul class="wysiwyg-text-align-justify">
+<li><a href="#filter-list">Filter list</a></li>
+<li><a href="#testing-filters">Testing Filters</a></li>
+</ul>
+<h2 id="filter-list" class="wysiwyg-text-align-justify">Filter list</h2>
+<p class="wysiwyg-text-align-justify">You can use the <strong>Filter list</strong> menu link to display an overview of all the filters in a specific project. The display contains the respective variables and the questions the filter refers to as well as the defined characteristics.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Use the button to display the survey pages.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">It is not possible to test filter conditions containing dynamic variables, e.g. list size (list_size_listID) or Org Processor variables (e.g. org_code_structureID).</p>
+<h3 id="testing-filters" class="wysiwyg-text-align-justify">Testing Filters</h3>
+<p class="wysiwyg-text-align-justify">Before conducting a test survey, you can test the functionality of your filters. To do so, please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Open the <strong>Questionnaire editor → Filter list</strong> menu.</p>
+</li>
+<li>
+<p>In the “Test” column, you can invoke the function test separately for each filter by clicking on the <strong>test tube</strong> icon.</p>
+</li>
+<li>
+<p>In the filter test dialog, enter the variable characteristics for which the filter is to be triggered resp. is not to be triggered into the text fields provided. (The number of text fields depends on the number of filter variables.)</p>
+</li>
+<li>
+<p>Then, click on <strong>Test</strong> to run the filter test.</p>
+</li>
+<li>
+<p>Check in the newly-opened results section whether the filter is functioning as expected.</p>
+</li>
+<li>
+<p>After successful end of the test, change the filter’s test status in order to mark those filters that function correctly for your further work.</p>
+</li>
+<li>
+<p>After that, click on <strong>Change status</strong> to assign the respective new status to the filter.</p>
+</li>
+</ul>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863" class="wysiwyg-text-align-justify">FAQ</h1>
+<h3 id="h_01HGKSMPRVM0XJ7QXQD4YBKP8X" class="wysiwyg-text-align-justify">Can I test filters with dynamic variables?</h3>
+<p class="wysiwyg-text-align-justify">No, it is not possible to test filter conditions containing dynamic variables, such as list size (list_size_listID) or Org Processor variables (e.g., org_code_structureID).</p>
+<h3 id="h_01HGKSMPRVM0XJ7QXQD4YBKP8Y" class="wysiwyg-text-align-justify">How do I access the Filter list?</h3>
+<p class="wysiwyg-text-align-justify">You can access the Filter list by using the <strong>Filter list</strong> menu link in the Questionnaire editor.</p>
+<h3 id="h_01HGKSMPRVM0XJ7QXQD4YBKP8Z" class="wysiwyg-text-align-justify">Why should I update the filter status after testing?</h3>
+<p class="wysiwyg-text-align-justify">Updating the filter status helps you keep track of which filters have been tested and are functioning correctly, making it easier to manage your project's filters.</p>

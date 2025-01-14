@@ -1,0 +1,31 @@
+ id="How-can-I-configure-the-module-IdentityAccessManager" data-renderer-start-pos="1446"><strong data-renderer-mark="true">How can I configure the module IdentityAccessManager</strong></h4>
+<p data-renderer-start-pos="1500">The module configuration can be found at <code class="code cc-1o5d2cw" data-renderer-mark="true">System &gt; Options &gt; Platform cockpit &gt; System configuration</code> in the EFS Admin UI.<br>All configuration options can be viewed and changed in the grouped collapsible <strong data-renderer-mark="true">IdentityAccessManager</strong>.</p>
+<p data-renderer-start-pos="1724">For a detailed description of the configuration options please see <span data-inline-card="true" data-card-url="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1065025774"><span class="loader-wrapper"><span aria-expanded="false" aria-haspopup="true" data-testid="hover-card-trigger-wrapper"><a class="css-118vsk3 e26bri0" tabindex="0" role="button" href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20716337554706-The-IdentityAccessManager-Module" data-testid="inline-card-resolved-view">Module "IdentityAccessManager"</a></span></span></span></p>
+<h4 id="How-can-I-deactivate-the-module-IdentityAccessManager" data-renderer-start-pos="1795"><strong data-renderer-mark="true">How can I deactivate the module IdentityAccessManager</strong></h4>
+<p data-renderer-start-pos="1850">If the EFS Admin can be accessed set the configuration value <code class="code cc-1o5d2cw" data-renderer-mark="true">iam_module_active</code> to false (for location see above). This will disable all module functionality.<br>In case the UI can not be used, the same applies by setting the value directly in the database.</p>
+<p data-renderer-start-pos="2105">Please note that disabling the module after activation can have side effects.</p>
+<p data-renderer-start-pos="2184"> </p>
+<h4 id="What-Browsers-and-operating-systems-are-supported-by-Okta?" data-renderer-start-pos="2186"><strong data-renderer-mark="true">What Browsers and operating systems are supported by Okta?</strong></h4>
+<p data-renderer-start-pos="2246">The most recent browsers are supported as well as IE11.</p>
+<p data-renderer-start-pos="2303">See <a class="cc-1rn59kg" title="https://support.okta.com/help/s/article/Okta-Browser-and-OS-Support-Policy" href="https://support.okta.com/help/s/article/Okta-Browser-and-OS-Support-Policy" data-testid="link-with-safety" data-renderer-mark="true">https://support.okta.com/help/s/article/Okta-Browser-and-OS-Support-Policy</a></p>
+<p> </p>
+<h2 id="h_01J6EY4CECAEJ0FCNP7YWS993W"> </h2>
+<h2 id="header-7">Migration</h2>
+<h4 id="Why-is-any-migration-required-for-Tivian-Access-?" data-renderer-start-pos="4"><strong data-renderer-mark="true">Why is any migration required for Tivian Access ?</strong></h4>
+<p data-renderer-start-pos="55">In oder for users to sign in to our Identity Provider (Okta), they need to be created in Okta and set a password. In the further document this is also referred to as the user sync.</p>
+<p data-renderer-start-pos="237">This step is only required for users which are signing in to Okta directly and not using a federated authentication to their company’s Identity Provider. A list of known domains for user email addresses will be used to decide wether a user needs to be synced or not.</p>
+<p data-renderer-start-pos="505">Also to comply with the authentication protocols we are using to enable Single Sign On across the applications it is required to register application instances at Okta. For applications like EFS this is done manually during the setup of Tivian Access but for all existing portal instances this needs to be done once.</p>
+<p data-renderer-start-pos="823">To conclude, the following migrations are required:</p>
+<ul class="ak-ul" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="878"><strong data-renderer-mark="true">Sync EFS Admin users to Okta</strong> → EFS Admin users will be able to login with Okta</p>
+</li>
+<li>
+<p data-renderer-start-pos="960"><strong data-renderer-mark="true">Sync Panelists to Okta</strong> → Portal users will be able to login with Okta</p>
+</li>
+<li>
+<p data-renderer-start-pos="1033"><strong data-renderer-mark="true">Sync of existing Portal instances to Okta</strong> → Portal instances can be used with Tivian Access</p>
+</li>
+</ul>
+<h4 id="Who-does-the-migrations-?" data-renderer-start-pos="1128"><strong data-renderer-mark="true">Who does the migrations ?</strong></h4>
+<p data-renderer-start-pos="1155">Migration will be performed by 2nd level support. All necessary resources to enable 2nd level support will be delivered bythe

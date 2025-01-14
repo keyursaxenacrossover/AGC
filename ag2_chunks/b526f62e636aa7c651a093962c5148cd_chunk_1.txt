@@ -1,0 +1,70 @@
+falls)</a>
+<ul>
+<li>
+<a href="#recommended-efs-alias-domain-dns-records-directly-pointing-to-efs">Recommended EFS-Alias-Domain DNS-Records directly pointing to EFS</a>
+<ul>
+<li><a href="#ip-related-entries-for-apex-domain-incl-www-subdomain">IP-Related entries - For Apex-Domain incl. www-Subdomain</a></li>
+<li><a href="#ip-related-entries-for-sub-domain-only">IP-Related entries - For Sub-Domain only</a></li>
+<li><a href="#mail-related-entries">Mail-related entries</a></li>
+<li><a href="#optional-certificate-related-entries">(optional) Certificate-related entries</a></li>
+<li><a href="#special-case-domain-will-point-to-cdn-e-g-akamai-waf-e-g-cloudflare">Special case: Domain will point to CDN (e.g. Akamai) / WAF (e.g. Cloudflare)</a></li>
+<li><a href="#special-case-technical-domain-is-akamized">Special case: Technical domain is Akamized</a></li>
+</ul>
+</li>
+<li>
+<a href="#how-to-match-recommended-record-setup-as-close-as-possible-for-customer-managed-domain">How to match recommended Record-Setup as close as possible for customer managed domain</a>
+<ul>
+<li><a href="#alias-aname-record-cname-flattening">ALIAS- / ANAME-Record / CNAME Flattening</a></li>
+<li><a href="#ns-record">NS-Record</a></li>
+<li><a href="#cname-record-only-for-sub-domains">CNAME-Record (Only for Sub-Domains)</a></li>
+<li><a href="#domain-transfer">Domain-Transfer</a></li>
+</ul>
+</li>
+<li>
+<a href="#customer-handover-templates">Customer Handover Templates</a>
+<ul>
+<li><a href="#for-apex-domains-incl-www-subdomain-not-if-akamai-is-in-the-mix">For Apex-Domains (incl. www-Subdomain) (NOT: if Akamai is in the Mix!)</a></li>
+<li><a href="#for-subdomains-not-if-akamai-is-in-the-mix">For Subdomains (NOT: if Akamai is in the Mix!)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#examples-for-currently-supported-dns-chains-if-customer-dns-does-not-support-alias-records">Examples for currently supported DNS Chains if customer DNS does not support ALIAS records</a>
+<ul>
+<li><a href="#apex-domains">Apex Domains</a></li>
+<li>
+<a href="#sub-domains-1">Sub Domains</a>
+<ul>
+<li><a href="#sub-domains-without-support-for-additional-records">Sub Domains - Without support for additional records</a></li>
+<li><a href="#sub-domains-with-support-for-additional-records">Sub Domains - WITH support for additional records</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="dns-concepts">DNS Concepts</h2>
+<p>For a more detailed explanation regarding DNS, look at <a href="https://en.wikipedia.org/wiki/Domain_Name_System">https://en.wikipedia.org/wiki/Domain_Name_System</a> / the corresponding RFCs.</p>
+<p>Relevant in this case is that DNS can be understood as sort of analogous to a telephone-book in which <strong>DNS-Records</strong> that have been deposited for <strong>domains</strong> can be looked and are organized in a hierarchical fashion.</p>
+<h3 id="domain-types">Domain-types</h3>
+<p>Domains can be broadly classified as one 2 categories which limits the kind of DNS-Records that can be deposited for them.</p>
+<h4 id="apex-domain-zone-apex-2nd-level-domans">Apex-Domain / Zone-Apex / 2nd level Domans</h4>
+<pre><code class="language-text">example.com
+stuff.org
+things.net
+more.io
+something-different.co.uk</code></pre>
+<p>There are domains that can actually registered via a domain registrar, e.g. above.</p>
+<h4 id="sub-domains">Sub-Domains</h4>
+<pre><code class="language-text">test.example.com
+another.test.example.com
+more.stuff.org</code></pre>
+<p>This is any domain situated hierarchically below an Apex-Domain, e.g. above.</p>
+<h3 id="dsn-record-types">DNS Record Types</h3>
+<p>The following only describes a limited number of Record Types, see <a href="https://en.wikipedia.org/wiki/List_of_DNS_record_types">https://en.wikipedia.org/wiki/List_of_DNS_record_types</a> for a more exhaustive list.</p>
+<h4 id="a-aaaa">A / AAAA</h4>
+<p>This record is used for depositing an IPv4 / IPv6 respectively and is usually used for IP-Resolution when browsing websites.</p>
+<p>The value of such a record will contain only the IP in the corresponding format:</p>
+<pre><code class="language-text">example.com IN A 192.168.4.2
+example.com IN AAAA c70c:3973:f12e:de58:3398:9d3a:5b07:6d20</code></pre>
+<h4 id="mx">MX</h4

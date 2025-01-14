@@ -1,0 +1,148 @@
+-justify"><strong>Limiting the basic set</strong></h2>
+<p class="wysiwyg-text-align-justify">On the <strong>Basic Set</strong> tab, you specify which panel group shall form the basic set for drawing the sample and which criteria are to be used for further limiting this basic set. The criteria are explained in the following section.</p>
+<p class="wysiwyg-text-align-justify"><strong>Basic set</strong></p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p><strong>Field</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Group category</p>
+</td>
+<td>
+<p>Groups can be sorted thematically and arranged clearly.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Group</p>
+</td>
+<td>
+<p>People offer you various possibilities to form groups (also called "subpanels").</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Filter</p>
+</td>
+<td>
+<p>You can use grouping filters for creating samples.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Capacity filter</p>
+</td>
+<td>
+<p>The capacity filters can be used to organize the panelists’ capacity optimally.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Panel status</p>
+</td>
+<td>
+<p>The most important characteristic of panelists is their panel status: it describes their current role and activity.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Maximum number of participants</p>
+</td>
+<td>
+<p>Optionally, you can define how many participants are to be contained in the sample.</p>
+<p>Please note: limiting the maximum number is only recommendable if you do not use stratification. If the basic set is narrowed down unnecessarily from the beginning, it might not be possible to reach the target values that are explicitly specified during the stratification process.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"><br><strong>Extended settings</strong></p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p><strong>Field</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Number of completed surveys (based on variable n_poll)</p>
+</td>
+<td>
+<p>Evaluates the “n_poll” system data item.</p>
+<p>Please mind: If tracking is activated, evaluation of the variable “track_num_completed” (e.g. via grouping filter) provides you with more<br>precise information.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Number of bonus points</p>
+</td>
+<td>
+<p>Evaluates the current sum of the bonus points in the panelist’s account.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Last completed interview at least / not longer than x months ago</p>
+</td>
+<td>
+<p>Evaluate the system data item <em>last_poll_date</em>.</p>
+<p>Please mind: If tracking is activated, evaluation of the variable “track_num_completed” (e.g. via grouping filter) provides you with more precise information.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Panel member since x months</p>
+</td>
+<td>
+<p>Calculates the time for which the panelist has been a panel member based on the system data item “penter_date”.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Last updating of master data for x months</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>PCI value</p>
+</td>
+<td>
+<p>The Panelist Compliance Index enables the reliability of panelists to be captured and recorded in a variable.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>E-mail verification status</p>
+</td>
+<td>
+<p>Status of the double opt-in e-mail verification</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>The variable used to define the uniqueness</p>
+</td>
+<td>
+<p>Each characteristic of this variable will be in the sample not more than once.</p>
+<p>Please note that finding unique values requires an extra internal processing step. Therefore, if you use this feature, queries will be considerably slower.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"><br><strong>Excluding panelists already participating in other panel surveys</strong></p>
+<p class="wysiwy

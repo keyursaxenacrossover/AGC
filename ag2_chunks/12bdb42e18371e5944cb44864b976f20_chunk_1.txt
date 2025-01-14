@@ -1,0 +1,43 @@
+ <strong>Change question type </strong>icon.</p>
+</li>
+<li>
+<p>Until EFS 10.2: Switch to the detail view and click on the <strong>Change question type </strong>tab.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Please note:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Various special settings cannot be transferred when changing the question type. For example, hiding conditions and type checks will be lost.</p>
+</li>
+<li>
+<p>Question type 911 cannot be converted into any other question type.</p>
+</li>
+<li>
+<p>For several of the more recent “Responsive layout” question types, conversion is not possible.</p>
+</li>
+</ul>
+<h4 id="copying-or-moving-questions" class="wysiwyg-text-align-justify">Copying or moving questions</h4>
+<p class="wysiwyg-text-align-justify">Questions can be copied and/or from EFS 10.3 moved to other pages. To do so, in the questionnaire view or list view, click on the <strong>Copy </strong>icon of the desired question, select the target page and specify the desired action, i.e. “Copy” or “Move”.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h4 id="deleting-questions" class="wysiwyg-text-align-justify">Deleting questions</h4>
+<p class="wysiwyg-text-align-justify">Questions already created can be removed by clicking on the <strong>Delete </strong>icon in the list view.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h4 id="editing-questions" class="wysiwyg-text-align-justify">Editing Questions</h4>
+<p class="wysiwyg-text-align-justify">If you wish to edit an existing question, simply click on its title in the list view.</p>
+<p class="wysiwyg-text-align-justify">In the detail view, which can contain different input fields and functions depending on the question type, you can enter your question text and answer options and configure all question-specific settings.</p>
+<h4 id="using-html-in-questions" class="wysiwyg-text-align-justify">Using HTML in Questions</h4>
+<p class="wysiwyg-text-align-justify">You can use HTML in the question text, fill-in instructions, help text and answer options to layout the text or to insert images.</p>
+<p class="wysiwyg-text-align-justify">You should use the option to manually format individual questions with care. Wherever possible, use the layout features of standard and pro editor instead: it increases uniform appearance and reduces the maintenance effort in case of changes.</p>
+<p class="wysiwyg-text-align-justify">Also, please be aware, that while it is possible to use any HTML tag in any part of the questionnaire, this not always leads to the desired outcome. Please test your surveys in different browsers and revert the HTML changes if any display errors occur.</p>
+<p class="wysiwyg-text-align-justify">In question types “(113) Single response list (scale above, wrapping)”, “(111) Single response list (horizontal)” with <strong>Text alignment</strong> set to <strong>Top </strong>in the<strong> Detail configuration </strong>and “(311) Accordion” with<strong> Control elements </strong>set to<strong> Bottom</strong> in the<strong> Detail configuration </strong>spaces around the tag might not be displayed correctly when using HTML tags in answer options. The answer option “I &lt;b&gt;don’t&lt;/b&gt; agree” would, for example, be displayed as follows:</p>
+<p class="wysiwyg-text-align-justify">I<strong>don’t</strong>agree</p>
+<p class="wysiwyg-text-align-justify">To solve this problem, just insert non-breaking spaces around the tag by using the code <em>&amp;nbsp;</em>. Our example sentence should now be displayed correctly and would look like this:</p>
+<p class="wysiwyg-text-align-justify">I<em>&amp;nbsp;</em>&lt;b&gt;don’t&lt;/b&gt;<em>&amp;nbsp;</em>agree<em>.</em></p>
+<p class="wysiwyg-text-align-justify">For question type “(311) Accordion” you can also set the option <strong>Below </strong>under <strong>Control elements → Detail configuration </strong>to fully support HTML in answer options.</p>
+<h3 id="paste-from-word" class="wysiwyg-text-align-justify">Paste from word</h3>
+<p class="wysiwyg-text-align-justify">EFS allows you to paste several questions at once from such a draft into the questionnaire editor. To do so, you merely need to arrange the contents of your draft according to certain rules, in order for EFS to differentiate between question texts, answers, and scale characteristics.</p>
+<p class="wysiwyg-text-align-justify">Please note: This import feature cannot be used for all question types. The drop-down list in the second dialog offers the question types that are permitted for the respective layout generation.</p>
+<h4 id="formatting-the-draft" class="wysiwyg-text-align-justify"><strong>Formatting the draft</strong></h4>
+<p class="wysiwyg-text-align-justify

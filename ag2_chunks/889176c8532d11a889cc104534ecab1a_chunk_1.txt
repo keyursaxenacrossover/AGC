@@ -1,0 +1,42 @@
+>
+</ul>
+<h2 id="header-3">Using the helpers scripts</h2>
+<p>To be able to use the helpers scripts, you have to do the following initially:</p>
+<ul>
+<li>Login to a Service Gateway</li>
+<li>
+<p>Navigate to your home folder (<code>cd ~</code>) and edit <strong>.bashrc</strong>: <code>vi .bashrc</code></p>
+</li>
+<li>
+<p>Add the following line:</p>
+<ul>
+<li>
+<p>Frankfurt (no longer in use - kept for documentation purposes)</p>
+<pre><code class="language-text">. $HOME"/bashHelpersEFS_TS/EFS_TS_bashhelpers.sh"</code></pre>
+</li>
+<li>
+<p><strong>AWS:</strong></p>
+<pre>source /nfs/techsupport/bashhelperstsforaws/EFS_TS_bashhelpers.sh</pre>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="header-4">Overview of the Helpers</h2>
+<h3 id="header-6">Get an overview of the Helpers</h3>
+<p>=====================================================================<br><strong>Needed files</strong> : getHelpers.sh<br><strong>Aliases</strong> : helpers<br><strong>Usage</strong> : helpers<br><strong>Parameters</strong> : No<br><strong>Known Change Request</strong>:</p>
+<h3 id="header-7">Get information about an installation (i-script)</h3>
+<p>=====================================================================<br><strong>Needed files</strong> : inst.sh / init.php / iskript.php / getConfigVars.php / infos_ueber_installation.sh<br><strong>Aliases</strong> : i<br><strong>Usage</strong> : i [URL or installation name]<br><strong>Example</strong> : i <a href="http://mingle.respondi.com">http://mingle.respondi.com</a> or i mingle<br><strong>Known Change Request</strong>:</p>
+<h3 id="header-8">Add an update entry to the installation in Globis</h3>
+<p>=====================================================================<br><strong>Needed files</strong> : globis_sync.sh / update_globis.php<br><strong>Aliases</strong> : helpersEfsUpdateEntryInGlobis, helpersDVUpdateEntryInGlobis oder u<br><strong>Parameters</strong> : text<br><strong>Usage</strong> : helpersUpdateEintragInGlobis [reason why the installation was updated/upgraded]<br><strong>Example</strong> : helpersUpdateEintragInGlobis Update concerning critical bug<br><strong>Known Change Request</strong>:</p>
+<h3 id="header-9">Get the short version history of an EFS version</h3>
+<p>=====================================================================<br><strong>Needed files</strong> : getROMHistory.sh<br><strong>Aliases</strong> : helpersGetEfsVersion,helpersEfsGetVersion<br><strong>Parameters</strong> : Version without EFS_ z.B. 10.8<br><strong>Usage</strong> : helpersGetEfsVersion 10.0<br><strong>Known Change Request</strong>:</p>
+<h3 id="header-10">Get a Build from PJONGJANG: - <span style="color: #ff5630;">obsolete</span>
+</h3>
+<p>=====================================================================<br><strong>Needed files</strong> : getBuilds.sh<br><strong>Aliases</strong> : helpersGetEFSBuild, helpersEfsGetBuild<br><strong>Export</strong> : No<br><strong>Parameters</strong> : 1<br><strong>Usage</strong> : helpersGetEFSBuild EFS_10.8 #Get EFS 10.8 Build<br><strong>Usage</strong> : helpersGetEFSBuild EFS_DV-2.5-0087 #Get DV 2.5 Build<br><strong>Known Change Request</strong>:</p>
+<h3 id="header-11">Get list of FrontEnds? of an installation - <span style="color: #ff5630;">obsolete</span>
+</h3>
+<p>=====================================================================<br><strong>Needed files</strong> : lbpool.sh<br><strong>Aliases</strong> : helpersGetFrontEnds,helpersEfsGetFrontEnds or lbpool<br><strong>Usage</strong> : helpersGetFrontEnds<br><strong>Known Change Request</strong>:</p>
+<h3 id="h_01J7DX5QD8H02XTXB10QEWGJW7">Get statistics of an installation</h3>
+<p>=====================================================================<br><strong>Needed files</strong> : <a href="http://run.sh">run.sh</a><br><strong>Usage</strong> : info<br><strong>Aliases</strong> : info<br><strong>Export</strong> : No<br><strong>Parameters</strong> : will be asked for<br><strong>Example</strong> : info<br><strong>Known Change Request</strong>:</p>
+<h3 id="header-12">Add an installation to the list in GLOBIS - disfunctional, but needed</h3>
+<p>=====================================================================<br><strong>Needed files</strong> : globis_creat0r.php<br><strong>Usage</strong> : helpersAddInstallationInGlobis<br><strong>Aliases</strong> : helpersAddInstallationInGlobis,helpersEfsAddInstallationInGlobis, helpersDVAddInstallationInGlobis<br>export : No<br><

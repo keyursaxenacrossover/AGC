@@ -1,0 +1,60 @@
+ available:</p>
+<p class="wysiwyg-text-align-justify">Enable low-base warning</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Set the base which will trigger a warning message if the level is not matched. This might prove useful when checking whether groupings do not meet the size requirements for significance testing.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Bonferroni P-value correction for t-test and z-test</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Check this option if you need to manually adjust the p-values of individual column comparisons downwards in order to have the final results of the test appear more realistic according to the alpha error accumulation in multiple comparisons. This will be performed according to Bonferroni.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The split dimension contains multiple-choice categories</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>This mode applies if the split dimension‘s categories consist of variables of question type 121 as this question type bears the risk that one participant might be allocated to several categories. Activating this option will let the test consider the overlapping of case numbers and calculate accordingly.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The significance determined through the z-test will be displayed in a contingency table.</p>
+<p class="wysiwyg-text-align-justify">The significance determined through the z-test will also be calculated for the top and bottom boxes in the tables.</p>
+<p class="wysiwyg-text-align-justify"><strong>t-Test</strong></p>
+<p class="wysiwyg-text-align-justify">The t-test compares the mean values of two adjacent columns. The variables will be interpreted as metrically scaled.</p>
+<p class="wysiwyg-text-align-justify">The t-test is accessible from the <strong>Table editor</strong>. Create a split dimension and open it through a double click within the structure. You can now create a t-test by selecting it from the drop-down menu.</p>
+<p class="wysiwyg-text-align-justify">The significance determined through the t-test will be displayed below the contingency table.</p>
+<p class="wysiwyg-text-align-justify">The example employs a split dimension based on the sex of the participants. The salary grade is listed in ascending order (higher numbers mean higher salary grades). This category is interpreted as a metric variable by the t-test.</p>
+<p class="wysiwyg-text-align-justify">The t-test delivers the following conclusion: The average pay grade in men is significantly higher than it is in women. However, this is only the case with a significance level of 95%. With a significance level of 99.99% this contrast is not apparent.</p>
+<h2 id="creating-charts" class="wysiwyg-text-align-justify"><strong>Creating charts</strong></h2>
+<p class="wysiwyg-text-align-justify">Charts help you visualize the central findings of your evaluation. <em>EFS Reporting+</em> offers you a large variety of options:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The most popular chart types are available in several versions</p>
+</li>
+<li>
+<p>Important chart properties such as color scheme, legend, etc. can be customized</p>
+</li>
+<li>
+<p>All the general settings that you already know from the tables, such as number format or display of additional information, are also available for charts.</p>
+</li>
+</ul>
+<h3 id="overview-of-chart-configuration" class="wysiwyg-text-align-justify"><strong>Overview of chart configuration</strong></h3>
+<p class="wysiwyg-text-align-justify">The creating and configuring of charts is largely similar to that of the already familiar tables.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>you can specify beforehand if you want the results to be displayed in charts instead of tables per default, and if yes which chart type should be used for which question type. Furthermore, you can define your own color scheme for the report. All related functions are located in the Report-&gt;Report settings menu on the Chart tab.</p>
+</li>
+<li>
+<p>To convert a specific table into a chart, you open the<strong> Charts</strong> menu in the workpad toolbar and select the desired chart type.</p>
+</li>
+<li>
+<p>If you wish to enlarge a chart, e.g. to check the values or the legend, all you need to do is to double-click on the chart: It will then be opened in an additional window.</p>
+</li>
+<li>
+<p>All chart-specific setting options, such as color schemes or the display of legends, are combined in the <strong>Charts</strong> → <strong>Chart settings</strong> menu.</p>
+</li>
+<li>
+<p>General settings such as the number format or the display of additional information are made via the dialogs already familiar from the tables, either for the entire report (<strong>Report</strong> →<strong> Report settings</strong> → tab <strong>Table display</strong>) or for a specific chart (<strong>Settings</strong> icon of the workpad toolbar), as required. The only exception is the <strong>Missings</strong> tab, which is not available for charts: The handling of missings in charts is predefined, see the info box below.</p>
+</li>
+<li>
+<p>If you wish to change

@@ -1,0 +1,99 @@
+ invitations to a master data survey instead of simply<br>having the link displayed, you will also find all invited panelists in the “internal” sample and can keep track of who participates.</p>
+<p>Apart from the automatically generated sample, you cannot set up any further samples for master data surveys.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 358.194px;">
+<p>Maximum number of respondents active at the same time</p>
+</td>
+<td style="width: 412.465px;">
+<p>You can set an upper limit of simultaneously active respondents. Participants with the disposition codes 20, 21, and 23 are active survey participants. Participants who have finished the survey (or have not been active for more than five minutes) are no longer active survey participants. Every 90 seconds, the software checks whether the upper limit has been exceeded. If this is the case, possible participants are rejected until the number of participants falls below the upper limit again, i.e. at least 90 seconds.</p>
+<p> </p>
+<p>The limit however can only undercut an eventual installation-wide setting for the maximum number of participants per project, it cannot bypass it.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 358.194px;">
+<p>Behavior on resumption</p>
+</td>
+<td style="width: 412.465px;">
+<p>Used to control the routing of the survey on resumption. The following options are available:</p>
+<ul>
+<li>
+<p>Display page last sent.</p>
+</li>
+<li>
+<p>Send the page last sent again and display the next page.</p>
+</li>
+<li>
+<p>Display page last viewed.</p>
+</li>
+<li>
+<p>Display first page: The respondent will be redirected to the first page after resuming the survey. This is advisable, for example, if your questionnaire is divided into different chapters that are accessed via an index page. In this case, the respondent is not to resume the survey from the last page sent, but from the index page.</p>
+</li>
+</ul>
+<p>By default, the setting is “Display page last sent”.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 358.194px;">
+<p>Determine participant hostnames and IP addresses and store them in survey results  </p>
+</td>
+<td style="width: 412.465px;">
+<p>This option is used to activate the determination and storage of hostnames and IP addresses.</p>
+<ul>
+<li>
+<p>This option is deactivated in new projects by default.</p>
+</li>
+<li>
+<p>To change the setting or to view and export hostnames and IP addresses, you need <em>ip_addresses</em> read rights.</p>
+</li>
+</ul>
+<p>Please note: Certain network constellations may allow only restricted determination and storage of hostnames and IP addresses. Please note the corresponding information and check the functionality before taking the project into the field.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 358.194px;">
+<p>Accounting organization</p>
+</td>
+<td style="width: 412.465px;">
+<p>Indicates to which client the project belongs and is used for billing purposes (i.e., interviews conducted within this project are booked to the given organization). If the wrong organization is indicated, please contact the person responsible for the installation. If you hold the right “org admin”, you can alter the accounting organization in the <strong>Project Properties</strong> menu.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 358.194px;">
+<p>Mail template for automatic reminders</p>
+</td>
+<td style="width: 412.465px;">
+<p>If you use automated dispatch of reminders, the appropriate mail template is selected in this field.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 358.194px;">
+<p>Show cookie policy</p>
+</td>
+<td style="width: 412.465px;">
+<p>Determines whether or not your company‘s cookie policy will be displayed during survey participation.</p>
+<p>Any texts necessary must be added to the Survey messages.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 358.194px;">
+<p>Select whether a header with X-Frame-Options should be sent to the client</p>
+</td>
+<td style="width: 412.465px;">
+<p>Today, almost any browser makes it possible for web applications to send an HTTP header „X-Frame-Options“ which declares to the browser if a certain website is allowed to be shown in a frame or not.</p>
+<p>Possible value options are:</p>
+<ul>
+<li>
+<p><strong>Do not send</strong>: By the mentioned default value the header is not sent, which effectively leads to permission of framing.</p>
+</li>
+<li>
+<p><strong>Deny</strong>: The header is sent and will prevent any framing.</p>
+</li>
+<li>
+<p><strong>Same origin</strong>: The header is sent and will allow framing only by the website of the same domain.</p>
+</li>
+</ul>
+<p>By default, this header is not sent. “Deny" denies the display of pages in all frames, regardless of their domain. With "Same domain" pages are only displayed in frames whose parent page belongs to the same domain. Please note that the behavior depends on the client browser used.</p>
+<p>If you want to prevent XSS you can set the option to "Deny" (very strict) or to "Same domain" (then you can embed the survey in

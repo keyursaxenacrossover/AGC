@@ -1,0 +1,37 @@
+="noopener noreferrer" data-testid="link-with-safety" data-renderer-mark="true">here</a>.</p>
+<h3 id="Do-Not-Email-list" class="wysiwyg-text-align-justify" data-renderer-start-pos="18703">Do-Not-Email list</h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="18722">Navigate to the Do-not-Email list using the following path:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="18785"><strong data-renderer-mark="true">System</strong> → <strong data-renderer-mark="true">Options</strong> → <strong data-renderer-mark="true">Mail queue</strong> → <strong data-renderer-mark="true">Do-not-Email list</strong></p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="18838">General and project-based Do-Not-Email lists are managed here. To add emails to the blacklist, download the import template (<strong data-renderer-mark="true">Import → Download import template</strong>), add the email list to the <em data-renderer-mark="true">rctp</em> column, and use <em data-renderer-mark="true">pid</em> 0 to create a general blacklist or a specific <em data-renderer-mark="true">pid</em> to create a project-based blacklist. The <em data-renderer-mark="true">efs.mailblacklist.add, efsmailblacklist.delete, efsmailblacklist.get-List, efsmailblacklist.isBlacklisted </em>web services can be used to automate the management of blacklists. When new e-mails are sent from EFS, the addresses from the Do-Not-Email list are automatically removed from the list of recipients. Emails that have already been placed in the queue are marked as "canceled".</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="19524">Participants whose e-mail addresses are on the Do-not-Email list can still take part in the survey.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="19627">To implement self-service blacklists in the e-mail templates (“unsubscribe” functionality), add #unsubscribe_survey# or #unsubscribe_global# to your e-mail template.</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="19796">#unsubscribe_survey# generates a blacklist link for the current<em data-renderer-mark="true"> EFS</em> project.</p>
+</li>
+<li>
+<p data-renderer-start-pos="19876">#unsubscribe_global# generates a global blacklist link.</p>
+</li>
+</ul>
+<h2 id="SMS-admin" class="wysiwyg-text-align-justify" data-renderer-start-pos="19935"><strong data-renderer-mark="true">SMS admin</strong></h2>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="19946">On installations with the SMS module enabled you‘ll find SMS Report under <strong data-renderer-mark="true">Options</strong> → <strong data-renderer-mark="true">SMS admin</strong>. This functionality gives you a detailed list of all SMS sent by EFS to the provider along with the initial response received from the SMS provider. </p>
+<h2 id="File-exchange" class="wysiwyg-text-align-justify" data-renderer-start-pos="20192"><strong data-renderer-mark="true">File exchange</strong></h2>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="20207">After opening the <strong data-renderer-mark="true">File Exchange </strong>menu, you will be directed to an overview of the files of all exchange teams for which you have at least read rights. You have a simple and advanced search. In the case of the advanced search, you can search for the status, the team, or the time period in which the file was uploaded in addition to the keyword search.</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="20561">The<strong data-renderer-mark="true"> View</strong> function for restricting the table is also available.</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="20561"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015166261906"></p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="20561">The following table explains the contents of the overview list in detail:</p>
+<div class="pm-table-container with-shadow-observer wysiwyg-text-align-justify" data-layout="custom">
+<div class="pm-table-wrapper">
+<table style="border-collapse: collapse; height: 1px; width: 760px;" border="1" data-testid="renderer-table" data-number-column="false" data-table-width="760" data-layout="default">
+<colgroup> <col style="width: 170px;"> <col style="width: 588px;"> </colgroup>
+<tbody>
+<tr style="height: 47.1289px;">
+<th class="ak-renderer-tableHeader-sortable-column__wrapper

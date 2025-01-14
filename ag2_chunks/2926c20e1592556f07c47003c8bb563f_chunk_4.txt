@@ -1,0 +1,114 @@
+3><p>A user with @questback.com exists in EFS but this user is mapped to a wrong Okta user - e.g., EFS user markus.neuy@questback.com is mapped to mn@gmail.com.</p><div class="expand-macro">
+<h4 string="Case 4"></h4>
+<h4 id="header-22">Initial state:</h4>
+<p><strong><u>EFS - User Table</u></strong></p>
+<table ac:local-id="bc1d5ddd-23dc-43aa-9244-42095678507f" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p>EFS User ID</p></th>
+<th><p>email</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>14</p></td>
+<td><p><strong><span style="color: rgb(255,86,48);">user4@questback.com</span></strong></p></td>
+<td><p>-</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><u>Okta - User List</u></strong></p>
+<table ac:local-id="48be1696-a36a-4d90-ae89-189a988c9865" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p>Okta User ID</p></th>
+<th><p>email</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>10004</p></td>
+<td><p><strong><span style="color: rgb(255,86,48);">another.user@something.com</span></strong></p></td>
+<td><p>-</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><u>EFS - EFS User to Okta User Mapping</u></strong></p>
+<table ac:local-id="5d1cc559-47f2-4d56-87a2-e3229f46c153" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p>EFS User ID</p></th>
+<th><p>Okta User ID</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>14</p></td>
+<td><p>10004</p></td>
+<td><p><strong><span style="color: rgb(255,86,48);">wrong mapping - emails do not fit</span></strong></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="header-23">Future state:</h4>
+<p>Just ignore the conflict and fix the wrong mapping</p>
+<p><strong><u>EFS - User Table</u></strong></p>
+<table ac:local-id="a57c8eed-0ddc-41c8-82fb-91bd83de1c49" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p>EFS User ID</p></th>
+<th><p>email</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>14</p></td>
+<td><p>user4@tivian.com</p></td>
+<td><p>updated</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><u>Okta - User List</u></strong></p>
+<table ac:local-id="3fe8b0da-d6de-4b6b-b68a-c96d06e832d2" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p>Okta User ID</p></th>
+<th><p>email</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>10004</p></td>
+<td><p>another.user@something.com</p></td>
+<td><p>zombie</p></td>
+</tr>
+<tr>
+<td><p>20004</p></td>
+<td><p>user4@tivian.com</p></td>
+<td><p>created + assignment to group etc.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><u>EFS - EFS User to Okta User Mapping</u></strong></p>
+<table ac:local-id="b734b579-6c7f-4dc5-aa1e-4c12eac64cf1" data-layout="default">
+<col

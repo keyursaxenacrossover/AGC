@@ -1,0 +1,54 @@
+-align-justify">When evaluating personalized surveys, you may optionally use participant data (u variables).</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>To have them available in the report, please include them when you create your report. It is not possible to include them at a later date.</p>
+</li>
+<li>
+<p>You can find the data on the <strong>Survey</strong> tab in the <strong>Participant Data</strong> section.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Metanames</strong></p>
+<p class="wysiwyg-text-align-justify">If data is available from the Org Processor it will be imported when creating the report. This data includes a participant‘s entire set of metaname-variables and will be displayed separately by spaces.</p>
+<h3 id="using-panel-specific-data" class="wysiwyg-text-align-justify"><strong>Using panel-specific data</strong></h3>
+<p class="wysiwyg-text-align-justify">To import panel-specific data or to access them via the<strong> Panel</strong> tab in the source window, you need appropriate ACL rights. Panelist data: read rights to “panelsexport”; master data: read rights to “panelstats”; panel basic data, tracking data, and panel group data: read rights to “panelstatus”. Please note that the ACL rights do not restrict access to the existing report structure or existing filters, recodes, or split dimensions.</p>
+<p class="wysiwyg-text-align-justify">When evaluating panel and master data surveys, you may also use panel-specific data. In general, the following data types are available:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Panelist data: participant data of the panelists (u variables)</p>
+</li>
+<li>
+<p>Master data (m and md variables)</p>
+</li>
+<li>
+<p>Panel basic data: important system variables (mode of entry, language version, way of entry, PCI value, panelist status in the master data survey, and panel status)</p>
+</li>
+<li>
+<p>Panel tracking data (track variables)</p>
+</li>
+<li>
+<p>Panel group data: membership of panelists in panel groups</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">To have these panel-specific data available in the report, you have to include them according to the following instructions when you create your report. It is not possible to include them at a later date.</p>
+<p class="wysiwyg-text-align-justify">It is possible to group imported yes-/no-master data in <em>Reporting+</em>. For this purpose, master data must correspond to the following pattern: md_[group name]_[numerical value]. Master data of the same group name are combined into one group in Reporting+. The groups are displayed in „Sources“ on the tab „Panel“ in the section „Master data grouped“. Corresponding data will be automatically updated to the group when being added.</p>
+<p class="wysiwyg-text-align-justify">Including all available panel-specific data in a report can have adverse effects on the performance. However, by carefully selecting the panel data to be included according to the respective objective of your evaluation you can keep the number of variables in your report small, resulting in improved processing times.</p>
+<p class="wysiwyg-text-align-justify"><strong>Performing an import</strong></p>
+<p class="wysiwyg-text-align-justify">When creating a report on a panel or master data survey, an additional “Options” section will be displayed in the create dialog. Select the desired data. The following figure shows the imported data in the sources window (in the example, all data were imported).</p>
+<h3 id="importing-external-data" class="wysiwyg-text-align-justify"><strong>Importing external data</strong></h3>
+<p class="wysiwyg-text-align-justify">If necessary, you can import data collected outside of<em> EFS</em> into <em>EFS Reporting+</em> and subsequently use those data as source data for your evaluation.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>You will find the import function in the <strong>Extras</strong> → <strong>Import external data</strong> menu. In the following, the import will be explained in detail.</p>
+</li>
+<li>
+<p>Upon completion of the import, the data will be available on the <strong>External</strong> tab of the sources window.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Advice for your planning</strong></p>
+<p class="wysiwyg-text-align-justify">The following advice will help you in preparing your import:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>You can import up to 100 additional variables per report. These variables will be created anew. It is not possible to import any values for already existing variables, neither for <em>EFS</em> variables nor for previously imported external data.</p>
+</li>
+<li>
+<p>When importing, you can specify whether the values of the imported variables shall be treated as codes or as text. External variables of the “code” data type may have up to 25 answer options. If you have to import variables with a greater number of answer options, you may alternatively declare those variables as being of the "text" data type: The data will then be displayed in

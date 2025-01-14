@@ -1,0 +1,62 @@
+<p><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p>This article provides comprehensive information about the Receipts feature in survey projects. It covers settings, question exclusion, distribution methods, and how to add PDF receipt links to survey pages.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>The Receipts feature allows survey creators to provide participants with a PDF receipt of their completed questionnaire. This can be done through a download link or email attachment.</p>
+<ul>
+<li><a href="#settings">Settings</a></li>
+<li><a href="#exclude-questions">Exclude Questions</a></li>
+<li><a href="#send-receipt-by-mail">Send Receipt by Mail</a></li>
+<li><a href="#insert-link-to-pdf-receipt">Insert Link to PDF Receipt</a></li>
+<li><a href="#customize-the-Display-Text-of-the-Link:~:text=in%20the%20preview.-,Customize%20the%20Display%20Text%20of%20the%20Link,-If%20necessary%2C%20you">Customize the Display Text of the Link</a></li>
+<li><a href="#show-intermediate-receipt">Show Intermediate Receipt</a></li>
+<li><a href="#restriction-for-loops">Restriction for Loops</a></li>
+</ul>
+<h2 id="settings">Settings</h2>
+<p>The Settings menu allows you to configure the appearance and distribution of receipts:</p>
+<ul>
+<li>Appearance: Choose between portrait or landscape format and set page break options.</li>
+<li>Distribution: Specify how to provide receipts to participants (download link or email).</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014684753554"></p>
+<h2 id="exclude-questions">Exclude Questions</h2>
+<p>In the Exclude Questions tab, you can select which questions should not be included in the receipt. The end page of the questionnaire is always excluded by default.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014721639826"></p>
+<h2 id="send-receipt-by-mail">Send Receipt by Mail</h2>
+<p>To send receipts by email:</p>
+<h3 id="h_01J33AKTXJA69MZBRP72EVVFRX">Steps:</h3>
+<ol>
+<li>Open the questionnaire editor and select the Receipts option.</li>
+<li>
+<p>On the <strong>Exclude questions</strong> tab, if applicable, select which questions should not be included in the PDF receipt, and click Save.</p>
+</li>
+<li>
+<p>Switch back to the Settings tab and define the desired settings under <strong>Appearance</strong>.</p>
+</li>
+<li>Activate the "Send receipt by mail" checkbox under Distribution.</li>
+<li>Select or create a mail template.</li>
+</ol>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014684755858"></p>
+<ul>
+<li>For personalized projects: If you enable the "Send receipt by mail to the participant" option, participants who reach an end page with a disposition code between 31 and 34 will automatically receive a PDF receipt via email.</li>
+<li>For both personalized and anonymous projects: In the "Additional mail recipients" section, you can use placeholders for variables from this survey, such as another participant variable like #u_department_head#, or other survey variables that query an email address. You also have the option to manually enter an email address, such as <a rel="noreferrer">123@example.com</a>.</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014684756498"></p>
+<h2 id="insert-link-to-pdf-receipt">Insert Link to PDF Receipt</h2>
+<h3 id="h_01J33AKTXJF30EFJBRBZHVHS4C">Make General Settings:</h3>
+<ol>
+<li>Open the questionnaire editor and select the Receipts option.</li>
+<li>Configure settings in the Settings and Exclude Questions tabs.</li>
+</ol>
+<h3 id="h_01J33AKTXJWAW5HVAHAD058CWN">Add Link to Final Page:</h3>
+<ol>
+<li>Open the end page of your survey.</li>
+<li>Draft the desired text for the PDF receipt download option.</li>
+<li>Use the "Insert code automatically" drop-down menu to select "PDF receipt".</li>
+<li>Customize the display text of the link if needed.</li>
+</ol>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014684751378"></p>
+<p> </p>
+<p>Below is a default example of how the PDF receipt link appears. If needed, you can customize the link's display text, "PDF receipt," by referring to the "Customize the display text of the link" section for more details.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014721636754"></p>
+<p><span style="color: #172b4d; font-family: -apple-system, BlinkMacSystemFont, ' Segoe UI' , Roboto, Oxygen, Ubuntu, ' Fira Sans' , ' Droid Sans' , ' Helvetica Neue' , sans-serif

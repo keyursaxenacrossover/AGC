@@ -1,0 +1,54 @@
+ placed at the desired position in the report.</p>
+</li>
+<li>
+<p>The structure of split dimensions can be defined easily via drag-and-drop.</p>
+</li>
+<li>
+<p>Contingency tables can be up to three dimensions deep (i.e., a maximum of three variables can be nested within one split dimension) and contain a maximum of twenty five (25) columns.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The first of these 25 columns already contains the answer option. So you can only create 24 categories (or codes or dimensions).</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Please note that the choice of chart types available for contingency tables is limited to column charts.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">It is currently not possible to split open answers. Please use filters instead: they allow you to clearly arrange the texts in several tables.</p>
+<h3 id="overview-of-contingency-table-configuration" class="wysiwyg-text-align-justify"><strong>Overview of contingency table configuration</strong></h3>
+<p class="wysiwyg-text-align-justify">All the split dimensions required for the report are prepared in the sources window, similar to the filters.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The prepared split dimensions are placed at the appropriate positions in the report structure. Then you drag all those elements for which you want to create contingency tables into the corresponding split dimension, creating separate branches.</p>
+</li>
+</ul>
+<h3 id="defining-split-dimensions" class="wysiwyg-text-align-justify"><strong>Defining split dimensions</strong></h3>
+<p class="wysiwyg-text-align-justify">The exact structure of the table headers for the contingency tables is defined in a separate drag-and-drop editor. You open this editor by clicking on the <strong>Create split dimension</strong> icon, or by selecting an existing split dimension and then clicking on <strong>Edit</strong>.</p>
+<ul>
+<li class="wysiwyg-text-align-justify">
+<p>Drag the variables used for splitting from the sources window onto the drawing board. All source data and recoding variables are available.</p>
+</li>
+<li class="wysiwyg-text-align-justify">
+<p>Arrange the variables on the drawing board in the same order and hierarchy as you want them to appear in the table header. It is possible to nest up to three variables.</p>
+</li>
+<li class="wysiwyg-text-align-justify">
+<p>Via the “Total” drop-down list you can add a “Total” column.</p>
+</li>
+<li class="wysiwyg-text-align-justify">
+<p>Via the <strong>Compact mode</strong> and <strong>Detail mode</strong> tabs, you can change the view: In Compact mode, only the variables will be displayed. In detail mode, you can also see the answer options.</p>
+</li>
+<li class="wysiwyg-text-align-justify">
+<p>If you want to change the order of the answer options for a variable, click on the <strong>Arrow</strong> icon. The opened dialog allows to rearrangement of the options, similar to the table editor.</p>
+</li>
+<li class="wysiwyg-text-align-justify">
+<p>To change the labeling of a variable or an answer option, click on the respective element: the text will be opened in the input field above the drawing board.</p>
+</li>
+<li>
+<p class="wysiwyg-text-align-justify">In the “Name” field of the header section, you can change the internal label of the split dimension.</p>
+</li>
+</ul>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="h_01HGKSMPRVM0QJXQXQJ8QXQJ8R6">What is the maximum depth and number of columns for contingency tables?</h3>
+<p>Contingency tables can be up to three dimensions deep and contain a maximum of 25 columns, with the first column reserved for answer options.</p>
+<h3 id="h_01HGKSMPRVRQJXQXQJ8QXQJ8R7">Can open answers be split in contingency tables?</h3>
+<p>No, it is currently not possible to split open answers in contingency tables. It is recommended to use filters instead to arrange the texts in several tables.</p>

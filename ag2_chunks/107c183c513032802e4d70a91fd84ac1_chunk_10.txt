@@ -1,0 +1,60 @@
+ by a third party supplier. Until further notice, please proceed as follows: Save the file locally. Then, open the saved file, allowing Excel to repair it. Finally, save the file again.</p>
+<p class="wysiwyg-text-align-justify"><strong>Editing the export file</strong></p>
+<p class="wysiwyg-text-align-justify">Edit the export file. Please pay special attention to the following:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The second row, directly under the column labels, contains the reference unit, i.e., the unit under which the new structure is to be imported.</p>
+</li>
+<li>
+<p>The levels are indicated in relation to this reference unit.</p>
+</li>
+<li>
+<p>If you duplicate an already existing substructure in the same project, e.g. in another department or in another structure view, you have to change the meta names. If you do not want to change each meta name by hand, you can use the option “Automatically generate meta name prefixes” when reimporting.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Importing</strong></p>
+<p class="wysiwyg-text-align-justify">Locate the reference unit in the organizational structure, i.e., the unit under which the structure is to be imported. Click on the<strong> Actions</strong> icon to open the selection layer and then click on the link<strong> Import structure</strong>.</p>
+<h3 id="using-the-import-function-for-updating-values-in-an-existing-structure" class="wysiwyg-text-align-justify"><strong>Using the import function for updating values in an existing structure</strong></h3>
+<p class="wysiwyg-text-align-justify">If you only wish to update an existing (sub-)structure, please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Export the (sub-)structure as described above.</p>
+</li>
+<li>
+<p>Update the desired data in the export file.</p>
+</li>
+<li>
+<p>Afterward, import the (sub-)structure again under the same parent unit. The option “Update existing structure data” in the import dialog has to be activated during the import process.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The existing structure will now be updated with the contents of the import file. Units that were not part of the existing structure before will be newly inserted. The structure of existing nodes remains unchanged.</p>
+<p class="wysiwyg-text-align-justify">If you do not tick the option “Update existing structure data”, the entire import structure will be newly inserted under the specified reference unit as described above in Chapter 4.9.2, p. 80. If there have been units already, they will be newly created nonetheless and automatically assigned new system-generated meta names.</p>
+<h3 id="subsequently-editing-units" class="wysiwyg-text-align-justify"><strong>Subsequently editing units</strong></h3>
+<p class="wysiwyg-text-align-justify">Frequently, stored data need to be subsequently edited due to changing numbers of participants or changed structures in certain business areas, for example. So long as the units have not been locked for editing by the project management or a higher-level responsible person, this can be done without difficulty. You have the following options:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>You can reopen the edit dialogs and change data in there.</p>
+</li>
+<li>
+<p>You can move units to another position within the structure.</p>
+</li>
+<li>
+<p>You can merge units.</p>
+</li>
+<li>
+<p>You can delete units.</p>
+</li>
+</ul>
+<h3 id="changing-data-of-a-unit" class="wysiwyg-text-align-justify"><strong>Changing data of a unit</strong></h3>
+<p class="wysiwyg-text-align-justify">You can subsequently change the data of a unit. There are two ways to open the editing dialogs above:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Locate the desired unit in the organizational structure. Click on the <strong>Actions</strong> icon to open the selection layer and then click on the link <strong>Edit</strong>. This opens the detailed view of the unit. The<strong> Edit</strong> <strong>unit</strong> tab with the dialog is displayed automatically. If you want to edit data on another tab, click on that tab.</p>
+</li>
+<li>
+<p>Locate the desired unit in the organizational structure and click on the title. The detail view is opened, and the <strong>Status information</strong> tab is displayed automatically. Switch to the desired tab.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If you want users to be able to edit units subsequently, you need to assign the right <em>structure_edit_node</em> to the appropriate roles</p>
+<h3 id="moving-units" class="wysiwyg-text-align-justify"><strong>Moving units</strong></h3>
+<p class="wysiwyg-text-align-justify">It may be necessary to move individual units or entire structures within the organizational structure. This is the case, for example, when certain parts of the company have been restructured and the structure needs to be updated accordingly. Instead of deleting the entire affected structure and recreating it elsewhere, you can also move it.</p>

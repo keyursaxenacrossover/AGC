@@ -1,0 +1,23 @@
+/article_attachments/20716900515346" alt="john_lewis_5.PNG"><p></p><p>The important part here is the field <code>&lt;samlp:StatusMessage&gt;Signature required&lt;/samlp:StatusMessage&gt;</code> (see below)</p><p>This field gives the indicator that the Auth Request should have a signature.</p><p><strong>JLP’s Auth Response (decoded):</strong></p><pre><code class="language-xml">&lt;samlp:Response Version="2.0" ID="OzgLEiV8a4ZAAGSAu.D3SADEKD." IssueInstant="2020-02-20T08:13:19.464Z" InResponseTo="id26824557734261538952968480" Destination="https://access.questback.com/sso/saml2/0oa237f0jyRG4sZno416" 
+    xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol"&gt;
+    &lt;saml:Issuer xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"&gt;johnlewis:idp:ppd&lt;/saml:Issuer&gt;
+    &lt;ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#"&gt;
+        &lt;ds:SignedInfo&gt;
+            &lt;ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/&gt;
+            &lt;ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/&gt;
+            &lt;ds:Reference URI="#OzgLEiV8a4ZAAGSAu.D3SADEKD."&gt;
+                &lt;ds:Transforms&gt;
+                    &lt;ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/&gt;
+                    &lt;ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/&gt;
+                &lt;/ds:Transforms&gt;
+                &lt;ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/&gt;
+                &lt;ds:DigestValue&gt;9spKNBscMiZyn+1y35fDjC8OARxw//g4PerOE8hwV/k=&lt;/ds:DigestValue&gt;
+            &lt;/ds:Reference&gt;
+        &lt;/ds:SignedInfo&gt;
+        &lt;ds:SignatureValue&gt;
+WKbDUNSi5SGY0KjEJuP8ka0DQU1xIsI9//xTZr4FePIbem5TYsGNqDtYX/idWj/9WmHBsaV4TIlv Rd3lUp3k3lTC1Di0DGIscpZERdsaP2nhdkK9TiHhyH39jtKXuRXhOUYF8PpEhDsBr4XlG8Ro08/p WY1CTgZeej6JLUQXSIR04mcCzl4UAe6jvyOj/nNQi9ZRjcGoptlRimdwCWxX9y/59htaRWdWfZv+ sZZ6skdq7FeLSLdwic8DNkARvKk+U9PJxT8FGeAXqTWw2+va2nHWucWHlPLCvur5txvkp+MIkw5D YR7tZlCaGSS2acBwlVhHUUFsVA/Ydk6tdzHxZg==
+        &lt;/ds:SignatureValue&gt;
+        &lt;ds:KeyInfo&gt;
+            &lt;ds:X509Data&gt;
+                &lt;ds:X509Certificate&gt;
+MIIFCjCCA/KgAwIBAgITOAAAhJ/i4RODwYBPDwAAAACEnzANBgkqhkiG9w0BAQsFADBkMQswCQYD VQQGEwJHQjEfMB0GA1UEChMWSm9obiBMZXdpcyBQYXJ0bmVyc2hpcDEgMB4GA1UECxMXUGFydG5l cnNoaXAgSVQgU2VydmljZXMxEjAQBgNVBAMTCUpMUFN1YkNBMjAeFw0xOTA2MTExNDU2MDlaFw0y MjA2MTAxNDU2MDlaMD8xCzAJBgNVBAYTAlVLMRMwEQYDVQQKEwpqb2huIGxld2lzMRswGQYDVQQD ExJqbHAtc2lnbi1qb2hubGV3aXMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCAjbcf IPXXRM4P+OttbUhRQPv6gKWJ0fo1awy3BYkSmhfNLPUFUuDLIFk2nFfGK88rvsqlFi513NuQT6Es 2OwFQT5F+6V3J6R9BLNAcY

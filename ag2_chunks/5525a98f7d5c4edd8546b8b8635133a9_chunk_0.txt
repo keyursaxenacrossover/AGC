@@ -1,0 +1,91 @@
+<p><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p>This article provides comprehensive guidance on account management in EFS (Enterprise Feedback Suite). It covers the creation of organizations, teams, and user accounts, as well as special account types such as test accounts and reporting accounts. The guide also includes information on combined exports of participant details and survey results, and provides email templates for sending login information.</p>
+<p> </p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>Account management in EFS involves creating and managing organizations, teams, and user accounts. This guide outlines the steps for each process and provides important information for support staff and administrators.</p>
+<ul>
+<li><a href="#general-information">General Information</a></li>
+<li><a href="#create-organization">Create an Organization</a></li>
+<li><a href="#create-team">Create a Team</a></li>
+<li><a href="#create-user-accounts">Create User Accounts</a></li>
+<li><a href="#test-account">Test Account Provisioning</a></li>
+<li><a href="#h_01J3Z25PKC6MK8AVWW44QM5FA7">Account for an Accumulative Installation</a></li>
+<li><a href="#reporting-accounts">Provisioning Reporting Accounts</a></li>
+<li><a href="#email-templates">Email Templates for Sending Login Information</a></li>
+<li><a href="#combined-export">Combined Export of Participant Details and Survey Results</a></li>
+</ul>
+<h2 id="general-information">General Information</h2>
+<p>Support only sets up accounts on <strong>shared installations and completely new installations. </strong></p>
+<p>On <strong>customer installations</strong>, the customer should always set up the accounts (members of the admin team), as Support cannot know whether the person is authorized to have access.</p>
+<p>If an account needs to be created manually because the tac-script isn't available, follow these three main steps in the provided order:</p>
+<ol>
+<li>Create an organization</li>
+<li>Create a team</li>
+<li>Create user accounts</li>
+</ol>
+<p>Wording and definitions:</p>
+<ul>
+<li>An organization is the overall group which contains all teams and user accounts of a customer</li>
+<li>A team contains user accounts to provide ACL rights in EFS to dedicated users</li>
+<li>A user account is the account for a single person working in EFS</li>
+</ul>
+<h2 id="create-organization">Create an Organization</h2>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20429238779538" width="298" height="144"></p>
+<ol>
+<li>Log in to the installation</li>
+<li>Click on System tab&gt; <strong>Users</strong> &gt; click on navigation menu <strong>Organisations</strong> &gt; click button <strong>Create organization</strong>
+<ol>
+<li>Provide organization name</li>
+<li>Provide description</li>
+<li>Set date and time specifications for the runtime of the organization</li>
+<li>Set max amount of allowed users and projects for the organization</li>
+</ol>
+</li>
+<li>Finish by clicking "Create"</li>
+</ol>
+<h2 id="create-team">Create a Team</h2>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20429238785682" width="297" height="143"></p>
+<ol class="ak-ol" start="1" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="1194">Log in to the installation</p>
+<ol>
+<li>Click on System tab&gt; <strong>Users</strong> &gt; click on navigation menu <strong>Teams </strong>&gt; click button <strong>Create Team</strong>
+</li>
+</ol>
+<ol class="ak-ol" start="1" data-indent-level="2">
+<li>
+<p data-renderer-start-pos="1321">Provide team name</p>
+</li>
+<li>
+<p data-renderer-start-pos="1342">Provide team title</p>
+</li>
+<li>
+<p data-renderer-start-pos="1364">Provide description</p>
+</li>
+<li>
+<p data-renderer-start-pos="1387">Set the owner of the team</p>
+</li>
+<li>
+<p data-renderer-start-pos="1416">Define the access rights for the different areas in EFS </p>
+</li>
+<li>
+<p data-renderer-start-pos="1498">Pick a ACL rights template for the new team according to the target functionality of the new team and ensure the assignment</p>
+</li>
+</ol>
+</li>
+<li>
+<p data-renderer-start-pos="1627">Finish by clicking " Create team"</p>
+</li>
+</ol>
+<h2 id="create-user-accounts">Create User Accounts</h2>
+<ol class="ak-ol" start="1" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="1690">Log in to the installation</p>
+<ol>
+<li>Click on System tab&gt; <strong>Users</strong> &gt; click on navigation menu <strong>Users</strong>&gt; click button <strong>Create User Account</strong>
+</li>
+</ol>
+</li>
+<li>
+<p data-renderer-start-pos="1816">Provide information in all required fields

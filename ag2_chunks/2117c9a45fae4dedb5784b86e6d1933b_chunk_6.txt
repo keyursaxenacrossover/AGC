@@ -1,0 +1,34 @@
+ was called.</p>
+<p data-renderer-start-pos="5813">A simple example how to iterate over items and r_cats:</p>
+<p data-renderer-start-pos="5872"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015614753554"></p>
+<p data-renderer-start-pos="5872">To submit values to the server the form needs to have a field (depending on the question type e. g. input, checkbox, hidden or select tag) containing the name of the variable matching its name.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015627976594"></p>
+<p data-renderer-start-pos="5872">This will print a select box for each item including any scale options (r_cat).</p>
+<p> </p>
+<h2 id="Style-Sheet" data-renderer-start-pos="6153">Style Sheet</h2>
+<p data-renderer-start-pos="6167">In the <strong data-renderer-mark="true">Style Sheet </strong>menu, you can edit the question type’s CSS file. Some styles are predefined, but you can remove them to get the default styling of the Responsive Layout and start your styling from there.</p>
+<p data-renderer-start-pos="6374">The question type’s main container gets a CSS class with the following structure:</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015614757394"></p>
+<p data-renderer-start-pos="6374">In our example, the class name would read as follows:</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015614762642"></p>
+<p data-renderer-start-pos="6374">You should use this class as a namespace to limit your styles to your question type and prevent interferences with the outer layout or other question types.</p>
+<p> </p>
+<div class="rich-media-item mediaSingleView-content-wrap image-center cc-k3x12i" data-layout="center" data-width="50" data-width-type="percentage" data-node-type="mediaSingle" data-renderer-start-pos="6514">
+<div class="cc-8mmi9a">
+<div data-type="file" data-node-type="media" data-width="162" data-height="19" data-id="2300d3d7-7bbd-41dd-b48c-4ce307b0a494" data-collection="contentId-1259012276" data-file-name="995cc0dc-880c-4beb-aa47-5b85de252efb" data-file-size="3109" data-file-mime-type="image/png" data-alt="page247image52016144" data-renderer-start-pos="6515" data-context-id="1259012276">
+<div id="newFileExperienceWrapper" class="new-file-experience-wrapper cc-1hqmpj4" data-testid="media-card-view"> </div>
+</div>
+</div>
+</div>
+<h2 id="Java-Script" data-renderer-start-pos="6676">Java Script</h2>
+<p data-renderer-start-pos="6690">In the <strong data-renderer-mark="true">JavaScript </strong>menu, you define the logic of your question type.</p>
+<div class="ak-editor-panel cc-tqp4ke" data-panel-type="info">
+<div class="ak-editor-panel__icon"><em>If you do not need any JavaScript behaviour you can remove the example code and leave the file empty.</em></div>
+</div>
+<p data-renderer-start-pos="6862">At the beginning of the template file there is some code that makes the question type’s settings available in the JavaScript. You can find these settings in the <em data-renderer-mark="true">options </em>object of the JavaScript plugin. For example the answer options (items) are stored in an array called <em data-renderer-mark="true">items</em>. Likewise, the scale options (r_cats) are stored in an array called <em data-renderer-mark="true">rcats</em>.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015614768914"></p>
+<p data-renderer-start-pos="6862">You will also find the question type’s options (defined in the <strong data-renderer-mark="true">Settings </strong>area) inside the <em data-renderer-mark="true">this.options </em>object. I.e. if you have an <strong data-renderer-mark="true">option </strong>named “orientation” in the <strong data-renderer-mark="true">options group </strong>“optionsGroup1”, you can access it like this:</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015614770578"></p>
+<p data-renderer-start-pos="6862">You should start your code inside the plugin’s <em data-renderer-mark="true">main </em>function, but you can use the <em data-renderer-mark="true">prepareOptions </em>function to parse and cast the given options beforehand or to modify the type if you need to.</p>
+<p> </p>
+<div class="rich-media-item mediaSingleView-content-wrap image-center cc-141s4ox" data-layout="center" data-width="80" data-width-type="percentage" data-node-type="mediaSingle" data-render

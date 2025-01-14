@@ -1,0 +1,46 @@
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">hurricane_snailmail_user</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">User for snailmail mail delivery (only if Hurricane MTA is active).</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;"> </td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 15.536%;">'</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;"> </td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;"> </td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">ignore_tests</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">Which unittests shall be ignored?</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;">array("efs_test_installation"=&gt;array("test_memory_limit"),"survey_test_installation"=&gt;array("test_memcache_extension"), ...);</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 15.536%;">array ( )</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;"> </td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;"> </td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">installation_type</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">installation type</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;">survey, panel, employee, leadership</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 15.536%;">survey'</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;">no</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;">no</td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">instlist_report_with_debuglevel</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">in use in globis_report() in dbreport.php If set to "true" allows process GLOBIS-Sync for installations with $__debuglevel &gt; 0.</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;">false, true</td>
+<td style="padding: 2px 3px; vertical-align: middle; text-align: center; width: 15.536%;">FALSE</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;">no</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;">yes</td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">interviews_sender</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">set alternative adresses to receive the interview count</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;">blank= fallback <a class="in-cell-link" href="mailto:de.support@questback.com" target="_blank" rel="noopener noreferrer">de.support@questback.com</a>
+</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 15.536%;">de.support@questback.com'</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;"> </td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;"> </td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">lang</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">default setting for EFS admin language</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;">en, de</td>

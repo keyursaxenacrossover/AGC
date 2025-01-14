@@ -1,0 +1,47 @@
+5. Check configuration</h3><ul>
+<li><p><strong>Execute installation check</strong></p></li>
+<li>
+<p><strong>Alternatively you can check as follows:</strong></p>
+<ul>
+<li><p>Open any EFS project (except for forum discussions (FD))</p></li>
+<li><p>If MySight has been activated correctly, you will see menu "MySight" in Survey menu</p></li>
+<li><p>Click on "MySight" and check whether you see message "No export job has been scheduled yet." in the top right corner. (If you can see it everything is fine??? -Daniel).</p></li>
+</ul>
+</li>
+</ul><h2 id="header-25">Overview EFS configuration variables and values for MySight v1</h2><h3 id="header-27">
+<ac:inline-comment-marker ac:ref="73ea6c7a-8401-4892-9399-fc8737468763">SFTP </ac:inline-comment-marker>Data:</h3><p></p><ul>
+<li><p><strong>sftp_host</strong>(default:YES)______________________________________: <a href="http://mysight-data.bre.globalpark.com">mysight-data.bre.globalpark.com</a> <strong>(FRANKFURT)</strong></p></li>
+<li><p><strong>sftp_host</strong>(default:NO)_______________________________________: 172.24.48.40 <strong>(RACKSPACE)</strong></p></li>
+<li><p><strong>sftp_path </strong>(default:YES)______________________________________: /usr/bin/</p></li>
+<li><p><strong>sftp_private_key </strong>(default:YES)________________________________: ../privatedocs/EFSsftp_private</p></li>
+<li><p><strong>sftp_user </strong>(default:YES)______________________________________: EFSsftp</p></li>
+</ul><h3 id="header-28">Tableau SFTP Variables</h3><p><strong> The following is an older variable, that is still used by EFS 10.7, is only a configuration variable and is not within the EFS code. </strong><br><strong>A healselfchange should be requested for remove this flag from the EFS configuration.</strong><br></p><ul><li><p><strong>survey_export_tableau_sftp_directory</strong>(Standard:JA)___________: EFSsftp/</p></li></ul><h3 id="header-29">Mysight variables</h3><p>By default is MySight v1 deactivated.</p><ul>
+<li><p><strong>mysight_enabled</strong>(default:YES)________________________________: FALSE</p></li>
+<li><p><strong>mysight_enabled</strong>(default:YES)________________________________: TRUE</p></li>
+<li><p><strong>mysight_user_provisioning_service</strong>(default:YES)______________: <a href="http://mysight-api.bre.globalpark.com:49865/app/api/process/userprovision/">http://mysight-api.bre.globalpark.com:49865/app/api/process/userprovision/</a></p></li>
+<li><p><strong>mysight_user_provisioning_service</strong>(default:NO)______________: <a href="http://mysight-api.bre.globalpark.com:49866/app/api/process/userprovision/">http://mysight-api.bre.globalpark.com:49866/app/api/process/userprovision/</a></p></li>
+<li><p><strong>mysight_user_provisioning_service</strong>(default:NO)______________: <a href="http://172.24.48.40:49866/app/api/process/userprovision/">http://172.24.48.40:49866/app/api/process/userprovision/</a></p></li>
+</ul><h1 id="header-32">Support</h1><h2 id="header-34">Alteryx and Tableau Contacts</h2><ul>
+<li>
+<p><strong>Alteryx Licensing</strong></p>
+<ul>
+<li><p>Mark Pullen (IW) – <a href="mailto:mark.pullen@interworks.co.uk">mark.pullen@interworks.co.uk</a></p></li>
+<li><p>Kirsty McGilway<a href="https://it.globalpark.de/twiki/bin/edit/Support/McGilway?topicparent=Support.MySight">?</a> (IW) - <a href="mailto:kirsty.mcgilway@interworks.co.uk">kirsty.mcgilway@interworks.co.uk</a></p></li>
+</ul>
+</li>
+<li>
+<p><strong>Tableau Licensing</strong></p>
+<ul><li><p>Patrick Zimmermann - <a href="mailto:pzimmermann@tableau.com">pzimmermann@tableau.com</a></p></li></ul>
+</li>
+<li>
+<p><strong>Alteryx Bugs</strong></p>
+<ul>
+<li><p><a href="mailto:Clientservices@alteryx.com">Clientservices@alteryx.com</a></p></li>
+<li><p>Include time zone and location in case they don’t match that automatically</p></li>
+<li><p>Attach any screen shots or errors</p></li>
+</ul>
+</li>
+<li>
+<p><strong>Tableau Bugs</strong></p>
+<ul>
+<li><p><a href="mailto:support@tableau.com">support@tableau.com</a></p></

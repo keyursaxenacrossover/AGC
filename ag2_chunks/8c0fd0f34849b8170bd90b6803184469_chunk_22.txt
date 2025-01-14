@@ -1,0 +1,33 @@
+ out Prod when you want to use preprod (and vice versa)
+-	Add the panelists identifier in $data
+-	Add the Tableau Site in $data
+-	Open up the browser: http://INSTALLATION/ tableau_ticket_test_script.php
+
+The created ticket gets printed out.
+If it is not working, you will get a false value.
+</code></pre><h3 id="header-74">(MySight old) Trusted ticket issue (Case 00943924)</h3><p> From time to time we have face issues with use of trusted tickets (see above). But in some case there is no issue caused by whitelisting on tableau.</p><p>For Example: An error occurred on the server. The details of the error are: Could not locate unexpired trusted ticket -1 Click the Refresh button in your web browser and try again. If you continue to receive this error please contact your Tableau Server Administrator.</p><p></p><p>There is a variable for login for a Site on Language Version. On this field can be registered an already existing Tableau user. Is the used user not existing on tableau server, you will get a trusted ticket error message.</p><h3 id="header-75">(MySight old) Workbooks/Dashboards are not loading on Tableau server (e.g. preprod2)</h3><ul>
+<li><p>Problem: On Tableau preprod2 none of the Workbooks/Dashboards are loading. When clicking on a workbook you only see the loading icon but nothing happens</p></li>
+<li><p>Questions to ask: Could the workbook be viewed before? Has the workbook or data source been changed or republished recently?</p></li>
+<li>
+<p>Possible reasons:</p>
+<ul><li>
+<p>Check the processes on the Tableau server (Heiko). Maybe the CPU has a high load. In this case you(Heiko) might have to kill the process. This can be connected to a problematic setup of the workbook.</p>
+<ul><li><p>Check the workbook to find problematic settings and fix them.</p></li></ul>
+</li></ul>
+</li>
+</ul><h3 id="header-76">(MySight new) When is data synched to the intermediate database?</h3><p> Question: Is data synched only if a survey is connected and not at the start of the survey or per page?<br>Answer: The intermediate database is used for synching data. The latter is triggered by the jobmaker. In the backend this process uses the export of completed interviews (dispcode 31 and 32)</p><h3 id="header-77">(MySight new) How can data be synched to the intermediate database manually</h3><p> It might be necessary to manually synch data to the intermediate and Exasol database, e.g. in case of an import of result data.<br>In EFS versions &lt; 17.3 imported result data is not synched automatically because those imports are not written into table mysight_survey_participation_queue.<br>Here is how to manually add the datasets to the table and have them synched.</p><p></p><ul><li>
+<p>Find out which participations need to be synchronized, e.g. all participations imported on a special date and time. Note: No testers are synchronized and only dispcodes 31 and 32 are synchronized!</p>
+<pre><code class="language-text">SELECT pid, lfdn, 2, 1 FROM sample_data WHERE pid=[PID ]AND status=31 and tester=0 AND date_of_last_access &gt; '[DATE];
+SELECT pid, lfdn, 2, 1 FROM sample_data WHERE pid=1502 AND status=31 and tester=0 AND date_of_last_access &gt; '2017-09-05 00:00:00';</code></pre>
+</li></ul><p></p><ul><li>
+<p>Prepare insert statements in an .sql file on the server</p>
+<pre><code class="language-text">INSERT INTO mysight_survey_participation_queue (pid, lfdn, sync_type, status) VALUES ([PID],[LFDN],2,1);
+INSERT INTO mysight_survey_participation_queue (pid, lfdn, sync_type, status) VALUES (1502,8925,2,1);</code></pre>
+</li></ul><p></p><ul><li>
+<p>Insert those lfdns into table mysight_survey_participation_queue by sourcing the previously prepared sql file.</p>
+<pre><code class="language-text">Source [FILENAME]
+source mysight_sync_1502.sql;</code></pre>
+</li></ul><p></p><ul>
+<li><p>Wait until jobmaker is executed (or execute it manually)</p></li>
+<li><p>Check MySight Log in System &gt;&gt; Options &gt;&gt; MySight settings &gt;&gt; qb:: MySight log</p></li>
+</ul><p></p><ul><li><p>a little update for different cases. The statements (originally REPLACEs are used) use another sync_type if the participant has already been synchronized and gets updated. In case a participant with status 31/32 is set to status 15 or status 12 the sync_type is still 2 and status 1. In case a participant gets reset with deletion of data, so that status 11 is set, the used sync_type is 3.</p></li></ul><p>* in htdocs/modules/mysight/components/survey/participation/queue.inc.php the

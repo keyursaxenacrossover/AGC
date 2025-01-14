@@ -1,0 +1,53 @@
+<p>Overview</p>
+<article>
+<p>This article explains how to create a uniform distribution in Random-Trigger using user-defined variables, Recoding-Trigger, and the Modulo function. It provides an alternative solution to overcome the limitations of using a Random-Trigger with infinite participants.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>The article focuses on implementing a uniform distribution for random triggering in surveys, particularly when dealing with a large number of participants. It introduces the concept of Modulo and explains how to use it with user-defined variables and Recoding-Trigger to achieve the desired result.</p>
+<ul>
+<li><a href="#h_01HGKSMPRSZ7QJNP3JXBJ8XDVT">Understanding the Problem</a></li>
+<li><a href="#h_01HGKSMPRS3TNQXCQXJ5QXHG9M">Introduction to Modulo</a></li>
+<li><a href="#h_01HGKSMPRSQNKXBXQXD4QXBG9N">Implementing Uniform Distribution</a></li>
+</ul>
+<h2 id="h_01HGKSMPRSZ7QJNP3JXBJ8XDVT">Understanding the Problem</h2>
+<p>When using a Random-Trigger with a uniform distribution and infinite participants, the query for the trigger becomes very complex. This complexity leads to several issues:</p>
+<ul>
+<li>The installation process becomes very slow</li>
+<li>Participants may be rejected from the survey</li>
+<li>The trigger takes an excessive amount of time to load</li>
+</ul>
+<p>To address these problems, an alternative approach using user-defined variables, Recoding-Trigger, and the Modulo function is recommended.</p>
+<h2 id="h_01HGKSMPRS3TNQXCQXJ5QXHG9M">Introduction to Modulo</h2>
+<p>Modulo (mod) is a mathematical function that returns the remainder when dividing two integers. For example:</p>
+<ul>
+<li>10 mod 3 = 1 (10 divided by 3 equals 3 with a remainder of 1)</li>
+<li>14 mod 5 = 4 (14 divided by 5 equals 2 with a remainder of 4)</li>
+<li>16 mod 3 = 1 (16 divided by 3 equals 5 with a remainder of 1)</li>
+</ul>
+<h2 id="h_01HGKSMPRSQNKXBXQXD4QXBG9N">Implementing Uniform Distribution</h2>
+<p>To implement a uniform distribution for random triggering, follow these steps:</p>
+<p data-renderer-start-pos="666"><strong data-renderer-mark="true">Solution:</strong><br>Recoding-Trigger with LFDN and Mod</p>
+<p data-renderer-start-pos="712"><strong data-renderer-mark="true">What is  lfdn?</strong><br>Every participant has a unique lfdn (participants consequente number). If you use this number with mod you create also a random trigger with a uniform distribtution.</p>
+<p data-renderer-start-pos="894"><strong data-renderer-mark="true">Setup uniform distribution for numbers 1-5</strong></p>
+<ol class="ak-ol" start="1" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="940">Setup User-defined-variables (Project properties -&gt; user-defined-variables -&gt; Number of user-defined-variables: 1)</p>
+</li>
+<li>
+<p data-renderer-start-pos="1058">Jump to the page where you wanna setup your random uniform distribution</p>
+</li>
+<li>
+<p data-renderer-start-pos="1133">Create Recoding Trigger (Suvey-Menu -&gt; Questionnaire-Editor -&gt; Page-&gt; Trigger -&gt; Recoding-Trigger)</p>
+</li>
+</ol>
+<p data-renderer-start-pos="1235"><br>Settings of the Trigger:</p>
+<p data-renderer-start-pos="1235"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015136277778"></p>
+<p><span style="color: #172b4d; background-color: #ffffff;">Detail configuration:</span></p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015136284562"></p>
+<p data-renderer-start-pos="1291">Variable to be recoded: c_000x</p>
+<p data-renderer-start-pos="1323">Value: MOD(#lfdn# , 5 ) + 1</p>
+<p data-renderer-start-pos="1352">For 6 Random-numbers use 6 instead of 5..<br>If you wanna see the values of the lfdn and c_000x (user-defined-variable) use the following code in the questionnaire text or where you want</p>
+<p data-renderer-start-pos="1352"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015166328338"></p>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="h_01HGKSMPRSQNKXBXQXD4QXBG9S">What is lfdn?</h3>
+<p>lfdn stands for "laufende Feldnummer" in German, which translates

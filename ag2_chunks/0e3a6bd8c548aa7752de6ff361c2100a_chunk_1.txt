@@ -1,0 +1,56 @@
+>App gateway:</p>
+<ul>
+<li><p><a href="http://appgw.customervoice360.com/login">appgw.customervoice360.com/login</a> or <a href="http://appgw.customervoice360.com/admin">appgw.customervoice360.com/admin</a></p></li>
+<li><p>user: root</p></li>
+<li><p>password: default root password</p></li>
+</ul>
+</li>
+<li>
+<p>App name in app store:</p>
+<ul>
+<li>
+<p>iOS:</p>
+<ul><li><p>Portals: your gateway to the world of feedback, Questback GmbH<a href="https://it.globalpark.de/twiki/bin/edit/Support/GmbH?topicparent=Support.SupportEFSPortals">?</a></p></li></ul>
+</li>
+<li>
+<p>Android:</p>
+<ul><li><p>Portals (you easily can find it by searching for "Questback")</p></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+<p></p>
+<h2 id="header-5">Making a portal available in the app:</h2>
+<ul>
+<li><p>Login to <a href="http://appgw.customervoice360.com/login">appgw.customervoice360.com/login</a></p></li>
+<li><p>Create a new Applink</p></li>
+<li><p>Enter title, claim and portals URL</p></li>
+<li><p>Activate the portal and activate further options if needed (like toolbar, reload, logout)</p></li>
+<li><p>set sending header with X-Frame-Options from Portal → Settings → General settings to “Do not send” </p></li>
+</ul>
+<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20714622329106" alt="image-20240213-133419.png"><p></p>
+<h2 id="header-6">Accessing a portal on a smartphone or tablet:</h2>
+<ul>
+<li><p>Download the app from the app store</p></li>
+<li><p>Open the app and enter the claim (This only can be done once. If you would like to change the claim, you need to re-install the app)</p></li>
+<li><p>The app accesses the app gateway to look up the URL corresponding to the claim entered</p></li>
+<li><p>The content of the URL (the portal) then will be shown within the app (using an iframe or similar)</p></li>
+</ul>
+<p></p>
+<h2 id="header-7">Push Notifications:</h2>
+<p> Link Sammlung:<br><a href="https://it.globalpark.de/twiki/bin/view/Support/SupportInfosZu110#Notification_center">SupportInfosZu110#Notification_center</a> <br><a href="https://it.globalpark.de/twiki/bin/view/Support/SupportInfosZu1603#Push_notifications_to_android_io">SupportInfosZu1603#Push_notifications_to_android_io</a> <br><a href="https://it.globalpark.de/twiki/bin/view/Support/SupportInfosZu1604#Push_notifications_to_mobile_dev">SupportInfosZu1604#Push_notifications_to_mobile_dev</a> <br><a href="https://it.globalpark.de/twiki/bin/view/Support/SupportInfosZu1701#Notifications">SupportInfosZu1701#Notifications</a> <br><a href="https://it.globalpark.de/twiki/bin/view/Support/SupportInfosZu1702#Push_Notifications_App">SupportInfosZu1702#Push_Notifications_App</a> <br><a href="https://it.globalpark.de/twiki/bin/view/Support/SupportInfosZu1801#Panelist_settings">SupportInfosZu1801#Panelist_settings</a> <br></p>
+<p>From case 00844578: <br>in each portal in the participant list, you can select panelists and can send them a push notification via button "Send push notification". <br>The panelist has to have the app installed and push notifictions enabled. The portal also has to have a claim. Otherwise the panelists of course can not access the portal via the app.</p>
+<p></p>
+<h2 id="header-8">Other general information:</h2>
+<ul>
+<li><p>The app does not show an address bar so manually navigating to a different URL is not possible but if the portal includes a link (an external link or a link to a survey) and it is clicked, the corresponding content will be shown</p></li>
+<li><p>By swiping left and right (at least iOS app) you can navigate a page back and forth (like using the corresponding browser navigation buttons</p></li>
+</ul>
+<p></p>
+<h1 id="header-10">Portals Limits and other settings</h1>
+<p><strong>In der Config (Tab "root only:: System configuration"):</strong></p>
+<p></p>
+<table ac:local-id="913033c6-6757-48d9-82fa-19f5fb04d5d3" data-layout="default" data-table-width="760"><tbody>
+<tr>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/SupportEFSPortals?sortcol=0;table=1;up=0#sorted_table">Config Flag</a></p></th>
+<th><p><a href="https://it.globalpark.de/twiki

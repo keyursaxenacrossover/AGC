@@ -1,0 +1,35 @@
+>
+<p>Session expires after: The okta master session time (leave on default if not otherwise specified by the client)</p>
+<p> </p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20999363256978" alt="add rule.png"></p>
+<p> </p>
+<p> </p>
+<h2 id="h_01J6A2TSDFP0PSD80J0A7SVNDW">API Token Setup</h2>
+<h3 id="01J6A2KHS337PNRMEZYMQGNG6V">Prerequisites:</h3>
+<p>Client have to use different API tokens.</p>
+<p>All API tokens that are used by applications should be created with the API token user. This is a shared user that must only be used to create API Tokens. Tokens that are created must be stored in a shared secret store (like KeePass). They cannot be viewed in the Okta UI.</p>
+<p> </p>
+<h3 id="01J6A2KHS3MQ9N2HH9CENTNB4Y">Step 0: Login with the API Token User</h3>
+<h3 id="01J6A2KHS3DSQD13ZE9P8233JQ">Step 1: Navigate to API</h3>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20999363257746" alt="Screenshot_2019-11-28 Questback - Dashboard.png"></p>
+<p> </p>
+<h3 id="header-6">Step 2: Navigate to Tokens</h3>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20999326734354" alt="Screenshot_2019-11-28 Questback - API.png"></p>
+<h3 id="header-7">Step 3: Create Token</h3>
+<p><strong>Values:</strong></p>
+<p>Name: client’s name</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20999363261074" alt="Screenshot_2019-11-28 Questback - API(1).png"></p>
+<p> </p>
+<h3 id="header-8">Step 4: Store token</h3>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20999326699538" alt="Screenshot_2019-11-28 Questback - API(2).png"></p>="01J6A2KHS3DSQD13ZE9P8233JQ">Step 1: Navigate to API</h3>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20999363257746" alt="Screenshot_2019-11-28 Questback - Dashboard.png"></p>
+<p> </p>
+<h3 id="header-6">Step 2: Navigate to Tokens</h3>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20999326734354" alt="Screenshot_2019-11-28 Questback - API.png"></p>
+<h3 id="header-7">Step 3: Create Token</h3>
+<p><strong>Values:</strong></p>
+<p>Name: client’s name</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20999363261074" alt="Screenshot_2019-11-28 Questback - API(1).png"></p>
+<p> </p>
+<h3 id="header-8">Step 4: Store token</h3>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20999326699538" alt="Screenshot_2019-11-28 Questback - API(2).png"></p>

@@ -1,0 +1,74 @@
+<p><a href="https://developer.okta.com/docs/reference/api/authorization-servers/#scope-operations">https://developer.okta.com/docs/reference/api/authorization-servers/#scope-operations</a></p>
+<p><strong>Claims:</strong></p>
+<p><a href="https://developer.okta.com/docs/reference/api/authorization-servers/#claim-operations">https://developer.okta.com/docs/reference/api/authorization-servers/#claim-operations</a></p>
+<p><strong>Policies (Access Policies):</strong></p>
+<p><a href="https://developer.okta.com/docs/reference/api/authorization-servers/#policy-operations">https://developer.okta.com/docs/reference/api/authorization-servers/#policy-operations</a></p>
+<h1 id="h_01J67A70WG9K8FCY5NS17HS5T0">Okta Factor Enrollment</h1>
+<p>Factor enrollment is a process in Okta that takes care of collecting Multi Factor information from users accessing applications. Factor enrollment defines which users have to provide Multi Factor data.</p>
+<p><strong>Keep in mind that the factor enrollment does not mean that MFA is active. MFA will be activated using a Sign-On Policy see: <a href="#h_01J679R075MB44V7NHKF8FZNJN">Sign-On Policy</a>.</strong></p>
+<p> </p>
+<table style="height: 516px;" border="1" data-layout="default">
+<tbody>
+<tr style="height: 22px;">
+<th style="height: 22px; width: 111.266px;">
+<p><strong>What</strong></p>
+</th>
+<th style="height: 22px; width: 581.734px;">
+<p><strong>Explanation</strong></p>
+</th>
+</tr>
+<tr style="height: 44px;">
+<td class="wysiwyg-text-align-center" style="height: 44px; width: 103.266px;" colspan="2" data-highlight-colour="#f4f5f7">
+<p><strong>Multifactor Policy</strong></p>
+</td>
+</tr>
+<tr style="height: 74px;">
+<td style="height: 74px; width: 103.266px;">
+<p>Group Assignment</p>
+</td>
+<td style="height: 74px; width: 573.734px;">
+<p>The group assignment is used to scope Multi Factor Authentication and should be as precise as possible.</p>
+<p>This is the main tool that should be used to handle multi factors.</p>
+</td>
+</tr>
+<tr style="height: 132px;">
+<td style="height: 132px; width: 103.266px;">
+<p>Eligible Factors</p>
+</td>
+<td style="height: 132px; width: 573.734px;">
+<p>The factors for which as user is asked for. There are three possible values:</p>
+<ul>
+<li>Optional: This factor can be provided. In case there are optional factors at least one of these factor has to be provided.</li>
+<li>Disabled: Users cannot configure that factor.</li>
+<li>Required: This factor has to be provided.</li>
+</ul>
+</td>
+</tr>
+<tr style="height: 22px;">
+<td class="wysiwyg-text-align-center" style="height: 22px; width: 103.266px;" colspan="2" data-highlight-colour="#f4f5f7">
+<p><strong>Policy Rule</strong></p>
+</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px; width: 103.266px;">
+<p>Access</p>
+</td>
+<td style="height: 22px; width: 573.734px;">
+<p>Scoping for the rule.</p>
+</td>
+</tr>
+<tr style="height: 200px;">
+<td style="height: 200px; width: 103.266px;">
+<p>Enrollment</p>
+</td>
+<td style="height: 200px; width: 573.734px;">
+<p>There are three different cases:</p>
+<ul>
+<li>The first time a user is challenged for MFA → This happens as soon as a user attempts to access an application that requires MFA. A user could have entered different other applications without MFA beforehand.</li>
+<li>The first time a user signs in → This happens independently from the application the user accesses. Therefore a user could be asked for MFA information without being challenged for MFA.</li>
+<li>Do not enroll → self-explanatory</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>

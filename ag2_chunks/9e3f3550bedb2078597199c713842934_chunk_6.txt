@@ -1,0 +1,28 @@
+alware-scanner.meinusch-efs.svc.cluster.local:8080</a></p>
+</li>
+<li>
+<p>To test it you can run command like this:<br><code>time curl -X POST -H "Content-Type: multipart/form-data" -F "FileContents=@&lt;YOUR LOCAL FILE&gt;" &lt;MALWARE-URL&gt;</code></p>
+</li>
+</ul>
+<h2 id="quality">Quality and Performance</h2>
+<p>Quality scenarios for the Malware Scanner include:</p>
+<ul>
+<li>Daily updates of malware signatures</li>
+<li>Ability to scan files up to a specified size (e.g., 2GB)</li>
+<li>Capacity to handle multiple concurrent file uploads within defined time frames</li>
+</ul>
+<p>Performance metrics and specific capacity requirements are to be further defined and tested.</p>
+<p>Attached to this article are 2 bash scripts that can be used for testing ClamAV.</p>
+<h2 id="risks">Risks and Technical Debt</h2>
+<p>Identified risks:</p>
+<ul>
+<li>Dependency on ClamAV, an open-source solution that could potentially be discontinued</li>
+<li>Lack of comprehensive quality scenarios, especially around capacity and throughput</li>
+<li>Potential security risks associated with using open-source software</li>
+</ul>
+<p>Technical Debt: N/A</p>
+<h2 id="h_01J3JPXA882KGP28RDCK6BE78S">Helpful links</h2>
+<p data-renderer-start-pos="1"><span data-inline-card="true" data-card-url="https://aws.amazon.com/de/blogs/developer/virus-scan-s3-buckets-with-a-serverless-clamav-based-cdk-construct/"><span class="loader-wrapper"><span aria-expanded="false" aria-haspopup="true" data-testid="hover-card-trigger-wrapper"><a class="css-118vsk3 e26bri0" tabindex="0" role="button" href="https://aws.amazon.com/de/blogs/apn/amazon-s3-malware-scanning-using-trend-micro-cloud-one-and-aws-security-hub/" data-testid="inline-card-resolved-view"><span class="css-1cwva94 e1a3lu072" data-testid="inline-card-icon-and-title"><span class="css-1lcr4h8 e1a3lu075"><img class="smart-link-icon css-ijlt3r e1yrcv6a0" style="height: 14px; width: 14px;" src="https://a0.awsstatic.com/main/images/site/fav/favicon.ico" data-testid="inline-card-icon-and-title-image"></span></span></a><a class="css-118vsk3 e26bri0" tabindex="0" role="button" href="https://aws.amazon.com/de/blogs/developer/virus-scan-s3-buckets-with-a-serverless-clamav-based-cdk-construct/" data-testid="inline-card-resolved-view"><span class="css-1cwva94 e1a3lu072" data-testid="inline-card-icon-and-title"><span class="smart-link-title-wrapper css-0 e1a3lu077">Virus scan S3 buckets with a serverless ClamAV based CDK construct | Amazon Web Services</span></span></a></span></span></span></p>
+<p data-renderer-start-pos="5"><span data-inline-card="true" data-card-url="https://www.npmjs.com/package/cdk-serverless-clamscan"><span class="loader-wrapper"><span aria-expanded="false" aria-haspopup="true" data-testid="hover-card-trigger-wrapper"><a class="css-118vsk3 e26bri0" tabindex="0" role="button" href="https://www.npmjs.com/package/cdk-serverless-clamscan" data-testid="inline-card-resolved-view"><span class="css-1cwva94 e1a3lu072" data-testid="inline-card-icon-and-title"><span class="css-1lcr4h8 e1a3lu075"><img class="smart-link-icon css-ijlt3r e1yrcv6a0" style="height: 14px; width: 14px;" src="https://static-production.npmjs.com/da3ab40fb0861d15c83854c29f5f2962.png" data-testid="inline-card-icon-and-title-image"></span><span class="smart-link-title-wrapper css-0 e1a3lu077">npm: cdk-serverless-clamscan</span></span></a></span></span></span></p>
+<p data-renderer-start-pos="9"><span data-inline-card="true" data-card-url="https://github.com/awslabs/cdk-serverless-clamscan/blob/main/assets/lambda/code/scan/lambda.py"><span class="loader-wrapper"><span aria-expanded="false" aria-haspopup="true" data-testid="hover-card-trigger-wrapper"><a class="css-118vsk3 e26bri0" tabindex="0" role="button" href="https://github.com/awslabs/cdk-serverless-clamscan/blob/main/assets/lambda/code/scan/lambda.py" data-testid="inline-card-resolved-view"><span class="css-1cwva94 e1a3lu072" data-testid="inline-card-icon-and-title"><span class="smart-link-title-wrapper css-0 e1a3lu077">lambda.py</span></span></a></span></span></span></p>
+<p data-renderer-start-pos="13"><

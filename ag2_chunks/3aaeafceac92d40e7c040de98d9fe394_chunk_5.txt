@@ -1,0 +1,55 @@
+Facebook, Twitter, Google+, LinkedIn und XING) are located in the Survey menu in the <strong>Distribution</strong> section.</p>
+</li>
+<li>
+<p>If your survey is intended to appear in a pop-up window you can make <em>EFS</em> create the requisite code with a click on the<strong> Get pop-up code</strong> button. Copy and paste the code into your web page. If you are not familiar with HTML, please ask a web designer or developer to help.</p>
+</li>
+</ul>
+<h3 id="personalized-surveys" class="wysiwyg-text-align-justify"><strong>Personalized surveys</strong></h3>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><em>Personalized surveys</em> require defining the sample in advance by filling in the so-called Participant administration. During the field phase, you can include additional participants in the survey at any time. This allows you to interview any number of persons.</p>
+</li>
+<li>
+<p>In the case of a personalized survey, a sample is the number of persons who have been released as participants for this survey.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Path:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><em>Projects</em> → {Selected project} → <em>Participant administration</em> menu item.</p>
+</li>
+</ul>
+<h3 id="panel-surveys-and-master-data-surveys" class="wysiwyg-text-align-justify"><strong>Panel surveys and master data surveys</strong></h3>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Surveys in panels are usually not comprehensive but rather based on smaller samples from the overall pool of panelists. <em>People</em> provides a number of functions for controlling the sampling process.</p>
+</li>
+</ul>
+<h2 id="process-progress" class="wysiwyg-text-align-justify"><strong>Process progress</strong></h2>
+<p class="wysiwyg-text-align-justify">In projects of the type “Employee survey”, you can find a Gantt chart showing the process progress in the <strong>Survey</strong> menu. Via the hamburger button you can execute the following actions: <strong>Print chart</strong>,<strong> Download PNG image</strong>, <strong>Download PDF document</strong>, <strong>Download SVG vector image</strong>.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015166746642" alt="Process progress.jpg"></p>
+<p class="wysiwyg-text-align-justify"><strong>Activating the next phase via the Gantt Diagram</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>If you have write rightss for “org_phase_admin”,, you can change the project phases directly via the Gantt chart.</p>
+</li>
+<li>
+<p>To do so, click on the phase which you intend to activate. After a warning, its status will be changed to “active”, while the status of all previous phases is changed to “finished”.</p>
+</li>
+<li>
+<p>Depending of the constellation, the status of the previous or following phase may change as well. If, for example, you change the status of the “Pretest” phase from “not yet started” to “active”, the status of the previously-activated “Setup” phase will be changed to “finished”.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The rights of<em> Org Processor </em>users are affected strongly by a change of phase. Never change the phase of a running project just to find out what might happen!</p>
+<h2 id="macros" class="wysiwyg-text-align-justify"><strong>Macros</strong></h2>
+<p class="wysiwyg-text-align-justify">Creating survey projects often involves performing identical steps: For example, with each new project the following must be repeated: importing the standard company layout, activating predefined survey messages, loading previously defined standard wildcards and creating participants. The actions required to end a project also repeat themselves: The project must be deactivated, result data exported and the codebook and online statistics saved as data for documentation purposes. The macro function permits automation of such steps: Specific actions can be preconfigured by the user and executed again at a later time at the push of a button. The macro function makes it possible not only to execute individual actions, but also to bundle several actions into a single macro. This does not only simplify working with <em>Survey</em>, but it also increases the uniformity of work processes.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>You create a macro both under the <strong>Project information</strong> menu item and under the <strong>Macros</strong> menu item in the <strong>Libraries</strong> menu. There you will find all macros available on the installation to which you have access, while the macros created under the <strong>Project information</strong> menu item are only available for the specific project.</p>
+</li>
+<li>
+<p>Creating macros requires write rights for <em>create_macro</em>.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Click on the <strong>Create macro</strong

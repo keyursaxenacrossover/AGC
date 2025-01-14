@@ -1,0 +1,80 @@
+>Publish after approval: Initially, the files will only be shown to their respective author. Other panelists will only see them after they have been approved by the moderator.</li>
+</ul>
+<p>The default setting is “Publish immediately”.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Allowed file types for file upload</p>
+</td>
+<td>
+<p>In this field, you define which file types the panelists may upload if the feature “Panelists are allowed to upload files” is activated.</p>
+<p>Please mind:</p>
+<ul>
+<li>Only the file types named in the edit dialog are permitted.</li>
+<li>For films in “flv” format, EFS provides a player, i.e. they are embedded properly into the post. The display of other video formats depends on the operating system, browser, and the plugins of the panelists.</li>
+</ul>
+<p>As a moderator, you can upload files of all types named above via the admin area, regardless of the selection made for panelists.</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: left;">Maximum upload file size</td>
+<td style="text-align: center;">
+<p>If you allow the panelists to upload files, you can define the maximum file size in this field.</p>
+<ul>
+<li>The default value is 100 kb.</li>
+<li>If you enter “0” or nothing, the upload function will not be displayed.</li>
+<li>The maximum technically possible value is installation-specifc; it is displayed in the dialog.</li>
+</ul>
+<p>We recommend that you allow only the upload of very small files, as all uploaded files will have to be stored and increase the backup of the installation.</p>
+<p>If you upload files via the admin area as a moderator, you will not be restricted by the specified value. The maximum technically possible value for admins is installation-specifc; in case of doubt, please check with Support.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="editing-files-from-the-admin-area" class="wysiwyg-text-align-justify"><strong>Editing Files from the Admin Area</strong></h2>
+<p class="wysiwyg-text-align-justify">As a moderator, you normally have a moderator or test account that allows you to use the same functions on the website as the panelists. For the most part, however, you will be working from the admin area: There you have further-reaching access rights - for example, you can still upload files when the panelists are not allowed to do so - and various moderation functions are available.</p>
+<p class="wysiwyg-text-align-justify">Files of panelists should not be deleted or changed subsequently without good reason. Use your edit options sparingly and observe the netiquette.</p>
+<p class="wysiwyg-text-align-justify"><strong>File list for a section</strong></p>
+<p class="wysiwyg-text-align-justify">To view the existing files in the admin area, click on the desired download section in the section overview. Alternatively, you can also use the<strong> Edit files</strong> icon.</p>
+<p class="wysiwyg-text-align-justify">All files are listed with their titles, descriptions, and file names. Displayed date of creation, release status, and the number of downloads are also shown.</p>
+<p class="wysiwyg-text-align-justify"><strong>Edit options</strong></p>
+<p class="wysiwyg-text-align-justify">Click on the Add file button to open the dialog for uploading a new file.</p>
+<p class="wysiwyg-text-align-justify">Click on the title of an existing file to view its properties.</p>
+<p class="wysiwyg-text-align-justify">The icons in the “Actions” column provide the following editing options:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<strong>Edit</strong>: This also opens the dialog for editing the properties of an existing file.</li>
+<li>
+<strong>Delete</strong>: The selected file will be deleted following a confirmation prompt.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Properties of files</strong></p>
+<p class="wysiwyg-text-align-justify">The table provides a detailed list of all the properties a file can have.</p>
+<table class="relative-table wrapped wysiwyg-text-align-justify" style="width: 108.902%; height: 939px;" border="1">
+<colgroup> <col style="width: 20.1483%;"> </colgroup> <colgroup> <col style="width: 79.8432%;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center">Field</th>
+<th class="wysiwyg-text-align-center">Meaning</th>
+</tr>
+<tr>
+<td>Website / Language version</td>
+<td>
+<p>Website and language version to which the file belongs. Cannot be changed subsequently.</p>
+</td>
+</tr>
+<tr>
+<td>Section title</td>
+<td>
+<p>Name of the section. This is displayed both in the admin area and on the panel page.</p>
+</td>
+</tr>
+<tr>
+<td>Title</td>
+<td>Title of the download. Cannot be changed subsequently.</td>
+</tr>
+<tr>
+<td>Contributed by</td>
+<td>
+<p>The panelist or moderator who uploaded the file.</p>
+<p>When creating a file via the admin area, you can choose the author: Panelists with the panel status “moderator” or “tester” are available in

@@ -1,0 +1,90 @@
+2>
+<p class="wysiwyg-text-align-justify">Language administration can be found in the tab in the <strong>Projects → </strong>{Selected project} →<strong> Project properties</strong> → <strong>Survey languages</strong> menu. It includes the following functions:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Create and edit languages</p>
+</li>
+<li>
+<p>Assign language identifier</p>
+</li>
+<li>
+<p>Set active default language</p>
+</li>
+<li>
+<p>Set language selection variable</p>
+</li>
+<li>
+<p>Copy language elements</p>
+</li>
+<li>
+<p>Language selection log</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014837368082" alt="Survey languages.jpg"></p>
+<h3 id="overview-of-existing-languages" class="wysiwyg-text-align-justify"><strong>Overview of Existing Languages</strong></h3>
+<p class="wysiwyg-text-align-justify">The overview table in the “Edit languages” section lists all existing languages of the project along with the following information:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><strong>ID</strong>: Each language receives an identification number from the system. This number cannot be changed. In the export data record, you will find this language identification number in the form of the “language” variable indicating the language version of the questionnaire that was displayed to the respondent.</p>
+</li>
+<li>
+<p><strong>Language</strong>: Language label. The default language is marked accordingly.</p>
+</li>
+<li>
+<p><strong>Language identifier</strong>: Serves as unique identification of language and region.</p>
+</li>
+<li>
+<p><strong>Default language</strong>: This column indicates the current default language of the project.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Depending on your access rights the following actions are available:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Edit languages</strong>: This opens a dialog where you can change the label and identifier of the respective language.</p>
+</li>
+<li>
+<p><strong>Print</strong>: Opens a view of the questionnaire in the respective language optimized for printing.</p>
+</li>
+<li>
+<p><strong>Rights</strong>: Opens the dialog for assigning read or write rights for the respective language to particular user teams in a targeted manner.</p>
+</li>
+<li>
+<p><strong>Use as default language</strong>:</p>
+</li>
+<li>
+<p><strong>Delete</strong>: The respective language will be deleted after a confirmation prompt.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Once you delete a language, all text elements and other settings of this language will be deleted and cannot be restored. Deleting a language will also cause errors in settings already made for the language selection question and language selection variable, as well as for language information entered in participant administration. The ID of the deleted language will no longer be subsequently re-assigned. If you re-create the same language, it will be assigned a new language ID.</p>
+<p class="wysiwyg-text-align-justify">You can use the <strong>View</strong> button to hide particular columns of the table or limit the number of rows.</p>
+<h3 id="creating-languages" class="wysiwyg-text-align-justify"><strong>Creating Languages</strong></h3>
+<p class="wysiwyg-text-align-justify">To create a new language, proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Click on the <strong>Create language</strong> button.</p>
+</li>
+<li>
+<p>In the “label” field, assign a name to the new language.</p>
+</li>
+<li>
+<p>Optionally, you can initialize the new language with phrases from an already existing language. To do so, specify your desired source language in the field “Copy language phrases from”.</p>
+</li>
+<li>
+<p>Assign a language identifier to the new language.</p>
+</li>
+<li>
+<p>Finally, confirm by clicking on <strong>Save</strong>.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014837371410" alt="Add new language.jpg"></p>
+<h3 id="copying-language-elements" class="wysiwyg-text-align-justify"><strong>Copying Language Elements</strong></h3>
+<p class="wysiwyg-text-align-justify"><em>A survey</em> allows you to copy texts from an already existing language into another language.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The “Copy language phrases from” function allows you to initialize a new language with existing phrases from another language. See the section “Create language” above.</p>
+</li>
+<li>
+<p>To fill or overwrite an already existing language with language elements from another language, specify the source and target languages in the “Copy language elements” field and confirm by clicking on <strong>Execute</strong>.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The copy function is useful if, for example, many answer categories are identical and do not require translation, e.g.

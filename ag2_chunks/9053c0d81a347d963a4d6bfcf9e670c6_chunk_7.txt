@@ -1,0 +1,44 @@
+ </div>
+” will be used.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Importing Master Data:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Optionally include selected or all master data. Master data variables must be pre-created.</li>
+<li>To update existing accounts, use the Update panelist data function. This updates records without creating new accounts.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>System Data Automatically Set During Import:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>System variables are automatically assigned values during import.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Ensure all necessary fields are filled in correctly before proceeding with the import.</p>
+<table class="relative-table wrapped tablesorter tablesorter-default confluenceTable wysiwyg-text-align-justify" style="margin: 0px auto; border-collapse: collapse; background-color: #ffffff; height: 576px; width: 646px;" border="1">
+<colgroup> <col style="width: 0px;"> </colgroup> <colgroup> <col style="width: 0px;"> </colgroup> <colgroup> <col style="width: 0px;"> </colgroup>
+<tbody>
+<tr class="tablesorter-headerRow" style="height: 36px;">
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; background-color: var(--ds-background-accent-gray-subtlest,#f0f0f0); padding: 7px 10px !important; width: 133.299px; height: 36px;" scope="col">
+<div class="tablesorter-header-inner">Variable name</div>
+</th>
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; background-color: var(--ds-background-accent-gray-subtlest,#f0f0f0); width: 275.226px; height: 36px;" scope="col">
+<div class="tablesorter-header-inner">Automatic setting</div>
+</th>
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; background-color: var(--ds-background-accent-gray-subtlest,#f0f0f0); width: 191.042px; height: 36px;" scope="col">
+<div class="tablesorter-header-inner">Meaning</div>
+</th>
+</tr>
+<tr style="height: 36px;">
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 133.299px; height: 36px;">pstatus</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 275.226px; height: 36px;">1 (Admitted temporarily)</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 183.021px; height: 36px;">The panel status.</td>
+</tr>
+<tr style="height: 36px;">
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 133.299px; height: 36px;">pinput</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 275.226px; height: 36px;">2 (Data import)</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 183.021px; height: 36px;">The mode of entry.</td>
+</tr>
+<tr style="height: 131px;">
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 133.299px; height: 131px;">pcredit_points</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 275.226px; height: 131px;">
+<p>Contains the value of the “credit” import variable if values for that variable have been imported.</p>
+<p>Additionally, an entry in the detailed account management table is created.</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--

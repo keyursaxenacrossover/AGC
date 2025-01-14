@@ -1,0 +1,61 @@
+>Click <strong>Save</strong> to confirm the settings.</li>
+</ol>
+<p class="wysiwyg-text-align-justify">These steps ensure your master data coverage is assessed regularly, helping maintain data quality and completeness.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="h_01HGKSMPRTJYG13X7QJGQX2Z3T" class="wysiwyg-text-align-justify">Panel Quotas</h2>
+<h4 id="h_01J3G4A6QXDW6GKGR547YXYF9P" class="wysiwyg-text-align-justify">Overview</h4>
+<p class="wysiwyg-text-align-justify">In the <strong>People → Statistics → Panel quotas</strong> menu, you can define multidimensional quotas for statistical evaluation. This feature allows you to set target values for combinations of master data variables (e.g., age, gender, region) and compare them with actual values to manage panel composition effectively.</p>
+<p class="wysiwyg-text-align-justify"><strong>Key Features:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Multiple independent quotas per panel.</li>
+<li>Up to 8 variables per quota.</li>
+<li>Use of all master data with defined characteristics, panel status (pstatus), language version (site_id), and gender (u_gender) as quota variables.</li>
+<li>Regular updates of actual values (not in real-time).</li>
+<li>Quotas are for statistical purposes only and do not affect prospective panelist registration.</li>
+</ul>
+<h4 id="h_01J3G4A6QXNMBR4SQFN7C2V0E9" class="wysiwyg-text-align-justify">Quota Overview</h4>
+<p class="wysiwyg-text-align-left">In the <strong>Panel quotas</strong> menu, the existing quotas are listed with the number of used variables and the date of the last update. <img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017226320914">Actions available include:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<strong>Edit quota</strong>: Modify the quota properties.</li>
+<li>
+<strong>Show cell values</strong>: View target and actual values.</li>
+<li>
+<strong>Upload target values</strong>: Import target values.</li>
+<li>
+<strong>Delete</strong>: Remove the quota.</li>
+</ul>
+<h4 id="h_01J3G4A6QXHRMG6Y4JHDW3A2TD" class="wysiwyg-text-align-justify">Creating a Quota</h4>
+<ol class="wysiwyg-text-align-justify">
+<li>Click <strong>Create quota</strong>.</li>
+<li>Enter a title.</li>
+<li>Select a grouping filter for actual allocation.</li>
+<li>Choose the desired quota variables.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017226322450">
+</li>
+<li>Confirm by clicking <strong>Add quota</strong>.</li>
+</ol>
+<p class="wysiwyg-text-align-justify">To edit quota properties later, use the <strong>Edit quota</strong> icon.</p>
+<h4 id="h_01J3G4A6QXQQTNVKB09AXJ71A7" class="wysiwyg-text-align-justify">Preparing an Import File</h4>
+<p class="wysiwyg-text-align-justify">Create a CSV file with:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>A column for each selected quota variable (title in the first line).</li>
+<li>A column titled "target" for target values.</li>
+<li>The first line with column titles, followed by target values for all possible combinations of the quota variables. </li>
+<li><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017226315666"></li>
+</ul>
+<h4 id="h_01J3G4A6QXEM62NZGFZYQS52E4" class="wysiwyg-text-align-justify">Importing Target Values</h4>
+<ol class="wysiwyg-text-align-justify">
+<li>Go to the quota overview.</li>
+<li>Click the <strong>Upload target values</strong> icon for the desired quota.</li>
+<li>Import the data.</li>
+<li>A success message will confirm the import.</li>
+</ol>
+<h4 id="h_01J3G4A6QYD5ZEENA344WX39FQ" class="wysiwyg-text-align-justify">Viewing Actual and Target Values</h4>
+<ol class="wysiwyg-text-align-justify">
+<li>Go to the quota overview.</li>
+<li>Click the <strong>Show quota allocation</strong> icon for the desired quota.</li>
+<li>The target and actual values for each cell will be displayed.</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><strong>Note</strong>: Actual values are not updated in real-time. The most recent update time is shown, and you can manually update if needed.</p>
+<h4 id="h_01J3G4A6QY16X7MD4WCVGXHEJ2" class="wysiwyg-text-align-justify">Exporting Actual and Target Values</h4>
+<p

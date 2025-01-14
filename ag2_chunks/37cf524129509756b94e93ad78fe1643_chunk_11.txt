@@ -1,0 +1,67 @@
+wyg-text-align-justify"><strong>Overview of the Bonus Types</strong></h3>
+<p class="wysiwyg-text-align-justify">Under <strong>Website → Bonus management</strong>, you will find the types of bonuses that have already been created for the panel. Use the drop-down lists in the head section to display the desired language version.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014812914962" alt="bonuses.png"></p>
+<h3 id="creating-new-bonus-types" class="wysiwyg-text-align-justify"><strong>Creating New Bonus Types</strong></h3>
+<ol class="wysiwyg-text-align-justify">
+<li>Click on the <strong>Create type of bonus</strong> button.</li>
+<li>Enter the required data into the form.<br><br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014859861650" alt="create_typeofbonus_a.png"><br><br>
+</li>
+<li>Choose the type of payment.<br><br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014812910226" alt="create_typeofbonus_b.png"><br><br>
+</li>
+<li>Further settings are required if you wish to create a “Voucher” bonus type:<br>
+<p>– You must choose a voucher code list and a mail template. We recommend creating these elements in advance, if possible. When doing so make sure that all elements have been assigned the suitable language version: The bonus dialog only displays lists and templates for the current language version.<br>– Optionally, you can activate automatic voucher mail dispatch.<br><br></p>
+</li>
+<li>
+<p>If you wish to make the bonus type available to the panelists online, choose the status “Active”.</p>
+</li>
+<li>
+<p>Depending on whether you have defined the payment amounts in advance or wish to leave it up to panelists to choose an amount within a certain range, you have the following options:</p>
+<p>– If it is a bonus type where panelists can determine the payment amount themselves by entering a sum in a text field, you should set a minimum and a maximum value of the payment. These are the minimum/maximum values that may be entered by panelists.<br>– If it is a bonus type with a fixed value or one for which payment amounts were selected in advance from a drop-down list, enter the payment amount(s) in the“Limits of payment” section.<br><br></p>
+</li>
+<li>Confirm by clicking on <strong>Save</strong>.</li>
+</ol>
+<h2 id="configuration-details" class="wysiwyg-text-align-justify"><strong>Configuration Details</strong></h2>
+<h3 id="bonus-properties" class="wysiwyg-text-align-justify"><strong>Bonus Properties</strong></h3>
+<p class="wysiwyg-text-align-justify">The table lists all the characteristics a bonus can have.</p>
+<table class="relative-table wrapped wysiwyg-text-align-justify" style="width: 97.2164%; margin-right: auto; margin-left: auto; height: 1165px;" border="1">
+<colgroup> <col style="width: 20.1076%;"> </colgroup> <colgroup> <col style="width: 17.3305%;"> </colgroup> <colgroup> <col style="width: 62.5224%;"> </colgroup>
+<tbody>
+<tr style="height: 22px;">
+<th class="wysiwyg-text-align-center" style="height: 22px;">Field</th>
+<th class="wysiwyg-text-align-center" style="height: 22px;">Wildcard</th>
+<th class="wysiwyg-text-align-center" style="height: 22px;">Meaning</th>
+</tr>
+<tr style="height: 73px;">
+<td style="height: 73px;">
+<p>Website / Language version</p>
+</td>
+<td style="height: 73px;"> </td>
+<td style="height: 73px;">
+<p>Website and language version to which the bonus belongs. Cannot be changed subsequently.</p>
+</td>
+</tr>
+<tr style="height: 72px;">
+<td style="height: 72px;">Bonus category</td>
+<td style="height: 72px;"> </td>
+<td style="height: 72px;">
+<p>Bonus categories allow you to classify bonuses, both in the admin area and on the panel page, according to self-defined criteria.</p>
+</td>
+</tr>
+<tr style="height: 53px;">
+<td style="height: 53px;">Title (internal)</td>
+<td style="height: 53px;"> </td>
+<td style="height: 53px;">
+<p>The internal bonus title. For orientation purposes only, it will not be seen by panelists.</p>
+</td>
+</tr>
+<tr style="height: 44px;">
+<td style="height: 44px;">Title (on website)</td>
+<td style="height: 44px;">{$s.item_title}</td>
+<td style="height: 44px;">The title is displayed on the panel page.</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px;">Description</td>
+<td style="height: 22px;">
+<p>{$s.item_description}</p>
+</td>
+<td style="height: 22

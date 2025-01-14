@@ -1,0 +1,42 @@
+">Information</h3>
+<p>The <strong>Ask this group again</strong> button will not be displayed if the selected group is no longer available.</p>
+<h2 id="header-20">Leadership-Guide (ME-Guide)</h2>
+<p>The participant list has a new e-mail delivery status:<em> pending</em>. Reports are now available in several languages and in two file formats.</p>
+<h3 id="header-22">The participant list</h3>
+<p>Further improvements have been added to the participants list. The <em>pending</em> e-mail delivery status has been added. Participants are grouped and displayed according to the rater groups from which they were taken. If groups are selected, they will also be displayed as groups.</p>
+<h3 id="header-23">Created actions</h3>
+<p>The number of suggestions that are created as actions on the <em>Action Board</em> depends on the votes. The following examples help to illustrate this:</p>
+<p>Each of the ten suggestions will poll 10 votes → 10 suggestions will be transferred to the <em>Action Borad</em> and 10 actions will be created.</p>
+<p>One of the ten suggestions will poll 10 votes, one suggestion will poll 8 votes, 3 suggestions will poll 5 votes and the rest of the ten suggestions will poll only one vote → 5 suggestions will be transferred to the<em> Action Board</em> and 5 actions will be created.</p>
+<p>One of the ten suggestions will poll 10 votes, one suggestion will poll 8 votes, one suggestion will poll 4 votes and the rest of the ten suggestions will poll 3 votes → the 3 suggestions will be transferred to the Action Board and will be created as actions.</p>
+<h3 id="header-24">Grouping phase</h3>
+<p>During the grouping phase, related suggestions can be grouped by the guide initiator. Panelists can be invited to this grouping phase. On the <strong>E-Mail settings</strong> tab, you will select an invitation e-mail template and a reminder e-mail template.grouping</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998101388178" alt="Grouping.jpg"></p>
+<p>On the guide status page, you can access the grouping phase in order to group the releated suggestions. You will tick the suggestions you want to group.  </p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998114859922" alt="Merge phase.jpg"></p>
+<p>Then you assign a title.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998147348498" alt="Merge.jpg"></p>
+<p>The suggestions can be removed from the group.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998142906642" alt="Voting.jpg"></p>
+<p>The title of the grouped suggestions is displayed on the action ticket. The detail view of the action ticket will list the all the grouped suggestions (Titel + text).</p>
+<h3 id="header-25">Deep linking: New placeholder</h3>
+<p>To specifiy the Guide status page as the target page, you can use the new placeholder <em>#guide_status_link#</em> so that the guide initiator will land on this page by clicking on the link. The period of validity of the generated login code will be stored in the new placeholder and can be defined on the <strong>Settings</strong> tab. The period of validity of the generated login code can be changed using the parameters.</p>
+<p>Examples:</p>
+<ul>
+<li>
+<p><em>#guide_status_link|20m#</em> (= 20 minutes)</p>
+</li>
+<li>
+<p><em>#guide_status_link|5h#</em>   (= 5 hours)</p>
+</li>
+<li>
+<p><em>#guide_status_link|2d#</em>  (= 2 days)</p>
+</li>
+</ul>
+<h2 id="header-27">
+<em>Panel website</em>: Security Enhancements</h2>
+<h3 id="header-29">Security question for change login details</h3>
+<p>We have added an enhanced security feature that can be used with one or more of your panel websites.  This enhanced feature allows you to request an additional piece of information to be requested from a panellist in the event that they try to change the email address assigned to their account.  This additional security feature is NOT turned on by default, and must be requested by the customer.  Once the new security feature is enabled (upon request), your administrator(s) are able to select a master data variable as the additional piece of information the panellists needs to provide when trying to change with email address. As show in the screen shot below, the master data variable is selected, and a description that will be presented to the panellists is also added to the website.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998156875410" alt="Security question new Feature.jpg"></p>
+<p>Once enabled and configured on the individual websites <strong>Change login details</strong> module (as shown above), any panellist attempting to change their email address will need to also provide the additional master data variable as per the configuration of the website (as shown below).</p>
+<p><img

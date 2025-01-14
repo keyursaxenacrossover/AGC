@@ -1,0 +1,76 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K" class="wysiwyg-text-align-justify">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article provides information about Layout Templates in EFS, including how to manage, import, export, and migrate layouts. It also covers the layout migration feature, which allows users to control when to apply the latest layout version to their projects.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">Layout Templates in EFS offer various project layouts and ensure that live projects are not negatively impacted by changes to layout versions. This guide covers the Layout List, template management, and the Layout Migration feature.</p>
+<ul class="wysiwyg-text-align-justify">
+<ul>
+<ul>
+<li><a href="#layout-list">Layout List</a></li>
+<li><a href="#layout-migration">Layout Migration</a></li>
+</ul>
+</ul>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="layout-list" class="wysiwyg-text-align-justify">Layout List</h2>
+<p class="wysiwyg-text-align-justify">You can find a list of all existing templates available to you in the<strong> Layout Templates</strong> menu on the <strong>Layout List</strong> tab.</p>
+<h3 id="reset-to-system-layout" class="wysiwyg-text-align-justify">Reset to System Layout</h3>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>You can easily reset the layout of your project to the initial state: Open the <strong>Layout templates </strong>menu and click on <strong>Reset to system layout</strong>.</p>
+</li>
+</ul>
+<h3 id="importe-template" class="wysiwyg-text-align-justify">Importe Template</h3>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>To use the exported layout template for a project in another <em>EFS</em> installation, select the respective project, and switch to the <strong>Layout </strong>→ <strong>Layout templates</strong> menu.</p>
+</li>
+<li>
+<p>Subsequently, select the <strong>Import template</strong> button.</p>
+</li>
+<li>
+<p>In the “File” field, you can enter the file path where the file you exported under the first step is located on your computer. Alternatively, you can also find and insert the file using the <strong>Browse</strong> button.</p>
+</li>
+<li>
+<p>If you wish to use your layout for the current project, tick the “Activate template” checkbox.</p>
+</li>
+<li>
+<p>Complete the work process by clicking on<strong> the Upload file</strong>.</p>
+</li>
+<li>
+<p>A green text bar containing the text “The template was successfully added” will inform you about the successful transfer of the template. On the <strong>Layout list</strong> tab, it will now also be available for all projects located on this second <em>EFS</em> installation. If you have decided to directly activate the template under Step 9, a second green text bar will report the successful activation.</p>
+</li>
+</ul>
+<h3 id="actions" class="wysiwyg-text-align-justify">Actions</h3>
+<p class="wysiwyg-text-align-justify">Use the action icons to rename the <em>layout template</em>, <em>change rights</em>, <em>export the layout template</em>, and <em>delete the layout template.</em></p>
+<h4 id="exporting-the-template" class="wysiwyg-text-align-justify">Exporting the Template</h4>
+<p class="wysiwyg-text-align-justify">You can transfer a layout template from one installation to another by exporting the template as a zip file and importing it into the destination installation.</p>
+<p class="wysiwyg-text-align-justify">The work process required for this consists of three sections which are described below:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Saving the layout setting as a template</p>
+</li>
+<li>
+<p>Exporting the layout template from the original EFS installation</p>
+<ul>
+<li>
+<p>Switch to the <strong>Layout templates </strong>menu.</p>
+</li>
+<li>
+<p>Select the desired template from the <strong>Layout list </strong>tab and click on the <strong>Export </strong>icon.</p>
+</li>
+<li>
+<p>The “File Download” dialog will open. Check that “Save file to disk” is selected, and confirm by clicking on <strong>OK</strong>.</p>
+</li>
+<li>
+<p>In the window that will then open, select the folder on your hard disk to which you want to store the layout file, and specify the name of the file.</p>
+</li>
+<li>
+<p>The layout template will now be stored on your hard disk as a zip file. The export operation is completed.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Importing the layout template into another EFS installation</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">From EFS 10.0, all

@@ -1,0 +1,134 @@
+<div class="expand-macro">
+<h4 id="h_01J441N79J245XFZECBTQV1K4N"> </h4>
+<h3 id="header-199">POST /panel/surveys/list</h3>
+<p>Returns the list of EFS Panel surveys (surveys of type panel survey or master data survey) a panelist has completed so far</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{ "identifierType": "uid", "identifierValue": "123" }</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[
+  {
+    "surveyId": 1234,
+    "surveyTitle": "Some Title",
+    "surveyDescription": "Example",
+    "surveyType": "ANONYMOUS",
+    "completionReward": 1.345,
+    "completionDate": "2020-07-02T12:53:50+00:00"
+  }
+]</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79JMH10ZSXRYAER3BAR"> </h4>
+<h3 id="header-200">GET /panel/variables/</h3>
+<p>returns the panel's variables along with their predefined answer codes (if any)</p>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[
+    {
+        "varname": "m_0000",
+        "label": "Country",
+        "type": "int",
+        "typeGroup": "numeric",
+        "recoded": false,
+        "categories": [
+            {
+                "code": 3,
+                "label": "USA"
+            },
+            {
+                "code": 2,
+                "label": "United Kingdom"
+            },
+            {
+                "code": 1,
+                "label": "Germany"
+            },
+            {
+                "code": 0,
+                "label": "Please select"
+            }
+        ]
+    }, ...
+]</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79JB3KMP07C03J0TANN"> </h4>
+<h3 id="header-201">GET /panel/websites/</h3>
+<p>Returns a list of panel websites</p>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[
+    {
+        "id": 4,
+        "name": "Panel Website",
+        "description": "",
+        "isDefault": true,
+        "languages": [
+            {
+                "id": 7,
+                "name": "english",
+                "isDefault": true
+            }
+        ]
+    }
+]</code></pre>
+</div>
+<h1 id="header-204">Portals</h1>
+<div class="expand-macro">
+<h4 id="h_01J441N79J9052KSJ5AG98PWYJ"> </h4>
+<h2 id="header-206">GET /portal/portal/export/{portalId}</h2>
+<p>Get portal export by portalId</p>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">"{\"isPortalCopy\":true,\"metaData\":{\"name\":\"[...]"</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>portalId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>Export portal with this ID <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79JGZBKD8AXRBEVGRBR"> </h4>
+<h3 id="header-208">POST /portal/portal/import</h3>
+<p>Import portal by using previous export</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{ "portalData": "{\"isPortalCopy\":true,\"metaData\":{\"name\":\"[...]" }</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">"123"</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79J76X19MAH9GFV71JM"> </h4>
+<h3 id="header-209">POST /portal/users/getUserDataByToken</h3>
+<p>Checks whether API-token is valid (not expired). Returns userId and portalId. Otherwise will throw an exception.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{ "

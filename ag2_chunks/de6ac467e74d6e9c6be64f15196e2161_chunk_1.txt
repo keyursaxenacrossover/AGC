@@ -1,0 +1,22 @@
+ Quittungen zu aktivieren sucht man dsa Projekt und erzeugt die PDF Quittung indem man auf das PDF Symbol klickt. Dort können weitere rudimentäre Einstellungen vorgenommen werden. Möchte man z.B. das alle Fragen angezeigt werden, wählt man einfach keine aus. Bei Watermark kann man wohl ein PDF mit dem Firmenlogo etc. hochladen, für mehr customizing muss man auf die Console gehen.</p><h3 id="header-5">General information</h3><p><strong>Responsive Layout</strong> <br>The module now does support responsive layout projects, too.</p><p><strong>Location</strong> <br>You find the receipts in uc/receipts/xxx (xxx = pid). In "images" you can customize the design. Changes on the spacing can be configured in pdfquittung.tex.</p><p><strong>How to integrate?</strong> <br>The participant can get the receipt at the end of the questionnaire and on the last page. You have to copy the link you find on top of the receipt admin UI to the endpage of the survey. For personalized surveys you can use the SESSION or the CODE. For anonymous surveys you only have the SESSION option. For example: <a href="http://www.example.com/uc/super_project/get_survey_pdf.php?code=#code#">www.example.com/uc/super_project/get_survey_pdf.php?code=#code#</a> <br>You can even use the link to regenerate the receipt. Find a "How To" further below.</p><p><strong>GERMAN VERSION</strong> <br>Damit der Teilnehmer seine Quittung am Ende des Fragebogens erhält, nimmt man im Projekt unter Quittungsverwaltung die Links und bettet diese auf die Endseite. Dies geht problemlos bei PE Umfragen. Wenn man sich den Link notiert, können auch nachträglich die Quittungen runtergeladen werden. Bei Anonymen Projekten muss man sich die Session aus der Datenbank selektieren.</p><p><strong>Changing the layout of the HTML receipt</strong> <br>If the HTML receipt has been activated for a project, you can navigate to the project and into the Layout &gt;&gt; Pro Editor and can edit template <strong>page_main_receipt.tpl</strong> (Responsive Layout 2).<br>The HTML receipt uses this template for output (RL2 only). The template is created whenever a new (RL2) project is created.<br>Another template called <strong>receipt.tpl</strong> might be created when activating the receipt functionality for a project but it will not be used in RL2 (see <a href="https://jira.3uu.de/browse/KANBAN-11560">KANBAN-11560</a>)</p><p></p><h3 id="header-6">How do you regenerate a pdf receipt?</h3><p></p><ul>
+<li><p>Die page_history prüfen</p></li>
+<li><p>unter uc/receipt/xxx (xxx=pid) prüfen, ob das PDF erzeugt wurde (wird nach uid angezeigt)</p></li>
+<li><p>sollte es fehlerhaft sein, noch mal die Generierung anstoßen</p></li>
+<li><p>Umfragelink/get_survey_pdf.php?session_id=#session_id# (bei PE geht auch Code) ausfüllen. Session Id bekommt man bei anonymen Projekten in der survey_xxx_1 und lfdn bei "session_id"</p></li>
+<li><p>dann funktioniert die Generierung nicht, aber ein PDF wie <strong>77b7df0ba0.pdf</strong> wird erzeugt und meistens in das ausreichend</p></li>
+<li><p>kurz überprüfen ob der Report okay aussieht und wichtige Daten fehlen</p></li>
+<li><p>die PDF Datei dem Kunden schicken</p></li>
+</ul><p>oder</p><div class="expand-macro">
+<h4 string="recreate receipt, where creation failed"></h4>
+<h3 id="header-7">Hintergrund</h3>
+<ul>
+<li><p><strong>Kunde:</strong> Deloitte</p></li>
+<li><p><strong>Installation:</strong> <a href="http://www.umfragen-deloitte.de/www/">http://www.umfragen-deloitte.de/www/</a></p></li>
+<li><p>Der Kunde lässt für diverse Umfragen PDF Quittungen erzeugen. Manchmal schlägt das Erzeugen der Quittungen fehl,<br>da Teilnehmereingaben die Formatierungen oder den Code der Quittung zerschießen.<br>Die entsprechende Quittung muss dann erneut erzeugt und ggf. vorher debuggt und Probleme behoben werden.</p></li>
+</ul>
+<h3 id="header-8">Notwendige Schritte</h3>
+<ul>
+<li><p>über die Konsole auf dem jeweiligen Server einloggen (z.B. Bremen)</p></li>
+<li><p>ins Verzeichnis der Installation gehen (z.B. <strong>cd /nfs/opst4/www.umfragen-deloitte.de/htdocs</strong>)</p></li>
+<li><p>ins Verzeichnis für die Quittungen gehen (<strong>cd uc/receipts/</strong>)</p></li>
+<li><

@@ -1,0 +1,48 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3754426369">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3754426369</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">Problem Statement</a></li>
+<ul>
+<li><a href="#header-3">Context</a></li>
+<li><a href="#header-4">Options</a></li>
+<li><a href="#header-5">Assessment</a></li>
+<ul>
+<li><a href="#header-7">Requirements see:</a></li>
+<li><a href="#header-8">Additional Requirements</a></li>
+</ul>
+<li><a href="#header-10">Pending Actions</a></li>
+<li><a href="#header-11">Outcome</a></li>
+</ul>
+</ul>
+</ul><ac:rich-text-body><table ac:local-id="d9476011-654a-41c6-9a32-899bf21ee09c" data-layout="default">
+<colgroup>
+<col style="width: 135.0px;">
+<col style="width: 591.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p><strong>Status</strong></p></th>
+<td>
+<p><ac:parameter ac:name="title">Proposed</ac:parameter><ac:parameter ac:name="colour">Yellow</ac:parameter> </p>
+<p>Add "proposed" (yellow), "accepted" (green), "deprecated" (grey))</p>
+</td>
+</tr>
+<tr>
+<th><p><strong>Stakeholders</strong></p></th>
+<td><p><ac:link><ri:user ri:account-id="5c790ab34b5199464e92723f"></ri:user></ac:link> <ac:link><ri:user ri:account-id="5a7ac85bc10f3565a1510e35"></ri:user></ac:link> <ac:link><ri:user ri:account-id="5aa641167f3fd325faf0fe3b"></ri:user></ac:link> <ac:link><ri:user ri:account-id="610813f58c15ca006f6152ca"></ri:user></ac:link> <ac:link><ri:user ri:account-id="5a5dc81217dfb4426b61f4c6"></ri:user></ac:link>  to be continued</p></td>
+</tr>
+</tbody>
+</table></ac:rich-text-body><h1 id="header-1">Problem Statement</h1><p>The core of the authentication system is an identity provider that does the main session handling, stores credentials, handles authentication and federates logins to external identity providers. This should be based on OIDC for internal authentication and OIDC or SAML2 for external authentication.</p><p>Such an identity provider has to be found and implemented.</p><h2 id="header-3">Context</h2><ul>
+<li><p>already existing identity providers and federations</p></li>
+<li><p>already existing applications</p></li>
+<li><p>???</p></li>
+</ul><h2 id="header-4">Options</h2><p>Currently there are several options to be considered.</p><ul>
+<li><p>Keycloak <a data-card-appearance="inline" href="https://www.keycloak.org/">https://www.keycloak.org/</a> </p></li>
+<li><p>Okta <a data-card-appearance="inline" href="https://www.okta.com/">https://www.okta.com/</a> </p></li>
+<li><p>Auth0 <a data-card-appearance="inline" href="https://auth0.com/">https://auth0.com/</a> </p></li>
+</ul><p></p><h2 id="header-5">Assessment</h2><h3 id="header-7">Requirements see:</h3><ul>
+<li><p>Functional: <ac:link ac:card-appearance="inline"><ri:page ri:content-title="High Level Requirements" ri:version-at-save="14"></ri:page><ac:link-body>High Level Requirements</ac:link-body></ac:link>  and <ac:link ac:card-appearance="inline"><ri:page ri:content-title="CRUD SSO" ri:version-at-save="15"></ri:page><ac:link-body>CRUD SSO</ac:link-body></ac:link> </p></li>
+<li><p>Quality: <a data-card-appearance="inline" href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3753050113/1+Introduction+and+Goals#Quality-Goals">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3753050113/1+Introduction+and+Goals#Quality-Goals</a> and <ac:link ac:card-appearance="inline"><ri:page ri:content-title="10 Quality Requirements" ri:version-at-save="4"></ri:page><ac:link-body>10 Quality Requirements</ac:link-body></ac:link> </p></li>
+</ul><h

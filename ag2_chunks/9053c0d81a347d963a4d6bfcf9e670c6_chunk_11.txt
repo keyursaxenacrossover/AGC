@@ -1,0 +1,54 @@
+-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important 7px 10px;">
+<p>Candidates will usually receive an automatic welcome mail after submitting their registration form. Alternatively, this action allows you to manually trigger the mail dispatch. It opens the standard dialog for e-mail dispatch. Here you will find mail templates of the “welcome mail” type.</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px 7px 10px !important;">
+<p>Password recovery mail</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important 7px 10px;">
+<p>This action opens the standard dialog for e-mail dispatch. Here you will find mail templates of the “password recovery mail” type.</p>
+<p>Please make sure that the text of these templates contains the wildcard #password_recovery_url#: This will be replaced with a link for resetting the password when the mail is sent.</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px 7px 10px !important;">Master data survey</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important 7px 10px;">
+<p>This action opens the standard dialog for e-mail dispatch. Here you will find mail templates of the “master data invitation mail” type.</p>
+<p>After the invitation has been sent, the number of invitations to the master data survey will be increased by 1 (“num_inv” export variable) and the invitation date (“inv_date” export variable) set to the current date in the respective panelists’ system data.</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px 7px 10px !important;">
+<p>Registration error mail</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important 7px 10px;">
+<p>This action opens the standard dialog for e-mail dispatch. Here you will find mail templates of the “registration error mail” type.</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px 7px 10px !important;">
+<p>Duplicates check mail</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important 7px 10px;">
+<p>This action opens the standard dialog for e-mail dispatch. Here you will find mail templates of the “duplicates check mail” type.</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px 7px 10px !important;">Bulk edit</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important 7px 10px;">
+<p>This action allows you to change the value of a specific master data item for all selected panelists in one single operation.</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px 7px 10px !important;">
+<p>Reset and delete data</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important 7px 10px;">
+<p>The panelist’s status<em>in the master data survey</em>is reset to “active”. If the panelist has participated before, he may participate again. The survey data are reset, i.e. deleted, however, the master data variables are<em>not</em>changed.</p>
+<p>Please note: Bonus point allocations from a final page or by bonus trigger cannot be reset by using this action. Please use the “Allocate bonus points” action described below or go to the detail view to manipulate the bonus points of the affected panelists.</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px 7px 10px !important;">
+<p>Reset without deleting survey data</

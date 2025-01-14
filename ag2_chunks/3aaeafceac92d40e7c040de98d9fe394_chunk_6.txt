@@ -1,0 +1,74 @@
+ with each new project the following must be repeated: importing the standard company layout, activating predefined survey messages, loading previously defined standard wildcards and creating participants. The actions required to end a project also repeat themselves: The project must be deactivated, result data exported and the codebook and online statistics saved as data for documentation purposes. The macro function permits automation of such steps: Specific actions can be preconfigured by the user and executed again at a later time at the push of a button. The macro function makes it possible not only to execute individual actions, but also to bundle several actions into a single macro. This does not only simplify working with <em>Survey</em>, but it also increases the uniformity of work processes.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>You create a macro both under the <strong>Project information</strong> menu item and under the <strong>Macros</strong> menu item in the <strong>Libraries</strong> menu. There you will find all macros available on the installation to which you have access, while the macros created under the <strong>Project information</strong> menu item are only available for the specific project.</p>
+</li>
+<li>
+<p>Creating macros requires write rights for <em>create_macro</em>.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Click on the <strong>Create macro</strong> button. This will open the entry form shown. Set the basic properties of the macro:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Name</strong></p>
+</li>
+<li>
+<p><strong>Description</strong></p>
+</li>
+<li>
+<p><strong>Suppress output</strong>: If the checkbox is ticked and the macro activated, the output of precise information on the process will be suppressed, and only a message indicating success or failure will be output. It is recommended that you activate the message output when first testing a macro, but switch it off after a successful test.</p>
+</li>
+<li>
+<p><strong>Offer for projects of type</strong>: You can select the project types for which the macro is to be available.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015136701074" alt="Create new macro.jpg"></p>
+<p class="wysiwyg-text-align-justify">The select boxes in the <strong>Actions</strong> area allow you to select preset actions:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>If you wish to select only individual actions, click on these actions in the “Available actions” field, and then click on the simple <strong>Arrow</strong> icon to move them into the “Selected actions” field.</p>
+</li>
+<li>
+<p>If you wish to select all available actions, click on the larger arrow.</p>
+</li>
+<li>
+<p>After that, use the up and down arrows below the “Selected actions” select box to sort the actions in the desired order.</p>
+</li>
+<li>
+<p>Finally, confirm by clicking on <strong>Create</strong>.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015166748818" alt="Actions.jpg"></p>
+<p class="wysiwyg-text-align-justify">After creating the macro, you will automatically be taken to the Actions tab, which is now active. It allows you to edit or delete actions.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Click on the name of an action or on the related<strong> Edit</strong> icon.</p>
+</li>
+<li>
+<p>In the “General” area of the entry form, you can enter a specific title for the action and describe it.</p>
+</li>
+<li>
+<p>In the “Parameters” area, the specific parameter for the respective action must be set, in this example, the message set to be chosen.</p>
+</li>
+<li>
+<p>After that, the setting must be saved by clicking on <strong>Save</strong>.</p>
+</li>
+</ul>
+<h3 id="using-macros" class="wysiwyg-text-align-justify"><strong>Using Macros</strong></h3>
+<p class="wysiwyg-text-align-justify">The Project information menu item includes the “Execute automation macro” field in the <strong>Special actions</strong> section.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Select the macro you created, and then click on the <strong>Run selected automation package</strong> icon.</p>
+</li>
+<li>
+<p>A popup window will provide an overview of the contents of this macro.</p>
+</li>
+<li>
+<p>If you wish to start the macro, confirm by clicking on <strong>Execute</strong>.</p>
+</li>
+<li>
+<p>The actions configured will now be executed. If this involves generating files, the result display will provide a link you can use to download a zip file. Alternatively, you can have the file e-mailed to your address.</p>
+</li>
+</ul>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863" class="wysiwyg-text-align-justify">FAQ</h1>
+<h3 id="h_01J3QACA901SA62CAFWCZD5

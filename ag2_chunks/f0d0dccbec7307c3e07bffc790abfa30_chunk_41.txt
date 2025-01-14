@@ -1,0 +1,125 @@
+ "sms_content": "Example",
+    "cc": "Example",
+    "bcc": "Example",
+    "fromRealname": "Example"
+  },
+  "dispcodes": [
+    "10"
+  ],
+  "sendOptions": {
+    "sendDate": "2020-07-02T12:53:50+00:00",
+    "useRecipientTimezone": true
+  }
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">true</code></pre>
+</div>
+<h2 id="header-194">Panel statistics</h2>
+<div class="expand-macro">
+<h4 id="h_01J441N79J36RSJMMD12PMPSHG"> </h4>
+<h3 id="header-196">GET /panel/statistics/status</h3>
+<p>Panel status distribution</p>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[
+    {
+        "code": "1",
+        "label": "Admitted temporarily",
+        "value": 26,
+        "ratio": 0.19259259259259
+    },
+    {
+        "code": "2",
+        "label": "Active",
+        "value": 93,
+        "ratio": 0.68888888888889
+    }, ...
+]</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79JYK7E13M6DCP17V4V"> </h4>
+<h3 id="header-197">POST /panel/statistics/status</h3>
+<p>Dynamic panel status distribution</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "panelStatisticsFilter": {
+    "panelCategoryId": 1234,
+    "panelGroupId": 1234,
+    "siteId": 1234,
+    "filterId": 1234,
+    "from": "2020-07-01T12:53:50+00:00",
+    "to": "2020-07-03T12:53:50+00:00",
+    "panelistStatus": [
+      1234
+    ],
+    "attributes": [
+      "Example"
+    ],
+    "masterdata": [
+      "Example"
+    ]
+  }
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[
+  [
+    {
+      "code": "Example",
+      "label": "Example",
+      "value": 1234,
+      "ratio": 1.345
+    }
+  ]
+]</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79J8G68KC3PASR748R3"> </h4>
+<h3 id="header-198">POST /panel/surveys/</h3>
+<p>get the list of surveys for a panelist</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{ "identifierType": "uid", "identifierValue": "123" }</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[
+  {
+    "id": 1234,
+    "title": "Example",
+    "titleGlobal": "Example",
+    "description": "Example",
+    "author": "Example",
+    "staff": "Example",
+    "comment": "Example",
+    "url": "http://qb-feedback.com/",
+    "fieldTime": {
+      "startTime": "2020-07-02T12:53:50+00:00",
+      "endTime": "2020-07-02T12:53:50+00:00"
+    },
+    "type": "ANONYMOUS",
+    "bonusPoints": {
+      "label": "Example",
+      "value": 1.345
+    },
+    "participantsLeft": 1234
+  }
+]</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79J245XFZECBTQV1K4N"> </h4>
+<h3 id="header-199">POST /panel/surveys/list</h3>
+<p>Returns the list of EFS Panel surveys (surveys of type panel survey or master data survey) a panelist has completed so far</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{ "identifierType": "uid", "identifierValue": "123" }</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[
+  {
+    "surveyId": 1234,
+    "surveyTitle": "Some Title",
+    "surveyDescription": "Example",
+    "surveyType": "ANONYMOUS",
+    "completionReward": 1.345,
+    "completionDate": "2020-07-02T12:53:50+00:00"
+  }
+]</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79JMH10ZSXRYAER3BAR"> </h4>
+<h3 id="header-200">GET /panel/variables/</h3>
+<p>returns the panel's variables along with their predefined answer codes (

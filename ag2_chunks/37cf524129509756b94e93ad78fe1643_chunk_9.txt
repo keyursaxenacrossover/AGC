@@ -1,0 +1,126 @@
+<p>Please choose your year of birth.</p>
+</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>u_gender</td>
+<td>Gender</td>
+<td>11</td>
+<td> </td>
+<td>
+<p>!matches('/^[12]$/ ',request.u_gender)</p>
+</td>
+<td>
+<p>Please choose your gender.</p>
+</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>u_email</td>
+<td>E-Mail Address</td>
+<td>12</td>
+<td> </td>
+<td>
+<p>!matches('/[^\s]/ ',request.u_email)</p>
+</td>
+<td>
+<p>Please enter your email address.</p>
+</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>u_passwd</td>
+<td>Password</td>
+<td>13</td>
+<td> </td>
+<td>
+<p>!matches('/[^\s]/ ',request.u_passwd)</p>
+</td>
+<td>
+<p>Please enter a valid password.</p>
+</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>
+<p>Ab EFS 9.1: u_sec_quest</p>
+</td>
+<td>Security question</td>
+<td>14</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>
+<p>Ab EFS 9.1: u_sec_quest_answer</p>
+</td>
+<td>
+<p>Answer to the security question</p>
+</td>
+<td>15</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+</tr>
+</tbody>
+</table>
+<h2 id="special-features-of-profile-forms" class="wysiwyg-text-align-justify"><strong>Special Features of Profile Forms</strong></h2>
+<p class="wysiwyg-text-align-justify">The third form type is “Profile”. If you use the community functions of the EFS Panel, you can use profile forms to specify which personal data of the panelists may be used for searches, listed in the results list, or displayed on the panelist’s profile.</p>
+<h3 id="configuration-options-1" class="wysiwyg-text-align-justify"><strong>Configuration Options</strong></h3>
+<p class="wysiwyg-text-align-justify">The following table contains all possible configuration options.</p>
+<table class="wrapped wysiwyg-text-align-justify" style="margin-right: auto; margin-left: auto; height: 575px;" border="1" width="759">
+<colgroup> <col style="width: 198.0px;"> </colgroup> <colgroup> <col style="width: 624.0px;"> </colgroup>
+<tbody>
+<tr style="height: 28px;">
+<th class="wysiwyg-text-align-center" style="width: 182.726px; height: 28px;">Field</th>
+<th class="wysiwyg-text-align-center" style="width: 568.976px; height: 28px;">Description</th>
+</tr>
+<tr style="height: 58px;">
+<td style="width: 174.705px; height: 58px;">Website / Language version</td>
+<td style="width: 560.955px; height: 58px;">
+<p>Website and language version to which the variable belongs. Cannot be changed subsequently.</p>
+</td>
+</tr>
+<tr style="height: 30px;">
+<td style="width: 174.705px; height: 30px;">Form name</td>
+<td style="width: 560.955px; height: 30px;">
+<p>This is determined when creating the form. Cannot be changed subsequently.</p>
+</td>
+</tr>
+<tr style="height: 30px;">
+<td style="width: 174.705px; height: 30px;">Form type</td>
+<td style="width: 560.955px; height: 30px;">
+<p>This is determined when creating the form. Cannot be changed subsequently.</p>
+</td>
+</tr>
+<tr style="height: 30px;">
+<td style="width: 174.705px; height: 30px;">Variable</td>
+<td style="width: 560.955px; height: 30px;">
+<p>The master data item or user variable to which the form’s input field refers to.</p>
+</td>
+</tr>
+<tr style="height: 131px;">
+<td style="width: 174.705px; height: 131px;">Profile options</td>
+<td style="width: 560.955px; height: 131px;">
+<p>There are three options.</p>
+<ul>
+<li>Field can be searched: The variable is part of the search form.</li>
+<li>The field is displayed in the profiles search results list: The variable is part of the results list.</li>
+<li>The field is displayed in the public profile: The variable is part of the profile.</li>
+</ul>
+</td>
+</tr>
+<tr style="height: 30px;">
+<td style="width: 174.705px; height: 30px;">Label in form</td>
+<td style="width: 560.955px; height: 30px;">The text is used to label the form’s input field.</td>
+</tr>
+<tr style="height:

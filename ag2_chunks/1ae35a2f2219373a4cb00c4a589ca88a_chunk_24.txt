@@ -1,0 +1,44 @@
+-renderer-mark="true">0</strong> under <strong data-renderer-mark="true">Value</strong>.</p>
+</li>
+<li>
+<p data-renderer-start-pos="27913">Click on <strong data-renderer-mark="true">Save</strong>.</p>
+</li>
+<li>
+<p class="wysiwyg-text-align-left" data-renderer-start-pos="27932">In the next line, select the option <strong data-renderer-mark="true">track_num_started1 (Number of survey starts [Disposition code 21,22] (last 4 weeks))</strong> from the <strong data-renderer-mark="true">Variable</strong> drop-down menu and the option <strong data-renderer-mark="true">equal</strong> under <strong data-renderer-mark="true">Condition</strong>. Then enter <strong data-renderer-mark="true">0</strong> under <strong data-renderer-mark="true">Value</strong>.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014859778834"></p>
+</li>
+</ul>
+<div class="rich-media-item mediaSingleView-content-wrap image-center cc-1q73e46 wysiwyg-text-align-justify" data-layout="center" data-width="760" data-width-type="pixel" data-node-type="mediaSingle" data-renderer-start-pos="28153">
+<div class="cc-13o2kbh">
+<div class="cc-k4ngfq" data-mark-type="border" data-color="#091e4224" data-size="2"> </div>
+</div>
+</div>
+<h3 id="Set-Update-Interval" class="wysiwyg-text-align-justify" data-renderer-start-pos="28158"><strong data-renderer-mark="true">Set Update Interval</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="28179">Finally, we need to define the interval for the automatic calculation of the PCI values. As the tracking data that we have used for the PCI conditions cover an observation period of 4 weeks, we will also define an interval of 4 weeks for the update. Proceed as follows:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="28452">In the <em data-renderer-mark="true">People </em>module under <strong data-renderer-mark="true">Panel configuration &gt; PCI configuration</strong>, click on the <strong data-renderer-mark="true">Update interval</strong> tab.</p>
+</li>
+<li>
+<p data-renderer-start-pos="28557">Activate the checkbox for <strong data-renderer-mark="true">Enable automatic PCI calculation</strong>.</p>
+</li>
+<li>
+<p data-renderer-start-pos="28620">Specify when the calculation should be performed for the first time.</p>
+</li>
+<li>
+<p data-renderer-start-pos="28692">Select the <strong data-renderer-mark="true">Week</strong> option from the <strong data-renderer-mark="true">Interval type</strong> drop-down menu and enter <strong data-renderer-mark="true">4</strong> as <strong data-renderer-mark="true">Interval value</strong>.</p>
+</li>
+<li>
+<p class="wysiwyg-text-align-left" data-renderer-start-pos="28787">Click on <strong data-renderer-mark="true">Save</strong>.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014812817298"></p>
+</li>
+</ul>
+<div class="rich-media-item mediaSingleView-content-wrap image-center cc-1q73e46 wysiwyg-text-align-justify" data-layout="center" data-width="760" data-width-type="pixel" data-node-type="mediaSingle" data-renderer-start-pos="28805">
+<div class="cc-9f7f13">
+<div class="cc-k4ngfq" data-mark-type="border" data-color="#091e4224" data-size="2">
+<div data-context-id="4149608460" data-type="file" data-node-type="media" data-width="1725" data-height="417" data-id="60a8dcfc-2d84-481e-82d7-032fcb901192" data-collection="contentId-4149608460" data-file-name="file" data-file-size="1" data-file-mime-type="" data-alt="image-20240320-114654.png" data-renderer-start-pos="28806"> </div>
+</div>
+</div>
+</div>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="28808">The calculation of panelist's PCI values will now be performed automatically. In the following, we will create an action that is taken automatically as soon as a panelist’s PCI value drops to "Red".</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="29008"> </p>
+<h3 id='Set-up-Automatic-Action-when-PCI-Value-Drops-to-"Red"' class="wysiwyg-text-align-justify" data-renderer-start-pos="29010"><strong data-renderer-mark="true">Set up Automatic Action when PCI Value Drops to "Red"</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="29065">Based on your individual PCI configuration, you can now track the reliability of your panelists

@@ -1,0 +1,30 @@
+.de/browse/KANBAN-9578">KANBAN-9578</a></p></li></ul>
+</li>
+<li>
+<p><strong>Report job failed updateReportingData failed</strong></p>
+<ul>
+<li><p>(case 00454518) Bevor der Export aktualisiert wurde, hat das System ein Datenupdate versucht und ist dabei gescheitert</p></li>
+<li><p>Letzteres könnte ein Failed Query oder einen PHP Error verursacht haben. Daher beides prüfen.</p></li>
+<li><p>Man sollte auch die Tabelle survey_reporting_dataupdate_schedule für den Bericht (report_id) prüfen, um zu sehen, ob die Aktualisierung fehlgeschlagen ist und wann (status=3)</p></li>
+</ul>
+</li>
+<li>
+<p><strong>Report job failed Call to a member function __getLastRequest() on a non-object, setting status to -1</strong></p>
+<ul>
+<li><p>z.B. case 00377812, Es gab Probleme mit dem <a href="https://it.globalpark.de/twiki/bin/view/Support/SSL">SSL</a> Zertifikat des generierenden Servers (<a href="https://rp/pptx/EfsService.svc?wsdl">https://rp/pptx/EfsService.svc?wsdl</a>) für pptx Exporte.</p></li>
+<li><p>Ist das Zertifikat nicht korrekt/vorhanden, kann der Export nicht erstellt werden</p></li>
+<li>
+<p>Zertifikat von den Admins prüfen lassen und dann den Export neu generieren:</p>
+<ul>
+<li><p>job in survey_reporting_publication_job auf status=2 setzen und ggf. den job "reporting_process_autopublication" in der jobs Tabelle auf ein veraltetes dt_when setzen</p></li>
+<li><p>dann den jobmaker ausführen</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul><p></p><h4 id="header-20">Das Export Fenster in Reporting+ lässt sich gar nicht mehr öffnen</h4><ul>
+<li><p>Trat bisher nur einmal auf, bei HSBC, case 00321582</p></li>
+<li><p>Dokumentation siehe Anhang: <a href="https://it.globalpark.de/twiki/bin/viewfile/Support/SupportEFSAnalyticsLab?rev=1;filename=TS_intern_anpassung_hsbc_reporting.txt">https://it.globalpark.de/twiki/bin/viewfile/Support/SupportEFSAnalyticsLab?rev=1;filename=TS_intern_anpassung_hsbc_reporting.txt</a></p></li>
+</ul><h2 id="header-23">Fehlercodes, Ursachen und Lösungen</h2><p><strong>Error 501 - Sie waren zu lange inaktiv</strong></p><p></p><p>Die Fehlermeldung im Reporting+ mit "Error 501 - Sie waren zu lange inaktiv" kommt daher, dass beim öffnen eines Reports das R+ einen Lock erstellt welcher einen Hashwert aus dem Useragent und der IP Adresse des Users ist. Bei jeder Interaktion im R+ wird dieser Hash verglichen, sollte dieser nicht mehr übereinstimmen wird der Fehler angezeigt und man muss sich neu einloggen.</p><p></p><p>Die Ursachen sind deshalb folgende: <br>1. Der Useragent ändert sich bei jedem Aufruf z.B. wenn man ein spezielles Browser Plugin nutzt <br>2. Die IP Adresse ändert sich während des Requests z.B. falls ein Unternehmen im Internen Netwerk rotierende IP Adressen nutzt</p><p>Lösungsvorschläge: <a href="https://it.globalpark.de/twiki/bin/view/Support/SSL">SSL</a> verwenden oder Plugins solcher Art deaktivieren. Sollte der 2. Punkt mit den rotierenden IP Adressen der Fall sein, haben wir leider wenig Möglichkeiten etwas zu machen.</p><p>Jira Ticket dazu findet sich auch hier: <a href="https://jira.3uu.de/browse/KANBAN-6012">https://jira.3uu.de/browse/KANBAN-6012</a></p><h2 id="header-24">Other Q&amp;A</h2><h3 id="header-26">No Input file specified</h3><p><strong>Q</strong>: No matter from within which project I try to access Reporting+, I always get the following error; <strong>No Input file specified</strong> <br><strong>A</strong>: First of all Tech Support needs to check whether "reporting" is included in config flags "modules" and "provider_gui". If that is the case, the problem is related to the lighty. System administration needs to check if alias "reporting" is set. Also a frontend restart should help making alias "reporting" available on all frontends.</p><h3 id="header-27">Texts from open ended questions (type 142) are cut</h3><p><strong>Q</strong> All text from questions of type 142 are cut after 255 characters, even when doing the export the texts are cut. How does this happen and how can I export the comlete texts?<br><strong>A</strong> <br>!!! TEXT SLIGHTLY SHOULD BE CHANGED

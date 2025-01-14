@@ -1,0 +1,68 @@
+ style="width: 106.979px;">Anonymous post</td>
+<td style="width: 635.677px;">
+<p>You, or optionally the blog authors, can allow the panelists to post anonymously. If a panelist ticks the corresponding checkbox before posting, his profile will not be linked - even if he has explicitly activated the display of his profile data. To prevent abuse, however, the identity of the poster will be logged so that you as a moderator can check it in the admin area.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 106.979px;">Number of votes</td>
+<td style="width: 635.677px;">Number of community ratings that were submitted for the post.</td>
+</tr>
+<tr>
+<td style="width: 106.979px;">Average rating</td>
+<td style="width: 635.677px;">Result of the community rating.</td>
+</tr>
+<tr>
+<td style="width: 106.979px;">Release Status</td>
+<td style="width: 635.677px;">
+<p>The following release statuses can be assigned:</p>
+<ul>
+<li>not checked: With the publishing mode set to “Publish immediately”, these posts are always displayed. With the publishing mode set to “Publish after approval”, they are displayed only to the author himself and to the moderator in the admin area until a moderator changes the release status to “approved”.</li>
+<li>approved: These posts are always displayed.</li>
+<li>blocked: These posts are never displayed.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="width: 106.979px;">Title</td>
+<td style="width: 635.677px;">Title of the post. Required field.</td>
+</tr>
+<tr>
+<td style="width: 106.979px;">Text</td>
+<td style="width: 635.677px;">
+<p>The actual post. Required field.</p>
+<p>Files that were uploaded to accompany this post can be embedded in the body text using [file]filename[/file], e.g. [file]image.pdf[/file]</p>
+</td>
+</tr>
+<tr>
+<td style="width: 106.979px;">Linked files</td>
+<td style="width: 635.677px;">
+<p>If the author of the post has already uploaded one or more files, these will be listed in this field.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 106.979px;">Date</td>
+<td style="width: 635.677px;">
+<p>Date to be displayed in the post overview both in the admin area and on the panel page. Required fields.</p>
+<p>By default, the current date is set when creating a new post. It is possible, though, to have a different date displayed.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 106.979px;">Upload file</td>
+<td style="width: 635.677px;">
+<p>With this function you can upload files from the admin area. This is also possible if the upload by panelists described above is not permitted. The maximum technically possible value for admins is installation-specifc; in case of doubt, please check with Support.</p>
+<p>The files are automatically added to the post using the syntax [file]filename.jpg[/file].</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="exporting-posts-from-a-blog-section-or-selected-blog" class="wysiwyg-text-align-justify"><strong>Exporting Posts from a Blog Section or Selected Blog</strong></h2>
+<p class="wysiwyg-text-align-justify">You can export the posts from a blog section or a selected blog e.g. external evaluation. Images and other files which are used by the panelists to enrich their posts can be included, if necessary.</p>
+<p class="wysiwyg-text-align-justify">To do so, please proceed as follows: Locate the desired section or blog in the section overview or blog list and select the <strong>Export posts</strong> icon. Specify the file type (Excel or CSV) and the character set. If you need the uploaded files, tick “Export including attached files”. Click on <strong>Download</strong> and save the data on your PC.</p>
+<p class="wysiwyg-text-align-justify">The export file contains all the posts from the selected blog section or blog with the following information:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Selected user data: the author’s pseudonym (pseudonym), account name (u_account), first name (u_firstname), name (u_name), e-mail address (u_email), an alternative ID (u_other_id), and cell phone number (u_mobile)</li>
+<li>Selected system data: panel entry date (penter_date), panel status (pstatus)</li>
+<li>Blog-specific data: date and time of post (dt), blog ID (instance_id) and blog title (instance_title), post ID (id), position within the thread structure (parent), type (type; P = post, C = comment), anonymity status (anonymous; 0 = no, 1 = yes), title (title), text (description) and number and result of the community rating (rating_cont, rating_average).</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If you have activated “Export including attached files”, the export file described above and the associated files will be exported in a compressed zip file. The associated files are named according to the following scheme: PostID_UserID_filename.extension.</p>
+<h

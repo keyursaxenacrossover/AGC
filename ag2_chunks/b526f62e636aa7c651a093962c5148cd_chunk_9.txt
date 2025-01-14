@@ -1,0 +1,97 @@
+', 's’ (see above)</p>
+</li>
+</ul>
+</li>
+<li>
+<p>reporting-mail-address</p>
+<ul>
+<li>
+<p>The recieveing mail-adress</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>If the reports should be sent to a Mail-Address with a different Apex-Domain, then this has to be explicity whitelisted as to prevent any misuse like a (DOS-Attack). This is achieved by an additional DNS-Record at a Sub-Domain of the Apex-Domain of the the recieving mail-Adress-Host.</p>
+<pre><code class="language-text">&lt;domain-with-the-configured-reporting-adress&gt;._report._dmarc.&lt;apex-of-recieveing-mail-adress-host&gt; IN TXT "v=DMARC1"</code></pre>
+<p><em>For example:</em></p>
+<p>If there is exists the following DMARC-Record:</p>
+<pre><code class="language-text">_dmarc.some.example.com IN TXT "v=DMARC1; p=reject; pct=100; aspf=s; adkim=s; rua=mailto:dmarc-reporting@example.net;"</code></pre>
+<p>Then the following record has to be put in place for the reports to be send sucessfully:</p>
+<pre><code class="language-text">some.example.com._report._dmarc.example.net IN TXT "v=DMARC1"</code></pre>
+<h4 id="problems-limitations">Problems / Limitations</h4>
+<h4 id="further-reading-2">Further reading</h4>
+<ul>
+<li>
+<p><a href="https://postmarkapp.com/guides/dmarc">https://postmarkapp.com/guides/dmarc</a></p>
+</li>
+<li>
+<p><a href="https://www.dmarcanalyzer.com/how-to-create-a-dmarc-record/">https://www.dmarcanalyzer.com/how-to-create-a-dmarc-record/</a></p>
+</li>
+<li>
+<p><a href="https://www.vircom.com/blog/a-critique-what-is-dmarc-missing/">https://www.vircom.com/blog/a-critique-what-is-dmarc-missing/</a></p>
+</li>
+</ul>
+<h2 id="certificate-concepts">Certificate Concepts</h2>
+<p>The following is non exhaustive and meant as a pointer for the more commonly used concepts in regards to issuing Certificates.</p>
+<h3 id="caa-record-sending-only">CAA-Record ; sending-only</h3>
+<p>Also known as the <strong>Certification Authority Authorization</strong> DNS-Record is intended to provide insight / authorization in issuing Certificates and was specified in <a href="https://datatracker.ietf.org/doc/html/rfc8659">RFC 8659</a>.<br>The basic idea is that a Certificat Authory e.g like <a href="https://letsencrypt.org/" data-card-appearance="inline">https://letsencrypt.org/</a> which we are using in our productive cloud clusters, has to check for the existince of a CAA record first, before proceeding with issueing a certificate.</p>
+<h4 id="details-about-the-dns-record">Details about the DNS-Record</h4>
+<p>A CAA Recrord consists of these 3 parts with a maximum of 1 value each:, BUT muliple CAA Records can exists per domain:</p>
+<pre><code class="language-text">CAA &lt;flags&gt; &lt;tag&gt; &lt;value&gt;</code></pre>
+<ul>
+<li>
+<p><strong>flag</strong></p>
+<ul>
+<li>
+<p>A positive number between 0 - 255, currently not in use and must always be <strong>0</strong></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>tag</strong></p>
+<ul>
+<li>
+<p>Currently supports these 3:</p>
+<ul>
+<li>
+<p><strong>issue</strong></p>
+<ul>
+<li>
+<p>Allows for the issuing of any type of certificate for this domain / subdomain by the Certificate Authority specified as value</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>issuewild</strong></p>
+<ul>
+<li>
+<p>Allows for the issuing of Wild-Card certificates only for this domain / subdomain by the Certificate Authority specified as value</p>
+</li>
+<li>
+<p>Only get’s evaluated if the FQDN of the certificate is for a Wilrdcard-Certificate</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>iodef</strong></p>
+<ul>
+<li>
+<p>In case the CA supports it, the CAA is instructed to report invalid Certificate requests as an incident</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>value</strong></p>
+<ul>
+<li>
+<p>in case of tag <strong>issue/issuewild</strong> the value can be</p>
+<ul>
+<li>
+<p>The certificate Certificate Authority issuer domain:<br>As specified by respective CAA, e.g. ‘<a href="http://letsencrypt.org">letsencrypt.org</a>’ for <a href="https://letsencrypt.org/" data-card-appearance="inline">https://letsencrypt.org/</a></p>
+</li>
+<li>
+<p>';'<br>A single semicolon specifys &lt;no-value

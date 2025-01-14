@@ -1,0 +1,24 @@
+="_blank" rel="noopener noreferrer">How to Access and Work with DXI Service Gateways</a>.</p>
+<p><a href="https://support.hostway.com/hc/en-us/articles/115001509884-How-To-Use-SSH-Keys-on-Windows-Clients-with-PuTTY">How To Use SSH Keys on Windows Clients (with PuTTY) – Hostway Help Center</a> is a very useful resource that details Windows PuTTY usage.</p>
+<p>For Windows users, if you do not have ssh installed, follow this:</p>
+<ul>
+<li>
+<strong>Install OpenSSH</strong>: Windows 10 and later versions include the OpenSSH client by default, but it might not be installed. To check if it's installed, run ssh in your command prompt. If it isn't installed, follow these steps:</li>
+<li>Go to <strong>Settings</strong> &gt; <strong>Apps</strong> &gt; <strong>Optional Features</strong>.</li>
+<li>Look for "OpenSSH Client" and "OpenSSH Server". If they aren't installed, click <strong>Add a feature</strong> and search for them. Install "OpenSSH Client".</li>
+<li>
+<strong>Use PowerShell</strong>: Open <strong>PowerShell</strong> instead of the regular Command Prompt and try running the ssh-keygen command again.</li>
+<li>
+<strong>Use Windows Subsys</strong><strong>tem for Linux (WSL)</strong>: If you have WSL installed, you can use a Linux environment to run ssh-keygen. Install WSL if you haven’t, and then run wsl in your command prompt to switch to the Linux environment.</li>
+</ul>uTTY">How To Use SSH Keys on Windows Clients (with PuTTY) – Hostway Help Center</a> is a very useful resource that details Windows PuTTY usage.</p>
+<p>For Windows users, if you do not have ssh installed, follow this:</p>
+<ul>
+<li>
+<strong>Install OpenSSH</strong>: Windows 10 and later versions include the OpenSSH client by default, but it might not be installed. To check if it's installed, run ssh in your command prompt. If it isn't installed, follow these steps:</li>
+<li>Go to <strong>Settings</strong> &gt; <strong>Apps</strong> &gt; <strong>Optional Features</strong>.</li>
+<li>Look for "OpenSSH Client" and "OpenSSH Server". If they aren't installed, click <strong>Add a feature</strong> and search for them. Install "OpenSSH Client".</li>
+<li>
+<strong>Use PowerShell</strong>: Open <strong>PowerShell</strong> instead of the regular Command Prompt and try running the ssh-keygen command again.</li>
+<li>
+<strong>Use Windows Subsys</strong><strong>tem for Linux (WSL)</strong>: If you have WSL installed, you can use a Linux environment to run ssh-keygen. Install WSL if you haven’t, and then run wsl in your command prompt to switch to the Linux environment.</li>
+</ul>

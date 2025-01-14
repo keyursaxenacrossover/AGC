@@ -1,0 +1,41 @@
+ in the context of the project setup.</p>
+<p><strong>Setting up the synchronization</strong></p>
+<p>To transfer the data of the panel groups to the organizational structure, the <em>Employee</em> synchronization is available. To set up the synchronization, go to<strong> People → Groups → </strong>[Select group] →<strong> Employee-Sync</strong> → <strong>Add Employee-Sync job</strong>.</p>
+<p>Here, the following information is required: select your<em> Employee</em> project as well as the master-data variable storing the respective assignment of panelists to their roles and unit. Roles and units are quoted in the following format: [ROLE ABBREVIATION]:[metaname(s) of organizational unit(s)]. Different roles are separated by semicolons, and different units by commas. Example: OWN:unit1; SUP:unit2, unit3, unit4.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017112885394" alt="image2019-5-15_11-31-12.png"></p>
+<p>For a successful synchronization, the panelists of the group need a master data variable with at least one role and unit assignment.</p>
+<p>The synchronization of each Employee project runs once a day. In case you want to make changes to Org Processor users, you will therefore have to wait one day. During the synchronization, all existing roles and units are deleted before being created again. Therefore, it is not recommended to make changes to the users manually. Correct roles and units are transferred, and incomplete roles and units remain deleted.</p>
+<p>On errors during the synchronization, an e-mail is sent to the job creator. The error of the last synchronization can be viewed by going to <strong>People</strong> → <strong>Groups</strong> → [Select group] → <strong>Employee-Sync</strong> as well as by editing a job.</p>
+<p>There can be only one synchronization setup for each Employee project - and vice versa, each group can be synchronized to several Employee projects.</p>
+<h3 id="h_01J3N2HWAAQCQZKBMDAYT5AWZM"><strong>Displaying the originator of an action</strong></h3>
+<p>It is possible to display in the Action Planner who has created an action. This improves transparency and traceability in the follow-up process. To do so, open the <strong>Org Processor</strong> → <strong>Configuration</strong> → <strong>Action Planner configuration</strong> menu and activate the “Show originator of an action” option on the <strong>Settings</strong> tab.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017112886034" alt="image2019-5-15_13-4-9.png"></p>
+<p>Now, an additional “Created by” column will be displayed in the overview of actions of a unit, showing to you and your Action Planner users who have created a specific action. The detailed views of actions and the exported list of actions contain this information, too.</p>
+<h3 id="h_01J3N2HWAA8TPCWSVT6MVC0G5B"><strong>Creating subject groups</strong></h3>
+<p><em>Action Planner</em> actions are usually allocated to subject groups which are defined by the project management beforehand. In many cases, these subject groups correspond to subjects that have already been used in the questionnaire to group questions, for example, “Leadership culture”, “Working conditions” etc. But you can also choose subject groups that have been defined as fields of development for the organization based on the survey results.</p>
+<p><strong>Accessing subject groups</strong></p>
+<p>To find the existing subject groups of your project, open the <strong>Org Processor</strong> → <strong>Configuration</strong> → <strong>Action Planner configuration → Subject groups</strong> menu. A “Default subject group” exists per default.</p>
+<p>The subject groups can be imported and exported in Excel or CSV files. For the import, use the button <strong>Import subject groups</strong>, for the export, use the <strong>Excel export</strong> or <strong>CSV expor</strong>t buttons.</p>
+<p>Via the button<strong> View</strong>, you can select and deselect the languages in which the subject groups shall be displayed. You can also select the number of rows per page.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017142424466" alt="image2019-5-15_13-12-51.png"></p>
+<p><strong>Editing subject groups</strong></p>
+<p>To edit the existing subject groups, use the icons in the “Actions” column:</p>
+<ul>
+<li>
+<p><strong>Edit</strong>: Click on the Edit icon to open the dialog shown above and change the label.</p>
+</li>
+<li>
+<p><strong>Delete</strong>: Additional subject groups can be deleted. The default subject group cannot be deleted.</p>
+</li>
+</ul>
+<p><strong>Creating new subject groups</strong></p>
+<p>To create an additional subject group, proceed as follows:</p>
+<ul>
+<li>
+<p>Click on the <strong>Create subject group</strong> button.</p>
+</li>
+<li>
+<p>Enter the English and/or German name of the subject group.</p>
+</li>
+<li>
+<p>Decide if the subject group should be selectable.

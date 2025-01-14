@@ -1,0 +1,34 @@
+ be used to check the quality of survey participation. The process may take a while.</div>
+</div>
+</div>
+</div>
+</div>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="11266"><strong data-renderer-mark="true">To check the quality of a survey participation:</strong></p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="11317">After you have triggered the quality correction, open the <em data-renderer-mark="true">Survey menu</em> and select the <em data-renderer-mark="true">Export</em> menu item.</p>
+</li>
+<li>
+<p class="wysiwyg-text-align-left" data-renderer-start-pos="11423">Retain the default setting – <strong data-renderer-mark="true">Result data (all answers, formats e. g. SPSS, CSV, Fixed Format, Quantum, MS Excel...)</strong> – and click <strong data-renderer-mark="true">Continue</strong>.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013850217234"></p>
+</li>
+<li>
+<p class="wysiwyg-text-align-left" data-renderer-start-pos="11423">On the next page, keep all default settings, and click on<strong data-renderer-mark="true"> Export.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013850210194"></strong></p>
+</li>
+<li>
+<p data-renderer-start-pos="11423">Finally, click on Copy file to local PC on the next page. The export file is downloaded to your local system.</p>
+</li>
+<li>
+<p data-renderer-start-pos="11423">Open the export file. The <em data-renderer-mark="true">quality</em> column provides information about the quality of a survey participation. The value for the quality variable is calculated by relating the individual processing time of a participant to the mean processing time of the entire sample and lies between 0 and 1. A value of 0.5, which is exactly on average, indicates a high quality of participation. Participants, who spent more time on the survey, are above this value. Participants, who are significantly below a value of 0.5, should be viewed critically and their survey responses might not be relevant for the further evaluation of the survey. In the example below, you can see that the participant in the 5th row has a value of 0,23 in the <em data-renderer-mark="true">quality</em> column. This would therefore be a participant, whose data records you could delete for quality purposes.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013850212114"></p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="11423"><em><img style="height: 66.3021px;" draggable="false" src="blob:https://qbdocs.atlassian.net/9059f8d0-32b6-4d0a-92d2-e8e669099687#media-blob-url=true&amp;id=437b0bf3-886c-4d26-b92b-6ce5c64597ee&amp;collection=contentId-4004937734&amp;contextId=4004937734&amp;mimeType=image%2Fpng&amp;name=image-20231220-101919.png&amp;size=18049&amp;width=1467&amp;height=128&amp;alt=" alt="" data-testid="media-image">Please note that you must always reactivate the quality correction after new participations – for example, if you have subsequently added a participant to the sample. Otherwise, the value -77 (missing value) will be displayed in the quality column. It is therefore recommended that you always activate the quality correction again before exporting the results data. No quality value can be calculated for participants, who have suspended the survey. For these participants, the value -77 is displayed too.</em></p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="13111"><strong data-renderer-mark="true">To delete data records that do not have the desired quality:</strong></p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="13175">Return to the <em data-renderer-mark="true">Statistics</em> menu, and open the <em data-renderer-mark="true">Detail view</em> menu item. A list of all participations is displayed. <em>Note: Only users with certain access rights can access the data in the Detail view. </em></p>
+</li>
+<li>
+<p data-renderer-start-pos="13175">In the list, search for the participant with the poor quality value: In the previously exported Excel table, you can see that this participant has been assigned the sequential number ("lfdn") 5. This sequential number can also be found in the detailed view of participation in the <strong data-renderer-mark="true">Participation</strong> column on the left-hand side. In this way, you can easily determine which participant has the poor quality value. In the example below, it is the participant <em data-renderer-mark="true">Peter Pan</em>.</p>
+</li>
+<li>
+<p data-renderer-start-pos="13175">In the<strong data-renderer-mark="true"> Actions</

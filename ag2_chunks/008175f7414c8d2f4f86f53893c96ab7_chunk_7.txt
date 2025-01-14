@@ -1,0 +1,34 @@
+<em>People</em> &gt; <em>Contacts</em> &gt; <em>Groups</em>.</p>
+<p class="wysiwyg-text-align-justify">The technical setup of <em>Managed Circles</em> mainly includes the following aspects:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>First, a <strong>Panel Group</strong> has to be selected as the basis of the circles. The panelists being part of this group will be filtered according to the following defined variables.</li>
+<li>In the variables menu “Find Matches in the following variable”, you define the <strong>variable of the portal user</strong> who is logged in to the portal, for example, “email”.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Information</p>
+<p class="wysiwyg-text-align-justify"><span style="color: #333333;">This variable always relates to the person being logged in to the respective portal.</span></p>
+<ul class="wysiwyg-text-align-justify">
+<li>In the variables menu “Group circles by following variable”, you define the <strong>reference value</strong> according to which the circle will be grouped, for example, “manager”. Under People → Master data → Create master data, you create the respective <strong>master data</strong> beforehand, for example, “manager”.</li>
+<li>In the variables menu “Variable for Circle Label”, you can optionally define the label of the group. There are two possible options for doing so:
+<ul>
+<li>Not setting the variable: With this option, only the title of the circle is shown in the exterior view, specified under People → Contacts → Groups → Name.</li>
+<li>Setting a variable: With this option, the content of the variable is shown in the exterior view instead of the group‘s title.</li>
+</ul>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Information</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Each panelist who shall be able to use a group has to be a member of the panel group which serves the group as a basis.</li>
+<li>Each panelist who is to be shown as part of a group has to be a member of the basic group and has to have access to the portal.</li>
+<li>Most of the content of Groups, like the display of the label, is exclusively shown to portal users being logged in.</li>
+</ul>
+<h3 id="acess-to-the-portal" class="auto-cursor-target wysiwyg-text-align-justify"><strong>Access to the portal</strong></h3>
+<p class="wysiwyg-text-align-justify">To manage the access of panelists to the portal, open <em>Portals</em> → <em>Settings</em> → <em>Access permissions</em>. If the setting in the field “Access permission for panel groups” is set to “Registered users” (standard setting), all users of the circle with access to the portal will be shown. To restrict the display of portal users to a certain panel group, select the setting “Group members” in the field “Access permission for panel groups” and add the respective panel group.</p>
+<h3 id="setup-of-managed-circles-via-grouping-filters" class="sc-eNNmBn lmEGgd wysiwyg-text-align-justify"><strong>Setup of Managed Circles via grouping filters</strong></h3>
+<p class="sc-eNNmBn lmEGgd wysiwyg-text-align-justify"><span style="color: #091e42;">Use group filters and update rules to set up groups as a basis for your group and adapt your group this way. The bigger the basis group, the more members the respective group will have. The smaller the basic group, the fewer members will be in the group.</span></p>
+<p class="sc-eNNmBn lmEGgd wysiwyg-text-align-justify"><span style="color: #091e42;"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015069447954" alt="Master data.png"></span></p>
+<p class="wysiwyg-text-align-justify">To implement group compositions in your project setup, proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>First, define your <strong>master data</strong> under <em>People</em> → <em>Master data</em> → <em>Create master data</em>, for example, “md_brand” and “md_brand_responsible” as matching variables.</li>
+<li>Create a <strong>group</strong> under <em>People</em> → <em>Groups</em> → <em>Create group</em>. In addition to the group title, you can optionally add a description of the group as well as create a group category to organize your data.</li>
+<li>
+<span style="color: #091e42;">Filters are used to define which panelists will be added to certain groups. Create a</span><span style="color: #091e42;"> </span><strong>group filter</strong><span style="color: #091e42;"> </span><span style="color: #091e42;">under</span><span style="color: #091e42;"> </span><em>People</em><span style="color:

@@ -1,0 +1,56 @@
+<h1 id="h_01J5X9A50A9XG31VDTT36H6J49">Table of Contents</h1>
+<ul>
+<li>
+<a href="#header-1">Prerequisites:</a>
+<ul>
+<li>
+<a href="#header-3">Configuration in AD FS:</a>
+<ul>
+<li><a href="#header-5">Step 1: Create a Relying Party Trust</a></li>
+<li><a href="#header-6">Step 2: Create Claim Rules</a></li>
+<li><a href="#header-7">Step 3: Check the order of the claim rules (important!)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p> </p>
+<p>ADFS <strong>(Active Directory Federation Services)</strong> will be used in combination with a SAML federation in that version. Prefer a OIDC federation in newer versions.</p>
+<p>For example Metadata see: <a href="https://sso.questback.com/FederationMetadata/2007-06/FederationMetadata.xml">https://sso.questback.com/FederationMetadata/2007-06/FederationMetadata.xml</a></p>
+<p> </p>
+<h1 id="header-1">Prerequisites:</h1>
+<ol>
+<li>
+<p>The Server has to be part of the target Active Directory Domain</p>
+</li>
+<li>
+<p>The Server Role “Active Directory Federation Services” has to be installed and configured on the server<br>The three parts “Install a server SSL certificate”, “Install the AD FS server role” and “Configure the federation server” under Step 2 of <a href="https://docs.microsoft.com/de-de/windows-server/identity/ad-fs/deployment/set-up-the-lab-environment-for-ad-fs-in-windows-server-2012-r2#BKMK_4">this Microsoft documentation</a> are quite helpful here.</p>
+</li>
+</ol>
+<p>There is no further Configuration needed in ADFS to enable SAML authentication.</p>
+<p> </p>
+<p>To successfully create a SAML federation between ADFS and Okta there are a few fields that are required by our Okta solution. The AD FS has to provide email-address, first name and last name as well as an email-address as NameID.</p>
+<p> </p>
+<h2 id="header-3">Configuration in AD FS:</h2>
+<p>The steps might change with regards to the version and server version. They might also change with respect to the specific fields that are available in the actual AD FS instance.</p>
+<h3 id="header-5">Step 1: Create a Relying Party Trust</h3>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716794584466" alt="image-20200106-121635.png"></p>
+<p>On the second step of the configuration wizard, the information can and should be imported via a metadata.xml file provided by Okta. This contains all information needed to complete the wizard.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716818490514" alt="image-20200106-121918.png"></p>
+<h3 id="header-6">Step 2: Create Claim Rules</h3>
+<p>All claim rules for the formerly created Party Trust can be found here:</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716800998162" alt="image-20200106-122205.png"></p>
+<p>New rules can be created by clicking on “Add Rule…”:</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716817900562" alt="image-20200106-123400.png"></p>
+<p> </p>
+<p>The following three rules have to be created:</p>
+<p><strong>Attribute claims from AD</strong></p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716800844946" alt="image-20200106-122823.png"></p>
+<p><strong>Pass E-Mail Claims</strong></p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716826846226" alt="image-20200106-122959.png"></p>
+<p><strong>Email to NameID</strong></p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716817836818" alt="image-20200106-123624.png"></p>
+<p> </p>
+<h3 id="header-7">Step 3: Check the order of the claim rules (important!)</h3>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716826594450" alt="image-20200106-123756.png"></p>
+<p> </p>

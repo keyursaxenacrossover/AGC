@@ -1,0 +1,109 @@
+ Both you and the users can allocate a function to the participants.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Importing function allocations</strong></p>
+<p class="wysiwyg-text-align-justify">Function allocations can be imported into the centralized participant administration. When doing so, the variable containing the unit allocation - usually metaname - is formatted as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Multiple structure views, multiple allocation, and/or function: metaname1:u_function:code;metaname2:u_function:code;metaname3:u_function:code</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Decentralized import of function allocations is not possible. If you want to subsequently change the function allocation of an already imported participant, you can do so in the participant’s detail view in the centralized participant administration as described above.</p>
+<p class="wysiwyg-text-align-justify"><strong>Exporting function allocations</strong></p>
+<p class="wysiwyg-text-align-justify">Download the central list of participants as already described for the allocation to multiple structure views. In addition to the meta names of the units, the column metaname also contains the function(s).</p>
+<h3 id="structure-variables" class="wysiwyg-text-align-justify"><strong>Structure variables</strong></h3>
+<p class="wysiwyg-text-align-justify">Prior to building the organizational structure, check whether the data structure meets the requirements of your current project, and adjust it if necessary.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Variables for storing basic properties of the units, such as name or target number, can be relabeled or otherwise modified.</p>
+</li>
+<li>
+<p>If you want to store additional unit-specific properties, you can create additional variables. If, for example, you want to label the organizational units in a second language, you can create a specific variable for this purpose. Properties common to all participants of a unit can also be stored in user-defined variables on the unit level.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The editing of the variables and the creation of additional variables is done in the menu <strong>Org Processor</strong> → <strong>Configuration → Structure variables</strong>.</p>
+<p class="wysiwyg-text-align-justify"><strong>Overview of the existing structure variables</strong></p>
+<p class="wysiwyg-text-align-justify">Switch to the menu <strong>Org Processor</strong> →<strong> Configuration → Structure variables</strong>. Here you will find an overview table listing the already existing structure variables.</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default">
+<colgroup> <col style="width: 161.0px;"> <col style="width: 150.0px;"> <col style="width: 230.0px;"> <col style="width: 100.0px;"> <col style="width: 119.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Variable</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Label</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Data type</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Size</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p><em>label_extern</em></p>
+</td>
+<td>
+<p>Name of unit</p>
+</td>
+<td>
+<p>Name of the respective organizational unit.</p>
+</td>
+<td>
+<p>Text field</p>
+</td>
+<td>
+<p>256 characters</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>label</em></p>
+</td>
+<td>
+<p>Short form of unit name</p>
+</td>
+<td>
+<p>Name of the respective organizational unit as it is to be displayed in the organizational structure. For greater clarity, a shortened form of the actual name is usually used.</p>
+</td>
+<td>
+<p>Text field</p>
+</td>
+<td>
+<p>256 characters</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>metaname</em></p>
+</td>
+<td>
+<p>Meta name (Unique Ident.)</p>
+</td>
+<td>
+<p>Unique identifier of the unit. The meta name may contain only the following characters: a-z, A-Z, 0-9, "_", "-"</p>
+</td>
+<td>
+<p>Text field</p>
+</td>
+<td>
+<p>65,536 characters</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>co_target</em></p>
+</td>
+<td>
+<p>Staff (preset value)</p>
+</td>
+<td>
+<p>Preset number of employees for this unit.</p>
+</td>
+<td>
+<p>

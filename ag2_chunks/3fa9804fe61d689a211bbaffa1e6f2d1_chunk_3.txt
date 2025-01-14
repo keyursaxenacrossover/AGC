@@ -1,0 +1,62 @@
+ refer to “Total” for single response lists and matrices. For multiple response lists, they refer to the number of participants who have selected the respective answer option.</p>
+</li>
+<li>
+<p>Anonymized data are marked:</p>
+<ul>
+<li>
+<p>You can tell anonymized tables and charts by the comment “*) Some values have been anonymized”.</p>
+</li>
+<li>
+<p>Columns containing anonymized values are marked with a *.</p>
+</li>
+<li>
+<p>In tables, anonymized values are replaced with a dash (-). In charts, “0” is displayed for the corresponding answer options.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>By default, no limit is preset, i.e., all results are displayed.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If you wish to anonymize your reports or a section thereof, enter the desired value into the field “Anonymity limit” in the <strong>Report</strong> → <strong>Report filter</strong> menu or in the filter dialog.</p>
+<h3 id="effects-of-anonymization-in-detail" class="wysiwyg-text-align-justify"><strong>Effects of anonymization in detail</strong></h3>
+<p class="wysiwyg-text-align-justify">The anonymity limits in EFS Reporting+ always refer to “Total” for single response lists and matrices. For multiple response lists, they refer to the number of participants who have selected the respective answer option. The use of filters allows for anonymity limits to be nested. Please note that anonymity limits at subordinate levels may only become increasingly restrictive.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Therefore, a filter will only raise the limit defined for the entire report.</p>
+</li>
+<li>
+<p>A filter located in another filter branch will likewise only raise the limit of the superordinated filter branch and the limit for the entire report.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Examples</strong></p>
+<p class="wysiwyg-text-align-justify">While the anonymity limit for the entire report is set to “5”, it is set to “10” within a particular filter. →  Before and after the filter the anonymity limit is “5”. Within the filter branch, it is “10”.</p>
+<p class="wysiwyg-text-align-justify">While the anonymity limit for the entire report is set to “10”, it is lowered to “5” within a particular filter. → For the entire report including the filter branch, the anonymity limit is “10”: You cannot override the limit for the entire report with a filter.</p>
+<p class="wysiwyg-text-align-justify"><strong>Anonymization of crossbreaks</strong></p>
+<p class="wysiwyg-text-align-justify">Contingency tables are anonymized as well. In the case of contingency tables with “Total” column, please note: Once a column has been anonymized, the “Total column” will be completely anonymized as well. This is necessary to prevent anybody from calculating the missing values on the basis of the remaining data and total values.</p>
+<h2 id="creating-contingency-tables" class="wysiwyg-text-align-justify"><strong>Creating contingency tables</strong></h2>
+<p class="wysiwyg-text-align-justify">Contingency tables come into play when you want to examine whether and how the participants’ answers correlate with a certain attribute or a combination of attributes. In these tables, the participants’ answers are split up according to the attribute combinations to be examined, and listed side-by-side, thus allowing for their direct comparison.</p>
+<p class="wysiwyg-text-align-justify">In the contingency table shown, the details regarding the use of maps are split up based on the respondents’ sex and preferred sports. Additionally, the right-hand column “Total” displays the marginal totals.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The split dimensions (table headers) do not have to be configured for each contingency table individually. Like filters, they are prepared in the sources window and then placed at the desired position in the report.</p>
+</li>
+<li>
+<p>The structure of split dimensions can be defined easily via drag-and-drop.</p>
+</li>
+<li>
+<p>Contingency tables can be up to three dimensions deep (i.e., a maximum of three variables can be nested within one split dimension) and contain a maximum of twenty five (25) columns.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The first of these 25 columns already contains the answer option. So you can only create 24 categories (or codes or dimensions).</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Please note that the choice of chart types available for contingency tables is limited to column charts.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">It is currently not possible to split open answers. Please use filters instead: they allow you to clearly arrange the texts in several tables.</p>
+<h3 id="overview-of-contingency-table-configuration" class="wysiwyg-text-align-justify"><strong>Overview of contingency table configuration</strong></h3>
+<p class="wysiwyg-text-align-justify">All the split dimensions required for the report are prepared in the sources window, similar to the filters.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The prepared split

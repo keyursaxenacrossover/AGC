@@ -1,0 +1,90 @@
+language-bash">echo "installation; created; u_firstname; u_name; u_email; u_account; gender; language; lastlogin; num_logins; login_expire; login_disabled; ORGA; contract_end" 
+&gt;&gt; /nfs/dumps/EFS_Users$(date "+%Y-%m-%d").csv 
+&amp;&amp; 
+for i in  $(ls /nfs/installations); 
+do cd /nfs/installations/$i/nfs/opst/$i.customervoice360.com/htdocs; 
+pwd; 
+echo "SELECT 
+\"$i\", 
+created, 
+u_firstname, 
+u_name, 
+lower(u_email), 
+u_account, 
+CASE WHEN u_gender=1 Then 'male' WHEN u_gender=2 Then 'female' ELSE 'no info' END AS gender, 
+lang AS language, 
+if(lastlogin='NULL','never',from_unixtime(lastlogin)) AS lastlogin, 
+num_logins, 
+if(login_expire != 'NULL', from_unixtime(login_expire), 'unrestricted') AS login_expire, 
+login_disabled, 
+name AS ORGA, 
+contract_end 
+FROM users,user_att,login_att,admin_user_contract,admin_contract_org 
+WHERE admin_contract_org.id=admin_user_contract.org 
+AND admin_user_contract.uid=users.uid 
+AND users.uid=user_att.uid 
+AND user_att.uid=login_att.uid 
+AND u_email not like '%questback%' 
+AND u_email not like '%servicelayer%' 
+AND u_email not like '%dummy%' 
+AND u_email not like '%tivian%' 
+AND u_email not like '%globalpark%' 
+AND u_email not like '%3uu%' 
+AND u_email not like '%teilnehmer%' 
+AND u_email not like '%invalid%'  
+AND u_email not like '%support%' 
+AND u_email not like '%soporte%'  
+AND u_email not like '%client%' 
+AND u_email not like '%training%' 
+AND u_email not like '%sistemas%' 
+AND u_email not like '%invalid%' 
+AND u_email not like '%@student%' 
+AND u_email not like '%test%';" 
+| efslogin 
+| grep -v '^Running\|^Connecting\|^customer\|u_account' 
+| sed 's/\t/;/g;s/\/nfs\/[^\/]*\///g'  
+&gt;&gt; /nfs/dumps/EFS_Users$(date "+%Y-%m-%d").csv; done</code></pre>
+<p> </p>
+<h2 id="header-4">Run across installations and count the db size</h2>
+<pre><code class="language-text">for i in $(cat ~/wave7tocountsize.txt) ; do i2 $i; size=$(echo 'SELECT table_schema AS "Database",  ROUND(SUM(data_length + index_length) / 1024 / 1024 / 1024, 2) AS "Size (GB)"  FROM information_schema.TABLES  GROUP BY table_schema;' | efslogin | grep -v "Running" | grep "opst\|tbl" | awk '{ SUM += $2} END { print SUM }'); echo "$i ; $size" &gt;&gt; ~/wave7totals.txt; done</code></pre>
+<p data-renderer-start-pos="4288"><font>What we do:</font></p>
+<ol class="ak-ol" start="1" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="4305"><font>output a list with cat and read it into i</font></p>
+</li>
+<li>
+<p data-renderer-start-pos="4354"><font>switch to installation</font></p>
+</li>
+<li>
+<p data-renderer-start-pos="4383"><font>send command to efslogin to spit out db size</font></p>
+</li>
+<li>
+<p data-renderer-start-pos="4438"><font>remove the unnecessary accessories from the result</font></p>
+</li>
+<li>
+<p data-renderer-start-pos="4489"><font>Two numbers are spit out, these are added together with AWK</font></p>
+</li>
+<li>
+<p data-renderer-start-pos="4556"><font> then installation and calculated DB size packed into a txt file </font></p>
+</li>
+</ol>
+<p> </p>
+<h2 id="header-5">Send mail from command line or from shell scripts</h2>
+<p>This has been possible using the mailx command in the Corbox</p>
+<pre><code class="language-text">mailx -s "Post aus Bremen" -r mathias.thurn@tivian.com -a jf3233_injections.zip  mathias.thurn@tivian.com</code></pre>
+<p>In the example an attched file is sent from <code>mathias.thurn@tivian.com</code> to <code>mathias.thurn@tivian.com</code></p>
+<p>In the AWS we have the msmtp command. It can be used with a configuration file in your home folder</p>
+<p><code>~/.msmtprc</code></p>
+<pre><code class="language-text">thurn_mathias@servicegw-prod-de-03:~$ cat .msmtprc
+defaults
+tls off
+
+account techsupport
+auth off
+host postfix-adhoc.global-services.svc.cluster.local
+port 25
+from techsupport@tivian.com
+
+account default : techsupport
+</code></pre>
+<p>You can send text from a file, that includes data like the recipient. The Subject is always part

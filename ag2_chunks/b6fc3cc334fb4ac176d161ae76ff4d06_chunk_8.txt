@@ -1,0 +1,21 @@
+0);">$user<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">portals.cms.import.after</span></pre></td>
+<td colspan="1">modules/portal/components/import/portal/service.inc.php:handleImport()</td>
+<td colspan="1"><pre><span>Portal\Events\Portals\Cms\Import\After</span><span>([<br></span><span>    </span><span style="color: rgb(0,128,0);">'portal' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$portal<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">efs.session.insert.after</span></pre></td>
+<td colspan="1">modules/efs/components/session.inc.php:write()</td>
+<td colspan="1"><pre><span>Efs\Events\Session\Insert\After</span><span>([<br></span><span>    </span><span style="color: rgb(0,128,0);">'result' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$result</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'object' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$this</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'inserted_data'  </span><span>=&gt; [<br></span><span>        </span><span style="color: rgb(0,128,0);">'session_id' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$this</span><span>-&gt;</span><span style="color: rgb(102,14,122);">ses_id</span><span>,<br></span><span>        </span><span style="color: rgb(0,128,0);">'variables' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$this</span><span>-&gt;</span><span style="color: rgb(102,14,122);">ser_arr<br></span><span style="color: rgb(102,14,122);">    </span><span>]<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">panellists.manager.change_panelist_account_data.update.before</span></pre></td>
+<td colspan="1">modules/panel/components/panelists/manager.inc.php:change_panelist_account_data()</td>
+<td colspan="1"><pre><span>Panel\Events\Panelists\Manager\ChangePanelistAccountData\Update\Before</span><span>([<br></span><span>    </span><span style="color: rgb(0,128,0);">'email'           </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$email1</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'original_values' </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$previous_data</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'update_values'   </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$update_values</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'panelist_status' </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$pstatus<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">panellists.manager.change_panelist_account_data.update.after</span></pre></td>
+<td colspan="1">modules/panel/components/panelists/manager.inc.php:change_panelist_account_data()</td>
+<td colspan="1"><pre><span>Panel\Events\Panelists\Manager\ChangePanelistAccountData\Update\After</span><span>([<br></span><span>    </span><span style="color: rgb(0,128,0);">'email'           </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$previous_email</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'original_values' </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$previous_data</span><span>,<br></span><span>    </span><span style="color:

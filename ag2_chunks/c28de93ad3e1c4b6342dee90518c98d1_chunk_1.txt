@@ -1,0 +1,83 @@
+ id="displaying-additional-information" class="wysiwyg-text-align-justify">Displaying Additional Information</h3>
+<p class="wysiwyg-text-align-justify">In the “Display options“ section you have the option of displaying the following additional information:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Show filters</p>
+</li>
+<li>
+<p>Show triggers</p>
+</li>
+<li>
+<p>Show plausibility checks</p>
+</li>
+<li>
+<p>Show hiding conditions: Hiding conditions for questions and answer options can be displayed. Please note: Hiding conditions for matrix columns cannot be displayed in the codebook.</p>
+</li>
+<li>
+<p>Show direct links to edit the questionnaire: Next to each question, an <strong>Edit question </strong>link and a link to the <strong>Language editor </strong>will be shown.</p>
+</li>
+<li>
+<p>Show fill-in instructions: When checking the box, fill-in instructions for questions will be displayed in the codebook.</p>
+</li>
+<li>
+<p>Show table of contents: The codebook will show a list of the questionnaire pages. You can click on the page titles, so even with very long questionnaires, you will easily find the respective page in the codebook.</p>
+</li>
+<li>
+<p>If you tick the special checkbox “Show field positions in export template” in the codebook and select the suitable export template, the codebook will show the width, beginning, and end of the columns.</p>
+</li>
+<li>
+<p>Adjust column widths to effective size of data (excluding missing values): If you tick both this checkbox and the preceding “Show field positions in export template” checkbox, the column widths displayed will be those that result when exporting in Fixed Format with adjusted column widths for further processing in Quantum.</p>
+</li>
+<li>
+<p>In the case of personalized projects, you can select “Show participant variables” to display these variables.</p>
+</li>
+<li>
+<p>Show survey variables: When checking this option, the survey variables will be displayed in the codebook. Depending on the variables used in the project, this may be e. g. language, disposition codes, date, or meta information such as location and device variables.</p>
+</li>
+<li>
+<p>With “Display groups and group assignment of items and groups” grouping information can be displayed in the codebook.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The most recently saved display options will be saved as default and will be used for future projects.</p>
+<h3 id="selecting-the-language-of-text-elements" class="wysiwyg-text-align-justify">Selecting the Language of Text Elements</h3>
+<p class="wysiwyg-text-align-justify">In the case of multilingual projects, you can use the drop-down list under “Select language” to specify the language in which the question texts and answer categories are to be displayed in the codebook.</p>
+<h3 id="editing-variable-names" class="wysiwyg-text-align-justify">Editing Variable Names</h3>
+<p class="wysiwyg-text-align-justify">The codebook contains a range of functions that enable effective centralized editing of user-defined variable names in the “Edit variable names” section.</p>
+<p class="wysiwyg-text-align-justify"><strong>Editing variable names</strong></p>
+<p class="wysiwyg-text-align-justify">When the option “Edit variable names directly in this form” is selected and then confirmed with the <strong>Save settings </strong>button, entry fields are displayed in which you can edit the external variable names. After entering the new names, click on the <strong>Save variable names </strong>button.</p>
+<p class="wysiwyg-text-align-justify"><strong>Changing variable names according to a preset algorithm</strong></p>
+<p class="wysiwyg-text-align-justify">You can allocate a unique label to the external variable names of a project by a predefined scheme.</p>
+<p class="wysiwyg-text-align-justify">Available options are:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Consecutive internal variable name (v_x): Default in new projects</p>
+</li>
+<li>
+<p>User-defined prefix consecutive item number</p>
+</li>
+<li>
+<p>User-defined prefix consecutive question number_consecutive item number (per question)</p>
+</li>
+<li>
+<p>User-defined prefix consecutive question number|consecutive item number (per question)</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Please proceed as follows:</p>
+<ol class="wysiwyg-text-align-justify" start="1">
+<li>
+<p>In the codebook click the <strong>Select algorithm for creation of variable names </strong>link in the “Create new variable names by selected algorithm” field. This opens the <strong>Projects</strong>-&gt;{<strong>Selected project</strong>}-&gt;<strong>Project properties </strong>menu.</p>
+</li>
+<li>
+<p>Set the desired labeling option in the select box.</p>
+</li>
+<li>
+<p>Enter the desired prefix in the “Algorithm for creating the external variable names” field. The default preset is “v_”.</p>
+</li>
+<li>
+<p>Switch back to the <strong>Codebook</strong>.</p>
+</li>
+<li>
+<p>Activate “Create new variable names by selected algorithm”.</p>
+</li>
+<li>
+<p>Confirm by clicking on

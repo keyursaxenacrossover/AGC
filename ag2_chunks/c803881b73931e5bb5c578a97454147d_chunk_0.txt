@@ -1,0 +1,46 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K" class="wysiwyg-text-align-justify">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article covers essential tips and tricks for working with the EFS Panel, including testing procedures, working with CSV files, managing external surveys, and enhancing security features.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">This guide provides detailed instructions on various aspects of EFS Panel management, focusing on testing, data handling, and security enhancements.</p>
+<ul>
+<li><a href="#testing-in-the-panel">Testing in the Panel</a></li>
+<li><a href="#working-with-csv-files">Working with CSV Files</a></li>
+<li><a href="#renting-panelists-out-to-externally-conducted-surveys">Renting Panelists out to Externally Conducted Surveys</a></li>
+<li><a href="#personalized-projects-without-a-list-of-participants">Personalized Projects without a List of Participants</a></li>
+<li><a href="#mail-templates">Mail Templates</a></li>
+<li><a href="#improving-security-with-the-option-activate-security-question">Improving Security with the option "Activate security question"</a></li>
+</ul>
+<h2 id="testing-in-the-panel" class="wysiwyg-text-align-justify"><strong>Testing in the Panel</strong></h2>
+<p class="wysiwyg-text-align-justify">When setting up and operating a panel it is often necessary to check and test complex processes. EFS Panel gives you the option of setting up accounts with a special tester status, which allows you to test current surveys without falsifying the results:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>People with the “Tester” status can participate in a survey as often as they like. If a tester with the “Completed” disposition code accesses the questionnaire for a second time, the existing data will be deleted. The tester will begin the new entry on the first page of the project.</li>
+<li>Testers do not “resume” their work. If a tester interrupts editing for a prolonged period (more than 30 minutes) and then accesses the questionnaire again, they will resume the editing on page 1. “Normal” respondents see the page last sent.</li>
+<li>The test results are listed in both statistics and the export data record. However, they are identifiable as test results. In the master data record, panel testers have the value 16 in the “pstatus” field, while regular participants have another status. In the result data record of a survey (panel surveys, anonymous and personalized projects), tester records are identifiable through the “tester” variable, which has the value “1” for testers and “0” for other participants.</li>
+<li>Tester data can be deleted explicitly from the result data record of a project when it is generated. To do so, choose the “Reset survey, delete test participants and their result data” option in the <strong>Reset survey</strong> menu (until EFS 10.1: <strong>Compile</strong>) of the respective project and confirm by clicking on <strong>Reset survey</strong>.</li>
+<li>If you use a test account regularly, it is very convenient to register it as your personal standard panelist. Then, whenever you call up the website from EFS (e.g., from the website editor), this account will be used automatically, eliminating the need for entering login details.</li>
+</ul>
+<h3 id="setting-up-a-tester-account" class="wysiwyg-text-align-justify"><strong>Setting up a Tester Account</strong></h3>
+<p class="wysiwyg-text-align-justify">Please proceed as follows:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>Open the <strong>People → Panelists administration</strong> menu and click on the Add panelist button.</li>
+<li>Fill in the form. The details marked with an * are compulsory.<br><br>
+<ul>
+<li>Choose “Tester” status.</li>
+<li>Enter the participant data.</li>
+<li>
+<p class="auto-cursor-target">Enter a real e-mail address that you have access to. Otherwise, you will not be able to control whether, for example, the sending of an invitation to the master data survey was done correctly.<br><em>Information: Pay attention that, when conducting tests, you only send emails to your account or a dummy account belonging to your company (with the agreement of the responsible system administration).</em></p>
+</li>
+<li>
+<p>Optionally choose category and group. In a newly delivered standard panel, at least the group category “Default” (contains all groups) and the group “Default panel group” (contains all panelists) exist and can be selected.</p>
+</li>
+<li>
+<p>Select the language version.</p>
+</li>
+<li>
+<p>If you are using the Community features of the EFS Panel, configure the visibility of profile data for the new test account.<br><br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21018302994450" alt="testaccount.png"></p>
+</li>
+</ul>
+</li>
+<li>Confirm by clicking on <strong>Create account</strong>.</li>
+</ol>
+<p class="wysiwyg-text-align-

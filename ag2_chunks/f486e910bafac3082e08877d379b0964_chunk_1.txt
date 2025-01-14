@@ -1,0 +1,46 @@
+ highest may be a single participation but not the survey in general.</li>
+<li>If you click on any project in the column of the same name you see the very same but for the single pages of a survey, which helps you to identify specific pages which perform slow.<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/22110342209810">
+</li>
+<li>Next thing would be to check those pages in the survey editor to see if their are "<strong>Triggers</strong>" on that page which might cause issues or other performance intense things (i.e. LUA question type, customizings etc.)</li>
+</ul>
+</li>
+<li>
+<h3 id="h_01JAQJP5TM2YXJHPGWREDPAJWM"><span class="wysiwyg-underline">For Survey Individual-Reply performance:</span></h3>
+<ul>
+<li style="box-sizing: border-box;">
+<strong style="box-sizing: border-box; font-weight: bolder;">Watchdog (ospe_time_log Table):</strong>
+<ul style="box-sizing: border-box; list-style: outside disc; margin: 0px; padding: 0px 0px 0px 20px;">
+<li style="box-sizing: border-box;">The Watchdog (<code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, ' Liberation Mono' , ' Courier New' , monospace; font-size: 14px; color: #e83e8c; word-break: break-word; background: #f7f7f7; border: 1px solid #dddddd; border-radius: 3px; padding: 0px 5px; margin: 0px 2px;">System &gt;&gt; Options &gt;&gt; Patform cockpit &gt;&gt; OSPE Watchdog</code>) is based on the DB table <strong style="box-sizing: border-box; font-weight: bolder;">ospe_time_log</strong> which provides the performance stats for each participant for <strong style="box-sizing: border-box; font-weight: bolder;">each sent page</strong>. Here you can get the user ID (uid) and <strong style="box-sizing: border-box; font-weight: bolder;">timestamp</strong> of each request if you would like to look at the DB log in AWS CW <br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/22110342211986">
+</li>
+</ul>
+</li>
+<li>You also could look for the <strong>survey</strong> table and the lfdn of user (if the customer provided an example participant), then limit the <strong style="box-sizing: border-box; font-weight: bolder;">Watchdog </strong>table by "<strong>date_of_fist_access</strong>" and "<strong>date_of_last_access</strong>"</li>
+<li>Eventually, you can get the connection ID using the timestamp and/or uid from AWS CW..</li>
+</ul>
+</li>
+</ol>
+<h2 id="h_01JAQG6WKN5A4JSQEXDGAYG0BG">2. <strong>Check DB Logs on AWS Cloudwatch</strong>
+</h2>
+<ul>
+<li>Review <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/22010573804818-Accessing-and-Querying-AWS-Cloudwatch-DB-Logs">Accessing and Querying AWS Cloudwatch DB Logs</a> for general guidance for AWS logs.</li>
+<li>Look for Aborted connections in error log group</li>
+<li>Check <strong>slowqueries</strong> log group for individual slow queries (remember that a single connection has lot of queries).<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/22111304671122"><br>
+<ul>
+<li>
+<strong>Thread_id</strong>: is the connection ID</li>
+<li>
+<strong>Query_time</strong>: is in milliseconds.</li>
+</ul>
+</li>
+<li>For Survey related issues, <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/22090185803410#h_01JAMY3QTZY2V3E78R7QGJR831">Check AWS DB Logs for survey related requests</a>
+</li>
+<li>For Cronjobs issues (<strong>JobMaker</strong>), you can <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/22010573804818#h_01JAAEY10EJEV935RGPXW3THD8">Monitor JobMaker progress for an installation</a>
+</li>
+</ul>
+<h2 id="h_01JAQG6WKN0X1WBMYKHZD3DXKP">3. <strong>Check Grafana for Performance Metrics</strong>
+</h2>
+<ul>
+<li>Review <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21741183591314-Accessing-and-Querying-Grafana-Logs-A-Comprehensive-Guide">Accessing-and-Querying-Grafana-Logs</a> for general guidance for Grafana.</li>
+<li>Check performance of Cronjobs:<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/22111304680850">
+</li>
+<li style="line-height: inherit; margin:

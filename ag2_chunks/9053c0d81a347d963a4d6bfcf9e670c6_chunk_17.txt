@@ -1,0 +1,75 @@
+,#ddd); text-align: left; vertical-align: top; padding: 7px 10px 7px 10px !important;">Number of page views</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important 7px 10px;">
+<p>Total of all page views triggered by the panelist during panel sessions to date.</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px 7px 10px !important;">Date of last login</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important 7px 10px;">Indicates when the panelist last logged in to the panel successfully.</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<h2 id="h_01J3FYMC39JWGGZ7H0QJ6T9PQE">Updating Panelist Data</h2>
+</div>
+</div>
+<p class="wysiwyg-text-align-justify">Panelist and master data of existing panelists can be updated using a dedicated update function.</p>
+<p class="wysiwyg-text-align-justify"><strong>Prerequisites:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Panelists must already exist.</li>
+<li>Required master data must be created.</li>
+<li>New panelists are created using Panelist import.</li>
+<li>New master data can be created using a dedicated mass import feature.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Update Capabilities:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Update participant data, master data, and important system variables (“mail_validation_status,” “credit_points,” “descr,” “pstatus,” “site_id,” and “pci”).</li>
+<li>The import file should contain only the data to be updated.</li>
+<li>Various linking variables can be used for matching with the panelist datasets.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Executing an Update:</strong></p>
+<ol class="wysiwyg-text-align-justify">
+<li>Go to Panelists administration → Update data.</li>
+<li>Download the import template and enter your data. Ensure the linking variable is included (e.g., “pseudonym” or “panelist_code”).</li>
+<li>Upload the file.</li>
+<li>Choose the linking variable and match the import file columns with the database fields.</li>
+<li>Check the allocation in the preview and start the update.</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><strong>Information:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>The update process may take time depending on the data volume. Do not close the browser. Open a second browser window if needed to continue work during the import.</li>
+<li>For large imports (&gt;5,000 records), use smaller import files.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Linking Variables:</strong></p>
+<ol class="wysiwyg-text-align-justify">
+<li>
+<strong>“pseudonym”</strong>: Commonly used.</li>
+<li>
+<strong>“u_account,” “u_email,” and “panelist_code”</strong>: Used in many panels for unambiguous identification.</li>
+<li>
+<strong>“u_other_id”</strong>: Useful for special panels referencing an external data source. This variable links panelists to additional information in an external database.</li>
+</ol>
+<p class="wysiwyg-text-align-justify">Ensure that the import file and linking variables are correctly set up to facilitate a smooth update process.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h3 id="h_01J3FXSGRJ1TQSGWE23JSHKTHN" class="wysiwyg-text-align-justify">Panelists Import from Employee Project</h3>
+<p class="wysiwyg-text-align-justify">You can import users or participants from Employee projects into the panel, assigning them to their respective panelist accounts based on matching email addresses. This feature requires the user to have the <code>panelimport</code> access right.</p>
+<p class="wysiwyg-text-align-justify"><strong>Steps to Import Users or Participants:</strong></p>
+<ol class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Open the Module:</strong></p>
+<ul>
+<li>Navigate to <strong>People</strong>.</li>
+<li>Click on <strong>Panelist administration</strong> in the sidebar menu.</li>
+</ul>
+</li>
+<li>
+<p><strong>Initiate Import:</strong></p>
+<ul>
+<li>Click on <strong>Panelists import from Employee project</strong> (visible only to users with the <code>panelimport</code> read right).</li>
+</ul>
+</li>
+<li>
+<p><strong>Select Import Type:</strong></p>
+<ul>
+<li>For users: Activate the option <strong>User</strong>.</li>
+<li>

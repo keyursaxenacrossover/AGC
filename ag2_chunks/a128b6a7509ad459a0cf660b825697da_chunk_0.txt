@@ -1,0 +1,49 @@
+<p><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p class="wysiwyg-text-align-justify">This article provides a step-by-step guide on how to create a simple quiz game using EFS (Enterprise Feedback Suite). It covers the essential elements needed to set up and evaluate a quiz without the need for complex filters or triggers.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">Learn how to utilize EFS's built-in scoring function to create an interactive quiz game. This guide will walk you through the process of setting up questions, assigning scores, and displaying results.</p>
+<ul class="wysiwyg-text-align-justify">
+<li><a href="#quiz_setup">Setting Up Your Quiz</a></li>
+<li><a href="#scoring_system">Using the Scoring System</a></li>
+<li><a href="#displaying_results">Displaying Quiz Results</a></li>
+</ul>
+<h2 id="quiz_setup" class="wysiwyg-text-align-justify">Setting Up Your Quiz</h2>
+<p class="wysiwyg-text-align-justify">Creating a quiz game in EFS is straightforward and doesn't require any complex configurations. Here's how to get started:</p>
+<h3 id="step1_questions" class="wysiwyg-text-align-justify">Step 1: Create Questions and Answers</h3>
+<p class="wysiwyg-text-align-justify">Begin by creating all your quiz questions and their corresponding answer options within the EFS Questionnaire editor.</p>
+<h3 id="step2_scoring_button" class="wysiwyg-text-align-justify">Step 2: Access the Scoring Function</h3>
+<p class="wysiwyg-text-align-justify">After creating your questions, locate and click the Scoring-Button in the Questionnaire editor. This will open the "Scoring-Window".</p>
+<h2 id="scoring_system" class="wysiwyg-text-align-justify">Using the Scoring System</h2>
+<p class="wysiwyg-text-align-justify">The scoring system in EFS allows you to assign values to answers, enabling automatic score calculation for your quiz.</p>
+<h3 id="step3_assign_scores" class="wysiwyg-text-align-justify">Step 3: Assign Scores to Answers</h3>
+<p class="wysiwyg-text-align-justify">In the Scoring-Window:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Select each question you want to evaluate.</li>
+<li>For each answer option, assign a weight:
+<ul>
+<li>1 for a correct answer</li>
+<li>0 for an incorrect answer</li>
+</ul>
+</li>
+<li>Repeat this process for all quiz questions.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Note: The scoring variables are automatically labeled as s_000x (e.g., s_0001, s_0002, etc.). For a simple quiz, you typically only need one variable (s_0001).</p>
+<h2 id="displaying_results" class="wysiwyg-text-align-justify">Displaying Quiz Results</h2>
+<p class="wysiwyg-text-align-justify">After setting up the scoring system, you can easily display the quiz results to the participant.</p>
+<h3 id="step4_show_score" class="wysiwyg-text-align-justify">Step 4: Show the Final Score</h3>
+<p class="wysiwyg-text-align-justify">To display the number of correct answers:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Add a results section, typically on the last page of your quiz.</li>
+<li>Use the wildcard #s_0001# to show the participant's score.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">This wildcard will automatically be replaced with the actual number of correct answers when the quiz is completed.</p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863" class="wysiwyg-text-align-justify">FAQ</h1>
+<h3 id="faq1" class="wysiwyg-text-align-justify">Do I need to use filters or triggers for quiz evaluation?</h3>
+<p class="wysiwyg-text-align-justify">No, you don't need any filters or triggers for evaluating your quiz game in EFS. The built-in scoring function is sufficient for creating and scoring a simple quiz.</p>
+<h3 id="faq2" class="wysiwyg-text-align-justify">Can I assign different point values to questions?</h3>
+<p class="wysiwyg-text-align-justify">While this guide focuses on simple right (1) or wrong (0) scoring, EFS's scoring system allows for more complex point assignments if needed for advanced quizzes.</p>
+<h3 id="faq3" class="wysiwyg-text-align-justify">How does the scoring variable increase?</h3>
+<p class="wysiwyg-text-align-justify">The scoring variable (e.g., s_0001) automatically increases by 1 for each correct answer selected by the participant.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+</article>

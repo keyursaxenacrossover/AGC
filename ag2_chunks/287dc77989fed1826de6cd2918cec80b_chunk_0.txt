@@ -1,0 +1,51 @@
+<h1 id="h_01J6A70WK49N2YNMCBMPS4HA9H">Overview</h1>
+<p> </p>
+<p>This guide focuses on configuring portals, Multi-Factor Authentication (MFA), and password policies. Each of these components plays a crucial role in ensuring secure access to applications and services.</p>
+<ul>
+<li><a href="#h_01J6A6N44B0BH4GNXZE2XX79X6">Portal Setup</a></li>
+<li><a href="#h_01J6A6WJZ3EF3E0GKJ10R2HFX6">MFA Setup</a></li>
+<li><a href="#h_01J6A6XNPTEWXMZ3AN7WK86R6K">Password Policy Setup</a></li>
+</ul>
+<h2 id="h_01J6A6N44B0BH4GNXZE2XX79X6">Portal Setup</h2>
+<p>For Portals no applications in Okta have to be created manually. EFS will create and manage these applications once Tivian Access is activated. Existing portals are covered by an initial migration script. But Portals requires the setup of trusted origins to work properly - this has to be done once per EFS installation (or if existing once per installation alias).</p>
+<h3 id="header-1">Step 1: Navigate to trusted origins and click create</h3>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716466328850" alt="Screenshot_2019-11-28 Questback - Dashboard.png"></p>
+<p> </p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716466267666" alt="Screenshot_2019-11-28 Questback - API.png"></p>
+<p> </p>
+<h3 id="header-3">Step 2: Save Trusted Origin</h3>
+<p><strong>Values:</strong></p>
+<p>Name: see Naming conventions in Okta</p>
+<p>Origin URL: This are protocol and domain of the installation the should be added (in case of aliases add multiple origins)</p>
+<p>Check CORS</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716473230738" alt="Screenshot_2019-11-28 Questback - API(1).png"></p>
+<p> </p>
+<h2 id="h_01J6A6WY3NRYZ2DFGZQNWAYYSN"> </h2>
+<h2 id="h_01J6A6WJZ3EF3E0GKJ10R2HFX6">MFA Setup</h2>
+<h3 id="01J6A6K51FKA1ERSM55Z0R8QDF">Step 1: Navigate to Multifactor Authentication</h3>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21001120794130" alt="Screenshot_2019-11-29 Questback - Dashboard.png"></p>
+<h3 id="01J6A6K51FDXQWF1RZHE1TW9N0">Step 2: Check Factors and navigate to Factor Enrollment</h3>
+<p>If you want to configure a specific factor first check if that factor is available.</p>
+<p>Navigate to Factor Enrollment - also see Global Okta Setup</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21001120795666" alt="Screenshot_2019-11-29 Questback - Multifactor.png"></p>
+<p> </p>
+<h3 id="header-5">Step 3: Add a new Multifactor Enrollment</h3>
+<p>See Factor Enrollment</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21001157544594" alt="Screenshot_2019-11-29 Questback - Multifactor(1).png"></p>
+<p> </p>
+<h3 id="header-6">Step 4: Configure Factors and Group</h3>
+<p><strong>Values:</strong></p>
+<p>Policy Name: see Naming conventions in Okta</p>
+<p>Description: Put something in here that others will understand</p>
+<p>Assign to groups: Only the specific targeted group must be added here</p>
+<p>Effective Factors:</p>
+<p style="margin-left: 30.0px;">If multiple factors are possible - pick all of them as Optional</p>
+<p style="margin-left: 30.0px;">If only one factor is possible and forced - pick the factor as required</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21001157548434" alt="Screenshot_2019-11-29 Questback - Multifactor(2).png"></p>
+<p> </p>
+<h3 id="header-7">Step 5: Configure Enrollment Rule</h3>
+<p><strong>Values:</strong></p>
+<p>Name: something reasonable</p>
+<p>User is accessing: Check Okta and Applications</p>
+<p>Enroll in factor: decide based on the user requirements - “first time the user is challenged“ should be a good default</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/h

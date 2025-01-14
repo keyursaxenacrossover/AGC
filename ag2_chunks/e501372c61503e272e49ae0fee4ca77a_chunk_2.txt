@@ -1,0 +1,112 @@
+ a particular blog section anymore, you should make use of the possibility to export the posts before deleting them.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Properties of blog sections</strong></p>
+<p class="wysiwyg-text-align-justify">The table lists all the properties of blog sections.</p>
+<table class="relative-table wrapped wysiwyg-text-align-justify" style="width: 111.999%; margin-right: auto; margin-left: auto; height: 2509px;" border="1">
+<colgroup> <col style="width: 22.1052%;"> </colgroup> <colgroup> <col style="width: 77.9175%;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center">Field</th>
+<th class="wysiwyg-text-align-center">Meaning</th>
+</tr>
+<tr>
+<td>Website / Language version</td>
+<td>
+<p>Website and language version to which the blog section belongs. Cannot be changed subsequently.</p>
+</td>
+</tr>
+<tr>
+<td>Section title</td>
+<td>
+<p>Name of the section. This is displayed both in the admin area and on the panel page.</p>
+</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>
+<p>Brief explanation. This is displayed both in the admin area and on the panel page.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Allowed file types for file upload</p>
+</td>
+<td>
+<p>Optionally, you can allow the panelists to upload files. If at least one file type is marked as “allowed” in this field and a maximum upload file size &gt; 0 is defined in the next field, the entry form for posts and comments will contain a field for the file upload.</p>
+<p>Please mind:</p>
+<ul>
+<li>Only the file types named in the edit dialog are permitted.</li>
+<li>For films in “flv” format, EFS provides a player, i.e. they are embedded properly into the post. The display of other video formats depends on the operating system, browser, and the plugins of the panelists.</li>
+</ul>
+<p>As a moderator, you can upload files to a post via the admin area, regardless of these settings.</p>
+</td>
+</tr>
+<tr>
+<td colspan="1">Maximum upload file size</td>
+<td colspan="1">
+<p>If you allow the panelists to upload files, you can define the maximum file size in this field.</p>
+<ul>
+<li>The default value is 100 kb.</li>
+<li>If you enter 0 or nothing, the upload function will not be displayed.</li>
+<li>The maximum technically possible value is installation-specific; it is displayed in the dialog.</li>
+</ul>
+<p>We recommend that you allow only the upload of very small files, as all uploaded files will have to be stored and increase the backup of the installation.</p>
+<p>If you upload files via the admin area as a moderator, you will not be restricted by the specified value. The maximum technically possible value for admins is installation-specific; in case of doubt, please check with Support.</p>
+</td>
+</tr>
+<tr>
+<td colspan="1">Access control</td>
+<td colspan="1">
+<p>Select one of the following options:</p>
+<ul>
+<li>Public: All visitors of the panel can view the blog section, but only logged-in panelists may actively contribute to it.</li>
+<li>All logged-in panelists: All logged-in panelists can view the blog section, other visitors have no access.</li>
+<li>For logged-in panelists of a panel group only: If you choose this option, an additional drop-down list will be displayed where you can select a specific panel group. Only members of the selected group may view and use the blog section.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td colspan="1">Publishing mode</td>
+<td colspan="1">
+<p>You can specify whether the participants’ posts will be published immediately or only after they have been approved by a moderator. The available modes are:</p>
+<ul>
+<li>Publish immediately: All posts that are not blocked will be shown to all panelists.</li>
+<li>Publish after approval: Initially, the posts will only be shown to their respective author. Other panelists will only see them after they have been approved by the moderator.</li>
+</ul>
+<p>The default setting is “Publish immediately”.</p>
+</td>
+</tr>
+<tr>
+<td colspan="1">Panelists can change preselection</td>
+<td colspan="1">Allows the panelist to change the setting described above.</td>
+</tr>
+<tr>
+<td>Visibility of blog</td>
+<td>
+<p>The following default settings can be selected:</p>
+<ul>
+<li>Not visible for other panelists</li>
+<li>Visible to other panelists</li>
+</ul>
+<p>By ticking the corresponding checkbox, you can allow your panelists to change the default setting themselves.</p>
+</td>
+</tr>
+<tr>
+<td>Panelists can change preselection</td>
+<td>Allows the panelist to change the setting described above.</td>
+</tr>
+<tr>
+<td>From EFS 10.4: Post: Active</td>
+<td>This option activates the granting of bonus points per post.</td>
+</tr>
+<tr>
+<td>
+<p>Post: Bonus points per blog post</p>
+</td>
+<td>
+<p>Every new post will be rewarded with a specified amount of bonus points.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Post: Maximum number of

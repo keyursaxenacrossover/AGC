@@ -1,0 +1,53 @@
+erver.</p>
+<p>The value of such a record will contain the Hostname of the Target-Nameserver, e.g.</p>
+<pre><code class="language-text">example.com IN NS some.name-server.io
+another.example.com IN NS another.name-server.com</code></pre>
+<h4 id="alias-aname-cname-flattening-non-standard-virtual-record">ALIAS / ANAME / CNAME Flattening (non-standard / virtual-record)</h4>
+<p>This record combines the benefits of both a CNAME and an A- / AAAA-Record and is mainly used for, but not limited to, pointing an Apex-Domain to a CDN (Content Delivery Network) or a high available load-balanced setup in AWS.</p>
+<p>It is non-standard, meaning there is now official RFC for this (yet), and virtual, meaning that it appears in configuration only and is being presented as a A- / AAAA-Record instead when queried. Also due to it being non-standard there is no official name for it, but it is often called either “ALIAS” or “ANAME” inside the configuration-interface of a DNS-Provider that supports it.</p>
+<p>A provider implementing this kind of record, does so by involving a resolving name-server when answering a DNS-Query to get the A- / AAAA-Records of the deposited FQDN, which are then returned in kind (see image below). In practice some form of caching mechanisms are probably also used to prevent DoS-Attacks.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20426306359314" alt="image-20200302-135557.png"></p>
+<p>The value of such a record will contain only the FQDN, e.g.</p>
+<pre><code class="language-text">given:
+example.com IN A 192.168.4.2
+
+examples:
+
+example.org IN ALIAS example.com.
+some.example.org IN ANAME example.com.
+more.example.org IN Flattened-CNAME example.com.
+
+example.net IN ANAME example.com.
+another.example.net IN ALIAS example.com.
+additional.example.net IN Flattened-CNAME example.com.</code></pre>
+<p>External reference of Providers that are known to support this:</p>
+<ul>
+<li>
+<p><a href="https://dnsmadeeasy.com/services/anamerecords/">https://dnsmadeeasy.com/services/anamerecords/</a></p>
+</li>
+<li>
+<p><a href="https://www.variomedia.de/faq/Was-sind-ALIAS-Eintraege-und-wie-funktionieren-sie/article/319">https://www.variomedia.de/faq/Was-sind-ALIAS-Eintraege-und-wie-funktionieren-sie/article/319</a></p>
+</li>
+<li>
+<p><a href="https://support.dnsimple.com/articles/alias-record/">https://support.dnsimple.com/articles/alias-record/</a></p>
+</li>
+<li>
+<p><a href="https://blog.cloudflare.com/introducing-cname-flattening-rfc-compliant-cnames-at-a-domains-root/">https://blog.cloudflare.com/introducing-cname-flattening-rfc-compliant-cnames-at-a-domains-root/</a></p>
+</li>
+</ul>
+<p>Further reading:</p>
+<ul>
+<li>
+<p><a href="https://tools.ietf.org/id/draft-ietf-dnsop-aname-02.html">https://tools.ietf.org/id/draft-ietf-dnsop-aname-02.html</a></p>
+</li>
+</ul>
+<h4 id="caa">CAA</h4>
+<p>Also known as the <strong>Certification Authority Authorization</strong> DNS-Record is intended to provide insight / authorization in issuing Certificates and was specified in <a href="https://datatracker.ietf.org/doc/html/rfc8659">RFC 8659</a>.<br>The basic idea is that a Certificat Authory e.g like <a href="https://letsencrypt.org/" data-card-appearance="inline">https://letsencrypt.org/</a> which we are using in our productive cloud clusters, has to check for the existince of a CAA record first, before proceeding with issueing a certificate.</p>
+<p>Also important to note is, that a CAA Record not only applies domain it sits on, but also “further down the tree”. So if <a href="http://some.example.com">some.example.com</a> does NOT have a CAA record but <a href="http://example.com">example.com</a> has, those Records to apply to <a href="http://some.example.com">some.example.com</a> as well when trying to get a certificate issued for it.</p>
+<pre><code class="language-text">some.example.com IN CAA 0 issue "letsencrypt.org"
+example.com IN CAA 0 issuewild "letsencrypt.org"
+example.com IN CAA 0 iodef "mailto:some-domain@example.com"</code></pre>
+<h2 id="email-concepts">Email Concepts</h2>
+<p>The following is non exhaustive and meant as a pointer for the more commonly used concepts in regards to sending and the validation of receiving emails. The later ones are intended as a means limiting / counteracting the occurrence of spam and phishing-mail.</p>
+<h3 id="mx-record-sending-only">MX Record</h3>
+<p>The MX DNS Record is the most central concept when sending email. It is used by the sending mail-server to identify the destination server where an Email should

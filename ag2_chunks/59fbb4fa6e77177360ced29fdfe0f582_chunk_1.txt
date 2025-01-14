@@ -1,0 +1,92 @@
+p>Password policy per tenant</p></td>
+<td><p>Tivian Access 2.0 <strong>shall </strong>provide password policies for individual tenants.</p></td>
+</tr>
+<tr>
+<td><p></p></td>
+<td><p>MFA policy per tenant</p></td>
+<td><p>Tivian Access 2.0 <strong>shall </strong>provide MFA policies for individual tenants.</p></td>
+</tr>
+<tr>
+<td><p></p></td>
+<td><p>MFA per user group</p></td>
+<td><p>Tivian Access 2.0 <strong>should </strong>provide MFA policies for groups of users to enable differentiation within one tenant.</p></td>
+</tr>
+<tr>
+<td><p></p></td>
+<td><p>Sign on-policy per tenant</p></td>
+<td><p>Tivian Access 2.0 <strong>shall </strong>provide sign-on policies for individual tenants containing token lifetime, session lifetime and reauthentication needs.</p></td>
+</tr>
+<tr>
+<td><p></p></td>
+<td><p>Password Breach Detection <br></p></td>
+<td>
+<p>The SSO provider <strong><u>will</u> </strong>implement a password breach detection mechanism to check whether a user's password has been compromised in a known data breach. The mechanism shall perform the following actions:</p>
+<ol start="1">
+<li><p>Check the user's password hash against a database of known compromised passwords.</p></li>
+<li><p>Notify the user to reset their password if a match is found.</p></li>
+<li><p>Log the breach detection event and notify the SSO provider administrator.</p></li>
+</ol>
+</td>
+</tr>
+<tr>
+<td><p></p></td>
+<td><p>Logging for audits</p></td>
+<td>
+<p>The SSO solution <strong>should/shall </strong>provide monitoring and reporting capabilities that enable administrators to monitor usage, detect anomalies, and generate audit logs for compliance purposes.</p>
+<ac:task-list>
+<ac:task>
+<ac:task-id>2</ac:task-id>
+<ac:task-status>incomplete</ac:task-status>
+<ac:task-body><span class="placeholder-inline-tasks">Check with <ac:link><ri:user ri:account-id="61011c5c3900e6007093d32f"></ri:user></ac:link> </span></ac:task-body>
+</ac:task>
+</ac:task-list>
+</td>
+</tr>
+<tr>
+<td><p></p></td>
+<td><p>User assigned to tenant</p></td>
+<td><p>Tivian Access 2.0 <strong>shall </strong>assign users to at least one tenant to ensure that the users is connected to the correct policies and applications/clients.</p></td>
+</tr>
+<tr>
+<td><p></p></td>
+<td><p>User assigned to multiple tenants</p></td>
+<td>
+<p>Tivian Access 2.0 <strong>should </strong>provide a mechanism to assign users to multiple tenants to enable the case that a user exists for multiple customers (e.g. for Tivian internal users).</p>
+<p>If not possible other ways to give Tivian internal users to all installations have to be present.</p>
+</td>
+</tr>
+<tr>
+<td><p></p></td>
+<td><p>Domain based IdP routing</p></td>
+<td><p>Tivian Access 2.0 <strong>shall </strong>provide a functionality to forward a federated user to their respective identity provider based on the email domain of the mail address provided by the user.</p></td>
+</tr>
+<tr>
+<td><p></p></td>
+<td><p>Direct federated forwarding</p></td>
+<td><p>Tivian Access 2.0 <strong>should </strong>provide a functionality to directly forward a user to their respective identity provider if the identity provider is known before.</p></td>
+</tr>
+<tr>
+<td><p></p></td>
+<td><p>Tenant information for application</p></td>
+<td><p>Tivian Access 2.0 <strong>shall </strong>provide a unique tenant ID in all tokens provided for applications to enable the application to differentiate between tenants.</p></td>
+</tr>
+<tr>
+<td><p></p></td>
+<td><p>Basic user information for application</p></td>
+<td><p>Tivian Access 2.0 <strong>shall </strong>provide the email-adress of a user and the unique Tivian Access 2.0 identifier (e.g. a user ID) in all tokens provided for applications to enable the applications to uniquely identify a user.</p></td>
+</tr>
+<tr>
+<td><p></p></td>
+<td><p>JIT provisioning</p></td>
+<td><p>Tivian Access 2.0 <strong>shall </strong>provide automatic provisioning of users when an unknown user logs in from a trusted external identity provider and assign that user to the correct tenant.</p></td>
+</tr>
+<tr>
+<td><p></p></td>
+<td><p>Deprovisioning</p></td>
+<td><p>Tivian Access 2.0 <strong>shall </strong>delete users automatically when they are not assigned to any application/client anymore.</p></td>
+</tr>
+<tr>
+<td><p></p></td>
+<td><p>JIT update</p></td>
+<td>
+<p>Tivian Access

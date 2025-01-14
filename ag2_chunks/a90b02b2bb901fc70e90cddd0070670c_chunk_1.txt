@@ -1,0 +1,59 @@
+8jVYRH4BVlg2ku/?name=image.png">
+</li>
+<li>Add the custom URL's and <strong>Save</strong><br><img style="aspect-ratio: auto; width: 161px;" src="https://central-supportdesk.zendesk.com/attachments/token/fSN5wpqUAy2tiAgKYLWMsMk2z/?name=image.png">
+</li>
+<li>Now, we shift focus to the actual EFS instance</li>
+<li>Login using <strong>bypass URL</strong> (password in Keepass, user is <a href="mailto:noreply@tivian.com" rel="noreferrer">noreply@tivian.com</a>) </li>
+<li>Navigate to <strong>System &gt; Options &gt; Platform cockpit &gt; [root only] System configuration</strong>
+</li>
+<li>Search for this string: <code>iam_post_logout_redirect_url iam_redirect_url</code><br><img style="aspect-ratio: auto; width: 604px;" src="https://central-supportdesk.zendesk.com/attachments/token/ABlAZkN9w1znI4JkO2wffGDlS/?name=image.png">
+</li>
+<li>Adjust the URL's here as well and <strong>save</strong>
+</li>
+<li>Try to access the instance using the custom URL's (for example <a href="https://custom_url/www" rel="noopener noreferrer">https://custom_url/www</a>) and confirm that it redirects to <a href="http://access.tivian.com/" rel="noopener noreferrer">access.tivian.com</a> to confirm that the change was successful</li>
+</ol>
+</li>
+<li>
+<strong>If Tivian access is not used</strong>, simply inform the requester that the change has been done.</li>
+</ul>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sc-bds72g-7 gqjOPC">
+<div class="sc-bds72g-0 hwuzzm sc-1cbp6l0-0 hhdpUR"> </div>
+</div>
+</div>
+</div>
+</article>
+<h1 id="h_01J6W9Q0YGV7JD8TMR651W9EJH">Summary</h1>
+<p>This article provides a step-by-step guide on how to enable custom URLs for Discover XI instances and ensure that login via OKTA Single Sign-On (SSO) redirects to the custom URL upon successful login. The process involves changes in both the OKTA configuration and the EFS configuration for each instance.</p>
+<h2 id="h_01J6W9Q0YGAFRYP90HTN985SZA">FAQ</h2>
+<ol>
+<li>
+<strong>What is OKTA Single Sign-On (SSO)?</strong><br>OKTA Single Sign-On (SSO) is a user authentication service that allows a user to use one set of login credentials to access multiple applications.</li>
+<li>
+<strong>What is a custom URL?</strong><br>A custom URL is a specific web address that an organization can customize to match its brand name or to make it easier for users to remember and access.</li>
+</ol>div>
+</div>
+</div>
+</div>
+</div>
+<div class="sc-bds72g-7 gqjOPC">
+<div class="sc-bds72g-0 hwuzzm sc-1cbp6l0-0 hhdpUR"> </div>
+</div>
+</div>
+</div>
+</article>
+<h1 id="h_01J6W9Q0YGV7JD8TMR651W9EJH">Summary</h1>
+<p>This article provides a step-by-step guide on how to enable custom URLs for Discover XI instances and ensure that login via OKTA Single Sign-On (SSO) redirects to the custom URL upon successful login. The process involves changes in both the OKTA configuration and the EFS configuration for each instance.</p>
+<h2 id="h_01J6W9Q0YGAFRYP90HTN985SZA">FAQ</h2>
+<ol>
+<li>
+<strong>What is OKTA Single Sign-On (SSO)?</strong><br>OKTA Single Sign-On (SSO) is a user authentication service that allows a user to use one set of login credentials to access multiple applications.</li>
+<li>
+<strong>What is a custom URL?</strong><br>A custom URL is a specific web address that an organization can customize to match its brand name or to make it easier for users to remember and access.</li>
+</ol>

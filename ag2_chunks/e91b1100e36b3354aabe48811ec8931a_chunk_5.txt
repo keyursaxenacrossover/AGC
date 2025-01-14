@@ -1,0 +1,44 @@
+p>
+<h2 id="panelist-ratings" class="wysiwyg-text-align-justify"><strong>Panelist Ratings</strong></h2>
+<p class="wysiwyg-text-align-justify">A typical feature of community sites is the rating of other participants. The participants show sympathy and praise for each other by awarding points or other units of some social currency. EFS Panel allows you to implement such participant ratings easily and without additional programming efforts:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>A new rating function allows panelists to rate other panelists.</li>
+<li>The social currency of the EFS Panel is internally referred to as “points”. When using this feature on your website, you may use a completely different name, of course. Unlike bonus points (the currency of EFS Panel’s incentive system) these “social” points only have virtual value.</li>
+<li>You define how many points a panelist may award to others. Dedicated master data are used to log how many points a panelist has left to award, how many he has received from others, and how often he has been awarded any points.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">You can use panelist rating in a variety of scenarios:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>The participants can show sympathy and praise for each other.</li>
+<li>In self-administered communities, the mutual rating of participants can be used as an indirect means for steering group behavior and disciplining participants.</li>
+<li>A moderator running a community could reserve the right to award points, e.g. to honor particularly active panelists.</li>
+<li>You can allocate a fixed number of points to every new panelist, which they are free to award to other panelists. Or you can allocate points only to active or very experienced panelists.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify"><strong>A panelist awards points to another panelist:</strong></p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015312019346" alt="image2024-1-15_9-31-9.png"></p>
+<p class="wysiwyg-text-align-justify"><strong>Work steps</strong></p>
+<p class="wysiwyg-text-align-justify">To use the panelist rating function, please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Create master data for logging the awarding of points</li>
+<li>Integrate the form for the awarding of points into the website</li>
+</ul>
+<h3 id="creating-master-data-for-logging-the-awarding-of-points" class="wysiwyg-text-align-justify"><strong>Creating Master Data for Logging the Awarding of Points</strong></h3>
+<p class="wysiwyg-text-align-justify">Three master data variables of the integer type are required for logging the results of the awarding process:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>A master data variable containing the number of points left for a panelist to award. In the standard panel, this variable is called m_starcredit.</li>
+<li>A master data variable containing the number of points a panelist has received from other panelists. In the standard panel, this variable is called m_starsreceived.</li>
+<li>A master data variable containing the number of awards to a panelist, i.e. every time the panelist receives points the value of this variable is increased by 1. In the standard panel, this variable is called m_starcount.</li>
+</ul>
+<h3 id="integrating-the-form-for-the-awarding-of-points-into-the-website" class="wysiwyg-text-align-justify"><strong>Integrating the Form for the Awarding of Points into the Website</strong></h3>
+<p class="wysiwyg-text-align-justify">To set up the form for the awarding of points, please proceed as follows:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>On the desired page, create a page module of the “Panelist ratings” type.</li>
+<li>Select the “func_panelist_rating” module template.</li>
+<li>Configure the setting options as required. Table 19.33 provides an overview. Make sure that the master data are correctly linked.</li>
+</ol>
+<p class="auto-cursor-target wysiwyg-text-align-justify"> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863" class="wysiwyg-text-align-justify">FAQ</h1>
+<h3 id="faq_1" class="wysiwyg-text-align-justify">What are the key features of Community Panels in the EFS Panel?</h3>
+<p class="wysiwyg-text-align-justify">Community Panels in EFS Panel offer features such as panelist profiles, panelist search, profile visibility settings, picture uploads, active panelist display, and panelist ratings. These features enhance community engagement and allow for better interaction among panelists.</p>
+<h3 id="faq_2" class="wysiwyg-text-align-justify">How can I ensure privacy when setting up panelist profiles?</h3>
+<p class="wysiwyg-text-align-justify">To ensure privacy, you can configure which personal data are visible, allow panelists to control their own data visibility, and set

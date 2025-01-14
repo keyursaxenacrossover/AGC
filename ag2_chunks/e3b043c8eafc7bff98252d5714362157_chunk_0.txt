@@ -1,0 +1,15 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1010237540">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1010237540</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">Environments</a></li>
+<ul>
+<li><a href="#header-3">Development / POC</a></li>
+<ul>
+<li><a href="#header-5">Current Production</a></li>
+<li><a href="#header-6">Deprecated Tivian Account</a></li>
+</ul>
+</ul>
+</ul>
+</ul><h1 id="header-1">Environments</h1><ac:parameter ac:name="minLevel">3</ac:parameter><ac:parameter ac:name="maxLevel">7</ac:parameter><h2 id="header-3">Development / POC</h2><p><strong>Description:</strong> Could be broken at any point in time, used for testing, used for development, <u>Dev and QA are owners</u></p><p><strong>Admin Console: </strong><a href="https://questback-poc-admin.oktapreview.com"><strong>https://questback-poc-admin.oktapreview.com</strong></a></p><p><strong>User Login: </strong><a href="https://questback-poc.oktapreview.com"><strong>https://questback-poc.oktapreview.com</strong></a><strong> (Okta Domain)</strong></p><p><strong>User Login : </strong><a href="https://okta.testback.com/"><strong>https://okta.testback.com/</strong></a><strong>  (Custom Domain)</strong></p><p></p><p><strong>Test Login with Redirect to localhost (copy paste, customize if needed):</strong></p><p>https://okta.testback.com/oauth2/ausog0bep2mtm7gKd0h7/v1/authorize?client_id=0oanh7c23i60WxQLx0h7&amp;nonce=AYx1j79hkGTnJ7FlOIMqh2teti9ee0i9sCwePnJuLqR55QxUqHw1yieGn30taqfY&amp;redirect_uri=http%3A%2F%2Flocalhost%2Fiam%2Fadmin%2Fauth%2Flogin&amp;response_mode=fragment&amp;response_type=code&amp;state=p7bKuF4UcgnzQzaKToq2NTiUNopca89uMWPzTROVJbnNluyC5ekgfTNAZuYZ5GhH&amp;scope=openid%20email%20profile  </p><p></p><h3 id="header-5">Current Production</h3><p><strong>Description:</strong> User facing envrinoment. Production clients are on it. <u>2nd level support (</u><ac:link><ri:user ri:userkey="8a7f808a79aa108a0179acbaeabb00e3"></ri:user></ac:link><u> ) is owner</u> of this environment</p><p><strong>Admin Console: </strong><a href="https://questback-admin.okta.com"><strong>https://questback-admin.okta.com</strong></a></p><p><strong>User Login: </strong><a href="https://questback.okta.com"><strong>https://questback.okta.com</strong></a><strong> (Okta Domain)</strong></p><p><strong>User Login: </strong><a href="https://access.questback.com"><strong>https://access.questback.com</strong></a><strong> (Custom Domain)</strong></p><p></p><h3 id="header-6">Deprecated Tivian Account</h3><p><strong>Description:</strong> A first attempt to setup a tivian.com production environment. This was discontinued by Kamil and Thomas B. The <u>owners are Dev and QA</u> for now. This account can just be left as is as long as nothing happens on that front.</p><p><strong>Admin Console: </strong><a href="https://tivian-admin.okta.com/"><strong>https://tivian-admin.okta.com/</strong></a></p><p></p>

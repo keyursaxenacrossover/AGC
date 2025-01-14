@@ -1,0 +1,51 @@
+regeneratePanelistsPasswordHashes [Warning: regenerate panelists password hashes live - without tmp table]:
+  - Query failed: SELECT uid, BASE64DECODE(u_ppasswd) AS plain_password FROM panelists. Reason: execute command denied to user 'opst_nh7146'@'%' for routine 'opst_nh7146.BASE64DECODE'
+  - Task reported it failed on line 842 in class panel_healself_jobs_902 </code></pre></li></ul>
+</li>
+<li><p>case or contact system administration to grant the execute priviledge and the storted routine:</p></li>
+<li>
+<p>1.</p>
+<pre><code class="language-text">CREATE FUNCTION BASE64DECODE (sourceString varchar(200)) RETURNS varchar(200) DETERMINISTIC RETURN FROM_BASE64(sourceString);</code></pre>
+</li>
+<li>
+<p>2.</p>
+<pre><code class="language-text">GRANT EXECUTE ON PROCEDURE 'opst_nh7146.BASE64DECODE' TO 'opst_nh7146'@'%'</code></pre>
+</li>
+<li>
+<p>afterwards check with “SHOW GRANTS” if the priviledge is listed:</p>
+<ul><li><pre><code class="language-text">MariaDB [opst_nh7146]&gt; show grants;
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Grants for opst_nh7146@%                                                                                                                                               |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| GRANT CREATE VIEW, SHOW VIEW, CREATE ROUTINE, ALTER ROUTINE, TRIGGER ON *.* TO 'opst_nh7146'@'%' IDENTIFIED BY PASSWORD '*16F21254F22125A40AEB6DE09E18313DADA1993F'    |
+| GRANT SELECT ON `mysql`.* TO 'opst_nh7146'@'%'                                                                                                                         |
+| GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, INDEX, ALTER, CREATE TEMPORARY TABLES, LOCK TABLES, CREATE VIEW, SHOW VIEW ON `opst_nh7146`.* TO 'opst_nh7146'@'%' |
+| GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, INDEX, ALTER, CREATE TEMPORARY TABLES, LOCK TABLES, CREATE VIEW, SHOW VIEW ON `tbl_nh7146`.* TO 'opst_nh7146'@'%'  |
+| GRANT EXECUTE ON FUNCTION `opst_nh7146`.`base64decode` TO 'opst_nh7146'@'%'                                                                                            |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+5 rows in set (0.00 sec)</code></pre></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li></ul><h2 id="header-3">Deprecated</h2><p> Diese Anleitung gilt nur für Version 6.0, 5.3 und 5.2</p><ul>
+<li><p>Folgende Punkte müssen beachtet werden, wenn man ein Panel 5.2 aufsetzen möchte. <strong>Die Reihenfolge ist entscheidend:</strong></p></li>
+<li><p>EFS Survey entsprechend <a href="https://it.globalpark.de/twiki/bin/view/Support/SupportEFSSurvey">SupportEFSSurvey</a> anlegen</p></li>
+<li><p>cvs co -r SECHS-0 panelwebsite</p></li>
+<li><p>cvs co -r SECHS-0 modules/panel</p></li>
+<li><p>vi conf/config.inc.php3 <br>$__modules=array("panel"); <br>$__basepath_panel = $__base_all_path."panelwebsite/"; <br>$__installation_type="panel";</p></li>
+<li><p>mysql -u gpadmin -A opst_DATENBANKNAME &lt; www/include/healself/lang.sql</p></li>
+<li><p><strong>EINLOGGEN</strong> im www-Bereich</p></li>
+<li>
+<pre><code class="language-text">php panelwebsite/install/install.php install </code></pre>
+<p> (Dies entpackt die tar.gz-Dateien und dumpt die Datenbank ein)</p>
+</li>
+</ul><p><strong>Achtung! Dieser Vorgang ist nur zur initalen Installation </strong><br><strong>durchzuführen. Bei einem laufenden Panel gehen Daten (Website, </strong><br><strong>Stammdaten, usw.) verloren!</strong></p><p></p><h3 id="header-5">Systemadministratorische Todos</h3><ul>
+<li><p>in GSA1: chown nobody:globalpark -R panelwebsite/s panelwebsite/__templates/* panelwebsite/__templates_c/* panelwebsite/images</p></li>
+<li><p>DOCUMENT ROOT von Sysadmins auf panelwebsite setzen lassen</p></li>
+<li><p>folgende RewriteRules in Virtual Host Config vor der Reporting RewriteRule hinzufügen:</p></li>
+</ul><pre><code class="language-text">        RewriteCond  %{REQUEST_URI}    ^/((panelwebsite/)?[^/]+\.php3?|\?|$)
+        RewriteRule ^/((panelwebsite/)?([^/]+)\.php3?|\?|$)   /$2index.php?node=$3 [QSA]
+</code></pre><p> ab Version 6.0 kommen folgende Zeilen hinzu: </p><pre><code class="language-text">        RewriteCond  %{REQUEST_URI}    ^

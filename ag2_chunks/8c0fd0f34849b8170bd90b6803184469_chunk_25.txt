@@ -1,0 +1,22 @@
+>
+<li><p>Exasol Port</p></li>
+</ul><h3 id="header-89">(MySight new) Open questions regarding Mysight v2</h3><p> Please feel free to add yours</p><p></p><h4 id="header-91">Team-Rechte für MySight-Funktionen</h4><p><strong>Es gibt die folgende ACL-Rechte:</strong></p><ul>
+<li><p><strong>mysight_self_siteadmin</strong> - Mit Schreibrecht erhalten Sie die Möglichkeit Ihren Tableau User-Account zu verwalten. Beim Anlegen eines neuen Tableau User-Account wird zudem die Rolle "Site-Administrator" zugewiesen (Hinweis: Dieses Recht ist höherwertig als "mysight_self_sitepublisher").</p></li>
+<li><p><strong>mysight_self_sitepublisher</strong> - Mit Schreibrecht erhalten Sie die Möglichkeit Ihren Tableau User-Account zu verwalten. Beim Anlegen eines neuen Tableau User-Account wird zudem die Rolle "Publisher" zugewiesen.</p></li>
+</ul><p><strong>Wie gehen wir hier nun per Default vor?</strong></p><ul>
+<li><p><strong>Erstellen wir im EFS nur ein "mysight"-Team und vergeben wir beide Rechte?</strong> (Das macht eigentlich wenig Sinn, ein "siteadmin" ist mächtiger als der "publisher", man braucht also nicht das "sitepublisher"-Recht in diesem Team zu vergeben)</p></li>
+<li><p><strong>Erstellen wir im EFS zwei Teams mit unterschiedlichen Rechten, z.B. "mysight_siteadmin"- und "mysight_sitepublisher"-Team?</strong></p></li>
+</ul><p><strong>Zur Info:</strong></p><ul>
+<li><p>Mit dem Recht "mysight_self_siteadmin" hat ein Benutzer die Möglichkeit in Tableau zu publizieren und anschließend Dashboards zu bearbeiten</p></li>
+<li><p>Mit dem Recht "mysight_self_sitepublisher" hat ein Benutzer die Möglichkeit in Tableau zu publizieren, er kann selber aber keine Dashboards bearbeiten</p></li>
+</ul><p> (Wenn das tatsächlich so gewollt ist, sollten wir für die Kunden doch Teams mit unterschiedlichen Rechten bereitstellen. Zur Zeit erstellen wir per default ein Team "mysight" mit dem "mysight_self_sitepublisher"-Recht. Damit kann ein Kunde definitiv nicht viel anfangen.)</p><p></p><h4 id="header-92">Site-Administratoren und Tableau-Rechte</h4><ul>
+<li><p><strong>Über EFS MySight v2 auf Tableau erstellte "Site-Administratoren" können direkt nach anlegen der neuen Site auf Tableau nicht nur Dashboards publizieren, sie haben zusätzlich das Recht andere Benutzer zu erstellen. Ist das so gewollt?</strong> (Genaur heißt hier dass jeder der durch seinen EFS Benutzer einen Tableau Benutzer erstellt hat, kann anschließend selbst und direkt im Tableau mehrere Benutzer anlegen.)</p></li>
+<li><p>Das scheint die Default Einstellung zu sein, wenn neue Sites angelegt werden (manuell oder über die API). Es muss so eingestellt werden, dass nur Tableau Server Administratoren Benutzer anlegen dürfen</p></li>
+</ul><p></p><h3 id="header-94">(MySight new) - Dashboard is not shown in Portals</h3><p> A MySight projekt and a corresponding dashboard have been created. The MySight project is embedded in a portal. When viewing the portal als a participant, the dashboard is not shown. When opening the debug console in the browser a link returnedan error 404. When opening this link the following message is shown:</p><pre><code class="language-text">Ressource nicht gefunden 
+Überprüfen Sie die URL, und wiederholen Sie den Vorgang. 
+</code></pre><p> The reason for this issue are missing view rights. Check the rights for project, workbook, view and data source. The rights should be as follows:</p><ul>
+<li><p><strong>Project:</strong> view right for panel group defined in MySight project, no rights for group "All Users"</p></li>
+<li><p><strong>Workbook:</strong> view right for group "All Users"</p></li>
+<li><p><strong>View:</strong> view right for group "All Users"</p></li>
+<li><p><strong>Data Source:</strong> view right for group "All Users"</p></li>
+</ul><h3 id="header-95">(MySight new) Republish MySight projects on cloned installations</h3><p> If an EFS installation is cloned, the MySight projects and their status will be cloned as well but the data in the intermediate and exasol database will not be cloned. Also no data will be cloned on tableau server.<br>The cloned installation will get its own empty intermediate and exasol databases and an empty site on tableau server.<br>To republish an existing mysight project so that data is available in exasol and a project is created on the site on tableau server some steps have to be taken in the backend.<br>It might be quicker and easier to just copy the existing mysight projects, to publish

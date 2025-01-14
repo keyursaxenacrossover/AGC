@@ -1,0 +1,32 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3753377810">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3753377810</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">Business Context</a></li>
+<ul>
+<li><a href="#header-3">Authentication</a></li>
+<ul>
+<li><a href="#header-5">Tivian Admin</a></li>
+<li><a href="#header-6">Employee</a></li>
+<li><a href="#header-7">Security Admin</a></li>
+<li><a href="#header-8">Data - Users (internal and external)</a></li>
+<li><a href="#header-9">Data - Tenants</a></li>
+<li><a href="#header-10">Tivian Applications</a></li>
+<li><a href="#header-11">External Identity Provider</a></li>
+</ul>
+<li><a href="#header-13">Technical Context</a></li>
+<ul>
+<li><a href="#header-15">Users</a></li>
+<li><a href="#header-16">External Identity Provider</a></li>
+<li><a href="#header-17">EFS + Portals + Panelwebsite + MySight</a></li>
+<li><a href="#header-18">Analytics (the name of the system is not entirely clear)</a></li>
+<li><a href="#header-19">Datavoyager</a></li>
+<li><a href="#header-20">Tableau</a></li>
+<li><a href="#header-21">GSCC (CXI)</a></li>
+<li><a href="#header-22">Email</a></li>
+</ul>
+</ul>
+</ul>
+</ul><ac:parameter ac:name="minLevel">1</ac:parameter><ac:parameter ac:name="maxLevel">7</ac:parameter><p></p><h1 id="header-1">Business Context</h1><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20717216208530" alt="Architecture Diagrams - System Context - Business Context(1).png"><p></p><h2 id="header-3">Authentication</h2><p>The system that should be build. It is used for authenticating users for Tivian Applications.</p><p></p><h3 id="header-5">Tivian Admin</h3><p>Tivian employees that manage and configure the authentication system. The have access to the administrative UI and configure the respective authentication services.</p><p></p><h3 id="header-6">Employee</h3><p>Users that authenticate against the system to get access to a Tivian Application. These users could have different intents.</p><p>It is still unclear which users will be part of this solution and how many of those users exist.</p><p></p><h3 id="header-7">Security Admin</h3><p>External users that are interested in configuring security measures like Identity Provider connections and password policies. Those users might also be just communication partners with Tivian Admin as a proxy.</p><p></p><h3 id="header-8">Data - Users (internal and external)</h3><p>User information is passed to the authentication system from other internal systems.</p><p>Later on also external systems might bring their users. This has to be clarified and is not part of the first architecture.</p><p></p><h3 id="header-9">Data - Tenants</h3><p>The authentication system needs some information about tenants that come from another internal system to distinguish between tenant's data.</p><p></p><h3 id="header-10">Tivian Applications</h3><p>Several different applications in the Tivian software portfolio. Those are the authentication targets for the Authentication system.</p><p></p><h3 id="header-11">External Identity Provider</h3><p>External Identity providers could be connected to the Authentication system to provide SSO accross different systems e.g. customer systems.</p><p></p><h2 id="header-13">Technical Context</h2><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20717190756370" alt="Architecture Diagrams - System Context - Technical Context(2).png"><ac:rich-text-body><p><strong>Integration</strong></p>
+<p>The integration in other systems is not part of this architecture. This will be handled in the respective documentation of the integrated system. Just the interface to integrate are integral part of this architecture.</p></ac:rich-text-body><p></p><h3 id="header-15">Users</h3><p>Users that want to authenticate at the system. They will use a Browser to access the system that is using the OIDC protocoll.</p><p></p><h3 id="header-16">External Identity Provider</h3><p>External identity providers that could be connected via OIDC oder SAML2 to provide SSO capabilities with external systems.</p><p></p><h3 id="header-17">EFS + Portals + Panelwebsite + MySight</h3><p>The monolithic EFS system also containing

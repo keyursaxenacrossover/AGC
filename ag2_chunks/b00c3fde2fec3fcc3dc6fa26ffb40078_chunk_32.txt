@@ -1,0 +1,29 @@
+strong></h3>
+<p class="wysiwyg-text-align-justify">In the <strong>JavaScript</strong> menu, you define the logic of your question type.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>If you do not need any JavaScript behaviour you can remove the example code and leave the file empty.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">At the beginning of the template file, there is some code that makes the question type’s settings available in JavaScript. You can find these settings in the options object of the JavaScript plugin. For example, the answer options (items) are stored in an array called items. Likewise, the scale options (<em>r_cats</em>) are stored in an array called <em>rcats</em>.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015414455058" alt="image2019-3-12_15-46-2.png"></p>
+<p class="wysiwyg-text-align-justify">You will also find the question type’s options (defined in the <strong>Settings</strong> area) inside this. options object. I.e. if you have an option named “orientation” in the <strong>options group</strong> <em>optionsGroup1</em>, you can access it like this:</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015444624786" alt="image2019-3-12_15-47-13.png"></p>
+<p class="wysiwyg-text-align-justify">You should start your code inside the plugin’s main function, but you can use the prepareOptions function to parse and cast the given options beforehand or modify the type if you need to.</p>
+<h3 id="settings" class="wysiwyg-text-align-justify"><strong>Settings</strong></h3>
+<p class="wysiwyg-text-align-justify">In the <strong>Settings</strong> menu, you define the question type’s options and features. It is separated into five sections. Each section is responsible for a different kind of characteristics.</p>
+<p class="wysiwyg-text-align-justify"><strong>Question type options</strong></p>
+<p class="wysiwyg-text-align-justify">The options you define in the <strong>question type options</strong> section will show up in the question editor and allow the creator of the survey to configure instances of your question type. All <strong>Options</strong> belong to an <strong>options group</strong>, so you have to create an <strong>options group</strong> by clicking on the “Add options group” button.</p>
+<p class="wysiwyg-text-align-justify">Enter a name for the <strong>options group</strong> by which it can be referenced in the template and JavaScript files. You can also set its label in your current language and other languages by clicking on the globe icon next to the label field. Click on the<strong> Add option</strong> button to open a menu with possible option types.</p>
+<p class="wysiwyg-text-align-justify">The option has been given the internal name “orientation”, a label, and a help text that will be shown in the question editor and a default value of “1”. The default value corresponds to the code of one of the options, defined in the lower area. When you save the changes and create a question of your question type in a survey you will see the<strong> options group</strong> and the “orientation”-option below the general question configuration. The help text is shown in a tooltip when you hover over the info icon.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>You can have as many <strong>options</strong> and <strong>options groups</strong> as you want. For example, you could separate your options into an <strong>options group</strong> for functional options and one for layout-related options.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">To access the defined options in the template you can use the <em>question_info</em> variable. You can find your <strong>options groups</strong> in the <em>question_info.settings.questionTypeOptions</em> object. For the “orientation”-option it looks like this:</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015444625554" alt="image2019-3-12_15-57-58.png"></p>
+<p class="wysiwyg-text-align-justify"><strong>Answer options</strong></p>
+<p class="wysiwyg-text-align-justify">In the<strong> Answer Options</strong> section, you define the initially available answer options for your question type. In matrix type question types every answer option stands for a dimension. In multiple-choice question types, they represent the checkboxes and in single-choice question types, you will not have this section at all, as these have exactly one answer option.</p>
+<p class="wysiwyg-text-align-justify"><strong>Scale elements</strong></p>
+<p class="wysiwyg-text-align-justify">In the <strong>Scale Element</strong>s section, you set the

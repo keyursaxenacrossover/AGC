@@ -1,0 +1,47 @@
+ words will not be hyphenated. If the width limit of 72 characters is exceeded with the last word in a line, the whole word will be moved to the next line.</p>
+<p class="wysiwyg-text-align-justify">Uninterrupted character strings, such as very long web addresses (URLs), are not subject to automatic line breaks.</p>
+<p class="wysiwyg-text-align-justify">It may occur that the recipient system inserts a line break into a very long line. Any existing text link with access code (#code_complete#) may then be rendered unusable. If you cannot sufficiently shorten the project’s URL yourself due to a long domain name, you should have a domain alias for your installation set up.</p>
+<p class="wysiwyg-text-align-justify"><strong>Incorporating images in HTML emails</strong></p>
+<p class="wysiwyg-text-align-justify">You can insert both attached images and external images into the text of an HTML mail.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>To insert attached images, open the <strong>Insert image</strong> dialog of the WYSIWYG editor and select the desired images from the “Image list”.</p>
+</li>
+<li>
+<p>When editing the source code, you can integrate the attached images using a wildcard #file name#. Example: The name of the appended image is image.jpg, and the wildcard is therefore #image.jpg#. You can insert the image with &lt;img src=#image.jpg#&gt;.</p>
+</li>
+<li>
+<p>If you want to use external images, enter the URL in the <strong>Insert Image</strong> dialog. When editing source code, enter the URL into the src tag.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Do not use hard-coded links to embed resources, such as those located in the media library (hard-coded links are links that display the current file path, e.g. http://<a href="http://www.yourdomain.com/uc/1234/images/image.jpg">www.yourdomain.com/uc/1234/images/image.jpg</a>). First of all, hard-coded links are a typical characteristic of spam mails: They allow spammers to check whether or not their spam emails were read. Your invitation will therefore most certainly be filtered out as spam. Secondly, the links would no longer function if the project were to be moved to a different installation, for example, or if the media library in which the mail template resources are stored were to be cleaned up or deleted. What’s more, linked images would not be available for reading in offline mode.</p>
+<p class="wysiwyg-text-align-justify">If, however, you attach the required resources to the mail or mail template and link them with the help of wildcards, as described above, your mail will still function after moving it to a different installation or after a media library clean-up.</p>
+<p class="wysiwyg-text-align-justify">Please also note that attachments increase the size of emails: The bigger the attachment and the larger the number of recipients, the more strain this places on the server. We therefore recommend using this function with care and using small sized files.</p>
+<p class="wysiwyg-text-align-justify"><strong>Adding attachments</strong></p>
+<p class="wysiwyg-text-align-justify">It is possible to send e-mails with attachments.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The maximum size for the attachments is 1 MB.</p>
+</li>
+<li>
+<p>You can use all the file types that are permitted for the media library.</p>
+</li>
+<li>
+<p>The XML-based formats of <em>Microsoft Office</em> 2007 / 2010 (docx, pptx, xlsx, etc.) can be uploaded into the media library and used as mail attachments.</p>
+</li>
+<li>
+<p>If you intend to attach not only “normal” attachments (e.g. pdf files), but one or several of the incorporated images described above, to an e-mail, take care to upload the “normal” attachments first. Otherwise, mail recipients using <em>Outlook</em> won’t be able to open the attachments.</p>
+</li>
+<li>
+<p>The attachments can be saved as an attribute to mail templates.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">To add an attachment to an e-mail or mail template, select the desired file in the “Add an attachment” field. Once confirmed with the <strong>Attach File</strong> button, the attachment will be uploaded and attached to the e-mail. You can remove an unwanted attachment by clicking on the respective <strong>Delete</strong> icon.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The functionality is protected by the “mail_attachments” right, with read rights required to use it.</p>
+</li>
+</ul>
+<h3 id="additional-functions-for-personalizing-e-mail-texts" class="wysiwyg-text-align-justify"><strong>Additional functions for personalizing e-mail texts</strong></h3>
+<p class="wysiwyg-text-align-justify">You can use wildcards in your e-mail to personalize the text. The following wildcards are used only when sending mail. They can be used, for example, to insert system data, to send access codes,, and to output various panel data.</p>
+<p class="wysiwyg-text-align-justify"><strong>Limits</strong

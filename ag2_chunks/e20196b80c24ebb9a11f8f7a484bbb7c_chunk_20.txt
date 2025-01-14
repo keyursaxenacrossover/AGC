@@ -1,0 +1,56 @@
+ the normal project run-through is that the data collected are not saved to the database but to the so-called session table. This is a database table that will be cleared when you log out. This prevents contamination of the results tables with test data.</p>
+<p class="wysiwyg-text-align-justify">Thus, the preview does not support all of the features available for use in the productive mode.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The progress bar is not calculated accurately.</p>
+</li>
+<li>
+<p>For triggers, you can decide yourself whether they should be executed in the preview.</p>
+</li>
+<li>
+<p>The dynamic output of content via wildcards cannot be tested in preview mode, as data generated in the preview cannot be allocated to a participant account and dataset</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">To keep you informed on whether you are working in preview mode or productive mode, the preview shows a corresponding notice in the upper right corner.</p>
+<p class="wysiwyg-text-align-justify">Before starting your project, be sure to also test it via the “normal” project URL, which is located in the project information dialog.</p>
+<h3 id="viewing-runtime-error-messages-in-preview" class="wysiwyg-text-align-justify">Viewing Runtime Error Messages in Preview</h3>
+<p class="wysiwyg-text-align-justify">EFS features a runtime check for checking the conditions of LUA filters and quotas in the course of the survey. If an error occurs while testing in preview mode, an icon will be displayed in the preview toolbar. Move your mouse pointer over this icon to display the error message.</p>
+<h3 id="jumping-to-other-pages" class="wysiwyg-text-align-justify">Jumping to Other Pages</h3>
+<p class="wysiwyg-text-align-justify">Instead of going through the whole questionnaire in the preview, you can navigate directly to individual pages. For this purpose, a page selection list can be displayed in the preview toolbar, from which you can choose the desired target page. The change is performed automatically.</p>
+<p class="wysiwyg-text-align-justify">This function is activated respectively deactivated via the “Page selection in the survey” drop-down list (until EFS 10.4: Allow direct jumping to any page of the survey) in the <strong>Project properties </strong>menu on the tab <strong>Internal organization</strong>. Selecting the appropriate options</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>disabled</p>
+</li>
+<li>
+<p>display for all participants</p>
+</li>
+<li>
+<p>display for testers only</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">you can define which target groups should be able to use it and where.</p>
+<h2 id="search-function" class="wysiwyg-text-align-justify">Search function</h2>
+<p class="wysiwyg-text-align-justify">Locating a specific page, question, or variable in a complex questionnaire without searching the codebook can be a tedious and time-consuming task. If you frequently face such a task, combine the following features:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>A search field is displayed on the right hand just above the questionnaire view, allowing you to search the contents of the questionnaire view.</p>
+</li>
+<li>
+<p>Click on the <strong>Show questions </strong>and <strong>Show all </strong>icons.</p>
+</li>
+<li>
+<p>When you now enter a question or variable as the search term, the page and question containing that variable will be identified.</p>
+</li>
+<li>
+<p>The “ID” column lists the unique identifiers of pages (“pgid”) and question containers (“coid”). The identifiers are covered by the search feature, too.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<h1 id="h_01HGKSMPRUJ5YJXQX3QJXZ8YDX4" class="wysiwyg-text-align-justify">FAQ</h1>
+<h3 id="h_01HGKSMPRUMYJXQX3QJXZ8YDX5" class="wysiwyg-text-align-justify">What is the maximum number of questions on a standard page?</h3>
+<p class="wysiwyg-text-align-justify">A standard page can contain up to 255 questions, but it's recommended to use 50 ordinary EFS question types or 25 complex question types for optimal performance.</p>
+<h3 id="h_01HGKSMPRUR5YJXQX3QJXZ8YDX6" class="wysiwyg-text-align-justify">How can I import pages from one project to another?</h3>
+<p class="wysiwyg-text-align-justify">You can use the page import feature in the Questionnaire editor to copy pages from one project to another. This is particularly useful for reusing entire sections of a questionnaire.</p>
+<h3 id="h_01HGKSMPRUU5YJXQX3QJXZ8YDX7" class="wysiwyg-text-align-justify">What are the limitations of the preview mode?</h3>
+<p class="wysiwyg-text-align-justify">Preview mode does not support all features available in productive mode. The progress bar is not calculated

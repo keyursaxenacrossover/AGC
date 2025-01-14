@@ -1,0 +1,105 @@
+><a href="#header-63">Forgot Account?</a></li>
+<li><a href="#header-64">Multifactor Authentication</a></li>
+<li><a href="#header-65">Logout</a></li>
+<li><a href="#header-66">Registration</a></li>
+<li><a href="#header-67">To be dicussed / evaluated</a></li>
+</ul>
+</ul>
+</ul><h1 id="header-1">Precondition: </h1><ul>
+<li><p>SSO is always active, ie no module is needed to activate or disable it</p></li>
+<li><p>Password will not be set in application anymore, but in SSO Provider</p></li>
+</ul><p></p><h2 id="header-3">Workflows that should be enabled</h2><table data-layout="wide" ac:local-id="0f8f5972-58fb-4753-9079-6c56d9363c32">
+<colgroup>
+<col style="width: 97.0px;">
+<col style="width: 230.0px;">
+<col style="width: 633.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p><strong>ID</strong></p></th>
+<th><p><strong>Title</strong></p></th>
+<th><p><strong>Workflow</strong></p></th>
+</tr>
+<tr>
+<td><p><strong>W1</strong></p></td>
+<td><h2 id="header-4">Create </h2></td>
+<td><ul>
+<li>
+<p>User is created in application with the following properties</p>
+<ul>
+<li><p>Name</p></li>
+<li><p>First name</p></li>
+<li><p>E-mail</p></li>
+<li><p>(Accout name?)</p></li>
+</ul>
+</li>
+<li><p>Sync user data and application url to SSO Provider and create new user</p></li>
+<li>
+<p><strong>Activation</strong> mail to new user</p>
+<ul><li>
+<p>Login link of the application (installation)</p>
+<ul>
+<li><p>user clicks on the link and is forwarded to a page where he needs to enter a password</p></li>
+<li><p>after confirming the password he is logged in the application</p></li>
+</ul>
+</li></ul>
+</li>
+<li>
+<p><strong>Same</strong> user is created in an additional application</p>
+<ul><li><p>Sync user data and application url to SSO Provider </p></li></ul>
+</li>
+<li><p>User will see Login mask only once session is expired</p></li>
+</ul></td>
+</tr>
+<tr>
+<td><p><strong>W2A</strong></p></td>
+<td><h2 id="header-5">Edit (Sync process)</h2></td>
+<td>
+<h3 id="header-7">Change in application (Sync Upwards)</h3>
+<ul>
+<li>
+<p>User data is changed in one application</p>
+<ul>
+<li><p>New Name</p></li>
+<li><p>New First name</p></li>
+<li><p>New E-mail</p></li>
+<li><p>(Accout name?)</p></li>
+</ul>
+</li>
+<li><p>Sync changed user data to SSO Provider</p></li>
+<li><p>In case e-mail is changed, the user gets a mail from SSO provider where he needs to confirm the change by clicking on a validation link</p></li>
+<li>
+<p>After confirming when user logs in a second application SSO provider syncs new data to application</p>
+<ul><li><p>if user has not logged in yet, old data is being used</p></li></ul>
+</li>
+<li><p>In case Name / First name is changed, no mail is sent by SSO provider at all</p></li>
+</ul>
+<p></p>
+<h3 id="header-8">Change in SSO provider (Sync Downwards)</h3>
+<ul>
+<li>
+<p>User data is changed centrally in SSO provider</p>
+<ul>
+<li><p>New Name</p></li>
+<li><p>New First name</p></li>
+<li><p>New E-mail</p></li>
+<li><p>(Accout name?)</p></li>
+</ul>
+</li>
+<li><p>As soon as user <strong>logs in</strong> one of the application SSO provider syncs user’s data to application</p></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><p><strong>W2B</strong></p></td>
+<td><h2 id="header-10">Alternative: Immediate Sync</h2></td>
+<td><p>Once user data are changed in one application, these are synced to SSO provider<strong> and all</strong> applications user has access to</p></td>
+</tr>
+<tr>
+<td><p><strong>W3</strong></p></td>
+<td><h2 id="header-11">Deletion - Deletion in application</h2></td>
+<td><ul>
+<li><p>In case a user is existing in several applications and he gets deleted in <strong>one</strong> of them then he will be removed from the application on SSO provider side</p></li>
+<li><p>User can still use SSO in the application he is still existing</p></li>
+<li>
+<p>In case user is deleted from last application

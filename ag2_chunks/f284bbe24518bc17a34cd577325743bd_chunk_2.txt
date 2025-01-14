@@ -1,0 +1,159 @@
+ools ….</p>
+</li>
+<li>
+<p>Static CSS created via Sass at build-time</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Hosted on EFS Backend pods</p>
+</li>
+<li>
+<p>Used APIs on EFS Backend:</p>
+<ul>
+<li>
+<p>HTTP queries</p>
+</li>
+<li>
+<p>Internal Rest-API</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Sourcecode</p>
+<ul>
+<li>
+<p><a href="https://bitbucket.org/qbengineering/questback_client_efs_survey/src/master/" data-card-appearance="inline">https://bitbucket.org/qbengineering/questback_client_efs_survey/src/master/</a></p>
+</li>
+<li>
+<p><a href="https://bitbucket.org/qbengineering/tivian_server_application_efs/src/master/modules/survey/" data-card-appearance="inline">https://bitbucket.org/qbengineering/tivian_server_application_efs/src/master/modules/survey/</a></p>
+</li>
+<li>
+<p><a href="https://bitbucket.org/qbengineering/tivian_server_application_efs/src/master/modules/efs/" data-card-appearance="inline">https://bitbucket.org/qbengineering/tivian_server_application_efs/src/master/modules/efs/</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="header-7">EFS Survey frontend</h3>
+<ul>
+<li>
+<p>UI for survey projects, displays questionnaires and handles response collection</p>
+</li>
+<li>
+<p>Separate login for participants of personalized survey projects handled by EFS Backend</p>
+<ul>
+<li>
+<p>Type of login is configurable per project i.e. email/password, login-code</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Used technologies:</p>
+<ul>
+<li>
+<p>HTML markup rendered by PHP on EFS Backend</p>
+<ul>
+<li>
+<p>Using Smarty-templates modifiable by customer within EFS Admin area</p>
+</li>
+</ul>
+</li>
+<li>
+<p>JS frameworks: Dojo enriched by homebrew widgets, JQuery</p>
+</li>
+<li>
+<p>CSS dynamically created via Sass at modification time, customer can modify CSS within EFS Admin area</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Hosted on EFS Backend pods and NFS</p>
+</li>
+<li>
+<p>Used APIs on EFS Backend:</p>
+<ul>
+<li>
+<p>HTTP queries</p>
+</li>
+<li>
+<p>Internal Rest-API</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Sourcecode</p>
+<ul>
+<li>
+<p><a href="https://bitbucket.org/qbengineering/tivian_server_application_efs/src/master/modules/survey/" data-card-appearance="inline">https://bitbucket.org/qbengineering/tivian_server_application_efs/src/master/modules/survey/</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="header-8">EFS Websites frontend</h3>
+<ul>
+<li>
+<p>UI for Panelwebsites, Orgprocessor, MSF-Feedbackcenter, Filemanager, Translator, Reporting …</p>
+</li>
+<li>
+<p>Separate login for resp. user-groups handled by EFS Backend</p>
+<ul>
+<li>
+<p>Type of login is configurable per Website type i.e. email/password, login-code</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Used technologies:</p>
+<ul>
+<li>
+<p>HTML markup rendered by PHP on EFS Backend</p>
+<ul>
+<li>
+<p>Partially using Smarty-templates modifiable by customer within EFS Admin area</p>
+</li>
+</ul>
+</li>
+<li>
+<p>JS frameworks: Dojo enriched by homebrew widgets, JQuery</p>
+</li>
+<li>
+<p>CSS created via Sass at modification time, customer partially can modify CSS within EFS Admin area</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Hosted on EFS Backend pods and NFS</p>
+</li>
+<li>
+<p>Used APIs on EFS Backend:</p>
+<ul>
+<li>
+<p>HTTP queries</p>
+</li>
+<li>
+<p>Internal Rest-API</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Sourcecode</p>
+<ul>
+<li>
+<p><a href="https://bitbucket.org/qbengineering/questback_client_efs_panel/src/master/" data-card-appearance="inline">https://bitbucket.org/qbengineering/questback_client_efs_panel/src/master/</a></p>
+</li>
+<li>
+<p><a href="https://bitbucket.org/qbengineering/tivian_server_application_efs/src/master/modules/" data-card-appearance="inline">https://bitbucket.org/qbengineering/tivian_server_application_efs/src/master/modules/</a></p>
+</li>
+<li>
+<p><a href="https://bitbucket.org/qbengineering/tivian_server_application_efs/src/master/panelwebsite/" data-card-appearance="inline">https://bitbucket.org/qbengineering/tivian_server_application_efs/src/master/panelwebsite/</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="header-9">EFS Portals frontend</h3>
+<ul>
+<li>
+<p>UI for Portals single-page application</p>
+<ul>
+<li>
+<p>Separate login for portalists either handled directly by EFS Backend or delegated to Okta

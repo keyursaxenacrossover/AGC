@@ -1,0 +1,58 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3753050113">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3753050113</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">Requirements</a></li>
+<ul>
+<li><a href="#header-3">Quality Goals</a></li>
+<li><a href="#header-4">Stakeholders</a></li>
+</ul>
+</ul>
+</ul><p></p><h1 id="header-1">Requirements</h1><p>See <ac:link ac:card-appearance="inline"><ri:page ri:content-title="High Level Requirements" ri:version-at-save="11"></ri:page><ac:link-body>High Level Requirements</ac:link-body></ac:link>  for high level requirements the system should fulfill.</p><p>Also see the workflows that shall be supported - <ac:link ac:card-appearance="inline"><ri:page ri:content-title="CRUD SSO" ri:version-at-save="9"></ri:page><ac:link-body>CRUD SSO</ac:link-body></ac:link> </p><p>Detailed requirements will be part of Jira.</p><ac:task-list>
+<ac:task>
+<ac:task-id>14</ac:task-id>
+<ac:task-status>incomplete</ac:task-status>
+<ac:task-body><span class="placeholder-inline-tasks"><ac:link><ri:user ri:account-id="5c790ab34b5199464e92723f"></ri:user></ac:link> <ac:link><ri:user ri:account-id="610813f58c15ca006f6152ca"></ri:user></ac:link> <ac:link><ri:user ri:account-id="5a5dc81217dfb4426b61f4c6"></ri:user></ac:link>  - add link to Jira board here</span></ac:task-body>
+</ac:task>
+</ac:task-list><p></p><p></p><h2 id="header-3">Quality Goals</h2><p>The following table contains the most important quality goals to follow. More details can be found in <ac:link ac:card-appearance="inline"><ri:page ri:content-title="10 Quality Requirements" ri:version-at-save="3"></ri:page><ac:link-body>10 Quality Requirements</ac:link-body></ac:link> </p><ac:task-list>
+<ac:task>
+<ac:task-id>13</ac:task-id>
+<ac:task-status>incomplete</ac:task-status>
+<ac:task-body><span class="placeholder-inline-tasks"><ac:link><ri:user ri:account-id="5c790ab34b5199464e92723f"></ri:user></ac:link> clarify those requirements with <ac:link><ri:user ri:account-id="5a5dc81217dfb4426b61f4c6"></ri:user></ac:link>  and <ac:link><ri:user ri:account-id="610813f58c15ca006f6152ca"></ri:user></ac:link> </span></ac:task-body>
+</ac:task>
+</ac:task-list><table data-layout="wide" ac:local-id="0bd6f567-90d3-4936-b6e0-1b8a55460f6e">
+<colgroup>
+<col style="width: 78.0px;">
+<col style="width: 269.0px;">
+<col style="width: 613.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour="#e3fcef"><p><strong>ID</strong></p></th>
+<th data-highlight-colour="#e3fcef"><p><strong>Goal</strong></p></th>
+<th data-highlight-colour="#e3fcef"><p><strong>Reasoning</strong></p></th>
+</tr>
+<tr>
+<th><p><strong>Q1</strong></p></th>
+<td>
+<p>The system should be highly available</p>
+<p>(Reliability - High Availability)</p>
+</td>
+<td><p>The authentication should be used for every system in the porfolio of Tivian. It is a critical component every user and every system should use in future. A lack of availability means an outage for several to all parts of the system and should be avoided by any means.</p></td>
+</tr>
+<tr>
+<th><p><strong>Q2</strong></p></th>
+<td>
+<p>The system should serve every connected system and user</p>
+<p>(Performance Efficiency - High Capacity / Scalability)</p>
+</td>
+<td><p>The authentication should be used by every system and user. There will be a very large number or parallel users and possibly systems requesting authentication mechanisms. So Tivian Access has to be able to serve all of those.</p></td>
+</tr>
+<tr>
+<th><p><strong>Q3</strong></p></th>
+<td>
+<p>The system should keep data secure and support authenticated access.</p>
+<p>(Security - all)</p>
+</td>
+<td><p>The system contains user data

@@ -1,0 +1,66 @@
+="01J6C37A57MCMB75MFQR569K6S">Step 2: Configure</h3>
+<p>also see General Tenant Setup and Data Voyager Setup and Authorization Server Setup</p>
+<p><strong>Values:</strong></p>
+<p><em><strong>iam.sso.well_known_url: </strong></em> URL to the well known document from the Okta authorization server (see Authorization Server Setup )</p>
+<p><em><strong>iam.sso.redirect_url: </strong></em>&lt;dv-installation-url&gt;/dv/account/redirect/</p>
+<p><em><strong>iam.sso.client_id: </strong></em>ID of the DV application in Okta (see Data Voyager Setup )</p>
+<p><em><strong>iam.sso.client_secret: </strong></em>secret of the DV application in Okta (see Data Voyager Setup )</p>
+<p><em><strong>iam.sso.audience: </strong></em>audience value from the Okta authorization server (see Authorization Server Setup )</p>
+<p> </p>
+<h3 id="01J6C37A5753M863AESN4XG1RB">Step 4: Create users</h3>
+<p>Users are created and managed manually in Okta and Datavoyager. Take care to assign the correct application specific group the the client.</p>
+<p>To use SSO in Data Voyager it is necessary to set the following lines manually in the application.ini of the Data Voyager installation, so the proxy can be used. (see below)</p>
+<pre><code class="language-text">; Proxy configuration
+iam.sso.proxy.url                     = "http://proxy:8080"</code></pre>
+<p> </p>
+<h3 id="01J6C37A576JACM6EA5N523CK9">Step 5: Activate</h3>
+<p>Set Tivian Access to active in the configuration after checking all values again.</p>
+<p><em><strong>iam.sso.module_enabled: </strong></em>1</p>
+<p>In case something is not configured correctly you can login with root by using the following URL <code>&lt;dv-installation-url&gt;/dv/account/bypass</code></p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013437740178" alt="image-20200306-163636.png"></p>
+<p> </p>
+<h2 id="h_01J6C38Z47RHASSSFBY803MX04">Portals configuration</h2>
+<h3 id="01J6C3BKEA8CDF4E0V9V1MVFA3">Step 1: Activate Portals in the EFS Admin UI</h3>
+<p>Login as root in the installation and navigate to the IdentityAccessManager configuration in the Platform Cockpit.</p>
+<p><em><strong>iam_sso_modules:</strong></em> Add “portal” here</p>
+<p> </p>
+<h3 id="01J6C3BKEAMRJR0A2BCBAYB91K">Setp 2: Migrate portals via script</h3>
+<p>Already existing portals are not yet synced to Okta. Thus they have to be created.</p>
+<ul>
+<li>
+<p>Login to the console of the installation to start the migration script.</p>
+</li>
+<li>
+<p>Navigate to the “www“-folder of the installation.</p>
+</li>
+<li>
+<p>Execute the migration script in “support/iam/migration.php“.</p>
+</li>
+<li>
+<p>Chose “Portal migration”</p>
+</li>
+</ul>
+<p> </p>37740178" alt="image-20200306-163636.png"></p>
+<p> </p>
+<h2 id="h_01J6C38Z47RHASSSFBY803MX04">Portals configuration</h2>
+<h3 id="01J6C3BKEA8CDF4E0V9V1MVFA3">Step 1: Activate Portals in the EFS Admin UI</h3>
+<p>Login as root in the installation and navigate to the IdentityAccessManager configuration in the Platform Cockpit.</p>
+<p><em><strong>iam_sso_modules:</strong></em> Add “portal” here</p>
+<p> </p>
+<h3 id="01J6C3BKEAMRJR0A2BCBAYB91K">Setp 2: Migrate portals via script</h3>
+<p>Already existing portals are not yet synced to Okta. Thus they have to be created.</p>
+<ul>
+<li>
+<p>Login to the console of the installation to start the migration script.</p>
+</li>
+<li>
+<p>Navigate to the “www“-folder of the installation.</p>
+</li>
+<li>
+<p>Execute the migration script in “support/iam/migration.php“.</p>
+</li>
+<li>
+<p>Chose “Portal migration”</p>
+</li>
+</ul>
+<p> </p>

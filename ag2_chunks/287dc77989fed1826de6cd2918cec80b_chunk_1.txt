@@ -1,0 +1,51 @@
+png"></p>
+<p> </p>
+<h3 id="header-6">Step 4: Configure Factors and Group</h3>
+<p><strong>Values:</strong></p>
+<p>Policy Name: see Naming conventions in Okta</p>
+<p>Description: Put something in here that others will understand</p>
+<p>Assign to groups: Only the specific targeted group must be added here</p>
+<p>Effective Factors:</p>
+<p style="margin-left: 30.0px;">If multiple factors are possible - pick all of them as Optional</p>
+<p style="margin-left: 30.0px;">If only one factor is possible and forced - pick the factor as required</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21001157548434" alt="Screenshot_2019-11-29 Questback - Multifactor(2).png"></p>
+<p> </p>
+<h3 id="header-7">Step 5: Configure Enrollment Rule</h3>
+<p><strong>Values:</strong></p>
+<p>Name: something reasonable</p>
+<p>User is accessing: Check Okta and Applications</p>
+<p>Enroll in factor: decide based on the user requirements - “first time the user is challenged“ should be a good default</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21001157549714" alt="Screenshot_2019-11-29 Questback - Multifactor(4).png"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21001120805010" alt="Screenshot_2019-11-29 Questback - Multifactor(3).png"></p>
+<p> </p>
+<h3 id="header-8">Step 6: Navigate to Authentication and Sign-On</h3>
+<p>Navigate to the Sign-On Tab in Authentication</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21001157553426" alt="Screenshot_2019-11-29 Questback - Multifactor(5).png"></p>
+<h3 id="header-9">Step 7: Edit existing Sign-On Policy</h3>
+<p>There should be a Sign-On Policy in place for the tenant. More specific cases are not covered in this documentation, but should be self-explanatory.</p>
+<p><strong>Values:</strong></p>
+<p>Prompt for Factor: check it</p>
+<p>Factor Prompting: based on the user requirements - having a factor session lifetime of 24 hour - 7 days could be a good default</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21001120812050" alt="Screenshot_2019-11-29 Questback - Authentication(1).png"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21001120814226" alt="Screenshot_2019-11-29 Questback - Authentication(2).png"></p>
+<p> </p>
+<h2 id="h_01J6A6XNPTEWXMZ3AN7WK86R6K">Password Policy Setup</h2>
+<p><strong>Note: </strong>The password policy only applies to users that are managed in Okta. This option should only be configured if truly necessary and scoped to the requested group.</p>
+<h3 id="01J6A6M96V61RV52PG52T8WQEJ">Step 1: Navigate to Authentication and the Tab Password Policy</h3>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21001120815250" alt="Screenshot_2019-11-29 Questback - Dashboard.png"></p>
+<p> </p>
+<h3 id="01J6A6M96VMV8RZ6D0J6AKJWJQ">Step 2: Add new Password Policy</h3>
+<p><strong>Values:</strong></p>
+<p>Name: see Naming conventions in Okta</p>
+<p>Description: something meaningful</p>
+<p>Add Group: Only the targeted group of users that are managed in Okta</p>
+<p>Applies to: Okta</p>
+<p>Password Settings: Pick whatever is requested and supported. Avoid locking if possible.</p>
+<p>Account Recovery: SMS and Voice call are not supported. Recovery will be triggered manually.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21001157564562" alt="Screenshot_2019-11-29 Questback - Authentication.png"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21001120818578" alt="Screenshot_2019-11-29 Questback - Authentication(1).png"></p>
+<p> </p>
+<h3 id="01J6A6M96VFG417X74DJY6CB09">Step 3: Add/Edit Rule</h3>
+<p><strong>Values:</strong></p>
+<p>Name: something reasonable</p>
+<p>User can: change password and perform self-service password reset</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21001120819218" alt="Screenshot_2019-11-29 Questback - Authentication(2).png"></p>
+<p> </p>
+<p> </p>

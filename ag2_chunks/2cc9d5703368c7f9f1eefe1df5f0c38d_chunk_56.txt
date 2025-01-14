@@ -1,0 +1,102 @@
+<p>Module template</p>
+</td>
+<td style="width: 435.608px;">
+<p>Module-specific template that controls how data provided by the module are displayed.</p>
+</td>
+<td style="width: 102.934px;">
+<p>func_search</p>
+</td>
+</tr>
+<tr>
+<td style="width: 181.007px;">
+<p>Template for media display</p>
+</td>
+<td style="width: 435.608px;">
+<p>In this field, you can enter the template that controls how uploaded files are output.</p>
+<p>The field should be kept empty for text search.</p>
+</td>
+<td style="width: 102.934px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 181.007px;">
+<p>Modules available in the search</p>
+</td>
+<td style="width: 435.608px;">
+<p>In the drop-down list, you can select the content types that should be covered by the search.</p>
+<p>The content types selected in the menu <strong>Global Configuration</strong> are available. A further restriction in this module is specific to this module.</p>
+</td>
+<td style="width: 102.934px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 181.007px;">
+<p>Maximum number of search results</p>
+</td>
+<td style="width: 435.608px;">
+<p>Maximum number of results to be displayed in the “All results” list per content type.</p>
+</td>
+<td style="width: 102.934px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 181.007px;">
+<p>Maximum number of search results in summary</p>
+</td>
+<td style="width: 435.608px;">
+<p>Maximum number of results to be displayed in the summary per content type.</p>
+</td>
+<td style="width: 102.934px;">
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="function-module-to-do-list" class="wysiwyg-text-align-justify"><strong>Function Module: To-do List</strong></h3>
+<p class="wysiwyg-text-align-justify">In the panelists’ personal area, the “To-do list” module generates a list of projects in which they can currently participate, including forum discussions (i.e. qualitative projects) and tasks. Such a list is usually placed on the personal homepage, in the standard panel on <strong>My Home</strong>, for example.</p>
+<p class="wysiwyg-text-align-justify">You can use the “func_todo_list” template to change the appearance of the survey list. The options are identical to the survey list options explained above in Table "Function Module: Search for Text in Modules".</p>
+<p class="wysiwyg-text-align-justify">You can decide for yourself whether you want to use the possibility to display forum discussions as qualitative projects in the to-do list and the admin area project list.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>To display already existing forum discussions, open the dialog <strong>Edit settings</strong> for the respective forum topics and tick the checkbox “Treat as qualitative project”.</p>
+</li>
+<li>
+<p>If you subsequently create your forum topics from within the project list, this option will be enabled automatically.</p>
+</li>
+</ul>
+<h3 id="function-module-random-file-selection" class="wysiwyg-text-align-justify"><strong>Function Module: Random File Selection</strong></h3>
+<p class="wysiwyg-text-align-justify">The “Random file selection” function module selects a predefined number of files of a certain type from an asset library directory and outputs them on a panel page. The module is controlled by the “file_picker” template, which is located in the template library.</p>
+<p class="wysiwyg-text-align-justify">EFS Panel provides various design options:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>You can choose the source directory in the asset library yourself.</p>
+</li>
+<li>
+<p>You can also choose the file type yourself.</p>
+</li>
+<li>
+<p>You can define the maximum number of files for selection.</p>
+</li>
+<li>
+<p>Random selection can be either chosen once per session or every time the respective page is invoked.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Options</strong></p>
+<p class="wysiwyg-text-align-justify">The “Random file selection” function module offers the following options.</p>
+<table class="wysiwyg-text-align-justify" style="height: 587px;" border="1" width="739" data-layout="default" data-table-width="760">
+<colgroup>
+<col style="width: 183.0px;">
+<col style="width: 404.0px;">
+<col style="width: 173.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" style="width: 174.635px;" data-highlight-colour="#57d9a3">
+<p><strong>Option</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 385.712px;" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</

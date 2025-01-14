@@ -1,0 +1,134 @@
+ codes 23, 32), the duration is = “-1” because a meaningful calculation is not possible.)</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>p_000n</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>URL parameter</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>c_000n</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>User-defined variables</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>v_000n</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>Project variables. The project variables are sequentially numbered for each project, beginning with v_1.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>md_000n</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>Master data variables (only in <em>EFS Panel</em> installations)</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>ex_host</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>Host name based on the IP of the proxy (if available) via which the participant accesses the survey</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>ip_addr</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>IP of the proxy (if available) via which the participant accesses the survey</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>browser</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>Browser info (name, version etc.) of the participant</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>referer</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>If available, the address of the page on which the participant clicked the link to the currently accessed page. This value is set by the participant's browser</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>device_type</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>Type of the user’s devices (0 - desktop / 1 - mobile)</p>
+<p>If the option <em>“Check whether the respondents have JavaScript activated, whether the Adobe Flash Player plugin is available and which device they are using?”</em> of the project properties is not activated, 0 is the default value.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>quota</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>Quota ID of the participant (selected by “To which quota should the participant be allocated”</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>quota_assignment</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>All quota ID’s of the participant</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>page_history</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>List of page ID’s in the order of the pages called up by the participant</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>hflip</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>Variable for the horizontal flip (horizontal mirroring of the answer options):</p>
+<ul>
+<li>
+<p>0 = not flipped</p>
+</li>
+<li>
+<p>1 = flipped</p>
+</li>
+</ul>
+<p> </p>
+<p>When a participant starts a survey for the first time, <em>hflip</em> is always written – regardless of whether flips are activated for the survey or not. However, the participant will only see those questions flipped for which the flipping function has been explicitly activated. Consequently, all questions, for which this function was not activated, will be displayed as set in the corresponding question regardless of the random <em>hflip</em> value. Information on whether the flipping function has been activated for a question cannot be found in the export of the result data. To get this information, you have to manually check in the respective question, if the flipping function has been activated.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>vflip</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>Variable for the vertical flip (vertical mirroring of the answer options):</p>
+<ul>
+<li>
+<p>0 = not flipped</p>
+</li>
+<li>
+<p>1 = flipped</p>
+</li>
+</ul>
+<p> </p>
+<p>When a participant starts a survey for the first time, <em>vflip</em> is always written – regardless

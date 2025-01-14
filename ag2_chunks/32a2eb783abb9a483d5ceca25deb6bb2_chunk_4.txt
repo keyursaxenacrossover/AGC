@@ -1,0 +1,30 @@
+21015039361426" alt="page_identifier.png"><br><br>
+</li>
+<li>Assemble the wildcard: {$links.home}</li>
+<li>To create a clickable link, insert the &lt;a href=“URL”&gt;Linkname&lt;/a&gt; HTML tag in the desired place in the content module of the “About us” page. Replace the URL with the {$links.home} wildcard:<br><code>&lt;a href="{$links.home}"&gt;back to home&lt;/a&gt;<br><br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015039358226" alt="internal_link.png"><br><br></code>
+</li>
+<li>Click on <strong>Save</strong>.</li>
+<li>Check the result in the working version. You can then publish the page.</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><strong>3. Optimized short URLs for Twitter</strong></p>
+<p class="wysiwyg-text-align-justify">You can create and display short URLs optimized for Twitter directly in the website editor. This is realized with the help of the Smarty modifier:</p>
+<p class="wysiwyg-text-align-justify"><code>{"URL"|shorturl}</code></p>
+<p class="wysiwyg-text-align-justify">It can be entered in all fields of the website editor marked with “Smarty code” as well as in all panel templates. The entered URL will then be converted into a shorter URL.</p>
+<p class="wysiwyg-text-align-justify">Example:</p>
+<p class="wysiwyg-text-align-justify"><code>Original URL: {"<span class="nolink">http://www.Tivian.de/"|shorturl</span>}</code><br><code>Shortened URL: <span class="nolink">http://i.gpefs.com/?i=3-DW5w</span></code></p>
+<p class="wysiwyg-text-align-justify">Instead of a static URL, you can also use Smarty wildcards to insert individual URLs for each panelist, for example.</p>
+<p class="wysiwyg-text-align-justify"><em>Information: </em>If you host your panel installation yourself, please bear in mind that this service is only available if your server can connect to the appropriate server. For further details, please get in touch with our support.</p>
+<h2 id="using-wildcards-to-output-predefined-text-elements" class="wysiwyg-text-align-justify"><strong>Using Wildcards to Output Predefined Text Elements</strong></h2>
+<p class="wysiwyg-text-align-justify">You can use wildcards to insert text elements instead of entering them into a module or the template source code. In the standard panel, this option mainly allows you to define and update message texts and labels of frequent input fields such as “Name” or “E-mail” for the entire language version. In addition, you can export these wildcards and edit them externally.</p>
+<p class="wysiwyg-text-align-justify"><em>Information: </em>The wildcard administration of the CMS is designed for up to 200 wildcards per language version. If you use wildcards a lot, take care to use meaningful names, to prevent e.g. the creation of duplicates. If necessary, develop your own nomenclature.</p>
+<p class="wysiwyg-text-align-justify"><strong>Example</strong></p>
+<p class="wysiwyg-text-align-justify">In the main template “main_default” of the standard panel, the copyright claim is integrated by the following source code:</p>
+<p class="wysiwyg-text-align-justify"><code>{* START COPYRIGHT *}</code><br><code>&lt;div id="gpCopyright"&gt;</code><br><code>{$content.label_footer_copyright} {$env.now|localize_date:'Y'} //</code><br><code>&lt;/div&gt;</code><br><code>{* END COPYRIGHT *}</code></p>
+<p class="wysiwyg-text-align-justify">In the <strong>Wildcard</strong> menu, look for the wildcard entitled “label_footer_copyright”. In the standard panel, this wildcard contains the text “Tivian &amp;copy;”. If you call up a panel page, {$content.label_footer_copyright} is filled with this content, and “Tivian ©” is displayed. If you change the content of the wildcard, the copyright claim on the panel pages will also be changed.</p>
+<p class="wysiwyg-text-align-justify"><em>Information: </em>Smarty wildcards and other Smarty codes are not merely restricted to templates, but can also be used in several-page modules. Fields that allow Smarty code are marked accordingly with “Smarty code”.</p>
+<p class="wysiwyg-text-align-justify"><strong>1. Managing wildcards</strong></p>
+<p class="wysiwyg-text-align-justify">The menu <strong>Website → Standard content → Wildcards</strong> contains an overview of all wildcards available. The table has the usual search function, the individual wildcards can be edited or deleted.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify">Information</p>
+<p class="wysiwyg-text-align-justify">Read rights for “panel_website_wildcards” are needed for accessing the Wildcards menu.</p>
+<p class="wysiwyg-text-align-justify"><

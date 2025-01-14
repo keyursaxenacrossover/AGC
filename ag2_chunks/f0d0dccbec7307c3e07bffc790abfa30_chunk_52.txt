@@ -1,0 +1,155 @@
+tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79K0RZG5AZ3YRDK48PQ"> </h4>
+<h3 id="header-246">PUT /survey/participants/{sampleId}/updateParticipantVariablesList</h3>
+<p>Updates user's participant variables for given sample ID. Only available for personalized surveys. Returns list of participation data with updated values. Unknown participations and unknown variables are removed, invalid values will be replaced by standard values.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "participantVariablesList": [
+    {
+      "uid": 1,
+      "variables": [
+        {
+          "variable": "u_example",
+          "value": "Example"
+        }
+      ]
+    }
+  ]
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[
+  {
+    "uid": 1,
+    "variables": [
+      {
+        "variable": "u_example",
+        "value": "Example"
+      }
+    ]
+  }
+]</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>sampleId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>id of survey <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79KJ254EZFHSBCPPEYR"> </h4>
+<h3 id="header-247">GET /survey/participants/v2/{sampleId}/{additionalInfo}</h3>
+<p>Returns a list of participants. The operation is allowed for personalized surveys only. If the parameter <code>withAdditionalFields</code> is set to true, additional variables for participant will be returned.</p>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[
+  {
+    "uid": 1,
+    "u_passwd": "ZDhjNDA2OGY=",
+    "u_firstname": "First",
+    "u_name": "Last",
+    "u_email": "example@domain.tld",
+    "u_mobile": "",
+    "u_title": "",
+    "u_gender": "NOT_SPECIFIED",
+    "u_group": 0,
+    "m_date": "2020-02-18T12:33:19+00:00",
+    "c_date": "2020-02-18T11:39:29+00:00",
+    "u_timezone": "+0:00"
+  }, ...
+]</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>sampleId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>sample to query <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>additionalInfo</p>
+</td>
+<td>
+<p>boolean</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>Flag for the additional information to participant <strong>Examples:</strong> <code>true</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79KTCBJ4DMCJ09VRZN2"> </h4>
+<h3 id="header-248">POST /survey/participants/{sampleId}/find</h3>
+<p>Returns a list of participants according to the specified sample. The operation is allowed for personalized surveys only. The size of result set can be limited by using parameter 'offset' and 'limit'. Use parameter 'withAdditionalFields' in order to get the additional information for participant or suppress it.</p>
+<p>See <a href="https://qbdocs.atlassian.net/wiki/spaces/DOC/pages/1273102351/How-to%3A+Service+Layer#Filtering-results-with-conditions">filtering results with conditions</a> for help on building conditions.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code

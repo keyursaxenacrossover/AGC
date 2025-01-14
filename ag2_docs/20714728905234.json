@@ -1,0 +1,30 @@
+{
+    "id": 20714728905234,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/20714728905234.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20714728905234-Major-release-changes-FAQ",
+    "author_id": 369584192734,
+    "comments_disabled": false,
+    "draft": true,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20714530860562,
+    "created_at": "2024-08-12T16:56:02Z",
+    "updated_at": "2024-08-12T16:56:08Z",
+    "name": "Major release changes  FAQ",
+    "title": "Major release changes  FAQ",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-08-12T16:56:08Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075294,
+    "content_tag_ids": [],
+    "label_names": [],
+    "body": "<p><b>Original Confluence URL:</b> <a href=\"https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1169031232\">https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1169031232</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>\n\n<h2>Table of Contents</h2>\n<ul class=\"toc\">\n<ul>\n<li><a href=\"#header-1\">20.1</a></li>\n<li><a href=\"#header-2\">19.5</a></li>\n<li><a href=\"#header-3\">19.3</a></li>\n<li><a href=\"#header-4\">19.1</a></li>\n</ul>\n</ul><p class=\"media-group\"><ac:parameter ac:name=\"name\"><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20714712092050\" alt=\"Upgrade Flow.pdf\"></ac:parameter></p><p></p><h1 id=\"header-1\">20.1</h1><p>run layout script in www folder</p><p>/opt/pdp/opst/apps/php56/bin/php support/build_project_layout.php scope=all list=true</p><p>/opt/pdp/opst/apps/php56/bin/php support/build_project_layout.php scope=all parallel=true batchsize=25 tempfile=~/temp.txt logfile=~/log.tx</p><p></p><h1 id=\"header-2\">19.5</h1><div class=\"expand-macro\">\n<h4 string=\"quick checks\"></h4>\n<p>[]run size SA-script to check for correct size<br>[]set date with SA<br>[]SA activate maintenance page, switch engine an restart db port<br>[]check if maintenance page is live<br>[]check i-script: DB correct? ROM?<br>[]check out Zendframeworklibrary<br>watch Healself, this takes a long time ( <em>watch --color -n 5 'echo \"select now(); show full processlist;\" | efslogin -mo' </em>)<br>[]update Globis</p>\n</div><p><strong>MariaDB</strong></p><ul><li>\n<p>DB is running on a MariaDB Server<br>check in i script: dbs have name mariadb[XX]<br>or in console after login to database<br></p>\n<pre><code class=\"language-text\">//-mo for TKA and Procus5\nefslogin\nSHOW variables LIKE '%socket%';</code></pre>\n</li></ul><p>Path returned looks like this for MySQL:</p><p>/opt/pdp/opst/mysql51/tmp/mysql.opst.5861.sock</p><p>and like this for MariaDB:</p><p>/opt/pdp/opst/mariadb/tmp/mysql.opst.6060.sock</p><p><em><span style=\"color: rgb(101,84,192);\">Steps to be taken:</span></em><br>If the installation is not on MariaDB, sumbit case to SystemsEngineers to have them perform the migration first.</p><p><strong>DV </strong>needs to be latest Version 4.3</p><p><strong>Downtime</strong></p><ul>\n<li><p>there is a maintenance window needed for external installations because the installation will not be available while the sysadmins restart the port</p></li>\n<li><p>this maintenance has to be confimed by the sysadmins</p></li>\n<li><p>within business hours the inquiry has to be made two days prior to the date of the downtime</p></li>\n<li><p>all downtimes outside business hours need two weeks</p></li>\n<li><p>the inquiry needs to be made via salesforce case in the systemengineering queue</p></li>\n</ul><p></p><h1 id=\"header-3\">19.3</h1><p>Customizings initialization method changed. Please refer to</p><p><ac:link ac:card-appearance=\"inline\"><ri:page ri:content-title=\"Upgradability check for installations with customizings\" ri:version-at-save=\"2\"></ri:page><ac:link-body>Upgradability check for installations with customizings</ac:link-body></ac:link> </p><h1 id=\"header-4\">19.1</h1><p>PHP 5.6:</p><ul>\n<li><p>Alle Alias der EFS 18.4 Installation in einer php 5.6 ServiceGroup<br>check here: <a href=\"http://10.250.0.17/repo/SG.html\">http://10.250.0.17/repo/SG.html</a></p></li>\n<li><p>Best case: Alle Kundenverwalteten DNS-Einträge zeigen per CNAME auf den technical name, damit wir die Installation verschieben können.<br>Verify here: <a href=\"http://10.250.0.17/repo/efsdns_info.txt\">http://10.250.0.17/repo/efsdns_info.txt</a></p></li>\n</ul><p><em><span style=\"color: rgb(101,84,192);\">Steps to be taken:</span></em></p><p>If customer needs to change their own dns record, please contact the respective 1st Level Support.</p><p>Then once ready for the frontend move, assign ticket to SystemEngineering.</p><p>Once move is completed, proceed with usual steps.</p><p>DV needs to be Version 4.1 or higher to support PHP 5.6</p><p></p><p>Also check for SNI-Blocker</p><ul>\n<li>\n<p>check if webservices are enabled - <strong>if no match then you can skip the other checks</strong></p>\n<ul><li><p><code>echo \"SELECT COUNT(*) FROM config_variables WHERE name='has_webservices' AND value='b:1;';\" | efslogin -n ab1234</code></p></li></ul>\n</li>\n<li>\n<p>check how often webservices have been used</p>\n<ul><li><pre><code class=\"language-text\">echo \"SELECT COUNT(*) FROM efs_service_log;\" | efslogin -n ab1234</code></pre></li></ul>\n</li>\n<li>\n<p>check if this year webservices have been called</p>\n<ul><li><pre><code class=\"language-text\">​echo \"SELECT COUNT(*) FROM efs_service_log;\" | efslogin -n ab1234 zgrep \"POST /service/\" /logfiles/vhosts/2020/*/*/*/ab1234.customervoice360.com.access.log.* | awk ' { print $4 } ' | sort -n | uniq -c</code></pre></li></ul>\n</li>\n</ul>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

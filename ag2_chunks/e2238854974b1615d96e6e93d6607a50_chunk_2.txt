@@ -1,0 +1,34 @@
+; Employee-Sync &gt; Add Employee-Sync Job</p>
+<p>Here, the following information is required: select your ES project as well as the master- data variable storing the respective assignment of panelists to their roles and unit. Roles and units are quoted in the following format: [ROLE ABBREVIATION]:[metaname(s) of org unit(s)]. Different roles are separated by semicolon, different units by commas. Example: OWN:unit1; SUP:unit2, unit3, unit4.</p>
+<p>The synchronization for each ES project runs once a day. For a successful synchronization, the panelists of the group need a master-data variable with at least one role and unit assignment.</p>
+<p>During the synchronization, all existing roles and units are being deleted and then created again. Correct roles and units are being transferred, incomplete roles and units remain deleted.</p>
+<p>On errors, an e-mail is sent to the job creator. The error of the last synchronization can be viewed by going to People &gt; Groups &gt; [select group] &gt; Employee-Sync as well as by editing a job. </p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998593645202" alt="272a83e2-2a80-4242-a3f2-682df53e97b7"></p>
+<h3 id="header-17">Workflows</h3>
+<p>Main feature of the add-on module CLF are the workflow buttons which enable you to assign, escalate, close and reopen tasks as well as invite participants to follow-up surveys. Workflows allow quick actions without the need to edit a task. For smooth interaction, most actions allow commenting from a modal dialog.</p>
+<p><strong>Configure Workflows</strong></p>
+<p>Workflows are here: Org Processor &gt; Configuration &gt; Action Planner configuration &gt; Workflow. For each of the three status – Not started, Started, Completed – actions can be added. Linked actions are configurable, the order of workflows can be adapted via drag and drop. Some workflows require mail templates – by using #action_comment# in the mail template, comments in relation to tasks can be included in e-mails.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998593409554" alt="e9952506-2754-47e4-8afc-3cb987e419ba"></p>
+<p>All workflows move the status from Not started to Started when triggered.</p>
+<p><strong>Assign to</strong></p>
+<p>This workflow allows the assignment of tasks to users of one’s own unit only or to users of one’s own unit and all levels down.</p>
+<p><strong>Assign to me</strong></p>
+<p>This workflow allows the assignment of tasks to the current user.</p>
+<p><strong>Escalate to</strong></p>
+<p>This workflow allows the escalation of tasks to users of the next level up. Escalated tasks are viewable through the Portals page module Task List with the filter setting Show escalated tasks, regardless of role rights in the org structure. Also, commenting on the escalated tasks is still available.</p>
+<p><strong>Invite to follow-up survey</strong></p>
+<p>This workflow allows the invitation of survey participants to follow-up surveys. This workflow requires a mail template for e-mail transmission, a PE survey for the follow up, the variables for storing the task ID and the ES project PID as well as the ac variables (Action Planner variables) containing the participant’s e-mail address and the PID of the follow-up survey.</p>
+<p><strong>Close</strong></p>
+<p>This workflow allows the closing of tasks by users responsible for the respective task. Furthermore, automatic invitations to follow-up surveys can be triggered.</p>
+<p><strong>Reopen</strong></p>
+<p>This workflow allows the reopening of previously closed tasks.</p>
+<h3 id="header-18">Reminders and Auto-Escalations</h3>
+<p>The existing reminder functionality in the Action Planner has been extended with an auto-escalation feature: Besides triggering e-mails, expired tasks can now be moved one level up to a superior unit. Escalated tasks are still viewable for the origin unit through filter setting. The completion date can be extended upon escalation to avoid further automatic escalation before the next user was able to edit mentioned task.</p>
+<h3 id="header-19">New display types in Action Planner</h3>
+<p>There are two new display types in the Action Planner: image and hyperlink. With image, links can be embedded as an image, hyperlink is interpreted as a link to another page. These display types can be adapted in the Portals page module Task List and have no influence on the exterior view of the Org Processor.</p>
+<h3 id="header-20">Subject groups</h3>
+<p>In addition to the export of subject groups, it is now also possible to import subject groups.</p>
+<h3 id="header-21">Extended completion date</h3>
+<p>The completion date (ac_date) is now a full timestamp with date and time, e.g. 2017- 06-20 10:00:01. – This format is now also expected when importing tasks.</p>
+<h3 id="header-22">Task List in Portals</h3>
+<p>The Action Planner module MyTasks from 17.1 is renamed as Task List.</p>

@@ -1,0 +1,81 @@
+ provided by the System Engineers.</strong></p><h3 id="header-9">4. Setup Tableau server in EFS admin area (Mysight settings)</h3><ul>
+<li><p><strong>Where: System &gt;&gt; Options &gt;&gt; qb:: MySight settings &gt;&gt; MySight connections &gt;&gt; Manage Tableau-Server &gt;&gt; Add new Tableau-Server</strong></p></li>
+<li>
+<p>fill up "Label for Tableau-Server" and "Server Url" ( use HTTPS for Questback Tableau Server)</p>
+<ul><li><p>Take Label from the following table:</p></li></ul>
+</li>
+</ul><table data-layout="default" data-table-width="760" ac:local-id="8b920445-e88e-423f-8a4b-9b1b2618fff0">
+<colgroup>
+<col style="width: 159.0px;">
+<col style="width: 142.0px;">
+<col style="width: 150.0px;">
+<col style="width: 150.0px;">
+<col style="width: 159.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p><strong>enviroment</strong></p></th>
+<th><p><strong>used for</strong></p></th>
+<th><p><strong>server short name</strong></p></th>
+<th><p><strong>URL</strong></p></th>
+<th><p><strong>notes</strong></p></th>
+</tr>
+<tr>
+<td><p><strong>AWS PROD DE</strong></p></td>
+<td><p>customer installations</p></td>
+<td><p>DE_AWS_PROD</p></td>
+<td><p><a href="https://tableau.tableau-prod-de-03.customervoice360.com">https://tableau.tableau-prod-de-03.customervoice360.com</a></p></td>
+<td><p><strong>default tableau server for all new installations</strong></p></td>
+</tr>
+<tr>
+<td><p><strong>AWS SANDBOX DE</strong></p></td>
+<td><p>internal installations</p></td>
+<td><p>DE_AWS_SANDBOX</p></td>
+<td><p><a href="https://tableau.tableau-sandbox-de-02.customervoice360.com">https://tableau.tableau-sandbox-de-02.customervoice360.com</a></p></td>
+<td><p><strong>default tableau server for all new <span style="color: rgb(191,38,0);">internal </span>installations</strong></p></td>
+</tr>
+</tbody>
+</table><div class="expand-macro">
+<h4 string="deprecated"></h4>
+<table ac:local-id="172385ce-5b8f-4a19-aa60-79505558511b" data-layout="default" data-table-width="760">
+<colgroup>
+<col style="width: 146.0px;">
+<col style="width: 144.0px;">
+<col style="width: 144.0px;">
+<col style="width: 144.0px;">
+<col style="width: 152.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p><strong>enviroment</strong></p></th>
+<th><p><strong>used for</strong></p></th>
+<th><p><strong>server short name</strong></p></th>
+<th><p><strong>URL</strong></p></th>
+<th><p><strong>notes</strong></p></th>
+</tr>
+<tr>
+<td><p><strong>Frankfurt</strong></p></td>
+<td><p>internal installations</p></td>
+<td><p>PREPROD2</p></td>
+<td><p><a href="https://mysight-preprod2-de.customervoice360.com">https://mysight-preprod2-de.customervoice360.com</a></p></td>
+<td><p><strong>default tableau server for all new installations</strong></p></td>
+</tr>
+<tr>
+<td><p><strong>Frankfurt / Prod_DE_02</strong></p></td>
+<td><p>customer installations</p></td>
+<td><p>PROD</p></td>
+<td><p><a href="https://mysight-prod2-de.customervoice360.com/">https://mysight-prod2-de.customervoice360.com/</a></p></td>
+<td><p><strong>default tableau server for all new installations</strong></p></td>
+</tr>
+<tr>
+<td><p><strong>Rackspace</strong></p></td>
+<td><p>internal installations <strong>not used anymore</strong></p></td>
+<td><p>USPREPROD_NON_A</p></td>
+<td><p><a href="https://mysight-preprod-us.customervoice360.com">https://mysight-preprod-us.customervoice360.com</a></p></td>
+<td><p><strong>default tableau server for all new installations</strong></p></td>
+</tr>
+<tr>
+<td><p><strong>AWS - ex Rackspace</strong></p></td>
+<td><p>customer installations</p></td>
+<td><p>USPROD_NON_A</p></td>
+<td><p><a href="https://mysight-prod-us

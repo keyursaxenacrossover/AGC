@@ -1,0 +1,77 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1053622430">https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1053622430</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">What´s the purpose of this script?</a></li>
+<ul>
+<li><a href="#header-3">Where are the files?</a></li>
+<ul>
+<li><a href="#header-5">Detailed description and contents of the file:</a></li>
+<li><a href="#header-6">How do I prepare it?</a></li>
+<li><a href="#header-7">How do i execute the Nightly script manually?</a></li>
+<ul>
+<li><a href="#header-9">Cronjob</a></li>
+</ul>
+</ul>
+</ul>
+</ul>
+</ul><h1 id="header-1">What´s the purpose of this script?</h1><p>The Nightly Upgrade/Update script is used if several installations (in Bremen) have to be update/upgrade in one go.</p><p></p><h2 id="header-3">Where are the files?</h2><p>The files are here (in Frankfurt) /opt/pdp/support/nightlyUpgradeSkript: </p><ul>
+<li><p>Installation.txt.Muster: Template file hat needs to be copied to prepare a new nightly update/upgrade.</p></li>
+<li><p>Installation.txt: File that holds the paths of all installation that shall be updated/upgraded. <ac:inline-comment-marker ac:ref="4fc5b6ab-c532-43fa-8682-bca3740ab3c3">Structure see example. </ac:inline-comment-marker>Must be located under /dumps/nightlyUpgrade.</p></li>
+<li><p>precheck.sh: Script that checks the Installation.txt for the correct format and checks whether the installations are in the ROM and can be updated/upgraded</p></li>
+<li><p>nightlyUpgradeScript.sh: Script that executes the actual update/upgrade of all installations listed in the Installation.txt.</p></li>
+</ul><p></p><div class="expand-macro">
+<h4 string="Installation.txt Example structure "></h4>
+<p>Installations path;rolloutConfig;MainBuild or Testbuild;EFS Version; Build Number;Update only(false/true);Update information<br>/nfs/opst11/skopos1.de;../etc/rollout2.conf;TEST;EFS_10.8;0003_1;true;Update regarding Reporting+ fixes<br>/nfs/opst12/ww2.umfragecenter.de;../etc/rollout2.conf;TEST;EFS_10.8;0003_1;true;Update regarding Reporting+ fixes</p>
+</div><ul><li>
+<p>System Administration</p>
+<ul><li><p>soft deletes installation and everything related to it (i.e. makes it unavailable first before deleting it ultimately)</p></li></ul>
+</li></ul><h3 id="header-5">Detailed description and contents of the file:</h3><ul>
+<li>
+<p>Installation path</p>
+<ul><li><p>Please only use base path of installation, do not include htdocs folder, e.g.: /nfs/opst17/qz7703.customervoice360.com</p></li></ul>
+</li>
+<li>
+<p>rolloutConfig</p>
+<ul>
+<li><p>Config file created by System Administration, can be found here: /opt/pdp/rollout2/etc/rollout2.conf</p></li>
+<li><p>Use relative path only: ../etc/rollout2.conf</p></li>
+</ul>
+</li>
+<li>
+<p>MainBuild or TestBuild</p>
+<ul><li><p>Available values: TEST oder MB</p></li></ul>
+</li>
+<li>
+<p>EFS Version</p>
+<ul><li><p>Always use the branch, e.g. EFS_10.7,EFS_10.8</p></li></ul>
+</li>
+<li>
+<p>Build number</p>
+<ul>
+<li><p>Test build, example: 0001_1, 0002_1 or 0003_1</p></li>
+<li><p>Main build e.g. 0003</p></li>
+</ul>
+</li>
+<li>
+<p>Update only(false/true)</p>
+<ul>
+<li><p>false = an upgrade is done</p></li>
+<li><p>true = an update is done</p></li>
+</ul>
+</li>
+<li>
+<p>Update information</p>
+<ul><li><p>Only needs to be filled if "Update only" is true i.e. in case we only do an update</p></li></ul>
+</li>
+</ul><h3 id="header-6">How do I prepare it?</h3><ul>
+<li>
+<p>In Globis:</p>
+<ul>
+<li>
+<p>Select all installations that need to be updated/upgraded:</p>
+<ul>
+<li><p>Rolloutmanagement=1</p></li>
+<li><p>Version= e.g. 10.8</p></li>
+<li><p>you can make further restrictions, e.g. Data

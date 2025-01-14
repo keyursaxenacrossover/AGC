@@ -1,0 +1,105 @@
+strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Cookies (start_cookies)</p>
+</td>
+<td>
+<p>All readable cookies.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>GET variables at the beginning of the survey (start_get_vars)</p>
+</td>
+<td>
+<p>All parameters were transferred at the beginning of the survey.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Quota (quota)</p>
+</td>
+<td>
+<p>Contains the result of quota processes.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Project variables (v_xxx)</p>
+</td>
+<td>
+<p>The “normal” project variables.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>A cookie, when it is set, has a name and a value, e.g. opst_demopanel_108 and “7a8cc5c05df7820217d9bf3f6c5b0781”. The “Array field” allows you to define which of the collected cookies is to be written into the user-defined variable.</p>
+</li>
+<li>
+<p>The cookie’s value can be structured to contain various values, separated by a separator such as | or ;. For example, the cookie value could encrypt the date, the browser version, and the site by which the cookie was set. If your cookie has such a structure, you can save the individual values separately using different destination variables. To do so, you must save the settings, create a new destination variable, and enter the separator character (e.g. a comma).</p>
+</li>
+<li>
+<p>The value of the cookie named in the “Array field” will now be stored in the user-defined variable.</p>
+</li>
+</ul>
+<h3 id="reading-get-variables" class="wysiwyg-text-align-justify">Reading Get Variables</h3>
+<p class="wysiwyg-text-align-justify">Analogously, you can read Get variables attached to the survey URL. To do so, use the Get variables at the beginning of the survey as the source variable, enter the name of the Get variable in the <strong>Array field,</strong> and choose the user-defined variable you want to write the value to as the destination variable.</p>
+<h2 id="recoding-trigger" class="wysiwyg-text-align-justify">Recoding trigger</h2>
+<p class="wysiwyg-text-align-justify">The recoding trigger is used to recode variables during a survey. The value(s) for one or more variables can be set either conditionally (i.e. depending on survey results) or unconditionally (i.e. always). For example, the new trigger allows you to</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>transfer values from one variable to another</p>
+</li>
+<li>
+<p>prefill text fields</p>
+</li>
+<li>
+<p>perform calculations and output results based on the entries</p>
+</li>
+<li>
+<p>recode multiple variables at the same time</p>
+</li>
+<li>
+<p>access and change participant and panelist data</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">All recodings made as the result of actual participation will be logged (see the section “Viewing the recodings performed”).</p>
+<p class="wysiwyg-text-align-justify"><strong>Please note:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The recoding trigger is available for all survey types.</p>
+</li>
+<li>
+<p>You can recode project variables (with the exception of variables located within a loop branch), user-defined variables and URL parameters, participant data and panelist data (with the exception of<em> u_account</em>, <em>u_ppasswd</em>, <em>u_passwd</em>,<em> u_email</em>, <em>u_initial_passwd</em>) and master data.</p>
+</li>
+<li>
+<p>System variables cannot be recoded.</p>
+</li>
+<li>
+<p>If the value to be set is a text, put it between quotation marks.</p>
+</li>
+<li>
+<p>Both recodings and trigger actions require a lot of server resources, i.e. the usage of recoding triggers affects the performance of the questionnaire. Therefore, it is recommended to use not more than 100 recodings per trigger and per page.</p>
+</li>
+</ul>
+<h3 id="recoding-syntax" class="wysiwyg-text-align-justify">Recoding syntax</h3>
+<p class="wysiwyg-text-align-justify">When defining recoding conditions, the following rules apply:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The operators + - / * and ( and ) can be used.</p>
+</li>
+<li>
+<p>Wildcards (#v_xxx#) can be used to insert project variables. Please mind:</p>
+<ul>
+<li>
+<p>Special project variables, e.g. loop variables, cannot be used in the condition.</p>
+</li>
+<li>
+<p>For project variables relating to an open text field, #v_000n# outputs the content. Make sure to enclose the wildcard by quotation marks in this case, e.g

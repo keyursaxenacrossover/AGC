@@ -1,0 +1,108 @@
+<h1 id="h_01J4KMJZG1SF7D2F1YQ3WFQ2RZ">Overview</h1>
+<p>One of the features of EFS is to sent SMS to users. This could especially happen in case of invitations.</p>
+<p>On this page snailmail and jobmaker are part of the EFS software. This is not entirely true from a deployment perspective but good enough for this page.</p>
+<h1 id="h_01J4KMM1A90QKN2FZRKNA97D7Q">Information</h1>
+<p>From a top-level view the picture below shows how email sending works.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20591453803154" alt="Runtime View - SMS.png"></p>
+<p>Email and SMS are output channel for communication. In some of the cases they could both be used. Therefore they are handled similarly internally in EFS.</p>
+<ul>
+<li>
+<p><strong>EFS software</strong></p>
+<ul>
+<li>
+<p>creates SMS from templates and puts them in an email table</p>
+</li>
+<li>
+<p>next to that an email procedure is created in another table - one procedure can have multiple emails</p>
+</li>
+<li>
+<p>the templates are filled when sending forwarding emails to the email server</p>
+</li>
+<li>
+<p>there are two mechanism to actually send emails:</p>
+<ul>
+<li>
+<p>ad-hoc: An SMS is sent directly when sending is triggered</p>
+</li>
+<li>
+<p>snailmail: SMS are put in the email table and processed by a cron-job called snailmail that periodically loads un-sent emails and forwards them to the email server</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Tyntec SMS</strong></p>
+<ul>
+<li>
+<p>The Tyntec HTTP API is used to send SMS</p>
+</li>
+<li>
+<p>As a reply EFS get an identifier of the SMS procedure at Tyntec</p>
+</li>
+<li>
+<p>Tyntec sends the SMS to the enduser</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>EFS software</strong></p>
+<ul>
+<li>
+<p>stores the Tyntec procedure ID</p>
+</li>
+<li>
+<p>A task in the cron-job Jobmaker will periodically request the delivery status of the stored Tyntec procedure IDs</p>
+</li>
+<li>
+<p>In case there is an update the respective entry in the EFS database will be updated</p>
+</li>
+</ul>
+</li>
+</ul>
+<p> </p>
+<p> </p>
+<p> </p><p>there are two mechanism to actually send emails:</p>
+<ul>
+<li>
+<p>ad-hoc: An SMS is sent directly when sending is triggered</p>
+</li>
+<li>
+<p>snailmail: SMS are put in the email table and processed by a cron-job called snailmail that periodically loads un-sent emails and forwards them to the email server</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Tyntec SMS</strong></p>
+<ul>
+<li>
+<p>The Tyntec HTTP API is used to send SMS</p>
+</li>
+<li>
+<p>As a reply EFS get an identifier of the SMS procedure at Tyntec</p>
+</li>
+<li>
+<p>Tyntec sends the SMS to the enduser</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>EFS software</strong></p>
+<ul>
+<li>
+<p>stores the Tyntec procedure ID</p>
+</li>
+<li>
+<p>A task in the cron-job Jobmaker will periodically request the delivery status of the stored Tyntec procedure IDs</p>
+</li>
+<li>
+<p>In case there is an update the respective entry in the EFS database will be updated</p>
+</li>
+</ul>
+</li>
+</ul>
+<p> </p>
+<p> </p>
+<p> </p>

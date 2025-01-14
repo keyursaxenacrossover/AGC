@@ -1,0 +1,66 @@
+<h2 id="h_01J69ZSCWBD3R1ZSZ2CX9EK94T">Table of Contents</h2>
+<ul>
+<li>
+<a href="#header-1">EFS Survey</a>
+<ul>
+<li>
+<a href="#header-3">Recently used question types</a>
+<ul>
+<li><a href="#header-5">Improvements to the sample overview of a project</a></li>
+<li><a href="#header-6">More options for single response question types</a></li>
+<li><a href="#header-7">Survey filters now support wildcards</a></li>
+<li><a href="#header-8">Layout templates for question types</a></li>
+<li><a href="#header-9">IP Restrictions in Survey Projects</a></li>
+<li><a href="#header-10">Other changes in EFS Survey</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#header-12">EFS Panel</a>
+<ul>
+<li><a href="#header-14">Domain mapping for Portals and Panel Websites</a></li>
+<li><a href="#header-15">Adding of panelists to multiple groups</a></li>
+</ul>
+</li>
+<li>
+<a href="#header-17">Portals</a>
+<ul>
+<li><a href="#header-19">New guide type: Topic</a></li>
+<li><a href="#header-20">New invitation mode for guides: Shareable link</a></li>
+<li><a href="#header-21">Access control for Guides-Monitoring – “layered access”</a></li>
+<li><a href="#header-22">Other improvements to Portals and Guides</a></li>
+<li><a href="#header-23">User defined topics in IDEA guide setup</a></li>
+</ul>
+</li>
+<li><a href="#header-25">Service Layer</a></li>
+</ul>
+<div class="expand-macro"> </div>
+<h1 id="header-1">EFS Survey</h1>
+<h2 id="header-3">Recently used question types</h2>
+<p>To improve usability in the questionnaire editor, the new question type dialog now provides a "recently used" view, which contains up to ten last used question types per user. Since most surveys are using only a small subset of our question types, this speeds up the creation of a survey, by showing all recently used question types from different categories in a single view.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20997834804626" alt="image-20200629-092924.png"></p>
+<p>Accessibility improvements in Responsive Layout 3</p>
+<p>The accessibility of Survey Layout 3 has been further improved for users with disabilities. The questions now contain additional guidance information when filling out lists of answers and DAC checks notifications will automatically be read to the user by the screen reader.</p>
+<h3 id="header-5">Improvements to the sample overview of a project</h3>
+<p>The sample feature in panel and master data project types has now a new header across all sub-screens and the new header also allows easy navigation between samples within a project. This allows better orientation when working with different browser tabs and different samples in EFS and reduces errors, such as editing, or invitation, of the wrong sample.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20997848834578" alt="Screenshot 2020-06-29 at 11.38.17.png"></p>
+<h3 id="header-6">More options for single response question types</h3>
+<p>Existing question types were extended with new functions:</p>
+<ul>
+<li>
+<p><em>Single response list with icons</em> question type now also supports <em>Randomization</em> and <em>Missing Values</em></p>
+</li>
+<li>
+<p><em>Dynamic answer option</em> question type now also supports "<em>Randomization</em>"</p>
+</li>
+</ul>
+<h3 id="header-7">Survey filters now support wildcards</h3>
+<p>You can now use #wildcards#, e.g. #v_1#, as a value in standard filters of a survey, allowing users to compare answers of a question with a given answer of a different question without the need to use the alternative or LUA filter.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20997902264722" alt="image-20201019-094547.png"></p>
+<h3 id="header-8">Layout templates for question types</h3>
+<p>EFS Survey now supports editing of templates for all question types in Responsive Layout 3. Until now, it was only possible to edit some selected templates, with this release, it is now possible to introduce small modifications through the Pro-Editor to any question type, without the need to use the question type editor.</p>
+<p>In a project, by going to the layout editor and selecting the Pro editor, a new template section “Additional Question-Type templates” is available, with a list of all templates used by the various question types. Click on edit on any of the templates, to customise it.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20997849264914" alt="image-20200629-102631.png"></p>
+<h3 id="header-9">IP Restrictions in Survey Projects</h3>
+<p>

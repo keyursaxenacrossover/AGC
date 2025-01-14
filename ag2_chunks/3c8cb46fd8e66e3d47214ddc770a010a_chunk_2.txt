@@ -1,0 +1,40 @@
+22datasource%22:%22P8E80F9AEF21F6940%22,%22queries%22:%5B%7B%22refId%22:%22A%22,%22expr%22:%22%7Bnamespace%3D%5C%22tr9043%5C%22,%20job%3D%5C%22tr9043%2Fnginx%5C%22%7D%20%21~%20%60PHP%20Warning%60%20%7C~%20%6082%5C%5C.68%5C%5C.16%5C%5C.244%7C91%5C%5C.149%5C%5C.202%5C%5C.234%7C81%5C%5C.135%5C%5C.6%5C%5C.171%7C2%5C%5C.217%5C%5C.33%5C%5C.83%7C81%5C%5C.129%5C%5C.170%5C%5C.194%7C81%5C%5C.157%5C%5C.66%5C%5C.79%7C92%5C%5C.9%5C%5C.234%5C%5C.52%7C81%5C%5C.174%5C%5C.144%5C%5C.193%60%20%7C~%20%60%60%22,%22queryType%22:%22range%22,%22datasource%22:%7B%22type%22:%22loki%22,%22uid%22:%22P8E80F9AEF21F6940%22%7D,%22editorMode%22:%22builder%22%7D%5D,%22range%22:%7B%22from%22:%221718668800000%22,%22to%22:%221718841599000%22%7D%7D%7D&amp;orgId=1">a Grafana Loki query</a>:</p>
+<div class="dark bg-gray-950 contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative">
+<div class="overflow-y-auto p-4" dir="ltr">
+<code class="!whitespace-pre hljs language-loki">{namespace="tr9043", job="tr9043/nginx"} |~ "82.68.16.244"
+</code><br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21739279838610">
+</div>
+</div>
+<ul>
+<li>This search allows identifying if the registration keys (LMI keys) were accessed, either in the initial request or through the referrer, using the IP addresses.</li>
+<li>To process Grafana logs and extract the codes from logs for a large list, you have the following options:
+<ul>
+<li>Simply download the files and process via editor using RegEx search and Replace to process further via Excel</li>
+<li>If you want to find out about manipulating the displayed logs directly through Grafana, please take a look here: <a href="https://grafana.com/blog/2021/08/09/new-in-loki-2.3-logql-pattern-parser-makes-it-easier-to-extract-data-from-unstructured-logs/">new-in-loki-2.3-logql-pattern-parser</a>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="h_01J964YG3EMPF5BBZPQYM6GV9N">Step 3: Identify Duplicate Key Usage</h4>
+<p>If multiple panelists have used the same LMI key, it indicates a duplication issue.</p>
+<p>Use the following SQL query to find such duplications:</p>
+<ul>
+<li>Prepare a list of keys used by the problematic IPs (from step 2 above)</li>
+<li>Look for these keys in our DB</li>
+</ul>
+<div class="dark bg-gray-950 contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative">
+<pre class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-sql"><span class="hljs-keyword">SELECT</span> 
+    pa.uid, 
+    pa.pseudonym, 
+    pa.penter_date, 
+    prk.rkey 
+<span class="hljs-keyword">FROM</span> 
+    panel_recruitment_keys <span class="hljs-keyword">AS</span> prk 
+    <span class="hljs-keyword">LEFT</span> <span class="hljs-keyword">JOIN</span> panel_att <span class="hljs-keyword">AS</span> pa <span class="hljs-keyword">ON</span> (prk.uid <span class="hljs-operator">=</span> pa.uid) 
+<span class="hljs-keyword">WHERE</span> 
+    prk.rkey <span class="hljs-keyword">IN</span> ( "...", "...");  <span class="hljs-comment">-- Add relevant keys here</span>
+</code></pre>
+</div>
+<ul>
+<li>This query will return all instances where the same LMI key was used by other panelists, which should not occur as keys are designed for single use.</li>
+<li>So the result of this query,

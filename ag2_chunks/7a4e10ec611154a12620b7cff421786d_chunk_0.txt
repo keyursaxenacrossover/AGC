@@ -1,0 +1,59 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K" class="wysiwyg-text-align-justify">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article provides a comprehensive guide on how to contact participant groups in a survey project. It covers various actions for sending emails, testing mail dispatch, and sending invitation emails.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">The e-mail dispatch options, which are opened via the<strong> Contact Participant groups</strong> button, allow you to target emails to specific participant groups without performing a search in participant administration. This guide explains the available dispatch options and how to use them effectively.</p>
+<ul>
+<li><a href="#actions">Actions</a></li>
+<li><a href="#testing-mail-dispatch">Testing Mail Dispatch</a></li>
+<li><a href="#send-invitation-mails">Send Invitation Mails</a></li>
+</ul>
+<h2 id="actions" class="wysiwyg-text-align-justify">Actions</h2>
+<p class="wysiwyg-text-align-justify">You can trigger the following actions by clicking on the respective link:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Send a test e-mail to yourself</strong>: This enables you to send a test e-mail to a user-defined email address and optionally create a corresponding tester account at the same time.</p>
+</li>
+<li>
+<p><strong>Send invitation emails</strong>: Will automatically select all persons existing in participant administration, irrespective of their disposition code (except participants with disposition code 15). Clicking here will open the mail dispatch window, and you can either write an e-mail or select a mail template.</p>
+</li>
+<li>
+<p><strong>Send invitation emails (only those who haven’t gotten an invitation so far)</strong>: Will automatically select all persons who have not been invited yet (disposition code = 11). “Invitation mail” type templates are available in the mail dispatch window.</p>
+</li>
+<li>
+<p><strong>Send reminders</strong>: This will automatically select all persons who have not yet started the survey or who have not yet completed it. You can choose which participants are reminded: only those with disposition codes 11, and 12 or all participants with disposition codes 11, 12, 20, 21, 22, 23. In the mail dispatch window, you can then select the template for the reminder mail.</p>
+</li>
+<li>
+<p><strong>Inform successful participants</strong>: Will automatically select all participants who have finished the survey (disposition code 31, 32). Therefore, this function is particularly well suited for thank-you emails. “Invitation mail” type templates are available in the mail dispatch window.</p>
+</li>
+<li>
+<p><strong>E-mail to first page viewers</strong>: Will automatically select all persons who have viewed the first page of the survey but have not clicked on the Submit button (disposition code 20). These participants can then be sent a specific reminder mail.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="testing-mail-dispatch" class="wysiwyg-text-align-justify">Testing Mail Dispatch</h2>
+<p class="wysiwyg-text-align-justify">With the <strong>Send test e-mail to yourself</strong> option you can send a test e-mail to a user-defined e-mail address and optionally create a corresponding tester account at the same time.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21012276395410" alt="Send test mail.jpg"></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>You can enter your own or any other e-mail address.</p>
+<ul>
+<li>
+<p>If the specified e-mail address already exists in the participant administration of the project, the e-mail will be sent to the respective participant.</p>
+</li>
+<li>
+<p>If there is no participant with the specified e-mail address, a new tester account will be created based on your input and the e-mail will be sent to this account.</p>
+</li>
+<li>
+<p>Please note that the specified e-mail address will be used both as recipient and sender recipient addresses, even if you select a mail template with other values.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>You can select the mail template (type: invitation mail). If you want the recipient of the test e-mail to log in and test the survey, the template should contain wildcards for the login data, i.e. survey link, code, and/or password. When sending the mail, these wildcards will be replaced with the corresponding data of the tester.</p>
+</li>
+<li>
+<p>If you are not using an already existing tester, you can, in addition to the e-mail address and mail template, also specify the first name and name of the new tester account to be created. If the mail template contains the wildcards #u_firstname# and #u_name#, these will be replaced with the respective details. Other wildcards will be replaced only if an appropriately prepared set of participant data is available.</p>
+</li>
+<li>
+<p>To try out the test

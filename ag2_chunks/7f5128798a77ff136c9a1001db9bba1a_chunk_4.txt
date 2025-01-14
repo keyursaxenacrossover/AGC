@@ -1,0 +1,76 @@
+.g. <em>setVariableValue("v_1", getQuotaCurrentValue(1))</em></p>
+<p class="wysiwyg-text-align-justify"><em>Data types</em></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>id <em>int</em> - quota ID</p>
+</li>
+<li>
+<p>returns <em>int</em></p>
+</li>
+</ul>
+<h4 id="getquotafillingdegree-id" class="wysiwyg-text-align-justify"><em><strong>getQuotaFillingDegree(id)</strong></em></h4>
+<p class="wysiwyg-text-align-justify">Returns the quota's filling degree. E.g. <em>setVariableValue("v_1", </em>getQuotaFillingDegree(1)*100 .. " %")</p>
+<p class="wysiwyg-text-align-justify"><em>Data types</em></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>id <em>int</em> - quota ID</p>
+</li>
+<li>
+<p>returns <em>double</em></p>
+</li>
+</ul>
+<h4 id="getquotaids" class="wysiwyg-text-align-justify"><em><strong>getQuotaIds()</strong></em></h4>
+<p class="wysiwyg-text-align-justify">Returns an array of available quota IDs.</p>
+<p class="wysiwyg-text-align-justify"><em>Data types</em></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>returns <em>array</em></p>
+</li>
+</ul>
+<h4 id="count-condition" class="wysiwyg-text-align-justify"><em><strong>count(condition) </strong></em></h4>
+<p class="wysiwyg-text-align-justify">Returns the number of participants which match the specified condition and can be used to display statistics to participants or dynamically routing in filters depending on answers given by other participants. WARNING! This function has an impact on the performance of EFS and should only be used on surveys with low participation. For filing quotas, please use the built-in quota functionality in EFS as these are more efficient for this task.</p>
+<p class="wysiwyg-text-align-justify"><em>Data types</em></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>condition <em>string</em> - conditional expression e.g. <em>(v_1=1 AND v_2=2)</em></p>
+</li>
+<li>
+<p>returns <em>int</em> or <em>bool</em></p>
+</li>
+</ul>
+<h4 id="in_list-list_id" class="wysiwyg-text-align-justify"><em><strong>in_list(list_id)</strong></em></h4>
+<p class="wysiwyg-text-align-justify">Checks if the current list_element is also contained in the specified list.</p>
+<p class="wysiwyg-text-align-justify"><em>Data types</em></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>list_id <em>string</em> - Id of a list, e.g. <em>"l_2"</em></p>
+</li>
+<li>
+<p>returns <em>bool</em></p>
+</li>
+</ul>
+<h4 id="is_repeated_participation" class="wysiwyg-text-align-justify"><em><strong>is_repeated_participation()</strong></em></h4>
+<p class="wysiwyg-text-align-justify">This function checks whether the participant has already taken part in the survey and is only applicable in Panel surveys (PA and MD).</p>
+<p class="wysiwyg-text-align-justify"><em>Data types</em></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>returns <em>int</em>, 0 if false or 1 if true</p>
+</li>
+</ul>
+<h4 id="is_assigned_in_or_below-check_metaname-metanames" class="wysiwyg-text-align-justify"><em><strong>is_assigned_in_or_below(check_metaname, metanames)</strong></em></h4>
+<p class="wysiwyg-text-align-justify">Checks whether the participant is part of the specified units or subunits in the org-structure of the ES project. Only applicable in Employee survey.</p>
+<p class="wysiwyg-text-align-justify"><em>Data types</em></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>check_metaname <em>string</em> - metaname</p>
+</li>
+<li>
+<p>metanames <em>array</em> - list of metanames the participant is assigned to</p>
+</li>
+<li>
+<p>returns <em>bool</em></p>
+</li>
+</ul>
+<h4 id="is_assigned_in-check_value-codes" class="wysiwyg-text-align-justify"><em><strong>is_assigned_in(check_value, codes)</strong></em></h4>
+<p class="wysiwyg-text-align-justify">Checks whether the participant's metaname code is assigned to the given unit metanames (array of codes). Only applicable in Employee survey.</p>
+<p class="wysiwyg-text-align-

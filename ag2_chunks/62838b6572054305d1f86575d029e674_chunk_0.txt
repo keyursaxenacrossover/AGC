@@ -1,0 +1,40 @@
+<p class="wysiwyg-text-align-justify"><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p class="wysiwyg-text-align-justify">This article provides comprehensive guidance on managing Exchange Teams in EFS Secure Exchange. It covers the creation, viewing, editing, and rights administration of exchange teams, as well as the assignment of user teams to these exchange teams.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">Exchange Teams in EFS Secure Exchange are used to manage access rights for file exchanges.  First, create exchange teams, configure their rights, and assign user teams to these exchange teams. Ensure all involved persons have EFS accounts and are assigned to user teams. If needed, create user accounts and assign them to appropriate teams. Grant access rights based on the required level of access: for the File exchange menu in the EFS Survey admin area, use the ACL right "area_www"; for the separate fm login, use the ACL right "area_fm". If access rights vary within a team, create additional user teams and reassign members as necessary.</p>
+<p class="wysiwyg-text-align-justify">This guide explains how to create and manage these teams, assign user teams, and configure appropriate access rights for different scenarios.</p>
+<ul class="wysiwyg-text-align-justify">
+<li><a href="#viewing_editing_exchange_teams">Viewing and Editing Exchange Teams</a></li>
+<li><a href="#creating_new_exchange_team">Creating a New Exchange Team</a></li>
+<li><a href="#assigning_teams_rights_admin">Assigning Teams and Rights Administration</a></li>
+</ul>
+<h2 id="viewing_editing_exchange_teams" class="wysiwyg-text-align-justify">Viewing and Editing Exchange Teams</h2>
+<p class="wysiwyg-text-align-justify">Exchange teams are managed through the <strong>Users → Exchange teams</strong> menu. This section provides an overview of existing exchange teams and available edit options.</p>
+<h3 id="access_exchange_teams" class="wysiwyg-text-align-justify">Accessing Exchange Teams</h3>
+<p class="wysiwyg-text-align-justify">1. Navigate to the <strong>Users → Exchange teams</strong> menu.</p>
+<p class="wysiwyg-text-align-justify">2. If you cannot see this menu, your account may lack the ACL right "exchange_teams". Contact support to have this right activated.</p>
+<h3 id="edit_options" class="wysiwyg-text-align-justify">Edit Options</h3>
+<p class="wysiwyg-text-align-justify">The following edit options are available in the "Actions" column:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Edit: Change the name of the team</li>
+<li>Change rights of this team: Assign user teams and define their rights</li>
+<li>List members of this exchange team: View team members grouped by user teams</li>
+<li>Delete: Remove the team after confirmation</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015069082898"></p>
+<h2 id="creating_new_exchange_team" class="wysiwyg-text-align-justify">Creating a New Exchange Team</h2>
+<p class="wysiwyg-text-align-justify">To create a new exchange team, you need the "exchange_teams" right and sufficient edit rights for the teams to be selected.</p>
+<h3 id="create_team_steps" class="wysiwyg-text-align-justify">Steps to Create a New Exchange Team</h3>
+<p class="wysiwyg-text-align-justify">1. Click on the <strong>Create exchange team</strong> button in the Exchange teams menu.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015069088274"></p>
+<p class="wysiwyg-text-align-justify">2. Enter the team name using characters a-z, 0-9, _ and -.</p>
+<p class="wysiwyg-text-align-justify">3. In "Members with upload rights", specify teams whose members should have read and write rights for their own files only. You can select multiple teams while holding CTRL key.</p>
+<p class="wysiwyg-text-align-justify">4. In "Members with change rights", specify teams whose members can change files of all team members.</p>
+<p class="wysiwyg-text-align-justify">5. Click <strong>Create team</strong> to confirm.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="assigning_teams_rights_admin" class="wysiwyg-text-align-justify">Assigning Teams and Rights Administration</h2>
+<p class="wysiwyg-text-align-justify">This section explains how to assign user teams to exchange teams and manage their access rights.</p>
+<h3 id="rights_configurations" class="wysiwyg-text-align-justify">Rights Configurations</h3>
+<ul class="wysiwyg-text-align-justify">
+<li>Upload right (read): Members can upload and download files, but only change or delete their own files.</li>
+<li>Change right (write): Members can upload, download, change, or delete all files of their

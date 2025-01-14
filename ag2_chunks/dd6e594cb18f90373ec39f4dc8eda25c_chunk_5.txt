@@ -1,0 +1,38 @@
+ not needed/useful since we have GUI access.</span></p>
+<ul>
+<li>
+<span class="wysiwyg-color-black40">Here are the account IDs for some common account names (to save time checking HurricaneUI to get <strong>account ID</strong>):</span>
+<ul>
+<li><span class="wysiwyg-color-black40">EFS-Production: 1006</span></li>
+<li><span class="wysiwyg-color-black40">EFS-Adhoc: 1007</span></li>
+<li><span class="wysiwyg-color-black40">EFS-Pending-Confirmation: 1047</span></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>For more detailed logging information, look for the following:
+<ul>
+<li>
+<strong>Queue logs</strong>: This shows when the mail was queued in Hurricane.</li>
+<li>
+<strong>Process logs</strong>: Indicates when the email was successfully dispatched or if there were issues.</li>
+<li>Review <strong>deferred emails</strong>: These logs indicate when emails were temporarily delayed and retried by the system.</li>
+</ul>
+</li>
+<li>Logs are partitioned by Day.</li>
+<li>You can use the messageID or rcptID for a quick match.</li>
+</ul>
+</li>
+</ul>
+<h2 id="h_01J79604RA91E8BMHTQ4XWZ7WB"><strong>4. Checking Cron Jobs in Grafana</strong></h2>
+<p><strong>Goal:</strong> Use Grafana logs to verify the status of the cron jobs involved in mail dispatch and notification ingestion.</p>
+<p><strong>When to use?</strong></p>
+<ul>
+<li>This can be useful if the emails are stuck in queue without being delivered, or if an email was delivered after a large delay than the expected delivery time.</li>
+<li>Usually, Hurricane UI shows no errors for this account, also Hurricane logs show no error, since mails are stuck waiting for the cronjob to pick them up.</li>
+</ul>
+<h4 id="h_01J7961PT83HF18MWW5A6KZW9R"><strong>Grafana Overview:</strong></h4>
+<p>Grafana provides insights into the performance and status of various processes, including the cron jobs responsible for mailing. Two key cron jobs are essential in the email sending and status feedback loops: <strong>snailmail</strong> and <strong>jobmaker </strong>(which starts <strong>pickupmailNotifications </strong>job).</p>
+<h3 id="h_01J7961PT8BBPQWN9TXMGFHJRK"><strong>4.1 Accessing Grafana (WIP: Access in progress)</strong></h3>
+<ol>
+<li>Log in to <strong>Grafana</strong> using the provided Azure AD credentials:<strong><br><a style="margin: 0px; padding: 0px; font-size: 14px; vertical-align: baseline; background: #fff7ed; cursor: pointer; text-decoration: none; color: #1f73b7; box-sizing: border-box; line-height: inherit; font-family: system-ui, -apple-system, BlinkMacSystemFont, ' Segoe UI' , Roboto, Oxygen-Sans, Ubuntu, Cantarell, ' Helvetica Neue' , Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal;" href="https://grafana.prod-de-03.customervoice360.com/login" rel="noopener noreferrer">https://grafana.prod-de-03.customervoice360.com/login</a><span style="color: #2f3941; font-family: system-ui, -apple-system, BlinkMacSystemFont, ' Segoe UI' , Roboto, Oxygen-Sans, Ubuntu, Cantarell, ' Helvetica Neue' , Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #fff7ed; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"> </span><br style="box-sizing: border-box; line-height: inherit; color: #2f3941; font-family: system-ui, -apple-system, BlinkMacSystemFont, ' Segoe UI' , Roboto, Oxygen-Sans, Ubuntu, Cantarell, ' Helvetica Neue' , Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background

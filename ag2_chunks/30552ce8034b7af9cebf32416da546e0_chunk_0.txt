@@ -1,0 +1,96 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K" class="wysiwyg-text-align-justify">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article provides a comprehensive guide to survey options in the questionnaire system, covering general settings, internal organization, login options, data types, and relevant verification.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">This guide focuses on the various configuration options available for surveys, including privacy settings, data handling, participant access, and fraud prevention measures.</p>
+<ul class="wysiwyg-text-align-justify">
+<li><a href="#general-options">General Options</a></li>
+<li><a href="#internal-organization">Internal Organization</a></li>
+<li><a href="#login-options">Login Options</a></li>
+<li><a href="#data-types">Data Types</a></li>
+<li><a href="#relevantid">RelevantID</a></li>
+</ul>
+<h2 id="general-options" class="wysiwyg-text-align-justify"><strong>General Options</strong></h2>
+<table class="wysiwyg-text-align-justify" style="height: 5618px;" border="1" width="794" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 354.0px;"> <col style="width: 406.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" style="width: 366.215px;" data-highlight-colour="#57d9a3">
+<p><strong>Section</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 420.486px;" data-highlight-colour="#57d9a3">
+<p><strong>Description</strong></p>
+</th>
+</tr>
+<tr>
+<td style="width: 358.194px;">
+<p>Privacy assistant</p>
+</td>
+<td style="width: 412.465px;">
+<p>By activating this function you can ensure GDPR-compliant data processing and survey execution.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 358.194px;">
+<p>Log changes to the questionnaire</p>
+</td>
+<td style="width: 412.465px;">
+<p>If this option has been ticked, all changes to the questionnaire for which variables were added or removed will be documented.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 358.194px;">
+<p>The questions are numbered consecutively</p>
+</td>
+<td style="width: 412.465px;">
+<p>This feature leads to an automatic consecutive numbering of questions 1 to n.</p>
+<p>Question type 998 (Text and HTML code), 911, filters, and rotation on page level will not be taken into consideration.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 358.194px;">
+<p>Prevent modification of already given answers when participants use browser functions to go back in the questionnaire</p>
+</td>
+<td style="width: 412.465px;">
+<p>If participants use browser functions (e.g. Browser Back or History) to go backward in the questionnaire and try to change already-given answers, the new entries will not be saved. Instead, the existing entries will be kept.</p>
+<p>Please note that the function cannot be combined with a displayed Back button: If the Back button is displayed, the respondent expects with the due right that a subsequent change of the values is possible.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 358.194px;">
+<p>Radio buttons for questions with a single response list can be deselected</p>
+</td>
+<td style="width: 412.465px;">
+<p>This feature works only if JavaScript is enabled.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 358.194px;">
+<p>Preventing usage of the right mouse button in a survey</p>
+</td>
+<td style="width: 412.465px;">
+<p>This feature is primarily used to protect content: It deactivates the context menu in the entire questionnaire. Please mind:</p>
+<ul>
+<li>
+<p>Keyboard commands however will not be suppressed.</p>
+</li>
+<li>
+<p>Using a question of the type “Text and image”, you can realize the same behavior for a particular questionnaire page.</p>
+</li>
+</ul>
+<p>The feature can also be used to prevent the usage of the browser’s Back button. For this, the survey must be opened in a pop-up window so that there is no menu bar.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 358.194px;">
+<p>The page is submitted automatically<br>after completion of all questions, if it contains only combinations<br>of the following question types...</p>
+</td>
+<td style="width: 412.465px;">
+<p>The respondent does not need to click on the Submit button on pages that only contain the specified combinations of question types.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 358.194px;">
+<p>Should a <strong>Back</strong> button be displayed?</p>
+</td>
+<td style="width: 412.465px;">
+<p>If this option has been activated, a real Back

@@ -1,0 +1,31 @@
+">We have already created the email template for the welcome email that employees receive after being added to the panel. Now create two email templates for the survey invitation that employees should receive after 2 and 6 months respectively. Enter #code_complete# as the placeholder for the link to the survey. Below you can see two examples of what the emails could look like.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014859706514"></p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014859687954"></p>
+<h3 id="Create-Master-Data-Record" class="wysiwyg-text-align-justify" data-renderer-start-pos="8481"><strong data-renderer-mark="true">Create Master Data Record</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="8508">Create a master data record in which the current phase of the panelist is recorded. To do this, proceed as follows:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="8627">In the <em data-renderer-mark="true">People</em> module, select the <strong data-renderer-mark="true">Master data</strong> menu item from the menu on the left-hand side.</p>
+</li>
+<li>
+<p class="wysiwyg-text-align-left" data-renderer-start-pos="8722">Click on <strong data-renderer-mark="true">Create master data</strong>.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014859690386"></p>
+</li>
+</ul>
+<ul class="wysiwyg-text-align-justify">
+<li data-renderer-start-pos="8722">Enter the name of the variable in the <strong data-renderer-mark="true">Variable name</strong> field. It should begin with "m_" or "md_" and be a maximum of 20 characters long. We chose "md_phase" as the name for our master data record.</li>
+<li data-renderer-start-pos="8956">Enter the name of your master data record in the <strong data-renderer-mark="true">Title</strong> field. In our case: "New employee – phase".</li>
+<li data-renderer-start-pos="9058">Select <strong data-renderer-mark="true">Integer (-128 to 127)</strong> as the type.</li>
+<li data-renderer-start-pos="9103">By default, you can only chose the option <strong data-renderer-mark="true">(default)</strong> as a category. If you would like to create further categories and sort your master data in these categories, you can find more information on this topic <a class="cc-1rn59kg" title="https://qbdocs.atlassian.net/wiki/spaces/DOC/pages/985105047#MasterData-SortingMasterDatabyCategories" href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20229153131026-Master-Data#h_01J3FKSAHMXJNF3PW4H91KBF5Z:~:text=answer%20categories%20function.-,Sorting%20Master%20Data%20by%20Categories,-Managing%20Master%20Data" data-testid="link-with-safety" data-renderer-mark="true">here</a>.</li>
+<li data-renderer-start-pos="9317">Keep the default setting for the other two points.</li>
+<li data-renderer-start-pos="9371">Click on <strong data-renderer-mark="true">Create</strong>.</li>
+<li data-renderer-start-pos="9391">The newly created master data record is now displayed in the list of master data.</li>
+<li data-renderer-start-pos="9476">Select it by clicking on the link under <strong data-renderer-mark="true">Variable</strong> or <strong data-renderer-mark="true">Title</strong>.</li>
+<li class="wysiwyg-text-align-left" data-renderer-start-pos="9538">Under<strong data-renderer-mark="true"> Answer categories</strong>, click on the <strong data-renderer-mark="true">Edit answer categories</strong> button.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014812780050">
+</li>
+</ul>
+<ul>
+<li>Enter the value <strong data-renderer-mark="true">1</strong> under <strong data-renderer-mark="true">Code</strong> and the category <strong data-renderer-mark="true">Phase 1</strong> under <strong data-renderer-mark="true">Answer categories</strong>.</li>
+<li>Click on <strong data-renderer-mark="true">Save</strong>.</li>
+<li>Enter the value <strong data-renderer-mark="true">2</strong> in the new empty field under <strong data-renderer-mark="true">Code</strong> and the category <strong data-renderer-mark="true">Phase 2</strong> under <strong data-renderer-mark="true">Answer categories</strong>.</li>
+<li>Click on <strong data-renderer-mark="true">Save</strong> again.</li>
+<li>Enter the value <strong data-renderer-mark="true">3</strong> in the new empty field under <strong data-renderer-mark="true">

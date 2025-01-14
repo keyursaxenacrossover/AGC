@@ -1,0 +1,206 @@
+_SURVEY_PARTICIPATION = 21<br>BONUS_SURVEY_BLOCK = 22<br>BONUS_QUOTA_FULL = 23<br>BONUS_MASTERDATA = 24<br>BONUS_REGISTRATION = 25<br>BONUS_TRIGGER = 26<br>BONUS_PROMOTION_GRATIFICATION = 30<br>BONUS_PROMOTION_ASSIGN = 31<br>BONUS_MISC = 40<br>BONUS_BY_ADMINISTRATOR = 41<br>BONUS_STORNO = 42<br>BONUS_TRANSFER2 = 50<br>BONUS_TRANSFER_DEBIT = 51<br>BONUS_COUPON_PAYOUTS = 60<br>BONUS_DONATION_PAYOUTS = 70<br>BONUS_MISC_DEDUCTION = 80<br>BONUS_ADMIN_DEDUCTION = 81<br>BONUS_COMMUNITY_PARTICIPATION = 91<br>BONUS_TODOLIST = 92</p>
+<p> </p>
+<h2 id="header-25">Reporting+ Codes</h2>
+<table data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<th>
+<p><u>Status</u></p>
+</th>
+<th>
+<p><u> <font>Meaning</font> </u></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>400</p>
+</td>
+<td>
+<p>ERR_ARGUMENT_INVALID</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>401</p>
+</td>
+<td>
+<p>ERR_SESSION_INVALID</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>403</p>
+</td>
+<td>
+<p>ERR_READONLY</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>405</p>
+</td>
+<td>
+<p>ERR_NO_ACCESS_RIGHT</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>501</p>
+</td>
+<td>
+<p>DEFAULT</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<table data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<th>
+<p><u> <font>Status</font> </u></p>
+</th>
+<th>
+<p><u> <font>Meaning</font> </u></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>13001</p>
+</td>
+<td>
+<p>ERR_PPT_TOO_MANY_SLIDES</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>13051</p>
+</td>
+<td>
+<p>ERR_XLS_TOO_MANY_ROWS</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>13052</p>
+</td>
+<td>
+<p>ERR_XLS_TOO_MANY_WORKSHEETS</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>13053</p>
+</td>
+<td>
+<p>ERR_XLS_TOO_MANY_COLUMNS</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>13100</p>
+</td>
+<td>
+<p>ERR_CHARTS_DIR_NOT_EXIST</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>13101</p>
+</td>
+<td>
+<p>ERR_CHARTS_CREATE_CHARTDIR</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>13102</p>
+</td>
+<td>
+<p>ERR_CHARTS_CREATE_IMG</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>13666</p>
+</td>
+<td>
+<p>ERR_UNKNOWN_CHARTTYPE</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br>Table: survey_reporting_publication_job<br>Column: status</p>
+<table data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<th>
+<p><u>Job Status</u></p>
+</th>
+<th>
+<p><u> <font>Meaning</font> </u></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>-1</p>
+</td>
+<td>
+<p>STATE_ABORTED = job was aborted</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>0</p>
+</td>
+<td>
+<p>STATE_NEW = job is new and was not triggered yet</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>STATE_RUNNING = job is currently running</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>STATE_FINISHED = job is finished</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>3</p>
+</td>
+<td>
+<p>STATE_RECOVERABLE = job was aborted, but may work next time</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>4</p>
+</td>
+<td>
+<p>STATE_PPT_LIMIT = job failed due to ppt limit</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>5</p>
+</td>
+<td>
+<p>STATE_XLS_LIMIT = job failed due to xls limit</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<h2 id="header-26"><font>Sample status</font></h

@@ -1,0 +1,24 @@
+.com/hc/article_attachments/21015136277778"></p>
+<p><span style="color: #172b4d; background-color: #ffffff;">Detail configuration:</span></p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015136284562"></p>
+<p data-renderer-start-pos="1291">Variable to be recoded: c_000x</p>
+<p data-renderer-start-pos="1323">Value: MOD(#lfdn# , 5 ) + 1</p>
+<p data-renderer-start-pos="1352">For 6 Random-numbers use 6 instead of 5..<br>If you wanna see the values of the lfdn and c_000x (user-defined-variable) use the following code in the questionnaire text or where you want</p>
+<p data-renderer-start-pos="1352"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015166328338"></p>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="h_01HGKSMPRSQNKXBXQXD4QXBG9S">What is lfdn?</h3>
+<p>lfdn stands for "laufende Feldnummer" in German, which translates to "consecutive field number" in English. Every participant has a unique lfdn, which is essentially a participant's consecutive number. By using this number with the Modulo function, you can create a random trigger with a uniform distribution.</p>
+<h3 id="h_01HGKSMPRSQNKXBXQXD4QXBG9T">Why is this method better than using a Random-Trigger with infinite participants?</h3>
+<p>This method using Modulo and Recoding-Trigger is more efficient because it avoids the complexity of running through all participants, which can cause slow installation, participant rejection, and long loading times for the trigger. It provides a simpler and faster way to achieve a uniform distribution for random triggering.</p>
+<p> </p>
+</article>-defined-variable) use the following code in the questionnaire text or where you want</p>
+<p data-renderer-start-pos="1352"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015166328338"></p>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="h_01HGKSMPRSQNKXBXQXD4QXBG9S">What is lfdn?</h3>
+<p>lfdn stands for "laufende Feldnummer" in German, which translates to "consecutive field number" in English. Every participant has a unique lfdn, which is essentially a participant's consecutive number. By using this number with the Modulo function, you can create a random trigger with a uniform distribution.</p>
+<h3 id="h_01HGKSMPRSQNKXBXQXD4QXBG9T">Why is this method better than using a Random-Trigger with infinite participants?</h3>
+<p>This method using Modulo and Recoding-Trigger is more efficient because it avoids the complexity of running through all participants, which can cause slow installation, participant rejection, and long loading times for the trigger. It provides a simpler and faster way to achieve a uniform distribution for random triggering.</p>
+<p> </p>
+</article>

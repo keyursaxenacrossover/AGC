@@ -1,0 +1,63 @@
+" data-colwidth="171" data-cell-background="#57d9a3" aria-sort="none">
+<div class="ak-renderer-tableHeader-sortable-column">
+<p class="wysiwyg-indent1" data-renderer-start-pos="9174"><strong data-renderer-mark="true">Field</strong></p>
+</div>
+</th>
+<th class="ak-renderer-tableHeader-sortable-column__wrapper" style="padding: 0px; text-align: left; vertical-align: top; background-color: #4bce97;" colspan="1" rowspan="1" data-colwidth="589" data-cell-background="#57d9a3" aria-sort="none">
+<div class="ak-renderer-tableHeader-sortable-column">
+<p class="wysiwyg-indent1" data-renderer-start-pos="9183"><strong data-renderer-mark="true">Meaning</strong></p>
+</div>
+</th>
+</tr>
+<tr>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="171">
+<p data-renderer-start-pos="9196">Start date; End date</p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="589">
+<p data-renderer-start-pos="9220">In this area, you can specify exactly over which time interval you want to calculate the performance data.</p>
+<p data-renderer-start-pos="9328">Clicking on the <strong data-renderer-mark="true">Calendar</strong> icon to the right of the date will open a dialog containing a calendar.</p>
+<p data-renderer-start-pos="9426">Please note that the time interval over which you can request evaluations must not include more than seven days for performance reasons. Furthermore, the permissible evaluation period is limited by the maximum period for which data can remain in the watchdog, which is limited to a maximum of 30 days.</p>
+<p data-renderer-start-pos="9725">You can change the archiving deadline in the “Maximum of days in watchdog” field on the Database report tab. However, the maximum of 30 days cannot be exceeded.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="sentinel-right"> </div>
+</div>
+</div>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="9890"><strong data-renderer-mark="true">Overall performance</strong></p>
+<div class="pm-table-container with-shadow-observer wysiwyg-text-align-justify" data-layout="custom">
+<div class="cc-12efcmn"> </div>
+<div class="pm-table-wrapper">
+<table style="border-collapse: collapse; height: 1px; width: 760px;" border="1" data-testid="renderer-table" data-number-column="false" data-table-width="760" data-layout="default">
+<colgroup> <col style="width: 203px;"> <col style="width: 555px;"> </colgroup>
+<tbody>
+<tr style="height: 47.1289px;">
+<th class="ak-renderer-tableHeader-sortable-column__wrapper" style="padding: 0px; text-align: left; vertical-align: top; background-color: #4bce97;" colspan="1" rowspan="1" data-colwidth="204" data-cell-background="#57d9a3" aria-sort="none">
+<div class="ak-renderer-tableHeader-sortable-column">
+<p class="wysiwyg-indent1" data-renderer-start-pos="9915"><strong data-renderer-mark="true">Overall performance</strong></p>
+</div>
+</th>
+<th class="ak-renderer-tableHeader-sortable-column__wrapper" style="padding: 0px; text-align: left; vertical-align: top; background-color: #4bce97;" colspan="1" rowspan="1" data-colwidth="556" data-cell-background="#57d9a3" aria-sort="none">
+<div class="ak-renderer-tableHeader-sortable-column">
+<p class="wysiwyg-indent1" data-renderer-start-pos="9938"><strong data-renderer-mark="true">Meaning</strong></p>
+</div>
+</th>
+</tr>
+<tr>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="204">
+<p data-renderer-start-pos="9951">Current front-end load</p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="556">
+<p data-renderer-start-pos="9977">The current load on the front-end server, is divided by the number of available cores.</p>
+</td>
+</tr>
+<tr>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="204">
+<p data-renderer-start-pos="10066"># Requests</p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="556">
+<p data-renderer-start-pos="10080">The total number of questionnaire requests in the specified period.</p>
+</td>
+</tr>
+<tr>

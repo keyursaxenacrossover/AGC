@@ -1,0 +1,37 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3511844878">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3511844878</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">What needs to be done:</a></li>
+<ul>
+<li><a href="#header-3">1. execute support/iam/migration.php</a></li>
+<li><a href="#header-4">2. execute support/iam/okta2okta.php</a></li>
+<li><a href="#header-5">3. deactivate SSO module</a></li>
+<li><a href="#header-6">4. swap iam config variables in system configuration of installation</a></li>
+<li><a href="#header-7">5. swap iam_reference tables</a></li>
+<li><a href="#header-8">6. re-activate SSO module</a></li>
+<li><a href="#header-9">7. run final test</a></li>
+</ul>
+</ul>
+</ul><p></p><ac:parameter ac:name="panelIcon">:warning:</ac:parameter><ac:parameter ac:name="panelIconId">atlassian-warning</ac:parameter><ac:parameter ac:name="bgColor">#FF8F73</ac:parameter><ac:rich-text-body><p>these steps assume that Tivian Access has been successfully configured, tested and confirmed by customer or intern check with a test user, do not proceed if any of those points are not applicable, for more information see <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Questback - Tivian Domain Migration Steps" ri:version-at-save="24"></ri:page><ac:link-body>Questback - Tivian Domain Migration Steps</ac:link-body></ac:link> </p></ac:rich-text-body><h1 id="header-1">What needs to be done:</h1><h2 id="header-3">1. execute support/iam/migration.php</h2><p>move into i [technical name] &amp; cd www</p><p>or </p><p>cd /nfs/installations/[technicalname]/nfs/opst/[technicalname].customervoice360.com/htdocs/www</p><pre><code class="language-text">storck_nikolaus@servicegw-prod-us-02:[/nfs/installations/cg9217/nfs/opst/cg9217.customervoice360.com/htdocs/www]
+$ php support/iam/migration.php
+What do you want to do?
+[1] Admin user migration
+[2] Portal migration
+[3] Admin users activation
+[4] Portal ClientGroup migration
+[5] User ClientGroup migration
+[6] Convert admin user from questback.com to tivian.com domain
+[7] Convert panelists from questback.com to tivian.com domain
+[8] Exit</code></pre><p>run [1], [5] &amp; [6] always; </p><ac:adf-extension><ac:adf-node type="decision-list"><ac:adf-attribute key="local-id">1b364d65-ccda-42df-9621-f8e5b25e702c</ac:adf-attribute><ac:adf-node type="decision-item"><ac:adf-attribute key="local-id">ae948044-386c-4955-9e2a-39acc05f91a1</ac:adf-attribute><ac:adf-attribute key="state">DECIDED</ac:adf-attribute><ac:adf-content>[2], [4] &amp; [7] only if ‘Portal’ module is active</ac:adf-content></ac:adf-node></ac:adf-node><ac:adf-fallback><ul class="decision-list"><li>[2], [4] &amp; [7] only if ‘Portal’ module is active</li></ul></ac:adf-fallback></ac:adf-extension><h2 id="header-4">2. execute support/iam/okta2okta.php</h2><p></p><pre><code class="language-text">storck_nikolaus@servicegw-prod-us-02:[/nfs/installations/zv1045/nfs/opst/zv1045.customervoice360.com/htdocs/www]
+$ php support/iam/okta2okta.php
+Current Okta Application touchstone zv1045.customervoice360.com EFS is reachable
+---------------------------------------------------------------------------------------------------------------------
+|key                |current Okta                                                                                   |
+---------------------------------------------------------------------------------------------------------------------
+|iam_well_known_url |https://access.questback.com/oauth2/aus5unxrk4xoGqlPI416/.well-known/oauth-authorization-server|
+|iam_api_token      |008c4oTSR3RtUGKfYb8Ovdhq02NkkJ_nGYF8b4Hgux                                                     |
+|iam_client_id      |0oa1b3aqwarB1GZEo417                                                                           |
+|iam_client_secret  |7Ghpssp7uKoqu6Nh-LMJl0-CtAMcurJ9Lq-PaTO9                                                       |
+|iam_client_group_id|00g1

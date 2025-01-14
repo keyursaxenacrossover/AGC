@@ -1,0 +1,32 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1058275342">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1058275342</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">Portals Frontend Handover - What are Todos: DONEGreen</a></li>
+</ul>
+</ul><p>Most changes in the Portals Frontend took place in the lifecycle management of the app (app start and logout).</p><p>The changed respective workflow is shown below.</p><p><br></p><p><strong>Queues:</strong></p><p>Start App Queue - this queue is run during the start of portals:</p><p><a href="https://www.lucidchart.com/documents/edit/cff6789b-6e2c-4faf-b39a-ab6e60e47fa6/0_0?beaconFlowId=0797F3764D4EB949">https://www.lucidchart.com/documents/edit/cff6789b-6e2c-4faf-b39a-ab6e60e47fa6/0_0?beaconFlowId=0797F3764D4EB949</a></p><p><br></p><p>Logout Queue - this queue is run if a logout is triggered:</p><p><a href="https://www.lucidchart.com/documents/edit/cff6789b-6e2c-4faf-b39a-ab6e60e47fa6/aMp3dIqgr6SD?beaconFlowId=0797F3764D4EB949">https://www.lucidchart.com/documents/edit/cff6789b-6e2c-4faf-b39a-ab6e60e47fa6/aMp3dIqgr6SD?beaconFlowId=0797F3764D4EB949</a></p><p><br></p><p><strong>Notable Changes:</strong></p><ul>
+<li><p>Private pages will redirect to Okta immediately</p></li>
+<li><p>Public pages might show a sign-in button → this trigges the "<span style="color: rgb(0,0,0);">RedirectUnauthenticatedUserToLogin</span>" queue</p></li>
+<li><p>An OpenID config gets loaded before authentication that contains some OpenID values but also determines if the IdentityAccessManager is enabled.</p></li>
+<li><p>A login_hint might be passed that will be forwarded when redirecting to Okta</p></li>
+<li><p>An idpID might be passed that will be forwarded when redirecting to Okta</p></li>
+<li><p>The different authentication flows are now separated</p></li>
+<li><p>The different logout flows are also separated</p></li>
+</ul><p><br></p><p><strong>Components:</strong></p><ul>
+<li>
+<p>CMS</p>
+<ul><li><p>Login module will get a hint in Portals CMS that it will only show a login button.</p></li></ul>
+</li>
+<li>
+<p>Outbound view</p>
+<ul>
+<li><p>Login module will show a "Sign In" button that redirects to our Identity Provider in case IdentityAccessManager is enabled</p></li>
+<li><p>An error page was added that is shown in case an authenticated user does not exist as panelist in the panel administration or does not have permission to the portal</p></li>
+</ul>
+</li>
+</ul><p><br></p><p><br></p><h1 id="header-1">Portals Frontend Handover - What are Todos: <ac:parameter ac:name="title">DONE</ac:parameter><ac:parameter ac:name="colour">Green</ac:parameter> </h1><ul>
+<li><p>Update documentation to the latest state <ac:emoticon ac:emoji-fallback=":check_mark:" ac:emoji-id="atlassian-check_mark" ac:emoji-shortname=":check_mark:" ac:name="tick"></ac:emoticon> </p></li>
+<li><p>Create a meeting with the portals team <ac:emoticon ac:emoji-fallback=":check_mark:" ac:emoji-id="atlassian-check_mark" ac:emoji-shortname=":check_mark:" ac:name="tick"></ac:emoticon> </p></li>
+<li><p>Also talk about tickets that are left (possible offer pairing) <ac:emoticon ac:emoji-fallback=":check_mark:" ac:emoji-id="atlassian-check_mark" ac:emoji-shortname=":check_mark:" ac:name="tick"></ac:emoticon> </p></li>
+</ul><p><br></p><p><br></p>

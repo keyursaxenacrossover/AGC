@@ -1,0 +1,47 @@
+li>
+<li><img style="aspect-ratio: auto;" src="https://central-supportdesk.zendesk.com/attachments/token/6uvL0GiL2uvFoYf4IqaeDxaI9/?name=image.png"></li>
+<li>If the domain is verified, then configurations are correct, customer needs to retry to send the email, or CS can generate a test email in queue to test the delivery</li>
+<li>If the domain is not found, raise a Saas CR to add it in SES, and get a confirmation if it is managed by customer or us.
+<ul dir="auto">
+<li>If managed by customer, request a zone file to be shared with the customer;</li>
+<li>Otherwise Saas should make the necessary changes.</li>
+<li>Note: domain <code>bncemail.com</code> was just updated by Saas today (12/17/2024), so if you find the sender from that domain, check if the unreachable emails were sent before or after that date.</li>
+</ul>
+</li>
+<li>If the domain is "pending" or "not verified" , Check <a href="https://docs.google.com/spreadsheets/d/1CQmDPjwnJPvtZDlpL9joDMdpn_gumZaLr5QAwCxKIvw/edit?gid=905412533#gid=905412533" rel="noopener noreferrer">this sheet</a> and look for the domain in CustomDomainTracking sheet<br><img style="aspect-ratio: auto;" src="https://central-supportdesk.zendesk.com/attachments/token/HXSdWtUcX2c3Avn4gQQ10ImG6/?name=image.png">
+<ul dir="auto">
+<li>If the domain is not found in that google sheet, ping VP and raymond.guirguis to check, it should be there since on ses</li>
+<li>Assuming the domain is found, get the customer name (colomn C), and look-up the drive location of zone files from <a href="https://docs.google.com/spreadsheets/d/1CQmDPjwnJPvtZDlpL9joDMdpn_gumZaLr5QAwCxKIvw/edit?gid=1867633889#gid=1867633889" rel="noopener noreferrer"><strong>PerCustomerAnalysis </strong></a>tab in the same sheet.</li>
+<li>Get the zone folder location from column "DNS zone files link" (AC), and look for the zone file for that domain.</li>
+<li>Provide this to the customer, they NEED to update their DNS records, as otherwise everything will fail (ex: ZD <a href="https://central-supportdesk.zendesk.com/agent/tickets/4585554">4585554</a>)</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="h_01JFB627EDFQ2PVXD38BZJ1F88"><strong>Verification:</strong></h3>
+<ul>
+<li>To verify a domain is verified in SES, as mentioned above, this can be check in AWS management console<br><img style="aspect-ratio: auto;" src="https://central-supportdesk.zendesk.com/attachments/token/I2vVQyutH5TV2VF8JX0AUkaQ5/?name=image.png">
+</li>
+<li>To verify the customer added a specific CNAME record, apply the following:
+<ul>
+<li>Get the expected CNAME record from the zone file (steps mentioned above to get zone file)</li>
+<li>Use command:
+<pre>nslookup -<span class="hljs-built_in">type</span>=cname &lt;CNAME VALUE&gt;._domainkey.&lt;DOMAIN NAME&gt;</pre>
+</li>
+<li>A valid response would look like this:<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/23364345816850">
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="h_01JFB5J5C0NQSS1CG666WS0Y34">Summary</h1>
+<p>This article provides a step-by-step guide to troubleshoot the issue of emails being stuck in the queue due to an unverified domain in SES. The solution involves checking the email flow, confirming the sender's domain, verifying the domain in SES, and updating DNS records if necessary.</p>
+<h2 id="h_01JFB5J5C0SFF8D1YJ1FM6KGY5">FAQ</h2>
+<ol>
+<li>
+<strong>What do I do if the domain is not found in SES?</strong><br>Raise a Saas CR to add it in SES, and get a confirmation if it is managed by the customer or us. If by the customer, request a zone file to be shared with the customer; otherwise, Saas should make the necessary changes.</li>
+<li>
+<strong>What if the domain is 'not verified' or 'pending'?</strong><br>Check the CustomDomainTracking sheet and look for the domain. If the domain is not found in that google sheet, ping VP and raymond.guirguis to check.</li>
+<li>
+<strong>What should the customer do after updating their DNS records?</strong><br>Once the DNS records are updated, we verify the propagation using nslookup for all the entries. If those are propagated, we can access AWS and check if the domain is verified ourselves.</li>
+</ol>

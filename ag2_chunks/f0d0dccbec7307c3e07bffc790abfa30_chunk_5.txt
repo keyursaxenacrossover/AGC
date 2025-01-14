@@ -1,0 +1,169 @@
+": "example@domain.tld",
+    "to_realname": false,
+    "send_copy": false,
+    "priority": "NO_PRIORITY",
+    "sensitivity": "NORMAL",
+    "notify": "NO_NOTIFICATION"
+  },
+  "attachments": [
+   {"name":"example.jpg", "content":"skkfdsjksdjkfsd..."}
+  ]
+  "id": 1234
+}</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>id</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>The mail-template id <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79CSK3MN4Y408E1NMS7"> </h4>
+<h3 id="header-18">PUT /efs/mailtemplates/{id}</h3>
+<p>Change mail template data, returns the mail id</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "mailtemplate": {
+    "meta": {
+      "description": "Example message",
+      "type": "default_mail",
+      "site_id": "7",
+      "active": true
+    },
+    "content": {
+      "from": "example@domain.tld",
+      "subject": "Example message",
+      "format": "TEXT",
+      "text_content": "Dear #u_firstname#, \r\n\r\nyou have a new message.",
+      "attachments": false
+    },
+    "options": {
+      "charset": "ISO-8859-1",
+      "reply_to": "example@domain.tld",
+      "return_path": "example@domain.tld",
+      "to_realname": false,
+      "send_copy": false,
+      "priority": "NO_PRIORITY",
+      "sensitivity": "NORMAL",
+      "notify": "NO_NOTIFICATION"
+    }
+  }
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">1234</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>id</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>The mail-template id <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79CG9ENMNC184Z5CG0R"> </h4>
+<h3 id="header-19">POST /efs/mailtemplates/list</h3>
+<p>Get a list of mailtemplates. You can restrict the list of templates, by providing a POST body with the list of types.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "mailTemplateTypes": [
+    "default_mail"
+  ]
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[
+  {
+    "meta": {
+      "description": "Example message",
+      "type": "default_mail",
+      "site_id": "7",
+      "active": true
+    },
+    "content": {
+      "from": "example@domain.tld",
+      "subject": "Example message",
+      "format": "TEXT",
+      "text_content": "Dear #u_firstname#, \r\n\r\nyou have a new message.",
+      "attachments": false
+    },
+    "options": {
+      "charset": "ISO-8859-1",
+      "reply_to": "example@domain.tld",
+      "return_path": "example@domain.tld",
+      "to_realname": false,
+      "send_copy": false,
+      "priority": "NO_PRIORITY",
+      "sensitivity": "NORMAL",
+      "notify": "NO_NOTIFICATION"
+    },
+    "id": 1234
+  }
+]</code></pre>
+<p> </p>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79D1FHW4JP7M6RQBVYF"> </h

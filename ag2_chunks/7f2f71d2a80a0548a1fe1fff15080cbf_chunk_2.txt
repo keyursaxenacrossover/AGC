@@ -1,0 +1,21 @@
+WF3V4fBstZIy11mvp5GZ6bMunoFmCOmG98rYvTtClixDbO.fYg/X68MgWLfBmY/' WHERE uid = 1 AND u_account = 'root';</pre>
+<pre>i df1582<br>efslogin<br>UPDATE users SET u_passwd = '$6$rounds=5000$1Evfcr6U6RhhDp48$8S1Kt7AKR.bKrcqlaYvVJj1WF3V4fBstZIy11mvp5GZ6bMunoFmCOmG98rYvTtClixDbO.fYg/X68MgWLfBmY/' WHERE uid = 1 AND u_account = 'root';</pre>
+<pre>i sr4501<br>efslogin<br>UPDATE users SET u_passwd = '$6$rounds=5000$1Evfcr6U6RhhDp48$8S1Kt7AKR.bKrcqlaYvVJj1WF3V4fBstZIy11mvp5GZ6bMunoFmCOmG98rYvTtClixDbO.fYg/X68MgWLfBmY/' WHERE uid = 1 AND u_account = 'root';</pre>
+<em><strong>**Additional steps for sandbox cluster<br></strong></em>We will need to revert the password change for BMW installations by following the steps below:
+<pre>i eq5701<br>efslogin<br>UPDATE users SET u_passwd = '$6$rounds=5000$CTj3BL5mUn0EL4eL$e2uNYO6PXRoE042hhRmL2N5RhPb0aJqF/F5</pre>
+</li>
+<li>Update PasswordState with the new password obtained in <strong>step 2.1</strong> (the <strong>DXI/EFS common root user</strong> entry)
+<ol>
+<li>If you don't have the required rights to do this, ping Ciprian, Rishi or Raymond.</li>
+</ol>
+</li>
+</ol> sr4501<br>efslogin<br>UPDATE users SET u_passwd = '$6$rounds=5000$1Evfcr6U6RhhDp48$8S1Kt7AKR.bKrcqlaYvVJj1WF3V4fBstZIy11mvp5GZ6bMunoFmCOmG98rYvTtClixDbO.fYg/X68MgWLfBmY/' WHERE uid = 1 AND u_account = 'root';</pre>
+<em><strong>**Additional steps for sandbox cluster<br></strong></em>We will need to revert the password change for BMW installations by following the steps below:
+<pre>i eq5701<br>efslogin<br>UPDATE users SET u_passwd = '$6$rounds=5000$CTj3BL5mUn0EL4eL$e2uNYO6PXRoE042hhRmL2N5RhPb0aJqF/F5</pre>
+</li>
+<li>Update PasswordState with the new password obtained in <strong>step 2.1</strong> (the <strong>DXI/EFS common root user</strong> entry)
+<ol>
+<li>If you don't have the required rights to do this, ping Ciprian, Rishi or Raymond.</li>
+</ol>
+</li>
+</ol>

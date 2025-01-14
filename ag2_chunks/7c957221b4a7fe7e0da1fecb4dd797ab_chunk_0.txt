@@ -1,0 +1,40 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1555922979">https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1555922979</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">Instructions</a></li>
+<ul>
+<li><a href="#header-3">Related articles</a></li>
+</ul>
+</ul>
+</ul><p></p><p>Find your way around Nagios and Pingdom</p><h1 id="header-1">Instructions</h1><p>Create a step-by-step guide:</p><ol>
+<li><p>Sign in to <a href="http://10.250.1.33/nagios/">Nagios</a></p></li>
+<li>
+<p>Enter the domain as ab1234 at hostname next to the magnifying glass and hit enter to find</p>
+<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20714772491666" alt="image-20200604-123415.png"><p></p>
+<p></p>
+</li>
+<li>
+<p>click on the hostname to see the options</p>
+<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20714768586770" alt="image-20200604-123657.png"><p></p>
+</li>
+<li>
+<p>For now only the options “Disable notifications for all services on this host” and “Enable notifications for all services on this host”</p>
+<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20714754644498" alt="image-20200604-123902.png"><p></p>
+</li>
+<li>
+<p>Check the action and check the box “Enable For Host Too” and Confirm<br></p>
+<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20714749826322" alt="image-20200604-124031.png"><p></p>
+</li>
+<li><p>Then on the next page don’t click done. Done clears the searchbar.<br>Instead go to the search bar and hit enter again to go back to the installation. If the notifications are disabled, the Installation has crossed out speakers next to the monitoring checks.</p></li>
+</ol><p> </p><p></p><ac:rich-text-body><p>Highlight important information in a panel like this one. To edit this panel's color or style, select one of the options in the menu below.</p></ac:rich-text-body><h2 id="header-3">Related articles</h2><p>The content by label feature displays related articles automatically, based on labels you choose. To edit options for this feature, select the placeholder below and tap the pencil icon.</p><ac:parameter ac:name="showLabels">false</ac:parameter><ac:parameter ac:name="max">5</ac:parameter><ac:parameter ac:name="spaces">com.atlassian.confluence.content.render.xhtml.model.resource.identifiers.SpaceResourceIdentifier@a7f</ac:parameter><ac:parameter ac:name="showSpace">false</ac:parameter><ac:parameter ac:name="sort">modified</ac:parameter><ac:parameter ac:name="type">page</ac:parameter><ac:parameter ac:name="reverse">true</ac:parameter><ac:parameter ac:name="labels">kb-how-to-article</ac:parameter><ac:parameter ac:name="cql">label = "kb-how-to-article" and type = "page" and space = "TS"</ac:parameter><ac:parameter ac:name="hidden">true</ac:parameter><ac:rich-text-body><table data-layout="default">
+<colgroup>
+<col style="width: 503.0px;">
+<col style="width: 256.0px;">
+</colgroup>
+<tbody><tr>
+<th><p>Related issues</p></th>
+<td><p></p></td>
+</tr></tbody>
+</table></ac:rich-text-body>

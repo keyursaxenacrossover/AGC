@@ -1,0 +1,79 @@
+>iam_proxy_url</u></a></p></td>
+<td><p>'<a href="http://squid.global-services.svc.cluster.local:8080">http://squid.global-services.svc.cluster.local:8080</a>'</p></td>
+<td><p>no</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+</tr>
+<tr>
+<td><p><a href="https://aw1673.customervoice360.com/www/options.php?act=edit_config_var&amp;varName=iam_redirect_url"><u>iam_redirect_url</u></a></p></td>
+<td><p>'<a href="https://aw1673.customervoice360.com/iam/admin/auth/login">https://aw1673.customervoice360.com/iam/admin/auth/login</a> '</p></td>
+<td><p>no</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+</tr>
+<tr>
+<td><p><a href="https://aw1673.customervoice360.com/www/options.php?act=edit_config_var&amp;varName=iam_show_error_as_json"><u>iam_show_error_as_json</u></a></p></td>
+<td><p>false</p></td>
+<td><p>no</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+</tr>
+<tr>
+<td><p><a href="https://aw1673.customervoice360.com/www/options.php?act=edit_config_var&amp;varName=iam_sso_modules"><u>iam_sso_modules</u></a></p></td>
+<td><p>array ( 0 =&gt; 'efs', )</p></td>
+<td><p>no</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+</tr>
+<tr>
+<td><p><a href="https://aw1673.customervoice360.com/www/options.php?act=edit_config_var&amp;varName=iam_unique_customer_name"><u>iam_unique_customer_name</u></a></p></td>
+<td><p>'Kantar'</p></td>
+<td><p>no</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+</tr>
+<tr>
+<td><p><a href="https://aw1673.customervoice360.com/www/options.php?act=edit_config_var&amp;varName=iam_user_group_id"><u>iam_user_group_id</u></a></p></td>
+<td><p>'00g1488n0hEBkfl3n417'</p></td>
+<td><p>yes</p></td>
+<td><p>yes</p></td>
+<td><p>OKTA → Groups → Main Group for Customer (customer identifier)</p></td>
+</tr>
+<tr>
+<td><p><a href="https://aw1673.customervoice360.com/www/options.php?act=edit_config_var&amp;varName=iam_well_known_url"><u>iam_well_known_url</u></a></p></td>
+<td><p>'<a href="https://access.questback.com/oauth2/aus1487ws4LLtrpN8417/.well-known/oauth-authorization-server">https://access.questback.com/oauth2/aus1487ws4LLtrpN8417/.well-known/oauth-authorization-server</a>'</p></td>
+<td><p>yes</p></td>
+<td><p>yes</p></td>
+<td><p>OKTA → Security → API → Edit Customer Authorization Server → Metadata URL</p></td>
+</tr>
+</tbody>
+</table><ol start="1">
+<li>
+<p>turn off module ‘IdentityAccessManager' </p>
+<pre><code class="language-text">helpersEfsChangeConfig iam_module_active 0</code></pre>
+</li>
+<li>
+<p>swap values </p>
+<ol start="1">
+<li>
+<p>manually or with helpersEfsChangeConfig script</p>
+<pre><code class="language-text">helpersEfsChangeConfig iam_api_token [NEW VALUE -&gt; see KeePass for global customer token or create new with iam token user from KeePass]
+helpersEfsChangeConfig iam_client_group_id 00g348q2uzU7nmIgY417
+helpersEfsChangeConfig iam_client_id 0oa34n3lsm1b9KBX2417
+helpersEfsChangeConfig iam_client_secret [NEW VALUE -&gt; see OKTA]
+helpersEfsChangeConfig iam_user_group_id 00g2ku43q1jotSCdY417
+helpersEfsChangeConfig iam_well_known_url https://access.tivian.com/oauth2/aus2kl4zjijopeKSC417/.well-known/oauth-authorization-server</code></pre>
+</li>
+<li><p>using iam_change_config_jsm.sh script</p></li>
+</ol>
+</li>
+<li><p>create backup of iam_user_reference table and truncate it</p></li>
+<li><p>run migration script <strong>[6] first</strong>, then [1] and [3]</p></li>
+<li><pre><code class="language-text">php support/iam/migration.php
+
+[1] Admin user migration
+[2] Portal migration
+[3] Admin users activation
+[4] Portal ClientGroup migration
+[5] User ClientGroup migration
+[6] Convert admin user from questback.com to tiv

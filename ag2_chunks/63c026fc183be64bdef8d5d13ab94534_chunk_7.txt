@@ -1,0 +1,60 @@
+ while processed requests will have at least the status “exported”.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Processing Payments by Bonus Type or by Individual Request</strong><br>Alternatively, you can process payments by bonus type: If you click on the title of a bonus type or on the Edit icon in the aggregated view, a dialog opens, in which you can view all open payment requests of the respective bonus type and month (i.e. all payment requests with statuses “earmarked” and “exported”). After processing the payment requests outside EFS, use the “Actions” checkbox and the drop-down list to enter the result (“write off” or “cancel”) into EFS.</p>
+<p> </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h2 id="prize_draws" class="wysiwyg-text-align-justify">Prize Draws</h2>
+<p class="wysiwyg-text-align-justify">In the People → Incentive management → Prize draws menu, you will find a complete list of prize draws set up for the panel. The table includes:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Short description, Date of creation, Last change, Status, Number of prizes, Participating group</li>
+</ul>
+<p class="wysiwyg-text-align-justify">You can display or hide columns using the View function and search the table contents using the standard search functions.</p>
+<p class="wysiwyg-text-align-justify"><strong>Actions Available:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<strong>Create Prize Draw</strong>: Click to open the dialog for creating a new prize draw.</li>
+<li>
+<strong>Edit Prize Draw</strong>: Click the icon to open the dialog for the selected prize draw.</li>
+<li>
+<strong>Archive</strong>: Appears once winners have been paid, allowing you to archive the prize draw.</li>
+<li>
+<strong>Delete Prize Draw</strong>: Click to initiate the removal of the prize draw.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Note:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Access to the Prize draws menu is protected by the ACL right<em> panelgrat</em>. Read rights are required to access or create new prize draws.</li>
+</ul>
+<h3 id="h_01J3FG0PB26QTNF4BC6WJ164N0" class="wysiwyg-text-align-justify">Properties of Prize Draws</h3>
+<p class="wysiwyg-text-align-justify"><strong>Status of the Prize Draw:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Indicates progress of the prize draw and allocation of individual prizes.</li>
+<li>Changes to “Winners paid” once the first winner is assigned this status.</li>
+</ul>
+<table class="tablesorter tablesorter-default wrapped confluenceTable wysiwyg-text-align-justify" style="margin: 0px auto; border-collapse: collapse; background-color: #ffffff; width: 652px;" border="1">
+<tbody>
+<tr class="tablesorter-headerRow">
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; background-color: var(--ds-background-accent-gray-subtlest,#f0f0f0); padding: 7px 10px !important; width: 140.486px;" scope="col">
+<div class="tablesorter-header-inner">Status</div>
+</th>
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; background-color: var(--ds-background-accent-gray-subtlest,#f0f0f0); width: 486.198px;" scope="col">
+<div class="tablesorter-header-inner">Explanation</div>
+</th>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 140.486px;">Created</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 478.177px;">The prize draw has been set up, but prizes have not been defined yet.</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 140.486px;">Prizes defined</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 478.177px;">The prizes which can be won have been set.</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 140.486px;">Winners drawn</td>
+<td class="confluenceTd

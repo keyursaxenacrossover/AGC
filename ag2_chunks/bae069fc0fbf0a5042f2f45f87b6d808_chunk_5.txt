@@ -1,0 +1,79 @@
+><p><br></p></td>
+</tr>
+<tr>
+<td>
+<p>Warning: Please consider if file/s</p>
+<p>/nfs/opst3/support01-tka.qb-feedback.com/htdocs/conf/../panelwebsite/__templates/34/js_default.tpl</p>
+<p>should be deleted.</p>
+</td>
+<td><p>Warning</p></td>
+<td><p><br></p></td>
+<td><p><br></p></td>
+<td><p><br></p></td>
+</tr>
+<tr>
+<td><p>Warning: Relevantid module is active but no relevantid_auth value is set in configuration.</p></td>
+<td><p>Warning</p></td>
+<td><p><br></p></td>
+<td><p><br></p></td>
+<td><p><br></p></td>
+</tr>
+<tr>
+<td><p>Error: SFTP private-key file doesn't exist at '/nfs/opst/qr4773-pc.qb-feedback.com/htdocs/conf/../../privatedocs/EFSsftp_private'.</p></td>
+<td><p>Error</p></td>
+<td><p><br></p></td>
+<td><p><br></p></td>
+<td>
+<ul><li><p>If MySight v1 is not active it cant be ignored</p></li></ul>
+<ul><li><p>If MySight v1 is active check if key exist at the given path and if the rights are correct</p></li></ul>
+<ul><li><p>-r-------- 1 nfsnobody nfsnobody</p></li></ul>
+<ul><li><p>If key does not exist at the given path and or if the rights are not correct forward to SA</p></li></ul>
+</td>
+</tr>
+<tr>
+<td><p>Error: SFTP private-key file '/nfs/opst/[domain]/htdocs/conf/../../privatedocs/EFSsftp_private' isn't readable, try again as user nobody.</p></td>
+<td><p><br></p></td>
+<td><p><br></p></td>
+<td><p>The installation check does not run the check as user nobody but the file only is readable by user nobody. You can ignore this error message.</p></td>
+<td><p><br></p></td>
+</tr>
+<tr>
+<td><p>Error: Wrong MySQL version. This may cause serious problems. Please inform <a href="mailto:de.support@questback.com">de.support@questback.com</a> immediately. Installed: 10.1.20-MariaDB. Expected: 5.1.3x</p></td>
+<td><p>Error</p></td>
+<td><p><br></p></td>
+<td><p>Can be ignored on mirror installation. There we actually seem to use maria DB</p></td>
+<td><p><br></p></td>
+</tr>
+<tr>
+<td><p>Error: Value for config variable 'tmp_path_export' is not specified.</p></td>
+<td><p>Error</p></td>
+<td><p><br></p></td>
+<td><p>The path does not have to be defined on mirror installation and can be left blank. You can ignore this message or just add the tmp path here as well so that the message disappears</p></td>
+<td><p><br></p></td>
+</tr>
+<tr>
+<td><p>Error: Watchdog directory '/opst_temp2/watchdog/' is not writeable for the web server. Please fix the directory privileges.</p></td>
+<td><p>Error</p></td>
+<td><p>This errors occurs if the file rights or user/group for the files are not set correctly.</p></td>
+<td><p>user/group have to be nfsnobody/nfsnobody and file rights have to be folders: 775, files: 664.</p></td>
+<td><p>Ask sysadmins to set the right file rights</p></td>
+</tr>
+<tr>
+<td><p>Error: The directory used for storing private files ($__basepath_private_files) is not writable. Please fix this.</p></td>
+<td><p>Error</p></td>
+<td><p>This errors occurs if the file rights or user/group for the files are not set correctly.</p></td>
+<td><p>user/group have to be nfsnobody/nfsnobody and file rights have to be folders: 775, files: 664.</p></td>
+<td><p>Ask sysadmins to set the right file rights</p></td>
+</tr>
+<tr>
+<td><p>Error: uc directory is not writable.</p></td>
+<td><p>Error</p></td>
+<td><p>This errors occurs if the file rights or user/group for the files This errors occurs if the file rights or user/group for the files are not set correctly.are not set correctly.</p></td>
+<td><p>user/group have to be nfsnobody/nfsnobody and file rights have to be folders: 775, files: 664.</p></td>
+<td><p>Ask sysadmins to set the right file rights</p></td>
+</tr>
+<tr>
+<td><p>Error: The directory used for uploading exchange files is not writable. You may not create exchange teams.</p></td>
+<td><p>Error</p></td>
+<td><p>This errors occurs if the file rights or user/group for the files are not set correctly.</p></td>
+<td><p>user/group have to be nfsnobody/nfsnobody and file rights have to be folders: 775, files: 664.</p></

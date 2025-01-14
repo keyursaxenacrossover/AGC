@@ -1,0 +1,27 @@
+:parameter>
+</h2><p>Create the connection to the client’s Identity Provider. This will only happen if the client has an own Identity Provider that should be federated.</p><ul><li>
+<p>Setup Identity Provider</p>
+<ul>
+<li><p>SAML → see <ac:link ac:card-appearance="inline"><ri:page ri:content-title="SAML Provider Setup" ri:version-at-save="11"></ri:page><ac:link-body>SAML Provider Setup</ac:link-body></ac:link> </p></li>
+<li><p>OIDC → see <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Open ID Connect Setup" ri:version-at-save="16"></ri:page><ac:link-body>Open ID Connect Setup</ac:link-body></ac:link> </p></li>
+</ul>
+</li></ul><h2 id="header-5">
+<strong><u>EFS</u> </strong><ac:parameter ac:name="title">required</ac:parameter><ac:parameter ac:name="colour">Green</ac:parameter>
+</h2><p>The EFS setup has to be applied to every installation that should be on-boarded.</p><ul>
+<li><p>Create Application with code flow → see <ac:link ac:card-appearance="inline"><ri:page ri:content-title="EFS Admin Setup" ri:version-at-save="10"></ri:page><ac:link-body>EFS Admin Setup</ac:link-body></ac:link></p></li>
+<li><p>Create an Application specific group in Okta → see <ac:link ac:card-appearance="inline"><ri:page ri:content-title="EFS Admin Setup" ri:version-at-save="10"></ri:page><ac:link-body>EFS Admin Setup</ac:link-body></ac:link> </p></li>
+</ul><h2 id="header-6">
+<strong><u>Portals</u> </strong><ac:parameter ac:name="title">Optional</ac:parameter><ac:parameter ac:name="colour">Yellow</ac:parameter> </h2><p>Every portal which should work has to be registered in Okta.</p><ul>
+<li><p>For existing portals this is covered during migration</p></li>
+<li><p>For new portals this is done automatically by EFS via API to Okta</p></li>
+<li><p>Trusted Origins still have to be added to Okta → see <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Portals Setup" ri:version-at-save="5"></ri:page><ac:link-body>Portals Setup</ac:link-body></ac:link> </p></li>
+</ul><h2 id="header-7">
+<strong><u>Unity</u> </strong><ac:parameter ac:name="title">required</ac:parameter><ac:parameter ac:name="colour">Green</ac:parameter>
+</h2><p>The Unity setup has to be applied to every environment Unity is installed.</p><ul><li><p>Create Applications → see <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Initial Okta Setup" ri:space-key="PU" ri:version-at-save="2"></ri:page><ac:link-body>Initial Okta Setup</ac:link-body></ac:link> </p></li></ul><h2 id="header-8">
+<strong><u>MFA</u> </strong><ac:parameter ac:name="title">Optional</ac:parameter><ac:parameter ac:name="colour">Yellow</ac:parameter>
+</h2><p>This configuration applies to a whole tenant or group of users not to a specific installation.</p><p>see <ac:link ac:card-appearance="inline"><ri:page ri:content-title="MFA Setup" ri:version-at-save="4"></ri:page><ac:link-body>MFA Setup</ac:link-body></ac:link> </p><ul>
+<li><p>Create a factor enrollment policy</p></li>
+<li><p>Adapt Sign on Policy</p></li>
+</ul><h2 id="header-9">
+<strong><u>Password Policy</u> </strong><ac:parameter ac:name="title">Optional</ac:parameter><ac:parameter ac:name="colour">Yellow</ac:parameter>
+</h2><p>This only applies to users managed in Okta and not in the client’s Identity Provider. If this is not configured a default password policy will be used.</p><ul><li><p>Create a Password Policy → see <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Password Policy Setup" ri:version-at-save="3"></ri:page><ac:link-body>Password Policy Setup</ac:link-body></ac:link> </p></li></ul>

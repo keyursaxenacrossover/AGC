@@ -1,0 +1,45 @@
+p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h4 id="customizing-a-specific-page-with-javascript-or-css" class="wysiwyg-text-align-justify">Customizing a Specific Page with JavaScript or CSS</h4>
+<p class="wysiwyg-text-align-justify">Sometimes it is necessary to create a different design for a particular questionnaire page or to implement a page-specific JavaScript function. This is frequently realized using a specific template or an “if” construct in the main template. But you can also upload JavaScript and CSS in a dedicated file and integrate it into the header or footer section of the desired page.</p>
+<p class="wysiwyg-text-align-justify">To do so, please proceed as follows:</p>
+<ol class="wysiwyg-text-align-justify" start="1">
+<li>
+<p>Upload the desired files via <strong>Pro editor</strong> → <strong>Upload</strong>.</p>
+</li>
+<li>
+<p>Open the <strong>Page Properties </strong>menu for the desired questionnaire page. The file lists in the fields “Header section” and “Footer section” contain all files with the extensions .js and .css which were uploaded.</p>
+</li>
+<li>
+<p>Select the desired files and <strong>Save</strong>.</p>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify">Please Note: In RFS 10.2, the feature described above replaces an older feature with the same purpose. In existing projects, the older version will stay available as long as its entry field contains custom code. Only if you delete the custom code, the old field will be deactivated and the new features displayed.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h4 id="assigning-a-differing-character-set-to-a-specific-page" class="wysiwyg-text-align-justify">Assigning a Differing Character Set to a Specific Page</h4>
+<p class="wysiwyg-text-align-justify">You can assign an individual questionnaire page a character set that differs from the general character set of the survey or from the character sets for the language versions of a multilingual project. This function can be employed, for example, if the start page used by all participants of a multilingual survey where there is a language selection question, is to be displayed in a different character set than the other various questionnaires.</p>
+<p class="wysiwyg-text-align-justify">If you specify a character set in the “Force a character set for this page”, the character set of the survey will be overwritten with the specified character set for this one questionnaire page, and for all existing language versions. By default, the “Don’t force a character set” option is preset.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="triggers" class="wysiwyg-text-align-justify">Triggers</h2>
+<p class="wysiwyg-text-align-justify">You may often wish to link certain actions to specific events. For example, in a customer satisfaction survey, customers can report negative experiences. Now, you wish to automatically e-mail the customer’s report to your customer center. In another survey, a respondent may request additional information material. In this case, it would be helpful if the respondent’s address data (as far as they have been voluntarily submitted) were directly transferred to your sales department or if the submission of the corresponding information material was triggered automatically. Using triggers you can (if applicable) enter additional information on the respondent into the survey at runtime and make it available to the respondent as context information, or make the route through the questionnaire dependent on the value of this information.</p>
+<h3 id="creating-triggers" class="wysiwyg-text-align-justify">Creating triggers</h3>
+<p class="wysiwyg-text-align-justify">You can use triggers to perform these tasks by selecting and configuring the appropriate actions and associating them with specific variable values within the questionnaire.</p>
+<h3 id="basic-notes-on-triggers" class="wysiwyg-text-align-justify">Basic notes on triggers</h3>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>You can specify whether to execute the trigger more than once in a survey session. To do so, tick the checkbox labeled “Execute this trigger multiple times in one survey session” in the trigger editor.</p>
+</li>
+<li>
+<p>You are able to choose whether triggers will be executed or disabled in the preview. For example, it would make sense to disable the random trigger, in order to facilitate repeated testing under constant conditions. This function is activated by ticking the checkbox labeled “Also execute trigger in preview mode” in the trigger editor. By default, this function is not activated.</p>
+</li>
+<li>
+<p>In principle, triggers can be created on all survey page types. However some trigger types are destined for use on specific page types, e.g. final pages.</p>
+</li>
+<li>
+<p>On each page, you can create as many triggers as required. Please mind, though, that trigger actions require a lot of server resources, i.e. they affect the performance of the questionnaire. Therefore, it is recommended to use not more than 50 triggers per page.</p>
+</li>
+<li>
+<p>You can use Drag&amp;Drop to change the sequence of triggers on a page, which may be relevant to the order of execution.</p>
+</li>
+<li>
+<p>Triggers are associated with a variable on the page. If the page does not contain any variable, use a dummy variable: Create a question of the

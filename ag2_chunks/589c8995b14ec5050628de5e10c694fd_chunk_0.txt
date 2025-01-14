@@ -1,0 +1,78 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1054933094">https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1054933094</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">Install EFS Panel &gt;=EFS 11.0</a></li>
+<ul>
+<li><a href="#header-3">Deprecated</a></li>
+<ul>
+<li><a href="#header-5">Systemadministratorische Todos</a></li>
+</ul>
+<li><a href="#header-7">Deactivation of Panel module</a></li>
+<ul>
+<li><a href="#header-9">Background information</a></li>
+<li><a href="#header-10">Deactivation</a></li>
+</ul>
+<li><a href="#header-12">Website</a></li>
+<ul>
+<li><a href="#header-14">Module mit zugehörigen Templates</a></li>
+</ul>
+</ul>
+</ul>
+</ul><p></p><h1 id="header-1">Install EFS Panel &gt;=EFS 11.0</h1><ul><li>
+<p>The following steps need to be done to install EFS Panel on installations &gt;=EFS 11.0 <strong>The order is crucial:</strong></p>
+<ul>
+<li>
+<p><strong>New installations:</strong></p>
+<ul><li><p>Set up installation like described here <a href="https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1053557033/Set+up+new+installation">Create a new EFS installation</a></p></li></ul>
+</li>
+<li>
+<p><strong>Existing installations on which Panel shall be activated later on:</strong></p>
+<ul>
+<li>
+<p><del>Create folder "panelwebsite" in htdocs</del></p>
+<ul><li><pre><code class="language-text">mkdir panelwebsite</code></pre></li></ul>
+</li>
+<li>
+<p><del>Copy over "panelwebsite" files from the build matching the installation's version</del></p>
+<ul><li><pre><code class="language-text">cp -R /efsbuilds/efsbuilds/EFS_11.0_0202/panelwebsite/* panelwebsite/</code></pre></li></ul>
+</li>
+<li>
+<p><del>set document_root to panelwebsite <ac:inline-comment-marker ac:ref="f542fa1f-6342-488b-a86a-b3ba409553be">(erforder Frontend Restart)</ac:inline-comment-marker></del></p>
+<ul><li><pre><code class="language-text">rm document_root; ln -s panelwebsite document_root</code></pre></li></ul>
+</li>
+<li>
+<p>Activate panel module in installation's config</p>
+<ul>
+<li><p>Options &gt;&gt; Platform cockpit &gt;&gt; root only:: System configuration</p></li>
+<li><p>edit variable <strong>"modules"</strong> and add "panel"</p></li>
+<li><p>set <strong>"installation_type"</strong> to "panel" (excep<ac:inline-comment-marker ac:ref="6c47147c-ae42-491b-b36d-b39a13007474">t if it already is set to leadership or employee)</ac:inline-comment-marker></p></li>
+</ul>
+</li>
+<li>
+<p>Execute healself</p>
+<ul>
+<li><pre><code class="language-text">cd www
+php support/healself.php</code></pre></li>
+<li>
+<p><strong><span style="color: rgb(255,86,48);">if you get this healself error:</span></strong></p>
+<ul><li><pre><code class="language-text">The following tasks failed with errors:
+- panel_healself_jobs_902::regeneratePanelistsPasswordHashes [Warning: regenerate panelists password hashes live - without tmp table]:
+  - Query failed: SELECT uid, BASE64DECODE(u_ppasswd) AS plain_password FROM panelists. Reason: execute command denied to user 'opst_nh7146'@'%' for routine 'opst_nh7146.BASE64DECODE'
+  - Task reported it failed on line 842 in class panel_healself_jobs_902 </code></pre></li></ul>
+</li>
+<li><p>case or contact system administration to grant the execute priviledge and the storted routine:</p></li>
+<li>
+<p>1.</p>
+<pre><code class="language-text">CREATE FUNCTION BASE64DECODE (sourceString varchar(200)) RETURNS varchar(200) DETERMINISTIC RETURN FROM_BASE64(sourceString);</code></pre>
+</li>
+<li>
+<p>2.</p>
+<pre><code class="language-text">GRANT EXECUTE ON PROCEDURE 'opst_nh7146.BASE64DECODE' TO 'opst_nh7146'@'%'</code></pre>
+</li>
+<li>
+<p>afterwards check with “SHOW GRANTS” if the priviledge is listed:</p>
+<ul><li><pre><code class="language-text">MariaDB [opst_nh7146]&gt; show grants;
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Grants for opst_nh7146@

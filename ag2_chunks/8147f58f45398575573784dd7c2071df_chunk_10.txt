@@ -1,0 +1,86 @@
+ class="" style="display: flex; margin-right: -8px; padding-right: 8px !important;" data-testid="renderer-code-block-line-9" data-ds--code--row="">            ]
+</span><span class="" style="display: flex; margin-right: -8px; padding-right: 8px !important;" data-testid="renderer-code-block-line-10" data-ds--code--row="">        }
+</span><span class="" style="display: flex; margin-right: -8px; padding-right: 8px !important;" data-testid="renderer-code-block-line-11" data-ds--code--row="">    }
+</span><span class="" style="display: flex; margin-right: -8px; padding-right: 8px !important;" data-testid="renderer-code-block-line-12" data-ds--code--row="">}</span></code></span></div>
+</div>
+<p data-renderer-start-pos="13999">The only acceptable <code class="code cc-1o5d2cw" data-renderer-mark="true">operator</code> value for inComparison is <code class="code cc-1o5d2cw" data-renderer-mark="true">IN</code>.</p>
+<h4 id="Join" data-renderer-start-pos="14059">Join</h4>
+<p data-renderer-start-pos="14065">This type allows more complex requests, allowing two conditions (comparison, inComparison or join) to be joined by an <code class="code cc-1o5d2cw" data-renderer-mark="true">AND</code> or <code class="code cc-1o5d2cw" data-renderer-mark="true">OR</code> operator.</p>
+<pre><code class="language-text">{
+    "condition": {
+        "join": {
+            "operator": "AND",
+            "condition1": {
+                "comparison": {
+                    "variable": "title",
+                    "operator": "CONTAINS",
+                    "value": "Test"
+                }
+            },
+            "condition2": {
+                "inComparison": {
+                    "variable": "circleType",
+                    "operator": "IN",
+                    "value": [
+                        "COMPANY_MANAGED",
+                        "USER_MANAGED"
+                    ]
+                }
+            }
+        }
+    }
+}</code></pre>
+<p data-renderer-start-pos="14820">The <code class="code cc-1o5d2cw" data-renderer-mark="true">operator</code> for joining two or more conditions can be <code class="code cc-1o5d2cw" data-renderer-mark="true">AND, OR</code>, the individual conditions are similarly structured as their single instances. Since <em data-renderer-mark="true">join</em> is an acceptable condition, more complex structures are allowed:</p>
+<div class="code-block  cc-15qwbrk">
+<div class="cc-9n57oc">
+<div class="cc-v2tmjh">
+<pre><code class="language-json">{
+    "condition": {
+        "join": {
+            "operator": "AND",
+            "condition1": {
+                "join": {
+                    "operator": "AND",
+                    "condition1": {
+                        "comparison": {
+                            "variable": "title",
+                            "operator": "CONTAINS",
+                            "value": "Test"
+                        }
+                    },
+                    "condition2": {
+                        "inComparison": {
+                            "variable": "circleProcessStatus",
+                            "operator": "IN",
+                            "value": [
+                                "IDLE","IN_PROGRESS"
+                            ]
+                        }
+                    }
+                }
+            },
+            "condition2": {
+                "inComparison": {
+                    "variable": "circleType",
+                    "operator": "IN",
+                    "value": [
+                        "COMPANY_MANAGED",
+                        "USER_MANAGED"
+                    ]
+                }
+            }
+        }
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+<h1 id="h_01J3GAYK26YSW1WMWHR5P3CMZQ">FAQ</h1>
+<h3 id="faq_1">What is the EFS Service Layer?</h3>
+<p>The EFS Service Layer is an API that allows access to key EFS functionalities from external applications. It enables developers to create applications outside of EFS that can interact with EFS data and functionalities.</p>
+<h3 id="faq_2">How can I authenticate requests to the EFS Service Layer?</h3>
+<p>You can authenticate using either tokens (recommended) provided by the support team, or by using your EFS admin area account name and password with basic HTTP authentication.</p>
+<h3 id="faq_3">What format handlers are supported by the EFS Service Layer?</h3>
+<p>The EFS Service Layer supports four format handlers: SOAP, REST, PHP-serialized, and JSON.</p>
+<p> </p>
+</article>

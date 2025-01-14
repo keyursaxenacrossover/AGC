@@ -1,0 +1,169 @@
+p>
+</td>
+<td colspan="1"> </td>
+<td colspan="1"> </td>
+<td colspan="1"> </td>
+<td colspan="1"> </td>
+</tr>
+<tr>
+<td>is_whole</td>
+<td>
+<p>is_whole (check: whole number)</p>
+</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>length</td>
+<td>
+<p>length (action: return string length)</p>
+</td>
+<td>
+<p>Returns the number of characters in a string.</p>
+</td>
+<td>
+<p>$value: String to be checked</p>
+</td>
+<td>String length</td>
+<td>length('test')</td>
+</tr>
+<tr>
+<td colspan="1">lowercase</td>
+<td colspan="1">
+<p>lowercase (action: change to lowercase)</p>
+</td>
+<td colspan="1">
+<p>Makes all characters in a string lowercase.</p>
+</td>
+<td colspan="1">
+<p>$value: String to be changed</p>
+</td>
+<td colspan="1">Changed string</td>
+<td colspan="1">lowercase('Test')</td>
+</tr>
+<tr>
+<td colspan="1">matches</td>
+<td colspan="1">
+<p>matches (check: apply regular expression)</p>
+</td>
+<td colspan="1">
+<p>Checks whether a regular expression applies to a value</p>
+</td>
+<td colspan="1">
+<p>$regex: regular expression, $value: string to which the regular expression is applied</p>
+</td>
+<td colspan="1">
+<p>1, if regular expression applies, otherwise 0</p>
+</td>
+<td colspan="1">
+<p>matches('/^[a-f0-9]{32}$/','test');</p>
+</td>
+</tr>
+<tr>
+<td colspan="1">md5</td>
+<td colspan="1">
+<p>md5 (action: md5 encode)</p>
+</td>
+<td colspan="1">
+<p>Encodes the value using the md5 algorithm.</p>
+</td>
+<td colspan="1">
+<p>$value: Value to be encoded</p>
+</td>
+<td colspan="1">Encoded value</td>
+<td colspan="1">
+<p>md5('attack_at_dawn')</p>
+</td>
+</tr>
+<tr>
+<td colspan="1">replace</td>
+<td colspan="1">
+<p>replace (action: replace)</p>
+</td>
+<td colspan="1">
+<p>Searches the string for matches with a regular expression and replaces them with "substitute".</p>
+</td>
+<td colspan="1">
+<p>$regex: regular expression, $replace: substitute $value: string</p>
+</td>
+<td colspan="1">Edited string</td>
+<td colspan="1">
+<p>replace('/^[a-f0-9]/','replace','7test12')</p>
+</td>
+</tr>
+<tr>
+<td colspan="1">sha1</td>
+<td colspan="1">
+<p>sha1 (action: encode SHA1)</p>
+</td>
+<td colspan="1">
+<p>Encodes the value using the SHA1 algorithm.</p>
+</td>
+<td colspan="1">
+<p>$value: Value to be encoded</p>
+</td>
+<td colspan="1">Encoded value</td>
+<td colspan="1">
+<p>sha1('attack_at_dawn')</p>
+</td>
+</tr>
+<tr>
+<td colspan="1">substr</td>
+<td colspan="1">
+<p>substr (action: return part of a string)</p>
+</td>
+<td colspan="1">
+<p>Returns the part of the string defined by the parameters start and length. If the start is not negative, the returned string will commence at the string’s start position, beginning at 0.</p>
+</td>
+<td colspan="1">
+<p>$string: string, $start: beginning of the desired partial string $length (optional): length of the partial string</p>
+</td>
+<td colspan="1">Partial string</td>
+<td colspan="1">
+<p>substr('hello', 1, 1), returns 'e'</p>
+</td>
+</tr>
+<tr>
+<td colspan="1">trim</td>
+<td colspan="1">
+<p>trim (action: removes spaces at the start and the end)</p>
+</td>
+<td colspan="1">
+<p>Removes spaces at the start and end of a string.</p>
+</td>
+<td colspan="1">
+<p>$str: string, $charlist (optional): characters to be removed at the start and end of the string</p>
+</td>
+<td colspan="1">Edited string</td>
+<td colspan="1">
+<p>trim(' hello test ') results "hello test"</p>
+</td>
+</tr>
+<tr>
+<td>uppercase</td>
+<td>
+<p>lowercase (action: change to uppercase)</p>
+</td>
+<td>
+<p>Makes all characters in a string upper case.</p>
+</td>
+<td>
+<p>$value: String to be changed</p>
+</td>
+<td>Changed string</td>
+<td>
+<p>uppercase('Test') results in "TEST"</p>
+</td>
+</tr>
+<tr>
+<td>when</td>
+<td>when (query construction)</td>
+<td>
+<p>Checks whether an expression is true or not and returns the corresponding value.</p>
+</td>
+<td>
+<p>$check: expression, $true: returned value (if the expression is true), $false: returned value (if the expression is false)</p>
+</td>
+<td

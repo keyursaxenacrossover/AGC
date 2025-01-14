@@ -1,0 +1,83 @@
+><p>disabled anyway</p></td>
+<td><p>only used once for testing ?</p></td>
+</tr>
+</tbody></table><h3 id="header-7">Authentication - Sign On Policies</h3><table data-layout="default"><tbody>
+<tr>
+<th><p><strong>Name</strong></p></th>
+<th><p><strong>Reason</strong></p></th>
+<th><p><strong>Note</strong></p></th>
+</tr>
+<tr>
+<td><p>MFA for TKA</p></td>
+<td><p>disabled anyway</p></td>
+<td><p><span style="color: rgb(255,86,48);">Needed from QA side?</span></p></td>
+</tr>
+<tr>
+<td><p>Questback Signon Policy</p></td>
+<td><p>disabled anyway</p></td>
+<td><p>Very old policy - only used for the group Questback Employees - MFA is enabled</p></td>
+</tr>
+<tr>
+<td><p>MFATechEnablement</p></td>
+<td><p>disabled anyway</p></td>
+<td><p>not needed anymore since TechEnablement is done - Only used for the group MFATechEnablement which is not managed anymore</p></td>
+</tr>
+<tr>
+<td><p>markus MFA test</p></td>
+<td><p>used for manual testing</p></td>
+<td>
+<p><ac:link><ri:user ri:userkey="8a7f8086694ab91b01694cfe74ed0066"></ri:user></ac:link> can it be deleted ?</p>
+<p><span style="color: rgb(54,179,126);">Yes. If I need something like that again I will recreate it with a proper naming.</span></p>
+</td>
+</tr>
+</tbody></table><h3 id="header-8">MFA Factor Enrollment</h3><table data-layout="default"><tbody>
+<tr>
+<th><p><strong>Name</strong></p></th>
+<th><p><strong>Reason</strong></p></th>
+<th><p><strong>Note</strong></p></th>
+</tr>
+<tr>
+<td><p>Markus MFA Test</p></td>
+<td><p>only a test</p></td>
+<td><p>cleanup</p></td>
+</tr>
+<tr>
+<td><p>iam-tka test</p></td>
+<td><p>only a test</p></td>
+<td><p>cleanup</p></td>
+</tr>
+<tr>
+<td><p>Questback MFA Rule</p></td>
+<td><p>disabled anyway</p></td>
+<td><p><span style="color: rgb(255,86,48);">Needed from QA side ?</span></p></td>
+</tr>
+<tr>
+<td><p>MFATechnEnablement</p></td>
+<td><p>disabled anyway</p></td>
+<td><p>only used for Tech Enablement</p></td>
+</tr>
+</tbody></table><p><strong>Note</strong>: Also disabled the <strong>Security Question</strong> Factor, as it will not be in use in Production</p><h3 id="header-9">Administrators</h3><p><a href="https://questback-poc-admin.oktapreview.com/admin/user/profile/view/00un865p4c6cozbpk0h7">Vitaliy Siciliano</a> - Does not need admin rights in our account</p><p><a href="https://questback-poc-admin.oktapreview.com/admin/user/profile/view/00uq4km4qvrIeNk340h7">okta_users_crud@3uu.eu okta_users_crud@3uu.eu</a> (email: okta_users_crud@3uu.eu okta) <ac:link><ri:user ri:userkey="8a7f8085680f7144016812deb4300167"></ri:user></ac:link> <br>I will remove this user’s admin rights, if there is not a good reason for it</p><h3 id="header-10">Tokens</h3><table data-layout="default"><tbody>
+<tr>
+<th><p><strong>Name</strong></p></th>
+<th><p><strong>Person owning the token</strong></p></th>
+<th><p><strong>Reason</strong></p></th>
+<th><p><strong>Note</strong></p></th>
+</tr>
+<tr>
+<td><p>Posts</p></td>
+<td><p>Rene</p></td>
+<td><ul>
+<li><p>Only used on the creation day</p></li>
+<li><p>will expire in a few days anyways </p></li>
+</ul></td>
+<td><p></p></td>
+</tr>
+</tbody></table><p><strong>Note</strong>: Most tokens are not created by the API user</p><h3 id="header-11">Trusted Origins</h3><p><strong>!!!Removed the following entries!!!</strong></p><table data-layout="default"><tbody>
+<tr>
+<th><p><strong>Name</strong></p></th>
+<th><p><strong>Origin URL</strong></p></th>
+<th><p><strong>Type</strong></p></th>
+</tr>
+<tr>
+<td data-highlight-colour="#f9f9f9"><p>Okta Customization Test</p></td>
+<td data-highlight-colour="#f

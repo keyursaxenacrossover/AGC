@@ -1,0 +1,29 @@
+-renderer-start-pos="7970">If you have read rights for <em data-renderer-mark="true">org_groupadmin</em>, open the desired team, click on the appropriate team member, and choose the <strong data-renderer-mark="true">Send password</strong> button.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="8114">The text of the mail is predefined. In the dispatch dialog, only the basic contact data are displayed.</p>
+<h3 id="Checking-user-accounts-for-brute-force-suspension" class="wysiwyg-text-align-justify" data-renderer-start-pos="8218"><strong data-renderer-mark="true">Checking user accounts for brute force suspension</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="8269">The admin area has protection against brute force attacks, i.e. hacking of an account using automated, rapidly consecutive entries of possible passwords. There is only a limited number of incorrect entries possible; exceeding this value will deactivate the staff account for a predetermined period. The person logging in will then see an error message, in which the remaining waiting period will be displayed.</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="8680">By default the account will be suspended after six incorrect entries, the waiting period is 30 minutes. A suspended account can be reactivated by the system administrator (root team) or by a user with write rights to <em data-renderer-mark="true">groupadmin</em>.</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="8912">If you have leased your own installation and you would like to have the values changed, please contact support.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="9027"><strong data-renderer-mark="true">Checking suspended accounts</strong></p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="9056">If a user reports that his or her account was suspended, or if you suspect that a brute force attack has occurred, you can check this in the overview of the <strong data-renderer-mark="true">Users</strong> menu:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="9228">The failed login attempts and the remaining time on suspended accounts are listed in the columns “Failed attempts to login” and “Suspended until”.</p>
+</li>
+<li>
+<p data-renderer-start-pos="9378">The number of logins and the date of the last successful login are also displayed.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="9464">Further details on individual login processes, such as the exact time and the IP address, can be found in the login log, provided you hold the relevant rights.</p>
+<div class="ak-editor-panel cc-tqp4ke wysiwyg-text-align-justify" data-panel-type="info">
+<div class="ak-editor-panel__icon">
+<div class="ak-editor-panel cc-tqp4ke" style="margin: 0.75rem 0px 0px; border-radius: var(--ds-border-radius,3px); word-break: break-word; background-color: var(--ds-background-accent-blue-subtlest,#deebff); color: #172b4d; align-items: normal; min-width: 48px; display: flex; position: relative; clear: both; font-family: -apple-system, BlinkMacSystemFont, ' Segoe UI' , Roboto, Oxygen, Ubuntu, ' Fira Sans' , ' Droid Sans' , ' Helvetica Neue' , sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: pre-wrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; padding: var(--ds-space-100,8px) var(--ds-space-200,16px) var(--ds-space-100,8px) var(--ds-space-100,8px);" data-panel-type="info">
+<div class="ak-editor-panel__icon" style="margin: 0.1em 0px 0px; height: var(--ds-space-300,24px); width: var(--ds-space-300,24px); box-sizing: content-box; text-align: center; user-select: none; color: var(--ds-icon-information,#0052cc); flex-shrink: 0; padding: 0px var(--ds-space-100,8px) 0px 0px;"> </div>
+<div class="ak-editor-panel__content" style="margin: var(--ds-space-025,2px)0 var(--ds-space-025,2px); padding: 0px; flex: 1 0 0px; min-width: 0px;">
+<p style="margin: 0px; padding: 0px; letter-spacing: -0.005

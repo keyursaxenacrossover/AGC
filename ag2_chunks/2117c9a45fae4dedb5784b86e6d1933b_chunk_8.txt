@@ -1,0 +1,33 @@
+ options into an <strong data-renderer-mark="true">options group </strong>for functional options and one for layout related options.</em></div>
+</div>
+<p data-renderer-start-pos="8663">To access the defined options in the template you can use the <em data-renderer-mark="true">question_info </em>variable. You can find your <strong data-renderer-mark="true">options groups </strong>in the <em data-renderer-mark="true">question_info.settings.questionTypeOptions </em>object. For the “orientation”-option it looks like this:</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015627980050"></p>
+<div class="rich-media-item mediaSingleView-content-wrap image-center cc-141s4ox" data-layout="center" data-width="80" data-width-type="percentage" data-node-type="mediaSingle" data-renderer-start-pos="8890">
+<div class="cc-ld2559">
+<div data-type="file" data-node-type="media" data-width="343" data-height="16" data-id="65453368-6b10-494b-8daa-7cfdfdb47432" data-collection="contentId-1259012276" data-file-name="55dea27e-af83-45a1-80cb-7dc21e6a2c60" data-file-size="4125" data-file-mime-type="image/png" data-alt="page250image52114112" data-renderer-start-pos="8891" data-context-id="1259012276">
+<div id="newFileExperienceWrapper" class="new-file-experience-wrapper cc-4p679w" data-testid="media-card-view">
+<div class="media-file-card-view cc-z40uwk" data-testid="media-file-card-view" data-test-status="complete" data-test-source="remote" data-test-media-name="55dea27e-af83-45a1-80cb-7dc21e6a2c60" data-test-progress="1"><span style="font-size: 1.2em; font-weight: 600;">Answer Options</span></div>
+</div>
+</div>
+</div>
+</div>
+<p data-renderer-start-pos="8909">In the <strong data-renderer-mark="true">Answer options </strong>section, you define the initially available answer options for your question type. In matrix type question types every answer option stands for a dimension. In multiple choice question types they represent the checkboxes and in single choice question types you will not have this section at all, as these have exactly one answer option.</p>
+<h3 id="Scale-elements" data-renderer-start-pos="9268">Scale elements</h3>
+<p data-renderer-start-pos="9284">In the <strong data-renderer-mark="true">Scale elements </strong>section, you set the possible answer values (codes). In matrix type question types every element stands for a column. In single-choice question types they represent the radio buttons, whereas in multiple-choice question types, you don’t have this section, because every checkbox has exactly two scale elements with the values “0” and “1”.</p>
+<h3 id="Question-editor-features" data-renderer-start-pos="9644">Question editor features</h3>
+<p data-renderer-start-pos="9670">In this section, you can enable or disable a variety of features for your question type. Which ones are available depends on the category of your question type. For example, matrix type question types have different features available than single-choice question types.</p>
+<div class="ak-editor-panel cc-tqp4ke" data-panel-type="info">
+<div class="ak-editor-panel__icon"><em>Please refer to the info-text of each feature to get a description of what the feature does.</em></div>
+<div class="ak-editor-panel__icon"> </div>
+</div>
+<h3 id="Configuration" data-renderer-start-pos="10036">Configuration</h3>
+<p data-renderer-start-pos="10051">Here you can change the name of the question type.</p>
+<div class="ak-editor-panel cc-tqp4ke" data-panel-type="info">
+<div class="ak-editor-panel__icon"><em>This applies only to the displayed name. It does not change the initially created internal name, as you would have to update the template, CSS and JavaScript files to match the updated name.</em></div>
+<div class="ak-editor-panel__icon"> </div>
+</div>
+<h3 id="PHP" data-renderer-start-pos="10296">PHP</h3>
+<p data-renderer-start-pos="10301">In this section, you can enable the PHP plugin and Ajax. If the Ajax option is active, the “run” method must be called via an Ajax request. Otherwise, the method will be executed after the page is submitted. Furthermore, the PHP plugin can be executed in the preview mode.</p>
+<p data-renderer-start-pos="10574"><u data-renderer-mark="true">Available objects:</u></p>
+<p data-renderer-start-pos="10594"><strong data-renderer-mark="true">$pluginData</strong> - <em data-renderer-mark="true">Survey_Ospe_Question_Plugin_Data</em><br>Contains methods like getPid(), getQid(), getIsInLoop()</p>
+<p data-renderer-start-pos="10698"><strong data-renderer-mark="true">$settings</strong> - <em data-renderer-mark="true">Array</em><br>Contains the configured options of the

@@ -1,0 +1,33 @@
+ template for every panel site. When setting this up, follow the instructions in “EFS Survey”.</li>
+<li>You can use the standard mail wildcards for panel projects. These wildcards are particularly important:<br><br>– #code#: is filled with the voucher code. This wildcard must be used.<br>– #amount#: can be inserted to output the value of the voucher in normal currency.<br><br>
+</li>
+<li>The desired mail template is set when configuring a bonus.</li>
+</ul>
+<h3 id="issuing-vouchers" class="wysiwyg-text-align-justify"><strong>Issuing Vouchers</strong></h3>
+<p class="wysiwyg-text-align-justify">Requested vouchers can be issued in the <strong>People → Incentive management → Bonus system → Issuing of vouchers</strong> menu. (Exception: where automatic dispatch has been activated, see following chapter)</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014812907154" alt="issue_vouchers.png"></p>
+<ol class="wysiwyg-text-align-justify">
+<li>Select the panelists whose voucher you would like to issue.</li>
+<li>Pay attention that the required vouchers are available: the number is listed in the column “Available”.</li>
+<li>Use the<strong> Preview</strong> icon to view the voucher mail.</li>
+<li>Confirm by clicking on <strong>Execute</strong>.</li>
+<li>Dispatching of e-mails with the vouchers is done automatically.</li>
+</ol>
+<p class="wysiwyg-text-align-justify">You can check in the panelist’s detail view, whether the e-mail was sent. To do so, click on the <strong>Contact history</strong> button on the <strong>Contacts</strong> tab: The sought-after e-mail can be found in the “system mail” section.</p>
+<p class="wysiwyg-text-align-justify"><em>Information: </em>A panelist has lost the voucher mail and you want to send the voucher code again? Navigate to the <strong>People → Incentive management → Bonus system → Payment list</strong> menu and click on the <strong>Detail view</strong> button. In the table, you can find the dispatched codes.</p>
+<h3 id="sending-vouchers-automatically" class="wysiwyg-text-align-justify"><strong>Sending Vouchers Automatically</strong></h3>
+<p class="wysiwyg-text-align-justify">Optionally, you can have vouchers automatically issued by the system. This feature reduces your and your colleagues’ workload. However, it also means that voucher requests are no longer monitored by humans. You should therefore weigh up how high the risk of abuse is for your panel. If you choose to use this feature, test the configuration very carefully before activating it and regularly check the accuracy of payments made.</p>
+<p class="wysiwyg-text-align-justify">To activate automatic dispatch, click on the “Automatically send voucher confirmation mail” checkbox when creating the bonus type.</p>
+<p class="wysiwyg-text-align-justify"><em>Information: </em>The option <strong>Offer vouchers only from lists that still have unused voucher codes</strong> in the <strong>BONUS LIST AND REDEMPTION</strong> module is activated by default. If all vouchers of a list have already been redeemed, the bonus types using this voucher list will no longer be displayed. However, if the option is not activated, these bonus types will continue to be displayed and panelists can still redeem their points. In this case, however, the automatic dispatch of the voucher is not triggered. Instead, the redeemed voucher is displayed in the <strong>People</strong> module under <strong>Incentive management &gt; Bonus system &gt; Issuing of vouchers</strong> – just as if no automatic voucher dispatch had been configured. A red traffic light symbol and the number 0 are displayed in the <strong>Available</strong> column indicating that the voucher cannot be issued. The <strong>Encash</strong> action will only be available again once you upload new voucher codes.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h3 id="managing-voucher-code-lists" class="wysiwyg-text-align-justify"><strong>Managing Voucher Code Lists</strong></h3>
+<p class="wysiwyg-text-align-justify"><strong>Monitoring voucher usage</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>When paying out requested vouchers in the<strong> People → Incentive management → Bonus system → Issuing of vouchers</strong> menu, you can find the number of codes that are still usable in the column “Available”.</li>
+<li>The overview in the<strong> Manage voucher code</strong> dialog (see above) lists the complete set and the number of used and unused vouchers for every list.</li>
+<li>In the detail view of a voucher list (<strong>Manage voucher code lists -&gt;{Selected list}</strong>) the usage status will be listed for every single voucher.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Filling out a voucher code list</strong></p>
+<p class="wysiwyg-text-align-justify">You can use the import function described above to refill codes.</p>
+<p class="wysiwyg-text-align-justify"><strong>Deleting vouchers that have not been used</strong></p>
+<p class="wysiwyg-text-align

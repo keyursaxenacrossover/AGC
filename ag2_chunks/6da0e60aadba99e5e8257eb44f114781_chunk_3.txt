@@ -1,0 +1,34 @@
+ export contains all guide initiators that have started a process.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20997981955346" alt="The Export Function.png"></p>
+<h3 id="header-22"><strong>Guide Status Page: New Layout</strong></h3>
+<p>The Layout of the <em>Portals</em> page module <em>Guide Status</em> has been redesigned. A timline shows you what to expect and when, and additional controls allow you to send reminders, invite additional people and extend the process.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20997992916242" alt="Guide Status.png"></p>
+<h3 id="header-23"><strong>Bulk invitation via Email-Address-List (ME and US Guide)</strong></h3>
+<p>To make it easier to invite people, it is now possible to invite people to your guide by using a list of email addresses. Use the free text field. You have to activate the option "Allow invitations from email addresses". it is now possible to invite people to your guide from a list of email addresses.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20997992295954" alt="Email-Addresses Link.png"></p>
+<p>Clicking on the link opens the free text field in which you can enter the e-mail addresses of the people to be invited, separated by semicolon, commas or line breaks.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20997994597010" alt="List of Email-Addresses.png"></p>
+<p>After confirmation, all entries appear in a list. Afterwards, further persons can be invited via the search function.</p>
+<h2 id="header-25"><strong>EFS Platform Improvements</strong></h2>
+<h3 id="header-27"><strong>Full support for current Excel document format</strong></h3>
+<p><em>EFS</em> now fully supports the current XLSX document format in nearly all imports and exports of <em>EFS</em>. All “Export to Excel” functionality now generates XLSX documents instead of XLS.</p>
+<h3 id="header-28"><strong>Exporting of mail templates </strong></h3>
+<p>With EFS 20.1 it is now possible to export and import mail templates. This allows archiving or even migration of templates across different installations. The export includes all parts of the template, including translations and attachments. In some cases, the user may be prompted to adjust assignment to a portal, panel website or the mail sender.</p>
+<h3 id="header-29"><strong>Enhancements in custom question types</strong></h3>
+<p>It is now possible to create groups and titles as items in multi-choice custom question types.</p>
+<h3 id="header-30"><strong>Adaptable Portals mail templates</strong></h3>
+<p>Mail templates for Portals now provide the primary color (#portal_color#) and the URL to the logo (#portal_logo#) of  the selected portal. This allow us and our customers to provide reusable mail templates, which automatically conform to a portals brand automatically.</p>
+<h3 id="header-31"><strong>Formatting of wildcards with dates in mail templates</strong></h3>
+<p>Any variable containing date/time information in mail templates can now be formatted using the piping function date_format, for example:</p>
+<p><em> #u_wave_expire_date<strong>|date_format(Y-m-d H:i)</strong>#</em></p>
+<p>If a variable cannot be converted to a date, it will be printed without applying the format.</p>
+<h2 id="header-33"><strong>Survey improvements</strong></h2>
+<h3 id="header-35">
+<strong>Full support for right-to-left languages in </strong><em><strong>Responsive Layout 3</strong></em>
+</h3>
+<p>The default survey layout now fully supports right-to-left languages and activates automatically, when a language from a supported region is used in the survey. All layout elements and questions, including sliders and other visual question types, are then automatically mirrored and adapted to the language, providing familiar usability for the participant. There’s also no need to manually flip scales or dimensions, allowing true multi-language surveys out of the box.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998007846034" alt="Hebrew.png"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20997991701138" alt="English.png"></p>
+<p>List of supported regions (first part of the language code)</p>
+<p>ar (Arabic), arc (Aramaic), dv (Divehi), fa (Farsi), ha (Hausa), he(Hebrew), khw (Khowar), ks (Kashmiri), ku (Kurdish), ps (Pashto), ur (Urdu), yi (Yiddish). For example, ar_MA, ar_SA and ar_QA are all supported, because of region code <em>ar</em>.</p>
+<h3 id="header-36"><strong>Improved mobile view of the accordion matrix question type</strong></h3>
+<p>The Accordion Matrix question type now has the option "Vertical alignment on mobile phones" in the

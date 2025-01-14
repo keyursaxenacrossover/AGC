@@ -1,0 +1,64 @@
+.customervoice360.com</strong></a> <br>The good thing about this is that there are not special programmings.<br>The drawback is that the master installation already has some inconsistencies that are copied to the cloned installation as well. This has to be cleaned by US customer support.<br></p><ul>
+<li><p>Installation needs to be requested via survey</p></li>
+<li><p>Technical Support forwards the case to Sysadmin</p></li>
+<li><p>Sysadmins will clone the defined master installation and send case back to TS</p></li>
+<li>
+<p>TS adds installation to Globis by executing script "helpersAddInstallationInGlobis" in htdocs without parameters</p>
+<ul>
+<li><p>select 2 "Kundeninstallation"</p></li>
+<li><p>select "QB_US" as responsible country</p></li>
+<li><p>Enter Salesforce account ID and contact ID as mentioned in the installation request</p></li>
+<li>
+<p>The script already changes</p>
+<ul>
+<li><p>tmp_path</p></li>
+<li><p>tmp_path_export</p></li>
+<li><p>watchdog_path</p></li>
+<li><p>gp_id</p></li>
+<li><p>the root password and prints it out on the console</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>TS adds additional modules if requested</p></li>
+<li><p>TS changes the service layer token (because it is copied from the master too)</p></li>
+<li><p>In case of Rackspace: TS changes memcache URL to "172.24.48.112"</p></li>
+<li><p>In case of Rackspace: TS changes sftp_host to "172.24.48.40"</p></li>
+<li><p>In case of Rackspace: TS changes mysight_user_provisioning_service to "<a href="http://172.24.48.40:49866/app/api/process/userprovision/">http://172.24.48.40:49866/app/api/process/userprovision/</a>"</p></li>
+<li><p>TS renames organisation from "Ipsos ICP - MASTER INSTALLATION" to "Ipsos ICP - NA".</p></li>
+<li><p>TS changes "qb only:: Customer ID" to 001D000001r2iZ6 (if not defined otherwise in the request)</p></li>
+<li><p>TS executes healself</p></li>
+<li><p>TS resets activity stream to create the elastic search index for this installation (php support/panel_reset_activitystream.php =&gt; [ 1 ] - Delete and reset complete activity stream [WARNING: maybe slow])</p></li>
+<li><p>TS also might have to sync the panelists (php support/panel_sync_panelists.php =&gt; [ 0 ] - Update all panelists [WARNING: maybe slow])</p></li>
+<li><p>TS adds the installation to US PasswordSafe and adds the password created by the script before</p></li>
+<li><p>TS executes installation check</p></li>
+</ul><p></p><h3 id="header-9">IPSOS SMX</h3><p>The new installation is a copy of master installation <a href="http://jm1268.customervoice360.com"><strong>jm1268.customervoice360.com</strong></a> if not defined otherwise.<br>No special deadline defined, so installation should be set up within 6 working days.</p><p></p><ul>
+<li><p>Technical Support forwards the case to Sysadmin</p></li>
+<li><p>Sysadmins will clone the defined master installation and send case back to TS</p></li>
+<li>
+<p>TS adds installation to Globis by executing script <strong>helpersAddInstallationInGlobis</strong></p>
+<ul>
+<li><p>select 2 <strong>Kundeninstallation</strong></p></li>
+<li><p>select <strong>QB_US</strong> as responsible country</p></li>
+<li><p>Enter Salesforce account ID and contact ID as mentioned in the installation request</p></li>
+<li>
+<p>The script already changes</p>
+<ul>
+<li><p>tmp_path</p></li>
+<li><p>tmp_path_export</p></li>
+<li><p>watchdog_path</p></li>
+<li><p>gp_id</p></li>
+<li><p>the root password and prints it out on the console</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>TS adds the installation to US PasswordSafe and adds the password created by the script before</p></li>
+<li><p>TS adds additional modules if requested</p></li>
+<li><p>TS "changes the service layer token" (because it is copied from the master too)</p></li>
+<li>
+<p>In case of Rackspace: TS changes</p>
+<ul>
+<li><p><strong>memcache_servers</strong> -&gt; 172.24.48.112</p></li>
+<li><p><strong>sftp_host</strong> -&gt; 172.24.48.40</p></li>
+<li><p><strong>mysight_user_provisioning_service</strong> -&gt; <a href="http://172.24.48.40:49866/app/api/process/userprovision/">http://172.24.48.40:49866/app/api/process/userpro

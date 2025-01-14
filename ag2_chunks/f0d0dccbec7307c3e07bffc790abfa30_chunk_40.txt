@@ -1,0 +1,113 @@
+BB"> </h4>
+<h3 id="header-189">POST /panel/panelists/redemption</h3>
+<p>Returns the bonus points redemption positions for all panelists of the installation that happened since the last call to the service. This method can be used to do a regular, incremental replication of the panel's bonus points redemption to another application (where EFS is used as the master system for managing the points). The panelist identifier for the returned redemption can be user_id, panelist code, pseudonym etc.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "identifierType": "uid",
+  "fetchAll": true,
+  "logTransfer": true
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[
+  {
+    "panelist_identifier_value": "Example",
+    "item_type": 1234,
+    "survey_id": 1234,
+    "points_id": 1234,
+    "description": "Example",
+    "credit_points": 1.345,
+    "date": "Example",
+    "paid": 1234,
+    "paid_date": "Example",
+    "alt_address": "Example",
+    "voucher_code": "Example"
+  }
+]</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79J5VFFF5QP6ZKG137P"> </h4>
+<h3 id="header-190">POST /panel/promotions/</h3>
+<p>This service can be used to check whether an e-mail address has already been entered into the promotional system and what its status is. Invited only or already converted into a panelist.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{ "recipientEmail": "example@domain.tld" }</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[
+  {
+    "status": 1234,
+    "code": "Example",
+    "date_invited": "2018-07-05T08:37:57+00:00",
+    "date_converted": "2018-07-05T08:40:00+00:00"
+  }
+]</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79JJ1Y0QW6GNXH82QD1"> </h4>
+<h3 id="header-191">PUT /panel/promotions/</h3>
+<p>Sends an invitation as e-mail to a friend.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "promotionId": 1234,
+  "recipientEmail": "example@domain.tld",
+  "header": "Example text",
+  "footer": "Example text",
+  "panelistUid": 123
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">true</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79JWNA34P9MA9SE4YX7"> </h4>
+<h3 id="header-192">POST /panel/samples/</h3>
+<p>Sends mails to every panelist in the sample</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "sampleId": 1,
+  "mailTemplate": {
+    "subject": "Example",
+    "textContent": "Example",
+    "htmlContent": "Example",
+    "charset": "UTF-8",
+    "replyTo": "Example",
+    "returnPath": "Example",
+    "priority": "NO_PRIORITY",
+    "sensitivity": "NORMAL",
+    "notify": "NO_NOTIFICATION",
+    "toRealname": true,
+    "from": "Example",
+    "sms_from": "Example",
+    "sms_content": "Example",
+    "cc": "Example",
+    "bcc": "Example",
+    "fromRealname": "Example"
+  },
+  "dispcodes": [
+    "10"
+  ],
+  "sendOptions": {
+    "sendDate": "2020-07-02T12:53:50+00:00",
+    "useRecipientTimezone": true
+  }
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">true</code></pre>
+</div>
+<h2 id="header-194">Panel statistics</h2>
+<div class="expand-macro">
+<h4 id="h_01J441N79J36RSJMMD12PMPSHG"> </h4>
+<h3 id="header-196">GET /panel/statistics/status</h3>
+<p>Panel status distribution</p>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[
+    {
+        "code": "1",
+        "label": "Admitted temporarily",
+        "value": 26,
+        "ratio": 0.19259259259259
+    },
+    {
+        "code": "2",
+        "label": "Active",
+        "value": 93,
+        "ratio": 0.68888888888889
+    }, ...
+]</code></

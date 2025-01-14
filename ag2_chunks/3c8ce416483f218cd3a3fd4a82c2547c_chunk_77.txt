@@ -1,0 +1,138 @@
+ 132.795px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 170.417px;">
+<p>Number of bonus points granted on registration</p>
+</td>
+<td style="width: 322.344px;">
+<p>If you wish to award initial bonus points for registration, you can specify the number in this field.</p>
+</td>
+<td style="width: 132.795px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 170.417px;">
+<p>Text to be entered in the bonus points history when registering</p>
+</td>
+<td style="width: 322.344px;">
+<p> </p>
+</td>
+<td style="width: 132.795px;">
+<p>Registration</p>
+</td>
+</tr>
+<tr>
+<td style="width: 170.417px;">
+<p>Way of entry that is set on registration</p>
+</td>
+<td style="width: 322.344px;">
+<p> </p>
+</td>
+<td style="width: 132.795px;">
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"><strong>Contact form</strong></p>
+<table class="wysiwyg-text-align-justify" style="height: 443px;" border="1" width="660" data-layout="full-width" data-table-width="1278.3672">
+<colgroup> <col style="width: 141.0px;"> <col style="width: 239.0px;"> <col style="width: 110.0px;"> </colgroup>
+<tbody>
+<tr>
+<th style="width: 186.493px;">
+<p><strong>Description</strong></p>
+</th>
+<th style="width: 318.281px;">
+<p><strong>Explanation</strong></p>
+</th>
+<th style="width: 144.844px;">
+<p><strong>Preallocation in the standard panel</strong></p>
+</th>
+</tr>
+<tr>
+<td style="width: 178.472px;">
+<p>Text in feedback emails: “sender”</p>
+</td>
+<td style="width: 310.26px;">
+<p>This and the following text elements are used in the e-mails sent to the panel operator via the contact form.</p>
+</td>
+<td style="width: 136.823px;">
+<p>Sender</p>
+</td>
+</tr>
+<tr>
+<td style="width: 178.472px;">
+<p>Text in feedback emails: “content”</p>
+</td>
+<td style="width: 310.26px;">
+<p>see above</p>
+</td>
+<td style="width: 136.823px;">
+<p>Inquiry</p>
+</td>
+</tr>
+<tr>
+<td style="width: 178.472px;">
+<p>Text in feedback emails: “headline”</p>
+</td>
+<td style="width: 310.26px;">
+<p>see above</p>
+</td>
+<td style="width: 136.823px;">
+<p>Headline</p>
+</td>
+</tr>
+<tr>
+<td style="width: 178.472px;">
+<p>Text in feedback emails: “topics”</p>
+</td>
+<td style="width: 310.26px;">
+<p>see above</p>
+</td>
+<td style="width: 136.823px;">
+<p>Subject</p>
+</td>
+</tr>
+<tr>
+<td style="width: 178.472px;">
+<p>Text in feedback emails: “selection”</p>
+</td>
+<td style="width: 310.26px;">
+<p>see above</p>
+</td>
+<td style="width: 136.823px;">
+<p>Selection</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"><strong>Locale settings</strong></p>
+<table class="wysiwyg-text-align-justify" style="width: 658px; height: 850px;" border="1" data-layout="full-width" data-table-width="1320.6132">
+<colgroup> <col style="width: 99.0px;"> <col style="width: 97.0px;"> <col style="width: 196.0px;"> <col style="width: 98.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" style="width: 106.111px;">
+<p><strong>Description</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 221.736px;">
+<p><strong>Wildcard</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 201.076px;">
+<p><strong>Explanation</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 115.59px;">
+<p><strong>Preallocation in the standard panel</strong></p>
+</th>
+</tr>
+<tr>
+<td style="width: 98.0903px;">
+<p>Name of panel</p>
+</td>
+<td style="width: 213.715px;">
+<p>{$env.panel_name}</p>
+</td>
+<td style="width: 193.056px;">
+<p>Name of the panel, which can be output via wildcards. This is also used in the emails sent by panel visitors or panelists to the panel operator via

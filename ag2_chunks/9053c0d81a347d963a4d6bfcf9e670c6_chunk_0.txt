@@ -1,0 +1,48 @@
+<p class="wysiwyg-text-align-justify"><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p class="wysiwyg-text-align-justify">This article provides a comprehensive guide to Panelists Administration in EFS Panel. It covers various aspects of managing panelists, including searching, adding, importing, and editing panelist data, as well as performing duplicates checks and handling candidates.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">Panelists Administration is a crucial aspect of managing online panels. This guide focuses on the tools and processes available in EFS Panel for efficient panelist management, data integrity, and quality assurance.</p>
+<ul class="wysiwyg-text-align-justify">
+<li><a href="#h_01HGKSMPRSZ8QJXQ9JXBJ3YDKM">Panelists Administration</a></li>
+<li><a href="#h_01HGKSMPRS3YJGQX3YBVHXKP6N">Adding Panelists</a></li>
+<li><a href="#h_01HGKSMPRSQXGJ8YJXBHXKP6N">Importing Panelists</a></li>
+<li><a href="#h_01J3FYMC39JWGGZ7H0QJ6T9PQE">Updating Panelist Data</a></li>
+<li><a href="#h_01HGKSMPRS5YJGQX3YBVHXKP6N">Candidates</a></li>
+<li><a href="#h_01HGKSMPRS6YJGQX3YBVHXKP6N">Duplicates Check</a></li>
+</ul>
+<h2 id="h_01HGKSMPRSZ8QJXQ9JXBJ3YDKM" class="wysiwyg-text-align-justify">Panelists Administration</h2>
+<p class="wysiwyg-text-align-justify">The Panelists Administration menu allows you to view and edit the data of all panelists, including candidates. It provides powerful search functions and tools for managing panelist information.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017191603730"></p>
+<div class="flex-shrink-0 flex flex-col relative items-end wysiwyg-text-align-justify">
+<div>
+<div class="pt-0">
+<div class="gizmo-bot-avatar flex h-8 w-8 items-center justify-center overflow-hidden rounded-full">
+<div class="relative p-1 rounded-sm flex items-center justify-center bg-token-main-surface-primary text-token-text-primary h-8 w-8">When you open the Panelists administration menu, only the search dialog is shown. To list all panelists, enter <code>@</code> in the search field and trigger the search.</div>
+</div>
+</div>
+</div>
+</div>
+<h3 id="h_01HGKSMPRS7YJGQX3YBVHXKP6N" class="wysiwyg-text-align-justify">Simple Search</h3>
+<p class="wysiwyg-text-align-justify"><strong>Executing a Search Query:</strong></p>
+<ol class="wysiwyg-text-align-justify">
+<li>Go to People → Panelists administration.</li>
+<li>In the “Search text” field, enter a term or part of a term (e.g., panelist's name).</li>
+<li>Click on <strong>Search</strong>.</li>
+<li>If the term is found in a panelist’s data record, the panelist will be displayed (deleted panelists are ignored).</li>
+<li>Click on the panelist's name to open the detail view.</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><strong>How the Search Function Works:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Ignores upper and lower case.</li>
+<li>Excludes the following fields: "WWW" (u_www), "street" (u_street), "place" (u_city), "PLZ" (u_zip), and "phone number" (u_phone).</li>
+<li>Returns all entries containing the entered term.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Note:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Large results may not display all panelists on the first page. Use the &gt; (Next page) and &lt; (Previous page) links to scroll through the results.</li>
+</ul>
+<h3 id="h_01HGKSMPRS8YJGQX3YBVHXKP6N" class="wysiwyg-text-align-justify">Extended Search</h3>
+<p class="wysiwyg-text-align-justify">The Extended search function, which you can open by clicking on the link of the same name, offers you diverse options for narrowing the search in your panelist data. The search criteria listed in the following table can be either used individually or combined.</p>
+<table class="relative-table tablesorter tablesorter-default wrapped confluenceTable wysiwyg-text-align-justify" style="margin: 0px auto; border-collapse: collapse; width: 902.333px; background-color: #ffffff;">
+<tbody

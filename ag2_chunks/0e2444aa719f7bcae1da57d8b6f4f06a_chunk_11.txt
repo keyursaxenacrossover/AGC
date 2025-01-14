@@ -1,0 +1,57 @@
+ characteristics, like zip codes.</p>
+<p><strong>Formatting the Import File:</strong></p>
+<ul>
+<li>Use a simple CSV list with the characteristics of the linking variable.</li>
+<li>Empty rows or the value “0” will be ignored.</li>
+</ul>
+<p><strong>Applying the Import Filter:</strong></p>
+<ol>
+<li>Open the <strong>Filters</strong> tab in the group's edit dialog.</li>
+<li>Click on the <strong>Import filter</strong> button.</li>
+<li>Select the appropriate linking variable (numeric master data variables and u_zip are available).</li>
+<li>Choose the character set and import file.</li>
+<li>Optionally, restrict the group size using the “Maximum size of random selection from file” field.</li>
+<li>Select the filter mode: “Apply to all panelists in panel” or “Create intersection with current panel group”.</li>
+<li>Click on <strong>Continue</strong>.</li>
+</ol>
+<h3 id="h_01J3G0EVYMN79RGAJSAB2A7ECW">History</h3>
+<p>The <strong>History</strong> tab logs all actions performed in a group. You can repeat the work process in whole or in part by selecting an action and clicking on <strong>Repeat grouping</strong>.</p>
+<h3 id="h_01J3G0EVYMA5KRAD83JMCJGAS1">Tracking</h3>
+<p>The <strong>Tracking</strong> tab displays tracking data for the group.</p>
+<h3 id="h_01J3G0EVYM9KCFYSBDJ04V62VV">Statistics</h3>
+<p>On the <strong>Statistics</strong> tab, create statistics for the current group by selecting the desired evaluation variable and two split variables.</p>
+<h3 id="h_01J3G0EVYMWWZN1D1HS85G0M66">Usage</h3>
+<p>The <strong>Usage</strong> tab shows where the group is used in EFS, ensuring that groups used elsewhere cannot be deleted.</p>
+<p> </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h2 id="h_01HGKSMPRSM4YJXHXJ8YJDE1QW" class="wysiwyg-text-align-justify">Grouping Filters</h2>
+<p class="wysiwyg-text-align-justify">Grouping filters allow for complex selection criteria when creating or modifying groups. They can be accessed from the Filters tab in a group's edit dialog or via the <strong>People → Groups → Grouping filters</strong> menu.</p>
+<h3 id="h_01J3G10QZ6SSFHX4EDQ0Y2VAV0" class="wysiwyg-text-align-justify">Administrating Grouping Filters</h3>
+<p class="wysiwyg-text-align-justify">Access previously defined grouping filters and create new ones:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>From the <strong>Filters</strong> tab in a group’s edit dialog via the <strong>Grouping filter</strong> button.</li>
+<li>Via the <strong>People → Groups → Grouping filters</strong> menu.</li>
+</ul>
+<h3 id="h_01J3G10QZ76YT09NWBY7YCXCVX" class="wysiwyg-text-align-justify">Defining Grouping Filters</h3>
+<p class="wysiwyg-text-align-justify">The filter editor's structure is similar to the condition editor in the EFS Survey project area. To define a condition:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>Click on the <strong>Create filter condition</strong> button.</li>
+<li>Select the desired variable, condition, code, and conjunction.</li>
+<li>Save the filter to use it again in future grouping and sampling processes.</li>
+</ol>
+<p class="wysiwyg-text-align-justify">You can view, edit, apply, and delete filters from the list of created filters.</p>
+<p class="wysiwyg-text-align-justify"><strong>Testing Filters:</strong> Click on the <strong>Test filter condition</strong> icon to check the number of panelists the filter would apply to.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014812736530"></p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="h_01HGKSMPRS7YJHG8XJDE1QW3TN" class="wysiwyg-text-align-justify">Update Rules</h2>
+<p class="wysiwyg-text-align-justify">Static panel groups can be updated automatically or manually using self-defined rules. To manage these rules, navigate to <strong>People → Groups → Update rules</strong>.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014859650706"></p>
+<h3 id="h_01J3G14YZ57YW2NMQ4TYTTVVX8" class="wysiwyg-text-align-justify">Overview of Update Rules</h3>
+<p class="wysiwyg-text-align-justify">If update rules are already created, they will be listed in an overview table

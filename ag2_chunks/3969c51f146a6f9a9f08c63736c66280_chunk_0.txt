@@ -1,0 +1,60 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K" class="wysiwyg-text-align-justify">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article provides a comprehensive guide on configuring AD FS 3.0 on Windows Server 2012 R2 for SAML federation with Okta. It covers the prerequisites, configuration steps, and claim rules necessary for successful integration.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">This guide focuses on setting up AD FS 3.0 on Windows Server 2012 R2 to work with SAML federation. It includes detailed steps for creating a Relying Party Trust and configuring the required claim rules.</p>
+<ul class="wysiwyg-text-align-justify">
+<li><a href="#prerequisites">Prerequisites</a></li>
+<li><a href="#configuration-in-ad-fs">Configuration in AD FS</a></li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify">AD FS will be used in combination with a SAML federation in that version. Prefer an OIDC federation in newer versions.</p>
+<table class="wysiwyg-text-align-justify" style="width: 699px;" border="1" data-layout="default">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<td style="width: 283.681px;">
+<p>OICD Federation</p>
+<p>(Metadata)</p>
+</td>
+<td style="width: 391.979px;">
+<p><a href="https://sso.questback.com/FederationMetadata/2007-06/FederationMetadata.xml">https://sso.questback.com/FederationMetadata/2007-06/FederationMetadata.xml</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 class="wysiwyg-text-align-justify"> </h3>
+<h3 id="prerequisites" class="wysiwyg-text-align-justify"><strong>Prerequisites</strong></h3>
+<ol class="wysiwyg-text-align-justify">
+<li>
+<p>The Server has to be part of the target Active Directory Domain</p>
+</li>
+<li>
+<p>The Server Role “Active Directory Federation Services” has to be installed and configured on the server.</p>
+</li>
+<li>
+<p>The three parts “Install a server SSL certificate”, “Install the AD FS server role” and “Configure the federation server” under Step 2 of the Microsoft documentation are quite helpful.</p>
+</li>
+</ol>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<td style="width: 263.542px;">
+<p>Microsoft Documentation</p>
+</td>
+<td style="width: 413.125px;">
+<p><a href="https://docs.microsoft.com/de-de/windows-server/identity/ad-fs/deployment/set-up-the-lab-environment-for-ad-fs-in-windows-server-2012-r2#step-2-configure-the-federation-server-adfs1-by-using-device-registration-service">https://docs.microsoft.com/de-de/windows-server/identity/ad-fs/deployment/set-up-the-lab-environment-for-ad-fs-in-windows-server-2012-r2#step-2-configure-the-federation-server-adfs1-by-using-device-registration-service</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify">There is no further configuration needed in AD FS to enable SAML authentication.</p>
+<p class="wysiwyg-text-align-justify">To successfully create a SAML federation between AD FS and Okta there are a few fields that are required by our Okta solution. The AD FS has to provide an email address, first name, and last name as well as an email address as NameID.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h3 id="configuration-in-ad-fs" class="wysiwyg-text-align-justify"><strong>Configuration in AD FS</strong></h3>
+<p class="wysiwyg-text-align-justify">The steps might change with regard to the version and server version. They might also change with respect to the specific fields that are available in the actual AD FS instance.</p>
+<p class="wysiwyg-text-align-justify"><strong>Step 1: Create a Relying Party Trust</strong></p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015039155986" alt="image-20200106-121635.png"></p>
+<p class="wysiwyg-text-align-justify">In the second step of the configuration wizard, the information can and should be imported via a metadata.xml file provided by Okta. This contains all the information needed to complete the wizard.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discover

@@ -1,0 +1,165 @@
+<p>Example: [shorturl]#url#?a=param1&amp;b=#v_1#[/shorturl]</p>
+<p>Please note: The shortened URLs will be displayed in the sent email (not in the preview).</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="wildcards-for-personalized-surveys-and-panel-projects" class="wysiwyg-text-align-justify"><strong>Wildcards for Personalized Surveys and Panel Projects</strong></h2>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default">
+<colgroup> <col style="width: 210.0px;"> <col style="width: 550.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Wildcard</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>#u_firstname#</p>
+</td>
+<td>
+<p>first name</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#u_name#</p>
+</td>
+<td>
+<p>last name</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#u_email#</p>
+</td>
+<td>
+<p>e-mail address</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#u_passwd#</p>
+</td>
+<td>
+<p>password</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#code#</p>
+</td>
+<td>
+<p>participant’s code. This wildcard can be used in the questionnaire, too.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#url#</p>
+</td>
+<td>
+<p>server domain</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#code_complete#</p>
+</td>
+<td>
+<p>Participant’s code including survey URL.</p>
+<ul>
+<li>
+<p>The protocol and domain used in the URL depend on the settings in the “Base URL” field</p>
+</li>
+<li>
+<p>When you create an HTML mail please note: To generate an active<br>labeled link in a new e-mail or mail template you must define the corresponding HTML tags. E.g. &lt;a href=“#code_complete#“&gt;Label&lt;/a&gt;.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>#code_complete_http#</p>
+</td>
+<td>
+<p>HTTP survey URL including the code of the participants.</p>
+<ul>
+<li>
+<p>If you’re logged in with SSL, the #code_complete# wildcard will always be filled with the https URL. By using the #code_complete_http# wildcard, you can enforce the use of the http URL.</p>
+</li>
+<li>
+<p>This may be useful, for example, if for reasons of safety, you work with SSL encryption in the admin area but want the survey to be conducted without encryption.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>#code_complete_https#</p>
+</td>
+<td>
+<p>https survey URL including the code of the participants.</p>
+<p>If you’re logged in with https, the #code_complete# wildcard will always be filled with the http URL. By using the #code_complete_https# wildcard, you can enforce the use of the HTTP URL.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="wildcards-for-panel-projects" class="wysiwyg-text-align-justify"><strong>Wildcards for Panel Projects</strong></h2>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default">
+<colgroup> <col style="width: 217.0px;"> <col style="width: 543.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Wildcard</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>#bonus#</p>
+</td>
+<td>
+<p>Number of bonus points (format).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#m_[number]# and #md_[number]#</p>
+</td>
+<td>
+<p>The value of the variable from the respective master data item.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#panel_url#</p>
+</td>
+<td>
+<p>A link to the panel.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#panelist_code#</p>
+</td>
+<td>
+<p>The panelist code, i.e. access code to the panel.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#panelist_login_code#</p>
+</td>
+<td>
+<p>Wildcard which allows to creation of a shortened login link.</p>
+<ul>
+<li>
+<p>URL parameter for direct login with shortened code: login_code</p>
+</li>
+<li>
+<p>Sample link: <a href="http://your-domain.com/panelwebesite/">http://your-domain.com/panelwebesite/</a

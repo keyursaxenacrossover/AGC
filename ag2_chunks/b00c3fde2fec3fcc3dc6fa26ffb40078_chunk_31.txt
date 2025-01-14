@@ -1,0 +1,27 @@
+ initial template contains basic functionality that enables you to develop your template.</p>
+<p class="wysiwyg-text-align-justify">If you need to see how special features are implemented you may have a look at the templates of the responsive layout, accessible in <strong>Survey</strong> <strong>menu</strong> → <strong>Layout</strong> → <strong>Pro editor</strong>.</p>
+<p class="wysiwyg-text-align-justify">Every question contains one or more variables (configured in <strong>Settings</strong>). A variable represents an answer option. In the case of a matrix, every dimension is an answer option (or item) and therefore has its variable.</p>
+<p class="wysiwyg-text-align-justify">For every variable, there needs to be a list of possible values. These are the scale elements (internally called “r_cat”), which are also configured under <strong>Settings</strong>.</p>
+<p class="wysiwyg-text-align-justify">In the template, you have a variable <strong>$items</strong>, which is an array that contains all answer options of the question. You can iterate over them with a for-each loop or a section. Every item-object has a variable <strong>$r_cats</strong>, which is an array that contains all scale elements of the question. Again you can iterate over them with a loop.</p>
+<p class="wysiwyg-text-align-justify">If you want to see all existing Smarty variables insert {debug} in your template. A button will appear at the top right corner of the question preview, which opens a complete list of variables available at the point the debug plugin was called.</p>
+<p class="wysiwyg-text-align-justify">A simple example of how to iterate over items and <em>r_cats</em>:</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015444613266" alt="image2019-3-12_15-37-47.png"></p>
+<p class="wysiwyg-text-align-justify">To submit values to the server the form needs to have a field (depending on the question type e. g. input, checkbox, hidden or select tag) containing the name of the variable matching its name. For example:</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015444615826" alt="image2019-3-12_15-38-44.png"></p>
+<p class="wysiwyg-text-align-justify">This will print a select box for each item including any scale options (<em>r_cat</em>).</p>
+<h3 id="style-sheet" class="wysiwyg-text-align-justify"><strong>Style Sheet</strong></h3>
+<p class="wysiwyg-text-align-justify">In the<strong> Style Sheet</strong> menu, you can edit the question type’s CSS file. Some styles are predefined, but you can remove them to get the default styling of the Responsive Layout and start your styling from there. The question type’s main container gets a CSS class with the following structure:</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015444620690" alt="image2019-3-12_15-41-20.png"></p>
+<p class="wysiwyg-text-align-justify">In our example, the class name would read as follows:</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015414454034" alt="image2019-3-12_15-41-55.png"></p>
+<p class="wysiwyg-text-align-justify">You should use this class as a namespace to limit your styles to your question type and prevent interferences with the outer layout or other question types.</p>
+<h3 id="java-script" class="wysiwyg-text-align-justify"><strong>Java Script</strong></h3>
+<p class="wysiwyg-text-align-justify">In the <strong>JavaScript</strong> menu, you define the logic of your question type.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>If you do not need any JavaScript behaviour you can remove the example code and leave the file empty.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">At the beginning of the template file, there is some code that makes the question type’s settings available in JavaScript. You can find these settings in the options object of the JavaScript plugin. For example, the answer options (items) are stored in an array called items. Likewise, the scale options (<em>r_cats</em>) are stored in an array called <em>rcats</em>.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015414455058" alt="image2019-3-12_15-46-2.png"></p>
+<p class="wysiwyg-text-align-justify">You will also find the question type’s options (defined in the <strong>Settings</strong> area) inside this. options object. I.e. if you have an option named “orientation” in the <strong>options group</strong> <em>optionsGroup

@@ -1,0 +1,164 @@
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>sampleId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>id of sample to add the participants to <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79FBTSX7QFV7081XZ91"> </h4>
+<h3 id="header-95">GET /loft/participants/{project_id}/{fid}</h3>
+<p>Get feedback center user data</p>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">"Encoded Feedback Center data"</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>project_id</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>Efs project id <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>fid</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>Feedback center user id <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79FJXD6G781EH0BQ0WR"> </h4>
+<h3 id="header-96">GET /loft/participants/{project_id}/{fid}/{token}</h3>
+<p>Check if user has access to feedback center for project</p>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">true</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table style="height: 202px;" border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr style="height: 22px;">
+<th style="height: 22px; width: 160.903px;">
+<p>Name</p>
+</th>
+<th style="height: 22px; width: 158.906px;">
+<p>Type</p>
+</th>
+<th style="height: 22px; width: 158.906px;">
+<p>Required</p>
+</th>
+<th style="height: 22px; width: 158.906px;">
+<p>Description</p>
+</th>
+</tr>
+<tr style="height: 45px;">
+<td style="height: 45px; width: 152.882px;">
+<p>project_id</p>
+</td>
+<td style="height: 45px; width: 150.885px;">
+<p>integer</p>
+</td>
+<td style="height: 45px; width: 150.885px;">
+<p>true</p>
+</td>
+<td style="height: 45px; width: 150.885px;">
+<p>Efs project id <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+<tr style="height: 45px;">
+<td style="height: 45px; width: 152.882px;">
+<p>fid</p>
+</td>
+<td style="height: 45px; width: 150.885px;">
+<p>integer</p>
+</td>
+<td style="height: 45px; width: 150.885px;">
+<p>true</p>
+</td>
+<td style="height: 45px; width: 150.885px;">
+<p>Feedback center user id <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+<tr style="height: 90px;">
+<td style="height: 90px; width: 152.882px;">
+<p>token</p>
+</td>
+<td style="height: 90px; width: 150.885px;">
+<p>string</p>
+</td>
+<td style="height: 90px; width: 150.885px;">
+<p>true</p>
+</td>
+<td style="height: 90px;

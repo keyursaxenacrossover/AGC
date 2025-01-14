@@ -1,0 +1,87 @@
+</td>
+<td class="wysiwyg-text-align-center">
+<p>✅</p>
+</td>
+<td>
+<p><code>string</code></p>
+</td>
+<td>
+<p><code>''</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>iam_user_group_id</code></p>
+</td>
+<td>
+<p>The ID of the group in Okta for this tenant.</p>
+<p>This is used to assign all synced users to a group so Okta policies can be scoped on said user groups.</p>
+<p>If this is not set, user creation (and similar) may show warnings/errors that users were not synced</p>
+<p><strong>This must not be the group ID of the group “Everyone” in Okta!</strong></p>
+</td>
+<td class="wysiwyg-text-align-center">
+<p>✅</p>
+</td>
+<td>
+<p><code>string</code></p>
+</td>
+<td>
+<p><code>''</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>iam_well_known_url</code></p>
+</td>
+<td>
+<p>The URL of the discovery document for the custom authorization server in Okta.</p>
+<p>This contains all non-application specific settings for Okta and is used to process the authentication response from Okta and sending unauthenticated users to Okta.</p>
+<p>This can be taken from Okta (API &gt; Authorization Servers) and is created during the setup of Questback Access</p>
+</td>
+<td class="wysiwyg-text-align-center">
+<p>✅</p>
+</td>
+<td>
+<p><code>string</code></p>
+</td>
+<td>
+<p><code>''</code></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="h_01J5X5QAZ18GHSCN1RWYFKGZZ8">Database tables</h2>
+<p>For additional database tables related to this module you can visit <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20716325185170" target="_blank" rel="noopener noreferrer">Tivian Access DB Tables</a>.</p>
+<p> </p>p>
+</td>
+<td>
+<p><code>string</code></p>
+</td>
+<td>
+<p><code>''</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>iam_well_known_url</code></p>
+</td>
+<td>
+<p>The URL of the discovery document for the custom authorization server in Okta.</p>
+<p>This contains all non-application specific settings for Okta and is used to process the authentication response from Okta and sending unauthenticated users to Okta.</p>
+<p>This can be taken from Okta (API &gt; Authorization Servers) and is created during the setup of Questback Access</p>
+</td>
+<td class="wysiwyg-text-align-center">
+<p>✅</p>
+</td>
+<td>
+<p><code>string</code></p>
+</td>
+<td>
+<p><code>''</code></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="h_01J5X5QAZ18GHSCN1RWYFKGZZ8">Database tables</h2>
+<p>For additional database tables related to this module you can visit <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20716325185170" target="_blank" rel="noopener noreferrer">Tivian Access DB Tables</a>.</p>
+<p> </p>

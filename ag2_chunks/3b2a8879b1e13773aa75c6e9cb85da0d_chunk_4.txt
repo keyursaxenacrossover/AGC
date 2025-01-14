@@ -1,0 +1,60 @@
+ style="text-align: left; width: 139.132px;">not equal to</td>
+</tr>
+<tr>
+<td style="text-align: left; width: 147.378px;">contains</td>
+<td style="text-align: left; width: 121.042px;">~=</td>
+<td style="text-align: left; width: 139.132px;">filtering by words</td>
+</tr>
+</tbody>
+</table>
+<p class="auto-cursor-target"> </p>
+</div>
+<p class="auto-cursor-target"><span style="color: #091e42;">After selecting the relational operators, you define a value. For example, if you select a </span><strong>Metaname</strong><span style="color: #091e42;"> as a filter and ~= as the operator, you can enter a part of the unit's </span><strong>Metaname</strong><span style="color: #091e42;"> as the value to get a checkable record. </span><strong>Label</strong><span style="color: #091e42;"> and </span><strong>Metaname</strong><span style="color: #091e42;">allow filtering that targets text elements.</span></p>
+<h3 id="import-of-variables"><strong>Import of variables</strong></h3>
+<p>You can also use the structure variables you created in EFS-Employee as filters to select the focus unit in the first step of the <strong>Condition-based Report</strong>.</p>
+<p>You navigate in EFS:</p>
+<p>[<em>selected project</em>] → <em>Org Processor</em> → <em>Configuration</em> → <em>Structure variables</em> → <em>Create variable</em></p>
+<p>A newly created variable is imported into the Report Manager after every update of the Data Voyager.</p>
+<p> </p>
+<h2 id="the-second-order-step-selection-of-the-comparison-groups" class="sc-lhVmIH iJLaKb wysiwyg-text-align-left"><strong>The second order step: Selection of the comparison groups</strong></h2>
+<p>Once a focus unit has been selected, edit the comparison group selection by specifying members. Each member of the comparison group can also be created as a virtual comparison unit. Perform the following steps:</p>
+<ol>
+<li>Click on the button <strong>Edit selection</strong>.</li>
+<li>You edit the name of your comparison group by clicking on the pen icon.</li>
+<li>You select a new comparison unit of the organizational structure that is to be the first member of the comparison group.</li>
+<li>To add a new comparison unit to your comparison group, you click on <strong>+ New virtual focus unit</strong>.
+<ul>
+<li>Otherwise, you create a virtual comparison unit directly.</li>
+<li>You do not specify the sequence of the units that you want to include in your comparison group until you do so. In the mapping on the sub-navigation field <strong>Pages</strong>, you select a comparison unit from the comparison group, but this is only a placeholder. Now you define the actual participant. From the organizational structure, select the unit that is used for the placeholder. Make sure that the unit gets the desired position.</li>
+<li>The comparison units are determined from top to bottom. This corresponds to the representation of the inspector on the sub-navigation field Pages. The unit elements of the configured comparison unit are counted from 1 to x.</li>
+</ul>
+</li>
+<li>Next to the pencil, you will find the filter icon: the funnel, which allows you to define filter conditions for the members of the comparison group.
+<ul>
+<li>A modal opens for the filter conditions, which helps you to set the filters.</li>
+</ul>
+</li>
+<li>The funnel is highlighted as soon as a unit has been fitted with a filter.</li>
+</ol>
+<h3 id="comparison-group-filters"><strong>Comparison group filters</strong></h3>
+<p>Clicking on the filter icon, the funnel opens the modal. You add a new filter condition by clicking on the button. The filter conditions are linked to each other by the logical OR, while the filter groups are linked by the logical AND.</p>
+<ul>
+<li>The filter syntax, which is also used in the mapping area of the sub-navigation field <strong>Pages</strong>, does not change.</li>
+<li>Within a filter group, you define a filter using the left Select Box, which is specified with the right one.</li>
+<li>A filter group corresponds to a variable, so that the filters cannot be changed within a group.</li>
+<li>The filters apply to the member of the comparison group, which can also be a virtual comparison unit.</li>
+</ul>
+<p><strong>Virtual comparion units</strong></p>
+<p>You create virtual comparison units, as you create a virtual focus unit. For the virtual comparison unit, you also activate filters.</p>
+<div>
+<div class="sc-bbmXgH inLjth">
+<div>
+<div class="page view">
+<div class="wiki-content">
+<ul>
+<li>You create each member of the comparison group as a virtual comparison unit.</li>
+<li>You create virtual comparison units with set operators: union, intersections, difference and/or symmetrical difference.</li>
+<li>You activate a filter separately for each virtual comparison unit in the comparison group.</li>
+<li>Filtering is performed in addition to the filters set in the Report Definition.</li>
+</ul>
+<p><strong>It is useful to explain the virtual comparison unit with reference to the virtual focus unit</strong><u>.</u

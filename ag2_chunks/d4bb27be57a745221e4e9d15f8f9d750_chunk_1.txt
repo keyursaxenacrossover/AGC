@@ -1,0 +1,33 @@
+ FPMPOOL. </strong>As can be seen in these two panels, the current number (yellow line), which corresponds to the minimum number so far (would be a dashed green line, but is covered by the yellow one) of 12 pods each, is sufficient to process the corresponding requests at all times.</li>
+<li>If there were more requests or possible peaks, there would still be a lot of room for improvement, as theoretically up to 40 pods are available.</li>
+<li>This is directly related to the performance of the database server, which, however, if you look at the <strong>CPU Utilization</strong> panel, even at times when the number of requests (Panel: "Number of parallel requests over all pods") and thus also the number of database connections (Panel: "Database Connections") or the associated network traffic (Panel: "Network Receive/Transmit Throughput Average"), could be processed at all times.
+<ul>
+<li>This is ultimately reflected in the fast access times: <strong>AVG Request Time</strong>.</li>
+</ul>
+</li>
+<li>The <strong>Total fpmpool Processes (linear)</strong> and <strong>fpmpool connection rate per Pod</strong> panels provide information on how many active processes were processed simultaneously by the Pod and the speed at which processes were established, but here too there is still room for improvement until the theoretical limit is reached.</li>
+<li>The <strong>Database Connection Peaks</strong> and <strong>CPU Utilization Peaks</strong> panels are simply a different representation of <strong>Database Connections</strong> and <strong>CPU Utilization</strong> and are intended to make it easier to identify peaks in the form of plateaus.</li>
+<li>The <strong>Freeable Memory</strong> panel is more for purely statistical purposes and looks very busy, but this is due to the fact that RAM is always fully utilized if required, as communication between the CPU and RAM, for example, is much faster than between the CPU and hard disk (depending on the application and use case, data may only be stored in RAM).</li>
+</ul>
+<p> </p>
+<h1 id="h_01J7XM1DD598DAABPMXSAVQ7GB">Process Deviations</h1>
+<p>The customer could also request a couple of other things, besides the daily monitoring.</p>
+<h3 id="h_01J7XN9PPN1J87ZS05GNXA1C0Y">Checking that their survey is in good standing before the go-live date</h3>
+<p>This task is not in the usual support scope, but rather falls into PS scope; the scope is still <strong>TBD at the time of writing</strong></p>
+<h3 id="h_01J7XNA4PAZCQ27EPR0K48C0AB">Request explanations for the dashboards</h3>
+<p>For example, the customer could ask questions of this type:</p>
+<p><em>Some peaks are noticeable. e.g. </em></p>
+<ul>
+<li><em>Database Connection around 11:10 a.m. on July 15th.</em></li>
+<li><em>Network Receive around 2:40 p.m. on July 15th.</em></li>
+<li><em>Network Receive some peaks on July 16th and July 17th.</em></li>
+</ul>
+<p><em>How should these outliers be interpreted?</em></p>
+<p><strong>While there is no clear-cut answer to these, as it will depend on a lot of factors, a great explanations from the Legacy team can be found below:</strong></p>
+<p><em>Please note that these statistics cover the work in the admin area as well as the survey area and panel website. A separation is not technically possible because everything accesses the same resources. This means that actions in the admin area that may cause a lot of connections or traffic (imports/exports) also appear in the charts shown.</em></p>
+<p><em>Such actions can cause such peaks. However, you can also see from the CPU utilization that these peaks had no effect on the DB host or the FPMPOOL pods, i.e. where the actual work is done (e.g. data that EFS reads out and processes or data that is written as a result of processing).</em></p>
+<p><em>Basically, you cannot say across the board that there is a direct connection between the number of connections or traffic and CPU utilization on the DB server or FPMPOOL side. A connection can contain a very simple or a very complex database query, which then requires very little or a lot of CPU, or just a single query or a million queries where the bulk of the CPU is used. Here there were many connections, but they required few resources.</em></p>
+<p><em>When it comes to traffic, an export or import can of course differ greatly compared to the few bytes that are transferred on many survey pages, especially when you have already left the home page and the majority is already in the cache.</em></p>
+<p><em>Tracing when which action caused which peak can only be found out by very time-consuming analysis of the log files. Since there were never any performance bottlenecks of any kind, I would refrain from carrying out such an analysis. Everything is within a normal range. Broken down from the participant's point of view, the only problem is if the pods permanently reach the maximum of 40 or the CPU is permanently at 100%.</em></p>
+<h1 id="h_01J7XNEHYQNB7YT0FYWPTBKYGS">Troubleshooting</h1>
+<p>

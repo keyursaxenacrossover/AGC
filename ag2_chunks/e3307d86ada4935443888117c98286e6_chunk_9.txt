@@ -1,0 +1,26 @@
+ media library can be restricted to certain users. The <em>Accordion Matrix</em> question type has also been extended.</p>
+<h3 id="header-57">Multilingual E-mail Templates</h3>
+<p>Previously, e-mail templates could only be created in one language. This obstacle could be circumvented by using if-else conditions. The solution implemented as of this Fall 2019 release will be more practically. You will be able to create e-mail templates in several languages, but also to create SMS texts in several languages. Surveys will also be displayed in the language defined in the panelist account.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998121677074" alt="Mail templates new.png"></p>
+<p><u>Multilingual e-mail templates and SMS</u></p>
+<p>To create multilingual e-mail templates, first click on the <strong>Mail Templates</strong> menu item. Either select an existing e-mail template which you want to translate, or create a completely new template of the default language which you want to translate. For this purpose, each template now has the "Additional Translations" area. Click the <strong>+ New</strong> button to create your translation of the e-mail template and the SMS text.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998067343890" alt="Mail templates.png"></p>
+<p>First, you must select the language identifier according to the language you want to translate into. Then you have to translate the mail text (also HTML) and the SMS text. Finally, click <strong>Save</strong>. The created translations will be listed in the "Additional translations" section. They can also be edited or deleted there. For editing, simply click on the link or the edit icon.</p>
+<p><u>Sending e-mail to a panelist</u></p>
+<p>To send panelists an e-mail or a SMS in their preferred language, a language must be stored in the <em>u_locale</em> variable (e.g. French). This variable is used to check whether an e-mail template was created in the corresponding translation. If no translation is available, the e-mail will be sent in the default language. This also applies if no language has been stored in the <em>u_locale</em> variable.</p>
+<p><u>Category labels for guides</u></p>
+<p>The category labels for guides that you manage using the <em>#guidewave_category_label#</em> placeholder will also be available in the selected translation of the e-mail template. The prerequisites for this are that an e-mail template has been created in the language preferred of the panelist. The preferred language of the panelist has to be stored in <em>u_locale</em> variable. The labels of the guide categories has to be created by using the corresponding language identifier (ISO code).</p>
+<p><u>Multilingualism for participants in a survey</u></p>
+<p>Survey participants can also receive e-mails, SMS and surveys in their preferred language.</p>
+<p>In order to be able to use multi-lingual email/sms templates and survey languages through a single variable in a PE or ES project, you will have to manually create a new participant variable of display type text field in the participant administration first. For consistency reasons, we recommend to name that variable <em>u_locale</em>. When importing new participants to the system, you can now store the preferred language of each participant, by specifying the ISO language code as value for <em>u_locale</em> and the code should always correspond to language identifiers of existing languages in the survey, e.g. <em>en_GB</em> for British English. PA projects already contain the user variable <em>u_locale</em>, so this step is not necessary, just set the preferred language of the panelist in the panelist administration.</p>
+<p>After the new participant variable was created, you have to select the variable in the<strong> language editor</strong> of the survey and after saving, a new option will appear, <em>Assign language by ISO code</em>. By checking this option, you will enable the <em>u_locale</em> variable for use as the language selection for the survey and all survey related mails or SMS to the participant.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998097524370" alt="Pasted Graphic.png"></p>
+<p>If no e-mail template is available in the selected language, the default language will used as a fallback, just like in the survey. This also applies if no preferred language has been set</p>
+<ul>
+<li>
+<p>This feature is only available for the project types PE and ES and PA!</p>
+</li>
+</ul>
+<h3 id="header-58">People: Ways of Entry</h3>
+<p>The ways of entry of a panelist can now be tracked even more precisely. In the <strong>People</strong> menu <strong>Panelist Administration</strong> &gt; <strong>Detail view</strong> of the panelist &gt; <strong>Status information</strong> you will now find the <strong>Mode of entry</strong> as well as the <strong>Way of entry</strong>. If the Way of entry is via a portal, you can see from the Mode of entry whether the panelist did this himself (mode: <strong>registered</strong>) or by invitation (mode:<strong> invited</strong>).</p>
+<p><img src="https://discoverxi-supportdesk.zend

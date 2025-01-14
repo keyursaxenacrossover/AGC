@@ -1,0 +1,29 @@
+-1lcr4h8 e1a3lu075"><img class="smart-link-icon css-ijlt3r e1yrcv6a0" style="height: 14px; width: 14px;" src="https://www.mail-tester.com/img/favicon.png" data-testid="inline-card-icon-and-title-image"></span><span class="smart-link-title-wrapper css-0 e1a3lu077">Newsletters spam test by mail-tester.com</span></span></a></span></span></span><span style="color: #172b4d; background-color: #e9f2ff;">.</span></p>
+<h2 id="h_01HGKSMPRT8YJQX9QJXD9XBXNP" class="wysiwyg-text-align-justify">The Role of the Mail Report</h2>
+<p class="wysiwyg-text-align-justify">The Mail report in the Survey menu helps monitor the sending process and provides an overview of all emails sent during the survey. It displays various statuses relevant to spam classification:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Sent</li>
+<li>Rejected</li>
+<li>Delivery failed</li>
+<li>Not reachable</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The report also shows responses from the receiving mail server, which can help identify issues with email delivery. The following list shows some examples of possible responses from the receiving mail server with regard to the statuses described above. The list is not complete and TIVIAN has no influence on the responses.</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="4003"><strong data-renderer-mark="true">Not reachable</strong></p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="4020">550-5.1.1 user unknown{CRLF}550 5.1.1 Unknown recipient. In response to the RCPT TO command.</p>
+</li>
+<li>
+<p data-renderer-start-pos="4116">550 Requested action not taken: mailbox unavailable In response to the RCPT TO command.</p>
+</li>
+<li>
+<p data-renderer-start-pos="4207">550-5.1.1 The email account that you tried to reach does not exist. Please try{CRLF}550-5.1.1 double-checking the recipient's email address for typos or{CRLF}550-5.1.1 unnecessary spaces. Learn more at{CRLF}550 5.1.1 <span data-inline-card="true" data-card-url="https://support.google.com/mail/?p=NoSuchUser"><span class="loader-wrapper"><span aria-expanded="false" aria-haspopup="true" data-testid="hover-card-trigger-wrapper"><a class="css-118vsk3 e26bri0" tabindex="0" role="button" href="https://support.google.com/mail/?p=NoSuchUser" data-testid="inline-card-resolved-view"><span class="css-1cwva94 e1a3lu072" data-testid="inline-card-icon-and-title"><span class="css-1lcr4h8 e1a3lu075"><img class="smart-link-icon css-ijlt3r e1yrcv6a0" style="height: 14px; width: 14px;" src="https://support.google.com/favicon.ico" data-testid="inline-card-icon-and-title-image"></span><span class="smart-link-title-wrapper css-0 e1a3lu077">Fix bounced or rejected emails - Gmail Help</span></span></a></span></span></span> m24si2824391pfo.129 - gsmtp In response to the RCPT TO command.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="4496"><strong data-renderer-mark="true">Rejected</strong></p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="4508">421-4.7.0 This message does not have authentication information or fails to pass{CRLF}421-4.7.0 authentication checks. To best protect our users from spam, the{CRLF}421-4.7.0 message has been blocked. Please visit{CRLF}421-4.7.0 <a class="cc-1rn59kg" title="https://support.google.com/mail/answer/81126" href="https://support.google.com/mail/answer/81126" data-testid="link-with-safety" data-renderer-mark="true">https://support.google.com/mail/answer/81126#authentication </a>for more{CRLF}421 4.7.0 information. cm23si5831536edb.119 - gsmtp In response to the end of message mark (CRLF.CRLF)</p>
+</li>
+<li>
+<p data-renderer-start-pos="4917">550 91.217.141.35 is not allowed to send mail from <a class="cc-1rn59kg" title="http://xxxxrlin.de" href="http://xxxxrlin.de/" data-testid="link-with-safety" data-renderer-mark="true">xxxxrlin.de</a>. Please see the <strong data-renderer-mark="true">SPF</strong> record, with scope mfrom, identity <a class="cc-1rn59kg

@@ -1,0 +1,78 @@
+d9a3">
+<p><strong>Icon</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Action</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Preview</p>
+</td>
+<td>
+<p>Have a look at the preview of your newly created question type.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Rights</p>
+</td>
+<td>
+<p>Open the menu <strong>Rights Admin</strong> to specify which user groups should have read and/or write access to the question type.</p>
+<p>Please note that you can only assign rights to users within your teams.</p>
+<p>You can also define if the question type supports an installation-wide rollout or team-based access.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Copy</p>
+</td>
+<td>
+<p>Copy a question type, which is then also listed in the overview and can be edited.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Download</p>
+</td>
+<td>
+<p>Download a question type in a ZIP file and save it on your computer.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Delete</p>
+</td>
+<td>
+<p>Delete a question type.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Locked / Unlocked</p>
+</td>
+<td>
+<p>Red: Question type cannot be edited.</p>
+<p>Green: Question type can be edited.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify">An already-created question type can be imported as a ZIP file. By doing an export/ import question types are portable across installations.</p>
+<p class="wysiwyg-text-align-justify">This feature is only available for users with write permission <em>questiontype_editor</em>. Please also note that we cannot offer customer support for creating user-defined types of questions in the library.</p>
+<p class="wysiwyg-text-align-justify">Users can only edit question types when they possess the rights. Please ensure that the question type is not currently being edited by another user by referring to the <strong>Currently Edited</strong> column.</p>
+<h3 id="library-of-question-types" class="wysiwyg-text-align-justify"><strong>Library of question types</strong></h3>
+<p class="wysiwyg-text-align-justify">You may only use Latin characters and numbers for the name. An internal name will be generated from your given name. It has all whitespaces removed, so it can be used as an identifier. The category determines the underlying data structure for the answers as well as the initial files and available configuration options. The <strong>Preview</strong> button opens a dialog with a live preview of your question type, as it would be rendered in a survey with an unmodified responsive layout. The <strong>Save</strong> button is disabled by default. As soon as something is edited it will be activated and a modification marker is shown in the navigation to the left. The navigation on the left consists of five items: <strong>Template</strong>, <strong>Style Sheet</strong>, <strong>JavaScript</strong>, <strong>Settings,</strong> and <strong>Resources</strong>.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Save any changes, before you navigate through the menu.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">You can already select the question type in a survey and use it as it is right now. Your modifications will be immediately visible in the survey. Refrain from editing question types used in live surveys. Instead, copy the question type and work on the copy</p>
+<h3 id="template" class="wysiwyg-text-align-justify"><strong>Template</strong></h3>
+<p class="wysiwyg-text-align-justify">It is compiled with the Smarty 2 template engine and makes use of several variables supplied by <em>EFS</em>. The initial template contains basic functionality that enables you to develop your template.</p>
+<p class="wysiwyg-text-align-justify">If you need to see how special features are implemented you may have a look at the templates of the responsive layout, accessible in <strong>Survey</strong> <strong>menu</strong> → <strong>Layout</strong> → <strong>Pro editor</strong>.</p>
+<p class="wysiwyg-text-align-justify">Every question contains one or more variables (configured in <strong>Settings</strong>). A variable represents an answer option. In the case of a matrix, every dimension is an answer option (or item) and therefore has its variable.</p>
+<p class="wysiwyg-text-align-justify">For every variable, there needs to be a list of possible values. These are the scale elements (internally called “r_cat”), which are also configured under <strong>Settings</strong>.</p>
+<p class="wysiwyg-text-align-justify">In the template, you have a variable <strong>$items</strong>, which is an array that contains all answer options of the question. You can iterate over them with a for-each loop or a section. Every item-object has a variable <strong>$r_cats</strong>, which is an array that contains all scale elements of the question. Again you can iterate over them with a loop.</p>
+<p class="wysi

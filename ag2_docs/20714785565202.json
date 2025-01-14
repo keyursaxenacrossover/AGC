@@ -1,0 +1,30 @@
+{
+    "id": 20714785565202,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/20714785565202.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20714785565202-Healself-Tasks",
+    "author_id": 369584192734,
+    "comments_disabled": false,
+    "draft": false,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20714530860562,
+    "created_at": "2024-08-12T17:00:25Z",
+    "updated_at": "2024-08-28T12:48:10Z",
+    "name": "Healself Tasks",
+    "title": "Healself Tasks",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-08-28T12:48:07Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075294,
+    "content_tag_ids": [],
+    "label_names": [],
+    "body": "<h1 id=\"h_01J6CFYBB7ZGF0QPYXJAPHFPZC\">Information</h1>\n<p>The healself tasks run to change the database and environment to reflect new builds or reveal errors during the upgrade.</p>\n<p>If the healself fails, this will be logged in the database of the installation, under the <code class=\"language-text\">healself_task_log</code> table. with the following schema:</p>\n<pre><code class=\"language-text\">MariaDB &gt; DESC healself_task_log;\n+-------------+--------------+------+-----+---------+-------+\n| Field       | Type         | Null | Key | Default | Extra |\n+-------------+--------------+------+-----+---------+-------+\n| module      | varchar(50)  | NO   | PRI |         |       |\n| task        | varchar(255) | NO   | PRI |         |       |\n| result      | tinyint(1)   | YES  |     | NULL    |       |\n| time        | datetime     | YES  |     | NULL    |       |\n| version     | int(11)      | NO   | PRI | 0       |       |\n| duration    | double       | YES  |     | NULL    |       |\n| memory_peak | double       | YES  |     | NULL    |       |\n| failed_line | double       | YES  |     | NULL    |       |\n+-------------+--------------+------+-----+---------+-------+</code></pre>\n<p>The column “result” describes the outcome of the healself task:</p>\n<ul>\n<li>0= job has not run/failed</li>\n<li>1= job has succeeded</li>\n</ul>\n<p>If healself tasks fail, then set the status “BROKEN” in the conf/VERSION file to 1. Broken installations will be skipped by the Nightly.</p>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

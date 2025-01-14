@@ -1,0 +1,150 @@
+>The “Linked Slider” question type is designed for constant sum questions. But instead of asking participants to enter values, the values are visualized using sliders. Therefore, this type is easier to handle and it results in more detailed answers.</p>
+<p>Technically, the “Linked Slider” is based on the vertical multi text field (143). If it cannot be output in a reasonable manner, the “Constant sum” question type serves as a fallback. Currently, the slider can be output in an optimal way on tablet and desktop. For iPhone and other smartphones with a narrow display, the fallback will be used.</p>
+<h4 id="base-elements-20">Base Elements</h4>
+<ul>
+<li>
+<p>Question text</p>
+</li>
+<li>
+<p>Fill-in instruction</p>
+</li>
+<li>
+<p>Help text</p>
+</li>
+<li>
+<p>Answer options 1-n</p>
+</li>
+<li>
+<p>Display fields for selected scale values</p>
+</li>
+<li>
+<p>Automatically calculated sum</p>
+</li>
+</ul>
+<h4 id="detail-configuration-7">Detail Configuration</h4>
+<ul>
+<li>
+<p>Foreground color: This color is used for the slider’s foreground.</p>
+</li>
+<li>
+<p>Background color: This color is used for the slider’s background.</p>
+</li>
+<li>
+<p>Maximum value: Maximum value of the slider.</p>
+</li>
+<li>
+<p>Force maximum value: The sum of all values has to equal the maximum value.</p>
+</li>
+<li>
+<p>Error message if the maximum value is not reached: Default: “Please total the choices to %s.”</p>
+</li>
+<li>
+<p>Sum caption: Caption in the sum row. Default: “Total.”</p>
+</li>
+<li>
+<p>Unit: The label for the displayed unit of the sliders.</p>
+</li>
+<li>
+<p>Position of the unit: The chosen unit can be positioned before or after the input field.</p>
+</li>
+<li>
+<p>Show scale: The scale values are displayed.</p>
+</li>
+<li>
+<p>Alternating rows: Every second row can be shown in a different color.</p>
+</li>
+</ul>
+<h3 id="sliders-numbers">Sliders (Numbers)</h3>
+<p>The “Responsive Layout” slider is realized based on question type 911 with a comparable functional scope, see Chapter 5.7, p. 203. The slider is not yet integrated into external editing. Hiding conditions on the question level are supported. In EFS Reporting+, the values will be treated like open answers, i.e. they<br>need to be recorded for further analysis.</p>
+<p>The entry dialog is closely related to the entry dialog of question type 911</p>
+<ul>
+<li>
+<p>The “Answers” section is generated automatically. Please do not change anything in this section.</p>
+</li>
+<li>
+<p>The features of the “Detail configuration” and “Color switch configuration” sections are explained in the Tables below.</p>
+</li>
+</ul>
+<h4 id="detail-configuration-8">Detail Configuration</h4>
+<table class="" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 294.0px;"> <col style="width: 466.0px;"> </colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour="#c0b6f2">
+<p><strong>Feature</strong></p>
+</th>
+<th data-highlight-colour="#c0b6f2">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Show scale</p>
+</td>
+<td>
+<p>The scale values are displayed.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Show scale lines</p>
+</td>
+<td>
+<p>To improve readability, you can display a line with markers for the units.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Swap scale and textbox (only horizontal)</p>
+</td>
+<td>
+<p>The positions of scale and textbox are swapped. The feature is only available in horizontal mode.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Force vertical alignment</p>
+</td>
+<td>
+<p>Per default, the display of the options depends on the screen width of the device used: For wide screens horizontal, for small screens vertical. Optionally vertical alignment can be enforced for all devices.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Resettable</p>
+</td>
+<td>
+<p>An additional button is displayed, enabling participants to reset the slider value to the initial state. The button label can be edited in<strong> Project properties</strong> → <strong>Survey messages</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Initial state</p>
+</td>
+<td>
+<p>The initial state of the selection marker.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>The behavior of the textbox</p>
+</td>
+<td>
+<p>Optionally, you can display a text field that displays the current value of the slider or that enables participants to enter the desired value directly.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Unit</p>
+</td>
+<td>
+<p>The unit symbol is shown after the text field.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Minimum value</p>
+</td>
+<td>
+<p>-50 (minus 50)</p>
+<p>If you enter a lower value, the value 0 is automatically set after saving

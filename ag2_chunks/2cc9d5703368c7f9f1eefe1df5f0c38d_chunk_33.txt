@@ -1,0 +1,118 @@
+>
+</td>
+<td style="width: 233.628px;">
+<p>Is displayed upon successful deregistration.</p>
+</td>
+<td style="width: 259.514px;">
+<p>Your membership in this panel has ended.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="function-module-news" class="wysiwyg-text-align-justify"><strong>Function Module: News</strong></h3>
+<p class="wysiwyg-text-align-justify">You can use the “News” function module to create panel pages specifically for news items or to incorporate news sections in panel pages. News items are maintained via a separate GUI.</p>
+<p class="wysiwyg-text-align-justify">The following figures show the standard panel’s news overview and an individual news item. In the standard panel, you can use the “func_news” template to change the appearance of the news area.</p>
+<p class="wysiwyg-text-align-justify"><strong>Options</strong></p>
+<p class="wysiwyg-text-align-justify">The “News” function module offers the following options:</p>
+<table class="wysiwyg-text-align-justify" style="height: 684px;" border="1" width="760" data-layout="default" data-table-width="760">
+<colgroup>
+<col style="width: 198.0px;">
+<col style="width: 420.0px;">
+<col style="width: 142.0px;">
+</colgroup>
+<tbody>
+<tr style="height: 44px;">
+<th class="wysiwyg-text-align-center" style="height: 44px; width: 194.618px;" data-highlight-colour="#57d9a3">
+<p><strong>Option</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="height: 44px; width: 416.215px;" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="height: 44px; width: 138.785px;" data-highlight-colour="#57d9a3">
+<p><strong>Standard panel "News"</strong></p>
+</th>
+</tr>
+<tr style="height: 44px;">
+<td style="height: 44px; width: 186.597px;">
+<p>Reference name for template</p>
+</td>
+<td style="height: 44px; width: 408.194px;">
+<p>Name that can be used to trigger the module in positioning templates.</p>
+</td>
+<td style="height: 44px; width: 130.764px;">
+<p>news</p>
+</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px; width: 186.597px;">
+<p>Page module title</p>
+</td>
+<td style="height: 22px; width: 408.194px;">
+<p>Name of the module in the page’s module overview</p>
+</td>
+<td style="height: 22px; width: 130.764px;">
+<p>News Teaser</p>
+</td>
+</tr>
+<tr style="height: 44px;">
+<td style="height: 44px; width: 186.597px;">
+<p>Module template</p>
+</td>
+<td style="height: 44px; width: 408.194px;">
+<p>Module-specific template that controls how data provided by the module are displayed.</p>
+</td>
+<td style="height: 44px; width: 130.764px;">
+<p>func_news</p>
+</td>
+</tr>
+<tr style="height: 67px;">
+<td style="height: 67px; width: 186.597px;">
+<p>Maximum number of news items displayed per page</p>
+</td>
+<td style="height: 67px; width: 408.194px;">
+<p>Once the maximum number has been reached there will be a line break.</p>
+</td>
+<td style="height: 67px; width: 130.764px;">
+<p>2</p>
+</td>
+</tr>
+<tr style="height: 89px;">
+<td style="height: 89px; width: 186.597px;">
+<p>Show news from the list</p>
+</td>
+<td style="height: 89px; width: 408.194px;">
+<p>The news list from which the news items are to be included. Those lists to which news items have been assigned are available – in the standard panel, this only applies to the “main” list.</p>
+</td>
+<td style="height: 89px; width: 130.764px;">
+<p>main</p>
+</td>
+</tr>
+<tr style="height: 300px;">
+<td style="height: 300px; width: 186.597px;">
+<p>Sort news by</p>
+</td>
+<td style="height: 300px; width: 408.194px;">
+<p>Possible criteria:</p>
+<ul>
+<li>
+<p>Headline</p>
+</li>
+<li>
+<p>Content</p>
+</li>
+<li>
+<p>Teaser</p>
+</li>
+<li>
+<p>Author</p>
+</li>
+<li>
+<p>Subtitle</p>
+</li>
+<li>
+<p>Displayed date and time of publication (GMT) (shown on website)</p>
+</li>
+</ul>
+<p>Possible sort order:</p>
+<ul>
+<li

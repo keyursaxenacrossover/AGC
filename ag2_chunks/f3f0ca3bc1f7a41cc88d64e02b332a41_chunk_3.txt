@@ -1,0 +1,67 @@
+ and scalability are limitted to what the managed solutions offers</p></li>
+<li><p>Enterprise pricing is oftentimes based on fixed contigents</p></li>
+<li><p>Dependency to the vendor is added (at least for non-standard APIs)</p></li>
+</ul>
+</td>
+<td>
+<p><ac:emoticon ac:emoji-fallback=":plus:" ac:emoji-id="atlassian-plus" ac:emoji-shortname=":plus:" ac:name="plus"></ac:emoticon></p>
+<ul>
+<li><p>Processes of setup, monitoring, logging, incident management, scaling and others align with the processes for existing software and can be integrated with existing solutions</p></li>
+<li><p>Software maintenance is done by the vendor/creator</p></li>
+<li><p>Pricing is directly based on the resources needed to run the solution</p></li>
+</ul>
+<p><ac:emoticon ac:emoji-fallback=":minus:" ac:emoji-id="atlassian-minus" ac:emoji-shortname=":minus:" ac:name="minus"></ac:emoticon></p>
+<ul>
+<li><p>Operation and infrastructure maintenance has to be done by us</p></li>
+<li><p>Features are limitted to what the managed solutions offers</p></li>
+<li><p>Dependency to the vendor is added (at least for non-standard APIs)</p></li>
+</ul>
+</td>
+<td>
+<p><ac:emoticon ac:emoji-fallback=":plus:" ac:emoji-id="atlassian-plus" ac:emoji-shortname=":plus:" ac:name="plus"></ac:emoticon></p>
+<ul>
+<li><p>The Software is fully adaptable to our use cases and flexible in additions</p></li>
+<li><p>No additional vendor has to be added</p></li>
+<li><p>No fixed API limits</p></li>
+<li><p>Processes of setup, monitoring, logging, incident management, scaling and others align with the processes for existing software and can be integrated with existing solutions</p></li>
+<li><p>Pricing is only based on the resources and the maintenance needed</p></li>
+</ul>
+<p><ac:emoticon ac:emoji-fallback=":minus:" ac:emoji-id="atlassian-minus" ac:emoji-shortname=":minus:" ac:name="minus"></ac:emoticon></p>
+<ul>
+<li><p>High risk to miss security issues</p></li>
+<li><p>High effort for maintenance and setup</p></li>
+<li><p>High risk to not align with standards</p></li>
+</ul>
+</td>
+</tr>
+<tr>
+<th><p><strong>Estimated cost</strong></p></th>
+<td><p><ac:parameter ac:name="title">Medium</ac:parameter><ac:parameter ac:name="colour">Yellow</ac:parameter> </p></td>
+<td><p><ac:parameter ac:name="title">Medium</ac:parameter><ac:parameter ac:name="colour">Yellow</ac:parameter></p></td>
+<td><p><ac:parameter ac:name="title">Large</ac:parameter><ac:parameter ac:name="colour">Red</ac:parameter> </p></td>
+</tr>
+</tbody>
+</table><p></p><h4 id="header-14">
+<ac:emoticon ac:emoji-fallback="\uD83C\uDF1F" ac:emoji-id="1f31f" ac:emoji-shortname=":star2:" ac:name="blue-star"></ac:emoticon>  Intermediate outcome</h4><p><u>A managed solution or a self-hosted solution will be used.</u></p><p>A self-built solutions will not be part of the final SSO solution.</p><p>The effort and risk to create self-made solution is too high and not effordable with the current set of people. There is no significant business value added by building a SSO component on our own as such a generic use-case is not part of the core domains we are working with.</p><p></p><h3 id="header-16">Specific technology</h3><p>This is just a glimpse overview of vendors that have been considered. There are many more vendors offering identity solutions. Most of them will have similar offerings.</p><p>Not all criteria is shown here. In case the is a no-go criteria no additional ones are added.</p><table data-layout="full-width" ac:local-id="ef508680-579b-41e1-981c-3fa4fc5ab2fb">
+<colgroup>
+<col style="width: 130.0px;">
+<col style="width: 278.33px;">
+<col style="width: 278.33px;">
+<col style="width: 278.33px;">
+<col style="width: 278.33px;">
+<col style="width: 278.33px;">
+<col style="width: 278.33px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p></p></th>
+<th><p><strong>Keycloak</strong></p></th>
+<th><p><strong>Gluu</strong></p></th>
+<th><p><strong>Auth0</strong></p></th>
+<th><p><strong>Okta</strong></p></th>
+<th><p><strong>Microsoft</strong></p></th>
+<th><p><strong>Cognito</strong></p></th>
+</tr>
+<tr>
+<th><p><strong>Description</strong></p></th>
+<td><

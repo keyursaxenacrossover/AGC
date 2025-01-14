@@ -1,0 +1,24 @@
+>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">efs.mail.parser.mail_check.after</span></pre></td>
+<td colspan="1">modules/efs/components/mail/parser.inc.php:mail_check()</td>
+<td colspan="1"><pre><span>Efs\Events\Mail\Parser\MailCheck\After</span><span>([<br></span><span>    </span><span style="color: rgb(0,128,0);">'email' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$email</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'result' </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$result<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">efs.controller.action.admin.referer</span></pre></td>
+<td colspan="1">modules/efs/components/controller/action/admin.inc.php:runRefererCheck()</td>
+<td colspan="1"><pre><span>Efs\Events\Controller\</span><span>ActionAdminReferer([<br></span><span>    </span><span style="color: rgb(0,128,0);">'referer' </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$referer<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">efs.staff.change.admin_user.validate.before</span></pre></td>
+<td colspan="1">modules/efs/components/service/actor/staff.inc.php:change()</td>
+<td colspan="1"><pre><span>Efs\Events\Staff\Change\AdminUser\Validate\</span><span>Before([<br></span><span>    </span><span style="color: rgb(0,128,0);">'map' </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$map</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'original_admin_user' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$originalAdminUser</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'changed_admin_user' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$changedAdminUser</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'efs_service_actor_staff' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$this<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">portal.user.status.insert.after</span></pre></td>
+<td colspan="1">modules/portal/components/user/repository.inc.php:saveUserStatus()</td>
+<td colspan="1"><pre><span>Portal\Events\User\Status</span><span>([<br></span><span>    </span><span style="color: rgb(0,128,0);">'user_id'   </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$userId</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'status'    </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$status</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'portal_id' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$portalId</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'db_result'    </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$res<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">portal.user.status.update.after</span></pre></td>
+<td colspan="1">modules/portal/components/user/repository.inc.php:saveUserStatus()</td>
+<td colspan="1"><pre><span>Portal\Events\User\Status</span><span>([<br></span><span> </span><span style="color: rgb(0,128,0);">'user_id' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$userId</span><span>,<br></span><span> </span><span style="color: rgb(0,128,0);">'status' </span><span>=&gt; </span><span

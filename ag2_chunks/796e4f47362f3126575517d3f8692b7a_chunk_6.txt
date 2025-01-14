@@ -1,0 +1,67 @@
+wyg-text-align-justify">
+<li>N</li>
+<li>Return</li>
+<li>Average</li>
+<li>Standard deviation</li>
+<li>Standard deviation (Sample)</li>
+<li>Maximum Response Code</li>
+<li>Minimum Response Code</li>
+<li>Range</li>
+<li>Sum</li>
+<li>Median</li>
+<li>Modus</li>
+<li>Square Distribution</li>
+<li>First Quartile</li>
+<li>Third Quartile</li>
+<li>Interquartile Range</li>
+<li>Explicit missings</li>
+<li>Return rate</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If you choose a result type, the sort order is immediately valid and is displayed as pth using Tiny-DSQ.</p>
+<p class="wysiwyg-text-align-justify">If your selection is made for the scale element, in the next step, you select an element from the specification of the defined scale.</p>
+<p class="wysiwyg-text-align-justify">To convert the term into a valid term, you can use result types and scale properties:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Code</li>
+<li>Label</li>
+<li>N</li>
+<li>N as percent</li>
+</ul>
+<p class="wysiwyg-text-align-justify">You decide whether the result types are displayed in ascending or descending order.</p>
+<p class="wysiwyg-text-align-justify">You <strong>save</strong>.</p>
+<p class="wysiwyg-text-align-justify">Information</p>
+<p class="wysiwyg-text-align-justify"><span style="color: #333333;">If you do not define a scale, the scale element is not available for either the sort sequence or the dimension mapping.</span></p>
+<h3 id="tables" class="auto-cursor-target wysiwyg-text-align-justify"><strong>Tables</strong></h3>
+<p class="wysiwyg-text-align-justify">Once you have created DSEs and collections, they are listed in a table. The header lines contain the column headers, according to which the system sorts the columns:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Metaname</li>
+<li>Type</li>
+<li>Size</li>
+<li>Created</li>
+<li>Modified</li>
+<li>Status</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The table rows of the created DSEs and collections, which are highlighted by mouseover, display icons for <strong>editing</strong>, <strong>copying,</strong> and <strong>deleting</strong>. If you want to edit, you click on the pencil. You only correct the unit selection. Once a type has been defined, it cannot be edited. For copying, you assign a new and unique metaname in the modal, which is then used to create a new element, DSE resp. collections, with identical assignments, without switching to edit mode.</p>
+<p class="wysiwyg-text-align-justify">The validation status of each DSE or collection, which is also found in the inspector, can be seen in the column "Status".</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Gray = undefined</li>
+<li>Red = invalid</li>
+<li>Green = valid</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If DSEs and collections are deleted, the elements used in the mapping are not removed or discarded, but the status changes to "invalid". The cell in question is bordered red in the mapping on the sub-navigation field <strong>Pages</strong>. This has the advantage that you don't have to change the picker path, but instead, you create a new DSE or collection with an identical metaname to convert the newly created element back into a valid one. Of course, the element type can be changed. You do not have to ressemble all paths that use invalid DSEs or collections.</p>
+<h2 id="subnavigation-pages" class="wysiwyg-text-align-justify"><strong>Subnavigation: Pages</strong></h2>
+<p class="wysiwyg-text-align-justify">You execute the button <strong>+ New Page</strong> on the field <strong>Pages</strong> to create a new page in a Report Definition. A message will inform you about the success of the action. Your intention to delete a page requires a modal confirmation. This way, you won't accidentally delete a page. After successfully adding a page, you use the selection box to select a master slide from either all libraries created or a special one. In this way, you can compile your report individually. In addition to that:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>You sort the page by drag &amp; drop.</li>
+<li>You create a new page for each additional slide.</li>
+<li>You find more about it under the <strong>master slide</strong>:
+<ul>
+<li>File format and file name</li>
+<li>Library</li>
+<li>Mapping Status</li>
+</ul>
+</li>
+<li>You have two icons that allow you to download files and copy the mapping from another page.</li>
+<li>You add conditions for each page of your report.</li>
+<li>In the lower part of the page, dedicate yourself to the cells and tables to create the mappings.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.z

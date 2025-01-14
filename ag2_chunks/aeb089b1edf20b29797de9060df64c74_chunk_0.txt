@@ -1,0 +1,29 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3373465605">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3373465605</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">Resources</a></li>
+<ul>
+<li><a href="#header-3">Repositories</a></li>
+<ul>
+<li><a href="#header-5">Pipelines</a></li>
+</ul>
+<li><a href="#header-7">Basic Idea</a></li>
+<li><a href="#header-8">How to configure?</a></li>
+<ul>
+<li><a href="#header-10">Service</a></li>
+<li><a href="#header-11">In Okta</a></li>
+</ul>
+</ul>
+</ul>
+</ul><p>When migrating users with a password from one Okta account to another we have two options:</p><ol>
+<li><p>Just copy users from one account to the other without setting any password, users will get an activation email in that case</p></li>
+<li><p>Use a passwort import inline hook from Okta to migrate the passwords</p></li>
+</ol><p></p><p>The scope of this page if the second option that might be desired by the customer.</p><p></p><h1 id="header-1">Resources</h1><h2 id="header-3">Repositories</h2><ul>
+<li><p><a href="https://bitbucket.org/qbengineering/tivian_resource_helm_okta-hooks/src/master/">Helm Okta Hooks</a> </p></li>
+<li><p><a href="https://bitbucket.org/qbengineering/tivian_server_application_okta-hooks/src/master/">Source Code Okta Hooks</a> </p></li>
+</ul><h3 id="header-5">Pipelines</h3><ul>
+<li><p><a href="https://concourse.live.tivian.com/teams/engineering/pipelines/build.tivian_resource_helm_okta-hooks">Helm Okta Hooks</a> </p></li>
+<li><p><a href="https://concourse.live.tivian.com/teams/engineering/pipelines/build.tivian_server_application_okta-hooks">Build Image Okta Hooks</a> </p></li>
+</ul><p></p><h2 id="header-7">Basic Idea</h2><p>The basic idea is describe in the following links:</p><p><a data-card-appearance="inline" href="https://developer.okta.com/blog/2020/09/18/password-hook-migration">https://developer.okta.com/blog/2020/09/18/password-hook-migration</a> </p><p><a data-card-appearance="inline" href="https://developer.okta.com/docs/reference/password-hook/#value">https://developer.okta.com/docs/reference/password-hook/#value</a> </p><p></p><p>On our end the technical components and the flow would look like the following:</p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20717139944978" alt="Okta Migration Tivian Questback - Inline Hook(2).png"><p></p><p>A user would not see the inline hook. The workflow for a user looks like a normal login.</p><p></p><h2 id="header-8">How to configure?</h2><h3 id="header-10">Service</h3><p>The service will be deployed in the dev-qa and in the production cluster. It has some configuration:</p><p><code>auth token</code></p><p>The auth token is a string that will be sent via header to create trust between Okta and the inline hook service. It can be a random string. It has to be configured in the helm release (see values file of <a data-card-appearance="inline" href="https://bitbucket.org/qbengineering/tivian_resource_helm_okta-hooks/src/master/">https://bitbucket.org/qbengineering/tivian_resource_helm_okta-hooks/src/master/</a> ) and in Okta (see below)</p><p></p><p><code>oktaQuestbackBaseUrl</code></p><p>This URL is the base URL to the Okta where the service should validate the credentials of the user.</p><p>For <strong>dev-qa</strong> it will be: <a href="https://questback-poc.oktapreview.com">https://questback-poc.oktapreview.com</a></p><p>For <strong>production </strong>it will be: <a href="https://questback.okta.com">https://questback.okta.com</a></p><p></p><h3 id="header-11">In Okta</h3><p><strong>Name: </strong>Some good name</p><p><strong>URL:</strong> The base URL to the inline hook service adding the path <code>/inline-hooks/importpassword</code></p><p><strong>Authentication field:</strong> authorization</p><p><strong>Authentication secret:</strong> The secret token prefixed with <code>Bearer </code> </p><p>Nothing else has to be configured. The secret

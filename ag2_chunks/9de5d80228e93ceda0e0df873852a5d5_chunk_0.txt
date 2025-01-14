@@ -1,0 +1,72 @@
+<h1 id="h_01J6A2PGH7HB5TAFPVP0KRFAR4">Overview</h1>
+<p>Setting up a new tenant in Okta involves configuring several key resources to ensure that the tenant is properly secured and integrated with the necessary applications and services. This guide outlines the steps required to set up the authorization server, groups, sign-on policies, and API tokens for a new tenant.</p>
+<p> </p>
+<h2 id="h_01J6A2PGH7B21BTNXY50GC0JAX">Required Resources and Setup Steps</h2>
+<p>To set up a new tenant in Okta the following resources have to be created:</p>
+<ul>
+<li><a href="#h_01J6A2R05QMCHRB71YQBN6PRRY">Authorization Server Setup</a></li>
+<li><a href="#h_01J6A2SKZNQHKY99MG21B78QSX">Group Setup</a></li>
+<li><a href="#h_01J6A2T3M79P4PXFHDRCW47V6V">Sign-On Policy Setup</a></li>
+<li><a href="#h_01J6A2TSDFP0PSD80J0A7SVNDW">API Token Setup</a></li>
+</ul>
+<p> </p>
+<h2 id="h_01J6A2R05QMCHRB71YQBN6PRRY">Authorization Server Setup</h2>
+<h3 id="header-1">Step 1: Navigate to Security → API</h3>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20999326655890" alt="navigation.png"></p>
+<h3 id="header-3">Step 2: Click on “Add Authorization Server”</h3>
+<p><strong>Values</strong>:</p>
+<p>Name: client’s name</p>
+<p>Audience: api://{client-name}</p>
+<p>Description: client’s name</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20999326658194" alt="api.png"></p>
+<p> </p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20999363204754" alt="add authorization server.png"></p>
+<h3 id="header-5">Step 3: Create an access policy</h3>
+<p>After creating the authorization server you will land on an overview page where the information of the authorization server are shown. Some values from this site will be later used to configure the EFS installation.</p>
+<p>Next click on the tab “Access Policies” and click on “Add Policy” and insert the values</p>
+<p><strong>Values:</strong></p>
+<p>Name: default</p>
+<p>Description: default</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20999363214098" alt="overview.png"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20999326673682" alt="access policies.png"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20999326675346" alt="add policy.png"></p>
+<h3 id="h_01J6A2RSDH9WJGMC6Z8QXD3TE6">Step 4: Add a default rule</h3>
+<p><strong>Values:</strong></p>
+<p>Rule Name: default</p>
+<p>Grant Types: check “Authorization Code” and “Implicit” and set the Access Token Lifetime to the required token lifetime.</p>
+<p> </p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20999326679826" alt="add rule.png"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20999326681106" alt="add rule - info.png"></p>
+<p> </p>
+<h3 id="h_01J6A2S30VAA0ZR1A9JHC1C2T5">Step 5: Navigate to claims</h3>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20999363223698" alt="Screenshot_2020-02-03 Questback - Authorization Server.png"></p>
+<p> </p>
+<h3 id="h_01J6A2SE0ME2XEXT77EEPSW8JB">Step 6: Create claims for first and last name</h3>
+<p><strong>Values first claim:</strong></p>
+<ul>
+<li>
+<p>Name (1): first_name</p>
+</li>
+<li>
+<p>Include in token type (2): ID Token, always</p>
+</li>
+<li>
+<p>Value (3): user.firstName</p>
+</li>
+<li>
+<p>Include in (4): profile</p>
+</li>
+</ul>
+<p><strong>Values second claim:</strong></p>
+<ul>
+<li>
+<p>Name (1): last_name</p>
+</li>
+<li>
+<p>Include in token type (2): ID Token, always</p>
+</li>
+<li>
+<p>Value (3): user.lastName</p>
+</li>
+<li>
+<p>Include in (4): profile</p>
+</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.z

@@ -1,0 +1,24 @@
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">efs.staff.view.print_add_account.render.before</span></pre></td>
+<td colspan="1">modules/efs/components/staff/view.inc.php:print_add_account()</td>
+<td colspan="1"><pre><span>Efs\Events\Staff\View\</span><span>PrintAddAccountRenderBefore([<br></span><span> </span><span style="color: rgb(0,128,0);">'account_data' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$accountData<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">panel.app.controllers.legacy.panel_search.change_account.email.output.before</span></pre></td>
+<td colspan="1">modules/panel/app/controllers/legacy/panel_search.php:change_account()</td>
+<td colspan="1"><pre><span>Panel\Events\Controllers\Legacy\PanelSearch\ChangeAccount\Email\Output\Before</span><span>([<br></span><span>    </span><span style="color: rgb(0,128,0);">'user_data' </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$userdata</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'email_label' </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$email_label</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'email_input' </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$email_input<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">panel.website.content_handler.change_data.update.user.before</span></pre></td>
+<td colspan="1">modules/panel/components/website/contenthandler/changedata.inc.php:execute_action()</td>
+<td colspan="1"><pre><span>Panel\Events\Website\ContentHandler\ChangeData\Update\User\Before</span><span>([<br></span><span>    </span><span style="color: rgb(0,128,0);">'component' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$this</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'save_data' </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$to_save<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">efs.components.admin.user.manager.add_user.after</span></pre></td>
+<td colspan="1">modules/efs/components/adminuser/manager.inc.php:add_user()</td>
+<td colspan="1"><pre><span>Efs\Events\Admin\User\Manager\AddUser\After</span><span>([<br></span><span>    </span><span style="color: rgb(0,128,0);">'user_id' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$uid</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'insert_data' </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$insertdata</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'efs_admin_user_manager' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$this<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">efs.components.admin.user.manager.change_partial_by_field.after</span></pre></td>
+<td colspan="1">modules/efs/components/adminuser/manager.inc.php:change_partial_by_field()</td>
+<td colspan="1"><pre><span>Efs\Events\Admin\User\Manager\ChangePartialByField\After</span><span>([<br></span><span>    </span><span style="color: rgb(0,128,0);">'field' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$field</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'field_value' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$value</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'updated_values' </span><span>=&gt; </span><span

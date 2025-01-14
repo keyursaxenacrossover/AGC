@@ -1,0 +1,53 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1061453960">https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1061453960</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<p>After system administration has created a mirror installation we need to adjust some settings and check the installation </p><ul>
+<li>
+<p>Login to installation using the root account and check the config (The mirror installation script was updated on 13.08.2015 and already changes the following config variables. You though can double check them):</p>
+<ul>
+<li><p>"panel_global_search_db" is reset to default, to avoid that search requests are made on the live db</p></li>
+<li><p>"gp_id" is reset to default, to avoid that the DBReport changes the Globis entry of the live installation</p></li>
+<li><p>"tmp_path_export" is reset to default, so that the data export can be executed</p></li>
+<li><p>"tmp_path" is set to match the tmp path of the mirror server</p></li>
+<li><p>"watchdog_path" is set to the path of the mirror server ([tmp folder of installation]/watchdog, e.g. /nfs/opst_temp2/watchdog/)</p></li>
+<li><p>"use_hurricane_mta" is set to FALSE</p></li>
+<li><p>"rabbitmq_host" is cleared so that the jobmaker does not fetch codes of the live installation</p></li>
+<li><p>"export_jobmaker_behaviour" is set to 1 to make loop data exports possible</p></li>
+<li><p>Table "memcache_servers" is set to "127.0.0.1" so that configurations of Live SINC modules are not overwritten</p></li>
+<li><p>Push service (portals) needs to be deactivated</p></li>
+</ul>
+</li>
+<li><p>Only if <strong>not anonymized</strong> also clear smtp_server so adhoc emails are not being sent</p></li>
+<li><p>If “<strong>Two-Factor-Authorisation</strong>” is active on the original installation, the config variable admin_login_do2fa needs to be set to false.</p></li>
+<li>
+<p>If <strong>MySight</strong> was used on the original installation, the projects are copied as well.</p>
+<ul>
+<li><p>The existing Exasol connection has to be changed so that data from the mirror does not overwrite the live data!</p></li>
+<li><p>If <a href="https://it.globalpark.de/twiki/bin/view/Support/MySight">EFS Mysight</a> needs to be used on the mirror, System Administration has to create an extra Intermediate and Exasol database for the mirror installation and it has to be configured in EFS.</p></li>
+</ul>
+</li>
+<li>
+<p>Open config file on console:</p>
+<ul>
+<li><p>Has the gpname been changed to the name of the mirror installation?</p></li>
+<li><p>Have the database settings been changed to match the database of the mirror installation?</p></li>
+</ul>
+</li>
+<li>
+<p>Execute installation check:</p>
+<ul><li>
+<p>You can ignore the following messages</p>
+<ul>
+<li><p>Cron jobs for SnailMail, jobmaker and dbreportstamp (they are not executed on mirror installations)</p></li>
+<li><p>The configuration is missing the installation ID</p></li>
+<li><p>access to external services</p></li>
+</ul>
+</li></ul>
+</li>
+</ul><p> </p><p>If you get Error 404 after logging in to the mirror installation:</p><ul><li>
+<p>check database tables</p>
+<ul><li>
+<pre><code class="language-text">SHOW CREATE TABLE config_variables;</code></pre>
+<p>, if Error</p>
+<pre><code class="language-text">ERROR 1286 (42000): Unknown table engine 'InnoDB'</code></pre>
+</li></ul>
+</li></ul>

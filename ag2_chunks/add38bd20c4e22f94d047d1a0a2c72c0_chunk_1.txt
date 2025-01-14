@@ -1,0 +1,77 @@
+ relevant for the master data transfer?</p>
+<ul>
+<li>
+<p>Is multiple participation possible?</p>
+</li>
+<li>
+<p>Have the collected variables already been collected previously via the registration form, the “change data” form, the master data survey or another project? Whether a master data item is also referenced by another project can be seen in the column “Survey allocations” of the master data overview.</p>
+</li>
+<li>
+<p>If the master data were collected previously, do you want to use the existing values to preset answers? The feature “Transfer master data values to survey variables” allows such a presetting.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Are the missing values “NULL” and “-77” to be included in the master data transfer, or shall the transfer only take place if the questions have actually been answered?</p>
+<ul>
+<li>
+<p>If, for example, the master data have already been filled in during registration, it may not make sense to overwrite these values with missing values.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Shall the master data transfer start automatically immediately after completing the interviews, or shall it be triggered manually? If it is to be triggered manually by the moderator, when and for which disposition codes does this make sense?</p>
+<ul>
+<li>
+<p>In master data surveys, the data are always transferred automatically as soon as a panelist reaches the final page (i.e when disposition code 31, 32 is assigned). Nonetheless, an additional manual transfer may be necessary, for example, if you wish to transfer the data of incomplete surveys into the master data table as well.</p>
+</li>
+<li>
+<p>In panel surveys, the master data transfer is usually triggered manually. Determine the most convenient time for this transfer; the transfer may have to be triggered several times. Alternatively, you can also select automatic transfer in panel surveys. Please mind: If candidates from a tell-a-friend campaign participate in such a panel survey, the automatic transfer will trigger the incentivation of the recruiters.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="managing-the-master-data-allocations-of-a-project"><strong>Managing the master data allocations of a project</strong></h2>
+<p>The allocations of project variables and master data are managed in the <strong>Master data allocation</strong> menu. The overview table in this menu lists all project variables along with the already existing allocations.</p>
+<ul>
+<li>
+<p>The project variables are listed along with variable name, question, item text, and characteristics. By clicking on the variable name you open the dialog where the allocation is defined. By clicking on the question you open the questionnaire editor in a second window.</p>
+</li>
+<li>
+<p>Names and labels, master data category and characteristics of the allocated master data are displayed. By clicking on the name you open the editing dialog for the master data item in a second window.</p>
+</li>
+<li>
+<p>The “Status” column tells you whether the allocation is functioning: If, for example, there are differences in data type or the number of characteristics, a red status icon with a corresponding message will appear. As an example, the figure below shows how the matching of the project variable “v_9” with five characteristics to the master data item “m_favoritesports” with three characteristics is being marked as a problem.</p>
+</li>
+<li>
+<p>The entry in the column “Master data transfer only if set” tells you whether the transfer is to be carried out also in case of no answer.</p>
+</li>
+</ul>
+<p>As usual, simple and extended search functions are available. Especially the possibility to restrict the list to already allocated or not yet allocated variables is very useful in large-scale projects. By clicking on the <strong>View</strong> button you can activate or deactivate table columns or change the number of rows per page, as usual. Via the<strong> Excel export</strong> / <strong>CSV export</strong> buttons you can download the list in order to pass on or check the allocations externally.</p>
+<p><strong>Edit options</strong></p>
+<p>Via the <strong>Execute master data transfer</strong> button you can trigger the transfer of the values manually. Via the icons in the “Actions” column you can edit individual allocations:</p>
+<ul>
+<li>
+<p><strong>Edit</strong>: Opens the dialog for editing individual allocations</p>
+</li>
+<li>
+<p><strong>Delete</strong>: With this option you can delete the respective allocation</p>
+</li>
+</ul>
+<p>The following actions can be applied to selected or all units. To do so, you select the desired allocations by ticking the respective checkboxes in the “Actions” column or alternatively by ticking either of the checkboxes “Mark all entries on this page” and “Mark all entries found”. Then you specify the desired action in the drop-down list and confirm by clicking <strong>Execute</strong>.</p>
+<ul>
+<li>
+<p>Allocate variables: Opens the dialog for editing individual allocations</p>
+</li>
+<li>
+<p>Create and allocate master data: Opens a dialog where you can both create and allocate new master data</p>
+</li>
+<li>
+<p>Activate / deactivate “Master data transfer only if seen”: Via this option you can specify whether the values “NULL” and “-77” shall be excluded from transfer.</p>
+</li>
+<li>
+<p>Delete allocations: With this action you can delete several allocations en bloc.</p>
+</li>
+</ul>
+<h2 id="allocating-project-variables-to-existing-master-data"><strong>Allocating project variables to existing master data</strong></h2>
+<p>Please proceed

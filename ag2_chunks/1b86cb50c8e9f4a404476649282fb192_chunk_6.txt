@@ -1,0 +1,95 @@
+837px;">
+<p>External variable name</p>
+</td>
+<td style="width: 433.819px;">
+<p>Depending on the question type and type of text field, this field is located either in the „Question options“ section or in a dedicated column.</p>
+<p>External variable names can be changed and are then used on export instead of the internal variable names.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 273.837px;">
+<p>No</p>
+</td>
+<td style="width: 433.819px;">
+<p>When creating the items, the numbering is automatically assigned by the system. You may change the numbering, but the changed numbering should be unique.</p>
+<p>If the numbering you assigned is not unique, an automatic, unique numbering will be assigned.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 273.837px;">
+<p>Code</p>
+</td>
+<td style="width: 433.819px;">
+<p>Serves to identify an answer option for single response lists and matrix questions. An overview of all encodings is provided in the codebook.</p>
+<ul>
+<li>
+<p>You can edit the encoding. However, you should never do this while the survey is in progress because otherwise, the encoded information will be lost or it will no longer be possible to assign it correctly. Filters and other functions that are based on codes can also be damaged.</p>
+</li>
+<li>
+<p>When defining codes in matrix questions, please note that code “0” is disabled for scale items, except for question types 351, 361, and 364. Code “0” is normally used for question types 361 and 364 to generate the “Please select” scale cha- characteristic: This allows you to track whether participants have responded to the question.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="width: 273.837px;">
+<p>New</p>
+</td>
+<td style="width: 433.819px;">
+<p>To create a new answer option, enter a new answer or item text into the “New” row. The sort number or the code (depending on the question type) will then be assigned automatically.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 273.837px;">
+<p><strong>Arrow </strong>icons</p>
+</td>
+<td style="width: 433.819px;">
+<p>Used to re-sort the answer options.</p>
+<p>Clicking on the <strong>arrow </strong>icon in front of an answer option will open a script prompt. Enter the desired new position for the item. After you have confirmed by clicking on <strong>OK</strong>, the position number will be changed automatically, and the numbers of all subsequent items will be corrected accordingly. Then click on <strong>Save</strong>. Make the next position change, click on <strong>Save </strong>again, etc.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 273.837px;">
+<p>Answer option / Dimension</p>
+</td>
+<td style="width: 433.819px;">
+<p>Enter the answer options (or dimensions in matrix questions) in this field.</p>
+<ul>
+<li>
+<p>By default, there are five preset options. However, you can expand or reduce the number as you wish.</p>
+</li>
+<li>
+<p>If you need more than the pre-created options, simply enter the “New” row of the text for the next option, select the type, and <strong>Save</strong>.</p>
+</li>
+<li>
+<p>You can remove the redundant answer option by ticking the checkbox “Delete” and then <strong>Save</strong>.</p>
+</li>
+</ul>
+<p>Up to 100 answer options can be created for a single question. For some question types, fewer options are available, to guarantee an appealing design.</p>
+<p>The answer text may have up to 10,000 characters. But please keep in mind that overlong texts may negatively affect the appearance of the question.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 273.837px;">
+<p>Text field width</p>
+</td>
+<td style="width: 433.819px;">
+<p>Depending on the question type and type of text field, this field is located either in the „Question options“ section (e.g. 141), in a dedicated column (e.g. 143), or immediately beside the text field (e.g. 111, Answer option + text).</p>
+<p>It can be used to restrict the width of a specific text field.</p>
+<ul>
+<li>
+<p>In “Responsive Layout” projects from EFS 10.2: To find out which unit (em, %) should be used, please check the <strong>i </strong>hint in the respective field.</p>
+</li>
+<li>
+<p>In “Responsive Layout” projects from EFS 10.2: If you do not enter a specific text field width, the default value defined in the layout editor will be used (Table 9.3). Default: 100%.</p>
+</li>
+</ul>
+<p>Please note that the feature is not available for question type 363.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 273.837px;">
+<p>Input length (max.)</p>
+</td>
+<td style="width: 433.819px;">
+<p>Depending on the question type and type of text field, this field is located either in the „Question options“ section (e.g

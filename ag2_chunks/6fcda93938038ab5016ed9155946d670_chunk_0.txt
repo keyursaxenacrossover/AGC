@@ -1,0 +1,57 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1053491906">https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1053491906</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">Infos</a></li>
+<ul>
+<li><a href="#header-3">Aktivierung</a></li>
+<li><a href="#header-4">Activating Reporting+ for Employee projects</a></li>
+<li><a href="#header-5">Deaktivierung</a></li>
+<li><a href="#header-6">Datenbank</a></li>
+<li><a href="#header-7">Reporting+ Limits</a></li>
+<li><a href="#header-8">pload Customized Templates</a></li>
+<ul>
+<li><a href="#header-10">&gt;=EFS 9.0</a></li>
+</ul>
+<li><a href="#header-12">Änderungen in den EFS Versionen</a></li>
+<li><a href="#header-13">Debugging</a></li>
+<ul>
+<li><a href="#header-15">Bei der Datenaktualisierung</a></li>
+<li><a href="#header-16">Beim Export:</a></li>
+<ul>
+<li><a href="#header-18">Mögliche Fehler bei Bitte wenden Sie sich an den Support</a></li>
+<li><a href="#header-19">Automatische Exportgenerierung schlug fehl</a></li>
+<li><a href="#header-20">Das Export Fenster in Reporting+ lässt sich gar nicht mehr öffnen</a></li>
+</ul>
+</ul>
+<li><a href="#header-23">Fehlercodes, Ursachen und Lösungen</a></li>
+<li><a href="#header-24">Other Q&amp;A</a></li>
+<ul>
+<li><a href="#header-26">No Input file specified</a></li>
+<li><a href="#header-27">Texts from open ended questions (type 142) are cut</a></li>
+<li><a href="#header-28">Get all report IDs of all surveys of a client</a></li>
+<li><a href="#header-29">Get duration of data updates for a report</a></li>
+</ul>
+<li><a href="#header-31">Reporting+ Tabellen</a></li>
+</ul>
+</ul>
+</ul><h1 id="header-1">Infos</h1><p>In der Plattform-Cockpit gibt es einen weitere Tab EFS Analytics Log, wo ein paar Einstellungen vorgenommen werden.</p><p>Der Zugriff erfolgt direkt aus den Projekten unter dem gleichnamigen Menüpunkt.</p><p>Um den Menüpunkt zu sehen benötigt man das Recht <strong>report_reporting</strong> welches nicht Standardmäßig gesetzt wird.</p><h2 id="header-3">Aktivierung</h2><ol>
+<li><p>Update der Installation ohne die Ausführung der Healself</p></li>
+<li>
+<p>Anpassen der config.inc.php3</p>
+<ol>
+<li><p>Unter __modules muss <strong>reporting</strong> eingetragen werden</p></li>
+<li><p>Unter __provider_gui muss <strong>reporting</strong> eingetragen werden</p></li>
+<li><p>Das Flag __lab_reporting_link muss auf TRUE gesetzt werden. //Gibt es ab 8.0 nicht mehr</p></li>
+<li><p>$__reporting_ppt_url URL anpassen (siehe <a href="https://it.globalpark.de/twiki/bin/view/Sysadmin/PPTPowerpointNETReportingGenerierung">IP nach Datacenter</a>) </p></li>
+<li><p>$__reporting_xls_url URL anpassen (siehe <a href="https://it.globalpark.de/twiki/bin/view/Sysadmin/PPTPowerpointNETReportingGenerierung">IP nach Datacenter</a>) </p></li>
+</ol>
+</li>
+</ol><p></p><ol>
+<li><p>Healself ausführen</p></li>
+<li><p>Apache anpassen und neustarten / Beim LIGHTTP muss nur ein neustart erfolgen</p></li>
+</ol><p>Danach einfach testen:</p><p></p><ol>
+<li><p>suche dir ein Test-Projekt</p></li>
+<li><p>Klicke auf den Menüpunkt EFS Reporting +</p></li>
+</ol><p>Wird es für einen Kunden freigeschaltet unbedingt darauf achten, dass ein Team auch das Recht report_reporting hat, welches standardmäßig nicht aktiviert ist.</p><p><strong>SPECIALS: </strong><br>- Sales kann Pakete mit nur HTML Reports o.ä. verkaufen. Dies kann auf der eigenen Installationen des Kunden konfiguriert werden (NICHT auf Sammelinstallationen). In der Config finden sich diese Einstellmöglichkeiten:</p><p>// pkr: flags for disabling export services<br>$__reporting_xls_disabled = false;<br>$__reporting_ppt_disabled = false;<

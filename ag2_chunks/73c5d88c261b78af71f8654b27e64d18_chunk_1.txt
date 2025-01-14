@@ -1,0 +1,61 @@
+ row. Depending on the project type, different options are available.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014837358226" alt="Login options.jpg"></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Cookies are used:</p>
+<ul>
+<li>
+<p>Only in anonymous surveys: Cookies are used in anonymous surveys to make resumption possible and to make multiple participation more difficult.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Session validity period (in seconds):</p>
+<ul>
+<li>
+<p>In this field, you can set the session period for surveys. The session validity period, or “session time”, is the period between a participant’s actions during which the software can recognize the participant and permit editing of a survey that has begun. It is measured as the difference between those actions of participants that require a connection between browser and web server, i.e. from the submission of a questionnaire page to the submission of the next page, for example, or from the time participants leave an uncompleted survey until they resume editing of the survey.</p>
+</li>
+<li>
+<p>Entering the <strong>Session validity period</strong>: You can either enter the total value or a mathematical operation (e.g. “3600 * 24” for one day). The default session validity period in anonymous surveys is 1,209,600 seconds, i.e. two weeks. In all other project types, it is 7,200 seconds, i.e. two hours.</p>
+</li>
+<li>
+<p>The following tips will help you to choose an adequate session time:</p>
+<ul>
+<li>
+<p>Increasing the session time is recommendable if you have to assume that participants will not complete the survey in one go.</p>
+</li>
+<li>
+<p>If a questionnaire page contains numerous or highly complex questions, make sure that the session time is sufficient for editing this page.</p>
+</li>
+<li>
+<p>If participants are redirected to another survey project with the help of an external survey start and then jump back to the primary EFS Survey project, the time they took to complete the external project is treated as if it were an individual questionnaire page. The primary project’s session time should therefore be greater than the time it takes participants to complete the entire external project.</p>
+</li>
+<li>
+<p>For anonymous surveys in which cookies are used, you can use the session validity period to influence how and when a participant can take part in a completed survey again (provided the participant has activated cookies). For example, if you do not want the participant to repeat the survey within the next fortnight, set the validity period to two weeks.</p>
+</li>
+<li>
+<p>If URL parameters are used in an anonymous survey and a participant’s session times out, a message will be displayed that points out that the number of URL parameters is not correct. You can find this message in the Project properties-&gt; Survey messages menu in the „Error message if number of URL parameters is wrong“ field.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Cookies</strong></p>
+<p class="wysiwyg-text-align-justify">For anonymous surveys, you must specify whether you wish to set cookies or not. A cookie is a short text file stored on the respondent’s computer. In EFS Survey projects, the text file saves an internal survey title and the respondent’s session ID. The session ID is an anonymous, unguessable number that is assigned when the respondent first accesses the survey and ensures that the respondent can be recognized from submitting one page to submitting the next page.</p>
+<p class="wysiwyg-text-align-justify">If the session ID has been stored on the respondent’s computer (in a cookie), EFS Survey can recognize the respondent throughout Internet sessions and enable the resumption of an anonymous survey.</p>
+<p class="wysiwyg-text-align-justify">As some Internet users do not permit the storage of cookies, the session ID can be transferred as a so-called GET parameter as an alternative/fallback, i.e. it is attached to the survey URL, thus avoiding the storage of information on the respondent’s computer. Resumption without a cookie set is only possible for personalized or panel surveys.</p>
+<p class="wysiwyg-text-align-justify">Summary:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Although you have activated cookies, each respondent will individually decide whether they wish to permit cookies or not. Respondents who do not accept the cookie can participate in anonymous surveys more than once.</p>
+</li>
+<li>
+<p>Deactivate cookies if you want to allow yourself or others to participate in the same survey more than once in succession. This is especially recommended if you want to use the EFS Survey as an input tool for CATI surveys and the telephone interviewer enters several interviews in succession / at once.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The project info of an anonymous project will contain the “participate again” link. Clicking on this link will delete a set cookie and thus enable multiple participation in / repeated tests of the project. Do <em>not </em>pass this link on to “real” respondents as a survey URL.</p>
+<h3 id="user-defined-variables" class="wysiwyg-text-align-justify"><strong>User-defined variables</strong></h3>
+<p class="wysiwyg-text-align-justify"><em>The survey

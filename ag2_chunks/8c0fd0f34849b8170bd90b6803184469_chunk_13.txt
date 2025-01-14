@@ -1,0 +1,18 @@
+itectAnalystUserManual.pdf</a></p></li></ul><p> oder</p><ul><li><p><strong>Ausdruck</strong> beim Technischen Support</p></li></ul><h3 id="header-49">Mysight Overview/Cheat Sheet</h3><ul><li><p><strong>My Sight Overview/Cheat Sheet</strong>: <a href="https://it.globalpark.de/twiki/pub/Support/MySight/My_Sight_Cheat_Sheet.docx">My_Sight_Cheat_Sheet.docx</a></p></li></ul><p></p><h3 id="header-50">MySight Checklist</h3><ul><li><p><strong>MySight Checklist:</strong> <a href="https://it.globalpark.de/twiki/pub/Support/MySight/MySight_Checklist.docx">MySight_Checklist.docx</a></p></li></ul><h3 id="header-51">Alteryx Data field types:</h3><ul><li><p><a href="http://downloads.alteryx.com/Alteryx/Help/Reference/DataFieldType.htm">http://downloads.alteryx.com/Alteryx/Help/Reference/DataFieldType.htm</a></p></li></ul><p></p><h3 id="header-52">MySight Websites installieren und Ipsos CLS aufsetzen (Professional Services/Customizing)</h3><p> Anbei ein Dokument, in dem beschrieben ist, wie man <a href="https://it.globalpark.de/twiki/bin/view/Support/MySight">MySight</a> Websites installiert und wie das Ipsos CLF aufgesetzt wird. <br>Dies übernimmt normalerweise Professional Services/Customizing, aber falls es dort aufgrund von Urlaub/Krankheit keiner machen kann, hier für uns zur Doku.</p><ul><li><p><a href="https://it.globalpark.de/twiki/pub/Support/MySight/MySight_CLF_installieren.docx">MySight_CLF_installieren.docx</a>: <a href="https://it.globalpark.de/twiki/bin/view/Support/MySight">MySight</a>_CLF-installieren</p></li></ul><h3 id="header-53">Process for switching from PREPROD to PREPROD2/PROD and publishing data from PREPROD2 to PROD</h3><ul>
+<li><p>Link to a knowlede sharing ticket: <a href="https://jira.3uu.de/browse/IPSOSPRJ-721">https://jira.3uu.de/browse/IPSOSPRJ-721</a></p></li>
+<li><p>Reference Case: 00374525</p></li>
+</ul><p><strong>Here our new implementation (used by SalesPulse, made by Heiko) for simultan user provisioning on PREPROD, PREPROD2 and PROD</strong> (including the new deployment process for data sources). This implemantation is only used by Professional Services and the primary function is Dashboard testing on different enviroments (PREPROD, PREPROD2, PROD).</p><ul><li><p>Reference Case: 00393790</p></li></ul><p><strong>How To</strong></p><ul><li>
+<p>User provisioning</p>
+<ul><li><p>Use Workflow "Call_mysightcontrol_v2" within the Data Flow Configuration (project&gt;mysight)</p></li></ul>
+</li></ul><p> NOTICE: a Temporary port switch from PREPROD to PREPROD2/PROD is not needed anymore (user_provisioning_service, EFS configuration).</p><p>Example</p><p></p><pre><code class="language-text">&lt;module appId="5873a587b7d2bb075047f077" name="Call_mysightcontrol_v2"&gt;
+&lt;questions&gt;
+&lt;question name="URL" value="http://192.168.42.16:49866/app/api/process/userprovision_noalteryx" /&gt;
+&lt;question name="Site" value="sk2063.customervoice360.com" /&gt;
+&lt;question name="Project" value="&lt;Your project&gt;" /&gt;
+&lt;question name="Email" value="&lt;Your email address&gt;" /&gt;
+&lt;/questions&gt;
+&lt;/module&gt;
+</code></pre><p></p><ul><li>
+<p>Publish Data Sources</p>
+<ul><li><p>Create a new or use an existing "post.bat" file placed on a "site/project" directory (SFTP server).</p></li></ul>
+</li></ul><p>Example (see under \\bre-atx-01\EFSsftp\<a href="http://sk2063.customervoice360.com">sk2063.customervoice360.com</a>\3064_AN\post.bat&lt;file:///\\bre-atx-01\EFSsftp\<a href="http://sk2063.customervoice360.com">sk2063.customervoice360.com</a>\3064_AN\post.bat&gt;)</p><p></p><pre><code class="language-text">"C:\Tableau\Tableau Server\10.0\extras\Command Line Utility\tabcmd.exe" publish -s https://mysight-preprod2.questback.com -t sk206

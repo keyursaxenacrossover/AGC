@@ -1,0 +1,61 @@
+.id = admin_user_contract.org
+            JOIN groups USING(gid)
+            GROUP BY uid;</code></pre>
+<p> </p>
+<h3 id="header-5">available standard modules</h3>
+<pre><code class="language-text">Exteriorviewdevices/Config/DESCRIPTION:Description:     Gathers Browser and OS information for logins in Downloadplattform, Orgprocessor and Feedbackcenter
+Feedbackcenter/Config/DESCRIPTION:Description:  Gathers numbers about used feedback centers
+Fieldperiod/Config/DESCRIPTION:Description:     Gets numbers of projects by fieldperiods
+Fieldreport/Config/DESCRIPTION:Description:     Gathers statistical data about fieldreports
+Forums/Config/DESCRIPTION:Description:  Gathers general usage data about forums
+Hrreporting/Config/DESCRIPTION:Description:     Gathers data about HR-Reporting in use
+Incentive/Config/DESCRIPTION:Description:       Gathers general data about incentive functionality
+Installation/Config/DESCRIPTION:Description:    Gathers general data of the EFS installation itself (hostnames, gp_id, shared_installation flag)
+Languages/Config/DESCRIPTION:Description:       Gathers data about languages in projects
+Lists/Config/DESCRIPTION:Description:   Gathers statistical data about lists used in surveys
+Loftsurveys/Config/DESCRIPTION:Description:     Gathers basic data about multi source feedback surveys
+Loftwaves/Config/DESCRIPTION:Description:       Gets numbers of projects by wave counts
+Loginareas/Config/DESCRIPTION:Description:      Gathers numbers of logins to EFS backend areas
+Logistics/Config/DESCRIPTION:Description:       Gathers general statistic data about logistics module used in employee projects
+Mails/Config/DESCRIPTION:Description:   Gathers general data about mail sending usage
+Masterdataallocation/Config/DESCRIPTION:Description:    Gathers statistical data about masterdata allocation in panel projects
+Masterdata/Config/DESCRIPTION:Description:      Gathers basic data about masterdata in panel
+MySight/Config/DESCRIPTION:Description: Gets Number of MySight Projects from EFS
+Organisations/Config/DESCRIPTION:Description:   Gathers either number of organizations or all organizations with name, number of members etc... (configurable in jobs.ini)
+Orgstructure/Config/DESCRIPTION:Description:    Gathers basic informations about org structures in ES projects
+Pages/Config/DESCRIPTION:Description:   Gathers generall data about pages in EFS projects
+Panelbonuses/Config/DESCRIPTION:Description:    Gathers statistical data about panel bonuses
+Panelgroups/Config/DESCRIPTION:Description:     Gathers statistical data about panel groups
+Panelists/Config/DESCRIPTION:Description:       Gatherd general data about panelists and their status
+Panelquotas/Config/DESCRIPTION:Description:     Gathers statistical data about panel quotas
+Panelstatus/Config/DESCRIPTION:Description:     Gathers basic data about panel status used
+Participations/Config/DESCRIPTION:Description:  Gathers generall statistic data about user participations in surveys
+Personaldata/Config/DESCRIPTION:Description:    Gathers numbers of mail addresses, names, first names and phone numbers
+Plausichecks/Config/DESCRIPTION:Description:    Gathers statistical data about plausichecks on the installation
+PortalActionBoard/Config/DESCRIPTION:Description:       Gathers information about the action-board module in efs-portals,
+Printversion/Config/DESCRIPTION:Description:    Gathers count of created print versions
+Products/Config/DESCRIPTION:Description:        Gathers information about which products are in use (panel, employee, loft .... etc)
+Projectchecks/Config/DESCRIPTION:Description:   Gathers number about projectchecks done in survey
+Projectexports/Config/DESCRIPTION:Description:  Gathers statistical data about exports done in EFS projects
+Projectlayout/Config/DESCRIPTION:Description:   Gathers data aboutproject layouts
+Projectlibraries/Config/DESCRIPTION:Description:        gathers statisticat data about project specific libraries
+Projects/Config/DESCRIPTION:Description:        Gathers general numbers about projects
+Projecttypes/Config/DESCRIPTION:Description:    Gathers numbers of projects in project list grouped by project type
+Questions/Config/DESCRIPTION:Description:       Gathers statistical data about questions on EFS installation
+Questiontypes/Config/DESCRIPTION:Description:   Gathers general data about question type usage
+Quickpolls/Config/DESCRIPTION:Description:      Gathers general usage data about quickpolls
+Quotations/Config/DESCRIPTION:Description:      Gathers statistical data about project quotations
+Reporting/Config/DESCRIPTION:Description:       Gathers statistical data about the old reporting
+Reportingplus/Config/DESCRIPTION:Description:   Gathers general data about reporting+ usage
+Sinc/Config/DESCRIPTION:Description:    Gathers data about Sinc module in EFS
+Sms/Config/DESCRIPTION:Description:     Gathers statistical data about SMS module in EFS
+Teams/Config/DESCRIPTION:Description:   Gathers data about teams on installation
+Trigger/Config/DESCRIPTION:Description: Gathers statistical data about triggers on the Efs installation
+Useragents/Config/DESCRIPTION:Description:      Gathers all useragents used and deciphers them into OS, Browser and Browserversion
+Users/Config/DESCRIPTION:Description:   Gathers data about EFS Admin users
+Websites/Config/DESCRIPTION:Description:        Gathers data about panel websites
+Wildcards/Config/DESCRIPTION:Description:       Gather statistical data about wildcards used in EFS</code></pre>
+<p> </p>
+<h3 id="header-6">Result of the UsagePM job on the last installation in the Corbox:</h3>
+<ul>
+<li class="media-group"><a href="https://discover

@@ -1,0 +1,129 @@
+ this domain / subdomain by the Certificate Authority specified as value</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>issuewild</strong></p>
+<ul>
+<li>
+<p>Allows for the issuing of Wild-Card certificates only for this domain / subdomain by the Certificate Authority specified as value</p>
+</li>
+<li>
+<p>Only get’s evaluated if the FQDN of the certificate is for a Wilrdcard-Certificate</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>iodef</strong></p>
+<ul>
+<li>
+<p>In case the CA supports it, the CAA is instructed to report invalid Certificate requests as an incident</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>value</strong></p>
+<ul>
+<li>
+<p>in case of tag <strong>issue/issuewild</strong> the value can be</p>
+<ul>
+<li>
+<p>The certificate Certificate Authority issuer domain:<br>As specified by respective CAA, e.g. ‘<a href="http://letsencrypt.org">letsencrypt.org</a>’ for <a href="https://letsencrypt.org/" data-card-appearance="inline">https://letsencrypt.org/</a></p>
+</li>
+<li>
+<p>';'<br>A single semicolon specifys &lt;no-value&gt;, which means that no certificates should be issued</p>
+</li>
+<li>
+<p>a value containing invalid characters (not supported for a domain name, e.g. ‘%%%%%%%%%’ Is treated as &lt;no-value&gt; as well, which means that no certificates should be issued</p>
+</li>
+<li>
+<p><strong>Note: </strong></p>
+<ul>
+<li>
+<p>Multiple CAA issue*-Records wil work additively</p>
+</li>
+<li>
+<p>So &lt;no-value&gt; issue* Records will be ignored if another valid issuer* Record exists</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>in case of tag <strong>iodef</strong></p>
+<ul>
+<li>
+<p>Email or webservice endpoint e.g. ‘<a href="mailto:some@example.com">mailto:some@example.com</a>’</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="how-are-existing-caa-records-used-a-caa-when-issuing">How are existing CAA Records used a CAA when issuing</h4>
+<p>First and foremost, if no CAA Records can be found on a domain, certificate issuance is not impeded.</p>
+<p><strong>(1) To Check for a relevant CAA record, the Certificate authority works as follows:</strong></p>
+<ol start="1">
+<li>
+<p>Start with the FQDN of the domain that is requested for the certificate</p>
+</li>
+<li>
+<p>Query that domain for CAA-Records</p>
+</li>
+<li>
+<p>Decide further steps based on the result</p>
+<ol start="1">
+<li>
+<p>IF CAA records are found, exit - procede with CAA evaluation</p>
+</li>
+<li>
+<p>IF no CAA records a found</p>
+<ol start="1">
+<li>
+<p>Check if the domain to be checked is an apex-domain</p>
+</li>
+<li>
+<p>IF yes, exit - No CAA records were found</p>
+</li>
+<li>
+<p>IF no, select the next domain by removing the leading part of the current domain incl. the '.' - go back to step 2</p>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<p><strong>(2) Evaluate the CAA records:</strong></p>
+<p>If at least one record is found that contains the issue domain of the CA → proceed with issuing the certificate</p>
+<ul>
+<li>
+<p>If NOT, then check if a CAA record exists with tag ‘iodef’</p>
+<ul>
+<li>
+<p>If it exists report the incident based on the value iside the DNS-Record</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>See also:</p>
+<ul>
+<li>
+<p><a href="https://datatracker.ietf.org/doc/html/rfc8659" data-card-appearance="inline">https://datatracker.ietf.org/doc/html/rfc8659</a> , especially section</p>
+<ul>
+<li>
+<p><a href="https://datatracker.ietf.org/doc/html/rfc8659#section-3" data-card-appearance="inline">https://datatracker.ietf.org/doc/html/rfc8659#section-3</a> - Section 3 (The lookup algorithm)</p>
+</li>
+<li>
+<p><a href="https://datatracker.ietf.org/doc/html/rfc8659#section-4.1.1" data-card-appearance="inline">https://datatracker.ietf.org/doc/html/rfc8659#section-4.1.1</a> - Sections 4.1.1 and onwards (For a more detailed exmplanation of the different parts of a CAA DNS-Record</p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="https://letsencrypt.org/docs/caa/" data-card-appearance="inline">https://letsencrypt.org/docs/caa/</a> - An explanation as relevant for Let’s Encrypt</p>
+</li>
+<li>
+<p><a

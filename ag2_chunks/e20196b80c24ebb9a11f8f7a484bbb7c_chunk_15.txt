@@ -1,0 +1,67 @@
+ only have to select the desired variable. The filtering will occur automatically based on the current loop condition.</p>
+<p class="wysiwyg-text-align-justify"><strong>Filtering based on loop variables from outside a loop</strong></p>
+<p class="wysiwyg-text-align-justify">If the filter is located outside the loop branch, simply selecting the variable will not be enough: If you did that, you would automatically perform the filtering based on the last current loop condition, which is not necessarily the condition you want to use. To specify the desired loop condition, please proceed as follows:</p>
+<ol class="wysiwyg-text-align-justify" start="1">
+<li>
+<p>In the condition editor, select the loop variable, and click on <strong>Save</strong>.</p>
+</li>
+<li>
+<p>A new checkbox labeled “Restrict to list elements” will be displayed, allowing you to filter based on a single, clearly defined loop condition.</p>
+</li>
+<li>
+<p>Tick the checkbox, and click on <strong>Save</strong>.</p>
+</li>
+<li>
+<p>The loop name will be displayed. Additionally, a drop-down list allows you to choose a single list element.</p>
+</li>
+<li>
+<p>Make your selection, and click on <strong>Save</strong> again.</p>
+</li>
+</ol>
+<h4 id="describing-loop-conditions" class="wysiwyg-text-align-justify"><strong>Describing loop conditions</strong></h4>
+<p class="wysiwyg-text-align-justify">The codebook describes the conditions on a loop, e.g. variable combinations belonging to each looped page and the outputted list elements:</p>
+<p class="wysiwyg-text-align-justify">If, for example, a looped page contains the variable “v_6” with four characteristics (1=“Very satisfied”, 2=“Satisfied”, 3=“Partly satisfied”, 4=“Not satisfied”) and four elements of a dynamic list are to be output, then the conditions of this loop will be described by the following variables:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>v_6_1: results for the question in the loop condition, in which the first list element selected for the display was displayed, with characteristics 1=“Very satisfied”, 2=“Satisfied”, 3=“Partly satisfied”, 4=“Not satisfied”.</p>
+</li>
+<li>
+<p>v_6_2: results for the question in the loop condition, in which the second list element selected for the display was displayed, with characteristics 1=“Very satisfied”, 2=“Satisfied”, 3=“Partly satisfied”, 4=“Not satisfied”.</p>
+</li>
+<li>
+<p>v_6_3: results for the question in the loop condition, in which the third list element selected for the display was displayed, with characteristics 1=“Very satisfied”, 2=“Satisfied”, 3=“Partly satisfied”, 4=“Not satisfied”.</p>
+</li>
+<li>
+<p>v_6_4: results for the question in the loop condition, in which the fourth list element selected for the display was displayed, with characteristics 1=“Very satisfied”, 2=“Satisfied”, 3=“Partly satisfied”, 4=“Not satisfied”.</p>
+</li>
+</ul>
+<h4 id="exporting-and-evaluating-loop-data" class="wysiwyg-text-align-justify"><strong>Exporting and Evaluating Loop Data</strong></h4>
+<p class="wysiwyg-text-align-justify">When loops are used, large amounts of data must be processed. Accordingly, generating the export record will be very time-consuming. Therefore, if you only need specific data, it is recommended that you use the selective export described in the following section. When exporting, please proceed as follows:</p>
+<p class="wysiwyg-text-align-justify">When selecting the export format please note the following: The SPSS export’s variable length is limited to eight characters. With interleaved loops or loops with many pass-throughs, this length can be exceeded. If you wish to export data with SPSS check in projects with complex loops whether the data can be exported subsequently by SPSS as desired before commencing with the survey.</p>
+<ol class="wysiwyg-text-align-justify" start="1">
+<li>
+<p>You can initiate the process from the <strong>Export</strong> menu as usual: first, choose the “Data (all answers)” option.</p>
+</li>
+<li>
+<p>In the next dialog, select the desired basic and advanced options.</p>
+</li>
+<li>
+<p>Tick the checkbox in the “Select data” area.</p>
+</li>
+<li>
+<p>Confirm with <strong>Export</strong>.</p>
+</li>
+<li>
+<p>In the next dialog, select the desired variables. The loop variables are not listed individually: they can be selected or de-selected using the “All loop variables of the questionnaire” option.</p>
+</li>
+<li>
+<p>Confirm with <strong>Export</strong>.</p>
+</li>
+<li>
+<p>Once the file has been generated, you will be notified via e-mail. Clicking on the link contained in the notification mail will take you directly to the download page.</p>
+</li>
+<li>
+<p>In the<strong> Export Tasks</strong> menu, you can check the status of the export job.</p>
+</li>
+<li>
+<p>After clicking on <strong>Copy file

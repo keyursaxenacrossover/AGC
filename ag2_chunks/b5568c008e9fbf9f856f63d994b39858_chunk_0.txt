@@ -1,0 +1,32 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1057128548">https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1057128548</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">Datagroup(Frankfurt)</a></li>
+<ul>
+<li><a href="#header-3">ROM</a></li>
+<ul>
+<li><a href="#header-5">1 . Check the latest builds of the target version:</a></li>
+<li><a href="#header-6">2. Execute the upgrade script in the folder /opt/pdp/rollout2/bin:</a></li>
+<li><a href="#header-7">18.4 auf 19.1</a></li>
+<li><a href="#header-8">19.4 auf 19.5</a></li>
+<li><a href="#header-9">19.5 auf 20.1</a></li>
+<li><a href="#header-10">3. Im Falle von Upgrades</a></li>
+<li><a href="#header-11">4. Check installation</a></li>
+</ul>
+<li><a href="#header-13">NO ROM</a></li>
+</ul>
+<li><a href="#header-15">Procus</a></li>
+<ul>
+<li><a href="#header-17">Update an installation on Procus</a></li>
+<li><a href="#header-18">Upgrade an installation</a></li>
+<li><a href="#header-19">Installation check - Ignoreable errors and warnings</a></li>
+</ul>
+</ul>
+</ul><p>Remember to let our Partner and large customers know beforehand about the Upgrades.</p><h1 id="header-1">Datagroup(Frankfurt)</h1><h2 id="header-3">ROM </h2><p>To update an Installation that currently resides within ROM (directories in htdocs are mostly symlinks), follow these steps:</p><h3 id="header-5">1 . Check the latest builds of the target version:</h3><ul><li><p>helpersEfsGetVersion X.X</p></li></ul><p>Example:</p><p style="margin-left: 30.0px;">MB_19.3_0004,EFS_19.3_0104<br>#testBuilds<br>TEST_19.3_0004_2,EFS_19.3_0106<br>TEST_19.3_0004_2,EFS_19.3_0111<br>TEST_19.3_0004_2,EFS_19.3_0124<br>TEST_19.3_0004_1,EFS_19.3_0133<br>TEST_19.3_0004_1,EFS_19.3_0135</p><h3 id="header-6">2. Execute the upgrade script in the folder <strong>/opt/pdp/rollout2/bin</strong>:</h3><pre><code class="language-text">cd /opt/pdp/rollout2/bin 
+./set_efs_version.sh -c ../etc/rollout2.conf -t TEST -b EFS_19.3 -i /nfs/opstX/ab1234.customervoice360.com -p TEST -n 0004_1 </code></pre><p>Parameters explained:</p><p style="margin-left: 30.0px;">-c → config Pfad<br>-t → type.  Welches BUILD soll genommen werden? TEST, LAST oder MB<br>-b → branch<br>-i → Installationspfad im Beispiel wäre das /nfs/opstX/ab1234.customervoice360.com<br>-p → pin down version to "TEST" or "LAST", mandatory if -t TEST or LAST, not needed if -t MB<br>-n → number (LAST hat keine Nummer).<br>-f → force installation into ROM if it currently is not in ROM</p><p>Im Beispiel 0004_1 für latest TEST. Es kann sein, dass hier mehrere BUILDS mit der gleichen Nummer liegen.</p><p>If so the latest is automatically selected.</p><p></p><h3 id="header-7"><strong>18.4 auf 19.1</strong></h3><ac:rich-text-body><ul><li><p><strong>Upgrading from <span style="color: rgb(255,86,48);">18.4</span> to <span style="color: rgb(255,86,48);">19.1</span> the PHP version changes. The ticket has to be forwarded to Sysadmins again for them to adjust the Cron Jobs!</strong></p></li></ul></ac:rich-text-body><ul>
+<li><p>Check in <a href="http://salt01.bre.globalpark.de/repo/SG.html">Salt</a> if all aliases of this installation are members of service groups running PHP 5.6.x .</p></li>
+<li>
+<p>For the ROM to complete correctly, the config.inc.php3 has to be adjusted for this upgrade.</p>
+<pre><code class="language-bash">cd /nfs/opstXX/ab1234.customerv

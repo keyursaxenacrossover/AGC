@@ -1,0 +1,123 @@
+<h1 id="h_01J3Z2S1JB88C6CK4M690CXGF7">Overview</h1>
+<p><strong>Vendor: </strong><a href="https://www.socketlabs.com/blog/on-premise-email-server/">SocketLabs On-Premises Email Server</a></p>
+<p><strong>Description:</strong></p>
+<blockquote>
+<p><strong>The Hurricane MTA on-premises email Server is a robust and intelligent Mail Transfer Agent (MTA) capable of reliably and efficiently processing high volumes of email around the world. Our on-premises email solution has tons of technology built in enabling our hurricane delivery server to process over 2 million messages per hour with dynamic traffic shaping, feedback loop analysis, bounce handling, automatic suppression lists and much more.</strong></p>
+</blockquote>
+<h1 id="h_01J3Z7QX3CB67N9RB461CWFWN7">Information</h1>
+<ul>
+<li><a href="#hurricane-and-logfiles">Hurricane Activation</a></li>
+<li><a href="#h_01J9P354MQR6W7Q7SWRE9SX96K">IP Addresses in Use</a></li>
+<li>
+<a href="#faq">FAQ</a>
+<ul>
+<li><a href="#retries">Retries</a></li>
+<li><a href="#mail-sending-dates-don-t-match-mailreport-export-and-participant-administration">Mail sending dates don't match (mailreport, export and participant administration)</a></li>
+<li><a href="#additional-details-regarding-the-mail-status-dates">Mail status dates and mail logs</a></li>
+<li><a href="#dispositionscodes">Disposition codes 14/15</a></li>
+<li><a href="#begrenzung">Limitations</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="hurricane-public-ip-addresses-and-ptr-records-and-other-mail-services">Hurricane Activation</h2>
+<p>Hurricane <strong>should be enabled by default</strong> (at least in production (Frankfurt and Rackspace)), so you should not need to enable it. Though, if you have to enable it, here is a how to:</p>
+<ul>
+<li>
+<p>Login into installation using the <strong>root</strong> account</p>
+</li>
+<li>
+<p>Navigate to <strong>System &gt; Options &gt; Platform cockpit &gt; root only:: System configuration</strong></p>
+</li>
+<li>
+<p>set config flags as follows (default values)</p>
+</li>
+</ul>
+<table border=".5" data-layout="default">
+<tbody>
+<tr>
+<th>
+<p><a href="https://it.globalpark.de/twiki/bin/view/Support/TSHurricane?sortcol=0;table=1;up=0#sorted_table">config flag</a></p>
+</th>
+<th>
+<p><a href="https://it.globalpark.de/twiki/bin/view/Support/TSHurricane?sortcol=1;table=1;up=0#sorted_table">value</a></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>hurricane_ad_hoc_password</p>
+</td>
+<td>
+<p>''</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>hurricane_ad_hoc_port</p>
+</td>
+<td>
+<p>1030</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>hurricane_ad_hoc_server</p>
+</td>
+<td>
+<p>'localhost'</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>hurricane_ad_hoc_user</p>
+</td>
+<td>
+<p>''</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>hurricane_snailmail_password</p>
+</td>
+<td>
+<p>''</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>hurricane_snailmail_port</p>
+</td>
+<td>
+<p>1030</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>hurricane_snailmail_server</p>
+</td>
+<td>
+<p>'localhost'</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>hurricane_snailmail_user</p>
+</td>
+<td>
+<p>''</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>use_hurricane_mta</p>
+</td>
+<td>
+<p>true</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="h_01J9P354MQR6W7Q7SWRE9SX96K">IP Addresses in Use</h2>
+<table style="border-collapse: collapse; border-top-style: ; border-top-width: ; border-right-style: ; border-right-width: ; border-bottom-style: ; border-bottom-width: ; border-left-style: ; border-left-width: ; border-image-source: ; border-image-slice: ; border-image-width: ; border-image-outset: ; border-image-repeat: ; background-color: rgb(255, 255, 255);" data-testid="renderer-table" data-number-column="false" data-table-width="1800" data-layout="full-width">
+<thead>
+<tr class="wysiwyg-text-align-center">
+<th class="ak-renderer-tableHeader-sortable-column__wrapper wysiwyg-text-align-center" style="padding: 0px; vertical-align: top; background-color: var(--ds-background-accent-gray-subtlest, var(--ds-background-accent-gray-subtlest

@@ -1,0 +1,46 @@
+ for dynamic dispatch</strong></p>
+<p class="wysiwyg-text-align-justify">In large surveys, mail dispatch is often organized in waves to avoid server overload. The organization of participants in waves is frequently performed manually: In the participant administration, participants are assigned to the respective waves with specific variables or characteristics. To invite a wave, the project manager then looks for the participants with the appropriate value and manually completes the entire mail dispatching process. With <em>EFS</em>, this is not necessary: Instead of manually organizing the participants in different waves to be processed in daily intervals, you simply specify a time frame within which the mails of your mailing action are to be sent. The system will then divide the total amount of mail into portions to be sent out in even distribution across the specified interval.</p>
+<p class="wysiwyg-text-align-justify">You will find the corresponding function in the “Dispatch period for dynamic dispatch” field. Enter the interval in minutes. By default, the field is blank and no distribution is performed.</p>
+<p class="wysiwyg-text-align-justify">The dynamic dispatch function does not override the technical limits of mail dispatch: An <em>EFS</em> installation can process a fixed mail volume every 10 minutes. Per default, the maximum volume is 1,000 emails, up to 2,000 emails are possible. If more emails are generated, they will be queued and processed successively.</p>
+<h3 id="checking-finished-e-mails-and-saving-them-as-templates" class="wysiwyg-text-align-justify"><strong>Checking finished e-mails and saving them as templates</strong></h3>
+<p class="wysiwyg-text-align-justify">The mail preview allows you to check your message to the respondent before finally sending it.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Separate previews are output for text and HTML emails.</p>
+</li>
+<li>
+<p>Both wildcards and line breaks are taken into consideration.</p>
+</li>
+<li>
+<p>You can scroll through the e-mails to the various recipients and check them successively.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Special features of HTML mail in the preview</strong></p>
+<p class="wysiwyg-text-align-justify">E-mails for which the HTML format has been chosen and used according to the instructions in the preceding chapter can only be displayed correctly in the preview if the HTML code used is also XML-compliant. They will, however, be sent in the correct format.</p>
+<p class="wysiwyg-text-align-justify">Any HTML code characters you have entered will be displayed in a masked form. This means that the characters will also be displayed as HTML code. Therefore, they cannot have any impact on, for example, formatting. Before sending, they will be converted to the original tags you entered. Please note that HTML formats in plain text mail cannot be interpreted. Therefore, you must have specified the HTML format for the mail.</p>
+<p class="wysiwyg-text-align-justify"><strong>Passwords in the preview</strong></p>
+<p class="wysiwyg-text-align-justify">The participants’ passwords are not always displayed in the mail preview as clear text, but will be either masked using “*” characters or displayed, depending on the project type and the team the user viewing the data belongs to:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Personalized surveys (PE): If you have read rights for “mail_passwords”, passwords will be displayed in the mail preview. If you do not have read rights, the passwords will be masked using “*”.</p>
+</li>
+<li>
+<p>Employee surveys (ES): The passwords should never be visible in the mail preview.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Saving the e-mail as a mail template</strong></p>
+<p class="wysiwyg-text-align-justify">If you wish to re-use the e-mail at a later stage, simply tick the “Save as mail template (including wildcards)” checkbox below the preview and enter a title for the new template before you confirm by clicking <strong>Send</strong>.</p>
+<h3 id="managing-mail-templates" class="wysiwyg-text-align-justify"><strong>Managing mail templates</strong></h3>
+<p class="wysiwyg-text-align-justify">In the <strong>Libraries</strong> → <strong>Mail templates</strong> menu, you will find an overview of all the mail templates for which you hold access rights along with their most important properties. You have the following editing options:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Create template button</strong>: The dialog for creating a new template will be opened. The other form fields for mail settings and mail text are familiar from the e-mail dispatch.</p>
+</li>
+<li>
+<p>Clickable links in the table and the familiar icons in the “Actions” column allow you to edit individual mail templates:</p>
+<ul>
+<li>
+<p><strong>Description</strong> link: The dialog for editing an existing template will be opened.</p>
+</li>
+<li>
+<p><strong>Status</strong> link: The entries <strong>Active</strong> and <strong>Inactive</strong> in the “Status” column are also clickable links. You can change the status with a click on the respective link: An inactive mail template will no longer be offered in the mail forms.</p

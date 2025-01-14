@@ -1,0 +1,41 @@
+<p><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p>This article explains how to archive survey projects in EFS (Enterprise Feedback Suite). It covers the process of archiving single and multiple projects, as well as important information about the archiving functionality.</p>
+<p> </p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>Archiving survey projects helps to reduce database load by compressing result data into zip files and storing them in a protected area. This guide will walk you through the archiving process and provide essential details about the feature.</p>
+<p> </p>
+<ul>
+<li><a href="#h_01HGKSMPRT0YJQCQ3QXDJ8XBWM">Understanding Project Archiving</a></li>
+<li><a href="#h_01HGKSMPRT8YJXQXQJ0JXCX8WN">Archiving a Single Project</a></li>
+<li><a href="#h_01HGKSMPRTG0YJXQXQJ0JXCX8WP">Archiving Multiple Projects</a></li>
+</ul>
+<p> </p>
+<h2 id="h_01HGKSMPRT0YJQCQ3QXDJ8XBWM">Understanding Project Archiving</h2>
+<p class="wysiwyg-text-align-justify">Survey projects can be archived to reduce database load by compressing the project result data into a zip file, which is then stored in a protected area of the hard disk. This process occurs once a day during low traffic periods, and you will be notified by email after successful archiving. The reactivation function allows you to transfer the project, with or without result data, back to the project list for editing and placement. If you need to delete the result data but want to keep a backup, you can download the zip file and store it locally. As long as the project remains in the EFS installation archive, you can upload the zip file to reactivate the project with its data. Note that the zip file only stores data locally and cannot be used to open or view data outside the EFS installation or to restore a completely deleted project.</p>
+<p> </p>
+<h2 id="h_01HGKSMPRT8YJXQXQJ0JXCX8WN">Archiving a Single Project</h2>
+<h3 id="h_01HGKSMPRTMR0YJXQXQJ0JXCX8WQ">Step 1</h3>
+<p>Find the project to be archived in the project list and click on the title to access the Survey menu.</p>
+<h3 id="h_01HGKSMPRTSR0YJXQXQJ0JXCX8WR">Step 2</h3>
+<p>Click on the links in the To-do field until the Archive link is displayed.</p>
+<h3 id="h_01HGKSMPRTYR0YJXQXQJ0JXCX8WS">Step 3</h3>
+<p>Click on the Archive link.</p>
+<h3 id="h_01HGKSMPRV4R0YJXQXQJ0JXCX8WT">Step 4</h3>
+<p>In the next low traffic period, all data for the project will be backed up from the database, compressed into the downloadable zip file, and then deleted from the database. The archived project with the zip file will be listed in the Archive submenu.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017142450578"></p>
+<p> </p>
+<h2 id="h_01HGKSMPRTG0YJXQXQJ0JXCX8WP">Archiving Multiple Projects</h2>
+<h3 id="h_01HGKSMPRVAR0YJXQXQJ0JXCX8WV">Step 1</h3>
+<p>Search for the appropriate projects in the project list and use the "Actions" checkboxes to mark them.</p>
+<h3 id="h_01HGKSMPRVER0YJXQXQJ0JXCX8WW">Step 2</h3>
+<p>Select the action "Archive projects" from the dropdown menu.</p>
+<h3 id="h_01HGKSMPRVM0YJXQXQJ0JXCX8WX">Step 3</h3>
+<p>Click on the Execute button.</p>
+<h3 id="h_01HGKSMPRVSZ0YJXQXQJ0JXCX8WY">Step 4</h3>
+<p>After a confirmation window, all data for the selected projects will be backed up from the database, compressed into downloadable zip files, and then deleted from the database. The archived projects with their zip files will be listed in the Projects - Archive menu.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017142451858"></p>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="h_01HGKSMPRVY0YJXQXQJ0JXCX8WZ">What permissions do I need to archive projects?</h3>
+<p>The archiving functionality is protected by the ACL right "archive_project".

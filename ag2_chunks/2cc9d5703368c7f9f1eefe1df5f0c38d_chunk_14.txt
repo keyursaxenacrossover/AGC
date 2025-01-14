@@ -1,0 +1,105 @@
+="height: 211px;">
+<td style="height: 211px; width: 128.038px;">
+<p>Sort the order of files</p>
+</td>
+<td style="height: 211px; width: 550.503px;">
+<p>Possible sorting criteria:</p>
+<ul>
+<li>
+<p>Date</p>
+</li>
+<li>
+<p>Title</p>
+</li>
+<li>
+<p># Accesses</p>
+</li>
+</ul>
+<p>Possible sort order:</p>
+<ul>
+<li>
+<p>Ascending</p>
+</li>
+<li>
+<p>Descending</p>
+</li>
+</ul>
+</td>
+<td style="height: 211px; width: 106.007px;">
+<p> </p>
+</td>
+</tr>
+<tr style="height: 67px;">
+<td style="height: 67px; width: 128.038px;">
+<p>Maximum number of files displayed</p>
+</td>
+<td style="height: 67px; width: 550.503px;">
+<p>Limits the length of the display per page. Excess posts are displayed on subsequent pages.</p>
+</td>
+<td style="height: 67px; width: 106.007px;">
+<p> </p>
+</td>
+</tr>
+<tr style="height: 67px;">
+<td style="height: 67px; width: 128.038px;">
+<p>Maximum thumbnail size (pixels)</p>
+</td>
+<td style="height: 67px; width: 550.503px;">
+<p>If you want thumbnails to be displayed, specify a maximum size. If the field is left blank, no thumbnails will be displayed. Up to 300 pixels are possible.</p>
+</td>
+<td style="height: 67px; width: 106.007px;">
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="function-module-change-e-mail" class="wysiwyg-text-align-justify"><strong>Function Module: Change E-Mail</strong></h3>
+<p class="wysiwyg-text-align-justify">It is essential for panel operation that panelists’ e-mail addresses are up-to-date. EFS Panel therefore provides a module that allows you to change e-mail addresses with the help of a form. In the standard panel, you can find such a form on the <strong>Change details → Change e-mail</strong> page, for example</p>
+<p class="wysiwyg-text-align-justify">EFS Panel provides various design options:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>In addition to the input field for the new e-mail address, you can optionally query the old address or request confirmation of the new e-mail address. Both options are used in the standard panel.</p>
+</li>
+<li>
+<p>By changing their e-mail address panelists trigger verification of their e-mail address in the standard panel, i.e. they are sent a confirmation mail.</p>
+</li>
+<li>
+<p>Once the change has been saved a message informs the panelists that they must confirm a verification mail to complete the process.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">In the standard panel, you can use the “func_change_email” template to change the appearance of the change form and change confirmation.</p>
+<p class="wysiwyg-text-align-justify"><strong>Options</strong></p>
+<p class="wysiwyg-text-align-justify">The “Change e-mail” function module offers the following options.</p>
+<table class="wysiwyg-text-align-justify" style="width: 815px; height: 709px;" border="1" data-layout="default" data-table-width="760">
+<colgroup>
+<col style="width: 238.0px;">
+<col style="width: 75.0px;">
+<col style="width: 330.0px;">
+<col style="width: 117.0px;">
+</colgroup>
+<tbody>
+<tr style="height: 80px;">
+<th class="wysiwyg-text-align-center" style="width: 249.74px; height: 80px;" data-highlight-colour="#57d9a3">
+<p><strong>Option</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 81.7535px; height: 80px;" data-highlight-colour="#57d9a3">
+<p><strong>Wildcard</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 347.5px; height: 80px;" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 122.535px; height: 80px;" data-highlight-colour="#57d9a3">
+<p><strong>Standard panel "Change email" page</strong></p>
+</th>
+</tr>
+<tr style="height: 55px;">
+<td style="width: 241.719px; height: 55px;">
+<p>Reference name for template</p>
+</td>
+<td style="width: 73.7326px; height: 55px;">
+<p> </p>
+</td>
+<td style="width: 339.479px; height: 55px;">
+<p>Name that can be used to trigger the module in positioning templates.</p>
+</td>
+<td style="width: 

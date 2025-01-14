@@ -1,0 +1,255 @@
+p>
+</td>
+<td>
+<p><font>Change due to the master data survey</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><font>3</font></p>
+</td>
+<td>
+<p>const MODIFIER_ADMIN</p>
+</td>
+<td>
+<p><font>Change by the admin users</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><font>4</font></p>
+</td>
+<td>
+<p>const MODIFIER_IMPORT</p>
+</td>
+<td>
+<p><font>Change by import</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><font>5</font></p>
+</td>
+<td>
+<p>const MODIFIER_EXTERNAL</p>
+</td>
+<td>
+<p><font>Change by the external</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>6</p>
+</td>
+<td>
+<p>const MODIFIER_API</p>
+</td>
+<td>
+<p><font>Change through the API</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>7</p>
+</td>
+<td>
+<p>const MODIFIER_UPDATE_RULE</p>
+</td>
+<td>
+<p><font>Change by the update rule</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>8</p>
+</td>
+<td>
+<p>const MODIFIER_PROJECT_TEST</p>
+</td>
+<td>
+<p><font>Change by the project test</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>9</p>
+</td>
+<td>
+<p>const MODIFIER_TRIGGER</p>
+</td>
+<td>
+<p><font>Change through the triggers</font></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<h2 id="header-28"><font>Codes for survey_session Table</font></h2>
+<table data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 226.67px;"> <col style="width: 226.67px;"> <col style="width: 226.67px;"> </colgroup>
+<tbody>
+<tr>
+<th>
+<p><u> <font>Meaning</font> </u></p>
+</th>
+<th>
+<p><u> <font>Constant in EFS</font> </u></p>
+</th>
+<th>
+<p><u> <font>Code</font> </u></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>// do not update session expiration time if less than this value (in seconds)</p>
+</td>
+<td>
+<p>UPDATE_THRESHOLD</p>
+</td>
+<td>
+<p><font>10</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Survey session</p>
+</td>
+<td>
+<p>TYPE_SURVEY</p>
+</td>
+<td>
+<p><font>0</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Panel Session</p>
+</td>
+<td>
+<p>TYPE_PANEL</p>
+</td>
+<td>
+<p><font>1</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>preview</p>
+</td>
+<td>
+<p>TYPE_PREVIEW</p>
+</td>
+<td>
+<p><font>2</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>admin session</p>
+</td>
+<td>
+<p>TYPE_ADMIN</p>
+</td>
+<td>
+<p><font>3</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>website</p>
+</td>
+<td>
+<p>TYPE_WEBSITE</p>
+</td>
+<td>
+<p><font>4</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>monitoring (deprecated)</p>
+</td>
+<td>
+<p>TYPE_MONITOR</p>
+</td>
+<td>
+<p><font>5</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>OrgManager<a href="https://it.globalpark.de/twiki/bin/edit/Support/OrgManager?topicparent=Support.StatusCodes"><u>?</u></a></p>
+</td>
+<td>
+<p>TYPE_ORGMAN</p>
+</td>
+<td>
+<p><font>6</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>provider_gui (deprecated)</p>
+</td>
+<td>
+<p>TYPE_PROVIDER</p>
+</td>
+<td>
+<p><font>8</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>project test</p>
+</td>
+<td>
+<p>TYPE_PROJECT_TEST</p>
+</td>
+<td>
+<p><font>10</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><font>report platform</font></p>
+</td>
+<td>
+<p>TYPE_REPORT</p>
+</td>
+<td>
+<p>11</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>mobile_gui</p>
+</td>
+<td>
+<p>TYPE_MOBILE_GUI</p>
+</td>
+<td>
+<p>12</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Diary</p>
+</td>
+<td>
+<p>TYPE_DIARY</p>
+</td>
+<td>
+<p>13</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>SMM</p>
+</td>
+<td>
+<p>TYPE_SMM</p>
+</td>
+<td>
+<p>14</p>
+</td>
+</

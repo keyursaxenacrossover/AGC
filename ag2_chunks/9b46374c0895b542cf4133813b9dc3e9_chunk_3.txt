@@ -1,0 +1,61 @@
+ be customized and used for further differentiation.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">41</p>
+</td>
+<td>
+<p style="text-align: center;">Quota full</p>
+</td>
+<td>
+<p style="text-align: center;">If a quota is full, this status will be assigned to all participants, who match the quota condition, but nevertheless have not started with the survey yet.</p>
+<p style="text-align: center;">If one of these participants tries to log in, then he will be rejected and the disposition code will be set to 35.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">42</p>
+</td>
+<td>
+<p style="text-align: center;">Consent rejected</p>
+</td>
+<td>
+<p style="text-align: center;">The processing of personal data (GDPR) was not agreed.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">43</p>
+</td>
+<td>
+<p style="text-align: center;">Personal data deleted</p>
+</td>
+<td>
+<p style="text-align: center;">The processing of personal data (GDPR) was initially agreed. After participation in the survey, the consent was withdrawn and the personal data deleted.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p>Access to the disposition code of the survey participants is protected with the “show_dispcode” right. If you hold read rights to “show_dispcode”, you can view, use, or export the disposition code in various places of <em>EFS</em>.</p>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq_1">What are disposition codes used for?</h3>
+<p>Disposition codes are used to track the status of participants in a survey field, providing information on whether they have been invited, started the survey, or completed it. This helps in managing and analyzing the progress of your survey.</p>
+<h3 id="faq_2">How are disposition codes assigned?</h3>
+<p>Most disposition codes are assigned automatically based on the participant's progress through the survey. Some codes may require manual assignment, especially for cases that cannot be automatically detected by the system.</p>
+<h3 id="faq_3">Can a participant have multiple disposition codes at once?</h3>
+<p>No, disposition codes are mutually exclusive. A participant can only have one disposition code at any given time.</p>
+<h3 id="faq_4">How can I customize disposition codes?</h3>
+<p>Some disposition codes (e.g., 16, 17, 18, 19, 33, 34, 38, 39, 40) are reserved for customization and can be used for further differentiation of participant statuses. Contact your system administrator or support team for assistance with customization.</p> export the disposition code in various places of <em>EFS</em>.</p>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq_1">What are disposition codes used for?</h3>
+<p>Disposition codes are used to track the status of participants in a survey field, providing information on whether they have been invited, started the survey, or completed it. This helps in managing and analyzing the progress of your survey.</p>
+<h3 id="faq_2">How are disposition codes assigned?</h3>
+<p>Most disposition codes are assigned automatically based on the participant's progress through the survey. Some codes may require manual assignment, especially for cases that cannot be automatically detected by the system.</p>
+<h3 id="faq_3">Can a participant have multiple disposition codes at once?</h3>
+<p>No, disposition codes are mutually exclusive. A participant can only have one disposition code at any given time.</p>
+<h3 id="faq_4">How can I customize disposition codes?</h3>
+<p>Some disposition codes (e.g., 16, 17, 18, 19, 33, 34, 38, 39, 40) are reserved for customization and can be used for further differentiation of participant statuses. Contact your system administrator or support team for assistance with customization.</p>

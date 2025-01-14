@@ -1,0 +1,39 @@
+<h1 id="h_01J6CTSK77ETX6K8XRF9JDT049">Overview</h1>
+<p>This guide addresses the issue of users in Okta who are intended to be federated but may inadvertently have a local password set, leading to potential issues such as password expiration, which can render the user account unusable. </p>
+<p> </p>
+<p>If there is a user that should be federated but that user has a local password in Okta the password might expire and make the user unavailable/unusable.</p>
+<p>To change that a simple Postman or cURL could be used to change the user to a federated user again without a password in Okta.</p>
+<p> </p>
+<pre><code class="language-bash">curl --location --request POST 'https://questback.okta.com/api/v1/users/{OKTA USERID}/lifecycle/reset_password?provider=FEDERATION&amp;sendEmail=false' \
+--header 'Content-Type: application/json' \
+--header 'Accept: application/json' \
+--header 'Authorization: SSWS {OKTA API TOKEN}' \
+--data-raw ''</code></pre>
+<p> </p>
+<p><strong>When does that occur?</strong></p>
+<p>Such users might get created when the federated domains are not correctly set in EFS/Discover XI.</p>
+<p>E.g. someone forgot to put a domain there.</p>
+<p>If that is the case it might be good idea to first fix the settings in the EFS/Discover XI installation and afterwards use this script to fix the users that were synced in a wrong way.</p>
+<div class="panel conf-macro output-block" style="background-color: #eae6ff; border-color: #998dd9; border-width: 1.0px;">
+<div class="panelContent" style="background-color: #eae6ff;">
+<p><strong>When does that occur?</strong></p>
+<p>Such users might get created when the federated domains are not correctly set in EFS/Discover XI.</p>
+<p>E.g. someone forgot to put a domain there.</p>
+<p>If that is the case it might be good idea to first fix the settings in the EFS/Discover XI installation and afterwards use this script to fix the users that were synced in a wrong way.</p>
+</div>
+</div>
+<p>Instance this happened: <a href="https://tivian.atlassian.net/browse/TIVI-11855">TIVI-11855</a></p> ''</code></pre>
+<p> </p>
+<p><strong>When does that occur?</strong></p>
+<p>Such users might get created when the federated domains are not correctly set in EFS/Discover XI.</p>
+<p>E.g. someone forgot to put a domain there.</p>
+<p>If that is the case it might be good idea to first fix the settings in the EFS/Discover XI installation and afterwards use this script to fix the users that were synced in a wrong way.</p>
+<div class="panel conf-macro output-block" style="background-color: #eae6ff; border-color: #998dd9; border-width: 1.0px;">
+<div class="panelContent" style="background-color: #eae6ff;">
+<p><strong>When does that occur?</strong></p>
+<p>Such users might get created when the federated domains are not correctly set in EFS/Discover XI.</p>
+<p>E.g. someone forgot to put a domain there.</p>
+<p>If that is the case it might be good idea to first fix the settings in the EFS/Discover XI installation and afterwards use this script to fix the users that were synced in a wrong way.</p>
+</div>
+</div>
+<p>Instance this happened: <a href="https://tivian.atlassian.net/browse/TIVI-11855">TIVI-11855</a></p>

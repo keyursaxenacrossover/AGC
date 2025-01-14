@@ -1,0 +1,15 @@
+> (to be shared with the customer):<br>
+<pre style="padding: 8px; font-family: SFMono-Regular, Consolas, ' Liberation Mono' , Menlo, Courier, monospace; font-size: 12.025px; color: #2f3941; border-radius: 4px; display: block; margin: 0px; line-height: inherit; word-break: break-all; overflow-wrap: break-word; white-space: pre-wrap; background: #ffffff; border: 1px solid #d8dcde; outline: 0px; vertical-align: baseline; box-sizing: border-box; margin-block: 4px 12px; margin-inline: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><code style="font-family: SFMono-Regular, Consolas, ' Liberation Mono' , Menlo, Courier, monospace; font-size: 12px; color: #2f3941; border-radius: 0px; background: #ffffff; border: 0px; outline: 0px; vertical-align: baseline; box-sizing: border-box; line-height: inherit; white-space: pre-wrap; margin-block: 0px; margin-inline: 2px; padding-block: 0px; padding-inline: 5px; margin: 0px; padding: 0px;">tivian._domainkey.ifo.de IN TXT "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjJgUknIRLfdhjMbvDXxeUh6MQX1ItHXF0OtP557zdWwOQpeNSbRdBVhfmf4WkIVocoelewz+YWtuOeeH7ximR4Mtsuu6ik9vTjoJEl421i9wnkweQHT8zBkSfsPm+6mAldh0ZMMKcyjUf1uM0W2/bt/taszGv3dlFUFHhsJF+yoWBj/YWf1MCfeuM+bo/uw+O2qvAwUEE412+rl0+Y9OyN9kZCiXUC/7anx8tdoKJBWHyww45eAFqBIUCezh56r3YD5XNT3FICTUTkdqZh4EQDRTfqj3hvGN+5j4qY/2GDXHgAJpInSwLWUTgdDZKbMrfMwIWD6e5Hpgfm0xUq08iQIDAQAB"</code></pre>
+</li>
+</ol>
+<h1 id="h_01J6W53E68G48ZDCAH1XV8MHY5">Summary</h1>
+<p>This article provides a step-by-step guide on how to generate a DKIM key for a custom domain using Docker and OpenSSL, and how to add it to the Hurricane MTA server. It also provides instructions on how to test the DKIM setup using mail-tester.com and customervoice360.com.</p>
+<h2 id="h_01J6W53E68919R01S8HT808R6X">FAQ</h2>
+<ol>
+<li>
+<strong>What is a DKIM key?</strong><br>DKIM (DomainKeys Identified Mail) is an email authentication method that allows the receiver to check if the email was actually sent by the domain it claims to be sent from and if the content was tampered with during transit.</li>
+<li>
+<strong>Who is responsible for adding the DKIM record to the DNS settings?</strong><br>The client who manages the domain is responsible for adding the DKIM record to their DNS settings.</li>
+<li>
+<strong>What is an SPF record?</strong><br>An SPF (Sender Policy Framework) record is a type of Domain Name Service (DNS) record that identifies which mail servers are permitted to send email on behalf of your domain.</li>
+</ol>

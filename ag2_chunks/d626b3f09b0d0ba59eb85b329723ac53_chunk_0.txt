@@ -1,0 +1,56 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K">Overview</h1>
+<p>This article explains how to set up automatic reminders and account deactivation for participants in personalized projects and employee surveys. It covers defining reminder and expiry dates, linking mail templates for reminders, and creating rejection messages for expired accounts.</p>
+<p> </p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>Automatic reminders and account deactivation help manage participant engagement in surveys. This guide will walk you through the process of setting up these features to ensure timely responses and efficient survey management.</p>
+<ul>
+<ul>
+<ul>
+<li><a href="#defining-reminder-and-expiry-dates">Defining Reminder and Expiry Dates</a></li>
+<li><a href="#linking-mail-templates-for-reminders">Linking Mail Templates for Reminders</a></li>
+<li><a href="#defining-a-rejection-message-for-expired-accounts">Defining a Rejection Message for Expired Accounts</a></li>
+</ul>
+</ul>
+</ul>
+<h2 id="defining-reminder-and-expiry-dates">Defining Reminder and Expiry Dates</h2>
+<p>You have to define a reminder date and/or an expiry date for each participant. If the date is reached and the participant has not participated yet (i.e. disposition codes 11, 12), either a reminder will be sent automatically or the account will automatically be excluded from participation.</p>
+<p>You can define the reminder or expiry dates</p>
+<ul>
+<li>
+<p>in the fields “Expiry date” and “Date of reminder” in the detailed view of the participants in the Participant administration.</p>
+</li>
+<li>
+<p>when importing the variables “date_of_remind” and “date_of_expire”. Use the format: YYYY-MM-DD HH:MI:SS.</p>
+</li>
+<li>
+<p>when bulk-editing</p>
+</li>
+</ul>
+<p>The system checks once per hour which participants require a reminder or should be deactivated. I.e. these functions are accurate on an hourly basis. Smaller time units cannot be considered.</p>
+<p> </p>
+<h2 id="linking-mail-templates-for-reminders">Linking Mail Templates for Reminders</h2>
+<p>When using the reminder function, you should link to an appropriate mail template:</p>
+<ul>
+<li>
+<p>Create a mail template of the “Reminder” type.</p>
+</li>
+<li>
+<p>Select this template in the field “Mail template for automatic reminders” in the <strong>Projects</strong> → {Selected project} →<strong> Project properties</strong> menu.</p>
+</li>
+</ul>
+<p> </p>
+<h2 id="defining-a-rejection-message-for-expired-accounts">Defining a Rejection Message for Expired Accounts</h2>
+<p>When using the account expiry function, you should create an appropriate rejection message:</p>
+<ul>
+<li>
+<p>Enter the desired message in the field “The time frame for the participant to complete the survey has expired” in the <strong>Projects</strong> → {Selected project} → <strong>Project properties</strong> → <strong>Survey messages</strong> menu.</p>
+</li>
+</ul>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="h_01HGKSMPRT3BJ9QQJX3QXC8ZNM">How often does the system check for reminders and expired accounts?</h3>
+<p>The system checks once per hour for participants requiring reminders or account deactivation. This means the functions are accurate on an hourly basis, and smaller time units cannot be considered.</p>
+<h3 id="h_01HGKSMPRT7BJ9QQJX3QXC8ZNM">Can I set different reminder dates for different participants?</h3>
+<p>Yes, you can set individual reminder dates for each participant using the Participant administration, during import, or through bulk-editing.</p>
+<h3 id="h_01HGKSMPRTKBJ9QQJX3QXC8ZNM">What happens if I don't set a rejection message for expired accounts?</h3>
+<p>If you don't set a custom rejection message, participants with expired accounts may see a generic message or no message at all when trying to access the survey. It's recommended to always set a clear and informative rejection message.</p>

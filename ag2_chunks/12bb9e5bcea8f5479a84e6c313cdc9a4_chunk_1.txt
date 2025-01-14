@@ -1,0 +1,59 @@
+>Visit <a href="https://mxtoolbox.com/dkim.aspx">MX Toolbox DKIM Lookup</a>
+</li>
+<li>Enter your domain</li>
+<li>Use "tivian" or "qb" as the selector</li>
+</ol>
+<h2 id="dmarc">DMARC (Domain-based Message Authentication, Reporting and Conformance)</h2>
+<p>DMARC is a specification developed to reduce email abuse. It builds upon SPF and DKIM.</p>
+<h3 id="h_01J3QC5JPBK0PQYZ4B7D409V4Z">How to check DMARC</h3>
+<ol>
+<li>Visit <a href="https://mxtoolbox.com/DMARC.aspx">MX Toolbox DMARC Lookup</a>
+</li>
+<li>Enter your domain in the search field</li>
+</ol>
+<p><em><strong>Note:</strong> DMARC is only effective when SPF and DKIM are already set up.</em></p>
+<h2 id="whitelisting">Whitelisting</h2>
+<p>Whitelists are positive lists that certify a listed sender with a special reputation and ensure preferential treatment of their emails by email providers.</p>
+<h2 id="blacklisting">Blacklisting</h2>
+<p>Blacklisting involves blocking IP addresses of email addresses that have been classified as spammers due to suspicious behavior. These IP addresses are placed on a blacklist and emails from them are not delivered.</p>
+<h2 id="external-mailserver">External Mailserver</h2>
+<p>Customers can use their own mail server or mailing infrastructure for sending emails. If customers use their own mail server, you can verify this by:</p>
+<ol>
+<li>Finding the following in Globis under 'Modules': use_hurricane_mta hurricane_snailmail_port</li>
+<li>On the installation: <strong>Options &gt; Mail-Admin &gt; Mail-Report</strong> , if the columns <strong>Rejected</strong>, <strong>Not delivered</strong>, <strong>Not reachable</strong> are missing here, then this is also an indication that an external mail server is being used.</li>
+</ol>
+<h3 id="h_01J3QC5JPBH139TA96KRMD6ZTN">How to set up an external mailserver</h3>
+<p>To set up an external mailserver, the customer needs to provide the following information:</p>
+<ul>
+<li>Server/Host</li>
+<li>Port</li>
+<li>Account/User</li>
+<li>Password</li>
+</ul>
+<p>In some instances, the customer mailserver would require some whitelisting of IP's to allow relaying. In this case, you can refer to <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20384907492370" target="_blank" rel="noopener noreferrer">Outgoing NAT IP addresses productive environments</a></p>
+<h2 id="mail-reputation">Mail Reputation</h2>
+<p>You can test the reputation of your emails using tools like <a href="https://www.mail-tester.com">Mail Tester</a>.</p>
+<ol>
+<li>First call up the mail template on the installation: <strong>Preview button (top left) &gt; Send test mail</strong> and enter the mail address specified by the Mail Tester tool here</li>
+<li>Then check the result in the Mail Tester. (The result sometimes takes a while)</li>
+</ol>
+<h2 id="gmail-yahoo-changes">Gmail and Yahoo Changes (February 2024)</h2>
+<p>Starting February 1st, 2024, Gmail and Yahoo will implement mandatory requirements for email authentication and spam prevention. The following was sent to the customers:</p>
+<blockquote>
+<p data-renderer-start-pos="7185">Hi,</p>
+<p data-renderer-start-pos="7190">We hope this message finds you well. We want to bring your attention to critical changes taking place in email authentication and spam prevention protocols by Gmail and Yahoo. Starting from February 1st, 2024, these adjustments will shift from being best practices to mandatory requirements. Non-compliance could lead to email delivery issues for senders.</p>
+<p data-renderer-start-pos="7547">To ensure uninterrupted email delivery, we recommend immediate action on the following key points:</p>
+<ol>
+<li>
+<p data-renderer-start-pos="7650"><strong data-renderer-mark="true">Authenticate your sending domain:</strong> Utilize DKIM and SPF to authenticate your sending domain properly.</p>
+</li>
+<li>
+<p data-renderer-start-pos="7754"><strong data-renderer-mark="true">Set up DMARC:</strong> Implement DMARC to prevent unauthorized entities from impersonating your domain and sending emails.</p>
+</li>
+<li>
+<p data-renderer-start-pos="7871"><strong data-renderer-mark="true">Maintain a low spam complaint rate:</strong> Regularly monitor and manage your spam complaint rate to ensure it remains within acceptable limits.</p>
+</li>
+</ol>
+<p data-renderer-start-pos="7871"><span style="color: #2f3941;">While Tivian manages numerous best practices on your behalf, as the domain owner or customer overseeing email communication, there are specific actions you need to take. We have conducted assessments on the sender domains associated with your account and identified areas that require attention.</span></p>
+<p data-renderer-start-pos="8311">Please have your technical team review the following domains and promptly implement the specified updates to avoid potential issues:</p>
+<p data-renderer-start-pos="8445"><strong data-renderer-mark

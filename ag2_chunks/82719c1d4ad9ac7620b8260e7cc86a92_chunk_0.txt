@@ -1,0 +1,51 @@
+<p><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p>This article covers date calculations in EFS (Enterprise Feedback Suite), focusing on working with dates in MySQL and EFS. It includes information on calculating date differences, determining exact age, and choosing the appropriate date format for calculations and filters.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>This guide provides detailed explanations and examples for performing date-related operations in EFS, including using MySQL functions and handling different date formats.</p>
+<ul>
+<li><a href="#date_difference">Calculating Date Differences with DATEDIFF</a></li>
+<li><a href="#exact_age">Calculating Exact Age</a></li>
+<li><a href="#date_format">Choosing the Right Date Format for Calculations</a></li>
+</ul>
+<h2 id="date_difference">Calculating Date Differences with DATEDIFF</h2>
+<p>When calculating date differences in EFS using MySQL's DATEDIFF function, it's important to use the correct date format and functions.</p>
+<h3 id="h_01J3Q47RPKKH7P8WZ94P2T6WXD">Using DATEDIFF with NOW() and a Date Value</h3>
+<p>MySQL requires dates in the format "YYYY-MM-DD" for the DATEDIFF function. If your date is in a different format (e.g., "DD.MM.YYYY"), you'll need to convert it first.</p>
+<h3 id="h_01J3Q47RPKH4MSDSAYAG4Z2EM8">Converting Date Formats</h3>
+<p>Use the STR_TO_DATE function to convert dates from "DD.MM.YYYY" format to a MySQL-compatible format:</p>
+<pre><code>DATEDIFF(STR_TO_DATE(#u_projektende#, "%d.%m.%Y"), #c_0001#)</code></pre>
+<h3 id="h_01J3Q47RPKD5QE91ENBZVK0YHP">Adding Time Intervals</h3>
+<p>To add time intervals to dates, use the TIMESTAMPADD function:</p>
+<pre><code></code>TIMESTAMPADD(DAY, 1, NOW()) #Here you can define what (e.g. DAY, WEEK etc.) you want to add to Z</pre>
+<p>Note: Using MySQL functions in recoding triggers is an undocumented feature in EFS, and not all functions may be available.</p>
+<h2 id="exact_age">Calculating Exact Age</h2>
+<p>To calculate a person's exact age based on their birth date, use the following formula in a recoding trigger:</p>
+<pre>DATE_FORMAT(NOW(), '%Y') - DATE_FORMAT('#v_1#', '%Y') - (DATE_FORMAT(NOW(), '00-%m-%d') &lt; D DATE_FORMAT('#v_1#', '00-%m-%d')) </pre>
+<p>This formula accounts for whether the birthday has occurred in the current year.</p>
+<p><strong>Explanation:</strong></p>
+<ul>
+<li>The first part determines the current year '%Y' from now(), and subtracts the year from v_1<br><code>DATE_FORMAT(NOW(), '%Y') - DATE_FORMAT('#v_1#', '%Y')</code><br>
+<ul>
+<li>This can be 1 too high if there has not been a birthday in the current year.</li>
+</ul>
+</li>
+<li>The second part checks whether the month and day in the current year are smaller than the month and day of the birthday, if true, then it returns a 1, this is then subtracted from the provisional age from the calculation in the first part and thus the age is corrected by 1 downwards, if wrong, then a zero that would have no effect. (Truth values! 1 true, 0 false)<br><code>- (DATE_FORMAT(NOW(), '00-%m-%d') &lt; DATE_FORMAT('#v_1#', '00-%m-%d'))</code>
+</li>
+</ul>
+<h2 id="date_format">Choosing the Right Date Format for Calculations</h2>
+<p>When working with dates in EFS filters, conditions, or calculations, it's important to use a format that EFS can interpret as numbers. For EFS, 16.06.2023 or 2023- 06-16 or 16/06/2023 is just a string.</p>
+<h3 id="h_01J3Q47RPKP1GMZJZBWT8Y6HER">Unix Timestamps</h3>
+<p>Unix timestamps can be used but are not easily readable:</p>
+<ul>
+<li>2023-06-16 00:00:00 → 1686873600</li>
+<li>2023-06-16 23:59:59 → 1686959999</li>
+</ul>
+<h3 id="h_01J3Q47RPK7VDZYFYE0F24BK46">YYYYMMDD or YYYYMMDDhhmmss Format</h3>
+<p>A more readable alternative is to use YYYYMMDD or YYYYMMDDhhmmss format:</p>
+<ul>
+<li>2023-06-16 00:00:00 → 20230616000000</li>
+<li>2023-06-16 23:59:59 → 20230616235959</li>
+</ul>
+<p><strong>Example filter condition:</strong></p>
+<pre>u_date &gt;

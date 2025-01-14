@@ -1,0 +1,47 @@
+Location: https://nn1980.customervoice360.com/uc/bonprix_pers_2017/?a='.$matches[4].'&amp;b='.$matches[5].'&amp;c='.$matches[6]);
+            die();
+        }
+}</code></pre><p></p><p>another example for logging requests. In this case it was used to investigate SOAP requests.</p><pre><code class="language-text">function custom_routing_plugin($originalUri)
+{
+    // handle all requests for https://www.peng.com/hihi* originaluri everytime include the protocol(e.g.https and a closing Slash)
+
+    //JIRA: https://jira.3uu.de/browse/KANBAN-11837 do not change this if statement only the kanban is solved or there are some other issues
+    // has apparently been taken out. The KANBAN has been closed in the meantime
+
+    // this is for debugging purpose due to case 00889096
+    //if ($_SERVER['HTTP_X_FORWARDED_FOR']=='87.79.30.2'){     //or 87.79.30.37 when connected via office vpn, OLD: REMOTE_ADDR, NEW: HTTP_X_FORWARDED_FOR
+        // actual routing code
+        if (preg_match('/handler=soap/',$originalUri)) {
+                //log complete request into file
+                $logfile = '/nfs/opst/xm2207.customervoice360.com/htdocs/conf/soaplog.txt';
+                $data = file_get_contents( 'php://input' );
+                $spl = NEW SplFileObject($logfile, "a");
+                $spl-&gt;fwrite ( date("Y-m-d H:i:s") . ':: IP :' . print_r($_SERVER['HTTP_X_FORWARDED_FOR'],true) . "\n");
+                $spl-&gt;fwrite ( date("Y-m-d H:i:s") . ':: REQUEST :' . print_r($_REQUEST,true) . "\n");
+                $spl-&gt;fwrite ( date("Y-m-d H:i:s") . ':: GET  :' . print_r($_GET,true) . "\n");
+                $spl-&gt;fwrite ( date("Y-m-d H:i:s") . ':: POST  :' . print_r($_POST,true) . "\n");
+                $spl-&gt;fwrite ( date("Y-m-d H:i:s") . ':: FILE  :' . print_r($_FILE,true) . "\n");
+                $spl-&gt;fwrite ( date("Y-m-d H:i:s") . ':: DATA  :' . print_r($data,true) . "\n");
+                //die(); //the request shall be processed. We only want to have a look.
+        }
+    //}
+
+
+}
+</code></pre><h3 id="header-10">set add}itional headers like HSTS:</h3><p>header("Strict-Transport-Security:max-age=63072000"); header("X-XSS-Protection: 1"); header('X-Content-Type-Options: nosniff');</p><p></p><h3 id="header-11">Projects</h3><p>Das Custom-Routing-Plugin wird genutzt z. B. bei:</p><ul>
+<li><p>unipark</p></li>
+<li><p>SBK</p></li>
+</ul><p></p><p>Pingdom IPs to exclude:</p>spl-&gt;fwrite ( date("Y-m-d H:i:s") . ':: GET  :' . print_r($_GET,true) . "\n");
+                $spl-&gt;fwrite ( date("Y-m-d H:i:s") . ':: POST  :' . print_r($_POST,true) . "\n");
+                $spl-&gt;fwrite ( date("Y-m-d H:i:s") . ':: FILE  :' . print_r($_FILE,true) . "\n");
+                $spl-&gt;fwrite ( date("Y-m-d H:i:s") . ':: DATA  :' . print_r($data,true) . "\n");
+                //die(); //the request shall be processed. We only want to have a look.
+        }
+    //}
+
+
+}
+</code></pre><h3 id="header-10">set add}itional headers like HSTS:</h3><p>header("Strict-Transport-Security:max-age=63072000"); header("X-XSS-Protection: 1"); header('X-Content-Type-Options: nosniff');</p><p></p><h3 id="header-11">Projects</h3><p>Das Custom-Routing-Plugin wird genutzt z. B. bei:</p><ul>
+<li><p>unipark</p></li>
+<li><p>SBK</p></li>
+</ul><p></p><p>Pingdom IPs to exclude:</p>

@@ -1,0 +1,78 @@
+ol>
+<pre><code class="language-text">pip3 install virtualenv</code></pre>
+<ol start="3">
+<li>
+<p>Install <code>virtualenvwrapper</code>:</p>
+</li>
+</ol>
+<pre><code class="language-text">pip3 install virtualenvwrapper</code></pre>
+<ol start="4">
+<li>
+<p>Add the following lines to your shell startup file (<code>~/.bashrc</code>, <code>~/.profile</code>, or <code>~/.zshrc</code>):</p>
+</li>
+</ol>
+<pre><code class="language-text">export WORKON_HOME=$HOME/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/local/python3   # This needs to be the path where python3 is installed
+source /usr/local/bin/virtualenvwrapper.sh</code></pre>
+<ol start="5">
+<li>
+<p>Load the changes you made to your shell startup file. For example, if you added those lines to <code>~/.bashrc</code>, you'd run:</p>
+</li>
+</ol>
+<pre><code class="language-text">source ~/.bashrc</code></pre>
+<ol start="6">
+<li>
+<p>Now, you should be able to create a new virtual environment using <code>mkvirtualenv</code>:</p>
+</li>
+</ol>
+<pre><code class="language-text">mkvirtualenv okta-cli</code></pre>
+<ol start="7">
+<li>
+<p>And you can install the <code>okta-cli</code> tool within this virtual environment:</p>
+</li>
+</ol>
+<pre><code class="language-text">pip install okta-cli</code></pre>
+<p>Then you can start using <code>okta-cli</code> by running:</p>
+<pre><code class="language-text">okta-cli config new</code></pre>
+<p>If you close your terminal and want to use the <code>okta-cli</code> again, you'll need to activate the <code>okta-cli</code> virtual environment again using:</p>
+<p><code>storck@GP-L-0666:~$ workon okta-cli</code></p>
+<h3 id="header-7">Resolving issues during installation</h3>
+<p>If the path to the <code>virtualenvwrapper.sh</code> script in <code>~/.bashrc</code> is not correctly set in your system, try this:</p>
+<p>To find the correct path, you can use the <code>locate</code> command. First, update the <code>locate</code> database:</p>
+<pre><code class="language-text">sudo updatedb</code></pre>
+<p>Then use <code>locate</code> to find <code>virtualenvwrapper.sh</code>:</p>
+<pre><code class="language-text">locate virtualenvwrapper.sh</code></pre>
+<p>This should return the path to <code>virtualenvwrapper.sh</code>. If it doesn't, you may need to reinstall <code>virtualenvwrapper</code>.</p>
+<p>If <code>locate</code> does return a path, replace <code>/usr/local/bin/virtualenvwrapper.sh</code> in your <code>.bashrc</code> file with the correct path and source your <code>.bashrc</code> file again.</p>
+<h2 id="header-9">Quickstart</h2>
+<p>Every more complex function should have help texts available: <code>okta-cli users add -h</code>, or maybe <code>okta-cli users update -h</code> or maybe <code>okta-cli apps add -h</code> ... those are probably the most interesting ones.</p>
+<pre><code class="language-text">$ pip install okta-cli                                # install :)
+$ okta-cli config new \                               # create a new okta profile
+           -n my-profile -\
+           -u https://my.okta.url \
+           -t API_TOKEN
+$ okta-cli users list \                               # search users with a query
+           -f 'profile.email eq "my@email.com"'
+$ okta-cli features list                              # list okta server-side features
+$ okta-cli features enable "Recent Activity"          # enable an Okta feature
+$ okta cli users groups adduser \                     # add a user to a group
+           -g app1_rollout \
+           -u fred.flintstone@flintstones.com
+$ okta-cli apps adduser \                             # assign an app to a user
+           -a my_app_name -u 0109121 \
+           -f profile.employeeId
+$ okta-cli users update id012345678 \                 # update a field of a user record
+           --set profile.email=my@other.email.com
+$ okta-cli users bulk-update update-list.xlsx         # CSV is okay as well :)
+$ okta-cli version                                    # print version and exit
+$ okta-cli users get my-login -vvvvv                  # see http debug output</code></pre>
+<h2 id="header-10">Examples</h2>
+<p>You can get examples using the build-in Okta CLI helper, for commands and subcommands help try:</p>
+<pre><code class="language-text">(okta-cli) storck@GP-L-0666:~$ okta-cli -h
+Usage: okta-cli [OPTIONS] COMMAND [ARGS]...
+
+  Okta CLI helper.
+
+  See subcommands for help: "okta-cli users --help" etc.
+
+  If in doubt start with: "okta-cli

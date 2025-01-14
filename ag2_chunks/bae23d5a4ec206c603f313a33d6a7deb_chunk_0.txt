@@ -1,0 +1,74 @@
+<p><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p>This article provides a comprehensive guide on setting up Azure AD Federation using OpenID Connect. It outlines the steps required to create and configure an App registration in Azure AD for federation with Questback.</p>
+<p> </p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>Azure AD Federation should be set up as an OpenID Connect federation, which is the preferred configuration over SAML. This guide will walk you through the process of creating an App registration in Azure AD and configuring it for use with Questback.</p>
+<p> </p>
+<ul>
+<li><a href="#create_app_registration">Create App Registration</a></li>
+<li><a href="#configure_account_types">Configure Supported Account Types</a></li>
+<li><a href="#add_redirect_uri">Add Redirect URI</a></li>
+<li><a href="#add_permissions">Add Permissions</a></li>
+<li><a href="#add_optional_claims">Add Optional Claims</a></li>
+<li><a href="#create_secret">Create Secret</a></li>
+</ul>
+<p> </p>
+<h2 id="create_app_registration">Create App Registration</h2>
+<p>The first step in setting up Azure AD Federation is to create an App registration in Azure AD.</p>
+<h3 id="step1_create_app">Step 1: Create the App Registration</h3>
+<p>Navigate to the "App Registrations" tab in Azure AD and create a new registration for your application.</p>
+<p> </p>
+<h2 id="configure_account_types">Configure Supported Account Types</h2>
+<p>After creating the App registration, you need to configure the supported account types.</p>
+<h3 id="step2_configure_accounts">Step 2: Set Account Type</h3>
+<p>Configure the Supported Account types to "Only Account from this AD" (single tenant).</p>
+<p>For more information on multi-tenant applications, refer to the <a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-convert-app-to-be-multi-tenant">Azure AD documentation</a>.</p>
+<p> </p>
+<h2 id="add_redirect_uri">Add Redirect URI</h2>
+<p>Adding a redirect URI is crucial for the authentication flow.</p>
+<h3 id="step3_add_uri">Step 3: Add the Redirect URI</h3>
+<p>Add the following redirect URI to the App Registration:</p>
+<p><a href="https://access.questback.com/oauth2/v1/authorize/callback">https://access.questback.com/oauth2/v1/authorize/callback</a></p>
+<p>For Production environments, use the same URI: <a href="https://access.questback.com/oauth2/v1/authorize/callback">https://access.questback.com/oauth2/v1/authorize/callback</a></p>
+<p> </p>
+<h2 id="add_permissions">Add Permissions</h2>
+<p>Proper permissions need to be set for the App Registration to function correctly.</p>
+<h3 id="step4_add_permissions">Step 4: Add UserRead Permission</h3>
+<p>Add the "UserRead" permission to the App Registration. The value should be:</p>
+<p><a href="https://graph.microsoft.com/User.Read">https://graph.microsoft.com/User.Read</a></p>
+<p> </p>
+<h2 id="add_optional_claims">Add Optional Claims</h2>
+<p>Optional claims need to be added to the manifest of the created App Registration.</p>
+<h3 id="step5_add_claims">Step 5: Add Claims to Manifest</h3>
+<p>Add the following optional claims to the manifest of the App Registration:</p>
+<pre><code>"optionalClaims": {
+    "idToken": [
+        {
+            "name": "family_name",
+            "essential": true
+        },
+        {
+            "name": "given_name",
+            "essential": true
+        }
+    ]
+},
+"accessToken": [],
+"saml2Token": []</code></pre>
+<p> </p>
+<h2 id="create_secret">Create Secret</h2>
+<p>A secret is required for secure communication between your application and Azure AD.</p>
+<h3 id="step6_create_secret">Step 6: Create and Store Secret</h3>
+<p>Create a secret for the App Registration and make sure to store it securely. You will need this secret for configuring your application.</p>
+<h3 id="step7_note_client_id">Step 7: Note Client ID</h3>
+<p>Remember to note down the client ID of the App Registration, as you will need it for configuration purposes.</p>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq1">What is the preferred federation method for Azure AD?</h3>
+<p>The preferred federation method for Azure AD is OpenID Connect. While SAML might be possible, it is not the recommended configuration.</p>
+<h3 id="faq2">Why do we need to add optional claims to the manifest?</h3>
+<p>Optional claims, specifically the family_name and given_name, are added to ensure that these user details are included in the token sent by Azure AD. This information is often necessary for user identification and personalization within the application.</p>
+<p> </p>
+<p> </p>
+</article>

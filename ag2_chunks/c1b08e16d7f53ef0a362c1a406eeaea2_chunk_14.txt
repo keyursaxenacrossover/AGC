@@ -1,0 +1,218 @@
+ in the form, and a participant leaves a page using this Back button, this page will be removed from page history.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>hflip</p>
+</td>
+<td>
+<p>hflip</p>
+</td>
+<td>
+<p>hflip</p>
+</td>
+<td>
+<p>Variable for horizontal flipping:</p>
+<ul>
+<li>
+<p>0 = not flipped</p>
+</li>
+<li>
+<p>1 = flipped</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>vflip</p>
+</td>
+<td>
+<p>vflip</p>
+</td>
+<td>
+<p>vflip</p>
+</td>
+<td>
+<p>Variable for vertical flipping:</p>
+<ul>
+<li>
+<p>0 = not flipped</p>
+</li>
+<li>
+<p>1 = flipped</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>javascript</p>
+</td>
+<td>
+<p>javascript</p>
+</td>
+<td>
+<p>jscript</p>
+</td>
+<td>
+<p>Contains the result of the check for JavaScript, which can optionally be performed at the beginning of the survey:</p>
+<ul>
+<li>
+<p>0 = JavaScript switched off</p>
+</li>
+<li>
+<p>Other = Version number (e.g. jscript = “10” for JavaScript 1.0, jscript = “15” for JavaScript 1.5)</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>flash</p>
+</td>
+<td>
+<p>flash</p>
+</td>
+<td>
+<p>flash</p>
+</td>
+<td>
+<p>Contains the result of the check for the Adobe Flash plugin, which can optionally be performed at the beginning of the survey and is required for the Flash question types:</p>
+<ul>
+<li>
+<p>0 = Flash plugin, not available</p>
+</li>
+<li>
+<p>Other=Versionnumber(e.g.flash=“800”forFlashplugin8.0, flash = “900” for Flash plugin 9.0)</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>seesion_id</p>
+</td>
+<td>
+<p>session_id</p>
+</td>
+<td>
+<p>session id</p>
+</td>
+<td>
+<p>Indicates the session ID the participant received during the survey.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>language</p>
+</td>
+<td>
+<p>language</p>
+</td>
+<td>
+<p>language</p>
+</td>
+<td>
+<p>The language in which the respondent has seen the questionnaire.</p>
+<p>The numbers correspond to the language ID (identification number) of the languages used in the project.</p>
+<p>With the wildcard #language# you can display the language ID in the questionnaire or templates. This is particularly important for language-dependent layouts and special programming.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>datacleaning</p>
+</td>
+<td>
+<p>cleaned</p>
+</td>
+<td>
+<p>datacleaning</p>
+</td>
+<td>
+<p>Indicates if the individual record has been cleaned:</p>
+<ul>
+<li>
+<p>0= uncleaned data records and records of incomplete interviews which are excluded from the cleaning process</p>
+</li>
+<li>
+<p>1 = cleaned</p>
+</li>
+<li>
+<p>2 = checked but did not require cleaning</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>dt_begin</p>
+</td>
+<td>
+<p>ats</p>
+</td>
+<td>
+<p>absolute timestamp</p>
+</td>
+<td>
+<p>Indicates the time in seconds elapsed since 01/01/1970 until the request of the first page of the questionnaire).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>dt_begin</p>
+</td>
+<td>
+<p>datetime</p>
+</td>
+<td>
+<p>datetime of survey start</p>
+</td>
+<td>
+<p>Date and time of survey start, i.e. the invoking of the first page of the questionnaire.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>date_of_last_access</p>
+</td>
+<td>
+<p>date_of_last_access</p>
+</td>
+<td>
+<p>date of last access</p>
+</td>
+<td>
+<p>Date and time of the last access to the survey.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>date_of_first_mail</p>
+</td>
+<td>
+<p>date_of_first_mail</p>
+</td>
+<td>
+<p>date of first mail</p>
+</td>
+<td>
+<p>Date and time of the first invitation mail sent to the participant. The variable is used for all project types which include invitation processes, i.e. personalized projects, panel surveys, and master data surveys. In anonymous projects, it is not filled.</p>
+<p>Please mind: <em>date_of_first_access</em> is updated upon resumption.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>sid</p>
+</td>
+<td>
+<p>sample_id</p>
+</td>
+<td>
+<p>sid</p>
+</td>
+<td>
+<p>Only in panel and master data surveys : ID of the sample that the panelists belong in.</p>
+<p>For the SPSS export, the codes are labeled with the sample titles.</p>
+</td>
+</tr

@@ -1,0 +1,59 @@
+follow noreferrer">https://gg9936.customervoice360.com/www</a></p>
+<p><br>The EFS installation would not ask for the email address rather your username.</p>
+<p>Your <strong><em>username</em></strong> is your <strong><em>surname.<br><br></em></strong></p>
+<p><strong><a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21344474790418-Create-EFS-Accounts-via-Shell-Script">Create EFS Accounts via Shell Script</a></strong></p>
+</td>
+</tr>
+<tr style="height: 81px;">
+<td class="wysiwyg-text-align-center" style="width: 20%; padding: 5px; height: 81px;"><strong>Shared Confluence/JIRA user</strong></td>
+<td style="width: 79.8571%; padding: 5px; height: 81px;">
+<p>This is a temp user for accessing the old Confluence/JIRA Tivian instances. </p>
+<p><a href="mailto:tivian-support@trilogy.com">tivian-support@trilogy.com</a> is the user, and the password for it can be found in PasswordState.</p>
+<p>The above user is linked to a Google group to which all of you have access, for password resets and other comms.</p>
+</td>
+</tr>
+<tr style="height: 81px;">
+<td class="wysiwyg-text-align-center" style="width: 20%; padding: 5px; height: 81px;"><strong>Globis</strong></td>
+<td style="width: 79.8571%; padding: 5px; height: 81px;">
+<p>This is an internal central management interface which lists ALL of the available in DXI/EFS. </p>
+<p>Access is provided individually after you finish the training.</p>
+<p><a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21141115929746" target="_blank" rel="noopener noreferrer">Globis New Agents Onboarding and Usage</a></p>
+</td>
+</tr>
+<tr style="height: 44px;">
+<td class="wysiwyg-text-align-center" style="width: 20%; padding: 5px; height: 44px;"><strong>RA-VPN</strong></td>
+<td style="width: 79.8571%; padding: 5px; height: 44px;">
+<p>This is required in order to access BofA instances, which are heavily firewalled and also other instances that require secure access.</p>
+<p>An exception has been added in the firewalls of the below instances for IP <strong>52.6.229.154</strong>:</p>
+<p>Prod-DE-03:</p>
+<ul>
+<li>cp1830 (Citigroup)</li>
+<li>fn1368 (Citigroup)</li>
+</ul>
+<p>Sandbox-DE-02:</p>
+<ul>
+<li>kg8700 (IPSOS: Bank of America)</li>
+<li>yj8306 (Citigroup)</li>
+<li>zy0547 (Citigroup)</li>
+</ul>
+<p>BofA-US-01:</p>
+<ul>
+<li>eq1621 (IPSOS: Bank of America)</li>
+<li>gb8879 (IPSOS: Bank of America)</li>
+<li>zn3837 (IPSOS: Bank of America)</li>
+</ul>
+<p>Request this access via PRF: <a href="https://supportportal-df.atlassian.net/servicedesk/customer/portal/5/group/46/create/81">Access to RA-VPN - Product Requests Fulfilment</a>, and once provided, you can use your AD credentials and <strong>52.6.229.154</strong><strong> </strong>to connect to the server via the <strong>Kerio VPN client</strong>.</p>
+<div class="alert alert-danger" role="alert">IMPORTANT: Only connect when need to access BOFA and then move back to Central VPN; do not keep it as an always-on VPN.</div>
+</td>
+</tr>
+<tr style="height: 51px;">
+<td class="wysiwyg-text-align-center" style="width: 20%; padding: 5px; height: 51px;"><strong>Tivian DXI Service Gateways</strong></td>
+<td style="width: 79.8571%; padding: 5px; height: 51px;">
+<p><a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20971568408338" target="_blank" rel="noopener noreferrer">Creating SSH Public Key for DXI Service Gateways</a>; the actual access is provisioned through a <strong>SaaS CR</strong></p>
+<p><a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21139518716562" target="_blank" rel="noopener noreferrer">How to Access and Work with DXI Service Gateways</a></p>
+</td>
+</tr>
+<tr style="height: 296px;">
+<td class="wysiwyg-text-align-center" style="width: 20%; padding: 5px; height: 208px;"><strong>Grafana</strong></td>
+<td style="width: 79.8571%; padding: 5px; height: 208px;">
+<p>The access is tied to your standard Devfactory AD account. All existing agents should have access already. </p

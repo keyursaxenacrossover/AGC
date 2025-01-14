@@ -1,0 +1,71 @@
+, and subsequently import it into this second department.</p>
+</li>
+<li>
+<p>You want to reuse the entire organizational structure or parts thereof in another project (e.g., in an intermediate survey).</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Before you start</strong></p>
+<p class="wysiwyg-text-align-justify">Please note: Via import you can insert new substructures in already existing structures, change the names of existing units, or update stored numbers. It is not possible, however, to move, merge, or delete existing units via import.</p>
+<h3 id="exporting-modifying-and-reimporting-an-existing-structure" class="wysiwyg-text-align-justify"><strong>Exporting, modifying, and reimporting an existing structure</strong></h3>
+<p class="wysiwyg-text-align-justify">If you want to modify a structure or parts thereof and reuse it elsewhere in the project, please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>You want to check the stored structures and/or numbers or relay these data to third parties for verification.</p>
+</li>
+<li>
+<p>You want to change the names of the units or update already stored numerical values in an already existing structure.</p>
+</li>
+<li>
+<p>You want to reuse parts of the organizational structure elsewhere in the same project. If, for example, two departments have the same or very similar substructures, then you can export the completed substructure of the first department, adjust the names and values for the second department in the export file, and subsequently import it into this second department.</p>
+</li>
+<li>
+<p>You want to reuse the entire organizational structure or parts thereof in another project (e.g., in an intermediate survey).</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Before you start</strong></p>
+<p class="wysiwyg-text-align-justify">Via import, you can insert new substructures in already existing structures, change the names of existing units, or update stored numbers. It is not possible, however, to move, merge, or delete existing units via import.</p>
+<p class="wysiwyg-text-align-justify">If you want users to be able to export return data, you need to assign the right <em>structure_export</em> and/or <em>structure_export_full</em> to the appropriate roles</p>
+<h3 id="exporting-modifying-and-reimporting-an-existing-structure-1" class="wysiwyg-text-align-justify"><strong>Exporting, modifying, and reimporting an existing structure</strong></h3>
+<p class="wysiwyg-text-align-justify">If you want to modify a structure or parts thereof and reuse it elsewhere in the project, please proceed as follows:</p>
+<p class="wysiwyg-text-align-justify"><strong>Exporting</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Locate the desired unit in the organizational structure. Click on the <strong>Actions</strong> icon to open the selection layer and then click on the link <strong>Export to Excel</strong>.</p>
+</li>
+<li>
+<p>Specify the extent of the export data record. The following options are available:</p>
+<ul>
+<li>
+<p>Standard export</p>
+</li>
+<li>
+<p>Standard export and user-defined variables: If you have created additional structure variables (see Chapter 4.4, p. 56), this option may be useful.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Select the character set.</p>
+</li>
+<li>
+<p>Trigger the export process by clicking on <strong>Send</strong>.</p>
+</li>
+<li>
+<p>Save the Excel file to your PC.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If an Excel file is opened on a computer running with Windows 7 and Excel 2007, depending on the circumstances, a message may be displayed that notifies you that the file is corrupted. This problem is caused by an extension provided by a third party supplier. Until further notice, please proceed as follows: Save the file locally. Then, open the saved file, allowing Excel to repair it. Finally, save the file again.</p>
+<p class="wysiwyg-text-align-justify"><strong>Editing the export file</strong></p>
+<p class="wysiwyg-text-align-justify">Edit the export file. Please pay special attention to the following:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The second row, directly under the column labels, contains the reference unit, i.e., the unit under which the new structure is to be imported.</p>
+</li>
+<li>
+<p>The levels are indicated in relation to this reference unit.</p>
+</li>
+<li>
+<p>If you duplicate an already existing substructure in the same project, e.g. in another department or in another structure view, you have to change the meta names. If you do not want to change each meta name by hand, you can use the option “Automatically generate meta name prefixes” when reimporting.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Importing</strong></p>
+<p class="wysiwyg-text-align-justify">Locate the reference unit in the organizational structure, i.e., the unit under which the structure is to be imported. Click on the<strong> Actions</

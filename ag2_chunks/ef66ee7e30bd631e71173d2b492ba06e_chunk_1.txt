@@ -1,0 +1,77 @@
+<td>
+<p>Rules that have been created for that specific user do not apply anymore.</p>
+<p>e.g. MFA, Session times, password policies</p>
+</td>
+<td><p>Every user has as least one company group. These company groups should never be removed.</p></td>
+</tr>
+<tr>
+<td><p>Reset Password</p></td>
+<td><p>Never</p></td>
+<td><p>The user will get a confusing email about a password reset. But this password will never be used.</p></td>
+<td><p>Not suitable for managed users</p></td>
+</tr>
+<tr>
+<td><p>Reset Multifactor</p></td>
+<td><p>In case a user has to changed their device or misconfigured MFA.</p></td>
+<td><p>Multifactor information is removed and the user has to enroll MFA again.</p></td>
+<td><p>Users do not have the chance to reset MFA on their own in the current version of the project.</p></td>
+</tr>
+<tr>
+<td><p>Suspend</p></td>
+<td><p>This should be used in cases a user should not be able to login anymore. e.g. a user is not employee of a company anymore</p></td>
+<td><p>A user is not able to login anymore to any Tivian application.</p></td>
+<td><p>A user might be part of multiple companies (e.g. panelist in one company, admin in another company). In that case suspending the user might not be desired.</p></td>
+</tr>
+<tr>
+<td><p>Deactivate</p></td>
+<td><p>This should only be used if a user is about to be removed.</p></td>
+<td>
+<p>A user not able to login anymore to any Tivian application.</p>
+<p>The user will loose app and group memberships etc.</p>
+</td>
+<td><p>Prefer suspending users.</p></td>
+</tr>
+<tr>
+<td><p>Delete (user has to be deactivated)</p></td>
+<td><p>In case a user should not have access anymore.</p></td>
+<td><p>A user is entirely removed from Okta. Login to all applications with Tivian Access enabled is not possible anymore. The user cannot be restored.</p></td>
+<td>
+<p>First deactivate the user.</p>
+<p>This can also be triggered via script - especially for bulk operations.</p>
+</td>
+</tr>
+<tr>
+<td><p>Assign Application</p></td>
+<td><p>Never</p></td>
+<td><p>No effect - users are assigned to all applications anyway</p></td>
+<td><p>Application assignments are currently not used. Access rights are managed in the respective applications (EFS, Portals).</p></td>
+</tr>
+</tbody>
+</table><p></p> company, admin in another company). In that case suspending the user might not be desired.</p></td>
+</tr>
+<tr>
+<td><p>Deactivate</p></td>
+<td><p>This should only be used if a user is about to be removed.</p></td>
+<td>
+<p>A user not able to login anymore to any Tivian application.</p>
+<p>The user will loose app and group memberships etc.</p>
+</td>
+<td><p>Prefer suspending users.</p></td>
+</tr>
+<tr>
+<td><p>Delete (user has to be deactivated)</p></td>
+<td><p>In case a user should not have access anymore.</p></td>
+<td><p>A user is entirely removed from Okta. Login to all applications with Tivian Access enabled is not possible anymore. The user cannot be restored.</p></td>
+<td>
+<p>First deactivate the user.</p>
+<p>This can also be triggered via script - especially for bulk operations.</p>
+</td>
+</tr>
+<tr>
+<td><p>Assign Application</p></td>
+<td><p>Never</p></td>
+<td><p>No effect - users are assigned to all applications anyway</p></td>
+<td><p>Application assignments are currently not used. Access rights are managed in the respective applications (EFS, Portals).</p></td>
+</tr>
+</tbody>
+</table><p></p>

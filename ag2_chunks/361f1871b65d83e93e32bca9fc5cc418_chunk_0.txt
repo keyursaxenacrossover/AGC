@@ -1,0 +1,48 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3806265373">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3806265373</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">Purpose:</a></li>
+<ul>
+<li><a href="#header-3">Workflows</a></li>
+<ul>
+<li><a href="#header-5">User Import</a></li>
+<li><a href="#header-6">User Creation / Update / Delete</a></li>
+</ul>
+</ul>
+</ul>
+</ul><h1 id="header-1">Purpose:</h1><ul>
+<li><p>Abstract from the specific identity provider implementation</p></li>
+<li><p>Abstract process synchronicity</p></li>
+<li><p>Take users from several sources</p></li>
+<li><p>Handle bulk requests</p></li>
+<li><p>Optimize user synchronizitation</p></li>
+</ul><p></p><h2 id="header-3">Workflows</h2><h3 id="header-5">User Import</h3><ul>
+<li><p>Get user messages from kafka, either bulk or single with import flag set</p></li>
+<li><p>gets import process ID</p></li>
+<li><p>filter users based on the users that already exist in the identy provider and did not receive and update</p></li>
+<li><p>collect users and send them in bulks to the identity provider</p></li>
+<li><p>regularly send back the amount of synced users and also the amount of failed users within this import process ID</p></li>
+<li><p>keep track of rate limits</p></li>
+</ul><p></p><h3 id="header-6">User Creation / Update / Delete</h3><ul>
+<li><p>get user messages from kafka</p></li>
+<li><p>put such requests in a higher priority</p></li>
+<li><p>send back an error in case an error occured</p></li>
+<li><p>send back a success message?</p></li>
+</ul><li><p>Take users from several sources</p></li>
+<li><p>Handle bulk requests</p></li>
+<li><p>Optimize user synchronizitation</p></li>
+</ul><p></p><h2 id="header-3">Workflows</h2><h3 id="header-5">User Import</h3><ul>
+<li><p>Get user messages from kafka, either bulk or single with import flag set</p></li>
+<li><p>gets import process ID</p></li>
+<li><p>filter users based on the users that already exist in the identy provider and did not receive and update</p></li>
+<li><p>collect users and send them in bulks to the identity provider</p></li>
+<li><p>regularly send back the amount of synced users and also the amount of failed users within this import process ID</p></li>
+<li><p>keep track of rate limits</p></li>
+</ul><p></p><h3 id="header-6">User Creation / Update / Delete</h3><ul>
+<li><p>get user messages from kafka</p></li>
+<li><p>put such requests in a higher priority</p></li>
+<li><p>send back an error in case an error occured</p></li>
+<li><p>send back a success message?</p></li>
+</ul>

@@ -1,0 +1,30 @@
+{
+    "id": 20716788651666,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/20716788651666.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20716788651666--Okta-Application-OIDC",
+    "author_id": 369584192734,
+    "comments_disabled": false,
+    "draft": false,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20714711445138,
+    "created_at": "2024-08-12T19:43:35Z",
+    "updated_at": "2024-08-26T12:12:14Z",
+    "name": "[Okta] Application (OIDC)",
+    "title": "[Okta] Application (OIDC)",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-08-26T12:12:10Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075294,
+    "content_tag_ids": [],
+    "label_names": [],
+    "body": "<h1 id=\"h_01J679H7DYK0W1MX19QCQXHEWC\">Information</h1>\n<p>An Application is an instance in Okta that takes care of the connection between the Identity Provider and one application. In conjunction with Authorization Servers it defines the contract between an application and the Identity Provider. Therefore it is the central piece of enabling applications to use the Identity Provider.</p>\n<p> </p>\n<table border=\"1\" data-layout=\"default\">\n<colgroup>\n<col style=\"width: 340.0px;\">\n<col style=\"width: 340.0px;\">\n</colgroup>\n<tbody>\n<tr>\n<th>\n<p><strong>What</strong></p>\n</th>\n<th>\n<p><strong>Explanation</strong></p>\n</th>\n</tr>\n<tr>\n<td>\n<p>Sign on method and platform</p>\n</td>\n<td>\n<p>Open ID Connect → see <a href=\"https://openid.net/connect/\">https://openid.net/connect/</a></p>\n</td>\n</tr>\n<tr>\n<td data-highlight-colour=\"#f4f5f7\">\n<p><strong>General</strong></p>\n</td>\n<td>\n<p> </p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Grant Types</p>\n</td>\n<td>\n<p>Client credentials - NOT IN USE</p>\n<ul>\n<li>\n<strong>Implicit flow:</strong><br>This flow is mostly used for Single Page Applications. It directly delivers tokens to the browser that can be stored temporarily and validated during backend requests.</li>\n<li>\n<strong>Code Flow + Refresh Token:</strong><br>The Code Flow is best suited for scenarios where tokens are managed on a server and not on a client. In this case only the server has the tokens for a user and manages them. The Refresh Token grant will enable the server to get new tokens if the given ones are invalid but the user still has a valid session.</li>\n</ul>\n</td>\n</tr>\n<tr>\n<td>\n<p>Login Redirect URI <strong>***</strong></p>\n</td>\n<td>\n<p>Okta will redirect a user back to this Login URI after the login process. The can be multiple Login URIs. A request to Okta will contain the matching Login URI for selecting the correct redirection. But it has to exactly match.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Logout Redirect URI <strong>***</strong></p>\n</td>\n<td>\n<p>The same as Login Redirect URI but for logout. It can be the same as login but it doesn’t have to be same.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Initiate Login URI</p>\n</td>\n<td>\n<p>Currently not in use</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Client ID</p>\n</td>\n<td>\n<p>This is an identifier used by OIDC to identify a specific application that wants to use the login from Okta. It will be used in all requests to the Identity Provider to match the correct connection.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Client Secret</p>\n</td>\n<td>\n<p>The client secret is only used in code-flow scenarios to create trust between Okta and the application.</p>\n</td>\n</tr>\n<tr>\n<td data-highlight-colour=\"#f4f5f7\">\n<p><strong>Sign On</strong></p>\n</td>\n<td>\n<p> </p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Issuer and Audience</p>\n</td>\n<td>\n<p>Issuer is the one that created the token and audience is the group of entities that is should get access with that token. Both values can be used to check validity of a token.</p>\n</td>\n</tr>\n<tr>\n<td data-highlight-colour=\"#f4f5f7\">\n<p><strong>Assignments</strong></p>\n</td>\n<td>\n<p>Applications can be assigned to groups. Only members of these groups are allowed to access. This is currently not used. See Access and Authorization with IAM module</p>\n</td>\n</tr>\n</tbody>\n</table>\n<p> </p>\n<p><strong>***</strong> If an application corresponds with an EFS installation which is configured for many different domain-aliases, for each such alias the Login Redirect URI / Logout Redirect URI have to be entered manually in OKTA. In case of portal-specific applications the redirect URI will be configured for each domain-alias registered in EFS (Options / Domains) at creation or edit application. The migration script offers an additional option to update all portal-specific applications to get their redirect links up-to-date.</p>\n<p><strong><u>For API Access see: <a href=\"https://developer.okta.com/docs/reference/api/apps/\">https://developer.okta.com/docs/reference/api/apps/</a></u></strong></p>\n<p> </p>\n<p> </p>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

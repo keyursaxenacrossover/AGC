@@ -1,0 +1,82 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3238297630">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3238297630</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">Cases:</a></li>
+<ul>
+<li><a href="#header-3">Case 0</a></li>
+<ul>
+<li><a href="#header-5">Case 1</a></li>
+<ul>
+<li><a href="#header-7">Initial state:</a></li>
+<li><a href="#header-8">Future state:</a></li>
+</ul>
+<li><a href="#header-10">Case 2</a></li>
+<ul>
+<li><a href="#header-12">Initial state:</a></li>
+<li><a href="#header-13">Future state:</a></li>
+</ul>
+<li><a href="#header-15">Case 3</a></li>
+<ul>
+<li><a href="#header-17">Initial state:</a></li>
+<li><a href="#header-18">Future state:</a></li>
+</ul>
+<li><a href="#header-20">Case 4</a></li>
+<ul>
+<li><a href="#header-22">Initial state:</a></li>
+<li><a href="#header-23">Future state:</a></li>
+</ul>
+<li><a href="#header-25">Case 5</a></li>
+<ul>
+<li><a href="#header-27">Initial state:</a></li>
+<li><a href="#header-28">Future state:</a></li>
+</ul>
+<li><a href="#header-30">Case 6</a></li>
+<ul>
+<li><a href="#header-32">Initial state:</a></li>
+<li><a href="#header-33">Future state:</a></li>
+</ul>
+<li><a href="#header-35">Case 7</a></li>
+<ul>
+<li><a href="#header-37">Initial state:</a></li>
+<li><a href="#header-38">Future state:</a></li>
+</ul>
+</ul>
+</ul>
+</ul>
+</ul><p>This document enhances the following ticket with some more detailed information about conflicting user situations - <ac:parameter ac:name="server">Questback</ac:parameter><ac:parameter ac:name="serverId">9f8e3c23-9700-315b-9fb0-65f274062d6e</ac:parameter><ac:parameter ac:name="key">IAM-499</ac:parameter></p><p></p><ac:task-list>
+<ac:task>
+<ac:task-id>58</ac:task-id>
+<ac:task-status>incomplete</ac:task-status>
+<ac:task-body><span class="placeholder-inline-tasks"><ac:link><ri:user ri:userkey="8a7f80856412af8a016412fb8b10003f"></ri:user></ac:link>  clarify if a blacklist for “real” Questback users has to be created (users in the Nordics that are actually part of one of our installations and therefore still need to be kept as @questback.com users)</span></ac:task-body>
+</ac:task>
+</ac:task-list><p></p><h1 id="header-1">Cases:</h1><h2 id="header-3">Case 0</h2><p>The user noreply@questback.com. <strong><span style="color: rgb(255,86,48);">This user will only be changed in EFS and not synchronized to Okta.</span></strong></p><h3 id="header-5">Case 1</h3><p>The normal use case. A current @questback.com user will be converted to a @tivian.com user.</p><div class="expand-macro">
+<h4 string="Case 1"></h4>
+<h4 id="header-7">Initial state:</h4>
+<p><strong><u>EFS - User Table</u></strong></p>
+<table ac:local-id="fbd3a2f9-c96e-43d6-be3a-de85fa56c87d" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p>EFS User ID</p></th>
+<th><p>email</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>11</p></td>
+<td><p>user1@questback.com</p></td>
+<td><p>-</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><u>Okta - User List</u></strong></p>
+<table ac:local-id="68bb5301-4668-4d6e-870a-7a0f83c11084" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67

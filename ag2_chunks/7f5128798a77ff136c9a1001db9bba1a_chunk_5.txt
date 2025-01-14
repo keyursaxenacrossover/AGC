@@ -1,0 +1,65 @@
+>
+<h4 id="is_assigned_in_or_below-check_metaname-metanames" class="wysiwyg-text-align-justify"><em><strong>is_assigned_in_or_below(check_metaname, metanames)</strong></em></h4>
+<p class="wysiwyg-text-align-justify">Checks whether the participant is part of the specified units or subunits in the org-structure of the ES project. Only applicable in Employee survey.</p>
+<p class="wysiwyg-text-align-justify"><em>Data types</em></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>check_metaname <em>string</em> - metaname</p>
+</li>
+<li>
+<p>metanames <em>array</em> - list of metanames the participant is assigned to</p>
+</li>
+<li>
+<p>returns <em>bool</em></p>
+</li>
+</ul>
+<h4 id="is_assigned_in-check_value-codes" class="wysiwyg-text-align-justify"><em><strong>is_assigned_in(check_value, codes)</strong></em></h4>
+<p class="wysiwyg-text-align-justify">Checks whether the participant's metaname code is assigned to the given unit metanames (array of codes). Only applicable in Employee survey.</p>
+<p class="wysiwyg-text-align-justify"><em>Data types</em></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>check_value <em>string</em> - metaname</p>
+</li>
+<li>
+<p>codes <em>array</em> - array of codes</p>
+</li>
+<li>
+<p>returns <em>bool</em></p>
+</li>
+</ul>
+<h4 id="is_assigned_in_branch-check_metaname-metanames" class="wysiwyg-text-align-justify"><em><strong>is_assigned_in_branch(check_metaname, metanames)</strong></em></h4>
+<p class="wysiwyg-text-align-justify">Checks whether the participant is assigned in part of specified units branch. Only applicable in Employee survey.</p>
+<p class="wysiwyg-text-align-justify"><em>Data types</em></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>check_metaname <em>string</em> - metaname</p>
+</li>
+<li>
+<p>metanames <em>array</em> - array of metanames the participant is assigned to</p>
+</li>
+<li>
+<p>returns <em>bool</em></p>
+</li>
+</ul>
+<h4 id="check_character_filter_any-needle-haystack" class="wysiwyg-text-align-justify"><em><strong>check_character_filter_any(needle, haystack)</strong></em></h4>
+<p class="wysiwyg-text-align-justify">Checks whether the needle string is in the list provided in the haystack list of strings. Strings in haystack may be delimited by |, ",", ; or -.</p>
+<p class="wysiwyg-text-align-justify"><em>Data types</em></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>needle <em>string</em></p>
+</li>
+<li>
+<p>haystack <em>string</em></p>
+</li>
+<li>
+<p>returns <em>bool</em></p>
+</li>
+</ul>
+<h4 id="date-format-time" class="wysiwyg-text-align-justify"><em><strong>date([format [, time]])</strong></em></h4>
+<p class="wysiwyg-text-align-justify">Replaces os.date() and returns a string or a table containing date and time, formatted according to the given string format. Please refer to <a href="https://www.lua.org/manual/5.1/manual.html#pdf-os.date">os.date documentation</a>.</p>
+<h4 id="time-table" class="wysiwyg-text-align-justify">time([table])</h4>
+<p class="wysiwyg-text-align-justify">Replaces os.time() and returns the current time when called without arguments, or a time representing the date and time specified by the given table. Please refer to <a href="https://www.lua.org/manual/5.1/manual.html#pdf-os.time">os.time documentation</a>.</p>
+<h2 id="examples-for-lua-in-efs" class="wysiwyg-text-align-justify"><strong>Examples of LUA in EFS</strong></h2>
+<h3 id="block-specific-ips-from-accessing-a-survey-using-a-lua-filter" class="wysiwyg-text-align-justify">Block specific IPs from accessing a survey using an LUA filter</h3>
+<p class="wysiwyg-text-align-justify">If you have a manageable list of IPs, that you want to block from accessing your survey, you can use a LUA filter to screen out these participants. This example code blocks the IPs 78.34.112.1, 78.34.112.2, and 78.34.112.3 and the list can be extended by providing additional comma-separated IPs. The last item should not have a comma after it.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015359142546" alt="Screenshot 2019-03-14 at 13

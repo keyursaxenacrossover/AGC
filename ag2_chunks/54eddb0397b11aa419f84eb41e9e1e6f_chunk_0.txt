@@ -1,0 +1,60 @@
+<h1 id="h_01J6W63JTT7AF3QM0KYY9TNWZ5">Overview</h1>
+<p>Globis is the Tivian DXI system used to centralize all DXI installations. In Globis you can find all the information required for an instance in order to troubleshoot and access it. Therefore, it is mandatory that agents have access to it.</p>
+<h1 id="h_01J6W63FXFM4S0DKKV20Y3R70W">Onboarding New Agents</h1>
+<p>Each agent will need their own account in Globis, as the login is session-based and having a shared user will mean that each new login will invalidate the previous login.</p>
+<p>Follow the below steps to add a new user to Globis:</p>
+<ol>
+<li>Login to Globis via the URL <a href="https://globis.3uu.de/">https://globis.3uu.de/</a> and the root user documented in PasswordState.</li>
+<li>(Optional) Duplicate the browser tab</li>
+<li>(Optional) In one browser tab, go to <strong>Staffer &gt; Staff List</strong> and select Ciprian's account to view its Team config and mirror it to the new account</li>
+<li>In the other tab, go to <strong>Staffer &gt; Add new Staff</strong> account and configure the new account:
+<ol>
+<li>
+<strong>Account details:</strong><br>Account name (*)<br>First Name (*)<br>Last Name (*)<br>e-mail (*)<br>Password (*)<br>Password (second entry) (*)</li>
+<li>
+<strong>Team configuration:</strong>
+<ol>
+<li>GLOBIS-Team (Minimalrechte)</li>
+<li>Mitarbeiter Globalpark GmbH</li>
+<li>Supporter</li>
+<li>Support-Aktiv</li>
+<li>SupportSecondLevel</li>
+<li>SupportFirstLevel</li>
+<li>TicketSystem</li>
+</ol>
+</li>
+<li>Set Primary Team to <strong>SupportFirstLevel</strong><br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21141115918226" width="578" height="228">
+</li>
+<li>Click <strong>Create Account</strong>
+</li>
+</ol>
+</li>
+<li>Once the account is created, Riga needs to be accessed so that the agent is able to <strong>Create New Installation</strong>
+<ol>
+<li><strong>This is, for now, reserved only to legacy Tivian resources; once this gap is filled, we will update this runbook accordingly.</strong></li>
+</ol>
+</li>
+<li>Share the account and password with the new agent via G-chat or privnote (or any other similar service)</li>
+</ol>
+<h1 id="h_01J7G4R00TSPF0S761TBG5APEA">Using Globis</h1>
+<p>Globis will be your go-to system when receiving any DXI/EFS ticket. This is because it centralizes all of the customer instance information, and you will therefore use it to identify customer instance details and organizations.</p>
+<h2 id="h_01J7G4TQREK5DFC8A73A4SAWEM">Finding instance/customer details</h2>
+<ol>
+<li>After logging into Globis, you will be by default redirected to the <strong>Installations</strong> screen</li>
+<li>In here, use the <strong>Search in all fields</strong> option in order to conduct your search<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21299524484498" width="418" height="210">
+</li>
+<li>In this field, you can search for instance <strong>technical names</strong> (eg: tx3689), <strong>customer names</strong> (Payback) and even <strong>module names</strong> to identify instances that have specific modules enabled<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21299507861650" width="422" height="138">
+</li>
+<li>However, <span class="wysiwyg-underline"><strong>this field will not return results</strong></span> if what you are searching for are <strong>organizations nested in shared installation.</strong>
+</li>
+</ol>
+<h2 id="h_01J7G53GNC7QNAPGQMM7EWPYH3">Finding organizations in shared installations</h2>
+<p>While this may not be an often request, you may still get it, usually from the BU, asking for instance URL's, based on a customer list. As mentioned above, organizations will not appear in the installations search, so whenever you are not finding a customer name in the installations list, you will need to:</p>
+<ol>
+<li>Click on <strong>Overview organisations</strong>
+</li>
+<li>Search for the customer name that didn't show up above and voila!<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21299524487698"><br><br>
+</li>
+</ol>
+<p><strong>Note:</strong> If you are failing to find a specific installation, you can also check the <strong>Deleted installations</strong> from the same menu:</p>
+<p class="wysiwyg-text-align-center"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/

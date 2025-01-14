@@ -1,0 +1,89 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1054965869">https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1054965869</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">Activation</a></li>
+<ul>
+<li><a href="#header-3">Dependencies</a></li>
+<li><a href="#header-4">Basic information:</a></li>
+<li><a href="#header-5">Making a portal available in the app:</a></li>
+<li><a href="#header-6">Accessing a portal on a smartphone or tablet:</a></li>
+<li><a href="#header-7">Push Notifications:</a></li>
+<li><a href="#header-8">Other general information:</a></li>
+</ul>
+<li><a href="#header-10">Portals Limits and other settings</a></li>
+<ul>
+<li><a href="#header-12">Survey image not shown in portal survey list</a></li>
+<li><a href="#header-13">Discussion board can not be viewed by panelist</a></li>
+<li><a href="#header-14">How many portal participants are online?</a></li>
+<ul>
+<li><a href="#header-16">How can I log in as a panelist?</a></li>
+</ul>
+</ul>
+</ul>
+</ul><ac:layout><ac:layout-section ac:breakout-mode="default" ac:type="two_equal"><ac:layout-cell><p></p></ac:layout-cell><ac:layout-cell><ac:image ac:align="center" ac:layout="center" ac:src="https://it.globalpark.de/twiki/pub/Support/SupportEFSPortals/stinking-with-portals.jpg" ac:width="340"><ri:url ri:value="https://it.globalpark.de/twiki/pub/Support/SupportEFSPortals/stinking-with-portals.jpg"></ri:url></ac:image></ac:layout-cell></ac:layout-section><ac:layout-section ac:breakout-mode="default" ac:type="fixed-width"><ac:layout-cell><h1 id="header-1">Activation</h1>
+<h2 id="header-3">Dependencies</h2>
+<p> Other modules needed by Portals: </p>
+<ul><li><p><ac:link><ri:page ri:content-title="EFS Panel" ri:version-at-save="5"></ri:page><ac:link-body>EFS Panel</ac:link-body></ac:link></p></li></ul>
+<p>To activate Portals, the following steps need to be done:</p>
+<ul>
+<li>
+<p>set config variables with root account in the admin area:</p>
+<ul><li>
+<p><em>modules</em>:</p>
+<ul>
+<li><p>add "library"</p></li>
+<li><p>add "portal"</p></li>
+</ul>
+</li></ul>
+</li>
+<li>
+<p>execute healself on the server</p>
+<ul>
+<li><p>i [installation]</p></li>
+<li><p>cd www</p></li>
+<li><p>php support/healself.php</p></li>
+</ul>
+</li>
+<li>
+<p>create a new portal and set it to "Online", delete the portal afterwards</p>
+<ul><li><p>This needs to be done so that the SCSS get's compiled for the first time and we avoid having the customer to expirience broken CSS</p></li></ul>
+</li>
+<li>
+<p>update installation in Globis</p>
+<ul>
+<li><p>add the module <strong>portal</strong> under modules</p></li>
+<li><p>add an update: "Activated portal (case [case ID])"</p></li>
+</ul>
+</li>
+</ul>
+<h2 id="header-4">Basic information:</h2>
+<ul>
+<li>
+<p>App gateway:</p>
+<ul>
+<li><p><a href="http://appgw.customervoice360.com/login">appgw.customervoice360.com/login</a> or <a href="http://appgw.customervoice360.com/admin">appgw.customervoice360.com/admin</a></p></li>
+<li><p>user: root</p></li>
+<li><p>password: default root password</p></li>
+</ul>
+</li>
+<li>
+<p>App name in app store:</p>
+<ul>
+<li>
+<p>iOS:</p>
+<ul><li><p>Portals: your gateway to the world of feedback, Questback GmbH<a href="https://it.globalpark.de/twiki/bin/edit/Support/GmbH?topicparent=Support.SupportEFSPortals">?</a></p></li></ul>
+</li>
+<li>
+<p>Android:</p>
+<ul><li><p>Portals (you easily can find it by searching for "Questback")</p></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+<p></p>
+<h2 id="header-5">Making a portal available in the app:</h2>
+<ul>
+<li><p>Login to <a href="http://appgw.customervoice360.com/login">appgw.customervoice360.com/login</a></p></li>
+<li><p>Create a new Applink</p

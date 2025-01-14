@@ -1,0 +1,84 @@
+iam/admin/auth/logoutSuccess (technical domain, exept if the installation has a domain redirect from technical to an alias in place, then alias domain)</p>
+<p><em><strong>iam_proxy_url</strong>:</em> Ask IT second level support (most likely http://proxy:8080, exept AWS: <a href="http://squid.global-services.svc.cluster.local:8080">http://squid.global-services.svc.cluster.local:8080</a>) → <u>also see below</u></p>
+<p><em><strong>iam_redirect_url</strong>:</em> &lt;domain and protocol&gt;/iam/admin/auth/login also see EFS Admin Setup (technical domain, exept if the installation has a domain redirect from technical to an alias in place, then alias domain)</p>
+<p><em><strong>iam_support_email</strong>:</em> The mail address of whoever will be answering questions regarding Tivian Access</p>
+<p><em><strong>iam_sso_modules:</strong></em> Adapt whether Tivian Access should be enabled for EFS Admin only or Portals too</p>
+<p><em><strong>iam_unique_customer_name:</strong></em> A unique name of the client that is also used for other Okta resources (see Naming conventions in Okta)</p>
+<p><em><strong>iam_user_group_id:</strong></em> This is the group ID of the client (the non-installation-specific one). It has to be created beforehand (Groups → ID in URL) (see General Tenant Setup).</p>
+<p><em><strong>iam_well_known_url</strong>: </em>The metadata URL that is proposed in the Authorization Server in Okta (Security → API → Edit → Metadata URI) also see Authorization Server</p>
+<p> </p>
+<h3 id="header-7">Setp 4: Migrate admin users via script</h3>
+<p>This step is used to migrate admin users. The “iam_federated_domains” option has to be set here already to the correct final domain set.</p>
+<ul>
+<li>
+<p>Login to the console of the installation to start the migration script.</p>
+</li>
+<li>
+<p>Navigate to the “www“-folder of the installation.</p>
+</li>
+<li>
+<p>Execute the migration script in “support/iam/migration.php“.</p>
+</li>
+<li>
+<p>Chose “Admin user migration”</p>
+</li>
+<li>
+<p>Check if that worked (this is a good point in time to test with a client if everything works)</p>
+</li>
+</ul>
+<h3 id="header-8">Step 5: Set IdentityAccessManager Module active</h3>
+<p><strong>Values:</strong></p>
+<p><em><strong>iam_module_active</strong>:</em> true (<strong>Caution:</strong> Enable this as soon as all other settings are correct! This will enable SSO. Only the root user can bypass the Okta login after this point.)</p>
+<p> </p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013437730962" alt="Screenshot_2019-12-19 Options.png"></p>
+<p> </p>
+<h3 id="header-9">Step 6: Activate admin users via script</h3>
+<p>The IAM module is now activated. But the respective admin users that are not part of the external IdP have to be activated to login.</p>
+<ul>
+<li>
+<p>Login to the console of the installation to start the migration script.</p>
+</li>
+<li>
+<p>Navigate to the “www“-folder of the installation.</p>
+</li>
+<li>
+<p>Execute the migration script in “support/iam/migration.php“.</p>
+</li>
+<li>
+<p>Chose “Admin user activation“</p>
+</li>
+</ul>
+<h3 id="header-10">Step 7: Kill all activte sessions to avoid relogin after logout</h3>
+<ul>
+<li>
+<p>execute scipt: /www/support/iam/clearSessions.php</p>
+</li>
+<li>
+<p>error that idp_tokens does not exist can be ignored</p>
+</li>
+</ul>
+<h3 id="header-11">Step 8: OPTIONAL - Migrate portals applications, Panelists and EFS Admin users with installation group ID</h3>
+<p>If the installation was setup with IAM in <strong>19.5</strong> this migration is mandatory. It will assign all users (EFS Admin users and Panelists) from the current installation to the installation specific group set in the EFS configuration.</p>
+<ul>
+<li>
+<p>Login to the console of the installation to start the migration script.</p>
+</li>
+<li>
+<p>Navigate to the “www“-folder of the installation</p>
+</li>
+<li>
+<p>Execute the migration script in “support/iam/migration.php”</p>
+</li>
+<li>
+<p>Chose “Portal ClientGroup migration“ - wait until done</p>
+</li>
+<li>
+<p>Execute the migration script again</p>
+</li>
+<li>
+<p>Chose “User ClientGroup migration“</p>
+</li>
+</ul>
+<p> </p>
+<h3 id="header-12">Sync “Exclusion” (iam_federated_domains)</h3>
+<p>Users from EFS will be synced to Okta. A synced user will be created in Okta and will get an activation e-mail. The link in the activation e-mail will navigate the user to a page where

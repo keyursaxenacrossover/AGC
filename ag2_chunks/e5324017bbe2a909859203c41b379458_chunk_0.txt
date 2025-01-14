@@ -1,0 +1,58 @@
+<h1 id="h_01J6EVVA2AJ3RD8CNY7VHDBRPA">Overview</h1>
+<p>This article serves as a comprehensive FAQ for Identity and Access Management (IAM), addressing common questions and clarifying key concepts related to authentication, authorization, and identity management.</p>
+<p> </p>
+<h2 id="h_01J6ERPNK6MEKHAM6TFWYV2FGK">Table of Contents</h2>
+<ul>
+<li><a href="#header-3">General</a></li>
+<li><a href="#header-4">Tivian Access- Business</a></li>
+<li><a href="#header-5">Tivian Access- Technical</a></li>
+<li><a style="background-color: #ffffff;" href="#header-7">Migration</a></li>
+<li><a href="#header-8">Security</a></li>
+<li><a href="#header-9">Integrations</a></li>
+<li><a href="#header-10">Customizations and Configurations</a></li>
+<li><a href="#header-11">Multi-factor Authentication</a></li>
+<li><a href="#header-12">Troubleshooting: As it happens</a></li>
+</ul>
+<p><em>**Some information might be outdated-- use it as a reference only.</em></p>
+<p> </p>
+<h2 id="header-3">General</h2>
+<p><strong>What is TivianAccess?</strong></p>
+<p>Tivian Access is a product of the Tivian portfolio that enables a rich feature-set in the field of Identity Management and Authentication. Part of that are Single Sign On (see Single Sign On (SSO)) multi-factor authentication (see Multi Factor Authentication MFA) and federation (see Federated Authentication (Federation)). It is a SaaS solution that is not tightly coupled to a single Tivian product. Also see https://qbdocs.atlassian.net/wiki/spaces/IAM for some high level information, Development for technical information and Marketing for information that could be used for sales.</p>
+<p> </p>
+<p><strong>What purpose does Tivian Access serve?</strong></p>
+<p>Tivian Access deals with Identity Management. It offers an Identity Provider solution for products of the Tivian universe to our clients. Main goal of the Tivian Access project is to enable a single SaaS solution that serves the purpose of authentication and management of identity data. See above for some features that are supported.</p>
+<p> </p>
+<p><strong>What is the focused group of clients?</strong></p>
+<p>The focused group of clients are companies having their own IdP solution, that are using EFS Admin (with survey and other modules) and Portals.</p>
+<p>The focus is also put on cases with managed users. (also see Business Decisions)</p>
+<p> </p>
+<p><strong>What client profiles are supported?</strong></p>
+<p>Clients that want to leverage the benefits of Tivian Access should fulfill the following set of requirements (also see Business Decisions):</p>
+<ul>
+<li>
+<p>Organizations having their own established Identity Provider on cloud</p>
+</li>
+<li>
+<p>Organizations having their on premise infrastructure with ADFS</p>
+</li>
+<li>
+<p>Organizations who doesn’t have Single sign on yet but would like to get on-boarded to Tivian Access</p>
+</li>
+</ul>
+<p><strong>Who is our Identity Provider?</strong></p>
+<p>For the current solution we chose Okta as our Identity Provider. The website of Okta could be found <a href="https://www.okta.com/">here</a>. If there are any questions regarding the Identity Provider decision ask (or possibly or ). For technical documentation regarding the Identity Provider have a look at Okta or ask or .</p>
+<p> </p>
+<p><strong>Which applications are supported?</strong></p>
+<p>Currently EFS Admin Portals and the Data Voyager are the supported applications.</p>
+<p>Essentials can also be used with Tivian Access, but this was only tested once and never used in a production setup.</p>
+<p>see Business Decisions</p>
+<p> </p>
+<p><strong>Which groups of users are affected?</strong></p>
+<p>Only EFS Admin users and Panelists are in scope of the current IAM project status. Therefore only these users are affected by the current solution and only these users will benefit from SSO features. (also see Business Decisions )</p>
+<p> </p>
+<h2 id="h_01J6EX5HNDPHA8C0YXN5V2EQ6E"> </h2>
+<h2 id="header-4">Tivian Access - Business</h2>
+<h4 id="How-is-authorization-handled-/-How-do-users-get-access-to-an-installation?" data-renderer-start-pos="28"><strong data-renderer-mark="true">How is authorization handled / How do users get access to an installation?</strong></h4>
+<p data-renderer-start-pos="104">Authorization will be handled by the respective applications. </p>
+<p data-renderer-start-pos="217">E.g: For EFS Admin that means that users still have to be added as an admin user in the installation before a user can login via Tivian Access (Okta) and gain access.</p>
+<h4 id="How/When-can-Tivian-support-employees-access-installations-using-Tivian-Access-

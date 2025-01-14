@@ -1,0 +1,30 @@
+{
+    "id": 21140364670866,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/21140364670866.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21140364670866-How-to-Access-and-Work-with-MariaDB-on-DXI-Service-Gateways",
+    "author_id": 377518684840,
+    "comments_disabled": false,
+    "draft": false,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20635898698130,
+    "created_at": "2024-09-03T15:04:11Z",
+    "updated_at": "2024-09-04T12:32:39Z",
+    "name": "How to Access and Work with MariaDB on DXI Service Gateways",
+    "title": "How to Access and Work with MariaDB on DXI Service Gateways",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-09-04T12:32:38Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075274,
+    "content_tag_ids": [],
+    "label_names": [],
+    "body": "<h3 id=\"h_01J6W66SZH3NCE1DW2CR0SMVBZ\">Overview</h3>\n<p>This guide explains how to access and work with a MariaDB database hosted on a DXI service gateway. The process includes connecting to the gateway, locating the relevant instance, and running SQL commands to retrieve information. </p>\n<p> </p>\n<h3 id=\"h_01J6W66SZHRFNTBECW62WQDART\">Solution</h3>\n<p>Follow these steps to access and work with the MariaDB database on a DXI service gateway:</p>\n<h4 id=\"h_01J6W66SZHJ4V2VFFQVMZ7WKY6\">Step 1: Connect to the Service Gateway</h4>\n<ol>\n<li>\n<a href=\"https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21139518716562-How-to-Access-and-Work-with-DXI-Service-Gateways\"><strong>Access the relevant service gateway</strong></a> where the DXI installation is hosted.</li>\n<li>\n<strong>Source the bashhelper script</strong> to set up the environment. You have 2 options here:\n<ol>\n<li>Update the bashrc file for your profile - this is <strong>preferred</strong>, because you only need to do it once in each gateway:\n<ol>\n<li>Navigate to your home folder: <code>cd ~</code>\n</li>\n<li>Edit your bashrc file: <code>vi .bashrc</code>\n</li>\n<li>Navigate to the bottom of the file and press <strong>I</strong> on your keyboard to enter the <strong>INSERT</strong> mode</li>\n<li>Add the below line all the way to the bottom of the file:<br><code>source /nfs/techsupport/bashhelperstsforaws/EFS_TS_bashhelpers.sh</code>\n</li>\n<li>Press Escape on your keyboard to exit INSERT mode</li>\n<li>Type in <code>:wq</code> to save and exit</li>\n<li>Only this time, you need to run <code>source .bashrc</code>, as the next time that you login, the configuration will be automatically applied</li>\n</ol>\n</li>\n<li>If you didn't choose option one, everytime that you need to run helperscripts, you will need to run the following command upon login:\n<div class=\"dark bg-gray-950 contain-inline-size rounded-md border-[0.5px] border-token-border-medium\">\n<pre class=\"overflow-y-auto p-4\" dir=\"ltr\"><code class=\"!whitespace-pre hljs language-bash\"><span class=\"hljs-built_in\">source</span> /nfs/techsupport/bashhelperstsforaws/EFS_TS_bashhelpers.sh\n</code></pre>\n</div>\n</li>\n</ol>\n</li>\n</ol>\n<h4 id=\"h_01J6W66SZHTKZ6KXHNNG37W7C9\">Step 2: Find and Connect to the Instance</h4>\n<ol>\n<li>\n<strong>Use the <code>i</code> command</strong> followed by the technical name of the instance to locate the installation. Replace <code>&lt;Technical_NAME&gt;</code> with the actual instance name:\n<div class=\"dark bg-gray-950 contain-inline-size rounded-md border-[0.5px] border-token-border-medium\">\n<div class=\"overflow-y-auto p-4\" dir=\"ltr\"><code class=\"!whitespace-pre hljs language-bash\">i &lt;Technical_NAME&gt;  <span class=\"hljs-comment\"># Example: i eh3582</span>\n</code></div>\n</div>\n</li>\n<li>\n<strong>Navigate to the <code>htdocs</code> directory</strong> of the installation. The command above will automatically place you in this directory.<img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21140364644114\">\n</li>\n</ol>\n<h4 id=\"h_01J6W66SZH3MN77YTGE81C6JSQ\">Step 3: Log in to the Database</h4>\n<ol>\n<li>\n<strong>Run the <code>efslogin</code> command</strong> to connect to the MariaDB database:\n<div class=\"dark bg-gray-950 contain-inline-size rounded-md border-[0.5px] border-token-border-medium\">\n<div class=\"overflow-y-auto p-4\" dir=\"ltr\"><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21140364646034\"></div>\n</div>\n</li>\n</ol>\n<h4 id=\"h_01J6W66SZHBM0G5ZBFSMMGVH8M\">Step 4: Execute SQL Commands</h4>\n<ol>\n<li>\n<strong>Run SQL queries</strong> to retrieve the information you need. For example, to find tables related to a survey with PID 1349, use the following SQL command:\n<div class=\"dark bg-gray-950 contain-inline-size rounded-md border-[0.5px] border-token-border-medium\">\n<pre class=\"overflow-y-auto p-4\" dir=\"ltr\">MariaDB [opst_eh1958]&gt; SHOW TABLES LIKE '%1349%';</pre>\n</div>\n</li>\n</ol>\n<h3 id=\"h_01J6W6HA9SRQD4JF3K3QVCHAX1\"><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21140394390162\"></h3>\n<p> </p>\n<h1 id=\"h_01J6W66SZHHQ8HAFA541CR8PYJ\">FAQ</h1>\n<p><strong>What Should I do if the <code>i</code> command fails?</strong></p>\n<p>Please make sure that you have sourced the <strong>bashhelper </strong>script.</p>\n<p><strong>How do I find the correct Technical Name to use in the <code>i</code> command?</strong><br>The Technical Name is usually provided in your project documentation. If you don't have it, you may need to consult with your technical lead or administrator.</p>\n<p><strong>What should I do if the <code>efslogin</code> command fails?</strong><br>Verify that you are in the correct <code>htdocs</code> directory and that the instance is running. If the problem persists, check your connection or consult your system administrator.</p>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

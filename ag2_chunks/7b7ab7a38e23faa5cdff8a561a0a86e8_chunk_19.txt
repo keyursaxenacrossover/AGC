@@ -1,0 +1,178 @@
+ element</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Shift + left arrow key</p>
+</td>
+<td>
+<p>move shape 10/1 pixel to the left</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Shift + right arrow key</p>
+</td>
+<td>
+<p>move the shape 10/1 pixel to the right</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Shift + upwards arrow key</p>
+</td>
+<td>
+<p>move shape 10/1 pixel upwards</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Shift + downwards arrow key</p>
+</td>
+<td>
+<p>move shape 10/1 pixel downwards</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Del</p>
+</td>
+<td>
+<p>delete selected shape</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Strg + A</p>
+</td>
+<td>
+<p>select all</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Strg + C</p>
+</td>
+<td>
+<p>copy</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Strg + V</p>
+</td>
+<td>
+<p>insert</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Strg + Z</p>
+</td>
+<td>
+<p>undo</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Strg + Shift + Z</p>
+</td>
+<td>
+<p>redo</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p>This option may be dependent on the browser you are using, therefore not all shortcut keys may be available for every browser.</p>
+<p><strong>Detail configuration of the fallback image</strong></p>
+<p>In the case that participants do not have JavaScript installed a fallback image will be displayed instead. Go to the section <strong>Detail configuration fallback image </strong>for further configurations.</p>
+<p>In most cases, default settings will be adequate.</p>
+<h3 id="suggestions">Suggestions</h3>
+<p>Suggestions for improvements on chosen topics can now be easily collected in a survey by equipping it with the new <em>Ideation</em> matrix question type, which has a catchy input mask. Participants first enter a title in a separate line before they enter the suggestion in the user-defined text field. </p>
+<p>Make the following settings:</p>
+<ul>
+<li>
+<p>Show counter</p>
+</li>
+<li>
+<p>Counter pattern</p>
+</li>
+<li>
+<p>Title label</p>
+</li>
+<li>
+<p>Description label</p>
+</li>
+<li>
+<p>Description row count</p>
+</li>
+<li>
+<p>Add button</p>
+</li>
+<li>
+<p>Remove button</p>
+</li>
+<li>
+<p>Close button</p>
+</li>
+<li>
+<p>Animation type on opening</p>
+</li>
+<li>
+<p>Animation duration on opening</p>
+</li>
+<li>
+<p>Animation type on closing</p>
+</li>
+<li>
+<p>Animation duration on closing</p>
+</li>
+</ul>
+<p>Three text fields are preset. If you want to add more, you must add dimensions in the configuration. The title bar and description text field each contain a v_ variable.</p>
+<h2 id="sliders">Sliders</h2>
+<p>Sliders are used to collect nuanced statements. Typical use cases include the evaluation of a company, an employee, or the agreement with statements e.g. on a scale from 1 to 10.</p>
+<h3 id="silders">Sliders</h3>
+<h4 id="base-elements-18">Base Elements</h4>
+<ul>
+<li>
+<p>Question text</p>
+</li>
+<li>
+<p>Fill-in instruction</p>
+</li>
+<li>
+<p>Help text</p>
+</li>
+<li>
+<p>Scale options 1-m</p>
+</li>
+<li>
+<p>Display field for selected scale value</p>
+</li>
+</ul>
+<p><strong>Please note:</strong></p>
+<ul>
+<li>
+<p>This question type requires that the respondents have JavaScript activated. <em>EFS</em> affords you the option of checking for JavaScript before the start of the questionnaire and filtering out unsuitable respondents.</p>
+</li>
+<li>
+<p>The coding of answers corresponds to the coding of a standard matrix (311).</p>
+</li>
+<li>
+<p>Variables are initially preset with the slider’s initial position code. If the start position of the slider is not predefined and the participant sees the slider but does not move it, code “0” will be assigned. This is the standard behavior of all question types.</p>
+</li>
+<li>
+<p>You can define the position of the scale and the labels. If necessary, elements such as e.g. the scale labels can be hidden, too. But please mind that: Similar to other matrix question types, a scale with at least one scale option must be specified, even if you do not display the labels. The slider cannot function without a scale.</p>
+</li>
+<li>
+<p>Which number of scale options that can be reasonably displayed depends on the user-defined width of the slider bar.</p>
+</li>
+<li>
+<p>The labels of the scale options are transformed into graphics.</p>
+<ul>
+<li>
+<p>Please note that it may not be possible to convert characters of non-European languages properly.</p>
+</li>
+<li>
+<p>It is not

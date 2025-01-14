@@ -1,0 +1,39 @@
+iam_post_logout_redirect_url</p></td>
+<td><p style="text-align: center;">-</p></td>
+</tr>
+<tr>
+<td><p>iam_proxy_url</p></td>
+<td><p style="text-align: center;">-</p></td>
+</tr>
+<tr>
+<td><p>iam_redirect_url</p></td>
+<td><p style="text-align: center;">-</p></td>
+</tr>
+<tr>
+<td><p>iam_show_error_as_json</p></td>
+<td><p style="text-align: center;">-</p></td>
+</tr>
+<tr>
+<td><p>iam_sso_modules</p></td>
+<td><p style="text-align: center;">-</p></td>
+</tr>
+<tr>
+<td><p>iam_unique_customer_name</p></td>
+<td><p style="text-align: center;">-</p></td>
+</tr>
+<tr>
+<td><p>iam_user_group_id</p></td>
+<td><p style="text-align: center;">yes</p></td>
+</tr>
+<tr>
+<td><p>iam_well_known_url</p></td>
+<td><p style="text-align: center;">yes</p></td>
+</tr>
+</tbody>
+</table><h2 id="header-7">5. swap iam_reference tables</h2><p>login to installation db with efslogin -moe </p><pre><code class="language-text">RENAME TABLE iam_portal_settings TO backup_iam_portal_settings; 
+RENAME TABLE iam_portal_settings_transferred TO iam_portal_settings; 
+RENAME TABLE iam_portal_user_reference TO backup_iam_portal_user_reference; 
+RENAME TABLE iam_portal_user_reference_transferred TO iam_portal_user_reference; 
+RENAME TABLE iam_user_reference TO backup_iam_user_reference; 
+RENAME TABLE iam_user_reference_transferred TO iam_user_reference;</code></pre><ac:parameter ac:name="panelIcon">:warning:</ac:parameter><ac:parameter ac:name="panelIconId">atlassian-warning</ac:parameter><ac:parameter ac:name="bgColor">#FF8F73</ac:parameter><ac:rich-text-body><p>this is an important step as all changes done so far are stored within the _transferred tables and wont take place unless you swap them with the live tables</p></ac:rich-text-body><h2 id="header-8">6. re-activate SSO module </h2><pre><code class="language-text">helpersEfsChangeConfig iam_module_active 1</code></pre><p>or in system configuration set ‘iam_module_active’ back to 1</p><h2 id="header-9">7. run final test </h2><p>if a testuser is at hand, try to login in inkognito mode to the installation or contact the customer or tivian support supervisor to ask them run a test, you can verify their successful login by checking the OKTA sys log:</p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20717178649618" alt="image-20220503-160634.png"><p></p> TABLE iam_user_reference TO backup_iam_user_reference; 
+RENAME TABLE iam_user_reference_transferred TO iam_user_reference;</code></pre><ac:parameter ac:name="panelIcon">:warning:</ac:parameter><ac:parameter ac:name="panelIconId">atlassian-warning</ac:parameter><ac:parameter ac:name="bgColor">#FF8F73</ac:parameter><ac:rich-text-body><p>this is an important step as all changes done so far are stored within the _transferred tables and wont take place unless you swap them with the live tables</p></ac:rich-text-body><h2 id="header-8">6. re-activate SSO module </h2><pre><code class="language-text">helpersEfsChangeConfig iam_module_active 1</code></pre><p>or in system configuration set ‘iam_module_active’ back to 1</p><h2 id="header-9">7. run final test </h2><p>if a testuser is at hand, try to login in inkognito mode to the installation or contact the customer or tivian support supervisor to ask them run a test, you can verify their successful login by checking the OKTA sys log:</p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20717178649618" alt="image-20220503-160634.png"><p></p>

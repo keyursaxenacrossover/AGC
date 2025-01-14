@@ -1,0 +1,55 @@
+li>
+<li>
+<p>Select the option “Create and allocate master data”.</p>
+</li>
+<li>
+<p>This will prompt a dialog where you can specify the variable name, the title of the master data item, and the master data category. Please follow the rules for the naming of master data; in particular, the variable name must begin with m_ or md_.</p>
+</li>
+<li>
+<p>Confirm by clicking on <strong>Save</strong>.</p>
+</li>
+</ul>
+<h2 id="controlling-the-transfer-procedure-for-unseen-questions"><strong>Controlling the transfer procedure for unseen questions</strong></h2>
+<p>Depending on which information is contained in a project variable and in which situation this variable is filled, you may not always want to transfer the contents into the master data table but only if the panelists have actually answered a question.</p>
+<p>If, for example, the panelists’ occupations have already been collected in the master data survey and are collected again in a subsequent panel survey, you only want to transfer the contents if the panelists did actually see the question. Otherwise, you would overwrite an existing value with a missing value and lose information.</p>
+<p>In <em>EFS</em> you are free to decide for each individual allocation whether the transfer shall take place even for unseen questions. This is done via the feature “Master data transfer only if seen”, the status of which is indicated in the allocations table. You can change the settings by selecting the corresponding actions:</p>
+<ul>
+<li>
+<p>Yes: The values “NULL” and “-77” will not be transferred. Variables with a value of “0” (e.g. unanswered items in multiple response questions) will be transferred.</p>
+</li>
+<li>
+<p>No: All values are transferred.</p>
+</li>
+</ul>
+<h2 id="transferring-master-data-manually"><strong>Transferring master data manually</strong></h2>
+<p>Depending on the type and situation of the survey, it may be necessary to transfer master data manually.</p>
+<ul>
+<li>
+<p>In master data surveys, the data are usually transferred automatically as soon as a panelist reaches the final page (i.e when disposition code 31, 32 is assigned). Nonetheless, an additional manual transfer may be necessary, for example, if you wish to transfer the data of incomplete surveys into the master data table as well. If you want to introduce a new variable or need to correct an allocation, the transfer may have to be repeated manually as well.</p>
+</li>
+<li>
+<p>In panel surveys, the master data transfer is usually triggered manually. Optionally, you may also select automatic transfer. To do so, select the option “After each participation (immediately)” in the field “At what point of time shall survey result data be transferred to master data variables?” of the <strong>Project properties</strong> menu.</p>
+</li>
+</ul>
+<p>To trigger the master data transfer manually, please proceed as follows:</p>
+<ul>
+<li>
+<p>Click on the <strong>Execute master data transfer</strong> button.</p>
+</li>
+<li>
+<p>In the subsequent dialog, the transfer can optionally be restricted to panelists with specific disposition codes.</p>
+</li>
+<li>
+<p>Confirm by clicking on<strong> Execute transfer.</strong></p>
+</li>
+<li>
+<p>The confirmation message will tell you whether a transfer took place and how many panelists were affected.</p>
+</li>
+</ul>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="h_01HGKSMPRTKBJXR5QJXP7YDWM">Can loops be used in master data and panel surveys?</h3>
+<p>Yes, loops can be used in master data and panel surveys. However, data collected in those loops cannot be used as master data and cannot be transferred via master data transfer.</p>
+<h3 id="h_01HGKSMPRTNDJXS6QJXP8YDWN">What happens if there are differences in data type or number of characteristics between project variables and master data?</h3>
+<p>If there are differences in data type or the number of characteristics, a red status icon with a corresponding message will appear in the "Status" column of the allocations table, indicating a problem with the allocation.</p>
+<h3 id="h_01HGKSMPRTQFJXT7QJXP9YDWO">Can master data transfer be automated for panel surveys?</h3>
+<p>Yes, master data transfer can be automated for panel surveys. To do so, select the option "After each participation (immediately)" in the "Project properties" menu under the field "At what point of time shall survey result data be transferred to master data variables?"</p>

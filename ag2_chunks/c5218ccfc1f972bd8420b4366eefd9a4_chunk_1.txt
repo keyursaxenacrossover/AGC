@@ -1,0 +1,32 @@
+5">Accessibility</h3>
+<p>Further features have been implemented to improve the accessibility of <em>Portals</em>. After opening, pop-ups and dialogs will be focused directly. If the dialog does not contain input fields but buttons, the confirmation button will be focused. If the dialog contains an input field, the first available input field will be focused. If the dialogs have no interactive elements, the main content area will be focused. Dialogs can be closed by pressing the <strong>Esc</strong> key.</p>
+<p>In the guide setup, a header will be displayed so that participants and groups can be read out by the screen reader. By pressing the <strong>Return</strong> key, the result of the participant and group search is directly applied.</p>
+<p>In the detail view of the Action Ticket, you can use the <strong>Tab</strong> key to move from left to right and from top to bottom. The first element to focus will be the <strong>Close</strong> button.</p>
+<h3 id="header-6">Portal switch</h3>
+<p>The <em>Portal switch</em> is used to access different portals in the exterior view. In the CMS area of <em>Portals</em>, you have to define the portals between which users can switch. From now on, the <em>Portal switch</em> can also be used via the HTML module and Javascript code.</p>
+<h3 id="header-7">Information</h3>
+<p>This feature must be configured by <em>TIVIAN</em>, please contact us for further information.</p>
+<h3 id="header-8">Allowed Domains: <em>Portal invitation</em> and <em>Groups</em>
+</h3>
+<p>The domains defined on the <strong>Access Permissions</strong> tab under the <strong>Allowed Domains</strong> menu item will apply to the <em>Portals</em> page modules <em>Portal invitation </em>and <em>Groups</em>. Only the e-mail addresses that have allowed domains can be used to invite participants.</p>
+<h3 id="header-9">External participants and voting phase</h3>
+<p>The <em>admitted temporarily </em>status is conferred on the participants who have not been panelists yet. As soon as the voting phase starts, these participants will reveice an invitation e-mail. By clicking on the link the participants will not land on the voting page, but they will have to log on a registration page.</p>
+<h2 id="header-11">Guides enhancements (US- and ME-Guide)</h2>
+<p>Participants can subsequently be added to a <em>Team-Improvement-Guide</em> and<em> Leadership Guide</em>.</p>
+<h3 id="header-13">Adding participants subsequently</h3>
+<p>You can now add participants to an ongoing guide survey. The participants list has the new <strong>Add a participant</strong> button. You can search for individual panelists via e-mail address. The subsequently added participants will receive an invitation to participate in a guide, the results mail (depending on the setting selected for the guide) and the reminder mails (depending on the setting selected for the guide). The participants will be added to a group (depending on the initial setting of the guide). The participant limits still apply.</p>
+<p>It is not possible to add participants in a leadership survey if a company managed group is used.</p>
+<h2 id="header-15">Team-Improvement-Guide (US-Guide)</h2>
+<p>For the <em>Team Improvement Guide</em> (US-Guide), minor improvements have been implemented to make it easier to re-start a guide wave.</p>
+<h3 id="header-17">Ask the group again</h3>
+<p>The questions asked on the first guide wave will be used again if you restart this guide wave. Further questions can be added. Prerequisites are that the additional questions are available for this guide, that the additional questions have been set to active by the guide initiator, and that the previous guide wave has ended. Then click <strong>Ask this group again</strong>.</p>
+<h3 id="header-18">Information</h3>
+<p>The <strong>Ask this group again</strong> button will not be displayed if the selected group is no longer available.</p>
+<h2 id="header-20">Leadership-Guide (ME-Guide)</h2>
+<p>The participant list has a new e-mail delivery status:<em> pending</em>. Reports are now available in several languages and in two file formats.</p>
+<h3 id="header-22">The participant list</h3>
+<p>Further improvements have been added to the participants list. The <em>pending</em> e-mail delivery status has been added. Participants are grouped and displayed according to the rater groups from which they were taken. If groups are selected, they will also be displayed as groups.</p>
+<h3 id="header-23">Created actions</h3>
+<p>The number of suggestions that are created as actions on the <em>Action Board</em> depends on the votes. The following examples help to illustrate this:</p>
+<p>Each of the ten suggestions will poll 10 votes → 10 suggestions will be transferred to the <em>Action Borad</em> and 10 actions will be created.</p>
+<p>One of the ten suggestions will poll 10 votes, one suggestion will poll 8 votes, 3 suggestions will poll 5 votes and the rest of the ten suggestions will poll only one vote → 5 suggestions will be transferred to

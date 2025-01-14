@@ -1,0 +1,30 @@
+{
+    "id": 20716979892754,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/20716979892754.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20716979892754-Research-Allow-editing-email-addresses-with-Questback-Access",
+    "author_id": 369584192734,
+    "comments_disabled": false,
+    "draft": false,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20714711445138,
+    "created_at": "2024-08-12T20:01:33Z",
+    "updated_at": "2024-08-27T11:26:41Z",
+    "name": "Research: Allow editing email addresses with Questback Access",
+    "title": "Research: Allow editing email addresses with Questback Access",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-08-27T11:26:27Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075294,
+    "content_tag_ids": [],
+    "label_names": [],
+    "body": "<h1 id=\"h_01J69S6B9GNAD2ZHC6W72WD6F1\">Overview</h1>\n<p>When integrating Questback Access with EFS (Enterprise Feedback System), challenges may arise related to managing user email addresses, especially when dealing with Identity Provider (IdP) mastered data. Specifically, the issue lies in the inability to edit email addresses when the data is controlled by an external IdP. This guide explores two potential solutions to allow for email address editing while maintaining data integrity across systems.</p>\n<p> </p>\n<h2 id=\"h_01J69S91Y5VGCD8YD891VX6Q5P\">Problem Definition</h2>\n<ul>\n<li>\n<strong>Current Situation</strong>:\n<ul>\n<li>\n<strong>EFS to Okta Synchronization</strong>: Data synchronization from EFS to Okta is functional.</li>\n<li>\n<strong>Problem</strong>: The challenge exists between Okta and customer IdPs, where email addresses are often used as unique identifiers. This creates difficulties in editing email addresses within Questback Access when the user data is mastered by an external IdP.</li>\n</ul>\n</li>\n</ul>\n<h2 id=\"h_01J69S91Y5FZS7QX0F2JZQWEEQ\">Solution Options</h2>\n<p><strong>Option 1: IdP Mastered Data</strong></p>\n<ul>\n<li>\n<p><strong>Change unique identifier between app and Okta</strong></p>\n</li>\n<li>\n<p>Data is always updated from IdP Data</p>\n</li>\n<li>\n<p><strong>Changes from apps to Okta are not possible for IdP Users</strong></p>\n</li>\n<li>\n<p>Other users are not affected</p>\n</li>\n<li>\n<p>Users have to be flagged if they are IdP mastered or not</p>\n</li>\n</ul>\n<p><strong>Option 2: Ignore IdP Changes</strong></p>\n<ul>\n<li>\n<p><strong>Change unique identifier between app and Okta</strong></p>\n</li>\n<li>\n<p><strong>Ignore changes from IdP</strong>, only data in Questback universe can be updated</p>\n</li>\n</ul>\n<p> </p>\n<p><u>Options 1: Details:</u></p>\n<ul>\n<li>\n<p>Change EFS/Portals to not use the email address as identifier</p>\n</li>\n<li>\n<p>Create a Unique Identifier field in the Okta profile</p>\n</li>\n<li>\n<p>Change Identity Provider do be the profile master</p>\n</li>\n<li>\n<p>Change Identity Provider to not use the email but another external unique identifier as identifier for Okta users</p>\n</li>\n<li>\n<p>Prevent changes of profile (first name, last name, email) for Portals and EFS for IdP mastered EFS installations</p>\n</li>\n<li>\n<p>Possibly have a migration plan</p>\n</li>\n<li>\n<p>Make email-address changable in EFS/Portals</p>\n</li>\n</ul>\n<p> </p>\n<p><u>Option 2: Details:</u></p>\n<ul>\n<li>\n<p>Change EFS/Portals to not use the email address as identifier</p>\n</li>\n<li>\n<p>Create a Unique Identifier field in the Okta profile</p>\n</li>\n<li>\n<p>Change Identity Provider to not use the email but another external identifier as identifier for OKta</p>\n</li>\n<li>\n<p>Make email-address changable ni EFS/Portals</p>\n</li>\n</ul>\n<p> </p>\n<h1 id=\"h_01J69S6T6SGY6CX3RQKMY13QYE\">FAQ</h1>\n<ol>\n<li>\n<p><strong>Why can’t email addresses be edited with the current setup?</strong></p>\n<ul>\n<li>When an IdP masters user data, email addresses are often used as unique identifiers, preventing edits within systems like Questback Access.</li>\n</ul>\n</li>\n<li>\n<p><strong>What is the benefit of using a unique identifier instead of an email address?</strong></p>\n<ul>\n<li>Using a unique identifier allows flexibility in managing user profiles, including the ability to change email addresses without affecting the unique identity of the user in the system.</li>\n</ul>\n</li>\n<li>\n<p><strong>What are the risks of ignoring IdP changes?</strong></p>\n<ul>\n<li>Ignoring changes from the IdP could lead to inconsistencies between the IdP and Okta, which might cause issues with user authentication and data synchronization.</li>\n</ul>\n</li>\n</ol>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

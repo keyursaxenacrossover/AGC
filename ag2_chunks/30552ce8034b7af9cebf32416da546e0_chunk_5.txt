@@ -1,0 +1,138 @@
+p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Algorithm for creating the external variable names</p>
+</td>
+<td>
+<p>The external variable names can be uniformly labeled according to a predefined pattern.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="login-options" class="wysiwyg-text-align-justify"><strong>Login Options</strong></h2>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 197.0px;"> <col style="width: 167.0px;"> <col style="width: 396.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Project type</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Login type</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Description</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Personalized survey</p>
+</td>
+<td>
+<p>E-mail and password</p>
+</td>
+<td>
+<p>Participants receive a link and a password - usually via e-mail. Clicking on this link will open a login window, into which the respondents must enter their e-mail address and password.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p> </p>
+</td>
+<td>
+<p>Code</p>
+</td>
+<td>
+<p>A code is a personalized survey password that is attached to a link. Clicking on the link will take the respondent directly to the survey, bypassing the login window (if the code is valid).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p> </p>
+</td>
+<td>
+<p>Password</p>
+</td>
+<td>
+<p>For this login procedure, respondents must enter their password into a login form.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Anonymous survey</p>
+</td>
+<td>
+<p>No restriction on access</p>
+</td>
+<td>
+<p>Respondents click on a link <a href="http://www.mydomain.com/uc/">http://www.mydomain.com/uc/</a><br>survey/ or the link is opened in the pop-up window by Java-<br>Script. Respondents can participate in the survey with no<br>further verification of access.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p> </p>
+</td>
+<td>
+<p>IP</p>
+</td>
+<td>
+<p>The so-called referrer, an IP address that specifies the IP address last visited by the respondent, is checked. This login option ensures that the respondent is being referred from the website you wish to evaluate and has not found out about the survey from other sources.</p>
+<p>Please note: Certain network constellations may allow only<br>restricted determination and storage of hostnames and IP<br>addresses.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p> </p>
+</td>
+<td>
+<p>Password</p>
+</td>
+<td>
+<p>The password specified here is a password shared by all participants of the survey. Any participant who has the password can participate in the survey (even more than once).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Panel survey, Master data survey</p>
+</td>
+<td>
+<p>Sample</p>
+</td>
+<td>
+<p>Panel and master data survey based on a drawn sample. Respondents usually receive the link to the survey on their homepage after logging in. Alternatively, a URL, such as <a href="http://www.mypanel.com/gto.php3?code#code#">http://www.mypanel.com/gto.php3?code#code#</a> can be used, and #code# will be replaced with a personalized access code by the mail dispatch tool.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="data-types" class="wysiwyg-text-align-justify"><strong>Data Types</strong></h2>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 171.0px;"> <col style="width: 118.0px;"> <col style="width: 235.0px;"> <col style="width: 236.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Type</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Data types</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Explanation</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Size</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Big Integer</p>
+</td>
+<td>
+<p>bigint</p>
+</td>
+<td>
+<p>Big whole numbers</p>
+</td>
+<td>
+<p>Threshold

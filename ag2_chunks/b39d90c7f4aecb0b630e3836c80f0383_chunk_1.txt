@@ -1,0 +1,33 @@
+ must be enabled by support.</p>
+<h3 id="header-5">New question type: Autocomplete</h3>
+<p>This type of question allows you to provide potential answer options, from which up to ten choices are presented as suggestions based on the autocompletion of what is being typed into the input line by the user. The suggestions are shown in the list of a drop-down box in alphabetical order. They can also be called up by clicking on the drop down arrow.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998515511954" alt="bfa20442-ff2d-4c59-953b-86508c03f927"></p>
+<p>To use this type of questions with the advantages described above, upload a CSV file with the answer options to the media library. You can download an example file from the questionnaire editor.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998544330386" alt="99b19e10-f228-4324-88cc-0192325b30e6"></p>
+<p>To use this type of questions with the advantages described above, upload a CSV file with the answer options to the media library. You can download an example file from the questionnaire editor.</p>
+<p>Like all new question types, this is only available for projects that use Responsive Layout 3.</p>
+<h3 id="header-6">Single response list and multi response list (mobile optimized)</h3>
+<p>For better usability on mobile devices, the two question types single and multiple response list have been optimized with regard to the positioning of the controls and the hidden background, which can be found in the Detail configuration of the questions</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998487015954" alt="0bd4dd79-1530-497a-b3e2-c946bbaec5c8"></p>
+<ol>
+<li>
+<p>The positioning of the control elements can be determined independently. Use the drop-down list to select whether you want to place the items to the left, above or below the response options. Hiding these elements is also available.</p>
+</li>
+<li>
+<p>You use the check box to check whether the background should be deactivated.</p>
+</li>
+</ol>
+<p>The alternating background color, as you know it from the other question types, is not used for these question types.</p>
+<h3 id="header-7">Personalized invitation mail for a follow-up survey</h3>
+<p>CLF's e-mail invitation to the follow-up survey is personalized because you now have a direct salutation. Until now, the invitation mail contained only the e-mail address of the potential participant. Using the placeholders (#u_name# and #u_firstname#) you can equip this mail with the first and last name of the future participant. The participant variables are accessed for the information. If the information is not available or has been deleted in the meantime, the wildcard is replaced by an empty string (with no length).</p>
+<h3 id="header-8">Changing the language during the survey</h3>
+<p>You can now switch between the survey languages created under Project properties during a survey. To do this, you have a drop-down list on the questionnaire page that can be opened using the globe icon.</p>
+<p>The language change applies directly to the page on which it is made. With the reloading, that is done automatically with this change all answers already given will be discarded. Even if a language change has been completed on a previous page using one of the question types that can be used for language selection, the feature can be used successfully.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998543834386" alt="7b263fc3-b2ea-46c0-9f8e-7bfc486ad3f6"></p>
+<p>In order to activate this feature, the option “enabled” must be set from the drop-down list of the menu item “Language selection in the survey”. This can be found under the tab “Internal organization” in the survey settings of the Project properties.</p>
+<h3 id="header-9">Keyboard control of the questionnaire editor</h3>
+<p>As of the winter release, the questionnaire editor can be controlled by keyboard as follows: By clicking on + New question, the text box in which the question title can be entered is activated. Using the tab key, you can use the filter to jump to the question type selection. Because scrolling is not possible in the traditional sense, the individual question types must be scrolled through with the up-down arrow keys to change the superordinate question type category. If a question with title has been created before, this title is displayed as a suggestion when you browse through the question types. The control of the questionnaire editor via keyboard works equally well in the standard browsers Firefox, Chrome and Internet Explorer.</p>
+<h3 id="header-10">Layout update button</h3>
+<p>In order to not only be informed about the EFS updates concerning the layout, but also to adopt them for a called project, a hint field is displayed in the Project information of the survey menu, which has the button “Apply layout updates”.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998543598866" alt="c8d0849c-0601-4a98-83f2-b8eb43f5f24b"></p>
+<p>It is also worth

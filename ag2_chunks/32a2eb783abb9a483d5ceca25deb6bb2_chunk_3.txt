@@ -1,0 +1,34 @@
+ links: Refer to a page that is part of the respective panel language version. Internal links are also inserted using HTML tags; however, the so-called <em>page identifier</em> is inserted instead of the full URL. See the section “2. Internal links” for instructions.</li>
+<li>Short URLs: It is possible to display URLs shortened with a Smarty modifier, which is widely used on Twitter or in smartphone communication. Instructions can be found in section 3 “Optimized short URLs for Twitter”.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><em>Information: </em>The menu of the website is dynamically generated in EFS Panel, depending on the page configuration (the fields “Parent page”, “Position”, “Access control”, and “Show in navigation” in particular). Manual maintenance of menu links is therefore not required.</p>
+<p class="auto-cursor-target wysiwyg-text-align-justify"><strong>1. External Links</strong></p>
+<p class="auto-cursor-target wysiwyg-text-align-justify">Links to other domains (e.g. <span class="nolink">http://www.domain.com</span>) can be inserted into modules or templates in a “normal” way, i.e. with the HTML tag &lt;a href=http://www.domain.com&gt;Linkname&lt;/a&gt;.</p>
+<p class="auto-cursor-target wysiwyg-text-align-justify"><strong>Example: Inserting a link to your company homepage</strong></p>
+<p class="auto-cursor-target wysiwyg-text-align-justify">The contact address entered on the “About us” page contains the company homepage URL <span class="nolink">http://www.example.com</span>. However, it is not a clickable link. You can create a clickable link by amending the &lt;a href=“URL“&gt;Linkname&lt;/a&gt; tag.</p>
+<ol class="wysiwyg-text-align-justify">
+<li class="auto-cursor-target">Enter the following into the “www” line:<br><code>WWW: &lt;a href=<span class="nolink">http://www.example.com&gt;http://www.example.com</span> /&gt;</code>
+</li>
+<li class="auto-cursor-target">Confirm by clicking on <strong>Save</strong>.</li>
+<li class="auto-cursor-target">Click on the <strong>Preview working version</strong>. The following figure shows the results of your work. Test whether the new link functions properly. If you are satisfied, click on the <strong>Publish page</strong> to apply the change to the publicly accessible panel page.</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><strong>2. Internal links</strong></p>
+<p class="wysiwyg-text-align-justify">You can create internal links – i.e. links that refer from a panel page to another page of the same language version – using wildcards. Wildcards are based on the page identifier. They always follow the same pattern:</p>
+<p class="wysiwyg-text-align-justify"><code>{$links.pageidentifier}</code></p>
+<p class="wysiwyg-text-align-justify">Information</p>
+<p class="wysiwyg-text-align-justify">Please note: If a panel page’s page identifier is changed, the internal links referring to this page must be manually updated. If an incorrect wildcard is accidentally placed or a change is not updated with the result that an internal link refers to a non-existing page, visitors will remain on the existing page.</p>
+<p class="wysiwyg-text-align-justify"><strong>Example</strong></p>
+<p class="wysiwyg-text-align-justify">You want to insert a backlink on the “About Us” page that allows panelists to return to the “Home” page.</p>
+<ol class="wysiwyg-text-align-justify">
+<li>First, in the website editor, determine the page identifier of the “Home” page for the desired language version. This is also named “home”.<br><br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015039361426" alt="page_identifier.png"><br><br>
+</li>
+<li>Assemble the wildcard: {$links.home}</li>
+<li>To create a clickable link, insert the &lt;a href=“URL”&gt;Linkname&lt;/a&gt; HTML tag in the desired place in the content module of the “About us” page. Replace the URL with the {$links.home} wildcard:<br><code>&lt;a href="{$links.home}"&gt;back to home&lt;/a&gt;<br><br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015039358226" alt="internal_link.png"><br><br></code>
+</li>
+<li>Click on <strong>Save</strong>.</li>
+<li>Check the result in the working version. You can then publish the page.</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><strong>3. Optimized short URLs for Twitter</strong></p>
+<p class="wysiwyg-text-align-justify">You can create and display short URLs optimized for Twitter directly in the website editor. This is realized with the help of the Smarty modifier:</p>
+<p class="wysiwyg-text-align-justify"><code>{"URL"|shorturl}</code></p>
+<p class="wysiwyg-text-align-justify">It can be entered in all fields of

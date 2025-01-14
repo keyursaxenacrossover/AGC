@@ -1,0 +1,26 @@
+span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">panel.search.get_text_input_field.before</span></pre></td>
+<td colspan="1">modules/panel/app/controllers/legacy/panel_search.php:get_text_input_field()</td>
+<td colspan="1"><pre><span>Panel\Events\Controllers\Legacy\PanelSearch\ChangeAccount\GetTextInputField\Before</span><span>([<br></span><span>    </span><span style="color: rgb(0,128,0);">'field_name' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$name</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'input_field' </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$input<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">panel.controllers.legacy.panel_search.change_account.before</span></pre></td>
+<td colspan="1">modules/panel/app/controllers/legacy/panel_search.php:change_account()</td>
+<td colspan="1"><pre><span>Panel\Events\Controllers\Legacy\PanelSearch\ChangeAccount\Before</span><span>([<br></span><span>    </span><span style="color: rgb(0,128,0);">'words' </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$words<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">panel.panelists.manager.internal_set_panelist_status.after</span></pre></td>
+<td colspan="1">modules/panel/components/panelists/manager.inc.php:internal_set_panelist_status()</td>
+<td colspan="1"><pre><span>Panel\Events\Panelists\Manager\</span><span>InternalSetPanelistStatusAfter([<br></span><span>    </span><span style="color: rgb(0,128,0);">'panel_query_update' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$q<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">panel.component.import.update.modelUpdateDataAfter</span></pre></td>
+<td colspan="1">modules/panel/components/import/update/model.inc.php:update_data()</td>
+<td colspan="1"><pre><span>Panel\Events\Import\Update\Model\</span><span>UpdateDataAfter</span><span>([<br></span><span>    </span><span style="color: rgb(0,128,0);">'component' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$this</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'import_table' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$this</span><span>-&gt;</span><span style="color: rgb(102,14,122);">import_table</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'linking_table' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$this</span><span>-&gt;</span><span style="color: rgb(102,14,122);">linking_table</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'table' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$table</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'fields' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$fields</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'assignments' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$this</span><span>-&gt;</span><span style="color: rgb(102,14,122);">assignments<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">panel.controllers.master_assignment.assign_variables_logic.after</span></pre></td>
+<td colspan="1">modules/panel/app/controllers/MasterdataassignmentController.php:assignment()</td>
+<td colspan="1"><pre><span>Panel\Events\Controllers\MasterDataAssignment\</span><span>AssignVariablesLogicAfter</span><span>([<br></span><span>    </span><span style="color:

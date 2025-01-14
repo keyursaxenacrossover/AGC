@@ -1,0 +1,111 @@
+ mean values of two columns in a table, variables will be interpreted as metrically scaled.</p>
+</td>
+</tr>
+<tr style="height: 460px;">
+<td style="width: 133.941px; height: 460px;">
+<p>Weighted mean</p>
+</td>
+<td style="width: 89.7917px; height: 460px;">
+<ul>
+<li>
+<p> </p>
+</li>
+</ul>
+</td>
+<td style="width: 70.8681px; height: 460px;">
+<p>x</p>
+</td>
+<td style="width: 174.948px; height: 460px;">
+<p>Single response, matrix</p>
+</td>
+<td style="width: 273.785px; height: 460px;">
+<p>In a survey with e.g. irregular gender distribution, weighting allows to balance the share of the underrepresented gender.</p>
+<ul>
+<li>
+<p>Please start by creating a recodes definition, selecting the type “Recode for use as a weighting template”.</p>
+</li>
+<li>
+<p>Then, specify recode categories, allocating the desired weight to each category in the top line.</p>
+</li>
+<li>
+<p>Next, open the table editor of the affected question. Insert the option “Weighted average” to the results table. Via the <strong>Edit</strong> icon, you can select the desired weighting template i.e. your recodes definition.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr style="height: 268px;">
+<td style="width: 133.941px; height: 268px;">
+<p>Top box</p>
+</td>
+<td style="width: 89.7917px; height: 268px;">
+<p>x</p>
+</td>
+<td style="width: 70.8681px; height: 268px;">
+<p>x</p>
+</td>
+<td style="width: 174.948px; height: 268px;">
+<p>Single response,<br>matrix, simple recoding</p>
+</td>
+<td style="width: 273.785px; height: 268px;">
+<p>Accumulated frequencies and percentages of the n answer options with the lowest code. The answer options with the lowest code often also have the lowest sorting numbers, which is why they are top of the list. Hence the name “top box”.</p>
+<p>The number n of the answer options to be aggregated can be configured. n must lie between 0 and 100.</p>
+</td>
+</tr>
+<tr style="height: 165px;">
+<td style="width: 133.941px; height: 165px;">
+<p>Bottom box</p>
+</td>
+<td style="width: 89.7917px; height: 165px;">
+<p>x</p>
+</td>
+<td style="width: 70.8681px; height: 165px;">
+<p>x</p>
+</td>
+<td style="width: 174.948px; height: 165px;">
+<p>Single response, matrix, simple recoding</p>
+</td>
+<td style="width: 273.785px; height: 165px;">
+<p>Accumulated frequencies and percentages of the n answer options with the highest code.</p>
+<p>The number n of the answer options to be aggregated can be configured. n must lie between 0 and 100.</p>
+</td>
+</tr>
+<tr style="height: 234px;">
+<td style="width: 133.941px; height: 234px;">
+<p>Standard deviation</p>
+</td>
+<td style="width: 89.7917px; height: 234px;">
+<p>x</p>
+</td>
+<td style="width: 70.8681px; height: 234px;">
+<p>x</p>
+</td>
+<td style="width: 174.948px; height: 234px;">
+<p>Single response,<br>matrix, simple recoding</p>
+</td>
+<td style="width: 273.785px; height: 234px;">
+<p>Square root of the variance of a data bundle. The variance is a measure of the average distance of the individual values from the mean. Extracting the square root yields a value of the same measuring unit as the data values, i.e., you can represent the standard deviation in a chart together with the data values, for example.</p>
+</td>
+</tr>
+<tr style="height: 182px;">
+<td style="width: 133.941px; height: 182px;">
+<p>Standard error</p>
+</td>
+<td style="width: 89.7917px; height: 182px;">
+<p>x</p>
+</td>
+<td style="width: 70.8681px; height: 182px;">
+<p>x</p>
+</td>
+<td style="width: 174.948px; height: 182px;">
+<p>Single response, matrix, simple recoding</p>
+</td>
+<td style="width: 273.785px; height: 182px;">
+<p>The variation of the data values around the unknown “true value” in the population. The greater the standard error, the wider the confidence interval containing the “true value” with the specified probability.</p>
+</td>
+</tr>
+<tr style="height: 216px;">
+<td style="width: 133.941px; height: 216px;">
+<p>Base</p>
+</td>
+<td style="width: 89.7917px; height: 216px;">
+<p>x

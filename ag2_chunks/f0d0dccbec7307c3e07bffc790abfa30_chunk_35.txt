@@ -1,0 +1,110 @@
+",
+    "u_email"
+  ]
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[
+    [
+        "215",
+        "example2@domain.tld"
+    ],
+    [
+        "214",
+        "example@domain.tld"
+    ]
+]</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79H3KS8KNZF4C0YGS33"> </h4>
+<h3 id="header-169">POST /panel/panelists/login</h3>
+<p>Checks whether a panelist can login to the panel website with the login data specified.</p>
+<p>Login types: login_type_interviewer, login_type_email or login_type_account</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "loginType": "login_type_account",
+  "account": "example",
+  "password": "Example123"
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">true</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79HZ8BNXHZXPT1PATQJ"> </h4>
+<h3 id="header-170">POST /panel/panelists/mail</h3>
+<p>Sends mails to one or more panelists by a specific identifier</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "identifierType": "uid",
+  "identifierValues": [
+    "123"
+  ],
+  "mailTemplate": {
+    "subject": "Example",
+    "textContent": "Example",
+    "htmlContent": "Example",
+    "charset": "UTF-8",
+    "replyTo": "example@domain.tld",
+    "priority": "NO_PRIORITY",
+    "sensitivity": "NORMAL",
+    "notify": "NO_NOTIFICATION",
+    "toRealname": true,
+    "from": "example@domain.tld",
+    "fromRealname": "Example"
+  },
+  "dispcodes": [
+    "10"
+  ],
+  "sendOptions": {
+    "sendDate": "2020-07-02T12:53:50+00:00",
+    "useRecipientTimezone": true
+  }
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">true</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79HHJGYNF874PXSZHQT"> </h4>
+<h3 id="header-171">PATCH /panel/panelists/masterdata</h3>
+<p>increment/decrement a master data variable's value for one or multiple panelists</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "identifierType": "uid",
+  "identifierList": [
+    "123"
+  ],
+  "variableName": "m_starcount",
+  "step": 1
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">1234</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79HPJNJS5GEJHTXNAX8"> </h4>
+<h3 id="header-172">POST /panel/panelists/masterdata</h3>
+<p>Get a master data variable's value for panelist</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "identifierType": "uid",
+  "identifierValue": "123",
+  "variableName": "m_starcount"
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">"12"</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79H8DB5QX2M8H6Z4XAY"> </h4>
+<h3 id="header-173">POST /panel/panelists/modified</h3>
+<p>Returns the identifiers of all panelists whose data (participant data plus master data) has changed since this given timestamp.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "identifierType": "uid",
+  "modificationDate": "2020-07-02T12:53:50+00:00",
+  "excludeModifier": 0
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[ { "identifier": "123" } ]</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79HNATVVRRAD7JY5S5H"> </h4>
+<h3 id="header-174">POST /panel/panelists/online</h3>
+<p>Returns the panelists who are online on the website. Panelists are returned as an array of e-mail addresses, pseudonyms, panelist codes etc. together with the language ID of the website they are active on. A panelist might be active

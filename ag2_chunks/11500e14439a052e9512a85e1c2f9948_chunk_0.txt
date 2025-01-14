@@ -1,0 +1,62 @@
+<p><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p>This article provides information about the SMS module in the EFS platform, including setup instructions, pricing, and related mobile access modules.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>The SMS module allows for sending SMS messages to panelists/users. This guide covers the setup process, important information about SMS limits and pricing, and details about related EFS Mobile Access modules.</p>
+<ul>
+<li><a href="#setup">How to Setup SMS Module</a></li>
+<li><a href="#sms_info">SMS Information</a></li>
+<li><a href="#mobile_modules">EFS Mobile Access Modules</a></li>
+<li><a href="#h_01J4NY4R8PP70TMWX7E0JM5A6Y">Troubleshooting</a></li>
+</ul>
+<p> </p>
+<h2 id="setup">How to Setup SMS Module</h2>
+<p>To set up the SMS module, follow these steps:</p>
+<h3 id="step1">Step 1: Order from Sales</h3>
+<p>Customer contacts the Sales department to order the SMS module.</p>
+<h3 id="step2">Step 2: Technical Support Configuration</h3>
+<p>Once the SMS module is ordered and paid for, Support needs to perform the following actions:</p>
+<ol>
+<li>Login with <strong>root</strong> account</li>
+<li>Navigate to <strong>Options &gt; Platform cockpit &gt; System configuration</strong>
+</li>
+<li>Edit variable "<strong>modules</strong>" and add "<strong>sms</strong>" module</li>
+<li>In <strong>Globis</strong>: Add <strong>sms</strong> module to list of modules and add an update to the installation mentioning the support case the module was requested in</li>
+<li>Add amount of SMS: Options SMS overview </li>
+<li>If it is for a non-DE customer, hand over to Teamleader Support <strong>(TO BE REVIEWED WITH TIVIAN TEAM AND VP TO REFINE PROCESS)</strong>
+</li>
+</ol>
+<h2 id="sms_info">SMS Information</h2>
+<ul>
+<li>When the limit reaches 2000 SMS, a mail is sent to support (once)</li>
+<li>When the limit reaches -2000 SMS, support gets a mail (SPAM!) for every single dispatch attempt</li>
+<li>When the limit of -2000 SMS is reached, no more SMS are sent</li>
+<li>Each SMS costs €0.10, even if the provider charges something else</li>
+<li>SMS packages are added in increments of 2000</li>
+<li>
+<a href="https://messente.com/documentation/tools/sms-length-calculator" target="_blank" rel="noopener noreferrer">SMS length calculator</a> - useful for seeing the length of your message to quantify how many SMS's will a message consume</li>
+</ul>
+<h2 id="mobile_modules">EFS Mobile Access Modules</h2>
+<h3 id="sms_module">sms</h3>
+<p>Allows inviting panelists/users via SMS. Note that mail triggers don't allow sending SMS.</p>
+<h3 id="h_01J3QKWN8K7S2KR79MD5DKN7Y7">custom_sms_supplier</h3>
+<p>Holds the name of the custom SMS provider/supplier, in case one is used. Tyntec is the default provider, and in this case, no custom_sms_supplier is set.</p>
+<h3 id="mobile_module">mobile</h3>
+<p>Can detect mobile phones and swap the design for mobile phone designed layouts.</p>
+<h3 id="mobile_gui">mobile_gui</h3>
+<p>The EFS Mobile Access is a default module and activated on all installations bigger than 7.0. The mobile GUI is an interface designed for mobile phone (especially iPhones) screens. Access it at [NameOfInstallation]/mobile_gui for more information.</p>
+<p> </p>
+<h2 id="h_01J4NY4R8PP70TMWX7E0JM5A6Y">Troubleshooting</h2>
+<ul>
+<li>For more information, please review the customer-side article <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20229456533906-How-to-SMS-Extension">How-to: SMS Extension.</a>
+</li>
+<li>You can check the sent SMS and any failed attempts in the mail queue. (System &gt; Option &gt; Mail Queue).</li>
+<li>If we don't find a reasonable explanation for the mail queue, we will need to engage the SMS provider (TynTec).</li>
+</ul>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq1">What is required to activate the SMS module?</h3>
+<p>The SMS module must be activated by Technical Support, and an SMS package must be booked. It works like a prepaid account.</p>
+<h3 id="faq2">How much does each SMS cost?</h3>
+<p>Each SMS costs €0.10, regardless of what the provider charges.</p>
+<h3 id="faq3">What happens when the SMS limit is reached?</h3>
+<p>When the limit of -2000 SMS is reached, no more SMS are sent, and support receives a mail for every dispatch attempt

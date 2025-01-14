@@ -1,0 +1,70 @@
+h3>
+<p>Profile attributes depend on the external Identity Provider that is federated. This is an example for an Azure AD federation.</p>
+<p>At least the following values have to be present:</p>
+<ul>
+<li>
+<p>First Name</p>
+</li>
+<li>
+<p>Last Name</p>
+</li>
+<li>
+<p>Email</p>
+</li>
+</ul>
+<p>They can have different names (like “given_name” in the example) but they should have the same meaning.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21012826932754" alt="Screenshot_2019-12-12 Questback - Universal Directory.png"></p>
+<h3 id="header-14">Step 11: Configure Profile Mappings</h3>
+<p>also see: <a href="https://help.okta.com/en/prod/Content/Topics/Directory/About_Universal_Directory.htm">https://help.okta.com/en/prod/Content/Topics/Directory/About_Universal_Directory.htm</a></p>
+<p>The example might differ based upon the step before.</p>
+<p>The following values have to be mapped. Additional ones can also be mapped but will not have an effect (property names are on the right side in the image).</p>
+<p> </p>
+<h3 id="header-15">Values:</h3>
+<p>login: String.toLowerCase(appuser.email)</p>
+<p>firstName: appuser.given_name</p>
+<p>lastName: appuser.family_name</p>
+<p>email: String.toLowerCase(appuser.email)</p>
+<p>emailDomain: String.substringAfter(appuser.email, "@")</p>
+<p>Email addresses should be lower-cased to avoid conflicts later on.</p>
+<p>Email domain will always get created when synced from EFS but in the JIT case it should also be set.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21012774001170" alt="Screenshot_2019-12-12 Questback - Universal Directory(1).png"></p>
+<p> </p>
+<h3 id="header-16">Step 12: Create Routing Rule</h3>
+<p>Configure Identity Provider Routing</p>
+<p> </p>
+<h2 id="h_01J6BZJRXZ70EWV8158D2V6DTF">SAML Provider Setup</h2>
+<p>Please check the<a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20716926867858-SAML-Provider-Setup"> SAML Provider Setup</a> article for details.</p>
+<p> </p>
+<h2 id="h_01J6C1WMWCKJVBQA8PTJAB7EDE">Configure Profile Mapping</h2>
+<h3 id="01J6C1X1HXC217NFAJ7F7V0K71">Step 1: Navigate to Profile Editor</h3>
+<p>Click on Edit Profile of the created Identity Provider</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21012773973778" alt="Screenshot_2019-12-12 Questback - Identity Providers.png"></p>
+<h3 id="01J6C1X1HXGXQ5ABBKM7KJVJ1C">Step 2: Check Attributes in Profile Editor</h3>
+<p>Check that the necessary attributes are set. Especially the following are important:</p>
+<ul>
+<li>
+<p>SAML Subject Name ID</p>
+</li>
+<li>
+<p>First Name</p>
+</li>
+<li>
+<p>Last Name</p>
+</li>
+<li>
+<p>Email</p>
+</li>
+</ul>
+<p>They should all be required (that can be checked by clicking the pen or info icon).</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21012773975058" alt="Screenshot_2019-12-12 Questback - Universal Directory(2).png"></p>
+<h3 id="01J6C1X1HXP7GY4EBJZRFCDNK5">Step 3: Adapt Profile Mappings</h3>
+<p>also see: <a href="https://help.okta.com/en/prod/Content/Topics/Directory/About_Universal_Directory.htm">https://help.okta.com/en/prod/Content/Topics/Directory/About_Universal_Directory.htm</a></p>
+<p>The profile mappings should lowercase email-addresses to prevent conflicts later on.</p>
+<p> </p>
+<p><strong>Values (property names are on the right side in the picture):</strong></p>
+<p><strong>login</strong>: <code>String.toLowerCase(appuser.subjectNameId)</code></p>
+<p><strong>firstName</strong>: <code>appuser.firstName</code></p>
+<p><strong>lastName</strong>: <code>appuser.lastName</code></p>
+<p><strong>email</strong>: <code>String.toLowerCase(appuser.subjectNameId)</code></p>
+<p>[optional] <strong>mobilePhone</strong>: <code>appuser.mobilePhone</code></p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21012773975954" alt="Screenshot_2019-12-12 Questback - Universal Directory.png"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21012826945554

@@ -1,0 +1,91 @@
+ the drag-and-drop list is preset at “0”, i.e., all results will be displayed.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Disposition codes</p>
+</td>
+<td>
+<p>The base can be limited via the disposition code.</p>
+<ul>
+<li>
+<p>Usually, only data from participants who completed the questionnaire are used. Therefore, only the disposition codes 31 and 32 are activated.</p>
+</li>
+<li>
+<p>To display rarely used disposition codes as e.g. 15 = not available, use the more icon.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Date of participation</p>
+</td>
+<td>
+<p>The base can be limited to participants who participated within a particular period.</p>
+<p>The feature can be used to restrict the base for the complete report as well.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="using-test-data-instead-of-live-data" class="wysiwyg-text-align-justify"><strong>Using Test Data Instead of Live Data</strong></h3>
+<p class="wysiwyg-text-align-justify">Optionally, you can have predefined test data displayed instead of the real result data when working in the workpad. This means:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>For all values in the tables and charts, predefined default values will be displayed. Total and base will likewise only be the sums of those predefined test data.</p>
+</li>
+<li>
+<p>The test data are totally unrelated to the test and result data of the survey. Data<br>from tester accounts are generally ignored in <em>EFS Reporting+</em>.</p>
+</li>
+<li>
+<p>The preview always contains predefined test data.</p>
+</li>
+<li>
+<p>As soon as you generate an export file, the system will automatically refer to the real result data, perform live calculations, and display real results.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Using test data will eliminate the resource-intensive calculations that take place whenever you open a table or a chart. Thus you can work more efficiently, especially in the following situations:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Preparing complex reports for large projects: With the resource-intensive live calculations eliminated, you can work faster - and you can still check the plausibility of your table configuration based on the test data.</p>
+</li>
+<li>
+<p>Preparing a report for a project with no data available yet: The test data provides orientation when configuring the report. Test data need not be generated manually anymore.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If you wish to work with test data, tick the option “Use test data in the workpad” in the <strong>Report</strong> →<strong> Report filter</strong> menu.</p>
+<h3 id="anonymizing-results" class="wysiwyg-text-align-justify"><strong>Anonymizing Results</strong></h3>
+<p class="wysiwyg-text-align-justify">Occasionally, there are survey situations where the number of answers to certain questions will become so small, due to filtering or quotation, as to compromise the respondents’ anonymity. Also, when using the evaluation functions of <em>EFS Reporting+</em>, such as filters or crossbreaks, it may allow for inferences to be made about particular participants or groups of participants. This can be avoided by setting an anonymity limit for your report. Anonymity limits are limit values stating the minimum number of answers required for a result to be displayed in the report. If the number of answers does not exceed this limit, the result will be hidden. This is necessary to ensure the participants’ anonymity.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Anonymity limits can be defined both for the entire report and for specific sections.</p>
+</li>
+<li>
+<p>The anonymity limits are applied to all question types available in <em>EFS Reporting+</em>, including open-ended questions.</p>
+</li>
+<li>
+<p>The anonymity limits refer to “Total” for single response lists and matrices. For multiple response lists, they refer to the number of participants who have selected the respective answer option.</p>
+</li>
+<li>
+<p>Anonymized data are marked:</p>
+<ul>
+<li>
+<p>You can tell anonymized tables and charts by the comment “*) Some values have been anonymized”.</p>
+</li>
+<li>
+<p>Columns containing anonymized values are marked with a *.</p>
+</li>
+<li>
+<p>In tables, anonymized values are replaced with a dash (-). In charts, “0” is displayed for the corresponding answer options.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>By default, no limit is preset, i.e., all results are displayed.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If you wish to anonymize your reports or a section thereof, enter the desired value into the field “Anonymity limit” in the <strong>Report</strong> → <strong>Report filter</strong> menu or in the filter dialog.</p>
+<h3 id="effects-of-anonymization-in-detail" class="wysiwyg-text-align-justify"><strong>Effects of anonymization in detail</strong></h3>
+<p class="wysiwyg-text-align-justify">The anonymity limits in EFS Reporting+ always refer to “Total” for single response

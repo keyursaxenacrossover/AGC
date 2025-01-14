@@ -1,0 +1,34 @@
+ class="flex items-center rounded bg-token-main-surface-secondary px-2 font-sans text-xs text-token-text-secondary"> </div>
+</div>
+</div>
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-sql"><span class="hljs-keyword">SHOW</span> GRANTS;
+</code></div>
+</div>
+You should see <code>GRANT EXECUTE ON FUNCTION 'opst_nh7146'.'BASE64DECODE' TO 'opst_nh7146'@'%'</code>.</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="h_01J9V15GXMTAZYGJ0FYKSZWEZG">Additional Notes</h3>
+<ul>
+<li>
+<strong>Module Compatibility:</strong> You can enable the <strong>Panel</strong> module independently of the <strong>Employee</strong> module, and vice versa.</li>
+<li>
+<strong>Dependencies:</strong> Features such as <strong>Portal</strong> and <strong>MySight</strong> require the <strong>Panel</strong> module. However, the <strong>Panel</strong> module can function without <strong>Portal</strong> or <strong>MySight</strong>.</li>
+</ul>
+<h3 id="h_01J9V162NWZYPN1MWA8PBEJX4F"> </h3>
+<h3 id="h_01J9TWJ6XRXGJSW61BER543HJT">Summary:</h3>
+<p>This process provides general guidance for activating new features in the EFS Admin UI. Each feature may have specific steps, so always refer to the <code>dxi_installation_checklist</code> for feature-specific instructions.</p>
+<p>Eventually, make sure to update Globis installations to ensure proper tracking of information.<br><br></p>
+<h3 id="h_01J9TWJ6XRR0QCG3SH8JNZ2ECZ">FAQ:</h3>
+<p><strong>1. Why do I need to verify feature eligibility with the AM or Sales contact?</strong><br>Some features may have licensing requirements or eligibility criteria. Checking with the AM or Sales contact ensures that the customer is entitled to the requested feature.</p>
+<p><strong>2. What is the purpose of creating and deleting a new portal?</strong><br>For the Portal feature, creating and deleting a portal helps SCSS compile correctly during the first activation, avoiding CSS display issues for customers.</p>
+<p><strong>3. Where can I find detailed steps for other features?</strong><br>Refer to the <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20714568035218-Provisioning-new-DXi-installations-WIP" rel="noopener">dxi_installation_checklist</a> under <strong>Section 2.2.2 Modules</strong> for specific activation steps for each feature.</p> activating new features in the EFS Admin UI. Each feature may have specific steps, so always refer to the <code>dxi_installation_checklist</code> for feature-specific instructions.</p>
+<p>Eventually, make sure to update Globis installations to ensure proper tracking of information.<br><br></p>
+<h3 id="h_01J9TWJ6XRR0QCG3SH8JNZ2ECZ">FAQ:</h3>
+<p><strong>1. Why do I need to verify feature eligibility with the AM or Sales contact?</strong><br>Some features may have licensing requirements or eligibility criteria. Checking with the AM or Sales contact ensures that the customer is entitled to the requested feature.</p>
+<p><strong>2. What is the purpose of creating and deleting a new portal?</strong><br>For the Portal feature, creating and deleting a portal helps SCSS compile correctly during the first activation, avoiding CSS display issues for customers.</p>
+<p><strong>3. Where can I find detailed steps for other features?</strong><br>Refer to the <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20714568035218-Provisioning-new-DXi-installations-WIP" rel="noopener">dxi_installation_checklist</a> under <strong>Section 2.2.2 Modules</strong> for specific activation steps for each feature.</p>

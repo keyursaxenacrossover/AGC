@@ -1,0 +1,49 @@
+header-7">Hintergrund</h3>
+<ul>
+<li><p><strong>Kunde:</strong> Deloitte</p></li>
+<li><p><strong>Installation:</strong> <a href="http://www.umfragen-deloitte.de/www/">http://www.umfragen-deloitte.de/www/</a></p></li>
+<li><p>Der Kunde lässt für diverse Umfragen PDF Quittungen erzeugen. Manchmal schlägt das Erzeugen der Quittungen fehl,<br>da Teilnehmereingaben die Formatierungen oder den Code der Quittung zerschießen.<br>Die entsprechende Quittung muss dann erneut erzeugt und ggf. vorher debuggt und Probleme behoben werden.</p></li>
+</ul>
+<h3 id="header-8">Notwendige Schritte</h3>
+<ul>
+<li><p>über die Konsole auf dem jeweiligen Server einloggen (z.B. Bremen)</p></li>
+<li><p>ins Verzeichnis der Installation gehen (z.B. <strong>cd /nfs/opst4/www.umfragen-deloitte.de/htdocs</strong>)</p></li>
+<li><p>ins Verzeichnis für die Quittungen gehen (<strong>cd uc/receipts/</strong>)</p></li>
+<li><p>das entsprechende Projektverzeichnis aufrufen (z.B. <strong>cd 1234</strong>)</p></li>
+<li><p>alle Quittungen anzeigen (<strong>ll *.tex</strong>)</p></li>
+<li><p>die entsprechende Quittung heraussuchen, z.B. anhand des Datums, an dem der Teilnehmer teilgenommen hat (z.B. <strong>1b2d341396.tex</strong>)</p></li>
+<li><p>Quittung neu generieren (<strong>pdflatex 1b2d341396.tex</strong>)</p></li>
+<li><p>beim Erzeugen aufgetretene Fehler werden angezeigt</p></li>
+</ul>
+<pre><code class="language-text">[...]
+
+l.289   ["info"]
+                =&gt;
+[...]
+?
+</code></pre>
+<ul>
+<li><p><strong>l.289</strong> gibt die Zeile aus, in der Fehler aufgetreten sind (-&gt; Zeile 289 )</p></li>
+<li><p>Über die Eingabe von <strong>q</strong> kann die Erzeugung abgebrochen werden</p></li>
+<li>
+<p>entsprechende Zeile in der Datei ansehen und gefundene Probleme beheben (<strong>vi 1b2d341396.tex</strong>)</p>
+<ul><li>
+<p>gefundene Probleme können sein:</p>
+<ul>
+<li><p>Eingaben des Teilnehmers enthalten Steuerzeichen (z.B. &amp;), diese müssen escaped werden (z.B. \&amp;)</p></li>
+<li><p>Code der Quittung selber enthält fehlerhafte Zeichen oder es fehlen Zeichen (z.B. &amp; &amp; kann durch &amp; ~ &amp; ersetzt werden (~ steht für non breaking space))</p></li>
+</ul>
+</li></ul>
+</li>
+<li>
+<p>nach Behebung der Probleme, Quittung erneut generieren (<strong>pdflatex 1b2d341396.tex</strong>)</p>
+<ul>
+<li>
+<p>werden keine weiteren Fehler gefunden, kann die Quittung heruntergeladen und dem Kunden zugesendet werden</p>
+<ul><li><p>Quittung befindet sich im gleichen Ordner (<strong>uc/receipts/1234</strong>) mit gleichem Namen (<strong>1b2d341396.pdf</strong>)</p></li></ul>
+</li>
+<li><p>werden weitere Fehler gefunden, diese wie oben beschrieben beheben</p></li>
+</ul>
+</li>
+</ul>
+</div><h3 id="header-9">Häufige Fehlerursachen</h3><p>In der Log Datei unter uc/receipt/xxx (xxx=pid) kann man die letzten Zeilen anschauen und bekommt vielleicht eine klare Fehlermeldung.</p><p>Offene Textfelder mit Sonderzeichen die vom Teilnehmer eingegeben wurden z.B. &amp;, %, ... (bitte ergänzen)</p>

@@ -1,0 +1,77 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K" class="wysiwyg-text-align-justify">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article provides comprehensive information about the Results Import feature in EFS (Enterprise Feedback Suite). It covers the functional scope, step-by-step instructions for performing a data import, and detailed formatting guidelines for import files.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">The Results Import tool allows users to import entire project data, primarily for evaluation purposes. This feature is available in personalized projects and employee surveys, but not in anonymous projects, panel surveys, or master data surveys. If you wish to prefill individual variables with data from another EFS project, the Variable data import in the <strong>Project properties</strong> menu might be the better option.</p>
+<ul>
+<li><a href="#functional-scope">Functional Scope</a></li>
+<li><a href="#performing-a-data-import">Performing a Data Import</a></li>
+<li><a href="#formatting-of-the-import-file-in-detail">Formatting of the Import File in Detail</a></li>
+<li><a href="#further-information">Further Information</a></li>
+</ul>
+<h2 id="functional-scope" class="wysiwyg-text-align-justify">Functional Scope</h2>
+<p class="wysiwyg-text-align-justify">The functional scope of the results data import in brief:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>This tool is available in personalized projects and employee surveys. The results data import is not implemented in anonymous projects, panel surveys, and master data surveys.</p>
+</li>
+<li>
+<p>You can import all project variables (v_x), URL parameters (p_x), user-defined variables (c_x), participant variables (u_x), various system data (tester, code, date_of_first_access, date_of_last_access) and the disposition code.</p>
+</li>
+<li>
+<p>Furthermore, in project type “employee survey”, the variables u_metaname (required for organizational mapping) and u_offline (used to mark data from paper-pencil questionnaires) can be imported.</p>
+</li>
+<li>
+<p>An import template is available in CSV format, which you merely have to download and fill in. Alternatively, you can import a result data file used in another <em>EFS</em> project: In this case, matching of the variables of the source and target project is done via the external variable names.#</p>
+</li>
+<li>
+<p>Read rights for <em>ct42partadm</em> are required to use the results data import.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="performing-a-data-import" class="wysiwyg-text-align-justify">Performing a Data Import</h2>
+<p class="wysiwyg-text-align-justify">Data import can be found in the <strong>Projects</strong> → {Selected projects} → <strong>Participant administration → Results data import</strong> menu.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>First, download the ready-formatted import template.</p>
+</li>
+<li>
+<p>Open the template in an appropriate program (e.g. Excel) and enter the data. Then save the file in Excel or CSV.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017142483474" alt="Bildschirmfoto 2021-10-19 um 09.42.00.png"></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Afterwards, import the data into EFS. During the import, you can use the preview function to double-check and, if necessary, change the data.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="formatting-of-the-import-file-in-detail" class="wysiwyg-text-align-justify">Formatting of the Import File in Detail</h2>
+<p class="wysiwyg-text-align-justify">When filling in the import template or creating your import file you have to consider various formatting rules.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The import file can be created in Excel or CSV.</p>
+</li>
+<li>
+<p>An individual column is created for each variable to be imported. You can import the following variables:</p>
+<ul>
+<li>
+<p>all project variables (v_x)</p>
+</li>
+<li>
+<p>all URL parameters (p_x) and user-defined variables (c_x)</p>
+</li>
+<li>
+<p>all participant variables (u_x)</p>
+</li>
+<li>
+<p>only in project type “Employee survey”: u_metaname</p>
+</li>
+<li>
+<p>various system data (tester, code, date_of_first_access, date of last access)</p>
+</li>
+<li>
+<p>only in project type “employee survey”: u_offline.</p>
+</li>
+<li>
+<p>disposition code</p

@@ -1,0 +1,45 @@
+">We now want to create a filter to restrict only the basis of a specific section in the report. For example, for a specific question, we only want to show responses from participants from Germany. We can create this filter because we have activated the checkbox for participant data when creating the report, and the data from the participant administration is therefore available for evaluation.</p>
+<ul class="ak-ul" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="9046">Click on the <strong data-renderer-mark="true">Filter</strong> menu item in the lower part of the <strong data-renderer-mark="true">Sources</strong> area.</p>
+</li>
+<li>
+<p data-renderer-start-pos="9118">Click on the plus icon.</p>
+</li>
+</ul>
+<p class="wysiwyg-indent3"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015136342546"></p>
+<ul class="ak-ul" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="9118">A screen for creating a new filter is displayed. At the top, you can use the condition editor to create a restriction condition. In the middle, you can select the disposition codes you want to filter by and at the bottom you can filter by the date of participation.</p>
+</li>
+<li>
+<p data-renderer-start-pos="9118">Enter a descriptive title for your filter. Since we are filtering by participation from Germany, we will enter the title "Only Germany".</p>
+</li>
+<li>
+<p data-renderer-start-pos="9118">In the condition editor, select the variable <strong data-renderer-mark="true">u_country</strong> under <strong data-renderer-mark="true">Variable</strong>. Under <strong data-renderer-mark="true">Condition</strong>, keep the default setting <strong data-renderer-mark="true">= (equal)</strong>. Under <strong data-renderer-mark="true">Code</strong>, select code <strong data-renderer-mark="true">1 (Germany)</strong>.</p>
+</li>
+<li>
+<p data-renderer-start-pos="9118">Click on <strong data-renderer-mark="true">Save</strong>.</p>
+</li>
+</ul>
+<p class="wysiwyg-indent3" data-renderer-start-pos="9118"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015136366098"></p>
+<ul>
+<li data-renderer-start-pos="9118">The filter is now displayed in the list of filters.</li>
+<li data-renderer-start-pos="9118">Drag and drop the filter into the <strong data-renderer-mark="true">Structure</strong> area.</li>
+<li data-renderer-start-pos="9855">Click on the <strong data-renderer-mark="true">Data</strong> menu item above the <strong data-renderer-mark="true">Filter</strong> menu item.</li>
+<li data-renderer-start-pos="9914">Click on the plus symbol to the left of <strong data-renderer-mark="true">Questions</strong>.</li>
+<li data-renderer-start-pos="9968">Drag the desired question into the <strong data-renderer-mark="true">Structure</strong> area and onto the filter to be applied to the question. As soon as the filter itself is highlighted in green and a green bar is displayed above the question, you can release the mouse button.</li>
+<li data-renderer-start-pos="10208">If you now click on the question under the filter, only the results data for participants from Germany will be displayed in the<strong data-renderer-mark="true"> Workpad </strong>area.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015166406546">
+</li>
+</ul>
+<div class="rich-media-item mediaSingleView-content-wrap image-center cc-620sbf" data-layout="center" data-width="760" data-width-type="pixel" data-node-type="mediaSingle" data-renderer-start-pos="10353">
+<div class="cc-1jgxf0f">
+<div data-context-id="4021813254" data-type="file" data-node-type="media" data-width="1920" data-height="1040" data-id="9ee73ea4-00fa-4753-8de5-d48dccc2cac8" data-collection="contentId-4021813254" data-file-name="file" data-file-size="1" data-file-mime-type="" data-alt="image-20240105-094209.png" data-renderer-start-pos="10354">
+<div id="newFileExperienceWrapper" class="new-file-experience-wrapper cc-1v5j59u" data-testid="media-card-view"> </div>
+</div>
+</div>
+</div>
+<p data-renderer-start-pos="10356"> </p>
+<h4 id="Setting-Anonymity-Limits" data-renderer-start-pos="10358"><strong data-renderer-mark="true">Setting Anonymity Limits</strong></h4>
+<p data-renderer-start-pos="10384">Due to filtering or quotas the number of responses to certain questions can be so low that it might be possible to draw conclusions about the identity of participants or participant groups. However, in certain use cases – e.g., in the context of employee feedback – it is important to protect the anonymity of participants. For this purpose, you can configure anonymity criteria directly as report filters in Reporting+. These filters can also be applied either to the entire report or only to sections of the report.</p>
+<ul class="ak-ul

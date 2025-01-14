@@ -1,0 +1,97 @@
+ method} </strong></em><strong> | </strong><em><strong> {SOAP method}</strong></em></p>
+<p>The examples provided are REST requests, our recommended method for accessing the Service-Layer. The list of services omits the mandatory /service/ base path. All service layer requests need to use this base path, e.g. <code>GET /survey/surveys/</code> should be <code>GET https://efs-installation.com/service/survey/surveys/</code> in your application.</p>
+<p>When requesting services to be activated through the support, it is best to provide the SOAP method names, as these are unique and avoid confusion.</p>
+<p> </p>
+<h1 id="header-1">EFS</h1>
+<h2 id="header-3">Email blocklist, global and survey based</h2>
+<div class="expand-macro">
+<h4 id="h_01J441N79CZGJC5XFDKWW37M03"> </h4>
+<h3 id="header-5">DELETE /efs/mailblacklist/</h3>
+<p>Deletes a list of email addresses from blocklist</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "emailList": [
+    {
+      "email": "example@domain.tld",
+      "surveyId": 1234
+    }
+  ]
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[
+    {
+        "email": "example@domain.tld",
+        "surveyId": 1234,
+        "result": 1
+    }
+]</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79CY2YMCYFTWMJAMWGC"> </h4>
+<h3 id="header-6">GET /efs/mailblacklist/</h3>
+<p>Get a list of all blocklisted email addresses (both global and survey). Global entries have <em>surveyId</em> 0.</p>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[
+  {
+    "email": "example@domain.tld",
+    "surveyId": 0,
+    "createdAt": "2020-07-02T12:53:50+00:00",
+    "createdBy": "SERVICE"
+  }
+]</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79C9KWYBW7998PGAYG5"> </h4>
+<h3 id="header-7">POST /efs/mailblacklist/</h3>
+<p>Add a list of email addresses to blocklist. If surveyId is specified the email will be blocked for given survey, otherwise if omitted or if surveyId is 0, the email will be added to global blocklist.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "emailList": [
+    {
+      "email": "example@domain.tld",
+      "surveyId": 1234
+    }
+  ]
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[
+    {
+        "email": "example@domain.tld",
+        "surveyId": 1234,
+        "result": 1
+    }
+]</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79CNA33CJXS9FP1JJE2"> </h4>
+<h3 id="header-8">POST /efs/mailblacklist/check</h3>
+<p>If surveyId is not specified, or the id is 0, only the global blocklist will be checked. By providing a surveyId, the system will check if the email is blocked in the given survey only. The return value is a boolean.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "emailAddress": "example@domain.tld",
+  "surveyId": 1234
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">true</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79CT68Q0EYP069QFV21"> </h4>
+<h3 id="header-9">POST /efs/mailblacklist/getListByDateRange</h3>
+<p>Get a list of blocklisted email addresses (both global and survey related) restricted by date range.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "dateRange": {
+    "from": "2020-07-01T12:53:50+00:00",
+    "to": "2020-07-03T12:53:50+00:00"
+  }
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[
+    {
+        "email": "example@domain.tld",
+        "surveyId": 1234,
+        "result": 1
+    }
+]</code></pre>
+</div>
+<div class="expand-macro

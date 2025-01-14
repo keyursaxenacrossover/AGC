@@ -1,0 +1,35 @@
+.com:65222</code> (Bank of America Cluster)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Navigate to <strong>add account script</strong> folder and list its contents (if needed)<br><code>cd /nfs/dumps/_add_efs_user_account/</code><br><code>ll</code><br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21344474761490">
+</li>
+<li>Copy muster text file and edit it <strong>(repeat step if you need multiple agents accounts to be created)<br></strong><code>cp textfiles/_muster_username.txt textfiles/jon.doe.txt &amp;&amp; vi textfiles/jon.doe.txt</code>
+</li>
+<li>Add agent account data and save file; this is the expected format:<br>
+<pre>doe<br><br>Jon<br><br>Doe<br><br><a href="mailto:jon.doe@trilogy.com">jon.doe@trilogy.com</a></pre>
+<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21344474767890">
+</li>
+<li>Copy "muster" shell script file and edit it<br><code>cp shell_script/_muster_addusername_NEW.sh shell_script/jon.doe.sh &amp;&amp; vi shell_script/jon.doe.sh</code>
+</li>
+<li>Reference text file created in step 4 in shell script and save file<br>
+<ol>
+<li>Change
+<pre>for i in $(ls /nfs/installations/);do cd /nfs/installations/$i/nfs/opst/$i.customervoice360.com/htdocs/www/ &amp;&amp; echo $i &amp;&amp; php support/add_account.php &lt; /nfs/dumps/_add_efs_user_account/textfiles/username.txt;done</pre>
+</li>
+<li>To:
+<pre>for i in $(ls /nfs/installations/);do cd /nfs/installations/$i/nfs/opst/$i.customervoice360.com/htdocs/www/ &amp;&amp; echo $i &amp;&amp; php support/add_account.php &lt; /nfs/dumps/_add_efs_user_account/textfiles/jon.doe.txt;done</pre>
+<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21344474769170" width="457" height="262">
+</li>
+<li>If you need to add multiple agents you can repeat this line in the shell script, for example:<br>
+<pre class="wysiwyg-text-align-left">for i in $(ls /nfs/installations/);do cd /nfs/installations/$i/nfs/opst/$i.customervoice360.com/htdocs/www/ &amp;&amp; echo $i &amp;&amp; php support/add_account.php &lt; /nfs/dumps/_add_efs_user_account/textfiles/jon.doe.txt;done<br><br>for i in $(ls /nfs/installations/);do cd /nfs/installations/$i/nfs/opst/$i.customervoice360.com/htdocs/www/ &amp;&amp; echo $i &amp;&amp; php support/add_account.php &lt; /nfs/dumps/_add_efs_user_account/textfiles/max.mustermann.txt;done<br><br>...<br><br>for i in $(ls /nfs/installations/);do cd /nfs/installations/$i/nfs/opst/$i.customervoice360.com/htdocs/www/ &amp;&amp; echo $i &amp;&amp; php support/add_account.php &lt; /nfs/dumps/_add_efs_user_account/textfiles/mister.x.txt;done</pre>
+</li>
+</ol>
+</li>
+<li>Execute shell script, and see below expected output<br><code>sh shell_script/jon.doe.sh</code><br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21344869868178" width="492" height="283">
+</li>
+<li>Repeat for all clusters</li>
+<li>Inform the agent/requester using the below template:</li>
+</ol>
+<pre>Dear &lt;agent&gt;<br><br>You have been added as an admin user to all DXI/EFS instances. As a result, you have received a large number of invitation emails, however, you can safely ignore and delete them.<br><br>Why is that? Because your account has been created in each instance, and whenever you want to login to an instance, you can simply use the <strong>Forgot Password</strong> option in the instance that you need access to and set your password at that point, there is no need to set your password right away.<br><br>With all this being said, we will now proceed to close the ticket, and if further assistance is required, don't hesitate to reach out once again.</pre>

@@ -1,0 +1,117 @@
+>
+<td style="width: 170.347px;">
+<p>Maximum width of scaled images</p>
+</td>
+<td style="width: 418.351px;">
+<p>Maximum width in pixels.</p>
+<p>Please mind: A change in this option affects only newly uploaded images. Existing images are not modified retroactively.</p>
+</td>
+<td style="width: 127.847px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 170.347px;">
+<p>Maximum height of scaled images</p>
+</td>
+<td style="width: 418.351px;">
+<p>Maximum height in pixels, see above.</p>
+</td>
+<td style="width: 127.847px;">
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="function-module-change-password-facility" class="wysiwyg-text-align-justify"><strong>Function Module: Change Password Facility</strong></h3>
+<p class="wysiwyg-text-align-justify">It is essential for panel operation that panelists can change their password. EFS Panel therefore provides a module that allows you to create a special form for changing passwords.</p>
+<p class="wysiwyg-text-align-justify">In the standard panel, you can find such a form on the <strong>Change details → Change password</strong> page, for example.</p>
+<p class="wysiwyg-text-align-justify">EFS Panel provides various design options:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>In addition to the two input fields for the new password, you can optionally request panelists to enter their previous password. This option is used in the standard panel.</p>
+</li>
+<li>
+<p>After saving the change a confirmation message will be displayed.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">In the standard panel, you can use the “func_change_password” template to change the appearance of the “Change password” page and change confirmation.</p>
+<p class="wysiwyg-text-align-justify"><strong>Options</strong></p>
+<p class="wysiwyg-text-align-justify">The “Change password facility” function module offers the following options.</p>
+<table class="wysiwyg-text-align-justify" style="height: 372px;" border="1" width="750" data-layout="default" data-table-width="760">
+<colgroup>
+<col style="width: 181.0px;">
+<col style="width: 397.0px;">
+<col style="width: 182.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" style="width: 175.781px;" data-highlight-colour="#57d9a3">
+<p><strong>Option</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 385.087px;" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 178.75px;" data-highlight-colour="#57d9a3">
+<p><strong>Standard panel "Change password" page</strong></p>
+</th>
+</tr>
+<tr>
+<td style="width: 167.76px;">
+<p>Reference name for template</p>
+</td>
+<td style="width: 377.066px;">
+<p>Name that can be used to trigger the module in positioning templates.</p>
+</td>
+<td style="width: 170.729px;">
+<p>change_pwd</p>
+</td>
+</tr>
+<tr>
+<td style="width: 167.76px;">
+<p>Page module title</p>
+</td>
+<td style="width: 377.066px;">
+<p>Name of the module in the page’s module overview.</p>
+</td>
+<td style="width: 170.729px;">
+<p>Change password</p>
+</td>
+</tr>
+<tr>
+<td style="width: 167.76px;">
+<p>Module template</p>
+</td>
+<td style="width: 377.066px;">
+<p>Module-specific template that controls how data provided by the module are displayed.</p>
+</td>
+<td style="width: 170.729px;">
+<p>func_change_password</p>
+</td>
+</tr>
+<tr>
+<td style="width: 167.76px;">
+<p>The previous password must be entered for confirmation?</p>
+</td>
+<td style="width: 377.066px;">
+<p>The previous password must be entered again.</p>
+</td>
+<td style="width: 170.729px;">
+<p>yes</p>
+</td>
+</tr>
+<tr>
+<td style="width: 167.76px;">
+<p>Message upon successful change</p>
+</td>
+<td style="width: 377.066px;">
+<p>This text is displayed once the change has been saved.</p>
+</td>
+<td style="width: 170.729px;">
+<p>You have changed your password successfully.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="function-module-recover-password-functionality" class="wysiwyg-text-align-justify"><strong>Function Module: Recover Password Functionality</strong></h3>
+<p class="wysiwyg-text-align-justify">The “Recover password” module creates a form via which panelists can request a link for resetting their forgotten password. In the standard panel

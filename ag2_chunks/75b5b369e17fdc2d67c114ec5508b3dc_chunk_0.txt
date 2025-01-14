@@ -1,0 +1,55 @@
+<h1 id="h_01J7E48RZ8BW1HKWPS4560X9MV">Overview</h1>
+<p>This article will help you identify projects with deleted organisations on shared installations like Unipark or Umfragecenter.</p>
+<p>The underlying issue causing the orphaned state of projects is that when deleting an organisation their respective users and teams get deleted, however their projects remain.</p>
+<h1 id="header-1">Instructions</h1>
+<ol>
+<li>
+<p>In the database of the installation identify the projects (<em>project</em>) that are not linked (<em>projects_org</em>) to any active organisation (<em>admin_contract_org</em>)</p>
+<pre><code class="language-text">SELECT p.pid, po.oid, ao.title, p.ptitle, p.pstart, p.pfinish, p.pauth 
+FROM project AS p LEFT JOIN project_org AS po ON p.pid=po.pid LEFT JOIN archive_organizations AS ao ON po.oid=ao.oid 
+WHERE p.pid 
+    IN (SELECT pid FROM project WHERE pid 
+        IN (SELECT pid FROM project_org WHERE oid 
+             NOT IN (SELECT id FROM admin_contract_org)
+            )
+        );</code></pre>
+</li>
+<li>
+<p>The information collected with this needs to be passed on to 1st Level.</p>
+</li>
+<li>
+<p>Save the respective project IDs in a file to create a spreadsheet later.<br>(example from outside the database)</p>
+<pre><code class="language-text">mysql -u USER -h HOST --password=PASSWORD -P PORT DBNAME -A -t -e"SELECT p.pid, po.oid, ao.title, p.ptitle, p.pstart, p.pfinish, p.pauth FROM project AS p LEFT JOIN project_org AS po ON p.pid=po.pid LEFT JOIN archive_organizations AS ao ON po.oid=ao.oid WHERE p.pid IN (SELECT pid FROM project WHERE pid IN (SELECT pid FROM project_org WHERE oid NOT IN (SELECT id FROM admin_contract_org)))" &gt; /dumps/orphanedprojects.txt</code></pre>
+<p>(from inside the database)</p>
+<pre><code class="language-text">SELECT pid FROM project WHERE pid IN (SELECT pid FROM project_org WHERE oid NOT IN (SELECT id FROM admin_contract_org)) INTO OUTFILE '/nfs/opst14_temp/www.unipark.de/test.csv' FIELDS TERMINATED BY ';' ENCLOSED BY '"' LINES TERMINATED BY '\n';</code></pre>
+<p><strong><span style="color: #ff5630;">Remember to replace the information relevant to the installations!</span></strong></p>
+</li>
+<li>
+<p>Create a dummy Organisation, Team and User.<br>Note the Organistation and Team ID for use in the queries <br>and save the User and the Password</p>
+</li>
+<li>
+<p>Now in order for the dummy user to be able to see the projects, the dummy team needs permissions on the projects. This happens in the <em><strong>drago</strong> </em>table. So now we create a file we will source in the last step:</p>
+<pre><code class="language-text">SELECT CONCAT("REPLACE INTO drago (oid,gid,rc) VALUES (",pid,",DUMMY TEAM ID,3);") FROM project WHERE pid IN (SELECT pid FROM project_org WHERE oid NOT IN (SELECT id FROM admin_contract_org)) INTO OUTFILE '/nfs/opst8_temp/ww2.unipark.de/test.sql' LINES TERMINATED BY '\n';</code></pre>
+<p><strong><span style="color: #ff5630;">Remember to replace the information relevant to the installations!</span></strong><br>Alternative if permission denied to the above:</p>
+<pre><code class="language-text">echo 'SELECT CONCAT("REPLACE INTO drago (oid,gid,rc) VALUES (",pid,",35894,3);") FROM project WHERE pid IN (SELECT pid FROM project_org WHERE oid NOT IN (SELECT id FROM admin_contract_org))' | efslogin &gt; orphans.sql</code></pre>
+<p>→ need to clean up the first 3 lines in the script!!</p>
+</li>
+<li>
+<p>Copy this file to the htdocs folder of the installation. In this location we can source the file to the sql server.</p>
+<pre><code class="language-text">mv /nfs/opst[]_temp/[ab1234].customervoice360.com/test.sql .</code></pre>
+<p>The “.” is important. </p>
+</li>
+<li>
+<p>To link the orphaned projects to the dummy organisation we need to add the following statement to the first line of the <em>test.sql</em> file created in the previous step:</p>
+<pre><code class="language-text">UPDATE project_org
+SET oid= DUMMY ORGANISATION ID
+WHERE pid
+IN ();</code></pre>
+<p>The () of the statement needs to be filled in an SQL conform notation with the <em>pid</em>s from:</p>
+<pre><code class="language-text">SELECT pid FROM project WHERE pid IN (SELECT pid FROM project_org WHERE oid NOT IN (SELECT id FROM admin_contract_org));</code></pre>
+<p><strong><span style="color: #ff5630;">This statement will only work until this step. Make sure you have the project ids saved if you need them elsewhere!</span></strong></p>
+</li>
+<li>
+<p>Source the file.</p>
+<pre><code class="language-text">SOURCE test.sql;</code></pre>
+<p>

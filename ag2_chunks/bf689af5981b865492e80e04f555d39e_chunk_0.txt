@@ -1,0 +1,40 @@
+<p><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p>This article provides a comprehensive guide on how to evaluate survey results using Reporting+ in EFS. It covers creating reports, structuring data, applying filters, creating contingency tables, performing recodes, and exporting the final report.</p>
+<p> </p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>Reporting+ is an integrated tool in EFS that allows users to create appealing and informative reports from survey data. This guide will walk you through the process of creating, customizing, and exporting reports using various features of Reporting+.</p>
+<ul>
+<li><a href="#Creating-a-New-Report">Creating a New Report</a></li>
+<li><a href="#Structuring-the-Report">Structuring the Report</a></li>
+<li><a href="#Applying-Filters">Applying Filters</a></li>
+<li><a href="#Creating-Contingency-Tables">Creating Contingency Tables</a></li>
+<li><a href="#Creating-Recodes">Creating Recodes</a></li>
+<li><a href="#Exporting-the-Report">Exporting the Report</a></li>
+</ul>
+<h2 id="Creating-a-New-Report" data-renderer-start-pos="574"><strong data-renderer-mark="true">Creating a New Report</strong></h2>
+<p data-renderer-start-pos="597">Reporting+ is directly integrated into EFS and offers all the features you need to create appealing reports. Simply follow the steps below:</p>
+<ul class="ak-ul" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="740">Open your project and select EFS Reporting+ from the <em data-renderer-mark="true">Survey menu</em> on the left-hand side.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015136314258"></p>
+</li>
+</ul>
+<ul>
+<li data-renderer-start-pos="740">The <strong data-renderer-mark="true">Report Overview</strong> area with a list of all reports previously created for the selected project is displayed. Click <strong data-renderer-mark="true">+ Create report</strong> in the top right-hand corner.</li>
+<li data-renderer-start-pos="1001">A screen for creating new reports is opened. Enter a title and optionally a description. For multilingual projects, select the desired language under <strong data-renderer-mark="true">Language</strong>. If your project is a personalized survey, you can specify that participant data will also be available for evaluation by activating the checkbox next to <strong data-renderer-mark="true">Participant data</strong>. For the sake of our test report, we activate the checkbox.</li>
+<li data-renderer-start-pos="1394">Click on <strong data-renderer-mark="true">Create</strong>.</li>
+</ul>
+<p class="wysiwyg-indent3"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015166375570"></p>
+<div class="rich-media-item mediaSingleView-content-wrap image-align-start cc-24pk9g" data-layout="align-start" data-width="330" data-width-type="pixel" data-node-type="mediaSingle" data-renderer-start-pos="1414">
+<div class="cc-1s992jn">
+<div data-context-id="4021813254" data-type="file" data-node-type="media" data-width="330" data-height="320" data-id="cc1e1eed-9aec-4b6e-bf66-6fc71b917580" data-collection="contentId-4021813254" data-file-name="file" data-file-size="1" data-file-mime-type="" data-alt="image-20240105-085024.png" data-renderer-start-pos="1415"> </div>
+</div>
+</div>
+<h3 id="Structuring-the-Report" data-renderer-start-pos="1417"><strong data-renderer-mark="true">Structuring the Report</strong></h3>
+<p data-renderer-start-pos="1441">Now that your report has been created, you can start building out the structure.</p>
+<p data-renderer-start-pos="1523">The <strong data-renderer-mark="true">Sources</strong> area on the left-hand side contains all available source data (questions, survey data and possibly participant data), recodes, structuring elements such as filters for restricting the base, and split dimensions for creating contingency tables. The structure of the report is built in the <strong data-renderer-mark="true">Structure</strong> area and individual tables and diagrams can be opened and edited in the <strong data-renderer-mark="true">Workpad</strong> area.</p>
+<h4 id="Dividing-the-Report-into-Chapters" data-renderer-start-pos="1920"><strong data-renderer-mark="true">Dividing the Report into Chapters</strong></h4>
+<p data-renderer-start-pos="1955">In the<strong data-renderer-mark="true"> Structure</strong> area, for every new report a first chapter is available by default. You can add further chapters, if required. In the finished report, these chapters are displayed differently depending on the selected export format. The following formats are available:</p>
+<ul class="ak-ul" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="2229">HTML reports: the chapters are displayed in the navigation bar of the report. The

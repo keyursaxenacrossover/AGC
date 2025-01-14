@@ -1,0 +1,96 @@
+esk.com/hc/article_attachments/21014859878930" alt="image-20240618-094050.png"></p>
+<p class="wysiwyg-text-align-justify"><strong>Searching the sample</strong></p>
+<p class="wysiwyg-text-align-justify">To search sample members you can use the usual simple search. However, via extended search, you can use additional limitation criteria:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Always available for selection are panel status and the participant’s status in the sample.</p>
+</li>
+<li>
+<p>If you have used stratification, the stratification variables can be used as search criteria, too.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Editing options</strong></p>
+<p class="wysiwyg-text-align-justify">A range of participant administration actions are available for editing sample members, such as, for example, the dispatching of e-mails to selected participants, or resetting with or without deleting data.</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p><strong>Actions</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p><strong>Description</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Reset and delete data</p>
+</td>
+<td>
+<p>The status of the panelist in the sample is reset to “active”. If the panelist had already participated in the survey he can participate again. Participant's results data already recorded are deleted.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Reset without deleting data</p>
+</td>
+<td>
+<p>The status of the panelist in the sample is reset to “active”. Participant's<br>results data already recorded are not deleted.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Delete the panelist from this sample</p>
+</td>
+<td>
+<p>The panelist is removed from the sample.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Send e-mail</p>
+</td>
+<td>
+<p>Using this function, you can send emails to the selected panelists.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Disposition code 15 (not available)</p>
+</td>
+<td>
+<p>If invitation mails are bounced, you can set the corresponding panelists to disposition code 15. This code will be taken into account in the field report during evaluation.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"><br>When using an action proceed in a manner analogous to participant administration: Search the desired panelists and mark them in the “Selection” column. Then set the desired action and confirm with the <strong>Send request</strong>.</p>
+<h2 id="inviting-and-reminding-sample-members" class="wysiwyg-text-align-justify"><strong>Inviting and reminding sample members</strong></h2>
+<p class="wysiwyg-text-align-justify">Dedicated tabs allow you to e-mail the sample members in a centralized manner during various work phases:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Inform</strong>: This tab is displayed after creating a new sample. You can use it to reach all participants with disposition codes 11, 12, 20, and 22.</p>
+</li>
+<li>
+<p><strong>Inform again</strong>: This tab is displayed after sending the first invitation e-mail. You can use it to reach all participants with disposition codes 11, 12, 20, and 22.</p>
+</li>
+<li>
+<p><strong>Remind again</strong>: This tab is visible after creating a new sample. After sending the first invitation e-mail, it is activated.</p>
+<ul>
+<li>
+<p>By default, reminders are sent to participants with disposition codes 11, 12, 20, and 22.</p>
+</li>
+<li>
+<p>A drop-down list below the mail form allows you to optionally specify the disposition code of the recipients yourself. You can choose from the codes 11, 12, 13, 14, 20, 21, 22, or 23.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="managing-personalized-links-for-external-survey-start" class="wysiwyg-text-align-justify"><strong>Managing personalized links for external survey start</strong></h2>
+<p class="wysiwyg-text-align-justify">When redirecting sample members to an external survey, personalized links must be used. The following features for managing these links are available:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Import links</strong>: Opens the import dialog.</p>
+<ul>
+<li>
+<p>The CSV file must contain the survey link in the first column and the URL has to start with the protocol (http:// or https://), the placeholder #panel_url#, or any other placeholder specifying the protocol. Optionally you may add the panelists’ pseudonym, <em>u_account</em>,<

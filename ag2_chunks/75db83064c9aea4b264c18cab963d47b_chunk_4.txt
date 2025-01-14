@@ -1,0 +1,75 @@
+>
+<h3 id="mysight-vizshow" class="wysiwyg-text-align-justify">mySight.vizShow</h3>
+<p class="wysiwyg-text-align-justify">Shows the viz.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.vizShow(pageModuleIdentifier)
+    .then(function() {
+        ...
+    });</code></pre>
+<h3 id="mysight-vizhide" class="wysiwyg-text-align-justify">mySight.vizHide</h3>
+<p class="wysiwyg-text-align-justify">Hides the viz.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.vizHide(pageModuleIdentifier)
+    .then(function() {
+        ...
+    });</code></pre>
+<h3 id="mysight-vizdispose" class="wysiwyg-text-align-justify">mySight.vizDispose</h3>
+<p class="wysiwyg-text-align-justify">Disposes the viz.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.vizDispose(pageModuleIdentifier)
+    .then(function() {
+        ...
+    });</code></pre>
+<h3 id="mysight-vizgetareautomaticupdatespaused" class="wysiwyg-text-align-justify">mySight.vizGetAreAutomaticUpdatesPaused</h3>
+<p class="wysiwyg-text-align-justify">Gets the status of automatic updates.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.vizGetAreAutomaticUpdatesPaused(pageModuleIdentifier)
+    .then(function(paused) {
+        ...
+    });</code></pre>
+<h3 id="mysight-vizpauseautomaticupdates" class="wysiwyg-text-align-justify">mySight.vizPauseAutomaticUpdates</h3>
+<p class="wysiwyg-text-align-justify">Pauses automatic updates.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.vizPauseAutomaticUpdates(pageModuleIdentifier)
+    .then(function() {
+        ...
+    });</code></pre>
+<h3 id="mysight-vizresumeautomaticupdates" class="wysiwyg-text-align-justify">mySight.vizResumeAutomaticUpdates</h3>
+<p class="wysiwyg-text-align-justify">Resumes automatic updates.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.vizResumeAutomaticUpdates(pageModuleIdentifier)
+    .then(function() {
+        ...
+    });</code></pre>
+<h3 id="mysight-viztoggleautomaticupdates" class="wysiwyg-text-align-justify">mySight.vizToggleAutomaticUpdates</h3>
+<p class="wysiwyg-text-align-justify">Toggles automatic updates.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.vizToggleAutomaticUpdates(pageModuleIdentifier)
+    .then(function() {
+        ...
+    });</code></pre>
+<h3 id="mysight-vizrevertall" class="wysiwyg-text-align-justify">mySight.vizRevertAll</h3>
+<p class="wysiwyg-text-align-justify">Restores the initial state. Note that url parameters will be ignored in this operation and as such the restored state may differ from the real initial state.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.vizRevertAll(pageModuleIdentifier)
+    .then(function() {
+        ...
+    });</code></pre>
+<h3 id="mysight-vizrefreshdata" class="wysiwyg-text-align-justify">mySight.vizRefreshData</h3>
+<p class="wysiwyg-text-align-justify">Refreshes data from the server.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.vizRefreshData(pageModuleIdentifier)
+    .then(function() {
+        ...
+    });</code></pre>
+<h3 id="mysight-vizshowdownloadworkbookdialog" class="wysiwyg-text-align-justify">mySight.vizShowDownloadWorkbookDialog</h3>
+<p class="wysiwyg-text-align-justify">Shows the download workbook dialog.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.vizShowDownloadWorkbookDialog(pageModuleIdentifier)
+    .then(function() {
+        ...
+    });</code></pre>
+<h3 id="mysight-vizshowexportimagedialog" class="wysiwyg-text-align-justify">mySight.vizShowExportImageDialog</h3>
+<p class="wysiwyg-text-align-justify">Shows the export image dialog.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.vizShowExportImageDialog(pageModuleIdentifier)
+    .then(function() {
+        ...
+    });</code></pre>
+<h3 id="mysight-vizshowexportpdfdialog" class="wysiwyg-text-align-justify">mySight.vizShowExportPDFDialog</h3>
+<p class="wysiwyg-text-align-justify">Shows the export PDF dialog.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.vizShowExportPDFDialog(pageModuleIdentifier)
+    .then(function() {
+        ...
+    });</code></pre>
+<h3 id="mysight-vizshowexportdatadialog" class="wysiwyg-text-align-justify">mySight.vizShowExportDataDialog</h3>
+<p class="w

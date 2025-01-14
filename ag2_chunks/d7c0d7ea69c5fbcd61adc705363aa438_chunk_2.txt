@@ -1,0 +1,37 @@
+ group</em>. In addition to the group title, you can optionally add a description of the group as well as create a group category to organize your data.</li>
+<li>
+<span style="color: #091e42;" data-colorid="p12nsi0yin">Filters are used to define which panelists will be added to certain groups. Create a</span><span style="color: #091e42;" data-colorid="rru0uz0kbm"> </span><strong>group filter</strong><span style="color: #091e42;" data-colorid="ldudkkq4e4"> </span><span style="color: #091e42;" data-colorid="fhlt4n0ugw">under</span><span style="color: #091e42;" data-colorid="jgly7yv5jh"> </span><em>People</em><span style="color: #091e42;" data-colorid="tgxigpma65"> </span><span style="color: #091e42;" data-colorid="twvdopiy88">&gt;</span><span style="color: #091e42;" data-colorid="abwsz7k2ry"> </span><em>Groups</em><span style="color: #091e42;" data-colorid="nqscqcjyrh"> </span><span style="color: #091e42;" data-colorid="pivwb3ogln">&gt;</span><span style="color: #091e42;" data-colorid="kzj0ivbmym"> </span><em>Grouping filters</em><span style="color: #091e42;" data-colorid="zc7d8nng14">.</span>
+<ul>
+<li>Grouping of detractors for NPS calculation (Example)</li>
+<li>md_nps <strong>less</strong> 6 AND md_nps <strong>greater/equal</strong> 0 (Example)</li>
+</ul>
+</li>
+<li>Open <em>People</em> &gt; <em>Groups</em> &gt; <em>Update rules</em> and define the update rules according to which you want your group to be updated at a certain time.</li>
+<li>Upon the creation of the update rules, note the following aspects:
+<ul>
+<li>Select a <strong>Group category</strong> and the <strong>group</strong> you want to be updated. This group should obviously be the same as the one used in Circles.</li>
+<li>Activate the <strong>automatic execution</strong> of the update via respective checkbox.</li>
+<li>Set a <strong>Start time</strong>.</li>
+</ul>
+</li>
+<li>Create the following <strong>Defined actions</strong> which are to be executed:
+<ul>
+<li>
+<strong>Empty group</strong> - in case data of users have changed, members who are no longer relevant will be removed from their groups this way.</li>
+<li>
+<strong>Apply grouping filter</strong> - select your created filter.</li>
+<li>Select the <strong>Filter operation</strong> according to the grouping filter - for example “Add panelists that match condition”.</li>
+<li>After execution of the update rules, all panelists corresponding to the grouping filter will be added to the panel groups in Panel and Circles [<em>in this example</em>].</li>
+<li>You have created a circle, its content complying dynamically with your grouping filters in <em>People</em>.</li>
+</ul>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><em><strong>Note: </strong>To keep your circle updated properly, set the execution date of the update rules for groups to a time before the update execution of Groups. Otherwise, you would have to wait for the next update for at least one day. After setup, you can manually execute the update rules and Groups (in the Groups menu) using the play button at any time.</em></p>
+<p class="wysiwyg-text-align-justify"><strong>User Managed Groups:</strong></p>
+<p class="wysiwyg-text-align-justify">To avoid confusion when managing groups in Portals, the system is designed so that the person who creates a User-managed group is defined as the ‘owner’. Only group members can view a public group, and only the owner can edit the group. Thus, only group owners can publish or make changes to groups. This is consistent across all modules in Portals, so when inviting new people to a Portal using the Portal Invitation module, you can only select groups that you own.</p>
+<h2 id="h_01HGKSMPRTG0JDQX3JDQKX3NQP" class="wysiwyg-text-align-justify">Reported Posts</h2>
+<p class="wysiwyg-text-align-justify">In the People → Contacts → Reported posts menu, you will find all abuse reports received.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>By default, only open reports are shown. To display reports with other statuses, use extended search.</li>
+<li>The Frequently reported posts tab displays open reports grouped by target post, allowing you to easily identify posts with multiple reports.</li>
+<li>To change the status of multiple reports for the same post, open one report, change the status and editor, add your comment, and activate the “Batch processing” checkbox before saving. This applies the status change to all reports

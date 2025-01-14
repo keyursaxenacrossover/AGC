@@ -1,0 +1,80 @@
+" alt="image-20210510-161818.png"><ul><li>
+<p>Identity Providers</p>
+<ul>
+<li><p>Add Tivian Azure AD !!!</p></li>
+<li>
+<p>Routing Rules</p>
+<ul><li><p>Change Questback routing rule</p></li></ul>
+</li>
+</ul>
+</li></ul><h2 id="header-13">Administrators (dependent on Identity Provider)</h2><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20717133335314" alt="image-20210510-161901.png"><ul>
+<li><p>Add new Tivian Administrators</p></li>
+<li>
+<p>Applications <ac:emoticon ac:emoji-fallback=":question_mark:" ac:emoji-id="atlassian-question_mark" ac:emoji-shortname=":question_mark:" ac:name="question"></ac:emoticon></p>
+<ul><li><p>Sign on &gt; Issuer</p></li></ul>
+</li>
+</ul><p> </p><h2 id="header-14">Customization (dependent on custom domain)</h2><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20717074148498" alt="image-20210510-161324.png"><ul><li>
+<p>Custom URL Domain (<a data-card-appearance="inline" href="http://okta.testback.com">http://okta.testback.com</a> ) → Check the entire workflow</p>
+<ul><li>
+<p>Request: can we setup multiple custom domains at once? </p>
+<ul><li><p>If not, can we do it with routing?</p></li></ul>
+</li></ul>
+</li></ul><p> </p><h2 id="header-15">API (dependent on custom domain)</h2><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20717096030738" alt="image-20210510-161957.png"><ul><li>
+<p>Authorization Server</p>
+<ul>
+<li><p>Add new Tivian Authorization Server</p></li>
+<li><p>Change audience from api://questback to something different</p></li>
+<li>
+<p>Tokens</p>
+<ul><li><p>Change User Generated Tokens</p></li></ul>
+</li>
+<li>
+<p>Trusted Origins</p>
+<ul><li><p>Change if necessary</p></li></ul>
+</li>
+</ul>
+</li></ul><p></p><h2 id="header-16">People (dependent on Identity Provider)</h2><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20717133173650" alt="image-20210510-162051.png"><ul>
+<li>
+<p>Add all Tivian Users - Discuss with IT OPs</p>
+<ul>
+<li><p>Can we just add users? Or do we have to change them? (tbd with IT Ops)</p></li>
+<li><p>Root user: Stay as is? Talk to IT OPs → noreply@tivian.com?</p></li>
+</ul>
+</li>
+<li><p>Alternative: Script “converting” execution (qb &gt; tivian) for EFS and DV </p></li>
+</ul><h3 id="header-18">Clients:</h3><ul><li>
+<p>Change Application Redirect URI in external IDPs (!!!!!)</p>
+<ul>
+<li><p>Talk to IT OPs - Major Change! (SAML and OIDC)</p></li>
+<li><p>New Metadata Document</p></li>
+<li><p>New Redirect URI for OIDC</p></li>
+</ul>
+</li></ul><p> </p><h3 id="header-19">EFS Config: </h3><ul>
+<li><p>audience (see authorization server) → dependent on CD</p></li>
+<li><p>iam_federated_domains in all installations to <a data-card-appearance="inline" href="http://tivian.com">http://tivian.com</a> -&gt;dependent on IdP</p></li>
+<li><p>iam_well_known_url → dependent on CD</p></li>
+</ul><h3 id="header-20">DV Config: </h3><ul>
+<li><p>Configuration root: iam parameters </p></li>
+<li><p>Mail templates</p></li>
+<li>
+<p>User details</p>
+<ul>
+<li><p>Status</p></li>
+<li><p>Error messages</p></li>
+</ul>
+</li>
+<li>
+<p>Login screens</p>
+<ul>
+<li><p>Bypass</p></li>
+<li><p>No bypass</p></li>
+<li><p>Okta deactivated</p></li>
+</ul>
+</li>
+<li><p>Logout page</p></li>
+<li><p>No permission page</p></li>
+<li><p>Error page </p></li>
+<li><p>Confirmation page when installing Tivian Access</p></li>
+<li><p>User migration / creation </p></li>
+<li><p>Okta adaptation (Apps and Groups)</p></li>
+</ul><p></p><h3 id="header-21">Custom specific adaptations (Installations)</h3><ul><li><p>IT Ops area</p></li></ul><h3 id="header-22

@@ -1,0 +1,47 @@
+<p><strong>Original Confluence URL:</strong> <a href="https://qbdocs.atlassian.net/wiki/spaces/1LS/pages/2293989523">https://qbdocs.atlassian.net/wiki/spaces/1LS/pages/2293989523</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+<article>
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K">Overview</h1>
+<p>This article provides instructions on how to bypass Single Sign-On (SSO) for Tivian installations and access the admin area. It also includes information on identifying different types of SSO and handling custom SSO scenarios.</p>
+<p> </p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>This guide focuses on bypassing SSO for Tivian installations, accessing admin areas, and distinguishing between Tivian/Questback SSO and custom SSO implementations.</p>
+<ul>
+<li><a href="#h_01HGKSMPRSWKJ9QXQJ8YJCZ8YT">Bypassing SSO for Tivian Installations</a></li>
+<li><a href="#h_01HGKSMPRSBXKQGXQJ8YJCZ8YU">Identifying SSO Types</a></li>
+<li><a href="#h_01HGKSMPRSBXKQGXQJ8YJCZ8YV">Tivian/Questback SSO Examples</a></li>
+<li><a href="#h_01HGKSMPRSBXKQGXQJ8YJCZ8YW">Accessing Root Account</a></li>
+<li><a href="#h_01HGKSMPRSBXKQGXQJ8YJCZ8YX">Custom SSO Scenarios</a></li>
+</ul>
+<p> </p>
+<h2 id="h_01HGKSMPRSWKJ9QXQJ8YJCZ8YT">Bypassing SSO for Tivian Installations</h2>
+<p>To bypass SSO for Tivian installations, use the generic URL format: </p>
+<ul>
+<li><strong>[Installation URL]/iam/admin/auth/login/bypass</strong></li>
+</ul>
+<h2 id="h_01HGKSMPRSBXKQGXQJ8YJCZ8YU">Identifying SSO Types</h2>
+<h3 id="h_01J3Z0EYC46YAC32SJ0P4PV55A">In Keypass: (IS THIS STILL USED? IF NOT, ARE THESE MIGRATED TO LASTPASS?)</h3>
+<p>All installations that have "iam/admin/auth/login/bypass" as login are using TIVIAN/Questback SSO.</p>
+<h3 id="h_01J3Z0EYC41K8B6M8JNSTR8SBB">In Globis:</h3>
+<p>If the module "iam_module_active" is present, it indicates TIVIAN/Questback SSO.</p>
+<p>All other SSOs are considered <strong>Custom SSO</strong>. For problems with custom SSO, create a PSBUG and forward it to PS. <strong>(WE NEED ROUTING CLARIFICATION)</strong></p>
+<p> </p>
+<h2 id="h_01HGKSMPRSBXKQGXQJ8YJCZ8YV">Tivian/Questback SSO Examples (TIVIAN INPUT REQUIRED)</h2>
+<ul>
+<li>DOKA: <a href="http://de3337.customervoice360.com/iam/admin/auth/login/bypass">http://de3337.customervoice360.com/iam/admin/auth/login/bypass</a>
+</li>
+<li>RAG: <a href="https://zd3835.customervoice360.com/iam/admin/auth/login/bypass">https://zd3835.customervoice360.com/iam/admin/auth/login/bypass</a>
+</li>
+<li>Intervista: <a href="https://ch1157.customervoice360.com/iam/admin/auth/login/bypass">https://ch1157.customervoice360.com/iam/admin/auth/login/bypass</a>
+</li>
+<li>ICA: <a href="https://pm0046.customervoice360.com/iam/admin/auth/login/bypass">https://pm0046.customervoice360.com/iam/admin/auth/login/bypass</a>
+</li>
+<li>SWISS: <a href="https://survey.swiss.com/iam/admin/auth/login/bypass">https://survey.swiss.com/iam/admin/auth/login/bypass</a>
+</li>
+</ul>
+<p><strong>Note:</strong> For SWISS, a VPN connection is required. Using the Office-VPN will direct you to the normal login page for the EFS-Admin area.</p>
+<p>For customer accounts, please create a PSIN as 2nd level support cannot assist. Also, inform the customer to contact their internal IT department.</p>
+<p> </p>
+<h2 id="h_01HGKSMPRSBXKQGXQJ8YJCZ8YW">Accessing Root Account</h2>
+<p>To log in as root, use the following email:</p>
+<p><a href="mailto:noreply@tivian.com">noreply@tivian.com</a></p>
+<p>Use the password from Keypass.

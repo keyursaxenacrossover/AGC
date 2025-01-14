@@ -1,0 +1,136 @@
+<h1 id="h_01J67DME2NJD093N4Z62ZZ2JA4">Table of Contents</h1>
+<ul>
+<li>
+<a href="#header-1">Granting/Revoking Admin Permissions</a>
+<ul>
+<li><a href="#header-3">Super Admin</a></li>
+<li><a href="#header-4">Tivian Access Installers</a></li>
+<li><a href="#header-5">User Manager</a></li>
+<li><a href="#header-6">Token Users</a></li>
+</ul>
+</li>
+</ul>
+<p>The following administration roles will be used internally to manage and setup Okta resources.<br>A detailed permission list taken from the <a href="https://help.okta.com/en/prod/Content/Topics/Security/Administrators.htm">Okta Documentation: Administrators</a> is used to decide which user group in DXI gets which Admin role assigned.</p>
+<h1 id="header-1">Granting/Revoking Admin Permissions</h1>
+<p>Granting or revoking admin permissions in Okta will be done via Groups.</p>
+<p>A super admin can setup groups which will grant all users of the group a set of permissions.<br>Permissions are bundled into Admin Roles in Okta. For our use cases a group can contain multiple Okta administrator roles.</p>
+<p>If a person needs administrative permissions he/she should be added to such a group.<br>If the permissions are not needed anymore the person should be removed from the group.</p>
+<p>The following <strong>admin groups</strong> are available:</p>
+<ul>
+<li>
+<p><strong>Super Admins</strong></p>
+</li>
+<li>
+<p><strong>Tivian Access Installers</strong></p>
+<ul>
+<li>
+<p>Org. Admin</p>
+</li>
+<li>
+<p>API Access Management Admins</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>User Manager</strong></p>
+<ul>
+<li>
+<p>TBD</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Token Users</strong></p>
+<ul>
+<li>
+<p>Org Admin</p>
+</li>
+<li>
+<p>App. Admin OR API Access Management Admin</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="header-3">Super Admin</h2>
+<p>The super admin group will assign the super admin role from Okta which has access to all Okta permissions. The super admin role also has exclusive permissions to manage other administrators.</p>
+<p>Due to that reason, the amount of people with that role should be as limited as possible. Other administrative roles should be assigned to people working with Okta which cover all their needed permissions.</p>
+<p><strong>List of “notable special permissions”</strong>:</p>
+<ul>
+<li>
+<p>Grant Administrative permissions</p>
+<ul>
+<li>
+<p><code>Add, remove, and view administrators</code></p>
+</li>
+<li>
+<p><code>Add users to a group assigned admin privileges</code></p>
+</li>
+<li>
+<p><code>Assign admin privileges to a group</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p><code>Edit default email settings for other admins</code></p>
+</li>
+<li>
+<p><code>Enable Self Service Registration</code></p>
+<ul>
+<li>
+<p>This is something we decided not to use and should not be enabled by accident</p>
+</li>
+</ul>
+</li>
+<li>
+<p><code>Enable MFA for the Admin Dashboard</code></p>
+</li>
+</ul>
+<p><strong>Super admin access should be limited to Support and ESW resources only.</strong></p>
+<h2 id="header-4">Tivian Access Installers</h2>
+<p>Setting up Tivian Access requires multiple permissions in Okta.</p>
+<p>The setup will be mostly performed by support.</p>
+<p><strong>The following permissions are needed </strong>to set it up (as seen here Okta tenant setup ):</p>
+<ul>
+<li>
+<p><code>Create groups</code> - Org. Admins</p>
+</li>
+<li>
+<p><code>Add, delete, and edit scope, claim, and policy on an authorization server</code> - API Access Management Admins</p>
+</li>
+<li>
+<p>Sign on: <code>Add/update/delete policies</code> - Org. Admins</p>
+</li>
+<li>
+<p><code>Create User Tokens</code> → Will be performed by a designated user, see Token Admin</p>
+</li>
+<li>
+<p><code>Add a social IDP</code> - Org. Admins</p>
+<ul>
+<li>
+<p>Also needed: <code>Manage profile mappings</code> - Org. Admins, App. Admins and API Access Management Admins</p>
+</li>
+</ul>
+</li>
+<li>
+<p><code>Add and configure applications</code> - App. Admins and API Access Management Admins</p>
+</li>
+<li>
+<p><code>Edit MFA factors</code> - Org. Admin</p>
+</li>
+<li>
+<p>Password Policy</p>
+</li>
+</ul>
+<p><strong>Required Okta Admin Roles:</strong></p>
+<ul>
+<li>
+<p>Org. Admin</p>
+</li>
+<li>
+<p>API Access Management Admins</p>
+</li>
+</ul>
+<p><strong>People in this Group</strong></p>
+<ul>
+<li>
+<p>All 2nd Level support

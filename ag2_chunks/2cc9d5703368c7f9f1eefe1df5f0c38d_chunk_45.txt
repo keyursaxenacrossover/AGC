@@ -1,0 +1,149 @@
+ class="wysiwyg-text-align-center" style="width: 175.99px;" data-highlight-colour="#57d9a3">
+<p><strong>Option</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 439.531px;" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 146.094px;" data-highlight-colour="#57d9a3">
+<p><strong>Standard panel</strong></p>
+</th>
+</tr>
+<tr>
+<td style="width: 167.969px;">
+<p>Reference name for template</p>
+</td>
+<td style="width: 431.51px;">
+<p>Name that can be used to trigger the module in positioning templates.</p>
+</td>
+<td style="width: 138.073px;">
+<p>Profile_search</p>
+</td>
+</tr>
+<tr>
+<td style="width: 167.969px;">
+<p>Page module title</p>
+</td>
+<td style="width: 431.51px;">
+<p>Name of the module in the page’s module overview</p>
+</td>
+<td style="width: 138.073px;">
+<p>Profile search</p>
+</td>
+</tr>
+<tr>
+<td style="width: 167.969px;">
+<p>Module template</p>
+</td>
+<td style="width: 431.51px;">
+<p>Module-specific template that controls how data provided by the module are displayed.</p>
+</td>
+<td style="width: 138.073px;">
+<p>func_profile_search</p>
+</td>
+</tr>
+<tr>
+<td style="width: 167.969px;">
+<p>Profile form configuration</p>
+</td>
+<td style="width: 431.51px;">
+<p>In this field, you select the desired form. Only forms of the “Profile” type are available.</p>
+</td>
+<td style="width: 138.073px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 167.969px;">
+<p>Limit search to language version(s)</p>
+</td>
+<td style="width: 431.51px;">
+<p>In this field, you define which panelists can be found with the search tool The following options are available:</p>
+<ul>
+<li>
+<p>Show panelists from the same language version only</p>
+</li>
+<li>
+<p>Show panelists from all language versions of the current website</p>
+</li>
+<li>
+<p>Show panelists from all language versions</p>
+</li>
+</ul>
+</td>
+<td style="width: 138.073px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 167.969px;">
+<p>Include panelists with the following panel statuses in the results lists</p>
+</td>
+<td style="width: 431.51px;">
+<p>Use the select box to select those statuses that make sense to display. In principle, you can select all panel statuses except for “deleted”.</p>
+</td>
+<td style="width: 138.073px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 167.969px;">
+<p>Only show profiles if search criteria have been entered</p>
+</td>
+<td style="width: 431.51px;">
+<p>If this option is activated, no panelists will be displayed until a panelist enters the search criteria and starts a search. This means that the complete list may never be displayed.</p>
+<p>If this option is not activated, the complete list will be displayed unless the panelists specify search criteria.</p>
+<p>Please note: The use of this option can improve the performance of the installation. The constant opening of the complete panelist list puts unnecessary strain on the server.</p>
+</td>
+<td style="width: 138.073px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 167.969px;">
+<p>Maximum number of profiles displayed per page</p>
+</td>
+<td style="width: 431.51px;">
+<p>Limits the length of the display per page. Excess profiles are displayed on subsequent pages.</p>
+</td>
+<td style="width: 138.073px;">
+<p>80</p>
+</td>
+</tr>
+<tr>
+<td style="width: 167.969px;">
+<p>Profile sort order</p>
+</td>
+<td style="width: 431.51px;">
+<p>Specify which variable is to be used for defining the sort order. The following variables are available:</p>
+<ul>
+<li>
+<p>Address data</p>
+</li>
+<li>
+<p>Master data</p>
+</li>
+<li>
+<p>penter_date: Date of entry into the panel</p>
+</li>
+<li>
+<p>site_id</p>
+</li>
+</ul>
+<p>Possible sort order:</p>
+<ul>
+<li>
+<p>Ascending</p>
+</li>
+<li>
+<p>Descending</p>
+</li>
+</ul>
+</td>
+<td style="width: 138.073px;">
+<p>80</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="function-module-panelist-ratings" class="wysiwyg-text-align-justify"><strong>Function Module: Panelist Ratings</strong></h3>
+<p class="wysiwyg-text-align-justify">With the “Panelist

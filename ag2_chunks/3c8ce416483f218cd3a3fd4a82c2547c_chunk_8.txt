@@ -1,0 +1,109 @@
+ the defined number of failed login attempts. The panelist account is then deactivated for a set amount of time, and an error message is displayed to the panelist upon each new login attempt during that time. New login attempts during the deactivation phase will not extend the duration of deactivation, and they will not be counted as additional failed login attempts.</p>
+</td>
+<td style="width: 142.5px; height: 272px;">
+<p> </p>
+</td>
+</tr>
+<tr style="height: 240px;">
+<td style="width: 193.611px; height: 240px;">
+<p>Brute force account deactivation time (in seconds)</p>
+</td>
+<td style="width: 346.441px; height: 240px;">
+<p>In this field, you specify for how long the panelist accounts are to be suspended upon triggering the brute force protection.</p>
+<p>Please note:</p>
+<ul>
+<li>
+<p>The messages "brute_force" and "brute_forced", used in case of a suspension, can be edited in the <strong>Website → Standard content → Messages</strong> menu.</p>
+</li>
+<li>
+<p>Manual reactivation ahead of time is not possible.</p>
+</li>
+</ul>
+</td>
+<td style="width: 142.5px; height: 240px;">
+<p> </p>
+</td>
+</tr>
+<tr style="height: 104px;">
+<td style="width: 193.611px; height: 104px;">
+<p>Number of allowed failed login attempts</p>
+</td>
+<td style="width: 346.441px; height: 104px;">
+<p>In this field, you specify how many failed attempts are allowed. If the specified number is exceeded, the respective panelist account will be suspended.</p>
+</td>
+<td style="width: 142.5px; height: 104px;">
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"><strong>From EFS 9.1 onwards: Password security</strong></p>
+<p class="wysiwyg-text-align-justify">With EFS 9.1, password encryption for panels was adjusted according to the most recent security standards. In addition to the features described below, this includes the following mail wildcards in the standard scope:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>#password_recovery_url#: “Reset password” link.</p>
+</li>
+<li>
+<p>#u_sec_quest#: Security question.</p>
+</li>
+<li>
+<p>#u_sec_quest_answer#: Answer to the security question.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The appropriate mail template is set in the function module.</p>
+<table class="wysiwyg-text-align-justify" style="height: 900px;" border="1" width="718" data-layout="full-width" data-table-width="1798.164">
+<colgroup> <col style="width: 130.0px;"> <col style="width: 360.0px;"> </colgroup>
+<tbody>
+<tr style="height: 29px;">
+<th class="wysiwyg-text-align-center" style="width: 187.101px; height: 29px;">
+<p><strong>Description</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 523.594px; height: 29px;">
+<p><strong>Explanation</strong></p>
+</th>
+</tr>
+<tr style="height: 60px;">
+<td style="width: 179.08px; height: 60px;">
+<p>Activate change log</p>
+</td>
+<td style="width: 515.573px; height: 60px;">
+<p>In the period specified (see below), the password can be changed only once.</p>
+</td>
+</tr>
+<tr style="height: 60px;">
+<td style="width: 179.08px; height: 60px;">
+<p>Password change timeout</p>
+</td>
+<td style="width: 515.573px; height: 60px;">
+<p>see above</p>
+</td>
+</tr>
+<tr style="height: 31px;">
+<td style="width: 179.08px; height: 31px;">
+<p>Prevent re-use</p>
+</td>
+<td style="width: 515.573px; height: 31px;">
+<p>In the period specified (see below), a password cannot be used again.</p>
+</td>
+</tr>
+<tr style="height: 31px;">
+<td style="width: 179.08px; height: 31px;">
+<p>Re-use interval</p>
+</td>
+<td style="width: 515.573px; height: 31px;">
+<p>see above</p>
+</td>
+</tr>
+<tr style="height: 60px;">
+<td style="width: 179.08px; height: 60px;">
+<p>Validity period for the “Reset password” link</p>
+</td>
+<td style="width: 515.573px; height: 60px;">
+<p>After the period specified, the “Reset password” link will not be valid anymore.</p>
+</td>
+</tr>
+<tr style="height: 174px;">
+<td style="width: 179.08px; height: 174px;">
+<p>Activate security question</p>
+</td>
+<td style="width: 515

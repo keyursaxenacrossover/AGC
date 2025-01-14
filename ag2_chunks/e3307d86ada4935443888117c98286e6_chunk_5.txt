@@ -1,0 +1,36 @@
+>: In the <em>Report Manager</em>, a report is ordered based on the settings made in the guide configuration (<em>Settings &gt; Report-Manager Connection</em>). This is created in PDF format and in the portal language of the guide creator.</p>
+</li>
+<li>
+<p><strong>Create action</strong>: Specify here whether an Action should be created in the <em>Action Board</em> (with a certain due date, where appropriate).</p>
+</li>
+<li>
+<p><strong>Send e-mail</strong>: You can choose to send an e-mail to the guide initiator or to a panelist whose e-mail address you should enter. Also select the appropriate mail template.</p>
+</li>
+<li>
+<p><strong>Update Master data</strong>: The date on which the successful process occurred is added to the selected master data variable.</p>
+</li>
+</ul>
+<p>For a process that has been classified as <em>unsuccessful</em>, only the actions <strong>Send e-mail</strong> and <strong>Update Master data</strong> are available.</p>
+<p> </p>
+<h3 id="header-29">Information</h3>
+<p>The actions can be combined with each other and the same action can be selected several times.</p>
+<h3 id="header-30">Start Date in Guide Status</h3>
+<p>For a better overview of your surveys, the guide status now shows when a guide wave was started. In the external view, go to the <strong>Guides</strong> menu and select the button <strong>View status</strong> for the desired guide. The newly added <strong>Start</strong> column shows you whether and when your survey was last started.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998093410066" alt="EN_start_column.png"></p>
+<p> </p>
+<h3 id="header-31">Information</h3>
+<p>Depending on the language setting, a time stamp in the format MM-DD-YYYY HH:MM (English) or DD-MM-YYYY HH:MM (German) is used for the start date display.</p>
+<h3 id="header-32">Finished Guide Waves</h3>
+<p>So far, a completed guide wave was overwritten by a restart of the guide. But now finished guide waves are listed in the <strong>guide status</strong>. So the access to the results of the completed guide waves is quick and easy. The <strong>View results</strong> button in the menu of the corresponding guide wave takes you to the linked dashboard. The current guide wave is at the top, below are finished guide waves in descending chronology.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998082139154" alt="EN_endedWaves.png"></p>
+<h2 id="header-34">Ideation-Guide (IDEA)</h2>
+<p>New features have also been developed and implemented. Two new guide statuses have been added. An automatic pre-grouping can be done by using <em>Key Phrase Extraction</em>. New placeholders are available and the results page has been redesigned.</p>
+<h3 id="header-36">New Guide Statuses</h3>
+<p>As of now, the <em>Ideation Guide</em> has the <em>Completed</em> status and <em>Failed</em> status. The <em>Completed</em> status is defined as follows: All actions of a guide wave transferred to the <em>Action Board</em> have been evaluated by the participants and the tickets have been transferred to the <em>Done</em> status.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998074538386" alt="Ideation Guide completed.png"></p>
+<p>In addition to the <em>Completed</em> status, you also have the new <em>Failed</em> status. This status indicates that no suggestion has been received at the end of the suggestion phase, or that no one has been voted at the end of the voting period. In these cases, the <em>Ideation Guide</em> wave will be obtain the status <em>Failed</em>. The <em>Failed</em> status has the <em>Show Participants</em> and <em>Summary</em> options.</p>
+<h3 id="header-37">Automatic Pre-grouping Using <em>Key Phrase Extraction</em>
+</h3>
+<p>The suggestions made by the participants can be pre-grouped using <em>Key Phrase Extraction</em>. To use this feature, the new section "Settings Grouping" has been added to the <strong>Settings</strong> tab of your<em> Ideation Guide</em> (CMS area of <em>Portals</em>). There you activate the feature "Automatic Pregrouping" by means of a slide switch. You have to enter the <em>Azure API key</em>. The connection needs to be tested. After a successful test, the feature can be used. This option is used to analyze the suggestions made by the participants and to pre-group them. By default, the "Automatic Pregrouping" option is disabled.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998067839634" alt="Merge Settings.png"></p>
+<p>The suggestions made by the participants are analyzed, combined and pre-grouped into groups of

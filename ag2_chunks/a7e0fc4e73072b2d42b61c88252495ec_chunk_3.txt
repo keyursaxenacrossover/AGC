@@ -1,0 +1,13 @@
+ installation has to be added in the iam_federated_domains option.</p><p>This has to happen before the sync is enabled. Else a wrong set of users will be migrated to Okta.</p><p>Also see <ac:link ac:card-appearance="inline"><ri:page ri:content-title="EFS Admin Setup" ri:version-at-save="10"></ri:page><ac:link-body>EFS Admin Setup</ac:link-body></ac:link> </p><h3 id="header-13">Identity Provider ID (iam_idp_id)</h3><p>If a customer has their own Identity Provider this provider is created as resource in Okta. In case a client wants their user to skip the identity provider discovery page that is shown in Okta, the ID of the identity provider resource in Okta could be set here.</p><p>In that case the identity provider ID is already known in case a user tries to sign in and the user will be redirected to the identity provider directly without seeing an Okta page.</p><p>This might have an effect on how Tivian users login.</p><p></p><p><strong>Proxy:</strong></p><p>In the current setup EFS runs in a proxy setup. Because of that the proxy has to be configured in the IAM config. But the URL also has to be whitelisted in the proxy. Otherwise EFS cannot reach Okta.</p><ac:task-list>
+<ac:task>
+<ac:task-id>3</ac:task-id>
+<ac:task-status>incomplete</ac:task-status>
+<ac:task-body><span class="placeholder-inline-tasks"><ac:link><ri:user ri:userkey="8a7f808668865ec601689383d2890377"></ri:user></ac:link>  please provide more details</span></ac:task-body>
+</ac:task>
+</ac:task-list><p></p> Provider ID (iam_idp_id)</h3><p>If a customer has their own Identity Provider this provider is created as resource in Okta. In case a client wants their user to skip the identity provider discovery page that is shown in Okta, the ID of the identity provider resource in Okta could be set here.</p><p>In that case the identity provider ID is already known in case a user tries to sign in and the user will be redirected to the identity provider directly without seeing an Okta page.</p><p>This might have an effect on how Tivian users login.</p><p></p><p><strong>Proxy:</strong></p><p>In the current setup EFS runs in a proxy setup. Because of that the proxy has to be configured in the IAM config. But the URL also has to be whitelisted in the proxy. Otherwise EFS cannot reach Okta.</p><ac:task-list>
+<ac:task>
+<ac:task-id>3</ac:task-id>
+<ac:task-status>incomplete</ac:task-status>
+<ac:task-body><span class="placeholder-inline-tasks"><ac:link><ri:user ri:userkey="8a7f808668865ec601689383d2890377"></ri:user></ac:link>  please provide more details</span></ac:task-body>
+</ac:task>
+</ac:task-list><p></p>

@@ -1,0 +1,134 @@
+ of functionality. Please mind that the scope of functionality available in context of the Unipark program remains restricted.</p>
+<p class="wysiwyg-text-align-justify">If you have difficulties with the depiction of the character set due to the PDF export, please use the PPTX or the PPTX-PDF format.</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 245.0px;"> <col style="width: 157.0px;"> <col style="width: 358.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>File format</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Editable?</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Explanation</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>HTML (website)</p>
+</td>
+<td>
+<p>HTML editor</p>
+</td>
+<td>
+<p>This format is particularly suited for online presentations, for example, in the Internet or intranet.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>XLS (MS Excel 2003)</p>
+</td>
+<td>
+<p>yes</p>
+</td>
+<td>
+<p>If necessary, you can edit this file in MS Excel.</p>
+<p>Please note:</p>
+<ul>
+<li>
+<p>The numbers in tables will be formatted as numbers in the Excel export.</p>
+</li>
+<li>
+<p>Excel does not adopt the EFS chart settings but applies its own default settings instead. I.e. the legend is usually activated, the values are hidden and Excel’s default colors are used.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>PPT (MS Power Point 2003)</p>
+</td>
+<td>
+<p>yes</p>
+</td>
+<td>
+<p>If necessary, you can edit these files in MS Power Point.</p>
+<p>Two versions are available:</p>
+<ul>
+<li>
+<p>PPT Default: TIVIAN Default layout.</p>
+</li>
+<li>
+<p>PPT Unbranded: Clear, structured layout with white background to which you can apply your company’s CI PPT templates.</p>
+</li>
+</ul>
+<p>The creation of additional templates requires special programming, i.e. it is not free of charge.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>PDF (Portable Document<br>Format)</p>
+</td>
+<td>
+<p>no</p>
+</td>
+<td>
+<p>PDF reports will be generated on the basis of a PPT report. The PDF files are well-suited for direct forwarding to clients.</p>
+<p>Two versions are available:</p>
+<ul>
+<li>
+<p>PDF Default</p>
+</li>
+<li>
+<p>PDF Unbranded</p>
+</li>
+</ul>
+<p>The creation of additional templates requires special programming, i.e. it is not free of charge.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>PPTX</p>
+</td>
+<td>
+<p>yes</p>
+</td>
+<td>
+<p>File in PPTX format.</p>
+<ul>
+<li>
+<p>This export includes fully editable, native Power-Point charts.</p>
+</li>
+<li>
+<p>Optionally, the templates are customizable to a company’s CI by TIVIAN Professional Services</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>PPTX-PDF</p>
+</td>
+<td>
+<p>no</p>
+</td>
+<td>
+<p>PDF export based on the new PPTX template</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify">Please note that reports in Excel, PPT, PPTX and PDF format are subject to limitations on the part of Microsoft:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>A Power Point report (PPT, PPTX) or a PDF report generated on the basis of Power Point can contain a maximum of 250 slides. An Excel report can contain a maximum of 250 work sheets, i.e., 250 chapters. A work sheet can have a maximum of 256 columns and 65,000 rows.</p>
+</li>
+<li>
+<p>The generation of reports in Excel, PPT, PPTX and PDFs requires a web service running via a .NET server. If your installation is hosted externally in a closed system, an additional Windows server is required for report generation.</p>
+</li>
+</ul>
+<h3 id="the-generation-process" class="wysiwyg-text-align-justify"><strong>The generation process</strong></h3>
+<p class="wysiwyg-text-align-justify">When generating a report, the statistical values will be updated once again. If you were working with test data, the real data will be inserted automatically and the statistical values will be calculated. Afterwards, the completed report will be converted into a file of the desired format.</p>
+<p class="wysiwyg-text-align-justify">This is a resource-intensive process. To ensure a good performance of the installation, it will be executed as follows:</p>
+<ul class="wysiwy

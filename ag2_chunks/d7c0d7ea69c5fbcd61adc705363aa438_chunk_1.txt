@@ -1,0 +1,47 @@
+">Groups are used in two ways: as an integrated module in Feedback Assistant to invite participants to surveys, and as a separate module in Portals for organizing groups. There are two types of circles: Personal Groups and Managed Groups.</p>
+<p class="wysiwyg-text-align-justify"><strong>Personal Groups:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Created in the separate Groups module.</li>
+<li>Users can create their own contact lists from portal participants.</li>
+<li>Flexible and only available to the circle creator.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Managed Groups:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Generated in the EFS administration area.</li>
+<li>Composed of hierarchically dependent groups.</li>
+<li>Accessible to any portal user who is a member of the circle.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Technical Setup of Personal Groups:</strong></p>
+<ol class="wysiwyg-text-align-justify">
+<li>Open the Circles module in the exterior view of your portal.</li>
+<li>Click "Add new Group" to open an entry mask.</li>
+<li>Click "Add contacts" and select members from the contact list via the “plus” button.</li>
+<li>Confirm the selection by closing the entry mask. The new group will be viewable on the circles page.</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><strong>Technical Setup of Managed Circles:</strong></p>
+<ol class="wysiwyg-text-align-justify">
+<li>Open People → Contacts → Groups.</li>
+<li>Select a Panel Group as the basis for the circles.</li>
+<li>Define the variable for the logged-in portal user in "Find Matches in following variable" (e.g., “uEmail”).</li>
+<li>Define the reference value for grouping in "Group circles by following variable" (e.g., “mManager”).</li>
+<li>Optionally, define a label for the group in "Variable for Circle Label".</li>
+</ol>
+<p class="wysiwyg-indent1 wysiwyg-text-align-justify"><em><strong>Note: </strong></em></p>
+<ul class="wysiwyg-indent1 wysiwyg-text-align-justify">
+<li><em>Each panelist who should use a group must be a member of the panel group serving as the basis.</em></li>
+<li><em>Each panelist shown as part of a group must be a member of the basis group and have access to the portal.</em></li>
+<li><em>Most group content, like the display of the label, is shown only to logged-in portal users.</em></li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Access to the Portal:</strong></p>
+<ol class="wysiwyg-text-align-justify">
+<li>Open Portals → Settings → Access permissions.</li>
+<li>Set “Access permission for panel groups” to “Registered users” (default) or “Group members” and add the respective panel group.</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><strong>Setup of Managed Circles via Grouping Filters:</strong></p>
+<p class="wysiwyg-text-align-justify"><strong><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015358980754"></strong></p>
+<p class="wysiwyg-text-align-justify">To implement group compositions in your project setup, proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>First, define your <strong>master data</strong> under <em>People</em> → <em>Master data</em> → <em>Create master data</em>, for example “md_brand” and “md_brand_responsible” as matching variables.</li>
+<li>Create a <strong>group</strong> under <em>People</em> → <em>Groups</em> → <em>Create group</em>. In addition to the group title, you can optionally add a description of the group as well as create a group category to organize your data.</li>
+<li>
+<span style="color: #091e42;" data-colorid="p12nsi0yin">Filters are used to define which panelists will be added to certain groups. Create a</span><span style="color: #091e42;" data-colorid="rru0uz0kbm"> </span><strong>group filter</strong><span style="color: #091e42;" data-colorid="ldudkkq4e4"> </span><span style="color: #091e42;" data-colorid="fhlt4n0ugw">under</span><span style="color: #091e42;" data-colorid="jgly7yv5jh"> </span><em>People</em><span style="color: #091e42;" data-colorid="tgxigpma65"> </span><span style="color: #091e42;" data-colorid="twvdopiy88">&gt;</span><span style="color: #091e42;" data-colorid="abwsz7k2ry"> </span><em>Groups</em><span style="color: #091e42;" data-colorid="nqscqcjyrh">

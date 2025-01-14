@@ -1,0 +1,50 @@
+justify"><strong>Dispatching Registration Keys</strong></p>
+<p class="wysiwyg-text-align-justify">As a GET parameter in a link: Send the link via email, including the #ar_key# wildcard. Manual entry: Send the key via email for panelists to manually enter on a special page (additional programming required).</p>
+<p class="wysiwyg-text-align-justify"><strong>Dispatching Keys from a Personalized Project</strong></p>
+<p class="wysiwyg-text-align-justify">Import email addresses and activated registration keys into participant administration. Assign the “Registration key” column during participant import.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="pci-configuration" class="wysiwyg-text-align-justify">PCI Configuration</h2>
+<p class="wysiwyg-text-align-justify">The Panelist Compliance Index (PCI) captures panelist reliability and stores it in a variable. Configure a classification system (e.g., “Top panelist”, “reliable panelist”) in the People → Panel configuration → PCI configuration menu. The PCI, updated regularly based on events like survey participation or panel logins, is also available for group building.</p>
+<p class="wysiwyg-text-align-justify"><strong>Developing Your Own Classification System</strong></p>
+<p class="wysiwyg-text-align-justify">A classification system consists of PCI codes, each with a numerical value. One code is the default (e.g., “green” for reliable panelists). Codes increase or decrease based on user-defined conditions using participant, system, and master data. Set your own codes, valuations, default values, and update intervals.</p>
+<p class="wysiwyg-text-align-justify"><strong>Viewing Available PCI Codes</strong></p>
+<p class="wysiwyg-text-align-justify">In the PCI configuration menu, view the table of PCI codes, which includes:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Name (e.g., “green” for reliable panelists)</li>
+<li>Description</li>
+<li>Numerical value</li>
+<li>Default value (assigned to all new panelists)</li>
+<li>Number of panelists and active panelists per code</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Edit options:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<strong>Edit</strong>: Opens the editing dialog</li>
+<li>
+<strong>Delete</strong>: Deletes the PCI code after a confirmation</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Creating New PCI Codes</strong></p>
+<p class="wysiwyg-text-align-justify">Click “Create PCI code” to open the entry form. Enter the name, description, and numerical value. Check “Default value?” if it’s the default for new panelists. Save the code.</p>
+<p class="wysiwyg-text-align-justify"><strong>Calculating PCI Codes</strong></p>
+<p class="wysiwyg-text-align-justify">New panelists start with the same code, which changes based on behavior. Use the Calculation tab to define conditions for increasing or decreasing PCI values. Conditions are checked with each update, changing the PCI value if applicable. Use participant, system, and master data to define conditions.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21018302780690"></p>
+<p class="wysiwyg-text-align-justify"><strong>Resetting PCI Codes for All Panelists</strong></p>
+<p class="wysiwyg-text-align-justify">Click “Reset PCI codes for all panelists” on the PCI codes tab to reset all PCI codes to the default. Note: This will irretrievably lose all PCI value information accumulated over time. You can change the PCI value of specific panelists in the People → Panelists administration menu.</p>
+<p class="wysiwyg-text-align-justify"><strong>PCI Update</strong></p>
+<p class="wysiwyg-text-align-justify">Define an automatic PCI calculation interval in the Update interval tab:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>Tick “Enable automatic PCI calculation”.</li>
+<li>Set the initial execution date and time.</li>
+<li>Select the interval type (hour, day) and value (e.g., every 3 days).</li>
+<li>Save the settings.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21018302779922">
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify">To execute a manual PCI update, click “Update PCI values now” on the PCI codes tab and confirm.</p>
+<h2 id="panel-tracking" class="wysiwyg-text-align-justify">Panel Tracking</h2>
+<p class="wysiwyg-text-align-justify">The panel tracking feature allows you to track and measure response behavior in panel and master data surveys. This includes tracking the number of invitations, completed surveys, and sample memberships over time. This data helps improve panel quality and meet ESOMAR guidelines.</p>
+<p class="wysiwyg-text-align-justify"><strong>Functional Scope</strong>:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<strong>Counter Variables and Ratios</strong>: Updated based on panelists’ behavior, with derived ratios for reporting and analysis.</li>
+<li>
+<strong>Data Viewing and Usage</

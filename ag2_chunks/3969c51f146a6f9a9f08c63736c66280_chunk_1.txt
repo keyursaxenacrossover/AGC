@@ -1,0 +1,44 @@
+To successfully create a SAML federation between AD FS and Okta there are a few fields that are required by our Okta solution. The AD FS has to provide an email address, first name, and last name as well as an email address as NameID.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h3 id="configuration-in-ad-fs" class="wysiwyg-text-align-justify"><strong>Configuration in AD FS</strong></h3>
+<p class="wysiwyg-text-align-justify">The steps might change with regard to the version and server version. They might also change with respect to the specific fields that are available in the actual AD FS instance.</p>
+<p class="wysiwyg-text-align-justify"><strong>Step 1: Create a Relying Party Trust</strong></p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015039155986" alt="image-20200106-121635.png"></p>
+<p class="wysiwyg-text-align-justify">In the second step of the configuration wizard, the information can and should be imported via a metadata.xml file provided by Okta. This contains all the information needed to complete the wizard.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015039159698" alt="image-20200106-121918.png"></p>
+<p class="wysiwyg-text-align-justify"><strong>Step 2: Create Claim Rules</strong></p>
+<p class="wysiwyg-text-align-justify">All claim rules for the formerly created Party Trust can be found here:</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015069187346" alt="image-20200106-122205.png"></p>
+<p class="wysiwyg-text-align-justify">New rules can be created by clicking on “Add Rule…”:</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015039181202" alt="image-20200106-123400.png"></p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify">The following three rules have to be created:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Attribute claims from AD</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015069191186" alt="image-20200106-122823.png"></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Pass E-Mail Claims</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015039178898" alt="image-20200106-122959.png"></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Email to NameID</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015069201810" alt="image-20200106-123624.png"></p>
+<p class="wysiwyg-text-align-justify"><strong>Step 3: Check the order of the claim rules (important!)</strong></p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015069210514" alt="image-20200106-123756.png"></p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863" class="wysiwyg-text-align-justify">FAQ</h1>
+<h3 id="faq1" class="wysiwyg-text-align-justify">What version of AD FS is covered in this guide?</h3>
+<p class="wysiwyg-text-align-justify">This guide covers AD FS 3.0 on Windows Server 2012 R2.</p>
+<h3 id="faq2" class="wysiwyg-text-align-justify">Is additional configuration needed in AD FS for SAML authentication?</h3>
+<p class="wysiwyg-text-align-justify">No, there is no further configuration needed in AD FS to enable SAML authentication beyond what is described in this guide.</p>
+<h3 id="faq3" class="wysiwyg-text-align-justify">What information does AD FS need to provide for Okta integration?</h3>
+<p class="wysiwyg-text-align-justify">AD FS needs to provide email address, first name, last name, and an email address as NameID for successful integration with Okta.</p>
+<p class="wysiwyg-text-align-justify"> </p>

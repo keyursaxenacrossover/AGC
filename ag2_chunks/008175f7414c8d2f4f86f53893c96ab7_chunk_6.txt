@@ -1,0 +1,28 @@
+ of members as well as the dynamic adaption of the display of logged-in members of a circle for portal users accessing this circle.</span></p>
+<p class="wysiwyg-text-align-justify"><span style="color: #333333;">On one hand, </span><em>Groups</em><span style="color: #333333;"> is used as an integrated module in </span><em>Feedback Assistant</em><span style="color: #333333;"> to invite participants from </span><em>Groups</em><span style="color: #333333;"> to a survey, on the other hand, </span><em>Groups</em><span style="color: #333333;"> is used as a separate module in </span><em>Portals</em><span style="color: #333333;"> for the organization of groups. There are two different kinds of circles. In the integrated module, </span><em>Personal Groups</em><span style="color: #333333;"> as well as </span><em>Managed Groups</em><span style="color: #333333;"> can be selected, whereas the separate module exclusively enables the creation and management of </span><em>Personal Groups</em><span style="color: #333333;">.</span></p>
+<h3 id="personal-groups" class="sc-eNNmBn lmEGgd wysiwyg-text-align-justify"><strong>Personal Groups</strong></h3>
+<p class="wysiwyg-text-align-justify"><em>Personal Groups</em><span style="color: #091e42;"><em> </em>can be created in the separate </span>Groups<span style="color: #091e42;"> module. With </span><em>Personal Groups</em><span style="color: #091e42;">, portal users can create their contact lists from the participants of a portal and manage them. </span>Personal Groups<span style="color: #091e42;"> therefore consist of an undefined group of people and are very flexible. </span>Personal Groups<span style="color: #091e42;"> are only available for the circle creator who can define available portal users as members of the group</span><span style="color: #091e42;">.</span></p>
+<h3 id="managed-groups" class="wysiwyg-text-align-justify"><strong>Managed Groups</strong></h3>
+<p class="wysiwyg-text-align-justify"><em>Managed Groups</em> can be generated in the administration area of <em>EFS</em>. They consist of a dynamic composition of hierarchically dependent groups of people and only need a little time to be created. <em>Managed Groups </em>can be accessed by any portal user who is a member of the respective circle.</p>
+<h3 id="technical-setup-of-personal-groups" class="wysiwyg-text-align-justify"><strong>Technical setup of Personal Groups</strong></h3>
+<ul class="wysiwyg-text-align-justify">
+<li>To create Personal Circles, open the added module Circles in the exterior view of your portal.</li>
+<li>Click on the button <strong>Add new Group</strong>.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">An entry mask is opened.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Click on<strong> Add Contacts</strong> and select from the contact list via the <strong>“plus” button</strong> the persons you want to be members of your group.</li>
+<li>To confirm the selection of circle members, close the entry mask with the big.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The newly created group is viewable on the circles page of the exterior view.</p>
+<h3 id="technical-setup-of-managed-circles" class="wysiwyg-text-align-justify"><strong>Technical setup of Managed Circles</strong></h3>
+<p class="wysiwyg-text-align-justify">To create <em>Managed Groups</em>, open <em>People</em> &gt; <em>Contacts</em> &gt; <em>Groups</em>.</p>
+<p class="wysiwyg-text-align-justify">The technical setup of <em>Managed Circles</em> mainly includes the following aspects:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>First, a <strong>Panel Group</strong> has to be selected as the basis of the circles. The panelists being part of this group will be filtered according to the following defined variables.</li>
+<li>In the variables menu “Find Matches in the following variable”, you define the <strong>variable of the portal user</strong> who is logged in to the portal, for example, “email”.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Information</p>
+<p class="wysiwyg-text-align-justify"><span style="color: #333333;">This variable always relates to the person being logged in to the respective portal.</span></p>
+<ul class="wysiwyg-text-align-justify">
+<li>In the variables menu “Group circles by following variable”, you define the <strong>reference value</strong> according to which the circle will be grouped, for example, “manager”. Under People → Master data → Create master data, you create the respective <strong>master data</strong> beforehand,

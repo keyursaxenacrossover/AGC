@@ -1,0 +1,66 @@
+<p><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p>This article provides a comprehensive guide on Tivian security measures, focusing on password management, multifactor authentication (MFA), and updated Captcha features for panel websites. It includes information on upcoming changes, best practices, and step-by-step instructions for implementing security features in Tivian DXI - Enterprise Feedback Suite (EFS) installations.</p>
+<p> </p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>The Tivian IT Security Team has prepared this document to remind users of key security measures for Tivian DXI - Enterprise Feedback Suite installations. It covers essential topics such as password management, multifactor authentication, and Captcha implementation to enhance online security.</p>
+<ul>
+<li><a href="#password-management">Password Management</a></li>
+<li><a href="#multifactor-authentication">Multifactor Authentication (MFA)</a></li>
+<li><a href="#captcha">Captcha</a></li>
+</ul>
+<h2 id="password-management">Password Management</h2>
+<p>Effective password management is crucial for maintaining the security of your Tivian installation. This section covers current password requirements, the importance of increasing password length, and how to manage user passwords.</p>
+<h3 id="current-password-requirements">Current Password Requirements</h3>
+<p>As of September 2023, the minimum EFS password length for user accounts is 10 characters. Tivian strongly recommends enforcing these minimum standards, especially for privileged accounts.</p>
+<h3 id="importance-of-password-length">Importance of Increasing Password Length</h3>
+<p>Increasing the minimum password length from 8 to 10 characters significantly enhances security, increasing the security factor by 8,836 times. Moving from 8 to 16 characters boosts the security factor by 6,095,689,385,410,816 times.</p>
+<h3 id="changing-password-expiry-dates">Changing Password Expiry Dates</h3>
+<p>EFS admin users can change password expiry dates. To do this:</p>
+<ol>
+<li>Go to System - Users</li>
+<li>Search for the user name</li>
+<li>Find the expiry date</li>
+<li>Select the expiry date to adjust it</li>
+</ol>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015634216722"></p>
+<p> </p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015637896210"></p>
+<h3 id="forcing-user-password-reset">Forcing User Password Reset</h3>
+<p>Admins can send a password reset nudge email to users:</p>
+<ol>
+<li>Set the password expiry date</li>
+<li>Click the Mail icon under Actions to send the user a password reset email</li>
+</ol>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015637905938"></p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015634218770"></p>
+<h2 id="multifactor-authentication">Multifactor Authentication (MFA)</h2>
+<p>Multifactor Authentication adds an extra layer of security to your Tivian installation. This section explains what MFA is, why it's recommended, and how to implement it for both panel websites and admin accounts.</p>
+<h3 id="what-is-mfa">What is MFA and Why is it Recommended?</h3>
+<p>Tivian introduced authenticator app-based MFA for Panel websites and Admin users in release 24.1. It is highly recommended to enable MFA for panelists and all EFS admin users. This will be the default setting for all new customers in the next release.</p>
+<h3 id="activating-mfa-panel-website">Activating Two-Factor Authentication for Panel Website</h3>
+<p>To activate two-factor authentication for the panel website:</p>
+<ol>
+<li>Navigate to the Website section</li>
+<li>Select the website you want to configure</li>
+<li>Scroll down to the Login area</li>
+<li>Configure the two-factor authentication</li>
+</ol>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015637897362"></p>
+<h3><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015637900434"></h3>
+<h3> </h3>
+<h3 id="activating-mfa-admin-account">Activating MFA for Administration Account</h3>
+<p>For instructions on activating MFA for your administration account, refer to the TivAI prompt: "How do I activate multi-factor authentication for my account?"</p>
+<p>[Insert image placeholder for admin account MFA settings]</p>
+<h3 id="compatible-authenticator-apps">Compatible Authenticator Apps</h3>
+<p>Compatible authenticator apps for use with EFS include:</p>
+<ul>
+<li>Google Authenticator</li>
+<li>Microsoft Authenticator</li>
+<li>2FA Authenticator (2FAS)</li>
+<li>Authy</li>
+</ul>
+<p> </p>
+<h2 id="captcha">Captcha</h2>
+<p>Captcha features help prevent automated attacks on your panel websites. This section covers recent changes to Captcha implementation and how to activate different Captcha options.</p>
+<h

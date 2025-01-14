@@ -1,0 +1,42 @@
+26" alt="Advanced options.jpg"></p>
+<p class="wysiwyg-text-align-justify">In the “Advanced options” area, you can make further adjustments to the settings:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Teams</strong>: The selected user teams receive access to the project. The teams, in which you are a member, are displayed in a select box, and your primary team is pre-selected. Your primary team always gets read and write rights on the newly created project automatically. If you belong to a team with write rights to the ACL right “group admin”, you can assign all teams in the installation of the “Admingroup” type with read and write rights to the project.</p>
+</li>
+<li>
+<p><strong>Survey messages</strong>: A set of survey messages that already exist in the library is uploaded.</p>
+</li>
+<li>
+<p><strong>Author, Coauthors</strong>: enter the names of the persons involved in these fields.</p>
+</li>
+<li>
+<p><strong>Description</strong>: This field allows storage of information on the survey (e.g. content and purpose of the project).</p>
+</li>
+<li>
+<p><strong>Error notification</strong>: EFS features a runtime check for checking the conditions of LUA filters, quotas and triggers in the course of the survey. Optionally, you can subscribe to e-mail notifications which are sent whenever a participant causes this kind of error. To do so, enter a list of users to be notified. Each row should contain only one address.</p>
+</li>
+<li>
+<p><strong>Mail template for “Notification before end of survey”</strong>: This mail template is used for the notification described below. You can choose among mail templates of the “Notification before end of survey” type. If you do not select a template resp. if you cannot select one due to missing rights, a mail with default text will be used.</p>
+</li>
+<li>
+<p><strong>“Notification before end of survey”</strong>: You can have an e-mail notification sent to you before the end of the field period of a survey. The emails will be sent seven days before the end of the project. Enter a list of the users who are to receive an e-mail. In each row, there should be only one address.</p>
+</li>
+<li>
+<p><strong>Which status is to be applied after creating the project?</strong>: You can choose between the statuses “survey compiled” and “active”.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Confirm by clicking on <strong>Create</strong>.</p>
+<p class="wysiwyg-text-align-justify">Your choice of project type, layout template, team, and survey message for a new project is stored and will be used for presetting the dialog next time you create another project. In the menu <strong>Options</strong> → <strong>Personal preferences</strong> → tab <strong>Projects</strong>, you can preset more settings of new projects according to your working habits.</p>
+<h3 id="project-types" class="wysiwyg-text-align-justify"><strong>Project Types</strong></h3>
+<p class="wysiwyg-text-align-justify">In EFS, feedback collection is organized into individual projects. The features and processes required in these projects depend strongly on the data collection method and the target group chosen. Therefore, the various <em>EFS</em> solutions support quite different project types.</p>
+<p class="wysiwyg-text-align-justify"><strong>Anonymous Surveys (AN)</strong></p>
+<p class="wysiwyg-text-align-justify"><em>Anonymous surveys</em> are accessible for all who know the respective survey Internet address. This is usually conducted by means of advertising efforts such as banners or hyperlinks on existing websites.</p>
+<p class="wysiwyg-text-align-justify"><strong>Personalized Surveys (PE)</strong></p>
+<p class="wysiwyg-text-align-justify"><em>Personalized surveys</em> are only accessible to persons included in the survey sample. In a personalized survey, you can precisely define who you wish to include as participants in your online survey. You may either enter participants manually or import the list of participants into<em> EFS</em> in an Excel sheet (CSV file). There are various options for how to restrict access to the survey. For example, using a password sent to the participants via e-mail, or via a personalized link or definable IP addresses. The respective passwords for participants can be either generated within<em> the EFS Survey</em> or imported into the system.</p>
+<p class="wysiwyg-text-align-justify"><strong>Employee Surveys (ES)</strong></p>
+<p class="wysiwyg-text-align-justify">The project-type Employee survey is used only on <em>EFS Employee</em> installations. It satisfies particularly strict data protection guidelines and allows access to the optionally available additional tool Org Processor.</p>
+<p class="wysiwyg-text-align-justify"><strong>Multi-Source Feedbacks (MSF)</strong></p>
+<p class="wysiwyg-text-align-justify"><em>Multi-source feedbacks</em> allow us to realize complex multi-rater feedback processes, e.g. 360° leadership surveys.</p>
+<p class="wysiwyg-text-align-justify"><strong>Panel Surveys (PA)</strong></p>
+<p class="wysiwyg-text-align-justify"><em>Panel surveys</em> are answered by persons registered as

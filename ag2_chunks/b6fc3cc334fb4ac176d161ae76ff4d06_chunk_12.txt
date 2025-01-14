@@ -1,0 +1,26 @@
+,0);">panel.survey.transfer.transfer_survey_entry.buildQueryBefore</span></pre></td>
+<td colspan="1">modules/panel/components/survey/transfer.inc.php:transfer_survey_entry()</td>
+<td colspan="1"><pre><span>Panel\Events\Survey\Transfer\TransferSurveyEntry\</span><span>BuildQueryBefore([<br></span><span>    </span><span style="color: rgb(0,128,0);">'survey_mappings' </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$survey_mappings<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">panel.import.update.model.getForbiddenUpdateVars</span></pre></td>
+<td colspan="1">modules/panel/components/import/update/model.inc.php:getForbiddenUpdateVars()</td>
+<td colspan="1"><pre><span>Panel\Events\Import\Update\Model\</span><span>GetForbiddenUpdateVars([<br></span><span>    </span><span style="color: rgb(0,128,0);">'forbidden_update_vars' </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$forbiddenUpdateVars<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">panel.import.update.controller.printPreviewBefore</span></pre></td>
+<td colspan="1">modules/panel/components/import/update/controller.inc.php:print_preview()</td>
+<td colspan="1"><pre><span>Panel\Events\Import\Update\Controller\</span><span>PrintPreviewBefore([<br></span><span>    </span><span style="color: rgb(0,128,0);">'component' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$this<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">panel.import.update.config.initFieldsBefore</span></pre></td>
+<td colspan="1">modules/panel/components/import/update/config.inc.php:init_fields()</td>
+<td colspan="1"><pre><span>Panel\Events\Import\Update\Config\</span><span>InitFieldsBefore([<br></span><span>    </span><span style="color: rgb(0,128,0);">'forbidden' </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$forbidden</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'component' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$this<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">core.adapter.session.UpdateCookiesByPathsBefore</span></pre></td>
+<td colspan="1">modules/Core/src/Adapter/Session/Session.php:updateCookiesByPaths()</td>
+<td colspan="1"><pre><span>Core\Events\Adapter\Session\</span><span>UpdateCookiesByPathsBefore([<br></span><span>    </span><span style="color: rgb(0,128,0);">'class'          </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$this</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'paths'          </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$paths</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'session_config' </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$sessionConfig</span><span>,<br></span><span>])</span></pre></td>
+</tr>
+</tbody>
+</table><p class="auto-cursor-target"><br></p>

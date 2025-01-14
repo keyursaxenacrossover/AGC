@@ -1,0 +1,149 @@
+<tr>
+<td style="width: 118.628px;">
+<p>Sort Order</p>
+</td>
+<td style="width: 514.201px;">
+<p>Possible sort order:</p>
+<ul>
+<li>
+<p>Ascending</p>
+</li>
+<li>
+<p>Descending</p>
+</li>
+</ul>
+</td>
+<td style="width: 82.7257px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 118.628px;">
+<p>Rating option</p>
+</td>
+<td style="width: 514.201px;">
+<p>In this field, you can specify how unrated posts should be handled:</p>
+<ul>
+<li>
+<p>Show only rated posts</p>
+</li>
+<li>
+<p>Show only unrated posts</p>
+</li>
+<li>
+<p>Show all posts</p>
+</li>
+<li>
+<p>Show unrated posts at the end</p>
+</li>
+</ul>
+</td>
+<td style="width: 82.7257px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 118.628px;">
+<p>Link</p>
+</td>
+<td style="width: 514.201px;">
+<p>To generate clickable links into the forum, blog, or discussion for the teaser, the page identifier of the target page should be inserted into this field.</p>
+</td>
+<td style="width: 82.7257px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 118.628px;">
+<p>Page module</p>
+</td>
+<td style="width: 514.201px;">
+<p>To generate clickable links into the forum, blog, or discussion for the teaser, the reference name of the template on the target page should be inserted into this field.</p>
+</td>
+<td style="width: 82.7257px;">
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="function-module-search-for-text-in-modules" class="wysiwyg-text-align-justify"><strong>Function Module: Search for Text in Modules</strong></h3>
+<p class="wysiwyg-text-align-justify">Text search is a custom feature that can be made available optionally for EFS 9.1 or higher.</p>
+<p class="wysiwyg-text-align-justify">This function module allows to set up a search page with a search form and results list.</p>
+<table class="wysiwyg-text-align-justify" style="height: 521px;" border="1" width="754" data-layout="default" data-table-width="760">
+<colgroup>
+<col style="width: 335.0px;">
+<col style="width: 871.0px;">
+<col style="width: 137.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th style="width: 189.028px;" data-highlight-colour="#57d9a3">
+<p><strong>Option</strong></p>
+</th>
+<th style="width: 443.628px;" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+<th style="width: 110.955px;" data-highlight-colour="#57d9a3">
+<p><strong>Default</strong></p>
+</th>
+</tr>
+<tr>
+<td style="width: 181.007px;">
+<p>Reference name for template</p>
+</td>
+<td style="width: 435.608px;">
+<p>Name that can be used to trigger the module in positioning templates.</p>
+</td>
+<td style="width: 102.934px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 181.007px;">
+<p>Page module title</p>
+</td>
+<td style="width: 435.608px;">
+<p>Name of the module in the page’s module overview</p>
+</td>
+<td style="width: 102.934px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 181.007px;">
+<p>Module template</p>
+</td>
+<td style="width: 435.608px;">
+<p>Module-specific template that controls how data provided by the module are displayed.</p>
+</td>
+<td style="width: 102.934px;">
+<p>func_search</p>
+</td>
+</tr>
+<tr>
+<td style="width: 181.007px;">
+<p>Template for media display</p>
+</td>
+<td style="width: 435.608px;">
+<p>In this field, you can enter the template that controls how uploaded files are output.</p>
+<p>The field should be kept empty for text search.</p>
+</td>
+<td style="width: 102.934px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 181.007px;">
+<p>Modules available in the search</p>
+</td>
+<td style="width: 435.608px;">
+<p>In the drop-down list, you can select the content types that should be covered by the search.</p>
+<p>The content types selected in the menu <strong>Global Configuration</strong> are available. A further restriction in this module is specific to this module.</p>
+</td>
+<td style="width: 102.934px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 181.007px;">
+<p>Maximum number of search results

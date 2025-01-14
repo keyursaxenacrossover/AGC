@@ -1,0 +1,104 @@
+)<br>[] globis entries (u custom module [NAME] activated [CASE])<br>[] instcheck</p>
+<p>========These checks can’t always be executed<br>[] navigate to [Custom Module] (if possible)<br>[] create EFSITO (if necessary, check known modules for reference)</p>
+</div><h2 id="header-4">FYI</h2><table data-layout="wide" ac:local-id="5da92d1c-2807-4bdf-b332-bac5c4132777">
+<colgroup>
+<col style="width: 344.0px;">
+<col style="width: 616.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour="#ffffff">
+<p>projekte=default path known by efs , full path: </p>
+<p>/nfs/opst[x]/ab1234.customervoice360.com/projekte</p>
+</th>
+<th data-highlight-colour="#ffffff"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20714620397714" alt="image-20191030-122444.png"></th>
+</tr>
+<tr>
+<td><p>Value and Key in the Symlink</p></td>
+<td>
+<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20714620046610" alt="image-20191030-133015.png"><p></p>
+</td>
+</tr>
+<tr>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table><h2 id="header-5">Known Custom Modules</h2><p></p><table data-layout="wide" ac:local-id="c05012ec-38ce-4142-9956-7698fbb80004">
+<colgroup>
+<col style="width: 132.0px;">
+<col style="width: 271.0px;">
+<col style="width: 66.0px;">
+<col style="width: 313.0px;">
+<col style="width: 178.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p><strong>Value</strong></p></th>
+<th><p><strong>Key</strong></p></th>
+<th><p><strong>Type</strong></p></th>
+<th><p><strong>Instructions</strong></p></th>
+<th><p><strong>Description</strong></p></th>
+</tr>
+<tr>
+<td><p>ForumArchiv</p></td>
+<td><p>ProductCustomizingTeam/ForumArchiv</p></td>
+<td><p>String</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>csv2gpx</p></td>
+<td><p>ProductCustomizingTeam/csv2gpx</p></td>
+<td><p>String</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>SpecialSettings</p></td>
+<td><p>ProductCustomizingTeam/SpecialSettings</p></td>
+<td><p>String</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>IpsosUI</p></td>
+<td><p>ProductCustomizingTeam/IpsosUI</p></td>
+<td><p>String</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>CLF</p></td>
+<td><p>ProductCustomizingTeam/CLF</p></td>
+<td><p>String</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>PeopleSync</p></td>
+<td><p>Solutions/PeopleSync</p></td>
+<td><p>String</p></td>
+<td><p>Sysadmins have to add an authentication key for the SFTP to the installation. The file usually is attached to the support case. It has to be unzipped and added to  <em>projekte/Solutions/PeopleSync/application/configs</em> of the installation with '<em>nobody</em>' as the owner.</p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>IpsosTools</p></td>
+<td><p>ProductCustomizingTeam/IpsosTools</p></td>
+<td><p>String</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>QbToolbox<a href="https://it.globalpark.de/twiki/bin/edit/Support/QbToolbox?topicparent=Support.TsCustomModules">?</a></p></td>
+<td><p>ProductCustomizingTeam/QbToolbox</p></td>
+<td><p>String</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>Specials</p></td>
+<td><p>ProductCustomizingTeam/Specials</p></td>
+<td><p>String</p></td>
+<td><p></p></td>
+<td><p><ac:parameter ac:name="server">Questback</ac:parameter><ac:parameter ac:name="serverId">9f8e3c23-9700-315b-9

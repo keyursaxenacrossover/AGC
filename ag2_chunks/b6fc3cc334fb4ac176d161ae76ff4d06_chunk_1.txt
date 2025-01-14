@@ -1,0 +1,21 @@
+ colspan="1"><pre><span>Efs\Events\Staff\View\</span><span>PrintDetailsLinkAddonBefore([<br></span><span> </span><span style="color: rgb(0,128,0);">'component' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$this</span><span>,<br></span><span> </span><span style="color: rgb(0,128,0);">'html_links' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$link_addon</span><span>,<br></span><span> </span><span style="color: rgb(0,128,0);">'return' </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$link_addon</span><span>,<br></span><span> </span><span style="color: rgb(0,128,0);">'user_id' </span><span>=&gt; (</span><span style="color: rgb(0,0,128);">int</span><span>) </span><span style="color: rgb(102,0,0);">$uid<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">efs.staff.view.print_change_account.render.before</span></pre></td>
+<td colspan="1">modules/efs/components/staff/view.inc.php:print_change_account()</td>
+<td colspan="1"><pre><span>Efs\Events\Staff\View\</span><span>PrintChangeAccountRenderBefore([<br></span><span> </span><span style="color: rgb(0,128,0);">'account_data' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$accountData</span><span>,<br></span><span> </span><span style="color: rgb(0,128,0);">'user_id' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$uid</span><span>,<br></span><span> </span><span style="color: rgb(0,128,0);">'current_user' </span><span>=&gt; </span><span style="color: rgb(0,0,128);">new </span><span>efs_adminuser(</span><span style="color: rgb(102,0,0);">$this</span><span>-&gt;</span><span style="color: rgb(102,14,122);">userd</span><span>, [])<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">efs.plugin.handler.setMenuNodes.before</span></pre></td>
+<td colspan="1">modules/efs/components/controller/plugin/handler.inc.php:setMenuNodes()</td>
+<td colspan="1"><pre><span>Efs\Events\Controller\PluginHandler\SetMenuNodesBefore</span><span>([<br></span><span> </span><span style="color: rgb(0,128,0);">'plugin' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$this</span><span>,<br></span><span> </span><span style="color: rgb(0,128,0);">'menu_nodes' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$menuNodes</span><span>,<br></span><span> </span><span style="color: rgb(0,128,0);">'return' </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$menuNodes<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">efs.staff.view.print_add_account.render.before</span></pre></td>
+<td colspan="1">modules/efs/components/staff/view.inc.php:print_add_account()</td>
+<td colspan="1"><pre><span>Efs\Events\Staff\View\</span><span>PrintAddAccountRenderBefore([<br></span><span> </span><span style="color: rgb(0,128,0);">'account_data' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$accountData<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">panel.app.controllers.legacy.panel_search.change_account.email.output.before</span></pre></td>
+<td colspan="1">modules/panel/app/controllers/legacy/panel_search.php:change_account()</td>
+<td colspan="1"><pre><span>Panel\Events\Controllers\Legacy\PanelSearch\ChangeAccount\Email\Output\Before</span><span>([<br></span><span>    </span><span style="color: rgb(0,128,0);">'user_data' </span><span>=&gt; &amp;</span><span style="color: rgb(

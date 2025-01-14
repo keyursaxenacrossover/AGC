@@ -1,0 +1,52 @@
+Sight?sortcol=0;table=7;up=0#sorted_table">MySight version</a></p></th>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/MySight?sortcol=1;table=7;up=0#sorted_table">tableau server</a></p></th>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/MySight?sortcol=2;table=7;up=0#sorted_table">access allowed</a></p></th>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/MySight?sortcol=3;table=7;up=0#sorted_table">access to tableau server</a></p></th>
+</tr>
+<tr>
+<td><p>v1 (old)</p></td>
+<td><p>PREPROD2</p></td>
+<td><p>for questback and customer users</p></td>
+<td><p>given by Windows System Engineers and Technical Support</p></td>
+</tr>
+<tr>
+<td><p>v1 (old)</p></td>
+<td><p>PROD</p></td>
+<td><p>only for questback users</p></td>
+<td><p>given by Windows System Engineers and Technical Support</p></td>
+</tr>
+<tr>
+<td><p>v2</p></td>
+<td><p>PREPROD2</p></td>
+<td><p>only for questback users</p></td>
+<td><p>EFS users can register themselves without our help</p></td>
+</tr>
+<tr>
+<td><p>v2</p></td>
+<td><p>PROD</p></td>
+<td><p>for questback and customer users</p></td>
+<td><p>EFS users can register themselves without our help</p></td>
+</tr>
+</tbody>
+</table><p><strong>NOTICE:</strong> In the meantime customers using both <a href="https://it.globalpark.de/twiki/bin/view/Support/MySight">MySight</a> Versions can register themselves on PROD without our help</p><h3 id="header-71">(MySight old) Site is not shown on MySight preprod server</h3><ul>
+<li><p>Question: We try to publish a datasource to Preprod (<a href="https://mysight-preprod.questback.com">https://mysight-preprod.questback.com</a>) but it does not show up there.</p></li>
+<li><p>Answer: You may not have a users.csv file. The users.csv file creates the site on preprod and prod server. If there is no such file, the site will not be created. Therefore create/upload the users.csv file and then run the update in EFS/mysight again. The site then will be visible on preprod and prod server. [noch dokumentieren, wo man die users.csv uploaded]</p></li>
+</ul><h3 id="header-72">(MySight old) Mail error request failed and users.csv</h3><ul><li><p>Request failed -&gt; i.e. the passwords of the panelists is too weak -&gt; try sgsin with more secure passwords</p></li></ul><h3 id="header-73">(MySight old) Creation of trusted tickets</h3><ul>
+<li><p>Question: How can i test, if the trusted tickets get created for panelists trying to access a specific dashboard/site?</p></li>
+<li><p>Answer: Freddy created a test script for this purpose. It can be found among the attachments down below.</p></li>
+</ul><pre><code class="language-text">Attention: 
+Since Tableau uses a whitelist to enable the EFS frontends for ticket retrieval, this needs to be triggered from a frontend too.
+So after you tested this script, please remove it immediately from the installation again.
+
+This is how you can test the ticket retrieval:
+
+-	Copy the attached script to htdocs/document_root/tableau_ticket_test_script.php
+-	Comment out Prod when you want to use preprod (and vice versa)
+-	Add the panelists identifier in $data
+-	Add the Tableau Site in $data
+-	Open up the browser: http://INSTALLATION/ tableau_ticket_test_script.php
+
+The created ticket gets printed out.
+If it is not working, you will get a false value.
+</code></pre><h3 id="header-74">(MySight old) Trusted ticket issue (Case 00943924)</h3><p> From time to time we have face issues with use of trusted tickets (see above). But in some case there is no issue caused by whitelisting on tableau.</p><p>For Example: An error occurred on the server. The details of the error are: Could not locate unexpired trusted ticket -1 Click the Refresh button in your web browser and try again. If you continue to receive this error please contact your Tableau Server Administrator.</p><p></p><p>There is a variable for login for a Site on Language Version. On this field can be registered an already existing Tableau user. Is the used user not existing on tableau server, you will get a trusted ticket error message.</p><h3 id="header-75">(MySight old) Workbooks/Dashboards are not loading on Tableau server (e.g. preprod2)</h3><ul>
+<li><p>Problem: On Tableau preprod2

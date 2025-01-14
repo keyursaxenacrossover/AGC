@@ -1,0 +1,175 @@
+"><u>?</u></a></p>
+</td>
+<td>
+<p>TYPE_ORGMAN</p>
+</td>
+<td>
+<p><font>6</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>provider_gui (deprecated)</p>
+</td>
+<td>
+<p>TYPE_PROVIDER</p>
+</td>
+<td>
+<p><font>8</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>project test</p>
+</td>
+<td>
+<p>TYPE_PROJECT_TEST</p>
+</td>
+<td>
+<p><font>10</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><font>report platform</font></p>
+</td>
+<td>
+<p>TYPE_REPORT</p>
+</td>
+<td>
+<p>11</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>mobile_gui</p>
+</td>
+<td>
+<p>TYPE_MOBILE_GUI</p>
+</td>
+<td>
+<p>12</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Diary</p>
+</td>
+<td>
+<p>TYPE_DIARY</p>
+</td>
+<td>
+<p>13</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>SMM</p>
+</td>
+<td>
+<p>TYPE_SMM</p>
+</td>
+<td>
+<p>14</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<h2 id="header-29">EFS Codes for last_page and page_history</h2>
+<table style="height: 668px;" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 136.0px;"> <col style="width: 136.0px;"> <col style="width: 136.0px;"> <col style="width: 136.0px;"> <col style="width: 136.0px;"> </colgroup>
+<tbody>
+<tr style="height: 22px;">
+<th style="height: 22px; width: 133px;">
+<p><u>Participant is</u></p>
+</th>
+<th style="height: 22px; width: 133px;">
+<p><u>has lfdn</u></p>
+</th>
+<th style="height: 22px; width: 133px;">
+<p><u>disp code</u></p>
+</th>
+<th style="height: 22px; width: 133px;">
+<p><u>last_page</u></p>
+</th>
+<th style="height: 22px; width: 133px;">
+<p><u>page_history</u></p>
+</th>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px; width: 125px;">
+<p>not invited</p>
+</td>
+<td style="height: 22px; width: 125px;">
+<p>NO (-77)</p>
+</td>
+<td style="height: 22px; width: 125px;">
+<p><font>11</font></p>
+</td>
+<td style="height: 22px; width: 125px;">
+<p><font>0</font></p>
+</td>
+<td style="height: 22px; width: 125px;">
+<ul>
+<li>
+<p>66</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr style="height: 67px;">
+<td style="height: 67px; width: 125px;">
+<p>invited but not started the survey</p>
+</td>
+<td style="height: 67px; width: 125px;">
+<p><font>NO (-77)</font></p>
+</td>
+<td style="height: 67px; width: 125px;">
+<p><font>12</font></p>
+</td>
+<td style="height: 67px; width: 125px;">
+<p><font>0</font></p>
+</td>
+<td style="height: 67px; width: 125px;">
+<ul>
+<li>
+<p><font>66</font></p>
+</li>
+</ul>
+</td>
+</tr>
+<tr style="height: 67px;">
+<td style="height: 67px; width: 125px;">
+<p>invited, just only started the survey</p>
+</td>
+<td style="height: 67px; width: 125px;">
+<p>YES</p>
+</td>
+<td style="height: 67px; width: 125px;">
+<p>21</p>
+</td>
+<td style="height: 67px; width: 125px;">
+<p>0</p>
+</td>
+<td style="height: 67px; width: 125px;">
+<p><font>0</font></p>
+</td>
+</tr>
+<tr style="height: 111px;">
+<td style="height: 111px; width: 125px;">
+<p>invited, has started the survey and is already suspended</p>
+</td>
+<td style="height: 111px; width: 125px;">
+<p><font>YES</font></p>
+</td>
+<td style="height: 111px; width: 125px;">
+<p>22</p>
+</td>
+<td style="height: 111px; width: 125px;">
+<p><font>0</font></p>
+</td>
+<td style="height: 111px; width: 125px;">
+<p><font>0</font></p>
+</td>
+</tr>

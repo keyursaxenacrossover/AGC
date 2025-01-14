@@ -1,0 +1,115 @@
+.zendesk.com/hc/article_attachments/20998217554962" alt="Trigger 1 configuration.png"></p>
+<p> </p>
+<p>When adding the trigger to a page in your survey it is recommended that you use a condition to check if the source text variable contains any text. If your survey uses the back-button or resumption from beginning, we recommended that you allow multiple executions of the trigger </p>
+<p><em><u>Sentiment-Trigger</u></em></p>
+<p>The sentiment analysis trigger categorizes open text feedback as negative, positive or neutral. The usage of this trigger is similar to that of the <em>Key phrase extraction trigger</em>. The first variable of type <em>short text</em> or <em>text</em> contains the categorization ("negative", "positive" or "neutral") and the optional variable of type <em>float</em> stores the classification points provided by the system. The scale of each category ranges from 0 to 1: 0 represents the most negative and 1 the most positive value of a category.</p>
+<p>On the <strong>Settings</strong> tab, you set the following:</p>
+<ul>
+<li>
+<p>You assign a name and write a description.</p>
+</li>
+<li>
+<p>You select an execution position:</p>
+<ul>
+<li>
+<p>after submitting page, before filter</p>
+</li>
+<li>
+<p>after submitting page, after filter</p>
+</li>
+<li>
+<p>directly</p>
+</li>
+</ul>
+</li>
+<li>
+<p>You tick off:</p>
+<ul>
+<li>
+<p>Also execute trigger in preview mode</p>
+</li>
+<li>
+<p>Execute this trigger multiple times in one survey session</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998271279250" alt="Trigger 2 settings.png"></p>
+<p>On the <strong>Detail configuration</strong> tab, you set the following:</p>
+<ul>
+<li>
+<p>You enter the <strong>API Key</strong> provided to you by Support.</p>
+</li>
+<li>
+<p>You enter the ISO code.</p>
+</li>
+<li>
+<p>You select the source variable from which the phrase is to be taken.</p>
+</li>
+<li>
+<p>You select the variable that stores the sentiment.</p>
+</li>
+<li>
+<p>You select the variable that stores the sentiment points.</p>
+</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998251695122" alt="Trigger 2 configuration.png"></p>
+<p> </p>
+<p>To check whether feedback has been stored in the source code variable, we recommend that you set up an execution condition. This trigger also uses 20 variables (custom or from a custom 911 question type) to store the results of an analysis.</p>
+<h3 id="header-7">Default groups in multiple languages</h3>
+<p>You create default groups in each of the languages available in the drop-down list. You select a language by ISO code after clicking <strong>+ Category</strong>, enter the title in the desired language and click <strong>Add</strong>.</p>
+<ul>
+<li>
+<p>Click path:</p>
+</li>
+</ul>
+<p><strong>Libraries</strong> → <strong>Categories</strong> → <strong>Default group</strong> (Tab)</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998271667986" alt="Default groups.png"></p>
+<h3 id="header-8">The new <em>Ideation</em> question type</h3>
+<p>Suggestions for improvements on chosen topics can now be easily collected in a survey by equipping it with the new <em>Ideation</em> matrix question type, which has a catchy input mask. Participants first enter a title in a separate line before they enter the suggestion in the user-defined text field.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998218396306" alt="Ideation 1.png"></p>
+<p>Make the following settings:</p>
+<ul>
+<li>
+<p>Show counter</p>
+</li>
+<li>
+<p>Counter pattern</p>
+</li>
+<li>
+<p>Title label</p>
+</li>
+<li>
+<p>Description label</p>
+</li>
+<li>
+<p>Description row count</p>
+</li>
+<li>
+<p>Add button</p>
+</li>
+<li>
+<p>Remove button</p>
+</li>
+<li>
+<p>Close button</p>
+</li>
+<li>
+<p>Animation type on opening</p>
+</li>
+<li>
+<p>Animation duration on opening</p>
+</li>
+<li>
+<p>Animation type on closing</p>
+</li>
+<li>
+<p>Animation duration on closing</p>
+</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998272124562" alt="Ideation 2.png"></p>
+<p>Three text field are preset. If you want to add more, you must add dimensions in the configuration. Title bar and description text field each contain a v_ variable.</p>
+<h2 id="header-10">Portals</h2>
+<h3 id="header-12">Leadership Guide in <em>Portals</em>
+</h3>
+<p>As of 

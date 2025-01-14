@@ -1,0 +1,48 @@
+ number of performed ratings and the resulting average rating.</li>
+<li>From EFS 10.3, rating data are integrated into the panel tracking. Furthermore, the rating data have been made available for grouping filters. Thus, it is now possible e.g. to create a group of very active or influential community members.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Work steps</strong></p>
+<p class="wysiwyg-text-align-justify">In order to use the rating function, please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Configure the rating function.</li>
+<li>Integrate the rating function into the website.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The necessary operations will be explained in detail in the following chapters.</p>
+<h2 id="configuring-the-rating-function" class="wysiwyg-text-align-justify"><strong>Configuring the Rating Function</strong></h2>
+<p class="wysiwyg-text-align-justify">The rating function is configured in the “Rating settings” section of the <strong>Website → Global configuration</strong> menu:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>In the field “Rating scale”, one of the available scales can be selected.<br>– It is not possible to create additional scales or change the predefined scales.<br>– The display of the scale on the website is controlled via the template “tpl_rating”. By default, values on purely positive scales are represented by stars. Scales with negative values show numbers. “Like” and “Like and dislike”, newly introduced in EFS 10.3, are symbolized with thumbs showing up- or downwards.</li>
+<li>Panelists are allowed to change their ratings: With this option you define whether the panelists are allowed to change ratings subsequently.</li>
+<li>From EFS 10.3: Panelists are allowed to revoke their ratings: You can specify whether the panelists are allowed to revoke their ratings.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify">It is possible to subsequently switch to another scale in an active panel: The system will then recalculate all existing ratings. Please note, however:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>A subsequent change may lead to questions and misunderstandings among the panelists.</li>
+<li>If you have exported rating data, the export data will be different from the recalculated values.</li>
+</ul>
+<h2 id="integrating-the-rating-function-into-the-website" class="wysiwyg-text-align-justify"><strong>Integrating the Rating Function into the Website</strong></h2>
+<p class="wysiwyg-text-align-justify">The rating function is implemented by default. Therefore, only the following minor modifications are usually necessary:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>If you want to use any symbols other than stars, you can simply replace the file.</li>
+<li>You may have to adapt the rating template to the layout of your panel.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Adapting the rating symbol</strong></p>
+<p class="wysiwyg-text-align-justify">The star symbol for the rating scale is defined by the image star_rate.png located in the “\images” file of the <strong>Asset library</strong> → tab <strong>Panel assets</strong>: It contains the star in three different hues.</p>
+<p class="wysiwyg-text-align-justify">If you wish to use a different symbol, create an image in PNG format of the same name, size and structure. Upload this image to your “\images” file so that the default image is overwritten, or simply rename the default image.</p>
+<p class="wysiwyg-text-align-justify">If you have to use a symbol of different size, this requires further adjustments:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>The image is inserted as a background image via the CSS class “.star-rating” in the include “css_default”.</li>
+<li>You may have to adjust the size in the templates “tpl_rating_...”.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Adapting the rating template to the panel layout</strong></p>
+<p class="wysiwyg-text-align-justify">The display of the rating functions is largely controlled via the templates “tpl_rating_...”. These template may have to be adapted to the overall layout of your panel.</p>
+<h2 id="viewing-using-and-exporting-rating-data" class="wysiwyg-text-align-justify"><strong>Viewing, Using and Exporting Rating Data</strong></h2>
+<p class="wysiwyg-text-align-justify">Two values are recorded as the result of the rating: the number of ratings and the average rating.</p>
+<p class="wysiwyg-text-align-justify">These values are usually displayed on the website right next to the rated contents. In the admin area, you can also view the results in the following places:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Forum, discussion or blog posts: in the respective post overview.</li>
+<li>Ratings of blogs: in the blog overview</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The corresponding exports also contain the rating results.</p>
+<ul class="

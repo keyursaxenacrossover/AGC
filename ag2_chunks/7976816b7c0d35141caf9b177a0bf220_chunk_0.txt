@@ -1,0 +1,39 @@
+<h1 id="h_01J6W3XK781BJDDVJSWRMTFTFR">Overview</h1>
+<p>This article provides a detailed guide on accessing and working with the DXi Service Gateways. It includes information on the available service gateways, how to connect to them using SSH, and how to resolve common issues like the 'Unprotected Private File Key' error. Additionally, it explains how to navigate installation folders on the server.</p>
+<ul>
+<li><a href="#h_01J6W3XK78B2HV0YVAD41PAPGA">1. Available Service Gateways:</a></li>
+<li><a href="#h_01J6W3XK788GDAFFAQM4KNJDHY">2. Accessing the Service Gateways:</a></li>
+<li><a href="#h_01J6W3XK780KEJWWAYTHH98F1H">3. Connecting to a Service Gateway:</a></li>
+<li><a href="#h_01J6W3XK78N31JKXFFWHTYFXGV">4. Navigating Installation Folders:</a></li>
+<li><a href="#h_01J7E2EAEQBC7D3V482RV0X5Z6">5. Service Gateway Purpose and Usage</a></li>
+<li><a href="#01J8QS4CEBNQQ6KPMT655G7Y13">6. Access Hurricane GUI for Hurricane configurations and logs</a></li>
+<li><a href="#h_01J7E2DADPJJMR92JGZFXTH0Z4">Troubleshooting</a></li>
+</ul>
+<h1 id="h_01J6W3XK78VP2GB271QW6V54D4">Information</h1>
+<h3 id="h_01J6W3XK78B2HV0YVAD41PAPGA">1. Available Service Gateways:</h3>
+<p>There are four service gateways across different AWS clusters that you can access:</p>
+<ul>
+<li>
+<strong>Prod-DE-03</strong>: <code>servicegw.prod-de-03.customervoice360.com:65222</code> (AWS DE)</li>
+<li>
+<strong>Prod-US-03</strong>: <code>servicegw.prod-us-03.customervoice360.com:65222</code> (AWS USA)</li>
+<li>
+<strong>Sandbox-DE-02</strong>: <code>servicegw.sandbox-de-02.customervoice360.com:65222</code> (Sandbox Cluster)</li>
+<li>
+<strong>BofA-US-01</strong>: <code>servicegw.bofa-us-01.customervoice360.com:65222</code> (Bank of America Cluster)</li>
+</ul>
+<h3 id="h_01J6W3XK788GDAFFAQM4KNJDHY">2. Accessing the Service Gateways:</h3>
+<p>To gain access to the DXi Service Gateways, you must create an SSH public key. Follow the instructions provided in <a style="box-sizing: border-box; background-color: #ffffff; color: #1f73b7; text-decoration: underline; font-family: -apple-system, BlinkMacSystemFont, ' Segoe UI' , Roboto, ' Helvetica Neue' , Arial, sans-serif, ' Apple Color Emoji' , ' Segoe UI Emoji' , ' Segoe UI Symbol' , ' Noto Color Emoji' font-size:16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal;" href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20971568408338" target="_blank" rel="noopener noreferrer">Creating SSH Public Key for DXI Service Gateways</a>.</p>
+<h3 id="h_01J6W3XK780KEJWWAYTHH98F1H">3. Connecting to a Service Gateway:</h3>
+<p>Once you have access, you can connect to a service gateway using any command line tool with the following command:</p>
+<div class="dark bg-gray-950 contain-inline-size rounded-md border-[0.5px] border-token-border-medium">
+<div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md">
+<pre class="flex items-center"><span style="font-size: 1em;">ssh -i ~/.ssh/&lt;SSH_KEY&gt; &lt;EMAIL_USERNAME&gt;@servicegw.prod-de-03.customervoice360.com -p 65222</span></pre>
+</div>
+</div>
+<p><strong>Example:</strong></p>
+<div class="dark bg-gray-950 contain-inline-size rounded-md border-[0.5px] border-token-border-medium">
+<pre class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-bash">ssh -i ~/.ssh/rsa_id rishi.singh@servicegw.prod-de-03.customervoice360.com -p 65222
+</code></pre>
+</div>
+<p id="h_01J6W42P6H

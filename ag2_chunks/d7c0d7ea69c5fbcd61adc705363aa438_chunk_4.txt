@@ -1,0 +1,41 @@
+Optionally, you can hide panelists' email addresses in the admin area for specific user teams.</p>
+<p class="wysiwyg-text-align-justify">Various rights enable you to hide email addresses in specific menus. These new rights are fully integrated into the EFS rights system and should be used in combination with existing ACL rights and object rights. For user teams not allowed to access panelists’ email addresses, revoke the new rights and also the read rights for “show_ppasswd” and “mail_passwords.” These rights grant access to panelist passwords in the panelists administration and mail preview, allowing users to log in as a panelist and view the email address on the website.</p>
+<p class="wysiwyg-text-align-justify">The following table provides an overview:</p>
+<table class="wrapped tablesorter tablesorter-default relative-table confluenceTable wysiwyg-text-align-justify" style="margin: 0px auto; border-collapse: collapse; background-color: #ffffff; height: 657px; width: 944px;" border="1">
+<tbody>
+<tr class="tablesorter-headerRow">
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; background-color: var(--ds-background-accent-gray-subtlest,#f0f0f0); padding: 7px 10px !important; width: 177.431px;" scope="col">
+<div class="tablesorter-header-inner">Rights</div>
+</th>
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; background-color: var(--ds-background-accent-gray-subtlest,#f0f0f0); width: 741.25px;" scope="col">
+<div class="tablesorter-header-inner wysiwyg-indent1">Meaning</div>
+</th>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 177.431px;">mail_cc</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 733.229px;">
+<p>With read rights, you can define the additional recipient options CC and BCC in mail templates and mail dispatch proces<span class="legacy-color-text-default" style="color: #000000;">ses. If you intend to use this right, please check the manual “EFS Survey” for further advice.</span></p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 177.431px;">mail_email_mailadmin</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 733.229px;">
+<p>With read rights, you can view the e-mail addresses of mails in the mail queue.</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 177.431px;">mail_email_preview</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 733.229px;">
+<p>With read rights, you can view the recipients’ e-mail addresses in the mail preview.</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 177.431px;">mail_reply</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 733.229px;">
+<p>With read rights, you can define the additional options “Reply-To”, “Return-Path” and “Read confirmation” in mail templates and mail dispatch processe<span class="legacy-color-text-default" style="color: #000000;">s. If you intend to use this right, please check the manual “EFS Survey” for further advice.</span></p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 177.431px;">panel_email_bonus</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 733.229px;">
+<p>With read rights, you can view the e-mail addresses of the panelists in the bonus system. Please note that this right does not affect the e-mail addresses contained in the bonus points log: if you do not want user teams to

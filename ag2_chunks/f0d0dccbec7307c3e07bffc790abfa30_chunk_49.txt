@@ -1,0 +1,131 @@
+strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>listId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>id of list <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="header-240">Participants</h2>
+<div class="expand-macro">
+<h4 id="h_01J441N79K5MPRS7AQWT8DB5J9"> </h4>
+<h3 id="header-242">POST /survey/participants/v2/{sampleId}</h3>
+<p>Add multiple participants to a survey. Only <code>u_email</code> is required and you can skip all other fields. Additional participant variables can be filled through <code>additionalFields</code>. When providing <code>u_passwd</code>, please note that this field needs to be unique. Valid options for <code>returnIdentifierType</code> are <em>u_email</em>, <em>code</em> and <em>uid. u_email</em> is only available if <code>allowDuplicateEmails</code> is set to <em>false</em>.</p>
+<p><code>POST /survey/participants/{sampleId}</code>, without v2, should no longer be used, as it was replaced with this call. To migrate your application to the new call, add <code>allowDuplicateEmails</code> to the old request and change the end point to <code>…/v2/</code>.</p>
+<p>Also, in personalised projects, the sampleId is the surveyId plus 1.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "returnIdentifierType": "code",
+  "participantList": [
+    {
+      "u_passwd": "123456",
+      "u_firstname": "First",
+      "u_name": "Last",
+      "u_email": "example@domain.tld",
+      "u_mobile": "0049123456",
+      "u_title": "Dr.",
+      "u_gender": "NOT_SPECIFIED",
+      "u_group": 1,
+      "u_language": 1,
+      "u_timezone": "+0:00",
+      "additionalFields": [
+        {
+          "key": "u_example",
+          "value": "test"
+        }
+      ]
+    }
+  ],
+  "allowDuplicateEmails": true
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[ "fd68114f34314916" ]</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>sampleId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>id of sample to add the participants to <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79KKW7RNMCT9EKNYQ13"> </h4>
+<h3 id="header-243">POST /survey/participants/v3/{sampleId}</h3>
+<p>Add multiple participants to a survey via task queue. Returns <em>taskId</em> which has to be used to get results via <code>GET /efs/taskqueue/{taskId}</code>.</p>
+<p>This is the recommended call for importing bigger batches of participants to a survey and this call is request body compatible to /v2.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "returnIdentifierType": "u_email",
+  "participantList": [
+    {
+      "u_passwd": "123456",
+      "u_firstname": "First",
+      "u_name": "Last",
+      "u_email": "example@domain.tld",
+      "u_mobile": "0049123456",
+      "u_title": "Dr.",
+      "u_gender": "NOT_SPECIFIED",
+      "u_group": 1,
+      "u_language": 1,
+      "u_timezone": "+0:00",
+      "additionalFields": [
+        {
+          "key": "u_example",
+          "value": "test"
+        }
+      ]
+    }
+  ],
+  "allowDuplicateEmails": true
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">1234</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162

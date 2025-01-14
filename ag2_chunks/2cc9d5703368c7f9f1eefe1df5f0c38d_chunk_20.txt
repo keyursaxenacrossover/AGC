@@ -1,0 +1,144 @@
+<ul>
+<li>
+<p>Topic title</p>
+</li>
+<li>
+<p>Displayed date of creation</p>
+</li>
+<li>
+<p>Date of last post</p>
+</li>
+<li>
+<p>Number of posts</p>
+</li>
+</ul>
+<p>Possible sort order:</p>
+<ul>
+<li>
+<p>Ascending</p>
+</li>
+<li>
+<p>Descending</p>
+</li>
+</ul>
+</td>
+<td style="width: 243.212px; height: 274px;">
+<p> </p>
+</td>
+</tr>
+<tr style="height: 327px;">
+<td style="width: 147.014px; height: 327px;">
+<p>Thread sort order</p>
+</td>
+<td style="width: 386.319px; height: 327px;">
+<p>Using the drop-down lists, you can define in which order the threads should be displayed.</p>
+<p>Possible criteria:</p>
+<ul>
+<li>
+<p>Thread title</p>
+</li>
+<li>
+<p>Number of posts</p>
+</li>
+<li>
+<p>Date of last post</p>
+</li>
+<li>
+<p>Date of creation</p>
+</li>
+<li>
+<p>From EFS 10.3: Number of ratings</p>
+</li>
+<li>
+<p>From EFS 10.3: Average rating</p>
+</li>
+</ul>
+<p>Possible sort order:</p>
+<ul>
+<li>
+<p>Ascending</p>
+</li>
+<li>
+<p>Descending</p>
+</li>
+</ul>
+</td>
+<td style="width: 243.212px; height: 327px;">
+<p> </p>
+</td>
+</tr>
+<tr style="height: 99px;">
+<td style="width: 147.014px; height: 99px;">
+<p>From EFS 10.3: Panelists are allowed to modify the thread-sorting</p>
+</td>
+<td style="width: 386.319px; height: 99px;">
+<p>If the option is activated, the thread sorting is displayed on the website.</p>
+</td>
+<td style="width: 243.212px; height: 99px;">
+<p>Deactivated</p>
+</td>
+</tr>
+<tr style="height: 75px;">
+<td style="width: 147.014px; height: 75px;">
+<p>Maximum number of posts displayed per page</p>
+</td>
+<td style="width: 386.319px; height: 75px;">
+<p>Limits the length of the display per page. Excess posts are displayed on the following pages.</p>
+</td>
+<td style="width: 243.212px; height: 75px;">
+<p> </p>
+</td>
+</tr>
+<tr style="height: 131px;">
+<td style="width: 147.014px; height: 131px;">
+<p>From EFS 10.1: Maximum number of threads displayed per page</p>
+</td>
+<td style="width: 386.319px; height: 131px;">
+<p>Limits the length of the display per page. Excess threads are displayed on the following pages.</p>
+<p>In the external view, the pagination feature will be displayed as soon as the number of threads exceeds the limit.</p>
+</td>
+<td style="width: 243.212px; height: 131px;">
+<p> </p>
+</td>
+</tr>
+<tr style="height: 230px;">
+<td style="width: 147.014px; height: 230px;">
+<p>Allow anonymous posts</p>
+</td>
+<td style="width: 386.319px; height: 230px;">
+<p>You can permit anonymous posting.</p>
+<p>If the feature is activated, a checkbox „Anonymous post“ will be displayed on the website. If panelists mark the respective checkbox before submitting their posts, their profiles will not be linked - even if they have explicitly activated the sharing of profile data. To prevent abuse, it will of course be logged internally who authored such anonymous posts, and moderators can access this information in the admin area.</p>
+</td>
+<td style="width: 243.212px; height: 230px;">
+<p>Deactivated</p>
+</td>
+</tr>
+<tr style="height: 520px;">
+<td style="width: 147.014px; height: 520px;">
+<p>Mail template for thread subscription mail</p>
+</td>
+<td style="width: 386.319px; height: 520px;">
+<p>The subscription feature is activated by selecting a mail template that contains the accompanying text for the notification.</p>
+<p>Available are templates of the “standard mail” type.</p>
+<p>The following wildcards can be used:</p>
+<ul>
+<li>
+<p>#subscription_title#: Title of the section</p>
+</li>
+<li>
+<p>#subscription_post_title#: Title of the new post</p>
+</li>
+<li>
+<p>#subscription_post_link#: Link to post</p>
+</li>
+<li>
+<p>#subscription_unsubscribe#: Link that allows to unsubscribe</p>
+</li>
+</ul>
+<p>Once the feature is activated, <strong>Subscribe-/Unsubscribe</strong> links will be displayed in the forum threads.</p>
+<ul>
+<li>
+<p>When panelists have subscribed to a forum thread they will receive an e-mail notification whenever a new post has been added.</p>
+</li>
+<li>
+<p>Panelists with panel status “inactive” (i.e. usually panelists who left the panel) will not get e

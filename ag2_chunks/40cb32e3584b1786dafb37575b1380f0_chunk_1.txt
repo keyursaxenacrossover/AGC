@@ -1,0 +1,63 @@
+>
+<p>Create a Unique Identifier field in the Okta profile</p>
+</li>
+<li>
+<p>Change Identity Provider to not use the email but another external identifier as identifier for OKta</p>
+</li>
+<li>
+<p>Make email-address changable ni EFS/Portals</p>
+</li>
+</ul>
+<p> </p>
+<h1 id="h_01J69S6T6SGY6CX3RQKMY13QYE">FAQ</h1>
+<ol>
+<li>
+<p><strong>Why can’t email addresses be edited with the current setup?</strong></p>
+<ul>
+<li>When an IdP masters user data, email addresses are often used as unique identifiers, preventing edits within systems like Questback Access.</li>
+</ul>
+</li>
+<li>
+<p><strong>What is the benefit of using a unique identifier instead of an email address?</strong></p>
+<ul>
+<li>Using a unique identifier allows flexibility in managing user profiles, including the ability to change email addresses without affecting the unique identity of the user in the system.</li>
+</ul>
+</li>
+<li>
+<p><strong>What are the risks of ignoring IdP changes?</strong></p>
+<ul>
+<li>Ignoring changes from the IdP could lead to inconsistencies between the IdP and Okta, which might cause issues with user authentication and data synchronization.</li>
+</ul>
+</li>
+</ol>>
+<p>Create a Unique Identifier field in the Okta profile</p>
+</li>
+<li>
+<p>Change Identity Provider to not use the email but another external identifier as identifier for OKta</p>
+</li>
+<li>
+<p>Make email-address changable ni EFS/Portals</p>
+</li>
+</ul>
+<p> </p>
+<h1 id="h_01J69S6T6SGY6CX3RQKMY13QYE">FAQ</h1>
+<ol>
+<li>
+<p><strong>Why can’t email addresses be edited with the current setup?</strong></p>
+<ul>
+<li>When an IdP masters user data, email addresses are often used as unique identifiers, preventing edits within systems like Questback Access.</li>
+</ul>
+</li>
+<li>
+<p><strong>What is the benefit of using a unique identifier instead of an email address?</strong></p>
+<ul>
+<li>Using a unique identifier allows flexibility in managing user profiles, including the ability to change email addresses without affecting the unique identity of the user in the system.</li>
+</ul>
+</li>
+<li>
+<p><strong>What are the risks of ignoring IdP changes?</strong></p>
+<ul>
+<li>Ignoring changes from the IdP could lead to inconsistencies between the IdP and Okta, which might cause issues with user authentication and data synchronization.</li>
+</ul>
+</li>
+</ol>

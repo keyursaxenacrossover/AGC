@@ -1,0 +1,9 @@
+ ROM script that is used to do an update of the installation and use -f to force it back to the ROM </p><pre><code class="language-bash">cd /opt/pdp/rollout2/bin
+
+./set_efs_version.sh -c ../etc/rollout2.conf -t TEST -b EFS_17.3 -i /nfs/opstx/xxxx -p TEST -n 0004_1 -f</code></pre><h2 id="header-5">Roll out a build on all frontends</h2><p>Roll out a build on all frontends without updating/upgrading an actual installation<br>Basically use the ROM script to update an installation but do not name an actual installation </p><pre><code class="language-bash">cd /opt/pdp/rollout2/bin
+
+./set_efs_version.sh -c ../etc/rollout2.conf -t TEST -b EFS_17.3 -p TEST -n 0004_1</code></pre><h2 id="header-6">Update/Upgrade an installation in the ROM</h2><p>see <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Update installation" ri:version-at-save="13"></ri:page><ac:link-body>Update installation</ac:link-body></ac:link> </p><p></p> ROM script that is used to do an update of the installation and use -f to force it back to the ROM </p><pre><code class="language-bash">cd /opt/pdp/rollout2/bin
+
+./set_efs_version.sh -c ../etc/rollout2.conf -t TEST -b EFS_17.3 -i /nfs/opstx/xxxx -p TEST -n 0004_1 -f</code></pre><h2 id="header-5">Roll out a build on all frontends</h2><p>Roll out a build on all frontends without updating/upgrading an actual installation<br>Basically use the ROM script to update an installation but do not name an actual installation </p><pre><code class="language-bash">cd /opt/pdp/rollout2/bin
+
+./set_efs_version.sh -c ../etc/rollout2.conf -t TEST -b EFS_17.3 -p TEST -n 0004_1</code></pre><h2 id="header-6">Update/Upgrade an installation in the ROM</h2><p>see <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Update installation" ri:version-at-save="13"></ri:page><ac:link-body>Update installation</ac:link-body></ac:link> </p><p></p>

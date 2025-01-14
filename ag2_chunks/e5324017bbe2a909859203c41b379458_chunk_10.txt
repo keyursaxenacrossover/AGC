@@ -1,0 +1,26 @@
+mark>. It will only verify a user’s identity.</p>
+<p data-renderer-start-pos="4384"> </p>
+<h4 id="My-users-got-an-e-mail-to-activate-their-account-and-to-set-a-passwort-from-Okta-but-they-use-their-own-Identity-Provider---What-password-is-correct?" data-renderer-start-pos="4505"><strong data-renderer-mark="true">My users got an e-mail to activate their account and to set a passwort from Okta but they use their own Identity Provider - What password is correct?</strong></h4>
+<p data-renderer-start-pos="4656">The password the user provided at Okta will be stored at Okta. The user should never be asked for that password if this user is an Identity Provider user. But in that case either the configuration in EFS or Okta are not correct.</p>
+<p data-renderer-start-pos="4888">see Okta tenant setup and SAML Provider Setup</p>
+<p data-renderer-start-pos="4909"> </p>
+<h4 id="My-EFS-installation-is-currently-using-HTTP-(without-HTTPS)---is-it-possible-to-enable-Tivian-Access-in-that-case?" data-renderer-start-pos="4911"><strong data-renderer-mark="true">My EFS installation is currently using HTTP (without HTTPS) - is it possible to enable Tivian Access in that case?</strong></h4>
+<p data-renderer-start-pos="5027">Using HTTP is not secure. Therefore it is prohibited use Tivian Access with HTTP. There are no guarantees in such a careless use case.</p>
+<p data-renderer-start-pos="5163">Before using Tivian Access HTTPS has to be enabled for every product making use of Tivian Access.</p>
+<p data-renderer-start-pos="5262"> </p>
+<h4 id="With-Chrome-in-version-80+-third-party-cookies-without-the-same-site-attribute-are-not-allowed-anymore---is-that-an-issue?-I-can-see-warnings-in-Chrome’s-developer-console-for-the-Okta-login-flow---does-that-effect-functionality?" data-renderer-start-pos="5264"><strong data-renderer-mark="true">With Chrome in version 80+ third-party cookies without the same-site attribute are not allowed anymore - is that an issue? I can see warnings in Chrome’s developer console for the Okta login flow - does that effect functionality?</strong></h4>
+<p data-renderer-start-pos="5495">Okta has taken care to update all relevant Cookies. The warnings in Chrome’s developer console stem from Cookies that are not affected. They are not sent to the server and therefore not critical.</p>
+<p data-renderer-start-pos="5692">We hope that Okta will update their libraries to get rid of the warning. But no functionality should be affected.</p>
+<p data-renderer-start-pos="5807">Also see:</p>
+<p data-renderer-start-pos="5818"><a class="cc-1rn59kg" title="https://devforum.okta.com/t/errors-in-chrome-with-samesite-using-okta-auth-js/7373/5" href="https://devforum.okta.com/t/errors-in-chrome-with-samesite-using-okta-auth-js/7373/5" data-testid="link-with-safety" data-renderer-mark="true">https://devforum.okta.com/t/errors-in-chrome-with-samesite-using-okta-auth-js/7373/5</a></p>
+<p data-renderer-start-pos="5904"><a class="cc-1rn59kg" title="https://developer.okta.com/docs/release-notes/2019-10-0/#tokens-transform-events-no-longer-available" href="https://developer.okta.com/docs/release-notes/2019-10-0/#tokens-transform-events-no-longer-available" data-testid="link-with-safety" data-renderer-mark="true">https://developer.okta.com/docs/release-notes/2019-10-0/#tokens-transform-events-no-longer-available</a></p>
+<p data-renderer-start-pos="6006"><a class="cc-1rn59kg" title="https://blog.chromium.org/2019/10/developers-get-ready-for-new.html" href="https://blog.chromium.org/2019/10/developers-get-ready-for-new.html" data-testid="link-with-safety" data-renderer-mark="true">https://blog.chromium.org/2019/10/developers-get-ready-for-new.html</a></p>
+<p> </p>
+<h2 id="h_01J6EY4CEC6CPV7N89N064K8EH"> </h2>
+<h2 id="header-9">Integrations</h2>
+<h4 id="What-is-an-Identity-Provider-?" data-renderer-start-pos="4"><strong data-renderer-mark="true">What is an Identity Provider ?</strong></h4>
+<p data-renderer-start-pos="36">An Identity Provider is a service which is used to handle authentication for other services. The authentication process is specified by protocols.<br>It is commonly used to achieve Single-Sign-On (SSO) across multiple applications.</p>
+<p data-renderer-start-pos="266">A few common ones are:</p>
+<ul class="ak-ul" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="292"><a class="cc-1rn59kg" title="https://www.okta.com/" href="https://www.okta.com/" data-testid="link-with-safety"

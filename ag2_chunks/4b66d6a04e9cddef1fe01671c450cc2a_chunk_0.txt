@@ -1,0 +1,135 @@
+<h1 id="h_01J4KMQEY0F9NFDBA0Y6FG7KTK">Overview</h1>
+<p>An important feature of EFS is to send emails. There are different features that send emails like survey participation, security emails etc.</p>
+<p>On this page snailmail and jobmaker are part of the EFS software. This is not entirely true from a deployment perspective but good enough for this page.</p>
+<h1 id="h_01J4KMR8TSGQZWE619YVTKGC0B">Information</h1>
+<p>From a top-level view the picture below shows how email sending works.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20591455212690" alt="Runtime View - EMail(2).png"></p>
+<ul>
+<li>
+<p><strong>EFS software</strong></p>
+<ul>
+<li>
+<p>creates email from templates and puts them in an email table</p>
+</li>
+<li>
+<p>next to that an email procedure is created in another table - one procedure can have multiple emails</p>
+</li>
+<li>
+<p>the templates are filled when sending forwarding emails to the email server</p>
+</li>
+<li>
+<p>there are two mechanism to actually send emails:</p>
+<ul>
+<li>
+<p>ad-hoc: An email is sent directly when sending is triggered</p>
+</li>
+<li>
+<p>snailmail: Emails are put in the email table and processed by a cron-job called snailmail that periodically loads un-sent emails and forwards them to the email server</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Email server - Postfix</strong></p>
+<ul>
+<li>
+<p>the postfix is used as a cache/queue for the Hurricane</p>
+</li>
+<li>
+<p>it simply forwads emails</p>
+</li>
+<li>
+<p>this is done due to availability reasons with regards to the Hurricane and a VPN connection</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Hurricane MTA</strong></p>
+<ul>
+<li>
+<p>this on premise solution is the actual email transfer server that sends the emails to the respective recipients</p>
+</li>
+<li>
+<p>a callback is configured that is requested when the status of an email that should be sent changes</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Tracking Service</strong></p>
+<ul>
+<li>
+<p>the tracking service is the recipient of the callback in Hurricane</p>
+</li>
+<li>
+<p>it pushed changes in the email status to a RabbitMQ</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Tracking Queue</strong></p>
+<ul>
+<li>
+<p>The Tracking Queue (RabbitMQ) serves as a publish/subscribe mechanism for notifications</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>EFS software</strong></p>
+<ul>
+<li>
+<p>The cron-job Jobmaker of EFS has a task/job that periodically reads notifications from the Tracking Queue and adapts the email status accordingly</p>
+</li>
+</ul>
+</li>
+</ul>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p><p>this is done due to availability reasons with regards to the Hurricane and a VPN connection</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Hurricane MTA</strong></p>
+<ul>
+<li>
+<p>this on premise solution is the actual email transfer server that sends the emails to the respective recipients</p>
+</li>
+<li>
+<p>a callback is configured that is requested when the status of an email that should be sent changes</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Tracking Service</strong></p>
+<ul>
+<li>
+<p>the tracking service is the recipient of the callback in Hurricane</p>
+</li>
+<li>
+<p>it pushed changes in the email status to a RabbitMQ</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Tracking Queue</strong></p>
+<ul>
+<li>
+<p>The Tracking Queue (RabbitMQ) serves as a publish/subscribe mechanism for notifications</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>EFS software</strong></p>
+<ul>
+<li>
+<p>The cron-job Jobmaker of EFS has a task/job that periodically reads notifications from the Tracking Queue and adapts the email status accordingly</p>
+</li>
+</ul>
+</li>
+</ul>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>

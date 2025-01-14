@@ -1,0 +1,30 @@
+{
+    "id": 20716421200274,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/20716421200274.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20716421200274-MFA-Setup",
+    "author_id": 369584192734,
+    "comments_disabled": false,
+    "draft": true,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20714711445138,
+    "created_at": "2024-08-12T19:05:35Z",
+    "updated_at": "2024-08-12T19:06:03Z",
+    "name": "MFA Setup",
+    "title": "MFA Setup",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-08-12T19:06:03Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075294,
+    "content_tag_ids": [],
+    "label_names": [],
+    "body": "<p><b>Original Confluence URL:</b> <a href=\"https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1077150570\">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1077150570</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>\n\n<h2>Table of Contents</h2>\n<ul class=\"toc\">\n<ul>\n<li><a href=\"#header-1\">Step 1: Navigate to Multifactor Authentication</a></li>\n<ul>\n<li><a href=\"#header-3\">Step 2: Check Factors and navigate to Factor Enrollment</a></li>\n<ul>\n<li><a href=\"#header-5\">Step 3: Add a new Multifactor Enrollment</a></li>\n<li><a href=\"#header-6\">Step 4: Configure Factors and Group</a></li>\n<li><a href=\"#header-7\">Step 5: Configure Enrollment Rule</a></li>\n<li><a href=\"#header-8\">Step 6: Navigate to Authentication and Sign-On</a></li>\n<li><a href=\"#header-9\">Step 7: Edit existing Sign-On Policy</a></li>\n</ul>\n</ul>\n</ul>\n</ul><p>See <ac:link ac:card-appearance=\"inline\"><ri:page ri:content-title=\"Naming conventions in Okta\" ri:version-at-save=\"13\"></ri:page><ac:link-body>Naming conventions in Okta</ac:link-body></ac:link> </p><p>Also see <ac:link ac:card-appearance=\"inline\"><ri:page ri:content-title=\"Addon MFA\" ri:version-at-save=\"5\"></ri:page><ac:link-body>Addon MFA</ac:link-body></ac:link> </p><hr><h1 id=\"header-1\">Step 1: Navigate to Multifactor Authentication</h1><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716421858962\" alt=\"Screenshot_2019-11-29 Questback - Dashboard.png\"><h2 id=\"header-3\">Step 2: Check Factors and navigate to Factor Enrollment</h2><p>If you want to configure a specific factor first check if that factor is available.</p><p>Navigate to Factor Enrollment - also see <ac:link ac:card-appearance=\"inline\"><ri:page ri:content-title=\"Global Okta Setup\" ri:version-at-save=\"12\"></ri:page><ac:link-body>Global Okta Setup</ac:link-body></ac:link> </p><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716465095186\" alt=\"Screenshot_2019-11-29 Questback - Multifactor.png\"><p></p><h3 id=\"header-5\">Step 3: Add a new Multifactor Enrollment</h3><p>See <ac:link ac:card-appearance=\"inline\"><ri:page ri:content-title=\"Factor Enrollment\" ri:version-at-save=\"3\"></ri:page><ac:link-body>Factor Enrollment</ac:link-body></ac:link> </p><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716421705362\" alt=\"Screenshot_2019-11-29 Questback - Multifactor(1).png\"><p></p><h3 id=\"header-6\">Step 4: Configure Factors and Group</h3><p><strong>Values:</strong></p><p>Policy Name: see <ac:link ac:card-appearance=\"inline\"><ri:page ri:content-title=\"Naming conventions in Okta\" ri:version-at-save=\"13\"></ri:page><ac:link-body>Naming conventions in Okta</ac:link-body></ac:link> </p><p>Description: Put something in here that others will understand</p><p>Assign to groups: Only the specific targeted group must be added here</p><p>Effective Factors:</p><p style=\"margin-left: 30.0px;\">If multiple factors are possible - pick all of them as Optional</p><p style=\"margin-left: 30.0px;\">If only one factor is possible and forced - pick the factor as required</p><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716444722322\" alt=\"Screenshot_2019-11-29 Questback - Multifactor(2).png\"><p></p><h3 id=\"header-7\">Step 5: Configure Enrollment Rule</h3><p><strong>Values:</strong></p><p>Name: something reasonable</p><p>User is  accessing: Check Okta and Applications</p><p>Enroll in factor: decide based on the user requirements - “first time the user is challenged“ should be a good default</p><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716464802962\" alt=\"Screenshot_2019-11-29 Questback - Multifactor(4).png\"><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716421577490\" alt=\"Screenshot_2019-11-29 Questback - Multifactor(3).png\"><p></p><h3 id=\"header-8\">Step 6: Navigate to Authentication and Sign-On</h3><p>Navigate to the Sign-On Tab in Authentication</p><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716421444498\" alt=\"Screenshot_2019-11-29 Questback - Multifactor(5).png\"><h3 id=\"header-9\">Step 7: Edit existing Sign-On Policy</h3><p>There should be a Sign-On Policy in place for the tenant. More specific cases are not covered in this documentation, but should be self-explanatory.</p><p><strong>Values:</strong></p><p>Prompt for Factor: check it</p><p>Factor Prompting: based on the user requirements - having a factor session lifetime of 24 hour - 7 days could be a good default</p><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716464597650\" alt=\"Screenshot_2019-11-29 Questback - Authentication(1).png\"><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716421380242\" alt=\"Screenshot_2019-11-29 Questback - Authentication(2).png\"><p></p>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

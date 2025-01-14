@@ -1,0 +1,37 @@
+li>
+<li>
+<p><strong>Linux/Mac:</strong></p>
+<ol>
+<li>Navigate to the private key directory: <code>cd ~/.ssh</code>.</li>
+<li>Set the correct permissions: <code>chmod 600 &lt;KEY_NAME&gt;</code>.</li>
+<li>Verify the permissions: <code>ls -l &lt;KEY_NAME&gt;</code>. The output should show -rw------- for the key file.</li>
+</ol>
+</li>
+</ul>
+<p>After correcting the permissions, try connecting to the gateway again.</p>
+<p> </p>
+<h1 id="h_01J6W3XK78WBKPT59WE30DE6AM">FAQ</h1>
+<p><strong>1. What should I do if I don't have SSH access?</strong></p>
+<p>Follow the steps in the provided guide to create an SSH public key and request access.</p>
+<p><strong>2. What does the 'Unprotected Private File Key' error mean?</strong></p>
+<p>This error indicates that the permissions on your private SSH key are too open. Follow the steps under troubleshooting section to secure your key.</p>
+<p><strong>3. How can I find the technical name of an installation?</strong></p>
+<p>You can determine the technical name from the installation's URL or use Globis if the installation uses a customer domain.</p>li>
+<li>
+<p><strong>Linux/Mac:</strong></p>
+<ol>
+<li>Navigate to the private key directory: <code>cd ~/.ssh</code>.</li>
+<li>Set the correct permissions: <code>chmod 600 &lt;KEY_NAME&gt;</code>.</li>
+<li>Verify the permissions: <code>ls -l &lt;KEY_NAME&gt;</code>. The output should show -rw------- for the key file.</li>
+</ol>
+</li>
+</ul>
+<p>After correcting the permissions, try connecting to the gateway again.</p>
+<p> </p>
+<h1 id="h_01J6W3XK78WBKPT59WE30DE6AM">FAQ</h1>
+<p><strong>1. What should I do if I don't have SSH access?</strong></p>
+<p>Follow the steps in the provided guide to create an SSH public key and request access.</p>
+<p><strong>2. What does the 'Unprotected Private File Key' error mean?</strong></p>
+<p>This error indicates that the permissions on your private SSH key are too open. Follow the steps under troubleshooting section to secure your key.</p>
+<p><strong>3. How can I find the technical name of an installation?</strong></p>
+<p>You can determine the technical name from the installation's URL or use Globis if the installation uses a customer domain.</p>

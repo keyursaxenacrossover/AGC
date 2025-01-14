@@ -1,0 +1,28 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1169031232">https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1169031232</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">20.1</a></li>
+<li><a href="#header-2">19.5</a></li>
+<li><a href="#header-3">19.3</a></li>
+<li><a href="#header-4">19.1</a></li>
+</ul>
+</ul><p class="media-group"><ac:parameter ac:name="name"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20714712092050" alt="Upgrade Flow.pdf"></ac:parameter></p><p></p><h1 id="header-1">20.1</h1><p>run layout script in www folder</p><p>/opt/pdp/opst/apps/php56/bin/php support/build_project_layout.php scope=all list=true</p><p>/opt/pdp/opst/apps/php56/bin/php support/build_project_layout.php scope=all parallel=true batchsize=25 tempfile=~/temp.txt logfile=~/log.tx</p><p></p><h1 id="header-2">19.5</h1><div class="expand-macro">
+<h4 string="quick checks"></h4>
+<p>[]run size SA-script to check for correct size<br>[]set date with SA<br>[]SA activate maintenance page, switch engine an restart db port<br>[]check if maintenance page is live<br>[]check i-script: DB correct? ROM?<br>[]check out Zendframeworklibrary<br>watch Healself, this takes a long time ( <em>watch --color -n 5 'echo "select now(); show full processlist;" | efslogin -mo' </em>)<br>[]update Globis</p>
+</div><p><strong>MariaDB</strong></p><ul><li>
+<p>DB is running on a MariaDB Server<br>check in i script: dbs have name mariadb[XX]<br>or in console after login to database<br></p>
+<pre><code class="language-text">//-mo for TKA and Procus5
+efslogin
+SHOW variables LIKE '%socket%';</code></pre>
+</li></ul><p>Path returned looks like this for MySQL:</p><p>/opt/pdp/opst/mysql51/tmp/mysql.opst.5861.sock</p><p>and like this for MariaDB:</p><p>/opt/pdp/opst/mariadb/tmp/mysql.opst.6060.sock</p><p><em><span style="color: rgb(101,84,192);">Steps to be taken:</span></em><br>If the installation is not on MariaDB, sumbit case to SystemsEngineers to have them perform the migration first.</p><p><strong>DV </strong>needs to be latest Version 4.3</p><p><strong>Downtime</strong></p><ul>
+<li><p>there is a maintenance window needed for external installations because the installation will not be available while the sysadmins restart the port</p></li>
+<li><p>this maintenance has to be confimed by the sysadmins</p></li>
+<li><p>within business hours the inquiry has to be made two days prior to the date of the downtime</p></li>
+<li><p>all downtimes outside business hours need two weeks</p></li>
+<li><p>the inquiry needs to be made via salesforce case in the systemengineering queue</p></li>
+</ul><p></p><h1 id="header-3">19.3</h1><p>Customizings initialization method changed. Please refer to</p><p><ac:link ac:card-appearance="inline"><ri:page ri:content-title="Upgradability check for installations with customizings" ri:version-at-save="2"></ri:page><ac:link-body>Upgradability check for installations with customizings</ac:link-body></ac:link> </p><h1 id="header-4">19.1</h1><p>PHP 5.6:</p><ul>
+<li><p>Alle Alias der EFS 18.4 Installation in einer php 5.6 ServiceGroup<br>check here: <a href="http://10.250.0.17/repo/SG.html">http://10.250.0.17/repo/SG.html</a></p></li>
+<li><p>Best case: Alle Kundenverwalteten DNS-Einträge zeigen per CNAME auf den technical name, damit wir die Installation verschieben können.<br>Verify here: <a href="http://10.250.0.17/repo/efsdns_info.txt">http://10.250.0.17/repo/efsdns_info.txt</a></p></li>
+</ul><p><em><span style="color: rgb(101,84,192);">Steps to be taken:</span></em></p><p>If customer needs to change their own dns record, please contact the respective 1st Level Support.</p><p>Then once ready for the frontend move, assign ticket to SystemEngineering.</p><p>Once move is completed, proceed with usual steps

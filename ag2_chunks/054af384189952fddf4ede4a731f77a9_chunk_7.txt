@@ -1,0 +1,56 @@
+ style="color: var(--ds-text-warning,#974f0c);">NO</span></span></span></p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; width: 393px;" colspan="1" rowspan="1" data-colwidth="414">
+<p data-renderer-start-pos="6097">Storing of PII is not permitted for the DE cluster. Instead data shall be written back to encryption at rest backed Tivian EFS.</p>
+</td>
+</tr>
+<tr>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; width: 190px;" colspan="1" rowspan="1" data-colwidth="146">
+<p data-renderer-start-pos="6230">Tableau/Mysight Cluster US</p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; width: 75px;" colspan="1" rowspan="1" data-colwidth="98">
+<p data-renderer-start-pos="6260"><span class="status-lozenge-span cc-0" role="presentation" data-node-type="status" data-color="neutral"><span class="cc-1mququ6" style="background-color: var(--ds-background-neutral,#dfe1e6);"><span class="cc-1iyijc2" style="color: var(--ds-text-subtle,#42526e);">NO</span></span></span></p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; width: 94px;" colspan="1" rowspan="1" data-colwidth="102">
+<p data-renderer-start-pos="6266"><span class="status-lozenge-span cc-0" role="presentation" data-node-type="status" data-color="green"><span class="cc-vklyj9" style="background-color: var(--ds-background-success,#e3fcef);"><span class="cc-7xdu1q" style="color: var(--ds-text-success,#064);">YES</span></span></span></p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; width: 393px;" colspan="1" rowspan="1" data-colwidth="414">
+<p data-renderer-start-pos="6272">Storing of PII is not permitted for the US cluster. Instead data shall be written back to encryption at rest backed Tivian EFS.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<h2 id="h_01HGKSMPRSQ8YXQJ8YJXKP8YQP">Availability</h2>
+<p>The Tivian EFS architecture is designed for high availability:</p>
+<ul>
+<li>Capacity planning allows for complete failure of one AZ without loss of service</li>
+<li>In case of two AZ failures, the remaining AZ takes over all traffic with reduced capacity</li>
+<li>In the event of all three AZs failing, disaster recovery procedures are activated. This includes rebuilding the AWS infrastructure, which is defined as Infrastructure as Code. Subsequently, all backups will be restored. During this time, Tivian will actively communicate with its customers about the progress of the effort to full recovery.</li>
+</ul>
+<p> </p>
+<h2 id="h_01HGKSMPRSZ0QXQJ8YJXKP8YQQ">Backups</h2>
+<p>Tivian EFS implements a comprehensive backup strategy:</p>
+<ul>
+<li>Daily backups for all Amazon RDS and Amazon EFS instances</li>
+<li>Backup window: 20:00–04:00 UTC</li>
+<li>Retention period: Two months with a point in time per day</li>
+<li>All backups are monitored for completion and encrypted</li>
+</ul>
+<h3 id="h_01J3JQDH9AKG1SKF7SRSFGMSK6">Database Backups</h3>
+<p>The Tivian EFS Database uses Amazon RDS service for backups:</p>
+<ul>
+<li>Creates storage volume snapshots of the entire DB instance</li>
+<li>First snapshot is a full backup, subsequent snapshots are incremental</li>
+</ul>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq_01">What is the difference between Tivian EFS and AWS EFS?</h3>
+<p>Tivian EFS refers to the Enterprise Feedback Suite, while AWS EFS is the Elastic File System used as the underlying filesystem for the Tivian EFS installation.</p>
+<h3 id="faq_02">How is data synchronized between AWS Availability Zones?</h3>
+<p>Data is automatically synchronized online between the AWS Availability Zones to ensure consistency and high availability.</p>
+<h3 id="faq_03">What encryption method is used for data at rest?</h3>
+<p>Data at rest is encrypted using AES-256 algorithm through AWS Key Management Service (KMS).</p>
+<h3 id="faq_04">How often are backups performed?</h3>
+<p>Backups are performed daily, with a backup window between 20:00–04:00 UTC.</p>
+<h3 id="faq_05">What is the retention period for backups?</h3>
+<p>Backups are retained for two

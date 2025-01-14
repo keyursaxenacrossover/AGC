@@ -1,0 +1,86 @@
+<h1 id="h_01J3ZA1JFGT4VCSQGYVDRP4HVT" class="wysiwyg-text-align-justify">Overview</h1>
+<article>
+<p>This article provides comprehensive information about the Statistics menu in the survey management system. It covers various aspects of monitoring and analyzing survey data, including field reports, online statistics, open-ended answers, and data quality management.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>The Statistics menu (accessible via the <strong>Survey menu)</strong> offers tools for tracking survey progress, analyzing responses, and ensuring data quality. It includes features for generating field reports, viewing real-time statistics, managing open-ended responses, and performing data-cleaning operations.</p>
+</article>
+<ul>
+<li><a href="#field-report">Field report</a></li>
+<li><a href="#online-statistics">Online statistics</a></li>
+<li><a href="#open-ended-answers">Open-ended answers</a></li>
+<li><a href="#detail-view">Detail view</a></li>
+<li><a href="#quality-correction">Quality correction</a></li>
+<li><a href="#data-cleaning">Data cleaning</a></li>
+<li><a href="#delete-data">Delete data</a></li>
+</ul>
+<p> </p>
+<p class="wysiwyg-text-align-justify"><strong style="font-size: 1.5em;">Field report</strong></p>
+<p class="wysiwyg-text-align-justify">The <strong>Field report</strong> provides information on the essential characteristic data of a study. It contains:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>statistical information, broken down by gross and net sample</p>
+</li>
+<li>
+<p>access statistics listing, for example, the time of days with the most accesses and the average number of participants per day and week</p>
+</li>
+<li>
+<p>drop-out statistics which show you on which questionnaire page most participants dropped out. If the drop-out rate is too high, you can react by changing the questionnaire dramaturgy. Errors, for example in the filter setting, can also be detected by analyzing the drop-out statistics</p>
+</li>
+<li>
+<p>quota statistics</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">You can invoke the field report by selecting the desired project from the project list and then clicking on the <strong>Statistics</strong> menu item.</p>
+<h3 id="diagram" class="wysiwyg-text-align-justify"><strong>Diagram</strong></h3>
+<p class="wysiwyg-text-align-justify">The diagram belonging to the field report gives you a quick overview of the progress made in the field phase.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The highlight colors indicate the participants’ disposition codes</p>
+</li>
+<li>
+<p>Click on the disposition codes below the chart to display or hide specific codes.</p>
+</li>
+<li>
+<p>If the field period is too long to display each day in the chart</p>
+</li>
+<li>
+<p>You can print the chart or download it in PNG, PDF, or SVG.</p>
+</li>
+<li>
+<p>The most important information is shown above the chart.</p>
+</li>
+<li>
+<p>The field report shows the data of the current field period.</p>
+</li>
+</ul>
+<h3 id="restricting-the-field-report" class="wysiwyg-text-align-justify"><strong>Restricting the field report</strong></h3>
+<p class="wysiwyg-text-align-justify">The field report can be limited to specific disposition codes or variable characteristics. The following options are available:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>disposition codes “completed” = 31, “completed after break” = 32, “screened out” = 37 and “all other status levels”.</p>
+</li>
+<li>
+<p>project variables and URL parameters. Exception: Variables of text question types (141, 142, 143, 144, 363), user-defined question variables (question type 911), and user-defined variables cannot be used for restriction purposes.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Click the <strong>Configuration</strong> button.</p>
+</li>
+<li>
+<p>In the upper section disable, if necessary, the disposition codes not to be used to restrict the basis.</p>
+</li>
+<li>
+<p>If you wish to make restrictions using a project variable, select the latter and confirm with <strong>Continue</strong>.</p>
+</li>
+<li>
+<p>In the next step select the desired variable characteristic.</p>
+</li>
+<li>
+<p><strong>Confirm</strong> again. The restricted field report is issued.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">To undo the field report restriction, switch back to the <strong>Configuration</strong> dialog, select “Delete current restriction” and confirm with <strong>Continue</strong>.</p>
+<p class="wysiwyg-text-align-justify">Read rights for <em>config_fieldreport</em> are required for accessing the configuration options.</p>
+<h3 id="splitting-the-field

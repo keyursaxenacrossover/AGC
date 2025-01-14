@@ -1,0 +1,65 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K" class="wysiwyg-text-align-justify">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article covers three main topics: configuring forms, managing bonuses, and working with Smarty templates in the EFS Panel. It provides detailed information on customizing registration and data change forms, setting up and managing bonus systems, and utilizing Smarty templates for panel page design.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">This guide focuses on advanced features of the EFS Panel, including form configuration, bonus management, and template customization. It is intended for panel administrators and web designers who need to tailor their panel's functionality and appearance.</p>
+<ul>
+<li><a href="#configuring-forms">Configuring Forms</a></li>
+<li><a href="#bonuses">Bonuses</a></li>
+<li><a href="#working-with-smarty-templates">Working with Smarty Templates</a></li>
+</ul>
+<h1 id="configuring-forms" class="wysiwyg-text-align-justify">Configuring Forms</h1>
+<p class="wysiwyg-text-align-justify">User-defined forms allow you to adjust particularly complex forms, such as the registration form, to the requirements of a specific panel in an optimal way.</p>
+<p class="wysiwyg-text-align-justify">EFS provides you with user-defined forms for registration, data changes, and profiles of community panels.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>You can use different forms on different language versions of the same website.</li>
+<li>For each language version, you can create and use several forms of the same type at the same time. Thus you can, for example, use different registration forms for different ways of entry.</li>
+<li>Related variables can be assigned to a group and then output in a separate section of the registration form, for example.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">In the following Chapters, you learn to manage user-defined forms:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>It explains how to manage the forms of a panel.</li>
+<li>You learn to change the configuration of the variables used in a form.</li>
+<li>It introduces special features of registration and data change forms.</li>
+<li>You learn about the special features of profile forms.</li>
+</ul>
+<h2 id="managing-forms" class="wysiwyg-text-align-justify"><strong>Managing Forms</strong></h2>
+<p class="wysiwyg-text-align-justify">The GUI for creating and managing forms is located in the <strong>Website → Standard content → Forms</strong> menu.</p>
+<p class="wysiwyg-text-align-justify"><em>Information: </em>Read rights for “panel_website_forms” are needed for accessing the <strong>Forms</strong> menu.</p>
+<p class="auto-cursor-target wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014859864594" alt="forms.png"></p>
+<p class="wysiwyg-text-align-justify">If you want to view forms of another language version that you’re authorized to access in a given installation with several websites and/or language versions, simply change the settings in the upper section of the dialog. You can use the View function to change the number of table columns displayed as well as the number of rows per page. You can browse the overview table.</p>
+<p class="wysiwyg-text-align-justify">The following editing options are available:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Form name: Opens the overview of variables that belong to the respective form.</li>
+<li>Edit settings: Opens the properties dialog.</li>
+<li>Delete: The form will be deleted after a confirmation prompt.</li>
+</ul>
+<h3 id="creating-a-form" class="wysiwyg-text-align-justify"><strong>Creating a Form</strong></h3>
+<p class="wysiwyg-text-align-justify">By clicking on the Create form button you can open the dialog used to configure a new form.</p>
+<h3 id="form-properties" class="wysiwyg-text-align-justify"><strong>Form Properties</strong></h3>
+<p class="wysiwyg-text-align-justify">The table lists the properties a form can have.</p>
+<table class="wrapped wysiwyg-text-align-justify" style="margin-right: auto; margin-left: auto;" border="1">
+<colgroup> <col> <col> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center">Field</th>
+<th class="wysiwyg-text-align-center">Description</th>
+</tr>
+<tr>
+<td>Website / Language version</td>
+<td>
+<p>Website and language version to which the form belongs. Cannot be changed subsequently.</p>
+</td>
+</tr>
+<tr>
+<td>Form name</td>
+<td>Name of the form</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Description for internal purposes only</td>
+</tr>
+<tr>
+<td>Form type</td>
+<td>
+<p>The form type determines the function module where the form can be used.</p>
+<p>You can choose

@@ -1,0 +1,43 @@
+ padding: 7px 10px !important; width: 193.351px; height: 30px;">Title</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 290.469px; height: 30px;">The label.</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 133.733px; height: 30px;">Birthday</td>
+</tr>
+<tr style="height: 30px;">
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 193.351px; height: 30px;">Data type</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 290.469px; height: 30px;">
+<p>Data type and size in the database.</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 133.733px; height: 30px;">int</td>
+</tr>
+<tr style="height: 30px;">
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 193.351px; height: 30px;">Order</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 290.469px; height: 30px;">
+<p>The position in the order of master data.</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 133.733px; height: 30px;">5</td>
+</tr>
+<tr style="height: 30px;">
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 193.351px; height: 30px;">Category ID</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 290.469px; height: 30px;">The master data category.</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 133.733px; height: 30px;">3</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p class="wysiwyg-text-align-justify"><strong>2. Formatting answer categories</strong></p>
+<p class="wysiwyg-text-align-justify">The following format should be used:</p>
+<p class="wysiwyg-text-align-justify"><code>r_cat;master data variable;code;title;</code></p>
+<p class="wysiwyg-text-align-justify">Example:</p>
+<p class="wysiwyg-text-align-justify"><code>r_cat;md_001;Birthday;0;Please select</code></p>
+<p class="wysiwyg-text-align-justify">This sample answer category belongs to the variable “md_001”, in which the birthday is saved. The answer category has the code “0” and is labeled “Please select”, i.e. it is the defaulted field in a drop-down list that prompts the panelist to set the correct date.</p>
+<div class="table-wrap wysiwyg-text-align-justify">
+<div class="table-wrap">
+<table class="relative-table wrapped tablesorter tablesorter-default confluenceTable" style="margin: 0px; border-collapse: collapse; width: 698px; height: 315px;">
+<colgroup> <col style="width: 0px;"> <col style="width: 0px;"> <col style="width: 0px;"> </colgroup>
+<tbody>
+<tr class="tablesorter-headerRow" style="height: 33px;">
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; background-color: var(--ds-background-accent-gray-subtlest,#f0f0f0); padding: 7px 10px !important; width: 204.601px; height: 33px;" scope="col">
+<div class="tablesorter-header-inner">Field</div>
+</th>
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align:

@@ -1,0 +1,131 @@
+<td>yes, different possibilities <ac:link ac:anchor="*6"></ac:link><br><br>
+</td>
+</tr>
+<tr>
+<td><br></td>
+<td colspan="1">Other Flows</td>
+<td>yes, custom HTML, custom policies</td>
+<td>yes, there is only one flow, errors could also be customized</td>
+</tr>
+<tr>
+<td><br></td>
+<td colspan="1">EMails</td>
+<td>no</td>
+<td>yes, but account/organization-wide</td>
+</tr>
+<tr>
+<td colspan="1"><br></td>
+<td colspan="1">SMS</td>
+<td colspan="1">no</td>
+<td colspan="1">yes, but account/organization-wide</td>
+</tr>
+<tr>
+<td><br></td>
+<td colspan="1"><p>Custom HTML</p></td>
+<td>yes</td>
+<td>yes, via widget or via customizing the widget tenant-wide</td>
+</tr>
+<tr>
+<td><br></td>
+<td colspan="1">Custom HTML with Javascript</td>
+<td>yes</td>
+<td>yes, see above</td>
+</tr>
+<tr>
+<td><br></td>
+<td colspan="1">Custom HTML with login widget</td>
+<td>not explicitly</td>
+<td>yes</td>
+</tr>
+<tr>
+<td colspan="1"><br></td>
+<td colspan="1">Custom IdP flows</td>
+<td colspan="1">yes, with some limits</td>
+<td colspan="1">no, but all necessary flows seem to be present</td>
+</tr>
+<tr>
+<td colspan="1"><br></td>
+<td colspan="1">Custom Domain Name</td>
+<td colspan="1">no (not yet)</td>
+<td colspan="1">yes, but only one per account/organization</td>
+</tr>
+<tr>
+<td colspan="1"><strong>Effort</strong></td>
+<td colspan="1"><br></td>
+<td colspan="1"><strong>1/5</strong></td>
+<td colspan="1"><strong>4/5</strong></td>
+</tr>
+<tr>
+<td colspan="1"><br></td>
+<td colspan="1">
+<strong>Onboarding</strong> - How much time is needed to onboard new developers (so that they can comfortably work on new features)</td>
+<td colspan="1">
+<p><strong>a few weeks</strong></p>
+<p>Since custom policies are needed as soon as certain features are required, custom policies must be entirely understood</p>
+<p><strong>Due to poor documentation and unexpected behaviour this is time consuming and frustrating</strong><br><br>Also some kind of internal tooling is required to properly work with custom policies (which comes on top)</p>
+</td>
+<td colspan="1">
+<p><strong>~1 week</strong></p>
+<p>Everything is configurable via UI, basic concepts of OKTA on top of SSO/Authentication concepts need to be understood<br><br>Good would be to also know the API</p>
+</td>
+</tr>
+<tr>
+<td colspan="1"><br></td>
+<td colspan="1">
+<strong>Changes</strong> in flows/IdP</td>
+<td colspan="1">
+<p>Can be very time consuming in case of unexpected behaviour,</p>
+<p>can also work like expected</p>
+<p>E.g: Just adding a field to collect from the user and validating it CAN be very time consuming </p>
+</td>
+<td colspan="1">Straight forward, changes are predictable and possible via UI</td>
+</tr>
+<tr>
+<td colspan="1"><br></td>
+<td colspan="1">How much effort is needed to setup a new tenant (manually)</td>
+<td colspan="1">
+<p>Without internal tooling/presets for custom policies: days</p>
+<p>With just adjusting an existing policy: hours + testing</p>
+</td>
+<td colspan="1">
+<p>a few hours - if done for the first time</p>
+<p>less than an hour if done regularly</p>
+</td>
+</tr>
+<tr>
+<td colspan="1"><br></td>
+<td colspan="1">Can a non-developer (e.g: IT-OPs, Business, Security Manager) work with the solution</td>
+<td colspan="1">
+<p>no,</p>
+<p>even if features/configuration is available in the UI, as soon as custom policies are used it is not possible</p>
+<p>basic users management could be performed easily</p>
+<p>adding/changing flows/apps via XML is not appropriate</p>
+</td>
+<td colspan="1">yes,<br><br>as long as they find the features in the UI (which covers most)</td>
+</tr>
+<tr>
+<td colspan="1"><strong>MFA</strong></td>
+<td colspan="1"><br></td>
+<td colspan="1"><strong>3/5 (only SMS out of the box)</strong></td>
+<td colspan="1"><strong>5/5</strong></td>
+</tr>
+<tr>
+<td><br></td>
+<td colspan="1">Is MFA possible?</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><br></td>
+<td colspan="1">SMS</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><br></td>
+<td colspan="1">Authenticator App</td>
+<td>no <ac:link ac:anchor="*1"></ac:link>
+</td>
+<td>yes</td>
+</tr>
+<tr

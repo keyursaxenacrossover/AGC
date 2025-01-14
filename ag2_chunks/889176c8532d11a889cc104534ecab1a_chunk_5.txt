@@ -1,0 +1,52 @@
+</strong> : helpersMysqlKillSleeps<br><strong>Known Change Request</strong>:</p>
+<h3 id="header-31">Tail live PHP error logs</h3>
+<p>=====================================================================<br><strong>Needed files</strong> : tailPhpErrorlog.sh<br><strong>Aliases</strong> : tailphperror,helpersLogPhpTailErrors,helpersPhpTailErrors<br><strong>Usage</strong> : tailphperror #execute without parameter<br><strong>Example</strong> : tailphperror<br><strong>Known Change Request</strong>:</p>
+<h3 id="header-32">Get list of current CDA (Customer Data Access)</h3>
+<p>=====================================================================<br><strong>Needed files</strong> : getCdaAccesses.php<br><strong>Aliases</strong> : helpersCDA,helpersEfsCDA<br><strong>Usage</strong> : helpersCDA #execute without parameter<br><strong>Example</strong> : helpersCDA<br><strong>Known Change Request</strong>:</p>
+<h3 id="header-33">Check whether a domain is akamaized</h3>
+<p>=====================================================================<br><strong>Needed files</strong> : Framework by Freddy, we just call the file cli<br><strong>Aliases</strong> : helpersAkamai<br><strong>Usage</strong> : helpersAkamai #Freddy prints out a <strong>Usage</strong><br><strong>Example</strong> : helpersAkamai<br><strong>Known Change Request</strong>:</p>
+<h3 id="header-34">Get Elastic Search</h3>
+<p>=====================================================================<br><strong>Needed files</strong> : helpersGetElasticSearchIndexStatus.sh<br><strong>Aliases</strong> : helpersGetElasticSearchIndexStatus<br><strong>Usage</strong> : helpersGetElasticSearchIndexStatus #Always prints out <strong>Usage</strong><br><strong>Example</strong> : helpersGetElasticSearchIndexStatus opst_surveyu<br><strong>Known Change Request</strong>:</p>
+<h3 id="header-35">Get information of installation from GLOBIS</h3>
+<p>=====================================================================<br><strong>Needed files</strong> : globis_get_contact.php<br><strong>Aliases</strong> : helpersEfsGlobisInformation<br><strong>Usage</strong> : helpersEfsGlobisInformation #Prints out Help directly<br><strong>Example</strong> : helpersEfsGlobisInformation #execute without parameter<br><strong>Known Change Request</strong>:</p>
+<h3 id="header-36">Navigate to installation without database connection</h3>
+<p>=====================================================================<br><strong>Needed files</strong> : inst_quick.sh<br><strong>Aliases</strong> : i2<br><strong>Usage</strong> : i2 [search parameter]<br><strong>Example</strong> : i2 <a href="http://www.unipark.de">www.unipark.de</a><br><strong>Known Change Request</strong>:</p>
+<p> </p>
+<h2 id="header-38">Non-”Helperscripts”</h2>
+<h3 id="header-40">Healself</h3>
+<p>=====================================================================<br><span style="color: #ff991f;"><strong>Needed files</strong> : www/healself.php</span><br><span style="color: #ff991f;"><strong>Aliases</strong> : </span><br><span style="color: #ff991f;"><strong>Usage</strong> : </span><br><strong>Example</strong>: Execute healself on installation</p>
+<p>cd ../www</p>
+<p>php support/healself.php</p>
+<p><strong>Known Change Request</strong>: N/A</p>
+<p>If a healself task fails, here is how to check what the reason was and how to solve the issue:</p>
+<ul>
+<li>
+<p>healself_task_log (this is where failed Healself Tasks are recorded) - <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20714785565202" target="_blank" rel="noopener noreferrer">Healself Tasks</a></p>
+</li>
+</ul>
+<p><strong>Example</strong> error message:</p>
+<pre><code class="language-text">The following tasks failed with errors:
+- panel_healself_jobs_1007::createElasticsearchIndexOnNewInstallation [Create an elasticsearch index on a new panel installation]:
+  - Task reported it failed on line 725 in class panel_healself_jobs_1007</code></pre>
+<p><strong>Solution:</strong></p>
+<ul>
+<li>
+<p>This is a panel healself task so navigate to the healself folder in the panel module:</p>
+</li>
+<li>
+<pre><code class="language-text">cd modules/panel/components/healself/jobs/</code></pre>
+</li>
+<li>
+<p>Open the healself file of the corresponding EFS version and directly jump to the problematic line (in this case it is line 725 as said in the error message above):</p>
+</li>
+<li>
+<pre><code class="language-bash">vi 1007.inc.php +725</code></pre>
+</li>
+<li>
+<p>Check the code in that line</p>
+<ul>
+<li>
+<p>If a database query is executed, execute the query manually on the database to see the exact error message.</p>
+</li>
+<li>
+<p>In this case connection to

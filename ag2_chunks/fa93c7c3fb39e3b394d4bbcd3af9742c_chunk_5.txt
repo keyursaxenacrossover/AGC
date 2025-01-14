@@ -1,0 +1,80 @@
+ a 'wrong' language has been defined, the default language of the portal is used.</p>
+</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998265827474" alt="u locale.png"></p>
+<p>The <em>m_offlineusers </em>master data</p>
+<p>This feature is an enhancement of the 'Offline User Scenario', which you know from the 18.3 fall release. If you add panelists with the master data m_offlineusers = 1 in the guide setup, at the end of the guide setup process will generate a PDF that will be sent to the guide initiator containing participation vouchers. In order to mask the dummy e-mail address, this dummy e-mail address is replaced by the placeholder <em>Offline Participant</em> in both the participant list and the search results.</p>
+<h3 id="header-14">Displaying the dimensions of the matrix questions</h3>
+<p>In order to make the question text of the matrix question types accessible in the Guide setup, the names of the individual dimensions of a matrix question type are now displayed.</p>
+<h3 id="header-15">Sending result e-mails</h3>
+<p>Under the <strong>Settings</strong> tab of the <strong>Guides</strong> sub-navigation, you will find three radio buttons that you can use to determine to whom the result e-mail is sent automatically after a guide has been ended.</p>
+<ul>
+<li>
+<p>no one</p>
+</li>
+<li>
+<p>everyone (manager included)</p>
+</li>
+<li>
+<p>guide-initiator</p>
+</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998267753746" alt="Results.png"></p>
+<h3 id="header-16">Improvements of the <em>Action-Board</em>
+</h3>
+<p>In this winter release several new features of the <em>Action Board</em> are also implemented.</p>
+<p><u>Moving tickets</u></p>
+<p>In the detail view of the action ticket, you can now move a ticket to the adjacent columns. Under <strong>More</strong> you click on <strong>Move to "Ongoing"</strong>, <strong>Move to "Inbox"</strong> or <strong>Move to "Done"</strong> depending on which column the ticket is in.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998260841362" alt="More.png"></p>
+<p><u>Configuring a due date by using the </u><em><u>Portal Action Trigger</u></em></p>
+<p>On the <strong>Detail configuration</strong> tab of the <em>Portal Action Trigger</em>, which you use to create an action board action by using a survey, you can now also specify a due date. The following setting options are available:</p>
+<ul>
+<li>
+<p>No expiration date</p>
+</li>
+<li>
+<p>Duration to due date in days</p>
+</li>
+<li>
+<p>Determination of a specific expiration date</p>
+</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998254023570" alt="Due date action trigger.png"></p>
+<p><u>Editing comments</u></p>
+<p>You have the option of activating an editing function for both comments and replies to comments. This allows you to edit and delete comments. The delete function also removes the answered comments. Users can only edit their own comments and replies.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998237664146" alt="Comment 1.png"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998220510226" alt="Comment 2.png"></p>
+<h3 id="header-17">Improvement of the <em>Portals</em> notification center</h3>
+<p>In order to provide a better overview of the possible settings, you can only change the notification settings of the modules you have access to.</p>
+<h3 id="header-18">Question Preview in Guide Setup</h3>
+<p>Under the "Template configuration" menu item of the project properties, you can select the desired questions from the questionnaire below. These questions will be displayed in the Guide setup.</p>
+<h3 id="header-19">The new column of the <em>Report list</em> module </h3>
+<p>The table of the <em>Report list</em> module has a new column in which the meta names of the focus units are listed.</p>
+<h2 id="header-21">People</h2>
+<h3 id="header-23">Portal mails under the menu item Mail-Report</h3>
+<p>In order to get an overview of the e-mails sent via <em>Portals</em>, a new tab is now available in the <em>People</em> module. There you will find the following information:</p>
+<ul>
+<li>
+<p>mail process</p>
+</li>
+<li>
+<p>subject</p>
+</li>
+<li>
+<p>source</p>
+</li>
+<li>
+<p>User</p>
+</li>
+<li>
+<p>date</p>
+</li>
+<li>
+<p>Total</p>
+</li>
+<li>
+<p>queue</p>
+</li>
+<li>
+<p>in dispatch</p>
+</li>
+<li

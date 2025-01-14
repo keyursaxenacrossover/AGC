@@ -1,0 +1,78 @@
+ made the general settings, the<strong> Inclusion conditions</strong> tab will appear. It lists the following information and setting options for each list element:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Variable name: The variable and label of the respective option in the source question.</p>
+</li>
+<li>
+<p>Editable text field: List element no.</p>
+</li>
+<li>
+<p>Fixed number: The sort number of the option in the source question.</p>
+</li>
+<li>
+<p>Source variable: The label used for the source variable in the source question.</p>
+</li>
+<li>
+<p>Type</p>
+</li>
+<li>
+<p>Inclusion conditions: The conditions under which the element concerned is displayed in a target question. The following chapters explain how to specify in advance inclusion conditions individually, for the entire list or for elements yet to be added.</p>
+</li>
+<li>
+<p>Output text: The text that will be output in the questionnaire. (If you are using the list in a loop, you can use wildcards to incorporate the list elements into the questionnaire. In this case, you can click on the links in the “Output text” column to open a dialog that allows you to create additional wildcards with alternate text versions.)</p>
+</li>
+</ul>
+<h3 id="specifying-inclusion-conditions-for-individual-list-elements" class="wysiwyg-text-align-justify">Specifying inclusion conditions for individual list elements</h3>
+<p class="wysiwyg-text-align-justify">By making the appropriate settings in the drop-down lists in the “Inclusion condition” column, you can choose between the following options, separately for each element:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>if selected, always in list: If the respondent has chosen the list element from the source question, it will always be displayed from that point on.</p>
+</li>
+<li>
+<p>if not selected, always list element: If the respondent has not chosen the list element from the source question, it will always be displayed from that point on.</p>
+</li>
+<li>
+<p>always in list: The list element will always be displayed, even if the respondent has not chosen it from the source question.</p>
+</li>
+<li>
+<p>never in list: The element will never be displayed. This setting can be used for elements which are to appear only in the source question.</p>
+</li>
+<li>
+<p>in the list if...: As soon as you set this inclusion condition, an <strong>Edit</strong> icon will appear, allowing you to open the condition editor and define a filter condition.</p>
+</li>
+<li>
+<p>always in random selection</p>
+</li>
+<li>
+<p>if selected, always in random selection</p>
+</li>
+<li>
+<p>if not selected, always in random selection</p>
+</li>
+<li>
+<p>in random selection if...: As soon as you set this inclusion condition, an <strong>Edit</strong> icon will appear, allowing you to open the condition editor and define a filter condition.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">By default, the “if selected, always in list” option is preset.</p>
+<p class="wysiwyg-text-align-justify">Click on <strong>Save</strong> after you have completed your settings. Clicking on the <strong>Back</strong> <strong>to Editor</strong> menu item will take you back to the question view of the source question.</p>
+<p class="wysiwyg-text-align-justify">Once the above-mentioned inclusion conditions have been processed, the size of the list can be used for filtering (variable <em>list_size_listID</em>).</p>
+<h3 id="specifying-global-inclusion-conditions" class="wysiwyg-text-align-justify">Specifying global inclusion conditions</h3>
+<p class="wysiwyg-text-align-justify">Alternatively, you can also define or change all inclusion conditions with a single click.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>To do so, click the <strong>Define global inclusion conditions</strong> button.</p>
+</li>
+<li>
+<p>Select the desired condition in the pop-up that opens.</p>
+</li>
+<li>
+<p>When you select a condition that requires a detailed definition, the<strong> Edit</strong> icon is activated in the “Actions” column. Define the condition in the condition editor. You can use the #varname# and #code# wildcards to do so.</p>
+</li>
+<li>
+<p><strong>Save</strong> the settings. All list inclusion conditions are now changed accordingly.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">#varname#: Wildcard available for selection in the “Variables” selection field. It is respectively replaced in the various list elements by the name of the variable assigned to the list element in the source question.</p>
+<p class="wysiwyg-text-align-justify">#code# Can be entered in the “Code” field. It is replaced in the various list elements by the code the list element has in the source question.</p>
+<h3 id="defining-the-default-setting-for-all-new-list-elements" class="wysiwyg-text-align-justify">Defining the default setting for all new list elements</h3>
+<p class="wysiwyg-text-align-justify">You can define in advance which inclusion conditions newly created list elements shall have by default in

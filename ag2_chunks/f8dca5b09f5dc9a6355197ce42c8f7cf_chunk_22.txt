@@ -1,0 +1,24 @@
+; letter-spacing: -0.005em; font-size: 1em; font-weight: 400; line-height: 1.714;" data-renderer-start-pos="15431">Please keep in mind that the running of installation checks may affect your installation’s performance. Especially in the case of large installations, these checks should therefore be run during weak-load periods, if possible.</p>
+</div>
+</div>
+</div>
+</div>
+<h2 id="h_01J35XYX20RNHJGTZC9EJCV2PJ" class="wysiwyg-text-align-justify" data-renderer-start-pos="15660"> </h2>
+<h2 id="01J35XKYX0KXMPJ2191XV1BP6B" class="wysiwyg-text-align-justify" data-renderer-start-pos="15660"><strong data-renderer-mark="true">System settings</strong></h2>
+<h2 id="h_01J35XYX20S71S7D8S3265A276" class="wysiwyg-text-align-justify" data-renderer-start-pos="15660"><strong style="font-size: 15px;" data-renderer-mark="true"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015166259858"></strong></h2>
+<h2 id="h_01J35XYX20K7Y42RXY3G21E41C" class="wysiwyg-text-align-justify" data-renderer-start-pos="15660"><strong style="font-size: 15px;" data-renderer-mark="true">Limiting the mail volume per mail interval</strong></h2>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="15724">The emails in the queue are processed in packages: per default, up to 300 emails will be processed in 10-minute intervals. You can change the value of 300 emails. To do so, open the <strong data-renderer-mark="true">Options</strong> → <strong data-renderer-mark="true">System settings </strong>menu and enter the new maximum value in the “Job size for mail sending” field. Up to 2,000 emails can be sent per package.</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="16051"><strong data-renderer-mark="true">Defining the number of repeats for dispatch problems</strong></p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="16105">If the mail server does not accept mail or if it is not possible to connect to the mail server at all, the system will try to dispatch it again eight hours later. After four unsuccessfull attempts, the mail will be deleted and the recipient will be assigned disposition code 14. You can change the maximum number of dispatch attempts. To do so, open the <strong data-renderer-mark="true">Options</strong>→ <strong data-renderer-mark="true">System settings</strong> menu and enter the new maximum value in the “Maximum number of attempts to dispatch the mail” field.</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="16587"><strong data-renderer-mark="true">Delay between delivery attempts</strong></p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="16620">You may define the amount of time (in minutes) to pass between delivery attempts. Find the respective option in the <strong data-renderer-mark="true">Options</strong> menu → <strong data-renderer-mark="true">System Settings</strong>.</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="16769"><span class="wysiwyg-underline">System-wide Activation and Deactivation of Participation Limits</span></p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="16834">In the “Participation limit” field of the Options-&gt;System settings menu you can set the installation-wide limit for the number of simultaneous survey participants of individual projects. Disable this option by entering a value of “0”.</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="17072">The <strong data-renderer-mark="true">Options</strong> → <strong data-renderer-mark="true">System settings</strong> menu is only accessible to members of the administrator team or the system administrator team.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="17200"><strong data-renderer-mark="true">Setting the threshold for the server load</strong></p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="17243">The threshold for the load limit is specified by the platform administrator. (Platform administrators are all members of the “Administration” user team.) To do so, switch to the <strong data-renderer-mark="true">Options</strong> → <strong data-renderer-mark="true">System settings</strong> menu and make the setting in the “Load limit” area. At a value of “0”, the load limit will be switched off. If you wish to use the function, a value of “3” is recommended. In general, this value naturally depends on your server’s performance.</p>
+<ul class="ak-ul wysiwy

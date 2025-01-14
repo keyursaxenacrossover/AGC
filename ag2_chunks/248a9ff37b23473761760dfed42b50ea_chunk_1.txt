@@ -1,0 +1,92 @@
+ Templates Externally and Uploading them</h3>
+<p class="wysiwyg-text-align-justify">You can export templates for further use on other <em>EFS Survey</em> installations or for local processing. To do so, click on the <strong>Export</strong> button. Similarly, you can use the <strong>Import</strong> button to upload external templates to the server, both individual templates and zip files containing several templates.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="debug-mode" class="wysiwyg-text-align-justify">Debug Mode</h2>
+<p class="wysiwyg-text-align-justify"><em>EFS</em> layouts work with invisible tables to position texts on a page. For debugging, it is often desirable to make table boundary lines temporarily visible. On the <strong>Debug mode</strong> tab, you can activate the table borders for all those who see the survey. Alternatively, you can make table borders visible only for those participants with a special IP address. Assume that your project is already in the field and you want to make changes to it on short notice. Naturally, you do not want your participants to see the table borders, so you restrict the view to yourself.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="upload" class="wysiwyg-text-align-justify">Upload</h2>
+<p class="wysiwyg-text-align-justify">When designing the layout it is often necessary to load files up to the server, occasionally also to other directories than the directory /images used by the media library. To do this use the <strong>Upload</strong> function on the tab of the same name in the <strong>Pro editor</strong>. Here, you can also specify zip files, which will be unpacked to the desired directory.</p>
+<p class="wysiwyg-text-align-justify">The file size for importing data is limited. If your file exceeds the installations-specific threshold, a warning message will be displayed.</p>
+<h3 id="uploading-a-new-file" class="wysiwyg-text-align-justify">Uploading a New File</h3>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Select the character set.</p>
+</li>
+<li>
+<p>Select the target directory.</p>
+</li>
+<li>
+<p>Locate the desired file on the hard disk.</p>
+</li>
+<li>
+<p>Confirm by clicking on <strong>Upload file</strong>.</p>
+</li>
+</ul>
+<h3 id="the-pirectories-of-the-project" class="wysiwyg-text-align-justify">The Directories of the Project</h3>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 262.0px;"> <col style="width: 498.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p><strong>Directory</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p><strong>Use</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>JavaScript</p>
+</td>
+<td>
+<p>JavaScript files for the “Responsive Layout”.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>project directory/images</p>
+</td>
+<td>
+<p>Images that were added to a project by the user, e.g. via the media library, are stored in this directory.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Layout</p>
+</td>
+<td>
+<p>All images supplied with a survey layout, e.g. graphical form elements, and standard logos, are stored in this directory.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>CSS</p>
+</td>
+<td>
+<p>CSS files.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="wildcards" class="wysiwyg-text-align-justify">Wildcards</h2>
+<p class="wysiwyg-text-align-justify">On the <strong>Wildcards</strong> tab, you can easily define dynamic content for each questionnaire page outside of the actual questionnaire. You can use this feature, for example, to divide your survey into topic blocks and then visualize this division in the layout. To do so, proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Click on the <strong>Wildcards</strong> tab.</p>
+</li>
+<li>
+<p>Click on the page title of the first page of your project.</p>
+</li>
+<li>
+<p>A form will appear, in which you can insert a maximum of five wildcards for this page. Type an arbitrary text into the <strong>Text 1</strong> field, e.g. “Demographic questions”</p>
+</li>
+<li>
+<p>Click on <strong>Save Changes</strong>.</p>
+</li>
+<li>
+<p>Repeat Steps 1 through 4 for further pages.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Now tell the layout where you would like to use the defined wildcards:</p>
+<ul class="wysiwyg-text

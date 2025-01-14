@@ -1,0 +1,72 @@
+20997849618450" alt="image-20200629-103755.png"></p>
+<h3 id="header-15">Adding of panelists to multiple groups</h3>
+<p>Panelists can now be added to multiple groups at the same time through the panelist administration.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20997903018770" alt="image-20200629-130747.png"></p>
+<h1 id="header-17">Portals</h1>
+<h3 id="header-19">New guide type: Topic</h3>
+<p>With the new Topic guide, you can collect feedback not related to a persona or a team, but to a specific topic. A topic could be for example an event, a supplier or a marketing campaign.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20997903214354" alt="image-20201019-103049.png"></p>
+<p>A topic can be entered by the guide-initiator during the guide-setup or provided as a list (prepared in guide-configuration) for the initiator to select from. Validation for topics entered is available, and the topic can be optionally checked to be an URL, Hashtag or Email address.</p>
+<h3 id="header-20">New invitation mode for guides: Shareable link</h3>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20997888538258" alt="image-20201019-103308.png"></p>
+<p>A new guide survey invitation mode for US &amp; TOPIC guides is available in the form of a shareable link. Individual participants no longer need to be individually invited to take part in the survey, but instead you can publish a single link to a wide group of potential participants. In addition, a QR code will be generated and can be included in flyers for easier participation on mobile devices.</p>
+<p> </p>
+<h3 id="header-21">Access control for Guides-Monitoring – “layered access”</h3>
+<p>Guides Monitoring now provides access control. Rules can be defined, which person can track/manager which subset of guides (e.g. by department, country or region).</p>
+<h3 id="header-22">Other improvements to Portals and Guides</h3>
+<ul>
+<li>
+<p><strong>Guides &amp; Groups</strong><br>When entering an e-mail address of a non existing panelist, the system will try to detect the firstname and lastname from the entered e-mail address.</p>
+</li>
+<li>
+<p><strong>IDEA Guides</strong>, manager participation optional<br>We have added a setting in guide-configuration to toggle manager participation.</p>
+</li>
+<li>
+<p><strong>Guides Monitoring</strong>, several adjustments</p>
+<ul>
+<li>
+<p>A new status „overtime“ is shown in the guide monitor for processes in overtime.</p>
+</li>
+<li>
+<p>The end date now represents the date when the process actually ended (including overtimes)</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Guide status</strong>, when a process is in overtime, it is no longer possible to:</p>
+<ul>
+<li>
+<p>End guide</p>
+</li>
+<li>
+<p>Manual reminder</p>
+</li>
+<li>
+<p>Add participants</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Guides</strong>, filtered participant search<br>Search results can now be filtered by Groups, Individuals and All. The sort order has also been changed to show individuals first.</p>
+<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20997878508562" alt="image-20201019-103831.png">
+</li>
+</ul>
+<h3 id="header-23">User defined topics in IDEA guide setup</h3>
+<p>Portals now supports custom categories for IDEA guides. To enable custom categories in an IDEA guide, select “User defined categories” in the Categories tab of the guide setup process.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20997850571410" alt="image-20200629-132413.png"></p>
+<p>If enabled, IDEA Guide users can add their own category to the guide during creation of a new guide wave. This custom category will then be used across all functions in Portals, including action planning/ ideation.</p>
+<p>Custom categories are stored in the same table as regular categories and can also be managed in the Libraries &gt; Categories EFS Administration tool. Newly created categories will receive an automatically created meta name in the format: <em>custom_{id}</em>.</p>
+<h1 id="header-25">Service Layer</h1>
+<p>EFS now has following new Service-Layer methods in SOAP and REST.</p>
+<ul>
+<li>
+<p>Functions for managing group categories in the people module</p>
+<ul>
+<li>
+<p><strong>panel.groups.getGroupCategoryById(id)</strong>, <br><em>REST: GET /service/panel/groups/category/{id} </em><br>Returns id, label and description of the matching group category</p>
+</li>
+<li>
+<p><strong>panel.groups.getGroupCategoryByName(label)</strong>, <br><em>REST: POST /service/panel/groups/categoryByName</em><br>Returns array of id, label and description of each group category matching the name.</p>
+</li>
+<li>
+<p><strong>panel.groups.add

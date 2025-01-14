@@ -1,0 +1,29 @@
+strong>. If you cannot change the SPF record for your email domain, you still have the option of using the default sender address<em> “Survey &lt;noreply@customervoice360.com&gt;”</em>. Just create a new mail sender using the mentioned email address and enter the name of your company as a realname instead of "Survey", for example. More information on this topic can be found here.</p>
+<hr>
+<h2 id="header-10">
+<strong>Updates in </strong><em><strong>Projects</strong></em>
+</h2>
+<p>We have also optimized the <em>Projects</em> module and can present you with several practical improvements that make using the software even more efficient and easier.</p>
+<p> </p>
+<h3 id="header-12"><strong>Support for SVG Files</strong></h3>
+<p>In the past, it was not possible to use SVG files for question types that supported uploading images (for example <em>111 Hotspot</em>, <em>111 Single response list with icons</em>, <em>121 Hotspot, 121 Multiple response list with images</em> or <em>998 Text and image</em>). As of EFS 24.1, this is possible.</p>
+<p> </p>
+<h3 id="header-13"><strong>Placeholders in CC and BCC fields</strong></h3>
+<p>You can now use placeholders not only in the text of emails sent from EFS, but also in the <strong>Additional mail recipient (CC)</strong> and <strong>Additional hidden mail recipient (BCC)</strong> fields. These are then automatically replaced when the email is sent. Clicking the question mark symbol next to the respective fields will display an overview of the available placeholders you can use.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21037591455122" alt="image-20240305-102124.png"></p>
+<p> </p>
+<h3 id="header-14"><strong>Video Recorder Question Type</strong></h3>
+<p>We already introduced the audio recorder question type with release 22.2. With EFS 24.1, we have now also implemented the video recorder question type. With this question type, your participants can now record and upload a video as an answer. The recordings are saved in the same way as with the upload question type, and you can access them via the "Statistics" menu. Please note our <a href="https://qbdocs.atlassian.net/wiki/spaces/DOC/pages/edit-v2/4115922983?draftShareId=c2640296-4dd8-4613-9c57-871f46210515#%5B1%5D-Important-Disclaimer-for-Survey-Question-Types-with-Video-and-Audio-Recording">disclaimer</a> on the video recorder question type.<sup>1</sup></p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21037608577554" alt="image-20240305-082255.png"></p>
+<p> </p>
+<h3 id="header-15"><strong>Editing of Completed Employee Surveys</strong></h3>
+<p>In the past, you could only edit completed anonymous and personalized surveys via the <strong>Statistics &gt; Detailed view</strong> menu and thus update information or adjust the answers accordingly if questions were changed. This is now also possible for employee surveys. If you now open the<strong> Statistics</strong> menu and then the <strong>Detailed view</strong> menu item for an employee project, you will find one button for displaying and one for editing in the <strong>Actions</strong> column for completed participations.</p>
+<p>The detail_view_edit ACL is required for editing. We do not grant access rights by default.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21037545534610" alt="image-20240305-082547.png"></p>
+<p> </p>
+<h3 id="header-16"><strong>Password Search in the Participant Administration of Personalized Projects</strong></h3>
+<p>As of EFS 24.2, you can search for participants in the participant administration of personalized projects using their password. In personalized projects, passwords are not defined by participants, but are rather access strings that can be sent to participants by e-mail or postal mail. By default, the <strong>Code</strong> option is selected as the login type for personalized projects. However, you can change this to <strong>Password</strong> under <strong>Survey menu</strong> &gt; <strong>Project properties</strong> &gt; <strong>Login options</strong>.</p>
+<p> </p>
+<h3 id="header-17"><strong>Configurable Page Breaks in Receipts</strong></h3>
+<p>The feature for creating receipts for projects has been optimized with the new release. Previously, a new PDF page was created for each survey page when creating receipts. This resulted in extremely long receipt reports. From now on, you will find the option <strong>Insert page break for each page of the questionnaire</strong> in your survey project under <strong>Survey menu &gt; Questionnaire editor &gt; Receipts</strong>. This option is activated by default so that the standard behavior for creating receipts remains unchanged. However, if you no longer want annoying page breaks in your receipt, you can simply deactivate this option.</p>
+<h3 id="header-18"><strong>Updated File Size Limits for Upload Question Types

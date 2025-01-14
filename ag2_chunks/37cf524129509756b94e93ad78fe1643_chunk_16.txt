@@ -1,0 +1,55 @@
+ you purchase a list of voucher codes from your partner, for example, an online shop. You forward these by e-mail to your panelists and the panelists redeem the voucher codes at the partner business.</p>
+<p class="wysiwyg-text-align-justify">To manage the voucher lists of your panel, go to the Website-&gt;Bonus management menu and click on the Voucher code lists button. Use the drop-down lists in the head section to display the desired language version.</p>
+<h3 id="creating-a-voucher-code-list" class="wysiwyg-text-align-justify"><strong>Creating a Voucher Code List</strong></h3>
+<p class="wysiwyg-text-align-justify">Normally you receive lists from your partner, which respectively contain voucher codes for a particular amount of money. For each of these lists, create a corresponding list in EFS:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>Ensure that the website and language version have been correctly configured.</li>
+<li>Click on the <strong>Create voucher code list</strong> button.</li>
+<li>
+<p>Enter the title.</p>
+</li>
+<li>
+<p>Set the number of bonus points that the voucher code of the list will have.</p>
+</li>
+<li>
+<p>Optionally, you can enter a description. Using the wildcard #description#, you can later insert this description into the voucher mail. Please note that you cannot edit this text at a later date. It is also not possible to enter translations into several languages.</p>
+</li>
+<li>
+<p>Confirm by clicking on <strong>Save</strong>.</p>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><em>Information: </em>The value of bonuses of the “voucher” payment type is defined by assigning a voucher code list with a pre-set amount. Limits on payments cannot be used with the “voucher” payment type.</p>
+<h3 id="preparing-voucher-codes-for-import" class="wysiwyg-text-align-justify"><strong>Preparing Voucher Codes for Import</strong></h3>
+<ol class="wysiwyg-text-align-justify">
+<li>For importing you need a list of the voucher codes in the CSV or XLS format. The file is only allowed to have one column in which the codes are listed.<br><br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014812909330" alt="excel_vouchers.png">
+</li>
+</ol>
+<h3 id="importing-voucher-codes" class="wysiwyg-text-align-justify"><strong>Importing Voucher Codes</strong></h3>
+<ol class="wysiwyg-text-align-justify">
+<li>Choose either the title or the icon in the overview.</li>
+<li>Click on the button<strong> Import voucher codes into the voucher code list</strong>.</li>
+<li>Choose the character set and look for the list on your hard drive.</li>
+<li>Trigger the import function by clicking on <strong>Send</strong>.</li>
+<li>
+<p>After carrying out the import you can see the vouchers in the overview table.</p>
+</li>
+<li>
+<p>You can import the vouchers in blocks, i.e. if a list is almost empty, you can import new vouchers. It isn’t necessary to set up a new list for every import operation.</p>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><em>Information: </em>The voucher codes that are imported into a list must be unique If a code is used twice in the import list or someone tries again to import a code that has already been imported an error message will be the result.</p>
+<h3 id="preparing-mail-templates-for-sending-vouchers" class="wysiwyg-text-align-justify"><strong>Preparing Mail Templates for Sending Vouchers</strong></h3>
+<p class="wysiwyg-text-align-justify">A special mail template of the type “Voucher mail” is used to dispatch voucher codes.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>If you use voucher codes, you need at least one such mail template for every panel site. When setting this up, follow the instructions in “EFS Survey”.</li>
+<li>You can use the standard mail wildcards for panel projects. These wildcards are particularly important:<br><br>– #code#: is filled with the voucher code. This wildcard must be used.<br>– #amount#: can be inserted to output the value of the voucher in normal currency.<br><br>
+</li>
+<li>The desired mail template is set when configuring a bonus.</li>
+</ul>
+<h3 id="issuing-vouchers" class="wysiwyg-text-align-justify"><strong>Issuing Vouchers</strong></h3>
+<p class="wysiwyg-text-align-justify">Requested vouchers can be issued in the <strong>People → Incentive management → Bonus system → Issuing of vouchers</strong> menu. (Exception: where automatic dispatch has been activated, see following chapter)</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014812907154" alt="issue_vouchers.png"></p>
+<ol class="wysiwyg-text-align-justify">
+<li>Select the panelists whose voucher you would like to issue.</li>
+<li>Pay attention that the required vouchers are available: the number is listed in the column “Available”.</li>
+<li>Use the<strong>

@@ -1,0 +1,61 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K" class="wysiwyg-text-align-justify">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article provides comprehensive information on creating and managing lists in a questionnaire system. It covers both dynamic and static lists, explaining how to create, edit, and incorporate them into questionnaires.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">Lists are powerful tools for organizing and presenting answer options in questionnaires. This guide focuses on the creation and management of dynamic and static lists, as well as their integration into various question types.</p>
+<ul class="wysiwyg-text-align-justify">
+<li><a href="#dynamic-lists">Dynamic lists</a></li>
+<li><a href="#static-lists">Static lists</a></li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="dynamic-lists" class="wysiwyg-text-align-justify">Dynamic lists</h2>
+<p class="wysiwyg-text-align-justify">Usually, the steps will take you from the source question to the dialog for list creation. However, you can also choose <strong>Questionnaire Editor</strong> → <strong>Lists </strong>and then either select an existing list or click on one of the buttons labeled <strong>Create dynamic list</strong>.</p>
+<p class="wysiwyg-text-align-justify">Question types that are inappropriate for lists, such as e.g. simple text fields (141, 142) and the semantic differential (340), cannot be used as a source or target questions.</p>
+<h3 id="creating-the-source-question" class="wysiwyg-text-align-justify">Creating the Source Question</h3>
+<ol class="wysiwyg-text-align-justify">
+<li>
+<p>Create a question, enter the question and item texts as usual, and then confirm by clicking on <strong>Save</strong>.</p>
+</li>
+<li>
+<p>After that, click on the <strong>Assign to List </strong>button.</p>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify">You will be taken to the lists editor.</p>
+<h3 id="creating-a-dynamic-list" class="wysiwyg-text-align-justify">Creating a Dynamic List</h3>
+<ol class="wysiwyg-text-align-justify">
+<li>
+<p>In the drop-down list, select the list into which you wish to insert the question items as list elements. In this case, however, as there is no existing list yet, you must select “New list” and confirm by clicking on <strong>Next</strong>.</p>
+</li>
+<li>
+<p>Give the new list an internal name.</p>
+</li>
+<li>
+<p>Specify a wildcard, in this example “TVchannel”. This wildcard will be used if the list is later inserted into the questionnaire or integrated into a loop. The name must be unique. It should contain only the letters a-z and A-Z, numbers, and “_”.</p>
+</li>
+<li>
+<p>In the “Source questions” section you can specify from which questions and static lists the elements of the new list are to be drawn. In the example enter the question just created in the drop-down list. After saving you can also add further questions or lists, however.</p>
+</li>
+<li>
+<p>In the “Properties of items from source question” section, which is only available with dynamic lists, you can specify whether and which properties and contents of source question items should be included in the list.</p>
+</li>
+<li>
+<p>In the “Output whole list in questionnaire” section you can decide how the list elements are to be strung together if they are output in the questionnaire using wildcards.</p>
+</li>
+<li>
+<p>Confirm by clicking on <strong>Save</strong>.</p>
+</li>
+<li>
+<p>The list will now be created, and the dialog in which you can specify inclusion conditions will appear.</p>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify">The variables of source questions for list elements are marked with the <strong>L</strong> icon in the question view to indicate that they are accessed by a list.</p>
+<h3 id="adopting-item-specific-properties-from-source-questions" class="wysiwyg-text-align-justify">Adopting item-specific properties from source questions</h3>
+<p class="wysiwyg-text-align-justify">Optionally, various item properties from source questions can be automatically adopted in the list. They can then be displayed with target questions in the editor but cannot be edited. Automatic property and content adoption are enabled when creating a new list or manually on the <strong>General settings</strong> tab in the list editor.</p>
+<p class="wysiwyg-text-align-justify">The table provides an overview of available options.</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default">
+<colgroup> <col style="width: 304.0px;"> <col style="width: 456.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p><strong>Option</strong></p>
+</th>
+<th class

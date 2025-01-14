@@ -1,0 +1,115 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K" class="wysiwyg-text-align-justify">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article provides comprehensive information about survey variables in questionnaire projects. It covers various types of variables, their meanings, and how they can be used to enhance data quality and provide context for survey responses.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">Survey variables are essential for storing metadata about survey projects. They offer valuable insights into participant behavior, device information, and geographical data. A list of all survey variables used in the project and their complete characteristics can be obtained from the codebook (Documentation &gt; Codebook), if you select <em>Show survey variables </em>in the Codebook. This guide explains the different types of survey variables and their applications.</p>
+<ul>
+<li><a href="#table-overview">Table Overview</a></li>
+<li><a href="#device-variables">Device Variables</a></li>
+<li><a href="#location-variables">Location variables</a></li>
+</ul>
+<h2 id="table-overview" class="wysiwyg-text-align-justify"><strong>Table Overview</strong></h2>
+<p class="wysiwyg-text-align-justify">The following table gives you an overview of the available survey variables.</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 265.0px;"> <col style="width: 493.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" style="width: 237.083px;" data-highlight-colour="#57d9a3">
+<p><strong>Variable</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 455.625px;" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>lfdn</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>Unique participation ID</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>external_lfdn</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>Unique participation ID of an external survey (External Survey Start)</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>tester</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>Participant = tester (yes/no)</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>status</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>Dispositioncode (status of the participation e.g., invited)</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>lastpage</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>Page ID of the last page shown to the participant</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>quality</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>quality of the results of a survey</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>duration</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>Duration (time in seconds to finish the survey. If a respondent resumes the questionnaire after a break (disposition codes 23, 32), the duration is = “-1” because a meaningful calculation is not possible.)</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>p_000n</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>URL parameter</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>c_000n</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>User-defined variables</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>v_000n</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>Project variables. The project variables are sequentially numbered for each project, beginning with v_1.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>md_000n</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>Master data variables (only in <em>EFS Panel</em> installations)</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>ex_host</em></p>
+</td>
+<td style="

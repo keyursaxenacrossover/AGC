@@ -1,0 +1,30 @@
+{
+    "id": 20716928207890,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/20716928207890.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20716928207890-Configure-Identity-Provider-Routing",
+    "author_id": 369584192734,
+    "comments_disabled": false,
+    "draft": true,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20714711445138,
+    "created_at": "2024-08-12T19:55:06Z",
+    "updated_at": "2024-08-12T19:55:15Z",
+    "name": "Configure Identity Provider Routing",
+    "title": "Configure Identity Provider Routing",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-08-12T19:55:15Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075294,
+    "content_tag_ids": [],
+    "label_names": [],
+    "body": "<p><b>Original Confluence URL:</b> <a href=\"https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1224081451\">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1224081451</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>\n\n<h2>Table of Contents</h2>\n<ul class=\"toc\">\n<ul>\n<li><a href=\"#header-1\">Step 2: Add Identity Provider Routing rule</a></li>\n</ul>\n</ul><p>In order for users to reach their Identity Provider a routing has to be configured which routes users based on their email domain to their respective Identity Provider.</p><p><strong>Step 1</strong>: Navigate to Routing Rules</p><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716887888914\" alt=\"Screenshot_2019-12-03 Questback - Identity Providers.png\"><h1 id=\"header-1\">Step 2: Add Identity Provider Routing rule</h1><p><strong>Values:</strong></p><p>Rule Name: see <a href=\"https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1064829097/Naming+conventions+in+Okta\">Naming conventions in Okta</a></p><p>User matches:</p><ul><li><p>Select: Domain list on login</p></li></ul><ac:rich-text-body><p>Do NOT include the @ as shown in the screenshot - We will update it soon</p></ac:rich-text-body><ul><li><p>Input: Domain that should be used for that IdP</p></li></ul><p>Use this identity provider: Select the above created Identity Provider</p><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716928339986\" alt=\"Screenshot_2019-12-03 Questback - Identity Providers(1).png\"><p> </p>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

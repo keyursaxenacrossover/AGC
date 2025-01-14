@@ -1,0 +1,67 @@
+<p><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p>This article provides a comprehensive guide on exporting and importing projects in EFS, covering both anonymous and personalized projects. It includes step-by-step instructions, important considerations, and specific details for different project types.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>This guide focuses on the process of exporting and importing projects in EFS, including what data is included in exports, special considerations for personalized projects, and a detailed how-to guide for the export and import process.</p>
+<ul>
+<li><a href="#export_import_basics">Export and Import Basics</a></li>
+<li><a href="#export_options">Export Options</a></li>
+<li><a href="#personalized_projects">Personalized Projects Considerations</a></li>
+<li><a href="#export_import_process">Export and Import Process</a></li>
+</ul>
+<h2 id="export_import_basics">Export and Import Basics</h2>
+<ul>
+<li>Anonymous and personalized projects can be exported and imported with or without result data.</li>
+<li>Exported languages and translations (text elements / survey messages) are included in the project export.</li>
+<li>Mail templates can be exported separately via <strong>Libraries &gt; Mail templates</strong> (from version 20.x).</li>
+<li>Installation-related contents such as the scale or question library are not exported.</li>
+<li>In the case of a result data export, no data of the <strong>Upload</strong> question type is exported.</li>
+<li>Reports created via Reporting+ are not exported.</li>
+</ul>
+<h3 id="export_options">Export Options</h3>
+<p>To move a complete project, all displayed options should be selected when exporting:</p>
+<ul>
+<li>
+<strong>images</strong> (contains customized images of the survey)</li>
+<li>
+<strong>cimages</strong> (contains overlay images)</li>
+<li>
+<strong>layout</strong> (contains buttons and form elements)</li>
+<li>
+<strong>templates</strong> (contains survey templates)</li>
+<li>
+<strong>css</strong> (contains survey CSS)</li>
+<li>
+<strong>javascript</strong> (contains survey JavaScript)</li>
+<li>Files from "<strong>Shared Library</strong>" (only those used in responses and detailed configuration)*</li>
+<li>User-defined templates for containers</li>
+</ul>
+<p>*The option "Files from shared library" should only be selected if images from the shared library have been included in the project. This is necessary because images can otherwise no longer be accessed after import. If no images from the shared media library are included in the current project, the shared media library should not be exported. The file and the subsequent project could otherwise become very large.</p>
+<h3 id="personalized_projects">Personalized Projects Considerations</h3>
+<ul>
+<li>Participant data and result data are not part of the project export unless you have special additional rights. They usually have to be exported separately.</li>
+<li>If you have the necessary rights, you can select the participants and results data during the project export and then export them directly in one go (via the item "result data").</li>
+<li>User-defined participant variables are included when exporting projects.</li>
+</ul>
+<h2 id="export_import_process">Export and Import Process</h2>
+<h3 id="h_01J3QW8072P5S4PA67W6Z5ZW8T">Exporting a Project</h3>
+<ol>
+<li>Open the project in the respective installation</li>
+<li>Select '<strong>Export</strong>' from the menu on the left</li>
+<li>Choose <strong>Project &gt; Continue<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017112929042" width="474" height="142"></strong>
+</li>
+<li>In the subsequent overview, select the desired options to be imported. To move a complete project, all the displayed options should be selected when exporting. See above for full details<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017112931730" width="473" height="189">
+</li>
+<li>Copy the file to the local PC</li>
+</ol>
+<h3 id="h_01J3QW80724DA2QSMV44MQNWQV">Importing a Project</h3>
+<ol>
+<li>Within the project overview (new installation) click on <strong>+ New Project &gt; Import Project</strong><br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017112927762" width="480" height="98">
+</li>
+<li>Follow the instructions in EFS, using the previously created export file</li>
+<li>Ensure you select the same project type as in the original project (anonymous, personalized); you also have the option to automatically detect the project type<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017112933010" width="423" height="171">
+</li>
+</ol>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq_1">What data is not included in a standard project export?</h3>
+<p>Participant data, result data, installation-related contents (e.g., scale or question library), upload question type data, and

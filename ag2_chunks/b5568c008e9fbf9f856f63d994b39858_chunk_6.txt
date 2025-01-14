@@ -1,0 +1,75 @@
+code class="language-text">rm -rf zendframeworkLibrary</code></pre>
+</li>
+<li>
+<p>navigate back to installation's main folder (/nfs/opstX/[installation URL]/)</p>
+<pre><code class="language-text">cd ../..</code></pre>
+</li>
+<li>
+<p>and check it out again from within installation's main folder</p>
+<pre><code class="language-text">cvs co projekte/ProductCustomizingTeam/zendframeworkLibrary</code></pre>
+</li>
+</ul>
+</li></ul><ul>
+<li><p>Navigate to installation's htdocs folder</p></li>
+<li>
+<p>Execute <a href="http://linux.die.net/man/1/rsync">rsync[ext]</a> to synchronize the current files in htdocs with the build files in /dumps/[buildname]</p>
+<ul>
+<li>
+<p>Dry run</p>
+<pre><code class="language-text">rsync -anvz --delete --exclude=/conf --exclude=/panelwebsite --exclude=/masterpanel --exclude=/uc /dumps/EFS_11.0_0160/* .</code></pre>
+</li>
+<li><p>Actual synchronization</p></li>
+<li>
+<p></p>
+<pre><code class="language-text">rsync -avz --delete --exclude=/conf --exclude=/panelwebsite --exclude=/masterpanel --exclude=/uc /dumps/EFS_11.0_0160/* . </code></pre>
+</li>
+</ul>
+</li>
+</ul><ac:rich-text-body><p>MIND THE DOT AT THE END, IT IS IMPORTANT!</p></ac:rich-text-body><ul><li>
+<p>Execute the healself within the www folder of your installation (/nfs/opst/[installation URL]/htdocs/www)</p>
+<pre><code class="language-text">cd www
+
+php support/healself.php</code></pre>
+</li></ul><ac:rich-text-body><p><strong>If any healself task should fail, please contact the support team</strong></p></ac:rich-text-body><ul>
+<li><p><span style="color: rgb(151,160,175);">If you are curious, you could check the task in the corresponding healself file</span></p></li>
+<li>
+<p><span style="color: rgb(151,160,175);">e.g. in case the following tasks failed with errors:</span></p>
+<pre><code class="language-text">panel_healself_jobs_1007::createElasticsearchIndexOnNewInstallation [Create an elasticsearch index on a new panel installation]
+Task reported it failed on line 770 in class panel_healself_jobs_100</code></pre>
+<ul>
+<li><p><span style="color: rgb(151,160,175);">check modules/panel/components/healself/jobs/1007.inc.php on line 770</span></p></li>
+<li><p><span style="color: rgb(151,160,175);">vi modules/panel/components/healself/jobs/1007.inc.php +770</span></p></li>
+<li>
+<p><span style="color: rgb(151,160,175);">check config flag elasticsearch_configuration and add the correct server</span></p>
+<ul>
+<li><p><span style="color: rgb(151,160,175);">procus: </span><a href="http://elasticsearch.bre.globalpark.com">elasticsearch.bre.globalpark.com</a></p></li>
+<li><p><span style="color: rgb(151,160,175);">Testkanal: tka055</span></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Log in to the installation and check whether the updated version is shown</p>
+<ul><li><p>Navigate to Options &gt;&gt; Platform cockpit &gt;&gt; Cockpit &gt;&gt; EFS version</p></li></ul>
+</li>
+<li>
+<p>Execute the installation check</p>
+<ul>
+<li><p>Options &gt;&gt; Platform cockpit &gt;&gt; Installation check &gt;&gt; select "qb only:: Checks for installation requirements" and run the check</p></li>
+<li>
+<p>You can ignore the following errors and warnings</p>
+<ul><li><p>see <a href="https://it.globalpark.de/twiki/bin/view/Support/TsProcusInstallations#Installation_check_Ignoreable_er">Ignoreable errors and warnings</a></p></li></ul>
+</li>
+<li>
+<p>You also can run the installation check from the console</p>
+<pre><code class="language-text">d /nfs/opst/[installation URL]/htdocs
+
+cd www
+
+php support/test_installation.php --console</code></pre>
+</li>
+</ul>
+</li>
+</ul><h2 id="header-18">Upgrade an installation</h2><p>Basically an upgrade of an installation on procus4 includes the same steps as an update (see above).<br>However, there are several things to consider:</p><ul>
+<li><p>Before upgrading an installation you should update it to the latest version of the current installed main version first (e.g. from EFS_10.9_123 to EFS_10.9_456)</p></li>
+<li><p>If your installation is old (e.g. EFS_10.7) and you would like to upgrade it to the latest EFS version (e.g. EFS

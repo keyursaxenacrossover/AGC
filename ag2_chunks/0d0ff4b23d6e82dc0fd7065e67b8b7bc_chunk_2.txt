@@ -1,0 +1,58 @@
+ underrepresented gender. In <em>EFS Reporting+</em>, recoding is used to specify weighting templates. They are applied as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Open the table editor of the affected question. Insert the option “Weighted mean” to the results table. Via the<strong> Edit</strong> icon, you can select the desired weighting template i.e. your recodes definition.</p>
+</li>
+<li>
+<p>Drag &amp; Drop can be used to place the weighting template in the appropriate branch in the structure window. Then, it is applied to all contents of the branch.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Top responses in open-ended answers</strong></p>
+<p class="wysiwyg-text-align-justify">This type of recoding is especially useful, if you are aiming to retrieve a large, but limited amount of answer possibilities, or if the participants‘ answers are frequently alike. An exemplary question would be „Where in (your country) would you like to live?“. Set the three biggest cities as answer 1 - 3, all other cities will be covered for with an open-ended answer as answer 4.</p>
+<p class="wysiwyg-text-align-justify"><strong>Grouping of numbers</strong></p>
+<p class="wysiwyg-text-align-justify">With this option, open-ended answers are grouped into segments. The option is only displayed, if you choose <strong>141 Text field (single row)</strong> and afterwards pick the option <strong>Integer </strong>under<strong> Input format</strong>.</p>
+<h2 id="configuring-tables" class="wysiwyg-text-align-justify"><strong>Configuring tables</strong></h2>
+<p class="wysiwyg-text-align-justify">Central to your report are the tables with the result data. <em>EFS Reporting+</em> allows you to optimally adjust the structure and appearance of the tables to your needs:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>All important general properties such as table structure, number format etc., can be configured, either for the entire report or for a particular table only.</p>
+</li>
+<li>
+<p>You can choose from a variety of key figures and aggregations. Calculation is performed automatically.</p>
+</li>
+<li>
+<p>You can decide for yourself if and in which calculations missing values shall be included.</p>
+</li>
+<li>
+<p>Table-specific details such as labels or positions of answer options can be edited.</p>
+</li>
+</ul>
+<h3 id="overview-of-table-configuration" class="wysiwyg-text-align-justify"><strong>Overview of table configuration</strong></h3>
+<p class="wysiwyg-text-align-justify">In order to make general settings such as the table structure or number format for the entire report, use the <strong>Report</strong> →<strong> Report settings</strong> menu. If you wish to apply the changes to all existing tables, save your settings by clicking on the Apply to all button (previously labelled: Save all). You can use it to remove those very elements that were added to the report with<strong> Apply</strong> to all. If you wish to change general settings such as the table structure or number format for the current table only, a click on the Settings icon in the workpad toolbar will take you to the table-specific dialog. If you wish to change a particular text or move a particular answer option within the current table, you open the table editor by clicking on the<strong> Edit</strong> icon in the workpad toolbar.</p>
+<h3 id="defining-the-table-structure" class="wysiwyg-text-align-justify"><strong>Defining the table structure</strong></h3>
+<p class="wysiwyg-text-align-justify">You can decide for yourself how your evaluation tables are to be structured. By default, they contain columns for code, frequencies, and percentages, with the “Total” row displayed below the various answer options. However, if necessary, you may disable certain columns or move the “Total” row above the answer options, as is usual in the Anglo-Saxon world. You will find the respective display options by following these click paths:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>For the entire report: Menu<strong> Report</strong> → <strong>Report settings</strong> → Tab<strong> Table display</strong> → Section “Display options for tables”.</p>
+</li>
+<li>
+<p>For individual tables: <strong>Workpad toolbar</strong> → <strong>Settings</strong> → Tab<strong> Table display</strong> → Section “Display options for tables”.</p>
+</li>
+</ul>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 246.0px;"> <col style="width: 514.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Option</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Show code in tables</p>
+</td>
+<td>
+<p>If this checkbox is ticked

@@ -1,0 +1,106 @@
+ desired languages.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="static-lists" class="wysiwyg-text-align-justify">Static lists</h2>
+<p class="wysiwyg-text-align-justify">You can click on <strong>Questionnaire editor</strong> → <strong>Lists </strong>and then either select an existing list or click on the buttons labeled <strong>Create static list</strong> to create a new list.</p>
+<h3 id="creating-a-static-lists" class="wysiwyg-text-align-justify">Creating a static lists</h3>
+<p class="wysiwyg-text-align-justify">A static list is not composed using the items of source questions or source lists, but the list elements are directly entered.</p>
+<p class="wysiwyg-text-align-justify">Open the <strong>Questionnaire editor</strong> → <strong>Lists </strong>menu and click on the <strong>Create static list </strong>button.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Give the new list an internal name, in this example “Subjects”.</p>
+</li>
+<li>
+<p>Enter a wildcard.</p>
+</li>
+<li>
+<p>Confirm by clicking on <strong>Save</strong>.</p>
+</li>
+<li>
+<p>The <strong>List elements </strong>tab will be opened automatically.</p>
+<ul>
+<li>
+<p>To create a new list element, enter its name in the “New element” row.</p>
+</li>
+<li>
+<p>Then, confirm each entry by clicking on <strong>Save</strong>.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="specifying-properties-of-the-list-elements-1" class="wysiwyg-text-align-justify">Specifying properties of the list elements</h3>
+<p class="wysiwyg-text-align-justify">In the case of static lists, you also specify the inclusion conditions for the list elements on the<strong> List elements</strong> tab, in the “Inclusion conditions” column.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>always in list</p>
+</li>
+<li>
+<p>never in list</p>
+</li>
+<li>
+<p>in list if...</p>
+</li>
+<li>
+<p>always in random selection</p>
+</li>
+<li>
+<p>in random selection if...</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">By default, the “always in list” option is preset. Alternatively, you can also define or change all inclusion conditions at once, using the <strong>Define global inclusion conditions</strong> function, as described above. If the static list is to be used in a loop at a later time, you can use the Wildcards tab to set up several wildcards with alternate texts.</p>
+<h3 id="editing-and-exporting-list-elements" class="wysiwyg-text-align-justify">Editing and exporting list elements</h3>
+<p class="wysiwyg-text-align-justify">List elements that have already been created will be output in the input field and can then be edited. If you wish to delete an element, simply remove it from the list.</p>
+<p class="wysiwyg-text-align-justify">External editing is also possible:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Copy the content of the input field into Excel.</p>
+</li>
+<li>
+<p>Should Excel copy the data into a cell instead of formatting it correctly, select <strong>Data</strong> →<strong> Text to Columns</strong>. Choose the data type “Delimited”, and confirm by clicking on <strong>Next</strong>.</p>
+</li>
+<li>
+<p>Choose the separator, and confirm by clicking on <strong>Next</strong> again.</p>
+</li>
+<li>
+<p>Check the display, and then confirm by clicking on <strong>Finish</strong>.</p>
+</li>
+</ul>
+<h3 id="importing-static-list-elements" class="wysiwyg-text-align-justify">Importing static list elements</h3>
+<p class="wysiwyg-text-align-justify">You can import the elements of static lists or copy out elements that have already been created in a special format, edit them externally and then reimport them.</p>
+<p class="wysiwyg-text-align-justify"><strong>Formatting import data</strong></p>
+<p class="wysiwyg-text-align-justify">The following format should be used:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>List element ID</p>
+</li>
+<li>
+<p>list element number</p>
+</li>
+<li>
+<p>wildcard 1</p>
+</li>
+<li>
+<p>wildcard 2</p>
+</li>
+<li>
+<p>wildcard 3</p>
+</li>
+<li>
+<p>wildcard 4</p>
+</li>
+<li>
+<p>wildcard 5</p>
+</li>
+<li>
+<p>inclusion condition</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The inclusion conditions must be encoded as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>1: always in list</p>
+</li>
+<li>
+<p>2: never in list</p>
+</li>
+<li>
+<p>3: in list if

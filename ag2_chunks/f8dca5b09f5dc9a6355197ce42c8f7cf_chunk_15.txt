@@ -1,0 +1,73 @@
+-indent1" data-renderer-start-pos="9938"><strong data-renderer-mark="true">Meaning</strong></p>
+</div>
+</th>
+</tr>
+<tr>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="204">
+<p data-renderer-start-pos="9951">Current front-end load</p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="556">
+<p data-renderer-start-pos="9977">The current load on the front-end server, is divided by the number of available cores.</p>
+</td>
+</tr>
+<tr>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="204">
+<p data-renderer-start-pos="10066"># Requests</p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="556">
+<p data-renderer-start-pos="10080">The total number of questionnaire requests in the specified period.</p>
+</td>
+</tr>
+<tr>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="204">
+<p data-renderer-start-pos="10153">Ø Front end load</p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="556">
+<p data-renderer-start-pos="10173">The average front-end server load in the specified period.</p>
+</td>
+</tr>
+<tr>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="204">
+<p data-renderer-start-pos="10237">Ø Exec. time</p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="556">
+<p data-renderer-start-pos="10253">The average overall execution time for building and delivering a questionnaire page for all projects in the specified period. (Overall execution time - DB time - PHP incl. time - Memcache time = time needed by PHP for other processes.)</p>
+</td>
+</tr>
+<tr>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="204">
+<p data-renderer-start-pos="10494">Max. exec. time</p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="556">
+<p data-renderer-start-pos="10513">The highest overall execution time registered in the specified period.</p>
+</td>
+</tr>
+<tr>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="204">
+<p data-renderer-start-pos="10589">Median</p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="556">
+<p data-renderer-start-pos="10599">The median of the overall execution time in the specified period.</p>
+</td>
+</tr>
+<tr>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="204">
+<p data-renderer-start-pos="10670">Std. dev.</p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="556">
+<p data-renderer-start-pos="10683">The standard deviation of the overall execution time in the specified period.</p>
+</td>
+</tr>
+<tr>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="204">
+<p data-renderer-start-pos="10766">Ø DB time</p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="556">
+<p data-renderer-start-pos="10779">The average time needed for all queries on the questionnaire page to be built</p>
+</td>
+</tr>
+<tr>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="204">
+<p data-renderer-start-pos="10861">Ø PHP incl. time</p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top

@@ -1,0 +1,42 @@
+ our example, we uploaded two files: “test.js” and “test.jpg”. Click on the JavaScript file to open it in the main area. Here you can edit it and save it by clicking on the checkmark icon next to its name (or by pressing Ctrl-S).</p>
+<h3 id="Using-a-ressource-in-an-option" data-renderer-start-pos="12217">Using a resource in an option</h3>
+<p data-renderer-start-pos="12249">Now that we have uploaded some files, those can be recycled for use in the Options menu, for options of the type “resource”. We will use the image as the default value for a “Resource”-option.</p>
+<ol class="ak-ol" start="1" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="12445">Go to the <strong data-renderer-mark="true">Settings </strong>area, expand <strong data-renderer-mark="true">Question type options </strong>and click on “Add option” inside an <strong data-renderer-mark="true">Options group</strong>.</p>
+</li>
+<li>
+<p data-renderer-start-pos="12553">Select “Resource” from the menu and enter values for the options name, label and help text.</p>
+</li>
+<li>
+<p data-renderer-start-pos="12648">Select “test.jpg” from the select box to assign it as the default value.</p>
+</li>
+</ol>
+<p data-renderer-start-pos="12719">The respective image will be displayed as default once you are creating a new question of your question type.</p>
+<p data-renderer-start-pos="12830">To access the image in your template, type the following (without line breaks):</p>
+<p data-renderer-start-pos="12830"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015627981842"></p>
+<p data-renderer-start-pos="12830">In the JavaScript file you can also enter the following:</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015614765714"></p>
+<p data-renderer-start-pos="12830"><span style="font-size: 1.2em; font-weight: 600;">Using a resource directly</span></p>
+<p data-renderer-start-pos="13003">The second case is using an uploaded file directly. This means including a file that can’t be modified by the user (as opposed to the previous case, where the user could select his own resource as value for an option).</p>
+<p data-renderer-start-pos="13223">In your template, you can access the file “test.jpg” like this (without linebreaks):</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015614772498"></p>
+<p data-renderer-start-pos="13223">When loading the file “test.js” in JavaScript enter as follows:</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015627991186"></p>
+<p> </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863" class="wysiwyg-text-align-justify">FAQ</h1>
+<h3 id="faq_1" class="wysiwyg-text-align-justify">What permissions do I need to use the Custom Question Type Editor?</h3>
+<p class="wysiwyg-text-align-justify">You need the questiontype_editor write permission to access and use the Custom Question Type Editor.</p>
+<h3 id="faq_2" class="wysiwyg-text-align-justify">Can I import question types from other EFS installations?</h3>
+<p class="wysiwyg-text-align-justify">Yes, you can import archived custom question types (ZIP files) from other EFS installations using the Import function on the overview page.</p>
+<h3 id="faq_3" class="wysiwyg-text-align-justify">How do I make my custom question type available in newer Layout versions?</h3>
+<p class="wysiwyg-text-align-justify">Test your question type and select all supported Layout versions in the "Layout subrelease support" configuration section.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+</article>

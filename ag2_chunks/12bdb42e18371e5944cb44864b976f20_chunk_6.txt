@@ -1,0 +1,88 @@
+In addition to choosing questions for insertion into a project, you can perform several other useful functions by clicking on the icons in the “Actions” column:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Checkbox: This function allows you to choose a question, as described in the previous paragraph.</p>
+</li>
+<li>
+<p>Move: This function allows you to move a question into another category.</p>
+</li>
+<li>
+<p>Delete: Clicking on this icon will delete the selected question.</p>
+</li>
+<li>
+<p>Copy: This function allows you to copy a question into a category of your choice.</p>
+</li>
+</ul>
+<h4 id="using-categories-for-organizing" class="wysiwyg-text-align-justify">Using categories for organizing</h4>
+<ol class="wysiwyg-text-align-justify" start="1">
+<li>
+<p>You can access the question library either from the questionnaire editor or via <strong>Libraries</strong>-&gt;<strong>Question Library</strong>.</p>
+</li>
+<li>
+<p>Use the category tree to locate the new category. To create main categories, click on the root folder. To create subfolders, click on the respective main folder.</p>
+</li>
+<li>
+<p>Click on the <strong>Add Category </strong>tab.</p>
+</li>
+<li>
+<p>Give your category a name.</p>
+</li>
+<li>
+<p>Click on <strong>Add category</strong>.</p>
+</li>
+</ol>
+<h4 id="deleting-categories" class="wysiwyg-text-align-justify">Deleting categories</h4>
+<ol class="wysiwyg-text-align-justify" start="1">
+<li>
+<p>Select the category you wish to delete from the category tree.</p>
+</li>
+<li>
+<p>Click on the <strong>Delete category </strong>tab.</p>
+</li>
+<li>
+<p>A dialog containing a warning message will open. Clicking on <strong>OK </strong>in the dialog will delete the category.</p>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify">Caution: You may only delete empty categories. Prior to deleting, the remaining questions must be moved to higher categories or deleted, and subcategories must be deleted.</p>
+<h4 class="wysiwyg-text-align-justify"> </h4>
+<h4 id="assigning-access-rights-for-library-categories" class="wysiwyg-text-align-justify">Assigning access rights for library categories</h4>
+<p class="wysiwyg-text-align-justify">It is possible to assign different access rights for the various main categories in the library to the user teams in an EFS installation. To do so, please proceed as follows:</p>
+<ol class="wysiwyg-text-align-justify" start="1">
+<li>
+<p>Select the respective main categories.</p>
+</li>
+<li>
+<p>Click on the <strong>Folder rights </strong>tab.</p>
+</li>
+<li>
+<p>The object rights dialog is opened. Assign “read” and/or “write” rights to the appropriate teams.</p>
+</li>
+<li>
+<p>Confirm your selection by clicking on <strong>Change rights</strong>.</p>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify">Please note that you may only assign access rights for main categories including all underlying subcategories, not for all subcategories individually.</p>
+<p class="wysiwyg-text-align-justify">All users have access to the root category.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="properties" class="wysiwyg-text-align-justify">Properties</h2>
+<p class="wysiwyg-text-align-justify">Standard pages are configured in the <strong>Properties </strong>submenu. To open it, click on the page title in the questionnaire view, then select the submenu.</p>
+<h3 id="standard-pages" class="wysiwyg-text-align-justify"><strong>Standard Pages</strong></h3>
+<p class="wysiwyg-text-align-justify">Standard pages are configured in the <strong>Properties </strong>submenu. To open it, from EFS 10.2 click on the page title in the questionnaire view, then select the submenu. The table provides an overview. The page properties are explained in detail in the following chapters.</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p><strong>Property</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p><strong>Explanation</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Only in projects with classic system layout: Layout width and height</p>
+</td>
+<td>
+<p>The breadth and the width of the layout can be modified for a particular page.</p>
+<p>If you want the layout on a certain page to be particularly narrow, you can, for example, enter the number “100” (for 100 pixels) in this field. On the next page, the questionnaire’s layout will then revert to the standard width.</p>

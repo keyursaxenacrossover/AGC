@@ -1,0 +1,67 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3356065793">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3356065793</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">Setup General Settings new Okta Account</a></li>
+<ul>
+<li><a href="#header-3">Client Migration</a></li>
+<ul>
+<li><a href="#header-5">Okta Client Ressources</a></li>
+<ul>
+<li><a href="#header-7">General (per tenant)</a></li>
+<li><a href="#header-8">Application Specific (per application)</a></li>
+</ul>
+<li><a href="#header-10">EFS (per installation)</a></li>
+<li><a href="#header-11">User Migration (per installation)</a></li>
+</ul>
+<li><a href="#header-13">What does the client have to do?</a></li>
+<ul>
+<li><a href="#header-15">OIDC</a></li>
+<li><a href="#header-16">SAML</a></li>
+<li><a href="#header-17">Customer contacts (second contact → Cc)</a></li>
+</ul>
+</ul>
+</ul>
+</ul><h1 id="header-1">Setup General Settings new Okta Account</h1><p>Do this once. Already done.</p><h2 id="header-3">Client Migration</h2><h3 id="header-5">Okta Client Ressources</h3><h4 id="header-7">General (per tenant)</h4><p>Migrate general client resources</p><ul>
+<li><p>Password Policy</p></li>
+<li><p>Sign-On Policy</p></li>
+<li><p>Multi Factor enrollment</p></li>
+<li>
+<p>Identity Provider</p>
+<ul>
+<li><p>Provider itself</p></li>
+<li><p>Routing rules</p></li>
+</ul>
+</li>
+<li>
+<p>Groups</p>
+<ul><li><p>User Group (tenant specific)</p></li></ul>
+</li>
+</ul><p></p><h4 id="header-8">Application Specific (per application)</h4><p>Migrate all client specific resources from the old Okta account to the new Okta account, these are:</p><ul>
+<li>
+<p>API</p>
+<ul>
+<li><p>Authorization Server</p></li>
+<li><p>Token</p></li>
+</ul>
+</li>
+<li>
+<p>Groups</p>
+<ul><li><p>Client Group (application specific)</p></li></ul>
+</li>
+<li><p>Application</p></li>
+</ul><p></p><h3 id="header-10">EFS (per installation)</h3><p>Migrate EFS:</p><p>Change the values in EFS according to the values in the above section:</p><ul>
+<li><p>API Token</p></li>
+<li><p>Client Group ID</p></li>
+<li><p>Client ID (application)</p></li>
+<li><p>Client Secret (application)</p></li>
+<li><p>IdP ID (if set)</p></li>
+<li><p>User Group ID</p></li>
+<li><p>Well Known URL (authorization server)</p></li>
+<li><p>check if federated domains is still correct</p></li>
+<li><p>check that unique customer name still matches</p></li>
+</ul><p></p><h3 id="header-11">User Migration (per installation)</h3><p>User Migration will happen with 2 initiatives:</p><ol start="1">
+<li><p>A script that will migrate users respecting their status in Okta</p></li>
+<li><p>A service that will work as inline hook to migrate password as they arise</p></li>
+</ol><p>These ideas are depicted here:</p><p><a href="https://lucid.app/lucidchart/e73fec1a-434a-4f13-bc2d-069338808bf9/edit?from_docslist=true&amp;invitationId=inv_9139740a-bfdc-4a9f-8b39-076dbfd2d536&amp;page=qluAsnbQ95mN#">https://lucid.app/lucidchart/e73fec1a-434a-4f13-bc2d-069338808bf9/edit?from_docslist=true&amp;invitationId=inv_9139740a-bfdc-4a9f-8b39-076dbfd2d536&amp;page=qluAsnbQ95mN#</a></p><h2 id="header-13">What does the client have to do?</h2><p><strong>Provide a test user.</strong></p><p></p><h3 id="header-15">OIDC</h3><p><strong>Azure AD (tested)</strong></p><p>Change the existing App Registration to accept more Redirect URIs.</p><p>The old Redirect URIs should stay the same and have to be kept for now.</p><p>Add new Redirect URIs for the new Okta

@@ -1,0 +1,91 @@
+Last name</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px; width: 195.434px;">{$respondent.u_account}</td>
+<td style="height: 22px; width: 481.233px;">Account name: Accounts can optionally be used for authentication.</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px; width: 195.434px;">{$respondent.u_street}</td>
+<td style="height: 22px; width: 481.233px;">Street</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px; width: 195.434px;">{$respondent.u_zip}</td>
+<td style="height: 22px; width: 481.233px;">Zip code</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px; width: 195.434px;">{$respondent.u_city}</td>
+<td style="height: 22px; width: 481.233px;">City</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px; width: 195.434px;">{$respondent.u_phone}</td>
+<td style="height: 22px; width: 481.233px;">Phone number</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px; width: 195.434px;">{$respondent.u_mobile}</td>
+<td style="height: 22px; width: 481.233px;">Cell phone number</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px; width: 195.434px;">{$respondent.u_mobile2}</td>
+<td style="height: 22px; width: 481.233px;">Additional field for cell phone number</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px; width: 195.434px;">{$respondent.u_email}</td>
+<td style="height: 22px; width: 481.233px;">E-mail address</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px; width: 195.434px;">{$respondent.u_www}</td>
+<td style="height: 22px; width: 481.233px;">Panelist's homepage</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px; width: 195.434px;">{$respondent.u_address}</td>
+<td style="height: 22px; width: 481.233px;">Address</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px; width: 195.434px;">{$respondent.u_address2}</td>
+<td style="height: 22px; width: 481.233px;">Additional address field 2</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px; width: 195.434px;">{$respondent.u_address3}</td>
+<td style="height: 22px; width: 481.233px;">Additional address field 3</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px; width: 195.434px;">{$respondent.u_country}</td>
+<td style="height: 22px; width: 481.233px;">Country</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px; width: 195.434px;">{$respondent.u_gender}</td>
+<td style="height: 22px; width: 481.233px;">Gender</td>
+</tr>
+<tr style="height: 44px;">
+<td style="height: 44px; width: 195.434px;">{$respondent.u_other_id}</td>
+<td style="height: 44px; width: 481.233px;">
+<p>A database field to which you can assign a freely chosen identification code for a participant when importing.</p>
+</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px; width: 195.434px;">{$respondent.u_passwd}</td>
+<td style="height: 22px; width: 481.233px;">Password</td>
+</tr>
+</tbody>
+</table>
+<p class="auto-cursor-target wysiwyg-text-align-justify"> </p>
+<table class="wrapped wysiwyg-text-align-justify" style="margin-right: auto; margin-left: auto;" border="1">
+<colgroup> <col> <col> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center">Variable name</th>
+<th class="wysiwyg-text-align-center">Meaning</th>
+</tr>
+<tr>
+<td>
+<p>{$respondent.m_000x}, {$respondent.md_000x}</p>
+</td>
+<td>
+<p>Master data.</p>
+<p>For master data with characteristics, the code and label are output as follows:</p>
+<ul>
+<li>Code: {$respondent.m_000x}</li>
+<li>Label: {$master_data.m_000x.codes[$respondent.m_000x]}</li>
+</ul>
+</td>
+</

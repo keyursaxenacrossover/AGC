@@ -1,0 +1,138 @@
+ "Example",
+    "u_address": "Example",
+    "u_country": "Example",
+    "u_other_id": "123",
+    "u_gender": "NOT_SPECIFIED",
+    "u_address2": "Example",
+    "u_address3": "Example",
+    "u_mobile": "Example",
+    "u_mobile2": "Example",
+    "pci": 127,
+    "masterDataValues": [
+      {
+        "key": "m_0000",
+        "value": "12"
+      }
+    ],
+    "u_sec_quest": "Example",
+    "u_sec_quest_answer": "Example",
+    "site_id": 1,
+    "u_timezone": "+0:00",
+    "gc_id": 1,
+    "u_passwd": "Example",
+    "gid": 1
+  }
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">"123"</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79GHFN73MAS5KVSBD7J"> </h4>
+<h3 id="header-159">POST /panel/panelists/csv</h3>
+<p>add multiple panelists from a CSV file to the panel (batch operation)</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "returnIdentifierType": "uid",
+  "csvData": "Csv Data here",
+  "mappingColumn": "email"
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">{
+  "successful": 1,
+  "failed": 1,
+  "failedRows": [
+    {
+      "line": 2,
+      "errors": [
+        {
+          "column": "Email",
+          "value": "example@domain.tld",
+          "details": [
+            {
+              "code": "Example",
+              "translated": "Example",
+              "type": 1234
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "returnIdentifiers": [
+    {
+      "internalReturnValue": "123",
+      "externalReturnValue": "example@domain.tld"
+    }
+  ]
+}</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79HMQWYNRC7YN4ESPR6"> </h4>
+<h3 id="header-160">POST /panel/panelists/details</h3>
+<p>get information about a panelist</p>
+<p>If no panelist is found, this service will return a 500 error.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "identifierType": "uid",
+  "identifierValue": "123"
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">{
+  "u_account": "Example",
+  "u_firstname": "First",
+  "u_name": "Last",
+  "u_street": "Example",
+  "u_zip": "12345",
+  "u_city": "Example",
+  "u_phone": "+4912345",
+  "u_email": "example@domain.tld",
+  "u_www": "Example",
+  "u_address": "Example",
+  "u_country": "Example",
+  "u_other_id": "12345",
+  "u_gender": "NOT_SPECIFIED",
+  "u_address2": "Example",
+  "u_address3": "Example",
+  "u_mobile": "+4912345",
+  "u_mobile2": "+4912345",
+  "masterDataValues": [
+    {
+      "key": "m_0000",
+      "value": "1"
+    }
+  ],
+  "site_id": 1,
+  "u_timezone": "+0:00",
+  "gc_id": 10,
+  "uid": 123
+}</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79H9BTS87QFX2K1TY18"> </h4>
+<h3 id="header-161">PUT /panel/panelists/details</h3>
+<p>Change an existing panelist's data</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "identifierType": "uid",
+  "identifierValue": "123",
+  "panelistData": {
+    "u_firstname": "NewFirst",
+    "u_name": "NewLast",
+    "masterDataValues": [
+      {
+        "key": "m_0001",
+        "value": "2"
+      }
+    ]
+  }
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">true</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79HSQV4ASM7A9T53S4J"> </h4>
+<h3 id="header-162">DELETE /panel/panelists/external</h3>
+<p>Deletes an external authentication mapping from EFS. Please note: Only the mapping will be deleted. The panelist will not be removed from EFS.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "externalServiceId": 

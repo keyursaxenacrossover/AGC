@@ -1,0 +1,74 @@
+-1" class="wysiwyg-text-align-justify">Example</h3>
+<p class="wysiwyg-text-align-justify">At the start of a long, complex survey, you want to offer participants the option to interrupt and participate at a later date. On one of the first pages, you ask if the participant does have sufficient time to respond at the moment. If not, you offer to send a reminder mail. If a participant does not have sufficient time and wishes a reminder mail, he’s routed to a final page via a filter. On this final page, the reinvitation trigger is executed. It resets the data record and sends the reminder mail at the desired later date.</p>
+<h3 id="features-1" class="wysiwyg-text-align-justify">Features</h3>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The reinvitation trigger is only available on the final pages.</p>
+</li>
+<li>
+<p>It can be used in personalized surveys, employee surveys, multi-source feedback, panel surveys, and master data surveys. In anonymous surveys, this trigger type is not available.</p>
+</li>
+<li>
+<p>The participants’ disposition code will be reset to 11 resp. 12.</p>
+</li>
+<li>
+<p>The data records are reset without deleting, i.e. already-given answers of the participant are not deleted.</p>
+</li>
+<li>
+<p>Participants who respond to the reminder mail will start again on the first page: Due to the reset of the disposition code, the resumption is considered a restart.</p>
+</li>
+</ul>
+<h3 id="configuring-a-re-invitation-trigger" class="wysiwyg-text-align-justify">Configuring a Re-Invitation trigger</h3>
+<p class="wysiwyg-text-align-justify">The basic settings are the same as for other trigger types. When setting the special options, please mind:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Just as with the mail trigger, you have to configure the e-mail to be sent. Usually, the content of a mail template is imported. Alternatively, you can define the mail in the trigger editor, too.</p>
+<ul>
+<li>
+<p>The mail sender must be defined beforehand.</p>
+</li>
+<li>
+<p>Depending on the situation, it might make sense to repeat the access code or link in the mail text. For this purpose, use the wildcards #url#, #code# and #code_complete#.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Define the dispatch date: </p>
+<ul>
+<li>
+<p>Per default, the emails will be dispatched immediately upon activation of the trigger.</p>
+</li>
+<li>
+<p>Optionally, another dispatch date can be defined. Create a user-defined variable (c variable) or project variable of type “text”. This variable should contain the number of days from the execution of the trigger to the dispatch of the mail, for the proper dispatch date, EFS will then add another 12 hours to the value of this variable. Select this variable in the reinvitation trigger.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="variable-split-trigger" class="wysiwyg-text-align-justify">Variable split trigger</h2>
+<p class="wysiwyg-text-align-justify">You can use variable split triggers to</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>save transferred parameters in user-defined variables. (This does not refer to URL parameters: You can save any parameters transferred via GET in user-defined variables.)</p>
+</li>
+<li>
+<p>read cookies from the respondent and save them in user-defined variables</p>
+</li>
+<li>
+<p>break down the variables into their individual components before saving the parameters or cookies, if necessary.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The user-defined variables will be included in any export, but you can also use them for screening within the survey, output them in the questionnaire, etc. The variable split trigger is available for all survey types.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>If a variable split trigger is used on the first page of a survey, then the execution position cannot be “=directly”.</p>
+</li>
+<li>
+<p>Variables located within a loop branch cannot be used as a split attribute.</p>
+</li>
+<li>
+<p>The following variables cannot be used as source or target variables for data privacy reasons: <em>u_account</em>, <em>u_ppasswd</em>, <em>u_passwd</em>, <em>u_email</em>, <em>u_initial_passwd</em>. Existing recodings of these variables are not supported either.</p>
+</li>
+</ul>
+<h3 id="application-example" class="wysiwyg-text-align-justify">Application Example</h3>
+<p class="wysiwyg-text-align-justify">You are planning an advertising effectiveness study intended to test a new form of advertising. Your cooperation partner sets a cookie with every website visitor who has seen the new form of advertising. Now, you want to find out whether there are connections between answer patterns in your study and the form of advertising (e.g. “Do people who have seen the form of advertising remember its contents?”).</p>
+<p class="wysiwyg-text-align-justify">At the beginning of the survey, all cookies will automatically be read and saved, collectively, in a system variable. The variable split trigger will pinpoint one

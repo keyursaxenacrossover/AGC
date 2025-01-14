@@ -1,0 +1,49 @@
+<p><strong>Language</strong>: This item lists the survey languages created in the selected EFS projects. These will be sent to <em>Tableau</em> as soon as the <em>MySight</em> project is published. In this way, multilingual dashboards can be created.</p>
+</li>
+<li>
+<p><strong>Connection: </strong>Under this item, you will find the information about which database connections have been selected. Use the icon to go to the login dialog of the table server. Enter the user name and password, which you can view under Account settings.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The board lists both the items under which you can find out about the configurations made on the subnavigation Settings (data, language, and connection), as well as those that indicate the configuration progress (workflow) and synchronization status (data synchronization).</p>
+<p class="wysiwyg-text-align-justify">At the bottom of the board, there are the buttons <strong>Publish</strong> and <strong>Delete</strong>. As soon as you publish the project, the data is transferred to the <em>Tableau</em> server.</p>
+<div class="fabric-editor-block-mark sc-ixltIz dsUKKC wysiwyg-text-align-justify">
+<h2 id="settings"><strong>Settings</strong></h2>
+</div>
+<p class="wysiwyg-text-align-justify">After the first orientation on the sub-navigation field <strong>Overview</strong> of the project page, you switch to <strong>Settings</strong>. There are two ways to do this: Either you click on the icon below the breadcrumb path or simply click on the sub-navigation field <strong>Settings</strong>. In either case, start the <em>MySight</em> project configuration under the <strong>General Settings</strong> tab.</p>
+<div class="fabric-editor-block-mark sc-ixltIz dsUKKC wysiwyg-text-align-justify">
+<h3 id="general-settings"><strong>General Settings</strong></h3>
+</div>
+<p class="wysiwyg-text-align-justify">Under the tab <strong>General Settings</strong>, you can make settings for the database connection and for assigning read and write permissions.</p>
+<ul class="ak-ul wysiwyg-text-align-justify">
+<li>
+<p><strong>Data connection: </strong>You select the required database connection from the available database connections</p>
+</li>
+<li>
+<p><strong>Read only: </strong>By assigning this right, you control which teams are allowed to view the status of the <em>MySight</em> project and use the dashboard of the <em>MySight</em> module integration in <em>Portals</em>.</p>
+</li>
+<li>
+<p><strong>Write access: </strong>By assigning this right, you control which teams are allowed to configure the <em>MySight</em> project. All members of a team have access to the <em>Tableau</em> server and can create a dashboard.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The selection of the teams is done via a drop-down list with the integrated search function, which allows a time-saving procedure in case of a large number of teams. Finally, you check the desired teams. You remove the write and read rights by unchecking the checkbox. You don't have to republish the project afterward. The withdrawal of read and write access is only valid for the dashboards created after the change.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<div class="fabric-editor-block-mark sc-ixltIz dsUKKC wysiwyg-text-align-justify">
+<h3 id="efs-projects"><strong>EFS projects</strong></h3>
+</div>
+<p class="wysiwyg-text-align-justify">Under the tab<strong> EFS projects</strong>, you can select up to five EFS projects in succession. These are stored in the same data source.</p>
+<p class="wysiwyg-text-align-justify">You proceed as follows:</p>
+<ul class="ak-ul wysiwyg-text-align-justify">
+<li>
+<p>You click on the button <strong>+ EFS project</strong>.</p>
+</li>
+<li>
+<p>From the drop-down list that opens, you select the <em>EFS</em> project.</p>
+</li>
+<li>
+<p>You use the search function to quickly find the desired project by entering the project name in case of a large number of EFS projects.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">After you have selected a project the data areas available for the survey type defined by the project setup are presented to you in addition to the project ID and the project name. The scope and composition of the data areas vary depending on the survey type and cannot be changed by the user in <em>MySight</em>. For example, a personalized survey in <em>MySight</em> cannot be converted into an employee survey. The trashcan icon allows you to remove the selected EFS project.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<div class="fabric-editor-block-mark sc-ixltIz dsUKKC wysiwyg-text-align-justify">
+<h3 id="formatting-the-data"><strong>Formatting the data</strong></h

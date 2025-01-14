@@ -1,0 +1,120 @@
+ susceptibility to XSS (cross site scripting). Many users are not aware of this kind of problem and will consequently ignore them when setting up a panel.</p>
+</li>
+<li>
+<p>Messages referring to critical errors are displayed regardless of whether they pertain to the topic being tested.</p>
+</li>
+</ul>
+<h3 id="information-6" class="wysiwyg-text-align-justify">Information</h3>
+<p class="wysiwyg-text-align-justify">Please note: Many testing algorithms refer to particular page modules and other components of the new CMS. Therefore, testing of migrated and older websites is only possible to a certain extent.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h3 id="testing-websites-or-language-versions" class="wysiwyg-text-align-justify"><strong>Testing Websites or Language Versions</strong></h3>
+<ol class="wysiwyg-text-align-justify" start="1">
+<li>
+<p>Choose the desired website or language version. In the “Actions” column, click on the<strong> Test website / Test language</strong> version icon.</p>
+</li>
+<li>
+<p>Select the areas to be tested.</p>
+</li>
+<li>
+<p>Execute the check by clicking on <strong>Perform tests</strong>.</p>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify"> </p>
+<h3 id="topics-to-be-tested" class="wysiwyg-text-align-justify"><strong>Topics to Be Tested</strong></h3>
+<p class="wysiwyg-text-align-justify">The table contains further information on the various topics.</p>
+<table class="wysiwyg-text-align-justify" style="height: 830px;" border="1" width="715" data-layout="full-width" data-table-width="1346.1209999999999">
+<colgroup> <col style="width: 173.0px;"> <col style="width: 317.0px;"> </colgroup>
+<tbody>
+<tr style="height: 33px;">
+<th class="wysiwyg-text-align-center" style="width: 248.924px; height: 33px;">
+<p><strong>Topic</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 458.785px; height: 33px;">
+<p><strong>Content of test</strong></p>
+</th>
+</tr>
+<tr style="height: 99px;">
+<td style="width: 240.903px; height: 99px;">
+<p>Susceptibility to cross site scripting</p>
+</td>
+<td style="width: 450.764px; height: 99px;">
+<p>Searches for, e. g., the following potential problems:</p>
+<ul>
+<li>
+<p>Are all templates, wildcards and messages to be filled with user input HTML escaped?</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr style="height: 104px;">
+<td style="width: 240.903px; height: 104px;">
+<p>Page Configuration</p>
+</td>
+<td style="width: 450.764px; height: 104px;">
+<p>Searches for, e. g., the following potential problems:</p>
+<ul>
+<li>
+<p>Have all pages been assigned a template?</p>
+</li>
+<li>
+<p>Does every page have an HTML title?</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr style="height: 252px;">
+<td style="width: 240.903px; height: 252px;">
+<p>Configuration of page/content modules</p>
+</td>
+<td style="width: 450.764px; height: 252px;">
+<p>Searches for, e. g., the following potential problems:</p>
+<ul>
+<li>
+<p>Have the page modules been assigned an appropriate template?</p>
+</li>
+<li>
+<p>Have mail templates been selected where this is required for a module to function?</p>
+</li>
+<li>
+<p>Is a bonus or news list being generated although there are neither bonuses nor news?</p>
+</li>
+<li>
+<p>Are any nonexistent messages being used?</p>
+</li>
+<li>
+<p>Is there a registration page that is only available for logged-in (i.e. already registered) panelists?</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr style="height: 169px;">
+<td style="width: 240.903px; height: 169px;">
+<p>Global settings</p>
+</td>
+<td style="width: 450.764px; height: 169px;">
+<p>Searches for, e. g., the following potential problems:</p>
+<ul>
+<li>
+<p>Is the website offline?</p>
+</li>
+<li>
+<p>Does the website have at least one language version that is online?</p>
+</li>
+<li>
+<p>Have important target pages been defined?</p>
+</li>
+<li>
+<p>Is there at least one panel status that allows logging in?</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr style="height: 60px;">
+<td style="width: 240.903px; height: 60px;">
+<p>Wildcards</p>
+</td>
+<td style="width: 450.764px; height: 60px;">
+<p>Searches for, e. g., the following potential problems:</p>
+<ul>
+<li>
+<p>Are any undefined wildcards being used?</p

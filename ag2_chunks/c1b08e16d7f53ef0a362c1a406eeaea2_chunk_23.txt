@@ -1,0 +1,83 @@
+:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Data cleaning only considers completed interviews, i.e. records with status 31 or 32.</p>
+</li>
+<li>
+<p>The following routing types are supported:</p>
+<ul>
+<li>
+<p>“Filter” and “Random rotation” branches.</p>
+</li>
+<li>
+<p>Trigger types that affect routing via changes in the survey results. The function should, however, not be used in projects involving page triggers: In this case, the routing that the respondent took erroneously or for test purposes cannot be unambiguously identified.</p>
+</li>
+<li>
+<p>Action pages.</p>
+</li>
+<li>
+<p>Depot questions.</p>
+</li>
+<li>
+<p>EFS-side <strong>Back </strong>buttons. Please note: that browser-side Back buttons are not fully supported. <em>If a respondent skips back several pages using the browser </em><strong>Back </strong><em>button first and then skips forward several pages using the browser </em><strong>Forward </strong><em>button ignoring the system warning, these steps cannot be tracked and stored correctly. </em>I.e. pages might be missing in page history, though valid data from these pages exist.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>“Random rotation” branches and loops are not supported.</p>
+</li>
+<li>
+<p>Data cleaning should not be applied to surveys that are prefilled with values. I.e. it should not be combined with the options “Transfer master data values to survey variables” → “Always pre-fill”, “Allow multiple participations, pre-fill with values of last participation” and import of specific answers from other projects.</p>
+</li>
+</ul>
+<h3 id="activating-automatic-data-cleaning" class="wysiwyg-text-align-justify"><strong>Activating Automatic Data Cleaning</strong></h3>
+<p class="wysiwyg-text-align-justify"><strong>Activating data cleaning before the beginning of the field phase</strong></p>
+<p class="wysiwyg-text-align-justify">In the <strong>Projects </strong>module, click on the desired project, and then choose the <strong>Project Properties </strong>menu item. On the tab <strong>General Options</strong>, tick the checkbox in the “Enable data cleaning” field. Then, confirm by clicking on <strong>Submit</strong>. The <strong>Display </strong>link allows you to switch to the <strong>Data cleaning </strong>submenu.</p>
+<h3 id="triggering-data-cleaning-for-the-entire-project" class="wysiwyg-text-align-justify"><strong>Triggering Data Cleaning for the Entire Project</strong></h3>
+<p class="wysiwyg-text-align-justify">The documentation of all changes to the data as well as functions for restoring all or part of the original data are located in the data cleaning log. There are two ways of accessing this:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Click on the <strong>Display </strong>link in the <strong>Project Properties </strong>menu.</p>
+</li>
+<li>
+<p>The second way is via the <strong>Statistics</strong> → <strong>Data cleaning </strong>menu.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">You are automatically taken to the <strong>General </strong>tab.</p>
+<p class="wysiwyg-text-align-justify">The “General Information” area shows whether data cleaning has already been performed and how many records were processed.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Status data cleaning in this project: Data cleaning is activated from the <strong>Project Properties </strong>menu.</p>
+</li>
+<li>
+<p>Number of cleaned records: The records that were changed during data cleaning.</p>
+</li>
+<li>
+<p>Number of data records that were checked but did not require cleaning: The records that would not be / are not affected in the event of data cleaning.</p>
+</li>
+<li>
+<p>Number of uncleaned records:</p>
+<ul>
+<li>
+<p>If data cleaning has not taken place, this value will contain the uncleaned records.</p>
+</li>
+<li>
+<p>After data cleaning has taken place, all records that could not be checked and cleaned because the interviews were not completed remain in this field.</p>
+</li>
+<li>
+<p>If further questionnaires were filled out after a manual data cleaning, this value will be the total of all uncleaned records, as well as all records that were not checked during the manual data cleaning because the interviews were not completed.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">In the “Data cleaning for the whole project” area, you can trigger or undo data cleaning:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>If you select “Clean all data” and then confirm by clicking on <strong>Execute</strong>, the cleaning operation will be triggered.</p>
+</li>
+<li>
+<p>If you select “Recover all data” and then confirm by clicking on <strong>Execute</strong>, the original state will be restored.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Please note that data cleaning only takes completed interviews into consideration, i.e. records with status 31 or 32.</p>
+<h3

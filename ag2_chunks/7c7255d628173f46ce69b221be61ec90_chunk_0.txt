@@ -1,0 +1,25 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3380740110">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3380740110</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">Notes</a></li>
+</ul>
+</ul><p>We are changing our Identity Provider Domain from access.questback.com to access.tivian.com.</p><p></p><p>Change we are doing, that you will see after this migration happened.</p><p>The URL for the login will have changed. See above for the domains.</p><p>We are also changing the design of the login screen to Tivian so that it is more clear, who provides this page. An example for this change could be seen in the following screens:</p><p></p><ac:parameter ac:name="include">TivianAccess.png, QuestbackAccess.png</ac:parameter><ac:parameter ac:name="columns">2</ac:parameter><p>If there are any emails sent from our Identity Provider (this might never happen in your specific case) they will also have a Tivian design.</p><p></p><p>As we are changing the domain of our Identity Provider the current connection to your Identity solution will not be valid anymore. To have a smooth transition we have a migration path that should prevent any kind of interruption.</p><hr><p><strong><span style="color: rgb(101,84,192);">BRANCH SAML (TESTING STILL REQUIRED)</span></strong></p><p>For Tivian Access you already created an Entity like an application or app registration on your end. We connected this to our solution by exchanging metadata files.</p><p>Next to the existing connection you have to add another connection that references to the new domain. We will have to exchange metadata files again.</p><p>Apart from the domain change the configuration of this connection should stay the same. It should also contain the same fields as before (first name, last name and email).</p><p>We will create a metadata file on our end and send it to you. After you created the connection on your end we need your metadata file to apply it to our solution. After that the setup should be complete and can be tested.</p><p></p><hr><p><strong><span style="color: rgb(255,86,48);">BRANCH OIDC</span></strong></p><p>There is a configuration on your end that handles the connection from our Identity Provider to your Identity Provider. Oftentimes this is called an application or app registration on your end.</p><p>If this is possible on your end, add additional redirect URIs to this application. Add the following redirect URIs:</p><ul>
+<li><p>https://access.tivian.com/oauth2/v1/authorize/callback</p></li>
+<li><p>https://tivian.okta.com/oauth2/v1/authorize/callback</p></li>
+</ul><p>After that there should be at least 3 redirect URIs. One redirect URI that was present before (should be https://access.questback.com/oauth2/v1/authorize/callback) and the two new ones.</p><p></p><p>In case there is no possibility to add additional redirct URIs just create another connection (application/app registration) with the above redirect URIs and send the respective client ID and client secret to us. Apart from the URIs the configuration should look the same as the existing one.</p><hr><p></p><p>Testing if everything works with the new connection will be easier if you could provide us a test user. Then we can check if the connection with the new domain works, otherwise we have to check that together.</p><p>After this first step we will take further action on our end and inform you, if we need more information.</p><p>Steps our end end involves sychronizing users again and switching to the final configuration. We will inform you when the switch will be done. We do not expect noticable amount of time where user are not able to login.</p><p>We are asking you to put the changes in place on your end as soon as possible. We cannit wait any longer than end of February with the switch and want to prevent any timeframe where users are not able to login.</p><p></p><p></p><p></p><h1 id="header-1">Notes</h1><ul>
+<li><p>Changes on our end → domain of Tivian Access will change from <a href="http://access.questback.com">http://access.questback.com</a>  to <a href="http://access.tivian.com">http://access.tivian.com</a>  (login screen)</p></li>
+<li>
+<p>UI Changes <strong><span style="color: rgb(255,86,48);">SCREENSHOTS</span></strong></p>
+<ul>
+<li><p>Login will look like Tivian</p></li>
+<li><p>Emails will have a Tivian branding</p></li>
+</ul>
+</li>
+<li>
+<p>IdP changes</p>
+<ul>
+<li>
+<p>SAML → redo connection with new metadata exchange</p>
+<ul><li><p><strong><span style="color: rgb(255,86,48);">FIRST CHECK:</

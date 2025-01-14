@@ -1,0 +1,96 @@
+ mail template:</p>
+<p>--</p>
+<p>Hello #ac_resonse#,</p>
+<p>a new task #ac_name# has been created:</p>
+<p>http://www.example-efs.com/APortalsName/#ac_id#</p>
+<p>Please take care of it.</p>
+<p>Best regards,</p>
+<p>the system</p>
+<p>--</p>
+<p>The link in this email text is the same for all workflow mail templates. Upon execution of workflows with e-mail dispatch, the wildcard ID in this link is replaced by the actual ID of the relevant task. Via this link, the responsible person is led directly to the assigned task.</p>
+<p>By clicking on the question mark icon, a list of available wildcards for setting mail templates is shown.</p>
+<ul>
+<li>
+<p>After having completed the mail template, confirm with <strong>Save</strong>.</p>
+</li>
+<li>
+<p>Optionally, you can view the e-mail of your mail template in preview mode by clicking on the button <strong>Preview</strong> on the top left side of the draft.</p>
+</li>
+<li>
+<p>To allocate the new mail template to the current project, go back to the <strong>Mail templates</strong> menu and switch the assignment status of your mail template in the column <strong>Project template</strong> from “No” to “Yes” by clicking on the status link.</p>
+</li>
+</ul>
+<p>The new mail template is now available for your project within the workflows.</p>
+<p><strong>Configuring the workflow “Assign to”</strong></p>
+<p>This workflow allows the assignment of tasks to users, who receive a respective notification via e-mail. You can define whether people of one‘s own unit only or people of one‘s own unit and all levels down will be selectable upon execution of this workflow. You also select the mail template for the e-mail that will be sent to the person this task is assigned to.</p>
+<ul>
+<li>
+<p>To configure this workflow, click on the link<strong> Assign to</strong>.</p>
+</li>
+<li>
+<p>In the workflow editor, select <strong>Own unit</strong> or <strong>Own unit</strong> <strong>and all levels down</strong>, depending on the units you want to be selectable for the responsible person when assigning tasks.</p>
+</li>
+<li>
+<p>Select a previously created <strong>mail template</strong> for the e-mail dispatch.</p>
+</li>
+<li>
+<p>Confirm your settings with <strong>Save</strong>.</p>
+</li>
+</ul>
+<p>The radio button of the respective workflow changed to green. The workflow “Assign to” is configured and executable.</p>
+<p><strong>Configuring the workflow “Escalate to”</strong></p>
+<p>This workflow allows the escalation of tasks to users of the next level up. These users receive a notification via e-mail with the information about the escalation. For this email, the mail template you select during configuration is used.</p>
+<ul>
+<li>
+<p>To configure this workflow, click on the link <strong>Escalate to</strong>.</p>
+</li>
+<li>
+<p>Select a previously created<strong> mail template</strong> for the e-mail dispatch.</p>
+</li>
+<li>
+<p>Confirm with <strong>Save</strong>.</p>
+</li>
+</ul>
+<p>The radio button of the respective workflow changed to green. The workflow “<strong>Escalate to</strong>” is configured and executable.</p>
+<p><strong>Configuring the workflow “Invite to follow-up survey”</strong></p>
+<p>This workflow allows the invitation of survey participants to follow-up surveys in order to find out if taken tasks have contributed to the satisfaction of this participant and will result in a different (more positive) feedback.</p>
+<ul>
+<li>
+<p>To configure this workflow, click on the link <strong>Invite to follow-up survey</strong>.</p>
+</li>
+<li>
+<p>Select a previously created <strong>mail template</strong> for the e-mail dispatch.</p>
+</li>
+<li>
+<p>In the drop-down list<strong> Sample</strong>, select the<strong> personalized survey</strong> the participant will be invited to.</p>
+</li>
+<li>
+<p>Select the participant variable storing the<strong> task ID</strong></p>
+</li>
+<li>
+<p>the participant variable storing the <strong>Employee project-ID</strong></p>
+</li>
+<li>
+<p>as well as the ac-variable containing the participant‘s <strong>e-mail address</strong></p>
+</li>
+<li>
+<p>and the ac-variable containing the <strong>project-ID</strong> for the follow-up survey</p>
+</li>
+<li>
+<p>Confirm your settings with <strong>Save</strong>.</p>
+</li>
+</ul>
+<p>The radio button of the respective workflow changed to green. The workflow “Invite to follow-up survey” is configured and executable.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017112886930" alt="image2019-5-15_14-56-39.png"></p>
+<p><strong>Configuring the workflow “Close“</strong></p>
+<p>This workflow allows the closing of tasks by users responsible for them. There are two types of closing:</p>
+<ul>
+<li>
+<p>the simple closing</p>
+</li>
+<li>
+<p>the closing with (automatic) invitation to a follow-up survey</p>
+</li>
+</ul>
+<p><u>Simple closing</u></p>
+<p>For the simple closing

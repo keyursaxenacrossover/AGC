@@ -1,0 +1,30 @@
+0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background: transparent; box-sizing: border-box; list-style: initial;">Go to <code>Options &gt; Platform Cockpit &gt; Admin Log &gt; Advanced search</code> and click Search</li>
+<li style="line-height: inherit; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background: transparent; box-sizing: border-box; list-style: initial;">Look for the connectionID related to that reload action <br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/22013356500242">
+</li>
+<li style="line-height: inherit; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background: transparent; box-sizing: border-box; list-style: initial;">Look in AWS logs (General Loggroup) for that connection ID</li>
+<li style="line-height: inherit; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background: transparent; box-sizing: border-box; list-style: initial;">Go through the queries in AWS to find the query which gets your info</li>
+</ul>
+</li>
+</ul>
+<h1 id="h_01JAA6TGBXHZFRQC0YH5AVADP9">Summary</h1>
+<p>This guide provides a step-by-step process to access and filter AWS Cloudwatch DB Logs. By following these steps, users should be able to effectively troubleshoot and analyze their database logs.</p>
+<h2 id="h_01JAA6TGBXJFDJS33MD5NB47HG">FAQ</h2>
+<ol>
+<li>
+<strong>What is the LogGroup in AWS Cloudwatch?</strong><br>LogGroup is the category of logs you need to check in AWS Cloudwatch.</li>
+<li>
+<strong>What are the different filters I can use in AWS Cloudwatch?</strong><br>You can use 'Error' for DB errors, 'Slowquery' for slow queries on the DB level, and 'general' for all queries sent to the DB.</li>
+</ol>-sizing: border-box; list-style: initial;">Look in AWS logs (General Loggroup) for that connection ID</li>
+<li style="line-height: inherit; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background: transparent; box-sizing: border-box; list-style: initial;">Go through the queries in AWS to find the query which gets your info</li>
+</ul>
+</li>
+</ul>
+<h1 id="h_01JAA6TGBXHZFRQC0YH5AVADP9">Summary</h1>
+<p>This guide provides a step-by-step process to access and filter AWS Cloudwatch DB Logs. By following these steps, users should be able to effectively troubleshoot and analyze their database logs.</p>
+<h2 id="h_01JAA6TGBXJFDJS33MD5NB47HG">FAQ</h2>
+<ol>
+<li>
+<strong>What is the LogGroup in AWS Cloudwatch?</strong><br>LogGroup is the category of logs you need to check in AWS Cloudwatch.</li>
+<li>
+<strong>What are the different filters I can use in AWS Cloudwatch?</strong><br>You can use 'Error' for DB errors, 'Slowquery' for slow queries on the DB level, and 'general' for all queries sent to the DB.</li>
+</ol>

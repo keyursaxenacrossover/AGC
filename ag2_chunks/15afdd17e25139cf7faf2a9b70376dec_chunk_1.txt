@@ -1,0 +1,54 @@
+/src/master/" data-card-appearance="inline">https://bitbucket.org/qbengineering/tivian_resource_helm_okta-hooks/src/master/</a> ) and in Okta (see below)</p>
+<p> </p>
+<p><code>oktaQuestbackBaseUrl</code></p>
+<p>This URL is the base URL to the Okta where the service should validate the credentials of the user.</p>
+<p>For <strong>dev-qa</strong> it will be: <a href="https://questback-poc.oktapreview.com">https://questback-poc.oktapreview.com</a></p>
+<p>For <strong>production </strong>it will be: <a href="https://questback.okta.com">https://questback.okta.com</a></p>
+<p> </p>
+<h3 id="header-11">In Okta</h3>
+<p><strong>Name: </strong>Some good name</p>
+<p><strong>URL:</strong> The base URL to the inline hook service adding the path <code>/inline-hooks/importpassword</code></p>
+<p><strong>Authentication field:</strong> authorization</p>
+<p><strong>Authentication secret:</strong> The secret token prefixed with <code>Bearer </code></p>
+<p>Nothing else has to be configured. The secret token will be stored by IT OPs/2nd LvL Support</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21034905150482" alt="grafik-20211222-120227.png"></p>
+<p> </p>
+<h2 id="h_01J6EHQFR2ND5ET5D4P0QV67Y6">Static Service</h2>
+<p>The Okta Login screen uses static assets that are delivered via a small nginx service in the current DE cluster.</p>
+<p> </p>
+<h2 id="01J6EHQ7KF52AKQE7TE58E1W6J">Resources</h2>
+<p>The following repositories are used by this service:</p>
+<ul>
+<li>
+<p><a href="https://bitbucket.org/qbengineering/tivian_resource_helm_static-okta-assets/src/master/">Helm Chart for Static Assets</a></p>
+</li>
+<li>
+<p><a href="https://bitbucket.org/qbengineering/tivian_resource_assets_static-okta-assets-login/src/master/">Static Assets for Login</a></p>
+</li>
+<li>
+<p><a href="https://bitbucket.org/qbengineering/tivian_resource_assets_static-okta-assets-email/src/master/">Email Customizations + Static Assets for Emails</a></p>
+</li>
+</ul>
+<p> </p>
+<p>With the following pipelines in concourse:</p>
+<ul>
+<li>
+<p><a href="https://concourse.live.questback.com/teams/engineering/pipelines/BUILD%20-%20tivian_resource_helm_static-okta-assets">Static Assets Helm Chart</a></p>
+</li>
+<li>
+<p><a href="https://concourse.live.questback.com/teams/engineering/pipelines/BUILD%20-%20tivian_resource_assets_static-okta-assets">Static Assets Image</a> (Combines the assets from both the login and email repository in one image)</p>
+</li>
+</ul>
+<p> </p>
+<p><a href="https://bitbucket.org/qbengineering/tivian_resource_tools_okta-local-demo/src/master/">Local Demo (Test Application)</a> (can be used instead of EFS/Portals/… to test Okta Authentication)</p>
+<p> </p>
+<h2 id="01J6EHQ7KFA453MFYKRWM34H51">Basic Idea</h2>
+<p>The below picture shows roughly where the service and other resources are located:</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21034844929042" alt="Okta Migration Tivian Questback - Static Service.png"></p>
+<h3 id="01J6EHQ7KF3W8XMSY2BVX78DPN">Description:</h3>
+<p>The Okta Tivian is an Okta tenant used by our clients. Inside there are configuration options for customization. They contain static HTML files containing the basic login screen and a basic error screen but they only contain one HTML file.</p>
+<p>To also serve additional static assets like images, javascript and css there is an Okta static service in our kubernetes cluster that only contains an nginx with the static resources that are loaded by the customized login screen.</p>
+<p>Any arbitrary app (like EFS or Tivian Analytics) will redirect to Okta and Okta will show the login screen (index.html) and load the static assets for that purpose.</p>
+<p> </p>
+<p><strong>Only Tivian Okta</strong></p>
+<p>Current there are two Okta tenants. Only the new tenant contains this kind of customization. The old that is fading out does not use that customization.</p>

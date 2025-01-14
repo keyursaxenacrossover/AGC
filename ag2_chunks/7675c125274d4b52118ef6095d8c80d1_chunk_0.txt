@@ -1,0 +1,39 @@
+<h1 id="h_01J6W0FVDHGXZR8DTDJ7C0APXC">Overview</h1>
+<p>Some users may experience an issue where their system generates unwanted variables with a "_0" suffix in their Surveys/Projects.</p>
+<p>These variables can affect specific questions, causing data inconsistencies and hindering the ability to deliver clean data.</p>
+<p>The issue may be related to a bug in the system that occasionally generates these "_0" variables, which should not normally occur. To give more context:</p>
+<ul>
+<li>Issue tends to happen when list is used for a <strong>loop</strong>.</li>
+<li>Brand names are then queried individually in each loop run.</li>
+<li>The variables in the loop, e.g. v_100, then receive extensions for each list element, i.e. <strong>v_100_1</strong> for the answers of the first list element, <strong>v_100_2</strong> for the second list element, etc.</li>
+<li>
+<strong>v_100_0</strong> should not occur based on the above logic</li>
+<li>This would rather be a defect, however, we are unable to replicate and have Eng fix it, so we resort to fixing things at DB level.</li>
+</ul>
+<h1 id="h_01J6W0FVDH8WXN2QEKZEN5R119">Solution</h1>
+<p>The solution involves deleting the corrupt data set from the MariaDB database. Follow these steps:</p>
+<ol>
+<li>Login to MariaDB and search for the loop table of the provided project (for example, project ID 6409 in the bw1774 installation)<br>
+<pre>MariaDB [opst_bw1774]&gt; SHOW TABLES LIKE '%6409%';<br>+---------------------------------+<br>| Tables_in_opst_bw1774 (%6409%) |<br>+---------------------------------+<br>| consistency_6409 |<br>| data_cleaning_6409 |<br>| list_elements_6409 |<br>| lists_6409 |<br>| project_languages_6409 |<br>| project_versions_reference_6409 |<br>| question_settings_6409 |<br>| survey_6409 |<br>| survey_6409_1 |<br>| survey_6409_item_score |<br>| survey_6409_loop |<br>| survey_6409_loop_1 |<br>+---------------------------------+<br>12 rows in set (0.005 sec)</pre>
+</li>
+<li>Search for the corrupt data set by leveraging the <strong>loop</strong> table/s.  <br>
+<pre><code>MariaDB [opst_bw1774]&gt; SELECT sl_id,lfdn,list_element_nr FROM survey_6409_loop_1 WHERE list_element_nr = 0;<br>+-------+------+-----------------+<br>| sl_id | lfdn | list_element_nr |<br>+-------+------+-----------------+<br>|  1143 | 1017 |               0 |<br>+-------+------+-----------------+<br>1 row in set (0.000 sec)</code></pre>
+<ol>
+<li>If you want to further verify the issue, you can proceed to <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20371126622482" target="_blank" rel="noopener noreferrer">Export</a> the results in XLS format and then search in the resulting XLS for the "<strong>_0</strong>" string to confirm the incorrect variables<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21138123797906" width="176" height="169">
+</li>
+</ol>
+</li>
+<li>The above query would give us list elements with a 0 index (which are the incorrect ones). Delete the corrupt data set:<br>
+<pre><code>MariaDB [opst_bw1774]&gt; DELETE FROM survey_6409_loop_1 WHERE sl_id = 1143 AND lfdn = 1017 AND loop_nr = 0;<br>Query OK, 1 row affected (0.006 sec)</code></pre>
+<ol>
+<li>Once the above is done, you can further verify the fix by <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20371126622482" target="_blank" rel="noopener noreferrer">Exporting</a> the results in XLS format and then searching in the resulting XLS for the "<strong>_0</strong>" string to see the difference from the previous step.<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21138147447314" width="250" height="138">
+</li>
+</ol>
+</li>
+</ol>
+<p>Please note that these commands are specific to the MariaDB database and the project IDs provided in the example. You will need to replace the project IDs and other variables with the ones specific to your issue.</p>
+<p>Sample result exports are attached to this article.</p>
+<h1 id="h_01J6W0FVDHSSMRBRJSN31D284K">Summary</h1>
+<p>This article provides a solution for users experiencing unwanted variables in their Project IDs in MariaDB. The solution involves identifying and deleting the corrupt data set from the database.</p>
+<p> </p>
+<h2 id="h_01J6W0FVDH4PXJ8G3SF4HJFPX7">

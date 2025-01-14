@@ -1,0 +1,86 @@
+-level="1">
+<li>
+<p data-renderer-start-pos="3840">New test accounts should always be ordered by whoever is requesting them via the survey: <a href="https://ww2.efs-survey.com/uc/order_survey/">https://ww2.efs-survey.com/uc/order_survey/</a> </p>
+</li>
+<li>
+<p data-renderer-start-pos="3935">Log in to Globis, search term "test" and choose the newest version of EFS-Survey. The correct installation for test-accounts usually has a generic domain and is labeled as "Testinstallation" (e.g. for EFS 10.4 -&gt; <a class="cc-1rn59kg" title="http://trial-survey.customervoice360.com/www/" href="http://trial-survey.customervoice360.com/www/" data-testid="link-with-safety" data-renderer-mark="true"><u data-renderer-mark="true">http://trial-survey.customervoice360.com/www/</u></a>). If a test account for a panel installation has been requested, please contact sales or IGSC, as only one customer can use the panel test installation at a time.</p>
+</li>
+<li>
+<p data-renderer-start-pos="4360">Log in to the installation</p>
+</li>
+<li>
+<p data-renderer-start-pos="4390">Replace <strong>main.php?from_login=1</strong> with <strong>tac.php</strong> (should the tac-script not be available, create organization, team and user manually and upload the test-projects afterwards).</p>
+</li>
+<li>
+<p data-renderer-start-pos="4563">Fill out available / required information; set validity according to survey</p>
+</li>
+<li>
+<p data-renderer-start-pos="4642">Select matching rights template (e.g. test account team)</p>
+</li>
+<li>
+<p data-renderer-start-pos="4702">Send login information to customer</p>
+</li>
+</ol>
+<h2 id="h_01J3Z25PKC6MK8AVWW44QM5FA7">Account for an Accumulative Installation</h2>
+<p>Requester fills out internal order survey, subject contains e.g. "<strong>Account for a accumulative installation</strong> - [...]"</p>
+<p>List of collective Installations:</p>
+<table border="1">
+<tbody>
+<tr>
+<th>Country</th>
+<th>URL</th>
+</tr>
+<tr>
+<td>DE</td>
+<td><a href="http://www.efs-survey.com/www">http://www.efs-survey.com/www</a></td>
+</tr>
+<tr>
+<td>AT</td>
+<td><a href="http://ww2.umfragecenter.at/www/">http://ww2.umfragecenter.at/www/</a></td>
+</tr>
+</tbody>
+</table>
+<ol class="ak-ol" start="1" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="6335">New test accounts should always be ordered by whoever is requesting them via the survey: <a href="https://ww2.efs-survey.com/uc/order_survey/">https://ww2.efs-survey.com/uc/order_survey/</a> </p>
+</li>
+<li>
+<p data-renderer-start-pos="6430">Log in to the matching installation</p>
+</li>
+<li>
+<p data-renderer-start-pos="6469">Replace <strong>main.php?from_login=1</strong> with <strong>tac.php</strong> (should the tac-script not be available, create organization, team and user manually).</p>
+</li>
+<li>
+<p data-renderer-start-pos="6602">Fill out available / required information; set validity according to survey</p>
+</li>
+<li>
+<p data-renderer-start-pos="6681">Select matching rights template (e.g. standard accumulated installation team)</p>
+</li>
+<li>
+<p data-renderer-start-pos="6762">Send login information to customer</p>
+</li>
+</ol>
+<h2 id="reporting-accounts">Provisioning Reporting Accounts</h2>
+<ol class="ak-ol" start="1" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="6823">Reporting accounts will usually be ordered by the customer</p>
+</li>
+<li>
+<p data-renderer-start-pos="6885">Log in to the customer's installation</p>
+</li>
+<li>
+<p data-renderer-start-pos="6926">Navigate to <strong>Users</strong> to check whether the intended recipient already has an account</p>
+</li>
+<li>
+<p data-renderer-start-pos="7012">If this is the case, navigate to projects, search for the project the report should be granted for, click the <strong>§</strong> icon and grant read-access to the team in question</p>
+</li>
+<li>
+<p data-renderer-start-pos="7178">If this is not the case, navigate to teams, create a team using the reporting-rights template, navigate to projects, search for the project the report should be granted for, click the <strong>§</strong> icon and grant read-access to the team</p>
+<ol class="ak-ol" start="1" data-indent-level="2">
+<li>
+<p data-renderer-start-pos="7406">Navigate to <strong>Users</strong> and create an account in the team that you just created. Set organization to the customer's organization.</p>
+</li>
+</ol>
+</li>
+<li>
+<p data-renderer

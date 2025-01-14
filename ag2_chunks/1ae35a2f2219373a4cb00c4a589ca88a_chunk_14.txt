@@ -1,0 +1,42 @@
+p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="16918">Proceed as described above and select the survey that employees should receive after 6 months in the job under <strong data-renderer-mark="true">Value</strong> in the <strong data-renderer-mark="true">Project/Sample</strong> line. Then, for <strong data-renderer-mark="true">Mail template for invitation mail (optional)</strong>, select the invitation to the survey that you have created.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014859767186"></p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="17184">By defining the update rules you have completed the preparations for your automated workflow for new employees. As soon as you add a new employee to your panel, they will automatically receive the welcome email you have created and will be invited to take part in a survey after 2 and additional 4 months in the job. This allows you to keep track of your employees' satisfaction with the onboarding process in your company and – thanks to automation – you can archive this with far less effort.</p>
+<hr>
+<h2 id="h_01J506DF9PXHRSG5QS0Y0ZQ38J" class="wysiwyg-text-align-justify" data-renderer-start-pos="17681"> </h2>
+<h2 id="Scenario-2" class="wysiwyg-text-align-justify" data-renderer-start-pos="17681"><strong data-renderer-mark="true">Scenario 2</strong></h2>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="17693">The second scenario we will present to you, is suitable for any type of panel – whether employee or research panel. It is quick and easy to implement and still offers an effective way of increasing panelist satisfaction. Cause let's be honest, who doesn’t like to receive a congratulatory email on their birthday? So in this scenario, we'll take you through all the steps required to automatically send a birthday email to your panelists.</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="18133"> </p>
+<h3 id="Create-Master-Data" class="wysiwyg-text-align-justify" data-renderer-start-pos="18135"><strong data-renderer-mark="true">Create Master Data</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="18155">In order to send a birthday email to panelists, you must of course know their date of birth and save it in the corresponding master data so that we can use it to automatically form a group and in turn automatically send a birthday email. We therefore first create the master data record "md_day_of_birth", which will be used to save the day of birth of a panelist. We then create the master data record "md_month_of_birth", which will be used to save the month of birth of a panelist.</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="18642"> </p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="18644"><strong data-renderer-mark="true">md_day_of_of_birth</strong></p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="18666">In the <em data-renderer-mark="true">People</em> module, select the <strong data-renderer-mark="true">Master data</strong> menu item from the menu on the left-hand side.</p>
+</li>
+<li>
+<p data-renderer-start-pos="18761">Click on<strong data-renderer-mark="true"> Create master data</strong>.</p>
+</li>
+<li>
+<p data-renderer-start-pos="18793">Enter "md_day_of_birth" as the variable name.</p>
+</li>
+<li>
+<p data-renderer-start-pos="18842">Enter "Birthday" as the title.</p>
+</li>
+<li>
+<p data-renderer-start-pos="18876">Select <strong data-renderer-mark="true">-128 to 127</strong> as the type from the drop-down menu.</p>
+</li>
+<li>
+<p data-renderer-start-pos="18935">Select<strong data-renderer-mark="true"> default</strong> as the category from the drop-down menu.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-left">For the other options, retain the default settings and click on <strong data-renderer-mark="true">Create</strong>.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014859768082"></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Select the master data record you have just created from the list of master data.</li>
+<li data-renderer-start-pos="18994">Click on <strong data-renderer-mark="true">Edit answer categories</strong>.</li>
+<li data-renderer-start-pos="18994">Enter the value <strong data-renderer-mark="true">1</strong> in the <strong data-renderer-mark="true">Code</strong> field and also enter the value <strong data-renderer-mark="true">1</strong> as answer category.</li>
+<li data-renderer-start-pos="18994">Click on<strong data-renderer-mark

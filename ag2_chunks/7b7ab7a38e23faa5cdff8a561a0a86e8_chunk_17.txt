@@ -1,0 +1,115 @@
+ rows and n columns, m x n cells. Each cell contains text which can be placed before the text field and text which can be placed after the text field.</p>
+</li>
+</ul>
+<h4 id="entry-dialog-8">Entry Dialog</h4>
+<p>There are some special features in the text field matrix entry dialog:</p>
+<ul>
+<li>
+<p>In the “Scale” section the columns are created as explained for the checkbox matrix in the preceding Chapter.</p>
+</li>
+<li>
+<p>In the “Answers” section you can specify the maximum length of the entry for each text field. Default in “Responsive layout” projects: 255 characters. A maximum of 255 characters is permitted.</p>
+</li>
+<li>
+<p>In projects with classic layout, the display width can be specified as well.</p>
+</li>
+<li>
+<p>If you wish to specify text around the entry field click the<strong> Edit cell text</strong> link. Using the “%s” wildcard you can also specify as with other text field questions where the entry field is to appear.</p>
+</li>
+</ul>
+<h3 id="accordion-matrix">Accordion matrix</h3>
+<p>This question type allows a more accessible display of matrix questions on mobile devices. In addition to making the question more accessible on mobile devices, the nature of the layout of this question type reduces the likelihood of people straight-lining their answers. Along with the settings known for a matrix question type, you will find further settings in the detailed configuration that control the structure of the question in the questionnaire view. The information icon informs you in detail about the various options.</p>
+<h3 id="carousel">Carousel</h3>
+<p>The carousel question type is one that has been requested by many customers so we are delighted to include this new question type with Responsive Layout 3.1. This question type provides a more intuitive and simple way for a respondent to provide answers to a long list of questions. Rather than presenting a long list of questions, each question is shown individually to the respondent and the survey automatically switches to the next question upon completion of the current question. This question type supports both left-to-right and right-to-left languages.</p>
+<h3 id="hotspot-1">Hotspot</h3>
+<p>The hotspot question type enables you to place answer options onto particular areas of a selected picture. Before uploading your picture, note that you should start by defining the necessary dimensions and scales.</p>
+<p><strong>Elements</strong></p>
+<p>This question type has the following content elements:</p>
+<ul>
+<li>
+<p>Question text</p>
+</li>
+<li>
+<p>Fill-in instruction</p>
+</li>
+<li>
+<p>Help text</p>
+</li>
+<li>
+<p>Scale options 1-n</p>
+</li>
+<li>
+<p>Answer options 1-n</p>
+</li>
+</ul>
+<p>Please note: When making a matrix question (type 311 or comparable) mandatory (DAC), the check only validates a question of one random dimension. If you wish to have all dimensions answered as a prerequisite please activate DAC on the item level.</p>
+<p><strong>Detail configuration for Matrix question types</strong></p>
+<ul>
+<li>
+<p>Exclusive mode for areas: Only one area can be rated. If other areas have been previously rated, they will be reset.</p>
+</li>
+<li>
+<p>Show answer texts as a tooltip: The respective answer text will be displayed as a tooltip when hovering over it.</p>
+</li>
+<li>
+<p>Initial state for areas: States how areas are displayed initially and whether a button to display unrated areas should be included.</p>
+</li>
+<li>
+<p>Color for unselected areas: States the color for areas that have not yet been rated.</p>
+</li>
+<li>
+<p>Label the button for displaying areas Defines the button for displaying areas.</p>
+</li>
+<li>
+<p>Text of the default value in the selected box: Defines the text of the default value in the selected box.</p>
+</li>
+<li>
+<p>Label of button for closing the dialog Defines the button which closes the dialog.</p>
+</li>
+<li>
+<p>Image: Upload images, or change and delete previously uploaded images.</p>
+</li>
+</ul>
+<p>Please note that when deleting an image all shapes created will be deleted, too! However, if you swap one image for another within the media library all shapes remain saved.</p>
+<p><strong>Editing-tools for shapes</strong></p>
+<table class="" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour="#c0b6f2">
+<p><strong>Icon</strong></p>
+</th>
+<th data-highlight-colour="#c0b6f2">
+<p><strong>Function</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Select (A)</p>
+</td>
+<td>
+<p>Click and select the shape you would like to edit.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Detail Select (D)</p>
+</td>
+<td>
+<p>The detail select tool lets you select the anchors of a shape and move or delete them.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Undo</p>
+</td>
+<td>
+<p>Clicking will undo the last action.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Redo</p>
+</td>
+<td>
+<p>Clicking will redo the last undone

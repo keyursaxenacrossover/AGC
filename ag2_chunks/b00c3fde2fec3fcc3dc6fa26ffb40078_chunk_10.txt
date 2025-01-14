@@ -1,0 +1,26 @@
+ using <em>Outlook</em> won’t be able to open the attachments.</p>
+</li>
+<li>
+<p>The attachments can be saved as an attribute to mail templates.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">To add an attachment to an e-mail or mail template, select the desired file in the “Add an attachment” field. Once confirmed with the <strong>Attach File</strong> button, the attachment will be uploaded and attached to the e-mail. You can remove an unwanted attachment by clicking on the respective <strong>Delete</strong> icon.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The functionality is protected by the “mail_attachments” right, with read rights required to use it.</p>
+</li>
+</ul>
+<h3 id="additional-functions-for-personalizing-e-mail-texts" class="wysiwyg-text-align-justify"><strong>Additional functions for personalizing e-mail texts</strong></h3>
+<p class="wysiwyg-text-align-justify">You can use wildcards in your e-mail to personalize the text. The following wildcards are used only when sending mail. They can be used, for example, to insert system data, to send access codes,, and to output various panel data.</p>
+<p class="wysiwyg-text-align-justify"><strong>Limits</strong></p>
+<p class="wysiwyg-text-align-justify">The permissible number of wildcards is not directly limited. However, there is a limit about the overall length of the text. It must not exceed 20 MB (excluding wildcards). That said, many Internet users regard emails of this size as impolite because they can quickly exceed the storage capacity allotted by their e-mail provider. Also, some mail servers are set up to simply delete messages of more than 1 MB, assuming an attack on the mail system (mail bombs).</p>
+<p class="wysiwyg-text-align-justify"><em>EFS</em> is capable of generating hundreds of personalized e-mails within a few seconds. The procedure used for this purpose is also subject to an installation-related limit. You can approximate the number of permissible wildcards as follows:</p>
+<p class="wysiwyg-text-align-justify">2 * text length in byte ^ number of wildcards &lt; 20 MB</p>
+<p class="wysiwyg-text-align-justify">One text character equals one byte. Please note that the text of emails in HTML format is about 2.2 times larger than the actual text. The amount may even grow sixfold if you use Unicode characters. </p>
+<p class="wysiwyg-text-align-justify">The so-called “Dr. Grauert letter” (ISO 10561), which is commonly used in printer tests, contains about 1500 characters.</p>
+<p class="wysiwyg-text-align-justify">20000000 bytes / 1500 bytes = 13334</p>
+<p class="wysiwyg-text-align-justify">For plain text mail, this equals about 213. This means that you could use a total of 13 wildcards. Most emails, of course, are much shorter and also contain fewer wildcards. However, the installation’s limit can also be changed by system administration if required.</p>
+<p class="wysiwyg-text-align-justify">Additionally, the total number of if-conditions available for mail templates is limited to 400 for all if-, else- and /if-conditions in one mail template.</p>
+<p class="wysiwyg-text-align-justify"><u>Conditional replacement of e-mail text</u></p>
+<p class="wysiwyg-text-align-justify">The EFS e-mail functions allow you to use conditional replacement. This means that, in the future, it will be possible to output various mail contents depending on data from participant administration or on other pre-set conditions. The syntax for conditional replacement, in a generalized form, is as follows:</p>
+<pre class="wysiwyg-text-align-justify"><span class="" style="margin-right: -8px; display: flex; padding-right: 8px !important; color: #172b4d; font-family: SFMono-Medium, ' SF Mono' , ' Segoe UI Mono' , ' Roboto Mono' , ' Ubuntu Mono' , Menlo, Consolas, Courier, monospace; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: pre; background-color: rgba(9, 30, 66, 0.06); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;" data-testid="renderer-code-block-line-1" data-ds--code--row=""><span class="">{if operand1 operator operand2} </span></span><span class="" style="margin-right: -8px; display: flex; padding-right: 8px !important; color: #172b4d; font-family: SFMono-Medium, ' SF Mono' , ' Segoe UI Mono' , ' Roboto Mono' , ' Ubuntu Mono' , Menlo, Consolas, Courier, monospace; font-size: 14px; font-style: normal; font-variant-lig

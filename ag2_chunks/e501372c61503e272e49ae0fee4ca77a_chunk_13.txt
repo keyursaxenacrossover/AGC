@@ -1,0 +1,87 @@
+<p class="wysiwyg-text-align-justify">Use the icons in the “Actions” column to edit individual forums:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<strong>Edit</strong>: Opens the dialog for changing forum properties. For detailed information on the properties.</li>
+<li>
+<strong>Edit topics</strong>: Opens the list of topics of the selected forum.</li>
+<li>
+<strong>Copy</strong>: Copies the selected forum. The posts are not copied, as this is usually not advisable.</li>
+<li>
+<strong>Export posts</strong>: Triggers an export of all posts of the forum.</li>
+<li>
+<strong>Assign bonus points</strong>: The form for assigning bonus points to the participants is open.</li>
+<li>
+<strong>Set rights</strong>: You can restrict the access rights of user teams to individual forums.</li>
+<li>
+<p><strong>Delete</strong>: The forum is deleted after a confirmation prompt. Please note that all data are irrevocably lost in the process. If you no longer need a certain forum, we recommend exporting the posts before deleting them.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Forum Properties</strong></p>
+<p class="wysiwyg-text-align-justify">The table lists all the properties a forum can have.</p>
+<table class="wrapped wysiwyg-text-align-justify" style="margin-right: auto; margin-left: auto;" border="1">
+<colgroup> <col> <col> <col> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center">Field</th>
+<th class="wysiwyg-text-align-center">Wildcard</th>
+<th class="wysiwyg-text-align-center">Meaning</th>
+</tr>
+<tr>
+<td>Name of forum</td>
+<td>{$board.board_title}</td>
+<td>
+<p>Title of the forum. This is displayed both in the admin area and on the panel page.</p>
+</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>
+<p>{$board.board_description}</p>
+</td>
+<td>
+<p>Brief description. This is displayed both in the admin area and on the panel page.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="creating-and-managing-topics" class="wysiwyg-text-align-justify"><strong>Creating and Managing Topics</strong></h2>
+<p class="wysiwyg-text-align-justify">A forum usually contains different topics for discussion, which are specified by the administrator. The panelists can start threads related to a topic and post contributions, but cannot create topics themselves.</p>
+<p class="wysiwyg-text-align-justify"><strong>List of topics</strong></p>
+<p class="wysiwyg-text-align-justify">To view a forum’s topics, just click on its title in the forum overview. Alternatively, use the <strong>Edit Topics</strong> icon.</p>
+<p class="wysiwyg-text-align-justify">The list of topics contains all topics of the selected forum with description, number of threads, field period, and status.</p>
+<p class="wysiwyg-text-align-justify"><strong>Editing options</strong></p>
+<p class="wysiwyg-text-align-justify">If you click on the <strong>Add Topic</strong> button, the dialog for creating a new topic is opened.<br>By clicking on the title of a topic, you will get to the individual posts.</p>
+<p class="wysiwyg-text-align-justify">Use the icons in the “Actions” column to edit individual topics:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<strong>Edit</strong>: Opens the dialog for changing topic properties. For detailed information on the properties.</li>
+<li>
+<strong>Edit posts</strong>: Opens the list of posts.</li>
+<li>
+<strong>Copy</strong>: Copies the selected topic. The posts belonging to the topic are not copied, and this is usually not advisable.</li>
+<li>
+<strong>Export posts</strong>: Triggers an export of all posts of the topic.</li>
+<li>
+<strong>Delete</strong>: The topic is deleted after a confirmation prompt. Please note that all data are irrevocably lost in the process. If you no longer need a certain topic, we recommend exporting the posts before deleting them.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Topic Properties</strong></p>
+<p class="wysiwyg-text-align-justify">The table lists all properties a topic can have.</p>
+<table class="relative-table wrapped wysiwyg-text-align-justify" style="width: 100.362%; margin-right: auto; margin-left: auto; height: 2780px;" border="1">
+<colgroup> <col style="width: 23.8975%;"> </colgroup> <colgroup> <col style="width: 16.7585%;"> </colgroup> <colgroup> <col style="width: 59.3348%;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center">Field</th>
+<th class="wysiwyg-text-align-center">Wildcard</th>
+<th class="wysiwyg-text-align-center">Meaning</th>
+</tr>
+<tr>
+<td>
+<p>Website / Language version</p>
+</td>
+<td> </td>
+<td>
+<p>Website and language version to which the topic belongs. Cannot be changed subsequently.</p>
+</td>
+</tr>
+<tr>
+<td>Name of forum</

@@ -1,0 +1,78 @@
+Enter the required data</p>
+<ul>
+<li>
+<p>Name of unit: Name of the respective unit</p>
+</li>
+<li>
+<p>Short form of unit name: Name of the respective organizational unit as it is to be displayed in the organizational structure. For greater clarity, a shortened form of the actual name is usually used.</p>
+</li>
+<li>
+<p>Meta name: Unique identifier of the unit. The meta name may contain only the following characters: a-z, A-Z, 0-9, "_", "-"</p>
+</li>
+<li>
+<p>Parent unit: In this field, you specify the parent unit. If you have opened the dialog via the <strong>Actions</strong> layer, the correct unit should be preset automatically. If you have used the <strong>Create Unit</strong> button, you may have to specify the correct unit first. Clicking on the <strong>binoculars</strong> icon will open a list of all organizational units.</p>
+</li>
+<li>
+<p>Staff (preset value): Preset number of employees for this unit.</p>
+</li>
+<li>
+<p>Permit allocation to units in the questionnaire: Activate this action if participants are to be able to allocate themselves to the units.</p>
+</li>
+<li>
+<p>Create another unit afterward: Activate this option if you wish to manually create further units. Upon saving, the dialog for creating units will open again automatically.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Click on<strong> Save</strong>.</p>
+</li>
+<li>
+<p>After <strong>Saving</strong> the unit, switch back to the overview by clicking on the link <strong>Back to organizational structure</strong>. You will see the new unit in the Organizational structure.</p>
+</li>
+</ul>
+<h3 id="importing-an-organizational-structure" class="wysiwyg-text-align-justify"><strong>Importing an organizational structure</strong></h3>
+<p class="wysiwyg-text-align-justify">Instead of manually building the structure you can also import the entire structure or parts of it using a CSV or Excel file.</p>
+<p class="wysiwyg-text-align-justify"><strong>Before you start</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Do not start preparing the import before you have created all the required structure variables.</p>
+</li>
+<li>
+<p>The organizational structure may have any number of levels.</p>
+</li>
+<li>
+<p>When using Excel, you have to observe the following restrictions due to the specifications of the manufacturer:</p>
+<ul>
+<li>
+<p>Only the first sheet of the file will be processed. The maximum number of 256 columns and the maximum number of 65,000 rows should not be exceeded. If you require more columns or rows, choose another program and save the import file in CSV format.</p>
+</li>
+<li>
+<p>When using very large numbers as meta names, please note the following: Depending on the operating system, large numbers may be stored as<br>exponential numbers in Excel. When importing, EFS will adopt these exponential numbers as the meta names. You can easily avoid this problem by saving your Excel table in CSV format and then importing this CSV file.</p>
+</li>
+<li>
+<p>Excel import is only possible when using files created or stored with Excel 97+. Excel files that have been created or stored with “Excel for Mac”, “Neo Office”, or “Numbers” cannot be imported as a matter of principle.</p>
+</li>
+<li>
+<p>The file format XLSX, newly introduced by Microsoft with Office 2007, is not supported by EFS. Please save your files as XLS files before starting the import process.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If you want users to be able to import structures, you need to assign the right <em>structure_import</em> to the appropriate roles.</p>
+<h3 id="import-process-in-detail" class="wysiwyg-text-align-justify"><strong>Import process in detail</strong></h3>
+<p class="wysiwyg-text-align-justify"><strong>Download import template</strong></p>
+<p class="wysiwyg-text-align-justify">Open the import dialog. There are three different methods to choose from:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>If there is no organizational structure yet, use the<strong> Import structure</strong> button. The illustrations in this chapter show such a complete import.</p>
+</li>
+<li>
+<p>Otherwise, you need to locate the reference unit within the organizational structure, i.e., the unit under which to import the new structural portion. Open the<strong> Actions</strong> layer and click on the link <strong>Import structure</strong>.</p>
+</li>
+<li>
+<p>If you are already in the detail view of the unit under which to import the new structural portion, open the <strong>Import Structure</strong> tab.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">For each import format, i.e. level import and connected list, there is an already preformatted import template available, containing all the required columns. This<br>template can be downloaded by clicking on the Import template “Level import” or Import template “Connected list” respectively. The illustrations in this chapter show a level of import.</p>
+<p class="wysiwyg-text-align-justify"><strong>Format the import file</strong></p>
+<p class="

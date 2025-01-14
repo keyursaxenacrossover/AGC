@@ -1,0 +1,51 @@
+</h3>
+<p>The Professional Service Team checks the cause of data loss and determines if recovery is possible.</p>
+<h3 id="h_01J4NZ5G2VR1D9MP6WZ0HE8GQ1">Step 4: Recovery Options</h3>
+<p>If recovery is possible, the Professional Service Team provides options and time estimates to 1st Level Support.</p>
+<h3 id="h_01J4NZ5G2VA629BAAAFQK5XD75">Step 5: Customer Agreement <em>(Need Internal Review)</em>
+</h3>
+<p>1st Level Support discusses options and costs with the customer.</p>
+<h3 id="h_01J4NZ5G2VBQ7CGEDMTAGV2RMS">Step 6: Mirror Setup (if needed)</h3>
+<p>If a mirror is needed, 1st Level Support requests SaaS Team to create one.</p>
+<h3 id="h_01J4NZ5G2VCTYHCRRA4THKXF9Z">Step 7: Data Recovery</h3>
+<p>Depending on the situation, either the customer or the Professional Service Team does the data recovery.</p>
+<h3 id="h_01J4NZ5G2V58HKXSYQDT3CMACW">Step 8: Completion and Notification <em>(Need Internal Review)</em>
+</h3>
+<p>Professional Service Team informs 1st Level Support of successful recovery, who then notifies the customer and Sales department.</p>
+<h3 id="h_01J4NZ5G2V6W100HBB2T6PHVS5">Step 9: Mirror Deletion</h3>
+<p>After successful recovery, SaaS Team is informed to delete the mirror (if applicable).</p>
+<h2 id="standard_restores">Standard Restores</h2>
+<p>Standard restores are defined by the following criteria:</p>
+<ul>
+<li>EFS instance is hosted in GSA2</li>
+<li>Date/time of deletion fits GSA2 Backup Policy</li>
+<li>Customer should be able to perform the restore independently</li>
+</ul>
+<p>Examples of standard restores include:</p>
+<ul>
+<li>Complete projects meeting the above criteria</li>
+<li>Survey layouts that can be exported and imported</li>
+<li>Mail templates that can be recreated using copy and paste</li>
+</ul>
+<h2 id="information_checklist">Information Checklist</h2>
+<p>Use this checklist to ensure all necessary information is collected:</p>
+<ul>
+<li>Customer name</li>
+<li>Responsible contact person</li>
+<li>EFS instance</li>
+<li>Data to be restored</li>
+<li>Date of data deletion or loss</li>
+<li>Cause of data loss</li>
+<li>Desired restoration location</li>
+<li>Who will perform the restoration (customer or EFS Technical Support)</li>
+<li>Associated costs (if applicable)</li>
+</ul>
+<p><strong>Note:</strong> The data can not be directly restored to the production instance. It would be provided through a mirror installation. If the customer wants a direct restore, it needs to go to the Professional Service Team.</p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq_1">What types of data can be restored?</h3>
+<p>Various types of data can be restored, including whole projects, respondent data, panelist data, survey layouts, and mail templates. The specific type of data that can be restored depends on the circumstances of the data loss and the backup policies in place.</p>
+<h3 id="faq_2">How much does data restoration cost?</h3>
+<p>The cost of data restoration varies depending on several factors, including the need for a mirror EFS instance, the complexity of the recovery process, and whether EFS Technical Support needs to perform the restoration. Costs may include setup fees for mirror instances and hourly rates for technical support. Exact costs should be discussed with the support team on a case-by-case basis.</p>
+<h3 id="faq_3">Can customers perform data restoration themselves?</h3>
+<p>In some cases, especially for standard restores, customers may be able to perform the data restoration themselves. This typically applies to situations where the EFS instance is hosted in GSA2, the deletion date fits the GSA2 Backup Policy, and the type of data lost is relatively straightforward to restore (e.g., survey layouts or mail templates).</p>
+</article>

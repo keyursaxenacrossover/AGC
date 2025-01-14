@@ -1,0 +1,55 @@
+lo, ' Segoe UI Mono' , ' Ubuntu Mono' , monospace; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: pre; background-color: rgba(9, 30, 66, 0.06); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"> "name": "ABCD company GmbH (ab1234)", \ </span><span style="color: #172b4d; font-family: ui-monospace, Menlo, ' Segoe UI Mono' , ' Ubuntu Mono' , monospace; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: pre; background-color: rgba(9, 30, 66, 0.06); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"> "installation":"ab1234.customervoice360.com" \ </span><span style="color: #172b4d; font-family: ui-monospace, Menlo, ' Segoe UI Mono' , ' Ubuntu Mono' , monospace; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: pre; background-color: rgba(9, 30, 66, 0.06); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"> }' 'http://10.250.10.115/account'</span></pre>
+<h1 id="header-7">Activation of Custom Services</h1>
+<ul>
+<li>
+<p>Activate webservices by going to <strong>Options -&gt; Platform cockpit -&gt; root only:: System configuration</strong> and change</p>
+<ul>
+<li>
+<p><code>has_webservices</code> to <strong>true</strong></p>
+</li>
+<li>
+<p><code>modules</code> and add <strong>custom</strong></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Place your custom service in the installation's folder:</p>
+<ul>
+<li>
+<p><code>htdocs/custom/service/actor/SERVICE_PROVIDER.php</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Read custom service by going to <strong>Options -&gt; services -&gt; qb only:: Auto detect services</strong></p>
+</li>
+<li>
+<p>add an update to Globis for the installation by mentioning the activated modules and the support case</p>
+<ul>
+<li><code>u activated custom webservices  [ZD_ticket_ID]</code></li>
+</ul>
+</li>
+</ul>
+<p>If the service can’t be imported, check the permissions on the folder <code>htdocs/custom</code>, it needs the rights <strong>775</strong>. Then, the service has to be written in a specific way to function, check with TC if the service is correct.</p>
+<p><em><strong>NOTE:</strong> The parser for the WSDL only allows Unix line breaks, or only Windows line breaks, everything else leads to errors!</em></p>
+<p> </p>
+<h1 id="h_01J7DPTGR3ZKK9346QME9GXCV6">Activation of CLF (Closed Loop Feedback)</h1>
+<h3 id="h_01J7DPX93G47W56CCYVKJT2KB1">Dependencies</h3>
+<p>Other modules needed for the Closed Loop Feedback:</p>
+<ul>
+<li>MySight v2</li>
+<li>Employee</li>
+</ul>
+<h3 id="h_01J7DPXNQQ0P6AGKM0WD5Y91VD">Activate CLF</h3>
+<ul>
+<li>
+<p>As the root user, go to <strong>Options -&gt; Platform cockpit -&gt; root only:: System configuration</strong> and change</p>
+<ul>
+<li>
+<p><code>clf_enable</code> to <strong>true</strong></p>
+</li>
+</ul>
+</li>
+<li>Run <strong>healself</strong> in the Service Gateway (<a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21139518716562" target="_blank" rel="noopener noreferrer">How to Access and Work with DXI Service Gateways</a>)</li>
+<li>
+<p>add an update to Globis for the installation by mentioning the

@@ -1,0 +1,73 @@
+g-text-align-justify">During import, templates with the same name are overwritten.</p>
+<h3 id="the-functional-scope-of-the-download-platform" class="wysiwyg-text-align-justify"><strong>The functional scope of the download platform</strong></h3>
+<p class="wysiwyg-text-align-justify">The download platform is per default equipped as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Login</p>
+</li>
+<li>
+<p>Download page: On this page, the report recipients download their reports during the reporting phase. The allocation of reports to the respective units and recipient roles is managed in the background via the <em>Org Processor</em>.</p>
+</li>
+<li>
+<p>All pages exist both in English and German. They feature a language change function and are filled with sample text.</p>
+</li>
+<li>
+<p>URL: If the download platform is activated, you can access it via the internet by invoking the project URL with /download.php attached.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The functions for designing the download platform are placed in the <strong>Projects</strong> → {Selected project} → <strong>Process configuration → Download platform</strong> menu.</p>
+<h2 id="report-definition" class="wysiwyg-text-align-justify"><strong>Report Definition</strong></h2>
+<p class="wysiwyg-text-align-justify">You can find the report management functionalities of <em>EFS Employee</em> in the <strong>Projects</strong> → {Selected project} →<strong> Process configuration → Report definition</strong> menu.</p>
+<h3 id="reports" class="wysiwyg-text-align-justify"><strong>Reports</strong></h3>
+<p class="wysiwyg-text-align-justify">Open the <strong>Process configuration → Report definition</strong> menu. The <strong>Reports</strong> tab contains an overview of all existing reports. A “Standard report” exists per default in all new projects.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013838188562" alt="Reports.jpg"></p>
+<p class="wysiwyg-text-align-justify">For each report, the following data are displayed:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>ID: Report ID</p>
+</li>
+<li>
+<p>Name: Name of the report</p>
+</li>
+<li>
+<p>Report type: Describes what type of report it is: system-generated report, externally generated report, or common information.</p>
+</li>
+<li>
+<p>Number of reports: Number of the report files allocated to this report definition.</p>
+</li>
+<li>
+<p>A minimum number of answers to create a report: Anonymity criterion for the whole report. Only if the number of completed participants (i.e. disposition code 31, 32) reaches this minimum number, the report will be generated.</p>
+</li>
+<li>
+<p>Minimum number of answers per item: Anonymity criterion for individual questions or items. Only if the number of answers for a question or an item (i.e. disposition code 31, 32) reaches this minimum number, results will be shown for this answer or item in the report. Otherwise, the question or item will be blackened.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Creating report definitions</strong></p>
+<p class="wysiwyg-text-align-justify">In the <strong>Process Configuration</strong> → <strong>Report definition</strong> menu on the <strong>Reports</strong> tab, click the button <strong>Create report</strong>.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013838177042" alt="Create reports.jpg"></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Enter the data:</p>
+<ul>
+<li>
+<p>Name</p>
+</li>
+<li>
+<p>Report type: You can choose between the report types “System-generated report”, “Externally generated report” and “Common information and documents”.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Define in which phase of the project the report should be available.</p>
+</li>
+<li>
+<p>By defining the minimum number of answers for the creation of the report and for specific items, you define anonymity criteria for the reports.</p>
+</li>
+<li>
+<p><strong>Save</strong> the report definition.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Defining tile patterns</strong></p>
+<p class="wysiwyg-text-align-justify">To open the editing dialog of a report, click its name or the <strong>Edit</strong> icon in the report overview. In the “Report language” section in the column “Title pattern”, you can enter a title pattern for each report language. The pattern can be personalized using wildcards. In an employee survey, you can use all variables of the participant administration (u_xxx).</p>
+<p class="wysiwyg-text-align-justify"><strong>Creating report versions</strong></p>
+<p class="wysiwyg-text-align-justify">In the last step, you create report versions and define details for them. The use of report

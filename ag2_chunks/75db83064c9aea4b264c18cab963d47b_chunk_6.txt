@@ -1,0 +1,68 @@
+pre>
+<h3 id="mysight-workbookgetactivesheetname" class="wysiwyg-text-align-justify">mySight.workbookGetActiveSheetName</h3>
+<p class="wysiwyg-text-align-justify">Gets the name of the active sheet.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.workbookGetActiveSheetName(pageModuleIdentifier)
+    .then(function(name) {
+        ...
+    });</code></pre>
+<h3 id="mysight-workbookgetactivesheetindex" class="wysiwyg-text-align-justify">mySight.workbookGetActiveSheetIndex</h3>
+<p class="wysiwyg-text-align-justify">Gets the index of the active sheet.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.workbookGetActiveSheetIndex(pageModuleIdentifier)
+    .then(function(index) {
+        ...
+    });</code></pre>
+<h3 id="mysight-workbookactivatesheet" class="wysiwyg-text-align-justify">mySight.workbookActivateSheet</h3>
+<p class="wysiwyg-text-align-justify">Actives a sheet by its name or index.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.workbookActivateSheet(pageModuleIdentifier, sheetNameOrIndex)
+    .then(function() {
+        ...
+    });</code></pre>
+<h3 id="mysight-workbookrevertall" class="wysiwyg-text-align-justify">mySight.workbookRevertAll</h3>
+<p class="wysiwyg-text-align-justify">Restores the initial state of the workbook. Note that url parameters will be ignored in this operation and as such the restored state may differ from the real initial state.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.workbookRevertAll(pageModuleIdentifier)
+    .then(function() {
+        ...
+    });</code></pre>
+<h3 id="mysight-workbookgetparameternames" class="wysiwyg-text-align-justify">mySight.workbookGetParameterNames</h3>
+<p class="wysiwyg-text-align-justify">Gets a list of the parameter names.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.workbookGetParameterNames(pageModuleIdentifier)
+    .then(function(names) {
+        ...
+    });</code></pre>
+<h3 id="mysight-workbookgetparametercurrentvalue" class="wysiwyg-text-align-justify">mySight.workbookGetParameterCurrentValue</h3>
+<p class="wysiwyg-text-align-justify">Gets the current value of a parameter.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.workbookGetParameterCurrentValue(pageModuleIdentifier, parameterName)
+    .then(function() {
+        ...
+    });</code></pre>
+<h3 id="mysight-workbookgetparameterdatatype" class="wysiwyg-text-align-justify">mySight.workbookGetParameterDataType</h3>
+<p class="wysiwyg-text-align-justify">Gets the data type of a parameter.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.workbookGetParameterDataType(pageModuleIdentifier, parameterName)
+    .then(function(dataType) {
+        ...
+    });</code></pre>
+<h3 id="mysight-workbookgetparameterallowablevaluestype" class="wysiwyg-text-align-justify">mySight.workbookGetParameterAllowableValuesType</h3>
+<p class="wysiwyg-text-align-justify">Gets the type of allowable values of a parameter.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.workbookGetParameterAllowableValuesType(pageModuleIdentifier, parameterName)
+    .then(function(allowableValuesType) {
+        ...
+    });</code></pre>
+<h3 id="mysight-workbookgetparameterallowablevalues" class="wysiwyg-text-align-justify">mySight.workbookGetParameterAllowableValues</h3>
+<p class="wysiwyg-text-align-justify">Gets a list of allowable values of a parameter.</p>
+<pre><code class="language-text">Questback.portalsApi.mySight.workbookGetParameterAllowableValues(pageModuleIdentifier, parameterName)
+    .then(function(allowableValues) {
+        ...
+    });</code></pre>
+<h3 id="mysight-workbookgetparameterminvalue" class="wysiwyg-text-align-justify">mySight.workbookGetParameterMinValue</h3>
+<p class="wysiwyg-text-align-justify">Gets the min value of a parameter.</p>
+<pre><code class="language-text">Questback.portalsApi.mySight.workbookGetParameterMinValue(pageModuleIdentifier, parameterName)
+    .then(function(minValue) {
+        ...
+    });</code></pre>
+<h3 id="mysight-workbookgetparametermaxvalue" class="wysiwyg-text-align-justify">mySight.workbookGetParameterMaxValue</h3>
+<p class="wysiwyg-text-align-justify">Gets the max value of a parameter.</p>
+<pre><code class="language-text">Questback.portalsApi.mySight.workbookGetParameterMaxValue(pageModuleIdentifier, parameterName)
+    .then(function(maxValue) {
+        ...
+    });</code></pre>
+<h3 id="mysight-workbookgetparameterstepsize" class="wysiwyg-text-align-justify">mySight.workbookGetParameterStepSize

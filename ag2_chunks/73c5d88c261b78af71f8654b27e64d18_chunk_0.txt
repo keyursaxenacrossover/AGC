@@ -1,0 +1,54 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K" class="wysiwyg-text-align-justify">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article covers the Project Properties section in the EFS Survey, focusing on various settings and configurations for survey projects. It includes information on survey options, messages, languages, variable data import, website settings, and more.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">The Project Properties menu in EFS Survey allows users to configure various aspects of their survey projects, including survey options, messages, languages, and other important settings.</p>
+<ul class="wysiwyg-text-align-justify">
+<li><a href="#survey-options">Survey Options</a></li>
+<li><a href="#survey-messages">Survey Messages</a></li>
+<li><a href="#survey-languages">Survey Languages</a></li>
+<li><a href="#variable-data-import">Variable Data Import</a></li>
+<li><a href="#website-settings">Website Settings</a></li>
+<li><a href="#portal-settings">Portal Settings</a></li>
+<li><a href="#bonus-points-configuration">Bonus points configuration</a></li>
+<li><a href="#template-configuration">Template configuration</a></li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="survey-options" class="wysiwyg-text-align-justify"><strong>Survey Options</strong></h2>
+<p class="wysiwyg-text-align-justify">Open the <em>Projects</em> → {Selected project} → <em>Project properties</em> menu. The tabs of the <strong>Survey options</strong> submenu will be automatically displayed in the content area.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014884211858" alt="Survey options.jpg"></p>
+<h3 id="general-options" class="wysiwyg-text-align-justify"><strong>General Options</strong></h3>
+<p class="wysiwyg-text-align-justify">The tab General options in the Survey options menu relate to the Internet location (i.e. the URL) of your survey, to an extended log for changes made to the questionnaire, and certain aspects concerning the behavior of the survey.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h3 id="internal-organization" class="wysiwyg-text-align-justify"><strong>Internal Organization</strong></h3>
+<p class="wysiwyg-text-align-justify">On this tab, you can activate features that help you with the internal organization and testing of your project.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014837349906" alt="Internal organization.jpg"></p>
+<p class="wysiwyg-text-align-justify">Please note: for several of these features, it is taken for granted that you or your testers are logged into the admin area while skipping through the questionnaire.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h3 id="login-options" class="wysiwyg-text-align-justify"><strong>Login Options</strong></h3>
+<p class="wysiwyg-text-align-justify">Online surveys can be equipped with diverse access mechanisms. The tab<strong> Login options</strong> define the type of access to the survey in combination with the selected project type.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Switch to the <strong>Projects</strong> → {Selected project} → <strong>Project properties → Survey options</strong> menu → <strong>Login options</strong> tab</p>
+</li>
+<li>
+<p>Select the type of access protection in the “Login type” row. Depending on the project type, different options are available.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014837358226" alt="Login options.jpg"></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Cookies are used:</p>
+<ul>
+<li>
+<p>Only in anonymous surveys: Cookies are used in anonymous surveys to make resumption possible and to make multiple participation more difficult.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Session validity period (in seconds):</p>
+<ul>
+<li>
+<p>In this field, you can set the session period for surveys. The session validity period, or “session time”, is the period between a participant’s actions during which the software can recognize the participant and permit editing of a survey that has begun. It is measured as the difference between those actions of participants that require a connection between browser and web server, i.e. from the submission of a questionnaire page to the submission of the next page, for example, or from the time participants leave an uncompleted survey until they resume editing of the survey.</p>
+</li>
+<li>
+<p>Entering the <strong>Session validity period</strong>: You can either enter the total value or a mathematical operation (e.g. “3600 * 24” for one

@@ -1,0 +1,167 @@
+</td>
+<td>
+<p>Name of the respective organizational unit.</p>
+</td>
+<td>
+<p>Text field</p>
+</td>
+<td>
+<p>256 characters</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>label</em></p>
+</td>
+<td>
+<p>Short form of unit name</p>
+</td>
+<td>
+<p>Name of the respective organizational unit as it is to be displayed in the organizational structure. For greater clarity, a shortened form of the actual name is usually used.</p>
+</td>
+<td>
+<p>Text field</p>
+</td>
+<td>
+<p>256 characters</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>metaname</em></p>
+</td>
+<td>
+<p>Meta name (Unique Ident.)</p>
+</td>
+<td>
+<p>Unique identifier of the unit. The meta name may contain only the following characters: a-z, A-Z, 0-9, "_", "-"</p>
+</td>
+<td>
+<p>Text field</p>
+</td>
+<td>
+<p>65,536 characters</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>co_target</em></p>
+</td>
+<td>
+<p>Staff (preset value)</p>
+</td>
+<td>
+<p>Preset number of employees for this unit.</p>
+</td>
+<td>
+<p>int(11)</p>
+</td>
+<td>
+<p>max 2,147,483,647</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>visible</em></p>
+</td>
+<td>
+<p>Permit allocation to unit in the questionnaire</p>
+</td>
+<td>
+<p>This variable is only relevant in combination with the selfallocation. It specifies whether a participant who is allowed to allocate himself may select<br>the respective unit in the questionnaire. Available options are:</p>
+<ul>
+<li>
+<p>0: The unit cannot be selected. If the participants can see it at all, depends of the value of “Hide unit in questionnaire (including subunits)”.</p>
+</li>
+<li>
+<p>1: It is possible to select the unit.</p>
+</li>
+</ul>
+</td>
+<td>
+<p>Checkbox</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>historic_code</em></p>
+</td>
+<td>
+<p>Comparison unit of the preceding year</p>
+</td>
+<td>
+<p>This variable was used for storing the code of the comparison unit from the previous survey in the past. The meta<br>names are used for comparison.</p>
+</td>
+<td>
+<p>int(11)</p>
+</td>
+<td>
+<p>max 2,147,483,647</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>u_adjust_members</em></p>
+</td>
+<td>
+<p>Correction factor</p>
+</td>
+<td>
+<p>This variable is only relevant in combination with the manual adjustment of target figures. It contains the direct correction factor.</p>
+</td>
+<td>
+<p>Text</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>u_adjust_members_agg</p>
+</td>
+<td>
+<p>Correction factor abs.</p>
+</td>
+<td>
+<p>This variable is only relevant in combination with manual adjustment of target figures, It contains the absolute correction factor.</p>
+</td>
+<td>
+<p>Text</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>hide_unit</em></p>
+</td>
+<td>
+<p>Hide unit in questionnaire (including subunits)</p>
+</td>
+<td>
+<p>This variable is only relevant in combination with the selfallocation. It<br>specifies whether a participant who is allowed to allocate himself may see the respective unit and its<br>subunits in the questionnaire. Available options are:</p>
+<ul>
+<li>
+<p>0: The unit including its subunits is displayed.</p>
+</li>
+<li>
+<p>1: The unit including its subunits is hidden.</p>
+</li>
+</ul>
+</td>
+<td>
+<p>Checkbox</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="action-planner-configuration" class="wysiwyg-text-align-justify"><strong>Action Planner configuration</strong></h3>
+<p class="wysiwyg-text-align-justify">The <em>Action Planner</em> and the add-on module <em>CLF</em> are activated. In the sidebar, two new menus are displayed: the <em><strong>Action Planner</strong></em><strong> configuration</strong> menu and the <em><strong>CLF</strong></em><strong> configuration overview</strong>. Also, if you go back to the<strong> Org Processor</strong> menu, you will find the <em>Action Planner</em> itself on a newly inserted tab. The configuration options in this menu, which will be introduced in the following Chapters, enable you to adapt the Action Planner to your specific survey process. The <em>CLF </em>configuration overview gives you an overview of the configuration process of <em>CLF</em> related applications in the context of preparing the Action Planner. With the <em>Action Planner</em>, you can create new tasks in <em>Portals</em>. Furthermore, you gain insight into statistic overviews

@@ -1,0 +1,70 @@
+Export / Import </strong>function allows you to export text elements (i.e. question and help texts, fill-in instructions as well as question options) for external editing with MS Excel or with the translation software SDLX. You can thus make easy and concise changes to question categories and items. For example, you can rename (“relabel”) existing categories and items. This simplifies the translation of questionnaires significantly. However, no new categories, new items, or variables can be added. Importing text changes or translations into another project is not possible, either.</p>
+<p class="wysiwyg-text-align-justify">The required operations,</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>exporting project data</p>
+</li>
+<li>
+<p>editing exported data in an external program</p>
+</li>
+<li>
+<p>importing edited project data into EFS are introduced in the following section.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Following that there is an explanation of how to edit with Microsoft Excel and SDLX.</p>
+<h3 id="exporting-text-elements" class="wysiwyg-text-align-justify">Exporting text elements</h3>
+<p class="wysiwyg-text-align-justify">The tabs for importing and exporting files for external editing are located in the menu <strong>Projects</strong> → {Selected project} → <strong>Questionnaire editor</strong> →<strong> Language editor </strong>→ <strong>Import</strong> / <strong>Export</strong>.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Click on the <strong>Export file</strong> tab.</p>
+</li>
+<li>
+<p>Set the file format for the export. The following options are available:</p>
+<ul>
+<li>
+<p>XLSX for editing with MS Excel</p>
+</li>
+<li>
+<p>HTML for editing with SDLX</p>
+</li>
+</ul>
+</li>
+<li>
+<p>If you wish to use the versioning features, you have to tick the checkbox labeled “Save exported version for later comparisons”.</p>
+</li>
+<li>
+<p>If you have chosen XLS as the export format, you will have several special options available to you for defining the file structure.</p>
+</li>
+<li>
+<p>Click on the <strong>Export</strong> button on the right-hand side to download the file.</p>
+</li>
+<li>
+<p>In most browsers, a dialog will open in which you can choose whether you wish to directly open the file in a program or save the data. It is recommended that you save the data on the hard disk. In some browsers the file will be automatically opened in Excel: In this case, you should likewise save the file onto your hard drive, and make sure that you enter a file extension that matches the file format.</p>
+</li>
+<li>
+<p>Confirm by clicking on<strong> Save</strong>.</p>
+</li>
+</ul>
+<h3 id="external-editing-of-text-elements" class="wysiwyg-text-align-justify">External editing of text elements</h3>
+<p class="wysiwyg-text-align-justify">You can open and edit the exported file in MS Excel or SDLX depending on which format you choose.</p>
+<h3 id="importing-edited-text-elements-back-into-efs" class="wysiwyg-text-align-justify">Importing edited text elements back into <em>EFS</em>
+</h3>
+<p class="wysiwyg-text-align-justify">After completing the editing process, switch back to your EFS project and select in the <strong>Import</strong> / <strong>Export</strong> submenu the <strong>Import file</strong> tab. Specify the target language and import conditions:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>In the drop-down list labeled “Into which language do you wish to import the new text elements?”, you can select the target language for the import. If the<br>default language is selected, the elements will be imported directly into the questionnaire editor’s data tables.</p>
+</li>
+<li>
+<p>In the “Back up old elements in another language?” field, the “Overwrite old elements” function will be selected by default. However, if you do not want to lose text elements you have already inserted, you can also back them up in another language.</p>
+</li>
+<li>
+<p>Only those elements containing a string will be transferred to the language table or the editor tables. Empty strings will be ignored.</p>
+</li>
+<li>
+<p>If you wish to import text elements in another language but do not notice that this language has not yet been set up until you reach the tab for re-importing the files, you can still do this in the bottom section “New language”. Specify the name of the new language, and then click on <strong>Save</strong>. After that, you can perform an import into this new language.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">You will use <strong>Browse</strong> to select the edited file and you will click on <strong>Next page</strong> to import the changes. The changes will be documented in the overview "Import finished".</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863" class="wysiwyg-text-align-justify">FAQ</h1>
+<h

@@ -1,0 +1,186 @@
+ data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>id</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>The mail-template id <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79C3T4QA5H0X49A83XB"> </h4>
+<h3 id="header-16">GET /efs/mailtemplates/{id}</h3>
+<p>Get mail template by id</p>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">{
+  "meta": {
+    "description": "Example message",
+    "type": "default_mail",
+    "site_id": "7",
+    "active": true
+  },
+  "content": {
+    "from": "example@domain.tld",
+    "subject": "Example message",
+    "format": "TEXT",
+    "text_content": "Dear #u_firstname#, \r\n\r\nyou have a new message.",
+    "attachments": false
+  },
+  "options": {
+    "charset": "ISO-8859-1",
+    "reply_to": "example@domain.tld",
+    "return_path": "example@domain.tld",
+    "to_realname": false,
+    "send_copy": false,
+    "priority": "NO_PRIORITY",
+    "sensitivity": "NORMAL",
+    "notify": "NO_NOTIFICATION"
+  },
+  "id": 1234
+}</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>id</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>The mail-template id <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79CVNHZA8B5PRPP3Y59"> </h4>
+<h3 id="header-17">GET /efs/mailtemplates/withAttachments/{id}</h3>
+<p>Get mail template by id with attachments. The content of attachment is gzip and base64 encoded.</p>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">{
+  "meta": {
+    "description": "Example message",
+    "type": "default_mail",
+    "site_id": "7",
+    "active": true
+  },
+  "content": {
+    "from": "example@domain.tld",
+    "subject": "Example message",
+    "format": "TEXT",
+    "text_content": "Dear #u_firstname#, \r\n\r\nyou have a new message.",
+    "attachments": false
+  },
+  "options": {
+    "charset": "ISO-8859-1",
+    "reply_to": "example@domain.tld",
+    "return_path": "example@domain.tld",
+    "to_realname": false,
+    "send_copy": false,
+    "priority": "NO_PRIORITY",
+    "sensitivity": "NORMAL",
+    "notify": "NO_NOTIFICATION"
+  },
+  "attachments": [
+   {"name":"example.jpg", "content":"skkfdsjksdjkfsd..."}
+  ]
+  "id": 1234
+}</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>id</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>The mail-template id <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4

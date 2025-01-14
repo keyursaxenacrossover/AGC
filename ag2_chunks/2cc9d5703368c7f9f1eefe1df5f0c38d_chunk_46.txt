@@ -1,0 +1,142 @@
+</td>
+<td style="width: 431.51px;">
+<p>Limits the length of the display per page. Excess profiles are displayed on subsequent pages.</p>
+</td>
+<td style="width: 138.073px;">
+<p>80</p>
+</td>
+</tr>
+<tr>
+<td style="width: 167.969px;">
+<p>Profile sort order</p>
+</td>
+<td style="width: 431.51px;">
+<p>Specify which variable is to be used for defining the sort order. The following variables are available:</p>
+<ul>
+<li>
+<p>Address data</p>
+</li>
+<li>
+<p>Master data</p>
+</li>
+<li>
+<p>penter_date: Date of entry into the panel</p>
+</li>
+<li>
+<p>site_id</p>
+</li>
+</ul>
+<p>Possible sort order:</p>
+<ul>
+<li>
+<p>Ascending</p>
+</li>
+<li>
+<p>Descending</p>
+</li>
+</ul>
+</td>
+<td style="width: 138.073px;">
+<p>80</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="function-module-panelist-ratings" class="wysiwyg-text-align-justify"><strong>Function Module: Panelist Ratings</strong></h3>
+<p class="wysiwyg-text-align-justify">With the “Panelist ratings” function module you can set up a form for the rating of panelists.</p>
+<p class="wysiwyg-text-align-justify">In the standard panel, the appearance of the form is determined by the “func_panelist_ rating” template.</p>
+<p class="wysiwyg-text-align-justify"><strong>Options</strong></p>
+<p class="wysiwyg-text-align-justify">The “Panelist ratings” function module provides the following setting options:</p>
+<table class="wysiwyg-text-align-justify" style="height: 662px;" border="1" width="763" data-layout="default" data-table-width="760">
+<colgroup>
+<col style="width: 217.0px;">
+<col style="width: 411.0px;">
+<col style="width: 132.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" style="width: 208.073px;" data-highlight-colour="#57d9a3">
+<p><strong>Option</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 392.847px;" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 151.684px;" data-highlight-colour="#57d9a3">
+<p><strong>Standard panel</strong></p>
+</th>
+</tr>
+<tr>
+<td style="width: 200.052px;">
+<p>Reference name for template</p>
+</td>
+<td style="width: 384.826px;">
+<p>Name that can be used to trigger the module in positioning templates.</p>
+</td>
+<td style="width: 143.663px;">
+<p>Give_stars</p>
+</td>
+</tr>
+<tr>
+<td style="width: 200.052px;">
+<p>Page module title</p>
+</td>
+<td style="width: 384.826px;">
+<p>Name of the module in the page’s module overview</p>
+</td>
+<td style="width: 143.663px;">
+<p>Give stars</p>
+</td>
+</tr>
+<tr>
+<td style="width: 200.052px;">
+<p>Module template</p>
+</td>
+<td style="width: 384.826px;">
+<p>Module-specific template that controls how data provided by the module are displayed.</p>
+</td>
+<td style="width: 143.663px;">
+<p>func_panelist_rating</p>
+</td>
+</tr>
+<tr>
+<td style="width: 200.052px;">
+<p>Page module title</p>
+</td>
+<td style="width: 384.826px;">
+<p>Name of the module in the page’s module overview</p>
+</td>
+<td style="width: 143.663px;">
+<p>Give stars</p>
+</td>
+</tr>
+<tr>
+<td style="width: 200.052px;">
+<p>Number of points a panelist can award per transaction</p>
+</td>
+<td style="width: 384.826px;">
+<p>A range of values can be defined.</p>
+</td>
+<td style="width: 143.663px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 200.052px;">
+<p>A variable containing the number of remaining points of a panelist</p>
+</td>
+<td style="width: 384.826px;">
+<p>Master data variable containing the number of points left for a panelist to award.</p>
+</td>
+<td style="width: 143.663px;">
+<p>m_starcredit</p>
+</td>
+</tr>
+<tr>
+<td style="width: 200.052px;">
+<p>A variable containing the sum of points awarded by other panelists</p>
+</td>
+<td style="width: 384.826px;">
+<p>Master data variable containing the number of points a panelist has received from other panelists.</p>
+</td>
+<td style="width: 143.663px;">
+<p>m_starsreceived</p>

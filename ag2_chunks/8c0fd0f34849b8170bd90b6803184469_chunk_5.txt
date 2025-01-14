@@ -1,0 +1,60 @@
+ MySQL connection or New EXASOL connection</strong> (drop down menu)</p></li>
+<li><p><strong>fill up "General settings", "Database settings" and "Tableau settings"</strong>(see below)</p></li>
+</ul><p><strong>Example</strong></p><ul><li>
+<p>General settings</p>
+<ul><li><p>Connection label: <strong>PREPROD2-[SCHEMA]</strong> (nomeclature for internal installations), <strong>PROD-[SCHEMA]</strong> (nomeclature for customer installations)</p></li></ul>
+</li></ul><p></p><ul><li>
+<p>Database settings</p>
+<ul>
+<li><p>Database Server GIVEN BY SYSTEM ENGINEERS! Currently valid: Url: <strong>10.250.0.21, 10.250.0.23, 10.250.11.20, 10.250.11.21 (Frankfurt)</strong>, (old <del>10.250.10.183</del>) and <strong>172.24.16.47 (Rackspace)</strong></p></li>
+<li><p>DB User + PWD as given in config unless specified differently by SA</p></li>
+<li><p>Database Name = [SCHEMA] (AB1234)</p></li>
+<li><p>Database port: <strong>8563</strong> Frankfurt, <strong><del>5126</del></strong><del> Rackspace</del>, AWS <strong>8899</strong></p></li>
+<li><p>Driver: see table below</p></li>
+</ul>
+</li></ul><table data-layout="default" data-table-width="760" ac:local-id="858cc339-7f75-4d87-b3ec-4d78ac3627cc">
+<colgroup>
+<col style="width: 136.0px;">
+<col style="width: 136.0px;">
+<col style="width: 136.0px;">
+<col style="width: 136.0px;">
+<col style="width: 136.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p><strong>enviroment</strong></p></th>
+<th><p><strong>server name</strong></p></th>
+<th><p><strong>ip</strong></p></th>
+<th><p><strong>ODBC driver</strong></p></th>
+<th><p><strong>notes</strong></p></th>
+</tr>
+<tr>
+<td><p><strong>Frankfurt</strong></p></td>
+<td><p>exaone-01 exaone-02 exaone-03 exaone-04 exaone-05 exaone-06 exaone-07 exaone-08 exaone-09 exaone-10</p></td>
+<td><p>10.250.0.21 10.250.0.23 10.250.11.20 10.250.11.21 10.250.11.54 10.250.11.60 10.250.11.75 10.250.11.76 10.250.11.90 10.250.11.92</p></td>
+<td><p>/opt/pdp/opst/apps/EXASOL_ODBC-6.0.0/lib/linux/x86_64/libexaodbc-uo2214lv2.so</p></td>
+<td><p><strong>default driver for all new installations</strong></p></td>
+</tr>
+<tr>
+<td><p><strong>Testkanal</strong></p></td>
+<td><p>tka-exasol</p></td>
+<td><p>10.4.0.78</p></td>
+<td><p>/opt/pdp/opst/apps/EXASolution_ODBC-6.0.rc2/lib/linux/x86_64/libexaodbc-uo2214lv2.so</p></td>
+<td><p><strong>default driver for all new installations</strong></p></td>
+</tr>
+<tr>
+<td><p><strong>Rackspace/AWS</strong></p></td>
+<td><p>rs-exasol</p></td>
+<td><p>172.24.16.47</p></td>
+<td><p>/opt/pdp/opst/apps/EXASolution_ODBC-6.0.rc2/lib/linux/x86_64/libexaodbc-uo2214lv2.so</p></td>
+<td><p><strong>default driver for all new installations</strong></p></td>
+</tr>
+<tr>
+<td><p><strong>PROD-US-02</strong></p></td>
+<td><p></p></td>
+<td><p>172.30.3.168</p></td>
+<td><p>/opt/pdp/opst/apps/EXASolution_ODBC-6.0.rc2/lib/linux/x86_64/libexaodbc-uo2214lv2.so</p></td>
+<td><p><strong>default driver for all new installations</strong></p></td>
+</tr>
+</tbody>
+</table><p><strong>Former settings</strong></p><p><strong>INFO: All other necessary data like "Database user", "Database password" and "Database name" (Database name = "SCHEMA") will be provided by our System Engineers</strong> <br><strong>(System Engineers List of EXASOL Servers: </

@@ -1,0 +1,44 @@
+.6062%; height: 364px;">
+<p>Sending of vouchers with individual code</p>
+<p>With vouchers there are no defined limits on payment, instead, the amount is set by assigning a voucher code list.</p>
+<p>Please note: Bonuses of the type “voucher” will only be shown in the bonus list as long as unused vouchers exist. As soon as the existing vouchers are used, the bonus will no longer be offered. Though only vouchers paid out by the administrator will be regarded as “used”, vouchers requested by panelists but still not paid out are regarded as “unused”. More vouchers may be requested than are available because requests for all remaining vouchers have been made, but these have been not processed by the administrator yet.</p>
+</td>
+<td style="width: 31.5789%; height: 364px;">
+<ul>
+<li>Configure appropriate options in the "Bonus list and redemption" function module.</li>
+<li>Voucher code list</li>
+<li>Mail template of the type “Voucher mail” for the respective language version.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify">The panelists can only choose one of these types of payment respectively. The error message which is output when combining different types of payment can be edited using the identifier “msg_different_payment_type”. Furthermore, with vouchers only one payment respectively can be requested with each redeeming process.</p>
+<h3 id="defining-and-limiting-amounts-for-payment" class="wysiwyg-text-align-justify"><strong>Defining and Limiting Amounts for Payment</strong></h3>
+<p class="wysiwyg-text-align-justify">For the “Standard” type of payment, there are two ways of defining payment amounts:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>The panelists can enter the desired amount themselves in a text field.</li>
+<li>Predefined payment amounts, the so-called limits of payment, can be determined by the panel administrator in advance.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Panelists enter the desired amount in a text field</strong></p>
+<p class="wysiwyg-text-align-justify">If you leave the “Limits of payment” field empty when creating a new bonus, a text field will be displayed on the “Redeem points” page. In this field, panelists can freely enter the number of points to be redeemed.</p>
+<p class="wysiwyg-text-align-justify">If you wish to limit the amount redeemable, use the “Minimum value of payment” and “Maximum value of payment” fields. At the same time, the minimum value of payment prevents panelists with fewer points from redeeming the respective bonus.</p>
+<p class="wysiwyg-text-align-justify"><strong>Panelists select predefined amounts</strong></p>
+<p class="wysiwyg-text-align-justify">If at least one limit of payment is defined, fixed, unchangeable text will be output in the form. If only one limit has been defined, it is a continuous text. If more than one limit for payment has been defined, these can be selected from drop-down lists.</p>
+<p class="wysiwyg-text-align-justify">Limits of payment are defined as follows:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>Enter the number of<em> required panel points</em> into the “Amount” column.</li>
+<li>In the “Display” column you can enter the value as it will be seen by the panelists, i.e. for example with the name of the points or in a currency.</li>
+<li>After that, confirm by clicking on <strong>Save</strong>.</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><em>Information: </em>If you wish to ensure that only those panelists who have a certain minimum number of points can redeem bonuses, you can do so in the “Bonus list and redemption” function module for the respective panel page: Enter the desired threshold in the “Minimum number of points for redeeming bonuses” field.</p>
+<p class="wysiwyg-text-align-justify">Please note that panelists with fewer points will then generally not be able to use the respective bonus list: No differentiation is made between new panelists and panelists who had a higher number of points in the past, but who have redeemed points in the meantime.</p>
+<h2 id="handling-of-bank-payments" class="wysiwyg-text-align-justify"><strong>Handling of Bank Payments</strong></h2>
+<p class="wysiwyg-text-align-justify">You can use the EFS Panel bonus system for the handling of bank payments. The bank details of the panelists need not be stored on a long-term basis (e.g. via provision upon registration and subsequent storage as part of the master data), rather they are collected in the course of the payment process.</p>
+<p class="wysiwyg-text-align-justify">EFS offers the following design options:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Various combinations of the following bank details can be used: account holder, SWIFT code, IBAN, bank code, and account number.</li>
+<li>You can define your own Regex checks to validate bank code and account number.</li>
+<li>Optionally, you can store the bank details entered by the panelists in selected master data and use them to prefill the forms in future payment processes.</li>
+</ul>
+<p class="wysiwyg-text-align-

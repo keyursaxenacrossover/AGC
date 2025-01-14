@@ -1,0 +1,69 @@
+>
+<li>
+<p>Type: Displays an abbreviation for the respective project type.</p>
+</li>
+<li>
+<p>Status: Project status.</p>
+</li>
+<li>
+<p>Start and end</p>
+</li>
+<li>
+<p>Total sample: Total number of participants.</p>
+</li>
+<li>
+<p>Completed: Number of participants who have completed the whole questionnaire.</p>
+</li>
+<li>
+<p>Currently responding: Number of participants who are currently actively completing the questionnaire.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Optionally, forum discussions can be displayed in the field overview.</p>
+<h3 id="restricting-the-field-overview" class="wysiwyg-text-align-justify"><strong>Restricting the field overview</strong></h3>
+<p class="wysiwyg-text-align-justify">Using the search function, you can restrict the field overview to specific projects. E.g. the list can be restricted to those projects which are in the field and which have been accessed within the last two hours. The following search criteria are available:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Display Type: The drop-down list provides you with often-needed combinations of project status, field period, and time intervals, e.g. “Show only active projects in the field”, “Show only expired projects” or “Show only projects that will expire within the next (7/14/21) days”.</p>
+</li>
+<li>
+<p>The period considered for the column “Currently responding”: The interval is configurable.</p>
+</li>
+<li>
+<p>Search: A keyword search will always cover the project title.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If several criteria are used at once, AND conjunctions will be used. For forum discussions, you can search or restrict the list only by the available statuses “in the field” and “inactive”. Other statuses are not used for this project type.</p>
+<h2 id="archive" class="wysiwyg-text-align-justify"><strong>Archive</strong></h2>
+<p class="wysiwyg-text-align-justify">Survey projects can be archived. To lighten the load on the database the result data of projects is compressed into a zip file and then stored in a protected area of the hard disk. This process is executed once a day during a low-traffic period. After successful activation, you will be notified by e-mail. Using the reactivation function you have the option of transferring the project with or without result data back to the project list so that it can be edited and placed again in the field.</p>
+<p class="wysiwyg-text-align-justify">If you delete the result data of a project from the hard drive completely but would like to keep a backup copy for security reasons, you can download the zip file with the result data and store it locally. As long as the actual project still exists in the archive of the <em>EFS</em> installation, you will be able to upload the zip file again and reactivate the project with its result data. Please note, however, that the function of the zip file is merely to store the result data locally. These data can not be used to open and view the data outside of the <em>EFS</em> installation or for restoring a completely deleted project.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017226438674" alt="Archive.jpg"></p>
+<p class="wysiwyg-text-align-justify">The archiving functionality is protected by the ACL right “archive_project”. You need read rights to archive projects and use the archive. You can archive quantitative survey projects independent of their status, using the “Actions” drop-down list in the project list. It is not possible to archive forum discussions.</p>
+<h3 id="archiving-projects" class="wysiwyg-text-align-justify"><strong>Archiving Projects</strong></h3>
+<p class="wysiwyg-text-align-justify">If you want to archive several projects at once, please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Search for the appropriate projects in the project list and use the “Actions” checkboxes to mark them.</p>
+</li>
+<li>
+<p>Select the action “Archive projects”.</p>
+</li>
+<li>
+<p>Click on the <strong>Execute</strong> button.</p>
+</li>
+<li>
+<p>After a confirmation window, all data for the selected projects will be backed up from the database, compressed into downloadable zip files, and then deleted from the database. The archived projects with their zip files will be listed in the <strong>Projects</strong> →<strong> Archive</strong> menu.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Alternatively, if you want to archive a single project, you can proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Find the project to be archived in the project list and click on the title, to be taken to the <strong>Survey</strong> menu.</p>
+</li>
+<li>
+<p>Click on the links in the To-do field until the<strong> Archive</strong> link is displayed.</p>
+</li>
+<li>
+<p>Click on the<strong> Archive</strong> link.</p>
+</li>
+<li>
+<p>In the next low traffic period, all data for the project will be backed up from the database,

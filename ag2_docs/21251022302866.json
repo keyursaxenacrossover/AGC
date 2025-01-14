@@ -1,0 +1,30 @@
+{
+    "id": 21251022302866,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/21251022302866.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21251022302866-DXI-L2-Training-WIP",
+    "author_id": 369584192734,
+    "comments_disabled": false,
+    "draft": false,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20635898698130,
+    "created_at": "2024-09-09T09:48:23Z",
+    "updated_at": "2024-09-09T09:48:37Z",
+    "name": "DXI L2 Training (WIP)",
+    "title": "DXI L2 Training (WIP)",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-09-09T09:48:35Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075274,
+    "content_tag_ids": [],
+    "label_names": [],
+    "body": "<h1 id=\"h_01J7B1ET75A8CWA0CKPYQR8DMT\">Overview</h1>\n<p>In DXI/EFS, the L2 scope usually spans over the below components:</p>\n<ul>\n<li>EFS Leadership</li>\n<li>Email Services</li>\n<li>New installations (blank, clone)</li>\n<li>New Modules Activation</li>\n<li>SMS Services</li>\n<li>SSO - Identity Providers / OKTA</li>\n<li>Text Analysis (Azure Cognitive Services)</li>\n</ul>\n<p>As an L2, you will also be interacting a lot with the service gateways and the backend MariaDB, along with the Platform Cockpit, Hurricane mail server and Grafana/Rancher. This article provides a blueprint of the must-reads in order to be prepped to successfully tackle DXI L2 tickets.</p>\n<h1 id=\"h_01J7B1EW2DJ51B6YREVFTN2PN7\">Information</h1>\n<h2 id=\"h_01J7B29A2EK3XZV7Z7PDTM89VV\">EFS Leadership</h2>\n<ul>\n<li>This is a special personalized survey type (Self-service 360 Leadership survey) for leaders to evaluate their performance and gather feedback from others. Includes an HR view for reviewing statistics​​.</li>\n<li>This is recently being implemented/replaced using Guides in Portal configurations, and therefore in L2 Scope</li>\n</ul>\n<p><strong>Topic Article: <a href=\"https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20229513405202\" target=\"_blank\" rel=\"noopener noreferrer\">EFS Leadership</a></strong></p>\n<h2 id=\"h_01J7B29WAK191VAZPA9WVYTF2N\">New installations/module activation</h2>\n<ul>\n<li>This is a type of request that you may encounter frequently, as customers (especially Kantar and Ipsos) will often require blank/clone installs.</li>\n<li>The process consists of a multitude of steps that need to be taken, and until we somehow (at least partially automate it), it will be done against a checklist-style approach</li>\n<li>The same checklist/guide can be used as well for module activation.</li>\n</ul>\n<p><strong>Topic Article: <a href=\"https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20714568035218\" target=\"_blank\" rel=\"noopener noreferrer\">Provisioning new DXI installations</a></strong></p>\n<h2 id=\"h_01J7B2FYGKTYD2JDN10DFAAK73\">Service Gateways/Maria DB</h2>\n<ul>\n<li>Service gateways are machines to which you connect via SSH in order to view and change customer installations.</li>\n<li>They are an integral part of supporting DXI as an L2 agent</li>\n</ul>\n<p><strong>Topic Articles:</strong></p>\n<ul>\n<li><strong><a href=\"https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21139518716562-How-to-Access-and-Work-with-DXI-Service-Gateways\" target=\"_blank\" rel=\"noopener noreferrer\">How to Access and Work with DXI Service Gateways</a></strong></li>\n<li><strong><a href=\"https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21140364670866-How-to-Access-and-Work-with-MariaDB-on-DXI-Service-Gateways\" target=\"_blank\" rel=\"noopener noreferrer\">How to Access and Work with MariaDB on DXI Service Gateways</a></strong></li>\n</ul>\n<h2 id=\"h_01J7B2RFN78BD717WJM0DNQTJQ\">Email Services</h2>\n<ul>\n<li><a href=\"https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20384449907602\" target=\"_blank\" rel=\"noopener noreferrer\">Hurricane Socketlabs MTA Overview</a></li>\n<li><a href=\"https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21139650545298\" target=\"_blank\" rel=\"noopener noreferrer\">Generating a new DKIM Key for a given domain</a></li>\n<li><a style=\"background-color: #ffffff;\" href=\"https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21236040590994-Troubleshooting-Mail-Delivery-Issues-A-Comprehensive-Guide\" target=\"_blank\" rel=\"noopener noreferrer\">Troubleshooting Mail Delivery Issues: A Comprehensive Guide</a></li>\n</ul>\n<p>SSO (WIP)</p>\n<p>SMS Services (WIP)</p>\n<p> </p>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

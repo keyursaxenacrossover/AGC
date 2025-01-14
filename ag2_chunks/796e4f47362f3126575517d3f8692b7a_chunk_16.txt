@@ -1,0 +1,49 @@
+ (D) I would recommend People Company to friends (R) Average</em></p>
+<p>In this case, the sorting is also carried out in descending order. Then save your entries. On the sub-navigation field <strong>Pages</strong>, activate the <strong>Loop mode </strong>and select the created unit collection as a collection. In a column, click on <strong>Create mapping </strong>and map in the same way as the <strong>Sort order </strong>of the <strong>Unit collection</strong>.</p>
+<p>You pick:</p>
+<p><em>Collection member</em> → <em>Dimensio</em>n → [<em>selected Dimension</em>] → <em>Average</em></p>
+<p>A sample mapping is:<em>(D) I would recommend People Company to friends (R) Average</em></p>
+<p>In a new column, select a dimension other than that selected in the sort order in the Inspector so that the values for the unit collection members are sorted according to the <strong>Sort order</strong>, but the values are output for this dimension.</p>
+<p>You pick:</p>
+<p><em>Collection member</em> → <em>Dimension</em> → [<em>another selected Dimension</em>] → <em>Average</em></p>
+<p> </p>
+<div class="table-wrap">
+<table class="wrapped relative-table tablesorter tablesorter-default" style="width: 657px; margin-right: auto; margin-left: auto; height: 194px;" border="1">
+<colgroup> <col style="width: 0.0px;"> <col style="width: 0.0px;"> <col style="width: 0.0px;"> </colgroup>
+<tbody>
+<tr class="tablesorter-headerRow">
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted" style="text-align: left; width: 133.941px;" scope="col">
+<div class="tablesorter-header-inner">Unit collection</div>
+</th>
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted" style="text-align: left; width: 255.885px;" scope="col">
+<div class="tablesorter-header-inner">I would recommend p<em>eople Company </em>to friends</div>
+</th>
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted" style="text-align: left; width: 256.788px;" scope="col">
+<div class="tablesorter-header-inner">Senior leaders are sufficiently<br>visible at p<em>eople </em><em>Company</em>
+</div>
+</th>
+</tr>
+<tr>
+<td style="text-align: left; width: 125.92px;">Focus unit</td>
+<td style="text-align: left; width: 247.865px;">3,5</td>
+<td style="text-align: left; width: 248.767px;">2,5</td>
+</tr>
+<tr>
+<td style="text-align: left; width: 125.92px;">Fixed unit</td>
+<td style="text-align: left; width: 247.865px;">2,5</td>
+<td style="text-align: left; width: 248.767px;">3,7</td>
+</tr>
+<tr>
+<td style="text-align: left; width: 125.92px;">Level-up</td>
+<td style="text-align: left; width: 247.865px;">2,0</td>
+<td style="text-align: left; width: 248.767px;">3,0</td>
+</tr>
+</tbody>
+</table>
+<p class="auto-cursor-target"> </p>
+</div>
+<p>The sample mapping is:<em>(D) Senior leaders are sufficiently visible at People Company (R) Average</em></p>
+<p>The following can be said for the sample report: The <strong>Focus units </strong>are sorted in descending order according to the average value of the question “I would recommend People Company to friends“. In the second column the averages of the question “Senior leaders are sufficiently visible at People Company“ are output for each <strong>Focus unit </strong>of the <strong>Unit collection</strong>.</p>
+<em>Information: <span style="color: #333333;">Both the dimension and unit collections are iterated either via the row or the column. If you use </span><strong>Rows </strong><span style="color: #333333;">as the value for the loop mode tag, the values are filled row by row into the cells (one below the other). If you use</span><strong>Columns</strong><span style="color: #333333;">as as the value for the </span><strong>Loop mode </strong><span style="color: #333333;">tag, the values column by column are set next to each other.</span></em>
+<h3 id="continuation-with-dimension" class="sc-lhVmIH iJLaKb"><strong>Continuation with Dimension</strong></h3>
+<p><span style="color: #091e42;">In addition to the mapping elements for result types and unit properties, with which the path is immediately valid, the element </span><strong>Dimension</strong><span style="color: #091e42;"> allows you to continue the picker path. You take the direction of the question text and the dimension value to continue your path. To refer the selected unit to the question

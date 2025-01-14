@@ -1,0 +1,55 @@
+Using the so-called variable page marker allows you to determine how many people have completed the survey up to a specific questionnaire page X. Using this function is advisable, for example, if a prize draw or an order form for a newsletter which is not of interest to all respondents are offered at the end of your questionnaire. A respondent who drops out of the survey in such a situation would usually be classified as a dropout although the actual questionnaire has been completed. If you are using the variable page marker, the field report indicates the variable rate which results from the number of respondents who have reached the questionnaire page X marked with a variable page marker (variable rate = number of participants up to page X / gross 2).</p>
+<p class="wysiwyg-text-align-justify">To set the page marker, please switch to the <strong>Questionnaire editor</strong>. Click on the title of the desired page, then select the <strong>Properties menu</strong>. Tick the “Variable page marker” checkbox and confirm by clicking on <strong>Save</strong>.</p>
+<h2 id="online-statistics" class="wysiwyg-text-align-justify"><strong>Online statistics</strong></h2>
+<p class="wysiwyg-text-align-justify">As early as during the field phase, the online statistics give you an overview of the survey data gathered up to that point. In the first step, you must specify which project data the statistics are supposed to cover:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>By ticking the checkboxes for a specific question or ticking the “Tick all checkboxes” checkbox, you can specify whether you want to view all survey results or only a selection of the results for a specific question.</p>
+</li>
+<li>
+<p>If you tick the “Dump variable names and types” checkbox, the online statistics will additionally display the names of variables, question types, and labels.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">In this case, the online statistics will display the following information for the selected questions:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>the number of persons who have chosen a characteristic.</p>
+</li>
+<li>
+<p>the percentage of respondents is represented in numbers and as a bar diagram.</p>
+</li>
+<li>
+<p>the total number of persons who have given a valid answer to a question.</p>
+</li>
+<li>
+<p>Invalid (missing): This value indicates how many questions have been seen but not answered.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Online statistics have no anonymity boundaries. I.e. it is not possible to hide values if the return rate falls short of a given minimum requirement. If you<br>compile data for customers you should therefore consider, depending on applicable data protection provisions, generating a report with appropriate anonymity criteria in the reporting instead of simply printing out the online statistics.</p>
+<h3 id="restricting-the-online-statistics" class="wysiwyg-text-align-justify"><strong>Restricting the online statistics</strong></h3>
+<p class="wysiwyg-text-align-justify">The online statistics can be limited to specific disposition codes or variable characteristics. This feature works analogous to restricting the field report.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Read rights for <em>config_fieldreport</em> are required for accessing the configuration options.</p>
+</li>
+</ul>
+<h3 id="splitting-the-online-statistics" class="wysiwyg-text-align-justify"><strong>Splitting the online statistics</strong></h3>
+<p class="wysiwyg-text-align-justify">The representation of the frequency counts in online statistics can be split using a variable, i.e. you can create cross tables. This feature works analogous to splitting the field report.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Read rights for<em> stat_split</em> are required for accessing the split options.</p>
+</li>
+</ul>
+<h2 id="open-ended-answers" class="wysiwyg-text-align-justify"><strong>Open-ended answers</strong></h2>
+<p class="wysiwyg-text-align-justify">In this menu, you can view the answers to open-ended questions.</p>
+<h3 id="restricting-the-open-ended-answers" class="wysiwyg-text-align-justify"><strong>Restricting the open-ended answers</strong></h3>
+<p class="wysiwyg-text-align-justify">The open answers can be limited to specific disposition codes or variable characteristics. This feature works analogous to restricting the field report.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Read rights for <em>config_fieldreport</em> are required for accessing the configuration options.</p>
+</li>
+</ul>
+<h2 id="detail-view" class="wysiwyg-text-align-justify"><strong>Detail view</strong></h2>
+<p class="wysiwyg-text-align-justify">If you have the required access rights, you can view, edit, and delete the data records of individual survey participants in the EFS admin area.</p>
+<h3 id="access-restrictions-for-accessing-data-records" class="wysiwyg-text-align-justify"><strong>Access restrictions for accessing data records</strong></h3>
+<p class="wysiwyg-text-align-justify">For reasons of privacy, the <strong>Detail view</strong> menu is protected by special rights, i.e. its

@@ -1,0 +1,115 @@
+>
+<tr style="height: 74px;">
+<td style="width: 82.5521px; height: 74px;">
+<p>Reference name for template</p>
+</td>
+<td style="width: 496.337px; height: 74px;">
+<p>Name that can be used to trigger the module in positioning templates.</p>
+</td>
+<td style="width: 143.663px; height: 74px;">
+<p>Give_stars</p>
+</td>
+</tr>
+<tr style="height: 74px;">
+<td style="width: 82.5521px; height: 74px;">
+<p>Page module title</p>
+</td>
+<td style="width: 496.337px; height: 74px;">
+<p>Name of the module in the page’s module overview</p>
+</td>
+<td style="width: 143.663px; height: 74px;">
+<p>Give stars</p>
+</td>
+</tr>
+<tr style="height: 49px;">
+<td style="width: 82.5521px; height: 49px;">
+<p>Module template</p>
+</td>
+<td style="width: 496.337px; height: 49px;">
+<p>Module-specific template that controls how data provided by the module are displayed.</p>
+</td>
+<td style="width: 143.663px; height: 49px;">
+<p>func_panelist_rating</p>
+</td>
+</tr>
+<tr style="height: 369px;">
+<td style="width: 82.5521px; height: 369px;">
+<p>Display quick poll</p>
+</td>
+<td style="width: 496.337px; height: 369px;">
+<p>An active, existing quick poll is selected for the respective language version according to the following criteria:</p>
+<ul>
+<li>
+<p>Last created and active poll</p>
+</li>
+<li>
+<p>Last created and active poll (without polls already answered)</p>
+</li>
+<li>
+<p>Random selection</p>
+</li>
+<li>
+<p>Random selection (without duplicates)</p>
+</li>
+<li>
+<p>Random selection (without polls already answered)</p>
+</li>
+<li>
+<p>Always use the static quick poll selected below</p>
+</li>
+</ul>
+<p>Please note:</p>
+<ul>
+<li>
+<p>To test the random selection of polls, you have to log out and in again. (The poll ID is stored in and read from the session.)</p>
+</li>
+<li>
+<p>If no poll fulfills the specified criteria (e.g. because the field time has ended), the newest active poll will be displayed as the default fallback.</p>
+</li>
+</ul>
+</td>
+<td style="width: 143.663px; height: 369px;">
+<p>Last created and active poll</p>
+</td>
+</tr>
+<tr style="height: 74px;">
+<td style="width: 82.5521px; height: 74px;">
+<p>Static quick poll</p>
+</td>
+<td style="width: 496.337px; height: 74px;">
+<p>If the display option „Always use the static quick poll selected below“ has been selected, you may choose an existing active poll from this drop-down list. This poll will always be displayed.</p>
+</td>
+<td style="width: 143.663px; height: 74px;">
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="function-module-registration-form" class="wysiwyg-text-align-justify"><strong>Function Module: Registration Form</strong></h3>
+<p class="wysiwyg-text-align-justify">The “Registration form” function module allows you to generate the form where panelists can enter their data upon registration. In the standard panel, you can find this form on the Registration page, for example. The data collected during the registration process are defined via a separate GUI.</p>
+<p class="wysiwyg-text-align-justify">In the standard panel, you can use the “func_registration” template to change the appearance of the “Registration form” module.</p>
+<p class="wysiwyg-text-align-justify"><strong>Options</strong></p>
+<p class="wysiwyg-text-align-justify">The following options are available:</p>
+<table class="wysiwyg-text-align-justify" style="height: 1720px;" border="1" width="759" data-layout="default" data-table-width="760">
+<colgroup>
+<col style="width: 201.0px;">
+<col style="width: 393.0px;">
+<col style="width: 166.0px;">
+</colgroup>
+<tbody>
+<tr style="height: 50px;">
+<th style="width: 197.274px; height: 50px;" data-highlight-colour="#57d9a3">
+<p><strong>Option</strong></p>
+</th>
+<th style="width: 388.663px; height: 50px;" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+<th style="width: 162.674px; height: 50px;" data-highlight-colour="#57d9a3">
+<p><strong>Standard panel "Registration" page</strong></p>
+</th>
+</tr>
+<tr style="height: 51px;">
+<td style="width: 189.253px; height: 51px;">
+<p>Reference name for template</p>
+</td>
+<td style

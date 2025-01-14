@@ -1,0 +1,67 @@
+justify"><strong>Deleting several units en bloc</strong></p>
+<p class="wysiwyg-text-align-justify">You can easily delete several units en bloc. Any existing subunits or requisition notes for paper-pencil questionnaires will be deleted as well. Participants are not deleted, but the allocation to the deleted unit is lost.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Locate the units to be deleted in the organizational structure and tick the checkboxes in the “Actions” column.</p>
+</li>
+<li>
+<p>Select the “Delete unit” action from the drop-down list.</p>
+</li>
+<li>
+<p>Confirm by clicking on <strong>Execute</strong>.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If you want users to be able to delete units, you need to assign the right <em>structure_add_del_nodes</em> to the appropriate roles.</p>
+<h3 id="locking-units-after-finishing" class="wysiwyg-text-align-justify"><strong>Locking units after finishing</strong></h3>
+<p class="wysiwyg-text-align-justify">Units, subareas, or the entire structure can be locked, i.e., the units in the organizational structure are then clickable and it is no longer possible to view the data or to edit the locked area. This locking is usually done at the end of the preparation stage: It allows for the checking of the structure and the stored data without anybody changing any values in the background.</p>
+<h3 id="locking-units" class="wysiwyg-text-align-justify"><strong>Locking units</strong></h3>
+<p class="wysiwyg-text-align-justify">There are two options, depending on whether you want to lock one or several units with or without subunits:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Locate the desired unit in the organizational structure and click on the title. This opens the detailed view of the unit. The <strong>Status information</strong> tab is displayed automatically. Select the appropriate button in the section “Locking and releasing units”. Available options are:</p>
+<ul>
+<li>
+<p>Lock current unit: Locks the current unit, but not the subunits.</p>
+</li>
+<li>
+<p>Lock subunits: Does not lock the current unit, but its subunits.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Locate the units to be locked in the organizational structure and tick the checkboxes in the “Actions” column. Select either the action “Lock units” or “Lock units and subunits” from the drop-down list. Confirm by clicking on <strong>Execute</strong>.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If you want users to be able to lock units, you need to assign the right <em>structure_lock</em> to the appropriate roles</p>
+<h3 id="releasing-locked-units" class="wysiwyg-text-align-justify"><strong>Releasing locked units</strong></h3>
+<p class="wysiwyg-text-align-justify">To re-release locked units, you need to proceed exactly as described above, except for choosing different actions:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Locate the desired unit in the organizational structure and click on the title. This opens the detailed view of the unit. The <strong>Status information</strong> tab  is displayed automatically, however, in the case of locked units and/or subunits there are different buttons in the section “Locking and releasing units”:</p>
+<ul>
+<li>
+<p>Release current unit: Releases the current unit, but not the subunits.</p>
+</li>
+<li>
+<p>Release subunits: Does not release the current unit, but its subunits.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Locate the units to be released in the organizational structure and tick the checkboxes in the “Actions” column. Select either the action “Release units” or<br>“Release units and subunits” from the drop-down list. Confirm by clicking on<strong> Execute</strong>.</p>
+</li>
+</ul>
+<h3 id="return" class="wysiwyg-text-align-justify"><strong>Return</strong></h3>
+<p class="wysiwyg-text-align-justify">Your users can open the Return tab only if it has been activated for their role in the current phase. In order to allow your users to open not only their respective units but also the corresponding subunits, and to access the return data, you need to activate the right <em>structure_view_down</em> for the appropriate roles. The return view is located on the <strong>Return</strong> tab of the <em>Org Processor</em>.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The organizational structure gives an overview of the return rates.</p>
+</li>
+<li>
+<p>In the detail view, you will find detailed data on the return of online and paperpencil questionnaires for the respective unit and their subunits. Additionally, you can access the user management of the unit from the detail view.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Above the organizational structure you will find the same features for modifying the display that you are already familiar with from the<strong> Organizational structure</strong> tab:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Selection

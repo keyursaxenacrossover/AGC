@@ -1,0 +1,86 @@
+"><p><strong>Goal</strong></p></th>
+<th data-highlight-colour="#e3fcef"><p><strong>Reasoning</strong></p></th>
+</tr>
+<tr>
+<th><p><strong>Q1</strong></p></th>
+<td>
+<p>The system should be highly available</p>
+<p>(Reliability - High Availability)</p>
+</td>
+<td><p>The authentication should be used for every system in the porfolio of Tivian. It is a critical component every user and every system should use in future. A lack of availability means an outage for several to all parts of the system and should be avoided by any means.</p></td>
+</tr>
+<tr>
+<th><p><strong>Q2</strong></p></th>
+<td>
+<p>The system should serve every connected system and user</p>
+<p>(Performance Efficiency - High Capacity / Scalability)</p>
+</td>
+<td><p>The authentication should be used by every system and user. There will be a very large number or parallel users and possibly systems requesting authentication mechanisms. So Tivian Access has to be able to serve all of those.</p></td>
+</tr>
+<tr>
+<th><p><strong>Q3</strong></p></th>
+<td>
+<p>The system should keep data secure and support authenticated access.</p>
+<p>(Security - all)</p>
+</td>
+<td><p>The system contains user data and user credentials and takes care provides authentication mechanisms for other systems. Is is crucial for the system to only allow authorized access, prevent unauthorized modification of data and ensure accountability.</p></td>
+</tr>
+<tr>
+<th><p><strong>Q4</strong></p></th>
+<td>
+<p>It should be easy to connect the system to other system for authentication mechanisms - <em>minor goal</em></p>
+<p>(Compatibility - Interoperability)</p>
+</td>
+<td>
+<p>The system should follow standards to connect other systems. Therefore, the ease to connect this system to others should be kept high enough to make the system useful.</p>
+<p>This is still important but the first three goals are key to the success of the system.</p>
+</td>
+</tr>
+<tr>
+<th><p><strong>Q5</strong></p></th>
+<td>
+<p>It should be easy for a user to use the authentication - <em>minor goal</em></p>
+<p>(Usability - Operability)</p>
+</td>
+<td>
+<p>A too complex authentication system will create confusion and misstrust for the users. It is important for arbitrary users to understand the system.</p>
+<p>This is still important but the first three goals are key to the success of the system.</p>
+</td>
+</tr>
+</tbody>
+</table><h2 id="header-4">Stakeholders</h2><table data-layout="wide" ac:local-id="25302c64-9abe-4b88-9d22-a5a067a3152f">
+<colgroup>
+<col style="width: 199.0px;">
+<col style="width: 254.0px;">
+<col style="width: 507.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p><strong>Role</strong></p></th>
+<th><p><strong>Contact</strong></p></th>
+<th><p><strong>Concerns</strong></p></th>
+</tr>
+<tr>
+<td><p>PM/PO</p></td>
+<td><p><ac:link><ri:user ri:account-id="5a5dc81217dfb4426b61f4c6"></ri:user></ac:link> <ac:link><ri:user ri:account-id="610813f58c15ca006f6152ca"></ri:user></ac:link> </p></td>
+<td><p>Lead the project and product. Get a technical solution that fulfills the requirements.</p></td>
+</tr>
+<tr>
+<td><p>DevOPs - Setting up the system</p></td>
+<td><p><ac:link><ri:user ri:account-id="5aa641167f3fd325faf0fe3b"></ri:user></ac:link> </p></td>
+<td><p><ac:parameter ac:name="title">TO BE CLARIFIED</ac:parameter><ac:parameter ac:name="colour">Red</ac:parameter> </p></td>
+</tr>
+<tr>
+<td><p>IT OPs - Operating the system</p></td>
+<td><p><ac:link><ri:user ri:account-id="60b614dff8a90b006f1b270d"></ri:user></ac:link> <ac:link><ri:user ri:account-id="60ddb4cf7fcd820073e98b69"></ri:user></ac:link> </p></td>
+<td><p><ac:parameter ac:name="title">TO BE CLARIFIED</ac:parameter><ac:parameter ac:name="colour">Red</ac:parameter> </p></td>
+</tr>
+<tr>
+<td><p>EFS &amp; DV Developers</p></td>
+<td><p>Pauls Team, Bernd/Thomas</p></td>
+<td><p><ac:parameter ac:name="title">TO BE CLARIFIED</ac:parameter><ac:parameter ac:name="colour">Red</ac:parameter> </p></td>
+</tr>
+<tr>
+<td><p>Dashbo &amp; TA Developers</p></td>
+<td><p>Alex, Estelle</p></td>
+<td><p><ac:

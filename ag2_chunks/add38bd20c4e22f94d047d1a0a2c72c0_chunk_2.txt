@@ -1,0 +1,93 @@
+ Via the icons in the “Actions” column you can edit individual allocations:</p>
+<ul>
+<li>
+<p><strong>Edit</strong>: Opens the dialog for editing individual allocations</p>
+</li>
+<li>
+<p><strong>Delete</strong>: With this option you can delete the respective allocation</p>
+</li>
+</ul>
+<p>The following actions can be applied to selected or all units. To do so, you select the desired allocations by ticking the respective checkboxes in the “Actions” column or alternatively by ticking either of the checkboxes “Mark all entries on this page” and “Mark all entries found”. Then you specify the desired action in the drop-down list and confirm by clicking <strong>Execute</strong>.</p>
+<ul>
+<li>
+<p>Allocate variables: Opens the dialog for editing individual allocations</p>
+</li>
+<li>
+<p>Create and allocate master data: Opens a dialog where you can both create and allocate new master data</p>
+</li>
+<li>
+<p>Activate / deactivate “Master data transfer only if seen”: Via this option you can specify whether the values “NULL” and “-77” shall be excluded from transfer.</p>
+</li>
+<li>
+<p>Delete allocations: With this action you can delete several allocations en bloc.</p>
+</li>
+</ul>
+<h2 id="allocating-project-variables-to-existing-master-data"><strong>Allocating project variables to existing master data</strong></h2>
+<p>Please proceed as follows:</p>
+<ul>
+<li>
+<p>From the allocations list, open the dialog for defining new allocations. There are two ways to do this:</p>
+<ul>
+<li>
+<p>If you want to define an allocation for just one project variable, click on the <strong>Edit</strong> icon.</p>
+</li>
+<li>
+<p>If you want to define allocations for several project variables, tick their respective checkboxes in the “Actions” column. Then select the action “Allocate variables”.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>This will prompt a dialog where you can select the appropriate master data item for each project variable.</p>
+</li>
+<li>
+<p>Confirm by clicking on <strong>Save</strong>.</p>
+</li>
+<li>
+<p>Check the status of the new allocations in the allocations list.</p>
+</li>
+</ul>
+<h2 id="creating-and-allocating-appropriate-master-data-automatically"><strong>Creating and allocating appropriate master data automatically</strong></h2>
+<p>You can automatically create the appropriate master data for all project variables of a survey or for individual variables. This is an effective way to create the master data survey for a new panel, for example. It takes only a few clicks to create the appropriate master data.</p>
+<p><strong>Rules</strong></p>
+<p>The following rules apply to automatic creation:</p>
+<ul>
+<li>
+<p>For the new master data variables the variable structure of the project variables is adopted.</p>
+</li>
+<li>
+<p>The labelling of the characteristics of the master data variable is likewise adopted from the allocated project variable.</p>
+</li>
+<li>
+<p>Data type and size are selected according to the expectations of most of the users, ensuring proper data storage even without reconfiguring or creating plausibility checks.</p>
+<ul>
+<li>
+<p>For the automatic creation of master data the usually required data types “integer” and “text” are used.</p>
+</li>
+<li>
+<p>If master data are created automatically for the text field question types 141 and 142, the system will use variables of the type “text” which can contain up to 21,000 characters. This ensures that the texts can be saved completely.</p>
+</li>
+<li>
+<p>If you wish to map project variables to master data of the types “date”, “date/ time” or “yes/no”, you will have to create the appropriate master data<br>manually: It may be necessary to check the entries and recode them into an appropriate format.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Creating and allocating master data</strong></p>
+<ul>
+<li>
+<p>In the allocations list, mark those project variables for which you want to create master data by ticking the respective checkboxes in the “Actions” column.</p>
+</li>
+<li>
+<p>Select the option “Create and allocate master data”.</p>
+</li>
+<li>
+<p>This will prompt a dialog where you can specify the variable name, the title of the master data item, and the master data category. Please follow the rules for the naming of master data; in particular, the variable name must begin with m_ or md_.</p>
+</li>
+<li>
+<p>Confirm by clicking on <strong>Save</strong>.</p>
+</li>
+</ul>
+<h2 id="controlling-the-transfer-procedure-for-unseen-questions"><strong>Controlling the transfer procedure for unseen questions</strong></h2>
+<p>Depending on which information is contained in a project variable and in which situation this variable is filled, you may not always want to transfer the contents into the master data table but only if the panelists have actually answered a question.</p>
+<p>If, for example, the panelists’ occupations have already been collected in the master data survey and are collected again in a subsequent panel survey, you only want to transfer the contents if the panelists did actually see the question. Otherwise, you would overwrite an existing value with a missing value and lose information.</p>
+<p>In <em>EFS</em> you are free to decide for each individual allocation whether the transfer shall take place even for unseen questions. This is done via the feature “Master data transfer only if seen”, the status of which is indicated

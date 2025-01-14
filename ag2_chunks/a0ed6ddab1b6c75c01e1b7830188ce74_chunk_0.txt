@@ -1,0 +1,76 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1280180234">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1280180234</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<p>Here is a list of features that are to hard to implement if we are using the current status of the Sign-In-Widget of Okta.</p><p>As soon as the number of features reaches a critical mass we should think about rewriting the Sign-In-Widget.</p><p></p><table data-layout="default">
+<colgroup>
+<col style="width: 205.0px;">
+<col style="width: 290.0px;">
+<col style="width: 125.0px;">
+<col style="width: 140.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p><strong>Topic</strong></p></th>
+<th><p><strong>Description</strong></p></th>
+<th><p><strong>Category</strong></p></th>
+<th><p><strong>Jira Ticket</strong></p></th>
+</tr>
+<tr>
+<td><p>IdP discovery email validation</p></td>
+<td><p>Currently the email-addresses in the IdP discovery are not validated. Invalid strings are possible.</p></td>
+<td><p>Functionality</p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>Detailed password rules</p></td>
+<td><p>There is a proposal by Sara showing a very detailed list of password rules. This is not implementable without changing the Sign-In-Widget code.</p></td>
+<td><p>UX/Design</p></td>
+<td><p><ac:parameter ac:name="server">Questback</ac:parameter><ac:parameter ac:name="serverId">9f8e3c23-9700-315b-9fb0-65f274062d6e</ac:parameter><ac:parameter ac:name="key">IAM-396</ac:parameter> </p></td>
+</tr>
+<tr>
+<td><p>Wording</p></td>
+<td><p>Currently we cannot easily adapt the wording without changing the sign-in-widget code.</p></td>
+<td><p>Translations</p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table><p></p>></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>Detailed password rules</p></td>
+<td><p>There is a proposal by Sara showing a very detailed list of password rules. This is not implementable without changing the Sign-In-Widget code.</p></td>
+<td><p>UX/Design</p></td>
+<td><p><ac:parameter ac:name="server">Questback</ac:parameter><ac:parameter ac:name="serverId">9f8e3c23-9700-315b-9fb0-65f274062d6e</ac:parameter><ac:parameter ac:name="key">IAM-396</ac:parameter> </p></td>
+</tr>
+<tr>
+<td><p>Wording</p></td>
+<td><p>Currently we cannot easily adapt the wording without changing the sign-in-widget code.</p></td>
+<td><p>Translations</p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table><p></p>

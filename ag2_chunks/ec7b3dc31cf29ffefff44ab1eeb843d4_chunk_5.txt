@@ -1,0 +1,24 @@
+ must be activated (system -&gt; options -&gt; platform cockpit) -&gt; add reportmanager to the modules parameter</p></li>
+<li><p>the following <strong>services</strong> in the service layer must be activated (especially you need to blick them from no to yes) and have the right permissions for the user that is going to be used: reportmanager.status.deleteOrder, reportmanager.status.deleteReports, reportmanager.status.updateOrderStatus, see screenshot:</p></li>
+<li><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20714637290770" alt="DV report services.png"></li>
+<li><p>a <strong>service layer token</strong> must be created for the user that is to be used</p></li>
+<li><p>see this screenshot of the Data Voyager → Data sources:</p></li>
+<li><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20714630496530" alt="DV Data Sources.png"></li>
+<li><p>Log in to DV using the root account</p></li>
+<li><p>Click on "Roles &amp; Rights"</p></li>
+<li><p>Edit the "Admin" team</p></li>
+<li><p>Check all rights related to "Report Management"</p></li>
+<li><p>Go to configuration and change variable "pptxservice.properties.service_domain" to "<a href="https://rp.questback.com/pptx_20/EfsService.svc?singleWsdl">https://rp.questback.com/pptx_20/EfsService.svc?singleWsdl</a>"</p></li>
+</ul><h1 id="header-16">OLD - Updates and Rollout</h1><ul>
+<li><p><strong>Link zu den  </strong><ac:link ac:card-appearance="inline"><ri:page ri:content-title="DV - system dependencies" ri:space-key="EN" ri:version-at-save="28"></ri:page><ac:link-body>DV - system dependencies</ac:link-body></ac:link><strong><span style="color: rgb(255,86,48);"> nicht übersehen! </span></strong><ac:emoticon ac:emoji-fallback="🙂" ac:emoji-id="1f642" ac:emoji-shortname=":slight_smile:" ac:name="smile"></ac:emoticon> </p></li>
+<li><p><strong><span style="color: rgb(54,179,126);"><u>WICHTIG:</u></span> vor allen RSYNC-Befehlen unbedingt die <span style="color: rgb(54,179,126);">Rechte der Quelldateien auf 775 ändern</span> mit </strong><code>chmod 775 EFS_DV-4.X</code> <strong>und die Admins bitten die Rechte unter /dv grade zu ziehen</strong></p></li>
+<li><p><strong>DV <span style="color: rgb(255,86,48);">4.3 und neuer</span> benötigt<span style="color: rgb(255,86,48);"> PHP 5.6</span> und kann <span style="color: rgb(255,86,48);">ohne ME-Guide ab EFS 19.1</span>, ansonsten ab <span style="color: rgb(255,86,48);">EFS 19.4 </span>verwendet werden!</strong></p></li>
+<li><p>Check Build:</p></li>
+</ul><pre><code class="language-text">cd dv
+cat BUILDNAME</code></pre><ul>
+<li><p>gewünschte Builds kopieren: <strong>helpersEfsGetBuild EFS_DV-4.1_0035.zip</strong></p></li>
+<li><p>z.B. in <strong>dumps/deinNachname/</strong> ablegen und mit <strong>unzip -q EFS_DV-4.1_0035.zip</strong> entpacken</p></li>
+<li><p>rsync Befehl erst mit n = nothing ausführen und prüfen welche Dateien durch <strong>--delete</strong> gelöscht werden und ggf. mit DEV klären, mit q = quiet werden nur Errors ausgegeben.</p></li>
+<li><p>ausführen in Ordner dv</p></li>
+</ul><pre><code class="language-text">rsync -avnqz --delete --exclude=/application/configs/application.ini  --exclude=/public/themes/ --exclude=/custom/ --exclude=/public/custom/ --exclude=/public/__generated/ /dumps/EFS_DV-4.2_0057/* .</code></pre><ul><li><p>Anschließend das n entfernen, damit der richtige rsync Befehl durchläuft</p></li></ul><pre><code class="language-text">rsync -avz --delete --exclude=/application/configs/application.ini  --exclude=/public/themes/ --exclude=/custom/ --exclude=/public/custom/ --exclude=/public/__generated/ /dumps/EFS_DV-4.2_0057/* .</code></pre><ul>
+<li><p>Healself im DV Verzeichnis ausführen <strong>/opt/pdp/opst/apps/php-5.3.6/bin/php support/healself.php

@@ -1,0 +1,88 @@
+ subject groups</strong>, for the export, use the <strong>Excel export</strong> or <strong>CSV expor</strong>t buttons.</p>
+<p>Via the button<strong> View</strong>, you can select and deselect the languages in which the subject groups shall be displayed. You can also select the number of rows per page.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017142424466" alt="image2019-5-15_13-12-51.png"></p>
+<p><strong>Editing subject groups</strong></p>
+<p>To edit the existing subject groups, use the icons in the “Actions” column:</p>
+<ul>
+<li>
+<p><strong>Edit</strong>: Click on the Edit icon to open the dialog shown above and change the label.</p>
+</li>
+<li>
+<p><strong>Delete</strong>: Additional subject groups can be deleted. The default subject group cannot be deleted.</p>
+</li>
+</ul>
+<p><strong>Creating new subject groups</strong></p>
+<p>To create an additional subject group, proceed as follows:</p>
+<ul>
+<li>
+<p>Click on the <strong>Create subject group</strong> button.</p>
+</li>
+<li>
+<p>Enter the English and/or German name of the subject group.</p>
+</li>
+<li>
+<p>Decide if the subject group should be selectable. This is usually the case for newlycreated subject groups. Deactivating selectability is an option if, for example, a subject group is deprecated and you do not want users to allocate further actions to it.</p>
+</li>
+<li>
+<p>Click on the <strong>Save</strong> button.</p>
+</li>
+</ul>
+<h3 id="h_01J3N2HWAAAPSTGS6JN1DPBC4R"><strong>Setting up automated dispatch of status e-mails</strong></h3>
+<p>Optionally, you can set up status e-mails that provide regular information on the progress of the follow-up process. The <em>Action Planner</em> users can subscribe to these status e-mails for their area of responsibility.</p>
+<p><strong>Example</strong></p>
+<p>A status e-mail contains an overview of measures for the current organizational unit and its subunits (section “Information”) and additional status overviews by subject groups.</p>
+<p>Organizational unit: Sample Company C Inc. (US-C100-001)</p>
+<p>Subject group: Default subject group</p>
+<ul>
+<li>
+<p>-------------------------------------</p>
+</li>
+</ul>
+<p>Number of actions: 9</p>
+<p>Not started: 5</p>
+<p>Started: 0</p>
+<p>Reopened: 0</p>
+<p>Completed: 4</p>
+<p>Subject group: Teamarbeit</p>
+<ul>
+<li>
+<p>-------------------------------------</p>
+</li>
+</ul>
+<p>Number of actions: 6</p>
+<p>Not started: 2</p>
+<p>Started: 4</p>
+<p>Reopened: 0</p>
+<p>Completed: 0</p>
+<p>Information:</p>
+<p>Total number of actions: 15</p>
+<p>Total number of reopened actions: 0</p>
+<p>Total number of organizational units: 1</p>
+<p>Mean number of actions: 15</p>
+<p>In addition to the status e-mails, you can send automated reminders to the responsible persons before the completion date of an action is reached.</p>
+<p><strong>Creating a mail template for the status e-mail</strong></p>
+<p>As for other automated dispatch processes, the content of the status e-mail is defined via a mail template. In the <strong>Options</strong> → <strong>Mail templates</strong> menu, create a new mail template. Please mind:</p>
+<ul>
+<li>
+<p>Select the “Org Processor mail” type.</p>
+</li>
+<li>
+<p>Dedicated wildcards #overview_action_german# and #overview_action_english# are available for the status e-mails. They allow insertion of the overview table shown above either in English or in German. At least one of these wildcards should be entered in the template.</p>
+</li>
+</ul>
+<p>The <em>#overview_action_german#</em> and <em>#overview_action_english#</em> wildcards can only be used in e-mails of type "Text". The use of these placeholders in e-mails of type "HTML" is not supported.</p>
+<p><strong>Assigning the mail template to the current project</strong></p>
+<p>In the next step, the new mail template is allocated to the current project, Otherwise, it would not be available for status e-mails in this project.</p>
+<ul>
+<li>
+<p>Switch back to your project and open the project’s <strong>Mail templates</strong> menu.</p>
+</li>
+<li>
+<p>Locate the mail template you have just created.</p>
+</li>
+<li>
+<p>In the column “Project template”, its current assignment status is indicated. Usually, a new template has the status “No”. If you click on the status link, it will change to “Yes”.</p>
+</li>
+</ul>
+<p><strong>Configuring the status e-mail</strong></p>
+<p>To configure and activate the status e-mail, open the <strong>Org Processor</strong> → <strong>Configuration</strong> → <strong>Action Planner configuratio</strong>n menu. On the<strong> Settings</strong> tab,

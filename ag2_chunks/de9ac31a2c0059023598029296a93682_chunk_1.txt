@@ -1,0 +1,28 @@
+ earlier layout versions, so should you have local changes in your project that are not compatible with the latest layout version you can simply migrate the project back to a previous version with which the project was compatible.</p>
+<p>It is possible to migrate a layout version to an earlier version or a later version within the same major version (e.g. moving between Responsive Layout 3 and 3.1) but not between major versions (e.g. you cannot migrate a survey’s layout from Responsive Layout 2 to Responsive Layout 3).</p>
+<p>Please note, customised layout are not automatically updated with a new version release, and custom question types are not automatically available in later versions (these must be manually updated to support a later layout version).</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21036815912850" alt="image-20210824-154735.png"></p>
+<h3 id="header-6">Responsive Layout 3.1</h3>
+<p>Our new version of Responsive Layout 3 (version 3.1) includes a new question type, improvements to an existing question type and also a new feature that will allow you to create more streamlined and user-friendly questionnaires.</p>
+<p> </p>
+<h4 id="header-8">Carousel question type</h4>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21036816658450" alt="image-20210824-122607.png"></p>
+<p>The carousel question type is one that has been requested by many customers so we are delighted to include this new question type with Responsive Layout 3.1. This question type provides a more intuitive and simple way for a respondent to provide answers to a long list of questions. Rather than presenting a long list of questions, each question is shown individually to the respondent and the survey automatically switches to the next question upon completion of the current question. This new question type supports both left to right and right to left languages.</p>
+<p> </p>
+<h4 id="header-9">Dynamic questions on the same page</h4>
+<p>We are very excited to introduce an improvement to our current <em>hiding conditions</em> feature. Previously, if you wanted to show additional questions to a survey respondent based on an answer to a question they had already completed, these additional questions would need to appear on a new page in the survey. With our new enhancement it is now possible to create hiding conditions for questions, based on questions appearing on the same page of the questionnaire. This provides a much nicer respondent experience, allowing you to present all related questions on one page, rather than interrupting the respondents concentration by requiring a page submission and a new page load before follow up questions could be asked.</p>
+<p>Please note that only the variables of the displayed questions (and not the variables of the hidden ones) will be stored.</p>
+<p> </p>
+<h4 id="header-10">Enhancements to Upload question type</h4>
+<p>Our new <em>Force creation of new video of photo</em> setting improves the respondent experience by automatically starting the camera application when the respondent has selected to upload an image or video and has clicked the upload button. This feature will work for any respondent using a suitable mobile device (iOS and recent Android version). Users responding on a desktop or unsupported mobile devices will still be able to upload a file using the file selection dialog.</p>
+<p>Furthermore, to increase the security of our projects and prevent the malicious uploading of dangerous files, this question type now checks the contents of the file to ensure that the file is of the correct file type.</p>
+<p> </p>
+<h4 id="header-11">New Page fade-in</h4>
+<p>In our new layout version we include our new page fade-in feature. New pages in the questionnaire will fade in to prevent “visual distractions” whilst the new page is being loaded. This feature is turned on by default.</p>
+<p>For more information about all the changes in Responsive Layout 3.1, see the <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20231051934610" target="_blank" rel="noopener noreferrer">Layout Change-Log</a>.</p>
+<h3 id="header-13">Back button data correction</h3>
+<p>Previously, when respondents used the back button in the survey or their internet browser, all responses already provided would be saved in the survey. If the respondent, after going backwards in the survey, changed an answer based on which the survey branched, this could result in data being saved in that respondents record for questions that should not be presented to them based on the new branching question response. Worse still, it could result in the respondent being taken down an incorrect path in the survey based on these stored responses. Now, if a respondent goes backwards in the survey and changes a previous branching question answer, and our new <em>Back button data correction </em>project property is set, the system will reset any questions that are part the previous branching path to their default value. This ensures that invalid data is not stored for the respondent, and the correct path is taken throughout the survey.</p>
+<p>Please note, all other survey responses not impacted by a change in branching logic are not reset and are saved in the respondents record. This property is disabled by default.</p>
+<p> </p>
+<h3 id="header-14">Update to the SMS module and SMS delivery notifications</h3>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21036824422162" alt="Screenshot 2021-08-24

@@ -1,0 +1,30 @@
+ mail from Okta because they can not login to any application after setting up their account.</p>
+<p data-renderer-start-pos="3217">Communication with the client will be they key, since they user experience with the sync is highly dependant on the client setup within Tivian</p>
+<h4 id="How-long-does-a-user-migration-take-?" data-renderer-start-pos="3361"><strong data-renderer-mark="true">How long does a user migration take ?</strong></h4>
+<p data-renderer-start-pos="3400">This depends highly on the amount of users in the installation(s) and if they are using their company’s Identity Provider (since those users don’t need to be synced)<strong data-renderer-mark="true">.</strong></p>
+<p data-renderer-start-pos="3568">Syncing a few (&lt;100) EFS Admin users should not take more than a few seconds.</p>
+<p data-renderer-start-pos="3647">If a million panelist users needs to be synced, this could possibly take hours.</p>
+<p data-renderer-start-pos="3728">The limiting factor to this will be the Okta API rate limit which is set to 600 user creations a minute (shared across all Okta applications)</p>
+<h4 id="When-should-I-start-the-user-migration-?" data-renderer-start-pos="3871"><strong data-renderer-mark="true">When should I start the user migration ?</strong></h4>
+<p data-renderer-start-pos="3913">To answer this you have to think about the following:</p>
+<ul class="ak-ul" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="3970">During migration users receive an activation mail from Okta. Do the users expect such an email ? When can they start using their Okta account (Tivian Access is completely activated on the EFS installation)</p>
+</li>
+<li>
+<p data-renderer-start-pos="4179">Activating Tivian Access without the user sync (and assuming no Identity Provider is used for federation) will have the effect that users can not sign in to EFS anymore.</p>
+</li>
+</ul>
+<p data-renderer-start-pos="4352"><strong data-renderer-mark="true">To conclude</strong>: Migration has to happen before the activation of Tivian Access (for all users which are not using their company’s Identity Provider). If it happens too early, it will cause a potential bad user experience.</p>
+<p> </p>
+<p> </p>
+<h2 id="header-8">Security</h2>
+<h4 id="What-security-standard-is-used-for-authenticating-a-user-and-for-communication-with-our-Identity-Provider?" data-renderer-start-pos="6"><strong data-renderer-mark="true">What security standard is used for authenticating a user and for communication with our Identity Provider?</strong></h4>
+<p data-renderer-start-pos="114">For communication (and hence for authentication of a user) with our IdP the OpenID Connect standard is used. A detailed explanation can be found here:</p>
+<p data-renderer-start-pos="266"><a class="cc-1rn59kg" title="https://openid.net/connect/" href="https://openid.net/connect/" data-testid="link-with-safety" data-renderer-mark="true">https://openid.net/connect/</a></p>
+<p data-renderer-start-pos="295">The current solution uses the implicit flow (portals) and the code flow (EFS Admin) - see <span data-inline-card="true" data-card-url="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/996835396"><span class="loader-wrapper"><span aria-expanded="false" aria-haspopup="true" data-testid="hover-card-trigger-wrapper"><a class="css-118vsk3 e26bri0" tabindex="0" role="button" href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/996835396" data-testid="inline-card-resolved-view"><span class="css-1cwva94 e1a3lu074" data-testid="inline-card-icon-and-title"><span class="smart-link-title-wrapper css-0 e1a3lu0710">Flows</span></span></a></span></span></span></p>
+<p data-renderer-start-pos="389"> </p>
+<h4 id="Where-is-Identity-Data-stored?" data-renderer-start-pos="391"><strong data-renderer-mark="true">Where is Identity Data stored?</strong></h4>
+<p data-renderer-start-pos="423">Identity Data is stored at Okta. Okta is using AWS cloud services to host its identity solution. </p>
+<p data-renderer-start-pos="575">Okta offers an EU cell for European companies. Data will be stored in Europe (information from Okta is that data is stored in Germany and Ireland) - also see <a class="cc-1rn59kg" title="https://www.okta.com/press-room/press-releases/okta-cements-its-commitment-to-emea-market-announces-eu-data-centre/" href="https://www.okta.com/press-room/press-releases/okta-cements-its-commitment-to-emea-market-announces-eu-data-centre/" data-testid="link-with-safety" data-renderer-mark="true">https://www.okta.com/press-room/press-releases/okta-cements-its-commitment-to-emea-market-announces-eu-data-centre/</a></p>
+<p data

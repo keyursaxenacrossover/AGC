@@ -1,0 +1,64 @@
+ The iFrame will be removed from the DOM by this opreation.</p>
+<pre><code class="language-js">Questback.portalsApi.trigger.logout();</code></pre>
+<h3 id="trigger-route" class="wysiwyg-text-align-justify">trigger.route</h3>
+<p class="wysiwyg-text-align-justify">Redirect to the given page slug. The iFrame will be removed from the DOM by this opreation.</p>
+<pre><code class="language-js">Questback.portalsApi.trigger.route('targetPageSlug');</code></pre>
+<hr>
+<h2 id="accessing-mysight-instances-in-portals" class="wysiwyg-text-align-justify">Accessing MySight instances in Portals</h2>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015041349010" alt="MySightId.png"></p>
+<p class="wysiwyg-text-align-justify">There are a number of methods to interact with Tableau in a MySight module. For all of these you need the <em>pageModuleIdentifier</em> of a MySight module to target your requests. This identifier is set in the Portals CMS in the settings for the MySight page module and can be reused on other pages for the same or even different Tableau instances.</p>
+<h3 id="mysight-vizgetisready" class="wysiwyg-text-align-justify">mySight.vizGetIsReady</h3>
+<p class="wysiwyg-text-align-justify">Gets whether the onFirstInteractive event has been fired yet.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.vizGetIsReady(pageModuleIdentifier)
+    .then(function(ready) {
+        ...
+    });</code></pre>
+<h3 id="mysight-vizgetaretabshidden" class="wysiwyg-text-align-justify">mySight.vizGetAreTabsHidden</h3>
+<p class="wysiwyg-text-align-justify">Gets whether the tabs are hidden or not.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.vizGetAreTabsHidden(pageModuleIdentifier)
+    .then(function(hidden) {
+        ...
+    });</code></pre>
+<h3 id="mysight-vizgetistoolbarhidden" class="wysiwyg-text-align-justify">mySight.vizGetIsToolbarHidden</h3>
+<p class="wysiwyg-text-align-justify">Gets whether the tabs are hidden or not.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.vizGetIsToolbarHidden(pageModuleIdentifier)
+    .then(function(hidden) {
+        ...
+    });</code></pre>
+<h3 id="mysight-vizgeturl" class="wysiwyg-text-align-justify">mySight.vizGetUrl</h3>
+<p class="wysiwyg-text-align-justify">Gets the url of the viz.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.vizGetUrl(pageModuleIdentifier)
+    .then(function(url) {
+        ...
+    });</code></pre>
+<h3 id="mysight-vizgetcurrenturl" class="wysiwyg-text-align-justify">mySight.vizGetCurrentUrl</h3>
+<p class="wysiwyg-text-align-justify">Gets the current url of the viz.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.vizGetCurrentUrl(pageModuleIdentifier)
+    .then(function(currentUrl) {
+        ...
+    });</code></pre>
+<h3 id="mysight-vizgetishidden" class="wysiwyg-text-align-justify">mySight.vizGetIsHidden</h3>
+<p class="wysiwyg-text-align-justify">Gets whether the viz is hidden or not.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.vizGetIsHidden(pageModuleIdentifier)
+    .then(function(hidden) {
+        ...
+    });</code></pre>
+<h3 id="mysight-vizshow" class="wysiwyg-text-align-justify">mySight.vizShow</h3>
+<p class="wysiwyg-text-align-justify">Shows the viz.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.vizShow(pageModuleIdentifier)
+    .then(function() {
+        ...
+    });</code></pre>
+<h3 id="mysight-vizhide" class="wysiwyg-text-align-justify">mySight.vizHide</h3>
+<p class="wysiwyg-text-align-justify">Hides the viz.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.vizHide(pageModuleIdentifier)
+    .then(function() {
+        ...
+    });</code></pre>
+<h3 id="mysight-vizdispose" class="wysiwyg-text-align-justify">mySight.vizDispose</h3>
+<p class="wysiwyg-text-align-justify">Disposes the viz.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.vizDispose(pageModuleIdentifier)
+    .then(function() {
+        ...
+    });</code></pre>
+<h3 id="mysight-vizgetareautomaticupdatespaused" class="wysiwyg-text-align-justify">mySight.vizGetAreAutomaticUpdatesPaused</

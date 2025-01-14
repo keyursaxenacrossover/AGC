@@ -1,0 +1,34 @@
+<td><p>Anzahl der gleichzeitigen Requests</p></td>
+<td><p>50</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+</tbody></table><h2 id="header-8">pload Customized Templates</h2><p><strong>!!!!! NIEMALS DAS TEMPLATE "reporting_template.ppt" ODER "reporting_template_blank.ppt" NENNEN -&gt; SONST WIRD DAS TEMPLATE VON ALLEN INSTS IN BREMEN BENUTZT !!!!!</strong></p><p>Siehe auch <a href="https://it.globalpark.de/twiki/bin/view/Development/Reporting#Howto_create_templates_for_the_P">Howto create templates for the PPT/PDF Export service</a></p><p>QB:SB: Es ist nicht einfach möglich, ein vom Kunden angepasstes ppt(x) Template hochzuladen, da die Vorlagen nicht den sehr speziellen Anforderungen von Reporting+ entsprechen. Wie mir mitgeteilt wurde, reicht es leider nicht aus, die Vorlage nach den eigenen Wünschen in PowerPoint<a href="https://it.globalpark.de/twiki/bin/edit/Support/PowerPoint?topicparent=Support.SupportEFSAnalyticsLab">?</a> zu erstellen und im Format .ppt abzuspeichern bzw. die bereits erwähnten Platzhalter zu verwenden. Hier ist ein gesondertes Customizing sowie die Verwendung spezieller Programme (z.B. explizit Office 2003) notwendig. Zur Zeit bieten wir diesen Customizing Service nicht an. Es ist jedoch geplant, diesen mit einem dem nächsten EFS Releases, in dem dann auch das neue Dateiformat .pptx möglich ist, wieder anzubieten (etwa Ende des ersten Halbjahrs 2015). In der Zwischenzeit kann den Kunden daher leider nur vorgeschlagen werden, die Standard Exportvorlage (unbranded) zu verwenden und diese nachträglich an das neue CI anzupassen.</p><p></p><h3 id="header-10">&gt;=EFS 9.0</h3><p> AB 9.0 kann man das Template über den qb only:: EFS Analytics Admin im Plattform Cockpit hochladen:<br><strong>Voraussetzungen</strong>:</p><ul>
+<li><p>Template muss im ppt oder xls Format (Office 2003) vorliegen. pptx oder xlsx Format wird nicht unterstützt.</p></li>
+<li><p>Template muss einen eindeutigen Namen haben und darf NICHT wie oben beschrieben benannt sein!</p></li>
+</ul><p><strong>Anleitung</strong> (siehe auch Screenshot im Anhang)</p><ul>
+<li><p>Mit <strong>"root"</strong> auf der Installation einloggen</p></li>
+<li>
+<p>Datei über <strong>Options &gt;&gt; Platform Cockpit &gt;&gt; qb only:: EFS Analytics Admin &gt; Upload template to .NET server</strong> hochladen</p>
+<ul><li><p>"Overwrite (be sure to use unique name)" <strong>nur</strong> verwenden, wenn man ein bestehendes Custom Template überschreiben will, z.B. um dies zu aktualisieren</p></li></ul>
+</li>
+<li>
+<p>Template über <strong>"root only:: System configuration"</strong> konfigurieren:</p>
+<ul><li>
+<p><strong>"reporting_job_format_templates"</strong> editieren</p>
+<ul>
+<li><p>Unter z.B. ppt auf das + klicken, um einen neuen Eintrag hinzuzufügen: <strong>Key: 3</strong> (oder entsprechend nächst höherer Key), <strong>Type: Array</strong></p></li>
+<li><p>Unter dem neuen Key auf + klicken: <strong>Key: 0</strong> , <strong>Type: String</strong>, <strong>Value: C:\templates\[hier realen Templatename einsetzen].ppt</strong></p></li>
+<li><p>Neben diesem Key einen weiteren hinzufügen: <strong>Key: 1</strong>, <strong>Type: String</strong>, <strong>Value:</strong> hier Beschreibung oder Templatenamen eintragen</p></li>
+</ul>
+</li></ul>
+</li>
+<li>
+<p>Template für die gewünschte(n) Organisation(en) freischalten:</p>
+<ul>
+<li><p><strong>Benutzer &gt;&gt; Organisationen &gt;&gt; [Organisation] &gt; qb only:: EFS Reporting+</strong></p></li>
+<li><p>Template markieren</p></li>
+</ul>
+</li>
+</ul><h2 id="header-12">Änderungen in den EFS Versionen</h2><p><strong>Ab 10.2 Neu</strong></p><p>Es gibt ein Config Flag um Loop Daten im Reporting+ zu erlauben: reporting_support_loop<br>reporting_loop_variables_limit gibt die maximale Anzahl an Loop Variablen an, die in einen Bericht importiert werden können.</p><h2 id="header-13">Debugging</h2><p>Die erste Stelle sollte die Tabelle "survey_reporting_log" sein. Dort werden alle Aktionen mitgeloggt.</p><p></p><ul>
+<li><p>den Debug Level

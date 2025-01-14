@@ -1,0 +1,50 @@
+</li>
+</ul>
+<p><strong>3. Change the number of assignments by assigning apps to specific groups</strong></p>
+<p>Currently, every app is assigned to everyone. This could be changed by assigning an app to only the users that need to be assigned to that app. Therefore the specific app is only accessible by the group of users that was assigned to that application.</p>
+<p>That reduces the number of assignments by a very big amount.</p>
+<p>The drawbacks of this are:</p>
+<ul>
+<li>
+<p>Okta implicitly also handles permissions</p>
+</li>
+<li>
+<p>Groups have to be managed correctly otherwise users will not able to access their applications anymore</p>
+</li>
+</ul>
+<p> </p>
+<h1 id="h_01J69JAMAHF2BVV1M78AEHFJGP">FAQ</h1>
+<p><strong>What causes the slowness in Okta app assignments?</strong></p>
+<p>The primary cause is the large number of assignments Okta needs to handle due to every user and application being part of the "Everyone" group.</p>
+<p><strong>Why is it necessary to merge portal applications?</strong></p>
+<p>Merging portal applications into a single global application can reduce the number of assignments, which may improve performance.</p>
+<p><strong>What are the risks of group-specific app assignments?</strong></p>
+<p>If groups are not managed correctly, users may lose access to necessary applications, which can disrupt business operations.</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p> to be assigned to that app. Therefore the specific app is only accessible by the group of users that was assigned to that application.</p>
+<p>That reduces the number of assignments by a very big amount.</p>
+<p>The drawbacks of this are:</p>
+<ul>
+<li>
+<p>Okta implicitly also handles permissions</p>
+</li>
+<li>
+<p>Groups have to be managed correctly otherwise users will not able to access their applications anymore</p>
+</li>
+</ul>
+<p> </p>
+<h1 id="h_01J69JAMAHF2BVV1M78AEHFJGP">FAQ</h1>
+<p><strong>What causes the slowness in Okta app assignments?</strong></p>
+<p>The primary cause is the large number of assignments Okta needs to handle due to every user and application being part of the "Everyone" group.</p>
+<p><strong>Why is it necessary to merge portal applications?</strong></p>
+<p>Merging portal applications into a single global application can reduce the number of assignments, which may improve performance.</p>
+<p><strong>What are the risks of group-specific app assignments?</strong></p>
+<p>If groups are not managed correctly, users may lose access to necessary applications, which can disrupt business operations.</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>

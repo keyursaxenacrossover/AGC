@@ -1,0 +1,82 @@
+strong> → <strong>Edit</strong></p>
+</li>
+</ul>
+<table class="wysiwyg-text-align-justify" style="height: 383px;" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 195.0px;"> <col style="width: 565.0px;"> </colgroup>
+<tbody>
+<tr style="height: 14px;">
+<th class="wysiwyg-text-align-center" style="height: 14px; width: 179.462px;" data-highlight-colour="#57d9a3">
+<p><strong>Option</strong></p>
+</th>
+<th style="height: 14px; width: 513.247px;" data-highlight-colour="#57d9a3">
+<p class="wysiwyg-text-align-center"><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr style="height: 67px;">
+<td style="height: 67px; width: 171.441px;">
+<p>Changing the order</p>
+</td>
+<td style="height: 67px; width: 505.226px;">
+<p>Use the mouse pointer to drag the answer option to its desired position. When the green bar lights up, you can drop the answer option.</p>
+</td>
+</tr>
+<tr style="height: 44px;">
+<td style="height: 44px; width: 171.441px;">
+<p>Convert to user-defined missing</p>
+</td>
+<td style="height: 44px; width: 505.226px;">
+<p>This feature allows one to mark an answer option as missing a value<br> retroactively.</p>
+</td>
+</tr>
+<tr style="height: 44px;">
+<td style="height: 44px; width: 171.441px;">
+<p>Hiding/showing an<br>answer option</p>
+</td>
+<td style="height: 44px; width: 505.226px;">
+<p>The answer option will be hidden but included in calculations. If you click on <strong>Show</strong>, the answer option will be displayed again.</p>
+</td>
+</tr>
+<tr style="height: 118px;">
+<td style="height: 118px; width: 171.441px;">
+<p>Locking / unlocking<br>selection</p>
+</td>
+<td style="height: 118px; width: 505.226px;">
+<p>If you wish to exclude any particular answer option from being re-sorted, you can simply lock it.</p>
+<p>This is useful, for example, if the positions of any particular answer options (“No answer”) or key figures (“Total number n”) remain unchanged when sorting.</p>
+</td>
+</tr>
+<tr style="height: 96px;">
+<td style="height: 96px; width: 171.441px;">
+<p>Deleting an answer option</p>
+</td>
+<td style="height: 96px; width: 505.226px;">
+<p>The answer option will be deleted from the table completely. It will no longer be included in any calculations.</p>
+<p>Please note: This action cannot be undone. If you inadvertently delete an answer option, the table must be created anew.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="significance" class="wysiwyg-text-align-justify"><strong>Significance</strong></h3>
+<p class="wysiwyg-text-align-justify"><strong>z-Test</strong></p>
+<p class="wysiwyg-text-align-justify">The z-test pairs columns in each row in order to compare whether or not column portions are equal. This test works with categorical variables only (numeric variables will be interpreted as categorial).</p>
+<p class="wysiwyg-text-align-justify">The z-test is accessible from the Report properties and can be activated in the Significance menu. Open a split dimension, then go to report settings → Significance menu from where you can activate and set the z-test (and if you wish, a second one).</p>
+<p class="wysiwyg-text-align-justify">Further settings are available:</p>
+<p class="wysiwyg-text-align-justify">Enable low-base warning</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Set the base which will trigger a warning message if the level is not matched. This might prove useful when checking whether groupings do not meet the size requirements for significance testing.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Bonferroni P-value correction for t-test and z-test</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Check this option if you need to manually adjust the p-values of individual column comparisons downwards in order to have the final results of the test appear more realistic according to the alpha error accumulation in multiple comparisons. This will be performed according to Bonferroni.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The split dimension contains multiple-choice categories</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>This mode applies if the split dimension‘s categories consist of variables of question type 121 as this question type bears the risk that one participant might be allocated to several categories. Activating this option will let the test consider the overlapping of case numbers and calculate accordingly.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The significance determined through the z

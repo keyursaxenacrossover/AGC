@@ -1,0 +1,97 @@
+<h1 id="h_01J5ZETC5WC2XGVPZCMK7HM0HS">Overview</h1>
+<p>Open ID Connect (OIDC) is a authentication (and authorization) protocol that can be used to federate authentication. Therefore an OIDC IdP can be used to be federated with Okta.</p>
+<p>Open ID Connect (OIDC) Identity Providers are preferred over SAML due to a more simple setup.</p>
+<ul>
+<li>OIDC Spec <a href="https://openid.net/developers/specs/">https://openid.net/developers/specs/</a>
+</li>
+<li>OIDC is based on OAuth 2.0 - see <a href="https://tools.ietf.org/html/rfc6749">https://tools.ietf.org/html/rfc6749</a>
+</li>
+</ul>
+<h1 id="h_01J5ZESGRBBM4X24CAGGRXDB4W">Table of Contents</h1>
+<ul>
+<li>
+<a href="#header-1">Prerequisites:</a>
+<ul>
+<li><a href="#header-3">What values are used for our Federation and what do they mean?</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="header-1">Prerequisites:</h1>
+<p>The OIDC provider should send all necessary information in a token request. The mandatory fields are</p>
+<ul>
+<li>
+<p>email address</p>
+</li>
+<li>
+<p>first name</p>
+</li>
+<li>
+<p>last name</p>
+</li>
+</ul>
+<p>A domain (or domains) for routing purposes should be known (with regards to the email-address domain). Otherwise the IdP could not be used as intended.</p>
+<p>A client ID and a client secret have to be provided by the identity provider. And our redirect URI has to be applied to that client ID and client secret.</p>
+<ul>
+<li>In our case, OIDC federation creates a trust between Okta and an external OIDC IdP. Therefore Okta will send a specific group of users to the external IdP to authenticate and get a trusted result of that authentication containing some user information.</li>
+<li>When using OIDC, a discovery-document (well-known) can be used to get the basic information about the authentication and authorization flows that are supported. It is usually publicly available as it only contains public information.</li>
+</ul>
+<h2 id="header-3">What values are used for our Federation and what do they mean?</h2>
+<table border="1" data-layout="default">
+<colgroup> <col style="width: 111.0px;"> <col style="width: 128.0px;"> <col style="width: 268.0px;"> <col style="width: 169.0px;"> </colgroup>
+<thead>
+<tr>
+<th style="width: 86.0781px;">
+<p><strong>Source</strong></p>
+</th>
+<th style="width: 170.703px;">
+<p><strong>What</strong></p>
+</th>
+<th style="width: 169.875px;">
+<p><strong>Meaning</strong></p>
+</th>
+<th style="width: 325.328px;">
+<p><strong>Example</strong></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="width: 78.0781px;" rowspan="5">
+<p><strong>discovery document</strong></p>
+<br>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+</td>
+<td style="width: 162.703px;">
+<p>token_endpoint</p>
+</td>
+<td style="width: 161.875px;">
+<p>Endpoint to get new tokens for the different flows. In our case an endpoint to exchange a code for a token.</p>
+</td>
+<td style="width: 317.328px;">
+<p><a href="https://login.microsoftonline.com/dc79dd1a-883e-438c-b396-dc9fb7f66bf1/oauth2/v2.0/token">https://login.microsoftonline.com/dc79dd1a-883e-438c-b396-dc9fb7f66bf1/oauth2/v2.0/token</a> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 162.703px;">
+<p>authorization_endpoint</p>
+</td>
+<td style="width: 161.875px;">
+<p>Endpoint to Authenticate/Authorize a user. A user will be send to that endpoint to authneticate.</p>
+</td>
+<td style="width: 317.328px;">
+<p><a href="https://login.microsoftonline.com/dc79dd1a-883e-438c-b396-dc9fb7f66bf1/oauth2/v2.0/authorize">https://login.microsoftonline.com/dc79dd1a-883e-438c-b396-dc9fb7f66bf1/oauth2/v2.0/authorize</a> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 162.703px;">
+<p>jwks_uri</p>
+</td>
+<td style="width: 161.875px;">
+<p>Location where Keys for OpenID connect are stored. These keys might rotate. Therefore this document is not static long term.</p>
+</td>
+<td style="width: 317.328px;">
+<p><a href="https://login.microsoftonline.com

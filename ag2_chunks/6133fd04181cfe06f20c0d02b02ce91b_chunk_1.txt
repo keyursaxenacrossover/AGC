@@ -1,0 +1,46 @@
+ In this chapter you will configure an external survey start yourself, linking two <em data-renderer-mark="true">EFS</em> projects within the same installation.</p>
+<h3 id="Creating-the-Questionnaires-and-Configuring-Forward-and-Return-Jumps" class="wysiwyg-text-align-justify" data-renderer-start-pos="2057"><strong data-renderer-mark="true">Creating the Questionnaires and Configuring Forward and Return Jumps</strong></h3>
+<p><strong data-renderer-mark="true"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014884158610"></strong></p>
+<ul>
+<li>
+<img style="width: 603.984px;" draggable="false" src="blob:https://qbdocs.atlassian.net/b06136d6-aad0-46eb-b030-e6643c09fb6b#media-blob-url=true&amp;id=620ea37b-cef3-4303-844b-35330950de90&amp;collection=contentId-1175519357&amp;contextId=1175519357&amp;mimeType=image%2Fpng&amp;name=Questionnaire.png&amp;size=145423&amp;width=1280&amp;height=302&amp;alt=" alt="" data-testid="media-image"><span style="text-align: justify;">Create the primary and secondary projects. The primary project can be of the “anonymous” or the “personalized” type, for the sake of simplicity the secondary project should be “anonymous”.</span>
+</li>
+<li>Create the first part of the primary questionnaire.</li>
+<li>Next up is the page that redirects the participants to the secondary survey.
+<ul class="ak-ul" data-indent-level="2">
+<li>
+<p data-renderer-start-pos="2459">Click on <strong data-renderer-mark="true">+ Dynamics </strong>and select <strong data-renderer-mark="true">External Survey Start</strong> to create the<strong data-renderer-mark="true"> External Survey Start </strong>page.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014837276818"></p>
+</li>
+</ul>
+</li>
+</ul>
+<div class="rich-media-item mediaSingleView-content-wrap image-center cc-141s4ox wysiwyg-text-align-justify" data-layout="center" data-width="80" data-width-type="percentage" data-node-type="mediaSingle" data-renderer-start-pos="2127">
+<div class="cc-t5dbnt">
+<div data-type="file" data-node-type="media" data-width="1280" data-height="302" data-id="620ea37b-cef3-4303-844b-35330950de90" data-collection="contentId-1175519357" data-file-name="Questionnaire.png" data-file-size="145423" data-file-mime-type="image/png" data-alt="" data-renderer-start-pos="2128" data-context-id="1175519357">
+<div id="newFileExperienceWrapper" class="new-file-experience-wrapper cc-34ecva" data-testid="media-card-view">
+<ul>
+<li>The new page is displayed in the questionnaire view. Click on the <strong data-renderer-mark="true">link</strong>.</li>
+<li>You are automatically taken to the <strong data-renderer-mark="true">Page properties</strong> tab.</li>
+<li>In the “Destination URL of external survey” field, enter the URL of the secondary project. You will find this in the field labeled “URL” in the project information of the secondary project.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014884159378">
+</li>
+<li>The other options are configured appropriately for this example by default: “Add ticket” is activated, “Use long clear-text tickets” is deactivated.</li>
+<li>Confirm by clicking on <strong data-renderer-mark="true">Save</strong>.</li>
+<li>Create the questionnaire for the secondary project.</li>
+<li>The final page of the secondary project serves as the jump page to return to the primary survey. This means that instead of filling this page with contents as usual, you click again on the page link to open the <strong data-renderer-mark="true">Properties</strong> (left hand side).</li>
+<li>Enter the URL of the primary project as the destination URL. This you will find in the project information of the primary project, as explained above.</li>
+<li>The other options are configured appropriately by default: the checkboxes “Automatically add ospe.php3” and “Add return ticket” are ticked.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014884159890">
+</li>
+<li>Confirm by clicking on <strong data-renderer-mark="true">Save</strong>.</li>
+<li>Create the second part of the primary project that the participants will complete after the return.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014837282962">
+</li>
+<li>The configuration of the questionnaires is now complete.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="ak-editor-panel cc-tqp4ke wysiwyg-text-align-justify" data-panel-type="info">
+<div class="ak-editor-panel__icon"><em>It is, in principle, not possible that the primary project times out while the participants complete the secondary project.</em></div>
+<div class="ak-editor-panel__icon"> </div>
+</div>
+<h3 id="Testing"

@@ -1,0 +1,57 @@
+ while the filter groups are linked by the logical AND.</p>
+<ul>
+<li>The filter syntax, which is also used in the mapping area of the sub-navigation field <strong>Pages</strong>, does not change.</li>
+<li>Within a filter group, you define a filter using the left Select Box, which is specified with the right one.</li>
+<li>A filter group corresponds to a variable, so that the filters cannot be changed within a group.</li>
+<li>The filters apply to the member of the comparison group, which can also be a virtual comparison unit.</li>
+</ul>
+<p><strong>Virtual comparion units</strong></p>
+<p>You create virtual comparison units, as you create a virtual focus unit. For the virtual comparison unit, you also activate filters.</p>
+<div>
+<div class="sc-bbmXgH inLjth">
+<div>
+<div class="page view">
+<div class="wiki-content">
+<ul>
+<li>You create each member of the comparison group as a virtual comparison unit.</li>
+<li>You create virtual comparison units with set operators: union, intersections, difference and/or symmetrical difference.</li>
+<li>You activate a filter separately for each virtual comparison unit in the comparison group.</li>
+<li>Filtering is performed in addition to the filters set in the Report Definition.</li>
+</ul>
+<p><strong>It is useful to explain the virtual comparison unit with reference to the virtual focus unit</strong><u>.</u> If you have created a virtual focus unit (for example, “Development“ and “Germany“), you may want to compare it with the development department in France. You combine your virtual comparison unit from the location and function within the organizational structure and select the required quantity operator. You can also use a filter for the comparison unit. If you select “gender female“ as the filter, the virtual focus unit consisting of “development“ and “Germany“ is compared exclusively with the women of the virtual comparison unit composed of “development“ and “France“. No filter can currently be set for the virtual focus unit.</p>
+<p><strong>The third order step: Global filter</strong></p>
+<p>You activate this ordering step in the sub-navigation field <strong>Settings</strong> of the Report Definition. This step allows you to define filters for the entire report. Your procedure does not differ from the previously selected filters.</p>
+</div>
+</div>
+</div>
+<div>
+<ul>
+<li>Again, add filter conditions and filter groups. Again, the filter conditions are linked by the logical OR. Again, the filter groups are linked by the logical AND.</li>
+<li>The filter settings made for the third-order step apply to the entire report and are effective in addition to all filters that have already been set.</li>
+</ul>
+<p>The last order step<strong> Order</strong> provides you with an overview of the settings made for the previous order steps: selection of the focus unit(s), comparison groups and filters. Next, you do the following:</p>
+<div>
+<div class="sc-bbmXgH inLjth">
+<div>
+<div class="page view">
+<div class="wiki-content">
+<ul>
+<li>You assign a report name. Placeholders can be used. These can be found in the legend, and green doctor's hat icon.</li>
+<li>Choice of the downloadable file formats: PPTX and/or PDF.</li>
+<li>You check your previous settings. If you want to make a correction, simply use the buttons in the upper or lower area to return to the corresponding step and make the desired changes.</li>
+<li>Sending the order.</li>
+</ul>
+<p>After placing the order, you will automatically return to the start page and the ordered reports will be transferred to the report table and displayed. Once the reports have been generated, they are available for download as PPTX and/or PDF files.</p>
+</div>
+</div>
+</div>
+<h2 id="report-distribution"><strong>Report distribution</strong></h2>
+<p>There are several ways to access generated reports. You have already learned one in the section on the report table. Among other things, it has the function to make reports available for download. In addition, you distribute the reports generated with the Report Manager to EFS Employees. In the Org Processor, you can see the report in the column “Number of reports“ under the tab <strong>Report Overview</strong>, which can be downloaded by clicking on the corresponding unit. This chapter explains how to organize the distribution to EFS Employees. You will also learn how to download the reports from the external view of <em>Portals</em>.</p>
+<h3 id="add-reporting"><strong>Add reporting</strong></h3>
+<p>To use the distribution function in the Report Manager, you create a reporting function in your Employee project.</p>
+<p>You navigate by the means of the following path:</p>
+<p>[<em>selected Project</em>] → <em>Process configuration</em> → <em>Report definition</em> → <em>Create report</em></p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014812961682" alt="Add reporting.png"></p>
+<p>You must assign a description and enter a category.</p>
+<p>The default setting is for the category std. You use the user-defined text field to create a separate category to which the reports belong. Using <strong>Extended search</strong> [(<em>Select Project</em>] &gt; Process Configuration &gt; Report Definition], you can then search for this category and its reports.</p>
+<p>You use the select box to set the report type to <strong>Exchange</strong>.</p>

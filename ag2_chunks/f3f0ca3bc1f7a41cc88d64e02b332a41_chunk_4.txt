@@ -1,0 +1,72 @@
+ glimpse overview of vendors that have been considered. There are many more vendors offering identity solutions. Most of them will have similar offerings.</p><p>Not all criteria is shown here. In case the is a no-go criteria no additional ones are added.</p><table data-layout="full-width" ac:local-id="ef508680-579b-41e1-981c-3fa4fc5ab2fb">
+<colgroup>
+<col style="width: 130.0px;">
+<col style="width: 278.33px;">
+<col style="width: 278.33px;">
+<col style="width: 278.33px;">
+<col style="width: 278.33px;">
+<col style="width: 278.33px;">
+<col style="width: 278.33px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p></p></th>
+<th><p><strong>Keycloak</strong></p></th>
+<th><p><strong>Gluu</strong></p></th>
+<th><p><strong>Auth0</strong></p></th>
+<th><p><strong>Okta</strong></p></th>
+<th><p><strong>Microsoft</strong></p></th>
+<th><p><strong>Cognito</strong></p></th>
+</tr>
+<tr>
+<th><p><strong>Description</strong></p></th>
+<td><p><a data-card-appearance="inline" href="https://www.keycloak.org/">https://www.keycloak.org/</a> </p></td>
+<td><p><a data-card-appearance="inline" href="https://gluu.org/">https://gluu.org/</a> </p></td>
+<td><p><a data-card-appearance="inline" href="https://auth0.com/">https://auth0.com/</a> </p></td>
+<td><p><a data-card-appearance="inline" href="https://www.okta.com/">https://www.okta.com/</a> </p></td>
+<td><p><a data-card-appearance="inline" href="https://azure.microsoft.com/en-us/services/active-directory/external-identities/b2c/#overview">https://azure.microsoft.com/en-us/services/active-directory/external-identities/b2c/#overview</a> </p></td>
+<td><p><a href="https://aws.amazon.com/de/cognito/">https://aws.amazon.com/de/cognito/</a></p></td>
+</tr>
+<tr>
+<th><p><strong>Kind</strong></p></th>
+<td><p>self-hosted</p></td>
+<td><p></p></td>
+<td><p>managed</p></td>
+<td><p>managed</p></td>
+<td><p>managed</p></td>
+<td><p>managed</p></td>
+</tr>
+<tr>
+<th><p><strong>Pros and cons</strong></p></th>
+<td>
+<p><ac:emoticon ac:emoji-fallback=":plus:" ac:emoji-id="atlassian-plus" ac:emoji-shortname=":plus:" ac:name="plus"></ac:emoticon></p>
+<ul>
+<li><p>Settled solution</p></li>
+<li><p>Cluster and scalability capabilities built in / configurable</p></li>
+<li><p>Kubernetes hosting documented</p></li>
+<li><p>No cloud-vendor lock-in</p></li>
+<li><p>Proof-of-concept is in place</p></li>
+</ul>
+<p><ac:emoticon ac:emoji-fallback=":minus:" ac:emoji-id="atlassian-minus" ac:emoji-shortname=":minus:" ac:name="minus"></ac:emoticon></p>
+<ul>
+<li><p>API documentation is mediocre</p></li>
+<li><p>Java based solution (not one of our core programming languages)</p></li>
+</ul>
+</td>
+<td>
+<p><ac:emoticon ac:emoji-fallback=":plus:" ac:emoji-id="atlassian-plus" ac:emoji-shortname=":plus:" ac:name="plus"></ac:emoticon></p>
+<ul>
+<li><p>open source and commercial offering present</p></li>
+<li><p>Kubernetes hosting documented</p></li>
+</ul>
+<p><ac:emoticon ac:emoji-fallback=":minus:" ac:emoji-id="atlassian-minus" ac:emoji-shortname=":minus:" ac:name="minus"></ac:emoticon></p>
+</td>
+<td>
+<p><ac:emoticon ac:emoji-fallback="#️⃣" ac:emoji-id="23-20e3" ac:emoji-shortname=":hash:" ac:name="blue-star"></ac:emoticon> similar to Okta as Okta bought Auth0</p>
+<p><ac:emoticon ac:emoji-fallback=":plus:" ac:emoji-id="atlassian-plus" ac:emoji-shortname=":plus:" ac:name="plus"></ac:emoticon></p>
+<ul><li><p>Good API Documentation</p></li></ul>
+<p><ac:emoticon ac:emoji-fallback=":minus:" ac:emoji-id="atlassian-minus" ac:emoji-shortname=":minus:" ac:name="minus"></ac:emoticon></p>
+<ul><li><p>API rate limits that do not align with high volume situations (but are still better than the ones of Okta)</p></li></ul>
+</td>
+<td>
+<p><ac:em

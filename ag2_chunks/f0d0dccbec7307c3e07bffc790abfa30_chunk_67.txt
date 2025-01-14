@@ -1,0 +1,162 @@
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>surveyId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>id of survey <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="header-295">Field report / Statistics</h2>
+<div class="expand-macro">
+<h4 id="h_01J441N79N6QE68RFZAWP03XRX"> </h4>
+<h3 id="header-297">POST /survey/statistics/{surveyId}/chart</h3>
+<p>Returns the png graph which represents the participation.</p>
+<p>Valid values for <code>lang</code>:  EN, DE, FR, FI, IT, NB, SV</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "lang": "EN",
+  "restriction": [
+    {
+      "field_name": "v_2",
+      "field_link": " IN ",
+      "field_value": "1, 2, 3"
+    }
+  ]
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">Base64 encoded binary data</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>surveyId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>The survey ID <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79N3235H4K7EX64PFFV"> </h4>
+<h3 id="header-298">POST /survey/statistics/{surveyId}/abs</h3>
+<p>Returns the absolute number of participation for a single disposition code and optionally limited by restriction.</p>
+<p>Valid values for <code>field_link</code>: <em>IN, BETWEEN, LIKE, NOT LIKE, =, !=, &lt;&gt;, &lt;, &lt;=, &gt;, &gt;=</em>. Values<em> LIKE, NOT LIKE </em>should only be applied to text variables and to search for a substring, append “%”: E.g. “%world” will map “Hello World” but not “World, Hello”, search for “%world%” will find both occurrences.</p>
+<p>Please note, contrary to the RAML and WSDL documentations, the use of <code>splitVariable</code> in <code>criteria</code> is not supported and returns erroneous result. An updated service will be provided shortly.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "criteria": {
+    "dispositionCodes": [
+      "31"
+    ]
+  },
+  "restriction": [
+    {
+      "field_name": "v_2",
+      "field_link": "IN",
+      "field_value": "1, 2, 3"
+    }
+  ]
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">1234</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>surveyId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>The survey ID <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79PQXQ0JQPPHG

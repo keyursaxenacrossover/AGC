@@ -1,0 +1,78 @@
+ should not be combined with the options “Transfer master data values to survey variables” -&gt; “Always prefill”, “Allow multiple participations, prefill with values of last participation” and import of specific answers from other projects</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="width: 358.194px;">
+<p>For all possible answers of the type “answer option + text”, completeness checks (DACs)<br>should also check whether the related text field has been filled in.</p>
+</td>
+<td style="width: 412.465px;">
+<p>In the standard configuration, answer categories of the “answer option + text” type are only checked to verify whether the respondent has clicked on a radio button or a checkbox. However, you have the option of configuring the DAC in such a way that the respondent must select the answer option containing the text field and fill in the text field.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 358.194px;">
+<p>Name of ticket variable (external survey start)</p>
+</td>
+<td style="width: 412.465px;">
+<p>Option for changing the name of the Get parameter used for the external survey start.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 358.194px;">
+<p>Name of ticket variable (when returning from an external survey)</p>
+</td>
+<td style="width: 412.465px;">
+<p>Option for changing the name of the Get parameter transferred upon returning from an external survey.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 358.194px;">
+<p>Check whether the respondents have Java Script activated, whether the Adobe Flash Player<br>plugin is available, and which device they are using.</p>
+</td>
+<td style="width: 412.465px;">
+<p>This option must be activated if you want the survey variables “javascript”, “flash” and the device type to be filled.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 358.194px;">
+<p>Detect participants' location using the IP address</p>
+</td>
+<td style="width: 412.465px;">
+<p>If you activate this function, the available <a href="https://qbdocs.atlassian.net/wiki/spaces/DOC/pages/1231913034/Survey+Variables#Location-variables">location variables</a> (<em>participant_continent</em>, <em>participant_country</em>, <em>participant_city</em>, <em>participant_region</em>, <em>participant_latitude,</em> and <em>participant_longitud</em>), will be used. The metadata about the locations of the survey participants will be stored in these variables.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 358.194px;">
+<p>Detect participants' device type using the user-agent information</p>
+</td>
+<td style="width: 412.465px;">
+<p>If you activate this function, the available <a href="https://qbdocs.atlassian.net/wiki/spaces/DOC/pages/1231913034/Survey+Variables#Device-Variables">device variables</a> (participant_os, participant_device, participant_brand, participant_model, and participant_isbot), will be used. The metadata for the used devices of the survey participants will be stored in these variables.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 358.194px;">
+<p>All panelists can participate in the survey (independent from being in a sample for the survey)</p>
+</td>
+<td style="width: 412.465px;">
+<p>This option is only available for master data and panel<br>surveys. If the checkbox is ticked, the survey is active and the appropriate field period has been set, the link to the survey will be shown on the personal homepages of all panelists, and all of them will be allowed to participate.<br>By default, this option is activated for master data surveys and deactivated for panel surveys.<br>You can trace, which panelists took the opportunity to participate with the help of the automatically generated sample “internal”: This sample records all participants that took part. If you send out e-mail invitations to a master data survey instead of simply<br>having the link displayed, you will also find all invited panelists in the “internal” sample and can keep track of who participates.</p>
+<p>Apart from the automatically generated sample, you cannot set up any further samples for master data surveys.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 358.194px;">
+<p>Maximum number of respondents active at the same time</p>
+</td>
+<td style="width: 412.465px;">
+<p>You can set an upper limit of simultaneously active respondents. Participants with the disposition codes 20, 21, and 23 are active survey participants. Participants who have finished the survey (or have not been active for more than five minutes) are no longer active survey participants. Every 90 seconds, the software checks whether the upper limit has been exceeded. If this is the case, possible participants are rejected until the number of participants falls below the upper limit again, i.e. at least 90 seconds.</p>
+<p> </p>
+<p>The limit however can only undercut an eventual installation-wide setting for the maximum number of participants per project, it cannot bypass it.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 358.194px;">
+<p>Behavior on resumption</p>
+</td>
+<td style="width: 412.465px;">
+<p>Used to control the routing of the

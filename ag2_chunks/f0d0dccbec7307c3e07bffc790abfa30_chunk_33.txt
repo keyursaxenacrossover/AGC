@@ -1,0 +1,127 @@
+QFX2K1TY18"> </h4>
+<h3 id="header-161">PUT /panel/panelists/details</h3>
+<p>Change an existing panelist's data</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "identifierType": "uid",
+  "identifierValue": "123",
+  "panelistData": {
+    "u_firstname": "NewFirst",
+    "u_name": "NewLast",
+    "masterDataValues": [
+      {
+        "key": "m_0001",
+        "value": "2"
+      }
+    ]
+  }
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">true</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79HSQV4ASM7A9T53S4J"> </h4>
+<h3 id="header-162">DELETE /panel/panelists/external</h3>
+<p>Deletes an external authentication mapping from EFS. Please note: Only the mapping will be deleted. The panelist will not be removed from EFS.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "externalServiceId": 1234,
+  "externalAuthenticationValue": "Example"
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">true</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79HT9PACTBYZFQEVT23"> </h4>
+<h3 id="header-163">POST /panel/panelists/external</h3>
+<p>Establishes a mapping between a member of an external system (specified by the external_service_id and the external_service_authentication_value) and an EFS panelist. This can be used to implement seamless logins for EFS panelists coming from external web applications.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "externalServiceId": 1,
+  "externalAuthenticationValue": "Example",
+  "identifierType": "uid",
+  "identifierValue": "123"
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">true</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79HYD5AFTTHMKSRZVJE"> </h4>
+<h3 id="header-164">POST /panel/panelists/external/{externalServiceId}</h3>
+<p>Returns the EFS identifier for a member of an external system. If the member has not been registered in EFS using the save_external_panelist_authentication web service before, this service will throw an exception.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "externalAuthenticationValue": "Example",
+  "identifierReturnType": "Example"
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">"Example"</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>externalServiceId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>The external ID. <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79HHBK87062K0SFWGE3"> </h4>
+<h3 id="header-165">POST /panel/panelists/group/{groupId}/list</h3>
+<p>returns a list of panelists in a specific panel group</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{ "returnDataFields": [ "Example" ] }</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[ [ "Example" ] ]</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p

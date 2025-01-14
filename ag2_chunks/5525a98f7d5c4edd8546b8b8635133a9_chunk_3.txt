@@ -1,0 +1,68 @@
+ start="1" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="6823">Reporting accounts will usually be ordered by the customer</p>
+</li>
+<li>
+<p data-renderer-start-pos="6885">Log in to the customer's installation</p>
+</li>
+<li>
+<p data-renderer-start-pos="6926">Navigate to <strong>Users</strong> to check whether the intended recipient already has an account</p>
+</li>
+<li>
+<p data-renderer-start-pos="7012">If this is the case, navigate to projects, search for the project the report should be granted for, click the <strong>§</strong> icon and grant read-access to the team in question</p>
+</li>
+<li>
+<p data-renderer-start-pos="7178">If this is not the case, navigate to teams, create a team using the reporting-rights template, navigate to projects, search for the project the report should be granted for, click the <strong>§</strong> icon and grant read-access to the team</p>
+<ol class="ak-ol" start="1" data-indent-level="2">
+<li>
+<p data-renderer-start-pos="7406">Navigate to <strong>Users</strong> and create an account in the team that you just created. Set organization to the customer's organization.</p>
+</li>
+</ol>
+</li>
+<li>
+<p data-renderer-start-pos="7537">Send login information to the person you just created the account for</p>
+</li>
+<li>
+<p data-renderer-start-pos="7610">Inform requester, that reporting access has been granted</p>
+</li>
+</ol>
+<h2 id="email-templates">Email Templates for Sending Login Information for Accounts</h2>
+<table border="1">
+<tbody>
+<tr>
+<th style="width: 342.234px;">Template German</th>
+<th style="width: 350.766px;">Template English</th>
+</tr>
+<tr>
+<td style="width: 334.234px;">
+<p>Subject: Ihre Zugangsdaten für EFS Survey von TIVIAN</p>
+<p>Sehr geehrte/r Frau/Herr ...</p>
+<p>vielen Dank für Ihr Interesse an den Produkten der TIVIAN.<br>Anbei finden Sie Ihre Zugangsdaten zu EFS Survey.</p>
+<p>Installations-URL:<br>Accountname:<br>hinterlegte E-Mail-Adresse:</p>
+<p>Aus Sicherheitsgründen wird Ihnen der Link zum Neusetzen des Passworts<br>in einer separaten E-Mail zugeschickt.</p>
+<p>Bitte beachten Sie, dass Sie beim ersten Login aufgefordert werden Ihr<br>Passwort zu setzen und Ihre Sicherheitsfrage festzulegen. Sollte dies nicht der Fall sein, kontaktieren Sie bitte den Tivian-Support, indem Sie dieser Anleitung folgen: <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20342435048210" target="_blank" rel="noopener noreferrer">Getting the most out of Discover XI ATLAS Support Chat</a>.</p>
+<p>Mit freundlichen Grüßen</p>
+</td>
+<td style="width: 342.766px;">
+<p>Subject: Your login data for EFS Survey by TIVIAN</p>
+<p>Dear ...</p>
+<p>thank you for your interest in the products offered by TIVIAN.</p>
+<p>Please find hereafter your access data for EFS Survey</p>
+<p>Installation-URL:<br>Accountname:<br>Registered e-mail address:</p>
+<p>For security reasons your password will be sent in a separate mail.</p>
+<p>Please note that upon first logging in you will be asked to change<br>your password and select a security question.<br>Should this not be the case, please contact Tivian Support by following this guide: <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20342435048210" target="_blank" rel="noopener noreferrer">Getting the most out of Discover XI ATLAS Support Chat</a>.</p>
+<p>With kind regards</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p> </p>
+<h2 id="combined-export">Combined Export of Participant Details and Survey Results </h2>
+<ul>
+<li>Create a team: name this team &lt;same team name as the already had&gt;_dp<br>Assign ACL rights template "decontrol_privacy", (which normally is a standard team on all instances<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21180423513234">
+</li>
+<li>Add user to the team</li>
+</ul>
+<p>Users would be able to see the combined export option after that.</p>
+</article>

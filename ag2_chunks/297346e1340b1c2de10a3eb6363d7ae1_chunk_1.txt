@@ -1,0 +1,71 @@
+</em> to activate the Plugin. If <code>$__has_routing_plugin = false</code>, the Routing-Plugin will be ignored.</p><h3 id="header-7">Notes</h3><ul>
+<li><p>A <em>Parse error</em> in this file forces a HTTP 500-Error (<em>internal server error</em>) for <strong>all</strong> Requests!</p></li>
+<li><p>Keep this function performant - being called in every Request it could be a Bottleneck.</p></li>
+<li><p>Having no <code>.htaccess</code> files this Module maybe an option for you.</p></li>
+</ul><h3 id="header-8">Example</h3><pre><code class="language-text">&lt;?php
+/*
+s. Doku: https://it.globalpark.de/twiki/bin/view/Development/DevEFSGuidelineCustomizing#Custom_Request_handling_Routing
+*/
+
+function custom_routing_plugin($originalUri)
+{
+        // handle all requests for https://www.peng.com/hihi* originaluri everytime include the protocol(e.g.https and a closing Slash)
+        if (preg_match('/^http[s]{0,1}:\/\/www.sozialerhebung.at(:443){0,1}\/$/',$originalUri)) {
+                header('Location: http://www.aha.com');
+                die();
+        }
+        
+        // this should not be activated in production unless intended
+        if ($_SERVER['REQUEST_METHOD']=='POST') { 
+                print "POST REQUESTS ARE NOT ALLOWED";
+                die();
+        }
+        
+        
+        // fallthrough, meaning EFS will take care of the rest and proceed with its normal request handling
+}</code></pre><p>Forward everything matching <a href="https://unipark.de/uc/KW/BIandAI/">uc/KW/BIandAI/</a> from one installation to another installation.</p><pre><code class="language-text">if (preg_match('/\/uc\/KW\/BIandAI/',$originalUri))
+ {
+                header('Location: https://ua4250.customervoice360.com/uc/KW/BIandAI/');
+                die();
+        }</code></pre><p>To test the routing before going live, you should put an if condition around the code so that the routing only applies for our internal IP address: Since the move to Frankfurt HTTP_X_FORWARDED_FOR has to be used instead of REMOTE_ADDR:</p><pre><code class="language-text">if ($_SERVER['HTTP_X_FORWARDED_FOR']=='87.79.30.2'){     //or 87.79.30.37 when connected via office vpn, OLD: REMOTE_ADDR, NEW: HTTP_X_FORWARDED_FOR
+        // actual routing code
+        if (preg_match('/^http:\/\/(www\.)?justisvarsel.no\/$/',$originalUri)) {
+                header('Location: https://dh8342.customervoice360.com/uc/admin/b6cb/');
+                die();
+        }
+}</code></pre><p></p><p>Another Example, which has been used to implement a beyond 200 character limit IP white listing for a survey at <a href="http://cs-culture360.com">cs-culture360.com</a>:</p><p></p><pre><code class="language-text">&lt;?php
+/*
+s. Doku: https://it.globalpark.de/twiki/bin/view/Development/DevEFSGuidelineCustomizing#Custom_Request_handling_Routing
+*/
+
+function custom_routing_plugin($originalUri)
+{
+        // if( $_SERVER['HTTP_X_FORWARDED_FOR'] == '87.79.30.2' ) {    //or 87.79.30.37 when connected via office vpn
+        
+        if (preg_match('/\/uc\/admin\/746a/',$originalUri)) {
+                
+                $tobechecked = $_SERVER['HTTP_X_FORWARDED_FOR'];
+                $single_IPs = array(
+                "198.240.130.75",
+                "198.240.146.75",
+                "198.240.131.75",
+                "198.240.141.75",
+                "198.240.133.75",
+                "198.147.160.75",
+                "198.240.128.75",
+                "87.79.30.2",     // Office-IP-Colonia
+                "195.171.100.4"   // Office-IP-Londinium
+                );
+                
+                if ( !(CheckIpRange($tobechecked,"198.240.212.1","198.240.212.254")
+                || CheckIpRange($tobechecked,"198.240.213.1","198.240.213.254")
+                || CheckIpRange($tobechecked,"164.143.0.1","164.143.255.254")
+                || CheckIpRange($tobechecked,"87.101.226.105","87.101.226.110")
+                || in_array($tobechecked,$single_IPs)))
+                
+                {
+                        header('Location: https://xy1234.customervoice360.com/uc/ipcheck/originalprojectname
+                        //     optional project to display a message instead of a blank page and mimics the exact behaviour of the default functionality
+                        // 1) create an AN copy of the original survey and turn off the use of cookies and privacy assistant
+                        // 2) remove all pages except one page with a 998 question where you add the orginal message text that should be shown if the IP check fails
+                        // 3) rename the "Continue" button to "

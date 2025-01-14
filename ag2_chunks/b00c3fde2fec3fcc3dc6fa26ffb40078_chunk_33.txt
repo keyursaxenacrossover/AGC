@@ -1,0 +1,53 @@
+-related options.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">To access the defined options in the template you can use the <em>question_info</em> variable. You can find your <strong>options groups</strong> in the <em>question_info.settings.questionTypeOptions</em> object. For the “orientation”-option it looks like this:</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015444625554" alt="image2019-3-12_15-57-58.png"></p>
+<p class="wysiwyg-text-align-justify"><strong>Answer options</strong></p>
+<p class="wysiwyg-text-align-justify">In the<strong> Answer Options</strong> section, you define the initially available answer options for your question type. In matrix type question types every answer option stands for a dimension. In multiple-choice question types, they represent the checkboxes and in single-choice question types, you will not have this section at all, as these have exactly one answer option.</p>
+<p class="wysiwyg-text-align-justify"><strong>Scale elements</strong></p>
+<p class="wysiwyg-text-align-justify">In the <strong>Scale Element</strong>s section, you set the possible answer values (codes). In matrix type question types every element stands for a column. In single-choice question types they represent the radio buttons, whereas in multiple-choice question types, you don’t have this section, because every checkbox has exactly two scale elements with the values “0” and “1”.</p>
+<p class="wysiwyg-text-align-justify"><strong>Question editor features</strong></p>
+<p class="wysiwyg-text-align-justify">In this section, you can enable or disable a variety of features for your question type. Which ones are available depends on the category of your question type. For example, matrix-type question types have different features available than single-choice question types.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Please refer to the info-text of each feature to get a description of what the feature does</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Configuration</strong></p>
+<p class="wysiwyg-text-align-justify">Here you can change the name of the question type.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>This applies only to the displayed name. It does not change the initially created internal name, as you would have to update the template, CSS, and JavaScript files to match the updated name.</p>
+</li>
+</ul>
+<h3 id="ressources" class="wysiwyg-text-align-justify"><strong>Resources</strong></h3>
+<p class="wysiwyg-text-align-justify">In the Resources area, you can manage the files that you need for your question type. These fall into two categories:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Files that you use as the default value for “Resource”-options (image, audio, or video files).</p>
+</li>
+<li>
+<p>Files that you need to include in your code (i.e. JavaScript libraries).</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">In any case, you first upload your files by clicking on the upload icon next to the “Resources”-entry in the list on the left.</p>
+<p class="wysiwyg-text-align-justify"><strong>Using a resource in an option</strong></p>
+<p class="wysiwyg-text-align-justify">Now that we have uploaded some files, those can be recycled for use in the Options menu, for options of the type “resource”. We will use the image as the default value for a “Resource”-option.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Go to the <strong>Settings</strong> area, expand <strong>Question type options,</strong> and click on “Add option” inside an <strong>Options group</strong>.</p>
+</li>
+<li>
+<p>Select “Resource” from the menu and enter values for the options name, label and help text.</p>
+</li>
+<li>
+<p>Select “test.jpg” from the select box to assign it as the default value.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The respective image will be displayed as default once you are creating a new question of your question type. To access the image in your template you can do (without linebreaks):</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015414458514" alt="image2019-3-12_16-13-32.png"></p>
+<p class="wysiwyg-text-align-justify">You can also enter the following in the JavaScript file:</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015444628498" alt="image2019-3-12_16-15-8.png"></p>
+<p class="wysiwyg-text-align-justify"><strong>Using a resource directly</strong></p>
+<p class="wysiwyg-text-align-justify">

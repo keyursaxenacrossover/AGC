@@ -1,0 +1,52 @@
+” template. This field is only displayed for websites with several language versions.</li>
+<li>Subnavigation: The “tpl_subnav” template.</li>
+<li>Navigation: The “tpl_navigation” template. Depending on whether or not the viewer is logged in, this area contains different functions, which in turn are defined by two different templates.</li>
+<li>Messages: The “tpl_error_messages” template.</li>
+<li>Login: The “tpl_login_in” and “tpl_login_out” templates for logged-in panelists and visitors who are not logged in.</li>
+<li>Breadcrumb: The “tpl_breadcrumb” template.</li>
+<li>
+<p>Actual content area: This is filled for each page with the help of content and function modules.</p>
+</li>
+<li>
+<p>Social bookmarks bar: Template “tpl_bookmarks”. (Social bookmarking is the collective indexing of web pages and other online resources.)</p>
+</li>
+</ol>
+<h2 id="managing-templates" class="wysiwyg-text-align-justify"><strong>Managing Templates</strong></h2>
+<h3 id="template-overview" class="wysiwyg-text-align-justify"><strong>Template Overview</strong></h3>
+<p class="wysiwyg-text-align-justify">A language version’s templates are located in the “Templates” tab in the tree view in the menu <strong>Website → Website editor</strong>.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>The “Templates” tree view shows all templates and system templates.</li>
+<li>The<strong> Lock</strong> icon indicates the respective publishing status.</li>
+<li>The i icon allows you to access detailed information (template name, file name, size, usage, status). The column “Usage” shows how often and on which pages the respective template is used. It considers integration as the main template, positioning template, or page module template. Integration via Smarty includes commands that cannot be considered, though.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The following actions are available:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>The <strong>+ Template</strong> button opens the dialog where you can enter the data for a new template.</li>
+<li>
+<p>Clicking on a template opens its content in the editor.</p>
+</li>
+<li>
+<p><strong>Copy template</strong>: The template is copied, and a new template name has to be entered. </p>
+</li>
+<li>
+<p><strong>Delete template</strong>: The template will be deleted following a confirmation prompt.</p>
+</li>
+<li>
+<p><strong>Save</strong>: Saves the template. It is subsequently available in the working version. Please note: In the publicly accessible version, the template is only available once it has been<em> published</em>.</p>
+</li>
+<li>
+<p><strong>Save &amp; Publish</strong>: The template is published. This means it is not only available in the working version but also in the online version.</p>
+</li>
+</ul>
+<h3 id="categorizing-templates" class="wysiwyg-text-align-justify"><strong>Categorizing Templates</strong></h3>
+<p class="wysiwyg-text-align-justify">Smarty templates are categorized by the task they perform: This categorization allows the dynamic sorting or shortening of long lists of templates when it is clear which type will be required for a certain task. For example, when selecting positioning templates only general and positioning templates will be displayed. This makes it easier to find what you are looking for when working with panels where the website editor contains numerous templates.</p>
+<p class="wysiwyg-text-align-justify">Categorizing is performed manually, the names of the templates are not relevant. In the standard panel, the template nomenclature is based on the categories to make the structure transparent. However, you do not have to adopt this approach.</p>
+<p class="wysiwyg-text-align-justify"><strong>Categories</strong></p>
+<p class="wysiwyg-text-align-justify">The following categories are used:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Main templates: Templates responsible for the general page structure.<br>– In the standard panel, the names of these templates start with “main_”.</li>
+<li>Global templates: These templates usually control overall layout components, such as login or navigation. They are incorporated in a main template.<br>– In the standard panel, the names of these templates start with “tpl_”.</li>
+<li>Templates for function modules: Templates linked to function modules.<br>– In the standard panel, the names of these templates start with “func_”.<br>– Function module and template are linked on the <strong>Edit page</strong> tab in the “Module template” field of the desired module.</li>
+<li>Templates for content modules: Templates linked to content modules.<br>– In the standard panel, the names of these templates start with “cont_”.<br>– Content module and template are also linked on the <strong>Edit page</strong> tab in the</li>
+<li>“Module template” field of the desired module.</li>
+<li>Positioning templates: If several content modules are placed on a panel page, the contents are listed beneath each other, by default. With the help of positioning templates, however, you can create a different segmentation. On the standard panel homepage, for example, three text columns – each filled using a separate content module – are output next to each other with the help of a positioning template.<br>– In the standard panel

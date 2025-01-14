@@ -1,0 +1,46 @@
+; Options &gt; Service-Layer &gt; ‘[used service]’ Actions column &gt; Rights</strong></p>
+</li>
+<li>
+<p>If the used service is limited by an IP range and if the call is within this range → Compare IP in <strong>System &gt; Options &gt;&gt; Service-Layer &gt; Access log</strong> with <strong>System &gt; Options &gt; Service-Layer &gt; ‘[used service]’ column “IP range”</strong></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Does the team in which the user to whom the used token is assigned have the appropriate ACL rights that are required for the functionality that is to be accessed via web service?</p>
+<ol>
+<li>
+<p>Check if any of the teams of the user the token is assigned to has the needed ACL rights → <strong>System &gt; Users &gt; Teams” “Detail view &gt; Change rights of team</strong></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Does any of <strong>the teams of the account the used token is assigned to have access to the object</strong> (i. e. a project)?</p>
+<ol>
+<li>
+<p>Check if the any of the teams of the user the token is assigned to has object rights → <strong>Projects &gt; Survey menu &gt; Change rights</strong></p>
+</li>
+</ol>
+</li>
+</ol>
+<p>Example request to showcase the process: <strong><a href="https://tivian.atlassian.net/browse/TIVI-7675" target="_blank" rel="noopener noreferrer">TIVI-7675</a> (to be replaced with ZD URL after the import)</strong></p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq_1">How can I check which services I have access to?</h3>
+<p>You can easily check your accessible services by calling the WSDL with your token using this URL format: https://customers_domain/service/?handler=soap&amp;wsdl=1&amp;token=[TOKEN]</p>
+<h3 id="faq_2">What should I do if a service is not working as expected?</h3>
+<p>First, verify that all the steps in the "Help for Support Requests" section have been followed. If the issue persists, it may be necessary to open a support ticket for further investigation.</p>
+<h3 id="faq_3">Can multiple teams have access to the same service?</h3>
+<p>Yes, multiple teams can have access to the same service. You'll need to grant the necessary rights and permissions to each team that requires access.</p>
+</article> Change rights</strong></p>
+</li>
+</ol>
+</li>
+</ol>
+<p>Example request to showcase the process: <strong><a href="https://tivian.atlassian.net/browse/TIVI-7675" target="_blank" rel="noopener noreferrer">TIVI-7675</a> (to be replaced with ZD URL after the import)</strong></p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq_1">How can I check which services I have access to?</h3>
+<p>You can easily check your accessible services by calling the WSDL with your token using this URL format: https://customers_domain/service/?handler=soap&amp;wsdl=1&amp;token=[TOKEN]</p>
+<h3 id="faq_2">What should I do if a service is not working as expected?</h3>
+<p>First, verify that all the steps in the "Help for Support Requests" section have been followed. If the issue persists, it may be necessary to open a support ticket for further investigation.</p>
+<h3 id="faq_3">Can multiple teams have access to the same service?</h3>
+<p>Yes, multiple teams can have access to the same service. You'll need to grant the necessary rights and permissions to each team that requires access.</p>
+</article>

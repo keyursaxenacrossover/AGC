@@ -1,0 +1,50 @@
+<h1 id="h_01J6EP81ZSN4QJCK5ZK2F3TK6Q">Overview</h1>
+<p>This guide provides a comprehensive introduction to key authentication concepts and mechanisms used in secure systems, particularly in the context of Okta and related technologies.</p>
+<p> </p>
+<ul>
+<li><a href="#header-1">SSO - Single Sign On</a></li>
+<li><a href="#01J6ENBWCW8163RTE59P7CBGTV">MFA - Multi-Factor Authentication</a></li>
+<li><a href="#01J6ENET6R1KESH2NG86WG3MA1">Federation/Federated Authentication</a></li>
+<li><a href="#01J6ENJFHTBY3V2JQH1VB7C2F0">Open ID Connect Tokens</a></li>
+</ul>
+<p> </p>
+<h2 id="header-1">SSO - Single Sign On</h2>
+<p>A user has to log in once in one context (browser, smartphone, operating system). If the user is authenticated in one app the user is also authenticated in another app in that context.</p>
+<p>Example: I log in to GMail in Mozilla, I navigate to Google Docs → I am already logged in at Google Docs</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21036388065938"></p>
+<p> </p>
+<h2 id="01J6ENBWCW8163RTE59P7CBGTV">MFA - Multi-Factor Authentication</h2>
+<p>A user needs more than one factor to login. This strengthens the assumption, that the one trying to log in is really the user, that is expected.</p>
+<p>Example: (2-Factor-Authentication) If I log in to AWS I need to provide my username and password as well as a code that is sent to my smartphone. There I prove that I not only know the username and password combination but am also the owner of the user's phone.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21036388067346"></p>
+<p> </p>
+<h2 id="01J6ENET6R1KESH2NG86WG3MA1">Federation/Federated Authentication</h2>
+<p>Federated Authentication is when the user is sent to another Identity Provider for the authentication process.</p>
+<p>The benefits of this are that the credentials of the user are managed and known in only one place (the federated external Identity Provider).</p>
+<p><strong>Example: </strong>A client (e.g: Coca Cola) has its own Identity Provider in place. They federate with our Identity Provider and Coca Cola Employees can sign into EFS using their corporate credentials. If they change their password it has to be only done once on Coca Cola side. They also use these credentials for their intranet/tools, so they will not forget their credentials.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21036388069010"></p>
+<p> </p>
+<h2 id="01J6ENJFHTBY3V2JQH1VB7C2F0">Open ID Connect Tokens</h2>
+<p>The IdP will create the access token with some basic information about the user to give applications the possibility to check whether a user is allowed to access a resource.</p>
+<p> </p>
+<p>The Access token is a JWT token that has to be validated by a server component. At least the following field should be validated:</p>
+<ul>
+<li>
+<p><strong>Signature:</strong> Every JWT has a signature that can be validated with the information in the header of the JWT as well as public secrets that can be retrieved from the well-known/discovery route of the IdP</p>
+</li>
+<li>
+<p><strong>Audience (JWT name: aud):</strong> The audience has to match the application that requested the token.</p>
+</li>
+<li>
+<p><strong>Expiration Time (JWT name: nbf, exp)</strong>: Check if the token is not valid from a time perspective. nbf (not-before) will give a hint when the token starts to be valid and exp (expires in) give a hint when the token expires.</p>
+</li>
+<li>
+<p><strong>Issuer (JWT name: iss):</strong> This will be the specific Azure AD B2C App that issued the token. It will therefore start with the B2C domain and subdomain followed by the ID of the App Registration that is connected to Azure B2C.</p>
+</li>
+<li>
+<p><strong>Nonce (JWT name: nonce):</strong> The nonce should be set in the authentication request and will be the same value in the authentication response. This should be checked. If possible just use some random value.</p>
+</li>
+</ul>
+<p>There should also be an "<strong>acr</strong>" claim that describes the flow the user used to authenticate. It can be read to identify the specific flow.</p>
+<p> </p>
+<p> </p>

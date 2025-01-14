@@ -1,0 +1,38 @@
+ of the Project properties.</p>
+<h3 id="header-9">Keyboard control of the questionnaire editor</h3>
+<p>As of the winter release, the questionnaire editor can be controlled by keyboard as follows: By clicking on + New question, the text box in which the question title can be entered is activated. Using the tab key, you can use the filter to jump to the question type selection. Because scrolling is not possible in the traditional sense, the individual question types must be scrolled through with the up-down arrow keys to change the superordinate question type category. If a question with title has been created before, this title is displayed as a suggestion when you browse through the question types. The control of the questionnaire editor via keyboard works equally well in the standard browsers Firefox, Chrome and Internet Explorer.</p>
+<h3 id="header-10">Layout update button</h3>
+<p>In order to not only be informed about the EFS updates concerning the layout, but also to adopt them for a called project, a hint field is displayed in the Project information of the survey menu, which has the button “Apply layout updates”.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998543598866" alt="c8d0849c-0601-4a98-83f2-b8eb43f5f24b"></p>
+<p>It is also worth knowing that the changes refer exclusively to the layout and there is no risk of data loss. In addition, recent and future bug fixes can only take effect after applying the layout updates. It is recommended that you execute the update if the system recommends it. Layout migration is not possible with this feature.</p>
+<p> </p>
+<h2 id="header-12">MySight</h2>
+<h3 id="header-14">Update for published data sources</h3>
+<p>Previously published MySight projects could only be adapted retrospectively to a very limited extent. From now on, you can withdraw publications to both add and remove variable fields by clicking on the U-lock icon and unlocking the published MySight project. These changes can affect splits, recordings and new tables. After the changes, the project must be published again. The following must be noted: This feature can only be used in projects that have not been published before the winter release.</p>
+<h3 id="header-15">Multi language dashboards</h3>
+<p>From now on, all survey languages created in an EFS project will be listed in MySight under the item “Language” and transmitted to Tableau as soon as the corresponding project is published. The user then filters which of the languages is to be displayed.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998529952146" alt="d7907c6f-d67b-45c2-9e6d-9d9a79302a10"></p>
+<h3 id="header-16">External variables</h3>
+<p>As of this release, the variables output_varname, gp_type and varname are also transferred to Tableau and can be used there. The variables can be found in the “Question” section under “External Variable Name”, ”Question Type” and “Var Name”. The additional information can only be viewed in the question table. The split tables remain unaffected.</p>
+<h3 id="header-17">Unique split names</h3>
+<p>From now on the elements of the drill path use the following pattern: “Split PID VARNAME INDEX”. The paths looks like:</p>
+<ul>
+<li>
+<p>Split 123 v_15 1</p>
+</li>
+<li>
+<p>Split 123v_15 2</p>
+</li>
+<li>
+<p>Split 123v_15 3</p>
+</li>
+</ul>
+<p>The label of the split can be found under “Measure”. It is adjusted analogously and uses the following pattern: “Split PID VARNAME”. “Split by v_15” becomes “Split 123 v_15”. This change of the labels does not affect existing dashboards</p>
+<p> </p>
+<h2 id="header-19">Portals</h2>
+<h3 id="header-21">Feedback Assistant: new dashboard functions</h3>
+<p>Use the corresponding icon on the survey tile to access the dashboard of the Feedback Assistant survey. There you have the functions of e-mail forwarding and PDF and PNG download to share the result data even more easily. If you choose “Forward via email”, the standard mail client opens. All participants of the survey have already been included in the recipient line.</p>
+<h3 id="header-22">Feedback Assistant: Manager Participation</h3>
+<p>You control the manager's participation in a Feedback Assistant survey by specifying in a personalized project under the item "template configuration" whether the manager never or always participates in a survey or whether he or she can decide about his or her participation.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998497324434" alt="8be07ff5-5a13-4808-9c58-45f882d2fc4d"></p>
+<p>As soon as the participant is selected during the creation of a Feedback Assistant survey, there is a slide switch on the right-hand side, whose control option is based on the definition under “Template configuration”. If you have decided upon never or always, the switch cannot be moved: The manager either participates in all surveys or not.

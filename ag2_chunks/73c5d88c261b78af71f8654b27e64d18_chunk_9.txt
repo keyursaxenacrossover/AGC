@@ -1,0 +1,67 @@
+ detail</strong></p>
+<p class="wysiwyg-text-align-justify">In the overview table of the <strong>Project properties</strong> → <strong>Website settings</strong> menu, you can configure the following settings for each language version:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Name of the survey displayed on the website: The label that is used in the survey list on the panelists’ personalized homepage, among other things. If no language version-specific title is entered, the internal admin area project title will be used. Wildcard: {$s.survey_title}</p>
+</li>
+<li>
+<p>Survey description: Detailed description of the survey that can be used, for example, in the survey list on the panelists’ personalized homepage. If no language version-specific text is entered, the description from the „Change project“ dialog will be used. Wildcard: {$s.survey_description}</p>
+</li>
+<li>
+<p>Displayed user-defined label: Selected surveys can be highlighted with specific notes or icons. Wildcard: {$s.survey_extra_label}</p>
+</li>
+<li>
+<p>Sorting category: The surveys displayed in the survey list can be grouped by assigning them to one of ten predefined categories.</p>
+</li>
+<li>
+<p>Hide survey for language version: If this checkbox is ticked, the survey will not appear in the survey list on the panelists’ personalized homepage.</p>
+<ul>
+<li>
+<p>By default, all projects are activated in all language versions.</p>
+</li>
+<li>
+<p>Please note that panelists can still participate in a hidden survey if they are provided with a link to the survey: As usual, access to the survey depends only on the panelists’ sample membership.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Special programs allow to highlight of important surveys. The desired surveys are selected using the checkbox in the “Featured” column.</p>
+</li>
+<li>
+<p>Surveys can be visualized with images. To do so, select the desired image in the column “Image”.</p>
+</li>
+</ul>
+<h3 id="highlighting-surveys-in-the-survey-or-to-do-list" class="wysiwyg-text-align-justify"><strong>Highlighting surveys in the Survey or To-do List</strong></h3>
+<p class="wysiwyg-text-align-justify">The survey or to-do list on the personalized homepage provides the panelists with an overview of the active panel and master data surveys. Usually, the titles are listed with the corresponding field times and bonus points. You can highlight selected surveys additionally with specific notes or icons. This makes sense, for example, in the case of new surveys, surveys with special incentives, or regular weekly surveys.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>There are three user-defined labels available which can be filled with different content or images in each language version.</p>
+</li>
+<li>
+<p>In each language version, one of these labels can be assigned to a survey.</p>
+</li>
+<li>
+<p>The user-defined labels are usually displayed along with the number of bonus points.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Defining user-defined labels and assigning them to the surveys</strong></p>
+<p class="wysiwyg-text-align-justify">If you wish to use the user-defined labels, please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>First, you have to adapt the user-defined labels to the respective language version. To do so, open the Configuration tab of the appropriate language version in the website editor. In the “Surveys” section you can enter the desired labels. Alternatively, you may also reference an image from the panel’s media library via an absolute link.</p>
+</li>
+<li>
+<p>In the “Displayed gratification type” column of the <strong>Projects</strong> → {Selected project} → <strong>Project properties → Website settings</strong> menu, you can define which label should be used for a survey in a specific language version.</p>
+</li>
+</ul>
+<h2 id="portal-settings" class="wysiwyg-text-align-justify"><strong>Portal Settings</strong></h2>
+<p class="wysiwyg-text-align-justify">In this dialog, you can define if and how the project should be displayed in the portals of the panel.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014884227986" alt="Portal settings.jpg"></p>
+<h2 id="bonus-points-configuration" class="wysiwyg-text-align-justify"><strong>Bonus points configuration</strong></h2>
+<p class="wysiwyg-text-align-justify">If you wish to reward participation in a panel survey or a master data survey, you can choose among the following options:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Allocation of bonus points on the system's final page: Usually, you want to reward the completion of the questionnaire. Specify the desired amount of bonus points in the menu<strong> Project properties</strong> →<strong> Survey messages</strong> menu in the “Number of bonus points to allot when reaching standard final page” field.</p>
+</li>
+<li>
+<p>Allocation of bonus points on additionally created intermediate final pages: If you want to allocate points on intermediate final pages as well, you can define the desired amounts for each page in the menu <strong

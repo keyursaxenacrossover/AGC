@@ -1,0 +1,57 @@
+<p>CONCAT('My', 'S', 'QL');</p>
+<p>→ 'MySQL'</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 153.264px;">date_format</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 274.115px;">
+<p>DATE_FORMAT(date,format)</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 254.306px;">
+<p>Formats the date value according to the format string.</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 308.75px;">
+<p>DATE_FORMAT ('1997-10-04 22:23:00', '%W %M %Y');</p>
+<p>→ 'Saturday October 1997'</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 153.264px;">datediff</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 274.115px;">
+<p>DATEDIFF(expr,expr2)</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 254.306px;">
+<p>Returns expr1 – expr2 expressed as a value in days from one date to the other.</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 308.75px;">
+<p>DATEDIFF('1997-12-31 23:59:59', '1997-12-30');</p>
+<p>→ 1</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 153.264px;">day</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 274.115px;">DAY(date)</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 254.306px;">
+<p>Returns the day of the month for date, in the range 1 to 31.</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 308.75px;">
+<p>DAYOFMONTH('1998-02-03');</p>
+<p>→ 3</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 153.264px;">floor</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 274.115px;">FLOOR(X)</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 254.306px;">
+<p>Returns the largest integer value not greater than X.</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 308.75px;">
+<p>FLOOR(1.23);</p>
+<p>→ 1</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 153.264px;">from_unixtime</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 274.115px;">
+<p>FROM_UNIXTIME (unix_timestamp)</p>
+<p>FROM_UNIXTIME (unix_timestamp,

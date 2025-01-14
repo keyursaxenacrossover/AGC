@@ -1,0 +1,42 @@
+<h1 id="h_01J2GEN6T7EJDAGGDQX6JR9QDP">Introduction</h1>
+<p>Welcome to the "minimal" <strong>Discover XI</strong> KT guide. This guide will get you familiar with the product basics, so that you can get started with supporting Tivian DXI.</p>
+<p>Please note that this is still a work in progress, so more content is on its way to you!</p>
+<h1 id="h_01J2GENJ1RWFR7Z4FTH0JW3C6X">First things first - accesses!</h1>
+<p>Go through the <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20434985085586-Discover-XI-DXI-Agent-Access-Guide-WIP">Discover XI (DXI) Agent Access Guide</a> and make sure you request all accesses before moving forward.</p>
+<p>Once you've requested them, you can proceed with the next steps.</p>
+<h1 id="h_01J2GKEY21F2TSY9T16KMD4Y8N">Getting familiar &amp; hands-on</h1>
+<h2 id="h_01J4K8DGCZD38YVCZK2NCAKCW9">DXI Basic Overview</h2>
+<p><span class="wysiwyg-underline"><strong>For all intents and purposes of this training:</strong></span></p>
+<ul>
+<li>Project = Survey (legacy Tivian team and even customers may refer to a project as a "survey")</li>
+<li>Globalpark = Questback = EFS = Tivian XI = DXI (the product has undergone multiple rebrandings overtime)</li>
+</ul>
+<p>The <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20327003733138" target="_blank" rel="noopener noreferrer">DXI Glossary</a> will help you go through the terms that you are not familiar with while learning the product, so it is best to keep this handy for easy reference.</p>
+<p>Before going deeper, please review the below resources that should give you an overall idea of what DXI is, and overall architecture of the product, so you have a better starting point:</p>
+<ul>
+<li><a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20371082697362" target="_blank" rel="noopener noreferrer">DXI Enterprise Feedback Suite Overview</a></li>
+<li><a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20591442103314" target="_blank" rel="noopener noreferrer">EFS Architecture and Building Blocks - Technical Overview</a></li>
+<li><a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20591344055826" target="_blank" rel="noopener noreferrer">Third Party Software/Technologies Used in EFS</a></li>
+</ul>
+<p>As you may have inferred from the above articles/s, <strong>DXI is organized in modules</strong>, each serving a different purpose, so we will take them one by one. But first... 🥁</p>
+<h2 id="h_01J2GKEY21W8T3JMMC2SYAC8S2">Create your own user</h2>
+<p>In <strong>PasswordState</strong>, there is a shared user for this activity (<strong>shared_support</strong>). So go to Password state to snatch the credentials, and then proceed to creating your own user, as guided in <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20304634869650-Account-Team-Organization-Management-in-EFS#create-user-accounts">Account, Team, Organization Management in EFS</a>, with the following options:</p>
+<ol>
+<li>Username to match your DF AD</li>
+<li>Your Trilogy email</li>
+<li>Mark <strong>all teams</strong>
+</li>
+<li>Primary team: <strong>System</strong> <strong>Administrator</strong>
+</li>
+<li>Organization: <strong>TIVIAN</strong>
+</li>
+<li>Select your time zone</li>
+</ol>
+<p>Once that is done, <strong>logout of the shared user</strong>, and then <strong>login with your fresh account</strong> to get tackle the training.</p>
+<p><em><strong>Make sure you bookmark that instance URL, as that will be our internal training and test instance.</strong></em></p>
+<p>Best learning path is hands-on, so we'll dive right into things.</p>
+<h1 id="h_01J4RRDGB4Y11VVZRQ4F0YFAKR">Training Modules</h1>
+<p>Each module will have its own dedicated article, and you can access each individual training module using the below links.</p>
+<ol>
+<li id="h_01J4KQJVRYRQWWMW1F1EKNS0Z6"><a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20635916162706" target="_blank" rel="noopener noreferrer">Projects Module Training</a></li>
+<li id="h_01J4PF3HWVDDK070BN45YE2V4P"><a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20636442775314" target="_blank" rel="noopener

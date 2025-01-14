@@ -1,0 +1,119 @@
+Multifactor Authentication</h2></td>
+<td><ul>
+<li><p>Enable MFA option in SSO provider</p></li>
+<li><p>Derive workflow from provider</p></li>
+<li>
+<p>Ideal workflow: see Okta MFA</p>
+<ul>
+<li><p>… </p></li>
+<li><p>E-mail</p></li>
+<li><p>App</p></li>
+<li><p>Biometrie</p></li>
+</ul>
+</li>
+</ul></td>
+</tr>
+<tr>
+<td><p><strong>W11</strong></p></td>
+<td><h2 id="header-32">Logout</h2></td>
+<td><p>In case user logs out from one application he will also be logged out from all other applications directly, ie session is killed (token expires)</p></td>
+</tr>
+<tr>
+<td><p><strong>W12</strong></p></td>
+<td><h2 id="header-33">Registration</h2></td>
+<td><ul>
+<li>
+<p>User registers in <strong>application </strong>with his data</p>
+<ul>
+<li><p>name</p></li>
+<li><p>first name</p></li>
+<li><p>mail</p></li>
+<li><p>(acccount name)</p></li>
+</ul>
+</li>
+<li><p>He gets the actvation mail with link </p></li>
+<li>
+<p>When clicking on the link he is forwarded to a page with</p>
+<ul>
+<li><p>a preset e-mail address that cannot be edited </p></li>
+<li><p>a pw input field</p></li>
+</ul>
+</li>
+</ul></td>
+</tr>
+</tbody>
+</table><p></p><div class="expand-macro">
+<h4 string="History"></h4>
+<h2 id="header-34">Create </h2>
+<ul>
+<li>
+<p>User is created in application with the following properties</p>
+<ul>
+<li><p>Name</p></li>
+<li><p>First name</p></li>
+<li><p>E-mail</p></li>
+<li><p>(Accout name?)</p></li>
+</ul>
+</li>
+<li><p>Sync user data and application url to SSO Provider and create new user</p></li>
+<li>
+<p><strong>Activation</strong> mail to new user</p>
+<ul><li>
+<p>Login link of the application (installation)</p>
+<ul>
+<li><p>user clicks on the link and is forwarded to a page where he needs to enter a password</p></li>
+<li><p>after confirming the password he is logged in the application</p></li>
+</ul>
+</li></ul>
+</li>
+<li>
+<p><strong>Same</strong> user is created in an additional application</p>
+<ul><li><p>Sync user data and application url to SSO Provider </p></li></ul>
+</li>
+<li><p>User will see Login mask only once session is expired</p></li>
+</ul>
+<p></p>
+<h2 id="header-35">Edit (Sync process)</h2>
+<h3 id="header-37">Change in application (Sync Upwards)</h3>
+<ul>
+<li>
+<p>User data is changed in one application</p>
+<ul>
+<li><p>New Name</p></li>
+<li><p>New First name</p></li>
+<li><p>New E-mail</p></li>
+<li><p>(Accout name?)</p></li>
+</ul>
+</li>
+<li><p>Sync changed user data to SSO Provider</p></li>
+<li><p>In case e-mail is changed, the user gets a mail from SSO provider where he needs to confirm the change by clicking on a validation link</p></li>
+<li>
+<p>After confirming when user logs in a second application SSO provider syncs new data to application</p>
+<ul><li><p>if user has not logged in yet, old data is being used</p></li></ul>
+</li>
+<li><p>In case Name / First name is changed, no mail is sent by SSO provider at all</p></li>
+</ul>
+<p></p>
+<h3 id="header-38">Change in SSO provider (Sync Downwards)</h3>
+<ul>
+<li>
+<p>User data is changed centrally in SSO provider</p>
+<ul>
+<li><p>New Name</p></li>
+<li><p>New First name</p></li>
+<li><p>New E-mail</p></li>
+<li><p>(Accout name?)</p></li>
+</ul>
+</li>
+<li><p>As soon as user <strong>logs in</strong> one of the application SSO provider syncs user’s data to application </p></li>
+</ul>
+<p></p>
+<h2 id="header-40">Alternative: Immediate Sync</h2>
+<p>Once user data are changed in one application, these are synced to SSO provider<strong> and all</strong> applications user has access to</p>
+<p></p>
+<h2 id="header-41">Deletion</h2>
+<h3 id="header-43">Deletion in application</h3>
+<ul>
+<li><p>In case a user is existing in several applications and he gets deleted in <strong>one</strong> of them then he will be removed from the application on SSO provider side</p></li>
+<li><p>User can still use SSO in the application he is still existing</p></li>
+<li

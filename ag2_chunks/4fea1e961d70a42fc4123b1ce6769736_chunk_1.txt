@@ -1,0 +1,78 @@
+ federated with Okta.</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<td>
+<p>OIDC Spec</p>
+</td>
+<td>
+<p><a href="https://openid.net/developers/specs/">https://openid.net/developers/specs/</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>OIDC</p>
+<p>(based on OAuth 2.0)</p>
+</td>
+<td>
+<p><a href="https://tools.ietf.org/html/rfc6749">https://tools.ietf.org/html/rfc6749</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify">In our case, the OIDC federation creates trust between Okta and an external OIDC IDP. Therefore Okta will send a specific group of users to the external IDP to authenticate and get a trusted result of that authentication containing some user information. </p>
+<p class="wysiwyg-text-align-justify">When using OIDC a discovery document (well-known) can be used to get the basic information about the authentication and authorization flows that are supported. It is usually publicly available as it only contains public information.</p>
+<p class="wysiwyg-text-align-justify"><strong>What values are used for our Federation and what do they mean?</strong></p>
+<p class="wysiwyg-text-align-justify"><strong>Discovery Document (Source)</strong></p>
+<table class="wysiwyg-text-align-justify" style="height: 556px;" border="1" data-layout="default">
+<colgroup> <col style="width: 173.0px;"> <col style="width: 360.0px;"> <col style="width: 227.0px;"> </colgroup>
+<tbody>
+<tr style="height: 22px;">
+<th class="wysiwyg-text-align-center" style="height: 22px; width: 170.729px;" data-highlight-colour="#57d9a3">
+<p><strong>What</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="height: 22px; width: 193.542px;" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="height: 22px; width: 325.347px;" data-highlight-colour="#57d9a3">
+<p><strong>Example</strong></p>
+</th>
+</tr>
+<tr style="height: 111px;">
+<td style="height: 111px; width: 162.708px;">
+<p>token_endpoint</p>
+</td>
+<td style="height: 111px; width: 185.521px;">
+<p>Endpoint to get new tokens for the different flows. In our case an endpoint to exchange a code for a token.</p>
+</td>
+<td style="height: 111px; width: 317.326px;">
+<p><a href="https://login.microsoftonline.com/dc79dd1a-883e-438c-b396-dc9fb7f66bf1/oauth2/v2.0/token">https://login.microsoftonline.com/dc79dd1a-883e-438c-b396-dc9fb7f66bf1/oauth2/v2.0/token</a></p>
+</td>
+</tr>
+<tr style="height: 111px;">
+<td style="height: 111px; width: 162.708px;">
+<p>authorization_endpoint</p>
+</td>
+<td style="height: 111px; width: 185.521px;">
+<p>Endpoint to Authenticate/Authorize a user. A user will be send to that endpoint to authneticate.</p>
+</td>
+<td style="height: 111px; width: 317.326px;">
+<p><a href="https://login.microsoftonline.com/dc79dd1a-883e-438c-b396-dc9fb7f66bf1/oauth2/v2.0/authorize">https://login.microsoftonline.com/dc79dd1a-883e-438c-b396-dc9fb7f66bf1/oauth2/v2.0/authorize</a></p>
+</td>
+</tr>
+<tr style="height: 134px;">
+<td style="height: 134px; width: 162.708px;">
+<p>jwks_uri</p>
+</td>
+<td style="height: 134px; width: 185.521px;">
+<p>Location where Keys for OpenID connect are stored. These keys might rotate. Therefore this document is not static long term.</p>
+</td>
+<td style="height: 134px; width: 317.326px;">
+<p><a href="https://login.microsoftonline.com/dc79dd1a-883e-438c-b396-dc9fb7f66bf1/discovery/v2.0/keys">https://login.microsoftonline.com/dc79dd1a-883e-438c-b396-dc9fb7f66bf1/discovery/v2.0/keys</a></p>
+</td>
+</tr>
+<tr style="height: 44px;">
+<td style="height: 44px; width: 162.708px;">
+<p>issuer</p>
+</

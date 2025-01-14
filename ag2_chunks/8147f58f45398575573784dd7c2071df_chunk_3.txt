@@ -1,0 +1,77 @@
+efs-installation.com/service/?handler=rest&amp;raml=1</a></p>
+<p data-renderer-start-pos="5602">Self-description of the PHP handler:<br><a class="cc-1rn59kg" title="https://your-efs-installation.com/service/?handler=php" href="https://your-efs-installation.com/service/?handler=php" data-testid="link-with-safety" data-renderer-mark="true">https://your-efs-installation.com/service/?handler=php</a></p>
+<p data-renderer-start-pos="5602">When accessing the service layer, you will find a dynamic list of services activated on your installation and which are accessible by the user. <a class="cc-1rn59kg" style="background-color: #ffffff;" title="/wiki/spaces/DOC/pages/1853128733" href="https://qbdocs.atlassian.net/wiki/spaces/DOC/pages/1853128733" data-testid="link-with-safety" data-renderer-mark="true">A list of all available services can be found on this page</a>.</p>
+<p> </p>
+<h2 id="Important-Parameters" data-renderer-start-pos="5903">Important Parameters</h2>
+<p data-renderer-start-pos="5925">These are the most important parameters:</p>
+<ul class="ak-ul" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="5969">handler: name of the format handler (soap, rest, php, json).</p>
+</li>
+<li>
+<p data-renderer-start-pos="6033">method: name of the called method for PHP and JSON handler.</p>
+</li>
+<li>
+<p data-renderer-start-pos="6096">token: contains the token for authentication.</p>
+</li>
+<li>
+<p data-renderer-start-pos="6145">wsdl: generates the WSDL description, if the SOAP handler is used.</p>
+</li>
+<li>
+<p data-renderer-start-pos="6215">raml: generates the RAML description, if REST handler is used.</p>
+</li>
+</ul>
+<h2 id="Examples" data-renderer-start-pos="6281">Examples</h2>
+<p data-renderer-start-pos="6291">Below are two examples. The first example illustrates JSON call with http authentication and the second illustrates SOAP call with http authentication.</p>
+<p>SOAP XML request and response</p>
+<p><strong>Request</strong></p>
+<pre><code class="language-text">POST https://efs-installation.com/service/?handler=soap&amp;token=TOKEN HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: text/xml;charset=UTF-8
+SOAPAction: "https://efs-installation.com/service/?handler=soap&amp;token=TOKEN#survey_surveys_getList"
+Content-Length: 241
+Host: efs-installation.com
+Connection: Keep-Alive
+
+&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://www.globalpark.com/efs/services"&gt;
+   &lt;soapenv:Header/&gt;
+   &lt;soapenv:Body&gt;
+      &lt;ser:survey_surveys_getList/&gt;
+   &lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;</code></pre>
+<p><strong>Response</strong></p>
+<pre><code class="language-xml">&lt;SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://www.globalpark.com/efs/services"&gt;
+   &lt;SOAP-ENV:Body&gt;
+      &lt;ns1:survey_surveys_getListResponse&gt;
+         &lt;survey_surveys_getListResponseValue&gt;
+            &lt;success&gt;true&lt;/success&gt;
+            &lt;errors/&gt;
+            &lt;warnings/&gt;
+            &lt;messages/&gt;
+            &lt;return&gt;
+               &lt;survey&gt;
+                  &lt;id&gt;1234&lt;/id&gt;
+                  &lt;title&gt;Example Survey&lt;/title&gt;
+                  &lt;description/&gt;
+                  &lt;marked&gt;false&lt;/marked&gt;
+                  &lt;author&gt;Example User&lt;/author&gt;
+                  &lt;staff/&gt;
+                  &lt;comment/&gt;
+                  &lt;isMarked&gt;false&lt;/isMarked&gt;
+                  &lt;url&gt;https://efs-installation.com/uc/main/12345/&lt;/url&gt;
+                  &lt;createTime&gt;2019-10-18T13:44:43+00:00&lt;/createTime&gt;
+                  &lt;fieldTime&gt;
+                     &lt;startTime&gt;2019-10-18T00:00:00+00:00&lt;/startTime&gt;
+                     &lt;endTime&gt;2019-11-01T00:00:00+00:00&lt;/endTime&gt;
+                  &lt;/fieldTime&gt;
+                  &lt;status&gt;GENERATED&lt;/status&gt;
+                  &lt;type&gt;PERSONALIZED&lt;/type&gt;
+                  &lt;numberOfParameters&gt;0&lt;/numberOfParameters&gt;
+                  &lt;bonusPoints&gt;
+                     &lt;label/&gt;
+                     &lt;value&gt;0&lt;/value&gt;
+                  &lt;/bonusPoints&gt;
+               &lt;/survey&gt;
+            &lt;/return&gt;
+         &lt;/survey_surveys_getListResponseValue&gt;
+      &

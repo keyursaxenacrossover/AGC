@@ -1,0 +1,104 @@
+ notification settings of the modules you have access to.</p>
+<h3 id="header-18">Question Preview in Guide Setup</h3>
+<p>Under the "Template configuration" menu item of the project properties, you can select the desired questions from the questionnaire below. These questions will be displayed in the Guide setup.</p>
+<h3 id="header-19">The new column of the <em>Report list</em> module </h3>
+<p>The table of the <em>Report list</em> module has a new column in which the meta names of the focus units are listed.</p>
+<h2 id="header-21">People</h2>
+<h3 id="header-23">Portal mails under the menu item Mail-Report</h3>
+<p>In order to get an overview of the e-mails sent via <em>Portals</em>, a new tab is now available in the <em>People</em> module. There you will find the following information:</p>
+<ul>
+<li>
+<p>mail process</p>
+</li>
+<li>
+<p>subject</p>
+</li>
+<li>
+<p>source</p>
+</li>
+<li>
+<p>User</p>
+</li>
+<li>
+<p>date</p>
+</li>
+<li>
+<p>Total</p>
+</li>
+<li>
+<p>queue</p>
+</li>
+<li>
+<p>in dispatch</p>
+</li>
+<li>
+<p>Sent</p>
+</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998261710866" alt="People.png"></p>
+<ul>
+<li>
+<p>Rejected</p>
+</li>
+<li>
+<p>Delivery failed</p>
+</li>
+<li>
+<p>Not reachable</p>
+</li>
+<li>
+<p>Canceled</p>
+</li>
+</ul>
+<p>To use this feature, the <em>mail_admin_system</em> read permissions of system mails and <em>mail_admin_portals</em> of portal mails must be activated.</p>
+<ul>
+<li>
+<p>Click path:</p>
+</li>
+</ul>
+<p><strong>People</strong> → <strong>Contacts</strong> → <strong>Mail-Report</strong> → <strong>Portals</strong> (Tab)</p>
+<h2 id="header-25">Closed Loop Feedback</h2>
+<h3 id="header-27">Reading rights in CLF</h3>
+<p>To provide information as a fixed value in CLF, assign read access for the Owner, Superior, Report recipient, and Read-only user roles. This is possible for the Action Planner variables. The properties of the variables display the variables that have been set.</p>
+<h2 id="header-29">Privacy Assistant (GDPR)</h2>
+<h3 id="header-31">Automatic deletion of invited panelists</h3>
+<p>In the<strong> Panel configuration</strong> of the <em>People</em> module you have the new menu item "Automatic deletion of invited panelists". Now you can automate the deletion of both the <em>Tell-a-friend</em>-panelists (module: <em>Panel Website</em>) and the panelists with panel status (module: <em>Portals</em>).</p>
+<ul>
+<li>
+<p><strong>Tell a friend:</strong> You check the option "Delete invited panellists without reaction after" and set the number of years, months or days after which the invited panellists who did not respond to the invitation should be deleted.</p>
+</li>
+<li>
+<p><strong>Panelist with panel status:</strong> You check the option "Delete invited panelists without response after" and set the number of years, months or days after which the invited panelists who did not respond to the invitation should be deleted.</p>
+<ul>
+<li>
+<p>In addition, you select the panel statuses of the panelists to be deleted.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998220925586" alt="Automatic deletion.png"></p>
+<h3 id="header-32">No right to export participant data</h3>
+<p>The "Participant data" option will not be available if your team does not have the right to view participant administration. Thus, you are not allowed to export the participant data. The <em>ct42partadm</em> right is deactivated. If the <em>export_with_lfdn</em> right has also been deactivated, you only have a very limited selection of functions:</p>
+<ul>
+<li>
+<p>Result data (all data, formats e.g. SPSS, CSV, Fixed Format, Microsoft Excel...)</p>
+</li>
+<li>
+<p>Result data (open data only; optimized for splitting into quantum)</p>
+</li>
+<li>
+<p>Project</p>
+</li>
+<li>
+<p>SPSS macros for simplified evaluation in SPSS</p>
+</li>
+<li>
+<p>SPSS labels (for own syntax jobs)</p>
+</li>
+<li>
+<p>Participant and status codes</p>
+</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998321800850" alt="Rights.png"></p>
+<h3 id="header-33">The <em>gdpr_activities</em> ACL right </h3>
+<p>The <em>gdpr_activities</em> read permission allows you to access all GDPR activities areas: <span style="color:

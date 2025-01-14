@@ -1,0 +1,62 @@
+ question type: min/max of required answers can now be configured</p>
+</li>
+<li>
+<p>Accessibility improvements for survey layout: We have improved screen reader support for scaled and text question types, where the context of the available options was not immediately clear to the user.</p>
+</li>
+</ul>
+<h2 id="header-17">Enhancements to People</h2>
+<p>Panelist administration: Phone validation if SMS active: EFS installations with the SMS module active have now a validation of the phone number for panelists. Where specified, the number must follow the international format and needs to start with a “00” instead of a “+”.</p>
+<p> </p>
+<h2 id="header-19">Enhancements to Panel Website</h2>
+<h3 id="header-21">Responsive Panel website v2</h3>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21036785149842" alt="image-20220825-113809.png"></p>
+<p>General availability of a new responsive layout for all customers using the panel website module. This layout can be used as a starting point for your own websites as it uses a simple layout with minimal styling. Thanks to responsiveness, this layout is also suitable for access through mobile devices. This website uses latest version of Smarty 4.1.* and jQuery 3.6.*.</p>
+<p>Don’t feel like coding HTML and CSS today? No problem, through the Look &amp; Feel tab you are able to modify most aspects of this layout, such as colors, logos or fonts.</p>
+<p>The improved live edit mode allows you to edit windcards, phrases, modules and templates right in the front end view of your panel website.</p>
+<p>Don’t worry, your existing websites are not affected and the new templates can only be used for new websites.</p>
+<h2 id="header-23">Service Layer</h2>
+<p>Service layers accessing survey projects have been improved to support additionaly created genders in Employee and Personalised project types: All services that use the object type efs_gender have been extended to additionally support codes (0,1,2,…) instead of NOT_SPECIFIED, MALE, FEMALE.</p>
+<p>Relevant services:</p>
+<ul>
+<li>
+<p>survey_participants_addList</p>
+</li>
+<li>
+<p>survey_participants_addListV2</p>
+</li>
+<li>
+<p>survey_participants_addListAsynchronous</p>
+</li>
+<li>
+<p>survey_participants_getListV2</p>
+</li>
+<li>
+<p>survey_participants_getListByCriteriaV3</p>
+</li>
+</ul>
+<p>You can continue using NOT_SPECIFIED, MALE, FEMALE, but we recommend to transition your projects to use codes instead as soon as possible.</p>
+<p> </p> through the Look &amp; Feel tab you are able to modify most aspects of this layout, such as colors, logos or fonts.</p>
+<p>The improved live edit mode allows you to edit windcards, phrases, modules and templates right in the front end view of your panel website.</p>
+<p>Don’t worry, your existing websites are not affected and the new templates can only be used for new websites.</p>
+<h2 id="header-23">Service Layer</h2>
+<p>Service layers accessing survey projects have been improved to support additionaly created genders in Employee and Personalised project types: All services that use the object type efs_gender have been extended to additionally support codes (0,1,2,…) instead of NOT_SPECIFIED, MALE, FEMALE.</p>
+<p>Relevant services:</p>
+<ul>
+<li>
+<p>survey_participants_addList</p>
+</li>
+<li>
+<p>survey_participants_addListV2</p>
+</li>
+<li>
+<p>survey_participants_addListAsynchronous</p>
+</li>
+<li>
+<p>survey_participants_getListV2</p>
+</li>
+<li>
+<p>survey_participants_getListByCriteriaV3</p>
+</li>
+</ul>
+<p>You can continue using NOT_SPECIFIED, MALE, FEMALE, but we recommend to transition your projects to use codes instead as soon as possible.</p>
+<p> </p>

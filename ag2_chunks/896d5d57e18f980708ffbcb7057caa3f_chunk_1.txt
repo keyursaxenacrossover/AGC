@@ -1,0 +1,37 @@
+2Fsites%2FPublicShareFolder%2FShared%20Documents%2F04%2D1%20Customer%20Service%2F06%20Knowledge%20Base%2FB%20%2D%20Survey" target="_blank" rel="noopener noreferrer">How to... Unsubscribe Workaround for collective installations</a>. Once access is provided to this resource, we can create the required knowledge.</strong></p>
+<h2 id="general_information">General Information</h2>
+<h3 id="placeholders">Placeholders</h3>
+<p>The unsubscribe placeholders (<code>#unsubscribe_survey#</code> and <code>#unsubscribe_global#</code>) create URLs that require participants to confirm their unsubscribe request by clicking an "OK" button. These links only work when the placeholders are used in the email text.</p>
+<h3 id="technical_header">Email Header Information</h3>
+<p>For RFC-compliant meta-information in headers, use the "List-Unsubscribe Header" or "Additional Headers" options. The "List-Unsubscribe Header" can contain either a mailto: or an HTTP link, or both.</p>
+<p>However, there are a few things to consider here, as support for the “List-Unsubscribe Header” is not very widespread and even if a valid RFC-compliant header is included, very few email clients offer the subscriber an unsubscribe function. This Support is even less when working with the HTTP variant, which from EFS’s point of view is the only “automatic” one.</p>
+<p>If the only thing that matters is that the mail contains a technically valid and RFC-compliant “List-Unsubscribe Headers” in order to get a good rating during validation (e.g. at mail-tester.com ), you can also enter a "Mail-To" or specify any URL in the HTTP variant. However, if the mail client offers an unsubscribe button/link, for example, neither would result in the subscriber being entered in the "No mails list" on the EFS side.<br>The only thing that leads to this is when the URL generated via the placeholders is called up and confirmed by the participant with "OK" that they want to unsubscribe. </p>
+<h3 id="email_client_support">Email Client Support</h3>
+<p>Support for the "List-Unsubscribe Header" varies among email clients, with limited support for the HTTP variant that EFS provides. Email client support list is below:</p>
+<table style="margin-right: 0px; margin-left: 0px; border-collapse: collapse; width: 478px; border: 1px solid var(--ds-background-accent-gray-subtler,#c1c7d0); height: 1px; background-color: #ffffff;" data-testid="renderer-table" data-number-column="false" data-table-width="760" data-layout="default">
+<tbody>
+<tr style="height: 44.4219px;">
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; width: 325.703px;" colspan="1" rowspan="1" data-colwidth="228">
+<p data-renderer-start-pos="5547"><strong data-renderer-mark="true">List-Unsubscribe header</strong></p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; width: 51.1406px;" colspan="1" rowspan="1" data-colwidth="226">
+<p data-renderer-start-pos="5574"><strong data-renderer-mark="true">mailto</strong></p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; width: 49.1562px;" colspan="1" rowspan="1" data-colwidth="226">
+<p data-renderer-start-pos="5584"><strong data-renderer-mark="true">http</strong></p>
+</td>
+</tr>
+<tr>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; width: 325.703px;" colspan="1" rowspan="1" data-colwidth="228">
+<p data-renderer-start-pos="5594"><em data-renderer-mark="true">Gmail</em></p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; width: 51.1406px;" colspan="1" rowspan="1" data-colwidth="226">
+<p data-renderer-start-pos="5603"><strong data-renderer-mark="true"><span class="fabric-text-color-mark" style="color: var(--custom-palette-color,inherit);" data-renderer-mark="true" data-text-custom-color="#36b37e">yes</span></strong></p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; width: 49.1562px;" colspan="1" rowspan="1" data-colwidth="226">
+<p data-renderer-start-pos="5610"><strong data-renderer-mark="true"><span class="fabric-text-color-mark" style="color: var(--custom-palette-color,inherit);" data-renderer-mark="true" data-text-custom-color="#36b37e">yes</span></strong></p>
+</td>
+</tr>
+<tr>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; width: 325.703px;" colspan="1" rowspan="1" data-colwidth="228">
+<p data-render

@@ -1,0 +1,43 @@
+ be tied to the person using the token so that it will be removed as soon as the person is removed.</p>
+<p> </p>
+<h2 id="h_01J6CQWJXN6S30P091GTAD8E7K">Manage Groups</h2>
+<h3 id="01J6CQWYNW3MC0JCYR46JN0Z2K">Global Tivian Internal Groups</h3>
+<p>There are Groups to grant Access to Okta itself. These groups are used for Tivian only. Take care that no other users are assigned to these groups. also see Okta Admin Users</p>
+<p>The following Groups are present in Okta:</p>
+<ul>
+<li>
+<p>tivian super admins</p>
+</li>
+<li>
+<p>tivian access installers</p>
+</li>
+<li>
+<p>tivian user manager</p>
+</li>
+</ul>
+<p>More groups might follow as needed.</p>
+<p>Also see: <a href="https://help.okta.com/en/prev/Content/Topics/Security/Administrators.htm?cshid=Security_Administrators#Security_Administrators">https://help.okta.com/en/prev/Content/Topics/Security/Administrators.htm?cshid=Security_Administrators#Security_Administrators</a></p>
+<p> </p>
+<h2 id="01J6CQWYNW49WDBZ5QWRJBW52P">Groups for clients</h2>
+<p>Every client has a group. Every user of a client should belong to that group. (also see Group Setup)</p>
+<p>Groups are the main tool in Okta to assign specific rules to a set of users. Therefore if some rules only apply to a subset of users in Okta a new group could be created. Possible use cases are MFA, sessions lifetimes, password policies and others.</p>
+<p> </p> that no other users are assigned to these groups. also see Okta Admin Users</p>
+<p>The following Groups are present in Okta:</p>
+<ul>
+<li>
+<p>tivian super admins</p>
+</li>
+<li>
+<p>tivian access installers</p>
+</li>
+<li>
+<p>tivian user manager</p>
+</li>
+</ul>
+<p>More groups might follow as needed.</p>
+<p>Also see: <a href="https://help.okta.com/en/prev/Content/Topics/Security/Administrators.htm?cshid=Security_Administrators#Security_Administrators">https://help.okta.com/en/prev/Content/Topics/Security/Administrators.htm?cshid=Security_Administrators#Security_Administrators</a></p>
+<p> </p>
+<h2 id="01J6CQWYNW49WDBZ5QWRJBW52P">Groups for clients</h2>
+<p>Every client has a group. Every user of a client should belong to that group. (also see Group Setup)</p>
+<p>Groups are the main tool in Okta to assign specific rules to a set of users. Therefore if some rules only apply to a subset of users in Okta a new group could be created. Possible use cases are MFA, sessions lifetimes, password policies and others.</p>
+<p> </p>

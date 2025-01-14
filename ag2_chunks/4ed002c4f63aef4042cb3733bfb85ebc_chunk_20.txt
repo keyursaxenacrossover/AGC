@@ -1,0 +1,37 @@
+>
+<p class="wysiwyg-text-align-justify">EFS Panel can automatically execute recodings in a preset order under specific circumstances, such as:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Candidate self-registration via the registration form.</li>
+<li>Panelist data edits using the re-registration form.</li>
+<li>Imported or updated panelist data.</li>
+<li>When a panelist's master data is saved in the admin area.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Activating Automatic Recoding:</strong></p>
+<ol class="wysiwyg-text-align-justify">
+<li>Activate the “Auto recode” function when creating a new recoding or by editing an existing recoding (click the Edit icon in the recoding table).</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><strong>Important:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>When using “Auto recode,” be cautious when deleting old recodings or adding new ones to avoid disrupting the recoding order.</li>
+</ul>
+<h2 id="h_01HGKSMPRSBXGQX3YJXQWQX8Y" class="wysiwyg-text-align-justify">Master Data Codebook</h2>
+<p class="auto-cursor-target wysiwyg-text-align-justify">The master data codebook provides an overview of the panel’s master data and their encodings. It is used, for example, for the definition of filter conditions or for evaluation. You will find the codebook in the <strong><em>People</em></strong> → <strong>Master data</strong> → <strong>Master data codebook</strong>. It contains the variable name and label, data type, variable type, answer code and label (if available) as well as the master data category for each master data item.</p>
+<p class="auto-cursor-target wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017142445458"></p>
+<p class="auto-cursor-target wysiwyg-text-align-justify">Above the list, you will find various features which allow you to restrict, to reorder or to extend the list:</p>
+<ul class="wysiwyg-text-align-justify">
+<li class="auto-cursor-target">Restrict to category: This option allows you to restrict the list to a single master data category.</li>
+<li class="auto-cursor-target">Sort by column: With this option you can order the list by category label, variable name, variable label, or variable type.</li>
+<li class="auto-cursor-target">Show recoding information: Master data of “recoded” type are displayed along with recoding details such as the recoding formula.</li>
+<li class="auto-cursor-target">Hide answer categories: The columns “Answer code” and “Answer label” are hidden, and the list of master data is simplified.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Via the <strong>Export</strong> button you can download the codebook in its current configuration.</p>
+<h2 id="h_01HGKSMPRS4YJHQX3YJXQWQX8Y" class="wysiwyg-text-align-justify">Master Data Logs</h2>
+<p class="wysiwyg-text-align-justify">Master data administration includes a logfile that keeps track of changes made to the master data variables. This allows you, for example, to easily identify and track any changes made by other users. To view the change history of your master data, open the <strong><em>People</em></strong> →<strong> Master data</strong> → <strong>Master data logs</strong> menu. The overview table lists all changes along with their respective dates, the variables concerned, the responsible user, and the types of operation performed.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017142445970"></p>
+<p class="wysiwyg-text-align-justify">Via the <strong>Detail view</strong> icon, you can access the details of a particular change.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017112911762"></p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863" class="wysiwyg-text-align-justify">FAQ</h1>
+<h3 id="h_01HGKSMPRS9JVGC6E9EA3DB98K1" class="wysiwyg-text-align-justify">What is the maximum number of master data that can be created?</h3>
+<p class="wysiwyg-text-align-justify">Up to 2,800 master data per installation can be created, but the actual maximum number may be lower depending on various factors such as type, size, and content of the master data.</p>
+<h3 id="h_01HGKSMPRS9JVGC6E9EA3DB98K2" class="wysiwyg-text-align-justify">How can I improve the performance of my panel with many master data variables?</h3>
+<p class="wysiwyg-text-align-justify">To improve performance, regularly review and delete redundant variables, use recoding

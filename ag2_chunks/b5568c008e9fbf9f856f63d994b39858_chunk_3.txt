@@ -1,0 +1,51 @@
+ to update deprecated layouts of projects:</p>
+<pre><code class="language-text">cd www
+/opt/pdp/opst/apps/php56/bin/php support/build_project_layout.php scope=all list=true</code></pre>
+</li>
+<li><p>this gives you a list of the projects and shows you how many need to be updated</p></li>
+<li><p>to actually do the update just remove the list=true part and execute the script again</p></li>
+<li><p> <strong>you can run the script in parallelmode </strong>- change “temp.txt” and “log.txt” to installation schema [ab1234].txt and add it to a salesforce case  or KANBAN ticket if issues occur </p></li>
+<li>
+<pre><code class="language-text">/opt/pdp/opst/apps/php56/bin/php support/build_project_layout.php scope=all parallel=true batchsize=25 tempfile=~/temp.txt logfile=~/log.txt</code></pre>
+<p></p>
+</li>
+<li><p>Config Flag checken survey_placeholder_security : <ac:inline-comment-marker ac:ref="341520b9-908f-46f4-8b87-fd38eb45b4d9">setzen auf fas</ac:inline-comment-marker>le!</p></li>
+<li><p>If updating “old 20.1”, so build before 0322, run “conti” script from <ac:parameter ac:name="server">Questback</ac:parameter><ac:parameter ac:name="serverId">9f8e3c23-9700-315b-9fb0-65f274062d6e</ac:parameter><ac:parameter ac:name="key">KANBAN-14420</ac:parameter>- conti_fix.php<br>if installation is  not portals and/or employee, this script might simply fail, that is not an issue for survey installations</p></li>
+</ul><p></p><h3 id="header-10">3. Im Falle von <ac:inline-comment-marker ac:ref="e795f02d-b0b5-472f-92cc-5487442fb346">Upgrades</ac:inline-comment-marker>
+</h3><ul>
+<li><p><ac:link ac:card-appearance="inline"><ri:page ri:content-title="Upgradability check for installations with customizings" ri:version-at-save="2"></ri:page><ac:link-body>Upgradability check for installations with customizings</ac:link-body></ac:link> </p></li>
+<li>
+<p>is<ac:inline-comment-marker ac:ref="70feb216-5896-4c90-9b22-1efec0d2f6cf">t Portals aktiviert, müssen noch die css Dateien kompiliert werden (nicht mehr nötig)</ac:inline-comment-marker></p>
+<pre><code class="language-text">cd [installationspfad]/htdocs
+cd www
+php support/portal_compile_css.php</code></pre>
+</li>
+<li>
+<p>hat die Installation customizings, muss die <strong>zendframeworkLibrary neu ausgecheckt</strong> werden</p>
+<pre><code class="language-text">cd [installationspfad]/projekte/ProductCustomizingTeam/
+rm -rf zendframeworkLibrary
+
+cd ../../
+cvs -d ":pserver:gpinst:[Credentials_im_Keypass]@cvs.3uu.de:2401/vol/cvs" checkout projekte/ProductCustomizingTeam/zendframeworkLibrary</code></pre>
+</li>
+</ul><h3 id="header-11">4. Check installation</h3><p>Instcheck ausführen. Die Healself läuft in der Regel automatisch nach dem Update/Upgrade durch</p><ul>
+<li><p>Perform installation check in the platform cockpit</p></li>
+<li><p>execute healself again</p></li>
+<li>
+<p>In the console, add Globis comment with the <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Helperscripts" ri:version-at-save="12"></ri:page><ac:link-body>Helperscripts</ac:link-body></ac:link> u-script (execute in installation directory!) </p>
+<pre><code class="language-text">u [Reason] Case [00888888]</code></pre>
+</li>
+<li><p>alternatively the Globis comment can be added in the detail view of the installation via the button [Add update for this installation]</p></li>
+<li><p>Run /dumps/_DONT_DELETE_thurn/addphp56 (This script checks for missing php 5.6 lines in installation configs)</p></li>
+</ul><h2 id="header-13">NO ROM</h2><p>To update an Installation that currently resides outside of ROM (directories in htdocs are true directories/no symlinks), follow these steps:</p><ul>
+<li>
+<p>On a console, <strong>navigate to installation</strong></p>
+<pre><code class="language-text">cd [installation path]/htdocs</code></pre>
+</li>
+<li>
+<p><strong>In case of an upgrade</strong> and if customizings are available, <strong>update zendframeworkLibrary</strong> (=check it out again)</p>
+<ul>
+<li><p>navigate to <strong>projekte/ProductCustomizingTeam/</strong> folder of installation</p></li>
+<li>
+<p>delete zendframeworkLibrary folder</p>
+<pre><code class="language-text">rm

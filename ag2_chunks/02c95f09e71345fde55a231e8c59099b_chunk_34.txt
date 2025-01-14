@@ -1,0 +1,74 @@
+1" rowspan="1" data-colwidth="340">
+<div class="fabric-editor-block-mark fabric-editor-alignment cc-5inqjd" data-align="center">
+<p data-renderer-start-pos="28001">remote_ address</p>
+</div>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="340">
+<div class="fabric-editor-block-mark fabric-editor-alignment cc-5inqjd" data-align="center">
+<p data-renderer-start-pos="28020">Indicates the IP address of the computer via which the participant is connected to the Internet.</p>
+</div>
+</td>
+</tr>
+<tr>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="340">
+<div class="fabric-editor-block-mark fabric-editor-alignment cc-5inqjd" data-align="center">
+<p data-renderer-start-pos="28122">user_agent</p>
+</div>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="340">
+<div class="fabric-editor-block-mark fabric-editor-alignment cc-5inqjd" data-align="center">
+<p data-renderer-start-pos="28136">Indicates technical data for the participant such as browser and operating system.</p>
+</div>
+</td>
+</tr>
+<tr>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="340">
+<div class="fabric-editor-block-mark fabric-editor-alignment cc-5inqjd" data-align="center">
+<p data-renderer-start-pos="28224">http_referer</p>
+</div>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="340">
+<div class="fabric-editor-block-mark fabric-editor-alignment cc-5inqjd" data-align="center">
+<p data-renderer-start-pos="28240">Indicates the website from where the survey was called up.</p>
+</div>
+</td>
+</tr>
+<tr>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="340">
+<div class="fabric-editor-block-mark fabric-editor-alignment cc-5inqjd" data-align="center">
+<p data-renderer-start-pos="28304">Only with <em data-renderer-mark="true">show_dispcode</em> right: status</p>
+</div>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="340">
+<div class="fabric-editor-block-mark fabric-editor-alignment cc-5inqjd" data-align="center">
+<p data-renderer-start-pos="28345">The participant’s disposition code</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="sentinel-right"> </div>
+</div>
+</div>
+<h2 id="Providing-Automatically-Generated-Export-Data-Records" class="wysiwyg-text-align-justify" data-renderer-start-pos="28384"><strong data-renderer-mark="true">Providing Automatically-Generated Export Data Records</strong></h2>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="28439">Export data records (the so-called raw data exports) can be created and automatically made available in <em data-renderer-mark="true">EFS Survey Status</em> at predefined intervals with the help of export macros. This can be useful, for example, when data have to be exported at regular intervals in a long-term study: You only need to configure the macro once, the exports are performed automatically.</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="28808">The functional scope in brief:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="28842">The macros can be executed on a daily or weekly basis. Alternatively, you can also trigger the export manually.</p>
+</li>
+<li>
+<p data-renderer-start-pos="28957">The export format is MS Excel.</p>
+</li>
+<li>
+<p data-renderer-start-pos="28991">Only data collected after the most recent execution will be exported. If there are no</p>
+<p data-renderer-start-pos="29078">data, the macro will not be executed.</p>
+</li>
+<li>
+<p data-renderer-start-pos="29119">In personalized projects and employee surveys, you can formulate a condition based on the participants' data, that has to be fulfilled in order for the macro to be executed.</p>
+</li>
+<li>
+<p data-renderer-start-pos="29294">If you have sufficient access rights, then all the data in the static export template “Participants and result data” are available for export in project types with participant administration. You can limit the extent to particular disposition codes or variables.</p>
+</li>
+<li>
+<p data-renderer-start-pos="29560">The export files are made available in EFS Survey Status. They cannot be

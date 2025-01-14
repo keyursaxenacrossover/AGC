@@ -1,0 +1,51 @@
+ conditional report uses unit properties as filters to determine<strong> units</strong>:</p>
+<ul>
+<li>Label</li>
+<li>Metaname</li>
+<li>View_ID</li>
+<li>Level</li>
+<li>Response_anon</li>
+</ul>
+<p class="sc-lhVmIH iJLaKb"><strong>Mapping filters</strong></p>
+<p>Each filter variable has inherent branches that you use for further specifications.</p>
+<p>These are connected by the non-exclusive OR, which is not represented by an element. For example, if you choose the filter variable g<strong>ender</strong>, you select the options: <strong>Not available</strong>, <strong>male</strong>, <strong>female</strong>. In contrast, the different filter variables are linked by the logical AND, which is also not represented by an element. The following syntax is hidden behind the filter elements in the mapping, which are only apparently placed side by side without connections: <strong>Gender</strong>-<strong>male</strong>OR<strong>Gender</strong>-<strong>female</strong>OR<strong>Gender</strong>-<strong>not available</strong>AND<strong>Dispositioncode</strong>-<strong>Not yet invited</strong>OR<strong>Dispositioncode</strong>-<strong>Active</strong>AND<strong>Tester</strong>-<strong>No tester</strong>. Just as the filter variables cannot be linked to each other with OR, you cannot combine the specifications with an AND.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013838044050" alt="Filter Mapping.png"></p>
+<h3 id="tiny-dsq" class="sc-lhVmIH iJLaKb"><strong>Tiny DSQ</strong></h3>
+<p><span style="color: #091e42;">Tiny DSQ enables a clearer representation of the data space queries stored in the shape cells. </span>However, their location is not limited to mapping. Tiny DSQ is also used for creating DSEs and collections. Noteworthy for deciphering the abbreviated picker paths are the letter icons and the color scheme. This is based on the syntax and allows you to recognize dependencies between the elements. The property icon is colored according to the element whose properties are queried.</p>
+<table class="relative-table wrapped tablesorter tablesorter-default" style="width: 522px; margin-right: auto; margin-left: auto; height: 215px;" border="1">
+<colgroup> <col style="width: 0.0px;"> <col style="width: 0.0px;"> <col style="width: 0.0px;"> </colgroup>
+<tbody>
+<tr class="tablesorter-headerRow" style="height: 23px;">
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted wysiwyg-text-align-center" style="width: 206.858px; height: 23px;" scope="col">
+<div class="tablesorter-header-inner">Meaning</div>
+</th>
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted wysiwyg-text-align-center" style="width: 92.0833px; height: 23px;" scope="col">
+<div class="tablesorter-header-inner">Icon</div>
+</th>
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted wysiwyg-text-align-center" style="width: 212.674px; height: 23px;" scope="col">
+<div class="tablesorter-header-inner">Color</div>
+</th>
+</tr>
+<tr style="height: 24px;">
+<td style="text-align: left; width: 198.837px; height: 24px;">Unit</td>
+<td style="text-align: left; width: 84.0625px; height: 24px;">U</td>
+<td style="text-align: left; width: 204.653px; height: 24px;">green</td>
+</tr>
+<tr style="height: 24px;">
+<td style="text-align: left; width: 198.837px; height: 24px;">Dimension</td>
+<td style="text-align: left; width: 84.0625px; height: 24px;">D</td>
+<td style="text-align: left; width: 204.653px; height: 24px;">orange</td>
+</tr>
+<tr style="height: 24px;">
+<td style="text-align: left; width: 198.837px; height: 24px;">Scale item</td>
+<td style="text-align: left; width: 84.0625px; height: 24px;">S</td>
+<td style="text-align: left; width: 204.653px; height: 24px;">black</td>
+</tr>
+<tr style="height: 24px;">
+<td style="text-align: left; width: 198.837px; height: 24px;">Collection member</td>
+<td style="text-align: left; width: 84.0625px; height: 24px;">M</td>
+<td style="text-align: left; width: 204.653px; height: 24px;">gray</td>
+</tr>
+<tr style="height: 24px;">
+<td style="text-align: left; width: 198.837px; height: 24px;">Result type</td>
+<td style="text-align: left; width: 84.0625px;

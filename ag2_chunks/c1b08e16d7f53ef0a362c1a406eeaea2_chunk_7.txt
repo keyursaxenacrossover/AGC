@@ -1,0 +1,66 @@
+, when exporting result data, select the appropriate group in the “Restrict to participant groups” field of the “Restrict range of exported data” section.</p>
+<p class="wysiwyg-text-align-justify"><strong>Selective export</strong></p>
+<p class="wysiwyg-text-align-justify">If you have ticked the checkbox for the “Selective export (Please click here, if you want to specify which variable shall be exported)” field, you have the option of performing a <em>selective export</em>, i.e. you can choose from the range of available variables.</p>
+<p class="wysiwyg-text-align-justify">Once you have confirmed the selection by clicking on the <strong>Export </strong>button, the list of possible variables will be displayed and you can choose those desired.</p>
+<h3 id="excel-export-with-external-variable-names-and-meta-information" class="wysiwyg-text-align-justify"><strong>Excel Export with External Variable Names and Meta Information</strong></h3>
+<p class="wysiwyg-text-align-justify">If you export result data in XLS or XLSX format (MS Excel), you have the option of adding meta information. In this case, additional columns with the following information will be inserted in the export file header:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>1. Line: Question text</p>
+</li>
+<li>
+<p>2. Line: Plain text description of the variable. Depending on the question type, this is In the case of questions with multiple response lists, the respective answer option is specified.</p>
+</li>
+<li>
+<p>3. Line: external variable name If you want to use this option, tick the checkbox “Display meta information as additional column heading (excel export only)” in the “Advanced options” section.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">This feature supports only the default language.</p>
+<h2 id="exporting-participant-and-status-codes" class="wysiwyg-text-align-justify"><strong>Exporting Participant and Status Codes</strong></h2>
+<p class="wysiwyg-text-align-justify">The export type “Participant and status codes”, which is available for personalized projects, enables you to determine the disposition code and last access for each survey participant.</p>
+<p class="wysiwyg-text-align-justify">The export file contains the following information:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Participant code: The code used to access the survey.</p>
+</li>
+<li>
+<p>Disposition code: The selected disposition codes.</p>
+</li>
+<li>
+<p>“Tester” variable: Does the participant have tester status?</p>
+</li>
+<li>
+<p>Only with access right for combined participant data and result data export: Last accessed: Date and time of when the survey was last accessed.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The exported data record contains only the participant codes but does not contain respondent-specific information or result data. This will guarantee the participants’ anonymity if, for example, you pass this data record on to the customer who commissioned the project.</p>
+<h2 id="exporting-answers-to-open-questions-for-quantum" class="wysiwyg-text-align-justify"><strong>Exporting Answers to Open Questions for Quantum</strong></h2>
+<p class="wysiwyg-text-align-justify">Some evaluation programs, such as Quantum, place special demands on export records for open-ended questions: Answers should not only be separated from the answers to closed-ended questions, but their display should also be different. Whereas in the case of normal export records, consecutive numbers and result variables of a respondent are displayed side by side in the columns of a single row, the individual<em> </em>answers of a respondent should be displayed in <em>rows one above the other</em>.</p>
+<p class="wysiwyg-text-align-justify">The “Data (open-end answers only; optimized for column display in Quantum)” data type is available under <strong>Projects</strong> → {<strong>Selected project</strong>} → <strong>Export</strong>, and can be used to create such a record. When downloading, please proceed as follows:</p>
+<ol class="wysiwyg-text-align-justify" start="1">
+<li>
+<p>Select the “Data (open-ended answers only; formats e.g. SPSS, CSV, Fixed Format, Quantum, MS Excel...)” data type.</p>
+</li>
+<li>
+<p>After that, you can choose the format and make further settings as usual.</p>
+</li>
+<li>
+<p>Confirm by clicking on <strong>Export</strong>, and download the file as usual.</p>
+</li>
+<li>
+<p>Then open the record in the appropriate evaluation program. The exported record contains three columns:</p>
+<ul>
+<li>
+<p>fun: the respondent’s consecutive number</p>
+</li>
+<li>
+<p>var name: the variable of the open text field</p>
+</li>
+<li>
+<p>value: the entry made by the respondent</p>
+</li>
+</ul>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013850458898" alt="2ce21d9c-0d20-46aa-967b-ace631e99883"></p>
+<p class="w

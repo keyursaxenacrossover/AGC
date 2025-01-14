@@ -1,0 +1,19 @@
+<h1 id="header-1">Exception categories</h1>
+<ol>
+<li>
+<p><u>Client exceptions:</u> Exceptions that occur on the client and can be handled by code that is running on the client. These are mostly workflow/synchronization related errors.<br><strong><span style="color: #6554c0;">E.g. a user cannot be create on Okta side</span></strong></p>
+</li>
+<li>
+<p><u>Login exceptions with context:</u> These are errors that occur while a user is not handle by our own application code anymore. This are errors that happen while a user is redirected, after a user provided credentials or while a user is redirected back to our applications.<br><strong><span style="color: #6554c0;">E.g. a wrong scope is picked when redirecting a user to the Okta login</span></strong></p>
+</li>
+<li>
+<p><u>Login exceptions without context:</u> These errors are similar to the “Login exceptions with context” but Okta is not able to redirect a user back to our applications and will show it’s own error page.<br><strong><span style="color: #6554c0;">E.g. there is no redirect back to our application configured in the redirect to Okta</span></strong></p>
+</li>
+</ol>
+<h2 id="h_01J67D75HFQB32D885SA5PF03K">Example exception URL's</h2>
+<p><strong>No Redirect URI</strong></p>
+<p><a href="https://okta.testback.com/oauth2/ausog0bep2mtm7gKd0h7/v1/authorize?client_id=0oaoq91o552FIxg3A0h7&amp;nonce=AYx1j79hkGTnJ7FlOIMqh2teti9ee0i9sCwePnJuLqR55QxUqHw1yieGn30taqfY&amp;response_mode=fragment&amp;response_type=code&amp;state=p7bKuF4UcgnzQzaKToq2NTiUNopca89uMWPzTROVJbnNluyC5ekgfTNAZuYZ5GhH&amp;scope=openid%20email%20profile">https://okta.testback.com/oauth2/ausog0bep2mtm7gKd0h7/v1/authorize?client_id=0oaoq91o552FIxg3A0h7&amp;nonce=AYx1j79hkGTnJ7FlOIMqh2teti9ee0i9sCwePnJuLqR55QxUqHw1yieGn30taqfY&amp;response_mode=fragment&amp;response_type=code&amp;state=p7bKuF4UcgnzQzaKToq2NTiUNopca89uMWPzTROVJbnNluyC5ekgfTNAZuYZ5GhH&amp;scope=openid email profile</a></p>
+<p><strong>Wrong Redirect URI</strong></p>
+<p><a href="https://okta.testback.com/oauth2/ausog0bep2mtm7gKd0h7/v1/authorize?client_id=0oaoq91o552FIxg3A0h7&amp;nonce=AYx1j79hkGTnJ7FlOIMqh2teti9ee0i9sCwePnJuLqR55QxUqHw1yieGn30taqfY&amp;redirect_uri=http%3A%2F%2FWRONG%2FREDIRECT%2FURI&amp;response_mode=fragment&amp;response_type=code&amp;state=p7bKuF4UcgnzQzaKToq2NTiUNopca89uMWPzTROVJbnNluyC5ekgfTNAZuYZ5GhH&amp;scope=openid%20email%20profile">https://okta.testback.com/oauth2/ausog0bep2mtm7gKd0h7/v1/authorize?client_id=0oaoq91o552FIxg3A0h7&amp;nonce=AYx1j79hkGTnJ7FlOIMqh2teti9ee0i9sCwePnJuLqR55QxUqHw1yieGn30taqfY&amp;redirect_uri=http%3A%2F%2FWRONG%2FREDIRECT%2FURI&amp;response_mode=fragment&amp;response_type=code&amp;state=p7bKuF4UcgnzQzaKToq2NTiUNopca89uMWPzTROVJbnNluyC5ekgfTNAZuYZ5GhH&amp;scope=openid email profile</a></p>
+<p><strong>Missing State</strong></p>
+<p><a href="https://okta.testback.com/oauth2/ausog0bep2mtm7gKd0h7/v1/authorize?client_id=0oaoq91o552FIxg3A0h7&amp;nonce=AYx1j79hkGTnJ7FlOIMqh2teti9ee0i9sCwePnJuLqR55Q

@@ -1,0 +1,37 @@
+ transfer those data regarding session, jump page etc. of the previous project that are available in the current project.</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="16797">The path 1. project-&gt;2. project-&gt;3. project-&gt;2. project-&gt;1. project is possible.</p>
+</li>
+<li>
+<p data-renderer-start-pos="16881">The path 1. project-&gt;2. project-&gt;3. project-&gt;1. project-&gt;2. project is not possible.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="16969">When redirecting from the second to a third project the options “Add return ticket” and “Add ospe.php3” have to be disabled. They are used for returning primary-project relevant information back to the primary project. They cannot be used to relay secondary-project relevant information to another project.</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="17277">When analysing the data, please mind that the variable “external_lfdn” contains the “lfdn” of the primary project in all following projects.</p>
+<h2 id="Special-Considerations-when-using-External-Software" class="wysiwyg-text-align-justify" data-renderer-start-pos="17419"><strong data-renderer-mark="true">Special Considerations when using External Software</strong></h2>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="17472">You can rename the GET parameters “tic” and “return_tic” if this is required for redirecting to a survey that was created using external software.</p>
+<h3 id="External-Software-requires" class="wysiwyg-text-align-justify" data-renderer-start-pos="17620"><strong data-renderer-mark="true">External Software requires</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="17648">The relevant function can be found both in the Edit page properties dialog (Figure 3.7) and in the <strong data-renderer-mark="true">Projects</strong> → {Selected project} → <strong data-renderer-mark="true">Project properties</strong> menu, “General options” section, in the following fields:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="17859">Name of ticket variable (external start of the survey)</p>
+</li>
+<li>
+<p data-renderer-start-pos="17913">Name of ticket variable (when returning from an external survey)</p>
+</li>
+</ul>
+<p data-renderer-start-pos="17913"><em>The following names cannot be used, because they are reserved for other purposes: sid, pid, syid, oid.</em></p>
+<p data-renderer-start-pos="17913"><strong data-renderer-mark="true">External Software</strong></p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="18106">It may happen sometimes that you wish to transfer a number of values while the external software is able to evaluate only one GET parameter. In such situations, please check whether there is another option for transferring the desired values.</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="18350">Sawtooth, for example, can accept only one parameter, however, this may contain several values that are separated by a comma. In this case, it is possible to transfer both the “tic” parameter and other values as a comma-separated string.</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="18586">Suppose you want to transfer the following values:</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="18638">1, x, #tic</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="18650">In the EFS primary survey, you combine those in a value of the variable “a” as follows:</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="18738">a=1,x,#tic#</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="18751">Via the wildcard, “tic” is inserted at a precisely defined position in the URL: Sawtooth is now able to accept the resulting string and break it down by means of an analysis algorithm. This way, the value for “tic” can be extracted, stored, and subsequently transferred back.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h1 id="h_01HGKSMPRV9YJ8XQJXR8XBXNM" class="wysiwyg-text-align-justify">FAQ</h1>
+<h3 id="h_01HGKSMPRVEYJAXQJXR8XBXNM" class="wysiwyg-text-align-justify">Can the external survey start be tested in preview mode?</h3>
+<p class="wysiwyg-text-align-justify">No, the external survey start can only be tested in productive mode.</p>
+<h3 id="h_01HGKSMPRWJYJBXQJXR8X

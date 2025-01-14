@@ -1,0 +1,77 @@
+<td><p>Tivian Access 2.0 <strong>shall </strong>provide a unique tenant ID in all tokens provided for applications to enable the application to differentiate between tenants.</p></td>
+</tr>
+<tr>
+<td><p></p></td>
+<td><p>Basic user information for application</p></td>
+<td><p>Tivian Access 2.0 <strong>shall </strong>provide the email-adress of a user and the unique Tivian Access 2.0 identifier (e.g. a user ID) in all tokens provided for applications to enable the applications to uniquely identify a user.</p></td>
+</tr>
+<tr>
+<td><p></p></td>
+<td><p>JIT provisioning</p></td>
+<td><p>Tivian Access 2.0 <strong>shall </strong>provide automatic provisioning of users when an unknown user logs in from a trusted external identity provider and assign that user to the correct tenant.</p></td>
+</tr>
+<tr>
+<td><p></p></td>
+<td><p>Deprovisioning</p></td>
+<td><p>Tivian Access 2.0 <strong>shall </strong>delete users automatically when they are not assigned to any application/client anymore.</p></td>
+</tr>
+<tr>
+<td><p></p></td>
+<td><p>JIT update</p></td>
+<td>
+<p>Tivian Access 2.0 <strong>shall </strong>provide automatic updates of user data when a known users logs in from an external identity provider with a changed dataset.</p>
+<p>(automatic updates in the respective applictions are not part of this requirement)</p>
+</td>
+</tr>
+<tr>
+<td><p></p></td>
+<td><p>Little to no authorization</p></td>
+<td><p>Tivian Access 2.0 <strong>should </strong>provide only high level authorization information by providing the tenant ID and the users ID and the access to an application.</p></td>
+</tr>
+<tr>
+<th data-highlight-colour="#ffffff"><p></p></th>
+<td><p>External SAML2 interface</p></td>
+<td><p>Tivian Access 2.0 <strong>shall </strong>provide a SAML2 authentication interface for external identity providers to enable SSO/federation capabilities for customers connecting their own IdP. (Tivian Access is Service Provider and the external system Identity Provider)</p></td>
+</tr>
+<tr>
+<th data-highlight-colour="#ffffff"><p></p></th>
+<td><p>External OIDC interface</p></td>
+<td><p>Tivian Access 2.0 <strong>shall </strong>provide a OIDC authentication interface for external identity providers to enable SSO/federation capabilities for customers connecting their own IdP. (Tivian Access is Service Provider and the external system Identity Provider)</p></td>
+</tr>
+<tr>
+<th data-highlight-colour="#ffffff"><p></p></th>
+<td><p>Internal OIDC interface</p></td>
+<td><p>Tivian Access 2.0 <strong>shall </strong>provide a OIDC authentication interface for internal systems to enable SSO/authentication for internal systems. (Tivian Access is Identity Provider and the internal system Service Provider)</p></td>
+</tr>
+<tr>
+<th data-highlight-colour="#ffffff"><p></p></th>
+<td><p>Seamless integration</p></td>
+<td>
+<p>Tivian Access 2.0 <strong>shall </strong>provide an interface for integrating Tivian internal systems.</p>
+<p>This especially means that CRUD operations for the following entities shall be present:</p>
+<ul>
+<li><p>Users</p></li>
+<li><p>Tenants</p></li>
+<li><p>Applications/Clients</p></li>
+<li><p>External Identity Providers</p></li>
+<li><p>Policies</p></li>
+</ul>
+</td>
+</tr>
+<tr>
+<th data-highlight-colour="#ffffff"><p></p></th>
+<td><p>Branded Web UI</p></td>
+<td><p>Tivian Access 2.0 <strong>shall </strong>provide a way to customize the used colors and logo of the user facing UIs (like login, password reset, MFA etc.) to provide a Tivian branded version as well as customer specific versions of the Web UI.</p></td>
+</tr>
+<tr>
+<th data-highlight-colour="#ffffff"><p></p></th>
+<td><p>Tivian Branded Email UI</p></td>
+<td><p>Tivian Access 2.0 <strong>shall </strong>provide a way to customize the used colors and logo of the user facing emails (like activation, password reset, etc.) to provide a Tivian branded version of emails.</p></td>
+</tr>
+<tr>
+<th data-highlight-colour="#ffffff"><p></p></th>
+<td><p>Custom Email Relay</p></td>
+<td><p>Tivian Access 2.0 <strong>will </strong>provide a way to send emails using a configurable email server to send out email to ensure that existing IP allow-listing still works for customers.</p></td>
+</tr>
+</tbody>
+</table><p></p>

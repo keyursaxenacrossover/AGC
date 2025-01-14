@@ -1,0 +1,106 @@
+td>
+</tr>
+<tr>
+<td><p>mysight_tableau_project</p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>mysight_tableau_site</p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>mysight_tableau_user</p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>mysight_tableau_user2group</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table><p></p><h3 id="header-59">MySight v2 Intermediate/Exasol tables and descriptions</h3><p> List of tables and table names can be changed at all times, so this list might not be accurate</p><p></p><table data-layout="default" data-table-width="760" ac:local-id="70102850-3dfc-4443-bb8f-c3fa49d0ea1b">
+<colgroup>
+<col style="width: 340.0px;">
+<col style="width: 340.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/MySight?sortcol=0;table=5;up=0#sorted_table">Table name</a></p></th>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/MySight?sortcol=1;table=5;up=0#sorted_table">Description</a></p></th>
+</tr>
+<tr>
+<td><p>%_ACCOUNT_[instance_id]</p></td>
+<td><p>Panelist accounts that have access to the dashboards via the selected groups</p></td>
+</tr>
+<tr>
+<td><p>%_DIMENSION_[instance_id]_1</p></td>
+<td><p>variables that were selected as dimensions/splits within the mysight instance</p></td>
+</tr>
+<tr>
+<td><p>%_FACT_[instance_id]</p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>%_FREPORT_[instance_id]</p></td>
+<td><p>data of Field report</p></td>
+</tr>
+<tr>
+<td><p>%_NODE_[instance_id]</p></td>
+<td><p>in employee surveys, list of org units with label, meta name and org code etc.</p></td>
+</tr>
+<tr>
+<td><p>%_ORG_[instance_id]</p></td>
+<td><p>in employee surveys, link table between project, participant and org unit</p></td>
+</tr>
+<tr>
+<td><p>%_ORG_BRIDGE_[instance_id]</p></td>
+<td><p>in employee surveys, link table between org unit and its parent, also shows the metaname of the unit</p></td>
+</tr>
+<tr>
+<td><p>%_PATH_[instance_id]</p></td>
+<td><p>in employee surveys, org structure</p></td>
+</tr>
+<tr>
+<td><p>%_PROJECT_[instance_id]</p></td>
+<td><p>ID, title and description of EFS project(s) that have been selected within the mysight instance</p></td>
+</tr>
+<tr>
+<td><p>%_QUESTION_[instance_id]</p></td>
+<td><p>details to questions of the EFS project(s) e.g. question title</p></td>
+</tr>
+<tr>
+<td><p>%_TEXT_[instance_id</p></td>
+<td><p>Answers to open ended questions</p></td>
+</tr>
+<tr>
+<td><p>%_USER_[instance_id]</p></td>
+<td><p>Overview of users (panelists) and assignment to org units</p></td>
+</tr>
+<tr>
+<td><p>%_LANGUAGE_[instance_id]</p></td>
+<td><p>Overview of language</p></td>
+</tr>
+<tr>
+<td><p>%_STATUS_[instance_id]</p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>%_CATEGORY_[instance_id]</p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>%_RATER_GROUP_[instance_id]</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table><h3 id="header-60">MySight v2 Sync Process in the logs</h3><ul>
+<li>
+<p>if you grep for JOBMAKER you will see the jobs</p>
+<pre><code class="language-text">###### JOBMAKER STARTING JOB 'mysightSyncResultQueue'</code></pre>
+<p> or</p>
+<pre><code class="language-text">###### JOBMAKER STARTING JOB 'mysightSyncGroupQueue'</code></pre>
+</li>
+<li>
+<p>within these connections the INTERMEDIATE Db will get updated. The last UPDATE statement might look like this:</p>
+<pre><code class="language-text">      13582387 Query  UPDATE EFS_D19D4250CBBA35A2A8695258E7225C94_FACT_8765 AS f JOIN EFS_D19D4250CBBA35A2A8695258E7225C94_TEXT_8765 AS t 
+                                ON(f.PROJECT_ID=t.PROJECT_ID AND f.PARTICIPATION_ID=t.PARTICIPATION_ID AND f.QUESTION_ID=t.QUESTION_ID) 
+                                SET f.TEXT

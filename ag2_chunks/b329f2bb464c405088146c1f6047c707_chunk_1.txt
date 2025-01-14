@@ -1,0 +1,215 @@
+ working with the exported data.</p>
+</li>
+<li>
+<p>Clicking on the internal label or the <strong>Edit</strong> icon will open the dialog in which the respective variable is configured.</p>
+</li>
+<li>
+<p>User-defined variables can be deleted by clicking on the familiar<strong> Delete</strong> icon.</p>
+</li>
+</ul>
+<h3 id="overview-of-the-standard-variables-of-participant-administration" class="wysiwyg-text-align-justify">Overview of the standard variables of participant administration</h3>
+<p class="wysiwyg-text-align-justify">The following table lists all defaulted participant variables. The list also contains the project types for which each variable can be used (PE: Personalized project, ES: Employee survey, MSF: Multi-source feedback).</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 207.0px;"> <col style="width: 160.0px;"> <col style="width: 139.0px;"> <col style="width: 99.0px;"> <col style="width: 155.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p>Label</p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p>Variable name</p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p>Project type</p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p>Data type</p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p>Size</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>User ID: Unique User ID</p>
+</td>
+<td>
+<p><em>uid</em></p>
+</td>
+<td>
+<p>PE, ES</p>
+</td>
+<td>
+<p>int</p>
+</td>
+<td>
+<p>11 places</p>
+<p>Threshold values:</p>
+<p>2147483648 bis 214748364</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Personnel number</p>
+</td>
+<td>
+<p><em>u_account</em></p>
+</td>
+<td>
+<p>MSF</p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>First name</p>
+</td>
+<td>
+<p><em>u_firstname</em></p>
+</td>
+<td>
+<p>PE, ES, MSF</p>
+</td>
+<td>
+<p>varchar</p>
+</td>
+<td>
+<p>255</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Name</p>
+</td>
+<td>
+<p><em>u_name</em></p>
+</td>
+<td>
+<p>PE, ES, MSF</p>
+</td>
+<td>
+<p>varchar</p>
+</td>
+<td>
+<p>255</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>E-mail</p>
+</td>
+<td>
+<p><em>u_email</em></p>
+</td>
+<td>
+<p>PE, ES, MSF</p>
+</td>
+<td>
+<p>varchar</p>
+</td>
+<td>
+<p>255</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Password (unencrypted)</p>
+</td>
+<td>
+<p><em>u_passwd</em></p>
+</td>
+<td>
+<p>PE, ES, MSF</p>
+</td>
+<td>
+<p>varchar</p>
+</td>
+<td>
+<p>255</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Initial password</p>
+</td>
+<td>
+<p><em>u_initial_passwd</em></p>
+</td>
+<td>
+<p>MSF</p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Title</p>
+</td>
+<td>
+<p><em>u_title</em></p>
+</td>
+<td>
+<p>PE, ES</p>
+</td>
+<td>
+<p>varchar</p>
+</td>
+<td>
+<p>255</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Gender</p>
+</td>
+<td>
+<p><em>u_gender</em></p>
+</td>
+<td>
+<p>PE, ES, MSF</p>
+</td>
+<td>
+<p>tinyint</p>
+</td>
+<td>
+<p>1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Group</p>
+</td>
+<td>
+<p><em>u_group</em></p>
+</td>
+<td>
+<p>PE, ES</p>
+</td>
+<td>
+<p>int</p>
+</td>
+<td>
+<p>11 (see above)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Organizational unit</p>
+</td>
+<td>
+<p><em>u_unit</em></p>
+</td>
+<td>
+<p>MSF</p>
+</td>
+<td>
+<p>

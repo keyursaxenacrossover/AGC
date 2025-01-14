@@ -1,0 +1,118 @@
+<p>0 = not flipped</p>
+</li>
+<li>
+<p>1 = flipped</p>
+</li>
+</ul>
+<p> </p>
+<p>When a participant starts a survey for the first time, <em>hflip</em> is always written – regardless of whether flips are activated for the survey or not. However, the participant will only see those questions flipped for which the flipping function has been explicitly activated. Consequently, all questions, for which this function was not activated, will be displayed as set in the corresponding question regardless of the random <em>hflip</em> value. Information on whether the flipping function has been activated for a question cannot be found in the export of the result data. To get this information, you have to manually check in the respective question, if the flipping function has been activated.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>vflip</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>Variable for the vertical flip (vertical mirroring of the answer options):</p>
+<ul>
+<li>
+<p>0 = not flipped</p>
+</li>
+<li>
+<p>1 = flipped</p>
+</li>
+</ul>
+<p> </p>
+<p>When a participant starts a survey for the first time, <em>vflip</em> is always written – regardless of whether flips are activated for the survey or not. However, the participant will only see those questions flipped for which the flipping function has been explicitly activated. Consequently, all questions, for which this function was not activated, will be displayed as set in the corresponding question regardless of the random <em>vflip</em> value. Information on whether the flipping function has been activated for a question cannot be found in the export of the result data. To get this information, you have to manually check in the respective question, if the flipping function has been activated.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>output_mode</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>Which layout is used? HTML layout or mobile layout?</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>javascript</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>Version of the browser’s javascript (if configured)</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>flash</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>Version of the Flash Payer plugin (if configured)</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>session_id</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>Session ID of the participation</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>language</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>Participant’s language ID</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>cleaned</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>Participation was modified by data cleaning</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>ats</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>Time of survey start (absolute time stamp)</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>datetime</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>Time of the survey start</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>date_of_last_access</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>Time of the last access of the participant to the survey</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>date_of_first_mail</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>Time of the first mail sent to participant</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p>RTS (+ page ID)</p>
+</td>
+<td style="width: 447.604px;">
+<p>Relative time stamp for each page + page ID.<br>RTS (+ page ID) indicates the time in seconds that has elapsed since the survey start. Using this variable, you can determine the time a participant has spent on a page. For the calculation, you must subtract the value of RTS (+Page ID) of the previous page from the value of RTS (+Page ID) of the desired page. A calculation example can be found below.</p>
+<p> </p>
+<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015039305490" alt="image-20240312-101533.png">
+<p>Please note, that the order of the variables "RTS (+page ID)" in the export does not necessarily correspond to the order in which the respective participant has displayed the pages.</p>
+</td>

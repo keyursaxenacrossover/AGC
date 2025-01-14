@@ -1,0 +1,33 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K" class="wysiwyg-text-align-justify">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article provides information about Tivian Access, a module designed to increase the security of Tivian applications. It covers the main scenarios for implementation, identity providers and protocols, architectural overview, and frequently asked questions.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">Tivian Access is a security module that can be integrated into existing SSO infrastructure to mitigate bad password habits and enhance the overall security of Tivian applications.</p>
+<ul class="wysiwyg-text-align-justify">
+<li><a href="#increase-the-security-of-your-tivian-applications">Increase the security of your TIVIAN applications</a></li>
+<li><a href="#three-main-scenarios">Three Main Scenarios</a></li>
+</ul>
+<h2 id="increase-the-security-of-your-tivian-applications" class="wysiwyg-text-align-justify"><strong>Increase the security of your TIVIAN applications</strong></h2>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify">To increase the security of your <em>TIVIAN</em> applications - after the implementation of the <em>Privacy Assistant</em> (GDPR) - the new <em>TIVIAN Access</em> module has been implemented. By the use of this module, which can be integrated into your existing SSO infrastructure, bad password habits will be mitigated.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h3 id="three-main-scenarios" class="wysiwyg-text-align-justify"><strong>Three Main Scenarios</strong></h3>
+<p class="wysiwyg-text-align-justify"><strong>Multi Factor Authentication</strong></p>
+<p class="wysiwyg-text-align-justify"><strong>Partner Setup</strong></p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21018302945042" alt="image-20210107-155201.png"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21018333522322" alt="image-20210107-155247.png"></p>
+<p class="wysiwyg-text-align-justify">You want to add an extra layer of security to my EFS login by using a second authentication factor.</p>
+<p class="wysiwyg-text-align-justify">You want to access all my EFS installations &amp; modules that I manage for my clients using one set of login credentials.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify"><strong>Federated Login</strong></p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21018333520146" alt="image-20210107-155418.png"></p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify">You want all users to access EFS (admin, portals, report manager) by <strong>using our existing corporate sign in</strong> that we are using for all 3rd party products. The integration with an existing SSO software or service is based on the supported protocols OIDC Federation or SAML Federation.</p>
+<p class="wysiwyg-text-align-justify"><a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20370522887314-Identity-Providers-and-Protocols">→ Read more about OIDC Federation</a></p>
+<p class="wysiwyg-text-align-justify"><a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20370522887314-Identity-Providers-and-Protocols">→ Read more about SAML Federation</a></p>
+<p class="wysiwyg-text-align-justify">Please note that scenario C can be configured with or without a connection to an existing identity provider. A second authentication factor can be enforced here as well.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h3 id="h_01J4418CZXCZB4MW7V1HSX8GVK" class="wysiwyg-text-align-justify"> </h3>
+<h3 id="identity-providers-and-protocols" class="wysiwyg-text-align-justify"><strong>Identity Providers and Protocols</strong></h3>
+<p class="wysiwyg-text-align-justify">Read more about the pre-requisites for a successful connection to an existing IAM/SSO via SAML 2.0 <strong>or </strong>OpenID connect.</p>
+<p class="wysiwyg-text-align-justify"><a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles

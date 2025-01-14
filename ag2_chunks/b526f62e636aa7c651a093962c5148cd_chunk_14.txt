@@ -1,0 +1,144 @@
+ IN NS ns1.opst.de.
+&lt;domain&gt; IN NS ns2.opst.de.
+e.g.
+example.com IN NS ns1.opst.de.
+example.com IN NS ns2.opst.de.
+another.example.net IN NS ns1.opst.de.
+another.example.net IN NS ns2.opst.de.</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>5. Customer should remove all other DNS-Records except the previously mentioned NS-Records</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="cname-record-only-for-sub-domains">CNAME-Record (Only for Sub-Domains)</h4>
+<ul>
+<li>
+<p>Advantages:</p>
+<ul>
+<li>
+<p><span style="color: #36b37e;">Domain is ensured to resolve to the intended IP at all time</span></p>
+</li>
+<li>
+<p><span style="color: #36b37e;">In case of an IP change no intervention by the customer is needed</span></p>
+</li>
+<li>
+<p><span style="color: #36b37e;">DKIM &amp; DMARC are not affected</span></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Disadvantages:</p>
+<ul>
+<li>
+<p><span style="color: #ff5630;">All DNS-Queries are redirect =&gt; customer can </span><strong><span style="color: #ff5630;">not </span></strong><span style="color: #ff5630;">set </span><strong><span style="color: #ff5630;">any other</span></strong><span style="color: #ff5630;"> records themselves</span></p>
+</li>
+<li>
+<p><span style="color: #ff5630;">Problem for MX-Record: All reply mails will go to a single Mail-server that must accept them, meaning</span></p>
+<ul>
+<li>
+<p><span style="color: #ff5630;">this domain</span></p>
+</li>
+<li>
+<p><span style="color: #ff5630;">the generic-domain of the installation</span></p>
+</li>
+<li>
+<p><span style="color: #ff5630;">other Alias-Domains of the installation with CNAME-Records</span></p>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="color: #ff5630;">Problem for SPF-Record: Only single record for the whole installation (problematic for lookup-limit)</span></p>
+</li>
+<li>
+<p><strong><span style="color: #ff5630;">Not cloud compatible: </span></strong><span style="color: #ff5630;">because the customervoice domain directly points to our Loadbalancer-Abstraction-Domain for all installations no custom Records can be defined for the customervoice domain as these would be valid for all our customers</span></p>
+</li>
+</ul>
+</li>
+<li>
+<p>How-To:</p>
+<ul>
+<li>
+<p>Inform customer that they need to setup a record like:</p>
+<ul>
+<li>
+<pre><code class="language-text">&lt;domain&gt; IN CNAME &lt;ab1234&gt;.customervoice360.com
+e.g.
+some.example.com IN CNAME eg1337.customervoice360.com.</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Workarounds (Only <strong>non-cloud</strong>):</p>
+<ul>
+<li>
+<p>SPF-Record, either:</p>
+<ul>
+<li>
+<p>Create a consolidated SPF-Record encompassing rules for all aliases, e.g.</p>
+<ul>
+<li>
+<p><strong>!!Be aware of the lookup-limit!!</strong></p>
+</li>
+<li>
+<pre><code class="language-text">"v=spf1 &lt;additional-alias1&gt; &lt;additional-alias2&gt; &lt;...&gt; include:spf.qb-feedback.com -all"</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>Build a special macro based record that includes rules dynamically + custom QB-managed-records</p>
+<ul>
+<li>
+<p>Untested</p>
+</li>
+<li>
+<pre><code class="language-text">TBD</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>MX-Record :</p>
+<ul>
+<li>
+<p>(not recommended) Never send any mail for which the deposited mail-server does not accept answers</p>
+</li>
+<li>
+<p>(Not offered by Tivian) Setup of a single mail-relay, which then relays the mails as needed</p>
+<ul>
+<li>
+<p>Make sure to append the SFP-Record accordingly to prevent fails</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="domain-transfer">Domain-Transfer</h4>
+<ul>
+<li>
+<p>Advantage:</p>
+<ul>
+<li>
+<p><span style="color: #36b37e;">Tivian can manage all records as necessary</span></p>
+<ul>
+<li>
+<p><span style="color: #36b37e;">The DNS-Provider we use does support ALIAS- / ANAME-Record</span></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Disadvantages:</p>
+<ul>
+<li>
+<p><

@@ -1,0 +1,11 @@
+-19">[2] List <a data-card-appearance="inline" href="http://tivian.com">http://tivian.com</a>  users</h3><p>list all panelistsin tivian domain.</p><h3 id="header-20">[3] List conflicts</h3><p>shows paneliststhat has same local-part and different domain-part in their email address. On left side are user with questback domains and on right side are users with tivian domain. </p><h3 id="header-21">[4] Convert</h3><ol>
+<li><p>get uuid for tivian domain from okta → user will be created if not exists </p></li>
+<li><p>add new uuid to client  group nad user group</p></li>
+<li><p>remove old uuid from client group and user group <strong>(if email address is not used by user)</strong></p></li>
+<li><p>replace uuid in iam_user_portal_reference table</p></li>
+</ol><h2 id="header-23">[8] Portal update (e.g. update redirects after creation of new domain-alias)</h2><p>Can be used to update portal-applications so the redirect-links are up-to-date if new domain was created.</p><h2 id="header-24">[9] Exit</h2><p>exit programm</p> data-card-appearance="inline" href="http://tivian.com">http://tivian.com</a>  users</h3><p>list all panelistsin tivian domain.</p><h3 id="header-20">[3] List conflicts</h3><p>shows paneliststhat has same local-part and different domain-part in their email address. On left side are user with questback domains and on right side are users with tivian domain. </p><h3 id="header-21">[4] Convert</h3><ol>
+<li><p>get uuid for tivian domain from okta → user will be created if not exists </p></li>
+<li><p>add new uuid to client  group nad user group</p></li>
+<li><p>remove old uuid from client group and user group <strong>(if email address is not used by user)</strong></p></li>
+<li><p>replace uuid in iam_user_portal_reference table</p></li>
+</ol><h2 id="header-23">[8] Portal update (e.g. update redirects after creation of new domain-alias)</h2><p>Can be used to update portal-applications so the redirect-links are up-to-date if new domain was created.</p><h2 id="header-24">[9] Exit</h2><p>exit programm</p>

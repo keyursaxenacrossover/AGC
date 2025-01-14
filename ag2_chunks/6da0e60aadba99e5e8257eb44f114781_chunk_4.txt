@@ -1,0 +1,31 @@
+ in the survey. All layout elements and questions, including sliders and other visual question types, are then automatically mirrored and adapted to the language, providing familiar usability for the participant. There’s also no need to manually flip scales or dimensions, allowing true multi-language surveys out of the box.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998007846034" alt="Hebrew.png"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20997991701138" alt="English.png"></p>
+<p>List of supported regions (first part of the language code)</p>
+<p>ar (Arabic), arc (Aramaic), dv (Divehi), fa (Farsi), ha (Hausa), he(Hebrew), khw (Khowar), ks (Kashmiri), ku (Kurdish), ps (Pashto), ur (Urdu), yi (Yiddish). For example, ar_MA, ar_SA and ar_QA are all supported, because of region code <em>ar</em>.</p>
+<h3 id="header-36"><strong>Improved mobile view of the accordion matrix question type</strong></h3>
+<p>The Accordion Matrix question type now has the option "Vertical alignment on mobile phones" in the detailed configuration, which allows vertical alignment of elements in the mobile view. This also happens if you have selected a horizontal layout.</p>
+<h3 id="header-37">Accessibility improvements in Responsive Layout 3</h3>
+<p>The accessibility of Survey Layout 3 has been further improved for users with disabilities. The questions now contain additional guidance information when filling out lists of answers and DAC checks will automatically read the error messages to the user. The HTML structure of accessible question types was updated to provide better compatibility with screen readers.</p>
+<h3 id="header-38"><strong>Temporary deactivation of active samples in Panel-Projects</strong></h3>
+<p>It is now possible to temporarily deactivate an already invited sample, e.g. to correct the questionnaire. Deactivated samples are blocked from participation with a message and the survey is removed from the panelists’ todo list in <em>Portals</em> or <em>Panel Website</em>.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998021528338" alt="Samples.png"></p>
+<h3 id="header-39"><strong>Reuse of stratifications across samples and projects</strong></h3>
+<p>In panel and master data projects, it is now possible in a sample to reuse existing stratifications defined in other samples of the project or even samples of other projects, which were created with EFS 20.1 or later. This greatly speeds up creation of samples in panel projects with complex recurring stratification rules.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20997966727058" alt="Reuse of stratifications.png"></p>
+<h3 id="header-40"><strong>Easier editing of participant variables</strong></h3>
+<p>It is now easier to create answer categories in the participant variables editor. It is now possible to create several categories at once, without the need to save each time. Also mass import of categories from a text editor, <em>Excel</em> or <em>Word</em> is now possible through the “Paste from Word” feature.</p>
+<h3 id="header-41"><strong>Batch updating of emails in the Participant administration</strong></h3>
+<p>When updating participant data through an import file, it is now possible to also change the participant’s email address stored in the <em>u_email </em>variable.</p>
+<h3 id="header-42"><strong>Copying of plausibility checks</strong></h3>
+<p>Plausibility checks can be copied to other pages. This allows reuse of existing checks, where the same or similar conditions are to be checked.</p>
+<h3 id="header-43"><strong>Usability improvements during designing of surveys</strong></h3>
+<p>All variable pickers in the Questionnaire editor of a survey were enhanced to provide grouping of variables and titles containing the source of the variable, e.g. question names. This allows easier orientation while creating filter conditions in larger projects with similarly named answer options or scales.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20997976120466" alt="Usability Improvements.png"></p>
+<h3 id="header-44"><strong>Include files in LUA filters of a questionnaire</strong></h3>
+<p>A LUA filter definition in a questionnaire can now re-use code libraries, by providing the possibility to include up to two libraries from the media library of an EFS installation.</p>
+<h3 id="header-45"><strong>Faster management of large projects</strong></h3>
+<p>The new participant administration UI from EFS 19.5 release will automatically be enabled for personalised projects containing more than 1000 participants. This reduces the load on the system in large projects.</p>
+<h3 id="header-46"><strong>UID in Exports of personalised projects</strong></h3>
+<p>The user's id (uid) is now included in participant data and combined participant and result data exports and can be used for easier mapping of participants to their data in external tools.</p>
+<h3 id="header-47">
+<strong>Hiding of source code editor in questionnaire edito</strong><em>r</em>

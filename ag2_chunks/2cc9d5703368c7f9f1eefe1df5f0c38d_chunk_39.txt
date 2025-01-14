@@ -1,0 +1,113 @@
+ the page’s module overview.</p>
+</td>
+<td style="width: 166.632px;">
+<p>Password recovery</p>
+</td>
+</tr>
+<tr>
+<td style="width: 133.889px;">
+<p>Module template</p>
+</td>
+<td style="width: 420.035px;">
+<p>Module-specific template that controls how data provided by the module are displayed.</p>
+</td>
+<td style="width: 166.632px;">
+<p>func_password_recover</p>
+</td>
+</tr>
+<tr>
+<td style="width: 133.889px;">
+<p>Mail template for password recovery mail</p>
+</td>
+<td style="width: 420.035px;">
+<p>Mail template used for password delivery.</p>
+<p>The “Password recovery” mail templates are available. Please make sure that the selected template contains all necessary wildcards.</p>
+</td>
+<td style="width: 166.632px;">
+<p>Password recovery</p>
+</td>
+</tr>
+<tr>
+<td style="width: 133.889px;">
+<p>Hint for e-mail address</p>
+</td>
+<td style="width: 420.035px;">
+<p> </p>
+</td>
+<td style="width: 166.632px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 133.889px;">
+<p>Hint for the security question</p>
+</td>
+<td style="width: 420.035px;">
+<p> </p>
+</td>
+<td style="width: 166.632px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 133.889px;">
+<p>Message upon successful delivery</p>
+</td>
+<td style="width: 420.035px;">
+<p>This text is displayed once the mail has been sent.</p>
+</td>
+<td style="width: 166.632px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 133.889px;">
+<p>Hint for password</p>
+</td>
+<td style="width: 420.035px;">
+<p> </p>
+</td>
+<td style="width: 166.632px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 133.889px;">
+<p>Message upon successful update</p>
+</td>
+<td style="width: 420.035px;">
+<p> </p>
+</td>
+<td style="width: 166.632px;">
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="function-module-bonus-list-and-redemption" class="wysiwyg-text-align-justify"><strong>Function Module: Bonus List and Redemption</strong></h3>
+<p class="wysiwyg-text-align-justify">The “Bonus list and redemption” function module allows you to create pages where panelists can exchange their points for bonuses. In the standard panel, you can find the corresponding menu under <strong>My Home → Redeem points</strong>.</p>
+<p class="wysiwyg-text-align-justify">Bonuses are maintained via a separate GUI. In the standard panel, you can use the “func_redemption” template to change the appearance of the “Bonus list and redemption” module.</p>
+<p class="wysiwyg-text-align-justify">Optionally, you can allow your panelists to name an alternative recipient address for a bonus. E.g. they can name their place of employment or the address of friends who are to receive the bonus as a present. For this purpose, the alternative address is queried via a dedicated field in the bonus redemption form, stored in the context of the specific redemption process, and listed in the column „Altern. recipient“ in detail view and export.</p>
+<p class="wysiwyg-text-align-justify">The feature requires special programming, it is not implemented in the standard panel. If you are interested, please get in touch with our support.</p>
+<p class="wysiwyg-text-align-justify"><strong>Options</strong></p>
+<p class="wysiwyg-text-align-justify">The “Bonus list and redemption” function module offers the following options.</p>
+<table class="wysiwyg-text-align-justify" style="height: 1909px;" border="1" width="766" data-layout="default" data-table-width="760">
+<colgroup>
+<col style="width: 185.0px;">
+<col style="width: 408.0px;">
+<col style="width: 167.0px;">
+</colgroup>
+<tbody>
+<tr style="height: 67px;">
+<th class="wysiwyg-text-align-center" style="height: 67px; width: 183.073px;" data-highlight-colour="#57d9a3">
+<p><strong>Option</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="height: 67px; width: 407.517px;" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="height: 67px; width: 165.017px;" data-highlight-colour="#57d9a3">
+<p><strong>Standard panel "Redeem points" page</strong></p>
+</th>
+</tr>
+<tr style="height: 44px;">
+<td style="height: 44px; width: 175.

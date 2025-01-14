@@ -1,0 +1,176 @@
+p>
+</th>
+<th data-highlight-colour="#c0b6f2">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Ranking type</p>
+</td>
+<td>
+<p>Use this option to switch between click and drag ranking.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Alignment</p>
+</td>
+<td>
+<p>The alignment of images and/or answer texts can be configured. Options:</p>
+<ul>
+<li>
+<p>Left-aligned</p>
+</li>
+<li>
+<p>Centered</p>
+</li>
+<li>
+<p>Right-aligned</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Click ranking: Indent</p>
+</td>
+<td>
+<p>You can configure if the clicked options should be indented to the right or the left hand.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Drag ranking: Change of selection</p>
+</td>
+<td>
+<p>You can decide if participants are allowed to drag answer options back into the select box. Options:</p>
+<ul>
+<li>
+<p>Not allowed</p>
+</li>
+<li>
+<p>Allowed</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Drag ranking: Direction of selection</p>
+</td>
+<td>
+<p>Usually, options are taken from the left-hand box and dragged into the answer box to the right-hand. But the direction can be changed.</p>
+<ul>
+<li>
+<p>From left to right</p>
+</li>
+<li>
+<p>From right to left</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Drag ranking: Image</p>
+</td>
+<td>
+<p>The drag ranking arrow can be replaced by another image.</p>
+<ul>
+<li>
+<p>Various Arrow icons are available from the Tivian library.</p>
+</li>
+<li>
+<p>To change the icon simply click on the default icon. Then, you can select the desired file from the media library</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Max width of images</p>
+</td>
+<td>
+<p>You can set the maximum width of images in the answer options: small (25 %), medium (50 %), large (100 %). Medium is the default value.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Minimum number of answers required</p>
+</td>
+<td>
+<p>The minimum number of answers a participant has to select.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Maximum number of answers</p>
+</td>
+<td>
+<p>The maximum number of answers a participant can select. When the limit is reached, the participant cannot add additional answers in the target column until an answer is removed from the column first.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h4 id="layout-configuration">Layout configuration</h4>
+<table class="" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 263.0px;"> <col style="width: 497.0px;"> </colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour="#c0b6f2">
+<p><strong>Feature</strong></p>
+</th>
+<th data-highlight-colour="#c0b6f2">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Activate color switch</p>
+</td>
+<td>
+<p>Optionally, the slider can change its color once a certain user-defined value has been reached. When activating this feature, please specify the threshold and the second color.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Foreground color</p>
+</td>
+<td>
+<p>This color is used for the slider's foreground.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>End value for color switch</p>
+</td>
+<td>
+<p>This color is displayed as soon as the threshold has been reached.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>The threshold value for the switch of color</p>
+</td>
+<td>
+<p>In this field, you can specify the threshold for the color switch.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2> </h2>
+<h2 id="advanced">Advanced</h2>
+<p>You can supplement the typified standard question types with their predefined arrangement of form elements by creating question types of your own. For this purpose, the question type 911 (“User-defined”) is available to advanced users with knowledge of HTML. In this question type, the arrangement of the form elements can be laid out as required.</p>
+<h3 id="user-defined">User Defined</h3>
+<p>You can supplement the typified standard question types with their predefined arrangement of form elements by creating question types of your own. For this purpose, the question type 911 (“User-defined”) is available to advanced users with knowledge of HTML. In this question type, the arrangement of the form elements can be laid out as required.</p>
+<p>The following EFS Survey features are supported when using 911 variables:</p>
+<ul>
+<li>
+<p>Plausibility checks. Please note: server-side format checks (PHP) can only be applied to variables of type “text” or “short text”.</p>
+</li>
+<li>
+<p>Depot questions</p>
+</li>
+<li>
+<p>Multilingual capability for entries into the “Edit HTML” field.</p

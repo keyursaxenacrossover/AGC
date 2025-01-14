@@ -1,0 +1,100 @@
+ metadata</a></p>
+</li>
+<li>
+<p>Configure Routing Rules</p>
+</li>
+<li>
+<p>Configure Profile Mapping</p>
+</li>
+</ul>
+<p> </p>
+<h3 id="header-6">Client Metadata not available</h3>
+<ul>
+<li>
+<p>Setup a “dummy” Identity Provider in Okta to generate the Metadata</p>
+</li>
+<li>
+<p><a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1223852069/SAML+Provider+Setup+-+Prerequisites#Send-Over-Metadata">Send over metadata</a></p>
+<ul>
+<li>
+<p>Wait for the client Metadata response</p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1223852069/SAML+Provider+Setup+-+Prerequisites#Update-the-Identity-Provider">Update the Identity Provider</a></p>
+</li>
+<li>
+<p>Configure Routing Rules</p>
+</li>
+<li>
+<p>Configure Profile Mapping</p>
+</li>
+</ul>
+<h2 id="header-7">Setup the Identity Provider</h2>
+<div class="expand-macro">
+<h3 id="header-8">Step 1: Navigate to Identity Providers</h3>
+<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716883649938" alt="Screenshot_2019-12-11 Questback - Dashboard.png">
+<p> </p>
+<h3 id="header-9">Step 2: Add a new SAML Identity Provider</h3>
+<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716893860754" alt="Screenshot_2019-12-11 Questback - Identity Providers.png">
+<p> </p>
+<h3 id="header-10">Step 3: Provide Okta specific information</h3>
+<p><strong>Values:</strong></p>
+<p>Name: see Naming conventions in Okta</p>
+<p><strong>IdP Username</strong>: Usually that should always be “idpuser.subjectNameId”. To prevent unexpected cases simply lowercase this value. <strong>Input</strong>: <code>String.toLowerCase(idpuser.subjectNameId)</code></p>
+<p><strong>Match against</strong>: <code>Okta Username</code></p>
+<p><strong>If no match is found</strong>: Select JIT provisioning</p>
+<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716887021074" alt="Bildschirmfoto 2019-12-11 um 16.31.00.png">
+<p> </p>
+<h3 id="header-11">Step 4: Provide JIT information and SAML settings</h3>
+<p><strong>Values:</strong></p>
+<p><strong>Group Assignment</strong>: Assign to specific groups</p>
+<p><strong>Specific Groups</strong>: The group of the company the user belongs to - This was set up during the tenant setup</p>
+<p><strong>IdP Issuer URI</strong>:</p>
+<ul>
+<li>
+<p>in Metadata: look for the entityID (first line) and add the value <code>entityID=”some-value”</code></p>
+</li>
+<li>
+<p>In case this is not present put a dummy in there and correct later</p>
+</li>
+</ul>
+<p><strong>IdP Single Sign-On URL</strong>:</p>
+<ul>
+<li>
+<p>In Metadata: look for a node <code>md:SingleSignOnService</code> (if multiple are present, select the one for <code>HTTP-POST</code>) and copy the URL in the attribute <code>Location="https://some-url.com/sso"</code></p>
+</li>
+<li>
+<p>In case this is not present put a dummy in there and correct later</p>
+</li>
+</ul>
+<p><strong>Idp Signature Certificate</strong>:</p>
+<ul>
+<li>
+<p>In Metadata: look for the <code>X509Certificate</code> with the <code>use="signing”</code> (in the KeyDescriptor tag), copy the value and save it as a certificate to your computer. Then upload it.</p>
+</li>
+<li>
+<p>Store the certificate file in keypass as attachement of the entry for the installation!</p>
+<ul>
+<li>
+<p>For formatting the certificate tools like <code>https://www.samltool.com/format_x509cert.php</code> can be used</p>
+</li>
+</ul>
+</li>
+<li>
+<p>In case this is not present put a dummy certificate in there and correct later</p>
+<ul>
+<li>
+<p>the dummy certificate can be created here: <a href="https://www.samltool.com/self_signed_certs.php">https://www.samltool.com/self_signed_certs.php</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p>The dummy certificate can be a any self-signed certificate</p>
+</li>
+</ul>
+<p> </p>
+<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716894001426" alt="Screenshot_2019-12-11 Questback - Identity Providers_123.png">
+<p><strong>Advanced Settings:</strong></p>
+<p><strong>Request Binding</strong>: HTTP POST is preferred, if not available use HTTP REDIRECT instead. The available options can be seen in the Metadata, depending on what <code

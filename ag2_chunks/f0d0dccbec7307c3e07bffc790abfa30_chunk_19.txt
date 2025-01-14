@@ -1,0 +1,175 @@
+tbody>
+</table>
+</div>
+<h1 id="header-90">Leadership</h1>
+<div class="expand-macro">
+<h4 id="h_01J441N79FXA38K6055474TQ46"> </h4>
+<h2 id="header-92">POST /loft/participants/pool/{sampleId}</h2>
+<p>add multiple feedback-participants from a CSV file to the participants pool using data from a CSV file. note this operation works on surveys of type "leadership" only</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "csvData": "CSV content",
+  "returnIdentifierType": "u_email",
+  "mappingColumn": "u_email"
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">{
+  "successful": 1,
+  "failed": 1,
+  "failedRows": [
+    {
+      "line": 1234,
+      "value": "Example",
+      "errors": [
+        {
+          "column": "Example",
+          "value": "Example",
+          "details": [
+            {
+              "code": "Example",
+              "translated": "Example",
+              "type": 1234
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "returnIdentifiers": [
+    {
+      "internalReturnValue": "u_email",
+      "externalReturnValue": "u_email"
+    }
+  ]
+}</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>sampleId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>id of sample to add the participants to <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79FF7Q98AEQAP7GNJQ8"> </h4>
+<h3 id="header-94">POST /loft/participants/{sampleId}</h3>
+<p>add multiple feedback-provider and -receiver from a CSV file to a feedback-wave using data from a CSV file. note this operation works on surveys of type "leadership" only</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "waveId": 1,
+  "csvData": "CSV Import data",
+  "returnIdentifierType": "u_email",
+  "mappingColumn": "Mail"
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">{
+  "successful": 1,
+  "failed": 1,
+  "failedRows": [
+    {
+      "line": 1,
+      "value": "Example",
+      "errors": [
+        {
+          "column": "Example",
+          "value": "Example",
+          "details": [
+            {
+              "code": "Example",
+              "translated": "Example",
+              "type": 1234
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "returnIdentifiers": [
+    {
+      "internalReturnValue": "u_email",
+      "externalReturnValue": "Mail"
+    }
+  ]
+}</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>sampleId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>id of sample to add the participants to <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79FBTSX7QFV7081XZ91"> </h4>
+<h3 id="header-95">GET /loft/participants/{project_id}/{fid}</h3>
+<p>Get feedback center user data</p>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">"Encoded Feedback Center data"</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style

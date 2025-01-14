@@ -1,0 +1,78 @@
+>
+</td>
+</tr>
+<tr style="height: 31px;">
+<td style="width: 319.653px; height: 31px;">
+<p>SAS</p>
+</td>
+<td style="width: 416.007px; height: 31px;">
+<p>File format for the SAS evaluation program.</p>
+</td>
+</tr>
+<tr style="height: 88px;">
+<td style="width: 319.653px; height: 88px;">
+<p>Fixed Format</p>
+</td>
+<td style="width: 416.007px; height: 88px;">
+<p>In this format, the columns are separated by blank spaces. Fixed Format is employed, for example, if the Quantum program is being used for evaluation.</p>
+</td>
+</tr>
+<tr style="height: 537px;">
+<td style="width: 319.653px; height: 537px;">
+<p>Quantum</p>
+</td>
+<td style="width: 416.007px; height: 537px;">
+<p>Data files for further evaluation in Quantum. The exported zip folder contains the actual result data and additionally the basic, tab, and axis files.</p>
+<p>To supplement this feature, the following optional settings are available:</p>
+<ul>
+<li>
+<p>You can optionally adjust column widths or have them automatically expanded.</p>
+</li>
+<li>
+<p>The sys missings in the Quantum axis file can optionally be output.</p>
+</li>
+<li>
+<p>The text values can in be output in the Quantum data.</p>
+</li>
+<li>
+<p>The Quantum table names are automatically generated from the internal variable names.</p>
+</li>
+</ul>
+<p>Please note: Quantum has limitations regarding the number of axes. If an exported file contains too many axes, you should edit them manually in Quantum.</p>
+<p>In the case of questions with multiple response lists, note the following: Quantum can only determine a name for the axis if the variable names for the items of a question begin with the same characters. (For example, Quantum can generate the name “f1” from the variable names “f1_1”, “f1_2” and “f1_3”).</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify">EFS can generate export files with up to 2 GB.</p>
+<p class="wysiwyg-text-align-justify">Please take into consideration that, due to manufacturers’ specifications, some export formats are subject to certain restrictions:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>A maximum of 256 columns can be inserted into an MS Excel worksheet. If you open an exported CSV file in <em>Microsoft Excel</em>, all further columns will be cut off by <em>Microsoft Excel</em>. You can alternatively use the<em> Excel</em> export function integrated into <em>EFS Survey</em>, which automatically distributes the exported data on several worksheets.</p>
+</li>
+<li>
+<p>If an <em>Excel </em>file is opened on a computer running with <em>Windows 7</em> and <em>Excel 2007</em>, depending on the circumstances, a message may be displayed that notifies you that the file is corrupted. This problem is caused by an extension provided by a third-party supplier. Until further notice, please proceed as follows: Save the file locally. Then, open the saved file, allowing <em>Excel</em> to repair it. Finally, save the file again.</p>
+</li>
+<li>
+<p>SPSS export (based on PSPP) truncates string variables after 254 characters until EFS 10.0. Until EFS 10.0, it is therefore recommended that you export the answers separately to open-ended questions in another format (e.g. XLS, CSV) and use a different program for viewing the answers. From EFS 10.1 the new PSPP version 0.8.1 is used. Therefore, when exporting for <em>SPSS from version 14 onwards </em>it is now optionally possible to work without this restriction. To do so, deactivate the new option “Cut text field entries after 254 characters for SPSS export”. Please note that without restriction on the text length, the overall size of the export file can grow significantly, depending on the number of text fields in the questionnaire and the number of participants.</p>
+</li>
+<li>
+<p>SPSS will only transfer user-defined missing values for text variables if the variables’ field is no more than eight characters wide.</p>
+</li>
+<li>
+<p>SPSS and special features for SPSS evaluation do not support several question types, especially question type 911 and question type 912 (which is available only in the context of special programming).</p>
+</li>
+<li>
+<p>Both in <em>Microsoft Excel</em> as well as in SPSS, the file size is restricted by the amount of available RAM.</p>
+</li>
+<li>
+<p>Up to Excel 2000, the maximum size of a <em>Microsoft Excel </em>file is 64 MB. As of <em>Excel</em> 2002 the maximum file size is 128 MB.</p>
+</li>
+<li>
+<p>The size of editable files is also restricted by the amount of RAM available on the computer in use.</p>
+</li>
+<li>
+<p><em>Microsoft Excel</em> as well as OpenOffice are known to not correctly render or process very long cell contents.</p>
+</li>
+<li>
+<p>All columns in Fixed Format export files have at least the

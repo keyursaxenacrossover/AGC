@@ -1,0 +1,39 @@
+<p><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p>This article explains how to create a scale question that starts with 0 in EFS (Enterprise Feedback Suite), addressing the challenges and providing a workaround for this specific scenario.</p>
+<p> </p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>Creating a scale question that starts with 0 requires a special approach due to system limitations in EFS. This guide will walk you through the process and explain important considerations.</p>
+<p> </p>
+<ul>
+<li><a href="#h_01HGKSMPRT1QJXZ3NQJD5XBPEM">Understanding the Challenge</a></li>
+<li><a href="#h_01HGKSMPRT2KGQX6YJVHX8TNQR">Workaround Solution</a></li>
+<li><a href="#h_01HGKSMPRT3BXGQ0JQJCYXP2VT">Important Considerations</a></li>
+</ul>
+<p> </p>
+<h2 id="h_01HGKSMPRT1QJXZ3NQJD5XBPEM">Understanding the Challenge</h2>
+<p>In most EFS question types, including scale questions, the code "0" is reserved as a system missing value for questions that have been seen but not answered. This system limitation prevents the creation of an answer option directly encoded as "0".</p>
+<p> </p>
+<h2 id="h_01HGKSMPRT2KGQX6YJVHX8TNQR">Workaround Solution</h2>
+<p>To create a scale question that starts with 0, follow these steps:</p>
+<h3 id="h_01HGKSMPRT4KFVQ2NQJCYXP2VU">Step 1: Create a custom answer option</h3>
+<p>Create an answer option with a code that is not "0". For example, if you're creating a scale from 0 to 100, you could use code "101" for the first option.</p>
+<h3 id="h_01HGKSMPRT5BXGQ0JQJCYXP2VV">Step 2: Label the option as "0"</h3>
+<p>While the code for this option is not "0", label it as "0" in the question display. This way, respondents will see "0" as the starting point of the scale.</p>
+<h3 id="h_01HGKSMPRT6KFVQ2NQJCYXP2VW">Step 3: Adjust subsequent options</h3>
+<p>Ensure that the subsequent options in your scale are labeled and coded appropriately to maintain the desired range (e.g., 1 to 100).</p>
+<p> </p>
+<h2 id="h_01HGKSMPRT3BXGQ0JQJCYXP2VT">Important Considerations</h2>
+<p>When implementing this workaround, keep the following in mind:</p>
+<ul>
+<li>Deactivate the display of scale values in a box on the right-hand side of the question. This box typically shows the code, which could cause confusion in this special case.</li>
+<li>Be aware that in data analysis, the code for the "0" option will be different (e.g., "101" in our example). Ensure that this is accounted for in any data processing or reporting.</li>
+</ul>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="h_01HGKSMPRT7BXGQ0JQJCYXP2VX">Why can't I directly use "0" as a code for the first option in a scale question?</h3>
+<p>In EFS, the code "0" is reserved as a system missing value for questions that have been seen but not answered. This limitation applies to most question types, including scale questions.</p>
+<h3 id="h_01HGKSMPRT8KFVQ2NQJCYXP2VY">Will this workaround affect my data analysis?</h3>
+<p>Yes, it's important to remember that the actual code for the "0" option will be different from what respondents see. Make sure to account for this in your data processing and analysis.</p>
+<p> </p>
+</article>

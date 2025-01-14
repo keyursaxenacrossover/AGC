@@ -1,0 +1,103 @@
+<h1 id="h_01J6CWDZY0QCDKJ6ZSF1C1K9CW">Overview</h1>
+<p>This guide provides a comprehensive step-by-step process for setting up and customizing Okta for Tivian. It focuses on global configurations that are set once and applied across all users and tenants, including email setup, login page customization, Multi-Factor Authentication (MFA) enablement, and Okta profile adaptations.</p>
+<ul>
+<li><a href="#header-3">Initial email setup</a></li>
+<li><a href="#header-4">Add general customization and custom domain</a></li>
+<li><a href="#header-5">Customizing of the login page</a></li>
+<li><a href="#header-6">Enable Factors for Multi Factor Authentication</a></li>
+<li><a href="#header-7">Adapt Okta profiles</a></li>
+<li><a href="#header-8">Ask support to enable disabling the security question</a></li>
+</ul>
+<h2 id="header-1">Initial User Setup</h2>
+<ul>
+<li>
+<p>Create internal groups</p>
+</li>
+<li>
+<p>Add initial users</p>
+</li>
+<li>
+<p>Give initial users admin rights</p>
+</li>
+</ul>
+<p> </p>
+<p><strong>Create the following groups (also see </strong>Group Setup<strong>):</strong></p>
+<ul>
+<li>
+<p>tivian super admins</p>
+</li>
+<li>
+<p>tivian access installers</p>
+</li>
+<li>
+<p>tivian user managers</p>
+</li>
+</ul>
+<p> </p>
+<p><strong>Add users that will be super admins later on by creating them locally in Okta:</strong></p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716347828370" alt="Screenshot_2019-12-19 Questback - People.png"></p>
+<p><strong>Assign admin rights.</strong></p>
+<p>Assign admin rights to the specific groups so that the specified users can get appropriate access rights. To to that navigate to <span style="color: #36b37e;">Security → Administrators → Add Administrator Group</span>.</p>
+<table data-layout="full-width">
+<colgroup> <col style="width: 226.67px;"> <col style="width: 226.67px;"> <col style="width: 226.67px;"> </colgroup>
+<tbody>
+<tr>
+<td><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716346235026" alt="Screenshot_2019-12-19 Questback - Administrators.png"></td>
+<td><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716304799250" alt="Screenshot_2019-12-19 Questback - Administrators(1).png"></td>
+<td><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716346059410" alt="Screenshot_2019-12-19 Questback - Administrators(2).png"></td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p><strong>Create an account for the API user and assign the following access rights to that user on the administrator page:</strong></p>
+<ul>
+<li>
+<p>Organization Administrator</p>
+</li>
+<li>
+<p>API Access Management Administrator</p>
+</li>
+<li>
+<p>Application Administrator (for all applications)</p>
+</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716345852178" alt="Screenshot_2019-12-19 Questback - People(1).png"></p>
+<p><strong>Disable noreply</strong></p>
+<p>The noreply user has a special meaning in EFS. It should not be possible to add such a user to Okta. Therefore add it upfront and disable it.</p>
+<ul>
+<li>
+<p>create a user with the address “noreply@questback.com” (“noreply@tivian.com”)</p>
+</li>
+<li>
+<p>disable the user</p>
+</li>
+<li>
+<p>give a hint that this user has to stay disabled</p>
+</li>
+</ul>
+<p> </p>
+<h2 id="header-3">Initial email setup</h2>
+<p>Navigate to Security → General and disable all emails in the “security Notifications Emails.</p>
+<ul>
+<li>
+<p>New sign on notification mail → Disabled</p>
+</li>
+<li>
+<p>MFA enrolled notification email → Disabled</p>
+</li>
+<li>
+<p>MFA reset notification email → Disabled</p>
+</li>
+<li>
+<p>Report suspicious activity via email → disabled</p>
+</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716304460178" alt="Screenshot_2019-12-19 Questback - General.png"></p>
+<p> </p>
+<p><strong>Customize Email templates:</strong></p>
+<ul>
+<li>
+<p>Add custom HTML code to the following templates: UserActivation, Forgot Password Denied, Password Reset By Admin, Forgot Password</p>
+</li>
+<li>
+<p>Use HTML code from <a href="https://bitbucket.org/qbengineering/okta_resource_email_customization/src/master/" data-card-appearance="inline">https://bitbucket.org/qb

@@ -1,0 +1,69 @@
+</p></li></ul>
+</li>
+<li><p>If needed, add additional customizings <a href="https://it.globalpark.de/twiki/bin/view/Support/SupportDV2#Check_out_custom_loader_or_other">Loader or other DV customizings/ check out repository</a></p></li>
+<li>
+<p>Change root password, e.g. using script dv/support/changeRootPw.php <strong>Do NOT execute on procus or on mirror server</strong></p>
+<ul><li><p>(<strong>php 5.3.6 can be used</strong> /opt/pdp/opst/apps/php-5.3.6/bin/php) php support/changeRootPw.php</p></li></ul>
+</li>
+<li><p>Add root password to Passwordsafe in corresponding folder e.g. "Data Voyager 3"</p></li>
+<li>
+<p>Add DV to Globis. e.g. using corresponding helpers script <strong>Do NOT execute on procus or on mirror server</strong></p>
+<ul>
+<li><p>cd dv/</p></li>
+<li><p>helpersAddInstallationInGlobis</p></li>
+<li><p>All required information will be gathered by the script</p></li>
+</ul>
+</li>
+<li><p>Let System Administration activate the cron job (<strong>as the cron job is set up per folder, please mention the exact folder name of the DV</strong>) <strong>Do NOT execute on procus or on mirror server</strong></p></li>
+<li>
+<p>Login to DV using root account</p>
+<ul><li><p>[Installation_name]/dv</p></li></ul>
+</li>
+<li>
+<p>Add database of EFS installation</p>
+<ul><li>
+<p>Data Sources &gt;&gt; + &gt;&gt; Add database:</p>
+<ul>
+<li><p>get information by executing: grep __db conf/config.inc.php3</p></li>
+<li><p>set Data source to 'active'</p></li>
+</ul>
+</li></ul>
+</li>
+<li><p>Goto section Activate Report Manager (if it was requested) ( fix this link later: [Support.SupportDV4#Activate_Report_Manager][Activate Report Manager]])</p></li>
+<li>
+<p>Add <ac:inline-comment-marker ac:ref="3f5316fb-ea69-4934-85e5-49c25f922d10">DV user</ac:inline-comment-marker></p>
+<ul>
+<li><p>Log in to DV using root account</p></li>
+<li>
+<p>User Management &gt;&gt; +</p>
+<ul>
+<li><p>Enter information of user</p></li>
+<li><p>Set user to active and set a high expiry date</p></li>
+</ul>
+</li>
+<li><p>Send password: User Management &gt;&gt; mark user &gt;&gt; Send mail &gt;&gt; Invitation</p></li>
+</ul>
+</li>
+<li><p>Inform 1st level support respectively the person who requested the DV</p></li>
+</ul><h3 id="header-7">Handover to Sysadmins</h3><p> The following output will be printed by helpersCreateNewDataVoyager script. Use it for handing over the case to sysadmins.</p><pre><code class="language-text">Hi Admins,
+
+Please create a new DV database: 
+
+Installation: [URL]
+
+resources.db.adapter = "MYSQLI" 
+resources.db.params.adapterNamespace = "Oat_Db_Adapter" 
+resources.db.params.host = "" 
+resources.db.params.dbname = "" 
+resources.db.params.username = "" 
+resources.db.params.password = "" 
+resources.db.params.port = 
+
+Please also restart the frontends. </code></pre><p></p><h3 id="header-8">TS Setup Checklist</h3><div class="expand-macro">
+<h4 string="Checklist"></h4>
+<p>[] Execute healself within the corresponding DV folder<br>[] (optional) add additional customizings Loader or other DV customizings/ check out repository<br>[] Change root password<br>[] Add root password to Passwordsafe<br>[] Add DV to Globis<br>[] Let System Administration activate the cron job and restart Lighty (as the cron job is set up per folder, please mention the exact folder name of the DV)<br>[] Add EFS database in DV admin area<br>[] Add DV user (if any were requested)<br>[] Inform 1st level support respectively the person who requested the DV</p>
+</div><h2 id="header-10">DV 4.0</h2><p> As of now (2017-08-04) the set up of DV 4 is the same as for DV3 and DV2. Since 2017-10-16 the DV also can be set up using the helpers script <strong>helpersCreateNewDataVoyager</strong><br><a href="https://it.globalpark.de/twiki/bin/view/Support/SupportDV2#Set_up_DV_using_scripts">SupportDV2 Set up DV using scripts</a></p><p></p><h1 id="header-12">OLD - Set up DV manually</h1><p> As of now (2017-08-04) the set up of DV 4 is the same as for DV3 and DV2.<br></p><ul>
+<li>
+<p>Ask Sysadmins to create database</p>
+<ul>
+<li><p>dv database name: dv_xxx (replace xxx with the generated part of the client's domain <a href="http

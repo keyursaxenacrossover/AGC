@@ -1,0 +1,70 @@
+ on <strong>Activate Camera</strong> participants can activate the camera and have to grant EFS access to it. To start the recording, they have to click on <strong>Start Recording</strong>. The stop icon will stop the recording. Afterwards, participants can play their recording, or delete it and start another one.</p>
+<p>To upload a previously recorded video, participants can click the <strong>Select file</strong> link. They can then choose a file. Once it is uploaded, they can play their video, or delete it again.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015136735250" alt="image-20240506-103426.png"></p>
+<p> </p>
+<h3 id="reference-question">Reference question</h3>
+<p>If a specific question is used repeatedly in your questionnaire, you can define a depot question and reference it on all appropriate pages. Reference questions do not have dedicated variables, but refer to the variables of the respective depot question. More information on this topic can be found here.</p>
+<h3 id="hierarchy-question-types">Hierarchy question types</h3>
+<p>The two question types <em>Hierarchy </em>and <em>Hierarchy search</em> allow browsing and the selection of a unit in non-employee projects. The meta name of the selected unit is stored in a variable. An ES project with an org structure needs to be selected as a source under <strong>Options</strong> in the Questionnaire editor. Both question types have the same function, only their presentation differs.</p>
+<ul>
+<li>
+<p>The question types <em>Hierarchy </em>and <em>Hierarchy search </em>are available on installations with an enabled Employee module.</p>
+</li>
+</ul>
+<p><strong>How to use the question types </strong><em><strong>Hierarchy</strong></em><strong> and </strong><em><strong>Hierarchy search</strong></em><strong>:</strong></p>
+<ul>
+<li>
+<p>In the Questionnaire editor, click on <strong>New question</strong> in your project.</p>
+</li>
+<li>
+<p>Select one of the following options from the table:</p>
+<ul>
+<li>
+<p>Question type <em>Hierarchy</em>: Select the option <strong>Advanced</strong> and <strong>Hierarchy</strong> from the dialog.</p>
+</li>
+<li>
+<p>Question type<em> Hierarchy search</em>: Select the option <strong>Advanced </strong>and <strong>Hierarchy search</strong> from the dialog.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Confirm by clicking <strong>Save and edit</strong>.</p>
+</li>
+<li>
+<p>Under <strong>Options →</strong> <strong>Survey</strong>, select your Employee project from the drop-down list.</p>
+</li>
+<li>
+<p>Confirm by clicking <strong>Save</strong>.</p>
+</li>
+<li>
+<p>Under <strong>Options →</strong> <strong>Structure view,</strong> select the org structure from the drop-down menu, from which the participant should pick a unit.</p>
+</li>
+<li>
+<p>Confirm by clicking <strong>Save</strong>.</p>
+</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015136740754" alt="image-20231030-091649.png"></p>
+<p>For units to be selectable in these question types, you need to check the option <strong>Permit allocation to the unit in the questionnaire</strong> in the Org Processor for the respective unit.</p>
+<p>To do so, follow these steps:</p>
+<ul>
+<li>
+<p>Under<strong> Organizational Structure</strong> in Org Processor, click on the unit to be activated.</p>
+</li>
+<li>
+<p>Click on the tab <strong>Edit Unit</strong>.</p>
+</li>
+<li>
+<p>Activate the checkbox next to <strong>Permit allocation to the unit in the questionnaire</strong>.</p>
+</li>
+<li>
+<p>Confirm by clicking <strong>Save</strong>.</p>
+</li>
+</ul>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq_javascript">Do all question types work without JavaScript?</h3>
+<p>Most question types have fallback options for browsers without JavaScript, but some advanced types like sliders and certain matrix questions require JavaScript to function properly.</p>
+<h3 id="faq_file_upload">What file types are supported in the Upload question type?</h3>
+<p>The Upload question type supports various file formats including MS Office documents, PDFs, images, audio, and video files. The maximum file size is typically 64 MB.</p>
+<h3 id="faq_custom_questions">Can I create my custom question types?</h3>
+<p>Yes, you can create custom question types using the User Defined (911) question type, which allows you to use HTML and JavaScript to create unique question formats.</p>
+<p> </p>

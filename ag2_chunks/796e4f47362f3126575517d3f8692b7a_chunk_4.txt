@@ -1,0 +1,47 @@
+> fulfills the promise of a novel exploration of the data space. DSEs are constructed separately from the rigid organizational units that used to be the starting point of the data space query. To create a DSE of type <strong>Unit relation</strong>:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>You assign a label that is output in the report cells.</li>
+<li>For a minuend and subtrahend, you select the units you want to relate to each other.
+<ul>
+<li>The minuend must be taken from the current wave.</li>
+<li>You use all unit elements for the subtrahend.</li>
+<li>You use the following unit elements: <strong>Fixed unit</strong>, <strong>Focus unit</strong>, <strong>DSE,</strong> and <strong>Comparison units</strong>.</li>
+</ul>
+</li>
+<li>You <strong>save</strong>.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">While the DSE <strong>Simple unit</strong> is used to simplify work, you use the <strong>Unit relation</strong> to represent a difference value that correlates the selected units with each other. For example, you represent a trend by placing a focus unit from the current wave in relation to one from the historical wave or a focus unit in relation to the comparison unit.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>DSEs can become members of the Unit collections.</li>
+</ul>
+<h3 id="collections-selection-of-the-collection-members" class="sc-lhVmIH iJLaKb wysiwyg-text-align-justify"><strong>Collections: Selection of the collection members</strong></h3>
+<p class="wysiwyg-text-align-justify">Under the tab <strong>Members</strong> in the inspector of the sub-navigation field <strong>Data</strong>, you select up to fifty members for the dimension or the unit collection. You drag and drop them in the desired order. If you do not specify a sort order under the other tab<strong> Extras</strong>, the order of the members you have selected applies.</p>
+<ul class="wysiwyg-text-align-justify">
+<li> You compile the dimension collection from the question texts and the dimension items of the survey.</li>
+<li>You create the unit collection from the <strong>Fixed unit</strong>, <strong>Focus unit</strong>, <strong>Comparison unit,</strong> and <strong>Dataspace entity</strong> elements.</li>
+<li>You <strong>save</strong>.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Information</p>
+<p class="wysiwyg-text-align-justify"><span style="color: #333333;">A collection is valid and can be saved if at least one member has been appointed.</span></p>
+<p class="wysiwyg-text-align-justify"><strong>Definition of the scale</strong></p>
+<p class="wysiwyg-text-align-justify">You only define a scale for the dimension collection. You use the specification of the defined scale for the sort order and for the mapping. There they are available via the scale element:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Under the tab<strong> Extras,</strong> you click on <strong>Choose Scale</strong>.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Then the inspector switches to edit mode and you select one for the entire collection from a number of possible scales.</p>
+<p class="wysiwyg-text-align-justify">A special feature must be pointed out at this point.</p>
+<ul class="wysiwyg-text-align-justify">
+<li class="auto-cursor-target">Depending on which members make up the collection, you can choose from several scales.</li>
+<li class="auto-cursor-target">The items are completely different from each other, This makes it difficult to compare the members of a dimension collection.</li>
+<li class="auto-cursor-target">Consider how the mapping is to take place and the results in the report to be generated.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Information</p>
+<p class="wysiwyg-text-align-justify"><span style="color: #333333;">Different descriptions of the question text and dimension specifications generate different scales despite identical content.</span></p>
+<p class="auto-cursor-target wysiwyg-text-align-justify"><strong>Sort Order</strong></p>
+<p class="wysiwyg-text-align-justify">Under the tab <strong>Extras</strong> in the inspector, you define the sort order of the Dimension and the Unit collections. You click on <strong>Choose sort order</strong> and the inspector switches to the edit mode. The sort order for the two elements that can be used in the mapping is then defined on different paths. First, you learn about the sort order of the dimension collection:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>You choose one of the unit elements <strong>Fixed unit</strong>, <strong>Focus unit</strong>, <strong>Comparison unit,</strong> or <strong>Dataspace entities</strong>.</li>
+<li>You set <strong>Collection Member</strong>, placeholders for the members of the collection.</li>
+<li>To create both a dimension collection and a unit collection, you click on the mapping element <strong>Unit</strong>.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If

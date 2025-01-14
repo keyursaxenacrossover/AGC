@@ -1,0 +1,51 @@
+ alternative is the anonymous export of the panelist sample:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>Form a group of the panelists that will be surveyed.</li>
+<li>Using the selective master data export, export the information that you would like to make available to the external cooperation partner, containing at least the pseudonym (the “pseudonym” variable).</li>
+<li>The external cooperation partner enters the pseudonym into the participant administration of their project. You invite the panelists from your system via email, indicating in the e-mail a URL to the survey of the co-operation partner. (Please note that you must enter this manually, you cannot use the usual mail wildcards from EFS Panel.) Indicate in the e-mail that the incentive for this project can only be given out after a certain delay at the end of the project.</li>
+<li>At the end of the survey, you will need a list of the people who successfully completed the survey from the external co-operation partner. The list must contain the pseudonym.</li>
+<li>Extract the mentioned pseudonyms into a one-column CSV file. Import the pseudonym file as a new group (see Chapter 8.3, p. 156). The group created this way can be given incentives using the appropriate functions of group administration.</li>
+</ol>
+<h2 id="personalized-projects-without-a-list-of-participants" class="wysiwyg-text-align-justify"><strong>Personalized Projects without a List of Participants</strong></h2>
+<p class="wysiwyg-text-align-justify">Not all personalized projects involve surveys of self-recruited participants. Often the external partner has a collection of e-mail addresses to be used as a sample. Sometimes the cooperation partner, on the one hand, does not want to give out these e-mail addresses, but on the other hand, wants to conduct the survey as a personalized survey.</p>
+<p class="wysiwyg-text-align-justify">The following procedure, in which codes generated in the EFS Panel are used for authentication, has proved suitable in such cases:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>The survey project is created as a personalized project.</li>
+<li>Choose “Code” as the access/login type.</li>
+<li>Using Excel, an import file containing dummy accounts will be generated. It is important here that you generate syntactically correct and unique e-mail addresses: Fill in the first column with the word name, the second column with the word <em>dummy</em>, the third column with an incremental number, and the fourth column with @yourdomain.com. Now, copy the three columns that together would create a complete e-mail address, into a text editor that supports regular expressions, and then remove the tabs between the lines. Next, copy the finished e-mail addresses back into your Excel file and save the result as a CSV file.</li>
+<li>
+<p>Import this list of participants into your survey project. The import process will automatically generate codes for each participant.</p>
+</li>
+<li>
+<p>Export the participant administration with the address data export.</p>
+</li>
+<li>
+<p>The access codes generated are now available externally for further processing. The cooperation partner can dispatch the codes, for example, by post or e-mail.</p>
+</li>
+<li>
+<p>At the end of the project, perform a complete export of the address and result data to create a list of the participants who successfully participated in the project (disposition code &gt; 30 or a specific variable allocated on the last page of the survey).</p>
+</li>
+<li>
+<p>Make this list available to your customer. It can be used, for example, for incentive management.</p>
+</li>
+</ol>
+<h2 id="mail-templates" class="wysiwyg-text-align-justify"><strong>Mail Templates</strong></h2>
+<p class="wysiwyg-text-align-justify">Before a panel installation can become operational, you must at least complete the automatically sent mail templates, under <strong>Libraries → Mail templates</strong>, and define senders for them in the submenu <strong>Mail senders</strong>.</p>
+<p class="wysiwyg-text-align-justify">The following table gives you an overview of the mail template types and explains when each of them is used.</p>
+<p class="wysiwyg-text-align-justify"><strong>Overview of the mail template types</strong></p>
+<table class="relative-table wrapped wysiwyg-text-align-justify" style="width: 101.423%; margin-right: auto; margin-left: auto; height: 793px;" border="1">
+<colgroup> <col style="width: 24.468%;"> </colgroup> <colgroup> <col style="width: 9.77621%;"> </colgroup> <colgroup> <col style="width: 65.7165%;"> </colgroup>
+<tbody>
+<tr style="height: 36px;">
+<th style="height: 36px;">Mail template type</th>
+<th style="height: 36px;">Type</th>
+<th style="height: 36px;">When it is used</th>
+</tr>
+<tr style="height: 40px;">
+<td style="height: 40px;">Default mail</td>
+<td style="height: 40px;"> </td>
+<td style="height: 40px;">Is available in all non-automated dispatch processes.</td>
+</tr>
+<tr style="height: 40px;">
+<td style="height: 40px;">Invitation mail</td>
+<td style="height: 40px;"> 

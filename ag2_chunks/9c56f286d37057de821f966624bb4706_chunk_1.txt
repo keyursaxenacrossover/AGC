@@ -1,0 +1,18 @@
+_federated_domains (in case idp exists, always add tivian.com)
+	[] iam_idp_id *optional to skip Okta fpr customer IdP
+	[] proxy: http://squid.global-services.svc.cluster.local:8080
+	[] iam_unique_customer_name (pick this once at the beginning of the process)
+
+[]IAM EFS Portals
+	Okta
+	[] create trusted origin
+	https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1077182620/Portals+Setup
+		
+	EFS
+	[] add portal iam_sso_modules
+	[] configure iam_panelist_sync (check federated domains!)
+
+	[] run migration Script cd www &amp;&amp; php support/iam/migration.php
+	[] module active true (ONLY IF EVERYTHING WORKS, LOCKS PEOPLE OUT!!!)</code></pre>
+</div><p></p><h2 id="header-8">Deactivation DB</h2><p>How to deactivate Tivian Access if the bypass URL does not work:</p><p></p><pre><code class="language-sql">SELECT * from config_variables where name ='iam_module_active';
+UPDATE config_variables set value='b:0;' where name ='iam_module_active';</code></pre><p></p><h2 id="header-9">AWS Migration</h2><p>Query to set iam_proxy_url after migration:</p><pre><code class="language-sql">REPLACE INTO config_variables SET name='iam_proxy_url', module='IdentityAccessManager', definition='O:15:\"Efs_Config_Item\":5:{s:20:\"\0Efs_Config_Item\0key\";s:13:\"iam proxy_url\";s:22:\"\0Efs_Config_Item\0value\";O:23:\"Efs_Config_Value_String\":1:{s:8:\"\0*\0value\";s:51:\"http://squid.global-services.svc.cluster.local:8080\";}s:28:\"\0Efs_Config_Item\0description\";s:46:\"Set proxy if necessary. E.q. http://proxy:8080\";s:35:\"\0Efs_Config_Item\0modificationStatus\";b:1;s:25:\"\0Efs_Config_Item\0noteHtml\";s:0:\"\";}', value='s:51:\"http://squid.global-services.svc.cluster.local:8080\";', is_standard=1</code></pre><h2 id="header-10">Installations with SSO</h2><p><ac:link ac:card-appearance="inline"><ri:page ri:content-title="SSO Installations" ri:version-at-save="22"></ri:page><ac:link-body>SSO Installations</ac:link-body></ac:link> </p><p></p><p>Remove Okta?</p><p>Access Policies alle löschen bevor man Auth server löschen kann</p><p>Bisher kann das Modul nicht mehr versteckt werden, wenn die Healself einmal gelaufen ist.</p><h2 id="header-11">Troubleshooting</h2><p><ac:link ac:card-appearance="inline"><ri:page ri:content-title="Debugging Cases" ri:space-key="IAM" ri:version-at-save="1"></ri:page><ac:link-body>Debugging Cases</ac:link-body></ac:link> </p><p>In order to be able to give a QB-Account permissions for Okta Web Admin, the user has to login once via the link above and their AD user/password. The account is then created in Okta and a Super User (Mathias/Pascal) can grant permissions for Okta Web Admin. We only need Installation rights.</p>.cluster.local:8080\";', is_standard=1</code></pre><h2 id="header-10">Installations with SSO</h2><p><ac:link ac:card-appearance="inline"><ri:page ri:content-title="SSO Installations" ri:version-at-save="22"></ri:page><ac:link-body>SSO Installations</ac:link-body></ac:link> </p><p></p><p>Remove Okta?</p><p>Access Policies alle löschen bevor man Auth server löschen kann</p><p>Bisher kann das Modul nicht mehr versteckt werden, wenn die Healself einmal gelaufen ist.</p><h2 id="header-11">Troubleshooting</h2><p><ac:link ac:card-appearance="inline"><ri:page ri:content-title="Debugging Cases" ri:space-key="IAM" ri:version-at-save="1"></ri:page><ac:link-body>Debugging Cases</ac:link-body></ac:link> </p><p>In order to be able to give a QB-Account permissions for Okta Web Admin, the user has to login once via the link above and their AD user/password. The account is then created in Okta and a Super User (Mathias/Pascal) can grant permissions for Okta Web Admin. We only need Installation rights.</p>

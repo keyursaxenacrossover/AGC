@@ -1,0 +1,53 @@
+<li>
+<p>Per default, both fields are empty.</p>
+</li>
+<li>
+<p>If you complete a mail form without read rights for “mail_cc”, i.e. without seeing the CC and BCC options, the fields will be empty i.e. the mails will not be forwarded to additional recipients. If you do not have read rights and use a mail template in which CC or BCC have been defined, the values from the mail template will be used.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The specified recipient will receive the e-mail with wildcard replacements. Depending on the purpose and data protection agreement this could lead to a data protection infringement (e.g. with the dispatch of passwords).</p>
+<p class="wysiwyg-text-align-justify">This feature is intended for use within the context of test processes, in which only a few test persons will be written. Use with larger pools of participants is not recommended, as the amount of mail doubles.</p>
+<p class="wysiwyg-text-align-justify"><strong>Base URL</strong></p>
+<p class="wysiwyg-text-align-justify">The feature “Base URL” allows us to define how wildcards with URL elements (e.g. #url#, #code_complete#) will be filled.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>You can explicitly define the protocol (http, https) and the domain which is to be used in the e-mail.</p>
+</li>
+<li>
+<p>The option “Use protocol/domain from current URL” allows to make the wildcards dependent on the protocol and domain with which the user who triggers the mail action is logged into the admin area.</p>
+</li>
+<li>
+<p>Wildcards that enforce a specific protocol, such as e.g. #code_complete_http#, are not affected by these settings.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">You can only choose among several domains if there are several domains set up and configured for the installation. Otherwise, the current URL will be used automatically.</p>
+<h3 id="predefined-mail-sender" class="wysiwyg-text-align-justify"><strong>Predefined mail sender</strong></h3>
+<p class="wysiwyg-text-align-justify">The drop-down list in the “Mail sender” row allows you to select the sender address. The default setting is the e-mail address of the user logged in. Additionally, addresses which were created in the <strong>Mail templates → Mail senders</strong> menu and for which you have access rights will be available for selection. The e-mail address you select is also valid as a return and bounce address if the following definitions are true:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Reply-To: Reply-To = From</p>
+</li>
+<li>
+<p>Return-Path: Return Path = From</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015444589842" alt="Mail sending.jpg"></p>
+<p class="wysiwyg-text-align-justify"><strong>Dynamic mail sender</strong></p>
+<p class="wysiwyg-text-align-justify">The E-mail address and name of the mail sender can now be defined dynamically by filling in the fields „Dynamic mail sender“ and „Name of the sender“ as well as selecting a predefined mail sender from the drop-down list „Mail sender“ as a fallback. When filling the fields, you can use wildcards and if-conditions like in mail-text.</p>
+<p class="wysiwyg-text-align-justify">Dynamic mail senders always overwrite predefined mail senders from the drop-down list. Should the Reply-To or the Return Path address be equivalent to the address of the predefined mail sender, the dynamic mail sender will be entered in these fields also.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>This function can be used in mail templates as well. However, it is not available in mail triggers, since they already contain a similar function for setting a dynamic mail sender that can be defined from survey responses.</p>
+</li>
+</ul>
+<h3 id="sending-to" class="wysiwyg-text-align-justify"><strong>Sending TO</strong></h3>
+<p class="wysiwyg-text-align-justify">Only for <em>EFS People</em> installations: The <strong>People </strong>→ <strong>Contacts</strong> → <strong>Send e-mail</strong> menu contains a mail-sending function that allows you to contact individual recipients in a targeted manner. Whereas in all other action areas,, the group of recipients is determined in advance (e.g. a group of participants identified through the disposition code or the sample drawn from a panel), the mail-sending function in this menu allows you to contact individual recipients whose data are not even present in the EFS Panel system. Enter the address in the “To” field.</p>
+<p class="wysiwyg-text-align-justify"><strong>Mail Format</strong></p>
+<p class="wysiwyg-text-align-justify">You can send either text or real HTML emails from the EFS Survey. To do so, you must specify the format before writing the mail. The following options are available:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Text only (default)</p>
+</li>
+<li>
+<p>HTML only</p>
+</

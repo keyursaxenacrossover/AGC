@@ -1,0 +1,85 @@
+="wysiwyg-text-align-justify">Before you start please note:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The XML format used is a mere exchange format, e.g. it can be used only for transferring projects to another EFS installation or for archiving questionnaires.</p>
+</li>
+<li>
+<p>Projects can only be imported to target installations that have the same <em>EFS</em> version or a higher, newer version than the source installation of the project. It is not possible to downgrade projects via export/import, e.g. by importing a 10.0 project to a 9.0 installation.</p>
+</li>
+<li>
+<p>A change of the project type during the import process is restricted to anonymous and personalized projects.</p>
+</li>
+<li>
+<p>The decision for a layout generation and layout version made in the source project - i.e. "Responsive Layout 3", “Responsive Layout 2”, “Responsive Layout 1” or classic system layout - will be transferred when exporting. A switch during import is not possible. </p>
+</li>
+<li>
+<p>The project type of the source project as well as any possible extensions used in this project should also be available in the destination installation. For example, a project of the „panel survey“ type can only be imported without data loss into an <em>EFS</em> Panel installation, i.e. an installation that supports this project type.</p>
+</li>
+<li>
+<p>The file size for importing data is limited: the installation-specific threshold value is displayed in the import dialog. Before importing, please ensure that your file does not exceed the threshold. If your file is too big, please contact Questback's Support.</p>
+</li>
+<li>
+<p>It is not possible to export or import forum discussions.</p>
+</li>
+<li>
+<p>Read rights for “import_project” are required for using the import function.</p>
+</li>
+</ul>
+<h3 id="exporting-a-project" class="wysiwyg-text-align-justify"><strong>Exporting a project</strong></h3>
+<p class="wysiwyg-text-align-justify">To save a project on the local server, please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Starting from the Projects functional area, open the appropriate project and go to the <strong>Export</strong> menu.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017226447634" alt="Transferring a project.jpg"></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Select the “Project” export option and confirm with <strong>Continue</strong>.</p>
+</li>
+<li>
+<p>Define if and which additional data should be included in the export.</p>
+</li>
+<li>
+<p>Save the file locally on a volume of your computer as an XML file with the file extension “gpx”.</p>
+</li>
+</ul>
+<h3 id="importing-a-project" class="wysiwyg-text-align-justify"><strong>Importing a project</strong></h3>
+<p class="wysiwyg-text-align-justify">To import a project that was exported as described above into the same or another <em>EFS</em> installation in the<em> EFS</em>-specific XML format, please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Switch to the functional area Projects again, open the<strong> + New project</strong> split button and select “Import project”.</p>
+</li>
+<li>
+<p>Enter the survey title.</p>
+</li>
+<li>
+<p>To select the project file, click on <strong>Browse</strong>. Choose the .gpx file from the local drive or the network and click on the <strong>Open</strong> button.</p>
+</li>
+<li>
+<p>Select the appropriate project type.</p>
+</li>
+<li>
+<p>Specify which user teams are to receive access to the project.</p>
+</li>
+<li>
+<p>Select the appropriate folder.</p>
+</li>
+<li>
+<p>Click on <strong>Send file</strong> to import the selected project.</p>
+</li>
+<li>
+<p>If the import is successful, the following message will appear: “Project will be imported!”. You can select and edit the project in the project list.</p>
+</li>
+</ul>
+<h2 id="survey-menu" class="wysiwyg-text-align-justify"><strong>Survey Menu</strong></h2>
+<p class="wysiwyg-text-align-justify">When you are taken from the project list to a particular project, the Survey menu opens. It is the starting point for all work performed on a created project. Here you can, for example, specify the project properties, edit the layout of the survey, and add new pages and questions in the questionnaire editor. Opening the menu automatically displays the Project information in the content area. It provides you with:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Information on the most important project data, such as project type, field period, and status</p>
+</li>
+<li>
+<p>The option of using macros to automate work steps</p>
+</li>
+</ul>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863" class="wysiwyg-text

@@ -1,0 +1,46 @@
+ Exception: Variables of text question types (141, 142, 143, 144, 363), user-defined question variables (question type 911), and user-defined variables cannot be used for restriction purposes.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Click the <strong>Configuration</strong> button.</p>
+</li>
+<li>
+<p>In the upper section disable, if necessary, the disposition codes not to be used to restrict the basis.</p>
+</li>
+<li>
+<p>If you wish to make restrictions using a project variable, select the latter and confirm with <strong>Continue</strong>.</p>
+</li>
+<li>
+<p>In the next step select the desired variable characteristic.</p>
+</li>
+<li>
+<p><strong>Confirm</strong> again. The restricted field report is issued.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">To undo the field report restriction, switch back to the <strong>Configuration</strong> dialog, select “Delete current restriction” and confirm with <strong>Continue</strong>.</p>
+<p class="wysiwyg-text-align-justify">Read rights for <em>config_fieldreport</em> are required for accessing the configuration options.</p>
+<h3 id="splitting-the-field-report" class="wysiwyg-text-align-justify"><strong>Splitting the field report</strong></h3>
+<p class="wysiwyg-text-align-justify">You can split the field report using a specific variable.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The following variables are available for all project types: project variables for closed questions and answer options (v_000n), URL parameters (c_000n), userdefined variables (p_000n), quota IDs (quota), language ID (language) and outmode (outmode).</p>
+</li>
+<li>
+<p>Personalized surveys: “Select box” and “radio button” participant variables may be used, provided that answer categories have been defined.</p>
+</li>
+<li>
+<p>Employee surveys: To protect the privacy of participants, participant variables cannot be used for splitting. The Org Processor variables in Employee surveys (org_allocation_x, org_code_x, org_function_x) are not available for splitting either: The <em>Org Processor</em> provides a comfortable overview of the return data of individual units.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Please proceed as follows: Click on the <strong>Split</strong>: <strong>Define</strong> link and select the desired split variable from the drop-down list. After that, confirm by clicking on Save. The data in the field report will now be split based on the variable you chose. You can export the data as an MS Excel file and process them externally (e.g. create diagrams using MS Excel).</p>
+<p class="wysiwyg-text-align-justify">Read rights for <em>stat_split</em> are required for accessing the split options.</p>
+<h3 id="exporting-the-field-report" class="wysiwyg-text-align-justify"><strong>Exporting the field report</strong></h3>
+<p class="wysiwyg-text-align-justify">You can download the field report in MS Excel file format, e. g. to pass the data on to your customers or to plot charts or graphs. This is particularly useful if you need the data of a field report that is restricted by configuration or has been split using the split function (see previous chapters): The field report will be exported in its current configuration.</p>
+<p class="wysiwyg-text-align-justify">To initiate the export, click on the Excel export tab and save the Excel file to your computer. The Excel file has an appealing layout, i.e. if necessary, you can directly pass on or present your data.</p>
+<h3 id="setting-a-variable-page-marker" class="wysiwyg-text-align-justify"><strong>Setting a variable page marker</strong></h3>
+<p class="wysiwyg-text-align-justify">Using the so-called variable page marker allows you to determine how many people have completed the survey up to a specific questionnaire page X. Using this function is advisable, for example, if a prize draw or an order form for a newsletter which is not of interest to all respondents are offered at the end of your questionnaire. A respondent who drops out of the survey in such a situation would usually be classified as a dropout although the actual questionnaire has been completed. If you are using the variable page marker, the field report indicates the variable rate which results from the number of respondents who have reached the questionnaire page X marked with a variable page marker (variable rate = number of participants up to page X / gross 2).</p>
+<p class="wysiwyg-text-align-justify">To set the page marker, please switch to the <strong>Questionnaire editor</strong>. Click on the title of the desired page, then select the <strong>Properties menu</strong>. Tick the “Variable page marker” checkbox and confirm by clicking on <strong>Save</strong>.</p>
+<h2 id="online-statistics" class="wysiwyg-text-align-justify"><strong>Online statistics</strong></h2>
+<p class="wysiwyg-text-align-justify">As early as during the field phase, the online statistics give you an overview of the survey data gathered up to that point. In the first step, you must specify which project data the statistics are supposed to

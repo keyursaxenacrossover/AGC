@@ -1,0 +1,50 @@
+ should in general not be longer than 60 characters. Many servers make a cut after 248 characters for security reasons.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Masking special characters in the subject</strong></p>
+<p class="wysiwyg-text-align-justify">If you still need special characters, you will have to mask them appropriately. For example, “Ä” (A umlaut) will then become “=?ISO-8859-1?Q?=C4?=”. However, please note that these maskings are not supported by all mail clients and that some mail gateways or virus scanners shorten very long subject lines. In extreme cases, a virus scanner may even mistake very long subjects for an attack on the mail client and immediately delete the entire mail. <em>EFS</em> therefore limits the permissible number of characters to 254, which is within the commonly used limits.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The best way to create a subject with masked special characters is to use your mail program and send yourself an e-mail with the subject. Then, copy the masked string from the source text of your mail into the entry form’s subject row.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Mail text</strong></p>
+<p class="wysiwyg-text-align-justify">In the “Mail text” field, you can enter the actual content of the mail or edit the content of the chosen template. Depending on the format you select in the “Mail format” field, you will be provided with either an input field for a text mail, a form for an HTML mail, or two fields:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Mail text in normal text format: You merely have to enter the text. You have no option to design the text, e.g. by formatting characters. Wildcards and conditional replacements can be used.</p>
+</li>
+<li>
+<p>Mail text in HTML:</p>
+<ul>
+<li>
+<p>The modern WYSIWYG editor TinyMCE can be used when creating HTML emails or HTML mail templates (WYSIWYG = what you see is what you get).</p>
+</li>
+<li>
+<p>Wildcards and conditional replacements can be used as usual.</p>
+</li>
+<li>
+<p>Both attached images and external images can be inserted (see below for instructions).</p>
+</li>
+<li>
+<p>If necessary, you may access and edit the source code through the <strong>Source code editor</strong>. The information on which editor has been used will be saved for all users within the template. This enables the creation of complex templates which would not be possible using only the WYSIWYG editor.</p>
+</li>
+<li>
+<p>If you do not want to use the WYSIWYG editor, go to the menu <strong>Options</strong> → <strong>Personal preferences,,</strong> and on the tab <strong>General settings</strong>, select the option “Deactivate WYSIWYG editor for mail forms”</p>
+</li>
+</ul>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Automatic line breaks</strong></p>
+<p class="wysiwyg-text-align-justify">In text mails, a line break is automatically generated after 72 characters. In HTML emails, you must insert the line breaks yourself. The length of 72 characters is a quasi standard which is generally recognized for electronic messages. The origins of this are in the so-called text mode of earlier PC systems which is used, to this day, with a line length of 80 characters for 25 lines. Therefore, some mail clients generally insert a line break after 80 characters. To make it easier for e-mail’s recipients to use quotations in their replies, this limit has become established as a rule of courtesy when working with electronic messages (news messages, mailbox messages, and e-mails).</p>
+<p class="wysiwyg-text-align-justify">If you insert a line break yourself, e.g. to mark the end of a paragraph, this will be respected and kept. Also, words will not be hyphenated. If the width limit of 72 characters is exceeded with the last word in a line, the whole word will be moved to the next line.</p>
+<p class="wysiwyg-text-align-justify">Uninterrupted character strings, such as very long web addresses (URLs), are not subject to automatic line breaks.</p>
+<p class="wysiwyg-text-align-justify">It may occur that the recipient system inserts a line break into a very long line. Any existing text link with access code (#code_complete#) may then be rendered unusable. If you cannot sufficiently shorten the project’s URL yourself due to a long domain name, you should have a domain alias for your installation set up.</p>
+<p class="wysiwyg-text-align-justify"><strong>Incorporating images in HTML emails</strong></p>
+<p class="wysiwyg-text-align-justify">You can insert both attached images and external images into the text of an HTML mail.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>To insert attached images, open the <strong>Insert image</strong> dialog of the WYSIWYG editor and select the desired images from the “Image list”.</p>
+</li>
+<li>
+<p>When editing the source code, you can integrate the attached images using a wildcard #file name#. Example: The name of the appended image

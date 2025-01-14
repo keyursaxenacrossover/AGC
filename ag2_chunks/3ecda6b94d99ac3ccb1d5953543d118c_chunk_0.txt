@@ -1,0 +1,116 @@
+<h1 id="h_01J7E4MR1F8X6B0ZGAMQ9NZH1D">Overview</h1>
+<p>Smarty is a web template engine written in PHP that facilitates the separation of application logic from presentation. This allows developers to manage the front-end and back-end of web applications more efficiently.<br>It uses special tags within documents to generate web content, making it easier for web designers to work without needing extensive PHP knowledge.<br>Table of Contents</p>
+<ul>
+<li><a href="#header-3">Official Smarty documentation</a></li>
+<li><a href="#header-4">Security mode</a></li>
+<li><a href="#header-5">Smarty Plugins</a></li>
+<li><a href="#header-6">Usage examples</a></li>
+<li><a href="#header-7">What Smarty in EFS/surveys also is capable of</a></li>
+</ul>
+<h1 id="header-1">Information about Smarty</h1>
+<p>This page shall include information about the template engine Smarty relevant for EFS Technical Support.</p>
+<h2 id="header-3">Official Smarty documentation</h2>
+<p>The official Smarty documentation can be found here:</p>
+<ul>
+<li>
+<p>DE: <a href="http://www.smarty.net/docsv2/de/"><u>http://www.smarty.net/docsv2/de/</u></a></p>
+</li>
+<li>
+<p>EN: <a href="http://www.smarty.net/docsv2/en/"><u>http://www.smarty.net/docsv2/en/</u></a></p>
+</li>
+</ul>
+<h2 id="header-4">Security mode</h2>
+<ul>
+<li>
+<p>$security = TRUE, see official documentation page: <a href="http://www.smarty.net/docsv2/de/variable.security.tpl"><u>security</u></a>, <a href="http://www.smarty.net/docsv2/de/variable.security.settings.tpl"><u>security settings</u></a></p>
+</li>
+<li>
+<p>The security mode always is active if the "setup_version" config flag is &gt;=7.1 or if the "high security mode" config flag is set to true.</p>
+</li>
+<li>
+<p>If the security mode is active by default all Smarty functions are deactivated. There is a whitelist to explicitly activate special Smarty functions.</p>
+</li>
+<li>
+<p>Which functions are whitelisted? <strong>ggf. noch nachpflegen</strong></p>
+</li>
+</ul>
+<p> </p>
+<h2 id="header-5">Smarty Plugins</h2>
+<p>Smarty plugins available for EFS in general:</p>
+<ul>
+<li>
+<p>can be found here: <strong>wcp/3rd/smarty/plugins</strong></p>
+</li>
+</ul>
+<p>Smarty plugins available for EFS Survey:</p>
+<ul>
+<li>
+<p>can be found here: <strong>www/themes/plugins</strong></p>
+<ul>
+<li>
+<p>e.g. function.debuginfo.php:</p>
+<ul>
+<li>
+<p>function: "smarty_function_debuginfo"</p>
+</li>
+<li>
+<p>The text "smarty_function" is removed by EFS when the smarty engine is initialised.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="header-6">Usage examples</h2>
+<p>Smarty can be used in</p>
+<ul>
+<li>
+<p>layout templates of Surveys</p>
+</li>
+<li>
+<p>mail templates</p>
+</li>
+<li>
+<p>templates of panel websites</p>
+</li>
+</ul>
+<p>Show debug console in Surveys:</p>
+<ul>
+<li>
+<p>Navigate <strong>Survey Menu &gt;&gt; Layout &gt;&gt; Pro Editor</strong></p>
+</li>
+<li>
+<p>open e.g page_main.tpl template</p>
+</li>
+<li>
+<p>add</p>
+<pre><code class="language-text">{debug}</code></pre>
+<p>within the code</p>
+</li>
+<li>
+<p>Open (preview of ) survey</p>
+</li>
+</ul>
+<p>Show debug console on panel website:</p>
+<ul>
+<li>
+<p>Navigate to <strong>Website &gt;&gt; Select language version &gt;&gt; Settings &gt;&gt; Debugging</strong></p>
+</li>
+<li>
+<p>select "Show debug information on the website"</p>
+</li>
+<li>
+<p>Add your IP address to text field "IP address range"</p>
+</li>
+<li>
+<p>Login to the panelwebsite</p>
+</li>
+</ul>
+<h2 id="header-7">What Smarty in EFS/surveys also is capable of</h2>
+<pre><code class="language-text">functions:
+
+- assign                    =&gt; {assign var="varname" value="value"}                                                             =&gt; Assign variable at runtime
+- append                    =&gt; {append var="arrayname" value="testvalue" index=10}                                              =&gt; Assign array values at runtime  
+- counter                   =&gt; {counter start=0 skip=2 assign="counter"} -&gt; iterate through {counter}                           =&gt; Counter that works as an Iterator!!!!!
+- cycle                     =&gt; {cycle values="val1,val2,val3"} -&gt; iterator in foreach                                           =&gt; Cycling though predefined values -&gt; Iterator!!!!
+- debug                     =&gt; {debug

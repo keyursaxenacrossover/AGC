@@ -1,0 +1,84 @@
+-&gt;EFS: Admin clicks save 
+EFS-&gt;EFS: new entry in users table
+EFS-&gt;IdP: GET request to /api/v1/users/[email address]
+IdP-&gt;IdP: Checks if entry exists
+IdP-&gt;EFS: Send response
+note right of IdP: {email, firstName, lastName}
+alt
+EFS-&gt;EFS: Response user: use insert()
+EFS-&gt;IdP: POST request to /api/v1/users?activate=true
+IdP-&gt;IdP: Creates new IdP entry
+else
+EFS-&gt;EFS: Response user: use update()
+EFS-&gt;IdP: POST request to /api/v1/users/[oktaId]
+IdP-&gt;IdP: Update IdP entry
+end
+note right of IdP: {\n id: string unique identifier, \n profile: { \n     email: string email, \n     login: string email, \n     firstName: string firstName, \n     lastName: string lastName \n }\n}
+note right of IdP: @see https://developer.okta.com/docs/reference/api/users/#response-example-10
+IdP-&gt;EFS: Send Response
+alt
+EFS-&gt;EFS: create entry in iam_user_reference table
+else
+EFS-&gt;EFS: update entry in iam_user_reference table
+end
+EFS-&gt;EFS: show successfully created</code></pre>
+<p class="auto-cursor-target"> </p>
+<h2 id="header-10" class="auto-cursor-target">Update existing EFS user account</h2>
+<p> </p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20909657921298" alt="update account user.png"></p>
+<div class="alert alert-info" role="alert">
+<p><strong>POST</strong> request is used to update incremental: <a href="https://developer.okta.com/docs/reference/api/users/#update-user">https://developer.okta.com/docs/reference/api/users/#update-user</a></p>
+</div>
+<pre><code class="language-text">title Sync data on update EFS user account
+
+participant EFS
+participant IdP
+
+
+note right of EFS: user is logged in and has access rights to update user
+EFS-&gt;EFS: Admin user opens user entry and opens "change user data" page
+EFS-&gt;EFS: Admin user changes user information \n (first name, name) 
+EFS-&gt;EFS: Admin clicks save 
+EFS-&gt;EFS: entry is updated in users table
+EFS-&gt;EFS: receives uuid for oktaId from iam_user_reference_table
+EFS-&gt;EFS: use update()
+EFS-&gt;IdP: POST request to /api/v1/users/[oktaId] with changed data
+IdP-&gt;IdP: Update IdP entry
+note right of IdP: {\n id: string unique identifier, \n profile: { \n     email: string email, \n     login: string email, \n     firstName: string firstName, \n     lastName: string lastName \n }\n}
+note right of IdP: @see https://developer.okta.com/docs/reference/api/users/#response-example-10
+IdP-&gt;EFS: Send Response
+EFS-&gt;EFS: update updated_at in iam_user_reference table
+EFS-&gt;EFS: show successfully updated</code></pre>
+<p class="auto-cursor-target"> </p>
+<h2 id="header-11" class="auto-cursor-target">Create Portal</h2>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20909657924498" alt="new_portal.png"></p>
+<p> </p>
+<pre><code class="language-text">title Create Portal and receive client_id from IdP
+
+participant Portalsadmin
+participant IdP
+
+note right of Portalsadmin: user is logged in and has access rights to create portals
+Portalsadmin--&gt;Portalsadmin: create new portal
+Portalsadmin--&gt;IdP: create application with active=true
+IdP--&gt;Portalsadmin: send client_id
+Portalsadmin--&gt;IdP: add to group
+IdP--&gt;Portalsadmin: send response
+Portalsadmin--&gt;IdP: create trusted origin
+IdP--&gt;Portalsadmin: send response
+note right of Portalsadmin: in case of existing, catch Exception and ignore
+Portalsadmin--&gt;Portalsadmin: create entry in iam_portal_settings</code></pre>
+<p class="auto-cursor-target"> </p>
+<h2 id="header-12" class="auto-cursor-target">Assign Participant to Portal</h2>
+<p> </p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20909686644882" alt="assign_participant_to_portal.png"></p>
+<p> </p>
+<pre><code class="language-text">title Assign Participant to Portal
+
+participant Portalsadmin
+participant IdP
+
+note right of Portalsadmin: user is logged in and has access rights to invite participiants portals
+Portalsadmin--&gt;Portalsadmin: open newly created portal
+Portalsadmin--&gt;Portalsadmin: open participant section
+Portalsadmin--&gt

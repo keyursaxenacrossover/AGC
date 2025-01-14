@@ -1,0 +1,59 @@
+(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 204.601px; height: 119px;">Code</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 237.622px; height: 119px;">
+<p>The code of the answer category.</p>
+<p>You can use negative numbers, however these cannot contain blank spaces. E.g., “-77” can be imported “- 77 not”.</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 201.319px; height: 119px;">0</td>
+</tr>
+<tr style="height: 33px;">
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 204.601px; height: 33px;">Title</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 237.622px; height: 33px;">The label.</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 201.319px; height: 33px;">Birthday</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p class="wysiwyg-text-align-justify"><strong>Performing the import</strong></p>
+<ol class="wysiwyg-text-align-justify">
+<li>Open the<strong> People → Master data</strong> menu.</li>
+<li>This will open the overview of the master data. Instead of manually creating new master data, click on the <strong>Mass-import master data</strong> button.</li>
+<li>
+<p>Select the desired separator.</p>
+</li>
+<li>
+<p>Usually, default master data and answer categories will already be available. Add the new master data and answer categories in the correct format. If you have created an Excel table, transfer the content, but not the column labels, using copy &amp; paste.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017112908050"></p>
+</li>
+<li>
+<p>Confirm by clicking on<strong> Import</strong>.</p>
+</li>
+<li>
+<p>At the beginning of the import operation, entries are checked for the following errors:</p>
+<ul>
+<li>Correct naming according to the “m_number” convention.</li>
+<li>Matching type and size information.</li>
+<li>No existing master data variable with the same name.</li>
+<li>Each row must have exactly five columns and no empty row at the end.</li>
+</ul>
+</li>
+<li>
+<p>If the data is error-free, the master data will be created. Otherwise, an error message will result.</p>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><strong>Editing and exporting master data by means of the mass import function</strong></p>
+<p class="wysiwyg-text-align-justify">Master data and answer categories that have already been created will be output in the input field and can then be edited. External editing is also possible:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>Copy the content of the input field into Excel.</li>
+<li>Should Excel copy the data into a cell instead of formatting it correctly, select <strong>Data → Text to Columns</strong>. Choose the data type “Delimited”, and confirm by clicking on Next.</li>
+<li>Choose the separator, and confirm by clicking on <strong>Next</strong> again.</li>
+<li>Check the display, and then confirm by clicking on <strong>Finish</strong>.</li>
+</ol>
+<h3 id="MasterData-ChangingtheOrderoftheMasterData" class="wysiwyg-text-align-justify"><strong>Changing the Order of the Master Data</strong></h3>
+<p class="wysiwyg-text-align-justify">You can specify the order in which master data should normally be displayed in the admin area. To do so, click on the <strong>Change order</strong> button in the <strong>People → Master data</strong> menu.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>You can define the order yourself. To do so, enter the desired numbering in the “Order” field, and confirm by clicking on <strong>Save</strong> (see the following figure).</li>
+<li>You can sort the master data in a panel or master data survey by means of the associated variables. To do so, click on the <strong>Sort by project questionnaire order</strong> button. Select the desired project and then confirm by clicking on <strong>Submit</strong>.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017142444178">
+</li>
+</ul>
+<h3 id="MasterData-DeletingMasterData" class="wysiwyg-text-align-justify"><strong>Deleting Master Data</strong></h3>
+<p

@@ -1,0 +1,89 @@
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default">
+<colgroup> <col style="width: 139.0px;"> <col style="width: 352.0px;"> </colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour="#57d9a3">
+<p><strong>Column heading</strong></p>
+</th>
+<th data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Number of reports</p>
+</td>
+<td>
+<p>Number of available reports for this unit.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Accumulated return sum</p>
+</td>
+<td>
+<p>Return of this unit and all subunits.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Actions</p>
+</td>
+<td>
+<p>By clicking on the icon in this column you can call up the actions</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"><strong>Actions</strong></p>
+<p class="wysiwyg-text-align-justify">The following actions are available in the <strong>Actions</strong> layer:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Reports</strong>: This link takes you directly to the selected unit’s report overview.</p>
+</li>
+<li>
+<p><strong>Export list of reports</strong>: This link takes you to the export options for the list of reports</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Reports of a unit</strong></p>
+<p class="wysiwyg-text-align-justify">By clicking on the name of a unit you can open the unit-specific detail view. This view contains</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>the reports of the unit.</p>
+</li>
+<li>
+<p>the list of reports </p>
+</li>
+<li>
+<p>the user management </p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Downloading reports</strong></p>
+<p class="wysiwyg-text-align-justify">Select the desired report and the desired language, then click on <strong>Download</strong>.</p>
+<p class="wysiwyg-text-align-justify">If you want users to be able to download reports, you need to assign the right <em>reporting_download</em> to the appropriate roles. The users will then be able to download the reports that are available for their role in their units in the current phase.</p>
+<p class="wysiwyg-text-align-justify"><strong>Exporting the list of reports</strong></p>
+<p class="wysiwyg-text-align-justify">You can export a list of the available reports. This is useful, for example, if you want to check whether all the required reports are available as desired.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The export always comprises the current unit and all subunits to which you hold the relevant access rights.</p>
+</li>
+<li>
+<p>There are two export options:</p>
+<ul>
+<li>
+<p>The standard list of reports: This data record contains the report ID, unit, report type, and name, status, date of creation, file type, and language for each report.</p>
+</li>
+<li>
+<p>Expanded list of reports: This data record also lists report size and number of downloads. (The number of downloads includes both the downloads via the <em>Org Processor</em> and the download platform.)</p>
+</li>
+</ul>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">To export the list of reports, locate the desired unit on the <strong>Report Overview</strong> tab. Click on the<strong> Actions</strong> icon and select the link Export list of reports. Select the desired export option and the character set, and confirm by clicking on <strong>Send</strong>.</p>
+<p class="wysiwyg-text-align-justify">Alternatively, you can download the list via the <strong>Export List of Reports</strong> button on the <strong>Reports</strong> tab.</p>
+<h2 id="org-processor-users" class="wysiwyg-text-align-justify">
+<em><strong>Org Processor</strong></em><strong> users</strong>
+</h2>
+<p class="wysiwyg-text-align-justify"><em>EFS Employee</em> allows you to delegate data entry and maintenance for individual organizational units to staff that usually belong to the respective units. Via the separate <em>Org Processor</em> login, these staff members - the so-called users - have access to those <em>Org Processor</em> views and functions required for their work, restricted to their respective areas of responsibility. This chapter tells you how to manage the users of your project in their everyday work.</p>
+<p class="wysiwyg-text-align-justify"><strong>The </strong><em><strong>Org Processor</strong></em><strong> from the user’s perspective</strong></p>
+<p class="wysiwyg-text-align-justify">As a member of the project management, you have an administrator account for <em>EFS Employee</em>. This allows you to log into the admin area of EFS Employee and, for example, configure the survey process, work on

@@ -1,0 +1,98 @@
+dd1a-883e-438c-b396-dc9fb7f66bf1/oauth2/v2.0/authorize">https://login.microsoftonline.com/dc79dd1a-883e-438c-b396-dc9fb7f66bf1/oauth2/v2.0/authorize</a></p>
+</td>
+</tr>
+<tr style="height: 134px;">
+<td style="height: 134px; width: 162.708px;">
+<p>jwks_uri</p>
+</td>
+<td style="height: 134px; width: 185.521px;">
+<p>Location where Keys for OpenID connect are stored. These keys might rotate. Therefore this document is not static long term.</p>
+</td>
+<td style="height: 134px; width: 317.326px;">
+<p><a href="https://login.microsoftonline.com/dc79dd1a-883e-438c-b396-dc9fb7f66bf1/discovery/v2.0/keys">https://login.microsoftonline.com/dc79dd1a-883e-438c-b396-dc9fb7f66bf1/discovery/v2.0/keys</a></p>
+</td>
+</tr>
+<tr style="height: 44px;">
+<td style="height: 44px; width: 162.708px;">
+<p>issuer</p>
+</td>
+<td style="height: 44px; width: 185.521px;">
+<p>A value to validate who issued tokens.</p>
+</td>
+<td style="height: 44px; width: 317.326px;">
+<p><a href="https://login.microsoftonline.com/dc79dd1a-883e-438c-b396-dc9fb7f66bf1/v2.0">https://login.microsoftonline.com/dc79dd1a-883e-438c-b396-dc9fb7f66bf1/v2.0</a></p>
+</td>
+</tr>
+<tr style="height: 134px;">
+<td style="height: 134px; width: 162.708px;">
+<p>scopes</p>
+</td>
+<td style="height: 134px; width: 185.521px;">
+<p>A number of “topics” that could be asked for during authentication. It will result in a number of claims (particular values) after authentication.</p>
+</td>
+<td style="height: 134px; width: 317.326px;">
+<p>["openid","profile","email","offline_access"]</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"><strong>External Identity Provider (Source)</strong></p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default">
+<colgroup> <col style="width: 226.67px;"> <col style="width: 226.67px;"> <col style="width: 226.67px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>What</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Example</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>client id</p>
+</td>
+<td>
+<p>An ID to identify the connection between Okta and the external Identity Provider.</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>client secret</p>
+</td>
+<td>
+<p>A secret to create trust between Okta and the external Identity Provider.</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="saml-federation" class="wysiwyg-text-align-justify"><strong>SAML Federation</strong></h3>
+<p class="wysiwyg-text-align-justify">Security Assertion Markup Language (SAML) is a standardized approach to solve authentication, authorization, and federation of identity. It is an XML-based protocol that comes with more freedom but also more complexity than protocols like OIDC.</p>
+<p class="wysiwyg-text-align-justify"><strong>For more information see:</strong></p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<td>
+<p>SAML</p>
+</td>
+<td>
+<p><a href="http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html">http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>SAML Core</p>
+</td>
+<td>
+<p><a href="https://docs.oasis-open.org/security/saml/v2.0/saml-core-2.0-os.pdf">https://docs.oasis-open.org/security/saml/v2.0/saml-core-2.0-os.pdf</a></p

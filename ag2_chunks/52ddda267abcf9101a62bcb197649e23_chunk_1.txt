@@ -1,0 +1,93 @@
+ul>
+</li>
+<li>
+<p><strong>Create and Delete a New Portal</strong></p>
+<ul>
+<li>In the EFS Admin UI, create a new portal.</li>
+<li>Set the portal’s status to <strong>Online</strong>.</li>
+<li>After verifying the portal is active, delete it.
+<ul>
+<li>
+<em>Reason:</em> This step allows SCSS files to compile correctly during the portal’s first activation, helping to prevent broken CSS for users.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Update Globis Installation </strong>(This step is not in the dxi_installation_checklist but needs to be followed)</p>
+<ul>
+<li>Go to the Globis installation section and add the <strong>Portal</strong> module.</li>
+<li>Document the update by adding a note in the system: <code>"Activated portal (case [case ID])"</code>
+</li>
+</ul>
+</li>
+</ol>
+<h1 id="h_01J9V15GXMDTZHXMMXZQWAG304">Exceptions</h1>
+<ul>
+<li id="h_01J9V15GXMV85T8MY9FKFPWS3A">
+<h2 id="h_01J9V162NWNX0P0JNNSWJYTPKR"><strong>Special Instructions for Activating the Panel Module</strong></h2>
+<ul>
+<li>
+<p>If you are enabling the <strong>Panel</strong> module; <strong>additional</strong> steps are required, especially if the installation type is set to <strong>Survey </strong>(not originally panel installation). Below steps are additional to the original steps, and are based on <a href="https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1054933094/EFS+Panel#Install-EFS-Panel-%3E=EFS-11.0">this article</a> (not recently verified)<br>Follow these steps:</p>
+<ol>
+<li>
+<p><strong>Create the <code>panelwebsite</code> Directory</strong></p>
+<ul>
+<li>Navigate to the <code>htdocs</code> folder in your terminal and create the directory:
+<div class="dark bg-gray-950 contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative">
+<div class="sticky top-9 md:top-[5.75rem]"> </div>
+<div class="overflow-y-auto p-4" dir="ltr">
+<code class="!whitespace-pre hljs language-bash"><span class="hljs-built_in">mkdir</span> panelwebsite
+</code><br><br>
+</div>
+</div>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Copy Panel Files</strong></p>
+<ul>
+<li>Copy the required files for <code>panelwebsite</code> from the EFS build matching the installation's version:
+<div class="dark bg-gray-950 contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative">
+<div class="sticky top-9 md:top-[5.75rem]"> </div>
+<div class="overflow-y-auto p-4" dir="ltr">
+<code class="!whitespace-pre hljs language-bash"><span class="hljs-built_in">cp</span> -R /efsbuilds/efsbuilds/EFS_&lt;version&gt;/panelwebsite/* panelwebsite/
+</code><br><br>
+</div>
+</div>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Set <code>document_root</code></strong></p>
+<ul>
+<li>Update the <code>document_root</code> to point to the new <code>panelwebsite</code> directory. This requires a frontend restart:
+<div class="dark bg-gray-950 contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative">
+<div class="overflow-y-auto p-4" dir="ltr">
+<code class="!whitespace-pre hljs language-bash"><span class="hljs-built_in">rm</span> document_root; <span class="hljs-built_in">ln</span> -s panelwebsite document_root
+</code><br><br>
+</div>
+</div>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Activate the Panel Module</strong></p>
+<ul>
+<li>In the EFS Admin UI, navigate to: <code>Options &gt; Platform Cockpit &gt; System Configuration (root only)</code>
+</li>
+<li>Edit the <strong>modules</strong> variable and add <code>panel</code>.</li>
+<li>Set <code>installation_type</code> to <code>panel</code>, unless it’s already set to <code>leadership</code> or <code>employee</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Execute <code>healself</code></strong>(as explained above)</p>
+</li>
+<li>
+<p><strong>Resolve <code>healself</code> Errors (If Any)</strong></p>
+<ul>
+<li>If you encounter an error like the following:
+<div class="dark bg-gray-950 contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative">
+<div class="sticky top-9 md:top-[5.75rem]">
+<div class="absolute bottom-0 right-2 flex h-9 items-center">
+<div class="flex items-center rounded bg-token-main-surface-secondary px-2 font-sans text-xs

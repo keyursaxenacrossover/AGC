@@ -1,0 +1,40 @@
+ data-panel-type="info">
+<div class="ak-editor-panel__icon"><em>This applies only to the displayed name. It does not change the initially created internal name, as you would have to update the template, CSS and JavaScript files to match the updated name.</em></div>
+<div class="ak-editor-panel__icon"> </div>
+</div>
+<h3 id="PHP" data-renderer-start-pos="10296">PHP</h3>
+<p data-renderer-start-pos="10301">In this section, you can enable the PHP plugin and Ajax. If the Ajax option is active, the “run” method must be called via an Ajax request. Otherwise, the method will be executed after the page is submitted. Furthermore, the PHP plugin can be executed in the preview mode.</p>
+<p data-renderer-start-pos="10574"><u data-renderer-mark="true">Available objects:</u></p>
+<p data-renderer-start-pos="10594"><strong data-renderer-mark="true">$pluginData</strong> - <em data-renderer-mark="true">Survey_Ospe_Question_Plugin_Data</em><br>Contains methods like getPid(), getQid(), getIsInLoop()</p>
+<p data-renderer-start-pos="10698"><strong data-renderer-mark="true">$settings</strong> - <em data-renderer-mark="true">Array</em><br>Contains the configured options of the question. Access like:</p>
+<p data-renderer-start-pos="10779"><code class="code cc-1o5d2cw" data-renderer-mark="true">$settings["questionTypeOptions"]["optionHeader"]["activeColor"];</code></p>
+<p data-renderer-start-pos="10845"><strong data-renderer-mark="true">$questionnaireDataAccess</strong> - <em data-renderer-mark="true">Survey_Questionnaire_Data_Access</em><br>Provides wide range of functions related to the questionnaire and its data</p>
+<p data-renderer-start-pos="10981"><strong data-renderer-mark="true">$opseDataReader</strong> - <em data-renderer-mark="true">survey_ospe_data_reader</em><br>Functions related to the survey and access to user and people data</p>
+<p data-renderer-start-pos="11091"><strong data-renderer-mark="true">$questionInfo</strong> - <em data-renderer-mark="true">Array</em><br>Contains the questions settings, such as the questiontext. Access like:</p>
+<p data-renderer-start-pos="11186"><code class="code cc-1o5d2cw" data-renderer-mark="true">$questionInfo['q_text'] = $questionInfo['q_text'] . " Question text addition";</code></p>
+<h3 id="Layout-subrelease-support" data-renderer-start-pos="11266">Layout subrelease support</h3>
+<p data-renderer-start-pos="11293">All custom question types have a configuration section “Layout subrelease support”. Please test your question type and select all supported Layout versions for it here, in order to be able to use the custom question type in a newer Layout version (e.g. RL 3.1).</p>
+<p> </p>
+<h2 id="Ressources" data-renderer-start-pos="11558">Resources</h2>
+<p data-renderer-start-pos="11571">In the <strong data-renderer-mark="true">Resources </strong>area, you can manage the files that you need for your question type. These fall into two categories:</p>
+<ul class="ak-ul" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="11691">Files that you use as default value for “Resource”-options (image, audio or video files)</p>
+</li>
+<li>
+<p data-renderer-start-pos="11783">Files that you need to include in your code (i.e. JavaScript libraries)</p>
+</li>
+</ul>
+<p data-renderer-start-pos="11858">In any case, you first upload your files by clicking on the upload icon next to the “Resources”-entry in the list on the left.</p>
+<p data-renderer-start-pos="11985">In our example, we uploaded two files: “test.js” and “test.jpg”. Click on the JavaScript file to open it in the main area. Here you can edit it and save it by clicking on the checkmark icon next to its name (or by pressing Ctrl-S).</p>
+<h3 id="Using-a-ressource-in-an-option" data-renderer-start-pos="12217">Using a resource in an option</h3>
+<p data-renderer-start-pos="12249">Now that we have uploaded some files, those can be recycled for use in the Options menu, for options of the type “resource”. We will use the image as the default value for a “Resource”-option.</p>
+<ol class="ak-ol" start="1" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="12445">Go to the <strong data-renderer-mark="true">Settings </strong>area, expand <strong data-renderer-mark="true">Question type options </strong>and click on “Add option” inside an <strong data-renderer-mark="true">Options group</strong>.</p>
+</li>
+<li>
+<p data-renderer-start-pos="12553">Select “Resource” from the menu and enter values for the options name, label and help text.</p>
+</li>
+<li>
+<p data-renderer-start-pos="12648">Select “test.jpg” from the select box to assign

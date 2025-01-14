@@ -1,0 +1,52 @@
+ test is more advisable for checking the functionality of triggers than using the automatic project test.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify">Please note that EFS does not generate test data for the <em>User-defined (911)</em> question type and all other question types that are based on it, namely <em>Audio player (911), Video player (911), Slider (numbers) (911), and LUA question type (911)</em>.</p>
+<h3 id="routing-statistics" class="wysiwyg-text-align-justify">Routing statistics</h3>
+<p class="wysiwyg-text-align-justify">The routing statistics are located on the <strong>Routing Statistics</strong> tab. The following guiding questions will help you to interpret them. After the test run, first check whether the number of sessions completed (disposition code 31, 32) equals the number of times participated you originally entered. To do so, open the<strong> Routing statistics</strong> tab and click on the <strong>Evaluate complete data records only</strong> link.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017226462994" alt="Routing.jpg"></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>If all sessions were completed successfully, you can limit your analysis to these statistics, labeled <strong>Evaluate completed data records</strong> only.</p>
+</li>
+<li>
+<p>If test sessions were interrupted as in the example shown, you should first identify the cause of the drop-outs. To do so, click on the <strong>Evaluate all data records</strong> link. Note that drop-outs do not necessarily indicate problems. In the example shown, for instance, the drop-outs are participants who were screened out after a quota was fulfilled.</p>
+</li>
+</ul>
+<h3 id="delete-test-data" class="wysiwyg-text-align-justify">Delete test data</h3>
+<p class="wysiwyg-text-align-justify">The automatically generated data must be deleted if you have completed the evaluation of the routing statistics and field report. Otherwise, the data will be maintained and included in the next test session or even in the evaluation of the field phase, thus influencing the results. To do so, click on the <strong>Delete test data</strong> tab, and then confirm by clicking on <strong>Delete test data</strong>.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>In projects with internal quotas, the test run will change the current allocation and the status of the quota under <strong>Questionnaire editor</strong> → <strong>Quotas</strong>. To reset the allocation to zero, the project must be newly compiled after completion of the test. For this, the “Reset survey completely” option must be selected</p>
+</li>
+<li>
+<p>If “Use copies of existing participants” was disabled for a test run in a personalized survey, then an automatically generated participant is automatically entered for each participant in the project’s participant administration. The test persons will then receive the e-mail address of the user who launched the test. You should delete these automatically generated persons and their test data before the project goes into the field phase. To do so click on the <strong>Delete test data</strong> tab, and then confirm by clicking on <strong>Delete test data</strong>.</p>
+</li>
+<li>
+<p>If in a test run in a personalized survey “Use existing participants” was enabled or if it is an employee survey, datasets of existing participants are used for the project test. This artificially generated test data must be deleted before the project enters the field phase. To do so, you can either apply the “Reset with data deletion” action to all participants in participant administration or compile the project anew (navigate to <strong>Projects</strong> → {Selected project} → <strong>Compile</strong> and select the “Reset survey completely” option).</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="project-check" class="wysiwyg-text-align-justify">Project check</h2>
+<p class="wysiwyg-text-align-justify">The project check informs you about the progress and faults made during project creation.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The upper part of the dialog contains an overview of central topics.</p>
+</li>
+<li>
+<p>Furthermore, questionnaire structure, filter conditions, timing etc. are checked for logical consistency. Potential problems are listed with the respective problem grade.</p>
+</li>
+<li>
+<p>The Project check or Check layout cannot be used for the “Responsive Layout”. The checks are optimized for the scope of the classic system layout.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017213595538" alt="Project check.jpg"></p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 325.0px;"> <col style="width: 435.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Check</strong></p>
+</th>
+<th class="w

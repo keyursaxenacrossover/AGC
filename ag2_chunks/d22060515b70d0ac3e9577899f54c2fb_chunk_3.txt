@@ -1,0 +1,63 @@
+h2>
+<p class="wysiwyg-text-align-justify">In this menu, you can view the answers to open-ended questions.</p>
+<h3 id="restricting-the-open-ended-answers" class="wysiwyg-text-align-justify"><strong>Restricting the open-ended answers</strong></h3>
+<p class="wysiwyg-text-align-justify">The open answers can be limited to specific disposition codes or variable characteristics. This feature works analogous to restricting the field report.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Read rights for <em>config_fieldreport</em> are required for accessing the configuration options.</p>
+</li>
+</ul>
+<h2 id="detail-view" class="wysiwyg-text-align-justify"><strong>Detail view</strong></h2>
+<p class="wysiwyg-text-align-justify">If you have the required access rights, you can view, edit, and delete the data records of individual survey participants in the EFS admin area.</p>
+<h3 id="access-restrictions-for-accessing-data-records" class="wysiwyg-text-align-justify"><strong>Access restrictions for accessing data records</strong></h3>
+<p class="wysiwyg-text-align-justify">For reasons of privacy, the <strong>Detail view</strong> menu is protected by special rights, i.e. its information and functions are not automatically available to every user:</p>
+<p class="wysiwyg-text-align-justify">Authorization for data access:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>If the viewer has read rights to “report_testdata”, they can open the menu<strong> Detail view</strong> and see the results of the individual participants. A user who has this right, but none of the following additional rights, can view various field data including the consecutive participant number (lfdn) and disposition code, browser information, and system variables as e.g. language, flip variables, and quota. They will not be able to see the IP addresses or address data.</p>
+</li>
+<li>
+<p>If the viewer has additional read rights to “ip_addresses”, they will also see the IP addresses and host of participants.</p>
+</li>
+<li>
+<p>Additional read rights to “export_with_lfdn” enable you to access address data and result data combined. A user with this right can see the names, e-mail<br>addresses, code, and tester status of participants, in addition to the field and result data.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Authorization for editing data: Editing of result data is protected by a specific right. Writing authorization to <em>detail_view_edit</em> is required.</p>
+<h3 id="overview-of-data-records" class="wysiwyg-text-align-justify"><strong>Overview of data records</strong></h3>
+<p class="wysiwyg-text-align-justify">The <strong>Projects</strong> → {Selected project} → <strong>Statistics → Detail view</strong> menu provides an overview of the result data records. Depending on your access authorization, the following will be visible:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>consecutive number and disposition code of the participants, and various additional field data, browser information, and system variables</p>
+</li>
+<li>
+<p>IP address and host of the participants, if you have reading rights to<em> ip_addresses</em></p>
+</li>
+<li>
+<p>in personalized projects, name, e-mail address, tester status, and code of the participants, if you have reading authorization to <em>export_with_lfdn</em></p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Depending on your access rights and the project type, you can also perform several actions on the individual data records via the “Actions” column:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Viewing (Anonymous surveys, personalized surveys, panel surveys, employee surveys)</p>
+</li>
+<li>
+<p>Editing (Anonymous surveys, personalized surveys, employee surveys)</p>
+</li>
+<li>
+<p>Deleting (Anonymous surveys, personalized surveys, employee surveys)</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">In the upper part of the dialog, you can find the selection criteria of the search function (period of access, disposition code, display of additional variables, names, and e-mail addresses of the participants). Also, using the View button you can open additional columns or hide superfluous columns.</p>
+<h3 id="viewing-individual-data-records" class="wysiwyg-text-align-justify"><strong>Viewing Individual data records</strong></h3>
+<p class="wysiwyg-text-align-justify">To view the result data of a participant, click the <strong>Detail view</strong> icon in the overview. The following will be visible:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>consecutive number (“lfdn”) and disposition code of the participants, and various additional field data, browser information, and system variables</p>
+</li>
+<li>
+<p>IP address and host of the participants, if you have reading rights for “ip_addresses”.</p>
+</li>
+<li>
+<p>in personalized projects, name, e-mail address, tester status, and code of the participants, if you have reading authorization for “export_with_lfdn”.</

@@ -1,0 +1,112 @@
+px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 166.615px;">
+<p>Maximum number of files to be picked</p>
+</td>
+<td style="width: 377.691px;">
+<p>If you do not wish to limit the number of files, enter “0” or delete the existing value.</p>
+</td>
+<td style="width: 160.243px;">
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="function-module-random-number-draw" class="wysiwyg-text-align-justify"><strong>Function Module: Random Number Draw</strong></h3>
+<p class="wysiwyg-text-align-justify">The “Random number draw” function module generates a random number that can be used for random sample processes, for example. The module is controlled by the “random_draw” template, which is located in the template library.</p>
+<p class="wysiwyg-text-align-justify"><strong>Options</strong></p>
+<p class="wysiwyg-text-align-justify">The “Random number draw” function module offers the following options.</p>
+<table class="wysiwyg-text-align-justify" style="height: 346px;" border="1" width="730" data-layout="default" data-table-width="760">
+<colgroup>
+<col style="width: 202.0px;">
+<col style="width: 390.0px;">
+<col style="width: 168.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" style="width: 191.076px;" data-highlight-colour="#57d9a3">
+<p><strong>Option</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 367.951px;" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 160.59px;" data-highlight-colour="#57d9a3">
+<p><strong>Standard panel</strong></p>
+</th>
+</tr>
+<tr>
+<td style="width: 183.056px;">
+<p>Reference name for template</p>
+</td>
+<td style="width: 359.931px;">
+<p>Name that can be used to trigger the module in positioning templates.</p>
+</td>
+<td style="width: 152.569px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 183.056px;">
+<p>Page module title</p>
+</td>
+<td style="width: 359.931px;">
+<p>Name of the module in the page’s module overview</p>
+</td>
+<td style="width: 152.569px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 183.056px;">
+<p>Module template</p>
+</td>
+<td style="width: 359.931px;">
+<p>Module-specific template that controls how data provided by the module are displayed.</p>
+</td>
+<td style="width: 152.569px;">
+<p>func_random</p>
+</td>
+</tr>
+<tr>
+<td style="width: 183.056px;">
+<p>Random number generation type</p>
+</td>
+<td style="width: 359.931px;">
+<p>Available options are:</p>
+<ul>
+<li>
+<p>Random selection (once per session)</p>
+</li>
+<li>
+<p>Random selection (on each request)</p>
+</li>
+</ul>
+</td>
+<td style="width: 152.569px;">
+<p>Random selection (once per session)</p>
+</td>
+</tr>
+<tr>
+<td style="width: 183.056px;">
+<p>Maximum random value (default value: 100)</p>
+</td>
+<td style="width: 359.931px;">
+<p>If you do not enter anything the default value 100 will be set.</p>
+</td>
+<td style="width: 152.569px;">
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863" class="wysiwyg-text-align-justify">FAQ</h1>
+<h3 id="faq_1" class="wysiwyg-text-align-justify">How do I reference a page module on multiple pages?</h3>
+<p class="wysiwyg-text-align-justify">To reference a page module on multiple pages, first create the module on one page. Then, go to the "Modules from other pages" tab on the target pages and select the module you want to reference. Click "Save" to establish the reference.</p>
+<h3 id="faq_2" class="wysiwyg-text-align-justify">Can I customize the appearance of function modules?</h3>
+<p class="wysiwyg-text-align-justify">Yes, most function modules have a "Module template" option that allows you to select different templates to control how the module's data is displayed. You can further customize these templates to match your panel's design.</p>
+<h3 id="faq_3" class="wysiwyg-text-align-justify">How do I set up a registration form for new panelists?</h3>
+<p class="wysiwyg-text-align-justify">Use

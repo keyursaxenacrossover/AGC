@@ -1,0 +1,80 @@
+.com/PptPlus/PptService.asmx?wsdl</a>' : failed to load external entity "<a href="https://rp.questback.com/PptPlus/PptService.asmx?wsdl">https://rp.questback.com/PptPlus/PptService.asmx?wsdl</a>"</p>
+<p>(666)</p>
+</td>
+<td><p>Error</p></td>
+<td><p>Possible DNS error, check if there are other messages regarding domains that can not be resolved.</p></td>
+<td><p><br></p></td>
+<td><p>In case of DNS error contact Sysadmins.</p></td>
+</tr>
+<tr>
+<td><p>Error: Reporting PPT Export was configured but the service doesn't work for reporting_template.ppt. Error was: .NET Service returned no binary data. (1)</p></td>
+<td><p>Error</p></td>
+<td><p><br></p></td>
+<td><p><br></p></td>
+<td><p>SB: The error came up temporarily. I can’t say what the reason was. It had disappeared when I wanted to further check it so I wan’t able to further analyze it.</p></td>
+</tr>
+<tr>
+<td><p>Error: Reporting PPT Export was configured but the service doesn't work for reporting_template_blank.ppt. Error was: .NET Service returned no binary data. (1)</p></td>
+<td><p>Error</p></td>
+<td><p><br></p></td>
+<td><p><br></p></td>
+<td><p>SB: The error came up temporarily. I can’t say what the reason was. It had disappeared when I wanted to further check it so I wan’t able to further analyze it.</p></td>
+</tr>
+<tr>
+<td><p>Warning: URL service on <a href="http://i.gpefs.com/shorturl/?url=xxx">http://i.gpefs.com/shorturl/?url=xxx</a> is not available on port 80.</p></td>
+<td><p>Warning</p></td>
+<td><p>Possible DNS error, check if there are other messages regarding domains that can not be resolved.</p></td>
+<td><p><br></p></td>
+<td><p>In case of DNS error contact Sysadmins.</p></td>
+</tr>
+<tr>
+<td><p>Error: SnailMail cron job did not run in the last 15 minutes</p></td>
+<td><p>Error</p></td>
+<td><p><br></p></td>
+<td><p>Can all be ignored because cron jobs are not running on mirror installations</p></td>
+<td>
+<ul><li><p>Check if still running (then its locked - see table ‘db_locks’)</p></li></ul>
+<ul><li><p>If not try start manually</p></li></ul>
+<ul><li><p>If it cant be executed ask SA it its locked otherwise or if crons are not activated</p></li></ul>
+<ul><li><p>If errors (PHP etc.) occur while executing do further analysis</p></li></ul>
+</td>
+</tr>
+<tr>
+<td><p>Error: jobmaker cron job did not run in the last 25 minutes</p></td>
+<td><p>Error</p></td>
+<td><p><br></p></td>
+<td><p>Can all be ignored because cron jobs are not running on mirror installations</p></td>
+<td>
+<ul><li><p>Check if still running (then its locked - see table ‘db_locks’)</p></li></ul>
+<ul><li><p>If not try start manually</p></li></ul>
+<ul><li><p>If it cant be executed ask SA it its locked otherwise or if crons are not activated</p></li></ul>
+<ul><li><p>If errors (PHP etc.) occur while executing do further analysis</p></li></ul>
+</td>
+</tr>
+<tr>
+<td><p>Error: dbreportstamp cron job did not run in the last 25 hours</p></td>
+<td><p>Error</p></td>
+<td><p><br></p></td>
+<td><p>Can all be ignored because cron jobs are not running on mirror installations</p></td>
+<td>
+<ul><li><p>Check if still running (then its locked - see table ‘db_locks’)</p></li></ul>
+<ul><li><p>If not try start manually</p></li></ul>
+<ul><li><p>If it cant be executed ask SA it its locked otherwise or if crons are not activated</p></li></ul>
+<ul><li><p>If errors (PHP etc.) occur while executing do further analysis</p></li></ul>
+</td>
+</tr>
+<tr>
+<td><p>Error: Missing stream transport support in PHP. The following transports are missing: sslv2</p></td>
+<td><p>Error</p></td>
+<td><p><br></p></td>
+<td><p><br></p></td>
+<td><p><br></p></td>
+</tr>
+<tr>
+<td><p>Error: Your pdflib licence does not seem to be valid: Your client is unknown!</p></td>
+<td><p>Error</p></td>
+<td><p><br></p></td>
+<td><p><br></p></td>
+<td>
+<p>If the OSM module is activated but no pdflib licence key is in place. In case of productive installation add key</p>
+<p><a href="https://it.globalpark.de/twiki/bin

@@ -1,0 +1,106 @@
+;
+      &lt;/policy_evaluated&gt;
+    &lt;/row&gt;
+    &lt;identifiers&gt;
+      &lt;header_from&gt;example.com&lt;/header_from&gt;
+    &lt;/identifiers&gt;
+    &lt;auth_results&gt;
+      &lt;spf&gt;
+        &lt;domain&gt;ord-staging2.mtasv.net&lt;/domain&gt;
+        &lt;result&gt;pass&lt;/result&gt;
+      &lt;/spf&gt;
+    &lt;/auth_results&gt;
+  &lt;/record&gt;
+  &lt;record&gt;
+    &lt;row&gt;
+      &lt;source_ip&gt;50.31.156.116&lt;/source_ip&gt;
+      &lt;count&gt;2&lt;/count&gt;
+      &lt;policy_evaluated&gt;
+        &lt;disposition&gt;none&lt;/disposition&gt;
+        &lt;dkim&gt;pass&lt;/dkim&gt;
+        &lt;spf&gt;fail&lt;/spf&gt;
+      &lt;/policy_evaluated&gt;
+    &lt;/row&gt;
+    &lt;identifiers&gt;
+      &lt;header_from&gt;example.com&lt;/header_from&gt;
+    &lt;/identifiers&gt;
+    &lt;auth_results&gt;
+      &lt;dkim&gt;
+        &lt;domain&gt;example.com&lt;/domain&gt;
+        &lt;result&gt;pass&lt;/result&gt;
+      &lt;/dkim&gt;
+      &lt;spf&gt;
+        &lt;domain&gt;pm.mtasv.net&lt;/domain&gt;
+        &lt;result&gt;pass&lt;/result&gt;
+      &lt;/spf&gt;
+    &lt;/auth_results&gt;
+  &lt;/record&gt;
+  &lt;record&gt;
+    &lt;row&gt;
+      &lt;source_ip&gt;50.31.156.118&lt;/source_ip&gt;
+      &lt;count&gt;2&lt;/count&gt;
+      &lt;policy_evaluated&gt;
+        &lt;disposition&gt;none&lt;/disposition&gt;
+        &lt;dkim&gt;pass&lt;/dkim&gt;
+        &lt;spf&gt;fail&lt;/spf&gt;
+      &lt;/policy_evaluated&gt;
+    &lt;/row&gt;
+    &lt;identifiers&gt;
+      &lt;header_from&gt;example.com&lt;/header_from&gt;
+    &lt;/identifiers&gt;
+    &lt;auth_results&gt;
+      &lt;dkim&gt;
+        &lt;domain&gt;example.com&lt;/domain&gt;
+        &lt;result&gt;pass&lt;/result&gt;
+      &lt;/dkim&gt;
+      &lt;spf&gt;
+        &lt;domain&gt;pm.mtasv.net&lt;/domain&gt;
+        &lt;result&gt;pass&lt;/result&gt;
+      &lt;/spf&gt;
+    &lt;/auth_results&gt;
+  &lt;/record&gt;
+&lt;/feedback&gt;</code></pre>
+<h4 id="how-to-implement">How to implement</h4>
+<p>This is implemented with a DNS-Record like:</p>
+<pre><code class="language-text">_dmarc.&lt;domain-in-question&gt; IN TXT "v=DMARC1; p=&lt;policy&gt;; [pct=&lt;percentage&gt;;] [aspf=&lt;spf-alignment&gt;;] [adkim=&lt;dkim-alignment&gt;;] [rua=&lt;reporting-mail-address&gt;;"] [...]</code></pre>
+<ul>
+<li>
+<p>policy</p>
+<ul>
+<li>
+<p>One of ‘none’, ‘quarantine’, ‘reject’ (see above)</p>
+</li>
+</ul>
+</li>
+<li>
+<p>percentage</p>
+<ul>
+<li>
+<p>Any value less that 100 will result in only a matching portion of the over all recieved mails being filtered according to the policy. Reporting will still happen for all.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>spf-/ dkim-alignment</p>
+<ul>
+<li>
+<p>One of ‘r', 's’ (see above)</p>
+</li>
+</ul>
+</li>
+<li>
+<p>reporting-mail-address</p>
+<ul>
+<li>
+<p>The recieveing mail-adress</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>If the reports should be sent to a Mail-Address with a different Apex-Domain, then this has to be explicity whitelisted as to prevent any misuse like a (DOS-Attack). This is achieved by an additional DNS-Record at a Sub-Domain of the Apex-Domain of the the recieving mail-Adress-Host.</p>
+<pre><code class="language-text">&lt;domain-with-the-configured-reporting-adress&gt;._report._dmarc.&lt;apex-of-recieveing-mail-adress-host&gt; IN TXT "v=DMARC1"</code></pre>
+<p><em>For example:</em></p>
+<p>If there is exists the following DMARC-Record:</p>
+<pre><code class="language-text">_dmarc.some.example.com IN TXT "v=DMARC1; p=reject; pct=100; aspf=s; adkim=s; rua=mailto:dmarc-reporting@example.net;"</code></pre>
+<p>Then the following record has to be put in place for the reports to be send sucessfully:</p>
+<pre><code class="language-text">some

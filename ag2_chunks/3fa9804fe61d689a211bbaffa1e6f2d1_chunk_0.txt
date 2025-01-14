@@ -1,0 +1,64 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K" class="wysiwyg-text-align-justify">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article covers the concept of Base in EFS Reporting+, including how to define and limit the base, use test data, anonymize results, and create contingency tables.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">EFS Reporting+ allows users to specify the number of persons included in the evaluation (base) and limit this number to certain sections of the report. This guide explains how to control the base size, use filters, and create contingency tables for data analysis.</p>
+<ul class="wysiwyg-text-align-justify">
+<li><a href="#defining-the-base">Defining the Base</a></li>
+<li><a href="#using-test-data-instead-of-live-data">Using Test Data Instead of Live Data</a></li>
+<li><a href="#creating-contingency-tables">Creating contingency tables</a></li>
+</ul>
+<p> </p>
+<p class="wysiwyg-text-align-justify">Reports can be divided into chapters. In the completed report, these chapters will be displayed differently depending on the specified format:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>HTML reports: The chapters will be shown in the navigation bar of the report. The contents of a chapter will be summarized on one HTML page.</p>
+</li>
+<li>
+<p>Excel reports: The contents of a chapter will be summarized on one Excel sheet.</p>
+</li>
+<li>
+<p>PPT reports and PDFs generated from PowerPoint reports: An additional PPT slide with an inside title will be inserted at the beginning of each chapter.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Every report automatically contains a first chapter with the default title “First chapter”. It is possible to drag and drop the first chapter. If you wish to rename it, open the chapter editor by clicking on the Edit icon in the structure toolbar.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>In order to create another chapter, click on the <strong>Create chapter</strong> icon and enter the title and description in the chapter editor. The new chapter will be automatically inserted at the end of the report: If necessary, you can drag it to another position. Afterward, you drag all required source data and structural elements into this new chapter.</p>
+</li>
+<li>
+<p>If you wish to subsequently edit, delete, or copy an already existing chapter, you need to mark it and then select the respective function in the structure toolbar. Please note that - just as in the questionnaire editor - you will delete or copy the entire branch below that chapter.</p>
+</li>
+<li>
+<p>In order to make sure that your chapter structure will be displayed correctly in the completed report, please note the following: The chapters in the completed report will be arranged in linear sequence. It is not possible to create subchapters. All chapters should therefore be at the topmost level in the report structure. If you move a chapter into the branch of another chapter, it will still be interpreted as the regular next chapter at the base level, i.e., there will be a break in the completed report.</p>
+</li>
+</ul>
+<h2 id="defining-the-base" class="wysiwyg-text-align-justify"><strong>Defining the Base</strong></h2>
+<p class="wysiwyg-text-align-justify"><em>EFS Reporting+</em> enables you to specify the number of persons to be included in the evaluation (“base”) and to further limit this number for certain sections of your report if required. You can control the size of your base using special filters.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The restricting conditions are formulated using the condition editor that you are already familiar with from the questionnaire and which you also use to define questionnaire filters, triggers, and hiding conditions.</p>
+</li>
+<li>
+<p>The frequently-used restrictions by disposition code and date of participation can be activated with a few clicks via separate fields.</p>
+</li>
+<li>
+<p>To protect the anonymity of the participants, you can define anonymity limits both for the entire report and for particular sections.</p>
+</li>
+<li>
+<p>Displaying test data instead of real result data will speed up your work.</p>
+</li>
+</ul>
+<h3 id="overview-of-limiting-the-base" class="wysiwyg-text-align-justify"><strong>Overview of limiting the base</strong></h3>
+<p class="wysiwyg-text-align-justify">Using the filters familiar from the questionnaire editor, you can restrict the base either for the entire report or just for a particular section. </p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The base for the entire report is defined via the <strong>Report filter</strong> in the<strong> Report</strong> menu.</p>
+</li>
+<li>
+<p>Furthermore, you can create separate filters to limit the base within a specific section of the report.</p>
+</li>
+<li>
+<p>In the filter section of the sources window, you will find the filters from your questionnaire. You can create additional filters via the toolbar the way you are familiar with from the chapters.</p>
+</li>
+<li>
+<p

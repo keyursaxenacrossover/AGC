@@ -1,0 +1,52 @@
+strong> user, you can check mailing server configurations (i.e.: mail server address, port, username, protocol, logs, etc...) through: <code>System &gt; Options &gt; Platform cockpit &gt; [root only] System Configurations </code>, then search for <strong>Hurricane</strong>
+</li>
+<li><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21238953668626"></li>
+<li>If the <strong>hurricane_xxx_server </strong>value points to a <strong>postfix</strong> server value (ex: '<strong>postfix</strong>-<strong>production</strong>.global-services.svc.cluster.local'), this indicates mails are sent through EFS Hurricane standard MTA (not using customer mail server). In this case, note the first string after the postfix string, usually refers to the Account name used in Hurricane (to be used later). In the above example, the account name is "Production".</li>
+<li>If the <strong>hurricane_xxx_server </strong>value points to an IP (10.250.xx.xx), this indicates the mails are sent through a custom email server. Note the IP and user values as they will be used on Hurricane side to locate the sending account details.</li>
+<li>If the <strong>hurricane_xxx_server </strong>value points to <code>email-smtp.us-east-1.amazonaws.com</code>, then this is AWS hosted, not using Hurricane. Check details in <a href="#h_01J9KW4QRRKKW9KMDTY49F90PA">Special Customization - Bofa</a> section</li>
+<li>Note that <strong>hurricane_snailmail_server </strong>is used to send bulk emails, while <strong>hurricane_adhoc_server </strong>is used to send adhoc emails, like individual password reset. Both should ideally point to similar values (either postfix or external IP), but they are different here for testing/illustration purposes.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h4 id="h_01J794B2T6XBV6RYJ1D238NSMD"><strong>Installation Configuration - Mail Queue Behavior:</strong></h4>
+<ul>
+<li>
+<p>[No root needed] Check customer-specific settings related to mailing under <strong>System &gt; Options &gt; System Settings<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21238953669778"></strong></p>
+</li>
+<li>These configurations are <strong>applicable only for customer mail servers</strong> (since the remote server might not be reliable). <strong>They do not affect postmail configurations</strong>
+<ul>
+<li>Postmail retry configurations can be checked in Hurricane.</li>
+<li>Choose <strong>Account EFS-Production</strong>, then <strong>Deferral settings</strong>:<strong><br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21240419517074"><br></strong>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Mail volume per mail Interval: </strong>The mails in the queue are processed in packages: per default, up to 300 mails will be processed in 10 minute intervals. The default value of 300 mails per interval can be changed: up to 2000 mails can be sent per interval.</p>
+</li>
+</ul>
+</li>
+<li>
+<h4 id="01J7DEEW9F5B1146W3HEKBSCM2"><strong>Installation Configuration - Cronjob status</strong></h4>
+<ul>
+<li>If you believe mails are stuck in the queue, you can check if the cronjobs are working fine for the installation through EFS GUI, <strong>System &gt; Options &gt; Platform Cockpit &gt;  Installation Check</strong>:<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21272009043346">
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="h_01J78YBGZFJ2X1RN6ZZR82WBHC"><strong>2. Service Gateway Access (MariaDB Query)</strong></h2>
+<p><strong>Goal:</strong> Use Service Gateway to access detailed data for more in-depth analysis.</p>
+<ul>
+<li>
+<a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21140364670866-How-to-Access-and-Work-with-MariaDB-on-DXI-Service-Gateways">Access the MariaDB instance</a> via Service Gateway to gather further insights using the provided mail ID.</li>
+<li>Note about dates:
+<ul>
+<li>Dates in DB are always in UTC.</li>
+<li>Dates in server logs are usually German time (+2 or +1 according to Daylight savings)</li>
+</ul>
+</li>
+<li>Use the following SQL query to fetch individual mail details from the database
+<ul>
+<li>
+<pre>SELECT h.mail_id, sd.pid, mr.sid, h.uid, h.mailing_id, <br>  mr.rcpt_hash, h.message_id, <br>  mp.dt AS date_time_efs_mail_job_creation_utc, <br>  h.date_time AS date_time_hurricane_mail_dispatch_in_utc, <br>  FROM_UNIXTIME(mr.dt) AS date_time_mail_status_ingestion_utc, <br>  LEFT(IFNULL(h.response, mr.status_reason), 3) AS response

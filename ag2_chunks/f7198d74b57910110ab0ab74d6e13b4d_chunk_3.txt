@@ -1,0 +1,78 @@
+ each survey (except for panel surveys)</p></td>
+</tr>
+<tr>
+<td><p>uc/__panel</p></td>
+<td><p> </p></td>
+</tr>
+<tr>
+<td><p>uc/stub.html</p></td>
+<td><p>file needed by system administration/their monitoring to execute a ping on to check wether the installation is reachable</p></td>
+</tr>
+<tr>
+<td><p>uc/stub.php</p></td>
+<td><p>file needed by system administration/their monitoring to execute a ping on to check wether the installation is reachable</p></td>
+</tr>
+<tr>
+<td><p>uc/[primary_team_name]/[generic_project_folder_name]</p></td>
+<td><p>includes all files of a survey</p></td>
+</tr>
+<tr>
+<td><p>uc/[primary_team_name]/[generic_project_folder_name]/images</p></td>
+<td><p>includes image files of the project</p></td>
+</tr>
+<tr>
+<td><p>uc/[primary_team_name]/[generic_project_folder_name]/layout</p></td>
+<td><p>includes layout files (images) uploaded into the media library of the project</p></td>
+</tr>
+<tr>
+<td><p>uc/[primary_team_name]/[generic_project_folder_name]/templates</p></td>
+<td><p>includes template files of the project</p></td>
+</tr>
+<tr>
+<th><p><strong><span style="color: rgb(255,255,255);">wcp</span></strong></p></th>
+<td><p>includes third party libraries</p></td>
+</tr>
+<tr>
+<th><p><strong><span style="color: rgb(255,255,255);">www</span></strong></p></th>
+<td><p>includes files neded by the EFS admin area GUI; <strong>[Installation_name]/www</strong></p></td>
+</tr>
+<tr>
+<td><p>www/support/dbreport</p></td>
+<td><p>file to create statistics about an installation and to optimize special tables; is executed by a cron job every night</p></td>
+</tr>
+<tr>
+<td><p>www/include/class_ospe_new.inc.php3</p></td>
+<td><p>ospe = online survey processing engine</p></td>
+</tr>
+<tr>
+<td><p>www/support</p></td>
+<td><p>includes further files needed by the technical support team</p></td>
+</tr>
+<tr>
+<td><p>www/support/healself.php</p></td>
+<td><p>the 'healself# file that is executed after updates and upgrades to adjust database and filesystem changes</p></td>
+</tr>
+<tr>
+<td><p>www/support/fix_inconsistencies.php</p></td>
+<td><p>if executed, fixes inconsistencies found on the installation</p></td>
+</tr>
+<tr>
+<td><p>www/support/jobmaker.php3</p></td>
+<td><p>file to execute the jobs queue; is executed by a cron job every 10 minutes</p></td>
+</tr>
+<tr>
+<td><p>www/support/snailmail.php</p></td>
+<td><p>file to execute mail delivery; is executed by a cron job every 10 minutes</p></td>
+</tr>
+<tr>
+<td><p>www/support/testinstallation.php</p></td>
+<td><p>file to execute the installation check</p></td>
+</tr>
+</tbody>
+</table><h2 id="header-3">Screenshots of the list of folders</h2><p>ROM:</p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20714731438482" alt="filesystem_installation_in_rom.jpg"><p>No ROM:</p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20714714427026" alt="filesystem_installation_not_in_rom.jpg"><h2 id="header-4">Recording of training session</h2><ul>
+<li>
+<p><strong>QB_US</strong> Dropbox: <a href="https://www.dropbox.com/"><u>https://www.dropbox.com/</u></a></p>
+<ul><li><p>&gt; QB Professional Services US &gt;&gt; Knowledge Base &gt;&gt; EFS File Structure &gt;&gt; EFS folder structure.wmv</p></li></ul>
+</li>
+<li><p><strong>QB_DE</strong> Dili: \ceur\R-D.GERMANY\IT.OPS.GERMANY\TECHNICAL.SUPPORT.GERMANY\Dokumentationen\Wissensverteilung\EFS_File_Structure\EFS folder structure.wmv</p></li>
+</ul>

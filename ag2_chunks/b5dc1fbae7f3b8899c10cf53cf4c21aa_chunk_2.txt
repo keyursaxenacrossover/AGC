@@ -1,0 +1,49 @@
+E412+rl0+Y9OyN9kZCiXUC/7anx8tdoKJBWHyww45eAFqBIUCezh56r3YD5XNT3FICTUTkdqZh4EQDRTfqj3hvGN+5j4qY/2GDXHgAJpInSwLWUTgdDZKbMrfMwIWD6e5Hpgfm0xUq08iQIDAQAB"</code></pre>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<strong>Add the private key to Hurricane</strong>:<br>Hurricane is a service for sending emails, accessible through a GUI through an internal network. <br><br>Steps to add the key:<br>
+<ol>
+<li>Login to Hurricane MTA (see KeePass for login credentials): <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21139518716562-How-to-Access-and-Work-with-DXI-Service-Gateways#01J8QS4CEBNQQ6KPMT655G7Y13">How to Access Hurricane</a> </li>
+<li>Edit the "EFS-Production (1006)" account<br><img src="https://central-supportdesk.zendesk.com/attachments/token/sTkhiyU8UpUr8UWhxYNXCUCUH/?name=image.png">
+</li>
+<li>Select "DomainKeys / DKIM Options" from the top menu<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21141926292626">
+</li>
+<li>Double check the domain to add <strong>if not already there</strong> (using paging links, domains are sorted alphabetically)</li>
+<li>Create "New..." DKIM entry</li>
+<li>Add DKIM key:
+<ul>
+<li>Enabled: Yes</li>
+<li>Domain: &lt;domain&gt;</li>
+<li>Selector: tivian</li>
+<li>Method: DomainKeys/DKIM</li>
+<li>Private Key: Copy private key generated in step 1.6</li>
+<li>Notes: Ticket: ZD 4xxxxxx</li>
+</ul>
+</li>
+<li>Repeat the same steps for following accounts: <br>EFS-Adhoc (1007) <br>EFS-Spam (1020) <br>EFS-Pending-Confirmartion (1047)</li>
+</ol>
+</li>
+<li>
+<strong>Validate DNS records quality for the customer domain:</strong>
+<ul>
+<li>Although not the main scope of the request, legacy team used to validate DNS records for the customer domain and share the validation result. This step is not mandatory</li>
+<li>Open following mail testing service: <a href="https://www.mail-tester.com/?lang=en">https://www.mail-tester.com/?lang=en</a>
+</li>
+<li>Copy the address to be used as test recipient</li>
+<li>Open the helper survey : <a href="https://tx3689.customervoice360.com/uc/spf-dkim-tester/">https://tx3689.customervoice360.com/uc/spf-dkim-tester/</a>
+<ol>
+<li> Sender email address: <a href="mailto:noreply@&lt;domain&gt;">noreply@&lt;domain&gt; </a>; example: noreply@ifo.de.</li>
+<li>Recipient: copy email address provided by Mail Tester</li>
+<li>Send page via "CONTINUE" button and refresh Mail Tester and unfold all non-green points and create a screenshot of the whole page</li>
+</ol>
+</li>
+<li>Address all issues like in the template found here: <a href="https://central-supportdesk.zendesk.com/agent/tickets/4457922">4457922</a> </li>
+</ul>
+</li>
+<li>
+<strong>Get back to customer</strong> indicating the task is completed, and sharing both the <strong>public DKIM record</strong> and optionally the mail test report.<br>Public DNS TXT record <strong>sample</strong> (to be shared with the customer):<br>
+<pre style="padding: 8px; font-family: SFMono-Regular, Consolas, ' Liberation Mono' , Menlo, Courier, monospace; font-size: 12.025px; color: #2f3941; border-radius: 4px; display: block; margin: 0px; line-height: inherit; word-break: break-all; overflow-wrap: break-word; white-space: pre-wrap; background: #ffffff; border: 1px solid #d8dcde; outline: 0px; vertical-align: baseline; box-sizing: border-box; margin-block: 4px 12px; margin-inline: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><code style="font-family: SFMono-Regular, Consolas, ' Liberation Mono' , Menlo, Courier, monospace; font-size: 12px; color: #2f3941; border-radius: 0px; background

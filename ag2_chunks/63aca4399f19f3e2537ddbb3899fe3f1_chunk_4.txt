@@ -1,0 +1,32 @@
+colour">Red</ac:parameter> </p><p>As a Tivian business owner<br>I want to get monthly business metrics<br>in order to take decisions for IAM based on these metrics</p><ac:task-list>
+<ac:task>
+<ac:task-id>1</ac:task-id>
+<ac:task-status>incomplete</ac:task-status>
+<ac:task-body><span class="placeholder-inline-tasks"><ac:link><ri:user ri:userkey="8a7f80856412af8a016412fb8b10003f"></ri:user></ac:link>  think about that</span></ac:task-body>
+</ac:task>
+</ac:task-list><p></p><h2 id="header-14">Technical Notes and ideas:</h2><ul>
+<li><p>Kind of UI integration?! → iframe, custom elements, link</p></li>
+<li><p>HA Caching/Queuing mechanism?! what is possible</p></li>
+<li><p>Component Library</p></li>
+<li><p>Config push/pull principle → config für EFS/Portals etc. kommt aus unserem system</p></li>
+</ul><p></p><p></p><p></p><p>Personal notes from <ac:link><ri:user ri:userkey="8a7f8086694ab91b01694cfe74ed0066"></ri:user></ac:link> </p><ul>
+<li><p>Run services in Kubernetes, use helm (dev environment?!)</p></li>
+<li><p>Create a build pipeline (in concourse?)</p></li>
+<li><p>Create NodeJS services</p></li>
+<li><p>Is a HA Caching DB neccessary? For buffering operations?</p></li>
+<li><p>Connect Service to Kafka (may that remove bulk operations?)</p></li>
+<li><p>Develop UI in VueJS (check if a component library does make sense)</p></li>
+</ul><p></p><p></p></ac:task>
+</ac:task-list><p></p><h2 id="header-14">Technical Notes and ideas:</h2><ul>
+<li><p>Kind of UI integration?! → iframe, custom elements, link</p></li>
+<li><p>HA Caching/Queuing mechanism?! what is possible</p></li>
+<li><p>Component Library</p></li>
+<li><p>Config push/pull principle → config für EFS/Portals etc. kommt aus unserem system</p></li>
+</ul><p></p><p></p><p></p><p>Personal notes from <ac:link><ri:user ri:userkey="8a7f8086694ab91b01694cfe74ed0066"></ri:user></ac:link> </p><ul>
+<li><p>Run services in Kubernetes, use helm (dev environment?!)</p></li>
+<li><p>Create a build pipeline (in concourse?)</p></li>
+<li><p>Create NodeJS services</p></li>
+<li><p>Is a HA Caching DB neccessary? For buffering operations?</p></li>
+<li><p>Connect Service to Kafka (may that remove bulk operations?)</p></li>
+<li><p>Develop UI in VueJS (check if a component library does make sense)</p></li>
+</ul><p></p><p></p>

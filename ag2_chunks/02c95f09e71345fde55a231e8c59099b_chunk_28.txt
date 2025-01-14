@@ -1,0 +1,58 @@
+"><strong data-renderer-mark="true">Restricting the Field Report</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="19664">The field report can be limited to specific disposition codes or variable characteristics. The following options are available:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="19795">all disposition codes.</p>
+</li>
+<li>
+<p data-renderer-start-pos="19821">project variables and URL parameters. Exception: Variables of text question types (141, 142, 143, 144, 363), user-defined question variables(question type 911) and user-defined variables cannot be used for restriction purposes.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="20052">Proceed as follows:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="20075">Click the <strong data-renderer-mark="true">Configuration </strong>button.</p>
+</li>
+<li>
+<p data-renderer-start-pos="20110">In the upper section disable, if necessary, the disposition codes not to be used to restrict the basis.</p>
+</li>
+<li>
+<p data-renderer-start-pos="20217">If you wish to make restrictions using a project variable, select the latter and confirm with <strong data-renderer-mark="true">Continue</strong>.</p>
+</li>
+<li>
+<p data-renderer-start-pos="20324">In the next step select the desired variable characteristic.</p>
+</li>
+<li>
+<p data-renderer-start-pos="20388"><strong data-renderer-mark="true">Confirm </strong>again. The restricted field report is issued.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="20445">In order to undo the field report restriction, switch back to the <strong data-renderer-mark="true">Configuration </strong>dialog, select “Delete current restriction” and confirm with <strong data-renderer-mark="true">Continue</strong>.</p>
+<div class="ak-editor-panel cc-tqp4ke wysiwyg-text-align-justify" data-panel-type="info">
+<div class="ak-editor-panel__icon"><em>Read permission for config_fieldreport is required for accessing the configuration options.</em></div>
+<div class="ak-editor-panel__icon"> </div>
+</div>
+<h3 id="Splitting-the-Field-Report" class="wysiwyg-text-align-justify" data-renderer-start-pos="20692"><strong data-renderer-mark="true">Splitting the Field Report</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="20720">You can split the field report by means of a specific variable.</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="20787">The following variables are available for all project types: project variables (v_000n), URL parameters (c_000n), user-defined variables (p_000n), quota IDs (quota), language ID (language) and outmode (outmode).</p>
+</li>
+<li>
+<p data-renderer-start-pos="21002">Open-ended answers can be used as split variables. But if you do so, please mind that due to the high number of differing entries, it may not be possible to display the split data properly.</p>
+</li>
+<li>
+<p data-renderer-start-pos="21195">Personalized surveys: “Select box” and “radio button” participant variables may be used, provided that answer categories have been defined.</p>
+</li>
+<li>
+<p data-renderer-start-pos="21338">Employee surveys: To protect the privacy of participants, participant variables can- not be used for splitting. The Org Processor variables in Employee surveys (org_allocation_x, org_code_x, org_function_x) are not available for splitting eit- her: The Org Processor provides a comfortable overview on the return data of indi- vidual units.</p>
+</li>
+<li>
+<p data-renderer-start-pos="21682">Multi-source feedbacks: To protect the privacy of participants, participant variables cannot be used for splitting. Various MSF-specific variables are available, including role and feedback phase).</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="21883">Proceed as follows: Switch to the <strong data-renderer-mark="true">Split </strong>tab, and select the desired split variable from the drop-down list. After that, confirm by clicking on <strong data-renderer-mark="true">Save</strong>. The data in the field report will now be split based on the variable you chose. You can export the data as an MS Excel file and process them externally (e.g. create diagrams using MS Excel).</p>
+<div class="ak-editor-panel cc-tqp4ke wysiwyg-text-align-justify" data-panel-type="info">
+<div class="ak-editor-panel__icon"><em>Read permission for stat_split is required for accessing the split options.</em></div>
+<div class="ak-editor-panel__icon"> </div>
+</div>
+<h3 id="Exporting-the-Field-Report" class="wysiwyg-text-align-justify" data-renderer-start-pos="22303"><strong data-renderer-mark="true">

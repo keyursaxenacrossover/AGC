@@ -1,0 +1,124 @@
+<tr>
+<td>
+<p>Positioning template</p>
+</td>
+<td>
+<p>If several content modules have been defined for a page you can define their location with the help of the positioning template.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>HTML title</p>
+</td>
+<td>
+<p>The HTML title is the name of the page, which is displayed in the browser header. In addition, the HTML title is also used as a label in the website navigation for the link to this page.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Access control</p>
+</td>
+<td>
+<p>You can restrict access to the page. Select one of the following options:</p>
+<ul>
+<li>
+<p>Public: All panel visitors can see the page.</p>
+</li>
+<li>
+<p>All logged-in panelists: All logged-in panelists can see the page.</p>
+</li>
+<li>
+<p>For logged-in panelists of a panel group only: If you choose this option, a drop-down list is displayed, from which you can select a certain panel group. Only members of the selected group can see the page.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Show in navigation</p>
+</td>
+<td>
+<p>Depending on the setting the page is either shown or hidden in the navigation. The following options are available:</p>
+<ul>
+<li>
+<p>Never</p>
+</li>
+<li>
+<p>Always</p>
+</li>
+<li>
+<p>Only when logged in</p>
+</li>
+<li>
+<p>Only when logged out</p>
+</li>
+<li>
+<p>Only if access is possible</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Meta keywords</p>
+</td>
+<td>
+<p>Key terms under which search engines are to find the page.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>URL alias</p>
+</td>
+<td>
+<p>Optionally definable page name is used for the URL of the page in the current language version. Language-specific adjustment of page URLs is particularly important for search engine optimization.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>From EFS 10.5: Metadata (CSS classes)</p>
+</td>
+<td>
+<p>TIVIAN customizing feature for Responsive layout websites.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>From EFS 10.5: External link</p>
+</td>
+<td>
+<p>TIVIAN customizing feature for Responsive layout websites.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>From EFS 10.5: Show breadcrumb</p>
+</td>
+<td>
+<p>TIVIAN customizing feature for Responsive layout websites.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="referencing-page-modules-from-multiple-pages" class="wysiwyg-text-align-justify"><strong>Referencing Page Modules from Multiple Pages</strong></h2>
+<p class="wysiwyg-text-align-justify">By creating appropriate page modules, you can easily compile the desired contents and functions for each panel page. However, if an element such as a news list, for example, is to be displayed on multiple pages, creating the respective module on every single page would be very time-consuming. The updating of changes would also involve considerable effort: every copy of the page module would have to be adjusted manually.</p>
+<p class="wysiwyg-text-align-justify">Therefore, once you have created a page module, EFS allows you to reference it from other pages as well: the modules are created only once, and changes are made only once, but the contents will be visible on all desired pages.</p>
+<p class="wysiwyg-text-align-justify"><strong>Example</strong></p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014721683602" alt="image-20240115-100004.png"></p>
+<p class="wysiwyg-text-align-justify">In the example shown above, the “Latest News”, the display of the currently logged-in panelists, and the list of blogs are referenced page modules. In the website editor, they are located on a dedicated page “GLOBAL”.</p>
+<p class="wysiwyg-text-align-justify">Please note: For many page module types, referencing does not make sense. Therefore the referencing feature is only available for selected page module types. For an up-to-date list, please see the Modules from Other Pages tab in the editing dialog of the respective page.</p>
+<p class="wysiwyg-text-align-justify">Additional modules can be made available for reference. If this is necessary, please contact support.</p>
+<h3 id="work-steps" class="wysiwyg-text-align-justify"><strong>Work Steps</strong></h3>
+<p class="wysiwyg-text-align-justify">Referencing page modules from multiple pages requires three steps:</p>
+<ol class="wysiwyg-text-align-justify" start="1">
+<li>
+<p>Deciding where the global page modules should be placed in the overall structure and modifying the main template accordingly</p>
+</li>
+<li>
+<p>Creating page modules</p>
+</li>
+<li>
+<p>Referencing page modules from the desired pages</p>
+</li>
+</ol>
+<h3 id="defining-the-position-of-global-page-modules" class="wysiwyg-text-align-justify"><strong>Defining the Position

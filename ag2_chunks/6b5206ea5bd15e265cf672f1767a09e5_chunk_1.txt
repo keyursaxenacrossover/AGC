@@ -1,0 +1,22 @@
+">'if(now()=sysdate(),sleep(15),0)'</span> LIMIT <span class="hljs-number">1</span>;
+</code></div>
+</div>
+<p>Execute this query safely to observe its behavior (note that <code class="!whitespace-pre hljs language-sql"><span class="hljs-string">sleep(15)</span></code> is a harmless query). <br>In this example, a result in less than 1 second indicates the query with injected code did not execute the injected code. Similarly, confirm the injected code doesn't manipulate or access unauthorized data, suggesting the SQL injection was not successful.<br><br></p>
+</li>
+<li>
+<p><strong>Review Application Front-End Security</strong><br>Evaluate the accessibility of the input forms used for the attack. <br>If the form used for the attach is public (without login prerequisite), ensure it is protected with security measures such as CAPTCHA, which can help distinguish between human users and automated bots, thereby reducing the risk of automated SQL injection attacks.</p>
+</li>
+<li>
+<strong>Check the code inserted as text through GUI</strong><br>If possible, check the GUI for the code injected as text. If the injection fails, the code will be displayed normally in the text field; however if the text containing the code is truncated, this might imply a possible injection.<br>In the below example, the breach was targeting the contact request form, so we can check the data on GUI through People -&gt; Contacts:<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21016213274770"><br>Injected code is there in the text, which implies the code was not executed, and thus the breach was not successful.</li>
+</ol>
+<h2 id="h_01J5AK3WZR1VTWSZCVHAXXW5NP" style="box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, ' Segoe UI' , Helvetica, Arial, sans-serif; margin-top: 0px; font-size: 2rem; margin-bottom: 0.5rem; font-weight: 500; line-height: 1.2; color: #212529; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">Summary</h2>
+<p>An SQL injection investigation should confirm whether injected SQL code was executed or stored as text and ensure no data breaches occurred.</p>
+<h1 id="h_01J5AK3WZRPZQJA90DZT0W9JMN" style="box-sizing: border-box; font-size: 2.5rem; margin: 0px 0px 0.5rem; font-family: -apple-system, BlinkMacSystemFont, ' Segoe UI' , Helvetica, Arial, sans-serif; font-weight: 500; line-height: 1.2; color: #212529; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">
+<br>FAQ</h1>
+<ol>
+<li>
+<p><strong>What is an SQL injection attack?</strong><br>An SQL injection is a technique where an attacker inserts malicious SQL code into an input field to manipulate a backend database, potentially gaining unauthorized access or extracting sensitive data.</p>
+</li>
+<li>
+<strong>What role does CAPTCHA play in preventing attacks?</strong><br>CAPTCHA is a security measure used to differentiate between human and automated access to a website. It helps prevent automated attacks, including SQL injections, by requiring users to solve challenges that are difficult for automated systems to solve.</li>
+</ol>

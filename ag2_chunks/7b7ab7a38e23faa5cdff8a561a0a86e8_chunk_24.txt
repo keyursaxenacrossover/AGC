@@ -1,0 +1,149 @@
+>
+<li>
+<p>When creating a new question, smileys are integrated automatically.</p>
+</li>
+<li>
+<p>The rating direction is from left to right.</p>
+</li>
+<li>
+<p>You can resort to other predefined images in the Tivian library or upload your images to the media library.</p>
+</li>
+<li>
+<p>Technically, the new question type is based on the familiar single response list (111).</p>
+</li>
+<li>
+<p>3 - 10 answer options are recommendable for methodic reasons. Technically, up to 20 stars can be displayed.</p>
+</li>
+</ul>
+<h4 id="base-elements-21">Base Elements</h4>
+<ul>
+<li>
+<p>Question text</p>
+</li>
+<li>
+<p>Fill-in instruction</p>
+</li>
+<li>
+<p>Help text</p>
+</li>
+<li>
+<p>Answer options 1-n</p>
+</li>
+</ul>
+<h4 id="entry-dialog-9">Entry Dialog</h4>
+<p>The entry dialog is closely related to the familiar entry dialog of question type 111. However several special features were not implemented because they are not suitable for a question type with such a clear-cut purpose.</p>
+<h4 id="detail-configuration-9">Detail Configuration</h4>
+<ul>
+<li>
+<p>Show answer texts: Per default, the texts of the answer options are used as Alt text. Optionally they can be displayed below the icons.</p>
+</li>
+<li>
+<p>Show reset button: If this option is activated, a <strong>Reset</strong> icon will be shown next to the stars.</p>
+</li>
+<li>
+<p>Initial value: This text is used in the fallback drop-down list for the default option.</p>
+</li>
+<li>
+<p>Icon for active stars / inactive stars: To change the icons simply click on the default icons. Then, you can select the desired files from the media library.</p>
+</li>
+<li>
+<p>Icon for the reset button: The selected image is used for the <strong>Reset</strong> icon.</p>
+</li>
+</ul>
+<h3 id="ranking-and-drag-ranking">Ranking and Drag Ranking</h3>
+<p>The two question types allow us to realize state-of-art ranking questions in “Responsive Layout” projects.</p>
+<ul>
+<li>
+<p>Click ranking: The rank is allocated by simply clicking on the answer options, starting with the most important. The clicked dimensions are indented and their allocated rank is displayed.</p>
+</li>
+<li>
+<p>Drag ranking: The participants drag the answer options into an answer box and sort them in the desired order, from the most important to the most irrelevant.</p>
+<ul>
+<li>
+<p>Please note that the number of items is limited to 18.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="fallback-behavior">Fallback Behavior</h4>
+<p>The following fallback behavior guarantees a flexible adaptation of the question design to the devices used.</p>
+<ul>
+<li>
+<p>Click-ranking questions can be displayed on Smartphones and Tablets. If the participant’s device does not have JavaScript activated, drop-down lists are used as a fallback.</p>
+</li>
+<li>
+<p>For drag ranking, the click ranking is used as a fallback on smartphones. If the participant’s device does not have JavaScript activated, drop-down lists are used as a fallback.</p>
+</li>
+</ul>
+<h4 id="entry-dialog-10">Entry Dialog</h4>
+<p>The features of the “Detail configuration” and “Layout configuration” sections are explained in the Tables below. Several of the color options listed above are initially preset with colors specified in the menu <strong>Layout</strong> → tab<strong> Default colors</strong>.</p>
+<hr>
+<h4 id="detail-configuration-10">Detail configuration</h4>
+<table class="" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 291.0px;"> <col style="width: 469.0px;"> </colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour="#c0b6f2">
+<p><strong>Feature</strong></p>
+</th>
+<th data-highlight-colour="#c0b6f2">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Ranking type</p>
+</td>
+<td>
+<p>Use this option to switch between click and drag ranking.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Alignment</p>
+</td>
+<td>
+<p>The alignment of images and/or answer texts can be configured. Options:</p>
+<ul>
+<li>
+<p>Left-aligned</p>
+</li>
+<li>
+<p>Centered</p>
+</li>
+<li>
+<p>Right-aligned</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Click ranking: Indent</p>
+</td>
+<td>
+<p>You can configure if the clicked options should be indented to the right or the left hand.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Drag ranking: Change of selection</p>
+</td>
+<td>
+<p>You can decide if participants are allowed to drag answer options back into the select box. Options:</p>
+<ul>
+<li>
+<p>Not allowed</p>
+</li>
+<li>
+<p>Allowed</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Drag ranking: Direction of selection</p>
+</td>
+<td>
+<p>Usually, options

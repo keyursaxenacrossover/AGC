@@ -1,0 +1,116 @@
+: 80px;" data-highlight-colour="#57d9a3">
+<p><strong>Option</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 81.7535px; height: 80px;" data-highlight-colour="#57d9a3">
+<p><strong>Wildcard</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 347.5px; height: 80px;" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 122.535px; height: 80px;" data-highlight-colour="#57d9a3">
+<p><strong>Standard panel "Change email" page</strong></p>
+</th>
+</tr>
+<tr style="height: 55px;">
+<td style="width: 241.719px; height: 55px;">
+<p>Reference name for template</p>
+</td>
+<td style="width: 73.7326px; height: 55px;">
+<p> </p>
+</td>
+<td style="width: 339.479px; height: 55px;">
+<p>Name that can be used to trigger the module in positioning templates.</p>
+</td>
+<td style="width: 114.514px; height: 55px;">
+<p>change_email</p>
+</td>
+</tr>
+<tr style="height: 55px;">
+<td style="width: 241.719px; height: 55px;">
+<p>Page module title</p>
+</td>
+<td style="width: 73.7326px; height: 55px;">
+<p> </p>
+</td>
+<td style="width: 339.479px; height: 55px;">
+<p>Name of the module in the page’s module overview</p>
+</td>
+<td style="width: 114.514px; height: 55px;">
+<p>Change email</p>
+</td>
+</tr>
+<tr style="height: 55px;">
+<td style="width: 241.719px; height: 55px;">
+<p>Module template</p>
+</td>
+<td style="width: 73.7326px; height: 55px;">
+<p> </p>
+</td>
+<td style="width: 339.479px; height: 55px;">
+<p>Module-specific template that controls how data provided by the module are displayed.</p>
+</td>
+<td style="width: 114.514px; height: 55px;">
+<p> </p>
+</td>
+</tr>
+<tr style="height: 55px;">
+<td style="width: 241.719px; height: 55px;">
+<p>The previous e-mail address must be entered for confirmation?</p>
+</td>
+<td style="width: 73.7326px; height: 55px;">
+<p> </p>
+</td>
+<td style="width: 339.479px; height: 55px;">
+<p>An input field in which the old email address must be entered is displayed.</p>
+</td>
+<td style="width: 114.514px; height: 55px;">
+<p> </p>
+</td>
+</tr>
+<tr style="height: 55px;">
+<td style="width: 241.719px; height: 55px;">
+<p>New e-mail address must be entered twice (for confirmation)?</p>
+</td>
+<td style="width: 73.7326px; height: 55px;">
+<p> </p>
+</td>
+<td style="width: 339.479px; height: 55px;">
+<p>An input field in which the new email address must be confirmed is displayed.</p>
+</td>
+<td style="width: 114.514px; height: 55px;">
+<p> </p>
+</td>
+</tr>
+<tr style="height: 272px;">
+<td style="width: 241.719px; height: 272px;">
+<p>Mail template for confirming change of e-mail address</p>
+</td>
+<td style="width: 73.7326px; height: 272px;">
+<p> </p>
+</td>
+<td style="width: 339.479px; height: 272px;">
+<p>The selected mail template is sent to the panelist’s new e-mail address, to verify the changes.</p>
+<ul>
+<li>
+<p>The “Standard mail” mail templates are available.</p>
+</li>
+<li>
+<p>The data required for verification should be inserted into the mail template using wildcards. Use #mail_validation_code# to insert the actual verification code; by using #mail_validation_code_complete# you can create a complete clickable link.</p>
+</li>
+</ul>
+</td>
+<td style="width: 114.514px; height: 272px;">
+<p> </p>
+</td>
+</tr>
+<tr style="height: 82px;">
+<td style="width: 241.719px; height: 82px;">
+<p>Message upon successful change</p>
+</td>
+<td style="width: 73.7326px; height: 82px;">
+<p> </p>
+</td>
+<td style="width: 339.479px; height: 82px;">
+<p>This text is displayed once the panelists have clicked on the verification link in the confirmation mail.</p>
+</td>
+<td style="width: 114.514px; height: 82px

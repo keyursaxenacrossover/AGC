@@ -1,0 +1,78 @@
+>
+<ol>
+<li>Click on the <strong>Upload new file</strong> button in the <strong>File exchange</strong> menu.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21018302790290">
+</li>
+<li>Enter a title for file identification.</li>
+<li>Optionally, set an additional password for file protection.</li>
+<li>Use the <strong>Browse</strong> function to select the file from your computer.</li>
+<li>Add a comment if needed.</li>
+<li>Select the team for which you're uploading the file.</li>
+<li>Choose whether to send an info mail to the team.</li>
+<li>Click <strong>Upload</strong> to start the process.</li>
+<li>If sending an info mail, edit the default text as needed.</li>
+<li>Confirm sending the mail by clicking "Yes" in the "Send info mail" field.</li>
+<li>Click <strong>Continue</strong> to complete the upload.</li>
+</ol>
+<h2 id="notifying_team_members">Notifying Team Members of New Files</h2>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="3935">When uploading a file, the info service of EFS Secure Exchange allows you to directly notify the team for which this file is intended. To do so, tick the checkbox “Send info mail to team” when you upload the file. When the upload is complete, a mail template will be displayed where you can enter a message for the team members.</p>
+<ul class="ak-ul" data-indent-level="1">
+<li>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="4267">The form is filled with a predefined mail template. this template, entitled “New upload for your exchange team”, can be opened and edited in the <strong data-renderer-mark="true">Libraries → Mail templates</strong> menu, but it cannot be deleted. It is not possible to select a different mail template. It is also not possible to send different language versions.</p>
+</li>
+</ul>
+<ul>
+<li data-renderer-start-pos="4591">The following details can be entered via wildcards:
+<ul>
+<li data-renderer-start-pos="4591">#team_name#: Team name</li>
+<li data-renderer-start-pos="4591">#filetitle#: User-defined title of the file</li>
+<li data-renderer-start-pos="4591">#filename#: File name</li>
+<li data-renderer-start-pos="4591">#filecomment#: Comment</li>
+<li data-renderer-start-pos="4591">#fileauthor#: Author</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21018333359890"></p>
+<h2 id="downloading_file">Downloading a File</h2>
+<p>To download a file:</p>
+<ol>
+<li>Locate the file in the list and tick its checkbox.</li>
+<li>Select "Download" from the drop-down list.</li>
+<li>Click the <strong>Execute</strong> button.</li>
+<li>Save the zip file to your computer.</li>
+</ol>
+<p><strong>Note:</strong> You can only download active or obsolete files. Locked files must be released by their owners first.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21018302791314"></p>
+<p> </p>
+<h2 id="changing_file_status">Changing File Status</h2>
+<p>File statuses help track the currentness and accessibility of files:</p>
+<ul>
+<li>
+<strong>Active:</strong> Up-to-date and downloadable by all team members.</li>
+<li>
+<strong>Obsolete:</strong> No longer up-to-date but still downloadable.</li>
+<li>
+<strong>Locked:</strong> Cannot be downloaded until status is changed by the user who initiated the lock.</li>
+</ul>
+<h3 id="h_01J3HXQKTZSVXK8D2M7P8MV0GK">Steps to Change Status</h3>
+<ol>
+<li>Select the file by ticking its checkbox.</li>
+<li>Choose the new status from the "Actions" drop-down list.</li>
+<li>Click <strong>Execute</strong> to confirm.</li>
+</ol>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21018333358994"></p>
+<p> </p>
+<h2 id="deleting_file">Deleting a File</h2>
+<p>To delete a file (requires write rights):</p>
+<ol>
+<li>Locate and select the file in the list.</li>
+<li>Choose "Delete" from the "Actions" drop-down.</li>
+<li>Click <strong>Execute</strong>.</li>
+<li>Confirm deletion by clicking <strong>OK</strong>.</li>
+</ol>
+<p><strong>Note:</strong> EFS retains backup copies of deleted files. Contact support to restore accidentally deleted files.</p>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq_1">What file formats can I upload?</h3>
+<p>You can upload files of any format, except for PHP and HTML. The maximum file size is displayed in the import dialog.</p>
+<h3 id="faq_2">Can I upload a file with the same name as an existing file?</h3>
+<p>No, file names must be unique within the

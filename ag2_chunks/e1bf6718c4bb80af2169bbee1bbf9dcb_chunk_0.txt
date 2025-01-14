@@ -1,0 +1,71 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K" class="wysiwyg-text-align-justify">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article provides comprehensive information about managing quotas in survey projects. It covers quota creation, configuration, statistics, and best practices for implementing quota systems in various survey scenarios.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">Quotas are essential tools for controlling survey participation and ensuring balanced representation in research projects. This guide explains how to set up, manage, and monitor quotas effectively.</p>
+<ul>
+<li><a href="#quotas">Quotas</a></li>
+<li><a href="#configuration">Configuration</a></li>
+<li><a href="#quota-statistics">Quota statistics</a></li>
+<li><a href="#basics">Basics</a></li>
+<li><a href="#questionnaire-checking-internal-quotas">Questionnaire: checking internal quotas</a></li>
+<li><a href="#routing-and-evaluation">Routing and evaluation</a></li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="quotas" class="wysiwyg-text-align-justify">Quotas</h2>
+<p class="wysiwyg-text-align-justify">When you open the Projects → {Selected project} → <strong>Questionnaire editor</strong> → <strong>Quotas</strong> menu, you are automatically directed to the overview of the existing quotas. They are listed along with information on status, current allocation (“quota count”), and quota conditions.</p>
+<h3 id="managing-the-quotas" class="wysiwyg-text-align-justify">Managing the quotas</h3>
+<p class="wysiwyg-text-align-justify">Managing the quotas - and, in particular, editing several quotas en bloc - is done via the “Actions” checkbox and the drop-down list below the table:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Delete quota</strong>s: The respective quotas will be deleted.</p>
+</li>
+<li>
+<p><strong>Activate quotas</strong>: This option allows you to activate several quotas en bloc. If you want to activate an individual quota, you can simply click on Edit and open the edit dialog.</p>
+</li>
+<li>
+<p><strong>Deactivate quotas</strong>: This option allows you to deactivate several quotas en bloc. If you want to deactivate an individual quota, you can simply click on Edit and open the edit dialog.</p>
+</li>
+</ul>
+<h3 id="using-icons" class="wysiwyg-text-align-justify">Using Icons</h3>
+<p class="wysiwyg-text-align-justify">If you want to edit individual quotas, the following actions can be applied by clicking on the corresponding icons:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Order</strong>: The <strong>arrow</strong> icons allow you to change the processing order.</p>
+</li>
+<li>
+<p><strong>Edit condition</strong>: Clicking on this icon opens the condition editor.</p>
+</li>
+<li>
+<p><strong>Delete condition</strong>: The respective condition will be deleted. Please note that the allocation figure of the quota will be maintained.</p>
+</li>
+<li>
+<p><strong>Edit</strong>: Clicking on this icon opens the edit dialog of a quota. Here you can change the name and size of the quota; you can also activate or deactivate the quota.</p>
+</li>
+<li>
+<p><strong>Copy</strong>: This icon allows you to copy a quota. When doing so, the status will be deactivated, the allocation figures will not be copied, i.e. the new quota is initially open, deactivated, and empty.</p>
+</li>
+<li>
+<p><strong>Delete</strong>: The quota will be removed following a confirmation prompt.</p>
+</li>
+</ul>
+<h3 id="creating-quotas" class="wysiwyg-text-align-justify">Creating quotas</h3>
+<p class="wysiwyg-text-align-justify">In order to create quotas, please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Click on the <strong>Create quota</strong> button.</p>
+</li>
+<li>
+<p>Enter the name and the size of the new quota.</p>
+</li>
+<li>
+<p>Confirm by clicking on <strong>Save</strong>.</p>
+</li>
+<li>
+<p>The condition editor will open automatically. Define the desired quota condition and click on <strong>Save</strong>. (If you do not define any condition, the quota will not be activated in this step.)</p>
+</li>
+<li>
+<p>After saving, the quota overview will be displayed. There you will find the new quota. It will already be activated.</p>
+</li>
+</ul>
+<h3 id="importing-quotas" class="wysiwyg-text-align-justify">Importing quotas</h3>
+<p class="wysiwyg-text-align-justify">Alternatively, <em>EFS</em> allows you to import new quotas. Click on the <strong>Import quotas</strong> button to open the CSV-based import dialog. You can enter one quota per row, using the format

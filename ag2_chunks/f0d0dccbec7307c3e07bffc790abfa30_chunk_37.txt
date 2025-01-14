@@ -1,0 +1,165 @@
+, reset_no_change</em></p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "identifierType": "uid",
+  "identifierValue": "123",
+  "resetParticipation": "reset_if_completed"
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">{
+  "sampleId": 1,
+  "dispositionCode": "10",
+  "code": "Example",
+  "isTester": false,
+  "link": "http://Example"
+}</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>surveyId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>id of the panel or masterdata survey <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79HN8BXBYB5FNE4HPKP"> </h4>
+<h3 id="header-178">POST /panel/panelists/{sampleId}</h3>
+<p>Add a panelist to a sample. Valid options for <code>resetParticipation</code>: <em>reset_if_completed, reset_always, reset_delete_if_completed, reset_delete_always, reset_no_change</em></p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "identifierType": "uid",
+  "identifierValue": "123",
+  "resetParticipation": "reset_if_completed"
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">{
+  "sampleId": 1,
+  "dispositionCode": "10",
+  "code": "Example",
+  "isTester": false,
+  "link": "http://Example"
+}</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>sampleId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>id of panel survey sample <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79HZ44CHC5JT60PX4TW"> </h4>
+<h3 id="header-179">POST /panel/panelists/{filterId}/list</h3>
+<p>returns a list of panelists matched by a specific panel grouping filter</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{ "returnDataFields": [ "u_email" ] }</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[ [ "example@domain.tld" ] ]</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>filterId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>id of panel grouping filter <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="header-181">Bonus points</h2>
+<div class="expand-macro">
+<h4 id="h_01J441N79HD3ZBJBDWFXKDCMAP"> </h4>
+<h3 id="header-183">PATCH /panel/panelists/bonuspoints</h

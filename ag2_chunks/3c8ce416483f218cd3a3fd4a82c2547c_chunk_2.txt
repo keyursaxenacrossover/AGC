@@ -1,0 +1,140 @@
+>
+</li>
+<li>
+<p>With<strong> Import</strong> the import operation will be triggered.</p>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><strong>Editing contents externally</strong></p>
+<p class="wysiwyg-text-align-justify">The exported XLS file contains the wildcards and messages of the CMS, various meta information, and the empty column “new content” in which the required new texts can be entered. The following tables 15.1 and 15.2 explain the meaning of the columns in detail.</p>
+<p class="wysiwyg-text-align-justify">To realize your changes, please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>To change existing text elements, simply enter the appropriate new text in the “new content” column.</p>
+</li>
+<li>
+<p>To create a new wildcard, add a new row and add the required data.</p>
+</li>
+<li>
+<p>To create a new notification or error message, you have to add two new rows:</p>
+<ul>
+<li>
+<p>The text type of the first row is “header”. For a message of type „error message“, you can optionally enter a header in this row.</p>
+</li>
+<li>
+<p>The text type of the first row is “body”. It contains the message itself and is obligatory.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="information-3" class="wysiwyg-text-align-justify">Information</h3>
+<p class="wysiwyg-text-align-justify">Caution: A frequently made mistake is to change the text in the “content” column. New text must be entered in the “new content” column.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify"><strong>Table contents:</strong></p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default">
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center">
+<p><strong>Column</strong></p>
+</th>
+<th class="wysiwyg-text-align-center">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>section</p>
+</td>
+<td>
+<p>Indicates which type of content it is.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>identifier</p>
+</td>
+<td>
+<p>Number or name of each text element.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>text type</p>
+</td>
+<td>
+<p>In this column, you define if the respective row contains the header or body of a message.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>language</p>
+</td>
+<td>
+<p>Language version’s abbreviation.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>content</p>
+</td>
+<td>
+<p>The previous content of each text element. <em>Do not change!</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>new content</p>
+</td>
+<td>
+<p>Text changes or new texts are entered into this column.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>status</p>
+</td>
+<td>
+<p>Indicates the status of the editing process.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"><strong>Entry in the column “section”:</strong></p>
+<table class="wysiwyg-text-align-justify" style="height: 88px;" border="1" data-layout="default" data-table-width="421">
+<colgroup> <col style="width: 264.0px;"> <col style="width: 226.0px;"> </colgroup>
+<tbody>
+<tr style="height: 22px;">
+<th class="wysiwyg-text-align-center" style="height: 22px; width: 260.903px;">
+<p><strong>Entry in the column “section”</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="height: 22px; width: 222.899px;">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px; width: 252.882px;">
+<p>placeholders</p>
+</td>
+<td style="height: 22px; width: 214.878px;">
+<p>Wildcards for text elements.</p>
+</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px; width: 252.882px;">
+<p>errors</p>
+</td>
+<td style="height: 22px; width: 214.878px;">
+<p>Error messages.</p>
+</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px; width: 252.882px;">
+<p>messages</p>
+</td>
+<td style="height: 22px; width: 214.878px;">
+<p>Notifications.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="creating-websites-and-language-versions" class="wysiwyg-text-align-justify"><strong>Creating Websites and Language Versions</strong></h

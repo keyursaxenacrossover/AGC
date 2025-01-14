@@ -1,0 +1,48 @@
+ surveys, employee surveys)</p>
+</li>
+<li>
+<p>Deleting (Anonymous surveys, personalized surveys, employee surveys)</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">In the upper part of the dialog, you can find the selection criteria of the search function (period of access, disposition code, display of additional variables, names, and e-mail addresses of the participants). Also, using the View button you can open additional columns or hide superfluous columns.</p>
+<h3 id="viewing-individual-data-records" class="wysiwyg-text-align-justify"><strong>Viewing Individual data records</strong></h3>
+<p class="wysiwyg-text-align-justify">To view the result data of a participant, click the <strong>Detail view</strong> icon in the overview. The following will be visible:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>consecutive number (“lfdn”) and disposition code of the participants, and various additional field data, browser information, and system variables</p>
+</li>
+<li>
+<p>IP address and host of the participants, if you have reading rights for “ip_addresses”.</p>
+</li>
+<li>
+<p>in personalized projects, name, e-mail address, tester status, and code of the participants, if you have reading authorization for “export_with_lfdn”.</p>
+</li>
+<li>
+<p>the survey results of the participants.</p>
+</li>
+</ul>
+<h3 id="editing-individual-data-records" class="wysiwyg-text-align-justify"><strong>Editing individual data records</strong></h3>
+<p class="wysiwyg-text-align-justify">To edit a result data record, click the <strong>Edit</strong> icon in the column “Actions”. You can change open-ended answers by simply overwriting them. To change closed<br>answers, change the data by selecting another value in the drop-down lists.</p>
+<h3 id="deleting-data-records" class="wysiwyg-text-align-justify"><strong>Deleting data records</strong></h3>
+<p class="wysiwyg-text-align-justify">Using the action „Delete data records completely“, it is possible to delete individual or several data records. In personalized surveys and employee surveys, this will remove not only the field and result data but the data in participant administration as well.</p>
+<p class="wysiwyg-text-align-justify">Please note that deleted records cannot be restored.</p>
+<h3 id="deleting-result-data-selectively" class="wysiwyg-text-align-justify"><strong>Deleting result data selectively</strong></h3>
+<p class="wysiwyg-text-align-justify">Result data can be deleted selectively, i.e. the value of a specific variable for all participants (e.g. an e-mail address determined in the course of the survey) will be completely removed from the records. This makes it possible, for example, to anonymize data later on. When deleting, the respective variable is set to its default value, i.e. “-77” for numeric fields and “NULL” for text fields. Delete operations are logged in project info under project documentation.</p>
+<p class="wysiwyg-text-align-justify">Please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Click on the <strong>Delete data</strong> menu item.</p>
+</li>
+<li>
+<p>Choose the variable whose content you wish to delete from the records of all participants.</p>
+</li>
+<li>
+<p>Confirm by clicking on <strong>Delete data</strong>.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">For security reasons, this function is protected by a separate right: The menu item labeled <strong>Projects</strong> → {Selected project} → <strong>Statistics → Delete data</strong> is only visible to users who have read rights to <em>report_erase_data</em>.</p>
+<h2 id="quality-correction" class="wysiwyg-text-align-justify"><strong>Quality correction</strong></h2>
+<p class="wysiwyg-text-align-justify">The conscientiousness with which survey participants fill in questionnaires is critical for the quality of the results of online surveys. The results from survey participants that merely click very quickly through the questionnaire, for example, to get a quick overview of the survey theme or on completion to participate in a prize draw, are of little value for further analysis in the end. The quality correction program helps you to recognize participants who simply “clicked through” by their answer behavior, to mark these data records, and if desired to delete them.</p>
+<p class="wysiwyg-text-align-justify"><strong>Response times as quality criterion</strong></p>
+<p class="wysiwyg-text-align-justify">The response times of a user are the key criteria needed for indexing the quality of survey participants. The time taken by each participant to complete a particular page of a survey can be calculated. First of all an index is formed for each participant that gives information on his mean processing time for a questionnaire page. Please note here: The time required by a participant to complete an entire survey is not a factor in the calculation. Depending on the direction of the questionnaire the number of pages that the participant sees can also vary tremendously.</p>
+<p class="wysiwyg-text-align-justify">Subsequently, a separate calculation for each page is made, which shows where the survey participant is about the processing time of the media. The median survey time of 100

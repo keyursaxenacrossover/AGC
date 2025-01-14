@@ -1,0 +1,96 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K">Overview</h1>
+<p>This article provides comprehensive information about the EFS Service-Layer (API) services. It covers various aspects of the API, including authentication, REST status codes, and detailed descriptions of different service endpoints.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>The EFS Service-Layer offers a wide range of API services for managing surveys, participants, and other related functionalities. This guide will help you understand and utilize these services effectively.</p>
+<ul>
+<li><a href="#header-1">EFS</a></li>
+<li><a href="#header-73">Employee</a></li>
+<li><a href="#header-80">GDPR</a></li>
+<li><a href="#header-90">Leadership</a></li>
+<li><a href="#header-99">MySight</a></li>
+<li><a href="#header-103">People Module / Panel</a></li>
+<li><a href="#header-204">Portals</a></li>
+<li><a href="#header-215">Survey</a></li>
+</ul>
+<p>As mentioned in the EFS Service-Layer overview, all requests should use the <code>token</code> URL parameter to authenticate the service user, for example <code>GET https://your-efs.com/service/survey/surveys/?token=1234567890</code>. An alternative to using the provided token, is to create a basic authentication request as specified in the HTTP protocol.</p>
+<p><em><strong>REST status codes</strong></em></p>
+<p>When using REST to access the Service Layer, the service will use the following HTTP status codes, 500 being the most common error status code and 200 being used for all successful requests.</p>
+<table border="1" data-layout="default" data-table-width="760">
+<colgroup>
+<col style="width: 90.0px;">
+<col style="width: 668.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Status</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p><strong><span style="color: #36b37e;">200</span></strong></p>
+</td>
+<td>
+<p>The request has been processed, see end point description for expected response body</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong><span style="color: #ff5630;">400</span></strong></p>
+</td>
+<td>
+<p>The validation of the entity given in the body of the request failed. Can also be caused by a malformed JSON request.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong><span style="color: #ff5630;">401</span></strong></p>
+</td>
+<td>
+<p>Can be caused by missing, invalid or expired token or username/password combination.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong><span style="color: #ff5630;">403</span></strong></p>
+</td>
+<td>
+<p>The user does not have the permission to execute this service or service is unknown or not enabled/available.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong><span style="color: #ff5630;">500</span></strong></p>
+</td>
+<td>
+<p>All regular errors and exceptions will use this status code, please see the message for additional information. <em>In some rare exceptions, the returned value may not be json encoded.</em></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Example for response body of a error status code:</p>
+<pre><code class="language-json">{
+  "error": {
+    "message": "REST route [efs/test] not found, not activated or no access",
+    "code": 403
+  }
+}</code></pre>
+<p>The title of the expandable area uses the following format:<br><strong>Description | </strong><em><strong>{REST method} </strong></em><strong> | </strong><em><strong> {SOAP method}</strong></em></p>
+<p>The examples provided are REST requests, our recommended method for accessing the Service-Layer. The list of services omits the mandatory /service/ base path. All service layer requests need to use this base path, e.g. <code>GET /survey/surveys/</code> should be <code>GET https://efs-installation.com/service/survey/surveys/</code> in your application.</p>
+<p>When requesting services to be activated through the support, it is best to provide the SOAP method names, as these are unique and avoid confusion.</p>
+<p> </p>
+<h1 id="header-1">EFS</h1>
+<h2 id="header-3">Email blocklist, global and survey based</h2>
+<div class="expand-macro">
+<h4 id="h_01J441N79CZGJC5XFDKWW37M03"> </h4>
+<h3 id="header-5">DELETE /efs/mailblacklist/</h3>
+<p>Deletes a list of email addresses from blocklist</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "emailList": [
+    {
+      "email": "example@domain.tld",
+      "

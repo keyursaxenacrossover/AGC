@@ -1,0 +1,158 @@
+h4>
+<p>Helpful shortcut keys will make the editing process easier.</p>
+<table border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 379.0px;"> <col style="width: 381.0px;"> </colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour="#c0b6f2">
+<p><strong>Shortcut key</strong></p>
+</th>
+<th data-highlight-colour="#c0b6f2">
+<p><strong>Function</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>A</p>
+</td>
+<td>
+<p>Select</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>D</p>
+</td>
+<td>
+<p>Detail select</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P</p>
+</td>
+<td>
+<p>Polygon</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C</p>
+</td>
+<td>
+<p>Circle</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>B</p>
+</td>
+<td>
+<p>Rectangle</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>S</p>
+</td>
+<td>
+<p>Scale element</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Shift + left arrow key</p>
+</td>
+<td>
+<p>move shape 10/1 pixel to the left</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Shift + right arrow key</p>
+</td>
+<td>
+<p>move the shape 10/1 pixel to the right</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Shift + upwards arrow key</p>
+</td>
+<td>
+<p>move shape 10/1 pixel upwards</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Shift + downwards arrow key</p>
+</td>
+<td>
+<p>move shape 10/1 pixel downwards</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Del</p>
+</td>
+<td>
+<p>delete selected shape</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Strg + A</p>
+</td>
+<td>
+<p>select all</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Strg + C</p>
+</td>
+<td>
+<p>copy</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Strg + V</p>
+</td>
+<td>
+<p>insert</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Strg + Z</p>
+</td>
+<td>
+<p>undo</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Strg + Shift + Z</p>
+</td>
+<td>
+<p>redo</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p>This option may be dependent on the browser you are using, therefore not all shortcut keys may be available for every browser.</p>
+<h4 id="detail-configuration-of-the-fallback-image">Detail configuration of the fallback image</h4>
+<p>In the case that participants do not have JavaScript installed a fallback image will be displayed instead. Go to the section <strong>Detail configuration fallback image</strong> for further configurations.</p>
+<hr>
+<h3 id="dynamic-answer-option">Dynamic answer option</h3>
+<p>This <strong>Single response</strong> question type is called the <em>Dynamic answer option</em>. This question type will allow you to present a respondent with a single-response list that dynamically updates based on responses given by previous respondents. This question type replies in the presence of a free text answer as part of the single response list. For example, you may have a single-response question that asks a person their favorite brand of chocolate, with available answers: Cadbury, Lindt, Galaxy, Toblerone, and Other. Against the other, you have included a free text field (<em>Answer option + text</em>).</p>
+<p>The new <em>Dynamic Answer Option</em> type can be configured so that if a specified number of respondents enter Hershey as their favorite chocolate, this option is dynamically added to the list of possible responses for the next respondent to answer the survey. The following settings control this new question type:</p>
+<p><strong>Threshold</strong> – this setting determines the number of respondents who need to have provided this new answer before it is added to the list of available answers. For example, we might decide that 10 people need to choose Hershey before it is added to the list.</p>
+<p><strong>Max amount of answer options</strong> – this setting limits the number of new options that can be dynamically added to the single-response list.</p>
+<p><strong>Respect case sensitivity</strong> - this setting determines whether the case sensitivity of a word produces a new answer option in each case.</p>
+<p><strong>Alternating rows</strong> – this setting determines whether the newly added options are displayed in the order they were dynamically added to the list, or in a more randomized order.</p>
+<h2 id="multiple-response-list">Multiple response list</h2>
+<p>Questions that allow more than one answer are called questions with multiple response lists. In this case, one variable is created for each selection. To store the answer, a dedicated variable is created for each answer option. Depending on the answer, this variable can have two possible states: 0 = not quoted, 1 = quoted.</p>
+<h3 id="multiple-response-list

@@ -1,0 +1,94 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1053721188">https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1053721188</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">Custom modules on an installation</a></li>
+<ul>
+<li><a href="#header-3">How to activate a custom module on an installation</a></li>
+<li><a href="#header-4">FYI</a></li>
+<li><a href="#header-5">Known Custom Modules</a></li>
+</ul>
+</ul>
+</ul><h1 id="header-1">Custom modules on an installation</h1><p>Prerequisites for Custom modules to run:</p><ul>
+<li><p>the custom symlinks have been created by TC in the htdocs folder of the installation</p></li>
+<li><p>the Frontends have been restartet since the addition so they can work with the custom content</p></li>
+</ul><h2 id="header-3"> How to activate a custom module on an installation </h2><ul>
+<li><p>Login to installation using root account</p></li>
+<li><p>Options &gt;&gt; Platform cockpit &gt;&gt; root only:: System configuration</p></li>
+<li>
+<p>Edit variable “modules”</p>
+<ul><li><p>add “custom”, if it does not exist already</p></li></ul>
+</li>
+<li>
+<p>Edit variable "custom_modules"</p>
+<ul><li>
+<p>“Key” describes the path to the customizing within the projects folder (see FYI for further info)</p>
+<ul>
+<li><p>Examples:</p></li>
+<li>
+<p>Key: ProductCustomizingTeam/ForumArchiv</p>
+<ul>
+<li><p>Type: String</p></li>
+<li><p>Value: ForumArchiv</p></li>
+</ul>
+</li>
+<li>
+<p>Key: ProductCustomizingTeam/csv2gpx</p>
+<ul>
+<li><p>Type: String</p></li>
+<li><p>Value: csv2gpx</p></li>
+</ul>
+</li>
+</ul>
+</li></ul>
+</li>
+<li>
+<p>Custom modules needed for <strong>"Chatroom and Whistleblower tool"</strong> (you also need custom triggers):</p>
+<ul>
+<li>
+<p>Key: ProductCustomizingTeam/awbc</p>
+<ul>
+<li><p>Type: String</p></li>
+<li><p>Value: awbc</p></li>
+</ul>
+</li>
+<li>
+<p>Key: ProductCustomizingTeam/SurveyStatusV2</p>
+<ul>
+<li><p>Type: String</p></li>
+<li><p>Value: SurveyStatusV2</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>make sure the custom module files already are copied into the corresponding folder and are symlinked in the htdocs folder</p></li>
+<li>
+<p>ask Sysadmins to restart the frontends</p>
+<ul><li>
+<p>on Procus you can restart the frontend yourself as follows</p>
+<ul><li><p>sudo /bin/systemctl restart opst-lighttpd.service</p></li></ul>
+</li></ul>
+</li>
+<li><p>Also see the following Twiki page for further reference: <a href="https://it.globalpark.de/twiki/bin/view/Customizing/UseStandAloneApplicationsAsEFSAdminGUI#Configure_EFS">Custom Modules</a></p></li>
+</ul><div class="expand-macro">
+<h4 string="Checkliste"></h4>
+<p>CHECKLIST<br>[] FE-Restart<br>[] Custom module activation<br>- Key: ProductCustomizingTeam/Specials<br>- Value: Specials<br>[] add custom on modules (if necessary)<br>[] globis entries (u custom module [NAME] activated [CASE])<br>[] instcheck</p>
+<p>========These checks can’t always be executed<br>[] navigate to [Custom Module] (if possible)<br>[] create EFSITO (if necessary, check known modules for reference)</p>
+</div><h2 id="header-4">FYI</h2><table data-layout="wide" ac:local-id="5da92d1c-2807-4bdf-b332-bac5c4132777">
+<colgroup>
+<col style="width: 344.0px;">
+<col style="width: 616.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour="#ffffff">
+<p>projekte=default path known by efs , full path: </p>
+<p>/nfs/opst[x]/ab1234.customervoice360.com/projekte</p>
+</th>
+<th data-highlight-colour="#ffffff"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20714620397714" alt="image-20191030-122444.png"></th>
+</tr>
+<tr>
+<td><p>Value and Key in the Symlink</p></td>
+<td>
+<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20714620046610" alt="image-201

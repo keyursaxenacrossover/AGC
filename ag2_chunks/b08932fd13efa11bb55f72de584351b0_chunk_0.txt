@@ -1,0 +1,18 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1083867285">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1083867285</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">Global Tivian Internal Groups</a></li>
+<ul>
+<li><a href="#header-3">Groups for clients</a></li>
+</ul>
+</ul>
+</ul><h1 id="header-1">Global Tivian Internal Groups</h1><p>There are Groups to grant Access to Okta itself. These groups are used for Tivian only. Take care that no other users are assigned to these groups. also see <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Okta Admin Users" ri:version-at-save="2"></ri:page><ac:link-body>Okta Admin Users</ac:link-body></ac:link> </p><p>The following Groups are present in Okta:</p><ul>
+<li><p>tivian super admins</p></li>
+<li><p>tivian access installers</p></li>
+<li><p>tivian user manager</p></li>
+</ul><p></p><p>More groups might follow as needed.</p><p>Also see: <a href="https://help.okta.com/en/prev/Content/Topics/Security/Administrators.htm?cshid=Security_Administrators#Security_Administrators">https://help.okta.com/en/prev/Content/Topics/Security/Administrators.htm?cshid=Security_Administrators#Security_Administrators</a></p><p></p><h2 id="header-3">Groups for clients</h2><p>Every client has a group. Every user of a client should belong to that group. (also see <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Group Setup" ri:version-at-save="7"></ri:page><ac:link-body>Group Setup</ac:link-body></ac:link>)</p><p>Groups are the main tool in Okta to assign specific rules to a set of users. Therefore if some rules only apply to a subset of users in Okta a new group could be created. Possible use cases are MFA, sessions lifetimes, password policies and others.</p><p></p><p></p><p></p> super admins</p></li>
+<li><p>tivian access installers</p></li>
+<li><p>tivian user manager</p></li>
+</ul><p></p><p>More groups might follow as needed.</p><p>Also see: <a href="https://help.okta.com/en/prev/Content/Topics/Security/Administrators.htm?cshid=Security_Administrators#Security_Administrators">https://help.okta.com/en/prev/Content/Topics/Security/Administrators.htm?cshid=Security_Administrators#Security_Administrators</a></p><p></p><h2 id="header-3">Groups for clients</h2><p>Every client has a group. Every user of a client should belong to that group. (also see <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Group Setup" ri:version-at-save="7"></ri:page><ac:link-body>Group Setup</ac:link-body></ac:link>)</p><p>Groups are the main tool in Okta to assign specific rules to a set of users. Therefore if some rules only apply to a subset of users in Okta a new group could be created. Possible use cases are MFA, sessions lifetimes, password policies and others.</p><p></p><p></p><p></p>

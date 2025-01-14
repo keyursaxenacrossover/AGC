@@ -1,0 +1,89 @@
+ a group for a specific application containing the members of that application.</p><p>Applications spread accross multiple modules. The following applications should exist:</p><ul>
+<li><p>Tivian Analytics [one for all]</p></li>
+<li><p>Dashboard (check if that could be one together with Tivian Analytics?! <ac:parameter ac:name="title">to be clarified</ac:parameter><ac:parameter ac:name="colour">Red</ac:parameter> ) [one for all]</p></li>
+<li><p>CXI [one for all]</p></li>
+<li><p>EFS including Portals and Panelwebsite [one per installation]</p></li>
+<li><p>Datavoyager (clarify if reportmanager is included or should get it’s own application <ac:parameter ac:name="title">to be clarified</ac:parameter><ac:parameter ac:name="colour">Red</ac:parameter> ) [one per installation]</p></li>
+</ul><p></p><h4 id="header-23">Policies</h4><p>There should be policies in place for different flows and use cases.</p><ul>
+<li><p>Password policy: Managing what passwords are allowed (should be individual per tenant)</p></li>
+<li><p>MFA policy: Managing when to enroll and request what kind of MFA (should be indiviual per tenant)</p></li>
+<li><p>Authentication policy: Managing how a user can login and how long token times, session times etc. will be (unclear if it is needed to have that individual per tenant)</p></li>
+</ul><h2 id="header-26">Organisational</h2><h3 id="header-28">Responsibilities and Ownership</h3><ul>
+<li><p>Paul and Francesco takeover the ownership of the project</p></li>
+<li><p>Markus and Micha take care of the technical responsibilities</p></li>
+</ul><h3 id="header-29">Stakeholders</h3><table data-layout="wide" ac:local-id="b42874fc-d4ab-4281-9aa8-030fbfb5f390">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p><strong>Stakeholder</strong></p></th>
+<th><p><strong>Needed Information</strong></p></th>
+<th><p><strong>Concerns</strong></p></th>
+</tr>
+<tr>
+<td><p>ITSB (especially Dörthe and Marcel)</p></td>
+<td><ul>
+<li><p>One database/IdP with all customer users</p></li>
+<li><p>Security measurement like token expirations times, allowed flows, etc.</p></li>
+<li><p>Clarify if allowing and iframe embedding is an issue</p></li>
+</ul></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>Support and OPs</p></td>
+<td><ul><li><p>Get numbers of users, user logins etc.</p></li></ul></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>Ludger</p></td>
+<td><ul>
+<li><p>Timeline with respect to admin first or not</p></li>
+<li><p>Clarify some of the unclear features etc. - see above</p></li>
+</ul></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>Designer (Don?)</p></td>
+<td><ul><li><p>Information about the design of the different screens and flows</p></li></ul></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table><h3 id="header-30">Rough Project Plan</h3><ul>
+<li><p>Start with an MVP Identity Provider</p></li>
+<li>
+<p>In Parallel</p>
+<ul>
+<li><p>Build a production ready identity provider</p></li>
+<li>
+<p>In series</p>
+<ul>
+<li><p>Build an admin integration in DV (very few users, easy to handle, good for testing)</p></li>
+<li><p>Build the EFS admin integration and other admin integrations</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Build a panelist integration as well as other enduser integrations (if present)</p></li>
+</ul><h3 id="header-31">Next Steps</h3><ac:task-list>
+<ac:task>
+<ac:task-id>46</ac:task-id>
+<ac:task-status>incomplete</ac:task-status>
+<ac:task-body><span class="placeholder-inline-tasks"><ac:link><ri:user ri:account-id="5a5dc81217dfb4426b61f4c6"></ri:user></ac:link> <ac:link><ri:user ri:account-id="

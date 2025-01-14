@@ -1,0 +1,26 @@
+span style="color: rgb(0,128,0);">'panelist_status' </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$pstatus<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">panellists.manager.change_panelist_account_data.update.after</span></pre></td>
+<td colspan="1">modules/panel/components/panelists/manager.inc.php:change_panelist_account_data()</td>
+<td colspan="1"><pre><span>Panel\Events\Panelists\Manager\ChangePanelistAccountData\Update\After</span><span>([<br></span><span>    </span><span style="color: rgb(0,128,0);">'email'           </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$previous_email</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'original_values' </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$previous_data</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'update_values'   </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$update_values</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'panelist_status' </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$pstatus</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'component'       </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$this<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">panelist.registration.before</span></pre></td>
+<td colspan="1">modules/panel/components/panelists/manager.inc.php:add_panelist()</td>
+<td colspan="1"><pre><span>Panel\Events\Panelists\Manager\Registration\Before</span><span>([<br></span><span>    </span><span style="color: rgb(0,128,0);">'panelist_data' </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$panelist_data<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">panelist.registration.after</span></pre></td>
+<td colspan="1">modules/panel/components/panelists/manager.inc.php:add_panelist()</td>
+<td colspan="1"><pre><span>Panel\Events\Panelists\Manager\Registration\After</span><span>([<br></span><span>    </span><span style="color: rgb(0,128,0);">'user_id'       </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$uid</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'inserted_data' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$insert_values</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'component'     </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$this<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">panel.search.get_text_input_field.before</span></pre></td>
+<td colspan="1">modules/panel/app/controllers/legacy/panel_search.php:get_text_input_field()</td>
+<td colspan="1"><pre><span>Panel\Events\Controllers\Legacy\PanelSearch\ChangeAccount\GetTextInputField\Before</span><span>([<br></span><span>    </span><span style="color: rgb(0,128,0);">'field_name' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$name</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'input_field' </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$input<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">panel.controllers.legacy.panel_search.change_account.before</span></pre></td>
+<td colspan="1">modules/panel/app/controllers/legacy/panel_search.php:change_account()</td>
+<td colspan

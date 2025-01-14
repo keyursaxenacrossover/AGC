@@ -1,0 +1,63 @@
+<h1 id="h_01J67AV8T8Z3DQQW4MNP4QRV02">Overview</h1>
+<p>Customization will only take place on Okta side. There won’t be any customization that are tenant specific.</p>
+<p>For tracking changes to the current customization solution see the following repository:</p>
+<p><a href="https://bitbucket.org/qbengineering/okta_resource_login_customization/src/master/" data-card-appearance="inline">https://bitbucket.org/qbengineering/okta_resource_login_customization/src/master/</a></p>
+<p>The following link might be helpful to understand how the Okta Sign-In works - it gives a rough overview of the states of a login:</p>
+<p><a href="https://github.com/okta/okta-auth-js#transactionstatus" data-card-appearance="inline">https://github.com/okta/okta-auth-js#transactionstatus</a></p>
+<p><strong>This article is for documentation purposes only, since customizations are outside of support scope.</strong></p>
+<p>The login page HTML is hosted in Okta. Is has to be manually uploaded after building from the login repository.</p>
+<p>The assets (like CSS, JS, images) loaded by the login page are delivered by an nginx container running in our cluster. This is created via pipeline from the login and email repositories. Versions of the image have to be updated manually. </p>
+<p>The logo shown in the emails is also delivered by the same nginx container.</p>
+<p><strong><span style="color: #ff5630;">The repositories for email and login are merged in the pipeline. This is a custom pipeline.</span></strong></p>
+<p> </p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716302789394" alt="Login Screen Customizations - Current Solution.png"></p>
+<h2 id="h_01J67AS2H8JFNNMB0K6VTD1DE2">Table of Contents</h2>
+<ul>
+<li><a href="#header-3">Okta Login Customization</a></li>
+<li><a href="#h_01J67CASSS38891HM888ANKBCR">Okta Error Customization</a></li>
+<li><a href="#h_01J67CQK3YWK0KBT6EYP5TCJJ7">Okta E-mail Customization</a></li>
+<li><a href="#h_01J67CYZHFMF302074RCC1DSCQ">Okta Multilanguage Support</a></li>
+</ul>
+<h1 id="header-3">Okta Login Customization</h1>
+<h2 id="header-4">Brands - Content Security Policy</h2>
+<h3 id="header-6">Configure the Default CSP</h3>
+<ol start="1">
+<li>
+<p>In the Admin Console, go to Customizations &gt; Brands.</p>
+</li>
+<li>
+<p>In the Pages panel under <strong>Sign-in Page</strong> and <strong>Error Page</strong>, click <strong>Configure</strong>.</p>
+</li>
+</ol>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716312348434" alt="image-20240523-145151.png"></p>
+<ol start="3">
+<li>
+<p>Click <strong>Settings</strong>.</p>
+</li>
+<li>
+<p>In the Content Security Policy panel, click Edit and set the following:</p>
+</li>
+</ol>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716343950610" alt="image-20240523-145833.png"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716343896466" alt="image-20240523-145928.png"></p>
+<ul>
+<li>
+<p><strong>Trusted external resources:</strong> <code>https://production.static-okta-assets.customervoice360.com/</code></p>
+</li>
+<li>
+<p><strong>Report URI:</strong> <code>optional</code> - Enter the URI for violation reports.</p>
+</li>
+<li>
+<p><strong>Enforcement:</strong> <code>Not enforced (Report-only mode)</code></p>
+</li>
+</ul>
+<ol start="5">
+<li>
+<p>Click Save to draft.</p>
+</li>
+</ol>
+<p>If you'd like to see the previous solution (discontinued), you can consult Confluence: <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1063813180/Login+Customization">Login Customization - Tivian Access - Confluence</a></p>
+<h1 id="h_01J67CASSS38891HM888ANKBCR">Okta Error Customization</h1>
+<p>See <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20716789326994-Okta-Errors" target="_blank" rel="noopener noreferrer">Okta errors</a> to get more information about the type of Okta errors that can be encountered.</p>
+<p>Error page customization especially takes place in case of errors that occur on Okta side that will not redirect back to the respective installation. </p>
+<p>The error customization takes place in a Bitbucket repository:</p>
+<p><a href="https://bitbucket.org/qbengineering/okta_resource_login

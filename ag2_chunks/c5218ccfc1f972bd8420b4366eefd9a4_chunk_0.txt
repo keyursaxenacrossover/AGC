@@ -1,0 +1,71 @@
+<h2 id="h_01J6EP7306NGJVGH053RK109H1">Table of Contents</h2>
+<ul>
+<li>
+<a href="#header-1">Portals: Platform enhancements</a>
+<ul>
+<li><a href="#header-3">Multilingual Guides</a></li>
+<li><a href="#header-5">Accessibility</a></li>
+<li><a href="#header-6">Portal switch</a></li>
+<li><a href="#header-7">Information</a></li>
+<li><a href="#header-8">Allowed Domains: Portal invitation and Groups</a></li>
+<li><a href="#header-9">External participants and voting phase</a></li>
+</ul>
+</li>
+<li>
+<a href="#header-11">Guides enhancements (US- and ME-Guide)</a>
+<ul>
+<li><a href="#header-13">Adding participants subsequently</a></li>
+</ul>
+</li>
+<li>
+<a href="#header-15">Team-Improvement-Guide (US-Guide)</a>
+<ul>
+<li><a href="#header-17">Ask the group again</a></li>
+<li><a href="#header-18">Information</a></li>
+</ul>
+</li>
+<li>
+<a href="#header-20">Leadership-Guide (ME-Guide)</a>
+<ul>
+<li><a href="#header-22">The participant list</a></li>
+<li><a href="#header-23">Created actions</a></li>
+<li><a href="#header-24">Grouping phase</a></li>
+<li><a href="#header-25">Deep linking: New placeholder</a></li>
+</ul>
+</li>
+<li>
+<a href="#header-27">Panel website: Security Enhancements</a>
+<ul>
+<li><a href="#header-29">Security question for change login details</a></li>
+<li><a href="#header-30">Delay sending voucher e-mail</a></li>
+</ul>
+</li>
+<li>
+<a href="#header-32">The EFS admin area</a>
+<ul>
+<li><a href="#header-34">Table control</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="header-1">
+<em>Portals</em>: Platform enhancements</h2>
+<p>In addition to the <em>Portal switch</em> and <em>Deep linking</em>, further features are available on the <em>Portals</em> platform. Each of the three guide types (ME, US and IDEA) can be translated into several languages. The accessibility of<em> Portals</em> has also been improved.</p>
+<h3 id="header-3">Multilingual Guides</h3>
+<p>To provide <em>Guides</em> in several languages, the phrases of the <em>Guides</em> configuration must be translated. The portal languages can be selected via a drop down list.platform</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998144848274" alt="Multilingual.jpg"></p>
+<p>You will translate the labels and descriptions into the language selected via drop-down list. The globe icon indicates which labels and descriptions can be translated and the color of the icon indicates whether labels and descriptions have already been translated into the selected language.</p>
+<ul>
+<li>
+<p>Red: The label has not been translated into the selected language.</p>
+</li>
+<li>
+<p>Black: The label has been translated into the selected language.</p>
+</li>
+</ul>
+<p>On the <strong>Basic information</strong> tab, you can translate the title and the description of the guide. The <strong>Additional information</strong> can also be translated into several languages. The text of the e-mail preview, which you can find on the <strong>E-mail settings</strong> tab, can also be translated. On the <strong>Rater groups</strong> tab, you can translate the rater group name and description. On the <strong>Questionnaire</strong> tab, the descriptions of the additional questions can be translated.</p>
+<h3 id="header-5">Accessibility</h3>
+<p>Further features have been implemented to improve the accessibility of <em>Portals</em>. After opening, pop-ups and dialogs will be focused directly. If the dialog does not contain input fields but buttons, the confirmation button will be focused. If the dialog contains an input field, the first available input field will be focused. If the dialogs have no interactive elements, the main content area will be focused. Dialogs can be closed by pressing the <strong>Esc</strong> key.</p>
+<p>In the guide setup, a header will be displayed so that participants and groups can be read out by the screen reader. By pressing the <strong>Return</strong> key, the result of the participant and group search is directly applied.</p>
+<p>In the detail view of the Action Ticket, you can use the <strong>Tab</strong> key to move from left to right and from top to bottom. The first element to focus will be the <strong>Close</strong> button.</p>
+<h3 id="header-6">Portal switch</h3>
+<p>The <em>Portal switch</em> is used to access different portals in the exterior view. In the CMS area of <em>Portals</em>, you have to define the portals between which users can switch. From now on, the <em>Portal switch</em> can also be used via the HTML module and Javascript code.</

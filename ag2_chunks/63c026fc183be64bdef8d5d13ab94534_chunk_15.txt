@@ -1,0 +1,51 @@
+ left; vertical-align: top; background-color: var(--ds-background-accent-gray-subtlest,#f0f0f0); padding: 7px 10px !important 7px 10px;" scope="col">
+<div class="tablesorter-header-inner">Meaning</div>
+</th>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px 7px 10px !important;">Number of potential canvassers</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important 7px 10px;">Sum of the members of the selected panel group.</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px 7px 10px !important;">Persons written to</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important 7px 10px;">Sum of the already-dispatched tell-a-friend mails.</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px 7px 10px !important;">Registered persons</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important 7px 10px;">
+<p>Sum of recruited persons who have completed the registration form, but who have not participated in the master data survey yet or from EFS 9.0 were screened out.</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px 7px 10px !important;">
+<p>Registered persons with completed master data survey</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important 7px 10px;">
+<p>Sum of successfully-canvassed persons.</p>
+<p>Please note:</p>
+<ul>
+<li>“Successfully completed” means that the recruits have reached a final page on which disposition code 31 or 32 is allocated. For these persons, the recruiters will receive bonus points.</li>
+<li>Screened-out recruits (i.e. recruits who reached a final page on which disposition code 36 or 37 is allocated), were considered “fully registered”, too, in the past, and the recruiters received bonus points. The process did not depend on the disposition code then.</li>
+<li>In summer 2012, this behavior was modified retroactively upon repeated customer request for EFS 9.0. Now, recruits who are allocated disposition code 36 or 37 remain in the “Registered persons” column and the recruiters do not receive bonus points automatically anymore.</li>
+<li>If you invite the recruits to a panel survey for which automatic master data transfer has been acticated instead of a master data survey, this will trigger incentivation as well.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px 7px 10px !important;">Persons not registered</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important 7px 10px;">
+<p>Sum of persons written to who have so far neither registered nor completed the master data survey.</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px 7px 10px !important;">
+<p>Average number of attempts to recruit per potential canvasser</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important 7px 10px;">(Persons written to) / (Number of potential canvassers)</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px 7px 10px !important;">
+<p>Average number of recruited panelists per potential canvasser</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important 7px 10px;">
+<p>(Registered persons with

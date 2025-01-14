@@ -1,0 +1,93 @@
+<h1 id="h_01J7E32D63DXKKKADJXSQRVR15">Overview</h1>
+<p>ACL is the abbreviation for "Access Control List". In EFS there are different rights ordered by EFS module that can be granted on team base and give this team read and write access to features and functions in EFS. Besides the ACL team rights there also are object rights (e.g. on mail templates or projects etc.).</p>
+<h2 id="header-3">ACL rights for EFS Survey</h2>
+<table style="width: 100%;" border="1" data-layout="default">
+<colgroup> <col style="width: 269.0px;"> <col style="width: 489.0px;"> </colgroup>
+<thead>
+<tr>
+<td class="wysiwyg-text-align-center" style="height: 22px; width: 25.1429%;">
+<p><strong>NAME</strong></p>
+</td>
+<td class="wysiwyg-text-align-center" style="height: 22px; width: 74.7143%;">
+<p><strong>DESCRIPTION</strong></p>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr style="height: 22px;">
+<th style="height: 22px; width: 99.8571%;" colspan="2">
+<p class="wysiwyg-text-align-center"><strong>Rights related to project management</strong></p>
+</th>
+</tr>
+<tr style="height: 44px;">
+<td style="height: 44px; width: 25.1429%;">
+<p>archive_project</p>
+</td>
+<td style="height: 44px; width: 74.7143%;">
+<p>With read rights, you can archive projects and use the archive.</p>
+</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px; width: 25.1429%;">
+<p>chg_url</p>
+</td>
+<td style="height: 22px; width: 74.7143%;">
+<p>With write rights, you can change the URL of a project.</p>
+</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px; width: 25.1429%;">
+<p>cr_language</p>
+</td>
+<td style="height: 22px; width: 74.7143%;">
+<p>With write rights, you can create a new language.</p>
+</td>
+</tr>
+<tr style="height: 89px;">
+<td style="height: 89px; width: 25.1429%;">
+<p>cr_project</p>
+</td>
+<td style="height: 89px; width: 74.7143%;">
+<p>With write rights, you can create or copy new projects and change the basic characteristics of a project. Furthermore, write rights for cr_project are a necessary requirement for granting project import with import_project.</p>
+</td>
+</tr>
+<tr style="height: 134px;">
+<td style="height: 134px; width: 25.1429%;">
+<p>ct42partadm</p>
+</td>
+<td style="height: 134px; width: 74.7143%;">
+<p>With read rights, you can view the participants list in participant administration. Furthermore, you gain access to data import (import for externally-collected data in personalized surveys and employee surveys). In EFS Survey Status, you gain access to respondent export. With write rights, you can create, edit or delete participants.</p>
+</td>
+</tr>
+<tr style="height: 67px;">
+<td style="height: 67px; width: 25.1429%;">
+<p>del_project</p>
+</td>
+<td style="height: 67px; width: 74.7143%;">
+<p>With write rights, you can assign the status "erasable" to projects. Please note: The status "erasable" has been removed. Therefore, this right is currently without effect.</p>
+</td>
+</tr>
+<tr style="height: 134px;">
+<td style="height: 134px; width: 25.1429%;">
+<p>export_with_lfdn</p>
+</td>
+<td style="height: 134px; width: 74.7143%;">
+<p>With read rights, you can access and use the combined export of participant and result data in personalized surveys. You can also view the combined data in the menu "Statistics"-&gt;"Detail view". Furthermore, when exporting the project, you may optionally include the result data, e.g. if a project needs to be moved to another EFS installation.</p>
+</td>
+</tr>
+<tr style="height: 44px;">
+<td style="height: 44px; width: 25.1429%;">
+<p>import_project</p>
+</td>
+<td style="height: 44px; width: 74.7143%;">
+<p>With read rights, you can import projects. Please note: write rights for cr_project are a necessary requirement.</p>
+</td>
+</tr>
+<tr style="height: 89px;">
+<td style="height: 89px; width: 25.1429%;">
+<p>monitor_mode</p>
+</td>
+<td style="height: 89px; width: 74.7143%;">
+<p>With read rights, you can use the monitoring mode in personalized surveys, panel surveys and master data surveys. Please mind that the monitoring feature is deprecated in 10.0 and will be dropped in the next release.</p>
+</td>
+</tr

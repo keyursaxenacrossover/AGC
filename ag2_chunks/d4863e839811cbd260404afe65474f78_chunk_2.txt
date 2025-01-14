@@ -1,0 +1,52 @@
+<ul>
+<li>PS: Requests for changes or enhancements to functionality, such as new features or additional custom modules, should always be routed to PS.</li>
+</ul>
+<li>Master Data Handling:</li>
+<ul>
+<li>PS: If the issue is related to the import/export or configuration of master data that involves custom handling, it's a PS task.</li>
+<li>CS: If it's a problem with the usage of master data within a survey that is functioning otherwise, route to CS.</li>
+</ul>
+</ul>
+<p>Examples of Ticket Routing</p>
+<ul>
+<li>Ticket Example 1: "The survey did not generate after the latest dictionary upload."</li>
+<ul>
+<li>Route to PS: This is a survey generation issue linked to the dictionary conversion process.</li>
+</ul>
+<li>Ticket Example 2: "Panelists are not routed correctly based on their master data in the survey."</li>
+<ul>
+<li>Route to CS: This is an issue with survey routing logic and does not involve custom modules or dictionary imports.</li>
+</ul>
+<li>Ticket Example 3: "We did not receive the expected export files on our SFTP server."</li>
+<ul>
+<li>Route to PS: This is an export-related issue likely linked to the custom SFTP configuration or custom export processes.</li>
+</ul>
+<li>Ticket Example 4: "The survey is active, but users report that one of the questions isn't displaying correctly."</li>
+<ul>
+<li>Route to CS: Since the survey is already active, this falls under standard survey functionality issues.</li>
+</ul>
+</ul>
+<h1 id="h_01J5QGN28P6HMT6BG5D1A2DJJ3">Summary</h1>
+<p>Proper ticket routing between CS and PS is critical for efficient support and maintaining service quality. Use this guide to help you make informed decisions and ensure that tickets are correctly allocated based on the type and scope of the issue.</p>
+<p> </p>
+<h2 id="h_01J5QGN28P4AMJBQCSA5EQ38FF">FAQ</h2>
+<ol>
+<li>
+<strong>What are the dictionary files used by Kantar?</strong><br>The dictionary is a set of CSV files that dictate the structure and content of the surveys.<br>It is generated internally by Kantar's systems and exported to a shared location (SFTP server).<br>The EFS system uses a specialized converter module to process these dictionaries and generate surveys.</li>
+</ol> export files on our SFTP server."</li>
+<ul>
+<li>Route to PS: This is an export-related issue likely linked to the custom SFTP configuration or custom export processes.</li>
+</ul>
+<li>Ticket Example 4: "The survey is active, but users report that one of the questions isn't displaying correctly."</li>
+<ul>
+<li>Route to CS: Since the survey is already active, this falls under standard survey functionality issues.</li>
+</ul>
+</ul>
+<h1 id="h_01J5QGN28P6HMT6BG5D1A2DJJ3">Summary</h1>
+<p>Proper ticket routing between CS and PS is critical for efficient support and maintaining service quality. Use this guide to help you make informed decisions and ensure that tickets are correctly allocated based on the type and scope of the issue.</p>
+<p> </p>
+<h2 id="h_01J5QGN28P4AMJBQCSA5EQ38FF">FAQ</h2>
+<ol>
+<li>
+<strong>What are the dictionary files used by Kantar?</strong><br>The dictionary is a set of CSV files that dictate the structure and content of the surveys.<br>It is generated internally by Kantar's systems and exported to a shared location (SFTP server).<br>The EFS system uses a specialized converter module to process these dictionaries and generate surveys.</li>
+</ol>

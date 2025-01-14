@@ -1,0 +1,32 @@
+wysiwyg-text-align-justify">You have the option of targeting individual records for cleaning or for restoring the original state. To do so, tick the respective checkbox in the “Execute data cleaning” or “Recover data” column, and confirm by clicking on <strong>Save</strong>.</p>
+<h3 id="identifying-cleaned-data-in-the-export-record" class="wysiwyg-text-align-justify"><strong>Identifying Cleaned Data in the Export Record</strong></h3>
+<p class="wysiwyg-text-align-justify">The export record provides information if an individual record was cleaned: It is stored in the variable <em>cleaned </em>(labeling in the SPSS export record: “datacleaning”) which can have the following properties:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>0 = uncleaned data records and records of incomplete interviews which are excluded from the cleaning process</p>
+</li>
+<li>
+<p>1 = cleaned</p>
+</li>
+<li>
+<p>2 = checked but did not require cleaning</p>
+</li>
+</ul>
+<h2 id="quality-correction" class="wysiwyg-text-align-justify"><strong>Quality Correction</strong></h2>
+<p class="wysiwyg-text-align-justify">The conscientiousness with which survey participants fill in questionnaires is critical for the quality of the results of online surveys. The results from survey participants who merely click very quickly through the questionnaire, for example, to get a quick overview of the survey theme or on completion to participate in a prize draw, are of little value for further analysis in the end. The quality correction program helps you to recognize participants who simply “clicked through” by their answer behavior, to mark these data records, and if desired to delete them.</p>
+<p class="wysiwyg-text-align-justify"><strong>Response times as quality criterion</strong></p>
+<p class="wysiwyg-text-align-justify">The response times of a user are the key criteria needed for indexing the quality of survey participants. The time taken by each participant to complete a particular page of a survey can be calculated. First of all an index is formed for each participant that gives information on his mean processing time for a questionnaire page. Please note here: The time required by a participant to complete an entire survey is not a factor in the calculation. Depending on the direction of the questionnaire the number of pages that the participant sees can also vary tremendously.</p>
+<p class="wysiwyg-text-align-justify">Subsequently, a separate calculation for each page is made, which shows where the survey participant is about the processing time of the media. The median survey time of 100 participants corresponds to the average survey duration of the 50th and the 51st survey participants when these have been sorted by survey time.</p>
+<p class="wysiwyg-text-align-justify"><strong>Determining the quality index for individual users</strong></p>
+<p class="wysiwyg-text-align-justify">To determine the “quality” of a participant in a survey, his processing time is set about the average processing time of the entire sample. The relationship can be expressed as a number that is stored in the variable “quality”. For example, a value of 0.5 signifies that the corresponding user required exactly the average time for processing the questionnaire pages. A value of 0.25 signifies that the respondent needed only half as long as the average processing time.</p>
+<h3 id="triggering-quality-correction" class="wysiwyg-text-align-justify"><strong>Triggering Quality Correction</strong></h3>
+<p class="wysiwyg-text-align-justify">You can start the program that calculates the quality index under <strong>Projects</strong> → {Selected project} → <strong>Statistics</strong> → <strong>Quality correction </strong>by clicking on the button <strong>Execute</strong>. It does not make any changes to the actual survey data, rather it expands the data record to include the variable “quality”.</p>
+<p class="wysiwyg-text-align-justify">Quality correction should not be triggered when large surveys are being conducted simultaneously in the installation.</p>
+<h3 id="viewing-the-quality-index-in-the-export-data-record" class="wysiwyg-text-align-justify"><strong>Viewing the Quality Index in the Export Data Record</strong></h3>
+<p class="wysiwyg-text-align-justify">The quality index of a participant will be stored in the variable “quality”. This is contained within the export data record, and therefore you can identify the data records of participants with critical values and where necessary delete them before making an evaluation.</p>
+<h2 id="general-tips-and-tricks-on-exporting-data" class="wysiwyg-text-align-justify"><strong>General Tips and Tricks on Exporting Data</strong></h2>
+<p class="wysiwyg-text-align-justify">The following applies to all exports:</p>
+<p class="wysiwyg-text-align-justify"><strong>Export duration</strong></p>
+<p class="wysiwyg-text-align-justify">The exported data are not created in advance, they are created according to the settings you made the moment you click on the <strong>Export </strong>button. Depending on the desired content, selected format, and number of records, the export can therefore take a considerable amount of time.</p>
+<p class="wysiwyg-text-align-justify"><strong>First, save, then open the file!</strong></p>
+<p class="wysiwyg-text-align-justify">Once you

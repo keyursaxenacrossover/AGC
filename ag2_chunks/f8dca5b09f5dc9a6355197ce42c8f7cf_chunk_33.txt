@@ -1,0 +1,60 @@
+ class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="29915">On the destination installation, switch to the <strong data-renderer-mark="true">Options</strong> → <strong data-renderer-mark="true">ACL rights</strong> →<strong data-renderer-mark="true"> Rights templates</strong> menu and click on the<strong data-renderer-mark="true"> Import ACL rights template</strong> button.</p>
+</li>
+<li>
+<p data-renderer-start-pos="30062">Enter name and title.</p>
+</li>
+<li>
+<p data-renderer-start-pos="30087">Identify the desired file on your PC.</p>
+</li>
+<li>
+<p data-renderer-start-pos="30128">Confirm by clicking on<strong data-renderer-mark="true"> Import</strong>.</p>
+</li>
+<li>
+<p data-renderer-start-pos="30162">The rights template will be imported.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="30203">In the <strong data-renderer-mark="true">Assign rights templates</strong> menu, you can assign the template to a team on the target installation.</p>
+<h3 id="Configuring-access-options-precisely-using-ACL-and-object-rights" class="wysiwyg-text-align-justify" data-renderer-start-pos="30307"><strong data-renderer-mark="true">Configuring access options precisely using ACL and object rights</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="30373">Which information and functions are accessible to a user team is controlled by a combination of two types of rights:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="30493">ACL rights: ACL rights (“Access Control List”) define whether someone is entitled to view certain information or perform certain functions.</p>
+<ul class="ak-ul" data-indent-level="2">
+<li>
+<p data-renderer-start-pos="30636">ACL rights are granted to user teams.</p>
+</li>
+<li>
+<p data-renderer-start-pos="30677">This is done in the user administration.</p>
+</li>
+<li>
+<p data-renderer-start-pos="30721">Each ACL right includes read and write rights. Write rights usually activate more powerful functions than read rights.</p>
+</li>
+</ul>
+</li>
+<li>
+<p data-renderer-start-pos="30845">Object rights: EFS allows for the precise control of the access to a number of individual objects. An object may be a particular project, a layout template, or a set of survey messages. With object rights you can define which team is entitled to view, use, or edit the respective object.</p>
+<ul class="ak-ul" data-indent-level="2">
+<li>
+<p data-renderer-start-pos="31136">Object rights are also granted to user teams.</p>
+</li>
+<li>
+<p data-renderer-start-pos="31185">Object rights are not assigned in the user administration, but directly via the respective object. For example, object rights for projects are assigned via the project list. The dialog for assigning rights is usually called up via a <strong data-renderer-mark="true">Rights </strong>link or a <strong data-renderer-mark="true">Rights</strong> icon.</p>
+</li>
+<li>
+<p data-renderer-start-pos="31450">Object rights also include read and write rights. Read rights usually grant passive access to information, while write rights permit the active use of functions</p>
+</li>
+</ul>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863" class="wysiwyg-text-align-justify">FAQ</h1>
+<h3 id="faq_1" class="wysiwyg-text-align-justify">How do I access the Platform Cockpit?</h3>
+<p class="wysiwyg-text-align-justify">To access the Platform Cockpit, navigate to Options → Platform Cockpit. You need read rights for "platform_cockpit" to view this menu.</p>
+<h3 id="faq_2" class="wysiwyg-text-align-justify">How can I manage the Do-Not-Email list?</h3>
+<p class="wysiwyg-text-align-justify">You can manage the Do-Not-Email list by navigating to System → Options → Mail queue → Do-not-Email list. You can add emails to the blacklist through import or use web services for automated management.</p>
+<h3 id="faq_3" class="wysiwyg-text-align-justify">How do I configure user access rights in EFS?</h3>
+<p class="wysiwyg-text-align-justify">User access rights in EFS are configured using a combination of ACL rights and object rights. ACL rights are assigned to user teams in the user administration, while object rights are assigned directly to specific objects like projects or layout templates.</p>
+<p class="wysiwyg-text-align-justify"><strong>Tags: </strong>EFS, Options, Platform Cockpit, System Settings, Mail Queue, SMS Admin, File Exchange, ACL Rights, User Management</p>
+</article>

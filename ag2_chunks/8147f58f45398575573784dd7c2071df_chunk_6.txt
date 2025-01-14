@@ -1,0 +1,29 @@
+JSON” in the respective settings. All other tabs can be left to default values.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014884173330"><br>To import all available EFS Service-Layer REST services, you will need to download the RAML file (https://my-efs/service/?handler=rest&amp;raml=1&amp;token=1234567890) and import it as a collection in Postman.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014884167442"><br>The collections tab will now have a list of all available services on the EFS installation.</p>
+<p>Please note, that some complex EFS rest services cause Postman to reject the RAML file. In that case we recommend creating the requests individually.</p>
+<div class="ak-editor-panel cc-tqp4ke" data-panel-type="info">
+<div class="ak-editor-panel__icon"> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h2 id="Filtering-results-with-conditions" data-renderer-start-pos="12721">Filtering results with conditions</h2>
+<p data-renderer-start-pos="12756">Requests with “ByCriteria” in their name have the possibility to filter results by condition. These conditions can be simple one to one comparisons and complex requests joined by an operator. All examples are based on the <em data-renderer-mark="true">POST /panel/circles/listByCondition </em>REST service, which returns a list of Portals groups (circles).</p>
+<h4 id="Comparison" data-renderer-start-pos="13079">Comparison</h4>
+<p data-renderer-start-pos="13091">This is the easiest request, it matches the items based on a single property of the item, in this case the circleType. Please note, that <code class="code cc-1o5d2cw" data-renderer-mark="true">condition</code> must be replaced with the string <code class="code cc-1o5d2cw" data-renderer-mark="true">logicalCondition</code> for some services.</p>
+<pre><code class="language-text">{
+    "condition": {
+        "comparison": {
+            "variable": "circleType",
+            "operator": "EQUAL",
+            "value": "COMPANY_MANAGED"
+        }
+    }
+}</code></pre>
+<p data-renderer-start-pos="13091">Possible <code class="code cc-1o5d2cw" data-renderer-mark="true">operator</code> values for comparison: <code class="code cc-1o5d2cw" data-renderer-mark="true">EQUAL, UNEQUAL, LESS_EQUAL, LESS_THAN, GREATER_EQUAL, GREATER_THAN, CONTAINS</code>. Greater/smaller operators should only be applied to numeric values.</p>
+<h4 id="InComparison" data-renderer-start-pos="13670">InComparison</h4>
+<p data-renderer-start-pos="13684">This request allows comparison of a property to a list of acceptable values.</p>
+<div class="code-block  cc-15qwbrk">
+<div class="code-block  cc-15qwbrk" style="margin: 0.75rem 0px 0px; padding: 0px; tab-size: 4; background-color: var(--ds-surface-raised, #f4f5f7); clear: both; max-width: 100%; display: block; position: relative; border-radius: var(--ds-border-radius-100, 3px); overflow-wrap: normal; color: #172b4d; font-family: -apple-system, BlinkMacSystemFont, ' Segoe UI' , Roboto, Oxygen, Ubuntu, ' Fira Sans' , ' Droid Sans' , ' Helvetica Neue' , sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: pre-wrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><span class="prismjs cc-1slwsjo" style="display: flex; line-height: 1.5rem; overflow-x: auto; white-space: pre; direction: ltr; font-size: 0.875rem; font-family: SFMono-Medium, ' SF Mono' , ' Segoe UI Mono' , ' Roboto Mono' , ' Ubuntu Mono' , Menlo, Consolas, Courier, monospace; font-weight: normal; background-color: var(--ds--code--bg-color,var(--ds-background-neutral, #f4f5f7)); color: var(--ds-text, #172b4d); border-style: none; border-radius: var(--ds-border-radius, 3px); background-image: linear-gradient(    to right,    var(--ds-background-neutral, #F4F5F7) var(--ds-space-300, 24px),    transparent var(--ds-space-300, 24px)  ),linear-gradient(    to right,    var(--ds-surface-raised, transparent) var(--ds-space-300, 24px),    transparent var(--ds-space-300, 24px)  ),linear-gradient

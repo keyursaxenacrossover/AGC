@@ -1,0 +1,33 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1082327041">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1082327041</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">How is authorization handled / How do users get access to an installation?</a></li>
+<ul>
+<li><a href="#header-3">How/When can Tivian support employees access installations using Tivian Access ?</a></li>
+<ul>
+<li><a href="#header-5">Changes on EFS / Panel Administration / Portals</a></li>
+<ul>
+<li><a href="#header-7">See MVP</a></li>
+</ul>
+</ul>
+<li><a href="#header-10">Changes in ESS</a></li>
+<ul>
+<li><a href="#header-12">Is there a self registration for users? (either Portals or EFS Admin)</a></li>
+<ul>
+<li><a href="#header-14">Are there existing features in EFS or Portals that change after enabling Tivian Access?</a></li>
+</ul>
+</ul>
+</ul>
+</ul>
+</ul><ac:rich-text-body><ac:parameter ac:name="minLevel">4</ac:parameter><ac:parameter ac:name="maxLevel">4</ac:parameter><ac:parameter ac:name="indent">0</ac:parameter><ac:parameter ac:name="absoluteUrl">true</ac:parameter></ac:rich-text-body><ac:task-list>
+<ac:task>
+<ac:task-id>4</ac:task-id>
+<ac:task-status>incomplete</ac:task-status>
+<ac:task-body><span class="placeholder-inline-tasks"><ac:link><ri:user ri:userkey="8a7f808a6bf51604016bf54f370100dc"></ri:user></ac:link> and <ac:link><ri:user ri:userkey="8a7f80856412af8a016412fb8b10003f"></ri:user></ac:link> comming soon</span></ac:task-body>
+</ac:task>
+</ac:task-list><h1 id="header-1"><strong>How is authorization handled / How do users get access to an installation?</strong></h1><p>Authorization will be handled by the respective applications. Also see <ac:link><ri:page ri:content-title="Access and Authorization with IAM module" ri:version-at-save="2"></ri:page><ac:link-body>Access and Authorization with IAM module</ac:link-body></ac:link></p><p>E.g: For EFS Admin that means that users still have to be added as an admin user in the installation before a user can login via Tivian Access (Okta) and gain access.</p><h2 id="header-3"><strong>How/When can Tivian support employees access installations using Tivian Access ?</strong></h2><p>Since the Tivian AD will be connected to Okta, every support employee will have the possibility to sign in with Okta.</p><p>The access to an installation depends on two factors:</p><ul>
+<li><p>Is Tivian Access enabled on the installation (aka: Did the customer buy Tivian Access)</p></li>
+<li><p>Is an admin user present for the support employee (since authorization will still be handled in the application)</p></li>
+</ul><p>If both factors are given, the access to the installation should be granted</p><h3 id="header-5"><strong>Changes on EFS / Panel Administration / Portals </strong></h3><h4 id="header-7">See <ac:link ac:card-appearance="inline"><ri:page ri:content-title="MVP" ri:version-at-save="29"></ri:page><ac:link-body>MVP</ac:link-body></ac:link> </h4><p></p><h2 id="header-10"><strong>Changes in ESS</strong></h2><p></p><p><strong>Can I still manage the password for Panelists in EFS?</strong></p><p>Yes, adding / editing / resetting password is still possible for panelists, but will only have impact on Panelists using Panelwebsite. Passwords for Admin users and Panelists using Portals are handled within the IdP </p><p></p><h3 id="header-12"><strong>Is there a self registration for users? (either Portals or EFS Admin)</strong></h3><p>No, only authentication is handled when enabling Tivian Access. Registration is still handled in the respective apps.</p><p></p><h4 id="header-14"><strong>Are there existing features in EFS or Portals that change after enabling Tivian Access?</strong></h4><p>Yes, especially changing the email-addresses of Panelists and EFS Admin users is disabled. But also changing the password of an EFS Admin user in EFS is not necessary anymore. Changing the password of Panelists will only affect Panelwebsite.</p>

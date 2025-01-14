@@ -1,0 +1,62 @@
+ and delete data, the actual value in the quota statistics will be updated automatically. Only when executing a reset without deleting data will the actual value not be updated automatically as there have been results accumulated which are displayed e. g. in the detailed view of the survey statistics.</p>
+</li>
+<li>
+<p>If you check the project using a tester account for which a quota is set only once but which generates entries for the allocation every time you click through the project, you can use the update function to undo this effect.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">In the course of recalculation, the existing quota results will be irretrievably overwritten. Recalculation should not be triggered during an ongoing field phase. The following takes place during recalculation:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>All quotas are reset to zero allocation and opened.</p>
+</li>
+<li>
+<p>After this, the quotas are checked individually for each participant. In larger projects (i.e., many quotas and/or many participants) this process may take quite a while.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">During recalculation new participants may enter into the project and additionally fill up quotas where they would normally be rejected. At the same time it may happen that participants who have already completed the questionnaire are subsequently screened out by quota.</p>
+<h3 id="triggering-recalculation" class="wysiwyg-text-align-justify">Triggering recalculation</h3>
+<p class="wysiwyg-text-align-justify">Recalculation is triggered by clicking on the <strong>Recalculate quota</strong> button on the<strong> Quota Statistics</strong> tab in the<strong> Quotas</strong> menu.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="basics" class="wysiwyg-text-align-justify">Basics</h2>
+<h3 id="specifications" class="wysiwyg-text-align-justify">Specifications</h3>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The following variables can be used in the quota conditions: Project variables, userdefined variables and GET parameters, various system data and, depending on the type of project, participant data, address data of panelists, all master data and tracking variables in the panel.</p>
+</li>
+<li>
+<p>A wide range of configuration options allows you to adjust the quota process to your requirements. For example, it is up to you to decide whether participants shall be excluded right from the start of the survey if they are no longer required, or you can have the participants allocated to all matching open quotas instead of only one quota.</p>
+</li>
+<li>
+<p>In particular, the quota function is able to react dynamically to allocation figures. This can be used to fill up especially those quotas with lower allocation figures.</p>
+</li>
+<li>
+<p>Participants that are no longer required may be screened out using filters.</p>
+</li>
+<li>
+<p>The runtime check covers errors that may have occurred in quota while processing the survey.</p>
+</li>
+<li>
+<p>Quota statistics and field reports will always give you an up-to-date overview of the quota status.</p>
+</li>
+<li>
+<p>The ACL right <em>quotation_admin</em> allows to control access to the quotas. Read rights are required for accessing the quota statistics in the field report. Write rights are required for using the quotas.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The number and complexity of the quotas in a project affects the performance. Therefore, it is recommended to use not more than 300 quotas per project.</p>
+<h3 id="work-steps-for-creating-a-quota" class="wysiwyg-text-align-justify">Work Steps for Creating a Quota</h3>
+<p class="wysiwyg-text-align-justify">Plan the quota. Create your quota schedule and calculate the target values for the various quota cells. Target values are always absolute numbers. Define the exact sequence of the quota process. Please bear in mind that values for all variables used in the quota conditions must already exist when you perform the quota check.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Enter the questionnaire before starting with the actual creation of the quotas. Participants should also already exist or, in the case of a panel survey, the sample should already be drawn.</p>
+</li>
+<li>
+<p>Define the quotas in the <strong>Survey menu</strong> → <strong>Questionnaire editor</strong> → <strong>Quotas</strong> menu.</p>
+</li>
+<li>
+<p>Specify the sequence of the quota process on the<strong> Configuration</strong> tab.</p>
+</li>
+<li>
+<p>If you make use of the possibility of excluding participants from the survey due to external quotas, it may be the case that respondents cannot open the questionnaire in the first place. In the Project properties-&gt;Survey messages menu, adapt the text of the message these respondents will receive when trying to log in.</p>
+</li>
+<li>
+<p>If you have defined internal quotas (i.e. quotas whose conditions contain variables that are determined only in the course of the survey), you have to specify after which questionnaire page the checking for these quotas is to be performed. To do so, select an appropriate page in the <strong>Questionnaire editor</strong>, open its <strong>Properties</strong> menu, and select the option “Check internal quotas”.</p

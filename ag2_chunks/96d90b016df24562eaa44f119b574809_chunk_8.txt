@@ -1,0 +1,45 @@
+h2>
+<p id="h_01J3N2HWAAFQM3F043GN7AC71C" class="wysiwyg-text-align-left"><strong>Instructions for project managers: Preparing the </strong><em><strong>Action Planner</strong></em><strong> and </strong><em><strong>CLF</strong></em></p>
+<p>In the following, you will get to know the typical process when preparing the <em>Action Planner</em> and implementing<em> CLF</em> in your<em> Employee</em> project.</p>
+<h3 id="h_01J3N2HWAAGXVWJ54KBSQ22MM4"><strong>Creating an organizational structure</strong></h3>
+<p>Creating an organizational structure is possible in two ways:</p>
+<ul>
+<li>
+<p>by initially adding<em> Org Processor</em> users and their roles to the <em>Org Processor</em> and subsequently synchronizing these users to a panel group.</p>
+</li>
+<li>
+<p>by initially adding panel groups to People and subsequently synchronizing these groups to the Employee project.</p>
+</li>
+</ul>
+<p>When adding data initially, we recommend adding users and their roles to the <em>Org Processor</em>, then synchronizing these data to the panel and performing the central data management in <em>People</em>.</p>
+<p><strong>Creating and applying roles</strong></p>
+<p>You can either apply the default standard roles or create new roles in order to assign them to users.</p>
+<p>Under <strong>Project</strong> → {Selected project} → <strong>Process configuration</strong> on the tab <strong>Roles</strong>, you see four pre-defined standard roles (Owner, Superior, Report recipient and Read-only user) holding different activated rights. By clicking the paragraph icon of a role, you reach the Rights Administration displaying the rights of each role. For tasks and <em>CLF</em>, the following rights under the section <strong>Follow-Up - Action Planner</strong> are important:</p>
+<ul>
+<li>
+<p><em>comment_create</em>: Right to add new comments to tasks and edit or delete own comments</p>
+</li>
+<li>
+<p><em>comment_moderate</em>: Right to edit or delete any comment in relation to tasks</p>
+</li>
+<li>
+<p><em>workflow_use</em>: Right to see and use workflows</p>
+</li>
+<li>
+<p><em>view_survey_result</em>: Right to access survey results</p>
+</li>
+</ul>
+<p>You may adapt the rights of the standard roles in the Rights administration according to your needs and use case. By clicking the button <strong>Create role</strong>, you can create new additional roles with certain rights.</p>
+<p>When creating new roles, the respective labels of roles, e.g. “Owner”, can be identical, making it hard to distinguish between different Owners with identical names. However, the bracketed abbreviation behind the label has to be unique.</p>
+<p><strong>Creating users and assigning them to their organizational unit</strong></p>
+<p>Under <strong>Org Processor</strong> → <strong>Org processor users</strong>, you can import already built organizational structures or create Org processor users as well as their assignments to units manually.</p>
+<p><strong>Create new master data</strong></p>
+<p>For the synchronization of Org Processor users and panelists, you need the use of master data. You can either use existing master data or create new ones. Using master data and subsequently synchronizing them is recommended. This way, you don‘t have to manage these user data on both sides - in the Org Processor and in the panel. For creating new master data, go to<strong> People → Master data →</strong> <strong>Create master data</strong>.</p>
+<p><strong>Create a panel group through </strong><em><strong>Employee</strong></em><strong> Import</strong></p>
+<p>Under <strong>People</strong> → <strong>Panelist administration</strong> → <strong>Panelists import from Employee project</strong>, a new panel group has to be created in the context of the project setup.</p>
+<p><strong>Setting up the synchronization</strong></p>
+<p>To transfer the data of the panel groups to the organizational structure, the <em>Employee</em> synchronization is available. To set up the synchronization, go to<strong> People → Groups → </strong>[Select group] →<strong> Employee-Sync</strong> → <strong>Add Employee-Sync job</strong>.</p>
+<p>Here, the following information is required: select your<em> Employee</em> project as well as the master-data variable storing the respective assignment of panelists to their roles and unit. Roles and units are quoted in the following format: [ROLE ABBREVIATION]:[metaname(s) of organizational unit(s)]. Different roles are separated by semicolons, and different units by commas. Example: OWN:unit1; SUP:unit2, unit3, unit4.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017112885394" alt="image2019-5-15_11-31-12.png"></p>
+<p>For a successful synchronization, the panelists of the group need a master data variable with at least one role and unit assignment.</p>
+<p>The synchronization of each Employee project runs once a day. In case you want to make changes to Org Processor users, you will therefore have

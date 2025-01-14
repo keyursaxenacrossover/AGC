@@ -1,0 +1,37 @@
+ and has started at least 2 of these surveys. Proceed as follows:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="26911">From the <strong data-renderer-mark="true">Variable</strong> drop-down menu, select <strong data-renderer-mark="true">track_num_invited1 (Number of invitations [Disposition code 12] (last 4 weeks))</strong> and under <strong data-renderer-mark="true">Condition</strong>, select <strong data-renderer-mark="true">greater</strong>. Then enter <strong data-renderer-mark="true">2</strong> under <strong data-renderer-mark="true">Value</strong>.</p>
+</li>
+<li>
+<p data-renderer-start-pos="27098">Click on <strong data-renderer-mark="true">Save</strong>.</p>
+</li>
+<li>
+<p class="wysiwyg-text-align-left" data-renderer-start-pos="27117">In the next line, select the option <strong data-renderer-mark="true">track_num_started1 (Number of survey starts [Disposition code 21,22] (last 4 weeks))</strong> from the <strong data-renderer-mark="true">Variable</strong> drop-down menu and the option <strong data-renderer-mark="true">greater</strong> under <strong data-renderer-mark="true">Condition</strong>. Then enter <strong data-renderer-mark="true">1</strong> under <strong data-renderer-mark="true">Value</strong>.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014859777298"></p>
+</li>
+</ul>
+<div class="rich-media-item mediaSingleView-content-wrap image-center cc-1q73e46 wysiwyg-text-align-justify" data-layout="center" data-width="760" data-width-type="pixel" data-node-type="mediaSingle" data-renderer-start-pos="27340">
+<div class="cc-1jsl6if">
+<div class="cc-k4ngfq" data-mark-type="border" data-color="#091e4224" data-size="2">
+<div data-context-id="4149608460" data-type="file" data-node-type="media" data-width="1728" data-height="360" data-id="697be8d7-d0eb-4985-bc01-1e072af60030" data-collection="contentId-4149608460" data-file-name="file" data-file-size="1" data-file-mime-type="" data-alt="image-20240320-114538.png" data-renderer-start-pos="27341"> </div>
+</div>
+</div>
+</div>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="27343">As a condition for decreasing the PCI value, we will specify that panelists must have received at least 1 survey invitation in the last 4 weeks, but have not started any of them.</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="27523">To do this, follow the steps below:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="27562">In the <em data-renderer-mark="true">People</em> module, under <strong data-renderer-mark="true">Panel configuration &gt; PCI configuration</strong>, click <strong data-renderer-mark="true">Edit condition</strong> under <strong data-renderer-mark="true">Condition for decreasing the PCI value</strong>.</p>
+</li>
+<li>
+<p data-renderer-start-pos="27701">From the <strong data-renderer-mark="true">Variable</strong> drop-down menu, select the option <strong data-renderer-mark="true">track_num_invited1 (Number of invitations [Disposition code 21,22] (last 4 weeks))</strong> and under <strong data-renderer-mark="true">Condition</strong>, select the option <strong data-renderer-mark="true">greater</strong>. Then enter <strong data-renderer-mark="true">0</strong> under <strong data-renderer-mark="true">Value</strong>.</p>
+</li>
+<li>
+<p data-renderer-start-pos="27913">Click on <strong data-renderer-mark="true">Save</strong>.</p>
+</li>
+<li>
+<p class="wysiwyg-text-align-left" data-renderer-start-pos="27932">In the next line, select the option <strong data-renderer-mark="true">track_num_started1 (Number of survey starts [Disposition code 21,22] (last 4 weeks))</strong> from the <strong data-renderer-mark="true">Variable</strong> drop-down menu and the option <strong data-renderer-mark="true">equal</strong> under <strong data-renderer-mark="true">Condition</strong>. Then enter <strong data-renderer-mark="true">0</strong> under <strong data-renderer-mark="true">Value</strong>.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014859778834"></p>
+</li>
+</ul>
+<div class="rich-media-item mediaSingleView-content-wrap image-center cc-1q73e46 wysiwyg-text-align-justify" data-layout="center" data-width="760" data-width-type="pixel" data-node-type="mediaSingle" data-renderer-start-pos="28153">
+<div class="

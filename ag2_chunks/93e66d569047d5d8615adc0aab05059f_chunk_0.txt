@@ -1,0 +1,18 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3776446477">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3776446477</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<p>Please look at the brainstorming document <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Concepts and Brainstorming" ri:version-at-save="3"></ri:page><ac:link-body>Concepts and Brainstorming</ac:link-body></ac:link> first!</p><p></p><p>The questions here came up after the brainstorming session:</p><ul>
+<li><p>Will there be tenant subgroups? → example: Dividing the login solutions for external employees and internal employees, this is done in the Intervista case where external employees have to do MFA but internal employees not</p></li>
+<li><p>What exactly are the requirements of the custom SSO solutions? → We should try to meet as much as possible here</p></li>
+<li><p>How to handle alias domains? → Will the Identity Provider also have an alias domain? (from a Tech standpoint I (Markus) would recommend against doing that)</p></li>
+<li><p>Will there be a standard application for each tenant in case JIT provisioning should be supported?</p></li>
+</ul><p></p><ul>
+<li><p>What about existing solutions (especially customizings)? Do have to keep up with those solutions? Will we “downgrade” customers?</p></li>
+<li><p>Will JIT be supported? That would need some extra planning</p></li>
+</ul><p></p><ul><li><p>One panelist in multiple tenants → how does this use-case work? If we cannot tell the panelist that we are hosting that software than this panelist will be unique having one password for all installations. We cannot communicate to the user that he has to use the same password for different panels of different companies?!? → this prevents at least a dashboard and also a common realm setup of keycloak and Okta and others → how to handle this?</p></li></ul> internal employees, this is done in the Intervista case where external employees have to do MFA but internal employees not</p></li>
+<li><p>What exactly are the requirements of the custom SSO solutions? → We should try to meet as much as possible here</p></li>
+<li><p>How to handle alias domains? → Will the Identity Provider also have an alias domain? (from a Tech standpoint I (Markus) would recommend against doing that)</p></li>
+<li><p>Will there be a standard application for each tenant in case JIT provisioning should be supported?</p></li>
+</ul><p></p><ul>
+<li><p>What about existing solutions (especially customizings)? Do have to keep up with those solutions? Will we “downgrade” customers?</p></li>
+<li><p>Will JIT be supported? That would need some extra planning</p></li>
+</ul><p></p><ul><li><p>One panelist in multiple tenants → how does this use-case work? If we cannot tell the panelist that we are hosting that software than this panelist will be unique having one password for all installations. We cannot communicate to the user that he has to use the same password for different panels of different companies?!? → this prevents at least a dashboard and also a common realm setup of keycloak and Okta and others → how to handle this?</p></li></ul>

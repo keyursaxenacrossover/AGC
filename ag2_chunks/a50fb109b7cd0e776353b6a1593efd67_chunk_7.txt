@@ -1,0 +1,70 @@
+>
+</li>
+<li class="wysiwyg-text-align-justify">
+<p>Select the appropriate character set.</p>
+</li>
+<li class="wysiwyg-text-align-justify">
+<p>Use the <strong>Browse</strong> function to select the import file on your PC.</p>
+</li>
+<li class="wysiwyg-text-align-justify">
+<p>To start the import process click on <strong>Execute</strong>.</p>
+</li>
+<li class="wysiwyg-text-align-justify">
+<p>Specify which column of the import file contains the consecutive numbers of the participants (“lfdn”).</p>
+</li>
+<li class="wysiwyg-text-align-justify">
+<p>Assign the appropriate data types to the imported variables.</p>
+<ul>
+<li>
+<p>Code (integer): This data type should only be selected if the values of the variables are as suitable for calculation as are the codes of <em>EFS</em>. Upon<br>completion of the import, the values will be available for calculations in <em>EFS Reporting+</em>.</p>
+</li>
+<li>
+<p>Text: The values will be stored in the database as strings, i.e., they will be displayed as open-ended answers and will not be available for crossbreaks, calculations, etc.</p>
+</li>
+</ul>
+</li>
+<li class="wysiwyg-text-align-justify">
+<p>Confirm by clicking on <strong>Execute</strong>.</p>
+</li>
+<li class="wysiwyg-text-align-justify">
+<p>The assignment will be executed.</p>
+<ul>
+<li>
+<p>If the system reports that data rows cannot be assigned, it means that no data record was found for the values of the linking variable in those rows. Check whether the values of the linking variable have been entered properly.</p>
+</li>
+<li>
+<p>The message “Data type does not match” signals that a column contains text while it was selected for the “code” data type.</p>
+</li>
+</ul>
+</li>
+<li class="wysiwyg-text-align-justify">
+<p>Upon clicking on<strong> Import</strong>, the new variables will be created and the data uploaded.</p>
+</li>
+<li>
+<p class="wysiwyg-text-align-justify">You will find the external data on the <strong>External</strong> tab.</p>
+</li>
+</ul>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="h_01HGKSMPRSQXGQXP4YJQXQXQ8M">How many reports can I create per project?</h3>
+<p>You can create up to three reports per project in EFS Reporting+.</p>
+<h3 id="h_01HGKSMPRS2XGQXP4YJQXQXQ8M">Can I import external data after creating a report?</h3>
+<p>Yes, you can import external data at any time using the "Extras" → "Import external data" menu option.</p>
+<h3 id="h_01HGKSMPRSRXGQXP4YJQXQXQ8M">How often can I update my report data?</h3>
+<p>You can update report data manually as needed or set up automatic updates at specified intervals.</p>.</p>
+</li>
+</ul>
+</li>
+<li class="wysiwyg-text-align-justify">
+<p>Upon clicking on<strong> Import</strong>, the new variables will be created and the data uploaded.</p>
+</li>
+<li>
+<p class="wysiwyg-text-align-justify">You will find the external data on the <strong>External</strong> tab.</p>
+</li>
+</ul>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="h_01HGKSMPRSQXGQXP4YJQXQXQ8M">How many reports can I create per project?</h3>
+<p>You can create up to three reports per project in EFS Reporting+.</p>
+<h3 id="h_01HGKSMPRS2XGQXP4YJQXQXQ8M">Can I import external data after creating a report?</h3>
+<p>Yes, you can import external data at any time using the "Extras" → "Import external data" menu option.</p>
+<h3 id="h_01HGKSMPRSRXGQXP4YJQXQXQ8M">How often can I update my report data?</h3>
+<p>You can update report data manually as needed or set up automatic updates at specified intervals.</p>

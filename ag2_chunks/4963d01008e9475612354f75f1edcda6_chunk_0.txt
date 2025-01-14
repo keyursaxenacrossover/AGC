@@ -1,0 +1,41 @@
+<h1 id="h_01J6C3D7DFH4QESYEPVCZ8XZTY">Overview</h1>
+<p>This guide provides a comprehensive overview of the essential prerequisites and configurations required for setting up and managing Tivian applications. It is designed to assist administrators in ensuring that all necessary components are correctly configured for optimal application performance and user experience.</p>
+<p> </p>
+<ul>
+<li><a href="#h_01J6C34VCYRH4EWFYJFYYW963R">EFS Admin Configuration</a></li>
+<li><a href="#h_01J6C35SARP9V5ESNPRZPPZCBD">Data Voyager Configuration</a></li>
+<li><a href="#h_01J6C38Z47RHASSSFBY803MX04">Portals configuration</a></li>
+</ul>
+<p>Tivian Access uses Okta and is advertised with enhanced security. Thus every application has to use HTTPS. Tivian Access should not be enabled without HTTPS.</p>
+<p> </p>
+<h2 id="h_01J6C34VCYRH4EWFYJFYYW963R">EFS Admin Configuration</h2>
+<h3 id="header-1">Step 0: Whitelist</h3>
+<p>Take care that the Okta production address is whitelisted in our Proxy. Usually this should already be the case.</p>
+<h3 id="header-3">Step 1: Navigate to platform cockpit</h3>
+<p><em>System → Options → Plattform-Cockpit → System configuration</em></p>
+<h3 id="header-5">Step 2: Add IdentityAccessManager Module</h3>
+<p>The module IdentityAccessManager is not part of the default modules. It can be added when searching for “IdentityAccessManager”.</p>
+<p>The module depends on the modules “efs” and “survey” - they have to be added.</p>
+<p>In case Portals should be used for Tivian Access “panel“ and “portal” modules are also required and have to added.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013437724306" alt="module_setup.png"></p>
+<p> </p>
+<h3 id="header-6">Step 3: Configure IdentityAccessManager module</h3>
+<p><strong>Values:</strong></p>
+<p>see Module "IdentityAccessManager"</p>
+<p>also see General Tenant Setup and EFS Admin Setup and Authorization Server</p>
+<p><em><strong>iam_admin_bypass_login_route: </strong></em>A route that will be used for Tivian internal root users (leave at default)</p>
+<p><em><strong>iam_api_token</strong>:</em> The token created in the General Tenant Setup → KeyPass</p>
+<p><em><strong>iam_audience</strong>:</em> The audience that is configured in the Okta authorization server (Security → API → Authorization Servers)</p>
+<p><em><strong>iam_client_group_id: </strong></em>The ID of the groupd specified in Okta for that specific installation (Groups → ID in URL)</p>
+<p><em><strong>iam_client_id</strong>:</em> The ID of the created application in Okta for EFS Admin (Applications → Edit → General / KeyPass)</p>
+<p><em><strong>iam_client_secret</strong>:</em> The secret of the created application in Okta for EFS Admin (Applications → Edit → General / KeyPass)</p>
+<p><em><strong>iam_federated_domains</strong>:</em> domains that will be forwarded to the any IdP, see below (this option is important)</p>
+<p><em><strong>iam_idp_id: </strong></em>The identity provider ID that references the external identity provider (see below)</p>
+<p><em><strong>iam_panelist_sync:</strong></em> Adapt whether users should be synchronized and activated or not (see federated domains first)</p>
+<p><em><strong>iam_post_logout_redirect_url:</strong></em> &lt;domain and protocol&gt;/iam/admin/auth/logoutSuccess (technical domain, exept if the installation has a domain redirect from technical to an alias in place, then alias domain)</p>
+<p><em><strong>iam_proxy_url</strong>:</em> Ask IT second level support (most likely http://proxy:8080, exept AWS: <a href="http://squid.global-services.svc.cluster.local:8080">http://squid.global-services.svc.cluster.local:8080</a>) → <u>also see below</u></p>
+<p><em><strong>iam_redirect_url</strong>:</em> &lt;domain and protocol&gt;/iam/admin/auth/login also see EFS Admin Setup (technical domain, exept if the installation has a domain redirect from technical to an alias in place, then alias domain)</p>
+<p><em><strong>iam_support_email</strong>:</em> The mail address of whoever will be answering questions regarding Tivian Access</p>
+<p><em><strong>iam_sso_modules:</strong></em> Adapt whether Tivian Access should be enabled for EFS Admin only or Portals too</p>
+<p><em><strong>iam_unique_customer_name:</strong></em> A unique name of the client that is also used for other Okta resources (see Naming conventions in Okta)</p>
+<p><em><strong>iam_user_group_id:</strong></em> This is the group ID of the client

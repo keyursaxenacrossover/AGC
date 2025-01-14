@@ -1,0 +1,21 @@
+<li>You can use Excel formulas to generate the queries, or work on a further script to generate the queries based on PID and installation name values. </li>
+</ul>
+<div class="dark bg-gray-950 contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative">
+<div class="overflow-y-auto p-4" dir="ltr">Eventually, concatenate the results of Query 1 and Queries 3 to the end to generate the report.<br><br>
+</div>
+<div class="overflow-y-auto p-4" dir="ltr">Check this sample set of queries used by the legacy team in a previous outage (not a complete list for Query 3 to End): <a href="https://docs.google.com/document/d/1WXLbmTjzvaL9NiMzPZWfGRLXCt-m2MUAVB0SKvVuGeE/edit">Commands ran for KANTAR affected user list</a>
+</div>
+</div>
+<h1 id="h_01J8M82T5J9TFBBC284BWHJAMC">Summary</h1>
+<p>By following these steps and running the provided queries, you can generate a report of suspended survey responders and their emails within a specific time interval. You will need to run Query 1 and Query 2 first to gather the necessary information, then proceed with Query 3 to extract email data for personalized surveys (PE) (results of Query 2).</p>
+<p> </p>
+<h2 id="h_01J8M82T5J12R90C5TPHXZBT30">FAQ</h2>
+<p><strong>Q: What tables are involved in generating the report?</strong><br>A: The tables involved include 'sample_data', 'panelists', 'project', and 'users_(PID+1)'.</p>
+<p><strong>Q: What is the 'suspended' status in the context of survey responses?</strong><br>A: The 'suspended' status refers to survey responses that are not complete, possibly due to an outage or error during navigation in the survey, but might also be due to a user not completing the survey.</p>
+<p><strong>Q: How are the email addresses for PE projects obtained?</strong><br>A: The email addresses for PE projects are obtained by running a series of SQL queries and then using Excel to join the email addresses.</p> id="h_01J8M82T5J9TFBBC284BWHJAMC">Summary</h1>
+<p>By following these steps and running the provided queries, you can generate a report of suspended survey responders and their emails within a specific time interval. You will need to run Query 1 and Query 2 first to gather the necessary information, then proceed with Query 3 to extract email data for personalized surveys (PE) (results of Query 2).</p>
+<p> </p>
+<h2 id="h_01J8M82T5J12R90C5TPHXZBT30">FAQ</h2>
+<p><strong>Q: What tables are involved in generating the report?</strong><br>A: The tables involved include 'sample_data', 'panelists', 'project', and 'users_(PID+1)'.</p>
+<p><strong>Q: What is the 'suspended' status in the context of survey responses?</strong><br>A: The 'suspended' status refers to survey responses that are not complete, possibly due to an outage or error during navigation in the survey, but might also be due to a user not completing the survey.</p>
+<p><strong>Q: How are the email addresses for PE projects obtained?</strong><br>A: The email addresses for PE projects are obtained by running a series of SQL queries and then using Excel to join the email addresses.</p>

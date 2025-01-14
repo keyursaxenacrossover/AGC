@@ -1,0 +1,24 @@
+(0,128,0);">'id' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$id<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">portal.update.after</span></pre></td>
+<td colspan="1">modules/portal/app/controllers/Api/Cms/V0m1/PortalsController.php:update()</td>
+<td colspan="1"><pre><span>Portal\Events\Controllers\Api\Cms\Portals\Update\After</span><span>([<br></span><span>    </span><span style="color: rgb(0,128,0);">'id'          </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$id</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'result'      </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$res</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'slug_name'    </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$updateData</span><span>-&gt;getSlug(),<br></span><span>    </span><span style="color: rgb(0,128,0);">'update_data' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$updateData<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">portal.user.status.getList.after</span></pre></td>
+<td colspan="1">modules/portal/app/controllers/Api/Client/V0m1/UserstatusController.php:getList()</td>
+<td colspan="1"><pre><span>Portal\Events\User\Status\GetList\After</span><span>([<br></span><span>    </span><span style="color: rgb(0,128,0);">'controller' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$this</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'response' </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$res<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">portal.mail.parser.prepareReplacements.after</span></pre></td>
+<td colspan="1">modules/portal/components/mail/parser.inc.php:prepareReplacements()</td>
+<td colspan="1"><pre><span>Portal\Events\Mail\Parser\PrepareReplacements\After</span><span>([<br></span><span>    </span><span style="color: rgb(0,128,0);">'component' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$this</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'replacements' </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$replacements</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'additional_recipient_info' </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$additionalRecipientInfo<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">portal.mail.parser.votingPageLinkHandler.prepareReplacementsAfter</span></pre></td>
+<td colspan="1">modules/portal/components/mail/parser/handler/votingpagelink.inc.php:prepareReplacements()</td>
+<td colspan="1"><pre><span>Portal\Events\Mail\Parser\VotingPageLinkHandler\</span><span>PrepareReplacementsAfter([<br></span><span>    </span><span style="color: rgb(0,128,0);">'component' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$this</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'replacements' </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$replacements</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'additional_recipient_info' </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$additionalRecipientInfo<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><

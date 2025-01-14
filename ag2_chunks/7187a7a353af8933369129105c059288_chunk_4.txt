@@ -1,0 +1,36 @@
+ starting into the field to remove any results created during the test phase. This is recommendable, in particular, if you have created real data records while testing an anonymous project or if you have used not only dedicated test accounts but true participant accounts when testing a personalized project.</p>
+</li>
+<li>
+<p>If superfluous questions or pages were created and deleted later, the variables of these questions or pages are kept in the database. When resetting prior to the field start, these superfluous variables are displayed and you can optionally delete them. They can also be used to restore data. In principle, it is no problem to keep superfluous variables in the database. But in big, complex projects this clean-up may improve the performance.</p>
+</li>
+<li>
+<p>If you have used the pretest feature, it is optionally possible to delete the comments as well.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Resetting in later stages</strong></p>
+<p class="wysiwyg-text-align-justify">As soon as the survey is in the field, i.e. as soon as the data collection starts, <strong>the Reset feature should in principle not be used anymore</strong>. In exceptional situations, it may be necessary: then, you must use the option “Keep result data collected so far”.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Should anybody use “Reset survey completely and delete all survey data collected so far” by mistake in a running project, all results would be lost irrevocably!</p>
+</li>
+<li>
+<p>Variables that already contain information should not be deleted under any circumstances, too.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If you need to reset the data records of specific participants, please use the dedicated actions in participant administration and the member list of samples.</p>
+<p class="wysiwyg-text-align-justify"><strong>Resetting test accounts in projects with participant administration or sample</strong></p>
+<p class="wysiwyg-text-align-justify">In personalized projects, the option “Delete test participants and their result data” can be used to selectively remove all participants flagged as testers and the respective result data. In panel surveys and master data surveys, survey status and result data of panelist test accounts will be reset, but the testers will remain in the sample.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863" class="wysiwyg-text-align-justify">FAQ</h1>
+<h3 id="faq_1" class="wysiwyg-text-align-justify">What should I do if test sessions are interrupted during a Project Test?</h3>
+<p class="wysiwyg-text-align-justify">If test sessions were interrupted, click on the "Evaluate all data records" link to identify the cause of the dropouts. Note that drop-outs don't always indicate problems; they might be due to fulfilled quotas or other intended screenouts.</p>
+<h3 id="faq_2" class="wysiwyg-text-align-justify">Can I use the Project Check for Responsive Layout?</h3>
+<p class="wysiwyg-text-align-justify">No, the Project Check and Check Layout functions are not optimized for the Responsive Layout. These checks are designed for the classic system layout.</p>
+<h3 id="faq_3" class="wysiwyg-text-align-justify">What happens to internal quotas after a test run?</h3>
+<p class="wysiwyg-text-align-justify">In projects with internal quotas, the test run will change the current allocation and status of the quota. To reset the allocation to zero, you must recompile the project after completing the test, selecting the "Reset survey completely" option.</p> id="h_01HGKSMPRSER9ENY5QWWRZZ863" class="wysiwyg-text-align-justify">FAQ</h1>
+<h3 id="faq_1" class="wysiwyg-text-align-justify">What should I do if test sessions are interrupted during a Project Test?</h3>
+<p class="wysiwyg-text-align-justify">If test sessions were interrupted, click on the "Evaluate all data records" link to identify the cause of the dropouts. Note that drop-outs don't always indicate problems; they might be due to fulfilled quotas or other intended screenouts.</p>
+<h3 id="faq_2" class="wysiwyg-text-align-justify">Can I use the Project Check for Responsive Layout?</h3>
+<p class="wysiwyg-text-align-justify">No, the Project Check and Check Layout functions are not optimized for the Responsive Layout. These checks are designed for the classic system layout.</p>
+<h3 id="faq_3" class="wysiwyg-text-align-justify">What happens to internal quotas after a test run?</h3>
+<p class="wysiwyg-text-align-justify">In projects with internal quotas, the test run will change the current allocation and status of the quota. To reset the allocation to zero, you must recompile the project after completing the test, selecting the "Reset survey completely" option.</p>

@@ -1,0 +1,80 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3723034649">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3723034649</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">Sign-In Widget, version 7.1.0</a></li>
+<ul>
+<li><a href="#header-3">Okta MFA Credential Provider for Windows, version 1.3.8</a></li>
+<ul>
+<li><a href="#header-5">Okta Provisioning agent, version 2.0.11</a></li>
+<ul>
+<li><a href="#header-7">Identity Governance</a></li>
+<li><a href="#header-8">Preview the token inline hook</a></li>
+<li><a href="#header-9">IE and Edge Legacy plugins</a></li>
+<li><a href="#header-10">Security enhancement of Okta Verify push notifications</a></li>
+<li><a href="#header-11">Certificate chain builder for Smart Card IdP</a></li>
+<li><a href="#header-12">Telephony usage report</a></li>
+<li><a href="#header-13">Single sign-out changes for custom domains</a></li>
+<li><a href="#header-14">People page improvements</a></li>
+<li><a href="#header-15">New System Log event</a></li>
+<li><a href="#header-16">Password history policy enforced in strict mode is GA in Preview</a></li>
+<li><a href="#header-17">PBKDF2 Hashing Algorithm support is GA in Preview</a></li>
+<li><a href="#header-18">Preview the token inline hook</a></li>
+<li><a href="#header-19">Revoke user sessions is GA in Preview</a></li>
+<li><a href="#header-20">Step-up authentication using ACR values is GA in Prod</a></li>
+<li><a href="#header-21">Redirect added to end of sign-in flow</a></li>
+<li><a href="#header-22">Loading Page Animation feature for the Brands API is GA in Production</a></li>
+</ul>
+</ul>
+</ul>
+</ul>
+</ul><p>See: <a data-card-appearance="inline" href="https://help.okta.com/en-us/Content/Topics/ReleaseNotes/archive/oce-relnotes-2022.htm">https://help.okta.com/en-us/Content/Topics/ReleaseNotes/archive/oce-relnotes-2022.htm</a> </p><table data-layout="wide" ac:local-id="5af16877-2bd6-4c01-bfa8-0cd012f1a930">
+<colgroup>
+<col style="width: 340.0px;">
+<col style="width: 340.0px;">
+</colgroup>
+<tbody>
+<tr>
+<td data-highlight-colour="#f4f5f7"><p><strong>Feature</strong></p></td>
+<td data-highlight-colour="#f4f5f7"><p><strong>Remark</strong></p></td>
+</tr>
+<tr>
+<td><h1 id="header-1">Sign-In Widget, version 7.1.0</h1></td>
+<td><p>No immediate change needed, but should be tackled in future <ac:emoticon ac:emoji-fallback=":warning:" ac:emoji-id="atlassian-warning" ac:emoji-shortname=":warning:" ac:name="warning"></ac:emoticon> </p></td>
+</tr>
+<tr>
+<td><h2 id="header-3">Okta MFA Credential Provider for Windows, version 1.3.8</h2></td>
+<td><p>not in use</p></td>
+</tr>
+<tr>
+<td><h3 id="header-5">Okta Provisioning agent, version 2.0.11</h3></td>
+<td><p>not in use</p></td>
+</tr>
+<tr>
+<td><h4 id="header-7">Identity Governance</h4></td>
+<td><p>not in our package</p></td>
+</tr>
+<tr>
+<td><h4 id="header-8">Preview the token inline hook</h4></td>
+<td><p>nice to have</p></td>
+</tr>
+<tr>
+<td><h4 id="header-9">IE and Edge Legacy plugins</h4></td>
+<td><p>not in use</p></td>
+</tr>
+<tr>
+<td><h4 id="header-10">Security enhancement of Okta Verify push notifications</h4></td>
+<td><p>not in use</p></td>
+</tr>
+<tr>
+<td><h4 id="header-11">Certificate chain builder for Smart Card IdP</h4></td>
+<td><p>not in use</p></td>
+</tr>
+<tr>
+<td><h4 id="header-12">Telephony usage report</h4></td>
+<td><p>not in use</p></td>
+</tr>
+<tr>
+<td><h4 id="header-13">Single sign-out changes for custom domains</h4></td>
+<td><p>irrelevant for our use cases; might be interesting for admins</p></

@@ -1,0 +1,72 @@
+4 id="defining-processing-rules" class="wysiwyg-text-align-justify"><strong>Defining processing rules</strong></h4>
+<p class="wysiwyg-text-align-justify">To configure the output rules for lists that have been placed within a loop, click on the<strong> title</strong> of the loop in the questionnaire view.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The additional option “Randomize list elements” is available for loops.</p>
+</li>
+<li>
+<p>Furthermore, you can specify a condition for canceling the loop. To open the condition editor, click the <strong>Edit</strong> link in the “Cancel loop, if” field.</p>
+</li>
+</ul>
+<h4 id="creating-a-looped-page" class="wysiwyg-text-align-justify"><strong>Creating a Looped Page</strong></h4>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Your next step is to create a looped page, i.e. a page that will be displayed repeatedly, displaying one element of the loop list after the other. The procedure for this is similar to that for creating a filtered questionnaire page: In the row containing the loop page, click on the<strong> Create new page or filter</strong> icon, enter “Favorite programs” as the title, choose the “Standard” page type, and then click on <strong>Submit</strong> to save. The page will now be created as a looped page.</p>
+</li>
+<li>
+<p>Create one or more questions on the page. Insert the question text, using the #TVchannel# wildcard.</p>
+</li>
+<li>
+<p>Enter any existing answer items as usual. (The example shown was simplified by choosing an open-ended question, for which this is not necessary.) Make any further required settings, and then click on <strong>Save</strong>.</p>
+</li>
+</ul>
+<h4 id="applications" class="wysiwyg-text-align-justify"><strong>Applications</strong></h4>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Creating a second looped page</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">You can create several looped pages for one loop.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Creating answer items on looped pages via further lists</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">As usual, you can manually enter answer items for pages in a loop. However, it is also possible to access a dynamic or static list.</p>
+<p class="wysiwyg-text-align-justify">For example, you can enter the answer items for the “Assessment by subject” page shown in the figure as with the standard procedure, but you can also retrieve the items from a list.</p>
+<p class="wysiwyg-text-align-justify">To do so, please proceed as follows:</p>
+<ol class="wysiwyg-text-align-justify" start="1">
+<li>
+<p>Create the “Assessment by subject” page.</p>
+</li>
+<li>
+<p>On this page, create a question of the “Standard matrix 1” type (type 311).</p>
+</li>
+<li>
+<p>Enter the question text. In doing so, replace the name of the TV channel with the wildcard of the list that is associated with the loop, i.e., in this example, the #TVchannel# wildcard of the “TV channels” list.</p>
+</li>
+<li>
+<p>Open the “Scale” area and enter the scale for the matrix. Then, click on <strong>Save</strong>.</p>
+</li>
+<li>
+<p>Open the “Dynamic answers” area and then click on the<strong> Select</strong> button.</p>
+</li>
+<li>
+<p>Choose the list you wish to use to determine the answer options, i.e., in this example, the “Subjects” list. Confirm by clicking on <strong>Save</strong>.</p>
+</li>
+<li>
+<p>Clicking on <strong>Back to the Editor</strong> will take you back to the question view. For the default answer options, tick the <strong>Delete</strong> checkbox.</p>
+</li>
+<li>
+<p>Complete the work process by clicking on <strong>Save</strong>.</p>
+</li>
+</ol>
+<ol class="wysiwyg-text-align-justify" start="1">
+<li>
+<p>Loop-in-Loop</p>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify">It is possible to nest up to three loops.</p>
+<p class="wysiwyg-text-align-justify">If you intend to evaluate the result data subsequently in SPSS, please note the following: The SPSS export’s variable length is limited to eight characters. With interleaved loops or loops with many pass-throughs, this length can be exceeded. In projects with complex loops before survey commencement, you should therefore check whether the data can be exported subsequently by SPSS as desired.</p>
+<h4 id="incorporating-wildcards-into-answer-options" class="wysiwyg-text-align-justify"><strong>Incorporating wildcards into answer options</strong></h4>
+<p class="wysiwyg-text-align-justify">You can incorporate the wildcard of the list controlling the loop both into the question text, as explained above, and into an answer option. Furthermore, you can incorporate several versions of the wildcards into the

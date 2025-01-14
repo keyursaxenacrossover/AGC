@@ -1,0 +1,46 @@
+_token [NEW VALUE -&gt; see KeePass for global customer token or create new with iam token user from KeePass]
+helpersEfsChangeConfig iam_client_group_id 00g348q2uzU7nmIgY417
+helpersEfsChangeConfig iam_client_id 0oa34n3lsm1b9KBX2417
+helpersEfsChangeConfig iam_client_secret [NEW VALUE -&gt; see OKTA]
+helpersEfsChangeConfig iam_user_group_id 00g2ku43q1jotSCdY417
+helpersEfsChangeConfig iam_well_known_url https://access.tivian.com/oauth2/aus2kl4zjijopeKSC417/.well-known/oauth-authorization-server</code></pre>
+</li>
+<li><p>using iam_change_config_jsm.sh script</p></li>
+</ol>
+</li>
+<li><p>create backup of iam_user_reference table and truncate it</p></li>
+<li><p>run migration script <strong>[6] first</strong>, then [1] and [3]</p></li>
+<li><pre><code class="language-text">php support/iam/migration.php
+
+[1] Admin user migration
+[2] Portal migration
+[3] Admin users activation
+[4] Portal ClientGroup migration
+[5] User ClientGroup migration
+[6] Convert admin user from questback.com to tivian.com domain
+[7] Convert panelists from questback.com to tivian.com domain
+[8] Portal update (e.g. update redirects after creation of new domain-alias)
+[9] Exit</code></pre></li>
+<li><p>update KeePass with (Client ID, Client Secret, Api Token)</p></li>
+</ol>fsChangeConfig iam_client_secret [NEW VALUE -&gt; see OKTA]
+helpersEfsChangeConfig iam_user_group_id 00g2ku43q1jotSCdY417
+helpersEfsChangeConfig iam_well_known_url https://access.tivian.com/oauth2/aus2kl4zjijopeKSC417/.well-known/oauth-authorization-server</code></pre>
+</li>
+<li><p>using iam_change_config_jsm.sh script</p></li>
+</ol>
+</li>
+<li><p>create backup of iam_user_reference table and truncate it</p></li>
+<li><p>run migration script <strong>[6] first</strong>, then [1] and [3]</p></li>
+<li><pre><code class="language-text">php support/iam/migration.php
+
+[1] Admin user migration
+[2] Portal migration
+[3] Admin users activation
+[4] Portal ClientGroup migration
+[5] User ClientGroup migration
+[6] Convert admin user from questback.com to tivian.com domain
+[7] Convert panelists from questback.com to tivian.com domain
+[8] Portal update (e.g. update redirects after creation of new domain-alias)
+[9] Exit</code></pre></li>
+<li><p>update KeePass with (Client ID, Client Secret, Api Token)</p></li>
+</ol>

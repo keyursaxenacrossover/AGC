@@ -1,0 +1,208 @@
+ manager and user perspective</strong></h3>
+<p class="wysiwyg-text-align-justify">The table provides an overview of the most important differences between the project manager and user perspective.</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default">
+<colgroup> <col style="width: 361.0px;"> <col style="width: 239.0px;"> <col style="width: 160.0px;"> </colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour="#57d9a3">
+<p> </p>
+</th>
+<th data-highlight-colour="#57d9a3">
+<p><strong>Project manager</strong></p>
+</th>
+<th data-highlight-colour="#57d9a3">
+<p><strong>User</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Work area: Admin area (www login)</p>
+</td>
+<td>
+<p>x</p>
+</td>
+<td>
+<ul>
+<li>
+<p> </p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Work area: Org Processor (separate login)</p>
+</td>
+<td>
+<p>with automatically created user account</p>
+</td>
+<td>
+<p>x</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Work area: Download platform)</p>
+</td>
+<td>
+<p>with automatically created user account</p>
+</td>
+<td>
+<p>x</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Access rights: ACL rights and object rights define the rights for teams</p>
+</td>
+<td>
+<p>x</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Access rights: The <em>Org Processor</em> rights administration defines the rights for roles</p>
+</td>
+<td>
+<ul>
+<li>
+<p> </p>
+</li>
+</ul>
+</td>
+<td>
+<p>x</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Centralized participant administration</p>
+</td>
+<td>
+<p>x</p>
+</td>
+<td>
+<ul>
+<li>
+<p> </p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Unit-specific list of participants</p>
+</td>
+<td>
+<p>x</p>
+</td>
+<td>
+<p>x</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Centralized user management</p>
+</td>
+<td>
+<p>x</p>
+</td>
+<td>
+<ul>
+<li>
+<p> </p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Unit-specific user management</p>
+</td>
+<td>
+<p>x</p>
+</td>
+<td>
+<p>x</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Importing users</p>
+</td>
+<td>
+<p>x</p>
+</td>
+<td>
+<ul>
+<li>
+<p> </p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>Org Processor</em> start page</p>
+</td>
+<td>
+<p>Configuration in the<br>menu <strong>Org Processor→ Configuration</strong> → <strong>Org Processor</strong><br>interface</p>
+</td>
+<td>
+<p>x</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Writing e-mails to users</p>
+</td>
+<td>
+<p>x</p>
+</td>
+<td>
+<p>Only using the mail templates provided by the project manager</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="editing-user-variables" class="wysiwyg-text-align-justify">
+<br><strong>Editing user variables</strong>
+</h3>
+<p class="wysiwyg-text-align-justify">Before creating users, you should adjust the structure of the user management to the requirements of your current project. This is done in the menu <strong>Org Processor</strong> → <strong>Org Processor users</strong> → <strong>User variables</strong>. The following table lists the variables of the user management in the standard configuration.</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default">
+<colgroup> <col style="width: 130.0px;"> <col style="width: 136.0px;"> <col style="width: 219.0px;"> <col style="width: 119.0px;"> <col style="width: 156.0px;"> </colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour="#57d9a3">
+<p><strong>Variable</strong></p>
+</th>
+<th data-highlight-colour="#57d9a3">
+<p><strong>Label</strong></p>
+</th>
+<th data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+<th data-highlight-colour="#57d9a3">
+<p><strong>File type</strong></p>
+</th>
+<th data-highlight-colour="#57d9a3">
+<p><strong>Size</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p><em>u_firstname</em></p>
+</td>
+<td>
+<p>First name</p>
+</td>
+<td>
+<p>First name</p>
+</td>
+<td>
+<p>Text field</p>
+</td>
+<td>

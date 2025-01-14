@@ -1,0 +1,45 @@
+<h1 id="h_01JFB5J5C04V473XZ6RTARZQY1">Overview</h1>
+<p>Customers may experience an issue where emails are not being sent from their installation and are stuck in the queue (this is a different issue from emails stuck in "Sent" status, not the scope of this article.</p>
+<p>This problem typically arises when the customer's domain is not verified and has been migrated to SES (Amazon Simple Email Service). The domain verification status and the email flow (whether it's using SES or old mail flow) are critical factors in this issue.</p>
+<h1 id="h_01JFB5J5C0NWM46TKYZCAE3F29">Solution</h1>
+<ol>
+<li>Check if this is using SES or old mail flow:
+<ul dir="auto">
+<li>Check the hurricane config key:<br><img style="aspect-ratio: auto;" src="https://central-supportdesk.zendesk.com/attachments/token/5PlL92AaooLAz7Drx4oP7fMR5/?name=image.png">
+</li>
+<li>If using amazonaws value, then this is the new flow, procceed with steps below.</li>
+<li>otherwise it is using the old flow (this KB is not applicable), and you need to follow the old KB: <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21236040590994-Troubleshooting-Mail-Delivery-Issues-A-Comprehensive-Guide" rel="noopener noreferrer">Troubleshooting-Mail-Delivery-Issues-A-Comprehensive-Guide</a>
+</li>
+</ul>
+</li>
+<li>Get the sender email:
+<ul dir="auto">
+<li>Check the mailing having the issue</li>
+<li>Open its Mail template</li>
+<li>Expand Advanced Mail settings</li>
+<li>Check the return Path, if is empty, or "Return Path = From", or alternatively having an explicit mail .</li>
+<li>If there is a return Path with an explicit mail, then this is the <strong>actual sender</strong>, if not, get the sender from the from email:<br><img style="aspect-ratio: auto;" src="https://central-supportdesk.zendesk.com/attachments/token/qdQ3jdwrnbFnrfgKm54kcBbsI/?name=image.png"><br><img style="aspect-ratio: auto;" src="https://central-supportdesk.zendesk.com/attachments/token/1Y5sL1jhNg8n852pQlWySIeqm/?name=image.png" width="347" height="110">
+</li>
+</ul>
+</li>
+<li>Once <strong>sender</strong> is confirmed, get its <strong>domain, </strong>then perform the following checks to confirm domain is verified:
+<ol dir="auto">
+<li>Check if the domain should be managed by us or the customer:
+<ul dir="auto">
+<li>In <a href="https://docs.google.com/spreadsheets/d/1CQmDPjwnJPvtZDlpL9joDMdpn_gumZaLr5QAwCxKIvw/edit?gid=121327049#gid=121327049">this sheet</a>, check "CombinedSenders" tab, column "<strong>Variomedia</strong>", if value =<strong>Yes</strong>, then it should be managed by us, if value =<strong>No</strong>, then it should be managed by the customer.</li>
+<li>If customer claims otherwise (against the sheet), double check the domain name ownership with the contacts mentioned in <a href="#h_01JEEKE76EB7V597KKM9VQ1H4J">this section</a>
+</li>
+</ul>
+</li>
+<li>Check SES account by going to the correct AWS account (us or de prod accounts on AWS according to the instance), select SES service -&gt; Identities -&gt; Search for the domain <br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/23373640751506" width="495" height="229">
+</li>
+<li><img style="aspect-ratio: auto;" src="https://central-supportdesk.zendesk.com/attachments/token/6uvL0GiL2uvFoYf4IqaeDxaI9/?name=image.png"></li>
+<li>If the domain is verified, then configurations are correct, customer needs to retry to send the email, or CS can generate a test email in queue to test the delivery</li>
+<li>If the domain is not found, raise a Saas CR to add it in SES, and get a confirmation if it is managed by customer or us.
+<ul dir="auto">
+<li>If managed by customer, request a zone file to be shared with the customer;</li>
+<li>Otherwise Saas should make the necessary changes.</li>
+<li>Note: domain <code>bncemail.com</code> was just updated by Saas today (12/17/2024), so if you find the sender from that domain, check if the unreachable emails were sent before or after that date.</li>
+</ul>
+</li>
+<li>If the domain is "pending" or "not verified" , Check <a href="https://docs.google.com/spreadsheets/d/1CQmDPjwnJPvtZDlpL9joDMdpn_gumZaLr5QAwCxKIvw/edit?gid=905412533#gid=905412533" rel="noopener noreferrer">this sheet</

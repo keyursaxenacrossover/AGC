@@ -1,0 +1,150 @@
+>
+</ul>
+<table border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour="#c0b6f2">
+<p><strong>Feature</strong></p>
+</th>
+<th data-highlight-colour="#c0b6f2">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Audio file</p>
+</td>
+<td>
+<p>Audio file in mp3 format</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Alignment</p>
+</td>
+<td>
+<p>The audio player can be aligned left, right, or centered.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Hide progress bar</p>
+</td>
+<td>
+<p>The progress bar can be hidden to prevent the participant from skipping the file.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Autoplay</p>
+</td>
+<td>
+<p>Automatically play the file upon opening the page. Not supported on most mobile devices.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Repeat</p>
+</td>
+<td>
+<p>The file is played in an endless loop. If this option is activated, the variable of the question remains set to code "0".</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="h_01J3YQ4GEAYW13992A2HBK9X84"> </h2>
+<h2 id="single-response">Single response</h2>
+<p>Single-response questions are used if only one of the possible answers can apply to the specific participant. Questions about age, gender, or income, for example, are usually single-response questions. One single variable is sufficient to store the answer. A code is allocated to each answer option, and the code of the selected option will be stored in the variable.</p>
+<h3 id="single-response-list-vertical">Single response list (Vertical)</h3>
+<p>The vertical single-response list is one of the most commonly used question types. This question type has the following content elements:</p>
+<ul>
+<li>
+<p>Question text</p>
+</li>
+<li>
+<p>Fill-in instruction</p>
+</li>
+<li>
+<p>Help text</p>
+</li>
+<li>
+<p>Answer options 1-n</p>
+</li>
+<li>
+<p>Optional: Answer option with a text entry field</p>
+</li>
+<li>
+<p>Optional: Inside titles 1-m</p>
+</li>
+<li>
+<p>Optional: Columns 1-o</p>
+</li>
+</ul>
+<h3 id="single-response-list-horizontal">Single Response List (Horizontal)</h3>
+<p>The <em>Single response</em> question type is optimized for measuring the Net Promoter Score (NPS).</p>
+<ul>
+<li>
+<p>The answer options are in principle always displayed side-by-side (Desktop, Tablet, Widescreen). If you want the wrapping to occur at any position between the answer options, please stay with the familiar question types 112 and 113.</p>
+</li>
+<li>
+<p>On small displays (Mobile) the question type switches completely to a vertical display or a drop-down list.</p>
+</li>
+<li>
+<p>Technically, the new question type is based on the familiar single response list (111).</p>
+</li>
+</ul>
+<h4 id="base-elements">Base Elements</h4>
+<ul>
+<li>
+<p>Question text</p>
+</li>
+<li>
+<p>Fill-in instruction</p>
+</li>
+<li>
+<p>Help text</p>
+</li>
+<li>
+<p>Answer options 1-n</p>
+</li>
+</ul>
+<h4 id="detail-configuration">Detail configuration</h4>
+<ul>
+<li>
+<p>Text alignment:</p>
+<ul>
+<li>
+<p>The answer options’ texts can be shown above or to the right of the radio button.</p>
+</li>
+<li>
+<p>On Smartphones and Tablets, long texts or images are always displayed to the right hand of the radio button, without consideration of the text alignment settings.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Display on mobile devices: On mobile devices, the answer options can be displayed either as a list or as a drop-down list. The latter requires active JavaScript.</p>
+</li>
+<li>
+<p>Initial value: Text for the first option of the drop-down list. Default: “Please select”.</p>
+<ul>
+<li>
+<p>This text is only used if a “drop-down list” has been set for display on mobile devices.</p>
+</li>
+<li>
+<p>This option is automatically treated as missing.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Alternating rows: Display every second answer option with a different background color.</p>
+</li>
+</ul>
+<h4 id="alternative-layouts-for-single-response-lists">Alternative Layouts for Single Response Lists</h4>
+<p>The main difference between question types 112 / 113 and the question types described above is in their layout:</p>
+<ul>
+<li>
+<p>Question type 112 Single response list (wrapping): Radio buttons and answer options are arranged horizontally in one line. If this question type is used in<br>“Responsive Layout” context, the wrapping may occur at any position between the answer options dependent on screen width.</p>
+</li>
+<li>
+<p>Question type 113 Single response list

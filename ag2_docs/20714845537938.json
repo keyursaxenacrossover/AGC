@@ -1,0 +1,30 @@
+{
+    "id": 20714845537938,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/20714845537938.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20714845537938-Missing-values-the-browser-back-button",
+    "author_id": 369584192734,
+    "comments_disabled": false,
+    "draft": false,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20714530860562,
+    "created_at": "2024-08-12T17:01:53Z",
+    "updated_at": "2024-09-02T11:17:20Z",
+    "name": "Missing values - the browser back button",
+    "title": "Missing values - the browser back button",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-09-02T11:17:18Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075294,
+    "content_tag_ids": [],
+    "label_names": [],
+    "body": "<p> </p>\n<h3 id=\"h_01J6S77FHGBFP9HNX5F9YDFR07\">Overview</h3>\n<p>In the EFS (Enterprise Feedback Suite) platform, navigating through a survey can be done in several ways, but not all methods are error-free. Using the browser's back button instead of the survey's dedicated \"Back\" button can lead to issues, including resetting certain variables to a placeholder value of \"-77\" and potentially breaking data integrity checks (DAC). This guide explains the implications of improper navigation within surveys, the resulting issues with variables, and how to retrieve the correct values from the database logs if errors occur.</p>\n<h3 id=\"h_01J6S77FHGYA86D8H508A28PT6\">Solution</h3>\n<ol>\n<li>\n<p><strong>Understanding Navigation in Surveys:</strong></p>\n<ul>\n<li>\n<strong>Dedicated \"Back\" Button:</strong> The survey typically provides a \"Back\" button, designed to properly handle navigation and data management as the respondent moves backward through the survey.</li>\n<li>\n<strong>Browser Back Button:</strong> Using the browser's back button instead of the survey's dedicated option can result in errors. This is because the survey's internal logic may not reprocess the page correctly when the browser's navigation is used.</li>\n</ul>\n</li>\n<li>\n<p><strong>Impact of Improper Navigation:</strong></p>\n<ul>\n<li>\n<strong>Variable Reset to \"-77\":</strong> When the survey's back button is used, the variables on that page are reset to \"-77,\" a placeholder value indicating that the data needs to be re-entered or confirmed.</li>\n<li>\n<strong>Incomplete Data Submission:</strong> If the respondent does not re-submit the page by providing answers after using the survey's back button, these reset values (\"-77\") remain in place, which can lead to data inconsistencies.</li>\n</ul>\n</li>\n<li>\n<p><strong>Effect on Data Integrity Checks (DAC):</strong></p>\n<ul>\n<li>The use of the browser back button can \"break\" the DAC, leading to incorrect or incomplete data being recorded. This occurs because the system expects a certain flow and validation, which is disrupted by improper navigation.</li>\n</ul>\n</li>\n<li>\n<p><strong>Retrieving Correct Values from Database Logs:</strong></p>\n<ul>\n<li>If variables are incorrectly set to \"-77\" due to navigation errors, these values can be retrieved and corrected using the database logs of the relevant survey port. The logs provide a detailed record of the survey’s interactions, allowing administrators to trace back and recover the original data.</li>\n</ul>\n</li>\n</ol>\n<p> </p>\n<h3 id=\"h_01J6S77KND4APPGQM2SNMDCP8Z\"><strong>Example:</strong></h3>\n<ul>\n<li>Find the querylogs associated with the installation (this is different for DG Corbox and AWS).</li>\n<li>Within the querylogs, grep within the logs for the survey number, then “UPDATE” statements, then for the lfdn with lfdn=123 or lfdn='123' (123 is placeholder for actual lfdn)</li>\n</ul>\n<p>With these, you can find the statements that place the page history for this participant.</p>\n<p> </p>\n<p> </p>\n<p> </p>\n<p> </p>\n<p> </p>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

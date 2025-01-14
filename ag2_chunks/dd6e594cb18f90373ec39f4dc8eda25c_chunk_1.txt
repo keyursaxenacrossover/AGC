@@ -1,0 +1,70 @@
+ can locate it using 2 paths:</h4>
+<ul>
+<li>If you know the project, Open<code>Project -&gt; Mail report -&gt; select the mailID</code> matching the customer complain (might be by date)</li>
+<li>Otherwise: <code>System -&gt; Options -&gt; Mail Queue</code>, and search for the mailing using the date of any other available information.</li>
+<li>If you still cannot locate the mailing ID, please get back to customer to share more information about the missing mail.</li>
+</ul>
+</li>
+<li>
+<h4 id="h_01J794AA4SCCKAA7ADY0MMKB64"><strong>Check the mails status:<br></strong></h4>
+Once you get the mailing ID, note the following information:
+<ul>
+<li>On the mailings list <strong>dashboard</strong>, you can locate some information about the mailing:<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21238953666962"><br>
+<ul>
+<li>For example, this screenshot indicates the following:
+<ul>
+<li>
+<strong>Total</strong>: 2028 mails should be sent under this mailing ID</li>
+<li>
+<strong>Date</strong>: The planned date and time to start sending this mailing queue.</li>
+<li>
+<strong>Queued</strong>: 1960 are in queue pending a cron job to send them once the date starts</li>
+<li>
+<strong>Sending</strong>: 68 are already dispatched or relayed. But they do not appear as sent yet, since  there is a workflow to confirm mail delivery from recipient server, this is not completed yet.</li>
+<li>Note that mails are sent in batches every 10 mins, as explained later, that why if a date is already in past, the queue is consumed in batches, which should decrease every 10 minutes.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>You can then open the Mailing List details:
+<ul>
+<li><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21238937635474"></li>
+<li>
+<strong>1: Date</strong>: this is the same date as shown on dashboard, The planned date and time to start sending this mailing queue.</li>
+<li>
+<strong>2: Filter</strong> to show which individual mails to check under this mailing ID, change that to <strong>ALL</strong> if not sure</li>
+<li>
+<strong>3: View</strong> button: To select which fields to view for individual mails. Make sure "<strong>Date</strong>" field is selected</li>
+<li>
+<strong>4: Individual mail status: </strong>This includes:
+<ul>
+<li><strong>Recipient</strong></li>
+<li>Individual mail <strong>Status</strong>
+</li>
+<li>
+<strong>Date</strong>: Date of individual mail status ingestion.  (in <em>mail_rcpt</em> table)
+<ul>
+<li>To explain: the individual email is queued, then delivered (through EFS account or customer mail server), then a callback confirmation is sent to our RabbitMQ, then there is a cronjob (pickupmailNotifications) which reads (ingests) the MQ, and updates EFS with the updated status.</li>
+<li>Accordingly, This datetime is always after the MailingID date, and the customer might actually receive the email before that datetime (till the confirmation is sent back to us and ingested).</li>
+<li>So depending on customer configurations (as explained later), and amount of mails to send, the mails are queued in batches, thus this date field will be different across individual mails within the same mailing ID.</li>
+<li>The most accurate sent time is available in<strong> DB and Hurricane logs only.</strong> <br><br>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h4 id="h_01J794AX0EJW61KWMT8MGN18ZJ"><strong>Installation Configuration - Mail server configurations:</strong></h4>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>As a <strong>root</strong> user, you can check mailing server configurations (i.e.: mail server address, port, username, protocol, logs, etc...) through: <code>System &gt; Options &gt; Platform cockpit &gt; [root only] System Configurations </code>, then search for <strong>Hurricane</strong>
+</li>
+<li><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21238953668626"></li>
+<li>If the <strong>hurricane_xxx_server </strong>value points to a <strong>postfix</strong> server value (ex: '<strong>postfix</strong>-<strong>production</strong>.global-services.svc.cluster.local'), this indicates mails are sent through EFS Hurricane standard MTA (not using customer mail server). In this case, note the first string after the postfix string, usually refers to the Account name used in Hurricane (to be used later). In the above example, the account name is "Production".</li>
+<li>If the <strong>hurricane_xxx_server </strong>value points to an IP (10.250.xx.xx), this indicates the mails are sent through a custom email server. Note the IP and user values as they will be used on Hurricane side to locate the sending account details.</li>
+<li>If the <strong>hurricane_xxx_server </strong>value points to <

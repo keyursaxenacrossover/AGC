@@ -1,0 +1,32 @@
+ for the name. An internal name will be generated from your given name. It has all whitespaces removed, so it can be used as an identifier.</p>
+<p data-renderer-start-pos="3578">The category determines the underlying data structure for the answers as well as the initial files and available configuration options.</p>
+<h3 id="HTML-Editor" data-renderer-start-pos="3715">HTML-Editor</h3>
+<p data-renderer-start-pos="3728">The <strong data-renderer-mark="true">Preview </strong>button opens a dialog with a live preview of your question type, as it would be rendered in a survey with an unmodified responsive layout.</p>
+<div class="ak-editor-panel cc-tqp4ke" data-panel-type="info">
+<div class="ak-editor-panel__icon"><em>You can already select the question type in a survey and use it as it is right now. Your modifications will be immediately visible in the survey. Refrain from editing question types used in live surveys. Instead, copy the question type and work on the copy</em></div>
+</div>
+<p data-renderer-start-pos="4140">The <strong data-renderer-mark="true">Save </strong>button is disabled by default. As soon as something is edited it will be activated and a modification marker is shown in the navigation to the left.</p>
+<div class="ak-editor-panel cc-tqp4ke" data-panel-type="info">
+<div class="ak-editor-panel__icon"><em>Save any changes, before you navigate through the menu.</em></div>
+</div>
+<p data-renderer-start-pos="4358">The navigation on the left consists of five items: <strong data-renderer-mark="true">Template</strong>, <strong data-renderer-mark="true">Style Sheet</strong>, <strong data-renderer-mark="true">JavaScript</strong>, <strong data-renderer-mark="true">Settings </strong>and <strong data-renderer-mark="true">Resources</strong>.</p>
+<p> </p>
+<h2 id="Template" data-renderer-start-pos="4471">Template</h2>
+<p data-renderer-start-pos="4482">It is compiled with the <em data-renderer-mark="true">Smarty 2 </em>template engine and makes use of several variables supplied by EFS. The initial template contains basic functionality that enables you to develop your own template.</p>
+<div class="ak-editor-panel cc-tqp4ke" data-panel-type="info">
+<div class="ak-editor-panel__icon"><em>If you need to see how special features are implemented you may have a look at the templates of the responsive layout, accessible in <strong data-renderer-mark="true">Survey menu → Layout → Pro editor.</strong></em></div>
+</div>
+<p data-renderer-start-pos="4852">Every question contains one or more variables (configured in <strong data-renderer-mark="true">Settings</strong>). A variable represents an answer option. In the case of a matrix, every dimension is an answer option (or item) and therefore has its own variable.</p>
+<p data-renderer-start-pos="5071">For every variable, there needs to be a list of possible values. These are the scale elements (internally called “r_cat”), which are also configured under <strong data-renderer-mark="true">Settings</strong>.</p>
+<p data-renderer-start-pos="5238">In the template, you have a variable <strong data-renderer-mark="true">$items</strong>, which is an array that contains all answer options of the question. You can iterate over them with a for-each loop or a section. Every item-object has a variable <strong data-renderer-mark="true">$r_cats</strong>, which is an array that contains all scale elements of the question. Again you can iterate over them with a loop.</p>
+<p data-renderer-start-pos="5567">If you want to see all existing <em data-renderer-mark="true">Smarty </em>variables insert <em data-renderer-mark="true">{debug} </em>in your template. A button will appear at the top right corner of the question preview, which opens a complete list of variables available at the point the debug plugin was called.</p>
+<p data-renderer-start-pos="5813">A simple example how to iterate over items and r_cats:</p>
+<p data-renderer-start-pos="5872"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015614753554"></p>
+<p data-renderer-start-pos="5872">To submit values to the server the form needs to have a field (depending on the question type e. g. input, checkbox, hidden or select tag) containing the name of the variable matching its name.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015627976594"></p>
+<p data-renderer-start-pos="5872">This will print a select box for each item including any scale options (r_cat).</p>
+<p> </p>
+<h2 id="Style-Sheet" data-renderer-start-pos="6153">Style Sheet</h2>
+<p data-renderer-start-pos="6167">In the <strong data-renderer-mark="true">Style Sheet </strong>menu, you can edit the question type’s CSS file. Some styles are predefined, but you can remove them to get the default styling of the Responsive Layout and start your styling from there.</p>
+<p data-renderer-start-pos="6374">The question type’s main container gets a CSS class with the following structure:</p>
+<p

@@ -1,0 +1,191 @@
+ href="#">https://login.microsoftonline.com/{id}/v2.0/.well-known/openid-configuration</a></p>
+<p>Example based on Azure AD</p>
+</td>
+</tr>
+<tr>
+<td>
+<p> </p>
+</td>
+<td>
+<p>token_endpoint</p>
+</td>
+<td>
+<p>Endpoint to get new tokens for the different flows. In our case an endpoint to exchange a code for a token.</p>
+</td>
+<td>
+<p><a href="#">https://login.microsoftonline.com/{id}/oauth2/v2.0/token</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p> </p>
+</td>
+<td>
+<p>authorization_endpoint</p>
+</td>
+<td>
+<p>Endpoint to Authenticate/Authorize a user. A user will be sent to that endpoint to authenticate.</p>
+</td>
+<td>
+<p><a href="#">https://login.microsoftonline.com/{id}/oauth2/v2.0/authorize</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p> </p>
+</td>
+<td>
+<p>jwks_uri</p>
+</td>
+<td>
+<p>Location where Keys for OpenID connect are stored. These keys might rotate. Therefore this document is not static long term.</p>
+</td>
+<td>
+<p><a href="#">https://login.microsoftonline.com/{id}/discovery/v2.0/keys</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p> </p>
+</td>
+<td>
+<p>issuer</p>
+</td>
+<td>
+<p>A value to validate who issued tokens.</p>
+</td>
+<td>
+<p><a href="#">https://login.microsoftonline.com/{id}/v2.0</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p> </p>
+</td>
+<td>
+<p>scopes</p>
+</td>
+<td>
+<p>A number of “topics” that could be asked for during authentication. It will result in a number of claims (particular values) after authentication.</p>
+</td>
+<td>
+<p>["openid","profile","email”]</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>external Identity Provider</strong></p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p> </p>
+</td>
+<td>
+<p>client id</p>
+</td>
+<td>
+<p>An ID to identify the connection between Tivian Access and the external Identity Provider.</p>
+</td>
+<td>
+<p> 2dbdc2ba-467f-4a2e-86cc-62ff1544aeaf</p>
+</td>
+</tr>
+<tr>
+<td>
+<p> </p>
+</td>
+<td>
+<p>client secret</p>
+</td>
+<td>
+<p>A secret to create trust between Tivian Access and the external Identity Provider.</p>
+</td>
+<td>
+<p> SOME-SECRET-VALUE</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p>Additionally, the client has to take care, that the following information is sent within the requested ID tokens:</p>
+<ul>
+<li>
+<p>email</p>
+</li>
+<li>
+<p>first name</p>
+</li>
+<li>
+<p>last name</p>
+</li>
+</ul>
+<p>This might involve additional work on the client side we don’t know.</p>
+<p> </p>
+<h2 id="header-3">If the client is using <strong>SAML 2.0</strong>
+</h2>
+<p>the client needs to provide information based on a metadata.xml file we send over to the client.</p>
+<p>Setting up a SAML identity provider should always be a multi-step process that involves some interaction with the client. Thus asking all questions upfront might not be sufficient.</p>
+<p>Read the following first (just our information, not the whole SAML spec):</p>
+<ul>
+<li>SAML Provider Setup</li>
+<li>SAML Federation</li>
+</ul>
+<p>Possibly you have to ask these questions after creating resources on our side and sending our metadata.xml to the client.</p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 218.0px;">
+<col style="width: 216.0px;">
+<col style="width: 216.0px;">
+<col style="width: 216.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p><strong>Source</strong></p>
+</th>
+<th>
+<p><strong>Confiugration</strong></p>
+</th>
+<th>
+<p><strong>Meaning</strong></p>
+</th>
+<th>
+<p><strong>Example</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p><strong>client’s metadata.xml</strong></p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p>All following information should be included in that document - if not present ask for the following</p>
+</td>
+<td>
+<p>-</p>
+</td>
+</tr>
+<tr>
+<td>
+<p> </p>
+</td>
+<td>
+<p>IdP Issuer URI</p>
+</td>
+<td>
+<p>The issuer of URI for authentication. This usually aligns with the EntityID of the provider.</p>
+</td>
+<td>
+<p

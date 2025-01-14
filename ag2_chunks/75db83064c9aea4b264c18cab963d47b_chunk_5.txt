@@ -1,0 +1,71 @@
+<p class="wysiwyg-text-align-justify">Shows the download workbook dialog.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.vizShowDownloadWorkbookDialog(pageModuleIdentifier)
+    .then(function() {
+        ...
+    });</code></pre>
+<h3 id="mysight-vizshowexportimagedialog" class="wysiwyg-text-align-justify">mySight.vizShowExportImageDialog</h3>
+<p class="wysiwyg-text-align-justify">Shows the export image dialog.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.vizShowExportImageDialog(pageModuleIdentifier)
+    .then(function() {
+        ...
+    });</code></pre>
+<h3 id="mysight-vizshowexportpdfdialog" class="wysiwyg-text-align-justify">mySight.vizShowExportPDFDialog</h3>
+<p class="wysiwyg-text-align-justify">Shows the export PDF dialog.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.vizShowExportPDFDialog(pageModuleIdentifier)
+    .then(function() {
+        ...
+    });</code></pre>
+<h3 id="mysight-vizshowexportdatadialog" class="wysiwyg-text-align-justify">mySight.vizShowExportDataDialog</h3>
+<p class="wysiwyg-text-align-justify">Shows the export data dialog for the current or a specific sheet.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.vizShowExportDataDialog(pageModuleIdentifier, sheetName)
+    .then(function() {
+        ...
+    });</code></pre>
+<h3 id="mysight-vizshowexportcrosstabdialog" class="wysiwyg-text-align-justify">mySight.vizShowExportCrossTabDialog</h3>
+<p class="wysiwyg-text-align-justify">Shows the export cross tab dialog for the current or a specific sheet.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.vizShowExportCrossTabDialog(pageModuleIdentifier, sheetName)
+    .then(function() {
+        ...
+    });</code></pre>
+<h3 id="mysight-vizshowsharedialog" class="wysiwyg-text-align-justify">mySight.vizShowShareDialog</h3>
+<p class="wysiwyg-text-align-justify">Shows the share dialog for the current or a specific sheet.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.vizShowShareDialog(pageModuleIdentifier, sheetName)
+    .then(function() {
+        ...
+    });</code></pre>
+<h3 id="mysight-vizsetframesize" class="wysiwyg-text-align-justify">mySight.vizSetFrameSize</h3>
+<p class="wysiwyg-text-align-justify">Sets the vizs frame size. Note that the min-width might be set to 100% by Portals, taking precedence over any width that is set here.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.vizSetFrameSize(pageModuleIdentifier, width, height)
+    .then(function() {
+        ...
+    });</code></pre>
+<h3 id="mysight-workbookgetname" class="wysiwyg-text-align-justify">mySight.workbookGetName</h3>
+<p class="wysiwyg-text-align-justify">Gets the name of the workbook.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.workbookGetName(pageModuleIdentifier)
+    .then(function(name) {
+        ...
+    });</code></pre>
+<h3 id="mysight-workbookgetsheetsinfo" class="wysiwyg-text-align-justify">mySight.workbookGetSheetsInfo</h3>
+<p class="wysiwyg-text-align-justify">Gets information about all sheets.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.workbookGetSheetsInfo(pageModuleIdentifier)
+    .then(function(sheetsInfo) {
+        ...
+    });</code></pre>
+<h3 id="mysight-workbookgetactivesheetname" class="wysiwyg-text-align-justify">mySight.workbookGetActiveSheetName</h3>
+<p class="wysiwyg-text-align-justify">Gets the name of the active sheet.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.workbookGetActiveSheetName(pageModuleIdentifier)
+    .then(function(name) {
+        ...
+    });</code></pre>
+<h3 id="mysight-workbookgetactivesheetindex" class="wysiwyg-text-align-justify">mySight.workbookGetActiveSheetIndex</h3>
+<p class="wysiwyg-text-align-justify">Gets the index of the active sheet.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.workbookGetActiveSheetIndex(pageModuleIdentifier)
+    .then(function(index) {
+        ...
+    });</code></pre>
+<h3 id="mysight-workbookactivatesheet" class="wysiwyg-text-align-justify">mySight.workbookActivateSheet</h3>
+<p class="wysiwyg-text-align-justify">Actives a sheet by its name or index.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.workbookActivateSheet(pageModuleIdentifier, sheetNameOrIndex)
+    .then(function() {
+        ...
+    });</

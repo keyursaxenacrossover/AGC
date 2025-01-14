@@ -1,0 +1,40 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K" class="wysiwyg-text-align-justify">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article provides instructions on how to update and change participant data in the Participant administration system. It covers two main methods: using an updated template and making changes directly in the List of participants.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">Learn how to efficiently update and modify participant information, including bulk editing capabilities for multiple participants simultaneously.</p>
+<ul>
+<li><a href="#updating-participant-data">Updating Participant Data</a></li>
+<li><a href="#changing-participant-data">Changing Participant Data</a></li>
+</ul>
+<h2 id="updating-participant-data" class="wysiwyg-text-align-justify">Updating Participant Data</h2>
+<p class="wysiwyg-text-align-justify">If you wish to update participant data, download the update template in the <strong>Participant Administration</strong> menu. To do so, click on the <strong>Update Participant Data</strong> button and then on <strong>Download update template</strong>.</p>
+<h3 id="update-template" class="wysiwyg-text-align-justify">Update template</h3>
+<p class="wysiwyg-text-align-justify">To assign the data that should be updated, you must fill in the <em>u_id</em> field of the template. To make sure you don't accidentally overwrite participant data, simply delete the columns you don't need for the update process. The existing data will also be overwritten if the column is not filled out.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017221297298" alt="Update participant data.jpg"></p>
+<p class="wysiwyg-text-align-justify">After filling in the template, you must select the corresponding file under the "Source" option and click the <strong>Send file</strong> button. After the successful transfer, the data will be updated.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017221296402" alt="Upload file.jpg"></p>
+<p class="wysiwyg-text-align-justify">To retrieve the User ID do the following: In the participant administration, click the <strong>View</strong> button. Activate the checkbox for <strong>User ID</strong>. To display the <strong>User ID</strong>, you need the <em>export-with_lfdn </em>right. If you would like to obtain this right, please contact our support team. Next, click the Excel export button. The Excel export will contain your participants, including the User ID.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="changing-participant-data" class="wysiwyg-text-align-justify">Changing Participant Data</h2>
+<p class="wysiwyg-text-align-justify">If you wish to subsequently change or correct the data of a participant, you must first select the participant from the list of participants. With a large number of participants, this requires using the <strong>Search participant</strong> function. In the list of participants, the participant’s name will be displayed as a link you can click on to open the same entry form. Now you can change all required data and then transfer them to participant administration by clicking on <strong>Save</strong>.</p>
+<h3 id="bulk-editing-participant-data" class="wysiwyg-text-align-justify">Bulk Editing Participant Data</h3>
+<p class="wysiwyg-text-align-justify">It is often the case that already uploaded participant data records need to be subsequently modified or extended. For example, titles used to personalize e-mails and questionnaires need to be changed (“Dr.” → “PhD” it turns out during evaluation that a variable necessary for a particular split has not been created and filled in in the participant administration (e.g. “customer type”). The “Bulk edit” feature allows you to realize such changes with reduced effort. If you limit the list of participants to the relevant data records (or at least to a subset) using appropriate search criteria, you can modify all these in a single step.</p>
+<p class="wysiwyg-text-align-justify">Please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>To do so, switch to the Participant administration.</p>
+</li>
+<li>
+<p>Use Search participants to restrict the list of participants as far as possible to those participants affected by the change.</p>
+</li>
+<li>
+<p>Mark the participants to be changed.</p>
+</li>
+<li>
+<p>Select the “Bulk edit” action from the drop-down list.</p>
+</li>
+<li>
+<p>Confirm by clicking on<strong> Execute</strong>.</p>
+</li>
+<li>
+<p>The form where you can specify the desired change will be displayed. Select the variable to be changed and the value you want this variable to have after the change. In the given example, the value of the variable “u_group” is to be changed within the selected data records from 1 = Development to 5 = System administration as the employees have been transferred.</p>

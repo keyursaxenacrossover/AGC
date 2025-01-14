@@ -1,0 +1,61 @@
+.</p>
+<p>Please note: Only one post per discussion can be marked as “sticky”. As soon as you mark a second post as “sticky”, the “sticky” flag will be deactivated for the first post.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 146.354px;">Topic</td>
+<td style="width: 601.302px;">The topic of the post.</td>
+</tr>
+<tr>
+<td style="width: 146.354px;">Content</td>
+<td style="width: 601.302px;">
+<p>The actual post.</p>
+<p>Required fields.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 146.354px;">Date</td>
+<td style="width: 601.302px;">
+<p>Date to be displayed in the post overview both in the admin area and on the panel page. Required field.</p>
+<p>By default, the current date is set when creating a new post. It is possible, though, to have a different date displayed.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="exporting-discussion-posts" class="wysiwyg-text-align-justify"><strong>Exporting Discussion Posts</strong></h2>
+<p class="wysiwyg-text-align-justify">You can export the posts from a discussion e.g. external evaluation</p>
+<p class="wysiwyg-text-align-justify">To do so, locate the desired discussion section in the overview and select the <strong>Export posts</strong> icon. After specifying the file type (Excel or CSV) and the character set you can download the export file.</p>
+<p class="wysiwyg-text-align-justify">The export file contains all the posts from that discussion with the following information:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Selected panelist data: the author’s pseudonym (pseudonym), account name (u_account), first name (u_firstname), name (u_name), e-mail address (u_email), an alternative ID (u_other_id), and cell phone number (u_mobile)</li>
+<li>Selected system data: panel entry date (penter_date), panel status (pstatus)</li>
+<li>Discussion-specific data: date and time of post (dt), post ID (id), topic (title), text (description), and number and result of the community rating (rating_cont, rating_average).</li>
+</ul>
+<h2 id="integrating-a-discussion-into-the-website" class="wysiwyg-text-align-justify"><strong>Integrating a Discussion into the Website</strong></h2>
+<p class="wysiwyg-text-align-justify">If you want to set up a discussion, please proceed as follows:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>On the desired page, create a page module of the “Discussion” type.</li>
+<li>Configure the setting options as required.<br>– Select the “func_discussion” module template.<br>– Make sure that the appropriate discussion section is selected.</li>
+</ol>
+<h1 id="chats" class="sc-iGrrsa eYmPYl wysiwyg-text-align-justify"><strong>Chats</strong></h1>
+<p class="wysiwyg-text-align-justify">In addition to forums and discussions, EFS supports chats as well.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>You can create and manage various chats (“chat sections”) for each language version of your website.</li>
+<li>As in the forum, you can decide whether all visitors, only panelists, or only members of a specific panel group will be permitted to visit the chat. Only logged-in panelists can contribute.</li>
+<li>A post usually consists of a name, date, and body text.</li>
+<li>If a panelist posts a new comment, an automatic reload of the list is triggered.</li>
+<li>Optionally, the panelists can auto-scroll to the latest post.</li>
+<li>You can create as many chats as you like. Please mind, though, that the resulting amounts of data may affect the performance of the panel installation. Therefore, it is recommended to limit the chats to at most 1,000 posts. Furthermore, you can export the posts of old chats and subsequently delete the chats.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Work steps</strong></p>
+<p class="wysiwyg-text-align-justify">Setting up a chat involves the following steps:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Creating a chat section.</li>
+<li>Creating a page for the chat and referencing the appropriate section.</li>
+<li>Monitoring, and if necessary, actively controlling the chat if the panelists are allowed to post.</li>
+</ul>
+<h2 id="managing-chats" class="wysiwyg-text-align-justify"><strong>Managing Chats</strong></h2>
+<p class="wysiwyg-text-align-justify">The chats are managed from the <strong>Website → Panel websites → {Selected language version} → Chats</strong> menu. In this menu, you can edit existing chat sections, create new sections, and moderate ongoing chats.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify">With read rights for “panel_chats”, you can manage chats. With write rights, you can export the posts of a chat.</p>
+<p class="wysiwy

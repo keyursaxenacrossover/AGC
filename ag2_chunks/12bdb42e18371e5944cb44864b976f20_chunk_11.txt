@@ -1,0 +1,57 @@
+">
+<li>
+<p>You can specify whether to execute the trigger more than once in a survey session. To do so, tick the checkbox labeled “Execute this trigger multiple times in one survey session” in the trigger editor.</p>
+</li>
+<li>
+<p>You are able to choose whether triggers will be executed or disabled in the preview. For example, it would make sense to disable the random trigger, in order to facilitate repeated testing under constant conditions. This function is activated by ticking the checkbox labeled “Also execute trigger in preview mode” in the trigger editor. By default, this function is not activated.</p>
+</li>
+<li>
+<p>In principle, triggers can be created on all survey page types. However some trigger types are destined for use on specific page types, e.g. final pages.</p>
+</li>
+<li>
+<p>On each page, you can create as many triggers as required. Please mind, though, that trigger actions require a lot of server resources, i.e. they affect the performance of the questionnaire. Therefore, it is recommended to use not more than 50 triggers per page.</p>
+</li>
+<li>
+<p>You can use Drag&amp;Drop to change the sequence of triggers on a page, which may be relevant to the order of execution.</p>
+</li>
+<li>
+<p>Triggers are associated with a variable on the page. If the page does not contain any variable, use a dummy variable: Create a question of the type “911 - User-defined” to register a variable with the system. Write the variable onto the form as a hidden variable: “&lt;input type=hidden name=V_NAME_AUS_911 value=1&gt;”. This will transfer a fixed value to the trigger.</p>
+</li>
+<li>
+<p>When a page is sent, the <em>EFS</em> routing engine goes through various tasks: It reviews plausibility checks, saves the data, searches for the next page, and displays it. The execution position determines the point in the process at which the trigger is executed. The following execution positions are possible and only those which make sense for the current trigger type are available for selection in the trigger editor.</p>
+<ul>
+<li>
+<p>Select “Execution position = Directly”, if you want the trigger to be executed first, before the page on which the trigger is defined will be output. Do not use this setting on the first page of a survey.</p>
+</li>
+<li>
+<p>If you select “Execution position = After submitting page, before filter”, the trigger will be executed after the page has been submitted, but before a filter that immediately follows it. Select this option if you want to use the result returned by the trigger for filtering (for example, if the trigger result fulfills a user-defined variable being used as a filter). This execution position is not available on the final pages, independent of the trigger type. For page trigger, logout trigger, and reinvitation trigger, it is disabled completely.</p>
+</li>
+<li>
+<p>If you select “Execution position = After submitting page, after filter”, the trigger will be executed after the page has been submitted. You can use this option if the trigger returns a result that you only want to use after the filter has been applied, i.e. the next page has been determined. For example, it is imaginable that you want to overwrite a user-defined variable, but only after the trigger has been executed.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>You can create triggers with the execution position “Directly” right on the first questionnaire page. The conditions of such a trigger can contain participant variables, URL parameters, and user-defined variables. Project variables cannot be used in such a trigger because they will not be available until after the first page has been sent, i.e. on the second questionnaire page.</p>
+</li>
+<li>
+<p>Some trigger types create contents to be saved in the survey result data, e.g. calculating formulas or saving parameters. For this purpose, user-defined variables.</p>
+</li>
+<li>
+<p>The runtime check, originally introduced for LUA filters, notes when a trigger cannot be executed, e.g. because an e-mail cannot be dispatched due to a broken if condition.</p>
+</li>
+<li>
+<p>Only for installations with EFS SMS Extension: It is not possible to dispatch SMS via triggers.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">You will usually be on the safe side if you select the “Execution position = After submitting page, before filter” option!</p>
+<p class="wysiwyg-text-align-justify">Make sure you adjust the type of the user-defined variable (Labels and data type link) if you do not want to save integers to the variable. If necessary, change the type to Text or Decimal.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h3 id="condition-editor" class="wysiwyg-text-align-justify">Condition editor</h3>
+<p class="wysiwyg-text-align-justify">In the condition editor, you specify for which event the trigger will be activated/executed. The following operators can be used.</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 226.67px;"> <col style="width: 226.67px;"> <col style="width: 226.67px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" style="width: 160.104px;" data-highlight-colour="#c0b6f2">
+<p><strong>Operator</

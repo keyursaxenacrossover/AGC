@@ -1,0 +1,121 @@
+: 433.872px;">
+<p>Name of the module in the page’s module overview</p>
+</td>
+<td style="width: 150.295px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 144.375px;">
+<p>Module template</p>
+</td>
+<td style="width: 433.872px;">
+<p>Module-specific template that controls how data provided by the module are displayed.</p>
+</td>
+<td style="width: 150.295px;">
+<p>func_messages_send</p>
+</td>
+</tr>
+<tr>
+<td style="width: 144.375px;">
+<p>Message header is optional</p>
+</td>
+<td style="width: 433.872px;">
+<p>If this option is activated, the panelists can leave the “Subject” field blank.</p>
+</td>
+<td style="width: 150.295px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 144.375px;">
+<p>Mail template for messages</p>
+</td>
+<td style="width: 433.872px;">
+<p>Mail template for defining the accompanying text for the e-mail.</p>
+<p>Available are templates of the “standard mail” type.</p>
+<p>The following wildcards can be used:</p>
+<ul>
+<li>
+<p>#sender_u_firstname#: The sender’s first name</p>
+</li>
+<li>
+<p>#sender_u_name#: The sender’s last name</p>
+</li>
+<li>
+<p>#message_title#: The message header</p>
+</li>
+<li>
+<p>#message_text#: The message text</p>
+</li>
+</ul>
+<p>Please note that first name and name are only filled in if the sender has made these data publicly available.</p>
+<p>Furthermore, the address variables of the receiving panelist can be inserted via the usual wildcards.</p>
+</td>
+<td style="width: 150.295px;">
+<p>Message from panelist to panelist</p>
+</td>
+</tr>
+<tr>
+<td style="width: 144.375px;">
+<p>Confirmation message for message dispatch</p>
+</td>
+<td style="width: 433.872px;">
+<p> </p>
+</td>
+<td style="width: 150.295px;">
+<p>Your message was sent.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="function-module-profile-options" class="wysiwyg-text-align-justify"><strong>Function Module: Profile Options</strong></h3>
+<p class="wysiwyg-text-align-justify">Many online communities allow their members to edit their profiles via a dedicated form and decide for themselves which of their data should be visible. With the function module “Profile options” you can set up such a form.</p>
+<p class="wysiwyg-text-align-justify">In the standard panel, the appearance of the form is determined by the “func_profile_settings” template.</p>
+<p class="wysiwyg-text-align-justify"><strong>Options</strong></p>
+<p class="wysiwyg-text-align-justify">The “Profile options” function module provides the following setting options:</p>
+<table class="wysiwyg-text-align-justify" style="height: 420px;" border="1" width="769" data-layout="default" data-table-width="760">
+<colgroup>
+<col style="width: 204.0px;">
+<col style="width: 464.0px;">
+<col style="width: 92.0px;">
+</colgroup>
+<tbody>
+<tr style="height: 23px;">
+<th class="wysiwyg-text-align-center" style="width: 186.146px; height: 23px;" data-highlight-colour="#57d9a3">
+<p><strong>Option</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 417.135px; height: 23px;" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 155.33px; height: 23px;" data-highlight-colour="#57d9a3">
+<p><strong>Standard panel</strong></p>
+</th>
+</tr>
+<tr style="height: 47px;">
+<td style="width: 178.125px; height: 47px;">
+<p>Reference name for template</p>
+</td>
+<td style="width: 409.115px; height: 47px;">
+<p>Name that can be used to trigger the module in positioning templates.</p>
+</td>
+<td style="width: 147.309px; height: 47px;">
+<p>Profilesettings</p>
+</td>
+</tr>
+<tr style="height: 23px;">
+<td style="width: 178.125px; height: 23px;">
+<p>Page module title</p>
+</td>
+<td style="width: 409.115px; height: 23px;">
+<p>Name of the module in the page’s module overview</p>
+</td>
+<td style="width: 147.309px; height: 23px;">
+<p>Profile settings</p>
+</td>
+</tr>
+<tr style="height: 47px;">
+<td style="width: 178.125px; height: 47px;">
+<p>Module template</p>
+</td>
+<td style="width: 409.115px; height: 47px;">

@@ -1,0 +1,115 @@
+ The handling of missings in charts is predefined and cannot be manipulated</p>
+<h3 id="formatting-numbers" class="wysiwyg-text-align-justify"><strong>Formatting numbers</strong></h3>
+<p class="wysiwyg-text-align-justify">You can decide for yourself how to format the numbers in your tables. You will find the formatting options by following these click paths:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>For the entire report: Menu <strong>Report</strong> → <strong>Report settings</strong> → Tab <strong>Numerary</strong></p>
+</li>
+<li>
+<p>For individual tables: <strong>Workpad toolbar</strong> → <strong>Settings → </strong>Tab <strong>Numerary</strong></p>
+</li>
+</ul>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 221.0px;"> <col style="width: 539.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Option</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Category</p>
+</td>
+<td>
+<p>Available are frequencies, percentages, and all key figures and aggregations from table 9.3 where the use of decimal places makes sense.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Number of decimal places</p>
+</td>
+<td>
+<p>Numbers may have either no decimal place or up to ten decimal places.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Decimal separator</p>
+</td>
+<td>
+<p>Definition of the decimal separator. Possible formats:</p>
+<ul>
+<li>
+<p>Comma</p>
+</li>
+<li>
+<p>Period</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Rounding</p>
+</td>
+<td>
+<p>Possible settings:</p>
+<ul>
+<li>
+<p>Normal rounding: If the first digit in the first decimal place to be eliminated is a 4 or less, the number will be rounded down (21.1 → 21). If the first digit in the first decimal place to be eliminated is a 5 or greater, the number will be rounded up (21.7 → 22).</p>
+</li>
+<li>
+<p>Round up: Numbers are always rounded up. Thus, if all decimal places are to be eliminated, the number will be rounded up to the next higher integer (21.1 → 22). If decimal places are desired, then all values after<br>the last desired decimal place will be ignored, and the number will be rounded up to the next higher integer (21.71 → 22).</p>
+</li>
+<li>
+<p>Round down: Numbers are always rounded down. Thus, if all decimal places are to be eliminated, the number will be rounded down to the next lower integer (21.1 → 21). If decimalplaces are desired, then all<br>values after the last desired decimal place will be ignored (21.71 → 21).</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Thousand separator</p>
+</td>
+<td>
+<p>Definition of the thousand separator.</p>
+<p>Possible formats:</p>
+<ul>
+<li>
+<p>No separator</p>
+</li>
+<li>
+<p>Comma</p>
+</li>
+<li>
+<p>Point</p>
+</li>
+<li>
+<p>Space</p>
+</li>
+<li>
+<p>Apostrophe</p>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="changing-texts" class="wysiwyg-text-align-justify"><strong>Changing texts</strong></h3>
+<p class="wysiwyg-text-align-justify">The texts used in tables and charts can be changed as desired. Follow this click path:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Workpad toolbar</strong> → <strong>Edit</strong>.</p>
+</li>
+<li>
+<p>You can change the labeling of the base in the <strong>Report</strong> → <strong>Report filter</strong> menu.</p>
+</li>
+</ul>
+<h3 id="changing-codes" class="wysiwyg-text-align-justify"><strong>Changing codes</strong></h3>
+<p class="wysiwyg-text-align-justify">Codes can be changed as desired. To do so, you only need to change the values in the “Code” column of the table editor. Thus, an integral, positive scale can be modified to be centered around the zero point. To open the table editor, follow this click path: <strong>Workpad toolbar</strong> → <strong>Edit</strong>.</p>
+<h3 id="re-sorting-answer-options" class="wysiwyg-text-align-justify"><strong>Re-sorting answer options</strong></h3>
+<p class="wysiwyg-text-align-justify">By default, the answer options in tables and charts are sorted in the order of the questionnaire editor (“number”). If necessary, however, you may re-sort the answers.

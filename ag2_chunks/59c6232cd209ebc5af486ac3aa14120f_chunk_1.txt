@@ -1,0 +1,59 @@
+" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="2432">Which answers are indispensable for the routing of the survey?</p>
+</li>
+<li>
+<p data-renderer-start-pos="2498">To which questions do you want to obtain answers from as many respondents as possible?</p>
+</li>
+<li>
+<p data-renderer-start-pos="2588">How would you react if your answer to a question were rejected as incorrect by a survey system?</p>
+</li>
+</ul>
+<p data-renderer-start-pos="2687">In addition to the psychological effects on the respondents, there are technical aspects as well:</p>
+<ul class="ak-ul" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="2788">On each questionnaire page, you can create as many plausibility checks as required. But plausibility checks require a lot of server resources, i.e. they affect the performance of the questionnaire, similar to other checks and dynamic features. Therefore, it is recommended to use not more than 50 plausibility checks per page.</p>
+</li>
+<li>
+<p data-renderer-start-pos="3118">For plausibility checks, no dedicated sort order is implemented. I.e. while you may arrange the checks on a specific page in a specific sequence, this order may get lost especially if copying or importing the project.</p>
+</li>
+<li>
+<p data-renderer-start-pos="3339">The conditions of plausibility checks should refer only to variables that have a defined value. If condition variables are not filled at all or contain missings (e.g. because a question or answer option has been hidden or if a respondent hasn’t filled an entry field) the checks can have unexpected or even wrong results.</p>
+</li>
+<li>
+<p data-renderer-start-pos="3665">Try to avoid complex plausibility check conditions or to substitute them by multiple simple plausibility checks. This way it is easier to get an overview of the variables used in the plausibility check and to avoid unexpected results.</p>
+</li>
+<li>
+<p data-renderer-start-pos="3903">If necessary, the pro editor allows to define complex conditions.</p>
+</li>
+<li>
+<p data-renderer-start-pos="3972">In general, it is recommended to abstain from applying both hiding conditions and plausibility checks to the same variables.</p>
+</li>
+<li>
+<p data-renderer-start-pos="4100">When dealing with question types whose variables have characteristics (e. g. single response list), please note: As soon as a single answer option of the question, i.e. one characteristic of the variable, is hidden, the variable will be defined as “missing” when used in a plausibility check. Therefore, in this case, the actual value of the variable cannot be determined by means of a plausibility check. If you cannot or do not want to work without the plausibility check, you might want to consider using a list instead of hiding conditions.</p>
+</li>
+<li>
+<p data-renderer-start-pos="4648">If a plausibility check checks several variables, and only one or a few of these are affected by hiding conditions, it may make sense to deploy the option “Execute check if one or more items are blinded out?”. If this option is activated, the variables affected by the hiding condition will simply be skipped when executing the check. Mind that if all variables of the check are affected, it will not be executed, to prevent that participant get stuck on the page.</p>
+</li>
+</ul>
+<div class="fabric-editor-block-mark fabric-editor-alignment cc-5inqjd" data-align="center">
+<h2 id="Example:-Plausibility-Check" data-renderer-start-pos="5118">Example: Plausibility Check</h2>
+</div>
+<p data-renderer-start-pos="5148">Let’s assume that you ask the participants of your survey to enter their year of birth into an open entry field. You want to ensure that they enter only reasonable values: The values should be four-digit numbers inside a reasonable range, e.g. between 1900 and 2000.</p>
+<p data-renderer-start-pos="5416">To realize this with a plausibility check, please proceed as follows:</p>
+<ul>
+<li data-renderer-start-pos="5489">In the questionnaire editor, choose the page on which you want to perform the plausibility check. Click on the title of that page. The page view will open.</li>
+<li>Click on the Plausibility checks menu.</li>
+</ul>
+<p class="wysiwyg-indent3"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015011205522"></p>
+<ul>
+<li data-renderer-start-pos="5648">The overview of plausibility checks is opened. No checks have been defined yet.</li>
+<li data-renderer-start-pos="5778">Click on the + Plausibility check button.</li>
+<li data-renderer-start-pos="5823">Enter the title.</li>
+<li data-renderer-start-pos="5843">Select the “Range check” check type. For detailed explanations of the check types, please see this post.​</li>
+</ul>
+<p class="wysiwyg-indent3"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015011206162"></p>
+<ul>
+<li data-renderer-start-pos="5843">Confirm with Proceed.</li>
+<li data-renderer-start-pos="5982">The entry dialog is opened.</li>
+<li>In the “User may ignore this check” field, the “

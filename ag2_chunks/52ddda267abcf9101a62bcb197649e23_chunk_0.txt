@@ -1,0 +1,88 @@
+<h1 id="h_01J9TV7H1WYKHFY71NS0ZWNTES">Overview</h1>
+<p>This guide outlines the general process for activating various features in the EFS Admin UI, using the <strong>Portal</strong> feature as an example.</p>
+<p><strong>Note:</strong> Before adding any feature, confirm eligibility with the Account Manager (AM) or Sales contact, particularly if the request comes from a customer.</p>
+<h3 id="h_01J9TWDPKKNAG8K7MWKPM6H53J">Prerequisites:</h3>
+<ul>
+<li>
+<strong>Customer Eligibility Check:</strong> Verify with the Account Manager (AM) or Sales contact to ensure the customer is eligible for the feature.</li>
+<li>
+<strong>Root Access:</strong> Ensure you have root access to the EFS Admin UI to modify configuration settings.</li>
+</ul>
+<h1 id="h_01J9TV7H1WZ2ZN4VMN6XWT3GHP">Solution</h1>
+<h4 id="h_01J9TWJ6XRWYR200CH97PC4YRJ"><strong>Important Notice:</strong></h4>
+<p>The steps to activate specific features may vary depending on the feature in question. For precise instructions tailored to each feature, refer to the <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20714568035218-Provisioning-new-DXi-installations-WIP" rel="noopener">dxi_installation_checklist</a> and locate the <strong>2.2.2 Modules</strong> section.<br><br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21895602919314"></p>
+<p>The following steps provide an example for enabling the <strong>Portal</strong> feature, as illustrated in this screenshot:<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21895602921234"> </p>
+<h4 id="h_01J9TWJ6XRG2WRDH2K2QZEZZAZ">Example Steps for Activating the Portal Feature:</h4>
+<ol>
+<li>
+<p><strong>Log In as Root</strong></p>
+<ul>
+<li>Access the EFS Admin UI with root credentials.</li>
+</ul>
+</li>
+<li>
+<p><strong>Set Configuration Variables</strong></p>
+<ul>
+<li>In the Admin UI, navigate to <code>System &gt; Options &gt; Platform Cockpit &gt; System Configurations</code> &gt; Search for <code>Module</code>.</li>
+<li>Locate the <strong>Modules</strong> key within <code>Module: efs </code>section.</li>
+</ul>
+</li>
+<li>
+<p><strong>Add Required Modules</strong></p>
+<ul>
+<li>Add the following modules for Portal activation:
+<ul>
+<li><code>library</code></li>
+<li>
+<code>portal</code><br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21895602923026">
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Execute <code>healself</code> on the Server </strong>(skip if you setup multiple modules and run once at the end)</p>
+<ul>
+<li>Open your terminal and navigate to the EFS installation directory:
+<ul>
+<li>
+<pre>i [installation]<br>cd www</pre>
+</li>
+</ul>
+</li>
+<li>Run the following command to execute the <code>healself</code> function:
+<div class="dark bg-gray-950 contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative">
+<div class="sticky top-9 md:top-[5.75rem]"> </div>
+<div class="overflow-y-auto p-4" dir="ltr">
+<code class="!whitespace-pre hljs language-bash">php support/healself.php --no-maintenance</code><br><br>
+</div>
+</div>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Create and Delete a New Portal</strong></p>
+<ul>
+<li>In the EFS Admin UI, create a new portal.</li>
+<li>Set the portal’s status to <strong>Online</strong>.</li>
+<li>After verifying the portal is active, delete it.
+<ul>
+<li>
+<em>Reason:</em> This step allows SCSS files to compile correctly during the portal’s first activation, helping to prevent broken CSS for users.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Update Globis Installation </strong>(This step is not in the dxi_installation_checklist but needs to be followed)</p>
+<ul>
+<li>Go to the Globis installation section and add the <strong>Portal</strong> module.</li>
+<li>Document the update by adding a note in the system: <code>"Activated portal (case [case ID])"</code>
+</li>
+</ul>
+</li>
+</ol>
+<h1 id="h_01J9V15GXMDTZHXMMXZQWAG304">Exceptions</h1>
+<ul>
+<li id="h_01J9V15GXMV85T8MY9FKFPWS3A">
+<h2 id="h_01J9V162NWNX0P0JNNSWJYTPKR"><strong>Special Instructions for Activating

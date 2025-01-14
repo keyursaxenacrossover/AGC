@@ -1,0 +1,127 @@
+ that includes rules dynamically + custom QB-managed-records</p>
+<ul>
+<li>
+<p>Untested</p>
+</li>
+<li>
+<pre><code class="language-text">TBD</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>MX-Record :</p>
+<ul>
+<li>
+<p>(not recommended) Never send any mail for which the deposited mail-server does not accept answers</p>
+</li>
+<li>
+<p>(Not offered by Tivian) Setup of a single mail-relay, which then relays the mails as needed</p>
+<ul>
+<li>
+<p>Make sure to append the SFP-Record accordingly to prevent fails</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="domain-transfer">Domain-Transfer</h4>
+<ul>
+<li>
+<p>Advantage:</p>
+<ul>
+<li>
+<p><span style="color: #36b37e;">Tivian can manage all records as necessary</span></p>
+<ul>
+<li>
+<p><span style="color: #36b37e;">The DNS-Provider we use does support ALIAS- / ANAME-Record</span></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Disadvantages:</p>
+<ul>
+<li>
+<p><span style="color: #ff5630;">Customer is no longer in control of the domain =&gt; no change without ticket at Tivian</span></p>
+</li>
+</ul>
+</li>
+<li>
+<p>How-To:</p>
+<ul>
+<li>
+<p><strong>TBD </strong>… but in general transfer has to be initiated, QB has to setup matching records to prevent disruption</p>
+</li>
+<li>
+<p>Tivian can setup the domain so that customer is still domain owner (We put in their values during domain registration), but Tivian will be put down as technical contact</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="customer-handover-templates">Customer Handover Templates</h3>
+<h4 id="for-apex-domains-incl-www-subdomain-not-if-akamai-is-in-the-mix">For Apex-Domains (incl. www-Subdomain) (NOT: if Akamai is in the Mix!)</h4>
+<p>Replace:</p>
+<ul>
+<li>
+<p><code>&lt;Alias-Domain&gt;</code> with the Apex-Domain of the customer, e.g. <code>example.com</code></p>
+</li>
+<li>
+<p><code>&lt;ab1234&gt;.customervoice360.com</code> with the technical domain of the installation</p>
+</li>
+</ul>
+<pre><code class="language-text">Hi TS / 1st,
+
+
+For this Domain to work properly as an EFS-Alias the customer has to setup DNS first.
+There are multiple options available, which are the following in descending order of preference:
+
+
+Option 1) ALIAS- / ANAME-Record / CNAME Flattening or similar Feature
+There is no official name for this, but if the DNS-Provider supports it, it will propably be named like that.
+
+The Record that will have to be configured should look like one of the following:
+&lt;Alias-Domain&gt; IN ALIAS &lt;ab1234&gt;.customervoice360.com
+&lt;Alias-Domain&gt; IN ANAME &lt;ab1234&gt;.customervoice360.com
+&lt;Alias-Domain&gt; IN Flattened-CNAME &lt;ab1234&gt;.customervoice360.com
+
+(if applicable) For the www-Subdomain:
+www.&lt;Alias-Domain&gt; IN CNAME &lt;Alias-Domain&gt;
+
+
+Option 2) NS-Records
+With this Tivian takes over all of the DNS-Record Management whithout requiring a DNS-Transfer.
+
+This is a multi-step process which is disruption-free:
+1. We need a list of all DNS-Records already on the domain
+2. We will then set the up every DNS-Record in that list on our end
+3. We configure addtional DNS-Records required by EFS
+3. We provide the NS-Record that has to be setup
+4. Once the NS-Record is setup the domain-setup is complete
+
+
+Option 3) Domain-Transfer
+The last option would be a Domain-Transfer. We have a Reseller-Contract in place with our DNS-Provider Variomedia.
+This way we can set up the domain in a way that the customer remains the domain owner but Tivian deposited as the Technical-Contact.
+This way Tivian will manage all DNS-Records, this means any DNS-Change will have to be requested via a Tivian-Support-Ticket.
+
+To get this done disruption-free we need the following:
+1. Customer Contact-Info for the Domain-Registration-Preperation at Variomedia
+2. A list of all DNS-Records already on the domain
+
+
+Regards
+&lt;Your Name ;-)&gt;</code></pre>
+<h4 id="for-subdomains-not-if-akamai-is-in-the-mix">For Subdomains (NOT: if Akamai is in the Mix!)</h4>
+<p>Replace:</p>
+<ul>
+<li>
+<p><code>&lt;Alias-Domain&gt;</code> with the Sub-Domain of the customer, e.g. <code>some.example.com</code></p>
+</li>
+<li>
+<p><code>&lt;ab1234&gt;.customerv

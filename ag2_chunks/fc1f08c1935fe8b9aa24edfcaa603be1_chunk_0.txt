@@ -1,0 +1,98 @@
+<p><supportagent><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/1LS/pages/3255599140">https://qbdocs.atlassian.net/wiki/spaces/1LS/pages/3255599140</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</supportagent></p>
+
+<article>
+
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K">Overview</h1>
+<p>
+  This article provides guidance on handling potential security issues, data breaches, and security questions. It outlines the workflow for addressing these concerns, including ticket handling procedures, communication protocols, and specific cases related to IT security.
+</p>
+
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>
+  This guide focuses on the processes and procedures for managing security-related issues within the Tivian support system. It covers ticket handling, communication with customers, and collaboration between IT Security and Technical Support teams.
+</p>
+
+<ul>
+  <li><a href="#workflow">Workflow for Potential Security Issues / Data Breach</a></li>
+  <li><a href="#cases">Specific Security Cases</a></li>
+  <li><a href="#security_questions">Security Questions and Questionnaires</a></li>
+  <li><a href="#ticketing_procedure">Ticketing Procedure between IT Security and Support</a></li>
+</ul>
+
+<h2 id="workflow">Workflow for Potential Security Issues / Data Breach</h2>
+<p>
+  When a customer raises a ticket with potential security issues or data breach, follow these steps:
+</p>
+
+<h3>Ticket Handling Procedure</h3>
+<ol>
+  <li>Add @Feyzi Erdar and Maria as Request Participants and set them as watchers</li>
+  <li>Set priority to "High"</li>
+  <li>Set label to "security"</li>
+  <li>Forward ticket to TechSupport</li>
+  <li>Inform Mathias (Thurn) via Teams chat (substitution: Pascal Arnold)</li>
+  <li>TechSupport will proceed</li>
+  <li>Post ticket number in Teams Channel "Alerting Support &lt;-&gt; ITS"</li>
+  <li>Keep the customer informed</li>
+</ol>
+
+<p>
+  Note: For serious security issues or data breaches, consider sending an additional email with relevant information to breach@tivian.com.
+</p>
+
+<h2 id="cases">Specific Security Cases</h2>
+
+<h3>Panel Website Security Headers</h3>
+<p>
+  For panel websites, such as Psyma, certain security headers can be added using &lt;meta&gt; tags in the Profi-Editor and Panel-Website templates. Detailed information about these headers can be found at:
+  <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy#using_the_html_meta_element">Mozilla Developer Network - Content Security Policy</a>
+</p>
+
+<h3>HTML Injection Vulnerability</h3>
+<p>
+  Refer to the following ticket for information on HTML injection vulnerability:
+  <a href="https://tivian.atlassian.net/jira/servicedesk/projects/TIVI/queues/custom/77/TIVI-10295">TIVI-10295</a>
+</p>
+
+<h3>Log4j Vulnerability</h3>
+<p>
+  Handle Log4j-related tickets according to the "Security" process and add the additional label "log4j". Use the following communication template for client inquiries:
+</p>
+
+<h4>English Version</h4>
+<p>
+  Subject: Critical vulnerability under investigation
+</p>
+<p>
+  As you may have heard in the news over the weekend, experts found a critical vulnerability in a widely used Java library. Tivian is working hard to investigate the impact of this vulnerability and will, if necessary, close it in the short term.
+</p>
+<p>
+  We will inform you as soon as an update is available.
+</p>
+<p>
+  Kind regards,
+  Tivian Support
+</p>
+
+<h2 id="security_questions">Security Questions and Questionnaires</h2>
+<p>
+  Use the following link for IT security questions or missing IT Sec documentation: <a href="https://guidespark.atlassian.net/jira/software/c/projects/ITS/boards/173">ITS Project Board</a>
+</p>
+<p>
+  This process is used when customers cannot open tickets on their own. Either the account manager or support staff can create these tickets. The goal is to avoid email distribution battles and generate a ticket for all inquiries.
+</p>
+
+<h2 id="ticketing_procedure">Ticketing Procedure between IT Security and Support</h2>
+
+<h3>Case 1: IT Security → Technical Support</h3>
+<ol>
+  <li>IT Security opens an ITS Ticket</li>
+  <li>For Tenable Vulnerability scan findings, forward the notification email to support@tivian.com</li>
+  <li>For other cases, IT Security opens a TIVI Ticket and links the ITS Ticket as an internal note</li>
+  <li>Support proceeds with the TIVI ticket and leaves an internal note in the ITS ticket after completion</li>
+</ol>
+
+<h3>Case 2: Technical Support → IT Security</h3>
+<ol>
+  <li>Technical Support opens a TIVI Ticket</li>
+  <li>Technical Support opens an ITS Ticket and

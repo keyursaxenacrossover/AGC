@@ -1,0 +1,154 @@
+>
+<p>Check if report is available</p>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">true</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>reportId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>id of report <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>reportPublicationId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>id of publication <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="header-287">Survey participations</h2>
+<div class="expand-macro">
+<h4 id="h_01J441N79NSXVPTBQ668BT8PSN"> </h4>
+<h3 id="header-289">POST /survey/results/{surveyId}/configured</h3>
+<p>Returns the survey results as raw data in CSV format. <code>dateRange</code>, <code>sort</code>, <code>config</code> and individual config options are optional. <br>Valid options for <code>exportTemplate</code>: <em>COMPLETE_SURVEY, WITHOUT_TIMESTAMP, TEXT_ONLY, NUMBER_ONLY, PARTICIPANT, PARTICIPANT_RESULT, PARTICIPANT_MASTER_RESULT, LOFT_COMBINED, LOFT_COMBINED_ANONYM.</em><br><em>Valid options for </em><code>compression</code><em>: NONE, ZIP, TAR.</em></p>
+<p><strong>Note</strong>: <code>POST /survey/results/{surveyId}/completed</code> and <code>POST /survey/results/{surveyId}</code> are deprecated. Please migrate to this call by adding /configured to your endpoint and supplying relevant config options.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "exportTypes": [
+    "QUESTIONNAIRE"
+  ],
+  "includeVariables": [
+    "v_1", "v_2"
+  ],
+  "dateRange": {
+    "from": "2020-07-01T12:53:50+00:00",
+    "to": "2020-07-02T12:53:50+00:00"
+  },
+  "sort": [
+    {
+      "column": "lfdn",
+      "direction": "ASC"
+    }
+  ],
+  "config": {
+    "exportTemplate": "COMPLETE_SURVEY",
+    "charset": "UTF-8",
+    "compression": "NONE",
+    "missingValueText": "-66",
+    "missingValueNumeric": "-77",
+    "missingValueTimestamp": "0",
+    "missingValueDatetime": "0000-00-00 00:00:00",
+    "skipLoopVars": true,
+    "dispositionCodeList": [
+      "31"
+    ],
+    "useCommaDelimiter": true
+  }
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">Base64 encoded binary data</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>surveyId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>id of survey <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79NXSSCHPH8FBHNT2DG"> </h4>
+<h3 id="header-290">GET /survey/results/{surveyId}/participations</h3>
+<p>Return frequencies for all disposition codes allocated in a survey, thus basic information about the survey's participation statuses.</p>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[
+    {
+        "code": 11,
+        "count": 8
+    },
+    {
+        "code": 12,
+        "count": 2
+    },
+   

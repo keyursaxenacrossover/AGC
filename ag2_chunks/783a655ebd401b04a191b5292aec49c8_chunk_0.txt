@@ -1,0 +1,25 @@
+<h1 id="h_01J6S7X79ZCP5TDB1FSX4DSAVE">Overview</h1>
+<p>This guide provides a step-by-step approach to set EFS user emails to <code>.invalid</code> and details how to revert the changes if necessary.</p>
+<h1 id="header-1">How to set the email of EFS users to .invalid</h1>
+<h2 id="header-3">Step by step:</h2>
+<ul>
+<li>
+<p>copy <strong>/nfs/scripts/anonymize.php</strong> to your home</p>
+</li>
+<li>
+<p>execute <strong>/opt/pdp/opst/apps/php/bin/php anonymize.php</strong></p>
+</li>
+<li>
+<p>all needed and useful parameters are described</p>
+</li>
+<li>
+<p>to reanonymize the @questback.com users login to the master db with <strong>efslogin -mo</strong></p>
+</li>
+<li>
+<p>execute <strong>UPDATE users SET u_email = SUBSTRING(u_email, 1, LENGTH(u_email)-8) WHERE u_email like "%questback.com.invalid";</strong></p>
+</li>
+</ul>
+<p> </p>_email)-8) WHERE u_email like "%questback.com.invalid";</strong></p>
+</li>
+</ul>
+<p> </p>

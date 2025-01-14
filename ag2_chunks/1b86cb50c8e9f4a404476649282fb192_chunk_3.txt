@@ -1,0 +1,116 @@
+.g. 311).</p>
+<p>By clicking on the icon, you can invoke the dialog for changing the question type.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 288.212px;">
+<p>Question Title</p>
+</td>
+<td style="width: 431.441px;">
+<p>This field contains the title of the question.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 288.212px;">
+<p>Question Text</p>
+</td>
+<td style="width: 431.441px;">
+<p>In this field, you can enter the question text as it will appear on the website.</p>
+<ul>
+<li>
+<p>From EFS 10.0 you can use the TinyMCE editor to layout question text, fill-in instructions, and help text.</p>
+</li>
+<li>
+<p>If you do not want to use the TinyMCE editor, you can easily deactivate the feature in the menu <strong>Options</strong> → <strong>Personal preferences </strong>on the tab <strong>Behavior of questionnaire editor</strong></p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="width: 288.212px;">
+<p>Fill-in instruction</p>
+</td>
+<td style="width: 431.441px;">
+<p>Here you can insert explanatory notes on answering the question, e.g. “Multiple answers possible”. If you do not need a fill-in instruction, please delete the standard text (“Here you explain...”) from the corresponding input field.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 288.212px;">
+<p>Help text</p>
+</td>
+<td style="width: 431.441px;">
+<p>Individual questions give respondents the option of invoking a help pop-up window. Here, you can enter the help text that is to appear in the pop-up window later.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 288.212px;">
+<p>Mark the question as “protected”</p>
+</td>
+<td style="width: 431.441px;">
+<p>You can protect respondents’ answers to the current question against unauthorized viewing.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 288.212px;">
+<p>Hiding condition for this question</p>
+</td>
+<td style="width: 431.441px;">
+<p>Depending on the answers the respondent has previously given, you can hide the question. To define the conditions, click on the <strong>Edit hiding condition </strong>link. For more information, see below.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 288.212px;">
+<p>Activate horizontal/vertical flipping of answers</p>
+</td>
+<td style="width: 431.441px;">
+<p>This function offers an alternative to randomization: The question’s items will be mirrored on the horizontal (vertical flipping) or the vertical (horizontal flipping) centerline.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 288.212px;">
+<p>Mandatory (DAC)</p>
+</td>
+<td style="width: 431.441px;">
+<p>If you tick the “Mandatory” checkbox, EFS will automatically check to see whether the respondent has answered this question. If this is not the case, an appropriate message will be displayed.</p>
+<p>Please note: In the case of matrix questions, selecting this function will only ensure that at least any one item will be answered. You can force respondents to answer several items or all items by ticking the checkboxes in the “dac” column in the “Answer options” section of the entry form.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 288.212px;">
+<p>Alternate colors</p>
+</td>
+<td style="width: 431.441px;">
+<p>If this function is activated, answer options and inside titles will have alternating background colors (white and grey) to improve readability.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 288.212px;">
+<p>Dynamic column text wrap after x answers</p>
+</td>
+<td style="width: 431.441px;">
+<p>After the selected number of answer options has been reached the list wraps and a new column begins. This function is particularly well suited for use in combination with hiding conditions on item level or randomization, i.e. for situations in which “New column” is too static.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 288.212px;">
+<p>Number of items visible</p>
+</td>
+<td style="width: 431.441px;">
+<p>This field allows you to specify how many of the existing items are to be displayed:</p>
+<ul>
+<li>
+<p>With the default setting, “0”, all items will be displayed.</p>
+</li>
+<li>
+<p>If you enter a number that is less than the actual number of existing items, the selection will be made by counting off the existing items from the top.</p>
+</li>
+</ul>
+<p>Using this function is particularly recommended when combined with item randomization because the randomization produces varying item combinations.</p>
+<p>If the function is used in combination with hiding conditions for answer options, the output of the questionnaire page will be done by first considering the hiding conditions. Only after that will the number be limited.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 288.212px;">
+<p>Wrap item text</p>
+</td>
+<td style="width: 431.441px

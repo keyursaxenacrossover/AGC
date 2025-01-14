@@ -1,0 +1,103 @@
+xxx.customervoice360.com/reporting.csv' fields terminated by ';' ENCLOSED BY '"' LINES TERMINATED BY '\n'
+</code></pre>
+</li>
+</ul><h2 id="header-31">Reporting+ Tabellen</h2><table data-layout="default"><tbody>
+<tr>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/SupportEFSAnalyticsLab?sortcol=0;table=3;up=0#sorted_table">Table</a></p></th>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/SupportEFSAnalyticsLab?sortcol=1;table=3;up=0#sorted_table">Description</a></p></th>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/SupportEFSAnalyticsLab?sortcol=2;table=3;up=0#sorted_table">(important) Columns</a></p></th>
+</tr>
+<tr>
+<td><p>survey_reporting_chapter</p></td>
+<td><p></p></td>
+<td><p>chapter_id, label_title, label_description</p></td>
+</tr>
+<tr>
+<td><p>survey_reporting_chart_colorscheme</p></td>
+<td><p></p></td>
+<td><p>id, type, name, values, report_id</p></td>
+</tr>
+<tr>
+<td><p>survey_reporting_condition</p></td>
+<td><p></p></td>
+<td><p>condition_id, condition_type, definition</p></td>
+</tr>
+<tr>
+<td><p>survey_reporting_crossbreak</p></td>
+<td><p></p></td>
+<td><p>crossbreak_id, title_id, description_id, settings_id, root_node_id, is_repository, report_id</p></td>
+</tr>
+<tr>
+<td><p>survey_reporting_crossbreak_node</p></td>
+<td><p></p></td>
+<td><p>crossbreak_node_id, title_id, description_id, sort_id, parent_sort_id, children,items</p></td>
+</tr>
+<tr>
+<td><p>survey_reporting_dataupdate_schedule</p></td>
+<td><p></p></td>
+<td><p>report_id, scheduled, status, do_repeat, repeat_interval_type, repeat_interval_value, start_repeat_date</p></td>
+</tr>
+<tr>
+<td><p>survey_reporting_dependency</p></td>
+<td><p></p></td>
+<td><p>object_id, object_type, linked_object_id, linked_object_type, dependency_type, report_id</p></td>
+</tr>
+<tr>
+<td><p>survey_reporting_filter</p></td>
+<td><p></p></td>
+<td><p>filter_id, report_id, label_id, settings_id, condition_id, is_repository</p></td>
+</tr>
+<tr>
+<td><p>survey_reporting_history</p></td>
+<td><p></p></td>
+<td><p>report_id, pid, publication_id, user_id, activity_label</p></td>
+</tr>
+<tr>
+<td><p>survey_reporting_item</p></td>
+<td><p></p></td>
+<td><p>item_id, classtype, position, source_variable, source_code, title_id, missing, hidden, locked, type, properties (serialized Array, can get very long), fake_code</p></td>
+</tr>
+<tr>
+<td><p>survey_reporting_label</p></td>
+<td><p>label IDs within the separate reports</p></td>
+<td><p>label_id, report_id, source_type, source_id, source_pid</p></td>
+</tr>
+<tr>
+<td><p>survey_reporting_label_translation</p></td>
+<td><p>actual label texts (translations)</p></td>
+<td><p>label_id, language_id, translation</p></td>
+</tr>
+<tr>
+<td><p>survey_reporting_language</p></td>
+<td><p></p></td>
+<td><p>language_id, report_id, lang_code, lang_label, is_default</p></td>
+</tr>
+<tr>
+<td><p>survey_reporting_layout</p></td>
+<td><p></p></td>
+<td><p>layout_id, layout_name, layout_path</p></td>
+</tr>
+<tr>
+<td><p>survey_reporting_limit</p></td>
+<td><p></p></td>
+<td><p>type, value, alowed</p></td>
+</tr>
+<tr>
+<td><p>survey_reporting_log</p></td>
+<td><p>information about actions done within a report and errors that occurred</p></td>
+<td><p>tstamp, act, user_id, report_id, error_trace</p></td>
+</tr>
+<tr>
+<td><p>survey_reporting_publication</p></td>
+<td><p>publication = Export, gives information about publications</p></td>
+<td><p>publication_id, report_id, filename, created, creator_id</p></td>
+</tr>
+<tr>
+<td><p>survey_reporting_publication_job</p></td>
+<td><p>Export jobs that should be done once or repeatedly (automatically)</p></td>
+<td><p>job_id, publication_id, scheduled,started, finished, status</p></td>
+</tr>
+<tr>
+<td><p>survey_reporting_publication_setting</p></td>
+<td><p>settings of a publication</p></td>
+<td><p>setting_id, publication_id, filetype, layout, report_lang, publish_type,

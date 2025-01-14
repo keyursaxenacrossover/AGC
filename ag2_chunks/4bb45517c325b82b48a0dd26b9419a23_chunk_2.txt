@@ -1,0 +1,75 @@
+-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary dark:bg-gray-950">
+<div class="overflow-y-auto p-4" dir="ltr">
+<pre><code class="language-plaintext">SELECT 
+    pa.uid, 
+    pa.pseudonym, 
+    sd.status, 
+    sd.date_of_last_access, 
+    s.v_603, 
+    md.md_us_cs_seed, 
+    s.v_646, 
+    md.md_us_ca_corn, 
+    s.v_654, 
+    md.md_us_ca_sorghum, 
+    s.page_history 
+FROM 
+    survey_44730 AS s 
+LEFT JOIN 
+    panel_att AS pa ON (s.uid = pa.uid) 
+LEFT JOIN 
+    md_data AS md ON (s.uid = md.uid) 
+LEFT JOIN 
+    sample_data AS sd ON (s.uid = sd.uid AND s.lfdn = sd.lfdn) 
+WHERE 
+    pa.pseudonym IN (483706145, 463706643);
+</code></pre>
+</div>
+<div class="overflow-y-auto p-4" dir="ltr"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/22092281210514"></div>
+<div class="overflow-y-auto p-4" dir="ltr">Or using ospe_time_log:<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/22092281210770">
+</div>
+<div class="overflow-y-auto p-4" dir="ltr"> </div>
+</div>
+<hr>
+<h3 id="h_01JAMY3QTZY2V3E78R7QGJR831"><strong>3. Checking AWS DB Logs for survey related requests</strong></h3>
+<p>If a survey’s response data or master data variables are not updated correctly, the issue may be further checked at the <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/22010573804818-Accessing-and-Querying-AWS-Cloudwatch-DB-Logs">AWS DB Logs</a> level. Specifically, you might be looking for failed connection IDs.</p>
+<h4 id="h_01JAMY3QTZBBYQCPQ1E6JVGE5D">
+<strong>Steps</strong>:</h4>
+<ol>
+<li>
+<p><strong>Identify Connection IDs</strong>:</p>
+<ul>
+<li>Given the exact time of the request (deducted from above steps through DB), and the different fields (ex: uid, pid, etc..) , you should be able to look for the connectionID in AWS logs.<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/22092277009554">
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Review Log Entries</strong>:</p>
+<ul>
+<li>Check log entries for <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/22010573804818-Accessing-and-Querying-AWS-Cloudwatch-DB-Logs#h_01JAN59M52T72NERA01VW3V8Q2">incomplete connections</a> (CONNECTIONID entries without a "Quit" event or in Error log group) to identify abandoned or incomplete surveys.</li>
+<li>Analyze these logs for unexpected queries</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="h_01JAMY3QTZ78PKQT3GGVYBHDS4"><strong>4. Reviewing Grafana PHP Logs for Survey Errors</strong></h3>
+<ul>
+<li>All the PHP requests are normally tracked through <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21741183591314">Grafana</a>.</li>
+<li>You can look for errors and unexpected requests using the <strong>timestamp of relevant request </strong>as found in MariaDB</li>
+</ul>
+<hr>
+<h3 id="h_01JAMY3QTZXCW2DDDCF6ZYN4HR"><strong>5. Troubleshooting Master Data Updates</strong></h3>
+<p>If a survey’s master data allocation fails (e.g., <code>md_us_ca_corn</code> is not updated), this indicates that the transfer of data from the survey to the master data section encountered an issue. All the above steps apply, in addition to the below.</p>
+<h4 id="h_01JAMY3QTZ26R87DTYX4GG3F4C">
+<strong>Steps</strong>:</h4>
+<ol>
+<li>
+<p><strong>Master Data Allocation Setup</strong>:</p>
+<ul>
+<li>Verify that the master data allocation rules in the survey setup were correct. This can be checked in the survey configuration under <strong>Survey menu &gt;&gt; Master Data Allocation</strong>.</li>
+</ul>
+</li>
+<li>
+<strong>Check the step which should transfer the master data, and when should the transfer EXECUTE</strong>
+<ul>
+<li>For instance, check this example survey where the participant had been set to dispostione code/status 31 respectively 32 and we know that this is happening on the final page.
+<p><span style="opacity: 1;"><img id="image_39a7b195-25a6-4b5e-b470-34545b99be52" class="image_resized" style="width: 788px;" src="https://central-supportdesk.zendesk.com/attachments

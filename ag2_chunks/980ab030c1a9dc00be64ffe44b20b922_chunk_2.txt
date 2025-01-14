@@ -1,0 +1,40 @@
+ to a specific group category.</li>
+<li>
+<strong>Panel group</strong>: Restrict to a panel group, selectable after choosing the category.</li>
+</ul>
+<p id="h_01J3FDRACK53NG1N5T2WJMWWXT" class="wysiwyg-text-align-justify"><strong>Restricting Export to Panelists with Specific Status</strong></p>
+<p class="wysiwyg-text-align-justify">You can export data of panelists with specific statuses. For example, export data of panelists with the “Admitted temporarily” status or exclude data for statuses such as “Tester” and “Moderator”. To do so, tick only the checkboxes for the desired statuses in the “Apply to panelists with status” row. By default, all checkboxes are ticked.</p>
+<p id="h_01J3FDRACK63WK1AXM4WTVPWSZ" class="wysiwyg-text-align-justify"><strong>Restricting Export to Selected Variables</strong></p>
+<p class="wysiwyg-text-align-justify">In the case of selective export, only selected variables will be exported. This is useful for export processes that include master data, as large panels can quickly become unmanageable. For example, you can export only variables that provide sociodemographic information like age, gender, and profession, or only email addresses.</p>
+<p class="wysiwyg-text-align-justify">To perform a selective export:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>Tick the “Selective export” checkbox.</li>
+<li>Click on Export to see the list of possible variables and select the desired ones.</li>
+</ol>
+<p class="wysiwyg-text-align-justify"> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863" class="wysiwyg-text-align-justify">FAQ</h1>
+<h3 id="h_01HGKSMPRTK5QQCQX9QXQJ1YJNR" class="wysiwyg-text-align-justify">What is the maximum file size for exports in EFS?</h3>
+<p class="wysiwyg-text-align-justify">EFS can generate export files with up to 2 GB in size.</p>
+<h3 id="h_01HGKSMPRTPXJ4YJXQXHM0XJNM" class="wysiwyg-text-align-justify">Are there any modifications made to the data during export?</h3>
+<p class="wysiwyg-text-align-justify">Yes, some minor modifications are made to ensure effective export:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Backslashes are removed</li>
+<li>Special characters like \n, \t, \r, and " are removed</li>
+<li>NULL values are replaced by an empty string</li>
+</ul>
+<h3 id="h_01HGKSMPRTV5QQCQX9QXQJ1YJNR" class="wysiwyg-text-align-justify">Can I create custom export templates?</h3>
+<p class="wysiwyg-text-align-justify">Yes, you can create and save custom export templates in the <strong>People → Export → Template editor</strong> menu.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+</article>JNR" class="wysiwyg-text-align-justify">What is the maximum file size for exports in EFS?</h3>
+<p class="wysiwyg-text-align-justify">EFS can generate export files with up to 2 GB in size.</p>
+<h3 id="h_01HGKSMPRTPXJ4YJXQXHM0XJNM" class="wysiwyg-text-align-justify">Are there any modifications made to the data during export?</h3>
+<p class="wysiwyg-text-align-justify">Yes, some minor modifications are made to ensure effective export:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Backslashes are removed</li>
+<li>Special characters like \n, \t, \r, and " are removed</li>
+<li>NULL values are replaced by an empty string</li>
+</ul>
+<h3 id="h_01HGKSMPRTV5QQCQX9QXQJ1YJNR" class="wysiwyg-text-align-justify">Can I create custom export templates?</h3>
+<p class="wysiwyg-text-align-justify">Yes, you can create and save custom export templates in the <strong>People → Export → Template editor</strong> menu.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+</article>

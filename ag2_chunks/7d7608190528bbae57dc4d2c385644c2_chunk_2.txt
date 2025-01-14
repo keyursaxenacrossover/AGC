@@ -1,0 +1,217 @@
+AML Federation</li>
+</ul>
+<p>Possibly you have to ask these questions after creating resources on our side and sending our metadata.xml to the client.</p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 218.0px;">
+<col style="width: 216.0px;">
+<col style="width: 216.0px;">
+<col style="width: 216.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p><strong>Source</strong></p>
+</th>
+<th>
+<p><strong>Confiugration</strong></p>
+</th>
+<th>
+<p><strong>Meaning</strong></p>
+</th>
+<th>
+<p><strong>Example</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p><strong>client’s metadata.xml</strong></p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p>All following information should be included in that document - if not present ask for the following</p>
+</td>
+<td>
+<p>-</p>
+</td>
+</tr>
+<tr>
+<td>
+<p> </p>
+</td>
+<td>
+<p>IdP Issuer URI</p>
+</td>
+<td>
+<p>The issuer of URI for authentication. This usually aligns with the EntityID of the provider.</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p> </p>
+</td>
+<td>
+<p>IdP Single Sign-On URL</p>
+</td>
+<td>
+<p>Endpoint that receives SAML authentication requests.</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p> </p>
+</td>
+<td>
+<p>Idp Signature Certificate</p>
+</td>
+<td>
+<p>Certificate file that is used to verify signatures.</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p> </p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p> </p>
+</td>
+<td>
+<p>Request Binding</p>
+</td>
+<td>
+<p>How will SAML authentication requests be sent?</p>
+</td>
+<td>
+<p>HTTP POST</p>
+</td>
+</tr>
+<tr>
+<td>
+<p> </p>
+</td>
+<td>
+<p>Request Signature</p>
+</td>
+<td>
+<p>Should authentication request be signed? We would recommend/enforce that.</p>
+</td>
+<td>
+<p>yes/no</p>
+</td>
+</tr>
+<tr>
+<td>
+<p> </p>
+</td>
+<td>
+<p>Request Signature Algorithm </p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p> </p>
+</td>
+<td>
+<p>Response Signature Verification</p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p> </p>
+</td>
+<td>
+<p>Response Signature Algorithm</p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p> </p>
+</td>
+<td>
+<p>Destination </p>
+</td>
+<td>
+<p>Are destination and Single Sign-On URL different? If yes the client has to provide it.</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p>The client has to take care that the provided values and possible configurations on their side align with ours.</p>
+<p>The client has to take care that the following requested attributes are sent in the authentication request:</p>
+<ul>
+<li>
+<p>subjectNameID → has to be the email adress of the user</p>
+</li>
+<li>
+<p>email → has additionally be provided as attribute</p>
+</li>
+<li>
+<p>firstName → this should be the first name of the user</p>
+</li>
+<li>
+<p>lastName → this should be the last name of the user</p>
+</li>
+</ul>
+<p> </p>
+<h2 id="01J6A0MY3X0FDY4W1CWESK7HWG">If the client is using <strong>Azure AD</strong>
+</h2>
+<p>If the client is using Azure AD with OpenID Connect the following information are sufficient ( from the information listed inOIDC Federation) :</p>
+<ul>
+<li>
+<p><strong>Client ID</strong> and <strong>Client Secret</strong> ( created when following the instructions from: Azure AD Federation - Configuration (usually sent as a PDF to the client in the first email)</p>
+<ul>
+<li>
+<p>The client ID can also be later found in the “App registrations” in Azure (example below)</p>
+</li>
+<li><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998279944338" alt="image-20200721-154158.png"></li>
+</ul>
+</li>
+<li>
+<p><strong>Microsoft Tenant ID</strong></p>
+<ul>
+<li>
+<p>Can be found in the Azure Portal / Azure AD (example

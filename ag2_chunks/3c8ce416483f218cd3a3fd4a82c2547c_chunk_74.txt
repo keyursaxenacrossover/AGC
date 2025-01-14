@@ -1,0 +1,105 @@
+>Output</strong></p>
+<table class="wysiwyg-text-align-justify" style="height: 249px;" border="1" width="666" data-layout="full-width" data-table-width="1372.0410000000002">
+<colgroup> <col style="width: 152.0px;"> <col style="width: 215.0px;"> <col style="width: 123.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" style="width: 203.16px;">
+<p><strong>Description</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 288.646px;">
+<p><strong>Explanation</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 163.802px;">
+<p><strong>Preallocation in the standard panel</strong></p>
+</th>
+</tr>
+<tr>
+<td style="width: 195.139px;">
+<p>Output encoding of the panel site</p>
+</td>
+<td style="width: 280.625px;">
+<p>This field is used to set the required character set for the language version.</p>
+</td>
+<td style="width: 155.781px;">
+<p>UTF-8</p>
+</td>
+</tr>
+<tr>
+<td style="width: 195.139px;">
+<p>Repeat main menu items in second level navigation</p>
+</td>
+<td style="width: 280.625px;">
+<p>Optionally, you can display the main menu items a second time in second level navigation.</p>
+</td>
+<td style="width: 155.781px;">
+<p>No</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"><strong>Profiles</strong></p>
+<table class="wysiwyg-text-align-justify" style="height: 339px;" border="1" width="663" data-layout="full-width" data-table-width="1592.4491999999998">
+<colgroup> <col style="width: 109.0px;"> <col style="width: 293.0px;"> <col style="width: 88.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" style="width: 138.785px;">
+<p><strong>Description</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 378.281px;">
+<p><strong>Explanation</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 135.538px;">
+<p><strong>Preallocation in the standard panel</strong></p>
+</th>
+</tr>
+<tr>
+<td style="width: 130.764px;">
+<p>Profile visibility for new panelists</p>
+</td>
+<td style="width: 370.26px;">
+<p>Via this field, you can define whether personal data of new panelists should be visible for other panelists and visitors before these candidates log in and set up their profiles.</p>
+</td>
+<td style="width: 127.517px;">
+<p>“Show profile to others” deactivated</p>
+</td>
+</tr>
+<tr>
+<td style="width: 130.764px;">
+<p>Thumbnail size for profile pictures (in pixels)</p>
+</td>
+<td style="width: 370.26px;">
+<p>Use this field to define the size of thumbmails for profile pictures.</p>
+</td>
+<td style="width: 127.517px;">
+<p>60</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"><strong>Surveys</strong></p>
+<table class="wysiwyg-text-align-justify" style="height: 622px;" border="1" width="660" data-layout="full-width" data-table-width="1416.123">
+<colgroup> <col style="width: 123.0px;"> <col style="width: 200.0px;"> <col style="width: 167.0px;"> </colgroup>
+<tbody>
+<tr style="height: 44px;">
+<th class="wysiwyg-text-align-center" style="height: 44px; width: 159.705px;">
+<p><strong>Description</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="height: 44px; width: 271.927px;">
+<p><strong>Explanation</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="height: 44px; width: 217.986px;">
+<p><strong>Preallocation in the standard panel</strong></p>
+</th>
+</tr>
+<tr style="height: 372px;">
+<td style="height: 372px; width: 151.684px;">
+<p>Survey of the week (previously: Survey that shall be linked...)</p>
+</td>
+<td style="height: 372px; width: 263.906px;">
+<p>This survey is displayed from the first day of the week onwards, until either the panelists have participated or the week is over.</p>
+<ul>
+<li>
+<p>Wildcard {$env.weekly_survey}</p>
+</li>
+</ul>
+<p>To define the starting point of the weekly intervals, select the first day of the week in the global website configuration or in the settings of

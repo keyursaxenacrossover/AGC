@@ -1,0 +1,42 @@
+ and Amazon, and in addition, the Natural Language Toolkit (an open source scientific collection of text analytic functions). Through these APIs we provide our customers with the freedom to choose their preferred Text Analytics provider, and these services can be incorporated into the services/solutions we deliver to our customers.</p>
+<p>Below is a list of the different Text Analytics APIs our customers will now have access to:</p>
+<ul>
+<li>
+<p>Sentiment Analysis</p>
+</li>
+<li>
+<p>Key Phrase Extraction</p>
+</li>
+<li>
+<p>Entity extraction</p>
+</li>
+<li>
+<p>Entity Sentiment</p>
+</li>
+<li>
+<p>Language detection</p>
+</li>
+<li>
+<p>Categorization (trainable, project based)</p>
+</li>
+<li>
+<p>Custom Natural Language Toolkit Models</p>
+</li>
+</ul>
+<h3 id="header-37">Text analysis triggers</h3>
+<p>With our fall release we introduce two custom triggers that can be activated by support for each customer with their own EFS installation. These triggers use Microsoft Azure Cognitive Services APIs and provide support for a wide range of languages (<a href="https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/language-support">https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/language-support</a>).</p>
+<p>Once activated by our support teams, our customers can use these triggers within any of their surveys/projects.</p>
+<p><u>Key Phrase Extraction Trigger</u></p>
+<p>The key phrase extraction trigger returns the key themes from within open text feedback. This trigger can be used for categorization or clustering of data. For example, given the feedback "The food was delicious and there were wonderful staff", the trigger would return the main themes of "food" and "wonderful staff".</p>
+<p>This trigger can use up to 20 variables to store the returned key phrases, with the last assigned variable storing all remaining key phrases as a comma separated list. The 911 user-defined question type (text variable max 65535 chars) is best suited for use with this trigger. These variables should be created prior to adding the custom trigger to the page within your survey. Select azurekeyphrase from the trigger behavior of the custom trigger. These variables should be created prior to adding the custom azurekeyphrase trigger to the page within your survey.</p>
+<p>When adding the trigger to a page in your survey it is recommended that you use a condition to check if the source text variable contains any text (e.g. by creating if(v_1 != '') in the standard or alternative condition editor).</p>
+<p>If your survey uses the back-button or resumption from beginning, we recommended that you allow multiple executions of the trigger (see screen shot below).</p>
+<p>In the detailed configuration of the trigger you will need to enter the text analytics API-Key provided to you by our support team (see screen shot below). In the field below this, you will enter the language code of the expected language in the source variable. You will find the list of supported language codes on the Azure Cognitive Services website.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998335927826" alt="image2018-10-25_15-20-25.png"></p>
+<p>In the target variables section of the configuration you can enter up to 20 text variables where the key phrases will be stored, as mentioned previously. The last variable will contain all remaining phrases as a comma separated list.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998318647186" alt="image2018-10-25_15-21-22.png"></p>
+<p><u>Sentiment Analysis Trigger</u></p>
+<p>The sentiment analysis trigger categorizes open text feedback as negative, positive or neutral. The usage of this trigger is similar to the key phrase extraction trigger, start by selecting a sentiment from the trigger behavior of the custom trigger. Again, we recommend setting up an execution condition to check that feedback has been provided in your source variable.</p>
+<p>This trigger uses up to two variables (custom or from a 911 user-defined question type) to store the result of the analysis. The first variable of type short text or text will contain the categorization (negative, positive or neutral) and the optional second variable of type float will store the sentiment score provided by the service. This will be a value between 0 and 1, where 0 is the lowest sentiment strength, and 1 is the highest.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998365487378" alt="image2018-10-25_15-23-44.png"></p>
+<p> </p>

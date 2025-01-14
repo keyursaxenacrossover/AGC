@@ -1,0 +1,43 @@
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If you have inserted incorrect, i.e. <em>incomplete</em>, brackets, an error message will be displayed on saving, indicating that the filter as such has been saved, but not the brackets. This means:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The condition editor will continue to display the brackets, allowing you to locate and correct the error.</p>
+</li>
+<li>
+<p>If you ignore the error message and leave the incorrect brackets unchanged, the database will not consider the incorrect brackets when processing the data, but proceed according to the usual rules (with AND always taking priority over OR).</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Please note: brackets that do not fulfill the intention of the author, but establish a logically meaningful syntax, cannot be identified automatically.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="dynamics" class="wysiwyg-text-align-justify">Dynamics</h2>
+<p class="wysiwyg-text-align-justify">The sequence of pages, questions, answer options, and scale options in the questionnaire can distort survey data. This can be avoided in an online questionnaire by randomly changing the position of the elements. In EFS there are various functions available for this purpose.</p>
+<h3 id="random-selection" class="wysiwyg-text-align-justify">Random selection</h3>
+<p class="wysiwyg-text-align-justify">The participants will be routed to one or several randomly selected pages. Page 1 is located on the main level, followed by a random selection element. Indented in the branch below, there are two pages: in this example, page 2 and page 3. The survey is routed as follows: After completion of page 1, one of the indented subpages will be randomly selected. I.e. in the example, either page 2 or page 3 will be displayed. After the selected page has been sent, the respondent will continue on page 4.</p>
+<p class="wysiwyg-text-align-justify">Any number of nestings of random selection blocks is possible.</p>
+<p class="wysiwyg-text-align-justify">To find out which pages of a random selection block a participant has seen, check the content of the variable<em> rnd_pg_PGID </em>in the export file.</p>
+<h4 id="repeating-the-random-selection-on-re-load" class="wysiwyg-text-align-justify">Repeating the Random Selection on Re-load</h4>
+<p class="wysiwyg-text-align-justify">You can specify whether the random selection is to be repeated when a page in the random selection branch is reloaded. To do so, in the questionnaire view, please click on the <strong>Title </strong>of the random selection element. The <strong>Properties </strong>menu is opened. In the drop-down list labeled “Behavior when reloading a page,” you can choose whether the random selection will be repeated or not.</p>
+<p class="wysiwyg-text-align-justify">The default setting is “Do not repeat random selection process”.</p>
+<h4 id="selecting-m-out-of-n-pages" class="wysiwyg-text-align-justify">Selecting m out of n Pages</h4>
+<p class="wysiwyg-text-align-justify">Optionally, you can present m out of n randomly selected pages to the respondents. In a product test, for example, it is possible to select randomly five out of twenty pages on which different concepts are presented and present them to the respondents. It is still possible to use “m out of n” selection with complex structures containing nested random selection blocks and filter blocks.</p>
+<p class="wysiwyg-text-align-justify">To do so, open the <strong>Properties </strong>menu again (see above). In the field “Number of pages in random selection”, you can enter how many pages of the “Random selected” block will be randomly selected and displayed.</p>
+<p class="wysiwyg-text-align-justify">By default, a value of 1 is set.</p>
+<p class="wysiwyg-text-align-justify">Please note: random selection is not a uniform distribution.</p>
+<h4 id="filters-in-random-selection-branches" class="wysiwyg-text-align-justify">Filters in Random Selection Branches</h4>
+<p class="wysiwyg-text-align-justify">If a random selection branch contains a filter whose condition is not met, the random selection will be repeated until</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>a page without filters is found,</p>
+</li>
+<li>
+<p>a filter whose condition is met is found or</p>
+</li>
+<li>
+<p>all subpages have been tried without a filter being met.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If a random selection branch contains a second random selection branch which in turn contains filters, the following complication may occur:</p>
+<p class="wysiwyg-text-align-justify">The first random selection process selects the second random selection branch from the various options. The random selection initiated by the second branch, in turn, finds a filter whose condition is not met. In this case, the entire random selection process will be aborted, and the survey will be continued on the main level.</p>

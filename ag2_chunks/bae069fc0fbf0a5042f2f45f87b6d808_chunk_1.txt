@@ -1,0 +1,66 @@
+ to SFTP host '<a href="http://mysight-data.bre.globalpark.com">mysight-data.bre.globalpark.com</a>': Couldn't read packet: Connection reset by peer</p></td>
+<td><p>Error</p></td>
+<td>
+<p>Possible DNS error.</p>
+<p>Also could mean that the installation can not connect to external domains (e.g. on mirror installations)</p>
+</td>
+<td><p><br></p></td>
+<td>
+<ul><li><p>Check if there are other installation check messages regarding domains that can not be resolved</p></li></ul>
+<ul><li><p>In case of DNS error contact Sysadmins.</p></li></ul>
+<ul><li><p>Check (with Sysadmins ) if the installation should be able to connect to external domains (productive servers should be able to do so, local machines like mirror installation not. Procus and testkanal installations usually access alternative domains on testkanal). If installation can not connect to external domains, you can ignore this. If it can/should, make sure the entered URL is correct and reachable, contact Sysadmins to check connectivity.</p></li></ul>
+</td>
+</tr>
+<tr>
+<td><p>Error: Cannot connect to rabbitmq-host - php_network_getaddresses: getaddrinfo failed: Name or service not known</p></td>
+<td><p>Error</p></td>
+<td>
+<p>Possible DNS error.</p>
+<p>Also could mean that the installation can not connect to external domains (e.g. on mirror installations)</p>
+</td>
+<td><p>no host is entered on purpose so that no messages are retrieved from rabbitmq from the live installation. You can ignore this on mirror installations</p></td>
+<td>
+<ul><li><p>Check if there are other installation check messages regarding domains that can not be resolved</p></li></ul>
+<ul><li><p>In case of DNS error contact Sysadmins.</p></li></ul>
+<ul><li><p>Check (with Sysadmins ) if the installation should be able to connect to external domains (productive servers should be able to do so, local machines like mirror installation not. Procus and testkanal installations usually access alternative domains on testkanal). If installation can not connect to external domains, you can ignore this. If it can/should, make sure the entered URL is correct and reachable, contact Sysadmins to check connectivity.</p></li></ul>
+</td>
+</tr>
+<tr>
+<td><p>Error: The configuration is missing the apache rewrite rule necessary for the panel. If the rewrite rule is present make sure the server can resolve [URL]. The panel website won't work.</p></td>
+<td><p>Error</p></td>
+<td>
+<ul><li><p>Possible DNS error.</p></li></ul>
+<ul><li><p>or a maintenance page is set for this installation (you might not see the maintenance page from within our network)</p></li></ul>
+</td>
+<td><p><br></p></td>
+<td>
+<ul><li><p>Check if there are other installation check messages regarding domains that can not be resolved</p></li></ul>
+<ul><li><p>Via a console check what the domain name resolves to respectively if there is a redirect</p></li></ul>
+<ul><li><p>host [domain name]</p></li></ul>
+<ul><li><p>In case of DNS errors contact Sysadmins</p></li></ul>
+<ul><li><p>Check the domain from externally. Is a maintenance page shown? If yes:</p></li></ul>
+<ul><li><p>Is a maintenance planned? Check again after the maintenance is finished.</p></li></ul>
+<ul><li><p>If no maintenance is planned, maybe the maintenance page hasn’t been removed</p></li></ul>
+<ul><li><p>and still is there in error. Contact Sysadmins.</p></li></ul>
+</td>
+</tr>
+<tr>
+<td><p>Error: Unable to connect to Elasticsearch. Please check config settings.</p></td>
+<td><p>Error</p></td>
+<td><p>Possible DNS error, check if there are other messages regarding domains that can not be resolved.</p></td>
+<td><p><br></p></td>
+<td>
+<p>In case of DNS error contact Sysadmins.</p>
+<p>Check elastic search host in config. Procus and Testkanal use an alternaive domain. Make sure there is an index for the installation in elastic search (check elastic search paper page/twiki for info) and if needed, create it anew (in case of cloned installations).</p>
+</td>
+</tr>
+<tr>
+<td><p>Error: Reporting wordcloud feature enabled but the text analyser service is not working correctly: Text-Analyzer Client Exception:Curl Error: Couldn't resolve host 'text-analyzer'</p></td>
+<td><p>Error</p></td>
+<td><p>Possible DNS error, check if there are other messages regarding domains that can not be resolved.</p></td>
+<td><p><br></p></td>
+<td><p>In case of DNS error contact Sysadmins.</p></td>
+</tr>
+<tr>
+<td>
+<p>Error: Reporting PPT Export could not fetch version from Service. Expected version is 2.0.0.*. Error was: SOAP-ERROR: Parsing WSDL: Couldn't load from '<a href="https://rp.questback.com/PptPlus/PptService.asmx?wsdl">https://rp.questback.com/PptPlus/PptService.asmx?wsdl</a>' : failed to load external entity "<

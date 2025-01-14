@@ -1,0 +1,35 @@
+://rancher.sandbox-de-02.customervoice360.com/dashboard/auth/login">https://rancher.sandbox-de-02.customervoice360.com/dashboard/auth/login</a> <br><a href="https://rancher.bofa-us-01.customervoice360.com/dashboard/auth/login">https://rancher.bofa-us-01.customervoice360.com/dashboard/auth/login</a> </p>
+</td>
+</tr>
+<tr style="height: 355px;">
+<td class="wysiwyg-text-align-center" style="width: 20%; padding: 5px; height: 355px;"><strong>AWS CloudWatch</strong></td>
+<td style="width: 79.8571%; padding: 5px; height: 355px;">
+<p>This is essential to check DB logs. Note that <span style="color: #212529; font-family: -apple-system, BlinkMacSystemFont, ' Segoe UI' , Roboto, ' Helvetica Neue' , Arial, sans-serif, ' Apple Color Emoji' , ' Segoe UI Emoji' , ' Segoe UI Symbol' , ' Noto Color Emoji' font-size:16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">CW logs are maintained for <strong>1 month</strong> only, while Grafana covers larger interval</span></p>
+<ul>
+<li>Visit <a href="https://adfs.devfactory.com/adfs/ls/IdpInitiatedSignOn.aspx" target="_blank" rel="noopener noreferrer">ADFS</a>
+</li>
+<li>Sign in with your Active Directory credentials -&gt; AWS management console</li>
+<li>Open AWS account related to the datacenter of your customer:</li>
+<li><span style="opacity: 1;"><img id="image_1a383911-3516-4006-9756-69309cf378c1" class="image_resized" style="width: 317px;" src="https://central-supportdesk.zendesk.com/attachments/token/Fy5trweb30RMAzlXLdq4kZeJ3/?name=inlineImage.png"></span></li>
+<li>Search for <strong>CloudWatch, </strong>you can also check <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/22010573804818-Accessing-and-Querying-AWS-Cloudwatch-DB-Logs">AWS CW Usage hints</a><strong><br></strong>
+</li>
+</ul>
+</td>
+</tr>
+<tr style="height: 51px;">
+<td class="wysiwyg-text-align-center" style="width: 20%; padding: 5px; height: 51px;"><strong>Tivian Access (Okta SSO)</strong></td>
+<td style="width: 79.8571%; padding: 5px; height: 51px;">
+<p>PasswordState contains a shared user for Admin rights;</p>
+<p>Individual Okta accounts are provisioned to allow agents to login to customer instances via Tivian Access (if required)</p>
+</td>
+</tr>
+<tr style="height: 22px;">
+<td class="wysiwyg-text-align-center" style="width: 20%; padding: 5px; height: 22px;"><strong>Tableau Server</strong></td>
+<td style="width: 79.8571%; padding: 5px; height: 22px;">
+<p>In PasswordState, via shared user.</p>
+</td>
+</tr>
+<tr style="height: 559px;">
+<td style="width: 20%; padding: 5px; height: 559px;"><strong>Accessing onPrem Internal IPs </strong></td>
+<td style="width: 79.8571%; padding: 5px; height: 559px;">
+<p>IPs with format 10.250.10.xx are usually in the OnPrem network of DXI. T<span style="color: #212529; font-family: -apple-system, BlinkMacSystemFont, ' Segoe UI' , Roboto, ' Helvetica Neue' , Arial, sans-serif, ' Apple Color Emoji' , ' Segoe UI Emoji' , ' Segoe UI Symbol' , ' Noto Color Emoji' font-size:16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">hat network has direct VPN connection with our Service Gateways (which is on AWS VPN, connected to the onPrem network). So once you login to service gateway, you should be able to reach internal server via port forwarding and your local browser<br></

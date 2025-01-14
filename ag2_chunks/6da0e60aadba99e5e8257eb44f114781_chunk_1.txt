@@ -1,0 +1,69 @@
+vements</a>
+<ul>
+<li><a href="#header-54">Bulk-Edit</a></li>
+<li><a href="#header-55">Tracking of unsubscribed panelists</a></li>
+<li><a href="#header-56">Time zones for mails in panel update rules</a></li>
+</ul>
+</li>
+<li>
+<a href="#header-58">Data Voyager</a>
+<ul>
+<li><a href="#header-60">TIVIAN Access</a></li>
+<li><a href="#header-61">Layout Improvements</a></li>
+<li><a href="#header-62">The new Dimension Tree based on EFS Categories</a></li>
+<li><a href="#header-63">The US Guide Loader</a></li>
+<li><a href="#header-64">New Column: Data Source ID</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="header-1"><strong>TIVIAN Access</strong></h1>
+<h2 id="header-3">
+<strong>New section: </strong><em><strong>TIVIAN Access</strong></em><strong> User Status</strong>
+</h2>
+<p>Once <em>TIVIAN Access</em> has been activated, the following status information regarding a user is listed in the newly created "TIVIAN Access User Status" area on the user details page:</p>
+<ul>
+<li>
+<p>Active</p>
+</li>
+<li>
+<p>Inactive</p>
+</li>
+<li>
+<p>Not existing</p>
+</li>
+</ul>
+<p>The status <em>Active</em> will be assigned to the user if the identity provider knows the user and the user has already logged in. The status <em>Inactive</em> will be assigned to the user if the user is known to the identity provider but has not logged in yet. The status <em>Not existing</em> will be assigned to the user if the user is not known to the identity provider.</p>
+<h3 id="header-5"><strong>Password creation not required</strong></h3>
+<p>After activating <em>TIVIAN Access</em>, a password creation is no longer required. The <strong>Password configuration (Portals)</strong> menu item of the <em>People</em> module will not be displayed.</p>
+<h3 id="header-6"><strong>Columns are no longer displayed</strong></h3>
+<p>After activating <em>TIVIAN Access</em>, the following columns of the user overview table will no longer be displayed:</p>
+<ul>
+<li>
+<p>Login - Expiry Date</p>
+</li>
+<li>
+<p>Can login?</p>
+</li>
+<li>
+<p>Actions</p>
+</li>
+</ul>
+<p>These columns can also not be reactivated via the <strong>View</strong> button.</p>
+<h3 id="header-7"><strong>Contact the administrator</strong></h3>
+<p>In order to delete an admin user successfully, the admin user must be removed from the database of <em>EFS</em> and from the database of the identity provider. After the admin user has been successfully removed from the database of <em>EFS</em>, a message will be displayed informing about the successful deletion of the admin user as well as about the fact that an administrator must be contacted to remove the corresponding admin user from the database of the identity provider. The same applies to the deletion of a panelist.</p>
+<h3 id="header-8"><strong>Credentials have already been sent</strong></h3>
+<p>After activating <em>TIVIAN Access</em>, the credentials of <em>Portals</em> have probably been sent to the panelist by the identity providers. If you want to invite panelists to your portal, a message is displayed that the identity provider has possibly sent the credentials already.</p>
+<h2 id="header-10"><strong>Portals</strong></h2>
+<h3 id="header-12"><strong>The Extension module supports Popup-dialogs</strong></h3>
+<p>The <em>Extension</em> module now also supports <em>Portals</em> native modal dialogs. These can be used by applications to confirm actions, provide configuration options or any other cases, where a temporary second iframe is required.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998006535442" alt="Popup-dialogs.png"></p>
+<p> </p>
+<h3 id="header-13"><strong>Additional verification of users</strong></h3>
+<p>In scenarios, where additional logins are not desired, the application running in the extension module of Portals is able to verify the current user by validating the access token of a user with the <em>EFS Service-Layer</em>.</p>
+<h2 id="header-15"><strong>Guides Improvements</strong></h2>
+<h3 id="header-17">
+<strong>Process Control:</strong> <strong>Order Report</strong>
+</h3>
+<p>On the <strong>Process Control</strong> tab, you are able to specify the report ordering as a follow-up action in the event of a successful process. Up to now, the ordered reports have only been output in PDF format. As of this release, the PPTX file format will be used as a fallback if the report definition is not available as PDF file.</p>
+<h3 id="header-18"><strong>Restricted Access for Panel Groups</strong></h3>
+<p>You can restrict <em>Guides</em> not only to a portal user role, but also to one of

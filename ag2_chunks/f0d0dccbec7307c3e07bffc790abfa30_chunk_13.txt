@@ -1,0 +1,118 @@
+mailTemplateData": {
+    "meta": {
+      "description": "Example message",
+      "type": "default_mail",
+      "site_id": "7",
+      "active": true
+    },
+    "content": {
+      "from": "example@domain.tld",
+      "subject": "Example message",
+      "format": "TEXT",
+      "text_content": "Dear user, \r\n\r\nyou have a new message.",
+      "attachments": false
+    },
+    "options": {
+      "charset": "ISO-8859-1",
+      "reply_to": "example@domain.tld",
+      "return_path": "example@domain.tld",
+      "to_realname": false,
+      "send_copy": false,
+      "priority": "NO_PRIORITY",
+      "sensitivity": "NORMAL",
+      "notify": "NO_NOTIFICATION"
+    }
+  }
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">true</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79EDVTPQGSWZM6JF1ZB"> </h4>
+<h3 id="header-58">PATCH /efs/staff/role</h3>
+<p>Alters a staff members role within a given team</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "userId": 1,
+  "teamId": 1,
+  "newRole": "MEMBER",
+  "newOwnerUserId": 1
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">true</code></pre>
+</div>
+<h2 id="header-60">System information</h2>
+<div class="expand-macro">
+<h4 id="h_01J441N79EDPR16BKSB3Z4XYWR"> </h4>
+<h3 id="header-62">GET /efs/system/</h3>
+<p>determine the version number of the EFS installation</p>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">"20.1"</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79EP43PMDSV3DDV6W5J"> </h4>
+<h3 id="header-63">POST /efs/system/</h3>
+<p>Returns the current server time, use <code>format</code> to provide a formatting string (see PHP date() formatting options), otherwise the current unix timestamp will be returned.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{ "format": "Y-m-d H:i:s" }</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">"2020-08-26 13:35:26"</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79E5A861BSGW5D5G6BV"> </h4>
+<h3 id="header-64">GET /efs/system/load</h3>
+<p>query the current system's 1-minute load average</p>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">1.345</code></pre>
+</div>
+<h2 id="header-66">Other</h2>
+<div class="expand-macro">
+<h4 id="h_01J441N79E789FWCE700V43678"> </h4>
+<h3 id="header-68">GET /efs/session/{sessionId}</h3>
+<p>Get the admin user id for an admin session id Will throw an exception if the session id is invalid or the session is expired</p>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">1234</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>sessionId</p>
+</td>
+<td>
+<p>string</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>id of admin session.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79EPHR63K3WP8RAZ590"> </h4>
+<h3 id="header-69">GET /efs/taskqueue/{taskId}</h3>
+<p>Returns json encoded array with either execution-status or (if available) result of asynchronous service-calls for given taskId. Possible values for status: <strong>1</strong> - Task is pending for execution, <strong>2</strong> - Task is currently running,

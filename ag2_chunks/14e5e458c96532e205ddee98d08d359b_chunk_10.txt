@@ -1,0 +1,41 @@
+2px 3px; vertical-align: middle; text-align: center; width: 15.536%;">FALSE</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;"> </td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;"> </td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">disable_password_mails</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">the login shouldn`t send any mails (customer wants to handle that for whatever reason)</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;">false, true</td>
+<td style="padding: 2px 3px; vertical-align: middle; text-align: center; width: 15.536%;">FALSE</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;"> </td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;"> </td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">disable_replication_wrapper</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">disable the INSERT|REPLACE INTO SELECT-wrapper for database queries (increases performance, but may have replication issues) used in efs_database_batch_mode</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;">false, true</td>
+<td style="padding: 2px 3px; vertical-align: middle; text-align: center; width: 15.536%;">FALSE</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;">no</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;">no</td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">efs_http_client_requests_limit</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;"> </td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;"> </td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 15.536%;">array ( )</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;"> </td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;"> </td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">efs_setup_version</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">the version number the installation was INITIALLY setup with. The version number defined here will partly define the installation`s compatibility and feature set. Deprecated features will be turned off completely if the installation is very new but they will be avalable and marked as deprecated if the installation is old and might make use of the deprecated features. DO NOT INCREASE THE VERSION NUMBER WITH EVERY UPDATE OR UPGRADE BECAUSE THIS MIGHT CHANGE THE BEHAVIOUR OR BREAK COMPATIBILITY. PLEASE ONLY SET THIS VALUE IF IT IS NOT YET SET!!!</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;">if the installation started as an OPST 4.0, please use a value of 4.0 here. If it started as a 5.3, please use 5.3 etc.</td>
+<td style="padding: 2px 3px; vertical-align: middle; text-align: right; width: 15.536%;">10.8</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;">no</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;">no</td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">elasticsearch_configuration</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">Enter hosts and ports your elasticsearch configuration.</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;"> </td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 15.536%;">array ( 'connections' =&gt; array ( 0 =&gt

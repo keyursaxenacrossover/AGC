@@ -1,0 +1,119 @@
+-demo.qb-feedback.com/portal/review-guide?lc=a9e2092aa6d474e10685ce68624564412af8f6b17a556f90ae094e43b0ae7d66&amp;route=cGFnZVNsdWc9cGFnZS0xMTE=</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p>In case Panelist activated his account for the IdP (Okta) and IdP session is still valid and he clicks on the link:</p>
+<ul>
+<li>
+<p>in EFS panelist gets e-mail verification status = „verified“</p>
+</li>
+<li>
+<p>in Portals he skips the mini registration page</p>
+</li>
+<li>
+<p>he will be redirected directly to the destination page on Portals (Deeplink)</p>
+</li>
+</ul>
+</li>
+<li>
+<p>If the IdP session is expired, Panelist will be redirected to IdP login page to enter his e-mail address and password before accessing Portals</p>
+</li>
+</ul>
+<p><strong><span style="color: #36b37e;">New panelist with landing page (Deeplinking) private page</span></strong></p>
+<p><span style="color: #36b37e;">Ideation workflow:</span></p>
+<ul>
+<li>
+<p><span style="color: #36b37e;">Starting the guide and inviting external contact</span></p>
+<ul>
+<li>
+<p><span style="color: #36b37e;">This contact will be added to EFS and Okta</span></p>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="color: #36b37e;">Voting phase:</span></p>
+<ul>
+<li>
+<p><span style="color: #36b37e;">Panelist gets a mail with link to voting page</span></p>
+</li>
+<li>
+<p><span style="color: #36b37e;">Panelist clicks on the link and</span></p>
+<ul>
+<li>
+<p><span style="color: #36b37e;">is redirected to Okta login page, in case Okta session is expired and needs to login again in order to get to the voting page</span></p>
+</li>
+<li>
+<p><span style="color: #36b37e;">lands directly on the voting page, in case Okta session is still valid</span></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="color: #36b37e;">action phase</span></p>
+<ul>
+<li>
+<p><span style="color: #36b37e;">Panelist gets a mail with link to action board to view results</span></p>
+</li>
+<li>
+<p><span style="color: #36b37e;">Panelist clicks on the link and</span></p>
+<ul>
+<li>
+<p><span style="color: #36b37e;">is redirected to Okta login page, in case Okta session is expired, and needs to login again in order to get to the action board</span></p>
+</li>
+<li>
+<p><span style="color: #36b37e;">lands directly on the voting page, in case Okta session is still valid</span></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="header-18">Exception pages</h1>
+<ul>
+<li>
+<p><strong>No permission page:</strong> in case a user doesn’t have permissions to access apps ( EFS / Portals ), but is existing in Okta, he will be forwarded to a page, where he will be informed, that he is not authorized to access the app and to contact admin to get support</p>
+</li>
+</ul>
+<ul>
+<li>
+<p><strong>Technical error page</strong>: in case communication between EFS and Okta breaks, user that tries to access app will be redirected to a page, where he will be informed, that a technical error occurred and he needs to contact admin to get support</p>
+</li>
+</ul>
+<p> </p>
+<hr>
+<h1 id="header-19">Background</h1>
+<h2 id="header-21">User data synchronization between EFS and Okta</h2>
+<ul>
+<li>
+<p>Users are synced from EFS to Okta database when:</p>
+<ul>
+<li>
+<p>creating, importing and updating users (webservices included)</p>
+</li>
+<li>
+<p>inviting panelists to a guide</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Transferred data: first name, last name, E-mail</p>
+</li>
+</ul>
+<p> </p>
+<h2 id="header-22">IdP session</h2>
+<ul>
+<li>
+<p>Master session (Okta): per default 2h</p>
+</li>
+</ul>
+<ul>
+<li>
+<p>Master session dominates local session (EFS)</p>
+</li>
+<li>
+<p>When Okta session is killed, due to logout from EFS, user is logged out from Okta, but is still logged in EFS until EFS session expires</p>
+</li>
+<li>
+<p>Exception: When user logs out from Portals, both Okta and Portals session are killed immediately and user is logged out from both - <em>to be changed in the next version to be more consistent</em></p

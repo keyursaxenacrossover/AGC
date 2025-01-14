@@ -1,0 +1,60 @@
+amestring($value1,$value2)</code></li>
+<li><code>isvaliddate($value)</code></li>
+<li><code>iszero($value)</code></li>
+<li><code>lowercase($value)</code></li>
+<li><code>matches($var,$regx)</code></li>
+<li><code>matches_regex($var,$regx)</code></li>
+<li><code>netstringlength($value)</code></li>
+<li><code>not_matches($var,$regx)</code></li>
+<li><code>not_only_numbers($var)</code></li>
+<li><code>numberformat($value, $precision)</code></li>
+<li><code>outofrange($var,$start,$end)</code></li>
+<li><code>pow($exp,$base)</code></li>
+<li><code>setval($value)</code></li>
+<li><code>sgn($value)</code></li>
+<li><code>stringlength($value)</code></li>
+<li><code>trim($value)</code></li>
+<li><code>uppercase($value)</code></li>
+</ul>
+<h2 id="not_accepted_functions">Not Accepted Functions</h2>
+<p>The following functions are NOT accepted:</p>
+<ul>
+<li><code>ceil($value)</code></li>
+<li><code>floor($value)</code></li>
+<li><code>get_value($value)</code></li>
+<li><code>iseven($value)</code></li>
+<li><code>isodd($value)</code></li>
+<li><code>max($value1,$value2)</code></li>
+<li><code>min($value1,$value2)</code></li>
+<li><code>neg($value)</code></li>
+<li><code>pos($value)</code></li>
+<li><code>round($value)</code></li>
+<li><code>sqr($value)</code></li>
+<li><code>sqrt($value)</code></li>
+<li><code>truncate($value)</code></li>
+</ul>
+<h2 id="date_functions">Date Functions</h2>
+<p>To use date functions, select c_0001 as the variable to be recoded and use the following in the Value field:</p>
+<h3 id="h_01J3QBPTBXFME94ERPWQVWSQG8">CURDATE()</h3>
+<p>This writes the current date in the format YYYY-MM-DD to c_0001 (e.g., 2012-08-23)</p>
+<h3 id="h_01J3QBPTBXM408HT02VZ2H5ZP7">YEAR(CURDATE())</h3>
+<p>This returns the current year.</p>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq_2">Are all standard SQL functions supported?</h3>
+<p>No, not all standard SQL functions are supported. The guide provides a list of accepted and not accepted functions. It's important to refer to these lists when working with SQL in this specific context.</p>
+<h3 id="faq_3">How can I use date functions in this system?</h3>
+<p>To use date functions, you should select c_0001 as the variable to be recoded. You can then use functions like CURDATE() to get the current date or YEAR(CURDATE()) to get the current year.</p>
+</article>>
+<p>To use date functions, select c_0001 as the variable to be recoded and use the following in the Value field:</p>
+<h3 id="h_01J3QBPTBXFME94ERPWQVWSQG8">CURDATE()</h3>
+<p>This writes the current date in the format YYYY-MM-DD to c_0001 (e.g., 2012-08-23)</p>
+<h3 id="h_01J3QBPTBXM408HT02VZ2H5ZP7">YEAR(CURDATE())</h3>
+<p>This returns the current year.</p>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq_2">Are all standard SQL functions supported?</h3>
+<p>No, not all standard SQL functions are supported. The guide provides a list of accepted and not accepted functions. It's important to refer to these lists when working with SQL in this specific context.</p>
+<h3 id="faq_3">How can I use date functions in this system?</h3>
+<p>To use date functions, you should select c_0001 as the variable to be recoded. You can then use functions like CURDATE() to get the current date or YEAR(CURDATE()) to get the current year.</p>
+</article>

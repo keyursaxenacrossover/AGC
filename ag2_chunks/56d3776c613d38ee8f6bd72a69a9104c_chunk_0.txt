@@ -1,0 +1,139 @@
+<h1 id="h_01J5X4ZXV2W179F2388TC648C0">Overview</h1>
+<p>The module <strong>IdentityAccessManager </strong>will delegate the authentication for EFS Admin and Portals to Okta.<br>It handles all authentication interaction by following the OpenID Connect protocol with Okta and uses the Okta API to sync users and manage Portal instances at Okta.</p>
+<h2 id="h_01J5X50DEHD8GV5Z798Z3QQKY5">Configuration options</h2>
+<table border="1" data-layout="default">
+<colgroup> <col style="width: 211.0px;"> <col style="width: 194.0px;"> <col style="width: 80.0px;"> <col style="width: 63.0px;"> <col style="width: 132.0px;"> </colgroup>
+<thead>
+<tr>
+<td>
+<p><strong>Option</strong></p>
+</td>
+<td>
+<p><strong>Description</strong></p>
+</td>
+<td>
+<p><strong>Required (for working module)</strong></p>
+</td>
+<td>
+<p><strong>Value Type</strong></p>
+</td>
+<td>
+<p><strong>Default Value</strong></p>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><code>iam_admin_bypass_login_route</code></p>
+</td>
+<td>
+<p>A route which can be used by the root user or other system administrators to bypass the Okta login and sign in to EFS directly (like without Questback Access).<br><br>Changing this value will change the route for the installation.</p>
+</td>
+<td class="wysiwyg-text-align-center">
+<p class="wysiwyg-text-align-center">❌</p>
+</td>
+<td>
+<p>string</p>
+</td>
+<td>
+<p><code>/iam/admin/auth/login/bypass</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>iam_api_token</code></p>
+</td>
+<td>
+<p>The API token for Okta. This is used to access the user API (for syncing users), the application API and the trusted origins API (for syncing portal instances).</p>
+<p>This token is created and can be retrieved in Okta during the setup of Questback Access</p>
+</td>
+<td class="wysiwyg-text-align-center">
+<p>✅</p>
+</td>
+<td>
+<p><code>string</code></p>
+</td>
+<td>
+<p><code>''</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>iam_audience</code></p>
+</td>
+<td>
+<p>The audience is a term defined in the OpenID Connect specification, which describes the targeted audience for a token (JWT).</p>
+<p>This value is used to validate that a token was issued for this user + application.</p>
+<p>The value can be taken from Okta (API &gt; Authorization Servers) and is created during the setup of Questback Access</p>
+</td>
+<td class="wysiwyg-text-align-center">
+<p>✅</p>
+</td>
+<td>
+<p><code>string</code></p>
+</td>
+<td>
+<p><code>api://questback</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>After Fix IN 19.5Red</p>
+<p><code>iam_client_group_id</code></p>
+</td>
+<td>
+<p>The client group ID is used to assign users to this group as well as assign portals applications to that group. This is a necessary performance improvement that scopes applications and users of this installation to exactly match the configured group.</p>
+<p>This parameter has to be set and is crucial for Questback Access to work.</p>
+<p>The value can be taken from the group that has to be created in Okta.</p>
+</td>
+<td class="wysiwyg-text-align-center">
+<p>✅</p>
+</td>
+<td>
+<p><code>string</code></p>
+</td>
+<td>
+<p><code>00g1okh3pys1KeQPp416</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>iam_client_id</code></p>
+</td>
+<td>
+<p>The application id of this specific EFS installation in Okta used for the OpenID Connect protocol.</p>
+<p>This id is created during the setup of Questback Access and can be viewed in Okta (Applications)</p>
+</td>
+<td class="wysiwyg-text-align-center">
+<p>✅</p>
+</td>
+<td>
+<p><code>string</code></p>
+</td>
+<td>
+<p><code>''</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>iam_client_secret</code></p>
+</td>
+<td>
+<p>The secret for the application in Okta. Is in pair with the client id and is used to verify this application when retrieving tokens from Okta.</p>
+<p>This secret is created during the setup of Questback Access and can be viewed in Okta (Applications)</p>
+</td>
+<td class="wysiwyg-text-align-center">
+<p>✅</p>
+</td>
+<td>
+<p><code>string</code></p>
+</td>
+<td>
+<p><code>''</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>After Fix IN 19.5Red</p>
+<p><

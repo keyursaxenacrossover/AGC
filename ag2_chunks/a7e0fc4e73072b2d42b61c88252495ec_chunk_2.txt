@@ -1,0 +1,22 @@
+ Metadata URI) also see Authorization Server </p><p></p><h3 id="header-7">Setp 4: Migrate admin users via script</h3><p>This step is used to migrate admin users. The “iam_federated_domains” option has to be set here already to the correct final domain set.</p><ul>
+<li><p>Login to the console of the installation to start the migration script.</p></li>
+<li><p>Navigate to the “www“-folder of the installation.</p></li>
+<li><p>Execute the migration script in “support/iam/migration.php“.</p></li>
+<li><p>Chose “Admin user migration”</p></li>
+<li><p>Check if that worked (this is a good point in time to test with a client if everything works)</p></li>
+</ul><h3 id="header-8">Step 5: Set IdentityAccessManager Module active</h3><p><strong>Values:</strong></p><p><em><strong>iam_module_active</strong>:</em> true (<strong>Caution:</strong> Enable this as soon as all other settings are correct! This will enable SSO. Only the root user can bypass the Okta login after this point.)</p><p></p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716849959442" alt="Screenshot_2019-12-19 Options.png"><p></p><h3 id="header-9">Step 6: Activate admin users via script</h3><p>The IAM module is now activated. But the respective admin users that are not part of the external IdP have to be activated to login.</p><ul>
+<li><p>Login to the console of the installation to start the migration script.</p></li>
+<li><p>Navigate to the “www“-folder of the installation.</p></li>
+<li><p>Execute the migration script in “support/iam/migration.php“.</p></li>
+<li><p>Chose “Admin user activation“</p></li>
+</ul><h3 id="header-10">Step 7: Kill all activte sessions to avoid relogin after logout</h3><ul>
+<li><p>execute scipt: /www/support/iam/clearSessions.php</p></li>
+<li><p>error that idp_tokens does not exist can be ignored</p></li>
+</ul><h3 id="header-11">Step 8: OPTIONAL - Migrate portals applications, Panelists and EFS Admin users with installation group ID</h3><p>If the installation was setup with IAM in <strong>19.5</strong> this migration is mandatory. It will assign all users (EFS Admin users and Panelists) from the current installation to the installation specific group set in the EFS configuration.</p><ul>
+<li><p>Login to the console of the installation to start the migration script.</p></li>
+<li><p>Navigate to the “www“-folder of the installation</p></li>
+<li><p>Execute the migration script in “support/iam/migration.php”</p></li>
+<li><p>Chose “Portal ClientGroup migration“ - wait until done</p></li>
+<li><p>Execute the migration script again</p></li>
+<li><p>Chose “User ClientGroup migration“</p></li>
+</ul><p></p><h3 id="header-12">Sync “Exclusion” (iam_federated_domains)</h3><p>Users from EFS will be synced to Okta. A synced user will be created in Okta and will get an activation e-mail. The link in the activation e-mail will navigate the user to a page where the Okta password has to be provided.</p><p>Also users from an Identity Provider would receive such an e-mail and would provide a password they would never use as they do not user their Okta user but their external Identity Provider user.</p><p>To prevent such confusing e-mails users that are using their own Identity Provider will get synced to Okta without that kind of activation. Thus every e-mail domain that will get routed to an Identity Provider for this installation has to be added in the iam_federated_domains option.</p><p>This has to happen before the sync is enabled. Else a wrong set of users will be migrated to Okta.</p><p>Also see <ac:link ac:card-appearance="inline"><ri:page ri:content-title="EFS Admin Setup" ri:version-at-save="10"></ri:page><ac:link-body>EFS Admin Setup</ac:link-body></ac:link> </p><h3 id="header-13">Identity Provider ID (iam_idp_id)</h3><p>If a customer has their own Identity Provider this provider is created as resource in Okta. In case a client wants their user to skip the identity provider discovery page that is shown in Okta, the ID of the identity provider resource in Okta could be set here.</p><p>In that case the identity provider ID is already known in case a user tries to sign in and the user will be redirected to the identity provider directly without seeing an Okta page.</p><p>This might have an effect on how Tivian users login.</p><p></p><p><strong>Proxy:</strong></p><p>In the current setup EFS runs in a proxy setup. Because of that the proxy has to be configured in the IAM config. But the URL also has to be whitelisted in the proxy. Otherwise EFS cannot reach Okta.</p

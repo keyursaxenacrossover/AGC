@@ -1,0 +1,46 @@
+</strong> will take you back to the question view. For the default answer options, tick the <strong>Delete</strong> checkbox.</p>
+</li>
+<li>
+<p>Complete the work process by clicking on <strong>Save</strong>.</p>
+</li>
+</ol>
+<ol class="wysiwyg-text-align-justify" start="1">
+<li>
+<p>Loop-in-Loop</p>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify">It is possible to nest up to three loops.</p>
+<p class="wysiwyg-text-align-justify">If you intend to evaluate the result data subsequently in SPSS, please note the following: The SPSS export’s variable length is limited to eight characters. With interleaved loops or loops with many pass-throughs, this length can be exceeded. In projects with complex loops before survey commencement, you should therefore check whether the data can be exported subsequently by SPSS as desired.</p>
+<h4 id="incorporating-wildcards-into-answer-options" class="wysiwyg-text-align-justify"><strong>Incorporating wildcards into answer options</strong></h4>
+<p class="wysiwyg-text-align-justify">You can incorporate the wildcard of the list controlling the loop both into the question text, as explained above, and into an answer option. Furthermore, you can incorporate several versions of the wildcards into the same question (see the following section for details).</p>
+<h4 id="outputting-different-text-versions-via-wildcards" class="wysiwyg-text-align-justify"><strong>Outputting different text versions via wildcards</strong></h4>
+<p class="wysiwyg-text-align-justify">When you formulate the question text so that the names of all list elements fit in, this can often pose difficulties. If, for example, you are using several looped pages, you may wish to insert the list elements in the singular in one question and the plural in another. That would not be possible with only one wildcard.</p>
+<p class="wysiwyg-text-align-justify">The lists used in EFS therefore offer the possibility of creating the standard wildcard (#wildcard#) plus four more wildcard versions (#wildcard_2#, #wildcard_3#,...). These give you more flexibility in formulating your question texts.</p>
+<p class="wysiwyg-text-align-justify">The dialog for creating alternate wildcards for loops is located on the lists editor’s <strong>Wildcards</strong> tab.</p>
+<p class="wysiwyg-text-align-justify">For each list element, the content of the standard wildcard (“Wildcard 1”) is defaulted via the source question and <em>cannot be changed</em>. The other wildcards can be filled with your content.</p>
+<p class="wysiwyg-text-align-justify">In a question, the alternative texts are incorporated using the wildcards #wildcard_2# through #wildcard_5#, with “wildcard” to be replaced with the name of the general wildcard for this list. If, for example. the name of the general wildcard is #TVchannel#, the alternate texts will be invoked using #TVchannel_2# through #TVchannel_5#.</p>
+<p class="wysiwyg-text-align-justify">To translate the wildcards in multilingual projects, find the list in the overview of the <strong>Questionnaire editor → Lists</strong> menu, click on the <strong>Globe</strong> icon, and use the <strong>View</strong> button to open the text elements of the desired languages.</p>
+<h4 id="filtering-on-loop-variables" class="wysiwyg-text-align-justify"><strong>Filtering on Loop Variables</strong></h4>
+<p class="wysiwyg-text-align-justify">You can access variables in a loop branch from all filters, regardless of whether the filters are placed within or outside of the loop branch.</p>
+<p class="wysiwyg-text-align-justify"><strong>Filtering based on loop conditions within a loop branch</strong></p>
+<p class="wysiwyg-text-align-justify">If the filter is located in a loop branch, you only have to select the desired variable. The filtering will occur automatically based on the current loop condition.</p>
+<p class="wysiwyg-text-align-justify"><strong>Filtering based on loop variables from outside a loop</strong></p>
+<p class="wysiwyg-text-align-justify">If the filter is located outside the loop branch, simply selecting the variable will not be enough: If you did that, you would automatically perform the filtering based on the last current loop condition, which is not necessarily the condition you want to use. To specify the desired loop condition, please proceed as follows:</p>
+<ol class="wysiwyg-text-align-justify" start="1">
+<li>
+<p>In the condition editor, select the loop variable, and click on <strong>Save</strong>.</p>
+</li>
+<li>
+<p>A new checkbox labeled “Restrict to list elements” will be displayed, allowing you to filter based on a single, clearly defined loop condition.</p>
+</li>
+<li>
+<p>Tick the checkbox, and click on <strong>Save</strong>.</p>
+</li>
+<li>
+<p>The loop name will be displayed. Additionally, a drop-down list allows you to choose a single list element.</p>
+</li>
+<li>
+<p>Make your selection, and click on <strong>Save</strong> again.</p>
+</li>
+</ol>
+<h4 id="describing-loop-conditions" class

@@ -1,0 +1,118 @@
+g-text-align-center">
+<p><strong>Description</strong></p>
+</th>
+<th class="wysiwyg-text-align-center">
+<p><strong>Explanation</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Global redirection URL for all websites</p>
+</td>
+<td>
+<p>Occasionally, clients may want to use the panelist's administration of EFS People and conduct their surveys with EFS People while using an external website as their panel’s address.</p>
+<p>In this case, the global redirection allows you to redirect all traffic from websites of the specific panel installation to your desired alternative domain.</p>
+<ul>
+<li>
+<p>The panel websites will be de facto inaccessible.</p>
+</li>
+<li>
+<p>Panel surveys and master data surveys, however, will remain accessible.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Select whether a header with X-Frame-Options should be sent to the client</p>
+</td>
+<td>
+<p>Today, almost any browser makes it possible for web applications to send an HTTP header "X-Frame-Options" which declares to the browser if a certain website is allowed to be shown in a frame or not.</p>
+<p>Possible value options are:</p>
+<ul>
+<li>
+<p><strong>"Do not send"</strong>: By the mentioned default value the header is not sent, which effectively leads to a permission of framing.</p>
+</li>
+<li>
+<p><strong>"Deny"</strong>: The header is sent and will prevent any framing.</p>
+</li>
+<li>
+<p><strong>"Sameorigin"</strong>: The header is sent and will allow framing only by the website of the same domain.</p>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"><strong>Session settings</strong></p>
+<table class="wysiwyg-text-align-justify" style="height: 1618px;" border="1" width="721" data-layout="full-width" data-table-width="1515.3066000000001">
+<colgroup> <col style="width: 128.0px;"> <col style="width: 253.0px;"> <col style="width: 109.0px;"> </colgroup>
+<tbody>
+<tr style="height: 65px;">
+<th class="wysiwyg-text-align-center" style="width: 184.948px; height: 65px;">
+<p><strong>Description</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 368.594px; height: 65px;">
+<p><strong>Explanation</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 157.066px; height: 65px;">
+<p><strong>Preallocation in the standard panel</strong></p>
+</th>
+</tr>
+<tr style="height: 68px;">
+<td style="width: 176.927px; height: 68px;">
+<p>Name of the session cookie</p>
+</td>
+<td style="width: 360.573px; height: 68px;">
+<p>The cookie is set by the panel.</p>
+</td>
+<td style="width: 149.045px; height: 68px;">
+<p>panel-session</p>
+</td>
+</tr>
+<tr style="height: 68px;">
+<td style="width: 176.927px; height: 68px;">
+<p>Length of panel session validity (in seconds)</p>
+</td>
+<td style="width: 360.573px; height: 68px;">
+<p>In this field, you can set the session period for panel visits.</p>
+</td>
+<td style="width: 149.045px; height: 68px;">
+<p>3600</p>
+</td>
+</tr>
+<tr style="height: 628px;">
+<td style="width: 176.927px; height: 628px;">
+<p>Cookie type to be used when the panel website is visited</p>
+</td>
+<td style="width: 360.573px; height: 628px;">
+<p>You have the option not to place cookies when your website is visited.</p>
+<p>The following options are available:</p>
+<ul>
+<li>
+<p>Use normal cookies: These are the conventionally used cookies. They can be read by HTTP or Javascript.</p>
+</li>
+<li>
+<p>Use HTTP-only cookies: These cookies were also available in earlier versions of EFS. They can be read by HTTP but not by Javascript. Therefore this setting provides a higher degree of security. Browser-based scripts cannot access the cookie data.</p>
+</li>
+<li>
+<p>Do not use cookies: When using this option, authentication is done via the SES parameter in the URL or via HTTP POST data.</p>
+</li>
+</ul>
+<p>The “HTTP-only cookies” option is preset on new installations.</p>
+<p>Please note: The described settings only apply to the panel website.</p>
+<ul>
+<li>
+<p>The cookie settings for EFS surveys are set in the respective project.</p>
+</li>
+<li>
+<p>The cookie settings for the EFS installation itself are configured by  our support. On new installations, HTTP-only cookies are used per default.</p>
+</li>
+</ul>
+</td>
+<td style="width: 149.045px; height: 628px;">
+<p>Use HTTP-only cookies</p>
+</td>
+</tr>
+<tr style="height: 657px;">
+<td style="width: 176

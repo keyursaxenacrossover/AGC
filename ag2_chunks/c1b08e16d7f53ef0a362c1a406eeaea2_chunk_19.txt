@@ -1,0 +1,67 @@
+icon in the “Variable name” column to display the “External varname” column.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If you cannot find the field described above click the <strong>Question options </strong>icon and enable “External varname”.</p>
+<h3 id="options-for-centralized-editing-of-variable-names" class="wysiwyg-text-align-justify"><strong>Options for Centralized Editing of Variable Names</strong></h3>
+<p class="wysiwyg-text-align-justify">The codebook contains a range of functions that enable effective centralized editing of user-defined variable names in the “Edit variable names” section.</p>
+<p class="wysiwyg-text-align-justify"><strong>Editing variable names</strong></p>
+<p class="wysiwyg-text-align-justify">When the option “ Edit variable names directly in this form” is selected and then confirmed with the <strong>Save settings </strong>button, entry fields are displayed in which you can edit the external variable names. After entering the new names, click on the <strong>Save variable names </strong>button.</p>
+<p class="wysiwyg-text-align-justify"><strong>Changing variable names according to a preset algorithm</strong></p>
+<p class="wysiwyg-text-align-justify">You can allocate a unique label to the external variable names of a project by a predefined scheme.</p>
+<p class="wysiwyg-text-align-justify">Available options are:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Consecutive internal variable name (v_x): Default in new projects</p>
+</li>
+<li>
+<p>User-defined prefix consecutive item number</p>
+</li>
+<li>
+<p>User-defined prefix consecutive question number_consecutive item number (per question)</p>
+</li>
+<li>
+<p>User-defined prefix consecutive question number|consecutive item number (per question)</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Please proceed as follows:</p>
+<ol class="wysiwyg-text-align-justify" start="1">
+<li>
+<p>In the codebook click the <strong>Select algorithm for creation of variable names </strong>link in the “Create new variable names by selected algorithm” field. This opens the <strong>Projects</strong> → {<strong>Selected project</strong>} → <strong>Project properties </strong>menu.</p>
+</li>
+<li>
+<p>Set the desired labeling option in the select box.</p>
+</li>
+<li>
+<p>Enter the desired prefix in the “Algorithm for creating the external variable names” field. The default preset is “v_”.</p>
+</li>
+<li>
+<p>Switch back to the <strong>Codebook</strong>.</p>
+</li>
+<li>
+<p>Activate “Create new variable names in accordance with selected algorithm”.</p>
+</li>
+<li>
+<p>Confirm by clicking on <strong>Save settings</strong>.</p>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><strong>Systematically naming variables in dynamic answer blocks</strong></p>
+<p class="wysiwyg-text-align-justify">The “Rename variables in dynamic answer blocks” option allows you to automatically change the names of variables, for example, in a list or a loop in such a way that the link to the original variable can be read from the name. If, for example, a dynamic list is incorporated into a question, all variables that were generated via the dynamic list will have the name <em>v_sourcevariablea</em> once renaming is complete. If the questionnaire contains a second question that draws on the same dynamic list, then the corresponding variables will be named<em> v_sourcevariableb</em>.</p>
+<p class="wysiwyg-text-align-justify"><strong>Editing variable names externally</strong></p>
+<p class="wysiwyg-text-align-justify">You can export external variable names, edit them outside EFS, and then re-import them:</p>
+<ol class="wysiwyg-text-align-justify" start="1">
+<li>
+<p>The “Export variable names for external editing” will create a CSV file containing the variable's information, which you can load onto your workstation. You can specify which character set is to be used.</p>
+</li>
+<li>
+<p>When editing you enter the new external variable name in the “New varname” column.</p>
+</li>
+<li>
+<p>The “Import externally edited variable names” option allows you to re-import the externally edited list in CSV format into EFS Survey. Here, too, the correct character set must be specified.</p>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><strong>Undoing changes</strong></p>
+<p class="wysiwyg-text-align-justify">Changes to external variable names can be undone applying the “Restore original variable names” options.</p>
+<h2 id="defining-export-templates" class="wysiwyg-text-align-justify"><strong>Defining Export Templates</strong></h2>
+<p class="wysiwyg-text-align-justify">You can define your templates based on existing default export templates. This can be useful, for example, if you frequently need only specific excerpts from the result data.</p>
+<p class="wysiwyg-text-align-justify">Please note: When copying projects, user-defined export templates are not included.</p>
+<h3 id="overview-of-existing-export-templates" class="wysiwyg-text-align-justify"><strong>

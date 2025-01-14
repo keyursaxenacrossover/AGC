@@ -1,0 +1,53 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1053622522">https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1053622522</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">Cloned Installations</a></li>
+<ul>
+<li><a href="#header-3">Frankfurt/Bremen general info</a></li>
+<li><a href="#header-4">Check a cloned installation</a></li>
+<li><a href="#header-5">Special Installations</a></li>
+<ul>
+<li><a href="#header-7">IPSOS Loyalty | EFM | CX</a></li>
+<li><a href="#header-8">IPSOS ICP - NA</a></li>
+<li><a href="#header-9">IPSOS SMX</a></li>
+<li><a href="#header-10">Kantar (TNS)</a></li>
+</ul>
+<li><a href="#header-12">Check a cloned shared installation to be used by different customer</a></li>
+<ul>
+<li><a href="#header-14">Delete organisations and all related objects (projects, teams, users, mail templates, mail senders, etc.)</a></li>
+<ul>
+<li><a href="#header-16">Find out all organisation related items</a></li>
+<li><a href="#header-17">Get all team IDs of all users of an organisation</a></li>
+<li><a href="#header-18">Get team name/ title of all users of an organisation</a></li>
+<li><a href="#header-19">Clean up teams</a></li>
+<li><a href="#header-20">Delete Questions from question library</a></li>
+<li><a href="#header-21">Delete scale options that still are left (after having deleted organisations)</a></li>
+<li><a href="#header-22">Delete projects that still are left (after having deleted organisations)</a></li>
+<li><a href="#header-23">Delete mails from mail report that do not belong to the client's organisation</a></li>
+</ul>
+</ul>
+<li><a href="#header-26">Clone Data Voyager</a></li>
+</ul>
+</ul>
+</ul><ac:parameter ac:name="maxLevel">2</ac:parameter><p>also refer to: <ac:link ac:card-appearance="inline"><ri:page ri:content-title="anonymise an installation" ri:version-at-save="2"></ri:page><ac:link-body>anonymise an installation</ac:link-body></ac:link> </p><h1 id="header-1">Cloned Installations</h1><h2 id="header-3">Frankfurt/Bremen general info</h2><ac:rich-text-body><p>non IPSOS Loyalty, non IPSOS ICP - NA, non IPSOS SMX, non Kantar</p></ac:rich-text-body><p>This process is not a standard but an exception and only is done after acknowledgement from Techsupport and System administration.</p><p>An existing installation should be copied within Bremen because the copy then should be used as new live/demo installation. The copy can be anonymised though.</p><ul>
+<li>
+<p>System Administration</p>
+<ul>
+<li><p>File system and database need to be copied</p></li>
+<li><p><ac:inline-comment-marker ac:ref="87935fd5-93c1-4525-9699-2493ce1f97f8">anonymize </ac:inline-comment-marker>database (i.e. rename all email addresses to email+"_invalid")</p></li>
+<li><p>Rename paths and database and create tmp path</p></li>
+</ul>
+</li>
+<li>
+<p>Technical Support</p>
+<ul>
+<li><p>Check whether database has been renamed</p></li>
+<li><p>Adjust config and change tmp path, watchdog path and gp_id</p></li>
+<li><p>Execute installation check</p></li>
+<li><p>If a Data Voyager needs to be copied as well, see <a href="https://it.globalpark.de/twiki/bin/view/Support/StephanieBeckerEinarbeitungTS#02_06_2015_Copy_Clone_a_Data_Voy">Copy/Clone a Data Voyager</a></p></li>
+<li><p>If MySight v2 projects were copied as well and have to be republished, see <a href="https://it.globalpark.de/twiki/bin/view/Support/MySight#MySight_new_Republish_MySight_pr">republish MySight project</a></p></li>
+</ul>
+</li>
+</ul><h2 id="header-4">Check a cloned installation</h2><ac:rich-text-body><p>Special Installations include: Kantar TNS, Ipsos Check <a href="https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1053622522/Set+up+cloned+Installations#Special-Installations">Special Installations</a> for these!</p></ac:rich-text-body><p>A live installation has been copied in Bremen and the copy is to be used as a new live installation for the same customer. The following

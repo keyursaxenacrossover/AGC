@@ -1,0 +1,93 @@
+ Results:</strong></p>
+<ul>
+<li>Depending on the filtering mode, the filter selects panelists from the current group or entire panel who answered at least one of the listed options.</li>
+</ul>
+</li>
+</ol>
+<h3 id="h_01J3G0B0G7YEX2QFMTYBDTAKSB">Grouping Filter</h3>
+<p>The grouping filter combines various criteria to create complex filter conditions:</p>
+<ol>
+<li>
+<p><strong>Access and Define Filters:</strong></p>
+<ul>
+<li>Use all address and master data, along with system data like pstatus, last_poll_date, pcredit_points, date_last_login, etc.</li>
+<li>Include tracking variables and perform date calculations.</li>
+<li>Combine AND and OR conjunctions for complex conditions.</li>
+</ul>
+</li>
+<li>
+<p><strong>Administer Filters:</strong></p>
+<ul>
+<li>Access defined filters from the Filters tab in a group's edit dialog via the <strong>Grouping filter</strong> button or through the <strong>People → Groups → Grouping filters</strong> menu.</li>
+</ul>
+</li>
+<li>
+<p><strong>Create and Test Filters:</strong></p>
+<ul>
+<li>Click on the <strong>Create filter condition</strong> button.</li>
+<li>Define the condition by selecting variable, condition, code, and conjunction.</li>
+<li>Save the filter for future use.</li>
+<li>View, edit, apply, and delete filters from the list.</li>
+<li>Test filters to see how many panelists they apply to.</li>
+</ul>
+</li>
+</ol>
+<h3 id="h_01J3G0B0G729ZTP9N17M4HK6H5">Additional Notes</h3>
+<ul>
+<li>The accuracy and up-to-dateness of grouping filters depend on the underlying data's accuracy and update frequency.</li>
+<li>Changes in tracking data or other variables updated periodically can affect filter results.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014812735250">
+</li>
+</ul>
+<h3 id="h_01J3G0EVYM8MS1BAAYD6PGYCMH">Date Calculations in Grouping Filters</h3>
+<p>In grouping filters, date calculations can be performed using wildcards. Click on the Question mark icon in the condition editor for a list of available wildcards.</p>
+<p><strong>Examples of Wildcards:</strong></p>
+<ul>
+<li>
+<code>#NOW#</code>: Current date and time.</li>
+<li>
+<code>#LOCAL_NOW#</code>: Current date and time in local panel time.</li>
+<li>
+<code>#CURRENT_QUARTER_START#</code>: Beginning of the current quarter.</li>
+<li>
+<code>#CURRENT_HOUR_START#</code>: Beginning of the current hour.</li>
+</ul>
+<p><strong>Complex Date Calculations:</strong></p>
+<ul>
+<li>Add or subtract days, weeks, months, or years directly inside the wildcard.</li>
+<li>Default unit is days if no unit is specified.</li>
+</ul>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>
+<code>#WILDCARD-3#</code>: Date minus 3 days.</li>
+<li>
+<code>#WILDCARD-3d#</code>: Date minus 3 days.</li>
+<li>
+<code>#WILDCARD-3w#</code>: Date minus 3 weeks.</li>
+<li>
+<code>#WILDCARD-3m#</code>: Date minus 3 months.</li>
+<li>
+<code>#WILDCARD-3y#</code>: Date minus 3 years.</li>
+<li>
+<code>#WILDCARD-3h#</code>: Date minus 3 hours.</li>
+</ul>
+<h3 id="h_01J3G0EVYM3VXXXVDP82YTDES7">Import Filter</h3>
+<p>The import filter allows importing characteristics of a numeric master data or address variable as criteria for group membership. This filter is useful for grouping panelists with specific characteristics, like zip codes.</p>
+<p><strong>Formatting the Import File:</strong></p>
+<ul>
+<li>Use a simple CSV list with the characteristics of the linking variable.</li>
+<li>Empty rows or the value “0” will be ignored.</li>
+</ul>
+<p><strong>Applying the Import Filter:</strong></p>
+<ol>
+<li>Open the <strong>Filters</strong> tab in the group's edit dialog.</li>
+<li>Click on the <strong>Import filter</strong> button.</li>
+<li>Select the appropriate linking variable (numeric master data variables and u_zip are available).</li>
+<li>Choose the character set and import file.</li>
+<li>Optionally, restrict the group size using the “Maximum size of random selection from file” field.</li>
+<li>Select the filter mode: “Apply to all panelists in panel” or “Create intersection with current panel group”.</li>
+<li>Click on <strong>Continue</strong>.</li>
+</ol>
+<h3 id="h_01J3G0EVYMN79RGAJSAB2A7ECW">History</h3>
+<p>The <strong>History</strong> tab logs all actions performed in a group. You can repeat the work process in whole or in part by selecting an action and clicking on <strong>Repeat grouping</strong>.</p>
+<h3 id="h_01J3G0EV

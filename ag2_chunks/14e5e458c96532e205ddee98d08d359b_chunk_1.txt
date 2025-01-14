@@ -1,0 +1,43 @@
+ 3px; vertical-align: middle; width: 37.1859%;"> </td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 15.536%;">array ( )</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;">no</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;">no</td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">additional_mail_header</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">additional Mail-Header for all mails sent from the installation; key = name of the header, value= value of the header. You can use the following wild cards in value: #pid#","#sid#","#uid#","#x_key#","#dt#","#numtry#","#mail_id#","#mail_subject#","#admin_uid#", Example: additional_mail_headers = array("X-job" =&gt; "#pid#.#sid#", "X-test" =&gt; "foo")</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;">any</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 15.536%;">array ( )</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;">no</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;">no</td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">admin_login_ip_range</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">Which IP Adresses are allowed to login to the admin area</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;">any IP address and IP address range</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 15.536%;">1.1.1.1-255.255.255.255'</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;">no</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;">no</td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">admin_session_highsecurity_timeout</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">Timeout for admin session if high security mode is enabled. Min value: 60 seconds</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;">value in seconds</td>
+<td style="padding: 2px 3px; vertical-align: middle; text-align: right; width: 15.536%;">900</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;"> </td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;"> </td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">admin_session_timeout</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">Timeout for admin session, also valid for other login areas, e.g. report, translations etc.</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;">value in seconds</td>
+<td style="padding: 2px 3px; vertical-align: middle; text-align: right; width: 15.536%;">7200</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;"> </td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;"> </td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">allowed_rank_number</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">Max number of items possible in ranking question</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;"> </td>
+<td style="padding: 2px 3px; vertical-align: middle; text-align: right; width: 15.536%;">18</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 

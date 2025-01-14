@@ -1,0 +1,98 @@
+>Helperscripts</ac:link-body></ac:link> u-script (execute in installation directory!) </p>
+<pre><code class="language-text">u [Reason] Case [00888888]</code></pre>
+</li>
+<li><p>alternatively the Globis comment can be added in the detail view of the installation via the button [Add update for this installation]</p></li>
+<li><p>Run /dumps/_DONT_DELETE_thurn/addphp56 (This script checks for missing php 5.6 lines in installation configs)</p></li>
+</ul><h2 id="header-13">NO ROM</h2><p>To update an Installation that currently resides outside of ROM (directories in htdocs are true directories/no symlinks), follow these steps:</p><ul>
+<li>
+<p>On a console, <strong>navigate to installation</strong></p>
+<pre><code class="language-text">cd [installation path]/htdocs</code></pre>
+</li>
+<li>
+<p><strong>In case of an upgrade</strong> and if customizings are available, <strong>update zendframeworkLibrary</strong> (=check it out again)</p>
+<ul>
+<li><p>navigate to <strong>projekte/ProductCustomizingTeam/</strong> folder of installation</p></li>
+<li>
+<p>delete zendframeworkLibrary folder</p>
+<pre><code class="language-text">rm -rf zendframeworkLibrary</code></pre>
+</li>
+<li><p>navigate to installation folder <strong>/nfs/opstXX/XXXX/</strong></p></li>
+<li>
+<p>and check it out again</p>
+<pre><code class="language-text"> cvs co projekte/ProductCustomizingTeam/zendframeworkLibrary</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>(if it is available) <strong>Execute Check Upgrade script</strong></p>
+<ul>
+<li>
+<p>Check it out if it should not be existent</p>
+<ul>
+<li><p>cd [Installation]/htdocs</p></li>
+<li><p>cvs -d ":pserver:gpinst@cvs.3uu.de:2401/vol/cvs" co support/check_upgrade_from_efs_173/</p></li>
+</ul>
+</li>
+<li>
+<p>Update it, if it should be existent</p>
+<ul>
+<li><p>cd [Installation]/htdocs/support/check_upgrade_from_efs_173/</p></li>
+<li><p>cvs up</p></li>
+</ul>
+</li>
+<li>
+<p>Go back to support folder and execute script</p>
+<ul><li><p>php check_upgrade_from_efs_173/check.php</p></li></ul>
+</li>
+</ul>
+</li>
+<li>
+<p>(optional) <strong>Fix inconsistencies</strong></p>
+<pre><code class="language-text">cd www
+php support/fix_inconsistencies.php</code></pre>
+</li>
+<li>
+<p><strong>Get builds</strong> and store in /dumps folder (if not yet available there)</p>
+<pre><code class="language-text">cd /dumps
+helpersGetEfsBuild EFS_18.2</code></pre>
+</li>
+<li>
+<p><strong>Unzip builds</strong></p>
+<pre><code class="language-text">unzip -q EFS_18.2_0003.zip</code></pre>
+</li>
+<li>
+<p><strong>Navigate back to installation</strong></p>
+<pre><code class="language-text">cd [installation path]/htdocs</code></pre>
+</li>
+<li>
+<p><strong>Execute rsync</strong></p>
+<ul>
+<li>
+<p>Dry run</p>
+<pre><code class="language-text">rsync -avnz --delete --exclude=/conf --exclude=/panelwebsite --exclude=/masterpanel --exclude=/uc /dumps/EFS_19.3_0124/* .</code></pre>
+</li>
+<li>
+<p>Actual sync</p>
+<pre><code class="language-text">rsync -avzq --delete --exclude=/conf --exclude=/panelwebsite --exclude=/masterpanel --exclude=/uc /dumps/EFS_19.3_0124/* .</code></pre>
+</li>
+<li>
+<p>Actual sync (log errors into file)</p>
+<pre><code class="language-text">rsync -avzq --delete --exclude=/conf --exclude=/panelwebsite --exclude=/masterpanel --exclude=/uc /dumps/EFS_19.3_0124/* .  &gt; EFS_19.3_0124_rsync_error.log 2&gt;&amp;1</code></pre>
+</li>
+</ul>
+</li>
+</ul><p></p><ul>
+<li>
+<p><strong>Execute healself</strong></p>
+<pre><code class="language-text">cd www
+php support/healself.php</code></pre>
+</li>
+<li>
+<p>Log in to installation and <strong>execute installation check</strong> * To <strong>clean up</strong>, the following folders can be deleted if they no longer are symlinked (since EFS 8.0/8.1):</p>
+<ul>
+<li><p>provider_gui</p></li>
+<li><p>static_directories</p></li>
+<li><p>In conf folder all files except from config.inc.php3, hostnames.inc.php and VERSION can be deleted</p></li>
+</ul>
+</li>
+</ul><h1 id="header-15">Proc

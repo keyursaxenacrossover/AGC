@@ -1,0 +1,83 @@
+. If conversion is permitted, the number is clickable.</p>
+</li>
+<li>
+<p>Select the question type 911.</p>
+</li>
+<li>
+<p>Click on the <strong>Change</strong> button.</p>
+</li>
+</ul>
+<p>A conversion of question type 911 into other question types is not possible.</p>
+<h3 id="the-upload-question-type">The Upload Question Type</h3>
+<p>The upload question type allows participants to upload files into the questionnaire. E.g. a standardized job application survey, which allows to collection of the CV together with the survey data.</p>
+<ul>
+<li>
+<p>The upload question type is optionally available. If you are interested in using it,</p>
+<p>please get in touch with the Support of Tivian.</p>
+</li>
+<li>
+<p>When creating new questions, you can find the upload question type in the category “Advanced”.</p>
+</li>
+<li>
+<p>Technically, the new question type is based on the familiar question type 143.</p>
+</li>
+<li>
+<p>After successful upload, the file name is displayed to the participants. Via a dedicated <strong>Remove </strong>button, they can remove the file.</p>
+</li>
+<li>
+<p>In the “Detail configuration” section, file type and file size can be specified. EFS supports various MS Office formats, PDF, text and image files, video and audio files, and various compression formats (the <strong>info </strong>icon provides details). Please mind that not all mobile devices support uploading all file formats.</p>
+</li>
+<li>
+<p>The loading indicator and success message icon can be changed.</p>
+</li>
+<li>
+<p>File name and file size are stored in survey variables.</p>
+</li>
+<li>
+<p>Question-type specific messages for invalid entries can be modified in the section “text configuration”.</p>
+</li>
+<li>
+<p>The files can be downloaded from the menu <strong>Statistics</strong> → <strong>Uploaded files</strong>. The file name contains the participant’s consecutive number (lfdn) and the file name used by the participant.</p>
+</li>
+<li>
+<p>Access to this menu is protected by the new right “report_onlinefiles”. It is initially assigned to all user teams that have rights to “report_onlinerep”.</p>
+</li>
+<li>
+<p>The following file types can be uploaded: doc, docx, ppt, pptx, xls, xlsx, pdf, txt, rtf, png, gif, jpg, jpeg, WMV, avi, MOV, flv, mpg, mpg4, mp4, m4v, mp3, ogg, zip, tgz, bz2, rar.</p>
+</li>
+<li>
+<p>Maximum file size: 64 MB</p>
+</li>
+<li>
+<p>During uploads, files are immediately scanned for malware, before being moved to their final destination within the EFS platform. If malware is found, files are immediately removed from the temporary storage, and the user is notified that the upload was not successful. This approach ensures that at no point malware can be distributed through EFS.</p>
+</li>
+</ul>
+<p>Please note: While Tivian will perform a malware check on all files uploaded using the file upload question type, it is our customers’ responsibility to ensure that any files downloaded are checked by their file security guidelines and requirements.</p>
+<h3 id="the-lua-question-type">The Lua Question Type</h3>
+<p>The <em>LUA question type</em> enhances the recoding ability of EFS and supports LUA language version 5.1 with default functions. Simple tasks are possible, such as the recoding of survey variables or free formatting of date specifications.</p>
+<p>Please note that extensive knowledge of the LUA language is a prerequisite for working with this question type.</p>
+<p>LUA question type supports LUA language and runs on a sandbox with EFS-specific functionalities:</p>
+<ul>
+<li>
+<p>Access to any survey variable via the sandbox, e. g. _G["md_0001"]</p>
+</li>
+<li>
+<p><strong>setVariableValue</strong>(varName, varValue): Writes varValue into the variable. Any variables in the survey, including the question type‘s variables can be written into. Example: set variable value('v_1',1)</p>
+</li>
+<li>
+<p><strong>setQuestionOutput</strong>(text): Instead of using print, you should use setQuestionOut- put, which prints text in the proper HTML container in the questionnaire. Subse- quent request will replace <em>text</em>.</p>
+</li>
+<li>
+<p><strong>getQuotaIds</strong>(): Returns a list of all quota IDs in the survey.</p>
+</li>
+<li>
+<p><strong>getQuotaDebitValue</strong>(quotaId): Returns the target value for the quota ID.</p>
+</li>
+<li>
+<p><strong>getQuotaCurrentValue</strong>(quotaId): Returns the current quota count for quota ID.</p>
+</li>
+<li>
+<p><strong>getQuotaFillingDegree</strong>(quotaId): Returns the filling degree as a float for quota ID.</p>
+</li>
+</ul>
+<p>Please note that LUA functions <strong>file, load, load file, require, rawequal, rawget, </strong>and <strong>rawset </strong>cannot be executed from the sandbox for security reasons. Instead of <strong>print </strong>use <strong>setQuestionOutput(text) </strong>to

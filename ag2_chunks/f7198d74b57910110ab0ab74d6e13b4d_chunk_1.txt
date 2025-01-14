@@ -1,0 +1,103 @@
+</em> is needed</span></ac:task-body>
+</ac:task>
+<ac:task>
+<ac:task-id>4</ac:task-id>
+<ac:task-status>incomplete</ac:task-status>
+<ac:task-body><span class="placeholder-inline-tasks">Add abstract paragraph</span></ac:task-body>
+</ac:task>
+</ac:task-list></td>
+</tr>
+</tbody>
+</table></ac:rich-text-body><ac:parameter ac:name="minLevel">1</ac:parameter><ac:parameter ac:name="maxLevel">7</ac:parameter><h1 id="header-1">List of folders and files included in an EFS Build</h1><table data-layout="default" ac:local-id="2b541bfe-8a23-4b07-b33c-2396f47dcd55">
+<colgroup>
+<col style="width: 340.0px;">
+<col style="width: 340.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/SupportEFSFilesystem?sortcol=0;table=1;up=0#sorted_table"><u>Folder name</u></a></p></th>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/SupportEFSFilesystem?sortcol=1;table=1;up=0#sorted_table"><u>description</u></a></p></th>
+</tr>
+<tr>
+<th><p><strong><span style="color: rgb(255,255,255);">conf</span></strong></p></th>
+<td><p>conf = configuration; includes the configuration files of the installation</p></td>
+</tr>
+<tr>
+<td><p>conf/config.inc.php3</p></td>
+<td><p>the main configuration file of the installation; must not be deleted!</p></td>
+</tr>
+<tr>
+<td><p>conf/musterconfig.inc.php3</p></td>
+<td><p>template for the main configuration file; is used to initially set up the configuration file</p></td>
+</tr>
+<tr>
+<td><p>conf/hostnames.inc.php</p></td>
+<td><p>includes information about the hostnames of the installation; must not be deleted!</p></td>
+</tr>
+<tr>
+<td><p>VERSION</p></td>
+<td><p>includes the information about the EFS version the installation uses; only is available if the installation is in the rom (roll out management); must not be deleted!</p></td>
+</tr>
+<tr>
+<th><p><strong><span style="color: rgb(255,255,255);">enter gui_gui</span></strong></p></th>
+<td><p> </p></td>
+</tr>
+<tr>
+<td><p>fm</p></td>
+<td><p>fm= filemanager; includes files needed by EFS Secure exchange module;</p></td>
+</tr>
+<tr>
+<th><p><strong><span style="color: rgb(255,255,255);">gp</span></strong></p></th>
+<td><p>gp=globalpark; is used for dumping in the EFS database; if it exists in an installation, it should be deleted (after making sure that it currently is not used by the colleagues)</p></td>
+</tr>
+<tr>
+<td><p>layout</p></td>
+<td><p>includes layout files of the installation</p></td>
+</tr>
+<tr>
+<td><p>mobile_gui</p></td>
+<td><p> </p></td>
+</tr>
+<tr>
+<th><p><strong><span style="color: rgb(255,255,255);">modules</span></strong></p></th>
+<td><p>includes files of the separate EFS modules</p></td>
+</tr>
+<tr>
+<td><p>modules/efs</p></td>
+<td><p>includes files of the efs module</p></td>
+</tr>
+<tr>
+<td><p>modules/efs/module.inc.php</p></td>
+<td><p>there always is a centralized module.inc.php describing the module</p></td>
+</tr>
+<tr>
+<td><p>modules/employee</p></td>
+<td><p>includes files of the employee module</p></td>
+</tr>
+<tr>
+<td><p>modules/survey</p></td>
+<td><p>includes files of the survey module</p></td>
+</tr>
+<tr>
+<td><p>modules/panel</p></td>
+<td><p>includes files of the panel module</p></td>
+</tr>
+<tr>
+<th><p><strong><span style="color: rgb(255,255,255);">panelwebsite</span></strong></p></th>
+<td><p>is needed by EFS Panel module and includes the panelwebsite</p></td>
+</tr>
+<tr>
+<td><p>panelwebsite/assets_themes</p></td>
+<td><p> </p></td>
+</tr>
+<tr>
+<td><p>panelwebsite/assets_websites</p></td>
+<td><p>includes image files uploaded for a panel website/language version</p></td>
+</tr>
+<tr>
+<td><p>panelwebsite/install</p></td>
+<td><p>includes files needed to initially install a panel website</p></td>
+</tr>
+<tr>
+<td><p>panelwebsite/s</p></td>
+<td><p>

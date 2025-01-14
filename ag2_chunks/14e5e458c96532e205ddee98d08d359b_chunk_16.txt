@@ -1,0 +1,44 @@
+: middle; width: 32.9564%;">if set to false, only gp users will see the receipt admin menu item if the module is active. if set to true, all privileged users will see it. this option can be used to turn off the receipt administration for all non-gp users (this is also the default)</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;">false, true</td>
+<td style="padding: 2px 3px; vertical-align: middle; text-align: center; width: 15.536%;">FALSE</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;">no</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;">no</td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">has_routing_plugin</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">use custom routing plugin in custom/routing/plugin.inc.php to execute custom request handling/redirections?</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;">false, true</td>
+<td style="padding: 2px 3px; vertical-align: middle; text-align: center; width: 15.536%;">FALSE</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;">no</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;">no</td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">has_webservices</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">this will activate or deactive the web service and service layer configuration GUI in the admin section. If set to false, the services are still accessible but not configurable in the admin section</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;">false, true</td>
+<td style="padding: 2px 3px; vertical-align: middle; text-align: center; width: 15.536%;">FALSE</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;">no</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;">no</td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">high_security</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">enable High-Security mode In most cases oyu alwo want to enable force_ssl!</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;">false, true</td>
+<td style="padding: 2px 3px; vertical-align: middle; text-align: center; width: 15.536%;">FALSE</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;">yes</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;">no</td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">http_only_cookies</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">allow Javascript access to cookies or make cookies http-only? note: cookies will be http-only always if high_security mode is activated, regardless of the config value.</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;">false, true</td>
+<td style="padding: 2px 3px; vertical-align: middle; text-align: center; width: 15.536%;">TRUE</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;"> </td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;">no</td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">http_proxy</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;"> </td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;"> </td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 15.536%;">proxy:8080'</td>
+<td style

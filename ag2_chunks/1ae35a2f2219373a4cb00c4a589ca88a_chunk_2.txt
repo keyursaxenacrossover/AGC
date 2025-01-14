@@ -1,0 +1,41 @@
+-renderer-start-pos="3580">Click on the <strong data-renderer-mark="true">Create update rule</strong> button.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014812773266"></p>
+</li>
+</ul>
+<ul class="wysiwyg-text-align-justify">
+<li data-renderer-start-pos="3580">A new page for creating an update rule is displayed.</li>
+<li data-renderer-start-pos="3684">First enter a name for your rule. In our case: "New employees".</li>
+<li data-renderer-start-pos="3751">Select "default" as the <strong data-renderer-mark="true">Group category</strong> from the drop-down menu.</li>
+<li data-renderer-start-pos="3818">Under <strong data-renderer-mark="true">Panel group to be updated</strong>, select the <strong data-renderer-mark="true">New employees</strong> group that you created in the previous step from the drop-down menu.</li>
+<li data-renderer-start-pos="3948">Activate the checkbox for the option <strong data-renderer-mark="true">Execute rule automatically?</strong>.</li>
+<li data-renderer-start-pos="4017">Set the start period.</li>
+<li data-renderer-start-pos="4042">Select an interval from the <strong data-renderer-mark="true">Interval type</strong> drop-down menu. As an example, we select <strong data-renderer-mark="true">Day</strong>.</li>
+<li data-renderer-start-pos="4133">Enter a value in the <strong data-renderer-mark="true">Interval value</strong> field. We enter the value 1, so the rule will be executed once a day.</li>
+<li data-renderer-start-pos="4242">Now we need to select the action to be performed as part of the update: From the <strong data-renderer-mark="true">Create new action</strong> drop-down menu, select the <strong data-renderer-mark="true">Apply grouping filter </strong>option.</li>
+<li data-renderer-start-pos="4401">Click on <strong data-renderer-mark="true">Save</strong>.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014812790290">
+</li>
+<li>The selected action must now be configured in detail: Select the grouping filter to be applied in the drop-down menu under<strong data-renderer-mark="true"> Value</strong>. In our case, "<strong data-renderer-mark="true">New employees</strong>".</li>
+<li data-renderer-start-pos="4587">Then select the filter operation to be performed from the drop-down menu below. In our case: "<strong data-renderer-mark="true">Add panelists that match condition</strong>".</li>
+<li data-renderer-start-pos="4721">Click on <strong data-renderer-mark="true">Save</strong>.</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="4739">If the update rule is now executed once a day, all panelists with the status "Admitted temporarily" are added to the "New employees" group.</p>
+<p class="wysiwyg-text-align-justify">&lt;supportagent&gt;</p>
+<p class="wysiwyg-text-align-justify"><strong>Important Note: This will add more than 100K panelists to your group. Make sure that the</strong><br><strong>automatic execution of the update rule is unchecked and you don't manually run the update rule</strong><br><strong>triggering 100K welcome emails to the panelists.</strong></p>
+<p class="wysiwyg-text-align-justify">&lt;/supportagent&gt;</p>
+</article>
+<article>
+<h3 id="Mail-Templates" class="wysiwyg-text-align-justify" data-renderer-start-pos="4880"><strong data-renderer-mark="true">Mail Templates</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="4896">Automated mail processes generally use mail templates that you only need to create once and can then reuse as often as you like. Mail templates are managed centrally under <strong data-renderer-mark="true">System &gt; Libraries &gt; Mail templates</strong>. In the following, we will guide you through the creation of a template for a welcome email for new employees.</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="5218">Mouse over <strong data-renderer-mark="true">System</strong> and select<strong data-renderer-mark="true"> Libraries</strong>.</p>
+</li>
+<li>
+<p data-renderer-start-pos="5261">Select <strong data-renderer-mark="true">Mail templates</strong> from the menu on the left-hand side.</p>
+</li>
+<li>
+<p class="wysiwyg-text-align-left" data-renderer-start-pos="5323">Click on the <strong data-renderer-mark="true">+ New template</strong> button.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014812791698"></p>
+</li>
+</ul>
+<ul class="wysiwyg-text-align-justify">
+<li data-renderer-start-pos="5323">A screen for creating a new mail template opens in a new tab.</li>
+<li data-renderer-start-pos="5432">Under <strong data-renderer-mark="true">Language version</

@@ -1,0 +1,59 @@
+>Open (preview of ) survey</p>
+</li>
+</ul>
+<p>Show debug console on panel website:</p>
+<ul>
+<li>
+<p>Navigate to <strong>Website &gt;&gt; Select language version &gt;&gt; Settings &gt;&gt; Debugging</strong></p>
+</li>
+<li>
+<p>select "Show debug information on the website"</p>
+</li>
+<li>
+<p>Add your IP address to text field "IP address range"</p>
+</li>
+<li>
+<p>Login to the panelwebsite</p>
+</li>
+</ul>
+<h2 id="header-7">What Smarty in EFS/surveys also is capable of</h2>
+<pre><code class="language-text">functions:
+
+- assign                    =&gt; {assign var="varname" value="value"}                                                             =&gt; Assign variable at runtime
+- append                    =&gt; {append var="arrayname" value="testvalue" index=10}                                              =&gt; Assign array values at runtime  
+- counter                   =&gt; {counter start=0 skip=2 assign="counter"} -&gt; iterate through {counter}                           =&gt; Counter that works as an Iterator!!!!!
+- cycle                     =&gt; {cycle values="val1,val2,val3"} -&gt; iterator in foreach                                           =&gt; Cycling though predefined values -&gt; Iterator!!!!
+- debug                     =&gt; {debug}                                                                                          =&gt; Print debug console
+- eval                      =&gt; {eval var="SMARTY_CODE"}                                                                         =&gt; Parse Smarty code
+- get_dispcode              =&gt; {get_dispcode} -&gt; assigns to {$dispcode}                                                         =&gt; Get Disposition code (not in preview)
+- html_checkboxes           =&gt; {html_checkboxes name="id" options=$name selected="ahhh" separator="&lt;br /&gt;"}                     =&gt; Print checkboxes for array of values
+- html_image                =&gt; {html_image file="images/someImage.jpg"}                                                         =&gt; Print html images
+- html_options              =&gt; &lt;select name="customer_id"&gt;{html_options values=$name output=$name selected=$name[2]}&lt;/select&gt;   =&gt; Add options from array to select box
+- html_radios               =&gt; {html_radios name="id" options=$name selected=2 separator="&lt;br /&gt;"}                              =&gt; Print radiobuttons from array
+- html_select_date          =&gt; {html_select_date}                                                                               =&gt; Three dropdowns Y - M - D
+- html_select_time          =&gt; {html_select_time}                                                                               =&gt; Three dropdowns H - M - S
+- html_table                =&gt; {html_table loop=$name}                                                                          =&gt; print html table from array
+- in_array                  =&gt; {if in_array("John", $name)} {/if}                                                               =&gt; Check if value is in array
+- labelall                  =&gt; {labelall var=2 label=$name seperator="&lt;br /&gt;"}                                                  =&gt; Print array values with seperator
+- mailto                    =&gt; {mailto address="frederik.wauters@questback.com"}                                                =&gt; Set Mailto Tag
+- math                      =&gt; {math equation="x + y" x=4 y=5}                                                                  =&gt; Fancy ... Parse any mathematical equasion
+- popup_init                =&gt; {popup_init src="/layout/lib/js/overlib/overlib.js"}                                             =&gt; Called a popup but it's more like a mouse over hint
+- popup                     =&gt; &lt;a href="/" {popup text="This link takes you to my page!"}&gt;mypage&lt;/a&gt; (More like a hover)        =&gt; Called a popup but it's more like a mouse over hint
+- var_dump                  =&gt; {var_dump var=$variable}                                                                         =&gt; Print varibale using var_dump
+- fetch                     =&gt; {fetch file="http://SOMEFILE" assing="variable"}                                                 =&gt; Loads file and assigns to variable -&gt; Fancy
+
+modifiers:
+
+- cat                       =&gt; {$variable|cat:" concat string"}                                                                 =&gt; concatination
+- count_characters          =&gt; {$variable|count_characters}                                                                     =&gt; counting chars
+- count_paragraphs          =&gt; {$variable|count_paragraphs}                                                                     =&gt; counting paragraphs
+- count_sentences           =&gt; {$variable|count_sentences}                                                                      =&gt; counting sentences
+- count_words               =&gt; {$variable|count_words}                                                                          =&gt; counting words
+- date_format               =&gt; {$smarty.now|date_format:"%H:%M:%S"}                                                             =&gt; Format
+- debug_print_var           =&gt; {$variable|debug_print_var}                                                                      =&gt; basically a print_r
+- default                   =&gt; {$variable|default:'Default string if variable is empty'}                                        =&gt; Fallback for empty var
+- escape                    =&gt; {$variable|escape:"html"}                                                                        =&gt; Escape ... 
+- indent                    =&gt; {$variable|indent:10}  -&gt; only in &lt;pre&gt;                                                          =&gt; Indents string X spaces
+- lower                     =&gt; {$variable|lower}                                                                                =&gt; String to lower
+- nl2br                     =&gt; {$variable|nl2br}                                                                                =&gt; HTMLify newlines
+- regex_replace             =&gt; {$variable|regex_replace:"/[\

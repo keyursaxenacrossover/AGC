@@ -1,0 +1,30 @@
+ id="configuring-the-panel-group-trigger" class="wysiwyg-text-align-justify">Configuring the Panel Group Trigger</h3>
+<p class="wysiwyg-text-align-justify">The panel group trigger is available in panel surveys and master data surveys. The basic settings are the same as for other trigger types. Additionally, the following settings specific to this type of trigger have to be performed:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Group category</p>
+</li>
+<li>
+<p>Target group.</p>
+</li>
+<li>
+<p>Trigger mode: You can choose whether the respective panelist is to be added to or removed from the group.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The update rule “Copy from survey to group” provides the “Add panelist to group” function for the updating of groups.</p>
+<h2 id="pre-qualification-trigger" class="wysiwyg-text-align-justify">Pre-qualification trigger</h2>
+<p class="wysiwyg-text-align-justify">The <em>Pre-Qualification trigger</em> can be used to import participants as panelists. They have to take part in an <em>Anonymous survey</em> (AN), a <em>Personalized survey</em> (PE), <em>Employee survey</em> (ES). The panelists will be created using survey variables. The e-mail address is mandatory. To configure the trigger two tabs are available. You will use the<strong> Settings</strong> and the <strong>Detail configuration</strong> tabs.</p>
+<p class="wysiwyg-text-align-justify">On the <strong>Settings</strong> tab, a name and a short trigger description can be added. Then you have to set up the conditions and check whether the trigger should also be executed in the questionnaire preview and whether it should be executed multiple times in one survey session.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h1 id="h_01HGKSMPRV24YJXQX3QJQZ8YDX" class="wysiwyg-text-align-justify">FAQ</h1>
+<h3 id="h_01HGKSMPRV44YJXM0YJQBXQJRA" class="wysiwyg-text-align-justify">What is the difference between a mail trigger and a re-invitation trigger?</h3>
+<p class="wysiwyg-text-align-justify">A mail trigger can be used to send emails based on various conditions throughout the survey, while a re-invitation trigger is specifically used to reinvite participants to a survey and reset their data record without deleting data. Re-invitation triggers are only available on the final pages of certain survey types.</p>
+<h3 id="h_01HGKSMPRV64YJXQX3QJQZ8YDZ" class="wysiwyg-text-align-justify">Can I use multiple triggers in a single survey?</h3>
+<p class="wysiwyg-text-align-justify">Yes, you can use multiple triggers of different types within a single survey. This allows for complex survey logic and automation of various actions based on different conditions or events.</p>
+<h3 id="h_01HGKSMPRV84YJXM0YJQBXQJRC" class="wysiwyg-text-align-justify">How can I test if my triggers are working correctly?</h3>
+<p class="wysiwyg-text-align-justify">To test triggers, create test participants with accessible email addresses and run the survey in productive mode. This allows you to verify that wildcards are replaced correctly and that the triggers function as intended. For some trigger types, you can also enable execution in preview mode for testing purposes.</p> mail trigger and a re-invitation trigger?</h3>
+<p class="wysiwyg-text-align-justify">A mail trigger can be used to send emails based on various conditions throughout the survey, while a re-invitation trigger is specifically used to reinvite participants to a survey and reset their data record without deleting data. Re-invitation triggers are only available on the final pages of certain survey types.</p>
+<h3 id="h_01HGKSMPRV64YJXQX3QJQZ8YDZ" class="wysiwyg-text-align-justify">Can I use multiple triggers in a single survey?</h3>
+<p class="wysiwyg-text-align-justify">Yes, you can use multiple triggers of different types within a single survey. This allows for complex survey logic and automation of various actions based on different conditions or events.</p>
+<h3 id="h_01HGKSMPRV84YJXM0YJQBXQJRC" class="wysiwyg-text-align-justify">How can I test if my triggers are working correctly?</h3>
+<p class="wysiwyg-text-align-justify">To test triggers, create test participants with accessible email addresses and run the survey in productive mode. This allows you to verify that wildcards are replaced correctly and that the triggers function as intended. For some trigger types, you can also enable execution in preview mode for testing purposes.</p>

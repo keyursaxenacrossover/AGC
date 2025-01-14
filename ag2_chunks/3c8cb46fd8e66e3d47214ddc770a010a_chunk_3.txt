@@ -1,0 +1,46 @@
+950 contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative">
+<pre class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-sql"><span class="hljs-keyword">SELECT</span> 
+    pa.uid, 
+    pa.pseudonym, 
+    pa.penter_date, 
+    prk.rkey 
+<span class="hljs-keyword">FROM</span> 
+    panel_recruitment_keys <span class="hljs-keyword">AS</span> prk 
+    <span class="hljs-keyword">LEFT</span> <span class="hljs-keyword">JOIN</span> panel_att <span class="hljs-keyword">AS</span> pa <span class="hljs-keyword">ON</span> (prk.uid <span class="hljs-operator">=</span> pa.uid) 
+<span class="hljs-keyword">WHERE</span> 
+    prk.rkey <span class="hljs-keyword">IN</span> ( "...", "...");  <span class="hljs-comment">-- Add relevant keys here</span>
+</code></pre>
+</div>
+<ul>
+<li>This query will return all instances where the same LMI key was used by other panelists, which should not occur as keys are designed for single use.</li>
+<li>So the result of this query, is the original panelist who used this code, while the panelist of steps 1 and 2 are the duplicated ones. </li>
+</ul>
+<h4 id="h_01J964YG3EW9B2F5STZJGTPQX2">Step 4: Resolve Duplicate Key Issue</h4>
+<p>Once duplicate key usage is identified:</p>
+<ul>
+<li>Recommend the customer to ensure that registration keys are only sent to one individual per campaign.</li>
+<li>If requested, share with the customer a report showing the LMI Key and the relevant Panelists who used it, and the time of usage (penter_date).</li>
+<li>Confirm that once a key is used, it becomes deactivated and cannot be reused by others (this might require and Eng Defect if issue is reproducible on our testing Environment).</li>
+<li>You can refer to ticket 4462678 for sample report and more details.</li>
+</ul>
+<h1 id="h_01J962W3YA2B0WFGDB1XBRQFM3">Summary</h1>
+<p>By following these steps, you can identify and analyze issues with panelist registration keys in recruitment campaigns. This will help maintain the integrity of the panelist registration process and support effective fraud prevention.</p>
+<h2 id="h_01J962W3YA1YYC97A8V8BDQ541">FAQ</h2>
+<ol>
+<li>
+<strong>What is the role of Grafana Loki in this process?</strong><br>Grafana Loki is used to identify the registration keys from the initial request by the panelists' IPs. These keys can be found in the request itself or the referrer.</li>
+<li>
+<strong>Why is it important to ensure that each registration key is unique and not duplicated?</strong><br>Unique registration keys are crucial for maintaining the integrity of the panelist registration process and for effective fraud prevention. If keys are duplicated, it can lead to confusion and potential misuse.</li>
+<li>
+<strong>What should I do if I find that the same registration key has been used by multiple panelists?</strong><br>If requested by the customer, share the information of the original and other panelists using the same code.<br>If customer requires a permanent fix for future occurrences, reproduce the issue on our testing env, then raise a Defect as per the standard process.</li>
+</ol>_01J962W3YA2B0WFGDB1XBRQFM3">Summary</h1>
+<p>By following these steps, you can identify and analyze issues with panelist registration keys in recruitment campaigns. This will help maintain the integrity of the panelist registration process and support effective fraud prevention.</p>
+<h2 id="h_01J962W3YA1YYC97A8V8BDQ541">FAQ</h2>
+<ol>
+<li>
+<strong>What is the role of Grafana Loki in this process?</strong><br>Grafana Loki is used to identify the registration keys from the initial request by the panelists' IPs. These keys can be found in the request itself or the referrer.</li>
+<li>
+<strong>Why is it important to ensure that each registration key is unique and not duplicated?</strong><br>Unique registration keys are crucial for maintaining the integrity of the panelist registration process and for effective fraud prevention. If keys are duplicated, it can lead to confusion and potential misuse.</li>
+<li>
+<strong>What should I do if I find that the same registration key has been used by multiple panelists?</strong><br>If requested by the customer, share the information of the original and other panelists using the same code.<br>If customer requires a permanent fix for future occurrences, reproduce the issue on our testing env, then raise a Defect as per the standard process.</li>
+</ol>

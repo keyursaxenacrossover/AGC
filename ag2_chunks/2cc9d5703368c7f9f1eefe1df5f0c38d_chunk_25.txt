@@ -1,0 +1,109 @@
+ that can be used to trigger the module in positioning templates.</p>
+</td>
+<td style="width: 152.882px;">
+<p>contact</p>
+</td>
+</tr>
+<tr>
+<td style="width: 206.771px;">
+<p>Page module title</p>
+</td>
+<td style="width: 410.903px;">
+<p>Name of the module in the page’s module overview</p>
+</td>
+<td style="width: 152.882px;">
+<p>Contact form</p>
+</td>
+</tr>
+<tr>
+<td style="width: 206.771px;">
+<p>Module template</p>
+</td>
+<td style="width: 410.903px;">
+<p>Module-specific template that controls how data provided by the module are displayed.</p>
+</td>
+<td style="width: 152.882px;">
+<p>func_contact_form</p>
+</td>
+</tr>
+<tr>
+<td style="width: 206.771px;">
+<p>Mail sender</p>
+</td>
+<td style="width: 410.903px;">
+<p>E-mail address from which the requests are sent. You can choose between two options:</p>
+<ul>
+<li>
+<p>You can enter a fixed e-mail address. Please make sure that the mail account exists on a correctly configured mail server. Otherwise, the e-mails may be erroneously classified as spam.</p>
+</li>
+<li>
+<p>Alternatively, use the wildcard #u_email# to insert the e-mail address of the panelist resp. the e-mail entered into the contact form.</p>
+</li>
+</ul>
+</td>
+<td style="width: 152.882px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 206.771px;">
+<p>Use CAPTCHA image</p>
+</td>
+<td style="width: 410.903px;">
+<p>From EFS 10.0, you can optionally have a CAPTCHA image displayed.</p>
+<ul>
+<li>
+<p>It is displayed to all unknown visitors to the page.</p>
+</li>
+<li>
+<p>The CAPTCHA image will never be displayed to logged-in panelists. Their contact data are dispatched with the contact mail, therefore they are usually not tempted to spam.</p>
+</li>
+</ul>
+<p>Please note: If you have activated CAPTCHA, visually impaired users with a screen reader can no longer register.</p>
+</td>
+<td style="width: 152.882px;">
+<p>no</p>
+</td>
+</tr>
+<tr>
+<td style="width: 206.771px;">
+<p>Message upon successful change</p>
+</td>
+<td style="width: 410.903px;">
+<p>This text is displayed on the contact page once the mail has been sent.</p>
+</td>
+<td style="width: 152.882px;">
+<p>We have received your email and will process it as soon as possible.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 206.771px;">
+<p>One or optionally more feedback topics and corresponding recipient address</p>
+</td>
+<td style="width: 410.903px;">
+<p>See the following section.</p>
+</td>
+<td style="width: 152.882px;">
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"><strong>Adding topics and corresponding recipients</strong></p>
+<p class="wysiwyg-text-align-justify">You can offer users one or more topics to which they can assign their mail. Internally, each of these topics is often assigned to an individual recipient – usually a member of the panel operator’s staff specially qualified for the topic. Alternatively, you can have the e-mails sent to an inbox where they are filtered by topic.</p>
+<p class="wysiwyg-text-align-justify">To do so, enter the topic and the recipient in the input fields in the “Add new feedback topic” section and click on Save. Repeat these steps for each additional topic.</p>
+<p class="wysiwyg-text-align-justify">To delete a topic simply remove all content in the respective input fields and click on <strong>Save</strong>.</p>
+<p class="wysiwyg-text-align-justify"><strong>Editing default texts for contact mail</strong></p>
+<p class="wysiwyg-text-align-justify">You can edit default e-mail text elements that can be sent via the contact form to the panel operator.</p>
+<p class="wysiwyg-text-align-justify">To do so, switch to the Website-&gt;Panel websites menu, select the desired language version, and open the Configuration tab.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>You can edit the text elements in the “Contact form” section.</p>
+</li>
+<li>
+<p>You can edit the name of the panel in the “Locale settings” section.</p>
+</li>
+</ul>
+<h3 id="function-module-account-balance" class="wysiwyg-text-align-justify"><strong>Function Module: Account Balance</strong></h3>
+<p class="wysiwyg-text-align-justify">You can use the “Account balance” function module to generate an overview of the panelists’ account balance, which includes all transactions carried out. In the standard panel, you can find such an overview on the <strong>My Home → Account balance</strong> page, for example.</p>
+<p class="wysiwyg-text-align-justify">In the standard panel, the account balance template is entitled “func_account_balance”.</

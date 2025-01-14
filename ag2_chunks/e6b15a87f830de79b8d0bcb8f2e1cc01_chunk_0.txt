@@ -1,0 +1,82 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3772907524">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3772907524</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">Domain related</a></li>
+<ul>
+<li><a href="#header-3">Scope</a></li>
+<ul>
+<li><a href="#header-5">Products in scope</a></li>
+<ul>
+<li><a href="#header-7">Products out of scope</a></li>
+<li><a href="#header-8">Users in scope</a></li>
+</ul>
+<li><a href="#header-10">Features</a></li>
+<ul>
+<li><a href="#header-12">Service Layer</a></li>
+<li><a href="#header-13">Authorization</a></li>
+<li><a href="#header-14">Passwords</a></li>
+<li><a href="#header-15">Federation / SSO</a></li>
+<li><a href="#header-16">User Data</a></li>
+<li><a href="#header-17">Authentication mechanisms</a></li>
+<li><a href="#header-18">Emails</a></li>
+<li><a href="#header-19">Customization</a></li>
+<li><a href="#header-20">Root User</a></li>
+<li><a href="#header-21">Maintenance</a></li>
+<li><a href="#header-22">Groups and Applications/Clients</a></li>
+<li><a href="#header-23">Policies</a></li>
+</ul>
+</ul>
+<li><a href="#header-26">Organisational</a></li>
+<ul>
+<li><a href="#header-28">Responsibilities and Ownership</a></li>
+<li><a href="#header-29">Stakeholders</a></li>
+<li><a href="#header-30">Rough Project Plan</a></li>
+<li><a href="#header-31">Next Steps</a></li>
+</ul>
+</ul>
+</ul>
+</ul><h1 id="header-1">Domain related</h1><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20717237061778" alt="MicrosoftTeams-image (2).png"><h2 id="header-3">Scope</h2><h3 id="header-5">Products in scope</h3><p>The first level of the list are products in scope, the second level are existing login screens or login capabilities</p><ul>
+<li>
+<p>CXI</p>
+<ul>
+<li><p>Core Platform (Hyde Park)</p></li>
+<li><p>Possibly User Facing Part (Greenwich) <ac:parameter ac:name="title">TO BE CLARIFIED</ac:parameter><ac:parameter ac:name="colour">Red</ac:parameter> </p></li>
+</ul>
+</li>
+<li>
+<p>EFS Admin</p>
+<ul>
+<li><p>www</p></li>
+<li><p>fm</p></li>
+<li><p>reports</p></li>
+<li><p>service layer</p></li>
+</ul>
+</li>
+<li><p>Portals</p></li>
+<li><p>Panelwebsite</p></li>
+<li>
+<p>Datavoyager</p>
+<ul>
+<li><p>Admin</p></li>
+<li><p>Reportmanager</p></li>
+<li><p>Unclear if there is something additional <ac:parameter ac:name="title">to be clarified</ac:parameter><ac:parameter ac:name="colour">Red</ac:parameter> </p></li>
+</ul>
+</li>
+<li><p>Tivian Analytics</p></li>
+<li><p>Dashboards</p></li>
+<li><p>Service Layers (of all platforms if necessary)</p></li>
+</ul><p></p><h4 id="header-7">Products out of scope</h4><ul>
+<li><p>Tableau (sync will stay as is)</p></li>
+<li><p>Forum (Unipark)</p></li>
+<li><p>G2 (legacy Guidespark Platform)</p></li>
+<li><p>Orgadmin view / Download Platform</p></li>
+</ul><p></p><h4 id="header-8">Users in scope</h4><ul>
+<li><p>EFS Admins</p></li>
+<li><p>DXI Panelists</p></li>
+<li><p>CXI Admins</p></li>
+<li><p>CXI Targeted Audience Members? <ac:parameter ac:name="title">to be clarified</ac:parameter><ac:parameter ac:name="colour">Red</ac:parameter> </p></li>
+<li><p>DV Admins</p></li>
+<li><p>Reportmanager Users?</p></li>
+</ul><p></p><h3 id="header-10">Features</h3><h4 id="header-12">Service Layer</h4><p>The EFS service layer currently could be used by a token or by a username and password mechanism. The username and password mechanism should be removed if possible. So no password are needed anymore</p><p>Adding OID

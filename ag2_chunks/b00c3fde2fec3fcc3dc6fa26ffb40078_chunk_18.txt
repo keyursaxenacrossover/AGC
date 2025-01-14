@@ -1,0 +1,60 @@
+ of attempts to dispatch the mail” field.</p>
+<p class="wysiwyg-text-align-justify"><strong>The delay between delivery attempts</strong></p>
+<p class="wysiwyg-text-align-justify">You may define the amount of time (in minutes) to pass between delivery attempts. Find the respective option in the Options menu → <strong>System</strong> <strong>Settings</strong>.</p>
+<p class="wysiwyg-text-align-justify"><strong>Using installation-specific mail headers</strong></p>
+<p class="wysiwyg-text-align-justify">Installation-specific mail headers can be attached to the mail sent from an EFS installation. This is particularly useful for external bounce systems, for example. To do so, our support has to activate this function and define the desired mail header values. In the mail form, you will then find a field “Value for wildcard #extra_values# in additional mail headers”. There you can specify the values that were predefined by the support.</p>
+<p class="wysiwyg-text-align-justify">These mail headers are specified for an <em>EFS</em> installation, not for an individual project. They cannot be used in collective installations.</p>
+<h3 id="controlling-dispatch-processes-and-intervening-in-processes" class="wysiwyg-text-align-justify"><strong>Controlling dispatch processes and intervening in processes</strong></h3>
+<p class="wysiwyg-text-align-justify">The <strong>Mail report</strong> is designed to assist you in properly managing the large numbers of e-mails needed for bigger projects. You will find the main report.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>for project-specific mails: in the <strong>Survey menu</strong> of all project types.</p>
+</li>
+<li>
+<p>on <em>EFS People</em> installations: for emails sent from the<strong> People</strong> → <strong>Groups</strong> menu: in the <strong>Groups</strong> menu.</p>
+</li>
+<li>
+<p>on <em>EFS People</em> installations: for emails sent from the <strong>People</strong> → <strong>Contacts</strong> → <strong>Send e-mail</strong> menu: in the <strong>Contacts</strong> menu.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The mail report displays all mails in the outgoing queue, sorted by sending operations. You have the following editing options:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><strong>View</strong>: Allows you to display a mail that has been selected from the respective dispatch process at random with the wildcards replaced.</p>
+</li>
+<li>
+<p><strong>Release</strong>: Allows you to release and execute a dispatch process with “Hold” status.</p>
+</li>
+<li>
+<p><strong>Hold</strong>: The mail dispatch is interrupted, e.g. if a questionnaire requires re-editing.</p>
+</li>
+<li>
+<p><strong>Delete</strong>: Mails are removed from the queue. In EFS Panel installations, this work process includes the option of saving the recipients of the deleted e-mails in a separate group.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If you delete emails, our support team can no longer determine who has already received a mail and who has not in subsequent support requests.</p>
+<h3 id="viewing-archived-mails" class="wysiwyg-text-align-justify"><strong>Viewing archived mails</strong></h3>
+<p class="wysiwyg-text-align-justify">Most of the emails sent from <em>EFS</em> are archived and can be viewed for six months:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Personalized surveys, employee surveys, multi-source feedback, panel surveys,, and master data surveys feature an overview of all sent emails.</p>
+</li>
+<li>
+<p>In personalized surveys, employee surveys, and multi-source feedbacks, the mails are listed in the detail view of the respective participant.</p>
+</li>
+<li>
+<p>In panel and master data surveys, the mails are listed on the <strong>Contacts by System mail</strong> tab in the detail view of the respective panelist.</p>
+</li>
+<li>
+<p>With the appropriate rights,, you can view all project-specific mail processes of the installation in a centralized manner.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">In the long run, the data volumes involved in the sending of emails will put an unnecessary strain on the installation’s performance. Once the project is over, the archived emails are usually not needed ever again. The mail archives will therefore be cleaned automatically at regular intervals: Archived mail will be deleted six months after dispatch (depending on the size of the installation this may be executed earlier).</p>
+<h3 id="viewing-project-specific-dispatch-processes" class="wysiwyg-text-align-justify"><strong>Viewing project-specific dispatch processes</strong></h3>
+<p class="wysiwyg-text-align-justify">Project-specific dispatch processes are archived. You can view the data here:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>personalized projects and employee surveys: <strong>Survey menu</strong> → <strong>Mail report</strong> menu.</p>
+</li>
+<li>
+<p>

@@ -1,0 +1,59 @@
+ be unique. Example: “FunctionalStructure”.</p>
+</li>
+<li>
+<p>Multiple allocation of participants allowed: Activates additional features that allow you to allocate individual participants to multiple units within the same structure.</p>
+</li>
+<li>
+<p>Use “Function”: Activates additional features that allow you, in the matrix representation, to differentiate between the various functions a participant<br>has. For example, a participant may be the “Manager” in one department while counting only as “Staff” within the product line.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Confirm by clicking on <strong>Save settings</strong>.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Manual allocation to multiple structure views</strong></p>
+<p class="wysiwyg-text-align-justify">If there are multiple structure views, additional functions allowing you the manual allocation of the participants to the structures will be displayed in the following locations:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Centralized participant administration-&gt;Form for adding a new participant → Section “Allocation of the participant to structure views”: In this section, you can<br>allocate the participants to one node per structure view (more nodes are possible when using multiple allocations, see below).</p>
+</li>
+<li>
+<p>Centralized participant administration-&gt;Detail view of the participant → Section “Allocation of participant to structure views”: Here you can also allocate the participants to one node per structure view.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Importing into multiple structure views</strong></p>
+<p class="wysiwyg-text-align-justify">Via the centralized participant administration, you can import participants into multiple views simultaneously. When doing so, the variable containing the unit allocation - usually metaname - is formatted as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Multiple structure views and/or multiple allocation: metaname1;metaname2</p>
+</li>
+<li>
+<p>Multiple structure views, multiple allocation, and/or function: metaname1:u_function:code;metaname2:u_function:code;metaname3:u_function:code</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Please note that every participant data record can only be imported once: All the desired allocations should be performed in this one permitted import. Decentralized import is not possible, i.e. you cannot separately import the same participants into the lists of participants of units in different structure views. If you want to subsequently allocate an already imported participant to additional units, you can do so in the participant’s detail view in the centralized participant administration as described above.</p>
+<p class="wysiwyg-text-align-justify"><strong>Exporting the allocation to multiple views</strong></p>
+<p class="wysiwyg-text-align-justify">If you want to export the allocation of the participants to the various structure views, download the central list of participants from the menu <strong>Projects</strong> → {Selected project} → <strong>Participant administration </strong>by clicking on either of the buttons labeled <strong>Excel export</strong> or <strong>CSV</strong> export. The column metaname contains the comma-separated meta names of the units to which the participant is allocated.</p>
+<p class="wysiwyg-text-align-justify"><strong>Multiple allocation of participants within one structure</strong></p>
+<p class="wysiwyg-text-align-justify">Optionally, you can modify the organization as to allow the allocation of individual participants to multiple units within the same structure. Such duplicate allocations can be useful, for example, in product or project structures: The multiply allocated participant continues to receive only one questionnaire, but all his allocations are available to you for filtering or report generation.</p>
+<p class="wysiwyg-text-align-justify"><strong>Activation</strong></p>
+<p class="wysiwyg-text-align-justify">This additional feature is activated via the field “Multiple allocation of participants allowed” in the detailed view of the desired structure.</p>
+<p class="wysiwyg-text-align-justify"><strong>Manual multiple allocation</strong></p>
+<p class="wysiwyg-text-align-justify">If multiple allocation is activated, then additional functions allowing you the manual allocation of participants will be displayed in the following locations:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Centralized participant administration → Form for adding a new participant → Section “Allocation of participant to structure views”: In the structure for which multiple allocation is activated, you can allocate the participants to any number of nodes.</p>
+</li>
+<li>
+<p>Centralized participant administration → Detail view of the participant → Section “Allocation of the participant to structure views”: Here you can also allocate the participants to any number of nodes.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Importing multiple allocations</strong></p>
+<p class="wysiwyg-text-align-justify">Multiple allocations can be imported into the centralized participant administration. When doing so, the variable containing the unit allocation - usually metaname - is formatted as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Multiple structure views and/or multiple allocation: metaname1;metaname2</p>
+</li>
+<li>
+<p>Multiple structure views, multiple allocation, and/or function: metaname1:u_function:code;metaname2:u_function:code;

@@ -1,0 +1,44 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1077936258">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1077936258</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<p>A Sign-On Policy defines the session lifetime for a user and how often a user is asked for additional factors (MFA). </p><p></p><p>A Sign-On-Policy Contains of a container construct bundling a set of rules.</p><table data-layout="default"><tbody>
+<tr>
+<th><p><strong>What</strong></p></th>
+<th><p><strong>Explanation</strong></p></th>
+</tr>
+<tr>
+<td data-highlight-colour="#f4f5f7"><p><strong>General settings</strong></p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>Group Assignment</p></td>
+<td><p>The Group for which this policy takes effect.</p></td>
+</tr>
+<tr>
+<td data-highlight-colour="#f4f5f7"><p><strong>Rule Settings</strong></p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>Prompt for Factor</p></td>
+<td>
+<p>This enables MFA. It has to take care of the factor enrollment settings. Else the login might be broken.</p>
+<p>MFA can have it’s own session lifetime or it could be enabled only once per device or every time.</p>
+</td>
+</tr>
+<tr>
+<td><p>Session lifetime</p></td>
+<td>
+<p>The lifetime of the Okta session.</p>
+<p>Also see <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Sessions" ri:version-at-save="4"></ri:page><ac:link-body>Sessions</ac:link-body></ac:link> and <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Sessions Explained" ri:version-at-save="1"></ri:page><ac:link-body>Sessions Explained</ac:link-body></ac:link> </p>
+</td>
+</tr>
+</tbody></table><p></p><p><strong><u>For API Access see:</u></strong></p><p><strong>Sign-On Policy:</strong></p><p><a href="https://developer.okta.com/docs/reference/api/policy/#okta-sign-on-policy">https://developer.okta.com/docs/reference/api/policy/#okta-sign-on-policy</a></p><p><strong>Rules (also Sign-On Policy rules):</strong></p><p><a href="https://developer.okta.com/docs/reference/api/policy/#rules-operations">https://developer.okta.com/docs/reference/api/policy/#rules-operations</a></p> once per device or every time.</p>
+</td>
+</tr>
+<tr>
+<td><p>Session lifetime</p></td>
+<td>
+<p>The lifetime of the Okta session.</p>
+<p>Also see <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Sessions" ri:version-at-save="4"></ri:page><ac:link-body>Sessions</ac:link-body></ac:link> and <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Sessions Explained" ri:version-at-save="1"></ri:page><ac:link-body>Sessions Explained</ac:link-body></ac:link> </p>
+</td>
+</tr>
+</tbody></table><p></p><p><strong><u>For API Access see:</u></strong></p><p><strong>Sign-On Policy:</strong></p><p><a href="https://developer.okta.com/docs/reference/api/policy/#okta-sign-on-policy">https://developer.okta.com/docs/reference/api/policy/#okta-sign-on-policy</a></p><p><strong>Rules (also Sign-On Policy rules):</strong></p><p><a href="https://developer.okta.com/docs/reference/api/policy/#rules-operations">https://developer.okta.com/docs/reference/api/policy/#rules-operations</a></p>

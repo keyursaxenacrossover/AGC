@@ -1,0 +1,30 @@
+{
+    "id": 20717225173266,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/20717225173266.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20717225173266-Questions-ITSB",
+    "author_id": 369584192734,
+    "comments_disabled": false,
+    "draft": true,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20714711445138,
+    "created_at": "2024-08-12T20:29:09Z",
+    "updated_at": "2024-08-12T20:29:12Z",
+    "name": "Questions ITSB",
+    "title": "Questions ITSB",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-08-12T20:29:12Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075294,
+    "content_tag_ids": [],
+    "label_names": [],
+    "body": "<p><b>Original Confluence URL:</b> <a href=\"https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3793125490\">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3793125490</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>\n\n<ul>\n<li><p>One database / one provider all users; separation by groups - is that feasible? Are there any issues? What to think about here?</p></li>\n<li><p>Security HTTP Traffic</p></li>\n<li><p>Security Emails (IP allow listing - is that necessary? anything else?)</p></li>\n<li><p>What kind of 2-factor authentication is allowed or necessary? Authenticators, Email (also a question of hosting), SMS (also a question of hosting)?</p></li>\n<li><p>Do we enfore password security policies?</p></li>\n<li><p>What other policies are enforced by us? MFA, token-expiration times, session times, etc.</p></li>\n<li><p>We are currently using OIDC internally - what kinds of flows should we use? (PKCE, implicit flow, code flow, hybrid flow, client credentials flow, device authorization/resource owner password flow)</p></li>\n<li><p>What kind of data would be stored? email and password</p></li>\n<li><p>JIT provisioning - are we allowed to do that? Means external Identity Providers add users to our Identity Provider</p></li>\n<li><p>Domain based approach - are there any major security issues or considerations?</p></li>\n<li><p>What kind of logs are necessary?</p></li>\n</ul><p></p><hr><p></p><ul><li><p>What kind of software are we evaluating? → self hosted open source, vendor like Okta, Auth0, Cognito</p></li></ul><p></p><p></p><p></p><p></p>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

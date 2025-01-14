@@ -1,0 +1,90 @@
+<h2 id="h_01J3YW549F6N6YAFCYJGTJBBR7">Table of Contents</h2>
+<ul>
+<li>
+<a href="#dns-concepts">DNS Concepts</a>
+<ul>
+<li>
+<a href="#domain-types">Domain types</a>
+<ul>
+<li><a href="#apex-domain-zone-apex-2nd-level-domans">Apex-Domain / Zone-Apex / 2nd-level-Domans</a></li>
+<li><a href="#sub-domains">Sub-Domains</a></li>
+</ul>
+</li>
+<li>
+<a href="#dsn-record-types">DNS Record Types</a>
+<ul>
+<li><a href="#a-aaaa">A / AAAA</a></li>
+<li><a href="#mx">MX</a></li>
+<li><a href="#cname">CNAME</a></li>
+<li><a href="#txt">TXT</a></li>
+<li><a href="#ns">NS</a></li>
+<li><a href="#alias-aname-cname-flattening-non-standard-virtual-record">ALIAS / ANAME / CNAME Flattening (non-standard / virtual-record)</a></li>
+<li><a href="#caa">CAA</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#email-concepts">Email Concepts</a>
+<ul>
+<li><a href="#mx-record-sending-only">MX-Record ; sending-only</a></li>
+<li>
+<a href="#spf-sender-policy-framework-sometimes-called-spf-records-receiving-validation-only">SPF - Sender Policy Framework (sometimes called SPF-Records) ; receiving-validation only</a>
+<ul>
+<li><a href="#identification-of-domain-to-be-checked">Identification of domain to be checked</a></li>
+<li><a href="#lookup-and-verification">Lookup and verification</a></li>
+<li><a href="#structure-contents-of-the-spf-record">Structure / contents of the SPF-Record</a></li>
+<li><a href="#pitfalls-and-other-noteworthy-stuff">Pitfalls and other noteworthy stuff</a></li>
+<li><a href="#further-reading">Further reading</a></li>
+</ul>
+</li>
+<li>
+<a href="#dkim-domainkeys-identified-mail-sending-receiving-validation">DKIM - DomainKeys Identified Mail ; sending &amp; receiving-validation</a>
+<ul>
+<li><a href="#computation-and-appendment-of-the-dkim-signature">Computation and appendment of the DKIM-Signature</a></li>
+<li><a href="#validation-stage">Validation Stage</a></li>
+<li><a href="#further-reading-1">Further reading</a></li>
+</ul>
+</li>
+<li>
+<a href="#dmarc-domain-based-message-authentication-reporting-and-conformance-receiving-validation-only">DMARC - Domain-based Message Authentication, Reporting and Conformance ; receiving-validation only</a>
+<ul>
+<li><a href="#prevents-abuse-in-from-field-by-spammers">Prevents abuse in “From” field by spammers</a></li>
+<li><a href="#reporting-how-and-what">Reporting how and what</a></li>
+<li><a href="#how-to-implement">How to implement</a></li>
+<li><a href="#problems-limitations">Problems / Limitations</a></li>
+<li><a href="#further-reading-2">Further reading</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#certificate-concepts">Certificate Concepts</a>
+<ul>
+<li>
+<a href="#caa-record-sending-only">CAA-Record ; sending-only</a>
+<ul>
+<li><a href="#details-about-the-dns-record">Details about the DNS-Record</a></li>
+<li><a href="#how-are-existing-caa-records-used-a-caa-when-issuing">How are existing CAA Records used a CAA when issuing</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#dns-and-email-in-efs-how-to-pitfalls">DNS and Email in EFS (How-to / Pitfalls)</a>
+<ul>
+<li>
+<a href="#recommended-efs-alias-domain-dns-records-directly-pointing-to-efs">Recommended EFS-Alias-Domain DNS-Records directly pointing to EFS</a>
+<ul>
+<li><a href="#ip-related-entries-for-apex-domain-incl-www-subdomain">IP-Related entries - For Apex-Domain incl. www-Subdomain</a></li>
+<li><a href="#ip-related-entries-for-sub-domain-only">IP-Related entries - For Sub-Domain only</a></li>
+<li><a href="#mail-related-entries">Mail-related entries</a></li>
+<li><a href="#optional-certificate-related-entries">(optional) Certificate-related entries</a></li>
+<li><a href="#special-case-domain-will-point-to-cdn-e-g-akamai-waf-e-g-cloudflare">Special case: Domain will point to CDN (e.g. Akamai) / WAF (e.g. Cloudflare)</a></li>
+<li><a href="#special-case-technical-domain-is-akamized">Special case: Technical domain is Akamized</a></li>
+</ul>
+</li>
+<li>
+<a href="#how-to-match-recommended-record-setup-as-close-as-possible-for-customer-managed-domain">How to match recommended Record-Setup as close as possible for customer managed domain</a>
+<ul>
+<li><a href="#alias

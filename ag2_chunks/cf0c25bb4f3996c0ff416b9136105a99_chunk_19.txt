@@ -1,0 +1,55 @@
+ soon as one or more exported questionnaire versions have been saved, you will be able to view directly in the <em data-renderer-mark="true">EFS Translator Interface</em> the changes made either between the different versions or between one exported version and the current questionnaire:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="30535">Open or update the <strong data-renderer-mark="true">Export file </strong>tab.</p>
+</li>
+<li>
+<p data-renderer-start-pos="30574">In the upper part of the tab, the saved versions will be listed. Below, you can compare versions. To do so, select the versions which are to be compared.</p>
+</li>
+<li>
+<p data-renderer-start-pos="30731">Click on <strong data-renderer-mark="true">Display</strong>. A list of the differences will be output.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="30794"><strong data-renderer-mark="true">Exporting changes</strong></p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="30813">If you wish to export only the changes, proceed as follows:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="30876">In the “Only export changes relative to previously recorded version”, select the version against which the comparison is to be performed. In the example shown, all changes made since version 1 will be exported.</p>
+</li>
+<li>
+<p data-renderer-start-pos="31090">Confirm by clicking on <strong data-renderer-mark="true">Export</strong>. The exported file contains only the changes.</p>
+</li>
+</ul>
+<h2 id="Creating-Translator-Accounts-and-Configuring-Access-Rights" class="wysiwyg-text-align-justify" data-renderer-start-pos="31169"><strong data-renderer-mark="true">Creating Translator Accounts and Configuring Access Rights</strong></h2>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="31229"><strong data-renderer-mark="true">Planning</strong></p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="31239">As usual in EFS, you assign access rights for the translation languages to teams. How many teams you need, depends of</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="31360">how many translators or translator groups work on the questionnaire</p>
+</li>
+<li>
+<p data-renderer-start-pos="31433">if all translators are permitted to see all translations, or if each of them is only allowed to see their specific constellation of languages.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="31581">If all translators are allowed to see all translations, you need only one team with access rights to all languages. If the translators or translator groups are allowed to see only their own specific constellation of languages, you need a team for each translator / each group of translators.</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="31874"><strong data-renderer-mark="true">Realization</strong></p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="31889">Create the translator teams.</p>
+<ul class="ak-ul" data-indent-level="2">
+<li>
+<p data-renderer-start-pos="31923">Take care to assign access rights to EFS Translator Interface while creating the teams, which corresponds to the ACL right<em data-renderer-mark="true"> area_translations</em>. The teams should not have access rights for other areas of EFS.</p>
+</li>
+<li>
+<p data-renderer-start-pos="32132">Optionally, you can assign read rights for <em data-renderer-mark="true">print_survey</em>. It enables the translators to print the questionnaires in their languages.</p>
+</li>
+</ul>
+</li>
+<li>
+<p data-renderer-start-pos="32269">Make sure the teams have <em data-renderer-mark="true">no other ACL right</em>s.</p>
+</li>
+<li>
+<p data-renderer-start-pos="32320">Assign <em data-renderer-mark="true">write and read rights to the project </em>to all translator teams.</p>
+</li>
+<li>
+<p data-renderer-start-pos="32394">Navigate to the menu <strong data-renderer-mark="true">Projects </strong>→ {<strong data-renderer-mark="true">Selected project</strong>} → <strong data-renderer-mark="true">Questionnaire editor </strong>→<strong data-renderer-mark="true"> Language editor</strong>. In this dialog, you can assign <em data-renderer-mark="true">rights to the appropriate languages </em>to the various translator teams. Usually, translators will have read rights for the default language, which serves as reference language, and write rights for the language(s) into which they translate. Search for the required languages, click the <strong data-renderer-mark="true">Rights </strong>icon and assign “read” or “write” rights as required to the appropriate team.</p>

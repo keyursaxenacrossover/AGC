@@ -1,0 +1,60 @@
+-text-align-justify"><strong>Manual multiple allocation</strong></p>
+<p class="wysiwyg-text-align-justify">If multiple allocation is activated, then additional functions allowing you the manual allocation of participants will be displayed in the following locations:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Centralized participant administration → Form for adding a new participant → Section “Allocation of participant to structure views”: In the structure for which multiple allocation is activated, you can allocate the participants to any number of nodes.</p>
+</li>
+<li>
+<p>Centralized participant administration → Detail view of the participant → Section “Allocation of the participant to structure views”: Here you can also allocate the participants to any number of nodes.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Importing multiple allocations</strong></p>
+<p class="wysiwyg-text-align-justify">Multiple allocations can be imported into the centralized participant administration. When doing so, the variable containing the unit allocation - usually metaname - is formatted as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Multiple structure views and/or multiple allocation: metaname1;metaname2</p>
+</li>
+<li>
+<p>Multiple structure views, multiple allocation, and/or function: metaname1:u_function:code;metaname2:u_function:code;metaname3:u_function:code</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Please note that every participant data record can only be imported once: All the desired allocations should be performed in this one permitted import. Decentralized import of multiple allocations is not possible, i.e. you cannot separately import the same participants into the lists of participants of different units. If you want to subsequently allocate an already imported participant to additional units, you can do so in the participant’s detail view in the centralized participant administration as described above.</p>
+<p class="wysiwyg-text-align-justify"><strong>Exporting multiple allocations</strong></p>
+<p class="wysiwyg-text-align-justify">Download the central list of participants as already described for the allocation to multiple structure views. The column metaname contains the comma-separated meta names of the units to which the participants are allocated.</p>
+<p class="wysiwyg-text-align-justify"><strong>Additional Feature: allocation of functions to the participants</strong></p>
+<p class="wysiwyg-text-align-justify">If you are using multiple structure views and/or multiple allocations, you can differentiate between the different functions that a participant may have. The following functions can be allocated:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Staff</p>
+</li>
+<li>
+<p>Manager</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Thus, for example, you can mark a participant as “Manager” in a hierarchical structure view while counting him only as “Staff” in a project structure.</p>
+<p class="wysiwyg-text-align-justify"><strong>Activation</strong></p>
+<p class="wysiwyg-text-align-justify">This additional feature is activated via the field “Use Function” in the detailed view of the desired structure.</p>
+<p class="wysiwyg-text-align-justify"><strong>Manual function allocation</strong></p>
+<p class="wysiwyg-text-align-justify">If function allocation is activated, then additional functions permitting the manual allocation of participants will be displayed in the following locations:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Centralized participant administration → Form for adding a new participant → Section “Allocation of the participant to structure views”: In the structure for which the function allocation is activated you can allocate a function to the participants.</p>
+</li>
+<li>
+<p>Centralized participant administration → Detail view of the participant → Section “Allocation of the participant to structure views”: Here you can also allocate a function to the participants.</p>
+</li>
+<li>
+<p>Decentralized participant administration (both in the www area and in the Org Processor) → Detail view of the participant → Section “Functions”: Both you and the users can allocate a function to the participants.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Importing function allocations</strong></p>
+<p class="wysiwyg-text-align-justify">Function allocations can be imported into the centralized participant administration. When doing so, the variable containing the unit allocation - usually metaname - is formatted as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Multiple structure views, multiple allocation, and/or function: metaname1:u_function:code;metaname2:u_function:code;metaname3:u_function:code</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Decentralized import of function allocations is not possible. If you want to subsequently change the function allocation of an already imported participant, you can do so in the participant’s detail view in the centralized participant administration as described above.</p>
+<p class="wysiwyg-text-align-justify"><strong>Exporting function allocations</strong></p>
+<p class="wysiwyg-text-align-justify">Download the central list of participants as already described for the allocation to multiple structure views. In addition to the meta names of the units, the column metaname also contains the function(s).</p>
+<h3 id="structure-variables" class="wysiwyg-text-align

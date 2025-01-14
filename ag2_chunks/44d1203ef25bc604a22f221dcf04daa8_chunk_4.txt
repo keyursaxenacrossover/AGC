@@ -1,0 +1,78 @@
+ class="wysiwyg-text-align-justify">You proceed as follows:</p>
+<ul class="ak-ul wysiwyg-text-align-justify">
+<li>
+<p>You click on the button <strong>+ EFS project</strong>.</p>
+</li>
+<li>
+<p>From the drop-down list that opens, you select the <em>EFS</em> project.</p>
+</li>
+<li>
+<p>You use the search function to quickly find the desired project by entering the project name in case of a large number of EFS projects.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">After you have selected a project the data areas available for the survey type defined by the project setup are presented to you in addition to the project ID and the project name. The scope and composition of the data areas vary depending on the survey type and cannot be changed by the user in <em>MySight</em>. For example, a personalized survey in <em>MySight</em> cannot be converted into an employee survey. The trashcan icon allows you to remove the selected EFS project.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<div class="fabric-editor-block-mark sc-ixltIz dsUKKC wysiwyg-text-align-justify">
+<h3 id="formatting-the-data"><strong>Formatting the data</strong></h3>
+</div>
+<p class="wysiwyg-text-align-justify">The data areas Questions, <strong>Survey data</strong>, <strong>Participant data,</strong> and <strong>Master data</strong> have additional formatting options. The data of these areas can be created as <strong>fact</strong> or <strong>dimension</strong>.</p>
+<p class="wysiwyg-text-align-justify">After selecting the data, you click on the drop-down arrow.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015311990418" alt="datensaetze1_EN.png"></p>
+<p class="wysiwyg-text-align-justify">The variables belonging to the data are displayed immediately, whose formatting has a considerable influence on the work in <em>Tableau</em>. At this point, you decide how you want to access these variables in <em>Tableau</em>, whether as a <strong>fact</strong> or a <strong>dimension</strong>. To do this, you proceed in the different data areas in the same way:</p>
+<ul class="ak-ul wysiwyg-text-align-justify">
+<li>
+<p>You click on the gear icon to format the variables belonging to the data as a <strong>fact</strong> or a <strong>dimension</strong>. The default is <strong>fact</strong>.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015311989138" alt="datensaetze2_EN.png"></p>
+<ul class="ak-ul wysiwyg-text-align-justify">
+<li>
+<p>If the variable is formatted as a <strong>fact</strong>, the variable is available for further evaluation after publication in <em>Tableau</em>.</p>
+</li>
+<li>
+<p>If the variable is formatted as a <strong>dimension</strong>, it is possible to use the variables of the data from the areas <strong>Questions</strong>, <strong>Survey data</strong>, <strong>Participant data,</strong> and <strong>Master data </strong>as splits in<em> Tableau.</em></p>
+</li>
+<li>
+<p>A total of 20 dimensions can be created. The information about how many variables have been formatted as dimensions can be found once on the tab <strong>EFS projects</strong>, where a counter appears after the first time you have selected a variable for dimension formatting, The other counter is located behind the selected data.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<div class="fabric-editor-block-mark sc-ixltIz dsUKKC wysiwyg-text-align-justify">
+<h3 id="overview-of-available-data-areas"><strong>Overview of available data areas</strong></h3>
+</div>
+<p class="wysiwyg-text-align-justify">Depending on the survey type, the number and composition of the available data areas vary, from which you take the data to be transmitted to <em>Tableau</em>. Below is a list of the survey types supported by <em>MySight</em> and the data depended on the choice of the survey types.</p>
+<div class="wysiwyg-text-align-justify">
+<div>
+<p><strong>Anonymous survey</strong></p>
+<ul class="ak-ul">
+<li>
+<p>Questions</p>
+</li>
+<li>
+<p>Survey data</p>
+</li>
+<li>
+<p>Field report</p>
+</li>
+</ul>
+<p><strong>Master data survey</strong></p>
+<ul class="ak-ul">
+<li>
+<p>Survey data</p>
+</li>
+<li>
+<p>Participant data</p>
+</li>
+<li>
+<p>Field report</p>
+</li>
+</ul>
+</div>
+<div>
+<p><strong>Panel survey</strong></p>
+<ul class="ak-ul">
+<li>
+<p>Questions</p>
+</li>
+<li>
+<p>Survey

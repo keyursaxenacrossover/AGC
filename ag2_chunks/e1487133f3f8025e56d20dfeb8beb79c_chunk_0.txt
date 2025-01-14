@@ -1,0 +1,146 @@
+<h1 id="h_01J5WXAFRZQA2JDXRMZQ7ABP4V">Table of Contents</h1>
+<ul>
+<li><a href="#header-1">Preconditions</a></li>
+<li>
+<a href="#header-2">Changes</a>
+<ul>
+<li><a href="#header-4">System configuration</a></li>
+<li><a href="#header-5">EFS, People, Portal CMS, Webservices</a></li>
+<li><a href="#header-6">Portals</a></li>
+</ul>
+</li>
+<li>
+<a href="#header-8">Login / Logout workflow</a>
+<ul>
+<li><a href="#header-10">EFS Admin user - customer without own IdP</a></li>
+<li><a href="#header-11">Portal user - customer without own IdP</a></li>
+<li><a href="#header-12">EFS Admin &amp; Portal user - customer with own IdP</a></li>
+</ul>
+</li>
+<li><a href="#header-14">Multifactor Authentication</a></li>
+<li><a href="#header-15">Forgot password workflow</a></li>
+<li><a href="#header-16">IdP activation mail</a></li>
+<li><a href="#header-17">Ideation workflow: inviting new contacts</a></li>
+<li><a href="#header-18">Exception pages</a></li>
+<li>
+<a href="#header-19">Background</a>
+<ul>
+<li><a href="#header-21">User data synchronization between EFS and Okta</a></li>
+<li><a href="#header-22">IdP session</a></li>
+<li><a href="#header-23">Others</a></li>
+</ul>
+</li>
+<li><a href="#header-25">Possible Flows</a></li>
+</ul>
+<h1 id="header-1">Preconditions</h1>
+<ul>
+<li>
+<p>In order to ensure that users can login with SSO they need to be synced from EFS to Okta (third party Identity Provider), ie users need to be created in Okta as well</p>
+</li>
+<li>
+<p>In case customer doesn’t have an own Identity Provider (IdP), he will use Tivians' IdP (Okta)</p>
+</li>
+</ul>
+<p> </p>
+<h1 id="header-2">Changes</h1>
+<h2 id="header-4">System configuration</h2>
+<ul>
+<li>
+<p>New Tivian Access module to activate SSO with two configuration options for existing users:</p>
+<ul>
+<li>
+<p>Panelist migration to IdP , ie syncing first, last name and e-mail to Okta IdP</p>
+</li>
+<li>
+<p>Panelist migration and Panelist activation (user gets an Okta activation mail to use new login)</p>
+</li>
+</ul>
+</li>
+<li>
+<p>New config flag to define which users should login with SSO:</p>
+<ul>
+<li>
+<p>EFS Admin users</p>
+</li>
+<li>
+<p>Panelists</p>
+</li>
+<li>
+<p>Admin users and Panelists</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Further config parameter: Module "IdentityAccessManager"</p>
+</li>
+</ul>
+<p> </p>
+<h2 id="header-5">EFS, People, Portal CMS, Webservices</h2>
+<ul>
+<li>
+<p>EFS Admin users:</p>
+<ul>
+<li>
+<p>E-mail cannot be changed anymore, read-only</p>
+</li>
+<li>
+<p>add / edit password option removed</p>
+</li>
+<li>
+<p>first and last name mandatory</p>
+</li>
+</ul>
+</li>
+<li>
+<p>EFS Panelist</p>
+<ul>
+<li>
+<p>E-mail cannot be changed anymore, read-only</p>
+</li>
+<li>
+<p>add / edit password still possible, but has only impact on panelists using Panel website</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Portal CMS:</p>
+<ul>
+<li>
+<p>Login / Registration module: Sign in button instead of login mask</p>
+</li>
+<li>
+<p>Settings &gt; Access permissions &gt; Login mask configuration disabled</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Master Data survey &gt; Master data allocation: survey variables cannot be allocated to Panelist E-mail anymore, ie panelist E-mail cannot be changed via allocation anymore</p>
+</li>
+<li>
+<p>Webservices adaptation</p>
+</li>
+</ul>
+<p> </p>
+<h2 id="header-6">Portals</h2>
+<ul>
+<li>
+<p>Login mask replaced by sign in button with redirect to IdP</p>
+</li>
+<li>
+<p>Portal user &gt; Profile settings:</p>
+<ul>
+<li>
+<p>e-mail cannot be changed anymore, read-only</p>
+</li>
+<li>
+<p>edit password option removed</p>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="header-8">Login / Logout workflow</h1>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20907039918866" width="479" height="349"></p>
+<h2 id="header-10">EFS Admin user - customer without own IdP</h2>
+<ul>
+<li>
+<p>User starts EFS app to access EFS admin area

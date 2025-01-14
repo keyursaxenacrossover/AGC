@@ -1,0 +1,40 @@
+<h1 id="h_01J3DN78PF03B3FJCVRCCT1QTR" class="wysiwyg-text-align-justify">Overview</h1>
+<article>
+<p class="wysiwyg-text-align-justify">This article covers the process of testing and activating a project in EFS, as well as exporting results. It provides step-by-step instructions for activating a project, testing the questionnaire and feedback center, resetting the project, and exporting various types of data.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">This guide focuses on the final stages of setting up a project in EFS, including activation, testing, and data export. It also covers important aspects of access control and mail template types for multi-source feedback.</p>
+<ul class="wysiwyg-text-align-justify">
+<li><a href="#h_01HGKSMPRT0QJQX8YJXQX3YDWM">Activating the Project</a></li>
+<li><a href="#h_01HGKSMPRT5YJXQBQJXF1QXCWN">Testing the Project</a></li>
+<li><a href="#h_01HGKSMPRTBJ8XQJXF1QXCWN5Y">Resetting the Project</a></li>
+<li><a href="#h_01HGKSMPRTGJ8XQJXF1QXCWN6Z">Exporting Results</a></li>
+<li><a href="#h_01HGKSMPRTMJ8XQJXF1QXCWN7A">Access Control for Multi-Source Feedback</a></li>
+<li><a href="#h_01HGKSMPRTQJ8XQJXF1QXCWN8B">Mail Template Types</a></li>
+</ul>
+<h2 id="h_01HGKSMPRT0QJQX8YJXQX3YDWM" class="wysiwyg-text-align-justify">Activating the Project</h2>
+<p class="wysiwyg-text-align-justify">Before starting the feedback process, you need to adjust the basic settings of the project in the Survey menu.</p>
+<h3 id="h_01HGKSMPRTV5YJXQBQJXF1QXCWP" class="wysiwyg-text-align-justify">Step 1: Specify Project Duration</h3>
+<p class="wysiwyg-text-align-justify">Specify the beginning and end of the project. Confirm with Save.</p>
+<h3 id="h_01HGKSMPRTZBJ8XQJXF1QXCWN9C" class="wysiwyg-text-align-justify">Step 2: Activate the Project</h3>
+<p class="wysiwyg-text-align-justify">In the "Status" line, you'll see that the project has been created and is currently in the status "survey compiled". Click on the active button to change the status to "active".</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015041292818"></p>
+<p class="wysiwyg-text-align-justify"><strong>Note:</strong> The interval specified in the survey menu is the field time of the project itself. Individual feedback waves may have shorter field times, but these must be inside the overall project field time.</p>
+<h2 id="h_01HGKSMPRT5YJXQBQJXF1QXCWN" class="wysiwyg-text-align-justify">Testing the Project</h2>
+<p class="wysiwyg-text-align-justify">Before entering the field, you need to test both the questionnaire and the feedback center.</p>
+<h3 id="h_01HGKSMPRTZ5YJXQBQJXF1QXCWQ" class="wysiwyg-text-align-justify">Testing the Questionnaire in Preview Mode</h3>
+<p class="wysiwyg-text-align-justify">In the "Distribution" section of the survey menu, click on the Questionnaire Preview icon and check the survey from the point of view of a participant. Go through the questionnaire and try whether filters, hiding conditions, and plausibility checks really work.</p>
+<h3 id="h_01HGKSMPRU3BJ8XQJXF1QXCWN0D" class="wysiwyg-text-align-justify">Testing Questionnaire and Feedback Center with Test Participants</h3>
+<ol class="wysiwyg-text-align-justify">
+<li>Create a test wave in the menu Participant administration → Waves.</li>
+<li>Create participants manually and define a feedback constellation, or import a list of test participants into the test wave.</li>
+<li>To access the questionnaire from the perspective of a feedback provider:
+<ul>
+<li>Open the feedback provider overview: Participant administration → {Selected wave} → {Selected focus person}.</li>
+<li>For the desired test feedback provider, click on the code link in the "Code" column.</li>
+<li>The questionnaire will open, allowing you to check wildcard replacement, routing, etc.</li>
+</ul>
+</li>
+<li>To access the feedback center from the perspective of a focus person:
+<ul>
+<li>Open the focus persons overview: Participant administration → {Selected wave}.</li>
+<li>For the desired test focus person, click on the Edit focus person icon

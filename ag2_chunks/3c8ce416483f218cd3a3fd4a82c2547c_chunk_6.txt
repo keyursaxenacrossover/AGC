@@ -1,0 +1,94 @@
+px;">
+<p>You have the option not to place cookies when your website is visited.</p>
+<p>The following options are available:</p>
+<ul>
+<li>
+<p>Use normal cookies: These are the conventionally used cookies. They can be read by HTTP or Javascript.</p>
+</li>
+<li>
+<p>Use HTTP-only cookies: These cookies were also available in earlier versions of EFS. They can be read by HTTP but not by Javascript. Therefore this setting provides a higher degree of security. Browser-based scripts cannot access the cookie data.</p>
+</li>
+<li>
+<p>Do not use cookies: When using this option, authentication is done via the SES parameter in the URL or via HTTP POST data.</p>
+</li>
+</ul>
+<p>The “HTTP-only cookies” option is preset on new installations.</p>
+<p>Please note: The described settings only apply to the panel website.</p>
+<ul>
+<li>
+<p>The cookie settings for EFS surveys are set in the respective project.</p>
+</li>
+<li>
+<p>The cookie settings for the EFS installation itself are configured by  our support. On new installations, HTTP-only cookies are used per default.</p>
+</li>
+</ul>
+</td>
+<td style="width: 149.045px; height: 628px;">
+<p>Use HTTP-only cookies</p>
+</td>
+</tr>
+<tr style="height: 657px;">
+<td style="width: 176.927px; height: 657px;">
+<p>Mode to determine the language version</p>
+</td>
+<td style="width: 360.573px; height: 657px;">
+<p>When a visitor navigates to the panel website, EFS will automatically try to determine and open the most appropriate language version. It is up to you to decide which procedure is to be employed:</p>
+<ul>
+<li>
+<p>A domain name is used only if the language version was not previously determined: This is the default setting reflecting conventional behavior where the system first tries to evaluate information from previous visits (session, cookies) and request parameters. The domain name that is called up serves as a fallback.</p>
+</li>
+<li>
+<p>Always use domain name: When this option is selected, the system will first check whether the domain name being used is assigned to a particular language version of the CMS. If so, this language version will be used. Otherwise, the older algorithm will be used as a fallback.</p>
+</li>
+</ul>
+<p>Example:<br>A website visitor has visited the French version (www.example.fr) of the website. Now he enters the domain name of the English version (www.example.co.uk).</p>
+<ul>
+<li>
+<p>When set to default, EFS will analyze his session or cookie settings to find out that he already visited the French version<br>before, and consequently display the French version.</p>
+</li>
+<li>
+<p>If the second option has been selected, the explicitly requested English version will be displayed.</p>
+</li>
+</ul>
+</td>
+<td style="width: 149.045px; height: 657px;">
+<p>Domain name is only used if language version was not previously detected</p>
+</td>
+</tr>
+<tr style="height: 132px;">
+<td style="width: 176.927px; height: 132px;">
+<p>Session parameter handling</p>
+</td>
+<td style="width: 360.573px; height: 132px;">
+<p>If the session parameter is not automatically appended to URLs, the panel will only work with cookies enabled.</p>
+</td>
+<td style="width: 149.045px; height: 132px;">
+<p>Append session parameter automatically to URLs</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"><strong>Login</strong></p>
+<table class="wysiwyg-text-align-justify" style="height: 1452px;" border="1" width="717" data-layout="full-width" data-table-width="1526.3262">
+<colgroup> <col style="width: 142.0px;"> <col style="width: 248.0px;"> <col style="width: 100.0px;"> </colgroup>
+<tbody>
+<tr style="height: 64px;">
+<th class="wysiwyg-text-align-center" style="width: 201.632px; height: 64px;">
+<p><strong>Description</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 354.462px; height: 64px;">
+<p><strong>Explanation</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 150.521px; height: 64px;">
+<p><strong>Preallocation in the standard panel</strong></p>
+</th>
+</tr>
+<tr style="height: 295px;">
+<td style="width: 193.611px; height: 295px;">
+<p>Panel login is possible for panelists with the following panel statuses</p>
+</td>
+<td style="width: 346.441px; height: 295px;">
+<p>With this option, you can define the statuses under which the panelists are allowed to log in.</p>
+<p>For example, you may allow a temporarily admitted candidate to already log in.</p>
+<p>If all panel statuses are deselected, the internal website areas become inaccessible while surveys remain accessible irrespective of the website.</p>
+<p>Please note: The panel statuses are not website-specific, but all panelists are described by the same panel statuses. Therefore, the selected setting

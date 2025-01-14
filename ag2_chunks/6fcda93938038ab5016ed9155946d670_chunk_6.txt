@@ -1,0 +1,63 @@
+=287156,description_id=NULL,sys_missing='',category_id=0,properties='a:1:{i:0;b:0;}' WHERE variable_id=13980
+25848209 Query  REPLACE INTO survey_reporting_source SET report_id=238, type=3, id=2914, source_pid=22032, source_id=67145, source_meta=142, status=3
+</code></pre></li></ul>
+</li>
+<li><p>Betroffen ist dann die Variable, die auf die letzte laut Logfile geupdatete Variable folgt. In dem Fall die Variable nach v_213 (siehe Codebuch).</p></li>
+</ul>
+</li>
+<li><p>Beispielcase: 00235836</p></li>
+<li><p>Kanban: KANBAN-9507</p></li>
+</ul>
+</li>
+<li>
+<p><strong>ERROR OCCURED: Unknown language identifier</strong></p>
+<ul>
+<li><p>Beispielmeldung: ERROR OCCURED: Unknown language identifier 0 Available:1</p></li>
+<li><p>Der Bericht enthält nicht die Umfragesprachen, die das Quellprojekt beinhaltet. Das kann dadurch kommen, dass nach Berichtserstellung noch Sprachen im Projekt angelegt wurden.</p></li>
+<li><p>Die Datenaktualisierung aktualisiert die vorhandenen Sprachen aktuell nicht, hat dann aber ein Problem damit, wenn eine Sprach ID gefunden wird, die der Bericht nicht kennt.</p></li>
+<li><p>Beispielcase: 00300301</p></li>
+<li><p>Kanban: KANBAN-10025</p></li>
+</ul>
+</li>
+<li>
+<p><strong>ERROR OCCURED: Query failed</strong></p>
+<ul>
+<li><p>Beispielmeldung: ERROR OCCURED: Query failed ALTER TABLE survey_reporting_variable_data_417_1 ADD sid int NOT NULL DEFAULT -77, ADD status int NOT NULL DEFAULT -77 [...]</p></li>
+<li><p>case: 00338323</p></li>
+<li><p>Die Tabelle konnte nicht verändert werden. Das ALTER TABLE manuell ausführen und schauen, welche Fehlermeldung zurück gegeben wird. Je nach Fehlermeldung das Query anpassen und erneut ausführen.</p></li>
+<li><p>Die Datenaktualisierung sollte danach erfolgreich sein.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Wenn keine Fehlermeldung im Datenaktualisierungsfenster angezeigt wird</p>
+<ul><li>
+<p>Es kann sein, dass eine rote Meldung oben rechts angezeigt wird. Diese kann man auch in der Console im Browser sehen</p>
+<ul><li>
+<p><strong>Error: unable to load ...status: 500</strong></p>
+<ul>
+<li><p>Case 00465262</p></li>
+<li><p>In die PHP errors schauen, ob zum Zeitpunkt PHP Fehler aufgetreten sind</p></li>
+<li><p>Hier lief der Prozess aus dem Speicher (Allowe memory size exhaused)</p></li>
+<li><p>Es kann dann eine geplante Datenaktualisierung in den Reporteinstellungen geplant werden. Diese läuft dann über den Cron Server, der mehr Speicher zur Verfügung hat.</p></li>
+<li><p>Sollte dies auch nicht helfen, müsste geschaut werden, ob es Sinnvoll ist, dem Cron Server mehr Speicher zu geben.</p></li>
+</ul>
+</li></ul>
+</li></ul>
+</li>
+</ul><p></p><p>Falls es notwendig ist, die Datenaktualisierung inerhalb von weniger als 60 minuten erneut auszuführen, kann die Zeit hier geändert werden:</p><ul>
+<li>
+<p>Auf der DB in der Tabelle <strong>survey_reporting_report</strong> die Spalte <strong>last_update</strong> für den entsprechenden Bericht ändern:</p>
+<pre><code class="language-text">UPDATE survey_reporting_report SET last_update="2015-07-16 12:30:54" WHERE report_id=352;</code></pre>
+</li>
+<li>
+<p>Wurde nach dem Ende der Befragung bereits ein Datenupdate durchgeführt, aber es muss nochmal neu ausgeführt werden:</p>
+<pre><code class="language-text">UPDATE survey_reporting_report SET last_update=NULL WHERE report_id=88;</code></pre>
+</li>
+</ul><h3 id="header-16">Beim Export:</h3><ul>
+<li><p>welche Fehlermeldung wird im Tooltip beim fehlgeschlagenen Export gezeigt</p></li>
+<li><p>steht dort <strong>Bitte wenden Sie sich an den Support</strong> sollte man einen Export (im richtigen Format) über EFS anstoßen und im Hintergrund auf der Konsole den Jobmaker starten ([Installationsverzeichnis]/www$ php53 support/jobmaker.php3). Dieser gibt die entsprechende Fehlermeldung aus. Eventuell muss man etwas geduldig sein, weil der Jobmaker im Hintergrund arbeitet und dann die Fehlermeldung eventuell verzögert ausprintet.</p></li>
+</ul><p></p><h4 id="header-18">Mögliche Fehler bei <strong>Bitte wenden Sie sich an

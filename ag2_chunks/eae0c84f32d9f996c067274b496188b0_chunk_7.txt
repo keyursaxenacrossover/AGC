@@ -1,0 +1,34 @@
+ start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: pre-wrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; padding: var(--ds-space-100,8px) var(--ds-space-200,16px) var(--ds-space-100,8px) var(--ds-space-100,8px);" data-panel-type="info">
+<div class="ak-editor-panel__icon" style="margin: 0.1em 0px 0px; height: var(--ds-space-300,24px); width: var(--ds-space-300,24px); box-sizing: content-box; text-align: center; user-select: none; color: var(--ds-icon-information,#0052cc); flex-shrink: 0; padding: 0px var(--ds-space-100,8px) 0px 0px;"> </div>
+<div class="ak-editor-panel__content" style="margin: var(--ds-space-025,2px)0 var(--ds-space-025,2px); padding: 0px; flex: 1 0 0px; min-width: 0px;">
+<p style="margin: 0px; padding: 0px; letter-spacing: -0.005em; font-size: 1em; font-weight: 400; line-height: 1.714;" data-renderer-start-pos="9626">If these columns are not visible, open the dialog for configuring the overview table by clicking on <strong data-renderer-mark="true">View</strong>, activate the checkboxes for these columns and confirm with <strong data-renderer-mark="true">Send</strong>.</p>
+</div>
+</div>
+</div>
+<div class="ak-editor-panel__content">
+<p data-renderer-start-pos="9626"> </p>
+</div>
+</div>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="9798"><strong data-renderer-mark="true">Reactivating suspended accounts</strong></p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="9831">A suspended account can be reactivated prematurely by the system administrator (root team) or by a user with write rights to “groupadmin”. By clicking on the red-marked end date for the suspension period, the suspension will be reverted.</p>
+<h3 id="Delegating-the-administration-of-user-accounts" class="wysiwyg-text-align-justify" data-renderer-start-pos="10070"><strong data-renderer-mark="true">Delegating the administration of user accounts</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="10118">You can delegate the administration of the user accounts of a specific organization. This is the purpose of the ACL right <em data-renderer-mark="true">org_groupadmin</em>: If you assign this right, instead of the more general right <em data-renderer-mark="true">groupadmin</em>, to a user team, its members can access all user accounts of their own organization.</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="10415">With read rights, they can view the account data of the users of their own organization.</p>
+</li>
+<li>
+<p data-renderer-start-pos="10507">With write rights, they can manage the users of their own organization (e.g. extend accounts, edit account data, or delete accounts).</p>
+</li>
+</ul>
+<h2 id="Teams" class="wysiwyg-text-align-justify" data-renderer-start-pos="10643">Teams</h2>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="10650">Within a team, there are normal members (member), administrators (admin), and owners (owner). These statuses determine the operations a team member may perform within their team. Team statuses have no effect on rights within user administration or on object or function rights in <em data-renderer-mark="true">EFS Survey</em>. In general, you can simply ignore the statuses within teams. Exception: If you wish to delete an account of someone who is a team owner, you must first transfer leadership to another team member, before you can delete the account.</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="10650"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015166319634"></p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="10650"><span class="wysiwyg-underline">Statuses</span></p>
+<div class="pm-table-container with-shadow-observer wysiwyg-text-align-justify" data-layout="custom">
+<div class="pm-table-wrapper">
+<div class="sentinel-right"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015136250002"></div>
+</div>
+</div>
+<h3 id="Creating-teams" class="wysiwyg-text-align-justify" data-renderer-start-pos="11961"><strong data-renderer-mark="true">Creating teams</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="11977">With the <em data-renderer-mark="true">group

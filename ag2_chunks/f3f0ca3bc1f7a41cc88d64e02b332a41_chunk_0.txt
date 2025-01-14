@@ -1,0 +1,73 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3706322962">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3706322962</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">Relevant data</a></li>
+<ul>
+<li><a href="#header-3">Basic Requirements:</a></li>
+<ul>
+<li><a href="#header-5">Requirements for self-hosted solutions:</a></li>
+<li><a href="#header-6">Other Factors:</a></li>
+<li><a href="#header-7">List of existing products in scope (not an exhaustive list!)</a></li>
+</ul>
+<li><a href="#header-9">Background</a></li>
+<li><a href="#header-10">Options considered</a></li>
+<ul>
+<li><a href="#header-12">General options</a></li>
+<ul>
+<li><a href="#header-14">Intermediate outcome</a></li>
+</ul>
+<li><a href="#header-16">Specific technology</a></li>
+</ul>
+<li><a href="#header-18">Action items</a></li>
+<li><a href="#header-19">Outcome</a></li>
+</ul>
+</ul>
+</ul><ac:rich-text-body><table ac:local-id="d8e94be9-7680-48ac-9bd5-426cd8d76aa1" data-layout="default">
+<colgroup>
+<col style="width: 149.0px;">
+<col style="width: 577.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p><strong>Status</strong></p></th>
+<td><p><ac:parameter ac:name="title">In progress</ac:parameter><ac:parameter ac:name="colour">Yellow</ac:parameter> / <ac:parameter ac:name="title">Complete</ac:parameter><ac:parameter ac:name="colour">Green</ac:parameter></p></td>
+</tr>
+<tr>
+<th><p><strong>Impact</strong></p></th>
+<td><p><ac:parameter ac:name="title">High</ac:parameter><ac:parameter ac:name="colour">Red</ac:parameter></p></td>
+</tr>
+<tr>
+<th><p><strong>Driver</strong></p></th>
+<td><p><ac:link><ri:user ri:account-id="5c790ab34b5199464e92723f"></ri:user></ac:link> </p></td>
+</tr>
+<tr>
+<th><p><strong>Approver</strong></p></th>
+<td><p><ac:link><ri:user ri:account-id="5aa63fb0fe2b4b24ab21b459"></ri:user></ac:link> <ac:link><ri:user ri:account-id="5aa641167f3fd325faf0fe3b"></ri:user></ac:link> <ac:link><ri:user ri:account-id="5c790ab34b5199464e92723f"></ri:user></ac:link> </p></td>
+</tr>
+<tr>
+<th><p><strong>Contributors</strong></p></th>
+<td><p><ac:link><ri:user ri:account-id="5a7ac85bc10f3565a1510e35"></ri:user></ac:link> </p></td>
+</tr>
+<tr>
+<th><p><strong>Informed</strong></p></th>
+<td><p>Paul, Ludger, Francesco, Markus K.</p></td>
+</tr>
+<tr>
+<th><p><strong>Due date</strong></p></th>
+<td><p><time datetime="2022-12-31"></time> </p></td>
+</tr>
+<tr>
+<th><p><strong>Resources</strong></p></th>
+<td><p><ac:link ac:card-appearance="inline"><ri:space ri:space-key="IAM"></ri:space><ac:link-body>https://qbdocs.atlassian.net/wiki/spaces/IAM</ac:link-body></ac:link>  (especially <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Vendor Analysis" ri:version-at-save="1"></ri:page><ac:link-body>Vendor Analysis</ac:link-body></ac:link> )</p></td>
+</tr>
+</tbody>
+</table></ac:rich-text-body><h1 id="header-1">
+<ac:emoticon ac:emoji-fallback="\uD83D\uDCDA" ac:emoji-id="1f4da" ac:emoji-shortname=":books:" ac:name="blue-star"></ac:emoticon> Relevant data</h1><h2 id="header-3">Basic Requirements:</h2><ul>
+<li><p>SAML and OIDC federation is present</p></li>
+<li><p>APIs for managing the solution are present</p></li>
+<li><p>OIDC for authentication towards own services / for SSO capabilities</p></li>
+<li><p>Hosting in Europe is possible</p></li>
+<li><p>Customization of user facing UI is possible</p></li>
+<li><p>Customization of

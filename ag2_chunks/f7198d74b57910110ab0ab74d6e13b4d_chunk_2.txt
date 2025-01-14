@@ -1,0 +1,102 @@
+p></td>
+<td><p>there always is a centralized module.inc.php describing the module</p></td>
+</tr>
+<tr>
+<td><p>modules/employee</p></td>
+<td><p>includes files of the employee module</p></td>
+</tr>
+<tr>
+<td><p>modules/survey</p></td>
+<td><p>includes files of the survey module</p></td>
+</tr>
+<tr>
+<td><p>modules/panel</p></td>
+<td><p>includes files of the panel module</p></td>
+</tr>
+<tr>
+<th><p><strong><span style="color: rgb(255,255,255);">panelwebsite</span></strong></p></th>
+<td><p>is needed by EFS Panel module and includes the panelwebsite</p></td>
+</tr>
+<tr>
+<td><p>panelwebsite/assets_themes</p></td>
+<td><p> </p></td>
+</tr>
+<tr>
+<td><p>panelwebsite/assets_websites</p></td>
+<td><p>includes image files uploaded for a panel website/language version</p></td>
+</tr>
+<tr>
+<td><p>panelwebsite/install</p></td>
+<td><p>includes files needed to initially install a panel website</p></td>
+</tr>
+<tr>
+<td><p>panelwebsite/s</p></td>
+<td><p>includes filders and files of panel surveys</p></td>
+</tr>
+<tr>
+<th><p><strong><span style="color: rgb(255,255,255);">public</span></strong></p></th>
+<td><p> </p></td>
+</tr>
+<tr>
+<th><p><strong><span style="color: rgb(255,255,255);">qtool</span></strong></p></th>
+<td><p>includes files needed by the qtool (=Qualitative Analysis) module</p></td>
+</tr>
+<tr>
+<th><p><strong><span style="color: rgb(255,255,255);">report</span></strong></p></th>
+<td><p>includes files needed for the EFS Survey Status module; [Installation]/report</p></td>
+</tr>
+<tr>
+<th><p><strong><span style="color: rgb(255,255,255);">reporting</span></strong></p></th>
+<td><p>includes files needen by the EFS Reporting+ module</p></td>
+</tr>
+<tr>
+<th><p><strong><span style="color: rgb(255,255,255);">service</span></strong></p></th>
+<td><p>includes files needed by the service layer</p></td>
+</tr>
+<tr>
+<th><p><strong><span style="color: rgb(255,255,255);">smm</span></strong></p></th>
+<td><p>smm= Social Media Monitoring; includes files needed by the EFS SMM module; module is <strong>deprecated</strong> and no longer included in EFS versions <strong>&gt;=10.7</strong></p></td>
+</tr>
+<tr>
+<th><p><strong><span style="color: rgb(255,255,255);">static_directories</span></strong></p></th>
+<td><p> </p></td>
+</tr>
+<tr>
+<th><p><strong><span style="color: rgb(255,255,255);">support</span></strong></p></th>
+<td><p>includes files needed by the technical support team</p></td>
+</tr>
+<tr>
+<th><p><strong><span style="color: rgb(255,255,255);">translations</span></strong></p></th>
+<td><p>includes files needed by the EFS Translations module and GUI and offers the possibility to translate text elements of surveys; <strong>[Installation_name]/translations</strong></p></td>
+</tr>
+<tr>
+<th><p><strong><span style="color: rgb(255,255,255);">uc</span></strong></p></th>
+<td><p>uc=umfragecenter; includes folders and files of each survey (except for panel surveys)</p></td>
+</tr>
+<tr>
+<td><p>uc/__panel</p></td>
+<td><p> </p></td>
+</tr>
+<tr>
+<td><p>uc/stub.html</p></td>
+<td><p>file needed by system administration/their monitoring to execute a ping on to check wether the installation is reachable</p></td>
+</tr>
+<tr>
+<td><p>uc/stub.php</p></td>
+<td><p>file needed by system administration/their monitoring to execute a ping on to check wether the installation is reachable</p></td>
+</tr>
+<tr>
+<td><p>uc/[primary_team_name]/[generic_project_folder_name]</p></td>
+<td><p>includes all files of a survey</p></td>
+</tr>
+<tr>
+<td><p>uc/[primary_team_name]/[generic_project_folder_name]/images</p></td>
+<td><p>includes image files of the project</p></td>
+</tr>
+<tr>
+<td><p>uc/[primary_team_name]/[generic_project_folder_name]/layout</p></td>
+<td><p>includes layout files (images) uploaded into the media library of the project</p></td>
+</tr>
+<tr>
+<td><p>uc/[primary_team_name]/[generic_project_folder_name]/templates</p></td>
+<td><p>includes template

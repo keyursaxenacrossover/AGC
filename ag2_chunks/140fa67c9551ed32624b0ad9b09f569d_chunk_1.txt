@@ -1,0 +1,52 @@
+ questionnaire editor and select the Receipts option.</li>
+<li>Configure settings in the Settings and Exclude Questions tabs.</li>
+</ol>
+<h3 id="h_01J33AKTXJWAW5HVAHAD058CWN">Add Link to Final Page:</h3>
+<ol>
+<li>Open the end page of your survey.</li>
+<li>Draft the desired text for the PDF receipt download option.</li>
+<li>Use the "Insert code automatically" drop-down menu to select "PDF receipt".</li>
+<li>Customize the display text of the link if needed.</li>
+</ol>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014684751378"></p>
+<p> </p>
+<p>Below is a default example of how the PDF receipt link appears. If needed, you can customize the link's display text, "PDF receipt," by referring to the "Customize the display text of the link" section for more details.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014721636754"></p>
+<p><span style="color: #172b4d; font-family: -apple-system, BlinkMacSystemFont, ' Segoe UI' , Roboto, Oxygen, Ubuntu, ' Fira Sans' , ' Droid Sans' , ' Helvetica Neue' , sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: -0.08px; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: pre-wrap; background-color: #e9f2ff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Please note that the link to the PDF receipt only works for real participation – i.e. not in the preview.</span></p>
+<p> </p>
+<h2 id="h_01J33BKH9RPFZVPK0GT8MN088A">Customize the Display Text of the Link</h2>
+<p>If necessary, you can customize the display text of the link to the PDF receipt – you can even replace it with an image. To do this, proceed as follows:</p>
+<ul>
+<li>Generate the link as described under "Add link to Final Page".</li>
+<li>Then click on the source code icon.</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014721644690"></p>
+<ul>
+<li>You can now customize the display text of the link to the PDF receipt in the source text editor.</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014684758930"></p>
+<ul>
+<li>If you would like to replace the link with an image, first upload the desired image to the media library. Then click on the info symbol in the line with your image and copy the absolute path to the image.</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014721647762"></p>
+<ul>
+<li>Then paste the path into the source text, replacing the text "PDF receipt".</li>
+</ul>
+<p> </p>
+<h2 id="h_01J33BKH9RNXQJF26HDKYF6N0F">Show Intermediate Receipt</h2>
+<p>You can place a link to the PDF receipt on any standard page within the survey. Use the following syntax:</p>
+<p><code>&lt;a href="#surveySummaryLink#" target="_blank"&gt;PDF receipt&lt;/a&gt;</code></p>
+<p>Note that only pages viewed up to this point will be included in the receipt.</p>
+<p> </p>
+<h2 id="restriction-for-loops">Restriction for Loops</h2>
+<p>Loops are not supported in receipts. For questionnaires containing loops, only data from the last loop run will be included in the receipt.</p>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq-1">Can I customize the appearance of the PDF receipt?</h3>
+<p>Yes, you can customize the appearance of the PDF receipt in the Settings tab. You can choose between portrait and landscape format and set page break options.</p>
+<h3 id="faq-2">Will all participants receive a receipt by email?</h3>
+<p>No, only participants who reach an end page with a disposition code between 31 and 34 will receive a PDF receipt by email if this option is activated.</p>
+<h3 id="faq-3">Can I exclude certain questions from the receipt?</h3>
+<p>Yes, you can exclude specific questions from the receipt using the Exclude Questions tab in the Receipts settings.</p>
+<p> </p>
+</article>

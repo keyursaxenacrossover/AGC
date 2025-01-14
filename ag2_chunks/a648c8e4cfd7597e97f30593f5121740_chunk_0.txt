@@ -1,0 +1,118 @@
+<h1 id="h_01J679H7DYK0W1MX19QCQXHEWC">Information</h1>
+<p>An Application is an instance in Okta that takes care of the connection between the Identity Provider and one application. In conjunction with Authorization Servers it defines the contract between an application and the Identity Provider. Therefore it is the central piece of enabling applications to use the Identity Provider.</p>
+<p> </p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 340.0px;">
+<col style="width: 340.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p><strong>What</strong></p>
+</th>
+<th>
+<p><strong>Explanation</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Sign on method and platform</p>
+</td>
+<td>
+<p>Open ID Connect → see <a href="https://openid.net/connect/">https://openid.net/connect/</a></p>
+</td>
+</tr>
+<tr>
+<td data-highlight-colour="#f4f5f7">
+<p><strong>General</strong></p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Grant Types</p>
+</td>
+<td>
+<p>Client credentials - NOT IN USE</p>
+<ul>
+<li>
+<strong>Implicit flow:</strong><br>This flow is mostly used for Single Page Applications. It directly delivers tokens to the browser that can be stored temporarily and validated during backend requests.</li>
+<li>
+<strong>Code Flow + Refresh Token:</strong><br>The Code Flow is best suited for scenarios where tokens are managed on a server and not on a client. In this case only the server has the tokens for a user and manages them. The Refresh Token grant will enable the server to get new tokens if the given ones are invalid but the user still has a valid session.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Login Redirect URI <strong>***</strong></p>
+</td>
+<td>
+<p>Okta will redirect a user back to this Login URI after the login process. The can be multiple Login URIs. A request to Okta will contain the matching Login URI for selecting the correct redirection. But it has to exactly match.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Logout Redirect URI <strong>***</strong></p>
+</td>
+<td>
+<p>The same as Login Redirect URI but for logout. It can be the same as login but it doesn’t have to be same.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Initiate Login URI</p>
+</td>
+<td>
+<p>Currently not in use</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Client ID</p>
+</td>
+<td>
+<p>This is an identifier used by OIDC to identify a specific application that wants to use the login from Okta. It will be used in all requests to the Identity Provider to match the correct connection.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Client Secret</p>
+</td>
+<td>
+<p>The client secret is only used in code-flow scenarios to create trust between Okta and the application.</p>
+</td>
+</tr>
+<tr>
+<td data-highlight-colour="#f4f5f7">
+<p><strong>Sign On</strong></p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Issuer and Audience</p>
+</td>
+<td>
+<p>Issuer is the one that created the token and audience is the group of entities that is should get access with that token. Both values can be used to check validity of a token.</p>
+</td>
+</tr>
+<tr>
+<td data-highlight-colour="#f4f5f7">
+<p><strong>Assignments</strong></p>
+</td>
+<td>
+<p>Applications can be assigned to groups. Only members of these groups are allowed to access. This is currently not used. See Access and Authorization with IAM module</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p><strong>***</strong> If an application corresponds with an EFS installation which is configured for many different domain-aliases, for each such alias the Login Redirect URI / Logout Redirect URI have to be entered manually in OKTA. In case of portal-specific applications the redirect URI will be configured for each domain-alias registered in EFS (Options / Domains) at creation or edit application. The migration script offers an additional option to update all portal-specific applications to get their redirect links up-to-date.</p>
+<p><strong><u>For API Access see: <a href="https://developer.okta.com/docs/reference/api/apps/">https://developer.okta.com/docs/reference/api/apps/</a></u></strong></p>
+<p> </p>
+<p> </p>

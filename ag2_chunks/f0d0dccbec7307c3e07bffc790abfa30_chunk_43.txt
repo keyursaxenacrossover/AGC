@@ -1,0 +1,123 @@
+<td>
+<p>true</p>
+</td>
+<td>
+<p>Export portal with this ID <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79JGZBKD8AXRBEVGRBR"> </h4>
+<h3 id="header-208">POST /portal/portal/import</h3>
+<p>Import portal by using previous export</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{ "portalData": "{\"isPortalCopy\":true,\"metaData\":{\"name\":\"[...]" }</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">"123"</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79J76X19MAH9GFV71JM"> </h4>
+<h3 id="header-209">POST /portal/users/getUserDataByToken</h3>
+<p>Checks whether API-token is valid (not expired). Returns userId and portalId. Otherwise will throw an exception.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{ "apiToken": "Example123" }</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">{ "portalUserId": "123", "portalId": "123" }</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79J0HDCE40M6W8BVEJX"> </h4>
+<h3 id="header-210">PUT /portal/users/invitePanelistToPortal</h3>
+<p>Invite Panelists to Portal</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "identifierType": "uid",
+  "identifierList": [
+    "123"
+  ],
+  "portalId": 1234,
+  "mailTemplateId": 1234
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">true</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79JY1AZN1EJ7HVQDCB9"> </h4>
+<h3 id="header-211">POST /portal/users/logincode</h3>
+<p>Get tmp login code</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{ "identifierType": "uid", "identifierValue": "123" }</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">"1233ffaa123..."</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79JGPKYH8Q9ADGKD95T"> </h4>
+<h3 id="header-212">POST /portal/users/setUserRoles</h3>
+<p>Set role(s) for user(s) in portal</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "portalUsersRolesList": [
+    {
+      "portalUserId": "123",
+      "userRoleList": [
+        "1", "3"
+      ]
+    }
+  ],
+  "portalId": "1"
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">true</code></pre>
+</div>
+<h1 id="header-215">Survey</h1>
+<h2 id="header-217">Languages</h2>
+<div class="expand-macro">
+<h4 id="h_01J441N79JQ3KQJD7N4RJ8KRXF"> </h4>
+<h3 id="header-219">GET /survey/languages/{surveyId}</h3>
+<p>get a list of all languages in a survey</p>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[
+  {
+    "label": "German",
+    "localestring": "de_DE",
+    "languageId": 1,
+    "isStandard": true
+  }
+]</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>surveyId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>surveyId <strong>Examples:</strong> <code>2</code>.</p>
+</td

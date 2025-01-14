@@ -1,0 +1,57 @@
+ button to insert and change the corresponding text elements in the various languages.</p>
+<h3 id="managing-frequently-used-text-elements-effektively" class="wysiwyg-text-align-justify">Managing Frequently-used Text Elements Effectively</h3>
+<p class="wysiwyg-text-align-justify">You can use wildcards defined by yourself in numerous places in the questionnaire, e.g to facilitate the entry of frequently recurrent text sections or the frequent incorporation of the same image:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>in the question text, answer text and fill in instructions for questions with single response lists, questions with multiple response lists, and matrix questions,</p>
+</li>
+<li>
+<p>for the HTML question type,</p>
+</li>
+<li>
+<p>on mixed-external pages, and</p>
+</li>
+<li>
+<p>for questions of the above types in the container depot.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The following sections explain how to create, use, and manage these self-defined wildcards. Below, you will find a practical example that gives a step-by-step explanation of how to, in particular, make frequently incorporating images clearer and easier by using wildcards.</p>
+<p class="wysiwyg-text-align-justify">The wildcard administration is designed for up to 250 wildcards. If you use wildcards a lot, take care to use meaningful names, to prevent e.g. the creation of duplicates. If necessary, develop your nomenclature.</p>
+<h3 id="defining-and-managing-static-wildcards" class="wysiwyg-text-align-justify">Defining and Managing Static Wildcards</h3>
+<p class="wysiwyg-text-align-justify">The questionnaire editor’s menu (<strong>Projects</strong> → {<strong>Selected Project</strong>} → <strong>Questionnaire editor</strong>) contains a menu item called <strong>Wildcards</strong>. This opens an overview of the wildcards defined for the project.</p>
+<p class="wysiwyg-text-align-justify">This shows a list of all the wildcards defined for the project, including a search function and the functions for creating new wildcards and importing existing wildcards from other projects, which are explained below.</p>
+<p class="wysiwyg-text-align-justify"><strong>Defining new wildcards</strong></p>
+<ol class="wysiwyg-text-align-justify">
+<li>
+<p>To create new wildcards, click on the <strong>Create wildcard </strong>button.</p>
+</li>
+<li>
+<p>In the dialog that opens, enter the name of the new wildcard in the “Wildcard” field. It may contain the characters a-z, A-Z, and 0-9 and must be enclosed in two hash signs (#). Furthermore, the name should not be reserved for variables or other wildcards (e.g. project variables v_xxx, participant variables u_xxx, system variables).</p>
+</li>
+<li>
+<p>In the “Text” field, enter whatever you wish to replace with the wildcard. This may be text, but you can also enter, for example, an HTML tag for an image file.</p>
+</li>
+<li>
+<p>You can then save the new wildcard by clicking on the <strong>Create wildcard </strong>button.</p>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify">If you wish to use wildcards to incorporate images, you have the option of defining a wildcard for an image even as you are uploading it.</p>
+<p class="wysiwyg-text-align-justify"><strong>Transferring wildcards from other projects</strong></p>
+<p class="wysiwyg-text-align-justify">Clicking on the <strong>Import wildcards from other survey </strong>button will open a list of the projects on the platform. If you select the radio buttons for the project(s) whose wild- cards you want to transfer, you can import the wildcards by clicking on the confirmation button.</p>
+<p class="wysiwyg-text-align-justify"><strong>Wildcards in multilingual projects</strong></p>
+<p class="wysiwyg-text-align-justify">If you are using the wildcard to incorporate text in multilingual projects, you can click on the <strong>Edit language elements </strong>button to insert and change the corresponding text elements in the various languages. See Chapter <em>16, p. 609</em>, for detailed information on the EFS functions supporting multilingual projects.</p>
+<p class="wysiwyg-text-align-justify"><strong>Editing wildcards</strong></p>
+<p class="wysiwyg-text-align-justify">In the table listing the wildcards defined for the respective project, the right-hand column contains the following “Actions” icons:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Edit</strong>: Changing the name and content of the wildcard</p>
+</li>
+<li>
+<p><strong>Delete</strong>: Deleting the wildcard</p>
+</li>
+</ul>
+<h3 id="using-static-wildcards-in-the-questionnaire" class="wysiwyg-text-align-justify">Using static wildcards in the questionnaire</h3>
+<p class="wysiwyg-text-align-justify">Once you have defined wildcards for a project, you can access them via the <strong>Wildcards</strong> tab in the question view and integrate them into the questionnaire.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Create a

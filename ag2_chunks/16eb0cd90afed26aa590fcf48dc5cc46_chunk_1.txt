@@ -1,0 +1,76 @@
+li>
+<li>
+<p>Rejected: a total of all e-mails rejected and classified as spam-mail.</p>
+</li>
+<li>
+<p>Delivery failed: a total of e-mails that could not be delivered due to trouble on the part of the recipient address.</p>
+</li>
+<li>
+<p>Not reachable: a total of all e-mails that could not be delivered because the recipient‘s address or the domain does not exist.</p>
+</li>
+<li>
+<p>Canceled: The number of e-mails canceled.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If you click on the ID of a dispatch process in the “Mailing” column, you will see detailed information on all individual processes.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="sms" class="wysiwyg-text-align-justify">SMS</h2>
+<p class="wysiwyg-text-align-justify">Every time you send one or more SMSes from participant administration, an entry is made in the report. This enables you to subsequently check whether, for example, a certain group or individual has already received an SMS You may view the complete mail (with placeholders) by clicking on the <strong>SMS</strong> tab.</p>
+<p class="wysiwyg-text-align-justify">In the overview list, the following information is displayed for the different sending processes within the respective project:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Mailing: internal mailing ID. The link displayed will provide you with detailed information on the specific process.</p>
+</li>
+<li>
+<p>Subject: SMS subject. The link displayed will provide you with detailed information on the specific process.</p>
+</li>
+<li>
+<p>User: user who performed the dispatch.</p>
+</li>
+<li>
+<p>Date: time and date of dispatch.</p>
+</li>
+<li>
+<p>Total: a total of all SMSes.</p>
+</li>
+<li>
+<p>Queued: a total of all SMSes generated for immediate or future dispatch. Queued SMSes may be held, resumed, or canceled.</p>
+</li>
+<li>
+<p>Sending: total of all SMSes delivered to the dispatching mailing server yet to be delivered to the respective recipient(s). Please note this process might take up to several days.</p>
+</li>
+<li>
+<p>Sent: The number of SMSes that were successfully delivered to the receiving mailing server.</p>
+</li>
+<li>
+<p>Delivery failed: a total of SMSes could not be delivered due to trouble on the part of the recipient address.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If you click on the ID of a dispatch process in the “Mailing” column, you will see detailed information on all individual processes.</p>
+<p class="wysiwyg-text-align-justify">To send SMS notifications via EFS, you need the SMS Extension module.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="viewing-archived-mails" class="wysiwyg-text-align-justify">Viewing Archived Mails</h2>
+<p class="wysiwyg-text-align-justify">Most of the emails sent from <em>EFS</em> are archived and can be viewed for six months:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Personalized surveys, employee surveys, multi-source feedback, panel surveys, and master data surveys feature an overview of all sent emails.</p>
+</li>
+<li>
+<p>In personalized surveys, employee surveys, and multi-source feedback, the mails are listed in the detailed view of the respective participant.</p>
+</li>
+<li>
+<p>In panel and master data surveys, the mails are listed on the Contacts by System mail tab in the detail view of the respective panelist.</p>
+</li>
+<li>
+<p>With the appropriate rights you can view all project-specific mail processes of the installation in a centralized manner</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">In the long run, the data volumes involved in the sending of emails will put an unnecessary strain on the installation’s performance. Once the project is over, the archived emails are usually not needed ever again. The mail archives will therefore be cleaned automatically at regular intervals: Archived mail will be deleted six months after dispatch (depending on the size of the installation this may be executed earlier).</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863" class="wysiwyg-text-align-justify">FAQ</h1>
+<h3 id="faq_1" class="wysiwyg-text-align-justify">What happens if I delete emails from the queue?</h3>
+<p class="wysiwyg-text-align-justify">If you delete emails, the support team can no longer determine who has already received a mail and who has not in subsequent support requests.</p>
+<h3 id="faq_2" class="wysiwyg-text-align-justify">How long are archived emails kept?</h3>
+<p class="wysiwyg-text-align-justify">Archived emails are typically kept for six months after dispatch. However, depending on the size of the installation, they may be deleted earlier to maintain system performance.</p>
+<h3 id="faq_3" class="wysiwyg-text-align-justify">Do I need any special module to send SMS notifications?</h3>
+<p class="

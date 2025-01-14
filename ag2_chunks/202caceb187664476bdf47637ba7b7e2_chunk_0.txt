@@ -1,0 +1,64 @@
+<p><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p>When migrating from Responsive Layout 3 (RL3) to Responsive Layout 3.1 (RL3.1) or after selecting a new RL3.1 template, Custom Question Types (CQTs) from RL3 become unavailable. This article explains how to convert and enable these CQTs for RL3.1.</p>
+<p>This is available since version 21.2, as can be seen in our <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20231062018578">EFS Release Notes 21.2</a>.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Solution</h1>
+<ol>
+<li>
+<p><strong>Access the CQT Library</strong></p>
+<ul>
+<li>Navigate to <strong>System &gt; Libraries &gt; Question types</strong>.</li>
+<li>Here, you will find a list of your CQTs, indicating which layout version each was created in.<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015069121554" width="572" height="156">
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Select the Unlock Function</strong></p>
+<ul>
+<li>CQTs can only be made available for version RL3 to RL3.1, not for previous versions.</li>
+<li>Select the unlock function for your CQT using the padlock on the right of the desired CQT<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015069124242" width="547" height="98">
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Adjust CQT Settings for RL3.1</strong></p>
+<ul>
+<li>Open the link for your CQT and go to <strong>Settings &gt; Layout Subrelease Support</strong>
+</li>
+<li>Activate the <strong>Responsive Layout 3.1</strong> option.</li>
+<li>Save your changes.<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015039103250" width="390" height="158">
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Verify and Adjust</strong></p>
+<ul>
+<li>After activating RL3.1, ensure the CQT works as desired in projects with this layout.</li>
+<li>You may need to adjust the stylesheet or JavaScript.</li>
+<li>If you need assistance, submit a request to the TIVIAN Professional Services team or Customer Support.</li>
+</ul>
+</li>
+</ol>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq_what_is_cqt">What are Custom Question Types (CQT)?</h3>
+<p>Custom Question Types (CQT) are specialized question formats that can be used in surveys or questionnaires. They allow for more complex or specific types of questions beyond standard options like multiple choice or text entry.</p>
+<h3 id="faq_why_migrate">Why is it necessary to migrate CQT to Responsive Layout 3.1?</h3>
+<p>Migrating CQT to Responsive Layout 3.1 ensures compatibility with the latest layout version, potentially offering improved responsiveness and user experience across different devices and screen sizes.</p>
+<h3 id="faq_differences">What is the availability of the Responsive Layout 3.1?</h3>
+<p>The improved layout was released in version 21.2, so as long as you are on a version above this, you will have access to Responsive Layout 3.1.</p>
+</article> activating RL3.1, ensure the CQT works as desired in projects with this layout.</li>
+<li>You may need to adjust the stylesheet or JavaScript.</li>
+<li>If you need assistance, submit a request to the TIVIAN Professional Services team or Customer Support.</li>
+</ul>
+</li>
+</ol>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq_what_is_cqt">What are Custom Question Types (CQT)?</h3>
+<p>Custom Question Types (CQT) are specialized question formats that can be used in surveys or questionnaires. They allow for more complex or specific types of questions beyond standard options like multiple choice or text entry.</p>
+<h3 id="faq_why_migrate">Why is it necessary to migrate CQT to Responsive Layout 3.1?</h3>
+<p>Migrating CQT to Responsive Layout 3.1 ensures compatibility with the latest layout version, potentially offering improved responsiveness and user experience across different devices and screen sizes.</p>
+<h3 id="faq_differences">What is the availability of the Responsive Layout 3.1?</h3>
+<p>The improved layout was released in version 21.2, so as long as you are on a version above this, you will have access to Responsive Layout 3.1.</p>
+</article>

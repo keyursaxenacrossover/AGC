@@ -1,0 +1,99 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1021968460">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1021968460</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">Results:</a></li>
+<ul>
+<li><a href="#header-3">Matrix:</a></li>
+<li><a href="#header-4">Opinions:</a></li>
+<ul>
+<li><a href="#header-6">Microsoft Azure B2C:</a></li>
+<li><a href="#header-7">Okta:</a></li>
+</ul>
+<li><a href="#header-9">Additional Explanation:</a></li>
+</ul>
+</ul>
+</ul><p><u><strong>Current Status from 24.09.2019</strong></u></p><h1 id="header-1">Results:</h1><p><br></p><p>Azure AD B2C:</p><p>Automation: 2/5<br>Customization: 2/5<br>Effort: 1/5<br>MFA: 3/5<br>Management UI: 3/5<br>Troubleshooting: 1/5<br>Multi tenancy: 2/5<br>Federation: 4/5<br>Product Changes: 2/5<br>Documentation: 2/5</p><p>=&gt; 22/50 =&gt; <strong>2.2/5</strong></p><p>Okta:</p><p>Automation: 4.5/5<br>Customization: 4/5<br>Effort: 4/5<br>MFA: 5/5<br>Management UI: 4.5/5<br>Troubleshooting: 3/5<br>Multi tenancy: 3/5<br>Federation: 5/5<br>Product Changes: 4/5<br>Documentation: 4/5</p><p>=&gt; 41/50 =&gt; <strong>4.1/5</strong></p><h2 id="header-3">Matrix:</h2><table class="relative-table wrapped" style="width: 64.7285%;">
+<colgroup>
+<col style="width: 14.3285%;">
+<col style="width: 23.1425%;">
+<col style="width: 30.2488%;">
+<col style="width: 32.2802%;">
+</colgroup>
+<tbody>
+<tr>
+<th>Criteria</th>
+<th colspan="1">Criteria Scale</th>
+<th>Azure AD B2C (04.09.)</th>
+<th>Okta</th>
+</tr>
+<tr>
+<td colspan="1"><strong>Automation</strong></td>
+<td colspan="1"><br></td>
+<td colspan="1"><strong>2/5</strong></td>
+<td colspan="1"><strong>4.5/5</strong></td>
+</tr>
+<tr>
+<td><p><br></p></td>
+<td colspan="1">What configuration/management is supported?</td>
+<td>Users, flows via API</td>
+<td>Everything (as seen so far) via API</td>
+</tr>
+<tr>
+<td><br></td>
+<td colspan="1">What configuration/management is not supported?</td>
+<td>applications, tenants? (UI only)</td>
+<td>Customization could be more tricky to automate</td>
+</tr>
+<tr>
+<td colspan="1"><strong>Customization</strong></td>
+<td colspan="1"><br></td>
+<td colspan="1"><strong>2/5 (only basic customizing)</strong></td>
+<td colspan="1"><strong>4/5 (only tenant wide settings)</strong></td>
+</tr>
+<tr>
+<td><br></td>
+<td colspan="1">Login</td>
+<td>yes, custom HTML, custom policies</td>
+<td>yes, different possibilities <ac:link ac:anchor="*6"></ac:link><br><br>
+</td>
+</tr>
+<tr>
+<td><br></td>
+<td colspan="1">Other Flows</td>
+<td>yes, custom HTML, custom policies</td>
+<td>yes, there is only one flow, errors could also be customized</td>
+</tr>
+<tr>
+<td><br></td>
+<td colspan="1">EMails</td>
+<td>no</td>
+<td>yes, but account/organization-wide</td>
+</tr>
+<tr>
+<td colspan="1"><br></td>
+<td colspan="1">SMS</td>
+<td colspan="1">no</td>
+<td colspan="1">yes, but account/organization-wide</td>
+</tr>
+<tr>
+<td><br></td>
+<td colspan="1"><p>Custom HTML</p></td>
+<td>yes</td>
+<td>yes, via widget or via customizing the widget tenant-wide</td>
+</tr>
+<tr>
+<td><br></td>
+<td colspan="1">Custom HTML with Javascript</td>
+<td>yes</td>
+<td>yes, see above</td>
+</tr>
+<tr>
+<td><br></td>
+<td colspan="1">Custom HTML with login widget</td>
+<td>not explicitly</td>
+<td>yes</td>
+</tr>
+<tr>
+<td colspan="1"><br

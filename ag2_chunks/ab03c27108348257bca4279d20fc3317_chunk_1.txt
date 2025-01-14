@@ -1,0 +1,19 @@
+70"></li>
+</ul>
+</li>
+</ul>
+<h1 id="h_01J78Z8J1ETJSJMGPJ1BAZ3NV1">Summary</h1>
+<p>RabbitMQ serves as a message broker, managing the flow of status updates between Hurricane and EFS. Access to RabbitMQ is rarely needed, as most mail status updates are handled automatically by the jobmaker cron job. RabbitMQHash can be obtained using the <code>i </code> command and might be used for tracing specific mail statuses.</p>
+<h2 id="h_01J78Z8J1FH0YND72AAKSDQT3R">FAQ</h2>
+<p><strong>Q: What is RabbitMQ?</strong><br>A: RabbitMQ is a message broker that facilitates communication between different parts of a system. It stores status updates and forwards them to other parts of the system.</p>
+<p><strong>Q: How do I get the RabbitMQHash?</strong><br>A: You can get the RabbitMQHash using the command <code>i </code> in the Service Gateway.</p>
+<p><strong>Q: When do I need to access RabbitMQ?</strong><br>A: Access to RabbitMQ is rarely needed for troubleshooting. However, in rare cases where there are issues with the jobmaker cron job or if mail status updates are delayed, you might need to manually access RabbitMQ.</p>70"></li>
+</ul>
+</li>
+</ul>
+<h1 id="h_01J78Z8J1ETJSJMGPJ1BAZ3NV1">Summary</h1>
+<p>RabbitMQ serves as a message broker, managing the flow of status updates between Hurricane and EFS. Access to RabbitMQ is rarely needed, as most mail status updates are handled automatically by the jobmaker cron job. RabbitMQHash can be obtained using the <code>i </code> command and might be used for tracing specific mail statuses.</p>
+<h2 id="h_01J78Z8J1FH0YND72AAKSDQT3R">FAQ</h2>
+<p><strong>Q: What is RabbitMQ?</strong><br>A: RabbitMQ is a message broker that facilitates communication between different parts of a system. It stores status updates and forwards them to other parts of the system.</p>
+<p><strong>Q: How do I get the RabbitMQHash?</strong><br>A: You can get the RabbitMQHash using the command <code>i </code> in the Service Gateway.</p>
+<p><strong>Q: When do I need to access RabbitMQ?</strong><br>A: Access to RabbitMQ is rarely needed for troubleshooting. However, in rare cases where there are issues with the jobmaker cron job or if mail status updates are delayed, you might need to manually access RabbitMQ.</p>

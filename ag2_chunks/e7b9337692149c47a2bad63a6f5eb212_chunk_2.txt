@@ -1,0 +1,103 @@
+ # list okta server-side features
+$ okta-cli features enable "Recent Activity"          # enable an Okta feature
+$ okta cli users groups adduser \                     # add a user to a group
+           -g app1_rollout \
+           -u fred.flintstone@flintstones.com
+$ okta-cli apps adduser \                             # assign an app to a user
+           -a my_app_name -u 0109121 \
+           -f profile.employeeId
+$ okta-cli users update id012345678 \                 # update a field of a user record
+           --set profile.email=my@other.email.com
+$ okta-cli users bulk-update update-list.xlsx         # CSV is okay as well :)
+$ okta-cli version                                    # print version and exit
+$ okta-cli users get my-login -vvvvv                  # see http debug output</code></pre>
+<h2 id="header-10">Examples</h2>
+<p>You can get examples using the build-in Okta CLI helper, for commands and subcommands help try:</p>
+<pre><code class="language-text">(okta-cli) storck@GP-L-0666:~$ okta-cli -h
+Usage: okta-cli [OPTIONS] COMMAND [ARGS]...
+
+  Okta CLI helper.
+
+  See subcommands for help: "okta-cli users --help" etc.
+
+  If in doubt start with: "okta-cli config new --help"
+
+Options:
+  -h, --help  Show this message and exit.
+
+Commands:
+  apps        Application operations
+  config      Manage okta-cli configuration
+  dump        Dump basically everything into CSV files for further...
+  eventhooks  Event hook operations
+  features    Feature operations
+  groups      Group operations
+  pw          Manage passwords
+  raw         Perform a request against the specified API endpoint
+  users       Add, update (etc.) users
+  version     Print version number and exit</code></pre>
+<pre><code class="language-text">(okta-cli) storck@GP-L-0666:~$ okta-cli users list -h
+Usage: okta-cli users list [OPTIONS]
+
+  Lists users (all or using various filters)
+
+  NOTES:
+  * Does not contain deprovisioned users.
+  * '-q' is fast but case-sensitive search over multiple fields
+  * '-m' is a slow but case insensitive on a SINGLE field
+
+  EXAMPLES:
+  okta-cli users list -q Müller -m firstName=Hans
+  okta-cli users list -f 'profile.site eq "Berlin"'
+
+  This is equivalent:
+  okta-cli users list -s 'status eq "DEPROVISIONED"'
+  okta-cli users list -d
+
+  See here for more info:
+      https://is.gd/RrYDOY
+
+Options:
+  -m, --match FIELD=VALUE  Filter for field values
+  -p, --partial            Accept partial matches for match queries.
+  -f, --filter TEXT        Add Okta filter query
+  -s, --search TEXT        Add Okta search query
+  -q, --query TEXT         Add Okta query string
+  -d, --deprovisioned      Return only deprovisioned users
+  -j, --json               Print raw JSON output
+  -y, --yaml               Print raw YAML output
+  --csv                    Print output as CSV format. Will ignore --output-
+                           fields parameter if set
+  --csv-dialect TEXT       Use this CSV dialect with CSV output
+  --output-fields TEXT     Override default fields in table format
+  --colwidth INTEGER       Limit column width; default: unlimited
+  -v, --verbose            Increase verbosity (-vvvvv for full DEBUG logging)
+  -h, --help               Show this message and exit.</code></pre>
+
+  EXAMPLES:
+  okta-cli users list -q Müller -m firstName=Hans
+  okta-cli users list -f 'profile.site eq "Berlin"'
+
+  This is equivalent:
+  okta-cli users list -s 'status eq "DEPROVISIONED"'
+  okta-cli users list -d
+
+  See here for more info:
+      https://is.gd/RrYDOY
+
+Options:
+  -m, --match FIELD=VALUE  Filter for field values
+  -p, --partial            Accept partial matches for match queries.
+  -f, --filter TEXT        Add Okta filter query
+  -s, --search TEXT        Add Okta search query
+  -q, --query TEXT         Add Okta query string
+  -d, --deprovisioned      Return only deprovisioned users
+  -j, --json               Print raw JSON output
+  -y, --yaml               Print raw YAML output
+  --csv                    Print output as CSV format. Will ignore --output-
+                           fields parameter if set
+  --csv-dialect TEXT       Use this CSV dialect with CSV output
+  --output-fields TEXT     Override default fields in table format
+  --colwidth INTEGER       Limit column width; default: unlimited
+  -v, --verbose            Increase verbosity (-vvvvv for full DEBUG logging)
+  -h, --help               Show this message and exit.</code></pre>

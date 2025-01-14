@@ -1,0 +1,65 @@
+b-e6ff6e97a42a">
+<colgroup>
+<col style="width: 170.0px;">
+<col style="width: 170.0px;">
+<col style="width: 170.0px;">
+<col style="width: 170.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/MySight?sortcol=0;table=6;up=0#sorted_table">Config variable</a></p></th>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/MySight?sortcol=1;table=6;up=0#sorted_table">Description</a></p></th>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/MySight?sortcol=2;table=6;up=0#sorted_table">Default value</a></p></th>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/MySight?sortcol=3;table=6;up=0#sorted_table">Max possible value</a></p></th>
+</tr>
+<tr>
+<td><p>mysight_instance_dimension_limit</p></td>
+<td><p></p></td>
+<td><p>20</p></td>
+<td><p>40</p></td>
+</tr>
+</tbody>
+</table><h2 id="header-63">Exasol</h2><h3 id="header-65">Connection to database scheme</h3><ul>
+<li>
+<p>Via Windows desktop client</p>
+<ul>
+<li><p>Client can be downloaded here: <a href="https://www.exasol.com/portal/display/DOWNLOAD/6.0">https://www.exasol.com/portal/display/DOWNLOAD/6.0</a></p></li>
+<li><p>After starting the client, click connect and enter the connection data that can be seen in the EFS installation (qb:: MySight connections)</p></li>
+<li><p>You might have to use the "sys" user and default Exasol password instead of the user used in EFS</p></li>
+</ul>
+</li>
+<li>
+<p>Via linux console</p>
+<ul>
+<li><p>Login to the corresponding server, e.g. Frankfurt or Testkanal</p></li>
+<li>
+<p>execute the following command with the connection details that can be seen in the EFS installation (qb:: MySight connections)</p>
+<pre><code class="language-text">exaplus -u [username] -p [password] -c [host:port] -s [schema name]</code></pre>
+</li>
+<li>
+<p>the login data can be retrieved from the installations mysight_configuration table</p>
+<pre><code class="language-text">SELECT * FROM mysight_configuration;</code></pre>
+</li>
+<li>
+<p>you can use the -pipe parameter with the explus command to be able to pipe echoed sql statements to the explus (and also pipe its output to files or other commands)</p>
+<pre><code class="language-text">echo "SELECT TABLE_NAME from EXA_ALL_TABLES WHERE TABLE_SCHEMA='SF9961';" | exaplus -u [username] -p [password] -c [host:port] -s [schema name] -pipe</code></pre>
+</li>
+<li>
+<p>you can also use the -sql parameter to be able to execute single sql statements on the exasol</p>
+<pre><code class="language-text">exaplus -u [username] -p [password] -c [host:port] -s [schema name] -sql "select DISTINCT(TABLE_SCHEMA) from EXA_ALL_TABLES;"</code></pre>
+</li>
+<li><p>Information about all tables and schemas can be retrieved from the EXA_ALL_TABLES table (see the two examples above).</p></li>
+<li>
+<p><strong>EXASOL DEADLOCK</strong>: <br>The EXA_STATISTICS table contains lots of information about usage of the schemas. Especially EXA_DBA_TRANSACTION_CONFLICTS table migh be of interest, because in case mysight syncs initiated by the jobmaker fail, it might be related to conflicts, that can be seen here. In this case the STOP_TIME will be missing for some entries</p>
+<pre><code class="language-text">SESSION_ID	          CONFLICT_SESSION_ID	 START_TIME	                 STOP_TIME	                 CONFLICT_TYPE	CONFLICT_OBJECTS
+      1624565964912376665 1624560875230837581	2019-02-04 20:01:46.781	2019-02-04 20:01:57.728	WAIT FOR COMMIT	global connection list</code></pre>
+</li>
+<li>
+<p>Exaplus Conflicts logged in EXA_DBA_TRANSACTION_CONFLICTS table in EXA_STATISTICS schema (screenshot was taken after the conflict had been resolved by killing one of the conflicting connections): <br></p>
+<pre><code class="language-text">KILL SESSION 1624529238170052353;</code></pre>
+<p> with no quotes around the SESSION_ID to be killed</p>
+<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20714612832658" alt="image-20200919-084924.png"><p></p>
+</li>
+</ul>
+</li>
+<li><p>Sammelticket

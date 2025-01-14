@@ -1,0 +1,44 @@
+--------------+------+-----+---------------------+-------+
+| Field      | Type         | Null | Key | Default             | Extra |
++------------+--------------+------+-----+---------------------+-------+
+| uid        | int(11)      | NO   | MUL | NULL                |       |
+| identifier | varchar(255) | NO   | PRI | NULL                |       |
+| provider   | varchar(255) | NO   |     | NULL                |       |
+| dt_sync    | datetime     | NO   |     | 0000-00-00 00:00:00 |       |
++------------+--------------+------+-----+---------------------+-------+
+4 rows in set (0.00 sec)
+
+mysql&gt; desc panel_foreign_mappings;
++-------------+--------------+------+-----+---------+----------------+
+| Field       | Type         | Null | Key | Default | Extra          |
++-------------+--------------+------+-----+---------+----------------+
+| id          | int(11)      | NO   | PRI | NULL    | auto_increment |
+| provider_id | tinyint(1)   | NO   | MUL | 0       |                |
+| map_from    | varchar(50)  | YES  | MUL | NULL    |                |
+| map_to      | varchar(255) | YES  | MUL | NULL    |                |
+| status      | tinyint(1)   | NO   |     | 0       |                |
+| dt_updated  | datetime     | YES  |     | NULL    |                |
++-------------+--------------+------+-----+---------+----------------+
+6 rows in set (0.00 sec)
+
+</code></pre><p><strong>panel_foreign_login_identifiers</strong><br>This table links the uid with the user account from the <em>foreign</em> platform (Facebook). dt_sync shows when the jobmaker updated the panelist the last time and will be used for the dashboard counter.</p><p><strong>panel_foreign_mappings</strong><br>Saves all the mapping settings from Website &gt;&gt; Global configuration &gt;&gt; Facebook configuration. map_from stands for the Facebook values and map_to are the user variables or master data variables.</p><pre><code class="language-text">mysql&gt; select * from jobs where job_id like '%facebook%';
++---------------------+-----------------------------------------------+------+-----------------------+------+---------------+-                                                                                                               ---------------+---------------------+---------------------+-----+
+| dt_when             | todo                                          | mail | job_id                | stat | interval_type |                                                                                                                interval_value | last_executed       | start_time          | fid |
++---------------------+-----------------------------------------------+------+-----------------------+------+---------------+-                                                                                                               ---------------+---------------------+---------------------+-----+
+| 2008-10-30 00:00:00 | a:1:{s:3:"act";s:21:"update_facebook_count";} |      | update_facebook_count |    0 | Minute        |                                                                                                                            30 | 0000-00-00 00:00:00 | 2008-10-30 00:00:00 |   0 |
++---------------------+-----------------------------------------------+------+-----------------------+------+---------------+-                                                                                                               ---------------+---------------------+---------------------+-----+
+</code></pre><p>This job is important for the dashboard counter. More information can be found in the Betriebshandbuch.</p><h2 id="header-7">Valuable Tips</h2><h3 id="header-9">General</h3><ul>
+<li>
+<p>Jede App kann nur für eine Language Version verwendet werden.</p>
+<ul>
+<li><p><strong>This works</strong> : Verschiedene Sprachen für verschiedene Apps, solange nicht davon ausgegangen wird, das ein User mehrere App nutzen möchte.</p></li>
+<li><p><strong>This doesn't work</strong> : Eine Sprachversion pro Produkt auf der GLEICHEN EFS Installation z.B. möchte man eine App für Autos und eine für Motorräder. Es funktioniert nicht, dass 2 User 2 verschiedene Apps nutzen können (Beispiel: Campina)</p></li>
+</ul>
+</li>
+<li><p>It's possible to use 1 app for 2 or more panelwebsites. Once a panelist is mapped to one panelwebsite he/she will be forwarded to the linked panelwebsite each time he/she logged in.</p></li>
+<li><p>Request of late permission Button on the panelwebsite can only be called with <a href="https://it.globalpark.de/twiki/bin/view/Support/SSL"><u>SSL</u></a> or you will get an error message "An Error occurred. Please try again later"</p></li>
+<li><p><a href="https://it.globalpark.de/twiki/bin/view/Support/SSL"><u>SSL</u></a> is mandatory (!!!) with one expection: The Sandbox Mode (you can set the FB app to that mode)</p></li>
+<li><p>All default JavaScript<a href="https://it.globalpark.de/twiki/bin/edit/Support/JavaScript?topicparent=Support.SupportSinc">?</a> Files are necessary: Mootools, Slimbox, default_js etc. and those need to be up to date!</p></li>
+<li><p>If possible we should always upgrade to the latest version before we activate/install SINC</p></li>
+<li><p>If possible always use a new and default panelwebsite. It is very time-consuming and tricky to alter existing + outdated panelwebsites.</p></li>
+<li><p>You can see all public

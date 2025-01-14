@@ -1,0 +1,30 @@
+/20370699710866-Projects" data-testid="link-with-safety" data-renderer-mark="true">Projects</a> module in our online documentation.</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="10373"> </p>
+<h3 id="Create-Grouping-Filter" class="wysiwyg-text-align-justify" data-renderer-start-pos="10375"><strong data-renderer-mark="true">Create Grouping Filter</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="10399">We have already created the first grouping filter for the "New employees" group. Now we need two more filters for the groups "New employees – phase 2" and "New employees – phase 3".</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="10582"><strong data-renderer-mark="true">New employees – phase 2</strong></p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="10607">First – as described under <a class="cc-1rn59kg" title="https://qbdocs.atlassian.net/wiki/spaces/DOC/pages/edit-v2/4149608460?draftShareId=77f2e92c-cc13-4bb3-abc2-2cbc316317bb#Grouping-filters" href="#:~:text=newly%20created%20group.-,Grouping%20Filters,-By%20means%20of" data-testid="link-with-safety" data-renderer-mark="true">Grouping filters</a> – create the "New employees – phase 2" grouping filter in the <em data-renderer-mark="true">People</em> module under <strong data-renderer-mark="true">Groups &gt; Grouping filter</strong>. Afterwards, we will configure the following filter criteria:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="10823">We specify that panelists who were added to the panel 2 months ago should be added to the group. To do so, we select <strong data-renderer-mark="true">penter_date (Date of entry)</strong> as the <strong data-renderer-mark="true">Variable</strong> and <strong data-renderer-mark="true">less</strong> as <strong data-renderer-mark="true">Condition</strong>. We enter <strong data-renderer-mark="true">#NOW-2m#</strong> as <strong data-renderer-mark="true">Value</strong>. This stands for the current date minus 2 months.</p>
+</li>
+</ul>
+<div class="ak-editor-panel cc-tqp4ke wysiwyg-text-align-justify" data-panel-type="info">
+<div class="ak-editor-panel__content">
+<p data-renderer-start-pos="11088"><em>Note: Click on the question mark symbol to the right of <strong data-renderer-mark="true">Value</strong> to display an overview of all placeholders you can use in the <strong data-renderer-mark="true">Value</strong> column. You can also find an example of the syntax for performing individual date calculations there.</em></p>
+</div>
+</div>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="11319">We also specify that panelists who are in phase 2 of the workflow for new employees should be added to the group. To do this, we select the master data record <strong data-renderer-mark="true">md_phase</strong> that we created in the previous step as the variable, with the condition <strong data-renderer-mark="true">equal</strong> and the value <strong data-renderer-mark="true">2</strong>.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014812784018"></p>
+</li>
+</ul>
+<div class="rich-media-item mediaSingleView-content-wrap image-center cc-1q73e46 wysiwyg-text-align-justify" data-layout="center" data-width="760" data-width-type="pixel" data-node-type="mediaSingle" data-renderer-start-pos="11586">
+<div class="cc-e6a54o">
+<div class="cc-k4ngfq" data-mark-type="border" data-color="#091e4224" data-size="2">
+<div data-context-id="4149608460" data-type="file" data-node-type="media" data-width="1663" data-height="372" data-id="6339757d-7087-47d6-96c0-5d2d496f07d2" data-collection="contentId-4149608460" data-file-name="file" data-file-size="1" data-file-mime-type="" data-alt="image-20240320-111259.png" data-renderer-start-pos="11587"> </div>
+</div>
+</div>
+</div>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="11589"><strong data-renderer-mark="true">New employees – phase 3</strong></p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="11614">First – as described under <a class="cc-1rn59kg" title="https://qbdocs.atlassian.net/wiki/spaces/DOC/pages/edit-v2/4149608460

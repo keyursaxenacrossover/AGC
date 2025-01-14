@@ -1,0 +1,34 @@
+</h3>
+<p>The Tivian EFS Database uses Amazon RDS service for backups:</p>
+<ul>
+<li>Creates storage volume snapshots of the entire DB instance</li>
+<li>First snapshot is a full backup, subsequent snapshots are incremental</li>
+</ul>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq_01">What is the difference between Tivian EFS and AWS EFS?</h3>
+<p>Tivian EFS refers to the Enterprise Feedback Suite, while AWS EFS is the Elastic File System used as the underlying filesystem for the Tivian EFS installation.</p>
+<h3 id="faq_02">How is data synchronized between AWS Availability Zones?</h3>
+<p>Data is automatically synchronized online between the AWS Availability Zones to ensure consistency and high availability.</p>
+<h3 id="faq_03">What encryption method is used for data at rest?</h3>
+<p>Data at rest is encrypted using AES-256 algorithm through AWS Key Management Service (KMS).</p>
+<h3 id="faq_04">How often are backups performed?</h3>
+<p>Backups are performed daily, with a backup window between 20:00–04:00 UTC.</p>
+<h3 id="faq_05">What is the retention period for backups?</h3>
+<p>Backups are retained for two months, with a point in time per day.</p>
+</article>DS service for backups:</p>
+<ul>
+<li>Creates storage volume snapshots of the entire DB instance</li>
+<li>First snapshot is a full backup, subsequent snapshots are incremental</li>
+</ul>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq_01">What is the difference between Tivian EFS and AWS EFS?</h3>
+<p>Tivian EFS refers to the Enterprise Feedback Suite, while AWS EFS is the Elastic File System used as the underlying filesystem for the Tivian EFS installation.</p>
+<h3 id="faq_02">How is data synchronized between AWS Availability Zones?</h3>
+<p>Data is automatically synchronized online between the AWS Availability Zones to ensure consistency and high availability.</p>
+<h3 id="faq_03">What encryption method is used for data at rest?</h3>
+<p>Data at rest is encrypted using AES-256 algorithm through AWS Key Management Service (KMS).</p>
+<h3 id="faq_04">How often are backups performed?</h3>
+<p>Backups are performed daily, with a backup window between 20:00–04:00 UTC.</p>
+<h3 id="faq_05">What is the retention period for backups?</h3>
+<p>Backups are retained for two months, with a point in time per day.</p>
+</article>

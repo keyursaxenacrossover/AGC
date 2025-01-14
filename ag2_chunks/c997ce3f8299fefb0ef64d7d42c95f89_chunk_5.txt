@@ -1,0 +1,46 @@
+ in “/”. Optionally, a so-called pattern modifier can be placed at the end. Please note that RegEx checks in PHP and JS may show a differing behavior. For JS checks, the results might even differ among various browsers. Because of the complexity of regular expressions, we recommend testing the check in the system first.</p>
+</li>
+<li>
+<p data-renderer-start-pos="6012">Examples: </p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="6026">– Zip code check =&gt; /^[0-9]{5}$/ (exactly 5 digits)</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="6079">– Money field =&gt; /^[0-9]+ (EUR|USD)$/ (as many numbers as required + currency, either EUR or USD)</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="6180">References: <span data-inline-card="true" data-card-url="http://www.php.net/manual/en/ref.pcre.php"><span class="loader-wrapper"><span aria-expanded="false" aria-haspopup="true" data-testid="hover-card-trigger-wrapper"><a class="css-118vsk3 e26bri0" tabindex="0" role="button" href="http://www.php.net/manual/en/ref.pcre.php" data-testid="inline-card-resolved-view"><span class="css-1cwva94 e1a3lu072" data-testid="inline-card-icon-and-title"><span class="css-1lcr4h8 e1a3lu075"><img class="smart-link-icon css-ijlt3r e1yrcv6a0" style="height: 14px; width: 14px;" src="https://www.php.net/favicon-16x16.png?v=2" data-testid="inline-card-icon-and-title-image"></span><span class="smart-link-title-wrapper css-0 e1a3lu077">PHP: Hypertext Preprocessor</span></span></a></span></span></span></p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="6198">Complications can arise when, in a survey that is encoded in UTF-8 RegEx checks with JavaScript or JavaScript and PHP are carried out in order to compare strings containing more than just numbers: JavaScript is unable to recognize umlauts or other special characters that are reproduced in UTF-8 as doublebyte character (thus takes up two characters).</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="6551">To create a RegEx check, please proceed as follows:</p>
+<ol class="ak-ol wysiwyg-text-align-justify" start="1" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="6606">Select the variable you want to check.</p>
+</li>
+<li>
+<p data-renderer-start-pos="6648">In the text field, specify the regular expression whose entry is to trigger the RegEx check.</p>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="6744"><br>To create a NoRegEx check, please proceed as follows:</p>
+<ol class="ak-ol wysiwyg-text-align-justify" start="1" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="6802">Select the variable you want to check.</p>
+</li>
+<li>
+<p data-renderer-start-pos="6844">In the text field, specify the regular expression whose entry is not supposed to trigger the NoRegEx check. For all entries of other types in the field to be checked, the check will be triggered.</p>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="7043"><br><strong data-renderer-mark="true">Range check old</strong><br>In contrast to the range check explained above, the range check old checks the invalid range of the variable to be set. This means that the value entered by the participant must be outside the number range you set. Otherwise, the plausibility check will be triggered.</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="7329"><strong data-renderer-mark="true">Combination check and combination check (range)</strong><br>Two other plausibility checks are available for questions with multiple response lists (question types 121, 122, 362, 521, 522, 621):</p>
+<ul class="ak-ul" data-indent-level="1">
+<li class="wysiwyg-text-align-justify">
+<p data-renderer-start-pos="7514">The combination check allows you to check whether a respondent has ticked a required number of checkboxes.</p>
+</li>
+<li>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="7624">The combination check (range) checks whether the number of checkboxes ticked is within a preset range.</p>
+</li>
+</ul>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq-1">What is the difference between RegEx and NoRegEx checks?</h3>
+<p>RegEx checks return "true" and trigger an error message when the input matches the specified regular expression

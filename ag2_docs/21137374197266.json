@@ -1,0 +1,35 @@
+{
+    "id": 21137374197266,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/21137374197266.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21137374197266-Troubleshooting-Unwanted-0-Variables-in-Loops",
+    "author_id": 369584192734,
+    "comments_disabled": false,
+    "draft": false,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20714530860562,
+    "created_at": "2024-09-03T13:16:32Z",
+    "updated_at": "2024-09-03T13:44:07Z",
+    "name": "Troubleshooting Unwanted \"0\" Variables in Loops",
+    "title": "Troubleshooting Unwanted \"0\" Variables in Loops",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-09-03T13:44:05Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075294,
+    "content_tag_ids": [],
+    "label_names": [
+        "MariaDB",
+        "Data Inconsistency",
+        "Project ID",
+        "Unwanted Variables"
+    ],
+    "body": "<h1 id=\"h_01J6W0FVDHGXZR8DTDJ7C0APXC\">Overview</h1>\n<p>Some users may experience an issue where their system generates unwanted variables with a \"_0\" suffix in their Surveys/Projects.</p>\n<p>These variables can affect specific questions, causing data inconsistencies and hindering the ability to deliver clean data.</p>\n<p>The issue may be related to a bug in the system that occasionally generates these \"_0\" variables, which should not normally occur. To give more context:</p>\n<ul>\n<li>Issue tends to happen when list is used for a <strong>loop</strong>.</li>\n<li>Brand names are then queried individually in each loop run.</li>\n<li>The variables in the loop, e.g. v_100, then receive extensions for each list element, i.e. <strong>v_100_1</strong> for the answers of the first list element, <strong>v_100_2</strong> for the second list element, etc.</li>\n<li>\n<strong>v_100_0</strong> should not occur based on the above logic</li>\n<li>This would rather be a defect, however, we are unable to replicate and have Eng fix it, so we resort to fixing things at DB level.</li>\n</ul>\n<h1 id=\"h_01J6W0FVDH8WXN2QEKZEN5R119\">Solution</h1>\n<p>The solution involves deleting the corrupt data set from the MariaDB database. Follow these steps:</p>\n<ol>\n<li>Login to MariaDB and search for the loop table of the provided project (for example, project ID 6409 in the bw1774 installation)<br>\n<pre>MariaDB [opst_bw1774]&gt; SHOW TABLES LIKE '%6409%';<br>+---------------------------------+<br>| Tables_in_opst_bw1774 (%6409%) |<br>+---------------------------------+<br>| consistency_6409 |<br>| data_cleaning_6409 |<br>| list_elements_6409 |<br>| lists_6409 |<br>| project_languages_6409 |<br>| project_versions_reference_6409 |<br>| question_settings_6409 |<br>| survey_6409 |<br>| survey_6409_1 |<br>| survey_6409_item_score |<br>| survey_6409_loop |<br>| survey_6409_loop_1 |<br>+---------------------------------+<br>12 rows in set (0.005 sec)</pre>\n</li>\n<li>Search for the corrupt data set by leveraging the <strong>loop</strong> table/s.  <br>\n<pre><code>MariaDB [opst_bw1774]&gt; SELECT sl_id,lfdn,list_element_nr FROM survey_6409_loop_1 WHERE list_element_nr = 0;<br>+-------+------+-----------------+<br>| sl_id | lfdn | list_element_nr |<br>+-------+------+-----------------+<br>|  1143 | 1017 |               0 |<br>+-------+------+-----------------+<br>1 row in set (0.000 sec)</code></pre>\n<ol>\n<li>If you want to further verify the issue, you can proceed to <a href=\"https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20371126622482\" target=\"_blank\" rel=\"noopener noreferrer\">Export</a> the results in XLS format and then search in the resulting XLS for the \"<strong>_0</strong>\" string to confirm the incorrect variables<br><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21138123797906\" width=\"176\" height=\"169\">\n</li>\n</ol>\n</li>\n<li>The above query would give us list elements with a 0 index (which are the incorrect ones). Delete the corrupt data set:<br>\n<pre><code>MariaDB [opst_bw1774]&gt; DELETE FROM survey_6409_loop_1 WHERE sl_id = 1143 AND lfdn = 1017 AND loop_nr = 0;<br>Query OK, 1 row affected (0.006 sec)</code></pre>\n<ol>\n<li>Once the above is done, you can further verify the fix by <a href=\"https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20371126622482\" target=\"_blank\" rel=\"noopener noreferrer\">Exporting</a> the results in XLS format and then searching in the resulting XLS for the \"<strong>_0</strong>\" string to see the difference from the previous step.<br><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21138147447314\" width=\"250\" height=\"138\">\n</li>\n</ol>\n</li>\n</ol>\n<p>Please note that these commands are specific to the MariaDB database and the project IDs provided in the example. You will need to replace the project IDs and other variables with the ones specific to your issue.</p>\n<p>Sample result exports are attached to this article.</p>\n<h1 id=\"h_01J6W0FVDHSSMRBRJSN31D284K\">Summary</h1>\n<p>This article provides a solution for users experiencing unwanted variables in their Project IDs in MariaDB. The solution involves identifying and deleting the corrupt data set from the database.</p>\n<p> </p>\n<h2 id=\"h_01J6W0FVDH4PXJ8G3SF4HJFPX7\">FAQ</h2>\n<ol>\n<li>\n<strong>What could be the root cause of this issue?</strong><br>The root cause could be related to the use of the browser back button or cached data, but this is not confirmed. It is rather a defect, without means of properly replicating, so we cannot yet fix it at code level.</li>\n<li>\n<strong>Can I use these commands for any project ID?</strong><br>No, you will need to replace the project IDs and other variables with the ones specific to your issue.</li>\n</ol>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

@@ -1,0 +1,76 @@
+ defining routing, e.g. via a filter or when importing saved contents via wildcards you can access the database contents via these variables. A range of variable types are used in EFS surveys:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Project variables (v_000n): The results of the survey are saved in these variables. They are automatically created when new questions are created.</p>
+</li>
+<li>
+<p>URL parameters (p_000n): These variables allow you to pass variables to a survey from outside. They are created and configured manually.</p>
+</li>
+<li>
+<p>User-defined variables c_000n: These variables are used to store interim results. They are created and configured manually.</p>
+</li>
+<li>
+<p>Participant variables (u_000n): Information regarding survey participants is stored in these variables. A set of frequently used variables is available by default and additional variables may also be created.</p>
+</li>
+<li>
+<p>System variables: The variables are used to store meta-information regarding participants and the course of the interviewing process. System variables are automatically generated when a project is created.</p>
+</li>
+<li>
+<p>For <em>EFS People</em> installations only: Participant data of the panelists (u_000n). These variables are preset by the <em>EFS People</em> and are not configurable.</p>
+</li>
+<li>
+<p>For <em>EFS People</em> installations only: Master data (m_000n). Fundamental panelist properties determined by the panel administrator, which are stored independently of the specific project and which are permanently available.</p>
+</li>
+<li>
+<p>For <em>EFS People</em> installations only: Panel system data. The variables are used to store meta-information regarding the panelists.</p>
+</li>
+</ul>
+<h3 id="maximum-available-number-of-variables" class="wysiwyg-text-align-justify"><strong>Maximum Available Number of Variables</strong></h3>
+<p class="wysiwyg-text-align-justify">Up to 7,000 variables are available per project.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>This value is the sum of all<em> </em>variables in the project, not only the sum of the project variables.</p>
+</li>
+<li>
+<p>The maximum number of variables that are available in a <em>specific </em>project depends on various factors, such as e.g. type and size of the variables created, and may be lower than 7,000.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">In an EFS People installation, up to at most 2,800 master data variables can be used.</p>
+<p class="wysiwyg-text-align-justify">The complexity of a project affects its performance. For example, the more complex the routing structures, number of participants, or number of variables, the more the project will be slowed down.</p>
+<p class="wysiwyg-text-align-justify">Tip: Compile the project as usual before taking it into the field and delete any redundant variables.</p>
+<h3 id="generating-and-editing-project-variables-and-codes" class="wysiwyg-text-align-justify"><strong>Generating and Editing Project Variables and Codes</strong></h3>
+<p class="wysiwyg-text-align-justify">Project variables (v_000n) will be created automatically when you create a question.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>In the case of single response questions, only one variable per question is required for each and the various answer options are allocated codes.</p>
+</li>
+<li>
+<p>In the case of multiple response questions, one variable is created for each answer option. Whether the respondent has selected an option is recorded via the coding: 0 = not specified, 1 = specified.</p>
+</li>
+<li>
+<p>For matrix questions, one variable matches each answer option, and the scale characteristics are encoded (exception: question type 362 with checkboxes and question type 363 with text fields).</p>
+</li>
+<li>
+<p>Entries in open text fields are similarly recorded in a variable.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The variable names are assigned automatically for each project, beginning with v_1 and names cannot be edited. If required, however, you can allocate an external variable name. You can see the internal project variable names when working in the questionnaire editor depending on the question type</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>in the “Answer options” area in the “Variable name” columns</p>
+</li>
+<li>
+<p>in the case of questions with an open entry field in the “Question options” area.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The codes are also assigned automatically but can be edited in the case of single response and matrix questions. You can view and edit the codings in the questionnaire editor</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>for single response questions in the “Code” column in the “Answer options” section.</p>
+</li>
+<li>
+<p>for matrix questions in the “Code” column in the “Scale options” section.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">All project variables and their codings are listed in the codebook.</p>
+<p class="wysiwy

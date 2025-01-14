@@ -1,0 +1,213 @@
+font> </u></p>
+</th>
+<th>
+<p><u> <font>Meaning</font> </u></p>
+</th>
+</tr>
+<tr>
+<td>
+<p><font>0</font></p>
+</td>
+<td>
+<p><font>not yet processed</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><font>1</font></p>
+</td>
+<td>
+<p><font>In Progress</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><font>2</font></p>
+</td>
+<td>
+<p><font>finished</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><font>3</font></p>
+</td>
+<td>
+<p><font>failed</font></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p><font>Table: taskqueue_tasks </font> <br><font>Column: status</font></p>
+<table data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 226.67px;"> <col style="width: 226.67px;"> <col style="width: 226.67px;"> </colgroup>
+<tbody>
+<tr>
+<td>
+<p>php constant</p>
+</td>
+<th>
+<p><strong> <span style="color: #ffffff;"> <font>Status</font> </span> </strong></p>
+</th>
+<th>
+<p><strong><span style="color: #ffffff;">Meaning</span></strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>TASK_STATUS_PENDING</p>
+</td>
+<td>
+<p><font>1</font></p>
+</td>
+<td>
+<p>Task queued and waiting for getting processed</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>TASK_STATUS_PROCESSING</p>
+</td>
+<td>
+<p><font>2</font></p>
+</td>
+<td>
+<p>Task now processing</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>TASK_STATUS_FINISHED_SUCCESS</p>
+</td>
+<td>
+<p><font>3</font></p>
+</td>
+<td>
+<p>Task finished successfull</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>TASK_STATUS_FINISHED_FAILED</p>
+</td>
+<td>
+<p><font>4</font></p>
+</td>
+<td>
+<p>Task failed</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p><strong>SMS  and mail sending</strong></p>
+<p>##### POSTMAN COULDN'T SEND: 1 - 3</p>
+<p><font> 1 =&gt; corresponds to the type, we distinguish between mail (1) and  </font> <u> <font>SMS</font> </u> <font>  (2) </font> <br><font>3 =&gt; corresponds to the value from the table below</font></p>
+<p><font> In the new table, the code 1 is omitted: 11 has long since taken the place of 1: const ERR_INVALID_RECIPIENT = 11; //was formerly 1, but the value was senseless because 1 means "delivered", so now this status gets 11 </font></p>
+<p><font>Table from 10.6 but below 1x.y:</font></p>
+<table data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<th>
+<p><u>Status</u></p>
+</th>
+<th>
+<p><u> <font>Meaning</font> </u></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>99</p>
+</td>
+<td>
+<p>ERR_CONNECT</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>ERR_INVALID_RECIPIENT</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>ERR_SENDER_REJECTED</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>3</p>
+</td>
+<td>
+<p>ERR_RECIPIENT_REJECTED</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>4</p>
+</td>
+<td>
+<p>ERR_MESSAGE_REJECTED</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>5</p>
+</td>
+<td>
+<p>ERR_INVALID_SUPPLIER</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>6</p>
+</td>
+<td>
+<p>ERR_UNSUPPORTED_DELIVERY</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>7</p>
+</td>
+<td>
+<p>ERR_TLS_FAILURE</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>8</p>
+</td>
+<td>
+<p>ERR_DELIVERY_FAILED</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>10</p>
+</td>
+<td>
+<p>ERR_DELIVERY_SMS_AMOUNT</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>11</p>
+</td>
+<td>
+<p><font>ERR_INVALID_RECIPIENT</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>50</p>
+</td>
+<td>
+<p>ERR_PANEL_PASSWORD_RECOVERY</

@@ -1,0 +1,75 @@
+<h2 id="h_01J6EP70WNGCHGVJN5XKE5T6AQ">Table of Contents</h2>
+<ul>
+<li>
+<a href="#header-1">Survey</a>
+<ul>
+<li><a href="#header-3">Conditional language</a></li>
+<li><a href="#header-5">Improvement of the Dynamic answer option question type</a></li>
+<li><a href="#header-6">New triggers: Key phrase extraction trigger and sentiment trigger</a></li>
+<li><a href="#header-7">Default groups in multiple languages</a></li>
+<li><a href="#header-8">The new Ideation question type</a></li>
+</ul>
+</li>
+<li>
+<a href="#header-10">Portals</a>
+<ul>
+<li><a href="#header-12">Leadership Guide in Portals</a></li>
+<li><a href="#header-13">Storage of preferred language in u_locale master data</a></li>
+<li><a href="#header-14">Displaying the dimensions of the matrix questions</a></li>
+<li><a href="#header-15">Sending result e-mails</a></li>
+<li><a href="#header-16">Improvements of the Action-Board</a></li>
+<li><a href="#header-17">Improvement of the Portals notification center</a></li>
+<li><a href="#header-18">Question Preview in Guide Setup</a></li>
+<li><a href="#header-19">The new column of the Report list module</a></li>
+</ul>
+</li>
+<li>
+<a href="#header-21">People</a>
+<ul>
+<li><a href="#header-23">Portal mails under the menu item Mail-Report</a></li>
+</ul>
+</li>
+<li>
+<a href="#header-25">Closed Loop Feedback</a>
+<ul>
+<li><a href="#header-27">Reading rights in CLF</a></li>
+</ul>
+</li>
+<li>
+<a href="#header-29">Privacy Assistant (GDPR)</a>
+<ul>
+<li><a href="#header-31">Automatic deletion of invited panelists</a></li>
+<li><a href="#header-32">No right to export participant data</a></li>
+<li><a href="#header-33">The gdpr_activities ACL right</a></li>
+<li><a href="#header-34">Export and import including DSGVO messages (Language editor)</a></li>
+</ul>
+</li>
+</ul>
+<div class="expand-macro">
+<h4 id="h_01J6EP70WNWWVDWS820K60F68C"> </h4>
+</div>
+<h2 id="header-1">Survey</h2>
+<h3 id="header-3">Conditional language</h3>
+<p>In 360° leadership surveys, it is common practice to offer phrases and labels in different languages. Now you can offer several variants of one language (e.g. English). To do this, you assign a condition variable, define a value, specify <em>u_isocode</em> as the language selection variable, and check the "Assign language by ISO code" option. You proceed as follows:</p>
+<ul>
+<li>
+<p>In the questionnaire editor, you select the <strong>Language editor</strong> item and click <strong>Create language</strong>.</p>
+</li>
+<li>
+<p>In addition to the known settings that you must make, assign a name, select the language ID and select the language from which survey messages and text elements are to be taken, you define a condition variable that is selected from u_ and p_ variables and a comparison value. A validation does not take place.</p>
+</li>
+<li>
+<p>The operator is <strong>=</strong> and cannot be changed.</p>
+</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998257014418" alt="Conditional language.png"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998203097234" alt="Conditional language 2.png"></p>
+<p>You use the area "Set language selection variable" to select the variable <em>u_isocode</em> and to check the option "Assign language based on ISO code", which set the desired behavior: Survey participants whose preferred language has been stored in the participant administration by means of an ISO code will not only be given the language corresponding to this code, but also the variants of the preferred language corresponding to the conditions, when the survey starts. For example, the manager who takes part in a 360° leadership survey answers the questions in an English version tailored to his needs, while team members receive the phrases tailored to their needs.</p>
+<ul>
+<li>
+<p>The prerequisite is, of course, that the corresponding phrases have been entered under "Text elements" in the <strong>Language editor</strong>.</p>
+</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998250094866" alt="Conditional language 3.png"></p>
+<p>This feature is used in personalized survey projects.</p>
+<h3 id="header-5">Improvement of the <em>Dynamic answer option</em> question type</h3>
+<p>The<em> Manage recipient</em> link of the <em>Dynamic answer option</em> question type takes you to the survey menu, where in the<em> Error notification</em> field you enter the person or persons who will receive

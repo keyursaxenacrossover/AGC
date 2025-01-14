@@ -1,0 +1,41 @@
+p>
+</td>
+<td>
+<p>Issuer is the one that created the token and audience is the group of entities that is should get access with that token. Both values can be used to check validity of a token.</p>
+</td>
+</tr>
+<tr>
+<td data-highlight-colour="#f4f5f7">
+<p><strong>Assignments</strong></p>
+</td>
+<td>
+<p>Applications can be assigned to groups. Only members of these groups are allowed to access. This is currently not used. See Access and Authorization with IAM module</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p><strong>***</strong> If an application corresponds with an EFS installation which is configured for many different domain-aliases, for each such alias the Login Redirect URI / Logout Redirect URI have to be entered manually in OKTA. In case of portal-specific applications the redirect URI will be configured for each domain-alias registered in EFS (Options / Domains) at creation or edit application. The migration script offers an additional option to update all portal-specific applications to get their redirect links up-to-date.</p>
+<p><strong><u>For API Access see: <a href="https://developer.okta.com/docs/reference/api/apps/">https://developer.okta.com/docs/reference/api/apps/</a></u></strong></p>
+<p> </p>
+<p> </p>p>
+</td>
+<td>
+<p>Issuer is the one that created the token and audience is the group of entities that is should get access with that token. Both values can be used to check validity of a token.</p>
+</td>
+</tr>
+<tr>
+<td data-highlight-colour="#f4f5f7">
+<p><strong>Assignments</strong></p>
+</td>
+<td>
+<p>Applications can be assigned to groups. Only members of these groups are allowed to access. This is currently not used. See Access and Authorization with IAM module</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p><strong>***</strong> If an application corresponds with an EFS installation which is configured for many different domain-aliases, for each such alias the Login Redirect URI / Logout Redirect URI have to be entered manually in OKTA. In case of portal-specific applications the redirect URI will be configured for each domain-alias registered in EFS (Options / Domains) at creation or edit application. The migration script offers an additional option to update all portal-specific applications to get their redirect links up-to-date.</p>
+<p><strong><u>For API Access see: <a href="https://developer.okta.com/docs/reference/api/apps/">https://developer.okta.com/docs/reference/api/apps/</a></u></strong></p>
+<p> </p>
+<p> </p>

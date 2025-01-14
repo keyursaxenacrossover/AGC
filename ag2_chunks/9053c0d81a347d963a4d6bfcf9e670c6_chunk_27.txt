@@ -1,0 +1,58 @@
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 278.281px;">
+<p>Which panel statuses should be included in the check?</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 342.378px;">
+<p>You can choose whether to check only candidates (“Admitted temporarily” status) or also panelists with other statuses.</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 278.281px;">Mode of entry.</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 342.378px;">
+<p>Specific modes of entry, such as manual input by the administrator or automatic generation via project tests, can be excluded from the check.</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 278.281px;">Way of entry</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 342.378px;"><span class="legacy-color-text-default" style="color: #000000;">See Chapter "Ways of Entry".</span></td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 278.281px;">Language version</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 342.378px;">
+<p>Allows you to select a particular language version.</p>
+<p>As the duplicates check applies to the entire installation, it is usually not advisable to restrict the data set to one language version only.</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 278.281px;">Category</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 342.378px;">Allows you to select a panel category.</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 278.281px;">Group</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 342.378px;">Allows you to select a panel group.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><strong>Checking algorithm</strong></p>
+<p>In the “Checking algorithm” section you can specify which data are to be checked according to which criteria.</p>
+<p>You can specify up to seven conditions that are linked with AND to form an algorithm, i.e. those participants that meet all of the specified conditions will be identifed as duplicates.</p>
+<p>The following data can be checked</p>
+<ul>
+<li>all participant data (u_x)</li>
+<li>all master data (m_x and md_x)</li>
+<li>the system data penter_data, remote_addr, pstatus, pinput, reg_code, and site_id.</li>
+</ul>
+<p>The table lists the types of comparison and the corresponding parametrizations.</p>
+<div class="table-wrap">
+<div class="table-wrap">
+<table class="relative-table tablesorter tablesorter-default wrapped confluenceTable" style="margin: 0px auto; border-collapse: collapse; width: 752px; height: 825px;">
+<colgroup> <col style="width: 0px;"> </colgroup> <colgroup> <col style="width: 0px;"> </colgroup> <colgroup> <col style="width: 0px;"> </colgroup>
+<tbody>
+<tr class="tablesorter-headerRow">
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; background-color: var(--ds-background-accent-gray-subtlest,#f0f0f0); padding: 7px 10px !important; width: 201.094px;" scope="col">
+<div class="tablesorter-header-inner">Type of comparison</div>
+</th>
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" style="border: 1

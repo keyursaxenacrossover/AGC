@@ -1,0 +1,76 @@
+ which panel page the FAQ item will be displayed on.</p>
+</td>
+</tr>
+<tr>
+<td>Active</td>
+<td>Only active FAQ items will be displayed.</td>
+</tr>
+<tr>
+<td>Access control</td>
+<td>
+<p>Select one of the following options:</p>
+<ul>
+<li>Public: All panel visitors can see the FAQ item.</li>
+<li>All logged-in panelists: All logged-in panelists can see the FAQ item.</li>
+<li>For logged-in panelists of a panel group only: If you choose this option, a drop-down list is displayed, from which you can select a certain panel group. Only members of the selected group can see the FAQ item.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Question</td>
+<td>
+<p>The actual question. Optionally, you may design your items using the rich text editor.</p>
+</td>
+</tr>
+<tr>
+<td>Answer</td>
+<td>
+<p>The actual answer. Optionally, you may design your items using the rich text editor.</p>
+</td>
+</tr>
+<tr>
+<td>Tags</td>
+<td>
+<p>Optionally, you can enter one or more tags (each consisting of the characters a-z, 0-9, and _) to add special markings. The tags are available in the output templates for output and/or filtering. Several tags can be entered, separated by commas.</p>
+</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>Can be output via wildcard.</td>
+</tr>
+<tr>
+<td>Author</td>
+<td>Can be output via wildcard.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="managing-faq-lists" class="auto-cursor-target wysiwyg-text-align-justify"><strong>Managing FAQ Lists</strong></h3>
+<p class="wysiwyg-text-align-justify">Many panels offer various FAQ pages with different contents within one language version, e.g. a FAQ for normal panel visitors and another FAQ for logged-in panelists. This is realized with the help of so-called FAQ lists:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>For each purpose you create an individual FAQ list.</li>
+<li>Then you allocate the individual articles to the appropriate FAQ lists.</li>
+<li>The FAQ pages are created with the “FAQ” function module. From this module the appropriate FAQ list is referenced.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">When delivered, there is only one FAQ list in the standard panel, containing all the articles of the FAQ menu. Usually, it is labelled “main”.</p>
+<p class="wysiwyg-text-align-justify">If you want to view the FAQ lists of your panel, click on the <strong>Manage lists</strong> button in the <strong>FAQ management</strong>.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>The overview list shows all existing lists with their respective titles and descriptions.</li>
+<li>In order to create another list, click on the <strong>Create List</strong> button and enter the desired title and a description. After clicking on <strong>Save</strong> the list is created and you can start allocating articles to it.</li>
+<li>You can rename or delete the lists.</li>
+</ul>
+<h2 id="maintaining-news" class="wysiwyg-text-align-justify"><strong>Maintaining News</strong></h2>
+<p class="wysiwyg-text-align-justify">The design of your panel would not be complete without a policy of good and especially regular information in a designated news area. You can publish, for example, the results of surveys you have already conducted, announcements of new surveys and news related to the subject of the panel.</p>
+<p class="wysiwyg-text-align-justify">EFS Panel’s news management function makes it easier to create and maintain news; at the same time CMS gives you considerable room to design the external view of the news area:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>News items (articles) are created and maintained with the help of a specially developed optimized GUI. This means that a user who is not familiar with the CMS can take over their maintenance without requiring a great deal of training.</li>
+<li>You can create a new area for each language version of the website(s).</li>
+<li>You can create news items that are restricted to certain panel groups.</li>
+<li>You can predefine the publication period of articles; subsequent manual release is not required.</li>
+<li>The rich text editor is available for designing news items.</li>
+<li>You can sort the news items into different lists and place these on the panel pages at your discretion. The standard panel comprises a list of current news the content of which is displayed in the “News” menu. Further lists can be created as required.</li>
+<li>You can position the news lists on the panel pages and modify how they are displayed with the help of the “News” function module. Further changes to display and layout can be made using the “func_news” template.</li>
+<li>You can optionally offer RSS news feeds.</li>
+<li>EFS allows you to subscribe to feeds from high-quality blogs, for example, and to import those items directly into the news section.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">This Chapter will show you how to maintain the content of the news area. The “News list” function module is presented in Chapter "  ".</p>
+<h3 id="managing-news" class="wysiwyg-text-align-justify"><strong>Managing News</strong></h

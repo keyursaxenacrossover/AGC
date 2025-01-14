@@ -1,0 +1,98 @@
+p>
+<p>The updates are kept current in the ClamAV container using a shared volume.</p>
+<p>This cronjob is linked with the ClamAV container and makes use of Kubernetes CronJob resources to automate the updating process based on the specified schedule.</p>
+<h3 id="h_01J3FZNNAR1QC84KTDW1BVDD74">Scanning Process</h3>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20346625532434" width="301" height="262"></p>
+<ol>
+<li>User uploads a file through the software interface</li>
+<li>File is temporarily stored on NFS</li>
+<li>REST API receives the file and initiates the scanning task</li>
+<li>ClamAV container performs the scan</li>
+<li>Scan results are returned to the REST API</li>
+<li>Application is informed of the scanning outcome</li>
+</ol>
+<h3 id="h_01J3FZNNARREY4SG8NW72626J1">Updating Malware Signatures</h3>
+<p><!--StartFragment --></p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20349832706450" width="357" height="168"><img> <!--EndFragment --></p>
+<ol>
+<li>A cronjob downloads the latest definitions from the freshclam server</li>
+<li>Updated definitions are stored in shared storage accessible by the scanning container</li>
+</ol>
+<h2 id="deployment">Deployment and Operations</h2>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20349832707602" width="506" height="273"></p>
+<p>The Malware Scanner is deployed using Kubernetes with the following considerations:</p>
+<ul>
+<li>Components are deployed as containers within Kubernetes</li>
+<li>A Kubernetes service resource is used for load balancing</li>
+<li>Shared storage is mounted by the upload job and all scanning pods/containers</li>
+<li>Horizontal Pod Autoscaler is configured for automatic scaling based on resource usage</li>
+</ul>
+<h2 id="integration">Integration and Usage</h2>
+<p>The Malware Scanner is integrated into various Tivian areas, as per the below (Internal / Support only uploads are not listed, but are scanned as well):</p>
+<h3 id="Surveys" data-renderer-start-pos="838">Surveys</h3>
+<ul class="ak-ul" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="849">Upload Question Type</p>
+</li>
+<li>
+<p data-renderer-start-pos="873">Audio Recorder Question Type</p>
+</li>
+</ul>
+<h3 id="Portals" data-renderer-start-pos="905">Portals</h3>
+<ul class="ak-ul" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="916">Action board page module / Action - Upload attachment</p>
+</li>
+<li>
+<p data-renderer-start-pos="973">Task List page module / Task - Upload file</p>
+</li>
+<li>
+<p data-renderer-start-pos="1019">User profile page module - Upload new picture</p>
+</li>
+</ul>
+<h3 id="Portals-CMS-Admin" data-renderer-start-pos="1068">Portals CMS Admin</h3>
+<ul class="ak-ul" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="1089">Look &amp; Feel / Images - Upload file for "Favicon" or "Logo" or "Portal Image"</p>
+</li>
+<li>
+<p data-renderer-start-pos="1169">Guides / Guide / Basic information - Upload image</p>
+</li>
+<li>
+<p data-renderer-start-pos="1222">Guides / Guide / Invitation - Upload image for voucher</p>
+</li>
+<li>
+<p data-renderer-start-pos="1280">Settings / Languages - Upload import-file<br><em data-renderer-mark="true">Panel Website</em></p>
+</li>
+<li>
+<p data-renderer-start-pos="1339">Panel Website user view / Community / Forum / Topic / Create new thread - Upload .jpg file</p>
+</li>
+</ul>
+<h3 id="EFS-Admin" data-renderer-start-pos="1433">EFS Admin</h3>
+<ul class="ak-ul" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="1446">Libraries / Mail templates / Import draft - upload file</p>
+</li>
+<li>
+<p data-renderer-start-pos="1505">Libraries / Mail templates / Edit template / Add an attachment</p>
+</li>
+<li>
+<p data-renderer-start-pos="1571">Libraries / Survey messages / Import messages - upload file</p>
+</li>
+<li>
+<p data-renderer-start-pos="1634">Libraries / Question types / Import - upload file</p>
+</li>
+<li>
+<p data-renderer-start-pos="1687">Libraries / Consent form templates / Import templates - upload file</p>
+</li>
+<li>
+<p data-renderer-start-pos="1758">People / Groups / Import group - upload file</p>
+</li>
+<li>
+<p data-renderer-start-pos="1806">People / Panelist administration / Send mail to panelists / Add an attachment</p>
+</li>
+<li>
+<p data-renderer-start-pos="1887">People / Panelist administration / Panelist administration / Import panelists - upload file</p>
+</li>
+<li>
+<p data-renderer

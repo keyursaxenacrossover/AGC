@@ -1,0 +1,67 @@
+oding:</strong></p>
+<ul>
+<li>Follow the instructions in this chapter to execute the recoding process now, at self-defined intervals, or automatically.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="h_01J3FNEC37M4SFGTKJTQK71ECQ" class="wysiwyg-text-align-justify">Specifying the Order of Recoding Processes</h3>
+<p class="wysiwyg-text-align-justify">To specify the order when recodings depend on other recodings:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Click on the <strong>Change order</strong> button.</li>
+<li>Specify the sequence in the “Recoding order” field.</li>
+<li>Confirm with <strong>Save</strong>.</li>
+</ul>
+<h3 id="h_01J3FNEC37PT76S733EYY4PBN3" class="wysiwyg-text-align-justify">Executing Recodings Manually</h3>
+<p class="wysiwyg-text-align-justify">You can trigger recodings manually, individually or as a block:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<strong>Individual Recoding:</strong> Locate it in the overview table and click the <strong>Run recoding procedure</strong> icon.</li>
+<li>
+<strong>All Recodings:</strong> Check the overview table to ensure the recoding order is correct. Click <strong>Execute all recodings</strong> to trigger the process.</li>
+</ul>
+<h3 id="h_01J3FNFVJTNWRKPTY6B07T1DPX" class="wysiwyg-text-align-justify">Configuring a Regular, Effective Execution of Recodings</h3>
+<p class="wysiwyg-text-align-justify">Regular synchronization of data is often crucial, while automatic recoding with every change isn't necessary. Manual recoding can be ineffective and error-prone. By combining recoding groups with update rules, you can optimize the timing and scope of recoding.</p>
+<p class="wysiwyg-text-align-justify"><strong>Creating a Recoding Group:</strong></p>
+<ol class="wysiwyg-text-align-justify">
+<li>Go to People → Master data → Recoding of master data → Recoding groups.</li>
+<li>Click <strong>Add group</strong>.</li>
+<li>Enter a name and description, then confirm with <strong>Save</strong>.</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><strong>Assign Recoding to a Group:</strong></p>
+<ol class="wysiwyg-text-align-justify">
+<li>Open an existing recoding.</li>
+<li>Select the appropriate group in the “Recoding group” drop-down list.</li>
+<li>Click <strong>Save</strong> to confirm.</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><strong>Executing Recodings for a Group Manually:</strong></p>
+<ol class="wysiwyg-text-align-justify">
+<li>Go to People → Master data → Recoding of master data → Recoding groups.</li>
+<li>Click the <strong>Execute recoding in group</strong> icon for the desired group. All recodings assigned to this group will be executed.</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><strong>Configuring Automated Execution for a Recoding Group:</strong></p>
+<ol class="wysiwyg-text-align-justify">
+<li>Go to Groups → Update rules.</li>
+<li>When creating or editing a rule, select the action “Execute recodings from recoding group” and save.</li>
+<li>Select the desired recoding group in the “Value” field.</li>
+<li>Set the schedule for automatic execution, then save. All recodings of the selected group will follow this schedule.</li>
+</ol>
+<h3 id="h_01J3FNFVJTVMCG100WKEQZYHFM" class="wysiwyg-text-align-justify">Configuring Automated Execution of Recodings</h3>
+<p class="wysiwyg-text-align-justify">EFS Panel can automatically execute recodings in a preset order under specific circumstances, such as:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Candidate self-registration via the registration form.</li>
+<li>Panelist data edits using the re-registration form.</li>
+<li>Imported or updated panelist data.</li>
+<li>When a panelist's master data is saved in the admin area.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Activating Automatic Recoding:</strong></p>
+<ol class="wysiwyg-text-align-justify">
+<li>Activate the “Auto recode” function when creating a new recoding or by editing an existing recoding (click the Edit icon in the recoding table).</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><strong>Important:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>When using “Auto recode,” be cautious when deleting old recodings or adding new ones to avoid disrupting the recoding order.</li>
+</ul>
+<h2 id="h_01HGKSMPRSBXGQX3YJXQWQX8Y" class="wysiwyg-text-align-justify">Master Data Codebook</h2>
+<p class="auto-cursor-target wysi

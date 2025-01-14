@@ -1,0 +1,44 @@
+ and feel of our existing software portfolio so that you enjoy a consistent and streamlined user experience with TIVIAN software products.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21037605907986" alt="image-20240313-082218.png"></p>
+<p>While developing the new user interface, we have put the requirements of our customers first: to ensure that you can use EFS just as effectively and intuitively as before, we have only changed the design – all features, menus and options can still be found in their usual places and their functionality remains the same.</p>
+<p> </p>
+<h3 id="header-5"><strong>TivAI Support</strong></h3>
+<p>In the top right-hand corner, you will now find the TivAI Support button: your direct access to our new AI-based chatbot for immediate support regarding questions about EFS.</p>
+<p> </p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21037590169746" alt="image-20240306-103124.png"></p>
+<p> </p>
+<p> </p>
+<p>Simply click on the button, enter your question in the <strong>Message</strong> field and then click on the <strong>Send</strong> icon. After only a short time, the chatbot will send you an answer. If necessary, you can ask follow-up questions as often as you like. If the chatbot cannot answer your question to your satisfaction, our support staff will of course still be happy to help you.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21037576723090" alt="image-20240223-090404.png"></p>
+<p> </p>
+<h3 id="header-6"><strong>Zoom Setting under Personal Preferences</strong></h3>
+<p>You can now adjust the size of the EFS Admin layout in your user account. To do this, proceed as follows:</p>
+<ul>
+<li>
+<p>Click on your user account in the top right-hand corner.</p>
+</li>
+<li>
+<p>Select <strong>Personal Preferences</strong> from the drop-down menu.</p>
+</li>
+<li>
+<p>On the<strong> Common settings </strong>tab, under <strong>Layout size of EFS</strong>, select the desired setting. You can choose between <strong>Default</strong>, <strong>Smaller</strong> and <strong>Smallest</strong>.</p>
+</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21037608775954" alt="image-20240305-081602.png"></p>
+<p>Currently, Firefox does not support this setting. To adjust the size of the layout, press the Alt key and select <strong>View &gt; Zoom</strong> instead.</p>
+<p> </p>
+<h3 id="header-7"><strong>New Default Mail Sender</strong></h3>
+<p>From now on, the mail sender "noreply@customervoice360.com" will be used by default for new mail templates. If you would like a different default mail sender for your installation, please contact our support team. You can still add your own mail senders in the <strong>Libraries</strong> area. However, additional security requirements apply from now on (for more information, see the next point "Enforcement of SPF Record When Adding Mail Senders").</p>
+<h3 id="header-8"><strong>Enforcement of SPF Record When Adding Mail Senders</strong></h3>
+<p>As of version 24.1, EFS requires a SPF record when creating a mail sender with your domain. This is to ensure that your emails are properly authenticated and delivered to your participants. If your domain settings do not include our mail servers yet, you need to update your SPF record with the following include: <strong>include:_spf.tivian.com</strong>. Otherwise, you will get an error message when trying to add a mail sender with your domain under <strong>Libraries → Mail templates → Mail senders</strong>. If you cannot change the SPF record for your email domain, you still have the option of using the default sender address<em> “Survey &lt;noreply@customervoice360.com&gt;”</em>. Just create a new mail sender using the mentioned email address and enter the name of your company as a realname instead of "Survey", for example. More information on this topic can be found here.</p>
+<hr>
+<h2 id="header-10">
+<strong>Updates in </strong><em><strong>Projects</strong></em>
+</h2>
+<p>We have also optimized the <em>Projects</em> module and can present you with several practical improvements that make using the software even more efficient and easier.</p>
+<p> </p>
+<h3 id="header-12"><strong>Support for SVG Files</strong></h3>
+<p>In the past, it was not possible to use SVG files for question types that supported uploading images (for example <em>111 Hotspot</em>, <em>111 Single response list with icons</em>, <em>121 Hotspot, 121 Multiple response list with images</em> or <em>998 Text and image</em>). As of EFS 24.1, this is possible.</p>
+<p> </p>
+<h3 id="header-13"><strong>Placeholders in CC and BCC fields</strong></h3>
+<p>You

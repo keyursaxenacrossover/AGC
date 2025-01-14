@@ -1,0 +1,43 @@
+<p><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p>This article explains how to calculate the time a participant has spent on a specific page using relative time stamps in a survey or questionnaire system.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>Understanding how long participants spend on individual pages can provide valuable insights into user behavior and engagement. This guide focuses on using relative time stamps to measure time spent on pages.</p>
+<ul>
+<li><a href="#relative_time_stamp">Using Relative Time Stamps</a></li>
+<li><a href="#variable_names">Variable Names and Descriptions</a></li>
+<li><a href="#calculation_example">Calculation Example</a></li>
+</ul>
+<h2 id="relative_time_stamp">Using Relative Time Stamps</h2>
+<p>To calculate the time spent on a certain page, you can use the relative time stamp feature. This method allows you to track the duration a participant spends on each page of your survey or questionnaire.</p>
+<h2 id="variable_names">Variable Names and Descriptions</h2>
+<p>The relative time stamp feature uses specific variable names to store and retrieve timing information:</p>
+<h3 id="h_01J3CSWFW9B69850MH9K65YFJ8">Internal Variable Name</h3>
+<p><code>dt_send_pag_000n ()</code></p>
+<h3 id="h_01J3CSWFW9X31J4YK57E1D3NAC">External Variable Name</h3>
+<p><code>rts_000n</code> (For page IDs up to 99999)<br><code>ts_000n</code> (For page IDs greater than 99999)</p>
+<h3 id="h_01J3CSWFW95TWSMC60X0ATQWVZ">Description</h3>
+<p><code>relative timestamp for page xxxx</code></p>
+<h2 id="calculation_example">Calculation Example</h2>
+<p>To calculate the time spent on a page, you need to compare the relative time stamps of consecutive pages. Here's an example:</p>
+<p>If <code>rtsxxxx1 = 6</code> and <code>rtsxxxx2 = 27</code>, then the participant spent 21 seconds on the page (27 - 6 = 21).</p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq_1">What does the relative time stamp represent?</h3>
+<p>The relative time stamp represents the number of seconds that have elapsed since the start of the survey or questionnaire for a specific page.</p>
+<h3 id="faq_2">How do I interpret the variable names?</h3>
+<p>The variable names follow a pattern where 'xxxx' or '000n' represents the page number or ID. For example, rts0001 would be the relative time stamp for the first page, rts0002 for the second page, and so on.</p>
+<h3 id="faq_3">Can I use this method for all types of surveys?</h3>
+<p>This method can be used for most types of online surveys or questionnaires that support the collection of relative time stamps. However, you should verify that your specific survey platform supports this feature.</p>
+<p> </p>
+</article>h2>
+<p>To calculate the time spent on a page, you need to compare the relative time stamps of consecutive pages. Here's an example:</p>
+<p>If <code>rtsxxxx1 = 6</code> and <code>rtsxxxx2 = 27</code>, then the participant spent 21 seconds on the page (27 - 6 = 21).</p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq_1">What does the relative time stamp represent?</h3>
+<p>The relative time stamp represents the number of seconds that have elapsed since the start of the survey or questionnaire for a specific page.</p>
+<h3 id="faq_2">How do I interpret the variable names?</h3>
+<p>The variable names follow a pattern where 'xxxx' or '000n' represents the page number or ID. For example, rts0001 would be the relative time stamp for the first page, rts0002 for the second page, and so on.</p>
+<h3 id="faq_3">Can I use this method for all types of surveys?</h3>
+<p>This method can be used for most types of online surveys or questionnaires that support the collection of relative time stamps. However, you should verify that your specific survey platform supports this feature.</p>
+<p> </p>
+</article>

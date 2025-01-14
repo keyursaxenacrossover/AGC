@@ -1,0 +1,82 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1022033949">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1022033949</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">Copied from Jira ticket</a></li>
+<ul>
+<li><a href="#header-3">Todos</a></li>
+</ul>
+</ul>
+</ul><h1 id="header-1">Copied from Jira ticket</h1><ul>
+<li>Configure Okta to work as OpenIDConnect provider for a local EFS installation and the TKA installation (sign-in, reset password, home realm discovery have to work)</li>
+<li>Configure Okta and our internal Questback AD to enable federation based on OpenIDConnect</li>
+<li>Adapt EFS settings to enable the connection to Okta</li>
+<li>Create customized user experiences (at least for sign-in)</li>
+<li>Configure Okta to enable MFA</li>
+<li>Migrate users</li>
+<li>Try to repeat the Okta configuration via API</li>
+<li>Create criteria to compare Azure B2C and Okta</li>
+<li>Create a comparison between Okta and Azure B2C</li>
+</ul><p><br></p><p><br></p><h2 id="header-3">Todos</h2><ac:task-list>
+<ac:task>
+<ac:task-id>89</ac:task-id>
+<ac:task-status>complete</ac:task-status>
+<ac:task-body>Setup everything from scratch with the Management API <ac:parameter ac:name="colour">Red</ac:parameter></ac:task-body>
+</ac:task>
+<ac:task>
+<ac:task-id>90</ac:task-id>
+<ac:task-status>complete</ac:task-status>
+<ac:task-body>List criteria for comparison witzh Azure (and add values)</ac:task-body>
+</ac:task>
+<ac:task>
+<ac:task-id>91</ac:task-id>
+<ac:task-status>complete</ac:task-status>
+<ac:task-body>Setup login for local users (users in Okta)</ac:task-body>
+</ac:task>
+<ac:task>
+<ac:task-id>92</ac:task-id>
+<ac:task-status>complete</ac:task-status>
+<ac:task-body>Setup AD + HRD</ac:task-body>
+</ac:task>
+<ac:task>
+<ac:task-id>93</ac:task-id>
+<ac:task-status>incomplete</ac:task-status>
+<ac:task-body>Test customization for the login screen (CI) <ac:parameter ac:name="colour">Red</ac:parameter></ac:task-body>
+</ac:task>
+<ac:task>
+<ac:task-id>94</ac:task-id>
+<ac:task-status>complete</ac:task-status>
+<ac:task-body>Check multi tenant capabilities</ac:task-body>
+</ac:task>
+<ac:task>
+<ac:task-id>95</ac:task-id>
+<ac:task-status>complete</ac:task-status>
+<ac:task-body>MFA </ac:task-body>
+</ac:task>
+<ac:task>
+<ac:task-id>96</ac:task-id>
+<ac:task-status>complete</ac:task-status>
+<ac:task-body>(Optional) Password reset flow</ac:task-body>
+</ac:task>
+<ac:task>
+<ac:task-id>97</ac:task-id>
+<ac:task-status>complete</ac:task-status>
+<ac:task-body>(Optional) Migration of users</ac:task-body>
+</ac:task>
+<ac:task>
+<ac:task-id>98</ac:task-id>
+<ac:task-status>complete</ac:task-status>
+<ac:task-body>What features does Okta offer that Azure does not offer</ac:task-body>
+</ac:task>
+<ac:task>
+<ac:task-id>99</ac:task-id>
+<ac:task-status>incomplete</ac:task-status>
+<ac:task-body>(Optional) Custom flows</ac:task-body>
+</ac:task>
+<ac:task>
+<ac:task-id>100</ac:task-id>
+<ac:task-status>complete</ac:task-status>
+<ac:task-body>Debuggin and troubleshooting</ac:task-body>
+</ac:task>
+</ac:task-list><p><br></p>

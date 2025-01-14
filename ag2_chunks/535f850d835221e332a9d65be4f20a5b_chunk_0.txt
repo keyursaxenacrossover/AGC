@@ -1,0 +1,53 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K" class="wysiwyg-text-align-justify">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article provides information on the Anonymity Criterion and Remainder Rule, which are used to protect participant privacy in survey results. It explains how these rules are applied, their impact on data display, and options for deactivation.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">The Anonymity Criterion and Remainder Rule are essential for maintaining participant confidentiality in survey results. This guide explains how these rules work and their implications for data presentation.</p>
+<ul class="wysiwyg-text-align-justify">
+<li><a href="#anonymity-criterion">Anonymity criterion</a></li>
+<li><a href="#remainder-rule">Remainder rule</a></li>
+<li><a href="#deactivation">Deactivation</a></li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="anonymity-criterion" class="wysiwyg-text-align-justify"><strong>Anonymity criterion</strong></h2>
+<p class="wysiwyg-text-align-justify">Return per unit and question is only displayed for 5 or more participants.</p>
+<ol class="wysiwyg-text-align-justify">
+<li>
+<p>If less than 5 participants completed the survey, the direct return will be hidden in the O<em>rg-Processor</em>.</p>
+</li>
+<li>
+<p>If (accumulated return – return direct) &lt; 5, the direct return will be hidden too.</p>
+</li>
+<li>
+<p>If an accumulated return is &lt; 5 as well, the accumulated return will be hidden.</p>
+</li>
+<li>
+<p>If the sum of the accumulated return is &lt; 5, direct as well as accumulated return will be hidden</p>
+</li>
+</ol>
+<h2 id="remainder-rule" class="wysiwyg-text-align-justify"><strong>Remainder rule</strong></h2>
+<p class="wysiwyg-text-align-justify">Additionally, the remainder rule is activated: ‘For reasons of anonymity, the return is not shown until a minimum of 5 is reached. Furthermore, the sum of the return of hidden parallel units also has to reach the minimum return. As long as this is not the case, the unit with the next higher return is also hidden.’</p>
+<h3 id="example" class="wysiwyg-text-align-justify"><strong>Example</strong></h3>
+<p class="wysiwyg-text-align-justify">If the sum of the return of three hidden units is &lt; 5 (e.g. all of these three units consist of only one participant; sum = 3), at least one other parallel unit (always the unit with the next higher return) will also be hidden until the sum of the hidden returns is ≥ 5.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>As soon as the hidden three units reach a return of ≥ 5 in total, the hidden unit will be shown again.</p>
+</li>
+<li>
+<p>As soon as one of the hidden units reaches a return of ≥ 5, it is displayed again (of course only if the other two units combined reach a return of ≥ 5; otherwise it will stay hidden).</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If all parallel returns are displayed and the direct return of the higher-level unit is hidden, the accumulated return of the superordinate unit is hidden as well.</p>
+<h2 id="deactivation" class="wysiwyg-text-align-justify"><strong>Deactivation</strong></h2>
+<p class="wysiwyg-text-align-justify">Additionally, the box is disabled: ‘Include units with a return rate of 0 for remainder rule‘.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>If disabled and one unit’s return equals 0, there will not be any other parallel units hidden with a return of ≥5. Once an employee participates, the remainder rule applies again (see 1.2.). See the process between screenshots 2 and 3: on November 7th, Org-Unit D’s return = 0, on November 9th, it is between 1 and 4. As a result, the return of the parallel unit Org-Unit C will be hidden on November 9th.</p>
+</li>
+<li>
+<p>If enabled, a parallel unit would be hidden on both dates, November 7th and November 9th, in the same case (only one unit with return = 0).</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Return on 11/07/2016</strong></p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015359119634" alt="Return 11.jpg"></p>
+<p class="wysiwyg-text-align-justify"><strong>Return on 11/09/2016</strong></p>
+<p class="wysiwyg-text-align-justify"><img src="https://

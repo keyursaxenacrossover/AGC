@@ -1,0 +1,15 @@
+ations/);do cd /nfs/installations/$i/nfs/opst/$i.customervoice360.com/htdocs/ 2&gt; /dev/null &amp;&amp; (echo "SET SQL_BIG_SELECTS=1;SELECT CONCAT_WS(';',uid,u_account,u_passwd) FROM users WHERE uid = 1 AND u_account = 'root';" | efslogin -mo) 2&gt; /dev/null | awk -v cluster="$(hostname | sed 's/servicegw-//g;s/^s/S/g;s/^p/P/g;s/bofa/BofA/g;s/-de-/-DE-/g;s/-us-/-US-/g')" -v inst="$i" 'NR&gt;3{OFS=";"; print cluster, inst, $0 | "sort -n | uniq"}';done &gt; /nfs/dumps/password_dump_$(<span class="hljs-built_in">date</span> +<span class="hljs-string">'%Y-%m-%d'</span>).txt</pre>
+</li>
+<li>Now it's time to update the password in all installations residing in that service gateway (replace <strong>password_hash</strong> with the actual hash obtained in <strong>step 6</strong>)
+<pre>for i in $(ls /nfs/installations/);do cd /nfs/installations/$i/nfs/opst/$i.customervoice360.com/htdocs/ 2&gt; /dev/null &amp;&amp; (echo 'UPDATE users SET u_passwd = "password_hash" WHERE uid = 1 AND u_account = "root";SELECT uid,u_passwd,u_account,u_email FROM users WHERE uid = 1;' | efslogin -mo) 2&gt; /dev/null;done</pre>
+</li>
+<li>Once done, verify that the password works on one of the installations in the cluster.</li>
+<li>Move on to the next cluster. <br><em><strong>**Additional steps for de-03 cluster<br></strong></em>- We will need to revert the password change for 2 PAYBACK installations by following the steps below:
+<pre>i np3104<br>efslogin<br>UPDATE users SET u_passwd = '$6$rounds=5000$evEJ76eMFYfjlNyw$IWG9s0.AxmNF1VXJI1035liMumckMLYnz6bRsfE7NtH1XainDFVUCfJGsy40VQtZyPKgt0Kc2tw9uUn6IaK3V0' WHERE uid = 1 AND u_account = 'root';</pre>
+<pre>i fg4086<br>efslogin<br>UPDATE users SET u_passwd = '$6$rounds=5000$evEJ76eMFYfjlNyw$IWG9s0.AxmNF1VXJI1035liMumckMLYnz6bRsfE7NtH1XainDFVUCfJGsy40VQtZyPKgt0Kc2tw9uUn6IaK3V0' WHERE uid = 1 AND u_account = 'root';</pre>
+- We will need to revert the password change for BMW installations by following the steps below:
+<pre>i eq5701<br>efslogin<br>UPDATE users SET u_passwd = '$6$rounds=5000$CTj3BL5mUn0EL4eL$e2uNYO6PXRoE042hhRmL2N5RhPb0aJqF/F5Z0/PwjbF/K2FSbaG8SI83fAsQAbw5JUpylRJ4V2rG7jjuCwQSb0' WHERE uid = 1 AND u_account = 'root';</pre>
+ <br>- We will need to revert the password change for 3 Unipark installations by following the steps below:
+<pre>i kw0791<br>efslogin<br>UPDATE users SET u_passwd = '$6$rounds=5000$1Evfcr6U6RhhDp48$8S1Kt7AKR.bKrcqlaYvVJj1WF3V4fBstZIy11mvp5GZ6bMunoFmCOmG98rYvTtClixDbO.fYg/X68MgWLfBmY/' WHERE uid = 1 AND u_account = 'root';</pre>
+<pre>i df1582<br>efslogin<br>UPDATE users SET u_passwd = '$6$rounds=5000$1Evfcr6U6RhhDp48$8S1Kt7AKR.bKrcqlaYvVJj1WF3V4fBstZIy11mvp5GZ6bMunoFmCOmG98rYvTtClixDbO.fYg/X68MgWLfBmY/' WHERE uid = 1 AND u_account = 'root';</pre>
+<pre>i sr4501<br>efslogin<br>UPDATE users SET u_passwd = '$6$rounds=5000$1Evfcr6U6RhhDp48$8S1Kt7AKR.bKrcqlaYvVJj1WF3V4fBstZIy11mvp5GZ6bMunoFmCOmG98rYvTtClixDbO.fYg/X68MgWLfBmY/' WHERE uid = 1 AND u_account = '

@@ -1,0 +1,46 @@
+ language</p>
+</li>
+<li>
+<p><strong>Delete</strong>: The respective language will be deleted after a confirmation prompt.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Once you delete a language, all text elements and other settings of this language will be deleted and cannot be restored. Deleting a language will also cause errors in settings already made for the language selection question and language selection variable, as well as for language information entered in participant administration. The ID of the deleted language will no longer be subsequently re-assigned. If you re-create the same language, it will be assigned a new language ID.</p>
+<p class="wysiwyg-text-align-justify">You can use the <strong>View</strong> button to hide particular columns of the table or limit the number of rows.</p>
+<h3 id="uniquely-characterizing-languages-with-a-language-identifier" class="wysiwyg-text-align-justify">Uniquely characterizing languages with a language identifier</h3>
+<p class="wysiwyg-text-align-justify">The language identifier allows you to uniquely identify languages and regions. For example, de_DE: German / Germany; en_US: English / USA; en_GB: English / Great Britain. Using the identifier is particularly helpful when a questionnaire is to be localized for different dialects of the same language, e.g. British and American English.</p>
+<p class="wysiwyg-text-align-justify">The identifier is composed of</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>language ID according to ISO 639. A list can be found at <a href="http://www.loc.gov/standards/iso639-2/php/code_list.php">http://www.loc.gov/standards/iso639-2/php/code_list.php</a></p>
+</li>
+<li>
+<p>country ID according to ISO 3166. A list can be found at <a href="http://www.iso.org/iso/country_codes/iso_3166_code_lists/english_country_names_and_code_elements.htm">http://www.iso.org/iso/country_codes/iso_3166_code_lists/english_country_names_and_code_elements.htm</a></p>
+</li>
+<li>
+<p>For example, de is the code for German, DE is the country ID. Accordingly, the language identifier of a German language text localized for Germany is de_DE.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">A language identifier can be used for multiple targets: de_DE for example may be used for formal German, as well as for colloquial German.</p>
+<h3 id="setting-the-active-default-language" class="wysiwyg-text-align-justify">Setting the active default language</h3>
+<p class="wysiwyg-text-align-justify">Among the existing languages of a multilingual project, one language will be treated as the default language. That means the following:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>This language will automatically be used in the output questionnaire, unless an individual language preference for the respondent has been set by defining a language selection variable or unless a language selection page has been set up.</p>
+</li>
+<li>
+<p>The language elements of the default language will appear in the questionnaire editor, whereas you can only edit the language elements of the other languages via the language editor.</p>
+</li>
+<li>
+<p>The language elements of the default language will always appear in the first column of the language editor.</p>
+</li>
+<li>
+<p>If a language element has not been filled in for another language, the finished questionnaire will show the corresponding language element of the default language instead.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">To find out which language performs the function of default language, check the column “Default language” in the overview of languages. When creating a project, the system will automatically set the language that is used in the admin area by the user creating the project as the default language. I.e. if the project is created by a staff member using the English-language admin area, the default language will automatically be set to English.</p>
+<h3 id="changing-the-default-language" class="wysiwyg-text-align-justify">Changing the default language</h3>
+<p class="wysiwyg-text-align-justify">instead of using the simultaneous central access to the language elements of all languages via the language element editor, you will need to change the default language. It is usually not advisable to proceed in this way because the <strong>Language editor</strong> provides convenient central access to the language elements of the various languages.</p>
+<p class="wysiwyg-text-align-justify">To change the default language, find the desired new default language in the list and click on the <strong>Use as default language</strong> icon. This change will simultaneously trigger a language selection blocker. Please observe the notes on this feature in the following section.</p>
+<p class="wysiwyg-text-align-justify">If the new default language was not yet fully translated before the default language change, the #undefined# marker will appear in the text elements in the questionnaire and language editors which are still empty. Missing logos and buttons will be filled with #undefined#. If no character set has been specified before the change, the character set will also be set to "#undefined#" and needs to be defined.</p>
+<h3 id="copying-language-elements" class="wysiwyg-text-align-justify">Copying language elements</h3>
+<p class="wysiwyg-text-align-justify"><em>A survey

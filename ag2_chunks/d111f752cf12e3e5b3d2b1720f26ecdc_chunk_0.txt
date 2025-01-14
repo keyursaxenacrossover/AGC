@@ -1,0 +1,124 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/2773090351">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/2773090351</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">General:</a></li>
+<ul>
+<li><a href="#header-3">Renaming Questback Access</a></li>
+<ul>
+<li><a href="#header-5">POC/PROD:</a></li>
+<li><a href="#header-6">PROD Only:</a></li>
+<li><a href="#header-7">Clients:</a></li>
+<li><a href="#header-8">EFS/DV Config:</a></li>
+<li><a href="#header-9">EFS?:</a></li>
+<li><a href="#header-10">DV?</a></li>
+<li><a href="#header-11">Development/Backoffice Resources:</a></li>
+<li><a href="#header-12">Marketing + Sales:</a></li>
+</ul>
+<li><a href="#header-14">Next Steps:</a></li>
+</ul>
+</ul>
+</ul><p>List of changes that have to me made.</p><h1 id="header-1"><strong>General:</strong></h1><h2 id="header-3">Renaming Questback Access</h2><ul>
+<li><p>Tivian Access?</p></li>
+<li><p>Access?</p></li>
+</ul><p>→ Tivian <strong>Access</strong> (due to Consistency)</p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20717094286994" alt="MicrosoftTeams-image (32).png"><h3 id="header-5">POC/PROD:</h3><ul>
+<li>
+<p>Account Settings</p>
+<ul><li><p>Company Name</p></li></ul>
+</li>
+<li>
+<p>Appearance</p>
+<ul>
+<li><p>Logo URL</p></li>
+<li>
+<p>Background Image??</p>
+<ul>
+<li><p><span style="color: rgb(76,154,255);">To be clarified with Rhea</span></p></li>
+<li>
+<p><span style="color: rgb(76,154,255);">Suggestion: image from contact page</span></p>
+<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20717131274514" alt="image-20210504-161730.png">
+</li>
+</ul>
+</li>
+<li><p>Organization Logo</p></li>
+</ul>
+</li>
+<li>
+<p>Customization</p>
+<ul>
+<li><p>Custom URL Domain (okta.testback.com)</p></li>
+<li><p>Default App for Sign-In Widget (installation etc.)</p></li>
+<li>
+<p>Sign In Widget</p>
+<ul>
+<li><p>Sign in Widget Logo + Favicon</p></li>
+<li>
+<p>Styling ?? (to be clarified)</p>
+<ul><li><p><span style="color: rgb(76,154,255);">Would be nice to have the tivian styles in it</span></p></li></ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Custom Error Page</p>
+<ul>
+<li>
+<p>Styling?? (to be clarified)</p>
+<ul><li><p><span style="color: rgb(76,154,255);">Would be nice to have the tivian styles in it</span></p></li></ul>
+</li>
+<li><p>Logo + Favicon</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Email &amp; SMS Customization</p>
+<ul><li>
+<p>All emails we have configured</p>
+<ul>
+<li><p>Text + Heading</p></li>
+<li>
+<p>Add Logo?? (to be clarified)</p>
+<ul><li><p><span style="color: rgb(76,154,255);">Would make sense</span></p></li></ul>
+</li>
+</ul>
+</li></ul>
+</li>
+<li>
+<p>Authentication</p>
+<ul><li>
+<p>Sign On + Password</p>
+<ul><li><p>Rename questback policies</p></li></ul>
+</li></ul>
+</li>
+<li>
+<p>Multifactor</p>
+<ul><li>
+<p>Factor Enrollment</p>
+<ul><li><p>Rename questback policies</p></li></ul>
+</li></ul>
+</li>
+<li>
+<p>Identity Providers</p>
+<ul>
+<li>
+<p>Identity Providers</p>
+<ul><li><p>Add Tivian Azure AD !!!</p></li></ul>
+</li>
+<li>
+<p>Routing Rules</p>
+<ul><li><p>Change Questback routing rule</p></li></ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Administrators</p>
+<ul><li><p>Add new Tivian Administrators</p></li></ul>
+</li>
+<li>
+<p>API</p>
+<ul>
+<li>
+<p>Authorization Server</p>
+<ul>
+<li><p>Add new Tivian Authorization

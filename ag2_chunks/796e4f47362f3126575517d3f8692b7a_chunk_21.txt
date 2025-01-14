@@ -1,0 +1,53 @@
+Words and numbers act as reference values.</li>
+<li>If you select “Metaname“ or “Label“ as the Unit property or “Label“ as the scale property, you can use the relational operators <strong>=</strong> or <strong>!=</strong> to enter the label or meta name of the desired unit in the reference value field. In this way, you can deactivate page by deactivating it for a specific unit.</li>
+<li>You <strong>save</strong>.</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013838038546" alt="Page Conditions  Rahmen.png"></p>
+<div>
+<div class="sc-bbmXgH inLjth">
+<div class="page view">
+<div class="wiki-content">
+<p>The presented procedure can be illustrated on a possible page condition: You only want to release a page of the report for units that are assigned to the first or second level. After the inspector has opened, you set the <strong>Page Condition</strong>:</p>
+<p>You pick a DSQ path:</p>
+<p><em>Unit</em> → <em>Focus unit</em> → <em>Level</em></p>
+<ul>
+<li>As the relational operator, you choose <strong>&lt;</strong> (less).</li>
+<li>As the reference value, you enter <strong>3</strong>.</li>
+<li>Then you click on <strong>Save</strong>.</li>
+<li>The following is shown as Tiny DSQ.</li>
+</ul>
+<p><em>(U) Focus unit (P) &lt; 3</em></p>
+<p>For all units whose level within the organizational structure is greater than 3, the page with the condition is deactivated. Only units that belong to the first and second levels receive a report containing this page:</p>
+<ul>
+<li>You edit a page condition by clicking on the Tiny DSQ.</li>
+<li>If a page condition is no valid, the Report Definition can not be published.</li>
+<li>You delete a page condition by clicking on the corresponding icon: the trashcan.</li>
+<li>If you want to copy or import or export a Report Definition that contains page conditions, you can only do this if the conditions are also available within the new report definition.</li>
+</ul>
+<h3 id="copying-mappings" class="sc-lhVmIH iJLaKb"><strong>Copying mappings</strong></h3>
+<p class="sc-lhVmIH iJLaKb">In the Report Manager, it is possible to transfer previously defined mappings of a page to a new page, so that you do not have to map each cell again. On the sub-navigation field <strong>Pages,</strong> you click on the icon “Copy mapping from another page“. The inspector opens so that you select an existing Report Definition. The prerequisites for successful copying are:</p>
+<ul>
+<li>
+<p>The source and target foil must be identical.</p>
+</li>
+<li>
+<p>The report definitions must match in such a way that the mapping to be copied can also be created manually within the scope of the report definition in which the copy is to be inserted. Both have to use the same EFS project.</p>
+</li>
+</ul>
+<em>Information: <strong>Collections</strong><span style="color: #333333;"> and </span><strong>Dataspace</strong><span style="color: #333333;"> entities must be created again so that the copied Report Definition has no invalid mappings and so that the Report Definition can be published.</span></em>
+<p class="auto-cursor-target"> </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863" class="wysiwyg-text-align-justify">FAQ</h1>
+<h3 id="h_01HGKSMPRV9YFJQXQX3QXBX3YI" class="wysiwyg-text-align-justify">What is the difference between a Simple unit and a Unit relation DSE?</h3>
+<p class="wysiwyg-text-align-justify">A Simple unit DSE is used to simplify mapping by shortening longer picker paths, while a Unit relation DSE is used to represent a difference value that correlates selected units with each other.</p>
+<h3 id="h_01HGKSMPRV9YFJQXQX3QXBX3YJ" class="wysiwyg-text-align-justify">How do I activate Loop mode for mapping?</h3>
+<p class="wysiwyg-text-align-justify">To activate Loop mode, use the on/off slide switch when mapping a table. Note that activating Loop mode will delete any previous mappings in the table.</p>
+<h3 id="h_01HGKSMPRV9YFJQXQX3QXBX3YK" class="wysiwyg-text-align-justify">Can I use filters in multiple places within a report definition?</h3>
+<p class="wysiwyg-text-align-justify">Yes, filters can be used in various places, including cell mapping, global filtering for the entire report, and filtering for virtual comparison units.</p>
+<p class="auto-cursor-target wysiwyg-text-align-justify"> </p>

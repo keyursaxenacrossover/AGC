@@ -1,0 +1,51 @@
+</code></pre><p> The reason for this issue are missing view rights. Check the rights for project, workbook, view and data source. The rights should be as follows:</p><ul>
+<li><p><strong>Project:</strong> view right for panel group defined in MySight project, no rights for group "All Users"</p></li>
+<li><p><strong>Workbook:</strong> view right for group "All Users"</p></li>
+<li><p><strong>View:</strong> view right for group "All Users"</p></li>
+<li><p><strong>Data Source:</strong> view right for group "All Users"</p></li>
+</ul><h3 id="header-95">(MySight new) Republish MySight projects on cloned installations</h3><p> If an EFS installation is cloned, the MySight projects and their status will be cloned as well but the data in the intermediate and exasol database will not be cloned. Also no data will be cloned on tableau server.<br>The cloned installation will get its own empty intermediate and exasol databases and an empty site on tableau server.<br>To republish an existing mysight project so that data is available in exasol and a project is created on the site on tableau server some steps have to be taken in the backend.<br>It might be quicker and easier to just copy the existing mysight projects, to publish the copies and then to delete the original ones once the copies are published. The dashboards have to be created anew anyway<br>If the existing projects shall be kept (which is not needed from a technical point of view), these are the steps to publish them:<br></p><ul>
+<li>
+<p>Reset status of the existing MySight project</p>
+<pre><code class="language-text">SELECT * FROM mysight_instance WHERE id=4791;
+      UPDATE mysight_instance SET publication_status=0 WHERE id=4791; </code></pre>
+</li>
+<li>
+<p>Create backup table and then delete the entry form mysight_instance_map:</p>
+<pre><code class="language-text">CREATE TABLE sb_backup_mysight_instance_map LIKE mysight_instance_map; 
+INSERT INTO sb_backup_mysight_instance_map SELECT * FROM mysight_instance_map WHERE instance_id=4791; 
+DELETE FROM mysight_instance_map WHERE instance_id=4791;</code></pre>
+</li>
+<li><p>Reset the connection cache in Options &gt;&gt; MySight settings &gt;&gt; qb:: Tableau-Cache Administration &gt;&gt; Connection-Cache &gt;&gt; Reset connection cache</p></li>
+<li><p>Open the MySight project and click "publish"</p></li>
+<li><p>Check the MySight log to see whether there are any errors</p></li>
+</ul><h3 id="header-96">Create client account on tableau server and send login credentials</h3><p> We receive a request from Customer Help Desk or internally to create a (new) user on Tableau server</p><ul>
+<li><p>Login to corresponding server, e.g. <a href="https://mysight-preprod2.questback.com">https://mysight-preprod2.questback.com</a> and select any site</p></li>
+<li><p>Manage all sites &gt;&gt; Users (toggle filters to see search field)</p></li>
+<li>
+<p>Check whether the user already exists</p>
+<ul>
+<li><p>if yes, grant rights to new site</p></li>
+<li>
+<p>if no, create new user and grant rights to site</p>
+<ul>
+<li><p>+ Add Users &gt;&gt; New user &gt;&gt; enter all credentials (maybe use passwordsafe to generate password) <strong>see screenshot below</strong></p></li>
+<li><p>send login credentials via Outlook, use below example mail template</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul><ac:image ac:align="center" ac:layout="center" ac:src="https://it.globalpark.de/twiki/pub/Support/MySight/create_new_user_tableau.jpg"><ri:url ri:value="https://it.globalpark.de/twiki/pub/Support/MySight/create_new_user_tableau.jpg"></ri:url></ac:image><p><br><br><strong>Subject: MySight / Preprod2 access</strong> <br></p><pre><code class="language-text">Dear xxx,
+
+We have created a user account for you to access the Questback MySight environment via “xxx” (Site: xxx).
+
+Username: xxx
+Initial password: xxx
+
+Please change this password after your first login (Top right circle with your initials / Drop Down Menu, &gt; My Account Settings &gt; Change Password).
+If there are any problems with your permissions, please don’t hesitate to contact our support team (de.support@questback.com).
+
+Best regards
+xxx
+</code></pre><h3 id="header-97">Mass import of client new accounts on tableau server</h3><p> We receive a request from Customer Help Desk or internally to create (new) users on Tableau server. Please check for that tasks following Tableau Help Sites.</p><p><strong>Tableau Help</strong></p><ul>
+<li><p><strong>URL:</strong> <a href="https://help.tableau.com/current/server/en-us/users_import.htm">https://help.tableau.com/current/server/en-us/users_import.htm</a> <strong>(Import Users)</strong></p></li>
+<li><p><strong>

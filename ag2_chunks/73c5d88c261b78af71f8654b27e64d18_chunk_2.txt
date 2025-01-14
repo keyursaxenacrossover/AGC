@@ -1,0 +1,46 @@
+ to the survey URL, thus avoiding the storage of information on the respondent’s computer. Resumption without a cookie set is only possible for personalized or panel surveys.</p>
+<p class="wysiwyg-text-align-justify">Summary:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Although you have activated cookies, each respondent will individually decide whether they wish to permit cookies or not. Respondents who do not accept the cookie can participate in anonymous surveys more than once.</p>
+</li>
+<li>
+<p>Deactivate cookies if you want to allow yourself or others to participate in the same survey more than once in succession. This is especially recommended if you want to use the EFS Survey as an input tool for CATI surveys and the telephone interviewer enters several interviews in succession / at once.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The project info of an anonymous project will contain the “participate again” link. Clicking on this link will delete a set cookie and thus enable multiple participation in / repeated tests of the project. Do <em>not </em>pass this link on to “real” respondents as a survey URL.</p>
+<h3 id="user-defined-variables" class="wysiwyg-text-align-justify"><strong>User-defined variables</strong></h3>
+<p class="wysiwyg-text-align-justify"><em>The survey</em> creates the survey variables for you. The necessary variables will be generated for each question. Additional variables are required in some cases. These variables (user-defined variables and URL parameters) are determined centrally in the<strong> Project properties</strong> menu on the <strong>User-defined Variables</strong> tab.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014837359122" alt="User-defined variables.jpg"></p>
+<p class="wysiwyg-text-align-justify">URL parameters allow you to transfer variables from outside to a survey. These variables are automatically stored in the respondent’s records and can be used for filtering or dynamic output. The field report can be configured according to URL parameters.</p>
+<p class="wysiwyg-text-align-justify">The parameter “a” at the end of the URL <a href="http://www.your-domain.com/uc/surveys/?a=3">http://www.your-domain.com/uc/surveys/?a=3</a> indicates from which website the participant logged in. The “?” indicates the occurrence of parameters.</p>
+<p class="wysiwyg-text-align-justify"><strong>Creating URL parameters</strong></p>
+<p class="wysiwyg-text-align-justify">URL parameters can be created in the <strong>User-defined variables</strong> tab of the Survey options menu.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Select the number of variables from the drop-down list in the line entitled “Number of URL parameters”.</p>
+</li>
+<li>
+<p>Then click on the <strong>Submit</strong> button. The URL parameters have now been defined.</p>
+</li>
+<li>
+<p>By clicking on the<strong> Labels and data type</strong> link in the “Number of URL parameters” row, you can change the type (see the following section) and label the URL parameter. Names are used for your orientation as well as for labeling in the export record.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If, for example, texts are used instead of numbers in the URL parameter, you will need to adjust the type. Otherwise, the URL parameter will be stored incorrectly.</p>
+<p class="wysiwyg-text-align-justify"><strong>Creating user-defined variables</strong></p>
+<p class="wysiwyg-text-align-justify">Similar to the URL parameters user-defined variables are created on the tab with the same name.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Select the number of variables from the drop-down list in the line entitled “Number of user-defined variables”.</p>
+</li>
+<li>
+<p>Then click on the <strong>Submit</strong> button.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Changing variable types and labeling</strong></p>
+<p class="wysiwyg-text-align-justify">Click on the <strong>Labels and data type</strong> link to edit the properties of the user-defined variables. By default, user-defined variables have the “Big integer” variable type; possible alternatives are “Text” and “Integer or floating point numbers” (see Table 3.9). User-defined variables can also be labeled for export at a later stage.</p>
+<p class="wysiwyg-text-align-justify">The newly created user-defined variables (c_000n) are now available for questionnaire screening and will be exported along with the defined label.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h3 id="configuring-the-relevantid" class="wysiwyg-text-align-justify"><strong>Configuring the RelevantID</strong></h3>
+<p class="wysiwyg-text-align-justify"><strong>EFS</strong> supports an external validation of survey participants by the service provider Imperium for a special charge. If this check has been enabled for an installation, the additional tab <strong>RelevantID configuration </strong>is displayed in anonymous and personalized surveys, panel surveys, and

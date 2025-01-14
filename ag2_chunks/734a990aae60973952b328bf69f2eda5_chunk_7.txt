@@ -1,0 +1,80 @@
+ification variable(s) and confirm by clicking on <strong>Continue</strong>. In the example, the variables <em>u_gender</em> and <em>m_favoritesports</em> are used.</p>
+</li>
+<li>
+<p>All answer categories of the selected stratification variables are listed.</p>
+</li>
+<li>
+<p>Select the answer categories you wish to use for stratification. It is advisable to exclude missing categories such as “no answer”. Confirm by clicking on <strong>Continue</strong>.</p>
+</li>
+<li>
+<p>An overview of the stratification cells with their current proportions will be displayed. The number of surveys completed by the prospective sample members over the past weeks will also be indicated: Thus, you can check in time whether a high percentage of the panelists might be overworked or whether many candidates have not participated in any survey for some time i.e. might be inactive.</p>
+</li>
+<li>
+<p>Enter the target values in absolute numbers or percentages, as required. When expressing target values as percentages, you also have to predefine the absolute total amount to be reached. It should be defined in such a manner that the specific target values can be met based on the number of existing candidates.</p>
+</li>
+<li>
+<p>Click on <strong>Check</strong> to see whether your stratification can be achieved with the current basic set.</p>
+<ul>
+<li>
+<p>Target values or the total number may have to be adjusted. Please bear in mind that the values may diverge due to rounding. In the example above, the total of the values of the individual cells (10) slightly differs from the absolute total number of panelists in this stratification (13).</p>
+</li>
+<li>
+<p>It may also be necessary to modify the basic set and the stratification criteria to reach the target values.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>If the values are valid, this will be indicated by a green success message. In this case, you can complete the process by clicking on <strong>Perform stratification</strong>.</p>
+</li>
+<li>
+<p>On the <strong>Overview</strong> tab, you will now find a “Stratification” section. This section lists the stratification cells, the target values, and the total number. In the course of the sample draw, the following additional data will be displayed:</p>
+<ul>
+<li>
+<p>Number of allocated participants: Number of participants in the sample that are allocated to a particular cell. This is displayed after the sample draw.</p>
+</li>
+<li>
+<p>Completed or screened-out: Number of participants with disposition codes 31, 32, 36, and 37, allocated to a particular cell.</p>
+</li>
+<li>
+<p>Completed or screened-out %: Percentage of participants with disposition codes 31, 32, 36, and 37, allocated to a particular cell.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Defining stratification via import</strong></p>
+<p class="wysiwyg-text-align-justify"><strong>Formatting the import file</strong></p>
+<p class="wysiwyg-text-align-justify">The import file should be formatted as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Format: CSV or Excel format</p>
+</li>
+<li>
+<p>For each master data variable used a corresponding column has to be created; an additional column has to be created for the target values.</p>
+</li>
+<li>
+<p>The first line of the import file must contain the names of the variables and the title of the target value column, “target”.</p>
+</li>
+<li>
+<p>In the following lines of the import file, the target value for each single combination of master data characteristics is specified.</p>
+</li>
+<li>
+<p>If the values entered have decimal places, please use a point as a decimal separator.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Example:</p>
+<p class="wysiwyg-text-align-justify">m_0001;m_0002;target</p>
+<p class="wysiwyg-text-align-justify">1;1;1000</p>
+<p class="wysiwyg-text-align-justify">1;2;1150</p>
+<p class="wysiwyg-text-align-justify">2;1;950</p>
+<p class="wysiwyg-text-align-justify">2;2;1200</p>
+<p class="wysiwyg-text-align-justify">This file describes a stratification employing the variables m_0001 and m_0002. Both variables have the characteristics 1 and 2 each. Each line contains the target value for a combination of the characteristics of these variables. For example, the second line “1;1;1000” specifies that for the combination of m_0001 = 1 and m_0002 = 2, the target value 1000 is to be obtained.</p>
+<p class="wysiwyg-text-align-justify"><strong>Import</strong></p>
+<p class="wysiwyg-text-align-justify">Please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Create a sample as usual, define the basic set, and switch to the Stratification tab.</p>
+</li>
+<li>
+<p>Select one of the stratification methods using import and confirm by clicking on <strong>Continue</strong>.</p>
+</li>
+<li>

@@ -1,0 +1,30 @@
+{
+    "id": 20716341744274,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/20716341744274.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20716341744274-Sessions",
+    "author_id": 369584192734,
+    "comments_disabled": false,
+    "draft": true,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20714711445138,
+    "created_at": "2024-08-12T18:57:51Z",
+    "updated_at": "2024-08-12T18:57:55Z",
+    "name": "Sessions",
+    "title": "Sessions",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-08-12T18:57:55Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075294,
+    "content_tag_ids": [],
+    "label_names": [],
+    "body": "<p><b>Original Confluence URL:</b> <a href=\"https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1059455631\">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1059455631</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>\n\n<h2>Table of Contents</h2>\n<ul class=\"toc\">\n<ul>\n<li><a href=\"#header-1\">Overview</a></li>\n<ul>\n<li><a href=\"#header-3\">Default Session Times</a></li>\n<li><a href=\"#header-4\">Where are Sessions stored in our current Architecture?</a></li>\n</ul>\n</ul>\n</ul><h1 id=\"header-1\"><strong>Overview</strong></h1><p>An general overview of sessions can be found here <ac:link ac:card-appearance=\"inline\"><ri:page ri:content-title=\"Sessions Explained\" ri:version-at-save=\"1\"></ri:page><ac:link-body>Sessions Explained</ac:link-body></ac:link> </p><h2 id=\"header-3\"><strong>Default Session Times</strong></h2><p>(Please note that these are times are configured right now in okta and are not final yet)</p><p><strong>Identity Provider Session</strong> (Okta): 2 hours</p><p><strong>Application Session</strong> (EFS): 1 hour (15 minutes are proposed by <ac:link><ri:user ri:userkey=\"8a7f808669305cd901693311649e0078\"></ri:user></ac:link> )</p><p><strong>Application Session</strong> (Portals): 1 day (1 hour is proposed by <ac:link><ri:user ri:userkey=\"8a7f808669305cd901693311649e0078\"></ri:user></ac:link> )</p><p><strong>External Identity Provider Session</strong>: Not configurable by us, only the client can change that</p><h2 id=\"header-4\"><strong>Where are Sessions stored in our current Architecture?</strong></h2><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716300705554\" alt=\"Session Lifetimes - Schön.png\"><p style=\"text-align: center;\">“Locations” of sessions in the architecture diagram</p><p></p>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "id": 20716831097874,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/20716831097874.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20716831097874-E-Mail-Customization",
+    "author_id": 369584192734,
+    "comments_disabled": false,
+    "draft": true,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20714711445138,
+    "created_at": "2024-08-12T19:45:23Z",
+    "updated_at": "2024-08-12T19:45:25Z",
+    "name": "E-Mail Customization",
+    "title": "E-Mail Customization",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-08-12T19:45:25Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075294,
+    "content_tag_ids": [],
+    "label_names": [],
+    "body": "<p><b>Original Confluence URL:</b> <a href=\"https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1079148558\">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1079148558</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>\n\n<h2>Table of Contents</h2>\n<ul class=\"toc\">\n<ul>\n<li><a href=\"#header-1\">Cases for Okta E-Mails:</a></li>\n<ul>\n<li><a href=\"#header-3\">Redirecting after e-mail action:</a></li>\n</ul>\n</ul>\n</ul><p>Okta offers e-mail templating for different e-mail types. Okta will send e-mails directly to a user in all cases that are related to identity management.</p><p>Currently e-mail notifications cannot be switched off.</p><p></p><h1 id=\"header-1\">Cases for Okta E-Mails:</h1><table data-layout=\"default\">\n<colgroup>\n<col style=\"width: 183.0px;\">\n<col style=\"width: 277.0px;\">\n<col style=\"width: 299.0px;\">\n</colgroup>\n<tbody>\n<tr>\n<th><p><strong>Flow</strong></p></th>\n<th><p><strong>User Action</strong></p></th>\n<th><p><strong>Explanation</strong></p></th>\n</tr>\n<tr>\n<td><p>User Activation</p></td>\n<td><p>User gets an activation link to set a password.</p></td>\n<td><p>An Okta managed user should activate their account. This can happend when a user is create or activated.</p></td>\n</tr>\n<tr>\n<td><p>Forgot Password Denied</p></td>\n<td><p>No Action</p></td>\n<td><p>A user tried to change their password but is not allowed to do that. This can happen in case a user tries to follow the forgot password flow without ever being logged in.</p></td>\n</tr>\n<tr>\n<td><p>Password Reset by Admin</p></td>\n<td><p>User gets an activation link to set a new password</p></td>\n<td><p>Admin triggered resetting a password.</p></td>\n</tr>\n<tr>\n<td><p>Forgot Password</p></td>\n<td><p>User gets an forgot password link to set a new password.</p></td>\n<td><p>A user fogort a password and triggers the forgot password flow. The user has to be allowed to do that - at least logged in onces</p></td>\n</tr>\n<tr>\n<td><p>MFA Factor Enrollment</p></td>\n<td><p>No action</p></td>\n<td>\n<p>A user gets informed that another factor has be configured for their account. This occurs for example if a user adds Google Authenticator as second factor.</p>\n<p><strong>This e-mail could be disabled</strong></p>\n</td>\n</tr>\n<tr>\n<td><p>MFA Factor Reset</p></td>\n<td><p>No action</p></td>\n<td>\n<p>A user gets informed that the multi factor configuration was removed. The user has to provide MFA enrollment again. </p>\n<p><strong>This e-mail could be disabled</strong></p>\n</td>\n</tr>\n<tr>\n<td data-highlight-colour=\"#fff0b3\">\n<p>New Device Notification</p>\n<p>New Sign-On Notification</p>\n</td>\n<td><p>No action</p></td>\n<td>\n<p>It seems this e-mail is related to a new device that performs a login.</p>\n<p><strong>This e-mail could be disabled</strong></p>\n</td>\n</tr>\n<tr>\n<td data-highlight-colour=\"#fff0b3\"><p>Change Email Notification</p></td>\n<td><p>???</p></td>\n<td>\n<p>This might occur if an admin changes an e-mail address. This should be an extremly rare case.</p>\n<p>It might also happen in case e-mails are changed from lower-case to uper-case or the like.</p>\n</td>\n</tr>\n<tr>\n<td data-highlight-colour=\"#ffbdad\"><p>E-Mail Verification</p></td>\n<td><p>X</p></td>\n<td>\n<p>Occurs during MFA via e-mail.</p>\n<p>E-mail MFA is an early access features and not part of our configuration.</p>\n</td>\n</tr>\n<tr>\n<td data-highlight-colour=\"#ffbdad\"><p>E-Mail Challenge</p></td>\n<td><p>X</p></td>\n<td>\n<p>Occurs during MFA via e-mail.</p>\n<p>E-mail MFA is an early access features and not part of our configuration.</p>\n</td>\n</tr>\n</tbody>\n</table><p></p><h2 id=\"header-3\">Redirecting after e-mail action:</h2><p>Some e-mails lead to an action a user has to fulfill on Okta side (activation, reset password). In that cases Okta does not know the context - especially the app - in which the user action happens. Therefore the redirect after the action will lead to a default page.</p><p>This can be changes using a “fromURI” field for the respective link in the e-mail as query parameter. It will have the value of the URL to the page that the user should be redirected after the action is done.</p><p><u>Example:</u></p><pre><code class=\"language-html\">&lt;a href=\"{activationLink}?fromURI=http://google.com\"&gt;Activate your account&lt;/a&gt;</code></pre>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

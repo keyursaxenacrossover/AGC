@@ -1,0 +1,30 @@
+{
+    "id": 20971568408338,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/20971568408338.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20971568408338-Creating-SSH-Public-Key-for-DXI-Service-Gateways",
+    "author_id": 369584192734,
+    "comments_disabled": false,
+    "draft": false,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20389541164690,
+    "created_at": "2024-08-26T10:18:45Z",
+    "updated_at": "2024-11-26T07:34:49Z",
+    "name": "Creating SSH Public Key for DXI Service Gateways",
+    "title": "Creating SSH Public Key for DXI Service Gateways",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-11-26T07:34:49Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075274,
+    "content_tag_ids": [],
+    "label_names": [],
+    "body": "<p data-renderer-start-pos=\"1\"> </p>\n<h1 id=\"h_01J67342053CMCYX79WDQXS43P\" data-renderer-start-pos=\"1\">Instructions</h1>\n<p data-renderer-start-pos=\"109\">To set up access to the service gateways in the AWS environments we need your own <strong data-renderer-mark=\"true\"><u data-renderer-mark=\"true\">public</u></strong> SSH-Key.</p>\n<p data-renderer-start-pos=\"239\">Here is how to generate such an SSH-Key <strong data-renderer-mark=\"true\"><u data-renderer-mark=\"true\">with</u></strong><u data-renderer-mark=\"true\"> </u>a password (min. 10 characters, special characters, etc.) and a comment on a terminal with <strong>ssh-keygen</strong>:</p>\n<div class=\"code-block  cc-15qwbrk\">\n<div class=\"cc-9n57oc\">\n<div class=\"cc-v2tmjh\">\n<ol>\n<li role=\"presentation\">Open your Windows Terminal (or Powershell or Command Prompt) and run the below command (make sure you do not modify the <strong>-t ed25519</strong> parameter):<br><span class=\"prismjs cc-1es5wws\" style=\"background-color: var(--ds--code--bg-color,var(--ds-background-neutral,#f4f5f7)); color: var(--ds-text,#172b4d);\" data-code-lang=\"\" data-ds--code--code-block=\"\" data-testid=\"renderer-code-block\"><code class=\"language-\"><span class=\"\" data-testid=\"renderer-code-block-line-1\" data-ds--code--row=\"\">ssh-keygen -t ed25519 -C <a href=\"mailto:your_email_address@trilogy.com\">your_email_address@trilogy.com</a></span></code></span>\n</li>\n<li role=\"presentation\">The script will prompt you for the file to save to and for a password:<br>\n<pre><code class=\"language-plaintext\">Generating public/private ed25519 key pair.\nEnter file in which to save the key (/home/USER/.ssh/id_ed25519): /home/USER/.ssh/id_ed25519 Enter passphrase (empty for no passphrase):\nEnter same passphrase again:\nYour identification has been saved in /home/USER/.ssh/id_ed25519.\nYour public key has been saved in /home/USER/.ssh/id_ed25519.pub.</code></pre>\n</li>\n<li role=\"presentation\">This will generate two files: <em>id_ed25519</em> and <em>id_ed25519.pub</em> <strong>(the .pub file is the one that is needed)</strong>\n</li>\n<li role=\"presentation\">\n<strong data-renderer-mark=\"true\">Remember</strong>: Set an appropriate Password (min. 10 characters, special characters, etc.)</li>\n<li role=\"presentation\">Once done, rename the file using this format:<br><strong>firstname_lastname_id_ed25519.pub</strong>\n</li>\n<li role=\"presentation\">Upload the file into the <a href=\"https://drive.google.com/drive/folders/1T0-EZQ_WrzHMZzEhc-3q3wDHgobwE3Fo\">Tivian DXI public SSH keys - Google Drive</a> folder</li>\n<li role=\"presentation\">Create a CR in the <strong>DXI JIRA project</strong>, requesting the access; you can use this as an example: <a href=\"https://trilogy-eng.atlassian.net/browse/DXI-1594\">https://trilogy-eng.atlassian.net/browse/DXI-1594</a> </li>\n<li role=\"presentation\">\n<p>Once granted access, your username on the Service Gateway will be in the format <strong>lastname_firstname</strong></p>\n</li>\n</ol>\n</div>\n</div>\n</div>\n<p data-renderer-start-pos=\"1280\">Once your account has been set up, you can find info on how to access the Service Gateways here: <a href=\"https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21139518716562\" target=\"_blank\" rel=\"noopener noreferrer\">How to Access and Work with DXI Service Gateways</a>.</p>\n<p><a href=\"https://support.hostway.com/hc/en-us/articles/115001509884-How-To-Use-SSH-Keys-on-Windows-Clients-with-PuTTY\">How To Use SSH Keys on Windows Clients (with PuTTY) – Hostway Help Center</a> is a very useful resource that details Windows PuTTY usage.</p>\n<p>For Windows users, if you do not have ssh installed, follow this:</p>\n<ul>\n<li>\n<strong>Install OpenSSH</strong>: Windows 10 and later versions include the OpenSSH client by default, but it might not be installed. To check if it's installed, run ssh in your command prompt. If it isn't installed, follow these steps:</li>\n<li>Go to <strong>Settings</strong> &gt; <strong>Apps</strong> &gt; <strong>Optional Features</strong>.</li>\n<li>Look for \"OpenSSH Client\" and \"OpenSSH Server\". If they aren't installed, click <strong>Add a feature</strong> and search for them. Install \"OpenSSH Client\".</li>\n<li>\n<strong>Use PowerShell</strong>: Open <strong>PowerShell</strong> instead of the regular Command Prompt and try running the ssh-keygen command again.</li>\n<li>\n<strong>Use Windows Subsys</strong><strong>tem for Linux (WSL)</strong>: If you have WSL installed, you can use a Linux environment to run ssh-keygen. Install WSL if you haven’t, and then run wsl in your command prompt to switch to the Linux environment.</li>\n</ul>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

@@ -1,0 +1,43 @@
+>
+<p data-renderer-start-pos="7209">Create a new survey project of the type <em data-renderer-mark="true">Master data survey</em> in the <em data-renderer-mark="true">EFS Projects</em> module. If you need help creating a survey project, you can find helpful tips in our step-by-step guide "<a class="cc-1rn59kg" title="https://qbdocs.atlassian.net/wiki/spaces/DOC/pages/3973087233/How-to+My+First+Survey" href="https://qbdocs.atlassian.net/wiki/spaces/DOC/pages/3973087233/How-to+My+First+Survey" data-testid="link-with-safety" data-renderer-mark="true">How-to: My first survey</a>" and a comprehensive description of the <em>Projects</em> module in our online documentation.</p>
+</li>
+<li>
+<p data-renderer-start-pos="7505">Open the project you have just created and then select<strong data-renderer-mark="true"> Questionnaire Editor</strong> from the menu on the left-hand side.</p>
+</li>
+<li>
+<p data-renderer-start-pos="7621">First create a new page by clicking on <strong data-renderer-mark="true">+ Page</strong>. Then click on the new page.</p>
+</li>
+<li>
+<p data-renderer-start-pos="7699">Create a new question on the page by clicking on <strong data-renderer-mark="true">+ New question</strong>. For our example, we select the question type <em data-renderer-mark="true">111 Single response list (vertical)</em>.</p>
+</li>
+<li>
+<p class="wysiwyg-text-align-left" data-renderer-start-pos="7849">Enter the question text below and the corresponding answer options.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21018302899730"></p>
+</li>
+</ul>
+<div class="rich-media-item mediaSingleView-content-wrap image-center cc-620sbf wysiwyg-text-align-justify" data-layout="center" data-width="760" data-width-type="pixel" data-node-type="mediaSingle" data-renderer-start-pos="7920">
+<div class="cc-1f8696i">
+<div data-context-id="4080566313" data-type="file" data-node-type="media" data-width="1701" data-height="842" data-id="7751483f-7370-4168-8ded-b9dc7d82d5c4" data-collection="contentId-4080566313" data-file-name="file" data-file-size="1" data-file-mime-type="" data-alt="image-20240201-085531.png" data-renderer-start-pos="7921"> </div>
+</div>
+</div>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="7923">Your new master data survey now contains a question in which participants can indicate whether or not they own a car. The associated survey variable therefore contains two values – "Yes" and "No". These match the values of the master data variable "md_car" created in the previous step.</p>
+<h3 id="Allocating-Master-Data" class="wysiwyg-text-align-justify" data-renderer-start-pos="8211"><strong data-renderer-mark="true">Allocating Master Data</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="8235">We would now like to assign our master data record "md_car" to the question we have just created. In that way, the answers participants give to the question are saved in the master data record. To do this, proceed as follows:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="8464">Open the survey menu and click on the link <strong data-renderer-mark="true">Master data allocation</strong>.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21018333458962"></p>
+</li>
+<li>
+<p data-renderer-start-pos="8464">The question that we have created for our master data survey is now displayed in the overview of master data allocations.</p>
+</li>
+<li>
+<p class="wysiwyg-text-align-left" data-renderer-start-pos="8464">Click on the pencil icon on the far right of the row.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21018302896658"></p>
+</li>
+<li>
+<p data-renderer-start-pos="8464">From the <strong data-renderer-mark="true">Allocation to master data variable</strong> drop-down menu on the far right, select the master data record “md_car:Car owner”.</p>
+</li>
+<li>
+<p class="wysiwyg-text-align-left" data-renderer-start-pos="8464">Click on <strong data-renderer-mark="true">Save</strong>.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21018302897554"></p>
+</li>
+<li>
+<p data-renderer-start-pos="8464">The green paperclip symbol indicates that the master data record has been correctly assigned to the question and that the values of the survey variables and of the master data record match.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21018302901522"></p>
+</li

@@ -1,0 +1,55 @@
+ way that root units are available without the values of the subunits. In the third step of ordering the report, determining the general filter conditions, you also use the <em>Direct reports</em> filter to apply it to all root nodes of the selected report definition.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998351025426" alt="Direct reports.png"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998358487314" alt="Direct reports 2.png"></p>
+<h3 id="header-30">The Overview sub-navigation</h3>
+<p>The new <strong>Overview</strong> sub-navigation has been set up in the configuration area of the <em>Report Manager</em>. You mainly use the overview to centrally control the copying of elements of an available Report definition. In this way, you use slide switches to specify whether mappings, page conditions, dataspace entities, collections, and settings are to be copied from all Report definitions.</p>
+<p>As soon as you click on the <strong>Copy</strong> button, the Inspector opens and lists the Report definitions created on the installation, from which you can copy mapping, page conditions, Dataspace entities, Collections and settings.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998364620434" alt="Overview.png"></p>
+<p> </p>
+<p>Of course it is worth knowing in this context: Collections and Dataspace entities are only added to the target project as long as metanames are not identical. In the case of identical metanames, DSEs and Collections are replaced by those of the Report definition to be copied. The settings are also taken from the Report definition to be copied and replaced, as are the mappings.</p>
+<h3 id="header-31">NPS: new standard calculation class</h3>
+<p>The <em>Report Manager</em> now has a new standard calculation class: the Net Promoter Score. You use this calculation class for mappings. However, you must note that the values are shifted by +1, because the IDs of the response options start at 1 and not at zero. So the scale is from 1 to 11 instead of 0 to 10.</p>
+<h3 id="header-32">Language selection</h3>
+<p>You specify the language of the report to be ordered in the last step of the report ordering process, the Report Order. The language selected here has priority over the language selected in the global settings.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998304433170" alt="Report Order.png"></p>
+<h2 id="header-34">Text Analytics</h2>
+<p>As many of our customers know, getting qualitative insights from their employees, customers and research panelists is extremely valuable. But sometimes the volumes of this data can be overwhelming to analyze and action. Whilst TIVIAN has been able to offer text analytics capabilities for some time to help our customers make sense of the large volumes of free text comments they capture as part of their feedback programmes, in our fall release we have looked to further extend our offering.</p>
+<p>We are now able to offer the services of the world’s leading text analytics providers with our new integrated APIs. In addition, we are releasing the first of our pre-built triggers which provide you with self-service access to some of the most commonly used text analytics services within your own surveys, without the need for paid consultancy services from TIVIAN.</p>
+<p>In summary, with our fall release we include:</p>
+<ul>
+<li>
+<p>Integrated APIs that connect to leading text analytics functions that can be used by our professional services teams to build out bespoke text analytics offerings for our customers.</p>
+</li>
+<li>
+<p>Two custom text analytics triggers for do-it-yourself projects</p>
+</li>
+</ul>
+<p>If you are interested in our text analytics offering, please contact us for further information.</p>
+<h3 id="header-36">APIs for the text analysis</h3>
+<p>TIVIAN’s integrated APIs provide access to the commercial Text Analytics offerings of Microsoft, Google and Amazon, and in addition, the Natural Language Toolkit (an open source scientific collection of text analytic functions). Through these APIs we provide our customers with the freedom to choose their preferred Text Analytics provider, and these services can be incorporated into the services/solutions we deliver to our customers.</p>
+<p>Below is a list of the different Text Analytics APIs our customers will now have access to:</p>
+<ul>
+<li>
+<p>Sentiment Analysis</p>
+</li>
+<li>
+<p>Key Phrase Extraction</p>
+</li>
+<li>
+<p>Entity extraction</p>
+</li>
+<li>
+<p>Entity Sentiment</p>
+</li>
+<li>
+<p>Language detection</p>
+</li>
+<li>
+<p>Categorization (trainable, project based)</p>
+</li>
+<li>
+<p>Custom Natural Language Toolkit Models</p>
+</li>
+</ul>
+<h3 id="header-37">Text analysis triggers</h3>
+<p>With our fall release we introduce two custom triggers that can be activated by support for each customer with their own EFS installation. These triggers use Microsoft Azure Cognitive Services APIs and provide support for a wide range of languages (<a href="https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/language-support">https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/language-support</a>).</p>
+<p>Once activated by our support teams, our customers can use these triggers within

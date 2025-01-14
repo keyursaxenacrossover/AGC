@@ -1,0 +1,169 @@
+Get winners by prize draw id</p>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[
+  {
+    "grid": 1234,
+    "prid": 1234,
+    "uid": 1234,
+    "status": "Example",
+    "u_firstname": "Example",
+    "u_name": "Example",
+    "u_email": "example@domain.tld",
+    "pricetitle": "Example"
+  }
+]</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>id</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>Lottery id <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="header-148">Master data</h2>
+<div class="expand-macro">
+<h4 id="h_01J441N79GMCWXJ307BHFKKVD5"> </h4>
+<h3 id="header-150">GET /panel/masterdata/</h3>
+<p>returns the panel's master data variables along with their predefined answer codes</p>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[
+  {
+    "varname": "m_0000",
+    "label": "Country",
+    "type": "int",
+    "typeGroup": "numeric",
+    "recoded": false,
+    "categories": [
+      {
+        "code": 3,
+        "label": "USA"
+      },
+      {
+        "code": 2,
+        "label": "United Kingdom"
+      },
+      {
+        "code": 1,
+        "label": "Germany"
+      },
+      {
+        "code": 0,
+        "label": "Please select"
+      }
+    ]
+  },
+  {...}
+]</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79GRZ1ZMK6RWACSG11B"> </h4>
+<h3 id="header-151">POST /panel/masterdata/</h3>
+<p>add masterdata variable</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "name": "m_9988",
+  "label": "m_9988 Label",
+  "type": "tinyint",
+  "category": 1,
+  "optional": true
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">"m_9988"</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79GY74AV4PVP8M9CEW8"> </h4>
+<h3 id="header-152">GET /panel/masterdata/{modificationDate}/list</h3>
+<p>returns the panel's master data variables along with their predefined answer codes, which were modified after <code>modificationDate</code>.</p>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[
+  {
+    "varname": "m_9988",
+    "label": "Example",
+    "type": "smallint",
+    "typeGroup": "Example",
+    "recoded": true,
+    "categories": [
+      {
+        "code": 1234,
+        "label": "Example",
+        "isMissing": true
+      }
+    ]
+  }
+]</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>modificationDate</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>variables with modification date newer than given parameter will be respected (timestamp) <strong>Examples:</strong> <code>1599147158</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="header-154">Panelists</h2>
+<div class="expand-macro">
+<h4 id="h_01J441N79GZC7P4J20CT2C12CC"> </h4>
+<h3 id="header-156">DELETE /panel/

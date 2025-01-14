@@ -1,0 +1,49 @@
+ id="checking-initialization-status" class="wysiwyg-text-align-justify">Checking initialization status</h3>
+<p class="wysiwyg-text-align-justify">You can check the initialization status by calling <em>isInitialized</em>, though it is generally recommended to do your api operations in the <em>then</em>-handler of the <em>initialize</em> method as shown above.</p>
+<pre><code class="language-js">Questback.portalsApi.isInitialized();</code></pre>
+<h3 id="unregister" class="wysiwyg-text-align-justify">Unregister</h3>
+<p class="wysiwyg-text-align-justify">You can completely revert the registration of the iFrame and unregister all its handlers by calling <em>unregister</em>.</p>
+<pre><code class="language-text">Questback.portalsApi.unregister();</code></pre>
+<p class="wysiwyg-text-align-justify"> </p>
+<hr>
+<h2 id="using-the-portals-message-bus" class="wysiwyg-text-align-justify">Using the Portals message bus</h2>
+<p class="wysiwyg-text-align-justify">The message bus is intended for communication between extension module iFrames. You can send and listen to your own events and transfer any data you want.</p>
+<h3 id="listening-for-messages" class="wysiwyg-text-align-justify">Listening for messages</h3>
+<p class="wysiwyg-text-align-justify">After the initialization has been completed you can start to register handlers for events from other iFrames. The example code registers a handler for an event called "myEvent". This is an event name that you expect other iFrames to send messages for.</p>
+<pre><code class="language-js">Questback.portalsApi.initialize().then(function() {
+    Questback.portalsApi.bus.subscribe('myEvent', function(data) {
+        ...
+    });
+};</code></pre>
+<h3 id="sending-messages" class="wysiwyg-text-align-justify">Sending messages</h3>
+<p class="wysiwyg-text-align-justify">Sending a message to other iFrames is just as simple. You just call the <em>send</em> method with an eventname that you chose and a data object as second parameter.</p>
+<pre><code class="language-js">Questback.portalsApi.bus.send('myEvent', { foo : "bar"});</code></pre>
+<p class="wysiwyg-text-align-justify">Just note that you do not get a result back from this call, as it works like a broadcast. Also note that by default the sending iFrame will not receive its own event back, even if it has registered a handler for it. You can supply a third parameter to <em>send</em> with a value of <em>true</em> to force sending the event to the sender iFrame, too.</p>
+<h3 id="stop-listening-for-messages" class="wysiwyg-text-align-justify">Stop listening for messages</h3>
+<p class="wysiwyg-text-align-justify">You can remove handlers for events by an eventname.</p>
+<pre><code class="language-text">Questback.portalsApi.bus.unsubscribe('myEvent');</code></pre>
+<p class="wysiwyg-text-align-justify">Note that this removes all handlers for the given eventname for this iFrame at once.</p>
+<hr>
+<h2 id="querying-data-from-portals" class="wysiwyg-text-align-justify">Querying data from Portals</h2>
+<p class="wysiwyg-text-align-justify">The api supplies a set of methods to request specific data from Portals.</p>
+<h3 id="query-portalinfo" class="wysiwyg-text-align-justify">query.portalInfo</h3>
+<p class="wysiwyg-text-align-justify">Get information about the portal.</p>
+<pre><code class="language-js">Questback.portalsApi.query.portalInfo().then(function(result) {
+    console.log(result.portal.id);
+});</code></pre>
+<h3 id="query-user" class="wysiwyg-text-align-justify">query.user</h3>
+<p class="wysiwyg-text-align-justify">Get the user object of the currently logged in user. Returns null if there is no logged in user.</p>
+<pre><code class="language-js">Questback.portalsApi.query.user().then(function(result) {
+    console.log(result.user);
+});</code></pre>
+<h3 id="query-language" class="wysiwyg-text-align-justify">query.language</h3>
+<p class="wysiwyg-text-align-justify">Get the language object of the currently used language.</p>
+<pre><code class="language-js">Questback.portalsApi.query.language().then(function(result) {
+    console.log(result.language);
+});</code></pre>
+<h3 id="query-token" class="wysiwyg-text-align-justify">query.token</h3>
+<p class="wysiwyg-text-align-justify">Returns the Portals Api token, which can be used in external software to additionally validate the user via EFS web service.</p>
+<pre><code class="language-text">Questback.portalsApi.query.token().then(function(result) {
+    console.log(result.token);
+});</code></pre>
+<p class="wysiwyg-text-align-justify">If the user is logged in, the <em>token</em> field will contain the users api token, which you can validate by calling the following EFS web service. Otherwise

@@ -1,0 +1,232 @@
+Flash multiple selection</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>641</p>
+</td>
+<td>
+<p>Flash Text</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>661</p>
+</td>
+<td>
+<p>Flash Matrix</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>911</p>
+</td>
+<td>
+<p><font>Custom</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>912</p>
+</td>
+<td>
+<p><font>Custom (?)</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>921</p>
+</td>
+<td>
+<p><font>Reference question</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>998</p>
+</td>
+<td>
+<p>HTML-Code</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>999</p>
+</td>
+<td>
+<p><font>Picture</font></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p id="h_01J7E85NKCFM0JMACYX0GNF0KV"> </p>
+<h2 id="header-8">Panelstatus:</h2>
+<ul>
+<li>
+<p><font>Table: panel_att</font></p>
+</li>
+<li>
+<p><font>Column: pstatus</font></p>
+</li>
+</ul>
+<table data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<th>
+<p><u>Status</u></p>
+</th>
+<th>
+<p><u> <font>Meaning</font> </u></p>
+</th>
+</tr>
+<tr>
+<td>
+<p><strong>1</strong></p>
+</td>
+<td>
+<p><strong>Admitted temporarily</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>2</strong></p>
+</td>
+<td>
+<p><strong>Active</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>3</p>
+</td>
+<td>
+<p>Active (Custom)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>4</strong></p>
+</td>
+<td>
+<p><strong>Inactive</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>5</p>
+</td>
+<td>
+<p>Inactive (custom)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>6</p>
+</td>
+<td>
+<p>Custom status 1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>7</p>
+</td>
+<td>
+<p>Custom status 2</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>8</strong></p>
+</td>
+<td>
+<p><strong>DELETED</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>9</p>
+</td>
+<td>
+<p>Custom status 3</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>10</p>
+</td>
+<td>
+<p>Custom status 4</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>11</p>
+</td>
+<td>
+<p>Custom status 5</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>12</p>
+</td>
+<td>
+<p>Custom status 6</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>13</p>
+</td>
+<td>
+<p>Custom status 7</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>14</p>
+</td>
+<td>
+<p>Custom status 8</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>15</p>
+</td>
+<td>
+<p>Custom status</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>16</strong></p>
+</td>
+<td>
+<p><strong>Tester</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>32</strong></p>
+</td>
+<td>
+<p><strong>Moderator</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<h2 id="header-9"><font>Panel Entry Mode (pinput)</font></h2>
+<ul>
+<li>
+<p><font>Table: panel_att</font></p>
+</li>
+<li>
+<p><font>Column: pinput</font></p>
+</li>
+</ul>
+<p><font> Entry mode. Describes the type of registration. It is automatically assigned by the system. There are the following entry modes: </font> <br><font>1 ==&gt; other event </font> <br><font>2 ==&gt; data import </font> <br><font>4 ==&gt; moderator entry </font> <br><font>8 ==&gt; self-recruited </font> <br><font>16 ==&gt; referral </font> <br><font>32 ==&gt; test </font> <br><font>64 ==&gt; INVITED </font> <br><font>127 ==&gt; SELF_REGISTERED</font></p>
+<p><font> Please note: The entry mode is not to be confused with the entry paths, which are stored in the variable "reg_code

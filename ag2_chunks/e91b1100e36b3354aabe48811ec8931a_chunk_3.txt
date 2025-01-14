@@ -1,0 +1,44 @@
+ the setup, please proceed as follows:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>On the desired page, create a page module of the “Profile search” type.</li>
+<li>Select the “func_profile_search” module template.</li>
+<li>Configure the setting options as required. Make sure that the correct form has been selected.</li>
+</ol>
+<h3 id="allowing-the-panelists-to-edit-their-own-profile-settings" class="wysiwyg-text-align-justify"><strong>Allowing the Panelists to Edit their Profile Settings</strong></h3>
+<p class="wysiwyg-text-align-justify">As already mentioned above, the careful handling of private data is fundamental for establishing trust in an online community. Therefore, many online communities allow their members to edit their profiles via a dedicated form and to decide for themselves which of their data should be visible. At the start of the membership, all data are usually set to “not visible”. The new members can then decide for themselves whether they want to release any personal data and, if so, which data. With EFS Panel it only takes you a few clicks to set up such a “Profile settings” form.</p>
+<p class="wysiwyg-text-align-justify"><strong>Example - A panelist configures her profile:</strong></p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015359127058" alt="image2024-1-15_11-15-45.png"></p>
+<p class="wysiwyg-text-align-justify"><strong>Work steps</strong></p>
+<p class="wysiwyg-text-align-justify">Please proceed as follows:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>On the desired page, create a page module of the “Profile options” type.</li>
+<li>Select the “func_profile_settings” module template.</li>
+<li>Configure the setting options as required. Table 19.31 provides an overview. In particular in the field “The following profile options will be shown to panelists” all those data should be activated whose visibility is specified by the panelists themselves.</li>
+<li>Check again whether settings for the visibility of profile data, in particular the default settings for new panelists, which have been made elsewhere match the new form.</li>
+</ol>
+<h3 id="configuring-the-picture-upload-for-panelist-profiles" class="wysiwyg-text-align-justify"><strong>Configuring the Picture Upload for Panelist Profiles</strong></h3>
+<p class="wysiwyg-text-align-justify">Community members like to decorate their profiles with images. By setting up a dedicated upload form, you can allow your panelists to upload two profile images.</p>
+<p class="wysiwyg-text-align-justify"><strong>Example - A panelist opens the upload form:</strong></p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015312021138" alt="image2024-1-15_9-24-4.png"></p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify"><strong>The uploaded profile image in the upload form:</strong></p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015359133586" alt="image2024-1-12_9-36-45.png"></p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify">Occasionally, the moderator may have to remove a panelist’s profile image, e.g. because it violates copyright or other laws. In such a case, log in using the panelist’s account and password and remove the image.</p>
+<p class="wysiwyg-text-align-justify"><strong>Work steps</strong></p>
+<p class="wysiwyg-text-align-justify">If you want to allow your panelists to upload profile images, please proceed as follows:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>On the desired page, create a page module of the “Picture upload for panelist profile” type.</li>
+<li>Select the “func_profile_pictures” module template.</li>
+<li>Configure the setting options as required.</li>
+<li>If you want to leave it to the panelists whether to display the profile images or not, activate the profile options “Picture 1” and/or “Picture 2” in the profile settings form.</li>
+<li>Check again whether settings for the visibility of profile data, in particular, the default settings for new panelists, which have been made elsewhere are compatible.</li>
+<li>
+<p>Check whether the images in the panelist profiles are displayed the way you want them to be. You may have to adjust the template (module template “func_profile_search”).</p>
+</li>
+<li>
+<p>Check whether the thumbnail size of the profile images fits your panel. You can change the thumbnail size on the <strong>Detail configuration</strong> tab in the <strong>Website → {Selected language version}</strong> menu.</p>
+</li>
+</ol>
+<h2 id="display-of-active-panelists" class="wysiwyg-text-align-justify"><strong>Display of Active Panelists</strong></h2>
+<p class="wysiwyg-text-align-

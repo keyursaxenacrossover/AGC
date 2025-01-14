@@ -1,0 +1,51 @@
+ panelists. If you can trust that the panelists have cookies activated, you can drop the session ID. But if you want to allow the jump with cookies switched off, the session ID must be transferred.</p>
+</li>
+</ul>
+<h3 id="Transferring-Data-from-the-Primary-to-the-secondary-Project-and-storing-these-Data-in-URL-Parameter" class="wysiwyg-text-align-justify" data-renderer-start-pos="14740"><strong data-renderer-mark="true">Transferring Data from the Primary to the Secondary Project and storing these Data in URL Parameter</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="14841">The return jump from the secondary to the primary project is a very different situation than the forward jump: The participant is not taken to the start page of a new project but resumes an already started project. Therefore, unlike in the case of the forward jump, the data transfer cannot be done using URL parameters: These can only be processed on the first page of a project. Instead, the data are transferred to user-defined variables (c variables).</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="15298">The following steps are required:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="15335">In the Project properties menu of the primary project, you create the required user-defined variables. When doing so make sure that the file type matches the values to be transferred.</p>
+</li>
+<li>
+<p data-renderer-start-pos="15522">After that, you enter the destination URL for the return jump in the secondary project. It looks as follows: http://www.efs-survey.de/xyz/ospe.php3</p>
+</li>
+<li>
+<p data-renderer-start-pos="15673">To this URL you have to add</p>
+<ul class="ak-ul" data-indent-level="2">
+<li>
+<p data-renderer-start-pos="15704">the appropriate user-defined variable of the primary project. In our example, this is “c_0001".</p>
+</li>
+<li>
+<p data-renderer-start-pos="15803">the value of the variable. This can be a constant value or also a participant-specific value dynamically inserted via wildcard. In our example, this is the participant variable “u_group”.</p>
+</li>
+</ul>
+</li>
+<li>
+<p data-renderer-start-pos="15997">The destination URL would then be, for example: http://www.efs-survey.de/xyz/ospe.php3?c_0001=#u_group#</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="16104">Besides the project folder and “return_tic”, the example URL contains a GET parameter “c_0001” with the value “11”.</p>
+<h2 id="Linking-More-Than-Two-Projects" class="wysiwyg-text-align-justify" data-renderer-start-pos="16217"><strong data-renderer-mark="true">Linking More Than Two Projects</strong></h2>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="16249">It is possible to link more than two projects via external survey start. The following combinations are possible, for example:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="16379">1. project → 2. project → 3. project → 2. project → 1. project</p>
+</li>
+<li>
+<p data-renderer-start-pos="16445">1. project → 2. project → 1. project → 3. project → 1. project.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="16512">Please note that the participants always have to be redirected back along the same path they came. This is necessary as the “tic” parameters can only be used to transfer those data regarding session, jump page etc. of the previous project that are available in the current project.</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="16797">The path 1. project-&gt;2. project-&gt;3. project-&gt;2. project-&gt;1. project is possible.</p>
+</li>
+<li>
+<p data-renderer-start-pos="16881">The path 1. project-&gt;2. project-&gt;3. project-&gt;1. project-&gt;2. project is not possible.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="16969">When redirecting from the second to a third project the options “Add return ticket” and “Add ospe.php3” have to be disabled. They are used for returning primary-project relevant information back to the primary project. They cannot be used to relay secondary-project relevant information to another project.</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="17277">When analysing the data, please mind that the variable “external_lfdn” contains the “lfdn” of the primary project in all following projects.</p>
+<h2 id="Special-Considerations-when-using-External-

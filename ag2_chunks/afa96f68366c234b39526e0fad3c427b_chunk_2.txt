@@ -1,0 +1,50 @@
+HGKSMPRUFBJ8XQJXF1QXCWN3G" class="wysiwyg-text-align-justify">Exporting Return Statistics</h3>
+<p class="wysiwyg-text-align-justify">To download the return rates of one or several waves:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>Go to the menu Participant administration → Waves</li>
+<li>Mark the desired wave(s)</li>
+<li>Select "Export return rate" in the drop-down list</li>
+<li>Click on Execute</li>
+</ol>
+<h3 id="h_01HGKSMPRUJBJ8XQJXF1QXCWN4H" class="wysiwyg-text-align-justify">Exporting Results</h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="5773">In addition to the usual EFS result exports, two dedicated MSF-specific result exports are available.</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="5878">MSF participant export with result data:</p>
+<ul class="ak-ul" data-indent-level="2">
+<li>
+<p data-renderer-start-pos="5922">The familiar EFS Survey result data, the feedback identifier (u_link_id), all master data and some selected process data.</p>
+</li>
+<li>
+<p data-renderer-start-pos="6047">Requires read rights to “loft_export_combined”.</p>
+</li>
+</ul>
+</li>
+<li>
+<p data-renderer-start-pos="6100">MSF export with anonymous result data:</p>
+<ul class="ak-ul" data-indent-level="2">
+<li>
+<p data-renderer-start-pos="6142">The familiar EFS Survey result data, the feedback identifier (u_link_id), and merely the process data feedback role (role) and wave (u_group).</p>
+</li>
+<li>
+<p data-renderer-start-pos="6288">Requires read rights to “loft_export_anonym”.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="h_01HGKSMPRTMJ8XQJXF1QXCWN7A" class="wysiwyg-text-align-justify">Access Control for Multi-Source Feedback</h2>
+<p class="wysiwyg-text-align-justify">The following table lists all MSF-specific ACL rights:</p>
+<table class="wysiwyg-text-align-justify" style="border-collapse: collapse; table-layout: fixed; font-size: 16px; height: 1211px; color: #172b4d; font-family: -apple-system, BlinkMacSystemFont, ' Segoe UI', Roboto, Oxygen, Ubuntu, ' Fira Sans', ' Droid Sans', ' Helvetica Neue', sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-transform: none; widows: 2; word-spacing: 0px; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; width: 832px;" border="1" data-testid="renderer-table" data-number-column="false" data-table-width="760" data-layout="default">
+<colgroup style="box-sizing: border-box;">
+<col style="box-sizing: border-box; width: 252px;">
+<col style="box-sizing: border-box; width: 256px;">
+<col style="box-sizing: border-box; width: 248px;">
+</colgroup>
+<tbody style="border-bottom: none; box-sizing: border-box;">
+<tr style="box-sizing: border-box; height: 47.9062px;">
+<th class="ak-renderer-tableHeader-sortable-column__wrapper wysiwyg-text-align-center" style="border-right-width: 0px; border-bottom-width: 0px; padding: 0px; vertical-align: top; box-sizing: border-box; min-width: 48px; font-weight: 400; background-color: var(--ds-background-accent-gray-subtlest,#f4f5f7); position: relative; width: 276.962px;" colspan="1" rowspan="1" data-colwidth="253" aria-sort="none">
+<div class="ak-renderer-tableHeader-sortable-column" style="margin: 0px; padding: 8px; box-sizing: border-box; border: 1.5px solid rgba(0, 0, 0, 0); width: 251.32px; height: 46.4062px;">
+<p style="margin: 0px; padding: 0px; letter-spacing: -0.005em; font-size: 1em; font-weight: 400; line-height: 1.714; box-sizing: border-box;" data-renderer-start-pos="6543"><strong style="box-sizing: border-box;" data-renderer-mark="true">Right</strong></p>
+<figure class="ak-renderer-tableHeader-sorting-icon__wrapper ak-renderer-tableHeader-sorting-icon__no-order" style="display: block; box-sizing: border-box; margin: 0px;">
+<div style="margin: 0px; padding: 0px; box-sizing: border-box;" role="presentation">
+<div class="ak-renderer-tableHeader-sorting-icon  cc-1eczmg9" style="margin: var(--ds-space-075

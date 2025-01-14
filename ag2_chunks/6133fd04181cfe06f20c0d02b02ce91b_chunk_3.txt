@@ -1,0 +1,52 @@
+="true">Checking the statistics and the export data record</strong></p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="5218">The statistics and the export data record of both primary and secondary project should be showing you the values from your test run. The consecutive number of the respondents (“lfdn”) is automatically transferred to the secondary project via “tic”. You should be able to locate the “lfdn” of a data record in the primary project in the column labeled “external_lfdn” of the secondary project’s matching data record.</p>
+<h2 id="Data-Transfer-in-Detail" class="wysiwyg-text-align-justify" data-renderer-start-pos="5635"><strong data-renderer-mark="true">Data Transfer in Detail</strong></h2>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="5660">During the external survey start information on the participants is transferred from one survey to the other by adding it to the URL as a GET parameter. Basically, this is done in one of the following ways:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="5870">Identifying participants</p>
+</li>
+<li>
+<p data-renderer-start-pos="5898">Authenticating participants in secondary projects with a limited participant pool</p>
+</li>
+<li>
+<p data-renderer-start-pos="5981">Transferring any data via GET parameters (via URL parameters when jumping forward, via user-defined variables when jumping back)</p>
+</li>
+</ul>
+<h3 id="Identifying-Participants-and-Matching-Data-Records" class="wysiwyg-text-align-justify" data-renderer-start-pos="6113"><strong data-renderer-mark="true">Identifying Participants and Matching Data Records</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="6165">If you select the default settings (option “Add ticket” activated, option “Add ticket for target EFS project &lt; 5.2” deactivated), the external survey start will be executed automatically based on pre-configured tickets.</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="6388">Parameter “tic” is transferred at the jump from the primary to the secondary survey, “return_tic” is transferred at the return jump to the primary project.</p>
+</li>
+<li>
+<p data-renderer-start-pos="6547">The parameters ensure that the participants can be identified at the return jump and that they resume the primary project at the correct location.</p>
+</li>
+<li>
+<p data-renderer-start-pos="6697">If the jump connects two <em data-renderer-mark="true">EFS </em>projects, the tickets ensure that you can match the data records. For this purpose, the consecutive number of respondents in the primary project is transferred automatically into the variable “external_lfdn” of the secondary project.</p>
+</li>
+<li>
+<p data-renderer-start-pos="6967">If you are using external software and wish to match the data records later, Instead, you have to transfer “tic”, “lfdn” or another value that might serve to identify the participants via GET parameter.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="7174"><em data-renderer-mark="true">EFS</em> allows to customize the external survey start according to special requirements:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="7262">Both of the “tic” parameters can be renamed. This can be necessary when you are using external software that requires parameters with different names.</p>
+</li>
+<li>
+<p data-renderer-start-pos="7416">You can decide for yourself whether you want to use “tic” and “return_tic” at all. If no ticket is added, only the URL (optionally with attached parameters) will be transferred when jumping to the secondary survey. This has the following consequences:</p>
+<ul class="ak-ul" data-indent-level="2">
+<li>
+<p data-renderer-start-pos="7671">It will no longer be possible to jump back to the primary survey.</p>
+</li>
+<li>
+<p data-renderer-start-pos="7740">It will no longer be possible without further effort to merge the data from the primary and secondary surveys and match the records of individual participants from both surveys. If you wish to match the data from the primary and secondary surveys without using the tickets, a suitable parameter must be transferred instead of the tickets. For example, you can attach the consecutive number by adding the string ?a=#lfdn# to the destination URL.</p>
+</li>
+<li>
+<p data-renderer-start-pos="8188">If you do not want to use the tickets, untick the “Add ticket” checkbox on the<strong data-renderer-mark="true"> Page Properties</strong> tab. By default, this checkbox is ticked.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="8330">In addition to the default tickets described above, older tickets, the so-called “plain text tickets”, are still kept alive until EFS 8.1. They should be used if the secondary project is located on an <

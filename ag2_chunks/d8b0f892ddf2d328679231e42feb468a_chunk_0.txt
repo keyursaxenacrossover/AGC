@@ -1,0 +1,52 @@
+<p><strong>Original Confluence URL:</strong> <a href="https://qbdocs.atlassian.net/wiki/spaces/1LS/pages/3166666758/Restore+data+for+customers">https://qbdocs.atlassian.net/wiki/spaces/1LS/pages/3166666758/Restore+data+for+customers</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+<article>
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K">Overview</h1>
+<p>This article provides a comprehensive guide on how to restore data for customers using the EFS (Enterprise Feedback Suite) system. It covers the general conditions, required information, step-by-step process, and definitions of standard restores.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>This guide focuses on the process of restoring lost or deleted data for customers using the EFS system. It outlines the necessary steps, responsibilities, and considerations for both support teams and customers.</p>
+<ul>
+<ul>
+<li><a href="#general_conditions">General Conditions</a></li>
+<li><a href="#required_information">Required Information</a></li>
+<li><a href="#process_steps">Process Steps</a></li>
+<li><a href="#standard_restores">Standard Restores</a></li>
+<li><a href="#information_checklist">Information Checklist</a></li>
+</ul>
+</ul>
+<br>
+<h2 id="general_conditions">General Conditions</h2>
+<p>Before proceeding with data restoration, it's important to consider the following:</p>
+<ul>
+<li>Data analysis and recovery may incur costs, including:
+<ul>
+<li>Setting up a mirror EFS instance (<span style="color: #2f3941; font-family: system-ui, -apple-system, ' system-ui' , ' Segoe UI' , Roboto, Oxygen-Sans, Ubuntu, Cantarell, ' Helvetica Neue' , Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">2.5 k (Euro) or 2.75 k (USD) </span>)</li>
+<li>Deeper analysis by EFS Technical Support (if no software bug or exception caused the loss)</li>
+<li>Actual recovery costs per hour</li>
+</ul>
+</li>
+</ul>
+<h2 id="required_information">Required Information</h2>
+<p>To recover lost data, the following information is needed:</p>
+<ul>
+<li>Type of missing or lost data (e.g., whole project, respondent data, panelist data)</li>
+<li>Installation details (Customer and EFS installation URL)</li>
+<li>Date of data deletion or when it was first noticed as missing</li>
+<li>Desired location for data restoration (e.g., live EFS instance, copy of the project)</li>
+</ul>
+<h2 id="process_steps">Process Steps</h2>
+<h3 id="h_01J4NZ5G2V7GH08QM5V27ZYFFD">Step 1: Information Collection</h3>
+<p>1st Level Support collects all necessary information from the customer.</p>
+<h3 id="h_01J4NZ5G2V156VFR5EPYRN4C0A">Step 2: Issue Creation</h3>
+<p>1st Level Support opens an issue with SaaS Team.</p>
+<h3 id="h_01J4NZ5G2VJS894B2FVD7B1RPH">Step 3: Cause and Recovery Assessment</h3>
+<p>The Professional Service Team checks the cause of data loss and determines if recovery is possible.</p>
+<h3 id="h_01J4NZ5G2VR1D9MP6WZ0HE8GQ1">Step 4: Recovery Options</h3>
+<p>If recovery is possible, the Professional Service Team provides options and time estimates to 1st Level Support.</p>
+<h3 id="h_01J4NZ5G2VA629BAAAFQK5XD75">Step 5: Customer Agreement <em>(Need Internal Review)</em>
+</h3>
+<p>1st Level Support discusses options and costs with the customer.</p>
+<h3 id="h_01J4NZ5G2VBQ7CGEDMTAGV2RMS">Step 6: Mirror Setup (if needed)</h3>
+<p>If a mirror is needed, 1st Level Support requests SaaS Team to create one.</p>
+<h3 id="h_01J4NZ5G2VCTYHCRRA4THKXF9Z">Step 7: Data Recovery</h3>
+<p>Depending on the situation, either the customer or the Professional Service Team does the data recovery.</p>
+<h3 id="h_01J4NZ5G2V58HKXSYQDT3CMACW">Step 8: Completion and Notification <em>(Need Internal

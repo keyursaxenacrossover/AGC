@@ -1,0 +1,56 @@
+ dispatch”. This is not necessary: You can make all necessary settings beforehand, and start the dispatch process later.</p>
+</li>
+<li>
+<p>Use the “Type of reminder” mail to define who should receive the reminders:</p>
+<ul>
+<li>
+<p>Individual-related reminder: Per default, the mail is sent to the user who created an action. Alternatively, the users can enter other recipients in the “Reminder recipients” section of the detail view of the respective action.</p>
+</li>
+<li>
+<p>Role-related reminder: Users with a specific role will get the notification. The role is defined in the next step.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Save</strong> your settings.</p>
+</li>
+</ul>
+<p><strong>Defining specific reminder mail settings and auto-escalation</strong></p>
+<p>Finally, define one or several reminder emails and optionally the auto-escalation. Start by clicking <strong>Add reminder mail setting</strong>. Then, configure each mail as follows and <strong>Save</strong>:</p>
+<ul>
+<li>
+<p>Mail template: In this field, select the mail template which should be used. Mail templates of type “Org Processor mail” are available if they have been assigned to the project.</p>
+</li>
+<li>
+<p>Action status: In this field, you select which status an action should have to trigger the currently-defined reminder mail. For example, you can send different emails to the users responsible for “not started” and “started” actions. Or you can send a Thank-you mail to users who have completed their actions in time.</p>
+</li>
+<li>
+<p>Days before end: Define how many days before completion the mail should be sent.</p>
+</li>
+<li>
+<p>Roles: If “Role-related reminder” is selected, use this field to define the recipients’ role.</p>
+</li>
+<li>
+<p>Escalate: When the escalation is active, expired tasks will be escalated to the parent unit and the Org users in that unit will get a notification.</p>
+</li>
+<li>
+<p>Completion date: The completion date can be extended upon escalation to avoid further automatic escalation before the next user is able to edit the mentioned tasks.</p>
+</li>
+</ul>
+<p>The reminder emails can be edited and deleted later.</p>
+<p>The escalation can only be activated for role-related reminders.</p>
+<h3 id="h_01J3N2HWABC6TRHBQ7Q4F7QN0A"><strong>Managing variables of actions</strong></h3>
+<p>In the variable editor, you can create, edit, and relocate the variables storing information on a task. Navigate via the following path to the variable editor of the <em>Action Planner</em>:</p>
+<p><strong>Org Processor</strong> → <strong>Configuration</strong> →<strong> Action Planner Configuration</strong> → <strong>Action Planner variables</strong></p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017112889362" alt="image2019-5-15_14-11-42.png"></p>
+<p>When creating a new variable, you can select different display types like Text field, Checkbox, Image and Hyperlink. Self-created variables generated for the <em>Action Planner</em> are automatically labeled with the prefix ac_.</p>
+<p>To hide or display variables in the exterior view, set the setting “Show the content of this variable” to “no” or “yes”.</p>
+<p>In editing mode, you can change the label of self-created variables. You can also decide whether you want to “Allow editing of the content of this variable” or “Show the content of this variable” or not.</p>
+<p>With the arrows on the right, you can change the order of variables in the variable editor and respectively change the order of variables in the exterior view.</p>
+<p><strong>Variables in</strong><em><strong> the Task List</strong></em></p>
+<p>All <em>Action Planner</em> variables (ac-variables), including self-created variables, can be displayed in the exterior view of <em>Task List</em> in <em>Portals</em>. With the new display types <strong>Image</strong> and <strong>Hyperlink</strong>, links to images or other pages can be created in the exterior view of Task List in Portals. To provide the display types in the exterior view of Task List in Portals, you want to create the respective variables in the variable editor of the <em>Action Planner</em> first.</p>
+<p>The display types Image and Hyperlink can only be used in the <em>Portals</em> page module <em>Task List</em>. They have no influence on the exterior view of the Org Processor.</p>
+<h3 id="h_01J3N2HWABAW4E4TAB20761TZM"><strong>History log for tasks</strong></h3>
+<p>Each task has a history log in which all modifications to this task are chronologically stored. The information stored in the history log of tasks is only viewable in <em>Task List</em> of <em>Portals</em>.</p>
+<h3 id="h_01J3N2HWAB9EC9WW5CDV63H3FP"><strong>Workflows</strong></h3>
+<p>The workflow buttons are an important feature when working on tasks. Workflows enable you to assign, escalate, close and reopen tasks as well as invite participants to follow-up surveys. Workflows can be

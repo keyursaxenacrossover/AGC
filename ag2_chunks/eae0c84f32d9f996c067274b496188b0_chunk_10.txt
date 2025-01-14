@@ -1,0 +1,42 @@
+ staff list and editing memberships</strong></p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="15052">The list of the members contains all members of the team. The list has its own search function which searches the fields “Account name”, “E-mail”, “Name” and “Rights”. Furthermore, you have the option to extend the view to include other available information. You can do this by clicking on <strong data-renderer-mark="true">View</strong> and making your choice from the available database fields.</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="15408">The drop-down list provides you with the following editing options:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="15479">Set right of member: Changes the status to “Member rights”.</p>
+</li>
+<li>
+<p data-renderer-start-pos="15542">Set right of admin: Changes the status to “Administrator rights”.</p>
+</li>
+<li>
+<p data-renderer-start-pos="15611">Delete from team: The member will be deleted from the team.</p>
+</li>
+<li>
+<p data-renderer-start-pos="15674">Export user data: An Excel file will be generated, which includes the data of the selected members.</p>
+</li>
+<li>
+<p data-renderer-start-pos="15777">Write e-mail: The standard mail form opens, and you can write to the selected team members.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="15872"><strong data-renderer-mark="true">Deleting teams</strong></p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="15888">To delete a team you must have owner rights (<strong data-renderer-mark="true">Users</strong>→ <strong data-renderer-mark="true">List of teams</strong> → {Selected team} → <strong data-renderer-mark="true">Delete team</strong>). This deletes all team members from the team. The team cannot be restored.</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="16065">Deleting a team does not necessarily delete the pertinent account. An account is only deleted if the user is no longer a member of any other team after the team has been deleted.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="16247"><strong data-renderer-mark="true">Changing team info</strong></p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="16269">To change the title, name, and description of the selected team, navigate to <strong data-renderer-mark="true">Users</strong> → <strong data-renderer-mark="true">Teams → </strong>{Selected team} →<strong data-renderer-mark="true">Change team</strong> info. This function is useful if you have selected a team name that leads to unattractive URLs.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="16491"><strong data-renderer-mark="true">Transferring leadership</strong></p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="16516">To change leadership for a team, navigate to <strong data-renderer-mark="true">Users</strong> → <strong data-renderer-mark="true">Teams</strong> → {Selected team} →<strong data-renderer-mark="true"> Change</strong> <strong data-renderer-mark="true">ownership</strong>. To do so, you must have the owner status in the team. You are thus transferring the leadership to another team member. It is irrelevant whether this person is an admin or a simple member of your team. As an owner may not leave their team, you must transfer leadership if you wish to leave your own team.</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="16915"><strong data-renderer-mark="true">Leaving teams</strong></p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="16930">The<strong data-renderer-mark="true"> Leave team</strong> function removes you from the list of members for the selected team. You may not leave the team if you are the team owner. You must first<strong data-renderer-mark="true"> Change owner</strong>.</p>
+<h3 id="Viewing-and-changing-the-ACL-rights-of-a-team" class="wysiwyg-text-align-justify" data-renderer-start-pos="17098"><strong data-renderer-mark="true">Viewing and changing the ACL rights of a team</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="17145">In the “Rights of the team (whole system)” section you can see the ACL rights for the selected team, i.e. which functions it can access.</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="17285">With the right “groupadmin”, you can edit the rights configuration. To open the corresponding dialog, click on the <strong

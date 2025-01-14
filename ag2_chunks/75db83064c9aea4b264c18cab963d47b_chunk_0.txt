@@ -1,0 +1,44 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K" class="wysiwyg-text-align-justify">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article provides comprehensive documentation on the Portals Extension Module, which allows integration of third-party content and applications within Portals. It covers various aspects of the API, including initialization, message bus usage, data querying, and interaction with MySight Tableau instances.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">The Portals Extension Module documentation is divided into several sections, each focusing on different aspects of the API and its functionality. This guide will help developers integrate their applications with Portals and utilize various features provided by the API.</p>
+<ul class="wysiwyg-text-align-justify">
+<li><a href="#including-portals-api-in-your-application">Including Portals API in your application</a></li>
+<li><a href="#using-the-portals-message-bus">Using the Portals message bus</a></li>
+<li><a href="#querying-data-from-portals">Querying data from Portals</a></li>
+<li><a href="#trigger-actions-in-portals">Trigger actions in Portals</a></li>
+<li><a href="#accessing-mysight-instances-in-portals">Accessing MySight instances in Portals</a></li>
+<li><a href="#listening-to-mysight-tableau-events">Listening to MySight Tableau events</a></li>
+<li><a href="#use-portals-styles">Use Portals styles</a></li>
+<li><a href="#opening-a-dialog-in-portals">Opening a dialog in Portals</a></li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="including-portals-api-in-your-application" class="wysiwyg-text-align-justify">Including Portals API in your application</h2>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015011247506" alt="ExtensionModule.png"></p>
+<p class="wysiwyg-text-align-justify">The Extension module allows integration of your application into portals by providing an iFrame for your content and an API for communication with Portals. The module accepts an url and allows dynamic GET parameters to be passed to your application through that url. Just select the participant variables and master data you want to pass to your application and provide names for the GET keys.<br>A portals page can have several Extension modules on a single page and all modules can communicate with each other through the provided message bus in the Portals API.<br>For enhanced data exchange with EFS, we recommend that your application uses the EFS ServiceLayer in the backend to query and update data in EFS.</p>
+<h3 id="import" class="wysiwyg-text-align-justify">Import</h3>
+<p class="wysiwyg-text-align-justify">In your application, you have to import the PortalsAPI JavaScript file in order to be able to use the message bus or other Portals API functions.</p>
+<pre><code class="language-js">&lt;script src="https://{yourEFSInstallation}/public/modules/portals/dist/portalsApi/portalsApi-1.0.js"&gt;&lt;/script&gt;</code></pre>
+<h3 id="initialization" class="wysiwyg-text-align-justify">Initialization</h3>
+<p class="wysiwyg-text-align-justify">After your document has finished loading you need to initialize the api. This registers your document with Portals for messaging.</p>
+<pre><code class="language-js">&lt;script&gt;
+    Questback.portalsApi.initialize()
+        .then(function() {
+            ...
+        }
+        .catch(function(error) {
+            ...
+        });
+&lt;/script&gt;</code></pre>
+<p class="wysiwyg-text-align-justify"> </p>
+<h3 id="checking-initialization-status" class="wysiwyg-text-align-justify">Checking initialization status</h3>
+<p class="wysiwyg-text-align-justify">You can check the initialization status by calling <em>isInitialized</em>, though it is generally recommended to do your api operations in the <em>then</em>-handler of the <em>initialize</em> method as shown above.</p>
+<pre><code class="language-js">Questback.portalsApi.isInitialized();</code></pre>
+<h3 id="unregister" class="wysiwyg-text-align-justify">Unregister</h3>
+<p class="wysiwyg-text-align-justify">You can completely revert the registration of the iFrame and unregister all its handlers by calling <em>unregister</em>.</p>
+<pre><code class="language-text">Questback.portalsApi.unregister();</code></pre>
+<p class="wysiwyg-text-align-justify"> </p>
+<hr>
+<h2 id="using-the-portals-message-bus" class="wysiwyg-text-align-justify">Using the Portals message bus</h2>
+<p class="wysiwyg-text-align-justify">The message bus is intended for communication between extension module iFrames. You can send and listen to your own events and transfer any data you want.</p>
+<h3 id="listening-for-messages" class="wysiwy

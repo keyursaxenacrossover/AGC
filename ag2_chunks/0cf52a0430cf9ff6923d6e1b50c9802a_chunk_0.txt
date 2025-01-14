@@ -1,0 +1,57 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1077150035">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1077150035</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<p>An Authorization Server is an entity that is used to gather tokens. It defined the security boundary from one tenant to another. The tokens from one Authorization Server could not be used in the scope of another authorization server.</p><p></p><p>An Authorization Server requires some configuration.</p><table data-layout="default">
+<colgroup>
+<col style="width: 170.0px;">
+<col style="width: 508.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour="#f4f5f7"><p><strong>What</strong></p></th>
+<th><p><strong>Explanation</strong></p></th>
+</tr>
+<tr>
+<td data-highlight-colour="#f4f5f7"><p><strong>General Settings</strong></p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>Audience</p></td>
+<td><p>The audience defined the scope a token is used for. It will always be a domain.</p></td>
+</tr>
+<tr>
+<td><p>Issuer</p></td>
+<td><p>The issuer is the instance that created the token.</p></td>
+</tr>
+<tr>
+<td>
+<p>Metadata URI</p>
+<p>Well-known document</p>
+<p>Discovery Document</p>
+</td>
+<td><p>This document contains metadata of the authorization server. It contains information about the algorithms and flows that are supported as well as URIs to endpoints that can be used to integrate.</p></td>
+</tr>
+<tr>
+<td data-highlight-colour="#f4f5f7"><p>Scopes</p></td>
+<td><p>Scopes that are supported by this authorization server. Scopes can be requested by a client and will refer to a specific set of claims. An authorization server might allow or reject requesting a scope.</p></td>
+</tr>
+<tr>
+<td data-highlight-colour="#f4f5f7"><p>Claims</p></td>
+<td>
+<p>Claims are specific values of a user. They can be tied to a scope and also to a specific token type.</p>
+<p>In our case the first name and the last name have to be present in the ID Tokens when requesting the profile scope.</p>
+</td>
+</tr>
+<tr>
+<td data-highlight-colour="#f4f5f7">
+<p>Access Policies</p>
+<p>Access Policy Rules</p>
+</td>
+<td>
+<p>An access policy will configure the flows that are allowed in that authorization server as well as the lifetime of tokens.</p>
+<p></p>
+<p>In our case Authorization Code und Implicit flow are only required.</p>
+<p>For the token lifetime see <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Sessions" ri:version-at-save="4"></ri:page><ac:link-body>Sessions</ac:link-body></ac:link> </p>
+</td>
+</tr>
+</tbody>
+</table><p></p><p><strong><u>For API Access see:</u></strong></p><p><strong>Authorization Server:</strong></p><p><a href="https://developer.okta.com/docs/reference/api/authorization-servers/#authorization-server-operations">https://developer.okta.com/docs/reference/api/authorization-servers/#authorization-server-operations</a></p><p><strong>Scopes:</strong></p><p><a href="https://developer.okta.com/docs/reference/api/authorization-servers/#scope-operations">https://developer.okta.com/docs/reference/api/authorization-servers/#scope-operations</a></p><p><strong>Claims:</strong></p><p><a href="https://developer.okta.com/docs/reference/api/authorization-servers/#claim-operations">https://developer.okta.com/docs/reference/api/authorization-servers/#claim-operations</a></p><p><strong>Policies (Access Policies):</strong></p><p><a href="https://developer.okta.com/docs/reference/api/authorization-servers/#policy-operations">https://developer.okta.com/docs/reference/api/authorization-servers/#policy-operations</a></p>

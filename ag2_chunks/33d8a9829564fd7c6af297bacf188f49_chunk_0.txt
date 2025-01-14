@@ -1,0 +1,54 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1081442340">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1081442340</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<p>Local users are users that exist in Okta with credentials and login via Okta. They are not stored in any external Identity Provider.</p><p>All values as well as the password are </p><p></p><p></p><p></p><table data-layout="wide" ac:local-id="0bfba2cf-f5cb-4c6e-b388-b9551e2034d9">
+<colgroup>
+<col style="width: 170.0px;">
+<col style="width: 170.0px;">
+<col style="width: 170.0px;">
+<col style="width: 170.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p><strong>What</strong></p></th>
+<th><p><strong>When to use</strong></p></th>
+<th><p><strong>Effect</strong></p></th>
+<th><p><strong>Notes</strong></p></th>
+</tr>
+<tr>
+<td><p>Convert Local Users to Federated users</p></td>
+<td><p>When a user was synced without the “federated” domains set correctly the user might be synced with a local Okta password. To prevent future emails and a password in Okta, the user can be switched to federated.</p></td>
+<td><p>The local Okta password of the user is removed and the user can just login via federation.</p></td>
+<td>
+<p><a data-card-appearance="inline" href="https://support.okta.com/help/s/article/How-to-convert-Okta-user-to-Federated-provider-type?language=en_US">https://support.okta.com/help/s/article/How-to-convert-Okta-user-to-Federated-provider-type?language=en_US</a> </p>
+<p>This is a help Article how to do that. This could also be done by a postman collection or a script.</p>
+</td>
+</tr>
+<tr>
+<td><p>Reset Password</p></td>
+<td>
+<p>Rarely. A user is able to reset their password in their own.</p>
+<p>If a user is not able to - this option could be used.</p>
+</td>
+<td><p>The user has no password anymore and will get an activation mail. The user has to provide a new password.</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table> to Federated users</p></td>
+<td><p>When a user was synced without the “federated” domains set correctly the user might be synced with a local Okta password. To prevent future emails and a password in Okta, the user can be switched to federated.</p></td>
+<td><p>The local Okta password of the user is removed and the user can just login via federation.</p></td>
+<td>
+<p><a data-card-appearance="inline" href="https://support.okta.com/help/s/article/How-to-convert-Okta-user-to-Federated-provider-type?language=en_US">https://support.okta.com/help/s/article/How-to-convert-Okta-user-to-Federated-provider-type?language=en_US</a> </p>
+<p>This is a help Article how to do that. This could also be done by a postman collection or a script.</p>
+</td>
+</tr>
+<tr>
+<td><p>Reset Password</p></td>
+<td>
+<p>Rarely. A user is able to reset their password in their own.</p>
+<p>If a user is not able to - this option could be used.</p>
+</td>
+<td><p>The user has no password anymore and will get an activation mail. The user has to provide a new password.</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>

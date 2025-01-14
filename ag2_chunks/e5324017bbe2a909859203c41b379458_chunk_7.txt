@@ -1,0 +1,25 @@
+ e1a3lu0710">Flows</span></span></a></span></span></span></p>
+<p data-renderer-start-pos="389"> </p>
+<h4 id="Where-is-Identity-Data-stored?" data-renderer-start-pos="391"><strong data-renderer-mark="true">Where is Identity Data stored?</strong></h4>
+<p data-renderer-start-pos="423">Identity Data is stored at Okta. Okta is using AWS cloud services to host its identity solution. </p>
+<p data-renderer-start-pos="575">Okta offers an EU cell for European companies. Data will be stored in Europe (information from Okta is that data is stored in Germany and Ireland) - also see <a class="cc-1rn59kg" title="https://www.okta.com/press-room/press-releases/okta-cements-its-commitment-to-emea-market-announces-eu-data-centre/" href="https://www.okta.com/press-room/press-releases/okta-cements-its-commitment-to-emea-market-announces-eu-data-centre/" data-testid="link-with-safety" data-renderer-mark="true">https://www.okta.com/press-room/press-releases/okta-cements-its-commitment-to-emea-market-announces-eu-data-centre/</a></p>
+<p data-renderer-start-pos="850">Okta will store first name, last name and email address as well as possibly password and MFA details like a phone number of a user (this might change in future).</p>
+<p data-renderer-start-pos="1013">Identity data is still stored in the respective applications like EFS and Portals.</p>
+<p data-renderer-start-pos="1097"> </p>
+<h4 id="How-is-security-handled-by-Okta-(our-Identity-Provider)?" data-renderer-start-pos="1099"><strong data-renderer-mark="true">How is security handled by Okta (our Identity Provider)?</strong></h4>
+<p data-renderer-start-pos="1157">Okta provides documentation about security related topics and certifications.</p>
+<p data-renderer-start-pos="1236">see <a class="cc-1rn59kg" title="https://www.okta.com/security/" href="https://www.okta.com/security/" data-testid="link-with-safety" data-renderer-mark="true">https://www.okta.com/security/</a></p>
+<p data-renderer-start-pos="1272"> </p>
+<h4 id="How-is-data-transfer-between-the-EFS-installation-(EFS-Admin,-Portals)-and-our-Identity-Provider-secured?" data-renderer-start-pos="1274"><strong data-renderer-mark="true">How is data transfer between the EFS installation (EFS-Admin, Portals) and our Identity Provider secured?</strong></h4>
+<p data-renderer-start-pos="1381">Data transferred from EFS to our Identity Provider will take place using the HTTPS protocol. An API token mechanism will be used to authorize requests to our Identity Provider.</p>
+<p data-renderer-start-pos="1559">Data transfer from our Identity Provider will also be secured using the HTTPS protocol. Communication in that direction will take place in the boundaries of OpenID Connect.</p>
+<p data-renderer-start-pos="1733"> </p>
+<h4 id="How-is-data-transfer-between-our-Identity-Provider-and-the-client’s-Identity-Provider-secured?" data-renderer-start-pos="1735"><strong data-renderer-mark="true">How is data transfer between our Identity Provider and the client’s Identity Provider secured?</strong></h4>
+<p data-renderer-start-pos="1831">In the case of the communication with a client’s Identity Provider both sides have to technically take care of securing the communication. Our Identity Provider offers communication via HTTPS. During setup of the client’s Identity Provider we have to take care, that the communication fits our security needs.</p>
+<p data-renderer-start-pos="2142"> </p>
+<h4 id="Is-the-Identity-Provider-always-available?" data-renderer-start-pos="2144"><strong data-renderer-mark="true">Is the Identity Provider always available?</strong></h4>
+<p data-renderer-start-pos="2188">Our Identity Provider guarantees availability of 99.9%. The documentation can be found here.</p>
+<p data-renderer-start-pos="2282"><a class="cc-1rn59kg" title="https://www.okta.com/a-secure-reliable-service-you-can-trust/" href="https://www.okta.com/a-secure-reliable-service-you-can-trust/" data-testid="link-with-safety" data-renderer-mark="true">https://www.okta.com/a-secure-reliable-service-you-can-trust/</a></p>
+<p data-renderer-start-pos="2345"> </p>
+<h4 id="What-are-the-session-(and-token)-lifetimes?" data-renderer-start-pos="2444"><strong data-renderer-mark="true">What are the session (and token) lifetimes?</strong></h4>
+<p data-renderer-start-pos="2489">The session times can be found in the section sessions - see <span data-inline-card="true" data-card-url="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1059455631"><span class="loader-wrapper"><span aria-expanded="false" aria-haspopup="true" data-testid="hover-card-trigger-wrapper"><a class="css-118vsk3 e26bri0" tabindex="0

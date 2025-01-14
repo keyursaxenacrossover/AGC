@@ -1,0 +1,141 @@
+ pages are configured in the <strong>Properties </strong>submenu. To open it, from EFS 10.2 click on the page title in the questionnaire view, then select the submenu. The table provides an overview. The page properties are explained in detail in the following chapters.</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p><strong>Property</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p><strong>Explanation</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Only in projects with classic system layout: Layout width and height</p>
+</td>
+<td>
+<p>The breadth and the width of the layout can be modified for a particular page.</p>
+<p>If you want the layout on a certain page to be particularly narrow, you can, for example, enter the number “100” (for 100 pixels) in this field. On the next page, the questionnaire’s layout will then revert to the standard width.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Layout template for page</p>
+</td>
+<td>
+<p>This option allows to specify a dedicated main template for the current page.</p>
+<ul>
+<li>
+<p>If nothing is selected, for standard pages the template “main.tpl” will be used as usual, for mixed-external pages the template “mixedextern.tpl” will be used.</p>
+</li>
+<li>
+<p>The option is available for standard pages and mixed-external pages.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Layout template for displaying questions</p>
+</td>
+<td>
+<p>This option allows to modify the positioning of the questions on the current page via a dedicated template. In the long run, this feature will replace the mixed-external pages.</p>
+<ul>
+<li>
+<p>If nothing is selected, EFS will output the questions of this page one below the other, as usual.</p>
+</li>
+<li>
+<p>If a special template is selected, it will control the output.</p>
+</li>
+<li>
+<p>The option is only available for standard pages, not for mixed-external pages.</p>
+</li>
+</ul>
+<p>Ready-made templates for two-column layouts are available in “Responsive layout”projects: from EFS 10.0 “layout_t- wo_column_page.tpl” which was renamed to “questioncontainer_two_column_v1.tpl” in EFS 10.1, and the enhanced “questioncontainer_two_column_v2.tpl” from EFS 10.1.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Page is submitted automatically after completion of all questions</p>
+</td>
+<td>
+<p>The page is submitted automatically as soon as the respondent has answered all of the questions.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Hide Submit button</p>
+</td>
+<td>
+<p>This option allows you to hide the Submit button permanently or temporarily.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Send page automatically</p>
+</td>
+<td>
+<p>The page will be sent automatically after a defined time span.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Hide Back button</p>
+</td>
+<td>
+<p>This option allows you to hide the Back button.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Add Cancel button</p>
+</td>
+<td>
+<p>This option allows you to display a Cancel button.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>JavaScript code to be executed when the user clicks on the Submit button</p>
+</td>
+<td>
+<p>Here you can insert JavaScript code which will be executed when the page is submitted, provided that JavaScript is enabled in the respondent’s browser.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Header section, footer section</p>
+</td>
+<td>
+<p>This feature allows you to insert JavaScript and CSS directly in the header or footer section of the page.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Check internal quotas</p>
+</td>
+<td>
+<p>If you are using quotas, this option allows you to mark the page where the checking for internal quotas is to take place.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Set variable page marker to fill the variable rate within the field report</p>
+</td>
+<td>
+<p>The so-called variable page marker (until EFS 10.1 “universal page marker”) allows you to determine, and show in the field report, how many people have completed the survey up to a specific questionnaire page X.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Force a character set for this page</p>
+</td>
+<td>
+<p>This option allows you to assign to the page a different character set other than the general character set of the survey or the character sets for the various language versions of a multilingual project.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h4 class="wysiwyg-text-align-justify"> </h4>
+<h4 id="automatically-submitting-a-completed-page" class="wysiwyg-text-align-justify">Automatically Submitting a

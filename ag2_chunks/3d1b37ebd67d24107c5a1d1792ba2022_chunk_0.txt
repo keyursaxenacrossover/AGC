@@ -1,0 +1,53 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1299316749">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1299316749</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<p>The following installations are in use for either development or quality assurance purposes:</p><p>The <strong>Tenant </strong>should be a logical grouping of installations to simulate the sharing of resources like <strong>API Tokens</strong>, the <strong>User Group </strong>and a similar user pool.</p><table data-layout="wide"><tbody>
+<tr>
+<th><p><strong>Tenant (Draft)</strong></p></th>
+<th><p><strong>Name</strong></p></th>
+<th><p><strong>Domain</strong></p></th>
+<th><p><strong>Technical Name</strong></p></th>
+<th><p><strong>Purpose</strong></p></th>
+</tr>
+<tr>
+<td><p>Questback-DEV</p></td>
+<td><p>IAM TKA</p></td>
+<td><p><a href="https://iam-tka.qb-feedback.com/www">https://iam-tka.qb-feedback.com</a></p></td>
+<td><p><a href="http://iam-tka.qb-feedback.com">iam-tka.qb-feedback.com</a></p></td>
+<td><p>First Integration Stage</p></td>
+</tr>
+<tr>
+<td><p>Questback-DEV</p></td>
+<td><p>IAM Demo</p></td>
+<td><p><a href="https://iam-demo.qb-feedback.com/www">https://iam-demo.qb-feedback.com</a></p></td>
+<td><p><a href="http://ru1644-tka.qb-feedback.com">ru1644-tka.qb-feedback.com</a></p></td>
+<td><p>Reviews / Demos for Questback Access</p></td>
+</tr>
+<tr>
+<td><p>Questback-QA</p></td>
+<td><p>IAM AAT</p></td>
+<td><p><a href="https://iam-aat-tka.qb-feedback.com/">https://iam-aat-tka.qb-feedback.com</a></p></td>
+<td><p><a href="http://xg0979-tka.qb-feedback.com">xg0979-tka.qb-feedback.com</a></p></td>
+<td><p>Release Version with 19.5</p></td>
+</tr>
+<tr>
+<td><p>Questback-QA</p></td>
+<td><p>QA Migration</p></td>
+<td><p><a href="https://qa-migration-tka.qb-feedback.com/">https://qa-migration-tka.qb-feedback.com/</a></p></td>
+<td><p>?</p></td>
+<td><p>Migration Testing</p></td>
+</tr>
+<tr>
+<td><p>?</p></td>
+<td><p>OAT 2 (DV)</p></td>
+<td><p><a href="https://dev-oat2-tka.qb-feedback.com">https://dev-oat2-tka.qb-feedback.com</a></p></td>
+<td><p>?</p></td>
+<td><p>?</p></td>
+</tr>
+<tr>
+<td><p>?</p></td>
+<td><p>OAT 44 (DV)</p></td>
+<td><p><a href="https://dev-oat44-sso-tka.qb-feedback.com">https://dev-oat44-sso-tka.qb-feedback.com</a></p></td>
+<td><p>?</p></td>
+<td><p>?</p></td>
+</tr>
+</tbody></table><p>In addition also local installations may be used by developers, they either have a domain name from Efferen2 like <a href="https://master-meinusch.dev2.qb-feedback.com">https://master-meinusch.dev2.qb-feedback.com</a> or point to localhost using a unique name</p>

@@ -1,0 +1,44 @@
+>
+<h3 id="h_01J6W3XK780KEJWWAYTHH98F1H">3. Connecting to a Service Gateway:</h3>
+<p>Once you have access, you can connect to a service gateway using any command line tool with the following command:</p>
+<div class="dark bg-gray-950 contain-inline-size rounded-md border-[0.5px] border-token-border-medium">
+<div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md">
+<pre class="flex items-center"><span style="font-size: 1em;">ssh -i ~/.ssh/&lt;SSH_KEY&gt; &lt;EMAIL_USERNAME&gt;@servicegw.prod-de-03.customervoice360.com -p 65222</span></pre>
+</div>
+</div>
+<p><strong>Example:</strong></p>
+<div class="dark bg-gray-950 contain-inline-size rounded-md border-[0.5px] border-token-border-medium">
+<pre class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-bash">ssh -i ~/.ssh/rsa_id rishi.singh@servicegw.prod-de-03.customervoice360.com -p 65222
+</code></pre>
+</div>
+<p id="h_01J6W42P6H4TF5XFV4GH39NK52"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21139518684562"></p>
+<p><strong>Ref:</strong></p>
+<p class="wysiwyg-indent2">1. Location of private key file</p>
+<p class="wysiwyg-indent2">2. email username</p>
+<p class="wysiwyg-indent2">3. Complete service gateway name</p>
+<p class="wysiwyg-indent2">4. Port number (6522 for all gateways)</p>
+<p class="wysiwyg-indent2">5. Passphrase for the private key (set while creating the SSH key)</p>
+<p class="wysiwyg-indent2"> </p>
+<p class="wysiwyg-indent2">Note that you can further simplify the command to access the gateway as per the article: <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21811065416850-How-to-Setup-SSH-Config-File-for-Quick-Access-to-Service-Gateways-for-DXI">How to Setup SSH Config File for Quick Access to Service Gateways for DXI</a></p>
+<h3 id="h_01J6W3XK78N31JKXFFWHTYFXGV">4. Navigating Installation Folders:</h3>
+<p>All instances have their individual folders under <code>/nfs/installations/</code>. You can find the specific folder using the technical name of the installation:</p>
+<div class="dark bg-gray-950 contain-inline-size rounded-md border-[0.5px] border-token-border-medium">
+<pre class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-bash"><span class="hljs-built_in">cd</span> /nfs/installations/&lt;technical_name&gt;
+</code></pre>
+</div>
+<p><strong>Example:</strong></p>
+<div class="dark bg-gray-950 contain-inline-size rounded-md border-[0.5px] border-token-border-medium">
+<pre class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-bash"><span class="hljs-built_in">cd</span> /nfs/installations/tx3689
+</code></pre>
+</div>
+<p>To find the technical name of an installation, refer to its URL. For example, in <code>https://tx3689.customervoice360.com</code>, "tx3689" is the technical name. If an installation uses a customer domain, such as <strong><em>ww2.umfragecenter.de</em></strong>, use Globis to find the technical name and the correct cluster where the instance is hosted.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21139555797010"></p>
+<h3 id="h_01J7E2EAEQBC7D3V482RV0X5Z6">5. Service Gateway Purpose and Usage</h3>
+<p>A lot of the L2 tasks are tied to the service gateways, and they usually entail running some scripts and/or accessing the DB. Check the below resources:</p>
+<ul>
+<li><a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20714568035218" target="_blank" rel="noopener noreferrer">Provisioning new DXI installations</a></li>
+<li><a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21140364670866" target="_blank" rel="noopener noreferrer">How to Access and Work with MariaDB on DXI Service Gateways</a></li>
+<li><a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20714583378706" target="_blank" rel="noopener noreferrer">Helperscripts</a></li>
+</ul>
+<h3 id="01J8QS4CEBNQQ6KPMT655G7Y13">6. Access Hurricane GUI for Hurricane configurations and logs</h3>
+<p>Hurricane is

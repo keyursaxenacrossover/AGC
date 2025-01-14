@@ -1,0 +1,81 @@
+4 id="computation-and-appendment-of-the-dkim-signature">Computation and appendment of the DKIM-Signature</h4>
+<p>This requires an existing Key-Pair of a public and a matching private key and is usually build into the software of the sending-mail-server.</p>
+<p>To generate the DKIM-Signature 2 hashes are computed:</p>
+<ol start="1">
+<li>
+<p>Over a canonicalized version of the message body</p>
+</li>
+<li>
+<p>Over a canonicalized version of selected Email-Header fields</p>
+</li>
+</ol>
+<p>Each of the hashes is then signed with the previously mentioned Private-Key before being included into the DKIM-Signature together with any additional info needed for verification, noteworthy being:</p>
+<ul>
+<li>
+<p>The domain at which to look for the Public-Key (Tag: d)</p>
+</li>
+<li>
+<p>The selector to be used when looking up the Public-Key at the specified domain (Tag: s)</p>
+</li>
+</ul>
+<p>For additional info: <a href="http://dkim.org/specs/rfc4871-dkimbase.html#dkim-sig-hdr">http://dkim.org/specs/rfc4871-dkimbase.html#dkim-sig-hdr</a></p>
+<h4 id="validation-stage">Validation Stage</h4>
+<p>This happens when the receiving Mail-Server finds a DKIM-Signature attached to an incomming mail.</p>
+<p>It then uses the values of the Tags <code>d</code> and <code>s</code> to construct a domain from which the corresponding public key should be queried.</p>
+<pre><code class="language-text">e.g<br>d=example.com<br>s=qb<br>=&gt; qb._domainkey.example.com</code></pre>
+<p>Therefore the Domain-Administrator must create a record at that domain, like</p>
+<pre><code class="language-text">qb._domainkey.example.com IN TXT 'v=DKIM1; k=rsa; p=&lt;public-key&gt;'</code></pre>
+<p>For additional info: <a href="http://dkim.org/specs/rfc4871-dkimbase.html#keys">http://dkim.org/specs/rfc4871-dkimbase.html#keys</a></p>
+<p>Additionally the two hashes, as mentioned above, will be computed again so they can be checked against the respective signed values utilizing the retrieved public key.</p>
+<h4 id="further-reading-1">Further reading</h4>
+<ul>
+<li>
+<p><a href="https://postmarkapp.com/guides/dkim">https://postmarkapp.com/guides/dkim</a></p>
+</li>
+<li>
+<p>Verification-Tool: <a href="https://www.mail-tester.com/spf-dkim-check">https://www.mail-tester.com/spf-dkim-check</a></p>
+</li>
+</ul>
+<h3 id="dmarc-domain-based-message-authentication-reporting-and-conformance-receiving-validation-only">DMARC - Domain-based Message Authentication, Reporting and Conformance ; receiving-validation only</h3>
+<p>DMARC works further to prevent a domain from being abused by spammers and also intents to increase visability for such abuses by putting in place a reporting workflow.</p>
+<p>It especially focuses on the the gap left by both SPF and DKIM, where as it is still possible to forge the “From”-Address-Field of an Email whilst still conforming to both.</p>
+<p>Opposed to SPF and DKMI, who merely give an indication towards the validity of an Email only, DMARC gives the domainowner more control over how offending mails should be handled by the recieving mail-server. To be more specific one of 3 policys can be configured:</p>
+<ul>
+<li>
+<p>Approve (<code>p=none</code>): No action should be taken and the offenses should only be reported</p>
+</li>
+<li>
+<p>Quarantine (<code>p=quarantine</code>): The offending mail should be marked as SPAM.</p>
+</li>
+<li>
+<p>Reject (<code>p=reject</code>): The offending mail should be outright rejected and not processed further.</p>
+</li>
+</ul>
+<h4 id="prevents-abuse-in-from-field-by-spammers">Prevents abuse in “From” field by spammers</h4>
+<p>To achieve this more or less relies upon the result of both SPF and DKIM, but only <strong>after </strong>the “alignment” between the Address of the “From”-Field and the Return-Path (SPF) and the Signature-Domain (DKIM) has been ensured.</p>
+<p>For both SKF and DKIM, “alignment” can be specified as one of the following:</p>
+<ul>
+<li>
+<p><strong>strict</strong></p>
+<ul>
+<li>
+<p>The domains match exactly</p>
+</li>
+<li>
+<p><code>aspf=s</code> / <code>adkim=s</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>relaxed</strong></p>
+<ul>
+<li>
+<p>The match may only be partial, so a Sub-Domain would also “align” with an Apex-Domain</p>
+</li>
+<li>
+<p><code>aspf=r</code> / <code>adkim=r</code></p>
+</li>
+</ul>
+</li>
+</ul>
+<p>Any Email domain where the domain does not match as specified or where the

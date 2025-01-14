@@ -1,0 +1,59 @@
+>
+<td style="padding: var(--ds-space-100, 8px); text-align: left; vertical-align: top; width: 628.672px;" colspan="1" rowspan="1" data-colwidth="939">
+<p data-renderer-start-pos="4796">EFS-EX, EFS-lvm</p>
+</td>
+</tr>
+<tr>
+<td style="padding: var(--ds-space-100, 8px); text-align: left; vertical-align: top; width: 122.297px;" colspan="1" rowspan="1" data-colwidth="244">
+<p data-renderer-start-pos="4817">91.217.141.49</p>
+</td>
+<td style="padding: var(--ds-space-100, 8px); text-align: left; vertical-align: top; width: 215.344px;" colspan="1" rowspan="1" data-colwidth="302">
+<p data-renderer-start-pos="4834">mail17.customervoice360.com</p>
+</td>
+<td style="padding: var(--ds-space-100, 8px); text-align: left; vertical-align: top; width: 157.688px;" colspan="1" rowspan="1" data-colwidth="315">
+<p data-renderer-start-pos="4865">10.250.20.39</p>
+</td>
+<td style="padding: var(--ds-space-100, 8px); text-align: left; vertical-align: top; width: 628.672px;" colspan="1" rowspan="1" data-colwidth="939">
+<p data-renderer-start-pos="4881">EFS-EX, general</p>
+</td>
+</tr>
+<tr>
+<td style="padding: var(--ds-space-100, 8px); text-align: left; vertical-align: top; width: 122.297px;" colspan="1" rowspan="1" data-colwidth="244">
+<p data-renderer-start-pos="4902">91.217.141.110</p>
+</td>
+<td style="padding: var(--ds-space-100, 8px); text-align: left; vertical-align: top; width: 215.344px;" colspan="1" rowspan="1" data-colwidth="302">
+<p data-renderer-start-pos="4920">mail6.customervoice360.com</p>
+</td>
+<td style="padding: var(--ds-space-100, 8px); text-align: left; vertical-align: top; width: 157.688px;" colspan="1" rowspan="1" data-colwidth="315">
+<p data-renderer-start-pos="4950">10.250.20.15</p>
+</td>
+<td style="padding: var(--ds-space-100, 8px); text-align: left; vertical-align: top; width: 628.672px;" colspan="1" rowspan="1" data-colwidth="939">
+<p data-renderer-start-pos="4966">AA-Normal, AA-Flash, AA-Backoffice, AA-Spam, EFS-Adhoc, EFS-Spam, EFS-Production</p>
+</td>
+</tr>
+<tr>
+<td style="padding: var(--ds-space-100, 8px); text-align: left; vertical-align: top; width: 122.297px;" colspan="1" rowspan="1" data-colwidth="244">
+<p data-renderer-start-pos="5052">185.55.155.153</p>
+</td>
+<td style="padding: var(--ds-space-100, 8px); text-align: left; vertical-align: top; width: 215.344px;" colspan="1" rowspan="1" data-colwidth="302">
+<p data-renderer-start-pos="5070">mail7.questback.com</p>
+</td>
+<td style="padding: var(--ds-space-100, 8px); text-align: left; vertical-align: top; width: 157.688px;" colspan="1" rowspan="1" data-colwidth="315">
+<p data-renderer-start-pos="5093">10.250.20.16</p>
+</td>
+<td style="padding: var(--ds-space-100, 8px); text-align: left; vertical-align: top; width: 628.672px;" colspan="1" rowspan="1" data-colwidth="939">
+<p data-renderer-start-pos="5109"> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="faq">FAQ</h2>
+<h3 id="retries">Retries</h3>
+<ul>
+<li>If Hurricane got a soft bounce from the receiving mail server, it will try to resend the mail after 2 hours and then again after 2 hours and so on up to 48 hours.</li>
+<li>If the mail can not be sent after all these retries, the Hurricane sends a corresponding message to RabbitMQ that then will be shown in the mail report of EFS.</li>
+</ul>
+<h3 id="mail-sending-dates-don-t-match-mailreport-export-and-participant-administration">Mail sending dates don't match (mailreport, export and participant administration)</h3>
+<h4 id="h_01J3Z75ZT2C17FSSW6VJT806JP">Participant detail view</h4>
+<ul>
+<li>The date and time of a mail id shown in the detail view of a participant (personalized survey) belongs to the status next to it (e.g. queued, sending, sent, rejected, etc.) and indicates when this status was set

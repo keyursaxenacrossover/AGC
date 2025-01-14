@@ -1,0 +1,53 @@
+ class="wysiwyg-text-align-justify">
+<li>Use: <code>#panel_url#dateiname.php?login_code=#panelist_code#&amp;chosen_site=#site_id#</code>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Using Shortened Login Links:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>If long login links are problematic, generate shorter links using the wildcard <code>#panelist_login_code#</code>.
+<ul>
+<li>Wildcard for shortened code: <code>#panelist_login_code#</code>
+</li>
+<li>URL parameter for direct login with shortened code: <code>lc</code>
+</li>
+<li>Example link:
+<ul>
+<li><code>http://your-domain.com/panelwebesite/?lc=QAplygBpxAoPhVL3ceoIL8ztW5g</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="PanelistsAdministration-Resetting2FA" class="wysiwyg-text-align-justify"><strong>Resetting 2FA</strong></h3>
+<p class="wysiwyg-text-align-justify"><span class="legacy-color-text-blue3" style="color: #172b4d;">If a panelist has fully set up two-factor authentication for a panel website, the </span><strong>Reset 2FA</strong><span class="legacy-color-text-blue3" style="color: #172b4d;"> button is displayed in the panelist administration for this panelist. By clicking this button, you can reset the two-factor authentication for the panelist in question so that they have to scan the QR code again the next time they log in.</span></p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017221219218"></p>
+<h3 id="h_01J3FY20QJ4HHQ6PB36A48ENWA" class="wysiwyg-text-align-justify">Viewing and Changing Member Information</h3>
+<p class="wysiwyg-text-align-justify">The tabs <strong>Groups, Surveys, and Tasks</strong> show the panelist's assigned groups, project-specific samples, and tasks.</p>
+<p class="wysiwyg-text-align-justify"><strong>Note:</strong> Memberships in the samples of archived projects are not displayed.</p>
+<p class="wysiwyg-text-align-justify"><strong>Assigning Panelists to a Sample:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Use the <strong>Assign panelist to a sample</strong> feature to manually assign the panelist to a sample and specify their disposition code for the project.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Important Information:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>A panelist can participate in only one sample per project. If a panelist is already allocated to a sample and you assign them to another sample in the same project via the detail view, they will be removed from the first sample.</li>
+</ul>
+<h3 id="PanelistsAdministration-ViewingSessionData" class="wysiwyg-text-align-justify"><strong>Viewing Session Data</strong></h3>
+<p class="wysiwyg-text-align-justify">The <strong>Sessions </strong>tab provides details of the panelist’s activity on the panel site.</p>
+<p class="wysiwyg-text-align-justify"><strong>Panel site information</strong></p>
+<div class="table-wrap wysiwyg-text-align-justify">
+<div class="table-wrap">
+<table class="relative-table wrapped tablesorter tablesorter-default confluenceTable" style="margin: 0px auto; border-collapse: collapse; width: 707.2px;">
+<colgroup> <col style="width: 0px;"> </colgroup> <colgroup> <col style="width: 0px;"> </colgroup>
+<tbody>
+<tr class="tablesorter-headerRow">
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; background-color: var(--ds-background-accent-gray-subtlest,#f0f0f0); padding: 7px 10px 7px 10px !important;" scope="col">
+<div class="tablesorter-header-inner">Field</div>
+</th>
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; background-color: var(--ds-background-accent-gray-subtlest,#f0f0f0); padding: 7px 10px !important 7px 10px;" scope="col">
+<div class="tablesorter-header-inner">Meaning</div>
+</th>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px 7px 10px !important;">Number of panel sessions</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left

@@ -1,0 +1,59 @@
+_locale</em> variable for use as the language selection for the survey and all survey related mails or SMS to the participant.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998097524370" alt="Pasted Graphic.png"></p>
+<p>If no e-mail template is available in the selected language, the default language will used as a fallback, just like in the survey. This also applies if no preferred language has been set</p>
+<ul>
+<li>
+<p>This feature is only available for the project types PE and ES and PA!</p>
+</li>
+</ul>
+<h3 id="header-58">People: Ways of Entry</h3>
+<p>The ways of entry of a panelist can now be tracked even more precisely. In the <strong>People</strong> menu <strong>Panelist Administration</strong> &gt; <strong>Detail view</strong> of the panelist &gt; <strong>Status information</strong> you will now find the <strong>Mode of entry</strong> as well as the <strong>Way of entry</strong>. If the Way of entry is via a portal, you can see from the Mode of entry whether the panelist did this himself (mode: <strong>registered</strong>) or by invitation (mode:<strong> invited</strong>).</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998068554642" alt="EN_modeofentry1.png"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998068318866" alt="EN_modeofentry2.png"></p>
+<h3 id="header-59">Media Library: New ACL Right</h3>
+<p>In order to restrict the import of media files to certain users, read and/or write rights  of the new <em>upload_media_file </em>ACL right can be assigned to this users. The activation of the <em>High Security</em> mode is required for this new ACL right. If this mode has been activated and no write permission has been assigned, it will not be possible to upload files to the media library. The read permission of this ACL right allows you to open the media library. The write permission of this ACL right allows you to upload files to the media library. Images can not be uploaded via the<strong> Edit</strong> icon of already imported images. This new ACL right affects the following areas:</p>
+<ul>
+<li>
+<p>Media library in the questionnaire editor</p>
+</li>
+<li>
+<p>Panel Website Asset Library</p>
+</li>
+<li>
+<p>Media library (Libary menu bar)</p>
+</li>
+</ul>
+<p>After a project has been migrated and a new group has been created, the new ACL right is activated for all teams.</p>
+<ul>
+<li>
+<p>Read and write rights are activated by default.</p>
+</li>
+</ul>
+<h3 id="header-60">Information</h3>
+<p>To activate High Security Mode, please contact the support team.</p>
+<h3 id="header-61">ACL Right: Panel Master Data</h3>
+<p>You need the write permission of the ACL right <em>Panel Master data</em> to select one of the following export options:</p>
+<ul>
+<li>
+<p>Master Data for Project</p>
+</li>
+<li>
+<p>Master Data and Result Data</p>
+</li>
+<li>
+<p>Master Data, Address Data and Result Data</p>
+</li>
+<li>
+<p>User Defined Templates Based on the Upper 3 Options</p>
+</li>
+</ul>
+<p>Path:</p>
+<p><strong>Export</strong> → <strong>New Export Order</strong></p>
+<p>The feature can be used to export the panel data of PA and MD projects. The change affects the existing ACL rights. For example, if you have the read permission of ACL rights <em>export_with_Ifdn</em> or <em>search_panel</em> (you only have read permission of the ACL right <em>panel master data</em>) the options mentioned will not be displayed. These options will not be available, if you want to copy or create new export templates.</p>
+<h3 id="header-62">Password Column</h3>
+<p>After activating the <em>High Security</em> mode, the option to display the password column will no longer be available. This applies to both PE and ES projects.</p>
+<h3 id="header-63">Active Project</h3>
+<p>If a guide project is connected to a PE project, you can no longer activate the <em>Privacy Assistant </em>(GDPR) subsequently. The <em>active</em> status in the <em>Survey</em> menu can no longer be set to <em>No further participations</em> and/or <em>Completed </em>manually. The <em>Define target value</em> icon and the Pop-up will not be displayed.</p>
+<h3 id="header-64">The <em>Accordion Matrix </em>Question Type</h3>
+<p>To configure the <em>Accordion Matrix</em> question type, you can enable the option "Inside title" to create a new dimension that will be displayed the entered text as a headline.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998090576274" alt="2019-09-23 15_29_24-Question.png"></p>
+<h2 id="header-66">Privacy Assistant (

@@ -1,0 +1,201 @@
+strong>External variable name</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Description</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>lfdn</p>
+</td>
+<td>
+<p>lfdn</p>
+</td>
+<td>
+<p>number</p>
+</td>
+<td>
+<p>Every participant in the questionnaire will be assigned a consecutive number.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>external_lfdn</p>
+</td>
+<td>
+<p>external_lfdn</p>
+</td>
+<td>
+<p>external lfdn</p>
+</td>
+<td>
+<p>If an external survey start is used, external_lfdn is used in the secondary project to store the participants’ ldfn from the primary project. You can download a dedicated documentation for external survey starting in the customer center.</p>
+<p>If several surveys are linked by external survey start, the variable <em>external_lfdn</em> will contain the lfdn of the primary project in all following surveys.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>tester</p>
+</td>
+<td>
+<p>tester</p>
+</td>
+<td>
+<p>tester</p>
+</td>
+<td>
+<p>Indicates whether the participant in question is a tester (not for anonymous projects), “1” being for a tester and “0” for a normal participant.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>status</p>
+</td>
+<td>
+<p>disco de</p>
+</td>
+<td>
+<p>disposition code</p>
+</td>
+<td>
+<p>The participants’ disposition code. Please mind that the disposition code is only part of the export file if the exporting user has read rights for <em>show_dispcode</em>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>last_page</p>
+</td>
+<td>
+<p>lastpage</p>
+</td>
+<td>
+<p>last page</p>
+</td>
+<td>
+<p>Indicates the last page sent by the server. I.e. if participants dropped out of a survey, this is usually the last page presented to them.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>quality</p>
+</td>
+<td>
+<p>quality</p>
+</td>
+<td>
+<p>quality</p>
+</td>
+<td>
+<p>The respondents’ quality index.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>time_to_complete_survey</p>
+</td>
+<td>
+<p>duration</p>
+</td>
+<td>
+<p>time to complete the survey</p>
+</td>
+<td>
+<p>The duration of survey completion (in seconds), i.e. the time elapsed between the respondent’s first and last accessing of the questionnaire.</p>
+<p>The duration is computed as follows: A record is made of when the respondent first and last accessed the survey. These values can be found in the export record as the variables datetime (SPSS label: datetime of survey start) and lastaccs (SPSS label: date of last access). The difference of these two values is the time the participant took to complete the survey (duration = lastaccs - datetime).</p>
+<p>If a respondent resumes the questionnaire after a break (disposition codes 23, 32), the duration is = “-1” because a meaningful calculation is not possible.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>p_000n</p>
+</td>
+<td>
+<p>p_000n</p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p>URL parameter</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>c_000n</p>
+</td>
+<td>
+<p>c_000n</p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p>User-defined variables</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>v_000n</p>
+</td>
+<td>
+<p>v_000n</p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p>Project variables. The project variables are sequentially numbered for each project, beginning with v_1.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>md_000n</p>
+<p>(Only in EFS Panel installations)</p>
+</td>
+<td>
+<p>md_000n</p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p>Master data variables.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>remote_host</p>
+</td>
+<td>
+<p>ext_host</p>
+</td>
+<td>
+<p>external host</p>
+</td>
+<td>
+<p>Indicates the domain of the computer via which the participant is connected to the Internet if it has a domain.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>remote_addr</p>
+</td>
+<td>
+<p>ip_addr</p>
+</td>
+<td>
+<p>remote address</p>
+</td>
+<td>
+<p>Indicates the IP address of the computer via which the participant is connected to the Internet.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>user_agent</p>
+</td>
+<td>
+<p>browser

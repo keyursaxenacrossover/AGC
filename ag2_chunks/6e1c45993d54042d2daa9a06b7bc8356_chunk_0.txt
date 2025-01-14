@@ -1,0 +1,60 @@
+<h1 id="h_01J4VAZ7V00XJSZEX1QY15344W"><span style="color: #2f3941; background-color: #ffffff;">Platform Administration Overview</span></h1>
+<div class="flex-shrink-0 flex flex-col relative items-end">
+<div>
+<div class="pt-0">
+<div class="gizmo-bot-avatar flex h-8 w-8 items-center justify-center overflow-hidden rounded-full">
+<div class="relative p-1 rounded-sm flex items-center justify-center bg-token-main-surface-primary text-token-text-primary h-8 w-8">The Platform Administration section covers the administrative tools and options in the EFS system, focusing on the menu bar in the upper right corner of the interface.</div>
+</div>
+</div>
+</div>
+</div>
+<div class="group/conversation-turn relative flex w-full min-w-0 flex-col agent-turn">
+<div class="flex-col gap-1 md:gap-3">
+<div class="flex max-w-full flex-col flex-grow">
+<div class="min-h-[20px] text-message flex w-full flex-col items-end gap-2 whitespace-pre-wrap break-words [.text-message+&amp;]:mt-5 overflow-x-auto" dir="auto" data-message-author-role="assistant" data-message-id="51b17a16-a87a-4357-bb16-7f94f7d30dd2">
+<div class="flex w-full flex-col gap-1 empty:hidden first:pt-[3px]">
+<div class="markdown prose w-full break-words dark:prose-invert light">
+<p>You’re already familiar with creating users—refer to the <strong><span style="color: #2f3941; background-color: #ffffff;"><a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20230186922642-Users" target="_blank" rel="noopener noreferrer">Users</a></span> article</strong> for more details on available options.</p>
+<h2 id="h_01J4VW1Q75EAC0SRYW6FDMYMF6">Action items</h2>
+<ul>
+<li>Review the <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20230145534994-Options" target="_blank" rel="noopener noreferrer">Options</a> article to understand the different administrative tools in the EFS module.
+<ul>
+<li><strong> Navigate through all menu items to get familiar with them.</strong></li>
+</ul>
+</li>
+<li>All access within DXI (EFS) modules is managed by <strong>ACL Rights</strong>. You’ll receive quite a few tickets related to this.
+<ul>
+<li>Review the <a href="https://drive.google.com/file/d/1N847GKKg4TDTgmAkDnJLmVt00_my-xua/view?usp=sharing" target="_blank" rel="noopener noreferrer">ACL Rights presentation</a> to build a solid understanding.</li>
+<li>For further reference,  the <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20229777873042-Overview-of-the-User-Rights" target="_blank" rel="noopener noreferrer">Overview of ACL Rights</a> article is also a great resource to review and have handy.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h1 id="h_01J4V96Z91K5RZ8PNG51WCK2YR">Tivian Access Overview</h1>
+<p><span style="color: #2f3941; background-color: #ffffff;">Tivian Access is a security module that can be integrated into existing SSO infrastructure to mitigate bad password habits and enhance the overall security of Tivian applications. </span></p>
+<h2 id="01J4VWFP7T0T2HPEPYC0JEG33E">Action items</h2>
+<p><span style="color: #2f3941; background-color: #ffffff;">Go over the below 2 items, providing a basic understanding of this feature.</span></p>
+<ul>
+<li><span style="color: #2f3941; background-color: #ffffff;"><a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20370595820946" target="_blank" rel="noopener noreferrer">Tivian Access</a> </span></li>
+<li>
+<span style="color: #2f3941; background-color: #ffffff;"><a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20230363373842-Tivian-Access-Architectural-Overview" target="_blank" rel="noopener noreferrer">Tivian Access Architectural Overview</a></span><span class="wysiwyg-underline"><br></span>
+</li>
+</ul>
+<p>We also use Okta as an optional module in EFS. It is an Identity Provider that is used to implement SSO capabilities. Users are synced to this provider. Okta is:</p>
+<ul>
+<li>
+<p>an SSO SaaS provider</p>
+</li>
+<li>
+<p>Identity provider for EFS and Portal accounts</p>
+</li>
+<li>
+<p>Individually set up by 2nd level support for customers using EFS <strong>IdentityAccessManager</strong> module</p>
+</li>
+</ul>
+<p>A good number of our customers use

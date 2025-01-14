@@ -1,0 +1,49 @@
+ messages, create new messages, and delete messages that are no longer used.</p>
+<p class="wysiwyg-text-align-justify">Information</p>
+<p class="wysiwyg-text-align-justify">Read rights for “panel_website_messages” are needed for accessing the Messages menu.</p>
+<p class="wysiwyg-text-align-justify">The Messages overview comprises all the messages created for the predefined language version and contains the following information:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Identifier: Internal Wildcard, used to invoke the message from the “Error messages” template.</li>
+<li>Header: Message header as displayed to visitors. Is only used with the “Error” message type.</li>
+<li>Message text: The actual content of the message.</li>
+<li>Message type:
+<ul>
+<li>Error</li>
+<li>Notification</li>
+</ul>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If you want to view messages of another language version that you’re authorized to access in a given installation with several websites and/or language versions, simply change the settings in the upper section of the dialog. You can use the View function to change the number of table columns displayed as well as the number of rows per page.</p>
+<p class="wysiwyg-text-align-justify">The table can be browsed according to the content of messages.</p>
+<p class="wysiwyg-text-align-justify">You can use the “Actions“ icons to edit the messages:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<strong>Change</strong>: Opens a form in which you can change the type, header, and text of a message.</li>
+<li>
+<strong>Delete</strong>:
+<ul>
+<li>If you want to delete only one message, click on the <strong>Delete</strong> icon. The message will be deleted after a confirmation prompt.</li>
+<li>If you want to remove several messages at once, tick the respective checkboxes of these messages in the “Delete” column. Depending on the situation, you may also use the checkboxes “Mark all entries on this page” and “Mark all entries found” below the table. After that, confirm by clicking on <strong>Delete</strong>. This batch delete function is particularly helpful while building or making major changes to a website when a large number of messages may have to be replaced and removed.</li>
+</ul>
+</li>
+</ul>
+<h2 id="creating-a-new-message" class="wysiwyg-text-align-justify"><strong>Creating a New Message</strong></h2>
+<p class="wysiwyg-text-align-justify">A new message will only be displayed if you also define a rule for invoking it. Currently, this is only possible for the registration form. Rules on invoking the other messages must be configured by our support. Therefore, creating messages is currently not advisable unless the messages concern registration or have been erroneously deleted.</p>
+<p class="wysiwyg-text-align-justify">To create a new message, please proceed as follows:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>Clicking on the <strong>Create message</strong> button will open the entry form for creating a new message assigned to the current language version.</li>
+<li>You can enter the following:<br>– Message type: You can choose between “Error” and “Notification”<br>– Identifier: A wildcard that will be inserted into the source code and filled with the message’s content.<br>– Header: Should only be entered for the “Error” message type.<br>– Message text: This field is used to enter the actual content.</li>
+<li>Confirm by clicking on <strong>Save</strong>.</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><em>Information: </em>For installations with several websites and/or language versions, please note that the language version of a new message is automatically predefined by the message overview settings. The language version cannot be subsequently changed.</p>
+<h1 id="maintaining-faq-and-news" class="auto-cursor-target wysiwyg-text-align-justify">Maintaining FAQ and News</h1>
+<h2 id="maintaining-faq" class="wysiwyg-text-align-justify"><strong>Maintaining FAQ</strong></h2>
+<p class="wysiwyg-text-align-justify">A well maintained FAQ list provides visitors and panelists with answers to frequentlyasked questions. This reduces the amount of support required by you, the panel operator, for answering simple questions.</p>
+<p class="wysiwyg-text-align-justify">The EFS Panel’s FAQ management function simplifies creation and maintenance of FAQs. At the same time, CMS gives you considerable room to design the FAQ area:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>FAQ items are created and maintained with the help of a specially developed optimized GUI. This means that a user who is not familiar with the CMS can take over their maintenance without requiring a great deal of training.</li>
+<li>You can create an FAQ area for each language version of the website(s).</li>
+<li>You can create FAQ items that are restricted to certain panel groups.</li>
+<li>A rich text editor is available for designing FAQ items.</li>
+<li>You can sort the items into different lists and place these on the panel pages at your discretion. The standard panel comprises an FAQ list the content of which is displayed in the “FAQ” menu. Further lists can be created as required.</li>
+<li>You can position the FAQ lists on the panel pages and modify how they are displayed with the help of the “FAQ

@@ -1,0 +1,39 @@
+ can be integrated into the text of a post.</li>
+<li>To ensure a uniform appearance, the images will be reduced automatically to thumbnails of uniform size during upload. When clicking on these thumbnails, the images will open in a separate layer. Both the size of the thumbnails and the maximum size of the images in the layer can be modified via the function modules for forums and blogs, if necessary.</li>
+<li>Blog authors are free to choose whether they want to present their images as usual within the text of their blog posts or in a special image gallery. To create an opened image gallery that allows you to conveniently flip back and forth between images, the panelists only have to tick the checkbox “Show image gallery” when publishing their posts.</li>
+</ul>
+<h2 id="integrating-multimedia-contents-in-posts-with-special-tags" class="wysiwyg-text-align-justify"><strong>Integrating Multimedia Content in Posts with Special Tags</strong></h2>
+<p class="wysiwyg-text-align-justify">Simple tags allow panelists to embed YouTube videos or Flickr image galleries in blogs, forums, or discussion posts.</p>
+<p class="wysiwyg-text-align-justify">If you want to encourage panelists to make more use of multimedia, you may include a reference to these tags in or beneath the post form.</p>
+<p class="wysiwyg-text-align-justify">Please note:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Videos or image galleries are only linked via the tags described, not uploaded. To learn about enabling the upload of multimedia content in posts or to a dedicated download page.</li>
+<li>For now, the new tags are not supported in IE 6.</li>
+</ul>
+<p class="auto-cursor-target wysiwyg-text-align-justify"><strong>The YouTube tags [youtube] and [/youtube]</strong></p>
+<p class="auto-cursor-target wysiwyg-text-align-justify">YouTube videos can be embedded in posts using the tags [youtube]URL[/youtube].</p>
+<ul class="wysiwyg-text-align-justify">
+<li class="auto-cursor-target">The URL of a YouTube video is inserted between those tags, e.g. [youtube]<span class="nolink">http://www.youtube.com/watch?v=VIDEOID[/youtube].</span>
+</li>
+<li class="auto-cursor-target">If the panelists insert the URL of a YouTube video using the Copy&amp;Paste function in the TinyMCE editor, the special tags are placed automatically.</li>
+<li class="auto-cursor-target">By default, the videos will be displayed in a centered frame of 505 x 853 pixels. The display size can be adjusted via the CSS classes ".youtube-frame" and ".youtube".</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>The Flickr tags [flickr] and [/flickr]</strong></p>
+<p class="wysiwyg-text-align-justify">Flickr image galleries can be embedded in posts as slide shows using the tags [flickr]URL[/flickr].</p>
+<ul class="wysiwyg-text-align-justify">
+<li>The URL of a Flickr image gallery is inserted between these tags, e.g. [flickr]http://www.flickr.com/photos/USERNAME/sets/SETID/[/flickr].</li>
+<li>If the panelists insert the URL of a Flickr image gallery using the Copy&amp;Paste function in the TinyMCE editor, the special tags are placed automatically.</li>
+<li>The image galleries are displayed with a size of 500 x 500 pixels. This size cannot be changed.</li>
+</ul>
+<h2 id="highlighting-selected-blogs" class="wysiwyg-text-align-justify"><strong>Highlighting Selected Blogs</strong></h2>
+<p class="wysiwyg-text-align-justify">Community websites will often present particularly well-done or popular blogs of their members in special lists or on overview pages. In the EFS Panel, you can easily create such an overview list, e.g. to present the blogs of your star bloggers, to introduce the blogs of new panelists, or to highlight your blog.</p>
+<p class="wysiwyg-text-align-justify">All you need to do is mark the desired blogs, create a list of these selected blogs, and display it in an appropriate place for the external view.</p>
+<p class="wysiwyg-text-align-justify"><strong>An overview list of newly-created blogs:</strong></p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017226476690" alt="image2024-1-12_12-32-13.png"></p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify">You want to make one or several blogs available to the public?</p>
+<p class="wysiwyg-text-align-justify">Use a separate blog section to create the blogs which are destined for the public.<br>Access control for this section should be set to “public”.</p>
+<p class="wysiwyg-text-align-justify">Mark the blogs as “Featured”.</p>
+<p class="wysiwyg-text-align-justify">Then, create a publically accessible page. Create a “List of featured panelist blogs" function module. Reference the blog section which contains public blogs.</p>
+<p class="wysiwyg-text-align-justify"><strong>Work steps

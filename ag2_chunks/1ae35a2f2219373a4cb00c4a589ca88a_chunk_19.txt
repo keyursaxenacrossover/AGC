@@ -1,0 +1,62 @@
+</strong> field. With this filter criterion panelists whose birthday matches the current day will be added to the group.</p>
+</li>
+<li>
+<p data-renderer-start-pos="22738">Click on <strong data-renderer-mark="true">Save</strong>.</p>
+</li>
+<li>
+<p data-renderer-start-pos="22756">In the line below, select the master data variable “md_month_of_birth” that you have just created. Select the <strong data-renderer-mark="true">equal</strong> option from the <strong data-renderer-mark="true">Condition</strong> drop-down menu and enter "#CURRENT_DAY_MONTH#" in the <strong data-renderer-mark="true">Value</strong> field. This filter criterion will add panelists to the group whose birth month matches the current month.</p>
+</li>
+<li>
+<p class="wysiwyg-text-align-left" data-renderer-start-pos="23067">Click on <strong data-renderer-mark="true">Save</strong>.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014859739666"></p>
+</li>
+</ul>
+<div class="rich-media-item mediaSingleView-content-wrap image-center cc-1q73e46 wysiwyg-text-align-justify" data-layout="center" data-width="760" data-width-type="pixel" data-node-type="mediaSingle" data-renderer-start-pos="23085">
+<div class="cc-63depl">
+<div class="cc-k4ngfq" data-mark-type="border" data-color="#091e4224" data-size="2">
+<div data-context-id="4149608460" data-type="file" data-node-type="media" data-width="1904" data-height="545" data-id="09485a08-8ba2-4b38-b04f-30f5efa3596f" data-collection="contentId-4149608460" data-file-name="file" data-file-size="1" data-file-mime-type="" data-alt="image-20240320-113951.png" data-renderer-start-pos="23086"> </div>
+</div>
+</div>
+</div>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="23088"> </p>
+<h3 id="Create-Update-Rule" class="wysiwyg-text-align-justify" data-renderer-start-pos="23090"><strong data-renderer-mark="true">Create Update Rule</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="23110">In the next step, we will create the update rule that ensures that panelists are automatically added to the "Birthday" group and also automatically receive a birthday email.</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="23287">Create a new update rule with the name "Birthday" as described above under Update rules.</p>
+</li>
+<li>
+<p data-renderer-start-pos="23379">Select <strong data-renderer-mark="true">default</strong> as the group category and the <strong data-renderer-mark="true">Birthday</strong> group as the panel group to be updated.</p>
+</li>
+<li>
+<p data-renderer-start-pos="23476">Activate the checkbox for <strong data-renderer-mark="true">Execute rule automatically?</strong>.</p>
+</li>
+<li>
+<p data-renderer-start-pos="23534">Under Start time, enter 8:00, for example.</p>
+</li>
+<li>
+<p data-renderer-start-pos="23580">Select <strong data-renderer-mark="true">Day</strong> as the <strong data-renderer-mark="true">Interval type</strong> and <strong data-renderer-mark="true">1</strong> as the <strong data-renderer-mark="true">Interval value</strong> so that the update rule is executed once a day.</p>
+</li>
+<li>
+<p data-renderer-start-pos="23691">Click on <strong data-renderer-mark="true">Save</strong>.</p>
+</li>
+<li>
+<p data-renderer-start-pos="23709">Now define the required actions:</p>
+</li>
+</ul>
+<ol class="ak-ol wysiwyg-text-align-justify" start="1" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="23749"><strong data-renderer-mark="true"><u data-renderer-mark="true">Empty group</u></strong></p>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="23764">To ensure that the "Birthday" group is always updated with panelists whose birthday is on the current day, it must be emptied in the first step:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="23912">In the <strong data-renderer-mark="true">Create new action</strong> line, select the <strong data-renderer-mark="true">Empty group</strong> option from the drop-down menu.</p>
+</li>
+<li>
+<p data-renderer-start-pos="24001">Click on <strong data-renderer-mark="true">Save</strong>.</p>
+</li>
+</ul>
+<ol class="ak-ol wysiwyg-text-align-justify" start="2" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="24023"><strong data-renderer

@@ -1,0 +1,158 @@
+atlassian-cross_mark" data-emoji-text=":cross_mark:"></p>
+</td>
+<td style="width: 275.243px;">
+<p>Only in <em>EFS People</em> installations: This template is used to send vouchers to panelists.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="wildcards-for-all-project-types" class="wysiwyg-text-align-justify"><strong>Wildcards for all Project Types</strong></h2>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default">
+<colgroup> <col style="width: 156.0px;"> <col style="width: 604.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Wildcard</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>#url#</p>
+</td>
+<td>
+<p>URL of the project. The protocol and domain used in the URL depend on the settings in the “Base URL” field</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#ptitle#</p>
+</td>
+<td>
+<p>project title</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#pdescr#</p>
+</td>
+<td>
+<p>project description</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#pcomments#</p>
+</td>
+<td>
+<p>project comments</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#startdate#</p>
+</td>
+<td>
+<p>start date in “DD.MM.YYYY” format.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#startDateRaw#</p>
+</td>
+<td>
+<p>Start date and time in standard format: “YYYY-MM-DD HH:MM:SS“</p>
+<p>You can also define the date and time yourself by adding your desired format with a vertical dash, e.g. #startDateRaw|d#: “DD“. For further supported user-defined formats see: <a href="http://php.net/manual/en/function.date.php">http://php.net/manual/en/function.date.php</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#starttime#</p>
+</td>
+<td>
+<p>start time in “HH:MM:SS” format.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#startdatetime#</p>
+</td>
+<td>
+<p>start date and time in “DD.MM.YYYY HH:MM:SS” format.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#enddate#</p>
+</td>
+<td>
+<p>end date in “DD.MM.YYYY” format.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#endDateRaw#</p>
+</td>
+<td>
+<p>End date and time in standard format: “YYYY-MM-DD HH:MM:SS“</p>
+<p>You can also define the date and time yourself by adding your desired format<br>with a vertical dash, e.g. #endDateRaw|d#: “DD“. For further supported<br>user-defined formats see: <a href="http://php.net/manual/en/function.date.php">http://php.net/manual/en/function.date.php</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#endtime#</p>
+</td>
+<td>
+<p>end time in “HH:MM:SS” format</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#enddatetime#</p>
+</td>
+<td>
+<p>end date and time in “DD.MM.YYYY HH:MM:SS” format</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>[shorturl]URL[/shorturl]</p>
+</td>
+<td>
+<p>Used to shorten and conceal long URLs. Not recommended for personalized projects as it reduces the complexity of invitation codes.</p>
+<p>Example: [shorturl]#url#?a=param1&amp;b=#v_1#[/shorturl]</p>
+<p>Please note: The shortened URLs will be displayed in the sent email (not in the preview).</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="wildcards-for-personalized-surveys-and-panel-projects" class="wysiwyg-text-align-justify"><strong>Wildcards for Personalized Surveys and Panel Projects</strong></h2>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default">
+<colgroup> <col style="width: 210.0px;"> <col style="width: 550.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Wildcard</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>#u_firstname#</p>
+</td>
+<td>
+<p>first name</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#u_name#</p>
+</td>
+<td>
+<p>last name</p>
+</td>
+</tr>

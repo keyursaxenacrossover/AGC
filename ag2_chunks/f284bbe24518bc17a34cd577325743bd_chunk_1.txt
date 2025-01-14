@@ -1,0 +1,99 @@
+<p>A core EFS instance can also be seen in the following repository: <a href="https://bitbucket.org/qbengineering/efs-chart/src/master/">https://bitbucket.org/qbengineering/efs-chart/src/master/</a> <strong>(this will be replaced with Github URL once the import is finished)</strong></p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20593336125202" alt="System Scope and Context - Deployment LvL 2(1).png"></p>
+<ul>
+<li>
+<p data-renderer-start-pos="454"><strong data-renderer-mark="true">nginx:</strong> The webserver container that serves static files and forwards traffic via fast CGI to the PHP container.</p>
+</li>
+<li>
+<p data-renderer-start-pos="567"><strong data-renderer-mark="true">PHP FPM:</strong> A process pool container that serves PHP related requests and contains the main business logic.</p>
+</li>
+<li>
+<p data-renderer-start-pos="673"><strong data-renderer-mark="true">maria db:</strong> The database that stores the data of EFS. It is part of an RDS instance.</p>
+</li>
+<li>
+<p data-renderer-start-pos="757"><strong data-renderer-mark="true">memcached: </strong>An in-memory cache that caches data of the PHP FPM container.</p>
+</li>
+<li>
+<p data-renderer-start-pos="831"><strong data-renderer-mark="true">Elasticsearch: </strong>A search database that is used by different modules to sync data and search for that data.</p>
+</li>
+</ul>
+<h1 id="h_01J4KNNZ15QBEKZPGY94V72XZ1">EFS System Context</h1>
+<p>EFS is <strong>built in PHP</strong> and uses a monolithic architecture approach using PHP modules for modularization and cutting the complexity in scopes units. More details can be found in <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20591344055826" target="_blank" rel="noopener noreferrer">Third Party Software/Technologies Used in EFS</a>.</p>
+<ul>
+<li>The Software is installation based, meaning that the software is deployed once per tenant in most use cases. The software itself has multi-tenant capabilities that might be used in subcontractor cases or special cases.</li>
+<li>An installation based deployment with a sharing on tenants gives the flexibility to change each installation individually with “deep” customizations without affecting any other tenant. </li>
+</ul>
+<p>There is no sharp dividing line between EFS and the systems around it. The following shows a picture of the system context and the surrounding components:</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20593679622674" alt="System Scope and Context.png"></p>
+<h1 id="header-3">General concepts</h1>
+<ul>
+<li>
+<p>Single tenancy SaaS application.</p>
+</li>
+<li>
+<p>At least all components within the k8s cluster are deployed per customer.</p>
+</li>
+<li>
+<p>All other services are shared to some extend.</p>
+<ul>
+<li>
+<p>A MariaDB instance may be reserved to one high-volume/high-concurrency customer.</p>
+</li>
+<li>
+<p>A NFS instance may be reserved to one high-volume customer.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="header-4">Customer facing components</h2>
+<h3 id="header-6">EFS Admin frontend</h3>
+<ul>
+<li>
+<p>UI for all administrative functions within EFS i.e. survey and questionnaire definition, participants management and so on.</p>
+</li>
+<li>
+<p>Separate login for EFS administrators either handled directly by EFS Backend or delegated to Okta for SSO intergration.</p>
+</li>
+<li>
+<p>Used technologies:</p>
+<ul>
+<li>
+<p>HTML markup rendered by PHP on EFS Backend</p>
+</li>
+<li>
+<p>Various JS frameworks: Dojo, JQuery, CanJS, mootools ….</p>
+</li>
+<li>
+<p>Static CSS created via Sass at build-time</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Hosted on EFS Backend pods</p>
+</li>
+<li>
+<p>Used APIs on EFS Backend:</p>
+<ul>
+<li>
+<p>HTTP queries</p>
+</li>
+<li>
+<p>Internal Rest-API</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Sourcecode</p>
+<ul>
+<li>
+<p><a href="https://bitbucket.org/qbengineering/questback_client_efs_survey/src/master/" data-card-appearance="inline">https://bitbucket.org/qbengineering/questback_client_efs_survey/src/master/</a></p>
+</li>
+<li>
+<p><a href="https://bitbucket.org/qbengineering/tivian_server_application_efs/src/master/modules/survey/" data-card-appearance="inline">https://bitbucket.org/qbengineering/tivian_server_application_efs/src/master/modules/survey/</a></p>
+</li>
+<li>
+<p><a href="https://bitbucket.org/qbengineering/tivian_server_application_efs/src/master/modules/efs/" data-card-appearance="inline">https://bitbucket.org/qbengineering/tivian_server_application_efs/src/master/modules/efs/</a></p>
+</li>
+</ul>
+</li>
+</ul

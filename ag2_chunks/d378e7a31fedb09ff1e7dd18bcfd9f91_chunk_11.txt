@@ -1,0 +1,77 @@
+<p>Name</p>
+</li>
+<li>
+<p>Report type: You can choose between the report types “System-generated report”, “Externally generated report” and “Common information and documents”.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Define in which phase of the project the report should be available.</p>
+</li>
+<li>
+<p>By defining the minimum number of answers for the creation of the report and for specific items, you define anonymity criteria for the reports.</p>
+</li>
+<li>
+<p><strong>Save</strong> the report definition.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Defining tile patterns</strong></p>
+<p class="wysiwyg-text-align-justify">To open the editing dialog of a report, click its name or the <strong>Edit</strong> icon in the report overview. In the “Report language” section in the column “Title pattern”, you can enter a title pattern for each report language. The pattern can be personalized using wildcards. In an employee survey, you can use all variables of the participant administration (u_xxx).</p>
+<p class="wysiwyg-text-align-justify"><strong>Creating report versions</strong></p>
+<p class="wysiwyg-text-align-justify">In the last step, you create report versions and define details for them. The use of report versions is recommendable e.g. if you want to present a report in various languages or file types (e.g. doc, pdf, and xls).</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Per default, one report version is pre-defined.</p>
+<ul>
+<li>
+<p>You can access its details by clicking <strong>Edit</strong> and changing it as described below.</p>
+</li>
+<li>
+<p>To create additional versions, click the<strong> Create version</strong> button.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>In the “Title pattern” field, you can find the already-defined title pattern of the report. Mind that it can not be changed in this dialog.</p>
+</li>
+<li>
+<p>Select the appropriate report language.</p>
+</li>
+<li>
+<p>Select the file type. PDF, MS Excel, MS Word, MS PowerPoint, and ZIP files are available.</p>
+</li>
+<li>
+<p>Label of the download link: Define how the link on the download platform should be labeled.</p>
+</li>
+<li>
+<p>File name when downloading: Enter the name that should be displayed during download, e.g. report_eng. The file name type is automatically attached by the system.</p>
+</li>
+<li>
+<p>Only for system-generated reports: File pattern: Enter the pattern of the file name. For the standard report, this is report_{org_code}_{lang_id}. org_code is the meta name of the unit, and lang_id is the language ID.</p>
+</li>
+<li>
+<p>Only for system-generated reports: Template: In this field, Globalpark staff enters the file which should be used as a template for system-generated reports. Per default, it is “template.tex”.</p>
+</li>
+<li>
+<p>Click <strong>Save</strong>.</p>
+</li>
+<li>
+<p>Add further report versions as required.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Alternatively, the report titles can be defined manually in the report allocations file and imported. The use of this function is recommendable for external reports, specifically.</p>
+<p class="wysiwyg-text-align-justify"><strong>Uploading reports into the Media Library</strong></p>
+<p class="wysiwyg-text-align-justify">Once you’ve created the report definitions, upload the report files themselves into the media library. In the <strong>Process Configuration</strong> → <strong>Report definition</strong> menu on the <strong>Reports</strong> tab, select the <strong>Upload external reports</strong> button. The media library familiar with the E<em>FS Survey</em> is opened in a pop-up window. Upload the externally generated reports into the media library. If you have to upload many reports, it is recommended to compress them into a Zip file for upload.</p>
+<p class="wysiwyg-text-align-justify">The amount of reports that can be uploaded in a single step is limited due to network performance and disk capacity.</p>
+<h3 id="report-manager" class="wysiwyg-text-align-justify"><strong>Report manager</strong></h3>
+<p class="wysiwyg-text-align-justify">For system-generated reports, the report allocations will require no further editing. But you can access the allocations. Click the<strong> Report Manager</strong> tab.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013850454802" alt="Report manager.jpg"></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Click the <strong>Consistency check button</strong> to trigger a check of the report allocations. The allocations of newly uploaded reports will only be visible after running the consistency check!</p>
+</li>
+<li>
+<p>All existing reports are shown, including already existing report allocations and errors.</p>
+</li>
+<li>
+<p>Now all reports and common documents uploaded into the media library are displayed, including already existing report allocations and errors. For system-generated reports, the allocations have usually been created by Globalpark, for externally generated reports and common

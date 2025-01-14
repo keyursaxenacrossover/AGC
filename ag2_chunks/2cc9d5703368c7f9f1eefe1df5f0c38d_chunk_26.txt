@@ -1,0 +1,96 @@
+>.</p>
+<p class="wysiwyg-text-align-justify"><strong>Editing default texts for contact mail</strong></p>
+<p class="wysiwyg-text-align-justify">You can edit default e-mail text elements that can be sent via the contact form to the panel operator.</p>
+<p class="wysiwyg-text-align-justify">To do so, switch to the Website-&gt;Panel websites menu, select the desired language version, and open the Configuration tab.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>You can edit the text elements in the “Contact form” section.</p>
+</li>
+<li>
+<p>You can edit the name of the panel in the “Locale settings” section.</p>
+</li>
+</ul>
+<h3 id="function-module-account-balance" class="wysiwyg-text-align-justify"><strong>Function Module: Account Balance</strong></h3>
+<p class="wysiwyg-text-align-justify">You can use the “Account balance” function module to generate an overview of the panelists’ account balance, which includes all transactions carried out. In the standard panel, you can find such an overview on the <strong>My Home → Account balance</strong> page, for example.</p>
+<p class="wysiwyg-text-align-justify">In the standard panel, the account balance template is entitled “func_account_balance”.</p>
+<p class="wysiwyg-text-align-justify"><strong>Options</strong></p>
+<p class="wysiwyg-text-align-justify">The “Account Balance” function module offers the following options.</p>
+<table class="wysiwyg-text-align-justify" style="height: 547px;" border="1" width="755" data-layout="default" data-table-width="760">
+<colgroup>
+<col style="width: 201.0px;">
+<col style="width: 389.0px;">
+<col style="width: 170.0px;">
+</colgroup>
+<tbody>
+<tr style="height: 67px;">
+<th class="wysiwyg-text-align-center" style="height: 67px; width: 196.007px;" data-highlight-colour="#57d9a3">
+<p><strong>Option</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="height: 67px; width: 381.719px;" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="height: 67px; width: 166.892px;" data-highlight-colour="#57d9a3">
+<p><strong>Standard panel "Account Balance" page</strong></p>
+</th>
+</tr>
+<tr style="height: 44px;">
+<td style="height: 44px; width: 187.986px;">
+<p>Reference name for template</p>
+</td>
+<td style="height: 44px; width: 373.698px;">
+<p>Name that can be used to trigger the module in positioning templates.</p>
+</td>
+<td style="height: 44px; width: 158.872px;">
+<p>account_balance</p>
+</td>
+</tr>
+<tr style="height: 44px;">
+<td style="height: 44px; width: 187.986px;">
+<p>Page module title</p>
+</td>
+<td style="height: 44px; width: 373.698px;">
+<p>Name of the module in the page’s module overview</p>
+</td>
+<td style="height: 44px; width: 158.872px;">
+<p>Account balance</p>
+</td>
+</tr>
+<tr style="height: 44px;">
+<td style="height: 44px; width: 187.986px;">
+<p>Module template</p>
+</td>
+<td style="height: 44px; width: 373.698px;">
+<p>Module-specific template that controls how data provided by the module are displayed.</p>
+</td>
+<td style="height: 44px; width: 158.872px;">
+<p>func_account_balance</p>
+</td>
+</tr>
+<tr style="height: 67px;">
+<td style="height: 67px; width: 187.986px;">
+<p>Show entries with zero points?</p>
+</td>
+<td style="height: 67px; width: 373.698px;">
+<p>If this option is enabled, entries that did not affect the account balance will be displayed as well.</p>
+</td>
+<td style="height: 67px; width: 158.872px;">
+<p> </p>
+</td>
+</tr>
+<tr style="height: 67px;">
+<td style="height: 67px; width: 187.986px;">
+<p>Number of entries displayed/ page</p>
+</td>
+<td style="height: 67px; width: 373.698px;">
+<p>Limits the length of the display per page. Excess entries are listed on the following pages.</p>
+</td>
+<td style="height: 67px; width: 158.872px;">
+<p>5</p>
+</td>
+</tr>
+<tr style="height: 44px;">
+<td style="height: 44px; width: 187.986px;">
+<p>Restrict the list to entries from the last x months</p>
+</td>
+<td style="height: 44px; width: 373.698px;">
+<p

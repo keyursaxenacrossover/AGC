@@ -1,0 +1,95 @@
+<h1 id="h_01J7E40H1YP66KBGW735RP56S8">Overview</h1>
+<p>The firewall based on the <a href="https://it.globalpark.de/twiki/bin/view/Support/Customizing-Modules:CustomRouting"><u>Custom Routing Plugin</u></a> is used in case someone attacks an installation or panel website.<br>The attacker shall be fend off so that the panel and sensitive data can not be accessed and/or stolen.<br>Also we want to avoid too many accesses to the installation and thus too many queries or traffic that slows down the performance of the installation.</p>
+<p>The code for the firewall now is available on bitbucket:<br><a href="https://bitbucket.org/efs-ts/tscodehelper/src/master/">https://bitbucket.org/efs-ts/tscodehelper/src/master/</a></p>
+<h2 id="h_01J7E3TZAB7DDDXVH0A6SWVG3K">Table of Contents</h2>
+<ul>
+<li>
+<a href="#header-3">How to activate it</a>
+<ul>
+<li><a href="#header-5">Possible options for requestMatch</a></li>
+</ul>
+</li>
+<li><a href="#header-7">Installations that have the firewall installed (17.08.2023):</a></li>
+</ul>
+<h2 id="header-3">How to activate it</h2>
+<ul>
+<li>
+<p>On the console check out the files from git:</p>
+<pre><code class="language-text"> cd /nfs/opstX/installation/projekte/ &amp;&amp; git clone git@bitbucket.org:efs-ts/TsCodehelper.git</code></pre>
+</li>
+<li>
+<p>Configure the firewall</p>
+<pre><code class="language-text">    projekte/TsCodeHelper/Firewall/Conf/firewallconf.php
+
+    Example 
+
+    $_fireWalls = array(
+
+        // Firewall 1
+        array(
+            'condition'               =&gt; array(
+                'class'                   =&gt; 'TsCodeHelper\Firewall\Condition\Ip',          // Only ip for now, will be extended for different purposes (e.g. Panelist Email address whitelist)
+            ),
+            'options' =&gt; array(
+                'requestMatch'            =&gt; $_SERVER['REQUEST_METHOD'] == "POST" ,         // On the Fly boolean value if current request needs to be checked
+                'ipAddr'                  =&gt; $_SERVER["HTTP_X_FORWARDED_FOR"],                       // Get IP Address from Request 
+                'numberOfRequestsAllowed' =&gt; 10,                                            // Threshhold for adding to blacklist
+                'blackListFile'           =&gt; '/Conf/blacklist_'.date("Y_m_d_H").'.lst',     // Blacklist of whatever criteria should be checked
+                'firewallLogFile'         =&gt; '/Logs/firewall.log',                          // Log blocked accesses? (auto logs if file is defined and writable)
+                'accessLogReplacement'    =&gt; '/Logs/custom_access_'.date("Y_m_d_H").'.log', // Requests need to be logged additionally for firewal to work
+                'manualWhiteList'         =&gt; array(
+                    '87.79.30.2',
+                    '87.79.30.37',
+                ),
+                'manualBlackList'         =&gt; array()
+            ),
+            'requestHandler' =&gt; array(
+                'class'                   =&gt; 'TsCodeHelper\Firewall\Request\Murder',        // Class to handle identified requests (If closure defined in routing plugin, class will be overwritten)
+            )
+        )
+    );</code></pre>
+</li>
+<li>
+<p>Add routing plugin file (if not yet existent):</p>
+<ul>
+<li>
+<p>within htdocs folder of installation</p>
+<ul>
+<li>
+<p>create folder if not yet existent: mkdir -p custom/routing</p>
+</li>
+<li>
+<p>cd custom/routing</p>
+</li>
+<li>
+<p>vi plugin.inc.php</p>
+</li>
+<li>
+<p>paste content from <a href="https://it.globalpark.de/twiki/bin/view/Support/Customizing-Modules:CustomRouting#Example"><u>CustomRouting</u></a></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Initialize Firewall in routing plugin:</p>
+<pre><code class="language-text">        @include_once gp_conf::get('basepath_extensions').'/TsCodeHelper/Firewall/Firewall.php';
+        TsCodeHelper\Firewall\Firewall::getInstance()
+                                      -&gt;run();</code></pre>
+</li>
+<li>
+<p>Enable routing plugin in EFS config using the root account</p>
+<ul>
+<li>
+<p>has_routing_plugin = true</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Don't forget to add an update to the installation in Globis mentioning the config flags changed and the support case</p>
+</li>
+</ul>
+<p><br>At various points closures can be injected to react to individual situations.<br>E.g. in case of Respondi we do not simply use php function <strong>die()</strong> to show a blank page but show a custom message. This can be done as follows:</p>
+<pre><code class="language-text">        // FW: Override what happens when Request was detected as malicious (default just ... get’s murdered)
+        $firewallRequestClosure = function(){
+            die("add

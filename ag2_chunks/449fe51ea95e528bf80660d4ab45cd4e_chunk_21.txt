@@ -1,0 +1,216 @@
+#</p>
+</td>
+<td>
+<p>Link that allows to unsubscribe (Function Modules: Forum, Panelist Blog)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#poster_account#</p>
+</td>
+<td>
+<p>The quoted panelist’s account (Function Module: Forum)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#poster_firstname#</p>
+</td>
+<td>
+<p>The quoted panelist’s first name (Function Module: Forum)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#poster_name#</p>
+</td>
+<td>
+<p>The quoted panelist’s last name (Function Module: Forum)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#poster_email#</p>
+</td>
+<td>
+<p>The quoted panelist’s e-mail address (Function Module: Forum)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#post_date#</p>
+</td>
+<td>
+<p>Date the quoted post was created (Function Module: Forum)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#post_title#</p>
+</td>
+<td>
+<p>Title of the quoted post (Function Module: Forum)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#mail_validation_code#</p>
+</td>
+<td>
+<p>You insert the actual verification link (Function Modules: Registration Form, Change E-Mail, Change Data)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#mail_validation_code_ complete#</p>
+</td>
+<td>
+<p>You can create a complete clickable link (Function Modules: Registration Form, Change E-Mail, Change Data)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#item_title#</p>
+</td>
+<td>
+<p>Bonus title (Function Module: Bonus List and Redemption)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#item_description#</p>
+</td>
+<td>
+<p>Description (Function Module: Bonus List and Redemption)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#item_description2#</p>
+</td>
+<td>
+<p>Description 2 (Function Module: Bonus List and Redemption)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#item_category_title#</p>
+</td>
+<td>
+<p>Bonus category title (Function Module: Bonus List and Redemption)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#item_selected_amount#</p>
+</td>
+<td>
+<p>Value of payment (Function Module: Bonus List and Redemption)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#item_vendor#</p>
+</td>
+<td>
+<p>Manufacturer (Function Module: Bonus List and Redemption)</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="properties-of-mail-templates" class="wysiwyg-text-align-justify"><strong>Properties of Mail Templates</strong></h2>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default">
+<colgroup> <col style="width: 153.0px;"> <col style="width: 607.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Column</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>ID</p>
+</td>
+<td>
+<p>Each mail template in an EFS installation can be identified by its unique ID.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Type</p>
+</td>
+<td>
+<p>By assigning it to a particular type of mail template you define in which work situations the respective template is to be available.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Description</p>
+</td>
+<td>
+<p>Description of the template. This is only used internally for orientation in the admin area.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Mail subject</p>
+</td>
+<td>
+<p>The subject of the e-mail.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Modifier user name</p>
+</td>
+<td>
+<p>Name of the last user who edited the template.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Status</p>
+</td>
+<td>
+<p>The status indicates whether a mail template is available in the mail forms. Active templates are available, but inactive ones are not.</p>
+<p>The status entry is a clickable link: You can change the status easily with one click.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>HTML format</p>
+</td>
+<td>
+<p>If the template is an HTML mail, this will be indicated in the overview table.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>E-mail address</p>
+</td>
+<td>
+<p>Selected sender's address</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Name of the sender</p>
+</td>
+<td>
+<p>If a real name has been stored with the sender's address, it will be displayed in this field</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Language version</p>
+</td>
+<td>
+<p>The mail templates are assigned to a particular language version of the panel.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text

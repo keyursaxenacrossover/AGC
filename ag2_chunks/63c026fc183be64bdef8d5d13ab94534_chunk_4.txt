@@ -1,0 +1,82 @@
+-justify"><strong>Initiating Payments</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Most panels allow panelists to initiate bonus payments through a personalized homepage, such as a shop or a form to exchange points for vouchers.</li>
+<li>Voucher sending can be handled within EFS and can be automated if necessary. Use People → Incentive management → Bonus system → Issuing of vouchers to check and issue requests.</li>
+<li>External payment types, like mailing bonuses, can be tracked using People → Incentive management → Bonus system → Payment list. This allows checking and tracking the payment requests and external progress.</li>
+<li>Payment requests can be checked before processing and inappropriate requests can be canceled.</li>
+<li>Approved payment requests can be downloaded for external processing.</li>
+<li>Register the completion of the external payment process within EFS once done.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Defining Bonuses Offered</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>In Website → Bonus management, define which bonuses are offered to panelists.</li>
+</ul>
+<div class="flex-shrink-0 flex flex-col relative items-end wysiwyg-text-align-justify">
+<div>
+<div class="pt-0">
+<div class="gizmo-bot-avatar flex h-8 w-8 items-center justify-center overflow-hidden rounded-full">
+<div class="relative p-1 rounded-sm flex items-center justify-center bg-token-main-surface-primary text-token-text-primary h-8 w-8">Sending Confirmation Mail upon Bonus Redemption</div>
+</div>
+</div>
+</div>
+</div>
+<div class="group/conversation-turn relative flex w-full min-w-0 flex-col agent-turn wysiwyg-text-align-justify">
+<div class="flex-col gap-1 md:gap-3">
+<div class="flex flex-grow flex-col max-w-full">
+<div class="min-h-[20px] text-message flex w-full flex-col items-end gap-2 whitespace-pre-wrap break-words [.text-message+&amp;]:mt-5 overflow-x-auto" dir="auto" data-message-author-role="assistant" data-message-id="9809810b-dca5-4785-98b1-3ffbc9538afb">
+<div class="flex w-full flex-col gap-1 empty:hidden first:pt-[3px]">
+<div class="markdown prose w-full break-words dark:prose-invert light">
+<p>EFS allows you to set up a confirmation mail sent each time a panelist redeems a bonus via the website. This ensures you are informed of payment requests early, allowing for quick checks and processing. This function can also confirm the redemption to the panelists.</p>
+<p><strong>Steps to Set Up Confirmation Mail:</strong></p>
+<ol>
+<li>
+<p><strong>Create a Mail Template:</strong></p>
+<ul>
+<li>Create a mail template of the “Standard mail” type.</li>
+<li>Use the following wildcards:
+<ul>
+<li>Participant variables: #u_000n# (filled with panelist data).</li>
+<li>Master data: #m_000n# and #md_000n#.</li>
+<li>Redemption-specific wildcards:
+<ul>
+<li>#item_title#: Bonus title</li>
+<li>#item_description#: Description</li>
+<li>#item_description2#: Description 2</li>
+<li>#item_category_title#: Bonus category title</li>
+<li>#item_selected_amount#: Value of payment</li>
+<li>#item_vendor#: Manufacturer</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Configure the Redemption Page:</strong></p>
+<ul>
+<li>In the website editor, open the “Redeem points” page.</li>
+<li>Select the mail template in the “Mail template for confirmation mail” field of the “Bonus list and redemption” module.</li>
+<li>Specify the recipient(s) in the field below (separate multiple recipients with commas).</li>
+<li>To send a confirmation to panelists, use the wildcard #u_email# to include their email addresses.</li>
+<li>Click Save to confirm.</li>
+</ul>
+</li>
+</ol>
+<h3 id="h_01J3FFJKHSS77QMA77KCC70TST">Viewing the Payment Requests</h3>
+<h4 id="h_01J3FFJKHSBM6PC170JTRZXVSH">1. Aggregate View</h4>
+<p>In the People → Incentive management → Bonus system → Payment list menu, you can view and edit payment requests.</p>
+<ul>
+<li>The overview lists requests aggregated by bonus type and month.</li>
+<li>
+<strong>Bonus types with open requests</strong>: Click the title or Edit icon to open and process lists of requests with statuses “earmarked” and “exported”.</li>
+<li>
+<strong>Bonus types without open requests</strong>: Not clickable.</li>
+<li>
+<strong>Detail View button</strong>: Access a list of all payment requests, including processed ones.</li>
+<li>Use the search function to filter by request status, bonus type and category, accounting date, and type of payment.</li>
+</ul>
+<h4 id="h_01J3FFJKHS0D3VJNAE010EB074">2. Detail View</h4>
+<p>Click the Detail view button in the aggregated view to see all payment requests, including processed ones.</p>
+<p><strong>Alternative Recipient Address:</strong></p>
+<ul>
+<li>Optionally, panelists can specify an alternative recipient address (e

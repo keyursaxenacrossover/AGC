@@ -1,0 +1,60 @@
+>%_CATEGORY_[instance_id]</p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>%_RATER_GROUP_[instance_id]</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table><h3 id="header-60">MySight v2 Sync Process in the logs</h3><ul>
+<li>
+<p>if you grep for JOBMAKER you will see the jobs</p>
+<pre><code class="language-text">###### JOBMAKER STARTING JOB 'mysightSyncResultQueue'</code></pre>
+<p> or</p>
+<pre><code class="language-text">###### JOBMAKER STARTING JOB 'mysightSyncGroupQueue'</code></pre>
+</li>
+<li>
+<p>within these connections the INTERMEDIATE Db will get updated. The last UPDATE statement might look like this:</p>
+<pre><code class="language-text">      13582387 Query  UPDATE EFS_D19D4250CBBA35A2A8695258E7225C94_FACT_8765 AS f JOIN EFS_D19D4250CBBA35A2A8695258E7225C94_TEXT_8765 AS t 
+                                ON(f.PROJECT_ID=t.PROJECT_ID AND f.PARTICIPATION_ID=t.PARTICIPATION_ID AND f.QUESTION_ID=t.QUESTION_ID) 
+                                SET f.TEXT_ID=t.TEXT_ID
+      </code></pre>
+</li>
+<li>
+<p>Once all data has been passed to the INTERMEDIATE DB, the data is being fetched, so that it can be stored in the Exasol. There will be a connection, that starts with a statement like this one:</p>
+<pre><code class="language-text">              13582389 Query  /* mysql-connector-java-5.1.18 ( Revision: tonci.grgin@oracle.com-20110930151701-jfj14ddfq48ifkfq ) */
+                              SHOW VARIABLES WHERE Variable_name ='language' OR Variable_name = 'net_write_timeout' OR Variable_name = 'interactive_timeout' OR Variable_name = 'wait_timeout' 
+                              OR Variable_name = 'character_set_client' OR Variable_name = 'character_set_connection' OR Variable_name = 'character_set' OR Variable_name = 'character_set_server' 
+                              OR Variable_name = 'tx_isolation' OR Variable_name = 'transaction_isolation' OR Variable_name = 'character_set_results' OR Variable_name = 'timezone' OR Variable_name = 'time_zone' 
+                              OR Variable_name = 'system_time_zone' OR Variable_name = 'lower_case_table_names' OR Variable_name = 'max_allowed_packet' OR Variable_name = 'net_buffer_length' 
+                              OR Variable_name = 'sql_mode' OR Variable_name = 'query_cache_type' OR Variable_name = 'query_cache_size' OR Variable_name = 'init_connect'
+      </code></pre>
+</li>
+<li>
+<p>After this connection has quit, the INTERMEDIATE will be cleaned (data gets deleted from the tables and the tables get optimized, because the size of the files used for the tables keep their size):</p>
+<pre><code class="language-text"> 
+               13582387 Query  DELETE FROM EFS_D19D4250CBBA35A2A8695258E7225C94_FACT_8765
+               13582387 Query  OPTIMIZE TABLE EFS_D19D4250CBBA35A2A8695258E7225C94_FACT_8765
+               13582387 Query  DELETE FROM EFS_D19D4250CBBA35A2A8695258E7225C94_TEXT_8765 WHERE TEXT_ID &gt; 1
+               13582387 Query  OPTIMIZE TABLE EFS_D19D4250CBBA35A2A8695258E7225C94_TEXT_8765
+               13582387 Quit
+      </code></pre>
+</li>
+</ul><p></p><h3 id="header-61">MySight v2 config variables</h3><p></p><table data-layout="default" data-table-width="760" ac:local-id="1c00cffd-e234-4651-a02b-e6ff6e97a42a">
+<colgroup>
+<col style="width: 170.0px;">
+<col style="width: 170.0px;">
+<col style="width: 170.0px;">
+<col style="width: 170.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/MySight?sortcol=0;table=6;up=0#sorted_table">Config variable</a></p></th>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/MySight?sortcol=1;table=6;up=0#sorted_table">Description</a></p></th>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/MySight?sortcol=2;table=6;up=0#sorted_table">Default value</a></p></th>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/MySight?sortcol=3;table=6;up=0#sorted_table">Max possible value</a></p></th>
+</tr>
+<tr>
+<td><p>mysight_instance_dimension_limit</p></td>
+<td><p></p></td>
+<td><p>20</

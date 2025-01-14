@@ -1,0 +1,142 @@
+><strong>Response body</strong></em></p>
+<pre><code class="language-json">{
+  "circleId": 123,
+  "title": "People in my organization",
+  "circleType": "COMPANY_MANAGED",
+  "circleAccessType": "PRIVATE",
+  "circleProcessStatus": "IDLE"
+}</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79FZESAXCBB4W8GXCVQ"> </h4>
+<h3 id="header-108">POST /panel/circles/generate/{id}</h3>
+<p>Generates a company managed panel circle (portals group)</p>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">true</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>id</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>id of panel circle <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79F5KWG775JHD9AS533"> </h4>
+<h3 id="header-109">POST /panel/circles/listByCondition</h3>
+<p>Returns a list of panel circle objects to given logical condition. See <a href="https://qbdocs.atlassian.net/wiki/spaces/DOC/pages/1273102351/How-to%3A+Service+Layer#Filtering-results-with-conditions">filtering results with conditions</a> for help on building conditions.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "condition": {
+    "join": {
+      "operator": "AND",
+      "condition1": {
+        "comparison": {
+                    "variable" : "circleType",
+                    "operator" : "EQUAL",
+                    "value" : "USER_MANAGED"
+        }
+      },
+      "condition2": {
+        "inComparison": {
+            "variable": "circleAccessType",
+            "operator": "IN",
+            "value": ["PUBLIC", "PRIVATE"]
+        }
+      }
+    }
+  },
+  "offset": 0,
+  "limit": 10
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[
+  {
+    "circleId": 1,
+    "title": "Example",
+    "circleType": "USER_MANAGED",
+    "circleAccessType": "PRIVATE",
+    "circleProcessStatus": "IDLE"
+  }
+]</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79F23J12JR45D4TYK1B"> </h4>
+<h3 id="header-110">DELETE /panel/circles/{id}</h3>
+<p>Deletes a panel circle</p>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">true</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table style="height: 67px;" border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr style="height: 22px;">
+<th style="height: 22px; width: 160.903px;">
+<p>Name</p>
+</th>
+<th style="height: 22px; width: 158.906px;">
+<p>Type</p>
+</th>
+<th style="height: 22px; width: 158.906px;">
+<p>Required</p>
+</th>
+<th style="height: 22px; width: 158.906px;">
+<p>Description</p>
+</th>
+</tr>
+<tr style="height: 45px;">
+<td style="height: 45px; width: 152.882px;">
+<p>id</p>
+</td>
+<td style="height: 45px; width: 150.885px;">
+<p>integer</p>
+</td>
+<td style="height: 45px; width: 150.885px;">
+<p>true</p>
+</td>
+<td style="height: 45px; width: 150.885px;">
+<p>id of panel circle <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79FZVV7N1Q6YDYRMXB9"> 

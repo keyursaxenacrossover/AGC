@@ -1,0 +1,35 @@
+g-text-align-justify">In principle, the system templates can be used for the same purposes as the familiar normal templates.</p>
+<p class="wysiwyg-text-align-justify"><em>Information: </em>EFS Panel-driven panels show wide variations in terms of appearance and function.</p>
+<p class="wysiwyg-text-align-justify">- The system files mirror the functional scope and structure of an up-to-date standard panel.</p>
+<p class="wysiwyg-text-align-justify">- To find out if and how time and effort can be saved by using system templates in your existing panel, please get in touch with the support.</p>
+<p class="wysiwyg-text-align-justify">The most important characteristics of system files in brief:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>System files cannot be modified by users.</li>
+<li>They are automatically added and updated during normal installation updates and upgrades. I.e. their structure may change due to these updates.</li>
+<li>System files are labeled with (DEFAULT).</li>
+<li>There’s only one version of each system file.<br>– There is no difference between the working version and the online version.<br>– System files do not have a versioning history, i.e. the History tab is deactivated.</li>
+<li>If a “normal” template and a system template share the same name, e.g. foo.tpl and foo.tpl (DEFAULT), EFS will assume that the “normal” template was created intentionally and that it is to be preferred. In consequence, if you select the system template foo.tpl (DEFAULT) in the drop-down list of a module, EFS will use the “normal” template foo.tpl.</li>
+<li>The search for templates and includes can be restricted to the familiar user-defined contents or system contents.</li>
+</ul>
+<h3 id="template-library" class="wysiwyg-text-align-justify"><strong>Template Library</strong></h3>
+<p class="wysiwyg-text-align-justify">Before the introduction of system files, the template library was used to distribute new templates or sample code. It contains simplified versions or various function templates (i.e. without CSS classes, for example) until EFS 8.2.</p>
+<p class="wysiwyg-text-align-justify">Clicking on the <strong>Open template library</strong> button in the edit dialog opens a pop-up where you can select the desired target EFS version and the desired template. The template is displayed and you can copy the content into the input field of a new template for further editing.</p>
+<p class="wysiwyg-text-align-justify"><em>Information: </em>Thanks to the introduction of the system files, the template library is now superfluous. Therefore it will be dropped in EFS 10.4.</p>
+<h2 id="troubleshooting" class="wysiwyg-text-align-justify"><strong>Troubleshooting</strong></h2>
+<h3 id="viewing-and-undoing-changes" class="wysiwyg-text-align-justify"><strong>Viewing and Undoing Changes</strong></h3>
+<p class="wysiwyg-text-align-justify">The website editor has a versioning system for templates and includes. This means that you can, for example, view previous versions, compare two particular versions, or reset a broken template to an earlier, functioning version.</p>
+<p class="wysiwyg-text-align-justify"><strong>Viewing the change history</strong></p>
+<p class="wysiwyg-text-align-justify">To access the versioning system, open the desired template or include and switch to the<strong> History</strong> tab. It contains a list of all changes saved so far, including revision ID, date, and author.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014812905874" alt="templates_history.png"></p>
+<p class="wysiwyg-text-align-justify"><strong>Comparing and resetting versions</strong></p>
+<p class="wysiwyg-text-align-justify">The following actions can be executed using the icons:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>View: Opens the selected version of the template or include.</li>
+<li>Compare with current version: Displays a comparison of the selected and the current version. (The revision ID in the header tells you which versions are being compared.)</li>
+<li>Rollback: Resets the current version to the status of the selected version. This change is performed in the working version only, it is not published automatically.</li>
+<li>Compare with previous version: Displays a comparison of the selected and the next oldest version. (The revision ID in the header tells you which versions are being compared.)</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><em>Information: </em>The history contains the twenty most recent changes made to the respective template or included.</p>
+<h3 id="debugging" class="wysiwyg-text-align-justify"><strong>Debugging</strong></h3>
+<p class="wysiwyg-text-align-justify">You can have different debug information displayed below the proper panel pages, such as the current character set or a panelist’s language version. Furthermore, a Smarty debugging console is available. It contains an overview of all the wildcards that can be used on the respective page.</p>
+<p class="wysiwyg-text-align-justify">With EFS 10.3, a new,

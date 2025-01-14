@@ -1,0 +1,45 @@
+1">only incremental changes, supported by a roadmap and a release + test cycle <ac:link ac:anchor="*7"></ac:link><br><br>
+</td>
+</tr>
+<tr>
+<td colspan="1"><br></td>
+<td colspan="1">Are all changes communicated properly?</td>
+<td colspan="1">no, only some are communicated via blog</td>
+<td colspan="1">yes, via beta features, via roadmap and blog <ac:link ac:anchor="*7"></ac:link>
+</td>
+</tr>
+<tr>
+<td colspan="1"><br></td>
+<td colspan="1">Is there a roadmap or release plan?</td>
+<td colspan="1">yes, but without any dates</td>
+<td colspan="1">yes, seems to be in a good shape <ac:link ac:anchor="*7"></ac:link>
+</td>
+</tr>
+<tr>
+<td colspan="1"><strong>Documentation</strong></td>
+<td colspan="1"><br></td>
+<td colspan="1"><strong>2/5</strong></td>
+<td colspan="1"><strong>4/5 (API specs are missing some fields ?)</strong></td>
+</tr>
+<tr>
+<td colspan="1"><br></td>
+<td colspan="1">How is the quality of documentation?</td>
+<td colspan="1">lots of documentation, but semantics, basic concepts and details are missing at a lot of important points</td>
+<td colspan="1">meaningful documentation, occasionally confusing complexity, few missing/confusing parts in the documentation</td>
+</tr>
+<tr>
+<td colspan="1"><br></td>
+<td colspan="1">Is there meaningful content from the respective community?</td>
+<td colspan="1">
+<p>no,</p>
+<p>only very few blog entries apart from Microsofts own ones,</p>
+<p>nearly no hits on Google other than Microsoft</p>
+</td>
+<td colspan="1">
+<p>yes,</p>
+<p>but sometimes confusing regarding different versions of Okta</p>
+<p>very little hits on Google other than Okta, but an active community and support responses in forums</p>
+</td>
+</tr>
+</tbody>
+</table><p><br></p><h2 id="header-4">Opinions:</h2><h3 id="header-6">Microsoft Azure B2C:</h3><p>This product offers an experience of an early beta-version of a real product. The concepts and the future ideas are good and</p><p>reasonable but the implementation is lacking features, is full of unnecessary complexity. The documentation is lacking very important parts.</p><p><ac:parameter ac:name="colour">Yellow</ac:parameter><ac:parameter ac:name="title">Not yet recommendable</ac:parameter></p><p><br></p><h3 id="header-7">Okta:</h3><p>Okta is a product that has been there for a longer amount of time and offers a fully featured experience. Only customization seems to be a tricky part in our specific use case (there are multiple solution; they may just need a little bit more effort). There are a few minor missing parts or unclear documentation. Okta seems to be a living product that is used and understood by major players. It is more focused on company internal SSO, but offers very good IdP solutions that can be offered to our clients.</p><p><ac:parameter ac:name="colour">Green</ac:parameter><ac:parameter ac:name="title">Recommended</ac:parameter></p><p><br></p><p><br></p><p><br></p><h2 id="header-9">Additional Explanation:</h2><p><br><ac:parameter ac:name="">*1</ac:parameter></p><p>*1: With a custom policy possibly, but not out of the box and not without massive effort</p><p><br><ac:parameter ac:name="">*2</ac:parameter></p><p>*2: In case of custom policies the logging seems to be useless. Debugging and error handling are hard to realize.</p><p><br><ac:parameter ac:name="">*3</ac:parameter></p><p>*3: If multi-tenancy is solved via multiple Azure tenants, these tenants can be federated in another tenant. This is a complex solution that is not user-friendly due to redirects and error prone due to complexity.</p><p><br><ac:parameter ac:name="">*4</ac:parameter></p><p>*4: Only using custom policies for now</p><p><br><ac:parameter ac:name="">*5</ac:parameter></p><p>*5: What is needed to setup a tenant? setup Azure tenant, create application with secrets, configure federations, configure and upload custom policy - also see <ac:link><ri:page ri:content-title="Setup" ri:version-at-save="1"></ri:page></ac:link> (in case of a customized flow experience there is a very high bug rate and risk)</p><p><br></p><p><br><ac:parameter ac:name="">*6</ac:parameter></p><p>*6: See <ac:link><ri:page ri:content-title="UI Customization (CI)" ri:version-at-save="2"></ri:page></ac:link> - Customization can be tricky. There are a few options to handle this challenge.</p><p><br></p><p><br><ac:parameter ac:name="">*7</ac:parameter></p><p>*7: This is what we have discovered after one week

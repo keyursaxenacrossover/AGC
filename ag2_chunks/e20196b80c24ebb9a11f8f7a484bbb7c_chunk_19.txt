@@ -1,0 +1,55 @@
+p>
+<h2 id="scoring" class="wysiwyg-text-align-justify">Scoring</h2>
+<p class="wysiwyg-text-align-justify">Scoring opens up a wide range of different uses. You can define scoring for each answer option of a question. If a respondent selects answer options, the corresponding points are assigned to him/her. Based on the score, i.e. the score of the survey participant, you can then initiate follow-up actions, for example, using triggers. Potential application scenarios would be a quiz, personality tests, or other qualification tests, for example for the acquisition of suitable job candidates.</p>
+<p class="wysiwyg-text-align-justify">Almost unlimited categories of scores can be created for a question. This makes it possible to use multi-dimensional parameters to evaluate a participant. Scoring is available for the following question types in all layouts: 111, 112, 113, 121, 122, 131, 132, 141, 142, 311, 312, 313, 321, 322, 511, 522, 611, 621, 641, 661</p>
+<p class="wysiwyg-text-align-justify">Scoring must be completely configured before you can start the survey. The scoring cannot be tested in the preview but only in live mode.</p>
+<h3 id="scoring-in-detail" class="wysiwyg-text-align-justify">Scoring in Detail</h3>
+<p class="wysiwyg-text-align-justify">To configure the scoring, click on the <strong>Scoring</strong> button in the questionnaire editor. Scores can be defined for each question in the scoring window. All questions to be included in the scoring can be selected successively. You can use the wheel icon to toggle between scoring a question and creating new categories. You can define score values:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>for each scale option in the single choice and standard matrix question types listed above.</p>
+</li>
+<li>
+<p>for the status "selected" and "not selected" in multiple-choice question types.</p>
+</li>
+<li>
+<p>for different phrases (including upper and lower case) for single-line and multi-line text fields.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The score values must range between -999 and 999, decimal numbers are not allowed. Please avoid plausibility checks that use score variables from a loop page: The score values are only available after the loop has been completely processed. After you have defined the desired scores, click on the scoring button again to close the scoring window. </p>
+<h3 id="use-scoring-data" class="wysiwyg-text-align-justify">Use Scoring Data</h3>
+<p class="wysiwyg-text-align-justify">The values assigned to participants are defined in specific scoring variables.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The variable name is s_000x.</p>
+</li>
+<li>
+<p>The values can be displayed in the questionnaire with the placeholder #s_000x#.</p>
+</li>
+<li>
+<p>The scoring variable names can be used for filtering, fade-out conditions, triggers, etc.</p>
+</li>
+<li>
+<p>The scoring variables are included in the export data record.</p>
+</li>
+</ul>
+<h2 id="preview" class="wysiwyg-text-align-justify">Preview</h2>
+<p class="wysiwyg-text-align-justify">When creating and editing the questionnaire, it is helpful to be able to directly monitor the impact the changes have on the questionnaire’s appearance. Via <strong>Preview</strong> icons located at all important places in the admin area you can preview the complete questionnaire, the respective question (“Preview question”), or the respective questionnaire page (“Page preview”) in a pop-up window.</p>
+<h3 id="differences-between-preview-mode-and-productive-mode" class="wysiwyg-text-align-justify">Differences between preview mode and productive mode</h3>
+<p class="wysiwyg-text-align-justify">The difference between the preview and the normal project run-through is that the data collected are not saved to the database but to the so-called session table. This is a database table that will be cleared when you log out. This prevents contamination of the results tables with test data.</p>
+<p class="wysiwyg-text-align-justify">Thus, the preview does not support all of the features available for use in the productive mode.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The progress bar is not calculated accurately.</p>
+</li>
+<li>
+<p>For triggers, you can decide yourself whether they should be executed in the preview.</p>
+</li>
+<li>
+<p>The dynamic output of content via wildcards cannot be tested in preview mode, as data generated in the preview cannot be allocated to a participant account and dataset</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">To keep you informed on whether you are working in preview mode or productive mode, the preview shows a corresponding notice in the upper right corner.</p>
+<p class="wysiwyg-text-align-justify">Before starting your project, be sure to also test it via the “normal” project URL, which is located in the project information dialog.</p>
+<h3 id="viewing-runtime-error-messages-in-preview" class="wysiwyg-text-align-justify">Viewing Runtime Error Messages in Preview</h3>
+<p class="

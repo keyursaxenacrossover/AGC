@@ -1,0 +1,58 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/2810052648">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/2810052648</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">POC</a></li>
+<li><a href="#header-2">PROD:</a></li>
+<ul>
+<li><a href="#header-4">Account Settings in Okta (No dependencies)</a></li>
+<li><a href="#header-5">Appearance</a></li>
+<li><a href="#header-6">Okta Pages</a></li>
+<li><a href="#header-7">Default App for Sign-In Widget (installation etc.) → Successfull QA configuration page</a></li>
+<li><a href="#header-8">EFS Logout page and No permission page</a></li>
+<li><a href="#header-9">Email (&amp; SMS) Customization</a></li>
+<li><a href="#header-10">Authentication (No dependencies)</a></li>
+<li><a href="#header-11">Multifactor (No dependencies)</a></li>
+<li><a href="#header-12">Identity Providers (No dependencies)</a></li>
+<li><a href="#header-13">Administrators (dependent on Identity Provider)</a></li>
+<li><a href="#header-14">Customization (dependent on custom domain)</a></li>
+<li><a href="#header-15">API (dependent on custom domain)</a></li>
+<li><a href="#header-16">People (dependent on Identity Provider)</a></li>
+<ul>
+<li><a href="#header-18">Clients:</a></li>
+<li><a href="#header-19">EFS Config:</a></li>
+<li><a href="#header-20">DV Config:</a></li>
+<li><a href="#header-21">Custom specific adaptations (Installations)</a></li>
+<li><a href="#header-22">Development/Backoffice Resources:</a></li>
+<li><a href="#header-23">Marketing + Sales:</a></li>
+</ul>
+</ul>
+</ul>
+</ul><h1 id="header-1">POC</h1><p></p><p></p><h1 id="header-2">PROD:</h1><h2 id="header-4">Account Settings in Okta (No dependencies)</h2><ul>
+<li><p>Company Name</p></li>
+<li><p>Billing information</p></li>
+<li><p>Organization contact</p></li>
+</ul><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20717134350610" alt="image-20210510-154719.png"><p><a href="https://questback-poc-admin.oktapreview.com/admin/settings/account">https://questback-poc-admin.oktapreview.com/admin/settings/account</a></p><p></p><h2 id="header-5">Appearance  </h2><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20717133992082" alt="image-20210510-160849.png"><p><a href="https://questback-poc-admin.oktapreview.com/admin/settings/customize">https://questback-poc-admin.oktapreview.com/admin/settings/customize</a></p><ul>
+<li><p>Logo URL (<span style="color: rgb(76,154,255);">Rhea alle logos als svgs</span>)</p></li>
+<li><p>Organization Logo</p></li>
+<li>
+<p>Background Image (<span style="color: rgb(76,154,255);">To be clarified with Rhea, suggestion: image from contact page)</span></p>
+<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20717134611730" alt="image-20210504-161730.png"><p></p>
+</li>
+</ul><p><strong>Frontend</strong></p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20717097160722" alt="image-20210510-153545.png"><p><a data-card-appearance="inline" href="https://questback-poc.oktapreview.com/">https://questback-poc.oktapreview.com/</a> </p><h2 id="header-6">Okta Pages</h2><ul>
+<li>
+<p>Sign In Widget</p>
+<ul>
+<li><p>Sign in Widget Logo + Favicon</p></li>
+<li><p>Styling (<span style="color: rgb(76,154,255);">would be nice to have the tivian styles in it: form, colour, padding / spacing</span>)</p></li>
+</ul>
+</li>
+<li>
+<p>Custom Error Page (Okta)</p>
+<ul>
+<li><p>Styling (<span style="color: rgb(76,154,255);">would be nice to have the tivian styles in it</span>)</p></li>
+<li><p>Logo + Favicon</p></li>
+</ul>
+</li>
+</ul><h2 id="header-7">Default App for Sign-In Widget (installation etc

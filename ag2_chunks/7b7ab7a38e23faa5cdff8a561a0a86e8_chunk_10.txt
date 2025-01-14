@@ -1,0 +1,103 @@
+ Hershey as their favorite chocolate, this option is dynamically added to the list of possible responses for the next respondent to answer the survey. The following settings control this new question type:</p>
+<p><strong>Threshold</strong> – this setting determines the number of respondents who need to have provided this new answer before it is added to the list of available answers. For example, we might decide that 10 people need to choose Hershey before it is added to the list.</p>
+<p><strong>Max amount of answer options</strong> – this setting limits the number of new options that can be dynamically added to the single-response list.</p>
+<p><strong>Respect case sensitivity</strong> - this setting determines whether the case sensitivity of a word produces a new answer option in each case.</p>
+<p><strong>Alternating rows</strong> – this setting determines whether the newly added options are displayed in the order they were dynamically added to the list, or in a more randomized order.</p>
+<h2 id="multiple-response-list">Multiple response list</h2>
+<p>Questions that allow more than one answer are called questions with multiple response lists. In this case, one variable is created for each selection. To store the answer, a dedicated variable is created for each answer option. Depending on the answer, this variable can have two possible states: 0 = not quoted, 1 = quoted.</p>
+<h3 id="multiple-response-list-vertical">Multiple response list (Vertical)</h3>
+<p>This question type can be used to ask questions to which there are several possible correct answers. The following is an example from a study about the reading habits of subscribers to a specific magazine.</p>
+<h4 id="base-elements-5">Base Elements</h4>
+<ul>
+<li>
+<p>Question text</p>
+</li>
+<li>
+<p>Fill-in instruction</p>
+</li>
+<li>
+<p>Help text</p>
+</li>
+<li>
+<p>Answer options 1-n</p>
+</li>
+<li>
+<p>Optional: Answer option with a text entry field</p>
+</li>
+<li>
+<p>Optional: Text entry field without a checkbox</p>
+</li>
+<li>
+<p>Optional: Inside titles 1-m </p>
+</li>
+<li>
+<p>Optional: Columns 1-o</p>
+</li>
+</ul>
+<h3 id="multiple-response-list-horizontal"><strong>Multiple response list (Horizontal)</strong></h3>
+<p>The main difference between question type 122 and question type 121, which was described in the preceding chapter, is in their layout: Answer options and related checkboxes are arranged horizontally in one line.</p>
+<h4 id="multiple-response-list-with-images">Multiple response lists with images</h4>
+<p>The new multiple response list with images replaces the familiar question types 521 and 522 in “Responsive layout” questionnaires.</p>
+<ul>
+<li>
+<p>When creating new questions in projects with “Responsive Layout”, you can find this question type in the “Multiple response” category.</p>
+</li>
+<li>
+<p>Depending on the screen width of the device used, the options will be displayed horizontally or vertically. Optionally vertical alignment can be enforced for all devices.</p>
+</li>
+<li>
+<p>You can resort to predefined images in the Tivian library or upload your images to the media library.</p>
+</li>
+<li>
+<p>Technically, the question type is based on the familiar multiple response list (121).</p>
+</li>
+</ul>
+<h4 id="base-elements-6">Base Elements</h4>
+<ul>
+<li>
+<p>Question text</p>
+</li>
+<li>
+<p>Fill-in instruction</p>
+</li>
+<li>
+<p>Help text</p>
+</li>
+<li>
+<p>Images and texts for the answer options 1-n</p>
+</li>
+</ul>
+<h4 id="entry-dialog-3">Entry Dialog</h4>
+<p>The entry dialog is closely related to the familiar entry dialog of question type 121. However several special features were not implemented because they are not suitable for an image question type or for “Responsive layout” questionnaires (e.g. answer option with text field, dynamic column break, wrap item text).</p>
+<p>To insert images, simply click on the default icons. Then, you can select the desired files from the media library.</p>
+<h4 id="detail-configuration-3">Detail Configuration</h4>
+<ul>
+<li>
+<p>Show answer texts: Per default, the texts of the answer options are used as Alt text. Optionally they can be displayed below the icons.</p>
+</li>
+<li>
+<p>Force vertical alignment: Per default, the display of the options depends on the screen width of the device used: For wide screens horizontal, for small screens vertical. Optionally vertical alignment can be enforced for all devices.</p>
+</li>
+<li>
+<p>Horizontal alignment: center, left, right.</p>
+</li>
+<li>
+<p>Minimum width of the images.</p>
+<ul>
+<li>
+<p>Minimum width for display of the images.</p>
+</li>
+<li>
+<p>If the images don’t fit in line while respecting the minimum width, the view switches to a vertical display.</p>
+</li>
+<li>
+<p>Valid range: 50-1000 pixels. Default: 100 pixels.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Maximum width of the images. Default: 200 pixels.</p>
+</li>
+</ul>
+<h4 id="improving-the-answer-quality">Improving the Answer Quality</h4>
+<p>To improve the answer quality of multiple-response questions, in particular,<em> EFS</em> provides

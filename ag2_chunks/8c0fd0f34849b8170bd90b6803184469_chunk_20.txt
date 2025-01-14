@@ -1,0 +1,45 @@
+ of the schemas. Especially EXA_DBA_TRANSACTION_CONFLICTS table migh be of interest, because in case mysight syncs initiated by the jobmaker fail, it might be related to conflicts, that can be seen here. In this case the STOP_TIME will be missing for some entries</p>
+<pre><code class="language-text">SESSION_ID	          CONFLICT_SESSION_ID	 START_TIME	                 STOP_TIME	                 CONFLICT_TYPE	CONFLICT_OBJECTS
+      1624565964912376665 1624560875230837581	2019-02-04 20:01:46.781	2019-02-04 20:01:57.728	WAIT FOR COMMIT	global connection list</code></pre>
+</li>
+<li>
+<p>Exaplus Conflicts logged in EXA_DBA_TRANSACTION_CONFLICTS table in EXA_STATISTICS schema (screenshot was taken after the conflict had been resolved by killing one of the conflicting connections): <br></p>
+<pre><code class="language-text">KILL SESSION 1624529238170052353;</code></pre>
+<p> with no quotes around the SESSION_ID to be killed</p>
+<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20714612832658" alt="image-20200919-084924.png"><p></p>
+</li>
+</ul>
+</li>
+<li><p>Sammelticket zum Gerade ziehen der Exasol Rechte Case Nr 00884170</p></li>
+</ul><h2 id="header-67">FAQ</h2><h3 id="header-69">Overview MySight Permissions (how to fix MySight permissions issues)</h3><ul>
+<li><p><strong>Comparison of default permissions:</strong> <a href="https://it.globalpark.de/twiki/pub/Support/MySight/MYSIGHT_PERMISSIONS_V1_OR_V2.pdf">MYSIGHT_PERMISSIONS_V1 OR_V2.pdf</a></p></li>
+<li><p><strong>Simultaneous use of both modules:</strong> <a href="https://it.globalpark.de/twiki/pub/Support/MySight/MYSIGHT_PERMISSIONS_V1_AND_V2_SIMULTAN.pdf">MYSIGHT_PERMISSIONS_V1_AND_V2_SIMULTAN.pdf</a></p></li>
+<li><p><strong>Default project permissions:</strong> <a href="https://it.globalpark.de/twiki/pub/Support/MySight/MYSIGHT_PERMISSIONS_DEFAULT_PROJECT_V1_OR_V2.pdf">MYSIGHT_PERMISSIONS_DEFAULT_PROJECT_V1_OR_V2.pdf</a></p></li>
+</ul><p></p><p><strong>HOW TO FIX PERMISSSIONS</strong></p><ul>
+<li><p><strong>In case of MySight v1 or MySight v2 issues all settings should be similar to all settings in document "Comparison of default permissions" (see above)</strong></p></li>
+<li><p><strong>New MySight v2 activation? Default project should always have permissions similar to MySight v2 permissions: See document above "Default project permissions"</strong></p></li>
+</ul><p><strong>(Notice: you can find all *.png, *.pptx and *.pdf files on dilli: P:\ceur\R-D.GERMANY\IT.OPS.GERMANY\TECHNICAL.SUPPORT.GERMANY\Dokumentationen\MySight)</strong></p><h3 id="header-70">MySight v1 (old) &amp; MySight v2: Grant access to Tableau server</h3><p></p><table data-layout="default" data-table-width="760" ac:local-id="4559c477-1759-4dee-a38e-c608561fa553">
+<colgroup>
+<col style="width: 170.0px;">
+<col style="width: 170.0px;">
+<col style="width: 170.0px;">
+<col style="width: 170.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/MySight?sortcol=0;table=7;up=0#sorted_table">MySight version</a></p></th>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/MySight?sortcol=1;table=7;up=0#sorted_table">tableau server</a></p></th>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/MySight?sortcol=2;table=7;up=0#sorted_table">access allowed</a></p></th>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/MySight?sortcol=3;table=7;up=0#sorted_table">access to tableau server</a></p></th>
+</tr>
+<tr>
+<td><p>v1 (old)</p></td>
+<td><p>PREPROD2</p></td>
+<td><p>for questback and customer users</p></td>
+<td><p>given by Windows System Engineers and Technical Support</p></td>
+</tr>
+<tr>
+<td><p>v1 (old)</p></td>
+<td><p>PROD</p></td>
+<td><p>only for questback users</p></td>
+<td><p>given by Windows System Engineers and Technical Support</p></td

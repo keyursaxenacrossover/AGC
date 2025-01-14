@@ -1,0 +1,30 @@
+{
+    "id": 20717175702162,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/20717175702162.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20717175702162-October-2022",
+    "author_id": 369584192734,
+    "comments_disabled": false,
+    "draft": true,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20714711445138,
+    "created_at": "2024-08-12T20:22:51Z",
+    "updated_at": "2024-08-12T20:22:53Z",
+    "name": "October 2022",
+    "title": "October 2022",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-08-12T20:22:53Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075294,
+    "content_tag_ids": [],
+    "label_names": [],
+    "body": "<p><b>Original Confluence URL:</b> <a href=\"https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3723132929\">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3723132929</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>\n\n<h2>Table of Contents</h2>\n<ul class=\"toc\">\n<ul>\n<li><a href=\"#header-1\">Sign-In Widget, version 6.8.0</a></li>\n<ul>\n<li><a href=\"#header-3\">Okta LDAP agent, version 5.15.0</a></li>\n<ul>\n<li><a href=\"#header-5\">Okta RADIUS Server agent, version 2.17.6</a></li>\n<ul>\n<li><a href=\"#header-7\">Okta On-Prem MFA agent, version 1.6.0</a></li>\n<li><a href=\"#header-8\">Non-deletable default authorization server</a></li>\n<li><a href=\"#header-9\">ODSEE LDAP support</a></li>\n<li><a href=\"#header-10\">eDirectory LDAP support</a></li>\n<li><a href=\"#header-11\">Dynamic routing rules</a></li>\n<li><a href=\"#header-12\">On-Prem MFA agent security provider</a></li>\n<li><a href=\"#header-13\">Generate private key in PEM format</a></li>\n<li><a href=\"#header-14\">Enhanced SMS and Voice blocking</a></li>\n<li><a href=\"#header-15\">Email notifications for agent connection issues</a></li>\n<li><a href=\"#header-16\">Username match criteria</a></li>\n<li><a href=\"#header-17\">OIN Manager enhancements</a></li>\n<li><a href=\"#header-18\">Improvements to API authorization server interface</a></li>\n<li><a href=\"#header-19\">IdP logos added</a></li>\n</ul>\n</ul>\n</ul>\n</ul>\n</ul><p>See: <a data-card-appearance=\"inline\" href=\"https://help.okta.com/en-us/Content/Topics/ReleaseNotes/archive/oce-relnotes-2022.htm\">https://help.okta.com/en-us/Content/Topics/ReleaseNotes/archive/oce-relnotes-2022.htm</a> </p><table data-layout=\"wide\" ac:local-id=\"5af16877-2bd6-4c01-bfa8-0cd012f1a930\">\n<colgroup>\n<col style=\"width: 340.0px;\">\n<col style=\"width: 340.0px;\">\n</colgroup>\n<tbody>\n<tr>\n<td data-highlight-colour=\"#f4f5f7\"><p><strong>Feature</strong></p></td>\n<td data-highlight-colour=\"#f4f5f7\"><p><strong>Remark</strong></p></td>\n</tr>\n<tr>\n<td><h1 id=\"header-1\">Sign-In Widget, version 6.8.0</h1></td>\n<td><p>no update needed yet</p></td>\n</tr>\n<tr>\n<td><h2 id=\"header-3\">Okta LDAP agent, version 5.15.0</h2></td>\n<td><p>not in use</p></td>\n</tr>\n<tr>\n<td><h3 id=\"header-5\">Okta RADIUS Server agent, version 2.17.6</h3></td>\n<td><p>not in use</p></td>\n</tr>\n<tr>\n<td><h4 id=\"header-7\">Okta On-Prem MFA agent, version 1.6.0</h4></td>\n<td><p>not in use</p></td>\n</tr>\n<tr>\n<td><h4 id=\"header-8\">Non-deletable default authorization server</h4></td>\n<td><p>does not bother us, default auth server is still there</p></td>\n</tr>\n<tr>\n<td><h4 id=\"header-9\">ODSEE LDAP support</h4></td>\n<td><p>not in use</p></td>\n</tr>\n<tr>\n<td><h4 id=\"header-10\">eDirectory LDAP support</h4></td>\n<td><p>not in use</p></td>\n</tr>\n<tr>\n<td><h4 id=\"header-11\">Dynamic routing rules</h4></td>\n<td><p>nice to have for the future, no adaption needed, classig routes still work</p></td>\n</tr>\n<tr>\n<td><h4 id=\"header-12\">On-Prem MFA agent security provider</h4></td>\n<td><p>not in use</p></td>\n</tr>\n<tr>\n<td><h4 id=\"header-13\">Generate private key in PEM format</h4></td>\n<td><p>not in use</p></td>\n</tr>\n<tr>\n<td><h4 id=\"header-14\">Enhanced SMS and Voice blocking</h4></td>\n<td><p>not in use</p></td>\n</tr>\n<tr>\n<td><h4 id=\"header-15\">Email notifications for agent connection issues</h4></td>\n<td><p>not in use</p></td>\n</tr>\n<tr>\n<td><h4 id=\"header-16\">Username match criteria</h4></td>\n<td><p>check what default is set <ac:emoticon ac:emoji-fallback=\":check_mark:\" ac:emoji-id=\"atlassian-check_mark\" ac:emoji-shortname=\":check_mark:\" ac:name=\"tick\"></ac:emoticon>  DONE</p></td>\n</tr>\n<tr>\n<td><h4 id=\"header-17\">OIN Manager enhancements</h4></td>\n<td><p>not in use</p></td>\n</tr>\n<tr>\n<td><h4 id=\"header-18\">Improvements to API authorization server interface</h4></td>\n<td><p>nice to have, no changes needed</p></td>\n</tr>\n<tr>\n<td><h4 id=\"header-19\">IdP logos added</h4></td>\n<td><p>nice to have, no changes needed</p></td>\n</tr>\n<tr>\n<td><p></p></td>\n<td><p></p></td>\n</tr>\n<tr><td colspan=\"2\" data-highlight-colour=\"#f4f5f7\"><p><strong>API</strong></p></td></tr>\n<tr>\n<td><p></p></td>\n<td><p></p></td>\n</tr>\n<tr>\n<td><p></p></td>\n<td><p></p></td>\n</tr>\n<tr>\n<td><p></p></td>\n<td><p></p></td>\n</tr>\n<tr>\n<td><p></p></td>\n<td><p></p></td>\n</tr>\n</tbody>\n</table>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

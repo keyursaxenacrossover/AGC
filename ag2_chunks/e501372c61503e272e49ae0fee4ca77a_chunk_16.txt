@@ -1,0 +1,57 @@
+" class="wysiwyg-text-align-justify"><strong>Creating and Managing Threads</strong></h2>
+<p class="wysiwyg-text-align-justify">A topic usually contains different discussion threads. They are started by the moderator or, if you configure the topic accordingly, by the panelists as well.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify">Please mind: In panels set up with EFS 7.1 or later, threads are implemented in the forum templates from the beginning. In older upgraded panels, it is necessary to adapt the forum templates. Should this be the case in your panel, please contact Support.</p>
+<p class="wysiwyg-text-align-justify"><strong>Overview of threads for a topic</strong></p>
+<p class="wysiwyg-text-align-justify">To view existing threads for a topic in the admin area, just click the title of the desired topic in the topic list. Alternatively, use the<strong> Edit Posts</strong> icon.</p>
+<p class="wysiwyg-text-align-justify">The list of threads contains all threads of the selected topic with several posts, “Locked” status, and rating statistics.</p>
+<p class="wysiwyg-text-align-justify"><strong>Editing options</strong></p>
+<p class="wysiwyg-text-align-justify">If you click on the Add thread button, the dialog for creating a new thread is opened.</p>
+<p class="wysiwyg-text-align-justify">By clicking on the title of a thread, you will get to the individual posts.</p>
+<p class="wysiwyg-text-align-justify">If you click on the No link in the “Locked” column, the panelists keep read access to the thread, but they cannot post anymore.</p>
+<p class="wysiwyg-text-align-justify">From EFS 10.4: If you click on the No link in the “Sticky” column, the thread is positioned at a fixed position at the top of the thread list and marked with a dedicated icon.</p>
+<p class="wysiwyg-text-align-justify">Use the icons in the “Actions” column to edit individual threads:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Delete: The thread is deleted after a confirmation prompt. Please note that all data are irrevocably lost in the process. If you no longer need a certain thread, we recommend exporting the posts before deleting it.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">From EFS 10.6: You can bulk-delete several threads at once by ticking the checkboxes of the superfluous threads and selecting „Delete threads“ in the drop-down list below.</p>
+<p class="wysiwyg-text-align-justify"><strong>Thread properties</strong></p>
+<p class="wysiwyg-text-align-justify">The table lists all properties a thread can have in detail.</p>
+<table class="wrapped wysiwyg-text-align-justify" style="margin-right: 0px; margin-left: auto; height: 1032px;" border="1" width="748">
+<colgroup> <col> <col> </colgroup>
+<tbody>
+<tr style="height: 22px;">
+<th class="wysiwyg-text-align-center" style="height: 22px; width: 120.642px;">Field</th>
+<th class="wysiwyg-text-align-center" style="height: 22px; width: 620.052px;">Meaning</th>
+</tr>
+<tr style="height: 67px;">
+<td style="height: 67px; width: 112.622px;">
+<p>Website / Language version</p>
+</td>
+<td style="height: 67px; width: 612.031px;">
+<p>Website and language version to which the thread belongs. Cannot be changed subsequently.</p>
+</td>
+</tr>
+<tr style="height: 44px;">
+<td style="height: 44px; width: 112.622px;">Name of forum</td>
+<td style="height: 44px; width: 612.031px;">Forum to which the thread belongs. Cannot be changed subsequently.</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px; width: 112.622px;">Topic</td>
+<td style="height: 22px; width: 612.031px;">Discussion topic to which the thread belongs. Cannot be changed subsequently.</td>
+</tr>
+<tr style="height: 125px;">
+<td style="height: 125px; width: 112.622px;">Contributed by</td>
+<td style="height: 125px; width: 612.031px;">
+<p>Author of the thread.</p>
+<p>If you add new threads via the admin area, you can select the author: In a dropdown list, panelists with “Moderator” or “Tester” panel status can be selected.</p>
+<p>The author cannot be changed subsequently.</p>
+</td>
+</tr>
+<tr style="height: 197px;">
+<td style="height: 197px; width: 112.622px;">Release Status</td>
+<td style="height: 197px; width: 612.031px;">
+<p>The following release statuses can be assigned:</p>
+<ul>
+<li>
+<strong>not checked</strong>: If publishing mode “Publish immediately” is selected, threads with this status will be visible to everybody. If the publishing mode “

@@ -1,0 +1,50 @@
+, has to check for the existince of a CAA record first, before proceeding with issueing a certificate.</p>
+<p>Also important to note is, that a CAA Record not only applies domain it sits on, but also “further down the tree”. So if <a href="http://some.example.com">some.example.com</a> does NOT have a CAA record but <a href="http://example.com">example.com</a> has, those Records to apply to <a href="http://some.example.com">some.example.com</a> as well when trying to get a certificate issued for it.</p>
+<pre><code class="language-text">some.example.com IN CAA 0 issue "letsencrypt.org"
+example.com IN CAA 0 issuewild "letsencrypt.org"
+example.com IN CAA 0 iodef "mailto:some-domain@example.com"</code></pre>
+<h2 id="email-concepts">Email Concepts</h2>
+<p>The following is non exhaustive and meant as a pointer for the more commonly used concepts in regards to sending and the validation of receiving emails. The later ones are intended as a means limiting / counteracting the occurrence of spam and phishing-mail.</p>
+<h3 id="mx-record-sending-only">MX Record</h3>
+<p>The MX DNS Record is the most central concept when sending email. It is used by the sending mail-server to identify the destination server where an Email should be delivered to.</p>
+<p>In theory the presence of a MX Record is not mandatory, as in absence one will be amused with a Priority of “0” and the host being the domain itself. Meaning in that case the sending mail-server will try to deliver it to the IP, as noted in the A- / AAAA-Record.</p>
+<p>Also the record is used for sending mail only, so general consensus is that it has no impact on receiving end. Especially as it is not required for the sending mail-server to be mentioned inside a valid MX-Record. Nevertheless it should be noted that it may still be adversary towards successful mail delivery if one such record exists but does not resolve properly (typo in the record itself / the reference host).</p>
+<h3 id="spf-sender-policy-framework-sometimes-called-spf-records-receiving-validation-only">SPF - Sender Policy Framework (sometimes called SPF-Records) ; receiving-validation only</h3>
+<p>The basic idea behind SPF that a domain owner should be able to publish a list of authorized IPs from which Emails should originate from. Thus enabling receiving mail-servers to identify if a mail originates from a non-verified source, which might be an indicator for it being SPAM.</p>
+<p>See also: <a href="https://postmarkapp.com/guides/spf">Explanation of the overall SPF process</a></p>
+<h4 id="identification-of-domain-to-be-checked">Identification of domain to be checked</h4>
+<p>Please not that SPF, in opposition to it’s expected behavior, usually do not check the From-Field, as shown in many mail clients. Instead it checks the Return-Path.</p>
+<p>The Return-Path-Field inside the mail header (sometimes referenced as SMTP-MAIL-FROM or envelope sender), must be set by the SMTP-server making the “final” delivery. It’s main function is for denoting the address to which information regarding Email-Bounce should be sent.</p>
+<p>Said address is then split at the '@' with the second part being for the verification.</p>
+<h4 id="lookup-and-verification">Lookup and verification</h4>
+<p>After the receiving mail server has identified domain, as mention previously, it then queries said domain for it’s TXT records, searching for something like what is depicted on the right (also called SPF-Record).</p>
+<p>It then executes validation per the rules specified in said record against the IP of the sending Mail-Server, resulting in one of the following:</p>
+<ul>
+<li>
+<p><strong>None: </strong>Either the identified domain is not valid or the domain has no TXT record configured regarding SPF</p>
+</li>
+<li>
+<p><strong>Neutral: </strong>The Domain-Administrator does not explicitly assert whether the Sender-IP is authorized or not</p>
+</li>
+<li>
+<p><strong>Pass: </strong>The Sender-IP has been explicitly authorized by the Domain-Administrator.</p>
+</li>
+<li>
+<p><strong>Fail: </strong>The Domain-Administrator specifically states that the Sender-IP is not authorized.</p>
+</li>
+<li>
+<p><strong>Softfail: </strong>The Sender-IP probably is not authorized, but not explicit stated as such by the Domain-Administrator resulting in this “weak” statement. Sometimes also referenced / used as a “Testing-Mode”.</p>
+</li>
+<li>
+<p><strong>Temperror: </strong>The SPF-verification encountered a transient error (generally caused by the DNS lookup. A later retry might succeed without further intervention.</p>
+</li>
+<li>
+<p><strong>Permerror: </strong>The published SPF-Record is in itself invalid and required intervention by the Domain-Administrator to be fixed.</p>
+</li>
+</ul>
+<h4 id="structure-contents-of-the-spf-record">Structure / contents of the SPF-Record</h4>
+<p>As shown before, an SPF-Record declares a number of mechanisms (at least 1) which are to be evaluated during SPF-Validation.</p>
+<p>They are processed from left to right, where each mechanism may result in either a “match”, “not-match” or return an exception:</p>
+<ul>
+<li>
+<p>“<strong>match</strong>”

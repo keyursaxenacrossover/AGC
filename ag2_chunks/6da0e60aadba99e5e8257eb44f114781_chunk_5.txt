@@ -1,0 +1,33 @@
+ the Questionnaire editor of a survey were enhanced to provide grouping of variables and titles containing the source of the variable, e.g. question names. This allows easier orientation while creating filter conditions in larger projects with similarly named answer options or scales.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20997976120466" alt="Usability Improvements.png"></p>
+<h3 id="header-44"><strong>Include files in LUA filters of a questionnaire</strong></h3>
+<p>A LUA filter definition in a questionnaire can now re-use code libraries, by providing the possibility to include up to two libraries from the media library of an EFS installation.</p>
+<h3 id="header-45"><strong>Faster management of large projects</strong></h3>
+<p>The new participant administration UI from EFS 19.5 release will automatically be enabled for personalised projects containing more than 1000 participants. This reduces the load on the system in large projects.</p>
+<h3 id="header-46"><strong>UID in Exports of personalised projects</strong></h3>
+<p>The user's id (uid) is now included in participant data and combined participant and result data exports and can be used for easier mapping of participants to their data in external tools.</p>
+<h3 id="header-47">
+<strong>Hiding of source code editor in questionnaire edito</strong><em>r</em>
+</h3>
+<p>There is a new ACL right to hide the source code editor in questionnaire editor. By default, all teams with access to the questionnaire editor of a project also have the right show_source=write, which allows editing of the source code of a text.</p>
+<h3 id="header-48"><strong>Quota, which led to screen out is now stored</strong></h3>
+<p>When working with quotas and analysing why a participant was screened out, sometimes it is useful to know, which quota led to a screen out. The id of that quota is now stored in the system variable <em>quota_rejected_id</em>.</p>
+<h3 id="header-49"><strong>UI improvement in selective export</strong></h3>
+<p>When using selective export of data in survey (<strong>Project → Export → Result data → Selective export</strong>), we have improved the UI, which now groups variables of a question and allows quicker selection of all variables of a group  </p>
+<h3 id="header-50">Enhanced security in surveys</h3>
+<p>The handling of user provided information in URL parameters has been improved and HTML tags or other reserved characters, may be shown escaped in data exports, or in a survey if reused as a wildcard.</p>
+<h2 id="header-52">
+<em><strong>People</strong></em><strong> Improvements</strong>
+</h2>
+<h3 id="header-54"><strong>Bulk-Edit</strong></h3>
+<p>Bulk-Edit of Panelists in the <em>People</em> module now allows modification of following variables: <em>pstatus</em>, <em>doub_stat</em>, <em>reg_code</em>, <em>mail_validation_status</em>, which makes management of pre-approved panelists easier. The panelists update through an import file now also allows duplicate status (<em>doub_stat</em>) of panelists to be updated.</p>
+<h3 id="header-55"><strong>Tracking of unsubscribed panelists</strong></h3>
+<p>It is now possible to track global unsubscription status of a panelist with a master data variable. By going to <strong>System </strong>→ <strong>Options</strong> → <strong>System setting</strong>, customers can select an existing yes/no master data variable from the drop-down in “Masterdata variable for mail blocklist”, which should track the unsubsciption status from now on. Existing panelists’ variables, who have already unsubscribed, are not automatically updated. For example, this variable can be then be used in grouping filters to exclude users from future survey invitations.</p>
+<h3 id="header-56"><strong>Time zones for mails in panel update rules</strong></h3>
+<p>Update rules triggering emails, can now queue them for a specific time in the future, while observing the panelist’s time zone. Send mail, Add to sample and Send survey invitation mail have now the option “When to send”. This option allows the panel administrator to select an hour in panelist's time zone, when the email shall be sent. For panelists, whose time to send the mail has already passed, will have the mail queued for the <em>next day </em>during the selected hour. <em>Default behaviour is to send the mail immediately at run time of the update rule.</em></p>
+<h2 id="header-58"><strong>Data Voyager</strong></h2>
+<h3 id="header-60"><strong>TIVIAN Access</strong></h3>
+<p><em>TIVIAN Access</em> can be used to access the <em>Data Voyager</em>. Once TIVIAN Access has been activated, the e-mail addresses of users cannot be changed, nor can passwords be created.</p>
+<h3 id="header-61"><strong>Layout Improvements</strong></h3>
+<p>In addition to the layout improvements that have been made in this release, the current version number of the <em>Data Voyager </em>you are using is now displayed below the TIVIAN logo.</p>
+<h3 id="header-62"><strong>The new Dimension Tree based on EFS Categories</

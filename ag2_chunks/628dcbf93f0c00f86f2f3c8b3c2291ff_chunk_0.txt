@@ -1,0 +1,86 @@
+<h1 id="h_01J7E73FN6BBTT8P0HBF6ETJ3Y">Overview</h1>
+<p>EFS uses a lot of codes across lots of tables, which can only be found as constants in the code. This article is meant to document the status codes that you may find in the database, so you can better "read" the config.</p>
+<p><strong>This information is provided on a best-effort basis thanks to the legacy Tivian team.</strong></p>
+<h2 id="h_01J7E70BK0W9FEWMY7YQH0B7JV">Table of Contents</h2>
+<ul>
+<li><a href="#header-3"> <font> <font>Project Status</font> </font> </a></li>
+<li><a href="#header-4">Dispositionscode</a></li>
+<li><a href="#header-5"> <font> <font>Project type</font> </font> </a></li>
+<li><a href="#header-6"> <font> <font>Page type</font> </font> </a></li>
+<li><a href="#header-7"> <font> <font>Question type</font> </font> </a></li>
+<li><a href="#header-8">Panelstatus:</a></li>
+<li><a href="#header-9"> <font> <font>Panel entry mode (pinput)</font> </font> </a></li>
+<li><a href="#header-10"> <font> <font>Panel Doublettenstatus (doub_stat)</font> </font> </a></li>
+<li><a href="#header-11"> <font> <font>Defaults Missing Values:</font> </font> </a></li>
+<li><a href="#header-12">Page History</a></li>
+<li><a href="#header-13">Jobstatus</a></li>
+<li><a href="#header-14"> <font> <font>Status of mails in the mails table:</font> </font> </a></li>
+<li><a href="#header-15"> <font> <font>SMS and mail sending codes from mail_rcpt</font> </font> </a></li>
+<li><a href="#header-21"> <font> <font>Archiving status of groups</font> </font> </a></li>
+<li><a href="#header-22"> <font> <font>Rights status</font> </font> </a></li>
+<li><a href="#header-23">EFS Teams (standard)</a></li>
+<li><a href="#header-24"> <font> <font>Status Bonus Points</font> </font> </a></li>
+<li><a href="#header-25">Reporting+ Codes</a></li>
+<li><a href="#header-26"> <font> <font>Sample status</font> </font> </a></li>
+<li><a href="#header-27"> <font> <font>Last edited by</font> </font> </a></li>
+<li><a href="#header-28"> <font> <font>Codes for survey_session Table</font> </font> </a></li>
+<li><a href="#header-29">EFS Codes for last_page and page_history</a></li>
+<li><a href="#header-30">StatusCodes Mysql</a></li>
+<li><a href="#header-31"> <font> <font>Portal Codes for portal_user_codes</font> </font> </a></li>
+<li><a href="#header-32"> <font> <font>Codes for panel_action_log</font> </font> </a></li>
+<li><a href="#header-33"> <font> <font>Codes for profile_visibility in the panel_att table</font> </font> </a></li>
+<li><a href="#header-34"> <font> <font> Codes for the panel tracking in the panel_tracking_log_permanent table </font> </font> </a></li>
+<li><a href="#header-35"> <font> <font>Portals: Codes for status in portal_user_status</font> </font> </a></li>
+</ul>
+<h2 id="header-3"><font>Project Status</font></h2>
+<p><font>Table: project </font> <br><font>Column: pstatus</font></p>
+<table data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<th>
+<p><u>Status</u></p>
+</th>
+<th>
+<p><u> <font>Meaning</font> </u></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>10</p>
+</td>
+<td>
+<p><font>created</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>20</p>
+</td>
+<td>
+<p><font>Instrument specified</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>30</p>
+</td>
+<td>
+<p><font>Assigned to subjects</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>40</p>
+</td>
+<td>
+<p><font>Subjects notified</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>42</p>
+</td>
+<td>
+<p><font>Assigned to variables</font></p>
+</td

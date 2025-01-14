@@ -1,0 +1,43 @@
+ rule‘.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>If disabled and one unit’s return equals 0, there will not be any other parallel units hidden with a return of ≥5. Once an employee participates, the remainder rule applies again (see 1.2.). See the process between screenshots 2 and 3: on November 7th, Org-Unit D’s return = 0, on November 9th, it is between 1 and 4. As a result, the return of the parallel unit Org-Unit C will be hidden on November 9th.</p>
+</li>
+<li>
+<p>If enabled, a parallel unit would be hidden on both dates, November 7th and November 9th, in the same case (only one unit with return = 0).</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Return on 11/07/2016</strong></p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015359119634" alt="Return 11.jpg"></p>
+<p class="wysiwyg-text-align-justify"><strong>Return on 11/09/2016</strong></p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015312008850" alt="Return 11.9.jpg"></p>
+<p class="wysiwyg-text-align-justify">Additionally box is disabled: ‘Suppress accumulated return for units with suppressed direct return, if it can be used to calculate the direct return’.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>If disabled, accumulated returns (for units with subunits) will be shown, even if the direct return is hidden. Under certain conditions, this may cause Directs to be counted back from Parent Units.</p>
+</li>
+</ul>
+<h3 id="suppress-accumulated-return-disabled" class="wysiwyg-text-align-justify"><strong>Suppress accumulated return disabled</strong></h3>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015312010514" alt="Suppress.jpg"></p>
+<p class="wysiwyg-text-align-justify">The direct return for the XY-Unit is hidden due to the anonymity criterion. The sum of the accumulated returns of all sub-units adds up to:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>10+7+6+6+27 = 56</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The accumulated return of the parent unit (XY-Unit) is also displayed in the export: 60. By subtracting the sum of the accumulated returns of all sub-units from the accumulated return of the parent unit, the direct return of XY-Unit can be calculated:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>60-56 = 4</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If enabled, accumulated returns will be hidden only, if they can be used to count back on directs. This suppression may affect the remainder rule (see also 2.)<br>in such a way that suppressions are ‘cascaded’, and even large units will no longer display accumulated returns.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015312011666" alt="Supress 2.jpg"></p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863" class="wysiwyg-text-align-justify">FAQ</h1>
+<h3 id="faq_1" class="wysiwyg-text-align-justify">What is the minimum number of participants required to display return data?</h3>
+<p class="wysiwyg-text-align-justify">The minimum number of participants required to display return data is 5. This applies to both direct and accumulated returns.</p>
+<h3 id="faq_2" class="wysiwyg-text-align-justify">How does the Remainder Rule affect data display?</h3>
+<p class="wysiwyg-text-align-justify">The Remainder Rule ensures that even if a unit has 5 or more participants, its data may still be hidden if showing it would allow the calculation of hidden data from other units. This rule is applied to maintain overall anonymity across parallel units.</p>
+<h3 id="faq_3" class="wysiwyg-text-align-justify">Can the Anonymity Criterion and Remainder Rule be deactivated?</h3>
+<p class="wysiwyg-text-align-justify">While these rules cannot be completely deactivated, there are options to modify their behavior. For example, you can choose whether to include units with a return rate of 0 in the Remainder Rule calculations, and whether to suppress accumulated returns for units with suppressed direct returns.</p>

@@ -1,0 +1,41 @@
+ match your specific timeframe.</li>
+<li>To <strong>format the output</strong>, you can apply the following:
+<ul>
+<li>Copy the result and add it to a CSV file, then open in Excel. All data will be shown in 1 column by default, and no empty rows (unless each row is huge, this method will not work).</li>
+<li>Remove the header drawing rows (row 1 and 3)</li>
+<li>Select the column with the data, then click <code>Data &gt; Text to Columns &gt; Delimited</code><br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/22577801312402">
+</li>
+<li>Use the symbol <code>|</code> as delimiter</li>
+<li>Remove unnecessary columns, and rename columns to be clear for the customer</li>
+<li>If the report has the recipient emails, you can compress the csv, add a password, and share the password with the customer using <a href="https://onetimesecret.com/">onetimesecret</a>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="h_01JCG9BEFA2PTABGBZ2DYBKQ8B">Summary</h1>
+<p>By following these steps, you can successfully detect a list of emails delivered by EFS for PE surveys within a specific timeframe. This involves using the Admin Log, AWS logs, and a specific SQL query to extract the required information.</p>
+<h2 id="h_01JCG9BEFA6CT3M0WXEBP1E22J">FAQ</h2>
+<ol>
+<li>
+<strong>What is EFS in this context?</strong><br>EFS stands for Email Feedback System. It's a system used to send surveys via email.</li>
+<li>
+<strong>What is the purpose of the SQL query provided?</strong><br>The SQL query is used to extract a list of emails delivered by EFS for PE surveys within a specific timeframe from the database.</li>
+<li>
+<strong>Can I use this method for other timeframes?</strong><br>Yes, you can adjust the date and time in the SQL query to match any timeframe you need.</li>
+</ol> be clear for the customer</li>
+<li>If the report has the recipient emails, you can compress the csv, add a password, and share the password with the customer using <a href="https://onetimesecret.com/">onetimesecret</a>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="h_01JCG9BEFA2PTABGBZ2DYBKQ8B">Summary</h1>
+<p>By following these steps, you can successfully detect a list of emails delivered by EFS for PE surveys within a specific timeframe. This involves using the Admin Log, AWS logs, and a specific SQL query to extract the required information.</p>
+<h2 id="h_01JCG9BEFA6CT3M0WXEBP1E22J">FAQ</h2>
+<ol>
+<li>
+<strong>What is EFS in this context?</strong><br>EFS stands for Email Feedback System. It's a system used to send surveys via email.</li>
+<li>
+<strong>What is the purpose of the SQL query provided?</strong><br>The SQL query is used to extract a list of emails delivered by EFS for PE surveys within a specific timeframe from the database.</li>
+<li>
+<strong>Can I use this method for other timeframes?</strong><br>Yes, you can adjust the date and time in the SQL query to match any timeframe you need.</li>
+</ol>

@@ -1,0 +1,70 @@
+<p class="wysiwyg-text-align-justify">Via the allocation mode, you control to which quota a participant will be allocated if there are various matching open quotas. This selected quota will then be recorded in the variable quota and may be used e.g. for filtering. The following options are available:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>First matching, open quota: The matching open quota that is first in the sorting order will be allocated to the participant and recorded in “quota”. If “quota_assignment” contains various quota IDs, these will be sorted in ascending order.</p>
+</li>
+<li>
+<p>Random matching, open quota: From the matching open quotas one is chosen at random.</p>
+</li>
+<li>
+<p>Last matching, open quota: The matching open quota that is last in the sorting order will be allocated to the participant and recorded in “quota”. If<br>“quota_assignment” contains various quota IDs, these will be sorted in descending order.</p>
+</li>
+<li>
+<p>Matching, open quota with the fewest participants allocated to it: The system will select the matching open quota that currently has the lowest allocation. If two quotas have equally few participants, the system will select the one that is first in the sorting order.</p>
+</li>
+<li>
+<p>Matching, open quota with the most allocated participants: The system will select the matching open quota with the highest current allocation. If two quotas have the same number of participants, the system will select the one that is first in the sorting order.</p>
+</li>
+<li>
+<p>First matching, open quota with the lowest filling ratio: The participant is allocated to the matching quota first in order with the lowest filling ratio.</p>
+</li>
+<li>
+<p>First matching, open quota with the highest filling ratio: The participant is allocated to the matching quota first in order with the highest filling ratio (recorded in quota).</p>
+</li>
+</ul>
+<h2 id="quota-statistics" class="wysiwyg-text-align-justify">Quota statistics</h2>
+<p class="wysiwyg-text-align-justify">You will find the current allocation figures of the project in the <strong>Quotas</strong> menu on the<strong> Quota statistics</strong> tab and the section “Quota statistics” of the field report. Each quota is listed along with the following information:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Quota ID: Unique identifier of the quota, assigned by the system</p>
+</li>
+<li>
+<p>Name</p>
+</li>
+<li>
+<p>Quota limit: The quota size specified when creating</p>
+</li>
+<li>
+<p>Quota count: Current allocation figure</p>
+</li>
+<li>
+<p>Status: Indicates whether a quota is open, full, or inactive</p>
+</li>
+<li>
+<p>Number of interviews that meet the quota condition: Indicates how many of the completed interviews (disposition codes 31, 32) meet the respective quota condition as currently defined. Depending on the selected configuration, this value may differ from the quota count.</p>
+</li>
+<li>
+<p>Filling degree: (number of interviews which meet the quota condition) / quota limit</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If there are 200 or more quotas in a given project, you have to open the “Quota statistics” section in the Field report explicitly. This prevents unnecessary delays caused by long processing times.</p>
+<h3 id="recalculating-quotas" class="wysiwyg-text-align-justify">Recalculating quotas</h3>
+<p class="wysiwyg-text-align-justify">It is possible to manually trigger a recalculation of the quotas. Occasionally, this may be necessary to adjust the quota allocation to the actual number of participants. Possible applications:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The quota statistics will be reset automatically if you compile the project completely, i.e. with deletion of all result data (see Chapter 3.3, p. 71). But when deleting individual participants who have already taken part or applied Reset and delete data, the actual value in the quota statistics will be updated automatically. Only when executing a reset without deleting data will the actual value not be updated automatically as there have been results accumulated which are displayed e. g. in the detailed view of the survey statistics.</p>
+</li>
+<li>
+<p>If you check the project using a tester account for which a quota is set only once but which generates entries for the allocation every time you click through the project, you can use the update function to undo this effect.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">In the course of recalculation, the existing quota results will be irretrievably overwritten. Recalculation should not be triggered during an ongoing field phase. The following takes place during recalculation:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>All quotas are reset to zero allocation and opened.</p>
+</li>
+<li>
+<p>After this, the quotas are checked individually for each participant. In larger projects (i.e., many quotas and/or many participants) this process may take quite a while.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">During recalculation new participants may enter into the project and additionally fill up quotas where they would normally be rejected. At the same time it may happen that participants who have already completed the questionnaire are subsequently screened out by quota

@@ -1,0 +1,30 @@
+{
+    "id": 20304970027282,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/20304970027282.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20304970027282-Obtaining-Customer-Interview-Admin-Panelist-Counts-for-Sales-Billing-purposes",
+    "author_id": 369584192734,
+    "comments_disabled": false,
+    "draft": false,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20389541164690,
+    "created_at": "2024-07-22T15:12:26Z",
+    "updated_at": "2024-07-29T10:16:15Z",
+    "name": "Obtaining Customer Interview/Admin/Panelist Counts for Sales/Billing purposes",
+    "title": "Obtaining Customer Interview/Admin/Panelist Counts for Sales/Billing purposes",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-07-29T10:16:14Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075294,
+    "content_tag_ids": [],
+    "label_names": [],
+    "body": "<p><span style=\"font-size: 2.1em;\">Overview</span></p>\n<article>\n<p>This article provides instructions on how to obtain interview data numbers for sales/billing, including information on accessing panelist statistics and retrieving interview counts for CIs (Customer Interviews).</p>\n<h1 id=\"h_01HGKSMPRSYYE7GMM7DZ0VCKXK\">Information</h1>\n<p>The billing in EFS/DXI is done a per completed survey basis. Therefore, for billing and sales purposes, the billing/sales team will require this information periodically.</p>\n<p>The billing/sales team will log a ticket with Support in order to obtain this information. The ticket will typically contain the following information:</p>\n<ul>\n<li>Customer Name</li>\n<li>Customer install/s</li>\n<li>What needs checking, CIs, Admins</li>\n<li>Contract dates to check</li>\n</ul>\n<p>This guide focuses on two main areas: accessing panelist statistics and retrieving interview counts for CIs. It provides step-by-step instructions for navigating the system and obtaining the required information.</p>\n<ul>\n<li><a href=\"#panelist_statistics\">Accessing Panelist Statistics</a></li>\n<li><a href=\"#ci_interview_counts\">Retrieving CI Interview Counts</a></li>\n<li><a href=\"#h_01J3YYNHY3R4ZANQSKGJ5CP00K\">Retrieving Admin Account Counts</a></li>\n</ul>\n<h2 id=\"panelist_statistics\">Accessing Panelist Statistics</h2>\n<p>To access panelist statistics, follow these steps:</p>\n<ol>\n<li id=\"panelist_step1\">Navigate to <strong>People &gt; Statistics</strong>\n</li>\n<li>Look in the list for the <strong>Active</strong> number of panelists</li>\n</ol>\n<p><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20389478226962\"></p>\n<p><em><span class=\"wysiwyg-underline\"><strong>NOTE:</strong></span> This is only a snapshot of the current state, historical data is not possible.</em></p>\n<h2 id=\"ci_interview_counts\">Retrieving CI Interview Counts</h2>\n<p>To retrieve interview counts for CIs, follow these steps:</p>\n<ol>\n<li id=\"ci_step1\">Navigate to <strong>System &gt; Options &gt; Platform Cockpit &gt; Interview Count</strong>\n</li>\n<li id=\"ci_step3\">Set Search Parameters, according to the request from the billing/sales team:\n<ol>\n<li>Organisation</li>\n<li>Timeframe (from / to)</li>\n<li>Disposition Codes 31-34</li>\n</ol>\n</li>\n<li>Click the \"Search\" button to retrieve results (highlighted in green below)</li>\n</ol>\n<p><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20389494357010\"></p>\n<p><em><strong>NOTE:</strong> you can use the Legend button at the top to get details on each disposition code.</em></p>\n<h2 id=\"h_01J3YYNHY3R4ZANQSKGJ5CP00K\">Retrieving Admin Account Counts</h2>\n<p>Historically, this was gathered via the Harvester tool, and it entailed a manual process. However, in the recent versions of Tivian, the process has changed.</p>\n<p>All accounts that have the <strong>area_www</strong> permission and the account <strong>has not expired or is deactivated</strong> are paid, regardless of whether the account has logged in or not.</p>\n<p><strong>There is no automated report to give this count; the data below needs to be manually merged.</strong></p>\n<ol>\n<li>Navigate to <strong>System &gt; Users &gt; Teams</strong>\n</li>\n<li>Select each team to identify if it has the <strong>area_www</strong> permission<br><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20428018634514\" width=\"298\" height=\"136\">\n</li>\n<li>Navigate to <strong>Users</strong> from the left navigation bar</li>\n<li>Click on <strong>View</strong> and select the <strong>Last Login</strong> field &gt; <strong>Submit</strong><br><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20427987369874\" width=\"395\" height=\"119\">\n</li>\n<li>Manually merge the data from points 2 and 4 in order to obtain the required count</li>\n</ol>\n<h1 id=\"h_01HGKSMPRSER9ENY5QWWRZZ863\">FAQ</h1>\n<h3 id=\"faq1\">What are Disposition Codes 31-34?</h3>\n<p>Disposition Codes 31-34 are specific categories used to classify interview outcomes. For more detailed information on these codes, please consult your organization's documentation or contact your supervisor.</p>\n<h3 id=\"faq2\">Can I export the interview count results?</h3>\n<p>The ability to export results may depend on your system's capabilities and your user permissions. Check for any export options on the results page or consult with your IT department for assistance.</p>\n</article>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

@@ -1,0 +1,70 @@
+24px;">Dimension</td>
+<td style="text-align: left; width: 84.0625px; height: 24px;">D</td>
+<td style="text-align: left; width: 204.653px; height: 24px;">orange</td>
+</tr>
+<tr style="height: 24px;">
+<td style="text-align: left; width: 198.837px; height: 24px;">Scale item</td>
+<td style="text-align: left; width: 84.0625px; height: 24px;">S</td>
+<td style="text-align: left; width: 204.653px; height: 24px;">black</td>
+</tr>
+<tr style="height: 24px;">
+<td style="text-align: left; width: 198.837px; height: 24px;">Collection member</td>
+<td style="text-align: left; width: 84.0625px; height: 24px;">M</td>
+<td style="text-align: left; width: 204.653px; height: 24px;">gray</td>
+</tr>
+<tr style="height: 24px;">
+<td style="text-align: left; width: 198.837px; height: 24px;">Result type</td>
+<td style="text-align: left; width: 84.0625px; height: 24px;">R</td>
+<td style="text-align: left; width: 204.653px; height: 24px;">black</td>
+</tr>
+<tr style="height: 24px;">
+<td style="text-align: left; width: 198.837px; height: 24px;">Collection</td>
+<td style="text-align: left; width: 84.0625px; height: 24px;">C</td>
+<td style="text-align: left; width: 204.653px; height: 24px;">green</td>
+</tr>
+<tr style="height: 24px;">
+<td style="text-align: left; width: 198.837px; height: 24px;">Property</td>
+<td style="text-align: left; width: 84.0625px; height: 24px;">P</td>
+<td style="text-align: left; width: 204.653px; height: 24px;"><em>alternating</em></td>
+</tr>
+<tr style="height: 24px;">
+<td style="text-align: left; width: 198.837px; height: 24px;">Text</td>
+<td style="text-align: left; width: 84.0625px; height: 24px;">T</td>
+<td style="text-align: left; width: 204.653px; height: 24px;">black</td>
+</tr>
+</tbody>
+</table>
+<p class="auto-cursor-target"> </p>
+</div>
+<h3 id="page-conditions" class="auto-cursor-target"><strong>Page conditions</strong></h3>
+<p><strong>Page conditions</strong> determine the conditions under which a page is included in the report or not. You click on <strong>Add</strong> and the inspector opens. To define a <strong>Page Condition</strong>, you proceed as follows:</p>
+<ul>
+<li>You select a DSQ, as you also create it for the mapping, which is composed of unit elements, unit properties, <strong>Dimensions</strong>, <strong>Scale,</strong> and result types.</li>
+</ul>
+<p>You select a relational operator:</p>
+<ul>
+<li>= (equal to)</li>
+<li>!= (not equal to)</li>
+<li>&gt; (greater)</li>
+<li>&gt;= (greater than or equal to)</li>
+<li>&lt; (less)</li>
+<li>&lt;= (less than or equal to)</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013838040594" alt="Page Conditions.png"></p>
+<p>You enter a reference value.</p>
+<ul>
+<li>Words and numbers act as reference values.</li>
+<li>If you select “Metaname“ or “Label“ as the Unit property or “Label“ as the scale property, you can use the relational operators <strong>=</strong> or <strong>!=</strong> to enter the label or meta name of the desired unit in the reference value field. In this way, you can deactivate page by deactivating it for a specific unit.</li>
+<li>You <strong>save</strong>.</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013838038546" alt="Page Conditions  Rahmen.png"></p>
+<div>
+<div class="sc-bbmXgH inLjth">
+<div class="page view">
+<div class="wiki-content">
+<p>The presented procedure can be illustrated on a possible page condition: You only want to release a page of the report for units that are assigned to the first or second level. After the inspector has opened, you set the <strong>Page Condition</strong>:</p>
+<p>You pick a DSQ path:</p>
+<p><em>Unit</em> → <em>Focus unit</em> → <em>Level</em></p>
+<ul>
+<li>As the relational operator, you choose <strong>&lt;</strong> (less).</li>
+<li>As the reference value, you enter 

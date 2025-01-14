@@ -1,0 +1,52 @@
+p><h2 id="header-5">Assessment</h2><h3 id="header-7">Requirements see:</h3><ul>
+<li><p>Functional: <ac:link ac:card-appearance="inline"><ri:page ri:content-title="High Level Requirements" ri:version-at-save="14"></ri:page><ac:link-body>High Level Requirements</ac:link-body></ac:link>  and <ac:link ac:card-appearance="inline"><ri:page ri:content-title="CRUD SSO" ri:version-at-save="15"></ri:page><ac:link-body>CRUD SSO</ac:link-body></ac:link> </p></li>
+<li><p>Quality: <a data-card-appearance="inline" href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3753050113/1+Introduction+and+Goals#Quality-Goals">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3753050113/1+Introduction+and+Goals#Quality-Goals</a> and <ac:link ac:card-appearance="inline"><ri:page ri:content-title="10 Quality Requirements" ri:version-at-save="4"></ri:page><ac:link-body>10 Quality Requirements</ac:link-body></ac:link> </p></li>
+</ul><h3 id="header-8">Additional Requirements</h3><p>-</p><p><ac:emoticon ac:emoji-fallback=":check_mark:" ac:emoji-id="atlassian-check_mark" ac:emoji-shortname=":check_mark:" ac:name="tick"></ac:emoticon>  yes;   <ac:emoticon ac:emoji-fallback=":cross_mark:" ac:emoji-id="atlassian-cross_mark" ac:emoji-shortname=":cross_mark:" ac:name="cross"></ac:emoticon> no; <ac:emoticon ac:emoji-fallback=":warning:" ac:emoji-id="atlassian-warning" ac:emoji-shortname=":warning:" ac:name="warning"></ac:emoticon> some sort of constraint, extra effort, plugin or the like</p><table data-layout="wide" ac:local-id="5bac3da0-7255-406e-bc97-82637fed622d">
+<colgroup>
+<col style="width: 262.0px;">
+<col style="width: 232.67px;">
+<col style="width: 232.67px;">
+<col style="width: 232.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p></p></th>
+<th><p><strong>Keycloak</strong></p></th>
+<th><p><strong>Okta</strong></p></th>
+<th><p><strong>Auth0</strong></p></th>
+</tr>
+<tr>
+<td data-highlight-colour="#ffebe6"><p><strong>Workflows</strong></p></td>
+<td data-highlight-colour="#ffebe6"><p></p></td>
+<td data-highlight-colour="#ffebe6"><p></p></td>
+<td data-highlight-colour="#ffebe6"><p></p></td>
+</tr>
+<tr>
+<td><p><a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3779330063/CRUD+SSO#Create">W1 - Create</a></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p><ac:emoticon ac:emoji-fallback=":check_mark:" ac:emoji-id="atlassian-check_mark" ac:emoji-shortname=":check_mark:" ac:name="tick"></ac:emoticon> </p></td>
+</tr>
+<tr>
+<td><p><a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3779330063/CRUD+SSO#Edit-(Sync-process)">W2A - Edit (Sync process)</a></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td>
+<p><ac:emoticon ac:emoji-fallback=":check_mark:" ac:emoji-id="atlassian-check_mark" ac:emoji-shortname=":check_mark:" ac:name="tick"></ac:emoticon> </p>
+<ac:rich-text-body><p>email confirmation might not be possible</p></ac:rich-text-body>
+</td>
+</tr>
+<tr>
+<td><p><a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3779330063/CRUD+SSO#Alternative%3A-Immediate-Sync">W2B - Alternative: Immediate Sync</a></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p><a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3779330063/CRUD+SSO#Alternative%3A-Immediate-Sync">W3 - Deletion - Deletion in Application</a></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p><a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3779330063/CRUD+SSO#Deletion---Deletion-centrally-in-SSO-provider-(SHOULD-DO

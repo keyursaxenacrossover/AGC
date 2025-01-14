@@ -1,0 +1,72 @@
+<p><strong>Original Confluence URL:</strong> <a href="https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1052476586">https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1052476586</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+<h2 id="h_01J7DVVFEFWM4MKP8BJVZ8BB8H">Table of Contents</h2>
+<ul>
+<li>
+<a href="#header-3">Using the helpers scripts</a>
+<ul>
+<li><a href="#header-6">Get an overview of the Helpers</a></li>
+<li><a href="#header-7">Get information about an installation (i-script)</a></li>
+<li><a href="#header-8">Add an update entry to the installation in Globis</a></li>
+<li><a href="#header-9">Get the short version history of an EFS version</a></li>
+<li><a href="#header-10">Get a Build from PJONGJANG: - obsolete</a></li>
+<li><a href="#header-11">Get list of FrontEnds? of an installation - obsolete</a></li>
+<li><a href="#header-12">Add an installation to the list in GLOBIS - disfunctional, but needed</a></li>
+<li><a href="#header-13">Get list of mirror installations - obsolete</a></li>
+<li><a href="#header-14">Remove installation from ROM</a></li>
+<li><a href="#header-15">Get config from database</a></li>
+<li><a href="#header-16">Add user to several EFS installations</a></li>
+<li><a href="#header-17">Search and get Rabbit MQ-Hash</a></li>
+<li><a href="#header-18">Get all queries for a specified query Id - obsolete</a></li>
+<li><a href="#header-19">Search PHP error logs for PHP errors - obsolete</a></li>
+<li><a href="#header-20">Get latest version of DV 1.1 and change symlink in /dumps/ - obsolete</a></li>
+<li><a href="#header-21">Adapt EFS config</a></li>
+<li><a href="#header-22">Create new EFS installation</a></li>
+<li><a href="#header-23">Get last 10 logins to EFS installation</a></li>
+<li><a href="#header-24">Become root user and login with your password</a></li>
+<li><a href="#header-25">Become user x and login with your password</a></li>
+<li><a href="#header-26">Log in to current DV and give you a list of information</a></li>
+<li><a href="#header-27">Create a new DV 2.x - obsolete</a></li>
+<li><a href="#header-28">Get last 10 logins to DV</a></li>
+<li><a href="#header-29">Write full processlist into a folder - must be fixed</a></li>
+<li><a href="#header-30">Kill SELECTs from current processlist</a></li>
+<li><a href="#header-31">Tail live PHP error logs</a></li>
+<li><a href="#header-32">Get list of current CDA (Customer Data Access)</a></li>
+<li><a href="#header-33">Check whether a domain is akamaized</a></li>
+<li><a href="#header-34">Get Elastic Search</a></li>
+<li><a href="#header-35">Get information of installation from GLOBIS</a></li>
+<li><a href="#header-36">Navigate to installation without database connection</a></li>
+<li>
+<a href="#header-38">Non-”Helperscripts”</a>
+<ul>
+<li><a href="#header-40">Healself</a></li>
+</ul>
+</li>
+<li><a href="#header-48">Adding new helperscripts</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="header-3">Using the helpers scripts</h2>
+<p>To be able to use the helpers scripts, you have to do the following initially:</p>
+<ul>
+<li>Login to a Service Gateway</li>
+<li>
+<p>Navigate to your home folder (<code>cd ~</code>) and edit <strong>.bashrc</strong>: <code>vi .bashrc</code></p>
+</li>
+<li>
+<p>Add the following line:</p>
+<ul>
+<li>
+<p>Frankfurt (no longer in use - kept for documentation purposes)</p>
+<pre><code class="language-text">. $HOME"/bashHelpersEFS_TS/EFS_TS_bashhelpers.sh"</code></pre>
+</li>
+<li>
+<p><strong>AWS:</strong></p>
+<pre>source /nfs/techsupport/bashhelperstsforaws/EFS_TS_bashhelpers.sh</pre>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="header-4">Overview of the Helpers</h2>
+<h3 id="header-6">Get an overview of the Helpers</h3>
+<p>=====================================================================<br><strong>Needed files</strong> : getHelpers.sh<br><strong>Aliases</strong> : helpers<br><strong>Usage</strong> : helpers<br><strong>Parameters</strong> : No<br><strong>Known Change Request</strong>:</p>
+<h3

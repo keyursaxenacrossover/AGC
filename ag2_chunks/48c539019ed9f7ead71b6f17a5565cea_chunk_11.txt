@@ -1,0 +1,48 @@
+ text-align: left; vertical-align: top; height: 22px; width: 362.326px;" colspan="1" rowspan="1" data-colwidth="340">
+<p data-renderer-start-pos="21987">#wave_status#</p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; height: 22px; width: 362.326px;" colspan="1" rowspan="1" data-colwidth="340">
+<p data-renderer-start-pos="22004">Status of the wave</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h3 id="h_01J3DK6GTFKC08D2C85K5K6S0A"> </h3>
+<h3 id="h_01HGKSMPRX3QZJX8YBGX9YJHWQ">Preparing Mail Templates</h3>
+<p>When writing emails in EFS, you will typically use pre-defined mail templates. These templates are created, edited, and managed in the Libraries → Mail templates menu.</p>
+<p>To create a new mail template:</p>
+<ol>
+<li>Open Libraries → Mail templates and click on Create template.</li>
+<li>Specify the necessary settings, select the appropriate mail sender, and enter the content. Consider the following:
+<ul>
+<li>Use meaningful titles for easy identification.</li>
+<li>Ensure the mail template type suits your purpose (e.g., use "Invitation mail" for invitations).</li>
+<li>Specify an appropriate sender address as per the "EFS Survey" manual, especially for tasks like password resets from a general mailbox.</li>
+<li>Insert necessary wildcards correctly. An overview of available wildcards is found below the Question mark icon in the mail form.</li>
+<li>Use constellation-specific wildcards for multi-source feedbacks.</li>
+</ul>
+</li>
+</ol>
+<p>For access links, use the wildcard #code_complete# to insert the questionnaire URL with the access code.</p>
+<p>The feedback center URL can be found in Process configuration → Feedback center on all tabs, formatted as: <a href="https://questback.qb-feedback.com/uc/main/a437/loft.php" target="_new" rel="noreferrer">https://questback.qb-feedback.com/uc/main/a437/loft.php</a></p>
+<p> </p>
+<h3 id="h_01HGKSMPRX9YJHWQX0QXJQX3QZ">Configuring "Reset Password" Mails</h3>
+<p>If participants forget their password and cannot log in to the feedback center, they can trigger a "Reset password" email containing a reset link.</p>
+<p>To configure this feature:</p>
+<ol>
+<li>Create a mail template of type “Password-Recovery-Mail”.</li>
+<li>Ensure the template includes the wildcard #password_recovery_url# for the reset link.</li>
+<li>In Process configuration → Settings, select the new mail template in the “Mail template” field and click Save.</li>
+</ol>
+<h1 id="h_01HGKSMPRXGX9YJHWQX0QXJQX3">FAQ</h1>
+<h3 id="h_01HGKSMPRXJX8YBGX9YJHWQX0Q">What is the purpose of the participant pool?</h3>
+<p>The participant pool contains all registered participants of the multi-source feedback, including their master data. It serves as a central repository for participant information and allows for easy management and allocation of participants to feedback constellations.</p>
+<h3 id="h_01HGKSMPRXPYJHWQX0QXJQX3QZ">How can I personalize emails in the feedback process?</h3>
+<p>Emails can be personalized using wildcards that insert master and process data of the mail recipient or the focus person in the current feedback constellation. A list of available wildcards can be found in the mail form by clicking on the question mark icon.</p>
+<h3 id="h_01HGKSMPRXX0QXJQX3QZJX8YBG">What is the difference between resetting data with and without deleting data?</h3>
+<p>When resetting with deleting data, the feedback providers' disposition codes are reset, and all collected result data is deleted. When resetting without deleting data, only the disposition codes are reset, while the collected result data is preserved.</p>
+<p> </p>
+<p> </p>
+</article>

@@ -1,0 +1,95 @@
+th>
+</tr>
+<tr>
+<td><p>login success screen</p></td>
+<td><p>current EFS multi-language capabilities could be used</p></td>
+</tr>
+<tr>
+<td><p>error-screen</p></td>
+<td><p>currently no multi-language capabilities</p></td>
+</tr>
+<tr>
+<td><p>login-screen</p></td>
+<td><ol>
+<li><p>manipulate the langugage directly when setting up the widget (not recommended)</p></li>
+<li><p>provide own language files for the widget for all supported languages  and manipualte the language loading (recommended)</p></li>
+<li><p>rewrite the sign-in widget (not recommended)</p></li>
+</ol></td>
+</tr>
+<tr>
+<td><p>e-mails (assumption: emails are customized)</p></td>
+<td><p>create the email version for a specific language upfront and upload it to the email customizations</p></td>
+</tr>
+</tbody>
+</table><p></p><h2 id="header-4">List of supported Okta languages</h2><table data-layout="default"><tbody>
+<tr>
+<th><p><strong>Where</strong></p></th>
+<th><p><strong>Language (possibly shortcuts)</strong></p></th>
+</tr>
+<tr>
+<td><p>login success screen</p></td>
+<td><p>user defined - based on the settings in EFS currently</p></td>
+</tr>
+<tr>
+<td><p>error-screen</p></td>
+<td><p>currently statically only English</p></td>
+</tr>
+<tr>
+<td><p>login-screen</p></td>
+<td>
+<p>apart from currently customized content the following languages:</p>
+<ul>
+<li><p><code>cs</code> - Czech</p></li>
+<li><p><code>da</code> - Danish</p></li>
+<li><p><code>de</code> - German</p></li>
+<li><p><code>el</code> - Greek</p></li>
+<li><p><code>en</code> - English</p></li>
+<li><p><code>es</code> - Spanish</p></li>
+<li><p><code>fi</code> - Finnish</p></li>
+<li><p><code>fr</code> - French</p></li>
+<li><p><code>hu</code> - Hungarian</p></li>
+<li><p><code>id</code> - Indonesian</p></li>
+<li><p><code>it</code> - Italian</p></li>
+<li><p><code>ja</code> - Japanese</p></li>
+<li><p><code>ko</code> - Korean</p></li>
+<li><p><code>ms</code> - Malaysian</p></li>
+<li><p><code>nb</code> - Norwegian</p></li>
+<li><p><code>nl-NL</code> - Dutch</p></li>
+<li><p><code>pl</code> - Polish</p></li>
+<li><p><code>pt-BR</code> - Portuguese (Brazil)</p></li>
+<li><p><code>ro</code> - Romanian</p></li>
+<li><p><code>ru</code> - Russian</p></li>
+<li><p><code>sv</code> - Swedish</p></li>
+<li><p><code>th</code> - Thai</p></li>
+<li><p><code>tr</code> - Turkish</p></li>
+<li><p><code>uk</code> - Ukrainian</p></li>
+<li><p><code>zh-CN</code> - Chinese (PRC)</p></li>
+<li><p><code>zh-TW</code> - Chinese (Taiwan)</p></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><p>e-mails (assumtption: emails are customized)</p></td>
+<td>
+<p>currently Englisch only</p>
+<p>The following languages would be possible:</p>
+<ul>
+<li><p>Czech - Čeština (cs)</p></li>
+<li><p>Danish - Dansk (da)</p></li>
+<li><p>German - Deutsch (de)</p></li>
+<li><p>Greek - Ελληνικά (el)</p></li>
+<li><p>English (en)</p></li>
+<li><p>Spanish - Español (es)</p></li>
+<li><p>Finnish - Suomi (fi)</p></li>
+<li><p>French - Français (fr)</p></li>
+<li><p>Hungarian - Magyar (hu)</p></li>
+<li><p>Indonesian - Bahasa Indonesia (id)</p></li>
+<li><p>Italian - Italiano (it)</p></li>
+<li><p>Japanese - 日本語 (ja)</p></li>
+<li><p>Korean - 한국어 (ko)</p></li>
+<li><p>Malaysian - Malay (ms)</p></li>
+<li><p>Norwegian - Norsk Bokmål (nb)</p></li>
+<li><p>Dutch - Nederlands (nl_NL)</p></li>
+<li><p>Polish - Język polski (pl)</p></li>
+<li><p>Portuguese - Português (pt_BR)</p></li>
+<li><

@@ -1,0 +1,55 @@
+ Nevertheless, you depict the individual shade of each department. To show how this works, you can emphasize two stations on the way to the completed reports: the mapping and the report order.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998566550290" alt="c29b8273-bfe7-43f5-a988-a7366b9d1fdd"></p>
+<h3 id="header-19">The mapping</h3>
+<p>The mapping is conducive to create a path for the data space query (DSQ). You define for which departments values are determined without first having to specify which departments are involved. The paradigmatic use case can serve as an illustration: If you want to generate reports for all departments that show the comparison of the regarding unit with the next higher one in relation to any value, it is sufficient to use the two units elements focus unit and level-up comparison unit and define the properties or result types that you want to query.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998505219474" alt="2ee3de3e-8f5d-45b3-8ebf-23e58ede1edc"></p>
+<h3 id="header-20">The report order</h3>
+<p>In the first step of the report order process, you determine the unit that is to function as the focus unit. As a consequence, the abstract relation to the next higher unit is automatically transformed into a concrete one. Besides, the report type “Standard Report” allows you an easier workload. You are able to hook “Include subunits” and order reports for all units that are located in the organizational structure below the unit you selected. They will be functioned as the focus unit of these reports.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998558913682" alt="b07d3fdc-a238-4dc5-be3b-e8f29b4811a3"></p>
+<p>According to this, the relation to the next higher unit is respectively transferred differently. But you don’t have to adjust it manually.</p>
+<p> </p>
+<h2 id="header-22">Updates for the Report Manager</h2>
+<h3 id="header-24">Page conditions</h3>
+<p>To guarantee a higher standard of anonymity and to present the reports in a scope that is tailored to the addressed unit, you define the page conditions for each page of the report.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998558759186" alt="8a79d15b-654e-4973-8168-f7cafb007c79"></p>
+<p>You can use a page condition to determine the conditions under which the respective page is included in the report or not. To define a page condition, you pick a DSQ (Data Space Query), select the desired set operator from the six available set operators (=, !=, &gt;,&gt;=, &lt;,&lt;=) and enter the reference value. Words and numbers can be used as a reference value. If you select “Metaname” or “Label” as unit property or “Label” as a scale property, you use the set operators = or != to be able to enter in the reference value field the label or the metaname. You are able to deactivate a page pointedly because you deactivate the page for a specific unit.</p>
+<h3 id="header-25">Rights and roles management</h3>
+<p>In the role management of the Data Voyager, you hook the right to create, edit and delete page conditions for the roles “Admin” and “Analyst”.</p>
+<p>You hook the access right to the elements of the page conditions for the roles “Admin”, “Analyst” and “Reader”. These three roles are then given the right to view defined page conditions.</p>
+<p>The following use cases are worth mentioning:</p>
+<ul>
+<li>
+<p>The user can view, create, edit and delete page conditions in the role of “Admin” or “Analyst” if the following rights have been activated or deactivated in the role management of the <em>Data Voyager</em>:</p>
+<ul>
+<li>
+<p>Access to elements of the conditions is disabled or enabled.</p>
+</li>
+<li>
+<p>Report management is activated.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>The user cannot see, create or edit the page conditions in the roles</p>
+<p>“Admin”, “Analyst” and “Reader” if the following rights have been deactivated in the role management of the <em>Data Voyager</em>:</p>
+<ul>
+<li>
+<p>Access to elements of the conditions is disabled.</p>
+</li>
+<li>
+<p>Report management is deactivated.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>The user can view the page conditions in the roles “Admin”, “Analyst”</p>
+<p>and “Reader” but cannot create, edit and delete them if the following rights have been activated or deactivated in the role management of the <em>Data Voyager</em>:</p>
+<ul>
+<li>
+<p>Access to elements of the conditions is enabled. o Report management is deactivated.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="header-26">A new column in the report order table</h3>
+<p>The report order table (under the tab report orders) obtains the new column “Order State”. By the means of this

@@ -1,0 +1,111 @@
+ HTML5, Flash is used as a fallback.</p>
+</li>
+<li>
+<p>The video player supports the video formats mp4, m4v, and mov combined with the encoding process H.264 codec. If a selected file does not conform with the H.264 codec a warning is displayed.</p>
+</li>
+<li>
+<p>The maximum file size corresponds to the installation-specific maximum permitted size of files in the media library, which is currently 512 MB. However, for better performance, the best practice for larger videos (e.g., file size of 500 MB) is the use of streaming services. The corresponding embed code can be embedded via question type 911.</p>
+</li>
+<li>
+<p>A dedicated variable allows tracking if the participants have seen the video file completely, partially, or not at all. The variable is created automatically. Per default, it is labeled “Video has finished playing”. The following missings are used:</p>
+<ul>
+<li>
+<p>-77 = not seen</p>
+</li>
+<li>
+<p>-66 = no Javascript, cannot tell if played</p>
+</li>
+<li>
+<p>-99 = seen, not played</p>
+</li>
+<li>
+<p>1 = seen and completely played</p>
+</li>
+<li>
+<p>0 = seen and partially played but not finished or played in repeat mode</p>
+</li>
+</ul>
+</li>
+<li>
+<p>The “Responsive Layout” video player is realized based on question type 911 with a comparable functional scope.</p>
+</li>
+</ul>
+<h4 id="entry-dialog-1">Entry Dialog</h4>
+<p>The entry dialog is closely related to the entry dialog of question type 911.</p>
+<ul>
+<li>
+<p>The “Answers” section is generated automatically. Please do not change anything in this section.</p>
+</li>
+<li>
+<p>The features of the “Detail configuration” section are explained in the Table below.</p>
+</li>
+</ul>
+<table border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour="#c0b6f2">
+<p><strong>Feature</strong></p>
+</th>
+<th data-highlight-colour="#c0b6f2">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Video file</p>
+</td>
+<td>
+<p>The video file must use the h.264 codec.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Placeholder image</p>
+</td>
+<td>
+<p>The image is shown until the video starts to play. Should be of the same dimensions as the video file.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Alignment</p>
+</td>
+<td>
+<p>The video player can be aligned left, right, or centered.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Hide progress bar</p>
+</td>
+<td>
+<p>The progress bar can be hidden to prevent the participant from skipping the file.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Autoplay</p>
+</td>
+<td>
+<p>Automatically play the file upon opening the page. Not supported on most mobile devices.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Repeat</p>
+</td>
+<td>
+<p>The file is played in an endless loop. If this option is activated, the variable of the question remains set to code "0".</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="h_01J3YQ4GEAQN1Z4MX48QNVMTZG"> </h3>
+<h3 id="about-the-video-player">About the video player</h3>
+<p>The video player offered by EFS has a three-stage concept. First, it always tries to provide a native HTML5 player. This player requires videos in certain container formats (e.g. MP4). See here: <a href="https://www.w3schools.com/html/html5_video.asp">https://www.w3schools.com/html/html5_video.asp</a></p>
+<p>These container formats contain video tracks or soundtracks in certain formats (e.g. AVC for video and AAC for audio).</p>
+<p>These formats should have been created with default settings (the so-called profile at a certain level). This is important if you want to have the highest possible support on different devices (e.g. Baseline@3.1). For example, some profiles work in desktop browsers but not on mobile devices, especially older ones, but are still widely used. See here: <a href="https://en.wikipedia.org/wiki/Advanced_Video_Coding#Profiles" data-card-appearance="inline">https://en.wikipedia.org/wiki/Advanced_Video_Coding#Profiles</a></p>
+<p>If the format does not support HTML5, EFS tries to deliver a proprietary Flash player to play the video. Please note that support for all major browsers (Chrome, Firefox, Opera, Safari, Edge) has been discontinued and you may have to activate Flash manually (if at all possible). Adobe will also discontinue support for Flash 2020.</p>
+<p>As a last option, EFS provides the format for download. This is exactly what happens here, for example in Chrome. Firefox for example still asks if Fash should be activated.</p>
+<p>In summary, you can say that videos in container format MOV should not be used if you want to cover as many browsers and

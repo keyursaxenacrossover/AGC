@@ -1,0 +1,72 @@
+-indent-level="1">
+<li>
+<p data-renderer-start-pos="27685">The configuration of the teams reflects the respective rights and responsibilities of entire staff groups with identical responsibilities.</p>
+</li>
+<li>
+<p data-renderer-start-pos="27827">Users can be members of several teams.</p>
+<ul class="ak-ul" data-indent-level="2">
+<li>
+<p data-renderer-start-pos="27869">The ACL rights of his teams are added up, i.e. he may access all information and functions that at least one of his teams has access to. If, for example, one of his teams holds write rights for <em data-renderer-mark="true">ct42partadm</em>, i.e. it can create participants in the participant administration, while another of his team has only read rights, he can create participants.</p>
+</li>
+<li>
+<p data-renderer-start-pos="28222">With regard to individual objects, he also has the widest access that is configured for one of his teams, i.e. if one of his teams holds write rights for project x while another team only has read rights, he has write rights.</p>
+</li>
+</ul>
+</li>
+<li>
+<p data-renderer-start-pos="28453">Each user belongs to one primary team.</p>
+<ul class="ak-ul" data-indent-level="2">
+<li>
+<p data-renderer-start-pos="28495">The primary team is always automatically granted read and write rights for projects created by this user.</p>
+</li>
+<li>
+<p data-renderer-start-pos="28604">In new projects created by this user, the survey URL contains the name of the primary team.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="28701">In new EFS installations, teams reflecting the most frequently required user roles have been created and preconfigured by default. These roles include:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="28857">Project manager: The project manager is responsible for conducting survey projects. However, he generally requires no access to panel administration functions and often has no access to staff administration, either.</p>
+</li>
+<li>
+<p data-renderer-start-pos="29076">Panel administrator: In EFS Panel installations, the panel administrator is mainly responsible for panel administration. He may also be in charge of the CMS and the panel community.</p>
+</li>
+<li>
+<p data-renderer-start-pos="29261">System administrator: This role is reserved for support operations by TIVIAN. It contains special functions which, if applied incorrectly, can cause damage to the system.</p>
+</li>
+</ul>
+<h3 id="Importing-and-exporting-rights-templates" class="wysiwyg-text-align-justify" data-renderer-start-pos="29435"><strong data-renderer-mark="true">Importing and exporting rights templates</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="29477">Export and import functions allow the transfer of rights definitions from one <em data-renderer-mark="true">EFS</em> installation to another. Please proceed as follows:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="29614">Select the <strong data-renderer-mark="true">Options → ACL rights → Rights templates</strong> menu.</p>
+</li>
+<li>
+<p data-renderer-start-pos="29674">Click on the<strong data-renderer-mark="true"> Export ACL rights template</strong> icon.</p>
+</li>
+<li>
+<p data-renderer-start-pos="29723">A file with the .tpl format will be downloaded. Save this file locally on your PC.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="29809">If you wish to transfer the exported rights template to another <em data-renderer-mark="true">EFS</em> installation, continue as follows:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="29915">On the destination installation, switch to the <strong data-renderer-mark="true">Options</strong> → <strong data-renderer-mark="true">ACL rights</strong> →<strong data-renderer-mark="true"> Rights templates</strong> menu and click on the<strong data-renderer-mark="true"> Import ACL rights template</strong> button.</p>
+</li>
+<li>
+<p data-renderer-start-pos="30062">Enter name and title.</p>
+</li>
+<li>
+<p data-renderer-start-pos="30087">Identify the desired file on your PC.</p>
+</li>
+<li>
+<p data-renderer-start-pos="30128">Confirm by clicking on<strong data-renderer-mark="true"> Import</strong>.</p>
+</li>
+<li>
+<p data-renderer-start-pos="30162">The rights template will be imported.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="30203">In the <strong data-renderer-mark="true">Assign rights templates</strong> menu, you can assign the template to a team on the target installation.</p>
+<h3 id="Configuring-access-options-precisely-using-ACL-and-object-rights" class

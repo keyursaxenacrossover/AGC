@@ -1,0 +1,59 @@
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="12798"><strong data-renderer-mark="true">Only selected panelists can participate</strong></p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="12839">If you want only selected panelists to participate in the two connected projects, please proceed as follows:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="12951">Make sure the participating panelists are members of the samples of both projects.</p>
+</li>
+<li>
+<p data-renderer-start-pos="13041">The link for the jump from primary to secondary project should look as follows: http://www.your-domain.com/xyz/ ?syid=573&amp;sid=574&amp;pcode=#panelist_code#&amp;pses=#panel_ses#</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="13217">This contains:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="13235">syid: Project ID</p>
+</li>
+<li>
+<p data-renderer-start-pos="13255">sid: Sample ID of the appropriate sample in the secondary project. You can find this ID by scrolling over the title in the overview of samples with the mouse pointer while observing the link in the status bar of your browser. It looks like this:</p>
+<p class="wysiwyg-text-align-left" data-renderer-start-pos="13502">http://www.your-domain.com/ front.php?module=panel_sampling&amp;act=view_sample&amp;pid=610&amp;sid=611</p>
+</li>
+<li>
+<p data-renderer-start-pos="13597">pcode: Panelist code</p>
+</li>
+<li>
+<p data-renderer-start-pos="13622">pses: Session ID of the panelists. If you can trust that the panelists have cookies activated, you can drop the session ID. But if you want to allow the jump with cookies switched off, the session ID must be transferred.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="13846"><strong data-renderer-mark="true">All panelists can participate</strong></p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="13877">If you want all panelists to participate in both projects or at least in the secondary project, please proceed as follows:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="14003">Activate the option “All panelists can participate in the survey (independent from being in a sample for the survey)” in the <strong data-renderer-mark="true">Project properties</strong> menu of both projects resp. only in the secondary project.</p>
+</li>
+<li>
+<p data-renderer-start-pos="14209">The link for the jump from primary to secondary project should look as follows: http://www.your-domain.com/xyz/</p>
+<p data-renderer-start-pos="14322">?syid=573&amp;sid=574&amp;pcode=#panelist_code#&amp;pses=#panel_ses#</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="14382">This contains:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="14400">syid: Project ID</p>
+</li>
+<li>
+<p data-renderer-start-pos="14420">sid: Sample ID of the “internal” sample of the secondary project.</p>
+</li>
+<li>
+<p data-renderer-start-pos="14491">pcode: Panelist code</p>
+</li>
+<li>
+<p data-renderer-start-pos="14516">pses: Session ID of the panelists. If you can trust that the panelists have cookies activated, you can drop the session ID. But if you want to allow the jump with cookies switched off, the session ID must be transferred.</p>
+</li>
+</ul>
+<h3 id="Transferring-Data-from-the-Primary-to-the-secondary-Project-and-storing-these-Data-in-URL-Parameter" class="wysiwyg-text-align-justify" data-renderer-start-pos="14740"><strong data-renderer-mark="true">Transferring Data from the Primary to the Secondary Project and storing these Data in URL Parameter</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="14841">The return jump from the secondary to the primary project is a very different situation than the forward jump: The participant is not taken to the start page of a new project but resumes an already started project. Therefore, unlike in the case of the forward jump, the data transfer cannot be done using URL parameters: These can only be processed on the first page of a project. Instead, the data are transferred to user-defined variables (c variables).</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="15298">The following steps are required:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start

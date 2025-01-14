@@ -1,0 +1,59 @@
+<li>Similar to <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20714568035218" target="_blank" rel="noopener noreferrer">Provisioning new DXI installations (WIP)</a>, we have a template that can be used in order to fulfill this task.
+<ol>
+<li>The template is attached to this article, and it also contains instructions for how to fulfill each action</li>
+<li>Steps in the template that have been done, are marked with an <strong>x</strong>, and steps where nothing had to be done except checking, get an <strong>o</strong>.</li>
+<li>Replace all <code>{{PLACEHOLDER}}</code> entries with their relevant real counterparts, and this will result in having all the information outlined and just ready to copy/paste.</li>
+</ol>
+</li>
+<li>Once you take any actions, save the changes made to the txt file (and rename it to <strong>EFS_Deletion_Checklist_ticketID.txt</strong>); this is very important, since this will likely go through the hands of multiple agents through the entire lifecycle of the ticket</li>
+<li>In the end, inform the requester that the installation has been purged (a template for this is also found in the TXT file)</li>
+</ol>
+<h2 id="header-7">Reactivating soft-deleted installations</h2>
+<p>In some instances, soft-deleted installations may require restoring. If that is the case, then you will need to follow the below process:</p>
+<ol>
+<li>Create a <strong>SaaS CR</strong> requesting the instance reactivation and include in the CR description the original CR where we requested the deletion of the instance</li>
+<li>
+<p>Once the CR is completed:</p>
+<ol>
+<li>Check availability of the installation in a browser (both installation URL and aliases)</li>
+<li>
+<p>Create new root password and add to PasswordState</p>
+</li>
+<li>
+<p>Login with root account and makes needed config changes (revert the initial changes if required, but it should not be generally required, as the DB is dumped back into the instance)</p>
+</li>
+<li>
+<p>Reactivate installation entry in Globis via menu "Deleted installations" &gt;&gt; icon "<strong>undelete</strong>" installation</p>
+</li>
+<li>
+<p>(if applicable) Create MySight site on Tableau server</p>
+</li>
+<li>(if applicable) Reactivate DV entry in in Globis via menu "Deleted installations" &gt;&gt; icon "undelete" installation</li>
+</ol>
+</li>
+</ol> is also found in the TXT file)</li>
+</ol>
+<h2 id="header-7">Reactivating soft-deleted installations</h2>
+<p>In some instances, soft-deleted installations may require restoring. If that is the case, then you will need to follow the below process:</p>
+<ol>
+<li>Create a <strong>SaaS CR</strong> requesting the instance reactivation and include in the CR description the original CR where we requested the deletion of the instance</li>
+<li>
+<p>Once the CR is completed:</p>
+<ol>
+<li>Check availability of the installation in a browser (both installation URL and aliases)</li>
+<li>
+<p>Create new root password and add to PasswordState</p>
+</li>
+<li>
+<p>Login with root account and makes needed config changes (revert the initial changes if required, but it should not be generally required, as the DB is dumped back into the instance)</p>
+</li>
+<li>
+<p>Reactivate installation entry in Globis via menu "Deleted installations" &gt;&gt; icon "<strong>undelete</strong>" installation</p>
+</li>
+<li>
+<p>(if applicable) Create MySight site on Tableau server</p>
+</li>
+<li>(if applicable) Reactivate DV entry in in Globis via menu "Deleted installations" &gt;&gt; icon "undelete" installation</li>
+</ol>
+</li>
+</ol>

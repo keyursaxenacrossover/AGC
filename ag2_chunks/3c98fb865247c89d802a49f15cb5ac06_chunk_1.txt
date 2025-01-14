@@ -1,0 +1,22 @@
+ EFS?</h3>
+<p>For practical purposes in EFS, there is no difference between UTC and GMT. Although UTC is the more technically correct term, EFS uses GMT in its interface.</p>
+<h3 id="h_01J3Q7CXMWD20SMRB0W50PRJWM">If no time zone is stored for the recipient and the checkbox "Send from" uses the recipient's time zone" is not checked, what time timezone will be used?</h3>
+<p>All participants are always assigned to a time zone. If nothing was defined during import, the time zone is Universal Time (UTC/GMT).</p>
+<h3 id="h_01J3Q7EQQ9EV4M5S335NE0Z2CA">If I schedule an email for delivery, will it be sent according to UTC or my local time?</h3>
+<p>All times within EFS are based on the time zone set by the admin user, unless GMT/UTC is explicitly specified mentioned. So, if you already have a timezone setup, it will be your local time.</p>
+<h3 id="h_01J3Q7MNQCTNVPKMZPR0Z3K0HZ">What time zone is used in filters?</h3>
+<p>For example, if you set a grouping filter that refers to the system variables like #PREVIOUS_DAY_END# and #CURRENT_DAY_END# and put it in context with a stored date  (e.g. an imported date in a master date), UTC will be used. The current values can be found under the "(?)". This is because the rules are executed on the server which needs UTC times.</p>
+<h3 id="h_01J3Q7TV8NC7YEHNZ57ZNZWKCX">Until now, we have not had to take summer and winter time into account. So we have some jobs that always start at the same time according to CET. time. For example, 11 p.m. CET. How does that work?</h3>
+<p>The crons are created by the admins in UTC and are then executed at the appropriate time. No Summer or winter time is taken into account.</p>
+<p>So if you request a cron during winter time (CET) that should run at 00:00 CET (corresponds to UTC+1 at this time), then this will be executed in the cron at "23:00 UTC" because we are at UTC+1.</p>
+<p>During summer time (CEST) we are UTC+2 and the cron would be created with "22:00 UTC". </p>
+<h3 id="h_01J3Q7XFVC5BN3QYNGFESD38VG">If an automatic cron is executed, for example, for sending mail, the actual time of sending in the mail admin is in UTC or that of my account?</h3>
+<p>All times in EFS are displayed in the time zone of the EFS account you are logged in with.</p>
+</article> executed on the server which needs UTC times.</p>
+<h3 id="h_01J3Q7TV8NC7YEHNZ57ZNZWKCX">Until now, we have not had to take summer and winter time into account. So we have some jobs that always start at the same time according to CET. time. For example, 11 p.m. CET. How does that work?</h3>
+<p>The crons are created by the admins in UTC and are then executed at the appropriate time. No Summer or winter time is taken into account.</p>
+<p>So if you request a cron during winter time (CET) that should run at 00:00 CET (corresponds to UTC+1 at this time), then this will be executed in the cron at "23:00 UTC" because we are at UTC+1.</p>
+<p>During summer time (CEST) we are UTC+2 and the cron would be created with "22:00 UTC". </p>
+<h3 id="h_01J3Q7XFVC5BN3QYNGFESD38VG">If an automatic cron is executed, for example, for sending mail, the actual time of sending in the mail admin is in UTC or that of my account?</h3>
+<p>All times in EFS are displayed in the time zone of the EFS account you are logged in with.</p>
+</article>

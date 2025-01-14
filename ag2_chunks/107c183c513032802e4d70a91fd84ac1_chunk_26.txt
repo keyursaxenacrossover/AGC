@@ -1,0 +1,79 @@
+ icon, you can select the user account with the desired unit and role allocation. Please note: The purpose of this function is to copy the unit allocations listed on the <strong>Organizational Units</strong> tab. Allocations of users to logistics sites or reshipment points cannot be adopted.</p>
+</li>
+<li>
+<p>You can also perform this allocation by import for all users of the entire project.</p>
+</li>
+<li>
+<p>Alternatively, you can also leave it to already existing users of the higher levels to allocate additional users within their areas of responsibility.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Creating users Manually in the unit-specific user management</strong></p>
+<p class="wysiwyg-text-align-justify">To create a new user in the unit-specific user management, please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Open the desired unit.</p>
+</li>
+<li>
+<p>Click on the <strong>User Management</strong> tab in the detail view.</p>
+</li>
+<li>
+<p>Click on the <strong>Add user</strong> button.</p>
+</li>
+<li>
+<p>Check first whether an account already exists for the respective person.</p>
+<ul>
+<li>
+<p>To do so, click on the<strong> binoculars</strong> icon in the “Name” field.</p>
+</li>
+<li>
+<p>This will prompt a list of all the users that have already been stored to be displayed. Search this list. If the desired person is present on this list, transfer the data by clicking on <strong>Select</strong>.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Enter the data if the desired user does not exist yet. The following rules apply:</p>
+<ul>
+<li>
+<p>First name, last name, and e-mail address are mandatory.</p>
+</li>
+<li>
+<p>Use of the other fields is optional: Please follow the instructions of the project management regarding the data to be maintained.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Select the role you want the user to have in the current unit.</p>
+</li>
+<li>
+<p>If the project management has activated the semi-automatic delivery of login details, you will also find a checkbox “Send account data automatically when saving”. If you tick this checkbox, the new user will automatically receive an e-mail with his login details.</p>
+</li>
+<li>
+<p>Confirm by clicking on <strong>Save</strong>.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If you want users to be able to manually create other user accounts, you need to assign the right <em>manager_add</em> to the appropriate roles.</p>
+<p class="wysiwyg-text-align-justify">If there is no <strong>Select</strong> icon available for a user, this usually means that this user has already been allocated to the current unit: Double allocation to the same unit is not possible.</p>
+<h3 id="importing-users" class="wysiwyg-text-align-justify"><strong>Importing users</strong></h3>
+<p class="wysiwyg-text-align-justify">As a project manager, you can import new user accounts instead of creating each account individually. The import process is analogous to the participant import: To open the import dialog click on the Import users button in the <strong>Projects</strong> → {Selected project} → Org Processor →<strong> Org Processor users</strong> menu. Here, click on<strong> the Download import template</strong> to download the already pre-formatted import template. Fill this out and then import as usual. The formatting of the import file is also similar to that of the participant import file and follows the same rules.</p>
+<p class="wysiwyg-text-align-justify"><strong>Importing the allocation of users to units</strong></p>
+<p class="wysiwyg-text-align-justify">The allocation of the users to the units can also be defined by import. The import process is analogous to the participant import. Only the formatting of the import file differs from the usual procedure: There are no account data to be entered, but allocations between user accounts, units, and roles. The import file contains the following columns:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The column “u_email”: The e-mail address serves as the linking variable.</p>
+</li>
+<li>
+<p>The column “metaname”: The meta name indicates which unit the user is to be allocated to.</p>
+</li>
+<li>
+<p>The column “role”: In this column, you enter the abbreviation for the role the user is to assume in the unit identified by the meta name.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The rows list the individual allocations user:unit.</p>
+<p class="wysiwyg-text-align-justify">If a user is to be allocated to multiple units, you have to list him multiple times. In the example shown, the user “Frank Sample” is allocated to one unit as owner and to a second unit as a report recipient.</p>
+<p class="wysiwyg-text-align-justify">Please note:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>A user can not assume multiple roles within one unit.</p>
+</li>
+<li>
+<p>A user cannot assume the same role twice within a branch of the structure, i.e., he cannot have the same role in a unit and in its

@@ -1,0 +1,54 @@
+<p><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p>This article provides guidance on how to check MP4 video files for compatibility with EFS and various web browsers. It explains the process of using MediaInfo to analyze video files and interpret the results to ensure broad compatibility.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>MP4 is a container format that can include various video and audio codecs. Not all of these codecs are compatible with EFS or all web browsers. This guide will help you check and ensure your video files are compatible with a wide range of platforms.</p>
+<ul>
+<li><a href="#h_01HGKSMPRT0YJQCQ3JXBP7XNQM">How to Check MP4 Files</a></li>
+<li><a href="#h_01HGKSMPRT5YJHXQX3QXCX8ZQN">Interpreting MediaInfo Results</a></li>
+<li><a href="#h_01HGKSMPRTBXJ8QXJQXCX8ZQN4">Browser Compatibility</a></li>
+<li><a href="#h_01HGKSMPRTGXJ8QXJQXCX8ZQN5">Recommended Video Settings</a></li>
+</ul>
+<p> </p>
+<h2 id="h_01HGKSMPRT0YJQCQ3JXBP7XNQM">How to Check MP4 Files</h2>
+<p>To check the compatibility of your MP4 files, you can use <a href="https://mediaarea.net/en/MediaInfo/Download" target="_blank" rel="noopener noreferrer">MediaInfo</a>, a free software that provides detailed information about multimedia files.</p>
+<ol>
+<li id="h_01HGKSMPRTMXJ8QXJQXCX8ZQN6">Download and install <strong>MediaInfo</strong>
+</li>
+<li>Set the options in MediaInfo to display information in <strong>TEXT</strong> format<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21012306452626" width="306" height="226">
+</li>
+<li id="h_01HGKSMPRTUXJ8QXJQXCX8ZQN8">Drag and drop the video file into the large, empty MediaInfo field to analyze it.<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21012306454674" width="304" height="310">
+</li>
+</ol>
+<p> </p>
+<h2 id="h_01HGKSMPRT5YJHXQX3QXCX8ZQN">Interpreting MediaInfo Results</h2>
+<p>After analyzing the file, look for the "Format" field in the MediaInfo results. This will show you the codec used for the video.</p>
+<p>For example, if you see "<strong>HEVC</strong>" in the Format field, this refers to H.265, which is not widely supported across all browsers. You can check this via <a href="https://caniuse.com/hevc">https://caniuse.com/</a> and search for the format of your video.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21012306456338"></p>
+<p>Green indicates full support, while other colors may indicate partial or no support. Hover over browser entries for additional information.</p>
+<h2 id="h_01HGKSMPRTGXJ8QXJQXCX8ZQN5">Recommended Video Settings</h2>
+<p>To ensure the broadest compatibility with EFS and various browsers, use the following settings for your MP4 videos:</p>
+<ul>
+<li>Container: <code>MP4</code>
+</li>
+<li>Video Codec: <code>H.264/AVC</code>
+</li>
+<li>Audio Codec: <code>MPEG-4 AAC-LC</code>
+</li>
+<li>Profiles: <code>Main</code> / <code>High</code>
+</li>
+<li>Levels: <code>3</code> / <code>4</code>
+</li>
+<li>Resolution: up to <code>1920x1080</code> (<code>1280x720</code> if aimed towards mobile users)</li>
+</ul>
+<p><em>Notes:</em></p>
+<ol>
+<li>The longer a video and the higher the encoding setting, the larger the video file will be.</li>
+<li>Always consider that especially on mobile connections, file size matters if bandwidth is limited.</li>
+</ol>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="h_01HGKSMPRVAYJQCQ3JXBP7XNQP">What is MP4?</h3>
+<p>MP4 is a container format that can include various video and audio codecs. It's not a specific video format itself, but rather a wrapper for different types of multimedia content.</p>
+<h3 id="h_01HGKSMPRVEYJQCQ3JXBP7XNQQ">Why is H.264/AVC recommended over HEVC/H.265?</h3>
+<p>H.264/AVC is more widely supported across different browsers and devices compared to

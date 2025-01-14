@@ -1,0 +1,46 @@
+ists to upload profile images, please proceed as follows:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>On the desired page, create a page module of the “Picture upload for panelist profile” type.</li>
+<li>Select the “func_profile_pictures” module template.</li>
+<li>Configure the setting options as required.</li>
+<li>If you want to leave it to the panelists whether to display the profile images or not, activate the profile options “Picture 1” and/or “Picture 2” in the profile settings form.</li>
+<li>Check again whether settings for the visibility of profile data, in particular, the default settings for new panelists, which have been made elsewhere are compatible.</li>
+<li>
+<p>Check whether the images in the panelist profiles are displayed the way you want them to be. You may have to adjust the template (module template “func_profile_search”).</p>
+</li>
+<li>
+<p>Check whether the thumbnail size of the profile images fits your panel. You can change the thumbnail size on the <strong>Detail configuration</strong> tab in the <strong>Website → {Selected language version}</strong> menu.</p>
+</li>
+</ol>
+<h2 id="display-of-active-panelists" class="wysiwyg-text-align-justify"><strong>Display of Active Panelists</strong></h2>
+<p class="wysiwyg-text-align-justify">A frequently requested feature of community sites is a counter showing how many community members are currently online. Such a counter can be implemented easily in the EFS Panel. It is up to your creativity whether you display only the number of panelists, list them by name, or show their profile pictures.</p>
+<p class="wysiwyg-text-align-justify"><strong>Work steps</strong></p>
+<p class="wysiwyg-text-align-justify">To set up a panelist counter, please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Define counting criteria</li>
+<li>Integrate the panelist counter in the website</li>
+</ul>
+<h3 id="defining-counting-criteria" class="wysiwyg-text-align-justify"><strong>Defining Counting Criteria</strong></h3>
+<p class="wysiwyg-text-align-justify">First, you have to define which persons are to be considered when measuring online activity. To do so, switch to the <strong>Website → Global configuration</strong> menu and select the desired settings in the “Performance” section:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Period (in seconds) that should be taken into account when calculating “panelists online” for the admin section and the page module</li>
+<li>Only count logged-in panelists for “panelists online” in the admin section and the page module: if “No” is selected, other visitors of the panel will be counted as well.</li>
+</ul>
+<h3 id="integrating-the-panelist-counter-into-the-website" class="wysiwyg-text-align-justify"><strong>Integrating the Panelist Counter into the Website</strong></h3>
+<p class="wysiwyg-text-align-justify">To integrate a display of currently logged-in panelists into the website, please proceed as follows:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>On the desired page, create a page module of the “Panelists online” type.<br>– If you want to display the counter in the content area, just select a page as usual.<br>– If you want to display the counter on multiple pages, consider referencing the module as a global page module.<br>Please note that a modification of the main template may be necessary.<br>– If you want to display the counter e.g. in the right margin instead of the content area, a modification of the main template may be necessary as well.</li>
+<li>Select the “func_panelists_online” module template. If you want to display the panelists’ names or profile pictures, a modification of the template may be necessary.</li>
+</ol>
+<p class="wysiwyg-text-align-justify">Configure the setting options as required.</p>
+<h2 id="panelist-ratings" class="wysiwyg-text-align-justify"><strong>Panelist Ratings</strong></h2>
+<p class="wysiwyg-text-align-justify">A typical feature of community sites is the rating of other participants. The participants show sympathy and praise for each other by awarding points or other units of some social currency. EFS Panel allows you to implement such participant ratings easily and without additional programming efforts:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>A new rating function allows panelists to rate other panelists.</li>
+<li>The social currency of the EFS Panel is internally referred to as “points”. When using this feature on your website, you may use a completely different name, of course. Unlike bonus points (the currency of EFS Panel’s incentive system) these “social” points only have virtual value.</li>
+<li>You define how many points a panelist may award to others. Dedicated master data are used to log how many points a panelist has left to award, how many he has received from others, and how often he has been awarded any points.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">You can use panelist rating in a variety of scenarios:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>The participants can show sympathy and praise for each other.</li>
+<li>In self-administer

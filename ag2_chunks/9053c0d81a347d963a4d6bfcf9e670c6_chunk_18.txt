@@ -1,0 +1,103 @@
+g-text-align-justify"> </p>
+<h3 id="h_01J3FXSGRJ1TQSGWE23JSHKTHN" class="wysiwyg-text-align-justify">Panelists Import from Employee Project</h3>
+<p class="wysiwyg-text-align-justify">You can import users or participants from Employee projects into the panel, assigning them to their respective panelist accounts based on matching email addresses. This feature requires the user to have the <code>panelimport</code> access right.</p>
+<p class="wysiwyg-text-align-justify"><strong>Steps to Import Users or Participants:</strong></p>
+<ol class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Open the Module:</strong></p>
+<ul>
+<li>Navigate to <strong>People</strong>.</li>
+<li>Click on <strong>Panelist administration</strong> in the sidebar menu.</li>
+</ul>
+</li>
+<li>
+<p><strong>Initiate Import:</strong></p>
+<ul>
+<li>Click on <strong>Panelists import from Employee project</strong> (visible only to users with the <code>panelimport</code> read right).</li>
+</ul>
+</li>
+<li>
+<p><strong>Select Import Type:</strong></p>
+<ul>
+<li>For users: Activate the option <strong>User</strong>.</li>
+<li>For participants: Activate the option <strong>Participants</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Choose Project and Group:</strong></p>
+<ul>
+<li>In the <strong>Choose project</strong> drop-down list, select the Employee project to import from.</li>
+<li>Select a <strong>Group category</strong> (default includes all panel groups).</li>
+<li>Select the panel group to which participants or users will be added.</li>
+</ul>
+</li>
+<li>
+<p><strong>For Users:</strong></p>
+<ul>
+<li>Confirm with <strong>Save</strong>.</li>
+<li>Review the preview to ensure data completeness and make adjustments if necessary.</li>
+<li>Click <strong>Import</strong> to execute the import.</li>
+</ul>
+<p><strong>Note:</strong> Existing Org Processor users who are panelists will not be automatically imported. They must be added to the group manually, along with their roles and units.</p>
+</li>
+<li>
+<p><strong>For Participants:</strong></p>
+<ul>
+<li>Select <strong>Structure view</strong>, <strong>metaname</strong>, and <strong>label</strong> of the Masterdata column for your department and parent department from the drop-down lists.</li>
+<li>Confirm with <strong>Save</strong> to execute the import.</li>
+</ul>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><strong>Post-Import Actions:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>To see the newly added panelists, go to <strong>People → Groups → [open group]</strong>.</li>
+<li>To set panel status to active:
+<ul>
+<li>Check the relevant group members.</li>
+<li>Select <strong>Active</strong> from the <strong>Select action</strong> drop-down list.</li>
+<li>Confirm with <strong>Execute</strong>.</li>
+</ul>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Searching for Panelists:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Enter <code>@</code> in the search field of the Panelist administration and press enter to list all panelists.</li>
+</ul>
+<h3 id="h_01J3FXVTNVVWNK03M238ZQYRNB" class="wysiwyg-text-align-justify">Viewing and Changing a Panelist’s Master Data</h3>
+<ol class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Access Master Data:</strong></p>
+<ul>
+<li>Click on the <strong>Edit master data</strong> button to view and edit the panelist's master data.</li>
+</ul>
+</li>
+<li>
+<p><strong>Master Data Tab:</strong></p>
+<ul>
+<li>Lists labeled master data for the panelist (e.g., “Employed” instead of code “14”).</li>
+<li>Option to restrict view to specific master data categories.</li>
+</ul>
+</li>
+<li>
+<p><strong>Modify Master Data:</strong></p>
+<ul>
+<li>Click <strong>Modify master data</strong> to change one or more master data manually.</li>
+<li>Enter the code for encoded master data (found in the master data codebook under People → Master data → Master data codebook).</li>
+</ul>
+</li>
+<li>
+<p><strong>Category Overview:</strong></p>
+<ul>
+<li>Click <strong>Category overview</strong> to see a table with:
+<ul>
+<li>Number of variables in each category.</li>
+<li>Number of standard variables (not “Recording” or “Lookup” type).</li>
+<li>Number of variables the panelist has edited (excluding recodings and lookups).</li>
+<li>Traffic-light icons indicating progress.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="h_01J3FXVTNV43E98ZMX9YSRFT3T" class="wysiwyg-text-align-justify">Viewing the Incentives History</h3>
+<ol

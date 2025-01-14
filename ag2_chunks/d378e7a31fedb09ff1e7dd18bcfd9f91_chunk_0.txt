@@ -1,0 +1,72 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K" class="wysiwyg-text-align-justify">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article covers the process configuration in EFS Employee, including roles, project phases, download platform setup, and report definition. It provides detailed instructions on how to customize and manage various aspects of employee surveys.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">EFS Employee offers various options to adjust the survey process to your project needs. Employee surveys often generate numerous personalized reports for different recipient groups. The flexible rights system of EFS Employees provides precise control of report access and allows delegation of tasks like data maintenance and questionnaire distribution to local staff. Roles and responsibilities can be customized to fit your project. As the survey progresses, EFS Employee lets you map different phases and adjust access rights accordingly. This guide covers the configuration of roles, project phases, access rights, download platform, and report definitions.</p>
+<ul>
+<li><a href="#configuration">Configuration</a></li>
+<li><a href="#download-platform">Download Platform</a></li>
+<li><a href="#report-definition">Report Definition</a></li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="configuration" class="wysiwyg-text-align-justify"><strong>Configuration</strong></h2>
+<p class="wysiwyg-text-align-justify">Under the <strong>Configuration</strong> menu item, you will open the<strong> Roles</strong> tab, the<strong> Project Phases</strong> tab, and the<strong> Rights admin</strong> tab. Besides project management, there is usually a large number of additional staff involved in large-scale employee surveys. You can use the <strong>Roles</strong> tab to plan and control the work of these employees. Via the separate Org Processor login, the staff members involved - the so-called users - have access to those Org Processor views and functions required for their work, restricted to their respective areas of responsibility. Instead of configuring the access rights for each staff member, you define so-called user roles: These reflect the respective rights and duties of entire staff groups with identical responsibilities. Subsequently, you allocate the actual staff members to the user roles. The various options for accessing or changing data (e.g. return data or reports) are represented in a specific rights system. You assign these rights to the different user roles according to your project situation.</p>
+<h3 id="roles" class="wysiwyg-text-align-justify"><strong>Roles</strong></h3>
+<p class="wysiwyg-text-align-justify">You can view and edit the user roles of your project in the menu <strong>Projects</strong> → {Selected project} → <strong>Process configuration</strong> on the<strong> Roles</strong> tab.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013850440722" alt="Roles.jpg"></p>
+<h3 id="user-roles-in-standard-configuration" class="wysiwyg-text-align-justify"><strong>User roles in standard configuration</strong></h3>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default">
+<colgroup> <col style="width: 198.0px;"> <col style="width: 189.0px;"> <col style="width: 373.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Role</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Abbreviation</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Meaning in standard configuration</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Owner</p>
+</td>
+<td>
+<p>OWN</p>
+</td>
+<td>
+<p>Owner</p>
+<p>These persons are responsible for an individual unit or a whole part of the structure. They have all the rights necessary for developing the organizational structure in their area of responsibility and for entering data. Furthermore, usually, they can create other users and delegate responsibility to them.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Superior</p>
+</td>
+<td>
+<p>SUP</p>
+</td>
+<td>
+<p>Superior</p>
+<p>This role is allocated to superiors who are officially responsible for the respective unit in the company. They can view the organizational structure of the unit and its subunits, access the data entered, monitor the return, and download reports.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Report recipient</p>
+</td>
+<td>
+<p>REP</p>
+</td>
+<td>
+<p>Recipient of reports</p>
+<p>The users allocated to this role can monitor the return and access reports in their area of responsibility.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Read-only users</p>
+</td>
+<td>

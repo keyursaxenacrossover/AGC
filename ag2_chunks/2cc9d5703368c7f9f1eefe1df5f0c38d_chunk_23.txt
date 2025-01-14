@@ -1,0 +1,117 @@
+.</p>
+<p class="wysiwyg-text-align-justify">The campaigns themselves are created and maintained via a separate GUI.</p>
+<p class="wysiwyg-text-align-justify">In the standard panel, you can use the “func_tell_a_friend” template to change the appearance of the “Tell-a-friend” module.</p>
+<p class="wysiwyg-text-align-justify"><strong>Options</strong></p>
+<p class="wysiwyg-text-align-justify">The “Tell-a-friend” function module offers the following options.</p>
+<table class="wysiwyg-text-align-justify" style="height: 667px;" border="1" width="813" data-layout="default" data-table-width="760">
+<colgroup>
+<col style="width: 155.0px;">
+<col style="width: 484.0px;">
+<col style="width: 121.0px;">
+</colgroup>
+<tbody>
+<tr style="height: 67px;">
+<th class="wysiwyg-text-align-center" style="height: 67px; width: 158.785px;" data-highlight-colour="#57d9a3">
+<p><strong>Option</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="height: 67px; width: 502.378px;" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="height: 67px; width: 141.441px;" data-highlight-colour="#57d9a3">
+<p><strong>Standard panel "Tell-a-friend" page</strong></p>
+</th>
+</tr>
+<tr style="height: 44px;">
+<td style="height: 44px; width: 150.764px;">
+<p>Reference name for template</p>
+</td>
+<td style="height: 44px; width: 494.358px;">
+<p>Name that can be used to trigger the module in positioning templates.</p>
+</td>
+<td style="height: 44px; width: 133.42px;">
+<p>tell_a_friend</p>
+</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px; width: 150.764px;">
+<p>Page module title</p>
+</td>
+<td style="height: 22px; width: 494.358px;">
+<p>Name of the module in the page’s module overview</p>
+</td>
+<td style="height: 22px; width: 133.42px;">
+<p>Tell-a-friend</p>
+</td>
+</tr>
+<tr style="height: 44px;">
+<td style="height: 44px; width: 150.764px;">
+<p>Module template</p>
+</td>
+<td style="height: 44px; width: 494.358px;">
+<p>Module-specific template that controls how data provided by the module are displayed.</p>
+</td>
+<td style="height: 44px; width: 133.42px;">
+<p>func_tell_a_friend</p>
+</td>
+</tr>
+<tr style="height: 118px;">
+<td style="height: 118px; width: 150.764px;">
+<p>Maximum number of campaigns displayed</p>
+</td>
+<td style="height: 118px; width: 494.358px;">
+<p>You can limit the length of the list to a predefined number of campaigns. This can be particularly useful if you have a large number of campaigns.</p>
+<p>If you do not wish to limit the number of campaigns to be displayed, enter “0” or delete the existing value.</p>
+</td>
+<td style="height: 118px; width: 133.42px;">
+<p>5</p>
+</td>
+</tr>
+<tr style="height: 233px;">
+<td style="height: 233px; width: 150.764px;">
+<p>Sort campaigns by</p>
+</td>
+<td style="height: 233px; width: 494.358px;">
+<p>Possible criteria:</p>
+<ul>
+<li>
+<p>Campaign start</p>
+</li>
+<li>
+<p>Campaign end</p>
+</li>
+<li>
+<p>Campaign title</p>
+</li>
+<li>
+<p>Bonus points for inviting friends</p>
+</li>
+</ul>
+<p>Possible sort order:</p>
+<ul>
+<li>
+<p>Ascending</p>
+</li>
+<li>
+<p>Descending</p>
+</li>
+</ul>
+</td>
+<td style="height: 233px; width: 133.42px;">
+<p>Kampagnenstart - aufsteigend</p>
+</td>
+</tr>
+<tr style="height: 67px;">
+<td style="height: 67px; width: 150.764px;">
+<p>Message displayed after successful dispatch</p>
+</td>
+<td style="height: 67px; width: 494.358px;">
+<p>This text is displayed once the invitation mail has been sent.</p>
+</td>
+<td style="height: 67px; width: 133.42px;">
+<p>ready!</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="function-module-contact-form" class="wysiwyg-text-align-justify"><strong>Function Module: Contact Form</strong></h3>
+<p class="wysiwyg-text-align-justify">The “Contact form” function module allows you to

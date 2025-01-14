@@ -1,0 +1,66 @@
+<h1 id="h_01J7E5728G87TKDC918NHBZ41V">Overview</h1>
+<p>The vast majority of the configuration parameters are currently stored at DB level and accessible via UI under <strong>Options &gt;&gt; Platform cockpit &gt;&gt; root only:: System configuration</strong> and is only visible when logged in with the root account. </p>
+<p>This article is meant to shed details about the config parameters available in DXI/EFS.</p>
+<h2 id="header-1">Config file in file system</h2>
+<p>The file can be found here: <strong>[installation_path]/htdocs/conf/config.inc.php3</strong><br>The file originally included all config variables but since EFS 10.0 most of the variables were moved to the database so they are configurable via the EFS admin area.</p>
+<p>The following config variables still have to be configured in the config file:</p>
+<ul>
+<li>
+<p><strong>Database connection details</strong></p>
+<ul>
+<li>
+<p>dbhost</p>
+</li>
+<li>
+<p>dbuser</p>
+</li>
+<li>
+<p>dbpasswd</p>
+</li>
+<li>
+<p>dbname</p>
+</li>
+<li>
+<p>dbport</p>
+</li>
+<li>
+<p>dbsocket</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>GP name</strong>, important as fallback for http_host, usually corresponds to the base url of the installation</p>
+<ul>
+<li>
+<p>gp_name</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="header-3">Config in the database</h2>
+<p>The config variables are stored in database table <strong>config_variables</strong> and in backup table <strong>config_variables_backup.</strong></p>
+<p>As some of the values are serialized, it is not suggested to change the values via the database directly but to use the user interface in the EFS admin area instead!</p>
+<p><strong>The list below is for reference and is <span class="wysiwyg-underline">NOT</span> exhaustive.</strong></p>
+<table dir="ltr" style="border-collapse: collapse; border: none; width: 100%;" border="1" cellspacing="0" cellpadding="0" data-sheets-root="1" data-sheets-baot="1">
+<colgroup> <col width="200"> <col width="339"> <col width="289"> <col width="256"> <col width="100"> <col width="100"> </colgroup>
+<tbody>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; text-align: center; width: 11.0134%;"><strong>NAME</strong></td>
+<td style="padding: 2px 3px; vertical-align: middle; text-align: center; width: 32.9564%;"><strong>DESCRIPTION</strong></td>
+<td style="padding: 2px 3px; vertical-align: middle; text-align: center; width: 37.1859%;"><strong>DEFAULT VALUE</strong></td>
+<td style="padding: 2px 3px; vertical-align: middle; text-align: center; width: 15.536%;"><strong>DEFAULT</strong></td>
+<td style="padding: 2px 3px; vertical-align: middle; text-align: center; width: 1.29816%;"><strong>FE</strong></td>
+<td style="padding: 2px 3px; vertical-align: middle; text-align: center; width: 0.41876%;"><strong>HEAL</strong></td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">additional_global_content_handler_types</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">add custom types of content handlers to global contenthandler list</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;"> </td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 15.536%;">array ( )</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;">no</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;">no</td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">additional_mail_header</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">additional Mail-Header for all mails sent from the installation; key = name of the header, value= value of the header. You can use the following wild cards in value: #pid#","#sid#","#uid#","#x_key#","#dt#","#numtry#","#mail_id#","#mail_subject#","#admin_uid#", Example: additional_mail_headers = array("X-job" =&gt; "#pid#.#sid#", "X-test" =&gt; "foo")</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.

@@ -1,0 +1,50 @@
+($project, $myquestions);
+foreach($questions as $question)
+{
+    if($question-&gt;questiontext) {
+        print $question-&gt;questiontext . "&lt;br&gt;";
+        foreach ($question-&gt;variables as $variable) {
+            if ($variable-&gt;type == "char" || $variable-&gt;type == "text") {
+                print "Text-Var: ".$variable-&gt;varname . "&lt;br&gt;";
+                //add to $relevantVars for export
+                $relevantVars[] = $variable-&gt;varname;
+            }
+        }
+    }
+}
+
+/* 3 - Relevant vars for export */
+print "&lt;hr&gt;&lt;h3&gt;3. Collected variables for export:&lt;/h3&gt;";
+var_dump($relevantVars);
+print "&lt;/pre&gt;";
+
+/* 4 - Get CSV export */
+print "&lt;hr&gt;&lt;h3&gt;4. Get results for specific vars&lt;/h3&gt;";
+$exportData=serviceLayerCall("survey.results.getRawdataCSV", array("surveyId" =&gt; 1112, "exportTypes" =&gt; array("QUESTIONNAIRE"), "includeVariables" =&gt; $relevantVars));
+print base64_decode($exportData);</code></pre>
+<p>The full <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20370447448210-List-of-EFS-Service-Layer-API-services" target="_blank" rel="noopener noreferrer">EFS Service-Layer service</a> overview provides example REST requests and responses.</p>
+<h2 id="h_01J3GAYK26W65JPF4FHW4WVV3F">Exploring available SOAP and REST services using 3rd party tools</h2>
+<p data-renderer-start-pos="11258">You can easily get familiar with our EFS Service-Layer, by using 3rd party REST or SOAP clients. Two of such tools are <a class="cc-1rn59kg" title="https://www.soapui.org" href="https://www.soapui.org/" data-testid="link-with-safety" data-renderer-mark="true">SoapUI</a> for SOAP requests and <a class="cc-1rn59kg" title="https://www.postman.com/downloads/" href="https://www.postman.com/downloads/" data-testid="link-with-safety" data-renderer-mark="true">Postman</a> for REST.</p>
+<h3 id="h_01J3G9JCTANWTK8FGVQBBRH5MK">Configuring SoapUI</h3>
+<p>You need to have the full URL to the WSDL description, as described above, and the token. Basic authentication is also possible, the client will ask you to provide login information automatically. In this example we use https://my-efs/service/?handler=soap&amp;wsdl=1&amp;token=1234567890.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014837296274"></p>
+<p>SoapUI will read the description and create example SOAP requests for all available services. Double-clicking on a request will open the following window, click on the green execute button to submit the request and a response will be shown.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014837303314"></p>
+<p> </p>
+<p><span style="font-size: 1.2em; font-weight: 600; white-space-collapse: preserve;">Configuring Postman</span></p>
+<div class="cc-1m56rbn" data-testid="expand-container-expand-expand-title-62" data-node-type="expand" data-title="Configuring Postman" data-expanded="false">
+<div class="cc-nl2klk">
+<div class="expand-content-wrapper">
+<div class="cc-1jke4yk">
+<p>You can create single requests by clicking on “New” and selecting “Request”, selecting the correct method and pasting the link to the service. When using POST requests, you need to specify the Body, selecting “raw” and “JSON” in the respective settings. All other tabs can be left to default values.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014884173330"><br>To import all available EFS Service-Layer REST services, you will need to download the RAML file (https://my-efs/service/?handler=rest&amp;raml=1&amp;token=1234567890) and import it as a collection in Postman.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014884167442"><br>The collections tab will now have a list of all available services on the EFS installation.</p>
+<p>Please note, that some complex EFS rest services cause Postman to reject the RAML file. In that case we recommend creating the requests individually.</p>
+<div class="ak-editor-panel cc-tqp4ke" data-panel-type="info">
+<div class="ak-editor-panel__icon"> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h2 id="Filtering-results-with-conditions" data-renderer-start-pos="12721">Filtering results with conditions</h2>
+<p data-renderer-start-pos="12756">Requests with “ByCriteria” in their name have the possibility to filter results by condition. These conditions can be simple one to one comparisons and complex requests

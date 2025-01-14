@@ -1,0 +1,163 @@
+ four attempts are made. The number can be configured.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">15</p>
+</td>
+<td>
+<p style="text-align: center;">Cannot be reached</p>
+</td>
+<td>
+<p style="text-align: center;">This code is used in order to mark participants that cannot be reached. You will be notified that mails could not be delivered by a means outside the <em>EFS</em> system:</p>
+<ul>
+<li>
+<p>through messages that take place offline (for example by post or telephone).</p>
+</li>
+<li>
+<p>through out-of-office mails, messages regarding a full mailbox, messages from the postmaster that an e-mail address no longer exists or that a further delivery attempt will follow, etc. Because these e-mails are directed at the sender of an invitation or follow a return path, they can not be documented by <em>EFS</em>.</p>
+</li>
+</ul>
+<p style="text-align: center;">In all of these cases the assignment of the code must be done manually. You can use the trim participants function.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">16</p>
+</td>
+<td>
+<p style="text-align: center;">Reserved 1</p>
+</td>
+<td>
+<p style="text-align: center;">Corresponds to status 12, but can be customized and used for further differentiation.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">17</p>
+</td>
+<td>
+<p style="text-align: center;">Reserved 2</p>
+</td>
+<td>
+<p style="text-align: center;">Corresponds to status 12, but can be customized and used for further differentiation.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">18</p>
+</td>
+<td>
+<p style="text-align: center;">Custom unavailable 1</p>
+</td>
+<td>
+<p style="text-align: center;">Corresponds to status 15, but can be customized and used for further differentiation.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">19</p>
+</td>
+<td>
+<p style="text-align: center;">Custom unavailable 2</p>
+</td>
+<td>
+<p style="text-align: center;">Corresponds to status 15, but can be customized and used for further differentiation.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">Only in anonymous projects: 20</p>
+</td>
+<td>
+<p style="text-align: center;">Not yet started</p>
+</td>
+<td>
+<p style="text-align: center;">The first page of an anonymous project has been called or delivered (pop-up window) and cancelled. To find out what evaluation options this special disposition code involves</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">21</p>
+</td>
+<td>
+<p style="text-align: center;">Currently responding</p>
+</td>
+<td>
+<p style="text-align: center;">The participant is answering the survey at the moment.</p>
+<ul>
+<li>
+<p>In anonymous projects, this disposition code is assigned if at least the first page has been viewed and confirmed by clicking on the Submit button.</p>
+</li>
+<li>
+<p>In all other project types, this disposition code is assigned as soon as the first page has been opened.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">22</p>
+</td>
+<td>
+<p style="text-align: center;">Suspended</p>
+</td>
+<td>
+<p style="text-align: center;">At least 30 minutes of inactivity have been observed.</p>
+<p style="text-align: center;"> </p>
+<p style="text-align: center;">The value is customizable. Please ask the Tivian support team, if you want to customize it.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">23</p>
+</td>
+<td>
+<p style="text-align: center;">Resumed</p>
+</td>
+<td>
+<p style="text-align: center;">The survey has been resumed after an interruption.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">31</p>
+</td>
+<td>
+<p style="text-align: center;">Completed</p>
+</td>
+<td>
+<p style="text-align: center;">The survey has been successfully completed.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">32</p>
+</td>
+<td>
+<p style="text-align: center;">Completed after break</p>
+</td>
+<td>
+<p style="text-align: center;">The survey was interrupted during its course, but has been resumed and successfully completed.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">33</p>
+</td>
+<td>
+<p style="text-align: center;">Custom completed 1</p>
+</td>
+<td>
+<p style="text-align: center;">Corresponds to status 32, but can be customized and used for further differentiation.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">34</p>
+</td>
+<td>
+<p style="text-align: center;">Custom completed 1</p>
+</td>
+<td>
+<p

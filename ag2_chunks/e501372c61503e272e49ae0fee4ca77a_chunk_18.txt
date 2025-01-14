@@ -1,0 +1,91 @@
+wysiwyg-text-align-justify"><strong>Editing Forum Posts from the Admin Area</strong></h2>
+<p class="wysiwyg-text-align-justify">As moderator you can make use of additional features for your contributions when posting via the admin area or, if required, change or remove posts of discussion participants.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify">It is considered polite not to subsequently delete or edit posts of discussion participants without a good reason. You should therefore use the editing options with care and observe netiquette.</p>
+<p class="wysiwyg-text-align-justify"><strong>Overview of topic posts</strong></p>
+<p class="wysiwyg-text-align-justify">To view existing topic posts in the admin area, just click the title of the desired topic in the topic list. Alternatively, use the Edit Posts icon.</p>
+<p class="wysiwyg-text-align-justify">The overview lists all posts for the selected topic and their most important properties.</p>
+<p class="wysiwyg-text-align-justify"><strong>Editing options</strong></p>
+<p class="wysiwyg-text-align-justify">If you click on the Add Post button, the dialog for creating a new post is opened.</p>
+<p class="wysiwyg-text-align-justify">By clicking on the title of a topic, you will get to the properties of an existing post.</p>
+<p class="wysiwyg-text-align-justify">Using the yes / no links in the “Sticky” column, you can display a key post in a highly visible position above the thread.</p>
+<p class="wysiwyg-text-align-justify">The icons in the “Actions” column give the following editing options:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<strong>Edit</strong>: Opens the edit dialog for the properties of an existing post.</li>
+<li>
+<strong>Delete</strong>: The post is deleted after a confirmation prompt.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Post Properties</strong></p>
+<p class="wysiwyg-text-align-justify">The table lists all properties a post can have in detail.</p>
+<table class="relative-table wrapped wysiwyg-text-align-justify" style="width: 106.428%; margin-right: auto; margin-left: auto; height: 1724px;" border="1">
+<colgroup> <col style="width: 28.1196%;"> </colgroup> <colgroup> <col style="width: 71.871%;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center">Field</th>
+<th class="wysiwyg-text-align-center">Meaning</th>
+</tr>
+<tr>
+<td>
+<p>Website / Language version</p>
+</td>
+<td>
+<p>Website and language version to which the post belongs. Cannot be changed subsequently.</p>
+</td>
+</tr>
+<tr>
+<td>Name of forum</td>
+<td>Forum to which the post belongs. Cannot be changed subsequently.</td>
+</tr>
+<tr>
+<td>Thread title</td>
+<td>Discussion thread to which the post belongs. Cannot be changed subsequently.</td>
+</tr>
+<tr>
+<td>Contributed by</td>
+<td>
+<p>Author of the post.</p>
+<p>If you add new posts via the admin area, you can select the author: In a dropdown list, panelists with “Moderator” or “Tester” panel status can be selected.</p>
+<p>In the standard panel, these panelists’ posts are marked with the abbreviation “Mod” to indicate that they are moderator posts. The abbreviation is inserted using the wildcard „board_moderator_label“, i.e. you can edit it in the menu <strong>Wildcards</strong>.</p>
+<p>The author cannot be changed subsequently.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Sort underneath the following post</p>
+</td>
+<td>
+<p>If you add new posts via the admin area, use this drop-down list to define the position in the thread structure.</p>
+</td>
+</tr>
+<tr>
+<td>Number of ratings</td>
+<td>Number of community ratings that were submitted for the post.</td>
+</tr>
+<tr>
+<td>Average rating</td>
+<td>Result of the community rating.</td>
+</tr>
+<tr>
+<td>Anonymous post</td>
+<td>
+<p>Optionally, you can permit anonymous posting. To prevent abuse, it will of course be logged internally who authored such anonymous posts, and moderators can access this information in the admin area. In the field “Anonymous post”, you can see if a post was made anonymously.</p>
+</td>
+</tr>
+<tr>
+<td>Release Status</td>
+<td>
+<p>The following release statuses can be assigned:</p>
+<ul>
+<li>not checked: If the publishing mode “Publish immediately” is selected, posts with this status will be visible to everybody. If the publishing mode “Publish after approval” is selected, they will be visible only to their author and the moderators in the admin area, until a moderator changes the release status to “approved”.</li>
+<li>approved: these posts are always displayed.</li>
+<li>blocked: these posts are never displayed.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Only editable via the list of posts: Sticky</p>
+</td>
+<td>
+<p>A post marked as “sticky” will be displayed in a highly visible position above the discussion, in addition to its

@@ -1,0 +1,98 @@
+">The “Bonus list and redemption” function module offers the following options.</p>
+<table class="wysiwyg-text-align-justify" style="height: 1909px;" border="1" width="766" data-layout="default" data-table-width="760">
+<colgroup>
+<col style="width: 185.0px;">
+<col style="width: 408.0px;">
+<col style="width: 167.0px;">
+</colgroup>
+<tbody>
+<tr style="height: 67px;">
+<th class="wysiwyg-text-align-center" style="height: 67px; width: 183.073px;" data-highlight-colour="#57d9a3">
+<p><strong>Option</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="height: 67px; width: 407.517px;" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="height: 67px; width: 165.017px;" data-highlight-colour="#57d9a3">
+<p><strong>Standard panel "Redeem points" page</strong></p>
+</th>
+</tr>
+<tr style="height: 44px;">
+<td style="height: 44px; width: 175.052px;">
+<p>Reference name for template</p>
+</td>
+<td style="height: 44px; width: 399.497px;">
+<p>Name that can be used to trigger the module in positioning templates.</p>
+</td>
+<td style="height: 44px; width: 156.997px;">
+<p>redeem_points</p>
+</td>
+</tr>
+<tr style="height: 44px;">
+<td style="height: 44px; width: 175.052px;">
+<p>Page module title</p>
+</td>
+<td style="height: 44px; width: 399.497px;">
+<p>Name of the module in the page’s module overview</p>
+</td>
+<td style="height: 44px; width: 156.997px;">
+<p>Redeem points</p>
+</td>
+</tr>
+<tr style="height: 44px;">
+<td style="height: 44px; width: 175.052px;">
+<p>Module template</p>
+</td>
+<td style="height: 44px; width: 399.497px;">
+<p>Module-specific template that controls how data provided by the module are displayed.</p>
+</td>
+<td style="height: 44px; width: 156.997px;">
+<p>func_redemption</p>
+</td>
+</tr>
+<tr style="height: 123px;">
+<td style="height: 123px; width: 175.052px;">
+<p>Bonus category displayed at the start</p>
+</td>
+<td style="height: 123px; width: 399.497px;">
+<p>When the bonus list is opened either the entire list (All) or one of the bonus categories can be displayed. If you want a certain bonus category to be displayed at the start, you can select it here. If no category has been selected the entire list will be displayed.</p>
+</td>
+<td style="height: 123px; width: 156.997px;">
+<p> </p>
+</td>
+</tr>
+<tr style="height: 121px;">
+<td style="height: 121px; width: 175.052px;">
+<p>Offer vouchers only from lists that still have unused voucher codes</p>
+</td>
+<td style="height: 121px; width: 399.497px;">
+<p>Prevents further vouchers of a voucher bonus type from being redeemed if all available vouchers have been used.</p>
+<p>We recommend the use of this function if you are using the option for automatic sending of vouchers.</p>
+</td>
+<td style="height: 121px; width: 156.997px;">
+<p>yes</p>
+</td>
+</tr>
+<tr style="height: 252px;">
+<td style="height: 252px; width: 175.052px;">
+<p>Minimum number of points for redeeming bonuses</p>
+</td>
+<td style="height: 252px; width: 399.497px;">
+<p>By entering a minimum number of points you can ensure that only panelists who have this amount of points can redeem bonuses on the respective page.</p>
+<p>Please note that panelists with fewer points will then generally not be able to use the respective bonus list: No differentiation is made between new panelists and panelists who had a higher number of points in the past, but who have redeemed points in the meantime.</p>
+<p>If you do not wish to enter a minimum number of points, enter “0” or delete the existing value.</p>
+</td>
+<td style="height: 252px; width: 156.997px;">
+<p> </p>
+</td>
+</tr>
+<tr style="height: 391px;">
+<td style="height: 391px; width: 175.052px;">
+<p>Mail template for confirmation mail</p>
+</td>
+<td style="height: 391px; width: 399.497px;">
+<p>The selected mail template will be sent to the specified recipient every time a panelist redeems bonus points. Alternatively, it may be sent to the panelists themselves to confirm the redemption of points.</p>
+<ul>
+<li>
+<p>The “Standard mail” mail templates are available.</p>
+</li

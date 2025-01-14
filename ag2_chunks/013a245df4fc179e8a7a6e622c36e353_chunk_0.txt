@@ -1,0 +1,66 @@
+<h2 id="h_01J6EP756HEQJ804K0EGVNA74F">Table of Contents</h2>
+<ul>
+<li>
+<a href="#header-1">TIVIAN AccessAccess</a>
+<ul>
+<li><a href="#header-3">Single Sign On</a></li>
+<li><a href="#header-5">Multi Factor Authentication</a></li>
+</ul>
+</li>
+<li>
+<a href="#header-7">The Portals platform</a>
+<ul>
+<li><a href="#header-9">The new Extension Module</a></li>
+<li><a href="#header-10">Guides - Monitoring</a></li>
+<li><a href="#header-11">Identifier for the MySight Page Module</a></li>
+<li><a href="#header-12">Push Notifications</a></li>
+</ul>
+</li>
+<li>
+<a href="#header-14">Enhancements for Guides</a>
+<ul>
+<li><a href="#header-16">Allow Deletion of Guide Processes (ME- &amp; US-Guide)</a></li>
+<li><a href="#header-17">One-time Extension of the Field Time of a Guide Process (ME- &amp; US-Guide)</a></li>
+<li><a href="#header-18">One-time Sending of a Reminder E-mail (ME- &amp; US-Guide)</a></li>
+<li><a href="#header-19">Predefined Dashboard Templates (US-Guide)</a></li>
+</ul>
+</li>
+<li>
+<a href="#header-21">Enterprise Feedback Suite</a>
+<ul>
+<li><a href="#header-23">New Search Function for the Participant List</a></li>
+<li><a href="#header-24">New Preview for E-mail TemplatesPreview</a></li>
+<li><a href="#header-25">ID for E-mail Templates</a></li>
+<li><a href="#header-26">Early Complete</a></li>
+<li><a href="#header-27">Information</a></li>
+<li><a href="#header-28">Disable Visual Editor in E-mail Template Configuration</a></li>
+<li><a href="#header-29">Placeholder</a></li>
+<li><a href="#header-30">Export and Import of all Survey Languages</a></li>
+<li><a href="#header-31">Export Survey Data</a></li>
+</ul>
+</li>
+<li>
+<a href="#header-33">Web Services</a>
+<ul>
+<li><a href="#header-35">Changing Participants and Participations</a></li>
+<li><a href="#header-36">Services for Multilingual Templates</a></li>
+<li><a href="#header-37">Enhanced Import Participants API</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="header-1"><strong>TIVIAN Access</strong></h2>
+<p>To increase the security of your applications - after the implementation of the <em>Privacy Assistant</em> (GDPR) - the new <em>TIVIAN Access</em> module has been added. By the use of this module, that can be integrated into your existing SSO infrastructure, bad password habits will be mitigated. From now on, users must enter the username and password to access all the applications.</p>
+<h3 id="header-3"><strong>Single Sign On</strong></h3>
+<p>Using the<em> Single Sign-On</em> function, you only need to enter a user name and a password to access both the<em> Enterprise Feedback Suite</em> and <em>Portals</em>. It is no longer necessary to store different user names and passwords to access to this applications. The participant administration has been modified. First name, last name and e-mail address are mandatory fields after activation of the <em>TIVIAN Access</em> module.</p>
+<h3 id="header-5"><strong>Multi Factor Authentication</strong></h3>
+<p>Optionally, the multi-factor authentication can be added to the <em>Single Sign On</em> function. This means that in addition to entering the username and the password, you have to enter a six-digit code, which is mandatory. This code will be sent to you via authenticator apps such as the <em>Google Authenticator</em>.</p>
+<p> </p>
+<p>By default <em>TIVIAN Access</em> is disabled. So the login works as you are used to. If you want to enable <em>TIVIAN Access</em>, please contact our support team.</p>
+<h2 id="header-7">
+<strong>The</strong><em><strong> Portals</strong></em><strong> platform</strong>
+</h2>
+<p>As of the winter 2019 release, the Platform <em>Portals</em> will have two new modules, namely <em>Expansion</em> and <em>Guides Monitoring</em>. In addition, minor innovations have been added. </p>
+<h3 id="header-9">
+<strong>The new </strong><em><strong>Extension</strong></em><strong> Module</strong>
+</h3>
+<p>With the <em>Extension </em>module it is possible for experienced users to write a web application on a third-party system and thanks to the JavaScript Api it is possible to query information about the current Portal or the current user, to communicate between open extension modules on a single page or to query or manipulate the<em> MySight</em> module, e.g. to set certain filters in the dashboard. Together with our service layer

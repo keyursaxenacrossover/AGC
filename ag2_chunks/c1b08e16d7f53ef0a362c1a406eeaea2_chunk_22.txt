@@ -1,0 +1,69 @@
+<strong>Download template as CSV file </strong>or <strong>Download template as Excel file </strong>icon to download the template to your hard disk.</p>
+</li>
+<li>
+<p>Open the file in a suitable program, e.g. in MS Excel. Edit the file according to the rules presented below in the section titled “Editing a user-defined template”, and then save it. In the example shown, some variables are deactivated: “u_group”, “u_email” and “u_www” have already been deactivated.</p>
+</li>
+<li>
+<p>Click on the <strong>Upload definitions for template “...” </strong>icon. Locate the definition file on your hard disk, and then confirm by clicking on Upload. Open the export template, and check the result. In the example shown, all variables after “u_group” were deactivated. You can use the buttons labeled <strong>Sort fields by position </strong>and <strong>Shrink column widths </strong>to the width of actual data to edit the template further.</p>
+</li>
+</ol>
+<h3 id="editing-a-user-defined-template" class="wysiwyg-text-align-justify"><strong>Editing a User-defined Template</strong></h3>
+<p class="wysiwyg-text-align-justify">When editing the template definition, you should pay attention to the following rules:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>A variable for export must be specified for each row, and each row must consist of seven values separated by tabs.</p>
+</li>
+<li>
+<p>You should not change the order of values.</p>
+</li>
+<li>
+<p>Deleting the variables from the list will not delete them from the export data record. The “active” column determines whether a variable is to be exported.</p>
+</li>
+<li>
+<p>It is not possible to add variables.</p>
+</li>
+<li>
+<p>Duplicate definitions of a variable are not permitted.</p>
+</li>
+<li>
+<p>Variable column positions (pos+width) may not overlap.</p>
+</li>
+<li>
+<p>The position and width of the columns for the individual variables must be such that they will not overlap.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">You can click on the <strong>Sort fields by position </strong>button to have the variables arranged by their position. This arrangement will be saved and can then only be changed by downloading the template again and editing it manually.</p>
+<p class="wysiwyg-text-align-justify">Clicking on the <strong>Shrink column widths to the width of the actual data </strong>button allows you to optimize the export template for Fixed Format and Quantum exports.</p>
+<p class="wysiwyg-text-align-justify">In personalized projects, you can change the sequence of participant data in the export dataset via participant administration.</p>
+<h2 id="data-cleaning" class="wysiwyg-text-align-justify"><strong>Data Cleaning</strong></h2>
+<p class="wysiwyg-text-align-justify">If a respondent uses the “Back” button in the questionnaire or that of the browser while completing a questionnaire, it is possible that they will pass the same filter question more than once, giving different answers and then being routed into another filter branch, where they will answer different questions.</p>
+<p class="wysiwyg-text-align-justify">Example: Somebody answers the question of whether they drive a car with “Yes” and is subsequently asked all car-related questions. Then, they go back to the questionnaire and state they do not drive a car. A filter lets them skip all car-related questions now. When the respondent completes the survey, they will have stated they do not drive a car. Nonetheless, all car-related variables will contain values.</p>
+<p class="wysiwyg-text-align-justify">In the past, such irrelevant data had to be manually cleaned from the result data. With the “Data cleaning” function, this cleaning process has been automated.</p>
+<p class="wysiwyg-text-align-justify"><strong>Before you start</strong></p>
+<p class="wysiwyg-text-align-justify">Please note:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Data cleaning only considers completed interviews, i.e. records with status 31 or 32.</p>
+</li>
+<li>
+<p>The following routing types are supported:</p>
+<ul>
+<li>
+<p>“Filter” and “Random rotation” branches.</p>
+</li>
+<li>
+<p>Trigger types that affect routing via changes in the survey results. The function should, however, not be used in projects involving page triggers: In this case, the routing that the respondent took erroneously or for test purposes cannot be unambiguously identified.</p>
+</li>
+<li>
+<p>Action pages.</p>
+</li>
+<li>
+<p>Depot questions.</p>
+</li>
+<li>
+<p>EFS-side <strong>Back </strong>buttons. Please note: that browser-side Back buttons are not fully supported. <em>If a respondent skips back several pages using the browser </em><strong>Back </strong><em>button first and then skips forward several pages using the browser </em><strong>Forward </strong><em>button ignoring the system warning, these steps cannot be tracked and stored correctly. </em>I.e. pages might be missing in page history, though valid data from these pages exist.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>“Random rotation” branches and loops are not supported.</p

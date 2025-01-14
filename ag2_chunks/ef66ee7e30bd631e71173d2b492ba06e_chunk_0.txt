@@ -1,0 +1,78 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1080885268">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1080885268</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<p>Federated users are users that exist only as a reference in Okta. Okta does not store any of their credentials.</p><p>The user data which is stored for those users in Okta is taken from the external system during the first login to Okta. The user data is not updated once it changes in the external system.</p><p>If there is a user that should be federated but it is not see <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Usually Federated User is not Federated" ri:version-at-save="3"></ri:page><ac:link-body>Usually Federated User is not Federated</ac:link-body></ac:link> .</p><p>The following table lists actions that can be done as well as the effect they cause:</p><table data-layout="wide" ac:local-id="ad37d47f-1857-4e50-8285-b2251b32ec3c">
+<colgroup>
+<col style="width: 170.0px;">
+<col style="width: 170.0px;">
+<col style="width: 170.0px;">
+<col style="width: 170.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p><strong>What</strong></p></th>
+<th><p><strong>When to use</strong></p></th>
+<th><p><strong>Effect</strong></p></th>
+<th><p><strong>Notes</strong></p></th>
+</tr>
+<tr>
+<td><p>Create</p></td>
+<td>
+<p>Generally never because users are created via JIT (Just-in-Time creation).</p>
+<p>A federated user might be created if JIT provisioning does not work properly. This should better be done by API.</p>
+</td>
+<td><p>A reference user will be created that is used to create a mapping between our Identity Provider and the external Identity Provider</p></td>
+<td><p>Do not send an activation mail or set a password.</p></td>
+</tr>
+<tr>
+<td><p>Activate</p></td>
+<td>
+<p>Generally never.</p>
+<p>Only users that have been suspended manually before.</p>
+</td>
+<td><p>This would send out an activation mail to the user, asking him to set a password for the Okta account.<br><br>This would let the user create an additional credential set, which would just confuse the user and would never be used.</p></td>
+<td><p>Not suitable for managed users</p></td>
+</tr>
+<tr>
+<td><p>Update Profile Data</p></td>
+<td><p>When user data should be updated and cannot be updated via EFS or another application.</p></td>
+<td><p>The user data is updated in Okta. Once the user logs into an application via Okta, the user data in the application will also be updated.</p></td>
+<td>
+<p>Preferred way: Change data via EFS which will also update the Okta user data.</p>
+<p>Changing the email-address might break the login to applications!</p>
+</td>
+</tr>
+<tr>
+<td><p>Add to Group</p></td>
+<td><p>Only use this if there is a special purpose group and the rules of this group should be applied to that user.</p></td>
+<td><p>The rules that are specific to that group are assigned to that user.</p></td>
+<td><p>Do not add to another company group to apply rules - create a group for that.</p></td>
+</tr>
+<tr>
+<td><p>Remove from Group</p></td>
+<td>
+<p>In cases where a group rule should not apply to that user anymore.</p>
+<p>Company groups should never be removed.</p>
+</td>
+<td>
+<p>Rules that have been created for that specific user do not apply anymore.</p>
+<p>e.g. MFA, Session times, password policies</p>
+</td>
+<td><p>Every user has as least one company group. These company groups should never be removed.</p></td>
+</tr>
+<tr>
+<td><p>Reset Password</p></td>
+<td><p>Never</p></td>
+<td><p>The user will get a confusing email about a password reset. But this password will never be used.</p></td>
+<td><p>Not suitable for managed users</p></td>
+</tr>
+<tr>
+<td><p>Reset Multifactor</p></td>
+<td><p>In case a user has to changed their device or misconfigured MFA.</p></td>
+<td><p>Multifactor information is removed and the user has to enroll MFA again.</p></td>
+<td><p>Users do not have the chance to reset MFA on their own in the current version of the project.</p></td>
+</tr>
+<tr>
+<td><p>Suspend</p></td>
+<td><p>This should be used in cases a user should not be able to login anymore. e.g. a user is not employee of a company anymore</p></td>
+<td><p>A user is not able to login anymore to any Tivian application.</p></td>
+<td><p>A

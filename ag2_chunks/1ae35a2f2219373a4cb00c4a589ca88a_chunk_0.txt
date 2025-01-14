@@ -1,0 +1,38 @@
+<p class="wysiwyg-text-align-justify"><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p class="wysiwyg-text-align-justify"> This article provides a comprehensive guide on automating processes in the People module of EFS. It covers the basics of automation and presents three practical scenarios for implementing automated workflows in different panel types.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">The EFS People module offers various features to automate processes, leading to time savings and improved panelist satisfaction. This guide will introduce you to automation basics and walk you through three scenarios demonstrating how to implement automated workflows for employee panels, research panels, and general panel management.</p>
+<ul class="wysiwyg-text-align-justify">
+<li><a href="#h_01HGKSMPRT0YJQX8QJXBXP3ZQM">Automation Basics</a></li>
+<li><a href="#Scenario-1">Scenario 1: Employee Panel Onboarding</a></li>
+<li><a href="#Scenario-2">Scenario 2: Automated Birthday Emails</a></li>
+<li><a href="#Scenario-3">Scenario 3: Panelist Compliance Index (PCI) Management</a></li>
+</ul>
+<h2 id="h_01HGKSMPRT0YJQX8QJXBXP3ZQM" class="wysiwyg-text-align-justify">Automation Basics</h2>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="557">The basis for the automation of processes in the <em data-renderer-mark="true">People</em> module are groups and grouping filters as well as update rules. All automated emails or processes can ultimately be traced back to these features. In the following, we will guide you through the creation of a group, a grouping filter and an update rule, and we will create an example mail template for one of the emails that are to be sent out automatically through the configured automation rules.</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="1013">The results already serve as preparation for scenario 1 and are either used without any further editing for this scenario or adapted accordingly.</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="1160"> </p>
+<h3 id="Groups" class="wysiwyg-text-align-justify" data-renderer-start-pos="1162"><strong data-renderer-mark="true">Groups</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="1170">Groups, or so-called subpanels, are very easy to create in EFS. You can use groups to categorize panelists based on certain characteristics. In preparation for scenario 1, we will create the "New employees" group. To do this, proceed as follows:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="1419">Open the <em data-renderer-mark="true">People</em> module.</p>
+</li>
+<li>
+<p data-renderer-start-pos="1446">Select the <strong data-renderer-mark="true">Groups</strong> menu item from the menu on the left-hand side.</p>
+</li>
+<li>
+<p data-renderer-start-pos="1514">Click on the <strong data-renderer-mark="true">Create group</strong> button.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014812785810"></p>
+</li>
+</ul>
+<ul class="wysiwyg-text-align-justify">
+<li data-renderer-start-pos="1514">Select <strong data-renderer-mark="true">default</strong> as the category.</li>
+<li data-renderer-start-pos="1514">Enter the name for the new group under <strong data-renderer-mark="true">Internal group title</strong>. In our case: "New employees".</li>
+<li data-renderer-start-pos="1514">Enter a description if required.</li>
+<li data-renderer-start-pos="1514">Click on <strong data-renderer-mark="true">Create group</strong>.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Your new group has now been created. In the group itself, you have various options for adding panelists manually. However, as we want to automate the group creation, the next two steps are to combine various filter conditions in a grouping filter and to set up an update rule using those conditions and our newly created group.</p>
+<h3 id="Grouping-Filters" class="wysiwyg-text-align-justify" data-renderer-start-pos="2078"><strong data-renderer-mark="true">Grouping Filters</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="2096">By means of grouping filters you can define the conditions under which panelists are assigned to a group. In preparation for scenario 1, we have already created the "New employees" group. Now we use a new grouping filter to specify that all panelists who are newly added to the panel are assigned to the "New employees" group. New panelists usually have the panel status "Admitted temporarily". To do this, follow the steps below:</p>
+<ul class="

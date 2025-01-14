@@ -1,0 +1,73 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1078132904">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1078132904</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<p>Factor enrollment is a process in Okta that takes care of collecting Multi Factor information from users accessing applications. Factor enrollment defines which users have to provide Multi Factor data.</p><p></p><p><strong>Keep in mind that the factor enrollment does not mean that MFA is active. MFA will be activated using a Sign-On Policy see </strong><ac:link ac:card-appearance="inline"><ri:page ri:content-title="Sign-On Policy" ri:version-at-save="1"></ri:page><ac:link-body>Sign-On Policy</ac:link-body></ac:link><strong>.</strong></p><p></p><table data-layout="default"><tbody>
+<tr>
+<th><p><strong>What</strong></p></th>
+<th><p><strong>Explanation</strong></p></th>
+</tr>
+<tr>
+<td data-highlight-colour="#f4f5f7"><p><strong>Multifactor Policy</strong></p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>Group Assignment</p></td>
+<td>
+<p>The group assignment is used to scope Multi Factor Authentication and should be as precise as possible.</p>
+<p>This is the main tool that should be used to handle multi factors.</p>
+</td>
+</tr>
+<tr>
+<td><p>Eligible Factors</p></td>
+<td>
+<p>The factors for which as user is asked for. There are three possible values:</p>
+<p>Optional: This factor can be provided. In case there are optional factors at least one of these factor has to be provided.</p>
+<p>Disabled: Users cannot configure that factor.</p>
+<p>Required: This factor has to be provided.</p>
+</td>
+</tr>
+<tr>
+<td data-highlight-colour="#f4f5f7"><p><strong>Policy Rule</strong></p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>Access</p></td>
+<td><p>Scoping for the rule.</p></td>
+</tr>
+<tr>
+<td><p>Enrollment</p></td>
+<td>
+<p>There are three different cases:</p>
+<p>The first time a user is challenged for MFA → This happens as soon as a user attempts to access an application that requires MFA. A user could have entered different other applications without MFA beforehand.</p>
+<p>The first time a user signs in → This happens independently from the application the user accesses. Therefore a user could be asked for MFA information without being challenged for MFA.</p>
+<p>Do not enroll → self-explanatory</p>
+</td>
+</tr>
+</tbody></table>td>
+</tr>
+<tr>
+<td><p>Eligible Factors</p></td>
+<td>
+<p>The factors for which as user is asked for. There are three possible values:</p>
+<p>Optional: This factor can be provided. In case there are optional factors at least one of these factor has to be provided.</p>
+<p>Disabled: Users cannot configure that factor.</p>
+<p>Required: This factor has to be provided.</p>
+</td>
+</tr>
+<tr>
+<td data-highlight-colour="#f4f5f7"><p><strong>Policy Rule</strong></p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>Access</p></td>
+<td><p>Scoping for the rule.</p></td>
+</tr>
+<tr>
+<td><p>Enrollment</p></td>
+<td>
+<p>There are three different cases:</p>
+<p>The first time a user is challenged for MFA → This happens as soon as a user attempts to access an application that requires MFA. A user could have entered different other applications without MFA beforehand.</p>
+<p>The first time a user signs in → This happens independently from the application the user accesses. Therefore a user could be asked for MFA information without being challenged for MFA.</p>
+<p>Do not enroll → self-explanatory</p>
+</td>
+</tr>
+</tbody></table>

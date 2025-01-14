@@ -1,0 +1,42 @@
+ cron jobs in Grafana:
+<ul>
+<li>Choose <strong>Explore </strong>option and <strong>Loki </strong>value, then put the needed filters as shown below<br style="box-sizing: border-box; line-height: inherit; color: #2f3941; font-family: system-ui, -apple-system, BlinkMacSystemFont, ' Segoe UI' , Roboto, Oxygen-Sans, Ubuntu, Cantarell, ' Helvetica Neue' , Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #fff7ed; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background: #fff7ed; box-sizing: border-box; line-height: inherit; color: #2f3941; font-family: system-ui, -apple-system, BlinkMacSystemFont, ' Segoe UI' , Roboto, Oxygen-Sans, Ubuntu, Cantarell, ' Helvetica Neue' , Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; opacity: 1;"><img style="vertical-align: baseline; border: 0px; margin: 0px; padding: 0px; outline: 0px; background: transparent; box-sizing: border-box; line-height: inherit; object-fit: scale-down; aspect-ratio: auto; inline-size: auto; max-block-size: 75dvb; block-size: auto; max-width: 100%; max-inline-size: 100%;" src="https://central-supportdesk.zendesk.com/attachments/token/MbhuIZVUbnZJ1fy6jbfrRxmLy/?name=image.png"></span>
+</li>
+</ul>
+</li>
+</ul>
+<p> </p>
+<h2 id="h_01J7968EFFEK122YN48DQ2ZKGE">5. RabbitMQ Access for Mail Troubleshooting</h2>
+<p><a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21237628865682-Understanding-RabbitMQ-and-How-is-RabbitMQHash-calculated"> Check this article</a> if you need to check the status of message in RabbitMQ</p>
+<p> </p>
+<h2 id="h_01J9K53NMVD5NP08D5AQKRVPE9">6. Special Customizations:</h2>
+<ol>
+<li>
+<h4 id="h_01J9KW3G0XCT5XMAGPXNYRPF84"><strong>Intervista</strong></h4>
+<ul>
+<li>
+<strong>Intervista </strong>is the only customer which has a customization to update the sent status of an email. Email is sent similar to other customers, only the status update after delivery is customized.</li>
+<li>For all customers, there is a callback mechanism from the custom mailserver through RabbitMQ to instruct EFS that the message was delivered. However for Intervista, this part is customized. </li>
+<li>For <strong>Intervista</strong>, if an email is <strong>stuck</strong> in "<strong>Sending</strong>" status, perform the following:
+<ul>
+<li>Confirm if the email was relayed by Hurricane to custom mail server, by checking <a href="#h_01J9K62X9TY3ZT1WFSVH47K99P">Hurricane logs</a>
+<ul>
+<li>If email is not delivered for any reason, then this is still our scope, we need to investigate the reasons.</li>
+<li>If email is delivered, but GUI is not updated back, then this should be PS scope.
+<ul>
+<li>Ideally, If you look at the DB you only can see the information updated in the <code>mail_rcpt</code> table but not in the <code>mail_hurricane_notification_queue</code> table. This is expected behavior for this customer, which should update the GUI</li>
+<li><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21824354491922"></li>
+<li>If the <code>mail_rcpt</code> is not populated, then this is PS Scope.<br>
+<div>The customizing can be found here btw:<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21824354494866">
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h4 id="h_01J9KW4QRRKKW9K

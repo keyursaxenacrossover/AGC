@@ -1,0 +1,42 @@
+ defaulted field in a drop-down list that prompts the panelist to set the correct date.</p>
+<div class="table-wrap wysiwyg-text-align-justify">
+<div class="table-wrap">
+<table class="relative-table wrapped tablesorter tablesorter-default confluenceTable" style="margin: 0px; border-collapse: collapse; width: 698px; height: 315px;">
+<colgroup> <col style="width: 0px;"> <col style="width: 0px;"> <col style="width: 0px;"> </colgroup>
+<tbody>
+<tr class="tablesorter-headerRow" style="height: 33px;">
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; background-color: var(--ds-background-accent-gray-subtlest,#f0f0f0); padding: 7px 10px !important; width: 204.601px; height: 33px;" scope="col">
+<div class="tablesorter-header-inner">Field</div>
+</th>
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; background-color: var(--ds-background-accent-gray-subtlest,#f0f0f0); width: 237.622px; height: 33px;" scope="col">
+<div class="tablesorter-header-inner">Meaning</div>
+</th>
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; background-color: var(--ds-background-accent-gray-subtlest,#f0f0f0); width: 209.34px; height: 33px;" scope="col">
+<div class="tablesorter-header-inner">Example</div>
+</th>
+</tr>
+<tr style="height: 65px;">
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 204.601px; height: 65px;">r_cat</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 237.622px; height: 65px;">
+<p>Indicates whether the element is a master data variable (item) or an answer category (r_cat).</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 201.319px; height: 65px;">rcat -&gt; answer category</td>
+</tr>
+<tr style="height: 65px;">
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 204.601px; height: 65px;">Master data variable</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 237.622px; height: 65px;">
+<p>Indicates to which master data item an answer category belongs.</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 201.319px; height: 65px;">md_001</td>
+</tr>
+<tr style="height: 119px;">
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 204.601px; height: 119px;">Code</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 237.622px; height: 119px;">
+<p>The code of the answer category.</p>
+<p>You can use negative numbers, however these cannot contain blank spaces. E.g., “-77” can be imported “- 77 not”.</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 201.319px; height: 119px;">0</td>
+</tr>
+<tr style="height: 33px;">
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 204.601px; height: 33px;">Title</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px;

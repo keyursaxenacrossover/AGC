@@ -1,0 +1,68 @@
+alsApi.initialize().then(function() {
+    Questback.portalsApi.query.portalInfo().then(function(result) {
+        // Continue here with step 7.2
+    });
+});</code></pre>
+<p class="wysiwyg-text-align-justify">The <em>result</em> parameter will contain the necessary information in its <em>layout</em> field:</p>
+<pre><code class="language-text">{
+    portal: {...},
+    layout: {
+        customCss: "&lt;https://PORTALS-DOMAIN/portals/PORTALS-ID/css/compile.css?v=123456",&gt;
+        portalsCss: "&lt;https://PORTALS-DOMAIN/portals/PORTALS-ID/css/custom.css?v=123456",&gt;
+        extensionCss: "&lt;https://PORTALS-DOMAIN/portals/PORTALS-ID/css/extension.css?v=123456",&gt;
+        fontCss: "&lt;https://fonts.googleapis.com/css?family=Lato",&gt;
+        fontDefinition: "'Lato', sans-serif",
+    }
+}</code></pre>
+<p class="wysiwyg-text-align-justify">These paths do not change for a given portal (besides the value of the cachebuster parameter called <em>v</em>), so it is possible to retrieve them once, store them and hardcode them into your code, to save postMessage requests and improve startup times a little.</p>
+<h3 id="importing-the-extension-stylesheet" class="wysiwyg-text-align-justify">Importing the extension stylesheet</h3>
+<p class="wysiwyg-text-align-justify">After retrieving the stylesheet urls you need to import the files by adding <em>link</em> tags into your documents <em>head</em>:</p>
+<pre><code class="language-text">var head = document.getElementsByTagName('head')[0];
+var linkExtension = document.createElement('link');
+linkExtension.setAttribute('rel', 'stylesheet');
+linkExtension.setAttribute('type', 'text/css');
+linkExtension.setAttribute('href', result.layout.extensionCss);
+head.appendChild(linkExtension);</code></pre>
+<p class="wysiwyg-text-align-justify">You should note that it takes some time to retrieve the file from the server, so there is a short time in which your application is rendered without the styles in the file. You might want to prevent your application from beeing shown to the user before the above code has been executed.</p>
+<p class="wysiwyg-text-align-justify">The <em>extension.css</em> is a subset of the portals stylesheet and contains the necessary styles for the most common use cases. If you want to include the complete portals stylesheet you can import <em>result.layout.portalsCss</em> instead of <em>result.layout.extensionCss</em>. But be aware that this might introduce conflicts with existing styles in your application.</p>
+<h3 id="importing-the-custom-stylesheet" class="wysiwyg-text-align-justify">Importing the custom stylesheet</h3>
+<p class="wysiwyg-text-align-justify">If you have added custom css in the <em>Look &amp; Feel</em> section of the CMS, that contains styles which you want to apply to you application, then you should import the <em>custom.css</em> file, too.</p>
+<pre><code class="language-text">var linkCustom = document.createElement('link');
+linkCustom.setAttribute('rel', 'stylesheet');
+linkCustom.setAttribute('type', 'text/css');
+linkCustom.setAttribute('href', result.layout.customCss);
+head.appendChild(linkCustom);</code></pre>
+<h3 id="importing-the-portals-default-font" class="wysiwyg-text-align-justify">Importing the portals default font</h3>
+<p class="wysiwyg-text-align-justify">To use the same font as your portal use the following code:</p>
+<pre><code class="language-text">if (result.layout.fontCss) {
+    var linkFont = document.createElement('link');
+    linkFont.setAttribute('rel', 'stylesheet');
+    linkFont.setAttribute('type', 'text/css');
+    linkFont.setAttribute('href', result.layout.fontCss);
+    head.appendChild(linkFont);
+
+    // Apply font-family definition
+    var body = document.getElementsByTagName('body')[0];
+    body.style.fontFamily = result.layout.fontDefinition;
+}</code></pre>
+<h3 id="using-the-styles" class="wysiwyg-text-align-justify">Using the styles</h3>
+<p class="wysiwyg-text-align-justify">The <em>extension.css</em> contains classes for the most common use cases.</p>
+<h4 id="color-variables" class="wysiwyg-text-align-justify">Color variables</h4>
+<pre><code class="language-text">/* Color variables definitions */
+:root {
+    --ext-primary-color: #006BFE;
+    --ext-secondary-color: #606c76;
+    --ext-success-color: #2ccc76;
+    --ext-warning-color: #fbbf5f;
+    --ext-danger-color: #fd6e72;
+    --ext-info-color: #006bff;
+    --ext-text-color: #444444;
+    --ext-sidebar-background-color: #0a061d;
+    --ext-sidebar-text-color: #ffffff;
+}</code></pre>
+<h4 id="type-color-classes" class="wysiwyg-text-align-justify">Type color classes</h4>
+<p class="wysiwyg-text-align-justify">Classes exist for the most common type and property combinations:</p>
+<pre><code class="language-text">.ext-text-primary
+.ext-text-secondary
+.ext-text-success
+.ext

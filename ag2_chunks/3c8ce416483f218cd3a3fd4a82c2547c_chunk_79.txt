@@ -1,0 +1,100 @@
+</p>
+</td>
+<td style="width: 193.056px;">
+<p> </p>
+</td>
+<td style="width: 107.569px;">
+<p>Europe / Paris</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify"><strong>3. Debugging</strong></p>
+<p class="wysiwyg-text-align-justify">Starting in <strong>Website editor</strong>, click on<strong> Website settings</strong>, then go to the tab <strong>Debugging</strong>.</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default">
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" style="width: 149.34px;">
+<p><strong>Description</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 397.76px;">
+<p><strong>Explanation</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 142.517px;">
+<p><strong>Preallocation in the standard panel</strong></p>
+</th>
+</tr>
+<tr>
+<td style="width: 141.319px;">
+<p>Show debug information on the website</p>
+</td>
+<td style="width: 389.74px;">
+<p>Various debug information, such as language version and character set, are output.</p>
+</td>
+<td style="width: 134.497px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 141.319px;">
+<p>IP address range</p>
+</td>
+<td style="width: 389.74px;">
+<p>Optionally, you can restrict display of the debug information to a specific address range.</p>
+<p>Please note: the determination of hostnames and IP addresses is possible only to a certain extent.</p>
+</td>
+<td style="width: 134.497px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 141.319px;">
+<p>HTTP authentication (user name)</p>
+</td>
+<td style="width: 389.74px;">
+<p>You can restrict access to the language version to specific persons, for example during the setup phase.</p>
+<p>To do so, enter a username in this field and a password in the following field. Pass these data on to the desired persons. When the domain is accessed, users are prompted for their password; visitors who do not have the login data are denied access.</p>
+</td>
+<td style="width: 134.497px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 141.319px;">
+<p>HTTP authentication (password)</p>
+</td>
+<td style="width: 389.74px;">
+<p>see above</p>
+</td>
+<td style="width: 134.497px;">
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"><strong>4. Facebook configuration</strong></p>
+<p class="wysiwyg-text-align-justify">In panels with Social Insight Connect, the <strong>Facebook</strong> tab contains the settings for the app of the language version. For details, please see the „Social Insight Connect“ manual.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="domain-mapping" class="wysiwyg-text-align-justify"><strong>Domain Mapping</strong></h2>
+<p class="wysiwyg-text-align-justify">Most panel websites can be accessed via several domains. In the case of a panel with several language versions, the .com domain usually refers both to the website and the language version, whereas .de refers to the German and .fr to the French language version. EFS Panel’s GUI helps you map the domain(s) to the panel site(s).</p>
+<p class="wysiwyg-text-align-justify"><strong>1. Clarifying domain and server configuration</strong></p>
+<p class="wysiwyg-text-align-justify">There are some basic prerequisites that must first be met:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>You must be the owner of the domain, i.e. the domain must be registered in your name or in the name of someone acting on your behalf.</p>
+</li>
+<li>
+<p>The owner of the domain must ensure that the domain refers to the panel installation.</p>
+</li>
+<li>
+<p>In the configuration of the server on which the panel installation is hosted the domain must be linked to the installation.</p>
+</li>
+<li>
+<p>It is necessary to decide if access to panel websites and / or surveys should only be permitted with SSL encryption or if you want to allow both http and https access.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Our support will assist you in performing these steps.</p>
+<p class="wysiwyg-text-align-justify">If only <em>one</em> domain is to be linked to your panel installation, no further steps are required.</p>
+<p class="wysiwyg-text-align-justify"><strong>2. Mapping the domains if several domains are used</strong></p>
+<p class="wysiwyg-text-align-justify">If you want several domains to refer to your panel,

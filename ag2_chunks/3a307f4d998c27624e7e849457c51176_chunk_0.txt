@@ -1,0 +1,30 @@
+<h1 id="h_01J7N61CVH9MYEWNVBYZATVDK7" class="wysiwyg-text-align-left">Overview</h1>
+<p class="wysiwyg-text-align-left">This is a runbook that allows people to be onboarded to all the EFS installations at once, as this is required when new agents are onboarded into the product.</p>
+<h1 id="h_01J7N62PVTF894XJPRRR0HYJM8" class="wysiwyg-text-align-left">Process</h1>
+<ol>
+<li class="wysiwyg-text-align-left">Access service gateways via SSH client (i.e. Putty, but you can also use the Terminal of your preference)
+<ul>
+<li class="wysiwyg-text-align-left">
+<a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21139518716562" target="_blank" rel="noopener noreferrer">How to Access and Work with DXI Service Gateways</a><br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21344474760082" width="365" height="359"><br>
+<ul>
+<li style="box-sizing: border-box;">
+<strong style="box-sizing: border-box; font-weight: bolder;">Prod-DE-03</strong>: <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, ' Liberation Mono' , ' Courier New' , monospace; font-size: 14px; color: #e83e8c; word-break: break-word; background: #f7f7f7; border: 1px solid #dddddd; border-radius: 3px; padding: 0px 5px; margin: 0px 2px;">servicegw.prod-de-03.customervoice360.com:65222</code> (AWS DE)</li>
+<li style="box-sizing: border-box;">
+<strong style="box-sizing: border-box; font-weight: bolder;">Prod-US-03</strong>: <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, ' Liberation Mono' , ' Courier New' , monospace; font-size: 14px; color: #e83e8c; word-break: break-word; background: #f7f7f7; border: 1px solid #dddddd; border-radius: 3px; padding: 0px 5px; margin: 0px 2px;">servicegw.prod-us-03.customervoice360.com:65222</code> (AWS USA)</li>
+<li style="box-sizing: border-box;">
+<strong style="box-sizing: border-box; font-weight: bolder;">Sandbox-DE-02</strong>: <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, ' Liberation Mono' , ' Courier New' , monospace; font-size: 14px; color: #e83e8c; word-break: break-word; background: #f7f7f7; border: 1px solid #dddddd; border-radius: 3px; padding: 0px 5px; margin: 0px 2px;">servicegw.sandbox-de-02.customervoice360.com:65222</code> (Sandbox Cluster)</li>
+<li style="box-sizing: border-box;">
+<strong style="box-sizing: border-box; font-weight: bolder;">BofA-US-01</strong>: <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, ' Liberation Mono' , ' Courier New' , monospace; font-size: 14px; color: #e83e8c; word-break: break-word; background: #f7f7f7; border: 1px solid #dddddd; border-radius: 3px; padding: 0px 5px; margin: 0px 2px;">servicegw.bofa-us-01.customervoice360.com:65222</code> (Bank of America Cluster)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Navigate to <strong>add account script</strong> folder and list its contents (if needed)<br><code>cd /nfs/dumps/_add_efs_user_account/</code><br><code>ll</code><br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21344474761490">
+</li>
+<li>Copy muster text file and edit it <strong>(repeat step if you need multiple agents accounts to be created)<br></strong><code>cp textfiles/_muster_username.txt textfiles/jon.doe.txt &amp;&amp; vi textfiles/jon.doe.txt</code>
+</li>
+<li>Add agent account data and save file; this is the expected format:<br>
+<pre>doe<br><br>Jon<br><br>Doe<br><br><a href="mailto:jon.doe@trilogy.com">jon.doe@trilogy.com</a></pre>
+<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21344474767890">
+</li>
+<li>Copy "muster" shell script file and edit it<br><code>cp shell_script/_muster_addusername_NEW.sh shell_script/jon.doe.sh &amp;&amp; vi shell_script

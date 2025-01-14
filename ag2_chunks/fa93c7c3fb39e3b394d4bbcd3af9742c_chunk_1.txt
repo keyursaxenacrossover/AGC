@@ -1,0 +1,81 @@
+ area "Set language selection variable" to select the variable <em>u_isocode</em> and to check the option "Assign language based on ISO code", which set the desired behavior: Survey participants whose preferred language has been stored in the participant administration by means of an ISO code will not only be given the language corresponding to this code, but also the variants of the preferred language corresponding to the conditions, when the survey starts. For example, the manager who takes part in a 360° leadership survey answers the questions in an English version tailored to his needs, while team members receive the phrases tailored to their needs.</p>
+<ul>
+<li>
+<p>The prerequisite is, of course, that the corresponding phrases have been entered under "Text elements" in the <strong>Language editor</strong>.</p>
+</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998250094866" alt="Conditional language 3.png"></p>
+<p>This feature is used in personalized survey projects.</p>
+<h3 id="header-5">Improvement of the <em>Dynamic answer option</em> question type</h3>
+<p>The<em> Manage recipient</em> link of the <em>Dynamic answer option</em> question type takes you to the survey menu, where in the<em> Error notification</em> field you enter the person or persons who will receive an e-mail notification in the case of a newly added answer option. </p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998262970642" alt="Dynamic answer option.png"></p>
+<h3 id="header-6">New triggers: Key phrase extraction trigger and sentiment trigger</h3>
+<p>The <em>Key phrase extraction trigger</em> and <em>Sentiment trigger</em> already introduced in the 18.3 fall release are now part of <em>Survey</em> and can be selected in the <strong>Questionnaire editor</strong> under the menu item "Triggers".</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998234350482" alt="Triggers.png"></p>
+<p><em><u>Key phrase extraction trigger</u></em></p>
+<p>This trigger can use up to 20 variables to store the returned key phrases, with the last assigned variable storing all remaining key phrases as a comma separated list. The 911 user-defined question type (text variable max 65535 chars) is best suited for use with this trigger.</p>
+<p>On the <strong>Settings</strong> tab, you set the following:</p>
+<ul>
+<li>
+<p>You assign a name and write a description.</p>
+</li>
+<li>
+<p>You select an execution position:</p>
+<ul>
+<li>
+<p>after submitting page, before filter</p>
+</li>
+<li>
+<p>after submitting page, after filter</p>
+</li>
+<li>
+<p>directly</p>
+</li>
+</ul>
+</li>
+<li>
+<p>You tick off:</p>
+<ul>
+<li>
+<p>Also execute trigger in preview mode</p>
+</li>
+<li>
+<p>Execute this trigger multiple times in one survey session</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998217374354" alt="Trigger 1 Settings.png"></p>
+<p>On the <strong>Detail configuration</strong> tab, you set the following:</p>
+<ul>
+<li>
+<p>You enter the <strong>API Key</strong> provided to you by Support</p>
+</li>
+<li>
+<p>You enter the ISO code of the expected language.</p>
+</li>
+<li>
+<p>You select the source variable (from which the phrase is to be taken).</p>
+</li>
+<li>
+<p>You select the target variable that stores the keywords.</p>
+</li>
+<li>
+<p>Under <strong>Additional variables</strong>, you select up to 20 variables that store additional key phrases.</p>
+</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998217554962" alt="Trigger 1 configuration.png"></p>
+<p> </p>
+<p>When adding the trigger to a page in your survey it is recommended that you use a condition to check if the source text variable contains any text. If your survey uses the back-button or resumption from beginning, we recommended that you allow multiple executions of the trigger </p>
+<p><em><u>Sentiment-Trigger</u></em></p>
+<p>The sentiment analysis trigger categorizes open text feedback as negative, positive or neutral. The usage of this trigger is similar to that of the <em>Key phrase extraction trigger</em>. The first variable of type <em>short text</em> or <em>text</em> contains the categorization ("negative", "positive" or "neutral") and the optional variable of type <em>float</em> stores the classification points provided by the system. The scale of each category ranges from 0 to 1: 0 represents the most negative and 1 the most positive value of a category.</p>
+<p>On the <strong>Settings</strong> tab, you set the following:</p>
+<ul>
+<li>
+<p>You assign a name and write a description.</p>
+</li>
+<li>
+<p>You select an execution position:</p>
+<ul>
+<li>
+<p>after submitting page, before filter</p

@@ -1,0 +1,40 @@
+<h1 id="h_01J6C3YSBNECY6KVQ7MQQAHHFB">Overview</h1>
+<p>This article provides guidance on investigating a potential SQL injection attack on a specific instance. SQL injection is a common attack vector where malicious SQL code is inserted into input fields to manipulate a backend database, potentially leading to data breaches or unauthorized access. This guide outlines the steps to determine whether an SQL injection attempt was successful and to assess any potential data breaches.</p>
+<h1 id="h_01J6C3YSBNP8DTMYVAESD56RKD">Solution</h1>
+<p>Follow these steps to investigate a reported SQL injection attempt on a specific instance:<br><span class="wysiwyg-color-black70"><em>Note: This is WIP, since actual AWS access is in progress</em></span></p>
+<ol>
+<li>
+<strong>Identify the used database for the mentioned installation</strong>
+<ol>
+<li>Open <a href="https://globis.3uu.de/login.php3">Globis</a> and search for the installation</li>
+<li>Check the DB Host Name:<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21016227992722">
+</li>
+<li>
+<p>Connect to CloudWatch to analyze the attempted SQL injection code present in the logs.<br><br></p>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>Identify Suspicious SQL Code in Logs</strong><br>Start by reviewing server logs or application logs where SQL queries are recorded. <br>In AWS Cloudwatch, use specific queries to filter logs that may contain suspicious SQL code (if the request has sample code being injected, use that in the search). <br>For example (assuming installation name is <code>e0080</code> , and injected query includes <code>SLEEP</code> command):</p>
+<div class="dark bg-gray-950 contain-inline-size rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-sql">fields <span class="hljs-variable">@timestamp</span>, <span class="hljs-variable">@message</span><br><span class="hljs-operator">|</span> <span class="hljs-keyword">filter</span> <span class="hljs-variable">@message</span> <span class="hljs-keyword">like</span> <span class="hljs-operator">/ee0080</span><span class="hljs-operator">/</span>
+<br><span class="hljs-operator">|</span> <span class="hljs-keyword">filter</span> <span class="hljs-variable">@message</span> <span class="hljs-keyword">like</span> <span class="hljs-operator">/</span>sleep<span class="hljs-operator">/</span>
+<br><span class="hljs-operator">|</span> sort <span class="hljs-variable">@timestamp</span> <span class="hljs-keyword">asc</span>
+<br><span class="hljs-operator">|</span> limit <span class="hljs-number">10000</span>
+</code></div>
+</div>
+<p> </p>
+</li>
+<li>
+<p><strong>Verify Database Integrity</strong><br>If the queries found are harmless (no insert/update/delete effect), log into the database through a secure gateway and manually execute the suspicious queries to determine their effect. <br>For example, if the SQL injection attempt involves a query like:</p>
+<div class="dark bg-gray-950 contain-inline-size rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-sql"><span class="hljs-keyword">SELECT</span> id <span class="hljs-keyword">FROM</span> table_name <span class="hljs-keyword">WHERE</span> title<span class="hljs-operator">=</span><span class="hljs-string">'if(now()=sysdate(),sleep(15),0)'</span> LIMIT <span class="hljs-number">1</span>;
+</code></div>
+</div>
+<p>Execute this query safely to observe its behavior (note that <code class="!whitespace-pre hljs language-sql"><span class="hljs-string">sleep(15)</span></code> is a harmless query). <br>In this example, a result in less than 1 second indicates the query with injected code did not execute the injected code. Similarly, confirm the injected code doesn't manipulate or access unauthorized data, suggesting the SQL injection was not successful.<br><br></p>
+</li>
+<li>
+<p><strong>Review Application Front-End Security</strong><br>Evaluate the accessibility of the input forms used for the attack. <br>If the form used for the attach is public (without login prerequisite), ensure it is protected with security measures such as CAPTCHA, which can help distinguish between human users and automated bots, thereby reducing the risk of automated SQL injection attacks.</p>
+</li>
+<li>
+<strong>Check the code inserted as text through GUI</strong><br>If possible, check the GUI for the code injected as text. If the injection fails, the code will be displayed normally in the text field; however if the text containing the code is truncated, this might imply a possible injection.<br>In the below example, the breach was targeting the contact

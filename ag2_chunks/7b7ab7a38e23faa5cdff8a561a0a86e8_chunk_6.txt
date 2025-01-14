@@ -1,0 +1,120 @@
+ the right hand of the radio button, without consideration of the text alignment settings.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Display on mobile devices: On mobile devices, the answer options can be displayed either as a list or as a drop-down list. The latter requires active JavaScript.</p>
+</li>
+<li>
+<p>Initial value: Text for the first option of the drop-down list. Default: “Please select”.</p>
+<ul>
+<li>
+<p>This text is only used if a “drop-down list” has been set for display on mobile devices.</p>
+</li>
+<li>
+<p>This option is automatically treated as missing.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Alternating rows: Display every second answer option with a different background color.</p>
+</li>
+</ul>
+<h4 id="alternative-layouts-for-single-response-lists">Alternative Layouts for Single Response Lists</h4>
+<p>The main difference between question types 112 / 113 and the question types described above is in their layout:</p>
+<ul>
+<li>
+<p>Question type 112 Single response list (wrapping): Radio buttons and answer options are arranged horizontally in one line. If this question type is used in<br>“Responsive Layout” context, the wrapping may occur at any position between the answer options dependent on screen width.</p>
+</li>
+<li>
+<p>Question type 113 Single response list (scale above, wrapping): The radio buttons are arranged horizontally, with the respective answer options above them. If this question type is used in the “Responsive Layout” context, the wrapping may occur at any position between the answer options dependent on screen width.</p>
+</li>
+</ul>
+<p>With question type 113, you have the option of modifying the area between the scale and the answer block by inserting an additional template, e.g. to change the distance.</p>
+<h3 id="single-response-list-with-icons">Single response list with icons</h3>
+<p>The question type “Single response list with icons” allows us to easily visualize answer options, by integrating e.g. smileys, thumbs for Yes/ No questions, dice, numbers, gender icons, or other visual elements.</p>
+<ul>
+<li>
+<p>When creating new questions in projects with “Responsive Layout”, you can find this question type in the “Single response” category.</p>
+</li>
+<li>
+<p>Depending on the screen width of the device used, the options will be displayed horizontally or vertically. Optionally vertical alignment can be enforced for all devices.</p>
+</li>
+<li>
+<p>When creating a new question, smileys are integrated automatically.</p>
+</li>
+<li>
+<p>You can resort to other predefined images in the Tivian library or upload your images to the media library.</p>
+</li>
+<li>
+<p>Technically, the question type is based on the familiar single response list (111).</p>
+</li>
+</ul>
+<h4 id="base-elements-1">Base Elements</h4>
+<ul>
+<li>
+<p>Question text</p>
+</li>
+<li>
+<p>Fill-in instruction</p>
+</li>
+<li>
+<p>Help text</p>
+</li>
+<li>
+<p>Icons and texts for the answer options 1-n</p>
+</li>
+</ul>
+<h4 id="detail-configuration-1">Detail configuration</h4>
+<ul>
+<li>
+<p>Show answer texts: Per default, the texts of the answer options are used as Alt text. Optionally they can be displayed below the icons.</p>
+</li>
+<li>
+<p>Force vertical alignment: Per default, the display of the options depends on the screen width of the device used: For wide screens horizontal, for small screens vertical. Optionally vertical alignment can be enforced for all devices.</p>
+</li>
+<li>
+<p>Horizontal alignment: center, left, right.</p>
+</li>
+<li>
+<p>Minimum width of the images.</p>
+<ul>
+<li>
+<p>Minimum width for display of the images.</p>
+</li>
+<li>
+<p>If the images don’t fit in line while respecting the minimum width, the view switches to a vertical display.</p>
+</li>
+<li>
+<p>Valid range: 50-1000 pixels. Default: 50 pixels.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Maximum width of the images. Default: 100 pixels.</p>
+</li>
+</ul>
+<h3 id="drop-down-list">Drop-down list</h3>
+<p>With drop-down lists, issues will be examined, for which there is only one possible correct answer.</p>
+<h4 id="base-elements-2">Base Elements</h4>
+<ul>
+<li>
+<p>Question text</p>
+</li>
+<li>
+<p>Fill-in instruction</p>
+</li>
+<li>
+<p>Help text</p>
+</li>
+<li>
+<p>Answer options 1-n</p>
+</li>
+<li>
+<p>Optional: Answer option with a text entry field</p>
+</li>
+</ul>
+<p>It is not possible to create inside titles or several columns.</p>
+<h4 id="entry-dialog-and-question-options">Entry dialog and question options</h4>
+<p>The entry dialog for configuring a drop-down list is on the whole identical with the entry dialog for question type 111. However the type “Inside title” and the column “New column” are missing.</p>
+<p>The question type-specific question options are also largely identical, only “Dynamic column text wrap” and “Wrap item text” are missing. Characteristic for question type 131 and the following question type 132 is that the select box can be placed within, in front of,

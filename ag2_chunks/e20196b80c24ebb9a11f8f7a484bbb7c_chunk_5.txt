@@ -1,0 +1,67 @@
+ <strong>+ </strong>icon you can trigger <strong>Import pages</strong>.</p>
+</li>
+<li>
+<p>Specify the desired source project.</p>
+</li>
+<li>
+<p>Select the source page.</p>
+</li>
+<li>
+<p>Click on <strong>Import </strong>to initiate copying of the page tree.</p>
+</li>
+<li>
+<p>If necessary, you can further adjust the position of the imported page tree via drag &amp; drop.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">You can copy pages both within a project and from one project to another. It is not possible to copy from one EFS installation to another.</p>
+<p class="wysiwyg-text-align-justify"><strong>The Functional Scope</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>You can copy pages from EFS 10.3 questions both within one project and from one project to another. It is not possible, however, to copy from one EFS installation to the next.</p>
+</li>
+<li>
+<p>Pages, questions, and variables will be newly created during the import process, i.e. their IDs will change.</p>
+</li>
+<li>
+<p>When copying filters, plausibility checks, etc. the conditions will be adopted as defined in the source project; i.e. if the reference variables are included in the copied branch the conditions will work in the copied project. If the reference variables are not included in the copied branch, the conditions must be checked and adapted to the new project.</p>
+</li>
+<li>
+<p>If the source pages or questions contain any lists, the answer options on these lists will be copied and adopted as static answer options. The actual lists will not be copied.</p>
+</li>
+<li>
+<p>Loop branches will be copied during page import; however, the corresponding lists will not be imported.</p>
+</li>
+<li>
+<p>Images used in the source pages or questions will be imported if they have been correctly embedded in an appropriate question type (e. g. 999, 511, 521, 522). Images that were, for example, manually inserted into an answer option using HTML will not be imported automatically.</p>
+</li>
+<li>
+<p>Page import can be used to migrate questionnaires from other layout generations or versions into a new project. If parts of a “Responsive layout” questionnaire are imported into a project with a classic standard layout, “Responsive layout” question types will be transformed into their fallback question types.</p>
+</li>
+<li>
+<p>If page import is used for multilingual projects, the translations can be imported. To this end, the necessary languages must exist both in the source and the destination project and be marked with the same language ID and language identifier.</p>
+</li>
+<li>
+<p>When using the question import newly introduced in EFS 10.3, you can select only source projects that have the same layout generation and version as the target project.</p>
+</li>
+<li>
+<p>When using the question import newly introduced in EFS 10.3, you can specify the language in the source project that should be transferred.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">You can create an archive of frequently used questionnaire sections for the page import: Create a master project with separate branches for frequently used questionnaire sections. If you need a section in a real project, you can simply import it from your master project.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="filter" class="wysiwyg-text-align-justify">Filter</h2>
+<p class="wysiwyg-text-align-justify">If you create a survey page of the “Standard” type, all participants in the survey will automatically be routed to the next page as soon as they have answered and clicked on the “Submit” button. Additional questions can be directed at participants, who have provided answers that you have specified or at those with specific properties saved in participant administration. Other respondents who do not meet the filter criterion will skip these questions.</p>
+<h3 id="possible-filter-applications" class="wysiwyg-text-align-justify">Possible Filter Applications</h3>
+<p class="wysiwyg-text-align-justify">Selecting different filters determines the type of routing. The filters themselves route respondents from a main level to further sub-levels. Depending on the answer, the “Filter” page type will route the participant to the next page or cause them to skip pages.</p>
+<p class="wysiwyg-text-align-justify">If you’re using a question for filtering (e.g. Yes/No question), it might make sense to set this question as <strong>Mandatory (DAC)</strong>, so the respondent cannot skip it and a proper routing through the survey is ensured and no missing values are generated.</p>
+<h3 id="defining-conditions-for-filters-and-other-dynamic-features" class="wysiwyg-text-align-justify">Defining Conditions for Filters and Other Dynamic Features</h3>
+<p class="wysiwyg-text-align-justify">This chapter introduces you to the condition editor of EFS. It is used not only with filters, but also with hiding conditions, triggers, and other dynamic functions.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The first section walks you through the definition process for a condition.</p>
+</li>
+<li>
+<p>Afterward, the various features and rules to be observed are presented.</p>
+</li>
+</ul>
+<p class="wysiwyg

@@ -1,0 +1,73 @@
+_01HGKSMPRTX0QXJQX3QZJX8YBG">Feedback Providers</h2>
+<p>In the feedback providers overview, you can find the following information for each feedback provider: name, first name, personnel number, e-mail, organizational unit, gender, role in the current feedback constellation, language version, dispositionscode, and code. <strong>View</strong> allows modifying the display, and <strong>Extended search</strong> allows specifying complex search criteria.</p>
+<p><strong>Actions for administrating feedback providers</strong>:</p>
+<ul>
+<li>
+<strong>Preview</strong>: View the questionnaire.</li>
+<li>
+<strong>Edit feedback provider</strong>: Opens the dialog for editing master and process data.</li>
+<li>
+<strong>Delete feedback provider</strong>: Removes the feedback constellation irrevocably (note: the focus person cannot be deleted).</li>
+</ul>
+<p><strong>Actions for one or several feedback providers</strong>:</p>
+<ul>
+<li>
+<strong>Invite/Remind</strong>: See above.</li>
+<li>
+<strong>Reset and delete data / Reset without deleting data</strong>: See above.</li>
+<li>
+<strong>Disposition code 15</strong>: See above.</li>
+<li>
+<strong>Assign new code</strong>: Generates a new access code.</li>
+</ul>
+<h2 id="h_01HGKSMPRV3QZJX8YBGX9YJHWQ">Defining Feedback Participants and Constellations Manually</h2>
+<p>Optionally, you can specify the participant data and feedback constellations for a wave manually, by import, or by allowing focus persons to select feedback providers. If constellations are known at the start, usually import them. If not, upload data into the participant pool or import focus persons directly into the wave while other participants are uploaded into the participant pool.</p>
+<p>This chapter explains how to specify feedback constellations manually. The following section introduces the import process. Typically, you'd import data in a real project, but manually working step by step helps understand the process.</p>
+<p id="h_01HGKSMPRV9YJHWQX0QXJQX3QZ"><strong>Creating a Wave</strong></p>
+<ol>
+<li>Open the "Participant administration" menu.</li>
+<li>Click the Add Wave button.</li>
+<li>The properties dialog for waves is opened:
+<ul>
+<li>
+<strong>Name</strong>: Name of the wave</li>
+<li>
+<strong>Field start, Field end</strong>: Interval during which feedback providers can open the feedback questionnaire. This may differ from the project field time specified in the Survey menu.</li>
+<li>
+<strong>End of process</strong>: Date after which reports for this wave cannot be accessed.</li>
+<li>
+<strong>Active</strong>: Yes/No</li>
+<li>
+<strong>Peergroup</strong>: Individual peergroups can be created based on previous feedback (Process configuration → Report definition → Peergroups). Examples include the previous year's wave or focus person in a similar position.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015039058834">
+</li>
+</ul>
+</li>
+<li>Confirm with Add wave.</li>
+</ol>
+<p><em>*A status change for the participants of a specific wave at a given date can be specified beforehand.</em></p>
+<p><strong>Creating Focus Persons</strong></p>
+<ol>
+<li>Return to the menu Participant administration → Wave.</li>
+<li>Click on the title of the desired wave to open the focus person overview.</li>
+<li>Click on Add focus person.</li>
+<li>Enter the master data. If the focus person is already registered in the system (e.g., from participant pool data), use the magnifying glass to find them and click Add participants to insert the data.</li>
+<li>Optionally, specify process data for the current feedback.</li>
+<li>Confirm with Add focus person. The focus person is created and displayed in the overview.</li>
+</ol>
+<p><strong>Creating Feedback Providers</strong></p>
+<ol>
+<li>In the overview, click on the name of the desired focus person.</li>
+<li>The selected focus person’s feedback provider overview is opened. At this stage, it contains only the focus person in the "self-assessment" role.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015069101714">
+</li>
+<li>Click on Add feedback provider.</li>
+<li>Enter the master data. If the feedback provider is already registered in the system (e.g., from participant pool data), use the magnifying glass to find them and click Add participants to insert the data.</li>
+<li>Optionally, specify process data for the current feedback.</li>
+<li>Confirm with Add participant. The feedback provider is created and displayed in the overview.</li>
+<li>Repeat the process for all feedback providers of the current feedback constellation.</li>
+</ol>
+<h2 id="h_01HGKSMPRV8YBGX9YJHWQX0QXJ">Defining Feedback Constellations By Import</h2>
+<div class="flex-shrink-0 flex flex-col relative items-end">
+<div>
+<div class="pt-0">
+<div class="gizmo-bot-avatar flex h-8 w-8 items-center justify-center overflow-hidden rounded-full">
+<div class="relative p-1 rounded-sm flex items-center justify-center bg-token-main-surface-primary text-token-text-primary h-8 w-8">Usually, you will not create individual participants manually but rather import a list of

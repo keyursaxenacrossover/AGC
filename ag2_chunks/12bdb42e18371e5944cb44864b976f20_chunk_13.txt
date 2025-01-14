@@ -1,0 +1,94 @@
+ filtering via content from the participant administration. Produces all texts that contain the entered text element, for example when filtering for “cd” “abcde” will also be filtered out. Filtering is case sensitive, blank spaces will be regarded as an incorrect entry. Umlauts can be used.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 152.083px;">
+<p>contains any</p>
+</td>
+<td style="width: 148.472px;">
+<p>contains any</p>
+</td>
+<td style="width: 365px;">
+<p>Firstly, you can use this condition to check whether an entry contains one of several specified elements. Example: Entering “22” would fulfill the condition “contains any = 11,<strong>22</strong>,33”, whereas entering “123” or “122” would not. Secondly, you can use this condition to identify a specific element in an entry that consists of multiple elements, such as a phone number. Example: Entering “0229-<strong>1234</strong>” would fulfill the condition “contains any = 1234”, whereas entering “0229-12345” would not. Acceptable separators are comma, apostrophe, “- “ and “|”.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 152.083px;">
+<p>matches regex</p>
+</td>
+<td style="width: 148.472px;">
+<p>matches regex</p>
+</td>
+<td style="width: 365px;">
+<p>Regular expressions can be used in the filter condition. They must be enclosed in slashes.</p>
+<p>The following check, for example, allows to detect 98% of mobile devices: /Mobile|iP(hone|od|ad)|Android|Black-Berry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/</p>
+</td>
+</tr>
+<tr>
+<td style="width: 152.083px;">
+<p>in</p>
+<p>(for employee surveys)</p>
+</td>
+<td style="width: 148.472px;">
+<p>in</p>
+</td>
+<td style="width: 365px;">
+<p>The variable selected must contain the organizational unit named in the “code” field.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 152.083px;">
+<p>in or below</p>
+<p>(for employee surveys)</p>
+</td>
+<td style="width: 148.472px;">
+<p>in or below</p>
+</td>
+<td style="width: 365px;">
+<p>The variable selected must contain either the unit named in the “code” field or one of its subunits.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 152.083px;">
+<p>in branch</p>
+<p>(for employee surveys)</p>
+</td>
+<td style="width: 148.472px;">
+<p>in branch</p>
+</td>
+<td style="width: 365px;">
+<p>The variable selected must contain either the unit named in the “code” field or any other unit from the complete branch (from the root unit down to the lowest level). This operator is usually not used for routing purposes in the questionnaire but for report definitions.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 class="wysiwyg-text-align-justify"> </h3>
+<h3 id="basic-steps" class="wysiwyg-text-align-justify">Basic steps</h3>
+<p class="wysiwyg-text-align-justify">The basic steps to creating a trigger are identical for all trigger types:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Create a questionnaire page.</p>
+</li>
+<li>
+<p>Create a question of the type of your choice.</p>
+</li>
+<li>
+<p>Select the desired trigger type.</p>
+</li>
+<li>
+<p>Specify the execution position.</p>
+</li>
+<li>
+<p>Select the variable (question) with which you want to associate the trigger.</p>
+</li>
+<li>
+<p>Specify the answer value at which the trigger is to be activated.</p>
+</li>
+<li>
+<p>Specify the trigger’s detail properties (select a mail template, etc.)</p>
+</li>
+</ul>
+<h3 id="example-using-a-trigger-for-sending-feedback-mails" class="wysiwyg-text-align-justify">Example: Using a Trigger for Sending Feedback Mails</h3>
+<p class="wysiwyg-text-align-justify">In many questionnaires, it is considered polite to have a final open-ended question at the end of the questionnaire and ask the respondent if they have anything else to say. Especially if you design a survey in the form of a conversation, it is to be expected that not all the thoughts the respondent has developed while answering the questionnaire will be revealed with the help of closed-ended questions. In order to give the respondent the opportunity to round off the conversation from their point of view, they are allowed to enter information. The survey manager has this sent to himself directly in order to have the option of reacting directly to events in the field.</p>
+<p class="wysiwyg-text-align-justify">Below, a mail trigger for a personalized survey is created to trigger the dispatch of such a participant's comment to the survey manager.</p>
+<h3 id="creating-a-mail-trigger" class="wysiwyg

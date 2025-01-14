@@ -1,0 +1,40 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K" class="wysiwyg-text-align-justify">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article covers three main topics: Messages between panelists, Quick Polls, and Tasks. It provides detailed information on how to set up and manage these features in an EFS panel environment.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">This guide focuses on enhancing panel communication and engagement through private messaging, quick polls, and customizable tasks. It provides step-by-step instructions for moderators and administrators to implement and manage these features effectively.</p>
+<ul>
+<li><a href="#messages-from-panelists-to-panelists">Messages From Panelists to Panelists</a></li>
+<li><a href="#reporting-spam">Reporting Spam</a></li>
+<li><a href="#quick-polls">Quick Polls</a></li>
+<li><a href="#tasks">Tasks</a></li>
+</ul>
+<h1 id="messages-from-panelists-to-panelists" class="sc-chbbiW dCajGG wysiwyg-text-align-justify">Messages From Panelists to Panelists</h1>
+<p class="wysiwyg-text-align-justify">Community panels are characterized by the fact that panelists may not only communicate with the moderator but also among themselves. For this, EFS provides a variety of channels such as forums, discussions, chats, and blogs. You can also enable your panelists to send each other private messages via e-mail.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>The messages are entered into a form on the website.</li>
+<li>The addressees can read the messages on a special panel page; additionally, the messages are sent via e-mail.</li>
+<li>The messages sent via e-mail are embedded in an accompanying text that you can define via a mail template.</li>
+<li>For reasons of privacy, it is possible to write only to panelists who have explicitly agreed to receive private messages.</li>
+<li>As a moderator, you can use the messaging functionality as well, of course. If you want to address panelist groups instead of individual persons, a dedicated feature in the admin allows you to post messages on the panel website without dispatching emails.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Work steps</strong></p>
+<p class="wysiwyg-text-align-justify">In order to use the function for sending private messages, please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Adapt the default mail template.</li>
+<li>Create function modules for entry form and list of messages received.</li>
+<li>Configure the visibility options and/or allow them to be edited by the panelists.</li>
+<li>Integrate panelist messages into the website.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The necessary operations will be explained in detail in the following chapters.</p>
+<h2 id="adapting-the-default-mail-template-with-accompanying-text" class="wysiwyg-text-align-justify"><strong>Adapting the Default Mail Template With Accompanying Text</strong></h2>
+<p class="wysiwyg-text-align-justify">The messages are not only displayed on a special panel page but also sent via e-mail. These e-mails are dispatched from a panel domain. They usually contain not just the actual text of the message, but also an accompanying text by the panel operator. Here you can, for example, indicate that this is a personal message, or you can include an e-mail address to contact in case this function has been misused.</p>
+<p class="wysiwyg-text-align-justify">The properties of these mails are defined, as is the case with many other EFS features, via a mail template which is then linked to from the function module. In new panels, you can find a default template “Message from panelist to panelist”: all you need to do is to adapt this template for your panel and reference it from the “Send private messages to panelists” page module on the “Send messages” page.</p>
+<p class="wysiwyg-text-align-justify">Please note:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>The template should be of the “standard mail” type.</li>
+<li>For the sender, you should use a dedicated e-mail address of the panel domain. Please note that it is not possible to dynamically insert different sender addresses. In particular, it is not possible to use the e-mail addresses of the mailing panelists.</li>
+<li>The following wildcards can be used:<br>– #sender_u_firstname#: The sender’s first name<br>– #sender_u_name#: The sender’s last name<br>– #message_title#: The message header<br>– #message_text#: The message text</li>
+<li>The template should always mention an e-mail address or contact form for abuse cases.</li>
+</ul>
+<h2 id="configuring-the-visibility-options" class="wysiwyg-text-align-justify"><strong>Configuring the Visibility Options</strong></h2>
+<p class="wysiwyg-text-align-justify">For reasons of privacy, it is possible to write only to panelists who have explicitly agreed to receive private messages, i.e. the visibility option “Receive private messages” must be

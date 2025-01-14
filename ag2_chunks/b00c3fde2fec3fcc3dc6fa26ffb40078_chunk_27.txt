@@ -1,0 +1,123 @@
+td>
+<td style="width: 176.597px;">
+<p>delete_plausichecks</p>
+</td>
+<td style="width: 435.521px;">
+<p>This action will delete all plausibility checks in the selected project.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 138.438px;">
+<p>Delete all pretest comments</p>
+</td>
+<td style="width: 176.597px;">
+<p>delete_pretest</p>
+</td>
+<td style="width: 435.521px;">
+<p>This action deletes all pretest comments of the current project.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 138.438px;">
+<p>Delete all type checks</p>
+</td>
+<td style="width: 176.597px;">
+<p>delete_type_checks</p>
+</td>
+<td style="width: 435.521px;">
+<p>This action will delete all types of checks that have been defined in the project's questionnaire. The questions will not be deleted.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 138.438px;">
+<p>Enable advanced completeness checks</p>
+</td>
+<td style="width: 176.597px;">
+<p>toggle_hardcore_dacs</p>
+</td>
+<td style="width: 435.521px;">
+<p>With this action you can configure all completeness checks (DACs) in the survey to check for every answer category of type "answer option + text" if the related text field has also been filled in by the respondent.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 138.438px;">
+<p>Enable/disable debugging features in the survey</p>
+</td>
+<td style="width: 176.597px;">
+<p>toggle_debug</p>
+</td>
+<td style="width: 435.521px;">
+<p>This option activates or deactivates the debug features that can be used in a survey.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 138.438px;">
+<p>Enable deselectable<br>radio buttons</p>
+</td>
+<td style="width: 176.597px;">
+<p>apply_triple_state</p>
+</td>
+<td style="width: 435.521px;">
+<p>With this action, you can configure all radio buttons in all single response questions of the survey to be deselectable. That means answers in single response questions can be deselected again by clicking the selected radio button again. This feature will only work for participants that have JavaScript enabled</p>
+</td>
+</tr>
+<tr>
+<td style="width: 138.438px;">
+<p>Export participant codes</p>
+</td>
+<td style="width: 176.597px;">
+<p>export_participants</p>
+</td>
+<td style="width: 435.521px;">
+<p>This action allows you to export participant codes and disposition codes from the current project into a CSV file. You can select the disposition codes for which the participant codes will be exported. The #PID# wildcard in the file name will be replaced with the current project ID.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 138.438px;">
+<p>Export pretest comments</p>
+</td>
+<td style="width: 176.597px;">
+<p>export_pretest</p>
+</td>
+<td style="width: 435.521px;">
+<p>This action exports all pretest comments of the survey into a Microsoft Excel file.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 138.438px;">
+<p>Export questionnaire as XML file</p>
+</td>
+<td style="width: 176.597px;">
+<p>export_project</p>
+</td>
+<td style="width: 435.521px;">
+<p>This action exports the questionnaire as an XML file. You can select which subdirectories of the project directory will be exported. The #PID# wildcard in the file name will be replaced with the current project ID.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 138.438px;">
+<p>Import participant codes</p>
+</td>
+<td style="width: 176.597px;">
+<p>import_codes</p>
+</td>
+<td style="width: 435.521px;">
+<p>This action allows you to import participant codes from a file into participant administration. Each row of the file is interpreted as one code. Therefore, the file should not contain a header. A participant is created for each code. The remaining participant data (e.g. name, password) are set automatically.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 138.438px;">
+<p>Import participants</p>
+</td>
+<td style="width: 176.597px;">
+<p>import_participants</p>
+</td>
+<td style="width: 435.521px;">
+<p>This action allows you to import participants from a CSV file into participant administration. The first row of the CSV file must contain the column headings.<br>Based on the column headings, an automatic assignment to the participant data saved in participant administration is performed. Columns that have not been recognized are skipped. The following column names can be used: u_account, u_passwd, u_firstname, u_name, u_street, u_zip, u_city, u_phone, u_email, u_www, u_address, u_country, u_other_id.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 138.438px;">
+<p>Import wildcards</p>
+</td>
+<td style="width: 176.

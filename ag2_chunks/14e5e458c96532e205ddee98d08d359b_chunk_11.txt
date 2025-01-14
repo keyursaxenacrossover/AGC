@@ -1,0 +1,41 @@
+ 3px; vertical-align: middle; width: 37.1859%;">if the installation started as an OPST 4.0, please use a value of 4.0 here. If it started as a 5.3, please use 5.3 etc.</td>
+<td style="padding: 2px 3px; vertical-align: middle; text-align: right; width: 15.536%;">10.8</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;">no</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;">no</td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">elasticsearch_configuration</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">Enter hosts and ports your elasticsearch configuration.</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;"> </td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 15.536%;">array ( 'connections' =&gt; array ( 0 =&gt; array ( 'host' =&gt; 'elasticsearch', 'port' =&gt; 9200, ), ), 'retryOnConflict' =&gt; 5, )</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;">no</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;">yes</td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">elasticsearch_enabled</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">Enable elasticsearch for this installation?</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;">false, true</td>
+<td style="padding: 2px 3px; vertical-align: middle; text-align: center; width: 15.536%;">TRUE</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;">no</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;">yes</td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">enable_watermark</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">enable watermark in surveys, for demo installations</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;">false, true</td>
+<td style="padding: 2px 3px; vertical-align: middle; text-align: center; width: 15.536%;">FALSE</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;">no</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;">no</td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">error_dump</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">activate this to get errors displayed on screen immediately. As errors get printed out directly, this might break both layout and functionality. Never use this on production installations. Only use for development</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;">false, true</td>
+<td style="padding: 2px 3px; vertical-align: middle; text-align: center; width: 15.536%;">FALSE</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;">no</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;">no</td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">error_logfile</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">put in the absolute filename of an error log file in here. the file must be accessible by all EFS front ends (i.e. put it in NFS) and writable by the web server &amp; CLI users. Never use this on production installations as this logfile might get very big, will not be rotated and is not race-condition safe etc. Only use for development!!</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;"> </

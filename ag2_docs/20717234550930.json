@@ -1,0 +1,30 @@
+{
+    "id": 20717234550930,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/20717234550930.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20717234550930-Ingestion-Service",
+    "author_id": 369584192734,
+    "comments_disabled": false,
+    "draft": true,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20714711445138,
+    "created_at": "2024-08-12T20:29:27Z",
+    "updated_at": "2024-08-12T20:29:30Z",
+    "name": "Ingestion Service",
+    "title": "Ingestion Service",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-08-12T20:29:30Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075294,
+    "content_tag_ids": [],
+    "label_names": [],
+    "body": "<p><b>Original Confluence URL:</b> <a href=\"https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3806265373\">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3806265373</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>\n\n<h2>Table of Contents</h2>\n<ul class=\"toc\">\n<ul>\n<li><a href=\"#header-1\">Purpose:</a></li>\n<ul>\n<li><a href=\"#header-3\">Workflows</a></li>\n<ul>\n<li><a href=\"#header-5\">User Import</a></li>\n<li><a href=\"#header-6\">User Creation / Update / Delete</a></li>\n</ul>\n</ul>\n</ul>\n</ul><h1 id=\"header-1\">Purpose:</h1><ul>\n<li><p>Abstract from the specific identity provider implementation</p></li>\n<li><p>Abstract process synchronicity</p></li>\n<li><p>Take users from several sources</p></li>\n<li><p>Handle bulk requests</p></li>\n<li><p>Optimize user synchronizitation</p></li>\n</ul><p></p><h2 id=\"header-3\">Workflows</h2><h3 id=\"header-5\">User Import</h3><ul>\n<li><p>Get user messages from kafka, either bulk or single with import flag set</p></li>\n<li><p>gets import process ID</p></li>\n<li><p>filter users based on the users that already exist in the identy provider and did not receive and update</p></li>\n<li><p>collect users and send them in bulks to the identity provider</p></li>\n<li><p>regularly send back the amount of synced users and also the amount of failed users within this import process ID</p></li>\n<li><p>keep track of rate limits</p></li>\n</ul><p></p><h3 id=\"header-6\">User Creation / Update / Delete</h3><ul>\n<li><p>get user messages from kafka</p></li>\n<li><p>put such requests in a higher priority</p></li>\n<li><p>send back an error in case an error occured</p></li>\n<li><p>send back a success message?</p></li>\n</ul>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

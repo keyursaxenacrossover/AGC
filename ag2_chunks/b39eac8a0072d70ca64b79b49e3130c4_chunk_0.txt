@@ -1,0 +1,75 @@
+<h1 id="h_01J6Q7GE0X2RREHM2306FEV0WM">Overview</h1>
+<p>This guide will help you activate the Dashbo feature in the EFS platform. If you are a system administrator and need to enable Dashbo, follow these steps to ensure proper activation. This process involves logging into the EFS installation as 'root' and making necessary configuration changes in the platform's system settings.</p>
+<p> </p>
+<h2 id="header-1">Activate Dashbo in EFS</h2>
+<p>Please log into EFS installation as ‘root’ and go to “<em>System &gt;&gt; Options &gt;&gt; Platform cockpit &gt;&gt; root only:: System configuration</em>” and edit config.</p>
+<p>Proceed following checklist and add it (checked and lines that do not apply removed) as comment to the ticket.</p>
+<p> </p>
+<p>Dashbo activation check list:</p>
+<pre><code class="language-text">&gt;**Dashbo activation (EFS)**
+
+- Cluster: `Prod-DE|US-03/Sandbox-DE-02`
+- Technical name (_EFS_): `{{TECHNICALNAME}}`
+- Technical name (_DataVoyager_): `{{TECHNICALNAME}}` (if not specified explicitly use multi tenant DV dv-gj2034-no1)
+
+**EFS Config:**
+
+Set here: "`System &gt;&gt; Options &gt;&gt; Platform cockpit &gt;&gt; gq only:: System configuration`"
+
+[] Set config variable '`portal_dashboard_service_url`'
+- Set value (_Prod-DE-03_): '`http://dashboard-bff.global-service-dashboard.svc.cluster.local`'
+- Set value (_Sandbox-DE-02_): '`https://api.dashboard.global-service.sandbox-de-02.customervoice360.com`'
+- Set value (_DEVQA_): '`https://api.dashboard.qa.dev-us-01.customervoice360.com`'
+
+[] Set config variable '`portal_dashboard_frontend_url`'
+- Set value (_Prod-DE-03_): '`https://dashboard.global-service.prod-de-03.customervoice360.com`'
+- Set value (_Sandbox-DE-02_): '`https://dashboard.global-service.sandbox-de-02.customervoice360.com`'
+- Set value (_DEVQA_): '`https://dashboard.qa.dev-us-01.customervoice360.com`'
+
+[] Set config variable '`kafka_brokers`'
+- Set value (_Prod-DE-03_): '`b-1.prodde03.kol723.c8.kafka.eu-central-1.amazonaws.com:9092,b-2.prodde03.kol723.c8.kafka.eu-central-1.amazonaws.com:9092,b-3.prodde03.kol723.c8.kafka.eu-central-1.amazonaws.com:9092`'
+- Set value (_Sandbox-DE-02_): '`b-2.sandbox-msk-cluster.fmghq0.c3.kafka.eu-central-1.amazonaws.com:9092,b-3.sandbox-msk-cluster.fmghq0.c3.kafka.eu-central-1.amazonaws.com:9092,b-1.sandbox-msk-cluster.fmghq0.c3.kafka.eu-central-1.amazonaws.com:9092`'
+- Set value (_DEVQA_): '`b-1.dev-qa-msk-cluster.fhe9ir.c1.kafka.us-east-1.amazonaws.com:9092,b-2.dev-qa-msk-cluster.fhe9ir.c1.kafka.us-east-1.amazonaws.com:9092,b-3.dev-qa-msk-cluster.fhe9ir.c1.kafka.us-east-1.amazonaws.com:9092`'
+
+[] Set config variable '`kafka_topic_guide_wave`'
+- Set value (_Prod-DE-03_): '`prod-de-03-bff.efs.guide`'
+- Set value (_Sandbox-DE-02_): '`sandbox-de-02-bff.efs.guide`'
+- Set value (_DEVQA_): '`qa-default.qa-env-dashboard-bff.efs.guide`'
+
+[] Set config variable '`kafka_topic_survey_collection`'
+- Set value (_Prod-DE-03_): '`prod-de-03-surveyresponses`'
+- Set value (_Sandbox-DE-02_): '`sandbox-de-02-surveyresponses`'
+- Set value (_DEVQA_): '`qa-surveyresponses`'
+
+[] Set config variable '`kafka_topic_survey_updates`'
+- Set value (_Prod-DE-03_): '`prod-de-03-updatesurveyresponses`'
+- Set value (_Sandbox-DE-02_): '`sandbox-de-02-updatesurveyresponses`'
+- Set value (_DEVQA_): '`qa-updatesurveyresponses`'
+
+[] Set config variable '`survey_collection_kafka_publishing_enabled`' (True by default)
+- Set value: `true`
+
+[] Set config variable '`guide_kafka_publishing_enabled`' (True by default)
+- Set value: `true`
+
+[] Set config variable '`general_kafka_publishing_enabled`'
+- Set value: `true`
+
+[] Set config variable '`portal_dashboard_service_enabled`'
+- Set value `true`
+
+**DataVoyager Config:**
+
+Set here: "Configuration (root)"
+
+[] Set config variable '`oat.kafka.enabled`'
+
+- Set value (Current): `Yes`
+
+[] Add _Data Source_
+
+[] Get DB details here:
+
+Execute here: `{{INSTALLATIONPATHHTDOCS}}$`
+
+- Execute: `grep -P '^\$__db' conf/config.inc.php3 | awk -F"=" '{print $1":",$2}' | sed

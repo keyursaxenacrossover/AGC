@@ -1,0 +1,74 @@
+wyg-text-align-justify">The three report types are used for reporting purposes. Among other things, they differ in the choice of the focus unit:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>A virtual unit can be defined as a focus unit for the Ad hoc report.</li>
+<li>The Standard Report is utilized to order individualized reports for several focus units simultaneously. By the means of the select box you have the possibility to order reports for all the sub units at the same time.</li>
+<li>For the condition-based Report, you select more than one focus unit by using property filters, You can define up to three filters.</li>
+</ul>
+<h3 id="the-report-table" class="sc-lhVmIH iJLaKb wysiwyg-text-align-justify"><strong>The report table</strong></h3>
+<p class="wysiwyg-text-align-justify">Under the tab <strong>Reports</strong>, in the center of the front page, you will find the report table that lists each report ordered for a unit. An order can consist of several reports. In the header of this table you find the column headings sorted by:</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013838138642" alt="The report table.png"></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Report Name</li>
+<li>Report Definition tile</li>
+<li>Order ID</li>
+<li>Unit</li>
+<li>Type</li>
+<li>Updated</li>
+<li>Status</li>
+</ul>
+<p class="wysiwyg-text-align-justify">"Status" is subdivided into:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Created</li>
+<li>Calculating</li>
+<li>Rendering</li>
+<li>Ready</li>
+<li>Failed</li>
+<li>Retry</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If report generation fails for the first time, the button <strong>Retry</strong> appears in the column "Status". Clicking on it opens a modal that informs you about the details of the failed generation. As soon as the generation fails three times, the report changes from the status "Retry" to the status "Failed".</p>
+<p class="wysiwyg-text-align-justify">Via mouseover, the line of the respective report is highlighted. So you are able to select one of the three options: the immediate download of the PPTX file and/or the PDF file, the deletion, and the distribution of the reports.</p>
+<p class="wysiwyg-text-align-justify">The table has the following functions:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Checkboxes allow you to check the reports either individually or as a complete selection. The selected reports can be deleted, downloaded, or distributed using the selection box <strong>Select an action</strong>.</li>
+<li>The operation <strong>Type</strong> can be used to filter by the ordered report types.</li>
+<li>The search function allows you to search for the meta name and the report name.</li>
+<li>You can use the refresh button to update the table.</li>
+</ul>
+<h3 id="the-report-order-table" class="sc-lhVmIH iJLaKb wysiwyg-text-align-justify"><strong>The report order table</strong></h3>
+<p class="wysiwyg-text-align-justify">A further table can be found under<strong> Report Orders</strong>. This table lists the report orders made. An order may contain several reports. The orders are sorted by:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Order ID</li>
+<li>Report Definition Name</li>
+<li>Report Definition ID (optional)</li>
+<li>Order Type (optional)</li>
+<li>Order Date (optional)</li>
+<li>Ordered by (optional)</li>
+<li>Order State (optional)</li>
+<li>Total Reports</li>
+<li>Created (optional)</li>
+<li>Retry (optional) </li>
+<li>Calculating (optional)</li>
+<li>Rendering (optional)</li>
+<li>Converting (optional)</li>
+<li>Completed (optional)</li>
+<li>Failed (optional)</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013838138002" alt="Report order table.png"></p>
+<p class="wysiwyg-text-align-justify"><strong>You can use the following functionalities:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>You click on the refresh button to update the table.</li>
+<li>You can scroll using the scroll bar.</li>
+<li>You can also show and hide columns using the table icon.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Each order has one of the statuses that you can find in the column "Order state":</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Created</li>
+<li>Paused</li>
+<li>In Progress</li>
+<li>In Cancellation</li>
+<li>Cancelled</li>
+<li>Done</li>
+<li>Deleted</li>
+</ul>
+<p class="auto-cursor-target wysiwyg-text-align-justify">Initially, every order is set to the status "Created".</p>
+<h3 id="the-report-order

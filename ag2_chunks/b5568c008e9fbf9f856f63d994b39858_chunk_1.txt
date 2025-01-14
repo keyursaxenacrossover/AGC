@@ -1,0 +1,62 @@
+ (LAST hat keine Nummer).<br>-f → force installation into ROM if it currently is not in ROM</p><p>Im Beispiel 0004_1 für latest TEST. Es kann sein, dass hier mehrere BUILDS mit der gleichen Nummer liegen.</p><p>If so the latest is automatically selected.</p><p></p><h3 id="header-7"><strong>18.4 auf 19.1</strong></h3><ac:rich-text-body><ul><li><p><strong>Upgrading from <span style="color: rgb(255,86,48);">18.4</span> to <span style="color: rgb(255,86,48);">19.1</span> the PHP version changes. The ticket has to be forwarded to Sysadmins again for them to adjust the Cron Jobs!</strong></p></li></ul></ac:rich-text-body><ul>
+<li><p>Check in <a href="http://salt01.bre.globalpark.de/repo/SG.html">Salt</a> if all aliases of this installation are members of service groups running PHP 5.6.x .</p></li>
+<li>
+<p>For the ROM to complete correctly, the config.inc.php3 has to be adjusted for this upgrade.</p>
+<pre><code class="language-bash">cd /nfs/opstXX/ab1234.customervoice360.com/htdocs/conf
+vi config.inc.php3</code></pre>
+</li>
+<li>
+<p>The following code lines have to be added: <br></p>
+<pre><code class="language-php">/******* neccessary for the ROM to work with EFS &gt;= 19.1 *******/
+$__php56=true;</code></pre>
+</li>
+<li>
+<p>In the Plattform Cockpit of the installation, change the php_path to PHP 5.6</p>
+<ul>
+<li><p>from: /opt/pdp/opst/apps/php-5.3.6/bin/</p></li>
+<li><p>to: /opt/pdp/opst/apps/php56/bin/</p></li>
+</ul>
+</li>
+</ul><h3 id="header-8"><strong>19.4 auf 19.5</strong></h3><ul>
+<li><p>check if both dbmaster and slave have en<ac:inline-comment-marker ac:ref="1bab59f5-1f98-4b48-96f1-b8c86b969928">ough space left</ac:inline-comment-marker>:</p></li>
+<li>
+<p>login to salt, go to scripts folder</p>
+<pre><code class="language-text">ssh salt
+cd /opt/pdp/saltserver/scripts</code></pre>
+</li>
+</ul><ul>
+<li><p>you can run the check for single installation or source the installations from a list [installationnames to check].txt (further below)</p></li>
+<li><pre><code class="language-text">sudo ./get_upgrade_info.sh -Iab1234 (-I for info, ab1234 instname)</code></pre></li>
+<li><p>for batch lookup you need a list with installationnames/installation schema, both cases possible (with customervoice360.com or without)</p></li>
+<li>
+<p>create a list [i<ac:inline-comment-marker ac:ref="6e951606-f03f-4b10-828b-dd8e6f8bbd92">nstallationnames to check</ac:inline-comment-marker>].txt in your home folder</p>
+<pre><code class="language-text">[ab1234]
+[cd5678]
+...
+[yz9876]</code></pre>
+<pre><code class="language-text">[ab1234].customervoice360.com
+[cd5678].customervoice360.com
+...
+[yz9876].customervoice360.com</code></pre>
+</li>
+<li>
+<p>run the script for batch lookup, replace [ ] with actual values</p>
+<pre><code class="language-text">sudo /opt/pdp/saltserver/scripts/bulk_get_upgrade_info.sh /home/[current user]/[installationnames to check].txt</code></pre>
+</li>
+<li><p>If enough space is there, the returned numbers have a green color. If not, they are red.</p></li>
+</ul><p>For the Upgrade:</p><ul><li>
+<p>connect to salt:</p>
+<pre><code class="language-text">ssh salt
+cd /opt/pdp/saltserver/scripts</code></pre>
+</li></ul><ac:rich-text-body><p><strong>get an overview for all steps needed, Usage:  -I&lt;Installation short name&gt;</strong></p>
+<ul><li>
+<pre><code class="language-text">sh mysql2innodb_commands.sh -Iab1234</code></pre>
+<p>follow the 13 steps given here</p>
+</li></ul></ac:rich-text-body><div class="expand-macro">
+<h4 string="manual steps listed for information"></h4>
+<ul>
+<li>
+<p>if you wish to see which installations are currently under maintenance:</p>
+<pre><code class="language-text">sudo ./maintananceStatus.sh</code></pre>
+</li>
+<li><p>disable <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Monitoring - Nagios, Pingdom" ri:version-at-save="4"></ri:page><ac:link-body>Monitoring - Nagios, Pingdom</

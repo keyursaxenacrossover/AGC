@@ -1,0 +1,126 @@
+: 79px;">
+<p>Single response, matrix, simple recoding</p>
+</td>
+<td style="width: 273.785px; height: 79px;">
+<p>The sum of the individual values of a data bundle is divided by their number.</p>
+</td>
+</tr>
+<tr style="height: 105px;">
+<td style="width: 133.941px; height: 105px;">
+<p>Median</p>
+</td>
+<td style="width: 89.7917px; height: 105px;">
+<p>x</p>
+</td>
+<td style="width: 70.8681px; height: 105px;">
+<p>x</p>
+</td>
+<td style="width: 174.948px; height: 105px;">
+<p>Single response, matrix, simple recoding</p>
+</td>
+<td style="width: 273.785px; height: 105px;">
+<p>The middle value of a data bundle is ordered by size, i.e., that value below and above which there is the same number of data values.</p>
+</td>
+</tr>
+<tr style="height: 381px;">
+<td style="width: 133.941px; height: 381px;">
+<p>Quantile</p>
+</td>
+<td style="width: 89.7917px; height: 381px;">
+<ul>
+<li>
+<p> </p>
+</li>
+</ul>
+</td>
+<td style="width: 70.8681px; height: 381px;">
+<p>x</p>
+</td>
+<td style="width: 174.948px; height: 381px;">
+<p>Single response,<br>matrix, simple recoding</p>
+</td>
+<td style="width: 273.785px; height: 381px;">
+<p>The value below which lies a specified fraction of the values in a data bundle.</p>
+<ul>
+<li>
+<p>It is stated in terms of so-called p-quantiles. The value of the p-quantile is that value that separates the lower p * 100 percent of the data values of the distribution from the upper (1-p) * 100 percent.</p>
+</li>
+<li>
+<p>p is configurable: p must lie between “0.01” and “1”.</p>
+</li>
+</ul>
+<p>Example: The quantile “0.3” is that value below which there are 30 percent of all cases of a distribution.</p>
+</td>
+</tr>
+<tr style="height: 224px;">
+<td style="width: 133.941px; height: 224px;">
+<p>Onesample t-test</p>
+</td>
+<td style="width: 89.7917px; height: 224px;">
+<ul>
+<li>
+<p> </p>
+</li>
+</ul>
+</td>
+<td style="width: 70.8681px; height: 224px;">
+<p>x</p>
+</td>
+<td style="width: 174.948px; height: 224px;">
+<p>Single response, matrix</p>
+</td>
+<td style="width: 273.785px; height: 224px;">
+<p>A one-sample location test of whether the mean of a normally distributed population has a value specified in a null hypothesis.</p>
+<p>The test value should be a floating number.</p>
+<p>Calculation: ([Mean - test value) / Standard error</p>
+</td>
+</tr>
+<tr style="height: 105px;">
+<td style="width: 133.941px; height: 105px;">
+<p>ttest</p>
+</td>
+<td style="width: 89.7917px; height: 105px;">
+<ul>
+<li>
+<p> </p>
+</li>
+</ul>
+</td>
+<td style="width: 70.8681px; height: 105px;">
+<p>x</p>
+</td>
+<td style="width: 174.948px; height: 105px;">
+<p>Single response, multiple response, matrix</p>
+</td>
+<td style="width: 273.785px; height: 105px;">
+<p>The t-test compares the mean values of two columns in a table, variables will be interpreted as metrically scaled.</p>
+</td>
+</tr>
+<tr style="height: 460px;">
+<td style="width: 133.941px; height: 460px;">
+<p>Weighted mean</p>
+</td>
+<td style="width: 89.7917px; height: 460px;">
+<ul>
+<li>
+<p> </p>
+</li>
+</ul>
+</td>
+<td style="width: 70.8681px; height: 460px;">
+<p>x</p>
+</td>
+<td style="width: 174.948px; height: 460px;">
+<p>Single response, matrix</p>
+</td>
+<td style="width: 273.785px; height: 460px;">
+<p>In a survey with e.g. irregular gender distribution, weighting allows to balance the share of the underrepresented gender.</p>
+<ul>
+<li>
+<p>Please start by creating a recodes definition, selecting the type “Recode for use as a weighting template”.</p>
+</li>
+<li>
+<p>Then, specify recode categories, allocating the desired weight to each category in the top line.</p>
+</li>
+<li>
+<p>Next, open the table editor of the affected question. Insert the option “Weighted average” to the results table. Via the <strong>Edit</strong> icon, you can select

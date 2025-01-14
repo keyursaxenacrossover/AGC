@@ -1,0 +1,121 @@
+local-id="5e8813f2-6262-44ec-b749-7bc381ee74a4" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p>EFS User ID</p></th>
+<th><p>Okta User ID</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p><strong><span style="color: rgb(255,86,48);">empty</span></strong></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="header-28">Future state:</h4>
+<p>Just ignore that the user </p>
+<p><strong><u>EFS - User Table</u></strong></p>
+<table ac:local-id="e83f0edc-d5f1-4d50-b5d8-133cb6b7d2d7" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p>EFS User ID</p></th>
+<th><p>email</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>15</p></td>
+<td><p>user5@tivian.com</p></td>
+<td><p>updated</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><u>Okta - User List</u></strong></p>
+<table ac:local-id="b7390f67-2442-4e01-9210-be92616f125e" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p>Okta User ID</p></th>
+<th><p>email</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>10005</p></td>
+<td><p>user5@tivian.com</p></td>
+<td><p>created and assigned to group etc.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><u>EFS - EFS User to Okta User Mapping</u></strong></p>
+<table ac:local-id="b5bea537-e7f1-487f-86ec-dcaac096c213" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p>EFS User ID</p></th>
+<th><p>Okta User ID</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>15</p></td>
+<td><p>10005</p></td>
+<td><p>created mapping</p></td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="header-30">Case 6</h3><p>The @questback.com user exists in EFS and Okta but the @tivian.com user is already present in Okta (this case will always occur when multiple installations are updated after each other).</p><div class="expand-macro">
+<h4 string="Case 6"></h4>
+<h4 id="header-32">Initial state:</h4>
+<p><strong><u>EFS - User Table</u></strong></p>
+<table ac:local-id="7d1a7c1b-efad-4c31-90e2-8a983742c6b7" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p>EFS User ID</p></th>
+<th><p>email</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>16</p></td>
+<td><p>user6@questback.com</p></td>
+<td><p>-</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><u>Okta - User List</u></strong></p>
+<table ac:local-id="09ecbcb1-43ce-44ab-8b1e-6bb153aa7b57" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p>Okta User ID</p></th>
+<th><p>email</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>10006</p></td>
+<td><p>user6@

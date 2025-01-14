@@ -1,0 +1,48 @@
+<h1 id="h_01J6W9Q0YG2K4NEQMX6QZDGGN8">Overview</h1>
+<p>Either customers or the PS team will reach out to CS to enable custom URL's in the DXI instances.</p>
+<p>They have specific URLs that they want to map to their existing customervoice360.com domains. Additionally, depending on the instance configuration, the domains may need to be added to the <strong>OKTA configuration</strong> so that login via OKTA Single Sign-On (SSO) redirects to the custom URL upon successful login. This requires changes in two separate places: the OKTA configuration and the EFS configuration for each instance.</p>
+<h1 id="h_01J6W9Q0YGRP2HEF8XZ77B9SZE">Solution</h1>
+<p>To enable custom URLs for Discover XI instances and ensure that login via OKTA Single Sign-On (SSO) redirects to the custom URL upon successful login, follow these steps:</p>
+<ol>
+<li>Verify if Okta (Tivian Access) is enabled for the customer <strong>(KB for this will go here)</strong>
+</li>
+<li>Create a SaaS Change Request (example: <a href="https://trilogy-eng.atlassian.net/browse/DXI-68">https://trilogy-eng.atlassian.net/browse/DXI-68</a>) so that required backend changes are done</li>
+<li>Once you get the ticket back from SaaS:
+<ul>
+<li><strong>If Tivian Access/Okta is in use:</strong></li>
+</ul>
+</li>
+</ol>
+<article class="sc-1e2m5fs-0 sc-bds72g-2 bFUyGA" tabindex="0" aria-posinset="19" aria-setsize="-1" data-tour-step-gate-id=":r1ds:" data-test-id="omni-log-comment-item" data-support-suite-trial-tour-aw-id="message" data-support-suite-trial-onboarding-id="message" data-simplified-get-started-tour-id="message" aria-label="Internal note from Ciprian Nastase, 7 minutes ago">
+<div class="sc-bds72g-4 gEYWwX" data-test-id="omni-log-omni-to-ag-comment">
+<div class="sc-bds72g-6 dwxuYM">
+<div class="sc-19le1gu-1 kdKysz">
+<div class="sc-rgtb9i-0 frkDGa" data-test-id="omni-log-item-message">
+<div class="sc-1bbl5go-1 LrqYN" dir="auto" data-test-id="omni-log-message-content" data-originated-from="WebInteraction">
+<div>
+<div class="zd-comment" dir="auto">
+<ol>
+<li style="list-style-type: none;">
+<ul>
+<li style="list-style-type: none;">
+<ol dir="auto">
+<li>Login to Okta (creds are in KeePass for now, they will be migrated into PWState) <a href="https://tivian-admin.okta.com/admin/settings/account" rel="noopener noreferrer">https://tivian-admin.okta.com/admin/settings/account</a>
+</li>
+<li>Navigate to <strong>Applications &gt; Active</strong>
+</li>
+<li>Either scroll through the app list or search for the installation, then click on it</li>
+<li>Once in the app config, click on <strong>Edit</strong> next to the <strong>General Settings</strong><br><img style="aspect-ratio: auto; width: 300px;" src="https://central-supportdesk.zendesk.com/attachments/token/nZAWfEM6p8e211vy0B4FL8Bdq/?name=image.png">
+</li>
+<li>In the Edit screen, scroll lower and click <strong>Add URI</strong> in both <strong>sign in</strong> and <strong>sign out</strong> redirect URL's<br><img style="aspect-ratio: auto; width: 251px;" src="https://central-supportdesk.zendesk.com/attachments/token/xOwSXNnymnO8jVYRH4BVlg2ku/?name=image.png">
+</li>
+<li>Add the custom URL's and <strong>Save</strong><br><img style="aspect-ratio: auto; width: 161px;" src="https://central-supportdesk.zendesk.com/attachments/token/fSN5wpqUAy2tiAgKYLWMsMk2z/?name=image.png">
+</li>
+<li>Now, we shift focus to the actual EFS instance</li>
+<li>Login using <strong>bypass URL</strong> (password in Keepass, user is <a href="mailto:noreply@tivian.com" rel="noreferrer">noreply@tivian.com</a>) </li>
+<li>Navigate to <strong>System &gt; Options &gt; Platform cockpit &gt; [root only] System configuration</strong>
+</li>
+<li>Search for this string: <code>iam_post_logout_redirect_url iam_redirect_url</code><br><img style="aspect-ratio: auto; width: 604px;" src="https://central-supportdesk.zendesk.com/attachments/token/ABlAZkN9w1znI4JkO2wffGDlS/?name=image.png">
+</li>
+<li>Adjust the URL's here as well and <strong>save</strong>
+</li>
+<li>Try to access the instance using the

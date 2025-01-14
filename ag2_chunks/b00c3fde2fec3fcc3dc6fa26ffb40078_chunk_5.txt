@@ -1,0 +1,32 @@
+ senders of unwanted advertising mails (spammers) also frequently use this option to attach greater importance to their e-mails, using this feature may also turn out to be a disadvantage. Some mail clients or mail filters in gateways are set up to simply delete e-mails indicating a (high) priority. Therefore, if you have set a high priority in an invitation mail, be sure to avoid using another priority setting for a reminder mail.</p>
+<p class="wysiwyg-text-align-justify"><strong>Sensitivity</strong></p>
+<p class="wysiwyg-text-align-justify">For recipients using Outlook, you can set the message’s sensitivity.</p>
+<p class="wysiwyg-text-align-justify"><strong>Read confirmation</strong></p>
+<p class="wysiwyg-text-align-justify">Commonly used mail clients support sending automatic read confirmations. Once the recipient opens the e-mail, a message is automatically sent to the recipient you selected (sender or Reply-To). Since this happens automatically, such a read confirmation of course does not mean that the recipient has actually read or even understood your e-mail. It merely indicates that the message has been displayed in the recipient’s mail program. Also, it is not mandatory for a mail client to send a read confirmation. The recipient may also have deactivated this option or deliberately decided not to send a read confirmation for this particular mail. They may nevertheless have read the mail. Also, in particular, in the case of recipients in larger companies, the header line may have been removed by a mail filter.</p>
+<p class="wysiwyg-text-align-justify">Access to the “Read confirmation” option is controlled by the <em>mail_reply</em> right described above in the “Reply-To” section.</p>
+<p class="wysiwyg-text-align-justify">It may well be that you receive read confirmations from recipients whose mail addresses are not stored in your project at all. Some Internet users use e-mail addresses for mere forwarding purposes. In this case, if the recipient sends an automatic read confirmation, the sender indicated in the read confirmation will usually be the mail address at which the Internet user received your mail.</p>
+<p class="wysiwyg-text-align-justify">Some Internet users consider read confirmations a nuisance. If a warning message appears, pointing out that you have requested a read confirmation, this, in particular, can cause uncertainties. For inexperienced recipients, the mere mail text does not make it clear that their client has been prompted to send an automatic reply.</p>
+<p class="wysiwyg-text-align-justify"><strong>Send a mail copy to the sender (without substitutions)</strong></p>
+<p class="wysiwyg-text-align-justify">If this checkbox is ticked, a copy of the e-mail will be sent to the sender. This copy will be sent as the first e-mail of the operation. Any existing wildcards will not be substituted because the sender (administrator) is usually not a survey participant.</p>
+<p class="wysiwyg-text-align-justify">This feature currently only functions for mail submission from a form. In the case of automatic submission, for example of password or welcome emails on a<em> People</em> installation, no copies are sent.</p>
+<p class="wysiwyg-text-align-justify"><strong>Forwarding copies of all mail to additional mail recipients</strong></p>
+<p class="wysiwyg-text-align-justify">You can, for example, within the context of a test forward copies of all mails, which are to be sent out in a dispatch process, to an additional mail recipient. In this process, the wildcards will be replaced and the additional mail recipient will see the mails in the same way as the real recipients<u>.</u></p>
+<p class="wysiwyg-text-align-justify">To do this enter the e-mail address of the additional recipient in the field “Additional mail recipient (CC)” or, if the address should not be visible to other recipients, in the field “Additional hidden mail recipient (BCC)”.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Read rights for <em>mail_cc</em> are required for accessing and using the CC and BCC options.</p>
+</li>
+<li>
+<p>Per default, both fields are empty.</p>
+</li>
+<li>
+<p>If you complete a mail form without read rights for “mail_cc”, i.e. without seeing the CC and BCC options, the fields will be empty i.e. the mails will not be forwarded to additional recipients. If you do not have read rights and use a mail template in which CC or BCC have been defined, the values from the mail template will be used.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The specified recipient will receive the e-mail with wildcard replacements. Depending on the purpose and data protection agreement this could lead to a data protection infringement (e.g. with the dispatch of passwords).</p>
+<p class="wysiwyg-text-align-justify">This feature is intended for use within the context of test processes, in which only a few test persons will be written. Use with larger pools of participants is not recommended, as the amount of mail doubles.</p>
+<p class="wysiwyg-text-align-justify"><strong>Base URL</strong></p>
+<p class="wysiwyg-text-align-justify">The feature “Base URL” allows us to define how wildcards with URL elements (e.g. #url#, #code_complete#) will be filled.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>You can explicitly define the protocol (

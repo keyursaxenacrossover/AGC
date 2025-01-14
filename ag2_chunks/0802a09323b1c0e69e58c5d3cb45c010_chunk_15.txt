@@ -1,0 +1,77 @@
+strong>Default Value</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Activated</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Guide Type</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Number of possible votes per category</p>
+</td>
+<td>
+<p>How many possible votes per category are available for each participant?</p>
+</td>
+<td class="wysiwyg-text-align-center">
+<p>3</p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p>IDEA Guide</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Number of votes to change into actions</p>
+</td>
+<td>
+<p>How many votes trigger an action</p>
+</td>
+<td class="wysiwyg-text-align-center">
+<p>3</p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p>IDEA Guide</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"><strong>Report-Manager Connection</strong></p>
+<p class="wysiwyg-text-align-justify">To generate reports for the <em>Leadership Guide</em> (ME-Guide) via the <em>Report Manager</em>, you must first configure the<em> Report Manager</em> connection. To do this, you’ve to create a new <em>Data Voyager</em> project in the first step.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015136633874" alt="Add project DV.png"></p>
+<p class="wysiwyg-text-align-justify">One guide survey must have been completed before the connection can be configured.</p>
+<p class="wysiwyg-text-align-justify">First, you have to select a data source. You have to assign a title, select the <em>ME-Guide loader,</em> and choose the PE project. Then click <strong>Save</strong> and start creating a <em>Report Manager</em> instance.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015166687890" alt="Leadership Guide RM.png"></p>
+<p class="wysiwyg-text-align-justify">Again you have to assign a title. You have to select the previously created <em>Data Voyager</em> project as a project. After saving, you can start working with the<em> Report Manager</em>. So you create a report definition and complete the mapping. Now you can configure the <em>Report Manager</em> connection.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015136626322" alt="Connection.png"></p>
+<p class="wysiwyg-text-align-justify">You must specify the following options:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>https://myinstallation.com/dv/</p>
+</li>
+<li>
+<p>REST-API ACCESS TOKEN</p>
+</li>
+<li>
+<p>Instance ID of your Report Manager Instance</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Then click <strong>Load Report Definitions</strong>. The connection is first tested by the system before you can select one of the created report definitions.</p>
+<h2 id="configuration-of-the-portals-page-modules" class="wysiwyg-text-align-justify">
+<strong>Configuration of the </strong><em><strong>Portals</strong></em><strong> Page Modules</strong>
+</h2>
+<p class="wysiwyg-text-align-justify">You need to add the page modules <em>Guides</em> and <em>Guides Waves</em> to a created page. In the case of the <em>Ideation Guide</em>, the <em>Voting</em> module must also be configured. Open the <strong>Pages</strong> subnavigation, either create a new page to which you add one or more of the mentioned modules, or add one or more modules to an existing page. Afterwards, you can configure these page modules.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015136623378" alt="Modules.png"></p>
+<h3 id="the-guides-page-module" class="wysiwyg-text-align-justify">
+<strong>The </strong><em><strong>Guides</strong></em><strong> Page Module</strong>
+</h3>
+<p class="wysiwyg-text-align-justify">To configure the <em>Guides</em> page module in the CMS area of portals, open the module configuration by clicking the drop-down arrow.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015136621330" alt="Guides Module.png"></p>
+<p class="wysiwyg-text-align-justify">You have to define to which panel group those who are invited via <em>Guides</em> are

@@ -1,0 +1,35 @@
+>
+</tr>
+<tr style="height: 51px;">
+<td class="wysiwyg-text-align-center" style="width: 20%; padding: 5px; height: 51px;"><strong>Tivian DXI Service Gateways</strong></td>
+<td style="width: 79.8571%; padding: 5px; height: 51px;">
+<p><a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20971568408338" target="_blank" rel="noopener noreferrer">Creating SSH Public Key for DXI Service Gateways</a>; the actual access is provisioned through a <strong>SaaS CR</strong></p>
+<p><a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21139518716562" target="_blank" rel="noopener noreferrer">How to Access and Work with DXI Service Gateways</a></p>
+</td>
+</tr>
+<tr style="height: 296px;">
+<td class="wysiwyg-text-align-center" style="width: 20%; padding: 5px; height: 208px;"><strong>Grafana</strong></td>
+<td style="width: 79.8571%; padding: 5px; height: 208px;">
+<p>The access is tied to your standard Devfactory AD account. All existing agents should have access already. </p>
+<p><strong>Grafana: </strong>Check also <strong><a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21741183591314-Accessing-and-Querying-Grafana-Logs-A-Comprehensive-Guide">Grafana usage hints</a></strong></p>
+<p><a href="https://grafana.prod-de-03.customervoice360.com/login">https://grafana.prod-de-03.customervoice360.com/login</a> <br><a href="https://grafana.prod-us-03.customervoice360.com/login">https://grafana.prod-us-03.customervoice360.com/login</a> <br><a href="https://grafana.bofa-us-01.customervoice360.com/login">https://grafana.bofa-us-01.customervoice360.com/login </a></p>
+<p> </p>
+<p>Azure AD will be used to access Grafana for <strong>Sandbox only</strong>. The access is tied to your Trilogy account, and invite should have been received in your inbox for the matter. This might be a temp setup</p>
+<p><a href="https://grafana.sandbox-de-02.customervoice360.com/login">https://grafana.sandbox-de-02.customervoice360.com/login</a> </p>
+</td>
+</tr>
+<tr style="height: 229px;">
+<td class="wysiwyg-text-align-center" style="width: 20%; padding: 5px; height: 229px;"><strong>Kubernetes/Rancher</strong></td>
+<td style="width: 79.8571%; padding: 5px; height: 229px;">
+<p>Rancher Access allows root access to the Gateway servers for write permissions (ex: <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21210903397138-Adding-and-Activating-Cronjobs-to-DXI-Instances">Activating Cron Jobs</a>)</p>
+<p>The access is tied to your standard Devfactory AD account. All existing agents should have access already. </p>
+<p>Ping product VP if you don't have access (<em>Temp till SFIT is available</em>).</p>
+<p> </p>
+<p><strong>Kubernetes/Rancher:</strong></p>
+<p><a href="https://rancher.prod-de-03.customervoice360.com/dashboard/auth/login">https://rancher.prod-de-03.customervoice360.com/dashboard/auth/login</a> <br><a href="https://rancher.prod-us-03.customervoice360.com/dashboard/auth/login">https://rancher.prod-us-03.customervoice360.com/dashboard/auth/login</a> <br><a href="https://rancher.sandbox-de-02.customervoice360.com/dashboard/auth/login">https://rancher.sandbox-de-02.customervoice360.com/dashboard/auth/login</a> <br><a href="https://rancher.bofa-us-01.customervoice360.com/dashboard/auth/login">https://rancher.bofa-us-01.customervoice360.com/dashboard/auth/login</a> </p>
+</td>
+</tr>
+<tr style="height: 355px;">
+<td class="wysiwyg-text-align-center" style="width: 20%; padding: 5px; height: 355px;"><strong>AWS CloudWatch</strong></td>
+<td style="width: 79.8571%; padding: 5px; height: 355px;">
+<p>This is essential to check DB logs. Note that <span style="color: #212529; font-family: -apple-system, BlinkMacSystemFont, ' Segoe UI' , Roboto, ' Helvetica Neue' , Arial, sans-serif, ' Apple Color Emoji' , ' Segoe UI Emoji' , ' Segoe UI Symbol' , ' Noto Color Emoji' font-size:16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0

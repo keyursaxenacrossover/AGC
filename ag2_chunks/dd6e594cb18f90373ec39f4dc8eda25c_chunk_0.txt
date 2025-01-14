@@ -1,0 +1,48 @@
+<h1 id="h_01J78QJP1MSXHBV222J1E2SSHG">Overview</h1>
+<p>This guide helps you investigate and resolve mail delivery issues within DXI through different systems. New agents can follow this overview to understand the high-level troubleshooting process and then click the links for detailed instructions.</p>
+<ol>
+<li>
+<p><strong>EFS GUI Investigation</strong><br>Start by checking the mail status and customer configurations in the <strong>EFS GUI</strong>. You will <a href="#h_01J7949RSZDW1XGPK9E063SG52">locate the mailing ID</a>, check the <a href="#h_01J794AA4SCCKAA7ADY0MMKB64">mail queue</a>, review <a href="#h_01J794AX0EJW61KWMT8MGN18ZJ">mail configurations</a> and confirm most of the information about individual mails for each recipient within a given mailing ID.<br>👉 <a href="#h_01J78RA1VF65QSS35YQASAT5RG">Go to EFS GUI Investigation</a></p>
+</li>
+<li>
+<p><strong>Service Gateway Access (MariaDB Query)</strong><br>Use the <strong>Service Gateway</strong> to access MariaDB for more in-depth investigation. You can run SQL queries to track individual mail status, failure codes, and other critical details (including the actual mail dispatch date for each recipient, since not on GUI).<br>👉 <a href="#h_01J78YBGZFJ2X1RN6ZZR82WBHC">Go to Service Gateway Access</a></p>
+</li>
+<li>
+<p><strong>Hurricane Server Logs and GUI</strong><br>Further troubleshoot by accessing <strong>Hurricane Server Logs</strong> and using the <strong>Hurricane GUI</strong> to check the mail relay server and account configurations. Enable outbound logging to capture more information if necessary.<br>👉 <a href="#h_01J7943JG3GGY7J7YDC726VRS9">Go to Hurricane Server Logs and GUI</a></p>
+</li>
+<li>
+<p><strong>Checking Cron Jobs in Grafana</strong><br>If emails are stuck or delayed, check <strong>Grafana logs</strong> to verify the status of the cron jobs responsible for mail dispatch (snailmail) and mail status ingestion (jobmaker).<br>👉 <a href="#h_01J79604RA91E8BMHTQ4XWZ7WB">Go to Cron Jobs in Grafana</a></p>
+</li>
+<li>
+<p><strong>RabbitMQ Access for Mail Troubleshooting</strong><br>For rare cases where deeper analysis is required, access <strong>RabbitMQ</strong> to check the status of emails and confirm they have been processed. This step is generally not needed unless other avenues have been exhausted.<br>👉 <a href="#h_01J7968EFFEK122YN48DQ2ZKGE">Go to RabbitMQ Access</a></p>
+</li>
+<li>Special Customizations: <a href="#h_01J9K53NMVD5NP08D5AQKRVPE9">Intervista</a>, <a href="#h_01J9KW4QRRKKW9KMDTY49F90PA">Bofa</a>
+</li>
+</ol>
+<h1 id="h_01J78QJP1M1FQA69FJP33QP041">Solution</h1>
+<h2 id="h_01J78RA1VF65QSS35YQASAT5RG"><strong>1. EFS GUI Investigation</strong></h2>
+<p><strong>Goal:</strong> Start by using the EFS GUI to check mail status and customer configurations related to the issue.</p>
+<ol>
+<li>
+<h4 id="h_01J7949RSZDW1XGPK9E063SG52">
+<strong>Locate mailing ID: </strong>If the customer doesn't share this, you can locate it using 2 paths:</h4>
+<ul>
+<li>If you know the project, Open<code>Project -&gt; Mail report -&gt; select the mailID</code> matching the customer complain (might be by date)</li>
+<li>Otherwise: <code>System -&gt; Options -&gt; Mail Queue</code>, and search for the mailing using the date of any other available information.</li>
+<li>If you still cannot locate the mailing ID, please get back to customer to share more information about the missing mail.</li>
+</ul>
+</li>
+<li>
+<h4 id="h_01J794AA4SCCKAA7ADY0MMKB64"><strong>Check the mails status:<br></strong></h4>
+Once you get the mailing ID, note the following information:
+<ul>
+<li>On the mailings list <strong>dashboard</strong>, you can locate some information about the mailing:<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21238953666962"><br>
+<ul>
+<li>For example, this screenshot indicates the following:
+<ul>
+<li>
+<strong>Total</strong>: 2028 mails should be sent under this mailing ID</li>
+<li>
+<strong>Date</strong>: The planned date and time to start sending this mailing queue.</li>
+<li>
+<strong>Queued</strong>: 1960 are in queue pending

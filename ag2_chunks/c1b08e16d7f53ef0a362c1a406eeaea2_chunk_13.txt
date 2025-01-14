@@ -1,0 +1,217 @@
+>participant device</p>
+</td>
+<td>
+<p>contains the result of the device type check (optional, may be performed at the start of the survey), e.g. smartphone. Refer directly to the software‘s user interface for a list of all identifiable devices.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>participant_brand</p>
+<p>(For EFS 10.7 and later versions)</p>
+</td>
+<td>
+<p>participant_brand</p>
+</td>
+<td>
+<p>participant brand</p>
+</td>
+<td>
+<p>states the brand of device used, e. g. Apple.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>participant_model</p>
+<p>(For EFS 10.7 and later versions)</p>
+</td>
+<td>
+<p>participant_model</p>
+</td>
+<td>
+<p>participant model</p>
+</td>
+<td>
+<p>stathe tes model of the device used, e. g. iPhone 6.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>participant_isbot</p>
+<p>(For EFS 10.7 and later versions)</p>
+</td>
+<td>
+<p>participant_isbot</p>
+</td>
+<td>
+<p>participant is (ro)bot</p>
+</td>
+<td>
+<p>states whether the participant is a robot or a crawler. Regular participants are assigned the value 0.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>participant_continent</p>
+<p>(For EFS 10.7 and later versions)</p>
+</td>
+<td>
+<p>participant_continent</p>
+</td>
+<td>
+<p>participant continent</p>
+</td>
+<td>
+<p>states the participant‘s current location (continent), e. g. Europe</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>participant_country</p>
+<p>(For EFS 10.7 and later versions)</p>
+</td>
+<td>
+<p>participant_country</p>
+</td>
+<td>
+<p>participant country</p>
+</td>
+<td>
+<p>states the participant‘s current location (country, e.g. Great Britain</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>participant_region</p>
+<p>(For EFS 10.7 and later versions)</p>
+</td>
+<td>
+<p>participant_region</p>
+</td>
+<td>
+<p>participant region</p>
+</td>
+<td>
+<p>states the participant‘s current location (region), e.g. Lancashire</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>participant_city</p>
+<p>(For EFS 10.7 and later versions)</p>
+</td>
+<td>
+<p>participant_city</p>
+</td>
+<td>
+<p>participant city</p>
+</td>
+<td>
+<p>states the participant‘s current location (city), e. g. Lancaster</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>quota</p>
+</td>
+<td>
+<p>quota</p>
+</td>
+<td>
+<p>quota</p>
+</td>
+<td>
+<p>Contains the ID of the allocated quota (i.e. the quota selected via allocation mode).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>quota_assignment</p>
+</td>
+<td>
+<p>quota_assignment</p>
+</td>
+<td>
+<p>quota_assignment</p>
+</td>
+<td>
+<p>Contains the IDs of all quotas in which the respective participant has been counted.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>page_history</p>
+</td>
+<td>
+<p>page_history</p>
+</td>
+<td>
+<p>page history</p>
+</td>
+<td>
+<p>Indicates the sequence of invoked pages. The page ID (pgid) displayed in the questionnaire editor beside the individual pages is used.</p>
+<p>The current state of questionnaire processing is minutely recorded in the page history, i.e. the variable <em>page_history</em> will show you the movements of the participants within the questionnaire up to the last viewed page.</p>
+<p>Please note: If a real Back button is activated in the form, and a participant leaves a page using this Back button, this page will be removed from page history.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>hflip</p>
+</td>
+<td>
+<p>hflip</p>
+</td>
+<td>
+<p>hflip</p>
+</td>
+<td>
+<p>Variable for horizontal flipping:</p>
+<ul>
+<li>
+<p>0 = not flipped</p>
+</li>
+<li>
+<p>1 = flipped</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>vflip</p>
+</td>
+<td>
+<p>vflip</p>
+</td>
+<td>
+<p>vflip</p>
+</td>
+<td>
+<p>Variable for vertical flipping:</p>
+<ul>
+<li>
+<p>0 = not flipped</p>
+</li>
+<li>
+<p>1 = flipped</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>javascript</p>
+</td>
+<td>
+<p>javascript</p>
+</td>
+<td>
+<p>jscript</p>
+</td>
+<td>
+<p>Contains the result of the check for JavaScript, which can optionally be performed at the beginning of the survey:</p>
+<ul>
+<li>
+<p>0 = JavaScript switched off</p>
+</li>
+<li>
+<p>Other = Version number (e.g. jscript = “10”

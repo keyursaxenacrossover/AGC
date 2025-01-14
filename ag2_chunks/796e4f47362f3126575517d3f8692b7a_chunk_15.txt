@@ -1,0 +1,42 @@
+-align-justify">
+<div class="sc-bbmXgH inLjth">
+<div class="page view">
+<div class="wiki-content">
+<p>In the case of the <strong>Unit collection</strong>, you pick:</p>
+<p><em>Collection member</em></p>
+<p>You continue with unit properties, result types, or <strong>Dimension</strong>:</p>
+<ul>
+<li>Label</li>
+<li>N</li>
+<li>Return</li>
+<li>Return rate</li>
+<li>Metaname</li>
+<li>View_ID</li>
+<li>Level</li>
+<li>Dimension</li>
+</ul>
+<p>If you continue with unit properties or result types, the term is immediately valid.</p>
+<p>To continue with<strong>Dimension</strong>clickhere.</p>
+<p><strong>Sort order and Loop mode</strong></p>
+<p>In the case of the <strong>Dimension collection</strong>, it is advisable to operate with a paradigmatic example to explain the use of the <strong>Loop mode </strong>and the <strong>Sort order </strong>in the mapping: Comparison of the <strong>Focus unit </strong>with the <strong>Level-up comparison unit</strong>. You define the <strong>Sort order </strong>for the <strong>Dimension collection </strong>on the sub-navigation field <strong>Data </strong>under the tab <strong>Extras </strong>using the following path, for example:</p>
+<p><em>Unit</em>&gt;<em>Focus unit</em>&gt;<em>Collection member</em>&gt;<em>Average</em></p>
+<p>Another project parameter that you define is the <strong>ascending </strong>or <strong>descending </strong>sorting. You choose <strong>descending</strong>. You save them. For mapping on the sub-navigation field <strong>Pages</strong>, this means that the sorting in the background is effective and that the values of the <strong>Level-up comparison unit </strong>are sorted in relation to this sequence. After activating the <strong>Loop mode</strong>, you select the <strong>Dimension collection </strong>and use the following paths to compare the <strong>Focus unit </strong>with the next higher unit.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013850316690" alt="Loop Dimension collection.png"></p>
+<p>For the <strong>Focus unit</strong>, you pick:</p>
+<p><em>Collection member</em> → <em>Units</em> → <em>Focus unit</em> → <em>Average</em></p>
+<p>For the <strong>Level-up comparison unit</strong>, you select:</p>
+<p><em>Collection member</em> → <em>Units</em> → <em>Comparison unit</em> → Internal comparison → <em>Level-up comparison unit</em> → <em>Average</em></p>
+<p class="auto-cursor-target"><em>Information: <span style="color: #333333;">To avoid any irritation that may be caused by the fact that the mean values of the level-up comparison unit are not sorted in descending order, note: The values of the level-up comparison unit are set in relation to the sorting of the mean values of the focus unit. The level-up comparison unit values are output according to the order of the focus unit. The values that can be compared with each other are thus in a row.</span></em></p>
+<p>In the case of th e<strong>Unit collection</strong>, however, this example cannot be retained. as the project parameters change. You define a sort order for the unit collection with the intention of sorting the members of this collection by result type in relation to a question or dimension item.</p>
+<p>A possible picker path is:</p>
+<p><em>Unit</em> → <em>Collection member</em> → <em>Dimension</em> → [<em>selected Dimension</em>] → <em>Average</em></p>
+<p>A sample sorting is:<em>(M) Collection member (D) I would recommend People Company to friends (R) Average</em></p>
+<p>In this case, the sorting is also carried out in descending order. Then save your entries. On the sub-navigation field <strong>Pages</strong>, activate the <strong>Loop mode </strong>and select the created unit collection as a collection. In a column, click on <strong>Create mapping </strong>and map in the same way as the <strong>Sort order </strong>of the <strong>Unit collection</strong>.</p>
+<p>You pick:</p>
+<p><em>Collection member</em> → <em>Dimensio</em>n → [<em>selected Dimension</em>] → <em>Average</em></p>
+<p>A sample mapping is:<em>(D) I would recommend People Company to friends (R) Average</em></p>
+<p>In a new column, select a dimension other than that selected in the sort order in the Inspector so that the values for the unit collection members are sorted according to the <strong>Sort order</strong>, but the values are output for this dimension.</p>
+<p>You pick:</p>
+<p><em>Collection member</em> → <em>Dimension</em> → [<em>another selected Dimension</em>] → <em>Average</em></p>
+<p> </p>
+<div class="table-wrap

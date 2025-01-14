@@ -1,0 +1,53 @@
+<em>EFS</em>. This is of particular importance if you want to use addresses other than your own, e.g. a common mailbox that may be accessed by other staff, as well: For you to be able to select these addresses in the EFS mail form, they must be registered in the system. This function in brief:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The senders’ addresses are managed in the <strong>Libraries</strong> → <strong>Mail templates</strong> → <strong>Mail senders</strong> menu.</p>
+</li>
+<li>
+<p>Optionally, it is possible to enter a real name to be inserted next to the actual email address in the mail subject header. Usually, this is the name of the project owner. Please note that it is not possible to use names in double-byte languages (e.g. Chinese).</p>
+</li>
+<li>
+<p>Which user teams may use or configure a particular sender’s address, is controlled via a specific object right.</p>
+</li>
+<li>
+<p>Which user teams may access the <strong>Mail senders</strong> menu, is controlled via read right for “options”.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">When adding a mail sender an SPF (Sender Policy Framework) check is executed on the sender’s domain to verify it is set up properly in accordance with our recommendations. This helps avoid mail delivery issues causing emails sent by <em>EFS</em> not to be accepted or being incorrectly flagged as spam. A failed SPF check in <em>EFS</em> does not prevent the creation of the mail sender address and sending mails with these senders is still possible.</p>
+<h3 id="managing-sender-addresses" class="wysiwyg-text-align-justify"><strong>Managing sender addresses</strong></h3>
+<p class="wysiwyg-text-align-justify">In the <strong>Mail senders</strong> menu, you will find an overview of all those senders’ addresses for which you hold access rights.</p>
+<p class="wysiwyg-text-align-justify"><u>Edit options</u></p>
+<p class="wysiwyg-text-align-justify">Click on the <strong>Add e-mail address</strong> button to open the dialog for creating a new sender. All you have to enter is the e-mail address, the corresponding real name if desired, and the teams that are granted full access. Clickable links and icons allow you to edit existing mail templates:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Rights</strong>: Opens the dialog where you can assign read or write rights for the sender’s address to user teams.</p>
+</li>
+<li>
+<p><strong>Delete</strong>: E-mail addresses can be deleted by ticking the checkbox in the “Delete” column and then clicking on the Delete button</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">You need read rights for “options” to access the <strong>Mail senders</strong> menu and the functions described below.</p>
+<p class="wysiwyg-text-align-justify">Mail senders linked to a mail template cannot be inadvertently deleted. If you try to delete mail senders that are still linked to a mail template, a list of the affected templates will be displayed. Only after the sender’s address has been changed in all templates is it possible to delete the address.</p>
+<h3 id="the-mail-dispatch-process-in-efs" class="wysiwyg-text-align-justify">
+<strong>The mail dispatch process in</strong><em><strong> EFS</strong></em>
+</h3>
+<p class="wysiwyg-text-align-justify">If you trigger the dispatch process, EFS forwards your mail to a dedicated mail server which is responsible for organizing the actual dispatch. The available dispatch volumes are split up as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>At the start of each dispatch interval (i.e. every ten minutes), all mail dispatch orders in the queue will be registered along with their size (i.e. the number of mails).</p>
+</li>
+<li>
+<p>It will be checked whether the sum total of the mail to be sent is greater than the maximum mail volume allowed per dispatch interval. The maximum mail volume can be configured.</p>
+</li>
+<li>
+<p>If the sum total is smaller than the maximum mail volume, all mail will be sent.</p>
+</li>
+<li>
+<p>If the sum total is greater than the maximum mail volume, the dispatch orders are sorted by ascending size. Then, the dispatch resources are distributed equally among the dispatch orders. I.e. one by one, each order is assigned one mail, until the limit is reached. This way, smaller orders are completed quickly. The remaining mails would be processed according to the same principle in the subsequent dispatch intervals.</p>
+</li>
+<li>
+<p>If the mail server does not accept mail at all, the system will try to dispatch it again eight hours later. After four failed dispatch attempts, the mail will be deleted and the recipient will be assigned disposition code 14. The number of repeats can be configured.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Syntax check for e-mail addresses during dispatch</strong></p>
+<p class="wysiwyg-text-align-justify">Generally, EFS performs a syntax check on every mail address. This happens once when entering mail addresses and also,

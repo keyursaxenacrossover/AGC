@@ -1,0 +1,84 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1310261267">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1310261267</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<p>Also see <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Roadmap" ri:version-at-save="8"></ri:page><ac:link-body>Roadmap</ac:link-body></ac:link> </p><p></p><ul>
+<li><p><strong>Long term:</strong> not only related to the Tivian Access solution but to the product moving to a future development status</p></li>
+<li><p><strong>Short term:</strong> something that will be achieved directly by the Tivian Access solution and should be part of one of the next milestones.</p></li>
+</ul><p></p><table data-layout="default">
+<colgroup>
+<col style="width: 340.0px;">
+<col style="width: 340.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour="#abf5d1"><p><strong>Short Term</strong></p></th>
+<th data-highlight-colour="#b3bac5"><p><strong>Long Term</strong></p></th>
+</tr>
+<tr>
+<td data-highlight-colour="#ffffff"><p>Vendor Lockin</p></td>
+<td data-highlight-colour="#ffffff"><p>Future Architecture</p></td>
+</tr>
+<tr>
+<td data-highlight-colour="#ffffff"><p>Integrate with other Tivian Systems</p></td>
+<td data-highlight-colour="#ffffff"><p>Add customization capabilities</p></td>
+</tr>
+<tr>
+<td data-highlight-colour="#ffffff"><p>Cleanup</p></td>
+<td data-highlight-colour="#ffffff"><p>Add integratable self service</p></td>
+</tr>
+<tr>
+<td data-highlight-colour="#ffffff"><p>Reduce maintenance cost</p></td>
+<td data-highlight-colour="#ffffff"><p>Automation</p></td>
+</tr>
+<tr>
+<td data-highlight-colour="#ffffff"><p>Increase quality</p></td>
+<td data-highlight-colour="#ffffff"><p>Adapt to future changes in a cost efficient way</p></td>
+</tr>
+<tr>
+<td data-highlight-colour="#ffffff"><p>Incorporate Feedback directly</p></td>
+<td><p>Scalable business</p></td>
+</tr>
+<tr>
+<td data-highlight-colour="#ffffff"><p>Domain expert teams</p></td>
+<td><p>Transparency</p></td>
+</tr>
+</tbody>
+</table><p></p><table data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p><strong>Topic</strong></p></th>
+<th><p><strong>Description</strong></p></th>
+<th><p><strong>Expected Effect</strong></p></th>
+</tr>
+<tr>
+<td data-highlight-colour="#abf5d1"><p>Vendor Lockin</p></td>
+<td><p>Every connected application is tighly coupled to the Okta APIs. This means that exchanging Okta for another vendor will always be that costly that it is not worth the effort. Creating a centralized adapter for Okta prevents us from these issues.</p></td>
+<td>
+<p><strong><span style="color: rgb(54,179,126);">future of the company</span></strong></p>
+<p>Having a vendor lock in for the core products is dangerous</p>
+</td>
+</tr>
+<tr>
+<td data-highlight-colour="#b3bac5"><p>Future Architecture</p></td>
+<td><p>An architecture involving domain isolation as possible and less dependencies to other projects, enables faster product cycles, continuous delivery on subsystem level, less friction due to coupling of unrelated components. This also involves more precise business decisions within one domain.</p></td>
+<td><p><strong><span style="color: rgb(54,179,126);">cost related</span></strong></p></td>
+</tr>
+<tr>
+<td data-highlight-colour="#abf5d1"><p>Integrate with other Tivian Systems</p></td>
+<td><p>There are other Tivian Systems like Dashbo that need to be integrated. This will always create a little effort on Tivian Access side.</p></td>
+<td><p><strong><span style="color: rgb(54,179,126);">feature</span></strong></p></td>
+</tr>
+<tr>
+<td data-highlight-colour="#b3bac5"><p>Add customization capabilities</p></td>
+<td><p>Okta offers very little ways to customize the Okta workflows. This leads either to PS having to use the Okta API directly or not being able to customize workflows for specific services. Creating an adapter that is capable of handling a decent amount of customization would make the product more stable.</p></td>
+<td>
+<p><strong><span style="color: rgb(54,179,126);">quality related</span></strong></p>
+<p></p>
+</td>
+</tr>
+<tr>
+<td data-highlight-colour="#b3bac5"><p>Add integr

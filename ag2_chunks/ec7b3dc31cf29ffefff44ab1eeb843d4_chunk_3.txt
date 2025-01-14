@@ -1,0 +1,74 @@
+<br>[] Let System Administration activate the cron job and restart Lighty (as the cron job is set up per folder, please mention the exact folder name of the DV)<br>[] Add EFS database in DV admin area<br>[] Add DV user (if any were requested)<br>[] Inform 1st level support respectively the person who requested the DV</p>
+</div><h2 id="header-10">DV 4.0</h2><p> As of now (2017-08-04) the set up of DV 4 is the same as for DV3 and DV2. Since 2017-10-16 the DV also can be set up using the helpers script <strong>helpersCreateNewDataVoyager</strong><br><a href="https://it.globalpark.de/twiki/bin/view/Support/SupportDV2#Set_up_DV_using_scripts">SupportDV2 Set up DV using scripts</a></p><p></p><h1 id="header-12">OLD - Set up DV manually</h1><p> As of now (2017-08-04) the set up of DV 4 is the same as for DV3 and DV2.<br></p><ul>
+<li>
+<p>Ask Sysadmins to create database</p>
+<ul>
+<li><p>dv database name: dv_xxx (replace xxx with the generated part of the client's domain <a href="http://xxx.customervoice360.com">xxx.customervoice360.com</a>)</p></li>
+<li><p>Host, port, user and password need to be the same as for the EFS installation (grep "__db" conf/config.inc.php3)</p></li>
+</ul>
+</li>
+<li><p>Create DV folder below htdocs</p></li>
+<li>
+<p>Get latest DV build</p>
+<ul>
+<li>
+<p>Use helpers script</p>
+<ul>
+<li><p>cd /dumps/bashHelpersEFS_TS/</p></li>
+<li><p>./getBuilds.sh EFS_DV-2.2</p></li>
+</ul>
+</li>
+<li>
+<p>Alternative you can get the latest build from Guardian <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Neccessary accounts and accesses" ri:version-at-save="11"></ri:page><ac:link-body>Neccessary accounts and accesses</ac:link-body></ac:link> </p>
+<ul><li><p>Save build to desktop, copy it into your home folder in the gateway in /nfs/dumps to unzip and from there move it into DV folder of installation (like rsync without excludes)</p></li></ul>
+</li>
+<li>
+<p>Alternatively use wget command:</p>
+<ul><li><p>wget -N -T 30 -A zip --no-check-certificate --http-user=efsbuilds --http-password=ocieXo3eeR <a href="https://efsbuilds.3uu.de/EFS_DV-2.2_0081.zip"><u>https://efsbuilds.3uu.de/EFS_DV-2.2_0081.zip</u></a></p></li></ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Within DV folder</p>
+<ul>
+<li>
+<p>prepare application.ini</p>
+<ul>
+<li><p>cd dv/application/configs/</p></li>
+<li><p>cp template_application.ini application.ini</p></li>
+</ul>
+</li>
+<li>
+<p>adjust application.ini</p>
+<ul>
+<li>
+<p>Enter database connection for DV database that admins created</p>
+<ul>
+<li><p>see config of EFS instalaltion: grep "__db" ../../../conf/config.inc.php3</p></li>
+<li><p>Fastbit IP: check other environments until this page is updated</p></li>
+</ul>
+</li>
+<li><p>Adjust path to DV: (oat.customer_path), corresponds to the folder the DV has ben created in</p></li>
+<li><p>Adjust temporary path (see config of EFS installation)</p></li>
+</ul>
+</li>
+<li>
+<p>Within dv folder</p>
+<ul>
+<li><p>Create "dv/custom" folder and check rights (should be 775)</p></li>
+<li><p>Create folder "dv/nfs/Datasource/File/" and check rights (should be 777)</p></li>
+<li>
+<p>Execute healself</p>
+<ul>
+<li><p>(php 5.3.6: /opt/pdp/opst/apps/php-5.3.6/bin/php) php support/healself.php</p></li>
+<li><p>If error <strong>Error by application initialization: Directory xyz/dv/application/../custom/</strong> is shown, the missing folder needs to be created</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>If needed, add additional customizings <a href="https://it.globalpark.de/twiki/bin/view/Support/StephanieBeckerEinarbeitungTS#20_01_2016_Data_Voyager_Loader_o"><u>Loader or other DV customizings/ check out repository</u></a></p></li>
+<li>
+<p>Change root password, e.g. using script dv/support/changeRootPw.php <strong>Do NOT execute on procus or on mirror server</strong></p>
+<ul><li><p>(php 5.3.6: /opt

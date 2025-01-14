@@ -1,0 +1,68 @@
+<li>
+<strong>View Button</strong>: Allows specifying which table columns to show or hide and changing the number of rows per page. Confirm changes by clicking <strong>Send</strong>.</li>
+<li>
+<strong>Navigation Links</strong>: Use &gt; (Next page) and &lt; (Previous page) to scroll through the list.</li>
+<li>
+<strong>Sorting</strong>: Click on a column title to sort data by that column's content (e.g., clicking “Name” sorts panelists alphabetically).</li>
+</ul>
+<h3 id="h_01J3FX5AM327DB2BDN9K09CC49">Editing Panelists</h3>
+<p>Use the search function to view information or apply actions to individuals or sets of panelists.</p>
+<p><strong>Actions:</strong></p>
+<ul>
+<li>
+<strong>Select action</strong> drop-down list under the list of panelists to:
+<ul>
+<li>Change panel status.</li>
+<li>Write an e-mail to selected persons.</li>
+<li>Assign persons to a group.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Apply Actions To:</strong></p>
+<ul>
+<li>
+<strong>Individual Panelist</strong>: Tick the checkbox for that panelist in the “Actions” column.</li>
+<li>
+<strong>All Panelists on Current Page</strong>: Tick the “Mark all entries on this page” checkbox. All panelists in the current display will be marked via JavaScript.</li>
+<li>
+<strong>All Panelists Found</strong>: Tick the “Mark all entries found” checkbox.</li>
+</ul>
+<p><strong>Note:</strong></p>
+<ul>
+<li>The number of selected panelists may exceed the number listed on the first results page, especially when using the “Mark all entries found” checkbox.</li>
+</ul>
+<h3 id="PanelistsAdministration-Actions">Actions</h3>
+<p>The actions listed in the following table can be applied to selected panelists or all.</p>
+<table class="relative-table tablesorter tablesorter-default wrapped confluenceTable" style="margin: 0px auto; border-collapse: collapse; width: 1022.54px; background-color: #ffffff;">
+<tbody>
+<tr class="tablesorter-headerRow">
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; background-color: var(--ds-background-accent-gray-subtlest,#f0f0f0); padding: 7px 10px 7px 10px !important;" scope="col">
+<div class="tablesorter-header-inner">Action</div>
+</th>
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; background-color: var(--ds-background-accent-gray-subtlest,#f0f0f0); padding: 7px 10px !important 7px 10px;" scope="col">
+<div class="tablesorter-header-inner">Meaning</div>
+</th>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px 7px 10px !important;">Default mail</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important 7px 10px;">
+<p>This action opens the standard dialog for e-mail dispatch. Here you will find mail templates of the “default mail” type.</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px 7px 10px !important;">Welcome mail</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important 7px 10px;">
+<p>Candidates will usually receive an automatic welcome mail after submitting their registration form. Alternatively, this action allows you to manually trigger the mail dispatch. It opens the standard dialog for e-mail dispatch. Here you will find mail templates of the “welcome mail” type.</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px 7px 10px !important;">
+<p>Password recovery mail</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important 7px 10px;">
+<p>This action opens the standard dialog for e-mail dispatch. Here you will find mail templates of the “password recovery mail” type.</p>
+<p>Please make sure that the text of these templates contains the wildcard #password_recovery_url#: This will be replaced with a link for resetting the password when the mail is sent.</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align

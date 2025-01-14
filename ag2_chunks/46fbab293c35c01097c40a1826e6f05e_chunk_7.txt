@@ -1,0 +1,103 @@
+</em>, <em>u_initial_passwd</em>) and master data.</p>
+</li>
+<li>
+<p>System variables cannot be recoded.</p>
+</li>
+<li>
+<p>If the value to be set is a text, put it between quotation marks.</p>
+</li>
+<li>
+<p>Both recodings and trigger actions require a lot of server resources, i.e. the usage of recoding triggers affects the performance of the questionnaire. Therefore, it is recommended to use not more than 100 recodings per trigger and per page.</p>
+</li>
+</ul>
+<h3 id="recoding-syntax" class="wysiwyg-text-align-justify">Recoding syntax</h3>
+<p class="wysiwyg-text-align-justify">When defining recoding conditions, the following rules apply:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The operators + - / * and ( and ) can be used.</p>
+</li>
+<li>
+<p>Wildcards (#v_xxx#) can be used to insert project variables. Please mind:</p>
+<ul>
+<li>
+<p>Special project variables, e.g. loop variables, cannot be used in the condition.</p>
+</li>
+<li>
+<p>For project variables relating to an open text field, #v_000n# outputs the content. Make sure to enclose the wildcard by quotation marks in this case, e.g. '#v_1#'</p>
+</li>
+<li>
+<p>For closed-ended questions the wildcard #v_000n# in the trigger outputs the code.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Texts (strings) must be enclosed by quotation marks (e. g. 'foo').</p>
+</li>
+<li>
+<p>It is not permitted to use the special characters? and $ in the recoding condition. They are reserved for internal usage in database queries.</p>
+</li>
+<li>
+<p>You can use the MySQL functions NOW() and IF() on all EFS installations.</p>
+<ul>
+<li>
+<p>NOW() returns the current date and time. Example: NOW() -&gt; 2011-02-11 12:08:29</p>
+</li>
+<li>
+<p>IF(expr1,result1,result2) is processed as follows: If expr1 is TRUE, IF() returns result1, otherwise it returns result2. Example: IF(#v_1#&lt;2,'Yes','No') →  If #v_1# &lt; 2, IF() returns “Yes”, otherwise it returns “No”.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>On installations with deactivated High-Security Mode, other, non-security-relevant <a href="https://mariadb.com/kb/en/built-in-functions/">SQL functions</a> can be used. Access to other databases, users, or files is not possible. Unfortunately, our support will not be able to assist you with these advanced functions.</p>
+</li>
+</ul>
+<h3 id="example-preallocation-using-participant-data" class="wysiwyg-text-align-justify">Example: Preallocation using participant data</h3>
+<p class="wysiwyg-text-align-justify">In an employee survey, the question relating to pertinent departments is to be preallocated according to the information available in participant administration.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Create the question where the pertinent department is to be entered.</p>
+</li>
+<li>
+<p>Switch to the page view and open the <strong>Trigger</strong> menu.</p>
+</li>
+<li>
+<p>Choose the recoding trigger, and confirm by clicking on <strong>Submit</strong>.</p>
+</li>
+<li>
+<p>The trigger will be created.</p>
+</li>
+<li>
+<p>Enter “Trigger name” and “Trigger description”.</p>
+</li>
+<li>
+<p>Choose the execution position “Directly”.</p>
+</li>
+<li>
+<p>Decide whether the “Also execute trigger in preview mode” function should be enabled. In this example, it is advisable to enable this function because it allows you to perform tests directly in the preview.</p>
+</li>
+<li>
+<p>Decide whether the trigger can be executed repeatedly in one survey session. In this example, it is not necessary.</p>
+</li>
+<li>
+<p>Lastly the settings under “Detail configuration” have to be made, i.e. the recodings need to be defined.</p>
+</li>
+<li>
+<p>Select the variable to be recoded, and enter the value for which the recoding condition applies. In the example, “v_1“ is the variable where the answer to the question relating to pertinent departments and characteristic “1” is saved.</p>
+</li>
+<li>
+<p>Confirm by clicking on <strong>Save</strong>.</p>
+</li>
+<li>
+<p>Click on the<strong> Filter</strong> icon, which will now appear, to define the condition.</p>
+</li>
+<li>
+<p>Choose the variable whose content is to be loaded as well as the condition and the code. In this example, variable v_1 is to be prefilled with code 1 if the participant variable labeled “u_department” equals 1.</p>
+</li>
+<li>
+<p>Click on <strong>Save</strong>.</p>
+</li>
+<li>
+<p>Repeat this operation for all characteristics of the variable v_1, which are to be preallocated.</p>
+</li>
+</ul>
+<h3 id="viewing-the-recodings-performed

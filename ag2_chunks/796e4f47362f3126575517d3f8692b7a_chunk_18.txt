@@ -1,0 +1,57 @@
+li>
+<li>N as percent</li>
+</ul>
+<p>If you continue with a scale property or a result type, the term is immediately valid.</p>
+<p>Another branching is not possible.</p>
+<h3 id="continuation-with-unit" class="sc-lhVmIH iJLaKb"><strong>Continuation with Unit</strong></h3>
+<p>Both as a starting element for cell mapping and in <strong>Loop mode</strong>, the path for the <strong>Dimension collection </strong>requires a continuation with <strong>Unit</strong>.  To do this, select the desired element from <strong>Fixed unit</strong>, <strong>Focus unit</strong>, <strong>Comparison unit </strong>and <strong>Dataspace Entities</strong>.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013850311570" alt="Continuation 2.png"></p>
+<p>You pick for the cell mapping:</p>
+<p><em>Collection</em> → [<em>Dimension collection</em>] → <em>Item x</em> → <em>Units</em> → [<em>Unit element</em>]</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013838045586" alt="Continuation with Unit.png"></p>
+<p>You select a Dimension collection in the <strong>Loop mode</strong>. In the new column, you select:</p>
+<p><em>Collection member</em>&gt;<em>Units</em>&gt; [<em>Unit element</em>]</p>
+<p>You continue with the result types or <strong>Scale</strong>:</p>
+<ul>
+<li>N</li>
+<li>Return</li>
+<li>Average</li>
+<li>Standard deviation</li>
+<li>Standard deviation (Sample)</li>
+<li>Maximum Response Code</li>
+<li>Minimum Response Code</li>
+<li>Range</li>
+<li>Sum</li>
+<li>Median</li>
+<li>Modus</li>
+<li>Square Distribution</li>
+<li>First Quartile</li>
+<li>Third Quartile</li>
+<li>Interquartile Range</li>
+<li>Explicit missings</li>
+<li>Return rate</li>
+<li>Scale</li>
+</ul>
+<p>If you continue with a result type, the term is immediately valid.</p>
+<p><em>Information: <span style="color: #333333;">To be able to map the scale element at this point, you must define a scale for the dimension collection in the sub-navigation field </span><strong>Data </strong><span style="color: #333333;">under the tab </span><strong>Extras</strong><span style="color: #333333;">.</span></em></p>
+<h3 id="filter" class="auto-cursor-target"><strong>Filter</strong></h3>
+<p class="auto-cursor-target"><span style="color: #091e42;">You use filters in the </span><em>Report Manager </em><span style="color: #091e42;">in various places. A first opportunity to use the feature is offered during mapping. They provide each cell of the mappable shapes with a filter. When you order reports, you also set up filters. The second step in the order process is not only to define the members of the </span><strong>Comparison group</strong><span style="color: #091e42;"> but also to set up a filter for each member of the group. </span><strong>Virtual comparison units </strong><span style="color: #091e42;">also receive a filter. A global one that applies to the entire report is encountered in the third ordering step.</span></p>
+<p class="sc-lhVmIH iJLaKb"><strong>Available filters</strong></p>
+<p>The following filters are preset and can be used for mapping filtering, global filtering, and filtering virtual comparison units:</p>
+<ul>
+<li>Tester</li>
+<li>Language</li>
+<li>Disposition code</li>
+<li>Gender</li>
+</ul>
+<p>The filter selection for the conditional report uses unit properties as filters to determine<strong> units</strong>:</p>
+<ul>
+<li>Label</li>
+<li>Metaname</li>
+<li>View_ID</li>
+<li>Level</li>
+<li>Response_anon</li>
+</ul>
+<p class="sc-lhVmIH iJLaKb"><strong>Mapping filters</strong></p>
+<p>Each filter variable has inherent branches that you use for further specifications.</p>
+<p>These are connected by the non-exclusive OR, which is not represented by an element. For example, if you choose the filter variable g<strong>ender</strong>, you select the options: <strong>Not available</strong>, <strong>male</strong>, <strong>female</strong>. In contrast, the different filter variables are linked by the logical AND, which is also not represented by an element. The following syntax is hidden behind the filter elements in the mapping, which are only apparently placed side by side without connections: <strong>Gender</strong>-<strong>male</strong>OR<strong>Gender</strong>-<strong>female</strong>OR<strong>Gender</strong>-<strong>not available</strong>AND<strong>Dispositioncode</strong>-<strong>Not yet invited</strong>OR<strong>Dispositioncode</strong>-<strong>Active</strong>AND<strong>Tester</strong>-<strong>No tester</strong>. Just as the filter variables

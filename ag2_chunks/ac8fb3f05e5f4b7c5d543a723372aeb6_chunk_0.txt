@@ -1,0 +1,53 @@
+<p><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p>This article provides guidance on how to announce and prepare for high usage scenarios in surveys. It includes templates in both English and German for gathering essential information about upcoming high-traffic surveys.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>When planning for a survey that is expected to have high usage, it's crucial to collect specific details to ensure proper preparation and smooth execution. </p>
+<h2 id="english_template">English Template</h2>
+<p>Use the following questions to gather information about the high-usage survey:</p>
+<ul>
+<li>Which installation is used?</li>
+<li>What is the ID of the survey? (This allows for a quick review of its structure and features used, such as recordings, quotas, larger filters, etc.)
+<ul>
+<li>If the survey doesn't exist yet, is there a paper questionnaire that the EFS survey will be based on? Can we have access to that paper questionnaire?</li>
+</ul>
+</li>
+<li>When does the field phase of the survey start and end?</li>
+<li>How many participants are invited?</li>
+<li>What is the expected return rate?</li>
+<li>When and for how long will invitations and reminders be sent?</li>
+<li>Are invitations sent via EFS or via an external service?</li>
+<li>Is the link of the survey posted on an external website?</li>
+<li>Are any special programming used in the survey?</li>
+<li>Is there a price draw or anything else attracting participants to participate?</li>
+</ul>
+<h3 id="h_01J4KPXWFW3K1MYJW3GCTW8C2Q"><strong>Things to consider:</strong></h3>
+<ul>
+<li>There is no autoscaling on instances and those are created with a fixed set of resources.</li>
+<li>Anything that will trigger over 50k emails at once should go through Support.</li>
+<li>Some surveys have triggers/automations that might cause performance issues.</li>
+<li>There is a limit of 2k emails/10 mins, sent in batches, so there should not be performance issues.</li>
+<li>The mail cap is configured in the web UI config by customers (the default is 300, which can be increased to 2k). <em><strong>System &gt; Options &gt; System Settings</strong></em>
+</li>
+<li>The mechanism is on EFS (a Table with the list of emails is created, and as a cronjob runs, the emails are marked as processed or not).</li>
+<li>After checking the above points, engage the SaaS Team to scale up the instance.</li>
+</ul>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq_1">Why is it important to announce high usage surveys?</h3>
+<p>Announcing high-usage surveys allows the technical team to prepare the necessary resources and infrastructure to handle the increased traffic, ensuring a smooth experience for participants and preventing potential system overloads.</p>
+<h3 id="faq_2">What constitutes a "high usage" survey?</h3>
+<p>A high usage survey typically involves a large number of participants, a high expected return rate, or both. The exact threshold may vary depending on the system's capacity, but it's generally advisable to announce surveys with thousands of expected participants or those that might generate sudden spikes in traffic.</p>
+<h3 id="faq_3">How far in advance should I announce a high usage survey?</h3>
+<p>It's best to announce high usage surveys as soon as you have the necessary information, ideally at least a week before the field phase begins. This gives the technical team sufficient time to make any necessary preparations.</p>
+</article>li>
+<li>The mechanism is on EFS (a Table with the list of emails is created, and as a cronjob runs, the emails are marked as processed or not).</li>
+<li>After checking the above points, engage the SaaS Team to scale up the instance.</li>
+</ul>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq_1">Why is it important to announce high usage surveys?</h3>
+<p>Announcing high-usage surveys allows the technical team to prepare the necessary resources and infrastructure to handle the increased traffic, ensuring a smooth experience for participants and preventing potential system overloads.</p>
+<h3 id="faq_2">What constitutes a "high usage" survey?</h3>
+<p>A high usage survey typically involves a large number of participants, a high expected return rate, or both. The exact threshold may vary depending on the system's capacity, but it's generally advisable to announce surveys with thousands of expected participants or those that might generate sudden spikes in traffic.</p>
+<h3 id="faq_3">How far in advance should I announce a high usage survey?</h3>
+<p>It's best to announce high usage surveys as soon as you have the necessary information, ideally at least a week before the field phase begins. This gives the technical team sufficient time to make any necessary preparations.</p>
+</article>

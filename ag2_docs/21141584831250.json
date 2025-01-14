@@ -1,0 +1,35 @@
+{
+    "id": 21141584831250,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/21141584831250.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21141584831250-Enabling-Custom-URLs-for-DXI-Instances",
+    "author_id": 369584192734,
+    "comments_disabled": false,
+    "draft": false,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20714530860562,
+    "created_at": "2024-09-03T15:57:20Z",
+    "updated_at": "2024-09-03T16:06:17Z",
+    "name": "Enabling Custom URLs for DXI Instances",
+    "title": "Enabling Custom URLs for DXI Instances",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-09-03T16:05:45Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075294,
+    "content_tag_ids": [],
+    "label_names": [
+        "Troubleshooting",
+        "OKTA SSO",
+        "Custom URL",
+        "Discover XI"
+    ],
+    "body": "<h1 id=\"h_01J6W9Q0YG2K4NEQMX6QZDGGN8\">Overview</h1>\n<p>Either customers or the PS team will reach out to CS to enable custom URL's in the DXI instances.</p>\n<p>They have specific URLs that they want to map to their existing customervoice360.com domains. Additionally, depending on the instance configuration, the domains may need to be added to the <strong>OKTA configuration</strong> so that login via OKTA Single Sign-On (SSO) redirects to the custom URL upon successful login. This requires changes in two separate places: the OKTA configuration and the EFS configuration for each instance.</p>\n<h1 id=\"h_01J6W9Q0YGRP2HEF8XZ77B9SZE\">Solution</h1>\n<p>To enable custom URLs for Discover XI instances and ensure that login via OKTA Single Sign-On (SSO) redirects to the custom URL upon successful login, follow these steps:</p>\n<ol>\n<li>Verify if Okta (Tivian Access) is enabled for the customer <strong>(KB for this will go here)</strong>\n</li>\n<li>Create a SaaS Change Request (example: <a href=\"https://trilogy-eng.atlassian.net/browse/DXI-68\">https://trilogy-eng.atlassian.net/browse/DXI-68</a>) so that required backend changes are done</li>\n<li>Once you get the ticket back from SaaS:\n<ul>\n<li><strong>If Tivian Access/Okta is in use:</strong></li>\n</ul>\n</li>\n</ol>\n<article class=\"sc-1e2m5fs-0 sc-bds72g-2 bFUyGA\" tabindex=\"0\" aria-posinset=\"19\" aria-setsize=\"-1\" data-tour-step-gate-id=\":r1ds:\" data-test-id=\"omni-log-comment-item\" data-support-suite-trial-tour-aw-id=\"message\" data-support-suite-trial-onboarding-id=\"message\" data-simplified-get-started-tour-id=\"message\" aria-label=\"Internal note from Ciprian Nastase, 7 minutes ago\">\n<div class=\"sc-bds72g-4 gEYWwX\" data-test-id=\"omni-log-omni-to-ag-comment\">\n<div class=\"sc-bds72g-6 dwxuYM\">\n<div class=\"sc-19le1gu-1 kdKysz\">\n<div class=\"sc-rgtb9i-0 frkDGa\" data-test-id=\"omni-log-item-message\">\n<div class=\"sc-1bbl5go-1 LrqYN\" dir=\"auto\" data-test-id=\"omni-log-message-content\" data-originated-from=\"WebInteraction\">\n<div>\n<div class=\"zd-comment\" dir=\"auto\">\n<ol>\n<li style=\"list-style-type: none;\">\n<ul>\n<li style=\"list-style-type: none;\">\n<ol dir=\"auto\">\n<li>Login to Okta (creds are in KeePass for now, they will be migrated into PWState) <a href=\"https://tivian-admin.okta.com/admin/settings/account\" rel=\"noopener noreferrer\">https://tivian-admin.okta.com/admin/settings/account</a>\n</li>\n<li>Navigate to <strong>Applications &gt; Active</strong>\n</li>\n<li>Either scroll through the app list or search for the installation, then click on it</li>\n<li>Once in the app config, click on <strong>Edit</strong> next to the <strong>General Settings</strong><br><img style=\"aspect-ratio: auto; width: 300px;\" src=\"https://central-supportdesk.zendesk.com/attachments/token/nZAWfEM6p8e211vy0B4FL8Bdq/?name=image.png\">\n</li>\n<li>In the Edit screen, scroll lower and click <strong>Add URI</strong> in both <strong>sign in</strong> and <strong>sign out</strong> redirect URL's<br><img style=\"aspect-ratio: auto; width: 251px;\" src=\"https://central-supportdesk.zendesk.com/attachments/token/xOwSXNnymnO8jVYRH4BVlg2ku/?name=image.png\">\n</li>\n<li>Add the custom URL's and <strong>Save</strong><br><img style=\"aspect-ratio: auto; width: 161px;\" src=\"https://central-supportdesk.zendesk.com/attachments/token/fSN5wpqUAy2tiAgKYLWMsMk2z/?name=image.png\">\n</li>\n<li>Now, we shift focus to the actual EFS instance</li>\n<li>Login using <strong>bypass URL</strong> (password in Keepass, user is <a href=\"mailto:noreply@tivian.com\" rel=\"noreferrer\">noreply@tivian.com</a>) </li>\n<li>Navigate to <strong>System &gt; Options &gt; Platform cockpit &gt; [root only] System configuration</strong>\n</li>\n<li>Search for this string: <code>iam_post_logout_redirect_url iam_redirect_url</code><br><img style=\"aspect-ratio: auto; width: 604px;\" src=\"https://central-supportdesk.zendesk.com/attachments/token/ABlAZkN9w1znI4JkO2wffGDlS/?name=image.png\">\n</li>\n<li>Adjust the URL's here as well and <strong>save</strong>\n</li>\n<li>Try to access the instance using the custom URL's (for example <a href=\"https://custom_url/www\" rel=\"noopener noreferrer\">https://custom_url/www</a>) and confirm that it redirects to <a href=\"http://access.tivian.com/\" rel=\"noopener noreferrer\">access.tivian.com</a> to confirm that the change was successful</li>\n</ol>\n</li>\n<li>\n<strong>If Tivian access is not used</strong>, simply inform the requester that the change has been done.</li>\n</ul>\n</li>\n</ol>\n</div>\n</div>\n</div>\n</div>\n</div>\n<div class=\"sc-bds72g-7 gqjOPC\">\n<div class=\"sc-bds72g-0 hwuzzm sc-1cbp6l0-0 hhdpUR\"> </div>\n</div>\n</div>\n</div>\n</article>\n<h1 id=\"h_01J6W9Q0YGV7JD8TMR651W9EJH\">Summary</h1>\n<p>This article provides a step-by-step guide on how to enable custom URLs for Discover XI instances and ensure that login via OKTA Single Sign-On (SSO) redirects to the custom URL upon successful login. The process involves changes in both the OKTA configuration and the EFS configuration for each instance.</p>\n<h2 id=\"h_01J6W9Q0YGAFRYP90HTN985SZA\">FAQ</h2>\n<ol>\n<li>\n<strong>What is OKTA Single Sign-On (SSO)?</strong><br>OKTA Single Sign-On (SSO) is a user authentication service that allows a user to use one set of login credentials to access multiple applications.</li>\n<li>\n<strong>What is a custom URL?</strong><br>A custom URL is a specific web address that an organization can customize to match its brand name or to make it easier for users to remember and access.</li>\n</ol>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

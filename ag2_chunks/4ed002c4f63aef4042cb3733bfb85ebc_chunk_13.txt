@@ -1,0 +1,54 @@
+px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 274.115px;">FLOOR(X)</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 254.306px;">
+<p>Returns the largest integer value not greater than X.</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 308.75px;">
+<p>FLOOR(1.23);</p>
+<p>→ 1</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 153.264px;">from_unixtime</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 274.115px;">
+<p>FROM_UNIXTIME (unix_timestamp)</p>
+<p>FROM_UNIXTIME (unix_timestamp, format)</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 254.306px;">
+<p>Returns a representation of the unix_timestamp argument as a value in 'YYYY-MM-DD HH:MM:SS' or 'YYYYMMDDHHMMSS' format.</p>
+<p>If format is given, the result is formatted according to the format string, which is used the same way as listed in the entry for the DATE_FORMAT() function.</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 308.75px;">
+<p>FROM_UNIXTIME(875996580);</p>
+<p>→ '1997-10-04 22:23:00'</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 153.264px;">greatest</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 274.115px;">
+<p>GREATEST(value1, value2,...)</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 254.306px;">
+<p>With two or more arguments, returns the largest (maximumvalued) argument.</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 308.75px;">
+<p>GREATEST(2,0);</p>
+<p>→ 2</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 153.264px;">if</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 274.115px;">
+<p>IF(expr1,expr2, expr3)</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 254.306px;">
+<p>If expr1 TRUE (expr1&lt;&gt; 0 and expr1 &lt;&gt; NULL), than IF() returns expr2; otherwise it returns expr3.</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 308.75px;">
+<p>IF(1&gt;2,2,3);</p>
+<p>→ 3</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 153.264px;">instr</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 274.115px;">INSTR(str,substr)</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text

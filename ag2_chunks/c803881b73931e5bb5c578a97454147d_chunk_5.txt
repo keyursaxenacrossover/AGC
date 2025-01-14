@@ -1,0 +1,71 @@
+ </td>
+<td style="height: 71px;">
+<p>Only in EFS Panel installations: If the EFS Panel administrator checks the data in the <strong>Candidates</strong> menu and wishes to send an inquiry mail to the respective panelist, this mail template can be invoked via the “Registration error” action.</p>
+</td>
+</tr>
+<tr style="height: 68px;">
+<td style="height: 68px;">
+<p>Master data invitation mail</p>
+</td>
+<td style="height: 68px;"> </td>
+<td style="height: 68px;">
+<p>Only in EFS Panel installations: This mail template is displayed when you are inviting a panelist from the <strong>Candidates</strong> menu to the master data survey.</p>
+</td>
+</tr>
+<tr style="height: 61px;">
+<td style="height: 61px;">
+<p>Master data reminder mail</p>
+</td>
+<td style="height: 61px;"> </td>
+<td style="height: 61px;">
+<p>Only in EFS Panel installations: This mail template is displayed when you are sending a reminder concerning the master data survey to a panelist from the <strong>Candidates</strong> menu.</p>
+</td>
+</tr>
+<tr style="height: 44px;">
+<td style="height: 44px;">Winner mail</td>
+<td style="height: 44px;"> </td>
+<td style="height: 44px;">
+<p>Only in EFS Panel installations: This mail template is displayed when you have conducted a prize draw and wish to inform the winners afterward.</p>
+</td>
+</tr>
+<tr style="height: 52px;">
+<td style="height: 52px;">Promotional Mail</td>
+<td style="height: 52px;"> </td>
+<td style="height: 52px;">
+<p>Only in EFS Panel installations: Panelists can use this mail template within the scope of a campaign to canvass new participants.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="auto-cursor-target wysiwyg-text-align-justify"> </p>
+<h2 id="improving-security-with-the-option-activate-security-question" class="auto-cursor-target wysiwyg-text-align-justify"><strong>Improving Security with the option "Activate security question"</strong></h2>
+<p class="wysiwyg-text-align-justify"> </p>
+<table class="wrapped wysiwyg-text-align-justify">
+<colgroup> <col> </colgroup>
+<tbody>
+<tr>
+<th>
+<p>The option "<strong>Activate security question" </strong>can be used to add another layer of security to the password recovery functionality for panelists. If this option is activated and panelists request password recovery mail, they will be asked to enter the answer to a previously set up security question. So this option can be useful for you if security is a big concern for you or your organization.</p>
+</th>
+</tr>
+</tbody>
+</table>
+<p class="auto-cursor-target wysiwyg-text-align-justify"> </p>
+<h3 id="how-to-enable-activate-security-question" class="auto-cursor-target wysiwyg-text-align-justify"><strong>How to enable "Activate security question"</strong></h3>
+<p class="wysiwyg-text-align-justify">If you want to enable the “Activate security question” option and enhance your security, please follow the steps below:</p>
+<p class="wysiwyg-text-align-justify"><strong>Selecting the option</strong></p>
+<ol class="ak-ol wysiwyg-text-align-justify">
+<li>
+<p>Go to <strong>Website</strong> → <strong>Global configuration</strong> → <strong>Password security</strong>, and select <strong>Yes </strong>for<strong> Activate security question</strong>.</p>
+</li>
+<li>
+<p>If you want the panelist account to be temporarily disabled after too many failed attempts to enter the right answer to the security question, you can select <strong>Yes </strong>for the option <strong>Activate brute force protection</strong>. You can also set, for how long the account will be deactivated and how many failed attempts will be allowed.</p>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><strong>Adding the variables</strong></p>
+<ol class="ak-ol wysiwyg-text-align-justify">
+<li>
+<p>Go to <strong>Website</strong> → <strong>Language version</strong> → <strong>Standard content</strong> → <strong>Forms</strong>, and select <strong>Registration form. </strong>Click on<strong> Add variable </strong>and select the variable<strong> u_sec_quest: Security question </strong>from the drop-down menu<strong> Variable. </strong>Next, enter “<em>!matches('/^[12]$/',request.u_sec_quest)</em>” under <strong>Validation</strong> → <strong>Check expression </strong>and under <strong>Validation</strong> → <strong>Error message </strong>enter the error message you want to be displayed, if the panelist doesn’t enter a security question when registering, e.g. “Please enter a security question”. Click on <strong>Add variable.</strong></p>
+</li>
+<li>
+<p>Repeat the steps under 3 for the variable <strong>u_sec_quest_answer: Security question answer.</strong> Enter “<em>!matches('/^[12]$/',request.u_sec_quest_answer)</em>”

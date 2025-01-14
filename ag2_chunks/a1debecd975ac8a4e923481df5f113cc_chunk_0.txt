@@ -1,0 +1,62 @@
+<p><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p>This article provides tips and tricks for exporting data in EFS (Enterprise Financial System). It covers important aspects such as export duration, file handling, and character limitations in exports.</p>
+<p> </p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>This guide focuses on best practices for exporting data from EFS, with an emphasis on using CSV format for high-volume exports and efficient file management.</p>
+<ul>
+<li><a href="#export_duration">Export Duration</a></li>
+<li><a href="#file_handling">File Handling</a></li>
+<li><a href="#character_limitations">Character Limitations in Exports</a></li>
+</ul>
+<p> </p>
+<h2 id="export_duration">Export Duration</h2>
+<p>When exporting data from EFS, it's important to note that the exported data is not created in advance. Instead, it is generated based on your settings at the moment you click the Export button. The duration of the export process can vary significantly depending on factors such as:</p>
+<ul>
+<li>The desired content</li>
+<li>Selected format (CSV is preferred for high-volume exports)</li>
+<li>Number of records</li>
+</ul>
+<p>Due to these factors, some exports may take a considerable amount of time to complete.</p>
+<p> </p>
+<h2 id="file_handling">File Handling</h2>
+<p>After initiating an export, you'll be presented with a dialog window offering options to save the file locally or open it directly. It is strongly recommended to always save the file to your local PC first.</p>
+<h3 id="h_01J3CY46AZ57R1R8RFTVVGTSWN">Benefits of Saving Locally:</h3>
+<ul>
+<li>Reduces server load by creating the file only once</li>
+<li>Avoids potential issues with browser file type recognition</li>
+<li>Ensures you have a local copy of the exported data</li>
+</ul>
+<p> </p>
+<h2 id="character_limitations">Character Limitations in Exports</h2>
+<p>To ensure effective exporting across various formats, some minor modifications are made to the result data:</p>
+<ul>
+<li>Backslashes are removed</li>
+<li>Special characters \n (Newline), \t (Horizontal tab), \r (Carriage return), and " (Double quote) are removed</li>
+<li>NULL values are replaced with an empty string</li>
+</ul>
+<p>These modifications apply to all result data exports, including panel exports.</p>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq_1">Why is CSV export preferred over Excel for high-volume data?</h3>
+<p>CSV export is preferred for high-volume data exports because it offers better performance and faster processing times compared to Excel format, especially when dealing with large datasets.</p>
+<h3 id="faq_2">Can I open the exported file directly in my browser?</h3>
+<p>While it's possible to open the file directly, it's not recommended. Saving the file locally first ensures proper file type recognition and avoids potential errors that may occur due to browser limitations in handling certain file types.</p>
+<h3 id="faq_3">How do character limitations affect my exported data?</h3>
+<p>Character limitations ensure compatibility across different export formats. While some special characters are removed or modified, these changes are minimal and shouldn't significantly impact the integrity of your exported data.</p>
+<p> </p>
+</article>>Backslashes are removed</li>
+<li>Special characters \n (Newline), \t (Horizontal tab), \r (Carriage return), and " (Double quote) are removed</li>
+<li>NULL values are replaced with an empty string</li>
+</ul>
+<p>These modifications apply to all result data exports, including panel exports.</p>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq_1">Why is CSV export preferred over Excel for high-volume data?</h3>
+<p>CSV export is preferred for high-volume data exports because it offers better performance and faster processing times compared to Excel format, especially when dealing with large datasets.</p>
+<h3 id="faq_2">Can I open the exported file directly in my browser?</h3>
+<p>While it's possible to open the file directly, it's not recommended. Saving the file locally first ensures proper file type recognition and avoids potential errors that may occur due to browser limitations in handling certain file types.</p>
+<h3 id="faq_3">How do character limitations affect my exported data?</h3>
+<p>Character limitations ensure compatibility across different export formats. While some special characters are removed or modified, these changes are minimal and shouldn't significantly impact the integrity of your exported data.</p>
+<p> </p>
+</article>

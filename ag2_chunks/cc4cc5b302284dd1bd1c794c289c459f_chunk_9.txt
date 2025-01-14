@@ -1,0 +1,83 @@
+ data surveys,</em> and <em>Forum discussions</em> cannot be converted into any other project type.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>To re-use a questionnaire in a project type that does not allow a conversion, please use page import.</p>
+</li>
+</ul>
+<h3 id="copying-projects" class="wysiwyg-text-align-justify"><strong>Copying Projects</strong></h3>
+<p class="wysiwyg-text-align-justify">You can create copies of projects at any time. Projects may also be copied if you possess read rights. Users with read rights only may edit copied projects, but never original projects.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Contents of questionnaires, layout settings and general project attributes will be copied.</p>
+</li>
+<li>
+<p>A change of the project type during the copying process is restricted to anonymous and personalized projects.</p>
+</li>
+<li>
+<p>The decision for a layout generation and version made in the source project - i.e. "Responsive Layout 3", “Responsive Layout 2”, “Responsive Layout 1” or classic system layout - will be transferred when copying. A switch in the copied project is not possible.</p>
+</li>
+<li>
+<p>Result data that already exist, sample definitions (e.g. contents of participant administration in personalized projects), user-defined export templates, and generated reports will not be copied.</p>
+</li>
+<li>
+<p>When copying survey projects, already existing report definitions in <em>EFS Reporting +</em> will be copied as well. But please note that the result data shown in the reports will not be transferred, nor will generated report files be copied: use the data update feature instead to import the results of the new project.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Open the functional area <strong>Projects</strong> functional area.</p>
+</li>
+<li>
+<p>Select the project you wish to copy from the project list and click on the <strong>Copy</strong> icon.</p>
+</li>
+<li>
+<p>The familiar entry dialog for creating projects is opened, preset with the data of the source project.</p>
+</li>
+<li>
+<p>In the “Project type” select box, choose the project type for the survey copy. Please mind the restrictions.</p>
+</li>
+<li>
+<p>Enter the project title, description, author, and coauthors and specify the access for the team in the “Which teams shall receive full access” select box.</p>
+</li>
+<li>
+<p>Click on <strong>Create</strong> to create a copy of the selected project.</p>
+</li>
+</ul>
+<h3 id="transferring-projects-to-other-efs-installations" class="wysiwyg-text-align-justify">
+<strong>Transferring Projects to Other </strong><em><strong>EFS</strong></em><strong> Installations</strong>
+</h3>
+<p class="wysiwyg-text-align-justify">Projects can be exported and subsequently re-imported into<em> EFS</em> system via a dedicated import interface. This function is used, in particular, when it is necessary to move a project to another <em>EFS</em> installation. In addition to the basic questionnaire structure, you can optionally export the following data:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>all existing subdirectories: /images, /images, /layout, /templates, /CSS</p>
+</li>
+<li>
+<p>all images of the overall media library</p>
+</li>
+<li>
+<p>user-defined container templates</p>
+</li>
+<li>
+<p>reports: Reports created with the traditional EFS Survey reporting, including already generated reports.</p>
+</li>
+<li>
+<p>survey results: If you have read right to “export_with_lfdn”, you may optionally include the result data.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Before you start please note:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The XML format used is a mere exchange format, e.g. it can be used only for transferring projects to another EFS installation or for archiving questionnaires.</p>
+</li>
+<li>
+<p>Projects can only be imported to target installations that have the same <em>EFS</em> version or a higher, newer version than the source installation of the project. It is not possible to downgrade projects via export/import, e.g. by importing a 10.0 project to a 9.0 installation.</p>
+</li>
+<li>
+<p>A change of the project type during the import process is restricted to anonymous and personalized projects.</p>
+</li>
+<li>
+<p>The decision for a layout generation and layout version made in the source project - i.e. "Responsive Layout 3", “Responsive Layout 2”, “Responsive Layout 1” or classic system layout - will be transferred when exporting. A switch during import is not possible. </p>
+</li>
+<li>
+<p>The project type of the source project as well as any possible extensions used in this project should also be available in the destination installation. For example, a project of the „panel survey“ type can only be imported without data loss into an <em>EFS</em> Panel installation, i.e

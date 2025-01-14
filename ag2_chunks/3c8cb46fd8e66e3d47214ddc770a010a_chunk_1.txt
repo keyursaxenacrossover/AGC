@@ -1,0 +1,47 @@
+SBYFBBSP">Steps to Troubleshoot the Issue</h3>
+<h4 id="h_01J964YG3E46DZZ0A1DTD4FPPZ">Step 1: Review the Database for Panelist Registration Records</h4>
+<p>To analyze the panelist records and identify discrepancies, execute the following SQL query to retrieve relevant data from the panelist registration tables.</p>
+<p>Just replace the  <code class="!whitespace-pre hljs language-sql">pa.reg_code</code> in the query below with the correct values for the Way of Entry having the issue.</p>
+<pre><code class="language-plaintext">SELECT
+	pa.uid,
+	pa.pseudonym,
+	p.u_email,
+	p.u_firstname,
+	p.u_name,
+	pa.penter_date,
+	pa.reg_code,
+	pe.title,
+	pav.remote_addr AS ip_on_registration,
+	prk.rkey	,
+	prk.active,
+	prk.used
+FROM
+	panel_att AS pa
+	LEFT JOIN panel_recruitment_keys AS prk ON ( prk.rid = pa.reg_code AND prk.uid = pa.uid
+	)
+	LEFT JOIN panel_entry AS pe ON (pa.reg_code = pe.reg_code)
+	LEFT JOIN panelists AS p ON (pa.uid = p.uid)
+	LEFT JOIN panel_att_var AS pav ON (pa.uid = pav.uid)
+WHERE
+	pa.reg_code IN (136, 139)
+	AND prk.rid IS NULL
+ORDER BY pa.penter_date ASC;</code></pre>
+<ul>
+<li>This query helps to identify the panelists registered under the given campaigns (PB_JUN_24, PB_JUL_24) without corresponding registration keys.<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21739279832722">
+</li>
+<li>
+<code>panel_entry</code>: Stores information about the "ways of entry" (reg_code and title).</li>
+<li>
+<code>panel_recruitment_keys</code>: Contains information on the actual recruitment keys (<code>rkey</code>) and their statuses (<code>active</code>, <code>used</code>).</li>
+<li>The unique PRI key <code>reg_code</code> from the table <code>panel_entry</code> and the MUL key <code>rid</code> in the table <code>panel_recruitment_keys</code> can be used to join both tables (each way of entry can have N unique LMI keys therefore you have this PRI to MUL relation between those tables)</li>
+<li>
+<strong>Registration IP Address</strong>: Query identifies the IP address the panelist had while registring (Column <code>remote_addr</code> from table <code>panel_att_var</code> which can be joined by the <code>uid</code>)</li>
+</ul>
+<h4 id="h_01J964YG3EQC5BPJVHYZPYYRWY">Step 2: Analyze Web Server Logs with Grafana Loki</h4>
+<p>It is possible to use AWS Cloudwatch logs to get the actual codes used for each panelist, however CW logs are maintained for 1 month only. If the registration is older than 1 month, we would need to check Grafana logs.</p>
+<p>Use <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21741183591314-Accessing-and-Querying-Grafana-Logs-A-Comprehensive-Guide"><strong>Grafana Loki</strong> </a>to investigate web server logs by looking for requests from the IP addresses found in Step 1:</p>
+<ol>
+<li>Open <strong>Grafana Loki</strong> and restrict to the namespace of the installation (e.g., <code>tr9043</code>).</li>
+<li>Run the query for the relevant job (<code>tr9043/nginx</code>) and search for access logs around the registration dates (from <code>pa.penter_date</code>).</li>
+</ol>
+<p>Example of <a href="https://grafana.prod-de-03.customervoice360.com/explore?schemaVersion=1&amp;panes=%7B%22sks%22:%7B%22datasource%22:%22P8E80F9AEF21F6940%22,%22queries%22:%5B%7B%22refId%22:%22A%22,%22expr%22:%22%7Bnamespace%3D%5C%22tr9043%5C%22,%20job%3D%5C%22tr9043%2Fnginx%5C%22%7D%20%21~%20%60PHP%20Warning%60%20%7C~%20%6082%5C%5C.68%5C%5C.16%5C%5C.244%7C91%5C%5C.149%5C%5C.202%5C%5C.234%7C81%5C%5C.135%5C%5C.6%5C%5C.171%7C2%5C%5C.217%5C%5C.33%5C%5C.83%7C81%5C%5C.129%5C%5C.170%5C%5C.194%7C81%5C%5C.157%5C%5C.66%5C%5C.79%7C92%5C%5C.9%5

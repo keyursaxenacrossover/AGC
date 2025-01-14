@@ -1,0 +1,97 @@
+<p><supportagent><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/1LS/pages/3890315265/TIVIAN+Access">https://qbdocs.atlassian.net/wiki/spaces/1LS/pages/3890315265/TIVIAN+Access</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</supportagent></p>
+
+<article>
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K">Overview</h1>
+<p>
+  This article provides essential information about TIVIAN Access, an optional add-on module for our software package. It outlines the prerequisites, requirements, and important considerations for implementing TIVIAN Access.
+</p>
+
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>
+  This guide focuses on the TIVIAN Access module, its ordering process, and the critical requirements for its implementation.
+</p>
+
+<ul>
+  <li>
+    <a href="#tivian_access_module">TIVIAN Access Module</a>
+  </li>
+  <li>
+    <a href="#implementation_requirements">Implementation Requirements</a>
+  </li>
+  <li>
+    <a href="#important_considerations">Important Considerations</a>
+  </li>
+</ul>
+
+<h2 id="tivian_access_module">TIVIAN Access Module</h2>
+<p>
+  TIVIAN Access is an optional add-on module that can be integrated into our software package. Here's what you need to know:
+</p>
+<ul>
+  <li>It's an optional feature that enhances our software capabilities.</li>
+  <li>To order TIVIAN Access, visit: <a href="https://ww2.umfragecenter.de/uc/order_survey/">https://ww2.umfragecenter.de/uc/order_survey/</a>
+</li>
+  <li>Navigate to <code>modules &gt; TIVIAN SSO</code> to place your order.</li>
+</ul>
+
+<p> </p>
+
+<h2 id="implementation_requirements">Implementation Requirements</h2>
+<p>
+  Before proceeding with the implementation of TIVIAN Access, there are two critical requirements that must be met:
+</p>
+
+<h3 id="test_user_agreement">1. Mandatory Test User Agreement</h3>
+<p>
+  It is absolutely essential to have a test user agreement in place before selling this module. Key points include:
+</p>
+<ul>
+  <li>A mandatory test user must be provided (e.g., TivianSSO@customerdomain.com).</li>
+  <li>This requirement is non-negotiable.</li>
+  <li>Failure to provide a test user can result in service disruptions if changes need to be made and cannot be tested beforehand.</li>
+</ul>
+
+<h3 id="technical_contact">2. Qualified Technical Customer Contact</h3>
+<p>
+  A qualified technical contact from the customer's side is necessary. This person should:
+</p>
+<ul>
+  <li>Be able to administer their Identity Provider (if there is an IdP).</li>
+  <li>While this can be addressed during the implementation process, it remains an important requirement for smooth integration.</li>
+</ul>
+
+<p> </p>
+
+<h2 id="important_considerations">Important Considerations</h2>
+<p>
+  It is crucial to adhere to the outlined requirements to ensure successful implementation and customer satisfaction. Failure to do so may result in:
+</p>
+<ul>
+  <li>Serious complications during the integration process.</li>
+  <li>Customer dissatisfaction with the service.</li>
+  <li>Potential disruptions in service functionality.</li>
+</ul>
+<p>
+  By following these guidelines, we maintain our commitment to quality and service excellence.
+</p>
+
+<p> </p>
+
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+
+<h3 id="faq_what_is_tivian_access">What is TIVIAN Access?</h3>
+<p>TIVIAN Access is an optional add-on module that can be integrated into our software package to enhance its functionality.</p>
+
+<h3 id="faq_how_to_order">How do I order TIVIAN Access?</h3>
+<p>You can order TIVIAN Access by visiting https://ww2.umfragecenter.de/uc/order_survey/ and navigating to modules &gt; TIVIAN SSO.</p>
+
+<h3 id="faq_test_user_importance">Why is a test user so important?</h3>
+<p>A test user is crucial for testing any changes or updates to the system without disrupting the live environment. It helps prevent service interruptions and ensures smooth functionality.</p>
+
+<h3 id="faq_technical_contact">What if we don't have a qualified technical contact?</h3>
+<p>While it's possible to address this during the implementation process, having a qualified technical contact who can administer your Identity Provider is important for a smooth integration. We recommend identifying or training a suitable person for this role.</p>
+
+<p>
+  <strong>Tags: </strong>TIVIAN Access, SSO, Implementation Requirements, Test User, Technical Contact
+</p>
+</article>

@@ -1,0 +1,42 @@
+Data" class="wysiwyg-text-align-justify" data-renderer-start-pos="20204"><strong data-renderer-mark="true">Update Data</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="20217">To update your panelist data with the information on the master data "md_day_of_birth" and "md_month_of_birth", we first create an export of all your panelist data. To do this, proceed as follows:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="20417">In the <em data-renderer-mark="true">People</em> module, open the <strong data-renderer-mark="true">Export</strong> menu item on the left-hand side.</p>
+</li>
+<li>
+<p data-renderer-start-pos="20491">Keep the default setting <strong data-renderer-mark="true">Panel data (master data, participant data)</strong> and click <strong data-renderer-mark="true">Continue</strong>.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014812826002"></p>
+</li>
+</ul>
+<ul class="wysiwyg-text-align-justify">
+<li data-renderer-start-pos="20491">Keep all default settings and select the option <strong data-renderer-mark="true">Participant and master data</strong> under <strong data-renderer-mark="true">Which export template shall be used?</strong>.</li>
+<li data-renderer-start-pos="20491">Click on <strong data-renderer-mark="true">Export</strong>.</li>
+<li data-renderer-start-pos="20491">Your export is created. Click on <strong data-renderer-mark="true">Copy file to local PC</strong>.</li>
+<li data-renderer-start-pos="20491">Open the export file and delete all cells except for the columns u_firstname, u_name, u_email, md_day_of_birth and md_month_of_birth.</li>
+<li data-renderer-start-pos="20491">Now enter the corresponding data of your panelists in the columns “md_day_of_birth” and “md_month_of_birth”.</li>
+<li data-renderer-start-pos="20491"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014859729682"></li>
+<li data-renderer-start-pos="20491">Save the file.</li>
+</ul>
+<div class="rich-media-item mediaSingleView-content-wrap image-align-start cc-10mo855 wysiwyg-text-align-justify" data-layout="align-start" data-width="492" data-width-type="pixel" data-node-type="mediaSingle" data-renderer-start-pos="21038">
+<div class="cc-hn71c">
+<div class="cc-k4ngfq" data-mark-type="border" data-color="#091e4224" data-size="2">
+<div data-context-id="4149608460" data-type="file" data-node-type="media" data-width="492" data-height="138" data-id="8cd4bf20-e0d0-491a-9f9f-c58926dc2ba8" data-collection="contentId-4149608460" data-file-name="file" data-file-size="1" data-file-mime-type="" data-alt="image-20240325-094941.png" data-renderer-start-pos="21039"> </div>
+</div>
+</div>
+</div>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="21063">You can now update your panelist data using the saved file:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="21126">Open the <strong data-renderer-mark="true">Panelist administration</strong> under <strong data-renderer-mark="true">People &gt; Panelist administration</strong>.</p>
+</li>
+<li>
+<p class="wysiwyg-text-align-left" data-renderer-start-pos="21202">Click on the <strong data-renderer-mark="true">Update data</strong> button.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014812827666"></p>
+</li>
+</ul>
+<ul class="wysiwyg-text-align-justify">
+<li data-renderer-start-pos="21202">Click on <strong data-renderer-mark="true">Select file</strong> and select the file that you saved in the previous step.</li>
+<li data-renderer-start-pos="21324">Click on <strong data-renderer-mark="true">Send file</strong>.</li>
+<li data-renderer-start-pos="21347">On the next page, the columns of the import file are assigned to the corresponding fields in the database. As your file only contains the columns u_firstname, u_name, u_email, md_day_of_birth and md_month_of_birth, only these are assigned.</li>
+<li data-renderer-start-pos="21590">Select the <strong data-renderer-mark="true">u_email</strong> option at the bottom of the page under <strong data-renderer-mark="true">Linking variable</strong>.</li>
+<li data-renderer-start-pos="21669">Then select the u_email variable from the drop-down menu under <strong data-renderer-mark="true">Which column in the import file contains the linking variable?</strong>.</li>
+<li data-renderer-start-pos="21799">Click on<strong data-renderer-mark="true"> Save

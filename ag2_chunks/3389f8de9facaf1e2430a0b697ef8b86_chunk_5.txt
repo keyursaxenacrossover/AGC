@@ -1,0 +1,33 @@
+ die App unter einer anderen Sprachversion erreichbar sein soll</p></li>
+<li><p>Sofern SSL aktiv trägt man das ganze nochmal unter Secure Canvas URL ein</p></li>
+<li><p>WICHTIG! Bei dem IFrame Size muss Auto-Resize eingeschaltet werden. IM SCREENSHOT IST EIN FEHLER!</p></li>
+<li><p>Den Rest lässt man so wie er ist (siehe Screenshot)</p></li>
+</ul>
+</li></ul><ac:image ac:align="center" ac:layout="center" ac:src="https://it.globalpark.de/twiki/pub/Development/SINCAppAufsetzen/2011-02-28-154455_1600x1200_scrot.png"><ri:url ri:value="https://it.globalpark.de/twiki/pub/Development/SINCAppAufsetzen/2011-02-28-154455_1600x1200_scrot.png"></ri:url></ac:image><ul><li>
+<p>Unter Advanced stellt man dann das Deauthorize Callback ein. Dazu nimmt man die URL und packt ?fbdeauth=1 dran (siehe Screenshot)</p>
+<ul><li><p>Dort muss ausserdem "Upgrade to Request 2.0" abgeschaltet sein. Sonst funktioniert der Counter nicht.</p></li></ul>
+</li></ul><ac:image ac:align="center" ac:layout="center" ac:src="https://it.globalpark.de/twiki/pub/Development/SINCAppAufsetzen/2011-02-28-154915_1600x1200_scrot.png"><ri:url ri:value="https://it.globalpark.de/twiki/pub/Development/SINCAppAufsetzen/2011-02-28-154915_1600x1200_scrot.png"></ri:url></ac:image><h3 id="header-21">English Documentation</h3><ul><li><p><a href="https://it.globalpark.de/twiki/pub/Development/SINCAppAufsetzen/HowtoSetUpFacebookApp_20121026.pdf"><u>HowtoSetUpFacebookApp_20121026.pdf</u></a>: How To Facebook App (Created 26.10.2012) - </p></li></ul><ac:rich-text-body><p>PDF Link broken, where is this document???</p></ac:rich-text-body><h2 id="header-23">Integration mit der Enterprise Feedback Suite (EFS) - deprecated?</h2><ul>
+<li>
+<p>Danach guttenbergt man die folgenden Dinge von der Developerseite in die config.inc</p>
+<ul>
+<li><p>__facebook_enabled (alter Name in 8.0: __facebook_app_id )</p></li>
+<li><p>__facebook_secret</p></li>
+<li><p>ACHTUNG! Den Api Key brauchen wir nicht. Bitte nicht verwechseln!</p></li>
+<li><p>__facebook_app_url (<a href="http://apps.facebook.com/xxx">apps.facebook.com/xxx</a>) <code>// Nils: Die URL MUSS mit einem Slash enden, sonst streikt Facebook</code></p></li>
+</ul>
+</li>
+<li>
+<p>Danach muss man einige Dinge inhaltlich abklären:</p>
+<ul>
+<li><p>Welchen Panelstatus sollen die Panelisten bekommen, die die App deinstallieren? Das trägt man in __facebook_deauth_pstatus ein.</p></li>
+<li><p>Sollen von der App irgendwelche Daten angefordert werden, die über die Basisinformationen und Email hinausgehen (<a href="http://developers.facebook.com/docs/authentication/permissions/"><u>http://developers.facebook.com/docs/authentication/permissions/</u></a>)? Wenn ja, trägt man die da ein.</p></li>
+<li><p>Welchen Daten von Facebook sollen wo hin kommen? Das trägt man in __facebook_profile_sync ein. (Beispiel gibts in der muster.conf. Beachte auch <a href="https://jira.3uu.de/browse/KANBAN-4789"><u>https://jira.3uu.de/browse/KANBAN-4789</u></a> hinsichtlich Änderungen zwischen 8.0 und 8.1.)</p></li>
+<li><p>Soll den Panelisten, die sich über Facebook registrieren, ein besonderer Eintrittsweg zugewiesen werden? Dann trägt man dessen Link im Pfad zu der Seite, auf die neue User geroutet werden (siehe unten), folgendermaßen ein: $__facebook_registration='appregistration.php?rc=Mg%3D%3D'; (Mg%3D%3D ist die eindeutige Kennung im Eintrittswege-Link)</p></li>
+</ul>
+</li>
+</ul><p><a href="https://it.globalpark.de/twiki/bin/editsection/Development/SINCAppAufsetzen?t=1576593304&amp;sec=4#SECEDITBOX"><u>Edit</u></a></p><p></p><h2 id="header-24">Integration ins Panel CMS</h2><ul>
+<li><p>Auf welche Sprachversion soll die Facebook App zeigen? Die Id in $__facebook_app_lang_id</p></li>
+<li>
+<p>Auf welche Seite soll geroutet werden, wenn ein neuer User ankommt?</p>
+<ul>
+<li><p>Dazu muss

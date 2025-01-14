@@ -1,0 +1,61 @@
+ on it: The recoding condition of that category will be opened in the condition editor. In the input field above, you can change the label of the category.</p>
+</li>
+<li>
+<p>Via the toolbar, you can create additional categories, delete superfluous ones, or preview the recoding results.</p>
+</li>
+<li>
+<p>In the “Name” field of the header section, you can change the internal labels of the recodes.</p>
+</li>
+<li>
+<p>You can change the sequence of recoding categories per Drag&amp;Drop.</p>
+</li>
+<li>
+<p>Once you have defined the conditions for all categories, you trigger the recoding process by clicking on <strong>Execute</strong>.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Do not click on <strong>Execute</strong> before all categories have been created and all conditions have been defined!</p>
+<h3 id="recode-types" class="wysiwyg-text-align-justify"><strong>Recode types</strong></h3>
+<p class="wysiwyg-text-align-justify">In <em>EFS Reporting +</em>, you can realize two types of recodes: <strong>Simple recoding</strong> and <strong>Multiple recoding</strong>. <strong>Recoding for use as weighting template</strong> has been added as a third option. These templates are applied not only to means, but to frequencies, percentages, base, totals and other aggregations as well. Additionally, you have the option <strong>Top responses in open-ended answers</strong> and, under certain circumstances, the option <strong>Grouping of numbers</strong>.</p>
+<p class="wysiwyg-text-align-justify">You decide on the recode type to be used when creating new recodes. It is not possible to change the type at a later date.</p>
+<p class="wysiwyg-text-align-justify"><strong>Simple recoding</strong></p>
+<p class="wysiwyg-text-align-justify">Simple recoding is the conventional recode type corresponding to a single response question.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The source data are transferred into a target variable with multiple categories.</p>
+</li>
+<li>
+<p>Each participant is uniquely assigned to a single category.</p>
+</li>
+<li>
+<p>When displaying a simple recoding in the report, the same key figures and chart types are available as for a single response question.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">In the example shown, the birth years are recoded to age groups.</p>
+<p class="wysiwyg-text-align-justify"><strong>Multiple recoding</strong></p>
+<p class="wysiwyg-text-align-justify">The new, experimantal recode type “multiple recoding” corresponds to a multiple response question.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The source data are transferred into multiple target variables with one corresponding recoding category each. Analog to the answer options of a multiple response question, each category has the codes “1” (“quoted”) and “0” (“not quoted”).</p>
+</li>
+<li>
+<p>Each participant can be counted once for each category (i.e., assigned to the code “1”).</p>
+</li>
+<li>
+<p>When displaying a multiple recoding in the report, the same key figures and chart types are available as for a multiple response question.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">In the example shown, the age groups created above shall be combined with the participants’ favored holiday destinations. As the participants were able to select multiple favorite holiday destinations in the questionnaire, a multiple recoding is used, i.e., every possible combination of age group and holiday destination is mapped into its own recoding variable.</p>
+<p class="wysiwyg-text-align-justify"><strong>Weighting</strong></p>
+<p class="wysiwyg-text-align-justify">In a survey with e.g. irregular gender distribution, weighting allows to balance the share of the underrepresented gender. In <em>EFS Reporting+</em>, recoding is used to specify weighting templates. They are applied as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Open the table editor of the affected question. Insert the option “Weighted mean” to the results table. Via the<strong> Edit</strong> icon, you can select the desired weighting template i.e. your recodes definition.</p>
+</li>
+<li>
+<p>Drag &amp; Drop can be used to place the weighting template in the appropriate branch in the structure window. Then, it is applied to all contents of the branch.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Top responses in open-ended answers</strong></p>
+<p class="wysiwyg-text-align-justify">This type of recoding is especially useful, if you are aiming to retrieve a large, but limited amount of answer possibilities, or if the participants‘ answers are frequently alike. An exemplary question would be „Where in (your country) would you like to live?“. Set the three biggest cities as answer 1 - 3, all other cities will be covered for with an open-ended answer as answer 4.</p>
+<p class="wysiwyg-text-align-justify"><strong>Grouping of numbers</strong></p>
+<p class="wysiwyg-text-align

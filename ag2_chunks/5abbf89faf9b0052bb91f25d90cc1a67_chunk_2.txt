@@ -1,0 +1,81 @@
+SO provider</p>
+<ul>
+<li><p>New Name</p></li>
+<li><p>New First name</p></li>
+<li><p>New E-mail</p></li>
+<li><p>(Accout name?)</p></li>
+</ul>
+</li>
+<li><p>As soon as user <strong>logs in</strong> one of the application SSO provider syncs user’s data to application</p></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><p><strong>W2B</strong></p></td>
+<td><h2 id="header-10">Alternative: Immediate Sync</h2></td>
+<td><p>Once user data are changed in one application, these are synced to SSO provider<strong> and all</strong> applications user has access to</p></td>
+</tr>
+<tr>
+<td><p><strong>W3</strong></p></td>
+<td><h2 id="header-11">Deletion - Deletion in application</h2></td>
+<td><ul>
+<li><p>In case a user is existing in several applications and he gets deleted in <strong>one</strong> of them then he will be removed from the application on SSO provider side</p></li>
+<li><p>User can still use SSO in the application he is still existing</p></li>
+<li>
+<p>In case user is deleted from last application he is completely removed from SSO provider wrt</p>
+<ul>
+<li><p>Name </p></li>
+<li><p>First name</p></li>
+<li><p>E-mail</p></li>
+<li><p>(account name?)</p></li>
+<li><p>PW</p></li>
+<li><p>MFA</p></li>
+<li><p>Application url</p></li>
+</ul>
+</li>
+<li><p>In case a deleted user tries to access the application he is removed from he would see an application based message, eg. you are not authorized to access this application</p></li>
+</ul></td>
+</tr>
+<tr>
+<td><p><strong>W4</strong></p></td>
+<td><h2 id="header-12">Deletion - Deletion centrally in SSO provider (SHOULD DO)</h2></td>
+<td><p>In case user is deleted <strong>centrally from SSO provider</strong> a deletion process is triggerred automatically in all respective application </p></td>
+</tr>
+<tr>
+<td><p><strong>W5</strong></p></td>
+<td><h2 id="header-13">Federation - Create</h2></td>
+<td><ul>
+<li><p>User will not be able to register by himself</p></li>
+<li><p>When user is created on AD side and synced to SSO provider he will <strong>not</strong> receive a <ac:inline-comment-marker ac:ref="f8b4f26a-9d75-4b0a-b4c1-2f07d80fea14">activation</ac:inline-comment-marker> mail from SSO provider and he will not be asked to add a password</p></li>
+<li>
+<p>When user accesses application via sso (Login mask) his data will be double checked in SSO provider</p>
+<ul>
+<li><p>if user is known, he will directly log into application</p></li>
+<li><p>if user is not known, he will see an app based message </p></li>
+</ul>
+</li>
+</ul></td>
+</tr>
+<tr>
+<td><p><strong>W6</strong></p></td>
+<td><h2 id="header-14">Federation - Edit</h2></td>
+<td>
+<h3 id="header-16">AD changes</h3>
+<p>When user data are changed in AD these are synced over to SSO provider once user logs into application and his data will be updated</p>
+<p></p>
+<p><strong><ac:inline-comment-marker ac:ref="bb2b1626-ae1b-4125-b32a-5f3147730625"><ac:inline-comment-marker ac:ref="e8f33429-76fb-4a55-ab18-a61bb330a420">Alternative</ac:inline-comment-marker></ac:inline-comment-marker></strong><ac:inline-comment-marker ac:ref="bb2b1626-ae1b-4125-b32a-5f3147730625"><ac:inline-comment-marker ac:ref="e8f33429-76fb-4a55-ab18-a61bb330a420">: user changes from AD are pushed to SSO provider</ac:inline-comment-marker></ac:inline-comment-marker></p>
+<p></p>
+<h4 id="header-18">Application / SSO provider changes</h4>
+<p>In case user data are changed in one application, these are synced to SSO provider <strong>or</strong> in case changes occur in SSO provider data are synced to application BUT</p>
+<ul>
+<li><p>No data sync occurs to AD (Sync Downwards)</p></li>
+<li>
+<p>Customer needs to update data also in one application, </p>
+<ul><li><p>otherwise when user logs out and logs in application again: AD data sync to SSO provider overwrites the application changes again</p></li></ul>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><p><strong>W7</strong></p></td>
+<td><h2 id="header-21">Federation - Delete</h2

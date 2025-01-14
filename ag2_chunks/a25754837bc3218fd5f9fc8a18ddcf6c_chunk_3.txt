@@ -1,0 +1,73 @@
+: var(--ds-space-100,8px); text-align: left; vertical-align: top; width: 461.997px;" colspan="1" rowspan="1" data-colwidth="467">
+<p data-renderer-start-pos="7360">The role owners are subordinated managers or subordinated staff of the respective focus person.</p>
+</td>
+</tr>
+<tr>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; width: 250px;" colspan="1" rowspan="1" data-colwidth="147">
+<p data-renderer-start-pos="7461">Peers</p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; width: 250px;" colspan="1" rowspan="1" data-colwidth="145">
+<p data-renderer-start-pos="7470">PE</p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; width: 461.997px;" colspan="1" rowspan="1" data-colwidth="467">
+<p data-renderer-start-pos="7483">The role owners are on the same hierarchic level as the focus person.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="h_01J3DA86Y0Q1E9PWPAJKMZXPBJ">Creating Roles</h3>
+<ul>
+<li>In Projects → {Selected project} → Process configuration, click <strong>Create role</strong> on the Roles tab.</li>
+<li>The system assigns an ID to the role.</li>
+<li>Select a label and abbreviation.</li>
+<li>Specify which reports participants with this role will receive.</li>
+<li>Click <strong>Save</strong> to confirm.</li>
+</ul>
+<h3 id="h_01J3DBY3475V1BWF59YCBT7T0W">Changing the Allocation of Roles to Reports</h3>
+<p>To change role allocations to reports later:</p>
+<ol>
+<li>Go to the role overview.</li>
+<li>Click the Edit icon to open the editing dialog.</li>
+<li>In the "Allocation of role to report" section, find all defined reports.</li>
+<li>Change the allocation as needed.</li>
+</ol>
+<h3 id="h_01J3DA86Y0YE9QD65ZJ1D2MJA6">Defining Report Groups</h3>
+<p>A report group aggregates several roles for analysis and report generation. For example, to create a report group "Direct reports / Peers" based on roles 3 "Direct reports" (DR) and 4 "Peers" (PE):</p>
+<ul>
+<li>Configure the roles "Direct reports" and "Peers" as described.</li>
+<li>Go to Projects → {Selected project} → Process configuration → Report definition → Report groups.</li>
+<li>Define the new role "Direct reports / Peers" with criteria:
+<ul>
+<li>Minimum return rate</li>
+<li>Minimum number of answers per item</li>
+</ul>
+</li>
+<li>In "The report group contains the following roles", select "Direct reports" and "Peers".</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21018333377426"></p>
+<ul class="ak-ol" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="9036">Confirm by clicking on <strong>Save</strong>.</p>
+</li>
+</ul>
+<div class="ak-editor-panel cc-tqp4ke" data-panel-type="info">
+<div class="ak-editor-panel__icon"><em>To generate a report, each feedback role must have sufficient returns, with a configurable minimum (recommended at least "3") to maintain anonymity. This prevents identifying specific feedback providers through clever splitting. The role "Superior" is an exception, as its answers can be identified.</em></div>
+<div class="ak-editor-panel__icon"> </div>
+<div class="ak-editor-panel__content">
+<p><em>Check actual returns in the statistics in the focus persons overview.</em></p>
+<p> </p>
+</div>
+</div>
+<h2 id="configuring_feedback_statuses">Configuring Feedback Statuses</h2>
+<p>Feedback statuses map complex workflows in EFS Leadership, describing the progress of the overall feedback process (Feedback phase → Reporting phase → Closure of process) and individual participants (Feedback phase → Feedback finished) in a specific feedback constellation.</p>
+<h3 id="h_01J3DA86Y08FZY7N63RFWJ3PAP">Feedback Statuses in Detail</h3>
+<p>The table below lists the default feedback statuses. Processes related to these statuses depend on the specific feedback scenario. The "Default scenario" column describes the process in a default multi-source project without customization.</p>
+<ul>
+<li>Default statuses are fixed; only labels can be changed.</li>
+<li>The sequence of statuses is defined by the ID.</li>
+<li>Additional user-defined statuses should be between 5 ("Initial") and 100 ("Process closed").</li>
+<li>Only additional user-defined statuses can be deleted.</li>
+</ul>
+<table style="border-collapse: collapse; height: 1px; background-color: #ffffff; width: 880px;" border="1" data-testid="renderer-table" data-number-column="false" data-table-width="760" data-layout="default">
+<tbody>
+<tr style="height: 47

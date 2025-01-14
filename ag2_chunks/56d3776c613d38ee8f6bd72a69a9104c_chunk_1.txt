@@ -1,0 +1,159 @@
+okh3pys1KeQPp416</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>iam_client_id</code></p>
+</td>
+<td>
+<p>The application id of this specific EFS installation in Okta used for the OpenID Connect protocol.</p>
+<p>This id is created during the setup of Questback Access and can be viewed in Okta (Applications)</p>
+</td>
+<td class="wysiwyg-text-align-center">
+<p>✅</p>
+</td>
+<td>
+<p><code>string</code></p>
+</td>
+<td>
+<p><code>''</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>iam_client_secret</code></p>
+</td>
+<td>
+<p>The secret for the application in Okta. Is in pair with the client id and is used to verify this application when retrieving tokens from Okta.</p>
+<p>This secret is created during the setup of Questback Access and can be viewed in Okta (Applications)</p>
+</td>
+<td class="wysiwyg-text-align-center">
+<p>✅</p>
+</td>
+<td>
+<p><code>string</code></p>
+</td>
+<td>
+<p><code>''</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>After Fix IN 19.5Red</p>
+<p><code>iam_federated_domains</code></p>
+</td>
+<td>
+<p>A list of domains which which should be synced as federated to Okta.</p>
+<p>E.g: <code>questback.com</code></p>
+</td>
+<td class="wysiwyg-text-align-center">
+<p>❌</p>
+<p>(This should match the Identity Provider routing rule in Okta for this tenant)</p>
+</td>
+<td>
+<p><code>array</code></p>
+</td>
+<td>
+<p><code>empty array</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>iam_idp_id</code></p>
+</td>
+<td>
+<p>The Okta ID of an Identity Provider.</p>
+<p>If set all users will be directly redirected to the configured Identity Provider and skip the login page from Okta.</p>
+<p>This is used to enhance the user experience (e.g: Hiding questback and just showing the customers CI)</p>
+<p>If internal admins need to login and this is activated, use the bypass route (see <code>iam_admin_bypass_login_route</code>)</p>
+</td>
+<td class="wysiwyg-text-align-center">
+<p>❌</p>
+</td>
+<td>
+<p><code>string</code></p>
+</td>
+<td>
+<p><code>''</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>iam_module_active</code></p>
+</td>
+<td>
+<p>This toggle controls if the module is active and the authentication is delegated to Okta.</p>
+<p><strong>Only toggle this on if the rest of the configuration is checked</strong></p>
+<p><strong>Caution</strong>: If toggled off, the default EFS login well be used again, but disabling the module could have side effects</p>
+</td>
+<td class="wysiwyg-text-align-center">
+<p>✅</p>
+</td>
+<td>
+<p><code>boolean</code></p>
+</td>
+<td>
+<p><code>false</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>iam_panelist_sync</code></p>
+</td>
+<td>
+<p>Used to control how panelists are synced to Okta. The following values are selectable:</p>
+<ul>
+<li>
+<p><code>Deactivated</code> - Panelists are not synced to Okta</p>
+</li>
+<li>
+<p><code>Panelist Sync</code> - Panelists are synced to Okta but not activated</p>
+</li>
+<li>
+<p><code>Panelist Sync and Activation</code> - Panelists are synced and activated</p>
+</li>
+</ul>
+</td>
+<td class="wysiwyg-text-align-center">
+<p>✅</p>
+</td>
+<td>
+<p><code>enum</code></p>
+</td>
+<td>
+<p><code>Deactivated</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>iam_post_logout_redirect_url</code></p>
+</td>
+<td>
+<p>Alternative Redirect URL after successful logout in IdP</p>
+<p>Default redirect is back to the login page</p>
+<p>For the built in post logout page for Questback Access use:<br><code>{scheme}://{installation-domain}/iam/admin/auth/logoutSuccess</code><br>e.g: <code>http://iam-demo.qb-feedback.com/iam/admin/auth/logoutSuccess</code></p>
+</td>
+<td class="wysiwyg-text-align-center">
+<p>❌</p>
+</td>
+<td>
+<p><code>string</code></p>
+</td>
+<td>
+<p><code>''</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>iam_proxy_url</code></p>
+</td>
+<td>
+<p>This field is used to configure a proxy for communications between EFS and Okta</p>
+</td>
+<td class="wysiwyg-text-align-center">
+<p>✅</p>
+<p>(if a proxy is used)</p>
+</td>
+<td>
+<p><code>string</code></p>
+</td

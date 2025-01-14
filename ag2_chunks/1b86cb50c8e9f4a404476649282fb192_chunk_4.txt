@@ -1,0 +1,46 @@
+ 431.441px;">
+<p>After the selected number of answer options has been reached the list wraps and a new column begins. This function is particularly well suited for use in combination with hiding conditions on item level or randomization, i.e. for situations in which “New column” is too static.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 288.212px;">
+<p>Number of items visible</p>
+</td>
+<td style="width: 431.441px;">
+<p>This field allows you to specify how many of the existing items are to be displayed:</p>
+<ul>
+<li>
+<p>With the default setting, “0”, all items will be displayed.</p>
+</li>
+<li>
+<p>If you enter a number that is less than the actual number of existing items, the selection will be made by counting off the existing items from the top.</p>
+</li>
+</ul>
+<p>Using this function is particularly recommended when combined with item randomization because the randomization produces varying item combinations.</p>
+<p>If the function is used in combination with hiding conditions for answer options, the output of the questionnaire page will be done by first considering the hiding conditions. Only after that will the number be limited.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 288.212px;">
+<p>Wrap item text</p>
+</td>
+<td style="width: 431.441px;">
+<p>If this option has been enabled, long answer texts will be wrapped automatically.</p>
+<p>This feature can be used with question types 111, 112, 113, 121, 122 and 144.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"><strong>Dynamic questions on the same page</strong></p>
+<p class="wysiwyg-text-align-justify">Depending on the answers survey participants give to a certain question you can specify, that follow-up questions should be hidden. To do so, in the appropriate question click on <strong>Define</strong> next to <strong>Hide question if … </strong>Here you can set the conditions for hiding questions. With the filter definition <strong>Standard,</strong> the hiding condition becomes effective, when the <strong>Continue</strong> button on the page with the source question is clicked. So both questions – source and target question – are on two different pages. Since release 21.2 you can also hide questions dynamically, meaning on the same page. You can create several questions on a single page and afterward set the conditions for hiding them. For this to work dynamically, you have to choose <strong>Dynamic in the browser </strong>under<strong> Filter definition</strong>.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify">This is shown in the following example:</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013850385170" alt="image-20230922-101556.png"></p>
+<p class="wysiwyg-text-align-justify">Page 1 consists of three questions. For the first question, “What is the capital of Australia?”, question type <strong>141 Text field (single row)</strong> was chosen. On the next page, “That’s right!”, with question type <strong>998 Text and image </strong>is set up to be hidden, if the participant has not entered anything into the text field yet (v_1 = 0) or enters another city than Canberra (v_1 != 'Canberra').</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013850380306" alt="image-20230922-101716.png"></p>
+<p class="wysiwyg-text-align-justify">If the participant now enters the right answer (Canberra), “This is right” is dynamically displayed on the page, as the hiding conditions for this page are not met.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013838105234" alt="image-20230922-101843.png"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013850374930" alt="image-20230925-071258.png"></p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify">In case the participant enters another answer than Canberra, the following question is displayed on the same page: “That’s wrong”. That being so, the following hiding conditions apply for this question: v_1 = 0 (question is hidden, if participant hasn’t made any entries yet) OR v_1 = Canberra (question is hidden, if the participant enters “Canberra”).</p>
+<p class="wysiwyg-text-align-justify">When using text variables as source question (as in the above example), questions are only hidden or displayed, if the focus does not remain in the text entry field, e.g. when the participant clicks another area of the survey window or presses the Tab key. So the software does not check after every single keystroke, whether hiding conditions are met or not. This behavior also applies to question type<strong> Slider (numbers) (911), </strong>for which

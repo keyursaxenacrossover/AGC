@@ -1,0 +1,55 @@
+er-start-pos="2595">You can also define, if the question type supports an installation-wide rollout or team based access.</p>
+</td>
+</tr>
+<tr>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; width: 242.083px;" colspan="1" rowspan="1" data-colwidth="340">
+<p data-renderer-start-pos="2702">Copy</p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; width: 482.639px;" colspan="1" rowspan="1" data-colwidth="340">
+<p data-renderer-start-pos="2710">Copy a question type, which is then also listed in the overview and can be edited.</p>
+</td>
+</tr>
+<tr>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; width: 242.083px;" colspan="1" rowspan="1" data-colwidth="340">
+<p data-renderer-start-pos="2798">Download</p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; width: 482.639px;" colspan="1" rowspan="1" data-colwidth="340">
+<p data-renderer-start-pos="2810">Download a question type in a ZIP file and save it on your computer.</p>
+</td>
+</tr>
+<tr>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; width: 242.083px;" colspan="1" rowspan="1" data-colwidth="340">
+<p data-renderer-start-pos="2884">Delete</p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; width: 482.639px;" colspan="1" rowspan="1" data-colwidth="340">
+<p data-renderer-start-pos="2894">Delete a question type.</p>
+</td>
+</tr>
+<tr>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; width: 242.083px;" colspan="1" rowspan="1" data-colwidth="340">
+<p data-renderer-start-pos="2923">Unlock/Lock</p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; width: 482.639px;" colspan="1" rowspan="1" data-colwidth="340">
+<p data-renderer-start-pos="2938"><span class="fabric-text-color-mark" style="color: var(--custom-palette-color,inherit);" data-renderer-mark="true" data-text-custom-color="#ff5630">Red:</span> Question type cannot be edited.</p>
+<p data-renderer-start-pos="2976"><span class="fabric-text-color-mark" style="color: var(--custom-palette-color,inherit);" data-renderer-mark="true" data-text-custom-color="#36b37e">Green: </span>Question type can be edited.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="sentinel-right"><em>Users can only edit question types when they posess the rights. Please ensure that the question type is not currently being edited by another user by referring to the <strong data-renderer-mark="true">Currently Edited </strong>column.</em></div>
+<div class="sentinel-right"> </div>
+</div>
+</div>
+<h3 id="Import" data-renderer-start-pos="3211">Import</h3>
+<p data-renderer-start-pos="3219">An already-created question type can be imported as a ZIP file. By doing an export/ import question types are portable across installations.</p>
+<p> </p>
+<h2 id="Create-a-new-question-type" data-renderer-start-pos="3363">Create a new question type</h2>
+<p data-renderer-start-pos="3392">You may only use Latin characters and numbers for the name. An internal name will be generated from your given name. It has all whitespaces removed, so it can be used as an identifier.</p>
+<p data-renderer-start-pos="3578">The category determines the underlying data structure for the answers as well as the initial files and available configuration options.</p>
+<h3 id="HTML-Editor" data-renderer-start-pos="3715">HTML-Editor</h3>
+<p data-renderer-start-pos="3728">The <strong data-renderer-mark="true">Preview </strong>button opens a dialog with a live preview of your question type, as it would be rendered in a survey with an unmodified responsive layout.</p>
+<div class="ak-editor-panel cc-tqp4ke" data-panel-type="info">
+<div class="ak-editor-panel__icon"><em>You can already select the question type in a survey and use it as it is right now. Your modifications will be immediately visible in the survey. Refrain from editing question types used in live surveys. Instead, copy the question type and work on the copy</em></div>
+</div>
+<p data-renderer-start-pos="4140">The <strong data-renderer-mark="true">Save </strong>button is disabled by default. As soon as something is edited it will be activated and a modification marker is shown in the navigation to the left.</p>
+<div class="ak-editor-panel cc-tqp4ke"

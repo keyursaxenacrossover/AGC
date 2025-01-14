@@ -1,0 +1,89 @@
+ the further configuration and the structure of the questionnaire.</p>
+</li>
+<li>
+<p>If this option is activated, the system will continuously check during the project whether any participants who have not yet started the survey fall within a full external quota. If this is the case, these participants will be excluded from the outset, i.e. they are assigned disposition code 41 (“Quota closed”) in the participant administration. Any data accumulated by the participant (during the respective survey) will be deleted in this process and will not be considered in the survey. If these participants try to log in, they will be rejected and assigned disposition code 35 (“rejected at login (quota closed)”). The quota variables of the excluded participants are allocated as follows: “quota” = “-77”, “quota_assignment” = “-66”.</p>
+</li>
+</ul>
+<p>When activating this option, make sure that respondents who are rejected at login will not be confused:</p>
+<ul>
+<li>
+<p>In your invitation, indicate that only the first participants may be able to see the questionnaire.</p>
+</li>
+<li>
+<p>In the <strong>Project properties</strong> → <strong>Survey messages</strong> menu, adapt the text of the message for the rejected participants (“The participant is not accepted for the survey, as the quota is already full (status: filtered out).”).</p>
+</li>
+</ul>
+</td>
+<td style="width: 110.451px;">
+<p>yes</p>
+</td>
+</tr>
+<tr>
+<td style="width: 181.788px;">
+<p>Option 2: If the matching quota is full, do not allocate participants to any quota (quota=0)</p>
+</td>
+<td style="width: 423.316px;">
+<p>If in the course of answering the questionnaire, the participants fall within a full quota and this option has been activated, then the quota variable will be set to “0”, i.e. they will not be allocated to any quota.</p>
+<p>In this case, the quota variables of the participants are allocated as follows:</p>
+<ul>
+<li>
+<p>“quota” = “0”</p>
+</li>
+<li>
+<p>“quota_assignment” = “-99”</p>
+</li>
+</ul>
+<p>To screen out these participants by quota, you may, for example, set a filter to “quota = 0” and redirect the participants to an intermediate final page. They will then receive e.g. disposition code 36 (“rejected (quota closed)”).</p>
+</td>
+<td style="width: 110.451px;">
+<p>yes</p>
+</td>
+</tr>
+<tr>
+<td style="width: 181.788px;">
+<p>Option 3: Increment any matching, open quota at survey end by 1</p>
+</td>
+<td style="width: 423.316px;">
+<p>With this option, you can control how the allocation figures (quota count) are to be changed at the end of the survey:</p>
+<ul>
+<li>
+<p>If this option is not activated, the participants will be allocated to one matching, open quota after completing the survey. Which quota this will be depends on the selected allocation mode and on the defined order.</p>
+</li>
+<li>
+<p>If this option is activated, the participants will be allocated to all matching, open quotas. In this case, all these quotas will be increased by +1.</p>
+</li>
+</ul>
+<p>The quota variables of the participants are allocated as follows:</p>
+<ul>
+<li>
+<p>“quota” = one quota, depending on the selected allocation mode and the defined order.</p>
+</li>
+<li>
+<p>“quota_assignment” = all quotas whose allocation figures (quota count) have been changed. If this option is deactivated, “quota_assignment” contains the same quota ID as quota”.</p>
+</li>
+</ul>
+</td>
+<td style="width: 110.451px;">
+<p>yes</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 class="wysiwyg-text-align-justify"> </h3>
+<h3 id="allocation-mode" class="wysiwyg-text-align-justify">Allocation mode</h3>
+<p class="wysiwyg-text-align-justify">Via the allocation mode, you control to which quota a participant will be allocated if there are various matching open quotas. This selected quota will then be recorded in the variable quota and may be used e.g. for filtering. The following options are available:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>First matching, open quota: The matching open quota that is first in the sorting order will be allocated to the participant and recorded in “quota”. If “quota_assignment” contains various quota IDs, these will be sorted in ascending order.</p>
+</li>
+<li>
+<p>Random matching, open quota: From the matching open quotas one is chosen at random.</p>
+</li>
+<li>
+<p>Last matching, open quota: The matching open quota that is last in the sorting order will be allocated to the participant and recorded in “quota”. If<br>“quota_assignment” contains various quota IDs, these will be sorted in descending order.</p>
+</li>
+<li>
+<p>Matching, open quota with the fewest participants allocated to it: The system will select the matching open quota that currently has the lowest allocation. If two quotas have equally few participants, the system will select the one that is first in the sorting order.</p>
+</li>
+<li>
+<p>Matching, open quota with the most allocated participants: The system will select the matching open quota with the highest current

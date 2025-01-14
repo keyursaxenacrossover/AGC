@@ -1,0 +1,112 @@
+ variable used in external survey start. The tic variable is always 32 characters long. This cannot be configured.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>s_000n</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>Scoring variables</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 class="wysiwyg-text-align-justify"> </h2>
+<h2 id="device-variables" class="wysiwyg-text-align-justify"><strong>Device Variables</strong></h2>
+<p class="wysiwyg-text-align-justify">The device variables store metainformation about device manufacturer and device kind (Smartphone, Tablet, Desktop, Touchscreen-Desktop, etc.), browser type and more.</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 265.0px;"> <col style="width: 493.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Variable</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>participant_browser</p>
+</td>
+<td>
+<p>browser name (e.g. „Internet Explorer“), <em>see codebook in the project</em> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>participant_browser_version</p>
+</td>
+<td>
+<p>browser version (e.g. „9.0“), <em>text value</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>participant_os</p>
+</td>
+<td>
+<p>operating system (e.g. „Windows“), <em>see codebook in the project</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>participant_device </p>
+</td>
+<td>
+<p>device type</p>
+<p><code>-99	Unknown</code><br><code>0	desktop</code><br><code>1	smartphone</code><br><code>2	tablet</code><br><code>3	feature phone</code><br><code>4	console</code><br><code>5	tv</code><br><code>6	car browser</code><br><code>7	smart display</code><br><code>8	camera</code><br><code>9	portable media player</code><br><code>10	phablet</code><br><code>11	smart speaker</code><br><code>12	wearable</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>participant_brand</p>
+</td>
+<td>
+<p>device brand (e.g. „Apple“),<em> see codebook in the project</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>participant_model</p>
+</td>
+<td>
+<p>device model (e.g. „iPhone 6“), <em>text value</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>participant_isbot</p>
+</td>
+<td>
+<p>bot</p>
+<p>-99: unknown</p>
+<p>0: regular user</p>
+<p>1 to 281: the detected bot name of the search engine crawler</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify">The new variables can be used in filters, triggers, exports, the detail view, Reporting+ and more.</p>
+<p class="wysiwyg-text-align-justify">The functionality “Detect participants' device type using the user-agent information” needs to be enabled in the project properties. The functionality is disabled by default.</p>
+<p class="wysiwyg-text-align-justify">No participant information is sent to 3rd parties, all data is stored and processed in our datacenters.</p>
+<h2 id="location-variables" class="wysiwyg-text-align-justify"><strong>Location variables</strong></h2>
+<p class="wysiwyg-text-align-justify">The location variables store meta information about automatic geo-location based on the participant’s IP address (e.g. estimation of the participant’s continent, country and state)</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 271.0px;"> <col style="width: 487.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Variables</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p><em>participant_continent</em></p>
+</td>
+<td>
+<p>Continent (e.g. „Europe“)</p>
+<p><code>-99	Unknown</code><br><code>1	Anonymous Proxy</code><

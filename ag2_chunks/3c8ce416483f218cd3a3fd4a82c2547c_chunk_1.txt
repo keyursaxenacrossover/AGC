@@ -1,0 +1,98 @@
+ are not familiar with the website editor.</p>
+<p class="wysiwyg-text-align-justify">To realize such a constellation, you have to combine</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Write rights for “mod_panelsite”, which grants access to the<strong> Website</strong> module,</p>
+</li>
+<li>
+<p>Rights for those language versions and corresponding parent websites which the team is supposed to manage,</p>
+</li>
+<li>
+<p>ACL rights for the respective menus</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">and abstain from granting read or write rights on “panel_cms”.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h3 id="editing-text-elements-of-the-cms-externally" class="wysiwyg-text-align-justify"><strong>Editing Text Elements of the CMS Externally</strong></h3>
+<p class="wysiwyg-text-align-justify">Key text elements of the CMS can be exported for external editing or translation. Afterwards, the changed content is imported back into EFS. External editing allows to add new text elements, too, which is particularly useful when upgrading panel installations:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>it is possible to create new text elements. This is of special importance if, after upgrading a panel to a new version of EFS, additional wildcards or messages are needed.</p>
+</li>
+<li>
+<p>It is up to you to decide if you want to add new text elements during import, or if existing texts should be updated as well.</p>
+</li>
+<li>
+<p>The export file can be imported into any language version of the installation. Thus, you can use one export file to create new text elements in several language versions.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The following text elements can be edited externally:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Wildcards for text elements</p>
+</li>
+<li>
+<p>Notifications</p>
+</li>
+<li>
+<p>Error messages</p>
+</li>
+</ul>
+<h3 id="information-2" class="wysiwyg-text-align-justify">Information</h3>
+<p class="wysiwyg-text-align-justify">Registration messages, topics, HTML page titles and other text elements are currently not covered by the export function.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify"><strong>Exporting content</strong></p>
+<ol class="wysiwyg-text-align-justify" start="1">
+<li>
+<p>Switch to the <strong>Website</strong> menu to make an export.</p>
+</li>
+<li>
+<p>Choose the desired language version. Open the export dialog by clicking on the <strong>Excel export</strong> icon.</p>
+</li>
+<li>
+<p>Choose the contents that you would like to export.</p>
+</li>
+<li>
+<p>Confirm by clicking on <strong>Export</strong>.</p>
+</li>
+<li>
+<p>The export file is created. You can download it by clicking on the file <strong>Copy the file to your local PC</strong>.</p>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><strong>Importing contents</strong></p>
+<ol class="wysiwyg-text-align-justify" start="1">
+<li>
+<p>Switch to the <strong>Website</strong> menu to make an import.</p>
+</li>
+<li>
+<p>Choose the desired language version. Open the import dialog by clicking on the <strong>Upload file</strong> icon.</p>
+</li>
+<li>
+<p>Choose the edited Excel file from the hard drive of your PC.</p>
+</li>
+<li>
+<p>To update existing wildcards and messages, activate the “Update existing datasets” checkbox. If you want to add new text elements, while keeping the old ones as they are, make sure the checkbox is deactivated.</p>
+</li>
+<li>
+<p>With<strong> Import</strong> the import operation will be triggered.</p>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><strong>Editing contents externally</strong></p>
+<p class="wysiwyg-text-align-justify">The exported XLS file contains the wildcards and messages of the CMS, various meta information, and the empty column “new content” in which the required new texts can be entered. The following tables 15.1 and 15.2 explain the meaning of the columns in detail.</p>
+<p class="wysiwyg-text-align-justify">To realize your changes, please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>To change existing text elements, simply enter the appropriate new text in the “new content” column.</p>
+</li>
+<li>
+<p>To create a new wildcard, add a new row and add the required data.</p>
+</li>
+<li>
+<p>To create a new notification or error message, you have to add two new rows:</p>
+<ul>
+<li>
+<p>The text type of the first row is “header”. For a message of type „error message“, you can optionally enter a header in this row.</p>
+</li>
+<li>
+<p>The text type of the first row is “body”. It contains the message itself and is obligatory.</p>
+</

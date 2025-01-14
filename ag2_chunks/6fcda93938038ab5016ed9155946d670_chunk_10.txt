@@ -1,0 +1,36 @@
+ zu machen.</p><p>Jira Ticket dazu findet sich auch hier: <a href="https://jira.3uu.de/browse/KANBAN-6012">https://jira.3uu.de/browse/KANBAN-6012</a></p><h2 id="header-24">Other Q&amp;A</h2><h3 id="header-26">No Input file specified</h3><p><strong>Q</strong>: No matter from within which project I try to access Reporting+, I always get the following error; <strong>No Input file specified</strong> <br><strong>A</strong>: First of all Tech Support needs to check whether "reporting" is included in config flags "modules" and "provider_gui". If that is the case, the problem is related to the lighty. System administration needs to check if alias "reporting" is set. Also a frontend restart should help making alias "reporting" available on all frontends.</p><h3 id="header-27">Texts from open ended questions (type 142) are cut</h3><p><strong>Q</strong> All text from questions of type 142 are cut after 255 characters, even when doing the export the texts are cut. How does this happen and how can I export the comlete texts?<br><strong>A</strong> <br>!!! TEXT SLIGHTLY SHOULD BE CHANGED WHEN USED IN CUSTOMER COMMUNICATION !!!<br>The texts initially are shown completely but when editing the question, the texts will be cut after 255 characters. This is due to the underlying datatype of the column in the database (varchar(255)).<br>This issue already has been forwarded to Development (<a href="https://jira.3uu.de/browse/KANBAN-9147">KANBAN-9147</a>) but due to the high amount of effort included in a change or possible performance issues<br>when simply changing the datatype, this issue has been added to the Known Bugs list.</p><h3 id="header-28">Get all report IDs of all surveys of a client</h3><ul>
+<li><p>Via the GUI open the Organization of the client.</p></li>
+<li><p>Click the button to view all projects of the client</p></li>
+<li><p>Download the list as xls/csv file</p></li>
+<li><p>Copy all the project IDs and make a comma separated list of them</p></li>
+<li><p>(Optionally the above can also be done via the database but I don't have the query at hand right now)</p></li>
+<li>
+<p>Execute the following query and insert all previously copied project IDs as 'source_pid'</p>
+<pre><code class="language-text"> SELECT report_id, source_pid FROM survey_reporting_source WHERE source_pid IN(xxx) GROUP BY report_id ORDER BY source_pid ASC;</code></pre>
+</li>
+</ul><h3 id="header-29">Get duration of data updates for a report</h3><ul>
+<li><p>(Optionally execute <a href="https://it.globalpark.de/twiki/bin/view/Support/SupportEFSAnalyticsLab#Get_all_report_IDs_of_all_survey">this</a> first to get a list of reports of a client)</p></li>
+<li>
+<p>Execute the following SELECT and insert the report ID as 'report_id' (optionall insert all report IDs from previously mentioned, optional SELECT)</p>
+<pre><code class="language-text">SELECT report_id, pid, user_id, start_date, finish_date, TIMEDIFF(finish_date,start_date) AS Dauer FROM survey_reporting_history WHERE activity_type=6 AND report_id IN(xxx) ORDER BY report_id,start_date ASC;</code></pre>
+</li>
+<li>
+<p>Optionally the output can be exported into a file (define correct report_id and file name):</p>
+<pre><code class="language-text">SELECT report_id, pid, user_id, start_date, finish_date, TIMEDIFF(finish_date,start_date) AS Dauer FROM survey_reporting_history WHERE activity_type=6 AND report_id IN(xxx) ORDER BY report_id,start_date ASC INTO OUTFILE '/nfs/opstX_temp/xxx.customervoice360.com/reporting.csv' fields terminated by ';' ENCLOSED BY '"' LINES TERMINATED BY '\n'
+</code></pre>
+</li>
+</ul><h2 id="header-31">Reporting+ Tabellen</h2><table data-layout="default"><tbody>
+<tr>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/SupportEFSAnalyticsLab?sortcol=0;table=3;up=0#sorted_table">Table</a></p></th>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/SupportEFSAnalyticsLab?sortcol=1;table=3;up=0#sorted_table">Description</a></p></th>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/SupportEFSAnalyticsLab?sortcol=2;table=3;up=0#sorted_table">(important) Columns</a></p></th>
+</tr>
+<tr>
+<td><p>survey_reporting_chapter</p></td>
+<td><p></p></td>
+<td><p>chapter_id, label_title, label_description</p></td>
+</tr>
+<tr>
+<td><p>survey_reporting_chart_colorscheme</p></td>
+<td><p></p></td>
+<td><p>id, type, name, values, report_id

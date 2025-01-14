@@ -1,0 +1,33 @@
+header-26"><strong>Renaming of ACLs</strong></h3>
+<p>Two ACLs related to panel privacy have been renamed: "panel_email_sample" to "panel_privacy_sample" and "panel_email_groups" to "panel_privacy_groups".</p>
+<p>The change only affects the naming of the ACLs, the rights themselves remain unchanged.</p>
+<p><strong>panel_privacy_sample</strong>:<br>With read rights, the first name, surname and email address of panelists can be displayed in the samples of panel surveys and master data surveys.</p>
+<p><strong>panel_privacy_groups</strong>:<br>With read rights, the first name, last name and email address of panelists can be displayed in the editing dialog of panel groups.</p>
+<hr>
+<h2 id="header-28">
+<strong>Updates in </strong><em><strong>Website</strong></em>
+</h2>
+<p>The<em> Website</em> module has also been optimized for you. In the past, many customers have often asked us about the topic of two-factor authentication in particular, so we are now very pleased to present the new feature to you.</p>
+<h3 id="header-30"><strong>Two-Factor Authentication for Panel Websites</strong></h3>
+<p>You can now set up app-based two-factor authentication for websites. This feature is primarily intended to improve security and prevent unauthorized persons from gaining access to panelists' bonus points. In addition to their password, panelists must enter an app-generated code when logging in with two-factor authentication. The setting options for app-based two-factor authentication are <strong>Disabled</strong> (default setting), <strong>Enabled</strong> and <strong>Enforced</strong>. If you want to change the setting, click on the desired website in your website list to go to the settings page. You can then select the appropriate option from the drop-down menu in the <strong>Login</strong> area.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21037583720594" alt="image-20240305-084400.png"></p>
+<p>Two-factor authentication has been implemented for the current responsive layout of the panel website. Depending on what adjustments have been made to your Panel websites, it may be necessary to adjust the page templates and apply the changes. It is also possible to retrofit older layout versions with two-factor authentication. In both cases Professional Services can provide you with a quote.</p>
+<p>In order to use app-based two-factor authentication, a compatible authentication app is required. Further information on this topic and a list of compatible apps can be found here.</p>
+<p> </p>
+<h4 id="header-32"><strong>Setting Options for App-based Two-Factor Authentication</strong></h4>
+<p>Three different setting options are available:</p>
+<p><strong>Disabled</strong>: Two-factor authentication for the panel website is disabled.</p>
+<p><strong>Enabled</strong>: The panelist has the option of activating two-factor authentication under "My Details". The setup is initiated by clicking on the <strong>Show QR Code</strong> button.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21037561335186" alt="image-20240229-091152.png"></p>
+<p>The displayed QR code must then be scanned using a mobile phone and the code displayed must be entered in the corresponding field. After clicking <strong>Send</strong>, the successful activation of the two-factor authentication is confirmed. If the panelist now attempts to log in to their account, they will be asked to enter the generated code from the app apart from their login credentials. They can only log in once they enter this code. After successful activation, two-factor authentication can be deactivated again in the same area under “My details”.</p>
+<p><strong>Enforced</strong>: If you select the option <strong>Enforced</strong>, panelists will be prompted to scan the QR code and enter the code from the app immediately after entering their login credentials. So they will no longer be able to access the account without setting up two-factor authentication. When setting two-factor authentication to <strong>Enforced,</strong> it can also no longer be deactivated by the panelist once it has been set up. However, panelists have the option of scanning a new code under “My Details”, if desired.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21037582422162" alt="image-20240229-102959.png"></p>
+<p> </p>
+<h3 id="header-34">
+<strong>Resetting Two-Factor Authentication in the </strong><em><strong>People</strong></em><strong> Module</strong>
+</h3>
+<p>As soon as the panelist has fully set up two-factor authentication by scanning the QR code and entering the code from the app, the <strong>Reset 2FA</strong> button is displayed in the panelist administration for this panelist. By clicking this button, you can reset the two-factor authentication for the panelist in question so that they have to scan the QR code again the next time they log in.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21037607701650" alt="image-20240305-085340.png"></p>
+<p> </p>
+<h3 id="header-35"><strong>Behavior in Case of Incorrect Code Entry</strong></h3>
+<p>The behavior in case of incorrect code entry is similar to the behavior of incorrect password

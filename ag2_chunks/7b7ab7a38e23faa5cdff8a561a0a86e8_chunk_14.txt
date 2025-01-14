@@ -1,0 +1,100 @@
+-n</p>
+</li>
+<li>
+<p>Optional: Inside titles 1-o</p>
+</li>
+<li>
+<p>Optional: Dimension with text entry field</p>
+</li>
+</ul>
+<h4 id="question-options">Question Options</h4>
+<p>As with most other question types, normal matrix questions also provide the following question options: “Mark question as protected”, hiding condition at the question level, vertical and horizontal flip, mandatory (DAC), “Number of items visible” and “Alternate colors”. In the section “answer options”, the following options are available: “Answer option + text”, “inside title”, type check, grouping, randomization, dac at the item level, “Always visible” and hiding condition at the item level.</p>
+<p>If “Mandatory (DAC)” is activated for a matrix question of type 311 and comparable matrix types, this function will only check whether an answer has been<br>given to any dimension. If you want all dimensions to be answered, you should use the DAC function on the item level.</p>
+<p>In addition, the following question type-specific question options may be used when designing the matrix:</p>
+<ul>
+<li>
+<p>Repeat scale headers every x rows: In the case of a matrix question with numerous dimensions, the scale can be repeatedly displayed after x rows so that the respondent can still see the scale apportionment while scrolling, for example.</p>
+</li>
+<li>
+<p>Only for projects with “Responsive layout”: Display on mobile devices: You can optionally use a drop-down list instead of the usual list of radio buttons.</p>
+</li>
+<li>
+<p>Only in projects with classic system layout: Width of the left column with the question texts (in pixels): This feature allows you to specify the width of the left column.</p>
+</li>
+</ul>
+<h4 id="layout">Layout</h4>
+<p>With question type 311, you have the option of modifying the area between the scale and the answer block by inserting an additional template. This allows you to change the distance, for example.</p>
+<h3 id="stars-matrix">Stars Matrix</h3>
+<p>The question type <em>Stars Matrix</em> allows us to easily visualize answer options, by integrating e.g. smileys, thumbs for Yes/No questions, dice, numbers, gender icons, or other visual elements.</p>
+<ul>
+<li>
+<p>When creating new questions in projects with “Responsive Layout”, you can find this new question type in the “Image selection” category. The functional scope is similar to the familiar single response list (111).</p>
+</li>
+<li>
+<p>Depending on the screen width of the device used, the star rating scale will be displayed horizontally or vertically. Optionally vertical alignment can be enforced for all devices.</p>
+</li>
+<li>
+<p>When creating a new question, smileys are integrated automatically.</p>
+</li>
+<li>
+<p>The rating direction is from left to right.</p>
+</li>
+<li>
+<p>You can resort to other predefined images in the Tivian library (see next chapter) or upload your images to the media library.</p>
+</li>
+<li>
+<p>Technically, the new question type is based on the familiar standard matrix (311).</p>
+</li>
+</ul>
+<h4 id="base-elements-13">Base Elements</h4>
+<ul>
+<li>
+<p>Question text</p>
+</li>
+<li>
+<p>Fill-in instruction</p>
+</li>
+<li>
+<p>Help text</p>
+</li>
+<li>
+<p>Scale options 1-m</p>
+</li>
+<li>
+<p>Dimensions 1-n</p>
+</li>
+</ul>
+<h4 id="entry-dialog-6">Entry Dialog</h4>
+<p>The entry dialog is closely related to the familiar entry dialog of question type 111. However several special features were not implemented because they are not suitable for a question type with such a clear-cut purpose.</p>
+<h4 id="detail-configuration-5">Detail Configuration</h4>
+<ul>
+<li>
+<p>Show answer texts: Per default, the texts of the answer options are used as Alt text. Optionally they can be displayed below the icons.</p>
+</li>
+<li>
+<p>Display reset button: If this option is activated, a <strong>Reset</strong> icon will be shown next to the stars.</p>
+</li>
+<li>
+<p>Icon for active stars / inactive stars: If you want to use other icons, simply click on the default icons. Then, you can select the desired files from the media library.</p>
+</li>
+<li>
+<p>Icon for the reset button. The selected image is used for the Reset icon.</p>
+</li>
+</ul>
+<h4 id="other-standard-and-scale-matrices">Other standard and scale matrices</h4>
+<p><em>The survey</em> provides three further question types which merely differ from question type 311 in their layout. The use of inside titles is not possible with these question types.</p>
+<ul>
+<li>
+<p>Standard matrix 2, question type 312:</p>
+<ul>
+<li>
+<p>The answers appear next to the respective radio buttons.</p>
+</li>
+<li>
+<p>Display on mobile devices: You can optionally use a drop-down list instead of the usual list of radio buttons.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>Using these alternatives is especially recommended when a matrix question becomes so long that the respondent has to scroll. That is because, with question types 312, 321, and 322, the text of the scale is displayed with each question and does not disappear from view during scrolling.</p>
+<p

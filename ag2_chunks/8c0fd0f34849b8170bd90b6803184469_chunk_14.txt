@@ -1,0 +1,40 @@
+/app/api/process/userprovision_noalteryx" /&gt;
+&lt;question name="Site" value="sk2063.customervoice360.com" /&gt;
+&lt;question name="Project" value="&lt;Your project&gt;" /&gt;
+&lt;question name="Email" value="&lt;Your email address&gt;" /&gt;
+&lt;/questions&gt;
+&lt;/module&gt;
+</code></pre><p></p><ul><li>
+<p>Publish Data Sources</p>
+<ul><li><p>Create a new or use an existing "post.bat" file placed on a "site/project" directory (SFTP server).</p></li></ul>
+</li></ul><p>Example (see under \\bre-atx-01\EFSsftp\<a href="http://sk2063.customervoice360.com">sk2063.customervoice360.com</a>\3064_AN\post.bat&lt;file:///\\bre-atx-01\EFSsftp\<a href="http://sk2063.customervoice360.com">sk2063.customervoice360.com</a>\3064_AN\post.bat&gt;)</p><p></p><pre><code class="language-text">"C:\Tableau\Tableau Server\10.0\extras\Command Line Utility\tabcmd.exe" publish -s https://mysight-preprod2.questback.com -t sk2063customervoice360com -r 3064_AN --no-certcheck -u tabalteryx --password-file "C:\Tableau\Tableau Server\10.0\extras\Command Line Utility\tabcmd_password.txt" -o "\\bre-atx-01\EFSsftp\sk2063.customervoice360.com\3064_AN\MySightTest2.tde&lt;file:///\\bre-atx-01\EFSsftp\sk2063.customervoice360.com\3064_AN\MySightTest2.tde&gt;"
+
+"C:\Tableau\Tableau Server\10.0\extras\Command Line Utility\tabcmd.exe" publish -s https://mysight-prod.questback.com -t sk2063customervoice360com -r 3064_AN --no-certcheck -u tabalteryx --password-file "C:\Tableau\Tableau Server\10.0\extras\Command Line Utility\tabcmd_password.txt" -o "\\bre-atx-01\EFSsftp\sk2063.customervoice360.com\3064_AN\MySightTest2.tde&lt;file:///\\bre-atx-01\EFSsftp\sk2063.customervoice360.com\3064_AN\MySightTest2.tde&gt;"
+
+exit
+</code></pre><p></p><p></p><ul><li>
+<p>Publish Workbooks</p>
+<ul><li><p>Use Tableau Desktop 10.0 for this task</p></li></ul>
+</li></ul><h3 id="header-54">How to manually publish your Dashboards (Author: Gordon Fiedler)</h3><p> (english translation still to come)</p><h3 id="header-55">How to manually publish Data Sources and for the first time a new Dashboard (Author: Gordon Fiedler)</h3><p> (still to come)</p><h3 id="header-56">How to reinitiate the initial sync of result data to Exasol</h3><p> case 00860069<br>When do you have to re-initiate the initial sync of the result data?<br></p><ul>
+<li><p>The first try was not successful</p></li>
+<li><p>The first try seems to be successful because the MySight log states that it was but result data is missing in Exasol</p></li>
+</ul><p><br>Steps:</p><ul>
+<li><p>Count the completes in the EFS project(s), e.g. 1000</p></li>
+<li>
+<p>Count the distinct participant_ids in the Exasol FACT table:</p>
+<ul>
+<li><pre><code class="language-text">SELECT COUNT(DISTINCT PARTICIPATION_ID) FROM PS9945.EFS_304DBDD5BA96C00C5E18AAC2C4C25894_FACT_2627;</code></pre></li>
+<li><p>Result e.g. 100</p></li>
+</ul>
+</li>
+<li>
+<p>Select the MIN and MAX participation_id</p>
+<ul><li><pre><code class="language-text">SELECT MIN(PARTICIPATION_ID) FROM PS9945.EFS_304DBDD5BA96C00C5E18AAC2C4C25894_FACT_2627;</code></pre></li></ul>
+</li>
+<li>
+<p>Check whether the job for the initial sync is still in the jobs table:</p>
+<ul><li><pre><code class="language-text">SELECT * FROM jobs WHERE todo LIKE "%2627%"</code></pre></li></ul>
+</li>
+<li>
+<p>If the job still exists, set "stat=0" and maybe also "attemptFailed=0" in the todo:</p>
+<ul><li><pre><code class="language-text">UPDATE jobs SET todo='a:3:{s:3:"act";s:33:"initialSyncMysightInstanceResults";s:10:"instanceId";i:2627;s:7:"jobData";a:1:{i:1923;a:4:{s:7:"minLfdn";s:3:"207";s

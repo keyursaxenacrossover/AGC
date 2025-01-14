@@ -1,0 +1,23 @@
+-resolved-view">MFA (Multi-Factor-Authentication)</a></span></span></span> and <span data-inline-card="true" data-card-url="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1077740348"><span class="loader-wrapper"><span aria-expanded="false" aria-haspopup="true" data-testid="hover-card-trigger-wrapper"><a class="css-118vsk3 e26bri0" tabindex="0" role="button" href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20716437527058-Portals-Setup-MFA-Setup-Password-Policy-Setup" data-testid="inline-card-resolved-view">Password Policy</a></span></span></span></p>
+<p data-renderer-start-pos="3120"> </p>
+<h4 id="How-will-a-password-reset-happen?" data-renderer-start-pos="3122"><strong data-renderer-mark="true">How will a password reset happen?</strong></h4>
+<p data-renderer-start-pos="3157">see: Tivian Access with EFS and Portals</p>
+<p data-renderer-start-pos="3198"> </p>
+<h4 id="Are-there-rules-for-password-strength-and-password-retention-policy?" data-renderer-start-pos="3200"><strong data-renderer-mark="true">Are there rules for password strength and password retention policy?</strong></h4>
+<p data-renderer-start-pos="3270">see: Tivian Access with EFS and Portals</p>
+<p data-renderer-start-pos="3311"> </p>
+<h4 id="If-a-user-logs-in-at-our-Identity-Provider,-will-the-user-be-able-to-login-every-Tivian-application?" data-renderer-start-pos="3348"><strong data-renderer-mark="true">If a user logs in at our Identity Provider, will the user be able to login every Tivian application?</strong></h4>
+<p data-renderer-start-pos="3450">No. There is a difference between the authentication (who am I?) and the authorization/access (what am I allowed to do?) in the current solution. The Identity Provider will only verify that an identity belongs to the respective user. The access right for that specific user are still managed by every Application.</p>
+<p data-renderer-start-pos="3765">Hence every user that logs in at our Identity Provider can tell every Tivian application their respective identity but will not be able to access every application.</p>
+<p data-renderer-start-pos="3931"> </p>
+<h4 id="If-we-connect-our-solution-to-the-customer's-Identity-Povider,-how-will-security-take-place-at-this-Identity-Provider?" data-renderer-start-pos="3933"><strong data-renderer-mark="true">If we connect our solution to the customer's Identity Povider, how will security take place at this Identity Provider?</strong></h4>
+<p data-renderer-start-pos="4053">The customer’s Identity Provider belongs to the customer. Therefore we do not have (and we should never have) any access to that provider changing anything. Security on the side of the Identity Provider is fully Managed by the customer.</p>
+<p data-renderer-start-pos="4291"> </p>
+<h4 id="How-will-I-be-able-to-manage-access-to-applications-in-our-Identity-Provider?" data-renderer-start-pos="4293"><strong data-renderer-mark="true">How will I be able to manage access to applications in our Identity Provider?</strong></h4>
+<p data-renderer-start-pos="4384">The Identity Provider will not manage any access policies for <mark id="e9abcd09-27be-43f9-85e9-c1e5f4a41937" class="cc-ynfe6l" aria-disabled="true" data-renderer-mark="true" data-mark-type="annotation" data-mark-annotation-type="inlineComment" data-id="e9abcd09-27be-43f9-85e9-c1e5f4a41937" data-mark-annotation-state="resolved" data-has-focus="false">now</mark>. It will only verify a user’s identity.</p>
+<p data-renderer-start-pos="4384"> </p>
+<h4 id="My-users-got-an-e-mail-to-activate-their-account-and-to-set-a-passwort-from-Okta-but-they-use-their-own-Identity-Provider---What-password-is-correct?" data-renderer-start-pos="4505"><strong data-renderer-mark="true">My users got an e-mail to activate their account and to set a passwort from Okta but they use their own Identity Provider - What password is correct?</strong></h4>
+<p data-renderer-start-pos="4656">The password the user provided at Okta will be stored at Okta. The user should never be asked for that password if this user is an Identity Provider user. But in that case either the configuration in EFS or Okta are not correct.</p>
+<p data-renderer-start-pos="4888">see Okta tenant setup and SAML Provider Setup</p>
+<p data-renderer-start-pos="4909"> </p>
+<h4 id="My-EFS-installation-is-currently-using-HTTP-(without-HTTPS)---is-it-possible-to-enable-Tivian-Access-in-that-case?" data-renderer-start-pos="4911"><strong data-renderer-mark="true">My EFS installation is currently using HTTP (without HTTPS) - is it possible to enable T

@@ -1,0 +1,32 @@
+<ul>
+<li>Same placeholders for <code>INSTALLATION_NAMES</code>, <code>START_TIMESTAMP</code>, and <code>END_TIMESTAMP</code> as in Query 1.</li>
+</ul>
+<h4 id="h_01J8M8PJQFDS5R1WFG6KA0AHZM"><strong>Step 3: Generate Queries for PE Projects (Query 3 to End)</strong></h4>
+<p>For each <code>pid</code> found in Query 2, run additional queries on the installation-specific <code>users_&lt;pid+1&gt;</code> tables to fetch email addresses.</p>
+<div class="dark bg-gray-950 contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative">
+<div class="flex items-center text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md h-9"> </div>
+<pre class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-bash">clear &amp;&amp; <span class="hljs-built_in">echo</span> <span class="hljs-string">"cluster;technical_name;uid;user_id;u_email"</span> &amp;&amp; <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <strong>INSTALLATION_NAME</strong>; <span class="hljs-keyword">do</span> 
+<span class="hljs-built_in">cd</span> /nfs/installations/<span class="hljs-variable">$i</span>/nfs/opst/<span class="hljs-variable">$i</span>.customervoice360.com/htdocs/ 2&gt; /dev/null &amp;&amp; 
+(<span class="hljs-built_in">echo</span> <span class="hljs-string">"SELECT CONCAT_WS(';', '<strong>PID1</strong>', uid, u_email) FROM users_<strong>PID1</strong>+1; 
+SELECT CONCAT_WS(';', '<strong>PID2</strong>', uid, u_email) FROM users_<strong>PID2</strong>+1;"</span> | efslogin -mo) 2&gt; /dev/null | 
+awk -v cluster=<span class="hljs-string">"<span class="hljs-subst">$(hostname | sed 's/servicegw-//g;s/^s/S/g;s/^p/P/g;s/bofa/BofA/g;s/-de-/-DE-/g;s/-us-/-US-/g')</span>"</span> -v inst=<span class="hljs-string">"<span class="hljs-variable">$i</span>"</span> <span class="hljs-string">'NR&gt;3 { OFS=";"; print cluster, inst, $0 | "sort -n | uniq" }'</span>; 
+<span class="hljs-keyword">done</span>
+</code></pre>
+</div>
+<p><strong>Placeholders:</strong></p>
+<ul>
+<li>
+<code>INSTALLATION_NAME</code>: Replace with the <strong>specific (single)</strong> installation name from Query 2 (e.g., <code>ax9072</code>).</li>
+<li>
+<code>PID1</code>, <code>PID2</code>, etc.: Replace with the <code>pid</code> values from Query 2 and increment by 1 in the From clause. For example, if the <code>pid</code> is 14261 in Query 2, the query will be <code><code class="!whitespace-pre hljs language-bash"><span class="hljs-string">SELECT CONCAT_WS(';', '14261', uid, u_email) FROM users_14262</span></code></code>.<br>Note that if an installation has 10 distinct PIDs, then the query for this installation will have 10 sub-select statements as shown in the example above.</li>
+<li>Repeat this for each installation and <code style="font-size: 15px;">pid</code> combination from Query 2.</li>
+<li>You can use Excel formulas to generate the queries, or work on a further script to generate the queries based on PID and installation name values. </li>
+</ul>
+<div class="dark bg-gray-950 contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative">
+<div class="overflow-y-auto p-4" dir="ltr">Eventually, concatenate the results of Query 1 and Queries 3 to the end to generate the report.<br><br>
+</div>
+<div class="overflow-y-auto p-4" dir="ltr">Check this sample set of queries used by the legacy team in a previous outage (not a complete list for Query 3 to End): <a href="https://docs.google.com/document/d/1WXLbmTjzvaL9NiMzPZWfGRLXCt-m2MUAVB0SKvVuGeE/edit">Commands ran for KANTAR affected user list</a>
+</div>
+</div>
+<h1 id="h_01J8M82T5J9TFBBC284BWHJAMC">Summary</h1>
+<p>By following these steps and running the provided queries, you can generate a report of suspended survey responders and their emails within a specific time interval. You will need to run Query 1 and Query 2 first to gather the necessary information, then proceed with Query 3 to extract email data for personalized surveys (

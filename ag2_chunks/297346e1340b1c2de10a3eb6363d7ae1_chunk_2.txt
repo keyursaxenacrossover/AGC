@@ -1,0 +1,75 @@
+ "198.147.160.75",
+                "198.240.128.75",
+                "87.79.30.2",     // Office-IP-Colonia
+                "195.171.100.4"   // Office-IP-Londinium
+                );
+                
+                if ( !(CheckIpRange($tobechecked,"198.240.212.1","198.240.212.254")
+                || CheckIpRange($tobechecked,"198.240.213.1","198.240.213.254")
+                || CheckIpRange($tobechecked,"164.143.0.1","164.143.255.254")
+                || CheckIpRange($tobechecked,"87.101.226.105","87.101.226.110")
+                || in_array($tobechecked,$single_IPs)))
+                
+                {
+                        header('Location: https://xy1234.customervoice360.com/uc/ipcheck/originalprojectname
+                        //     optional project to display a message instead of a blank page and mimics the exact behaviour of the default functionality
+                        // 1) create an AN copy of the original survey and turn off the use of cookies and privacy assistant
+                        // 2) remove all pages except one page with a 998 question where you add the orginal message text that should be shown if the IP check fails
+                        // 3) rename the "Continue" button to "Login"
+                        // 4) add the URL of the orginal survey to the "Destination URL" option in the properties of the final page, also deselect "ospe" and "return_tic" options
+                        // 5) change the URL to "ipcheck/originalprojectname and activate the project with same end of survey (date/time) like original project
+                        die();');
+                        
+                        die();
+                }
+                
+        }
+        
+        // }
+        
+        // fallthrough, meaning EFS will take care of the rest and proceed with its normal request handling
+}
+
+function CheckIpRange($ip, $min, $max) {
+        return (ip2long($min) &lt;= ip2long($ip) &amp;&amp; ip2long($ip) &lt;= ip2long($max));
+}</code></pre><p></p><p>and another example used to route one of the domains on one installation to the customervoice domain of another installation. The source installation is in Rackspace. Therefore you have to try to match a (:8443) instead of port 443. The 8443 is used at Rackspace.</p><p></p><pre><code class="language-text">&lt;?php
+/*
+s. Doku: https://it.globalpark.de/twiki/bin/view/Development/DevEFSGuidelineCustomizing#Custom_Request_handling_Routing
+*/
+
+function custom_routing_plugin($originalUri)
+{
+        
+        // handle all requests for https://www.peng.com/hihi* originaluri everytime include the protocol(e.g.https and a closing Slash)
+        if (preg_match('/mybluememberadvisorypanel.com(:8443){0,1}(.*)/',$originalUri,$matches)) {
+                header('Location: https://mq3022.customervoice360.com'.$matches[2]);
+                die();
+        }
+        
+        
+        
+        // fallthrough, meaning EFS will take care of the rest and proceed with its normal request handling
+}</code></pre><p>Example: Make installation unavailable for everyone except Nagios monitoring (soft deletion process)</p><p></p><pre><code class="language-text">&lt;?php
+/*
+s. Doku: https://it.globalpark.de/twiki/bin/view/Development/DevEFSGuidelineCustomizing#Custom_Request_handling_Routing
+*/
+
+function custom_routing_plugin($originalUri)
+{
+        if( $_SERVER['HTTP_X_FORWARDED_FOR'] != '10.250.10.97' &amp;&amp; $_SERVER['HTTP_X_FORWARDED_FOR'] != '10.250.1.33' &amp;&amp; $_SERVER['HTTP_X_FORWARDED_FOR'] != '10.250.0.7' &amp;&amp; $_SERVER['HTTP_X_FORWARDED_FOR'] != '87.79.30.2') {
+                die();
+        }
+        // Nagios monitoring and office CGN are allowed, everyone else will get a blank page
+}</code></pre><p></p><h3 id="header-9">Firewall based on Custom Routing Plugin</h3><p>Please see Firewall code hinzufügen <ac:link ac:card-appearance="inline"><ri:page ri:content-title="TS-Firewall based on Custom Routing Plugin" ri:version-at-save="4"></ri:page><ac:link-body>TS-Firewall based on Custom Routing Plugin</ac:link-body></ac:link> </p><pre><code class="language-text">&lt;?php
+/*
+s. Doku: https://it.globalpark.de/twiki/bin/view/Development/DevEFSGuidelineCustomizing#Custom_Request_handling_Routing
+*/
+
+function custom_routing_plugin($originalUri)
+{
+        @include_once gp_conf::get('basepath_extensions').'/TsCodeHelper/Firewall/Firewall.php';
+        TsCodeHelper\Firewall\Firewall::getInstance()
+        -&gt;run();
+}</code></pre><p></p><p><strong>Example for using a custom domain to open one specific survey:</strong></p><pre><code class="language-text">&lt;?php
+/*
+s. Doku: https://it.globalpark.de/twiki/bin/view/Development/DevEFSGuidelineCustomizing#Custom

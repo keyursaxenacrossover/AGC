@@ -1,0 +1,63 @@
+>default tableau server for all new installations</strong></p></td>
+</tr>
+<tr>
+<td><p><strong>Frankfurt / Prod_DE_02</strong></p></td>
+<td><p>customer installations</p></td>
+<td><p>PROD</p></td>
+<td><p><a href="https://mysight-prod2-de.customervoice360.com/">https://mysight-prod2-de.customervoice360.com/</a></p></td>
+<td><p><strong>default tableau server for all new installations</strong></p></td>
+</tr>
+<tr>
+<td><p><strong>Rackspace</strong></p></td>
+<td><p>internal installations <strong>not used anymore</strong></p></td>
+<td><p>USPREPROD_NON_A</p></td>
+<td><p><a href="https://mysight-preprod-us.customervoice360.com">https://mysight-preprod-us.customervoice360.com</a></p></td>
+<td><p><strong>default tableau server for all new installations</strong></p></td>
+</tr>
+<tr>
+<td><p><strong>AWS - ex Rackspace</strong></p></td>
+<td><p>customer installations</p></td>
+<td><p>USPROD_NON_A</p></td>
+<td><p><a href="https://mysight-prod-us.customervoice360.com">https://mysight-prod-us.customervoice360.com</a></p></td>
+<td><p><strong>default tableau server for all new installations</strong></p></td>
+</tr>
+<tr>
+<td><p><strong>Testkanal</strong></p></td>
+<td><p>internal installations</p></td>
+<td><p>TABTKA</p></td>
+<td><p><a href="https://tableau10.qb-feedback.com">https://tableau10.qb-feedback.com</a></p></td>
+<td><p><strong>default tableau server for all new installations</strong></p></td>
+</tr>
+<tr>
+<td><p><strong>US_AWS_Prod</strong></p></td>
+<td><p>customer installations</p></td>
+<td><p>US_AWS_PROD</p></td>
+<td><p><a href="https://mysight-prod-us.customervoice360.com">https://mysight-prod-us.customervoice360.com</a></p></td>
+<td><p><strong>default tableau server for all new AWS installations</strong></p></td>
+</tr>
+<tr>
+<td><p><strong>DEV-QA-AWS</strong></p></td>
+<td><p>internal</p></td>
+<td><p>DEV_QA</p></td>
+<td>
+<p><a href="https://tableau10.qb-feedback.com/"><del>https://tableau10.qb-feedback.com</del></a></p>
+<p>use preprod2 if needed: </p>
+<p><a href="https://mysight-preprod2-de.customervoice360.com">https://mysight-preprod2-de.customervoice360.com</a></p>
+</td>
+<td><p><strong>same as TKA, <span style="color: rgb(255,86,48);">not working </span>&amp; there is no dedicated DEV-QA-EXASOL-cluster yet</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div><p><strong>Former Settings</strong></p><p><strong>INFO: List of all Europe &amp; US pre production and production </strong><a href="https://it.globalpark.de/twiki/bin/view/Support/MySight#MySight_PREPROD_and_PREPROD2_Tab"><strong>Tableau Servers</strong></a></p><h3 id="header-10">5. Add a new MySQL or EXASOL connection in EFS admin area (MySight settings)</h3><ul>
+<li><p><strong>Where: System &gt;&gt; Options &gt;&gt; qb:: MySight settings &gt;&gt; MySight connections &gt;&gt; New MySQL connection or New EXASOL connection</strong> (drop down menu)</p></li>
+<li><p><strong>fill up "General settings", "Database settings" and "Tableau settings"</strong>(see below)</p></li>
+</ul><p><strong>Example</strong></p><ul><li>
+<p>General settings</p>
+<ul><li><p>Connection label: <strong>PREPROD2-[SCHEMA]</strong> (nomeclature for internal installations), <strong>PROD-[SCHEMA]</strong> (nomeclature for customer installations)</p></li></ul>
+</li></ul><p></p><ul><li>
+<p>Database settings</p>
+<ul>
+<li><p>Database Server GIVEN BY SYSTEM ENGINEERS! Currently valid: Url: <strong>10.250.0.21, 10.250.0.23, 10.250.11.20, 10.250.11.21 (Frankfurt)</strong>, (old <del>10.250.10.183</del>) and <strong>172.24.16.47 (Rackspace)</strong></p></li>
+<li><p>DB User + PWD as given in config unless specified differently by SA</p></li>
+<li><p>Database Name = [SCHEMA] (AB1234)</p></li>
+<li><p>Database port: <

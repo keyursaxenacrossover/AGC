@@ -1,0 +1,110 @@
+<p><strong>Original Confluence URL:</strong> <a href="https://qbdocs.atlassian.net/wiki/spaces/1LS/pages/3445620753">https://qbdocs.atlassian.net/wiki/spaces/1LS/pages/3445620753</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+<article>
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K">Overview</h1>
+<p>This article provides information about billable services and additional support tasks that may incur costs for customers. It includes a comprehensive table of various tasks, their classifications, effort estimates, and proposed price tags.</p>
+<p> </p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>This guide outlines the general approach to support services, including those that may be billable. It aims to clarify what is included in standard support and what may result in additional costs for customers.</p>
+<ul>
+<li><a href="#general_approach">General Approach to Support Services</a></li>
+<li><a href="#billable_services_table">Billable Services Table</a></li>
+<li><a href="#additional_considerations">Additional Considerations</a></li>
+</ul>
+<p> </p>
+<h2 id="general_approach">General Approach to Support Services</h2>
+<p>The approach to support services is based on how support is defined in contracts. It is important to have a clear definition of what is included in standard support without additional costs. Customers need to be informed that some support tasks will incur additional charges. A grace period may be implemented to avoid any discussions regarding unexpected costs.</p>
+<p> </p>
+<h2 id="billable_services_table">Billable Services Table</h2>
+<p>The following table outlines various tasks, their classifications, effort estimates, and proposed price tags. This information is used for Statement of Work (SOW) purposes.</p>
+<table border="1" cellspacing="0" cellpadding="5">
+<tbody>
+<tr>
+<th>Task</th>
+<th>Description</th>
+<th>Classification</th>
+<th>Effort 1st</th>
+<th>Proposed price tag (€)</th>
+<th>Comment</th>
+</tr>
+<tr>
+<td>External mailserver setup/change</td>
+<td> </td>
+<td>Additional support with costs</td>
+<td>Depends on communication with customer, 0.5-2h</td>
+<td>2*156.25 = 312.50</td>
+<td> </td>
+</tr>
+<tr>
+<td>Setup DKIM</td>
+<td> </td>
+<td>Additional support with costs</td>
+<td>0.5-1h depends on communication</td>
+<td>156.25</td>
+<td> </td>
+</tr>
+<tr>
+<td>Reporting+ Extension (100,000 datasets)</td>
+<td> </td>
+<td>Additional support with costs, but CSM should be in charge for this</td>
+<td> </td>
+<td>156.25 + x per year</td>
+<td>x per year because of larger DB tables, longer time to copy the database etc. Handover to CSM</td>
+</tr>
+<tr>
+<td>Implementation consulting</td>
+<td> </td>
+<td>NO SUPPORT TASK → PS</td>
+<td>PS task, if easy 1st but with invoice</td>
+<td>156.25 / hour</td>
+<td> </td>
+</tr>
+<tr>
+<td>DNS changes on our side</td>
+<td> </td>
+<td>Additional support with costs</td>
+<td>Communication up to 3 hours</td>
+<td>1.5*156.25 = 234.37</td>
+<td>Mean value, standard price</td>
+</tr>
+<tr>
+<td>Recover data from database (instead from mirror)</td>
+<td> </td>
+<td>Additional support with costs</td>
+<td>Communication 0.5h</td>
+<td>4*156.25 = 625</td>
+<td>Standard price to avoid any discussion</td>
+</tr>
+<tr>
+<td>Mirror</td>
+<td> </td>
+<td>Additional support with costs, but CSM should be in charge for this</td>
+<td> </td>
+<td>2500 + 125 per month</td>
+<td>Calculated price by IT-OPS, 125 per month due to costs for file space etc. (5% of costs for the preparation) Handover to CSM</td>
+</tr>
+<tr>
+<td>Domain Alias managed by Tivian</td>
+<td> </td>
+<td>Additional support with costs</td>
+<td> </td>
+<td>240 / year</td>
+<td> </td>
+</tr>
+<tr>
+<td>Custom Domain managed by Tivian</td>
+<td> </td>
+<td>Additional support with costs</td>
+<td> </td>
+<td>1500 / year<br>above 3 domains: 240 / year</td>
+<td> </td>
+</tr>
+<tr>
+<td>Activate Panelist data log</td>
+<td> </td>
+<td>Resources</td>
+<td>15 min but activation means that more resources are also needed, as much more data is generated.</td>
+<td>Yearly fee?</td>
+<td> </td>
+</tr>
+<tr>
+<td>Reactivate deleted panelists (if

@@ -1,0 +1,92 @@
+<ul>
+<li><a href="#header-1">Improved Leadership 360°</a></li>
+<li>
+<a href="#header-3">Enhancements to EFS Platform</a>
+<ul>
+<li>
+<a href="#header-5">Anti-virus and malware scanning for uploads in EFS</a>
+<ul>
+<li><a href="#header-7">CSRF Tokens in EFS Admin</a></li>
+<li><a href="#header-8">Improvements in the Interview Counts view</a></li>
+<li><a href="#header-9">Smaller changes within the EFS Platform</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#header-12">Enhancements to Projects (EFS Survey)</a>
+<ul>
+<li><a href="#header-14">Audio Recorder</a></li>
+<li><a href="#header-15">Other Enhancements to Projects</a></li>
+</ul>
+</li>
+<li><a href="#header-17">Enhancements to People</a></li>
+<li>
+<a href="#header-19">Enhancements to Panel Website</a>
+<ul>
+<li><a href="#header-21">Responsive Panel website v2</a></li>
+</ul>
+</li>
+<li><a href="#header-23">Service Layer</a></li>
+</ul>
+<p>With this release we are introducing important security enhancements, a new panel website template, improvements in the Survey module and a new question type. Also don’t miss our improved Leadership360 offering.</p>
+<div class="panel conf-macro output-block" style="background-color: #eae6ff; border-color: #998dd9; border-width: 1.0px;">
+<div class="panelContent" style="background-color: #eae6ff;">
+<p>With this release we are introducing important security enhancements, a new panel website template, improvements in the Survey module and a new question type. Also don’t miss our improved Leadership360 offering.</p>
+</div>
+</div>
+<p>With this release we also introduce our new deprecation of features process together with a <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20319105675922" target="_blank" rel="noopener noreferrer">list of deprecated modules and features</a>. Please review the list carefully and transition your projects away from the deprecated features in time for the end of life of the respective feature.</p>
+<h2 id="header-1">Improved Leadership 360°</h2>
+<hr>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21036786266258" alt="MicrosoftTeams-image (7).png"></p>
+<p>The Leadership 360° solution was greatly improved with this release:</p>
+<ul>
+<li>
+<p>An improved dashboard view for a clear presentation of results</p>
+</li>
+<li>
+<p>Integrate actions into the results dashboard.</p>
+<ul>
+<li>
+<p>Allow actions to be launched directly from the dashboard</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Integration of tips for further steps</p>
+</li>
+<li>
+<p>Possibility to share the results dashboard to give</p>
+<p>e.g. coaches or the team access to the results</p>
+</li>
+<li>
+<p>Ability to remind focus persons from the portal</p>
+</li>
+</ul>
+<p> </p>
+<p>In addition, Tivian provides predefined Leadership 360° models and associated suggested actions:</p>
+<ul>
+<li>
+<p>Transformational Leadership - Senior Management</p>
+</li>
+<li>
+<p>Transformational Leadership - New Management</p>
+</li>
+<li>
+<p>Inclusive Leadership</p>
+</li>
+<li>
+<p>Operational Effectiveness</p>
+</li>
+<li>
+<p>and a flexible modular Leadership 360° solution</p>
+</li>
+</ul>
+<p> </p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21036792792210" alt="image-20220825-151100.png"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21036792556306" alt="image-20220825-150317.png"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21036792287122" alt="image-20220825-151238.png"></p>
+<h2 id="header-3">Enhancements to EFS Platform</h2>
+<h3 id="header-5">Anti-virus and malware scanning for uploads in EFS</h3>
+<p>With EFS 22.2 all customers benefit from ad-hoc anti-virus and malware scanning for all uploads within EFS. This applies to all uploads in the EFS Administration area, as well as the Upload and Audio question types in surveys or uploads in Portals. During an upload, the file is immediately scanned for malware, before being moved to its final destination within the EFS platform. If a malware is found, the file is immediately removed from the temporary storage and the user is notified that the upload was not successful. This approach ensures that at no point malware can be distributed through EFS.</p>
+<h4 id="header-7">CSRF Tokens in EFS Admin</h4>
+<p>The EFS Administration area is now protected with CSRF tokens from cross-site attacks without compromising on usability. While being reliably protected from cross-site request forgery attacks, administration users can continue working in concurrent browser tab sessions.</p>
+<h4 id="header-8">Improvements in the Interview Counts view

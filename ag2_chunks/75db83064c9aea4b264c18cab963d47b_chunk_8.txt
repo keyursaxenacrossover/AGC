@@ -1,0 +1,72 @@
+Hidden</h3>
+<p class="wysiwyg-text-align-justify">Gets whether a sheet is hidden or not.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.sheetGetIsHidden(pageModuleIdentifier, sheetNameOrIndex)
+    .then(function(hidden) {
+        ...
+    });</code></pre>
+<h3 id="mysight-sheetgettype" class="wysiwyg-text-align-justify">mySight.sheetGetType</h3>
+<p class="wysiwyg-text-align-justify">Gets the type of the currently active or a specific sheet.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.sheetGetType(pageModuleIdentifier, sheetNameOrIndex)
+    .then(function(type) {
+        ...
+    });</code></pre>
+<h3 id="mysight-sheetgeturl" class="wysiwyg-text-align-justify">mySight.sheetGetUrl</h3>
+<p class="wysiwyg-text-align-justify">Gets the url of the currently active or a specific sheet.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.sheetGetUrl(pageModuleIdentifier, sheetNameOrIndex)
+    .then(function(url) {
+        ...
+    });</code></pre>
+<h3 id="mysight-sheetgetsize" class="wysiwyg-text-align-justify">mySight.sheetGetSize</h3>
+<p class="wysiwyg-text-align-justify">Gets the size of the currently active or a specific sheet.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.sheetGetSize(pageModuleIdentifier, sheetNameOrIndex)
+    .then(function(size) {
+        ...
+    });</code></pre>
+<h3 id="mysight-sheetchangesize" class="wysiwyg-text-align-justify">mySight.sheetChangeSize</h3>
+<p class="wysiwyg-text-align-justify">Sets the size of the active sheet.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.sheetChangeSize(pageModuleIdentifier, sheetSizeOptions)
+    .then(function() {
+        ...
+    });</code></pre>
+<h3 id="mysight-sheetgetfilters" class="wysiwyg-text-align-justify">mySight.sheetGetFilters</h3>
+<p class="wysiwyg-text-align-justify">Gets the filters of a sheet specified by its name.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.sheetGetFilters(pageModuleIdentifier, sheetName)
+    .then(function(filters) {
+        ...
+    });</code></pre>
+<h3 id="mysight-sheetapplyfilter" class="wysiwyg-text-align-justify">mySight.sheetApplyFilter</h3>
+<p class="wysiwyg-text-align-justify">Applies the filter for a sheet specified by its name.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.sheetApplyFilter(pageModuleIdentifier, sheetName, fieldName, values, updateType, options)
+    .then(function(fieldName) {
+        ...
+    });</code></pre>
+<h3 id="mysight-sheetapplyrangefilter" class="wysiwyg-text-align-justify">mySight.sheetApplyRangeFilter</h3>
+<p class="wysiwyg-text-align-justify">Applies the range filter for a sheet specified by its name.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.sheetApplyRangeFilter(pageModuleIdentifier, sheetName, fieldName, range)
+    .then(function(fieldName) {
+        ...
+    });</code></pre>
+<h3 id="mysight-sheetapplyrelativedatefilter" class="wysiwyg-text-align-justify">mySight.sheetApplyRelativeDateFilter</h3>
+<p class="wysiwyg-text-align-justify">Applies the relative date filter for a sheet specified by its name.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.sheetApplyRelativeDateFilter(pageModuleIdentifier, sheetName, fieldName, options)
+    .then(function(fieldName) {
+        ...
+    });</code></pre>
+<h3 id="mysight-sheetapplyhierarchicalfilter" class="wysiwyg-text-align-justify">mySight.sheetApplyHierarchicalFilter</h3>
+<p class="wysiwyg-text-align-justify">Applies the hierarchical filter for a sheet specified by its name.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.sheetApplyHierarchicalFilter(pageModuleIdentifier, sheetName, fieldName, values, options)
+    .then(function(fieldName) {
+        ...
+    });</code></pre>
+<h3 id="mysight-sheetclearfilter" class="wysiwyg-text-align-justify">mySight.sheetClearFilter</h3>
+<p class="wysiwyg-text-align-justify">Clears the filter for a sheet specified by its name.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.sheetClearFilter(pageModuleIdentifier, sheetName, fieldName)
+    .then(function(fieldName) {
+        ...
+    });</code></pre>
+<hr>
+<h2 id="listening-to-mysight-tableau-events" class="wysiwyg-text-align-justify">Listening to MySight Tableau events</h2>
+<p class="wysiwyg-text-align-justify">The api supports registering for a number of Tableau events. The supported events are:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>FIRST_INTERACTIVE</p>

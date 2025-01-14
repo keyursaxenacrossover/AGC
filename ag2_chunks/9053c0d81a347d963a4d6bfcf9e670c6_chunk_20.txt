@@ -1,0 +1,81 @@
+justify">
+<li>
+<strong>Contacts</strong>: Log personal and telephone contacts or e-mail exchanges not conducted via EFS Panel. Use the <strong>Add contact</strong> button to enter new events.</li>
+<li>
+<strong>Contacts via panel site</strong>: Logs requests made via the contact form on the panel site.</li>
+<li>
+<strong>Contacts via system</strong>: Logs e-mails sent to panelists via EFS Panel.</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><strong>Note</strong>: To avoid performance issues, mail archives are cleaned automatically every six months.</p>
+<p class="wysiwyg-text-align-justify"><strong>Logging Contacts Outside EFS Panel:</strong></p>
+<ol class="wysiwyg-text-align-justify">
+<li>Open the detail view for the desired panelist.</li>
+<li>Click <strong>Edit contacts</strong>.</li>
+<li>Click <strong>Add contact</strong> to open the form for new events.</li>
+<li>Select the contact method (phone, personal, e-mail) from the “Way of contact” drop-down list.</li>
+<li>The editor and date are set automatically.</li>
+<li>Enter a subject and detailed information in the “Content” entry form.</li>
+<li>Click <strong>Submit</strong> to save the new entry.</li>
+</ol>
+<h3 id="h_01J3FXXTZJQXBBTA9YJWZ3D9B8" class="wysiwyg-text-align-justify">Viewing a Panelist’s Login Data</h3>
+<p class="wysiwyg-text-align-justify"><strong>Access Login Information:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Click the <strong>Show login information</strong> button to view the panelist’s pseudonym, panelist code, login link, and security question/answer (if available).</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Login Links:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Panelists can log in using a URL containing a specific code, useful for email invitations. Clicking the login link allows direct access to the panelist’s personal area.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>View and Use Login Links:</strong></p>
+<ol class="wysiwyg-text-align-justify">
+<li>
+<strong>Detail view</strong>: Find the panelist code in the “Panelist code” field. It is clickable for direct login.</li>
+<li>
+<strong>Show login information</strong>: This dialog shows both the panelist code and the login link, which is clickable for direct login.</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><strong>Generating New Panelist Codes:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Click <strong>Generate new panelist code</strong> in the “Status information” section of the detail view.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Exporting Login Links:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Search for panelists in the Panelists administration and apply “Export links” to export their login links.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Sending Login Links by E-mail:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Use wildcards to construct personalized login links:
+<ul>
+<li>Wildcard for panelist code: <code>#panelist_code#</code>
+</li>
+<li>URL parameter: <code>login_code</code>
+</li>
+<li>Example link: <code>http://your-domain.com/panelwebsite/?login_code=#panelist_code#</code>
+</li>
+<li>Alternative example: <code>#panel_url#?login_code=#panelist_code#</code>
+</li>
+</ul>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Directing Panelists to Specific Pages:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Use: <code>#panel_url#dateiname.php?login_code=#panelist_code#&amp;chosen_site=#site_id#</code>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Using Shortened Login Links:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>If long login links are problematic, generate shorter links using the wildcard <code>#panelist_login_code#</code>.
+<ul>
+<li>Wildcard for shortened code: <code>#panelist_login_code#</code>
+</li>
+<li>URL parameter for direct login with shortened code: <code>lc</code>
+</li>
+<li>Example link:
+<ul>
+<li><code>http://your-domain.com/panelwebesite/?lc=QAplygBpxAoPhVL3ceoIL8ztW5g</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="PanelistsAdministration-Resetting2FA" class="wysiwyg-text-align-justify"><strong>Resetting 2FA</strong></h3>
+<p class="wysiwyg-text-align-justify"><span class="legacy-color-text-blue3" style="color: #172b4d;">If a panelist has fully set up two-factor authentication for a panel website,

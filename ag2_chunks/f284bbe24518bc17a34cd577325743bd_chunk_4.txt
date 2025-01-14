@@ -1,0 +1,228 @@
+, doesn’t use internal API</p>
+</li>
+<li>
+<p>Usable only with access-token or HTTP-Basic auth</p>
+<ul>
+<li>
+<p>Access-token is generated within EFS Admin area for dedicated ACL rights</p>
+</li>
+<li>
+<p>HTTP-Basic auth uses credentials of admininstrator login and inherits resp. ACL rights</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Covers a subset of all functionality available in EFS</p>
+</li>
+<li>
+<p>Used technologies:</p>
+<ul>
+<li>
+<p>PHP</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Hosted on EFS Backend pods</p>
+</li>
+<li>
+<p>Supported protocols:</p>
+<ul>
+<li>
+<p>REST</p>
+</li>
+<li>
+<p>SOAP</p>
+</li>
+<li>
+<p>JSON (homebrew protocol usually used by Product-Customizing)</p>
+</li>
+<li>
+<p>PHP (homebrew protocol usually used by Product-Customizing)</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Sourcecode</p>
+<ul>
+<li>
+<p><a href="https://bitbucket.org/qbengineering/tivian_server_application_efs/src/master/modules/service/" data-card-appearance="inline">https://bitbucket.org/qbengineering/tivian_server_application_efs/src/master/modules/service/</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="header-13">Backend components</h2>
+<h3 id="header-15">EFS internal API</h3>
+<ul>
+<li>
+<p>API for all UI components</p>
+</li>
+<li>
+<p>Usable only with active EFS Session or JWT token</p>
+</li>
+<li>
+<p>Used technologies:</p>
+<ul>
+<li>
+<p>PHP</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Covers all functionality available in EFS</p>
+</li>
+<li>
+<p>Hosted on EFS Backend pods</p>
+</li>
+<li>
+<p>Sourcecode</p>
+<ul>
+<li>
+<p><a href="https://bitbucket.org/qbengineering/tivian_server_application_efs/src/master/modules/" data-card-appearance="inline">https://bitbucket.org/qbengineering/tivian_server_application_efs/src/master/modules/</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="header-16">EFS Backend</h3>
+<ul>
+<li>
+<p>Functionality for all domains and modules</p>
+</li>
+<li>
+<p>Used technologies:</p>
+<ul>
+<li>
+<p>LEMP Stack</p>
+<ul>
+<li>
+<p>Separated into 2 pods</p>
+</li>
+<li>
+<p>Nginx pod</p>
+</li>
+<li>
+<p>PHP-FPM pod with EFS codebase</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Storage</p>
+<ul>
+<li>
+<p>MariaDB</p>
+</li>
+<li>
+<p>Exasol</p>
+</li>
+<li>
+<p>Memcached</p>
+</li>
+<li>
+<p>Elasticsearch</p>
+</li>
+<li>
+<p>NFS</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Message Bus/Queue</p>
+<ul>
+<li>
+<p>Kafka</p>
+</li>
+<li>
+<p>RabbitMQ</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Services</p>
+<ul>
+<li>
+<p>Aspose PPTX-Service</p>
+</li>
+<li>
+<p>Tableau</p>
+</li>
+<li>
+<p>Okta</p>
+</li>
+<li>
+<p>Hurricane MTA</p>
+</li>
+<li>
+<p>Tyntec SMS</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Sourcecode</p>
+<ul>
+<li>
+<p><a href="https://bitbucket.org/qbengineering/tivian_server_application_efs/src/master/" data-card-appearance="inline">https://bitbucket.org/qbengineering/tivian_server_application_efs/src/master/</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="header-17">EFS Jobs</h3>
+<ul>
+<li>
+<p>Background jobs for EFS</p>
+</li>
+<li>
+<p>Runs various background-jobs for EFS i.e.</p>
+<ul>
+<li>
+<p>Mail/sms delivery</p>
+</li>
+<li>
+<p>Datasync to Kafka/Exasol</p>
+</li>
+<li>
+<p>Reportgeneration for Reporting+</p>
+</li>
+<li>
+<p>Bouncemanagement handling from Hurricane MTA via RabbitMQ</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Used technologies</p>
+<ul>
+<li>
+<p>Separate PHP pods with EFS codebase</p>
+<ul>
+<li>
+<p>Handling jobs for all EFS installations</p>
+</li>
+</ul>
+</li>
+<li>
+<p>PHP</p>
+</li>
+<li>
+<p>crond</p>
+</li>
+<li>
+<p>Storage</p>
+<ul>
+<li>
+<p>MariaDB</p>
+</li>
+<li>
+<p>Exasol</p>
+</li>
+<li>
+<p>Elasticsearch</p>
+</li>
+<li>
+<p>NFS</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Message Bus/Queue</p>
+<ul

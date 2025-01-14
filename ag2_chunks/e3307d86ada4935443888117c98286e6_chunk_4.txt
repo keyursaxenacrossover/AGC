@@ -1,0 +1,49 @@
+-supportdesk.zendesk.com/hc/article_attachments/20998123809042" alt="DE_EN_portallanguage.png"></p>
+<h3 id="header-21">Remove Participants</h3>
+<p>You can remove participants from a company managed group. Therefore, you have to edit the group. An <strong>X</strong> icon will appear next to each member of the group. The company managed group itself will not be affected by this process. You can undo the removal by searching for this group again and selecting it. As of this release, this feature will be available to the <em>Leadership-Guide</em> (ME-Guide) and the <em>Team-Improvement-Guide</em> (US-Guide).</p>
+<h2 id="header-23">Leadership-Guides (ME-Guides)</h2>
+<p>The configuration and control options of the <em>Leadership Guide</em> (ME-Guides) have been refined: You can set an anonymity limit and the <strong>Process Control</strong> tab allows you to set conditions for when the survey process can be considered successful. The start date of the Guide waves will be displayed and completed guide waves will not be overwritten after a restart, but will be listed.</p>
+<h3 id="header-25">Rater-Groups</h3>
+<p>In the configuration menu <strong>Rater-Groups</strong> it is now excluded that a rater group is selected and configured twice. An already selected group is grayed out (in the example the group "Self Assessment" is already selected and therefore grayed out).</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998094359442" alt="EN_ratergroup_grayed.png"></p>
+<h3 id="header-26">Deactivate Self-Assessment</h3>
+<p>The rater group <strong>Self-Assessment</strong> can now be deactivated (for a ME-Guide). Simply uncheck the checkbox for this. The creator of the guide will not be invited to the survey and will not receive any reminder e-mails. However, he will still be informed of the survey's results by e-mail and will receive voucher codes (if there are offline participants).</p>
+<h3 id="header-27">Anonymity Criteria</h3>
+<p>You can define an <strong>Anonymity Criteria</strong> for the rater group of a guide. You specify the minimum number of participants in the rater group who must participate in the survey in order to maintain their anonymity. Therefore, with this value, you also define when a guide wave was successful and results are displayed.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998138926866" alt="EN_anonymitycriteria.png"></p>
+<h3 id="header-28">New Tab: Process Control</h3>
+<p>In the guide configuration there is the new tab <strong>Process Control</strong>. Here you define the conditions under which the survey process is considered successful or unsuccessful, and the actions that this should entail. It is divided into the following three sections:</p>
+<ul>
+<li>
+<p>Definition of a successful process</p>
+</li>
+<li>
+<p>Define actions to be triggered on successful process</p>
+</li>
+<li>
+<p>Define actions to be triggered on unsuccessful process</p>
+</li>
+</ul>
+<p>In the first section, you specify the conditions that define the process as successful. If you have activated <strong>Self-Assessment</strong> (see above), the first condition is, that the Self-Assessment is <strong>completed</strong>. As second condition, enter the <strong>Number of Rater-Groups above the anonymity-threshold</strong>.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998126269714" alt="EN_processcontrol1.png"></p>
+<p>Then, in the second and third sections, determine which actions should be triggered if your process is considered <em>successful</em> or <em>unsuccessful</em>. The following options are available:</p>
+<ul>
+<li>
+<p><strong>Order report</strong>: In the <em>Report Manager</em>, a report is ordered based on the settings made in the guide configuration (<em>Settings &gt; Report-Manager Connection</em>). This is created in PDF format and in the portal language of the guide creator.</p>
+</li>
+<li>
+<p><strong>Create action</strong>: Specify here whether an Action should be created in the <em>Action Board</em> (with a certain due date, where appropriate).</p>
+</li>
+<li>
+<p><strong>Send e-mail</strong>: You can choose to send an e-mail to the guide initiator or to a panelist whose e-mail address you should enter. Also select the appropriate mail template.</p>
+</li>
+<li>
+<p><strong>Update Master data</strong>: The date on which the successful process occurred is added to the selected master data variable.</p>
+</li>
+</ul>
+<p>For a process that has been classified as <em>unsuccessful</em>, only the actions <strong>Send e-mail</strong> and <strong>Update Master data</strong> are available.</p>
+<p> </p>
+<h3 id="header-29">Information</h3>
+<p>The actions can be combined with each other and the same action can be selected several times.</p>
+<h3 id="header-30">Start Date in Guide Status</h3>
+<p>For a better overview of your surveys, the

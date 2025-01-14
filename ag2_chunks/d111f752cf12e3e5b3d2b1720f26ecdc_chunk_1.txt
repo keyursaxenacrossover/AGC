@@ -1,0 +1,104 @@
+p>Text + Heading</p></li>
+<li>
+<p>Add Logo?? (to be clarified)</p>
+<ul><li><p><span style="color: rgb(76,154,255);">Would make sense</span></p></li></ul>
+</li>
+</ul>
+</li></ul>
+</li>
+<li>
+<p>Authentication</p>
+<ul><li>
+<p>Sign On + Password</p>
+<ul><li><p>Rename questback policies</p></li></ul>
+</li></ul>
+</li>
+<li>
+<p>Multifactor</p>
+<ul><li>
+<p>Factor Enrollment</p>
+<ul><li><p>Rename questback policies</p></li></ul>
+</li></ul>
+</li>
+<li>
+<p>Identity Providers</p>
+<ul>
+<li>
+<p>Identity Providers</p>
+<ul><li><p>Add Tivian Azure AD !!!</p></li></ul>
+</li>
+<li>
+<p>Routing Rules</p>
+<ul><li><p>Change Questback routing rule</p></li></ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Administrators</p>
+<ul><li><p>Add new Tivian Administrators</p></li></ul>
+</li>
+<li>
+<p>API</p>
+<ul>
+<li>
+<p>Authorization Server</p>
+<ul>
+<li><p>Add new Tivian Authorization Server</p></li>
+<li><p>Change audience from api://questback to something different</p></li>
+</ul>
+</li>
+<li>
+<p>Tokens</p>
+<ul><li><p>Change User Generated Tokens</p></li></ul>
+</li>
+<li>
+<p>Trusted Origins</p>
+<ul><li><p>Change if necessary</p></li></ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Applications</p>
+<ul><li><p>Issuer?</p></li></ul>
+</li>
+<li>
+<p>People</p>
+<ul>
+<li>
+<p>Add all Tivian Users - Discuss with IT OPs</p>
+<ul><li><p>Can we just add users? Or do we have to change them?</p></li></ul>
+</li>
+<li><p>Root user: Stay as is? Talk to IT OPs</p></li>
+</ul>
+</li>
+</ul><p></p><h3 id="header-6">PROD Only:</h3><ul>
+<li><p>Change billing address and contact person</p></li>
+<li><p>Organization contact</p></li>
+</ul><p></p><h3 id="header-7">Clients:</h3><ul><li>
+<p>Change Application Redirect URI in external IDPs (!!!!!)</p>
+<ul>
+<li><p>Talk to IT OPs - Major Change! (SAML and OIDC)</p></li>
+<li><p>New Metadata Document</p></li>
+<li><p>New Redirect URI for OIDC</p></li>
+</ul>
+</li></ul><p></p><h3 id="header-8">EFS/DV Config:</h3><ul>
+<li><p>audience (see authorization server)</p></li>
+<li><p>iam_federated_domains in all installations to tivian.com</p></li>
+<li><p>iam_well_known_url</p></li>
+</ul><p></p><h3 id="header-9">EFS?:</h3><ul><li><p>Questback Access Status in User Details</p></li></ul><h3 id="header-10">DV?</h3><p></p><h3 id="header-11">Development/Backoffice Resources:</h3><ul>
+<li><p>Rename Git Repositories</p></li>
+<li><p>Rename Confluence Thingies (especially FAQ)</p></li>
+</ul><p></p><h3 id="header-12">Marketing + Sales:</h3><ul>
+<li><p>Change Marketing Material (Nicola?)</p></li>
+<li><p>Change documents for external communication (Nicola)</p></li>
+</ul><p></p><h2 id="header-14">Next Steps:</h2><ul>
+<li><p>Discuss with: <ac:link><ri:user ri:userkey="8a7f80856412af8a016412fb8b10003f"></ri:user></ac:link> <ac:emoticon ac:emoji-fallback=":check_mark:" ac:emoji-id="atlassian-check_mark" ac:emoji-shortname=":check_mark:" ac:name="tick"></ac:emoticon></p></li>
+<li><p>Chunking of tasks</p></li>
+<li><p>Prioritization of chunks</p></li>
+<li>
+<p>Discuss with: <ac:link><ri:user ri:userkey="8a7f808a6d264d3e016d2a588f680135"></ri:user></ac:link> <ac:link><ri:user ri:userkey="8a7f808a6d264d3e016d2a4970f50126"></ri:user></ac:link> <ac:link><ri:user ri:userkey="8a7f80836167dc8b01616f9df8f50318"></ri:user></ac:link> </p>
+<ul>
+<li><p>Create plan + timeline</p></li>
+<li><p>Discussion</p></li>
+<li><p>Prioritize again</p></li>
+</ul

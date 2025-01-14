@@ -1,0 +1,77 @@
+>
+<p class="wysiwyg-text-align-justify">By default, a value of 1 is set.</p>
+<p class="wysiwyg-text-align-justify">Please note: random selection is not a uniform distribution.</p>
+<h4 id="filters-in-random-selection-branches" class="wysiwyg-text-align-justify">Filters in Random Selection Branches</h4>
+<p class="wysiwyg-text-align-justify">If a random selection branch contains a filter whose condition is not met, the random selection will be repeated until</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>a page without filters is found,</p>
+</li>
+<li>
+<p>a filter whose condition is met is found or</p>
+</li>
+<li>
+<p>all subpages have been tried without a filter being met.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If a random selection branch contains a second random selection branch which in turn contains filters, the following complication may occur:</p>
+<p class="wysiwyg-text-align-justify">The first random selection process selects the second random selection branch from the various options. The random selection initiated by the second branch, in turn, finds a filter whose condition is not met. In this case, the entire random selection process will be aborted, and the survey will be continued on the main level.</p>
+<h3 id="random-order" class="wysiwyg-text-align-justify">Random order</h3>
+<p class="wysiwyg-text-align-justify">The order of pages can be randomly changed.</p>
+<p class="wysiwyg-text-align-justify">Please proceed as follows:</p>
+<ol class="wysiwyg-text-align-justify" start="1">
+<li>
+<p>Open the “Dynamics” drop-down list above the questionnaire view and create a “Random order” element.</p>
+</li>
+<li>
+<p>Drag this element to the desired position in the questionnaire.</p>
+</li>
+<li>
+<p>Drag all pages whose position should be switched at random into an indented branch below the “Random order” element.</p>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify">Any number of nestings of random order blocks is possible.</p>
+<p class="wysiwyg-text-align-justify">To find out in which order a participant has seen the pages in a random order branch, check the content of the variables “rnd_pg_PGID_NR” in the export file.</p>
+<h3 id="loops" class="wysiwyg-text-align-justify">Loops</h3>
+<p class="wysiwyg-text-align-justify">“Loops” differ from normal questionnaire branches insofar as their page contents and variables are not yet fixed at the beginning of the survey, but are newly calculated for each respondent during the survey. This means that variables and pages within loops are formed dynamically, which is a difference between the EFS variables and pages you are familiar with, also in terms of functionality.</p>
+<p class="wysiwyg-text-align-justify"><strong>Creating a loop</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Create a new dynamic element titled “Questions about known TV channels”, choosing the “Loop” type.</p>
+</li>
+<li>
+<p>Confirm by clicking on<strong> Submit</strong>.</p>
+</li>
+<li>
+<p>The new loop page will be displayed in the questionnaire view.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Choosing a list</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Click on the link <strong>No list selected</strong>.</p>
+</li>
+<li>
+<p>The list selection dialog will open.</p>
+</li>
+<li>
+<p>Select the list to be assigned to this loop. In the example, respondents are asked to assess the range of various TV channels, i.e. you must choose the “TV channel” list.</p>
+</li>
+<li>
+<p>Then, click on <strong>Save</strong>.</p>
+</li>
+</ul>
+<h4 id="defining-processing-rules" class="wysiwyg-text-align-justify"><strong>Defining processing rules</strong></h4>
+<p class="wysiwyg-text-align-justify">To configure the output rules for lists that have been placed within a loop, click on the<strong> title</strong> of the loop in the questionnaire view.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The additional option “Randomize list elements” is available for loops.</p>
+</li>
+<li>
+<p>Furthermore, you can specify a condition for canceling the loop. To open the condition editor, click the <strong>Edit</strong> link in the “Cancel loop, if” field.</p>
+</li>
+</ul>
+<h4 id="creating-a-looped-page" class="wysiwyg-text-align-justify"><strong>Creating a Looped Page</strong></h4>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Your next step is to create a looped page, i.e. a page that will be displayed repeatedly, displaying one element of the loop list after the other. The procedure for this is similar to that for creating a filtered questionnaire page: In the row containing the loop page, click on the<strong> Create new page or filter</strong> icon, enter “Favorite programs” as the title, choose the “Standard” page type, and

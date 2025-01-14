@@ -1,0 +1,71 @@
+ the <strong>Define global inclusion conditions</strong> button.</p>
+</li>
+<li>
+<p>Select the desired condition in the pop-up that opens.</p>
+</li>
+<li>
+<p>When you select a condition that requires a detailed definition, the<strong> Edit</strong> icon is activated in the “Actions” column. Define the condition in the condition editor. You can use the #varname# and #code# wildcards to do so.</p>
+</li>
+<li>
+<p><strong>Save</strong> the settings. All list inclusion conditions are now changed accordingly.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">#varname#: Wildcard available for selection in the “Variables” selection field. It is respectively replaced in the various list elements by the name of the variable assigned to the list element in the source question.</p>
+<p class="wysiwyg-text-align-justify">#code# Can be entered in the “Code” field. It is replaced in the various list elements by the code the list element has in the source question.</p>
+<h3 id="defining-the-default-setting-for-all-new-list-elements" class="wysiwyg-text-align-justify">Defining the default setting for all new list elements</h3>
+<p class="wysiwyg-text-align-justify">You can define in advance which inclusion conditions newly created list elements shall have by default in dynamic lists. To do so, select the desired preset from the “Advanced options” section in the Inclusion Conditions tab and then Save. If you select a complex condition you can, as described above, open the condition editor and formulate the condition in generalized terms using the #varname# and #code# wildcards.</p>
+<p class="wysiwyg-text-align-justify">The inclusion conditions are used to set the conditions under which elements are generally added to the list. Before outputting the list as a concrete question you can set up further restrictions and carry out sorting rules. Click the <strong>Options </strong>icon to find the appropriate setting options in the question view of the list of questions.</p>
+<p class="wysiwyg-text-align-justify">The special options cannot be used in questions with groupings.</p>
+<h3 id="selecting-list-elements" class="wysiwyg-text-align-justify">Selecting List Elements</h3>
+<p class="wysiwyg-text-align-justify">The following selection possibilities are available to you:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Select [n] elements at random from the list: You can set the number of elements that can be selected.</p>
+<ul>
+<li>
+<p>Please mind: This random selection is applied only to elements with inclusion conditions “if selected, always in random selection”, “in random selection if ...” and “always in random selection”.</p>
+</li>
+<li>
+<p>Configure extended random selection: You can make the random selection dependent on the number of elements chosen by the participant.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Select only the [n] elements with the highest / lowest code value: These options apply to the code that you assigned to the items of each question. This option is only suitable for single-response questions or matrix questions. With a multiple response or a select box matrix, the code can only take on the values of 0 (not selected) and 1 (selected), therefore the use of this question type is senseless.</p>
+</li>
+</ul>
+<h3 id="sorting-the-remaining-list-elements" class="wysiwyg-text-align-justify">Sorting the remaining list of elements</h3>
+<p class="wysiwyg-text-align-justify">The following sorting options are available to you, by default it is set to “unsorted”.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Unsorted (default setting)</p>
+</li>
+<li>
+<p>Sorted numerically according to answers in the source question (ascending/descending): Sorting is done based on entries made by respondents in source questions with text fields.</p>
+</li>
+<li>
+<p>Sorted alphabetically according to answers in the source question (ascending/descending): Sorting is done based on entries made by respondents in source questions with text fields.</p>
+</li>
+<li>
+<p>Sorted alphabetically by list element label (ascending/descending): It will be sorted by list element label.</p>
+</li>
+</ul>
+<h3 id="extended-random-selection-of-list-element" class="wysiwyg-text-align-justify">Extended Random Selection of List Element</h3>
+<p class="wysiwyg-text-align-justify">You can make the random selection, which was introduced in the previous chapter, dependent on the number of elements chosen by the participant. </p>
+<p class="wysiwyg-text-align-justify"><strong>Extended random selection</strong></p>
+<p class="wysiwyg-text-align-justify">Extended random selection can only be used in combination with the following types of inclusion conditions:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>if selected, always in a random selection</p>
+</li>
+<li>
+<p>in random selection if ...</p>
+</li>
+<li>
+<p>always in a random selection</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Configuring extended random selection</strong></p>
+<ol class="wysiwyg-text-align-justify">
+<li>
+<p>Click on the <strong>Options </strong>button

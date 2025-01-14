@@ -1,0 +1,35 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3510108188">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3510108188</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">Steps for user ingestion:</a></li>
+<ul>
+<li><a href="#header-3">Prerequisites:</a></li>
+<li><a href="#header-4">Not covered steps/flows:</a></li>
+</ul>
+</ul>
+</ul><p>Typically a user is not created directly within the authentication system. The authentication system just stores the credentials of a user and is dedicated to manage credential and other authentication relevant information.</p><p></p><p></p><h1 id="header-1">Steps for user ingestion:</h1><h2 id="header-3">Prerequisites:</h2><p>A user got created e.g. in the user management system. This system publishes the user created event. This contains the basic user data like a user name/email that will be used for login as well as additional data that might be used in a token.</p><ol>
+<li><p>User created event is read from the Kafka and validated by the ingestion service.</p></li>
+<li><p>The ingestion service creates the synced user in KeyCloak via REST API.</p></li>
+<li><p>KeyCloak stores the user in the KeyCloak database.</p></li>
+<li><p>KeyCloak triggers an email so that the user can set the password - <ac:parameter ac:name="title">pending</ac:parameter><ac:parameter ac:name="colour">Yellow</ac:parameter>  this uses an email service</p></li>
+<li><p>…</p></li>
+<li><p>The user receives the email and clicks on the provided password link.</p></li>
+<li><p>The user sets the password at the KeyCloak frontend.</p></li>
+<li><p>The user’s password is stored by KeyCloak.</p></li>
+</ol><p>Finally the user has provided the necessary credentials.</p><p></p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20717109769874" alt="Architecture Diagrams - Runtime - User Sync.png"><p></p><h2 id="header-4">Not covered steps/flows:</h2><ul>
+<li><p>MFA / setting up MFA</p></li>
+<li><p>sign-up flows that might directly lead to a password page</p></li>
+</ul> from the Kafka and validated by the ingestion service.</p></li>
+<li><p>The ingestion service creates the synced user in KeyCloak via REST API.</p></li>
+<li><p>KeyCloak stores the user in the KeyCloak database.</p></li>
+<li><p>KeyCloak triggers an email so that the user can set the password - <ac:parameter ac:name="title">pending</ac:parameter><ac:parameter ac:name="colour">Yellow</ac:parameter>  this uses an email service</p></li>
+<li><p>…</p></li>
+<li><p>The user receives the email and clicks on the provided password link.</p></li>
+<li><p>The user sets the password at the KeyCloak frontend.</p></li>
+<li><p>The user’s password is stored by KeyCloak.</p></li>
+</ol><p>Finally the user has provided the necessary credentials.</p><p></p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20717109769874" alt="Architecture Diagrams - Runtime - User Sync.png"><p></p><h2 id="header-4">Not covered steps/flows:</h2><ul>
+<li><p>MFA / setting up MFA</p></li>
+<li><p>sign-up flows that might directly lead to a password page</p></li>
+</ul>

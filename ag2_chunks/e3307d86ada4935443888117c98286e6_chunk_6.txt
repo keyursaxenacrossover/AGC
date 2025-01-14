@@ -1,0 +1,46 @@
+ of the voting period. In these cases, the <em>Ideation Guide</em> wave will be obtain the status <em>Failed</em>. The <em>Failed</em> status has the <em>Show Participants</em> and <em>Summary</em> options.</p>
+<h3 id="header-37">Automatic Pre-grouping Using <em>Key Phrase Extraction</em>
+</h3>
+<p>The suggestions made by the participants can be pre-grouped using <em>Key Phrase Extraction</em>. To use this feature, the new section "Settings Grouping" has been added to the <strong>Settings</strong> tab of your<em> Ideation Guide</em> (CMS area of <em>Portals</em>). There you activate the feature "Automatic Pregrouping" by means of a slide switch. You have to enter the <em>Azure API key</em>. The connection needs to be tested. After a successful test, the feature can be used. This option is used to analyze the suggestions made by the participants and to pre-group them. By default, the "Automatic Pregrouping" option is disabled.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998067839634" alt="Merge Settings.png"></p>
+<p>The suggestions made by the participants are analyzed, combined and pre-grouped into groups of at least 2 to max. 5 similar suggestions. On the guide status page called <em>Guide Waves</em>, click the <strong>Group</strong> button to access the pre-grouped suggestions. The grouping and the label for each group can be changed.</p>
+<p> </p>
+<h3 id="header-38">Information</h3>
+<p>To obtain the <em>Azure API key</em>, please contact the support team.</p>
+<h3 id="header-39">New Placeholder</h3>
+<p>A new e-mail template placeholder can be used to display the name of the guide initiator of the<em> Ideation Guide</em>. Use the <em>#guide initiator#</em> placeholder! The pipe function can be used to display first or last name of the guide initiator. Otherwise the complete name will be displayed.</p>
+<ul>
+<li>
+<p>#guideinitiator|firstname#</p>
+</li>
+<li>
+<p>#guideinitiator|name#</p>
+</li>
+</ul>
+<p>This new placeholder is available for the following e-mail template types:</p>
+<ul>
+<li>
+<p>Survey-Invitation</p>
+</li>
+<li>
+<p>Merge-Mail</p>
+</li>
+<li>
+<p>Voting-Mail</p>
+</li>
+<li>
+<p>Result-Mail</p>
+</li>
+</ul>
+<h3 id="header-40">Registration: New Participants</h3>
+<p>If an external participant (no panelist)  will be invited to take part in an <em>Ideation Guide</em>, the participant will be assigned the <em>Admitted temporarily</em> status. In the CMS area of portals, these participant will be assigned the <em>Not invited yet</em> status. At the beginning of the voting phase the participant will receive an invitation. The link embedded in the e-mail will lead to a registration page. On this registration page, there will be no password area. Thus the participant can enter his or her first name and surname, activate the checkbox before jumping to the voting page. In the CMS area of <em>Portals</em>, the "Login code" option of the <strong>Access rights </strong>menu has to be activated.</p>
+<p>After registration, the participant will land on the voting page instead of the target page, which has been defined in the CMS.</p>
+<h3 id="header-41">Deep-Linking: Guide Waves</h3>
+<p>To get quick access to the grouping phase of the <em>Ideation Guide</em>, the new <em>#guide_status_link#</em> placeholder can be used. By clicking on this link, the guide initiator will jump to the <em>Guide Waves</em> status page. The login code is valid as long as the group phase will last.</p>
+<h3 id="header-42">Grouping Phase: Assigning Titles</h3>
+<p>Assigning a title is now mandatory. You will not be able to click on the <strong>Merge</strong> button until a title has been entered.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998052888082" alt="Grouping.png"></p>
+<h3 id="header-43">Using <em>#detailview_link# P</em>laceholder as Temporary Login</h3>
+<p>You can obtain access to the detail view of an action by using the <em>#detailview_link#</em> placeholder as a temporary login. A link embedded in an e-mail will be sent to the participants. The participants will be able to access the detail view of an action without logging in.</p>
+<h3 id="header-44">New Result Page</h3>
+<p>The results page of the<em> Ideation Guide</em> has been redesigned to present the most important information to you quickly and clearly. At a glance, you can see how many people have been taken part in the voting phase, how many suggestions have been proposed, how many participants have been voted for one suggestion. It also indicates how many suggestions have been created. There is an overview of the top voted actions. It

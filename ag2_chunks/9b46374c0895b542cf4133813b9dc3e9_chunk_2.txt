@@ -1,0 +1,156 @@
+p>
+</td>
+<td>
+<p style="text-align: center;">Resumed</p>
+</td>
+<td>
+<p style="text-align: center;">The survey has been resumed after an interruption.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">31</p>
+</td>
+<td>
+<p style="text-align: center;">Completed</p>
+</td>
+<td>
+<p style="text-align: center;">The survey has been successfully completed.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">32</p>
+</td>
+<td>
+<p style="text-align: center;">Completed after break</p>
+</td>
+<td>
+<p style="text-align: center;">The survey was interrupted during its course, but has been resumed and successfully completed.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">33</p>
+</td>
+<td>
+<p style="text-align: center;">Custom completed 1</p>
+</td>
+<td>
+<p style="text-align: center;">Corresponds to status 32, but can be customized and used for further differentiation.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">34</p>
+</td>
+<td>
+<p style="text-align: center;">Custom completed 1</p>
+</td>
+<td>
+<p style="text-align: center;">Corresponds to status 32, but can be customized and used for further differentiation.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">35</p>
+</td>
+<td>
+<p style="text-align: center;">Rejected at login (quota full)</p>
+</td>
+<td>
+<p style="text-align: center;">Is set for respondents in personalized projects who want to use the link from the invitation mail to log into the survey after a quota has been closed.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">36</p>
+</td>
+<td>
+<p style="text-align: center;">Rejected (quota full)</p>
+</td>
+<td>
+<p style="text-align: center;">Status 36 and 37 are set in a project with quotas when an intermediate final page has been reached. The survey administrator can use these codes to mark respondents as rejected (i.e. screened out by quota; there are already enough participants with the respective features) or screened out (= unsuitable). The status to be set is manually specified by the administrator at the intermediate final page.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">37</p>
+</td>
+<td>
+<p style="text-align: center;">Screened out</p>
+</td>
+<td>
+<p style="text-align: center;">Status 36 and 37 are set in a project with quotas when an intermediate final page has been reached. The survey administrator can use these codes to mark respondents as rejected (i.e. screened out by quota; there are already enough participants with the respective features) or screened out (= unsuitable). The status to be set is manually specified by the administrator at the intermediate final page.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">38</p>
+</td>
+<td>
+<p style="text-align: center;">Custom screen out 1</p>
+</td>
+<td>
+<p style="text-align: center;">Corresponds to status 37, but can be customized and used for further differentiation.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">39</p>
+</td>
+<td>
+<p style="text-align: center;">Custom screen out 2</p>
+</td>
+<td>
+<p style="text-align: center;">Corresponds to status 37, but can be customized and used for further differentiation.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">40</p>
+</td>
+<td>
+<p style="text-align: center;">Custom screen out 3</p>
+</td>
+<td>
+<p style="text-align: center;">Corresponds to status 37, but can be customized and used for further differentiation.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">41</p>
+</td>
+<td>
+<p style="text-align: center;">Quota full</p>
+</td>
+<td>
+<p style="text-align: center;">If a quota is full, this status will be assigned to all participants, who match the quota condition, but nevertheless have not started with the survey yet.</p>
+<p style="text-align: center;">If one of these participants tries to log in, then he will be rejected and the disposition code will be set to 35.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">42</p>
+</td>
+<td>
+<p style="text-align: center;">Consent rejected</p>
+</td>
+<td>
+<p style="text-align: center;">The processing of personal data (GDPR) was not agreed.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">43</p>
+</td>
+<td>
+<p style="text-align: center;">Personal data deleted</p>
+</td>
+<td>
+<p style="text-align: center;">The processing of personal data (GDPR) was initially agreed. After participation in the survey, the consent was withdrawn and the personal data deleted.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p

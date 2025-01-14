@@ -1,0 +1,78 @@
+, i.e., the unit where you want to move the contents of the source unit.</p>
+</li>
+<li>
+<p>Select the source unit, i.e., the unit the contents of which are to be moved or that is to be deleted itself.</p>
+</li>
+<li>
+<p>Confirm by clicking on<strong> Save</strong>.</p>
+</li>
+<li>
+<p>In case the source units have subunits, there are two options:</p>
+<ul>
+<li>
+<p>Merge units: The online participants and paper-pencil questionnaire data of the subunits are moved to the target unit, and the subunits themselves are deleted. The users of the subunits are not adopted.</p>
+</li>
+<li>
+<p>Move units: The subunits complete with online participants, paper-pencil questionnaire data, and users are moved below the target unit.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Confirm again by clicking on <strong>Save</strong>.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If you want users to be able to merge units, you need to assign the right <em>structure_combine_nodes</em> to the appropriate roles.</p>
+<p class="wysiwyg-text-align-justify">The users of the source unit are not adopted in the merging process.</p>
+<h3 id="deleting-units" class="wysiwyg-text-align-justify"><strong>Deleting units</strong></h3>
+<p class="wysiwyg-text-align-justify">Units can be deleted, for example, if they have been created inadvertently or if the corporate structure has changed and needs to be mapped accordingly. There are two ways to do this, depending on whether you want to delete one or several units and whether these are units with participants and/or subunits:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>You can delete these units individually and, if necessary, move existing participants, paper-pencil questionnaires, and subunits.</p>
+</li>
+<li>
+<p>If you have to delete several units, you can delete them en bloc. Any existing subunits or requisition notes for paper-pencil questionnaires will be deleted as well. Participants will not be deleted, but the allocation to the deleted unit is lost.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Deleting a unit, but moving subunits and participant data</strong></p>
+<p class="wysiwyg-text-align-justify">If you wish to delete a unit without losing any already existing participant data, paperpencil questionnaire data, and/or subunits, please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Locate the desired unit in the organizational structure. Click on the <strong>Actions</strong> icon to open the selection layer and then click on the link <strong>Delete</strong>.</p>
+</li>
+<li>
+<p>If the unit contains subunits and/or if participants have already been entered for the online questionnaire, you will be asked how the data is to be handled:</p>
+<ul>
+<li>
+<p>If you want to move the participants and the paper-pencil questionnaire data of the current unit, then select the desired target unit in the field “Move the participants of the unit to”.</p>
+</li>
+<li>
+<p>If you do not want to delete the subunits, then leave the checkbox in the field “Delete subunits” unticked. The subunits with their participants will be moved under the next higher unit.</p>
+</li>
+<li>
+<p>If you tick the checkbox “Delete subunits”, the subunits will be deleted and their participants will either be assigned to the specified target unit or also deleted, depending on the setting for the option “Move the participants of the unit to”.</p>
+</li>
+<li>
+<p>The default setting is “Delete assigned participants” and the option “Delete subunits” is deactivated, i.e., the subunits and their participants are moved under the next higher unit.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Confirm by clicking on<strong> Delete unit now</strong>.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Deleting several units en bloc</strong></p>
+<p class="wysiwyg-text-align-justify">You can easily delete several units en bloc. Any existing subunits or requisition notes for paper-pencil questionnaires will be deleted as well. Participants are not deleted, but the allocation to the deleted unit is lost.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Locate the units to be deleted in the organizational structure and tick the checkboxes in the “Actions” column.</p>
+</li>
+<li>
+<p>Select the “Delete unit” action from the drop-down list.</p>
+</li>
+<li>
+<p>Confirm by clicking on <strong>Execute</strong>.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If you want users to be able to delete units, you need to assign the right <em>structure_add_del_nodes</em> to the appropriate roles.</p>
+<h3 id="locking-units-after-finishing" class="wysiwyg-text-align-justify"><strong>Locking units after finishing</strong></h3>
+<p class="wysiwyg-text-align-justify">Units, subareas, or the entire structure can be locked, i.e., the units in the organizational structure are then clickable and it is no longer possible to view the data or to edit the locked area. This locking is usually done at

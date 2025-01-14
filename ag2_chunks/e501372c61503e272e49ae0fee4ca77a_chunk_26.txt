@@ -1,0 +1,67 @@
+, it is recommended to limit the chats to at most 1,000 posts. Furthermore, you can export the posts of old chats and subsequently delete the chats.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Work steps</strong></p>
+<p class="wysiwyg-text-align-justify">Setting up a chat involves the following steps:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Creating a chat section.</li>
+<li>Creating a page for the chat and referencing the appropriate section.</li>
+<li>Monitoring, and if necessary, actively controlling the chat if the panelists are allowed to post.</li>
+</ul>
+<h2 id="managing-chats" class="wysiwyg-text-align-justify"><strong>Managing Chats</strong></h2>
+<p class="wysiwyg-text-align-justify">The chats are managed from the <strong>Website → Panel websites → {Selected language version} → Chats</strong> menu. In this menu, you can edit existing chat sections, create new sections, and moderate ongoing chats.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify">With read rights for “panel_chats”, you can manage chats. With write rights, you can export the posts of a chat.</p>
+<p class="wysiwyg-text-align-justify"><strong>Overview of chats</strong></p>
+<p class="wysiwyg-text-align-justify">The overview table lists all the chat sections created for the respective language version along with their titles, descriptions, and the number of posts.</p>
+<p class="wysiwyg-text-align-justify">If, in an installation with multiple websites and/or language versions, you want to view the chats of another language version, change the setting in the upper part of the dialog. With the <strong>View</strong> function, you can specify which table columns and how many rows per page will be displayed. You can search the contents of the overview table.</p>
+<p class="wysiwyg-text-align-justify"><strong>Edit options</strong></p>
+<p class="wysiwyg-text-align-justify">Click on the<strong> Create section</strong> button to open the dialog for creating a new chat section.</p>
+<p class="wysiwyg-text-align-justify">Click on the title of a chat section to open the list of existing posts. Click on the topic of a post to edit its properties.</p>
+<p class="wysiwyg-text-align-justify">Via the icons in the “Actions” column you can edit individual discussion sections:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<strong>Edit</strong>: This opens the dialog for editing the section properties.</li>
+<li>
+<strong>Show posts</strong>: Opens the list of posts.</li>
+<li>
+<strong>Copy</strong>: The desired section will be copied. The posts will not be copied, though, as this is usually not very practical.</li>
+<li>
+<strong>Export posts</strong>: This triggers the export of all the posts in this section.</li>
+<li>
+<strong>Delete</strong>: The selected section will be deleted following a confirmation prompt. Please bear in mind that all data will be irretrievably lost. If you do not need a particular section anymore, you should make use of the possibility to export the posts before deleting them.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Chat properties</strong></p>
+<p class="wysiwyg-text-align-justify">The table lists all the properties a discussion section can have.</p>
+<table class="wrapped wysiwyg-text-align-justify" style="margin-right: 0px; margin-left: auto; height: 702px;" border="1" width="746">
+<colgroup> <col> <col> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" style="width: 122.812px;">Field</th>
+<th class="wysiwyg-text-align-center" style="width: 615.885px;">Meaning</th>
+</tr>
+<tr>
+<td style="width: 114.792px;">Website / Language version</td>
+<td style="width: 607.865px;">
+<p>Website and language version to which the discussion section belongs. Cannot be changed subsequently.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 114.792px;">Section title</td>
+<td style="width: 607.865px;">
+<p>Name of the section. This is displayed both in the admin area and on the panel page.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 114.792px;">Description</td>
+<td style="width: 607.865px;">
+<p>Brief explanation. This is displayed both in the admin area and on the panel page.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 114.792px;">Access control</td>
+<td style="width: 607.865px;">
+<p>Select one of the following options:</p>
+<ul>
+<li>Public: All visitors of the panel can view the discussion, but only logged-in panelists may actively contribute to it.</li>
+<li>All logged-in panelists: All logged-in panelists can view the discussion, other visitors have no access.</li>
+<li>For logged-in panelists of a panel group only: If you choose this option, an additional drop-down list will be displayed where you can select a specific panel group. Only members of the

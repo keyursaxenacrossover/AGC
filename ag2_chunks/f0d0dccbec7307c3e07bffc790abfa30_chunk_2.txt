@@ -1,0 +1,115 @@
+>
+<pre><code class="language-json">{
+  "emailAddress": "example@domain.tld",
+  "surveyId": 1234
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">true</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79CT68Q0EYP069QFV21"> </h4>
+<h3 id="header-9">POST /efs/mailblacklist/getListByDateRange</h3>
+<p>Get a list of blocklisted email addresses (both global and survey related) restricted by date range.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "dateRange": {
+    "from": "2020-07-01T12:53:50+00:00",
+    "to": "2020-07-03T12:53:50+00:00"
+  }
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[
+    {
+        "email": "example@domain.tld",
+        "surveyId": 1234,
+        "result": 1
+    }
+]</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79CAP0FDE878XMVMTFC"> </h4>
+<h3 id="header-10">POST /efs/mailblacklist/getListByEmailAddress</h3>
+<p>Returns a list of all surveys where given email is blacklisted. In case of global blacklist the surveyId is 0.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "emailAddress": "example@domain.tld"
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[
+    {
+        "email": "example@domain.tld",
+        "surveyId": 0,
+        "createdAt": "2020-08-26T11:01:22+00:00",
+        "createdBy": "SERVICE"
+    }
+]</code></pre>
+</div>
+<h2 id="header-12">Mail templates</h2>
+<div class="expand-macro">
+<h4 id="h_01J441N79CAE9CT9HT7CZPFA7E"> </h4>
+<h3 id="header-14">POST /efs/mailtemplates/</h3>
+<p>Add mail template. Please see the mail template form in EFS for required and optional information. Returns the id of the newly created mail template. Use <code>GET /efs/mailtemplates/{id}</code> on an existing template, if unsure about the correct parameters and also have a look at the mail template editor in EFS for optional and required parameters and supported wildcards, specific to your mail template type.</p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 126.0px;">
+<col style="width: 524.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p><strong>Option</strong></p>
+</th>
+<th>
+<p><strong>Valid values</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p><code>type</code></p>
+</td>
+<td>
+<p>default_mail, invitation_mail, reminder_mail, survey_ends_mailtype, welcome_mail, pwrecovery_mail, doub_check_mail, register_check_mail, md_invitation_mail, md_reminder_mail, winner_mail, promotion_mail, bonus_mail, exchange_mail, orgprocessor_mail, website_notifications, system_mail, eat_your_own_dogfood, result_mail, reportnotification_mail</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>site_id</code></p>
+</td>
+<td>
+<p>ID of Panel Website language version, on installations without Panel Website, please use 0.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>format</code></p>
+</td>
+<td>
+<p>TEXT, HTML, TEXT_AND_HTML</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>charset</code></p>
+</td>
+<td>
+<p>UTF-8, UTF-16, ISO-8859-1, ISO-8859-2, ISO-8859-3, ISO-8859-4, ISO-8859-5, ISO-8859-6, ISO-8859-7, ISO-8859-8, ISO-8859-9, ISO-8859-13, ISO-8859-15, US-ASCII, KOI8-R, GB18030, x-EUC-CN, GBK, x-EUC-TW, Big5, Big5-HKSCS, EUC-JP, Shift_JIS, ISO-2022-JP, EUC-KR, ISO-2022-KR, TIS-620</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>priority</code></p>
+</td>
+<td>
+<p>NO_PRIORITY, HIGHEST, HIGH, NORMAL, LOW, LOWEST</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>sensitivity</code></p>
+</td>
+<td>
+<p>NORMAL, PRIVATE, PERSONAL, COMPANY</p>
+</td>
+</tr>
+<tr>
+<td>

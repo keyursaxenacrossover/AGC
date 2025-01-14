@@ -1,0 +1,58 @@
+<p class="wysiwyg-text-align-justify"><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p class="wysiwyg-text-align-justify">This article provides comprehensive information about user management in EFS, including creating and managing user accounts, teams, and exchange teams. It covers various aspects of user administration, rights management, and system security features.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">This guide focuses on the user management functionalities within EFS, detailing the processes for creating, editing, and managing user accounts and teams. It also covers important security features and administrative tasks related to user management.</p>
+<ul class="wysiwyg-text-align-justify">
+<li><a href="#users">Users</a></li>
+<li><a href="#users:~:text=or%20delete%20accounts).-,Teams,-Within%20a%20team">Teams</a></li>
+<li><a href="#users:~:text=right%C2%A0groupadmin.-,Exchange%20teams,-In%20order%20to">Exchange Teams</a></li>
+<li><a href="#users:~:text=Create%20team.-,Admin%20Teams,-EFS%20can%20be">Admin Teams</a></li>
+</ul>
+<h2 id="users" class="wysiwyg-text-align-justify">Users</h2>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="6">Each user account is assigned to one or more teams. Membership in a respective team determines the individual functions to which the user has access. In the menu <strong data-renderer-mark="true">Users</strong> → <strong data-renderer-mark="true">Users</strong> you will find a list of all user accounts created in the system.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015136240146"></p>
+<div class="rich-media-item mediaSingleView-content-wrap image-center cc-141s4ox wysiwyg-text-align-justify" data-layout="center" data-width="80" data-width-type="percentage" data-node-type="mediaSingle" data-renderer-start-pos="248">
+<div class="cc-1jow1nu">
+<div data-type="file" data-node-type="media" data-width="1662" data-height="350" data-id="533aefba-0121-4d9b-ae73-87f0f383d575" data-collection="contentId-1455359870" data-file-name="Users.jpg" data-file-size="65660" data-file-mime-type="image/jpeg" data-alt="" data-renderer-start-pos="249" data-context-id="1455359870">
+<div id="newFileExperienceWrapper" class="new-file-experience-wrapper cc-j4lz3w" data-testid="media-card-view">
+<div class="media-file-card-view cc-z40uwk" data-testid="media-file-card-view" data-test-status="complete" data-test-source="remote" data-test-media-name="Users.jpg" data-test-progress="1">The following information is displayed for each account:</div>
+</div>
+</div>
+</div>
+</div>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="311">User name</p>
+</li>
+<li>
+<p data-renderer-start-pos="324">Name: The content of this field is composed of the separate fields “First name” and “Name”.</p>
+</li>
+<li>
+<p data-renderer-start-pos="419">The most important address data of a user</p>
+</li>
+<li>
+<p data-renderer-start-pos="464">Member of the following teams: All of the teams that the user belongs to.</p>
+</li>
+<li>
+<p data-renderer-start-pos="541">Logins: The number of logins for a user since their creation.</p>
+</li>
+<li>
+<p data-renderer-start-pos="606">Last login: Date of the last login.</p>
+</li>
+<li>
+<p data-renderer-start-pos="645">Failed attempts to log in: Number of consecutive failed login attempts.</p>
+</li>
+<li>
+<p data-renderer-start-pos="719">Login expiry date: With limited-time accounts, the date when the login expires will be displayed. The account can be used up until the day before expiration.</p>
+</li>
+<li>
+<p data-renderer-start-pos="880">Suspended until: After a defined number of consecutive failed login attempts, the user account will be blocked automatically for likewise a defined period.</p>
+</li>
+<li>
+<p data-renderer-start-pos="1039">Can login? If a login has expired or it has been deactivated by “brute force” protection, then a red lamp will be displayed.</p>
+</li>
+</ul>
+<div class="ak-editor-panel cc-tqp4ke wysiwyg-text-align-justify" data-panel-type="success">
+<div class="ak-editor-panel__icon">
+<div class="ak-editor-panel cc-tqp4ke" style="margin: 0.75rem 0px 0px; border-radius: var(--ds-border-radius,2px); word-break: break-word; background-color: var(--ds-background

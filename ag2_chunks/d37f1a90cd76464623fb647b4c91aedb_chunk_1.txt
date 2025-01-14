@@ -1,0 +1,174 @@
+ola 7cd3f47266125d7f300cc30bf40aea60 Portals 341</p>
+<p>coca-cola 7cd3f47266125d7f300cc30bf40aea60 ESS</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Group</p>
+</td>
+<td>
+<p>&lt;cuid&gt;</p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p>coca-cola</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Application/Installation group</p>
+</td>
+<td>
+<p>&lt;cuid&gt; &lt;application/installation-domain&gt;</p>
+</td>
+<td>
+<p>This groups scopes a set of users to a specific application. This group of users is able to use the app and the app is only scoped to this group.</p>
+<p>This has to be created due to performance reasons.</p>
+</td>
+<td>
+<p>coca-cola coca-cocal.customervoice360.com</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Group with specific purpose</p>
+</td>
+<td>
+<p>&lt;cuid&gt; purpose</p>
+</td>
+<td>
+<p>Purpose could be something like “Admins”, “Strong PW”</p>
+<p>keep it short and readable for others</p>
+</td>
+<td>
+<p>coca-cola Admin Users</p>
+<p>coca-cola MFA enabled</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Authentication - Password Policy</p>
+</td>
+<td>
+<p>&lt;cuid&gt; purpose</p>
+</td>
+<td>
+<p>groupname is the name of the group that this rule applies to without the &lt;cuid&gt; value</p>
+<p>the purpose is a short readable purpose like “strong”, “length 16“</p>
+<p>or “default”</p>
+</td>
+<td>
+<p>coca-cola Strong Admin passwords</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Authentication - Sign On Policy</p>
+</td>
+<td>
+<p>&lt;cuid&gt; purpose</p>
+</td>
+<td>
+<p>groupname is the name of the group that this rule applies to without the &lt;cuid&gt; value</p>
+<p>the purpose is a short readable purpose or “default”</p>
+</td>
+<td>
+<p>coca-cola default</p>
+<p>coca-cola MFA enabled</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Multifactor - Factor Enrollment</p>
+</td>
+<td>
+<p>&lt;cuid&gt; purpose</p>
+</td>
+<td>
+<p>groupname is the name of the group that this rules applies to without the &lt;cuid&gt; value</p>
+<p>purpose is the purpose of that enrollment or “default”</p>
+</td>
+<td>
+<p>coca-cola default</p>
+<p>coca-cola Managers excluded</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Identity Provider</p>
+</td>
+<td>
+<p>&lt;cuid&gt; - &lt;idp-type&gt;</p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p>coca-cola Azure AD</p>
+<p>coca-cola ADFS</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Identity Provider Routing Rule</p>
+</td>
+<td>
+<p>&lt;cuid&gt; - &lt;idp-type&gt; purpose</p>
+</td>
+<td>
+<p>purpose should describe why this rule exists</p>
+<p>it could be default in case it is the default rule for a tenant</p>
+</td>
+<td>
+<p>default</p>
+<p>exclude group ABC</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Trusted Origins</p>
+</td>
+<td>
+<p>&lt;cuid&gt; - domainname</p>
+</td>
+<td>
+<p>domainname is the domainname of the added URL</p>
+</td>
+<td>
+<p>coca-cola coca-cola.com</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Authorization Server</p>
+</td>
+<td>
+<p>&lt;cuid&gt;</p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p>coca-cola</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>API Token</p>
+</td>
+<td>
+<p>&lt;cuid&gt;</p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p>coca-cola</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p> </p>

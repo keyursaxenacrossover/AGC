@@ -1,0 +1,112 @@
+<p>Tick the “Select” checkboxes for those page modules that are to be displayed.</p>
+</li>
+<li>
+<p>Confirm by clicking on <strong>Save</strong>. A reference is now established between the page and the selected page module.</p>
+</li>
+<li>
+<p>Repeat these steps for all pages where the page modules are to be displayed.</p>
+</li>
+</ol>
+<h2 id="a-detailed-look-at-modules" class="wysiwyg-text-align-justify"><strong>A Detailed Look at Modules</strong></h2>
+<p class="wysiwyg-text-align-justify">This Chapter will take a detailed look at the modules used to compile panel pages.</p>
+<hr>
+<p class="wysiwyg-text-align-justify"><a href="https://qbdocs.atlassian.net/wiki/spaces/DOC/pages/1450969162/Mail+Templates+Tables+Overview#Wildcards-for-Panel-Projects"><strong>→ → Overview of the Wildcards ← ←</strong></a></p>
+<hr>
+<h3 id="content-module-headline-text" class="wysiwyg-text-align-justify"><strong>Content Module: Headline + Text</strong></h3>
+<p class="wysiwyg-text-align-justify">The most frequently used module is certainly the “Headline + text” content module. It is used to create page sections that are for informational purposes only. One example of such an information text can be found on the <strong>About Us</strong> page of the standard panel.</p>
+<p class="wysiwyg-text-align-justify">In the standard panel, you can use the “cont_headline_text” template to change the appearance of the “Headline + text” module.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014684780690" alt="image-20240115-100208.png"></p>
+<p class="wysiwyg-text-align-justify"><strong>Options</strong></p>
+<p class="wysiwyg-text-align-justify">The following options are available:</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup>
+<col style="width: 122.0px;">
+<col style="width: 507.0px;">
+<col style="width: 131.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Option</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Standard panel „About us“ page</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Reference name for template</p>
+</td>
+<td>
+<p>Name that can be used to trigger the module in positioning templates.</p>
+</td>
+<td>
+<p>about_us</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Page module title</p>
+</td>
+<td>
+<p>Name of the module in the page’s module overview</p>
+</td>
+<td>
+<p>About us</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Module template</p>
+</td>
+<td>
+<p>Module-specific template that controls how data provided by the module are displayed.</p>
+</td>
+<td>
+<p>cont_headline_text</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Headline</p>
+</td>
+<td>
+<p>This field contains the section headline.</p>
+</td>
+<td>
+<p>About us</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Text</p>
+</td>
+<td>
+<p>Enter the body text of the section in this field. E.g. you can use HTML and CSS to format the text, you can enter images or links.</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="function-module-lost-account-functionality" class="wysiwyg-text-align-justify"><strong>Function Module: Lost Account Functionality</strong></h3>
+<p class="wysiwyg-text-align-justify">The “Lost account” module newly introduced in EFS 10.4 creates a form via which panelists can ask for their forgotten account name.</p>
+<p class="wysiwyg-text-align-justify">EFS Panel provides various design options:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>You can select the mail template used to deliver the account name.</p>
+</li>
+<li>
+<p>Once the account name has been successfully delivered a confirmation message will be displayed.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Optionally, account and password can be used for authentication instead of e-mail and password</p>
+<p class="wysiwyg-text-align-justify"><strong>Options</strong></p>
+<p class="wysiwyg-text-align-justify">The “Lost account” function module offers the following options.</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup>
+<col style="width

@@ -1,0 +1,29 @@
+<h1 id="h_01J78Z8J1EFWCMDM43459Z0CBE">Overview</h1>
+<p>RabbitMQ is a message broker that facilitates communication between different parts of a system. In some cases, users may need to understand how to calculate the RabbitMQHash, a unique identifier tied to a specific mail or mailing batch.</p>
+<h1 id="h_01J78Z8J1ESSDD03B0BZG2K7VW">Solution</h1>
+<h2 id="h_01J78Z8J1EE8AXAV9A53WZKXS2">What is RabbitMQ?</h2>
+<p>RabbitMQ is a message broker that facilitates communication between different parts of the system. It stores status updates from Hurricane (such as delivered, failed, or deferred) and forwards them to EFS via the jobmaker cron job. RabbitMQ serves as a temporary storage for these status messages, ensuring that they can be processed asynchronously.</p>
+<p>Hurricane has a callback URL (except for Intervista customer) which allows the other mail server to store the communication about each message (Legacy support team not sure how Intervista works for the callback):<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21238150026002"><br><br></p>
+<h2 id="h_01J78Z8J1EXJGKRVN2QFJ0H6NW">Accessing RabbitMQ</h2>
+<p>Access to RabbitMQ is rarely needed for troubleshooting. However, in rare cases where the jobmaker cron job encounters issues or if mail status updates are delayed, you might need to manually access RabbitMQ to verify the messages and confirm the status. Access to RabbitMQ is currently in progress, and it may not be readily available to all agents.</p>
+<h2 id="h_01J78Z8J1EH7G8AY6WP2TC2A4B">Calculating the RabbitMQHash</h2>
+<p>The queue in RabbitMQ has a unique identifier, called RabbitMQHash, this can be found for each installation using the <strong>i</strong> command.</p>
+<p>This hash is hashed value for the combined installation name and GP_ID</p>
+<ul>
+<li>Installation name: Name of the installation, ex: kd7885</li>
+<li>GP_ID: The ID of installation in Globis. Can be found in both:
+<ul>
+<li>EFS root configurations: search for gp_id</li>
+<li>Globis URL:<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21238176730514">
+</li>
+<li>Example:</li>
+<li><img style="font-size: 2.1em;" src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21238176730770"></li>
+</ul>
+</li>
+</ul>
+<h1 id="h_01J78Z8J1ETJSJMGPJ1BAZ3NV1">Summary</h1>
+<p>RabbitMQ serves as a message broker, managing the flow of status updates between Hurricane and EFS. Access to RabbitMQ is rarely needed, as most mail status updates are handled automatically by the jobmaker cron job. RabbitMQHash can be obtained using the <code>i </code> command and might be used for tracing specific mail statuses.</p>
+<h2 id="h_01J78Z8J1FH0YND72AAKSDQT3R">FAQ</h2>
+<p><strong>Q: What is RabbitMQ?</strong><br>A: RabbitMQ is a message broker that facilitates communication between different parts of a system. It stores status updates and forwards them to other parts of the system.</p>
+<p><strong>Q: How do I get the RabbitMQHash?</strong><br>A: You can get the RabbitMQHash using the command <code>i </code> in the Service Gateway.</p>
+<p><strong>Q: When do I need to access RabbitMQ?</strong><br>A: Access to RabbitMQ is rarely needed for troubleshooting. However, in rare cases where there are issues with the jobmaker cron job or if mail status updates are delayed, you might need to manually access RabbitMQ.</p>

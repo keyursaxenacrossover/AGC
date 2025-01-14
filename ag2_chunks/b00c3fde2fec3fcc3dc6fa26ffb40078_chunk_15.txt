@@ -1,0 +1,57 @@
+ before you confirm by clicking <strong>Send</strong>.</p>
+<h3 id="managing-mail-templates" class="wysiwyg-text-align-justify"><strong>Managing mail templates</strong></h3>
+<p class="wysiwyg-text-align-justify">In the <strong>Libraries</strong> → <strong>Mail templates</strong> menu, you will find an overview of all the mail templates for which you hold access rights along with their most important properties. You have the following editing options:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Create template button</strong>: The dialog for creating a new template will be opened. The other form fields for mail settings and mail text are familiar from the e-mail dispatch.</p>
+</li>
+<li>
+<p>Clickable links in the table and the familiar icons in the “Actions” column allow you to edit individual mail templates:</p>
+<ul>
+<li>
+<p><strong>Description</strong> link: The dialog for editing an existing template will be opened.</p>
+</li>
+<li>
+<p><strong>Status</strong> link: The entries <strong>Active</strong> and <strong>Inactive</strong> in the “Status” column are also clickable links. You can change the status with a click on the respective link: An inactive mail template will no longer be offered in the mail forms.</p>
+</li>
+<li>
+<p><strong>Preview</strong>: The template will be opened in the preview. As the project context is missing in the <strong>Mail template </strong>menu, wildcards will not be replaced in the preview.</p>
+</li>
+<li>
+<p><strong>Edit mail template</strong>: The dialog for editing an existing template will be opened.</p>
+</li>
+<li>
+<p><strong>Copy mail template</strong>: The template is copied. You can open the copy directly by clicking the link in the green confirmation message.</p>
+</li>
+<li>
+<p><strong>Edit rights</strong>: The dialog for assigning object rights for the template will be opened.</p>
+</li>
+<li>
+<p><strong>Delete mail template</strong>: The template will be deleted following a confirmation prompt.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Before deleting mail templates, please make sure that they are not linked to a live project.</p>
+<p class="wysiwyg-text-align-justify"><em>EFS People</em> installations feature a check to prevent deletion of mail templates that are still linked to a panel function (e.g. a CMS function module, an update rule, a promotional campaign, or a bonus). Instead, a list of the relevant panel functions will be displayed, so that you can either refrain from deleting or replace an unwanted template. However, mail template assignments in <em>EFS Survey</em> (e.g. mail trigger) or in <em>EFS Employee</em> will not be checked.</p>
+<h3 id="properties-of-mail-templates-in-detail" class="wysiwyg-text-align-justify"><strong>Properties of mail templates in detail</strong></h3>
+<p class="wysiwyg-text-align-justify">Mail templates are characterized by the following properties, which are partly defined by the user and partly set automatically by the system.</p>
+<p class="wysiwyg-text-align-justify"><strong>Mail template types</strong></p>
+<p class="wysiwyg-text-align-justify">When selecting mail templates via the EFS mail forms, only those templates will be available that are appropriate to your current operation. For example, if you are inviting participants, only templates for invitation mails will be offered for selection. This is controlled by assigning the templates to certain mail template types. The following table provides an overview of the various types and their respective applications.</p>
+<h3 id="defining-senders-addresses-for-mail-dispatch" class="wysiwyg-text-align-justify"><strong>Defining senders’ addresses for mail dispatch</strong></h3>
+<p class="wysiwyg-text-align-justify">Not only the mail contents but also the senders’ addresses are usually predefined in <em>EFS</em>. This is of particular importance if you want to use addresses other than your own, e.g. a common mailbox that may be accessed by other staff, as well: For you to be able to select these addresses in the EFS mail form, they must be registered in the system. This function in brief:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The senders’ addresses are managed in the <strong>Libraries</strong> → <strong>Mail templates</strong> → <strong>Mail senders</strong> menu.</p>
+</li>
+<li>
+<p>Optionally, it is possible to enter a real name to be inserted next to the actual email address in the mail subject header. Usually, this is the name of the project owner. Please note that it is not possible to use names in double-byte languages (e.g. Chinese).</p>
+</li>
+<li>
+<p>Which user teams may use or configure a particular sender’s address, is controlled via a specific object right.</p>
+</li>
+<li>
+<p>Which user teams may access the <strong>Mail senders</strong> menu, is controlled via read right for “options”.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">When adding a mail sender an SPF (Sender Policy Framework) check is executed on the sender’s domain

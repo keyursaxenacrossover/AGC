@@ -1,0 +1,22 @@
+ header settings in Panel and Survey</h3>
+<p>This setting controls the behavior of EFS, when embedding the Panel website or a survey in a different website. Possible choices are “Do not send”, “Deny”, “Same origin”. The default “Do not send” does not change the existing behavior.</p>
+<p>Panel: <em>Website &gt; Global configuration</em>: “Select whether a header with X-Frame- Options should be sent to the client”.</p>
+<p>Survey: <em>Project properties &gt; General options</em>: “Select whether a header with X- Frame-Options should be sent to the client”.</p>
+<h3 id="header-26">SMS-Report</h3>
+<p>On installations with the SMS module enabled, in <em>Options &gt; SMS admin</em>, there is a new functionality called <em>SMS report</em>.</p>
+<p>This detailed list shows all SMS that were sent by EFS to the provider along with the initial response received from the SMS provider.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998627994258" alt="d071c4ce-9a04-4d64-9dc5-864d99907d88"></p>
+<h3 id="header-27">New service layer methods</h3>
+<p>employee.reports.getDefinitions: Returns all existing report definitions of employee download-platform for given project-id</p>
+<p>employee.reports.addReport: Uploads a new report file into download-platform of a given project-id and assigns the report to the unit.</p>
+<h3 id="header-28">MySight field report</h3>
+<p>Aggregated field report data, grouped by days, is now available in MySight. You can use them to rebuilt the field report diagram of EFS in MySight. Filtering based on survey data is currently not possible.</p> “Select whether a header with X- Frame-Options should be sent to the client”.</p>
+<h3 id="header-26">SMS-Report</h3>
+<p>On installations with the SMS module enabled, in <em>Options &gt; SMS admin</em>, there is a new functionality called <em>SMS report</em>.</p>
+<p>This detailed list shows all SMS that were sent by EFS to the provider along with the initial response received from the SMS provider.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998627994258" alt="d071c4ce-9a04-4d64-9dc5-864d99907d88"></p>
+<h3 id="header-27">New service layer methods</h3>
+<p>employee.reports.getDefinitions: Returns all existing report definitions of employee download-platform for given project-id</p>
+<p>employee.reports.addReport: Uploads a new report file into download-platform of a given project-id and assigns the report to the unit.</p>
+<h3 id="header-28">MySight field report</h3>
+<p>Aggregated field report data, grouped by days, is now available in MySight. You can use them to rebuilt the field report diagram of EFS in MySight. Filtering based on survey data is currently not possible.</p>

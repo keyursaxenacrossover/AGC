@@ -1,0 +1,88 @@
+Td" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 290.938px;">
+<p>Is applied to data of the “Text” type. The entries must be identical.<br>Entries are considered “identical” if their letter strings are similar regardless of upper or lower case, punctuation, and space characters. For example, the following entries would be identified as “identical” in the check:</p>
+<ul>
+<li>Tivian</li>
+<li>TiVIaN</li>
+<li>TIVIAN</li>
+<li>T.I.V.I.A.N.</li>
+<li>T-I-V-I-A-N</li>
+<li>ti vian</li>
+</ul>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 205.521px;">-</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 201.094px;">Similarity (%)</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 290.938px;">
+<p>Can be applied to data of any type. The entries must match to a predetermined degree (match percentage).</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 205.521px;">
+<p>Minimum match percentage for the two values</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 201.094px;">Distance (numeric)</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 290.938px;">Is applied to data of the “Integer” or “Float” type.</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 205.521px;">
+<p>Maximum absolute distance between both values (i.e. the amount of the difference between both values)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>When configuring the checking algorithm you select the value and the appropriate type of comparison.</p>
+<h3 id="h_01J3FYDYN1XG67RH57CVVPQJ0J">Special Features of Duplicates Check</h3>
+<p><strong>Important Variables:</strong></p>
+<ol>
+<li>
+<p><strong>penter_date:</strong></p>
+<ul>
+<li>Contains the date and time of the panelist's registration.</li>
+<li>Used to identify registrations performed by the same person within short successive intervals.</li>
+<li>
+<strong>Comparison Type:</strong> Distance (numeric).</li>
+<li>
+<strong>Parameter:</strong> Enter the maximum temporal distance between two registrations in seconds (e.g., 3600 = 1 hour).</li>
+</ul>
+</li>
+<li>
+<p><strong>remote_addr:</strong></p>
+<ul>
+<li>Contains the IP address used during registration.</li>
+<li>
+<strong>Comparison Type:</strong> Equality (text).</li>
+</ul>
+</li>
+</ol>
+<h3 id="h_01J3FYDYN1THW66MBAW7FDES8X">Viewing Results</h3>
+<ol>
+<li>
+<p><strong>Advanced Search:</strong></p>
+<ul>
+<li>Open the advanced search in the <strong>Candidates</strong> menu or in the <strong>Panelists administration</strong>.</li>
+<li>In the “Duplicates status” field, select the option <strong>Duplicate</strong> and click <strong>Search</strong>.</li>
+<li>The basic set of persons with identified duplicates will be listed.</li>
+<li>Click on the <strong>Duplicate alert</strong> link to view the list of duplicates for each panelist.</li>
+</ul>
+</li>
+<li>
+<p><strong>Editing Duplicates:</strong></p>
+<ul>
+<li>Use actions from the drop-down list (Chapter "Editing Panelists") to manage duplicates:
+<ul>
+<li>Notify candidates via e-mail using the action <strong>Duplicates check mail</strong> (invokes prepared mail templates of the type “Duplicates check mail”).</li>
+<li>Set duplicate accounts to “inactive”.</li>
+<li>Delete duplicate accounts.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="h_01J3FYDYN1VG2V70B1WSCFDHJR">Access Rights to Configure the Duplicates Check</h3>
+<ul>
+<li>
+<strong>Write Rights:</strong> Required for “panel_dupcheck” to configure the duplicates check.</li>
+<li>Without this right, the <strong>People → Panelists administration → Duplicates check</strong> menu is not visible.</li>
+<li>
+<strong>Protection:</

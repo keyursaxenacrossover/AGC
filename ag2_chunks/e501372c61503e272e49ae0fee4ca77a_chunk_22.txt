@@ -1,0 +1,83 @@
+ allowed to post.</li>
+</ul>
+<h2 id="managing-discussions" class="wysiwyg-text-align-justify"><strong>Managing Discussions</strong></h2>
+<p class="wysiwyg-text-align-justify">The discussions are managed from the <strong>Website → Panel websites → {Selected language version} → Discussions</strong> menu. In this menu, you can edit existing discussion sections, create new sections, and moderate ongoing discussions.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify">With read rights for “panel_messages”, you can manage discussions. With write rights, you can export the posts of a discussion.</p>
+<p class="wysiwyg-text-align-justify"><strong>Overview of discussions</strong></p>
+<p class="wysiwyg-text-align-justify">The overview table lists all the discussion sections created for the respective language version along with their titles, descriptions, and the number of posts.</p>
+<p class="wysiwyg-text-align-justify">If, in an installation with multiple websites and/or language versions, you want to view the discussions of another language version, change the setting in the upper part of the dialog. With the View function, you can specify which table columns and how many rows per page will be displayed. You can search the contents of the overview table.</p>
+<p class="wysiwyg-text-align-justify"><strong>Edit options</strong></p>
+<p class="wysiwyg-text-align-justify">Click on the <strong>Create section</strong> button to open the dialog for creating a new discussion section. .</p>
+<p class="wysiwyg-text-align-justify">Click on the title of a discussion section to open the list of the existing posts. Click on the topic of a post to edit its properties.</p>
+<p class="wysiwyg-text-align-justify">Via the icons in the “Actions” column you can edit individual discussion sections:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<strong>Edit</strong>: This opens the dialog for editing the section properties.</li>
+<li>
+<strong>Show posts</strong>: Opens the list of posts.</li>
+<li>
+<strong>Copy</strong>: The desired section will be copied. The posts will not be copied, though, as this is usually not very practical.</li>
+<li>
+<strong>Export posts</strong>: This triggers the export of all the posts in this section.</li>
+<li>
+<strong>Delete</strong>: The selected section will be deleted following a confirmation prompt. Please bear in mind that all data will be irretrievably lost. If you do not need a particular section anymore, you should make use of the possibility to export the posts before deleting them.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Discussion properties</strong></p>
+<p class="wysiwyg-text-align-justify">The table lists all the properties a discussion section can have.</p>
+<table class="relative-table wrapped wysiwyg-text-align-justify" style="width: 108.902%; height: 1059px;" border="1">
+<colgroup> <col style="width: 25.1789%;"> </colgroup> <colgroup> <col style="width: 74.8125%;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center">Field</th>
+<th class="wysiwyg-text-align-center">Meaning</th>
+</tr>
+<tr>
+<td>Website / Language version</td>
+<td>
+<p>Website and language version to which the discussion section belongs. Cannot be changed subsequently.</p>
+</td>
+</tr>
+<tr>
+<td>Section title</td>
+<td>
+<p>Name of the section. This is displayed both in the admin area and on the panel page.</p>
+</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>
+<p>Brief explanation. This is displayed both in the admin area and on the panel page.</p>
+</td>
+</tr>
+<tr>
+<td>From EFS 10.4: Image</td>
+<td>Optionally, an image can be used to illustrate the discussion.</td>
+</tr>
+<tr>
+<td>Access control</td>
+<td>
+<p>Select one of the following options:</p>
+<ul>
+<li>Public: All visitors of the panel can view the discussion, but only logged-in panelists may actively contribute to it.</li>
+<li>All logged-in panelists: All logged-in panelists can view the discussion, other visitors have no access.</li>
+<li>For logged-in panelists of a panel group only: If you choose this option, an additional drop-down list will be displayed where you can select a specific panel group. Only members of the selected group may view and use the discussion.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Panelists can post</td>
+<td>
+<p>If this option is activated, the panel website will provide functions that allow the panelists to actively contribute to the discussion.</p>
+</td>
+</tr>
+<tr>
+<td>Publishing mode</td>
+<td>
+<p>You can specify whether the participants’ posts will be published immediately or only after they have been approved by a moderator.</p>
+<p>The available modes are:</p>
+<ul>
+<li>Publish immediately: All posts that are not blocked will be shown to all panelists.</li>
+<li>Publish after approval: Initially, the posts will only be shown to their respective author. Other panelists will only see them after they have been approved by the moderator.</li>
+</ul>
+<p>The default setting

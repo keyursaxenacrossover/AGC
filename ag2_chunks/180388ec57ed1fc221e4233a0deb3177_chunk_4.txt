@@ -1,0 +1,105 @@
+: 22px;">
+<td style="width: 139.344px; height: 22px;">
+<p>rb3482</p>
+</td>
+<td style="width: 115.344px; height: 22px;">
+<p>TsR</p>
+</td>
+<td style="width: 161.312px; height: 22px;">
+<p>nope</p>
+</td>
+<td style="width: 224px; height: 22px;">
+<p> </p>
+</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 139.344px; height: 22px;">
+<p>ta3215</p>
+</td>
+<td style="width: 115.344px; height: 22px;">
+<p>TsR</p>
+</td>
+<td style="width: 161.312px; height: 22px;">
+<p>nope</p>
+</td>
+<td style="width: 224px; height: 22px;">
+<p>will be purged on 2024-01-15</p>
+</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 139.344px; height: 22px;">
+<p>xt2131</p>
+</td>
+<td style="width: 115.344px; height: 22px;">
+<p>TsR</p>
+</td>
+<td style="width: 161.312px; height: 22px;">
+<p>nope</p>
+</td>
+<td style="width: 224px; height: 22px;">
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p><strong>BofA-US</strong></p>
+<table style="width: 683px;" data-layout="default" data-table-width="760">
+<tbody>
+<tr>
+<th style="width: 149.516px;">
+<p><strong>technical  name</strong></p>
+</th>
+<th style="width: 127.953px;">
+<p><strong>customer</strong></p>
+</th>
+<th style="width: 185.469px;">
+<p><strong>routing plugin active</strong></p>
+</th>
+<th style="width: 207.062px;">
+<p><strong>comment</strong></p>
+</th>
+</tr>
+<tr>
+<td style="width: 141.516px;">
+<p>gb8879</p>
+</td>
+<td style="width: 119.953px;">
+<p>Ipsos</p>
+</td>
+<td style="width: 177.469px;">
+<p>yes</p>
+</td>
+<td style="width: 199.062px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 141.516px;">
+<p> </p>
+</td>
+<td style="width: 119.953px;">
+<p> </p>
+</td>
+<td style="width: 177.469px;">
+<p> </p>
+</td>
+<td style="width: 199.062px;">
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p><strong>even more Tips and Tricks:</strong></p>
+<p>If you need to extract IPs from the blacklist files to put them on the permanent blacklist, you can do this like this:</p>
+<pre><code class="language-text">thurn_mathias@servicegw-prod-de-03:/nfs/installations/wv8816/nfs/opst/wv8816.customervoice360.com/projekte/TsCodeHelper/Firewall/Conf$ for i in $(sort blacklist_2020_05_11_03.lst | uniq | head -n 10); do php -r "echo \"'\" . long2ip($i) . \"',\" . \"\n\";"; done
+'77.83.85.11',
+'77.83.85.15',
+'77.83.85.20',
+'77.83.85.43',
+'77.83.85.48',
+'77.83.85.58',
+'77.83.85.99',
+'77.83.85.147',
+'77.83.85.160',</code></pre>

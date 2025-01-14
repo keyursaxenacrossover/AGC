@@ -1,0 +1,102 @@
+>Preventing usage of the right mouse button in a survey</p>
+</td>
+<td style="width: 412.465px;">
+<p>This feature is primarily used to protect content: It deactivates the context menu in the entire questionnaire. Please mind:</p>
+<ul>
+<li>
+<p>Keyboard commands however will not be suppressed.</p>
+</li>
+<li>
+<p>Using a question of the type “Text and image”, you can realize the same behavior for a particular questionnaire page.</p>
+</li>
+</ul>
+<p>The feature can also be used to prevent the usage of the browser’s Back button. For this, the survey must be opened in a pop-up window so that there is no menu bar.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 358.194px;">
+<p>The page is submitted automatically<br>after completion of all questions, if it contains only combinations<br>of the following question types...</p>
+</td>
+<td style="width: 412.465px;">
+<p>The respondent does not need to click on the Submit button on pages that only contain the specified combinations of question types.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 358.194px;">
+<p>Should a <strong>Back</strong> button be displayed?</p>
+</td>
+<td style="width: 412.465px;">
+<p>If this option has been activated, a real Back button will be shown which does not depend on the browser used by the respondent.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 358.194px;">
+<p>Type of codes that will be generated</p>
+</td>
+<td style="width: 412.465px;">
+<p>This function is only visible for personalized projects.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 358.194px;">
+<p>Enable data cleaning</p>
+</td>
+<td style="width: 412.465px;">
+<p>Activates automatic data cleaning. If a respondent uses the “Back” button in the questionnaire or that of the browser while completing a questionnaire, they may pass the same filter question more than once, giving different answers and then being routed into another filter branch, where they will answer different questions.</p>
+<p>Example: Somebody answers the question of whether they drive a car with “Yes” and is subsequently asked all car-related questions. Then, they go back to the questionnaire and state they do not drive a car. A filter lets them skip all car-related questions now. When the respondent completes the survey, they will have stated they do not drive a car. Nonetheless, all car-related variables will contain values.</p>
+<p>In the past, such irrelevant data had to be manually cleaned from the result data. With the “Data cleaning” function, this cleaning process has been automated.</p>
+<p>Please note:</p>
+<ul>
+<li>
+<p>Data cleaning only considers completed interviews, i.e. records with<br>status 31 or 32.</p>
+</li>
+<li>
+<p>The following routing types are supported:</p>
+<ul>
+<li>
+<p>“Filter” and “Random rotation” branches.</p>
+</li>
+<li>
+<p>Trigger types that affect routing via changes in the survey results. The function should, however, not be used in projects involving page triggers: In this case, the routing that the respondent took erroneously or for test purposes cannot be unambiguously identified.</p>
+</li>
+<li>
+<p>Action pages</p>
+</li>
+<li>
+<p>Depot questions</p>
+</li>
+<li>
+<p><em>Survey</em>-side Back buttons. Please note: that browser-side Back buttons are not fully supported. If a respondent skips back several pages using the browser <strong>Back</strong> button first and then skips forward several pages using the browser <strong>Forward</strong> button ignoring the system warning, these steps cannot be tracked and stored correctly. I.e. pages might be missing in page history, though valid data from these pages exist.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>“Random rotation” branches and loops are not supported.</p>
+</li>
+<li>
+<p>Data cleaning should not be applied to surveys that are prefilled with values. I.e. it should not be combined with the options “Transfer master data values to survey variables” -&gt; “Always prefill”, “Allow multiple participations, prefill with values of last participation” and import of specific answers from other projects</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="width: 358.194px;">
+<p>For all possible answers of the type “answer option + text”, completeness checks (DACs)<br>should also check whether the related text field has been filled in.</p>
+</td>
+<td style="width: 412.465px;">
+<p>In the standard configuration, answer categories of the “answer option + text” type are only checked to verify whether the respondent has clicked on a radio button or a checkbox. However, you have the option of configuring the DAC in such a way that the respondent must select the answer option containing the text field and fill in the text field.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 358.194px;">
+<p>Name of ticket variable (external survey start)</p>
+</td>
+<td style="width: 412.465px;">
+<p>Option for changing the name of the Get parameter used for the external survey start.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 358.194px;">
+<p>Name of ticket variable (when returning from an external survey)</p>
+</td>
+<td

@@ -1,0 +1,91 @@
+ use the preview function to double-check and, if necessary, change the data.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="formatting-of-the-import-file-in-detail" class="wysiwyg-text-align-justify">Formatting of the Import File in Detail</h2>
+<p class="wysiwyg-text-align-justify">When filling in the import template or creating your import file you have to consider various formatting rules.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The import file can be created in Excel or CSV.</p>
+</li>
+<li>
+<p>An individual column is created for each variable to be imported. You can import the following variables:</p>
+<ul>
+<li>
+<p>all project variables (v_x)</p>
+</li>
+<li>
+<p>all URL parameters (p_x) and user-defined variables (c_x)</p>
+</li>
+<li>
+<p>all participant variables (u_x)</p>
+</li>
+<li>
+<p>only in project type “Employee survey”: u_metaname</p>
+</li>
+<li>
+<p>various system data (tester, code, date_of_first_access, date of last access)</p>
+</li>
+<li>
+<p>only in project type “employee survey”: u_offline.</p>
+</li>
+<li>
+<p>disposition code</p>
+</li>
+</ul>
+</li>
+<li>
+<p>The first line usually contains the column label, i.e. in this case the names of the respective variables. This has the advantage that the software will automatically identify and assign the columns to the appropriate database fields. If your import data are values exported from another EFS project, you may alternatively use the export file itself without re-formatting the column names: An option titled “Use external variable names for matching” is available for the import.</p>
+</li>
+<li>
+<p>As is the case with the normal participant import, the e-mail addresses must be unambiguous. Otherwise, please remember to activate the relevant option “Allow duplicate e-mail addresses”.</p>
+</li>
+<li>
+<p>If the participants do not have e-mail addresses, you have to create dummy accounts. You can use e-mail addresses on the @3uu.eu domain: these addresses are owned by TIVIAN, and emails sent to them are deleted automatically.</p>
+</li>
+<li>
+<p>Blank fields of the import file will be filled with default values:</p>
+<ul>
+<li>
+<p>participant variables: “text field” = blank, “selectbox” = 0</p>
+</li>
+<li>
+<p>project variables: Default missing values of EFS depending on data type</p>
+</li>
+<li>
+<p>default disposition code: completed = “31”</p>
+</li>
+</ul>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="further-information" class="wysiwyg-text-align-justify">Further Information</h2>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The participant accounts for which you want to import data will be created automatically during the import process. They should not be created beforehand, otherwise the import will be impossible as the data records already exist. The results data import is not meant for overwriting existing data.</p>
+</li>
+<li>
+<p>The variables in which the imported data are to be stored have to be created in advance. It is not possible to create new variables via this import.</p>
+</li>
+<li>
+<p>New characteristics can be created via the import if this is permitted for the respective variable.</p>
+</li>
+<li>
+<p>It is not possible to upload externally collected loop data into <em>EFS</em> via results data import.</p>
+</li>
+<li>
+<p>A Microsoft <em>Excel</em> worksheet can have a maximum of 256 columns, i.e. it allows the import of a maximum of 256 variables. If your import exceeds this value, you should use another program instead of <em>Excel</em> for editing your import file, then save this file in CSV format and import it.</p>
+</li>
+<li>
+<p>In some cases, results data import fails due to the sheer file size of the <em>Excel</em> file. In this case, please save the file in CSV format and import it.</p>
+</li>
+<li>
+<p>Results data import is limited to 2,400 variables.</p>
+</li>
+</ul>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863" class="wysiwyg-text-align-justify">FAQ</h1>
+<h3 id="faq_1" class="wysiwyg-text-align-justify">Can I use Results Import for anonymous projects?</h3>
+<p class="wysiwyg-text-align-justify">No, the Results Import feature is not available for anonymous projects, panel surveys, or master data surveys. It is only available for personalized projects and employee surveys.</p>
+<h3 id="faq_2" class="wysiwyg-text-align-justify">What should I do if my import file exceeds 256 columns?</h3>
+<p class="wysiwyg-text-align-justify">If your import file has more than 256 columns, which is the limit for Microsoft Excel worksheets, you should use another program to edit your file. Save the file in CSV format and then import it into EFS.</p>
+<h3 id="faq_3" class="wysiwyg-text-align-justify">Can I import externally collected loop

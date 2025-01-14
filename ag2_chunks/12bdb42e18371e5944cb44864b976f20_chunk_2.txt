@@ -1,0 +1,186 @@
+ would look like this:</p>
+<p class="wysiwyg-text-align-justify">I<em>&amp;nbsp;</em>&lt;b&gt;don’t&lt;/b&gt;<em>&amp;nbsp;</em>agree<em>.</em></p>
+<p class="wysiwyg-text-align-justify">For question type “(311) Accordion” you can also set the option <strong>Below </strong>under <strong>Control elements → Detail configuration </strong>to fully support HTML in answer options.</p>
+<h3 id="paste-from-word" class="wysiwyg-text-align-justify">Paste from word</h3>
+<p class="wysiwyg-text-align-justify">EFS allows you to paste several questions at once from such a draft into the questionnaire editor. To do so, you merely need to arrange the contents of your draft according to certain rules, in order for EFS to differentiate between question texts, answers, and scale characteristics.</p>
+<p class="wysiwyg-text-align-justify">Please note: This import feature cannot be used for all question types. The drop-down list in the second dialog offers the question types that are permitted for the respective layout generation.</p>
+<h4 id="formatting-the-draft" class="wysiwyg-text-align-justify"><strong>Formatting the draft</strong></h4>
+<p class="wysiwyg-text-align-justify">The questions must be formatted in the draft according to the following pattern:</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 226.67px;"> <col style="width: 226.67px;"> <col style="width: 226.67px;"> </colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour="#c0b6f2">
+<p><strong>Formatted Question</strong></p>
+</th>
+<th data-highlight-colour="#c0b6f2">
+<p><strong>Question Element</strong></p>
+</th>
+<th data-highlight-colour="#c0b6f2">
+<p><strong>Question Type to be generated</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>How often do you use the following leisure information?</p>
+</td>
+<td>
+<p>Question text</p>
+</td>
+<td>
+<p>311</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>You can make several statements.</p>
+</td>
+<td>
+<p>Fill-in instruction</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Never - seldom - 1x a week - daily</p>
+</td>
+<td>
+<p>Categories</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Magazines</p>
+<p>TV</p>
+<p>Radio</p>
+</td>
+<td>
+<p>Answers</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p> </p>
+</td>
+<td>
+<p>Blank row to next question</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Please state your area of employment.</p>
+</td>
+<td>
+<p>Question text</p>
+</td>
+<td>
+<p>111</p>
+</td>
+</tr>
+<tr>
+<td>
+<p> </p>
+</td>
+<td>
+<p>Fill-in instruction (may be left blank)</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p> </p>
+</td>
+<td>
+<p>Categories<br>(may be left blank)</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Marketing</p>
+<p>Training</p>
+<p>Administration</p>
+</td>
+<td>
+<p>Answers</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p> </p>
+</td>
+<td>
+<p>Blank row to next question</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>How do you feel in your team?</p>
+</td>
+<td>
+<p>Question text</p>
+</td>
+<td>
+<p>340</p>
+</td>
+</tr>
+<tr>
+<td>
+<p> </p>
+</td>
+<td>
+<p>Fill-in instruction</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>1- 2- 3- 4- 5</p>
+</td>
+<td>
+<p>Categories</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>left - right</p>
+</td>
+<td>
+<p>Answers</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<h4 class="wysiwyg-text-align-justify"> </h4>
+<h4 id="pasting-the-draft-texts" class="wysiwyg-text-align-justify">Pasting the draft texts</h4>
+<p class="wysiwyg-text-align-justify">Please proceed as follows:</p>
+<ol class="wysiwyg-text-align-justify" start="1

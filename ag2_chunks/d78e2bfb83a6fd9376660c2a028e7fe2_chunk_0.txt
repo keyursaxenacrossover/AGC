@@ -1,0 +1,37 @@
+<p>Overview</p>
+<article>
+<p>This article explains how to draw two random numbers without replacement from a pool of numbers using EFS Survey. It covers the process of setting up user-defined variables, creating a static list, and using a list trigger to generate random selections.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>This guide focuses on the steps required to randomly select two numbers from a predefined pool using EFS Survey's features. It includes instructions for setting up the necessary components and executing the random selection process.</p>
+<ul>
+<li><a href="#setup">Setting Up User-Defined Variables and Static List</a></li>
+<li><a href="#general_info">General Information and Limitations</a></li>
+</ul>
+<h2 id="setup">Setting Up User-Defined Variables and Static List</h2>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="29"><strong>Example:</strong> There is a pool of numbers: 1, 22, 313, 414, 559 (subsequently called "pool“). Your goal is to draw two of them, randomly selected (random numbers).</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="188">Add two <strong data-renderer-mark="true">User-defined variables</strong> to your project: Survey menu &gt;&gt; Project properties &gt;&gt; User-definded variables: 2, save, Labels and Data type: set them to Integer, and name them, i.e. random1, random2 save.</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="394">Create a <strong data-renderer-mark="true">static list</strong>: Questionnaire editor &gt;&gt; Lists &gt;&gt; Create static list give a name, i.e. Pool save. Add as many list elements as there are elements in the pool, here: five. Inclusion condition: Always in random selection. Change list element no. accordingly to your pool numbers.</p>
+<p data-renderer-start-pos="394"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014721626002"></p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="681">In the Questionnaire editor add a <strong data-renderer-mark="true">List trigger</strong> at a point before the random numbers are needed: Triggers &gt;&gt; give a name, i.e. random numbers, activate: List trigger, click on button: Create. Settings of trigger: Also execute trigger in preview mode: activate, (other settings according to individual needs) save. Detail configuration: Select your list: Pool Add two New List Elements: </p>
+<p data-renderer-start-pos="1064">List element                List Property         Target variable<br>List element 1             Label                        random1 (c_0001)<br>List element 2             Label                        random2 (c_0002)</p>
+<p data-renderer-start-pos="1064"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014721627922"></p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="1280">List options: activate (!) the radio button and insert a 2 in the line „list elements will be selected at random.“activate: Randomize list elements. Save.</p>
+<p data-renderer-start-pos="1438">Now you have two randomly selected numbers from your pool in the variables c_0001 and c_0002.</p>
+<p data-renderer-start-pos="1438"> </p>
+<h2 id="general_info">General Information and Limitations</h2>
+<ul>
+<li>This example is for selecting 2 random numbers. For more numbers, create additional user-defined variables and extend the list trigger accordingly.</li>
+<li>You can increase the pool by adding more list elements to your static list.</li>
+<li>The maximum number of elements in the pool is limited to 250 (maximum static list size).</li>
+<li>Numbers in the pool can be negative if using the Label property.</li>
+<li>You can use element numbers instead of labels by choosing "Element Number" in the list trigger, but these are limited to 999.</li>
+</ul>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq1">Can I select more than two random numbers?</h3>
+<p>Yes, you can select more than two random numbers by creating additional user-defined variables and extending the list trigger configuration accordingly.</p>
+<h3 id="faq2">What is the maximum size of the number pool?</h3>
+<p>The maximum size of the number pool is 250, which is the limit for a static list in EFS Survey.</p>
+<h3 id="faq3">Can I use negative numbers in the pool?</h3>
+<p>Yes, you can use negative numbers in the pool if you are using the Label property in the list trigger configuration.</p>
+<p> </p>
+</article>

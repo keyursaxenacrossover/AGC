@@ -1,0 +1,44 @@
+.okta.com/en/prod/Content/Topics/Directory/Reference_Directories.htm" href="https://help.okta.com/en/prod/Content/Topics/Directory/Reference_Directories.htm" data-testid="link-with-safety" data-renderer-mark="true">https://help.okta.com/en/prod/Content/Topics/Directory/Reference_Directories.htm</a></p>
+<p data-renderer-start-pos="2540"> </p>
+<h4 id="I-try-to-configure-Okta-but-I-am-not-able-to-see-the-Okta-admin-view.-I-just-see-a-welcome-page.-How-can-I-login-to-the-Okta-admin-console?" data-renderer-start-pos="2542"><strong data-renderer-mark="true">I try to configure Okta but I am not able to see the Okta admin view. I just see a welcome page. How can I login to the Okta admin console?</strong></h4>
+<p data-renderer-start-pos="2683">Customers should not see Okta in any case. That is why this welcome page exists.</p>
+<p data-renderer-start-pos="2765">For Tivian internal users a deeplink can be used to access the admin area - e.g.</p>
+<p data-renderer-start-pos="2847"><a class="cc-1rn59kg" title="https://questback-admin.okta.com/admin/dashboard" href="https://questback-admin.okta.com/admin/dashboard" data-testid="link-with-safety" data-renderer-mark="true">https://questback-admin.okta.com/admin/dashboard</a></p>
+<p> </p>
+<h2 id="h_01J6EY4CECVZW2SDA8P41JVGQK"> </h2>
+<h2 id="header-11">Multi-factor Authentication</h2>
+<h4 id="What-is-Multi-factor-Authentication?" data-renderer-start-pos="4"><strong data-renderer-mark="true">What is Multi-factor Authentication?</strong></h4>
+<p data-renderer-start-pos="42">Multi factor Authentication means that a user that wants to authenticate has to provide other factors apart from username and password to verify their identity.</p>
+<h4 id="What-factors-are-supported-?" data-renderer-start-pos="216"><strong data-renderer-mark="true">What factors are supported ?</strong></h4>
+<p data-renderer-start-pos="246">We currently offer the following factors from Okta.</p>
+<p data-renderer-start-pos="299">Officially supported:</p>
+<ul class="ak-ul" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="324">Okta Verify</p>
+</li>
+<li>
+<p data-renderer-start-pos="339">Google Authenticator</p>
+</li>
+<li>
+<p data-renderer-start-pos="363">SMS (clarify legal questions first! technical support is in place)</p>
+</li>
+</ul>
+<p data-renderer-start-pos="433">Also tested:</p>
+<ul class="ak-ul" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="449">Microsoft Authenticator</p>
+</li>
+</ul>
+<p data-renderer-start-pos="476"> </p>
+<h4 id="Is-MFA-enabled-by-default?" data-renderer-start-pos="478"><strong data-renderer-mark="true">Is MFA enabled by default?</strong></h4>
+<p data-renderer-start-pos="506">No. It has to be requested during the order of Tivian Access.</p>
+<h4 id="Can-users-use-other-Authenticator-apps-?" data-renderer-start-pos="569"><strong data-renderer-mark="true">Can users use other Authenticator apps ?</strong></h4>
+<p data-renderer-start-pos="611">Even though they are not officially supported we tested it and had not problems using the Microsoft Authenticator app instead of the Google Authenticator.</p>
+<p data-renderer-start-pos="767">In general it seems that authenticator apps supporting TOTP (Time-Based One-Time Passwords) are working fine and are exchangeable.</p>
+<p data-renderer-start-pos="899">We still recommend the usage of the officially supported Google Authenticator.</p>
+<p data-renderer-start-pos="979">As soon as we know of other authenticators which are working with Okta, we will document them in the list above (like the Microsoft Authenticator)</p>
+<h4 id="When-does-a-user-have-to-provide-MFA?" data-renderer-start-pos="1127"><strong data-renderer-mark="true">When does a user have to provide MFA?</strong></h4>
+<p data-renderer-start-pos="1166">The default behavior is that a user has to provide the second factor each time he/she logs in. This includes an option that the second factor of a user is remembered by Okta and does not need to be provided again for a fixed time. More configuration could be provided.</p>
+<p data-renderer-start-pos="1444"> </p>
+<h4 id="How-long-will-the-second-factor-be-remembered-by-our-Identity-Provider?" data-renderer-start-pos="1446"><strong data-renderer-mark="true">How long will the second factor be remembered by our Identity Provider?</strong></h4>
+<p data-renderer-start-pos="1519">This can be configured in our Identity Provider. The default is shown on <span data-inline-card="true" data-card-url="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1059455631"><span class="loader-wrapper"><span

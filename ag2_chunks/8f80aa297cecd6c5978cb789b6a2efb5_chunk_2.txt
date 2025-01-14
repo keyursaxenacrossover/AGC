@@ -1,0 +1,47 @@
+</li>
+<li class="guide-markup" style="box-sizing: inherit; font-weight: inherit;">
+<strong class="guide-markup" style="box-sizing: inherit; font-weight: bolder;">Alias domain</strong> - provided by Sales/part of order survey; if not mentioned as part of the request, we default to <code class="guide-markup" style="box-sizing: inherit; font-weight: inherit; font-family: SFMono-Regular, Consolas, ' Liberation Mono' , Menlo, Courier, monospace; font-size: 0.95em; background: #f7f7f7; border: 1px solid #dddddd; border-radius: 3px; margin: 0px 2px; padding: 0px 5px;">no</code>.
+<ol>
+<li class="guide-markup" style="box-sizing: inherit; font-weight: inherit;">Replace the <code>{{ALIASDOMAIN}}</code> placeholder in the .txt</li>
+</ol>
+</li>
+<li class="guide-markup" style="box-sizing: inherit; font-weight: inherit;">
+<strong class="guide-markup" style="box-sizing: inherit; font-weight: bolder;">Domain values</strong> - CS needs to decide based on the domain in the ticket; nameservers for the alias domain can be used to determine who is the owner of the domain (NS values <strong class="guide-markup" style="box-sizing: inherit; font-weight: bolder;">opst.de </strong>indicates that the domain is Tivian-owned)</li>
+<li class="guide-markup" style="box-sizing: inherit; font-weight: inherit;">
+<strong class="guide-markup" style="box-sizing: inherit; font-weight: bolder;">MySight/DataVoyager</strong> - if not mentioned as part of the request, we can assume they are not required (we default to <code class="guide-markup" style="box-sizing: inherit; font-weight: inherit; font-family: SFMono-Regular, Consolas, ' Liberation Mono' , Menlo, Courier, monospace; font-size: 0.95em; background: #f7f7f7; border: 1px solid #dddddd; border-radius: 3px; margin: 0px 2px; padding: 0px 5px;">no</code>)</li>
+</ol>
+</li>
+<li>Save the changes made to the txt file (and rename it to <strong>EFS_Installation_Checklist_ticketID.txt</strong>) save it to the ticket, then create the SaaS CR using the template that was generated.
+<ol>
+<li><strong>Don't forget to attach the txt file to the ticket, as it will be used by other colleagues moving forward.</strong></li>
+</ol>
+</li>
+<li>Once the SaaS CR gets resolved, you can retrieve the txt file and continue with the rest of the tasks detailed in the .txt file using the same logic:
+<ol>
+<li>Make sure to update the root password to the default one.
+<ul>
+<li>Check the article <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21156905770258">Changing-the-Root-Password-in-DXI-Installations-in-Bulk</a> , but instead of applying the password update to all installations, run it only to the current one, below are the details:
+<ul>
+<li>Simply copy the hashed password from our testing installation</li>
+<li>Then load the DB for the new installation (<code>i</code> then <code>efslogin</code>)</li>
+<li>then run the update statement:
+<pre>UPDATE users SET u_passwd = &lt;default password hashed&gt; WHERE uid = 1 AND u_account = 'root';</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Replace all <code>{{PLACEHOLDER}}</code> entries with their relevant real counterparts, and this will result in having all the information outlined and just ready to copy/paste in the EFS/Okta configurations.</li>
+<li>You will have a few legacy fields to fill in, on the Globis side of things, namely <strong>Netsuite fields</strong>
+<ol>
+<li>If the installation is a clone, just copy all the details from the source installation from Globis</li>
+</ol>
+</li>
+<li>If you are dealing with IPSOS/Kantar clone installations, the checklist has <strong>special steps for them</strong>, that are to be followed; so just make sure to search in the checklist for Kantar or IPSOS keywords to find those special steps.</li>
+<li>Make use of <a href="https://docs.google.com/spreadsheets/d/1Yx-4TFTCjzrqTyFzIWGBAACBkIkFfCIqreGYPlqWLYM/edit?gid=0#gid=0">DXI/EFS Support Agent Accounts - new instance import CSV template - Google Sheets</a> in order to import all the support agent accounts into the instance (for blank installations)</li>
+</ol>
+</li>
+<li>Of course, once everything is up and running, you will need to respond to the ticket and inform the requester of the following:
+<ol>
+<li>The new instance URL</li>
+<li>The login credentials (only for blank installs, as cloned instances contain the same accounts from the source installation), while making sure that you follow the guide for <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20304985692946"

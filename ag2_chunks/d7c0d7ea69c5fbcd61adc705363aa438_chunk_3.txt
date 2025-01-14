@@ -1,0 +1,34 @@
+ Managed Groups:</strong></p>
+<p class="wysiwyg-text-align-justify">To avoid confusion when managing groups in Portals, the system is designed so that the person who creates a User-managed group is defined as the ‘owner’. Only group members can view a public group, and only the owner can edit the group. Thus, only group owners can publish or make changes to groups. This is consistent across all modules in Portals, so when inviting new people to a Portal using the Portal Invitation module, you can only select groups that you own.</p>
+<h2 id="h_01HGKSMPRTG0JDQX3JDQKX3NQP" class="wysiwyg-text-align-justify">Reported Posts</h2>
+<p class="wysiwyg-text-align-justify">In the People → Contacts → Reported posts menu, you will find all abuse reports received.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>By default, only open reports are shown. To display reports with other statuses, use extended search.</li>
+<li>The Frequently reported posts tab displays open reports grouped by target post, allowing you to easily identify posts with multiple reports.</li>
+<li>To change the status of multiple reports for the same post, open one report, change the status and editor, add your comment, and activate the “Batch processing” checkbox before saving. This applies the status change to all reports for that post.</li>
+</ul>
+<h2 id="h_01HGKSMPRTM0JDQX3JDQKX3NQQ" class="wysiwyg-text-align-justify">Send E-mail</h2>
+<p class="wysiwyg-text-align-justify">An additional mail dispatch function is available in the People → Contacts → Send e-mail menu. This function allows you to send targeted emails to individual recipients, including those who are not panel participants and have no address data in EFS Panel.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>The layout is the same as other mail dispatch functions in EFS Panel.</li>
+<li>You can access all authorized sender addresses and mail templates.</li>
+<li>Note: Wildcards (e.g., #url#) cannot be used with this function; they are only available with dispatch functions accessing the People database.</li>
+</ul>
+<p id="h_01HGKSMPRTQ0JDQX3JDQKX3NQR" class="wysiwyg-text-align-justify"><strong>Controlling Dispatch Processes</strong></p>
+<p class="wysiwyg-text-align-justify">Panels often require the sending of large quantities of e-mails. Accordingly, options for controlling the dispatch process are important:</p>
+<p class="wysiwyg-text-align-justify">The Mail queue in the People → Contacts menu provides not only the list of e-mails to be sent but also the option of intervening in dispatch processes that have not yet been completed. Refer to the manual “EFS Survey”.</p>
+<p class="wysiwyg-text-align-justify"><strong>Dealing with Undeliverable E-Mails</strong></p>
+<p class="wysiwyg-text-align-justify">Undeliverable emails are usually returned to the sender's address. However, you can specify a different address in the “Reply-To” field of the mail form (refer to the “EFS Survey” manual for details).</p>
+<p class="wysiwyg-text-align-justify">To handle bounced emails:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>Use shareware tools to extract email addresses from bounced emails. For example, you can use eMail Bounce Handler from <a href="http://www.maxprog.com/EmailBounceHandler.html" target="_new" rel="noreferrer">Maxprog</a>.</li>
+<li>Search for the respective panelists manually and deactivate or delete them as needed.</li>
+</ol>
+<h2 id="h_01HGKSMPRTQ0JDQX3JDQKX3NQR" class="wysiwyg-text-align-justify">Protecting Panelists' E-Mail Addresses</h2>
+<p class="wysiwyg-text-align-justify">Optionally, you can hide panelists' email addresses in the admin area for specific user teams.</p>
+<p class="wysiwyg-text-align-justify">Various rights enable you to hide email addresses in specific menus. These new rights are fully integrated into the EFS rights system and should be used in combination with existing ACL rights and object rights. For user teams not allowed to access panelists’ email addresses, revoke the new rights and also the read rights for “show_ppasswd” and “mail_passwords.” These rights grant access to panelist passwords in the panelists administration and mail preview, allowing users to log in as a panelist and view the email address on the website.</p>
+<p class="wysiwyg-text-align-justify">The following table provides an overview:</p>
+<table class="wrapped tablesorter tablesorter-default relative-table confluenceTable wysiwyg-text-align-justify" style="margin: 0px auto; border-collapse: collapse; background-color: #ffffff; height: 657px; width: 944px;" border="1">
+<tbody>
+<tr class="tablesorter-headerRow">
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; background-color: var(--ds-background-accent-gray-subtlest,#f0f0

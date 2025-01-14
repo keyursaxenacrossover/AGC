@@ -1,0 +1,70 @@
+p>
+</li>
+<li>
+<p>offering list elements as well as standard answer options. In this case, you can change the positions of the elements by changing their numbering. Then click on <strong>Save</strong>.</p>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="outputting-lists-in-the-questionnaire" class="wysiwyg-text-align-justify">Outputting lists in the questionnaire</h3>
+<p class="wysiwyg-text-align-justify">You can output entire lists in the questionnaire, e.g. to issue a confirmation to respondents of what they have selected. If you use this feature, the output will be subject to the inclusion conditions defined for the list, i.e. if you have specified, for example, a dynamic list and the inclusion condition “if selected, always in the list”, the selected elements will be output via wildcard.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The list-ID (#1_xxx#) serves as a wildcard.</p>
+</li>
+<li>
+<p>You can specify which general separator to use and the separator between the last two elements of the list.</p>
+</li>
+<li>
+<p>You can define alternative labeling for the list elements.</p>
+</li>
+<li>
+<p>It is not possible to use this wildcard to output list elements, which come from the multimedia question types 511 and 521: Instead of images, the related alternative texts will be output. However, if you use HTML to incorporate images directly into the items of a list source question, these images will be output.</p>
+</li>
+</ul>
+<h3 id="viewing-the-list-id-and-inserting-it-into-questionnaires" class="wysiwyg-text-align-justify"><strong>Viewing the list ID and inserting it into questionnaires</strong></h3>
+<p class="wysiwyg-text-align-justify">You will find the list ID in the overview of the Lists menu. Using the form “#l_xxx#”, insert this list ID into the desired position in the questionnaire text, where it will serve as a wildcard.</p>
+<h3 id="specifying-separators" class="wysiwyg-text-align-justify"><strong>Specifying separators</strong></h3>
+<ol class="wysiwyg-text-align-justify">
+<li>
+<p>Open the menu <strong>Lists</strong>, select the desired list, and then open the <strong>General settings </strong>tab.</p>
+</li>
+<li>
+<p>Enter the usual separator into the “Separator between list elements” field. If necessary, enter blank spaces before and after the separator as well. </p>
+</li>
+<li>
+<p>If you wish to use a special separator before the last element in the listing (e.g. the word “and” or &lt;br&gt;), enter this separator into the field entitled “Separator right before the last list element”.</p>
+</li>
+<li>
+<p>After that, confirm by clicking on <strong>Save</strong>.</p>
+</li>
+</ol>
+<h3 id="changing-list-element-labels" class="wysiwyg-text-align-justify">Changing list element labels</h3>
+<p class="wysiwyg-text-align-justify">You can change the labels of the list elements displayed.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Define the required sets of text elements on the <strong>Wildcard </strong>tab as will be familiar from loops.</p>
+</li>
+<li>
+<p>These alternative sets are imported via wildcards with the format #listID_x#. That is, the second set of text elements in the first list of the project (list ID 1) is output via #1_1_2#.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">To translate the separators and wildcards in multilingual projects, find the list in the overview of the <strong>Questionnaire editor</strong> → <strong>Lists </strong>menu, click on the <strong>Globe </strong>icon and use the <strong>View </strong>button to open the text elements of the desired languages.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="static-lists" class="wysiwyg-text-align-justify">Static lists</h2>
+<p class="wysiwyg-text-align-justify">You can click on <strong>Questionnaire editor</strong> → <strong>Lists </strong>and then either select an existing list or click on the buttons labeled <strong>Create static list</strong> to create a new list.</p>
+<h3 id="creating-a-static-lists" class="wysiwyg-text-align-justify">Creating a static lists</h3>
+<p class="wysiwyg-text-align-justify">A static list is not composed using the items of source questions or source lists, but the list elements are directly entered.</p>
+<p class="wysiwyg-text-align-justify">Open the <strong>Questionnaire editor</strong> → <strong>Lists </strong>menu and click on the <strong>Create static list </strong>button.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Give the new list an internal name, in this example “Subjects”.</p>
+</li>
+<li>
+<p>Enter a wildcard.</p>
+</li>
+<li>
+<p>Confirm by clicking on <strong>Save</strong>.</p>
+</li>
+<li>
+<p>The 

@@ -1,0 +1,52 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1083211807">https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1083211807</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">SINC ab EFS 8.1</a></li>
+<ul>
+<li><a href="#header-3">Activate SINC</a></li>
+<li><a href="#header-4">Deactivation</a></li>
+<li><a href="#header-5">Function</a></li>
+<li><a href="#header-6">Datenbank</a></li>
+<li><a href="#header-7">Valuable Tips</a></li>
+<ul>
+<li><a href="#header-9">General</a></li>
+<li><a href="#header-10">FAQ</a></li>
+<li><a href="#header-11">How to find out the owner of a Facebook app (via graph API of Facebook )</a></li>
+<li><a href="#header-12">Template Geplänkel</a></li>
+</ul>
+<li><a href="#header-14">Was tun wenn jemand SINC Start bestellt?</a></li>
+<li><a href="#header-15">Betriebshandbuch &amp; Dokumentation -</a></li>
+</ul>
+<li><a href="#header-17">SINC App aufsetzen bis 8.0 - deprecated</a></li>
+<ul>
+<li><a href="#header-19">Registrierung der App bei Facebook</a></li>
+<ul>
+<li><a href="#header-21">English Documentation</a></li>
+</ul>
+<li><a href="#header-23">Integration mit der Enterprise Feedback Suite (EFS) - deprecated?</a></li>
+<li><a href="#header-24">Integration ins Panel CMS</a></li>
+<li><a href="#header-25">Facebook Late Permissions Requests</a></li>
+</ul>
+</ul>
+</ul><blockquote><p>[2019-12-17 14:34] Paul Kretek: Puh. erste regel von sinc, wir reden nicht über sinc. 🙂</p></blockquote><p></p><ac:parameter ac:name="maxLevel">2</ac:parameter><h1 id="header-1">SINC ab EFS 8.1</h1><h2 id="header-3">Activate SINC</h2><p>In Console change the config flag:</p><pre><code class="language-text">$__facebook_enabled = 1;</code></pre><p>Or got to the web interface and in the Options-&gt;System configuration change the variable “facebook_enabled” to true.</p><h2 id="header-4">Deactivation</h2><p>In Console change the config flag:</p><pre><code class="language-text">$__facebook_enabled = 0;</code></pre><p>Or got to the web interface and in the Options-&gt;System configuration change the variable “facebook_enabled” to false.</p><p>Solange Templates dynamisch aufgebaut wurden, müssen keine Änderungen daran vorgenommen werden.</p><h2 id="header-5">Function</h2><p>The customer can configure further options in the 2 available menus:</p><p><strong>Facebook Language Version</strong><br>All the necessary app settings can be found here and are for the language version only. Obtain the app screct from your Facebook App.</p><p><strong>General Facebook Settings</strong><br>In Website &gt;&gt; Global configuration &gt;&gt; Facebook configuration you can activate more permissions and configure the panel status for the deauth status (deauth = someone deletes the app again)</p><h2 id="header-6">Datenbank</h2><pre><code class="language-text">mysql&gt; desc panel_foreign_login_identifiers;
++------------+--------------+------+-----+---------------------+-------+
+| Field      | Type         | Null | Key | Default             | Extra |
++------------+--------------+------+-----+---------------------+-------+
+| uid        | int(11)      | NO   | MUL | NULL                |       |
+| identifier | varchar(255) | NO   | PRI | NULL                |       |
+| provider   | varchar(255) | NO   |     | NULL                |       |
+| dt_sync    | datetime     | NO   |     | 0000-00-00 00:00:00 |       |
++------------+--------------+------+-----+---------------------+-------+
+4 rows in set (0.00 sec)
+
+mysql&gt; desc panel_foreign_mappings;
++-------------+--------------+------+-----+---------+----------------+
+| Field       | Type         | Null | Key | Default | Extra          |
++-------------+--------------+------+-----+---------+----------------+
+| id          | int(11)      | NO   | PRI | NULL    | auto_increment |
+| provider_id | tinyint(1)   | NO   | MUL | 0       |                |
+| map_from    | varchar(50)  | YES  | MUL | NULL    |                |
+| map_to      | varchar(255) | YES  | MUL | NULL    |                |
+| status      | tinyint(1)   | NO   |     |

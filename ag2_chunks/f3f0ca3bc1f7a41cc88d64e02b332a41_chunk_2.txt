@@ -1,0 +1,85 @@
+td>
+<td>
+<p>Custom SSO solutions using SAML or OIDC</p>
+<p>otherwise local login</p>
+</td>
+</tr>
+<tr>
+<td><p>Tableau</p></td>
+<td><p>Uses Tableau Login</p></td>
+</tr>
+<tr>
+<td><p>Dashboarding (Dashbo)</p></td>
+<td><p>Token forwarding through iframe with self-made public-key infrastructure</p></td>
+</tr>
+<tr>
+<td><p>Tivian Analytics</p></td>
+<td><p>Using Okta via OIDC</p></td>
+</tr>
+<tr>
+<td><p>Communicate XI</p></td>
+<td><p>Self-made identity provider (ellis-island) using OAuth2</p></td>
+</tr>
+<tr>
+<td><p>Datavoyager</p></td>
+<td>
+<p>Tivian Access using OIDC towards Okta as optional opt-in</p>
+<p>otherwise local login</p>
+</td>
+</tr>
+</tbody>
+</table><p></p><h2 id="header-9">
+<ac:emoticon ac:emoji-fallback="\uD83D\uDCD8" ac:emoji-id="1f4d8" ac:emoji-shortname=":blue_book:" ac:name="blue-star"></ac:emoticon> Background</h2><p>Currently there are different products or modules using different kinds of authentication mechanisms. For a joint solution one identity provider should be used to authenticte users in every product. This also enables API requests from one product to another using the same mechanism.</p><p>In addition this also enables a common SSO login for a new product development.</p><h2 id="header-10">
+<ac:emoticon ac:emoji-fallback="\uD83C\uDF08" ac:emoji-id="1f308" ac:emoji-shortname=":rainbow:" ac:name="blue-star"></ac:emoticon> Options considered</h2><h3 id="header-12">General options</h3><ul>
+<li><p>Managed solution</p></li>
+<li><p>Self-hosted ready-made software package</p></li>
+<li><p>Self-build and self-hosted software solution</p></li>
+</ul><table data-layout="wide" ac:local-id="e2d6eb90-d325-412b-a0d3-0d93ab8692af">
+<colgroup>
+<col style="width: 159.0px;">
+<col style="width: 267.0px;">
+<col style="width: 267.0px;">
+<col style="width: 267.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p></p></th>
+<th><p><strong>Managed Solution</strong></p></th>
+<th><p><strong>Self-Hosted</strong></p></th>
+<th><p><strong>Self-Built</strong></p></th>
+</tr>
+<tr>
+<th><p><strong>Description</strong></p></th>
+<td><p>see above</p></td>
+<td><p>see above</p></td>
+<td><p>see above</p></td>
+</tr>
+<tr>
+<th><p><strong>Pros and cons</strong></p></th>
+<td>
+<p><ac:emoticon ac:emoji-fallback=":plus:" ac:emoji-id="atlassian-plus" ac:emoji-shortname=":plus:" ac:name="plus"></ac:emoticon></p>
+<ul>
+<li><p>Software security is mostly guaranteed by the vendor as well as software security updates</p></li>
+<li><p>Software maintenance is done by the vendor</p></li>
+<li><p>Operation and infrastructure maintenance is done by the vendor</p></li>
+</ul>
+<p><ac:emoticon ac:emoji-fallback=":minus:" ac:emoji-id="atlassian-minus" ac:emoji-shortname=":minus:" ac:name="minus"></ac:emoticon></p>
+<ul>
+<li><p>An additional vendor has to be added to contracts</p></li>
+<li><p>Features and scalability are limitted to what the managed solutions offers</p></li>
+<li><p>Enterprise pricing is oftentimes based on fixed contigents</p></li>
+<li><p>Dependency to the vendor is added (at least for non-standard APIs)</p></li>
+</ul>
+</td>
+<td>
+<p><ac:emoticon ac:emoji-fallback=":plus:" ac:emoji-id="atlassian-plus" ac:emoji-shortname=":plus:" ac:name="plus"></ac:emoticon></p>
+<ul>
+<li><p>Processes of setup, monitoring, logging, incident management, scaling and others align with the processes for existing software and can be integrated with existing solutions</p></li>
+<li><p>Software maintenance is done by the vendor/creator</p></li>
+<li><p>Pricing is directly based on the resources needed to run the solution</p></li>
+</ul>
+<p><ac:emoticon ac:emoji-fallback=":minus:" ac:emoji-id="atlassian-minus" ac:emoji-shortname=":minus:" ac:name="minus"></ac:emoticon></p>
+<ul>
+<li><p>Operation and infrastructure maintenance has to be done by us</p></li>
+<li><p>Features are limitted to what the managed solutions offers</p></li>
+<li><p>Dependency to the vendor is added (at least for non-standard APIs)</p

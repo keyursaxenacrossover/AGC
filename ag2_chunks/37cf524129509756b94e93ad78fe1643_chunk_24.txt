@@ -1,0 +1,33 @@
+ the icons:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>View: Opens the selected version of the template or include.</li>
+<li>Compare with current version: Displays a comparison of the selected and the current version. (The revision ID in the header tells you which versions are being compared.)</li>
+<li>Rollback: Resets the current version to the status of the selected version. This change is performed in the working version only, it is not published automatically.</li>
+<li>Compare with previous version: Displays a comparison of the selected and the next oldest version. (The revision ID in the header tells you which versions are being compared.)</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><em>Information: </em>The history contains the twenty most recent changes made to the respective template or included.</p>
+<h3 id="debugging" class="wysiwyg-text-align-justify"><strong>Debugging</strong></h3>
+<p class="wysiwyg-text-align-justify">You can have different debug information displayed below the proper panel pages, such as the current character set or a panelist’s language version. Furthermore, a Smarty debugging console is available. It contains an overview of all the wildcards that can be used on the respective page.</p>
+<p class="wysiwyg-text-align-justify">With EFS 10.3, a new, more comfortable console has been introduced:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>It is not opened automatically anymore each time you click on the panel page, but only upon explicit request.</li>
+<li>The smarty objects can be expanded and collapsed.</li>
+<li>Clicking on a node copies the variable into the clipboard.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If you wish to use these functions, please proceed as follows:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>The debug functions are activated under <strong>Website → {Selected language version}</strong> on the<strong> Debugging</strong> tab in the field “Show debug information on the website”.</li>
+<li>To make sure that the debug mode will not be inadvertently activated for all panelists, the debug function has to be limited to an explicit address range. To do so, enter the desired IP addresses in the field “IP address range”. To have your IP address available at all times, it is also displayed there.</li>
+<li>Optionally, you can also enforce authentication with a combination of username and password. To do so, enter the desired user name and password into the fields “HTTP authentication (user)” and “HTTP authentication (password)”.</li>
+<li>To make the Smarty debugging console available (Figure 25.4), in addition to the settings described above, the main template must contain the command {debug}. This is the case in newly set up standard panels. If the console does not open automatically in your installation, please check whether the command is available. In a newly up panel, you will usually find the following line at the end of the main template “main_default”:<br><code>{debug} {* debugging *}</code>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><em>Information: </em><strong>Please note:</strong> If you activate the debug function in the online version of the panel site for the entire possible address range,<em> the Smarty debugging console will be visible to all visitors to the panel</em>. This means that the visitors may use it to obtain technical information that might be abused. You should therefore activate the debug function only for your own IP and/or within your working version and immediately deactivate it after you have completed your work.</p>
+<p class="auto-cursor-target wysiwyg-text-align-justify"> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863" class="wysiwyg-text-align-justify">FAQ</h1>
+<h3 id="h_01HGKSMPRVM3YJQX3YJXQX3Z7" class="wysiwyg-text-align-justify">How can I customize the registration form for my panel?</h3>
+<p class="wysiwyg-text-align-justify">You can customize the registration form by creating a new form in the Forms menu, selecting the "Registration" form type, and configuring the desired variables and their properties.</p>
+<h3 id="h_01HGKSMPRVM3YJQX3YJXQX3Z9" class="wysiwyg-text-align-justify">Can I offer different types of bonuses to my panelists?</h3>
+<p class="wysiwyg-text-align-justify">Yes, the EFS Panel allows you to create various types of bonuses, including standard bonuses with fixed or variable amounts, and voucher-based bonuses with unique codes.</p>
+<h3 id="h_01HGKSMPRVM3YJQX3YJXQX3ZB" class="wysiwyg-text-align-justify">How do I modify the appearance of my panel pages?</h3>
+<p class="wysiwyg-text-align-justify">You can modify the appearance of your panel pages by editing the Smarty templates and CSS included in the Website editor. This allows you to customize the layout, styling, and functionality of your pages.</p>

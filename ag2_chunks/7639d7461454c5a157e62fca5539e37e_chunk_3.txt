@@ -1,0 +1,52 @@
+>
+</h2>
+<hr>
+<h3 id="header-16">Management of Genders</h3>
+<p>The People module now allows you to create and use more than the previously two genders for your panelists. New genders can be created and be managed via your own list in the <strong>Panel configuration</strong>. A handy panelist counter shows the usage of genders and blocks the deletion if panelists are assigned to a gender.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21036817992082" alt="Bildschirmfoto 2022-03-14 um 15.31.10.png"></p>
+<p>Your manually created genders will be available in Panelist administration, Portals and Panel/ Master data surveys. They will also be available in <em>Panel Service Layer</em> calls.</p>
+<p>The <strong>Panelist administration</strong> is single-language. Translations into other languages can be made within the individual features/ modules, just like for other master data variables .</p>
+<h3 id="header-17">Other Enhancements to <em>People</em>
+</h3>
+<ul>
+<li>
+<p><strong>Bulk edit of panelists</strong>: The bulk edit of the panelist administration now allows updating based on the <em>site id</em> (language version), <em>u_gender</em>, <em>pci</em>, <em>u_timezone</em>, <em>u_locale</em> variable</p>
+</li>
+<li>
+<p><strong>New update rule</strong>: In the <strong>Actions</strong> menu, you can now create the <strong>Delete panelists</strong> update rule, which minimizes the maintenance effort of the panel groups. If this action is performed, the panelists to whom this rule applies will be deleted from the panel.</p>
+</li>
+<li>
+<p><strong>Removing panelists from a group</strong>: To make removing panelists from a panel group more intuitive, you have a <strong>Delete</strong> icon in the <strong>Actions</strong> column that allows you to remove the panelist from the group (if you have the <em>panelgrp_admin</em> read permission). Removing panelists from the default group is not possible.</p>
+</li>
+<li>
+<p><strong>Panelist Detail View</strong>: Panel groups for which an update rule has been set up are now marked with an icon. This icon will also serve you as a link to go to the update rules of the panel.</p>
+</li>
+<li>
+<p><strong>Search for e-mail addresses</strong>: From now on, the advanced search of the panelist administration offers the possibility to search for multiple panelists by e-mail address. Simply enter one e-mail address per line. You can search for up to 50 e-mail addresses simultaneously.</p>
+</li>
+</ul>
+<p> </p>
+<h2 id="header-19">Enhancements to <em>Portals</em>
+</h2>
+<hr>
+<h3 id="header-21">Adding the Guide Initiator to the Panel Group</h3>
+<p>Setting up <em>Tableau</em> dashboards to visualize your guides' results used to take some effort because the panel groups you selected rarely included the members you wanted. Using the new option <strong>"Add guide initiators to the following panel-group"</strong>, you can specify in the <em>Guides</em> module configuration to which panel group guide initiators will be added.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21036809947666" alt="Bildschirmfoto 2022-03-14 um 15.37.23.png"></p>
+<p>The feature takes multi-tenancy into account. Guide initiators will only be added to panel groups of their organization.</p>
+<h3 id="header-22">Report List: Improved Usability</h3>
+<p>The usability of the <em>Portals</em> page module <em>Report List</em> has been improved. The reports that participants have access to are now sorted by the new default filter All. The filter is available by default for the report list types <em>ES Projects</em> and <em>Guides</em>.</p>
+<p>In addition, the two list views of the module (<em>ES projects</em>,<em> Guides</em>) have a new table column. This new column lists the ES project names or Guide names in descending order based on the creation date.</p>
+<h3 id="header-23">Other Enhancements to <em>Portals</em>
+</h3>
+<ul>
+<li>
+<p><strong>Adding participants by e-mail address (Action Board)</strong>: From now on, the e-mail address of participants you want to add to an action will also be displayed, so that you always know who you are adding to an action.</p>
+</li>
+<li>
+<p><strong>Removing participants (Action Board)</strong>: The process of removing groups and users has been improved. Depending on whether you select the group avatar or user avatar in the participant section of an action, the corresponding button, i.e. group or user, is already preselected in the overlay menu.</p>
+</li>
+<li>
+<p><strong>New character limit in guide setup (Guides)</strong>: In the guide setup, guide initiators can write a message. Until now the character limit was 255 characters. With this release, the limit is raised to 65535 characters.</p>
+</li>
+<li>
+<p><strong>New tooltips in

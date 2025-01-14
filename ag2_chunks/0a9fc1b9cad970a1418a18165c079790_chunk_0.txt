@@ -1,0 +1,44 @@
+<p class="wysiwyg-text-align-justify"><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p class="wysiwyg-text-align-justify">This article explains how to use Master Data and Process Data in EFS (Enterprise Feedback Suite) for multi-source feedback projects. It covers the definition, collection, and utilization of different types of data, as well as how to modify and create variables to meet project requirements.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">This guide focuses on the importance of Master Data and Process Data in EFS projects, their structure, and how to effectively use them in questionnaires and feedback centers.</p>
+<ul class="wysiwyg-text-align-justify">
+<li><a href="#h_01HGKSMPRT0YJQCQ9QJXBXP8YW">Types of Data in EFS</a></li>
+<li><a href="#h_01HGKSMPRT5YJXQXQJ8QXQJ8QX">Organization Tips</a></li>
+<li><a href="#h_01HGKSMPRTAYJ8QXJ8QXJ8QXJ8">Master Data</a></li>
+<li><a href="#h_01HGKSMPRTFYJ8QXJ8QXJ8QXJ8">Process Data</a></li>
+<li><a href="#h_01HGKSMPRTKYJ8QXJ8QXJ8QXJ8">Editing Master Data and Process Data</a></li>
+<li><a href="#h_01HGKSMPRTPYJ8QXJ8QXJ8QXJ8">Using Master Data and Process Data in Questionnaire and Feedback Center</a></li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="h_01HGKSMPRT0YJQCQ9QJXBXP8YW" class="wysiwyg-text-align-justify">Types of Data in EFS</h2>
+<p class="wysiwyg-text-align-justify">EFS collects and uses various types of data in multi-source feedback projects:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Result data, URL parameters, and user-defined variables</li>
+<li>Master data: Address data and personal information on participants</li>
+<li>Process data: Information about participants' current positions in specific feedback constellations</li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="h_01HGKSMPRT5YJXQXQJ8QXQJ8QX" class="wysiwyg-text-align-justify">Organization Tips</h2>
+<h3 id="h_01J3D912BVSKYN06E3EGQEV01Y" class="wysiwyg-text-align-justify">Planning the data structure of the participant administration</h3>
+<ul class="wysiwyg-text-align-justify">
+<li>Consider which master data to store for participants</li>
+<li>Check if the existing data structure meets project requirements</li>
+<li>Plan for selecting specific participant groups for targeted actions</li>
+</ul>
+<h3 id="h_01J3D912BVFF2NHMV4VGT4NYAE" class="wysiwyg-text-align-justify">Checking the data structure for the feedback process</h3>
+<ul class="wysiwyg-text-align-justify">
+<li>Determine if additional process data are needed</li>
+<li>Verify if the existing data structure meets current project requirements</li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="h_01HGKSMPRTAYJ8QXJ8QXJ8QXJ8" class="wysiwyg-text-align-justify">Master Data</h2>
+<p class="wysiwyg-text-align-justify">Master data includes participants’ personal information, like name and address, imported by the project manager for authentication or contact purposes. In EFS, master data is accessible for personalization, routing, or analysis. Separate exports of feedback participants’ master data are available via Participant administration → Participant Pool → Excel export and CSV export. With sufficient rights, a combined export of master and result data is available for documentation or external analysis. View master data variables and their options via Participant administration → Participant variables → Master data variables.</p>
+<h3 id="h_01J3D912BV5MQ6TX1P67Q5TKJS" class="wysiwyg-text-align-justify">Overview of the Master Data Variables</h3>
+<p class="wysiwyg-text-align-justify">Default master data variables include:</p>
+<table class="wysiwyg-text-align-justify" style="border-collapse: collapse; height: 1px; background-color: #ffffff; width: 759.938px;" border="1" data-testid="renderer-table" data-number-column="false" data-table-width="760" data-layout="default">
+<colgroup> <col style="width: 252px;"> <col style="width: 252px;"> <col style="width: 252px;"> </colgroup>
+<tbody>
+<tr

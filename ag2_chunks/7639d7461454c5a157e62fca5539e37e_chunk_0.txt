@@ -1,0 +1,68 @@
+<h2 id="h_01J6ER31E7D63N2189G7YQTQAJ">Table of Contents</h2>
+<ul>
+<li>
+<a href="#header-1">Enhancements to EFS platform</a>
+<ul>
+<li><a href="#header-3">App-based Authentication</a></li>
+<li><a href="#header-5">New Security Headers</a></li>
+<li><a href="#header-6">Do-Not-SMS List</a></li>
+<li><a href="#header-7">Other Enhancements to EFS Platform</a></li>
+</ul>
+</li>
+<li>
+<a href="#header-9">Enhancements to Projects</a>
+<ul>
+<li><a href="#header-11">PDF Receipts</a></li>
+<li><a href="#header-12">Other Enhancements to Projects</a></li>
+</ul>
+</li>
+<li>
+<a href="#header-14">Enhancements to People</a>
+<ul>
+<li><a href="#header-16">Management of Genders</a></li>
+<li><a href="#header-17">Other Enhancements to People</a></li>
+</ul>
+</li>
+<li>
+<a href="#header-19">Enhancements to Portals</a>
+<ul>
+<li><a href="#header-21">Adding the Guide Initiator to the Panel Group</a></li>
+<li><a href="#header-22">Report List: Improved Usability</a></li>
+<li><a href="#header-23">Other Enhancements to Portals</a></li>
+</ul>
+</li>
+<li>
+<a href="#header-25">Enhancements to Panel Website</a>
+<ul>
+<li><a href="#header-27">Community Content disabled by default</a></li>
+<li><a href="#header-28">Usability Improvement</a></li>
+</ul>
+</li>
+<li><a href="#header-30">New Service Layer Services</a></li>
+</ul>
+<div class="expand-macro">
+<p><em>In this release, we have improved the security of our platform and our modules, by developing a new two-factor authentication and extending the security related header function.</em></p>
+<p>We have also rebuilt the receipts feature. You're now able to provide the completed survey as a PDF receipt via download link and e-mail to your participants without our help.</p>
+<p>Read more about our <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20229702688786" target="_blank" rel="noopener noreferrer">updated cookie list</a>.</p>
+</div>
+<h1 id="header-1">Enhancements to EFS platform</h1>
+<hr>
+<h2 id="header-3">App-based Authentication</h2>
+<p>To add an extra layer of security, you can now optionally protect the EFS admin area account with the new two-factor authentication. You'll be required to provide an additional authentication code from an <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20231346702866" target="_blank" rel="noopener noreferrer">Authenticator app</a>, each time you login into your EFS account.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21036790746002" alt="Bildschirmfoto 2022-03-14 um 11.11.09.png"></p>
+<p>After entering invalid codes several times, the accounts will be blocked. This behavior is similar to the behavior of entering an invalid password. In addition to this brute force protection, EFS also has a replay protection, so that an already used code cannot be reused by an attacker who might have somehow intercepted it.</p>
+<ul>
+<li>
+<p>Two-factor authentication is available on all installations and can be enabled by any user.</p>
+</li>
+<li>
+<p>Your installation can be configured to force all accounts to use app-based authentication. Please contact our support team.</p>
+</li>
+</ul>
+<h3 id="header-5">New Security Headers</h3>
+<p>To increase the security of the <em>Projects</em>, <em>Portals</em>, and <em>Panel Website </em>modules, we have implemented new security-related headers. These headers will be sent with each page to ask the browser not to allow certain actions or script types.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21036810779922" alt="screen_englisch.png"></p>
+<p>The following security headers are available:</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy" target="_blank" rel="noopener noreferrer">Referrer-Policy</a>: Use this header to define which referrer information will be sent to 3<sup>rd</sup> party websites when clicking on a link within EFS. </p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy" target="_blank" rel="noopener noreferrer">Content-Security-Policy</a>: The Content Security Policy is an effective measure to protect your website from XXS attacks. By whitelisting sources for approved content, you can prevent the browser from loading malicious assets.</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy" target="_blank" rel="noopener noreferrer">Permissions-Policy</a>: Use this header to define which APIs might be used, e.g. payment, camera,

@@ -1,0 +1,66 @@
+><strong>This last option requires frontend restarts, so a SaaS CR needs to be logged to finalize this.</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="h_01J7DS8TEC77KQ21XA9QWXYZXY">Optional flags that can be set</h3>
+<ul>
+<li>
+<code>admin_session_highsecurity_timeout</code>: Timeout for admin session iof high security mode is enabled. <br><strong>Default:</strong> 900</li>
+<li>
+<code>password_repeat_count</code>: password history. check the last x passwords if the password has been used before. <br><strong>Default:</strong> 0</li>
+<li>
+<code>password_len</code>: Minimum password length. If high_security is on and this option is configured to 6 characters, the minimum used is 8 characters. <br><strong>Default: </strong>'8 characters'</li>
+<li>
+<code>password_alg</code>: Algorithm used to check password complexity. <br><strong>Default: </strong>7 (Upper and lower case and either numbers or special characters)</li>
+<li>
+<code>pass_interval</code>: period of validity (in days). <br><strong>Default: </strong>100</li>
+<li>
+<code>brute_force</code>: Number of failed logins after brute force protection is activated.<br><strong>Default: </strong>6</li>
+<li>
+<code>brute_force_time</code>: Time for which bruteforce-attempted accounts are blocked (in seconds).<br><strong>Default: </strong>1800</li>
+</ul>
+<h1 id="h_01J7DVGTBXH35YDRRZX4WSFJ98">Activation of SMS Service</h1>
+<ul>
+<li>
+<p>As the root user, go to <strong>Options -&gt; Platform cockpit -&gt; root only:: System configuration</strong> and change</p>
+<ul>
+<li>
+<p><code>smsDelivery</code> &gt;&gt; <code>isActive</code> to <strong>true<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21278401794578" alt="image-20240613-075303.png"></strong></p>
+</li>
+</ul>
+</li>
+<li>
+<p>add an update to Globis for the installation by mentioning the activated modules and the support case</p>
+<ul>
+<li><code>u activated sms [ZD_ticket_ID]</code></li>
+</ul>
+</li>
+</ul>
+<p> </p>
+<p> </p>
+<p> </p>ute_force</code>: Number of failed logins after brute force protection is activated.<br><strong>Default: </strong>6</li>
+<li>
+<code>brute_force_time</code>: Time for which bruteforce-attempted accounts are blocked (in seconds).<br><strong>Default: </strong>1800</li>
+</ul>
+<h1 id="h_01J7DVGTBXH35YDRRZX4WSFJ98">Activation of SMS Service</h1>
+<ul>
+<li>
+<p>As the root user, go to <strong>Options -&gt; Platform cockpit -&gt; root only:: System configuration</strong> and change</p>
+<ul>
+<li>
+<p><code>smsDelivery</code> &gt;&gt; <code>isActive</code> to <strong>true<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21278401794578" alt="image-20240613-075303.png"></strong></p>
+</li>
+</ul>
+</li>
+<li>
+<p>add an update to Globis for the installation by mentioning the activated modules and the support case</p>
+<ul>
+<li><code>u activated sms [ZD_ticket_ID]</code></li>
+</ul>
+</li>
+</ul>
+<p> </p>
+<p> </p>
+<p> </p>

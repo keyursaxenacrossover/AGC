@@ -1,0 +1,67 @@
+<h3 id="h_01J6W66SZH3NCE1DW2CR0SMVBZ">Overview</h3>
+<p>This guide explains how to access and work with a MariaDB database hosted on a DXI service gateway. The process includes connecting to the gateway, locating the relevant instance, and running SQL commands to retrieve information. </p>
+<p> </p>
+<h3 id="h_01J6W66SZHRFNTBECW62WQDART">Solution</h3>
+<p>Follow these steps to access and work with the MariaDB database on a DXI service gateway:</p>
+<h4 id="h_01J6W66SZHJ4V2VFFQVMZ7WKY6">Step 1: Connect to the Service Gateway</h4>
+<ol>
+<li>
+<a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21139518716562-How-to-Access-and-Work-with-DXI-Service-Gateways"><strong>Access the relevant service gateway</strong></a> where the DXI installation is hosted.</li>
+<li>
+<strong>Source the bashhelper script</strong> to set up the environment. You have 2 options here:
+<ol>
+<li>Update the bashrc file for your profile - this is <strong>preferred</strong>, because you only need to do it once in each gateway:
+<ol>
+<li>Navigate to your home folder: <code>cd ~</code>
+</li>
+<li>Edit your bashrc file: <code>vi .bashrc</code>
+</li>
+<li>Navigate to the bottom of the file and press <strong>I</strong> on your keyboard to enter the <strong>INSERT</strong> mode</li>
+<li>Add the below line all the way to the bottom of the file:<br><code>source /nfs/techsupport/bashhelperstsforaws/EFS_TS_bashhelpers.sh</code>
+</li>
+<li>Press Escape on your keyboard to exit INSERT mode</li>
+<li>Type in <code>:wq</code> to save and exit</li>
+<li>Only this time, you need to run <code>source .bashrc</code>, as the next time that you login, the configuration will be automatically applied</li>
+</ol>
+</li>
+<li>If you didn't choose option one, everytime that you need to run helperscripts, you will need to run the following command upon login:
+<div class="dark bg-gray-950 contain-inline-size rounded-md border-[0.5px] border-token-border-medium">
+<pre class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-bash"><span class="hljs-built_in">source</span> /nfs/techsupport/bashhelperstsforaws/EFS_TS_bashhelpers.sh
+</code></pre>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+<h4 id="h_01J6W66SZHTKZ6KXHNNG37W7C9">Step 2: Find and Connect to the Instance</h4>
+<ol>
+<li>
+<strong>Use the <code>i</code> command</strong> followed by the technical name of the instance to locate the installation. Replace <code>&lt;Technical_NAME&gt;</code> with the actual instance name:
+<div class="dark bg-gray-950 contain-inline-size rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-bash">i &lt;Technical_NAME&gt;  <span class="hljs-comment"># Example: i eh3582</span>
+</code></div>
+</div>
+</li>
+<li>
+<strong>Navigate to the <code>htdocs</code> directory</strong> of the installation. The command above will automatically place you in this directory.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21140364644114">
+</li>
+</ol>
+<h4 id="h_01J6W66SZH3MN77YTGE81C6JSQ">Step 3: Log in to the Database</h4>
+<ol>
+<li>
+<strong>Run the <code>efslogin</code> command</strong> to connect to the MariaDB database:
+<div class="dark bg-gray-950 contain-inline-size rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21140364646034"></div>
+</div>
+</li>
+</ol>
+<h4 id="h_01J6W66SZHBM0G5ZBFSMMGVH8M">Step 4: Execute SQL Commands</h4>
+<ol>
+<li>
+<strong>Run SQL queries</strong> to retrieve the information you need. For example, to find tables related to a survey with PID 1349, use the following SQL command:
+<div class="dark bg-gray-950 contain-inline-size rounded-md border-[0.5px] border-token-border-medium">
+<pre class="overflow-y-auto p-4" dir="ltr">MariaDB [opst_eh1958]&gt; SHOW TABLES LIKE '%1349%';</pre>
+</div>
+</li>
+</ol>
+<h3 id="h_01J6W6HA9SRQD4JF3K3QVCHAX1"><img src="https://discoverxi-supportdesk

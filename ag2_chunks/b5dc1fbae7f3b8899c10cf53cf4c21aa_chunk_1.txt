@@ -1,0 +1,26 @@
+code>s</li>
+<li>In the docker, Create the folder : <code style="padding: 0px; font-family: SFMono-Regular, Consolas, ' Liberation Mono' , Menlo, Courier, monospace; font-size: 12px; color: #2f3941; border-radius: 4px; background: #ffffff; border: 1px solid #d8dcde; margin: 0px; outline: 0px; vertical-align: baseline; box-sizing: border-box; line-height: inherit; white-space: pre-wrap; margin-block: 0px; margin-inline: 2px; padding-block: 0px; padding-inline: 5px;">/openssl-certs/certs/dkimkeys</code> if not already created.</li>
+<li>Execute script using the domain provided:
+<ul>
+<li>Usage:  <code>/usr/local/bin/generate_dkim_keys.sh &lt;domain.tld&gt; tivian</code>
+</li>
+<li>Example: <code>/usr/local/bin/generate_dkim_keys.sh <strong>ifo.de</strong> tivian</code>
+</li>
+</ul>
+</li>
+<li>Copy both Private and public keys:
+<ul>
+<li>Private key sample (copy starting the --- and till the --- at the end of the key):<br><img src="https://central-supportdesk.zendesk.com/attachments/token/fLGyzSeEEhbqnfdjlfwwStE5z/?name=image.png">
+</li>
+<li>Public DNS TXT record sample (to be shared with the customer):<br>
+<pre style="padding: 8px; font-family: SFMono-Regular, Consolas, ' Liberation Mono' , Menlo, Courier, monospace; font-size: 12.025px; color: #2f3941; border-radius: 4px; display: block; margin: 0px; line-height: inherit; word-break: break-all; overflow-wrap: break-word; white-space: pre-wrap; background: #ffffff; border: 1px solid #d8dcde; outline: 0px; vertical-align: baseline; box-sizing: border-box; margin-block: 4px 12px; margin-inline: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><code style="font-family: SFMono-Regular, Consolas, ' Liberation Mono' , Menlo, Courier, monospace; font-size: 12px; color: #2f3941; border-radius: 0px; background: #ffffff; border: 0px; outline: 0px; vertical-align: baseline; box-sizing: border-box; line-height: inherit; white-space: pre-wrap; margin-block: 0px; margin-inline: 2px; padding-block: 0px; padding-inline: 5px; margin: 0px; padding: 0px;">tivian._domainkey.ifo.de IN TXT "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjJgUknIRLfdhjMbvDXxeUh6MQX1ItHXF0OtP557zdWwOQpeNSbRdBVhfmf4WkIVocoelewz+YWtuOeeH7ximR4Mtsuu6ik9vTjoJEl421i9wnkweQHT8zBkSfsPm+6mAldh0ZMMKcyjUf1uM0W2/bt/taszGv3dlFUFHhsJF+yoWBj/YWf1MCfeuM+bo/uw+O2qvAwUEE412+rl0+Y9OyN9kZCiXUC/7anx8tdoKJBWHyww45eAFqBIUCezh56r3YD5XNT3FICTUTkdqZh4EQDRTfqj3hvGN+5j4qY/2GDXHgAJpInSwLWUTgdDZKbMrfMwIWD6e5Hpgfm0xUq08iQIDAQAB"</code></pre>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<strong>Add the private key to Hurricane</strong>:<br>Hurricane is a service for sending emails, accessible through a GUI through an internal network. <br><br>Steps to add the key:<br>
+<ol>
+<li>Login to Hurricane MTA (see KeePass for login credentials): <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21139518716562-How-to-Access-and-Work-with-DXI-Service-Gateways#01J8QS4CEBNQQ6KPMT655G7Y13">How to Access Hurricane</a> </li>
+<li>Edit the "EFS-Production (1006)" account<br><img src="https://central-supportdesk.zendesk.com/attachments/token/sTkhiyU8UpUr8U

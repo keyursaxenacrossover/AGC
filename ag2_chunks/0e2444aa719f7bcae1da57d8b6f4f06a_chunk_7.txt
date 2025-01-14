@@ -1,0 +1,55 @@
+px;" colspan="1" rowspan="1" data-colwidth="382">
+<p data-renderer-start-pos="13762">Evaluates the system data item “last_poll_date”, which is filled with the current system date when the final page of a panel survey is reached.</p>
+</td>
+</tr>
+<tr style="height: 67px;">
+<td class="wysiwyg-text-align-justify" style="padding: var(--ds-space-100, 8px); vertical-align: top; height: 67px; width: 360.347px;" colspan="1" rowspan="1" data-colwidth="378">
+<p data-renderer-start-pos="13911">Date of entry should be between (including) &lt;date&gt; and (including) &lt;date&gt;</p>
+</td>
+<td class="wysiwyg-text-align-justify" style="padding: var(--ds-space-100, 8px); vertical-align: top; height: 67px; width: 364.375px;" colspan="1" rowspan="1" data-colwidth="382">
+<p data-renderer-start-pos="13988">Evaluates the system data item “penter_date”, which is set while filling in the registration or during manual import.</p>
+</td>
+</tr>
+<tr style="height: 67px;">
+<td class="wysiwyg-text-align-justify" style="padding: var(--ds-space-100, 8px); vertical-align: top; height: 67px; width: 360.347px;" colspan="1" rowspan="1" data-colwidth="378">
+<p data-renderer-start-pos="14111">Panel member since x months</p>
+</td>
+<td class="wysiwyg-text-align-justify" style="padding: var(--ds-space-100, 8px); vertical-align: top; height: 67px; width: 364.375px;" colspan="1" rowspan="1" data-colwidth="382">
+<p data-renderer-start-pos="14142">Calculates the time for which the panelist has been a panel member based on the system data item “penter_date”.</p>
+</td>
+</tr>
+<tr style="height: 67px;">
+<td class="wysiwyg-text-align-justify" style="padding: var(--ds-space-100, 8px); vertical-align: top; height: 67px; width: 360.347px;" colspan="1" rowspan="1" data-colwidth="378">
+<p data-renderer-start-pos="14259">Date of last panel status change not longer than x months ago</p>
+</td>
+<td class="wysiwyg-text-align-justify" style="padding: var(--ds-space-100, 8px); vertical-align: top; height: 67px; width: 364.375px;" colspan="1" rowspan="1" data-colwidth="382">
+<p data-renderer-start-pos="14324">Interprets the system data item “pstatus_date”, i.e. the last change of panel status. This value is currently set only during manual import.</p>
+</td>
+</tr>
+<tr style="height: 44px;">
+<td class="wysiwyg-text-align-justify" style="padding: var(--ds-space-100, 8px); vertical-align: top; height: 44px; width: 360.347px;" colspan="1" rowspan="1" data-colwidth="378">
+<p data-renderer-start-pos="14470">Way of entry</p>
+</td>
+<td class="wysiwyg-text-align-justify" style="padding: var(--ds-space-100, 8px); vertical-align: top; height: 44px; width: 364.375px;" colspan="1" rowspan="1" data-colwidth="382">
+<p data-renderer-start-pos="14486">Selects the panelists according to the way of entry that has been chosen.</p>
+</td>
+</tr>
+<tr style="height: 68px;">
+<td class="wysiwyg-text-align-justify" style="padding: var(--ds-space-100, 8px); vertical-align: top; height: 68px; width: 360.347px;" colspan="1" rowspan="1" data-colwidth="378">
+<p data-renderer-start-pos="14565">Panel status</p>
+</td>
+<td class="wysiwyg-text-align-justify" style="padding: var(--ds-space-100, 8px); vertical-align: top; height: 68px; width: 364.375px;" colspan="1" rowspan="1" data-colwidth="382">
+<div class="code-block  cc-15qwbrk">
+<div class="cc-9n57oc">
+<div class="cc-v2tmjh">
+<div role="presentation"> </div>
+<div role="presentation">
+<div> </div>
+</div>
+</div>
+</div>
+<span class="prismjs cc-1es5wws" style="background-color: var(--ds--code--bg-color,var(--ds-background-neutral, #f4f5f7)); color: var(--ds-text, #172b4d);" data-code-lang="" data-ds--code--code-block="" data-testid="renderer-code-block"><code class="language-"><span class="" data-testid="renderer-code-block-line-1" data-ds--code--row=""><span class="">Current role and activity of the panelist.</span></span></code></span>
+</div>
+</td>
+</tr>
+<tr style

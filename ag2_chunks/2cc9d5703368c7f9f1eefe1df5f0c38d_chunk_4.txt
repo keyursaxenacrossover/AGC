@@ -1,0 +1,57 @@
+ display of the currently logged-in panelists, and the list of blogs are referenced page modules. In the website editor, they are located on a dedicated page “GLOBAL”.</p>
+<p class="wysiwyg-text-align-justify">Please note: For many page module types, referencing does not make sense. Therefore the referencing feature is only available for selected page module types. For an up-to-date list, please see the Modules from Other Pages tab in the editing dialog of the respective page.</p>
+<p class="wysiwyg-text-align-justify">Additional modules can be made available for reference. If this is necessary, please contact support.</p>
+<h3 id="work-steps" class="wysiwyg-text-align-justify"><strong>Work Steps</strong></h3>
+<p class="wysiwyg-text-align-justify">Referencing page modules from multiple pages requires three steps:</p>
+<ol class="wysiwyg-text-align-justify" start="1">
+<li>
+<p>Deciding where the global page modules should be placed in the overall structure and modifying the main template accordingly</p>
+</li>
+<li>
+<p>Creating page modules</p>
+</li>
+<li>
+<p>Referencing page modules from the desired pages</p>
+</li>
+</ol>
+<h3 id="defining-the-position-of-global-page-modules" class="wysiwyg-text-align-justify"><strong>Defining the Position of Global Page Modules</strong></h3>
+<p class="wysiwyg-text-align-justify">First, you have to decide at which position the global page modules are to be displayed. Then you have to modify the main template accordingly.</p>
+<p class="wysiwyg-text-align-justify">In the standard panel, for example, the following code is used to insert various page modules on the right-hand side between the login section and the quick poll, as shown in the example above:</p>
+<p class="wysiwyg-text-align-justify"><code>{* START GLOBALS *}</code><br><code>{if $global_page_contents}</code><br><code>{foreach from=$global_page_contents item=s key=k}</code><br><code>&lt;div class="gpRightColBox"&gt;{$s}&lt;/div&gt;</code><br><code>{/foreach}</code><br><code>{/if}</code><br><code>&lt;/div&gt;</code><br><code>{/foreach}</code><br><code>{* END GLOBALS *}</code></p>
+<p class="wysiwyg-text-align-justify">This code checks whether there are any page modules referenced from the currently opened page. The wildcard used for addressing these modules is $global_page_contents. If modules have been referenced, it will be checked whether the panelist is logged in: if so, the contents of these modules will be displayed.</p>
+<p class="wysiwyg-text-align-justify">Of course, you can also insert the referenced page modules at other positions.</p>
+<h3 id="creating-page-modules" class="wysiwyg-text-align-justify"><strong>Creating Page Modules</strong></h3>
+<p class="wysiwyg-text-align-justify">Create the desired page modules.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>They can be created as usual on any page of the CMS.</p>
+</li>
+<li>
+<p>Optionally, you can also create the repeatedly used page modules on a dedicated page set up for this purpose. This is useful, for example, if these modules do not fill the content area of a normal page but are displayed in special areas on the page margins, as in the standard panel shown above.</p>
+</li>
+</ul>
+<h3 id="referencing-page-modules-from-the-desired-pages" class="wysiwyg-text-align-justify"><strong>Referencing Page Modules from the Desired Pages</strong></h3>
+<ol class="wysiwyg-text-align-justify" start="1">
+<li>
+<p>Go to the page from where page modules are to be referenced.</p>
+</li>
+<li>
+<p>Open the <strong>Modules from the Other Pages</strong> tab.</p>
+</li>
+<li>
+<p>Tick the “Select” checkboxes for those page modules that are to be displayed.</p>
+</li>
+<li>
+<p>Confirm by clicking on <strong>Save</strong>. A reference is now established between the page and the selected page module.</p>
+</li>
+<li>
+<p>Repeat these steps for all pages where the page modules are to be displayed.</p>
+</li>
+</ol>
+<h2 id="a-detailed-look-at-modules" class="wysiwyg-text-align-justify"><strong>A Detailed Look at Modules</strong></h2>
+<p class="wysiwyg-text-align-justify">This Chapter will take a detailed look at the modules used to compile panel pages.</p>
+<hr>
+<p class="wysiwyg-text-align-justify"><a href="https://qbdocs.atlassian.net/wiki/spaces/DOC/pages/1450969162/Mail+Templates+Tables+Overview#Wildcards-for-Panel-Projects"><strong>→ → Overview of the Wildcards ← ←</strong></a></p>
+<hr>
+<h3 id="content-module-headline-text" class="wysiwyg-text-align-justify"><strong>Content Module: Headline + Text</strong></h3>
+<p class="wysiwyg-text-align-justify">The most frequently used module is certainly the “Headline + text” content module. It is used to create page sections that are for informational purposes only.

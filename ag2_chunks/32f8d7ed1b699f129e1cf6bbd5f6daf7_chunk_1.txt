@@ -1,0 +1,49 @@
+06" alt="image-20220825-150317.png"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21036792287122" alt="image-20220825-151238.png"></p>
+<h2 id="header-3">Enhancements to EFS Platform</h2>
+<h3 id="header-5">Anti-virus and malware scanning for uploads in EFS</h3>
+<p>With EFS 22.2 all customers benefit from ad-hoc anti-virus and malware scanning for all uploads within EFS. This applies to all uploads in the EFS Administration area, as well as the Upload and Audio question types in surveys or uploads in Portals. During an upload, the file is immediately scanned for malware, before being moved to its final destination within the EFS platform. If a malware is found, the file is immediately removed from the temporary storage and the user is notified that the upload was not successful. This approach ensures that at no point malware can be distributed through EFS.</p>
+<h4 id="header-7">CSRF Tokens in EFS Admin</h4>
+<p>The EFS Administration area is now protected with CSRF tokens from cross-site attacks without compromising on usability. While being reliably protected from cross-site request forgery attacks, administration users can continue working in concurrent browser tab sessions.</p>
+<h4 id="header-8">Improvements in the Interview Counts view</h4>
+<p>Customers with access to the Interview Count page in Platform cockpit will notice that the page has been extended to support daily statistics, custom time ranges and also has received an improved UI.</p>
+<p>After the upgrade to 22.2, EFS will start generating daily aggregations. Existing monthly data will be assigned to the 1st of each month and all remaining days of those months will have no data. So, custom date ranges and daily statistics will be reliable starting with the following month after upgrade and customers should use full-month statistics until then.</p>
+<h4 id="header-9">Smaller changes within the EFS Platform</h4>
+<p>On installations with the SMS module active, the SMS estimation counter in mail-preview uses an improved formula to estimate the amount of required sms.</p>
+<p>Mail templates: Base-URL can now also be set for SMS-only templates on EFS installations with SMS module enabled.</p>
+<p>EFS can be configured to have special admin teams (“pools”) for complex university setups, allowing admin users to create ad-hoc teams and invite other admin users to their team for collaboration. If you would like to use this feature, please contact support.</p>
+<h2 id="header-12">Enhancements to Projects (EFS Survey)</h2>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21036755162514" alt="image-20220825-112410.png"></p>
+<h3 id="header-14">Audio Recorder</h3>
+<p>This update has a new Audio Recorder question type, which allows recording of audio feedback through a simple to use UI on desktops and mobile devices. The recordings are stored in the same way as for the upload QT and can be accessed through the Statistics menu.</p>
+<h3 id="header-15">Other Enhancements to Projects</h3>
+<ul>
+<li>
+<p>The excel export in Codebook of a survey project now uses the XSLX format.</p>
+</li>
+<li>
+<p>The library used for the Video/Audio Player QT has received an upgrade resulting in better support for current browsers and improved accessability</p>
+</li>
+<li>
+<p>Survey URL parameters without parameters: On surveys with url parameters, you can skip unused options, e.g. for url /uc/survey/?a=&amp;b=&amp;c=something, you can also use /uc/survey/?c=something now, or skip all parameters altogether.</p>
+</li>
+<li>
+<p>More warnings before deleting projects: We have made it more difficult to delete projects to prevent users from accidentally deleting important feedback data.</p>
+</li>
+<li>
+<p>The variable date_of_expire is now available for use in filters, mail templates and in surveys as a wildcard</p>
+</li>
+<li>
+<p>Improvements to the ranking question type: min/max of required answers can now be configured</p>
+</li>
+<li>
+<p>Accessibility improvements for survey layout: We have improved screen reader support for scaled and text question types, where the context of the available options was not immediately clear to the user.</p>
+</li>
+</ul>
+<h2 id="header-17">Enhancements to People</h2>
+<p>Panelist administration: Phone validation if SMS active: EFS installations with the SMS module active have now a validation of the phone number for panelists. Where specified, the number must follow the international format and needs to start with a “00” instead of a “+”.</p>
+<p> </p>
+<h2 id="header-19">Enhancements to Panel Website</h2>
+<h3 id="header-21">Responsive Panel website v2</h3>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21036785149842" alt="image-20220825-113809.png"></p>
+<p>General availability of a new responsive layout for all customers using the panel website module. This layout can be used as a starting point for your own websites as it uses a simple layout with minimal styling. Thanks to responsiveness, this layout is also suitable for access through mobile devices. This website uses latest version of Smarty 4.1.* and jQuery 3.6.*.</p>
+<p>

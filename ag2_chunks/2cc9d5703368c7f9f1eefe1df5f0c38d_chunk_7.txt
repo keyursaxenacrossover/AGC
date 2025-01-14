@@ -1,0 +1,160 @@
+func_md_view” template. If this template is not available in your installation, you can revert to the „masterdata_categories“ template in the template library.</p>
+<p class="wysiwyg-text-align-justify">EFS Panel provides various design options:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>You can select the desired master data categories.</p>
+</li>
+<li>
+<p>The categories can be relabeled. This is particularly important in multilingual panels.</p>
+</li>
+<li>
+<p>Several sort order options are available.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Options</strong></p>
+<p class="wysiwyg-text-align-justify">The “Master data categories list” function module offers the following options.</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup>
+<col style="width: 178.0px;">
+<col style="width: 485.0px;">
+<col style="width: 97.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Option</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Standard panel</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Reference name for template</p>
+</td>
+<td>
+<p>Name that can be used to trigger the module in positioning templates.</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Page module title</p>
+</td>
+<td>
+<p>Name of the module in the page’s module overview</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Module template</p>
+</td>
+<td>
+<p>Module-specific template that controls how data provided by the module are displayed.</p>
+</td>
+<td>
+<p>func_md_view</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Master data category</p>
+</td>
+<td>
+<p>You can choose from the categories created in the <strong>Panel → Master data → Master data categories</strong> menu.</p>
+<p>You can enter an alternative label for each category.</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Directory for file selection</p>
+</td>
+<td>
+<p>All asset library directories of the respective panel installation are available.</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Sort master data categories by</p>
+</td>
+<td>
+<p>Possible criteria:</p>
+<ul>
+<li>
+<p>Defined sort order</p>
+</li>
+<li>
+<p>Alphabetical</p>
+</li>
+</ul>
+<p>Possible sort order:</p>
+<ul>
+<li>
+<p>Ascending</p>
+</li>
+<li>
+<p>Descending</p>
+</li>
+</ul>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="function-module-display-of-private-messages" class="wysiwyg-text-align-justify"><strong>Function Module: Display of Private Messages</strong></h3>
+<p class="wysiwyg-text-align-justify">When using the community function “Messages from panelists to panelists”, the function module “Display of private messages” allows you to create different lists of received messages:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>a message overview, e.g. on the personalized homepage.</p>
+</li>
+<li>
+<p>a detailed list of the received messages.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Which list is created depends on the selected template (“func_messages_light”, “func_messages”).</p>
+<p class="wysiwyg-text-align-justify"><strong>Options</strong></p>
+<p class="wysiwyg-text-align-justify">The “Display of private messages” function module offers the following options.</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup>
+<col style="width: 200.0px;">
+<col style="width: 477.0px;">
+<col style="width: 83.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Option</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Standard panel</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Reference name for template</p>
+</td>
+<td>
+<p>Name that can be used to trigger the module in positioning templates.</p>
+</td>
+<td>
+<p> </p>
+</

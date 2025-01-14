@@ -1,0 +1,59 @@
+ text fields are similarly recorded in a variable.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The variable names are assigned automatically for each project, beginning with v_1 and names cannot be edited. If required, however, you can allocate an external variable name. You can see the internal project variable names when working in the questionnaire editor depending on the question type</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>in the “Answer options” area in the “Variable name” columns</p>
+</li>
+<li>
+<p>in the case of questions with an open entry field in the “Question options” area.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The codes are also assigned automatically but can be edited in the case of single response and matrix questions. You can view and edit the codings in the questionnaire editor</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>for single response questions in the “Code” column in the “Answer options” section.</p>
+</li>
+<li>
+<p>for matrix questions in the “Code” column in the “Scale options” section.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">All project variables and their codings are listed in the codebook.</p>
+<p class="wysiwyg-text-align-justify">In a live questionnaire, please never delete a page, question or answer option, or change a code retroactively. Otherwise already stored information will be lost or it will no longer be possible to interpret it correctly. Filters and other features that reference variables and codes might also be damaged. Please do the clean-up before launching the survey, then compile and check again if all questionnaire features are working properly.</p>
+<h3 id="preset-and-user-defined-names-for-project-variables" class="wysiwyg-text-align-justify"><strong>Preset and User-Defined Names for Project Variables</strong></h3>
+<p class="wysiwyg-text-align-justify">If variable names are displayed within the <em>EFS Survey</em> the automatically preset, so-called internal variables are used. You can of course allocate alternative names which will be used on export instead of the internal names and then be available for external evaluation.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Internal variable names: These are the variable names that are automatically allocated by the system when creating a question and are used within EFS. These have the format v_000n and cannot be changed.</p>
+</li>
+<li>
+<p>External variable names: These names can be changed optionally by the user and are then used on export instead of the internal variable names.</p>
+<ul>
+<li>
+<p>External variable names may have up to 64 characters.</p>
+</li>
+<li>
+<p>The term “comment” should not be used as an external variable name (“comment” is a key term in PSPP, the program used for the SPSS export).</p>
+</li>
+</ul>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Please note that the user-defined name type is used for data export only. Control functions such as filter and trigger definitions cannot be addressed using the external variable names and wildcard use is not an option either.</p>
+<h3 id="viewing-and-editing-user-defined-variable-names-in-the-questionnaire-editor" class="wysiwyg-text-align-justify"><strong>Viewing and Editing User-Defined Variable Names in the Questionnaire Editor</strong></h3>
+<p class="wysiwyg-text-align-justify">Internal variable names are always displayed in the question view. In addition, you can also display and edit external variable names, if required. Depending on the question type you will find the respective field</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>in the “Question options” area for questions with a single response list or open entry field.</p>
+</li>
+<li>
+<p>in the “Answer options” area in a table column that is usually hidden in the case of multiple response and matrix questions. Click on the <strong>arrow </strong>icon in the “Variable name” column to display the “External varname” column.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If you cannot find the field described above click the <strong>Question options </strong>icon and enable “External varname”.</p>
+<h3 id="options-for-centralized-editing-of-variable-names" class="wysiwyg-text-align-justify"><strong>Options for Centralized Editing of Variable Names</strong></h3>
+<p class="wysiwyg-text-align-justify">The codebook contains a range of functions that enable effective centralized editing of user-defined variable names in the “Edit variable names” section.</p>
+<p class="wysiwyg-text-align-justify"><strong>Editing variable names</strong></p>
+<p class="wysiwyg-text-align-justify">When the option “ Edit variable names directly in this form” is selected and then confirmed with the <strong>Save settings </strong>button, entry fields are displayed in which you can edit the external variable names. After entering the new names, click on the <strong>Save variable names </strong>button.</p>
+<p class="wysiwyg-text-align-justify"><strong>Changing variable names according to a preset algorithm</strong></p>
+<p class="wysiwyg-text-align-justify">You can allocate a unique label to the external variable

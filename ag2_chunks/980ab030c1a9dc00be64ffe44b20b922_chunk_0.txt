@@ -1,0 +1,66 @@
+<p class="wysiwyg-text-align-justify"><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p class="wysiwyg-text-align-justify">This article provides a comprehensive guide on exporting data from the People module, including master data, participant data, and SPSS labels. It covers various export options, restrictions, and templates available in the system.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">The People module offers different export interfaces for master data, result data, address data, projects, layouts, and other information. This guide focuses on exporting panelists' master data, participant data, and SPSS labels for master data.</p>
+<ul class="wysiwyg-text-align-justify">
+<li><a href="#h_01HGKSMPRT0QJQX3YJVJ8XBXNM">Exporting Master Data or Participant Data</a></li>
+<li><a href="#h_01HGKSMPRT5QQCQX9QXQJ1YJNR">Panel-Specific Setting Options in Detail</a></li>
+<li><a href="#h_01HGKSMPRTGXJ4YJXQXHM0XJNM">Export Templates</a></li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="h_01HGKSMPRT0QJQX3YJVJ8XBXNM" class="wysiwyg-text-align-justify">Exporting Master Data or Participant Data</h2>
+<p class="wysiwyg-text-align-justify">To export master data or participant data, follow these steps:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>Go to People → Export.</li>
+<li>Select “Panel data” as the data type and click Next.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017142448530">
+</li>
+<li>Choose the desired export template from the options:
+<ul>
+<li>Master data</li>
+<li>Participant data</li>
+</ul>
+</li>
+<li>Optionally, restrict the export to specific categories, groups, panel statuses, or selected variables using selective export.</li>
+<li>Click Export and then Copy file to local PC on the following page to reconfirm the export.</li>
+<li>When the download begins, a pop-up window will appear. Click Save.</li>
+<li>Choose the folder to save the file to and optionally rename the file. Confirm by clicking Save.</li>
+<li>Once the download is complete, close the window by clicking Close window.</li>
+</ol>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="h_01HGKSMPRT5QQCQX9QXQJ1YJNR" class="wysiwyg-text-align-justify">Panel-Specific Setting Options in Detail</h2>
+<p class="wysiwyg-text-align-justify">The basic and advanced options in the People → Export menu are similar to those in the “EFS Survey” manual. Here are the differences in export templates and restriction options.</p>
+<p class="wysiwyg-text-align-justify"><strong>Selecting an Export Template</strong></p>
+<p class="wysiwyg-text-align-justify">Available export templates:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>
+<strong>Master data</strong>: System data and master data.</li>
+<li>
+<strong>Participant data</strong>: Data from the participant database.</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><strong>Creating and Saving Export Templates</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Use the People → Export → Template editor menu to create and save custom export templates for panel data.</li>
+<li>This is useful if you frequently export data for a selection of variables, eliminating the need to repeatedly select variables for selective export.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Restricting Export to Individual Panelist Groups</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Export data for selected participants instead of all panelists by applying restrictions:
+<ul>
+<li>
+<strong>Group category</strong>: Restrict to a specific group category.</li>
+<li>
+<strong>Panel group</strong>: Restrict to a panel group, selectable after choosing the category.</li>
+</ul>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Restricting Export to Panelists with Specific Status</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Export data of panelists with specific statuses (e.g., “Admitted temporarily”).</li>
+<li>Select desired statuses by ticking the appropriate checkboxes in the “Apply to panelists with status” row. All checkboxes are ticked by default.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Restricting Export to Selected Variables</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Use selective export to export only chosen variables, suitable for managing large amounts of master data.</li>
+<li>Example: Export variables for age, gender

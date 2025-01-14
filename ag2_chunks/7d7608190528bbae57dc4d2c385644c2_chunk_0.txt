@@ -1,0 +1,151 @@
+<h1 id="h_01J69WW73WG5G08F8TZJ1XEJ0W">Overview</h1>
+<p>Before integrating EFS (Enterprise Feedback System) and Tivian Access with a client's Identity Provider (IdP) or setting up Single Sign-On (SSO), it's essential to gather specific information and ensure that certain prerequisites are met. This guide outlines the necessary prerequisites, questions to ask the client, and considerations for setting up SSO.</p>
+<h3 id="h_01J69X0NACEFZCBQ16X9D8WWT1">Prerequisites</h3>
+<ul>
+<li>Qualified technical customer contact that can administer their Identity Provider (if there is an IdP)</li>
+<li><strong>Please provide the mandatory test user! e.g.: QBtest@customerdomain.com</strong></li>
+</ul>
+<h3 id="h_01J69X10GXK2WSDFJ10Z9WN5WS">General Question</h3>
+<ul>
+<li>
+<p>Do you want to use a preexisting Identity Provider or do you want to use Tivian Access exclusively?</p>
+</li>
+<li>
+<p>Which email domains are used by the users that are authenticating at the SSO software/service?</p>
+<ul>
+<li>
+<p>e.g @client.com, @client.de</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Which sections of EFS do they want to cover?</p>
+<ul>
+<li>
+<p>Admin area</p>
+</li>
+<li>
+<p>Admin area + Portals (we cannot operate Portals independently from Admin)</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Would they like to set up MFA through Tivian Access?</p>
+<ul>
+<li>
+<p>We recommend the customer set up MFA on their own IdP and only offer this solution to customers that do not have their own IdP.</p>
+</li>
+<li>
+<p>Only Options here: the Code Authenticator Apps Okta and Google Authenticate</p>
+</li>
+<li>
+<p>Note: Email, SMS (this was a process decision)</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>If it is not clear what the client is using for SSO (and later do the follow-up questions for the specific protocol)</strong>:</p>
+<ul>
+<li>
+<p>What software/service are you using for SSO</p>
+<ul>
+<li>
+<p>e.g: Azure AD</p>
+</li>
+</ul>
+</li>
+<li>
+<p>What protocol do you support for SSO (OpenID Connect or SAML 2.0) - in case a client’s software supports both prefer OIDC</p>
+<ul>
+<li>
+<p>e.g: OpenID Connect, SAML 2.0</p>
+</li>
+</ul>
+</li>
+</ul>
+<p> </p>
+<h2 id="header-1">If the client is using <strong>OpenID Connect</strong>:</h2>
+<p>We need the following information from the client:</p>
+<p>Read the following first (just our information):</p>
+<ul>
+<li>OIDC Federation</li>
+<li>Open ID Connect Setup</li>
+</ul>
+<p> </p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 117.0px;">
+<col style="width: 164.0px;">
+<col style="width: 309.0px;">
+<col style="width: 276.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p><strong>Source</strong></p>
+</th>
+<th>
+<p><strong>Configuration</strong></p>
+</th>
+<th>
+<p><strong>Meaning</strong></p>
+</th>
+<th>
+<p><strong>Example</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p><strong>discovery document</strong></p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p> In case you can get the discovery endpoint itself it should contain all the following information.</p>
+</td>
+<td>
+<p><a href="#">https://login.microsoftonline.com/{id}/v2.0/.well-known/openid-configuration</a></p>
+<p>Example based on Azure AD</p>
+</td>
+</tr>
+<tr>
+<td>
+<p> </p>
+</td>
+<td>
+<p>token_endpoint</p>
+</td>
+<td>
+<p>Endpoint to get new tokens for the different flows. In our case an endpoint to exchange a code for a token.</p>
+</td>
+<td>
+<p><a href="#">https://login.microsoftonline.com/{id}/oauth2/v2.0/token</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p> </p>
+</td>
+<td>
+<p>authorization_endpoint</p>
+</td>
+<td>
+<p>Endpoint to Authenticate/Authorize a user. A user will be sent to that endpoint to authenticate.</p>
+</td>
+<td>
+<p><a href="#">https://login.microsoftonline.com/{id}/oauth2/v2.0/authorize</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p> </p>
+</td>
+<td>
+<p>jwks_uri</p>
+</td>
+<td>
+<p>Location where Keys for OpenID connect are stored. These keys might rotate. Therefore this document is not static long term.</p>
+</td>
+<td>
+<p><a href="#">https://login.microsoftonline.com/{id}/discovery/v

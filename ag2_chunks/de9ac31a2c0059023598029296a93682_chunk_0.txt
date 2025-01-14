@@ -1,0 +1,56 @@
+<h2 id="h_01J6EQM5F3D9DJEY1X361XBY5R">Table of Contents</h2>
+<ul>
+<li>
+<a href="#header-1">Enhancements to Surveys (Projects)</a>
+<ul>
+<li><a href="#header-3">Project-Snapshots</a></li>
+<li><a href="#header-5">Layout versioning</a></li>
+<li>
+<a href="#header-6">Responsive Layout 3.1</a>
+<ul>
+<li><a href="#header-8">Carousel question type</a></li>
+<li><a href="#header-9">Dynamic questions on the same page</a></li>
+<li><a href="#header-10">Enhancements to Upload question type</a></li>
+<li><a href="#header-11">New Page fade-in</a></li>
+</ul>
+</li>
+<li><a href="#header-13">Back button data correction</a></li>
+<li><a href="#header-14">Update to the SMS module and SMS delivery notifications</a></li>
+<li><a href="#header-15">Additional survey improvements</a></li>
+</ul>
+</li>
+<li>
+<a href="#header-17">Enhancements to Portals</a>
+<ul>
+<li><a href="#header-19">Multi-tenant Portals</a></li>
+<li><a href="#header-20">Other new features in Portals</a></li>
+</ul>
+</li>
+<li><a href="#header-22">Enhancements to People</a></li>
+<li><a href="#header-23">Enhancement to MySight</a></li>
+</ul>
+<div class="expand-macro"> </div>
+<h2 id="header-1">Enhancements to Surveys (Projects)</h2>
+<hr>
+<h3 id="header-3">Project-Snapshots</h3>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21036860449298" alt="image-20210824-145549.png"></p>
+<p>Our new <em>Project snapshots</em> features allows you to take a snapshot of an existing project. The snapshot is a copy of the questionnaire and the layout assigned to that questionnaire, and can be previewed and tested like a normal project. Existing live projects can be updated with a snapshot version without any impact to existing survey or participant data. There are two main ways in which you may wish to use a snapshot of a project:</p>
+<ul>
+<li>
+<p>As a <strong>backup of a project</strong> to which you plan to make changes. By taking the snapshot you can rollback any change you make to the master project should you be unhappy with them, by simply updating the project with the snapshot version.</p>
+</li>
+<li>
+<p>As a <strong>test version of your project</strong>. You can create a snapshot of your project and make any required changes to both the questionnaire and the layout to the snapshot. These can be fully tested before updating the master project with the snapshot, removing any risk of making incorrect changes to a live project.</p>
+</li>
+</ul>
+<h3 id="header-5">Layout versioning</h3>
+<p>Our new <em>layout versioning </em>feature ensures that any live projects are not negatively impacted should we make any changes to a layout version. Sometimes we will make changes to a survey layout version to apply security updates, bug fixes and enhancements. In the past these changes have been applied directly to the layout version and therefore all projects using that layout version. In some cases, this has led to issues with the project where local changes or customisations have not been compatible with the new version. From now on, any changes Tivian make to a layout version will be introduced as a new layout version. For example, changes to Responsive Layout 3 included in this release will now be introduced as Responsive Layout 3.1.</p>
+<p>This means you can now control when you would like to apply the latest layout version to your live projects, for example, after the field phase has ended, using our <em>Layout migration</em> feature. It is also possible to revert projects back to earlier layout versions, so should you have local changes in your project that are not compatible with the latest layout version you can simply migrate the project back to a previous version with which the project was compatible.</p>
+<p>It is possible to migrate a layout version to an earlier version or a later version within the same major version (e.g. moving between Responsive Layout 3 and 3.1) but not between major versions (e.g. you cannot migrate a survey’s layout from Responsive Layout 2 to Responsive Layout 3).</p>
+<p>Please note, customised layout are not automatically updated with a new version release, and custom question types are not automatically available in later versions (these must be manually updated to support a later layout version).</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21036815912850" alt="image-20210824-154735.png"></p>
+<h3 id="header-6">Responsive Layout 3.1</h3>
+<p>Our new version of Responsive Layout 3 (version 3.1) includes a new question type, improvements to an existing question type and also a new feature that will allow you to create more streamlined and user-friendly questionnaires.</p>
+<p> </p>
+<h4 id="header-8">Carousel question type</h4>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article

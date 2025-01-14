@@ -1,0 +1,91 @@
+code>): The offending mail should be outright rejected and not processed further.</p>
+</li>
+</ul>
+<h4 id="prevents-abuse-in-from-field-by-spammers">Prevents abuse in “From” field by spammers</h4>
+<p>To achieve this more or less relies upon the result of both SPF and DKIM, but only <strong>after </strong>the “alignment” between the Address of the “From”-Field and the Return-Path (SPF) and the Signature-Domain (DKIM) has been ensured.</p>
+<p>For both SKF and DKIM, “alignment” can be specified as one of the following:</p>
+<ul>
+<li>
+<p><strong>strict</strong></p>
+<ul>
+<li>
+<p>The domains match exactly</p>
+</li>
+<li>
+<p><code>aspf=s</code> / <code>adkim=s</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>relaxed</strong></p>
+<ul>
+<li>
+<p>The match may only be partial, so a Sub-Domain would also “align” with an Apex-Domain</p>
+</li>
+<li>
+<p><code>aspf=r</code> / <code>adkim=r</code></p>
+</li>
+</ul>
+</li>
+</ul>
+<p>Any Email domain where the domain does not match as specified or where the respective SPF / DKIM does not succeed, will fail the “alignment”-Check and will therefore be handled as specified by the DMARC-policy.</p>
+<h4 id="reporting-how-and-what">Reporting how and what</h4>
+<p>If an the recieving mail-server-provider that supports DMARC will also generate reports on the activity it observes for the domain.</p>
+<p>This report are in the form of XML-files containings the amongst others the sending-source (domain/IP) as well as the info whether SPF and DKIM passed or failed.</p>
+<p>An example would be the following:</p>
+<pre><code class="language-xml">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+&lt;feedback&gt;
+  &lt;report_metadata&gt;
+    &lt;org_name&gt;{{Some-Organization,e.g.=google.com}}&lt;/org_name&gt;
+    &lt;email&gt;{{Reply-Mail-Address-May-Be-A--No-Reply,e.g.=noreply-dmarc-support@google.com}&lt;/email&gt;
+    &lt;extra_contact_info&gt;{{An-url-with-additional-info,e.g.=http://support.google.com/a/bin/answer.py?answer=2466580}&lt;/extra_contact_info&gt;
+    &lt;report_id&gt;{{Some-ID}}&lt;/report_id&gt;
+    &lt;date_range&gt;
+      &lt;begin&gt;{{Report-Timeframe-Start}}&lt;/begin&gt;
+      &lt;end&gt;{{Report-Timeframe-Start}}&lt;/end&gt;
+    &lt;/date_range&gt;
+  &lt;/report_metadata&gt;
+  &lt;policy_published&gt;
+    &lt;domain&gt;{{Domain-in-question}}&lt;/domain&gt;
+    &lt;adkim&gt;{{configured-DKIM-alignment-policy}}&lt;/adkim&gt;
+    &lt;aspf&gt;{{configured-SPF-alignment-policy}}&lt;/aspf&gt;
+    &lt;p&gt;{{configured-action-policy}}&lt;/p&gt;
+    &lt;sp&gt;{{configured-action-policy-for-subdomain}}&lt;/sp&gt;
+    &lt;pct&gt;{{configured-apply-percentage}}&lt;/pct&gt;
+  &lt;/policy_published&gt;
+  &lt;record&gt;
+    &lt;row&gt;
+      &lt;source_ip&gt;50.31.170.29&lt;/source_ip&gt;
+      &lt;count&gt;1&lt;/count&gt;
+      &lt;policy_evaluated&gt;
+        &lt;disposition&gt;none&lt;/disposition&gt;
+        &lt;dkim&gt;fail&lt;/dkim&gt;
+        &lt;spf&gt;fail&lt;/spf&gt;
+      &lt;/policy_evaluated&gt;
+    &lt;/row&gt;
+    &lt;identifiers&gt;
+      &lt;header_from&gt;example.com&lt;/header_from&gt;
+    &lt;/identifiers&gt;
+    &lt;auth_results&gt;
+      &lt;spf&gt;
+        &lt;domain&gt;ord-staging2.mtasv.net&lt;/domain&gt;
+        &lt;result&gt;pass&lt;/result&gt;
+      &lt;/spf&gt;
+    &lt;/auth_results&gt;
+  &lt;/record&gt;
+  &lt;record&gt;
+    &lt;row&gt;
+      &lt;source_ip&gt;50.31.156.116&lt;/source_ip&gt;
+      &lt;count&gt;2&lt;/count&gt;
+      &lt;policy_evaluated&gt;
+        &lt;disposition&gt;none&lt;/disposition&gt;
+        &lt;dkim&gt;pass&lt;/dkim&gt;
+        &lt;spf&gt;fail&lt;/spf&gt;
+      &lt;/policy_evaluated&gt;
+    &lt;/row&gt;
+    &lt;identifiers&gt;
+      &lt;header_from&gt;example.com&lt;/header_from&gt;
+    &lt;/identifiers&gt;
+    &lt;auth_results&gt;
+      &lt;dkim&gt;
+        &lt;domain&gt;example.com&lt;/domain&gt

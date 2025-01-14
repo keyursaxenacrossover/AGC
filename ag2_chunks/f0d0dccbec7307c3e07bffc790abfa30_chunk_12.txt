@@ -1,0 +1,134 @@
+ld",
+    "changes": {
+      "account": "Example",
+      "firstName": "First",
+      "lastName": "Last",
+      "email": "example@domain.tld",
+      "password": "New Password",
+      "gender": "NOT_SPECIFIED",
+      "street": "None",
+      "zip": "12345",
+      "city": "Example",
+      "phone": "+491234567890",
+      "country": "Germany",
+      "mobile": "+491234567890",
+      "language": "EN",
+      "expireDate": "2024-07-02T12:53:50+00:00",
+      "organisation": 1,
+      "primaryTeam": 1,
+      "teams": [
+        1
+      ],
+      "enabled": true,
+      "mobile2": "+491234567891",
+      "www": "Some URL",
+      "comment": "Additional Comment",
+      "department": "Department info"
+    }
+  }
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">1234</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79EP11A14EANSF87MTP"> </h4>
+<h3 id="header-55">POST /efs/staff/details</h3>
+<p>Return information about a staff member</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "identifierType": "email",
+  "identifier": "example@domain.tld"
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">{
+  "userId": 1234,
+  "account": "Example",  
+  "firstName": "First",
+  "lastName": "Last",
+  "email": "example@domain.tld",
+  "password": "New Password",
+  "gender": "NOT_SPECIFIED",
+  "street": "None",
+  "zip": "12345",
+  "city": "Example",
+  "phone": "+491234567890",
+  "country": "Germany",
+  "mobile": "+491234567890",
+  "language": "EN",
+  "expireDate": "2020-07-02T12:53:50+00:00",
+  "organisation": 1,
+  "primaryTeam": 1,
+  "teams": [
+    1
+  ],
+  "enabled": true,
+  "mobile2": "Example",
+  "www": "Example",
+  "comment": "Example",
+  "department": "Example"
+}</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79ESJPS7C30KW7QZJ23"> </h4>
+<h3 id="header-56">GET /efs/staff/list</h3>
+<p>Returns a list of all EFS staff members</p>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[
+  {
+    "adminUserId": 1234,
+    "accountName": "Example",
+    "firstName": "First",
+    "lastName": "Last",
+    "email": "example@domain.tld",
+    "language": "EN",
+    "expireDate": "2020-07-02T12:53:50+00:00",
+    "organisation": 1,
+    "primaryGroup": 1,
+    "groups": [
+      1
+    ]
+  }
+]</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79E25T84NTC2GQMK7FS"> </h4>
+<h3 id="header-57">POST /efs/staff/mail</h3>
+<p>Sends email to the specified EFS admin user</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "identifierType": "email",
+  "identifierValue": "example@domain.tld",
+  "mailTemplateData": {
+    "meta": {
+      "description": "Example message",
+      "type": "default_mail",
+      "site_id": "7",
+      "active": true
+    },
+    "content": {
+      "from": "example@domain.tld",
+      "subject": "Example message",
+      "format": "TEXT",
+      "text_content": "Dear user, \r\n\r\nyou have a new message.",
+      "attachments": false
+    },
+    "options": {
+      "charset": "ISO-8859-1",
+      "reply_to": "example@domain.tld",
+      "return_path": "example@domain.tld",
+      "to_realname": false,
+      "send_copy": false,
+      "priority": "NO_PRIORITY",
+      "sensitivity": "NORMAL",
+      "notify": "NO_NOTIFICATION"
+    }
+  }
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">true</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79EDVTPQGSWZM6JF1ZB"> </h4>
+<h3 id="header-58">PATCH /efs/staff/role</h3>
+<p>Alters a staff members role within a given team</p>
+<p><em><strong>

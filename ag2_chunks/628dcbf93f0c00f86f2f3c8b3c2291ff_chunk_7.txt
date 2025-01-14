@@ -1,0 +1,142 @@
+td>
+</tr>
+<tr>
+<td>
+<p><strong>32</strong></p>
+</td>
+<td>
+<p><strong>Moderator</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<h2 id="header-9"><font>Panel Entry Mode (pinput)</font></h2>
+<ul>
+<li>
+<p><font>Table: panel_att</font></p>
+</li>
+<li>
+<p><font>Column: pinput</font></p>
+</li>
+</ul>
+<p><font> Entry mode. Describes the type of registration. It is automatically assigned by the system. There are the following entry modes: </font> <br><font>1 ==&gt; other event </font> <br><font>2 ==&gt; data import </font> <br><font>4 ==&gt; moderator entry </font> <br><font>8 ==&gt; self-recruited </font> <br><font>16 ==&gt; referral </font> <br><font>32 ==&gt; test </font> <br><font>64 ==&gt; INVITED </font> <br><font>127 ==&gt; SELF_REGISTERED</font></p>
+<p><font> Please note: The entry mode is not to be confused with the entry paths, which are stored in the variable "reg_code". You can use user-defined entry paths to describe exactly how panelists with entry mode 1, 2, 8 and 16 got into the panel. See also chapter 6.2, p. 110. </font></p>
+<p> </p>
+<h2 id="header-10"><font>Panel Duplicate Status (doub_stat)</font></h2>
+<ul>
+<li>
+<p><font>Table: panel_att</font></p>
+</li>
+<li>
+<p><font>Column: doub_stat</font></p>
+</li>
+</ul>
+<p><font> Duplicate status. Has the check been carried out for the panelist and what is the result: </font> <br><font>0 ==&gt; Unchecked </font> <br><font>1 ==&gt; No duplicate </font> <br><font>10 ==&gt; Duplicate</font></p>
+<p> </p>
+<h2 id="header-11"><font>Defaults Missing Values:</font></h2>
+<table data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<th>
+<p><u> <font>Status</font> </u></p>
+</th>
+<th>
+<p><u> <font>Meaning</font> </u></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>0</p>
+</td>
+<td>
+<p><font>Question was seen but not answered</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>-77</p>
+</td>
+<td>
+<p><font> Participant did not see the question (dropped out or because of filter) </font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>-66</p>
+</td>
+<td>
+<p><font>Participant did not see the question because it was hidden</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>-99</p>
+</td>
+<td>
+<p><font> (for text fields) The participant has seen the respective question but has not answered it </font></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="header-12">Page History</h2>
+<p>TBD</p>
+<h2 id="header-13">Jobstatus</h2>
+<p><font>Table: jobs </font> <br><font>Column: stat</font></p>
+<table data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<th>
+<p><u> <font>Status</font> </u></p>
+</th>
+<th>
+<p><u> <font>Meaning</font> </u></p>
+</th>
+</tr>
+<tr>
+<td>
+<p><font>0</font></p>
+</td>
+<td>
+<p><font>not yet processed</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><font>1</font></p>
+</td>
+<td>
+<p><font>In Progress</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><font>2</font></p>
+</td>
+<td>
+<p><font>finished</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><font>3</font></p>
+</td>
+<td>
+<p><font>failed</font></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p><font>Table: taskqueue_tasks </font> <br><font>Column: status</font></p>
+<table data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 226.67px;"> <col style="width: 226.67px;"> <col style="width: 226.67px;"> </colgroup>
+<tbody>
+<tr>
+<td>
+<p>php constant</p>
+</td>
+<th>
+<p><strong> <span style="color: #ffffff

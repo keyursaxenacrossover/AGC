@@ -1,0 +1,116 @@
+ style="width: 177.257px; height: 89px;">
+<p>Output mode</p>
+</td>
+<td style="width: 300.122px; height: 89px;">
+<ul>
+<li>
+<p>HTML</p>
+</li>
+<li>
+<p>XHTML-MP</p>
+</li>
+<li>
+<p>WML</p>
+</li>
+</ul>
+</td>
+<td style="width: 158.177px; height: 89px;">
+<p>HTML</p>
+</td>
+</tr>
+<tr style="height: 60px;">
+<td style="width: 177.257px; height: 60px;">
+<p>Target page logged out section</p>
+</td>
+<td style="width: 300.122px; height: 60px;">
+<p>Page you are usually automatically taken to when you click on the panel URL.</p>
+</td>
+<td style="width: 158.177px; height: 60px;">
+<p>Pages → Home</p>
+</td>
+</tr>
+<tr style="height: 60px;">
+<td style="width: 177.257px; height: 60px;">
+<p>Target page logged in section</p>
+</td>
+<td style="width: 300.122px; height: 60px;">
+<p>Page logged-in panelists are usually automatically taken to when they log in.</p>
+</td>
+<td style="width: 158.177px; height: 60px;">
+<p>Pages → My home</p>
+</td>
+</tr>
+<tr style="height: 60px;">
+<td style="width: 177.257px; height: 60px;">
+<p>Target page first login</p>
+</td>
+<td style="width: 300.122px; height: 60px;">
+<p>Page panelists are taken to when they log in for the first time after registration.</p>
+</td>
+<td style="width: 158.177px; height: 60px;">
+<p>Pages → My home</p>
+</td>
+</tr>
+<tr style="height: 488px;">
+<td style="width: 177.257px; height: 488px;">
+<p>Language selection page</p>
+</td>
+<td style="width: 300.122px; height: 488px;">
+<p>Page on which visitors can choose a language version.</p>
+<p>This page is used,</p>
+<ul>
+<li>
+<p>if visitors cannot yet be assigned to a language version (i.e. they have not yet expressly chosen a language, there are no cookies containing information on previous visits and the site_id cannot be accessed before login to a possible panelist account).</p>
+</li>
+<li>
+<p>if, at the same time, no other details are available as to which language visitors are to see. For a panel with several domains you could, for example, specify that visitors who access the domain “.de” are automatically taken to the German version, whereas visitors who access the domain “.com” are shown the language selection page.</p>
+</li>
+</ul>
+</td>
+<td style="width: 158.177px; height: 488px;">
+<p> </p>
+</td>
+</tr>
+<tr style="height: 292px;">
+<td style="width: 177.257px; height: 292px;">
+<p>Assigned languages</p>
+</td>
+<td style="width: 300.122px; height: 292px;">
+<p>Used to determine a user’s language when no cookie is set and no other language information is available:</p>
+<p>Many browsers transmit a language code in the value „HTTP_Accept_Language“, e.g. „en“ for English speaking users or „de_DE“ for German speaking users from Germany.</p>
+<p>In this input field, you can specify the language codes for which (in the absence of other data) the current language version shall be displayed.</p>
+</td>
+<td style="width: 158.177px; height: 292px;">
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"><strong>Output</strong></p>
+<table class="wysiwyg-text-align-justify" style="height: 249px;" border="1" width="666" data-layout="full-width" data-table-width="1372.0410000000002">
+<colgroup> <col style="width: 152.0px;"> <col style="width: 215.0px;"> <col style="width: 123.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" style="width: 203.16px;">
+<p><strong>Description</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 288.646px;">
+<p><strong>Explanation</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 163.802px;">
+<p><strong>Preallocation in the standard panel</strong></p>
+</th>
+</tr>
+<tr>
+<td style="width: 195.139px;">
+<p>Output encoding of the panel site</p>
+</td>
+<td style="width: 280.625px;">
+<p>This field is used to set the required character set for the language version.</p>
+</td>
+<td style="width: 155.781px;">
+<p>UTF-8</p>
+</td>
+</tr>
+<tr>
+<td style="

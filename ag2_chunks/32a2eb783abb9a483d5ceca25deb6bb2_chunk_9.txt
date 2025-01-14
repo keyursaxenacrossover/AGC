@@ -1,0 +1,66 @@
+: 481.233px;">
+<p>A database field to which you can assign a freely chosen identification code for a participant when importing.</p>
+</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px; width: 195.434px;">{$respondent.u_passwd}</td>
+<td style="height: 22px; width: 481.233px;">Password</td>
+</tr>
+</tbody>
+</table>
+<p class="auto-cursor-target wysiwyg-text-align-justify"> </p>
+<table class="wrapped wysiwyg-text-align-justify" style="margin-right: auto; margin-left: auto;" border="1">
+<colgroup> <col> <col> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center">Variable name</th>
+<th class="wysiwyg-text-align-center">Meaning</th>
+</tr>
+<tr>
+<td>
+<p>{$respondent.m_000x}, {$respondent.md_000x}</p>
+</td>
+<td>
+<p>Master data.</p>
+<p>For master data with characteristics, the code and label are output as follows:</p>
+<ul>
+<li>Code: {$respondent.m_000x}</li>
+<li>Label: {$master_data.m_000x.codes[$respondent.m_000x]}</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="auto-cursor-target wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify"><em>Information: </em>The wildcards listed above are either available on all pages or all pages of the internal area. If you want to know which additional wildcards can be used on a certain page, simply access the Smarty debugging console.</p>
+<h1 id="editing-messages" class="wysiwyg-text-align-justify">Editing Messages</h1>
+<p class="wysiwyg-text-align-justify">EFS panel has its error message system. In the standard panel, the messages are shown on the right side of the content area above the login.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015069375122" alt="image2024-1-15_12-18-45.png"></p>
+<p class="wysiwyg-text-align-justify">The messages are configured by our support when the panel is set up. You can make subsequent changes to the content of the messages. However, you currently have no access to the rules that determine whether and in which situation a message will be invoked. Accordingly, it is usually not advisable to create new messages. Only when configuring the RegEx checks for the registration form do you have the option of defining new messages with related rules on invoking them?</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify"><em>Information: </em>The message administration of the CMS is designed for up to 200 messages per language version. If you use messages a lot, take care to use meaningful names, to prevent e.g. the creation of duplicates. If necessary, develop your nomenclature.</p>
+<h2 id="message-types" class="wysiwyg-text-align-justify"><strong>Message Types</strong></h2>
+<p class="wysiwyg-text-align-justify">In EFS Panel, there are different message types:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Error messages: Messages of the “error” type consist of a header and the actual message text.</li>
+<li>Notifications: Messages of the “notification” type consist only of the message text.</li>
+<li>Notifications which relate to keying errors during registration are a special case.</li>
+</ul>
+<h2 id="managing-messages" class="wysiwyg-text-align-justify"><strong>Managing Messages</strong></h2>
+<p class="wysiwyg-text-align-justify">The <strong>Website → Panel websites → {Selected language version} → Messages</strong> menu allows you to view existing messages, create new messages, and delete messages that are no longer used.</p>
+<p class="wysiwyg-text-align-justify">Information</p>
+<p class="wysiwyg-text-align-justify">Read rights for “panel_website_messages” are needed for accessing the Messages menu.</p>
+<p class="wysiwyg-text-align-justify">The Messages overview comprises all the messages created for the predefined language version and contains the following information:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Identifier: Internal Wildcard, used to invoke the message from the “Error messages” template.</li>
+<li>Header: Message header as displayed to visitors. Is only used with the “Error” message type.</li>
+<li>Message text: The actual content of the message.</li>
+<li>Message type:
+<ul>
+<li>Error</li>
+<li>Notification</li>
+</ul>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If you want to view messages of another language version that you’re authorized to access in a given installation with several websites and/or language versions, simply change the settings in the upper section of the dialog. You can use the View function to change the number of table columns displayed as well as the number of rows per page.</p>
+<p class="wysiwyg-text-align-justify">The table can be browsed according to the content of messages.</p

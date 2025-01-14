@@ -1,0 +1,76 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K">Overview</h1>
+<p>This article explains the "Search and replace" function in a questionnaire editing tool, which allows users to search for and modify text elements across a project efficiently.</p>
+<p> </p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>The "Search and Replace" feature enables users to search question texts, answers, and fill-in instructions for specific keywords and optionally change the text in one step. It offers various options to refine the search and streamline the editing process.</p>
+<ul>
+<li><a href="#using-search-and-replace">Using Search and Replace</a></li>
+<li><a href="#viewing-the-results">Viewing the results</a></li>
+<li><a href="#replacing-text-elements">Replacing text elements</a></li>
+</ul>
+<h3 id="using-search-and-replace">Using Search and Replace</h3>
+<p><strong>Search and replace</strong> is invoked via the menu item in the questionnaire view. The search text is entered in the search form. The search results will include any terms that contain the keyword (e.g. „questionnaire“ when searching for „question“). Optionally, you may also specify the following restrictions or criteria:</p>
+<ul>
+<li>
+<p>Page to be searched: This option allows to restriction of the search to a specific questionnaire branch.</p>
+</li>
+<li>
+<p>Survey language: By default, the search is performed in the default language.</p>
+</li>
+<li>
+<p>Search type</p>
+<ul>
+<li>
+<p>Normal search: Default setting</p>
+</li>
+<li>
+<p>Case sensitive</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Text type: You can, for example, restrict your search to scale titles or long variable names.</p>
+</li>
+</ul>
+<p>To trigger the search, click on the <strong>Search</strong> button.</p>
+<p>The “Search and replace” function covers &lt;img&gt; tags used e.g. in the HTML question type to insert images, and references from image question types to<br>image files. When replacing texts, please ensure that no HTML elements or references to files are changed inadvertently.</p>
+<h3 id="viewing-the-results">Viewing the results</h3>
+<p>In the results table the results are listed, sorted by page, with the following information:</p>
+<ul>
+<li>
+<p>Type: Text type</p>
+</li>
+<li>
+<p>This “Search and Replace” dialog allows you to perform a specific search within a questionnaire branch under a particular page.</p>
+</li>
+<li>
+<p>Content: The text of the respective question, answer option or fill-in instruction. The keyword is highlighted.</p>
+</li>
+<li>
+<p>Replace: see below.</p>
+</li>
+<li>
+<p>Actions:</p>
+<ul>
+<li>
+<p><strong>Edit page</strong>: This icon allows you to call up and directly edit the respective page in the questionnaire editor.</p>
+</li>
+<li>
+<p><strong>Preview</strong>: Opens the respective page in the questionnaire preview.</p>
+</li>
+<li>
+<p><strong>Edit language elements</strong>: In multilingual projects, this icon allows you to switch to the relevant page in the <strong>Language editor</strong>.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="replacing-text-elements">Replacing text elements</h3>
+<p>If you wish to edit text elements centrally, first select the search results for modification in the “Replace” column. Then enter the new text element in the “Replace with” field. Your changes will be performed once you click on the <strong>Replace</strong> button.</p>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq_case_sensitive">Is the search case-sensitive by default?</h3>
+<p>No, the default search is not case-sensitive. However, you can enable case-sensitive search in the search options.</p>
+<h3 id="faq_multilingual">Can I use Search and Replace in multilingual projects?</h3>
+<p>Yes, you can search in different language versions of your project by selecting the desired survey language in the search options.</p>
+<h3 id="faq_html_tags">Does Search and Replace affect HTML tags?</h3>
+<p>The function covers &lt;img&gt; tags and references to image files. Be cautious when replacing text to avoid inadvertently changing HTML elements or file references.</p>

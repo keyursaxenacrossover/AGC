@@ -1,0 +1,167 @@
+>
+<p><strong>Edit</strong>: By clicking on this actions icon you can open a dialog to subsequently change the respective data record.</p>
+</li>
+<li>
+<p><strong>Delete</strong>: The respective data record will be deleted after a confirmation prompt.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Perform the import and download the results</strong></p>
+<p class="wysiwyg-text-align-justify">If you are satisfied with your data in the preview, click on<strong> Import</strong> to trigger the actual import process. Following the completion of the import process, the program will indicate how many data records were successfully created and how many were not created due to certain problems. An Excel file containing the following information can be downloaded by clicking on the<strong> Download results</strong> button:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>all the data in the import file</p>
+</li>
+<li>
+<p>The “result” column contains the result of the import, i.e., either the message “Data record import successful” or “Data record not imported”.</p>
+</li>
+<li>
+<p>If any problems occur, the reason will be indicated in the “messages” column.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If necessary, you can correct the data records that were not successfully created directly in this file, delete the successfully created data records, and then use the file again for a new import attempt.</p>
+<p class="wysiwyg-text-align-justify"><strong>Columns of the import file</strong></p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default">
+<colgroup> <col style="width: 164.0px;"> <col style="width: 142.0px;"> <col style="width: 239.0px;"> <col style="width: 99.0px;"> <col style="width: 116.0px;"> </colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour="#57d9a3">
+<p><strong>Column</strong></p>
+</th>
+<th data-highlight-colour="#57d9a3">
+<p><strong>Label</strong></p>
+</th>
+<th data-highlight-colour="#57d9a3">
+<p><strong>Explanation</strong></p>
+</th>
+<th data-highlight-colour="#57d9a3">
+<p><strong>Data type</strong></p>
+</th>
+<th data-highlight-colour="#57d9a3">
+<p><strong>Size</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>metaname</p>
+</td>
+<td>
+<p>Meta name</p>
+</td>
+<td>
+<p>Unique identifier of the unit. The meta name may contain only the following<br>characters: a-z, A-Z, 0-9, "_", "-"</p>
+</td>
+<td>
+<p>Text field</p>
+</td>
+<td>
+<p>65,536 characters</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>label</p>
+</td>
+<td>
+<p>Short form of the unit name</p>
+</td>
+<td>
+<p>Name of the respective organizational unit as it is to be displayed in the organizational structure. For greater clarity, a shortened form of the actual name is usually used.</p>
+</td>
+<td>
+<p>Text field</p>
+</td>
+<td>
+<p>256 characters</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>label_extern</p>
+</td>
+<td>
+<p>Name of unit</p>
+</td>
+<td>
+<p>Name of the unit</p>
+</td>
+<td>
+<p>Text field</p>
+</td>
+<td>
+<p>256 characters</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>level_1, level_2,...level_12</p>
+</td>
+<td>
+<ul>
+<li>
+<p> </p>
+</li>
+</ul>
+</td>
+<td>
+<p>Levels of the organizational structure.</p>
+<p>The short form of the unit described in the respective row is always entered in the<br>column corresponding to the level of the unit relative to the reference unit.</p>
+</td>
+<td>
+<p>Text field</p>
+</td>
+<td>
+<p>65,536 characters</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>status</p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p>Process status. Indicates whether the unit is released or locked.</p>
+<p>Available options are:</p>
+<ul>
+<li>
+<p>0: Unit is released, i.e., it can be edited.</p>
+</li>
+<li>
+<p>1: Unit is locked.</p>
+</li>
+</ul>
+</td>
+<td>
+<p>Checkbox</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>co_target</p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p>Preset number of employees for this unit.</p>
+</td>
+<td>
+<p>int(11)</p>
+</td>
+<td>
+<p>max 2,147,483,647</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>visible</p>
+</td>
+<td>
+<p>Permit allocation<br>to unit in the<br>questionnaire</p>
+</td>
+<td>
+<p>This variable is only relevant in

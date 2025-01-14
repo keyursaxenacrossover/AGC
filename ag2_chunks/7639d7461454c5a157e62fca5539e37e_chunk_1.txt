@@ -1,0 +1,35 @@
+ <em>Panel Website </em>modules, we have implemented new security-related headers. These headers will be sent with each page to ask the browser not to allow certain actions or script types.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21036810779922" alt="screen_englisch.png"></p>
+<p>The following security headers are available:</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy" target="_blank" rel="noopener noreferrer">Referrer-Policy</a>: Use this header to define which referrer information will be sent to 3<sup>rd</sup> party websites when clicking on a link within EFS. </p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy" target="_blank" rel="noopener noreferrer">Content-Security-Policy</a>: The Content Security Policy is an effective measure to protect your website from XXS attacks. By whitelisting sources for approved content, you can prevent the browser from loading malicious assets.</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy" target="_blank" rel="noopener noreferrer">Permissions-Policy</a>: Use this header to define which APIs might be used, e.g. payment, camera, microphone or USB access.</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options" target="_blank" rel="noopener noreferrer">X-Content-Type-Options</a>: Use this header to block a request, if the request destination is of type “style” and the MIME type is not “text/css”, or of type “script” and the MIME type is not a “JavaScript” MIME type.</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection" target="_blank" rel="noopener noreferrer">X-XSS-Protection</a>: Use this header to enable XSS filtering (usually default in browsers). If a cross-site scripting attack is detected, the browser will sanitize the page (remove the unsafe parts).</p>
+<p>In <em>Projects</em>, the option "Should an X-Frame-Options header be sent to the client?", has been moved from the <strong>General Options</strong> tab to the new <strong>Security</strong> tab within the <strong>Survey Options</strong>.</p>
+<h3 id="header-6">Do-Not-SMS List</h3>
+<p>In addition to the <em>Do-Not-Email</em> list, you now also have a <em>Do-not-SMS list</em> to block mobile phone numbers from receiving SMS notifications on a global and/or project-specific level.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21036807240978" alt="Bildschirmfoto 2022-03-08 um 15.20.12.png"></p>
+<p>You can import, export (Excel and CSV) the <em>Do-not-SMS list</em>, and configure the table view. Use the checkbox to remove mobile phone numbers from the list. Just check the mobile phone numbers you want to remove from the list. Use the <em>#unsubscribe_global#</em> and <em>#unsubscribe_survey#</em> placeholders to insert links in SMS messages, so that participants are allowed to add their own mobile phone number to the <em>Do-not-SMS</em> list.</p>
+<p>New <a href="#header-30">service layer methods</a> are also available for adding to the list, checking, and removing mobile numbers from the list.</p>
+<h3 id="header-7">Other Enhancements to EFS Platform</h3>
+<ul>
+<li>
+<p><strong>Uploading fonts and new file types (media library)</strong>: As of this release, the media library supports new file types, such as web-fonts (<em>woff, woff2, otf, eot, svg, jp2, webm, webp</em>).</p>
+</li>
+<li>
+<p><strong>Customized maintenance page</strong>: The maintenance page can now be adapted to your corporate identity. Customers with extended access rights, will find a new <strong>Maintenance</strong> tab of the <strong>Branding</strong> menu (Options).</p>
+</li>
+<li>
+<p><strong>Changed user menu</strong>: We made changes to the user menu. The <em>Edit account</em> menu item was renamed. It is now called <em>Edit user data</em>. We also added the <em>Security</em> menu item to connect the user menu with security area. There you can now change your password.</p>
+</li>
+<li>
+<p><strong>Sending SMS</strong>: When sending SMS, additional information are now available, for example the encoding of the SMS and a SMS counter that counts how many SMS will be used for the message.</p>
+</li>
+</ul>
+<p> </p>
+<h2 id="header-9">Enhancements to <em>Projects</em>
+</h2>
+<hr>
+<h3 id="header-11">PDF Receipts</h3>
+<p>We have rebuilt the <strong>Receipts</strong> section of the <strong>Questionnaire Editor</strong> completely. You are now able to provide survey participants with the completed questionnaire as a PDF receipt via a download link and/or via e-mail attachment, without the need to

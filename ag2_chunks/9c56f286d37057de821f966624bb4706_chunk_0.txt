@@ -1,0 +1,75 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1183678595">https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1183678595</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">Identity and Access Management</a></li>
+<ul>
+<li><a href="#header-3">Documentation:</a></li>
+<ul>
+<li><a href="#header-5">Link to Okta Web Admin Console:</a></li>
+</ul>
+<li><a href="#header-7">Setup</a></li>
+<li><a href="#header-8">Deactivation DB</a></li>
+<li><a href="#header-9">AWS Migration</a></li>
+<li><a href="#header-10">Installations with SSO</a></li>
+<li><a href="#header-11">Troubleshooting</a></li>
+</ul>
+</ul>
+</ul><h1 id="header-1">Identity and Access Management</h1><h2 id="header-3">Documentation:</h2><p><ac:link ac:card-appearance="inline"><ri:page ri:content-title="Operation" ri:space-key="IAM" ri:version-at-save="1"></ri:page><ac:link-body>Operation</ac:link-body></ac:link> </p><ac:rich-text-body><p>Bypass user root for installations has email address: <a href="mailto:noreply@questback.com">noreply@questback.com</a> or <a href="mailto:efs-root@questback.com">efs-root@questback.com</a> or <a href="mailto:efs-root@globalpark.com">efs-root@globalpark.com</a>, root password remains (if none of those: table “users” where uid = 1)</p>
+<p>Standard link: <a href="https://beat.customervoice360.com/iam/admin/auth/login/bypass">https://ab1234.customervoice360.com/iam/admin/auth/login/bypass</a></p></ac:rich-text-body><h3 id="header-5">Link to Okta Web Admin Console:</h3><p><a href="https://questback-admin.okta.com/admin/settings/account">https://questback-admin.okta.com/admin/settings/account</a></p><p><a href="https://tivian-admin.okta.com/admin/settings/account">https://tivian-admin.okta.com/admin/settings/account</a></p><h2 id="header-7">Setup</h2><div class="expand-macro">
+<h4 string="Checkliste"></h4>
+<pre><code class="language-text">IAM
+	[] add module 'IdentityAccessManager'
+	[] run healself
+	[] configure force_ssl
+
+[] IDP (once per customer)
+	[] set up IdP with customer
+
+[] Set up Okta
+	[]Authorisation Server Setup
+		[] Audience: api://[clientname]-&gt;iam_audience
+		[] Metadata URL-&gt; iam_well_known_url
+
+	[] Group Setup
+		[] Group ID-&gt; iam_user_group_id
+		(The ID of the groupd specified in Okta for the customer, not the installation)
+
+	[] Sign on Policy
+		[] use Documentaion
+
+	[] API Token Setup
+		[] create token with okta user iam@questback.com
+		[] store token in keepass (notes section)
+
+[] IAM EFS Admin
+	Okta
+	[] group for EFS instance
+		[]groupid-&gt;iam_client_group_id
+
+	[]Application
+		[] login URL&lt;-&gt;EFS
+		[] logout URL&lt;-&gt;EFS
+		[] Client id -&gt; iam_client_id
+		[] Client secret -&gt; iam_client_secret
+	EFS
+	[] root-bypass *optional
+	[] iam_federated_domains (in case idp exists, always add tivian.com)
+	[] iam_idp_id *optional to skip Okta fpr customer IdP
+	[] proxy: http://squid.global-services.svc.cluster.local:8080
+	[] iam_unique_customer_name (pick this once at the beginning of the process)
+
+[]IAM EFS Portals
+	Okta
+	[] create trusted origin
+	https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1077182620/Portals+Setup
+		
+	EFS
+	[] add portal iam_sso_modules
+	[] configure iam_panelist_sync (check federated domains!)
+
+	[] run migration Script cd www &amp;&amp; php support/iam/migration.php
+	[] module active true (ONLY IF EVERYTHING WORKS, LOCKS PEOPLE OUT!!!)</code></pre>
+</div><p></p><h2 id="header-8">Deactivation DB</h2><p>How to deactivate Tivian Access if the bypass URL does not work:</p><p></p><pre><code class="language-sql">SELECT * from config_variables where name ='iam_module_active';
+UPDATE config_variables set value='b:0;' where name ='iam_module_active';</code></pre><p></p><h2 id="header-9">AWS Migration</h2><p>Query to set iam_proxy_url after migration:</p><

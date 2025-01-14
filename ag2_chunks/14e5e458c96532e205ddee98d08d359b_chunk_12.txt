@@ -1,0 +1,42 @@
+ development</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;">false, true</td>
+<td style="padding: 2px 3px; vertical-align: middle; text-align: center; width: 15.536%;">FALSE</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;">no</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;">no</td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">error_logfile</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">put in the absolute filename of an error log file in here. the file must be accessible by all EFS front ends (i.e. put it in NFS) and writable by the web server &amp; CLI users. Never use this on production installations as this logfile might get very big, will not be rotated and is not race-condition safe etc. Only use for development!!</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;"> </td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 15.536%;">'</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;">no</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;">no</td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">error_recipient</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">put in an email address or comma separated addresses here that should receive errors triggered on the installation. warning: you might be spammed</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;">blank= <a class="in-cell-link" href="#" target="_blank" rel="noopener noreferrer">failed-queries@questbackco</a>m</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 15.536%;">'</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;">no</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;">no</td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">error_threshold</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">how many error mails by type should be sent at most from an installation. Capping the number of mails will reduce spam sent by completely broken installations (e.g. if hard-drive is full etc.)</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;"> </td>
+<td style="padding: 2px 3px; vertical-align: middle; text-align: right; width: 15.536%;">2</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;">no</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;">no</td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">export_have_icharts</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">allow icharts export format for results data exports</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;">false, true</td>
+<td style="padding: 2px 3px; vertical-align: middle; text-align: center; width: 15.536%;">FALSE</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;"> </td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;"> </td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">export_jobmaker_behaviour</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">Queueing behaviour for the EFS exports. use this for high-traffic/volume installations. this variable deprecates the (bool) $__export_skip_jobmaker variable which has been removed from the sample config in EFS &gt; 8.1</td>
+<td style="padding: 2px 3px; vertical

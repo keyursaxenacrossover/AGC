@@ -1,0 +1,51 @@
+Senior leaders are sufficiently visible at People Company“ are output for each <strong>Focus unit </strong>of the <strong>Unit collection</strong>.</p>
+<em>Information: <span style="color: #333333;">Both the dimension and unit collections are iterated either via the row or the column. If you use </span><strong>Rows </strong><span style="color: #333333;">as the value for the loop mode tag, the values are filled row by row into the cells (one below the other). If you use</span><strong>Columns</strong><span style="color: #333333;">as as the value for the </span><strong>Loop mode </strong><span style="color: #333333;">tag, the values column by column are set next to each other.</span></em>
+<h3 id="continuation-with-dimension" class="sc-lhVmIH iJLaKb"><strong>Continuation with Dimension</strong></h3>
+<p><span style="color: #091e42;">In addition to the mapping elements for result types and unit properties, with which the path is immediately valid, the element </span><strong>Dimension</strong><span style="color: #091e42;"> allows you to continue the picker path. You take the direction of the question text and the dimension value to continue your path. To refer the selected unit to the question texts or existing dimension values of your survey, proceed as follows.</span></p>
+<p><span style="color: #091e42;"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013850315410" alt="Continuation with Dimension 2.png"></span></p>
+<p>You pick:</p>
+<p><em>Unit</em> → [<em>unit element</em>] → <em>Dimension</em> → [<em>question/dimension item</em>]</p>
+<p>You continue with result types or <strong>Scale</strong>:</p>
+<ul>
+<li>N</li>
+<li>Return</li>
+<li>Average</li>
+<li>Standard deviation</li>
+<li>Standard deviation (sample)</li>
+<li>Maximum Response Code</li>
+<li>Minimum Response Code</li>
+<li>Range</li>
+<li>Sum</li>
+<li>Median</li>
+<li>Modus</li>
+<li>Square Distribution</li>
+<li>First Quartile</li>
+<li>Third Quartile</li>
+<li>Interquartile Range</li>
+<li>Explicit missings</li>
+<li>Return rate</li>
+<li>Scale</li>
+</ul>
+<p>Continue with result types, the term is immediately valid.</p>
+<p>To continue with <strong>Scale</strong>, you click here.</p>
+<h3 id="continuation-with-scale" class="sc-lhVmIH iJLaKb"><strong>Continuation with Scale</strong></h3>
+<p>The path does not have to end after you have decided on a question or a dimension item. The element<strong>Scale</strong>provides you with a continuation option so that you move on the path which you have already continued with <strong>Dimension</strong>. Therefore you pick an item x of the scale property or a result type.</p>
+<p>By means of this branching, your results achieve accuracy, because you not only take the questions into account, as is possible with the continuation by question or dimensional expression, but also evaluate the answer page in a differentiated way.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013838049298" alt="Continuation with scale.png"></p>
+<p>You pick:</p>
+<p><em>Unit</em> → [<em>Unit element</em>] → <em>Dimension</em> → [<em>Question text/Dimension item</em>] → <em>Scale</em> → [<em>Scale </em><em>item</em>]</p>
+<p>You continue with scale properties and result types:</p>
+<ul>
+<li>Code</li>
+<li>Label</li>
+<li>N</li>
+<li>N as percent</li>
+</ul>
+<p>If you continue with a scale property or a result type, the term is immediately valid.</p>
+<p>Another branching is not possible.</p>
+<h3 id="continuation-with-unit" class="sc-lhVmIH iJLaKb"><strong>Continuation with Unit</strong></h3>
+<p>Both as a starting element for cell mapping and in <strong>Loop mode</strong>, the path for the <strong>Dimension collection </strong>requires a continuation with <strong>Unit</strong>.  To do this, select the desired element from <strong>Fixed unit</strong>, <strong>Focus unit</strong>, <strong>Comparison unit </strong>and <strong>Dataspace Entities</strong>.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013850311570" alt="Continuation 2.png"></p>
+<p>You pick for the cell mapping:</p>
+<p><em>Collection</em> → [<em>Dimension collection</em>] → <em>Item x</em> → <em>Units</em> → [<em>Unit element</em>]</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013838045586" alt="Continuation with Unit.png

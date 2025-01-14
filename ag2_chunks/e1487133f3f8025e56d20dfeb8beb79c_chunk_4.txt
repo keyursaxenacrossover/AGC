@@ -1,0 +1,115 @@
+>
+</li>
+</ul>
+<p> </p>
+<hr>
+<h1 id="header-19">Background</h1>
+<h2 id="header-21">User data synchronization between EFS and Okta</h2>
+<ul>
+<li>
+<p>Users are synced from EFS to Okta database when:</p>
+<ul>
+<li>
+<p>creating, importing and updating users (webservices included)</p>
+</li>
+<li>
+<p>inviting panelists to a guide</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Transferred data: first name, last name, E-mail</p>
+</li>
+</ul>
+<p> </p>
+<h2 id="header-22">IdP session</h2>
+<ul>
+<li>
+<p>Master session (Okta): per default 2h</p>
+</li>
+</ul>
+<ul>
+<li>
+<p>Master session dominates local session (EFS)</p>
+</li>
+<li>
+<p>When Okta session is killed, due to logout from EFS, user is logged out from Okta, but is still logged in EFS until EFS session expires</p>
+</li>
+<li>
+<p>Exception: When user logs out from Portals, both Okta and Portals session are killed immediately and user is logged out from both - <em>to be changed in the next version to be more consistent</em></p>
+</li>
+</ul>
+<p> </p>
+<h2 id="header-23">Others</h2>
+<ul>
+<li>
+<p>Root user (Super Admin) has own (Bypass) route to get access in EFS</p>
+</li>
+<li>
+<p>When Portal user is landing on a public page he won‘t be redirected automatically to Okta login page, in contrast to a private page</p>
+</li>
+<li>
+<p>When deleting Panelist in EFS, he won‘t be deleted automatically in Okta</p>
+</li>
+<li>
+<p>When users access the same installation under different URLs, when redirected to Okta discovery page, they will all be redirected to a general URL after (eg.  <a href="http://iam-demo.qb-feedback.com/">http://iam-demo.qb-feedback.com</a>)</p>
+</li>
+</ul>
+<p> </p>
+<hr>
+<h1 id="header-25">Possible Flows</h1>
+<p>The cases below contain every useful/possible combination apart of every combination regarding sessions.</p>
+<table style="width: 700px;" border="1" data-layout="full-width">
+<colgroup> <col style="width: 63.0px;"> <col style="width: 67.0px;"> <col style="width: 62.0px;"> <col style="width: 67.0px;"> <col style="width: 81.0px;"> <col style="width: 81.0px;"> <col style="width: 117.0px;"> <col style="width: 131.0px;"> <col style="width: 339.0px;"> </colgroup>
+<tbody>
+<tr>
+<th style="width: 53.4688px;">
+<p><strong>Flow name</strong></p>
+</th>
+<th style="width: 62.2969px;">
+<p><strong>ext. IdP</strong></p>
+<p><sup>(is there an external Identity Provider)</sup></p>
+</th>
+<th style="width: 74.875px;">
+<p><strong>IdP ID</strong></p>
+<p><sup>(is the external IdP ID configured)</sup></p>
+</th>
+<th style="width: 55.9531px;">
+<p><strong>email</strong></p>
+<p><sup>(is an email sent with the request)</sup></p>
+</th>
+<th style="width: 62.5469px;">
+<p><strong>session EFS</strong></p>
+<p><sup>(is an EFS session present)</sup></p>
+</th>
+<th style="width: 62.5469px;">
+<p><strong>session Okta</strong></p>
+<p><sup>(is an Okta session present)</sup></p>
+</th>
+<th style="width: 68.8438px;">
+<p><strong>session ext. IdP</strong></p>
+<p><sup>(is a session at the external Identity Provider present)</sup></p>
+</th>
+<th style="width: 71.2188px;">
+<p><strong>email domain routed to IdP</strong></p>
+<p><sup>(is the email domain part of the routing rule to the external IdP)</sup></p>
+</th>
+<th style="width: 160.25px;">
+<p><strong>Steps</strong></p>
+<p><sup>(what the user sees)</sup></p>
+</th>
+</tr>
+<tr>
+<td style="width: 45.4688px;" rowspan="4">
+<p> </p>
+<p><strong>EFS</strong></p>
+<br>
+<p> </p>
+<p> </p>
+<p> </p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; height: 89px; width: 48.2969px;" data-colwidth="67">
+<div class="fabric-editor-block-mark fabric-editor-alignment cc-5inqjd" data-align="center">
+<p data-renderer-start-pos="9698"> </p>
+</div>
+<div class="fabric-editor-block-mark fabric-editor

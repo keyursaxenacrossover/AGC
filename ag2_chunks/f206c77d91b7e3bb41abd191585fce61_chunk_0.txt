@@ -1,0 +1,69 @@
+<p><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p>This article provides comprehensive information about various log files used in the EFS (Enterprise Feedback Suite) system. It covers different types of logs, their contents, storage locations, retention periods, and accessibility.</p>
+<p><strong>This information was marked as INTERNAL by Tivian and is not to be shared with customers (<a href="https://tivian.atlassian.net/browse/TIVI-32111?focusedCommentId=136606">https://tivian.atlassian.net/browse/TIVI-32111?focusedCommentId=136606</a>)</strong></p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>This guide details the different types of log files generated and maintained within the EFS ecosystem, including their purpose, data content, storage details, and retention policies.</p>
+<ul>
+<li><a href="#efs-admin-log">EFS Admin Log</a></li>
+<li><a href="#db-logs">DB Logs</a></li>
+<li><a href="#webserver-access-logs">Webserver Access Logs</a></li>
+<li><a href="#mail-server-logs">Mail Server Logs</a></li>
+<li><a href="#failed-queries">Failed Queries</a></li>
+<li><a href="#error-logs">Error Logs</a></li>
+<li><a href="#other-logs">Other Logs</a></li>
+</ul>
+<h2 id="efs-admin-log">EFS Admin Log</h2>
+<p>The EFS Admin Log is an internal log within EFS that documents all user actions, including navigation, saving, searching, and other activities.</p>
+<ul>
+<li>Contains personal data: Yes</li>
+<li>Customer accessible: Yes (via EFS UI)</li>
+<li>Storage location: EFS database</li>
+<li>Retention period: 90 days (configurable in the UI)</li>
+<li>Included in backups: Yes (database backups retained for 60 days)</li>
+</ul>
+<p>It should be noted that the database is part of the daily backup that is carried out for every EFS  installation in our productive clusters. These backups are kept for a maximum of 60 days. This means that theoretically, you could use the oldest backup (60 days) to access admin entries that were 90 days old at the time the backup was created, and entries that were 150 days old from today.</p>
+<h2 id="db-logs">DB Logs</h2>
+<p>DB Logs contain all queries that were issued in the DB and are stored in AWS in the respective cluster</p>
+<ul>
+<li>Contains personal data: Yes</li>
+<li>Customer accessible: No (visible to TS/ITOPS via <strong>Cloudwatch</strong>)</li>
+<li>Storage location: AWS (in the respective installation cluster)</li>
+<li>Retention period: 30 days</li>
+<li>Included in backups: Unknown (to be clarified with ITOPS)</li>
+</ul>
+<h2 id="webserver-access-logs">Webserver Access Logs</h2>
+<p>These logs contain all web server requests (HTTP methods like GET, POST, HEAD, etc.). They do not include payloads, only the respective endpoints.</p>
+<ul>
+<li>Contains personal data: Yes</li>
+<li>Customer accessible: No (visible to TS/ITOPS via Grafana - Loki/Thanos)</li>
+<li>Storage location: AWS (S3 Bucket in the respective installation cluster)</li>
+<li>Retention period: Unknown (to be clarified with ITOPS)</li>
+<li>Included in backups: Unknown (to be clarified with ITOPS)</li>
+</ul>
+<h2 id="mail-server-logs">Mail Server Logs</h2>
+<p>These logs record the time when an email is forwarded from EFS to our mail server and when it is delivered to the recipient's mail server.</p>
+<ul>
+<li>Contains personal data: Yes</li>
+<li>Customer accessible: No (visible to TS/ITOPS via Service Gateway of Prod-DE-01 as log files)</li>
+<li>Storage location: DATAGROUP (in NFS of Prod-DE-01)</li>
+<li>Retention period: 90 days</li>
+<li>Included in backups: Unknown (to be clarified with ITOPS)</li>
+</ul>
+<p> </p>
+<h2 id="failed-queries">Failed Queries</h2>
+<p>These logs are essentially DB logs, but only for queries that the DB server could not process. They are stored separately by EFS in the respective Elasticsearch instance of an EFS installation.</p>
+<ul>
+<li>Contains personal data: Yes</li>
+<li>Customer accessible: No (visible to TS/ITOPS via Service Gateway of the respective cluster)</li>
+<li>Storage location: AWS (Elasticsearch)</li>
+<li>Retention period: Unknown (to be clarified with DEV)</li>
+<li>Included in backups: Unknown (to be clarified with ITOPS)</li>
+</ul>
+<h2 id="error-logs">Error Logs</h2>
+<p>These logs contain warning and error messages from the application, covering everything that can happen during data processing.</p>
+<ul>
+<li>Contains personal data: Yes</li>
+<li>Customer accessible: No (visible to TS/ITOPS via Grafana - Loki/Thanos)</li>
+<li>Storage location: AWS (S3 Bucket in the respective installation cluster)</li>
+<li>Retention period: Unknown (to be clarified with ITOPS)</li

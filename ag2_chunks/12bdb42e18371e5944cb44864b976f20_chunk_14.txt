@@ -1,0 +1,90 @@
+ (question) with which you want to associate the trigger.</p>
+</li>
+<li>
+<p>Specify the answer value at which the trigger is to be activated.</p>
+</li>
+<li>
+<p>Specify the trigger’s detail properties (select a mail template, etc.)</p>
+</li>
+</ul>
+<h3 id="example-using-a-trigger-for-sending-feedback-mails" class="wysiwyg-text-align-justify">Example: Using a Trigger for Sending Feedback Mails</h3>
+<p class="wysiwyg-text-align-justify">In many questionnaires, it is considered polite to have a final open-ended question at the end of the questionnaire and ask the respondent if they have anything else to say. Especially if you design a survey in the form of a conversation, it is to be expected that not all the thoughts the respondent has developed while answering the questionnaire will be revealed with the help of closed-ended questions. In order to give the respondent the opportunity to round off the conversation from their point of view, they are allowed to enter information. The survey manager has this sent to himself directly in order to have the option of reacting directly to events in the field.</p>
+<p class="wysiwyg-text-align-justify">Below, a mail trigger for a personalized survey is created to trigger the dispatch of such a participant's comment to the survey manager.</p>
+<h3 id="creating-a-mail-trigger" class="wysiwyg-text-align-justify"><strong>Creating a Mail Trigger</strong></h3>
+<p class="wysiwyg-text-align-justify">In the first step, you create the trigger:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>In the<strong> Questionnaire editor</strong>, open the page containing the open-ended question.</p>
+</li>
+<li>
+<p>Click on the <strong>Triggers</strong> menu</p>
+</li>
+<li>
+<p>Click on the <strong>+ Trigger</strong> button.</p>
+</li>
+<li>
+<p>Enter the title of the new trigger.</p>
+</li>
+<li>
+<p>Select the “Mail trigger” trigger type.</p>
+</li>
+<li>
+<p>Confirm with <strong>Create</strong>.</p>
+</li>
+<li>
+<p>The edit dialog for the new trigger opens.</p>
+</li>
+</ul>
+<h3 id="making-basic-settings" class="wysiwyg-text-align-justify">Making Basic Settings</h3>
+<p class="wysiwyg-text-align-justify">On the first tab, settings must be made which are required for all trigger types.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Enter a description.</p>
+</li>
+<li>
+<p>In the “Execution position” field, select the “After submitting page, after filter” option.</p>
+</li>
+<li>
+<p>If you only wish to send the mail when the respondent has actually made a comment, then you must define the corresponding conditions:</p>
+<ul>
+<li>
+<p>Click on the <strong>Edit</strong> link in the “Condition” field.</p>
+</li>
+<li>
+<p>Enter the desired definition in the condition editor. In this example the mail should only be sent out if the text field with the variable name “v_11” is filled in, i.e. not empty. The corresponding condition is: “v_11 greater ”, i.e. you leave the “Code” field empty.</p>
+</li>
+<li>
+<p>Confirm with<strong> Save</strong>.</p>
+</li>
+<li>
+<p>Next, switch back to the mail trigger by clicking on <strong>Back</strong>.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Optionally, you can execute the triggers in the questionnaire preview. For mail triggers, testing in the preview is not really useful. “u_e-mail” or any project variables used are not replaced correctly: they cannot be allocated to a participant account in the preview. Therefore, keep the checkbox deactivated. Instead, create a test participant with an e-mail address to which you have access and use this account to test the questionnaire in productive mode.</p>
+</li>
+<li>
+<p>You may also also optionally execute the trigger multiple times in one survey. This doesn’t make any sense in this example, therefore don’t activate the checkbox.</p>
+</li>
+<li>
+<p><strong>Save</strong> the settings.</p>
+</li>
+</ul>
+<h3 id="configuring-details" class="wysiwyg-text-align-justify">Configuring Details</h3>
+<p class="wysiwyg-text-align-justify"><strong>In the final step configure the mail to be sent.</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Open the <strong>Detail configuration</strong> tab: It contains mail trigger-specific options.</p>
+</li>
+<li>
+<p>Optionally, you can use a mail template of type “Standard mail”, filled according to the instructions below. If you choose this option, select the template first, then upload by clicking <strong>Apply mail template</strong>.</p>
+</li>
+<li>
+<p>As this is a personalized survey, you can select the “u_email” wildcard from the drop-down list in the “mail dynamically from” field. If participants fill in the comment field, the wildcard will be replaced with the e-mail address that was saved for them in participant administration.</p>
+</li>
+<li>
+<p>Enter the survey manager as the mail recipient.</p>
+</li>
+<li>
+<p>In the “Subject” field, enter the title “Employee survey

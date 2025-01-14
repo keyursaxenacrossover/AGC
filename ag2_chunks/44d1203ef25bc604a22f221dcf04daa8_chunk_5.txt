@@ -1,0 +1,121 @@
+>
+<div class="fabric-editor-block-mark sc-ixltIz dsUKKC wysiwyg-text-align-justify">
+<h3 id="overview-of-available-data-areas"><strong>Overview of available data areas</strong></h3>
+</div>
+<p class="wysiwyg-text-align-justify">Depending on the survey type, the number and composition of the available data areas vary, from which you take the data to be transmitted to <em>Tableau</em>. Below is a list of the survey types supported by <em>MySight</em> and the data depended on the choice of the survey types.</p>
+<div class="wysiwyg-text-align-justify">
+<div>
+<p><strong>Anonymous survey</strong></p>
+<ul class="ak-ul">
+<li>
+<p>Questions</p>
+</li>
+<li>
+<p>Survey data</p>
+</li>
+<li>
+<p>Field report</p>
+</li>
+</ul>
+<p><strong>Master data survey</strong></p>
+<ul class="ak-ul">
+<li>
+<p>Survey data</p>
+</li>
+<li>
+<p>Participant data</p>
+</li>
+<li>
+<p>Field report</p>
+</li>
+</ul>
+</div>
+<div>
+<p><strong>Panel survey</strong></p>
+<ul class="ak-ul">
+<li>
+<p>Questions</p>
+</li>
+<li>
+<p>Survey data</p>
+</li>
+<li>
+<p>Field report</p>
+</li>
+</ul>
+<p><strong>Personalized survey</strong></p>
+<ul class="ak-ul">
+<li>
+<p>Questions</p>
+</li>
+<li>
+<p>Survey data</p>
+</li>
+<li>
+<p>Participant data</p>
+</li>
+<li>
+<p>Field report</p>
+</li>
+</ul>
+</div>
+<div>
+<p><strong>Employee survey</strong></p>
+<ul class="ak-ul">
+<li>
+<p>Questions</p>
+</li>
+<li>
+<p>Survey data</p>
+</li>
+<li>
+<p>Participant data</p>
+</li>
+<li>
+<p>Organizational structure</p>
+</li>
+<li>
+<p>Field report</p>
+</li>
+<li>
+<p>Action planner</p>
+</li>
+</ul>
+<div class="ak-editor-panel">
+<div class="ak-editor-panel__content">
+<p class="auto-cursor-target"> </p>
+InformationThe data area <strong>Action planner</strong> is available to you if the <a class="sc-gtXRHa hxKVnd" href="https://qbdocs.atlassian.net/wiki/spaces/DOC/pages/6455493/Overview+of+available+data+areas"><em><u>Action Planner</u></em></a> has been activated for the employee survey.
+<p class="auto-cursor-target"> </p>
+</div>
+</div>
+<div class="fabric-editor-block-mark sc-ixltIz dsUKKC">
+<h3 id="provision-of-the-text-dimension-variables-for-mysight-in-efs"><strong>Provision of the Text Dimension Variables for MySight in EFS</strong></h3>
+</div>
+<p>You can use the menu item <em>MySight</em> <strong>Settings</strong> in EFS to provide text variables of the EFS project and a panel group in <em>MySight</em>. These variables can then be formatted as <strong>dimensions</strong>.</p>
+<p>You access it using the following path:</p>
+<p><strong>System → Options → MySight settings → Text-Dimensions</strong></p>
+<p><strong><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015311988242" alt="mysight_systemeinstellungen_EN.png"></strong></p>
+<p>First, you select an EFS project. Then follow the variables.</p>
+<ul class="ak-ul">
+<li>
+<p>Under the heading "Project" you click on the <strong>+</strong> button.</p>
+</li>
+<li>
+<p>Using the modal displayed after the click, you open a drop-down list of the EFS projects.</p>
+</li>
+<li>
+<p>After selecting a project, add the text variables by clicking on the<strong> +</strong> under "Variables".</p>
+</li>
+<li>
+<p>In the case of text variables for a panel group, proceed in the same way. Under "Panel" you click on the <strong>+</strong>. The open modal has a drop-down list, which contains the text variables.</p>
+</li>
+</ul>
+<p> </p>
+<div class="fabric-editor-block-mark sc-ixltIz dsUKKC">
+<h3 id="recoding-of-the-text-strings"><strong>Recoding of the Text Strings</strong></h3>
+</div>
+<p>In the case of text strings, you can recode the format<strong> fact</strong> or <strong>dimension</strong> as integer, float, or datetime.</p>
+<p><strong>Fact</strong></p>
+<p>The option to convert the format <strong>fact</strong> as integer, float, or datetime allows you to use the converted value after the project has been published in <em>Tableau</em>. You can find it there in the corresponding columns, that is in INT_VALUE, FLOAT_VALUE or DATE_VALUE.</p>
+<p><strong>Dimension</strong></p>
+<p>For the format <strong>dimension</strong>, however, if you want to convert it as integer

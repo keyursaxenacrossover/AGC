@@ -1,0 +1,89 @@
+<p class="wysiwyg-text-align-justify">The table provides a detailed list of all the properties a file can have.</p>
+<table class="relative-table wrapped wysiwyg-text-align-justify" style="width: 108.902%; height: 939px;" border="1">
+<colgroup> <col style="width: 20.1483%;"> </colgroup> <colgroup> <col style="width: 79.8432%;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center">Field</th>
+<th class="wysiwyg-text-align-center">Meaning</th>
+</tr>
+<tr>
+<td>Website / Language version</td>
+<td>
+<p>Website and language version to which the file belongs. Cannot be changed subsequently.</p>
+</td>
+</tr>
+<tr>
+<td>Section title</td>
+<td>
+<p>Name of the section. This is displayed both in the admin area and on the panel page.</p>
+</td>
+</tr>
+<tr>
+<td>Title</td>
+<td>Title of the download. Cannot be changed subsequently.</td>
+</tr>
+<tr>
+<td>Contributed by</td>
+<td>
+<p>The panelist or moderator who uploaded the file.</p>
+<p>When creating a file via the admin area, you can choose the author: Panelists with the panel status “moderator” or “tester” are available in a drop-down list.</p>
+<p>In the standard panel, the files of these panelists are labeled as moderator posts. The label “mod” is inserted via the wildcard “board_moderator_label”. It can be changed in the <strong>Wildcards</strong> menu.</p>
+<p>The author cannot be changed subsequently.</p>
+</td>
+</tr>
+<tr>
+<td>Release Status</td>
+<td>
+<p>The following release statuses can be assigned:</p>
+<p>not checked: With the publishing mode set to “Publish immediately”, these files are always displayed. With the publishing mode set to “Publish after approval”, they are displayed only to the author himself and to the moderator in the admin area until a moderator changes the release status to “approved”.</p>
+<p>approved: These files are always displayed.</p>
+<p>blocked: These files are never displayed.</p>
+</td>
+</tr>
+<tr>
+<td>Title</td>
+<td>
+<p>Title of the file.</p>
+<p>Required field.</p>
+</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>
+<p>Description of the contents.</p>
+<p>Required field.</p>
+</td>
+</tr>
+<tr>
+<td>Existing file</td>
+<td>The file name and size.</td>
+</tr>
+<tr>
+<td>Displayed date of creation</td>
+<td>
+<p>The date is displayed in the list of files both in the admin area and on the panel page. Mandatory entry.</p>
+<p>By default, the current date is set when uploading a new file. You can specify another date from the admin area, though.</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: left;">Upload file</td>
+<td style="text-align: center;">
+<p>This function allows you to subsequently replace existing files with other files from the admin area. The maximum technically possible value for admins is installation-specifc; in case of doubt, please check with Support.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="integrating-a-download-section-into-the-website" class="wysiwyg-text-align-justify"><strong>Integrating a Download Section into the Website</strong></h2>
+<p class="wysiwyg-text-align-justify">If you want to set up a download list, please proceed as follows:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>On the desired page, create a page module of the “Downloads” type.</li>
+<li>Configure the setting options as required. Table 19.11 provides an overview.<br>– Select the “func_download” module template.<br>– Make sure that the appropriate download section is selected.</li>
+</ol>
+<p class="wysiwyg-text-align-justify"> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863" class="wysiwyg-text-align-justify">FAQ</h1>
+<h3 id="h_01HGKSMPRSQX3YJGQX3YJGQX3Y" class="wysiwyg-text-align-justify">How do I control access to community features?</h3>
+<p class="wysiwyg-text-align-justify">Each community feature (blogs, forums, discussions, chats, and downloads) has access control options. You can set access to the public, all logged-in panelists, or specific panel groups only.</p>
+<h3 id="h_01HGKSMPRSYJGQX3YJGQX3YJGQ" class="wysiwyg-text-align-justify">Can I moderate content before it's published?</h3>
+<p class="wysiwyg-text-align-justify">Yes, you can set the publishing mode to "Publish after approval" for each feature. This allows you to review and approve content before it becomes visible to other panelists.</p>
+<h3 id="01J419HE0AY3QE6QTKZXMVEZFF" class="wysiwyg-text-align-justify">How can I encourage participation in community features?</h3>
+<p class="wysiwyg-text-align-justify">You can set up bonus points for participation

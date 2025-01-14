@@ -1,0 +1,32 @@
+gpVOFpDZPQBFzNaLNW04T3TQxXPnL4pSMuyckgZYaRwLM6dwUUB1rE5RBdPpycV1Hhe1CBE7Z0W4GcZl1cw9WTneMlB4jni2XnlvsAwvAzDylvJpZ9c66jFgdCcvhJYfyWPv9_8v_9whjwOyTR8aXXNESDGRO0fvgUFnHDidV0ijfHGK4xaxTAOUSkGEKNqtXv0MTfIWL90GqLNm6NsTd-wpB0m2IGj82a2cgJIuLBtbzBTn6EdK8bopUSMBSCA9TrY3g6YzI5fWO_cP9BuxCNRcooNs0_ihUgdkw"
+}</code></pre><p></p><p>The parsed ID Token looked like the following:</p><pre><code class="language-json">{
+  "aud": "735b77b3-0297-4d2e-9de5-a98591aa4dd8",
+  "iss": "https://sts.windows.net/ce28fcc1-a19e-477b-8194-0b272d1e6bb2/",
+  "iat": 1583928297,
+  "nbf": 1583928297,
+  "exp": 1583932197,
+  "amr": [
+    "pwd"
+  ],
+  "family_name": "Wette",
+  "given_name": "Michael",
+  "ipaddr": "37.201.194.222",
+  "name": "Michael Wette",
+  "oid": "26564bd0-b086-45da-99bc-0bd74535a4c6",
+  "sub": "Saw6nyzc-HmYUA_i3bv9WrMWiSt-HnHJ1IblLkLbhrA",
+  "tid": "ce28fcc1-a19e-477b-8194-0b272d1e6bb2",
+  "unique_name": "qbtest@intervista.ch",
+  "upn": "qbtest@intervista.ch",
+  "uti": "JfrPaC3DSkmhxbSpGpwpAA",
+  "ver": "1.0"
+}</code></pre><p></p><p>Here we can see that email (upn), first name (family_name) and last name (given_name) at least exist. So they can be used.</p><p></p><h2 id="header-5">Result:</h2><p>A client has to adapt the endpoints so that they give information about first name, last name and email. This information has to be part of the ID Token or at least the userinfo endpoint (in that case the userinfo endpoint has to be configured).</p><p></p><p></p>_name": "Michael",
+  "ipaddr": "37.201.194.222",
+  "name": "Michael Wette",
+  "oid": "26564bd0-b086-45da-99bc-0bd74535a4c6",
+  "sub": "Saw6nyzc-HmYUA_i3bv9WrMWiSt-HnHJ1IblLkLbhrA",
+  "tid": "ce28fcc1-a19e-477b-8194-0b272d1e6bb2",
+  "unique_name": "qbtest@intervista.ch",
+  "upn": "qbtest@intervista.ch",
+  "uti": "JfrPaC3DSkmhxbSpGpwpAA",
+  "ver": "1.0"
+}</code></pre><p></p><p>Here we can see that email (upn), first name (family_name) and last name (given_name) at least exist. So they can be used.</p><p></p><h2 id="header-5">Result:</h2><p>A client has to adapt the endpoints so that they give information about first name, last name and email. This information has to be part of the ID Token or at least the userinfo endpoint (in that case the userinfo endpoint has to be configured).</p><p></p><p></p>

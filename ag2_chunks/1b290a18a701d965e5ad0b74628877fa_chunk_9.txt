@@ -1,0 +1,45 @@
+(--ds-space-100, 8px); text-align: left; vertical-align: top; width: 628.672px;" colspan="1" rowspan="1" data-colwidth="939">
+<p data-renderer-start-pos="5109"> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="faq">FAQ</h2>
+<h3 id="retries">Retries</h3>
+<ul>
+<li>If Hurricane got a soft bounce from the receiving mail server, it will try to resend the mail after 2 hours and then again after 2 hours and so on up to 48 hours.</li>
+<li>If the mail can not be sent after all these retries, the Hurricane sends a corresponding message to RabbitMQ that then will be shown in the mail report of EFS.</li>
+</ul>
+<h3 id="mail-sending-dates-don-t-match-mailreport-export-and-participant-administration">Mail sending dates don't match (mailreport, export and participant administration)</h3>
+<h4 id="h_01J3Z75ZT2C17FSSW6VJT806JP">Participant detail view</h4>
+<ul>
+<li>The date and time of a mail id shown in the detail view of a participant (personalized survey) belongs to the status next to it (e.g. queued, sending, sent, rejected, etc.) and indicates when this status was set (also means last status change).</li>
+<li>So everytime the status changes e.g. from "queued" to "sending" or from "sending" to "sent", the date and time is updated.</li>
+<li>The time shown here also matches the time that is shown for this participant in the details of the mail ID.</li>
+<li>The status changes from "queued" to "sending" when EFS transfers the mails from the EFS mail queue to the Questback mail server.</li>
+<li>The Hurricane mail server sends out the mails and receives SMTP status codes from the receiving mail server. </li>
+<li>These status codes/messages are sent to the RabbitMQ server.</li>
+<li>Every jobmaker interval (basically every 10 minutes) EFS gets the existing messages for the installation from the RabbitMQ server and thus updates the statuses in the mail ID and also for the participant in participant administration.</li>
+<li>Then also the date and time shown next to the status in the mail ID and participant administration is changed and indicates when this status changed.</li>
+</ul>
+<h4 id="h_01J3Z766JS89XRXT0Y6PEX8DTJ">Export</h4>
+<ul>
+<li>The date and time shown in the export correspond to "date_of_first_mail" in table "sample_data".</li>
+<li>This date and time is set once when EFS transfers the mail from the EFS mail queue to the Questback mail server (from where the mail will be sent actually).</li>
+<li>This date is not updated if the status changes (e.g. from "queued" to "sending" or from "sending" to "sent).</li>
+</ul>
+<p><strong>So the date and time shown next to the status in the mail ID and participant administration can differ from the "date_of_first_mail" shown in the export.</strong></p>
+<p> </p>>
+<li>The Hurricane mail server sends out the mails and receives SMTP status codes from the receiving mail server. </li>
+<li>These status codes/messages are sent to the RabbitMQ server.</li>
+<li>Every jobmaker interval (basically every 10 minutes) EFS gets the existing messages for the installation from the RabbitMQ server and thus updates the statuses in the mail ID and also for the participant in participant administration.</li>
+<li>Then also the date and time shown next to the status in the mail ID and participant administration is changed and indicates when this status changed.</li>
+</ul>
+<h4 id="h_01J3Z766JS89XRXT0Y6PEX8DTJ">Export</h4>
+<ul>
+<li>The date and time shown in the export correspond to "date_of_first_mail" in table "sample_data".</li>
+<li>This date and time is set once when EFS transfers the mail from the EFS mail queue to the Questback mail server (from where the mail will be sent actually).</li>
+<li>This date is not updated if the status changes (e.g. from "queued" to "sending" or from "sending" to "sent).</li>
+</ul>
+<p><strong>So the date and time shown next to the status in the mail ID and participant administration can differ from the "date_of_first_mail" shown in the export.</strong></p>
+<p> </p>

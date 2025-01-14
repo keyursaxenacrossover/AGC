@@ -1,0 +1,76 @@
+<li>The selected focus person’s feedback provider overview is opened. At this stage, it contains only the focus person in the "self-assessment" role.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015069101714">
+</li>
+<li>Click on Add feedback provider.</li>
+<li>Enter the master data. If the feedback provider is already registered in the system (e.g., from participant pool data), use the magnifying glass to find them and click Add participants to insert the data.</li>
+<li>Optionally, specify process data for the current feedback.</li>
+<li>Confirm with Add participant. The feedback provider is created and displayed in the overview.</li>
+<li>Repeat the process for all feedback providers of the current feedback constellation.</li>
+</ol>
+<h2 id="h_01HGKSMPRV8YBGX9YJHWQX0QXJ">Defining Feedback Constellations By Import</h2>
+<div class="flex-shrink-0 flex flex-col relative items-end">
+<div>
+<div class="pt-0">
+<div class="gizmo-bot-avatar flex h-8 w-8 items-center justify-center overflow-hidden rounded-full">
+<div class="relative p-1 rounded-sm flex items-center justify-center bg-token-main-surface-primary text-token-text-primary h-8 w-8">Usually, you will not create individual participants manually but rather import a list of participants.</div>
+</div>
+</div>
+</div>
+</div>
+<div class="group/conversation-turn relative flex w-full min-w-0 flex-col agent-turn">
+<div class="flex-col gap-1 md:gap-3">
+<div class="flex flex-grow flex-col max-w-full">
+<div class="min-h-[20px] text-message flex w-full flex-col items-end gap-2 whitespace-pre-wrap break-words [.text-message+&amp;]:mt-5 overflow-x-auto" dir="auto" data-message-author-role="assistant" data-message-id="cfc25555-b52d-4cbf-ab91-416d7e2e49fe">
+<div class="flex w-full flex-col gap-1 empty:hidden first:pt-[3px]">
+<div class="markdown prose w-full break-words dark:prose-invert light">
+<p><strong>Before you start:</strong></p>
+<ul>
+<li>Ensure all required participant variables are created as per Chapter “Editing Master Data and Process Data”.</li>
+<li>Only the first sheet of the Excel file will be processed, with a maximum of 256 columns and 65,000 rows. For more, use CSV format.</li>
+<li>Excel import is possible only for files created or saved using Excel 97+. Files from “Excel for Mac”, “Neo Office”, or “Numbers” cannot be imported.</li>
+<li>XLSX format is not supported. Save files as XLS before importing.</li>
+</ul>
+<p><strong>Creating the Participant List</strong></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p data-renderer-start-pos="15731">Create an Excel list of feedback including all involved persons and their roles. Use the import template from the import dialog. Ensure the content is formatted as follows:</p>
+<ul class="ak-ul" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="15975">We recommend entering the respective column labels in the first row.</p>
+</li>
+<li>
+<p data-renderer-start-pos="16047">Below, for each individual feedback constellation, list the respective participants and their attributes.</p>
+</li>
+</ul>
+<div class="ak-editor-panel cc-tqp4ke" data-panel-type="info">
+<div class="ak-editor-panel__icon"><em>The same person may appear in a single feedback in several roles or multiple times in various feedback. The allocation is handled via the attributes “link ID” (u_link_id) and “role” (u_role).</em></div>
+</div>
+<ul class="ak-ul" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="16355">Link ID, role, personnel number and e-mail address are compulsory:</p>
+<ul class="ak-ul" data-indent-level="2">
+<li>
+<p data-renderer-start-pos="16425">Link ID (u_link_id): This is an unambiguous identifier of the individual feedback. The feedback can be numbered consecutively, for example, or the personnel number of the focus person can be used to identify the feedback.</p>
+</li>
+<li>
+<p data-renderer-start-pos="16651">Role (u_role): See Chapter 3.3, p. 19.</p>
+</li>
+<li>
+<p data-renderer-start-pos="16693">Personnel number (u_account): Unambiguous identifier of the participant. Is stored in the column "u_account".</p>
+</li>
+<li>
+<p data-renderer-start-pos="16806">E-Mail-Adresse (u_email): Needed for inviting the participants.</p>
+</li>
+</ul>
+</li>
+<li>
+<p data-renderer-start-pos="16875">Furthermore, you can enter title, first name, name, organizational unit, gender, initial password, language version, and user-defined master and process data.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015069099538"></p>
+</li>
+</ul>
+<p>Save the file in XLS or CSV.</p>
+<div class="ak-editor-panel cc-tqp4ke" data-panel-type="info">
+<div class="ak-editor-panel__content">
+<p data-renderer-start-pos="17070"> </p>

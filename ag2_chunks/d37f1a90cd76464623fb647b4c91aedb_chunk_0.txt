@@ -1,0 +1,142 @@
+<h1 id="h_01J5ZXH782K5M4S5CGCQVC3Y57">Table of Contents</h1>
+<ul>
+<li>
+<a href="#header-1">Variables:</a>
+<ul>
+<li><a href="#header-3">Naming per resource</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="header-1">Variables</h1>
+<table style="border-collapse: collapse; width: 100%;" border="1">
+<thead>
+<tr>
+<td style="width: 33.3333%;"><strong>Description</strong></td>
+<td style="width: 18.9047%;"><strong>Variable</strong></td>
+<td style="width: 47.7619%;"><strong>Notes</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="width: 33.3333%;">Customers Unique Identifier</td>
+<td style="width: 18.9047%;">&lt;cuid&gt;</td>
+<td style="width: 47.7619%;">Allowed characters: [a-zA-Z0-9-:_.]{1,30}</td>
+</tr>
+<tr>
+<td style="width: 33.3333%;">Installation Identifier</td>
+<td style="width: 18.9047%;">&lt;installationidentifier&gt;</td>
+<td style="width: 47.7619%;">Allowed characters: [a-z0-9]{32}</td>
+</tr>
+<tr>
+<td style="width: 33.3333%;">Application name</td>
+<td style="width: 18.9047%;">&lt;apptype&gt;</td>
+<td style="width: 47.7619%;">
+<ul>
+<li>
+<p>EFS</p>
+</li>
+<li>
+<p>Portals</p>
+</li>
+<li>
+<p>ESS</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="width: 33.3333%;">App ID</td>
+<td style="width: 18.9047%;">&lt;appid&gt;</td>
+<td style="width: 47.7619%;">Allowed characters: [0-9]{28}</td>
+</tr>
+<tr>
+<td style="width: 33.3333%;">Name of a specific app instance</td>
+<td style="width: 18.9047%;">&lt;appname&gt;</td>
+<td style="width: 47.7619%;"> </td>
+</tr>
+<tr>
+<td style="width: 33.3333%;">Identity Provider Type</td>
+<td style="width: 18.9047%;">&lt;idp-type&gt;</td>
+<td style="width: 47.7619%;">
+<p>Azure AD</p>
+<p>Okta</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The purpose of an entity should be “default” in case this is a rule that applies to everything. If a specific entity group is targeted for a specific use case there should be a more detailed description of the purpose that gives a useful hint to others.</p>
+<h2 id="header-3">Naming per resource</h2>
+<table border="1" data-layout="default">
+<tbody>
+<tr>
+<th>
+<p><strong>Resource</strong></p>
+</th>
+<th>
+<p><strong>Naming convention</strong></p>
+</th>
+<th>
+<p><strong>Description</strong></p>
+</th>
+<th>
+<p><strong>Example</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Application</p>
+</td>
+<td>
+<p>&lt;cuid&gt; &lt;installationidentifier&gt; &lt;apptype&gt; [&lt;appid&gt;]</p>
+</td>
+<td>
+<p>For application: max length of characters for label should not be higher then 100</p>
+<p><a href="https://developer.okta.com/docs/reference/api/apps/#application-properties">https://developer.okta.com/docs/reference/api/apps/#application-properties</a></p>
+</td>
+<td>
+<p>coca-cola 7cd3f47266125d7f300cc30bf40aea60 EFS</p>
+<p>coca-cola 7cd3f47266125d7f300cc30bf40aea60 Portals 341</p>
+<p>coca-cola 7cd3f47266125d7f300cc30bf40aea60 ESS</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Group</p>
+</td>
+<td>
+<p>&lt;cuid&gt;</p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p>coca-cola</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Application/Installation group</p>
+</td>
+<td>
+<p>&lt;cuid&gt; &lt;application/installation-domain&gt;</p>
+</td>
+<td>
+<p>This groups scopes a set of users to a specific application. This group of users is able to use the app and the app is only scoped to this group.</p>
+<p>This has to be created due to performance reasons.</p>
+</td>
+<td>
+<p>coca-cola coca-cocal.customervoice360.com</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Group with specific purpose</p>
+</td>
+<td>
+<p>&lt;cuid&gt; purpose</p>
+</td>
+<td>
+<p>Purpose could be something like “Admins”, “Strong PW”</p>
+<p>keep it short and readable for others</p>
+</td>
+<td>

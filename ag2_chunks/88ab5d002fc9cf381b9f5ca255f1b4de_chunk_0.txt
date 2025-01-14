@@ -1,0 +1,62 @@
+<h1 id="h_01J9H3C3BND7JAB5AK2M4725JD">Overview</h1>
+<p>This is an optional shorthand to access servers in DXI backend using SSH.</p>
+<h1 id="h_01J9H3C3BN9VYQC315Z4D22FP3">Solution</h1>
+<ol>
+<li>Create a file named 'Config' in the following directory: C:\Users\YourUsername\.ssh (~\.ssh)</li>
+<li>Update the file with the following configuration:</li>
+</ol>
+<pre># -------------------------------------------------------------------------------------------------
+# DATAGROUP Servicegateway over AWS Cloud
+#
+Host aws2datagroup #this one is used to access Hurricane onprem server
+  HostName servicegw.bre.globalpark.com
+  ProxyJump servicegw.prod-de-03.customervoice360.com
+  User trilogy
+  Port 22
+  #IdentityFile ~/.ssh/com.globalpark.bre.servicegw
+  IdentityFile C:\Users\YourUsername\.ssh\yourIdentityFile #<strong>REPLACE_THIS_VALUE</strong>
+  PubkeyAcceptedKeyTypes=+ssh-rsa
+  HostKeyAlgorithms=+ssh-rsa
+  IdentitiesOnly yes
+
+Host servicegw.prod-de-03.customervoice360.com servicegw.prod-de-03 #sample for prod-de-03, you can add the same for other data centers
+  HostName servicegw.prod-de-03.customervoice360.com
+  User YourUsername #<strong>REPLACE_THIS_VALUE</strong>, ex: raymond.guirguis
+  Port 65222
+  #IdentityFile ~/.ssh/com.questback.dev-qa/global-services-gw
+  IdentityFile C:\Users\YourUsername\.ssh\yourIdentityFile #<strong>REPLACE_THIS_VALUE</strong>
+  IdentitiesOnly yes</pre>
+<p>Then to access the server through SSH, you can simply use:</p>
+<ul>
+<li>To access Gateway: <code>ssh servicegw.prod-de-03</code>
+</li>
+<li>To access Hurricane server: <code>ssh aws2datagroup</code>
+</li>
+</ul>
+<h1 id="h_01J9H3C3BNYV0SPM4833SB1EQB">Summary</h1>
+<p>By following these steps, you can easily set up your SSH config file for quick access to Service Gateways for DXI on a Windows machine. Remember to replace 'YourUsername' with your actual username in the provided configuration.</p>
+<h2 id="h_01J9H3C3BNT6WXTP2BRVS2ES75">FAQ</h2>
+<ol>
+<li>
+<strong>What does 'IdentityFile' refer to in the configuration?</strong><br>It refers to the path where your private key is stored. Replace the value with the path to your private key.</li>
+<li>
+<strong>What if I'm not using a Windows machine?</strong><br>This guide was tested on a Windows machines. The process may slightly vary for other operating systems.</li>
+</ol>-gw
+  IdentityFile C:\Users\YourUsername\.ssh\yourIdentityFile #<strong>REPLACE_THIS_VALUE</strong>
+  IdentitiesOnly yes</pre>
+<p>Then to access the server through SSH, you can simply use:</p>
+<ul>
+<li>To access Gateway: <code>ssh servicegw.prod-de-03</code>
+</li>
+<li>To access Hurricane server: <code>ssh aws2datagroup</code>
+</li>
+</ul>
+<h1 id="h_01J9H3C3BNYV0SPM4833SB1EQB">Summary</h1>
+<p>By following these steps, you can easily set up your SSH config file for quick access to Service Gateways for DXI on a Windows machine. Remember to replace 'YourUsername' with your actual username in the provided configuration.</p>
+<h2 id="h_01J9H3C3BNT6WXTP2BRVS2ES75">FAQ</h2>
+<ol>
+<li>
+<strong>What does 'IdentityFile' refer to in the configuration?</strong><br>It refers to the path where your private key is stored. Replace the value with the path to your private key.</li>
+<li>
+<strong>What if I'm not using a Windows machine?</strong><br>This guide was tested on a Windows machines. The process may slightly vary for other operating systems.</li>
+</ol>

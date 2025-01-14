@@ -1,0 +1,48 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1055031476">https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1055031476</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">General information</a></li>
+<ul>
+<li><a href="#header-3">Activation</a></li>
+<ul>
+<li><a href="#header-5">Config Flags:</a></li>
+<li><a href="#header-6">Panel modules:</a></li>
+</ul>
+<li><a href="#header-8">Support</a></li>
+<ul>
+<li><a href="#header-10">How to check wether an index exists in elastic search:</a></li>
+<li><a href="#header-11">How to create an index or how to reset it:</a></li>
+<li><a href="#header-12">How to check wether a data set exists in elastic search:</a></li>
+<li><a href="#header-13">How to delete an index from elastic search:</a></li>
+<li><a href="#header-14">How to get the amount read requests per Elastic Search index (installation)</a></li>
+</ul>
+</ul>
+<li><a href="#header-17">Elastic Search in Cloud</a></li>
+<ul>
+<li><a href="#header-19">Good-to-know curls</a></li>
+<ul>
+<li><a href="#header-21">Check Cluster Health</a></li>
+<li><a href="#header-22">Ensure Enough Disk Space</a></li>
+<li><a href="#header-23">Check Node Availability</a></li>
+<li><a href="#header-24">Summary of all shards for an index</a></li>
+</ul>
+<li><a href="#header-26">Handling Translog Corruption in Elasticsearch</a></li>
+</ul>
+</ul>
+</ul><h1 id="header-1">General information</h1><h2 id="header-3">Activation</h2><p> Elastic Search is available since EFS 10.6 but inactive by default. First since EFS 10.7 it is active by default.</p><h3 id="header-5">Config Flags:</h3><p> Bremen:</p><ul>
+<li><p><strong>elasticsearch_configuration (Standard:JA)</strong> <em><strong>__________________________</strong></em>: array ( 'connections' =&gt; array ( 0 =&gt; array ( 'host' =&gt; 'elasticsearch', 'port' =&gt; 9200, ), ), )</p></li>
+<li><p><strong>elasticsearch_enabled (Standard:JA)</strong> <em><strong>__________________________</strong></em>: true</p></li>
+</ul><p>Testkanal:</p><ul>
+<li><p><strong>elasticsearch_configuration (Standard:NEIN)</strong> <em><strong>__________________________</strong></em>: array ( 'connections' =&gt; array ( 0 =&gt; array ( 'host' =&gt; 'tka055', 'port' =&gt; 9200, ), ), )</p></li>
+<li><p><strong>elasticsearch_enabled (Standard:JA)</strong> <em><strong>__________________________</strong></em>: true</p></li>
+</ul><p>Procus3:</p><ul>
+<li><p><strong>elasticsearch_configuration (Standard:NEIN)</strong> <em><strong>__________________________</strong></em>: array ( 'connections' =&gt; array ( 0 =&gt; array ( 'host' =&gt; '<a href="http://elasticsearch.bre.globalpark.com">elasticsearch.bre.globalpark.com</a>', 'port' =&gt; 9200, ), ), )</p></li>
+<li><p><strong>elasticsearch_enabled (Standard:JA)</strong> <em><strong>__________________________</strong></em>: true</p></li>
+</ul><p>Rackspace:</p><ul>
+<li><p><strong>elasticsearch_configuration (Standard:NEIN)</strong> <em><strong>__________________________</strong></em>: array ( 'connections' =&gt; array ( 0 =&gt; array ( 'host' =&gt; 'elasticsearch', 'port' =&gt; 9200, ), ), 'retryOnConflict' =&gt; 5, )</p></li>
+<li><p><strong>elasticsearch_enabled (Standard:JA)</strong> <em><strong>__________________________</strong></em>: true</p></li>
+</ul><h3 id="header-6">Panel modules:</h3><p> New content handler "activity stream" and "panel search" are based on elastic search. Activities are stored in type "panel_activities".</p><h2 id="header-8">Support</h2><h3 id="header-10">How to check wether an index exists in elastic search:</h3><ul><li>
+<p>Via the console:</p>
+<ul><li><pre><code class="language-text">curl -XGET 'http://elasticsearch.{{TECHNICALNAME}}.svc.cluster.local:9200/_cat/indices?v'</code></pre></

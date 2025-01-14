@@ -1,0 +1,37 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1321893891">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1321893891</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">Independence</a></li>
+<ul>
+<li><a href="#header-3">Easy to Setup</a></li>
+<li><a href="#header-4">Incorporate First Feedback</a></li>
+<li><a href="#header-5">Integrate Tivian Tenant and Tivian Application concept</a></li>
+<li><a href="#header-6">Cleanup</a></li>
+<li><a href="#header-7">Integrate Data Voyager</a></li>
+<li><a href="#header-8">Continuous Deployment/Delivery for the product</a></li>
+</ul>
+</ul>
+</ul><p><strong><u>Minimum Maintainable Product</u></strong></p><p>The main purpose of that milestone is to cleanup previous short cut debt and to enhance maintainability and thus <strong><span style="color: rgb(54,179,126);">reduce cost</span></strong> and <strong><span style="color: rgb(54,179,126);">increase quality</span></strong> of the product. This milestone is neccessary due to the forced short cuts that the team had to take while implementing the first version.</p><p></p><p><strong>Goals:</strong></p><h1 id="header-1">Independence</h1><ul>
+<li><p>Get more indepentend from Okta to prevent a vendor lockin and to in a more flexible way with Okta APIs</p></li>
+<li><p>Make integrated products independent from Okta specific APIs to react to changes more quickly</p></li>
+<li><p>Move Okta specific logic away from Tivian products to create leaner products that take care of their business and do not have to take care of other products business - enhance EFS development</p></li>
+</ul><p></p><h2 id="header-3">Easy to Setup</h2><ul>
+<li><p>Reduce amount of mistakes that could arise when configuring Tivian Access to increase the perceived quality of the product</p></li>
+<li><p>Reduce amount of time and other effort to setup and configure Tivian Access for the respective integrated products</p></li>
+<li><p>Keep expert and domain knowledge in the expert team instead of spreading it to domain unrelated teams - streamline rollout processes and strengthen domain knowledge</p></li>
+</ul><p></p><h2 id="header-4">Incorporate First Feedback</h2><ul><li><p>Enhance the quality of the product by implementing the feedback we get from clients using the first version of the product</p></li></ul><p></p><h2 id="header-5">Integrate Tivian Tenant and Tivian Application concept</h2><ul>
+<li><p>Give Tivian an overview of the tenants using that product and the applications that are integrated with Tivian Access - improve business decisions and increase quality of the rollout process</p></li>
+<li><p>First step to more automation and self-service in setting up Tivian products</p></li>
+</ul><p></p><h2 id="header-6">Cleanup</h2><ul>
+<li><p>see current Jira board</p></li>
+<li><p>Cleanup technical debt that was built up during the first phase of the product to reduce errors and increase quality</p></li>
+<li><p>Also cleanup inconsistencies in the user flow to get a more streamlined process for the user and thus increase the quality of the product further</p></li>
+</ul><p></p><h2 id="header-7">Integrate Data Voyager</h2><ul>
+<li><p>Data Voyager should be added to the list of products that can be integrated with Tivian Access to increase the capabilities of Tivian Access to represent the Tivian products world</p></li>
+<li><p>Create a more streamlined process for tenants that already use Tivian Access and want to use Data Voyager in future - increase upsell potential</p></li>
+</ul><p></p><h2 id="header-8">Continuous Deployment/Delivery for the product</h2><ul>
+<li><p>Currently the product is not leveraging the advantages of CI/CD because most of the logic is integrated in the respective products - CI/CD could lead to faster adapting to changes - especially regarding Okta - to get rid of the very strict release cycles that are coupled between technology and marketing</p></li>
+<li><p>CI/CD could only be implemented for the parts of the products that are not the integrated Tivian products like EFS/Portals/Data Voyager</p></li>
+</ul><p></p><p></p>

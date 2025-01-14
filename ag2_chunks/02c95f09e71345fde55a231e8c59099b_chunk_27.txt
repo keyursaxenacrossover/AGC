@@ -1,0 +1,60 @@
+ a project with quotas when an intermediate final page has been reached. The survey administrator can use these codes to mark respondents as rejected (i.e. screened out by quota; there are already enough participants with the respective features) or screened out (= unsuitable). The status to be set is manually specified by the administrator at the intermediate final page.</p>
+</div>
+</td>
+</tr>
+<tr>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; width: 179.514px;" colspan="1" rowspan="1" data-colwidth="226.67">
+<div class="fabric-editor-block-mark fabric-editor-alignment cc-5inqjd" data-align="center">
+<p data-renderer-start-pos="18266">41</p>
+</div>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; width: 178.559px;" colspan="1" rowspan="1" data-colwidth="226.67">
+<div class="fabric-editor-block-mark fabric-editor-alignment cc-5inqjd" data-align="center">
+<p data-renderer-start-pos="18272">Filtered out before the beginning of the survey, because quota is already closed.</p>
+</div>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; width: 349.566px;" colspan="1" rowspan="1" data-colwidth="226.67">
+<div class="fabric-editor-block-mark fabric-editor-alignment cc-5inqjd" data-align="center">
+<p data-renderer-start-pos="18357">If a quota is full, this status will be assigned to all participants, who match the quota condition, but nevertheless have not started with the survey yet.</p>
+</div>
+<div class="fabric-editor-block-mark fabric-editor-alignment cc-5inqjd" data-align="center">
+<p data-renderer-start-pos="18514">If one of these participants tries to log in, then he will be rejected and the disposition code will be set to 35.</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="sentinel-right"> </div>
+</div>
+</div>
+<h3 id="Allocating-Code-20-to-either-Gross-or-Net" class="wysiwyg-text-align-justify" data-renderer-start-pos="18633"><strong data-renderer-mark="true">Allocating Code 20 to either Gross or Net</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="18676">For anonymous surveys, disposition code 20 will be set when the first page is invoked. Depending on the type of survey, it may make sense in an evaluation to allocate participants with this disposition code either into gross or net:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="18912">In the case of pop-up surveys using n-viz procedures, it makes sense to classify participants with this disposition code into gross, because the survey is shown to them automatically.</p>
+</li>
+<li>
+<p data-renderer-start-pos="19099">In the case of banner surveys, participants with disposition code 20 would be allocated into net because the respondents actively invoke the survey.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="19251">You can decide for yourself how participants with disposition code 20 will be allocated in a field report. To do so, switch to the <strong data-renderer-mark="true">Project properties </strong>→ <strong data-renderer-mark="true">Survey options </strong>→<strong data-renderer-mark="true"> Features for internal organization </strong>menu in the admin area, and select the desired option from the field labeled “This setting allows you to control how disposition code 20 is to be allocated in the field report”.</p>
+<h3 id="Restricting-the-Field-Report" class="wysiwyg-text-align-justify" data-renderer-start-pos="19634"><strong data-renderer-mark="true">Restricting the Field Report</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="19664">The field report can be limited to specific disposition codes or variable characteristics. The following options are available:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="19795">all disposition codes.</p>
+</li>
+<li>
+<p data-renderer-start-pos="19821">project variables and URL parameters. Exception: Variables of text question types (141, 142, 143, 144, 363), user-defined question variables(question type 911) and user-defined variables cannot be used for restriction purposes.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="20052">Proceed as follows:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="20075">Click the <strong data-renderer-mark="true">Configuration </strong>button.</p>
+</li>
+<li>
+<p data-renderer-start-pos="20110">In the upper section disable, if necessary, the disposition codes not to be used to restrict the basis.</p>
+</li>
+<li>
+<p data-renderer-start

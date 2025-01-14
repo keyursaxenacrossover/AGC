@@ -1,0 +1,76 @@
+em> (= 20 minutes)</p>
+</li>
+<li>
+<p><em>#guide_status_link|5h#</em>   (= 5 hours)</p>
+</li>
+<li>
+<p><em>#guide_status_link|2d#</em>  (= 2 days)</p>
+</li>
+</ul>
+</td>
+<td style="width: 163.976px;">
+<p>IDEA</p>
+</td>
+</tr>
+<tr>
+<td style="width: 254.983px;">
+<p><em>#guideinitiator#</em></p>
+</td>
+<td style="width: 310.59px;">
+<p>First and last name of the guide initiator</p>
+</td>
+<td style="width: 163.976px;">
+<p>IDEA</p>
+</td>
+</tr>
+<tr>
+<td style="width: 254.983px;">
+<p><em>#guideinitiator|firstname#</em></p>
+</td>
+<td style="width: 310.59px;">
+<p>First name of the guide initiator</p>
+</td>
+<td style="width: 163.976px;">
+<p>IDEA</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="offline-participants" class="wysiwyg-text-align-justify"><strong>Offline participants</strong></h3>
+<p class="wysiwyg-text-align-justify">To declare panelists as offline participants, first set the <em>m_offlineuser</em> master data to 1 (= yes) in the <strong>Panelist administration</strong> of the<em> People</em> module. In <strong>Guides</strong> (in Portals) select the appropriate template under the <strong>E-mail Settings</strong> tab and configure the code voucher under the <strong>Offline Participants</strong> tab. These vouchers are then sent by email as a PDF to the person who initiated the survey. They can also be downloaded from the <em>Guide Status</em> page in <em>Portals</em>. The intention is for the person who initiates the Guide to then print off the vouchers, and distribute them in person to the offline participants. The vouchers include a unique participation code, a QR code that links to the survey, the first and last name of the participant, and the survey URL.</p>
+<p class="wysiwyg-text-align-justify">In order to mask the dummy e-mail address, this dummy e-mail address is replaced by the placeholder <em>Offline Participant</em> in both the participant list and the search results.</p>
+<h3 id="rater-groups" class="wysiwyg-text-align-justify"><strong>Rater-Groups</strong></h3>
+<p class="wysiwyg-text-align-justify">The <em>Leadership-Guide</em> (ME-Guide) is used to conduct 360° leadership surveys. On the <strong>Rater-Groups</strong> tab, you can specify the rater groups. These groups are going to rate the focus person.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015166701714" alt="Self-Assessment.png"></p>
+<p class="wysiwyg-text-align-justify">The rater-groups are configurable. The <em>Self-assessment</em> rater group can be deactivated. Uncheck the checkbox. The guide initiator will then no longer be invited to the survey and will not receive any reminder e-mails. However, he will still be informed by e-mail about the results of the survey and will receive voucher codes (if there are offline participants).</p>
+<table class="wysiwyg-text-align-justify" style="height: 791px;" border="1" width="756" data-layout="default">
+<colgroup> <col style="width: 226.67px;"> <col style="width: 226.67px;"> <col style="width: 226.67px;"> </colgroup>
+<tbody>
+<tr style="height: 34px;">
+<th class="wysiwyg-text-align-center" style="width: 213.646px; height: 34px;" data-highlight-colour="#57d9a3">
+<p><strong>Option</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 319.497px; height: 34px;" data-highlight-colour="#57d9a3">
+<p><strong>Function</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 212.465px; height: 34px;" data-highlight-colour="#57d9a3">
+<p><strong>Activated</strong></p>
+</th>
+</tr>
+<tr style="height: 38px;">
+<td style="width: 205.625px; height: 38px;">
+<p>Rater-Group label</p>
+</td>
+<td style="width: 311.476px; height: 38px;">
+<p>Label of the rater-group</p>
+</td>
+<td style="width: 204.444px; height: 38px;">
+<p> </p>
+</td>
+</tr>
+<tr style="height: 38px;">
+<td style="width: 205.625px; height: 38px;">
+<p>Description</p>
+</td>
+<td style="width: 311.476px; height: 38px;">
+<p>Short Description of

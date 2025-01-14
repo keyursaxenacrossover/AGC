@@ -1,0 +1,43 @@
+log directory (<code>/var/lib/elasticsearch/nodes/0/indices/[index_name]/[shard_id]/translog</code>).</p></li>
+<li><p>Make a backup of the existing translog files.</p></li>
+<li><p>Remove the corrupted translog files to allow Elasticsearch to attempt to rebuild them from the last successful checkpoint.</p></li>
+</ul>
+</li>
+<li>
+<p><strong>Restart the Node:</strong></p>
+<ul><li><p>Restart the Elasticsearch node to trigger recovery. If the translog was the only issue, the shard should recover successfully.</p></li></ul>
+</li>
+<li>
+<p><strong>Restore from Backup:</strong></p>
+<ul><li><p>If shard recovery fails or significant data loss is observed, restore the affected index or shard from a recent snapshot.</p></li></ul>
+</li>
+<li>
+<p><strong>Monitor and Validate:</strong></p>
+<ul>
+<li><p>After recovery, monitor the logs and cluster health to ensure no further issues occur.</p></li>
+<li><p>Validate the integrity of the data by running consistency checks or comparing document counts.</p></li>
+</ul>
+</li>
+<li><p><strong>Run the panel_reset_activitystream.php script</strong> - the documentcount should recover over time by itself.</p></li>
+</ol><p></p><p></p>log directory (<code>/var/lib/elasticsearch/nodes/0/indices/[index_name]/[shard_id]/translog</code>).</p></li>
+<li><p>Make a backup of the existing translog files.</p></li>
+<li><p>Remove the corrupted translog files to allow Elasticsearch to attempt to rebuild them from the last successful checkpoint.</p></li>
+</ul>
+</li>
+<li>
+<p><strong>Restart the Node:</strong></p>
+<ul><li><p>Restart the Elasticsearch node to trigger recovery. If the translog was the only issue, the shard should recover successfully.</p></li></ul>
+</li>
+<li>
+<p><strong>Restore from Backup:</strong></p>
+<ul><li><p>If shard recovery fails or significant data loss is observed, restore the affected index or shard from a recent snapshot.</p></li></ul>
+</li>
+<li>
+<p><strong>Monitor and Validate:</strong></p>
+<ul>
+<li><p>After recovery, monitor the logs and cluster health to ensure no further issues occur.</p></li>
+<li><p>Validate the integrity of the data by running consistency checks or comparing document counts.</p></li>
+</ul>
+</li>
+<li><p><strong>Run the panel_reset_activitystream.php script</strong> - the documentcount should recover over time by itself.</p></li>
+</ol><p></p><p></p>

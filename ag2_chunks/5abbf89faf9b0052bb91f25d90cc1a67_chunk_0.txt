@@ -1,0 +1,88 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3779330063">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3779330063</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">Precondition:</a></li>
+<ul>
+<li><a href="#header-3">Workflows that should be enabled</a></li>
+<li><a href="#header-4">Create</a></li>
+<li><a href="#header-5">Edit (Sync process)</a></li>
+<ul>
+<li><a href="#header-7">Change in application (Sync Upwards)</a></li>
+<li><a href="#header-8">Change in SSO provider (Sync Downwards)</a></li>
+</ul>
+<li><a href="#header-10">Alternative: Immediate Sync</a></li>
+<li><a href="#header-11">Deletion - Deletion in application</a></li>
+<li><a href="#header-12">Deletion - Deletion centrally in SSO provider (SHOULD DO)</a></li>
+<li><a href="#header-13">Federation - Create</a></li>
+<li><a href="#header-14">Federation - Edit</a></li>
+<ul>
+<li><a href="#header-16">AD changes</a></li>
+<ul>
+<li><a href="#header-18">Application / SSO provider changes</a></li>
+</ul>
+</ul>
+<li><a href="#header-21">Federation - Delete</a></li>
+<ul>
+<li><a href="#header-23">Deletion in AD</a></li>
+<ul>
+<li><a href="#header-25">Deletion in application</a></li>
+<li><a href="#header-26">Deletion in SSO provider</a></li>
+</ul>
+</ul>
+<li><a href="#header-29">Login mask</a></li>
+<li><a href="#header-30">Forgot Password</a></li>
+<li><a href="#header-31">Multifactor Authentication</a></li>
+<li><a href="#header-32">Logout</a></li>
+<li><a href="#header-33">Registration</a></li>
+<li><a href="#header-34">Create</a></li>
+<li><a href="#header-35">Edit (Sync process)</a></li>
+<ul>
+<li><a href="#header-37">Change in application (Sync Upwards)</a></li>
+<li><a href="#header-38">Change in SSO provider (Sync Downwards)</a></li>
+</ul>
+<li><a href="#header-40">Alternative: Immediate Sync</a></li>
+<li><a href="#header-41">Deletion</a></li>
+<ul>
+<li><a href="#header-43">Deletion in application</a></li>
+<li><a href="#header-44">Deletion centrally in SSO provider (SHOULD DO)</a></li>
+</ul>
+<li><a href="#header-46">Federation</a></li>
+<ul>
+<li><a href="#header-48">Create</a></li>
+<li><a href="#header-49">Edit</a></li>
+<ul>
+<li><a href="#header-51">AD changes</a></li>
+<li><a href="#header-52">Application / SSO provider changes</a></li>
+</ul>
+<li><a href="#header-54">Deletion</a></li>
+<ul>
+<li><a href="#header-56">Deletion in AD</a></li>
+<li><a href="#header-57">Deletion in application</a></li>
+<li><a href="#header-58">Deletion in SSO provider</a></li>
+</ul>
+</ul>
+<li><a href="#header-61">Login mask</a></li>
+<li><a href="#header-62">Forgot Password</a></li>
+<li><a href="#header-63">Forgot Account?</a></li>
+<li><a href="#header-64">Multifactor Authentication</a></li>
+<li><a href="#header-65">Logout</a></li>
+<li><a href="#header-66">Registration</a></li>
+<li><a href="#header-67">To be dicussed / evaluated</a></li>
+</ul>
+</ul>
+</ul><h1 id="header-1">Precondition: </h1><ul>
+<li><p>SSO is always active, ie no module is needed to activate or disable it</p></li>
+<li><p>Password will not be set in application anymore, but in SSO Provider</p></li>
+</ul><p></p><h2 id="header-3">Workflows that should be enabled</h2><table data-layout="wide" ac:local-id="0f8f5972-58fb-4753-9079-6c56d9363c32">
+<colgroup>
+<col style="width: 97.0px;">
+<col style="width: 230.0px;">
+<col style="width: 633.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p><strong>ID</strong></p></th>
+<th><p><strong>Title</strong></p></th>
+<th><p><strong>Workflow</strong

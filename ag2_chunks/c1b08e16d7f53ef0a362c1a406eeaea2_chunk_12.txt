@@ -1,0 +1,215 @@
+</tr>
+<tr>
+<td>
+<p>v_000n</p>
+</td>
+<td>
+<p>v_000n</p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p>Project variables. The project variables are sequentially numbered for each project, beginning with v_1.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>md_000n</p>
+<p>(Only in EFS Panel installations)</p>
+</td>
+<td>
+<p>md_000n</p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p>Master data variables.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>remote_host</p>
+</td>
+<td>
+<p>ext_host</p>
+</td>
+<td>
+<p>external host</p>
+</td>
+<td>
+<p>Indicates the domain of the computer via which the participant is connected to the Internet if it has a domain.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>remote_addr</p>
+</td>
+<td>
+<p>ip_addr</p>
+</td>
+<td>
+<p>remote address</p>
+</td>
+<td>
+<p>Indicates the IP address of the computer via which the participant is connected to the Internet.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>user_agent</p>
+</td>
+<td>
+<p>browser</p>
+</td>
+<td>
+<p>browser-id</p>
+</td>
+<td>
+<p>Indicates the name of the browser in the form in which it was transferred to the EFS server. Examples can be found at http:// <a href="http://de.wikipedia.org/wiki/User_Agent">de.wikipedia.org/wiki/User_Agent</a>.</p>
+<p>When filtering is done via browser types, it is advisable to use the “matches regex” condition, which is also new.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>http_referer</p>
+</td>
+<td>
+<p>referer</p>
+</td>
+<td>
+<p>http-referer</p>
+</td>
+<td>
+<p>Indicates the Internet page from which the survey was invoked.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>device_type</p>
+<p>(From EFS 10.0 in “Responsive Layout” projects)</p>
+</td>
+<td>
+<p>device_type</p>
+</td>
+<td>
+<p>device type</p>
+</td>
+<td>
+<p>Contains the result of the check for device type, which can optionally be performed at the beginning of the survey:</p>
+<p>Activated</p>
+<ul>
+<li>
+<p>0 = Desktop</p>
+</li>
+<li>
+<p>1 = mobile</p>
+</li>
+</ul>
+<p>Not activated: 0</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>participant_browser</p>
+<p>(For EFS 10.7 and later versions)</p>
+</td>
+<td>
+<p>participant_browser</p>
+</td>
+<td>
+<p>participant browser</p>
+</td>
+<td>
+<p>States the browser used by the participant, e. g. Internet Explorer</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>participant_browser_version</p>
+<p>(For EFS 10.7 and later versions)</p>
+</td>
+<td>
+<p>participant_browser_version</p>
+</td>
+<td>
+<p>participant browser version</p>
+</td>
+<td>
+<p>States the participant‘s browser version, e. g. 9.0</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>participant_os</p>
+<p>(For EFS 10.7 and later versions)</p>
+</td>
+<td>
+<p>participant_os</p>
+</td>
+<td>
+<p>participant operating system</p>
+</td>
+<td>
+<p>states the participant‘s computer‘s operating system, e.g. Windows.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>participant_device</p>
+<p>(For EFS 10.7 and later versions)</p>
+</td>
+<td>
+<p>participant_device</p>
+</td>
+<td>
+<p>participant device</p>
+</td>
+<td>
+<p>contains the result of the device type check (optional, may be performed at the start of the survey), e.g. smartphone. Refer directly to the software‘s user interface for a list of all identifiable devices.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>participant_brand</p>
+<p>(For EFS 10.7 and later versions)</p>
+</td>
+<td>
+<p>participant_brand</p>
+</td>
+<td>
+<p>participant brand</p>
+</td>
+<td>
+<p>states the brand of device used, e. g. Apple.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>participant_model</p>
+<p>(For EFS 10.7 and later versions)</p>
+</td>
+<td>
+<p>participant_model</p>
+</td>
+<td>
+<p>participant model</p>
+</td>
+<td>
+<p>stathe tes model of the device used, e. g. iPhone 6.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>participant_isbot</p>
+<p>(For EFS 10.7 and later versions)</p>
+</td>
+<td>
+<p>participant_isbot</p>
+</td>
+<td>
+<p>participant is (ro)bot</p>
+</td>
+<td>
+<p>states whether the participant is a robot or a crawler. Regular participants are

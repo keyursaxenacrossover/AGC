@@ -1,0 +1,131 @@
+ossible criteria:</p>
+<ul>
+<li>
+<p>Campaign start</p>
+</li>
+<li>
+<p>Campaign end</p>
+</li>
+<li>
+<p>Campaign title</p>
+</li>
+<li>
+<p>Bonus points for inviting friends</p>
+</li>
+</ul>
+<p>Possible sort order:</p>
+<ul>
+<li>
+<p>Ascending</p>
+</li>
+<li>
+<p>Descending</p>
+</li>
+</ul>
+</td>
+<td style="height: 233px; width: 133.42px;">
+<p>Kampagnenstart - aufsteigend</p>
+</td>
+</tr>
+<tr style="height: 67px;">
+<td style="height: 67px; width: 150.764px;">
+<p>Message displayed after successful dispatch</p>
+</td>
+<td style="height: 67px; width: 494.358px;">
+<p>This text is displayed once the invitation mail has been sent.</p>
+</td>
+<td style="height: 67px; width: 133.42px;">
+<p>ready!</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="function-module-contact-form" class="wysiwyg-text-align-justify"><strong>Function Module: Contact Form</strong></h3>
+<p class="wysiwyg-text-align-justify">The “Contact form” function module allows you to create a form that can be used by panel visitors and panelists to directly contact the panel operator. In the standard panel, you can find such a form on the Contact Us page, for example.</p>
+<p class="wysiwyg-text-align-justify">EFS Panel provides various design options:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The form is status-dependent: Whereas normal visitors are required to enter their e-mail address and name, this information is automatically determined for logged-in panelists.</p>
+</li>
+<li>
+<p>After sending the contact request a confirmation message will be displayed.</p>
+</li>
+<li>
+<p>Optionally, you can offer users various topics to choose from, to which they can assign their inquiry.</p>
+</li>
+<li>
+<p>You can have the requests sent to different e-mail addresses depending on the topic. This allows you to directly sort requests into different inboxes by topic or have them sent to specially qualified staff members.</p>
+</li>
+<li>
+<p>In addition to the details of the person who sent the request, the delivered emails contain background information, such as information on their browser settings, IP, and referrer.</p>
+</li>
+<li>
+<p>You can modify the standard text elements of the mail.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">You can use the “func_contact_form” template to change the appearance of the contact form and confirmation page.</p>
+<p class="wysiwyg-text-align-justify"><strong>Options</strong></p>
+<p class="wysiwyg-text-align-justify">The “Contact form” function module offers the following options.</p>
+<table class="wysiwyg-text-align-justify" style="height: 1010px;" border="1" width="805" data-layout="default" data-table-width="760">
+<colgroup>
+<col style="width: 206.0px;">
+<col style="width: 399.0px;">
+<col style="width: 155.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th style="width: 214.792px;" data-highlight-colour="#57d9a3">
+<p><strong>Option</strong></p>
+</th>
+<th style="width: 418.924px;" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+<th style="width: 160.903px;" data-highlight-colour="#57d9a3">
+<p><strong>Standard panel "Contact us" page</strong></p>
+</th>
+</tr>
+<tr>
+<td style="width: 206.771px;">
+<p>Reference name for template</p>
+</td>
+<td style="width: 410.903px;">
+<p>Name that can be used to trigger the module in positioning templates.</p>
+</td>
+<td style="width: 152.882px;">
+<p>contact</p>
+</td>
+</tr>
+<tr>
+<td style="width: 206.771px;">
+<p>Page module title</p>
+</td>
+<td style="width: 410.903px;">
+<p>Name of the module in the page’s module overview</p>
+</td>
+<td style="width: 152.882px;">
+<p>Contact form</p>
+</td>
+</tr>
+<tr>
+<td style="width: 206.771px;">
+<p>Module template</p>
+</td>
+<td style="width: 410.903px;">
+<p>Module-specific template that controls how data provided by the module are displayed.</p>
+</td>
+<td style="width: 152.882px;">
+<p>func_contact_form</p>
+</td>
+</tr>
+<tr>
+<td style="width: 206.771px;">
+<p>Mail sender</p>
+</td>
+<td style="width: 410.903px;">
+<p>E-mail address from which the requests are sent. You can choose between two options:</p>
+<ul>
+<li>
+<p>You can enter a fixed e-mail address. Please make sure that the mail account exists on a correctly configured mail server. Otherwise, the e-mails may be erroneously classified as spam.</p>
+</li>
+<li>
+<p>

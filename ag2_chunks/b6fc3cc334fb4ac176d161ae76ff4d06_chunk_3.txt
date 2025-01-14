@@ -1,0 +1,31 @@
+,0);">'efs_admin_user_manager' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$this<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">efs.components.admin.user.manager.change_partial_by_field.after</span></pre></td>
+<td colspan="1">modules/efs/components/adminuser/manager.inc.php:change_partial_by_field()</td>
+<td colspan="1"><pre><span>Efs\Events\Admin\User\Manager\ChangePartialByField\After</span><span>([<br></span><span>    </span><span style="color: rgb(0,128,0);">'field' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$field</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'field_value' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$value</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'updated_values' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$values<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">efs.validate.admin.account.before</span></pre></td>
+<td colspan="1">www/api/staff/class_admin_user.inc.php:validate()</td>
+<td colspan="1"><pre><span>Efs\Events\Admin\ValidateAccountBefore</span><span>([<br></span><span>    </span><span style="color: rgb(0,128,0);">'admin_user' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$this<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">efs.login.data.adapter.validate_password.before</span></pre></td>
+<td colspan="1">modules/efs/components/login/data/adapter/abstract.inc.php:validate_password()</td>
+<td colspan="1"><pre><span>Efs\Events\Login\Data\</span><span>AdapterAbstract([<br></span><span>    </span><span style="color: rgb(0,128,0);">'component' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$this</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'password' </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$password<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">survey.login.credentials.check.authenticate</span></pre></td>
+<td colspan="1">modules/survey/components/login/credentials/check.inc.php:authenticate()</td>
+<td colspan="1"><pre><span>Survey\Events\Login\Credentials\</span><span>Check([<br></span><span>    </span><span style="color: rgb(0,128,0);">'class' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$this</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'stack' </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$stack<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">efs.mail.parser.mail_check.after</span></pre></td>
+<td colspan="1">modules/efs/components/mail/parser.inc.php:mail_check()</td>
+<td colspan="1"><pre><span>Efs\Events\Mail\Parser\MailCheck\After</span><span>([<br></span><span>    </span><span style="color: rgb(0,128,0);">'email' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$email</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'result' </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$result<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">efs.controller.action.admin.referer</span></pre></td>
+<td colspan="1">modules/efs/components/controller/action/admin.inc.php:runRefererCheck()</td>
+<td colspan="1"><pre><span>Efs\Events\Controller\</span><span>ActionAdminReferer([<br></span><span>    </span><

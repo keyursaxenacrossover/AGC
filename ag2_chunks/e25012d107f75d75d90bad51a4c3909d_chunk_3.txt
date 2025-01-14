@@ -1,0 +1,78 @@
+--&gt;Portalsadmin: create new portal
+Portalsadmin--&gt;IdP: create application with active=true
+IdP--&gt;Portalsadmin: send client_id
+Portalsadmin--&gt;IdP: add to group
+IdP--&gt;Portalsadmin: send response
+Portalsadmin--&gt;IdP: create trusted origin
+IdP--&gt;Portalsadmin: send response
+note right of Portalsadmin: in case of existing, catch Exception and ignore
+Portalsadmin--&gt;Portalsadmin: create entry in iam_portal_settings</code></pre>
+<p class="auto-cursor-target"> </p>
+<h2 id="header-12" class="auto-cursor-target">Assign Participant to Portal</h2>
+<p> </p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20909686644882" alt="assign_participant_to_portal.png"></p>
+<p> </p>
+<pre><code class="language-text">title Assign Participant to Portal
+
+participant Portalsadmin
+participant IdP
+
+note right of Portalsadmin: user is logged in and has access rights to invite participiants portals
+Portalsadmin--&gt;Portalsadmin: open newly created portal
+Portalsadmin--&gt;Portalsadmin: open participant section
+Portalsadmin--&gt;Portalsadmin: select participant(s) to invite and invite participant(s)
+Portalsadmin--&gt;IdP: get user by email
+alt
+IdP--&gt;Portalsadmin: no result
+Portalsadmin--&gt;IdP: create user
+IdP--&gt;Portalsadmin: send UserModel
+Portalsadmin--&gt;Portalsadmin: create entry in iam_portals_user_referenc
+else
+IdP--&gt;Portalsadmin: send UserModel
+Portalsadmin--&gt;Portalsadmin: create entry in iam_portals_user_referenc
+end</code></pre>
+<p class="auto-cursor-target"> </p>
+<h2 id="header-13" class="auto-cursor-target">Sign in to portal</h2>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20909686652946" alt="portal_login.png"></p>
+<pre><code class="language-text">title Portal login
+
+participant PortalFe
+participant PortalBe
+participant IdP
+participant AD
+
+PortalFe--&gt;PortalFe: open http(s)://www.example.com/portals/portal-n
+PortalFe--&gt;PortalBe: receive portal configuration by portalId
+alt:
+PortalBe--&gt;PortalFe: send Status Code 444 (iam_module_active=false)
+PortalFe--&gt;PortalBe: follow usual flow
+PortalBe--&gt;PortalFe: login
+else:
+PortalBe--&gt;PortalFe: send portal configuration object
+PortalFe--&gt;IdP: redirect to
+IdP--&gt;IdP: LoginProcess by user
+alt:
+note right of IdP: user exists and has access rights
+IdP--&gt;AD: prompt password
+AD--&gt;AD: sign in
+AD--&gt;IdP: send status
+IdP--&gt;IdP: create session
+IdP--&gt;PortalFe: redirect with id_token and access_token
+PortalFe--&gt;PortalBe: post data to /api/iam/auth/signIn
+PortalBe--&gt;PortalBe: get identity from id_token and access_token
+PortalBe--&gt;PortalBe: check in portal_users_reference
+alt:
+PortalBe--&gt;PortalFe: user not exists
+else:
+PortalBe--&gt;PortalBe: create X-Authorization token
+PortalBe--&gt;PortalBe: create local session
+PortalBe--&gt;PortalFe: send header and payload
+PortalFe--&gt;PortalFe: show screen after logged in
+end:
+else:
+note right of IdP: user does not exists or has no access rights
+AD--&gt;IdP: send status
+IdP--&gt;IdP: show login screen
+end:
+end:</code></pre>
+<p> </p>

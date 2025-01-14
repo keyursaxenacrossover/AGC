@@ -1,0 +1,119 @@
+th>
+</tr>
+<tr>
+<td><p>10001</p></td>
+<td><p>user1@questback.com</p></td>
+<td><p>zombie</p></td>
+</tr>
+<tr>
+<td><p>20001</p></td>
+<td><p>user1@tivian.com</p></td>
+<td><p>created + assignment to group etc.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><u>EFS - EFS User to Okta User Mapping</u></strong></p>
+<table ac:local-id="4389ae8d-94f4-4ab6-b386-d5f6169099a4" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p>EFS User ID</p></th>
+<th><p>Okta User ID</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>11</p></td>
+<td><p>20001</p></td>
+<td><p>updated</p></td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="header-10">Case 2</h3><p>There are an @tivian.com user and an @questback.com user on EFS and on Okta site. It is not clear is the @questback.com user is still needed. <strong><span style="color: rgb(255,86,48);">An update without manual interference is not possible.</span></strong></p><div class="expand-macro">
+<h4 string="Case 2"></h4>
+<h4 id="header-12">Initial state:</h4>
+<p><strong><u>EFS - User Table</u></strong></p>
+<table ac:local-id="07fd96dd-6a94-40e8-9fad-d2e37a823f8e" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p>EFS User ID</p></th>
+<th><p>email</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>12</p></td>
+<td><p>user2@questback.com</p></td>
+<td><p>-</p></td>
+</tr>
+<tr>
+<td><p>22</p></td>
+<td><p>user2@tivian.com</p></td>
+<td><p>-</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><u>Okta - User List</u></strong></p>
+<table ac:local-id="4318c639-08d7-40b3-ba6f-74613ec0b09c" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p>Okta User ID</p></th>
+<th><p>email</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>10002</p></td>
+<td><p>user2@questback.com</p></td>
+<td><p>-</p></td>
+</tr>
+<tr>
+<td><p>20002</p></td>
+<td><p>user2@tivian.com</p></td>
+<td><p>-</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><u>EFS - EFS User to Okta User Mapping</u></strong></p>
+<table ac:local-id="e1f2052b-ff58-432b-b158-b06ba9ecb7a5" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p>EFS User ID</p></th>
+<th><p>Okta User ID</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>12</p></td>
+<td><p>10002</p></td>
+<td><p>-</p></td>
+</tr>
+<tr>
+<td><p>22</p></td>
+<td><p>20002</p></td>
+<td><p>-</p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="header-13">Future state:</h4>
+<p><strong><span style="color: rgb(255,86,48);">No future State. The conflict has to be solved manually first.</span></strong></p>
+</div><p></p><h3 id="header-15">Case 3</h3><p>A user is already converted.</p><div class="expand-macro">
+<h4 string="Case 3"></h4>
+<h4 id="header-17">Initial state:</h4>
+<p><strong><u>EFS -

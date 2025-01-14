@@ -1,0 +1,28 @@
+ side. <br>For such requests, the process would be:<span style="color: #2f3941; font-family: system-ui, -apple-system, ' system-ui' , ' Segoe UI' , Roboto, Oxygen-Sans, Ubuntu, Cantarell, ' Helvetica Neue' , Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #fff7ed; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"><br></span></p>
+<ul>
+<li>CS -&gt; SaaS:<br>
+<ul>
+<li>File a ticket for SaaS to add the domain into the system under SES</li>
+<li>SaaS will generate the new zone file and provide this Zone file to CS</li>
+</ul>
+</li>
+<li> CS -&gt; Customer<br>
+<ul>
+<li>CS sends the zone file to the customer and waits for confirmation from the customer that the zone file has been updated</li>
+<li>CS verifies that the domain entries have been updated by checking the customer's public DNS entries</li>
+<li>CS verifies that the domain is now verified by AWS SES, or puts the ticket on hold until AWS verifies the domain (which may take up to 72 hours)</li>
+<li>CS then notifies the customer that the domain is ready for use.</li>
+</ul>
+</li>
+</ul>
+<p><span style="color: #2f3941; font-family: system-ui, -apple-system, ' system-ui' , ' Segoe UI' , Roboto, Oxygen-Sans, Ubuntu, Cantarell, ' Helvetica Neue' , Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #fff7ed; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"> </span></p>
+</li>
+</ul>
+<hr>
+<h2 id="h_01JEEGR1AW8GF7HETPYKX6TV0P">
+<br>How to find domains used by a customer in the last 12 months?<br><br>
+</h2>
+<p>In "DXI - Hurricane sender domain stats by customer", The pivot table on the <strong><em>pvt_CustomDomains</em></strong> tab can be filtered by a customer to quickly see used in last 12 month domains.<br><br><a href="https://docs.google.com/spreadsheets/d/1CQmDPjwnJPvtZDlpL9joDMdpn_gumZaLr5QAwCxKIvw/edit?gid=1867633889#gid=1867633889">DXI Migration Activity Sheet</a> : You can find all the domains, related customer and their ZONE file details here.</p>
+<p> </p>
+<h2 id="h_01JEEKE76EB7V597KKM9VQ1H4J">New Questions</h2>
+<p>If any questions are not answered in the FAQs, please raise an SC with <strong>Raghul Suthagar, Noumaan Shah, Leonardo Lima, Anton VanDerBijl, Muhammad Usman, Chris Morino,</strong> and <strong>Aditi Garg</strong>. <br><br>After you receive the answers to the questions on the ticket, please make sure the KB article is updated accordingly. This will streamline the handling of similar tickets in the future.<br><br><br><br> </p>

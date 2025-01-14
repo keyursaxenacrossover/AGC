@@ -1,0 +1,26 @@
+b7008d3e57a"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998608665618" alt="9142da31-3850-4a95-85d0-3bb0fce11516"></p>
+<h3 id="header-7">On-Demand Guided – Integration of Circles</h3>
+<p>When creating a new survey in the page module On-Demand Guided, Portals users are now able to select contacts from their circles they want to invite to their survey.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998578089746" alt="610466b2-00ee-469d-ae5f-c5dc5dd62ef0"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998581681042" alt="e174d148-f7f4-47e5-8298-9e7c40d0a69a"></p>
+<h3 id="header-8">Portal Switch</h3>
+<p>With Portal Switch, Portals users are now able to switch from one portal to another without having to login again.</p>
+<p> </p>
+<h2 id="header-10">Closed Loop Feedback and Action Planner enhancements</h2>
+<h3 id="header-12">New add-on module CLF</h3>
+<p>To implement Closed Loop Feedback in EFS even more effectively and to optimize the whole workflow of your project, the add-on module CLF is now available. With this module, you have additional functions at your disposal supporting a smooth performance of your CLF-project and therefore accelerating the whole process effectively.</p>
+<p>If you’re interested in the add-on module CLF, please contact us.</p>
+<h3 id="header-13">Activating add-on module CLF</h3>
+<p>After the enablement of your add-on module CLF, you can activate it by checking the boxes Activate Action Planner and Activate CLF in a new ES project in the Org Processor settings. Hereby the features Workflows and CLF configuration overview are being enabled among others.</p>
+<h3 id="header-14">CLF configuration overview</h3>
+<p>In your project under Org Processor &gt; Configuration &gt; CLF configuration overview, the add-on module CLF provides you with the CLF configuration overview which will guide you through the configuration process of CLF related applications in the context of preparing the Action Planner. This EFS page gives you an overview of required and optional settings. The fields are highlighted in color to show the status of each setting: blue fields indicate settings in your ES project which already have been configured, red fields indicate settings (still) not set. All settings required should be highlighted in blue at the end of the configuration process. Via links from the CLF configuration overview, you reach the relevant pages in the admin area on which you can set the respective settings directly.</p>
+<h3 id="header-15">Creating and configuring org structures, users and roles</h3>
+<p>When creating and configuring additional roles for Org users, you have new access rights in the Rights administration under section Follow Up – Action Planner at your disposal. Those rights apply to adding new comments to tasks and editing or deleting own comments (actionplanner_comment_create), editing or deleting all comments in relation to tasks (actionplanner_comment_moderate), the general visibility and use of Workflows (actionplanner_workflow_use) as well as accessing survey results (actionplanner_view_survey_result).</p>
+<p>Adding Org-Processor users to the org structure can be done in two different ways: either by using the Org Processor and synchronizing users to People (see 17.1 feature) or by using People and synchronizing panel groups to your ES project.</p>
+<h3 id="header-16">Sync from People to Employee org structure</h3>
+<p>In addition to synchronizing Org users to People, you are now able to synchronize panel groups to the org structure of your ES project, under:</p>
+<p>People &gt; Groups &gt; [select group] &gt; Employee-Sync &gt; Add Employee-Sync Job</p>
+<p>Here, the following information is required: select your ES project as well as the master- data variable storing the respective assignment of panelists to their roles and unit. Roles and units are quoted in the following format: [ROLE ABBREVIATION]:[metaname(s) of org unit(s)]. Different roles are separated by semicolon, different units by commas. Example: OWN:unit1; SUP:unit2, unit3, unit4.</p>
+<p>The synchronization for each ES project runs once a day. For a successful synchronization, the panelists of the group need a master-data variable with at least one role and unit assignment.</p>
+<p>During the synchronization, all existing roles and units are being deleted and then created again. Correct roles and units are being transferred, incomplete roles and units remain deleted.</p>
+<p>On errors, an e-mail is sent to the job creator. The error of the last synchronization can be viewed by going to People &gt; Groups &gt; [select group] &gt; Employee-Sync as well as by editing a job. </p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998593645202" alt="272a83e2-2a80-4242-a3f2-682df53e97b7"></p

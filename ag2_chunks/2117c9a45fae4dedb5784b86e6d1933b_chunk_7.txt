@@ -1,0 +1,27 @@
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015614768914"></p>
+<p data-renderer-start-pos="6862">You will also find the question type’s options (defined in the <strong data-renderer-mark="true">Settings </strong>area) inside the <em data-renderer-mark="true">this.options </em>object. I.e. if you have an <strong data-renderer-mark="true">option </strong>named “orientation” in the <strong data-renderer-mark="true">options group </strong>“optionsGroup1”, you can access it like this:</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015614770578"></p>
+<p data-renderer-start-pos="6862">You should start your code inside the plugin’s <em data-renderer-mark="true">main </em>function, but you can use the <em data-renderer-mark="true">prepareOptions </em>function to parse and cast the given options beforehand or to modify the type if you need to.</p>
+<p> </p>
+<div class="rich-media-item mediaSingleView-content-wrap image-center cc-141s4ox" data-layout="center" data-width="80" data-width-type="percentage" data-node-type="mediaSingle" data-renderer-start-pos="7442">
+<div class="cc-1l5ck0k">
+<div data-type="file" data-node-type="media" data-width="368" data-height="15" data-id="cdf2cd29-6070-439c-96ce-682f2e7ffa41" data-collection="contentId-1259012276" data-file-name="cc2936c6-88ed-447d-8231-4d319da2aa94" data-file-size="4313" data-file-mime-type="image/png" data-alt="page247image52005840" data-renderer-start-pos="7443" data-context-id="1259012276">
+<div id="newFileExperienceWrapper" class="new-file-experience-wrapper cc-10dcj1u" data-testid="media-card-view"> </div>
+</div>
+</div>
+</div>
+<h2 id="Settings" data-renderer-start-pos="7639">Settings</h2>
+<p data-renderer-start-pos="7650">In the <strong data-renderer-mark="true">Settings </strong>menu, you define the question type’s options and features. It is separated into five sections. Each section is responsible for a different kind of characteristics.</p>
+<h3 id="Question-type-options" data-renderer-start-pos="7830">Question type options</h3>
+<p data-renderer-start-pos="7853">The options you define in the <strong data-renderer-mark="true">question type options </strong>section will show up in the question editor and allow the creator of the survey to configure instances of your question type.</p>
+<p data-renderer-start-pos="8034">All <strong data-renderer-mark="true">Options </strong>belong to an <strong data-renderer-mark="true">options group</strong>, so you have to create an <strong data-renderer-mark="true">options group </strong>by clicking on the “Add options group” button.</p>
+<p data-renderer-start-pos="8161">Enter a name for the <strong data-renderer-mark="true">options group </strong>by which it can be referenced in the template and JavaScript files. You can also set its label in your current language and in other languages by clicking on the globe icon next to the label field.</p>
+<p data-renderer-start-pos="8397">Click on the “Add option” button to open a menu with possible option types.</p>
+<div class="ak-editor-panel cc-tqp4ke" data-panel-type="info">
+<div class="ak-editor-panel__icon"><em>You can have as many <strong data-renderer-mark="true">options </strong>and <strong data-renderer-mark="true">options groups </strong>as you want. For example you could separate your options into an <strong data-renderer-mark="true">options group </strong>for functional options and one for layout related options.</em></div>
+</div>
+<p data-renderer-start-pos="8663">To access the defined options in the template you can use the <em data-renderer-mark="true">question_info </em>variable. You can find your <strong data-renderer-mark="true">options groups </strong>in the <em data-renderer-mark="true">question_info.settings.questionTypeOptions </em>object. For the “orientation”-option it looks like this:</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015627980050"></p>
+<div class="rich-media-item mediaSingleView-content-wrap image-center cc-141s4ox" data-layout="center" data-width="80" data-width-type="percentage" data-node-type="mediaSingle" data-renderer-start-pos="8890">
+<div class="cc-ld2559">
+<div data-type="file" data-node-type="media" data-width="343" data-height="16" data-id="65453368-6b10-494b-8daa-7cfdfdb47432" data-collection="contentId-1259012276" data-file-name="55dea27e-af83-45a1-80cb-7dc

@@ -1,0 +1,41 @@
+ In our case: "New employees".</li>
+<li data-renderer-start-pos="1514">Enter a description if required.</li>
+<li data-renderer-start-pos="1514">Click on <strong data-renderer-mark="true">Create group</strong>.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Your new group has now been created. In the group itself, you have various options for adding panelists manually. However, as we want to automate the group creation, the next two steps are to combine various filter conditions in a grouping filter and to set up an update rule using those conditions and our newly created group.</p>
+<h3 id="Grouping-Filters" class="wysiwyg-text-align-justify" data-renderer-start-pos="2078"><strong data-renderer-mark="true">Grouping Filters</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="2096">By means of grouping filters you can define the conditions under which panelists are assigned to a group. In preparation for scenario 1, we have already created the "New employees" group. Now we use a new grouping filter to specify that all panelists who are newly added to the panel are assigned to the "New employees" group. New panelists usually have the panel status "Admitted temporarily". To do this, follow the steps below:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="2530">Select the<strong data-renderer-mark="true"> Grouping filters</strong> menu item from the menu on the left.</p>
+</li>
+<li>
+<p class="wysiwyg-text-align-left" data-renderer-start-pos="2598">Click on <strong data-renderer-mark="true">Create filter condition</strong>.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014812787474"></p>
+</li>
+</ul>
+<ul class="wysiwyg-text-align-justify">
+<li data-renderer-start-pos="2598">Enter a name for your grouping filter. In our case: "New employees".</li>
+<li data-renderer-start-pos="2712">If necessary, enter a filter description.</li>
+<li data-renderer-start-pos="2757">In the Filter condition area, select the variable "pstatus (Panel status)" from the <strong data-renderer-mark="true">Variable</strong> drop-down menu.</li>
+<li data-renderer-start-pos="2869">From the <strong data-renderer-mark="true">Condition</strong> drop-down menu, select the<strong data-renderer-mark="true"> equal</strong> option.</li>
+<li data-renderer-start-pos="2932">From the <strong data-renderer-mark="true">Value</strong> drop-down menu, select the option <strong data-renderer-mark="true">Admitted Temporarily (1)</strong>.</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="3011"> </p>
+<h3 id="Update-Rules" class="wysiwyg-text-align-justify" data-renderer-start-pos="3013"><strong data-renderer-mark="true">Update Rules</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="3027">Update rules ensure that the grouping works automatically. All panelists that match the filter condition defined above are automatically added to the group. You can also use update rules to define further actions that should be automated for the panel group in question. For example, you can add panelists to a sample, assign bonus points, change their panel status or send them an email – completely automatically. To create a new update rule, simply follow the steps below:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="3506">Select the <strong data-renderer-mark="true">Update rules</strong> menu item from the menu on the left-hand side.</p>
+</li>
+<li>
+<p class="wysiwyg-text-align-left" data-renderer-start-pos="3580">Click on the <strong data-renderer-mark="true">Create update rule</strong> button.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014812773266"></p>
+</li>
+</ul>
+<ul class="wysiwyg-text-align-justify">
+<li data-renderer-start-pos="3580">A new page for creating an update rule is displayed.</li>
+<li data-renderer-start-pos="3684">First enter a name for your rule. In our case: "New employees".</li>
+<li data-renderer-start-pos="3751">Select "default" as the <strong data-renderer-mark="true">Group category</strong> from the drop-down menu.</li>
+<li data-renderer-start-pos="3818">Under <strong data-renderer-mark="true">Panel group to be updated</strong>, select the <strong data-renderer-mark="true">New employees</strong> group that you created in the previous step from the drop-down menu.</li>
+<li data-renderer-start-pos="3948">Activate the checkbox for the option <strong data-renderer-mark="true">Execute rule automatically?</strong>.</li>
+<li data-renderer-start-pos="4017">Set the start period.</li>
+<li data-renderer-start-pos="4042">Select an interval from the <strong data-renderer-mark="true">Interval type</strong

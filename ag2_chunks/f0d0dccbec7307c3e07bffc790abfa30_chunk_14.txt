@@ -1,0 +1,162 @@
+pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>sessionId</p>
+</td>
+<td>
+<p>string</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>id of admin session.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79EPHR63K3WP8RAZ590"> </h4>
+<h3 id="header-69">GET /efs/taskqueue/{taskId}</h3>
+<p>Returns json encoded array with either execution-status or (if available) result of asynchronous service-calls for given taskId. Possible values for status: <strong>1</strong> - Task is pending for execution, <strong>2</strong> - Task is currently running, <strong>3</strong> - Task execution failed;</p>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">"2"</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>taskId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>id of taskqueue task <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79ESEEDBFAN4HYW4SGE"> </h4>
+<h3 id="header-70">GET /efs/jobs/{jobId}</h3>
+<p>Query the status of a single EFS job maker job. This service is only enabled in certain use cases for customers.</p>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">"2"</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>jobId</p>
+</td>
+<td>
+<p>string</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>job id, <strong>Example:</strong> <code>10898768285f48e49c0d49f</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p> </p>
+<h1 id="header-73">Employee</h1>
+<div class="expand-macro">
+<h4 id="h_01J441N79E34024AH5YZ72BB2H"> </h4>
+<h2 id="header-75">POST /employee/reports/</h2>
+<p>Adds a report</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "report": {
+    "report_definition_id": 1234,
+    "pid": 1234,
+    "lang_id": 1234,
+    "report_type": "pdf",
+    "unit_metaname": "Example",
+    "file_content": "QmFzZTY0IGVuY29kZWQgYmluYXJ5IGRhdGE=",
+    "report_label": "Example",
+    "replace": true,
+    "report_filename": "Example.pdf"
+  }
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">{
+  "report_definition_id": 1234,
+  "pid": 1234,
+  "lang_id": 1234,
+  "report_type": "pdf",
+  "unit_metaname": "Example",
+  "file_content": "QmFzZTY0IGVuY29kZWQgYmluYXJ5IGRhdGE=",
+  "report_label": "Example",

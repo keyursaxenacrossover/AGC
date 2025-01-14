@@ -1,0 +1,65 @@
+<p><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p>This article provides comprehensive information about domains, aliases, CNAMEs, and SSL certificates in the context of Tivian's customer installations. It covers general information, FAQs, available options, and processes for setting up custom domains and SSL certificates.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>This guide focuses on the technical aspects of domain management, SSL implementation, and alias configuration for Tivian's customer installations. It provides essential information for support staff and technical contacts.</p>
+<ul>
+<ul>
+<li><a href="#general_information">General Information</a></li>
+<li><a href="#tivian_options">Tivian's Domain Offerings</a></li>
+<li><a href="#01J3YWT03RW2V8F2110NRSMF6X">Tivian's SSL Offerings</a></li>
+<li><a href="#ssl_customer">Customer-provided SSL certificates</a></li>
+<li><a href="#h_01J3YVS3KESA1124N73W9PZ87Y">Processing a Custom Domain Request (TBR WITH TIVIAN)</a></li>
+</ul>
+</ul>
+<br>
+<h2 id="general_information">General Information</h2>
+<p>Every installation has a technical domain (e.g., <strong>ab1234.customervoice360.com</strong>) with some exceptions for old installations. This generic domain is created automatically and cannot be manipulated. It always includes SSL and is provided at no extra cost to the customer.</p>
+<h2 id="tivian_options">Tivian's Domain Offerings</h2>
+<ul>
+<li>
+<strong>Custom domain</strong> from .customervoice360.com (e.g., bounty.customervoice360.com) with SSL included. Customer pays for this option.</li>
+<li>
+<strong>Second-Level-Domain or sub-domain</strong>, which can be from the customer or Tivian.
+<ul>
+<li>All domains now include SSL, automatically provisioned from Tivian</li>
+<li>Customer pays for this option.</li>
+<li>Support does NOT actively ask the customer for it.</li>
+</ul>
+</li>
+</ul>
+<h3 id="cname_info">CNAME Information</h3>
+<ul>
+<li>To find out who manages a domain, use <a href="http://whois.domaintools.com/">http://whois.domaintools.com/</a>. If you see <strong>NS1.OPST.DE</strong> or <strong>NS2.OPST.D</strong>E, it's likely managed by Tivian.</li>
+<li>DNS propagation can be checked using: <a href="https://www.whatsmydns.net/">https://www.whatsmydns.net/</a>.</li>
+<li>Extensive DNS information can be found in <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20426284826642-The-world-of-DNS-Email-Certificates-and-how-it-relates-to-EFS-Aliases">The world of DNS, Email + Certificates and how it relates to EFS(-Aliases)</a>.</li>
+</ul>
+<h2 id="01J3YWT03RW2V8F2110NRSMF6X">Tivian's SSL Offerings</h2>
+<p>The provider we use to get SSL is <strong>Let's Encrypt</strong> and the certificates are automatically exchanged <strong>every 3 months.</strong> The customer does not need to inform us that the certificate needs to be exchanged.</p>
+<p>There are four main scenarios when a customer requests an Alias, detailed below.</p>
+<p>From a cost perspective, the first scenario is the least expensive one for Tivian, however, the last scenario is preferred, as it allows full ownership, and requiring the least customer communication.</p>
+<h3 id="h_01J3YX6C9ETF4VFRT850CHBG94">Customer owns the domain, manages DNS, Tivian handles SSL</h3>
+<ol>
+<li>
+<strong>Tivian actions</strong>
+<ol>
+<li>Configure alias on our site</li>
+<li>Set up SSL. </li>
+<li>Set up monitoring for the domain and SSL of our site (If the customer's DNS no longer points to EFS, monitoring will start on our site and the customer will be informed. If there are any problems with SSL, these will be resolved by Tivian)</li>
+</ol>
+</li>
+<li>
+<strong>Customer actions</strong>
+<ol>
+<li>Adjustment of all DNS entries (CNAME, NS, etc.)</li>
+</ol>
+</li>
+</ol>
+<h3 id="h_01J3YX6C9E6W9VN0QWSYX1CZW8">Customer owns the domain, manages DNS, provides SSL to Tivian</h3>
+<ol>
+<li>
+<strong>Tivian actions</strong><br>
+<ol>
+<li>Configure alias on our site</li>
+<li>Setting up SSL provided by the customer (before the certificate expires, the customer will be informed in advance of when he must send us a new certificate)</li>
+<li>Set up monitoring on our side (If the customer's DNS no longer points to EFS, monitoring starts on our side and the customer is informed. If there are problems with SSL, the customer may be contacted, for example to issue a new certificate)</li

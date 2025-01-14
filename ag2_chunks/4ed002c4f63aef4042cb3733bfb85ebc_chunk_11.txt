@@ -1,0 +1,60 @@
+tlest,#f0f0f0); width: 254.306px;" scope="col">
+<div class="tablesorter-header-inner">Explanation</div>
+</th>
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; background-color: var(--ds-background-accent-gray-subtlest,#f0f0f0); width: 316.771px;" scope="col">
+<div class="tablesorter-header-inner">Example</div>
+</th>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 153.264px;">case</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 274.115px;">
+<p>CASE</p>
+<p>WHEN expr1 THEN value1</p>
+<p>ELSE value2</p>
+<p>END</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 254.306px;">
+<p>Returns the THEN value for which the condition applies.</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 308.75px;">
+<p>CASE</p>
+<p>WHEN md_country = 'Germany' THEN 1</p>
+<p>WHEN md_country = 'Austria' THEN 2</p>
+<p>ELSE 99</p>
+<p>END</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 153.264px;">ceil</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 274.115px;">CEIL(x)</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 254.306px;">
+<p>Returns the smallest integer value not less than X.</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 308.75px;">
+<p>CEIL(1.23); → 2</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 153.264px;">concat</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 274.115px;">CONCAT(str1,str2,...)</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 254.306px;">
+<p>Returns the string that results from concatenating the arguments.</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 308.75px;">
+<p>CONCAT('My', 'S', 'QL');</p>
+<p>→ 'MySQL'</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 153.264px;">date_format</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 274.115px;">
+<p>DATE_FORMAT(date,format)</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 254.306px;">
+<p>Formats the date value according to the format string.</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 308.75px;">
+<p>DATE_FORMAT ('1997-10-04 22:23:00', '%W %M %Y');</p>
+<p>→ 'Saturday October 1997'</p>
+</td>
+</tr>

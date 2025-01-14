@@ -1,0 +1,73 @@
+ chapter, will be automatically preset in your admin area language. Therefore, before opening the report manager, please set your <em>EFS</em> admin area to the language in which you want to create the report. (Some of the preset texts cannot be changed at a later date.)</p>
+</li>
+<li>
+<p>Click on the <strong>Create Report</strong> button.</p>
+</li>
+<li>
+<p>Enter the title.</p>
+</li>
+<li>
+<p>Optionally, you can add a description or name the author of the report.</p>
+</li>
+<li>
+<p>Your report is automatically created in the default survey language shown in the report dialog under <strong>Language</strong>. Optionally, you can import all languages available for your report by selecting <strong>All Languages</strong> from the drop-down list.</p>
+</li>
+<li>
+<p>In personalized surveys, you can optionally select participant or panelist data: These data will then be included in the report and will be available for evaluation. Please note that you will not be able to return to this option later on.</p>
+</li>
+<li>
+<p>In panel and master data surveys, you can select panel-specific data such as master data or performance data (Chapter 4.3, p. 18). Please note that you will not be able to return to this option later on.</p>
+</li>
+<li>
+<p>Furthermore, you can select Panelist base data, Panel tracking data, and Panel group data.</p>
+</li>
+<li>
+<p>Confirm by clicking on <strong>Create</strong>.</p>
+</li>
+<li>
+<p>The report will be created. In this process, the current questionnaire structure, the existing result data of the project, and possibly also certain panel-specific data will be included in <em>EFS Reporting+</em>. Upon completion, the report will be opened for further editing.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">You can create up to three reports per project.</p>
+<p class="wysiwyg-text-align-justify">To create your report in another language than the one predefined, change the default survey language under <strong>project information</strong> accordingly, before you create your report.</p>
+<h3 id="subsequent-updating-of-reports" class="wysiwyg-text-align-justify"><strong>Subsequent updating of reports</strong></h3>
+<p class="wysiwyg-text-align-justify">When you create a report, the current questionnaire structure and the existing result data of the respective project will be transferred into<em> EFS Reporting+</em>. If you have made any subsequent changes to the questionnaire or if additional respondents have participated after creating your report, you can manually update it. This update includes:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The latest result data of the project will be included in the report.</p>
+</li>
+<li>
+<p>All calculations in the report will be repeated.</p>
+</li>
+<li>
+<p>If the questionnaire structure has changed in the meantime, the affected structural elements will be marked.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">You will find this function in the <strong>Extras</strong> → <strong>Data update</strong> menu. The update process requires considerable resources. Therefore, <em>EFS</em> checks if an update is required and prevents excessive usage.</p>
+<p class="wysiwyg-text-align-justify">After performing an update, please check your report and adjust any changed parts accordingly. The following figures show typical markings and messages.</p>
+<h3 id="updating-automatically" class="wysiwyg-text-align-justify"><strong>Updating automatically</strong></h3>
+<p class="wysiwyg-text-align-justify">The update process can be triggered automatically. I.e. if necessary, the data can be updated automatically each night, and in the morning you can work with up-to-date results.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>You cannot select today as the first day of execution. It can be the following day, at the earliest.</p>
+</li>
+<li>
+<p>The update is only executed as long as the project is in one of the following statuses: “created”, “survey compiled”, “active”, and “no further participations”. Once the project status has changed to “inactive”, “finished” or “archived”, the update is triggered one last time. Afterward, the rule will be deleted and the automated update deactivated.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">You will find this function in the<strong> Report </strong>→ <strong>Report settings</strong> menu on the General tab. Please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Tick the “Update report data automatically” checkbox.</p>
+</li>
+<li>
+<p>Specify the first day of execution and the time. It is recommended to use periods when the server traffic is low.</p>
+</li>
+<li>
+<p>Define the execution interval. You can select x days, weeks, or months.</p>
+</li>
+<li>
+<p>Confirm with <strong>Save</strong>.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Completed report files can be updated as well. This is useful, for example, if you want to offer fresh results for download on<em> EFS Survey Status</em>. Additionally, you will have the choice to save the last ten exports. If this

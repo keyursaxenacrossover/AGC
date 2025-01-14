@@ -1,0 +1,123 @@
+ related database tables ultimately.<br></p><h3 id="header-10">Deactivation</h3><pre><code class="language-text">[]Set all panelists to status "deleted" (8)
+[]Ultimately delete all panelists with status "deleted"
+[]Delete all panel surveys (PA) and master data surveys (MD)
+[]Also delete all archived surveys
+[]Delete all Panel websites (will also delete related mail templates)
+[]Delete all panel related database tables:
+  (have to be defined yet)
+[]Reset healself tasks ?
+[]Reset Document Root from panelwebsite to uc
+  rm document_root; ln -s uc document_root
+[] Inform CHD/client after everything has been deleted and panel module has been deactivated.</code></pre><p></p><p></p><h2 id="header-12">Website</h2><h3 id="header-14">Module mit zugehörigen Templates</h3><p>This list was created by using the Responsive Panel website in version 16.4</p><table data-layout="default" data-table-width="760" ac:local-id="b92e8c7b-9ab0-4eee-8c00-ec0342af92c8">
+<colgroup>
+<col style="width: 340.0px;">
+<col style="width: 340.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/EFSPanelInstall?sortcol=0;table=1;up=0#sorted_table">Module</a></p></th>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/EFSPanelInstall?sortcol=1;table=1;up=0#sorted_table">Template</a></p></th>
+</tr>
+<tr>
+<td><p>Account Balance</p></td>
+<td><p>func_account_balance</p></td>
+</tr>
+<tr>
+<td><p>Activity Stream</p></td>
+<td><p>func_activitystream</p></td>
+</tr>
+<tr>
+<td><p>Bonus list and redemption</p></td>
+<td><p>func_redemption</p></td>
+</tr>
+<tr>
+<td><p>Change data</p></td>
+<td><p>func_change_details</p></td>
+</tr>
+<tr>
+<td><p>Change password facility</p></td>
+<td><p>func_change_password</p></td>
+</tr>
+<tr>
+<td><p>Chat</p></td>
+<td><p>func_chat</p></td>
+</tr>
+<tr>
+<td><p>Contact form</p></td>
+<td><p>func_contact_form</p></td>
+</tr>
+<tr>
+<td><p>Discussion</p></td>
+<td><p>func_discussion</p></td>
+</tr>
+<tr>
+<td><p>Display of private messages</p></td>
+<td><p>func_messages<br>func_messages_full<br>func_messages_home<br>func_messages_light</p></td>
+</tr>
+<tr>
+<td><p>Downloads</p></td>
+<td><p>func_download<br>func_efsfilemanager</p></td>
+</tr>
+<tr>
+<td><p>E-Mail Adddress change facility</p></td>
+<td><p>func_change_email</p></td>
+</tr>
+<tr>
+<td><p><a href="https://it.globalpark.de/twiki/bin/view/Support/FAQ">FAQ</a> list</p></td>
+<td><p>func_faq</p></td>
+</tr>
+<tr>
+<td><p>Forum</p></td>
+<td><p>func_forum<br>func_forum_alternative<br>func_flat_forum</p></td>
+</tr>
+<tr>
+<td><p>Leaderboard</p></td>
+<td><p>func_leaderboard</p></td>
+</tr>
+<tr>
+<td><p>Leaderboard2</p></td>
+<td><p>func_leaderboard2<br>func_leaderboard2_light</p></td>
+</tr>
+<tr>
+<td><p>Search Page</p></td>
+<td><p>func_search</p></td>
+</tr>
+<tr>
+<td><p>List of featured panelist blogs</p></td>
+<td><p>func_blogs_featured</p></td>
+</tr>
+<tr>
+<td><p>List of prize draws won</p></td>
+<td><p>func_won_prize_draws</p></td>
+</tr>
+<tr>
+<td><p>Lost Account</p></td>
+<td><p>func_lostaccount</p></td>
+</tr>
+<tr>
+<td><p>Mail sending</p></td>
+<td><p>func_report_form</p></td>
+</tr>
+<tr>
+<td><p>News</p></td>
+<td><p>func_news<br>func_news_inc</p></td>
+</tr>
+<tr>
+<td><p>Notification</p></td>
+<td><p>func_notification</p></td>
+</tr>
+<tr>
+<td><p>Panelist Blog</p></td>
+<td><p>func_blog_featured<br>func_blog_featured_inc<br>func_blog</p></td>
+</tr>
+<tr>
+<td><p>Panelist Ratings</p></td>
+<td><p>func_panelist_rating</p></td>
+</tr>
+<tr>
+<td><p>Panelist Online</p></td>
+<td><p>func_panelists_online</p></td>
+</tr>
+<tr>
+<td><p>Picture upload for panelist profile</p></td>
+<td

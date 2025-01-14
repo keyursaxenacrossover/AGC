@@ -1,0 +1,84 @@
+<h1 id="h_01J69RPVYWSQ1W0STJAMT1KJ7N">Overview</h1>
+<p>When managing EFS (Enterprise Feedback System) installations, it may be necessary to reconfigure or reset the integration with Okta. This process involves disabling automatic syncs, recreating applications in Okta, and ensuring that all configurations align with the new setup requirements. This guide will walk you through the steps needed to successfully re-set up an EFS installation in Okta.</p>
+<p> </p>
+<h2 id="h_01J69RPVYW9D0VH3S4WJ4YSKS9">Problem Definition</h2>
+<p>Organizations may need to reset their EFS installation due to misconfigurations, changes in application settings, or updates to group assignments. This process is critical to ensure that all users and applications are properly synced and that security settings are appropriately applied.</p>
+<p> </p>
+<h2 id="h_01J69RPVYW0RC66109YJ39JXJC">Solution</h2>
+<h4 id="h_01J69RPVYW2V897K8817QZEGSK">Step 1: <strong>Disable Automatic Syncs and Shut Down Questback Access</strong>
+</h4>
+<ul>
+<li>Disable all automatic syncs within the EFS installation.</li>
+<li>Shut down the Questback access module to prevent any synchronization issues during the reconfiguration process.</li>
+</ul>
+<h4 id="h_01J69RPVYWM7A7XCWA5W30ZR43">Step 2: <strong>Recreate the Application in Okta</strong>
+</h4>
+<ol>
+<li>
+<p><strong>Remove the Existing Application</strong>:</p>
+<ul>
+<li>Delete the current application associated with the EFS installation from Okta.</li>
+</ul>
+</li>
+<li>
+<p><strong>Create the New Application</strong>:</p>
+<ul>
+<li>Recreate the application in Okta with the correct settings.</li>
+<li>Ensure that the application is configured with the correct name and that it is limited to one installation per app.</li>
+<li>Copy and securely store the settings for <code>clientId</code>, <code>clientSecret</code>, and <code>redirect_uri(s)</code>.</li>
+</ul>
+</li>
+</ol>
+<h4 id="h_01J69RPVYWHAJ7CRBBFM5GKJPF">Step 3: <strong>Delete and Recreate Portal Applications</strong>
+</h4>
+<ul>
+<li>Delete all Okta portal applications associated with the installation.</li>
+<li>Create installation-specific groups in Okta if they are not already available. These groups will be used for application assignments.</li>
+</ul>
+<h4 id="h_01J69RPVYW7RAP4X025QYM3BBH">Step 4: <strong>Clear Reference Tables in EFS</strong>
+</h4>
+<ul>
+<li>Clear the following reference tables within the EFS system:
+<ul>
+<li><strong>Panelists</strong></li>
+<li><strong>Admin users</strong></li>
+<li><strong>Portals</strong></li>
+</ul>
+</li>
+</ul>
+<h4 id="h_01J69RPVYWC539XHTMWCHRF4VJ">Step 5: <strong>Update IAM Configuration</strong>
+</h4>
+<ul>
+<li>Update the IAM (Identity and Access Management) configuration in EFS with the new values:
+<ul>
+<li><code>clientId</code></li>
+<li><code>clientSecret</code></li>
+<li><code>redirectUri</code></li>
+</ul>
+</li>
+<li>Ensure that a tenant-specific API Token, created by the API User, is used for these updates.</li>
+</ul>
+<h4 id="h_01J69RPVYWX7ESZFASH79R2V1G">Step 6: <strong>Trigger Migration Scripts</strong>
+</h4>
+<ul>
+<li>
+<strong>Sync Portals</strong>: Start the synchronization process for all portals.</li>
+<li>
+<strong>Sync and Assign Users</strong>: Trigger the user synchronization process and assign users to the appropriate groups and applications. Since all users should already be available in Okta, this step ensures proper assignment.</li>
+<li>
+<strong>EFS Admin and Panelists</strong>: Ensure that EFS Admins and panelists are correctly synced and assigned.</li>
+</ul>
+<h4 id="h_01J69RPVYWEPD67MYGKRGDNDNT">Step 7: <strong>Re-Enable Questback Access</strong>
+</h4>
+<ul>
+<li>Once all steps have been completed and verified, re-enable the Questback access module to resume normal operations.</li>
+</ul>
+<h3 id="h_01J69RPVYWH3JH970VHS1SM3CP">Summary</h3>
+<p>Re-setting up an EFS installation in Okta involves a series of steps designed to ensure that applications, users, and groups are correctly configured and synchronized. By following this guide, you can effectively manage the reconfiguration process and prevent potential synchronization issues.</p>
+<p> </p>
+<h1 id="h_01J69RPVYXM0YKT36BTGE2C75S">FAQ</h1>
+<ol>
+<li>
+<p><strong>Why do I need to disable automatic syncs before reconfiguration?</strong></p>
+<ul>
+<li>Disabling automatic

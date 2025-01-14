@@ -1,0 +1,35 @@
+{
+    "id": 23218947713810,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/23218947713810.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/23218947713810-How-to-Identify-the-Customer-DNS-Provider",
+    "author_id": 1904316023094,
+    "comments_disabled": false,
+    "draft": false,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20234774909202,
+    "created_at": "2024-12-11T11:30:42Z",
+    "updated_at": "2024-12-11T12:04:43Z",
+    "name": "How to Identify the Customer DNS Provider",
+    "title": "How to Identify the Customer DNS Provider",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-12-11T12:04:42Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075294,
+    "content_tag_ids": [],
+    "label_names": [
+        "DNS",
+        "Tivian Support",
+        "nslookup",
+        "DNS provider"
+    ],
+    "body": "<h1 id=\"h_01JETQVCAEJ9NT4WFADZ2AAKTS\">Overview</h1>\n<p>This guide provides steps for agents to identify a customer's DNS provider in case customer is not aware of it, which is critical for assisting with DNS configuration changes such as updating DKIM, SPF, or CNAME records.</p>\n<hr>\n<h3 id=\"h_01JETS7YGPSGGRCSRDJX30W5S6\">Solution</h3>\n<p>Follow these steps to identify the DNS provider for a customer's domain:</p>\n<h4 id=\"h_01JETS7YGPXZWBCD4ZHP32Z14J\"><strong>1. Use the <code>nslookup</code> Command</strong></h4>\n<ul>\n<li>Open your terminal or command prompt.</li>\n<li>Run the <code>nslookup</code> command:\n<ol>\n<li>Type <code>nslookup</code> and press Enter.</li>\n<li>Type <code>set type=ns</code> and press Enter.</li>\n<li>Enter the customer's domain name (e.g., <code>swiss.com</code>) and press Enter.</li>\n</ol>\n</li>\n</ul>\n<p>The output will display the nameservers for the domain. For example:</p>\n<div class=\"contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary dark:bg-gray-950\">\n<pre class=\"overflow-y-auto p-4\" dir=\"ltr\"><code class=\"!whitespace-pre hljs language-java\">swiss.<span class=\"hljs-type\">com</span>  <span class=\"hljs-variable\">nameserver</span> <span class=\"hljs-operator\">=</span> ns1.swiss.com.\nswiss.<span class=\"hljs-type\">com</span>  <span class=\"hljs-variable\">nameserver</span> <span class=\"hljs-operator\">=</span> ns2.swiss.com.\nswiss.<span class=\"hljs-type\">com</span>  <span class=\"hljs-variable\">nameserver</span> <span class=\"hljs-operator\">=</span> de.ch-inter.net.\nswiss.<span class=\"hljs-type\">com</span>  <span class=\"hljs-variable\">nameserver</span> <span class=\"hljs-operator\">=</span> ch.ch-inter.net.\nswiss.<span class=\"hljs-type\">com</span>  <span class=\"hljs-variable\">nameserver</span> <span class=\"hljs-operator\">=</span> nl.ch-inter.net.\n</code></pre>\n</div>\n<p><strong><br>Analysis:</strong><br>In this example, the nameservers <code>de.ch-inter.net</code>, <code>ch.ch-inter.net</code>, and <code>nl.ch-inter.net</code> suggest \"ch-inter.net\" is the primary DNS provider.</p>\n<h4 id=\"h_01JETS7YGPTFTERWT7J3CWS5EP\">\n<br><strong>2. Find the Registrar for the Domain</strong>\n</h4>\n<p>If the nameservers are unclear or suggest multiple providers, perform a WHOIS lookup to determine the domain's registrar and associated DNS details. Options include:</p>\n<ul>\n<li>\n<p><strong>Online WHOIS Lookup Tools:</strong></p>\n<ul>\n<li><a href=\"https://whois.domaintools.com\" target=\"_new\" rel=\"noopener\">https://whois.domaintools.com</a></li>\n<li><a href=\"https://www.whois.com\" target=\"_new\" rel=\"noopener\">https://www.whois.com</a></li>\n</ul>\n</li>\n<li>\n<p><strong>AI-Powered Search Tools:</strong></p>\n<ul>\n<li>Use <strong>Ephor</strong> or <strong>Perplexity</strong> to perform an AI-driven search for the domain.</li>\n<li>These tools can provide consolidated information about the registrar, DNS hosting provider, and contact details.</li>\n</ul>\n</li>\n</ul>\n<p><strong>Example Lookup Results for <code>ch-inter.net</code>:</strong><br>Using a WHOIS lookup or AI search, you might find:</p>\n<div class=\"contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary dark:bg-gray-950\">\n<pre class=\"overflow-y-auto p-4\" dir=\"ltr\"><code class=\"!whitespace-pre hljs language-yaml\"><span class=\"hljs-attr\">Registrar:</span> <span class=\"hljs-string\">1API</span> <span class=\"hljs-string\">GmbH</span>\n<span class=\"hljs-attr\">Registration Date:</span> <span class=\"hljs-string\">Nov</span> <span class=\"hljs-number\">12</span><span class=\"hljs-string\">,</span> <span class=\"hljs-number\">2001</span>\n<span class=\"hljs-attr\">Expiry Date:</span> <span class=\"hljs-string\">Nov</span> <span class=\"hljs-number\">12</span><span class=\"hljs-string\">,</span> <span class=\"hljs-number\">2025</span>\n<span class=\"hljs-attr\">Nameservers:</span> <span class=\"hljs-string\">ns.ch-inter.net,</span> <span class=\"hljs-string\">ns2.ch-inter.net</span>\n</code></pre>\n</div>\n<p>Here, <strong>1API GmbH</strong> is identified as the registrar for <code>ch-inter.net</code>, and the customer should contact them or the DNS administrator for changes.</p>\n<p> </p>\n<hr>\n<h3 id=\"h_01JETS7YGP60T7Q7KV4Q16DYBV\">Summary</h3>\n<p>To identify a customer's DNS provider:</p>\n<ol>\n<li>Use the <code>nslookup</code> command to find the domain’s nameservers.</li>\n<li>Use WHOIS lookup tools or AI services like Ephor or Perplexity to determine the registrar and DNS hosting details.</li>\n</ol>\n<p>This approach ensures accurate identification of the DNS provider and facilitates the customer’s ability to implement changes.</p>\n<h2 id=\"h_01JETQVCAFF5MBJGCZ1EVX0QG5\">FAQ</h2>\n<ol>\n<li>\n<strong>What is a DNS provider?</strong><br>A DNS provider is a company that manages the DNS servers that translate domain names into IP addresses.</li>\n<li>\n<strong>Why do I need to know who is the DNS provider for the customer?</strong><br>Knowing the DNS provider is crucial for implementing DNS configuration changes and ensuring that customers follow the correct process for updating the DNS records.</li>\n</ol>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

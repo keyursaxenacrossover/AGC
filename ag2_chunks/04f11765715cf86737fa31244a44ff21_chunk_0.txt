@@ -1,0 +1,47 @@
+<h2 id="h_01J6S8NB7GCSJP7G9BYGBMCF43">Table of Contents</h2>
+<ul>
+<li><a href="#header-1">How do I unpack archived projects and change the special characters</a></li>
+<li><a href="#header-3">Collect all EFS users in a cluster and pack them into a csv file</a></li>
+<li><a href="#header-4">Run across installations and count the db size</a></li>
+<li><a href="#header-5">Send mail from command line or from shell scriptz</a></li>
+</ul>
+<h2 id="Wie-entpacke-ich-archivierte-Projekte-und-ändere-die-Sonderzeichen." data-renderer-start-pos="4"><font>How do I unpack archived projects and change the special characters? </font></h2>
+<pre><code class="language-text">unzip Project_3899.zip
+mv survey.xml survey.xml2.gz
+gunzip survey.xml2.gz
+vi survey.xml2 (Replace invalid chars)
+gzip survey.xml2
+mv survey.xml2.gz survey.xml
+zip -FF -u Project_3899.zip conjoint_calculation.sql conjoint_graph.sql diffs.sql sample_data.desc sample_data.sql structure_users_4674.dump survey.xml users_4674.dump</code></pre>
+<p> </p>
+<h2 id="Sammle-alle-EFS-Nutzer-in-einem-Cluster-und-packe-sie-in-eine-csv-Datei" data-renderer-start-pos="403"><font> Collect all EFS users in a cluster and pack them into a csv file </font></h2>
+<pre><code class="language-bash">echo "installation; created; u_firstname; u_namelower; u_email; u_account; gender; language; lastlogin; num_logins; login_expire; login_disabled; ORGA; contract_end" &gt;&gt; /nfs/dumps/EFS_Users$(date "+%Y-%m-%d").csv &amp;&amp; for i in  $(ls /nfs/installations); do cd /nfs/installations/$i/nfs/opst/$i.customervoice360.com/htdocs; pwd; echo "SELECT \"$i\", created, u_firstname, u_name, lower(u_email), u_account, CASE WHEN u_gender=1 Then 'male' WHEN u_gender=2 Then 'female' ELSE 'no info' END AS gender, lang AS language, if(lastlogin='NULL','never',from_unixtime(lastlogin)) AS lastlogin, num_logins, if(login_expire != 'NULL', from_unixtime(login_expire), 'unrestricted') AS login_expire, login_disabled, name AS ORGA, contract_end FROM users,user_att,login_att,admin_user_contract,admin_contract_org WHERE admin_contract_org.id=admin_user_contract.org AND admin_user_contract.uid=users.uid AND users.uid=user_att.uid AND user_att.uid=login_att.uid AND u_email not like '%questback%' AND u_email not like '%servicelayer%' AND u_email not like '%dummy%' AND u_email not like '%tivian%' AND u_email not like '%globalpark%' AND u_email not like '%3uu%' AND u_email not like '%teilnehmer%' AND u_email not like '%invalid%' AND u_email not like '%gmail%' AND u_email not like '%support%' AND u_email not like '%soporte%'  AND u_email not like '%client%' AND u_email not like '%training%' AND u_email not like '%sistemas%' AND u_email not like '%invalid%' AND u_email not like '%@student%' AND u_email not like '%test%';" | efslogin | grep -v '^Running\|^Connecting\|^customer\|u_account' | sed 's/\t/;/g;s/\/nfs\/[^\/]*\///g'  &gt;&gt; /nfs/dumps/EFS_Users$(date "+%Y-%m-%d").csv; done</code></pre>
+<p><span style="color: #172b4d; background-color: #ffffff;">The whole thing in comprehensible and readable format:</span></p>
+<pre><code class="language-bash">echo "installation; created; u_firstname; u_name; u_email; u_account; gender; language; lastlogin; num_logins; login_expire; login_disabled; ORGA; contract_end" 
+&gt;&gt; /nfs/dumps/EFS_Users$(date "+%Y-%m-%d").csv 
+&amp;&amp; 
+for i in  $(ls /nfs/installations); 
+do cd /nfs/installations/$i/nfs/opst/$i.customervoice360.com/htdocs; 
+pwd; 
+echo "SELECT 
+\"$i\", 
+created, 
+u_firstname, 
+u_name, 
+lower(u_email), 
+u_account, 
+CASE WHEN u_gender=1 Then 'male' WHEN u_gender=2 Then 'female' ELSE 'no info' END AS gender, 
+lang AS language, 
+if(lastlogin='NULL','never',from_unixtime(lastlogin)) AS lastlogin, 
+num_logins, 
+if(login_expire != 'NULL', from_unixtime(login_expire), 'unrestricted') AS login_expire, 
+login_disabled, 
+name AS ORGA, 
+contract_end 
+FROM users,user_att,login_att,admin_user_contract,admin_contract_org 
+WHERE admin_contract_org.id=admin_user_contract.org 
+AND admin_user_contract.uid=users.uid 
+AND users.uid=user_att.uid 
+AND user_att.uid=login_att.uid 
+AND u_email not like '%questback%' 
+AND

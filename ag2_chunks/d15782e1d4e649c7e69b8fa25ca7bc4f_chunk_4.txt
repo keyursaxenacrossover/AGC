@@ -1,0 +1,48 @@
+ select the appropriate categories for their content.</p>
+<h2 id="activating-and-configuring-tagging" class="wysiwyg-text-align-justify"><strong>Activating and Configuring Tagging</strong></h2>
+<p class="wysiwyg-text-align-justify">For tags, the panel administrator can decide whether to allow the usage or not, and which conditions should apply. The respective options can be found in the menu <strong>Website → Global configuration</strong>.</p>
+<h2 id="using-tagging" class="wysiwyg-text-align-justify"><strong>Using Tagging</strong></h2>
+<p class="wysiwyg-text-align-justify">The panelists themselves create the tags themselves, when writing blog posts, forum threads and discussion posts.</p>
+<p class="wysiwyg-text-align-justify">Administrators can access all tags created by the panelists via the tagging browser in the menu <strong>Website → Classifications →</strong> tab <strong>Tags</strong>.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>They can delete or block (i.e. blocklist) tags.</li>
+<li>Two tags with the same meaning can be merged. E.g. all posts with the tag “product” and “products” can be merged into “products”.</li>
+</ul>
+<h2 id="denying-use-of-tagging-for-specific-panelists" class="wysiwyg-text-align-justify"><strong>Denying Use of Tagging for Specific Panelists</strong></h2>
+<p class="wysiwyg-text-align-justify">The panel administrator can block specific panelists from using the tagging feature.</p>
+<p class="wysiwyg-text-align-justify">For this purpose, in the panelist’s detail view in <strong>Panelist administration</strong>, go to the section “Permissions” and flag “Not allowed to tag content”.</p>
+<h1 id="leaderboard" class="sc-chbbiW dCajGG wysiwyg-text-align-justify"><strong>Leaderboard</strong></h1>
+<p class="wysiwyg-text-align-justify">A leaderboard can be used to present the best, most active panelists. Thus, you can increase motivation and engagement in your community.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>A specific panel group can be specified as basic set.</li>
+<li>The number of listed panelists can be defined.</li>
+<li>The selection criterion can be chosen from a variety of data, as e.g. date of entry, number of bonus points, average rating the panelist received for community content etc.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The new leaderboard is made available in addition to the existing leaderboard, with its own dedicated function module and its own template. Existing templates are not modified.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify">Usually, first name and last name of the panelists are displayed, assuming that profile visibility  is configured accordingly. If visibility for both first and last name is deactivated or “Show profile to others” switched of in principle, the default text “withheld” will be displayed.</p>
+<h2 id="integrating-the-leaderboard-into-the-website" class="wysiwyg-text-align-justify"><strong>Integrating the Leaderboard into the Website</strong></h2>
+<p class="wysiwyg-text-align-justify">In order to set up the leaderboard, please proceed as follows:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>On the desired page, create a page module of the “Leaderboard2” type.</li>
+<li>Select the “func_leaderboard2” module template or „func_leaderboard2_light“ for a sidebar integration.</li>
+<li>Configure the setting options as required.</li>
+</ol>
+<h2 id="table-based-leaderboard" class="wysiwyg-text-align-justify"><strong>Table-Based Leaderboard</strong></h2>
+<p class="wysiwyg-text-align-justify">Since EFS 10.0, a first, table-based version of the leaderboard has been available. It includes three rankings. The length of the lists can be configured as desired.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>All Time: Overall number of bonus points the panelists collected.</li>
+<li>Accumulated: Current number of bonus points.</li>
+<li>Stars: Virtual points awarded by other panelists in the chosen social currency of the panel.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Integrating the Leaderboard into the Website</strong></p>
+<p class="wysiwyg-text-align-justify">In order to set up the leaderboard, please proceed as follows:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>On the desired page, create a page module of the “Leaderboard” type.</li>
+<li>Select the “func_leaderboard” module template.</li>
+<li>Configure the setting options as required.</li>
+</ol>
+<p class="wysiwyg-text-align-justify"> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863" class="wysiwyg-text-align-justify">FAQ</h1>
+<h3 id="faq_1" class="wysiwyg-text-align-justify">What are the system requirements for text search?</h3>
+<p

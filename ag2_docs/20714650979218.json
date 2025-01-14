@@ -1,0 +1,30 @@
+{
+    "id": 20714650979218,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/20714650979218.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20714650979218-Mirror-installation-checks-after-creation",
+    "author_id": 369584192734,
+    "comments_disabled": false,
+    "draft": true,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20714530860562,
+    "created_at": "2024-08-12T16:53:06Z",
+    "updated_at": "2024-08-12T16:53:08Z",
+    "name": "Mirror installation checks after creation",
+    "title": "Mirror installation checks after creation",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-08-12T16:53:08Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075294,
+    "content_tag_ids": [],
+    "label_names": [],
+    "body": "<p><b>Original Confluence URL:</b> <a href=\"https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1061453960\">https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1061453960</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>\n\n<p>After system administration has created a mirror installation we need to adjust some settings and check the installation </p><ul>\n<li>\n<p>Login to installation using the root account and check the config (The mirror installation script was updated on 13.08.2015 and already changes the following config variables. You though can double check them):</p>\n<ul>\n<li><p>\"panel_global_search_db\" is reset to default, to avoid that search requests are made on the live db</p></li>\n<li><p>\"gp_id\" is reset to default, to avoid that the DBReport changes the Globis entry of the live installation</p></li>\n<li><p>\"tmp_path_export\" is reset to default, so that the data export can be executed</p></li>\n<li><p>\"tmp_path\" is set to match the tmp path of the mirror server</p></li>\n<li><p>\"watchdog_path\" is set to the path of the mirror server ([tmp folder of installation]/watchdog, e.g. /nfs/opst_temp2/watchdog/)</p></li>\n<li><p>\"use_hurricane_mta\" is set to FALSE</p></li>\n<li><p>\"rabbitmq_host\" is cleared so that the jobmaker does not fetch codes of the live installation</p></li>\n<li><p>\"export_jobmaker_behaviour\" is set to 1 to make loop data exports possible</p></li>\n<li><p>Table \"memcache_servers\" is set to \"127.0.0.1\" so that configurations of Live SINC modules are not overwritten</p></li>\n<li><p>Push service (portals) needs to be deactivated</p></li>\n</ul>\n</li>\n<li><p>Only if <strong>not anonymized</strong> also clear smtp_server so adhoc emails are not being sent</p></li>\n<li><p>If “<strong>Two-Factor-Authorisation</strong>” is active on the original installation, the config variable admin_login_do2fa needs to be set to false.</p></li>\n<li>\n<p>If <strong>MySight</strong> was used on the original installation, the projects are copied as well.</p>\n<ul>\n<li><p>The existing Exasol connection has to be changed so that data from the mirror does not overwrite the live data!</p></li>\n<li><p>If <a href=\"https://it.globalpark.de/twiki/bin/view/Support/MySight\">EFS Mysight</a> needs to be used on the mirror, System Administration has to create an extra Intermediate and Exasol database for the mirror installation and it has to be configured in EFS.</p></li>\n</ul>\n</li>\n<li>\n<p>Open config file on console:</p>\n<ul>\n<li><p>Has the gpname been changed to the name of the mirror installation?</p></li>\n<li><p>Have the database settings been changed to match the database of the mirror installation?</p></li>\n</ul>\n</li>\n<li>\n<p>Execute installation check:</p>\n<ul><li>\n<p>You can ignore the following messages</p>\n<ul>\n<li><p>Cron jobs for SnailMail, jobmaker and dbreportstamp (they are not executed on mirror installations)</p></li>\n<li><p>The configuration is missing the installation ID</p></li>\n<li><p>access to external services</p></li>\n</ul>\n</li></ul>\n</li>\n</ul><p> </p><p>If you get Error 404 after logging in to the mirror installation:</p><ul><li>\n<p>check database tables</p>\n<ul><li>\n<pre><code class=\"language-text\">SHOW CREATE TABLE config_variables;</code></pre>\n<p>, if Error</p>\n<pre><code class=\"language-text\">ERROR 1286 (42000): Unknown table engine 'InnoDB'</code></pre>\n</li></ul>\n</li></ul>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

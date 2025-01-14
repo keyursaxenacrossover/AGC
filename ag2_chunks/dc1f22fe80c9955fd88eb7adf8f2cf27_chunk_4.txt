@@ -1,0 +1,54 @@
+ can be found <a href="https://www.netplace.de/de/blog/dmarc" target="_new" rel="noreferrer">here</a>.</p>
+<p class="wysiwyg-text-align-justify"><strong>Adding a DMARC Record:</strong></p>
+<p class="wysiwyg-text-align-justify"><strong>Prerequisites:</strong> Existing SPF and DKIM entries.</p>
+<p class="wysiwyg-text-align-justify"><strong>If You Manage the Domain:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Store the DMARC record yourself. Start with "v=DMARC1; p=none" and later configure a policy suitable for your company. Further guidance is available <a target="_new" rel="noreferrer">here</a>.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>If TIVIAN Manages the Domain:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Request DMARC from Support.</li>
+<li>IT Operations will set up the DMARC record.</li>
+<li>Support will inform you after implementation.</li>
+</ul>
+<h3 id="h_01HGKSMPRTYJQX9QJXD9XBXNR" class="wysiwyg-text-align-justify">Own/External Mail Server</h3>
+<p class="wysiwyg-text-align-justify">Using an external mail server for your EFS installation is possible, but some EFS features will be lost, including the Mail report and hard bouncing for emails. All mails will be marked as sent, and you won't see which participants were unreachable.</p>
+<p class="wysiwyg-text-align-justify"><strong>Setting up Your Own/External Mail Server:</strong> To set up an external mail server, provide the following information:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Server/Host</li>
+<li>Port</li>
+<li>Account/User</li>
+<li>Password</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Processing takes approximately 3-5 days and is free of charge. Note that this setup is an open SMTP relay with no separate authentication between EFS and the mail server.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="h_01HGKSMPRTPYJQX9QJXD9XBXNR" class="wysiwyg-text-align-justify">Adding Mail Senders Correctly in EFS</h2>
+<p class="wysiwyg-text-align-justify">To correctly add mail senders in EFS, follow these steps:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Define Sender Addresses:</strong> Sender addresses are defined in advance, especially if using shared mailboxes.</p>
+</li>
+<li>
+<p><strong>Manage Sender Addresses:</strong> Go to Libraries → Mail templates → Mail senders.</p>
+</li>
+<li>
+<p><strong>Add a New Sender:</strong> Click on the Add e-mail address button to open the dialog. Enter the email address, associated real name (if needed), and authorized teams.</p>
+</li>
+<li>
+<p><strong>SPF Check:</strong> When adding a mail sender, an SPF check of the sender's domain is performed. If the SPF check result is conspicuous, the sender cannot be created.</p>
+</li>
+<li>
+<p><strong>Using Default Sender Address:</strong> If you can't change the SPF record for your email domain, you can use the default sender address Survey <a rel="noreferrer">noreply@customervoice360.com</a>. Create a new mail sender with the email address <a rel="noreferrer">noreply@customervoice360.com</a> and use your company name as the real name.</p>
+</li>
+</ol>
+<p class="wysiwyg-indent1 wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017221271698"></p>
+<p class="wysiwyg-text-align-justify">This ensures your emails are sent from verified addresses, reducing the risk of delivery issues or being marked as spam.</p>
+<h2 id="h_01HGKSMPRTXYJQX9QJXD9XBXNS" class="wysiwyg-text-align-justify">Using List-Unsubscribe Header</h2>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="12749">Another way to reduce the likelihood of your emails ending up in the spam folder is the <strong data-renderer-mark="true">List-Unsubscribe Header </strong>option. You can add a link in Email templates that participants can use to unsubscribe from automatic emails.</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="12972">Proceed as follows to set this up:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="13010">Expand the <strong data-renderer-mark="true">Advanced mail settings</strong> area in your mail template.</p>
+</li>
+<li>
+<p data-renderer-start-pos="13075">In the free text field next to <strong data-renderer-mark="true">List-Unsubscribe Header</strong>, insert a valid link to a website that participants can use to unsubscribe. You can also enter the following placeholders in the field:</p>

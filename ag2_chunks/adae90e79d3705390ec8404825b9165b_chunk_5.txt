@@ -1,0 +1,79 @@
+justify">No participant information is sent to 3rd parties, all data is stored and processed in our datacenters.</p>
+<h2 id="location-variables" class="wysiwyg-text-align-justify"><strong>Location variables</strong></h2>
+<p class="wysiwyg-text-align-justify">The location variables store meta information about automatic geo-location based on the participant’s IP address (e.g. estimation of the participant’s continent, country and state)</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 271.0px;"> <col style="width: 487.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Variables</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p><em>participant_continent</em></p>
+</td>
+<td>
+<p>Continent (e.g. „Europe“)</p>
+<p><code>-99	Unknown</code><br><code>1	Anonymous Proxy</code><br><code>2	Satellite Provider</code><br><code>3	Europe</code><br><code>4	Asia</code><br><code>5	North America</code><br><code>6	Africa</code><br><code>7	Oceania</code><br><code>8	South America</code><br><code>9	Antarctica</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>participant_country</em></p>
+</td>
+<td>
+<p>Country (e.g. „United Kingdom“), <em>see codebook in the project</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>participant_region</em></p>
+</td>
+<td>
+<p>Region (e.g. „ Lancashire”), <em>text value</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>participant_city</em></p>
+</td>
+<td>
+<p>City (e.g. „Lancaster“), <em>text value</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>participant_latitude</em></p>
+</td>
+<td>
+<p>Latitude</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>participant_longitude</em></p>
+</td>
+<td>
+<p>Longitude</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify">The new variables can be used in filters, triggers, exports, the detail view, Reporting+ and more.</p>
+<p class="wysiwyg-text-align-justify">The functionality “Detect participants' location using the IP address” needs to be enabled in the project properties. The functionality is disabled by default.</p>
+<p class="wysiwyg-text-align-justify">The geo-location information is 99.8% accurate on country and continent level. The GeoIP database of <em>Maxmind</em> is used:  <a href="https://www.maxmind.com/en/geoip2-city-accuracy-comparison">https://www.maxmind.com/en/geoip2-city-accuracy-comparison</a></p>
+<p class="wysiwyg-text-align-justify">In surveys created with EFS&lt;10.6 this meta information is not available because the device type, brand data and geo location was not collected at that time.</p>
+<p class="wysiwyg-text-align-justify">No participant information is sent to 3rd parties, all data is stored and processed in our datacenters.</p>
+<p class="wysiwyg-text-align-justify">The localization is based on the IP of the participant and the information provided by the Internet provider. The localization accurate to the city cannot be guaranteed.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863" class="wysiwyg-text-align-justify">FAQ</h1>
+<h3 id="faq-1" class="wysiwyg-text-align-justify">How can I access the survey variables in my project?</h3>
+<p class="wysiwyg-text-align-justify">You can access the survey variables from the codebook by selecting "Show survey variables" in the Documentation Codebook section of your project.</p>
+<h3 id="faq-2" class="wysiwyg-text-align-justify">Are all survey variables updated if a participant resumes the survey on a different device?</h3>
+<p class="wysiwyg-text-align-justify">No, certain variables like device_type, user_agent, participant_browser, and participant_os are only retrieved once for each participant and will not be refreshed if they resume the survey on a different device.</p>
+<h3 id="faq-3" class="wysiwyg-text-align-justify">How accurate is the geo-location information?</h3>
+<p class="wysiwyg-text-align-justify">The geo-location information is 99.8% accurate on country and continent level. However, localization accurate to the city cannot be guaranteed as it is

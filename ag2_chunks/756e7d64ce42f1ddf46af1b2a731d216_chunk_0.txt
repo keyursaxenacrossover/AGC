@@ -1,0 +1,43 @@
+<h1 id="h_01J38F67A4GV25C4WC4NM15PGN">Overview</h1>
+<article>
+<p>This article explains how to randomize specific parts of a questionnaire that consist of non-randomized pages using the Random Order feature and filters.</p>
+<p> </p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<ul class="ak-ul" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="31">Create a Random Order "page" (in the "Dynamics" options under Questionnaire Editor)</p>
+</li>
+<li>
+<p data-renderer-start-pos="118">Create a filter for each block you want to randomize (example: you have two parts, you create two filters) that depends directly on the Random Order page</p>
+</li>
+<li>
+<p data-renderer-start-pos="276">Make the questions depend on the filters you need</p>
+</li>
+</ul>
+<p data-renderer-start-pos="329">The Random Order behavior only affects the first child, so both filters will rotate, but every page within the filters will be displayed in the right order.</p>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq1">How does the Random Order behavior affect the questionnaire?</h3>
+<p>The Random Order behavior only affects the first child, meaning that the filters you created will rotate. However, every page within the filters will be displayed in the correct order.</p>
+<p> </p>
+<p> </p>
+</article> id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<ul class="ak-ul" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="31">Create a Random Order "page" (in the "Dynamics" options under Questionnaire Editor)</p>
+</li>
+<li>
+<p data-renderer-start-pos="118">Create a filter for each block you want to randomize (example: you have two parts, you create two filters) that depends directly on the Random Order page</p>
+</li>
+<li>
+<p data-renderer-start-pos="276">Make the questions depend on the filters you need</p>
+</li>
+</ul>
+<p data-renderer-start-pos="329">The Random Order behavior only affects the first child, so both filters will rotate, but every page within the filters will be displayed in the right order.</p>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq1">How does the Random Order behavior affect the questionnaire?</h3>
+<p>The Random Order behavior only affects the first child, meaning that the filters you created will rotate. However, every page within the filters will be displayed in the correct order.</p>
+<p> </p>
+<p> </p>
+</article>

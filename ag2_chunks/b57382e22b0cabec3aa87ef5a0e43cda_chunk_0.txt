@@ -1,0 +1,101 @@
+<p> </p>
+<div class="flex max-w-full flex-col flex-grow">
+<div class="min-h-[20px] text-message flex w-full flex-col items-end gap-2 break-words [.text-message+&amp;]:mt-5 overflow-x-auto whitespace-normal" dir="auto" data-message-author-role="assistant" data-message-id="07fad8a5-77e7-434a-a5df-a5f3ee2e39dc">
+<div class="flex w-full flex-col gap-1 empty:hidden first:pt-[3px]">
+<div class="markdown prose w-full break-words dark:prose-invert light">
+<p> </p>
+<table class="" border="1">
+<thead>
+<tr>
+<th>Term</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SSO - Single Sign On</td>
+<td>A method that allows a user to access multiple services with one set of login credentials.</td>
+</tr>
+<tr>
+<td>MFA - Multi Factor Authentication</td>
+<td>A security system that requires more than one method of authentication from independent categories of credentials.</td>
+</tr>
+<tr>
+<td>Federation/Federated Authentication</td>
+<td>A method that links and manages identities across different systems or organizations.</td>
+</tr>
+<tr>
+<td>IdP - Identity Provider</td>
+<td>Our own identity provider will be used to federate other providers and enable single sign on for EFS users. For some clients, it may have users stored at the IdP directly.</td>
+</tr>
+<tr>
+<td>External IdP</td>
+<td>The external Identity Provider is owned by a client or customer of tivian and its users will be federated.</td>
+</tr>
+<tr>
+<td>Social Provider</td>
+<td>A social Provider is mostly similar for our use case but has a different kind of connection to our IdP. Its users will be federated.</td>
+</tr>
+<tr>
+<td>Local Users</td>
+<td>Users stored at our IdP. They are used to login to EFS/Portals.</td>
+</tr>
+<tr>
+<td>External Users</td>
+<td>Users stored in an IdP (for example Azure Active Directory) that is not part of the IAM solution.</td>
+</tr>
+<tr>
+<td>EFS/Portals</td>
+<td>The core target software for this project.</td>
+</tr>
+<tr>
+<td>Installation User</td>
+<td>A user that exists locally in one installation with credentials.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-1 flex gap-3 empty:hidden -ml-2">
+<div class="items-center justify-start rounded-xl p-1 flex">
+<div class="flex items-center"> </div>
+</div>
+</div> sign on for EFS users. For some clients, it may have users stored at the IdP directly.</td>
+</tr>
+<tr>
+<td>External IdP</td>
+<td>The external Identity Provider is owned by a client or customer of tivian and its users will be federated.</td>
+</tr>
+<tr>
+<td>Social Provider</td>
+<td>A social Provider is mostly similar for our use case but has a different kind of connection to our IdP. Its users will be federated.</td>
+</tr>
+<tr>
+<td>Local Users</td>
+<td>Users stored at our IdP. They are used to login to EFS/Portals.</td>
+</tr>
+<tr>
+<td>External Users</td>
+<td>Users stored in an IdP (for example Azure Active Directory) that is not part of the IAM solution.</td>
+</tr>
+<tr>
+<td>EFS/Portals</td>
+<td>The core target software for this project.</td>
+</tr>
+<tr>
+<td>Installation User</td>
+<td>A user that exists locally in one installation with credentials.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-1 flex gap-3 empty:hidden -ml-2">
+<div class="items-center justify-start rounded-xl p-1 flex">
+<div class="flex items-center"> </div>
+</div>
+</div>

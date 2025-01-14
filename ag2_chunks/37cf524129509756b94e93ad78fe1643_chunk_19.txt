@@ -1,0 +1,50 @@
+="wysiwyg-text-align-justify">
+<li>
+<strong>Edit</strong>: You can change the title and description of a bonus category.</li>
+<li>
+<strong>Delete</strong>: If you click on the icon and confirm the pop-up message that follows, the respective category will be removed.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Creating a new bonus category</strong></p>
+<ol class="wysiwyg-text-align-justify">
+<li>Ensure that the website and language version have been correctly configured.</li>
+<li>Click on the <strong>Create bonus category</strong> button.</li>
+<li>Enter the title.</li>
+<li>Enter the sort number in the sequence of bonus categories.</li>
+<li>Confirm your entries by clicking on <strong>Save</strong>.</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><strong>Assigning bonuses to categories and changing assignments</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>When setting up new bonuses you can select the appropriate category from the “Bonus Category” drop-down list.</li>
+<li>To change the category for an existing bonus, search for the bonus in the bonus list under <strong>Website → Bonus management → {Selected language version}</strong>, then open the edit dialog and change the selection in the “Bonus category” drop-down list.</li>
+</ul>
+<h1 id="working-with-smarty-templates" class="wysiwyg-text-align-justify"><strong>Working with Smarty Templates</strong></h1>
+<p class="wysiwyg-text-align-justify">Templates control how data supplied by the modules are processed and output on panel pages. The present and following chapters describe the Smarty templates used in EFS:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>The Smarty template engine is presented.</li>
+<li>Features, tools, and auxiliary tools for editing Smarty templates in the website editor are explained.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><em>Information: </em>Please note: No or very little knowledge of HTML was required for the operations introduced in previous chapters of this manual, such as creating new panel pages or maintaining news. However, advanced programming skills are a prerequisite for working with Smarty templates and other technologies available in the website editor, such as CSS, JavaScript, and mootools.</p>
+<h2 id="the-smarty-template-engine" class="auto-cursor-target wysiwyg-text-align-justify"><strong>The Smarty Template Engine</strong></h2>
+<p class="auto-cursor-target wysiwyg-text-align-justify">The templates of the CMS are based on the Smarty template engine. Smarty is a proven template engine, which has been successfully used in EFS Survey for many years now. If you are familiar with the EFS Survey questionnaire layout, you will therefore find it easy to work with the CMS templates.</p>
+<p class="auto-cursor-target wysiwyg-text-align-justify">Please refer to <a href="http://www.smarty.net">http://www.smarty.net</a> for detailed information on Smarty.</p>
+<p class="wysiwyg-text-align-justify"><em>Information: </em>Please note: The CMS and questionnaire layouts in the EFS Survey are based on the same technology. However, it is not possible to import EFS Survey layout templates into the CMS.</p>
+<h2 id="working-with-templates" class="wysiwyg-text-align-justify"><strong>Working with Templates</strong></h2>
+<p class="wysiwyg-text-align-justify">The “main_default” template is an example of a main template that is responsible for the overall structure of an individual panel page or all pages. In the standard panel, it defines the general structure of the panel pages.</p>
+<p class="wysiwyg-text-align-justify">By inserting include commands and wildcards in the main template, various other templates are integrated into this general structure. For a normal panel page e.g. the “Contact Us” page the following elements are integrated, among others:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>Language selection: The “tpl_language_selection” template. This field is only displayed for websites with several language versions.</li>
+<li>Subnavigation: The “tpl_subnav” template.</li>
+<li>Navigation: The “tpl_navigation” template. Depending on whether or not the viewer is logged in, this area contains different functions, which in turn are defined by two different templates.</li>
+<li>Messages: The “tpl_error_messages” template.</li>
+<li>Login: The “tpl_login_in” and “tpl_login_out” templates for logged-in panelists and visitors who are not logged in.</li>
+<li>Breadcrumb: The “tpl_breadcrumb” template.</li>
+<li>
+<p>Actual content area: This is filled for each page with the help of content and function modules.</p>
+</li>
+<li>
+<p>Social bookmarks bar: Template “tpl_bookmarks”. (Social bookmarking is the collective indexing of web pages and other online resources.)</p>
+</li>
+</ol>
+<h2 id="managing-templates" class="wysiwyg-text-align-justify"><strong>Managing Templates</strong></h2>
+<h3 id="template-overview" class="wysiwyg-text-align-justify"><strong>Template Overview</strong></h3>
+<p class="wysiwyg-text-align-justify">A language version’s templates are located in the “Templates” tab in the tree view in the menu <strong>Website → Website editor</strong>.</p

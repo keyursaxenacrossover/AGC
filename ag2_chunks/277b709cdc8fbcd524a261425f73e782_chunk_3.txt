@@ -1,0 +1,41 @@
+IKI-LINK: <a href="https://it.globalpark.de/twiki/bin/view/Support/CHDDocumentationCustomerSpecialsIpsos">https://it.globalpark.de/twiki/bin/view/Support/CHDDocumentationCustomerSpecialsIpsos</a></p>
+<p>[] Was the name of the organisation in EFS replaced from "IPSOS - master installation master installation" to something like this: " IPSOS [Ipsos client name] [Client project name]"<br>[] Did the script replace the old token "***" to this new token "***". You check it by doing this: select \* from efs_service_token<br>[] Add Ipsos members as site administrators for this site on PREPROD2. For more Details see case description.</p>
+<p><br>__TODO__ FIRST LEVEL</p>
+<p>[] Send information concerning the new token "***" to the client (holger.hetterling@<a href="http://ipsos.com">ipsos.com</a>)<br>[] Send information to <a href="mailto:gordon.fiedler@questback.com">gordon.fiedler@questback.com</a>, <a href="mailto:johannes.hubrich@questback.com">johannes.hubrich@questback.com</a>, <a href="mailto:christian.kamp@questback.com">christian.kamp@questback.com</a><br>[] Send information to customer, Contact person that will receive confirmation that the EFS instance is ready (no login information and no account to be created!)<br>[] CHD contacts the client (holger.hetterling@<a href="http://ipsos.com">ipsos.com</a>, <a href="mailto:christian.demel@ipsos.com">christian.demel@ipsos.com</a>) The access data are the same like the data on the master.<br>[] If MySight had been requested add the ACL rights 'mysight_self_siteadmin' and 'mysight_text_dimension' (read/write) to the team 'MySight'<br>[] Send out access data for MySight users. Use mail templates below</p>
+</div><div class="expand-macro">
+<h4 string="Mail Template Mysight Data"></h4>
+<p>Account name and URL:</p>
+<p>Dear [Firstname],</p>
+<p>We have created a user account for you to access the Questback MySight environment via “<a href="https://mysight-preprod2.questback.com">https://mysight-preprod2.questback.com</a>” (Site: [site].<a href="http://customervoice360.com">customervoice360.com</a>).</p>
+<p>Username: [username]<br>Password: will be sent separately</p>
+<p>Please change your password after your first login ([YOUR USER] / Drop Down Menu, Top Right &gt; My Account Settings).<br>If there are any problems with your permissions, please don’t hesitate to contact our support team (de.support@<a href="http://questback.com">questback.com</a>).</p>
+<p>Best regards</p>
+<p><br>Password:</p>
+<p>Dear [Firstname],</p>
+<p>Your password to access the Questback MySight environment via “<a href="https://mysight-preprod2.questback.com">https://mysight-preprod2.questback.com</a>” is</p>
+<p>[Password]</p>
+<p>Please change your password after your first login ([YOUR USER] / Drop Down Menu, Top Right &gt; My Account Settings).<br>If there are any problems with your permissions, please don’t hesitate to contact our support team (de.support@<a href="http://questback.com">questback.com</a>).</p>
+<p>Best regards,</p>
+</div><h3 id="header-8">IPSOS ICP - NA</h3><p>The set up process hasn't been discussed fully yet.<br>We currently only know that the installation has to be set up within 3 business days and has to be a copy of master installation <a href="http://eb3684.customervoice360.com"><strong>eb3684.customervoice360.com</strong></a> <br>The good thing about this is that there are not special programmings.<br>The drawback is that the master installation already has some inconsistencies that are copied to the cloned installation as well. This has to be cleaned by US customer support.<br></p><ul>
+<li><p>Installation needs to be requested via survey</p></li>
+<li><p>Technical Support forwards the case to Sysadmin</p></li>
+<li><p>Sysadmins will clone the defined master installation and send case back to TS</p></li>
+<li>
+<p>TS adds installation to Globis by executing script "helpersAddInstallationInGlobis" in htdocs without parameters</p>
+<ul>
+<li><p>select 2 "Kundeninstallation"</p></li>
+<li><p>select "QB_US" as responsible country</p></li>
+<li><p>Enter Salesforce account ID and contact ID as mentioned in the installation request</p></li>
+<li>
+<p>The script already changes</p>
+<ul>
+<li><p>tmp_path</p></li>
+<li><p>tmp_path_export</p></li>
+<li><p>watchdog_path</p></li>
+<li><p>gp_id</p></li>
+<li><p>the root password and prints it out on the console</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p

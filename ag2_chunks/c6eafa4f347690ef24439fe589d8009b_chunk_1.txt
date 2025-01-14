@@ -1,0 +1,68 @@
+-known/openid-configuration</a></p>
+<p> </p>
+<h2 id="header-3">Step 1: Navigate to Identity Providers</h2>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21012773958034" alt="Screenshot_2019-11-29 Questback - Dashboard.png"></p>
+<p> </p>
+<h3 id="header-5">Step 2: Add a new Open ID Connect Identity Provider</h3>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21012773959570" alt="Screenshot_2019-11-29 Questback - Identity Providers.png"></p>
+<h3 id="header-6">Step 3: Provide basic client information</h3>
+<p><strong>Values:</strong></p>
+<p>Name: see Naming conventions in Okta</p>
+<p>Client ID: this will be provided by the client’s IdP</p>
+<p>Client Secret: this will be provided by the client’s IdP</p>
+<p>Scopes:</p>
+<ul>
+<li>
+<p>always necessary: email, openid, profile</p>
+</li>
+<li>
+<p>there might be custom scopes for this specific IdP</p>
+</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21012826921362" alt="Screenshot_2019-11-29 Questback - Identity Providers(1).png"></p>
+<p> </p>
+<h3 id="header-7">Step 4: Configure Endpoints</h3>
+<p><strong>Values:</strong></p>
+<p>Alle values here refer to the well-known/discovery-document. They could just be copied.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21012773961362" alt="Screenshot_2019-11-29 Questback - Identity Providers(2).png"></p>
+<p> </p>
+<h3 id="header-8">Step 5: Configure advanced settings</h3>
+<p><strong>Values:</strong></p>
+<p>IdP Username: Usually that should always be “idpuser.email”. To prevent unexpected cases simply lowercase this value.</p>
+<p>If no match is found: “Creat enew user (JIT)” should be provided.</p>
+<p>Group Assignments: “Assign to specific groups”</p>
+<p>Specific Groups: The group that was created for that tenant.</p>
+<p>Update attributes for existing users: has to be switched <strong>off</strong></p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21012773963282" alt="Screenshot_2019-11-29 Questback - Identity Providers(3).png"></p>
+<p> </p>
+<h3 id="header-9">Step 6: Navigate to the Identity Provider</h3>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21012826925714" alt="Screenshot_2019-11-29 Questback - Identity Providers(4).png"></p>
+<h3 id="header-10">Step 7: Check Redirect Domain</h3>
+<p>The domain should match the domain that was configured for the redirect URI in the client’s IdP</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21012773965714" alt="Screenshot_2019-11-29 Questback - Identity Providers(5).png"></p>
+<h3 id="header-11">Step 8: Routing Rules</h3>
+<p>see and follow instructions at: Configure Identity Provider Routing</p>
+<h3 id="header-12">Step 9: Navigate to Profile Mapping</h3>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21012773967122" alt="Screenshot_2019-12-12 Questback - Identity Providers.png"></p>
+<h3 id="header-13">Step 10: Adapt Profile Attributes</h3>
+<p>Profile attributes depend on the external Identity Provider that is federated. This is an example for an Azure AD federation.</p>
+<p>At least the following values have to be present:</p>
+<ul>
+<li>
+<p>First Name</p>
+</li>
+<li>
+<p>Last Name</p>
+</li>
+<li>
+<p>Email</p>
+</li>
+</ul>
+<p>They can have different names (like “given_name” in the example) but they should have the same meaning.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21012826932754" alt="Screenshot_2019-12-12 Questback - Universal Directory.png"></p>
+<h3 id="header-14">Step 11: Configure Profile Mappings</h3>
+<p>also see: <a href="https://help.okta.com/en/prod/Content/Topics/Directory/About_Universal_Directory.htm">https://help.okta.com/en/prod/Content/Topics/Directory/About_Universal_Directory.htm</a></p>
+<p>The example might differ based upon the step before.</p>
+<p>The following values have to be mapped. Additional ones can also be mapped but will not have an effect (property names are on the right side in the image).</p>
+<p> </p>
+<h3 id="header-15">Values:</h3>

@@ -1,0 +1,96 @@
+<h3 id="h_01J69HA6NQ09XPSQFMQFRDVTVC">Overview</h3>
+<p>Organizations utilizing Okta for identity management may encounter performance issues, especially when the system requires multiple user and application assignments. This problem typically manifests as a slowdown in Okta's app assignment processes, particularly when assigning users to multiple apps or when creating new apps. </p>
+<p> </p>
+<h2 id="h_01J69FMVYEE9419MRSVMNQQAG1">Table of Contents</h2>
+<ul>
+<li><a href="#h_01J69JC7JB8S2K16VW9YG6AN41">Current Approach</a></li>
+<li><a href="#header-1">Current status</a></li>
+<li><a href="#header-3">Possible solutions/performance improvements:</a></li>
+</ul>
+<p><em><strong>**PS does the initial SSO configuration, this article will help the support agents understand the general configuration to help aid the troubleshooting.</strong></em></p>
+<h2 id="h_01J69JC7JB8S2K16VW9YG6AN41">Current Approach</h2>
+<p><strong>Part 1:</strong></p>
+<ul>
+<li>Create an application for each installation (portals and EFS admin)</li>
+<li>For EFS a group will be created for that specific application. The group will be named like:</li>
+<li>&lt;unique tenant name&gt; &lt;main-installation-domain&gt;</li>
+<li>EFS Admin will be assigned to that group.</li>
+<li>Every created portal will also be assigned to that group.</li>
+<li>No user will be assigned to the group “Everyone”.</li>
+<li>Every portal and EFS Admin user will be assigned to the &lt;unique tenant name&gt; group too.</li>
+</ul>
+<p>Creating a user in EFS will do the following:</p>
+<ul>
+<li>
+<p>Check if the user exists in Okta</p>
+</li>
+<li>
+<p><strong><em>yes:</em></strong> update the user and assign to the installation-specific group and tenant-specific group</p>
+</li>
+<li>
+<p><em><strong>no:</strong> </em>create a user and assign it to installation-specific group and tenant-specific group</p>
+</li>
+</ul>
+<p>The same applies to import/import update/initial sync.</p>
+<p> </p>
+<p><strong>Part 2:</strong></p>
+<p>Deleting a user will unassign the user from the specific application group.</p>
+<p> </p>
+<h2 id="header-1">Current status</h2>
+<ul>
+<li>
+<p>Every user is part of the group “Everyone”</p>
+</li>
+<li>
+<p>Every app is assigned to the group “Everyone”</p>
+</li>
+</ul>
+<p>This leads to a lot of assignments that have to be performed by Okta:</p>
+<ul>
+<li>
+<p>When creating a user that user has to be assigned to every app</p>
+</li>
+<li>
+<p>When creating an app every user in the system has to be assigned to that app</p>
+</li>
+</ul>
+<p>The App assignment is currently very slow in Okta.</p>
+<p> </p>
+<h2 id="header-3">Possible solutions/performance improvements</h2>
+<p> </p>
+<p><strong>1. Talk to Okta about the slowness of these assignments.</strong></p>
+<p> </p>
+<p><strong>2. Change the number of assignments by merging the portals applications from one installation in one Okta application.</strong></p>
+<p>Currently, every portal has its own app. This could be reduced by creating only one global “portals” Okta app for every installation.</p>
+<p>The drawbacks of this are:</p>
+<ul>
+<li>
+<p>big changes in EFS</p>
+</li>
+<li>
+<p>the logical separation of applications is not correct anymore</p>
+</li>
+<li>
+<p>the effect might be very small</p>
+</li>
+</ul>
+<p><strong>3. Change the number of assignments by assigning apps to specific groups</strong></p>
+<p>Currently, every app is assigned to everyone. This could be changed by assigning an app to only the users that need to be assigned to that app. Therefore the specific app is only accessible by the group of users that was assigned to that application.</p>
+<p>That reduces the number of assignments by a very big amount.</p>
+<p>The drawbacks of this are:</p>
+<ul>
+<li>
+<p>Okta implicitly also handles permissions</p>
+</li>
+<li>
+<p>Groups have to be managed correctly otherwise users will not able to access their applications anymore</p>
+</li>
+</ul>
+<p> </p>
+<h1 id="h_01J69JAMAHF2BVV1M78AEHFJGP">FAQ</h1>
+<p><strong>What causes the slowness in Okta app assignments?</strong></p>
+<p>The primary cause is the large number of assignments Okta needs to handle due to every user and application being part of the "Everyone" group.</p>
+<p><strong>Why is it necessary to merge portal applications?</strong></p>
+<p>Merging portal applications into a single global application can reduce the number of assignments, which may improve performance.</p>
+<p><strong>What are the risks of group-specific app assignments?</strong></p>
+<p

@@ -1,0 +1,111 @@
+ the LUA environment to search, validate or extract user input, for example, rex_pcre.find (v_1, "\\bhate") will search for words starting with hate and return false if none is found. The full documentation on rex_pcre can be found in the Lrexlib reference manual.</p>
+<p class="wysiwyg-text-align-justify">Survey variables are available within the LUA environment, which is accessible under the _G global table. Most variables are therefore accessible through this global table, e.g. by using _G["v_1"] or _G["code"]. Survey variables (v_xxx) are also injected into the LUA sandbox as regular variables, therefore _G["v_1"] == v_1.</p>
+<h2 id="lua-cheat-sheet" class="wysiwyg-text-align-justify"><strong>LUA Cheat Sheet</strong></h2>
+<p class="wysiwyg-text-align-justify">Please see <a href="https://www.lua.org/manual/5.1/">https://www.lua.org/manual/5.1/</a> and <a href="https://www.lua.org/pil/contents.html">https://www.lua.org/pil/contents.html</a> for full documentation.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h4 id="comments" class="wysiwyg-text-align-justify">Comments</h4>
+<pre><code class="language-text">-- comment
+--[[ Multiline
+comment ]] </code></pre>
+<h4 id="variables" class="wysiwyg-text-align-justify">Variables</h4>
+<pre><code class="language-text">local x = 2
+x, y = 2, 4</code></pre>
+<h4 id="tables-arrays" class="wysiwyg-text-align-justify">Tables/arrays</h4>
+<pre><code class="language-text">t = {}
+t = { a = 1, b = 2 }
+t.a = function() ... end -- tables can also contain functions
+t = { ["hello"] = 200 }
+t.hello
+-- arrays are also tables:
+array = { "a", "b", "c", "d" }
+setVariableValue("v_1",array[2]) -- "b"
+setVariableValue("v_2",#array) -- returns size of array (here: 4)</code></pre>
+<h4 id="conditions" class="wysiwyg-text-align-justify">Conditions</h4>
+<pre><code class="language-text">if condition then
+  setVariableValue("v_1","yes")
+elsif condition then
+  setVariableValue("v_1","maybe")
+else
+  setVariableValue("v_1","no")
+end
+
+--[[
+Where conditions can contain following operators:
+==, &lt;, &gt;, &lt;=, &gt;=, ~= (not equal, equal to !=)
+]] </code></pre>
+<h4 id="loops" class="wysiwyg-text-align-justify">Loops</h4>
+<pre><code class="language-text">while condition do
+  -- something here
+end
+
+for i = 1,5 do
+  -- something here
+end
+
+for i = start,finish,delta do
+  -- something here
+end
+
+for k,v in pairs(tab) do
+  -- something here
+end
+
+repeat
+  -- something here
+until condition
+
+-- Breaking out:
+while x do
+  -- do something here before check
+  if condition then break end
+  -- or do something here after check
+end
+
+-- Loop on elements of table
+array = { ["2"] = "a", ["11"] = "b", ["15"] = "c", ["30"] = "d" }
+for key, value in pairs (array) do
+  setVariableValue("v_"..key, value)
+end
+
+-- You can also use this deprecated function:
+array = { ["2"] = "a", ["11"] = "b", ["15"] = "c", ["30"] = "d" }
+table.foreach(array, function(key,value) setVariableValue ("v_"..key, value) end)</code></pre>
+<h4 id="functions" class="wysiwyg-text-align-justify">Functions</h4>
+<pre><code class="language-text">function myFunction()
+  return 1
+end
+
+function myFunctionWithArgument(a, b)
+  -- ...
+end</code></pre>
+<h4 id="useful-global-functions" class="wysiwyg-text-align-justify">Useful global functions</h4>
+<pre><code class="language-text">type(var) -- Returns type of variable: "nil" | "number" | "string" | "boolean" | "table" | "function" | "thread" | "userdata"
+
+pairs(t) -- iterable list of {key, value}
+ipairs(t) -- iterable list of {index, value}
+
+-- converting strings/unknown formats to numbers using tonumber(e [, base]):
+x = tonumber("34")
+x = tonumber("8f", 16)
+
+-- and to strings:
+x = tostring(101)</code></pre>
+<h4 id="string-api" class="wysiwyg-text-align-justify">String API</h4>
+<pre><code class="language-text">-- Concat:
+y = "world"
+s = "hello "..y -- s == "hello world"
+
+s:upper()
+s:lower()
+s:len() -- Just like #s
+
+s:find()
+s:gfind()
+
+s:match()
+s:gmatch()
+
+s:sub()
+s:gsub()
+
+s

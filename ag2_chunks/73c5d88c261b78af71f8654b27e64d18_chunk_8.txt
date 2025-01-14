@@ -1,0 +1,63 @@
+>
+<p class="wysiwyg-text-align-justify">If the participant data were entered before setting the language variable, the drop-down list will automatically be completed and set to the default language.<br>Then, it is necessary to add the language data for the participants. Therefore it is strongly recommended to configure languages and participant variables before adding participant data.</p>
+<h3 id="tracing-changes-made-in-language-administration-via-the-log" class="wysiwyg-text-align-justify"><strong>Tracing Changes Made in Language Administration via the Log</strong></h3>
+<p class="wysiwyg-text-align-justify">The “Language selection log” section displays important operations within language administration (e.g. creating and deleting languages and changing the default language) in chronological order. Therefore, you can also see here, among other things, who last changed the default language and is thus responsible for unblocking the language selection.</p>
+<h2 id="variable-data-import" class="wysiwyg-text-align-justify"><strong>Variable Data Import</strong></h2>
+<p class="wysiwyg-text-align-justify">In personalized projects and panel and master data surveys on EFS Panel installations, you can transfer the contents of variables from another project, i.e. if a participant has completed the source project, you can automatically import their answers into the variables of the second project and use them there for filtering, evaluation, and other purposes. Participation is assigned via the participant’s e-mail address.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014837372818" alt="Import variable data.jpg"></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Open the<strong> Project properties</strong> → <strong>Variable data import</strong> menu.</p>
+</li>
+<li>
+<p>Select the source project</p>
+</li>
+<li>
+<p>Confirm by clicking on<strong> Select source project</strong>.</p>
+</li>
+<li>
+<p>Assign the first source variable from the source project to the respective destination variable in the current project.</p>
+</li>
+<li>
+<p>Confirm by clicking on <strong>Save</strong>.</p>
+</li>
+<li>
+<p>Repeat this operation for all variables that have to be assigned.</p>
+</li>
+</ul>
+<h2 id="website-settings" class="wysiwyg-text-align-justify"><strong>Website Settings</strong></h2>
+<p class="wysiwyg-text-align-justify">The <strong>Project properties</strong> → The <strong>Website settings</strong> menu contains various features for adapting the display of the panel and master data surveys to the various language versions of the panel.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014837375122" alt="Website settings.jpg"></p>
+<p class="wysiwyg-text-align-justify"><strong>Controlling the survey display on the </strong><em><strong>Panel Website</strong></em></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>A survey can be hidden in a specific language version so that it does not appear on the personalized survey list on the panelists’ homepage.</p>
+</li>
+<li>
+<p>It is possible to group the surveys displayed in the survey list.</p>
+</li>
+<li>
+<p>Different survey names can be defined for display in different language versions.</p>
+</li>
+<li>
+<p>Multiple master data surveys may be activated at the same time. The website will automatically show the appropriate survey for each language version. If several master data surveys have been activated for the same language version, the survey with the smallest project ID will be displayed.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">When exporting and importing projects, the language version-specific configuration will not be included as the language versions are usually different in source and target installations. When copying projects, on the other hand, the settings are included.</p>
+<p class="wysiwyg-text-align-justify"><strong>The setting options in detail</strong></p>
+<p class="wysiwyg-text-align-justify">In the overview table of the <strong>Project properties</strong> → <strong>Website settings</strong> menu, you can configure the following settings for each language version:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Name of the survey displayed on the website: The label that is used in the survey list on the panelists’ personalized homepage, among other things. If no language version-specific title is entered, the internal admin area project title will be used. Wildcard: {$s.survey_title}</p>
+</li>
+<li>
+<p>Survey description: Detailed description of the survey that can be used, for example, in the survey list on the panelists’ personalized homepage. If no language version-specific text is entered, the description from the „Change project“ dialog will be used. Wildcard: {$s.survey_description}</p>
+</li>
+<li>
+<p>Displayed user-defined label: Selected surveys can be highlighted with specific notes or icons. Wildcard: {$s.survey_extra_label}</p>
+</li>
+<li>
+<p>Sorting category: The surveys displayed in the survey list can be grouped by assigning them to one of ten predefined categories.</p>
+</li>
+<li>
+<p>Hide survey for language version: If this checkbox is ticked, the survey will not appear in the survey list on the panelists’

@@ -1,0 +1,86 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K" class="wysiwyg-text-align-justify">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article provides comprehensive information about creating and managing questionnaires in EFS (Enterprise Feedback Suite). It covers various aspects of questionnaire design, including creating questions, implementing plausibility checks, and using triggers for advanced functionality.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">This guide focuses on the key components of questionnaire creation and management in EFS, including question types, properties, triggers, and plausibility checks.</p>
+<ul class="wysiwyg-text-align-justify">
+<li><a href="#questions">Questions</a></li>
+<li><a href="#properties">Properties</a></li>
+<li><a href="#triggers">Triggers</a></li>
+<li><a href="#plausibility-checks">Plausibility checks</a></li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="questions" class="wysiwyg-text-align-justify">Questions</h2>
+<p class="wysiwyg-text-align-justify">Via the list view, you can create the questions that are to appear on the new questionnaire page. Click the split button <strong>+ New question </strong>directly or select “New question”.</p>
+<h3 id="creating-new-questions" class="wysiwyg-text-align-justify">Creating new questions</h3>
+<p class="wysiwyg-text-align-justify">Please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Alternatively, use “Import questions” to copy a specific question from an existing questionnaire.</p>
+</li>
+<li>
+<p>If you want to re-use questions based on classic EFS question types, you may select the options “Paste from Word” or “Question library”.</p>
+</li>
+<li>
+<p>Enter the question title. It is used for orientation when working in EFS, the survey</p>
+<p>participants cannot see it.</p>
+</li>
+<li>
+<p>Select a fitting category first, then select the appropriate question type.</p>
+<ul>
+<li>
+<p>The preview displays screenshots of the selected question types.</p>
+</li>
+<li>
+<p>Only in “Responsive layout” surveys: If you activate <strong>Dynamic</strong>, the question type will be displayed realistically. Click into it and you’ll see e.g. how the form elements behave.</p>
+</li>
+<li>
+<p>Only in “Responsive layout” surveys: You may try what the selected question type will look like on mobile devices, tablet or desktop. Simply resize the width of your browser window: the dynamic question preview will adapt automatically.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Select the appropriate saving process:</p>
+<ul>
+<li>
+<p><strong>Save </strong>will route you back to the list view and you can create the next question.</p>
+</li>
+<li>
+<p><strong>Save and edit </strong>will bring you to the detail view, where you can configure the new question.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="changing-question-properties" class="wysiwyg-text-align-justify">Changing question properties</h4>
+<p class="wysiwyg-text-align-justify">You can change the title and type of a question retrospectively</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Changing the question title: Switch to the detail view. In the head section, you can change the title.</p>
+</li>
+<li>
+<p>Only suitable for classic question types: Changing question type:</p>
+<ul>
+<li>
+<p>From EFS 10.3: Switch to the detail view and click on the <strong>Change question type </strong>icon.</p>
+</li>
+<li>
+<p>Until EFS 10.2: Switch to the detail view and click on the <strong>Change question type </strong>tab.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Please note:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Various special settings cannot be transferred when changing the question type. For example, hiding conditions and type checks will be lost.</p>
+</li>
+<li>
+<p>Question type 911 cannot be converted into any other question type.</p>
+</li>
+<li>
+<p>For several of the more recent “Responsive layout” question types, conversion is not possible.</p>
+</li>
+</ul>
+<h4 id="copying-or-moving-questions" class="wysiwyg-text-align-justify">Copying or moving questions</h4>
+<p class="wysiwyg-text-align-justify">Questions can be copied and/or from EFS 10.3 moved to other pages. To do so, in the questionnaire view or list view, click on the <strong>Copy </strong>icon of the desired question, select the target page and specify the desired action, i.e. “Copy” or “Move”.</p>
+<p class="wysiwyg-text-align-

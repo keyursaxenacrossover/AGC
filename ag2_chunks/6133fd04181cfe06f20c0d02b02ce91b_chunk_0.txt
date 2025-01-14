@@ -1,0 +1,34 @@
+<p class="wysiwyg-text-align-justify"><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p class="wysiwyg-text-align-justify">This article explains how to set up and use the External Survey Start feature in EFS (Enterprise Feedback Suite). It covers the technical background, practical implementation, data transfer details, and special considerations when linking multiple projects or using external software.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">The External Survey Start feature allows survey participants to be sent from one project to another and redirected upon completion. This is useful for scenarios such as integrating external surveys or conducting conjoint surveys using external software while managing incentives within EFS.</p>
+<ul class="wysiwyg-text-align-justify">
+<li><a href="#Technical-Background">Technical Background</a></li>
+<li><a href="#External-Survey-Start-in-Practice">External Survey Start in Practice</a></li>
+<li><a href="#Data-Transfer-in-Detail">Data Transfer in Detail</a></li>
+<li><a href="#Linking-More-Than-Two-Projects">Linking More Than Two Projects</a></li>
+<li><a href="#Special-Considerations-when-using-External-Software">Special Considerations when using External Software</a></li>
+</ul>
+<h2 id="Technical-Background" class="wysiwyg-text-align-justify" data-renderer-start-pos="605"><strong data-renderer-mark="true">Technical Background</strong></h2>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="627">The external survey start is based on the use of GET parameters. GET parameters are variable values that are transferred to a page via the URL. This is a well-established standard web technology. It has already been used in <em data-renderer-mark="true">EFS</em> for a long time, e.g. for the transfer of external data to a survey via URL parameters.</p>
+<h3 id="Constructing-URLs-with-GET-Parameters" class="wysiwyg-text-align-justify" data-renderer-start-pos="944"><strong data-renderer-mark="true">Constructing URLs with GET Parameters</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="983">When adding GET parameters to a URL the following rules apply:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="1049">The GET parameter(s) must be separated from the actual URL by a question mark (?). This way the server can distinguish the actual URL from the GET parameter(s).</p>
+</li>
+<li>
+<p data-renderer-start-pos="1213">If more than one GET parameter is added, then they must be separated from each other by &amp;.</p>
+</li>
+<li>
+<p data-renderer-start-pos="1309">For every GET parameter the URL lists first the variable name, followed by an equation symbol (=) and ultimately the variable value to be transferred. In the example below, a and b are variable names, 1 and seminar are the variable values. Different types of data are possible: In the example, variable a with the value 1 is of the “integer” type, and variable b with the value “seminar” is of the “text” type.</p>
+</li>
+</ul>
+<h2 id="External-Survey-Start-in-Practice" class="wysiwyg-text-align-justify" data-renderer-start-pos="1721"><strong data-renderer-mark="true">External Survey Start in Practice</strong></h2>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="1756">The external survey start in <em data-renderer-mark="true">EFS</em> makes use of GET parameters to send survey participants from one project to a second project, to authenticate and subsequently redirect them. In this chapter you will configure an external survey start yourself, linking two <em data-renderer-mark="true">EFS</em> projects within the same installation.</p>
+<h3 id="Creating-the-Questionnaires-and-Configuring-Forward-and-Return-Jumps" class="wysiwyg-text-align-justify" data-renderer-start-pos="2057"><strong data-renderer-mark="true">Creating the Questionnaires and Configuring Forward and Return Jumps</strong></h3>
+<p><strong data-renderer-mark="true"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014884158610"></strong></p>
+<ul>
+<li>
+<img style="width: 603.984px;" draggable="false" src="blob:https://qbdocs.atlassian.net/b06136d6-aad0-46eb-b030-e6643c09fb6b#media-blob-url=true&amp;id=620ea37b-cef3-4303-844b-35330950de90&amp;collection=contentId-1175519357&amp;contextId=1175519357&amp;mimeType=image%2Fpng&amp;name=Questionnaire.png&amp;size=145423&amp;width=1280&amp;height=302&amp;alt=" alt="" data-testid="media-image"><span style="text-align: justify;">Create the primary and secondary projects.

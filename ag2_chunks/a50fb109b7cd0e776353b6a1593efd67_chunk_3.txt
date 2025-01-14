@@ -1,0 +1,79 @@
+h2>
+<p class="wysiwyg-text-align-justify">A report can only be edited by one user at a time. If you open a report that somebody else is already working on, it will be displayed in read-only mode. The<br>drag-and-drop function and other actions will be disabled, and all icons, buttons, and settings will be greyed out. Creating a new report or opening an existing report via the report manager will take you to the actual edit dialog of <em>EFS Reporting+</em>.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The Sources window on the left-hand side contains all available source data, recodes, and structuring elements such as filters for restricting the base and split dimensions for creating contingency tables.</p>
+</li>
+<li>
+<p>In the Structure window, you build your report.</p>
+</li>
+<li>
+<p>In the Workpad on the right-hand side, you can open and edit individual tables and charts.</p>
+</li>
+<li>
+<p>In the <strong>View</strong> menu, you can define how the questions shall be labeled in the sources and structure windows. By default, the question types and titles are displayed. Alternatively, you can have the question texts or question IDs displayed. Please note that this function only serves as an aid to orientation. Which information will be displayed in the report will be configured elsewhere.</p>
+</li>
+<li>
+<p>The toolbars of the source and structure windows provide various functions needed for editing the respective contents:</p>
+<ul>
+<li>
+<p><strong>Preview</strong>: Opens a preview of the contents or results of the selected element. Please note: The preview for the entire report in the structure window contains only predefined test data.</p>
+</li>
+<li>
+<p><strong>Create element</strong>: Opens the dialog for creating a new element such as a chapter or a filter.</p>
+</li>
+<li>
+<p><strong>Delete</strong>: The selected element will be deleted.</p>
+</li>
+<li>
+<p><strong>Copy</strong>: The selected element will be copied.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="basic-rules-for-building-report-structures" class="wysiwyg-text-align-justify"><strong>Basic rules for building report structures</strong></h3>
+<p class="wysiwyg-text-align-justify">Preparing complex reports in <em>EFS Reporting+</em> quickly and efficiently requires only a few basic functions.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Drag-and-drop: Source data and structural elements are dragged from the source window into the structure window, where they are arranged in the desired order.</p>
+</li>
+<li>
+<p>Structuring: Structuring functions, such as filters for restricting the number of participants or split dimensions for creating contingency tables, are created as separate elements which are then dragged to the desired position in the report. All tables and charts that are to be subjected to a split dimension - i.e., for which contingency tables are to be created - are subsequently dragged into this split dimension, thus creating a separate branch.</p>
+</li>
+<li>
+<p>Detail view: To open a table or chart in the workpad, simply click on the selected element.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The report structure can be up to ten levels deep, i.e., it is possible to nest up to ten elements.</p>
+<h2 id="selecting-source-data" class="wysiwyg-text-align-justify"><strong>Selecting source data</strong></h2>
+<p class="wysiwyg-text-align-justify">Depending on the type of project, various source data can be used for evaluations in <em>EFS Reporting+</em>:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Automatically available are all the results of the respective project including answers to open-ended questions and text input fields, as well as GET parameters (p variables), user-defined variables (c variables), and important survey variables.</p>
+</li>
+<li>
+<p>The participant variables (u variables) of personalized projects can be used optionally.</p>
+</li>
+<li>
+<p>In panel and master data surveys, you may also use panel-specific data such as master data or performance data.</p>
+</li>
+<li>
+<p>Data collected outside of <em>EFS</em> can be imported as well.</p>
+</li>
+<li>
+<p>Up to 100 additional external variables can be generated via import and filled with data.</p>
+</li>
+<li>
+<p>A report may contain up to 50,000 data records.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The complexity of a report depends on both the number of variables and the number of data records. Depending on the size of these two factors, you may experience extended calculation times below the thresholds mentioned above.</p>
+<h3 id="overview-of-source-data" class="wysiwyg-text-align-justify"><strong>Overview of source data</strong></h3>
+<p class="wysiwyg-text-align-justify">In the header section of the sources window, you will find several tabs with all the data that is available for evaluation.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Tab <strong>Survey</strong>: automatically available data from the respective project, i.e.,</p>
+<ul>
+<li>
+<p>all questions of the projects (v variables) including open-ended questions and text input fields. Exception: the unsupported question type text matrix 363.</p>
+</li

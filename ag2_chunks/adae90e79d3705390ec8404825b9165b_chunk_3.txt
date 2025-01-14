@@ -1,0 +1,91 @@
+447.604px;">
+<p>Time of the last access of the participant to the survey</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>date_of_first_mail</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>Time of the first mail sent to participant</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p>RTS (+ page ID)</p>
+</td>
+<td style="width: 447.604px;">
+<p>Relative time stamp for each page + page ID.<br>RTS (+ page ID) indicates the time in seconds that has elapsed since the survey start. Using this variable, you can determine the time a participant has spent on a page. For the calculation, you must subtract the value of RTS (+Page ID) of the previous page from the value of RTS (+Page ID) of the desired page. A calculation example can be found below.</p>
+<p> </p>
+<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015039305490" alt="image-20240312-101533.png">
+<p>Please note, that the order of the variables "RTS (+page ID)" in the export does not necessarily correspond to the order in which the respective participant has displayed the pages.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>sid</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>Only in panel and master data surveys : ID of the sample that the panelists belong in.</p>
+<p>For the SPSS export, the codes are labeled with the sample titles.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>dt_send_pag_000n</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>Time variables of standard pages and mixed-external pages. These indicate the time in seconds elapsed from the ats until submission of the respective page.</p>
+<p>If the PGID (page ID = installation-specific ID of a questionnaire page or a dynamic element) is bigger than 99.999, the name of the variable is changed to ts_xxx, to prevent problems caused by the length of the variable name when exporting for SPSS.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>rnd_pg_PGID</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>Random selection.</p>
+<p>For each random selection block in the questionnaire, a variable rndPGID is created. PGID is the ID of the random selection element.</p>
+<p>In this variable, the PGIDs of the selected pages are stored, separated by commas.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>rnd_pg_PGID_x</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>Random order.</p>
+<p>For each random order block in the questionnaire, variables <em>rnd_pg_PGID_NR </em>are created. PGID is the ID of the random order element, NR is the number of randomized subpages.</p>
+<p>Each of these variables contains the PGID of that subpage which has been placed on the respective position in the current cycle.</p>
+<p>Example: The PGID of the random order element is 123, the subpages have PGID 124, 125 and 126. In the questionnaire, they are displayed to a participant in the following order: 126, 124, 125. Then, you will find the following data in the export file: r123_1 = 126, r123_2 = 124, r123_3 = 125</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>tic</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>tic variable used in external survey start. The tic variable is always 32 characters long. This cannot be configured.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 229.062px;">
+<p><em>s_000n</em></p>
+</td>
+<td style="width: 447.604px;">
+<p>Scoring variables</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 class="wysiwyg-text-align-justify"> </h2>
+<h2 id="device-variables" class="wysiwyg-text-align-justify"><strong>Device Variables</strong></h2>
+<p class="wysiwyg-text-align-justify">The device variables store metainformation about device manufacturer and device kind (Smartphone, Tablet, Desktop, Touchscreen-Desktop, etc.), browser type and more.</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 265.0px;"> <col style="width: 493.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Variable</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9

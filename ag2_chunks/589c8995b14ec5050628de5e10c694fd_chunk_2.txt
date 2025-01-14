@@ -1,0 +1,32 @@
+ Datenbank ein)</p>
+</li>
+</ul><p><strong>Achtung! Dieser Vorgang ist nur zur initalen Installation </strong><br><strong>durchzuführen. Bei einem laufenden Panel gehen Daten (Website, </strong><br><strong>Stammdaten, usw.) verloren!</strong></p><p></p><h3 id="header-5">Systemadministratorische Todos</h3><ul>
+<li><p>in GSA1: chown nobody:globalpark -R panelwebsite/s panelwebsite/__templates/* panelwebsite/__templates_c/* panelwebsite/images</p></li>
+<li><p>DOCUMENT ROOT von Sysadmins auf panelwebsite setzen lassen</p></li>
+<li><p>folgende RewriteRules in Virtual Host Config vor der Reporting RewriteRule hinzufügen:</p></li>
+</ul><pre><code class="language-text">        RewriteCond  %{REQUEST_URI}    ^/((panelwebsite/)?[^/]+\.php3?|\?|$)
+        RewriteRule ^/((panelwebsite/)?([^/]+)\.php3?|\?|$)   /$2index.php?node=$3 [QSA]
+</code></pre><p> ab Version 6.0 kommen folgende Zeilen hinzu: </p><pre><code class="language-text">        RewriteCond  %{REQUEST_URI}    ^/((panelwebsite/)?pages/([0-9]+)/[^/]+\.php3?|\?|$)
+        RewriteRule ^/((panelwebsite/)?pages/([0-9]+)/([^/]+)\.php3?|\?|$)   /$2index.php?lang_id=$3&amp;page=$4 [QSA]
+ </code></pre><p>Fehlende RewriteRules? werden nicht im Installationscheck angezeigt.</p><p><strong>fertig!</strong></p><p>Bernd Jaenichen added a comment - 07.Nov 2012 17:36 Die oben genannten Rules sind falsch bitte ab 8.1 folgende verwenden:</p><p></p><pre><code class="language-text">RewriteEngine On
+RewriteCond %{DOCUMENT_ROOT}/..%{SCRIPT_FILENAME} !-f
+RewriteCond %{DOCUMENT_ROOT}%{SCRIPT_FILENAME} !-f
+RewriteRule .* /home/jaenichen/public_html/81.koeln.globalpark.de/htdocs/public/index.php [L,NS] 
+</code></pre><p>'/home/jaenichen/public_html/81.koeln.globalpark.de/htdocs/public/index.php' allerdings durch den korrekten Pfad ersetzen sonst wird das nix</p><p></p><h2 id="header-7">Deactivation of Panel module</h2><h3 id="header-9">Background information</h3><p> Example Case 00897044<br>From Development point of view there is no process for deactivating the panel module and also deleting data that belongs to that module (panelists, PA surveys, mail templates etc.).<br>There is no automation or "healself" like we have for activating modules (the healself e.g. creates needed tables and inserts basic data).<br>Deactivating a module currently means removing the corresponding entry from the EFS config.<br>There is no automation afterwards that deletes panelists, projects, database tables etc.<br>In the past Technical Support actually just removed the panel module from the config which made everything invisible from the frontend.<br><strong>Now that we have GDPR we have to be more radical and also delete all panel related data (panelist data, websites, panel projects, database tables) instead of just deactivating the module.</strong> <br><br>Like I said If I deactivate the panel module, the People menu including the panelist administration as well as the Website menu and all panel surveys no longer will be visible via the GUI and no longer accessible for the client.<br>The client already may be aware of the fact that from the time of deactivation they no longer can access this data and projects.<br>The client has to confirm that we can delete all panelist data, all panel projects, all websites and panel related database tables ultimately.<br></p><h3 id="header-10">Deactivation</h3><pre><code class="language-text">[]Set all panelists to status "deleted" (8)
+[]Ultimately delete all panelists with status "deleted"
+[]Delete all panel surveys (PA) and master data surveys (MD)
+[]Also delete all archived surveys
+[]Delete all Panel websites (will also delete related mail templates)
+[]Delete all panel related database tables:
+  (have to be defined yet)
+[]Reset healself tasks ?
+[]Reset Document Root from panelwebsite to uc
+  rm document_root; ln -s uc document_root
+[] Inform CHD/client after everything has been deleted and panel module has been deactivated.</code></pre><p></p><p></p><h2 id="header-12">Website</h2><h3 id="header-14">Module mit zugehörigen Templates</h3><p>This list was created by using the Responsive Panel website in version 16.4</p><table data-layout="default" data-table-width="760" ac:local-id="b92e8c7b-9ab0-4eee-8c00-ec0342af92c8">
+<colgroup>
+<col style="width: 340.0px;">
+<col style="width: 340.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p><

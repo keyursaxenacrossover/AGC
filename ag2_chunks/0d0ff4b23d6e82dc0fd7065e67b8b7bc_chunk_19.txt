@@ -1,0 +1,74 @@
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Via <strong>Report → Language</strong>, you can switch between the default language of your questionnaire and the language you selected when creating the report. If you selected the <strong>All Languages</strong> option when creating the report, all languages that were created for the questionnaire are available for selection under <strong>Report → Language</strong>. The content of the structure window and workpad is reloaded automatically, containing the text elements for the selected language. The labels in the sources window are not affected by the switch.</p>
+</li>
+<li>
+<p>Initially, the original text elements from the questionnaire are inserted. If you change texts in <em>EFS Reporting+</em>, e.g. via the table editor, they are stored and kept in the background when you switch to another language.</p>
+</li>
+<li>
+<p>When exporting, you can select the language whose text elements are to be inserted.</p>
+</li>
+<li>
+<p>If you insert key figures and aggregations, you can modify the labels in the various language versions.</p>
+</li>
+<li>
+<p>Please mind that standard texts e.g. the table headers for “Answer option” and “Code” can only be displayed either in English or in German. During the creation of the report, they are automatically preset in the current admin area language, or in English if you‘re using Finnish, French, Italian, Norwegian or Swedish, and cannot be modified or translated retroactively.</p>
+</li>
+<li>
+<p>As in the questionnaire itself and the EFS admin area, all frequently-used languages are supported. In charts, in particular, texts from all frequently-used literary languages can be displayed. Until EFS 8.2, Chinese characters or other complex languages were not available for chart legends and chart labels.</p>
+</li>
+</ul>
+<h2 id="creating-and-distributing-reports" class="wysiwyg-text-align-justify"><strong>Creating and distributing reports</strong></h2>
+<p class="wysiwyg-text-align-justify">Once the report is completed, you can generate an export file which can be downloaded for presentation purposes or forwarded to your clients.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>At the beginning of the exported report file, you can find an automatically compiled overview. It covers the author, field period, total sample, net participation, and the number of completed interviews (disposition codes 31, 32).</p>
+</li>
+<li>
+<p>Available file formats are HTML, XLS, PPT, and PDF. In EFS 10.6, new PPTX- and PDF exports have been added.</p>
+</li>
+<li>
+<p>If your clients use EFS Survey Status, you can make your report available with only a few clicks.</p>
+</li>
+<li>
+<p>Report generation is a resource-intensive process. In order to ensure good installation performance, it is organized by means of queues. As soon as the generation of your report is completed, you will be notified via e-mail.</p>
+</li>
+<li>
+<p>It is possible to update the generated report files automatically. This is useful, for example, if you want to offer regularly-updated fresh results for download on <em>EFS Survey Status</em>. If automated updating is activated, the e-mail notification mentioned above will not be dispatched.</p>
+</li>
+<li>
+<p>Up to three files per report may be left in the admin area, so that other staff members may download them as well, for example. Before generating further versions you will have to delete one of the existing files.</p>
+</li>
+</ul>
+<h3 id="overview-of-the-export-functions" class="wysiwyg-text-align-justify"><strong>Overview of the export functions</strong></h3>
+<p class="wysiwyg-text-align-justify">The export functions of <em>EFS Reporting+</em> are located in the <strong>Report</strong> →<strong> Export menu</strong>. The following figure shows all relevant functions.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The upper part of the dialog contains the form for generating completed report files.</p>
+</li>
+<li>
+<p>The list below contains all completed report files. It lists their name, file type, language, and date of creation.</p>
+</li>
+<li>
+<p>Status icons indicate whether a file has been generated successfully.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">To update the status of the files, click on the <strong>Refresh</strong> icon in the table header.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Access to the report files in<em> EFS Survey Status</em> is controlled via the checkboxes in the “Publish” column.</p>
+</li>
+<li>
+<p>In order to edit a file, click on the corresponding icon in the “Actions” column:</p>
+<ul>
+<li>
+<p><strong>Automatic export update</strong>: If necessary, the content of the file can be updated automatically at regular intervals. Dialog and function are designed similarly to the automated updating of report data.</p>
+</li>
+<li>
+<p><strong>Preview</strong>: This icon is only available for HTML reports. It allows you to view the contents directly without first downloading the file.</p>
+</li>
+<li>
+<p>Only in case of generation problems: <strong>Refresh</strong>: Click on this icon to restart the generation process.</p>
+</li>
+<li>
+<p><strong>Download</strong>: Click on

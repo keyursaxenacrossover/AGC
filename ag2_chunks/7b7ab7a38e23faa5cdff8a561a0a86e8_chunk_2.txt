@@ -1,0 +1,153 @@
+ or that are uploaded to the media library.</p>
+<ul>
+<li>
+<p>Format: mp4.</p>
+</li>
+<li>
+<p>Encoding process: H.264 codec for video content and AAC codec for audio content.</p>
+</li>
+<li>
+<p>Recommended size: 90 % of the screen, 300 px.</p>
+</li>
+</ul>
+<p>Please note: The feature is not supported for Internet Explorer 8 and below.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Insert URL of user-defined images</p>
+</td>
+<td>
+<p>Inserts the URL of images taken from the media library: http://your_domain.de/uc/your_team/images/</p>
+<p>Add the image‘s file name.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Media library</p>
+</td>
+<td>
+<p>Files from the media library can be used.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h4 id="h_01J3YPRH65X0PA1BHR8BP2T4WD"> </h4>
+<h4 id="traditional-formatting-options">Traditional formatting options</h4>
+<p>If you do not use the TinyMCE editor, the various formatting icons are located just above the input field.</p>
+<table border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour="#c0b6f2">
+<p><strong>Icon</strong></p>
+</th>
+<th data-highlight-colour="#c0b6f2">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Format as question text</p>
+</td>
+<td>
+<p>Sets HTML tag &lt;div class=questiontext&gt;&lt;/div&gt;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Bold</p>
+</td>
+<td>
+<p>Sets HTML tag &lt;b&gt;&lt;/b&gt;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Italic</p>
+</td>
+<td>
+<p>Sets HTML tag &lt;i&gt;&lt;/i&gt;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Paragraph</p>
+</td>
+<td>
+<p>Sets HTML tag &lt;p&gt;&lt;/p&gt;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Break</p>
+</td>
+<td>
+<p>Sets HTML tag &lt;br/&gt;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Alignment: left / center/right</p>
+</td>
+<td>
+<p>Sets HTML tag</p>
+<ul>
+<li>
+<p>&lt;div align="left"&gt;&lt;/div&gt;</p>
+</li>
+<li>
+<p>&lt;div align="center"&gt;&lt;/div&gt;</p>
+</li>
+<li>
+<p>&lt;div align="right"&gt;&lt;/div&gt;</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Insert image</p>
+</td>
+<td>
+<p>After retrieval of the file name, the HTML tag &lt;img src="http://www.your_domain.com/uc/ihr_team/images/example.gif" alt=""&gt; is automaticallyinserted. You can insert the alternative label yourself.</p>
+<p>If you have stored the image in the media library in a subfolder, please note that the name of the folder must also be inserted in the path.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>A detailed introduction to HTML can be found, for example, at <a href="http://selfhtml.org">http://selfhtml.org</a>.</p>
+<h3 id="video-player">Video Player</h3>
+<p>A dedicated video player is available! When creating new questions, the video player can be found in the category “Text and multimedia”.</p>
+<ul>
+<li>
+<p>The videos are usually output with HTML5, Flash is used as a fallback.</p>
+</li>
+<li>
+<p>The video player supports the video formats mp4, m4v, and mov combined with the encoding process H.264 codec. If a selected file does not conform with the H.264 codec a warning is displayed.</p>
+</li>
+<li>
+<p>The maximum file size corresponds to the installation-specific maximum permitted size of files in the media library, which is currently 512 MB. However, for better performance, the best practice for larger videos (e.g., file size of 500 MB) is the use of streaming services. The corresponding embed code can be embedded via question type 911.</p>
+</li>
+<li>
+<p>A dedicated variable allows tracking if the participants have seen the video file completely, partially, or not at all. The variable is created automatically. Per default, it is labeled “Video has finished playing”. The following missings are used:</p>
+<ul>
+<li>
+<p>-77 = not seen</p>
+</li>
+<li>
+<p>-66 = no Javascript, cannot tell if played</p>
+</li>
+<li>
+<p>-99 = seen, not played</p>
+</li>
+<li>
+<p>1 = seen and completely played</p>
+</li>
+<li>
+<p>0 = seen and partially played but not finished or played in repeat mode</p>
+</li>
+</ul>
+</li>
+<li>
+<p>The “Responsive Layout

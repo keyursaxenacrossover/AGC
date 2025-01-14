@@ -1,0 +1,36 @@
+{
+    "id": 21210903397138,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/21210903397138.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21210903397138-Adding-and-Activating-Cronjobs-to-DXI-Instances",
+    "author_id": 369584192734,
+    "comments_disabled": false,
+    "draft": false,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20234757130258,
+    "created_at": "2024-09-06T15:01:47Z",
+    "updated_at": "2024-09-19T09:19:14Z",
+    "name": "Adding and Activating Cronjobs to DXI Instances",
+    "title": "Adding and Activating Cronjobs to DXI Instances",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-09-19T09:19:10Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075294,
+    "content_tag_ids": [],
+    "label_names": [
+        "Rancher",
+        "Crontab",
+        "Multiple Instances",
+        "Onecron",
+        "Custom Job"
+    ],
+    "body": "<h1 id=\"h_01J73XYZCM07H3NSHE6SJTZMHQ\">Overview</h1>\n<p>Part of <a href=\"https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20714568035218\" target=\"_blank\" rel=\"noopener noreferrer\">Provisioning new DXI installations</a> is cloning over cronjobs from the source installations, or simply configuring new cronjobs, as indicated/requested by Sales/PS.</p>\n<p>This is a detailed runbook for carrying out this easy task.</p>\n<h1 id=\"h_01J73XYZCMM0P95N32YEKCCJ7T\">Adding Custom Cronjobs</h1>\n<p>To add a custom cronjob, for example, <code>onecron</code> job, follow these steps:</p>\n<ol>\n<li>Open the Rancher relevant for the region where the customer is hosted (you can find this in Globis) and login:\n<ul>\n<li>\n<a href=\"https://rancher.prod-de-03.customervoice360.com/dashboard/auth/login\">https://rancher.prod-de-03.customervoice360.com/dashboard/auth/login</a> </li>\n<li>\n<a href=\"https://rancher.prod-us-03.customervoice360.com/dashboard/auth/login\">https://rancher.prod-us-03.customervoice360.com/dashboard/auth/login</a> </li>\n<li>\n<a href=\"https://rancher.sandbox-de-02.customervoice360.com/dashboard/auth/login\">https://rancher.sandbox-de-02.customervoice360.com/dashboard/auth/login</a> </li>\n<li>\n<a href=\"https://rancher.bofa-us-01.customervoice360.com/dashboard/auth/login\">https://rancher.bofa-us-01.customervoice360.com/dashboard/auth/login</a> </li>\n</ul>\n</li>\n<li>Click on the link under local in the list of clusters.<br><img src=\"https://central-supportdesk.zendesk.com/attachments/token/YJnbNWmBybaQ3IIFCJZy57eUK/?name=grafik.png\" width=\"414\" height=\"156\">\n</li>\n<li>Put <strong>global-services</strong> into the search field on top and click on Projects/Namespaces on the left and then on <strong>global-services</strong> in the list of Projects/Namepaces.<br><img src=\"https://central-supportdesk.zendesk.com/attachments/token/SHsNNjp9uOGKDeSWgjCaGfrZs/?name=grafik.png\" width=\"485\" height=\"154\">\n</li>\n<li>Click on pods.<br><img src=\"https://central-supportdesk.zendesk.com/attachments/token/lq4MSsE2GN07rT7yXgmjPoiD8/?name=grafik.png\" width=\"467\" height=\"240\">\n</li>\n<li>Look for the entry that begins with <strong>servicegateway-</strong> and click on the three button icon on the right end of it and click on \"<strong>Execute Shell</strong>\" in the menu, that opens.<br><img src=\"https://central-supportdesk.zendesk.com/attachments/token/sjxkRzttGPKSPLgYQ8A8hXMp1/?name=grafik.png\" width=\"414\" height=\"215\">\n</li>\n<li>Go to the directory with the crontabs with <code>cd /nfs/cron.d</code> and open the crontabs using <code>vi</code>.</li>\n<li>Open each crontab for all the required installations using <code>vi</code> and add the relevant crons to them lines to them; For example, for the jx3065 instance, the cron for <code>onecron</code> would be:<br><code>*/10 * * * * root /efsjob.sh '/nfs/installations/jx3065/nfs/opst/jx3065.customervoice360.com/htdocs/csv2gpx/public/index.php -c onecron -a execute' 60 2&gt;&amp;1 | awk '{print \"[onecron:jx3065_customervoice360_com] \" $0}' &gt; /proc/1/fd/1</code><br>\n<ul>\n<li>Ensure to have a carriage return at the end of the lines.</li>\n<li>This is how the cron file would look like after having added the above line:<br><img src=\"https://central-supportdesk.zendesk.com/attachments/token/MlHj3uX03zngfL9sD6EM28ks7/?name=image.png\" width=\"532\" height=\"199\">\n</li>\n</ul>\n</li>\n</ol>\n<h1 id=\"h_01J84RVY92XK5PQHDXRDXAYBDV\">Activating Existing Cronjobs</h1>\n<p>The process is identical to the one above (the first 6 steps), <strong>Step 7</strong> will be different:</p>\n<ul>\n<li>You only need to uncomment the cronjobs that you want to activate by removing the <strong>#</strong> in front of it and save the file.<br><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21464822861970\" width=\"357\" height=\"114\">\n</li>\n</ul>\n<h1 id=\"h_01J73XYZCM260XM2WP6ZCB6QRM\">Summary</h1>\n<p>This article provides a step-by-step guide on how to add custom cronjobs to DXI instances in a customer's setup. The process involves accessing the Rancher platform, navigating to the appropriate directories, and adding the necessary lines of code to the crontabs for each instance.</p>\n<h2 id=\"h_01J73XYZCMTEHHC88SVF01S69H\">FAQ</h2>\n<ol>\n<li>\n<strong>What is an onecron job?</strong><br>An onecron job is a type of task scheduled to run automatically at specific intervals on a server.</li>\n<li>\n<strong>What is a crontab?</strong><br>A crontab is a simple text file that contains a list of commands meant to be run at specified times. It is edited using the command line editor 'vi'.</li>\n<li>\n<strong>What does the 'carriage return at the end of the lines' mean?</strong><br>This refers to pressing the 'Enter' key after the last line of code, which creates a new line at the end of the file. This is often necessary for proper execution of scripts and commands.</li>\n</ol>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

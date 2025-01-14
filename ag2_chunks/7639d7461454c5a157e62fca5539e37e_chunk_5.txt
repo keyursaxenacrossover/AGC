@@ -1,0 +1,91 @@
+p>
+</td>
+</tr>
+<tr>
+<td>
+<p>efs.smsblocklist.delete(array(phone-numbers))</p>
+</td>
+<td>
+<p>Deletes a list of numbers from the blocklist, returns list of numbers and their delete status</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>efs.smsblocklist.getList</p>
+</td>
+<td>
+<p>Returns the list of all numbers on the blocklist</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>efs.smsblocklist.getListByDateRange(daterange)</p>
+</td>
+<td>
+<p>Returns the list of all numbers on the blocklist within the given date range</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>efs.smsblocklist.getListByNumber(phone-number)</p>
+</td>
+<td>
+<p>Returns a list of all surveys where given number is on the blocklist. In case of global bocklist, the surveyId is 0.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>efs.smsblocklist.isBlocked(number,surveyId (opt))</p>
+</td>
+<td>
+<p>Check whether number is on the blocklist for given survey, in this case the global blocklist will not be checked. If surveyId is not specified checks whether email is in global blocklist.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>p>
+</td>
+</tr>
+<tr>
+<td>
+<p>efs.smsblocklist.delete(array(phone-numbers))</p>
+</td>
+<td>
+<p>Deletes a list of numbers from the blocklist, returns list of numbers and their delete status</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>efs.smsblocklist.getList</p>
+</td>
+<td>
+<p>Returns the list of all numbers on the blocklist</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>efs.smsblocklist.getListByDateRange(daterange)</p>
+</td>
+<td>
+<p>Returns the list of all numbers on the blocklist within the given date range</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>efs.smsblocklist.getListByNumber(phone-number)</p>
+</td>
+<td>
+<p>Returns a list of all surveys where given number is on the blocklist. In case of global bocklist, the surveyId is 0.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>efs.smsblocklist.isBlocked(number,surveyId (opt))</p>
+</td>
+<td>
+<p>Check whether number is on the blocklist for given survey, in this case the global blocklist will not be checked. If surveyId is not specified checks whether email is in global blocklist.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>

@@ -1,0 +1,130 @@
+ {
+      "field_name": "v_2",
+      "field_link": "IN",
+      "field_value": "1, 2, 3"
+    }
+  ]
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">1234</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>surveyId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>The survey ID <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79PQXQ0JQPPHGZWZ1VF"> </h4>
+<h3 id="header-299">POST /survey/statistics/{surveyId}/abs/all</h3>
+<p>Returns the absolute number of participation for all disposition codes, optionally restricted by condition. <br>Valid values for <code>field_link</code>: <em>IN, BETWEEN, LIKE, NOT LIKE, =, !=, &lt;&gt;, &lt;, &lt;=, &gt;, &gt;=</em>. Values<em> LIKE, NOT LIKE </em>should only be applied to text variables and to search for a substring, append “%”: E.g. “%world” will map “Hello World” but not “World, Hello”, search for “%world%” will find both occurrences.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "restriction": [
+    {
+      "field_name": "v_2",
+      "field_link": "IN",
+      "field_value": "1, 2, 3"
+    }
+  ]
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[ { "code": "10", "count": 1234 } ]</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>surveyId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>The survey ID <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79PMQ41QMB03E6BH1MC"> </h4>
+<h3 id="header-300">POST /survey/statistics/{surveyId}/abs/filter</h3>
+<p>Returns a list of the number/s of participation by disposition code/s and/or split-variable.</p>
+<p>Valid values for <code>field_link</code>: <em>IN, BETWEEN, LIKE, NOT LIKE, =, !=, &lt;&gt;, &lt;, &lt;=, &gt;, &gt;=</em>. Values<em> LIKE, NOT LIKE </em>should only be applied to text variables and to search for a substring, append “%”: E.g. “%world” will map “Hello World” but not “World, Hello”, search for “%world%” will find both occurrences.</p>
+<p><code>POST /survey/statistics/{surveyId}/abs/all</code> and <code>POST /survey/statistics/{surveyId}/abs</code> are similar to this call, but return only a single total value.</p>
+<p>Please note, contrary to the RAML and WSDL documentations, the use of <code>splitVariable</code> in <code>criteria</code> is not supported and returns erroneous result. An updated service will be provided shortly.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "criteria": {
+    "dispositionCodes": [
+      "31", "32"
+    ]
+  },
+  "restriction": [
+    {
+      "field_name": "v_2",
+      "field_link": "IN",
+      "field_value": "1, 2, 3"
+    }
+  ]
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[
+ 

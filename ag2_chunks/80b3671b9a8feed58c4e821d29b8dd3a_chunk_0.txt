@@ -1,0 +1,26 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1066565710">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1066565710</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">What is Multi-factor Authentication?</a></li>
+<ul>
+<li><a href="#header-3">What factors are supported ?</a></li>
+<ul>
+<li><a href="#header-5">Is MFA enabled by default?</a></li>
+<ul>
+<li><a href="#header-7">Can users use other Authenticator apps ?</a></li>
+<li><a href="#header-8">When does a user have to provide MFA?</a></li>
+<li><a href="#header-9">How long will the second factor be remembered by our Identity Provider?</a></li>
+<li><a href="#header-10">Do I have any additional charges when using MFA ?</a></li>
+<li><a href="#header-11">How can a user reset MFA ?</a></li>
+<li><a href="#header-12">How will MFA be configured in case the customer’s Identity Provider already supports MFA?</a></li>
+</ul>
+</ul>
+</ul>
+</ul>
+</ul><ac:parameter ac:name="hidden">true</ac:parameter><ac:rich-text-body><ac:parameter ac:name="minLevel">4</ac:parameter><ac:parameter ac:name="maxLevel">4</ac:parameter><ac:parameter ac:name="indent">0</ac:parameter><ac:parameter ac:name="absoluteUrl">true</ac:parameter><ac:parameter ac:name="style">none</ac:parameter></ac:rich-text-body><h1 id="header-1"><strong>What is Multi-factor Authentication?</strong></h1><p>Multi factor Authentication means that a user that wants to authenticate has to provide other factors apart from username and password to verify their identity. also see <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Multi Factor Authentication MFA" ri:version-at-save="1"></ri:page><ac:link-body>Multi Factor Authentication MFA</ac:link-body></ac:link> </p><h2 id="header-3"><strong>What factors are supported ?</strong></h2><p>We currently offer the following factors from Okta.</p><p>Officially supported:</p><ul>
+<li><p>Okta Verify</p></li>
+<li><p>Google Authenticator</p></li>
+<li><p>SMS (clarify legal questions first! technical support is in place)</p></li>
+</ul><p>Also tested:</p><ul><li><p>Microsoft Authenticator</p></li></ul><p></p><h3 id="header-5"><strong>Is MFA enabled by default?</strong></h3><p>No. It has to be requested during the order of Tivian Access.</p><h4 id="header-7"><strong>Can users use other Authenticator apps ?</strong></h4><p>Even though they are not officially supported we tested it and had not problems using the Microsoft Authenticator app instead of the Google Authenticator.</p><p>In general it seems that authenticator apps supporting TOTP (Time-Based One-Time Passwords) are working fine and are exchangeable.</p><p>We still recommend the usage of the officially supported Google Authenticator.</p><p>As soon as we know of other authenticators which are working with Okta, we will document them in the list above (like the Microsoft Authenticator)</p><h4 id="header-8"><strong>When does a user have to provide MFA?</strong></h4><p>The default behavior is that a user has to provide the second factor each time he/she logs in. This includes an option that the second factor of a user is remembered by Okta and does not need to be provided again for a fixed time. More configuration could be provided (see <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Customizations and Configurations" ri:version-at-save="12"></ri:page><ac:link-body>Customizations and Configurations</ac:link-body></ac:link>).</p><p></p><h4 id="header-9"><strong>How long will the second factor be remembered by our Identity Provider?</strong></h4><p>This can be configured in our Identity Provider. The default is shown on <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Sessions" ri:version-at-save="4"></ri:page><ac:link-body>Sessions</ac:link-body></ac:link>.</p><p>For customization regarding MFA session times have a look at <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Customizations and Configurations" ri:version-at-save="12"></ri:page><ac:link-body>Customizations and Configurations</ac:link-body></ac:link>.</p><p></p><h4 id="header-10"><strong>Do I have any additional charges when using MFA ?</strong></h4><p>No, all MFA usage is included in the fee paid for Tivian

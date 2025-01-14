@@ -1,0 +1,47 @@
+All you need to do is mark the desired blogs, create a list of these selected blogs, and display it in an appropriate place for the external view.</p>
+<p class="wysiwyg-text-align-justify"><strong>An overview list of newly-created blogs:</strong></p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017226476690" alt="image2024-1-12_12-32-13.png"></p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify">You want to make one or several blogs available to the public?</p>
+<p class="wysiwyg-text-align-justify">Use a separate blog section to create the blogs which are destined for the public.<br>Access control for this section should be set to “public”.</p>
+<p class="wysiwyg-text-align-justify">Mark the blogs as “Featured”.</p>
+<p class="wysiwyg-text-align-justify">Then, create a publically accessible page. Create a “List of featured panelist blogs" function module. Reference the blog section which contains public blogs.</p>
+<p class="wysiwyg-text-align-justify"><strong>Work steps</strong></p>
+<p class="wysiwyg-text-align-justify">Setting up a blog list involves the following steps:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Selecting desired blogs. They should be located in one blog section which is already integrated via a function module on a panel page, and the access restrictions for that page should be the same or less restrictive as for the new overview list.</li>
+<li>Creating a page for the list and referencing the appropriate blog section. As soon as this page is published, it will be filled automatically with the selected blogs.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Selecting the Desired Blogs</strong></p>
+<ol class="wysiwyg-text-align-justify">
+<li>In the <strong>Blogs</strong> menu, open the desired section by clicking on its title.</li>
+<li>Locate the desired blog and click on <strong>Edit</strong> to open the properties dialog.</li>
+<li>Tick the checkbox “Featured” and confirm by clicking on Save.</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><strong>Integrating a List of Selected Blogs into the Website</strong></p>
+<p class="wysiwyg-text-align-justify">If you want to integrate a blog list into the website, please proceed as follows:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>On the desired page, create a page module of the “List of featured panelist blogs” type.</li>
+<li>Configure the setting options as required.<br>– Select the “func_blogs_featured” module template.</li>
+</ol>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify">Please note:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>The overview list should be allocated to a specific blog section. There should be a page on which the blogs of that section are displayed via a function module as described above, and the access restrictions for this page should be the same or less restrictive as for the new overview list.</li>
+<li>To be displayed in the “List of featured panelist blogs”, a blog must contain at least one post.</li>
+</ul>
+<h2 id="teasering-blogs" class="wysiwyg-text-align-justify"><strong>Teasering Blogs</strong></h2>
+<p class="wysiwyg-text-align-justify">The teaser feature newly introduced in EFS 10.3 allows to set up of a teaser that displays the most recent, best rated, or most frequently rated blog content. In most cases, these teasers will be positioned on the panelists‘ personal homepage or in a small extra window.</p>
+<p class="wysiwyg-text-align-justify"><strong>Integrating blog teasers into the website</strong></p>
+<p class="wysiwyg-text-align-justify">If you want to integrate a blog list into the website, please proceed as follows:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>On the desired page, create a page module of the “Teaser” type.<br>– In many cases, teasers will be created on the dedicated „GLOBAL“ page and referenced.</li>
+<li>Configure the setting options as required.<br>– Select the “func_teaser” module template.</li>
+</ol>
+<h1 id="forums" class="sc-iGrrsa eYmPYl wysiwyg-text-align-justify"><strong>Forums</strong></h1>
+<p class="wysiwyg-text-align-justify">The forum discussion is one of the most frequently used qualitative feedback collection methods. Therefore, this feature is quite closely integrated with EFS’s central standard functions.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Forum discussions can be created and managed as separate projects from within the project list.</li>
+<li>The to-do list allows to display of forum discussions along with quantitative surveys on the panelists’ personal homepages.</li>
+<li>You can decide for yourself whether you want to use these display options. If you wish to use them

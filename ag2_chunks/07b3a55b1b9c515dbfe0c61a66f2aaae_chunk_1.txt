@@ -1,0 +1,26 @@
+ for the user at the <strong>Identity Provider</strong>. Last but not least, the <strong>app</strong> will also create a session for the user.</p>
+<p><span style="color: #36b37e;">App → Identity Provider → External Identity Provider → Authenticate → </span><strong><span style="color: #36b37e;">+</span></strong><span style="color: #36b37e;">Session (External Identity Provider) → </span><strong><span style="color: #36b37e;">+</span></strong><span style="color: #36b37e;">Session (Identity Provider) → </span><strong><span style="color: #36b37e;">+</span></strong><span style="color: #36b37e;">Session (App)</span></p>
+<h3 id="h_01J5X48687HM87MDHRA5RYNC66">2. User has only external Identity Provider Session</h3>
+<p>The same as 1.), but when the <strong>Identity Provider</strong> send the user to the <strong>external Identity Provider</strong>, the user will not need to provide any credentials.</p>
+<p><span style="color: #36b37e;">App → Identity Provider → External Identity Provider → </span><strong><span style="color: #36b37e;">+</span></strong><span style="color: #36b37e;">Session (Identity Provider) → </span><strong><span style="color: #36b37e;">+</span></strong><span style="color: #36b37e;">Session (App)</span></p>
+<h3 id="h_01J5X48KK3WGGQ1BHYHPXCKFAA">3. User has Identity Provider Session</h3>
+<p>This scenario is different, because the user will <strong>never even visit the external Identity Provider</strong></p>
+<p><span style="color: #36b37e;">App → Identity Provider → App</span></p>
+<h3 id="h_01J5X48RD69HQZBV26XP2FSC57">4. User has app session</h3>
+<p>The user <strong>will not leave the app</strong> and is directly able to perform his work</p>
+<p><span style="color: #36b37e;">App </span></p>
+<p> </p>
+<p>All scenarios where e.g: an app session exists, no Identity Provider session but an external Identity Provider Session are irrelevant because the user flow will not visit those places (because he will never leave the app, see point 4).</p>
+<h2 id="header-4">Logout</h2>
+<p>Logging out means the following: A session is cleared and the user is forced to provide his credentials again before continuing his work. But not all logouts are equal. A logout can take place in the <strong>Identity Provider </strong>(which will just invalidate the Identity Provider session) or it takes place in the <strong>app</strong> (where it can either clear the app session alone or the app session + the Identity Provider session)</p>
+<p>The <strong>external Identity Provider</strong> session is only invalidated if the user signs out there.</p>
+<p>The different states which can be achieved by that can be seen in the examples above.</p>
+<h2 id="01J5X4BYKHC2NFJFY47QZRD0A0">Default Session Times</h2>
+<p>(Please note that these are times are configured right now in okta)</p>
+<p><strong>Identity Provider Session</strong> (Okta): 2 hours</p>
+<p><strong>Application Session</strong> (EFS): 1 hour </p>
+<p><strong>Application Session</strong> (Portals): 1 day </p>
+<p><strong>External Identity Provider Session</strong>: Not configurable by us, only the client can change that</p>
+<h2 id="01J5X4BYKJBQVSMPGXT5Y5M57H">Where are Sessions stored in our current Architecture?</h2>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20910035913106" alt="Session Lifetimes - Schön.png"></p>
+<p style="text-align: center;">“Locations” of sessions in the architecture diagram</p>

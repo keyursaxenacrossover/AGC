@@ -1,0 +1,41 @@
+/21015069447954" alt="Master data.png"></span></p>
+<p class="wysiwyg-text-align-justify">To implement group compositions in your project setup, proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>First, define your <strong>master data</strong> under <em>People</em> → <em>Master data</em> → <em>Create master data</em>, for example, “md_brand” and “md_brand_responsible” as matching variables.</li>
+<li>Create a <strong>group</strong> under <em>People</em> → <em>Groups</em> → <em>Create group</em>. In addition to the group title, you can optionally add a description of the group as well as create a group category to organize your data.</li>
+<li>
+<span style="color: #091e42;">Filters are used to define which panelists will be added to certain groups. Create a</span><span style="color: #091e42;"> </span><strong>group filter</strong><span style="color: #091e42;"> </span><span style="color: #091e42;">under</span><span style="color: #091e42;"> </span><em>People</em><span style="color: #091e42;"> </span><span style="color: #091e42;">&gt;</span><span style="color: #091e42;"> </span><em>Groups</em><span style="color: #091e42;"> </span><span style="color: #091e42;">&gt;</span><span style="color: #091e42;"> </span><em>Grouping filters</em><span style="color: #091e42;">.</span>
+<ul>
+<li>Grouping of detractors for NPS calculation (Example)</li>
+<li>md_nps <strong>less</strong> 6 AND md_nps <strong>greater/equal</strong> 0 (Example)</li>
+</ul>
+</li>
+<li>Open <em>People</em> &gt; <em>Groups</em> &gt; <em>Update rules</em> and define the update rules according to which you want your group to be updated at a certain time.</li>
+<li>Upon the creation of the updated rules, note the following aspects:
+<ul>
+<li>Select a <strong>Group category</strong> and the <strong>group</strong> you want to be updated. This group should be the same as the one used in Circles.</li>
+<li>Activate the <strong>automatic execution</strong> of the update via the respective checkbox.</li>
+<li>Set a <strong>Start time</strong>.</li>
+</ul>
+</li>
+<li>Create the following <strong>Defined actions</strong> that are to be executed:
+<ul>
+<li>
+<strong>Empty group</strong> - in case data of users have changed, members who are no longer relevant will be removed from their groups this way.</li>
+<li>
+<strong>Apply grouping filter</strong> - select your created filter.</li>
+<li>Select the <strong>Filter operation</strong> according to the grouping filter - for example, “Add panelists that match condition”.</li>
+<li>After execution of the update rules, all panelists corresponding to the grouping filter will be added to the panel groups in Panel and Circles [<em>in this example</em>].</li>
+<li>You have created a circle, and its content complies dynamically with your grouping filters in <em>People</em>.</li>
+</ul>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><em>Information:</em></p>
+<ul class="wysiwyg-text-align-justify">
+<li><em>To keep your circle updated properly, the execution date of the update rules for groups should be set to a time before the update execution of Groups. Otherwise, you would have to wait for the next update for at least one day.</em></li>
+<li><em>Following the setup, you can optionally execute the actualization of the update rules as well as Groups (in the Groups menu) manually via the play button at any time.</em></li>
+</ul>
+<h2 id="action-board" class="auto-cursor-target wysiwyg-text-align-justify"><strong>Action Board</strong></h2>
+<p class="wysiwyg-text-align-justify">To initiate the improvement of engagement, the traditional approaches have been evolved. This development presents the current solution for such applications, the Action Planner, with a challenge. This module uses an organizational structure that restricts the actions to hierarchically coordinated actions and proves inflexible when teams are dynamically assembled. The new improvements module is designed for other use cases. By using the share function, fluctuating team compositions are possible and a commentary function and a lean evaluation option provide the key to sustainable commitment. The measures enacted from above will be replaced by active cooperation.</p>
+<h3 id="the-page-integration-of-the-new-module-and-the-first-steps" class="wysiwyg-text-align-justify"><strong>The page integration of the new module and the first steps</strong></h3>
+<p class="wysiwyg-text-align-justify">The page module integration in the CMS area of Portals finds no trouble: You place the module Improvements on a page and enter a heading. After that, the module is already available in the exterior view. You use the button

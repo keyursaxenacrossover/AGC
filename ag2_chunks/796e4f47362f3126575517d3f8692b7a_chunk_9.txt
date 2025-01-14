@@ -1,0 +1,39 @@
+>
+<p class="wysiwyg-text-align-justify">You use the mapping element <strong>Text</strong> to fill shape cells with self-written texts.  This element is not used for data space queries.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>You use this element to place individual labels in the report that you enter in the user-defined text field.</li>
+<li>The number of characters used depends on the cell size of the PowerPoint shape. If you use too many characters, it will be written beyond the cell boundary.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The path is: <em>Text</em> → [<em>self-written text</em>]</p>
+<h3 id="the-dimension-element" class="wysiwyg-text-align-justify"><strong>The Dimension element</strong></h3>
+<p class="wysiwyg-text-align-justify">You not only continue with the mapping element <strong>Dimension</strong> after you have picked a unit, for example, but you also start your picker path with this element. If you start with the dimension element, it is used to fill the shape cells with the question or dimension item text. The question texts of the survey and their dimension items are available to you for this purpose, if available.</p>
+<p class="wysiwyg-text-align-justify">The representation in the inspector is structured as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Question text of the first question of the survey</li>
+<li>Dimension item(s) of this question</li>
+<li>Question text of the second question of the survey</li>
+<li>Dimension item(s) of the question</li>
+<li>etc.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013838086290" alt="Dimension item.png"></p>
+<p class="wysiwyg-text-align-justify">You pick the path:</p>
+<p class="wysiwyg-text-align-justify"><em>Dimension</em> → [<em>question text</em>] or <em>Dimension</em> → [<em>dimension item</em>]</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013838084114" alt="Label and scale.png"></p>
+<p class="wysiwyg-text-align-justify">You continue with:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Label</li>
+<li>Scale</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If you continue with <strong>Label</strong>, the term is immediately valid. <span style="color: #091e42;">If you continue with </span><strong>Scale</strong><span style="color: #091e42;">, you extend the already entered picker path so that the scale specification for the question can be queried and selected for the report.</span></p>
+<p class="wysiwyg-text-align-justify"><span style="color: #091e42;"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013838082834" alt="Scale item.png"></span></p>
+<p class="wysiwyg-text-align-justify">You pick:</p>
+<p class="wysiwyg-text-align-justify"><em>Dimension</em> → [<em>question text/dimension item</em>] → <em>Scale</em> → [<em>scale item</em>]</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013838080914" alt="The Dimension element.png"></p>
+<p class="wysiwyg-text-align-justify">You end with:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Code</li>
+<li>Label</li>
+</ul>
+<h3 id="the-unit-element" class="wysiwyg-text-align-justify"><strong>The Unit element</strong></h3>
+<p class="wysiwyg-text-align-justify"><span style="color: #091e42;">The following sub-chapter deals with the mapping element </span><strong>Unit</strong><span style="color: #091e42;">, which you will encounter when working on the sub-navigation field </span><strong>Pages</strong><span style="color: #091e42;"> and </span><strong>Data</strong><span style="color: #091e42;"> as well as during report ordering. After you have clicked on </span><strong>Unit</strong><span style="color: #091e42;">, it breaks down into the elements </span><strong>Fixed unit</strong><span style="color: #091e42;">, </span><strong>Focus unit</strong><span style="color: #091e42;">, </span><strong>Comparison unit</strong><span style="color: #091e42;">, and </span><strong>Dataspace entities</strong><span style="color: #091e42;">.</span></p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article

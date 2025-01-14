@@ -1,0 +1,44 @@
+="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015039525010" alt="image2019-7-18_9-15-37.png">
+</li>
+<li>
+<p>Enter the following data:<br><br>– Page identifier: The page identifier is used to uniquely identify the page within the system, regardless of language settings. It is particularly used in the browser address bar and for internal links. Therefore it should not contain any blank spaces or special characters. Enter: “blogging”.<br>– Parent page: You want to locate the page at the top level of navigation. Therefore select the following folder: “Pages → How it works”.<br>– Position: In the submenu of “How it works”, you want to place the page “at the beginning”.<br>– Internal page name: Name of the page in the tree structure. If you are editing a website with several language versions, you can choose a different name for each version. Enter: “Blogging”.<br>– Main template: This is the main template that defines the overall page structure. Select “main_default”.<br>– Positioning template: The template allows you to change the default position of content elements. This is not necessary for new sample pages.<br>– HTML title: Title used in the browser, the navigation, and in the breadcrumb. Enter: “Blogging”.<br>– Access control: You do not wish to restrict access, all interested visitors and panelists are to have access. Therefore select “Public”. Show in navigation: You want the new page to always be visible in the navigation bar. Therefore select “Always”.<br>– Meta keywords: In this field, you can enter keywords someone using a search engine would expect to find the page under. This field is optional so leave the sample page empty.<br>– URL Alias (previously: “Page name for URL”): Optionally definable page name that may be used to create a search engine friendly URL in the current language version. Leave this field blank.</p>
+</li>
+<li>
+<p>Confirm by clicking on <strong>Save</strong>.</p>
+</li>
+<li>
+<p>The page is created and the tree view is updated. You are taken to the <strong>Page Modules</strong> tab in the editing dialog for the new page.</p>
+</li>
+<li>
+<p>Select the preview mode <strong>Offline version</strong> to display the new page.</p>
+</li>
+</ol>
+<h3 id="adding-content-and-functional-elements" class="wysiwyg-text-align-justify"><strong>Adding Content and Functional Elements</strong></h3>
+<p class="wysiwyg-text-align-justify">In the next step, add content and functional elements to the page. The structure we want to create is simple: In the upper section, you want to explain to the visitors what they can use the form in the lower section for. To do so, use the “Headline + text” module. You can create an information request form using the “Contact form” module in the lower section.</p>
+<ol class="wysiwyg-text-align-justify">
+<li>On the Page Modules tab, click on the <strong>+ Page module</strong> button.</li>
+<li>Enter the following:<br><br>– Type: You can choose from various modules in the drop-down list. Select “Content module: Heading + text”.<br>– Reference name for template: This name allows you to trigger the module from a positioning template, something which is, however, not necessary in the example. Keep the text that is automatically preset as it is: “module_blogging_1”.<br>– Page module title: This is the internal title of the module. For this example enter: “Blogging introduction”.<br>– Module template: Data output is controlled using a module-specific template. Select the “cont_headline_text” template, which belongs to this content module.<br>– In the “Position” field, choose the default setting “at the beginning”.<br><br>
+</li>
+<li>
+<p>Click on <strong>Save</strong>.</p>
+</li>
+<li>
+<p>The options for the “Content module: Heading + text” module will be displayed. Fill in the following details:<br><br>– Headline: This headline is displayed as the section title on the panel page. Enter: “Blogging”.<br>– Text: This field contains the actual text. Enter a sample text.<br><br></p>
+Information
+<p>You can use HTLM formatting in the text fields, for example, to highlight a word in bold or italics. Use the &lt;br&gt; or &lt;br /&gt; tags to create line breaks. In fields marked with “Smarty code”, you can use Smarty.</p>
+<p class="auto-cursor-target"> </p>
+</li>
+<li>
+<p>Confirm by clicking on <strong>Save</strong>.</p>
+</li>
+<li>
+<p>Select the preview mode <strong>Offline version</strong> to preview the changes.</p>
+</li>
+<li>
+<p>The next step is to create the contact form section. Open the <strong>Page Modules</strong> tab again.</p>
+</li>
+<li>
+<p>Click on the <strong>+ Page</strong> module.</p>
+</li>
+<li>
+<p>Enter the following:<br><br>– Type: “Function module: Contact form”.<br>– Reference name for template: “module_blogging_2”.<br>– Page module title: “Blogging questions”.<br>– Module template: “func_contact_form”.<br

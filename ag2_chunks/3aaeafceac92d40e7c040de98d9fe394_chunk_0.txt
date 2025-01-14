@@ -1,0 +1,69 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K" class="wysiwyg-text-align-justify">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article provides comprehensive information about project management in a survey platform, covering project statuses, information, distribution methods, and various project types. It also includes details on process progress tracking and the use of macros for automating repetitive tasks.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">This guide focuses on the key aspects of managing survey projects, including project statuses, distribution methods, and specific features for different project types. It also covers advanced features such as process progress tracking and automation using mcros. </p>
+<ul class="wysiwyg-text-align-justify">
+<li><a href="#project-statuses">Project Statuses</a></li>
+<li><a href="#information">Information</a></li>
+<li><a href="#distribution">Distribution</a></li>
+<li><a href="#h_01J3QAJ514X2N3W6HQ7643WEK2">Project Type</a></li>
+<li><a href="#process-progress">Process progress</a></li>
+<li><a href="#macros">Macros</a></li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="project-statuses" class="wysiwyg-text-align-justify"><strong>Project Statuses</strong></h2>
+<p class="wysiwyg-text-align-justify">The following table provides an overview of the project statuses and the arising to-dos. Changes of the project status are logged in the <strong>Documentation</strong> → <strong>Project change log</strong> menu.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015136712210" alt="Statuses.jpg"></p>
+<h3 id="survey-compiled" class="wysiwyg-text-align-justify"><strong>Survey compiled</strong></h3>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>After creating the project, the survey will be generated automatically.</p>
+</li>
+<li>
+<p>Usually the project will be reset manually before the field phase starts. This is necessary if real data records are created when testing an anonymous project or if real data records are created for a personalized project or if a personalized project involves real participant accounts rather than dedicated test accounts.</p>
+</li>
+<li>
+<p>If the project has the status <strong>Survey compiled</strong>, nobody can participate in the survey.</p>
+</li>
+</ul>
+<h3 id="active" class="wysiwyg-text-align-justify"><strong>Active</strong></h3>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The survey project has been activated i.e. it is “in the field“, the current date is between the set start and end date of the survey.</p>
+</li>
+<li>
+<p>If the project has the status <strong>Active</strong>, you can participate in the survey.</p>
+</li>
+</ul>
+<h3 id="no-further-participations" class="wysiwyg-text-align-justify"><strong>No further participations</strong></h3>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>This status makes it possible to bring a “smooth” end to the field phase: Participants, who are working with a questionnaire, can complete the process of filling it out and new participants will be rejected with an appropriate message.</p>
+</li>
+<li>
+<p>The status can be triggered manually by clicking on the To do of the same name. This will happen automatically, when the activated participation counter reaches the preset quota of finished participants.</p>
+</li>
+<li>
+<p>The process of filling out a questionnaire in progress can be finished, whereas it is no longer possible to begin a new one.</p>
+</li>
+</ul>
+<h3 id="finished" class="wysiwyg-text-align-justify"><strong>Finished</strong></h3>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The project has been deactivated and then finished.</p>
+</li>
+<li>
+<p>Possible next steps will be archiving or exporting the project.</p>
+</li>
+<li>
+<p>If the project has the status Finished, participation is no longer possible.</p>
+</li>
+</ul>
+<h3 id="participation-counter" class="wysiwyg-text-align-justify"><strong>Participation counter</strong></h3>
+<p class="wysiwyg-text-align-justify">The participation counter takes a survey out of the field, as soon as a preset number of successful participations has been reached.</p>
+<p class="wysiwyg-text-align-justify"><strong>Permitting only a Limited Number of Participations</strong></p>
+<p class="wysiwyg-text-align-justify">By default the participation counter is deactivated. Where a project with activated par- ticipation counter is copied or exported/imported, the counter is also deactivated in the new project.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>From the moment of activation, the participation counter counts backwards from the preset value to “0”.</p>
+</li

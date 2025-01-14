@@ -1,0 +1,51 @@
+ bar.</p>
+</li>
+<li>
+<p>The message text (“You have already completed n percent of the survey”) will be read from the database, and the percentage will be dynamically inserted.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Example 1</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>In a test project, activate the progress bar via the <strong>Standard editor → Progress bar</strong>.</p>
+</li>
+<li>
+<p>Switch to <strong>Pro editor</strong> → <strong>Structure</strong>.</p>
+</li>
+<li>
+<p>Choose the “layout_progressbar.tpl” template.</p>
+</li>
+</ul>
+<pre>{strip}{* Version 3.0 2017-07-11 *}<br>&lt;!-- BEGIN layout_progessbar.tpl --&gt;<br>{if $LayoutSettings.progressbar == "true"}<br>                &lt;div class="progressbarContainer"&gt;<br>                                &lt;div class="progressbar" role="progressbar" aria-label="{$msg_progress}" {if isset($progressbar_hidden) &amp;&amp; $progressbar_hidden === true}style="visibility: hidden;"{/if} aria-valuemin="0" aria-valuemax="100" aria-valuenow="{$sys_progress}"&gt;<br>                                                &lt;div class="progressbar-filled" title="{$msg_progress}" style="width: {$sys_progress}%;"&gt;&lt;/div&gt;<br>                                &lt;/div&gt;<br>                                &lt;div class="progressbarIndicator" {if isset($progressbar_hidden) &amp;&amp; $progressbar_hidden === true}style="visibility: hidden;"{/if}&gt;<br>                                                &lt;span class="hidden"&gt;Progress: &lt;/span&gt;{$sys_progress}%<br>                                &lt;/div&gt;<br>                &lt;/div&gt;<br>{/if}<br>&lt;!-- END layout_progessbar.tpl --&gt;<br>{/strip}</pre>
+<div id="content" class="highlighter-context page view" data-inline-comments-target="true" data-testid="page-content-only">
+<div class="_1bsb1osq _19pkidpf _2hwx1wug _otyridpf _18u01wug">
+<div>
+<div id="main-content" class="wiki-content css-1pxzx0w e5xcnr80" data-testid="pageContentRendererTestId" data-test-appearance="full-page">
+<div class="renderer-overrides">
+<div class="ak-renderer-wrapper is-full-page cc-1jke4yk">
+<div class="cc-1txw3et">
+<div class="ak-renderer-document">
+<div class="code-block  cc-15qwbrk">
+<div class="cc-9n57oc">
+<div class="cc-v2tmjh">
+<div role="presentation"> </div>
+<div role="presentation">
+<div aria-describedby="6111val-tooltip"><span style="font-size: 2.1em; text-align: justify;">FAQ</span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h3 id="h_01HGKSMPRTDQXJ8QZGX9XBPNM1J" class="wysiwyg-text-align-justify">What is the Pro Editor used for in the EFS Survey?</h3>
+<p class="wysiwyg-text-align-justify">The Pro Editor in EFS Survey is used to modify page structure, layout, question output, progress bar, and plausibility checks. It provides advanced customization options for survey design and functionality.</p>
+<h3 id="h_01HGKSMPRTEX9XBPNM1JQXJ8QZG" class="wysiwyg-text-align-justify">Can I edit templates externally and upload them to the EFS Survey?</h3>
+<p class="wysiwyg-text-align-justify">Yes, you can export templates for external editing and then import them back into EFS Survey using the Import and Export functions in the Pro Editor.</p>
+<h3 id="h_01HGKSMPRTFZGX9XBPNM1JQXJ8Q" class="wysiwyg-text-align-justify">How does the progress bar calculation work in the EFS Survey?</h3>
+<p class="wysiwyg-text-align-justify">EFS Survey uses an estimation algorithm for automatic progress bar calculation. It steadily approaches the actual final length of the questionnaire as the participant progresses. You can also manually set progress bar values for more control.</p>

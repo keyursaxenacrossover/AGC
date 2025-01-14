@@ -1,0 +1,43 @@
+<h1 id="h_01J962W3YA94GXX1WJ60YKXE30">Overview</h1>
+<p>This guide provides steps for troubleshooting an issue where panelists have been registered under specific recruitment campaigns (e.g., PB_JUN_24, PB_JUL_24), but no associated registration keys are found in the system. This situation often raises concerns regarding the integrity of the registration process and potential fraud risks.</p>
+<p><strong>Issue Description</strong></p>
+<p>Customers may encounter cases where panelists have completed registration through recruitment suppliers using unique registration keys (<span style="color: #2f3941; font-family: system-ui, -apple-system, BlinkMacSystemFont, ' Segoe UI' , Roboto, Oxygen-Sans, Ubuntu, Cantarell, ' Helvetica Neue' , Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ebf9f9; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">created by going to People-&gt;panel configuration-&gt;ways of entry-&gt;generate keys)</span>.<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21739279818130"><br>Note in this example, the number of keys used for this "Way of Entry" is 111 keys.</p>
+<p>However, in some instances, more panelists might be found related to this Way of Entry (accessed through People -&gt; Panelist administration -&gt; Advanced Search), in this example there are 119 panelists using the 111 keys:<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21739295530386"><br>This indicates that there are some panelists in the system with no corresponding "used keys" associated with their registrations. This is problematic as registration codes are meant to be one-time-use, preventing multiple panelists from registering with the same key.</p>
+<p>Customer might provide a sample Panelist code or Pseudonym not showing in the extracted used keys.</p>
+<p>Customer might request to confirm <strong>which codes were used by which Panelists?</strong></p>
+<h1 id="h_01J96YTAVPRW2QAAX0Z2AHW5F9">Possible Root Cause</h1>
+<p>The issue likely arises due to the same <strong>LMI key</strong> (unique registration code) being sent to multiple panelists who used it within a short time frame. The root cause seems to be related to how the system handles registration codes at the start and end of the registration process.</p>
+<ul>
+<li>When several panelists started the registration process using the same LMI key, the system did not lock or flag the key as "used" at the beginning of the process.</li>
+<li>The key was marked as "used" only when the first panelist finalized their registration. As a result, subsequent panelists could still begin their registration using the same key.</li>
+<li>This discrepancy led to a situation where the panelists successfully registered under the same "Way of entry" but did not appear in the downloadable list of "used keys." Essentially, only the first panelist to complete the process is recorded as having used the key.</li>
+<li><em>Note that the above is a <strong>theoretical analysis</strong>, if reproduced, please update this article. No Eng ticket was created yet since customer for this ticket was caring about getting the list of codes, not fixing the root cause.</em></li>
+</ul>
+<h1 id="h_01J962W3YAZPKVW4JBY9YRWZ12">Solution</h1>
+<h3 id="h_01J964YG3ETAWT6NV6SBYFBBSP">Steps to Troubleshoot the Issue</h3>
+<h4 id="h_01J964YG3E46DZZ0A1DTD4FPPZ">Step 1: Review the Database for Panelist Registration Records</h4>
+<p>To analyze the panelist records and identify discrepancies, execute the following SQL query to retrieve relevant data from the panelist registration tables.</p>
+<p>Just replace the  <code class="!whitespace-pre hljs language-sql">pa.reg_code</code> in the query below with the correct values for the Way of Entry having the issue.</p>
+<pre><code class="language-plaintext">SELECT
+	pa.uid,
+	pa.pseudonym,
+	p.u_email,
+	p.u_firstname,
+	p.u_name,
+	pa.penter_date,
+	pa.reg_code,
+	pe.title,
+	pav.remote_addr AS ip_on_registration,
+	prk.rkey	,
+	prk.active,
+	prk.used
+FROM
+	panel_att AS pa
+	LEFT JOIN panel_recruitment_keys AS prk ON ( prk.rid = pa.reg_code AND prk.uid = pa.uid
+	)
+	LEFT JOIN panel_entry AS pe ON (pa.reg_code = pe.reg_code)
+	LEFT JOIN panelists AS p ON (pa.uid = p.uid)
+	LEFT JOIN panel_att_var AS pav ON (pa.uid = pav.uid)
+WHERE
+	pa.reg_code IN (136, 139)
+	AND prk.r

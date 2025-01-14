@@ -1,0 +1,107 @@
+_reporting_layout</p></td>
+<td><p></p></td>
+<td><p>layout_id, layout_name, layout_path</p></td>
+</tr>
+<tr>
+<td><p>survey_reporting_limit</p></td>
+<td><p></p></td>
+<td><p>type, value, alowed</p></td>
+</tr>
+<tr>
+<td><p>survey_reporting_log</p></td>
+<td><p>information about actions done within a report and errors that occurred</p></td>
+<td><p>tstamp, act, user_id, report_id, error_trace</p></td>
+</tr>
+<tr>
+<td><p>survey_reporting_publication</p></td>
+<td><p>publication = Export, gives information about publications</p></td>
+<td><p>publication_id, report_id, filename, created, creator_id</p></td>
+</tr>
+<tr>
+<td><p>survey_reporting_publication_job</p></td>
+<td><p>Export jobs that should be done once or repeatedly (automatically)</p></td>
+<td><p>job_id, publication_id, scheduled,started, finished, status</p></td>
+</tr>
+<tr>
+<td><p>survey_reporting_publication_setting</p></td>
+<td><p>settings of a publication</p></td>
+<td><p>setting_id, publication_id, filetype, layout, report_lang, publish_type, efs_status, gui_lang, repeat_interval_type, repeat_interval_value, start_repeat_date, publish_behaviour</p></td>
+</tr>
+<tr>
+<td><p>survey_reporting_question</p></td>
+<td><p></p></td>
+<td><p>question_id, report_id, type, label_id, description_id, instruction_id, source_filter, status, is_answer_text, properties</p></td>
+</tr>
+<tr>
+<td><p>survey_reporting_question_variable</p></td>
+<td><p></p></td>
+<td><p>question_id, variable_id</p></td>
+</tr>
+<tr>
+<td><p>survey_reporting_report</p></td>
+<td><p>Base information about a report</p></td>
+<td><p>report_id, label_title, label_description, active, created, modified, settings, author_uid, rootfilter, author_name, last_update, variable_option</p></td>
+</tr>
+<tr>
+<td><p>survey_reporting_report_datasource</p></td>
+<td><p>Link between reports and projects</p></td>
+<td><p>report_id, type, project_id</p></td>
+</tr>
+<tr>
+<td><p>survey_reporting_report_lock</p></td>
+<td><p></p></td>
+<td><p>report_id, uid, last_action, lock_mode, uahash</p></td>
+</tr>
+<tr>
+<td><p>survey_reporting_request</p></td>
+<td><p></p></td>
+<td><p>id, registered, session, act</p></td>
+</tr>
+<tr>
+<td><p>survey_reporting_setting</p></td>
+<td><p></p></td>
+<td><p>setting_id, data (type=text bzw. serialisiertes Array, kann sehr lang werden)</p></td>
+</tr>
+<tr>
+<td><p>survey_reporting_source</p></td>
+<td><p>includes souce variables (selected at report creation, e.g participant data, panelist data, tracking data) and from which source table they are coming from</p></td>
+<td><p>report_id, type, id, source_pid, source_id, source_meta, status</p></td>
+</tr>
+<tr>
+<td><p>survey_reporting_table</p></td>
+<td><p></p></td>
+<td><p>table_id, title_id, description_id, footer_id, settings_id, items, question_type, instruction_id, is_matrix_summary, question_type_efs, ref_id, chartsettings_id, is_answer_text</p></td>
+</tr>
+<tr>
+<td><p>survey_reporting_template</p></td>
+<td><p></p></td>
+<td><p>id, name, filename, uid, uploaded</p></td>
+</tr>
+<tr>
+<td><p>survey_reporting_tree</p></td>
+<td><p>structure of a report</p></td>
+<td><p>node_id, parent_id, report_id, label_id, object_id, sortorder, nodetype, depth, lineage, icon</p></td>
+</tr>
+<tr>
+<td><p>survey_reporting_update_log</p></td>
+<td><p>Log for automatic data update</p></td>
+<td><p>id, report_id, element_type, element_id, element_status, tstamp, meta</p></td>
+</tr>
+<tr>
+<td><p>survey_reporting_variable</p></td>
+<td><p></p></td>
+<td><p>variable_id, report_id, type, varname, data_type, db_data_table, label_id, description_id, sys_missing, properties</p></td>
+</tr>
+<tr>
+<td><p>survey_reporting_variable_category</p></td>
+<td><p></p></td>
+<td><p>id, report_id, label, org_id, type</p></td>
+</tr>
+<tr>
+<td><p>survey_reporting_variable_code</p></td>
+<td><p></p></td>
+<td><p>variable_id, code, label_id, missing, condition_id</p></td>
+</tr>
+<tr>
+<td><p>survey_reporting_variable_data_101_1</p></td>
+<td><p>all (internal

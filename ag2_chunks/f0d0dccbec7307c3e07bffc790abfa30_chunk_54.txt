@@ -1,0 +1,171 @@
+162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>sampleId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>id of sample <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79MH257WZZ4CYCGRJ04"> </h4>
+<h3 id="header-250">DELETE /survey/participants/{sampleId}/{userId}</h3>
+<p>delete a participant from a survey sample, along with any already collected survey results for the participant</p>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">true</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>sampleId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>id of sample <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>userId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>id of participant <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79MRHRDPMHBV1P9BMW8"> </h4>
+<h3 id="header-251">PATCH /survey/participants/{surveyId}/reset</h3>
+<p>Resets a survey participation for participant. Existing survey data can be kept or deleted. The operation is allowed for personalized surveys only. Valid options for <code>resetType</code> are <em>keepData, deleteData</em>.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "participantIdentifierType": "u_email",
+  "participantIdentifierValue": "example@domain.tld",
+  "resetType": "keepData"
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">true</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>surveyId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>Survey id <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79MXA3FEJ6TB3F9SZGB"> </h4>
+<h3 id="header-252">PATCH /survey/participants/{sampleId}</h3>
+<p>Sends mails to participants in a sample. Request is not available for anonymous surveys. With dis-codes you can decide which participants will receive the mail, e.g. when sending a reminder email, use codes 11 and 12 (and 10 in GDPR enabled projects).</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "uids": [
+    1
+  ],
+  "mailTemplateId": 1234,
+  "dispcodes": [
+    "11", "12"
+  ],
+  "sendOptions": {
+    "sendDate": "2020-07-02T12:53:50+00:00",
+    "useRecipientTimezone": true
+  }
+}</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px

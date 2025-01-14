@@ -1,0 +1,95 @@
+<li>
+<strong>Tivian actions</strong>
+<ol>
+<li>Configure alias on our site</li>
+<li>Set up SSL. </li>
+<li>Set up monitoring for the domain and SSL of our site (If the customer's DNS no longer points to EFS, monitoring will start on our site and the customer will be informed. If there are any problems with SSL, these will be resolved by Tivian)</li>
+</ol>
+</li>
+<li>
+<strong>Customer actions</strong>
+<ol>
+<li>Adjustment of all DNS entries (CNAME, NS, etc.)</li>
+</ol>
+</li>
+</ol>
+<h3 id="h_01J3YX6C9E6W9VN0QWSYX1CZW8">Customer owns the domain, manages DNS, provides SSL to Tivian</h3>
+<ol>
+<li>
+<strong>Tivian actions</strong><br>
+<ol>
+<li>Configure alias on our site</li>
+<li>Setting up SSL provided by the customer (before the certificate expires, the customer will be informed in advance of when he must send us a new certificate)</li>
+<li>Set up monitoring on our side (If the customer's DNS no longer points to EFS, monitoring starts on our side and the customer is informed. If there are problems with SSL, the customer may be contacted, for example to issue a new certificate)</li>
+</ol>
+</li>
+<li>
+<strong>Customer actions</strong><br>
+<ol>
+<li>Adjustment of all DNS entries (CNAME, NS, etc.)</li>
+<li>Provision of SSL certificate (customer must ensure that all certificates are provided in the <a href="#ssl_customer">correct format</a>)</li>
+</ol>
+</li>
+</ol>
+<h3 id="h_01J3YX6C9ECNR2QR98WGPDD2SE">Customer owns the domain, transfers complete management to Tivian</h3>
+<ol>
+<li>
+<strong>Tivian actions</strong><br>
+<ol>
+<li>Configure alias on our site</li>
+<li>Set up monitoring on our site</li>
+<li>Set up SSL (Let's Encrypt)</li>
+</ol>
+</li>
+<li>
+<strong>Customer actions</strong><br>
+<ol>
+<li>Adjustment of the name server (Tivian NS must be stored) DNS entries so that Tivian can manage the domain.</li>
+<li>Alternatively, we can take over the domain completely and for this we need the auth code for the domain transfer.</li>
+</ol>
+</li>
+</ol>
+<h3 id="h_01J3YX6C9E5MYW2XF5G2X0X053">Tivian registers and manages a new domain for the customer</h3>
+<p>The desired “alias domain” is still available for registration and Tivian will obtain it and take over the complete administration.</p>
+<ol>
+<li>
+<strong>Tivian actions</strong><br>
+<ol>
+<li>Register domain</li>
+<li>Configure alias on our site</li>
+<li>Set up monitoring on our site</li>
+<li>Set up SSL (Let's Encrypt)</li>
+</ol>
+</li>
+<li>
+<strong>Todos for customer</strong>
+<ol>
+<li>NONE</li>
+</ol>
+</li>
+</ol>
+<h2 id="ssl_customer">Customer-provided SSL certificates</h2>
+<p>If a customer insists on using their own SSL certificate (<span class="wysiwyg-underline"><strong>not recommended</strong></span>), follow this workflow:</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20426949189650" alt="SSL_Process.png" width="610" height="654"></p>
+<h3 id="csr_from_tivian">CSR from Tivian</h3>
+<p>Request the following data from the customer for CSR (Certificate Signing Request):</p>
+<pre><code>C=DE (Two Letter Country Code like US,DE,GB) 
+ST=Hessen (Province/Country/State) 
+L=Frankfurt am Main (City) 
+O=Customer XYZ (Business Name) 
+OU=IT (Department Name) 
+CN= The fully qualified domain name of the domain, that shall be secured like www.3uu.de</code></pre>
+<p>After the CSR is generated, it is supplied for the customer, who has to provide us with the SSL certificate, in the format found in the next section.</p>
+<h3 id="no_csr_from_tivian">No CSR from Tivian</h3>
+<p>If the customer generates the CSR, they can also generate the certificate by themselves. The customer must provide Tivian with the certificate in the following format:</p>
+<ul>
+<li>Format: ApacheModSSL</li>
+<li>Files: CA + CRT (unencrypted)</li>
+<li>Key (encrypted)</li>
+<li>Type: x509 PEM</li>
+</ul>
+<h2 id="h_01J3YVS3KESA1124N73W9PZ87Y">Processing a Custom Domain Request (TBR WITH TIVIAN)</h2>
+<p>Sales has to create an Opportunity in Salesforce. <br>Support needs a technical contact person from customer.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20426930500242" alt="Alias_(Domain).png" width="369" height="739"></p>
+<p> </p>
+<p><strong>Once

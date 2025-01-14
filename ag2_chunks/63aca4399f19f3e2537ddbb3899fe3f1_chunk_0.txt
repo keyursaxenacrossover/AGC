@@ -1,0 +1,38 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1169129540">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1169129540</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">Tivian Access features beyond MVP.</a></li>
+<ul>
+<li><a href="#header-3">Identity/User Management UI</a></li>
+<li><a href="#header-4">Identity Management API</a></li>
+<li><a href="#header-5">Tivian Management UI</a></li>
+<li><a href="#header-6">Self Service for Identities (low priority, wait for use cases to implement that)</a></li>
+<li><a href="#header-7">What are the challenges for these solutions?</a></li>
+<ul>
+<li><a href="#header-9">General architectural benefits (also with regards to User Management):</a></li>
+</ul>
+<li><a href="#header-11">Cleanup</a></li>
+<li><a href="#header-12">Tasks:</a></li>
+<li><a href="#header-13">Story Skeletons:</a></li>
+<li><a href="#header-14">Technical Notes and ideas:</a></li>
+</ul>
+</ul>
+</ul><ac:rich-text-body><p>This page could be split and put in the milestone plan on the one hand and the backlog of IAM on the other hand.</p></ac:rich-text-body><p></p><h1 id="header-1">Tivian Access features beyond MVP.</h1><ac:parameter ac:name="minLevel">2</ac:parameter><p></p><p></p><p><strong>Possible epics:</strong></p><ul>
+<li><p>Support the support</p></li>
+<li><p>Self Service</p></li>
+<li><p>Okta Dependency</p></li>
+</ul><p></p><h2 id="header-3">Identity/User Management UI</h2><p><strong>What is it?</strong></p><p>Currently we can only change users using the Okta UI. But this UI is too complex for normal tasks a user-manager would do. And it is also not very aligned with the way we are using Okta (multi-tenant). We should provide a UI that shows exactly the use cases that are present at Tivian. </p><p><strong>Why do we need it? What are the benefits?</strong></p><p>The Identity Management UI will hide Okta from our support and simplify identity management. This is a feature to reduce cost on the support teams (complexity and error rate) and is used mostly internally.</p><p>Is will also give more flexibility in changing the Identity Provider at a later point in time (vendor lock).</p><p></p><h2 id="header-4">Identity Management API</h2><p><strong>What is it?</strong></p><p>EFS currently handles API-Limits from Okta as well as other drawbacks of the Okta API. This has to be implemented in every application that uses Tivian Access.</p><p>More concrete:</p><ul>
+<li><p>bulk operations in portals are mapped to whatever Okta can handle</p></li>
+<li><p>API limits are respected by default</p></li>
+<li><p>Monitoring of used APIs, limits, errors</p></li>
+<li><p>Error handling, error transformation</p></li>
+</ul><p></p><p><strong>Why do we need it? What are the benefits?</strong></p><p>It will safe cost in future development because there is a single point where we can integrate against with EFS and other applications.</p><p>Is will also give more flexibility in changing the Identity Provider at a later point in time (vendor lock).</p><p></p><p></p><h2 id="header-5">Tivian Management UI</h2><p><strong>What is it?</strong></p><p>Setting up applications with Tivian Access is complex and involves multiple steps. This can be enhances by putting this in an own system that takes care of Okta and give an admin UI that triggers creating resources in Okta. Such an API could also provide configuration for the installations. This configuration is currently managed by every EFS installation and will be pushed to Okta.</p><p>More concrete:</p><ul>
+<li><p>UI for setting up EFS installation → this will also immediately set the correct config fields in Okta and the respective EFS installation</p></li>
+<li><p>Creating Portals will trigger a task in the Management UI system that also creates the neccessary config</p></li>
+<li><p>The UI might be directly integrated in EFS Admin as an iframe or as it’s own service</p></li>
+<li><p>Setup wizzard instead of complex documentation</p></li>
+<li><p>Monitoring of used APIs, limits, errors</p></li>
+<li><p>Error handling, error transformation</p></li>
+</ul><p></p><p><strong>Why do we need it? What are the benefits?</strong></p><p>This might lower complexity for EFS and support and also decrease future development cost.</p><p>Is will also give more flexibility

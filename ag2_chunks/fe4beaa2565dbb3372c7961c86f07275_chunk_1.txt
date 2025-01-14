@@ -1,0 +1,69 @@
+], [4] &amp; [7] only if ‘Portal’ module is active</li></ul></ac:adf-fallback></ac:adf-extension><h2 id="header-4">2. execute support/iam/okta2okta.php</h2><p></p><pre><code class="language-text">storck_nikolaus@servicegw-prod-us-02:[/nfs/installations/zv1045/nfs/opst/zv1045.customervoice360.com/htdocs/www]
+$ php support/iam/okta2okta.php
+Current Okta Application touchstone zv1045.customervoice360.com EFS is reachable
+---------------------------------------------------------------------------------------------------------------------
+|key                |current Okta                                                                                   |
+---------------------------------------------------------------------------------------------------------------------
+|iam_well_known_url |https://access.questback.com/oauth2/aus5unxrk4xoGqlPI416/.well-known/oauth-authorization-server|
+|iam_api_token      |008c4oTSR3RtUGKfYb8Ovdhq02NkkJ_nGYF8b4Hgux                                                     |
+|iam_client_id      |0oa1b3aqwarB1GZEo417                                                                           |
+|iam_client_secret  |7Ghpssp7uKoqu6Nh-LMJl0-CtAMcurJ9Lq-PaTO9                                                       |
+|iam_client_group_id|00g1b35shx3DlmUSK417                                                                           |
+|iam_user_group_id  |00g5upo0tuL3KdYOA416                                                                           |
+|iam_proxy_url      |http://squid.global-services.svc.cluster.local:8080                                            |
+---------------------------------------------------------------------------------------------------------------------
+Please specify the config for access to new Okta
+iam_well_known_url  [https://access.tivian.com/.well-known/openid-configuration]:
+iam_api_token       [008c4oTSR3RtUGKfYb8Ovdhq02NkkJ_nGYF8b4Hgux]:
+iam_client_id       [0oa1b3aqwarB1GZEo417]:
+iam_client_secret   [7Ghpssp7uKoqu6Nh-LMJl0-CtAMcurJ9Lq-PaTO9]:
+iam_client_group_id [00g1b35shx3DlmUSK417]:
+iam_user_group_id   [00g5upo0tuL3KdYOA416]:
+iam_proxy_url       [http://squid.global-services.svc.cluster.local:8080]:</code></pre><table data-layout="wide" ac:local-id="723c5ecb-ecb6-4759-b41e-871c20b80f0b">
+<colgroup>
+<col>
+<col style="width: 258.0px;">
+<col style="width: 453.0px;">
+<col style="width: 207.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class="numberingColumn"></th>
+<th><p><strong>config variable</strong></p></th>
+<th><p><strong>click path in OKTA</strong></p></th>
+<th><p><strong>notes</strong></p></th>
+</tr>
+<tr>
+<td class="numberingColumn">1</td>
+<td><p><code>iam_well_known_url</code></p></td>
+<td><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20717171206802" alt="image-20220503-145713.png"></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td class="numberingColumn">2</td>
+<td><p>#iam_api_token</p></td>
+<td><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20717178965394" alt="image-20220503-150320.png"></td>
+<td><p>save new token in password safe!</p></td>
+</tr>
+<tr>
+<td class="numberingColumn">3</td>
+<td><p><code>iam_client_id</code> <br>&amp;<br><code>iam_client_secret</code> </p></td>
+<td><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20717171109138" alt="image-20220503-151927.png"></td>
+<td><p>check if Client ID &amp; Client Secret are present in password safe</p></td>
+</tr>
+<tr>
+<td class="numberingColumn">4</td>
+<td><p><code>iam_client_group_id</code></p></td>
+<td>
+<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20717151046546" alt="image-20220503-152523.png"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20717178751378" alt="image-20220503-152528.png">
+</td>
+<td><p>this is the <strong>superior </strong>group without a technical name in its name</p></td>
+</tr>
+<tr>
+<td class="numberingColumn">5</td>
+<td><p><code>iam_user_group_id</code></p></td>
+<td><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20717150923026" alt="image-20220503-152818.png"></td>
+<td><p>this is the installation-specific group id</p></td>
+</tr>
+<tr>
+<td class="numberingColumn">6

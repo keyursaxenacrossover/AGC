@@ -1,0 +1,184 @@
+><strong>Response body</strong></em></p>
+<pre><code class="language-json">[
+    {
+        "pgid": 1094,
+        "log_date": "2020-01-21T10:34:05+00:00",
+        "servertime": 0.61,
+        "serverload": 0,
+        "include_time": 0.0240839,
+        "db_time": 0.106218,
+        "output_time": 0.39797
+    }
+]</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>surveyId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>Id of a survey <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79QCK9THD6JY5SQE1TB"> </h4>
+<h3 id="header-323">PUT /survey/timelog/{surveyId}</h3>
+<p>Resets all performance data used when accessing the OSPE time log.</p>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">true</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>surveyId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>Id of a survey <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="header-325">Translations</h2>
+<div class="expand-macro">
+<h4 id="h_01J441N79QGEK6NB1G13MWYFVX"> </h4>
+<h3 id="header-327">GET /survey/translations/{surveyId}/{languageId}</h3>
+<p>Gets a list of all translations for the specified language</p>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[
+    {
+        "typeId": 0,
+        "textType": "msg_title",
+        "text": "Survey"
+    },
+    [...]
+    {
+        "typeId": 0,
+        "textType": "msg_submit",
+        "text": "Continue"
+    },
+    [...]
+    {
+        "typeId": 1380,
+        "textType": "q_instruct",
+        "text": "Here you explain how the question has to be filled in (optional)."
+    },
+    [...]
+]</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>surveyId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>surveyId <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>languageId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>languageId <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79QE1X77H0GSBAV8HBP"> </h4>
+<h3 id="header-328">PATCH /survey/translations/{surveyId}/{languageId}</h3>
+<p>Changes a translation</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class

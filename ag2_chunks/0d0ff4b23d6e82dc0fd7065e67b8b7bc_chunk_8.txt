@@ -1,0 +1,92 @@
+ of the average distance of the individual values from the mean. Extracting the square root yields a value of the same measuring unit as the data values, i.e., you can represent the standard deviation in a chart together with the data values, for example.</p>
+</td>
+</tr>
+<tr style="height: 182px;">
+<td style="width: 133.941px; height: 182px;">
+<p>Standard error</p>
+</td>
+<td style="width: 89.7917px; height: 182px;">
+<p>x</p>
+</td>
+<td style="width: 70.8681px; height: 182px;">
+<p>x</p>
+</td>
+<td style="width: 174.948px; height: 182px;">
+<p>Single response, matrix, simple recoding</p>
+</td>
+<td style="width: 273.785px; height: 182px;">
+<p>The variation of the data values around the unknown “true value” in the population. The greater the standard error, the wider the confidence interval containing the “true value” with the specified probability.</p>
+</td>
+</tr>
+<tr style="height: 216px;">
+<td style="width: 133.941px; height: 216px;">
+<p>Base</p>
+</td>
+<td style="width: 89.7917px; height: 216px;">
+<p>x</p>
+</td>
+<td style="width: 70.8681px; height: 216px;">
+<p>x</p>
+</td>
+<td style="width: 174.948px; height: 216px;">
+<p>Single response, matrix, mulitple response (121,<br>362, 521, 522, 621 and<br>checkbox matrix 362), simple recoding,<br>multiple recoding</p>
+</td>
+<td style="width: 273.785px; height: 216px;">
+<p>The number of participants that have viewed the page containing the question (question base).</p>
+<p>If you wish to display the base above the evaluation of the individual answer options, as is common in the Anglo-Saxon world, simply move the row to the topmost position</p>
+</td>
+</tr>
+<tr style="height: 328px;">
+<td style="width: 133.941px; height: 328px;">
+<p>System missings (code -77)</p>
+</td>
+<td style="width: 89.7917px; height: 328px;">
+<p>x</p>
+</td>
+<td style="width: 70.8681px; height: 328px;">
+<p>x</p>
+</td>
+<td style="width: 174.948px; height: 328px;">
+<p>Single response, matrix, multiple response, simple recoding, multiple recoding</p>
+</td>
+<td style="width: 273.785px; height: 328px;">
+<p>Participants that have not seen the question.</p>
+<p>If a participant has not seen a question due to filtering or premature termination, for example, the corresponding variable or variables will be automatically filled with the missing value “-77”.</p>
+<p>Please note that you cannot insert system missings into charts. The handling of missings in charts is predefined and cannot be manipulated</p>
+</td>
+</tr>
+<tr style="height: 380px;">
+<td style="width: 133.941px; height: 380px;">
+<p>Not answered (code 0)</p>
+</td>
+<td style="width: 89.7917px; height: 380px;">
+<p>x</p>
+</td>
+<td style="width: 70.8681px; height: 380px;">
+<p>x</p>
+</td>
+<td style="width: 174.948px; height: 380px;">
+<p>Single response,<br>matrix, simple recoding</p>
+</td>
+<td style="width: 273.785px; height: 380px;">
+<p>Participants that have seen, but not answered, the question.</p>
+<p>If a participant has seen a question without answering it, the corresponding variable or variables will be filled with the missing value “0”.</p>
+<p>When displaying participants with code “0” in the tables, please check whether these should also be included in the calculation of the total or of statistical values. You will find the respective functions in the Settings dialog on the Missings tab</p>
+</td>
+</tr>
+<tr style="height: 346px;">
+<td style="width: 133.941px; height: 346px;">
+<p>User-defined<br>missings</p>
+</td>
+<td style="width: 89.7917px; height: 346px;">
+<p>x</p>
+</td>
+<td style="width: 70.8681px; height: 346px;">
+<p>x</p>
+</td>
+<td style="width: 174.948px; height: 346px;">
+<p>Single response,<br>matrix, simple recoding</p>
+</td>
+<td style="width: 273.785px; height: 346px;">
+<p>By default, answer options that have been marked as missing values in the questionnaire editor will not be displayed in the tables. This function allows you to display these options.</p>
+<p>When displaying options marked as missing (e.g. “No selection”) in the tables, please check whether these<br>should also be included in the calculation of the total or of statistical values. You will find the respective functions in the<strong> Settings</strong> dialog on the

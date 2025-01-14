@@ -1,0 +1,47 @@
+ all statuses.</li>
+<li>Deactivate any redundant statuses.</li>
+<li>Special statuses for specific roles and functions, such as “tester” status for functionality checks (allowing repeated survey participation) and “moderator” status for forum moderation.</li>
+</ul>
+<p id="PanelConfiguration-Overviewofthepanelstatuses" class="wysiwyg-text-align-justify"><strong>Overview of the panel statuses</strong></p>
+<p class="wysiwyg-text-align-justify">The table provides an overview of the panel statuses and their meanings in a normally configured standard panel.</p>
+<p class="wysiwyg-text-align-justify">Codes and characteristics of the “pstatus” variable:</p>
+<div class="table-wrap wysiwyg-text-align-justify">
+<div class="table-wrap">
+<table class="relative-table wrapped tablesorter tablesorter-default confluenceTable" style="margin: 0px auto; border-collapse: collapse; width: 1080px; height: 788px;" border="1">
+<colgroup> <col style="width: 161.695px;"> </colgroup> <colgroup> <col style="width: 296.203px;"> </colgroup> <colgroup> <col style="width: 830.062px;"> </colgroup>
+<tbody>
+<tr class="tablesorter-headerRow">
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; background-color: var(--ds-background-accent-gray-subtlest,#f0f0f0); width: 127.292px; padding: 7px 10px !important;" scope="col">
+<div class="tablesorter-header-inner">Status name</div>
+</th>
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; background-color: var(--ds-background-accent-gray-subtlest,#f0f0f0); width: 230.66px;" scope="col">
+<div class="tablesorter-header-inner">
+<p>Code of the “pstatus”</p>
+<p>variable</p>
+</div>
+</th>
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; background-color: var(--ds-background-accent-gray-subtlest,#f0f0f0); width: 675.625px;" scope="col">
+<div class="tablesorter-header-inner wysiwyg-indent1">Meaning</div>
+</th>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 127.292px; padding: 7px 10px !important;">Admitted temporarily</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 230.66px;">1</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 667.604px;">
+<p>The prospective members have registered and are listed in the table in the <strong>Panelists administration → Candidates</strong> menu, but have not yet been fully admitted as panelists.</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 127.292px; padding: 7px 10px !important;">Active</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 230.66px;">2</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 667.604px;">
+<p>The panelists are available for surveys. They are participating in panel activities.</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 127.292px; padding: 7px 10px !important;">Active (user-defined)</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 230.66px;">3</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 667.604px;">Used-defined</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 127.292px; padding: 7px 10px

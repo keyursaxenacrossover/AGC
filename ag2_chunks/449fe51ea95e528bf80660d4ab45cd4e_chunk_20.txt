@@ -1,0 +1,222 @@
+a3">
+<p><strong>Wildcard</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>#bonus#</p>
+</td>
+<td>
+<p>Number of bonus points (format).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#m_[number]# and #md_[number]#</p>
+</td>
+<td>
+<p>The value of the variable from the respective master data item.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#panel_url#</p>
+</td>
+<td>
+<p>A link to the panel.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#panelist_code#</p>
+</td>
+<td>
+<p>The panelist code, i.e. access code to the panel.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#panelist_login_code#</p>
+</td>
+<td>
+<p>Wildcard which allows to creation of a shortened login link.</p>
+<ul>
+<li>
+<p>URL parameter for direct login with shortened code: login_code</p>
+</li>
+<li>
+<p>Sample link: <a href="http://your-domain.com/panelwebesite/">http://your-domain.com/panelwebesite/</a> lc=QAplygBpxAoPh-<br>VL3ceoIL8ztW5g</p>
+</li>
+</ul>
+<p>Usage of the shortened login link is recommended, in particular, if the domain of the panel itself is quite long: If the normal 40-digit code is used, the complete URL might become too long for mail programs to forward it correctly.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#panelpoints#</p>
+</td>
+<td>
+<p>The panelist’s current account balance (p.pcredit_points).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#password_recovery_url#</p>
+</td>
+<td>
+<p>“Reset password” link.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#pseudonym#</p>
+</td>
+<td>
+<p>The pseudonym, i.e. encoded unique panelist ID.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#site_id#</p>
+</td>
+<td>
+<p>Language version</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#u_sec_question#</p>
+</td>
+<td>
+<p>Security question</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#u_sec_question_answer#</p>
+</td>
+<td>
+<p>Answer to the security question.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#sender_u_firstname#</p>
+</td>
+<td>
+<p>The sender’s first name (Function Module: Send Private Messages to Panelists)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#sender_u_name#</p>
+</td>
+<td>
+<p>The sender’s last name (Function Module: Send Private Messages to Panelists)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#message_title#</p>
+</td>
+<td>
+<p>The message header (Function Module: Send Private Messages to Panelists)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#message_text#</p>
+</td>
+<td>
+<p>The message text (Function Module: Send Private Messages to Panelists)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#subscription_title#</p>
+</td>
+<td>
+<p>Title of the section (Function Modules: Forum, Panelist Blog)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#subscription_post_title#</p>
+</td>
+<td>
+<p>Title of the new post (Function Modules: Forum, Panelist Blog)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#subscription_post_link#</p>
+</td>
+<td>
+<p>Link to post (Function Modules: Forum, Panelist Blog)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#subscription_unsubscribe#</p>
+</td>
+<td>
+<p>Link that allows to unsubscribe (Function Modules: Forum, Panelist Blog)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#poster_account#</p>
+</td>
+<td>
+<p>The quoted panelist’s account (Function Module: Forum)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#poster_firstname#</p>
+</td>
+<td>
+<p>The quoted panelist’s first name (Function Module: Forum)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#poster_name#</p>
+</td>
+<td>
+<p>The quoted panelist’s last name (Function Module: Forum)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#poster_email#</p>
+</td>
+<td>
+<p>The quoted panelist’s e-mail address (Function Module: Forum)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#post_date#</p>
+</td>
+<td>
+<p>Date the quoted post was created (Function Module: Forum)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#post_title#</p>
+</td>
+<td>
+<p>Title of the quoted post (Function Module: Forum)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>#mail_validation_code#</p>
+</td>
+<td>
+<p>You insert the actual verification link (Function Modules: Registration Form, Change E-Mail

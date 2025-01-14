@@ -1,0 +1,106 @@
+ closed entirely. Only the topmost unit of the hierarchy remains visible.</p>
+</li>
+<li>
+<p><strong>Activate</strong> / <strong>Deactivate auto-expansion</strong>: This function makes sure that the respective branch is always completely expanded upon clicking. You no longer have to click every single node to see the whole branch in its entirety. This function is disabled again by clicking <strong>Deactivate auto-expansion</strong>. Please mind that auto-expansion is not available for very large structures, i.e. structures with 1,000 or more units, for performance reasons.</p>
+</li>
+<li>
+<p><strong>View</strong>: Clicking this button will open a dialog where you can activate or deactivate various table columns (except for the permanent columns “Short form of unit name” and “Actions”). After you have confirmed by clicking on <strong>Save settings</strong> the table will be modified accordingly.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Opening other structure views</strong></p>
+<p class="wysiwyg-text-align-justify">If several structure views are used, you will find a drop-down list above the menu where you can switch back and forth between the different structure views. As soon as you change the setting, the desired structure view will be displayed.</p>
+<p class="wysiwyg-text-align-justify"><strong>Searching for units</strong></p>
+<p class="wysiwyg-text-align-justify">Above the organizational structure, you will find a search function that allows you to browse the structure for a particular unit. This makes it much easier to locate units in complex organizational structures. Depending on the composition of the unit names, you can also use the search function to limit the display to groups of units. Please proceed as follows: Enter the name or part of the name of the desired unit in the field “Organizational unit” and trigger the search process by clicking on <strong>Search</strong>. The results show all units containing the search term, including their path upwards to the main unit (root unit) - i.e., all units one level up. To display all units again, you have to delete the entry in the text field and click on <strong>Search</strong> again.</p>
+<p class="wysiwyg-text-align-justify"><strong>The content of the organizational structure in detail</strong></p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default">
+<colgroup> <col style="width: 262.0px;"> <col style="width: 498.0px;"> </colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour="#57d9a3">
+<p><strong>Column heading</strong></p>
+</th>
+<th data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Short form of the unit name</p>
+</td>
+<td>
+<p>Name of the respective unit.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Metaname</p>
+</td>
+<td>
+<p>Unique identifier of the unit.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Participants</p>
+</td>
+<td>
+<p>Employees of this unit completed the questionnaire online. This column is only visible for the survey types “Online survey” and “Hybrid survey”</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>The sum of the online participants</p>
+</td>
+<td>
+<p>Sum of the employees of this unit and all subunits completing the questionnaire online. This column is only visible for the survey types “Online survey” and “Hybrid survey”.</p>
+<p>Participants with disposition codes 13, 14, and 15 are included.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Paper-pencil questionnaires</p>
+</td>
+<td>
+<p>The number of paper-pencil questionnaires to be distributed in this unit. This column is only visible if either of the survey types “Paper-pencil survey” or “Hybrid survey” has been selected</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Sum of paper-pencil questionnaires</p>
+</td>
+<td>
+<p>The sum of the paper-pencil questionnaires to be distributed in this unit and all its subunits. This column is only visible if either of the survey types “Paper-pencil survey” or “Hybrid survey” has been selected.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>If adjustment of target figures is activated: Correction factor</p>
+</td>
+<td>
+<p>The direct correction factor, i.e. the value entered for this unit.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>If adjustment of target figures is activated: Correction factor abs.</p>
+</td>
+<td>
+<p>Aggregated correction factor, i.e. the sum of correction values for this unit and all its subunits.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>N</p>
+</td>
+<td>
+<p>Depending on the survey type chosen and the activation of target figure adjustment, this column contains the following sum:</p>
+<p>(aggregated target value paper-pencil questionnaire data) + (aggregated target value participant data) + (correction factor abs.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Staff (preset value)</p>
+</td>
+<td>
+<p>Preset number of employees of the respective unit to participate in the survey.</p>
+<p>This value is preset when creating the unit and serves to check the target numbers calculated based

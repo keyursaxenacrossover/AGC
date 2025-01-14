@@ -1,0 +1,52 @@
+li>
+<li>the system data penter_data, remote_addr, pstatus, pinput, reg_code, and site_id.</li>
+</ul>
+<p>The table lists the types of comparison and the corresponding parametrizations.</p>
+<div class="table-wrap">
+<div class="table-wrap">
+<table class="relative-table tablesorter tablesorter-default wrapped confluenceTable" style="margin: 0px auto; border-collapse: collapse; width: 752px; height: 825px;">
+<colgroup> <col style="width: 0px;"> </colgroup> <colgroup> <col style="width: 0px;"> </colgroup> <colgroup> <col style="width: 0px;"> </colgroup>
+<tbody>
+<tr class="tablesorter-headerRow">
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; background-color: var(--ds-background-accent-gray-subtlest,#f0f0f0); padding: 7px 10px !important; width: 201.094px;" scope="col">
+<div class="tablesorter-header-inner">Type of comparison</div>
+</th>
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; background-color: var(--ds-background-accent-gray-subtlest,#f0f0f0); width: 290.938px;" scope="col">
+<div class="tablesorter-header-inner">Meaning</div>
+</th>
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; background-color: var(--ds-background-accent-gray-subtlest,#f0f0f0); width: 213.542px;" scope="col">
+<div class="tablesorter-header-inner">Parametrization</div>
+</th>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 201.094px;">Equality (integer)</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 290.938px;">
+<p>Is applied to data of the “Integer” type. The entries must be identical.</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 205.521px;">-</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 201.094px;">Equality (numeric)</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 290.938px;">
+<p>Is applied to data of the “Integer” or “Float” type. The entries must be identical.</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 205.521px;">-</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 201.094px;">Equality (text)</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 290.938px;">
+<p>Is applied to data of the “Text” type. The entries must be identical.<br>Entries are considered “identical” if their letter strings are similar regardless of upper or lower case, punctuation, and space characters. For example, the following entries would be identified as “identical” in the check:</p>
+<ul>
+<li>Tivian</li>
+<li>TiVIaN</li>
+<li>TIVIAN</li>
+<li>T.I.V.I.A.N.</li>
+<li>T-I-V-I-A-N</li>
+<li>ti vian</li>
+</ul>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 205.521px;">-</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 201.094px;">Similarity (%)</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7

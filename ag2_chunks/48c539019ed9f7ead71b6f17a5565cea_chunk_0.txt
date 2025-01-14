@@ -1,0 +1,44 @@
+<p>Overview</p>
+<article>
+<p>This article provides a comprehensive guide on participant administration for multi-source feedback in leadership contexts. It covers the level concept, participant pool management, wave administration, focus persons, feedback providers, and various methods for defining feedback constellations.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>This guide introduces the multi-level participant administration of multi-source feedback, explaining basic principles, detailing the four levels, and walking through typical participant administration workflows.</p>
+<ul>
+<li><a href="#h_01HGKSMPRT0YJQX3QZJX8YBGX9">The Level Concept</a></li>
+<li><a href="#h_01HGKSMPRT5YJHWQX0QXJQX3QZ">Participant Pool</a></li>
+<li><a href="#h_01HGKSMPRTJX3QZJX8YBGX9YJH">Waves</a></li>
+<li><a href="#h_01HGKSMPRTQXJQX3QZJX8YBGX9">Focus Persons</a></li>
+<li><a href="#h_01HGKSMPRTX0QXJQX3QZJX8YBG">Feedback Providers</a></li>
+<li><a href="#h_01HGKSMPRV3QZJX8YBGX9YJHWQ">Defining Feedback Participants and Constellations Manually</a></li>
+<li><a href="#h_01HGKSMPRV8YBGX9YJHWQX0QXJ">Defining Feedback Constellations By Import</a></li>
+<li><a href="#h_01HGKSMPRWJX8YBGX9YJHWQX0Q">Sending E-mails in Feedback Processes</a></li>
+</ul>
+<h2 id="h_01HGKSMPRT0YJQX3QZJX8YBGX9">The Level Concept</h2>
+<p>The participant administration in multi-source feedback has a multi-level structure, allowing participants' data to be viewed and edited from several perspectives:</p>
+<ul>
+<li>Participant pool</li>
+<li>Wave</li>
+<li>Focus persons</li>
+<li>Feedback providers</li>
+</ul>
+<h2 id="h_01HGKSMPRT5YJHWQX0QXJQX3QZ">Participant Pool</h2>
+<p>The participant pool contains all registered participants of the multi-source feedback, including their master data. It can be accessed through the menu "Participant administration → Participant pool". The filling process for the participant pool depends on the chosen feedback process:</p>
+<ul>
+<li>
+<strong>Known Constellations</strong>: Entered manually or imported with related data, then automatically visible in the participant pool.</li>
+<li>
+<strong>Unknown Constellations</strong>: Participants imported into the pool, with allocations made later. Focus persons can select their feedback providers.</li>
+<li>
+<strong>Optional</strong>: Focus persons can nominate unregistered individuals, requiring special programming.</li>
+</ul>
+<h3 id="h_01HGKSMPRTAX0QXJQX3QZJX8YB">Administrating Participants</h3>
+<p>The participant pool provides information such as name, personnel number, email, organizational unit, and roles. The following actions can be applied to one or several participants: Send mail/invite, restore initial password (visible to authorized users (ACL right: view_loft_passwd). ), bulk edit, generate a new password, and delete.</p>
+<p>The "<em>Statistics</em>" tab allows for monitoring and analysis of the participant pool's composition.</p>
+<p> </p>
+<h2 id="h_01HGKSMPRTJX3QZJX8YBGX9YJH">Waves</h2>
+<p>Waves run feedback processes in <span style="color: #172b4d; background-color: #ffffff;">staggered </span>intervals, with at least one wave per multi-source feedback. Focus persons are usually known at the start; feedback providers are known initially or selected later. The wave overview in participant administration lists all waves, showing focus persons and their feedback providers.</p>
+<h3 id="h_01HGKSMPRTPYJHWQX0QXJQX3QZ">Administrating Waves</h3>
+<p>The wave overview lists the following information: name of the wave (click to access focus person overview), max. process status, number of focus persons, sum of feedback participants (counted multiple times if contributing to several constellations), current return rate, field start, field end, end of process, and activity status (waves must be explicitly activated).</p>
+<p><strong>Available actions for waves:</strong> Edit wave (open editing dialog), archive wave (move to archive), delete wave (remove irrevocably with all content).</p>
+<p><strong>Actions for one or several waves:</strong> Invite/Remind (invite/remind all feedback providers or restrict to a specific role), reset and delete data (reset wave, reset disposition codes, delete collected data, allow feedback providers to participate again), reset without deleting data (reset disposition codes without deleting data), export return rate, change wave status (Instead of triggering the status changes manually, you can specify them beforehand).</p>
+<h3 id="h_01HGKSMPRTX0QXJQX3QZJX8YBG">

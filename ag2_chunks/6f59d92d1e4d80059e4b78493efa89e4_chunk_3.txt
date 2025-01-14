@@ -1,0 +1,69 @@
+ul>
+<h1 id="quick-polls" class="wysiwyg-text-align-justify">Quick Polls</h1>
+<p class="wysiwyg-text-align-justify">So-called polls are a vote on individual questions for which the results are always immediately displayed. Polls can, for example, be integrated into the home page of the panel.</p>
+<p class="wysiwyg-text-align-justify">EFS supports two types of polls: polls for panelists on the one hand, and anonymous polls which allow all visitors of the home page to contribute on the other hand.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify">You can create as many quick polls as required. Please mind, though, that panelist polls, in particular, require considerable server resources, i.e. they may affect the performance of the panel installation: For each participant, an answer must be stored, i.e. for n respondents, n new data records are created. The following guiding values provide orientation:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>It is recommended to run not more than ten active quick polls per language version simultaneously.</li>
+<li>It is recommended to restrict the participation for a quick poll to at most 10,000 participants, e.g. by restricting the field time appropriately.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Tip: After the end of the field period, export the results of the panelist polls, then delete the poll or at least the results.</p>
+<h2 id="anonymous-quick-polls-and-panelists-only-polls" class="wysiwyg-text-align-justify"><strong>Anonymous Quick Polls and Panelists-Only Polls</strong></h2>
+<p class="wysiwyg-text-align-justify">EFS supports two types of polls that are fundamentally different in terms of authentication and retrievable data.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Polls for panelists:
+<ul>
+<li>These polls are visible to all visitors having access to the respective page. However, only logged-in panelists may participate.</li>
+<li>
+<p>As the panelists have identified themselves by logging in, the poll data can be related to the individual panelists' accounts. So, in addition to viewing the poll results, you can also export them along with the corresponding panelist data.</p>
+</li>
+<li>
+<p>The quick poll filter allows you to use the results from panelist polls for grouping purposes.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Anonymous polls:</p>
+<ul>
+<li>
+<p>Anonymous polls can be answered by any visitor.</p>
+</li>
+<li>
+<p>Participation is registered by cookies, i.e. if a visitor rejects or deletes cookies, he or she may participate multiple times. This also applies to logged-in panelists answering an anonymous quick poll. If, on the other hand, two visitors use the same browser on the same PC without deleting cookies, the second visitor will not be recognized as a new user and he cannot answer the quick poll.</p>
+</li>
+<li>
+<p>As you do not know the participants in anonymous quick polls, you may view the results but there is no possibility of exporting the participants’ responses along with the corresponding panelist data as is the case in panelist polls.</p>
+</li>
+<li>
+<p>For the same reason, the results from anonymous quick polls are not available in the quick poll filter for grouping purposes.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="managing-polls" class="wysiwyg-text-align-justify"><strong>Managing Polls</strong></h2>
+<p class="wysiwyg-text-align-justify">In the <strong>Website → Panel websites → {Selected language version} → Quick polls</strong> menu you can set up polls, edit them, and view the results.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify">Read rights for “panel_quickpolls” are needed for managing the quick polls.</p>
+<p class="wysiwyg-text-align-justify">The overview comprises all the quick polls created for the defined language version and contains the following information:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Title: Internal title.</li>
+<li>Headline: Headline seen by the panelists.</li>
+<li>Active:
+<ul>
+<li>Yes: The poll will be displayed.</li>
+<li>No: The poll will not be displayed.</li>
+</ul>
+</li>
+<li>Type: Question type</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If you want to view quick polls of another language version in a given installation with several websites and/or language versions, simply change the settings in the upper section of the dialog. You can use the View function to change the number of table columns displayed as well as the number of rows per page. A simple search function is available.</p>
+<p class="wysiwyg-text-align-justify">The icons in the “Actions” column give the following editing options:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Edit</li>
+<li>Copy poll</li>
+<li>View results</li>
+<li>Only for panelist polls: Export participant answers</li>
+<li>Delete</li>
+</ul>
+<h2 id="creating-a-new-poll" class="wysiwyg-text-align-justify"><strong>Creating a

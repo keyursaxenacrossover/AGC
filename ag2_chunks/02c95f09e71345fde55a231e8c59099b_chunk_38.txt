@@ -1,0 +1,54 @@
+="31874">You can specify for which disposition codes you want to include data in the export. You can choose from the disposition codes greater than/equal 20, i.e. those codes for which result data are available.</p>
+</div>
+<div class="fabric-editor-block-mark fabric-editor-alignment cc-5inqjd" data-align="center">
+<p data-renderer-start-pos="32079">Default setting: Codes 21 through 41</p>
+</div>
+<div class="fabric-editor-block-mark fabric-editor-alignment cc-5inqjd" data-align="center">
+<p data-renderer-start-pos="32117">Please note: You can only view and use the field for selecting the disposition codes if you have the <em data-renderer-mark="true">show_dispcode</em> read right. Otherwise, the data of all participants with disposition codes greater than/equal to 20 will be exported and the disposition code will not be included in the export file.</p>
+</div>
+</td>
+</tr>
+<tr>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; width: 281.615px;" colspan="1" rowspan="1" data-colwidth="340">
+<div class="fabric-editor-block-mark fabric-editor-alignment cc-5inqjd" data-align="center">
+<p data-renderer-start-pos="32415">Conditions</p>
+</div>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; width: 443.108px;" colspan="1" rowspan="1" data-colwidth="340">
+<div class="fabric-editor-block-mark fabric-editor-alignment cc-5inqjd" data-align="center">
+<p data-renderer-start-pos="32429">Only in personalized projects and employee surveys: Optionally, the EFS condition editor allows you to formulate a condition for the execution of the macro. For this, you will have access to the participants' variables.</p>
+</div>
+</td>
+</tr>
+<tr>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; width: 281.615px;" colspan="1" rowspan="1" data-colwidth="340">
+<div class="fabric-editor-block-mark fabric-editor-alignment cc-5inqjd" data-align="center">
+<p data-renderer-start-pos="32653">Export variables</p>
+</div>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; width: 443.108px;" colspan="1" rowspan="1" data-colwidth="340">
+<div class="fabric-editor-block-mark fabric-editor-alignment cc-5inqjd" data-align="center">
+<p data-renderer-start-pos="32673">You can specify which variables are to be included in the export. You can choose from all the variables in the static export template “Participants and result data”.</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="sentinel-right"> </div>
+</div>
+</div>
+<h3 id="Access-Restrictions-Related-to-Export-Macro-Configuration" class="wysiwyg-text-align-justify" data-renderer-start-pos="32844"><strong data-renderer-mark="true">Access Restrictions Related to Export Macro Configuration</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="32903">For access to the <strong data-renderer-mark="true">Export macros </strong>menu you need</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="32952">Read rights for <em data-renderer-mark="true">show_export</em></p>
+</li>
+<li>
+<p data-renderer-start-pos="32983">Read rights for <em data-renderer-mark="true">export_with_lfdn</em>. I.e. the right to combine access to participants and result data.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="33087">In order to create an export limited to particular disposition codes and/or containing disposition codes you need additional read rights for<em data-renderer-mark="true"> show_dispcode</em>. The results of protected questions are excluded from raw data exports in principle. Only by deactivating the question protection and explicitly re-activating the respective variables in the export macro afterwards, can you include these data in the export.</p>
+<h3 id="Setting-up-Access-to-the-Raw-Data-Exports-in-EFS-Survey-Status" class="wysiwyg-text-align-justify" data-renderer-start-pos="33501">
+<strong data-renderer-mark="true">Setting up Access to the Raw Data Exports in </strong><em data-renderer-mark="true"><strong data-renderer-mark="true">EFS Survey Status</strong></em>
+</h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="33565">All data records of your project generated via the export macros will be listed in the {<strong data-renderer-mark="true">Selected project</strong>} → <strong data-renderer-mark="true">List of reports </strong>menu in <em data-renderer-mark="true">EFS Survey Status</em>. In order to access this list your customers need, in addition to the rights that are generally required for <em data-renderer-mark="true">

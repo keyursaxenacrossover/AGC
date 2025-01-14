@@ -1,0 +1,119 @@
+<p class="wysiwyg-text-align-justify">Proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>To retrieve the current code for the templates, create a new website with the current layout.</p>
+</li>
+<li>
+<p>Copy the code for <strong>templates/main_tfa_login.tpl</strong>.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21018333534098" alt="image-20240510-092108.png"></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Create a new template for your website, enter <strong>templates/main_tfa_login.tpl</strong> as the name and paste the code you have just copied.</p>
+</li>
+<li>
+<p>Repeat the process for the other two templates.</p>
+</li>
+</ul>
+<h4 id="adding-placeholders" class="wysiwyg-text-align-justify"><strong>Adding placeholders</strong></h4>
+<p class="wysiwyg-text-align-justify">In the next step, you need to add the following wildcards:</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center">
+<p><strong>Name</strong></p>
+</th>
+<th class="wysiwyg-text-align-center">
+<p><strong>Content</strong></p>
+</th>
+<th class="wysiwyg-text-align-center">
+<p><strong>Description</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>two_factor_authentication_login_code</p>
+</td>
+<td>
+<p>Enter the six-digit code from the application</p>
+</td>
+<td>
+<p>Explanation for two factor authentication login code</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>two_factor_authentication_login_failed</p>
+</td>
+<td>
+<p>Authentication failed. Please try again.</p>
+</td>
+<td>
+<p>Two factor authentication login failed message</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>two_factor_authentication_register_code</p>
+</td>
+<td>
+<p>After scanning the QR code with the app, please enter the six-digit code shown in the app</p>
+</td>
+<td>
+<p>Explanation for two factor authentication registration code</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>two_factor_authentication_register_description</p>
+</td>
+<td>
+<p>Scan the QR code below with your authentication app on your phone. &lt;a href="%s" target="_blank"&gt;List of compatible apps.&lt;/a&gt;&lt;br&gt;%s&lt;br&gt;<br>Alternatively, enter the code in your authentication app: %s</p>
+</td>
+<td>
+<p>Description text shown at two factor authentication registration</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify">To do this, proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Call up the menu <strong>Website &gt; Standard content &gt; Wildcards</strong>.</p>
+</li>
+<li>
+<p>Click on <strong>Create wildcard</strong>.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21018333532562" alt="image-20240510-092518.png"></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Copy the name, content and description for the first placeholder from the table above into the corresponding fields and click <strong>Save</strong>.</p>
+</li>
+<li>
+<p>Repeat the process for all other wildcards in the table.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<h4 id="adding-the-change-two-factor-authentication-page-module" class="wysiwyg-text-align-justify"><strong>Adding the "Change two factor authentication" page module</strong></h4>
+<p class="wysiwyg-text-align-justify">In the last step, you now need to add the "Change two factor authentication" page module.</p>
+<p class="wysiwyg-text-align-justify">To do this, proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>In the website editor, click on the "My details" page and then on the <strong>+ Page module</strong>.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21018333540754" alt="image2024-5-10_10-56-49.png"></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Under <strong>Type</strong>, select the <strong>Change two-factor authentication</strong> option.</p>
+</li>
+<li>
+<p>Under <strong>Reference name for template</strong>, enter the desired reference name.</p>
+</li>
+<li>
+<p>Under <strong>Module template</strong>, select the option <strong>func-change_2fa</strong>.</p>
+</li>
+<li>
+<p>Under <strong>Position</strong>, select the <strong>After Change Account

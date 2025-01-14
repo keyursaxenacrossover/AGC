@@ -1,0 +1,63 @@
+ZFJ2X1RN6ZZR82WBHC"><strong>2. Service Gateway Access (MariaDB Query)</strong></h2>
+<p><strong>Goal:</strong> Use Service Gateway to access detailed data for more in-depth analysis.</p>
+<ul>
+<li>
+<a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21140364670866-How-to-Access-and-Work-with-MariaDB-on-DXI-Service-Gateways">Access the MariaDB instance</a> via Service Gateway to gather further insights using the provided mail ID.</li>
+<li>Note about dates:
+<ul>
+<li>Dates in DB are always in UTC.</li>
+<li>Dates in server logs are usually German time (+2 or +1 according to Daylight savings)</li>
+</ul>
+</li>
+<li>Use the following SQL query to fetch individual mail details from the database
+<ul>
+<li>
+<pre>SELECT h.mail_id, sd.pid, mr.sid, h.uid, h.mailing_id, <br>  mr.rcpt_hash, h.message_id, <br>  mp.dt AS date_time_efs_mail_job_creation_utc, <br>  h.date_time AS date_time_hurricane_mail_dispatch_in_utc, <br>  FROM_UNIXTIME(mr.dt) AS date_time_mail_status_ingestion_utc, <br>  LEFT(IFNULL(h.response, mr.status_reason), 3) AS response, <br>  IFNULL(h.failure_code, "") AS failure_code <br>FROM mail_hurricane_notification_queue AS h <br>LEFT JOIN mail_rcpt AS mr ON (h.rcpt_hash = mr.rcpt_hash AND h.mail_id = mr.mail_id) <br>LEFT JOIN sample_data AS sd ON (mr.sid = sd.sid) <br>LEFT JOIN mail_prot AS mp ON (h.mail_id = mp.mail_id) <br>WHERE h.mail_id = [Mail_ID] GROUP BY mr.uid;</pre>
+</li>
+<li>Replace the [Mail_ID] with the target mailingID.</li>
+</ul>
+</li>
+<li>Check the results, here are the details of the fields:
+<ul>
+<li>
+<strong>UID: </strong>User Id of the recipient</li>
+<li>
+<strong>PID: </strong>Survey/project ID</li>
+<li>
+<strong>SID: </strong>Sample ID, which is usually projectID + 1 (indicating "Internal" sample), or might refer to other project samples.</li>
+<li>
+<strong>rcpt_hash: </strong>Hash for this recipient, can be used to search the logs</li>
+<li>
+<strong>message_id: </strong>Concatenation of rcpt_hash, mail_id, uid, PID, SID; to be used to search logs</li>
+<li>
+<strong>date_time_efs_mail_job_creation_utc </strong>(mail_prot table): Date of creating the mailing ID to initiate the communication. This date is on GUI.</li>
+<li>
+<strong>date_time_hurricane_mail_dispatch_in_utc: </strong>Date of sending the message to customer. <span class="wysiwyg-color-red"><strong>This date is not on UI</strong>, but it is an important date to confirm when was the mail dispatched from EFS side.</span>
+</li>
+<li>
+<strong>date_time_mail_status_ingestion_utc: </strong>Data the confirmation of delivery was ingested into EFS. This date is on GUI</li>
+<li>
+<strong>response: </strong>Response code on UI</li>
+<li>
+<strong>failure_code: </strong>This is an additional 4 digit code, not on UI I believe , but can provide more (accurate) information about the error. You can lookup these codes on the internet, or check the following code file (in the installation folder - <span class="wysiwyg-font-size-small"><code>/nfs/installations/kd7885/nfs/opst/&lt;installation&gt;.customervoice360.com/htdocs</code></span>):
+<pre> vi modules/efs/components/mail/engine/hurricane/notification/codes.inc.php</pre>
+<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21238953670674">
+</li>
+</ul>
+</li>
+</ul>
+<p> </p>
+<h2 id="h_01J7943JG3GGY7J7YDC726VRS9"><strong>3. Hurricane Server Logs and GUI</strong></h2>
+<p><strong>Goal:</strong> Further investigation using Hurricane server logs and the Hurricane GUI.</p>
+<ul>
+<li>
+<h4 id="h_01J9K63AGHP5JHTGC7AQ140XXN"><strong>Access Hurricane GUI as per the article: <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21139518716562-How-to-Access-and-Work-with-DXI-Service-Gateways#01J8QS4CEBNQQ6KPMT655G7Y13">How to Access Hurricane Server</a></strong></h4>
+<ul>
+<li>
+<p>Log into the Hurricane GUI and check for the account being used to send the emails.</p>
+</li>
+<li>
+<p>According to <a href="#h_01J794AX0EJW61KWMT8MGN18ZJ">EFS GUI configurations</a>, if customer is using postmail configurations, the account name is embedded in the server name in EFS GUI (as explained earlier), but if using an IP, you will need to look for the account name:</p>
+<ul>
+<li>
+<p>Option 1: Click "Accounts" in

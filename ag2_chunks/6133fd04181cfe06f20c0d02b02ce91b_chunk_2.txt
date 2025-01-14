@@ -1,0 +1,46 @@
+ click again on the page link to open the <strong data-renderer-mark="true">Properties</strong> (left hand side).</li>
+<li>Enter the URL of the primary project as the destination URL. This you will find in the project information of the primary project, as explained above.</li>
+<li>The other options are configured appropriately by default: the checkboxes “Automatically add ospe.php3” and “Add return ticket” are ticked.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014884159890">
+</li>
+<li>Confirm by clicking on <strong data-renderer-mark="true">Save</strong>.</li>
+<li>Create the second part of the primary project that the participants will complete after the return.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014837282962">
+</li>
+<li>The configuration of the questionnaires is now complete.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="ak-editor-panel cc-tqp4ke wysiwyg-text-align-justify" data-panel-type="info">
+<div class="ak-editor-panel__icon"><em>It is, in principle, not possible that the primary project times out while the participants complete the secondary project.</em></div>
+<div class="ak-editor-panel__icon"> </div>
+</div>
+<h3 id="Testing" class="wysiwyg-text-align-justify" data-renderer-start-pos="4007"><strong data-renderer-mark="true">Testing</strong></h3>
+<h3 id="When-testing,-some-aspects-require-special-consideration:" class="wysiwyg-text-align-justify" data-renderer-start-pos="4016">When testing, some aspects require special consideration:</h3>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="4077">The external survey start cannot be tested in the preview but only in productive mode.</p>
+</li>
+<li>
+<p data-renderer-start-pos="4167">In order to be able to repeatedly test an anonymous survey, you either delete the cookies from the browser after every test run or disable the use of cookies for both projects in the Project properties menu.</p>
+</li>
+<li>
+<p data-renderer-start-pos="4378">After testing, both projects have to be compiled in order to delete the data of the testers entirely.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="4483">The browser address bar will tell you whether the jump occurs in the desired place. The figure below shows the URL of a questionnaire page in the primary project right before the jump to the secondary project. There you will notice the folder “3a6f” of the sample project.</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="4483"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014837280914"></p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="4483">After the jump, the folder “38d1” of the secondary project will appear in the same place.</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="4483"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014837281682"></p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="4483">After the return jump the participant is taken back to the primary project with the folder “3a6f”. In the URL you will also recognize the automatically or manually inserted attachment ospe.php3 and the GET parameter return_tic which is used to identify the participant and to direct him to the correct page.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014837284882"></p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="4483"><strong data-renderer-mark="true">Checking the statistics and the export data record</strong></p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="5218">The statistics and the export data record of both primary and secondary project should be showing you the values from your test run. The consecutive number of the respondents (“lfdn”) is automatically transferred to the secondary project via “tic”. You should be able to locate the “lfdn” of a data record in the primary project in the column labeled “external_lfdn” of the secondary project’s matching data record.</p>
+<h2 id="Data-Transfer-in-Detail" class="wysiwyg-text-align-justify" data-renderer-start-pos="5635"><strong data-renderer-mark="true">Data Transfer in Detail</strong></h2>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="5660">During the external survey start information on the participants is transferred from one survey to the other by adding it to the URL as a GET parameter. Basically, this is done in one of the following ways:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="5870">Identifying participants</p>
+</li>
+<li>
+<p data-renderer-start-pos="5898">Authenticating participants in secondary projects with a limited participant

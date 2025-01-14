@@ -1,0 +1,30 @@
+{
+    "id": 20716904334482,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/20716904334482.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20716904334482-Data-Voyager-Configuration",
+    "author_id": 369584192734,
+    "comments_disabled": false,
+    "draft": true,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20714711445138,
+    "created_at": "2024-08-12T19:56:09Z",
+    "updated_at": "2024-08-12T19:56:20Z",
+    "name": "Data Voyager Configuration",
+    "title": "Data Voyager Configuration",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-08-12T19:56:20Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075294,
+    "content_tag_ids": [],
+    "label_names": [],
+    "body": "<p><b>Original Confluence URL:</b> <a href=\"https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1237024999\">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1237024999</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>\n\n<h2>Table of Contents</h2>\n<ul class=\"toc\">\n<ul>\n<li><a href=\"#header-1\">Step 0: Whitelist</a></li>\n<ul>\n<li><a href=\"#header-3\">Step 1: Navigate to Data Voyager settings</a></li>\n<ul>\n<li><a href=\"#header-5\">Step 2: Configure</a></li>\n<li><a href=\"#header-6\">Step 4: Create users</a></li>\n<li><a href=\"#header-7\">Step 5: Activate</a></li>\n</ul>\n</ul>\n</ul>\n</ul><p>also see: <a data-card-appearance=\"inline\" href=\"https://qbdocs.atlassian.net/wiki/spaces/EN/pages/1124958316/DV+-+4.4+Release#Questback-Access\">https://qbdocs.atlassian.net/wiki/spaces/EN/pages/1124958316/DV+-+4.4+Release#Questback-Access</a> </p><p></p><h1 id=\"header-1\">Step 0: Whitelist</h1><ac:rich-text-body><p>Take care that the Okta production address is whitelisted in our Proxy. Usually this should already be the case.</p></ac:rich-text-body><h2 id=\"header-3\">Step 1: Navigate to Data Voyager settings</h2><ol>\n<li><p>login as root</p></li>\n<li><p>click on “Configurations (root)”</p></li>\n<li><p>search for “iam”</p></li>\n</ol><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716896579346\" alt=\"image-20200306-163314.png\"><p></p><h3 id=\"header-5\">Step 2: Configure</h3><p>also see <ac:link ac:card-appearance=\"inline\"><ri:page ri:content-title=\"General Tenant Setup\" ri:version-at-save=\"3\"></ri:page><ac:link-body>General Tenant Setup</ac:link-body></ac:link>  and <ac:link ac:card-appearance=\"inline\"><ri:page ri:content-title=\"Data Voyager Setup\" ri:version-at-save=\"6\"></ri:page><ac:link-body>Data Voyager Setup</ac:link-body></ac:link>  and <ac:link ac:card-appearance=\"inline\"><ri:page ri:content-title=\"Authorization Server Setup\" ri:version-at-save=\"6\"></ri:page><ac:link-body>Authorization Server Setup</ac:link-body></ac:link> </p><p><strong>Values:</strong></p><p><em><strong>iam.sso.well_known_url: </strong></em> URL to the well known document from the Okta authorization server (see <ac:link ac:card-appearance=\"inline\"><ri:page ri:content-title=\"Authorization Server Setup\" ri:version-at-save=\"6\"></ri:page><ac:link-body>Authorization Server Setup</ac:link-body></ac:link> )</p><p><em><strong>iam.sso.redirect_url: </strong></em>&lt;dv-installation-url&gt;/dv/account/redirect/</p><p><em><strong>iam.sso.client_id: </strong></em>ID of the DV application in Okta (see <ac:link ac:card-appearance=\"inline\"><ri:page ri:content-title=\"Data Voyager Setup\" ri:version-at-save=\"6\"></ri:page><ac:link-body>Data Voyager Setup</ac:link-body></ac:link> )</p><p><em><strong>iam.sso.client_secret: </strong></em>secret of the DV application in Okta (see <ac:link ac:card-appearance=\"inline\"><ri:page ri:content-title=\"Data Voyager Setup\" ri:version-at-save=\"6\"></ri:page><ac:link-body>Data Voyager Setup</ac:link-body></ac:link> )</p><p><em><strong>iam.sso.audience: </strong></em>audience value from the Okta authorization server (see <ac:link ac:card-appearance=\"inline\"><ri:page ri:content-title=\"Authorization Server Setup\" ri:version-at-save=\"6\"></ri:page><ac:link-body>Authorization Server Setup</ac:link-body></ac:link> )</p><p></p><h3 id=\"header-6\">Step 4: Create users</h3><ac:rich-text-body><p>Users are created and managed manually in Okta and Datavoyager. Take care to assign the correct application specific group the the client.</p></ac:rich-text-body><ac:rich-text-body><p>To use SSO in Data Voyager it is necessary to set the following lines manually in the application.ini of the Data Voyager installation, so the proxy can be used. (see below)</p></ac:rich-text-body><pre><code class=\"language-text\">; Proxy configuration\niam.sso.proxy.url                     = \"http://proxy:8080\"</code></pre><p></p><h3 id=\"header-7\">Step 5: Activate</h3><p>Set Tivian Access to active in the configuration after checking all values again.</p><p><em><strong>iam.sso.module_enabled: </strong></em>1</p><ac:rich-text-body><p>In case something is not configured correctly you can login with root by using the following URL <code>&lt;dv-installation-url&gt;/dv/account/bypass</code></p></ac:rich-text-body><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716929646226\" alt=\"image-20200306-163636.png\"><p></p>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

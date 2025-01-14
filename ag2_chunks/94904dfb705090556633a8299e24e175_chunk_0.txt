@@ -1,0 +1,31 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1066565739">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1066565739</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">What security standard is used for authenticating a user and for communication with our Identity Provider?</a></li>
+<ul>
+<li><a href="#header-3">Where is Identity Data stored?</a></li>
+<ul>
+<li><a href="#header-5">How is security handled by Okta (our Identity Provider)?</a></li>
+<ul>
+<li><a href="#header-7">How is data transfer between the EFS installation (EFS-Admin, Portals) and our Identity Provider secured?</a></li>
+<li><a href="#header-8">How is data transfer between our Identity Provider and the client’s Identity Provider secured?</a></li>
+<li><a href="#header-9">Is the Identity Provider always available?</a></li>
+<li><a href="#header-10">Is there a security monitoring in our Identity Provider? Who is in charge of performing it?</a></li>
+<li><a href="#header-11">What are the session (and token) lifetimes?</a></li>
+<li><a href="#header-12">I previously used the high security mode in EFS - can I use that feature with IAM SSO?</a></li>
+<li><a href="#header-13">How will a password reset happen?</a></li>
+<li><a href="#header-14">Are there rules for password strength and password retention policy?</a></li>
+<li><a href="#header-15">Is MFA supported?</a></li>
+<li><a href="#header-16">If a user logs in at our Identity Provider, will the user be able to login every Tivian application?</a></li>
+<li><a href="#header-17">If we connect our solution to the customer's Identity Povider, how will security take place at this Identity Provider?</a></li>
+<li><a href="#header-18">How will I be able to manage access to applications in our Identity Provider?</a></li>
+<li><a href="#header-19">My users got an e-mail to activate their account and to set a passwort from Okta but they use their own Identity Provider - What password is correct?</a></li>
+<li><a href="#header-20">My EFS installation is currently using HTTP (without HTTPS) - is it possible to enable Tivian Access in that case?</a></li>
+<li><a href="#header-21">With Chrome in version 80+ third-party cookies without the same-site attribute are not allowed anymore - is that an issue? I can see warnings in Chrome’s developer console for the Okta login flow - does that effect functionality?</a></li>
+</ul>
+</ul>
+</ul>
+</ul>
+</ul><ac:parameter ac:name="hidden">true</ac:parameter><ac:rich-text-body><ac:parameter ac:name="minLevel">4</ac:parameter><ac:parameter ac:name="maxLevel">4</ac:parameter><ac:parameter ac:name="indent">0</ac:parameter><ac:parameter ac:name="absoluteUrl">true</ac:parameter><ac:parameter ac:name="style">none</ac:parameter></ac:rich-text-body><p></p><h1 id="header-1"><strong>What security standard is used for authenticating a user and for communication with our Identity Provider?</strong></h1><p>For communication (and hence for authentication of a user) with our IdP the OpenID Connect standard is used. A detailed explanation can be found here:</p><p><a href="https://openid.net/connect/">https://openid.net/connect/</a></p><p>The current solution uses the implicit flow (portals) and the code flow (EFS Admin) - see <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Flows" ri:version-at-save="11"></ri:page><ac:link-body>Flows</ac:link-body></ac:link> </p><p></p><h2 id="header-3"><strong>Where is Identity Data stored?</strong></h2><p>Identity Data is stored at Okta. Okta is using AWS cloud services to host their Identity solution. Other services might also be involved - also see <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Legal" ri:version-at-save="3"></ri:page><ac:link-body>Legal</ac:link-body></ac:link> </p><p>Okta offers an EU cell for European companies. Data will be stored in Europe (information from Okta is that data is stored in Germany and Ireland) - also see <a href="https://www.okta.com/press-room/press-releases/okta-cements-its-commitment-to-emea-market-announces-eu-data-centre/">https://www.okta.com/press-room/press-releases/okta-cements-its-commitment-to-emea-market-announces-eu-data-centre/</a></p><p>Okta will store first name, last name and email address as well as possibly password and MFA details

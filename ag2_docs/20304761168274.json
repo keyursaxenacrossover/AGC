@@ -1,0 +1,30 @@
+{
+    "id": 20304761168274,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/20304761168274.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20304761168274-Expiration-of-inactive-admin-accounts-agent-guide",
+    "author_id": 369584192734,
+    "comments_disabled": false,
+    "draft": false,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20234751255186,
+    "created_at": "2024-07-22T15:05:49Z",
+    "updated_at": "2024-08-07T10:25:38Z",
+    "name": "Expiration of inactive admin accounts - agent guide",
+    "title": "Expiration of inactive admin accounts - agent guide",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-08-07T10:25:34Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075294,
+    "content_tag_ids": [],
+    "label_names": [],
+    "body": "<p><span style=\"font-size: 2.1em;\">Overview</span></p>\n<article>\n<p>This article discusses a new feature introduced in <a href=\"https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20231377974290\" target=\"_blank\" rel=\"noopener noreferrer\">version 23.1</a> that allows for the optional expiration of inactive admin accounts. It explains the configuration process, how the feature works, and its implementation details.</p>\n<p> </p>\n<h1 id=\"h_01HGKSMPRSYYE7GMM7DZ0VCKXK\">Information</h1>\n<p>Version 23.1 introduces a new feature that allows for the optional expiration of inactive admin accounts. This feature is controlled by a new configuration variable and only affects users not assigned to \"internal\" organizations.</p>\n<p>The new feature is controlled by the configuration variable <code>admin_login_expire_on_inactivity</code>. Here are the key points:</p>\n<ul>\n<li>The value is stored in days</li>\n<li>By default, the value is set to \"0\" (inactive)</li>\n<li>This feature only affects users not assigned to \"internal\" organizations</li>\n</ul>\n<p>The implementation of this feature involves a daily running job, so the effect is not immediate upon activation of the feature.</p>\n<h3 id=\"implementation_example\">Example Scenario</h3>\n<p>For instance, on installation A:</p>\n<ul>\n<li>The job runs daily at 11:30 a.m.</li>\n<li>If the feature is activated at 12:00 a.m.</li>\n<li>It would not affect the corresponding accounts until the next day, after the job has run at 11:30 a.m.</li>\n</ul>\n<h1 id=\"h_01J3YSEFDHKA8A7FPYM485G01Y\">Agent steps</h1>\n<p>To activate the feature, you need to access the account using the 'root' user, then go to <em>Option &gt; Platform Cockpit</em> and enable the option.</p>\n<p> </p>\n<h1 id=\"h_01HGKSMPRSER9ENY5QWWRZZ863\">FAQ</h1>\n<h3 id=\"faq_default_value\">What is the default value for the new configuration variable?</h3>\n<p>The default value for \"admin_login_expire_on_inactivity\" is set to \"0\", which means the feature is inactive by default.</p>\n<h3 id=\"faq_affected_users\">Which users are affected by this feature?</h3>\n<p>This feature only affects users that are not assigned to \"internal\" organizations.</p>\n<h3 id=\"faq_activation_time\">When does the feature take effect after activation?</h3>\n<p>The feature takes effect at the earliest after the first run of the corresponding daily job, not immediately upon activation.</p>\n</article>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

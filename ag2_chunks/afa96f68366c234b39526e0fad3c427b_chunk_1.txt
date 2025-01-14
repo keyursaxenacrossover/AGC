@@ -1,0 +1,57 @@
+wysiwyg-text-align-justify">In the "Distribution" section of the survey menu, click on the Questionnaire Preview icon and check the survey from the point of view of a participant. Go through the questionnaire and try whether filters, hiding conditions, and plausibility checks really work.</p>
+<h3 id="h_01HGKSMPRU3BJ8XQJXF1QXCWN0D" class="wysiwyg-text-align-justify">Testing Questionnaire and Feedback Center with Test Participants</h3>
+<ol class="wysiwyg-text-align-justify">
+<li>Create a test wave in the menu Participant administration → Waves.</li>
+<li>Create participants manually and define a feedback constellation, or import a list of test participants into the test wave.</li>
+<li>To access the questionnaire from the perspective of a feedback provider:
+<ul>
+<li>Open the feedback provider overview: Participant administration → {Selected wave} → {Selected focus person}.</li>
+<li>For the desired test feedback provider, click on the code link in the "Code" column.</li>
+<li>The questionnaire will open, allowing you to check wildcard replacement, routing, etc.</li>
+</ul>
+</li>
+<li>To access the feedback center from the perspective of a focus person:
+<ul>
+<li>Open the focus persons overview: Participant administration → {Selected wave}.</li>
+<li>For the desired test focus person, click on the Edit focus person icon.</li>
+<li>In a second browser window, open the menu Process Configuration → Feedback Center. Click on the feedback center URL to open the login.</li>
+<li>Copy the e-mail address and initial password of the test person into the login form.</li>
+<li>You can now check the feedback center from the test focus person's perspective.</li>
+</ul>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify">After completing all tests, remove the test wave and delete all remaining test persons from the Participant pool.</p>
+<h2 id="h_01HGKSMPRTBJ8XQJXF1QXCWN5Y" class="wysiwyg-text-align-justify">Resetting the Project</h2>
+<p class="wysiwyg-text-align-justify">All data created during tests in productive mode must be deleted before the start of the feedback process.</p>
+<h3 id="h_01HGKSMPRU7BJ8XQJXF1QXCWN1E" class="wysiwyg-text-align-justify">Steps to Reset the Project</h3>
+<ol class="wysiwyg-text-align-justify">
+<li>Go to the menu Test and validation → Reset survey.</li>
+<li>Select "...reset survey completely..."</li>
+<li>Click on Reset survey.</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015011200914"></p>
+<p class="wysiwyg-text-align-justify"><strong>Important:</strong> If you have created superfluous questions, pages, or answer options, delete them before resetting the survey and inviting participants. Deleting or changing elements in a live survey can lead to data loss or misinterpretation.</p>
+<h2 id="h_01HGKSMPRTGJ8XQJXF1QXCWN6Z" class="wysiwyg-text-align-justify">Exporting Results</h2>
+<p class="wysiwyg-text-align-justify">EFS includes various export features for downloading participant data, results, and other information for analysis and presentations.</p>
+<h3 id="h_01HGKSMPRUBBJ8XQJXF1QXCWN2F" class="wysiwyg-text-align-justify">Exporting Participant Data</h3>
+<p class="wysiwyg-text-align-justify">Two exports are dedicated to participant data:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Participant data of the whole participant pool: Participant administration → Participant pool → Excel export / CSV export</li>
+<li>Participants of an individual wave: Participant administration → {Selected wave} → Excel export / CSV export</li>
+</ul>
+<h3 id="h_01HGKSMPRUFBJ8XQJXF1QXCWN3G" class="wysiwyg-text-align-justify">Exporting Return Statistics</h3>
+<p class="wysiwyg-text-align-justify">To download the return rates of one or several waves:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>Go to the menu Participant administration → Waves</li>
+<li>Mark the desired wave(s)</li>
+<li>Select "Export return rate" in the drop-down list</li>
+<li>Click on Execute</li>
+</ol>
+<h3 id="h_01HGKSMPRUJBJ8XQJXF1QXCWN4H" class="wysiwyg-text-align-justify">Exporting Results</h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="5773">In addition to the usual EFS result exports, two dedicated MSF-specific result exports are available.</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="5878">MSF participant export with result data:</p>
+<ul class="ak-ul" data-indent-level="2">
+<li>
+<p data-renderer-start-pos="5922">The familiar EFS Survey result data, the feedback identifier (u_link_id), all master data and some selected process data

@@ -1,0 +1,68 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1293910208">https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1293910208</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">Activation</a></li>
+<ul>
+<li><a href="#header-3">FAQ</a></li>
+<ul>
+<li><a href="#header-5">Get usage statistics for Service Layer</a></li>
+<li><a href="#header-6">Wichtige Links</a></li>
+</ul>
+</ul>
+</ul>
+</ul><h1 id="header-1">Activation</h1><ul>
+<li><p>Log in to the installation using the root account</p></li>
+<li><p>Navigate to the config (Options &gt;&gt; Platform cockpit &gt;&gt; root only :: System configuration)</p></li>
+<li>
+<p>Edit flag "<strong>has_webservice</strong>" and set it to "<strong>true</strong>"</p>
+<ul><li><p>If only specific IP addresses should be able to use the service layer, add them to flag "<strong>ws_allowed_ip</strong>".</p></li></ul>
+</li>
+<li><p>Create a new team e.g. called "<strong>servicelayer</strong>"</p></li>
+<li>
+<p>Create a new user. If you don't know a specific person that will use the service layer, create a dummy user:</p>
+<ul>
+<li><p>Account name "<strong>SYS_API</strong>" with email address "<a href="mailto:servicelayer@3uu.eu"><strong>servicelayer@3uu.eu</strong></a>" (the email address can be changed later on so that the user can receive password mails)</p></li>
+<li><p>Team: servicelayer</p></li>
+<li><p>Primary Team: servicelayer</p></li>
+</ul>
+</li>
+</ul><p></p><ul>
+<li><p>Navigate to Options &gt;&gt; Services &gt;&gt; Service configuration &gt;&gt; qb only:: Tokens and generate a new token for the service layer user</p></li>
+<li>
+<p>If you already know which service layer methods will be used, activate them for the service layer team and grant the team needed ACL rights:</p>
+<ul>
+<li><p>Navigate to Options &gt;&gt; Services &gt;&gt; Service configuration &gt;&gt; Services &gt;&gt; activate desired services and grant access rights</p></li>
+<li><p>Navigate to System &gt;&gt; Users &gt;&gt; Teams &gt;&gt; edit service layer team &gt;&gt;Change rights of this team</p></li>
+</ul>
+</li>
+<li>
+<p>Inform client or contact person that opened the support case:</p>
+<ul>
+<li><p>Send access data for service layer user</p></li>
+<li><p>Send password and token in separate mails</p></li>
+</ul>
+</li>
+</ul><div class="expand-macro">
+<h4 string="add comment on Ticket"></h4>
+<p>Hallo 1ST</p>
+<p>der Servicelayer wurde auf der Installation<code>AB1234.customervoice360.com</code> aktiviert.</p>
+<ul><li>
+<p>ServiceLayer</p>
+<ul>
+<li><p>User: <code>SYS_API</code></p></li>
+<li><p>Team: <code>servicelayer</code></p></li>
+<li><p>Token:</p></li>
+</ul>
+</li></ul>
+<p>[ADD TOKEN TO] → https://onetimesecret.com</p>
+<p>The WSDL documentation of the SOAP services can be found here:</p>
+<ul><li><p><code>https://AB1234.customervoice360.com/service/?handler=soap&amp;wsdl=1&amp;token={{TOKEN}}</code><br>(replace <em>{{TOKEN}}</em> with the token provided via <em>Onetimesecret</em>)</p></li></ul>
+<p>The RAML documantation of the REST services can be found here:</p>
+<ul><li><p><code>https://AB1234.customervoice360.com/service/?handler=rest&amp;raml=1&amp;token={{TOKEN}}</code><br>(replace <em>{{TOKEN}}</em> with the token provided via <em>Onetimesecret</em>)</p></li></ul>
+<p>Notes:</p>
+<p>All <em>service layer methods</em> "<code>System &gt;&gt; Options &gt;&gt; Service-Layer</code>" are inactive by default. To use a <em>service layer methods</em> please follow these steps:</p>
+<ol start="1">
+<li><p>To acitvate a <em>service layer methods</em> click on "<code>No</code>" in column "<code>Activated</code>"</p></li>
+<li><p>Grant the team (i.e. "<code>servicelayer</code>") access to a <em>service layer methods</em> by editing the "<code>Rights</code>" (<em>paragraph icon</em>) in column "<code>Actions</code

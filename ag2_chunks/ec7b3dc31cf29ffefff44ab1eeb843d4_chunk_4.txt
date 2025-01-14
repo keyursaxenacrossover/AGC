@@ -1,0 +1,77 @@
+>
+<li>
+<p>Within dv folder</p>
+<ul>
+<li><p>Create "dv/custom" folder and check rights (should be 775)</p></li>
+<li><p>Create folder "dv/nfs/Datasource/File/" and check rights (should be 777)</p></li>
+<li>
+<p>Execute healself</p>
+<ul>
+<li><p>(php 5.3.6: /opt/pdp/opst/apps/php-5.3.6/bin/php) php support/healself.php</p></li>
+<li><p>If error <strong>Error by application initialization: Directory xyz/dv/application/../custom/</strong> is shown, the missing folder needs to be created</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>If needed, add additional customizings <a href="https://it.globalpark.de/twiki/bin/view/Support/StephanieBeckerEinarbeitungTS#20_01_2016_Data_Voyager_Loader_o"><u>Loader or other DV customizings/ check out repository</u></a></p></li>
+<li>
+<p>Change root password, e.g. using script dv/support/changeRootPw.php <strong>Do NOT execute on procus or on mirror server</strong></p>
+<ul><li><p>(php 5.3.6: /opt/pdp/opst/apps/php-5.3.6/bin/php) php support/changeRootPw.php</p></li></ul>
+</li>
+<li>
+<p>Add DV to Globis. e.g. using corresponding helpers script <strong>Do NOT execute on procus or on mirror server</strong></p>
+<ul>
+<li><p>cd dv/</p></li>
+<li><p>helpersAddInstallationInGlobis</p></li>
+<li><p>All required information will be gathered by the script</p></li>
+</ul>
+</li>
+<li><p>Let System Administration activate cron jobs and restart Lighty <strong>Do NOT execute on procus or on mirror server</strong></p></li>
+<li>
+<p>Login to DV using root account</p>
+<ul>
+<li><p>[Installation_name]/dv</p></li>
+<li>
+<p>Add database of EFS installation</p>
+<ul><li>
+<p>Data Sources &gt;&gt; + &gt;&gt; Add database:</p>
+<ul><li><p>get information by executing: grep __db conf/config.inc.php3</p></li></ul>
+</li></ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Add DV user</p>
+<ul>
+<li>
+<p>Log in to DV using root account</p>
+<ul><li>
+<p>If you get a 500 Server Error, check the php error logs</p>
+<ul><li><p>PHP Fatal error: Call-time pass-by-reference has been removed in /nfs/opst3/snapshot.qb-feedback.com/htdocs/dv/library/efs/filefunx.php on line 1001 <strong>THIS IS RELATED TO PHP 5.6. DV ONLY WORKS WITH PHP 5.3.6</strong> Installations running on php56 frontends only can not have a DV currently</p></li></ul>
+</li></ul>
+</li>
+<li>
+<p>User Management &gt;&gt; +</p>
+<ul>
+<li><p>Enter information of user</p></li>
+<li><p>Set user to active and set a high expiry date</p></li>
+</ul>
+</li>
+<li><p>Send password: User Management &gt;&gt; mark user &gt;&gt; Send mail &gt;&gt; Invitation</p></li>
+</ul>
+</li>
+<li><p>Inform 1st level support respectively the person who requested the DV</p></li>
+</ul><p></p><h2 id="header-14">Activate Report Manager</h2><p> The Report Manager already is active on Data Voyagers of version 4.x but you have to add rights to roles so that users can view the new menu.<br></p><ul>
+<li><p>the <strong>reportmanager module</strong> must be activated (system -&gt; options -&gt; platform cockpit) -&gt; add reportmanager to the modules parameter</p></li>
+<li><p>the following <strong>services</strong> in the service layer must be activated (especially you need to blick them from no to yes) and have the right permissions for the user that is going to be used: reportmanager.status.deleteOrder, reportmanager.status.deleteReports, reportmanager.status.updateOrderStatus, see screenshot:</p></li>
+<li><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20714637290770" alt="DV report services.png"></li>
+<li><p>a <strong>service layer token</strong> must be created for the user that is to be used</p></li>
+<li><p>see this screenshot of the Data Voyager → Data sources:</p></li>
+<li><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20714630496530" alt="DV Data Sources.png"></li>
+<li><p>Log in to DV using the root account</p></li>
+<li><p>Click on "Roles &amp; Rights"</p></li>
+<li><p>Edit the "Admin" team</p></li>
+<li><p>Check all rights related to "Report Management"</p></li>
+<li><p>Go to configuration and change variable

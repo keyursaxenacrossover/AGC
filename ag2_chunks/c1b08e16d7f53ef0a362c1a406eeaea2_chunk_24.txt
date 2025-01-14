@@ -1,0 +1,76 @@
+>Number of uncleaned records:</p>
+<ul>
+<li>
+<p>If data cleaning has not taken place, this value will contain the uncleaned records.</p>
+</li>
+<li>
+<p>After data cleaning has taken place, all records that could not be checked and cleaned because the interviews were not completed remain in this field.</p>
+</li>
+<li>
+<p>If further questionnaires were filled out after a manual data cleaning, this value will be the total of all uncleaned records, as well as all records that were not checked during the manual data cleaning because the interviews were not completed.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">In the “Data cleaning for the whole project” area, you can trigger or undo data cleaning:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>If you select “Clean all data” and then confirm by clicking on <strong>Execute</strong>, the cleaning operation will be triggered.</p>
+</li>
+<li>
+<p>If you select “Recover all data” and then confirm by clicking on <strong>Execute</strong>, the original state will be restored.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Please note that data cleaning only takes completed interviews into consideration, i.e. records with status 31 or 32.</p>
+<h3 id="viewing-details-and-editing-records-manually" class="wysiwyg-text-align-justify"><strong>Viewing Details and Editing Records Manually</strong></h3>
+<p class="wysiwyg-text-align-justify">The <strong>Extended </strong>tab provides detailed documentation of all changes to the data as well as functions for both editing individual records and restoring all or part of the original data.</p>
+<p class="wysiwyg-text-align-justify"><strong>Display Options</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Number of datasets per page: If you enter the corresponding value and then con- firm by clicking on <strong>Apply</strong>, you can change the number of records displayed on one page.</p>
+</li>
+<li>
+<p>Display only datasets with a particular variable: This search function identifies all records containing the given string. After entering the string, you can trigger the search by clicking on <strong>Apply</strong>.</p>
+</li>
+<li>
+<p>Display routemap: Ticking the checkbox and then clicking on <strong>Apply </strong>will show the so-called <em>routemap </em>in the log. The routemap is a comma-separated page list reflecting the participant’s <em>valid </em>route through the survey (see the “Example” section below). It is extracted from the <em>page history </em>(<em>phistory </em>is the variable used in the export record, <em>page history </em>is the label used in the SPSS export record).</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Interpreting the entries in the data cleaning log</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The data cleaning log contains the following information and functions:</p>
+</li>
+<li>
+<p>Cons. no.: The respondent’s consecutive number in both the survey table and the export record. The table contains only the records of those respondents for whom data cleaning might be required.</p>
+</li>
+<li>
+<p>Cleaned data: Those data from the complete record that were / would be changed during cleaning.</p>
+</li>
+<li>
+<p>Original: The original state of those data from the complete record that were / would be changed by cleaning.</p>
+</li>
+<li>
+<p>Routemap: This can be shown and hidden using the “Display routemap” function in the “Display options” area.</p>
+</li>
+<li>
+<p>Cleaned: yes/no.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Editing individual records</strong></p>
+<p class="wysiwyg-text-align-justify">You have the option of targeting individual records for cleaning or for restoring the original state. To do so, tick the respective checkbox in the “Execute data cleaning” or “Recover data” column, and confirm by clicking on <strong>Save</strong>.</p>
+<h3 id="identifying-cleaned-data-in-the-export-record" class="wysiwyg-text-align-justify"><strong>Identifying Cleaned Data in the Export Record</strong></h3>
+<p class="wysiwyg-text-align-justify">The export record provides information if an individual record was cleaned: It is stored in the variable <em>cleaned </em>(labeling in the SPSS export record: “datacleaning”) which can have the following properties:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>0 = uncleaned data records and records of incomplete interviews which are excluded from the cleaning process</p>
+</li>
+<li>
+<p>1 = cleaned</p>
+</li>
+<li>
+<p>2 = checked but did not require cleaning</p>
+</li>
+</ul>
+<h2 id="quality-correction" class="wysiwyg-text-align-justify"><strong>Quality Correction</strong></h2>
+<p class="wysiwyg-text-align-justify">The conscientiousness with which survey participants fill in questionnaires is critical for the quality

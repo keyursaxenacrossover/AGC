@@ -1,0 +1,49 @@
+ the wildcard entitled “label_footer_copyright”. In the standard panel, this wildcard contains the text “Tivian &amp;copy;”. If you call up a panel page, {$content.label_footer_copyright} is filled with this content, and “Tivian ©” is displayed. If you change the content of the wildcard, the copyright claim on the panel pages will also be changed.</p>
+<p class="wysiwyg-text-align-justify"><em>Information: </em>Smarty wildcards and other Smarty codes are not merely restricted to templates, but can also be used in several-page modules. Fields that allow Smarty code are marked accordingly with “Smarty code”.</p>
+<p class="wysiwyg-text-align-justify"><strong>1. Managing wildcards</strong></p>
+<p class="wysiwyg-text-align-justify">The menu <strong>Website → Standard content → Wildcards</strong> contains an overview of all wildcards available. The table has the usual search function, the individual wildcards can be edited or deleted.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify">Information</p>
+<p class="wysiwyg-text-align-justify">Read rights for “panel_website_wildcards” are needed for accessing the Wildcards menu.</p>
+<p class="wysiwyg-text-align-justify"><strong>2. Creating a new wildcard</strong></p>
+<ol class="wysiwyg-text-align-justify">
+<li>Click on the <strong>Create Wildcard</strong> button in the menu <strong>Website → Standard content → Wildcards</strong>.</li>
+<li>Enter a name for the wildcard. Permissible characters are a-z, A-Z, 0-9, _ and -. Special characters and blank spaces are not permitted.</li>
+<li>
+<p>Enter the desired content in the “Content” field.</p>
+</li>
+<li>You can add a description to facilitate orientation.</li>
+<li>
+<p>Confirm by clicking on <strong>Create</strong>.</p>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><strong>3. Editing wildcards</strong></p>
+<ol class="wysiwyg-text-align-justify">
+<li>In the menu <strong>Website → Standard content → Wildcards</strong>, click on the <strong>Edit</strong> button or the title of the wildcard you wish to change.</li>
+<li>You can change the name, content, and description. If the wildcard is already being used in a module or a template, make sure you also correct the name of the wildcard there.</li>
+<li>Confirm by clicking on <strong>Save</strong>.</li>
+<li>Inserting wildcards in modules or templates</li>
+</ol>
+<p class="wysiwyg-text-align-justify">If you wish to insert a wildcard created in the <strong>Wildcards</strong> menu in a module or a template, use the following syntax:</p>
+<p class="wysiwyg-text-align-justify"><code>{$content.<strong>wildcard</strong>}</code></p>
+<p class="wysiwyg-text-align-justify">This allows you to insert these wildcards in any module or template.</p>
+<p class="wysiwyg-text-align-justify"><strong>5. Deleting wildcards</strong></p>
+<p class="wysiwyg-text-align-justify">There are two options to choose from when deleting wildcards:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>If you want to delete only one wildcard, click on the <strong>Delete</strong> icon. The wildcard will be removed after a confirmation prompt.</li>
+<li>If you want to remove several wildcards at once, tick the respective checkboxes of these wildcards in the “Delete” column. Depending on the situation, you may also use the checkboxes “Mark all entries on this page” and “Mark all entries found” below the table. After that, confirm by clicking on<strong> Delete</strong>. This batch delete function is particularly helpful while building or making major changes to a website when a large number of wildcards may have to be replaced and removed.</li>
+</ul>
+<h2 id="using-wildcards-to-output-data-dynamically" class="wysiwyg-text-align-justify"><strong>Using Wildcards to Output Data Dynamically</strong></h2>
+<p class="wysiwyg-text-align-justify">The wildcards introduced in the previous chapter are used to output <em>predefined text elements</em>. However, the EFS Panel also has wildcards that can be used to dynamically output the personal data of panelists, for example. These wildcards are primarily used in Smarty templates. You can, however, also use them in page modules, to further personalize and localize your panel pages:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Information that can be output includes
+<ul>
+<li>Localization information (e.g. date and time)</li>
+<li>Panel information (e.g. panel name)</li>
+<li>Participant data (only for logged-in panelists)</li>
+<li>Master data (only for logged-in panelists)</li>
+</ul>
+</li>
+<li>Which wildcards are available on a certain page depends on various criteria, such as the page modules used on the respective page or the login status of visitors. The following three tables contain wildcards that are available across the entire panel.</li>
+<li>Page module input fields that allow the use of Smarty wildcards are marked accordingly with “Smarty code”.</li>
+<li>If you have the necessary

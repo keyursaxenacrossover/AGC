@@ -1,0 +1,175 @@
+<p>is_date_de</p>
+</td>
+<td colspan="1">
+<p>is_date_de (check: German date format)</p>
+</td>
+<td colspan="1">
+<p>Check whether the transferred value is a date in German format (TT.MM.YYYY).</p>
+</td>
+<td colspan="1">
+<p>$value: Date to be checked</p>
+</td>
+<td colspan="1">
+<p>1, if German date, otherwise 0</p>
+</td>
+<td colspan="1">
+<p>is_date_de('05.03.1982')</p>
+</td>
+</tr>
+<tr>
+<td colspan="1">
+<p>is_date_int</p>
+</td>
+<td colspan="1">
+<p>is_date_int (check: int. date format)</p>
+</td>
+<td colspan="1">
+<p>Check whether the transferred value is a date in international format (TT.MM.YYYY).</p>
+</td>
+<td colspan="1">
+<p>$value: Date to be checked</p>
+</td>
+<td colspan="1">
+<p>1, if international date, otherwise 0</p>
+</td>
+<td colspan="1">
+<p>is_date_de('05.03.1982')</p>
+</td>
+</tr>
+<tr>
+<td colspan="1">is_email</td>
+<td colspan="1">
+<p>is_email (check: valid e-mail format)</p>
+</td>
+<td colspan="1">
+<p>Check whether the transferred value is a valid e-mail address format.</p>
+</td>
+<td colspan="1">
+<p>$value: E-mail address to be checked</p>
+</td>
+<td colspan="1">
+<p>1, if valid e-mail address, otherwise 0</p>
+</td>
+<td colspan="1">
+<p>is_email('mustermann<br>@questback.com')</p>
+</td>
+</tr>
+<tr>
+<td colspan="1">is_float</td>
+<td colspan="1">
+<p>is_float (check: floating-point number)</p>
+</td>
+<td colspan="1">
+<p>Check whether the transferred value is a floating-point number.</p>
+</td>
+<td colspan="1">
+<p>$value: Value to be checked</p>
+</td>
+<td colspan="1">
+<p>1, if floating-point number, otherwise 0</p>
+</td>
+<td colspan="1">is_float(10,5)</td>
+</tr>
+<tr>
+<td colspan="1">is_luhn</td>
+<td colspan="1">
+<p>is_luhn (check: Luhn algorithm)</p>
+</td>
+<td colspan="1">
+<p>Check whether the transferred value corresponds with the Luhn formula.</p>
+</td>
+<td colspan="1">
+<p>$value: Value to be checked</p>
+</td>
+<td colspan="1">
+<p>1, if Luhn algorithm, otherwise</p>
+<p>0</p>
+</td>
+<td colspan="1">is_luhn(10)</td>
+</tr>
+<tr>
+<td colspan="1">is_md5</td>
+<td colspan="1">
+<p>is_md5 (check: md5 encoding)</p>
+</td>
+<td colspan="1">
+<p>Check whether the transferred value was encoded using the md5 algorithm.</p>
+</td>
+<td colspan="1">
+<p>$value: Value to be checked</p>
+</td>
+<td colspan="1">
+<p>1, if md5- encoded, otherwise 0</p>
+</td>
+<td colspan="1">
+<p>is_md5('234mklksdf')</p>
+</td>
+</tr>
+<tr>
+<td colspan="1">is_positive</td>
+<td colspan="1">
+<p>is_positive (check: positive number)</p>
+</td>
+<td colspan="1">
+<p>Check whether the transferred value is a positive number.</p>
+</td>
+<td colspan="1">
+<p>$value: Value to be checked</p>
+</td>
+<td colspan="1">
+<p>1, if positive number, otherwise 0</p>
+</td>
+<td colspan="1">is_positive(5)</td>
+</tr>
+<tr>
+<td colspan="1">is_sha1</td>
+<td colspan="1">
+<p>is_sha1 (check: SHA1 algorithm)</p>
+</td>
+<td colspan="1"> </td>
+<td colspan="1"> </td>
+<td colspan="1"> </td>
+<td colspan="1"> </td>
+</tr>
+<tr>
+<td>is_whole</td>
+<td>
+<p>is_whole (check: whole number)</p>
+</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>length</td>
+<td>
+<p>length (action: return string length)</p>
+</td>
+<td>
+<p>Returns the number of characters in a string.</p>
+</td>
+<td>
+<p>$value: String to be checked</p>
+</td>
+<td>String length</td>
+<td>length('test')</td>
+</tr>
+<tr>
+<td colspan="1">lowercase</td>
+<td colspan="1">
+<p>lowercase (action: change to lowercase)</p>
+</td>
+<td colspan="1">
+<p>Makes all characters in a string lowercase.</p>
+</td>
+<td colspan="1">
+<p>$value: String to be changed</p>
+</td>
+<td colspan="1">Changed string</td>
+<td colspan="1">lowercase('Test')</td>
+</tr>
+<tr>
+<td colspan="1">matches</td>
+<td colspan="1">
+<p>matches (check: apply regular expression)</p>

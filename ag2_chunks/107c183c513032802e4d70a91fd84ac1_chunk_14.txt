@@ -1,0 +1,98 @@
+ on<strong> Execute</strong>.</p>
+</li>
+</ul>
+<h3 id="return" class="wysiwyg-text-align-justify"><strong>Return</strong></h3>
+<p class="wysiwyg-text-align-justify">Your users can open the Return tab only if it has been activated for their role in the current phase. In order to allow your users to open not only their respective units but also the corresponding subunits, and to access the return data, you need to activate the right <em>structure_view_down</em> for the appropriate roles. The return view is located on the <strong>Return</strong> tab of the <em>Org Processor</em>.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The organizational structure gives an overview of the return rates.</p>
+</li>
+<li>
+<p>In the detail view, you will find detailed data on the return of online and paperpencil questionnaires for the respective unit and their subunits. Additionally, you can access the user management of the unit from the detail view.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Above the organizational structure you will find the same features for modifying the display that you are already familiar with from the<strong> Organizational structure</strong> tab:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Selection of the structure view, Search, <strong>Expand all</strong> / <strong>Collapse all</strong>, <strong>Activate auto-expansion</strong>, and <strong>View</strong>.</p>
+</li>
+<li>
+<p>The data in the return overview are updated every five minutes. If necessary, use the <strong>Update Participant Numbers</strong> icon to trigger an update manually.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">You can define a special anonymity criterion for the return. As long as a unit and/or its subunits do not satisfy this criterion, some or all data for this unit and/or its subunits will be hidden in the return view. This is to prevent users with access to the return view can limit the display of survey results to a very small set of participants or even to individual participants. The following hiding conditions apply:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Return direct less than anonymity criterion → no display of return direct</p>
+</li>
+<li>
+<p>Accumulated return sum less than anonymity criterion → no display of accumulated return sum</p>
+</li>
+<li>
+<p>Difference of accumulated return sum and return direct less than anonymity criterion → no display of return direct</p>
+</li>
+<li>
+<p>Accumulated return sum less than anonymity criterion → no display of return direct and accumulated for subunits</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>The overview of the return data in detail</strong></p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default">
+<colgroup> <col style="width: 287.0px;"> <col style="width: 473.0px;"> </colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour="#57d9a3">
+<p><strong>Column heading</strong></p>
+</th>
+<th data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Sum of the participants direct</p>
+</td>
+<td>
+<p>Sum of the existing online participants, the existing offline participants (i.e. participants with “Offline” flag) and requested paper-pencil questionnaires directly allocated to this unit.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Return direct</p>
+</td>
+<td>
+<p>Direct return of this unit, i.e., the sum of those online participants who have already completed the survey with disposition codes 31 or 32, and of those paper-pencil questionnaires whose data have already been scanned or imported into the system (with disposition codes 31 or 32).</p>
+<p>This sum includes the completed paper-pencil questionnaires: When scanning or importing the data, participant accounts with offline flag are created.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Return rate direct</p>
+</td>
+<td>
+<p>Direct return rate in percent, i.e., (Return direct / Sum of the participants direct) * 100</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Sum of the participants</p>
+</td>
+<td>
+<p>Sum of the existing online participants, the existing offline participants (i.e. participants with “Offline” flag) and requested paper-pencil questionnaires allocated to this unit and all subunits.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>N</p>
+</td>
+<td>
+<p>Corrected sum of online participants and paper-pencil questionnaires, if target figure adjustment is activated.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Accumulated return sum</p>
+</td>
+<td>
+<p>Accumulated return for this unit and all subunits, i.e., the sum of those online participants who have already completed the survey with disposition codes 31 or 32, and of those paper-pencil questionnaires whose data have already been scanned or imported into the system (with disposition codes 31 or 32).</p>
+<p>This sum includes the completed paper-pencil questionnaires: When scanning or importing the data, participant accounts with offline flags are created.</p>
+</td>

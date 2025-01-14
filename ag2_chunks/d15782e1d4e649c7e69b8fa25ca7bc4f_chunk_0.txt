@@ -1,0 +1,69 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K" class="wysiwyg-text-align-justify">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article covers text search functionality, rating of community content, tagging and categorization, and leaderboard features for EFS Panel installations. It provides information on setting up and configuring these features, as well as integrating them into the panel website.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">This guide focuses on enhancing community engagement and content management in EFS Panel installations through various features such as text search, content rating, tagging, and leaderboards.</p>
+<ul>
+<li><a href="#text-search-for-community-generated-content">Text Search for Community-generated Content</a></li>
+<li><a href="#rating-of-community-contents">Rating of Community Contents</a></li>
+<li><a href="#tagging-and-categorization-of-community-content">Tagging and Categorization of Community Content</a></li>
+<li><a href="#leaderboard">Leaderboard</a></li>
+</ul>
+<h2 id="text-search-for-community-generated-content" class="auto-cursor-target wysiwyg-text-align-justify"><strong>Text Search for Community-generated Content</strong></h2>
+<p class="wysiwyg-text-align-justify">Text search is a custom feature that can be made available on EFS Panel installations with EFS 9.1 or higher. It requires special programming. Furthermore, the Panel installation must meet special system requirements.</p>
+<p class="wysiwyg-text-align-justify">If you are interested in using custom text search, please get in touch with the support.</p>
+<p class="wysiwyg-text-align-justify">Text search enables panelists to search the panel news and community-generated content. The functional scope in brief:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Text search covers the content of news, blogs, forums, discussions and download lists. Optionally, you can restrict the scope to any of these content types.</li>
+<li>The search syntax is familiar from web search tools. I.e. panelists can use the commands intuitively.</li>
+<li>Optionally, you can allow the panelists to select the content types to be searched.</li>
+<li>If only one content type is searched, all results will be displayed in a paginated list. If several content types are searched, the most relevant results will be displayed in a summary. Via dedicated links, the panel members can access paginated lists of all results.</li>
+<li>The results lists are automatically restricted to content which the searching panelist is authorized to see.</li>
+<li>The search function is integrated into the website editor.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Work steps</strong></p>
+<p class="wysiwyg-text-align-justify">Setting up content search involves the following steps:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Defining the scope of the search feature and the length of the results lists for the entire panel installation.</li>
+<li>Setting up a search page with search form and results list.</li>
+<li>Creating a search form and inserting it into the panelists’ side-bar navigation on the desired page(s).</li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify">Please make sure that both the search page and the pages with the content to-besearched are shown in the navigation for anybody who’s allowed to access them.</p>
+<p class="auto-cursor-target wysiwyg-text-align-justify"> </p>
+<table class="relative-table wysiwyg-text-align-justify" style="width: 63.9604%; margin-right: auto; margin-left: auto;" border="1">
+<colgroup> <col style="width: 26.0233%;"> <col style="width: 73.9819%;"> </colgroup>
+<tbody>
+<tr>
+<th>Search string</th>
+<th>Result</th>
+</tr>
+<tr>
+<td>peace</td>
+<td>Result which contains: peace OR Peace OR PEACE</td>
+</tr>
+<tr>
+<td>peace*</td>
+<td>Result which contains: peace OR peacemaker</td>
+</tr>
+<tr>
+<td>+peace +war</td>
+<td>Result which contains: peace AND war</td>
+</tr>
+<tr>
+<td>+peace -war</td>
+<td>Result which contains: peace AND doesn‘t contain: war</td>
+</tr>
+<tr>
+<td>peace agreement</td>
+<td>Result which contains: peace agreement OR agreement of peace</td>
+</tr>
+<tr>
+<td>„peace agreement“</td>
+<td>Result which contains exactly: peace agreement</td>
+</tr>
+</tbody>
+</table>
+<p class="auto-cursor-target wysiwyg-text-align-justify">Words with three or less letters are ignored.</p>
+<p class="auto-cursor-target wysiwyg-text-align-justify">A list of common words is ignored. For details, please check out:</p>
+<p class="auto-cursor-target wysiwyg-text-align-justify"><span class="nolink">http://dev.mysql.com/doc/refman/5.1/en/fulltext--</span>? stopwords.html</p>
+<h

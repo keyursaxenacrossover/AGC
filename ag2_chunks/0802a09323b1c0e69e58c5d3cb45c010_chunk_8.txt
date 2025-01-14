@@ -1,0 +1,59 @@
+: 204.444px; height: 103px;">
+<p> </p>
+</td>
+</tr>
+<tr style="height: 70px;">
+<td style="width: 205.625px; height: 70px;">
+<p>Adding participants allowed</p>
+</td>
+<td style="width: 311.476px; height: 70px;">
+<p>By activating this option, the guide initiator can add participants to a group</p>
+</td>
+<td style="width: 204.444px; height: 70px;">
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="process-control" class="wysiwyg-text-align-justify"><strong>Process Control</strong></h3>
+<p class="wysiwyg-text-align-justify">In the guide configuration, you use the<strong> Process Control</strong> tab to define under which conditions the survey process is considered successful or unsuccessful and which actions this should entail. In addition, you define the actions that are executed immediately after the guide is started.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015136642962" alt="Process Control.png"></p>
+<p class="wysiwyg-text-align-justify"><strong>Start of Process</strong></p>
+<p class="wysiwyg-text-align-justify">In the "Start of Process" section, you can define actions that will be executed after the guide has been started. First, press the green <strong>+</strong> icon and use the drop-down arrow to open the configuration.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015166699026" alt="Start of Process.png"></p>
+<p class="wysiwyg-text-align-justify">In order to send an e-mail after the start of the guide, you have to define the recipient, i.e. guide initiator, panelist whose e-mail address you enter in the free text field, or panelist to be determined via a master data variable. This variable must be a text-type variable. You have to select the e-mail template to be sent.</p>
+<p class="wysiwyg-text-align-justify"><strong>End of Process</strong></p>
+<p class="wysiwyg-text-align-justify">In the first section, you specify the conditions that define the process as successful. If you have activated <strong>Self-Assessment</strong>, the first condition is, that the Self-Assessment is <strong>completed</strong>. As the second condition, enter the <strong>Number of Rater-Groups above the anonymity-threshold</strong>.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015136640018" alt="End of Process.png"></p>
+<p class="wysiwyg-text-align-justify">The section is divided into the following three sections:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Definition of a successful process</p>
+</li>
+<li>
+<p>Define actions to be triggered on successful process</p>
+</li>
+<li>
+<p>Define actions to be triggered on unsuccessful process</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Then, in the second and third sections, determine which actions should be triggered if your process is considered <em>successful</em> or <em>unsuccessful</em>. The following options are available:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Order report</strong>: In the <em>Report Manager</em>, a report is ordered based on the settings made in the guide configuration (<em>Settings &gt; Report-Manager Connection</em>). This is created in PDF format and in the portal language of the guide creator.</p>
+</li>
+<li>
+<p><strong>Create action</strong>: Specify here whether an Action should be created in the <em>Action Board</em> (with a certain due date, where appropriate).</p>
+</li>
+<li>
+<p><strong>Send e-mail</strong>: You can choose to send an e-mail to the guide initiator or to a panelist whose e-mail address you should enter. Also, select the appropriate mail template.</p>
+</li>
+<li>
+<p><strong>Update Master data</strong>: The date on which the successful process occurred is added to the selected master data variable.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">For a process that has been classified as <em>unsuccessful</em>, only the actions <strong>Send e-mail</strong> and <strong>Update Master data </strong>are available.</p>
+<p class="wysiwyg-text-align-justify">In addition, you now have a process control error log that logs possible errors that may occur when executing the defined actions after a successful or unsuccessful process.</p>
+<p class="wysiwyg-text-align-justify">The actions can be combined with each other and the same action can be selected several times.</p>
+<h3 id="results" class="wysiwyg-text-align-justify"><strong>Results</strong></h3>
+<p class="wysiwyg-text-align-justify">On the <strong>Results</strong> tab, you can set a link to the <em>

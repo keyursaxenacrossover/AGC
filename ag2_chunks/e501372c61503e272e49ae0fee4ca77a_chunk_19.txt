@@ -1,0 +1,98 @@
+</tr>
+<tr>
+<td>Number of ratings</td>
+<td>Number of community ratings that were submitted for the post.</td>
+</tr>
+<tr>
+<td>Average rating</td>
+<td>Result of the community rating.</td>
+</tr>
+<tr>
+<td>Anonymous post</td>
+<td>
+<p>Optionally, you can permit anonymous posting. To prevent abuse, it will of course be logged internally who authored such anonymous posts, and moderators can access this information in the admin area. In the field “Anonymous post”, you can see if a post was made anonymously.</p>
+</td>
+</tr>
+<tr>
+<td>Release Status</td>
+<td>
+<p>The following release statuses can be assigned:</p>
+<ul>
+<li>not checked: If the publishing mode “Publish immediately” is selected, posts with this status will be visible to everybody. If the publishing mode “Publish after approval” is selected, they will be visible only to their author and the moderators in the admin area, until a moderator changes the release status to “approved”.</li>
+<li>approved: these posts are always displayed.</li>
+<li>blocked: these posts are never displayed.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Only editable via the list of posts: Sticky</p>
+</td>
+<td>
+<p>A post marked as “sticky” will be displayed in a highly visible position above the discussion, in addition to its original position. If the thread is distributed on several pages, the “sticky” post will be placed above the thread on all following pages, too.</p>
+<p>Please note: Only one post per discussion can be marked as “sticky”. As soon as you mark a second post as “sticky”, the “sticky” flag will be deactivated for the first post.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Only visible in the list of posts: Date of change</p>
+</td>
+<td>
+<p>If a panelist has subsequently edited a post, the date and time of the change will be displayed.</p>
+</td>
+</tr>
+<tr>
+<td>Title</td>
+<td>
+<p>Title of the post.</p>
+<p>Mandatory entry.</p>
+</td>
+</tr>
+<tr>
+<td>Text</td>
+<td>
+<p>Actual post.</p>
+<p>Using [file]filename[/file], you can embed files uploaded for this post in the post text. e.g. [file]image.pdf[/file]</p>
+<p>Mandatory entry.</p>
+</td>
+</tr>
+<tr>
+<td>Linked files</td>
+<td>
+<p>If the author of the post has already uploaded one or more files they will be displayed in this field.</p>
+</td>
+</tr>
+<tr>
+<td>Date</td>
+<td>
+<p>The date is displayed in the list of posts both in the admin area and on the panel page.</p>
+<p>Mandatory entry.</p>
+<p>By default, the current date is set when you create a post, however, a different date can also be displayed.</p>
+</td>
+</tr>
+<tr>
+<td>Upload file</td>
+<td>
+<p>This field enables you to upload files from the admin area. It allows to upload of files even if the upload option for panelists described above is not permitted.</p>
+<p>The files are automatically added to the post, using the syntax [file]filename.jpg[/file]</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="linking-from-forum-posts-to-surveys" class="wysiwyg-text-align-justify"><strong>Linking from Forum Posts to Surveys</strong></h2>
+<p class="wysiwyg-text-align-justify">Good community moderators keep switching between different methods of communication and surveys. For example, ideas developed during brainstorming in the forum may be tested with a quantitative survey of a larger number of participants. Afterward, interesting comments from the survey will be played back to the community and discussed in the forum. To achieve smoother transitions between different survey methods, a dedicated function allows moderators to insert direct access codes for panel surveys in their forum posts.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>When you prepare your moderator post in the admin area, you will find an <strong>Insert survey link</strong> button above the entry form. Clicking on this button will prompt a window where you can select the desired survey. The syntax for the link will then be inserted into your post automatically.</li>
+<li>If a panelist belonging to an active sample of this survey reads your post, he will see his personal clickable authentication link.</li>
+</ul>
+<h2 id="assigning-bonus-points" class="wysiwyg-text-align-justify"><strong>Assigning Bonus Points</strong></h2>
+<p class="wysiwyg-text-align-justify">In many communities, bonus points are awarded for participation in forum discussions. From EFS 10.4, the bonus points can be awarded automatically. But manual, focused allocations are possible as well.</p>
+<p class="wysiwyg-text-align-justify"><strong>Assigning bonus points</strong></p>
+<ol class="wysiwyg-text-align-justify">
+<li>To assign points, click on the <strong>Assign bonus points</strong> icon in the overview.</li>
+<li>Fill in the form.</li>
+<li>Confirm by clicking on <strong>Check</strong>.</li>
+<li>The software then checks how many panelists the specified criteria apply to and how many bonus points will be assigned if you proceed.</li>
+<li>Click on <strong>Assign Points</strong> to trigger the assignment of points.</li>
+</ol>
+<p

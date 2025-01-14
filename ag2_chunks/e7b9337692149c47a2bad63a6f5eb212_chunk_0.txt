@@ -1,0 +1,102 @@
+<h1 id="h_01J7DTEG7ZXWEAJHD1KRW3DKWQ">Overview</h1>
+<p><code>okta-cli</code> is a python-based CLI tool for Okta.</p>
+<p>It basically is a CLI wrapper around the <a href="https://developer.okta.com/docs/reference/">Okta REST API</a>.</p>
+<p><strong>NOTE:</strong> This is <em>not</em> the same as Okta's own <code>okta</code> CLI interface. The latter is apparently used for setting up the source for development projects, for more information visit <a href="https://cli.okta.com/manual/">https://cli.okta.com/manual/</a></p>
+<h2 id="h_01J7DTDKPE92SHJBF10FBMSWPF">Table of Contents</h2>
+<ul>
+<li>
+<a href="#header-1">Requirements</a>
+<ul>
+<li>
+<a href="#header-3">Installation</a>
+<ul>
+<li><a href="#header-5">Mac &amp; homebrew</a></li>
+<li><a href="#header-6">Linux / Linux subsystem</a></li>
+<li><a href="#header-7">resolving issues during installation</a></li>
+</ul>
+</li>
+<li><a href="#header-9">Quickstart</a></li>
+<li><a href="#header-10">Examples</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="header-1">Requirements</h1>
+<ul>
+<li>
+<p>A Mac or Linux machine, it <em>might</em> work on Windows (untested)</p>
+</li>
+<li>
+<p>Python 3.7+</p>
+</li>
+<li>
+<p>unfortunately <strong>Python 3.11 is not </strong><em><strong>yet</strong></em><strong> supported</strong> due to a dependency.</p>
+</li>
+</ul>
+<h2 id="header-3">Installation</h2>
+<h3 id="header-5">Mac &amp; homebrew</h3>
+<pre><code class="language-text">brew tap flypenguin/okta-cli
+brew install okta-cli</code></pre>
+<h3 id="header-6">Linux / Linux subsystem</h3>
+<ul>
+<li>
+<p>create a python virtualenv: <code>mkvirtualenv okta-cli</code></p>
+</li>
+<li>
+<p><code>pip install okta-cli</code></p>
+</li>
+<li>
+<p>start using it: <code>okta-cli config new</code></p>
+<ul>
+<li>
+<p>Name: eg. Tivian</p>
+</li>
+<li>
+<p>URL: eg. <a href="https://tivian-admin.okta.com/">https://tivian-admin.okta.com/</a></p>
+</li>
+<li>
+<p>API-Key: create new personal API key or use existing for existing OKTA tenant</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>Create a new environment, for that you need <code>virtualenv</code> and <code>virtualenvwrapper</code> to be installed properly and set up in your system. The <code>mkvirtualenv</code> command is provided by <code>virtualenvwrapper</code>, which is a set of extensions to <code>virtualenv</code> for creating and deleting additional environments.</p>
+<p>Here's how you can install and set up <code>virtualenv</code> and <code>virtualenvwrapper</code>:</p>
+<ol start="1">
+<li>
+<p>First, install <code>pip</code> if you haven't already. <code>pip</code> is a package manager for Python. You can install it via:</p>
+</li>
+</ol>
+<pre><code class="language-text">sudo apt update
+sudo apt install python3-pip</code></pre>
+<ol start="2">
+<li>
+<p>Then, install <code>virtualenv</code> using <code>pip</code>:</p>
+</li>
+</ol>
+<pre><code class="language-text">pip3 install virtualenv</code></pre>
+<ol start="3">
+<li>
+<p>Install <code>virtualenvwrapper</code>:</p>
+</li>
+</ol>
+<pre><code class="language-text">pip3 install virtualenvwrapper</code></pre>
+<ol start="4">
+<li>
+<p>Add the following lines to your shell startup file (<code>~/.bashrc</code>, <code>~/.profile</code>, or <code>~/.zshrc</code>):</p>
+</li>
+</ol>
+<pre><code class="language-text">export WORKON_HOME=$HOME/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/local/python3   # This needs to be the path where python3 is installed
+source /usr/local/bin/virtualenvwrapper.sh</code></pre>
+<ol start="5">
+<li>
+<p>Load the changes you made to your shell startup file. For example, if you added those lines to <code>~/.bashrc</code>, you'd run:</p>
+</li>
+</ol>
+<pre><code class="language-text">source ~/.bashrc</code></pre>
+<ol start="6">
+<li>
+<p>Now, you should be able to create a new virtual environment using <code>mkvirtualenv</code>:</p>
+</li>
+</ol>
+<pre><code

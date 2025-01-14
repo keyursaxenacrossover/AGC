@@ -1,0 +1,59 @@
+<p class="wysiwyg-text-align-justify"><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p class="wysiwyg-text-align-justify">This article provides comprehensive information about managing groups in a panel administration system. It covers creating, editing, and organizing groups, as well as using various filters and update rules to maintain and modify group structures.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">Groups are essential for efficient panel management, allowing administrators to work with larger sets of panelists based on specific criteria. This guide explains the creation, organization, and maintenance of groups, including the use of filters and update rules.</p>
+<ul class="wysiwyg-text-align-justify">
+<li><a href="#h_01HGKSMPRSZ8QJNQ3XBXJ9YDKM">Groups Overview</a></li>
+<li><a href="#h_01J3FZR3PV3C2CNSF870C3KYDJ">Creating and Importing Groups</a></li>
+<li><a href="#h_01HGKSMPRSM4YJXHXJ8YJDE1QW">Grouping Filters</a></li>
+<li><a href="#h_01HGKSMPRS7YJHG8XJDE1QW3TN">Update Rules</a></li>
+</ul>
+<h2 id="h_01HGKSMPRSZ8QJNQ3XBXJ9YDKM" class="wysiwyg-text-align-justify">Groups Overview</h2>
+<p class="wysiwyg-text-align-justify">Groups, also known as subpanels, are collections of panelists selected based on specific criteria. In panel administration, you typically manage groups of panelists selected by specific criteria. Use <strong>People</strong> to create static groups (subpanels) by selecting panelists from survey results and importing their “u_other_id” or “pseudonym” into a list.</p>
+<p class="wysiwyg-text-align-justify">Groups are static but can be updated manually or automatically based on self-defined rules. You can collectively edit group members, send emails, change statuses, or assign bonus points. Groups are essential for drawing project-specific samples.</p>
+<p class="wysiwyg-text-align-justify">To maintain clarity, merge groups into panel group categories, which are organizational aids only.</p>
+<p class="wysiwyg-text-align-justify"><strong>Performance Tips:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Limit to 1,000 active groups.</li>
+<li>Archive excess groups regularly, keeping archived groups below 1,500.</li>
+<li>Ensure total panelist group memberships stay under 20,000,000.</li>
+</ul>
+<h3 id="h_01HGKSMPRS4YJXHXJ8YJDE1QW3" class="wysiwyg-text-align-justify">Accessing Groups</h3>
+<p class="wysiwyg-text-align-justify"><strong>Navigating Groups:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Go to <strong>People → Groups</strong> to view existing groups with details such as title, description, category, status, size, creation date, and creator.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014859639570">
+</li>
+<li>Use simple or extended search to find groups based on terms or categories.</li>
+<li>Sort groups by title or creation date.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Actions:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<strong>Create Group:</strong> Opens a dialog to create a new group.</li>
+<li>
+<strong>Import Group:</strong> Allows creating groups via import.</li>
+<li>
+<strong>Manage Categories:</strong> Sort groups by topic for better organization.</li>
+<li>
+<strong>Edit Group:</strong> Change category, title, and description.</li>
+<li>
+<strong>History:</strong> View actions performed during group creation.</li>
+<li>
+<strong>Copy Group:</strong> Duplicate a group.</li>
+<li>
+<strong>Archive/Delete Group:</strong> Archive or delete groups as needed.</li>
+<li>
+<strong>Batch Actions:</strong> Perform actions on multiple groups at once (e.g., delete, empty, archive/reactivate).</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Default Panel Group:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Contains all panelists and is continuously updated; it cannot be deleted.</li>
+</ul>
+<h3 id="h_01J3FZR3PV26VVE6F5TJZWXBJH" class="wysiwyg-text-align-justify">Organizing Groups into Categories</h3>
+<p class="wysiwyg-text-align-justify"><strong>Managing Categories:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Open the manage categories dialog from the group overview.</li>
+<li>Create, edit, or delete categories, and view existing categories with labels, descriptions, and number of assigned groups.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><

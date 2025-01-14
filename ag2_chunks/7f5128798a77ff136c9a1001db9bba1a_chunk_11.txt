@@ -1,0 +1,22 @@
+) used in the alternative filter condition ensures that hiding conditions and unanswered items are considered appropriately:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>If the participant has answered v_x &gt; 0. With v_x &gt; 0 ? 1 the value is uniformly set to = 1.</p>
+</li>
+<li>
+<p>If the participant has not seen or not answered an item, i.e. v_x smaller or equal 0, the corresponding factor will be set = 0. This is necessary because missing values, as e.g. -77, prevent a proper calculation of the sum.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><em>(( v_135 &gt; 0 ? 1 :0) + ( v_136&gt; 0 ? 1 :0) + ( v_137 &gt; 0 ? 1 :0) + ( v_138 &gt; 0 ? 1 :0) +( v_139 &gt; 0 ? 1 :0) +( v_140 &gt; 0 ? 1 :0) + ( v_141 &gt; 0 ? 1 :0) + ( v_142 &gt; 0 ? 1 :0) + ( v_143&gt; 0 ? 1 :0) + ( v_144 &gt; 0 ? 1 :0) + ( v_145 &gt; 0 ? 1 :0) + ( v_146 &gt; 0 ? 1 :0) + ( v_147 &gt; 0 ? 1 :0) + ( v_148 &gt; 0 ? 1 :0) + ( v_149 &gt; 0 ? 1 :0) + ( v_150 &gt; 0 ? 1 :0) + ( v_151 &gt; 0 ? 1 :0) +( v_152 &gt; 0 ? 1 :0) +( v_153 &gt; 0 ? 1 :0) +( v_154 &gt; 0 ? 1 :0) +( v_155 &gt; 0 ? 1 :0) +( v_156 &gt; 0 ? 1 :0) +( v_157 &gt; 0 ? 1 :0) +( v_158 &gt; 0 ? 1 :0) +( v_159 &gt; 0 ? 1 :0) + ( v_160 &gt; 0 ? 1 :0) + ( v_161 &gt; 0 ? 1 :0) + ( v_162 &gt; 0 ? 1 :0) + ( v_163 &gt; 0 ? 1 :0) + ( v_164 &gt; 0 ? 1 :0) +( v_165 &gt; 0 ? 1 :0) +( v_166 &gt; 0 ? 1 :0) +( v_167&gt; 0 ? 1 :0) +( v_168 &gt; 0 ? 1 :0) +( v_169&gt; 0 ? 1 :0) + ( v_170 &gt; 0 ? 1 :0) +( v_171 &gt; 0 ? 1 :0) +( v_172 &gt; 0 ? 1 :0) +( v_173 &gt; 0 ? 1 :0)) </em>[...etc]</p>
+<p class="wysiwyg-text-align-justify">With LUA, this can be achieved much easier, by creating a for loop and passing a counter ranged from 135 to 173, alternatively an array of specific variable ids could be supplied to the for loop.</p>
+<h5 id="example-code-5" class="wysiwyg-text-align-justify"><strong>Example code</strong></h5>
+<pre><code class="language-delphi">sum=0
+for i=135,173 do
+  if _G["v_"..i]&gt;0 then
+    sum=sum+1
+  end 
+end</code></pre>
+<h2 id="my-code-is-not-working-what-should-i-do" class="wysiwyg-text-align-justify"><strong>My code is not working, what should I do?</strong></h2>
+<p class="wysiwyg-text-align-justify">First of all, check if there are any trigger errors reported on the survey menu, EFS does not display LUA errors to survey participants. You can also go to Test and validation -&gt; Project check, click on errors in "Errors while processing the survey" to get a list of all trigger errors in your survey. Also check the execution time of the LUA code, whether it is processed when the page is loaded or only when the page is submitted, and whether all required variables have already been filled in by the participant when the LUA code is executed.</p>
+<p class="wysiwyg-text-align-justify">If this does not help use external LUA sandboxes where debugging is easier, for example online at <a href="http://repl.it">repl.it</a> or in a local LUA 5.1 sandbox on your computer. You will have to create any EFS variables or EFS-specific functions in the external LUA sandbox, see the end of this page for an example.</p>
+<p class="wysiwyg-text-align-justify">Please note, that Questback's EFS support team is unable to assist you in bug fixing your LUA code

@@ -1,0 +1,43 @@
+>
+<h2 id="my-code-is-not-working-what-should-i-do" class="wysiwyg-text-align-justify"><strong>My code is not working, what should I do?</strong></h2>
+<p class="wysiwyg-text-align-justify">First of all, check if there are any trigger errors reported on the survey menu, EFS does not display LUA errors to survey participants. You can also go to Test and validation -&gt; Project check, click on errors in "Errors while processing the survey" to get a list of all trigger errors in your survey. Also check the execution time of the LUA code, whether it is processed when the page is loaded or only when the page is submitted, and whether all required variables have already been filled in by the participant when the LUA code is executed.</p>
+<p class="wysiwyg-text-align-justify">If this does not help use external LUA sandboxes where debugging is easier, for example online at <a href="http://repl.it">repl.it</a> or in a local LUA 5.1 sandbox on your computer. You will have to create any EFS variables or EFS-specific functions in the external LUA sandbox, see the end of this page for an example.</p>
+<p class="wysiwyg-text-align-justify">Please note, that Questback's EFS support team is unable to assist you in bug fixing your LUA code.</p>
+<h2 id="useful-lua-resources" class="wysiwyg-text-align-justify"><strong>Useful LUA resources</strong></h2>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><a href="https://www.lua.org/manual/5.1/">LUA 5.1 Reference Manual</a></p>
+</li>
+<li>
+<p><a href="https://www.lua.org/pil/contents.html">Programming in LUA 5.0</a>, free for personal use</p>
+</li>
+<li>
+<p><a href="https://www.lua.org/manual/5.1/manual.html#5.6">Description of mathematical functions in the math library</a></p>
+</li>
+<li>
+<p><a href="https://rrthomas.github.io/lrexlib/manual.html">Lrexlib reference manual</a> (Regular Expressions)</p>
+</li>
+<li>
+<p><a href="https://repl.it/">Repl.it</a> provides a convenient LUA 5.1 online environment for writing and debugging LUA code in a controlled environment. Some EFS functions can be emulated by rewriting them, see example below.</p>
+<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015359144082" alt="Screenshot 2019-03-14 at 15.02.50.png">
+<p><strong>Example functions for use in </strong><a href="http://repl.it"><strong>repl.it</strong></a></p>
+<pre><code class="language-delphi">-- EFS function getQuotaCurrentValue with array of example quota-values
+function getQuotaCurrentValue(a)
+  b = {8, 4, 2, 3, 3, 2, 3, 2, 2, 2, 2, 2, 3, 2, 3, 3, 3, 5, 3, 1, 5, 4}
+  return b[a]
+end
+
+-- EFS function setVariableValue function, outputs value to console as v_1=1
+function setVariableValue(a,b)
+	print(a .."="..b)
+end</code></pre>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863"> </h1>
+</li>
+</ul>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863" class="wysiwyg-text-align-justify">FAQ</h1>
+<h3 id="h_01HGKSMPRTX5YJXQX3QBXQZ8ZQZ" class="wysiwyg-text-align-justify">What version of LUA does EFS use?</h3>
+<p class="wysiwyg-text-align-justify">EFS Survey uses LUA Version 5.1 in its LUA filters and LUA question types.</p>
+<h3 id="h_01HGKSMPRTX5YJXQX3QBXQZ8ZR0" class="wysiwyg-text-align-justify">Are all LUA functions available in EFS?</h3>
+<p class="wysiwyg-text-align-justify">EFS provides access to almost all default LUA libraries. However, for security reasons, some functions (e.g., dofile, load, loadfile, print, require) and the os library are not available.</p>
+<h3 id="h_01HGKSMPRTX5YJXQX3QBXQZ8ZR1" class="wysiwyg-text-align-justify">Can I use regular expressions in EFS LUA scripts?</h3>
+<p class="wysiwyg-text-align-justify">Yes, access to the Lrexlib is possible, allowing advanced Regular Expressions within the LUA environment.</p>

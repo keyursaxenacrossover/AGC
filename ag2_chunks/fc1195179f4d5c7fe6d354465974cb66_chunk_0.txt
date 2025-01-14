@@ -1,0 +1,35 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1077280827">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1077280827</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">Okta Installations</a></li>
+<ul>
+<li><a href="#header-3">General entities for all tenants RequiredGreen</a></li>
+<li><a href="#header-4">Identity Provider optionalYellow</a></li>
+<li><a href="#header-5">EFS requiredGreen</a></li>
+<li><a href="#header-6">Portals OptionalYellow</a></li>
+<li><a href="#header-7">Unity requiredGreen</a></li>
+<li><a href="#header-8">MFA OptionalYellow</a></li>
+<li><a href="#header-9">Password Policy OptionalYellow</a></li>
+</ul>
+</ul>
+</ul><ac:parameter ac:name="depth">0</ac:parameter><p></p><h1 id="header-1"><strong><u>Okta Installations</u></strong></h1><p>Currently we are running these Okta installations:</p><p><strong>Development + QA</strong>: <a href="https://questback-poc-admin.oktapreview.com/admin/dashboard">https://questback-poc-admin.oktapreview.com/admin/dashboard</a></p><p><strong>Sandbox + Production</strong>: <a href="https://tivian-admin.okta.com/admin/dashboard">https://tivian-admin.okta.com/admin/dashboard</a></p><hr><p></p><p>All resources in Okta should follow the naming conventions as defined here: <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Naming conventions in Okta" ri:version-at-save="14"></ri:page><ac:link-body>Naming conventions in Okta</ac:link-body></ac:link> </p><h2 id="header-3">
+<strong><u>General entities for all tenants</u> </strong><ac:parameter ac:name="title">Required</ac:parameter><ac:parameter ac:name="colour">Green</ac:parameter>
+</h2><p>The following entities are created for every client. They have to be setup once regardless of the features used (e.g: MFA) and also regardless of the number of applications/instances.</p><ul>
+<li><p>Create a Group → see <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Group Setup" ri:version-at-save="7"></ri:page><ac:link-body>Group Setup</ac:link-body></ac:link> </p></li>
+<li><p>Create Authorization Server → see <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Authorization Server Setup" ri:version-at-save="6"></ri:page><ac:link-body>Authorization Server Setup</ac:link-body></ac:link> </p></li>
+<li><p>Create Sign on Policy → see <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Sign-On Policy Setup" ri:version-at-save="4"></ri:page><ac:link-body>Sign-On Policy Setup</ac:link-body></ac:link> </p></li>
+<li><p>Create a new API token → see <ac:link ac:card-appearance="inline"><ri:page ri:content-title="API Token Setup" ri:version-at-save="4"></ri:page><ac:link-body>API Token Setup</ac:link-body></ac:link> </p></li>
+</ul><h2 id="header-4">
+<strong><u>Identity Provider</u> </strong><ac:parameter ac:name="title">optional</ac:parameter><ac:parameter ac:name="colour">Yellow</ac:parameter>
+</h2><p>Create the connection to the client’s Identity Provider. This will only happen if the client has an own Identity Provider that should be federated.</p><ul><li>
+<p>Setup Identity Provider</p>
+<ul>
+<li><p>SAML → see <ac:link ac:card-appearance="inline"><ri:page ri:content-title="SAML Provider Setup" ri:version-at-save="11"></ri:page><ac:link-body>SAML Provider Setup</ac:link-body></ac:link> </p></li>
+<li><p>OIDC → see <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Open ID Connect Setup" ri:version-at-save="16"></ri:page><ac:link-body>Open ID Connect Setup</ac:link-body></ac:link> </p></li>
+</ul>
+</li></ul><h2 id="header-5">
+<strong><u>EFS</u> </strong><ac:parameter ac:name="title">required</ac:parameter><ac:parameter ac:name="colour">Green</ac:parameter>
+</h2><p>The EFS setup has to be applied to every installation that should be on-boarded.</p><ul>
+<li><p>Create Application with code flow → see <ac:link ac:card-appearance="inline"><ri:page ri:content-title="

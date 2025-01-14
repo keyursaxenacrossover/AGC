@@ -1,0 +1,30 @@
+{
+    "id": 20831172027026,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/20831172027026.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20831172027026-How-to-Change-the-Maximum-Number-of-Respondents-Active-at-the-Same-Time",
+    "author_id": 15197451369746,
+    "comments_disabled": false,
+    "draft": true,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20234458963474,
+    "created_at": "2024-08-19T05:12:00Z",
+    "updated_at": "2024-08-19T05:12:00Z",
+    "name": "How to Change the Maximum Number of Respondents Active at the Same Time",
+    "title": "How to Change the Maximum Number of Respondents Active at the Same Time",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-08-19T05:12:00Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075274,
+    "content_tag_ids": [],
+    "label_names": [],
+    "body": "<p><strong>Overview:</strong></p>\n<p>In Discover XI, administrators can control the maximum number of respondents who can be active in a survey simultaneously. This setting is crucial for managing system performance and ensuring that surveys run smoothly without overloading the system. If you need to adjust this limit, either to increase or decrease it, this guide will walk you through the steps.</p>\n<p><strong>Problem:</strong></p>\n<p>You want to change the maximum number of respondents who can be active at the same time in Discover XI, but you’re not sure how to do it. This setting is system-wide, affecting all surveys and is applied uniformly.</p>\n<p><strong>Solution:</strong></p>\n<p>To change the limit for the maximum number of respondents active at the same time, follow these steps:</p>\n<ol>\n<li>\n<p><strong>Access System Settings:</strong></p>\n<ul>\n<li>Navigate to the main dashboard of Discover XI.</li>\n<li>Go to <code>System -&gt; Options -&gt; System Settings</code>.</li>\n</ul>\n</li>\n<li>\n<p><strong>Locate the Participation Limit Setting:</strong></p>\n<ul>\n<li>Within the System Settings, find the option labelled <code>Change Participation Limit</code>.</li>\n</ul>\n</li>\n<li>\n<p><strong>Adjust the Limit:</strong></p>\n<ul>\n<li>Click on <code>Change Participation Limit</code>.</li>\n<li>Enter the new limit for the maximum number of active respondents. For instance, change from the default 100 to 10,000, depending on your requirement.</li>\n<li>Save the changes.</li>\n</ul>\n</li>\n<li>\n<p><strong>Understand the System-Wide Impact:</strong></p>\n<ul>\n<li>Be aware that this setting is applied system-wide, meaning it affects all surveys within the platform.</li>\n<li>The limit you set will undercut any existing installation-wide settings but cannot bypass the maximum number of participants per project.</li>\n</ul>\n</li>\n<li>\n<p><strong>Automatic Monitoring:</strong></p>\n<ul>\n<li>The system checks every 90 seconds whether the active respondents exceed the set limit. If exceeded, new participants will be rejected until the number falls below the limit.</li>\n</ul>\n</li>\n</ol>\n<p><strong>Summary:</strong></p>\n<p>Changing the maximum number of respondents active at the same time in Duscover XI is straightforward but has a system-wide impact. Adjust this setting with caution to ensure it aligns with your overall survey needs.</p>\n<p><strong>FAQ:</strong></p>\n<ol>\n<li>\n<p><strong>What happens if the limit is exceeded?</strong></p>\n<ul>\n<li>New participants will be rejected until the number of active respondents drops below the limit.</li>\n</ul>\n</li>\n<li>\n<p><strong>Can I set different limits for different surveys?</strong></p>\n<ul>\n<li>No, the setting is system-wide and affects all surveys uniformly.</li>\n</ul>\n</li>\n<li>\n<p><strong>How often does the system check the active respondent count?</strong></p>\n<ul>\n<li>The system checks every 90 seconds to ensure the number of active respondents is within the set limit.</li>\n</ul>\n</li>\n</ol>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

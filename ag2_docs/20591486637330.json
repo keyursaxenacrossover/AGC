@@ -1,0 +1,30 @@
+{
+    "id": 20591486637330,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/20591486637330.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20591486637330-SMS-Sending-Architecture-in-EFS",
+    "author_id": 369584192734,
+    "comments_disabled": false,
+    "draft": false,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20234751255186,
+    "created_at": "2024-08-06T09:47:10Z",
+    "updated_at": "2024-08-06T11:11:04Z",
+    "name": "SMS Sending Architecture in EFS",
+    "title": "SMS Sending Architecture in EFS",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-08-06T10:47:37Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075294,
+    "content_tag_ids": [],
+    "label_names": [],
+    "body": "<h1 id=\"h_01J4KMJZG1SF7D2F1YQ3WFQ2RZ\">Overview</h1>\n<p>One of the features of EFS is to sent SMS to users. This could especially happen in case of invitations.</p>\n<p>On this page snailmail and jobmaker are part of the EFS software. This is not entirely true from a deployment perspective but good enough for this page.</p>\n<h1 id=\"h_01J4KMM1A90QKN2FZRKNA97D7Q\">Information</h1>\n<p>From a top-level view the picture below shows how email sending works.</p>\n<p><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20591453803154\" alt=\"Runtime View - SMS.png\"></p>\n<p>Email and SMS are output channel for communication. In some of the cases they could both be used. Therefore they are handled similarly internally in EFS.</p>\n<ul>\n<li>\n<p><strong>EFS software</strong></p>\n<ul>\n<li>\n<p>creates SMS from templates and puts them in an email table</p>\n</li>\n<li>\n<p>next to that an email procedure is created in another table - one procedure can have multiple emails</p>\n</li>\n<li>\n<p>the templates are filled when sending forwarding emails to the email server</p>\n</li>\n<li>\n<p>there are two mechanism to actually send emails:</p>\n<ul>\n<li>\n<p>ad-hoc: An SMS is sent directly when sending is triggered</p>\n</li>\n<li>\n<p>snailmail: SMS are put in the email table and processed by a cron-job called snailmail that periodically loads un-sent emails and forwards them to the email server</p>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>\n<p><strong>Tyntec SMS</strong></p>\n<ul>\n<li>\n<p>The Tyntec HTTP API is used to send SMS</p>\n</li>\n<li>\n<p>As a reply EFS get an identifier of the SMS procedure at Tyntec</p>\n</li>\n<li>\n<p>Tyntec sends the SMS to the enduser</p>\n</li>\n</ul>\n</li>\n<li>\n<p><strong>EFS software</strong></p>\n<ul>\n<li>\n<p>stores the Tyntec procedure ID</p>\n</li>\n<li>\n<p>A task in the cron-job Jobmaker will periodically request the delivery status of the stored Tyntec procedure IDs</p>\n</li>\n<li>\n<p>In case there is an update the respective entry in the EFS database will be updated</p>\n</li>\n</ul>\n</li>\n</ul>\n<p> </p>\n<p> </p>\n<p> </p>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

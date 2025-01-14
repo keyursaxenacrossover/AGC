@@ -1,0 +1,49 @@
+true">default</strong> as the category.</li>
+<li>Enter a name for the new group under <strong data-renderer-mark="true">Internal group title</strong>. In our case, we choose the name "Car owner", as the group should contain panelists owning a car.</li>
+<li>Enter a description, if required.</li>
+<li>Click on <strong data-renderer-mark="true">Create group</strong>.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21018333462802">
+</li>
+</ul>
+<div class="rich-media-item mediaSingleView-content-wrap image-center cc-620sbf wysiwyg-text-align-justify" data-layout="center" data-width="760" data-width-type="pixel" data-node-type="mediaSingle" data-renderer-start-pos="10003">
+<div class="cc-1wdsf39">
+<div data-context-id="4080566313" data-type="file" data-node-type="media" data-width="1120" data-height="211" data-id="7bc6ccf6-1367-4bb5-89b2-99ac0914d308" data-collection="contentId-4080566313" data-file-name="file" data-file-size="1" data-file-mime-type="" data-alt="image-20240201-090455.png" data-renderer-start-pos="10004"> </div>
+</div>
+</div>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="10006"> </p>
+<h3 id="Applying-a-Grouping-Filter" class="wysiwyg-text-align-justify" data-renderer-start-pos="10008"><strong data-renderer-mark="true">Applying a Grouping Filter</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="10036">Our newly created group is still empty. We will now create a grouping filter that defines the conditions under which a panelist will be assigned to the "Car owner" group – namely, when they indicate that they own a car in the master data survey. To do this, proceed as follows:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="10316">Select the <strong data-renderer-mark="true">Grouping filters</strong> menu item from the menu on the left.</p>
+</li>
+<li>
+<p data-renderer-start-pos="10384">Click on <strong data-renderer-mark="true">Create filter condition</strong>.</p>
+<ul class="ak-ul" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="10384"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21018333463698"></p>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li data-renderer-start-pos="10384">Enter a name for your grouping filter. In our case: "Car".</li>
+<li data-renderer-start-pos="10384">If necessary, enter a filter description.</li>
+<li data-renderer-start-pos="10384">In the <strong data-renderer-mark="true">Filter condition</strong> area, select your master data variable "md_car" from the <strong data-renderer-mark="true">Variable</strong> drop-down menu.</li>
+<li data-renderer-start-pos="10384">From the <strong data-renderer-mark="true">Condition</strong> drop-down menu, select the option <strong data-renderer-mark="true">equal</strong>.</li>
+<li data-renderer-start-pos="10384">Select the option <strong data-renderer-mark="true">1 (Yes)</strong> from the <strong data-renderer-mark="true">Value</strong> drop-down menu.</li>
+<li data-renderer-start-pos="10384">Click on <strong data-renderer-mark="true">Save</strong>.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21018302903826">
+</li>
+</ul>
+<p>If a panelist now indicates that they own a car in the master data survey created in the previous step, they will be added to the "Car owner" group.</p>
+<h3 id="Specifying-Update-Rules" class="wysiwyg-text-align-justify" data-renderer-start-pos="10936"><strong data-renderer-mark="true"> Specifying Update Rules</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="10962">In order for the grouping to work automatically, you need to create a rule for updating the panel group. To do this, simply follow the steps below.</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="11114">Select the <strong data-renderer-mark="true">Update rules</strong> menu item from the menu on the left-hand side.</p>
+</li>
+<li>
+<p class="wysiwyg-text-align-left" data-renderer-start-pos="11188">Click on the <strong data-renderer-mark="true">Create update rule</strong> button.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21018302920850"></p>
+</li>
+</ul>
+<ul class="wysiwyg-text-align-justify">
+<li data-renderer-start-pos="11188">A new page for creating an update rule is displayed.</

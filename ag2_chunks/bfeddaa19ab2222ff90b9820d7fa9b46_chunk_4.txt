@@ -1,0 +1,55 @@
+. Fill in the following details:<br><br>– Headline: This headline is displayed as the section title on the panel page. Enter: “Blogging”.<br>– Text: This field contains the actual text. Enter a sample text.<br><br></p>
+Information
+<p>You can use HTLM formatting in the text fields, for example, to highlight a word in bold or italics. Use the &lt;br&gt; or &lt;br /&gt; tags to create line breaks. In fields marked with “Smarty code”, you can use Smarty.</p>
+<p class="auto-cursor-target"> </p>
+</li>
+<li>
+<p>Confirm by clicking on <strong>Save</strong>.</p>
+</li>
+<li>
+<p>Select the preview mode <strong>Offline version</strong> to preview the changes.</p>
+</li>
+<li>
+<p>The next step is to create the contact form section. Open the <strong>Page Modules</strong> tab again.</p>
+</li>
+<li>
+<p>Click on the <strong>+ Page</strong> module.</p>
+</li>
+<li>
+<p>Enter the following:<br><br>– Type: “Function module: Contact form”.<br>– Reference name for template: “module_blogging_2”.<br>– Page module title: “Blogging questions”.<br>– Module template: “func_contact_form”.<br>– Position: “after Blogging_introduction”.<br><br></p>
+</li>
+<li>
+<p>Confirm by clicking on<strong> Save</strong>.</p>
+</li>
+<li>
+<p>The options for the “Function module: Contact form” module will be displayed. Fill in the following details:<br><br></p>
+<p>– Mail sender: The e-mail address from which the contact mail is to be sent. You can either use a fixed e-mail address. Please make sure that the mail account exists on a correctly configured mail server: otherwise, the e-mails may be erroneously classified as spam. Alternatively, use the wildcard #u_email# to insert the e-mail address of the panelist resp. the e-mail entered into the contact form.<br>– Message upon successful change: This message appears once the contact mail was successfully sent. Enter: “Thank you. You will receive an answer as soon as possible.”<br><br></p>
+</li>
+<li>Specify a topic users can request information on. This includes the address of the person responsible for providing feedback on the topic. In the example, these are “General information” and “info-panel@<a href="http://example.com">example.com</a>”.</li>
+<li>Confirm by clicking on<strong> Save</strong>.</li>
+<li>Additionally, add the topic “Bonus points for blogging” and a corresponding address.</li>
+<li>Again, confirm by clicking on <strong>Save</strong>.</li>
+<li>Select the preview mode <strong>Offline version</strong> to preview the finished page.</li>
+</ol>
+<h3 id="publishing-the-panel-page" class="wysiwyg-text-align-justify"><strong>Publishing the Panel Page</strong></h3>
+<p class="wysiwyg-text-align-justify">The new page is not yet accessible to the public: Up to now you have been working with a so-called working version. This is indicated by the status icon in the tree view:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Grey status icon: The page has not been published</li>
+<li>Green status icon: The page has been published and is up-to-date.</li>
+<li>Blue status icon: The page is live (online), however, the internal working version has been changed in the meantime.</li>
+</ul>
+<ol class="wysiwyg-text-align-justify">
+<li>Click on the <strong>Publish page</strong> to place the “Blogging” page online.</li>
+<li>Click on the <strong>Preview online version</strong> tab or open the panel website directly to preview the changes in live operation.</li>
+</ol>
+<h1 id="panel-site-structure" class="wysiwyg-text-align-justify"><strong>Panel Site Structure</strong></h1>
+<p class="wysiwyg-text-align-justify">This chapter shows you how to create panel pages with the help of modules and templates.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>First of all, this chapter explains how content and functions, located in a panel page’s content area, are put together with the help of modules.</li>
+<li>It also explains how the general structure of panel pages is created through the interaction of different templates.</li>
+</ul>
+<h2 id="panel-pages-content-area" class="wysiwyg-text-align-justify"><strong>Panel Pages’ Content Area</strong></h2>
+<p class="wysiwyg-text-align-justify">A panel page’s content area is the part that contains the actual page content: Information texts, forms, and functions. This area differs from page to page, whereas other parts, such as header and menu, remain largely consistent.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify">The introduction of this chapter already took you through the practical steps of filling a panel page’s content area in the new CMS: You choose modules that provide the desired content and functions, and assemble these modules on the page.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc

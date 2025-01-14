@@ -1,0 +1,24 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3793125490">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3793125490</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<ul>
+<li><p>One database / one provider all users; separation by groups - is that feasible? Are there any issues? What to think about here?</p></li>
+<li><p>Security HTTP Traffic</p></li>
+<li><p>Security Emails (IP allow listing - is that necessary? anything else?)</p></li>
+<li><p>What kind of 2-factor authentication is allowed or necessary? Authenticators, Email (also a question of hosting), SMS (also a question of hosting)?</p></li>
+<li><p>Do we enfore password security policies?</p></li>
+<li><p>What other policies are enforced by us? MFA, token-expiration times, session times, etc.</p></li>
+<li><p>We are currently using OIDC internally - what kinds of flows should we use? (PKCE, implicit flow, code flow, hybrid flow, client credentials flow, device authorization/resource owner password flow)</p></li>
+<li><p>What kind of data would be stored? email and password</p></li>
+<li><p>JIT provisioning - are we allowed to do that? Means external Identity Providers add users to our Identity Provider</p></li>
+<li><p>Domain based approach - are there any major security issues or considerations?</p></li>
+<li><p>What kind of logs are necessary?</p></li>
+</ul><p></p><hr><p></p><ul><li><p>What kind of software are we evaluating? → self hosted open source, vendor like Okta, Auth0, Cognito</p></li></ul><p></p><p></p><p></p><p></p> (IP allow listing - is that necessary? anything else?)</p></li>
+<li><p>What kind of 2-factor authentication is allowed or necessary? Authenticators, Email (also a question of hosting), SMS (also a question of hosting)?</p></li>
+<li><p>Do we enfore password security policies?</p></li>
+<li><p>What other policies are enforced by us? MFA, token-expiration times, session times, etc.</p></li>
+<li><p>We are currently using OIDC internally - what kinds of flows should we use? (PKCE, implicit flow, code flow, hybrid flow, client credentials flow, device authorization/resource owner password flow)</p></li>
+<li><p>What kind of data would be stored? email and password</p></li>
+<li><p>JIT provisioning - are we allowed to do that? Means external Identity Providers add users to our Identity Provider</p></li>
+<li><p>Domain based approach - are there any major security issues or considerations?</p></li>
+<li><p>What kind of logs are necessary?</p></li>
+</ul><p></p><hr><p></p><ul><li><p>What kind of software are we evaluating? → self hosted open source, vendor like Okta, Auth0, Cognito</p></li></ul><p></p><p></p><p></p><p></p>

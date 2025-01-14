@@ -1,0 +1,63 @@
+ variables for single-row text fields (141) and “Other” fields (answer option + text). In personalized projects, the additional “u_email” wildcard is available, which is filled with the stored survey participant’s e-mail address.</p>
+</li>
+<li>
+<p>If you use the ACL right “mail_reply“ to hide “Reply-To” and “Return-Path” for a user team (usually for privacy protection), please take care to enter clearly defined values in the mail template which the team members are supposed to use for the trigger. The default options “Reply-To = From” and “Return-Path = From” cannot be used, because they are filled with the mail sender entered manually by the responsible user.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Mail recipient:</p>
+<ul>
+<li>
+<p>Manually defined recipient: In this field, you can define one or more recipients who do not necessarily have to be included in the<em> EFS Survey</em> system. You may either enter a single e-mail address or several e-mail addresses separated by commas. The e-mail will be sent to all the recipients you have defined.</p>
+</li>
+<li>
+<p>Dynamic mail recipient: You can select the variables for single row text fields (141) and “Other” fields (answer option + text). In personalized projects, the additional <em>u_email</em> wildcard is available, which is filled with the stored survey participant’s e-mail address.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Mailing date:</p>
+<ul>
+<li>
+<p>Immediately upon activation of the trigger. This option is preset as the default.</p>
+</li>
+<li>
+<p>Scheduled</p>
+</li>
+<li>
+<p>Dynamically upon activation of the trigger: This option triggers the dispatch after a period defined by the user, which can range from 30 minutes to 6 months.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="tips-for-creating-mail-templates-for-mail-triggers" class="wysiwyg-text-align-justify">Tips for Creating Mail Templates for Mail Triggers</h3>
+<p class="wysiwyg-text-align-justify">When creating mail templates, especially for mail triggers please note the following:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The “Subject” field should have meaningful content otherwise the e-mail may be filtered out as spam under certain circumstances.</p>
+</li>
+<li>
+<p>What you enter in the mail form’s ”Content” field is dependent on the purpose of the trigger:</p>
+<ul>
+<li>
+<p>If you wish to send predefined mail content then enter the desired content in the form. At this point, you can use the wildcards available in the respective project type.</p>
+</li>
+<li>
+<p>If, on the other hand, you wish to send content entered by the participant, enter the variable of the corresponding input field in the questionnaire as a wildcard enclosed by two hash signs (#).</p>
+</li>
+<li>
+<p>If you wish to output the participant’s answers to closed-ended questions you can work with conditional replacement.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">On EFS Panel installations the mail trigger can access panel-specific values and master data variables using the #panelpoints#, #panelist_code# and #md_00# wildcards.</p>
+<h3 id="testing-mail-triggers" class="wysiwyg-text-align-justify">Testing Mail Triggers</h3>
+<p class="wysiwyg-text-align-justify">When testing a mail trigger, please note: u_email or any project variables used are not replaced correctly when testing via the questionnaire preview, as data generated in the preview cannot be allocated to a participant account and dataset. Instead, the e-mails are always sent to the admin area user who has triggered the dispatch. To test the mail trigger properly, create a test participant with an e-mail address to which you have access, and test in productive mode. In this way, you can check whether the wildcards used are correctly replaced by the e-mail address and/or questionnaire entries.</p>
+<h2 id="page-trigger" class="wysiwyg-text-align-justify">Page trigger</h2>
+<p class="wysiwyg-text-align-justify">Generally, the questionnaire dramaturgy is configured by setting appropriate filters. As an alternative, the page trigger is available in all project types. You can use this trigger to specify any page as the next page to be shown to the respondent, depending on the selected variable characteristic. You can jump to the previous and next pages.</p>
+<p class="wysiwyg-text-align-justify">The page trigger is available for all project types.</p>
+<p class="wysiwyg-text-align-justify">Select the following execution position: „After submitting page, after filter“. Use this trigger type with caution because the questionnaire will quickly become cluttered for the administrator.</p>
+<h3 id="example-realizing-a-questionnaire-with-a-table-of-contents" class="wysiwyg-text-align-justify">Example: Realizing a questionnaire with a table of contents</h3>
+<p class="wysiwyg-text-align-justify">Most questionnaires have a sequential structure: The respondents go through the questionnaire from the first page to the last. Filters and hiding conditions are used to skip blocks of pages and questions. As an alternative, a division into chapters with a table of contents is especially suited for very long surveys that do not have to be answered completely. The respondents will select a topic block they wish to edit from the table of

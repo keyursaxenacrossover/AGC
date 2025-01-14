@@ -1,0 +1,56 @@
+Storage location: DATAGROUP (in NFS of Prod-DE-01)</li>
+<li>Retention period: 90 days</li>
+<li>Included in backups: Unknown (to be clarified with ITOPS)</li>
+</ul>
+<p> </p>
+<h2 id="failed-queries">Failed Queries</h2>
+<p>These logs are essentially DB logs, but only for queries that the DB server could not process. They are stored separately by EFS in the respective Elasticsearch instance of an EFS installation.</p>
+<ul>
+<li>Contains personal data: Yes</li>
+<li>Customer accessible: No (visible to TS/ITOPS via Service Gateway of the respective cluster)</li>
+<li>Storage location: AWS (Elasticsearch)</li>
+<li>Retention period: Unknown (to be clarified with DEV)</li>
+<li>Included in backups: Unknown (to be clarified with ITOPS)</li>
+</ul>
+<h2 id="error-logs">Error Logs</h2>
+<p>These logs contain warning and error messages from the application, covering everything that can happen during data processing.</p>
+<ul>
+<li>Contains personal data: Yes</li>
+<li>Customer accessible: No (visible to TS/ITOPS via Grafana - Loki/Thanos)</li>
+<li>Storage location: AWS (S3 Bucket in the respective installation cluster)</li>
+<li>Retention period: Unknown (to be clarified with ITOPS)</li>
+<li>Included in backups: Unknown (to be clarified with ITOPS)</li>
+</ul>
+<p> </p>
+<h2 id="other-logs">Other Logs</h2>
+<p>This section covers logs from infrastructure components like Load Balancer, Postfix, or third-party applications such as Tableau.</p>
+<ul>
+<li>Contains personal data: Unknown (to be clarified with ITOPS)</li>
+<li>Customer accessible: Unknown (to be clarified with ITOPS)</li>
+<li>Storage location: Unknown (to be clarified with ITOPS)</li>
+<li>Retention period: Unknown (to be clarified with ITOPS)</li>
+<li>Included in backups: Unknown (to be clarified with ITOPS)</li>
+</ul>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq-1">What is the EFS Admin Log?</h3>
+<p>The EFS Admin Log is an internal log within EFS that documents all user actions, including navigation, saving, searching, and other activities. It is stored in the EFS database and is accessible to customers through the EFS user interface.</p>
+<h3 id="faq-2">How long are log files typically retained?</h3>
+<p>Retention periods vary depending on the type of log. For example, EFS Admin Logs are typically retained for 90 days, while DB Logs are kept for 30 days. Some retention periods are unknown and need to be clarified with ITOPS or DEV teams.</p>
+<h3 id="faq-3">Do log files contain personal data?</h3>
+<p>Yes, most log files mentioned in this article contain personal data. It's important to handle these logs in compliance with data protection regulations.</p>
+<h3 id="faq-4">Can customers access all types of logs?</h3>
+<p>No, customers can only directly access the EFS Admin Log through the EFS user interface. Other logs are typically only accessible to technical support or IT operations teams.</p>
+</article> Unknown (to be clarified with ITOPS)</li>
+</ul>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq-1">What is the EFS Admin Log?</h3>
+<p>The EFS Admin Log is an internal log within EFS that documents all user actions, including navigation, saving, searching, and other activities. It is stored in the EFS database and is accessible to customers through the EFS user interface.</p>
+<h3 id="faq-2">How long are log files typically retained?</h3>
+<p>Retention periods vary depending on the type of log. For example, EFS Admin Logs are typically retained for 90 days, while DB Logs are kept for 30 days. Some retention periods are unknown and need to be clarified with ITOPS or DEV teams.</p>
+<h3 id="faq-3">Do log files contain personal data?</h3>
+<p>Yes, most log files mentioned in this article contain personal data. It's important to handle these logs in compliance with data protection regulations.</p>
+<h3 id="faq-4">Can customers access all types of logs?</h3>
+<p>No, customers can only directly access the EFS Admin Log through the EFS user interface. Other logs are typically only accessible to technical support or IT operations teams.</p>
+</article>

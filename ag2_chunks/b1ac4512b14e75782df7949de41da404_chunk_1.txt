@@ -1,0 +1,35 @@
+ Log in to the Database</h4>
+<ol>
+<li>
+<strong>Run the <code>efslogin</code> command</strong> to connect to the MariaDB database:
+<div class="dark bg-gray-950 contain-inline-size rounded-md border-[0.5px] border-token-border-medium">
+<div class="overflow-y-auto p-4" dir="ltr"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21140364646034"></div>
+</div>
+</li>
+</ol>
+<h4 id="h_01J6W66SZHBM0G5ZBFSMMGVH8M">Step 4: Execute SQL Commands</h4>
+<ol>
+<li>
+<strong>Run SQL queries</strong> to retrieve the information you need. For example, to find tables related to a survey with PID 1349, use the following SQL command:
+<div class="dark bg-gray-950 contain-inline-size rounded-md border-[0.5px] border-token-border-medium">
+<pre class="overflow-y-auto p-4" dir="ltr">MariaDB [opst_eh1958]&gt; SHOW TABLES LIKE '%1349%';</pre>
+</div>
+</li>
+</ol>
+<h3 id="h_01J6W6HA9SRQD4JF3K3QVCHAX1"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21140394390162"></h3>
+<p> </p>
+<h1 id="h_01J6W66SZHHQ8HAFA541CR8PYJ">FAQ</h1>
+<p><strong>What Should I do if the <code>i</code> command fails?</strong></p>
+<p>Please make sure that you have sourced the <strong>bashhelper </strong>script.</p>
+<p><strong>How do I find the correct Technical Name to use in the <code>i</code> command?</strong><br>The Technical Name is usually provided in your project documentation. If you don't have it, you may need to consult with your technical lead or administrator.</p>
+<p><strong>What should I do if the <code>efslogin</code> command fails?</strong><br>Verify that you are in the correct <code>htdocs</code> directory and that the instance is running. If the problem persists, check your connection or consult your system administrator.</p>="overflow-y-auto p-4" dir="ltr">MariaDB [opst_eh1958]&gt; SHOW TABLES LIKE '%1349%';</pre>
+</div>
+</li>
+</ol>
+<h3 id="h_01J6W6HA9SRQD4JF3K3QVCHAX1"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21140394390162"></h3>
+<p> </p>
+<h1 id="h_01J6W66SZHHQ8HAFA541CR8PYJ">FAQ</h1>
+<p><strong>What Should I do if the <code>i</code> command fails?</strong></p>
+<p>Please make sure that you have sourced the <strong>bashhelper </strong>script.</p>
+<p><strong>How do I find the correct Technical Name to use in the <code>i</code> command?</strong><br>The Technical Name is usually provided in your project documentation. If you don't have it, you may need to consult with your technical lead or administrator.</p>
+<p><strong>What should I do if the <code>efslogin</code> command fails?</strong><br>Verify that you are in the correct <code>htdocs</code> directory and that the instance is running. If the problem persists, check your connection or consult your system administrator.</p>

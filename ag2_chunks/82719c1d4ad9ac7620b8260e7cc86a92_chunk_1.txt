@@ -1,0 +1,40 @@
+h2>
+<p>When working with dates in EFS filters, conditions, or calculations, it's important to use a format that EFS can interpret as numbers. For EFS, 16.06.2023 or 2023- 06-16 or 16/06/2023 is just a string.</p>
+<h3 id="h_01J3Q47RPKP1GMZJZBWT8Y6HER">Unix Timestamps</h3>
+<p>Unix timestamps can be used but are not easily readable:</p>
+<ul>
+<li>2023-06-16 00:00:00 → 1686873600</li>
+<li>2023-06-16 23:59:59 → 1686959999</li>
+</ul>
+<h3 id="h_01J3Q47RPK7VDZYFYE0F24BK46">YYYYMMDD or YYYYMMDDhhmmss Format</h3>
+<p>A more readable alternative is to use YYYYMMDD or YYYYMMDDhhmmss format:</p>
+<ul>
+<li>2023-06-16 00:00:00 → 20230616000000</li>
+<li>2023-06-16 23:59:59 → 20230616235959</li>
+</ul>
+<p><strong>Example filter condition:</strong></p>
+<pre>u_date &gt;= 20230616000000 AND u_date &lt;= 20230616235959</pre>
+<p>For date-only format:</p>
+<pre>u_date &gt; 20230615 AND u_date &lt; 20230617</pre>
+<p>Note: The participant variable must be of type "Text field" when using these formats.</p>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq_1">How do I handle different date formats in EFS?</h3>
+<p>Use the STR_TO_DATE function to convert dates from various formats to a MySQL-compatible format. For example: STR_TO_DATE(#date_variable#, "%d.%m.%Y") converts from DD.MM.YYYY format.</p>
+<h3 id="faq_2">Can I use all MySQL date functions in EFS?</h3>
+<p>Not all MySQL functions are available in EFS recoding triggers. It's an undocumented feature, so some functions may not work as expected. Test your calculations thoroughly.</p>
+<h3 id="faq_3">What's the best date format for EFS filters and calculations?</h3>
+<p>For readability and ease of use, the YYYYMMDD or YYYYMMDDhhmmss format is recommended. This allows for simple numeric comparisons in filters and calculations while remaining human-readable.</p>
+</article>00 AND u_date &lt;= 20230616235959</pre>
+<p>For date-only format:</p>
+<pre>u_date &gt; 20230615 AND u_date &lt; 20230617</pre>
+<p>Note: The participant variable must be of type "Text field" when using these formats.</p>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq_1">How do I handle different date formats in EFS?</h3>
+<p>Use the STR_TO_DATE function to convert dates from various formats to a MySQL-compatible format. For example: STR_TO_DATE(#date_variable#, "%d.%m.%Y") converts from DD.MM.YYYY format.</p>
+<h3 id="faq_2">Can I use all MySQL date functions in EFS?</h3>
+<p>Not all MySQL functions are available in EFS recoding triggers. It's an undocumented feature, so some functions may not work as expected. Test your calculations thoroughly.</p>
+<h3 id="faq_3">What's the best date format for EFS filters and calculations?</h3>
+<p>For readability and ease of use, the YYYYMMDD or YYYYMMDDhhmmss format is recommended. This allows for simple numeric comparisons in filters and calculations while remaining human-readable.</p>
+</article>

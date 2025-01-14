@@ -1,0 +1,39 @@
+: unset; text-decoration-style: initial; text-decoration-thickness: initial; text-emphasis: unset; text-emphasis-position: unset; text-indent: 0px; text-overflow: unset; text-shadow: unset; text-transform: none; text-underline-offset: unset; text-underline-position: unset; white-space: pre; timeline-scope: unset; touch-action: unset; transform: unset; transform-box: unset; transform-origin: unset; transform-style: unset; transition: unset; translate: unset; user-select: unset; vector-effect: unset; vertical-align: unset; view-timeline: unset; view-transition-class: unset; view-transition-name: unset; visibility: unset; border-spacing: unset; -webkit-box-align: unset; -webkit-box-decoration-break: unset; -webkit-box-direction: unset; -webkit-box-flex: unset; -webkit-box-ordinal-group: unset; -webkit-box-orient: unset; -webkit-box-pack: unset; -webkit-box-reflect: unset; -webkit-line-break: unset; -webkit-line-clamp: unset; -webkit-mask-box-image: unset; -webkit-print-color-adjust: unset; -webkit-rtl-ordering: unset; -webkit-ruby-position: unset; -webkit-tap-highlight-color: unset; -webkit-text-combine: unset; -webkit-text-decorations-in-effect: unset; -webkit-text-fill-color: unset; -webkit-text-security: unset; -webkit-text-stroke-color: unset; -webkit-text-stroke-width: 0px; -webkit-user-drag: unset; widows: 2; width: unset; will-change: unset; word-break: unset; word-spacing: 0px; x: unset; y: unset; z-index: unset;">&gt;</span></pre>
+<p class="wysiwyg-text-align-justify">to</p>
+<pre class="wysiwyg-text-align-justify"><span style="color: #172b4d; font-family: SFMono-Medium, ' SF Mono' , ' Segoe UI Mono' , ' Roboto Mono' , ' Ubuntu Mono' , Menlo, Consolas, Courier, monospace; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: pre; background-color: rgba(9, 30, 66, 0.06); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">&lt;ul id="message-list" class="message-list list-unstyled"&gt;</span></pre>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Click on <strong>Save</strong>.</p>
+</li>
+</ul>
+<h3 id="activate-two-factor-authentication-for-websites-with-an-older-layout" class="wysiwyg-text-align-justify"><strong>Activate Two-Factor Authentication for Websites with an Older Layout</strong></h3>
+<p class="wysiwyg-text-align-justify">Two-factor authentication has been implemented for the current Responsive layout of the Panel website. If you want to use it for websites with an older layout, you must manually add both the required templates and placeholders as well as the "Change two-factor authentication" page module to your website.</p>
+<h4 id="adding-templates" class="wysiwyg-text-align-justify"><strong>Adding templates</strong></h4>
+<p class="wysiwyg-text-align-justify">You must add the following templates to your website:</p>
+<p class="wysiwyg-text-align-justify"><strong>templates/main_tfa_login.tpl</strong></p>
+<p class="wysiwyg-text-align-justify"><strong>templates/main_tfa_register.tpl</strong></p>
+<p class="wysiwyg-text-align-justify"><strong>templates/func_change_2fa.tpl</strong></p>
+<p class="wysiwyg-text-align-justify">Proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>To retrieve the current code for the templates, create a new website with the current layout.</p>
+</li>
+<li>
+<p>Copy the code for <strong>templates/main_tfa_login.tpl</strong>.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21018333534098" alt="image-20240510-092108.png"></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Create a new template for your website, enter <strong>templates/main_tfa_login.tpl</strong> as the name and paste the code you have just copied.</p>
+</li>
+<li>
+<p>Repeat the process for the other two templates.</p>
+</li>
+</ul>
+<h4 id="adding-placeholders" class="wysiwyg-text-align-justify"><strong>Adding placeholders</strong></h4>
+<p class="wysiwyg-text-align-justify">In the next step, you need to add the following wildcards:</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<tbody>
+<tr>
+<th class="w

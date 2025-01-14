@@ -1,0 +1,77 @@
+<h3 id="date-picker">Date picker</h3>
+<p>The date picker allows to creation of appealing calendar questions without customization. Technically, the new question type is based on the vertical multi text field (143). On desktop PCs, a calendar is displayed. On mobile devices, the date picker is displayed with native elements (see below). If JavaScript is not activated on the participant’s device, a simple text field is used as a fallback.</p>
+<h4 id="base-elements-11">Base Elements</h4>
+<ul>
+<li>
+<p>Question text</p>
+</li>
+<li>
+<p>Fill-in instruction</p>
+</li>
+<li>
+<p>Help text</p>
+</li>
+<li>
+<p>Calendar icon</p>
+</li>
+</ul>
+<h4 id="entry-dialog-5">Entry dialog</h4>
+<p>The entry dialog is closely related to the entry dialog of question type 143. However many functions were not implemented because they are not suitable for a question type with such a clear-cut purpose.</p>
+<h4 id="detail-configuration-4">Detail configuration</h4>
+<ul>
+<li>
+<p>Beginning date: Optionally, the earliest possible beginning date can be specified.</p>
+</li>
+<li>
+<p>End date: Optionally, the latest possible end date can be specified.</p>
+</li>
+<li>
+<p>Calendar icon: To use another icon, simply click on the default icons Then, you can select the desired file from the media library.</p>
+</li>
+</ul>
+<p>Question-specific messages for invalid entries can be modified in the menu <strong>Project properties</strong> → <strong>Survey messages</strong>.</p>
+<h3 id="autocomplete">Autocomplete</h3>
+<p>This type of question allows you to provide potential answer options, from which up to ten choices are presented as suggestions based on the autocompletion of what is being typed into the input line by the user. The suggestions are shown in the list of drop-down boxes in alphabetical order. They can also be called up by clicking on the drop-down arrow.</p>
+<p>To use this type of question, upload a CSV file with the answer options to the media library. The import file can contain a maximum of 10.000 lines. You can download an example file from the questionnaire editor.</p>
+<h3 id="people-selection">People selection</h3>
+<p>Sometimes you want to give survey respondents a quick and easy way of selecting a person from a list. For instance, if you want employees to choose someone from their organization to give recognition to, like a high-five or a shout-out. In EFS this has always been possible, but required some complex setup and integration. Now, we’ve made it simple, with a brand-new question type!</p>
+<p>This gives survey respondents direct accurate access to other people in the Panel during a survey. Respondents can search for people by first name, last name, and e-mail address.</p>
+<p>In the Options section of this question type, you configure the following settings: Select a panel group to be used as the source group (the panelists that are displayed in the questionnaire view are taken from this group). Enter placeholder text and a value in relation to the list size, i.e. how many panelists are to be displayed via the drop-down list. The maximum value is 100.</p>
+<p>Please note that for panelists to appear in the search results, the options "Show profile to others", "First name", "Last name" and “E-mail address” must be ticked in the panelist administration.</p>
+<h2 id="matrix-questions">Matrix questions</h2>
+<p>Many scenarios require detailed assessments of issues. The space-saving format of so-called matrix questions has proved suitable for these cases.</p>
+<h3 id="standard-matrix"><strong>Standard Matrix</strong></h3>
+<p>Standard Matrix is the classic matrix question.</p>
+<h4 id="base-elements-12">Base Elements</h4>
+<ul>
+<li>
+<p>Question text</p>
+</li>
+<li>
+<p>Fill-in instruction</p>
+</li>
+<li>
+<p>Help text</p>
+</li>
+<li>
+<p>Scale options 1-m</p>
+</li>
+<li>
+<p>Dimensions 1-n</p>
+</li>
+<li>
+<p>Optional: Inside titles 1-o</p>
+</li>
+<li>
+<p>Optional: Dimension with text entry field</p>
+</li>
+</ul>
+<h4 id="question-options">Question Options</h4>
+<p>As with most other question types, normal matrix questions also provide the following question options: “Mark question as protected”, hiding condition at the question level, vertical and horizontal flip, mandatory (DAC), “Number of items visible” and “Alternate colors”. In the section “answer options”, the following options are available: “Answer option + text”, “inside title”, type check, grouping, randomization, dac at the item level, “Always visible” and hiding condition at the item level.</p>
+<p>If “Mandatory (DAC)” is activated for a matrix question of type 311 and comparable matrix types, this function will only check whether an answer has been<br>given to any dimension. If you want all dimensions to be answered, you should use the DAC function on the item level.</p>
+<p>In addition, the following question type-specific question options may be used when designing the matrix:</p>
+<ul>
+<li>
+<p>Repeat scale headers every x rows: In the case of a matrix question with numerous dimensions, the scale can be repeatedly displayed after x rows so that the respondent can still see the scale apportionment while scrolling, for example.</p>
+</li>
+<li

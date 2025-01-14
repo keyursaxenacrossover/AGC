@@ -1,0 +1,21 @@
+0,128,0);">'table' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$table</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'fields' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$fields</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'assignments' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$this</span><span>-&gt;</span><span style="color: rgb(102,14,122);">assignments<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">panel.controllers.master_assignment.assign_variables_logic.after</span></pre></td>
+<td colspan="1">modules/panel/app/controllers/MasterdataassignmentController.php:assignment()</td>
+<td colspan="1"><pre><span>Panel\Events\Controllers\MasterDataAssignment\</span><span>AssignVariablesLogicAfter</span><span>([<br></span><span>    </span><span style="color: rgb(0,128,0);">'variables_logic' </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$this</span><span>-&gt;</span><span style="color: rgb(102,14,122);">variables_logic<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">panel.masterDataAssignmentView.listAssignmentsBefore</span></pre></td>
+<td colspan="1">modules/panel/app/views/MasterdataassignmentView.php:listassignments()</td>
+<td colspan="1"><pre><span>Panel\Events\Views\MasterDataAssignment\</span><span>ListAssignmentsBefore([<br></span><span>        </span><span style="color: rgb(0,128,0);">'content'    </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$content</span><span>,<br></span><span>        </span><span style="color: rgb(0,128,0);">'renderer'   </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$this</span><span>-&gt;</span><span style="color: rgb(102,14,122);">renderer</span><span>,<br></span><span>        </span><span style="color: rgb(0,128,0);">'ebur'       </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$this</span><span>-&gt;</span><span style="color: rgb(102,14,122);">ebur</span><span>,<br></span><span>        </span><span style="color: rgb(0,128,0);">'words'      </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$this</span><span>-&gt;</span><span style="color: rgb(102,14,122);">words</span><span>,<br></span><span>        </span><span style="color: rgb(0,128,0);">'project_id' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$this</span><span>-&gt;</span><span style="color: rgb(102,14,122);">projectId<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">panel.survey.transfer.transfer_survey_entry.buildQueryBefore</span></pre></td>
+<td colspan="1">modules/panel/components/survey/transfer.inc.php:transfer_survey_entry()</td>
+<td colspan="1"><pre><span>Panel\Events\Survey\Transfer\TransferSurveyEntry\</span><span>BuildQueryBefore([<br></span><span>    </span><span style="color: rgb(0,128,0);">'survey_mappings' </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$survey_mappings<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">panel.import.update.model.getForbiddenUpdateVars</span></pre></td>
+<td colspan="1">modules/panel/components/import/update/model.inc.php:getForbiddenUpdateVars()</td>
+<td colspan="1"><pre><span>Panel\Events\Import\Update\Model\</span><span>GetForbiddenUpdateVars([<br></span><span>    </span><span style="color: rgb(0,128,0);">'forbidden_update_vars' </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$forbiddenUpdateVars<br></span><span>])

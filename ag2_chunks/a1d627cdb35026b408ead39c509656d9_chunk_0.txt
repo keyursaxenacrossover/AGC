@@ -1,0 +1,108 @@
+<p><supportagent><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/1LS/pages/3650813953/Sales+Account+on+installations">https://qbdocs.atlassian.net/wiki/spaces/1LS/pages/3650813953/Sales+Account+on+installations</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</supportagent></p>
+
+<article>
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K">Overview</h1>
+<p>
+  This article provides information about the Sales Account used for installations, including account details, rights, and how to manage it.
+</p>
+
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>
+  This guide covers the general information about the Sales Account, its rights template, and how to use it effectively.
+</p>
+
+<ul>
+  <li>
+    <a href="#general_info">General Information</a>
+  </li>
+  <li>
+    <a href="#rights_template">Rights Template</a>
+  </li>
+  <li>
+    <a href="#how_to">How To Guide</a>
+  </li>
+</ul>
+
+<h2 id="general_info">General Information</h2>
+<p>
+  <strong>Account:</strong> sales_only<br>
+  <strong>Email address:</strong> <a href="mailto:all.sales@tivian.com">all.sales@tivian.com</a><br>
+  <strong>Initial Password:</strong> Sales!CEUR<br>
+  <strong>Security question:</strong> Where is the German office?<br>
+  <strong>Security answer:</strong> Cologne
+</p>
+
+<p>
+  The password can be changed by requesting a reset link via the login page. Since the account owner usually remains the same, this should not be a problem.
+</p>
+
+<p>
+  Tested on <a href="https://tx3689.customervoice360.com/www/">https://tx3689.customervoice360.com/www/</a>
+</p>
+
+<h3 id="account_rights">Account Rights</h3>
+<ul>
+  <li>Read: organisations</li>
+  <li>Extend organisations / set End of contract</li>
+  <li>Read: teams, team rights</li>
+  <li>Read: accounts of all organisations</li>
+  <li>Interview count</li>
+  <li>Panel: statistics</li>
+</ul>
+
+<p>
+  <strong>Not allowed:</strong> Changes on accounts, teams, organisations (except End of Contract), projects
+</p>
+
+<h2 id="rights_template">Rights Template</h2>
+<p>
+  The following table outlines the rights of the team for the whole system:
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Rights of the team</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>area_www</td>
+      <td>With write rights, you can access the area "EFS Fall 2022".</td>
+      <td>Read right, Write right</td>
+    </tr>
+    <tr>
+      <td>chg_grp_acl</td>
+      <td>With write rights, you can change the ACL rights of teams.</td>
+      <td>Read right</td>
+    </tr>
+    <tr>
+      <td>cr_teamaccount</td>
+      <td>With write rights, you can create and edit new user accounts.</td>
+      <td>Read right, Write right</td>
+    </tr>
+    <tr>
+      <td>groupadmin</td>
+      <td>With read rights, you can view all teams, including teams you are not a member of. With write rights, you can edit teams (except the team "System administrators") and manage access rights for objects (e.g. projects, reports etc.) for all teams.</td>
+      <td>Read right</td>
+    </tr>
+    <tr>
+      <td>orgadmin</td>
+      <td>With write rights, you can edit the accounting organizations on this installation in the "Users " -&gt; "Organizations" menu. Additionally, you can change the assignment of users and projects to organizations.</td>
+      <td>Read right, Write right</td>
+    </tr>
+    <tr>
+      <td>org_groupadmin</td>
+      <td>With read rights, you can access the account data of your own organization's users. With write rights, you can administrate all users of your own organization (e.g. create accounts, edit account data or delete accounts).</td>
+      <td>Read right</td>
+    </tr>
+    <tr>
+      <td>panelstats</td>
+      <td>With read rights, you have access to the statistics of the master data.</td>
+      <td>Read right</td>
+    </tr>
+    <tr>
+      <td>panelstatus</td>
+      <td>With read rights, you can view panel information after logging in. Without these rights only information on active projects will be displayed. To gain access to the menus "Website log" and "Session statistics", you have to combine read rights for "panelstatus" with read rights for "panelstats". To access the "Way of entry statistics", please combine

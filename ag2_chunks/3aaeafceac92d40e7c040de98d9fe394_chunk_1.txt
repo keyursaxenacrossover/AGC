@@ -1,0 +1,49 @@
+ a new one.</p>
+</li>
+</ul>
+<h3 id="finished" class="wysiwyg-text-align-justify"><strong>Finished</strong></h3>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The project has been deactivated and then finished.</p>
+</li>
+<li>
+<p>Possible next steps will be archiving or exporting the project.</p>
+</li>
+<li>
+<p>If the project has the status Finished, participation is no longer possible.</p>
+</li>
+</ul>
+<h3 id="participation-counter" class="wysiwyg-text-align-justify"><strong>Participation counter</strong></h3>
+<p class="wysiwyg-text-align-justify">The participation counter takes a survey out of the field, as soon as a preset number of successful participations has been reached.</p>
+<p class="wysiwyg-text-align-justify"><strong>Permitting only a Limited Number of Participations</strong></p>
+<p class="wysiwyg-text-align-justify">By default the participation counter is deactivated. Where a project with activated par- ticipation counter is copied or exported/imported, the counter is also deactivated in the new project.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>From the moment of activation, the participation counter counts backwards from the preset value to “0”.</p>
+</li>
+<li>
+<p>􏰀It will count all of the participants that have filled out the questionnaire fully. You also have the option of counting screened-out participants, respectively quoted out participants or testers.</p>
+</li>
+<li>
+<p>􏰀Once the participation counter has reached a value of “0”, the project will be automatically set to project status 51 “no further participations”. Newly arriving prospective participants will be denied access. In contrast, participants who are already active can fill out their questionnaire unhindered. (For this reason, depending on the circumstances, participant numbers may exceed the defined limit.)</p>
+</li>
+<li>
+<p>􏰀If the participation counter is active in a project, then both the setting and the number of participants still to be admitted will be displayed in the project informa- tion dialog.</p>
+</li>
+<li>
+<p>􏰀A protocol of the changes to the value of the participation counter will be documented in the project change log.</p>
+</li>
+<li>
+<p>The participation counter always counts from the current moment onward. It can be activated or deactivated during the field phase; a change to its value is also possible during the field phase.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>In accordance with which rules does the counting take place?</strong></p>
+<p class="wysiwyg-text-align-justify">From the moment of activation the participation counter counts backwards from the preset value until “0”, and then triggers a status change from “active” to “no further participations”.</p>
+<p class="wysiwyg-text-align-justify">When counting it will only take into account further participation that takes place from the time of activation onward or from the time of a change to the counter value onward. Participation that took place before activation or before a change to the counter value will not be taken into account. A change to the number of participants in personalized and panel projects, caused e.g. by adding, deleting or reseting, likewise has no effect on the participation counter.</p>
+<p class="wysiwyg-text-align-justify">So that a survey will be classified and counted as “completed regularly”, the respective participant must reach the final page of the project, which means it will have disposition code 31 or 32. You also have the option of counting screened out and quoted out participants and testers. Participants, who were screened out or quoted out are identifiable through the disposition codes 36 and 37, which they were given for reaching a certain page with such a configuration.</p>
+<p class="wysiwyg-text-align-justify"><strong>How does a respondent experience a participation limit?</strong></p>
+<p class="wysiwyg-text-align-justify">As soon as the participation counter has changed the project status to “no further participations”, newly arriving prospective participants will be denied access with the message “No further participants can be admitted”.</p>
+<p class="wysiwyg-text-align-justify">In contrast, participants who are already active can fill out their questionnaire unhindered. In most usage scenarios, a sudden closure of their sessions in the middle of the questionnaire would be counterproductive. For this reason, participant numbers may exceed the defined limit, especially if many respondents participate at the same time in large surveys.)</p>
+<p class="wysiwyg-text-align-justify"><strong>Activating the participation counter</strong></p>
+<p class="wysiwyg-text-align-justify">Switch to the <strong>Project </strong>→ {<strong>Selected project</strong>} → <strong>Project information. </strong>Click on the slider symbol (<strong>Set target</strong>) next to the participation counter in the status box. Enter into the text field “Number of additional necessary survey participations” the number of participants required from this point in time. The participation counter counts backwards from this value. You also have the option of counting respondents with the tester status. To do this tick the corresponding checkbox. You have the option of counting quoted and screened out participants (disposition code 36 and 37). Complete the work process by clicking on <strong>Save</strong>.</p>
+<p class="wysiwyg-text-align-justify"><strong>Editing the rejection

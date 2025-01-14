@@ -1,0 +1,38 @@
+he <a href="https://it.globalpark.de/twiki/bin/view/Sysadmin/PPTPowerpointNETReportingGenerierung">IP nach Datacenter</a>) </p></li>
+</ol>
+</li>
+</ol><p></p><ol>
+<li><p>Healself ausführen</p></li>
+<li><p>Apache anpassen und neustarten / Beim LIGHTTP muss nur ein neustart erfolgen</p></li>
+</ol><p>Danach einfach testen:</p><p></p><ol>
+<li><p>suche dir ein Test-Projekt</p></li>
+<li><p>Klicke auf den Menüpunkt EFS Reporting +</p></li>
+</ol><p>Wird es für einen Kunden freigeschaltet unbedingt darauf achten, dass ein Team auch das Recht report_reporting hat, welches standardmäßig nicht aktiviert ist.</p><p><strong>SPECIALS: </strong><br>- Sales kann Pakete mit nur HTML Reports o.ä. verkaufen. Dies kann auf der eigenen Installationen des Kunden konfiguriert werden (NICHT auf Sammelinstallationen). In der Config finden sich diese Einstellmöglichkeiten:</p><p>// pkr: flags for disabling export services<br>$__reporting_xls_disabled = false;<br>$__reporting_ppt_disabled = false;<br>$__reporting_pptpdf_disabled = false;<br>$__reporting_html_disabled = false;</p><h2 id="header-4">Activating Reporting+ for Employee projects</h2><ul>
+<li><p>Login to instalaltion using the root account</p></li>
+<li><p>Navigate to Systems &gt;&gt; Options &gt;&gt; Platform Cockpit &gt;&gt; root only :: System configuration</p></li>
+<li><p>Set flag "*reporting_enable_employee_projects*" to true</p></li>
+<li><p>No healself execution needed</p></li>
+<li><p>Check whether Reporting+ menu is available in Employee survey</p></li>
+</ul><p><strong>Please mind: This feature will not be announced in the New Features. We'll only include it into the Reporting+ manual and maybe in a future version of the Employee manual. The recommended purpose is monitoring of a running project for admin area users. For usual Employee reporting and analytics, we want to sell DV.</strong></p><h2 id="header-5">Deaktivierung</h2><p>Ab 8.1 erhält jeder Kunde Standardmäßig das Reporting+. Das deaktivieren ist nicht mehr nötig.</p><p>Um EFS Analytics LAB wieder zu entfernen:</p><ul>
+<li><p>"reporting" in $__modules entfernen</p></li>
+<li><p>"reporting" in $__provider_gui_dir entfernen + webserver restarten</p></li>
+<li><p>$__lab_reporting_link auf false setzen</p></li>
+<li><p>in der Datenbank folgende query ausführen: SHOW TABLES LIKE "survey_reporting%";</p></li>
+<li><p>Für jede im Schritt 4 selectierte Tabelle folgende Queries erstellen und ausführen: DROP TABLE xx;</p></li>
+<li><p>Die folgende Query ausführen: select * from healself_task_log where module="reporting";</p></li>
+<li><p>Die alle im Schritt 6 selectierte Tasks entfernen.</p></li>
+</ul><h2 id="header-6">Datenbank</h2><p>Durch die Healself werden alle nötigen Tabellen angelegt. Die Tabellen fangen alle mit survey_reporting an. Jedes Projekt hat seine eigene Tabelle in folgendem Syntax:</p><p></p><pre><code class="language-text">survey_reporting_variable_data_[REPORT_ID]_[fortlaufende Nummer] </code></pre><h2 id="header-7">Reporting+ Limits</h2><p><strong>In der Config (Tab "root only:: System configuration"):</strong></p><p></p><table data-layout="default">
+<colgroup>
+<col style="width: 151.0px;">
+<col style="width: 135.0px;">
+<col style="width: 48.0px;">
+<col style="width: 53.0px;">
+<col style="width: 368.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/SupportEFSAnalyticsLab?sortcol=0;table=1;up=0#sorted_table">Config Flag</a></p></th>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/SupportEFSAnalyticsLab?sortcol=1;table=1;up=0#sorted_table">Beschreibung</a></p></th>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/SupportEFSAnalyticsLab?sortcol=2;table=1;up=0#sorted_table">Standardlimit</a></p></th>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/SupportEFSAnalyticsLab?sortcol=3;table=1;up=0#sorted_table">Bisher max gesetzt auf</a></p></th>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/SupportEFSAnalyticsLab

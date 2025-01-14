@@ -1,0 +1,21 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1059848194">https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1059848194</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">Important Links</a></li>
+<ul>
+<li><a href="#header-3">Remove an installation from the ROM</a></li>
+<li><a href="#header-4">Force an installation back to the ROM</a></li>
+<li><a href="#header-5">Roll out a build on all frontends</a></li>
+<li><a href="#header-6">Update/Upgrade an installation in the ROM</a></li>
+</ul>
+</ul>
+</ul><h1 id="header-1">Important Links</h1><p><a href="https://it.globalpark.de/twiki/bin/view/Sysadmin/RollOutManagement">Twiki Sysadmins ROM</a></p><p><a href="https://it.globalpark.de/twiki/bin/view/Sysadmin/DokuDeployManagement">Twiki Sysadmins Deploymanagement</a></p><p><a href="https://it.globalpark.de/twiki/bin/view/Development/Buildmanagement">Twiki DEV Buildmanagement</a></p><p><a href="https://it.globalpark.de/twiki/bin/view/Support/SupportRollOutManagement">Twiki Support Mails sent from ROM</a></p><p><a href="https://it.globalpark.de/twiki/bin/view/Support/TSRollOutManagementRemoveABuild#Was_ist_zu_beachten">Twiki Support Removing a Test Build</a></p><p><ac:link ac:card-appearance="inline"><ri:page ri:content-title="Update installation" ri:version-at-save="13"></ri:page><ac:link-body>Update installation</ac:link-body></ac:link> </p><p><ac:link ac:card-appearance="inline"><ri:page ri:content-title="Nightly Upgrade/Nightly Update Skript" ri:version-at-save="2"></ri:page><ac:link-body>Nightly Upgrade/Nightly Update Skript</ac:link-body></ac:link> </p><h2 id="header-3">Remove an installation from the ROM</h2><ul>
+<li><p>Use helpers script <strong>helpersRemoveInstallationFromROM [installation path]</strong></p></li>
+<li><p>see <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Helperscripts" ri:version-at-save="9"></ri:page><ac:link-body>Helperscripts</ac:link-body></ac:link> </p></li>
+</ul><h2 id="header-4">Force an installation back to the ROM</h2><p>Basically use the same ROM script that is used to do an update of the installation and use -f to force it back to the ROM </p><pre><code class="language-bash">cd /opt/pdp/rollout2/bin
+
+./set_efs_version.sh -c ../etc/rollout2.conf -t TEST -b EFS_17.3 -i /nfs/opstx/xxxx -p TEST -n 0004_1 -f</code></pre><h2 id="header-5">Roll out a build on all frontends</h2><p>Roll out a build on all frontends without updating/upgrading an actual installation<br>Basically use the ROM script to update an installation but do not name an actual installation </p><pre><code class="language-bash">cd /opt/pdp/rollout2/bin
+
+./set_efs_version.sh -c ../etc/rollout2.conf -t TEST -b EFS_17.3 -p TEST -n 0004_1</code></pre><h2 id="header-6">Update/Upgrade an installation in the ROM</h2><p>see <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Update installation" ri:version-at-save="13"></ri:page><ac:link-body>Update installation</ac:link-body></ac:link> </p><p></p>

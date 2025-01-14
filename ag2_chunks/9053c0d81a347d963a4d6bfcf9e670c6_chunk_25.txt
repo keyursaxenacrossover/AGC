@@ -1,0 +1,71 @@
+ data survey to transition to fully valid panelists.</li>
+</ul>
+</li>
+</ol>
+<h3 id="h_01J3FY7CT3J200WKA5Z8ZZ4A85" class="wysiwyg-text-align-justify">Validating Panelists</h3>
+<p class="wysiwyg-text-align-justify">The administrator’s central task is to validate panelists to ensure they are real individuals with valid email addresses, and to exclude multiple participations. EFS Panel supports quality assurance through:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Plausibility checks during registration.</li>
+<li>Immediate check for existing email addresses in the system.</li>
+<li>An overview list of newly registered panelists.</li>
+<li>Optional automated duplicates check.</li>
+</ul>
+<h3 id="h_01J3FY7CT33DSYNRYJT7H4DB1E" class="wysiwyg-text-align-justify">List of Candidates</h3>
+<p class="wysiwyg-text-align-justify">The <strong>People → Panelists administration → Candidates</strong> menu provides an overview of candidates with “admitted temporarily” status. The interfaces and functions here are similar to the panelists administration but restricted to candidates with panel status 1.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Clicking on a name opens the candidate's detail view.</li>
+</ul>
+<h3 id="h_01J3FY7CT3RYGD244R6RFT53DD" class="wysiwyg-text-align-justify">Inviting Candidates to the Master Data Survey</h3>
+<p class="wysiwyg-text-align-justify">After validating candidates:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>Select the panelist in the <strong>Candidates</strong> menu.</li>
+<li>Select the “Master data survey” action.</li>
+<li>Confirm by clicking on <strong>Submit</strong>.</li>
+<li>Finalize the invitation text and send the mail.</li>
+</ol>
+<p class="wysiwyg-text-align-justify">Once candidates complete the master data survey, they become “active” members of the panel, available for panel surveys and other activities like promotional campaigns. They will no longer be listed as candidates.</p>
+<h2 id="h_01HGKSMPRS6YJGQX3YBVHXKP6N" class="wysiwyg-text-align-justify">Duplicates Check</h2>
+<div class="flex-shrink-0 flex flex-col relative items-end wysiwyg-text-align-justify">
+<div>
+<div class="pt-0">
+<div class="gizmo-bot-avatar flex h-8 w-8 items-center justify-center overflow-hidden rounded-full">
+<div class="relative p-1 rounded-sm flex items-center justify-center bg-token-main-surface-primary text-token-text-primary h-8 w-8"> </div>
+</div>
+</div>
+</div>
+</div>
+<div class="group/conversation-turn relative flex w-full min-w-0 flex-col agent-turn wysiwyg-text-align-justify">
+<div class="flex-col gap-1 md:gap-3">
+<div class="flex flex-grow flex-col max-w-full">
+<div class="min-h-[20px] text-message flex w-full flex-col items-end gap-2 whitespace-pre-wrap break-words [.text-message+&amp;]:mt-5 overflow-x-auto" dir="auto" data-message-author-role="assistant" data-message-id="c0a4ff70-56cd-493d-9ed5-eb644c21dfac">
+<div class="flex w-full flex-col gap-1 empty:hidden first:pt-[3px]">
+<div class="markdown prose w-full break-words dark:prose-invert light">
+<h3 id="h_01J3FY9Q3B3XEPRRDSJZ4VH6NP">Duplicates Check</h3>
+<p>Occasionally, prospective members may register twice using different email addresses. This can occur when panelists forget their passwords or when panelists try to benefit multiple times from incentives by registering repeatedly. The duplicates check feature in EFS Panel helps manage such cases efficiently.</p>
+<p><strong>Functional Scope:</strong></p>
+<ul>
+<li>
+<strong>Automatic Check:</strong> The duplicates check runs automatically at hourly intervals.</li>
+<li>
+<strong>Activation:</strong> You can choose to activate the duplicates check.</li>
+<li>
+<strong>Flexible Algorithm:</strong> Customize the checking algorithm to include specific participant and master data.</li>
+<li>
+<strong>Global Configuration:</strong> The duplicates check configuration applies to the entire panel, not to individual websites or language versions.</li>
+<li>
+<strong>Protected Configuration:</strong> Requires "panel_dupcheck" rights for configuration changes.</li>
+<li>
+<strong>Reset Status:</strong> The action “Reset duplicates status” in Panelists administration and Candidates menus allows resetting the check status if needed.</li>
+<li>
+<strong>Editable Status:</strong> The duplicates status of panelists can be edited in their detail views.</li>
+</ul>
+<p><strong>Function in Detail:</strong></p>
+<ol>
+<li>
+<p><strong>Incremental Check:</strong></p>
+<ul>
+<li>Only panelists with “not checked” status are reviewed.</li>
+<li>Depending on the results, they are assigned “not checked” or “duplicate” status.</li>
+<li>Use the <strong>Reset duplicates status</strong> button to reset the status of all or selected panelists.</li>
+</ul>
+</li>

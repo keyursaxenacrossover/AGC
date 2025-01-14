@@ -1,0 +1,55 @@
+ to confirm.</li>
+</ul>
+</li>
+<li>
+<p><strong>Executing the Recoding</strong></p>
+<ul>
+<li>Go to the <strong>3. Run recoding process</strong> tab.</li>
+<li>The result display will show how many records were affected.</li>
+</ul>
+</li>
+</ol>
+<h3 id="MasterData-CalculatingRecodingswithFormulas" class="wysiwyg-text-align-justify"><strong>Calculating Recodings with Formulas</strong></h3>
+<p class="wysiwyg-text-align-justify">In many cases, you can use a mathematic formula to <em>calculate</em> the recoding, using the values of one or several master data as starting point for the calculation.</p>
+<p class="wysiwyg-text-align-justify">Recodings are frequently used to rearrange the characteristics of a master data item.</p>
+<p class="wysiwyg-text-align-justify">This requires the following steps:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Defining the formula.</li>
+<li>Creating a new recoding.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>1. Defining the formula</strong></p>
+<p class="wysiwyg-text-align-justify">Define the formula which describes your recoding. The following rules apply:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Use wildcards #md_xxx# resp. #m_xxx# to insert master data.</li>
+<li>The operators + - / * and ( and ) can be used.</li>
+<li>It is possible to perform date calculations. For details, please see the explanations for grouping filters in Chapter "Creating and Editing Groups".</li>
+</ul>
+<div class="confluence-information-macro confluence-information-macro-information conf-macro output-block wysiwyg-text-align-justify" data-hasbody="true" data-macro-id="dd60aa3c-f0ab-454b-b5e0-db4800570c29" data-macro-name="info">
+<p class="title"><em>Note:<span style="color: #333333;"> only the functions named below can be used and are supported in future versions of EFS. No other functions can be used.</span></em></p>
+</div>
+<div class="table-wrap wysiwyg-text-align-justify">
+<div class="table-wrap">
+<table class="wrapped tablesorter tablesorter-default relative-table confluenceTable" style="margin: 0px auto; border-collapse: collapse; width: 1066px; height: 2184px;">
+<colgroup> <col style="width: 186.125px;"> <col style="width: 317.271px;"> <col style="width: 306.042px;"> <col style="width: 346.042px;"> </colgroup>
+<tbody>
+<tr class="tablesorter-headerRow">
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; background-color: var(--ds-background-accent-gray-subtlest,#f0f0f0); padding: 7px 10px !important; width: 153.264px;" scope="col">
+<div class="tablesorter-header-inner">Function</div>
+</th>
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; background-color: var(--ds-background-accent-gray-subtlest,#f0f0f0); width: 274.115px;" scope="col"> </th>
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; background-color: var(--ds-background-accent-gray-subtlest,#f0f0f0); width: 254.306px;" scope="col">
+<div class="tablesorter-header-inner">Explanation</div>
+</th>
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; background-color: var(--ds-background-accent-gray-subtlest,#f0f0f0); width: 316.771px;" scope="col">
+<div class="tablesorter-header-inner">Example</div>
+</th>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 153.264px;">case</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 274.115px;">
+<p>CASE</p>
+<p>WHEN expr1 THEN value1</p>
+<p>ELSE value2</p>
+<p>END</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 

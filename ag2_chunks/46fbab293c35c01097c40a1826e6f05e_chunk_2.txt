@@ -1,0 +1,44 @@
+="wysiwyg-text-align-justify">Page trigger</h2>
+<p class="wysiwyg-text-align-justify">Generally, the questionnaire dramaturgy is configured by setting appropriate filters. As an alternative, the page trigger is available in all project types. You can use this trigger to specify any page as the next page to be shown to the respondent, depending on the selected variable characteristic. You can jump to the previous and next pages.</p>
+<p class="wysiwyg-text-align-justify">The page trigger is available for all project types.</p>
+<p class="wysiwyg-text-align-justify">Select the following execution position: „After submitting page, after filter“. Use this trigger type with caution because the questionnaire will quickly become cluttered for the administrator.</p>
+<h3 id="example-realizing-a-questionnaire-with-a-table-of-contents" class="wysiwyg-text-align-justify">Example: Realizing a questionnaire with a table of contents</h3>
+<p class="wysiwyg-text-align-justify">Most questionnaires have a sequential structure: The respondents go through the questionnaire from the first page to the last. Filters and hiding conditions are used to skip blocks of pages and questions. As an alternative, a division into chapters with a table of contents is especially suited for very long surveys that do not have to be answered completely. The respondents will select a topic block they wish to edit from the table of contents, jump to that topic block, and will be routed back to the table of contents after editing it.</p>
+<p class="wysiwyg-text-align-justify">Using page triggers, a non-sequential project can be realized like this:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>For the table of contents, you can, for example, create a question with a single response list (type 111).</p>
+</li>
+<li>
+<p>Create a page trigger that will query the variable created in Step 1. This page trigger is used to jump to the start pages of the individual chapters.</p>
+</li>
+<li>
+<p>At the end of each chapter, you must create a question of type 911 (user-defined) with a variable. In a hidden form field (input type=hidden), you must set the variable to a value of 1.</p>
+</li>
+<li>
+<p>For the final page of the chapter, you must also define a page trigger that will query whether the hidden variable has a value of 1 and then route to the table of contents. This condition will be ensured in any case when sending the final page: The page trigger is activated, and the respondent can make another selection in the table of contents.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Please note, that EFS does not support consecutive page triggers on target pages, and any page triggers on the target page, set to execution position “directly”, will be ignored.</p>
+<h2 id="logout-trigger" class="wysiwyg-text-align-justify">Logout trigger</h2>
+<p class="wysiwyg-text-align-justify">The logout trigger can be used in every project type. “Logout” means that the participant will be routed to the system final page, without any specific message. You can use the logout trigger if, for example, you have a complex, nested questionnaire and want to route respondents to the final page in a very straightforward way.</p>
+<p class="wysiwyg-text-align-justify">The participant’s interview will be classified as a completed interview (disposition code 31). If the survey contains additional final pages, the panelist will always be sent to the system's final page.</p>
+<h2 id="sample-trigger" class="wysiwyg-text-align-justify">Sample Trigger</h2>
+<p class="wysiwyg-text-align-justify">The sample trigger allows you to invite participants, depending on a condition that you have defined, to a second personalized survey or panel survey. The participants are added dynamically to the participant administration or sample of the follow-up project.</p>
+<h3 id="example" class="wysiwyg-text-align-justify">Example</h3>
+<p class="wysiwyg-text-align-justify">You are surveying customers of an online shop to find out how satisfied they are and when they expect to receive the goods they bought: Depending on the expected date of delivery, the interview participants will receive an email inviting them to a second survey after a certain delay. The respondents are entered into the sample as active participants.</p>
+<h3 id="features" class="wysiwyg-text-align-justify">Features</h3>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The sample trigger can be set up and executed in all quantitative project types (AN, PE, PA, MD, ES, MSF).</p>
+</li>
+<li>
+<p>For the target project, you can use all project types with participant administration, i.e. personalized projects, employee surveys, multi-source feedback, panel surveys, and master data surveys.</p>
+</li>
+<li>
+<p>You can only invite participants with existing panelist accounts to panel surveys or master data surveys. The e-mail address is used to match the participant and panelist account.</p>
+</li>
+</ul>
+<h3 id="configuring-sample-trigger" class="wysiwyg-text-align-justify">Configuring Sample Trigger</h3>
+<p class="wysiwyg-text-align-justify">The basic settings are the same as for other trigger types. When configuring the details, please mind:</p>
+<ul class="wysiwyg-text-align-justify">

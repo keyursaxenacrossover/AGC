@@ -1,0 +1,74 @@
+254 characters for SPSS export”. Please note that without restriction on the text length, the overall size of the export file can grow significantly, depending on the number of text fields in the questionnaire and the number of participants.</p>
+</li>
+<li>
+<p>SPSS will only transfer user-defined missing values for text variables if the variables’ field is no more than eight characters wide.</p>
+</li>
+<li>
+<p>SPSS and special features for SPSS evaluation do not support several question types, especially question type 911 and question type 912 (which is available only in the context of special programming).</p>
+</li>
+<li>
+<p>Both in <em>Microsoft Excel</em> as well as in SPSS, the file size is restricted by the amount of available RAM.</p>
+</li>
+<li>
+<p>Up to Excel 2000, the maximum size of a <em>Microsoft Excel </em>file is 64 MB. As of <em>Excel</em> 2002 the maximum file size is 128 MB.</p>
+</li>
+<li>
+<p>The size of editable files is also restricted by the amount of RAM available on the computer in use.</p>
+</li>
+<li>
+<p><em>Microsoft Excel</em> as well as OpenOffice are known to not correctly render or process very long cell contents.</p>
+</li>
+<li>
+<p>All columns in Fixed Format export files have at least the size of the missing defined for the data type (e. g. size of 3 for the missing value “-77”).</p>
+</li>
+<li>
+<p>When working with the English user interface of Microsoft Excel, errors may occur on opening the CSV files as columns may not be processed automatically. In this case, check <strong>Use commas instead of semicolons in CSV exports.</strong></p>
+</li>
+</ul>
+<h3 id="compressing-files" class="wysiwyg-text-align-justify"><strong>Compressing Files</strong></h3>
+<p class="wysiwyg-text-align-justify">The following options are available for exporting a file in compressed format:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>No compression</p>
+</li>
+<li>
+<p>Zip format: commonly used format on <em>Windows</em> machines</p>
+</li>
+<li>
+<p>Tape archive (.tar.gz): commonly used format on UNIX machines. The default setting is “No compression”.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Compression is automatically performed for exports of result data in Triple-S format. If you have made no settings yourself, a zip file will be created.</p>
+<h3 id="selecting-an-export-template" class="wysiwyg-text-align-justify"><strong>Selecting an Export Template</strong></h3>
+<p class="wysiwyg-text-align-justify">The following export templates are available:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Complete project: All project result data will be exported, including time variables, which provide information on survey processing time.</p>
+</li>
+<li>
+<p>Project without timestamps: All project result data will be exported, except time variables.</p>
+</li>
+<li>
+<p>Project, open-ended questions only: Only questions with “varchar” type open-ended text fields will be exported.</p>
+</li>
+<li>
+<p>Project, closed-ended questions only: Only closed-ended questions (“int” type) will be exported.</p>
+</li>
+<li>
+<p>In personalized projects:</p>
+<ul>
+<li>
+<p>Participant data for the current project: Only the address data of the participants assigned to the project will be exported.</p>
+</li>
+<li>
+<p>Only if you have the required additional access rights, you can access the combined participant data and result in data export.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">For panel surveys in <em>EFS People</em> installations, you have the additional option of exporting Master data for project: Only the master data of the participants assigned to the project will be exported.</p>
+<p class="wysiwyg-text-align-justify">In the <strong>Export templates </strong>menu (until EFS 10.3: <strong>Template editor</strong>), you can create and save your export templates. This is particularly recommendable if you frequently only export data for a selection of variables: Selective export saves you from having to repeatedly choose variables.</p>
+<h3 id="restricting-export-to-individual-panel-groups" class="wysiwyg-text-align-justify"><strong>Restricting Export to Individual Panel Groups</strong></h3>
+<p class="wysiwyg-text-align-justify">For panel surveys in <em>EFS People</em> installations, you have the additional option of either exporting data from the entire panel or restricting the export to individual panel groups by choosing the respective option from the drop-down list in the “Restrict export to” field.</p>
+<h3 id="selecting-the-language-and-charset" class="wysiwyg-text-align-justify"><strong>Selecting the Language and Charset</strong></h3>
+<p class="wysiwyg-text-align-justify">For multilingual projects, you can choose the language in which questionnaire texts are to be exported in the “Language” field. This setting <em>only </em>affects the language of text elements (e.g. questions texts, answer options) that are included in the SPSS export as labels and does not affect

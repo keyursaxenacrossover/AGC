@@ -1,0 +1,59 @@
+Portals</em>. With the new display types <strong>Image</strong> and <strong>Hyperlink</strong>, links to images or other pages can be created in the exterior view of Task List in Portals. To provide the display types in the exterior view of Task List in Portals, you want to create the respective variables in the variable editor of the <em>Action Planner</em> first.</p>
+<p>The display types Image and Hyperlink can only be used in the <em>Portals</em> page module <em>Task List</em>. They have no influence on the exterior view of the Org Processor.</p>
+<h3 id="h_01J3N2HWABAW4E4TAB20761TZM"><strong>History log for tasks</strong></h3>
+<p>Each task has a history log in which all modifications to this task are chronologically stored. The information stored in the history log of tasks is only viewable in <em>Task List</em> of <em>Portals</em>.</p>
+<h3 id="h_01J3N2HWAB9EC9WW5CDV63H3FP"><strong>Workflows</strong></h3>
+<p>The workflow buttons are an important feature when working on tasks. Workflows enable you to assign, escalate, close and reopen tasks as well as invite participants to follow-up surveys. Workflows can be added and configured for each of the three status Not started - Started - Completed to define the availability of the different workflows for each status.</p>
+<p><strong>Configuring workflows</strong></p>
+<p>To configure workflows, navigate via the following path to the workflows of the <em>Action Planner</em>:</p>
+<p><strong>Org Processor</strong> → <strong>Configuration</strong> →  <strong>Action Planner configuration</strong> → <strong>Workflow</strong></p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017142425618" alt="image2019-5-15_14-25-44.png"></p>
+<p>Via the <strong>Add</strong> button and the<strong> trash</strong> icon, you can add workflows to the different statuses and remove them again. Linked workflows are configurable for the respective status. Configured and therefore applicable workflows have a green radio button in the column “Executable” - a red radio button however labels workflows that are not configured and therefore not executable. The order of workflows can be adapted via drag and drop and determines the order of workflow buttons in the exterior view.</p>
+<p><strong>Creating mail templates for workflows</strong></p>
+<p>Some workflows require <strong>mail templates</strong>. Mail templates for workflows need to be saved as individual project templates in order to be available for workflows.</p>
+<ul>
+<li>
+<p>Navigate via the following path to the mail templates for your project:</p>
+</li>
+</ul>
+<p>[Selected project] → <strong>Mail templates</strong> → <strong>New draft</strong></p>
+<ul>
+<li>
+<p>Create a new mail template. Please consider:</p>
+<ul>
+<li>
+<p>Select the “Org Processor mail” type.</p>
+</li>
+<li>
+<p>Via the following path, you‘ll find all Action Planner variables available. Here, you can add new variables, adapt all variables and you can use these variables as wildcards in your mail template:</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>[Selected project] → <strong>Org Processor</strong> →<strong> Configuration</strong> → <strong>Action Planner configuration</strong> → <strong>Action Planner variables</strong></p>
+<p>To use Action Planner variables as wildcards in your mail template, enclose the relevant variable label with two hash signs.</p>
+<ul>
+<li>
+<p>The wildcard #action_comment# is especially dedicated to workflow e-mails. By using this wildcard in the mail template, comments within workflows can be included in e-mails to be sent. These wildcards can be found in the section <strong>Mail text</strong> of the new draft by clicking on the question mark icon.</p>
+</li>
+</ul>
+<p>Example for a mail text within a mail template:</p>
+<p>--</p>
+<p>Hello #ac_resonse#,</p>
+<p>a new task #ac_name# has been created:</p>
+<p>http://www.example-efs.com/APortalsName/#ac_id#</p>
+<p>Please take care of it.</p>
+<p>Best regards,</p>
+<p>the system</p>
+<p>--</p>
+<p>The link in this email text is the same for all workflow mail templates. Upon execution of workflows with e-mail dispatch, the wildcard ID in this link is replaced by the actual ID of the relevant task. Via this link, the responsible person is led directly to the assigned task.</p>
+<p>By clicking on the question mark icon, a list of available wildcards for setting mail templates is shown.</p>
+<ul>
+<li>
+<p>After having completed the mail template, confirm with <strong>Save</strong>.</p>
+</li>
+<li>
+<p>Optionally, you can view the e-mail of your mail template in preview mode by clicking on the button <strong>Preview</strong> on the top left side of the draft.</p>
+</li>
+<li>
+<p>To allocate the new mail template to the current project, go back to the <strong>Mail templates</strong> menu and switch the assignment status of your mail template in the column <strong>Project template</strong> from “No” to “Yes” by clicking on the status

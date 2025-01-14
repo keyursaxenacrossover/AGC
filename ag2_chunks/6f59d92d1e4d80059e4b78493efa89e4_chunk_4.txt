@@ -1,0 +1,70 @@
+ class="wysiwyg-text-align-justify">The overview comprises all the quick polls created for the defined language version and contains the following information:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Title: Internal title.</li>
+<li>Headline: Headline seen by the panelists.</li>
+<li>Active:
+<ul>
+<li>Yes: The poll will be displayed.</li>
+<li>No: The poll will not be displayed.</li>
+</ul>
+</li>
+<li>Type: Question type</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If you want to view quick polls of another language version in a given installation with several websites and/or language versions, simply change the settings in the upper section of the dialog. You can use the View function to change the number of table columns displayed as well as the number of rows per page. A simple search function is available.</p>
+<p class="wysiwyg-text-align-justify">The icons in the “Actions” column give the following editing options:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Edit</li>
+<li>Copy poll</li>
+<li>View results</li>
+<li>Only for panelist polls: Export participant answers</li>
+<li>Delete</li>
+</ul>
+<h2 id="creating-a-new-poll" class="wysiwyg-text-align-justify"><strong>Creating a New Poll</strong></h2>
+<ol class="wysiwyg-text-align-justify">
+<li>Click on the <strong>Create poll</strong> button in the <strong>Quick Polls</strong> menu.</li>
+<li>Fill in the form. The most important fields are listed below. Optionally, you can activate the rich text editor and use it to format the texts.<br>– Allow participation for non-panelists: This option enables you to decide if only logged-in panelists can participate, or if the poll should be anonymous i.e. can be answered by non-panelists as well. Please mind that with anonymous quick polls, you have fewer possibilities for evaluation. Notably, the result data cannot be matched to panelists. The poll type setting cannot be changed later.<br>– Title: This title is for orientation purposes only, it will not be seen by panelists.<br>– Question text: The actual question.<br>– Text on the display of results: This message is displayed after successful voting. Enter the following text, for example: “Thank you for voting!”<br>– Error message when invalid answers are given: This message is displayed if a problem occurs on saving and, as a result, the answer is deemed invalid. Enter the following text, for example: “Only once, please”.<br>– Maximum scale of results display: In this field, you can define how broad, in percent, result bars may be in relation to the complete breadth of the poll table. Enter: “100”.<br>– Question type: You can choose between single or multiple response lists.<br>– Active: Only active polls will be displayed. If you wish to see your poll on the website, select “Yes” and deactivate all other polls of the current language version once you have saved the setting.</li>
+<li>
+<p>Confirm by clicking on <strong>Save</strong>.</p>
+</li>
+<li>
+<p>Open the new poll by clicking on the title or the <strong>Edit</strong> icon.</p>
+</li>
+<li>
+<p>In the lower section of the edit dialog you will find the new section “Answer options”. Enter the first answer text and <strong>Save</strong>.</p>
+</li>
+<li>
+<p>Repeat this for all required answer options.</p>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify">For installations with several websites and/or language versions, please note: The language version of a new quick poll is automatically predefined by the overview settings. The language version cannot be subsequently changed.</p>
+<h2 id="properties-of-a-poll" class="wysiwyg-text-align-justify"><strong>Properties of a Poll</strong></h2>
+<p class="wysiwyg-text-align-justify">The table lists all the characteristics a poll can have.</p>
+<table class="relative-table wysiwyg-text-align-justify" style="width: 95.8416%; margin-right: auto; margin-left: auto;" border="1">
+<colgroup> <col style="width: 13.9555%;"> <col style="width: 17.0596%;"> <col style="width: 68.99%;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center">Fields</th>
+<th class="wysiwyg-text-align-center">Wildcard</th>
+<th class="wysiwyg-text-align-center">Meaning</th>
+</tr>
+<tr>
+<td>
+<p>Allow participation for non-panelists</p>
+</td>
+<td> </td>
+<td>
+<p>There are two types of polls:</p>
+<ul>
+<li>Panelist polls: Only logged-in panelists can participate.</li>
+<li>Anonymous polls: They can be answered by non-panelists as well.</li>
+</ul>
+<p>With anonymous quick polls, you have fewer possibilities for evaluation. Notably, the result data cannot be matched to panelists.</p>
+</td>
+</tr>
+<tr>
+<td>Title</td>
+<td> </td>
+<td>
+<p>The internal poll title. This title may not contain special characters.</p>
+<p>Optionally, you can enter the internal title

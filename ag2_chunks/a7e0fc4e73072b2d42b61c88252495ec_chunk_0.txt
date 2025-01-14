@@ -1,0 +1,22 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1217462423">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1217462423</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">Step 0: Whitelist</a></li>
+<ul>
+<li><a href="#header-3">Step 1: Navigate to platform cockpit</a></li>
+<ul>
+<li><a href="#header-5">Step 2: Add IdentityAccessManager Module</a></li>
+<li><a href="#header-6">Step 3: Configure IdentityAccessManager module</a></li>
+<li><a href="#header-7">Setp 4: Migrate admin users via script</a></li>
+<li><a href="#header-8">Step 5: Set IdentityAccessManager Module active</a></li>
+<li><a href="#header-9">Step 6: Activate admin users via script</a></li>
+<li><a href="#header-10">Step 7: Kill all activte sessions to avoid relogin after logout</a></li>
+<li><a href="#header-11">Step 8: OPTIONAL - Migrate portals applications, Panelists and EFS Admin users with installation group ID</a></li>
+<li><a href="#header-12">Sync “Exclusion” (iam_federated_domains)</a></li>
+<li><a href="#header-13">Identity Provider ID (iam_idp_id)</a></li>
+</ul>
+</ul>
+</ul>
+</ul><p>For more details see <ac:link ac:card-appearance="inline"><ri:page ri:content-title='Module "IdentityAccessManager"' ri:version-at-save="20"></ri:page><ac:link-body>Module "IdentityAccessManager"</ac:link-body></ac:link> </p><h1 id="header-1">Step 0: Whitelist</h1><p>Take care that the Okta production address is whitelisted in our Proxy. Usually this should already be the case.</p><h2 id="header-3">Step 1: Navigate to platform cockpit</h2><p><em>System → Options → Plattform-Cockpit → System configuration</em></p><h3 id="header-5">Step 2: Add IdentityAccessManager Module</h3><p>The module IdentityAccessManager is not part of the default modules. It can be added when searching for “IdentityAccessManager”.</p><p>The module depends on the modules “efs” and “survey” - they have to be added.</p><p>In case Portals should be used for Tivian Access “panel“ and “portal” modules are also required and have to added.</p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716856704018" alt="module_setup.png"><p></p><h3 id="header-6">Step 3: Configure IdentityAccessManager module</h3><p><strong>Values:</strong></p><p>see <ac:link ac:card-appearance="inline"><ri:page ri:content-title='Module "IdentityAccessManager"' ri:version-at-save="20"></ri:page><ac:link-body>Module "IdentityAccessManager"</ac:link-body></ac:link> </p><p>also see <ac:link ac:card-appearance="inline"><ri:page ri:content-title="General Tenant Setup" ri:version-at-save="3"></ri:page><ac:link-body>General Tenant Setup</ac:link-body></ac:link>  and <ac:link ac:card-appearance="inline"><ri:page ri:content-title="EFS Admin Setup" ri:version-at-save="10"></ri:page><ac:link-body>EFS Admin Setup</ac:link-body></ac:link> and <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Authorization Server" ri:version-at-save="1"></ri:page><ac:link-body>Authorization Server</ac:link-body></ac:link> </p><p><em><strong>iam_admin_bypass_login_route: </strong></em>A route that will be used for Tivian internal root users (leave at default)</p><p><em><strong>iam_api_token</strong>:</em> The token created in the General Tenant Setup → KeyPass </p><p><em><strong>iam_audience</strong>:</em> The audience that is configured in the Okta authorization server (Security → API → Authorization Servers)</p><p><em><strong>iam_client_group_id: </strong></em>The ID of the groupd specified in Okta for that specific installation (Groups → ID in URL)</p><p><em><strong>iam_client_id</strong>:</em> The ID of the created application in Okta for EFS Admin (Applications → Edit → General / KeyPass)</p><p><em><strong>iam_client_secret</strong>:</em> The secret of the created application in Okta for EFS Admin (Applications → Edit → General / KeyPass)</p><p><em><strong>iam_federated_domains</strong>:</em> d<ac:inline-comment-marker ac:ref="007374f6-4639-422f

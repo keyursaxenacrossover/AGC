@@ -1,0 +1,68 @@
+endesk.com/hc/article_attachments/20716336511378" alt="Screenshot_2020-01-03 Questback - Appearance.png"></p>
+<p> </p>
+<p><strong>Add custom login page</strong></p>
+<ul>
+<li>
+<p>Change Custom Sign In, Custom Error Pages</p>
+</li>
+<li>
+<p>Use code from <a href="https://bitbucket.org/qbengineering/okta_resource_login_customization/src/master/" data-card-appearance="inline">https://bitbucket.org/qbengineering/okta_resource_login_customization/src/master/</a> (paste production code in the editor window of okta)</p>
+</li>
+</ul>
+<p> </p>
+<h2 id="header-6">Enable Factors for Multi Factor Authentication</h2>
+<p>Navigate to: Security → Multifactor</p>
+<p>Only “Okta Verify” and “Google Authenticator” will be enabled for now. This might change in future. Okta Verify should be require TouchID.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716345582994" alt="Screenshot_2020-01-03 Questback - Multifactor.png"></p>
+<h2 id="header-7">Adapt Okta profiles</h2>
+<p>Currently EFS will store the email domain of the user in a separate field. If a user gets synced to Okta this field will be stored. It has to be created before any user gets synced to Okta.</p>
+<p><strong>Navigate to: Directory → Profile Editor → Choose Profile “user” - “User”</strong></p>
+<p> </p>
+<p><u>Navigate to the “Profile” option of that user profile.</u></p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716304133266" alt="okta_email_domain_1.PNG"></p>
+<p> </p>
+<p><u>Add a new user attribute by clicking “Add Attribute”.</u></p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716303954194" alt="okta_email_domain_2.PNG"></p>
+<p> </p>
+<p><u>Create an attribute for the email domain:</u></p>
+<p><strong>Values:</strong></p>
+<p><em><strong>Data Type:</strong></em> string</p>
+<p><em><strong>Display name:</strong></em> Email Domain</p>
+<p><em><strong>Variable name:</strong></em> email_domain</p>
+<p><em><strong>Description:</strong></em> Something meaningful</p>
+<p><em><strong>Attribute Length:</strong></em> between 1 and 255</p>
+<p> </p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716345317778" alt="okta_email_domain_3.PNG"></p>
+<p> </p>
+<h2 id="header-8">Ask support to enable disabling the security question</h2>
+<p>The Okta support can enable that the security question can be disabled in the options.</p>
+<ul>
+<li>
+<p>Ask the support to enable this option</p>
+</li>
+<li>
+<p>Disable the security question in the password policies (Security → Authentication)</p>
+</li>
+</ul> Attribute”.</u></p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716303954194" alt="okta_email_domain_2.PNG"></p>
+<p> </p>
+<p><u>Create an attribute for the email domain:</u></p>
+<p><strong>Values:</strong></p>
+<p><em><strong>Data Type:</strong></em> string</p>
+<p><em><strong>Display name:</strong></em> Email Domain</p>
+<p><em><strong>Variable name:</strong></em> email_domain</p>
+<p><em><strong>Description:</strong></em> Something meaningful</p>
+<p><em><strong>Attribute Length:</strong></em> between 1 and 255</p>
+<p> </p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716345317778" alt="okta_email_domain_3.PNG"></p>
+<p> </p>
+<h2 id="header-8">Ask support to enable disabling the security question</h2>
+<p>The Okta support can enable that the security question can be disabled in the options.</p>
+<ul>
+<li>
+<p>Ask the support to enable this option</p>
+</li>
+<li>
+<p>Disable the security question in the password policies (Security → Authentication)</p>
+</li>
+</ul>

@@ -1,0 +1,52 @@
+strong>Assigning Master Data to Categories</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<strong>Via Overview:</strong> Use the “Assign category” action in the master data overview to assign several master data at once.</li>
+<li>
+<strong>Via Editing Dialog:</strong> Change the assignment of a specific master data via its editing dialog.</li>
+</ul>
+<h3 id="h_01J3FKSAHMC1KYCN0NWH01ZT4E" class="wysiwyg-text-align-justify">Quick Changes to Master Data Labels</h3>
+<p class="wysiwyg-text-align-justify"><strong>Purpose:</strong> Labeling helps internal orientation and appears in the codebook and export functions.</p>
+<p class="wysiwyg-text-align-justify"><strong>Quick Change Function:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<strong>Open Quick Change Labels Dialog:</strong> Click the <strong>Quick change labels</strong> button in the People → Master data menu.</li>
+<li>
+<strong>Entry Form:</strong> Shows all created master data. Each line contains the master data variable (unchangeable) and the title serving as the label. Change the labels as desired.</li>
+<li>
+<strong>Submit Changes:</strong> Click the <strong>Submit</strong> button to save changes.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Information:</strong> Variables cannot be deleted or added. Removed lines will be ignored.</p>
+<p class="wysiwyg-text-align-justify"><strong>Editing Labels Externally in MS Excel:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<strong>Choose Separator:</strong> Click on [tab] in the “Choose a separator” row to separate columns by a tab character.</li>
+<li>
+<strong>Copy Content to Excel:</strong> Highlight and copy the content (Ctrl-C) to MS Excel.</li>
+<li>
+<strong>Edit Labels in Excel:</strong> Edit the labels in Excel, then copy the changed data back to the window.</li>
+<li>
+<strong>Submit Changes:</strong> Confirm by clicking on <strong>Submit</strong>.</li>
+</ul>
+<h4 id="h_01J3FNXT83FEYSCZA86F8G7APQ"><strong>Mass Import of Master Data</strong></h4>
+<p class="wysiwyg-text-align-justify">You can create master data and related answer categories via mass import or by exporting, editing, and reimporting existing master data. This is useful if you have a list in Excel.</p>
+<p class="wysiwyg-text-align-justify">Deleting data via mass import is not allowed due to the risk of accidental data loss. To delete master data or answer categories, use the user interface.</p>
+<p class="wysiwyg-text-align-justify"><strong>Formatting import data</strong></p>
+<p class="wysiwyg-text-align-justify"><strong>1. Formatting master data</strong></p>
+<p class="wysiwyg-text-align-justify">The following format should be used:</p>
+<p class="wysiwyg-text-align-justify"><code>item;master data variable;title;data type;order;category ID</code></p>
+<p class="wysiwyg-text-align-justify">Example:</p>
+<p class="wysiwyg-text-align-justify"><code>item;md_001;Birthday;int;2;5;3</code></p>
+<p class="wysiwyg-text-align-justify">This sample master data item is used to save the date of birth. The variable is “md_001”, and it is labeled “Birthday”. The data type is “integer”, i.e. a whole number. The field has 2 digits. The order of the master data is such that date of birth is in position 5 and belongs to the category with the ID number 3.</p>
+<div class="table-wrap wysiwyg-text-align-justify">
+<div class="table-wrap">
+<table class="relative-table wrapped tablesorter tablesorter-default confluenceTable" style="margin: 0px; border-collapse: collapse; width: 672px; height: 358px;">
+<colgroup> <col style="width: 0px;"> <col style="width: 0px;"> <col style="width: 0px;"> </colgroup>
+<tbody>
+<tr class="tablesorter-headerRow" style="height: 30px;">
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; background-color: var(--ds-background-accent-gray-subtlest,#f0f0f0); padding: 7px 10px !important; width: 193.351px; height: 30px;" scope="col">
+<div class="tablesorter-header-inner">Field</div>
+</th>
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; background-color: var(--ds-background-accent-gray-subtlest,#f0f0f0); width: 290.469px; height: 30px;" scope="col">
+<div class="tablesorter-header-inner">Meaning</div>
+</th

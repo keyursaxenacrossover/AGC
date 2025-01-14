@@ -1,0 +1,59 @@
+ysiwyg-text-align-justify"><strong>EFS Features with Limited or No Functionality in Loop Projects</strong></h4>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The <em>Back button</em> cannot be used within a loop branch due to the dynamic creation of the loop pages.</p>
+</li>
+<li>
+<p>If <em>randomization and/or random selection</em> are applied to the list elements of a loop and a participant <em>resumes</em> the questionnaire after an interruption, randomization or random selection will be executed anew when entering the loop. I.e. on resumption, the participant may see other elements in another sort of order.</p>
+</li>
+<li>
+<p>If the answer options of the source question of a loop are grouped, the display depends on the group items. To display the answer options, the allocated group item must always be part of the list (inclusion condition “always in list”). If a group item is not part of the list, its allocated answer options are skipped in the loop.</p>
+</li>
+<li>
+<p>The<em> plausibility check editor</em> does not accept the v_x_y variable names (v_variablenumber_listelementnumber) used in loops. If you wish to access the current value of a variable in a loop, simply use the conventional variable name instead, e.g. v_x, and omit the _y_z part that follows.</p>
+</li>
+<li>
+<p>When defining <em>quota conditions</em>, you cannot access loop variables.</p>
+</li>
+<li>
+<p>It is not possible to use a <em>page trigger</em> to redirect to a page located within a loop branch.</p>
+</li>
+<li>
+<p>In the case of the<em> variable split trigger</em>, variables located within a loop branch cannot be used as a split attribute.</p>
+</li>
+<li>
+<p>If the <em>recoding trigger</em> is used to recode variables that are located within a loop branch, these variables are overwritten with each pass.</p>
+</li>
+<li>
+<p><em>Time measurement</em> cannot be applied to variables located within a loop branch. The quality index will be skewed because looped pages are sent more than once and the survey table has only one timestamp field.</p>
+</li>
+<li>
+<p>It is not possible to upload externally collected loop data into EFS via <em>Data import</em>.</p>
+</li>
+<li>
+<p>It is not possible to display missing values for pages within a loop branch in <em>Online statistics</em>.</p>
+</li>
+<li>
+<p>Questions on pages within a loop branch are not displayed in the<em> Detail view</em>.</p>
+</li>
+<li>
+<p>Data from variables located within a loop branch cannot be cleaned using the <em>Data cleaning</em> function.</p>
+</li>
+<li>
+<p>It is not possible to split the <em>field report</em> using variables located within a loop.</p>
+</li>
+<li>
+<p>From EFS 10.2, loop data can be analyzed in <em>EFS Reporting+</em>. Please mind: Up to 1,000 loop variables can be imported. However, a high number of variables may have a negative impact on the installation’s performance. Until EFS 10.1, it is not possible to analyze loop data in <em>EFS Reporting+</em>.</p>
+</li>
+<li>
+<p>Loops can be used in master data and panel surveys. However, the data collected in the loop cannot be used as master data: <em>A master data transfer</em> of loop data into the master data is not possible.</p>
+</li>
+</ul>
+<h3 id="external-survey-start" class="wysiwyg-text-align-justify">External survey start</h3>
+<p class="wysiwyg-text-align-justify">The “external survey start” of <em>EFS</em> allows to sending of survey participants from one project to a second project and to redirect them upon completion. This can be necessary in various situations.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="scoring" class="wysiwyg-text-align-justify">Scoring</h2>
+<p class="wysiwyg-text-align-justify">Scoring opens up a wide range of different uses. You can define scoring for each answer option of a question. If a respondent selects answer options, the corresponding points are assigned to him/her. Based on the score, i.e. the score of the survey participant, you can then initiate follow-up actions, for example, using triggers. Potential application scenarios would be a quiz, personality tests, or other qualification tests, for example for the acquisition of suitable job candidates.</p>
+<p class="wysiwyg-text-align-justify">Almost unlimited categories of scores can be created for a question. This makes it possible to use multi-dimensional parameters to evaluate a participant. Scoring is available for the following question types in all layouts: 111, 112, 113, 121, 122, 131, 132, 141, 142, 311, 312, 313, 321, 322, 511, 522, 611, 621, 641, 661</p>
+<p class="wysiwyg-text-align-justify">Scoring must be completely configured before you can start the survey. The scoring cannot be tested in the preview but only in live mode.</p>
+<h3 id="scoring-in-detail" class="w

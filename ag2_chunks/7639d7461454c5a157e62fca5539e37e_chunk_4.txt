@@ -1,0 +1,97 @@
+ by default for the report list types <em>ES Projects</em> and <em>Guides</em>.</p>
+<p>In addition, the two list views of the module (<em>ES projects</em>,<em> Guides</em>) have a new table column. This new column lists the ES project names or Guide names in descending order based on the creation date.</p>
+<h3 id="header-23">Other Enhancements to <em>Portals</em>
+</h3>
+<ul>
+<li>
+<p><strong>Adding participants by e-mail address (Action Board)</strong>: From now on, the e-mail address of participants you want to add to an action will also be displayed, so that you always know who you are adding to an action.</p>
+</li>
+<li>
+<p><strong>Removing participants (Action Board)</strong>: The process of removing groups and users has been improved. Depending on whether you select the group avatar or user avatar in the participant section of an action, the corresponding button, i.e. group or user, is already preselected in the overlay menu.</p>
+</li>
+<li>
+<p><strong>New character limit in guide setup (Guides)</strong>: In the guide setup, guide initiators can write a message. Until now the character limit was 255 characters. With this release, the limit is raised to 65535 characters.</p>
+</li>
+<li>
+<p><strong>New tooltips in the Look &amp; Feel area (CMS area)</strong>: New tooltips inform you about the effects of possible color changes in the <em>Look &amp; Feel </em>area.</p>
+</li>
+<li>
+<p><strong>New character limit (Text and Multimedia)</strong>: The character limit of the text field of the <em>Text and Multimedia </em>module has been increased to 100,000.</p>
+</li>
+<li>
+<p><strong>Adjustment (Extension)</strong>: The API of the <em>Portals</em> module <em>Extension </em>has now an <em>EFS</em> object instead of a <em>Questback</em> object, for example, you should use <em>EFS.portalsApi.isInitialized();</em> now. <em>Questback</em> is also available as an alias for now to ensure backwards compatibility.</p>
+</li>
+</ul>
+<p> </p>
+<h2 id="header-25">Enhancements to <em>Panel Website</em>
+</h2>
+<hr>
+<h3 id="header-27">Community Content disabled by default</h3>
+<p>As of this release, the community content will be disabled by default on <strong>new</strong> EFS installations. The <strong>Quick Polls</strong> menu item is moved from <strong>Community content</strong> to <strong>Standard content</strong>.</p>
+<h3 id="header-28">Usability Improvement</h3>
+<p>To prevent incorrect assignment of panelists to offline websites, <em>offline</em> will be added to the language version, if the the language or the whole website is offline.</p>
+<p> </p>
+<h2 id="header-30">New Service Layer Services</h2>
+<hr>
+<table border="1" data-layout="default">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour="#c0b6f2">
+<p><strong>Service</strong></p>
+</th>
+<th data-highlight-colour="#c0b6f2">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>efs.smsblocklist.add(array(phone-numbers))</p>
+</td>
+<td>
+<p>Imports a list of numbers into the blocklist, returns list of numbers and their import status</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>efs.smsblocklist.delete(array(phone-numbers))</p>
+</td>
+<td>
+<p>Deletes a list of numbers from the blocklist, returns list of numbers and their delete status</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>efs.smsblocklist.getList</p>
+</td>
+<td>
+<p>Returns the list of all numbers on the blocklist</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>efs.smsblocklist.getListByDateRange(daterange)</p>
+</td>
+<td>
+<p>Returns the list of all numbers on the blocklist within the given date range</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>efs.smsblocklist.getListByNumber(phone-number)</p>
+</td>
+<td>
+<p>Returns a list of all surveys where given number is on the blocklist. In case of global bocklist, the surveyId is 0.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>efs.smsblocklist.isBlocked(number,surveyId (opt))</p>
+</td>
+<td>
+<p>Check whether number is on the blocklist for given survey, in this case the global blocklist will not be checked. If surveyId is not specified checks whether email is in global blocklist.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>

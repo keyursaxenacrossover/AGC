@@ -1,0 +1,62 @@
+get-current-gmt-time" class="wysiwyg-text-align-justify"><strong>Get current GMT time</strong></h3>
+<p class="wysiwyg-text-align-justify">This code will return the time on server side in GMT and can be used for date related calculations.</p>
+<h5 id="example-code-3" class="wysiwyg-text-align-justify"><strong>Example code</strong></h5>
+<pre><code class="language-delphi">setVariableValue("v_1", date("!%H %M"))</code></pre>
+<h3 id="comparing-the-frequency-of-completed-interviews" class="wysiwyg-text-align-justify"><strong>Comparing the Frequency of completed Interviews</strong></h3>
+<p class="wysiwyg-text-align-justify">The following <em>alternative</em> filter condition checks which of several possibilities the participants preferred so far:</p>
+<p class="wysiwyg-text-align-justify"><em>(count['v_1 = 1'] &gt; count['v_2 = 1'] ) AND (count['v_1 = 1'] &gt; count['v_3 = 1'] ) OR (count['v_2 = 1'] &gt; count['v_1 = 1'] ) AND (count['v_2 = 1'] &gt; count['v_3 = 1'] )</em></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>If at the point in time when a participant passes the filter, v_1 or v_2 were selected more frequently, the filter condition is fulfilled.</p>
+</li>
+<li>
+<p>If v_3 has been selected more frequently, the condition does not apply for the current participant. </p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Using LUA instead of the alternative filter function has several advantages:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Speed: Each count strains the server. In the alternative filter condition above, count requests are executed repeatedly for the same variable. In the LUA condition above, only one count request is necessary for each variable.</p>
+</li>
+<li>
+<p>Shortness and overview: The more variables are to be checked, the longer and more confusing the alternative filter condition will become. In the LUA filter below, additional variables are simply added to the “configuration” section.</p>
+</li>
+<li>
+<p>Easier to maintain and configure:<br>– When making changes, all you need to do is modify the two arrays in the “configuration” section.<br>– Non-programmers can re-use the condition, by doing simple copy&amp;paste and a few minor modifications.</p>
+</li>
+</ul>
+<h5 id="example-code-4" class="wysiwyg-text-align-justify"><strong>Example code</strong></h5>
+<pre><code class="language-delphi">-- configuration
+vars={"v_1","v_2","v_3"}
+relevant_filter_vars={"v_1","v_2"}
+
+-- no need to change anything below
+counts={}
+max=nil
+max_var=nil
+for k,v in ipairs(vars) do
+  local count=count(v)
+  if max==nil or max&lt;count then
+    max_var=v
+    max=count
+  end
+end
+
+for k,v in pairs(relevant_filter_vars) do
+  if v==max_var then
+    return true
+  end
+end
+return false</code></pre>
+<h3 id="comparing-answer-patterns" class="wysiwyg-text-align-justify"><strong>Comparing Answer Patterns</strong></h3>
+<p class="wysiwyg-text-align-justify">The filter checks if the sum of answers in a 1st branch equals the sum of answers in a second branch. In the following example, for the sake of briefness, only one of these sums is created. The survey contains variables in the range v_135 to v_173.</p>
+<p class="wysiwyg-text-align-justify">The syntax ( v_x &gt; 0 ? 1 :0) used in the alternative filter condition ensures that hiding conditions and unanswered items are considered appropriately:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>If the participant has answered v_x &gt; 0. With v_x &gt; 0 ? 1 the value is uniformly set to = 1.</p>
+</li>
+<li>
+<p>If the participant has not seen or not answered an item, i.e. v_x smaller or equal 0, the corresponding factor will be set = 0. This is necessary because missing values, as e.g. -77, prevent a proper calculation of the sum.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><em>(( v_135 &gt; 0 ? 1 :0) + ( v_136&gt; 0 ? 1 :0) + ( v_137 &gt; 0 ? 1 :0) + ( v_138 &gt; 0 ? 1 :0) +( v_139 &gt; 0 ? 1 :0) +( v_140 &gt; 0 ? 1 :0) + ( v_141 &gt; 0 ? 1 :0) + ( v_142 &gt; 0 ? 1 :0) + ( v_143&gt; 0 ? 1 :0) + ( v_144 &gt;

@@ -1,0 +1,24 @@
+h1><h2 id="header-16">Activation of MySight v1 and custom content handler for the panel website</h2><h3 id="header-18">Requirements</h3><p>EFS Panel has to have been sold and activated.</p><p>The reason mus be known why MySight V1 is absolutely necessary. As it is deprecated, it should only be activated if there is no other way to build the desired functionality.</p><h3 id="header-19">1. Activate Mysight in EFS (change config in platform cockpit)</h3><ul>
+<li><p><strong>mysight_enabled</strong>(default:false): <strong>TRUE</strong> (boolean)</p></li>
+<li><p><strong>mysight_user_provisioning_service</strong> / <ac:inline-comment-marker ac:ref="315448fc-c94b-4e14-a48b-9fd8edf667bf">VALUE</ac:inline-comment-marker>: '<a href="http://mysight-api.bre.globalpark.com:49865/app/api/process/userprovision/">http://mysight-api.bre.globalpark.com:49865/app/api/process/userprovision/</a>' (<strong>FRANKFURT</strong>, PREPROD2/PROD, internal installations &amp; customers installations)</p></li>
+<li><p><strong>mysight_user_provisioning_service</strong> / VALUE: '<a href="http://mysight-api.bre.globalpark.com:49866/app/api/process/userprovision/">http://mysight-api.bre.globalpark.com:49866/app/api/process/userprovision/</a>' (<strong>FRANKFURT</strong>, PREPROD2/PROD, internal installations &amp; customers installations)</p></li>
+<li>
+<p><strong><ac:inline-comment-marker ac:ref="cdddf360-a918-44c4-9562-26a566482511">mysight_user_provisioning_service</ac:inline-comment-marker></strong><ac:inline-comment-marker ac:ref="cdddf360-a918-44c4-9562-26a566482511"> / VALUE: '</ac:inline-comment-marker><a href="http://172.24.48.40:49866/app/api/process/userprovision/"><ac:inline-comment-marker ac:ref="cdddf360-a918-44c4-9562-26a566482511">http://172.24.48.40:49866/app/api/process/userprovision/</ac:inline-comment-marker></a><ac:inline-comment-marker ac:ref="cdddf360-a918-44c4-9562-26a566482511">' (</ac:inline-comment-marker><strong><ac:inline-comment-marker ac:ref="cdddf360-a918-44c4-9562-26a566482511">RACKSPACE</ac:inline-comment-marker></strong><ac:inline-comment-marker ac:ref="cdddf360-a918-44c4-9562-26a566482511">, US PREPROD/US PROD, internal installations &amp; customers installations)</ac:inline-comment-marker></p>
+<ul><li><p><strong><ac:inline-comment-marker ac:ref="cdddf360-a918-44c4-9562-26a566482511">Please mind that the custom content handler also needs to be adjusted if preprod2 is used, see Step 3</ac:inline-comment-marker></strong><br><strong><ac:inline-comment-marker ac:ref="cdddf360-a918-44c4-9562-26a566482511">(The custom content handler needs no adjustments anymore!)</ac:inline-comment-marker></strong></p></li></ul>
+</li>
+</ul><h3 id="header-20">2. Store the SFTP Key - Only necessary for installations upgraded from &lt; EFS 10.8</h3><p><strong>EFS <ac:inline-comment-marker ac:ref="f5194d4b-439d-454c-981a-332b74dfd53c">Version </ac:inline-comment-marker>&gt; 10.8? Go forward to step 3!</strong></p><h3 id="header-21">3. Activate Mysight Custom Content Handler for panel website (Custom Output Modul)</h3><ul>
+<li><p><strong>Login to installation using the root account</strong></p></li>
+<li>
+<p><strong>Change config flag "panel_special_features":</strong></p>
+<ul><li><p>string(0 =&gt; 'have_experimental_content_handlers')</p></li></ul>
+</li>
+<li><p><strong>Check whether folder panelwebsite/custom exists, create it if it doesn't exist (rights need to be <ac:inline-comment-marker ac:ref="06544031-d458-4021-841d-222711144eed">775</ac:inline-comment-marker>)</strong></p></li>
+<li>
+<p><strong>Check out custom content handler from CVS</strong></p>
+<ul>
+<li><p>Change into main directory of installation (above htdocs (so, that ls shows htdocs and projekte Ordner, if that one exists))</p></li>
+<li><pre><code class="language-text">cvs co projekte/ProductCustomizingTeam/mySightWebsite/customcontenthandler</code></pre></li>
+<li>
+<p>Create symlinks for both Custom content handlers</p>
+<pre><code class="language-text">cd htdocs/panelwebsite/custom
+         ln -s ../../../projekte/ProductCustomizingTeam

@@ -1,0 +1,48 @@
+<p><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p class="wysiwyg-text-align-justify">This article provides a comprehensive guide on how to use and configure the EFS Service Layer, which is the API that allows access to key EFS functionalities from external applications.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">The EFS Service Layer enables developers to create applications outside of EFS that can interact with EFS data and functionalities. The services can be called from outside via HTTPS, using SOAP or REST specifications. Various data exchange formats can be used (e.g. JSON or XML). This guide covers configuration, access modes, format handlers, authentication methods, and provides examples of how to use the service.</p>
+<ul class="wysiwyg-text-align-justify">
+<li><a href="#configuring_services">Configuring the Services</a></li>
+<li><a href="#Access-Modes">Access Modes</a></li>
+<li><a href="#Format-Handler">Format Handlers</a></li>
+<li><a href="#Authentication">Authentication</a></li>
+<li><a href="#Calling-the-Service-Description">Calling the Service Description</a></li>
+<li><a href="#Important-Parameters">Important Parameters</a></li>
+<li><a href="#Examples">Examples</a></li>
+<li><a href="#h_01J3G9JCTAT5RWABHA4JAN0WWZ">Exploring Available Services</a></li>
+<li><a href="#Filtering-results-with-conditions">Filtering Results with Conditions</a></li>
+</ul>
+<h2 id="configuring_services" class="wysiwyg-text-align-justify">Configuring the Services</h2>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="745">A dedicated configuration menu allows viewing and configuring of the services, which are available on your <em data-renderer-mark="true">EFS</em> installation. The menu is in <strong data-renderer-mark="true">Options</strong> → <strong data-renderer-mark="true">Service-Layer</strong>. The <strong data-renderer-mark="true">Service-Layer </strong>menu is only available if our support team has activated the usage of services for your installation. To view and access the menu, you need either read rights for the ACL right <em data-renderer-mark="true">webservice_conf</em> or membership in the root team.</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="1151">The following steps are necessary to use a specific service:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="1215">Our support team has to add the service.</p>
+</li>
+<li>
+<p data-renderer-start-pos="1259">The service must be activated. If necessary, the button <strong data-renderer-mark="true">Activate all services </strong>allows the activation of all available services at once.</p>
+</li>
+<li>
+<p data-renderer-start-pos="1393">The staff account used to access the service is allocated to a specific staff team. This staff team must have the necessary access rights to the service. Access rights to individual services can be assigned on the tab <strong data-renderer-mark="true">Access Groups</strong>.</p>
+</li>
+<li>
+<p data-renderer-start-pos="1629">Furthermore, many services include a check for object rights. To use <em>survey.questionnaire.createPage</em> or <em>survey.questionnaire.deletePage</em>, for example, the staff team needs to write rights for the target project.</p>
+</li>
+<li>
+<p data-renderer-start-pos="1842">All calls are logged on the <strong data-renderer-mark="true">Access log </strong>tab. The entries can be searched by IP address, name of the admin account used, service name and date.</p>
+</li>
+</ul>
+<h2 id="Access-Modes" class="wysiwyg-text-align-justify" data-renderer-start-pos="1987">Access Modes</h2>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="2001">The service layer offers two access modes:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="2047"><strong data-renderer-mark="true">Description</strong>: In this modus, the service layer will describe itself. In SOAP format, for example, a WSDL will be generated and delivered. This modus allows clients to find out which services are provided and which parameters they have</p>
+</li>
+<li>
+<p data-renderer-start-pos="2284"><strong data-renderer-mark="true">Transaction</strong>: In this modus, a service method is called and executed. How you address these modes depends on the format handler used.</p>
+</li>
+</ul>
+<h2 id="Format-Handler" class="wysiwyg-text-align-justify" data-renderer-start-pos="2420">Format Handler</h2>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="2436">When requesting access to the EFS Service Layer, all format handlers can be

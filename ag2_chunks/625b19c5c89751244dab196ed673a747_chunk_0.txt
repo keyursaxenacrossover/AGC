@@ -1,0 +1,44 @@
+<p data-renderer-start-pos="1"> </p>
+<h1 id="h_01J67342053CMCYX79WDQXS43P" data-renderer-start-pos="1">Instructions</h1>
+<p data-renderer-start-pos="109">To set up access to the service gateways in the AWS environments we need your own <strong data-renderer-mark="true"><u data-renderer-mark="true">public</u></strong> SSH-Key.</p>
+<p data-renderer-start-pos="239">Here is how to generate such an SSH-Key <strong data-renderer-mark="true"><u data-renderer-mark="true">with</u></strong><u data-renderer-mark="true"> </u>a password (min. 10 characters, special characters, etc.) and a comment on a terminal with <strong>ssh-keygen</strong>:</p>
+<div class="code-block  cc-15qwbrk">
+<div class="cc-9n57oc">
+<div class="cc-v2tmjh">
+<ol>
+<li role="presentation">Open your Windows Terminal (or Powershell or Command Prompt) and run the below command (make sure you do not modify the <strong>-t ed25519</strong> parameter):<br><span class="prismjs cc-1es5wws" style="background-color: var(--ds--code--bg-color,var(--ds-background-neutral,#f4f5f7)); color: var(--ds-text,#172b4d);" data-code-lang="" data-ds--code--code-block="" data-testid="renderer-code-block"><code class="language-"><span class="" data-testid="renderer-code-block-line-1" data-ds--code--row="">ssh-keygen -t ed25519 -C <a href="mailto:your_email_address@trilogy.com">your_email_address@trilogy.com</a></span></code></span>
+</li>
+<li role="presentation">The script will prompt you for the file to save to and for a password:<br>
+<pre><code class="language-plaintext">Generating public/private ed25519 key pair.
+Enter file in which to save the key (/home/USER/.ssh/id_ed25519): /home/USER/.ssh/id_ed25519 Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /home/USER/.ssh/id_ed25519.
+Your public key has been saved in /home/USER/.ssh/id_ed25519.pub.</code></pre>
+</li>
+<li role="presentation">This will generate two files: <em>id_ed25519</em> and <em>id_ed25519.pub</em> <strong>(the .pub file is the one that is needed)</strong>
+</li>
+<li role="presentation">
+<strong data-renderer-mark="true">Remember</strong>: Set an appropriate Password (min. 10 characters, special characters, etc.)</li>
+<li role="presentation">Once done, rename the file using this format:<br><strong>firstname_lastname_id_ed25519.pub</strong>
+</li>
+<li role="presentation">Upload the file into the <a href="https://drive.google.com/drive/folders/1T0-EZQ_WrzHMZzEhc-3q3wDHgobwE3Fo">Tivian DXI public SSH keys - Google Drive</a> folder</li>
+<li role="presentation">Create a CR in the <strong>DXI JIRA project</strong>, requesting the access; you can use this as an example: <a href="https://trilogy-eng.atlassian.net/browse/DXI-1594">https://trilogy-eng.atlassian.net/browse/DXI-1594</a> </li>
+<li role="presentation">
+<p>Once granted access, your username on the Service Gateway will be in the format <strong>lastname_firstname</strong></p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<p data-renderer-start-pos="1280">Once your account has been set up, you can find info on how to access the Service Gateways here: <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21139518716562" target="_blank" rel="noopener noreferrer">How to Access and Work with DXI Service Gateways</a>.</p>
+<p><a href="https://support.hostway.com/hc/en-us/articles/115001509884-How-To-Use-SSH-Keys-on-Windows-Clients-with-PuTTY">How To Use SSH Keys on Windows Clients (with PuTTY) – Hostway Help Center</a> is a very useful resource that details Windows PuTTY usage.</p>
+<p>For Windows users, if you do not have ssh installed, follow this:</p>
+<ul>
+<li>
+<strong>Install OpenSSH</strong>: Windows 10 and later versions include the OpenSSH client by default, but it might not be installed. To check if it's installed, run ssh in your command prompt. If it isn't installed, follow these steps:</li>
+<li>Go to <strong>Settings</strong> &gt; <strong>Apps</strong> &gt; <strong>Optional Features</strong>.</li>
+<li>Look for "OpenSSH Client" and "OpenSSH Server". If they aren't installed, click <strong>Add a feature</strong> and search for them. Install "OpenSSH Client".</li>
+<li>
+<strong>Use PowerShell</strong>: Open <strong>PowerShell</strong> instead of the regular Command Prompt and try running the ssh-keygen command again.</li>
+<li>
+<strong>Use Windows Subsys</

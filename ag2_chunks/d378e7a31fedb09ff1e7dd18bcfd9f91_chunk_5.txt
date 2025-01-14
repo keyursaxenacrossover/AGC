@@ -1,0 +1,91 @@
+>Process configuration</strong> → <strong>Download platform</strong> menu in the admin area will still be available, your settings will not be changed or reset.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013850450706" alt="Activating download platform.jpg"></p>
+<p class="wysiwyg-text-align-justify">Open the Options tab in the <strong>Org Processor</strong>→<strong> Configuration</strong> menu and activate resp. deactivate the “Activate download platform” checkbox. Per default, the download platform is activated in new projects.</p>
+<p class="wysiwyg-text-align-justify">If the download platform is not activated, the message “This function is currently not available.” will be displayed. It can be modified in the <strong>Project properties</strong> → <strong>Survey messages</strong> menu.</p>
+<h3 id="settings" class="wysiwyg-text-align-justify"><strong>Settings</strong></h3>
+<p class="wysiwyg-text-align-justify">On the <strong>Settings</strong> tab, you can configure the behavior of the system during the login process. To improve usability for the users on the one hand, and simplify management of users who work only on the download platform on the other hand, the rules for password security differ slightly from those for the admin area resp. <em>Org Processor</em>:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>You can decide for yourself if a change of password is required after the first login.</p>
+</li>
+<li>
+<p>Passwords of download platform users do not expire, similar to the passwords of <em>Org Processor</em> users.</p>
+</li>
+<li>
+<p>In contrast to the Org Processor and admin area, there’s no brute-force protection.</p>
+</li>
+<li>
+<p>It is up to you to decide if a “Password Forgotten” process should be used: if yes, you can create and select a mail template.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">For checking password security, the same algorithms as for the <em>Org Processor</em> login are applied. They are specified in the <strong>Org Processor</strong> → <strong>Configuration</strong> menu on the <strong>Settings</strong> tab.</p>
+<h3 id="configuration-options" class="wysiwyg-text-align-justify"><strong>Configuration Options</strong></h3>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default">
+<colgroup> <col style="width: 219.0px;"> <col style="width: 208.0px;"> <col style="width: 184.0px;"> <col style="width: 149.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" style="width: 193.715px;" data-highlight-colour="#57d9a3">
+<p><strong>Field</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 192.483px;" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 167.882px;" data-highlight-colour="#57d9a3">
+<p><strong>Setting options</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 132.448px;" data-highlight-colour="#57d9a3">
+<p><strong>Default settings</strong></p>
+</th>
+</tr>
+<tr>
+<td style="width: 185.694px;">
+<p>Login type</p>
+</td>
+<td style="width: 184.462px;">
+<p> </p>
+</td>
+<td style="width: 159.861px;">
+<p>E-mail and password</p>
+</td>
+<td style="width: 124.427px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 185.694px;">
+<p>Change of password after first login</p>
+</td>
+<td style="width: 184.462px;">
+<p>You can define if the password must be changed after the first login.</p>
+</td>
+<td style="width: 159.861px;">
+<ul>
+<li>
+<p>Activated</p>
+</li>
+<li>
+<p>Not activated</p>
+</li>
+</ul>
+</td>
+<td style="width: 124.427px;">
+<p>Not activated</p>
+</td>
+</tr>
+<tr>
+<td style="width: 185.694px;">
+<p>Mail template "Recover password functionality</p>
+</td>
+<td style="width: 184.462px;">
+<p>In this field, you select the mail template that is used if a participant triggers the "Recover password" process.</p>
+<ul>
+<li>
+<p>The #link_code# wildcard can be used to insert a link pointing to the “Reset password” dialog.</p>
+</li>
+<li>
+<p>#u_passwd# is only filled as long as the participants haven’t changed their initial password.</p>
+</li>
+</ul>
+<p>Please mind that if no mail template is selected, no “Recover password” functionality will be offered.</p>
+</td>
+<td style="width: 159.861px

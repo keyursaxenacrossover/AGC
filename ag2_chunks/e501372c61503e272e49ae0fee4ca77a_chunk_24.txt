@@ -1,0 +1,91 @@
+-align-justify">Via the icons in the “Actions” column you can edit individual posts:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<strong>Edit</strong>: This also opens the dialog for editing the properties of an existing post.</li>
+<li>
+<strong>Delete</strong>: The selected post will be deleted following a confirmation prompt.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">With the “Actions” checkbox and the drop-down list below the table, you can also apply various actions to several posts at once:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Set release status to “approved” / “not checked” / “blocked”: Changes the release status of the selected posts.</li>
+<li>Delete posts: The selected posts will be deleted following a confirmation prompt.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Properties of posts</strong></p>
+<p class="wysiwyg-text-align-justify">The table provides a detailed list of all the properties a post can have.</p>
+<table class="wrapped wysiwyg-text-align-justify" style="margin-right: auto; margin-left: auto; height: 959px;" border="1" width="771">
+<colgroup> <col style="width: 185.0px;"> </colgroup> <colgroup> <col style="width: 794.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" style="width: 154.375px;">Field</th>
+<th class="wysiwyg-text-align-center" style="width: 609.323px;">Meaning</th>
+</tr>
+<tr>
+<td style="width: 146.354px;">Website / Language version</td>
+<td style="width: 601.302px;">
+<p>Website and language version to which the subject belongs. Cannot be changed subsequently.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 146.354px;">Section title</td>
+<td style="width: 601.302px;">
+<p>Name of the section. This is displayed both in the admin area and on the panel page.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 146.354px;">Contributed by</td>
+<td style="width: 601.302px;">
+<p>The author of the post.</p>
+<p>When creating a post via the admin area, you can choose the author: Panelists with the panel status “moderator” or “tester” are available in a drop-down list.</p>
+<p>In the standard panel, the posts of these panelists are labeled as moderator posts. The label “mod” is inserted via the wildcard “board_moderator_label”. It can be changed in the Wildcards menu.</p>
+<p>The author cannot be changed subsequently.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 146.354px;">Number of ratings</td>
+<td style="width: 601.302px;">Number of community ratings that were submitted for the post.</td>
+</tr>
+<tr>
+<td style="width: 146.354px;">Average rating</td>
+<td style="width: 601.302px;">Result of the community rating.</td>
+</tr>
+<tr>
+<td style="width: 146.354px;">Release Status</td>
+<td style="width: 601.302px;">
+<p>The following release statuses can be assigned:</p>
+<ul>
+<li>not checked: With the publishing mode set to “Publish immediately”, these posts are always displayed. With the publishing mode set to “Publish after approval”, they are displayed only to the author himself and to the moderator in the admin area until a moderator changes the release status to “approved”.</li>
+<li>approved: These posts are always displayed.</li>
+<li>blocked: These posts are never displayed.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="width: 146.354px;">Sticky</td>
+<td style="width: 601.302px;">
+<p>A post marked as “sticky” will be displayed highly visible above the discussion, in addition to its original position.</p>
+<p>Please note: Only one post per discussion can be marked as “sticky”. As soon as you mark a second post as “sticky”, the “sticky” flag will be deactivated for the first post.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 146.354px;">Topic</td>
+<td style="width: 601.302px;">The topic of the post.</td>
+</tr>
+<tr>
+<td style="width: 146.354px;">Content</td>
+<td style="width: 601.302px;">
+<p>The actual post.</p>
+<p>Required fields.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 146.354px;">Date</td>
+<td style="width: 601.302px;">
+<p>Date to be displayed in the post overview both in the admin area and on the panel page. Required field.</p>
+<p>By default, the current date is set when creating a new post. It is possible, though, to have a different date displayed.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="exporting-discussion-posts" class="wysiwyg-text-align-justify"><strong>Exporting Discussion Posts</strong></h2>
+<p class="wysiwyg-text-align-justify">You can export the posts from a discussion e.g. external evaluation</p>
+<p class="w

@@ -1,0 +1,81 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3782901767">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3782901767</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<ac:task-list>
+<ac:task>
+<ac:task-id>1</ac:task-id>
+<ac:task-status>incomplete</ac:task-status>
+<ac:task-body><span class="placeholder-inline-tasks"><ac:link><ri:user ri:account-id="5a5dc81217dfb4426b61f4c6"></ri:user></ac:link> and <ac:link><ri:user ri:account-id="610813f58c15ca006f6152ca"></ri:user></ac:link> please fill and/or validate especially the “shall/should/will” might be important when choosing a technology</span></ac:task-body>
+</ac:task>
+</ac:task-list><p></p><p><em><strong>shall </strong>= strongest, absolut must have; <strong>should </strong>= less strong, somehow necessary; <strong>will </strong>= nice to have</em></p><table data-layout="wide" ac:local-id="86e537f6-2396-41ad-813a-e36a4ebd944c">
+<colgroup>
+<col style="width: 75.0px;">
+<col style="width: 251.0px;">
+<col style="width: 631.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p><strong>ID</strong></p></th>
+<th><p><strong>Title</strong></p></th>
+<th><p><strong>Requirement</strong></p></th>
+</tr>
+<tr>
+<td><p></p></td>
+<td><p>Reset Password</p></td>
+<td><p>Tivian Access 2.0 <strong>shall </strong>provide a self service password reset for users by sending a password reset email to enable users to manage their credentials on their own.</p></td>
+</tr>
+<tr>
+<td><p></p></td>
+<td><p>No password policies for IdP users</p></td>
+<td><p>Tivian Access 2.0 <strong>shall </strong>exclude users authenticating via an external identity provider from all kinds of password reminders or policies to ensure that users do not get confused.</p></td>
+</tr>
+<tr>
+<td><p></p></td>
+<td><p>MFA</p></td>
+<td>
+<p>Tivian Access 2.0 <strong>shall </strong>provide two-factor authentication via e-mail or an authenticator app (common apps like Google Authenticator and Microsoft Authenticator shall be supported) to ensure customers can add additional security measurements.</p>
+<p>(supporting multi-factor authentication with more than 2 factors in one process is not mandatory; hardware tokens are just a nice to have)</p>
+</td>
+</tr>
+<tr>
+<td><p></p></td>
+<td><p>Sign-on with email and password</p></td>
+<td><p>Tivian Access 2.0 <strong>shall </strong>provide a login for users using their email-address and password.</p></td>
+</tr>
+<tr>
+<td><p></p></td>
+<td><p>Sign-on with username and password</p></td>
+<td><p>Tivian Access 2.0 <strong>will </strong>provide a login for users using their username (not email) and password.</p></td>
+</tr>
+<tr>
+<td><p></p></td>
+<td><p>Password policies</p></td>
+<td>
+<p>Tivian Access 2.0 <strong>shall </strong>support password lifetime and password value policies to enable customers to project their security needs for our solution.</p>
+<p>This should include character and length based policies, password history and profile value policies.</p>
+</td>
+</tr>
+<tr>
+<td><p></p></td>
+<td><p>Password policy per tenant</p></td>
+<td><p>Tivian Access 2.0 <strong>shall </strong>provide password policies for individual tenants.</p></td>
+</tr>
+<tr>
+<td><p></p></td>
+<td><p>MFA policy per tenant</p></td>
+<td><p>Tivian Access 2.0 <strong>shall </strong>provide MFA policies for individual tenants.</p></td>
+</tr>
+<tr>
+<td><p></p></td>
+<td><p>MFA per user group</p></td>
+<td><p>Tivian Access 2.0 <strong>should </strong>provide MFA policies for groups of users to enable differentiation within one tenant.</p></td>
+</tr>
+<tr>
+<td><p></p></td>
+<td><p>Sign on-policy per tenant</p></td>
+<td><p>Tivian Access 2.0 <strong>shall </strong>provide sign-on policies for individual tenants containing token lifetime, session lifetime and reauthentication needs.</p></td>
+</tr>
+<tr>
+<td><p></p></td>
+<td><p>Password Breach Detection <br></p></td>
+<td>
+<p>The SSO provider <strong><u>will</u> </strong>implement a password breach detection mechanism to check whether a user's password has been compromised in a known data breach. The mechanism shall perform the following actions

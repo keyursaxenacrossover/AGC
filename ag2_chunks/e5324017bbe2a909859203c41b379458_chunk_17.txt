@@ -1,0 +1,25 @@
+ configured at the customer’s Identity Provider and Okta the customer’s users have to provide MFA two times. If that is the desired behavior it could be configured - but user experience might be questionable.</p>
+<p data-renderer-start-pos="2553">If a customer is already using MFA we should not force our MFA solution replacing the customer’s solution. It is best if the customer is already using MFA and does not need to use our Okta MFA services.</p>
+<p> </p>
+<p> </p>
+<h2 id="h_01J6EY4CEC4PATHWTDK9KJERAX">Troubleshooting: As it happens</h2>
+<h4 id="header-17"><strong>It seems the current Okta login page does not work corretly - how can I login to fix that issue?</strong></h4>
+<p>This should never happen on any production environment.</p>
+<p>There is a bypass login that might help with the current issue - it can be found when adding “/login/default” to the base URL of the current Okta account (e.g. “<a href="https://okta.testback.com/login/default">https://okta.testback.com/login/default</a>“)</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p> configured at the customer’s Identity Provider and Okta the customer’s users have to provide MFA two times. If that is the desired behavior it could be configured - but user experience might be questionable.</p>
+<p data-renderer-start-pos="2553">If a customer is already using MFA we should not force our MFA solution replacing the customer’s solution. It is best if the customer is already using MFA and does not need to use our Okta MFA services.</p>
+<p> </p>
+<p> </p>
+<h2 id="h_01J6EY4CEC4PATHWTDK9KJERAX">Troubleshooting: As it happens</h2>
+<h4 id="header-17"><strong>It seems the current Okta login page does not work corretly - how can I login to fix that issue?</strong></h4>
+<p>This should never happen on any production environment.</p>
+<p>There is a bypass login that might help with the current issue - it can be found when adding “/login/default” to the base URL of the current Okta account (e.g. “<a href="https://okta.testback.com/login/default">https://okta.testback.com/login/default</a>“)</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>

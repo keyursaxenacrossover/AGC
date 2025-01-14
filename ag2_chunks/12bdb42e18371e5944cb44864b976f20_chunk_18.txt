@@ -1,0 +1,63 @@
+ questionnaire without serious interest. The information given should be checked especially if branchings at later stages in the questionnaire are based on the answers to preceding questions. Plausibility checks are advisable in the following cases:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The answer to the question is taken up in later questions, either in a filter condition or in a display of dynamic questions.</p>
+</li>
+<li>
+<p>Assuring fill-in instructions, such as “Select the three most important properties of products xy”.</p>
+</li>
+<li>
+<p>Answers to a specific question are of particular interest for the evaluation.</p>
+</li>
+<li>
+<p>The internal consistency of the data is of particular importance for the evaluation.</p>
+</li>
+<li>
+<p>The data being queried already exists in participant administration.</p>
+</li>
+</ul>
+<h3 id="planning-the-use-of-plausibility-checks" class="wysiwyg-text-align-justify">Planning the Use of Plausibility Checks</h3>
+<p class="wysiwyg-text-align-justify">Be aware of which answers are important for the routing of the survey and which data are central to the evaluation purpose. However, use plausibility checks with care. For the respondent, plausibility checks are, first and foremost, annoying and tiresome because their behavior is questioned and their progress through the survey is hindered. Too many plausibility checks will destroy the relationship of trust between you and the respondent. Also, take into consideration that respondents may not yet have formed an opinion on some questions. In such cases, you will often achieve better data quality by allowing incomplete information than by forcing the respondent to give an answer that might only be valid for the moment and not actually meant by the respondent.</p>
+<p class="wysiwyg-text-align-justify">Think about aspects such as the following:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Which answers are indispensable for the routing of the survey?</p>
+</li>
+<li>
+<p>To which questions do you want to obtain answers from as many respondents as possible?</p>
+</li>
+<li>
+<p>How would you react if your answer to a question were rejected as incorrect by a survey system?</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">In addition to the psychological effects on the respondents, there are technical aspects as well:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>On each questionnaire page, you can create as many plausibility checks as required. But plausibility checks require a lot of server resources, i.e. they affect the performance of the questionnaire, similar to other checks and dynamic features. Therefore, it is recommended to use not more than 50 plausibility checks per page.</p>
+</li>
+<li>
+<p>For plausibility checks, no dedicated sort order is implemented. I.e. while you may arrange the checks on a specific page in a specific sequence, this order may get lost especially if copying or importing the project.</p>
+</li>
+<li>
+<p>The conditions of plausibility checks should refer only to variables that have a defined value. If condition variables are not filled at all or contain missings (e.g. because a question or answer option has been hidden or if a respondent hasn’t filled an entry field) the checks can have unexpected or even wrong results.</p>
+<ul>
+<li>
+<p>Try to avoid complex plausibility check conditions or substitute them with multiple simple plausibility checks. This way it is easier to get an overview of the variables used in the plausibility check and to avoid unexpected results.</p>
+</li>
+<li>
+<p>If necessary, the pro editor (Chapter 6.4.8, p. 280) allows to define complex conditions.</p>
+</li>
+<li>
+<p>In general, it is recommended to abstain from applying both hiding conditions and plausibility checks to the same variables.</p>
+</li>
+<li>
+<p>When dealing with question types whose variables have characteristics (e. g. single response list), please note: As soon as a single answer option of the question, i.e. one characteristic of the variable, is hidden, the variable will be defined as “missing” when used in a plausibility check. Therefore, in this case, the actual value of the variable cannot be determined by means of a plausibility check. If you cannot or do not want to work without the plausibility check, you might want to consider using a list instead of hiding conditions.</p>
+</li>
+<li>
+<p>If a plausibility check checks several variables, and only one or a few of these are affected by hiding conditions, it may make sense to deploy the option “Execute check if one or more items are blinded out?”. If this option is activated, the variables affected by the hiding condition will simply be skipped when executing the check. Mind that if all variables of the check are affected, it will not be executed, to prevent those participants get stuck on the page.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="example-plausibility-check" class="wysiwyg-text-align-justify">Example: Plausibility Check</h3>
+<p class="wysiwyg-text-align-justify">Let’s assume that you ask the participants of your survey to enter their year of birth into an open entry field. You want to ensure that they enter only reasonable values: The values should be four-digit numbers inside a reasonable range, e.g. between 1900 and 2000. To realize this with a plausibility check, please proceed as follows:</p

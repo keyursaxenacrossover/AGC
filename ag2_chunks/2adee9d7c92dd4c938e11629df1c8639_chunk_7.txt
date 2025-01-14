@@ -1,0 +1,100 @@
+g-text-align-justify">Importing static list elements</h3>
+<p class="wysiwyg-text-align-justify">You can import the elements of static lists or copy out elements that have already been created in a special format, edit them externally and then reimport them.</p>
+<p class="wysiwyg-text-align-justify"><strong>Formatting import data</strong></p>
+<p class="wysiwyg-text-align-justify">The following format should be used:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>List element ID</p>
+</li>
+<li>
+<p>list element number</p>
+</li>
+<li>
+<p>wildcard 1</p>
+</li>
+<li>
+<p>wildcard 2</p>
+</li>
+<li>
+<p>wildcard 3</p>
+</li>
+<li>
+<p>wildcard 4</p>
+</li>
+<li>
+<p>wildcard 5</p>
+</li>
+<li>
+<p>inclusion condition</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The inclusion conditions must be encoded as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>1: always in list</p>
+</li>
+<li>
+<p>2: never in list</p>
+</li>
+<li>
+<p>3: in list if...</p>
+</li>
+<li>
+<p>4: always in random selection</p>
+</li>
+<li>
+<p>6.: in random selection if...</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">You can create lists with an appropriate format, e.g. in MS Excel.</p>
+<p class="wysiwyg-text-align-justify"><strong>Performing the import</strong></p>
+<p class="wysiwyg-text-align-justify">Navigate to the <strong>Projects</strong> → {Selected project} → <strong>Questionnaire editor</strong> → <strong>Lists</strong> menu, and create a new static list. Open the <strong>List elements</strong> tab. Instead of creating elements manually, you can click on the<strong> Import list elements</strong> button.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Select the desired separator, and enter the elements in the correct format. If you have created an Excel table, transfer the content, but not the column labels, using copy &amp; paste.</p>
+</li>
+<li>
+<p>Confirm by clicking on<strong> Import</strong>.</p>
+</li>
+<li>
+<p>Click on the <strong>List elements</strong> tab to switch to the overview of the list elements that have been created.</p>
+</li>
+</ul>
+<h3 id="incorporating-static-lists-into-the-questionnaire" class="wysiwyg-text-align-justify">Incorporating Static Lists into the questionnaire</h3>
+<p class="wysiwyg-text-align-justify">The list function offers you the possibility to incorporate static and dynamic lists into your questionnaire by using questions.</p>
+<ol class="wysiwyg-text-align-justify">
+<li>
+<p>Create a page titled in the Questionnaire Editor, and create a question of the “Multiple response list (vertical)” type (type 121).</p>
+</li>
+<li>
+<p>All question types in which using lists is advisable contain the “Dynamic answers” section. Later, if a list has been integrated, this section can optionally be hidden.</p>
+</li>
+<li>
+<p>Clicking on the <strong>(No list selected yet) </strong>link allows you to select a list.</p>
+</li>
+<li>
+<p>Select the corresponding list and confirm by clicking on <strong>Save</strong>.</p>
+</li>
+<li>
+<p>Click on the <strong>&lt;&lt; </strong>icon to return to the question you are editing. Here you will find the elements of the selected list in the “Dynamic answers” area.</p>
+</li>
+<li>
+<p>Depending on the target question type, item-specific functionalities such as randomization, grouping and DAC are available with dynamic list elements. If desired, you can set these separately for each target question. Alternatively, you can also adopt the settings from the <a href="https://qbdocs.atlassian.net/wiki/spaces/TD/pages/2148565069/Dynamic+Lists#Creating-the-Source-Question">source question</a>.</p>
+</li>
+<li>
+<p>You have the choice of</p>
+<ul>
+<li>
+<p>offering only list elements as answer options. In this case, you should tick the “Delete” checkbox for all other answer options and then click on <strong>Save</strong>.</p>
+</li>
+<li>
+<p>offering list elements as well as standard answer options. In this case, you can change the positions of the elements by changing their numbering. Then click on <strong>Save</strong>.</p>
+</li>
+</ul>
+</li>
+</ol>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="h_01HGKSMPRTV8X3QJVZ8XBXNV">What's the difference between dynamic and static lists?</h3>
+<p>Dynamic lists are composed using items from source questions or other lists, while static lists have elements directly entered by the user.</p>
+<h3 id="h_01HGKSMPRTYX3QJVZ8XBXNW

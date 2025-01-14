@@ -1,0 +1,41 @@
+:<br>– css_default: CSS file primarily responsible for the layout in the standard panel.</li>
+<li>“JavaScript” type:<br>– js_default: Provides various JavaScript functions.<br>– several mootools include: mootools is a JavaScript library that provides various functions, classes, and methods. In the standard panel, mootools provides the show and hide functions and the mouse-over effects in the navigation, for example. See <a href="http://www.mootools.net/">http://www.mootools.net/</a>, for example, for further information.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><em>Information: </em>Please note: Smarty, CSS, JavaScript, etc. are common web technologies that we merely provide.</p>
+<h3 id="managing-includes" class="wysiwyg-text-align-justify"><strong>Managing Includes</strong></h3>
+<p class="wysiwyg-text-align-justify">You will find the includes of a language version on the “Includes” tab in the tree view in the <strong>Website → Website editor</strong> menu.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>All includes and system includes are shown.</li>
+<li>Clicking on an include opens its content in the editor.</li>
+<li>The <strong>Lock</strong> icon indicates the respective publishing status.</li>
+<li>The<strong> i</strong> icon allows you to access the file name.</li>
+<li>The actions for editing the included in the overview are identical to the actions for editing the templates.</li>
+</ul>
+<h3 id="css-based-layout-design" class="wysiwyg-text-align-justify"><strong>CSS-Based Layout Design</strong></h3>
+<p class="wysiwyg-text-align-justify">You can use CSS classes to control layout properties for the entire panel. For example, you do not need to make changes manually to the font color in each module or template but can change the appearance of the entire external view by making a one-time change to the respective style sheet template.</p>
+<p class="wysiwyg-text-align-justify">When delivered, the CSS file “css_default” is primarily responsible for the standard panel’s layout. You can use this CSS file to perform the following operations:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Changing properties of CSS classes.</li>
+<li>Using existing replacement rules to output status-dependent views.</li>
+<li>Defining new CSS classes.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">You can use “css_custom” to overwrite it or create additional CSS files as necessary.</p>
+<p class="wysiwyg-text-align-justify">If you set up several websites and/or language versions, each version will have its own CSS file(s).</p>
+<p class="wysiwyg-text-align-justify"><em>Information: </em>The “Web Developer” Extension for Firefox provides you with support with your practical work with style sheets and can be downloaded at <a href="https://addons.mozilla.org/de/firefox/addon/web-developer/">https://addons.mozilla.org/de/firefox/addon/web-developer/</a>.</p>
+<h2 id="benefiting-automatically-from-improvements" class="wysiwyg-text-align-justify"><strong>Benefiting Automatically From Improvements</strong></h2>
+<p class="wysiwyg-text-align-justify">Since EFS 8.2, manual corrections of templates and includes after website upgrades and updates are rendered almost completely superfluous thanks to system or default files. These are non-editable templates and include those that are updated automatically during normal installation updates and upgrades.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>These system files allow you and your web designers to access the latest status of CMS development. Thus, in the long run, the system files will replace the template library.</li>
+<li>In new panels, TIVIAN may integrate some of these system files directly, if e.g. the layout stays close to the standard panel. This will reduce the effort for manual modifications when updating or upgrading the installation.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">In principle, the system templates can be used for the same purposes as the familiar normal templates.</p>
+<p class="wysiwyg-text-align-justify"><em>Information: </em>EFS Panel-driven panels show wide variations in terms of appearance and function.</p>
+<p class="wysiwyg-text-align-justify">- The system files mirror the functional scope and structure of an up-to-date standard panel.</p>
+<p class="wysiwyg-text-align-justify">- To find out if and how time and effort can be saved by using system templates in your existing panel, please get in touch with the support.</p>
+<p class="wysiwyg-text-align-justify">The most important characteristics of system files in brief:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>System files cannot be modified by users.</li>
+<li>They are automatically added and updated during normal installation updates and upgrades. I.e. their structure may change due to these updates.</li>
+<li>System files are labeled with (DEFAULT).</li>
+<li>There’s only one version of each system file.<br>– There is no difference between the working version and the online version.<br>– System files do not have a versioning history, i.e. the History tab is deactivated.</li>
+<li>If a “normal” template and a system template share the same name, e.g. foo

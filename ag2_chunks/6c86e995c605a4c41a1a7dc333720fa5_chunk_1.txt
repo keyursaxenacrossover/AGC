@@ -1,0 +1,33 @@
+ icon for <em>moderator</em>
+</h3>
+<p>A crown at the user icon now marks portal users as <em>moderator</em>. A corresponding quick info additionally indicates a user as <em>moderator </em>by mouseover.</p>
+<h3 id="header-9">Rearrangement of tab <em>Contents</em>
+</h3>
+<p>The tabulation of the discussion board of the tab <em>Contents </em>within the Portals admin area has been optimized and adapted to the design of the other tabs. Besides, the content of the tab <em>Classifications </em>can be found on the tab <em>Contents </em>from now on.</p>
+<p> </p>
+<h2 id="header-11">Action Planner enhancements</h2>
+<h3 id="header-13">MyTasks Action Planner module for Portals</h3>
+<p>In Portals you can add the <em>MyTasks </em>page module. With this new page module, you can create, view and edit actions. Heading, the target ES project and the number of actions can be defined in the Portals admin area. You can restrict all users from creating actions on their own by unchecking the provided option.</p>
+<p>Based on a new filtering area with several new filters, the list of alerts can now also be sorted by name, date of creation, due date and status.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998629127186" alt="3fd816ba-ba71-47db-9a4b-cb4aac969813"></p>
+<p>When creating a new action, the unit and responsible person picker are dependent. Select a unit first to load a list of responsible persons for that unit. If more than 10 units or responsible persons are visible, the select box becomes a filtering list. Saving is not available until all required fields are filled.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998615221650" alt="129718b1-9e5a-4d83-b117-9f2e3f892297"></p>
+<p>In detail view, <em>commenting </em>and a <em>history log </em>are now available. Comments can contain text, images or videos. The history log shows all modifications to the action.</p>
+<p>All Action Planner variables can now be shown in the <em>MyTasks </em>page module of Portals.</p>
+<p>To hide variables in the Portals module, go to the variable editor and change the property “Show the content of this variable” to “no”.</p>
+<p>The Portals module requests the order of manually created variables in the variable editor.</p>
+<h3 id="header-14">Changes to actions</h3>
+<p>All actions now have a <em>history log</em>. The history log stores all modifications to the action. The information stored in the history log is only viewable through the Portals <em>MyTasks </em>module.</p>
+<p>All actions now have a <em>created date (ac_created) </em>and an internal variable <em>(ac_source)</em>, which stores information on which functionality created the action. When creating a custom action planner variable, the ending <em>ac_ </em>is used.</p>
+<p>An action can now be assigned to a specific Org-Processor user of a unit in new ES projects. The variable <em>ac_response_id </em>will be used to contain the user’s id, and <em>ac_response </em>will be filled with the name of that user for backward-compatibility.</p>
+<p>In existing projects the functionality remains as is.</p>
+<h3 id="header-15">Action Planner variable editor</h3>
+<p>The variables storing information on an action are user-manageable now. The action planner variable editor is available in <em>Org Processor &gt; Configuration &gt; Action Planner Configuration &gt; Action Planner variables</em>. This menu is available to users with the access right <em>ac_variable_editor</em>.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998612230418" alt="f7f2886c-ce8a-4e22-8bf9-41db356d45e1"></p>
+<h3 id="header-16">Action Trigger</h3>
+<p>This trigger creates a new action in the target ES project. A range of conditions and settings defines if an action is created and what content is stored in the action.</p>
+<p>The target unit for an action needs to be provided in a variable of the originating survey. If a unit cannot be found, a survey runtime error is thrown and the surveys error notification recipients will be notified.</p>
+<p>The surveys wildcards can be used to dynamically fill action planner variables. Conditions can be defined to provide different content based on pre-defined rules. Default fields cannot be removed and must have a value.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998628610066" alt="a6361676-decf-44b4-8d9c-27dd31f0bc70"></p>
+<h3 id="header-17">Action Planner data in MySight</h3>
+<p>Action planner data

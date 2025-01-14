@@ -1,0 +1,32 @@
+ On across the applications it is required to register application instances at Okta. For applications like EFS this is done manually during the setup of Tivian Access but for all existing portal instances this needs to be done once.</p>
+<p data-renderer-start-pos="823">To conclude, the following migrations are required:</p>
+<ul class="ak-ul" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="878"><strong data-renderer-mark="true">Sync EFS Admin users to Okta</strong> → EFS Admin users will be able to login with Okta</p>
+</li>
+<li>
+<p data-renderer-start-pos="960"><strong data-renderer-mark="true">Sync Panelists to Okta</strong> → Portal users will be able to login with Okta</p>
+</li>
+<li>
+<p data-renderer-start-pos="1033"><strong data-renderer-mark="true">Sync of existing Portal instances to Okta</strong> → Portal instances can be used with Tivian Access</p>
+</li>
+</ul>
+<h4 id="Who-does-the-migrations-?" data-renderer-start-pos="1128"><strong data-renderer-mark="true">Who does the migrations ?</strong></h4>
+<p data-renderer-start-pos="1155">Migration will be performed by 2nd level support. All necessary resources to enable 2nd level support will be delivered bythe IAM-Team.The exact process is not finalised yet.</p>
+<h4 id="Why-do-I-need-to-sync-portals-to-Okta-?" data-renderer-start-pos="1333"><strong data-renderer-mark="true">Why do I need to sync portals to Okta ?</strong></h4>
+<p data-renderer-start-pos="1374">OpenID Connect requires applications to be registered at the Identity Provider to achieve a login for this application. This mechanism is done to avoid attacks like Man-In-The-Middle attacks and to ensure maximal security.</p>
+<p data-renderer-start-pos="1598">New portals, which are created when Tivian Access is active, will be automatically synced to Okta. For existing portals this has to be done once when setting up Tivian Access for an EFS installation.</p>
+<p data-renderer-start-pos="1799"><strong data-renderer-mark="true">When should I do the portal sync ?</strong></p>
+<p data-renderer-start-pos="1835">The portal sync is completely independent of the running business on the EFS installation (and its users). The sync should happen before activating Tivian Access to ensure that all portal installation will work and be accessible.</p>
+<p data-renderer-start-pos="2066">The sync will take only a few seconds so it can be done shortly before, but we recommend to leave a time buffer in case the sync will not be successful.</p>
+<h4 id="What-steps-are-required-for-the-user-sync-?" data-renderer-start-pos="2220"><strong data-renderer-mark="true">What steps are required for the user sync ?</strong></h4>
+<p data-renderer-start-pos="2265">The user sync consists of two phases.<br><strong data-renderer-mark="true">Phase 1</strong> is creating the users in Okta. A script will take all existing users from an EFS installation (EFS Admins or Panelists) and push them via API calls to Okta.</p>
+<p data-renderer-start-pos="2469"><strong data-renderer-mark="true">Phase 2</strong> is activating the users in Okta. A script will activate the previously created users via API. This will trigger Okta to send out an activation mail to the users. Once the users will follow the instructions in the email, they will be able to setup a new password in Okta so they can log in.</p>
+<p data-renderer-start-pos="2768">Phase 1 should be done before activating Tivian Access on an installation, since it can be very time consuming. Phase 2 should happen either shortly before activating Tivian Access or right after. Without the activation, users will not be able to login to the EFS installation but if they are activated to early, users will most likely be confused by the mail from Okta because they can not login to any application after setting up their account.</p>
+<p data-renderer-start-pos="3217">Communication with the client will be they key, since they user experience with the sync is highly dependant on the client setup within Tivian</p>
+<h4 id="How-long-does-a-user-migration-take-?" data-renderer-start-pos="3361"><strong data-renderer-mark="true">How long does a user migration take ?</strong></h4>
+<p data-renderer-start-pos="3400">This depends highly on the amount of users in the installation(s) and if they are using their company’s Identity Provider (since those users don’t need to be synced)<strong data-renderer-mark="true">.</strong></p>
+<p data-renderer-start-pos="3568">Syncing a few (&lt;100) EFS Admin users should not take more than a few seconds.</p>
+<p data-renderer-start-pos="3647">If a million panelist users needs to be synced, this could possibly take hours.</p>
+<p data-renderer-start-pos="3728">The limiting factor to this will be the Okta API rate limit which is set to 600 user creations a minute (shared across all Okta applications)</p>
+<h4 id="When-should-I-start-the-user-migration-?" data-renderer-start-pos="3871"><strong data-renderer-mark

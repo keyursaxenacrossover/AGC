@@ -1,0 +1,108 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K" class="wysiwyg-text-align-justify">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article provides a comprehensive guide to Access Control List (ACL) rights in various modules and functions of the EFS platform. It covers rights related to project management, mail dispatch, statistics and reporting, user administration, and specific modules like EFS Leadership, EFS Employee, EFS People, and MySight.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">ACL rights control user access and permissions within the EFS platform. Understanding these rights is crucial for proper system administration and user management.</p>
+<ul>
+<li><a href="#rights-related-to-project-management">Rights Related to Project Management</a></li>
+<li><a href="#rights-related-to-mail-dispatch-functions">Rights Related to Mail Dispatch Functions</a></li>
+<li><a href="#rights-related-to-statistics-and-reporting-functions">Rights Related to Statistics and Reporting Functions</a></li>
+<li><a href="#rights-related-to-user-administration-functions">Rights Related to User Administration Functions</a></li>
+<li><a href="#access-rights">Access Rights</a></li>
+<li><a href="#rights-related-to-efs-leadership-functions">Rights Related to EFS Leadership Functions</a></li>
+<li><a href="#rights-related-to-efs-employee-functions">Rights Related to EFS Employee Functions</a></li>
+<li><a href="#rights-related-to-efs-people-functions">Rights Related to EFS People Functions</a></li>
+<li><a href="#rights-related-to-people-cms-functions">Rights Related to People CMS Functions</a></li>
+<li><a href="#rights-related-to-panel-data-protection">Rights Related to Panel Data Protection</a></li>
+<li><a href="#right-for-portals-and-portal-functionality">Right for Portals and Portal Functionality</a></li>
+<li><a href="#access-rights-to-areas">Access Rights to Areas</a></li>
+<li><a href="#rights-for-mysight-functions">Rights for MySight Functions</a></li>
+<li><a href="#privacy-assistant">Privacy Assistant</a></li>
+</ul>
+<h2 id="rights-related-to-project-management" class="wysiwyg-text-align-justify">Rights Related to Project Management</h2>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 253.0px;"> <col style="width: 256.0px;"> <col style="width: 251.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p><strong>Right</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p><strong>Read</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p><strong>Write</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p><em>archive_project</em></p>
+</td>
+<td>
+<p>With read rights, you can archive projects and use the archive.</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>chg_ur</em>l</p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p>With write rights, you can change the URL of a project</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>cr_language</em></p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p>With write rights, you can create a new language.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>cr_project</em></p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p>With write rights, you can create or copy new projects and change the basic characteristics of a project. Furthermore, write rights for cr_project are a necessary requirement for granting project import with import_project.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>ct42partadm</em></p>
+</td>
+<td>
+<p>With read rights, you can view the participants list in participant administration. Furthermore, you gain access to data import.</p>
+<p>In <em>EFS Survey</em> Status, you gain access to respondent export</p>
+</td>
+<td>
+<p>With write rights, you can create, edit or delete participants.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>del_project</em></p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p>With write rights, you can assign the status “erasable” to projects. Please note: The status “erasable” has been removed. Therefore, this right is currently without effect.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>export_with_lfdn</em></p>
+</td>
+<td>
+<p>With

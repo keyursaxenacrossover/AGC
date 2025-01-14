@@ -1,0 +1,53 @@
+<h1 id="h_01J6S416E1TAN9DE416C0VW54N">Overview</h1>
+<p>Pulling data from multiple installations can be a complex task, especially when dealing with large systems. This guide explains how to traverse all installations and extract data into a flat file. It includes detailed instructions for listing users, extracting module information, and executing specific scripts to gather information on installations and their usage.</p>
+<h1 id="header-1">How to pull data from installations</h1>
+<p>how to taverse all installations and get a flat file:</p>
+<pre><code class="language-text">clear &amp;&amp; for i in {{LISTOFINSTALLATIONS}};do cd /nfs/installations/$i/nfs/opst/$i.customervoice360.com/htdocs/ &amp;&amp; echo "SET SQL_BIG_SELECTS=1;SELECT CONCAT_WS(';',{{COLUMN_1}},{{COLUMN_2}}...,{{COLUMN_n}}) FROM {{QUERY_AFTER_FROM}}" | efslogin -mo | awk -v cluster="$(hostname | sed 's/servicegw-//g;s/^s/S/g;s/^p/P/g;s/bofa/BofA/g;s/-de-/-DE-/g;s/-us-/-US-/g')" -v inst="$i" 'NR&gt;3{OFS=";"; print cluster, inst, $0 | "sort -n | uniq"}';done</code></pre>
+<p> </p>
+<p>Queries used by Freddie’s data wrapper:</p>
+<p>Only some queries are fixed in the code. Mose of them are build on the fly like this:</p>
+<pre><code class="language-text">$this-&gt;createDbTableInstances(array('Efs_Users','Efs_Admin_User_Contract','Efs_Admin_Contract_Org', 'Efs_Login_Att', 'Efs_User_Att'));
+
+$query = $this-&gt;db-&gt;select()
+                      -&gt;from($this-&gt;Efs_Users-&gt;info('name'),array('u_email'))
+                      -&gt;joinUsing($this-&gt;Efs_Admin_User_Contract-&gt;info('name'),'uid',array())
+                      -&gt;join($this-&gt;Efs_Admin_Contract_Org-&gt;info('name'),$this-&gt;Efs_Admin_User_Contract-&gt;info('name').'.org = '.$this-&gt;Efs_Admin_Contract_Org-&gt;info('name').'.id',array('name'))
+                      -&gt;join($this-&gt;Efs_Login_Att-&gt;info('name'), $this-&gt;Efs_Users-&gt;info('name').'.uid = '.$this-&gt;Efs_Login_Att-&gt;info('name').'.uid', array('FROM_UNIXTIME(lastlogin) as lastlogin'))
+                      -&gt;join($this-&gt;Efs_User_Att-&gt;info('name'), $this-&gt;Efs_User_Att-&gt;info('name').'.uid = '.$this-&gt;Efs_Login_Att-&gt;info('name').'.uid',array('created'));</code></pre>
+<p>Would be easier to let them run on the last installation in the Corbox and fetch the queries from the query log.</p>
+<h2 id="header-3">List of Users</h2>
+<pre><code class="language-text">SELECT 
+                uid,
+                u_email as email,
+                FROM_UNIXTIME(login_expire) as account_login_expire,
+                FROM_UNIXTIME(lastlogin) as last_login,
+                (SELECT CONCAT(gname, ' (', gtitle, ')') FROM groups WHERE gid = prim_gid) as primary_team,
+                lang,
+                admin_contract_org.name as org,
+                contract_start as org_contract_start,
+                contract_end as org_contract_end,
+                num_logins,
+                GROUP_CONCAT(CONCAT(gname, ' (', gtitle, ')')) as teams,
+                user_att.created as created
+            FROM users
+            JOIN login_att USING(uid)
+            JOIN user_grp USING(uid)
+            JOIN admin_user_contract USING(uid)
+            JOIN user_att USING(uid)
+            JOIN admin_contract_org ON admin_contract_org.id = admin_user_contract.org
+            JOIN groups USING(gid)
+            GROUP BY uid;</code></pre>
+<p> </p>
+<h3 id="header-5">available standard modules</h3>
+<pre><code class="language-text">Exteriorviewdevices/Config/DESCRIPTION:Description:     Gathers Browser and OS information for logins in Downloadplattform, Orgprocessor and Feedbackcenter
+Feedbackcenter/Config/DESCRIPTION:Description:  Gathers numbers about used feedback centers
+Fieldperiod/Config/DESCRIPTION:Description:     Gets numbers of projects by fieldperiods
+Fieldreport/Config/DESCRIPTION:Description:     Gathers statistical data about fieldreports
+Forums/Config/DESCRIPTION:Description:  Gathers general usage data about forums
+Hrreporting/Config/DESCRIPTION:Description:     Gathers data about HR-Reporting in use
+Incentive/Config/DESCRIPTION:Description:       Gathers general data about incentive functionality
+Installation/Config/DESCRIPTION:Description:    Gathers general data of the EFS installation itself (hostnames, gp_id, shared_installation flag)
+Languages/Config/DESCRIPTION:Description:       Gathers data about languages in projects
+Lists/Config/DESCRIPTION:Description:   Gathers statistical data about lists used in surveys
+Loftsurveys/Config/DESCRIPTION:Description:     Gathers basic data about multi source feedback surveys
+Loftwaves/Config/DESCRIPTION:Description:       Gets

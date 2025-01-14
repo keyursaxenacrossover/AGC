@@ -1,0 +1,167 @@
+>
+<h2 id="data-types" class="wysiwyg-text-align-justify"><strong>Data Types</strong></h2>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 171.0px;"> <col style="width: 118.0px;"> <col style="width: 235.0px;"> <col style="width: 236.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Type</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Data types</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Explanation</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Size</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Big Integer</p>
+</td>
+<td>
+<p>bigint</p>
+</td>
+<td>
+<p>Big whole numbers</p>
+</td>
+<td>
+<p>Threshold values:</p>
+<ul>
+<li>
+<p>9223372036854775808 to 9223372036854775807</p>
+</li>
+</ul>
+<p>(19 characters)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Short text</p>
+</td>
+<td>
+<p>text</p>
+</td>
+<td>
+<p>Strings of numbers and letters with variable length</p>
+</td>
+<td>
+<p>max. 255 characters</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Integer or floating point numbers</p>
+</td>
+<td>
+<p>float</p>
+</td>
+<td>
+<p>A whole number or floating point number.</p>
+</td>
+<td>
+<p>10 characters</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="relevantid" class="wysiwyg-text-align-center"><strong>RelevantID</strong></h2>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 245.0px;"> <col style="width: 515.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Field</strong></p>
+</th>
+<th data-highlight-colour="#57d9a3">
+<p class="wysiwyg-text-align-center"><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>RelevantID authentication code</p>
+</td>
+<td>
+<p>Authentication code of the installation. If you have ordered the feature, yet no value has been set, please get in touch with your sales contact.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Activate RelevantID verification for this survey</p>
+</td>
+<td>
+<p>This checkbox must be ticked to activate the check for the current project.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Survey variable for saving the result of the geo IP validation</p>
+</td>
+<td>
+<p>Select a user-defined variable. The variable must be of the “Integer” data type.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Survey variable for saving the confidence value</p>
+</td>
+<td>
+<p>Select a user-defined variable. The variable must be of the “Integer” data type.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Save additional optional variables in</p>
+</td>
+<td>
+<p>The following information can optionally be stored in user-defined variables as well:</p>
+<ul>
+<li>
+<p>FraudProfileScore: fraudprofilescore • City: city</p>
+</li>
+<li>
+<p>Domain: domain</p>
+</li>
+<li>
+<p>County: Country</p>
+</li>
+<li>
+<p>Region: Region</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Scope of geo IP verification</p>
+</td>
+<td>
+<p>The desired scope: You may select either country, region, or city.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Allowed geo IP values for participants</p>
+</td>
+<td>
+<p>International codes of the countries, regions, or cities from which participants are to be admitted.</p>
+<ul>
+<li>
+<p>Please contact support to receive an up-to-date list of codes.</p>
+</li>
+<li>
+<p>Please enter the allowed values in a comma-separated list.</p>
+</li>
+<li>
+<p>If necessary, it is possible to enter a complete list of all country codes.</p>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863" class="wysiwyg-text-align-justify">FAQ</h1>
+<h3 id="faq_1" class="wysiwyg-text-align-justify">What is the purpose of the privacy assistant?</h3

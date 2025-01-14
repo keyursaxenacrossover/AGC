@@ -1,0 +1,58 @@
+ project “Website Check). If the zip file was saved externally, then this icon enables you to upload it again.</p>
+</li>
+<li>
+<p><strong>Reactivating</strong></p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The downloaded data is not a backup copy of the entire project, and cannot be viewed outside of EFS or recreated using an import function.</p>
+<p class="wysiwyg-text-align-justify">Pay careful attention that you upload the correct file, otherwise reactivation of the project will not be possible. Should you upload the wrong zip file, delete it first by clicking on the <strong>Delete</strong> button, and then upload the correct file.</p>
+<h3 id="reactivating-archived-projects" class="wysiwyg-text-align-justify"><strong>Reactivating archived projects</strong></h3>
+<p class="wysiwyg-text-align-justify">When you click on the Reactivate icon you are given two options:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>reactivate with result data</p>
+</li>
+<li>
+<p>reactivate without result data</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If the zip file with result data has been deleted, the only option available is “Reactivate without result data”.</p>
+<p class="wysiwyg-text-align-justify">The following applies to reactivation processes as well as to the archiving of projects: Firstly the process can take a very long time. Secondly, some of the database tables are blocked during the reactivation process, so it is not possible during reactivation to participate in a survey. Therefore it is also recommended that reactivating is done during phases of low traffic, i.e. at night.</p>
+<h2 id="split-button-new-project" class="wysiwyg-text-align-justify"><strong>Split-Button: + New project</strong></h2>
+<p class="wysiwyg-text-align-justify">After logging in, the start page is opened. Here, you see at first glance current <em>EFS</em> news, an overview of currently active surveys in the field and remaining time, and shortcuts to the surveys you are currently working on, with details on the project status.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017226441106" alt="Starting project.jpg"></p>
+<p class="wysiwyg-text-align-justify">You will create your first survey by clicking on the <strong>+ New project</strong> button.</p>
+<h3 id="creating-projects" class="wysiwyg-text-align-justify"><strong>Creating Projects</strong></h3>
+<p class="wysiwyg-text-align-justify">Open the functional area <strong>Projects</strong>. Open the drop-down list of the <strong>+ New project</strong> split button. Click on the main field or select the option “New project” to create a new survey. To import an existing survey from your PC, select the option “Import project”. To adopt a sample survey from the survey library, select the option “Survey library”.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017226444050" alt="Create project.jpg"></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Enter the survey title.</p>
+</li>
+<li>
+<p>Select the project type. (Exception on Panel installations: If you select “forum discussion”, the dialog shown above will be replaced automatically by the list of required forum topic properties.)</p>
+</li>
+<li>
+<p>Select the appropriate layout template. <strong>It is not possible to switch between the layout generations.</strong></p>
+</li>
+<li>
+<p>Select the appropriate folder</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017226446226" alt="Advanced options.jpg"></p>
+<p class="wysiwyg-text-align-justify">In the “Advanced options” area, you can make further adjustments to the settings:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Teams</strong>: The selected user teams receive access to the project. The teams, in which you are a member, are displayed in a select box, and your primary team is pre-selected. Your primary team always gets read and write rights on the newly created project automatically. If you belong to a team with write rights to the ACL right “group admin”, you can assign all teams in the installation of the “Admingroup” type with read and write rights to the project.</p>
+</li>
+<li>
+<p><strong>Survey messages</strong>: A set of survey messages that already exist in the library is uploaded.</p>
+</li>
+<li>
+<p><strong>Author, Coauthors</strong>: enter the names of the persons involved in these fields.</p>
+</li>
+<li>
+<p><strong>Description</strong>: This field allows storage of information on the survey (e.g. content and purpose of the project).</p>
+</li>
+<li>
+<p><strong>Error notification</strong>: EFS features a runtime check for checking the conditions of LUA filters, quotas and triggers in the course of the survey. Optionally, you can subscribe to e-mail notifications which are sent

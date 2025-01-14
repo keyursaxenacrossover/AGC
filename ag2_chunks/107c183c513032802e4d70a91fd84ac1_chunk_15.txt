@@ -1,0 +1,125 @@
+: When scanning or importing the data, participant accounts with offline flag are created.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Return rate direct</p>
+</td>
+<td>
+<p>Direct return rate in percent, i.e., (Return direct / Sum of the participants direct) * 100</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Sum of the participants</p>
+</td>
+<td>
+<p>Sum of the existing online participants, the existing offline participants (i.e. participants with “Offline” flag) and requested paper-pencil questionnaires allocated to this unit and all subunits.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>N</p>
+</td>
+<td>
+<p>Corrected sum of online participants and paper-pencil questionnaires, if target figure adjustment is activated.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Accumulated return sum</p>
+</td>
+<td>
+<p>Accumulated return for this unit and all subunits, i.e., the sum of those online participants who have already completed the survey with disposition codes 31 or 32, and of those paper-pencil questionnaires whose data have already been scanned or imported into the system (with disposition codes 31 or 32).</p>
+<p>This sum includes the completed paper-pencil questionnaires: When scanning or importing the data, participant accounts with offline flags are created.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Accumulated return rate</p>
+</td>
+<td>
+<p>Accumulated return rate in percent, i.e., (Accumulated return sum / Sum of the online participants) * 100</p>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Actions</p>
+</td>
+<td>
+<p>By clicking on the icons in this column you can trigger the actions</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify">The calculation of the sum of all participants in HR Reporting differs slightly from the Org Processor values. Participants with disposition codes 13, 14 and 15 are not included in this sum in the Org Processor, but are included in HR reporting.</p>
+<p class="wysiwyg-text-align-justify"><strong>The overview with a separate display of online and offline participants</strong></p>
+<p class="wysiwyg-text-align-justify">In hybrid surveys, you can optionally activate an alternative return view which displays the data of online and offline participants separately.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>In this view, the sum of existing online participants and those offline participants for whom a participant account already exists is used as the base value when calculating the return rate. I.e. it is assumed that participant accounts with the “Offline” flag have already been created for the offline participants, for example via project data import. Date from logistics, i.e. in particular numbers for requested paper-pencil questionnaires, are not considered, in contrast to the default return view.</p>
+</li>
+<li>
+<p>To be considered as completed interviews for the return and the return rate, the offline interviews must have disposition code 31 or 32.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The alternative return view is activated in the <strong>Org Processor</strong> → <strong>Configuration</strong> menu on the Options tab in the „Display return of online and offline participants separately“ field.</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default">
+<colgroup> <col style="width: 265.0px;"> <col style="width: 495.0px;"> </colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour="#57d9a3">
+<p><strong>Column heading</strong></p>
+</th>
+<th data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Sum of the participants direct</p>
+</td>
+<td>
+<p>Sum of the online participants and offline participants directly allocated to the current unit.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Online return</p>
+</td>
+<td>
+<p>Direct return of the current unit, i.e., the sum of those online participants who have already completed the survey with disposition codes 31 and 32.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Online return rate</p>
+</td>
+<td>
+<p>Direct online return rate in percent, i.e. (Online return / Sum of the participants direct) * 100</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Return of unit for paperpencil questionnaires</p>
+</td>
+<td>
+<p>Direct offline return of the current unit, i.e. the sum of offline participants (characterized by flag “Offline”) with disposition codes 31 or 32.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Return rate of unit for paper-pencil questionnaires</p>
+</td>
+<td>
+<p>Direct offline return rate in percent, i.e., (Return of unit for paper-pencil questionnaires / Sum of the participants direct) * 100</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Sum of the participants</p>
+</td>
+<td>
+<p>Sum of the existing online participants and the existing offline participants allocated to the current unit and all subunits.</p>

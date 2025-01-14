@@ -1,0 +1,114 @@
+col style="width: 124.0px;"> <col style="width: 476.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Phase</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Name</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Possible applications</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Preparation</p>
+</td>
+<td>
+<p>Setup</p>
+</td>
+<td>
+<p>In this phase, usually, the organizational structure is built up and participants are stored.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Pretest</p>
+</td>
+<td>
+<p>Pretest</p>
+</td>
+<td>
+<p>In this phase, the project is usually tested.</p>
+<p>Testers fill out the questionnaire.</p>
+<p>Testers with user accounts check whether all planned monitoring and reporting to-dos can be performed by the users in the <em>Org Processor</em> as planned.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Field</p>
+</td>
+<td>
+<p>Field</p>
+</td>
+<td>
+<p>In this phase, the participants usually fill out the questionnaires.</p>
+<p>Users with the relevant rights monitor the return for their areas of responsibility in the <em>Org Processor</em>.</p>
+<p>When using paper-pencil questionnaires, the entire distribution and reshipment of the paper-pencil questionnaires also takes place in this phase.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Post-Field</p>
+</td>
+<td>
+<p>Postprocessing</p>
+</td>
+<td>
+<p>In this phase, the project management checks and corrects the data and prepares the report generation. Usually, the return data is no longer accessible during this phase, and the reports are not yet available</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Reporting</p>
+</td>
+<td>
+<p>Reporting</p>
+</td>
+<td>
+<p>In this phase, usually, the reports are downloaded.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>End</p>
+</td>
+<td>
+<p>Project end</p>
+</td>
+<td>
+<p>In this phase, the project is completed, i.e., the data are archived and a backup is possibly made. Usually, the reports or other data are no longer accessible during this phase.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="project-phases-log" class="wysiwyg-text-align-justify"><strong>Project Phases Log</strong></h3>
+<p class="wysiwyg-text-align-justify">All important changes to the phases are logged. To view the change history, click on <strong>Log</strong> to open the “Log” section of the <strong>Project Phases</strong> tab.</p>
+<h3 id="creating-additional-phases" class="wysiwyg-text-align-justify"><strong>Creating additional phases</strong></h3>
+<p class="wysiwyg-text-align-justify">In the Projects → {Selected project} →<strong> Process configuration</strong> menu, click on the<strong> Create phase</strong> button on the <strong>Project phases</strong> tab.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013850445714" alt="Create phases.jpg"></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Enter the title and name of the new phase.</p>
+</li>
+<li>
+<p>Select an appropriate start date.</p>
+</li>
+<li>
+<p>Confirm by clicking on <strong>Save</strong>.</p>
+</li>
+</ul>
+<h3 id="rights-admin" class="wysiwyg-text-align-justify"><strong>Rights admin</strong></h3>
+<p class="wysiwyg-text-align-justify">You have configured reports, user roles, and project phases according to your needs. In the last step, you define how these elements should interact - i.e. which user roles should be granted access to which tab in the Org Processor login during which phase of the project.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013850448530" alt="Rights admin.jpg"></p>
+<p class="wysiwyg-text-align-justify">The allocation is executed using the grid on the <strong>Rights admin</strong> tab:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Each cell of the grid describes a combination of phase, role, and tab.</p>
+</li>
+<li>
+<p>Clicking on a grid cell opens a layer. In this layer, you can select the roles that are supposed to have access to the respective tab in the respective phase.</p>
+</li>
+<li>
+<p>By clicking a radio button in the “Active” column, you activate that phase instantaneously. Please note that the rights of Org Processor users are affected strongly by a change of phase. Never change the phase of a running project just to find out what might happen!</p>

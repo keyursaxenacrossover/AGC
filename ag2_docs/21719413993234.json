@@ -1,0 +1,30 @@
+{
+    "id": 21719413993234,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/21719413993234.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21719413993234-Affected-services-while-Organizations-are-inactive",
+    "author_id": 10103216031506,
+    "comments_disabled": false,
+    "draft": true,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20234751255186,
+    "created_at": "2024-10-01T16:34:41Z",
+    "updated_at": "2024-10-01T16:34:41Z",
+    "name": "Affected services while Organizations are inactive",
+    "title": "Affected services while Organizations are inactive",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-10-01T16:34:41Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075274,
+    "content_tag_ids": [],
+    "label_names": [],
+    "body": "<p style=\"box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem;\"><span style=\"box-sizing: border-box; font-size: 2.1em;\">Overview</span></p>\n<article style=\"box-sizing: border-box; display: block;\">\n<p style=\"box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; color: #212529; font-family: -apple-system, BlinkMacSystemFont, ' Segoe UI' , Roboto, ' Helvetica Neue' , Arial, sans-serif, ' Apple Color Emoji' , ' Segoe UI Emoji' , ' Segoe UI Symbol' , ' Noto Color Emoji' font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;\">This article discusses the consequences of start and end of contract for Organizations in a multi-organization tenant. It explains the configuration process, how the feature works, and its implementation details.</p>\n<h1 id=\"h_01HGKSMPRSYYE7GMM7DZ0VCKXK\" style=\"box-sizing: border-box; font-size: 2.5rem; margin: 0px 0px 0.5rem; font-family: -apple-system, BlinkMacSystemFont, ' Segoe UI' , Roboto, ' Helvetica Neue' , Arial, sans-serif, ' Apple Color Emoji' , ' Segoe UI Emoji' , ' Segoe UI Symbol' , ' Noto Color Emoji' font-weight: 500; line-height: 1.2; color: #212529; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;\">Information</h1>\n<p style=\"box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; color: #212529; font-family: -apple-system, BlinkMacSystemFont, ' Segoe UI' , Roboto, ' Helvetica Neue' , Arial, sans-serif, ' Apple Color Emoji' , ' Segoe UI Emoji' , ' Segoe UI Symbol' , ' Noto Color Emoji' font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;\">When an Organization has the End of Contract date set to today, or in the past, their Organization will be set as Inactive. This means that the users can not login with the following error:</p>\n<p><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21719413983506\"></p>\n<p>While in this state, there are a few considerations to keep in mind.</p>\n<ul>\n<li>Anonymous surveys which are Active and has distribution links set can be accessed freely.</li>\n<li>Mails which are related to the Organization will continue to be sent.</li>\n<li>Personalized surveys can be accessed via their code.</li>\n</ul>\n</article>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

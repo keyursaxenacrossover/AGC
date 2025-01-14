@@ -1,0 +1,131 @@
+8a983742c6b7" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p>EFS User ID</p></th>
+<th><p>email</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>16</p></td>
+<td><p>user6@questback.com</p></td>
+<td><p>-</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><u>Okta - User List</u></strong></p>
+<table ac:local-id="09ecbcb1-43ce-44ab-8b1e-6bb153aa7b57" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p>Okta User ID</p></th>
+<th><p>email</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>10006</p></td>
+<td><p>user6@questback.com</p></td>
+<td><p>-</p></td>
+</tr>
+<tr>
+<td><p>20006</p></td>
+<td><p>user6@tivian.com</p></td>
+<td><p>another installation already created that user</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><u>EFS - EFS User to Okta User Mapping</u></strong></p>
+<table ac:local-id="29d4f202-ce6f-4f02-90f7-3812432dc99c" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p>EFS User ID</p></th>
+<th><p>Okta User ID</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>16</p></td>
+<td><p>10006</p></td>
+<td><p>-</p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="header-33">Future state:</h4>
+<p>Just take the user from Okta and fix the mapping as well as add the correct assignments on Okta.</p>
+<p><strong><u>EFS - User Table</u></strong></p>
+<table ac:local-id="b0c9a7f1-af46-4e6d-968a-18ae3a582bd2" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p>EFS User ID</p></th>
+<th><p>email</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>16</p></td>
+<td><p>user6@tivian.com</p></td>
+<td><p>updated</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><u>Okta - User List</u></strong></p>
+<table ac:local-id="309977a7-4d80-4937-8535-2f092590468f" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p>Okta User ID</p></th>
+<th><p>email</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>10006</p></td>
+<td><p>user6@questback.com</p></td>
+<td><p>zombie</p></td>
+</tr>
+<tr>
+<td><p>20006</p></td>
+<td><p>user6@tivian.com</p></td>
+<td><p>assign correct groups etc. otherwise no change</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><u>EFS - EFS User to Okta User Mapping</u></strong></p>
+<table ac:local-id="ee151d94-c4b3-4d91-acc1-b786fb1c126a" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p>EFS User ID</p></th>
+<th><p>Okta User ID</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>16</p></td>
+<td><p>20006</p></td>
+<td><p>update mapping</p></td>
+</tr>
+</tbody

@@ -1,0 +1,64 @@
+<h2 id="h_01J6EP6ZV6DJP8EWFHJWWP7QV5">Table of Contents</h2>
+<ul>
+<li>
+<a href="#header-1">Survey</a>
+<ul>
+<li><a href="#header-3">Dynamic answer option: bad words list</a></li>
+<li><a href="#header-5">New import tool</a></li>
+<li><a href="#header-6">New question type: People selection</a></li>
+</ul>
+</li>
+<li>
+<a href="#header-8">Portals</a>
+<ul>
+<li><a href="#header-10">The redesign of the Report list</a></li>
+<li><a href="#header-11">Available master data in the user profile of Portals</a></li>
+<li><a href="#header-12">Module modifications</a></li>
+<li><a href="#header-13">User managed groups</a></li>
+<li><a href="#header-14">‘Blue collar’ worker scenario</a></li>
+<li><a href="#header-15">Multi language</a></li>
+</ul>
+</li>
+<li>
+<a href="#header-17">People</a>
+<ul>
+<li><a href="#header-19">The search via voucher code</a></li>
+</ul>
+</li>
+<li>
+<a href="#header-21">Privacy Assistant</a>
+<ul>
+<li><a href="#header-23">The features of the consent form</a></li>
+<li><a href="#header-24">Activities logs and ACL rights</a></li>
+<li><a href="#header-25">GDPR: Webservices</a></li>
+</ul>
+</li>
+<li>
+<a href="#header-27">Report Manager</a>
+<ul>
+<li><a href="#header-29">Direct Report Node and Direct Report Filter</a></li>
+<li><a href="#header-30">The Overview sub-navigation</a></li>
+<li><a href="#header-31">NPS: new standard calculation class</a></li>
+<li><a href="#header-32">Language selection</a></li>
+</ul>
+</li>
+<li>
+<a href="#header-34">Text Analytics</a>
+<ul>
+<li><a href="#header-36">APIs for the text analysis</a></li>
+<li><a href="#header-37">Text analysis triggers</a></li>
+</ul>
+</li>
+</ul>
+<div class="expand-macro">
+<h4 id="h_01J6EP6ZV77MEFDC6V1S86PEBC"> </h4>
+</div>
+<h2 id="header-1">Survey</h2>
+<h3 id="header-3">Dynamic answer option: bad words list</h3>
+<p>In our summer release we introduced our new<em> Dynamic Answer Option</em> question type. This question type allows you to present a respondent with a singleresponse list that dynamically updates based on the responses given by previous respondents. In an enhancement to this question type, we have now introduced the option to block certain words or phrases. To avoid inappropriate responses (e.g. swear words) being added to the response lists. You can upload a bad words list via the media library in the configuration of the Dynamic answer option question type. First you have to add the bad words list in CSV format to the media library, before you can use that list in the configuration of the question type. The values in the bad words list will not be treated as case-sensitive. By clicking on the <strong>View</strong>-icon, you can view the contents of the bad words list in the Questionnaire Editor.</p>
+<p>Two additional settings have also been added for the <em>Dynamic Answer Option</em> question type. The “Confirm new answer options” setting results in a new icon being shown in the questionnaire editor, alongside each new option that has been dynamically added to the option list. This icon allows you to approve or decline new answers, allowing you to benefit from the dynamic addition of new options, whilst retaining absolute control of the values that are ultimately added to the list and presented to your respondents. In addition, we have the new “Email notification on new answer option” setting. When this setting is turned on an email notification is sent to all users nominated to receive project notifications each time a new answer is dynamically added to the list.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998286021138" alt="Blacklist.png"></p>
+<h3 id="header-5">New import tool</h3>
+<p>One of the great features of EFS is the ability to import projects and data, helping you to test new versions of surveys, or just migrate to new installations. But some projects can be huge, so you don’t want to hang around waiting for an import to complete. Now, on enabled installations, you can tick off whether you want to be notified as soon as the import is finished. Contact us to use this and other queued features. In addition, in personalised projects, you have a second tap under the menu item “Result import”: <strong>Data migration</strong>. There you select the projects you want to import (you must have access to this project). You can only import projects within in the same installation. The import is then queued to improve performance and free up your time.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998298552338" alt="Migrate data.png"></p>
+<p>In the lower area, you can check on the

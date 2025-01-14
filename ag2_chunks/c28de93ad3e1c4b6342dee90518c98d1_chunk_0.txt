@@ -1,0 +1,74 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K" class="wysiwyg-text-align-justify">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article provides a comprehensive guide to understanding and using the Codebook feature in the EFS Survey. The Codebook is an essential tool for managing variables, encodings, and project information in survey projects.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">The <em>codebook </em>contains an overview of all variables and all encodings used in a project. I.e. it shows which memory locations have been created for your questions and how the answers have been encoded. The codebook is used, for example, whenever you want to incorporate control information into your survey, e.g. when setting filters or defining triggers, and when analyzing the survey results.</p>
+<ul>
+<li><a href="#viewing-the-codebook">Viewing the Codebook</a></li>
+<li><a href="#data-types-of-variables">Data types of variables</a></li>
+<li><a href="#displaying-additional-information">Displaying Additional Information</a></li>
+<li><a href="#selecting-the-language-of-text-elements">Selecting the Language of Text Elements</a></li>
+<li><a href="#editing-variable-names">Editing Variable Names</a></li>
+<li><a href="#printing-and-exporting-codebook">Printing and Exporting Codebook</a></li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<h3 id="viewing-the-codebook" class="wysiwyg-text-align-justify">Viewing the Codebook</h3>
+<p class="wysiwyg-text-align-justify">Click on the <strong>Codebook </strong>menu item in the submenu for the respective function. This will open a new browser window, and the codebook will appear.</p>
+<p class="wysiwyg-text-align-justify">It lists the question texts and answer options by page, along with the variable names (e.g. v_1) data type and the various characteristics (“codes”, e.g. 1-4). The final page doesn’t contain variables and is therefore not displayed.</p>
+<p class="wysiwyg-text-align-justify">In the upper part of the codebook, you will find several fields containing additional options that allow you to show further information, change the language of text elements displayed, edit variables, and export the codebook. These fields can be displayed or hidden.</p>
+<h3 id="data-types-of-variables" class="wysiwyg-text-align-justify">Data types of variables</h3>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p><strong>Data Type</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>int</p>
+</td>
+<td>
+<p>The “int” column stands for “integer”, i.e. the variable will only accept integer values. In the example above, this would be the value 1 for the “Marketing” answer, etc.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>varchar</p>
+</td>
+<td>
+<p>Questions with open-ended text input fields use the “varchar” variable type in which strings can be saved.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 class="wysiwyg-text-align-justify"> </h3>
+<h3 id="displaying-additional-information" class="wysiwyg-text-align-justify">Displaying Additional Information</h3>
+<p class="wysiwyg-text-align-justify">In the “Display options“ section you have the option of displaying the following additional information:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Show filters</p>
+</li>
+<li>
+<p>Show triggers</p>
+</li>
+<li>
+<p>Show plausibility checks</p>
+</li>
+<li>
+<p>Show hiding conditions: Hiding conditions for questions and answer options can be displayed. Please note: Hiding conditions for matrix columns cannot be displayed in the codebook.</p>
+</li>
+<li>
+<p>Show direct links to edit the questionnaire: Next to each question, an <strong>Edit question </strong>link and a link to the <strong>Language editor </strong>will be shown.</p>
+</li>
+<li>
+<p>Show fill-in instructions: When checking the box, fill-in instructions for questions will be displayed in the codebook.</p>
+</li>
+<li>
+<p>Show table of contents: The codebook will show a list of the questionnaire pages. You can click on the page titles, so even with very long questionnaires, you will easily find the respective page in the codebook.</p>
+</li>
+<li>
+<p>If you tick the special checkbox “Show field positions in export template” in the

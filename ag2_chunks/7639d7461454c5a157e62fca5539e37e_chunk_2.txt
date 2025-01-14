@@ -1,0 +1,53 @@
+</li>
+<li>
+<p><strong>Customized maintenance page</strong>: The maintenance page can now be adapted to your corporate identity. Customers with extended access rights, will find a new <strong>Maintenance</strong> tab of the <strong>Branding</strong> menu (Options).</p>
+</li>
+<li>
+<p><strong>Changed user menu</strong>: We made changes to the user menu. The <em>Edit account</em> menu item was renamed. It is now called <em>Edit user data</em>. We also added the <em>Security</em> menu item to connect the user menu with security area. There you can now change your password.</p>
+</li>
+<li>
+<p><strong>Sending SMS</strong>: When sending SMS, additional information are now available, for example the encoding of the SMS and a SMS counter that counts how many SMS will be used for the message.</p>
+</li>
+</ul>
+<p> </p>
+<h2 id="header-9">Enhancements to <em>Projects</em>
+</h2>
+<hr>
+<h3 id="header-11">PDF Receipts</h3>
+<p>We have rebuilt the <strong>Receipts</strong> section of the <strong>Questionnaire Editor</strong> completely. You are now able to provide survey participants with the completed questionnaire as a PDF receipt via a download link and/or via e-mail attachment, without the need to involve Tivian.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21036827033362" alt="Bildschirmfoto 2022-03-11 um 09.47.17.png"></p>
+<p>Using the <strong>Exclude questions</strong> tab, you can customize the PDF receipt and exclude questions. Thus, the PDF receipts will contain the questions seen by a participant and the ones you exclude.</p>
+<p>Use the <strong>Layout</strong> menu to edit layout elements of the PDF receipts, for example Header, Footer und CSS.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21036791404434" alt="Bildschirmfoto 2022-03-10 um 15.29.51.png"></p>
+<p>PDF receipts are available for Responsive Layout 3 and Responsive Layout 3.1.</p>
+<h3 id="header-12">Other Enhancements to <em>Projects</em>
+</h3>
+<ul>
+<li>
+<p><strong>The </strong><em><strong>Block email</strong></em><strong> question type</strong>: The <em>Block email</em> question type, which can be selected on end pages, also supports the SMS block list. This applies to Responsive Layout 3.1.</p>
+</li>
+<li>
+<p><strong>Additional headers for your email templates</strong>: Using the new function "Additional headers" you can add your own headers to your email template. The placeholders <em>#unsubscribe_global#</em> and <em>#unsubscribe_survey#</em> can be used.</p>
+</li>
+<li>
+<p><strong>Layout Pro Editor</strong>: The Layout Pro Editor has been extended to provide <strong>Create Template, Export and Import</strong> functionality for all sections.</p>
+</li>
+<li>
+<p><strong>New Panlist ID column (ES projects)</strong>: The column "Panelist ID” is available in the participant administration of ES projects for user groups that have the read permission <em>search_panel.</em> Participants will be linked to the panelist and you can jump from the participant management of your ES project to the panelist administration. This works for employee projects where the "Panelist import from employee project" feature was used. The feature is disabled by default.</p>
+</li>
+</ul>
+<p>For more information about all the changes in Responsive Layout 3.1, see the <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20231051934610" target="_blank" rel="noopener noreferrer">Layout Change-Log</a>.</p>
+<p> </p>
+<h2 id="header-14">Enhancements to <em>People</em>
+</h2>
+<hr>
+<h3 id="header-16">Management of Genders</h3>
+<p>The People module now allows you to create and use more than the previously two genders for your panelists. New genders can be created and be managed via your own list in the <strong>Panel configuration</strong>. A handy panelist counter shows the usage of genders and blocks the deletion if panelists are assigned to a gender.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21036817992082" alt="Bildschirmfoto 2022-03-14 um 15.31.10.png"></p>
+<p>Your manually created genders will be available in Panelist administration, Portals and Panel/ Master data surveys. They will also be available in <em>Panel Service Layer</em> calls.</p>
+<p>The <strong>Panelist administration</strong> is single-language. Translations into other languages can be made within the individual features/ modules, just like for other master data variables .</p>
+<h3 id="header-17">Other Enhancements to <em>People</em>
+</h3>
+<ul>
+<li>
+<p><strong>Bulk edit of panelists</strong>: The bulk edit of the panelist administration now allows updating based on the <em>site id</em> (language version), <em>u_gender</em>, <em

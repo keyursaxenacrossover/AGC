@@ -1,0 +1,45 @@
+ To create such a form, please proceed as follows:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>Create a new form in the <strong>Forms</strong> menu. The form type “Profile” should be selected.</li>
+<li>Next, create the variables which should be included in the form. Select the desired profile options for each variable:<br>– Field can be searched: The variable is part of the search form.<br>– Field is displayed in the profiles search results list: The variable is part of the results list.<br>– Field is displayed in public profile: The variable is part of the profile.</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><strong>Allowing the visibility of selected data to be configured</strong></p>
+<p class="wysiwyg-text-align-justify">In the first step, you choose the data for which visibility should be configurable. By default, these are the following data:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Account name</li>
+<li>First name</li>
+<li>Last name</li>
+<li>E-mail address</li>
+<li>Address data (street, place, zip code, country, address 1-3)</li>
+<li>Internet address</li>
+<li>Gender</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Optionally, you can also allow the visibility of master data to be configured. To keep the dialogs on the website structured despite the growing number of data, the desired master data are aggregated in a maximum of five groups per panel installation and displayed to the panelists in a grouped manner. The panelists can then define the visibility for each group in their profile settings. To compile the master data groups, switch to the <strong>Website → Configuration </strong>menu. In the “Profile” section, you can define the five master data groups. Use the Ctrl or Shift keys to select multiple variables for each group.</p>
+<p class="wysiwyg-text-align-justify"><strong>Definition of visibility for new panelists</strong></p>
+<p class="wysiwyg-text-align-justify">Whether the personal data of new panelists should be visible to other panelists and visitors before these candidates log in and set up their profiles has to be defined for each language version. In the “Profiles” section of the edit dialog of the respective language version on the <strong>Configuration</strong> tab, you will find all the data whose visibility has been made configurable according to the instructions above.</p>
+<p class="wysiwyg-text-align-justify"><strong>Changing visibility for specific panelists</strong></p>
+<p class="wysiwyg-text-align-justify">You can change the visibility settings for already existing panelists</p>
+<ul class="wysiwyg-text-align-justify">
+<li>in their detail views.</li>
+<li>in the panelist's list for selected panelists via the action “Set profile visibility”.<br>Three application modes are available:
+<ul>
+<li>Add selected profile visibility options: Sets the explicitly selected options to “visible”.</li>
+<li>Remove selected profile visibility options: Sets the explicitly selected options to “not visible”.</li>
+<li>Apply selected profile options: Overwrites all existing values with the settings made in the dialog.</li>
+</ul>
+</li>
+<li>during panelist import in the “Special parameters” section.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Allowing panelists to define the visibility of their data</strong></p>
+<p class="wysiwyg-text-align-justify">You can also leave the decision as to which personal data are to be visible either entirely or partially to the panelists themselves.</p>
+<h3 id="integrating-panelist-profiles-and-panelist-search-into-the-website" class="wysiwyg-text-align-justify"><strong>Integrating Panelist Profiles and Panelist Search into the Website</strong></h3>
+<p class="wysiwyg-text-align-justify">The panelist search, its results display, and the profiles of individual panelists are all set up with one single module: the “Profile search” page module. For the setup, please proceed as follows:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>On the desired page, create a page module of the “Profile search” type.</li>
+<li>Select the “func_profile_search” module template.</li>
+<li>Configure the setting options as required. Make sure that the correct form has been selected.</li>
+</ol>
+<h3 id="allowing-the-panelists-to-edit-their-own-profile-settings" class="wysiwyg-text-align-justify"><strong>Allowing the Panelists to Edit their Profile Settings</strong></h3>
+<p class="wysiwyg-text-align-justify">As already mentioned above, the careful handling of private data is fundamental for establishing trust in an online community. Therefore, many online communities allow their members to edit their profiles via a dedicated form and to decide for themselves which of their data should be visible. At the start of the membership, all data are usually set to “not visible”. The new members can then decide for themselves whether they want to release any personal data and, if so, which data. With EFS Panel it only takes you a few clicks to set up such a “Profile settings” form.</p>
+<p class="wysiwyg-text-align-justify"><strong>Example - A panelist configures her profile:</strong></p>
+<p class="wysiwyg-text-align-justify"><img src="https://

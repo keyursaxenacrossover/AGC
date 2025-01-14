@@ -1,0 +1,19 @@
+ login resp. logout redirectURL so it is important to maintain the list of redirectURL’s in application up-to-date. The portal-specific applications (created by EFS at creation of a new portal) will contain proper redirectURL’s for each domain-alias registered in EFS (Options / Domains). Additionally, the migration script has an option “Portal update (e.g. update redirects after creation of new domain-alias)”. This option should be used to migrate already existing portal-specific applications with redirectURL’s for all domain-aliases registered in EFS.</p>
+<p> </p>
+<h1 id="h_01J6A3V84P5594E4J1QTJ2S32V">FAQ</h1>
+<p><strong>Why is it important to remember the Group ID?</strong></p>
+<p>The Group ID is essential for configuring the EFS application to ensure that the correct group is assigned the necessary permissions.</p>
+<p><strong>What should I do if there are multiple alias domains?</strong></p>
+<p>Add multiple entries for login and logout redirect URIs for each alias domain to ensure seamless functionality across all domains.</p>
+<p><strong>How do I ensure the application settings are correct?</strong></p>
+<p>Verify that the grant types include both Authorization Code and Refresh Token, and ensure that the correct ClientID and Client Secret are used in the EFS configuration.</p>
+<p> </p> login resp. logout redirectURL so it is important to maintain the list of redirectURL’s in application up-to-date. The portal-specific applications (created by EFS at creation of a new portal) will contain proper redirectURL’s for each domain-alias registered in EFS (Options / Domains). Additionally, the migration script has an option “Portal update (e.g. update redirects after creation of new domain-alias)”. This option should be used to migrate already existing portal-specific applications with redirectURL’s for all domain-aliases registered in EFS.</p>
+<p> </p>
+<h1 id="h_01J6A3V84P5594E4J1QTJ2S32V">FAQ</h1>
+<p><strong>Why is it important to remember the Group ID?</strong></p>
+<p>The Group ID is essential for configuring the EFS application to ensure that the correct group is assigned the necessary permissions.</p>
+<p><strong>What should I do if there are multiple alias domains?</strong></p>
+<p>Add multiple entries for login and logout redirect URIs for each alias domain to ensure seamless functionality across all domains.</p>
+<p><strong>How do I ensure the application settings are correct?</strong></p>
+<p>Verify that the grant types include both Authorization Code and Refresh Token, and ensure that the correct ClientID and Client Secret are used in the EFS configuration.</p>
+<p> </p>

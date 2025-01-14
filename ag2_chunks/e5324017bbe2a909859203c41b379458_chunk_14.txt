@@ -1,0 +1,30 @@
+. This might be delivered in a later release.</p>
+<p data-renderer-start-pos="921"> </p>
+<h4 id="How-can-I-configure-custom-session-settings-?" data-renderer-start-pos="923"><strong data-renderer-mark="true">How can I configure custom session settings ?</strong></h4>
+<p data-renderer-start-pos="970">Sessions settings might be adapted if a client has specific needs for session times.</p>
+<p data-renderer-start-pos="1056">See <span data-inline-card="true" data-card-url="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1059455631"><span class="loader-wrapper"><span aria-expanded="false" aria-haspopup="true" data-testid="hover-card-trigger-wrapper"><a class="css-118vsk3 e26bri0" tabindex="0" role="button" href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20716301558418-Tivian-Access-Sessions-Explained" data-testid="inline-card-resolved-view">Sessions</a></span></span></span> for more information</p>
+<p data-renderer-start-pos="1125"> </p>
+<h4 id="How-can-I-configure-the-password-strength?" data-renderer-start-pos="1127"><strong data-renderer-mark="true">How can I configure the password strength?</strong></h4>
+<p data-renderer-start-pos="1171">The password strength is configured in Okta. It is not configured per application as before but per group of users. As with single-sign-on capabilities a configuration per application is not sufficient anymore.</p>
+<p data-renderer-start-pos="1383">A sane default will be implemented for every of our customer’s. If there is the need to further enhance password strength and a customer asks for that, the password policies for that client could be adapted.</p>
+<p data-renderer-start-pos="1592">Especially password complexity, password age and lock-mechanisms can be configured.</p>
+<p data-renderer-start-pos="1717"> </p>
+<h4 id="How-can-the-emails-from-Okta-be-customized-?" data-renderer-start-pos="1719"><strong data-renderer-mark="true">How can the emails from Okta be customized ?</strong></h4>
+<p data-renderer-start-pos="1765">Unfortunately we do not offer an email customization option right now.</p>
+<p data-renderer-start-pos="1837">All Emails will be sent out using the currently configured style in Okta.</p>
+<p data-renderer-start-pos="1912"> </p>
+<h4 id="Can-I-configure-the-sender-of-the-Okta-emails-for-a-customer?" data-renderer-start-pos="1914"><strong data-renderer-mark="true">Can I configure the sender of the Okta emails for a customer?</strong></h4>
+<p data-renderer-start-pos="1977">No. Email from Okta are send out using the sender &lt;noreply@okta.com&gt;</p>
+<p data-renderer-start-pos="2077"> </p>
+<h4 id="Can-I-configure-password-policies-only-for-specific-users?" data-renderer-start-pos="2079"><strong data-renderer-mark="true">Can I configure password policies only for specific users?</strong></h4>
+<p data-renderer-start-pos="2139">Yes, that is possible, but if there are a lot of different rules it will be hard to manage users.</p>
+<p data-renderer-start-pos="2238"> </p>
+<h4 id="What-characters-are-allowed-when-creating-users?" data-renderer-start-pos="2240"><strong data-renderer-mark="true">What characters are allowed when creating users?</strong></h4>
+<p data-renderer-start-pos="2290">For email addresses only characters specified in RFC 3696 Section 3 are supported.</p>
+<p data-renderer-start-pos="2374">For first and last name 4-byte characters are not supported.</p>
+<p data-renderer-start-pos="2436">For more details see: <a class="cc-1rn59kg" title="https://help.okta.com/en/prod/Content/Topics/Directory/Reference_Directories.htm" href="https://help.okta.com/en/prod/Content/Topics/Directory/Reference_Directories.htm" data-testid="link-with-safety" data-renderer-mark="true">https://help.okta.com/en/prod/Content/Topics/Directory/Reference_Directories.htm</a></p>
+<p data-renderer-start-pos="2540"> </p>
+<h4 id="I-try-to-configure-Okta-but-I-am-not-able-to-see-the-Okta-admin-view.-I-just-see-a-welcome-page.-How-can-I-login-to-the-Okta-admin-console?" data-renderer-start-pos="2542"><strong data-renderer-mark="true">I try to configure Okta but I am not able to see the Okta admin view. I just see a welcome page. How can I login to the Okta admin console?</strong></h4>
+<p data-renderer-start-pos="2683">Customers should not see Okta in any case. That is why this welcome page exists.</p>
+<p data-renderer-start-pos="2765">For Tivian internal users a deeplink can be used to access the admin area - e.g.</p>
+<p data-renderer-start-pos="2847"><a class="cc-1rn59kg" title="https://questback-admin.ok

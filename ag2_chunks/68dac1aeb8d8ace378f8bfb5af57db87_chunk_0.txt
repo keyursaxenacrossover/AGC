@@ -1,0 +1,36 @@
+<p><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p>This article explains the meaning of specific codes (0, -66, -77, and -99) that may appear in your data set. Understanding these codes is crucial for correctly interpreting survey responses and managing data in Questback projects.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>The codes 0, -66, -77, and -99 are used to represent different scenarios in survey responses, particularly for project variables of type v_000. Each code has a specific meaning depending on the context and type of question.</p>
+<ul>
+<li><a href="#h_01HGKSMPRT0YJGQ3QZJXD4KCNM">Understanding the Codes</a></li>
+<li><a href="#h_01HGKSMPRT8YFVQX7YJXBXKP4T">Special Considerations for Text Boxes</a></li>
+<li><a href="#h_01HGKSMPRTG0JQXQXCXVXJ1QD6">Customizing Missing Response Values</a></li>
+</ul>
+<h2 id="h_01HGKSMPRT0YJGQ3QZJXD4KCNM">Understanding the Codes</h2>
+<p>The codes in your data set have the following meanings:</p>
+<h3 id="h_01HGKSMPRTMXJ8QXHXHXJ1QD7">Code 0</h3>
+<p>For project variables of type v_000 (except text boxes): The respondent has seen the question but has not edited it.</p>
+<p>For respondent management variables of the "text box" type: This indicates a pre-filled entry where the variable has not been filled.</p>
+<h3 id="h_01HGKSMPRTQXJ8QXHXHXJ1QD8">Code -66</h3>
+<p>For project variables of type v_000 that refer to text boxes: The respondent has not seen the question concerned because it was hidden.</p>
+<h3 id="h_01HGKSMPRTUXJ8QXHXHXJ1QD9">Code -77</h3>
+<p>For project variables of type v_000 (except text boxes): The respondent has not seen the question concerned. This could be because they aborted the survey or because they were not shown the question/page due to filter settings.</p>
+<h3 id="h_01HGKSMPRTYYJ8QXHXHXJ1QDA">Code -99</h3>
+<p>For project variables of type v_000 that refer to text boxes: The respondent has seen the question but has not edited it.</p>
+<h2 id="h_01HGKSMPRT8YFVQX7YJXBXKP4T">Special Considerations for Text Boxes</h2>
+<p>For text boxes, the code -99 indicates that a respondent has seen a question but has not answered it. This is different from the meaning of -99 for other types of questions.</p>
+<h2 id="h_01HGKSMPRTG0JQXQXCXVXJ1QD6">Customizing Missing Response Values</h2>
+<p>It's important to note that you have the ability to set the "missing response" values within the exported data sets yourself. This allows for customization based on your specific project needs.</p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="h_01HGKSMPRTK0JQXQXCXVXJ1QD7">What does it mean if I see a 0 in my data set?</h3>
+<p>For most variables, it means the respondent saw the question but didn't edit it. For text box variables in respondent management, it indicates a pre-filled entry that wasn't changed.</p>
+<h3 id="h_01HGKSMPRTM0JQXQXCXVXJ1QD8">How do I interpret -66 in my results?</h3>
+<p>The code -66 is specific to text box questions and means the respondent didn't see the question because it was hidden.</p>
+<h3 id="h_01HGKSMPRTQ0JQXQXCXVXJ1QD9">What's the difference between -77 and -99 for text boxes?</h3>
+<p>-77 means the respondent didn't see the question at all (e.g., due to survey abortion or filtering), while -99 means they saw the question but didn't answer it.</p>
+<h3 id="h_01HGKSMPRTV0JQXQXCXVXJ1QDA">Can I change these codes in my exported data?</h3>
+<p>Yes, you can set custom "missing response" values in your exported data sets to suit your analysis needs.</p>
+<p> </p>
+</article>

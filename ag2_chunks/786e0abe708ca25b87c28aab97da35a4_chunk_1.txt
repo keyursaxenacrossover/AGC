@@ -1,0 +1,82 @@
+:JA)</strong> <em><strong>__________________________</strong></em>: true</p></li>
+</ul><p>Rackspace:</p><ul>
+<li><p><strong>elasticsearch_configuration (Standard:NEIN)</strong> <em><strong>__________________________</strong></em>: array ( 'connections' =&gt; array ( 0 =&gt; array ( 'host' =&gt; 'elasticsearch', 'port' =&gt; 9200, ), ), 'retryOnConflict' =&gt; 5, )</p></li>
+<li><p><strong>elasticsearch_enabled (Standard:JA)</strong> <em><strong>__________________________</strong></em>: true</p></li>
+</ul><h3 id="header-6">Panel modules:</h3><p> New content handler "activity stream" and "panel search" are based on elastic search. Activities are stored in type "panel_activities".</p><h2 id="header-8">Support</h2><h3 id="header-10">How to check wether an index exists in elastic search:</h3><ul><li>
+<p>Via the console:</p>
+<ul><li><pre><code class="language-text">curl -XGET 'http://elasticsearch.{{TECHNICALNAME}}.svc.cluster.local:9200/_cat/indices?v'</code></pre></li></ul>
+</li></ul><h3 id="header-11">How to create an index or how to reset it:</h3><ul><li>
+<p>Via the console:</p>
+<ul>
+<li><p>Navigate to the installations htdocs/www folder</p></li>
+<li>
+<p>Panel:</p>
+<pre><code class="language-text">php support/panel_reset_activitystream.php</code></pre>
+</li>
+<li>
+<p>Portals</p>
+<pre><code class="language-text">php support/portal_reset_activitystream.php</code></pre>
+</li>
+</ul>
+</li></ul><h3 id="header-12">How to check wether a data set exists in elastic search:</h3><ul>
+<li>
+<p>There is a plug-in for Google Chrome browser called „Sense“</p>
+<ul><li><p><a href="https://chrome.google.com/webstore/detail/sense-beta/lhjgkmllcaadmopgmanpapmpjgmfcfig">https://chrome.google.com/webstore/detail/sense-beta/lhjgkmllcaadmopgmanpapmpjgmfcfig</a></p></li></ul>
+</li>
+<li>
+<p>alternatively one can check via the console (e.g. putty):</p>
+<ul>
+<li><p>search for data set with activity_id, adjust database name and activity_id <br>curl -XGET '<a href="#">http://elasticsearch.bre.globalpark.com:9200/[dbname]/panel_activities/_search?q=activity_id:[activity_id]</a>'</p></li>
+<li>
+<p>other possible search attributes:</p>
+<ul>
+<li>
+<p>user_id</p>
+<ul><li><pre><code class="language-text">curl -XGET 'http://elasticsearch.{{TECHNICALNAME}}.svc.cluster.local:9200/[dbname]/panel_activities/_search?q=user_id:[user_id]'</code></pre></li></ul>
+</li>
+<li>
+<p>activity_type</p>
+<ul>
+<li><pre><code class="language-text">curl -XGET 'http://elasticsearch.{{TECHNICALNAME}}.svc.cluster.local:9200/[dbname]/panel_activities/_search?q=activity_type:[type]'</code></pre></li>
+<li>
+<p>possible types:</p>
+<ul>
+<li><p>110 forum_thread_created</p></li>
+<li><p>120 forum_post_created</p></li>
+<li><p>210 blog_instance_created</p></li>
+<li><p>220 blog_post_created</p></li>
+<li><p>230 blog_post_comment_created</p></li>
+<li><p>310 discussion_post_created</p></li>
+<li><p>410 file_upload</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>activity_id</p></li>
+<li><p>activity_title</p></li>
+<li><p>activity_description</p></li>
+<li><p>activity_files</p></li>
+<li><p>activity_section</p></li>
+<li><p>activity_section_type_id</p></li>
+<li><p>context_external_filename</p></li>
+<li><p>context_internal_filename</p></li>
+<li><p>context_filesize</p></li>
+<li><p>context_lang_id</p></li>
+<li><p>context_download_section_id</p></li>
+<li><p>context_download_section_title</p></li>
+<li><p>meta_created_at</p></li>
+<li><p>meta_updated_at</p></li>
+<li><p>meta_access_groups</p></li>
+<li><p>meta_published</p></li>
+<li><p>meta_created_at_time</p></li>
+<li><p>meta_updated_at_time</p></li>
+<li><p>meta_is_updated</p></li>
+<li><p>sync_at</p></li>
+<li><p>meta_read_user_ids</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>In the database check table <strong>panel_activities_sync_log</strong></p>
+<ul><li><

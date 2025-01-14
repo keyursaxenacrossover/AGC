@@ -1,0 +1,97 @@
+>
+<p>EFS Version</p>
+<ul><li><p>Always use the branch, e.g. EFS_10.7,EFS_10.8</p></li></ul>
+</li>
+<li>
+<p>Build number</p>
+<ul>
+<li><p>Test build, example: 0001_1, 0002_1 or 0003_1</p></li>
+<li><p>Main build e.g. 0003</p></li>
+</ul>
+</li>
+<li>
+<p>Update only(false/true)</p>
+<ul>
+<li><p>false = an upgrade is done</p></li>
+<li><p>true = an update is done</p></li>
+</ul>
+</li>
+<li>
+<p>Update information</p>
+<ul><li><p>Only needs to be filled if "Update only" is true i.e. in case we only do an update</p></li></ul>
+</li>
+</ul><h3 id="header-6">How do I prepare it?</h3><ul>
+<li>
+<p>In Globis:</p>
+<ul>
+<li>
+<p>Select all installations that need to be updated/upgraded:</p>
+<ul>
+<li><p>Rolloutmanagement=1</p></li>
+<li><p>Version= e.g. 10.8</p></li>
+<li><p>you can make further restrictions, e.g. Data Centre=Bremen</p></li>
+</ul>
+</li>
+<li><p>Export the data using <strong>Result export (CVS)</strong></p></li>
+</ul>
+</li>
+<li>
+<p>In Excel:</p>
+<ul>
+<li><p>In case of an update: In column <strong>EFS tag</strong> check whether there are installations that already have this version. Remove these installations from the list.</p></li>
+<li><p>Copy <strong>Installation path</strong> of remaining installations.</p></li>
+</ul>
+</li>
+<li>
+<p>In the console:</p>
+<ul>
+<li><p>Navigate to <strong>/dumps/nightlyUpgrade/</strong>.</p></li>
+<li>
+<p>Copy <strong>Installation.txt.Muster</strong>:</p>
+<ul><li><pre><code class="language-text">cp Installation.txt.Muster Installation.txt</code></pre></li></ul>
+</li>
+<li>
+<p>Edit copy:</p>
+<ul><li><pre><code class="language-text">vi Installation.txt</code></pre></li></ul>
+</li>
+<li><p>Insert the list of installations from previous excel file.</p></li>
+<li>
+<p>Replace <strong>/htdocs/conf/..</strong> with <strong>../etc/rollout2.conf</strong> and fill out remaining fields:</p>
+<ul><li>
+<p>Example:</p>
+<pre><code class="language-text">:%s!/htdocs/conf/../!;../etc/rollout2.conf;TEST;EFS_10.8;0003_1;true;Update regarding Reporting+ fixes!g</code></pre>
+</li></ul>
+</li>
+<li><p>Save the file.</p></li>
+<li>
+<p>Execute <strong>precheck.sh</strong> to check the format of Installation.txt and to check the installations:</p>
+<ul><li><pre><code class="language-text">sh precheck.sh</code></pre></li></ul>
+</li>
+</ul>
+</li>
+</ul><h3 id="header-7">How do i execute the Nightly script manually?</h3><p>The nightly script is ececuted automatically Monday through Thursday at 2:00am German time (by a cron job).<br>In case you have to execute the script manually, e.g. for US installations you can do so as follows: </p><p></p><ul>
+<li><p>Make sure that all preparations have been done <a href="https://it.globalpark.de/twiki/bin/view/Support/TsNightlySkript#How_do_I_prepare_it">How do I prepare it?</a> and that the <strong>precheck</strong> was successful!</p></li>
+<li>
+<p>Only after that execute the update/upgrade in a 'screen'.</p>
+<ul>
+<li><p>Start screen: screen -S "[any description of the screen]"</p></li>
+<li>
+<p>Execute nightly script in screen:</p>
+<ul>
+<li>
+<p>Frankfurt:</p>
+<pre><code class="language-text">/bin/bash /opt/pdp/support/nightlyUpgradeSkript/nightlyUpgradeScript.sh</code></pre>
+</li>
+<li>
+<p><del>Rackspace:</del></p>
+<pre><code class="language-text">/bin/bash /dumps/visser/mercurials/applications/nightlyUpgradeSkript/nightlyUpgradeScript.sh
+ Wenn mann anstatt dem kompletten Pfad den vorhandenen Symlink benutzt, wird support/portal_compile_css.php nicht ausgefürt. Man muss dann nachträglich prüfen, ob Portals aktiviert ist und dann aus htdocs/www heraus das Skript per php support/portal_compile_css.php ausführen.</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul><h4 id="header-9">Cronjob</h4><p>The nightly script is executed automatically via a cron job </p><p></p><ul>
+<li>
+<p>The cron can be found here:</p>
+<ul><li><p>/etc/cron.d/rom_nightly</p

@@ -1,0 +1,116 @@
+826px;">
+<p>Name of the module in the page’s module overview</p>
+</td>
+<td style="width: 143.663px;">
+<p>Give stars</p>
+</td>
+</tr>
+<tr>
+<td style="width: 200.052px;">
+<p>Number of points a panelist can award per transaction</p>
+</td>
+<td style="width: 384.826px;">
+<p>A range of values can be defined.</p>
+</td>
+<td style="width: 143.663px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 200.052px;">
+<p>A variable containing the number of remaining points of a panelist</p>
+</td>
+<td style="width: 384.826px;">
+<p>Master data variable containing the number of points left for a panelist to award.</p>
+</td>
+<td style="width: 143.663px;">
+<p>m_starcredit</p>
+</td>
+</tr>
+<tr>
+<td style="width: 200.052px;">
+<p>A variable containing the sum of points awarded by other panelists</p>
+</td>
+<td style="width: 384.826px;">
+<p>Master data variable containing the number of points a panelist has received from other panelists.</p>
+</td>
+<td style="width: 143.663px;">
+<p>m_starsreceived</p>
+</td>
+</tr>
+<tr>
+<td style="width: 200.052px;">
+<p>A variable containing the number of awards a panelist has received</p>
+</td>
+<td style="width: 384.826px;">
+<p>Master data variable containing the number of awards to a panelist, i.e. every time the panelist receives points the value of this variable is increased by 1.</p>
+</td>
+<td style="width: 143.663px;">
+<p>m_starcount</p>
+</td>
+</tr>
+<tr>
+<td style="width: 200.052px;">
+<p>Message displayed when the step was successfully executed</p>
+</td>
+<td style="width: 384.826px;">
+<p>This text is displayed after successfully awarding points.</p>
+</td>
+<td style="width: 143.663px;">
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="function-module-quick-poll" class="wysiwyg-text-align-justify"><strong>Function Module: Quick Poll</strong></h3>
+<p class="wysiwyg-text-align-justify">You can use the “Quick poll” function module to place a quick poll on the panel start page, in which logged-in panelists can participate. In the standard panel, you can use the “func_quick_poll” template to change the appearance of the quick poll.</p>
+<p class="wysiwyg-text-align-justify"><strong>Options</strong></p>
+<p class="wysiwyg-text-align-justify">The “Quick poll” function module offers the following options:</p>
+<table class="wysiwyg-text-align-justify" style="height: 664px;" border="1" width="757" data-layout="default" data-table-width="760">
+<colgroup>
+<col style="width: 96.0px;">
+<col style="width: 577.0px;">
+<col style="width: 87.0px;">
+</colgroup>
+<tbody>
+<tr style="height: 24px;">
+<th class="wysiwyg-text-align-center" style="width: 90.5729px; height: 24px;" data-highlight-colour="#57d9a3">
+<p><strong>Option</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 504.358px; height: 24px;" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 151.684px; height: 24px;" data-highlight-colour="#57d9a3">
+<p><strong>Standard panel</strong></p>
+</th>
+</tr>
+<tr style="height: 74px;">
+<td style="width: 82.5521px; height: 74px;">
+<p>Reference name for template</p>
+</td>
+<td style="width: 496.337px; height: 74px;">
+<p>Name that can be used to trigger the module in positioning templates.</p>
+</td>
+<td style="width: 143.663px; height: 74px;">
+<p>Give_stars</p>
+</td>
+</tr>
+<tr style="height: 74px;">
+<td style="width: 82.5521px; height: 74px;">
+<p>Page module title</p>
+</td>
+<td style="width: 496.337px; height: 74px;">
+<p>Name of the module in the page’s module overview</p>
+</td>
+<td style="width: 143.663px; height: 74px;">
+<p>Give stars</p>
+</td>
+</tr>
+<tr style="height: 49px;">
+<td style="width: 82.5521px; height: 49px;">
+<p>Module template</p>
+</td>
+<td style="width: 496.337px; height: 49px;">
+<p>Module-specific template that controls how data provided by the module are displayed.</p>
+</td>
+<td style="width: 143.663px; height: 49px

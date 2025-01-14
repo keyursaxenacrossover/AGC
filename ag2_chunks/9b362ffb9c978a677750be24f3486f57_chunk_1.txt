@@ -1,0 +1,35 @@
+. For that just add multiple entries for both login redirect URIs and Logout redirect URIs with &lt;URL of installation&gt;/iam/admin/auth/login, where &lt;URL of installation&gt; is replaced by the alias-domains.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716892354066" alt="Screenshot_2019-11-28 Questback - Applications.png"></p>
+<p> </p>
+<h3 id="header-10">Step 6: Check Application Settings and copy ClientID and Client secret</h3>
+<p><strong>Values:</strong></p>
+<p>The grant type should be “Authorization Code” - that should be the default value.</p>
+<p>Also add the Grant-Type <strong>“Refresh Token”</strong>.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716866151314" alt="Screenshot_2020-03-06 Questback GmbH - OpenID Connect Client questback beat customervoice360 com EFS admin.png"></p>
+<p> </p>
+<h3 id="header-11">Step 7: Assign Group</h3>
+<p>The group that was created above should be assigned here. This is the group that is specific to this application.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716866655634" alt="Screenshot_2019-11-28 Questback - OpenID Connect Client questback testback com EFS(1).png"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716866223634" alt="Screenshot_2020-03-06 Questback - OpenID Connect Client Questback EFS Local.png"></p>
+<p> </p>
+<h2 id="h_01J6A41Q0J0GH1QVS4D0YZ0M82"> </h2>
+<h2 id="header-13">Aliases</h2>
+<p>For Aliases, the only thing that has to be changed on Okta side is the amount of redirect URIs.</p>
+<p> </p>
+<h3 id="header-14">Step 1: Navigate to General Tab in the created application</h3>
+<p>Applications → Applications → &lt;Created Application&gt; → General → <strong>Edit</strong></p>
+<p> </p>
+<h3 id="header-15">Step 2: Add more aliase</h3>
+<p><strong>Values:</strong></p>
+<p>URL of the alias with the approriate path (&lt;alias base URL&gt;/iam/admin/auth/login)</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716882046354" alt="Screenshot_2019-11-29 Questback - OpenID Connect Client questback testback com EFS.png"></p>
+<p> </p>
+<p>From EFS 22.1 on the domain-aliases will be respected in login resp. logout redirectURL so it is important to maintain the list of redirectURL’s in application up-to-date. The portal-specific applications (created by EFS at creation of a new portal) will contain proper redirectURL’s for each domain-alias registered in EFS (Options / Domains). Additionally, the migration script has an option “Portal update (e.g. update redirects after creation of new domain-alias)”. This option should be used to migrate already existing portal-specific applications with redirectURL’s for all domain-aliases registered in EFS.</p>
+<p> </p>
+<h1 id="h_01J6A3V84P5594E4J1QTJ2S32V">FAQ</h1>
+<p><strong>Why is it important to remember the Group ID?</strong></p>
+<p>The Group ID is essential for configuring the EFS application to ensure that the correct group is assigned the necessary permissions.</p>
+<p><strong>What should I do if there are multiple alias domains?</strong></p>
+<p>Add multiple entries for login and logout redirect URIs for each alias domain to ensure seamless functionality across all domains.</p>
+<p><strong>How do I ensure the application settings are correct?</strong></p>
+<p>Verify that the grant types include both Authorization Code and Refresh Token, and ensure that the correct ClientID and Client Secret are used in the EFS configuration.</p>
+<p> </p>

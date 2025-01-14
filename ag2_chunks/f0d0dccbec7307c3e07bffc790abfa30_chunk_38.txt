@@ -1,0 +1,112 @@
+></em></p>
+<pre><code class="language-json">[ [ "example@domain.tld" ] ]</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>filterId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>id of panel grouping filter <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="header-181">Bonus points</h2>
+<div class="expand-macro">
+<h4 id="h_01J441N79HD3ZBJBDWFXKDCMAP"> </h4>
+<h3 id="header-183">PATCH /panel/panelists/bonuspoints</h3>
+<p>Reset the bonus points of one or multiple panelists to zero. This action will also add a note to each panelists' bonus points balance so panelists get informed about the nullification. If a panelist already has a balance of zero points, no additional note will be added to his/her points log</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "identifierType": "uid",
+  "identifierList": [
+    "123"
+  ],
+  "description": "Example bonus points reset"
+}</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79HKF0D0CW94FXJ6QDH"> </h4>
+<h3 id="header-184">POST /panel/panelists/bonuspoints</h3>
+<p>Returns the bonus points of a given panelist.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "identifierType": "uid",
+  "identifierValue": "123"
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">1345</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79HEAMKE1Q6EH1DFTX1"> </h4>
+<h3 id="header-185">PUT /panel/panelists/bonuspoints</h3>
+<p>Adds or subtracts bonus points for a panelist's account. The panelist can be identified by different criteria (uid, panelist code, pseudonym etc.). The transaction will be shown in the panelists' account balance history afterwards.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "identifierType": "uid",
+  "identifierValue": "123",
+  "pointsValue": 10,
+  "pointsReason": "Example"
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">1355</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79HN661910VVR0QD4GE"> </h4>
+<h3 id="header-186">POST /panel/panelists/bonuspoints/balance</h3>
+<p>Returns the account balance/bonus points positions for all panelists of the installation that happened since the last call to the service. This method can be used to do a regular, incremental replication of the panel's bonus points to another application (where EFS is used as the master system for managing the points). The panelist identifier for the returned balance positions can be uid, panelist code, pseudonym etc.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "returnIdentifierType": "uid",
+  "fetchAll": true,
+  "logTransfer": true
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[
+  {
+    "panelist_identifier_value": "123",
+    "item_type": 0,
+    "survey_id": 1701,
+    "points_id": 6,
+    "description": "Participation in survey Demo",
+    "credit_points": 10,
+    "date": "2018-07-05T08:37:57+00:00",
+    "paid": 0,
+    "paid_date": "",
+    "alt_address": ""
+  }
+]</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79JHFH33VDVVW9QHNFJ"> </h4>
+<h3 id="header-187">POST /panel/panelists/bonuspoints/balance/find</h3>
+<p>Returns the account balance/bonus points positions for a panelist that happened in the last months. The panelist can be identified by different criteria (user_id, panelist

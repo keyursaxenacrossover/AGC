@@ -1,0 +1,34 @@
+{
+    "id": 21548162939026,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/21548162939026.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21548162939026-Removing-Ghost-Accounts-After-Deleting-Records",
+    "author_id": 1904316023094,
+    "comments_disabled": false,
+    "draft": false,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20389541164690,
+    "created_at": "2024-09-23T15:10:49Z",
+    "updated_at": "2024-09-23T15:30:46Z",
+    "name": "Removing Ghost Accounts After Deleting Records",
+    "title": "Removing Ghost Accounts After Deleting Records",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-09-23T15:30:44Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075294,
+    "content_tag_ids": [],
+    "label_names": [
+        "Ghost Accounts",
+        "Record Deletion",
+        "Technical Support"
+    ],
+    "body": "<h1 id=\"h_01J8FQ10WHJ85JXTPQDX85VK1T\">Overview</h1>\n<p>The issue pertains to the presence of ghost accounts in a system after the deletion of a large number of records. Ghost accounts are remnants of deleted accounts that still appear in the system due to their \"Deleted\" status but are invisible.</p>\n<p>To completely remove these accounts, specific technical steps must be followed. Root account access is needed to perform these steps.</p>\n<h1 id=\"h_01J8FQ10WH2MDQAXZQZMCS14EE\">Solution</h1>\n<p>To remove ghost accounts from your system installation, follow these steps:</p>\n<ol>\n<li>\n<p><strong>Log in to Your Instance using root account</strong></p>\n</li>\n<li>\n<p><strong>Navigate to Panel Administration - Delete Panelists page</strong></p>\n<ul>\n<li style=\"list-style-type: none;\">\n<ul>\n<li>Click on \"People\" in the top navigation bar, this will take you to the panel administration area.</li>\n<li>From the left-hand navigation, select \"Panel Configuration.\"</li>\n<li>Scroll down and click on \"[Internal] Ultimately delete panelists\" (it’s the last item in the list).<br><img src=\"https://central-supportdesk.zendesk.com/attachments/token/E6z4rxie5M7guKdLhVYnAY9kU/?name=image.png\">\n</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>\n<p><strong>Check the Number of Deleted Panelists</strong></p>\n<ul>\n<li>At the top of the page, you will see a message like: \"There are currently [number] deleted panelists.\"<br><img src=\"https://central-supportdesk.zendesk.com/attachments/token/nRcZWkHu8jM2xwvQi3ktMHxpR/?name=image.png\">\n</li>\n</ul>\n</li>\n<li>\n<p><strong>Prepare for Deletion</strong></p>\n<ul>\n<li>In the form that appears, check <strong>all the checkboxes</strong> to ensure complete deletion.</li>\n<li>Enter the number of panelists you want to delete:\n<ul>\n<li>A maximum of <strong>100,000</strong> is recommended to avoid straining the system during peak times.</li>\n<li>You can increase this number up to <strong>1,000,000</strong> during less busy hours.</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>\n<p><strong>Execute the Deletion</strong></p>\n<ul>\n<li>Submit the form.</li>\n<li>Repeat this process until the number of deleted panelists shown reaches <strong>0</strong>.<img src=\"https://central-supportdesk.zendesk.com/attachments/token/115kvCmHaWs4WUdcwhePOurna/?name=image.png\"><br><img src=\"https://central-supportdesk.zendesk.com/attachments/token/1R0VAYYY4dfi5aIFgyFM68ve5/?name=image.png\">\n</li>\n</ul>\n</li>\n<li>\n<p><strong>Best Practices</strong></p>\n<ul>\n<li>It is recommended to perform this operation during <strong>off-peak hours</strong> to minimize system load.</li>\n<li>Monitor system performance, especially when deleting large batches of accounts.</li>\n</ul>\n</li>\n</ol>\n<h1 id=\"h_01J8FQ10WHCG2AZP8S21MMQPAA\">Summary</h1>\n<p>Ghost accounts can appear in a system after the deletion of a large number of records. These accounts can be removed by following specific technical steps, using root account.</p>\n<h2 id=\"h_01J8FQ10WHNNN68S6T214XR8Q8\">FAQ</h2>\n<ol>\n<li>\n<strong>What are ghost accounts?</strong><br>Ghost accounts are remnants of deleted accounts that still appear in the system.</li>\n<li>\n<strong>Why do ghost accounts need to be removed?</strong><br>Ghost accounts can cause confusion and might affect performance.</li>\n<li>\n<strong>Who should remove ghost accounts?</strong><br>Root account is needed to perform this operation</li>\n</ol>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

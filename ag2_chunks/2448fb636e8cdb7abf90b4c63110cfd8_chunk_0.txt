@@ -1,0 +1,55 @@
+<p><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p>This article explains the Content Security Policy (CSP) header in EFS, its purpose, and how to configure it for panel websites and surveys.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>The Content Security Policy (CSP) header is a security feature that controls which sources are allowed to load resources in a web application. This guide covers the default CSP settings in EFS, how to modify them, and best practices for implementation.</p>
+<ul>
+<li><a href="#what_is_csp">What is Content Security Policy (CSP)?</a></li>
+<li><a href="#default_csp">Default CSP in EFS</a></li>
+<li><a href="#modifying_csp">Modifying CSP for Panel Websites and Surveys</a></li>
+<li><a href="#example_csp">Example CSP Configurations</a></li>
+<li><a href="#best_practices">Best Practices and Additional Information</a></li>
+</ul>
+<p> </p>
+<h2 id="what_is_csp">What is Content Security Policy (CSP)?</h2>
+<p>Content Security Policy (CSP) is a security header that tells the browser which sources are allowed to load resources. In EFS, the default CSP only allows resources hosted on the EFS installation itself to load.</p>
+<h2 id="default_csp">Default CSP in EFS</h2>
+<p>By default, EFS sends a CSP header that restricts resource loading to the EFS installation. This means that if custom code attempts to load additional resources from external sources (e.g., <a href="https://www.googletagmanager.com/">https://www.googletagmanager.com/</a>), the browser will prevent these resources from loading when opening the panel website or survey.</p>
+<p> </p>
+<h2 id="modifying_csp">Modifying CSP for Panel Websites and Surveys</h2>
+<h3 id="panel_websites">For Panel Websites</h3>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014812884370" width="531" height="188"></p>
+<p>To modify the CSP for panel websites:</p>
+<ol>
+<li>Navigate to <strong>Website &gt; select website from list &gt; Global configuration</strong>
+</li>
+<li>Locate the "<strong>Content-Security-Policy</strong>" field</li>
+<li>Enter the desired CSP configuration</li>
+</ol>
+<h3 id="surveys">For Surveys</h3>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014812888082"></p>
+<p>To modify the CSP for surveys:</p>
+<ol>
+<li>Go to <strong>Survey menu &gt; Project properties &gt; Survey options &gt; Security</strong>
+</li>
+<li>Find the "<strong>Content-Security-Policy</strong>" field</li>
+<li>Enter the desired CSP configuration</li>
+</ol>
+<h2 id="example_csp">Example CSP Configurations</h2>
+<h3 id="default_example">Default Content-Security-Policy</h3>
+<p><code>default-src 'self' 'unsafe-inline' 'unsafe-eval' https://ajax.googleapis.com; img-src https:; object-src 'self'</code></p>
+<h3 id="custom_example">Example of Required Content-Security-Policy</h3>
+<p><code>default-src 'self' 'unsafe-inline' 'unsafe-eval' https://ajax.googleapis.com https://www.googletagmanager.com https://region1.google-analytics.com; img-src https:; object-src 'self'</code></p>
+<p> </p>
+<h2 id="best_practices">Best Practices and Additional Information</h2>
+<p>While it's possible to leave the Content-Security-Policy field empty, which would allow all sources, this is not recommended from a security perspective. It's best to explicitly define allowed sources in the CSP.</p>
+<p>For more detailed information on Content Security Policy, refer to the Mozilla Developer Network documentation: <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy</a></p>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq_1">What happens if I don't set a Content Security Policy?</h3>
+<p>If you leave the Content-Security-Policy field empty, EFS will not send a CSP header, and all sources will be allowed to load. However, this is not recommended from a security standpoint.</p>
+<h3 id="faq_2">Why does my custom code fail to load external resources?</h3>
+<p>If your custom code is trying to load resources from external domains not specified in the CSP, the browser will block these resources. You need to update the CSP to include these external domains explicitly.</p>
+<h3 id="faq_3">Can I use different CSP settings for different surveys?</h3>
+<p>Yes, you can set different CSP configurations for each survey by modifying the "Content-Security-Policy" field in the survey's security settings.</p>
+</article>

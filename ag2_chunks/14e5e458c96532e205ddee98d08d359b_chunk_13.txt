@@ -1,0 +1,43 @@
+</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">allow icharts export format for results data exports</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;">false, true</td>
+<td style="padding: 2px 3px; vertical-align: middle; text-align: center; width: 15.536%;">FALSE</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;"> </td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;"> </td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">export_jobmaker_behaviour</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">Queueing behaviour for the EFS exports. use this for high-traffic/volume installations. this variable deprecates the (bool) $__export_skip_jobmaker variable which has been removed from the sample config in EFS &gt; 8.1</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;">0 = default behaviour: survey export jobs will be queued if they contain loop data. this was the built-in EFS behaviour since v3.4 1 = skip queue: export jobs will never be queued. use this for development installations 2 = force queue: all export jobs will be queued.</td>
+<td style="padding: 2px 3px; vertical-align: middle; text-align: right; width: 15.536%;">0</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;">no</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;">no</td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">export_max_rows_per_file</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">Limit of rows per export file in export, useful for huge installations</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;">false = no limit &gt;0 = limit of rows per file.</td>
+<td style="padding: 2px 3px; vertical-align: middle; text-align: right; width: 15.536%;">0</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;">no</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;">no</td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">export_temp_sample_data</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">If true then during result data export the temp sample_data table will be used in order to increase performance.</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;">true, false</td>
+<td style="padding: 2px 3px; vertical-align: middle; text-align: center; width: 15.536%;">FALSE</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;"> </td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;"> </td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">facebook_enabled</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">enable facebook for this installation?</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;">false, true</td>
+<td style="padding: 2px 3px; vertical-align: middle; text-align: center; width: 15.536%;">FALSE</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;">no</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;">no</td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">fallback_sender</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">fallback_sender in mail form</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;"> </td>

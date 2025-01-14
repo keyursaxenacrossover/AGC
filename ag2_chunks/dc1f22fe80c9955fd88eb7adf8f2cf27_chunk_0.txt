@@ -1,0 +1,28 @@
+<p class="wysiwyg-text-align-justify"><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p class="wysiwyg-text-align-justify">This article provides guidance on how to prevent survey invitations and other emails from being classified as spam. It covers various techniques and best practices to improve email deliverability, including understanding spam classification, using the Mail report feature, and implementing email authentication methods.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">Learn about spam classification, email authentication methods, and strategies to ensure your survey invitations reach participants' inboxes.</p>
+<ul class="wysiwyg-text-align-justify">
+<li><a href="#h_01HGKSMPRT0YJQX9QJXD9XBXNM">How Is Email Classified As Spam?</a></li>
+<li><a href="#h_01HGKSMPRT8YJQX9QJXD9XBXNP">The Role of the Mail Report</a></li>
+<li><a href="#h_01HGKSMPRTGYJQX9QJXD9XBXNQ">Preventing Messages from Being Classified as Spam</a></li>
+<li><a href="#h_01HGKSMPRTPYJQX9QJXD9XBXNR">Adding Mail Senders Correctly in EFS</a></li>
+<li><a href="#h_01HGKSMPRTXYJQX9QJXD9XBXNS">Using List-Unsubscribe Header</a></li>
+</ul>
+<h2 id="h_01HGKSMPRT0YJQX9QJXD9XBXNM" class="wysiwyg-text-align-justify">How Is Email Classified As Spam?</h2>
+<p class="wysiwyg-text-align-justify">To ensure an email isn't spam or carrying a virus, it undergoes multi-stage filtering and security checks at the receiving mail server. This spam detection uses various technologies:</p>
+<p class="wysiwyg-text-align-justify"><strong>Filter Lists: </strong>Spam filters use blacklists containing spam characteristics like sender, IP address, or keywords. If these are recognized, the message is flagged, moved, or deleted. Whitelists ensure messages from certain senders are always delivered.</p>
+<p class="wysiwyg-text-align-justify"><strong>Checking IP Addresses: </strong>The sender's IP address is checked to determine if they are known for spam, as spammers often fake email addresses.</p>
+<p class="wysiwyg-text-align-justify"><strong>Content Filtering: </strong>Keywords typical of spam, such as "Viagra," are scanned. However, if keywords have special characters or misspellings, the filter may fail.</p>
+<p class="wysiwyg-text-align-justify"><strong>Reputation Score: </strong>All factors above contribute to a reputation score for an email. If the score exceeds a threshold, the email is classified as spam. We can't control the receiving mail server, so some emails may still end up in the spam or Junk folder.</p>
+<p class="wysiwyg-text-align-justify"><strong>Note:</strong> <span style="color: #172b4d; background-color: #e9f2ff;">You can check your mails in advance with online tools, e.g.   </span><span style="color: #172b4d; background-color: #e9f2ff;" data-inline-card="true" data-card-url="https://www.mail-tester.com/"><span class="loader-wrapper"><span aria-expanded="false" aria-haspopup="true" data-testid="hover-card-trigger-wrapper"><a class="css-118vsk3 e26bri0" tabindex="0" role="button" href="https://www.mail-tester.com/" data-testid="inline-card-resolved-view"><span class="css-1cwva94 e1a3lu072" data-testid="inline-card-icon-and-title"><span class="css-1lcr4h8 e1a3lu075"><img class="smart-link-icon css-ijlt3r e1yrcv6a0" style="height: 14px; width: 14px;" src="https://www.mail-tester.com/img/favicon.png" data-testid="inline-card-icon-and-title-image"></span><span class="smart-link-title-wrapper css-0 e1a3lu077">Newsletters spam test by mail-tester.com</span></span></a></span></span></span><span style="color: #172b4d; background-color: #e9f2ff;">.</span></p>
+<h2 id="h_01HGKSMPRT8YJQX9QJXD9XBXNP" class="wysiwyg-text-align-justify">The Role of the Mail Report</h2>
+<p class="wysiwyg-text-align-justify">The Mail report in the Survey menu helps monitor the sending process and provides an overview of all emails sent during the survey. It displays various statuses relevant to spam classification:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Sent</li>
+<li>Rejected</li>
+<li>Delivery failed</li>
+<li>Not reachable</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The report also shows responses from the receiving mail server, which can help identify

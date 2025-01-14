@@ -1,0 +1,47 @@
+ export file.</p>
+<p class="wysiwyg-text-align-justify">The export file contains all the posts from that chat with the following information:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Selected panelist data: the author’s pseudonym (pseudonym), account name (u_account), first name (u_firstname), name (u_name), e-mail address (u_email), an alternative ID (u_other_id), and cell phone number (u_mobile).</li>
+<li>Selected system data: panel entry date (penter_date), panel status (pstatus).</li>
+<li>Chat-specific data: date and time of post (dt), post ID (id), and text (description).</li>
+</ul>
+<h2 id="integrating-a-chat-into-the-website" class="wysiwyg-text-align-justify"><strong>Integrating a Chat into the Website</strong></h2>
+<p class="wysiwyg-text-align-justify">If you want to set up a chat, please proceed as follows:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>On the desired page, create a page module of the “Chat” type.</li>
+<li>Configure the setting options as required.<br>– Select the “func_chat” module template.<br>– Make sure that the appropriate discussion section is selected.</li>
+</ol>
+<h1 id="downloads" class="sc-iGrrsa eYmPYl wysiwyg-text-align-justify"><strong>Downloads</strong></h1>
+<p class="wysiwyg-text-align-justify">EFS Panel provides a download management function for the panel website. It allows you to create download lists which the panelists can use to download or even exchange files. Such download lists can be used in a variety of scenarios:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>You can set up a download section containing important information on the panel. In a panel addressing children and teenagers, for example, you might want to provide information for parents and teachers. Or you could make legally relevant texts, such as terms of use or data privacy rules, available for download.</li>
+<li>You can provide data that are related to the subject of the panel or a currently running survey. If the panelists are expected to keep complex shopping diaries, for example, you can provide instructions or tips that new panelists can download and print.</li>
+<li>If you use EFS Panel as the platform for a community, you can allow the panelists to use the upload function and thus support the exchange of images, for example.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Work steps</strong></p>
+<p class="wysiwyg-text-align-justify">Setting up a download list involves the following steps:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Creating a download section.</li>
+<li>Uploading files or enabling the panelists to upload files.</li>
+<li>Creating a page for the download list and referencing the appropriate section.</li>
+<li>Monitoring, and if necessary, actively controlling the uploading activities if the panelists are allowed to upload files.</li>
+</ul>
+<h2 id="managing-download-sections" class="wysiwyg-text-align-justify"><strong>Managing Download Sections</strong></h2>
+<p class="wysiwyg-text-align-justify">The file lists are managed from the <strong>Website → Panel websites → {Selected language version} → Downloads</strong> menu. In this menu, you can set up download sections, upload files, and check files uploaded by the panelists.</p>
+<p class="wysiwyg-text-align-justify">The editing of the downloads of a panel requires read rights for “panel_download”.</p>
+<p class="wysiwyg-text-align-justify"><strong>Overview of the download sections</strong></p>
+<p class="wysiwyg-text-align-justify">The overview table lists all the download sections created for the respective language version along with their titles, descriptions, and the number of files.</p>
+<p class="wysiwyg-text-align-justify">If, in an installation with multiple websites and/or language versions, you want to view the downloads of another language version, you change the setting in the upper part of the dialog. With the View function, you can specify which table columns and how many rows per page will be displayed. You can search the contents of the overview table.</p>
+<p class="wysiwyg-text-align-justify"><strong>Edit options</strong></p>
+<p class="wysiwyg-text-align-justify">Click on the <strong>Create section</strong> button to open the dialog for creating a new download section.</p>
+<p class="wysiwyg-text-align-justify">Click on the title of a download section to open the list of existing files. Click on the title of a file to edit its properties.</p>
+<p class="wysiwyg-text-align-justify">Via the icons in the “Actions” column you can edit individual download sections:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<strong>Edit</strong>: This opens the dialog for editing the section properties. Table 19.11 provides a detailed explanation of the properties.</li>
+<li>
+<strong>Edit files</strong>: This opens the list of files in the respective section.</li>
+<li>
+<strong>Copy</strong>: The desired section will be copied. The files will not be copied, though, as this is usually not very practical.</li>
+<li>
+<strong>Delete</strong>: The selected section will be deleted following

@@ -1,0 +1,60 @@
+ service name and date.</p>
+</li>
+</ul>
+<h2 id="Access-Modes" class="wysiwyg-text-align-justify" data-renderer-start-pos="1987">Access Modes</h2>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="2001">The service layer offers two access modes:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="2047"><strong data-renderer-mark="true">Description</strong>: In this modus, the service layer will describe itself. In SOAP format, for example, a WSDL will be generated and delivered. This modus allows clients to find out which services are provided and which parameters they have</p>
+</li>
+<li>
+<p data-renderer-start-pos="2284"><strong data-renderer-mark="true">Transaction</strong>: In this modus, a service method is called and executed. How you address these modes depends on the format handler used.</p>
+</li>
+</ul>
+<h2 id="Format-Handler" class="wysiwyg-text-align-justify" data-renderer-start-pos="2420">Format Handler</h2>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="2436">When requesting access to the EFS Service Layer, all format handlers can be used as needed. So one of your applications could access EFS using SOAP, while another using REST, through the same token or user authentication.<br>Currently, the service layer supports HTTPS and four handlers:</p>
+<ul class="ak-ul" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="2723"><strong data-renderer-mark="true">SOAP</strong>: Provides API access using the SOAP protocol.</p>
+<ul class="ak-ul" data-indent-level="2">
+<li>
+<p data-renderer-start-pos="2777">To activate the handler, use the URL parameter "handler" with the value "soap".</p>
+</li>
+<li>
+<p data-renderer-start-pos="2860">The name of the invoked method is handed over in the URL parameter "method". The method name is structured as follows: MODULENAME_ACTORNAME_METHODNAME (separator: underscore, ”_”).</p>
+</li>
+<li>
+<p data-renderer-start-pos="3044">If the URL parameter "wsdl" is set in the request, the description mode will be triggered and a WSDL will be generated. Otherwise, the transaction mode will be used. Since the WSDL also specifies a Stylesheet, the file is also viewable in a browser.</p>
+</li>
+</ul>
+</li>
+<li>
+<p data-renderer-start-pos="3299"><strong data-renderer-mark="true">REST</strong>: Provides REST API access, see the <a class="cc-1rn59kg" title="/wiki/spaces/DOC/pages/1853128733" href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20472841653138-List-of-EFS-Service-Layer-API-services" data-testid="link-with-safety" data-renderer-mark="true">full list of services for REST examples</a>.</p>
+<ul class="ak-ul" data-indent-level="2">
+<li>
+<p data-renderer-start-pos="3383">To activate the handler, just create the REST request, as specified in the documentation or RAML file, e.g. <code class="code cc-1o5d2cw" data-renderer-mark="true">GET https://efs-installation.com/service/survey/surveys/?token=TOKEN</code>.<br>The content type of all requests containing a HTTP body must be <code class="code cc-1o5d2cw" data-renderer-mark="true">application/json</code> and therefore all request bodies must be JSON encoded.</p>
+</li>
+<li>
+<p data-renderer-start-pos="3700">To get the RAML description file, triggering the description mode, create a request to /service/ using the URL parameters "handler=rest&amp;raml=1", e.g. <code class="code cc-1o5d2cw" data-renderer-mark="true">GET https://efs-installation.com/service/?handler=rest&amp;raml=1&amp;token=TOKEN</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p data-renderer-start-pos="3929"><strong data-renderer-mark="true">PHP-serialized</strong>: Here, the input and output parameters are transferred as serialized PHP arrays. This is the recommended approach for PHP clients.</p>
+<ul class="ak-ul" data-indent-level="2">
+<li>
+<p data-renderer-start-pos="4078">To activate the handler, use the URL parameter "handler" with the value "php".</p>
+</li>
+<li>
+<p data-renderer-start-pos="4160">The name of the invoked method is handed over in the URL parameter "method". The method name is structured as follows: MODULENAME.ACTORNAME.METHODNAME (separator: periods).</p>
+</li>
+<li>
+<p data-renderer-start-pos="4336">If the request is an HTTP GET request, the description mode will be triggered. Otherwise, the transaction mode will be used.</p>
+</li>
+</ul>
+</li>
+<li>
+<p data-renderer-start-pos="4466"><strong data-renderer-mark="true">JSON</strong>: Data are transferred in JSON encoding. See the example below.</p>
+<ul class="ak-ul" data-indent-level="2">
+<li>
+<p

@@ -1,0 +1,116 @@
+ the default icons. Then, you can select the desired files from the media library.</p>
+<h4 id="detail-configuration-3">Detail Configuration</h4>
+<ul>
+<li>
+<p>Show answer texts: Per default, the texts of the answer options are used as Alt text. Optionally they can be displayed below the icons.</p>
+</li>
+<li>
+<p>Force vertical alignment: Per default, the display of the options depends on the screen width of the device used: For wide screens horizontal, for small screens vertical. Optionally vertical alignment can be enforced for all devices.</p>
+</li>
+<li>
+<p>Horizontal alignment: center, left, right.</p>
+</li>
+<li>
+<p>Minimum width of the images.</p>
+<ul>
+<li>
+<p>Minimum width for display of the images.</p>
+</li>
+<li>
+<p>If the images don’t fit in line while respecting the minimum width, the view switches to a vertical display.</p>
+</li>
+<li>
+<p>Valid range: 50-1000 pixels. Default: 100 pixels.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Maximum width of the images. Default: 200 pixels.</p>
+</li>
+</ul>
+<h4 id="improving-the-answer-quality">Improving the Answer Quality</h4>
+<p>To improve the answer quality of multiple-response questions, in particular,<em> EFS</em> provides two dedicated features:</p>
+<ul>
+<li>
+<p>In many scenarios, you may wish to limit the number of checked answer options. In a question with ten answer options, for example, you may want the participants to select at most three or between three and five answer options. The respective checks can be realized with combination checks.</p>
+</li>
+<li>
+<p>Participants will frequently check an option “No answer” or “None“, but activate one or several other answers as well. This can easily be prevented by deploying the so-called “exclusive checkbox”.</p>
+</li>
+</ul>
+<h2 id="fields-for-text-input">Fields for text input</h2>
+<h3 id="text-field-single-row">Text Field (Single Row)</h3>
+<p>This question type can be used to ask questions to which the answer is to be entered into an open-ended text field. The following is an example from a master data query, in which the year of birth is to be entered.</p>
+<h4 id="base-elements-7">Base Elements</h4>
+<ul>
+<li>
+<p>Question text</p>
+</li>
+<li>
+<p>Fill-in instruction</p>
+</li>
+<li>
+<p>Help text</p>
+</li>
+<li>
+<p>Text around the entry field</p>
+</li>
+<li>
+<p>Text field width:</p>
+<ul>
+<li>
+<p>“Responsive layout”: Specified in em or %. The maximum value is 1000em or 100%. If no value is entered, the default value will be used. The default text field width is defined in the menu <strong>Layout</strong> → <strong>Standard editor</strong> → <strong>Form elements</strong>.</p>
+</li>
+<li>
+<p>Classic system layout: Default: 255 characters.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>The maximum length of the entry. Default in “Responsive layout” projects: 255 characters. A maximum of 255 characters is permitted.</p>
+</li>
+</ul>
+<h4 id="positioning-the-entry-field-between-surrounding-text">Positioning the entry field between the surrounding text</h4>
+<p>You can place the entry field within, before, or after a text. To do so, enter the desired text into the “Text around the entry field” field, and place the “%s” wildcard at the position in the text where the entry field is to be inserted.</p>
+<h3 id="text-area">Text area</h3>
+<p>This question type can be used to ask questions to which the answer is to be entered into a multiple-row text field. The following is an example from a cover test. Respondents are being asked to comment on a magazine cover.</p>
+<h4 id="base-elements-8">Base Elements</h4>
+<ul>
+<li>
+<p>Question text</p>
+</li>
+<li>
+<p>Fill-in instruction</p>
+</li>
+<li>
+<p>Help text</p>
+</li>
+<li>
+<p>Text around the entry field</p>
+</li>
+<li>
+<p>Number of columns (width of the text area)</p>
+</li>
+<li>
+<p>Number of rows (height of the text area</p>
+</li>
+</ul>
+<h3 id="multi-text-field-vertical-horizontal">Multi Text Field (Vertical / Horizontal)</h3>
+<p>Vertical and horizontal multi-text fields can be used to ask questions to which the answer is to be entered into an open-ended text field area. The following is an example of a vertical multi-text field.</p>
+<h4 id="base-elements-9">Base Elements</h4>
+<ul>
+<li>
+<p>Question text</p>
+</li>
+<li>
+<p>Fill-in instruction</p>
+</li>
+<li>
+<p>Help text</p>
+</li>
+<li>
+<p>143: Texts for the entry fields 1-n</p>
+<ul>
+<li>
+<p>In projects with a classic system layout, you can position the entry fields within, before, or after the texts. Please mind: If the space between the left part of the text and the entry field is too big, use the “Width of the left column with the question texts (in pixels)” field to minimize it.</p>
+</

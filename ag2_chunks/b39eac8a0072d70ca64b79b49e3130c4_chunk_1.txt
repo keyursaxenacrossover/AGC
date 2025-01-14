@@ -1,0 +1,97 @@
+-03-surveyresponses`'
+- Set value (_Sandbox-DE-02_): '`sandbox-de-02-surveyresponses`'
+- Set value (_DEVQA_): '`qa-surveyresponses`'
+
+[] Set config variable '`kafka_topic_survey_updates`'
+- Set value (_Prod-DE-03_): '`prod-de-03-updatesurveyresponses`'
+- Set value (_Sandbox-DE-02_): '`sandbox-de-02-updatesurveyresponses`'
+- Set value (_DEVQA_): '`qa-updatesurveyresponses`'
+
+[] Set config variable '`survey_collection_kafka_publishing_enabled`' (True by default)
+- Set value: `true`
+
+[] Set config variable '`guide_kafka_publishing_enabled`' (True by default)
+- Set value: `true`
+
+[] Set config variable '`general_kafka_publishing_enabled`'
+- Set value: `true`
+
+[] Set config variable '`portal_dashboard_service_enabled`'
+- Set value `true`
+
+**DataVoyager Config:**
+
+Set here: "Configuration (root)"
+
+[] Set config variable '`oat.kafka.enabled`'
+
+- Set value (Current): `Yes`
+
+[] Add _Data Source_
+
+[] Get DB details here:
+
+Execute here: `{{INSTALLATIONPATHHTDOCS}}$`
+
+- Execute: `grep -P '^\$__db' conf/config.inc.php3 | awk -F"=" '{print $1":",$2}' | sed -E 's/("|;.*|\$__)//g'`
+
+Add here: `Data Source &gt;&gt; +`
+
+- Select value for _Type_: `Database`
+- Set value for _Title_: `{{TECHNICALNAME}}.customervoice360.com`
+- Set value for _Installation ID_: ``
+- Set value for _Database name_: `{{EFSDBNAME}}`
+- Set value for _Database host_: `{{EFSDBHOST}}`
+- Set value for _Database port_: `{{EFSDBPORT}}`
+- Set value for _Database socket_: `{{EFSDBSOCKET}}`
+- Set value for _Database user_: `{{EFSDBUSER}}`
+- Set value for _Database password_: `{{EFSDBPASSWORD}}` !!!NEVER PRINT OUT HERE!!!
+
+- Set value for _Service layer URL (optional)_: `https://{{TECHNICALNAME}}.customervoice360.com` (if not specified explicitly use the token of the SYS_API user setup in EFS)
+- Set value for _Service layer access token (optional)_: `{{}}` !!!NEVER PRINT OUT HERE!!!
+
+[] Add source specific DataVoyager service layer user
+
+- Select value for _Role_: `Admin (Admin)`
+- Select value for _Language_: `en_US`
+- Set value for _First Name *_: `SYS_API_{{TECHNICALNAME}}`
+- Set value for _Last name *_: `SYS_API_{{TECHNICALNAME}}`
+- Set value for _E-mail *_: `sys_api_{{TECHNICALNAME}}@3uu.eu`
+- Set value for _Password (qb_only)_: `***` (i.e. generate in KeePass)
+- Set value for _Expires at_: `2038-01-01`
+- Set value for _User account status_: `Active` (select checkbox)
+- Set value for _REST-API access token (qb_only)_: ` ` {i.e. generate in EFS, copy and delete}  !!!NEVER PRINT OUT HERE!!!
+
+[] Globis update[x] Globis update (EFS and DataVoyager)
+
+Update here: `{{INSTALLATIONPATHHTDOCS}}`
+
+- Execute: `u [initials] [date]: Activated Dashbo \(TIVI-ID\)`
+
+_Notes:_
+
+
+&gt;**Re-Sync Dashbo data**
+
+[] Delete Dashbo data (DynamoDB/Druid)
+
+Execute here: "`{{INSTALLATIONPATHWWW}}$`"
+
+- Execute: `php support/sendGuideKafkaEvents.php --allGuides --deleteMode`
+
+_Log_:
+```
+{{log}}
+```
+
+[] Sync Dashbo data (DynamoDB/Druid)
+
+Execute here: "`{{INSTALLATIONPATHWWW}}$`"
+
+- Execute: `php support/sendGuideKafkaEvents.php --allGuides`
+
+_Log_:
+```
+{{log}}
+```</code></pre>
+<p> </p>

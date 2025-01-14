@@ -1,0 +1,39 @@
+<strong>Symptoms</strong>: Sporadic High system overload (every hour or day, etc...).</li>
+<li>
+<strong>Steps</strong>:
+<ul>
+<li>Investigate the number and frequency of <strong>Group Update Rules</strong> being executed.<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/22111655582994">
+</li>
+<li>Investigate Jobs performance as mentioned above.</li>
+</ul>
+</li>
+</ul>
+<h4 id="h_01JAQG6WKNP6X8B2NSR9KY2XEV"> </h4>
+<hr>
+<h1 id="h_01JAQG6WKNGDYKZAD2Y2DVK9HV">Summary:</h1>
+<p>Performance issues in DXI can have a variety of root causes, ranging from long query processing times and group update rules to infrastructure limitations like resource starvation. By systematically checking the key areas mentioned, such as Grafana, AWS logs, and survey execution times via Watchdog, agents can diagnose the core issues and apply appropriate solutions.</p>
+<hr>
+<h2 id="h_01JAQG6WKN6SJ0B9GDM0912ZQ9">FAQ:</h2>
+<h4 id="h_01JAQG6WKNSFXMC37D73KX4WFG">1. <strong>What are common causes of slow performance in DXI?</strong>
+</h4>
+<ul>
+<li>Performance issues can result from long query processing times, a high number of Group Update Rules, resource starvation, or high execution times for certain survey pages.</li>
+</ul>
+<h4 id="h_01JAQG6WKN4NCRV58GKCX3V2D6">2. <strong>How do I know if queries are running too long?</strong>
+</h4>
+<ul>
+<li>Use Watchdog to monitor execution times. Surveys with "Exec. time" over 2 seconds are typically considered problematic and should be reviewed.</li>
+</ul>h_01JAQG6WKNGDYKZAD2Y2DVK9HV">Summary:</h1>
+<p>Performance issues in DXI can have a variety of root causes, ranging from long query processing times and group update rules to infrastructure limitations like resource starvation. By systematically checking the key areas mentioned, such as Grafana, AWS logs, and survey execution times via Watchdog, agents can diagnose the core issues and apply appropriate solutions.</p>
+<hr>
+<h2 id="h_01JAQG6WKN6SJ0B9GDM0912ZQ9">FAQ:</h2>
+<h4 id="h_01JAQG6WKNSFXMC37D73KX4WFG">1. <strong>What are common causes of slow performance in DXI?</strong>
+</h4>
+<ul>
+<li>Performance issues can result from long query processing times, a high number of Group Update Rules, resource starvation, or high execution times for certain survey pages.</li>
+</ul>
+<h4 id="h_01JAQG6WKN4NCRV58GKCX3V2D6">2. <strong>How do I know if queries are running too long?</strong>
+</h4>
+<ul>
+<li>Use Watchdog to monitor execution times. Surveys with "Exec. time" over 2 seconds are typically considered problematic and should be reviewed.</li>
+</ul>

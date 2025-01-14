@@ -1,0 +1,62 @@
+Beim Generieren der XLS Datei läuft php in ein Memory limit.</p></li>
+<li><p>Der Bericht ist zu groß und muss gesplittet werden.</p></li>
+</ul>
+</li>
+<li>
+<p><strong>Error in survey_reporting_publication_job 239 ,setting status to -1</strong></p>
+<ul>
+<li><p>Der Bericht mag nicht besonders groß oder komplex aussehen, erreicht aber irgendwo ein Limit (zu viele Labels durch zu viele Listen, zu viele Variablen, zu viele Aufwendige Berechnungen z.B. Median-Berechnung)</p></li>
+<li><p>Es wird empfohlen, den Bericht sinnvoll auf mehrere Berichte aufzuteilen</p></li>
+</ul>
+</li>
+<li>
+<p><strong>PHP Warning: reporting_renderer_xmlbuilder::text(): unterminated entity reference [problematischer Text bzw. Text der auf problematischen Text im Bericht folgt] in /efsbuilds/efsbuilds/EFS_10.7_0038/modules/reporting/components/renderer/xmlbuilder.inc.php on line 64</strong></p>
+<ul>
+<li><p>Hier war z.B. mal ein '&amp;' im Label einer Kategorie in einer Rekodierung problematisch: tägliche Internetnutzung &amp; Freunde auf QB</p></li>
+<li><p>Problematisches Zeichen ausfindig machen und entfernen</p></li>
+</ul>
+</li>
+<li>
+<p><strong>Report job failed Got empty data from pptx service. Possible error is that the template file is missing on the server. (reporting_template.pptx)</strong></p>
+<ul><li><p>MUSS NOCH ANALYSIERT WERDEN</p></li></ul>
+</li>
+<li>
+<p><strong>processPublicationsError::jobId::373 - Report job failed Call to a member function addAttribute() on a non-object, setting status to -1</strong></p>
+<ul><li><p>Genaue Ursache ist mir nicht bekannt. Trat bei HSBC auf in case 00336987, Kanban KANBAN-10535.</p></li></ul>
+</li>
+<li>
+<p><strong>processPublicationsError::ID::413 - Report job failed Not Found</strong></p>
+<ul><li><p>Trat auf bei HSBC. Gehört zu case 00336987, KANBAN-10535. Genaue Ursache ist mir nicht bekannt.</p></li></ul>
+</li>
+</ul><p></p><h4 id="header-19">Automatische Exportgenerierung schlug fehl</h4><ul>
+<li>
+<p>zunächst Tabelle <strong>survey_reporting_log</strong> prüfen:</p>
+<ul><li><pre><code class="language-text">select * from survey_reporting_log where report_id=184 and tstamp&gt;="2015-11-28 23:00:00";</code></pre></li></ul>
+</li>
+<li>
+<p>Dann die ggf. vorhandene Fehlermeldung ansehen:</p>
+<ul>
+<li>
+<p><strong>Couldn't get file</strong></p>
+<ul><li><p>siehe Kanban <a href="https://jira.3uu.de/browse/KANBAN-10333">KANBAN-10333</a>. Fehler sollte nicht mehr auftreten bzw. falls ja, sollte die Meldung weitere Informationen liefern</p></li></ul>
+</li>
+<li>
+<p><strong>Report job failed 1. Unknown field lfdn</strong></p>
+<ul><li><p>Kanban <a href="https://jira.3uu.de/browse/KANBAN-10387">KANBAN-10387</a></p></li></ul>
+</li>
+<li>
+<p><strong>Cells in range A22:D22 cannot be merged because cells in range B22:F22 have already been merged.</strong> (oder ähnlich)</p>
+<ul><li><p>Kanban: <a href="https://jira.3uu.de/browse/KANBAN-9578">KANBAN-9578</a></p></li></ul>
+</li>
+<li>
+<p><strong>Report job failed updateReportingData failed</strong></p>
+<ul>
+<li><p>(case 00454518) Bevor der Export aktualisiert wurde, hat das System ein Datenupdate versucht und ist dabei gescheitert</p></li>
+<li><p>Letzteres könnte ein Failed Query oder einen PHP Error verursacht haben. Daher beides prüfen.</p></li>
+<li><p>Man sollte auch die Tabelle survey_reporting_dataupdate_schedule für den Bericht (report_id) prüfen, um zu sehen, ob die Aktualisierung fehlgeschlagen ist und wann (status=3)</p></li>
+</ul>
+</li>
+<li>
+<p><strong>Report job failed Call to a member function __getLastRequest() on a non-object, setting status to -1</strong></p>
+<ul>
+<li><p>z.B. case 00377812, Es gab Probleme mit dem <a href="https://it.globalpark.de/twiki/bin/view/Support/SSL">SSL</a> Zertifikat des generierenden Servers (<a href="https://rp/pptx/EfsService.svc?wsdl">https://rp/pptx/EfsService.svc?wsdl</a

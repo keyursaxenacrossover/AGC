@@ -1,0 +1,71 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K" class="wysiwyg-text-align-justify">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article provides a comprehensive guide on using the Language Editor in the EFS Survey. It covers creating and managing survey languages, editing text elements, handling survey messages, and using wildcards in multilingual projects.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">The Language Editor is a crucial tool for creating and managing multilingual surveys in EFS. This guide will walk you through various aspects of language management, from creating new languages to exporting and importing text elements for external editing.</p>
+<ul>
+<li><a href="#survey-languages">Survey languages</a></li>
+<li><a href="#text-elements">Text elements</a></li>
+<li><a href="#survey-messages">Survey messages</a></li>
+<li><a href="#wildcards">Wildcards</a></li>
+<li><a href="#export-import">Export / import</a></li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="survey-languages" class="wysiwyg-text-align-justify">Survey languages</h2>
+<p class="wysiwyg-text-align-justify">Click on the <strong>Survey Language</strong>s menu item to create and edit languages, assign language identifiers, set the active default language, set language selection variable, copy language elements, and access the language selection log.</p>
+<h3 id="creating-languages" class="wysiwyg-text-align-justify">Creating languages</h3>
+<p class="wysiwyg-text-align-justify">Proceed as follows</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Click on the<strong> Create language</strong> button.</p>
+</li>
+<li>
+<p>In the “label” field, assign a name to the new language.</p>
+</li>
+<li>
+<p>Optionally, you can initialize the new language with phrases from an already existing language. To do so, specify your desired source language in the field “Copy language phrases from”.</p>
+</li>
+<li>
+<p>Assign a language identifier to the new language.</p>
+</li>
+<li>
+<p>Finally, confirm by clicking on <strong>Save</strong>.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The overview table in the “Edit languages” section lists all existing languages of the project along with the following information:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><strong>ID</strong>: Each language receives an identification number from the system. This number cannot be changed. In the export data record, you will find this language identification number in the form of the “language” variable indicating the language version of the questionnaire that was displayed to the respondent</p>
+</li>
+<li>
+<p><strong>Language</strong>: Language label. The default language is marked accordingly.</p>
+</li>
+<li>
+<p><strong>Language identifier</strong>: Serves as unique identification of language and region.</p>
+</li>
+<li>
+<p><strong>Default language</strong>: This column indicates the current default language of the project.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Depending on your access rights the following actions are available:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Edit languages</strong>: Opens a dialog where you can change the label and identifier of the respective language.</p>
+</li>
+<li>
+<p><strong>Print</strong>: Opens a view of the questionnaire in the respective language optimized for printing.</p>
+</li>
+<li>
+<p><strong>Rights</strong>: Opens the dialog for assigning read or write rights for the respective language to particular user teams in a targeted manner.</p>
+</li>
+<li>
+<p>Use as default language</p>
+</li>
+<li>
+<p><strong>Delete</strong>: The respective language will be deleted after a confirmation prompt.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Once you delete a language, all text elements and other settings of this language will be deleted and cannot be restored. Deleting a language will also cause errors in settings already made for the language selection question and language selection variable, as well as for language information entered in participant administration. The ID of the deleted language will no longer be subsequently re-assigned. If you re-create the same language, it will be assigned a new language ID.</p>
+<p class="wysiwyg-text-align-justify">You can use the <strong>View</strong> button to hide particular columns of the table or limit the number of rows.</p>
+<h3 id="uniquely-characterizing-languages-with-a-language-identifier" class="wysiwyg-text-align-justify">Uniquely characterizing languages with a language identifier</h3>
+<p class="wysiwyg-text-align-justify">The language identifier allows you to uniquely identify languages and regions. For example, de_DE: German / Germany; en_US: English / USA; en_GB: English / Great Britain. Using the identifier is particularly helpful when a questionnaire is to be localized for different dialects of the same language, e.g. British and American English.</p>
+<p

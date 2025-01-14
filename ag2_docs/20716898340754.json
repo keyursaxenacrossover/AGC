@@ -1,0 +1,30 @@
+{
+    "id": 20716898340754,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/20716898340754.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20716898340754-Data-Voyager-Setup",
+    "author_id": 369584192734,
+    "comments_disabled": false,
+    "draft": false,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20714711445138,
+    "created_at": "2024-08-12T19:57:23Z",
+    "updated_at": "2024-08-27T15:03:19Z",
+    "name": "Data Voyager Setup",
+    "title": "Data Voyager Setup",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-08-27T15:03:11Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075294,
+    "content_tag_ids": [],
+    "label_names": [],
+    "body": "<p> </p>\n<h1 id=\"h_01J6A5Q5W25S5F4D8FCXQ264V0\">Overview</h1>\n<p>This guide provides a step-by-step process for setting up a Data Voyager instance in Okta, ensuring it integrates seamlessly with Tivian Access. The setup includes creating an application-specific group and configuring an Okta application. These steps must be repeated for every Data Voyager instance or installation that a client wants to use with Tivian Access.</p>\n<h2 id=\"h_01J6A5QKHGA6JQDK6YS1MJDHMR\">Setup</h2>\n<p>For Data Voyager the general tenant setup has to be done already. The only entities that have to be Created for Data Voyager are an application Group and an Okta application.</p>\n<p><strong>Note:</strong> This has to be done for every Data Voyager instance/installation a client wants to use with Tivian Access.</p>\n<p> </p>\n<h3 id=\"header-1\">Step 1: Navigate to Groups</h3>\n<p><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716899550354\" alt=\"Screenshot_2020-02-13 Questback - Groups.png\"></p>\n<p> </p>\n<h3 id=\"header-3\">Step 2: Create a new group</h3>\n<p>Reminder:</p>\n<p>Rember the group name for further steps.</p>\n<p><strong>Values:</strong></p>\n<p><strong>Name: </strong>unique customer name - main domain of the Data Voyager instance - also see Naming conventions in Okta</p>\n<p><strong>Group Description:</strong> no preference - usually repeating the name above is enough</p>\n<p><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716931440274\" alt=\"Screenshot_2020-03-06 Questback - Groups.png\"></p>\n<p> </p>\n<h3 id=\"header-5\">Step 3: Navigate to Applications</h3>\n<p><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716932142482\" alt=\"applications_step_1.png\"></p>\n<p> </p>\n<h3 id=\"header-6\">Step 4: Add an Application</h3>\n<p><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716922300562\" alt=\"applications_step_2.png\"></p>\n<p> </p>\n<h3 id=\"header-7\">Step 5: Create a new Application to be added</h3>\n<p><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716899200146\" alt=\"applications_step_3.png\"></p>\n<p> </p>\n<h3 id=\"header-8\">Step 6: Select App Type</h3>\n<p><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716899143058\" alt=\"applications_step_4.png\"></p>\n<p> </p>\n<h3 id=\"header-9\">Step 7: Save Application</h3>\n<p><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716906540178\" alt=\"Screenshot_2020-03-06 Questback - Applications.png\"></p>\n<p> </p>\n<h3 id=\"header-10\">Step 8: Check Application Settings and copy ClientID and Client secret</h3>\n<p><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716906693138\" alt=\"Screenshot_2020-03-06 Questback - OpenID Connect Client questback dv-schaeffler com Data Voyager.png\"></p>\n<p> </p>\n<h3 id=\"header-11\">Step 9: Assign Group</h3>\n<p><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716891030418\" alt=\"Screenshot_2020-03-06 Questback - OpenID Connect Client questback dv-schaeffler com Data Voyager(1).png\"></p>\n<p> </p>\n<h1 id=\"h_01J6A5S6HRMG3AFSE3SGN2V51G\">FAQ</h1>\n<p><strong>Why is a unique group required for each Data Voyager instance?</strong></p>\n<p>A unique group ensures that permissions and access controls are specific to the instance, reducing the risk of unauthorized access.</p>\n<p><strong>What should I do if I need to set up multiple instances?</strong></p>\n<p>Repeat this setup process for each instance, ensuring that each has its own group and Okta application.</p>\n<p><strong>What if the client uses multiple domain aliases?</strong></p>\n<p>Ensure that all relevant login and logout redirect URIs are added to the application settings for each domain alias.</p>\n<p> </p>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

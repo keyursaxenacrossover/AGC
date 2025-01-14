@@ -1,0 +1,90 @@
+="text-align: center;">import_placeholders</p>
+</td>
+<td>
+<p style="text-align: center;">This action allows you to import wildcards from another project.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">Load layout template</p>
+</td>
+<td>
+<p style="text-align: center;">apply_layout</p>
+</td>
+<td>
+<p style="text-align: center;">This action allows you to copy an existing layout into the current survey.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">Run quality correction</p>
+</td>
+<td>
+<p style="text-align: center;">quality_corrector</p>
+</td>
+<td>
+<p style="text-align: center;">This action performs quality correction in the current project. It is identical to the function available under <strong>Statistics</strong> → <strong>Quality correction</strong>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">Save the codebook as a .mht file</p>
+</td>
+<td>
+<p style="text-align: center;">create_codebook</p>
+</td>
+<td>
+<p style="text-align: center;">This action saves the codebook of the current project as a .mht file. The function internally selects the <strong>Codebook</strong> menu item and saves its output. The codebook display options can be configured here. In the file name, the #PID# wildcard will be replaced with the current project ID.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">Save online statistics as a .mht file</p>
+</td>
+<td>
+<p style="text-align: center;">create_online_stats</p>
+</td>
+<td>
+<p style="text-align: center;">This action saves the online statistics of the current project as a .mht file. The function internally selects the <strong>Online statistics</strong> menu item and saves its output. The #PID# wildcard in the file name will be replaced with the ID of the current project.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">Save open-ended answers as a .mht file</p>
+</td>
+<td>
+<p style="text-align: center;">create_online_report</p>
+</td>
+<td>
+<p style="text-align: center;">This action saves the Open-ended answers of the current project as a .mht file. The function internally selects the <strong>Open-ended answers</strong> menu item and saves its output. The #PID# wildcard in the file name will be replaced with the ID of the current project.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">Save the questionnaire as a .mht file</p>
+</td>
+<td>
+<p style="text-align: center;">create_print</p>
+</td>
+<td>
+<p style="text-align: center;">This action allows you to save the questionnaire as a .mht file. The function internally selects the <strong>Print version</strong> menu item and saves its output. In the file name, the #PID# wildcard will automatically be replaced with the project ID.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863" class="wysiwyg-text-align-justify">FAQ</h1>
+<h3 id="faq_1" class="wysiwyg-text-align-justify">What are the default settings for pop-up window properties?</h3>
+<p class="wysiwyg-text-align-justify">The default settings for pop-up window properties are:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>toolbar: "no"</li>
+<li>location: "no"</li>
+<li>status: "no"</li>
+<li>scrollbars: "no"</li>
+<li>resizable: "no"</li>
+</ul>
+<h3 id="faq_2" class="wysiwyg-text-align-justify">How can I change the project field period?</h3>
+<p class="wysiwyg-text-align-justify">You can change the project field period using the "set_project_time" macro action. This action allows you to specify a fixed date or select relative times that refer to the next weeks, the current month, or the current year.</p>
+<h3 id="faq_3" class="wysiwyg-text-align-justify">What file formats are supported for data export?</h3>
+<p class="wysiwyg-text-align-justify">The specific file formats for data export are not mentioned in the provided information. However, the "export_data" action allows you to export results or address data from the current project, with options to set the file type and other export parameters.</p>
+<p class="wysiwyg-text-align-justify"> </p>

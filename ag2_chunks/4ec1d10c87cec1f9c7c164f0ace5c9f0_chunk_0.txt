@@ -1,0 +1,49 @@
+<h2 id="h_01J6ES78WXPV4Q5J671H13T10J">Table of Contents</h2>
+<ul>
+<li><a href="#header-1">Deletion of private data upon completion of a survey</a></li>
+<li><a href="#header-3">Text question types and variables are no longer automatically flagged as personal data.</a></li>
+<li><a href="#header-4">Updated behaviour for alternative filter conditions</a></li>
+<li><a href="#header-5">Batch searching of pseudonyms in Panel projects and codes in personalized projects</a></li>
+<li><a href="#header-6">Optional expiration of inactive admin accounts</a></li>
+<li><a href="#header-7">Deprecation</a></li>
+<li>
+<a href="#header-8">Portal CMS</a>
+<ul>
+<li><a href="#header-10">New page module: Dashboard aggregated</a></li>
+<li><a href="#header-11">New Guide configuration</a></li>
+</ul>
+</li>
+</ul>
+<p style="text-align: right;"> </p>
+<p>This release contains mainly technical changes not visible to customers, such as upgrades of the programming language version, upgrades to the used libraries, security improvements or refactoring of code.</p>
+<h2 id="header-1">Deletion of private data upon completion of a survey</h2>
+<p>When the privacy assistant is active, a new option <em>Immediately on completion</em> in the retention period of a survey project is available:</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21037527226514" alt="6c743959-2e22-4ebd-bf82-daa2201b24cd"></p>
+<p>If activated, personal data will be immediately removed upon completion of the survey. Participants who have not completed the survey will be removed according to the configured retention period.</p>
+<h2 id="header-3">Text question types and variables are no longer automatically flagged as personal data.</h2>
+<p>When adding text input question types or text input items to a survey with an activated privacy assistant, these variables are no longer automatically flagged as private data. If you want those questions to be covered by the privacy assistant's automatic deletion of data, select these fields in the corresponding view in the survey editor.</p>
+<h2 id="header-4">Updated behaviour for alternative filter conditions</h2>
+<p>Please note that in <strong>alternative</strong> filter conditions of the questionnaire, for text comparisons from the 23.1 release onwards, it is essential to observe the correct syntax. Previously it was possible to perform a text comparison without quotation marks, example: <em>IF (u_language = en_GB)</em>, this is no longer possible because the system urgently needs a distinction between variables and texts. The use of quotation marks, which was expected before, is mandatory from now on, example: <em>IF (u_language = "en_GB")</em>. As always, please test the correct/expected behavior when creating the filters.</p>
+<h2 id="header-5">Batch searching of pseudonyms in Panel projects and codes in personalized projects</h2>
+<p>Customers frequently searching for pseudonyms in Panel surveys, are now able to provide multiple pseudonyms in the extended search view. Since the field is not displayed by default, use the configuration-cog icon in the upper-right corner of the search form to add the field to the search. The field is now a text area, where multiple pseudonyms can be provided. Affected locations:</p>
+<ul>
+<li>
+<p>Projects &gt; (PA Project) &gt; Samples &gt; Search in all samples</p>
+</li>
+<li>
+<p>Projects &gt; (PA Project) &gt; Samples &gt; (sample) &gt; Sample contents (after a sample has been drawn)</p>
+</li>
+</ul>
+<p>Similarly, you can now search for multiple codes in the enhanced search of personalized projects.</p>
+<h2 id="header-6">Optional expiration of inactive admin accounts</h2>
+<p>Customers requiring an expiration policy for admin accounts can now contact support to enable an automatic expiration of admin accounts, that were inactive for a defined amount of days. Expired accounts can no longer log into EFS. To re-enable an expired account, an admin account with sufficient user administrative rights is required.</p>
+<h2 id="header-7">Deprecation</h2>
+<p>Creation of Classic, RL1, and RL2 based projects, including custom projects based on those versions, is no longer possible. Existing projects and copies of those continue to work with outdated layouts. Please use the greatly enhanced responsive layout v3.1 for your new projects.</p>
+<p>The no longer used administrative “Mobile GUI” has been removed from EFS.</p>
+<p>You can read more about our deprecation of features process here and the list of deprecated modules and features can be found <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20231349760402" target="_blank" rel="noopener noreferrer">here</a> . Please review the list carefully and transition your projects away from the deprecated features in time for the end of life of the respective feature.</p>
+<h2 id="header-8">Portal CMS</h2>
+<p>In Portal CMS new options are available to configure an HR dashboard with aggregated scores across all initiators and waves for a specific guide.</p>
+<h3 id="header-10">New page module: Dashboard aggregated</h3>
+<ul>
+<li>
+<p>In

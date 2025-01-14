@@ -1,0 +1,38 @@
+changing-the-default-language" class="wysiwyg-text-align-justify">Changing the default language</h3>
+<p class="wysiwyg-text-align-justify">instead of using the simultaneous central access to the language elements of all languages via the language element editor, you will need to change the default language. It is usually not advisable to proceed in this way because the <strong>Language editor</strong> provides convenient central access to the language elements of the various languages.</p>
+<p class="wysiwyg-text-align-justify">To change the default language, find the desired new default language in the list and click on the <strong>Use as default language</strong> icon. This change will simultaneously trigger a language selection blocker. Please observe the notes on this feature in the following section.</p>
+<p class="wysiwyg-text-align-justify">If the new default language was not yet fully translated before the default language change, the #undefined# marker will appear in the text elements in the questionnaire and language editors which are still empty. Missing logos and buttons will be filled with #undefined#. If no character set has been specified before the change, the character set will also be set to "#undefined#" and needs to be defined.</p>
+<h3 id="copying-language-elements" class="wysiwyg-text-align-justify">Copying language elements</h3>
+<p class="wysiwyg-text-align-justify"><em>A survey</em> allows you to copy texts from an already existing language into another language.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The “Copy language phrases from” function allows you to initialize a new language with existing phrases from another language. See the section “Create language” above.</p>
+</li>
+<li>
+<p>To fill or overwrite an already existing language with language elements from another language, specify the source and target languages in the “Copy language elements” field and confirm by clicking on <strong>Execute</strong>.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The copy function is useful if, for example, many answer categories are identical and do not require translation, e.g. if questions concern products that are marketed internationally or the names of music artists and song titles.</p>
+<h3 id="blocking-changes-to-the-default-language" class="wysiwyg-text-align-justify">Blocking changes to the default language</h3>
+<p class="wysiwyg-text-align-justify">If several staff members are working in the admin area at the same time, problems might occur. These can be prevented by incorporating the language selection blocker:</p>
+<p class="wysiwyg-text-align-justify">Let us assume that user A sets his or her native language, German, as the default language and starts work in the questionnaire editor. User B does not know about this and changes the default language to English. Now, user A wants to save his or her changes to the German-language questionnaire. However, while saving, the changes will not be entered in the originally set default language of German, but will instead overwrite the English text elements.</p>
+<p class="wysiwyg-text-align-justify">To avoid such overlapping, the change function will be blocked for all users after a change of the default language, and the <strong>Activate language</strong> button will no longer appear.</p>
+<p class="wysiwyg-text-align-justify">Only the user who last made the change as well as users with “root” rights will now see a button labeled <strong>Enable language selection</strong> instead of the <strong>Use as default language</strong> icon, and can unblock language selection by clicking on this button. The blocker remains active until the user who made the change logs out or their session ends.</p>
+<p class="wysiwyg-text-align-justify">After language selection has been unblocked or the last user’s session has ended, the default language can be changed again by any user. You want to change the default language, but the language selection blocker is active.</p>
+<h3 id="setting-the-output-language-via-a-language-selection-variable" class="wysiwyg-text-align-justify">Setting the output language via a language selection variable</h3>
+<p class="wysiwyg-text-align-justify">The language displayed at the start of the survey can be set via a data item known in advance, such as information from participant administration. In the “Read language selection by survey start from” drop-down list, you can define the variable from which the ID of the displayed language will be read at the start of the survey. Which variables are available depends on the project type:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><em>Anonymous projects</em>: URL parameters</p>
+</li>
+<li>
+<p><em>Personalized projects</em>: The standard variables in participant administration except “c_date” and “m_date”, and all additionally created participant variables as well as URL parameters. If you would like to use a participant variable, especially for saving language information, then use the standard variable “u_language” which was introduced especially for this purpose.</p>
+</li>
+<li>
+<p><em>Panel and master data surveys</em>: Participant data, master data, system data, and URL parameters</p>
+</li>
+</ul>
+<h3 id="entering-the-language-setting-variable-in-participant-administration" class="wysiwyg-text-align-justify">Entering the language-setting variable in participant administration</h3>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>In language administration, specify from which variable the language setting is to be read.</

@@ -1,0 +1,182 @@
+</p>
+<ul>
+<li>
+<p>Questionnaire definitions</p>
+</li>
+<li>
+<p>Survey table definitions</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="header-24">Elasticsearch</h3>
+<ul>
+<li>
+<p>Fulltext search engine for panelists/panelwebsite data</p>
+</li>
+<li>
+<p>Tivian managed in k8s cluster</p>
+</li>
+<li>
+<p>Contains data from hot-tables for better search performance on high-volume installations</p>
+<ul>
+<li>
+<p>Panelists data</p>
+</li>
+<li>
+<p>System error notifications</p>
+</li>
+<li>
+<p>Panelwebsite community content (discussions, blogs, forum)</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="header-25">NFS</h3>
+<ul>
+<li>
+<p>Filesystem for shared content</p>
+<ul>
+<li>
+<p>Needed for horizontal scaling of Nginx/PHP-FPM pods</p>
+</li>
+</ul>
+</li>
+<li>
+<p>AWS managed EFS</p>
+</li>
+<li>
+<p>Contains files shared between different pods</p>
+<ul>
+<li>
+<p>Images/CSS/Templates for customization of survey layouts</p>
+</li>
+<li>
+<p>Results export files</p>
+</li>
+<li>
+<p>Product-Customizing code mounted into PHP-FPM containers</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="header-27">Message Bus / Queues</h2>
+<h3 id="header-29">Kafka</h3>
+<p>Kafka is a streaming service that is used an asynchronous message bus to communicate between different internal systems. Currently the <strong>Dashbo</strong> product is mainly using data published by EFS.</p>
+<ul>
+<li>
+<p>Message bus for communication between EFS and satellite applications/microservices</p>
+</li>
+<li>
+<p>AWS managed MSK cluster</p>
+</li>
+<li>
+<p>Used for events published by EFS and consumed by subscribers in satellite applications/microservices</p>
+<ul>
+<li>
+<p>Survey responses</p>
+</li>
+<li>
+<p>Portal Guides events</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="header-30">RabbitMQ</h3>
+<ul>
+<li>
+<p>Message queue for mail delivery status</p>
+</li>
+<li>
+<p>Tivian managed on VMWare esxi guest</p>
+</li>
+<li>
+<p>Used for bounce-management of emails sent from EFS via Hurricane MTA</p>
+<ul>
+<li>
+<p>Survey invitation emails</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="header-32">Services</h2>
+<h3 id="header-34">Aspose PPTX-Service</h3>
+<ul>
+<li>
+<p>PPTX file generator based on XML descriptions</p>
+</li>
+<li>
+<p>Tivian managed on VMWare esxi guest</p>
+<ul>
+<li>
+<p>Homebrew SOAP service wrapped around Aspose C# library</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Used for export of charts/reports in EFS Reporting+</p>
+</li>
+<li>
+<p>Sourcecode</p>
+<ul>
+<li>
+<p><a href="https://bitbucket.org/qbengineering/questback_service_iis_pptx-exporter/src/master/" data-card-appearance="inline">https://bitbucket.org/qbengineering/questback_service_iis_pptx-exporter/src/master/</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="header-35">Tableau</h3>
+<p>Tableau is a self hosted licensed product that is used to show dashboards based on EFS data.</p>
+<ul>
+<li>
+<p>Dashboards integrated into Portals</p>
+</li>
+<li>
+<p>Tivian managed on VMWare esxi guest</p>
+<ul>
+<li>
+<p>Software provided by vendor</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Renders Dashboards into Iframe embedded into Portals</p>
+<ul>
+<li>
+<p>Dashboards individually configured by Product-Customizing</p>
+</li>
+<li>
+<p>Data individually prepared in Exasol by Product-Customizing with Altery</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="header-36">Okta</h3>
+<p>Okta is used as optional module in EFS. It is an Identity Provider that is used to implement SSO capabilities. Users are synced to this provider.</p>
+<ul>
+<li>
+<p>SSO SaaS provider</p>
+</li>
+<li>
+<p>Identity provider for EFS and Portal accounts</p>
+</li>
+<li>
+<p>Individually setup by 2nd level support for customers using EFS IdentityAccessManager module</p>
+</li>
+</ul>
+<h3 id="header-37">Hurricane MTA</h3>
+<p>The Hurricane is a self hosted Email relay that gives EFS capabilities to send and track emails.</p>
+<ul>
+<li>
+<p>Tivian managed on VMWare esxi guest</p>
+<ul>
+<li>
+<p>Software provided by vendor</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Handles delivery and status-tracking of all emails sent by EFS</p>
+<ul>
+<li>
+<p>Mailstatus is published via RabbitMQ back to EFS</p

@@ -1,0 +1,143 @@
+>Afterwards DNS-Records should be setup as described before but instead targeting the technical-alias-domain</p>
+</li>
+</ol>
+<pre><code class="language-text">&lt;installation-short-name&gt;-aliases.customervoice360.com IN CNAME &lt;domain-of-service-backend&gt;.</code></pre>
+<h3 id="how-to-match-recommended-record-setup-as-close-as-possible-for-customer-managed-domain">How to match recommended Record-Setup as close as possible for customer managed domain</h3>
+<p>The following shows the different options available in descending order of preference with corresponding:</p>
+<ul>
+<li>
+<p>Advantages</p>
+</li>
+<li>
+<p>Disadvantages</p>
+</li>
+<li>
+<p>How-To</p>
+</li>
+</ul>
+<h4 id="alias-aname-record-cname-flattening">ALIAS- / ANAME-Record / CNAME Flattening</h4>
+<ul>
+<li>
+<p>Advantages:</p>
+<ul>
+<li>
+<p><span style="color: #36b37e;">Recommended record-set can be created 1-to-1</span></p>
+</li>
+<li>
+<p><span style="color: #36b37e;">All configuration goals can be reached</span></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Disadvantages:</p>
+<ul>
+<li>
+<p><span style="color: #ff5630;">Not availabl at all DNS-Providers, as they are non standard (see above)</span></p>
+</li>
+<li>
+<p><span style="color: #ff5630;">Naming of the Record-Type depends on the provider</span></p>
+</li>
+</ul>
+</li>
+<li>
+<p>How-To:</p>
+<ul>
+<li>
+<p>Customer has to setup records as recommended above</p>
+</li>
+<li>
+<p>Examples</p>
+<ul>
+<li>
+<pre><code class="language-text">domain.tld IN ALIAS eg1337.customervoice360.com
+domain.tld IN ANAME eg1337.customervoice360.com
+domain.tld IN Flattened-CNAME eg1337.customervoice360.com
+or
+some.domain.tld IN ALIAS eg1337.customervoice360.com.
+some.domain.tld IN ANAME eg1337.customervoice360.com.
+some.domain.tld IN Flattened-CNAME eg1337.customervoice360.com.</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="ns-record">NS-Record</h4>
+<ul>
+<li>
+<p>Advantage:</p>
+<ul>
+<li>
+<p><span style="color: #36b37e;">Tivian can manage all records as necessary</span></p>
+<ul>
+<li>
+<p><span style="color: #36b37e;">The Name-Server which will be configured does support ALIAS- / ANAME-Record</span></p>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="color: #36b37e;">Customer still owns the domain (No transfer necessary)</span></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Disadvantages:</p>
+<ul>
+<li>
+<p><span style="color: #ff5630;">As all records are managed by Tivian only, all changes entail customer communication, therefore increased support costs</span></p>
+</li>
+</ul>
+</li>
+<li>
+<p>How-To (Sysadmin-Manual, [DNS] How to setup Customer-Owned alias domain via NS-Record ):</p>
+<ul>
+<li>
+<p>1. Retrieve <strong>all </strong>DNS-Entries (On Apex- and Sub-Domains) from customer</p>
+</li>
+<li>
+<p>2. QB-SAs have to recreate all DNS-Entries</p>
+</li>
+<li>
+<p>3. QB-SAs have to setup DNS-Records like “Option 2)”</p>
+</li>
+<li>
+<p>4. Customer has to setup / replace following Records for the domain:</p>
+<ul>
+<li>
+<pre><code class="language-text">&lt;domain&gt; IN NS ns1.opst.de.
+&lt;domain&gt; IN NS ns2.opst.de.
+e.g.
+example.com IN NS ns1.opst.de.
+example.com IN NS ns2.opst.de.
+another.example.net IN NS ns1.opst.de.
+another.example.net IN NS ns2.opst.de.</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>5. Customer should remove all other DNS-Records except the previously mentioned NS-Records</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="cname-record-only-for-sub-domains">CNAME-Record (Only for Sub-Domains)</h4>
+<ul>
+<li>
+<p>Advantages:</p>
+<ul>
+<li>
+<p><span style="color: #36b37e;">Domain is ensured to resolve to the intended IP at all time</span></p>
+</li>
+<li>
+<p><span style="color: #36b37e;">In case of an IP change no intervention by the customer is needed</span></p>
+</li>
+<li>
+<p><span style="color: #36b37e;">DKIM &amp; DMARC are not affected</span></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Disadvantages:</p>
+<ul>
+<li>
+<p><span style="color: #ff5630;">All DNS-Queries are redirect =&gt;

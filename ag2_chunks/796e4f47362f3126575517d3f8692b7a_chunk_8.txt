@@ -1,0 +1,37 @@
+ from the right into the display.</span></p>
+<p class="wysiwyg-text-align-justify">On the sub-navigation field <strong>Pages</strong>, the inspector moves in as soon as you click on <strong>Create mapping</strong>, and is used for the cartography. You define the paths that define how the shape cell is to be filled.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>On this sub-navigation field, the inspector has two tabs:<strong> Mapping</strong> and <strong>Filter</strong>.</li>
+<li>Under the two tabs, you will find information about which shape area you can map.</li>
+<li>Each path is validated by setting a green check mark.</li>
+<li>A red warning triangle indicates any pending validations.</li>
+<li>You have a search function under the tap <strong>Mapping</strong> that allows you to reduce the more extensive selection options of the picker elements to a clear number. Use the arrow keys to navigate either by scrolling through the list of results block by block of ten or by jumping directly to the end of the beginning.</li>
+</ul>
+<p class="sc-lhVmIH iJLaKb wysiwyg-text-align-justify"><strong>Layout of the inspector II: DSEs and Collections</strong></p>
+<p class="wysiwyg-text-align-justify">On the sub-navigation field <strong>Data</strong>, the inspector moves in as soon as you click on Add <strong>Dataspace Entity</strong> or <strong>Add Collection</strong>. On the sub-navigation field <strong>Data</strong> under the tab <strong>Dataspace Entity</strong>, the inspector is used to create unit elements for the mapping that are available on the sub-navigation field <strong>Pages</strong>.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>To do this, you create picker paths from the existing unit elements</li>
+<li>Each path is validated by setting a green check mark.</li>
+<li>A red warning triangle indicates any pending validations.</li>
+<li>If you want to create a DSE type Unit relation, the inspector expands and displays the unit elements on a separate panel.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">On the sub-navigation field <strong>Data</strong> under the tab <strong>Collections</strong>, you use the inspector to create the two mapping elements dimension and unit collection. The inspector has two tabs for creating a dimension collection and creating a unit collection; <strong>Members</strong> and <strong>Extras</strong>. </p>
+<ul class="wysiwyg-text-align-justify">
+<li>Under the tab <strong>Members</strong>, you specify the members of the dimension or the unit collection.</li>
+<li>You can sort the members under this tab by dragging &amp; dropping and deleting them. You find the corresponding icons, sorting arrows, and trashcan, by mouseover to the right of the selection field.</li>
+<li>Under the tab <strong>Extras</strong>, you select a scale and a sort order in the case of the dimension collection. In the case of the unit collection, you define only the sort order under this tab.</li>
+<li>The inspector is extended both for the selection of a scale (dimension collection only) and for defining a sort order (dimension collection and unit collection).</li>
+</ul>
+<p class="wysiwyg-text-align-justify">In the case of the scale selection, the available scales can be found on this further panel, while in the case of defining a sort order, the additional table is structured like the inspector in the mapping.</p>
+<p class="wysiwyg-text-align-justify">Information</p>
+<p class="wysiwyg-text-align-justify"><span style="color: #333333;">If you want to delete a mapped element, you click on the defined cell, and in the inspector, you click on the X symbol of the first element. You can edit a mapping by simply clicking on the mapped cell.</span></p>
+<h3 id="the-text-element" class="sc-lhVmIH iJLaKb wysiwyg-text-align-justify"><strong>The Text element</strong></h3>
+<p class="wysiwyg-text-align-justify">You use the mapping element <strong>Text</strong> to fill shape cells with self-written texts.  This element is not used for data space queries.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>You use this element to place individual labels in the report that you enter in the user-defined text field.</li>
+<li>The number of characters used depends on the cell size of the PowerPoint shape. If you use too many characters, it will be written beyond the cell boundary.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The path is: <em>Text</em> → [<em>self-written text</em>]</p>
+<h3 id="the-dimension-element" class="wysiwyg-text-align-justify"><strong>The Dimension element</strong></h3>
+<p class="wysiwyg-text-align-justify">You not only continue with the mapping element <strong>Dimension</strong> after you have picked a unit, for example, but you also start your picker path with this element. If you start with the dimension element, it is used to fill the shape cells with the question or dimension item text. The question texts of the survey and their dimension items are available to you for this purpose, if available.</p>
+<p class="wysiwyg-text-align-justify">The

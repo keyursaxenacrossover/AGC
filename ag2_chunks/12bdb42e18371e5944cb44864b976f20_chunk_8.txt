@@ -1,0 +1,68 @@
+>
+<p>Header section, footer section</p>
+</td>
+<td>
+<p>This feature allows you to insert JavaScript and CSS directly in the header or footer section of the page.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Check internal quotas</p>
+</td>
+<td>
+<p>If you are using quotas, this option allows you to mark the page where the checking for internal quotas is to take place.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Set variable page marker to fill the variable rate within the field report</p>
+</td>
+<td>
+<p>The so-called variable page marker (until EFS 10.1 “universal page marker”) allows you to determine, and show in the field report, how many people have completed the survey up to a specific questionnaire page X.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Force a character set for this page</p>
+</td>
+<td>
+<p>This option allows you to assign to the page a different character set other than the general character set of the survey or the character sets for the various language versions of a multilingual project.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h4 class="wysiwyg-text-align-justify"> </h4>
+<h4 id="automatically-submitting-a-completed-page" class="wysiwyg-text-align-justify">Automatically Submitting a Completed Page</h4>
+<p class="wysiwyg-text-align-justify">If you check the box in the “Page is submitted automatically after completion of all questions” field, the questionnaire page is submitted as soon as the respondent has answered all the questions in full.</p>
+<p class="wysiwyg-text-align-justify">This feature functions on all questionnaire pages which contain only combinations of the following question types: 111, 112, 113, 131, 411, 311, 312, 313, 321, 322, 340, 351, and 511. On pages with multiple response questions and text entries, it is not triggered, as it cannot be automatically recognized at what point the participant has completed their input.</p>
+<p class="wysiwyg-text-align-justify">There will be no check as to whether the questionnaire page contains HTML and image-type elements. Please ensure therefore that such elements are not located at the end of the page: In this case, autosubmit would prevent the participant from seeing the text or the image.</p>
+<p class="wysiwyg-text-align-justify">The function assumes that JavaScript is enabled in the respondent’s browser.</p>
+<p class="wysiwyg-text-align-justify">Please note that it is risky to hide the Submit button when using the Autosubmit function (see next section). Example: If the respondent uses the Back button of the browser to go back and make a change, the Autosubmit function will not be reactivated. At the same time, however, there is no way to re-send the pages using the Submit button.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h4 id="automatically-submitting-a-page-after-a-defined-period-of-time" class="wysiwyg-text-align-justify">Automatically Submitting a Page after a Defined Period of Time</h4>
+<p class="wysiwyg-text-align-justify">The “Send page automatically” function is often used in combination with the hiding of the Submit button described in the following Chapter. The following options are available in a drop-down list:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Do not send automatically: This is the default setting.</p>
+</li>
+<li>
+<p>Send automatically after x seconds: The period of time lies between 0 seconds and two minutes and can be adjusted exactly to the second.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The function assumes that JavaScript is enabled in the respondent’s browser.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h4 id="hiding-or-deactivating-the-submit-button" class="wysiwyg-text-align-justify">Hiding or deactivating the Submit Button</h4>
+<p class="wysiwyg-text-align-justify">You can use this function to hide the submit button temporarily or always. Thus only the questions and answers will be output on the questionnaire page, the <strong>continue </strong>button will appear not at all or only after a time. You may also deactivate the <strong>submit </strong>button for a specific amount of time.</p>
+<p class="wysiwyg-text-align-justify">You can choose from the following options:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Always show Submit button: This is the default setting.</p>
+</li>
+<li>
+<p>Always hide Submit button: The Submit button will not appear on this page. Please remember when using this setting to incorporate another form element that can be used to trigger the Submit process or activate a function for automatic sending. The combination of hidden Submit button and automatic page down is useful, for example, with cover tests, in which media is only shown briefly.</p>
+</li>
+<li>
+<p>Show after x seconds: You can choose periods from between one second and two minutes. This setting is advisable if you wish to make sure that the respondents look closely at a picture or text.</p>
+</li>
+<li>
+<p>Select <strong>Disable instead of hiding submit button </strong>in combination with an option from the <strong>Hide submit button

@@ -1,0 +1,25 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/TS/pages/2200961029">https://qbdocs.atlassian.net/wiki/spaces/TS/pages/2200961029</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">Set Maintenance AWS</a></li>
+<li><a href="#header-2">Datagroup Maintenance</a></li>
+<ul>
+<li><a href="#header-4">Set Maintenance DG</a></li>
+<li><a href="#header-5">Custom Maintenance page:</a></li>
+</ul>
+</ul>
+</ul><ac:parameter ac:name="minLevel">1</ac:parameter><ac:parameter ac:name="maxLevel">7</ac:parameter><h1 id="header-1">Set Maintenance AWS</h1><p>EFS Maintenance schalten:<br><a data-card-appearance="inline" href="https://qbdocs.atlassian.net/wiki/spaces/EN/pages/2095087844/Healself#Uninterrupted-rollout-(update/upgrade)">https://qbdocs.atlassian.net/wiki/spaces/EN/pages/2095087844/Healself#Uninterrupted-rollout-(update/upgrade)</a> <br>kurz:</p><pre><code class="language-bash">cd www
+php support/config.php set maintenance_mode false</code></pre><p>mit <code>set maintenance_mode true</code> macht man sie an.</p><p></p><p></p><h1 id="header-2">Datagroup Maintenance </h1><h2 id="header-4">Set Maintenance DG</h2><pre><code class="language-text">ssh salt
+cd /opt/pdp/saltserver/scripts</code></pre><h2 id="header-5">Custom Maintenance page:</h2><p><a href="https://m.gpefs.com/?site=www.kundenwerkstatt.ergo.de">https://m.gpefs.com/?from=</a>ab1234.customervoice360.com</p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20714863084562" alt="maintenance.png"><p>Maintenance pages can be configured on bre101v and bre102v.</p><p><strong><span style="color: rgb(255,86,48);">CAUTION: all changes have to be made on both servers, there is no automatic synchronization!</span></strong></p><ol>
+<li><p>ssh bre101v (bre102v)</p></li>
+<li><p>copy from default template and customize it<br><code>cd /opt/pdp/sorryserver/htdocs/maintenance/templates</code><br><code>sudo cp defaultForm_maintenance.tpl [INSTALLATIONNAME]_maintenance.tpl</code><br><code>sudo vi [TEMPLATENAME]_maintenance.tpl</code></p></li>
+<li>
+<p>configure and add new template to config.inc.php<br><code>cd /opt/pdp/sorryserver/htdocs/maintenance/conf</code><br><code>sudo vi config.inc.php</code><br>add new entry at the end, eg:<br><code>),</code><br><code>'[INSTALLATIONNAME].customervoice360.com' =&gt; array(     </code><br><code>'form'         =&gt; '[TEMPLATENAME]_maintenance.tpl',     </code><br><code>'confirmation' =&gt; 'defaultConfirmation.tpl',     </code><br><code>'mail'         =&gt; 'defaultMail.tpl',     </code><br><code>'subject'      =&gt; 'Maintenance (#host#)' )</code></p>
+<p><code>);</code></p>
+</li>
+<li><p><strong><span style="color: rgb(255,86,48);">make sure NOT TO FORGET ANY ‘,' or ')’</span></strong></p></li>
+<li><p>Run php -l on all changed configs!</p></li>
+<li><p>Prev<ac:inline-comment-marker ac:ref="31a8c81d-ffd4-40e3-b91d-30addc14d033">iew maintenance page like so:</ac:inline-comment-marker></p></li>
+</ol><p>https://m.gpefs.com/?from=ab1234.customervoice360.com</p><p></p><p></p><p>New AWS Maintenance page will be customizable with <ac:inline-comment-marker ac:ref="c670a044-98af-4851-899f-024f054f3a53">21.1</ac:inline-comment-marker> from within EFS</p><p>until then it’s fixed to look like this:</p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20714847823634" alt="Screenshot 2021-11-11 135918.png"><p></p>

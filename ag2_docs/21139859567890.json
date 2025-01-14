@@ -1,0 +1,36 @@
+{
+    "id": 21139859567890,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/21139859567890.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21139859567890-Troubleshooting-Delay-in-DKIM-Key-Generation-for-Custom-Domains",
+    "author_id": 1904316023094,
+    "comments_disabled": false,
+    "draft": true,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20034388560530,
+    "created_at": "2024-09-03T14:45:12Z",
+    "updated_at": "2024-09-03T14:45:12Z",
+    "name": "Troubleshooting Delay in DKIM Key Generation for Custom Domains",
+    "title": "Troubleshooting Delay in DKIM Key Generation for Custom Domains",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-09-03T14:45:12Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075294,
+    "content_tag_ids": [],
+    "label_names": [
+        "Troubleshooting",
+        "DKIM",
+        "Docker",
+        "OpenSSL",
+        "Email Authentication"
+    ],
+    "body": "<h1>Overview</h1><p>A customer requested a DomainKeys Identified Mail (DKIM) key for the domain ifo.de to be used on the installation eh3582.customervoice360.com for the client IFO Institut. The customer wanted all messages sent from this installation to be DKIM encrypted. The domain ifo.de is managed by the client, and the customer requested the initiation of the DKIM key request for this domain. The customer experienced a delay in receiving the DKIM key, which caused frustration as the process had previously taken less time.</p><h1>Solution</h1><p>To set up DKIM (Domain Keys Identified Mail) for a domain managed by the client, follow these steps:</p><ol>\n<li>Pull Docker image: docker pull tivian/docker-openssl</li>\n<li>Start Docker image in a Linux/WSL terminal: docker run -it --rm -v $(pwd):/openssl-certs tivian/docker-openssl:latest</li>\n<li>Ensure that the KEYPATH folder of the script which can be found under /usr/local/bin/generate_dkim_keys.sh exists locally (otherwise key files can not be saved)</li>\n<li>Execute script with data provided: Usage: /usr/local/bin/generate_dkim_keys.sh domain.tld selector Example: /usr/local/bin/generate_dkim_keys.sh ifo.de tivian</li>\n<li>Login to Hurricane MTA (see KeePass for login credentials)</li>\n<li>Edit the \"EFS-Production (1006)\" account</li>\n<li>Select \"DomainKeys / DKIM Options\"</li>\n<li>Create \"New...\" DKIM entry</li>\n<li>Add DKIM key Enabled: Yes Domain: ifo.de Selector: tivian Method: DomainKeys/DKIM Private Key: Copy private key generated in step 4 (copy private key output) Notes: Ticket: 4457922</li>\n<li>Repeat step 9 for following accounts: EFS-Adhoc (1007) EFS-Spam (1020) EFS-Pending-Confirmartion (1047)</li>\n<li>Open following helper survey and following service - https://www.mail-tester.com/?lang=en - https://tx3689.customervoice360.com/uc/spf-dkim-tester/ 1. Sender email address: noreply@ifo.de 2. www.mail-tester.com recipient: copy email address provided by Mail Tester</li>\n<li>Send page via \"CONTINUE\" button and refresh Mail Tester and unfold all point and create a screenshot of the whole page</li>\n<li>Address all issues like in the template found here: https://tivian.atlassian.net/browse/TIVI-35344?focusedCommentId=155656</li>\n</ol><h1>Summary</h1><p>This article provides a step-by-step guide on how to generate a DKIM key for a custom domain using Docker and OpenSSL, and how to add it to the Hurricane MTA server. It also provides instructions on how to test the DKIM setup using mail-tester.com and customervoice360.com.</p><h2>FAQ</h2><ol>\n<li>\n<strong>What is a DKIM key?</strong><br>DKIM (DomainKeys Identified Mail) is an email authentication method that allows the receiver to check if the email was actually sent by the domain it claims to be sent from and if the content was tampered with during transit.</li>\n<li>\n<strong>Why am I experiencing a delay in receiving my DKIM key?</strong><br>Generating a DKIM key involves several steps and requires coordination between different systems. Delays can occur due to issues at any of these steps. If you're experiencing a delay, please contact support.</li>\n<li>\n<strong>How can I test if my DKIM setup is working correctly?</strong><br>You can use services like mail-tester.com and customervoice360.com to test your DKIM setup. These services will send a test email to your domain and check if it passes DKIM authentication.</li>\n</ol>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

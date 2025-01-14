@@ -1,0 +1,85 @@
+ to.</p>
+</li>
+<li>
+<p>Select the participant variable storing the<strong> task ID</strong></p>
+</li>
+<li>
+<p>the participant variable storing the <strong>Employee project-ID</strong></p>
+</li>
+<li>
+<p>as well as the ac-variable containing the participant‘s <strong>e-mail address</strong></p>
+</li>
+<li>
+<p>and the ac-variable containing the <strong>project-ID</strong> for the follow-up survey</p>
+</li>
+<li>
+<p>Confirm your settings with <strong>Save</strong>.</p>
+</li>
+</ul>
+<p>The radio button of the respective workflow changed to green. The workflow “Invite to follow-up survey” is configured and executable.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017112886930" alt="image2019-5-15_14-56-39.png"></p>
+<p><strong>Configuring the workflow “Close“</strong></p>
+<p>This workflow allows the closing of tasks by users responsible for them. There are two types of closing:</p>
+<ul>
+<li>
+<p>the simple closing</p>
+</li>
+<li>
+<p>the closing with (automatic) invitation to a follow-up survey</p>
+</li>
+</ul>
+<p><u>Simple closing</u></p>
+<p>For the simple closing, no configuration is necessary. This workflow is executable directly after adding the workflow, indicated by the green radio button.</p>
+<p><u>Closing with (automatic) invitation to the follow-up survey</u></p>
+<ul>
+<li>
+<p>To configure this workflow, click on the link <strong>Close</strong>.</p>
+</li>
+<li>
+<p>For completing the settings in the workflow editor, see steps 2-7 of the workflow configuration „Invite to follow-up survey“.</p>
+</li>
+<li>
+<p>If you wish an invitation to a follow-up survey to be sent out upon closing at all times: don‘t check the box „Confirm invitation?“.</p>
+</li>
+<li>
+<p>If you want the responsible person of the task to decide whether he/she sends out an invitation to a follow-up survey or not upon closing: do check the box „Confirm invitation?“.</p>
+</li>
+<li>
+<p>Confirm with <strong>Save</strong>.</p>
+</li>
+</ul>
+<p>The radio button of the respective workflow changed to green. The workflow “Close” is configured and executable.</p>
+<p><strong>Allocating the workflow right</strong></p>
+<p>In order to see and apply the configured workflow buttons in the exterior view, responsible users of tasks need the workflow right in their respective roles.</p>
+<ul>
+<li>
+<p>To allocate the workflow right, navigate via the following path to the Rights administration of the role you want to allocate the workflow right to:</p>
+</li>
+</ul>
+<p>[Selected project] →<strong> Process configuration</strong> → tab <strong>Roles</strong> → <strong>Paragraph icon of the respective role</strong> →<strong> Rights administration</strong></p>
+<ul>
+<li>
+<p>Check the box in the row “actionplanner_workflow_use” of the section <strong>Follow Up - Action Planner</strong>.</p>
+</li>
+<li>
+<p>Confirm with<strong> Save</strong>.</p>
+</li>
+</ul>
+<p>You have allocated the workflow right to responsible users in their respective roles.</p>
+<h2 id="h_01J3N2HWABDD8AZMZNFRMPQGSQ">
+<strong>Creating and configuring the </strong><em><strong>Task Trigger</strong></em>
+</h2>
+<p>With the <em>Task Trigger,</em> you can create <strong>new tasks</strong> in Employee projects for survey projects. The <em>Task Trigger</em> can automatically be executed in a survey after the response to a question. Depending on how a survey participant has answered a certain question, the<em> Task Trigger</em> creates a task in the<em> Action Planner</em> which has been predefined for this purpose. The<em> Task Trigger</em> can be created on any page of the survey project. If the <em>Task Trigger</em> is created on the final page, for example, it will be triggered upon completion of the survey. The <em>Task Trigger</em> is configured on the basis of a selected Employee project storing the required organizational structure and the respective Action module the <em>Task Trigger</em> accesses when triggering the task. A number of conditions and settings define if a task is created and what content is stored in this task. The target unit for a task needs to be provided in a variable of the originating survey. In case a unit cannot be found, a survey runtime error is thrown and the survey‘s error notification recipients will be notified. The survey wildcards can be used to dynamically fill Action Planner variables. Conditions can be defined to provide different content based on predefined rules. Default fields for defining the task cannot be removed and must have a value.</p>
+<p>To create the Task Trigger, proceed as follows:</p>
+<ul>
+<li>
+<p>Navigate via the following path to the Task Trigger in your survey project:</p>
+</li>
+</ul>
+<p>[Selected project] → <strong>Questionnaire editor</strong> → [Selected page] → <strong>Triggers</strong></p>
+<ul>
+<li>
+<p>The Trigger list is opened.</p>
+</li>
+<li>
+<p>Click on the button <strong>+ Trigger</strong>.</

@@ -1,0 +1,81 @@
+"></p>
+<p class="wysiwyg-text-align-justify"><strong>Exporting Master Data:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Recoded variables are included in the data record during export like any other master data.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Methods of Recoding:</strong></p>
+<ol class="wysiwyg-text-align-justify">
+<li>
+<strong>Rearranging Characteristics</strong>: Modify the characteristics of a master data variable.</li>
+<li>
+<strong>Calculated Recoding</strong>: Based on values from one or several master data variables.</li>
+<li>
+<strong>Table-Based Recoding</strong>: Uses a lookup table with all possible values and their corresponding destination values.</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><strong>Important Notes:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Many or complex recodings can negatively impact panel performance.</li>
+<li>Automated recoding with every master data change is server-intensive. Limit to 20 recodings per installation and use grouped recodings triggered via an update rule during low traffic periods.</li>
+<li>Regularly check if existing recodings are necessary.</li>
+</ul>
+<h3 id="h_01J3FMT9K5AEVFBKY66JJXMPN3" class="wysiwyg-text-align-justify">Rearranging the Characteristics of Master Data</h3>
+<p class="wysiwyg-text-align-justify">Recoding is often used to rearrange the characteristics of a master data item. Follow these steps:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Defining the Mapping</strong></p>
+<ul>
+<li>Determine the characteristics of your new recoding variable.</li>
+<li>Define which characteristics of the source variable should be allocated to each characteristic of the recoding variable.</li>
+</ul>
+</li>
+<li>
+<p><strong>Creating a Recodes Definition</strong></p>
+<ul>
+<li>Go to People → Master data → Recoding of master data.</li>
+<li>Click on the <strong>Create recoding variable</strong> button.</li>
+<li>Enter the title for the recodes definition.</li>
+<li>Select the source master data variable.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017112906002">
+</li>
+<li>Choose a master data category for the new recoding variable.</li>
+<li>Decide if the recoding should be triggered automatically. For example, allocate the recodes definition to a group and trigger it weekly.</li>
+<li>Optionally, assign the recodes definition to a recoding group and specify the recoding order.</li>
+<li>Click <strong>Create</strong> to confirm.</li>
+<li>A new master data variable is created for storing the recoding results.</li>
+</ul>
+</li>
+<li>
+<p><strong>Defining Target Categories</strong></p>
+<ul>
+<li>Click on the title of the new recodes definition (e.g., “Age group”).</li>
+<li>On the Recodes definition tab, change the title, activate automatic recoding, and modify the recoding order.</li>
+<li>Go to the <strong>1. Define target categories</strong> tab.</li>
+<li>Enter the target categories (e.g., “Teens”, “Adults”, “Senior citizens”), including their sort numbers and codes. Confirm each entry by clicking <strong>Save</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Specifying the Target Categories</strong></p>
+<ul>
+<li>Go to the <strong>2. Specify assignments</strong> tab.</li>
+<li>All characteristics of the source variable will be displayed. Tick the checkboxes for characteristics that fit the target categories.</li>
+<li>Example: Select years of birth from 1910 to 1944 for “Senior citizens,” 1945 to 1985 for “Adults,” and 1986 to 2004 for “Teens.”</li>
+<li>Click <strong>Save</strong> to confirm.</li>
+</ul>
+</li>
+<li>
+<p><strong>Executing the Recoding</strong></p>
+<ul>
+<li>Go to the <strong>3. Run recoding process</strong> tab.</li>
+<li>The result display will show how many records were affected.</li>
+</ul>
+</li>
+</ol>
+<h3 id="MasterData-CalculatingRecodingswithFormulas" class="wysiwyg-text-align-justify"><strong>Calculating Recodings with Formulas</strong></h3>
+<p class="wysiwyg-text-align-justify">In many cases, you can use a mathematic formula to <em>calculate</em> the recoding, using the values of one or several master data as starting point for the calculation.</p>
+<p class="wysiwyg-text-align-justify">Recodings are frequently used to rearrange the characteristics of a master data item.</p>
+<p class="wysiwyg-text-align-justify">This requires the following steps:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Defining the formula.</li>
+<li>Creating a new recoding.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>1. Defining the formula</strong></p>
+<p class="wysiwyg-text-align-justify">Define the formula which describes your recoding. The following rules

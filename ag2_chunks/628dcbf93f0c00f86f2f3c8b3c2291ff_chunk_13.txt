@@ -1,0 +1,233 @@
+><u> <font>Meaning</font> </u></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>-1</p>
+</td>
+<td>
+<p>STATE_ABORTED = job was aborted</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>0</p>
+</td>
+<td>
+<p>STATE_NEW = job is new and was not triggered yet</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>STATE_RUNNING = job is currently running</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>STATE_FINISHED = job is finished</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>3</p>
+</td>
+<td>
+<p>STATE_RECOVERABLE = job was aborted, but may work next time</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>4</p>
+</td>
+<td>
+<p>STATE_PPT_LIMIT = job failed due to ppt limit</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>5</p>
+</td>
+<td>
+<p>STATE_XLS_LIMIT = job failed due to xls limit</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<h2 id="header-26"><font>Sample status</font></h2>
+<p><font>Table: panel_sample_log </font> <br><font>Column: status</font></p>
+<table data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<th>
+<p><u> <font>Status</font> </u></p>
+</th>
+<th>
+<p><u> <font>Meaning</font> </u></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>10</p>
+</td>
+<td>
+<p>SAMPLE_STATUS_CREATED</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>20</p>
+</td>
+<td>
+<p>SAMPLE_STATUS_FILTERED</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>30</p>
+</td>
+<td>
+<p>SAMPLE_STATUS_QUOTED</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>39</p>
+</td>
+<td>
+<p>SAMPLE_STATUS_START_GENERATION</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>40</p>
+</td>
+<td>
+<p>SAMPLE_STATUS_GENERATED</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>50</p>
+</td>
+<td>
+<p>SAMPLE_STATUS_INFORMED</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>60</p>
+</td>
+<td>
+<p>SAMPLE_STATUS_REMINDED</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<h2 id="header-27"><font>Last edited by</font></h2>
+<p><font>Table: panel_att </font> <br><font>Column: last_mod_user</font></p>
+<table data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 226.67px;"> <col style="width: 226.67px;"> <col style="width: 226.67px;"> </colgroup>
+<tbody>
+<tr>
+<th>
+<p><u>Code</u></p>
+</th>
+<th>
+<p><u> <font>Constant in EFS</font> </u></p>
+</th>
+<th>
+<p><u> <font>Meaning</font> </u></p>
+</th>
+</tr>
+<tr>
+<td>
+<p><font>1</font></p>
+</td>
+<td>
+<p>const MODIFIER_PANELIST_PANELSITE</p>
+</td>
+<td>
+<p><font>Change through the panel website</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><font>2</font></p>
+</td>
+<td>
+<p>const MODIFIER_PANELIST_MD_SURVEY</p>
+</td>
+<td>
+<p><font>Change due to the master data survey</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><font>3</font></p>
+</td>
+<td>
+<p>const MODIFIER_ADMIN</p>
+</td>
+<td>
+<p><font>Change by the admin users</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><font>4</font></p>
+</td>
+<td>
+<p>const MODIFIER_IMPORT</p>
+</td>
+<td>
+<p><font>Change by import</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><font>5</font></p>
+</td>
+<td>
+<p>const MODIFIER_EXTERNAL</p>
+</td>
+<td>
+<p><font>Change by the external</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>6</p>
+</td>
+<td>
+<p>const MODIFIER_API</p>
+</td>
+<td>
+<p><font>Change through the API</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>7</p>
+</td>
+<td>
+<p>const MODIFIER_UPDATE_RULE</p>
+</td>
+<td>
+<p><font>Change by the update rule</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>8</p>
+</td>
+<td>
+<p>

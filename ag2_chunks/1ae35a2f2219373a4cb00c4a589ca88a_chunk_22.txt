@@ -1,0 +1,40 @@
+="" data-alt="image-20240320-114352.png" data-renderer-start-pos="25771">
+<div id="newFileExperienceWrapper" class="new-file-experience-wrapper cc-izb7jr" data-testid="media-card-view">
+<div class="media-file-card-view cc-z40uwk" data-testid="media-file-card-view" data-test-status="complete" data-test-media-name="image-20240320-114352.png" data-test-progress="1" data-test-source="remote"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014812829586"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="25773">Under the <strong data-renderer-mark="true">Calculation</strong> tab, you can configure the condition for the calculation of the PCI. The condition therefore determines in which case a panelist drops from the code "Green" to "Yellow", for example.</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="25980"> </p>
+<h3 id="Edit-PCI-Conditions" class="wysiwyg-text-align-justify" data-renderer-start-pos="25982"><strong data-renderer-mark="true">Edit PCI Conditions</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="26003">In the following, we will define under which conditions the PCI value of a panelist is increased and under which conditions it is decreased. To do so, follow the steps below:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="26181">In the <em data-renderer-mark="true">People</em> module, select the <strong data-renderer-mark="true">Panel configuration</strong> menu item from the menu on the left and then <strong data-renderer-mark="true">PCI configuration</strong>.</p>
+</li>
+<li>
+<p class="wysiwyg-text-align-left" data-renderer-start-pos="26301">Click on the <strong data-renderer-mark="true">Calculation</strong> tab.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014859774866"></p>
+</li>
+<li>
+<p data-renderer-start-pos="26301">Under <strong data-renderer-mark="true">Condition for increasing the PCI value</strong>, click on <strong data-renderer-mark="true">Edit condition</strong>.</p>
+</li>
+</ul>
+<div class="rich-media-item mediaSingleView-content-wrap image-center cc-1q73e46 wysiwyg-text-align-justify" data-layout="center" data-width="760" data-width-type="pixel" data-node-type="mediaSingle" data-renderer-start-pos="26334">
+<div class="cc-1abk56i">
+<div class="cc-k4ngfq" data-mark-type="border" data-color="#091e4224" data-size="2">
+<div data-context-id="4149608460" data-type="file" data-node-type="media" data-width="1240" data-height="305" data-id="e336380d-84de-46db-8cf1-94191823b70d" data-collection="contentId-4149608460" data-file-name="file" data-file-size="1" data-file-mime-type="" data-alt="image-20240320-114447.png" data-renderer-start-pos="26335"> </div>
+</div>
+</div>
+</div>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="26413">We can now define the conditions for the increase of the PCI value of a panelist in the condition editor. This works best with tracking variables. Tracking variables are used to record tracking data such as the number of survey starts, the number of completed surveys or the number of incomplete surveys. We will specify that the PCI value is increased if a panelist has received at least 3 survey invitations in the last 4 weeks and has started at least 2 of these surveys. Proceed as follows:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="26911">From the <strong data-renderer-mark="true">Variable</strong> drop-down menu, select <strong data-renderer-mark="true">track_num_invited1 (Number of invitations [Disposition code 12] (last 4 weeks))</strong> and under <strong data-renderer-mark="true">Condition</strong>, select <strong data-renderer-mark="true">greater</strong>. Then enter <strong data-renderer-mark="true">2</strong> under <strong data-renderer-mark="true">Value</strong>.</p>
+</li>
+<li>
+<p data-renderer-start-pos="27098">Click on <strong data-renderer-mark="true">Save</strong>.</p>
+</li>
+<li>
+<p class="wysiwyg-text-align-left" data-renderer-start-pos="27117">In the next line, select the option <strong data-renderer-mark="true">track_num_started1 (Number of survey starts [Disposition code 21,22] (last 4 weeks))</strong> from the <strong data-renderer-mark="true">Variable</strong> drop-down menu and the option <strong data-renderer-mark="true">greater</strong> under <strong data

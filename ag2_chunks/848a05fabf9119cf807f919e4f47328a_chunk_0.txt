@@ -1,0 +1,79 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3723034625">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3723034625</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">Configurable API token rate limits</a></li>
+<ul>
+<li><a href="#header-3">Salesforce REST OAuth</a></li>
+<ul>
+<li><a href="#header-5">Custom Administrator Roles</a></li>
+<ul>
+<li><a href="#header-7">Bulk assign users to groups</a></li>
+<li><a href="#header-8">Okta Admin Console Groups page enhancements</a></li>
+<li><a href="#header-9">Advanced search for users and groups</a></li>
+<li><a href="#header-10">Trusted Origins for iFrame embedding</a></li>
+<li><a href="#header-11">Okta Sign-in Widget, version 6.6</a></li>
+<li><a href="#header-12">Okta AD agent, version 3.12.0</a></li>
+<li><a href="#header-13">Okta RADIUS Server agent, version 2.17.5</a></li>
+<li><a href="#header-14">Okta On-Prem MFA agent, version 1.5.1</a></li>
+<li><a href="#header-15">Event hooks for log streaming</a></li>
+<li><a href="#header-16">Self-service registration deprecation</a></li>
+<li><a href="#header-17">Rate Limits dashboard includes API Token data</a></li>
+<li><a href="#header-18">System Log events for Report CSV actions</a></li>
+<li><a href="#header-19">System Log update for app sign-on policy</a></li>
+<li><a href="#header-20">System Log update for telephony operations</a></li>
+<li><a href="#header-21">System Log events for customer support</a></li>
+<li><a href="#header-22">Microsoft Azure Join documentation</a></li>
+<li><a href="#header-23">Customization name change</a></li>
+<li><a href="#header-24">AD Agent auto-updates only when operational</a></li>
+<li><a href="#header-25">OIN Manager enhancements</a></li>
+<li><a href="#header-26">Dynamic issuer mode for identity providers</a></li>
+<li><a href="#header-27">Clock skew requirement removed</a></li>
+<li><a href="#header-28">Configurable API token rate limits is GA in Production</a></li>
+<li><a href="#header-29">Rate Limits dashboard includes API Token data</a></li>
+</ul>
+</ul>
+</ul>
+</ul>
+</ul><p>See: <a data-card-appearance="inline" href="https://help.okta.com/en-us/Content/Topics/ReleaseNotes/archive/oce-relnotes-2022.htm">https://help.okta.com/en-us/Content/Topics/ReleaseNotes/archive/oce-relnotes-2022.htm</a> </p><table data-layout="wide" ac:local-id="5af16877-2bd6-4c01-bfa8-0cd012f1a930">
+<colgroup>
+<col style="width: 340.0px;">
+<col style="width: 340.0px;">
+</colgroup>
+<tbody>
+<tr>
+<td data-highlight-colour="#f4f5f7"><p><strong>Feature</strong></p></td>
+<td data-highlight-colour="#f4f5f7"><p><strong>Remark</strong></p></td>
+</tr>
+<tr>
+<td><h1 id="header-1">Configurable API token rate limits</h1></td>
+<td><p>irrelevant (but nice to have in case of an incident)</p></td>
+</tr>
+<tr>
+<td><h2 id="header-3">Salesforce REST OAuth</h2></td>
+<td><p>not in use</p></td>
+</tr>
+<tr>
+<td><h3 id="header-5">Custom Administrator Roles</h3></td>
+<td><p>nice to have, no adaption needed</p></td>
+</tr>
+<tr>
+<td><h4 id="header-7">Bulk assign users to groups</h4></td>
+<td><p>very nice to to have, currently no adaption needed</p></td>
+</tr>
+<tr>
+<td><h4 id="header-8">Okta Admin Console Groups page enhancements</h4></td>
+<td><p>irrelevant</p></td>
+</tr>
+<tr>
+<td><h4 id="header-9">Advanced search for users and groups</h4></td>
+<td><p>irrelevant</p></td>
+</tr>
+<tr>
+<td><h4 id="header-10">Trusted Origins for iFrame embedding</h4></td>
+<td><p>nice to have, no adaption needed for now</p></td>
+</tr>
+<tr>
+<td><h4 id="header-11">Okta Sign-in Widget, version 6.6</h4></td>
+<td><p>no update needed, take changes into account

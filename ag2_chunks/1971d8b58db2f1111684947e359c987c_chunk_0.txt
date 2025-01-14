@@ -1,0 +1,28 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1067024402">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1067024402</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">What is an Identity Provider ?</a></li>
+<ul>
+<li><a href="#header-3">How do we integrate with Identity Providers ?</a></li>
+<ul>
+<li><a href="#header-5">Which Identity Providers are supported?</a></li>
+<ul>
+<li><a href="#header-7">Is the Identity Provider “X” supported ?</a></li>
+<li><a href="#header-8">What to do if the Identity Provider is not tested yet ?</a></li>
+<li><a href="#header-9">How is an Identity Provider tested ?</a></li>
+<li><a href="#header-10">How long does it take to setup an Identity Provider ?</a></li>
+<li><a href="#header-11">Do you support Social Identity Providers ?</a></li>
+<li><a href="#header-12">A client of mine offers SAML and OpenID Connect at their Identity Provider - what should I choose?</a></li>
+<li><a href="#header-13">Can I set up multiple Identity Providers for a client at the same time ?</a></li>
+<li><a href="#header-14">My current installation has an Identity Provider (IdP) enabled and the IdP ID is set. Thus I am not able to login to the clients IdP - How can I login to that installation?</a></li>
+</ul>
+</ul>
+</ul>
+</ul>
+</ul><ac:parameter ac:name="hidden">true</ac:parameter><ac:rich-text-body><ac:parameter ac:name="minLevel">4</ac:parameter><ac:parameter ac:name="maxLevel">4</ac:parameter><ac:parameter ac:name="indent">0</ac:parameter><ac:parameter ac:name="absoluteUrl">true</ac:parameter><ac:parameter ac:name="style">none</ac:parameter></ac:rich-text-body><h1 id="header-1"><strong>What is an Identity Provider ?</strong></h1><p>An Identity Provider is a service which is used to handle authentication for other services. The authentication process is specified by protocols.<br>It is commonly used to achieve Single-Sign-On (SSO) across multiple applications.</p><p>A few common ones are:</p><ul>
+<li><p><a href="https://www.okta.com/">https://www.okta.com/</a></p></li>
+<li><p><a href="https://auth0.com/">https://auth0.com/</a></p></li>
+<li><p>Social Identity Providers (Facebook, Twitter, Google)</p></li>
+</ul><h2 id="header-3"><strong>How do we integrate with Identity Providers ?</strong></h2><p>We integrate with customer’s Identity Providers using standardised protocols. An architectural overview can be found here: <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Architecture V1" ri:version-at-save="5"></ri:page><ac:link-body>Architecture</ac:link-body></ac:link></p><p>Also Okta offers documentation on <a href="https://developer.okta.com/docs/concepts/identity-providers">integration with external Identity Providers</a></p><p>For a more detailed description please have a look at OpenID Connect or SAML 2.0 on how they do authentication for apps. This applies because our Identity Provider is an application from the customer’s perspective.</p><h3 id="header-5"><strong>Which Identity Providers are supported?</strong></h3><p>We support Identity Providers which support authentication via the protocol SAML 2.0 or OpenID Connect. They also have to be publicly available (not in a private network).<br>It does not matter if it is a cloud hosted service or an on-premise solution. Due to the fact that every piece of software implements a protocol slightly different, each Identity Provider has to be tested so that we can guarantee that it works.</p><h4 id="header-7"><strong>Is the Identity Provider “X” supported ?</strong></h4><p>These are the providers which have been tested and where the setup is known.  </p><p>Please have a look at the <ac:link ac:card-appearance="inline"><ri:page ri:content-title="List of tested Identity Providers" ri:version-at-save="4"></ri:page><ac:link-body>List of tested Identity Providers</ac:link-body></ac:link>.</p><h4 id="header-8"><strong>What to do if the Identity Provider is not tested yet ?</strong></h4><p>Not tested does not mean not working. Please contact 2nd level support or the IAM team to find out if an integration is possible or not.</p><h4 id="header-9"><strong>How is an Identity Provider tested ?</strong></h4><p>Identity Providers are tested by testing out the login to Okta via the Identity Provider. Testing an Identity Provider does not require Tivian Access to be activated in EFS. The integration can

@@ -1,0 +1,104 @@
+.com/html/html5_video.asp</a></p>
+<p>These container formats contain video tracks or soundtracks in certain formats (e.g. AVC for video and AAC for audio).</p>
+<p>These formats should have been created with default settings (the so-called profile at a certain level). This is important if you want to have the highest possible support on different devices (e.g. Baseline@3.1). For example, some profiles work in desktop browsers but not on mobile devices, especially older ones, but are still widely used. See here: <a href="https://en.wikipedia.org/wiki/Advanced_Video_Coding#Profiles" data-card-appearance="inline">https://en.wikipedia.org/wiki/Advanced_Video_Coding#Profiles</a></p>
+<p>If the format does not support HTML5, EFS tries to deliver a proprietary Flash player to play the video. Please note that support for all major browsers (Chrome, Firefox, Opera, Safari, Edge) has been discontinued and you may have to activate Flash manually (if at all possible). Adobe will also discontinue support for Flash 2020.</p>
+<p>As a last option, EFS provides the format for download. This is exactly what happens here, for example in Chrome. Firefox for example still asks if Fash should be activated.</p>
+<p>In summary, you can say that videos in container format MOV should not be used if you want to cover as many browsers and devices as possible. Recommended here is the container format MP4 with AVC/AAC (Video/Audio) in Baseline@3.1 (Profil/Level).</p>
+<h4 id="providing-videos-for-mobile-devices">Providing videos for mobile devices</h4>
+<p>You can provide these videos in different resolutions/qualities depending on which mobile device they will be used (e.g. on a 4K device that can process and display very high resolutions/quality settings or on a smartphone that can process/display rather lower resolutions/quality settings and is also limited by the bandwidth of mobile networks. The higher the resolution/quality of the video, the more data has to be transferred).</p>
+<p>If the video cannot be played on the device, a download will be provided via HTML5.</p>
+<h3 id="audio-player">Audio Player</h3>
+<p>A dedicated audio player is available. When creating new questions, the audio player can be found in the category “Text and multimedia”.</p>
+<ul>
+<li>
+<p>The audio player supports mp3 with mp3 extension.</p>
+</li>
+<li>
+<p>The maximum file size corresponds to the installation-specific maximum permitted size of files in the media library.</p>
+</li>
+<li>
+<p>A dedicated variable allows to track if the audio file has been played completely, partially, or not at all. The variable is created automatically. Per default, it is labeled “Audio has finished playing”. The following missings are used:</p>
+<ul>
+<li>
+<p>77 = not seen</p>
+</li>
+<li>
+<p>66 = no JavaScript, cannot tell if played</p>
+</li>
+<li>
+<p>99 = seen, not played</p>
+</li>
+<li>
+<p>1 = seen and completely played</p>
+</li>
+<li>
+<p>0 = seen and partially played but not finished or played in repeat mode</p>
+</li>
+</ul>
+</li>
+<li>
+<p>The “Responsive Layout” audio player is realized based on question type 911 with a comparable functional scope</p>
+</li>
+<li>
+<p>During uploads, all files are immediately scanned for malware, before being moved to their final destination within the EFS platform. If malware is found, the file is immediately removed from the temporary storage and the user is notified that the upload was not successful. This approach ensures that at no point malware can be distributed through EFS.</p>
+</li>
+</ul>
+<h4 id="entry-dialog-2">Entry Dialog</h4>
+<p>The entry dialog is closely related to the entry dialog of question type 911.</p>
+<ul>
+<li>
+<p>The “Answers” section is generated automatically. Please do not change anything in this section.</p>
+</li>
+<li>
+<p>The features of the “Detail configuration” section are explained in the Table below.</p>
+</li>
+</ul>
+<table border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour="#c0b6f2">
+<p><strong>Feature</strong></p>
+</th>
+<th data-highlight-colour="#c0b6f2">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Audio file</p>
+</td>
+<td>
+<p>Audio file in mp3 format</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Alignment</p>
+</td>
+<td>
+<p>The audio player can be aligned left, right, or centered.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Hide progress bar</p>
+</td>
+<td>
+<p>The progress bar can be hidden to prevent the participant from skipping the file.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Autoplay</p>
+</td>
+<td>
+<p>Automatically play the file upon opening the page. Not supported on most mobile devices.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Repeat</p>
+</td>
+<td>
+<p>The file is played in an endless loop. If this option is activated, the variable of

@@ -1,0 +1,13 @@
+ to indicate the success or failure of requests. For example, 200 indicates a successful request, while 400, 401, 403, and 500 indicate various types of errors or permission issues.</p>
+<h3 id="faq_blocklist" class="wysiwyg-text-align-justify">How can I manage the email blocklist?</h3>
+<p class="wysiwyg-text-align-justify">You can use the email blocklist services to add, remove, or retrieve blocked email addresses. These can be managed globally or for specific surveys using the appropriate API endpoints.</p>
+<h3 id="faq_participants" class="wysiwyg-text-align-justify">How do I add participants to a survey?</h3>
+<p class="wysiwyg-text-align-justify">You can add participants to a survey using the <code>POST /panel/participants/v2/{sampleId}</code> endpoint. This allows you to add multiple participants to a survey sample in a single request.</p>
+<h3 id="faq_survey_creation" class="wysiwyg-text-align-justify">How do I create a new survey?</h3>
+<p class="wysiwyg-text-align-justify">To create a new survey, use the <code>POST /survey/surveys/</code> endpoint. This will create a new survey and return the project ID, which you can use for further operations on that survey.</p> to indicate the success or failure of requests. For example, 200 indicates a successful request, while 400, 401, 403, and 500 indicate various types of errors or permission issues.</p>
+<h3 id="faq_blocklist" class="wysiwyg-text-align-justify">How can I manage the email blocklist?</h3>
+<p class="wysiwyg-text-align-justify">You can use the email blocklist services to add, remove, or retrieve blocked email addresses. These can be managed globally or for specific surveys using the appropriate API endpoints.</p>
+<h3 id="faq_participants" class="wysiwyg-text-align-justify">How do I add participants to a survey?</h3>
+<p class="wysiwyg-text-align-justify">You can add participants to a survey using the <code>POST /panel/participants/v2/{sampleId}</code> endpoint. This allows you to add multiple participants to a survey sample in a single request.</p>
+<h3 id="faq_survey_creation" class="wysiwyg-text-align-justify">How do I create a new survey?</h3>
+<p class="wysiwyg-text-align-justify">To create a new survey, use the <code>POST /survey/surveys/</code> endpoint. This will create a new survey and return the project ID, which you can use for further operations on that survey.</p>

@@ -1,0 +1,118 @@
+06ba9ecb7a5" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p>EFS User ID</p></th>
+<th><p>Okta User ID</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>12</p></td>
+<td><p>10002</p></td>
+<td><p>-</p></td>
+</tr>
+<tr>
+<td><p>22</p></td>
+<td><p>20002</p></td>
+<td><p>-</p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="header-13">Future state:</h4>
+<p><strong><span style="color: rgb(255,86,48);">No future State. The conflict has to be solved manually first.</span></strong></p>
+</div><p></p><h3 id="header-15">Case 3</h3><p>A user is already converted.</p><div class="expand-macro">
+<h4 string="Case 3"></h4>
+<h4 id="header-17">Initial state:</h4>
+<p><strong><u>EFS - User Table</u></strong></p>
+<table ac:local-id="c309eec4-5806-41d2-b14d-e474a179b5da" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p>EFS User ID</p></th>
+<th><p>email</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>23</p></td>
+<td><p>user3@tivian.com</p></td>
+<td><p>-</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><u>Okta - User List</u></strong></p>
+<table ac:local-id="88585bf4-ccdf-44bb-ad38-da659fba7f3d" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p>Okta User ID</p></th>
+<th><p>email</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>20003</p></td>
+<td><p>user3@tivian.com</p></td>
+<td><p>-</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><u>EFS - EFS User to Okta User Mapping</u></strong></p>
+<table ac:local-id="a8bdb833-8b96-41dd-ac67-87d67819d73e" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p>EFS User ID</p></th>
+<th><p>Okta User ID</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>23</p></td>
+<td><p>20003</p></td>
+<td><p>-</p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="header-18">Future state:</h4>
+<p><strong><span style="color: rgb(54,179,126);">Nothing to do. Everything is already fine.</span></strong></p>
+</div><h3 id="header-20">Case 4</h3><p>A user with @questback.com exists in EFS but this user is mapped to a wrong Okta user - e.g., EFS user markus.neuy@questback.com is mapped to mn@gmail.com.</p><div class="expand-macro">
+<h4 string="Case 4"></h4>
+<h4 id="header-22">Initial state:</h4>
+<p><strong><u>EFS - User Table</u></strong></p>
+<table ac:local-id="bc1d5ddd-23dc-43aa-9244-42095678507f" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p>EFS User ID</p></th>
+<th><p>email</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>14</p></td>
+<td><p><strong><span style="color: rgb(255,86,48);">user4@questback.com</span></strong></p></td>
+<td><p>-</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><u>Okta - User List</u></strong></p>
+<table ac:local

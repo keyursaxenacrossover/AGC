@@ -1,0 +1,82 @@
+;">
+<td style="height: 128px;">Status</td>
+<td style="height: 128px;"> </td>
+<td style="height: 128px;">
+<p>Available options are:</p>
+<ul>
+<li>Inactive</li>
+<li>Active</li>
+</ul>
+<p>Only active bonuses will be displayed.</p>
+</td>
+</tr>
+<tr style="height: 138px;">
+<td style="height: 138px;">
+<p>Minimum/maximum value of payment</p>
+</td>
+<td style="height: 138px;"> </td>
+<td style="height: 138px;">
+<p>If you wish to let the panelists enter the amount themselves in a text field, you can use these thresholds to define the range of the amount. At the same time, defining a minimum value of payment prevents panelists with fewer points from redeeming the respective bonus.</p>
+</td>
+</tr>
+<tr style="height: 42px;">
+<td style="height: 42px;">Limits of payment</td>
+<td style="height: 42px;"> </td>
+<td style="height: 42px;">
+<p>Predefined payment amounts that can be determined by the panel administrator in advance.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify">The following figures illustrate the position of text elements in the standard panel which were inserted using wildcards.</p>
+<h3 id="types-of-payment" class="wysiwyg-text-align-justify"><strong>Types of Payment</strong></h3>
+<p class="wysiwyg-text-align-justify">The following payment types are available:</p>
+<table class="relative-table wrapped wysiwyg-text-align-justify" style="width: 96.2925%; margin-right: auto; margin-left: auto; height: 847px;" border="1">
+<colgroup> <col style="width: 12.8031%;"> </colgroup> <colgroup> <col style="width: 55.3836%;"> </colgroup> <colgroup> <col style="width: 31.7734%;"> </colgroup>
+<tbody>
+<tr style="height: 57px;">
+<th class="wysiwyg-text-align-center" style="width: 14.6199%; height: 57px;">Payment types</th>
+<th class="wysiwyg-text-align-center" style="width: 53.6062%; height: 57px;">Meaning</th>
+<th class="wysiwyg-text-align-center" style="width: 31.5789%; height: 57px;">
+<p>Additionally required settings</p>
+</th>
+</tr>
+<tr style="height: 88px;">
+<td style="width: 14.6199%; height: 88px;">Standard</td>
+<td style="width: 53.6062%; height: 88px;">
+<p>The panel administrator calls up the reported payments in the admin area and processes them</p>
+</td>
+<td style="width: 31.5789%; height: 88px;"> </td>
+</tr>
+<tr style="height: 274px;">
+<td style="width: 14.6199%; height: 274px;">Bank payment</td>
+<td style="width: 53.6062%; height: 274px;">
+<p>This function allows you to use the EFS Panel bonus system for the handling of bank payments. The panelists enter their bank details using specially configured forms. The panel administrator calls up the reported bonus requests in the admin area to process them, usually by payment into a bank account.</p>
+</td>
+<td style="width: 31.5789%; height: 274px;">
+<ul>
+<li>Configure appropriate options in the "Bonus list and redemption" function module.</li>
+<li>Optional: Activate the saving of bank details</li>
+<li>Optional: Create master data for saving of bank details</li>
+<li>Form configuration.</li>
+</ul>
+</td>
+</tr>
+<tr style="height: 364px;">
+<td style="width: 14.6199%; height: 364px;">Voucher</td>
+<td style="width: 53.6062%; height: 364px;">
+<p>Sending of vouchers with individual code</p>
+<p>With vouchers there are no defined limits on payment, instead, the amount is set by assigning a voucher code list.</p>
+<p>Please note: Bonuses of the type “voucher” will only be shown in the bonus list as long as unused vouchers exist. As soon as the existing vouchers are used, the bonus will no longer be offered. Though only vouchers paid out by the administrator will be regarded as “used”, vouchers requested by panelists but still not paid out are regarded as “unused”. More vouchers may be requested than are available because requests for all remaining vouchers have been made, but these have been not processed by the administrator yet.</p>
+</td>
+<td style="width: 31.5789%; height: 364px;">
+<ul>
+<li>Configure appropriate options in the "Bonus list and redemption" function module.</li>
+<li>Voucher code list</li>
+<li>Mail template of the type “Voucher mail” for the respective language version.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify">The panelists can only choose one of these types of payment respectively. The error message which is output when combining different types of payment can be edited using the identifier “msg_different_payment_type”. Furthermore, with vouchers only one payment respectively can be requested with each

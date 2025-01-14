@@ -1,0 +1,107 @@
+ multiple times in one survey. This doesn’t make any sense in this example, therefore don’t activate the checkbox.</p>
+</li>
+<li>
+<p><strong>Save</strong> the settings.</p>
+</li>
+</ul>
+<h3 id="configuring-details" class="wysiwyg-text-align-justify">Configuring Details</h3>
+<p class="wysiwyg-text-align-justify"><strong>In the final step configure the mail to be sent.</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Open the <strong>Detail configuration</strong> tab: It contains mail trigger-specific options.</p>
+</li>
+<li>
+<p>Optionally, you can use a mail template of type “Standard mail”, filled according to the instructions below. If you choose this option, select the template first, then upload by clicking <strong>Apply mail template</strong>.</p>
+</li>
+<li>
+<p>As this is a personalized survey, you can select the “u_email” wildcard from the drop-down list in the “mail dynamically from” field. If participants fill in the comment field, the wildcard will be replaced with the e-mail address that was saved for them in participant administration.</p>
+</li>
+<li>
+<p>Enter the survey manager as the mail recipient.</p>
+</li>
+<li>
+<p>In the “Subject” field, enter the title “Employee survey feedback”.</p>
+</li>
+<li>
+<p>In the “Mail text” field, enter the variable for the comment field “v_11”, enclosed by two hash signs (#). During the course of the survey, this wildcard will be replaced with the participant’s entry</p>
+</li>
+<li>
+<p>Leave the default setting for the dispatch date unchanged.</p>
+</li>
+<li>
+<p>Confirm with<strong> Save</strong>.</p>
+</li>
+</ul>
+<h3 id="triggers-in-detail" class="wysiwyg-text-align-justify">Triggers in detail</h3>
+<p class="wysiwyg-text-align-justify">The following table provides an overview of the different trigger types.</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 170.0px;"> <col style="width: 170.0px;"> <col style="width: 170.0px;"> <col style="width: 170.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" style="width: 151.181px;" data-highlight-colour="#c0b6f2">
+<p><strong>Trigger</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 240.885px;" data-highlight-colour="#c0b6f2">
+<p><strong>Properties</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 147.222px;" data-highlight-colour="#c0b6f2">
+<p><strong>Project type</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 147.24px;" data-highlight-colour="#c0b6f2">
+<p><strong>Page type</strong></p>
+</th>
+</tr>
+<tr>
+<td style="width: 143.16px;">
+<p>Mail trigger</p>
+</td>
+<td style="width: 232.865px;">
+<p>Upon occurrence of the event to be defined, an e-mail with predefined or dynamically generated content will be sent to an e-mail address that was either defined in advance or collected during the survey.</p>
+</td>
+<td style="width: 139.201px;">
+<p>all</p>
+</td>
+<td style="width: 139.219px;">
+<p>all</p>
+</td>
+</tr>
+<tr>
+<td style="width: 143.16px;">
+<p>Page trigger</p>
+</td>
+<td style="width: 232.865px;">
+<p>Upon occurrence of the event to be defined, the respondent will be directed to a certain page of the survey.</p>
+</td>
+<td style="width: 139.201px;">
+<p>all</p>
+</td>
+<td style="width: 139.219px;">
+<p>all</p>
+</td>
+</tr>
+<tr>
+<td style="width: 143.16px;">
+<p>Logout trigger</p>
+</td>
+<td style="width: 232.865px;">
+<p>Upon occurrence of the event to be defined, the respondent will be directed to the final page.</p>
+</td>
+<td style="width: 139.201px;">
+<p>all</p>
+</td>
+<td style="width: 139.219px;">
+<p>all</p>
+</td>
+</tr>
+<tr>
+<td style="width: 143.16px;">
+<p>Sample trigger</p>
+</td>
+<td style="width: 232.865px;">
+<p>Upon occurrence of the event to be defined, the respondent will be registered in a sample of the target survey and will be invited via e-mail.</p>
+<p>The sample trigger can be set up and executed in all quantitative survey types (AN, PE, PA, MD, ES, MSF). For target survey, you can use all survey types with participant administration,</p>
+</td>
+<td style="width: 139.201px;">
+<p>all</p>
+</td>
+<td style="

@@ -1,0 +1,52 @@
+_WHITELISTED</code>
+</li>
+</ol>
+<h2 id="h_01J9XN7WG2V7XAQH94TPSZBP91">Method 3 (custom routing plugin) </h2>
+<p>This method complements the other 2, meaning that if a customer requests that their instance page loads up only for the whitelisted IP addresses, and shows blank page for any other IP address, you need to go through <strong>method 1 or method 2</strong>, and then:</p>
+<ol>
+<li>Run the below set of commands <strong>line by line</strong>, which will check if the <code>plugin.inc.php</code> file exists, and if it doesn't, it will create it<br>
+<p><code>i {{TECHNICALNAME}}</code></p>
+<p><code>[ -f "/nfs/installations/{{TECHNICALNAME}}/nfs/opst/{{TECHNICALNAME}}.customervoice360.com/htdocs/custom/routing/plugin.inc.php" ] &amp;&amp; echo "File exists."</code></p>
+<p><code>mkdir -p custom/routing &amp;&amp; cd custom/routing &amp;&amp; vi plugin.inc.php</code></p>
+<ol>
+<li>
+<strong>If the file doesn't exist</strong>, add the following code in the <code>plugin.inc.php</code> file:
+<pre>&lt;?php<br>/*<br>s. Doku: https://it.globalpark.de/twiki/bin/view/Development/DevEFSGuidelineCustomizing#Custom_Request_handling_Routing<br>*/<br><br>function custom_routing_plugin($originalUri)<br>{<br>// Allow Trilogy VPN and whatever is in the admin_login_ip_range variable in EFS<br>if($_SERVER["HTTP_X_FORWARDED_FOR"] != '52.6.229.154'){<br>// example for IP restrictions by using EFS standards like admin_login_ip_range<br>$iprange = new EFS_Login_Helper_Iprange(gp_conf::get("admin_login_ip_range"));<br>if ( $iprange-&gt;check() != false) {<br>die();<br>}<br>}<br>}</pre>
+</li>
+<li>
+<strong>If the file exists:</strong>
+<ol>
+<li>Take a backup of the current file with <code>cp plugin.inc.php plugin.inc.php.bak</code>
+</li>
+<li>Edit the file and add the below code all the way to the bottom:
+<pre>function custom_routing_plugin($originalUri)<br>{<br>// Allow Trilogy VPN and whatever is in the admin_login_ip_range variable in EFS<br>if($_SERVER["HTTP_X_FORWARDED_FOR"] != '52.6.229.154'){<br>// example for IP restrictions by using EFS standards like admin_login_ip_range<br>$iprange = new EFS_Login_Helper_Iprange(gp_conf::get("admin_login_ip_range"));<br>if ( $iprange-&gt;check() != false) {<br>die();<br>}<br>}<br>}</pre>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Save the file using <strong>Escape</strong> and then <code>:wq</code>
+</li>
+<li>Change the <code>has_routing_plugin</code> property to 1 in the UI or via CLI:<br><code>helpersEfsChangeConfig has_routing_plugin 1</code><br>
+<ol>
+<li>This last step is <strong>crucial</strong>, as this is what enables the configuration done in steps 1-3</li>
+</ol>
+</li>
+</ol><ol>
+<li>Take a backup of the current file with <code>cp plugin.inc.php plugin.inc.php.bak</code>
+</li>
+<li>Edit the file and add the below code all the way to the bottom:
+<pre>function custom_routing_plugin($originalUri)<br>{<br>// Allow Trilogy VPN and whatever is in the admin_login_ip_range variable in EFS<br>if($_SERVER["HTTP_X_FORWARDED_FOR"] != '52.6.229.154'){<br>// example for IP restrictions by using EFS standards like admin_login_ip_range<br>$iprange = new EFS_Login_Helper_Iprange(gp_conf::get("admin_login_ip_range"));<br>if ( $iprange-&gt;check() != false) {<br>die();<br>}<br>}<br>}</pre>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Save the file using <strong>Escape</strong> and then <code>:wq</code>
+</li>
+<li>Change the <code>has_routing_plugin</code> property to 1 in the UI or via CLI:<br><code>helpersEfsChangeConfig has_routing_plugin 1</code><br>
+<ol>
+<li>This last step is <strong>crucial</strong>, as this is what enables the configuration done in steps 1-3</li>
+</ol>
+</li>
+</ol>

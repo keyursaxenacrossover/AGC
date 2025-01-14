@@ -1,0 +1,47 @@
+ from”.</p>
+</li>
+<li>
+<p>Assign a language identifier to the new language.</p>
+</li>
+<li>
+<p>Finally, confirm by clicking on <strong>Save</strong>.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014837371410" alt="Add new language.jpg"></p>
+<h3 id="copying-language-elements" class="wysiwyg-text-align-justify"><strong>Copying Language Elements</strong></h3>
+<p class="wysiwyg-text-align-justify"><em>A survey</em> allows you to copy texts from an already existing language into another language.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The “Copy language phrases from” function allows you to initialize a new language with existing phrases from another language. See the section “Create language” above.</p>
+</li>
+<li>
+<p>To fill or overwrite an already existing language with language elements from another language, specify the source and target languages in the “Copy language elements” field and confirm by clicking on <strong>Execute</strong>.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The copy function is useful if, for example, many answer categories are identical and do not require translation, e.g. if questions concern products that are marketed internationally or the names of music artists and song titles.</p>
+<h3 id="setting-the-active-default-language" class="wysiwyg-text-align-justify"><strong>Setting the Active Default Language</strong></h3>
+<p class="wysiwyg-text-align-justify">Among the existing languages of a multilingual project, one language will be treated as the default language. That means the following:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>This language will automatically be used in the output questionnaire, unless an individual language preference for the respondent has been set by defining a language selection variable or unless a language selection page has been set up.</p>
+</li>
+<li>
+<p>The language elements of the default language will appear in the questionnaire editor, whereas you can only edit the language elements of the other languages via the language editor.</p>
+</li>
+<li>
+<p>The language elements of the default language will always appear in the first column of the language editor.</p>
+</li>
+<li>
+<p>If a language element has not been filled in for another language, the finished questionnaire will show the corresponding language element of the default language instead.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">To find out which language performs the function of default language, check the column “Default language” in the overview of languages. When creating a project, the system will automatically set the language that is used in the admin area by the user creating the project as the default language. I.e. if the project is created by a staff member using the English-language admin area, the default language will automatically be set to English.</p>
+<h3 id="changing-the-default-language" class="wysiwyg-text-align-justify"><strong>Changing the Default Language</strong></h3>
+<p class="wysiwyg-text-align-justify">If you wish to make edits in various languages directly in the questionnaire editor instead of using simultaneous central access to the language elements of all languages via the language element editor, you will need to change the default language. It is usually not advisable to proceed in this way because the <strong>Language editor</strong> provides convenient central access to the language elements of the various languages.</p>
+<p class="wysiwyg-text-align-justify">To change the default language, find the desired new default language in the list and click on the <strong>Use as default language</strong> icon. This change will simultaneously trigger a language selection blocker. Please observe the notes on this feature in the following section.</p>
+<p class="wysiwyg-text-align-justify">If the new default language was not yet fully translated before the default language change, the #undefined# marker will appear in the text elements in the <strong>questionnaire</strong> and<strong> language editors</strong> which are still empty. Missing logos and buttons will be filled with #undefined#. If no character set has been specified before the change, the character set will also be set to "#undefined#" and needs to be defined.</p>
+<p class="wysiwyg-text-align-justify"><strong>Blocking changes to the default language</strong></p>
+<p class="wysiwyg-text-align-justify">If several staff members are working in the admin area at the same time, problems might occur. These can be prevented by incorporating the language selection blocker:</p>
+<p class="wysiwyg-text-align-justify">Let us assume that user A sets his or her native language, German, as the default language and starts work in the questionnaire editor. User B does not know about this and changes the default language to English. Now, user A wants to save his or her changes to the German-language questionnaire. However, while saving, the changes will not be entered in the originally set default language of German, but will instead overwrite the English text elements.</p>
+<p class="wysiwyg-text-align-justify">To avoid such overlapping, the change function will be blocked for all users after a change of the default language, and the<strong> Activate language</strong> button will no longer appear.</p>
+<p class="wysiwyg-text-align-justify">Only the user who last made the change as well as users with “root” rights will now

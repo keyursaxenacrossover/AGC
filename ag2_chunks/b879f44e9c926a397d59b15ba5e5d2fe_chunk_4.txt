@@ -1,0 +1,63 @@
+. Via the drop-down list, you can sort tasks by Title, Completion date, Status and Created date.</p>
+<p class="wysiwyg-text-align-justify">Via the search field, you can search and display tasks by entering respective characters and numbers which are included in the task variables Title, Responsible person, Creator, ID, Problem description and Task description.</p>
+<h3 id="creating-a-new-task-in-task-list" class="wysiwyg-text-align-justify">
+<strong>Creating a new task in </strong><em><strong>Task List</strong></em>
+</h3>
+<p class="wysiwyg-text-align-justify">To create a new task in <em>Task List</em>, click on the button <strong>Create task</strong>. The entry mask for creating a new task is opened.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015039486866" alt="image2019-5-15_16-40-56.png"></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Select Title, Status, Completion date with time, Unit, Responsible person of the task as well as the Subject group and enter a Problem description and a Task description into the text fields.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Notes:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Select a unit first to load a list of responsible persons for that unit.</p>
+</li>
+<li>
+<p>If more than ten units or responsible persons are visible, the select box becomes a filtering list.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Saving is not available until all required fields are filled.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Click on the button<strong> Submit</strong>.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Your newly created task has been added to the list display - from here you can access and edit tasks.</p>
+<h3 id="list-display" class="wysiwyg-text-align-justify"><strong>List display</strong></h3>
+<p class="wysiwyg-text-align-justify">The list display provides you with an overview of created tasks. Depending on your filter settings, maybe only tasks with the status Not started and Started (standard setting) or only tasks created by a certain person are displayed for example. In the list display, depending on each configuration, the following items of a task can be displayed: ID (with a preceding hash sign), title, responsible person, their organizational unit, subject group, status, the remaining time until expiration of the task, the number of existing comments on the task and tags (if created). Via the menu on the right side, you can edit, copy and delete tasks.</p>
+<p class="wysiwyg-text-align-justify"><strong>Status display and reminder function</strong></p>
+<p class="wysiwyg-text-align-justify"><u>Status display</u></p>
+<p class="wysiwyg-text-align-justify">The color of the status bar corresponds to the current status of a task:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Green: Editing of the task has Not started.</p>
+</li>
+<li>
+<p>Orange: Editing of the task has Started.</p>
+</li>
+<li>
+<p>Red: Editing of the task is Completed.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">When editing tasks via workflows, the status Not started is automatically set to Started.</p>
+<p class="wysiwyg-text-align-justify"><u>Reminder function</u></p>
+<p class="wysiwyg-text-align-justify">The color of the time display serves as reminder function and is independent of the status display. The reminder function runs synchronously to the reminder mail, warning about an upcoming expiration of a task.</p>
+<p class="wysiwyg-text-align-justify">By default, the color of the time display of tasks turns from black to orange as soon as a task is one day away from expiration. In the configuration area, you can define the number of days the reminder function is executed before expiration. Here, you can adjust the default setting of one day.</p>
+<p class="wysiwyg-text-align-justify">There are three different colors displaying the time status of tasks:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Black: The task is at least one day away from expiration warning. By default, the warning is executed one day before expiration of the task. In this case, the task is marked in black up to two days before expiration.</p>
+</li>
+<li>
+<p>Orange: The task is one day away from expiration with default setting or at the most as many days as is set for the expiration warning.</p>
+</li>
+<li>
+<p>Red: The task is expired and lies in the past.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The setting of the expiration warning runs by days (not time). Tasks expire at 11.59 pm at night (UTC). Expired tasks are automatically escalated one level up.</p>
+<h3 id="editing-the-properties-of-a-task" class="wysiwyg-text-align-justify"><strong>Editing the properties of a task</strong></h3>
+<p class

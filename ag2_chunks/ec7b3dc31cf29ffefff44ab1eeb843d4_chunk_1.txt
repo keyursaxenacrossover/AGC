@@ -1,0 +1,47 @@
+ generische DV domain, also: <a href="http://dv-ab1234-no1.customervoice360.com">dv-ab1234-no1.customervoice360.com</a></p>
+<p>Bei Legacy:<br>alle existierenden DVs haben altes DNS setup bekommen: Pro EFS instanz 1(eins!) DV der angesprochen werden kann<br>Wird unter dem alten Pfad zur Verfügung gestellt</p>
+<p>Wenn benutzt mit dem Interface, dann login erreichbar unter alter domain, nach dem login ist das dann /datavoyager, aber grundsätzlich alles erreichbar unter dem alten pfad</p>
+<p>Bei neuen Instanzen:<br>Passwort für root selbes wie früher<br>db heißt nun: dv_ab1234_no1<br>bekommt eigene Passwörter und user für diese DB: dv-techsupport (PW siehe Keypass)<br>Application Ini not available for TS<br>Customizings werden sich im /nfs/dv-instances/ab1234-no1 Verezichnis direkt finden, nicht sepparat wie bei EFS (Interview mal gordon)<br>Cstomizings sind hier aus git zu nehmen. nono bad nfs only terrible dont<br>-&gt; mit diesem Namen zu finden in bitbucket :) simple as cake</p>
+<p>Bei Troubleshooting bis auf weiteres Sysadmin Support benötigt: TIVI-1004(by Niko) liegt bei Arne</p>
+<p>drinne ist: build fix, one build, db ist erstellt, autohealself ist gelaufen, crons bereits aktiv, da von TS keine special configurationes mehr nötig</p>
+<p>Special for Dashbo:<br>welches Dashbo soll er ansprechen? preview oder prod (so lang es das preview gibt, prod steht noch nicht)<br>ok von pm einholen! immer!</p>
+</blockquote><hr><p></p><h1 id="header-2">OLD - AWS</h1><p>In the AWS the fastbit changes from: fastbit.global-services.svc.cluster.local</p><p>to: fastbit.global-service-fastbit.svc.cluster.local</p><p>This has to be adjusted if an installation moves to AWS and also for newly installed installations.</p><h1 id="header-3">OLD - Set up DV 4 using scripts</h1><h2 id="header-5">DV 4.1 (Report Manager)</h2><ul>
+<li><p>Open console and connect to corresponding server</p></li>
+<li>
+<p>Navigate to installation path</p>
+<ul><li><p>i [domain]</p></li></ul>
+</li>
+<li>
+<p>Execute the following within the htdocs folder:</p>
+<ul>
+<li><p>helpersCreateNewDataVoyager</p></li>
+<li><p>The script creates the DV folder and also gets <ac:inline-comment-marker ac:ref="8a3b5dcc-51de-41dc-b735-61c528dbe538">the needed build</ac:inline-comment-marker></p></li>
+</ul>
+</li>
+<li>
+<p><a href="https://it.globalpark.de/twiki/bin/view/Support/SupportDV4#Handover_to_Sysadmins">Handover to System Administration</a> for DV database creation and frontend restart</p>
+<ul>
+<li><p>dv database name: dv_xxx (replace xxx with the generated part of the client's domain <a href="http://xxx.customervoice360.com">xxx.customervoice360.com</a>)</p></li>
+<li><p>Host, port, user and passwort need to be the same as for the EFS installation (grep "__db" conf/config.inc.php3)</p></li>
+<li><p>Frontend restart</p></li>
+</ul>
+</li>
+<li>
+<p>After the database has been created execute healself within the corresponding DV folder</p>
+<ul><li><p><strong>DV 4.1 needs php 5.6</strong> /opt/pdp/opst/apps/php56/bin/php support/healself.php</p></li></ul>
+</li>
+<li><p>If needed, add additional customizings <a href="https://it.globalpark.de/twiki/bin/view/Support/SupportDV2#Check_out_custom_loader_or_other">Loader or other DV customizings/ check out repository</a></p></li>
+<li>
+<p>Change root password, e.g. using script dv/support/changeRootPw.php <strong>Do NOT execute on procus or on mirror server</strong></p>
+<ul><li><p>(<strong>php 5.3.6 can be used</strong> /opt/pdp/opst/apps/php-5.3.6/bin/php) php support/changeRootPw.php</p></li></ul>
+</li>
+<li><p>Add root password to Passwordsafe in corresponding folder e.g. "Data Voyager 3"</p></li>
+<li>
+<p>Add DV to Globis. e.g. using corresponding helpers script <strong>Do NOT execute on procus or on mirror server</strong></p>
+<ul>
+<li><p>cd dv/</p></li>
+<li><p>helpersAddInstallationInGlobis</p></li>
+<li><p>All required information will be gathered by the script</p></li>
+</ul>
+</li>
+<li><p>Let System Administration activate the cron job (<strong>as the cron job is set up per folder, please mention the

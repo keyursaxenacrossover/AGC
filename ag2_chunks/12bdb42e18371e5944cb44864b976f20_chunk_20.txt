@@ -1,0 +1,141 @@
+pop-up.</p>
+</li>
+<li>
+<p>The new check is listed in the overview.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If you do not enter a message, a client-side JavaScript check will not be triggered!</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h3 id="predefined-plausibility-checks-plausibility-check-types" class="wysiwyg-text-align-justify">Predefined Plausibility Checks (Plausibility Check Types)</h3>
+<p class="wysiwyg-text-align-justify">The following plausibility check types are available by default.</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 171.0px;"> <col style="width: 191.0px;"> <col style="width: 398.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p><strong>Type</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p><strong>Parameter</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p><strong>Properties</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Range check</p>
+</td>
+<td>
+<p>Variable, “int” from, “int” to</p>
+</td>
+<td>
+<p>Checks whether the value of the variable is a number between two values.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>E-mail address check</p>
+</td>
+<td>
+<p>Variable</p>
+</td>
+<td>
+<p>Checks whether the value of the variable is a valid email address. It will be checked for characters used, for the “@” character and for the period before the domain address.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Standard check</p>
+</td>
+<td>
+<p>Freely definable</p>
+</td>
+<td>
+<p>Checks one or more variables using an operator.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Format check</p>
+</td>
+<td>
+<p>Variable, format</p>
+</td>
+<td>
+<p>Checks a variable using predefined regular expressions (numbers only, letters only, etc.).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>RegEx check</p>
+</td>
+<td>
+<p>Variable, regular expression</p>
+</td>
+<td>
+<p>Checks a variable using a freely definable RegEx.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>NoRegEx check</p>
+</td>
+<td>
+<p>Variable, regular expression</p>
+</td>
+<td>
+<p>Checks a variable using a freely definable RegEx. Returns “true” if the expression was not successful.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>OnlyNumbers check</p>
+</td>
+<td>
+<p>Variable</p>
+</td>
+<td>
+<p>Checks whether a variable contains only numbers, commas and periods.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Range check old</p>
+</td>
+<td>
+<p>Variable, “int” from, “int” to</p>
+</td>
+<td>
+<p>Checks whether the value of the variable is a number outside the range between two values.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Combination check</p>
+</td>
+<td>
+<p>Variable, “int”</p>
+</td>
+<td>
+<p>For questions with multiple response lists, checks whether the required number of checkboxes has been ticked.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Combination check (range</p>
+</td>
+<td>
+<p>Variable, “int” from, “int” to</p>
+</td>
+<td>
+<p>For questions with multiple response lists, checks whether the number of checkboxes ticked is within a preset range.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 class="wysiwyg-text-align-justify"> </h3>
+<h3 id="range-check" class="wysiwyg-text-align-justify">Range Check</h3>
+<p class="wysiwyg-text-align-justify">The range check checks whether the number entered by the survey participant is within the number range you set. Otherwise, the plausibility check will be triggered and report an error. For this, the preset limits are included in the permissible range of values. The check also works with negative numbers.</p>
+<p class="wysiwyg-text-align-justify">If you set up a range check to do a JavaScript plausibility check or a combined PHP plausibility check, please note: JavaScript gives a value of “0” to an empty string (nothing entered). That is, if a respondent enters nothing, it will not be seen as an incorrect entry, rather it will be given a value of “0”, which is either permitted or prohibited depending on how each area is defined. In order to prevent this kind of misevaluation, please run a separate OnlyNumbers check (do not use AND conjunctions with the Range check) on the input field.</p>
+<h3 id="e-mail-address-check" class="w

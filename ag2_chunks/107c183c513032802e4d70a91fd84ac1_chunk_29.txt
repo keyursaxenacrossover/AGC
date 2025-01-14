@@ -1,0 +1,87 @@
+ailing users from the admin area</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Depending on how you organize your project, your users may be required to e-mail other users in turn:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The users have created new user accounts for their area of responsibility and want to provide these new users with their login information.</p>
+</li>
+<li>
+<p>The owner of a higher-level unit wants to ask the users in the subunits to conclude a particular work phase.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">This is also possible in the Org Processor: You can create mail templates for typical contact situations and make these available to the users. You have access to the main function of the Org Processor from all views and menus where the sending of e-mail makes sense (e.g. organizational structure, user management, logistics sites).</p>
+<h3 id="mailing-users" class="wysiwyg-text-align-justify"><strong>Mailing users</strong></h3>
+<p class="wysiwyg-text-align-justify">If you want to e-mail users in your area of responsibility, please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Open the appropriate area of the<em> Org Processor</em>. In the example shown a project manager e-mails a user from the <strong>Organizational Structure</strong> tab.</p>
+</li>
+<li>
+<p>Select the units (or logistics sites) whose users you wish to contact, and tick the respective checkboxes in the “Actions” column.</p>
+</li>
+<li>
+<p>Select the action “Mail users” or “Mail users from the selected unit and its subunits”.</p>
+</li>
+<li>
+<p>Confirm by clicking on <strong>Execute</strong>.</p>
+</li>
+<li>
+<p>This prompts a list of users meeting your criteria.</p>
+</li>
+<li>
+<p>Optionally, you can restrict this list further with the help of the <strong>Extended search</strong> function by setting stricter criteria and confirming your selection with <strong>Search</strong>: You can, for example, have only users with a specific role displayed.</p>
+</li>
+<li>
+<p>Tick the “Actions” checkbox for those users that you really wish to e-mail.</p>
+</li>
+<li>
+<p>Confirm by clicking on<strong> Execute</strong>.</p>
+</li>
+<li>
+<p>The standard mail form will open. Select the appropriate mail template and upload the template by clicking on <strong>Apply</strong>.</p>
+</li>
+<li>
+<p>Make all the required additional settings and enter the contents.</p>
+</li>
+<li>
+<p>Click on the <strong>Preview mail</strong> button to check the result. In particular, check whether the wildcards are replaced correctly.</p>
+</li>
+<li>
+<p>If you are satisfied, click on <strong>Send</strong>.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Please note: Batches of more than 10 mails are not sent directly, but are first placed in a queue to reduce server load, and processed successively. By default, EFS sends up to 1,000 emails from this queue every ten minutes.</p>
+<h3 id="allowing-users-to-mail-other-users" class="wysiwyg-text-align-justify"><strong>Allowing users to mail other users</strong></h3>
+<p class="wysiwyg-text-align-justify">You can allow your users to e-mail other users. To prevent errors and abuse the following restrictions apply:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Access to the mail function is protected by the right <em>manager_email_readonly</em>. Assign this right only to those roles that are allowed to send mail.</p>
+</li>
+<li>
+<p>Users can only e-mail users within their own area of responsibility.</p>
+</li>
+<li>
+<p>The users do not really write mails themselves but select from mail templates provided by you.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The following illustrations show what your users are able to see in such a mailing process. Two preparatory steps are necessary, which are described in the following:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Creating mail templates</p>
+</li>
+<li>
+<p>Assigning mail templates to the project</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Creating mail templates to be used in the </strong><em><strong>Org Processor</strong></em></p>
+<p class="wysiwyg-text-align-justify">In the <strong>Options</strong> → <strong>Mail templates</strong> menu, create a new mail template of the “Org Processor mail” type. Make all the necessary settings, select an appropriate mail sender, and enter the contents. Please pay special attention to the following:#</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The mail templates should have meaningful titles.</p>
+</li>
+<li>
+<p>They should contain all the necessary wildcards. An overview of the available wildcards is given in the mail form below the <strong>question mark</strong> icon.</p>
+</li>
+<li>
+<p>Often, you will want to insert the URL of the Org Processor. From EFS 7.0 on, insert it

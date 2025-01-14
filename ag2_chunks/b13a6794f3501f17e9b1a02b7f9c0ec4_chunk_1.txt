@@ -1,0 +1,50 @@
+ group has not completed any survey.</li>
+<li>1 panelist (male) from the Statistics test group has completed 2 surveys.</li>
+<li>2 panelists (female) from the Statistics test group have completed 3 surveys.</li>
+</ul>
+<p>Then, you can see the number of invitations broken down by gender:</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014812858898"></p>
+<ul>
+<li>Two male and two female panelists have each received 3 invitations.</li>
+</ul>
+<h3 id="h_01HGKSMPRTK0QJXQX3YJXQX8ZGS">Example 2: Panel Entry Methods by Age</h3>
+<p>This example shows how to generate statistics on panel entry methods, filtered by a specific entry period and broken down by age.</p>
+<p><strong>Example 2 – Configuration</strong><br>In our second example, we want to create statistics on how many panelists entered the panel via a specific way of entry. The results should be broken down by age and filtered according to a specific entry period. To do this, proceed as follows:</p>
+<ul>
+<li>In the Base area, select the variable md_age: Age for Split variables. The age of panelists is recorded in this master data variable. Information on creating and managing master data can be found <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20229153131026-Master-Data">here.</a>
+</li>
+<li>Under Entered panel from and Entered panel until select the start and end time for the period you want to filter by.</li>
+<li>We would like to create statistics for all panelists – regardless of their status. Therefore, activate the checkbox for Select All in the Panel status area.</li>
+<li>
+<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014859802258"><br>In the Performance data area, select the variable input, which records the mode of entry of panelists.</li>
+<li>In the Performance data area, select the variable reg_code, which records the way of entry of panelists.</li>
+<li>Click on Create statistics at the bottom right of the page.</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014812854290"></p>
+<p> </p>
+<p><strong>Example 2 – Results</strong><br>Your statistics are created and you will find a summary of the base in the upper area:</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014812860434"><br>Further down, the statistics on the mode of entry of panelists are displayed:</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014812862354"></p>
+<ul>
+<li>You can see, for example, how many panelists have been imported, entered by the admin, or invited to the panel, and you have a direct overview of the distribution of panelists' ages. In our example, the majority of panelists were imported.</li>
+</ul>
+<p>The statistics on the way of entry of panelists are displayed below:</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014859799442"></p>
+<ul>
+<li>In our example, you can see that the majority of panelists entered the panel via the standard way of entry "Default". No information on the age of these panelists is available. If the age or other panelist characteristics are of interest to you, it is advisable to ask about them as part of a master data survey.</li>
+<li>A small proportion is also registered via Portals. Here you can also see the age distribution of panelists.</li>
+</ul>
+<h2 id="h_01HGKSMPRT4YJQJY0QJXQX8ZGN">Quotas</h2>
+<p>Quotas help ensure that your panel population meets specific demographic requirements. This section explains how to create and manage quotas.</p>
+<h3 id="h_01HGKSMPRTPYJQJY0QJXQX8ZGT">Preparations</h3>
+<p>We will take up the above example and create a quota with the variables "age" and "gender" in the next step. Our target values: 150 females and 150 males between 20-30, 150 females and 150 males between 30-40, and 150 females and 150 males between 40-50.</p>
+<p>In the first step, we need to create a grouping filter that will determine the actuals of our panel. To do this, proceed as follows:</p>
+<ul>
+<li>In the People module, select the Groups menu item on the left-hand side.</li>
+<li>Then select the Grouping Filters menu item on the left-hand side.</li>
+<li>Click on the Create filter condition.</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014859816466"></p>
+<ul>
+<li>Enter a name for the filter. In our case: "Age_gender".</li>
+<li>Enter a filter description if required. For the age of panelists, we have the master data variable "md_age" with the response categories "1 (20-30 years)", "2 (30-40 years)" and "3 (40-50 years)". Our filter should include all panelists

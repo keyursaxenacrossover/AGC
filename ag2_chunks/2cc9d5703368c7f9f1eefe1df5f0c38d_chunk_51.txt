@@ -1,0 +1,113 @@
+ 290px;">
+<td style="width: 189.253px; height: 290px;">
+<p>Mail template for welcome mail</p>
+</td>
+<td style="width: 380.642px; height: 290px;">
+<p>The selected mail template is sent to the candidate.</p>
+<ul>
+<li>
+<p>The “Welcome mail” mail templates are available.</p>
+</li>
+<li>
+<p>The required data (e.g. a verification link, if e-mail verification is being used) should be inserted into the mail template via wildcard.</p>
+</li>
+<li>
+<p>The data required for verification should be inserted into the mail template using wildcards. Use #mail_validation_code# to insert the actual verification code; by using #mail_validation_code_ complete# you can create a complete clickable link.</p>
+</li>
+</ul>
+</td>
+<td style="width: 154.653px; height: 290px;">
+<p>Welcome mail</p>
+</td>
+</tr>
+<tr style="height: 101px;">
+<td style="width: 189.253px; height: 101px;">
+<p>Add panelist to master data survey sample</p>
+</td>
+<td style="width: 380.642px; height: 101px;">
+<p>If you choose “Determine automatically”, the active master data survey will be selected. Otherwise, this must be done manually every time another master data survey is activated.</p>
+</td>
+<td style="width: 154.653px; height: 101px;">
+<p> </p>
+</td>
+</tr>
+<tr style="height: 146px;">
+<td style="width: 189.253px; height: 146px;">
+<p>Mail template for an invitation to master data survey</p>
+</td>
+<td style="width: 380.642px; height: 146px;">
+<p>The selected mail template is sent to the panelist.</p>
+<ul>
+<li>
+<p>The “Master data survey invitation mail” mail templates are available.</p>
+</li>
+<li>
+<p>The link to the master data survey should be inserted in the mail template via wildcard</p>
+</li>
+</ul>
+</td>
+<td style="width: 154.653px; height: 146px;">
+<p>Master data invitation mail</p>
+</td>
+</tr>
+<tr style="height: 51px;">
+<td style="width: 189.253px; height: 51px;">
+<p>Text on successful registration</p>
+</td>
+<td style="width: 380.642px; height: 51px;">
+<p>In this field, you should enter the message to be displayed once registration is successful.</p>
+</td>
+<td style="width: 154.653px; height: 51px;">
+<p>Thank you for joining the panel!</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="function-module-report-form" class="wysiwyg-text-align-justify"><strong>Function Module: Report Form</strong></h3>
+<p class="wysiwyg-text-align-justify">The “Report form” function module allows you to create a form that can be used by panelists to directly notify the panel operator of spam and other issues.</p>
+<p class="wysiwyg-text-align-justify">You can use the “func_report_form” template to change the appearance of the contact form and confirmation page. Most options are identical to the contact form options explained above in Chapter "Function Module: Leaderboard".</p>
+<p class="wysiwyg-text-align-justify"><strong>Options</strong></p>
+<p class="wysiwyg-text-align-justify">The “Report form” function module offers the following options.</p>
+<table class="wysiwyg-text-align-justify" style="height: 452px;" border="1" width="754" data-layout="default" data-table-width="760">
+<colgroup>
+<col style="width: 170.0px;">
+<col style="width: 378.0px;">
+<col style="width: 212.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" style="width: 165.903px;" data-highlight-colour="#57d9a3">
+<p><strong>Option</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 370.069px;" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 207.639px;" data-highlight-colour="#57d9a3">
+<p><strong>Standard panel “Report Post” page</strong></p>
+</th>
+</tr>
+<tr>
+<td style="width: 157.882px;">
+<p>Reference name for template</p>
+</td>
+<td style="width: 362.049px;">
+<p>Name that can be used to trigger the module in positioning templates.</p>
+</td>
+<td style="width: 199.618px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 157.882px;">
+<p>Page module title</p>
+</td>
+<td style="width: 362.049px;">
+<p>Name of the module in the page’s module overview</p>
+</td>
+<td style="width: 199.618px;">
+<p>Report Post</p>
+</td>
+</tr>
+<tr>
+<td style="width: 157.882px;">
+<p>Module template</

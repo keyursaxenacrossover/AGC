@@ -1,0 +1,83 @@
+ of roles to reports later. To do so, go to the role overview and use the <strong>Edit</strong> icon to open the editing dialog. In the “Allocation of role to report” section, you can find all defined reports. Change the allocation as required.</p>
+<h3 id="changing-rights-for-a-user-role" class="wysiwyg-text-align-justify"><strong>Changing rights for a user role</strong></h3>
+<p class="wysiwyg-text-align-justify">Open the <strong>Projects</strong> → { Selected project} → <strong>Process configuration</strong> menu. On the <strong>Roles</strong> tab, you can find an overview of the existing roles. Select the role whose rights you intend to change and click the <strong>Rights Administration</strong> icon. A list of the available rights is opened. Rights that can not be changed, e.g. because they relate to a deactivated feature (e.g. Logistics or Action Planner), or because a more general right has been deactivated, are colored in grey.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013850443154" alt="Rights.jpg"></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Assign the rights as required and confirm with <strong>Save</strong>.</p>
+</li>
+<li>
+<p>Confirm with<strong> Save</strong>.</p>
+</li>
+</ul>
+<h3 id="project-phases" class="wysiwyg-text-align-justify"><strong>Project phases</strong></h3>
+<p class="wysiwyg-text-align-justify"><em>EFS Employee</em> allows you to map the phases of the survey process, including the changes of tasks and access rights involved, in the system. You can view and edit the phases of your project in the<strong> Projects</strong> → {Selected project} →<strong> Process configuration</strong> menu on the <strong>Project phases</strong> tab.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013850445074" alt="Project phases.jpg"></p>
+<p class="wysiwyg-text-align-justify">In new projects, there are already five default phases that are known to be very frequently required. The table lists each phase along with the following information:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Title of phase</p>
+</li>
+<li>
+<p>Name</p>
+</li>
+<li>
+<p>Start date</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The sequence of the phases is defined by the start dates: Each phase ends on the start date of the next phase. If you insert a new phase and place its start date before the start date of, for example, the pretest phase, then this new phase will be sorted between the setup phase and the pretest phase. The following actions are available:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Edit phase</strong>: Opens the edit dialog.</p>
+</li>
+<li>
+<p><strong>Copy phase</strong>: The phase is copied.</p>
+</li>
+<li>
+<p><strong>Delete phase</strong>: The desired phase will be deleted following a confirmation prompt. Please note: The “End” phase cannot be deleted, it can only be reconfigured.</p>
+</li>
+</ul>
+<h3 id="project-phases-in-standard-configuration" class="wysiwyg-text-align-justify"><strong>Project phases in standard configuration</strong></h3>
+<p class="wysiwyg-text-align-justify">The following table presents the default phases available. Precisely which work has to be done in the various phases depends largely on the respective project. The “Possible applications” column lists several frequently occurring operations.</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default">
+<colgroup> <col style="width: 160.0px;"> <col style="width: 124.0px;"> <col style="width: 476.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Phase</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Name</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Possible applications</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Preparation</p>
+</td>
+<td>
+<p>Setup</p>
+</td>
+<td>
+<p>In this phase, usually, the organizational structure is built up and participants are stored.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Pretest</p>
+</td>
+<td>
+<p>Pretest</p>
+</td>
+<td>
+<p>In this phase, the project is usually tested.</p>
+<p>Testers fill out the questionnaire.</p>
+<p>Testers with user accounts check whether all planned monitoring and reporting to-dos can be performed by the users in the <em>Org Processor</em> as planned.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Field</p>
+</td

@@ -1,0 +1,56 @@
+>Then click on the <strong>Submit</strong> button.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Changing variable types and labeling</strong></p>
+<p class="wysiwyg-text-align-justify">Click on the <strong>Labels and data type</strong> link to edit the properties of the user-defined variables. By default, user-defined variables have the “Big integer” variable type; possible alternatives are “Text” and “Integer or floating point numbers” (see Table 3.9). User-defined variables can also be labeled for export at a later stage.</p>
+<p class="wysiwyg-text-align-justify">The newly created user-defined variables (c_000n) are now available for questionnaire screening and will be exported along with the defined label.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h3 id="configuring-the-relevantid" class="wysiwyg-text-align-justify"><strong>Configuring the RelevantID</strong></h3>
+<p class="wysiwyg-text-align-justify"><strong>EFS</strong> supports an external validation of survey participants by the service provider Imperium for a special charge. If this check has been enabled for an installation, the additional tab <strong>RelevantID configuration </strong>is displayed in anonymous and personalized surveys, panel surveys, and master data surveys. If you want to check participants of a survey on an installation with an active RelevantID check, please proceed as follows:</p>
+<p class="wysiwyg-text-align-justify">In the <strong>Projects</strong> → {Selected project} → <strong>Project properties</strong> menu on the User-defined variables tab, create a variable for each data that you wish to use.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Activate the function “Check whether the respondent has JavaScript activated?” on the <strong>General Options </strong>tab.</p>
+</li>
+<li>
+<p>Tick the checkbox “Activate RelevantID check for this survey” on the relevant configuration tab.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If you use Geo IP verification, you must enter the codes of the permitted countries, regions, or cities. Please contact support to receive an up-to-date list of codes.</p>
+<p class="wysiwyg-text-align-justify">When using RelevantID, please pay special attention to your company’s applicable privacy regulations and the privacy regulations governing the respective survey.</p>
+<p class="wysiwyg-text-align-justify">Perform the remaining settings on the tab RelevantID configuration.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Save</strong> your settings.</p>
+</li>
+</ul>
+<h2 id="survey-messages" class="wysiwyg-text-align-justify"><strong>Survey Messages</strong></h2>
+<p class="wysiwyg-text-align-justify">In addition to the actual questionnaire texts, self-administered electronic surveys require further texts such as button labels, the labeling of progress bars and other optional elements, or error messages in case of incorrect participant entries or situations not provided for in the survey process. In <em>EFS</em> all these texts are grouped under the name<strong> Survey messages</strong>.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014837365650" alt="Survey messages.jpg"></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>All messages required by default are available in 29 languages. If you want to conduct a project in one or more of these languages, simply select and upload the translated default version.</p>
+</li>
+<li>
+<p>You can adapt the survey messages to the specific requirements of your project. For example, you can address specific target groups using slang or more informal language.</p>
+</li>
+<li>
+<p>Survey messages can be stored in an installation-wide library and, if necessary, also used in other projects.</p>
+</li>
+<li>
+<p>Survey messages can be exported and imported into another EFS installation).</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">In the following, you will first learn how to define and edit the survey messages for your project and, if necessary, how to store them for further use elsewhere. After that, you will be introduced to the library.</p>
+<p class="wysiwyg-text-align-justify"><strong>Viewing survey messages of the project</strong></p>
+<p class="wysiwyg-text-align-justify">You will find the survey messages of your project in the <strong>Projects</strong> → {Selected project} → <strong>Project properties</strong> → <strong>Survey messages</strong> menu.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The entry dialog normally shows the survey messages that are currently defined for the default language of the selected project. Please note: The button labels defined in this menu are used both for HTML buttons and for graphical form elements.</p>
+</li>
+<li>
+<p>In multilingual projects, you define a different set of survey messages for each language: use the <strong>View</strong> feature to additionally display these messages.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Editing survey messages of the project</strong></p>
+<p class="wysiwy

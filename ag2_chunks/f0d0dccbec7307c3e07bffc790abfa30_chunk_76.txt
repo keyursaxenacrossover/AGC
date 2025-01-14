@@ -1,0 +1,169 @@
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>surveyId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>id of survey to copy <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79QBHXKCT4FREQDAT7W"> </h4>
+<h3 id="header-318">PATCH /survey/surveys/{surveyId}/type</h3>
+<p>Change the type of a survey. Valid types for <code>surveyType</code>: <em>ANONYMOUS, PERSONALIZED, ES, LOFT, PANEL, GEN_MASTERDATA, DIARY</em></p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{ "surveyType": "ANONYMOUS" }</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">true</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>surveyId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>survey to change <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79QV7Y5DT2R43DVNCBG"> </h4>
+<h3 id="header-319">GET /survey/surveys/{surveyId}/previewlink</h3>
+<p>Uses the admin session in the url</p>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">"Example"</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>surveyId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>id of survey <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79QRMQGTMM38VS442XZ"> </h4>
+<h3 id="header-320">POST /survey/variables/{surveyId}</h3>
+<p>Returns description of survey's variables, machine readable version of the code book. Valid options for <code>surveyVariableTypes</code>: <em>STANDARD, PARTICIPANT, QUESTIONNAIRE, QUESTIONNAIRE_WITH_LOOPS, PARTICIPATION, INTERNAL.</em></p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{ "surveyVariableTypes": [ "STANDARD" ] }</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[
+   {
+        "varname": "quota_rejected_id",
+        "label": "Rejection quota ID of participant",
+        "type": "int",
+        "typeGroup": "numeric"
+    },
+    {
+        "varname": "language",
+        "label": "Language",
+        "type": "int",
+        "typeGroup": "numeric",
+        "categories": [
+            {
+                "code": 1,
+                "label": "English",
+                "isMissing": false
+            },
+            {
+                "code": 2,
+                "label": "German",
+                "isMissing": false
+            },
+            {
+                "code": 3,
+                "label": "French",
+                "isMissing": false
+            }
+        ]
+    },
+    [...]
+]</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0

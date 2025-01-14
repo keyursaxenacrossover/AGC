@@ -1,0 +1,92 @@
+justify">Possible Filter Applications</h3>
+<p class="wysiwyg-text-align-justify">Selecting different filters determines the type of routing. The filters themselves route respondents from a main level to further sub-levels. Depending on the answer, the “Filter” page type will route the participant to the next page or cause them to skip pages.</p>
+<p class="wysiwyg-text-align-justify">If you’re using a question for filtering (e.g. Yes/No question), it might make sense to set this question as <strong>Mandatory (DAC)</strong>, so the respondent cannot skip it and a proper routing through the survey is ensured and no missing values are generated.</p>
+<h3 id="defining-conditions-for-filters-and-other-dynamic-features" class="wysiwyg-text-align-justify">Defining Conditions for Filters and Other Dynamic Features</h3>
+<p class="wysiwyg-text-align-justify">This chapter introduces you to the condition editor of EFS. It is used not only with filters, but also with hiding conditions, triggers, and other dynamic functions.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The first section walks you through the definition process for a condition.</p>
+</li>
+<li>
+<p>Afterward, the various features and rules to be observed are presented.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Defining a condition</strong></p>
+<p class="wysiwyg-text-align-justify">Please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>After you have created a new page of the “Filter” type, it will be displayed in the questionnaire view. Click on the page title to open the condition editor.</p>
+</li>
+<li>
+<p>Creating a condition requires the following settings:</p>
+<ul>
+<li>
+<p>Negation: You can negate the following condition by ticking the checkbox in this column. Please note, that the usual rules of logic apply to the use of brackets. Usually, you will want to combine the negation with brackets to guarantee meaningful results.</p>
+</li>
+<li>
+<p>Variables: The drop-down list is used to set the variable. </p>
+</li>
+<li>
+<p>Condition: In this column, a logical operator is selected.</p>
+</li>
+<li>
+<p>Code: This column is used to enter the corresponding answer value. </p>
+</li>
+</ul>
+</li>
+<li>
+<p>The condition will not be finally saved until you click on the <strong>Save </strong>button.</p>
+</li>
+<li>
+<p>You can make a filter definition as complex as you wish by adding further conditions and creating conjunctions between them. To do so, use the new empty condition row that is displayed after the first condition has been saved: Fill in this row as explained above.</p>
+</li>
+<li>
+<p>Create conjunctions between the conditions: To do so, select AND or OR from the “Conjunction” drop-down list. </p>
+</li>
+<li>
+<p>If required, you can change the processing order using brackets.</p>
+</li>
+<li>
+<p>Click on <strong>Save again</strong>. The next new condition row will be displayed enabling you to expand your definition step-by-step by adding several conditions, if required.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">You can remove a superfluous condition by ticking the checkbox in the “Delete” column and then clicking on <strong>Save</strong>.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h3 id="variables-available-for-filtering" class="wysiwyg-text-align-justify">Variables available for filtering</h3>
+<p class="wysiwyg-text-align-justify">The following variables can be used as the starting basis for filtering:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Project variables (v_000n)</p>
+</li>
+<li>
+<p>URL parameters (c_000n)</p>
+</li>
+<li>
+<p>User-defined variables (p_000n)</p>
+</li>
+<li>
+<p>System variables: quota, language, output_mode, javascript, flash, user_agent. (The availability depends on project type, project configuration, activated extensions, etc.)</p>
+</li>
+<li>
+<p>The variable quota_assignment, in conjunction with the link "contains", can be used as a filter.</p>
+</li>
+<li>
+<p>List element number</p>
+</li>
+<li>
+<p>Initial size of the list being used: Refers to the size of the list after checking the inclusion conditions for the individual elements <em>(see Dynamic lists)</em>. The possibilities for further query-specific restrictions have not been taken into account.</p>
+</li>
+<li>
+<p>Loop number: Number of times a loop runs. Initially, this filter option does not allocate to which list element each loop cycle will relate. The number refers to the position of the cycle in the dynamically generated sequence.</p>
+</li>
+<li>
+<p>For personalized projects: Participant variables.</p>
+</li>
+<li>
+<p>For Employee surveys: Org Processor data.</p>
+<ul>
+<li>
+<p>org_code_structureID (Primary Structure.OrgCodePreAllocation): Unit in the named structure to which the participants have been allocated. E.g. org_- code_1 is the unit of the participants in the primary view (structure ID = 1).</p>
+</li>
+<li>
+<p>org_allocation_structure

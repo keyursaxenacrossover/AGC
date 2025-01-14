@@ -1,0 +1,72 @@
+></h3>
+<p class="wysiwyg-text-align-justify">Security Assertion Markup Language (SAML) is a standardized approach to solve authentication, authorization, and federation of identity. It is an XML-based protocol that comes with more freedom but also more complexity than protocols like OIDC.</p>
+<p class="wysiwyg-text-align-justify"><strong>For more information see:</strong></p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<td>
+<p>SAML</p>
+</td>
+<td>
+<p><a href="http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html">http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>SAML Core</p>
+</td>
+<td>
+<p><a href="https://docs.oasis-open.org/security/saml/v2.0/saml-core-2.0-os.pdf">https://docs.oasis-open.org/security/saml/v2.0/saml-core-2.0-os.pdf</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>SAML Metadata</p>
+</td>
+<td>
+<p><a href="https://www.oasis-open.org/committees/download.php/56785/sstc-saml-metadata-errata-2.0-wd-05.pdf">https://www.oasis-open.org/committees/download.php/56785/sstc-saml-metadata-errata-2.0-wd-05.pdf</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>SAML Profiles</p>
+</td>
+<td>
+<p><a href="https://www.oasis-open.org/committees/download.php/56782/sstc-saml-profiles-errata-2.0-wd-07.pdf">https://www.oasis-open.org/committees/download.php/56782/sstc-saml-profiles-errata-2.0-wd-07.pdf</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>SAML Bindings</p>
+</td>
+<td>
+<p><a href="https://www.oasis-open.org/committees/download.php/56779/sstc-saml-bindings-errata-2.0-wd-06.pdf">https://www.oasis-open.org/committees/download.php/56779/sstc-saml-bindings-errata-2.0-wd-06.pdf</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Okta</p>
+</td>
+<td>
+<p><a href="https://help.okta.com/en/prev/Content/Topics/Security/Identity_Providers.htm?Highlight=inbound%20SAML" data-card-appearance="inline">https://help.okta.com/en/prev/Content/Topics/Security/Identity_Providers.htm?Highlight=inbound%20SAML</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"><strong>Glossary for SAML</strong></p>
+<p class="wysiwyg-text-align-justify">IdP: Identity Provider (external System)</p>
+<p class="wysiwyg-text-align-justify">SP: Service Provider (our federation Identity Provider - Okta)</p>
+<p class="wysiwyg-text-align-justify">In our case, SAML is only used for federation. Therefore it is only used for the connection from our Identity Provider (Okta) to an external Identity Provider. Specified groups of users will not authenticate at our Identity Provider directly but will be sent to the external Identity Provider using the SAML protocol.</p>
+<p class="wysiwyg-text-align-justify">In the federation scenario, our Identity Provider acts as a Service Provider (SP) federating the identities from an external Identity Provider (IdP). The connection is built by exchanging metadata information containing the mapping of the two services as well as security information like certificates.</p>
+<p class="wysiwyg-text-align-justify">Our identity solution - Okta - is not capable of providing a route to metadata information - it has to be downloaded and shared in other ways. External Identity Providers have to provide an email address. Configuring the Service Provider might be a multi-step process - it might also include putting dummy values in the Okta configuration and filling them later. As with all federations, the email addresses should be stored in lowercase.</p>
+<p class="wysiwyg-text-align-justify"><strong>What metadata information is important in the current case:</strong></p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default">
+<colgroup> <col style="width: 170.0px;"> <col style="width: 170.0px;"> <col style="width: 170.0px;"> <col style="width: 170.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Source: SP Metadata/ IdP Response</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong

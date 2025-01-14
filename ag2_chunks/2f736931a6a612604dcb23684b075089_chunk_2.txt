@@ -1,0 +1,21 @@
+666WS0Y34">Summary</h1>
+<p>This article provides a step-by-step guide to troubleshoot the issue of emails being stuck in the queue due to an unverified domain in SES. The solution involves checking the email flow, confirming the sender's domain, verifying the domain in SES, and updating DNS records if necessary.</p>
+<h2 id="h_01JFB5J5C0SFF8D1YJ1FM6KGY5">FAQ</h2>
+<ol>
+<li>
+<strong>What do I do if the domain is not found in SES?</strong><br>Raise a Saas CR to add it in SES, and get a confirmation if it is managed by the customer or us. If by the customer, request a zone file to be shared with the customer; otherwise, Saas should make the necessary changes.</li>
+<li>
+<strong>What if the domain is 'not verified' or 'pending'?</strong><br>Check the CustomDomainTracking sheet and look for the domain. If the domain is not found in that google sheet, ping VP and raymond.guirguis to check.</li>
+<li>
+<strong>What should the customer do after updating their DNS records?</strong><br>Once the DNS records are updated, we verify the propagation using nslookup for all the entries. If those are propagated, we can access AWS and check if the domain is verified ourselves.</li>
+</ol>666WS0Y34">Summary</h1>
+<p>This article provides a step-by-step guide to troubleshoot the issue of emails being stuck in the queue due to an unverified domain in SES. The solution involves checking the email flow, confirming the sender's domain, verifying the domain in SES, and updating DNS records if necessary.</p>
+<h2 id="h_01JFB5J5C0SFF8D1YJ1FM6KGY5">FAQ</h2>
+<ol>
+<li>
+<strong>What do I do if the domain is not found in SES?</strong><br>Raise a Saas CR to add it in SES, and get a confirmation if it is managed by the customer or us. If by the customer, request a zone file to be shared with the customer; otherwise, Saas should make the necessary changes.</li>
+<li>
+<strong>What if the domain is 'not verified' or 'pending'?</strong><br>Check the CustomDomainTracking sheet and look for the domain. If the domain is not found in that google sheet, ping VP and raymond.guirguis to check.</li>
+<li>
+<strong>What should the customer do after updating their DNS records?</strong><br>Once the DNS records are updated, we verify the propagation using nslookup for all the entries. If those are propagated, we can access AWS and check if the domain is verified ourselves.</li>
+</ol>

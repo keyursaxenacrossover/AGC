@@ -1,0 +1,112 @@
+" target="_blank" rel="noopener noreferrer">Healself Tasks</a></p>
+</li>
+</ul>
+<p><strong>Example</strong> error message:</p>
+<pre><code class="language-text">The following tasks failed with errors:
+- panel_healself_jobs_1007::createElasticsearchIndexOnNewInstallation [Create an elasticsearch index on a new panel installation]:
+  - Task reported it failed on line 725 in class panel_healself_jobs_1007</code></pre>
+<p><strong>Solution:</strong></p>
+<ul>
+<li>
+<p>This is a panel healself task so navigate to the healself folder in the panel module:</p>
+</li>
+<li>
+<pre><code class="language-text">cd modules/panel/components/healself/jobs/</code></pre>
+</li>
+<li>
+<p>Open the healself file of the corresponding EFS version and directly jump to the problematic line (in this case it is line 725 as said in the error message above):</p>
+</li>
+<li>
+<pre><code class="language-bash">vi 1007.inc.php +725</code></pre>
+</li>
+<li>
+<p>Check the code in that line</p>
+<ul>
+<li>
+<p>If a database query is executed, execute the query manually on the database to see the exact error message.</p>
+</li>
+<li>
+<p>In this case connection to the Elastic Search service was not possible because the host "elasticsearch" could not be found. The host was changed in the config accordingly:</p>
+<ul>
+<li>
+<p>Bremen: <a href="http://elasticsearch.bre.globalpark.com">elasticsearch.bre.globalpark.com</a></p>
+</li>
+<li>
+<p>Procus3 <a href="http://elasticsearch.bre.globalpark.com">elasticsearch.bre.globalpark.com</a> (points to the IP of the Elastic Search service on the Testkanal)</p>
+</li>
+<li>
+<p>Testkanal: tka055</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Execute healself again to see whether the problem is fixed</p>
+<ul>
+<li>
+<p>If the problem still exists or other error message are shown, repeat the steps above</p>
+</li>
+<li>
+<p>If the problem is fixed and no other messages are shown, check whether the installation was set to BROKEN=1:</p>
+<ul>
+<li>
+<p>in htdocs/conf open file "VERSION" and set BROKEN=0 if needed</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="header-48">Adding new helperscripts</h2>
+<ol start="1">
+<li>
+<p>Create new helpers script</p>
+</li>
+<li>
+<p>Adjust README.txt and add new helpers</p>
+</li>
+<li>
+<p>Set alias in EFS_TS_bashhelpers.sh</p>
+</li>
+</ol>http://elasticsearch.bre.globalpark.com">elasticsearch.bre.globalpark.com</a></p>
+</li>
+<li>
+<p>Procus3 <a href="http://elasticsearch.bre.globalpark.com">elasticsearch.bre.globalpark.com</a> (points to the IP of the Elastic Search service on the Testkanal)</p>
+</li>
+<li>
+<p>Testkanal: tka055</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Execute healself again to see whether the problem is fixed</p>
+<ul>
+<li>
+<p>If the problem still exists or other error message are shown, repeat the steps above</p>
+</li>
+<li>
+<p>If the problem is fixed and no other messages are shown, check whether the installation was set to BROKEN=1:</p>
+<ul>
+<li>
+<p>in htdocs/conf open file "VERSION" and set BROKEN=0 if needed</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="header-48">Adding new helperscripts</h2>
+<ol start="1">
+<li>
+<p>Create new helpers script</p>
+</li>
+<li>
+<p>Adjust README.txt and add new helpers</p>
+</li>
+<li>
+<p>Set alias in EFS_TS_bashhelpers.sh</p>
+</li>
+</ol>

@@ -1,0 +1,99 @@
+wysiwyg-text-align-justify">The following illustrations show what your users are able to see in such a mailing process. Two preparatory steps are necessary, which are described in the following:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Creating mail templates</p>
+</li>
+<li>
+<p>Assigning mail templates to the project</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Creating mail templates to be used in the </strong><em><strong>Org Processor</strong></em></p>
+<p class="wysiwyg-text-align-justify">In the <strong>Options</strong> → <strong>Mail templates</strong> menu, create a new mail template of the “Org Processor mail” type. Make all the necessary settings, select an appropriate mail sender, and enter the contents. Please pay special attention to the following:#</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The mail templates should have meaningful titles.</p>
+</li>
+<li>
+<p>They should contain all the necessary wildcards. An overview of the available wildcards is given in the mail form below the <strong>question mark</strong> icon.</p>
+</li>
+<li>
+<p>Often, you will want to insert the URL of the Org Processor. From EFS 7.0 on, insert it using the wildcard #url_orgprocessor#. In older versions of EFS, proceed as follows to construct the URL: Copy the URL of the project from the <strong>Survey menu</strong>. Add the string /orgprocessor. This is the URL of the Org Processor login. (The otherwise frequently used wildcard #code_complete# is not supported in the <em>Org Processor</em>.)</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Assigning mail templates to a project</strong></p>
+<p class="wysiwyg-text-align-justify">Switch back to your project and open the project’s <strong>Mail templates</strong> menu. Mail templates of the “Org Processor mail” type which you assign to your project in this menu can be used by the users in the Org Processor. Locate the mail template you have just created. Its current status is indicated in the column “Project template”:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Yes = linked to the current project</p>
+</li>
+<li>
+<p>No = not linked to the current project</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Usually, a new template has the status “No”. If you click on the status link, it will change to “Yes”.</p>
+<h2 id="configuration" class="wysiwyg-text-align-justify"><strong>Configuration</strong></h2>
+<p class="wysiwyg-text-align-justify">The <em>Org Processor</em> allows you to realize different survey types that are described in the table below. First, you select the type that suits your requirements on the Options tab in the <em><strong>Org</strong> Processor → </em><strong>Configurations options</strong> menu, the appropriate functions will then be released.</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default">
+<colgroup> <col style="width: 121.0px;"> <col style="width: 236.0px;"> <col style="width: 199.0px;"> <col style="width: 204.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Survey type</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Explanation</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Functions activated automatically</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Additionally required</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Hybrid survey</p>
+</td>
+<td>
+<p>The survey is conducted partly online and partly using paper-pencil questionnaires.</p>
+</td>
+<td>
+<p>The following functions are activated automatically:</p>
+<ul>
+<li>
+<p>Participant administration: Allows you to manage the data of those respondents who participate online.</p>
+</li>
+<li>
+<p>Logistics: Supports the distribution of paper-pencil questionnaires.</p>
+</li>
+</ul>
+</td>
+<td>
+<p>The following additional tools should also be activated:</p>
+<ul>
+<li>
+<p>EFS Hybrid Extension: Additional module for generating paperpencil questionnaires, mandatory when using the logistics tool.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Online survey</p>
+</td>
+<td>
+<p>The survey is conducted exclusively online, no paper-pencil questionnaires are used.</p>
+</td>
+<td>
+<p>The following functions are activated automatically:</p>
+<ul>
+<li>
+<p>Participant administration: Allows you to manage the data of those respondents who participate online.</p>
+</li>
+<li>
+<p>Logistics: Supports the distribution of paper-pencil questionnaires</p>
+</li>
+</ul>
+</td>
+<td>
+<p> </

@@ -1,0 +1,48 @@
+<p class="wysiwyg-text-align-justify"><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p class="wysiwyg-text-align-justify">This article provides a comprehensive guide on using the SMS Extension feature in EFS (Enterprise Feedback Suite). It covers the functionality, setup, and management of SMS messaging within the platform.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">The SMS Extension allows users to send SMS messages from within EFS, utilizing the familiar mail dialog. This guide explains how to set up and use this feature effectively.</p>
+<ul class="wysiwyg-text-align-justify">
+<li><a href="#functional-scope">Functional Scope</a></li>
+<li><a href="#storing-phone-numbers">Storing Participants' Phone Numbers</a></li>
+<li><a href="#defining-content">Defining the Content of Messages</a></li>
+<li><a href="#sending-sms">Entering and Sending SMS</a></li>
+<li><a href="#checking-dispatch">Checking SMS Dispatch</a></li>
+<li><a href="#planning-dispatch">Planning SMS Dispatch</a></li>
+<li><a href="#managing-resources">Managing the SMS Resources of an Installation</a></li>
+<li><a href="#do-not-sms">Do-Not-SMS List</a></li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="functional-scope" class="wysiwyg-text-align-justify">Functional Scope</h2>
+<p class="wysiwyg-text-align-justify">Customers with their own installation hosted at TIVIAN can lease the SMS Extension. This extension is unavailable for group installations and external hosting customers. To order SMS, contact your Sales representative for pricing details. The service is provided by TynTec (<a href="http://www.tyntec.de" target="_new" rel="noreferrer">http://www.tyntec.de</a>), with costs calculated per dispatch attempt.</p>
+<p class="wysiwyg-text-align-justify">SMS can be sent from participant administration in personalized projects, panelists administration, panel groups, and panel samples. This feature is not available for anonymous projects, other menus, triggers, or features. SMS messages cannot be stored in mail templates. Each participant can have one mobile number stored in participant administration.</p>
+<p class="wysiwyg-text-align-justify">EFS SMS Extension includes checks for message length and character set compliance.</p>
+<p class="wysiwyg-text-align-justify"><em>Note: Switching from TynTec to another SMS provider is possible but requires special programming. Customers handle provider choice, pricing, and billing, while TIVIAN provides the technical setup. Comfort features for TynTec, like length and format checks, are not available with other providers. For this option, contact TIVIAN support.</em></p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="storing-phone-numbers" class="wysiwyg-text-align-justify">Storing Participants' Phone Numbers</h2>
+<p class="wysiwyg-text-align-justify">The mobile phone numbers of participants are stored in the variable “u_mobile.” From EFS 7.0 onward, this variable is available by default in new personalized projects and employee surveys. In panelists administration, it has been a default variable for some time.</p>
+<p class="wysiwyg-text-align-justify"><strong>Formatting Mobile Phone Numbers:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>A total of eleven digits</li>
+<li>Two zeros at the start</li>
+<li>Country prefix (e.g., 49 for Germany)</li>
+<li>The number itself (Example: 0049223379336)</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Validation:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Participant numbers in personalized projects are checked for validity.</li>
+<li>No validity check is implemented for panelists and admin accounts.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Export/Import Note:</strong> When exporting and importing participant data, format the u_mobile column in the Excel file as “Text” to prevent the removal of the two leading zeros.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="defining-content" class="wysiwyg-text-align-justify">Defining the Content of Messages</h2>
+<p class="wysiwyg-text-align-justify">When writing SMS messages, adhere to the following restrictions regarding text length and character set:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Text Length and Character Set:</strong></p>
+<ul>
+<li>A normal SMS can contain up to 160 Western European characters.</li>
+<li>If the SMS text exceeds this limit, it will be split into multiple SMS automatically. Up to 9 SMS, each with 153 Western European characters, can be sent for one message. Each follow-up SMS is billed separately.</li>
+<li>For Cyrillic or Chinese characters, only 67 characters are available per SMS. Up to 9

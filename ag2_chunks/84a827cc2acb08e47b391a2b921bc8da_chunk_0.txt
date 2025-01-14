@@ -1,0 +1,74 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3723034633">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3723034633</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">Sign-In Widget, version 6.7.0</a></li>
+<ul>
+<li><a href="#header-3">Okta ADFS plugin, version 1.7.11</a></li>
+<ul>
+<li><a href="#header-5">Okta MFA Credential Provider for Windows, version 1.3.7</a></li>
+<ul>
+<li><a href="#header-7">PKCE validation for OIDC app integrations</a></li>
+<li><a href="#header-8">Validation and verification of signed SAML requests</a></li>
+<li><a href="#header-9">Shared SWA app accounts, password restriction</a></li>
+<li><a href="#header-10">LDAP real-time synchronization</a></li>
+<li><a href="#header-11">Improved status updates for AD-sourced users</a></li>
+<li><a href="#header-12">New Recent Activity page on the new Okta end-user dashboard</a></li>
+<li><a href="#header-13">Custom domain status</a></li>
+<li><a href="#header-14">Visual improvements on the Admin Dashboard</a></li>
+<li><a href="#header-15">OIN Manager user interface changes</a></li>
+<li><a href="#header-16">403 error for rate limit violations</a></li>
+<li><a href="#header-17">Step-up authentication using ACR values is EA in Preview</a></li>
+<li><a href="#header-18">API for suppressing email notifications is in General Availability</a></li>
+<li><a href="#header-19">Access Denied error message customization is GA in Preview</a></li>
+<li><a href="#header-20">Dynamic IdP routing is GA in Preview</a></li>
+</ul>
+</ul>
+</ul>
+</ul>
+</ul><p>See: <a data-card-appearance="inline" href="https://help.okta.com/en-us/Content/Topics/ReleaseNotes/archive/oce-relnotes-2022.htm">https://help.okta.com/en-us/Content/Topics/ReleaseNotes/archive/oce-relnotes-2022.htm</a> </p><table data-layout="wide" ac:local-id="5af16877-2bd6-4c01-bfa8-0cd012f1a930">
+<colgroup>
+<col style="width: 340.0px;">
+<col style="width: 340.0px;">
+</colgroup>
+<tbody>
+<tr>
+<td data-highlight-colour="#f4f5f7"><p><strong>Feature</strong></p></td>
+<td data-highlight-colour="#f4f5f7"><p><strong>Remark</strong></p></td>
+</tr>
+<tr>
+<td><h1 id="header-1">Sign-In Widget, version 6.7.0</h1></td>
+<td><p>no update needed, take changes into account when updating <ac:emoticon ac:emoji-fallback=":warning:" ac:emoji-id="atlassian-warning" ac:emoji-shortname=":warning:" ac:name="warning"></ac:emoticon> </p></td>
+</tr>
+<tr>
+<td><h2 id="header-3">Okta ADFS plugin, version 1.7.11</h2></td>
+<td><p>not in use</p></td>
+</tr>
+<tr>
+<td><h3 id="header-5">Okta MFA Credential Provider for Windows, version 1.3.7</h3></td>
+<td><p>not in use</p></td>
+</tr>
+<tr>
+<td><h4 id="header-7">PKCE validation for OIDC app integrations</h4></td>
+<td><p>currently not in use, should think about this later on or when using a new identity provider</p></td>
+</tr>
+<tr>
+<td><h4 id="header-8">Validation and verification of signed SAML requests</h4></td>
+<td><p>nice to have, keep in mind when hitting issues with signed SAML requests <ac:emoticon ac:emoji-fallback=":warning:" ac:emoji-id="atlassian-warning" ac:emoji-shortname=":warning:" ac:name="warning"></ac:emoticon> </p></td>
+</tr>
+<tr>
+<td><h4 id="header-9">Shared SWA app accounts, password restriction</h4></td>
+<td><p>irrelevant</p></td>
+</tr>
+<tr>
+<td><h4 id="header-10">LDAP real-time synchronization</h4></td>
+<td><p>not in use</p></td>
+</tr>
+<tr>
+<td><h4 id="header-11">Improved status updates for AD-sourced users</h4></td>
+<td><p>not in use</p></td>
+</tr>
+<tr>
+<td><h4 id="header-12">New Recent Activity page on the new Okta end-user dashboard</h4></td>
+<td><p>nice to have

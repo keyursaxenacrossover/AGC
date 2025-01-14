@@ -1,0 +1,54 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K" class="wysiwyg-text-align-justify">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article provides a comprehensive guide to using the Pro Editor in EFS Survey, covering various aspects such as structure editing, debug mode, file uploading, wildcards, and progress bar customization.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">The Pro Editor is a powerful tool in EFS Survey that allows users to modify page structure, layout, question output, progress bar, and plausibility checks. This guide will walk you through its key features and functionalities.</p>
+<ul class="wysiwyg-text-align-justify">
+<li><a href="#structure">Structure</a></li>
+<li><a href="#debug-mode">Debug Mode</a></li>
+<li><a href="#upload">Upload</a></li>
+<li><a href="#wildcards">Wildcards</a></li>
+<li><a href="#progress-bar">Progress Bar</a></li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="structure" class="wysiwyg-text-align-justify">Structure</h2>
+<p class="wysiwyg-text-align-justify"><em>EFS</em> uses a so-called template system for system layout. A template is an HTML file with wildcards inserted. These wildcards are used to apply “business logic” to the HTML page, for example, necessary HTML code printed to an output page which is required by EFS for processing plausibility checks. With a few exceptions, you can freely restructure the HTML code. The templates of a specific project are customized in the <strong>Layout → Pro editor</strong> menu on the <strong>Structure</strong> tab. The following information can be found in the overview table:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>For each template, there is a list containing the title as well as the file name, size, date of the last change, and person who edited it.</p>
+</li>
+<li>
+<p>The search function allows you to capture not only the template name and file name but also the template content and related comments.</p>
+</li>
+<li>
+<p>You can make notes on individual templates: By clicking on the <strong>Marker</strong> icon, you can open a pop-up window containing a comment field, enter your comment, and save it.</p>
+</li>
+</ul>
+<h3 id="editing-templates" class="wysiwyg-text-align-justify">Editing Templates</h3>
+<p class="wysiwyg-text-align-justify">You have the following options for editing or creating templates:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>By clicking on the title, you can open a template and edit its content.</p>
+</li>
+<li>
+<p>If you insert the wildcard {debug} into a template (e.g. main.tpl), <strong>Save,</strong> and then invoke a questionnaire page, variables will be displayed in a pop-up window. Please note that the usual wildcards of <em>EFS</em> cannot be used in the Smarty templates.</p>
+</li>
+<li>
+<p>Click on the <strong>Create template</strong> button to create a new template.</p>
+</li>
+<li>
+<p>You can duplicate templates that already exist by clicking on the <strong>Copy</strong> icon.</p>
+</li>
+<li>
+<p>You can delete newly created and duplicated templates, but not system templates.</p>
+</li>
+<li>
+<p>If you wish to restore the original state of a template during project creation, click on the <strong>Restore</strong> icon in the “Function” column.</p>
+</li>
+</ul>
+<h3 id="editing-templates-externally-and-uploading-them" class="wysiwyg-text-align-justify">Editing Templates Externally and Uploading them</h3>
+<p class="wysiwyg-text-align-justify">You can export templates for further use on other <em>EFS Survey</em> installations or for local processing. To do so, click on the <strong>Export</strong> button. Similarly, you can use the <strong>Import</strong> button to upload external templates to the server, both individual templates and zip files containing several templates.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="debug-mode" class="wysiwyg-text-align-justify">Debug Mode</h2>
+<p class="wysiwyg-text-align-justify"><em>EFS</em> layouts work with invisible tables to position texts on a page. For debugging, it is often desirable to make table boundary lines temporarily visible. On the <strong>Debug mode</strong> tab, you can activate the table borders for all those who see the survey. Alternatively, you can make table borders visible only for those participants with a special IP address. Assume that your project is already in the field and you want to make changes to it on short notice. Naturally, you do not want your participants to see the table borders, so you restrict the view to yourself.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="upload" class="wysiwy

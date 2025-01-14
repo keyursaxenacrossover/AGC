@@ -1,0 +1,122 @@
+<h2 id="h_01J6Y5NN98ECD16Q6YD505F99F">Table of Contents</h2>
+<ul>
+<li>
+<a href="#header-1">Custom Trigger Activation</a>
+<ul>
+<li><a href="#header-3">Activation of custom trigger "surveytopanelistv2"</a></li>
+<li><a href="#header-5">Semantic and key phrase triggers (text analytics) activation</a></li>
+</ul>
+</li>
+<li><a href="#header-7">Activation of Custom Services</a></li>
+<li><a href="#h_01J7DPTGR3ZKK9346QME9GXCV6">Activation of CLF (Closed Loop Feedback)</a></li>
+<li><a href="#h_01J7DRSKZZS1T7FA23Q8800E1T">Activation of EFS Secure Exchange (Filemanager)</a></li>
+<li><a href="#h_01J7DRSP79KTF2V85Z1DDT9YF0">Activation of EFS High Security Mode</a></li>
+<li>Activation of SMS Service</li>
+</ul>
+<h1 id="header-1">Custom Trigger Activation</h1>
+<ul>
+<li>
+<p>Log in to the required installation with <strong>root</strong> account</p>
+</li>
+<li>
+<p>Navigate to <strong>Options &gt;&gt; Platform cockpit &gt;&gt; root only:: System configuration</strong></p>
+<ul>
+<li>
+<p>add value <code>custom</code> in the <code>modules</code> variable (if not existent yet)<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21156240881042" width="447" height="108"></p>
+</li>
+<li>
+<p>add a new variable to the <strong>system configuration</strong> (if not existent yet)</p>
+<ul>
+<li>
+<p>Variable name: <code>has_custom_triggers</code></p>
+</li>
+<li>
+<p>Value type: <strong>boolean</strong></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Set variable to <code>true</code> afterwards<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21156240888850" width="380" height="64"></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Check via console (<a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21139518716562" target="_blank" rel="noopener noreferrer">How to Access and Work with DXI Service Gateways</a>) whether folder <strong>htdocs/custom/trigger</strong> exists, if not create at least the <strong>custom</strong> folder.</p>
+</li>
+<li>
+<p>Add an update to installation entry in Globis mentioning that you have enabled custom triggers</p>
+<ul>
+<li>
+<p>via console and <strong>htdocs</strong> folder:</p>
+<ul>
+<li>
+<p><code>u set has_custom_triggers to true, case [ZD_ticket_ID]</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p>via <strong>Globis</strong>:</p>
+<ul>
+<li>
+<p>Open details of installation</p>
+</li>
+<li>
+<p>Click link "Add update for this installation"</p>
+</li>
+<li>
+<p>Files (*): All</p>
+</li>
+<li>
+<p>Description (*): <code>set has_custom_triggers to true, case [ZD_ticket_ID]</code> * Also add the module to the list of modules</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Once this is activated, you will be able to see the <strong>Custom Code</strong> trigger appearing in the instance surveys/projects.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21156240891538"></p>
+<h2 id="header-3">Activation of custom trigger "surveytopanelistv2"</h2>
+<ul>
+<li>
+<p>Log in to the required installation with root account</p>
+</li>
+<li>
+<p>Navigate to <strong>Options &gt;&gt; Platform cockpit &gt;&gt; root only:: System configuration</strong></p>
+<ul>
+<li>
+<p>add value <code>custom</code> in the <code>modules</code> variable (if not existent yet)</p>
+</li>
+<li>
+<p>add a new variable</p>
+<ul>
+<li>
+<p><strong>Variable name: </strong><code>custom_triggers_allowed</code></p>
+</li>
+<li>
+<p><strong>Value Type:</strong> Array</p>
+</li>
+<li>
+<p><strong>Key:</strong> surveytopanelistv2</p>
+</li>
+<li>
+<p><strong>Type:</strong> Boolean</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Set variable to <code>true</code> afterwards</p>
+</li>
+</ul>
+</li>
+<li>Add an update to installation entry in Globis mentioning that you have enabled custom triggers
+<ul>
+<li>
+<p>via console and <strong>htdocs</strong> folder:</p>
+<ul>
+<li>
+<p><code>u set has_custom_triggers to true, case [ZD_ticket_ID]</code></p>
+</li>
+</ul>
+</li>
+<li>

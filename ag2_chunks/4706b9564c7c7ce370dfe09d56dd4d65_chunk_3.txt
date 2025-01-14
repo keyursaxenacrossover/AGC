@@ -1,0 +1,34 @@
+ data-width="1666" data-height="454" data-id="e1df286b-1d94-4f17-a8db-d6d0a6cbaf29" data-collection="contentId-4080566313" data-file-name="file" data-file-size="1" data-file-mime-type="" data-alt="image-20240201-084245.png" data-renderer-start-pos="4063"> </div>
+</div>
+</div>
+<div class="ak-editor-panel cc-tqp4ke wysiwyg-text-align-justify" data-panel-type="info">
+<div class="ak-editor-panel__icon"><em>Note: You might have to scroll to the right to be able to see the <strong data-renderer-mark="true">Import</strong> button.</em></div>
+<div class="ak-editor-panel__icon"> </div>
+</div>
+<hr>
+<h2 id="Master-Data" class="wysiwyg-text-align-justify" data-renderer-start-pos="4144"><strong data-renderer-mark="true">Master Data</strong></h2>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="4157">Your panel now contains 3 panelists for whom the personal data you entered in the import file has been saved, as well as certain system data such as the way of entry into the panel or the panel status. Just as important, or perhaps even more important for your panel, is the so-called master data. These are basic panelist characteristics defined by the panel administrator, which are stored independently of the project and are permanently available for evaluation or the creation of sub-panels ("groups"), for example. In the following, we will lead you through the creation of this master data in the <em data-renderer-mark="true">People</em> module and show you how you can use a master data survey to gather and store information on the master data from your panelists.</p>
+<h3 id="Creating-New-Master-Data" class="wysiwyg-text-align-justify" data-renderer-start-pos="4898"><strong data-renderer-mark="true">Creating New Master Data</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="4924">First, of course, you need to think about which master data makes sense for your use case. As an example, we will create one master data record in which the information as to whether a panelist owns a car or not is stored. To do this, follow the steps below:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="5186">In the <em data-renderer-mark="true">People</em> module, select the <strong data-renderer-mark="true">Master data</strong> menu item from the menu on the left-hand side.</p>
+</li>
+<li>
+<p class="wysiwyg-text-align-left" data-renderer-start-pos="5281">Click on <strong data-renderer-mark="true">Create master data</strong>.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21018302916626"></p>
+</li>
+</ul>
+<ul class="wysiwyg-text-align-justify">
+<li data-renderer-start-pos="5281">Enter the name of the variable in the <strong data-renderer-mark="true">Variable name</strong> field. It should begin with "m_" or "md_" and be a maximum of 20 characters long. As an example, we create the master data record “md_car”.</li>
+<li data-renderer-start-pos="5513">Enter the name of your master data record in the <strong data-renderer-mark="true">Title</strong> field. In our case: "Car owner".</li>
+<li data-renderer-start-pos="5604">Select <strong data-renderer-mark="true">Integer (-128 to 127)</strong> as the type.</li>
+<li data-renderer-start-pos="5649">By default, only the option <strong data-renderer-mark="true">(default)</strong>, to which all master data is assigned, is available as a category. If you would like to create further categories and sort your master data in these categories,.</li>
+<li data-renderer-start-pos="5901">Keep the default settings for the other two options.</li>
+<li class="wysiwyg-text-align-left" data-renderer-start-pos="5957">Click on <strong data-renderer-mark="true">Create</strong>.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21018333484818">
+</li>
+<li>The newly created master data record is now displayed in the list of master data.</li>
+<li class="wysiwyg-text-align-left">Select it by clicking on the link under <strong data-renderer-mark="true">Variable</strong> or <strong data-renderer-mark="true">Title</strong>.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21018302894354">
+</li>
+<li>Under<strong data-renderer-mark="true"> Answer categories</strong>, click on the <strong data-renderer-mark="true">Edit answer categories</strong> button.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21018333455634">
+</li>
+<li>Enter the value <strong data-renderer-mark="true">1</strong> under <strong data-renderer-mark="true">Code</strong> and the

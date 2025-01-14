@@ -1,0 +1,49 @@
+<p><strong>Original Confluence URL:</strong> <a href="https://qbdocs.atlassian.net/wiki/spaces/1LS/pages/1476657166/SPAM+issues">https://qbdocs.atlassian.net/wiki/spaces/1LS/pages/1476657166/SPAM+issues</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+<article>
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K">Overview</h1>
+<p>This article provides comprehensive information on SPAM issues, email authentication methods, and best practices for ensuring email deliverability. It covers various topics including SPF, DKIM, DMARC, whitelisting, blacklisting, and recent changes in email authentication requirements by major email providers.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>Email deliverability is crucial for effective communication. This guide focuses on various techniques and protocols to improve email authentication and reduce the likelihood of legitimate emails being marked as spam.</p>
+<ul>
+<li><a href="#general">General Information</a></li>
+<li><a href="#spf">SPF (Sender Policy Framework)</a></li>
+<li><a href="#dkim">DKIM (DomainKeys Identified Mail)</a></li>
+<li><a href="#dmarc">DMARC (Domain-based Message Authentication, Reporting and Conformance)</a></li>
+<li><a href="#whitelisting">Whitelisting</a></li>
+<li><a href="#blacklisting">Blacklisting</a></li>
+<li><a href="#external-mailserver">External Mailserver</a></li>
+<li><a href="#mail-reputation">Mail Reputation</a></li>
+<li><a href="#gmail-yahoo-changes">Gmail and Yahoo Changes (February 2024)</a></li>
+</ul>
+<h2 id="general">General Information</h2>
+<p>Before an email appears in the recipient's inbox, it has to overcome several hurdles. The increasing measures for protection against spam can sometimes filter out desired emails. With spam accounting for more than 90 percent of total mail volume, both email providers and recipients are forced to take extensive countermeasures.</p>
+<p>To check the IP addresses for mails, refer to the <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20384449907602" target="_blank" rel="noopener noreferrer"><strong>Hurricane Socketlabs MTA Overview</strong></a>.</p>
+<p>For official documentation on how to avoid invitations ending up in the spam folder, please refer to the customer-facing<a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20231558003602" target="_blank" rel="noopener noreferrer"> Good Mail – Bad Mail: How to Avoid Invitations Ending up in the Spam Folder</a> guide.</p>
+<h2 id="spf">SPF (Sender Policy Framework)</h2>
+<p>SPF is an email authentication method that specifies which mail servers are authorized to send emails on behalf of your domain.</p>
+<p>Add the following SPF record to your domain's DNS settings in order to implement SPF checks:</p>
+<code>include:_spf.tivian.com</code>
+<p>For a detailed breakdown of the IPs included in this SPF record, visit: <a href="https://mxtoolbox.com/SuperTool.aspx?action=spf%3a_spf.tivian.com&amp;run=toolpage">MX Toolbox SPF Lookup</a>.</p>
+<p>Note that using IP addresses instead of FQDN's is also possible, however, not at all recommended, as IP addresses are subject to change.</p>
+<h2 id="dkim">DKIM (DomainKeys Identified Mail)</h2>
+<p>DKIM adds a digital signature to your emails that is associated with your domain and used for all outgoing emails.</p>
+<h3 id="h_01J3QC5JPB7NS4M9VT2ZYF6YH0">How to check DKIM</h3>
+<ol>
+<li>Visit <a href="https://mxtoolbox.com/dkim.aspx">MX Toolbox DKIM Lookup</a>
+</li>
+<li>Enter your domain</li>
+<li>Use "tivian" or "qb" as the selector</li>
+</ol>
+<h2 id="dmarc">DMARC (Domain-based Message Authentication, Reporting and Conformance)</h2>
+<p>DMARC is a specification developed to reduce email abuse. It builds upon SPF and DKIM.</p>
+<h3 id="h_01J3QC5JPBK0PQYZ4B7D409V4Z">How to check DMARC</h3>
+<ol>
+<li>Visit <a href="https://mxtoolbox.com/DMARC.aspx">MX Toolbox DMARC Lookup</a>
+</li>
+<li>Enter your domain in the search field</li>
+</ol>
+<p><em><strong>Note:</strong> DMARC is only effective when SPF and DKIM are already set up.</em></p>
+<h2 id="whitelisting">Whitelisting</h2>
+<p>Whitelists are positive lists that certify a listed sender with a special reputation and ensure preferential treatment of their emails by email providers.</p>
+<h2 id="blacklisting">Blacklisting</h2>
+<p>Blacklisting involves blocking IP addresses of email addresses that have been classified as spammers due to suspicious behavior. These IP addresses are placed on a

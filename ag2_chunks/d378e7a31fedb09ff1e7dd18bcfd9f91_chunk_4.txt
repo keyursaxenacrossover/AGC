@@ -1,0 +1,54 @@
+g-text-align-justify"><strong>Rights admin</strong></h3>
+<p class="wysiwyg-text-align-justify">You have configured reports, user roles, and project phases according to your needs. In the last step, you define how these elements should interact - i.e. which user roles should be granted access to which tab in the Org Processor login during which phase of the project.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013850448530" alt="Rights admin.jpg"></p>
+<p class="wysiwyg-text-align-justify">The allocation is executed using the grid on the <strong>Rights admin</strong> tab:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Each cell of the grid describes a combination of phase, role, and tab.</p>
+</li>
+<li>
+<p>Clicking on a grid cell opens a layer. In this layer, you can select the roles that are supposed to have access to the respective tab in the respective phase.</p>
+</li>
+<li>
+<p>By clicking a radio button in the “Active” column, you activate that phase instantaneously. Please note that the rights of Org Processor users are affected strongly by a change of phase. Never change the phase of a running project just to find out what might happen!</p>
+</li>
+<li>
+<p>If you want a phrase to start automatically when reaching the start date, activate the checkbox in the column “Start automatically”.</p>
+</li>
+<li>
+<p>The start date can be changed using the calendar icon.</p>
+<ul>
+<li>
+<p>You can move the start dates en bloc. To do so, activate the “Actions” checkbox for the required phases, select the period by which you want to move the start dates in the drop-down list, and click <strong>Execute</strong>.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="download-platform" class="wysiwyg-text-align-justify"><strong>Download Platform</strong></h2>
+<p class="wysiwyg-text-align-justify">When realizing employee surveys with <em>EFS Employee</em>, you have a default download platform at your disposal. On this platform, the recipients of reports can log in and download their reports. The download platform can be activated if required, and adapted according to the requirements of the respective project. The functions for designing the download platform are placed in the <strong>Projects</strong> → {Selected project} → <strong>Process configuration</strong> → <strong>Download platform</strong> menu.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013850450322" alt="Download platform.jpg"></p>
+<p class="wysiwyg-text-align-justify">You can find the functions for designing the download platform in the admin area of<em> EFS Employee</em></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Security settings</strong>: On this tab, you can configure the behavior of the system during the login process.</p>
+</li>
+<li>
+<p><strong>Access restrictions</strong>: On this tab, you can define role- and phase-specific restrictions for the individual pages of the download platform.</p>
+</li>
+<li>
+<p><strong>Language setting</strong>s: On this tab, you can edit the language versions of the download platform.</p>
+</li>
+<li>
+<p><strong>Messages</strong>: On this tab, you can edit the messages used on the download platform and create additional messages.</p>
+</li>
+<li>
+<p><strong>Structure</strong>: On this tab, you can edit the templates of the download platform.</p>
+</li>
+</ul>
+<h3 id="activating-the-download-platform" class="wysiwyg-text-align-justify"><strong>Activating the download platform</strong></h3>
+<p class="wysiwyg-text-align-justify">The download platform can be activated or deactivated separately. If it is deactivated, nobody can log in anymore. The <strong>Process configuration</strong> → <strong>Download platform</strong> menu in the admin area will still be available, your settings will not be changed or reset.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013850450706" alt="Activating download platform.jpg"></p>
+<p class="wysiwyg-text-align-justify">Open the Options tab in the <strong>Org Processor</strong>→<strong> Configuration</strong> menu and activate resp. deactivate the “Activate download platform” checkbox. Per default, the download platform is activated in new projects.</p>
+<p class="wysiwyg-text-align-justify">If the download platform is not activated, the message “This function is currently not available.” will be displayed. It can be modified in the <strong>Project properties</strong> → <strong>Survey messages</strong> menu.</p>
+<h3 id="settings" class="wysiwyg-text-align-justify"><strong>Settings</strong></h3>
+<p class="wysiwyg-text-align-justify">On the <strong>Settings</strong> tab, you can configure the behavior of the system during the login process. To improve usability for the users on the one hand, and simplify management of users who work only on the download platform on the other hand, the rules for

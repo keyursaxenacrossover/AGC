@@ -1,0 +1,73 @@
+Export settings” area, choose “SPSS” as the file format and “Project, closed-ended questions only” as the export template. Leave the default settings for data compression (“No compression”) and language (“English (default)”) unchanged.</p>
+</li>
+<li>
+<p>Open the “Restrict export to disposition codes” section and deactiveate all disposition codes except 31 (Completed) and 32 (Completed after break) according to the requirement defined above.</p>
+</li>
+<li>
+<p>Then, click on the <strong>Export </strong>button and reconfirm the export by clicking on <strong>Copy file to local PC </strong>on the following page.</p>
+</li>
+<li>
+<p>The download will begin. A pop-up window will open, in which you can choose to either open or save the file. Click on the <strong>Save button</strong>.</p>
+</li>
+<li>
+<p>A further dialog window will open, in which you can choose the folder you wish to save the file to. You can also rename the file. Confirm by clicking on <strong>Save</strong>.</p>
+</li>
+<li>
+<p>Once the download has been completed you can close the window by clicking on <strong>Close window</strong>.</p>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify">On several large collective installations, which are used by a number of our customers, the export orders will not be processed immediately but queued and processed one after the other.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>In the <strong>Projects</strong> → {<strong>Selected projects</strong>} → <strong>Export</strong> → <strong>Export tasks </strong>menu, you can check the status of your export orders.</p>
+</li>
+<li>
+<p>After completion of the export, you will be notified automatically by e-mail. Clicking on the link contained in the notification mail will take you directly to the download page.</p>
+</li>
+</ul>
+<h2 id="detailed-description-of-result-master-and-address-data-export" class="wysiwyg-text-align-justify"><strong>Detailed Description of Result, Master, and Address Data Export</strong></h2>
+<h3 id="selecting-the-appropriate-file-format" class="wysiwyg-text-align-justify"><strong>Selecting the Appropriate File Format</strong></h3>
+<p class="wysiwyg-text-align-justify">The following formats are available:</p>
+<table class="wysiwyg-text-align-justify" style="height: 1946px;" border="1" width="759" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr style="height: 29px;">
+<th style="width: 327.674px; height: 29px;" data-highlight-colour="#57d9a3">
+<p><strong>Format</strong></p>
+</th>
+<th style="width: 424.028px; height: 29px;" data-highlight-colour="#57d9a3">
+<p><strong>Properties</strong></p>
+</th>
+</tr>
+<tr style="height: 88px;">
+<td style="width: 319.653px; height: 88px;">
+<p>CSV</p>
+</td>
+<td style="width: 416.007px; height: 88px;">
+<p>CSV (Character Separated Values) is an exchange format that is mainly used for exchanging data between different computer programs.</p>
+</td>
+</tr>
+<tr style="height: 410px;">
+<td style="width: 319.653px; height: 410px;">
+<p>XLS (MS Excel 2003)</p>
+<p>XLSX (MS Excel 2007)</p>
+</td>
+<td style="width: 416.007px; height: 410px;">
+<p>The data can be directly exported to a file in the XLS or XLSX format used by <em>Microsoft Excel</em>. As a maximum of 256 columns can be inserted into an <em>Excel</em> worksheet, the exported data are automatically distributed on several worksheets, as necessary.</p>
+<p>Please note: If you allow only numerical entries in an open answer (e.g. by using corresponding plausibility checks or input formats), these details will be exported nevertheless as strings. For evaluation purposes it occasionally makes sense to format these answers as numbers instead, Excel does not automatically make this format though. Please proceed as follows:</p>
+<ul>
+<li>
+<p>In older versions of <em>Excel,</em> you mark the corresponding cells first. Then choose in the <strong>Format</strong> → <strong>Cells </strong>menu the option “number” on the <strong>Numbers </strong>tab and confirm with <strong>OK</strong>.</p>
+</li>
+<li>
+<p>In newer versions of <em>Excel,</em> the function for changing the cell format is hidden under the exclamation mark which you find beside the cells.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr style="height: 285px;">
+<td style="width: 319.653px; height: 285px;">
+<p>Triple-S</p>
+</td>
+<td style="width: 416.007px; height: 285px;">
+<p>For exports in Triple-S, an XML description file and a record file are generated. These files are always output in

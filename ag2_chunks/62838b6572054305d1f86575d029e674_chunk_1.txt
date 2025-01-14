@@ -1,0 +1,44 @@
+-text-align-justify">2. Enter the team name using characters a-z, 0-9, _ and -.</p>
+<p class="wysiwyg-text-align-justify">3. In "Members with upload rights", specify teams whose members should have read and write rights for their own files only. You can select multiple teams while holding CTRL key.</p>
+<p class="wysiwyg-text-align-justify">4. In "Members with change rights", specify teams whose members can change files of all team members.</p>
+<p class="wysiwyg-text-align-justify">5. Click <strong>Create team</strong> to confirm.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="assigning_teams_rights_admin" class="wysiwyg-text-align-justify">Assigning Teams and Rights Administration</h2>
+<p class="wysiwyg-text-align-justify">This section explains how to assign user teams to exchange teams and manage their access rights.</p>
+<h3 id="rights_configurations" class="wysiwyg-text-align-justify">Rights Configurations</h3>
+<ul class="wysiwyg-text-align-justify">
+<li>Upload right (read): Members can upload and download files, but only change or delete their own files.</li>
+<li>Change right (write): Members can upload, download, change, or delete all files of their exchange team.</li>
+<li>Read and write: Members have all rights to the exchange team and all upload and change rights but are ignored for the "Send info mail to team" function.</li>
+</ul>
+<h3 id="assign_rights_steps" class="wysiwyg-text-align-justify">Steps to Assign Rights</h3>
+<p class="wysiwyg-text-align-justify">1. Locate the exchange team in the overview and click on the <strong>Rights</strong> icon.</p>
+<p class="wysiwyg-text-align-justify">2. In the rights administration dialog, assign read and/or write rights for the exchange team to the desired user teams.</p>
+<p class="wysiwyg-text-align-justify">3. Click <strong>Change rights</strong> to confirm your selection.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015039050770"></p>
+<h3 class="wysiwyg-text-align-justify">Example Scenario:</h3>
+<p class="wysiwyg-text-align-justify"><strong>Dividing the persons involved in a project into teams with different rights:</strong></p>
+<p class="wysiwyg-text-align-justify">In a project, not all participants may need the same level of access in EFS Secure Exchange. For example, the HR department at "Real Estate" needs to prepare for an employee survey. HR project managers should have full editing rights for all files, while other staff should only download files and modify/delete their own.</p>
+<p class="wysiwyg-text-align-justify">To manage rights appropriately, create and assign user teams:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<strong>Real Estate project managers</strong>: Unrestricted access.</li>
+<li>
+<strong>Real Estate staff</strong>: Limited to downloading and editing their own files.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Assign rights to the exchange team "Exchange team Real Estate":</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<strong>Real Estate project managers</strong>: "Write" access.</li>
+<li>
+<strong>Real Estate staff</strong>: "Read" access</li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863" class="wysiwyg-text-align-justify">FAQ</h1>
+<h3 id="faq_cannot_see_menu" class="wysiwyg-text-align-justify">Why can't I see the Exchange teams menu?</h3>
+<p class="wysiwyg-text-align-justify">If you cannot see the Exchange teams menu, your account may lack the ACL right "exchange_teams". Contact support to have this right activated for you.</p>
+<h3 id="faq_user_team_assignment" class="wysiwyg-text-align-justify">Do I need to assign user teams when creating an exchange team?</h3>
+<p class="wysiwyg-text-align-justify">No, you don't need to specify teams when creating the exchange team. You can always assign user teams to an exchange team at a later stage.</p>
+<h3 id="faq_different_rights" class="wysiwyg-text-align-justify">How can I give different rights to members of the same user team?</h3>
+<p class="wysiwyg-text-align-justify">If you need to give different rights to members of the same user team, you may need to create additional user teams and reassign the members accordingly.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+</article>

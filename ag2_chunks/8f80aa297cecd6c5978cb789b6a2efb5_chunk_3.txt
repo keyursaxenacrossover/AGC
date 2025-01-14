@@ -1,0 +1,28 @@
+ things, namely <strong>Netsuite fields</strong>
+<ol>
+<li>If the installation is a clone, just copy all the details from the source installation from Globis</li>
+</ol>
+</li>
+<li>If you are dealing with IPSOS/Kantar clone installations, the checklist has <strong>special steps for them</strong>, that are to be followed; so just make sure to search in the checklist for Kantar or IPSOS keywords to find those special steps.</li>
+<li>Make use of <a href="https://docs.google.com/spreadsheets/d/1Yx-4TFTCjzrqTyFzIWGBAACBkIkFfCIqreGYPlqWLYM/edit?gid=0#gid=0">DXI/EFS Support Agent Accounts - new instance import CSV template - Google Sheets</a> in order to import all the support agent accounts into the instance (for blank installations)</li>
+</ol>
+</li>
+<li>Of course, once everything is up and running, you will need to respond to the ticket and inform the requester of the following:
+<ol>
+<li>The new instance URL</li>
+<li>The login credentials (only for blank installs, as cloned instances contain the same accounts from the source installation), while making sure that you follow the guide for <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20304985692946" target="_blank" rel="noopener noreferrer">Securely Sending Passwords or Tokens</a>.</li>
+</ol>
+</li>
+</ol>
+<p>Please watch <a href="https://drive.google.com/file/d/1W5EdCZqY1yhN4u1eneH5XDm9Q0Qy-SN0/view?usp=drive_link" target="_blank" rel="noopener noreferrer"><strong>this short video tutorial</strong></a> to give you a feel of the whole process before diving into it head first.</p>
+<div id="content">
+<div class="alert alert-danger" role="alert">
+<p><em><strong>NEW:</strong> the <strong>dxi_install_checklist.html</strong> file was created based on the above txt file in order to help you with this task; instead of manually replacing the placeholders, the HTML file will do that for you. So just download the HTML file and generate the templates for going through the provisioning tasks.</em></p>
+<p> </p>
+</div>
+</div>
+<h1 id="h_01JA8QF4J9X5110ZWN8QQQWFCF">Special Cases:</h1>
+<h3 id="h_01JA8QGD9V3S9W49M500344YD9"><strong>Penetration Test for Ipsos - Bofa:</strong></h3>
+<ul>
+<li>Ipsos will periodically request a penetration testing environment based on <a style="margin: 0px; padding: 0px; font-size: 14px; vertical-align: baseline; background: #fff7ed; cursor: pointer; text-decoration: none; color: #144a75; box-sizing: border-box; line-height: inherit; outline: none; font-family: system-ui, -apple-system, BlinkMacSystemFont, ' Segoe UI' , Roboto, Oxygen-Sans, Ubuntu, Cantarell, ' Helvetica Neue' , Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal;" href="http://bofaadvisorypanel.ipsos-forum.com/" rel="noopener noreferrer">bofaadvisorypanel.ipsos-forum.com</a> (on BofA-US-01)</li>
+<li>This is usually prepared by performing a Sync from <span style="color: #2f3941; font-family: system-ui, -apple-system, BlinkMacSystemFont, ' Segoe UI' , Roboto, Oxygen-Sans, Ubuntu, Cantarell, ' Helvetica Neue' , Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #fff7ed; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"> </span><a style="margin: 0px; padding: 0px; font-size: 14px; vertical-align: baseline; background: #fff7ed; cursor: pointer; text-decoration: none; color: #144a75; box-sizing: border-box; line-height: inherit; outline: none; font-family: system-ui, -apple-system, BlinkMacSystemFont, ' Segoe UI' , Roboto, Oxygen-Sans, Ubuntu, Cantarell, ' Helvetica Neue' , Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2

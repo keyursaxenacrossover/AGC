@@ -1,0 +1,55 @@
+ slide switches:</p>
+<ul>
+<li>
+<p> Allow removing preselected group</p>
+</li>
+<li>
+<p>Optional</p>
+</li>
+<li>
+<p>Adding partcipants allowed</p>
+</li>
+</ul>
+<p>The three slide buttons allow users to manage the Rater-Groups. If you allow the users to remove the groups, they can add other groups. With the slide switch of the column "Optional" you control whether the whole rater group including the selection of participants may be skipped. You allow the addition of participants with the slide switch "Adding participants allowed?". "Minimum number of participants" and "Maximum number of participants" are used to control how many participants can be added.</p>
+<ul>
+<li>
+<p>You use the following path to create company-managed groups:</p>
+</li>
+</ul>
+<p><strong>People</strong> → <strong>Contacts</strong> → <strong>Groups (Portals)</strong></p>
+<p><u>Rater-Groups</u></p>
+<p>You create the new Rater-Groups  category used in the <em><strong>Me</strong></em> Guide scenario under <strong>Libraries</strong>. You will find there the cagtegories: <strong>Self-Assessment</strong>, <strong>Manager</strong>, <strong>Peers</strong> and <strong>Team</strong>. These cannot be configured either. However, you can create new ones by clicking on <strong>+ category</strong> and assigning a unique meta name in the first step. Then you use the ISO code to specify the language of the title you want to assign. You save.</p>
+<ul>
+<li>
+<p>You use the following path to create this categories :</p>
+</li>
+</ul>
+<p><strong>Libraries </strong>→ <strong>Categories</strong> → <strong>Rater-Groups</strong> <strong>categories</strong> (Tab)</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998272815122" alt="Rater-Groups categories.png"></p>
+<p>In the Guide setup of the<em> Portal's</em> exterior view, the<strong> Invitations</strong> step is used to present the invitations to the users. A special feature that must be pointed out in this context is the company-managed groups created dynamically using a filter, since you allow users to automatically offer their own manager and their own team.</p>
+<p>This requires a special filter setting and a special composition of the company-managed group.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998219531410" alt="Exterior view 2.png"></p>
+<p><u>Manager participation in a survey at the end of the field phase</u></p>
+<p>You give managers more time!. Under the <strong>Settings</strong> tab of the <strong>Guides</strong> sub-navigation, you can now define how long after the end of the field phase the manager still has the option of answering the survey.</p>
+<p><u>Self-Assessment Survey Opens in New Browser Tab</u></p>
+<p>The self-assessment survey will open in a new browser tab after clicking the self-assessment button.</p>
+<h3 id="header-13">Storage of preferred language in <em>u_locale </em>master data</h3>
+<p>The preferred language of the users who have not logged in yet can now be defined by ISO code. The selected language is stored in the <em>u_locale</em> master data under <strong>Settings</strong> in the portal's profile.</p>
+<ul>
+<li>
+<p>After logging in, the portal is displayed in the language stored in your <em>u_locale</em> master data variable.</p>
+</li>
+<li>
+<p>Under <strong>People</strong> →<strong> Panelist administration</strong> → {selected panelist} → <strong>Detail view</strong> (Tab) you find the <em>u_locale</em> master data variable.</p>
+</li>
+<li>
+<p>If no or a 'wrong' language has been defined, the default language of the portal is used.</p>
+</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998265827474" alt="u locale.png"></p>
+<p>The <em>m_offlineusers </em>master data</p>
+<p>This feature is an enhancement of the 'Offline User Scenario', which you know from the 18.3 fall release. If you add panelists with the master data m_offlineusers = 1 in the guide setup, at the end of the guide setup process will generate a PDF that will be sent to the guide initiator containing participation vouchers. In order to mask the dummy e-mail address, this dummy e-mail address is replaced by the placeholder <em>Offline Participant</em> in both the participant list and the search results.</p>
+<h3 id="header-14">Displaying the dimensions of the matrix questions</h3>
+<p>In order to make the question text of the matrix question types accessible in the Guide setup, the names of the individual dimensions of a matrix question type are now displayed.</p>
+<h3 id="header-15">Sending result e-mails</h3>
+<p>Under the <strong>Settings</strong> tab of the <strong>Guides</strong> sub-navigation, you will find three radio buttons that you can use to determine to whom the

@@ -1,0 +1,79 @@
+ysiwyg-text-align-justify"> </p>
+<h2 id="wildcards" class="wysiwyg-text-align-justify">Wildcards</h2>
+<p class="wysiwyg-text-align-justify">On the <strong>Wildcards</strong> tab, you can easily define dynamic content for each questionnaire page outside of the actual questionnaire. You can use this feature, for example, to divide your survey into topic blocks and then visualize this division in the layout. To do so, proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Click on the <strong>Wildcards</strong> tab.</p>
+</li>
+<li>
+<p>Click on the page title of the first page of your project.</p>
+</li>
+<li>
+<p>A form will appear, in which you can insert a maximum of five wildcards for this page. Type an arbitrary text into the <strong>Text 1</strong> field, e.g. “Demographic questions”</p>
+</li>
+<li>
+<p>Click on <strong>Save Changes</strong>.</p>
+</li>
+<li>
+<p>Repeat Steps 1 through 4 for further pages.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Now tell the layout where you would like to use the defined wildcards:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Switch to the <strong>Structure</strong> tab.</p>
+</li>
+<li>
+<p>For example, edit the main.tpl template, to place the wildcards in the general page structure file.</p>
+</li>
+<li>
+<p>Insert the {$r_text1} system variable anywhere on the page.</p>
+</li>
+<li>
+<p>Take a look at the project in the preview. You will see that {$r_text1} has been replaced with the corresponding text from the database.</p>
+</li>
+<li>
+<p>Wrap the wildcard in HTML code to achieve the desired appearance.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="progress-bar" class="wysiwyg-text-align-justify">Progress Bar</h2>
+<p class="wysiwyg-text-align-justify">The progress bar automatically activated by default calculates an estimated value for the as-yet estimated remaining questionnaire length. This procedure has two disadvantages:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>As already explained above, this is an estimation algorithm, as a precise prediction of the course of the questionnaire is usually not possible for a given respondent.</p>
+</li>
+<li>
+<p>Automatic calculation evaluates all questionnaire pages. In practice, however, there is often the wish for an option to exclude the opening pages (containing, for example, the welcome, an introduction to the subject, or a language selection question) from the count.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Alternatively, you can therefore deactivate the automatic calculation and determine a value the progress bar should take on for each page.</p>
+<h3 id="progress-bar-algorithm" class="wysiwyg-text-align-justify">Progress Bar Algorithm</h3>
+<p class="wysiwyg-text-align-justify">When a participant begins filling out a questionnaire it cannot usually be predicted how many questionnaire pages and which pages precisely they will see. To do so you would have to know in advance what filter branches the participant will pass - however, filtering is mostly dependent on answers only given during the questionnaire.</p>
+<p class="wysiwyg-text-align-justify">The progress bar values are therefore calculated in <em>EFS</em> via an estimation algorithm, which steadily approaches the actual final length throughout the questionnaire. Here, unavoidable jumps in the value, caused for example by filters, are kept to a minimum.</p>
+<p class="wysiwyg-text-align-justify">The formula is:</p>
+<pre class="wysiwyg-text-align-justify">progress value (page x) = progress value (page x-1) + [{100- {progress value (page x-1)} / {denominator (page x) - numerator (page x)} ]</pre>
+
+<p class="wysiwyg-text-align-justify">where:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>denominator (page x) = (sum of pages submitted to date + 1) + (sum of all pages still anticipated after page x) and</p>
+</li>
+<li>
+<p>numerator (page x) = number of all pages submitted to date</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The progress value on the first page of the questionnaire is:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>progress value (page 1) = 100 / sum of all pages in the questionnaire</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The progress value on the final page is:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Progress value (final page) = 100</p>
+</li>
+</ul>
+<h3 id="changing-progress-bar-texts-and-values-manually" class="wysiwyg-text-align-justify">Changing Progress Bar Texts and Values Manually</h3>
+<p class="wysiwyg-text-align-justify">The progress bar is usually activated, otherwise please activate it in the <strong>

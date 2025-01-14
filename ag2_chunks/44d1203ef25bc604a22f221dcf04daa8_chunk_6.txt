@@ -1,0 +1,73 @@
+ projects.</p>
+</li>
+<li>
+<p>After selecting a project, add the text variables by clicking on the<strong> +</strong> under "Variables".</p>
+</li>
+<li>
+<p>In the case of text variables for a panel group, proceed in the same way. Under "Panel" you click on the <strong>+</strong>. The open modal has a drop-down list, which contains the text variables.</p>
+</li>
+</ul>
+<p> </p>
+<div class="fabric-editor-block-mark sc-ixltIz dsUKKC">
+<h3 id="recoding-of-the-text-strings"><strong>Recoding of the Text Strings</strong></h3>
+</div>
+<p>In the case of text strings, you can recode the format<strong> fact</strong> or <strong>dimension</strong> as integer, float, or datetime.</p>
+<p><strong>Fact</strong></p>
+<p>The option to convert the format <strong>fact</strong> as integer, float, or datetime allows you to use the converted value after the project has been published in <em>Tableau</em>. You can find it there in the corresponding columns, that is in INT_VALUE, FLOAT_VALUE or DATE_VALUE.</p>
+<p><strong>Dimension</strong></p>
+<p>For the format <strong>dimension</strong>, however, if you want to convert it as integer, float or datetime: A new colimns is created in the fact table in which the correspondingly converted data type is entered.</p>
+<p><strong>Special feature: "Recode value to answer option"</strong></p>
+<p>Using the option <strong>Recode value to answer option</strong>, you can recode any text to a single-choice question, taking the following into account:</p>
+<ul class="ak-ul">
+<li>
+<p>The number of recoded values is limited to 100. This value can be increased by the support in exceptional cases. Any participation creating answer options beyond this limit will receive the ID 'Not answered'.</p>
+</li>
+<li>
+<p>Recoding is case-insensitive. Should the answer option ‘Example’ already exist, for ‘example’ with a lower-case letter no new answer option will be created, but the ID of ‘Example’ will be used.</p>
+</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015311986834" alt="convertasinteger_EN.png"></p>
+<p>For the data type datetime, you must also specify the source format in which the date and time specifications are created in the variable. For more information visit: <a class="sc-gtXRHa hxKVnd" title="http://php.net/manual/de/function.date.php" href="http://php.net/manual/de/function.date.php">http://php.net/manual/de/function.date.php</a></p>
+<p> </p>
+<div class="fabric-editor-block-mark sc-ixltIz dsUKKC">
+<h3 id="selection-of-the-data"><strong>Selection of the Data</strong></h3>
+</div>
+<p>You do not select any of the data areas as a whole. Instead, you take the required data from each of these. To do this, you open the data areas available within a project by clicking either on the drop-down arrow or on the name of the respective area.</p>
+<p>Then you select the data in the following way:</p>
+<ul class="ak-ul">
+<li>
+<p>The available records are displayed on the left side of the screen, which you can select by double-clicking or drag and drop and move to the right side.</p>
+</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015359098130" alt="auswahlsatensaetze1_EN.png"></p>
+<p>Available functions are: editing, removing, and configuring records.</p>
+<ul class="ak-ul">
+<li>
+<p>All selected data can be edited by clicking on the pen icon.</p>
+</li>
+<li>
+<p>You assign a new name, which you confirm with a click on the check mark and then discard with a click on the <strong>X</strong>.</p>
+</li>
+</ul>
+<ul class="ak-ul">
+<li>
+<p>You use the trashcan icon to remove the record from the selection.</p>
+</li>
+<li>
+<p>You use the drop-down arrow to access the formatting of the data.</p>
+</li>
+<li>
+<p>The number in front of the record in the area <strong>Questions</strong> indicates which question types are involved.</p>
+</li>
+</ul>
+<p>The selected data are available to you after the publication of the project in <em>Tableau</em>.</p>
+<p> </p>
+<div class="fabric-editor-block-mark sc-ixltIz dsUKKC">
+<h3 id="introduction-of-different-data-areas"><strong>Introduction of Different Data Areas</strong></h3>
+</div>
+<p>The following subchapter presents the data areas<strong> Organizational structure</strong>, <strong>Action planner,</strong> and <strong>Field report</strong> separately.</p>
+<div class="media-single image-center sc-fxgLge csFTyu sc-imAxmJ jhTrUf" data-layout="center">
+<div class="sc-cIwbeI jFxvik" data-type="file">
+<div class="sc-bWkBrx eDOyfG">
+<div class="sc-fUKxqW dZfchS">
+<div class

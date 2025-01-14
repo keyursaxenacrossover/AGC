@@ -1,0 +1,57 @@
+>
+<strong>Sync and Assign Users</strong>: Trigger the user synchronization process and assign users to the appropriate groups and applications. Since all users should already be available in Okta, this step ensures proper assignment.</li>
+<li>
+<strong>EFS Admin and Panelists</strong>: Ensure that EFS Admins and panelists are correctly synced and assigned.</li>
+</ul>
+<h4 id="h_01J69RPVYWEPD67MYGKRGDNDNT">Step 7: <strong>Re-Enable Questback Access</strong>
+</h4>
+<ul>
+<li>Once all steps have been completed and verified, re-enable the Questback access module to resume normal operations.</li>
+</ul>
+<h3 id="h_01J69RPVYWH3JH970VHS1SM3CP">Summary</h3>
+<p>Re-setting up an EFS installation in Okta involves a series of steps designed to ensure that applications, users, and groups are correctly configured and synchronized. By following this guide, you can effectively manage the reconfiguration process and prevent potential synchronization issues.</p>
+<p> </p>
+<h1 id="h_01J69RPVYXM0YKT36BTGE2C75S">FAQ</h1>
+<ol>
+<li>
+<p><strong>Why do I need to disable automatic syncs before reconfiguration?</strong></p>
+<ul>
+<li>Disabling automatic syncs prevents synchronization conflicts and ensures that all changes are applied correctly during the reconfiguration process.</li>
+</ul>
+</li>
+<li>
+<p><strong>What should I do if I encounter issues during the migration scripts?</strong></p>
+<ul>
+<li>Verify that all configurations in IAM and Okta are correct. Ensure that the tenant-specific API Token is being used and check for any errors in the migration logs.</li>
+</ul>
+</li>
+<li>
+<p><strong>How do I ensure that all users are properly assigned after reconfiguration?</strong></p>
+<ul>
+<li>During the user synchronization step, make sure that all users are assigned to the correct installation-specific groups in Okta to ensure proper access.</li>
+</ul>
+</li>
+</ol>YWH3JH970VHS1SM3CP">Summary</h3>
+<p>Re-setting up an EFS installation in Okta involves a series of steps designed to ensure that applications, users, and groups are correctly configured and synchronized. By following this guide, you can effectively manage the reconfiguration process and prevent potential synchronization issues.</p>
+<p> </p>
+<h1 id="h_01J69RPVYXM0YKT36BTGE2C75S">FAQ</h1>
+<ol>
+<li>
+<p><strong>Why do I need to disable automatic syncs before reconfiguration?</strong></p>
+<ul>
+<li>Disabling automatic syncs prevents synchronization conflicts and ensures that all changes are applied correctly during the reconfiguration process.</li>
+</ul>
+</li>
+<li>
+<p><strong>What should I do if I encounter issues during the migration scripts?</strong></p>
+<ul>
+<li>Verify that all configurations in IAM and Okta are correct. Ensure that the tenant-specific API Token is being used and check for any errors in the migration logs.</li>
+</ul>
+</li>
+<li>
+<p><strong>How do I ensure that all users are properly assigned after reconfiguration?</strong></p>
+<ul>
+<li>During the user synchronization step, make sure that all users are assigned to the correct installation-specific groups in Okta to ensure proper access.</li>
+</ul>
+</li>
+</ol>

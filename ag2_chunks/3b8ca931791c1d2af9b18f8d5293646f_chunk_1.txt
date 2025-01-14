@@ -1,0 +1,160 @@
+ you can create a new language.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>cr_project</em></p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p>With write rights, you can create or copy new projects and change the basic characteristics of a project. Furthermore, write rights for cr_project are a necessary requirement for granting project import with import_project.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>ct42partadm</em></p>
+</td>
+<td>
+<p>With read rights, you can view the participants list in participant administration. Furthermore, you gain access to data import.</p>
+<p>In <em>EFS Survey</em> Status, you gain access to respondent export</p>
+</td>
+<td>
+<p>With write rights, you can create, edit or delete participants.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>del_project</em></p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p>With write rights, you can assign the status “erasable” to projects. Please note: The status “erasable” has been removed. Therefore, this right is currently without effect.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>export_with_lfdn</em></p>
+</td>
+<td>
+<p>With read rights, you can access and use the combined export of participant and result data in personalized surveys. You can also view the combined data in the menu <strong>Statistics → Detail view</strong>.<br>Furthermore, when exporting the project, you may optionally include the result data, e.g. if a project needs to be moved to another EFS installation.</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>import_project</em></p>
+</td>
+<td>
+<p>With read rights, you can import<br>projects. Please note: write rights for cr_project are a necessary requirement.</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>print_survey</em></p>
+</td>
+<td>
+<p>With read rights, you can print the survey.</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>protect_questions</em></p>
+</td>
+<td>
+<p>With read rights, you can view and export the results of protected questions</p>
+</td>
+<td>
+<p>With write rights, you can mark questions as “protected”.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>quotation_admin</em></p>
+</td>
+<td>
+<p>With read rights, you can check the quota statistics in the <strong>Field report</strong>.</p>
+</td>
+<td>
+<p>With write rights, you can use quotas</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>r_without_deleting</em></p>
+</td>
+<td>
+<p>With read rights, you can access the option “Reset without deleting survey data” in participant administration</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>show_dispcode</em></p>
+</td>
+<td>
+<p>With read rights, you can view and export the disposition code of survey participants. In a personalized survey, the disposition code is shown in participant administration. In a panel survey, it is shown in the respective sample on the tab “Sample contents”.</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>show_export</em></p>
+</td>
+<td>
+<p>With read rights, you can access<br>the <strong>Export </strong>menu of specific projects.</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>show_source</em></p>
+</td>
+<td>
+<p>With write rights you can use the edit source code button of the visual editor in the questionnaire editor.</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="rights-related-to-mail-dispatch-functions" class="wysiwyg-text-align-justify">
+<br>Rights Related to Mail Dispatch Functions</h2>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 250.0px;"> <col style="width: 257.0px;"> <col style="width: 253.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p><strong>Right</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p><strong>Read</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p><strong>Write</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p><em>mail_admin</em></p>
+</td>
+<td>
+<p>With read rights, you can access the overviews of existing mail templates in the projects and in the Libraries module. The Mail

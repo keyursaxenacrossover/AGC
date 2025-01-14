@@ -1,0 +1,139 @@
+>
+<p>Character set</p>
+</td>
+<td>
+<p>Which character set is to be used to display these messages?</p>
+</td>
+<td>
+<p>UTF-8</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Only on EFS Panel installations: Entry into the<br>panelist’s bonus points history</p>
+</td>
+<td>
+<p>Text entered in the panelist’s account statement and the bonus points history if bonus points are allocated on the final page or by a bonus trigger.</p>
+<p>Please note: If no text is defined, an English default text “Participation in survey 'Project title'” will be used. This ensures the traceability of the entries in the account statement.</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Text indicating progress</p>
+</td>
+<td>
+<p>Text is displayed next to the progress bar.</p>
+<p>The wildcard for the percentage is '%s'</p>
+</td>
+<td>
+<p>You have already completed the %s of the survey.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Special phrases for different purposes</p>
+</td>
+<td>
+<p>Used in some layouts to output special information</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Text for consecutive numbering of questions</p>
+</td>
+<td>
+<p>Text used for consecutive numbering of questions.</p>
+<p>The wildcard for the number is '%s'</p>
+</td>
+<td>
+<p>Question %s</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Instruction for displaying images if image protection is activated</p>
+</td>
+<td>
+<p>With image protection activated,<br>participants will see only the silhouette and outline of the projected image in the questionnaire, plus this instruction for display.</p>
+</td>
+<td>
+<p>To view the image, hold down the space bar, move your mouse pointer over the image, and click.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="messages-for-mandatory-questions-and-dac" class="wysiwyg-text-align-justify"><strong>Messages for mandatory questions and DAC</strong></h2>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default">
+<colgroup> <col style="width: 247.0px;"> <col style="width: 281.0px;"> <col style="width: 232.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Message</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>English default message</strong></p>
+</th>
+</tr>
+<tr>
+<td class="wysiwyg-text-align-justify">
+<p>Introductory text for incomplete questionnaire processing</p>
+</td>
+<td class="wysiwyg-text-align-justify">
+<p>Text displayed if a DAC is triggered. DAC = “Do Answer Check”: <em>Survey</em> checks whether the question flagged with the DAC was answered</p>
+</td>
+<td class="wysiwyg-text-align-justify">
+<p>Note: One or more questions are important for the rest of the questionnaire.</p>
+</td>
+</tr>
+<tr>
+<td class="wysiwyg-text-align-justify">
+<p>Introductory text for incomplete questions marked with a weak DAC.</p>
+</td>
+<td class="wysiwyg-text-align-justify">
+<p>Text displayed if an ignorable DAC is triggered.</p>
+</td>
+<td class="wysiwyg-text-align-justify">
+<p>%s Note: The question '%s' is critical for the further course of the questionnaire. I want to leave this question blank.</p>
+</td>
+</tr>
+<tr>
+<td class="wysiwyg-text-align-justify">
+<p>Instruction for incomplete questionnaire processing</p>
+</td>
+<td class="wysiwyg-text-align-justify">
+<p>Text displayed if a normal DAC is triggered for a question.</p>
+</td>
+<td class="wysiwyg-text-align-justify">
+<p>Therefore, please please fill in the following questions.</p>
+</td>
+</tr>
+<tr>
+<td class="wysiwyg-text-align-justify">
+<p>Error message for invalid answers to questions with exclusive answer categories</p>
+</td>
+<td class="wysiwyg-text-align-justify">
+<p> </p>
+</td>
+<td class="wysiwyg-text-align-justify">
+<p>You have given an ambiguous answer. Please correct your answer.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="messages-for-type-checks" class="wysiwyg-text-align-justify"><strong>Messages for type checks</strong></h2>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default">
+<colgroup> <col style="width: 256.0px;"> <col style="width: 263.0px;"> <col style="width: 241.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center">
+<p>Message</p>
+</th>

@@ -1,0 +1,82 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K" class="wysiwyg-text-align-justify">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article provides comprehensive guidance on adding participants to a project in EFS. It covers the manual creation of new participants, importing participants from a file, and importing participant codes.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">Adding participants is a crucial step in setting up a project. This guide explains various methods to add participants, including manual entry and bulk import, as well as special considerations for formatting and handling participant data.</p>
+<ul>
+<li><a href="#new-participant">New Participant</a></li>
+<li><a href="#importing-participants">Importing participants</a></li>
+<li><a href="#import-codes">Import Codes</a></li>
+</ul>
+<h2 id="new-participant" class="wysiwyg-text-align-justify">New Participant</h2>
+<p class="wysiwyg-text-align-justify">To manually create a new participant, please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Click the<strong> New participant</strong> split button to open the entry dialog.</p>
+</li>
+<li>
+<p>Enter the participant data. The following rules apply:</p>
+<ul>
+<li>
+<p>The “E-mail” field must always be completed. Use of the other fields is optional.</p>
+</li>
+<li>
+<p>In the “Password” field, the “Generate new password” checkbox is ticked by default. If you enter a password yourself, this will be used, and no automatic password will be generated.</p>
+</li>
+<li>
+<p>If you want to have the questionnaire checked by test persons with specific tester status prior to the field phase, then tick the checkbox “yes” in the field “Tester” for these test persons. For further information on the use of testers.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>If variable characteristics are missing, use the <strong>Edit variable</strong> icon to open the dialog  and add the new characteristics as required.</p>
+</li>
+<li>
+<p>After entering all required information, click on the <strong>Save</strong> button to save the data.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The new participant will appear in the list of participants.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="importing-participants" class="wysiwyg-text-align-justify">Importing participants</h2>
+<p class="wysiwyg-text-align-justify">Usually, you will not create the individual participants of your project manually but rather import the list of participants. In the following, the sequence of the import operation is first explained. After that, the structure of the import file is explained in detail.</p>
+<h3 id="downloading-the-import-template-to-import-participants" class="wysiwyg-text-align-justify">Downloading the import template to import participants</h3>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Switch to the <strong>Projects</strong> → {Selected project} → <strong>Participant administration</strong> menu.</p>
+</li>
+<li>
+<p>The dialog where the import takes place is opened by clicking on the <strong>New participant</strong> split button and selecting the <strong>Import participants</strong> option.</p>
+</li>
+<li>
+<p><em>EFS</em> provides a preformatted import template already containing all necessary columns. It can be downloaded by clicking on <strong>Download import template</strong>.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017191691666" alt="Importing participants.jpg"></p>
+<h3 id="filling-the-import-template-with-participant-data" class="wysiwyg-text-align-justify">Filling the import template with participant data</h3>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Open the template in a suitable program</p>
+</li>
+<li>
+<p>Enter the data</p>
+</li>
+<li>
+<p>Save the file in Excel or CSV</p>
+</li>
+</ul>
+<h3 id="matching-the-fields-of-the-import-file-with-the-database-fields" class="wysiwyg-text-align-justify">Matching the fields of the import file with the database fields</h3>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Again, open the import dialog by clicking on the Import participants button.</p>
+</li>
+<li>
+<p>Select the appropriate character set.</p>
+</li>
+<li>
+<p> Use<strong> Browse</strong> to select the import file on your computer.</p>
+</li>
+<li>
+<p>Verify that the checkbox in the field “First row includes column labels” is set appropriately. Normally, it should be activated.</p>
+</li>
+<li>
+<p>Verify that the checkbox in the field “Allow duplicate e-mail addresses” is set appropriately. Normally, it should be deactivated.</p>

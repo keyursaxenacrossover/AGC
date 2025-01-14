@@ -1,0 +1,82 @@
+ less friction due to coupling of unrelated components. This also involves more precise business decisions within one domain.</p></td>
+<td><p><strong><span style="color: rgb(54,179,126);">cost related</span></strong></p></td>
+</tr>
+<tr>
+<td data-highlight-colour="#abf5d1"><p>Integrate with other Tivian Systems</p></td>
+<td><p>There are other Tivian Systems like Dashbo that need to be integrated. This will always create a little effort on Tivian Access side.</p></td>
+<td><p><strong><span style="color: rgb(54,179,126);">feature</span></strong></p></td>
+</tr>
+<tr>
+<td data-highlight-colour="#b3bac5"><p>Add customization capabilities</p></td>
+<td><p>Okta offers very little ways to customize the Okta workflows. This leads either to PS having to use the Okta API directly or not being able to customize workflows for specific services. Creating an adapter that is capable of handling a decent amount of customization would make the product more stable.</p></td>
+<td>
+<p><strong><span style="color: rgb(54,179,126);">quality related</span></strong></p>
+<p></p>
+</td>
+</tr>
+<tr>
+<td data-highlight-colour="#b3bac5"><p>Add integratable self service</p></td>
+<td><p>Self service might be relevant for Essentials and also for Portals and the overall self-management topic. Okta does not offer a good way of integrating self service into our products.</p></td>
+<td>
+<p><strong><span style="color: rgb(54,179,126);">feature</span></strong></p>
+<p></p>
+</td>
+</tr>
+<tr>
+<td data-highlight-colour="#abf5d1"><p>Cleanup</p></td>
+<td><p>There are a lot of open issues that have to be cleaned up.</p></td>
+<td>
+<p><strong><span style="color: rgb(54,179,126);">quality related</span></strong></p>
+<p>see our board</p>
+</td>
+</tr>
+<tr>
+<td data-highlight-colour="#abf5d1"><p>Reduce maintenance cost</p></td>
+<td><p>There is an exhaustive list of documentation around setting up tenants for Tivian Access. Management is even done in Okta itself. It is a very time consuming task to setup a tenant and the respective applications for Tivian Access.</p></td>
+<td>
+<p><strong><span style="color: rgb(54,179,126);">cost related / quality related</span></strong></p>
+<p>less effort to maintain and setup → less cost</p>
+</td>
+</tr>
+<tr>
+<td data-highlight-colour="#abf5d1"><p>Increase quality</p></td>
+<td><p>The above issue also leads to errors in configuration because Okta is a generic tool and not adapted to our specific use case. Creating a centralized management tool for Tivian Access leads to higher quality and less maintenance and setup cost.</p></td>
+<td>
+<p><strong><span style="color: rgb(54,179,126);">cost related / quality related</span></strong></p>
+<p>less error → better quality, less cost</p>
+</td>
+</tr>
+<tr>
+<td data-highlight-colour="#abf5d1"><p>Incorporate Feedback directly</p></td>
+<td><p>From time to time we will ask our clients for feedback. This will lead to new features or improvements.</p></td>
+<td>
+<p><strong><span style="color: rgb(54,179,126);">quality related</span></strong></p>
+<p>happy customers</p>
+</td>
+</tr>
+<tr>
+<td data-highlight-colour="#b3bac5"><p>Automation</p></td>
+<td><p>Tivian Access and other Tivian products should communicate in an automated way so that errors could be prevented.</p></td>
+<td>
+<p><strong><span style="color: rgb(54,179,126);">quality related</span></strong></p>
+<p>reduce cost by preventing errors</p>
+</td>
+</tr>
+<tr>
+<td data-highlight-colour="#b3bac5"><p>Adapt to future changes in a cost efficient way</p></td>
+<td><p>Okta will evolve and change. Currently every Tivian product has to be changed when Okta changes are introduced. That is not cost efficient. Having a single adapter to talk to Okta leads to a better maintainable product.</p></td>
+<td>
+<p><strong><span style="color: rgb(54,179,126);">cost related</span></strong></p>
+<p>reduce cost when Okta changes</p>
+</td>
+</tr>
+<tr>
+<td data-highlight-colour="#abf5d1"><p>Domain expert teams</p></td>
+<td><p>Currently engineering cares for all domain specific topics at once. With a new architecture and long term teams on one domain this knowledge could be consolidated. This increases the quality of the respective solution.</p></td>
+<td>
+<p><strong><span style="color: rgb(54,179,126);">quality related</span></strong></p>
+<p>Enhance quality by building domain experts in the engineering team.</p>
+</td>
+</tr>
+<tr>
+<td data-highlight-colour="#b3bac5"><p>Scalable business</p></td

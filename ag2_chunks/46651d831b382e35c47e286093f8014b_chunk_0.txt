@@ -1,0 +1,69 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K" class="wysiwyg-text-align-justify">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article provides comprehensive information about the Media Library feature in EFS, including its various components, functionalities, and best practices for managing media files within projects and across installations.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">The Media Library in EFS consists of three main components: Current Project, Common Library, and Tivian Library. Each component serves different purposes and has specific features to help users manage and utilize media files effectively in their projects.</p>
+<ul class="wysiwyg-text-align-justify">
+<li><a href="#current-project">Current Project</a></li>
+<li><a href="#common-library">Common Library</a></li>
+<li><a href="#tivian-library">Tivian Library</a></li>
+</ul>
+<h2 id="current-project" class="wysiwyg-text-align-justify">Current Project</h2>
+<p class="wysiwyg-text-align-justify">The project-related media library on the <strong>Current Project</strong> tab offers the following options:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>You can use not only images but SVG graphics, flash, and video formats e.g. RealVideo or Quicktime. To access a detailed list of the permitted file types, click on the <strong>Question mark</strong> icon in the <strong>Upload file</strong> dialog.</p>
+</li>
+<li>
+<p>The uploaded files are stored in the project directory in the directory /images.</p>
+</li>
+<li>
+<p>Directories can be created within /images to improve the overview.</p>
+</li>
+<li>
+<p>The maximum file size is installation-specific. If you exceed the threshold value, a note will be displayed.</p>
+</li>
+<li>
+<p>You can upload zip files and unpack them directly if you wish. Thus multimedia files that exceed the maximum file size can be uploaded if it is possible to compress them to the allowed size. The upload of a high number of files or the creation of a directory with sub-directories is made easier by compression, too: You can sort the files as required in a parent directory and subdirectories, compress these, and then, in one operation, upload them to the server and have them unpacked.</p>
+</li>
+</ul>
+<h3 id="uploading-files" class="wysiwyg-text-align-justify">Uploading files</h3>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Click on the<strong> Upload file</strong> button.</p>
+</li>
+<li>
+<p>Locate the file on your hard disk using the <strong>Browse</strong> function.</p>
+</li>
+<li>
+<p>If you are uploading a zip file, you can have the system unpack it and automatically create subdirectories in one operation. To do so, tick the “Unpack ZIP file” checkbox.</p>
+</li>
+<li>
+<p>You have the option of defining a wildcard. You can use the characters a-z, A-Z and 0-9. The wildcards must be enclosed in two hash signs (#).</p>
+</li>
+<li>
+<p>If you want to overwrite files in your media library with an updated version, simply activate the new “Overwrite file(s)” checkbox during upload.</p>
+</li>
+<li>
+<p>Confirm by clicking on <strong>Upload</strong>.</p>
+</li>
+</ul>
+<h3 id="viewing-and-editing-the-uploaded-files" class="wysiwyg-text-align-justify">Viewing and Editing the Uploaded Files</h3>
+<p class="wysiwyg-text-align-justify">If you search for a specific file, you may either skip through the directories or use the search form. It offers a full-text search for the file name, which means it is enough to enter a part of the name to find a file.</p>
+<p class="wysiwyg-text-align-justify">For each file the following information is listed:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Thumbnails for the files that contain images: Clicking on a thumbnail allows you to open a detailed view of the respective image. This contains the image, height, and width information, and the appropriate img tags with absolute and relative paths.</p>
+</li>
+<li>
+<p>Description (filled automatically with the file name)</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The height and width of the images and an alternative text are defined when inserting the images into the <em>Multimedia</em> question type.</p>
+<h3 id="editing-individual-files" class="wysiwyg-text-align-justify">Editing Individual Files</h3>
+<p class="wysiwyg-text-align-justify">If you scroll over a row or activate a checkbox, the following action icons are displayed:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Info</strong>: In a pop-up window, you can find the img tag that can be used to incorporate a file into the questionnaire, with both absolute and relative paths. Furthermore, the absolute path is displayed separately for copy and paste.</p>
+</li>
+<li>
+<p><

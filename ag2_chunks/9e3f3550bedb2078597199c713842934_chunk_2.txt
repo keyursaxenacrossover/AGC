@@ -1,0 +1,51 @@
+="1" data-colwidth="225">
+<p data-renderer-start-pos="687"><strong data-renderer-mark="true">EFS</strong></p>
+</th>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="533">
+<p data-renderer-start-pos="694">A flexible, powerful feedback tool that allows file uploads in multiple places. Is uses the malware scanner service.</p>
+</td>
+</tr>
+<tr>
+<th style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; background-color: var(--ds-background-accent-gray-subtlest,#f4f5f7);" colspan="1" rowspan="1" data-colwidth="225">
+<p data-renderer-start-pos="816"><strong data-renderer-mark="true">Unity</strong></p>
+</th>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="533">
+<p data-renderer-start-pos="825">A wrapper around CXI and DXI that allows file uploads and uses the scanner.</p>
+</td>
+</tr>
+<tr>
+<th style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; background-color: var(--ds-background-accent-gray-subtlest,#f4f5f7);" colspan="1" rowspan="1" data-colwidth="225">
+<p data-renderer-start-pos="906"><strong data-renderer-mark="true">AI Proxy</strong></p>
+</th>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="533">
+<p data-renderer-start-pos="918">An AI based solution that might enable file uploads and therefore might use the malware scanner in future.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="implementation">Implementation Details</h2>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20346625530642" alt="Malware Scanning - Building Blocks.png"></p>
+<h3 id="h_01J3JPGMA60ZGVMF9GR66ZZC3M">Malware Scanner (ClamAV Container)</h3>
+<p>The Malware Scanner, powered by the ClamAV container, is the main tool for checking uploaded files for harmful content. It uses the ClamAV open-source antivirus engine for signature-based scanning, heuristic analysis, and malware detection. The container is set up with the ClamAV image (repository: clamav/clamav) obtained from the specified container registry.</p>
+<h3 id="h_01J3JPGMA69TEZPE2WZF57Z4P7">REST API (ClamAV REST Container)</h3>
+<p>The REST API, built with the ClamAV REST container, acts as a communication interface for interacting with the ClamAV scanner and connecting it with other system parts and external services. The ClamAV REST container provides HTTP endpoints for uploading files, starting scanning tasks, getting scanning results, and managing scanning settings. It is configured with the newest version of the ClamAV REST image (repository: <a href="http://ghcr.io/maltekrupa/clamav-rest" target="_blank" rel="noopener noreferrer">GitHub</a>) obtained from the specified container registry.</p>
+<p>This container acts as a reverse proxy, sending uploaded files to the ClamAV component for scanning, and then sending back a success or failure message to the requester.</p>
+<h3 id="h_01J3JPGMA6DHWMNA34YT9MJPMG">Cronjob (Freshclam Update)</h3>
+<p>The Cronjob, named cron-clamfresh, is a scheduled task responsible for regularly updating the virus signature database used by the ClamAV scanner. This task is set up in the Helm chart with a defined schedule (e.g., daily, weekly) to fetch updates from the freshclam server.</p>
+<p>The updates are kept current in the ClamAV container using a shared volume.</p>
+<p>This cronjob is linked with the ClamAV container and makes use of Kubernetes CronJob resources to automate the updating process based on the specified schedule.</p>
+<h3 id="h_01J3FZNNAR1QC84KTDW1BVDD74">Scanning Process</h3>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20346625532434" width="301" height="262"></p>
+<ol>
+<li>User uploads a file through the software interface</li>
+<li>File is temporarily stored on NFS</li>
+<li>REST API receives the file and initiates the scanning task</li>
+<li>ClamAV container performs the scan</li>
+<li>Scan results are returned to the REST API</li>
+<li>Application is informed of the scanning outcome</li>
+</ol>
+<h3 id="h_01J3FZNNARREY4SG8NW72626J1">Updating Malware Signatures</h3>
+<p><!--StartFragment --></p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20349832706450" width="357" height="168"><img> <!--EndFragment --></p>
+<ol>
+<li>A cronjob downloads the latest definitions from the

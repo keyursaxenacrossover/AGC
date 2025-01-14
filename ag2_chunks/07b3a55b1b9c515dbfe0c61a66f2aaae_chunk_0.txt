@@ -1,0 +1,37 @@
+<h1 id="h_01J5X456Y2VZEZAD12C0HK02BE">Table of Contents</h1>
+<ul>
+<li>
+<a href="#header-1">Overview</a>
+<ul>
+<li><a href="#header-3">Examples for user flows with Active/Inactive Sessions</a></li>
+<li><a href="#header-4">Logout</a></li>
+<li><a href="#01J5X4BYKHC2NFJFY47QZRD0A0">Default Session Times</a></li>
+<li><a href="#01J5X4BYKJBQVSMPGXT5Y5M57H">Where are Sessions stored in our current Architecture?</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="header-1">Overview</h1>
+<p>Sessions should fulfill the following purpose: Once you authenticate you are remembered for x time and do not need to authenticate again.</p>
+<p>A <strong>session</strong> (in the case of a website) is always <strong>bound to the environment</strong> you are currently in. Normally this is defined by the user agent you are using (e.g: Google Chrome, Firefox). This means if you switch the context (e.g: login to chrome and then open a link in another browser), you will need to authenticate again</p>
+<p>In the context of IAM the following sessions exists and should be thought of:</p>
+<ul>
+<li>
+<p><strong>Tivian Identity Provider</strong> <strong>Session </strong>- This is the session which enables SSO for the products/apps of the Tivian Platform. Since the Identity Provider is the centralised place to authenticate, <strong>this session decides if you need to provide credentials again or not</strong>.</p>
+</li>
+<li>
+<p><strong>Application Session</strong> - The session an application creates for a user when the user authenticates for the application. <strong>This session decides if a user can do actions in the application</strong> or if another authentication at the Identity Provider is required.</p>
+</li>
+<li>
+<p><strong>External Identity Provider Session - </strong>The session which is created for employees in the “<strong>Intranet</strong>” of a client. This session is usually used to <strong>enable SSO for apps the employees use</strong>. In case of the federation with an external Identity Provider this session is also used to resolve the delegated authentication request. <strong>This session decides if you need to provide credentials again or not</strong></p>
+</li>
+</ul>
+<p>All of the above <strong>sessions</strong> can have <strong>different durations</strong>. A typical Identity Provider session is longer than an application session, because if an application session runs out and the Identity Provider session is still valid, no additional authentication is needed and the user experience is the same as with a longer application session.</p>
+<p>The difference of application session times actually should only affect security. In case there is a short session time the impact of stealing one session token is smaller than with a long session time. A longer application session means that it’s checked fewer times if the user is actually still logged in at the Identity Provider.</p>
+<h2 id="header-3">Examples for user flows with Active/Inactive Sessions</h2>
+<p>Authentication setup is always: App → Identity Provider → External Identity Provider</p>
+<h3 id="h_01J5X47WVRGRJJN8BGM55ZJQY2">1. User has no active Session</h3>
+<p>When the user tries to access the <strong>app</strong> but he has no active session (=unauthenticated) he will be redirected to the <strong>Identity Provider</strong>.<br>If the <strong>Identity Provider</strong> also has no session he will be further redirected to the <strong>external Identity Provider</strong>. If there is also no session, the user has to authenticate there and a session is created at the <strong>external Identity Provider</strong>. <br>After that the user will be authenticated at the <strong>Identity Provider</strong> using the <strong>external Identity Provider</strong> session, and a session is created for the user at the <strong>Identity Provider</strong>. Last but not least, the <strong>app</strong> will also create a session for the user.</p>
+<p><span style="color: #36b37e;">App → Identity Provider → External Identity Provider → Authenticate → </span><strong><span style="color: #36b37e;">+</span></strong><span style="color: #36b37e;">Session (External Identity Provider) → </span><strong><span style="color: #36b37e;">+</span></strong><span style="color: #36b37e;">Session (Identity Provider) → </span><strong><span style="color: #36b37e;">+</span></strong><span style="color: #36b37e;">Session (App)</span></p>
+<h3 id="h_01J5X48687HM87MDHRA5RYNC66">2. User has only external Identity Provider Session</h3>
+<p>The same as 1.), but when the <strong>Identity Provider</strong> send the user to the <strong>external Identity Provider</strong>, the user will not need to provide any credentials.</p>
+<p><span style="color: #36b37e;">App → Identity Provider → External Identity Provider → </span><strong><span style="color: #36b37e;">+</span></strong><

@@ -1,0 +1,65 @@
+<p><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p>This article provides comprehensive information about accessing and using the EFS (Enterprise Feedback Suite) application, including login procedures, browser support, security measures, and technical requirements.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>This guide covers the login process, password security, browser compatibility, and best practices for working with the EFS web application.</p>
+<ul>
+<li><a href="#login_process">The Login Process</a></li>
+<li><a href="#browser_support">Browser Support</a></li>
+<li><a href="#security_measures">Security Measures</a></li>
+<li><a href="#working_with_webapp">Working with a Web Application</a></li>
+<li><a href="#technical_requirements">Technical Requirements</a></li>
+</ul>
+<h2 id="login_process">The Login Process</h2>
+<p>The EFS administration area is accessed through a personal login, typically found at<strong> http://www.your-domain.com/www/</strong> or via a secure https connection for new installations. The admin area login is protected by the area_www ACL right. Access requires a valid account name and password with write permissions.</p>
+<h3 id="forgot_password">Forgot your Password</h3>
+<p>If you forget your password or account name, automated help functions are available on the login screen. Follow the on-screen instructions after clicking the special link provided.</p>
+<p>Staff accounts expire with the renting contract date and will be deactivated automatically. Contact support if your account has expired.</p>
+<p>EFS has brute force protection, deactivating accounts after six false password attempts for 30 minutes. Use the login screen help if you've forgotten your password.</p>
+<h3 id="security_question">Security Question</h3>
+<p>The password recovery function is protected by a security question, which is set up during the first login. Users can select from suggested questions or create their own, along with providing an answer. You can subsequently edit the security question in the System → Users → Own account menu → User data.</p>
+<h3 id="security_criteria">Security Criteria</h3>
+<p>Passwords must meet specific criteria, including:</p>
+<ul>
+<li>Minimum 6 characters</li>
+<li>Characters from at least two of these groups: a-z, A-Z, 0-9, other ASCII characters</li>
+<li>No spaces allowed</li>
+<li>Password expiration every 100 days</li>
+</ul>
+<p><strong>Note:</strong> Simultaneous use of an EFS Admin account is not possible. Simultaneous use of an EFS Admin account will invalidate the previous login.</p>
+<h2 id="browser_support">Browser Support</h2>
+<p>EFS supports the latest versions of Chrome, Firefox, Edge, and Safari (on macOS). Internet Explorer 11 support ended on October 1st, 2021. Mobile support is limited to basic survey functionality on iOS 11+ and Android 5.0+. The admin area doesn't support mobile devices/browsers. </p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017213479058"></p>
+<p> </p>
+<h2 id="security_measures">Security Measures</h2>
+<p>EFS employs several security measures:</p>
+<ul>
+<li>Ad-hoc anti-virus and malware scanning for all uploads</li>
+<li>CSRF tokens to protect against cross-site attacks</li>
+<li>Option for High Security Mode with stricter password requirements</li>
+</ul>
+<h2 id="working_with_webapp">Working with a Web Application</h2>
+<p>When using EFS, it's important to:</p>
+<ul>
+<li>Use menus, buttons, and links for navigation instead of browser buttons</li>
+<li>Save work explicitly using the 'Save' button (except for some newer features)</li>
+<li>Utilize keyboard shortcuts for efficient navigation</li>
+</ul>
+<h2 id="technical_requirements">Technical Requirements</h2>
+<p>To use the EFS admin area, ensure:</p>
+<ul>
+<li>Minimum screen resolution of 1280x800 from EFS 10.2</li>
+<li>JavaScript is enabled</li>
+<li>Cookies are accepted</li>
+<li>No proxy server or time limitations</li>
+</ul>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq_browser_versions">Which browser versions are supported?</h3>
+<p>EFS supports the latest versions of Chrome, Firefox, Edge, and Safari (on macOS). Mobile support is limited to iOS 11+ and Android 5.0+ for basic survey functionality.</p>
+<h3 id="faq_password_reset">How do I reset my password?</h3>
+<p>If you've forgotten your password, click the "Forgot your password" link on the login screen and follow the instructions. You'll need to answer your security question to reset your password.</p>
+<h3 id="faq_security_features">What security features does EFS have?</h3>
+<p>EFS includes features such as ad-hoc anti-virus scanning, CSRF protection, brute force protection, and optional High Security Mode for stricter password requirements.</p>
+<p> </p>
+<p> </p>
+</article>

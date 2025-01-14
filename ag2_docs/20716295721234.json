@@ -1,0 +1,30 @@
+{
+    "id": 20716295721234,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/20716295721234.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20716295721234-Evaluation",
+    "author_id": 369584192734,
+    "comments_disabled": false,
+    "draft": true,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20714711445138,
+    "created_at": "2024-08-12T18:56:07Z",
+    "updated_at": "2024-08-12T18:56:09Z",
+    "name": "Evaluation",
+    "title": "Evaluation",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-08-12T18:56:09Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075294,
+    "content_tag_ids": [],
+    "label_names": [],
+    "body": "<p><b>Original Confluence URL:</b> <a href=\"https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1022033949\">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1022033949</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>\n\n<h2>Table of Contents</h2>\n<ul class=\"toc\">\n<ul>\n<li><a href=\"#header-1\">Copied from Jira ticket</a></li>\n<ul>\n<li><a href=\"#header-3\">Todos</a></li>\n</ul>\n</ul>\n</ul><h1 id=\"header-1\">Copied from Jira ticket</h1><ul>\n<li>Configure Okta to work as OpenIDConnect provider for a local EFS installation and the TKA installation (sign-in, reset password, home realm discovery have to work)</li>\n<li>Configure Okta and our internal Questback AD to enable federation based on OpenIDConnect</li>\n<li>Adapt EFS settings to enable the connection to Okta</li>\n<li>Create customized user experiences (at least for sign-in)</li>\n<li>Configure Okta to enable MFA</li>\n<li>Migrate users</li>\n<li>Try to repeat the Okta configuration via API</li>\n<li>Create criteria to compare Azure B2C and Okta</li>\n<li>Create a comparison between Okta and Azure B2C</li>\n</ul><p><br></p><p><br></p><h2 id=\"header-3\">Todos</h2><ac:task-list>\n<ac:task>\n<ac:task-id>89</ac:task-id>\n<ac:task-status>complete</ac:task-status>\n<ac:task-body>Setup everything from scratch with the Management API <ac:parameter ac:name=\"colour\">Red</ac:parameter></ac:task-body>\n</ac:task>\n<ac:task>\n<ac:task-id>90</ac:task-id>\n<ac:task-status>complete</ac:task-status>\n<ac:task-body>List criteria for comparison witzh Azure (and add values)</ac:task-body>\n</ac:task>\n<ac:task>\n<ac:task-id>91</ac:task-id>\n<ac:task-status>complete</ac:task-status>\n<ac:task-body>Setup login for local users (users in Okta)</ac:task-body>\n</ac:task>\n<ac:task>\n<ac:task-id>92</ac:task-id>\n<ac:task-status>complete</ac:task-status>\n<ac:task-body>Setup AD + HRD</ac:task-body>\n</ac:task>\n<ac:task>\n<ac:task-id>93</ac:task-id>\n<ac:task-status>incomplete</ac:task-status>\n<ac:task-body>Test customization for the login screen (CI) <ac:parameter ac:name=\"colour\">Red</ac:parameter></ac:task-body>\n</ac:task>\n<ac:task>\n<ac:task-id>94</ac:task-id>\n<ac:task-status>complete</ac:task-status>\n<ac:task-body>Check multi tenant capabilities</ac:task-body>\n</ac:task>\n<ac:task>\n<ac:task-id>95</ac:task-id>\n<ac:task-status>complete</ac:task-status>\n<ac:task-body>MFA </ac:task-body>\n</ac:task>\n<ac:task>\n<ac:task-id>96</ac:task-id>\n<ac:task-status>complete</ac:task-status>\n<ac:task-body>(Optional) Password reset flow</ac:task-body>\n</ac:task>\n<ac:task>\n<ac:task-id>97</ac:task-id>\n<ac:task-status>complete</ac:task-status>\n<ac:task-body>(Optional) Migration of users</ac:task-body>\n</ac:task>\n<ac:task>\n<ac:task-id>98</ac:task-id>\n<ac:task-status>complete</ac:task-status>\n<ac:task-body>What features does Okta offer that Azure does not offer</ac:task-body>\n</ac:task>\n<ac:task>\n<ac:task-id>99</ac:task-id>\n<ac:task-status>incomplete</ac:task-status>\n<ac:task-body>(Optional) Custom flows</ac:task-body>\n</ac:task>\n<ac:task>\n<ac:task-id>100</ac:task-id>\n<ac:task-status>complete</ac:task-status>\n<ac:task-body>Debuggin and troubleshooting</ac:task-body>\n</ac:task>\n</ac:task-list><p><br></p>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

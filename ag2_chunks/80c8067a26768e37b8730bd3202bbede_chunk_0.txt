@@ -1,0 +1,23 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1240072205">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1240072205</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">Steps:</a></li>
+<ul>
+<li><a href="#header-3">Step 1: Use a JLP Domain to trigger Federation</a></li>
+<ul>
+<li><a href="#header-5">Step 2: Check Auth Request and Auth Response</a></li>
+<li><a href="#header-6">Step 3: Solve Signature Issue</a></li>
+</ul>
+</ul>
+</ul>
+</ul><p>At the moment of writing this JLP was using SAML and the communication with them was in a starting phase.</p><h1 id="header-1">Steps:</h1><ac:parameter ac:name="maxLevel">3</ac:parameter><ac:parameter ac:name="minLevel">3</ac:parameter><h2 id="header-3"><strong>Step 1: Use a JLP Domain to trigger Federation</strong></h2><p>Login at our Tivian Okta Account with an JLP email-address (or something that ends with a domain that is routet to JLP’s Identity Provider)</p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716908627858" alt="john_lewis_1.PNG"><h3 id="header-5"><strong>Step 2: Check Auth Request and Auth Response</strong></h3><p>When login in a “General Error” Page from Okta is shown. This occurs due to an error in the communication with JLP’s Identity provider. When looking at the Auth Request to JLP everything looks fine in the first place.</p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716934262418" alt="john_lewis_2.PNG"><p></p><p><strong>Check the Form Data that is sent:</strong></p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716934191762" alt="john_lewis_3.PNG"><p><strong>Our Auth Request (decoded):</strong></p><pre><code class="language-xml">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;saml2p:AuthnRequest AssertionConsumerServiceURL="https://access.questback.com/sso/saml2/0oa237f0jyRG4sZno416" Destination="https://jlp-logon-ppd.johnlewis.co.uk/idp/SSO.saml2" ForceAuthn="false" ID="id26824557734261538952968480" IssueInstant="2020-02-20T08:13:18.941Z" Version="2.0"
+    xmlns:saml2p="urn:oasis:names:tc:SAML:2.0:protocol"&gt;
+    &lt;saml2:Issuer xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"&gt;https://www.okta.com/saml2/service-provider/sptzmqzmfsnentqkwnvx&lt;/saml2:Issuer&gt;
+    &lt;saml2p:NameIDPolicy Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified"/&gt;
+&lt;/saml2p:AuthnRequest&gt;</code></pre><p></p><p><strong>The error can be seen in JLP’s Auth Response.</strong></p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716934139410" alt="john_lewis_7.PNG"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716900515346" alt="john_lewis_5.PNG"><p></p><p>The important part here is the field <code>&lt;samlp:StatusMessage&gt;Signature required&lt;/samlp:StatusMessage&gt;</code> (see below)</p><p>This field gives the indicator that the Auth Request should have a signature.</p><p><strong>JLP’s Auth Response (decoded):</strong></p><pre><code class="language-xml">&lt;samlp:Response Version="2.0" ID="OzgLEiV8a4ZAAGSAu.D3SADEKD." IssueInstant="2020-02-20T08:13:19.464Z" InResponseTo="id26824557734261538952968480" Destination="https://access.questback.com/sso/saml2/0oa237f0jyRG4sZno416" 
+    xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol"&gt;
+    &lt;saml:Issuer xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"&gt;johnlewis:idp:ppd&lt;/saml:Issuer&gt;
+    &lt;ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#"&gt;

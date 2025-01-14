@@ -1,0 +1,91 @@
+ EFS Panel helps manage such cases efficiently.</p>
+<p><strong>Functional Scope:</strong></p>
+<ul>
+<li>
+<strong>Automatic Check:</strong> The duplicates check runs automatically at hourly intervals.</li>
+<li>
+<strong>Activation:</strong> You can choose to activate the duplicates check.</li>
+<li>
+<strong>Flexible Algorithm:</strong> Customize the checking algorithm to include specific participant and master data.</li>
+<li>
+<strong>Global Configuration:</strong> The duplicates check configuration applies to the entire panel, not to individual websites or language versions.</li>
+<li>
+<strong>Protected Configuration:</strong> Requires "panel_dupcheck" rights for configuration changes.</li>
+<li>
+<strong>Reset Status:</strong> The action “Reset duplicates status” in Panelists administration and Candidates menus allows resetting the check status if needed.</li>
+<li>
+<strong>Editable Status:</strong> The duplicates status of panelists can be edited in their detail views.</li>
+</ul>
+<p><strong>Function in Detail:</strong></p>
+<ol>
+<li>
+<p><strong>Incremental Check:</strong></p>
+<ul>
+<li>Only panelists with “not checked” status are reviewed.</li>
+<li>Depending on the results, they are assigned “not checked” or “duplicate” status.</li>
+<li>Use the <strong>Reset duplicates status</strong> button to reset the status of all or selected panelists.</li>
+</ul>
+</li>
+<li>
+<p><strong>Reference Sets:</strong></p>
+<ul>
+<li>
+<strong>Set 1:</strong> A subset of panelists with “not checked” status (limited to 5,000 for performance reasons).</li>
+<li>
+<strong>Set 2:</strong> The entire panel except deleted panelists.</li>
+</ul>
+</li>
+<li>
+<p><strong>Checking Intervals:</strong></p>
+<ul>
+<li>The check runs asynchronously every hour, initiating if panelists with “not checked” status exist.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Activating the Duplicates Check:</strong></p>
+<ul>
+<li>Initially deactivated in new and migrated panels.</li>
+<li>To activate, go to <strong>People → Panelists administration → Duplicates check</strong>.</li>
+<li>Ensure data set and checking algorithm are configured correctly.</li>
+<li>Tick the “Activate regular duplicates check” checkbox and confirm with <strong>Save settings</strong>.</li>
+</ul>
+<p><strong>Configuring the Duplicates Check:</strong></p>
+<ol>
+<li>
+<strong>Data Set:</strong>
+<ul>
+<li>Specify criteria for panelists to be checked against the entire set.</li>
+<li>Panelists must meet specified criteria and have “not checked” status.</li>
+</ul>
+</li>
+</ol>
+<p>The possible criteria are listed in the following table.</p>
+<div class="table-wrap">
+<div class="table-wrap">
+<table class="relative-table tablesorter tablesorter-default wrapped confluenceTable" style="margin: 0px auto; border-collapse: collapse; width: 654px; height: 498px;">
+<colgroup> <col style="width: 0px;"> </colgroup> <colgroup> <col style="width: 0px;"> </colgroup>
+<tbody>
+<tr class="tablesorter-headerRow">
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; background-color: var(--ds-background-accent-gray-subtlest,#f0f0f0); padding: 7px 10px !important; width: 278.281px;" scope="col">
+<div class="tablesorter-header-inner">Field</div>
+</th>
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; background-color: var(--ds-background-accent-gray-subtlest,#f0f0f0); width: 350.399px;" scope="col">
+<div class="tablesorter-header-inner">Meaning</div>
+</th>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 278.281px;">
+<p>Which panel statuses should be included in the check?</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 342.378px;">
+<p>You can choose whether to check only candidates (“Admitted temporarily” status) or also panelists with other statuses.</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 278.281px;">Mode of entry.</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 342.378px;">
+<p>Specific modes of entry, such as manual input by the administrator or automatic generation via project tests, can be excluded from the check.</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds

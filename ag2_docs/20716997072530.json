@@ -1,0 +1,30 @@
+{
+    "id": 20716997072530,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/20716997072530.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20716997072530-Azure-AD",
+    "author_id": 369584192734,
+    "comments_disabled": false,
+    "draft": true,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20714711445138,
+    "created_at": "2024-08-12T20:03:26Z",
+    "updated_at": "2024-08-12T20:03:38Z",
+    "name": "Azure AD",
+    "title": "Azure AD",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-08-12T20:03:38Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075294,
+    "content_tag_ids": [],
+    "label_names": [],
+    "body": "<p><b>Original Confluence URL:</b> <a href=\"https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1703280877\">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1703280877</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>\n\n<p>If the client is using Azure AD with OpenID Connect the following information are sufficient ( from the information listed in<ac:link ac:card-appearance=\"inline\"><ri:page ri:content-title=\"OIDC Federation\" ri:version-at-save=\"2\"></ri:page><ac:link-body>OIDC Federation</ac:link-body></ac:link>) :</p><ul>\n<li>\n<p><strong>Client ID</strong> and <strong>Client Secret</strong> ( created when following the instructions from: <ac:link ac:card-appearance=\"inline\"><ri:page ri:content-title=\"Azure AD Federation - Configuration\" ri:version-at-save=\"2\"></ri:page><ac:link-body>Azure AD Federation - Configuration</ac:link-body></ac:link> (usually sent as a PDF to the client in the first email)</p>\n<ul>\n<li><p>The client ID can also be later found in the “App registrations” in Azure (example below)</p></li>\n<li><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20717020190738\" alt=\"image-20200721-154158.png\"></li>\n</ul>\n</li>\n<li>\n<p><strong>Microsoft Tenant ID</strong></p>\n<ul>\n<li><p>Can be found in the Azure Portal / Azure AD (example below)</p></li>\n<li><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20717005246994\" alt=\"image-20200721-154038.png\"></li>\n<li><p>All information which are usually expected in the discovery document can be build using the tenant id and generic microsoft urls. E.g: the jwks_uri is build using the following template: <a href=\"https://login.microsoftonline.com/dc79dd1a-883e-438c-b396-dc9fb7f66bf1/discovery/v2.0/keys\">https://login.microsoftonline.com/{tenantId}/discovery/v2.0/keys</a></p></li>\n</ul>\n</li>\n</ul><p></p>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

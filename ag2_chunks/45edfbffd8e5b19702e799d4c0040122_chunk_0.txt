@@ -1,0 +1,25 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1082130473">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1082130473</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">Settings on Okta</a></li>
+<ul>
+<li><a href="#header-3">I need to setup a tenant in Okta, how do I do it ?</a></li>
+<ul>
+<li><a href="#header-5">Where can I find documentation about the Okta account ?</a></li>
+<ul>
+<li><a href="#header-7">The documentation does not cover my problem where can I find more ?</a></li>
+<li><a href="#header-8">I have to create resources in Okta - is there a naming convention?</a></li>
+</ul>
+<li><a href="#header-10">Settings on EFS Admin and Portals</a></li>
+<ul>
+<li><a href="#header-12">What settings can be configure in EFS ?</a></li>
+<li><a href="#header-13">How can I configure the module IdentityAccessManager</a></li>
+<li><a href="#header-14">How can I deactivate the module IdentityAccessManager</a></li>
+<li><a href="#header-15">What Browsers and operating systems are supported by Okta?</a></li>
+</ul>
+</ul>
+</ul>
+</ul>
+</ul><ac:parameter ac:name="hidden">true</ac:parameter><ac:rich-text-body><ac:parameter ac:name="maxLevel">4</ac:parameter><ac:parameter ac:name="minLevel">3</ac:parameter><ac:parameter ac:name="indent">15px</ac:parameter><ac:parameter ac:name="absoluteUrl">true</ac:parameter></ac:rich-text-body><h1 id="header-1"><strong>Settings on Okta</strong></h1><h2 id="header-3"><strong>I need to setup a tenant in Okta, how do I do it ?</strong></h2><p>Start looking here: <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Okta tenant setup" ri:version-at-save="11"></ri:page><ac:link-body>Okta tenant setup</ac:link-body></ac:link>. This should give you a good starting point for whats steps are required / possible for a tenant setup in Okta.</p><h3 id="header-5"><strong>Where can I find documentation about the Okta account ?</strong></h3><p>Documentation about the setup of the Okta account: <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Global Okta Setup" ri:version-at-save="14"></ri:page><ac:link-body>Global Okta Setup</ac:link-body></ac:link> <br>Documentation on how to setup tenants in Okta: <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Okta tenant setup" ri:version-at-save="11"></ri:page><ac:link-body>Okta tenant setup</ac:link-body></ac:link> <br>Additional resources (which were documented during development) can be found here: <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Okta" ri:version-at-save="1"></ri:page><ac:link-body>Okta</ac:link-body></ac:link> </p><h4 id="header-7"><strong>The documentation does not cover my problem where can I find more ?</strong></h4><p>Okta offers a developer documentation here <a href="https://developer.okta.com/docs/">https://developer.okta.com/docs/</a>.<br>The reference documentation for the APIs also includes Postman collections which can be used to simply make requests against Okta (e.g: <a href="https://developer.okta.com/docs/reference/api/users/#getting-started">Okta API Reference: Users</a>)</p><p>In case no documentation helped, try yo reach out to the <a href="https://discoverxi-supportdesk.zendesk.com/wiki/people/team/6b96c6d8-d2c6-4808-8d17-c77b837d20d2?ref=confluence&amp;src=fabric">IAM</a> team, if this is not possible contact the <a href="https://support.okta.com/help/s/">Okta Support</a></p><h4 id="header-8"><strong><ac:inline-comment-marker ac:ref="dc3e45c8-4153-4d8e-acd2-68be5548c2e2">I have to create resources in Okta - is there a naming convention?</ac:inline-comment-marker></strong></h4><p><ac:inline-comment-marker ac:ref="dc3e45c8-4153-4d8e-acd2-68be5548c2e2">Yes. You have to strictly follow the naming convention if anything is modified in Okta manually.</ac:inline-comment-marker><br><ac:inline-comment-marker ac:ref="dc3e45c8-

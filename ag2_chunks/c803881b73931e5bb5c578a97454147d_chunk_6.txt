@@ -1,0 +1,31 @@
+ for how long the account will be deactivated and how many failed attempts will be allowed.</p>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><strong>Adding the variables</strong></p>
+<ol class="ak-ol wysiwyg-text-align-justify">
+<li>
+<p>Go to <strong>Website</strong> → <strong>Language version</strong> → <strong>Standard content</strong> → <strong>Forms</strong>, and select <strong>Registration form. </strong>Click on<strong> Add variable </strong>and select the variable<strong> u_sec_quest: Security question </strong>from the drop-down menu<strong> Variable. </strong>Next, enter “<em>!matches('/^[12]$/',request.u_sec_quest)</em>” under <strong>Validation</strong> → <strong>Check expression </strong>and under <strong>Validation</strong> → <strong>Error message </strong>enter the error message you want to be displayed, if the panelist doesn’t enter a security question when registering, e.g. “Please enter a security question”. Click on <strong>Add variable.</strong></p>
+</li>
+<li>
+<p>Repeat the steps under 3 for the variable <strong>u_sec_quest_answer: Security question answer.</strong> Enter “<em>!matches('/^[12]$/',request.u_sec_quest_answer)</em>” under <strong>Validation</strong> → <strong>Check expression</strong>, and under <strong>Validation</strong> → <strong>Error message</strong> enter the appropriate error message, e.g. “Please enter an answer to the security question”.</p>
+</li>
+<li>
+<p>Go to <strong>Website</strong> → <strong>Language version</strong> → <strong>Standard content</strong> → <strong>Forms</strong>, and select the form <strong>Change account data</strong>. Add both variables – <strong>u_sec_quest: Security question</strong> and <strong>u_sec_quest_answer: Security question answer</strong> – following the steps detailed above.</p>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><em>Information: Please note that the variables <strong>u_sec_quest: Security question</strong> and <strong>u_sec_quest_answer: Security question answer </strong>have to be added in the forms<strong> Registration form </strong>and<strong> Change account data </strong>for ALL language versions on all panel websites, as the option can only be applied globally.</em></p>
+<p class="auto-cursor-target wysiwyg-text-align-justify"> </p>
+<h3 id="what-panelists-will-see" class="auto-cursor-target wysiwyg-text-align-justify"><strong>What panelists will see</strong></h3>
+<p class="wysiwyg-text-align-justify">What panelists will see after you have enabled the “Activate security question” option, depends on the according scenario:</p>
+<h4 id="scenario-1-panelists-who-have-not-yet-set-up-a-security-question" class="wysiwyg-text-align-justify"><strong>Scenario 1: Panelists, who have not yet set up a security question</strong></h4>
+<p class="wysiwyg-text-align-justify">If you have enabled the <strong>Activate security question </strong>option and panelists have not yet set up a security question in their account, the security question will be skipped, and the recovery mail will be dispatched instantly. Those panelists will see a clickable message saying “No security question set. Click here to set it” in the profile box, until they have set a security question and answer. Once they click on this link, they will be redirected to the form <strong>Change Account Data</strong>, where they can set the question and answer up.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h4 id="scenario-2-panelists-who-newly-register" class="wysiwyg-text-align-justify"><strong>Scenario 2: Panelists, who newly register</strong></h4>
+<p class="wysiwyg-text-align-justify">After you have enabled the <strong>Activate security question </strong>option, the registration form will include the two fields <strong>Security question</strong> and <strong>Security question answer</strong>. Those fields are mandatory, so all newly registered panelists will have to enter a question and an answer.</p>
+<p class="auto-cursor-target wysiwyg-text-align-justify"> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863" class="wysiwyg-text-align-justify">FAQ</h1>
+<h3 id="faq_tester_account" class="wysiwyg-text-align-justify">How do I set up a tester account?</h3>
+<p class="wysiwyg-text-align-justify">To set up a tester account, go to People → Panelists administration, click Add panelist, fill in the form choosing "Tester" status, and confirm by clicking Create account.</p>
+<h3 id="faq_csv_creation" class="wysiwyg-text-align-justify">What's the easiest way to create a CSV file?</h3>
+<p class="wysiwyg-text-align-justify">The easiest way to create a CSV file is using MS Excel. Create your table in Excel, then save it as a CSV file by selecting File → Save as and choosing the CSV format.</p>
+<h3 id="faq

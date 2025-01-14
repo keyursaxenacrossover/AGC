@@ -1,0 +1,33 @@
+>
+<td data-highlight-colour="#ffbdad"><p>E-Mail Verification</p></td>
+<td><p>X</p></td>
+<td>
+<p>Occurs during MFA via e-mail.</p>
+<p>E-mail MFA is an early access features and not part of our configuration.</p>
+</td>
+</tr>
+<tr>
+<td data-highlight-colour="#ffbdad"><p>E-Mail Challenge</p></td>
+<td><p>X</p></td>
+<td>
+<p>Occurs during MFA via e-mail.</p>
+<p>E-mail MFA is an early access features and not part of our configuration.</p>
+</td>
+</tr>
+</tbody>
+</table><p></p><h2 id="header-3">Redirecting after e-mail action:</h2><p>Some e-mails lead to an action a user has to fulfill on Okta side (activation, reset password). In that cases Okta does not know the context - especially the app - in which the user action happens. Therefore the redirect after the action will lead to a default page.</p><p>This can be changes using a “fromURI” field for the respective link in the e-mail as query parameter. It will have the value of the URL to the page that the user should be redirected after the action is done.</p><p><u>Example:</u></p><pre><code class="language-html">&lt;a href="{activationLink}?fromURI=http://google.com"&gt;Activate your account&lt;/a&gt;</code></pre>><p>X</p></td>
+<td>
+<p>Occurs during MFA via e-mail.</p>
+<p>E-mail MFA is an early access features and not part of our configuration.</p>
+</td>
+</tr>
+<tr>
+<td data-highlight-colour="#ffbdad"><p>E-Mail Challenge</p></td>
+<td><p>X</p></td>
+<td>
+<p>Occurs during MFA via e-mail.</p>
+<p>E-mail MFA is an early access features and not part of our configuration.</p>
+</td>
+</tr>
+</tbody>
+</table><p></p><h2 id="header-3">Redirecting after e-mail action:</h2><p>Some e-mails lead to an action a user has to fulfill on Okta side (activation, reset password). In that cases Okta does not know the context - especially the app - in which the user action happens. Therefore the redirect after the action will lead to a default page.</p><p>This can be changes using a “fromURI” field for the respective link in the e-mail as query parameter. It will have the value of the URL to the page that the user should be redirected after the action is done.</p><p><u>Example:</u></p><pre><code class="language-html">&lt;a href="{activationLink}?fromURI=http://google.com"&gt;Activate your account&lt;/a&gt;</code></pre>

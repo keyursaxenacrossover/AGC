@@ -1,0 +1,72 @@
+-pos="4720">#code#</p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="550">
+<p data-renderer-start-pos="4730">participant’s code. This wildcard can be used in the questionnaire, too.</p>
+</td>
+</tr>
+<tr>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="210">
+<p data-renderer-start-pos="4808">#url#</p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="550">
+<p data-renderer-start-pos="4817">server domain</p>
+</td>
+</tr>
+<tr>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="210">
+<p data-renderer-start-pos="4836">#code_complete#</p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="550">
+<p data-renderer-start-pos="4855">Participant’s code including survey URL.</p>
+<ul class="ak-ul" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="4899">The protocol and domain used in the URL depend on the settings in the “Base URL” field</p>
+</li>
+<li>
+<p data-renderer-start-pos="4989">When you create an HTML mail please note: In order to generate an active<br>labeled link in a new e-mail or mail template you must define the corresponding HTML tags. E.g. &lt;a href=“#code_complete#“&gt;Label&lt;/a&gt;.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="210">
+<p data-renderer-start-pos="5202">#code_complete_http#</p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="550">
+<p data-renderer-start-pos="5226">http survey URL including the code of the participants.</p>
+<ul class="ak-ul" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="5285">If you’re logged in with SSL, the #code_complete# wildcard will always be filled with the https URL. By using the #code_complete_http# wildcard, you can enforce use of the http URL.</p>
+</li>
+<li>
+<p data-renderer-start-pos="5470">This may be useful, for example, if for reasons of safety you work with SSL encryption in the admin area but want the survey to be conducted without encryption.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="210">
+<p data-renderer-start-pos="5638">#code_complete_https#</p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="550">
+<p data-renderer-start-pos="5663">https survey URL including the code of the participants.</p>
+<p data-renderer-start-pos="5721">If you’re logged in with https, the #code_complete# wildcard will always be filled with the http URL. By using the #code_complete_https# wildcard, you can enforce use of the https URL.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="sentinel-right"> </div>
+</div>
+</div>
+<h2 id="Wildcards-for-Panel-Projects" data-renderer-start-pos="5910"><strong data-renderer-mark="true">Wildcards for Panel Projects</strong></h2>
+<div class="pm-table-container with-shadow-observer" data-layout="default">
+<div class="cc-12efcmn"> </div>
+<div class="pm-table-wrapper">
+<table style="border-collapse: collapse; height: 1761px; width: 758px;" border="1" data-testid="renderer-table" data-number-column="false" data-table-width="760" data-layout="default">
+<colgroup> <col style="width: 216px;"> <col style="width: 542px;"> </colgroup>
+<tbody>
+<tr style="height: 47.1289px;">
+<th class="ak-renderer-tableHeader-sortable-column__wrapper" style="padding: 0px; text-align: left; vertical-align: top; background-color: #4bce97; height: 47px; width: 228.872px;" data-colwidth="217" data-cell-background="#57d9a3" aria-sort="none">
+<div class="ak-renderer-tableHeader-sortable-column">
+<div class="fabric-editor-block-mark fabric-editor-alignment cc-5inqjd" data-align="center">
+<p data-renderer-start-pos="5943

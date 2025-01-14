@@ -1,0 +1,58 @@
+</li>
+<li>
+<p>password</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Once you have retrieved the password, a new password is generated each time you click on the button <strong>Create account</strong>. The <em>MySight</em> software does not store the once-generated password, which is not a hindrance to the login process. You always use a new password to log on to the <em>Tableau</em> server if you don't like to store the password once issued elsewhere.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<div class="fabric-editor-block-mark sc-ixltIz dsUKKC wysiwyg-text-align-justify">
+<h1 id="create-project"><strong>Create Project</strong></h1>
+</div>
+<p class="wysiwyg-text-align-justify">When you click on the tile button <strong>+ New MySight project</strong>, a <em>MySight</em> project tile will appear. The tile contains the following information in addition to the two functions, copying and deleting the project:</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015311992850" alt="projektanlegen_EN_2.png"></p>
+<ol class="ak-ol wysiwyg-text-align-justify">
+<li>
+<p>Project status: published or unpublished</p>
+</li>
+<li>
+<p>Project name</p>
+</li>
+<li>
+<p>Creation date</p>
+</li>
+<li>
+<p>Creator</p>
+</li>
+<li>
+<p>last synchronization</p>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify">You enter a name for the <em>MySight</em> project on the tile. Then you confirm with the green check mark and discard with the red <strong>X</strong>. To access this <em>MySight</em> project, you click on the white area of the tile. Once the project has been published, the name can no longer be edited. However, if the published <em>MySight</em> project is withdrawn, the project name can also be edited again. </p>
+<p class="wysiwyg-text-align-justify"> </p>
+<div class="fabric-editor-block-mark sc-ixltIz dsUKKC wysiwyg-text-align-justify">
+<h1 id="configure-variables-and-groups"><strong>Configure variables and groups</strong></h1>
+</div>
+<p class="wysiwyg-text-align-justify">To configure your project, click on the appropriate tile.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015359105170" alt="projektseite_EN.png"></p>
+<p class="wysiwyg-text-align-justify">The project page opens, which gives you an <strong>Overview</strong> of your project:</p>
+<ul class="ak-ul wysiwyg-text-align-justify">
+<li>
+<p><strong>Workflow: </strong>Under this heading, you will be shown a breadcrumb path, which gives a recommendation for the next steps. By clicking on the icon, you can go to the sub-navigation field <strong>Settings</strong> to perform the next step. You start there under the tab <strong>General settings</strong>.</p>
+</li>
+<li>
+<p><strong>Data synchronization: </strong>Under this point, it is noted whether the <em>MySight</em> project has already been published and how long the synchronization with the <em>Tableau</em> server has been going on. The information on how long the last synchronization has taken place is given as soon as the <em>MySight</em> project has been released.</p>
+</li>
+<li>
+<p><strong>Data: </strong>This item specifies which EFS projects and which access groups have been selected.</p>
+</li>
+<li>
+<p><strong>Language</strong>: This item lists the survey languages created in the selected EFS projects. These will be sent to <em>Tableau</em> as soon as the <em>MySight</em> project is published. In this way, multilingual dashboards can be created.</p>
+</li>
+<li>
+<p><strong>Connection: </strong>Under this item, you will find the information about which database connections have been selected. Use the icon to go to the login dialog of the table server. Enter the user name and password, which you can view under Account settings.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The board lists both the items under which you can find out about the configurations made on the subnavigation Settings (data, language, and connection), as well as those that indicate the configuration progress (workflow) and synchronization status (data synchronization).</p>
+<p class="wysiwyg-text-align-justify">At the bottom of the board, there are the buttons <strong>Publish</strong> and <strong>Delete</strong>. As soon as you publish the project, the data is transferred to the <em>Tableau</em> server.</p>
+<div class="fabric-editor-block-mark sc-ixltIz dsUKKC wysiwyg-text-align-justify">
+<h2 id="settings"><strong>

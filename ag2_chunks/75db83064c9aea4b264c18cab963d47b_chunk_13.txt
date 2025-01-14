@@ -1,0 +1,33 @@
+title</em>, <em>height</em> and <em>heightUnit</em> are optional. The paramters <em>height</em> and <em>heightUnit</em> define the height of the iframe in the dialog.</p>
+<h3 id="simple-call" class="wysiwyg-text-align-justify">Simple call</h3>
+<p class="wysiwyg-text-align-justify">The simplest way to open a dialog is by calling one of the dialog methods, give a text/url and not worry about any events:</p>
+<pre><code class="language-text">Questback.portalsApi.trigger.openDialog('This is a simple dialog!');</code></pre>
+<h3 id="handle-dialog-close" class="wysiwyg-text-align-justify">Handle dialog close</h3>
+<p class="wysiwyg-text-align-justify">The dialog can either be closed or canceled/accepted and this event can be handled by implementing Promise methods, like this:</p>
+<pre><code class="language-text">Questback.portalsApi.trigger.openDialog('This is a simple dialog!')
+    .then(function() {
+        console.log("Dialog has been closed");
+    });</code></pre>
+<p class="wysiwyg-text-align-justify">The <em>confirm</em> dialogs make use of the <em>then</em> and <em>catch</em> methods:</p>
+<pre><code class="language-text">Questback.portalsApi.trigger.openConfirmDialog('This is a confirmation dialog!')
+    .then(function() {
+        console.log("Dialog closed by ok button");
+    })
+    .catch(function() {
+        console.log("Dialog closed by cancel button");
+    });</code></pre>
+<p class="wysiwyg-text-align-justify">The <em>catch</em> method does not indicate that an error happened, it just tells you about the way the dialog was closed. Both methods do not get any parameters. This means that no data from the dialogs iframe is transported back to the calling iframe.</p>
+<p class="wysiwyg-text-align-justify">If you want to transport data between the iframes or trigger actions in the other iframe make use of the PortalsApi's message bus functionality, documented under <code>Using the Portals message bus</code>.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863" class="wysiwyg-text-align-justify">FAQ</h1>
+<h3 id="faq-1" class="wysiwyg-text-align-justify">What is the Portals Extension Module?</h3>
+<p class="wysiwyg-text-align-justify">The Portals Extension Module is a feature that allows integration of third-party content and applications within Portals. It provides an iFrame for your content and an API for communication with Portals.</p>
+<h3 id="faq-2" class="wysiwyg-text-align-justify">How do I initialize the Portals API?</h3>
+<p class="wysiwyg-text-align-justify">You can initialize the Portals API by calling <code>Questback.portalsApi.initialize()</code> after your document has finished loading. This method returns a Promise that resolves when the initialization is complete.</p>
+<h3 id="faq-3" class="wysiwyg-text-align-justify">Can I communicate between different iFrames in Portals?</h3>
+<p class="wysiwyg-text-align-justify">Yes, you can use the Portals message bus to send and receive messages between different iFrames. Use <code>Questback.portalsApi.bus.send()</code> to send messages and <code>Questback.portalsApi.bus.subscribe()</code> to listen for messages.</p>
+<h3 id="faq-4" class="wysiwyg-text-align-justify">How can I apply Portals styles to my application?</h3>
+<p class="wysiwyg-text-align-justify">You can import Portals CSS stylesheets into your iframe. Retrieve the stylesheet paths using <code>Questback.portalsApi.query.portalInfo()</code> and then add them to your document's head using JavaScript.</p>
+<h3 id="faq-5" class="wysiwyg-text-align-justify">Can I open dialogs from my application in Portals?</h3>
+<p class="wysiwyg-text-align-justify">Yes, the Portals API provides methods to open dialogs outside the scope of your iframe. You can use methods like <code>Questback.portalsApi.trigger.openDialog()</code> or <code>Questback.portalsApi.trigger.openIframeDialog()</code> to open dialogs in Portals.</p>
+<p class="wysiwyg-text-align-justify"> </p>

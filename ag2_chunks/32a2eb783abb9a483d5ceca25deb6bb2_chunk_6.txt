@@ -1,0 +1,49 @@
+2 id="using-wildcards-to-output-data-dynamically" class="wysiwyg-text-align-justify"><strong>Using Wildcards to Output Data Dynamically</strong></h2>
+<p class="wysiwyg-text-align-justify">The wildcards introduced in the previous chapter are used to output <em>predefined text elements</em>. However, the EFS Panel also has wildcards that can be used to dynamically output the personal data of panelists, for example. These wildcards are primarily used in Smarty templates. You can, however, also use them in page modules, to further personalize and localize your panel pages:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Information that can be output includes
+<ul>
+<li>Localization information (e.g. date and time)</li>
+<li>Panel information (e.g. panel name)</li>
+<li>Participant data (only for logged-in panelists)</li>
+<li>Master data (only for logged-in panelists)</li>
+</ul>
+</li>
+<li>Which wildcards are available on a certain page depends on various criteria, such as the page modules used on the respective page or the login status of visitors. The following three tables contain wildcards that are available across the entire panel.</li>
+<li>Page module input fields that allow the use of Smarty wildcards are marked accordingly with “Smarty code”.</li>
+<li>If you have the necessary programming skills you can program conditions for wildcard output.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><em>Information: </em>Please note: This chapter merely explains how to complete simple tasks, such as inserting panelists’ names on panel pages, for example. For more complex programming tasks, please refer to Chapter "Working with Smarty Templates" and the Smarty documentation at <span class="nolink">http://www.smarty.net</span>.</p>
+<p class="wysiwyg-text-align-justify"><strong>Example</strong></p>
+<p class="wysiwyg-text-align-justify">In the standard, panelists are welcomed by their first name on the personal homepage entitled “My home”.</p>
+<p class="wysiwyg-text-align-justify">In the content module, which defines the upper part of the page, enter the following text:</p>
+<p class="wysiwyg-text-align-justify"><code>Hello {$respondent.u_firstname|escape:'html'}</code></p>
+<p class="wysiwyg-text-align-justify">The {$respondent.u_firstname} wildcard is dynamically filled with the first name of the respective panelist.</p>
+<p class="wysiwyg-text-align-justify">The escape:'html' command is a security measure: It ensures that any code in the u_firstname field of the user data table is not executed. <em>It is recommended to use this escape command on output for all data, or at least for all data entered by visitors and panelists.</em> This way you can prevent unauthorized persons from manipulating page output by entering JavaScript code, for example, or from obtaining data of other panelists.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015039354130" alt="platzhalter_vorname.png"></p>
+<p class="wysiwyg-text-align-justify"><strong>Syntax</strong></p>
+<p class="wysiwyg-text-align-justify">The following syntax is mainly used when entering dynamic wildcards in a module or a template:</p>
+<p class="wysiwyg-text-align-justify"><code>{$prefix.<strong>wildcard</strong>}</code></p>
+<p class="wysiwyg-text-align-justify">The prefix indicates the context from which the variable is taken. The “respondent” prefix in the example above is used for the data of currently logged-in panelists, for example, whereas “content” is used for the wildcards defined in the <strong>Wildcards</strong> menu.</p>
+<p class="wysiwyg-text-align-justify"><strong>Overview of wildcards available across the panel site</strong></p>
+<p class="wysiwyg-text-align-justify"><strong>1. Wildcards available across the panel site</strong></p>
+<table class="relative-table wrapped wysiwyg-text-align-justify" style="width: 85.1757%; margin-right: auto; margin-left: auto; height: 410px;" border="1">
+<colgroup> <col style="width: 26.2025%;"> </colgroup> <colgroup> <col style="width: 73.8537%;"> </colgroup>
+<tbody>
+<tr style="height: 31px;">
+<th class="wysiwyg-text-align-center" style="height: 31px;">Variable name</th>
+<th class="wysiwyg-text-align-center" style="height: 31px;">Meaning</th>
+</tr>
+<tr style="height: 64px;">
+<td style="height: 64px;">{$env.panel_name}</td>
+<td style="height: 64px;">
+<p>Name of the panel. This is defined in the <strong>Panel → Edit settings</strong> menu.</p>
+</td>
+</tr>
+<tr style="height: 120px;">
+<td style="height: 120px;">
+<p>{$env.locale.date_format}</p>
+<p>{$env.locale.date_format2}</p>
+</td>
+<td style="height: 120px;">
+<p>The current date. The formats for both wildcards are defined in the “Locale settings” section of the <strong

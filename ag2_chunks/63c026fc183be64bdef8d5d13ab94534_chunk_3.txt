@@ -1,0 +1,62 @@
+li>
+</ol>
+<p class="wysiwyg-text-align-justify"><strong>Important Information:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Changes to the currency or conversion factor do not affect the unit “bonus points” on which calculations are based, but they do affect displayed monetary values in the incentive management system.</li>
+<li>Changing the conversion factor in a live panel can alter the displayed monetary values for past payments.</li>
+<li>It is recommended to configure the currency and conversion factor before the panel goes online.</li>
+<li>Settings apply to the entire installation; different currencies or conversion factors for different websites or language versions are currently not possible.</li>
+</ul>
+<h2 id="allocating_incentives" class="wysiwyg-text-align-justify">Allocating Incentives to Panelists</h2>
+<p class="wysiwyg-text-align-justify">EFS Panel offers different options for allocating incentives:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>As a reward after completing registration.</li>
+<li>With bonus points for taking part in a survey.</li>
+<li>As a reward to panel groups.</li>
+<li>As a reward to any pools of panelists selected via panelists administration.</li>
+<li>As a reward to individual panelists.</li>
+</ul>
+<h3 id="h_01J3FFGFBQN5TS2WS8HCP9HMPW" class="wysiwyg-text-align-justify">Rewarding Registration with Bonus Points</h3>
+<p class="wysiwyg-text-align-justify"><strong>Providing default values for a language version</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>To pre-set bonus points for registration, go to Website → {Selected language version} → Configuration tab, and enter the amount in the “Number of bonus points granted on registration” field.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Allocating bonus points depending on way of entry</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>To set bonus points for a specific way of entry, go to People → Panel configuration → Ways of entry, open the desired way of entry, enter the number in the “Number of bonus points” field, and click Save.</li>
+<li>To revert to the default setting, delete the value, leave the field empty, and Save.</li>
+</ul>
+<h3 id="h_01J3FFGFBQ7Q85VQX5F06Z97T6" class="wysiwyg-text-align-justify">Rewarding Survey Participation with Bonus Points</h3>
+<p class="wysiwyg-text-align-justify"><strong>Options for rewarding participation:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<strong>System final page</strong>: Specify the bonus points amount in Project properties → Survey messages in the “Number of bonus points to allot when reaching standard final page” field.</li>
+<li>
+<strong>Intermediate final pages</strong>: Define amounts for each page in Project properties → Bonus points configuration.</li>
+<li>
+<strong>Bonus triggers</strong>: Reward specific events like reaching a questionnaire page, answering a question correctly, or other events.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">A panelist can receive multiple rewards in one survey (e.g., per trigger and on the final page).</p>
+<p class="wysiwyg-text-align-justify"><strong>Defining the reason for the allocation</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Set the reason in Project properties → Survey messages in the “Entry into the panelist’s bonus points history” field. Enter a general, meaningful text for all allocations.</li>
+<li>For multilingual projects, enter the translation in Language editor → Survey messages.</li>
+</ul>
+<h3 id="h_01J3FFGFBQ7XSQAMJN4KNN8NAH" class="wysiwyg-text-align-justify">Controlling Bonus Payments</h3>
+<p class="wysiwyg-text-align-justify"><strong>Initiating Payments</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Most panels allow panelists to initiate bonus payments through a personalized homepage, such as a shop or a form to exchange points for vouchers.</li>
+<li>Voucher sending can be handled within EFS and can be automated if necessary. Use People → Incentive management → Bonus system → Issuing of vouchers to check and issue requests.</li>
+<li>External payment types, like mailing bonuses, can be tracked using People → Incentive management → Bonus system → Payment list. This allows checking and tracking the payment requests and external progress.</li>
+<li>Payment requests can be checked before processing and inappropriate requests can be canceled.</li>
+<li>Approved payment requests can be downloaded for external processing.</li>
+<li>Register the completion of the external payment process within EFS once done.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Defining Bonuses Offered</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>In Website → Bonus management, define which bonuses are offered to panelists.</li>
+</ul>
+<div class="flex-shrink-0 flex flex-col relative items-end wysiwyg-text-align-justify">
+<div>
+<div class="pt-0">
+<div class="gizmo-bot-avatar flex h-8 w-8 items-center justify-center overflow

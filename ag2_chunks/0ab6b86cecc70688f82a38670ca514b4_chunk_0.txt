@@ -1,0 +1,196 @@
+<p> </p>
+<table class="" border="1" data-layout="default">
+<colgroup>
+<col style="width: 276.0px;">
+<col style="width: 483.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p><strong>route</strong></p>
+</th>
+<th>
+<p><strong>description</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p><code>/iam/admin/auth/login[/]</code></p>
+</td>
+<td>
+<ul>
+<li>
+<p>Will redirect to QuestbackAccess Login Screen, if config value <code>iam_idp_id</code> is not set</p>
+</li>
+<li>
+<p>Will redirect to Client IdP Login Screen, if config value <code>iam_idp_id</code> is set</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>/iam/admin/auth/login/noidp</code></p>
+</td>
+<td>
+<ul>
+<li>
+<p>Will directly redirect to QuestbackAccess Login</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>/iam/admin/auth/login/promptLogin</code></p>
+</td>
+<td>
+<ul>
+<li>
+<p>Route to prompt login on IdP</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>/iam/admin/auth/failure</code></p>
+</td>
+<td>
+<ul>
+<li>
+<p>Route to forward to, if there are any errors regarding to login</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>/iam/admin/auth/logout</code></p>
+</td>
+<td>
+<ul>
+<li>
+<p>Route for logout against QuestbackAccess</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>/iam/admin/auth/logoutSuccess</code></p>
+</td>
+<td>
+<ul>
+<li>
+<p>Route for logout success page</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>/iam/admin/auth/error</code></p>
+</td>
+<td>
+<ul>
+<li>
+<p>Route to show errors for authentication</p>
+</li>
+<li>
+<p>Redirects to EFS Admin login on access without errors</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>/api/iam/config/get/[:portalId]</code></p>
+</td>
+<td>
+<ul>
+<li>
+<p>Returns json formatted object with portal config for Identity Access Manager</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>/api/iam/auth/signin</code></p>
+</td>
+<td>
+<ul>
+<li>
+<p>Route to signin to a portal after login into QuestbackAccess/IdP</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>/iam/admin/auth/login/bypass</code></p>
+</td>
+<td>
+<ul>
+<li>
+<p>Route for bypass login for root users to EFS Admin.</p>
+</li>
+<li>
+<p><strong><span style="color: #ff5630;">For security reason:</span></strong> this should be changed via config variable <code>iam_admin_bypass_login_route</code> <br>(<strong>e.q.:</strong> <code>/iam/admin/auth/login/3k2isnj_423fewq</code>)</p>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>>
+</li>
+<li>
+<p>Redirects to EFS Admin login on access without errors</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>/api/iam/config/get/[:portalId]</code></p>
+</td>
+<td>
+<ul>
+<li>
+<p>Returns json formatted object with portal config for Identity Access Manager</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>/api/iam/auth/signin</code></p>
+</td>
+<td>
+<ul>
+<li>
+<p>Route to signin to a portal after login into QuestbackAccess/IdP</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>/iam/admin/auth/login/bypass</code></p>
+</td>
+<td>
+<ul>
+<li>
+<p>Route for bypass login for root users to EFS Admin.</p>
+</li>
+<li>
+<p><strong><span style="color: #ff5630;">For security reason:</span></strong> this should be changed via config variable <code>iam_admin_bypass_login_route</code> <br>(<strong>e.q.:</strong> <code>/iam/admin/auth/login/3k2isnj_423fewq</code>)</p>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>

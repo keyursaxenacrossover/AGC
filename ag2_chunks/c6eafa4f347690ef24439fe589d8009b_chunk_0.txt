@@ -1,0 +1,73 @@
+<h1 id="h_01J6C1ZF40CB4VVMN5YWMAXWGP">Overview</h1>
+<p>This guide covers the configuration of Identity Provider routing within Okta, as well as the setup processes for both OpenID Connect and SAML Identity Providers. Identity Provider routing is crucial for ensuring that users are directed to the correct Identity Provider based on their email domain.</p>
+<p> </p>
+<ul>
+<li><a href="#h_01J6BZ7G4VSR5YH32YVAJ00SYH">Configure Identity Provider Routing</a></li>
+<li><a href="#h_01J6BZBVNDJCA6JCKN69FGJWRB">Open ID Connect Setup</a></li>
+<li><a href="#h_01J6BZJRXZ70EWV8158D2V6DTF">SAML Provider Setup</a></li>
+<li><a href="#h_01J6C1WMWCKJVBQA8PTJAB7EDE">Configure Profile Mapping</a></li>
+</ul>
+<h2 id="h_01J6BZ7G4VSR5YH32YVAJ00SYH">Configure Identity Provider Routing</h2>
+<p>In order for users to reach their Identity Provider a routing has to be configured which routes users based on their email domain to their respective Identity Provider.</p>
+<p><strong>Step 1</strong>: Navigate to Routing Rules</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21012773957394" alt="Screenshot_2019-12-03 Questback - Identity Providers.png"></p>
+<h1 id="header-1">Step 2: Add Identity Provider Routing rule</h1>
+<p><strong>Values:</strong></p>
+<p>Rule Name: see <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1064829097/Naming+conventions+in+Okta">Naming conventions in Okta</a></p>
+<p>User matches:</p>
+<ul>
+<li>
+<p>Select: Domain list on login</p>
+</li>
+</ul>
+<p>Do NOT include the @ as shown in the screenshot - We will update it soon</p>
+<ul>
+<li>
+<p>Input: Domain that should be used for that IdP</p>
+</li>
+</ul>
+<p>Use this identity provider: Select the above created Identity Provider</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21012773957010" alt="Screenshot_2019-12-03 Questback - Identity Providers(1).png"></p>
+<p> </p>
+<p> </p>
+<h2 id="h_01J6BZBVNDJCA6JCKN69FGJWRB">Open ID Connect Setup</h2>
+<p>Open ID Connect (OIDC) Identity Providers are preferred over SAML due to a more simple setup.</p>
+<h1 id="01J6BZJ57F4MXD3C321YHWXRA6">Prerequisites:</h1>
+<p>The OIDC provider should send all necessary information in a token request. The mandatory fields are</p>
+<ul>
+<li>
+<p>email address</p>
+</li>
+<li>
+<p>first name</p>
+</li>
+<li>
+<p>last name</p>
+</li>
+</ul>
+<p>A domain (or domains) for routing purposes should be known (with regards to the email-address domain). Otherwise the IdP could not be used as intended.</p>
+<p>A client ID and a client secret have to be provided by the identity provider. And our redirect URI has to be applied to that client ID and client secret.</p>
+<p>A discovery-document/well-known-document have to be provided. also see OIDC Federation</p>
+<p>If the customer uses Azure AD this URL can be used with the proper customer domain:</p>
+<p><a href="https://login.microsoftonline.com/tivian.com/v2.0/.well-known/openid-configuration">https://login.microsoftonline.com/tivian.com/v2.0/.well-known/openid-configuration</a></p>
+<p> </p>
+<h2 id="header-3">Step 1: Navigate to Identity Providers</h2>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21012773958034" alt="Screenshot_2019-11-29 Questback - Dashboard.png"></p>
+<p> </p>
+<h3 id="header-5">Step 2: Add a new Open ID Connect Identity Provider</h3>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21012773959570" alt="Screenshot_2019-11-29 Questback - Identity Providers.png"></p>
+<h3 id="header-6">Step 3: Provide basic client information</h3>
+<p><strong>Values:</strong></p>
+<p>Name: see Naming conventions in Okta</p>
+<p>Client ID: this will be provided by the client’s IdP</p>
+<p>Client Secret: this will be provided by the client’s IdP</p>
+<p>Scopes:</p>
+<ul>
+<li>
+<p>always necessary: email, openid, profile</p>
+</li>
+<li>
+<p>there might be custom scopes for this specific IdP</p>
+</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc

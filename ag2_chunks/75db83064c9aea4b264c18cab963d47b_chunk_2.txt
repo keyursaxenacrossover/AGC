@@ -1,0 +1,52 @@
+query.user</h3>
+<p class="wysiwyg-text-align-justify">Get the user object of the currently logged in user. Returns null if there is no logged in user.</p>
+<pre><code class="language-js">Questback.portalsApi.query.user().then(function(result) {
+    console.log(result.user);
+});</code></pre>
+<h3 id="query-language" class="wysiwyg-text-align-justify">query.language</h3>
+<p class="wysiwyg-text-align-justify">Get the language object of the currently used language.</p>
+<pre><code class="language-js">Questback.portalsApi.query.language().then(function(result) {
+    console.log(result.language);
+});</code></pre>
+<h3 id="query-token" class="wysiwyg-text-align-justify">query.token</h3>
+<p class="wysiwyg-text-align-justify">Returns the Portals Api token, which can be used in external software to additionally validate the user via EFS web service.</p>
+<pre><code class="language-text">Questback.portalsApi.query.token().then(function(result) {
+    console.log(result.token);
+});</code></pre>
+<p class="wysiwyg-text-align-justify">If the user is logged in, the <em>token</em> field will contain the users api token, which you can validate by calling the following EFS web service. Otherwise, <em>token</em> will be an empty string.</p>
+<pre><code class="language-text">portal.users.getUserDataByToken</code></pre>
+<p class="wysiwyg-text-align-justify">If the token is valid the userId and portalId is returned. Otherwise an exception is thrown. Please refer to the web services documentation for more details on this service call.</p>
+<h3 id="query-deviceinfo" class="wysiwyg-text-align-justify">query.deviceInfo</h3>
+<p class="wysiwyg-text-align-justify">Get information about the client device.</p>
+<pre><code class="language-js">Questback.portalsApi.query.deviceInfo().then(function(result) {
+    console.log(result.device.isMobile);
+});</code></pre>
+<h3 id="query-ajax-reserved-for-future-use" class="wysiwyg-text-align-justify">query.ajax (reserved for future use)</h3>
+<p class="wysiwyg-text-align-justify">Makes an ajax call to the internal portals server API and returns the result. Since Portals itself does not provide a public portals server API, this function is reserved for future use.</p>
+<pre><code class="language-js">Questback.portalsApi.query
+    .ajax('GET', '/api/portal/client/pages')
+    .then(function(result) {
+        console.log(result);
+    })
+    .catch(function(error) {
+        console.log(error);
+    });</code></pre>
+<hr>
+<h2 id="trigger-actions-in-portals" class="wysiwyg-text-align-justify">Trigger actions in Portals</h2>
+<p class="wysiwyg-text-align-justify">The api supplies a set of methods to trigger specific actions in Portals.</p>
+<h3 id="trigger-height" class="wysiwyg-text-align-justify">trigger.height</h3>
+<p class="wysiwyg-text-align-justify">Set the iFrames height to a specified value, given as a string including the unit.</p>
+<pre><code class="language-js">Questback.portalsApi.trigger.height('300px');</code></pre>
+<h3 id="trigger-autoheight" class="wysiwyg-text-align-justify">trigger.autoHeight</h3>
+<p class="wysiwyg-text-align-justify">Set the iFrames height to the height of its content. This is done once per call, not repeatedly. So you have to react to resize events yourself.</p>
+<pre><code class="language-js">Questback.portalsApi.trigger.autoHeight();</code></pre>
+<h3 id="trigger-logout" class="wysiwyg-text-align-justify">trigger.logout</h3>
+<p class="wysiwyg-text-align-justify">Log out the current user from Portals and thus redirect to the configured landing page. The iFrame will be removed from the DOM by this opreation.</p>
+<pre><code class="language-js">Questback.portalsApi.trigger.logout();</code></pre>
+<h3 id="trigger-route" class="wysiwyg-text-align-justify">trigger.route</h3>
+<p class="wysiwyg-text-align-justify">Redirect to the given page slug. The iFrame will be removed from the DOM by this opreation.</p>
+<pre><code class="language-js">Questback.portalsApi.trigger.route('targetPageSlug');</code></pre>
+<hr>
+<h2 id="accessing-mysight-instances-in-portals" class="wysiwyg-text-align-justify">Accessing MySight instances in Portals</h2>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015041349010" alt="MySightId.png"></p>
+<p class="wysiwyg-text-align-justify">There are a number of methods to interact with Tableau in a MySight module. For all of these you need the <em>pageModuleIdentifier</em> of a MySight module to target your requests. This identifier is set in the Portals CMS in the settings for the MySight page module and can be reused on other pages for the same or even different Tableau instances.</

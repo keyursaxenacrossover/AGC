@@ -1,0 +1,168 @@
+_MASTERDATA, DIARY</em>.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "surveyData": {
+    "title": "Example title",
+    "author": "Example",
+    "type": "ANONYMOUS",
+    "description": "Example description",
+    "staff": "",
+    "comment": ""
+  }
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">1234</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79PVD6VTZR2X06C44GA"> </h4>
+<h3 id="header-313">PATCH /survey/surveys/{surveyId}</h3>
+<p>Change a survey's field period and status. Valid options for <code>surveyStatus</code>: <em>GENERATED, ACTIVE, CLOSING, FINISHED, ARCHIVED</em></p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "surveyStatus": "ACTIVE",
+  "surveyFieldTime": {
+    "startTime": "2020-07-02T12:53:50+00:00",
+    "endTime": "2020-08-02T12:53:50+00:00"
+  }
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">true</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>surveyId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>id of survey to delete <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79PW2WVS8FD0TW0JHNP"> </h4>
+<h3 id="header-314">PUT /survey/surveys/{surveyId}</h3>
+<p>Change a survey's descriptive data (survey title, survey comment etc.)</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "title": "New Title",
+  "description": "Example description",
+  "author": "Example author",
+  "staff": "Example staff field",
+  "comment": "Example comment",
+  "isMarked": true
+}</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>surveyId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>id of survey to delete <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79PVDA4EVNMGCT14V16"> </h4>
+<h3 id="header-315">DELETE /survey/surveys/{surveyId}</h3>
+<p>Deletes a survey</p>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">true</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>surveyId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>id of survey to delete <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>

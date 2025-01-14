@@ -1,0 +1,30 @@
+{
+    "id": 20717118297362,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/20717118297362.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20717118297362-5-Building-Block-View",
+    "author_id": 369584192734,
+    "comments_disabled": false,
+    "draft": true,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20714711445138,
+    "created_at": "2024-08-12T20:17:35Z",
+    "updated_at": "2024-08-12T20:17:47Z",
+    "name": "5 Building Block View",
+    "title": "5 Building Block View",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-08-12T20:17:47Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075294,
+    "content_tag_ids": [],
+    "label_names": [],
+    "body": "<p><b>Original Confluence URL:</b> <a href=\"https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3489103903\">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3489103903</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>\n\n<h2>Table of Contents</h2>\n<ul class=\"toc\">\n<ul>\n<li><a href=\"#header-1\">Diagram</a></li>\n<ul>\n<li><a href=\"#header-3\">Description</a></li>\n<ul>\n<li><a href=\"#header-5\">KeyCloak Database</a></li>\n<li><a href=\"#header-6\">KeyCloak</a></li>\n<li><a href=\"#header-7\">Ingestion Service</a></li>\n<li><a href=\"#header-8\">Interfaces</a></li>\n<ul>\n<li><a href=\"#header-10\">Ingestion Service - Message bus</a></li>\n<li><a href=\"#header-11\">Security Admin - KeyCloak</a></li>\n<li><a href=\"#header-12\">Tivian Admin - KeyCloak</a></li>\n<li><a href=\"#header-13\">Employee - KeyCloak</a></li>\n<li><a href=\"#header-14\">Tivian Application - KeyCloak</a></li>\n</ul>\n<li><a href=\"#header-16\">Possibly Missing Components</a></li>\n</ul>\n</ul>\n</ul>\n</ul><p></p><ac:rich-text-body><p><strong>Caution</strong></p>\n<p>Caching components are not shown here. The same is true for CDNs and similar components.</p></ac:rich-text-body><p></p><h1 id=\"header-1\">Diagram</h1><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20717143429266\" alt=\"Architecture Diagrams - Building Blocks(1).png\"><p></p><h2 id=\"header-3\">Description</h2><h3 id=\"header-5\">KeyCloak Database</h3><p>The keycloak database is an SQL Database that stores the data of KeyCloak. It contains users, passwords and configuration.</p><p></p><h3 id=\"header-6\">KeyCloak</h3><p>KeyCloak is an identity provider having identity management and identity broker capabilities. It supports several protocolls like SAML and OIDC.</p><p>It hosts the backend of the identity solution but also the frontend.</p><p></p><h3 id=\"header-7\">Ingestion Service</h3><p>The ingestion service pushes data from the message bus in KeyCloak to create users or tenants that have been originally created in the user or tenant management.</p><p></p><h3 id=\"header-8\">Interfaces</h3><h4 id=\"header-10\">Ingestion Service - Message bus</h4><p>The ingestion service consumes user and tenant data from the message bus to provide them for KeyCloak.</p><p></p><h4 id=\"header-11\">Security Admin - KeyCloak</h4><p>A security admin can configure a clients security policy.</p><p></p><h4 id=\"header-12\">Tivian Admin - KeyCloak</h4><p>A Tivian Admin can analyse issues in KeyCloak or with specific users.</p><p></p><h4 id=\"header-13\">Employee - KeyCloak</h4><p>Eymployees login using KeyCloak. Also password resets, MFA and other security credential operations are handled in KeyCloak.</p><p></p><h4 id=\"header-14\">Tivian Application - KeyCloak</h4><p>Tivian Applications validate token and get public keys and other public information from KeyCloak to validate tokens.</p><p></p><h3 id=\"header-16\">Possibly Missing Components</h3><p><strong>Emailing </strong>- A shared service to perform emailing; check if needed</p><p><strong>Specific UIs for specific use cases or users</strong> - Like the Security Admin, Employee Home Screen etc.; check if needed</p>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

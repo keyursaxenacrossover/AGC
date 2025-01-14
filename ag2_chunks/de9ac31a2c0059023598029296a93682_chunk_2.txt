@@ -1,0 +1,48 @@
+a>.</p>
+<h3 id="header-13">Back button data correction</h3>
+<p>Previously, when respondents used the back button in the survey or their internet browser, all responses already provided would be saved in the survey. If the respondent, after going backwards in the survey, changed an answer based on which the survey branched, this could result in data being saved in that respondents record for questions that should not be presented to them based on the new branching question response. Worse still, it could result in the respondent being taken down an incorrect path in the survey based on these stored responses. Now, if a respondent goes backwards in the survey and changes a previous branching question answer, and our new <em>Back button data correction </em>project property is set, the system will reset any questions that are part the previous branching path to their default value. This ensures that invalid data is not stored for the respondent, and the correct path is taken throughout the survey.</p>
+<p>Please note, all other survey responses not impacted by a change in branching logic are not reset and are saved in the respondents record. This property is disabled by default.</p>
+<p> </p>
+<h3 id="header-14">Update to the SMS module and SMS delivery notifications</h3>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21036824422162" alt="Screenshot 2021-08-24 at 15.16.54-20210824-131700.png"></p>
+<p>In addition to being able to send notifications to survey respondents via email, we have an optional SMS module supporting the delivery of invites, reminders and other notifications via SMS message. This module had undergone some technical improvements to provide a more reliable service. In addition, we have extended our <em>Mail Report</em> area to include delivery information for your SMS messages. The brand new mail report for SMS will allow you to see how many messages are <em>In Dispatch</em>, <em>Sent</em> and <em>Not Delivered</em>. This way you always have an overview of your SMS delivery rates and can react immediately if they are lower than expected.</p>
+<p><a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20371076859410#sms" target="_blank" rel="noopener noreferrer">Read more...</a></p>
+<p> </p>
+<h3 id="header-15">Additional survey improvements</h3>
+<ul>
+<li>
+<p>#pauth# and #pstaff# are two new placeholders now available for use in mail templates. These will show the author and co-author of the survey.</p>
+</li>
+<li>
+<p>#pid# and #sid# are two new placeholders now available for use in Projects. These will show the Project ID and Sample ID of the project.</p>
+</li>
+<li>
+<p>It is now possible to recode the labels of the u_ and m_ variables into survey variables. This is possible for the following project types : Personalised, Employee, Panel and Master Data Surveys.</p>
+</li>
+<li>
+<p>It is now possible to make any questions using the Linked Slider and Constant Sum questions types mandatory.</p>
+</li>
+<li>
+<p>The mail report now displays selected delivery options (e.g. “use timezone of recipient”)</p>
+</li>
+<li>
+<p>The default value for the duration of participation (30 minutes) is now customizable. Please ask the Tivian support team, if you want to customize it.</p>
+</li>
+</ul>
+<p> </p>
+<h2 id="header-17">Enhancements to Portals</h2>
+<hr>
+<h3 id="header-19">Multi-tenant Portals</h3>
+<p>We have carried out some significant enhancements to our portals module that means, as of our 21.2 release, all portals are by default multi-tenancy ready. This means that one portal can be used by multiple groups. These could be different organizations, brands or divisions. Basically any group of individuals that should be silo’d from another group of individuals. Each user accessing the portal will only have access to the features, modules and data appropriate to their group.</p>
+<p>To utilise multi-tenancy all you need to do is create one or multiple <em>categories/organizations</em> within the groups area of the People module, and one or multiple panel groups for each group of panelists that you wish to separate from others in the panel. Once your groups have been created, any new users invited to join the portal will be automatically added to the correct group. Users joining the portal via the registration module will be added to the default panel group and category/organization.</p>
+<p> </p>
+<h3 id="header-20">Other new features in Portals</h3>
+<ul>
+<li>
+<p><strong>More convenient portal testing</strong>: As an admin user you typically want to preview or test the changes that you have done in the backend. This workflow has been simplified with our new direct login feature that will be visible in the breadcrumbs of the portals module. All panelists with the status tester will be available for direct, one-click login into the portal. No need to copy &amp; paste the email and remember the password anymore!</p>
+</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21036835464594" alt="image-20210914-151151.png"></p>
+<ul>
+<li>
+<p><strong>Page access via user roles</strong>: In addition to panel groups, pages can now also be restricted to user roles within the portal.</

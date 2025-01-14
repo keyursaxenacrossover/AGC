@@ -1,0 +1,119 @@
+@tivian.com”)</p>
+</li>
+<li>
+<p>disable the user</p>
+</li>
+<li>
+<p>give a hint that this user has to stay disabled</p>
+</li>
+</ul>
+<p> </p>
+<h2 id="header-3">Initial email setup</h2>
+<p>Navigate to Security → General and disable all emails in the “security Notifications Emails.</p>
+<ul>
+<li>
+<p>New sign on notification mail → Disabled</p>
+</li>
+<li>
+<p>MFA enrolled notification email → Disabled</p>
+</li>
+<li>
+<p>MFA reset notification email → Disabled</p>
+</li>
+<li>
+<p>Report suspicious activity via email → disabled</p>
+</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716304460178" alt="Screenshot_2019-12-19 Questback - General.png"></p>
+<p> </p>
+<p><strong>Customize Email templates:</strong></p>
+<ul>
+<li>
+<p>Add custom HTML code to the following templates: UserActivation, Forgot Password Denied, Password Reset By Admin, Forgot Password</p>
+</li>
+<li>
+<p>Use HTML code from <a href="https://bitbucket.org/qbengineering/okta_resource_email_customization/src/master/" data-card-appearance="inline">https://bitbucket.org/qbengineering/okta_resource_email_customization/src/master/</a> (press “edit” to create the first customization)</p>
+</li>
+<li>
+<p>Check if HTML looks okay</p>
+</li>
+</ul>
+<p> </p>
+<h2 id="header-4">Add general customization and custom domain</h2>
+<ul>
+<li>
+<p>Personal information and passwords will be stored in Okta</p>
+</li>
+<li>
+<p>Secondary Email is enabled and Security Image disabled</p>
+</li>
+<li>
+<p>Opt out of Okta Communication</p>
+</li>
+<li>
+<p>Edit the custom URL (see below)</p>
+</li>
+<li>
+<p>Enable JIT</p>
+</li>
+<li>
+<p>Send user to custom URL in “Default App for Sign-In Widget” - URL will be <a href="https://pm.customervoice360.com/uc/signup_confirm/">https://pm.customervoice360.com/uc/signup_confirm/</a> (temporarily - working on something better)</p>
+</li>
+</ul>
+<h2 id="header-5">Customizing of the login page</h2>
+<ul>
+<li>
+<p>Change theme, logo and background image of the login/error screens as well as footer</p>
+</li>
+<li>
+<p>Disable security image</p>
+</li>
+<li>
+<p>Opt out of Okta user communication for the current organization</p>
+</li>
+<li>
+<p>Add neccessary labels</p>
+</li>
+<li>
+<p>Add login and error page customizations</p>
+</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716345500434" alt="Screenshot_2020-01-13 Questback GmbH - Customization.png"></p>
+<p><strong>Custom Domain</strong></p>
+<p>This has to be done in sync with IT-OPs</p>
+<ul>
+<li>
+<p>Create a TXT record and verify it - continue if that is green</p>
+</li>
+<li>
+<p>Create the DNS record</p>
+</li>
+<li>
+<p>Get a certificate for Okta and add certificate, key and certificate chain</p>
+</li>
+<li>
+<p>Add the CNAME</p>
+</li>
+</ul>
+<p> </p>
+<p><strong>Change logo and background image</strong></p>
+<p>Navigate to: Settings → Appearance</p>
+<p>The images could be found in the following git repository: <a href="https://bitbucket.org/qbengineering/okta_resource_login_customization/src/master/assets/" data-card-appearance="inline">https://bitbucket.org/qbengineering/okta_resource_login_customization/src/master/assets/</a></p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716336511378" alt="Screenshot_2020-01-03 Questback - Appearance.png"></p>
+<p> </p>
+<p><strong>Add custom login page</strong></p>
+<ul>
+<li>
+<p>Change Custom Sign In, Custom Error Pages</p>
+</li>
+<li>
+<p>Use code from <a href="https://bitbucket.org/qbengineering/okta_resource_login_customization/src/master/" data-card-appearance="inline">https://bitbucket.org/qbengineering/okta_resource_login_customization/src/master/</a> (paste production code in the editor window of okta)</p>
+</li>
+</ul>
+<p> </p>
+<h2 id="header-6">Enable Factors for Multi Factor Authentication</h2>
+<p>Navigate to: Security → Multifactor</p>
+<p>Only “Okta Verify” and “Google Authenticator” will be enabled for now. This might change in future. Okta Verify should be require TouchID.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716345582994" alt="Screenshot_2020-01-03 Questback - Multifactor.png"></p>
+<h2 id="header-7">Adapt Okta profiles</h2>
+<p>Currently EFS will store the email domain of the user in a separate

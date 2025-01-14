@@ -1,0 +1,75 @@
+<h1 id="h_01J41CTABEMD4QSYV8W7GVYPCF">Overview</h1>
+<article>
+<p>This article provides comprehensive information on activating and managing services, service layer, and API for customers using the EFS platform. It covers the process of setting up services, creating users and teams, managing access rights, and troubleshooting common issues.</p>
+<p>Customer-facing article: <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20229615093778" target="_blank" rel="noopener noreferrer">How-to: Service Layer</a>.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>This guide focuses on the steps required to activate services for customers, manage service layer access, and handle API-related tasks. </p>
+<ul>
+<li><a href="#activate_services">Activate Services for a Customer</a></li>
+<li><a href="#manuals">Manuals</a></li>
+<li><a href="#customer_test">Customer Test Service Layer on TRIAL Installation</a></li>
+<li><a href="#text_template">Text Template for Customers</a></li>
+<li><a href="#support_requests">Help for Support Requests</a></li>
+</ul>
+<h2 id="activate_services">Activate Services for a Customer</h2>
+<p>To activate services for a customer, certain requirements must be met and specific steps need to be followed:</p>
+<h3 id="requirements">Requirements</h3>
+<ul>
+<li>The customer has a dedicated installation</li>
+<li>Sales has sold and ordered this via <a href="https://ww2.efs-survey.com/uc/order_survey/">https://ww2.efs-survey.com/uc/order_survey/</a>
+</li>
+</ul>
+<h3 id="technical_support">Support Steps</h3>
+<p>Technical Support needs to activate webservices by following these steps:</p>
+<ol>
+<li>Go to <strong>Options -&gt; Platform cockpit -&gt; root only:: System configuration</strong>
+</li>
+<li>Change "<strong>has_webservices</strong>" to "<strong>true</strong>"</li>
+<li>Change "<strong>modules</strong>" and add "<strong>custom</strong>"</li>
+<li>Create a new team (e.g., "<strong>servicelayer</strong>")</li>
+<li>Create a new user If you don't know a specific person that will use the service layer, create a dummy user:
+<ol>
+<li>Account name "<strong>servicelayer</strong>" with email address "servicelayer@3uu.eu" (the email address can be changed later on so that the user can receive password mails)</li>
+<li>Team: <strong>servicelayer</strong>
+</li>
+<li>Primary Team: <strong>servicelayer</strong>
+</li>
+</ol>
+</li>
+<li>Navigate to <strong>Options &gt; Services &gt; Service configuration &gt; Internal:: Tokens</strong> and generate a new token for the service layer user. <em>Check <a href="https://central-supportdesk.zendesk.com/agent/tickets/4450666">ticket #4450666</a> for reference.</em>
+</li>
+<li>
+<p data-renderer-start-pos="938">If you already know which service layer methods will be used, activate them for the service layer team and grant the team needed ACL rights:</p>
+<ol>
+<li>
+<p data-renderer-start-pos="1082">Navigate to <strong>Options &gt; Services &gt; Service configuration &gt; Services &gt;</strong> activate desired services and grant access rights</p>
+</li>
+<li>
+<p data-renderer-start-pos="1207">Navigate to <strong>System &gt; Users &gt; Teams &gt; edit service layer team &gt; Change rights</strong> of this team (only <strong>area_www</strong> required ?)</p>
+</li>
+</ol>
+</li>
+<li>Inform the client or contact person:
+<ul>
+<li>Send access data for service layer user</li>
+<li>Send password via <a href="https://onetimesecret.com/">https://onetimesecret.com/</a>
+</li>
+</ul>
+</li>
+</ol>
+<p>Note: The customer can check available services by calling the WSDL with the token: <strong><a href="https://customers_domain/service/?handler=soap&amp;wsdl=1&amp;token=[TOKEN]">https://customers_domain/service/?handler=soap&amp;wsdl=1&amp;token=[TOKEN]</a></strong></p>
+<h2 id="customer_test">Customer Test Service Layer on TRIAL Installation (NEED TO CONFIRM WITH TIVIAN FURTHER)</h2>
+<h3 id="first_level_support_todo">First Level Support to do:</h3>
+<ol>
+<li>Create a new user: servicelayer_OrganizationXY</li>
+<li>Add User in Test-Team of the customer</li>
+<li>Create Token and assign user (from step 1)</li>
+</ol>
+<h3 id="after_testing">After testing period is finished:</h3>
+<ul>
+<li>Delete Token</li>
+<li>Delete User 'servicelayer_ORGANIZATION'</li>
+</ul>
+<p><strong>Important:</strong> For installations with multiple organizations, some steps may not be applicable.</p>
+<h2 id="text_template">Text Template for Customers</h2>
+<h3 id="english_template">English

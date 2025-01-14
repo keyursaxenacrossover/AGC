@@ -1,0 +1,30 @@
+{
+    "id": 21731646458130,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/21731646458130.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21731646458130-Creating-new-panelists-for-Lufthansa-installations-WIP",
+    "author_id": 20976892622866,
+    "comments_disabled": false,
+    "draft": false,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20389541164690,
+    "created_at": "2024-10-02T09:20:16Z",
+    "updated_at": "2024-11-15T15:39:00Z",
+    "name": "Creating new panelists for Lufthansa installations (WIP)",
+    "title": "Creating new panelists for Lufthansa installations (WIP)",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-11-15T15:39:00Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075274,
+    "content_tag_ids": [],
+    "label_names": [],
+    "body": "<p>This article will help you create new panelists for the 360° Feedback by Lufthansa. This will most likely be because you have received a ticket stating something like \"I need a login to 360° Feedback\" or similar.</p>\n<p><br>IMPORTANT: When you receive a request like this, NEVER add them as a user on Lufthansa installations. That would be a different request. Adding them as a user to the main installation could lead to a data breach.</p>\n<h2 id=\"h_01J965SVWXQRXW8CY31XED365W\"> </h2>\n<h2 id=\"h_01J965SVWX88XCGFBAY06EZ0MB\">What login are those tickets referring to?</h2>\n<p>Those ticket requests are referring to the <a href=\"https://360feedback.lufthansa.com/portal/Lufthansa360\">Lufthansa 360° Feedback portal</a><a href=\"https://360feedback.lufthansa.com/portal/Lufthansa360,\">,</a> where the user will have two options to choose from:</p>\n<p><br>1. Login with Single Sign-On (eBase password)</p>\n<p>2.Login without Single Sign-On</p>\n<p><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21731646439826\" alt=\"Screenshot 2024-10-02 at 09.38.35.png\"></p>\n<p>As is visible in the screenshot, they will have a direct link to contact support when they can't log in using SSO or do not have an account yet. This will then create the ticket. </p>\n<p> </p>\n<h2 id=\"h_01J968CT4KS7W3XA3QV7ZRR41S\">How to add panelists for Lufthansa installations</h2>\n<p>1. Log in to the customer's instance at <a href=\"https://zu5177.customervoice360.com/www\">zu5177.customervoice360.com/www</a></p>\n<p>2. Navigate to People &gt; Panelist administration and check if the panelist already exists.</p>\n<p>IF YES: proceed to step 3.</p>\n<p>IF NOT: &gt; Add Panelist</p>\n<p> - Go through the setup process of adding the panelist as usual, set their email as \"Verified\"</p>\n<p>3. Once the panelist has been created, open their entry and navigate to their \"Groups\" Tab and add them to \"Default_panelgroup 2\"</p>\n<p> </p>\n<p>Once this has been completed, the panelist should be able to log in via their SSO and complete the registration survey the customer set up.<br><br>Legacy Team used the following response for these requests:</p>\n<pre class=\"p1 wysiwyg-indent1\">An account is ready for you.<br><br>Please try logging in using the following link:<br><br><span class=\"s1\"><a href=\"https://360feedback.lufthansa.com/portal/Lufthansa360\">https://360feedback.lufthansa.com/portal/Lufthansa360</a></span><br><br>If SSO sign-in doesn’t work, please sign in using the non-SSO sign-in option.<br>If this is your first time signing in, please click the “Forgot or change your password' link under the password entry box.</pre>\n<p class=\"p1\">In case the requester does not receive an email to reset the password upon first login, navigate to their panelist entry and check if their email is verified. If the email is not verified, the system will not send out a password reset email. This often happens when users have initially been created via the portal.</p>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

@@ -1,0 +1,55 @@
+ in the include “css_default”.</li>
+<li>You may have to adjust the size in the templates “tpl_rating_...”.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Adapting the rating template to the panel layout</strong></p>
+<p class="wysiwyg-text-align-justify">The display of the rating functions is largely controlled via the templates “tpl_rating_...”. These template may have to be adapted to the overall layout of your panel.</p>
+<h2 id="viewing-using-and-exporting-rating-data" class="wysiwyg-text-align-justify"><strong>Viewing, Using and Exporting Rating Data</strong></h2>
+<p class="wysiwyg-text-align-justify">Two values are recorded as the result of the rating: the number of ratings and the average rating.</p>
+<p class="wysiwyg-text-align-justify">These values are usually displayed on the website right next to the rated contents. In the admin area, you can also view the results in the following places:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Forum, discussion or blog posts: in the respective post overview.</li>
+<li>Ratings of blogs: in the blog overview</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The corresponding exports also contain the rating results.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Number of ratings: Export variable “rating_count”</li>
+<li>Average rating: Export variable “rating_average”</li>
+</ul>
+<p class="wysiwyg-text-align-justify">From EFS 10.3, rating data are integrated into the panel tracking. Furthermore, they have been made available for grouping filters. Thus, it is now possible e.g. to create a group of very active or influential community members.</p>
+<h2 id="tagging-and-categorization-of-community-content" class="sc-iGrrsa eYmPYl wysiwyg-text-align-justify"><strong>Tagging and Categorization of Community Content</strong></h2>
+<p class="wysiwyg-text-align-justify">From EFS 10.5, it is possible to tag or categorize community content.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<em>Categories</em> allow to group posts and threads. Thus, panelists can select meaningful topical clusters for their content, and for administrators, it is easier to keep track of the community content.</li>
+<li>
+<em>Tagging</em> is available, too. Tags simplify search for the created content, they are not hierarchical.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Both categories and tags can be assigned to blog posts, forum threads and discussion posts.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify">If your panel is upgraded from an earlier version to EFS 10.5, manual modifications of the templates may be necessary to integrate the new tagging functonality completely into the website.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Several new templates are added automatically.</li>
+<li>If blog, discussion and forum templates are used without customization in your panel, the enhancements for tagging will be inserted automatically. Otherwise, a manual modification is necessary.</li>
+</ul>
+<h2 id="using-categorization" class="wysiwyg-text-align-justify"><strong>Using Categorization</strong></h2>
+<p class="wysiwyg-text-align-justify">Categories are specified by the administrator in the tagging browser: menu <strong>Website → Classifications →</strong> tab <strong>Categories</strong>.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Categories can be grouped.</li>
+<li>
+<p>You can assign a color and meta data to each category.</p>
+</li>
+<li>
+<p>Categories are specified by the administrator, therefore, this feature is always active.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The panelists select the appropriate categories for their content.</p>
+<h2 id="activating-and-configuring-tagging" class="wysiwyg-text-align-justify"><strong>Activating and Configuring Tagging</strong></h2>
+<p class="wysiwyg-text-align-justify">For tags, the panel administrator can decide whether to allow the usage or not, and which conditions should apply. The respective options can be found in the menu <strong>Website → Global configuration</strong>.</p>
+<h2 id="using-tagging" class="wysiwyg-text-align-justify"><strong>Using Tagging</strong></h2>
+<p class="wysiwyg-text-align-justify">The panelists themselves create the tags themselves, when writing blog posts, forum threads and discussion posts.</p>
+<p class="wysiwyg-text-align-justify">Administrators can access all tags created by the panelists via the tagging browser in the menu <strong>Website → Classifications →</strong> tab <strong>Tags</strong>.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>They can delete or block (i.e. blocklist) tags.</li>
+<li>Two tags with the same meaning can be merged. E.g. all posts with the tag “product” and “products” can be merged into “products”.</li>
+</ul>
+<h2 id="denying-use-of-tagging-for-specific

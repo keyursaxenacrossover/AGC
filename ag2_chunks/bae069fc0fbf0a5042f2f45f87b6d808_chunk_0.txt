@@ -1,0 +1,80 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1055129601">https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1055129601</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">Process for removing installations</a></li>
+<ul>
+<li><a href="#header-3">Installation check message</a></li>
+<ul>
+<li><a href="#header-5">Type of message</a></li>
+<li><a href="#header-6">What does it mean/refer to?</a></li>
+<li><a href="#header-7">Mirror server</a></li>
+<li><a href="#header-8">How can it be fixed?</a></li>
+</ul>
+</ul>
+</ul>
+</ul><h1 id="header-1">Process for removing installations</h1><table data-layout="default">
+<colgroup>
+<col style="width: 151.0px;">
+<col style="width: 151.0px;">
+<col style="width: 151.0px;">
+<col style="width: 151.0px;">
+<col style="width: 151.0px;">
+</colgroup>
+<tbody>
+<tr>
+<td><h2 id="header-3">Installation check message</h2></td>
+<td><h3 id="header-5">Type of message</h3></td>
+<td><h3 id="header-6">What does it mean/refer to?</h3></td>
+<td><h3 id="header-7">Mirror server</h3></td>
+<td><h3 id="header-8">How can it be fixed?</h3></td>
+</tr>
+<tr>
+<td><p>Unable to Connect to tcp://proxy:8080. Error #0: php_network_getaddresses: getaddrinfo failed: Name or service not known</p></td>
+<td><p>Error</p></td>
+<td><ul><li><p>Possible DNS error</p></li></ul></td>
+<td><p><br></p></td>
+<td>
+<ul><li><p>Check if there are other installation check messages regarding domains that can not be resolved</p></li></ul>
+<ul><li><p>In case of DNS error contact Sysadmins</p></li></ul>
+</td>
+</tr>
+<tr>
+<td><p>Error: The server cannot look up its own domain name. Please make sure the server can resolve at least [URL]</p></td>
+<td><p>Error</p></td>
+<td>
+<ul><li><p>Possible DNS error</p></li></ul>
+<ul><li><p>or a redirect is in place for that domain</p></li></ul>
+<ul><li><p>or a maintenance page is set for this installation/domain(you might not see the maintenance page from within our network)</p></li></ul>
+</td>
+<td><p><br></p></td>
+<td>
+<ul><li><p>Check if there are other installation check messages regarding domains that can not be resolved</p></li></ul>
+<ul><li><p>Via a console check what the domain name resolves to respectively if there is a redirect</p></li></ul>
+<ul><li><p>host [domain name]</p></li></ul>
+<ul><li><p>In case of DNS errors contact Sysadmins</p></li></ul>
+<ul><li><p>Check the domain from externally. Is a maintenance page shown? If yes:</p></li></ul>
+<ul><li><p>Is a maintenance planned? Check again after the maintenance is finished.</p></li></ul>
+<ul><li><p>If no maintenance is planned, maybe the maintenance page hasn’t been removed</p></li></ul>
+<ul><li><p>and still is there in error. Contact Sysadmins.</p></li></ul>
+</td>
+</tr>
+<tr>
+<td><p>Error: Cannot connect to SFTP host '<a href="http://mysight-data.bre.globalpark.com">mysight-data.bre.globalpark.com</a>': Couldn't read packet: Connection reset by peer</p></td>
+<td><p>Error</p></td>
+<td>
+<p>Possible DNS error.</p>
+<p>Also could mean that the installation can not connect to external domains (e.g. on mirror installations)</p>
+</td>
+<td><p><br></p></td>
+<td>
+<ul><li><p>Check if there are other installation check messages regarding domains that can not be resolved</p></li></ul>
+<ul><li><p>In case of DNS error contact Sysadmins.</p></li></ul>
+<ul><li><p>Check (with Sysadmins ) if the installation should be able to connect to external domains (productive servers should be able to do so, local machines like mirror installation not. Procus and testkanal installations usually access alternative domains on testkanal). If installation can not connect to external domains, you can ignore this. If it can/should, make sure the entered URL is correct and reachable, contact Sysadmins to check connectivity.</p></li></ul>
+</td>
+</tr>
+<tr>
+<td><p>Error: Cannot connect to rabbitmq-host - php_network_getaddresses: getaddrinfo failed: Name or service not known</p></td>
+<td><p>Error</p></td>
+<td

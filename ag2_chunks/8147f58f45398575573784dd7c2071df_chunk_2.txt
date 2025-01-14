@@ -1,0 +1,54 @@
+cw" data-renderer-mark="true">GET https://efs-installation.com/service/?handler=rest&amp;raml=1&amp;token=TOKEN</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p data-renderer-start-pos="3929"><strong data-renderer-mark="true">PHP-serialized</strong>: Here, the input and output parameters are transferred as serialized PHP arrays. This is the recommended approach for PHP clients.</p>
+<ul class="ak-ul" data-indent-level="2">
+<li>
+<p data-renderer-start-pos="4078">To activate the handler, use the URL parameter "handler" with the value "php".</p>
+</li>
+<li>
+<p data-renderer-start-pos="4160">The name of the invoked method is handed over in the URL parameter "method". The method name is structured as follows: MODULENAME.ACTORNAME.METHODNAME (separator: periods).</p>
+</li>
+<li>
+<p data-renderer-start-pos="4336">If the request is an HTTP GET request, the description mode will be triggered. Otherwise, the transaction mode will be used.</p>
+</li>
+</ul>
+</li>
+<li>
+<p data-renderer-start-pos="4466"><strong data-renderer-mark="true">JSON</strong>: Data are transferred in JSON encoding. See the example below.</p>
+<ul class="ak-ul" data-indent-level="2">
+<li>
+<p data-renderer-start-pos="4537">To activate the handler, use the URL parameter "handler" with the value "json".</p>
+</li>
+<li>
+<p data-renderer-start-pos="4620">The name of the invoked method is handed over in the URL parameter "method". The method name is structured as follows: MODULENAME.ACTORNAME.METHODNAME (separator: periods)</p>
+</li>
+<li>
+<p data-renderer-start-pos="4795">If the request is an HTTP GET request, the description mode will be triggered. Otherwise, the transaction mode will be used.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="Authentication" data-renderer-start-pos="4925">Authentication</h2>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="4941">Two authentication methods can be used:</p>
+<ul class="ak-ul" data-indent-level="1">
+<li class="wysiwyg-text-align-justify">
+<p data-renderer-start-pos="4984"><strong data-renderer-mark="true">Tokens</strong>: (<em data-renderer-mark="true">recommended</em>) Our support can provide tokens for you and your staff members. These tokens can be used for authentication when invoking a service (parameter name: "token").</p>
+</li>
+<li>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="5167"><strong data-renderer-mark="true">Account name and password for the EFS admin area</strong>: Uses basic authentication of the HTTP protocol. The passwords are the same as for the administration area of EFS. We recommend to use tokens.</p>
+</li>
+</ul>
+<h2 id="Calling-the-Service-Description" data-renderer-start-pos="5362">Calling the Service Description</h2>
+<p data-renderer-start-pos="5395">Requesting the WSDL for SOAP access:<br><a class="cc-1rn59kg" title="https://your-efs-installation.com/service/?handler=soap&amp;wsdl=1" href="https://your-efs-installation.com/service/?handler=soap&amp;wsdl=1" data-testid="link-with-safety" data-renderer-mark="true">https://your-efs-installation.com/service/?handler=soap&amp;wsdl=1</a></p>
+<p data-renderer-start-pos="5496">Requesting the RAML file for REST access:<br><a class="cc-1rn59kg" title="https://your-efs-installation.com/service/?handler=rest&amp;raml=1" href="https://your-efs-installation.com/service/?handler=rest&amp;raml=1" data-testid="link-with-safety" data-renderer-mark="true">https://your-efs-installation.com/service/?handler=rest&amp;raml=1</a></p>
+<p data-renderer-start-pos="5602">Self-description of the PHP handler:<br><a class="cc-1rn59kg" title="https://your-efs-installation.com/service/?handler=php" href="https://your-efs-installation.com/service/?handler=php" data-testid="link-with-safety" data-renderer-mark="true">https://your-efs-installation.com/service/?handler=php</a></p>
+<p data-renderer-start-pos="5602">When accessing the service layer, you will find a dynamic list of services activated on your installation and which are accessible by the user. <a class="cc-1rn59kg" style="background-color: #ffffff;" title="/wiki/spaces/DOC/pages/1853128733" href="https://qbdocs.atlassian.net/wiki/spaces/DOC/pages/1853128733" data-testid="link-with-safety" data-renderer-mark="true">A list of all available services can be found on this page</a>.</p>
+<p> </p>
+<h2 id="Important-Parameters" data-renderer-start-pos="5903">Important Parameters</h2>
+<p data-renderer-start-pos="5925">These are the most important parameters:</p>
+<ul class="ak-ul" data-indent-level="1">
+<li>
+<p data

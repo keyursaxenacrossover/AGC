@@ -1,0 +1,66 @@
+ x) - numerator (page x)} ]</pre>
+
+<p class="wysiwyg-text-align-justify">where:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>denominator (page x) = (sum of pages submitted to date + 1) + (sum of all pages still anticipated after page x) and</p>
+</li>
+<li>
+<p>numerator (page x) = number of all pages submitted to date</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The progress value on the first page of the questionnaire is:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>progress value (page 1) = 100 / sum of all pages in the questionnaire</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The progress value on the final page is:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Progress value (final page) = 100</p>
+</li>
+</ul>
+<h3 id="changing-progress-bar-texts-and-values-manually" class="wysiwyg-text-align-justify">Changing Progress Bar Texts and Values Manually</h3>
+<p class="wysiwyg-text-align-justify">The progress bar is usually activated, otherwise please activate it in the <strong>Standard editor</strong> on the<strong> Progress bar</strong> tab. Switch to <strong>Pro editor</strong> and open the expert <strong>Progress bar</strong> tab. Deactivate “Calculate progress automatically” and confirm with <strong>Save settings</strong>. In projects with a traditional system layout: The progress bar is usually deactivated. Please activate it in the <strong>Standard editor</strong> on the <strong>Progress bar</strong> tab. Deactivate “Calculate progress automatically” and confirm with <strong>Save settings</strong>. Then, click on the newly-displayed <strong>Detailed settings</strong> link.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>First, determine how many pages a participant is shown on average. For a project with no filters, this number corresponds to the number of survey pages. For a project with filters, count the number of pages a participant will see, add the rounded mean value from the sum of filter branches, and enter the value into the “Total number of pages” field.</p>
+</li>
+<li>
+<p>Now you can indirectly determine a value for the progress bar for each page: Just define the page number for each page from the participant’s point of view.</p>
+</li>
+<li>
+<p>If the opening pages of the project are to be ignored, enter a value of 0 for these pages. Then, the pages will be excluded from the calculation, and a progress bar will not be displayed on them.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">In the case of random blocks, the page-defined progress bar jumps. Therefore, for projects with “Random order” or “Random selection” branches, it is recommended that you use the automatically calculated display.</p>
+<h3 id="modifying-the-progress-bar" class="wysiwyg-text-align-justify">Modifying the Progress Bar</h3>
+<p class="wysiwyg-text-align-justify">The progress bar is output via the “layout_progressbar.tpl” template. In detail, the display works as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><em>EFS</em> checks to see whether a user-defined progress bar value is to be output for this page; if not, the number of pages already viewed will be used for the calculation.</p>
+</li>
+<li>
+<p><em>EFS</em> calculates the percentage for the page and saves it to the sys_progress system variable. “aria-valuemin” and “aria-valuemax” specify the minimum and maximum values for the progress bar (aria-valuemin = 0, aria-valuemax: 100).</p>
+</li>
+<li>
+<p>Depending on the progress bar type, the output template will now use sys_progress as the width of the progress bar.</p>
+</li>
+<li>
+<p>The message text (“You have already completed n percent of the survey”) will be read from the database, and the percentage will be dynamically inserted.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Example 1</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>In a test project, activate the progress bar via the <strong>Standard editor → Progress bar</strong>.</p>
+</li>
+<li>
+<p>Switch to <strong>Pro editor</strong> → <strong>Structure</strong>.</p>
+</li>
+<li>
+<p>Choose the “layout_progressbar.tpl” template.</p>
+</li>
+</ul>
+<pre>{strip}{* Version 3.0 2017-07-11 *}<br>&lt;!-- BEGIN layout_progessbar.tpl --&gt;<br>{if $LayoutSettings.progressbar == "true"}<br>                &lt;div class="progressbarContainer"&gt;<br>                                &lt;div class="progressbar" role="progressbar" aria-label="{$msg_progress}" {if isset($progressbar_hidden) &amp;&amp; $progressbar_hidden === true}style="visibility: hidden;"{/if} aria-valuemin="0" aria-valuemax="100" aria-valuenow="{$sys_progress}"

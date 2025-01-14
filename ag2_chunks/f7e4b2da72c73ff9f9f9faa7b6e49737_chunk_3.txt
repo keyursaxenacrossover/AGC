@@ -1,0 +1,61 @@
+ characteristics for an existing variable during import. To do this, the relevant option must be activated for the respective variable.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Special features of certain standard variables</strong></p>
+<p class="wysiwyg-text-align-justify">Some variables require special consideration:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>In principle, an e-mail address should only be registered once, unless you wish to permit duplicate participation and explicitly select the “Allow duplicate e-mail addresses” field.</p>
+</li>
+<li>
+<p>Sometimes it is necessary to create dummy accounts. In such cases, you can use e-mail addresses on the @3uu.eu domain: these addresses are owned by TIVIAN, mails sent to them are deleted automatically.</p>
+</li>
+<li>
+<p>The access code must not be longer than the number of characters defined for option "Type of codes which will be generated" under the 'project properties' menu of your project.</p>
+</li>
+<li>
+<p>The mobile phone numbers of participants in <em>u_mobile</em> must be formatted according to international formatting rules:</p>
+<ul>
+<li>
+<p>A total of seventy digits</p>
+</li>
+<li>
+<p>Two zeros at the start</p>
+</li>
+<li>
+<p>Country prefix, e.g. 49 for Germany</p>
+</li>
+<li>
+<p>The number itself.</p>
+</li>
+<li>
+<p>Example: 0049223379336.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>The special status of tester accounts can be set via the “tester” column of the import file. The values in this column are coded as follows:</p>
+<ul>
+<li>
+<p>0 and blank field: normal participant</p>
+</li>
+<li>
+<p>1: tester</p>
+</li>
+</ul>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If you use passwords that contain non-ASCII characters, pay attention that characters and character set of the project are compatible with each other. Otherwise registration will not function, because the entries made by respondents will not correspond correctly with the contents of the database due to transfer problems. It is not possible for example to register for an ISO-88599-1 coded survey with a Japanese password. These kinds of problems can be avoided through the use of the international character set UTF-8, because UTF-8 can display all languages.</p>
+<p class="wysiwyg-text-align-justify">When exporting and importing participant data, mind that the “u_mobile” column of the Excel file should be formatted as “Text”. Otherwise the two leading zeros are removed.</p>
+<h4 id="allowing-duplicate-participation" class="wysiwyg-text-align-justify">Allowing Duplicate Participation</h4>
+<p class="wysiwyg-text-align-justify">It is possible to use duplicate e-mail addresses in personalized projects, i.e. a participant can appear more than once. This function makes it possible, for example, to perform projects in several waves with the same participants. It is also useful for trade fair servers. In this case, the participant data records are not uniquely identified by the email address alone, but by the unique combination of e-mail address and password. If you wish to use duplicate e-mail addresses, your import file should therefore contain at least the names of the participants, e-mail addresses, passwords, and usually additional information on wave membership. For a participant to receive a duplicate invitation, you must create two rows that contain the same e-mail address, but different passwords. The waves to which the duplicate participants belong are usually defined via the content of the <em>u_group</em> field.</p>
+<p class="wysiwyg-text-align-justify">For this, the checkbox in the “Allow duplicate e-mail addresses” field must be ticked.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="import-codes" class="wysiwyg-text-align-justify">Import Codes</h2>
+<p class="wysiwyg-text-align-justify">The<strong> Import codes</strong> option of the split button allows you to import participant codes from a file into participant administration. Each row of the file is interpreted as one code. Therefore, the file should not contain a header. A participant is created for each code. The remaining participant data (e.g. name, password) are set automatically.</p>
+<p class="wysiwyg-text-align-justify">For each imported code, a dummy account will be created. E-mail addresses on the @3uu.eu domain are used for these accounts. These addresses are owned by Tivian, mails sent to them are deleted automatically.</p>
+<p class="wysiwyg-text-align-justify">Please insert import codes into the text field below, each line one code. Per code one account will be created if code doesn't already exist.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863" class="wysiwyg-text-align-justify">FAQ</h1>
+<h3 id="faq-1" class="wysiwyg-text-align-justify">What should I consider when using Excel for imports?</h3>
+<p class="wysiwyg-text-align-justify">When using Excel, be aware of these limitations: - Only the first sheet is processed. - Maximum 256 columns and 65,000 rows. - Use Excel 97+ format

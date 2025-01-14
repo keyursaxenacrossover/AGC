@@ -1,0 +1,52 @@
+:</p>
+<pre><code class="language-text">UPDATE survey_reporting_report SET last_update="2015-07-16 12:30:54" WHERE report_id=352;</code></pre>
+</li>
+<li>
+<p>Wurde nach dem Ende der Befragung bereits ein Datenupdate durchgeführt, aber es muss nochmal neu ausgeführt werden:</p>
+<pre><code class="language-text">UPDATE survey_reporting_report SET last_update=NULL WHERE report_id=88;</code></pre>
+</li>
+</ul><h3 id="header-16">Beim Export:</h3><ul>
+<li><p>welche Fehlermeldung wird im Tooltip beim fehlgeschlagenen Export gezeigt</p></li>
+<li><p>steht dort <strong>Bitte wenden Sie sich an den Support</strong> sollte man einen Export (im richtigen Format) über EFS anstoßen und im Hintergrund auf der Konsole den Jobmaker starten ([Installationsverzeichnis]/www$ php53 support/jobmaker.php3). Dieser gibt die entsprechende Fehlermeldung aus. Eventuell muss man etwas geduldig sein, weil der Jobmaker im Hintergrund arbeitet und dann die Fehlermeldung eventuell verzögert ausprintet.</p></li>
+</ul><p></p><h4 id="header-18">Mögliche Fehler bei <strong>Bitte wenden Sie sich an den Support</strong>
+</h4><p></p><ul>
+<li>
+<p><strong>The same worksheet name already exists</strong> <br></p>
+<ul><li><p>Für jedes Kapitel wird ein Worksheet angelegt und sollte der Text der Kapitel länger sein, wird ab 32 Zeichen abgeschnitten. Gibt es dann welche, die nach 32 Zeichen gleich heißen, kann der Excel Export nicht funktionieren. Der Kunde sollte daher das Kapitel umbenennen. Das ist eine Vorgabe von Excel und man kann keine zwei gleichnamige Worksheets/Arbeitsblätter haben.</p></li></ul>
+</li>
+<li>
+<p><strong>Couldn't copy slide 'reportintro' with error: Object reference not set to an instance of an object.</strong></p>
+<ul>
+<li><p>Man kann nicht jede beliebige PPT Datei hochladenund als Exportvorlage verwenden</p></li>
+<li><p>Es benötigt eigentlich ein Customizing, da ganz spezielle Vorgaben zu beachten sind.</p></li>
+<li><p>Aktuell ist ein entsprechendes Customizing durch unser Customizing Team aber nicht vorgesehen. Das hatte Tim wohl mal entschieden.</p></li>
+<li><p>Mit 10.5 könnte dies ggf. wieder möglich sein, da Vorlagen durch das neue Exportformat pptx einfacher zu erstellen/Customizen sind.</p></li>
+<li><p>Eine Anleitung zum Erstellen der Vorlagen findet man hier: <a href="https://it.globalpark.de/twiki/bin/view/Development/Reporting#Howto_create_templates_for_the_P">Howto create templates for the PPT/PDF Export service</a></p></li>
+</ul>
+</li>
+<li>
+<p><strong>You want to put a string longer than 32K to Cell A8. MS Excel only allows to put a string shorter than 32K to a Cell.</strong></p>
+<ul>
+<li><p>Ein offenes Textfeld des Reports beinhaltet mehr als 32767 Zeichen. Excel kann aber nur bis zu 32767 Zeichen pro Zelle anzeigen.</p></li>
+<li><p>Der Export wird hier nicht einfach dennoch erzeugt und überschüssige Zeichen abgeschnitten (so wie beim Ergebnisdatenexport), sondern die Erzeugung des Exportes frühzeitig abgebrochen.</p></li>
+</ul>
+</li>
+<li>
+<p><strong>Allowed memory size of 536870912 bytes exhausted (tried to allocate 76214018 bytes) in /efsbuilds/efsbuilds/EFS_10.4_0068/modules/reporting/components/renderer/xls/service.inc.php on line 189</strong></p>
+<ul>
+<li><p>Beim Generieren der XLS Datei läuft php in ein Memory limit.</p></li>
+<li><p>Der Bericht ist zu groß und muss gesplittet werden.</p></li>
+</ul>
+</li>
+<li>
+<p><strong>Error in survey_reporting_publication_job 239 ,setting status to -1</strong></p>
+<ul>
+<li><p>Der Bericht mag nicht besonders groß oder komplex aussehen, erreicht aber irgendwo ein Limit (zu viele Labels durch zu viele Listen, zu viele Variablen, zu viele Aufwendige Berechnungen z.B. Median-Berechnung)</p></li>
+<li><p>Es wird empfohlen, den Bericht sinnvoll auf mehrere Berichte aufzuteilen</p></li>
+</ul>
+</li>
+<li>
+<p><strong>PHP Warning: reporting_renderer_xmlbuilder::text(): unterminated entity reference [problematischer Text bzw. Text der auf problematischen Text im Bericht folgt] in /efsbuilds/efsbuilds/EFS_10.7_0038/modules/reporting/components/renderer/xmlbuilder.inc.php on line 64</strong></p>
+<ul>
+<li><p>Hier war z.B. mal ein '&amp;' im Label einer Kategorie in einer Rekodierung problematisch: tägliche Internetnutzung &amp; Freunde auf QB</p></li>
+<li><p

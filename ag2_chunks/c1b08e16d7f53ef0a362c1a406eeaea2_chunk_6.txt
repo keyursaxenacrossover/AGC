@@ -1,0 +1,44 @@
+ the checkbox labeled “Replace numeric codes with their labels”.</p>
+<h3 id="exporting-open-answers-completely-for-new-spss-versions" class="wysiwyg-text-align-justify"><strong>Exporting Open Answers Completely for New SPSS Versions</strong></h3>
+<p class="wysiwyg-text-align-justify">Until EFS 10.0, SPSS export (based on PSPP) truncated string variables after 254 characters. Until EFS 10.0, it is therefore recommended that you export the answers separately to open-ended questions in another format (e.g. XLS, CSV) and use a different program for viewing the answers.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>From EFS 10.1, when exporting for SPSS from version 14 onwards, it is optionally possible to work without this restriction. To do so, deactivate the new option “Cut text field entries after 254 characters for SPSS export”. Please note that without restriction on the text length, the overall size of the export file can grow significantly, depending on the number of text fields in the questionnaire and the number of participants.</p>
+</li>
+<li>
+<p>For SPSS versions below 14, the text length restriction must be used to ensure downward compatibility.</p>
+</li>
+</ul>
+<h3 id="restricting-the-range-of-exported-data" class="wysiwyg-text-align-justify"><strong>Restricting the Range of Exported Data</strong></h3>
+<p class="wysiwyg-text-align-justify"><strong>Restricting the range of data to a specific period</strong></p>
+<p class="wysiwyg-text-align-justify">You can restrict the range of data collected during a certain period by making the respective selection in the “Last change from/until” fields.</p>
+<p class="wysiwyg-text-align-justify"><strong>Restricting the range of data using consecutive participant numbering</strong></p>
+<p class="wysiwyg-text-align-justify">By making a respective entry in the “Lowest / Highest consecutive number” fields, you can restrict the range to survey data of a specific block of respondents who have successively completed the questionnaire.</p>
+<p class="wysiwyg-text-align-justify"><strong>Restricting the range of data to certain disposition codes</strong></p>
+<p class="wysiwyg-text-align-justify">If you are authorized to access disposition codes (read right for <em>show_dispcode</em>), you can restrict the export to survey data of respondents with a certain disposition code.</p>
+<p class="wysiwyg-text-align-justify">To do so, untick all disposition checkboxes in the “Restrict export to disposition codes” field, for which no survey data are to be exported.</p>
+<p class="wysiwyg-text-align-justify">Available are the disposition codes greater than/equal to 20. No result data exist for disposition codes &lt; 20, therefore a result data export for such codes is not advisable. By default, the data of all participants with disposition codes between 21 and 42 will be exported.</p>
+<p class="wysiwyg-text-align-justify"><strong>Exporting protected questions</strong></p>
+<p class="wysiwyg-text-align-justify">If your project contains questions that are marked as “protected” and you have read rights for <em>protect_questions</em>, you can choose between various options when exporting result data:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Export all questions</p>
+</li>
+<li>
+<p>Export “protected” questions only</p>
+</li>
+<li>
+<p>Export “unprotected” questions only</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Restricting to participant groups</strong></p>
+<p class="wysiwyg-text-align-justify">In personalized projects, you can limit the export to specific participant groups, defined by the characteristics of the participant variable <em>u_group</em>.</p>
+<p class="wysiwyg-text-align-justify">To do so, when exporting result data, select the appropriate group in the “Restrict to participant groups” field of the “Restrict range of exported data” section.</p>
+<p class="wysiwyg-text-align-justify"><strong>Selective export</strong></p>
+<p class="wysiwyg-text-align-justify">If you have ticked the checkbox for the “Selective export (Please click here, if you want to specify which variable shall be exported)” field, you have the option of performing a <em>selective export</em>, i.e. you can choose from the range of available variables.</p>
+<p class="wysiwyg-text-align-justify">Once you have confirmed the selection by clicking on the <strong>Export </strong>button, the list of possible variables will be displayed and you can choose those desired.</p>
+<h3 id="excel-export-with-external-variable-names-and-meta-information" class="wysiwyg-text-align-justify"><strong>Excel Export with External Variable Names and Meta Information</strong></h3>
+<p class="wysiwyg-text-align-justify">If you export result data in XLS or XLSX format (MS Excel), you have the option of adding meta information. In this case, additional columns with the following information will be inserted in the export file header:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>1. Line:

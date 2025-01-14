@@ -1,0 +1,58 @@
+<h1 id="h_01J4P4FWGR1YHRC0M696QZTWDW">Overview</h1>
+<article>
+<p>This article explains how to set up plausibility checks in questionnaires, including their purpose, planning considerations, and implementation steps.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>Plausibility checks are used in Internet surveys to ensure data quality by verifying the correctness of answers during entry. This guide covers the importance of plausibility checks, how to plan their use, and provides an example of implementing a plausibility check.</p>
+<ul>
+<li><a href="#Why-plausibility-checks?">Why plausibility checks?</a></li>
+<li><a href="#Planning-the-Use-of-Plausibility">Planning the Use of Plausibility</a></li>
+<li><a href="#Example:-Plausibility-Check">Example: Plausibility Check</a></li>
+</ul>
+<p data-renderer-start-pos="30">Internet surveys permit quality checks and data checks as early as during entry. Minor errors and missing information can thus be noted immediately during entry. The respondent will receive a short message indicating that they may have overlooked something. You will not have to ask follow-up questions afterward but can correct the incorrect information immediately during entry instead. Checks for the correctness of answers are commonly referred to as “plausibility checks”.</p>
+<div class="fabric-editor-block-mark fabric-editor-alignment cc-5inqjd" data-align="center">
+<h2 id="Why-plausibility-checks?" data-renderer-start-pos="511">Why plausibility checks?</h2>
+</div>
+<p data-renderer-start-pos="538">Plausibility checks are used to ensure a certain level of data quality. Sometimes, respondents will overlook a question or commit minor errors when setting an answer. Sometimes, questions are also answered incompletely, if the respondent for example wants to get an overview of the questionnaire first or completes the questionnaire without serious interest. The information given should be checked especially if branchings at later stages in the questionnaire are based on the answers to preceding questions. Plausibility checks are advisable in the following cases:</p>
+<ul class="ak-ul" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="1108">The answer to the question is taken up in later questions, either in a filter condition or in a display of dynamic questions.</p>
+</li>
+<li>
+<p data-renderer-start-pos="1237">Assuring fill-in instructions, such as “Select the three most important properties of products xy”.</p>
+</li>
+<li>
+<p data-renderer-start-pos="1340">Answers to a specific question are of particular interest for the evaluation.</p>
+</li>
+<li>
+<p data-renderer-start-pos="1421">The internal consistency of the data is of particular importance for the evaluation.</p>
+</li>
+<li>
+<p data-renderer-start-pos="1509">The data being queried already exists in participant administration.</p>
+</li>
+</ul>
+<div class="fabric-editor-block-mark fabric-editor-alignment cc-5inqjd" data-align="center">
+<h2 id="Planning-the-Use-of-Plausibility" data-renderer-start-pos="1581">Planning the Use of Plausibility</h2>
+</div>
+<p data-renderer-start-pos="1616">Be aware of which answers are important for the routing of the survey and which data are central to the evaluation purpose. However, use plausibility checks with care. For the respondent, plausibility checks are, first and foremost, annoying and tiresome because their behavior is questioned and their progress through the survey is hindered. Too many plausibility checks will destroy the relationship of trust between you and the respondent. Also, take into consideration that respondents may not yet have formed an opinion on some questions. In such cases, you will often achieve better data quality by allowing incomplete information than by forcing the respondent to give an answer that might only be valid for the moment and not actually meant by the respondent.</p>
+<p data-renderer-start-pos="2386">Think about aspects such as the following:</p>
+<ul class="ak-ul" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="2432">Which answers are indispensable for the routing of the survey?</p>
+</li>
+<li>
+<p data-renderer-start-pos="2498">To which questions do you want to obtain answers from as many respondents as possible?</p>
+</li>
+<li>
+<p data-renderer-start-pos="2588">How would you react if your answer to a question were rejected as incorrect by a survey system?</p>
+</li>
+</ul>
+<p data-renderer-start-pos="2687">In addition to the psychological effects on the respondents, there are technical aspects as well:</p>
+<ul class="ak-ul" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="2788">On each questionnaire page, you can create as many plausibility checks as required. But plausibility checks require a lot of server resources, i.e. they affect the performance of the questionnaire, similar to other checks and dynamic features. Therefore, it is recommended to use not more than 50 plausibility checks per page.</p>
+</li>
+<li>
+<p data-renderer-start-pos="3118">For plausibility checks, no dedicated sort order is implemented. I.e. while you may arrange the checks on a specific page in a specific sequence, this order may get lost especially if copying or importing the project.</p>
+</li>
+<li>
+<p data-renderer-start

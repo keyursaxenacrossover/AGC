@@ -1,0 +1,53 @@
+Blue</ac:parameter><ac:parameter ac:name="title">$10000</ac:parameter><ac:parameter ac:name=""></ac:parameter></strong></p><ul style="list-style-type: square;">
+<li>Group membership rules sounds like the only "usefull" feature for us. <strong>Need to check again with Okta.</strong>
+</li>
+<li><strong>Edit: After a second meeting with Okta → We need this</strong></li>
+</ul><p><strong>Directory Integration <ac:parameter ac:name="colour">Red</ac:parameter><ac:parameter ac:name="title">No</ac:parameter> <ac:parameter ac:name="colour">Blue</ac:parameter><ac:parameter ac:name="title">$21000</ac:parameter></strong></p><ul style="list-style-type: square;">
+<li>Not needed if clients use an own IdP</li>
+<li>If we assume clients only have ADs,LDAPs in place, then it could be usefull</li>
+</ul><p><br></p><h2 id="header-5"><strong><u>Features we need</u></strong></h2><ul style="list-style-type: square;">
+<li>Groups + Group-Rules</li>
+<li>Custom Applications (OIDC/OAuth2.0 + SAML)<ul style="list-style-type: square;"><li>Application Assignments to Groups/Users/other more specific filters</li></ul>
+</li>
+<li>Password Policies</li>
+<li>Multifactor Authentication based on groups (at least: Google Authenticator, SMS, FIDO nice to have) + Factor Enrollment</li>
+<li>flexible nubmer of Identity Providers (at least OpenID Connect, SAML, social providers) + Routing Rules + JIT Provisioning [Federation]</li>
+<li>flexible number of custom Authorization Servers</li>
+<li>full API Access</li>
+<li>Logging/Monitoring/Events/Notifications</li>
+<li>Customizations<ul style="list-style-type: square;">
+<li>Appearance, Texts</li>
+<li>Custom Pages/Login Widget (whitelabel)</li>
+</ul>
+</li>
+<li>Enable/Disable Dashboard for users</li>
+<li>Self Service</li>
+<li>SSO<ul style="list-style-type: square;"><li>Single Session for a user accross all applications/authorization servers</li></ul>
+</li>
+<li>SLAs + Support</li>
+<li>Mutliple organizations/environments (like test/staging environments with one production environment)</li>
+<li>Custom domains</li>
+</ul><p><br></p><p><strong>TO DISCUSS:</strong></p><ul>
+<li>SLAs</li>
+<li>Directory Integration (this is a strategical product decission - we need to fully understand what is meant by this)</li>
+</ul><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p></li>
+<li>flexible nubmer of Identity Providers (at least OpenID Connect, SAML, social providers) + Routing Rules + JIT Provisioning [Federation]</li>
+<li>flexible number of custom Authorization Servers</li>
+<li>full API Access</li>
+<li>Logging/Monitoring/Events/Notifications</li>
+<li>Customizations<ul style="list-style-type: square;">
+<li>Appearance, Texts</li>
+<li>Custom Pages/Login Widget (whitelabel)</li>
+</ul>
+</li>
+<li>Enable/Disable Dashboard for users</li>
+<li>Self Service</li>
+<li>SSO<ul style="list-style-type: square;"><li>Single Session for a user accross all applications/authorization servers</li></ul>
+</li>
+<li>SLAs + Support</li>
+<li>Mutliple organizations/environments (like test/staging environments with one production environment)</li>
+<li>Custom domains</li>
+</ul><p><br></p><p><strong>TO DISCUSS:</strong></p><ul>
+<li>SLAs</li>
+<li>Directory Integration (this is a strategical product decission - we need to fully understand what is meant by this)</li>
+</ul><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p>

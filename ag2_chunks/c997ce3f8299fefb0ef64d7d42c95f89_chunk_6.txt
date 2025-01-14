@@ -1,0 +1,35 @@
+ This means that the value entered by the participant must be outside the number range you set. Otherwise, the plausibility check will be triggered.</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="7329"><strong data-renderer-mark="true">Combination check and combination check (range)</strong><br>Two other plausibility checks are available for questions with multiple response lists (question types 121, 122, 362, 521, 522, 621):</p>
+<ul class="ak-ul" data-indent-level="1">
+<li class="wysiwyg-text-align-justify">
+<p data-renderer-start-pos="7514">The combination check allows you to check whether a respondent has ticked a required number of checkboxes.</p>
+</li>
+<li>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="7624">The combination check (range) checks whether the number of checkboxes ticked is within a preset range.</p>
+</li>
+</ul>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq-1">What is the difference between RegEx and NoRegEx checks?</h3>
+<p>RegEx checks return "true" and trigger an error message when the input matches the specified regular expression. NoRegEx checks do the opposite, returning "true" when the input does not match the specified regular expression.</p>
+<h3 id="faq-2">How do I handle empty input fields in JavaScript plausibility checks?</h3>
+<p>To prevent misevaluation of empty input fields in JavaScript plausibility checks, use a separate OnlyNumbers check instead of combining it with a Range check using AND conjunctions.</p>
+<h3 id="faq-3">Can I use umlauts in e-mail address checks?</h3>
+<p>No, umlauts are not allowed in any part of the e-mail address (username, domain name, or country ID) for e-mail address checks.</p>
+<p> </p>
+</article> ticked a required number of checkboxes.</p>
+</li>
+<li>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="7624">The combination check (range) checks whether the number of checkboxes ticked is within a preset range.</p>
+</li>
+</ul>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq-1">What is the difference between RegEx and NoRegEx checks?</h3>
+<p>RegEx checks return "true" and trigger an error message when the input matches the specified regular expression. NoRegEx checks do the opposite, returning "true" when the input does not match the specified regular expression.</p>
+<h3 id="faq-2">How do I handle empty input fields in JavaScript plausibility checks?</h3>
+<p>To prevent misevaluation of empty input fields in JavaScript plausibility checks, use a separate OnlyNumbers check instead of combining it with a Range check using AND conjunctions.</p>
+<h3 id="faq-3">Can I use umlauts in e-mail address checks?</h3>
+<p>No, umlauts are not allowed in any part of the e-mail address (username, domain name, or country ID) for e-mail address checks.</p>
+<p> </p>
+</article>

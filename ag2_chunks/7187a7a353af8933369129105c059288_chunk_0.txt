@@ -1,0 +1,70 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K" class="wysiwyg-text-align-justify">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article covers various tools and methods for testing and validating surveys in EFS, including media checks, consistency checks, project tests, and project checks. It also explains how to reset a survey before launching it.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">This guide focuses on the different features available in the Test and Validation menu of EFS, which help ensure the quality and functionality of surveys before they go live.</p>
+<ul class="wysiwyg-text-align-justify">
+<li><a href="#media-check">Media check</a></li>
+<li><a href="#consistency-check">Consistency check</a></li>
+<li><a href="#project-test">Project test</a></li>
+<li><a href="#project-check">Project check</a></li>
+<li><a href="#reset-survey">Reset survey</a></li>
+</ul>
+<h2 id="media-check" class="wysiwyg-text-align-justify">Media Check</h2>
+<p class="wysiwyg-text-align-justify">Identifying problems with links to images and other media files is quite time-consuming, particularly for questionnaires that contain large numbers of images. The check functions located in the <strong>Test and Validation</strong> → <strong>Media check</strong> menu will make your work easier.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017226457874" alt="Media check.jpg"></p>
+<p class="wysiwyg-text-align-justify">You can display either all media, only valid media, or only media that are not available. This process will check not only multimedia elements from the questionnaire but also buttons, layout elements, and images used in the templates. The display contains the following information for each media file:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>URL</p>
+</li>
+<li>
+<p>Preview</p>
+</li>
+<li>
+<p>Source element</p>
+</li>
+<li>
+<p>Context of use</p>
+</li>
+<li>
+<p>Media type</p>
+</li>
+<li>
+<p>Language: In the case of multilingual projects, this column contains the language of the questionnaire in which the file is used.</p>
+</li>
+<li>
+<p>Status: The traffic light icon indicates whether a media file is available or invalid.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Using the link in the “Actions” column, you are able to open the menus and edit the respective media file.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="consistency-check" class="wysiwyg-text-align-justify">Consistency check</h2>
+<p class="wysiwyg-text-align-justify">The <strong>Test and validation</strong> menu contains the <strong>Consistency check</strong> function. Clicking on this menu item will open an additional window with a codebook displaying the conditions for filters, hiding conditions, triggers, and plausibility checks and containing information on the consistency of the setting. Traffic-light icons will tell you whether the setting is consistent:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Green: The setting is consistent (i.e. all variables used exist in the project).</p>
+</li>
+<li>
+<p>Yellow: The yellow color is only used with filters. It indicates that the filter conditions are consistent but the filter has not yet been checked using the filter test.</p>
+</li>
+<li>
+<p>Red: The setting is not consistent (i.e., for example, it accesses variables that no longer exist).</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The consistency check covers project variables (v_100n), user-defined variables (c_000n), and URL parameters (p_000n).</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="project-test" class="wysiwyg-text-align-justify">Project test</h2>
+<p class="wysiwyg-text-align-justify">The<strong> Project test</strong> function, located in the <strong>Test and Validation</strong> menu, makes it easier for you to test the setting of the filter by automatically simulating a large number of test sessions. The resulting statistics make it easy to detect setting problems with filters and internal quotas. The following explains the usage options offered by this function:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Producing test data</p>
+</li>
+<li>
+<p>Interpreting test data</p>
+</li>
+<li>
+<p>Deleting test data</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017213593618" alt="Project test.jpg"></p>
+<h3 id="producing-test-data" class="wysiwyg-text-align-justify">Producing test data</h

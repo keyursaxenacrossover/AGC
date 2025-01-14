@@ -1,0 +1,104 @@
+ number</p>
+</td>
+</tr>
+<tr style="height: 44px;">
+<td style="height: 44px; width: 106.944px;">
+<p>tester</p>
+</td>
+<td style="height: 44px; width: 569.722px;">
+<p>Indicates whether the participant in question is a tester (not for anonymous projects), 1 being for a tester and 0 for a normal participant.</p>
+</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px; width: 106.944px;">
+<p>dispcode</p>
+</td>
+<td style="height: 22px; width: 569.722px;">
+<p>The participant’s disposition code</p>
+</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px; width: 106.944px;">
+<p>loop</p>
+</td>
+<td style="height: 22px; width: 569.722px;">
+<p>Loop ID</p>
+</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px; width: 106.944px;">
+<p>loopnumber</p>
+</td>
+<td style="height: 22px; width: 569.722px;">
+<p>Number of the loop cycle</p>
+</td>
+</tr>
+<tr style="height: 271px;">
+<td style="height: 271px; width: 106.944px;">
+<p>le_nr</p>
+<p>(in case of nesting gle_nr, ple_nr, le_nr)</p>
+</td>
+<td style="height: 271px; width: 569.722px;">
+<p>List element no. of the element to which the respective loop cycle refers. Which elements are used in the loop depends on the inclusion conditions for the list and the loop.</p>
+<p>If several loops are nested (no more than three possible), the list elements displayed at a certain stage of the loop cycle are coded as follows:</p>
+<ul>
+<li>
+<p>The list element at the top nesting level is marked with gle_ (g = “grand”), i.e. ple_nr represents the list element number and ple_text the output text.</p>
+</li>
+<li>
+<p>The list element at the next level is marked with ple_ (p = “parent”).</p>
+</li>
+<li>
+<p>The list element loaded by the loop at the center of the nest is marked with le_.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px; width: 106.944px;">
+<p>le_text</p>
+</td>
+<td style="height: 22px; width: 569.722px;">
+<p>The text output for the respective list element</p>
+</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px; width: 106.944px;">
+<p>v_000x</p>
+</td>
+<td style="height: 22px; width: 569.722px;">
+<p>The answers are given in the respective cycle</p>
+</td>
+</tr>
+<tr style="height: 44px;">
+<td style="height: 44px; width: 106.944px;">
+<p>duration</p>
+</td>
+<td style="height: 44px; width: 569.722px;">
+<p>The duration of survey completion, i.e. the time elapsed between the respondent’s first and last accessing of the questionnaire.</p>
+</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px; width: 106.944px;">
+<p>lastaccs</p>
+</td>
+<td style="height: 22px; width: 569.722px;">
+<p>Date and time of when the survey was last accessed.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h4 class="wysiwyg-text-align-justify"> </h4>
+<h4 id="efs-features-with-limited-or-no-functionality-in-loop-projects" class="wysiwyg-text-align-justify"><strong>EFS Features with Limited or No Functionality in Loop Projects</strong></h4>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The <em>Back button</em> cannot be used within a loop branch due to the dynamic creation of the loop pages.</p>
+</li>
+<li>
+<p>If <em>randomization and/or random selection</em> are applied to the list elements of a loop and a participant <em>resumes</em> the questionnaire after an interruption, randomization or random selection will be executed anew when entering the loop. I.e. on resumption, the participant may see other elements in another sort of order.</p>
+</li>
+<li>
+<p>If the answer options of the source question of a loop are grouped, the display depends on the group items. To display the answer options, the allocated group item must always be part of the list (inclusion condition “always in list”). If a group item is not part of the list, its allocated answer options are skipped in the loop.</p>
+</li>
+<li>
+<p>The<em> plausibility check editor</em> does not accept the v_x_y variable names (v_variablenumber_listelementnumber) used in loops. If you wish to access the current value of a variable in a loop, simply use the conventional variable name instead, e.g. v_x, and omit

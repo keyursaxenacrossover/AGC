@@ -1,0 +1,44 @@
+-align-justify">To create a new template, click on the <strong>Manage Mail templates</strong> link. The <strong>Libraries</strong> → <strong>Mail templates</strong> menu, which allows you to create the desired new template, will be opened in a pop-up window.</p>
+<h3 id="creating-new-mail-template" class="wysiwyg-text-align-justify"><strong>Creating a new mail template</strong></h3>
+<p class="wysiwyg-text-align-justify">To create a new template, click on the button + <strong>New draft</strong> and select the desired option. You have different template types for the Panel website, survey project, and portals. Depending on whether you want to create a template for the Panel website, a survey project, or portals, the available template types also change.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015444588050" alt="New template.jpg"></p>
+<p class="wysiwyg-text-align-justify">In addition to selecting an e-mail template type, you also specify a language version, enter a short description in the free text field, and choose a delivery method. The following types are available:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>E-Mail</p>
+</li>
+<li>
+<p>SMS</p>
+</li>
+<li>
+<p>E-Mail und SMS</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Configuring advanced mail settings</strong></p>
+<p class="wysiwyg-text-align-justify">The “Advanced mail settings” area, which provides various special functions, is usually hidden. You can easily show or hide this dialog as required.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015414428690" alt="Advanced mail settings.jpg"></p>
+<p class="wysiwyg-text-align-justify"><strong>Character set</strong></p>
+<p class="wysiwyg-text-align-justify">The character set for e-mails is set separately and can depending on your requirements vary from the settings for the character set for the overall project. This can be sensible, if:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>in a project carried out using UTF-8, you are not sure whether the mail program of the majority of respondents is compatible with this character set. Most modern mail programs can display UTF-8 correctly, in particular with internet-based mail programs complications can arise.</p>
+</li>
+<li>
+<p>you will be carrying out a project, that will use a character set other than UTF-8 or diverse character sets, where you would like to use UTF-8 or another divergent character set for the display of special characters in e-mails.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">For the mail form, the character set ISO-8859-1 is preset by default.</p>
+<p class="wysiwyg-text-align-justify"><strong>Conversion problems with Windows-specific characters</strong></p>
+<p class="wysiwyg-text-align-justify">When you copy and paste from a Microsoft program, such as MS Word or Excel to an e-mail form, that is coded in a character set other than UTF-8, conversion problems may occur: If the text contains Windows-specific characters that are not in the character set of the mail form, then these must be converted.</p>
+<p class="wysiwyg-text-align-justify"><em>EFS Survey</em> can convert many Windows-specific characters correctly, however the conversion will still require checking. Characters, for which there is no match, will be deleted completely from the mailtext because they could not be sensibly converted (for example Chinese characters could not be displayed in a ISO-8859-1 coded questionnaire). Therefore a warning message will be displayed in the mail preview, that asks you to make a check, as soon as you open an e-mail with characters that have been converted or cannot be displayed.</p>
+<p class="wysiwyg-text-align-justify"><strong>Reply-To: = From</strong></p>
+<p class="wysiwyg-text-align-justify">The “Reply-To” information in an e-mail indicates where the recipient is to send any replies. Making different entries may be advisable, for example, in surveys you conduct for a third party. Under “Sender”, you can then enter your customer’s address: This will be displayed for the recipient and may increase their willingness to respond. However, the “Reply-To” address makes sure that the reply mail will be sent to you as the supervisor of the survey. Furthermore, server messages indicating that an e-mail could not be delivered will also be sent to the “Reply-To” address. You can set the “Reply-To” address using the drop-down list contained in the row of the same name.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Read rights for “mail_reply” are required for accessing and using this field, plus the “Return-Path” and “Read confirmation” options explained in the following sections.</p>
+</li>
+<li>
+<p>The default setting is “Reply-To = From”, i.e. the sender’s address will be used.</p>
+</li>
+<li>
+<p>If you complete a mail form without read rights for “mail_reply”, i.e. without seeing the “Reply-To” and “

@@ -1,0 +1,105 @@
+ external editing” will create a CSV file containing the variable's information, which you can load onto your workstation. You can specify which character set is to be used.</p>
+</li>
+<li>
+<p>When editing you enter the new external variable name in the “New varname” column.</p>
+</li>
+<li>
+<p>The “Import externally edited variable names” option allows you to re-import the externally edited list in CSV format into EFS Survey. Here, too, the correct character set must be specified.</p>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><strong>Undoing changes</strong></p>
+<p class="wysiwyg-text-align-justify">Changes to external variable names can be undone applying the “Restore original variable names” options.</p>
+<h2 id="defining-export-templates" class="wysiwyg-text-align-justify"><strong>Defining Export Templates</strong></h2>
+<p class="wysiwyg-text-align-justify">You can define your templates based on existing default export templates. This can be useful, for example, if you frequently need only specific excerpts from the result data.</p>
+<p class="wysiwyg-text-align-justify">Please note: When copying projects, user-defined export templates are not included.</p>
+<h3 id="overview-of-existing-export-templates" class="wysiwyg-text-align-justify"><strong>Overview of Existing Export Templates</strong></h3>
+<p class="wysiwyg-text-align-justify">The <strong>Export</strong> → <strong>Export templates </strong>menu (until EFS 10.3: <strong>Template editor</strong>) contains a list of the templates that have been set up for the respective project and the functions for creating new templates.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The default templates of the “Static template” type cannot be changed or deleted. Even though it is possible to download these templates, the modified templates must then be uploaded under a different name, in a newly created user-defined template.</p>
+</li>
+<li>
+<p>Templates of the “User-defined template” type can be edited and deleted.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The following icons are in the “Action” column:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Upload definitions for template “...”</strong>: This function is only available for user-defined templates you have created. You can use it to upload an edited definition file.</p>
+</li>
+<li>
+<p><strong>Download template as CSV file</strong>: The downloaded file has the .csv file type.</p>
+</li>
+<li>
+<p><strong>Download template as Excel file</strong>: The downloaded file has the .xls or .xlsx file type</p>
+<p>and can be edited in MS Excel.</p>
+</li>
+<li>
+<p><strong>Save as a new template</strong>: You can save the selected template as a new template, allowing you to download and edit it afterward.</p>
+</li>
+<li>
+<p><strong>View template</strong>: The export template will open in a table.</p>
+</li>
+<li>
+<p><strong>Delete template</strong>.</p>
+</li>
+</ul>
+<h3 id="viewing-user-defined-templates-and-sorting-their-contents" class="wysiwyg-text-align-justify"><strong>Viewing User-defined Templates and Sorting Their Contents</strong></h3>
+<p class="wysiwyg-text-align-justify">Clicking on the name of a template or the <strong>View template </strong>icon will display its content in a table that cannot be edited.</p>
+<p class="wysiwyg-text-align-justify">It contains the following information for each variable of the template:</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour="#57d9a3">
+<p><strong>Column</strong></p>
+</th>
+<th data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Activated</p>
+</td>
+<td>
+<p>If the variable is activated (Yes = 1), it will be exported in the data record. If it is not activated (No = 0), it will not be exported.</p>
+<p>With the template shown above, you would only export those variables from the address record that contains the participants’ postal addresses (first name, name, street, zip code, city, and country).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Position</p>
+</td>
+<td>
+<p>The position of the column in the exported data record.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Width</p>
+</td>
+<td>
+<p>The width of the column.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Alignment</p>
+</td>
+<td>
+<p>The alignment of the data for Fixed Format and Quantum export.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Ext. varname</p>
+</td>
+<td>
+<p>The SPSS label and header in Excel.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Description</p>
+</

@@ -1,0 +1,62 @@
+ processing all inclusion conditions, etc.) which list property is to be transferred into which destination variable. The available list properties are element number and element label.</p>
+</li>
+<li>
+<p>After clicking on <strong>Save</strong>, the settings will be adopted and the line “New” for selecting the next list element will be displayed again.</p>
+</li>
+<li>
+<p>In the lower sections, you can set list options and sort the order of the list elements.</p>
+</li>
+<li>
+<p>Then, confirm by clicking on <strong>Save</strong>.</p>
+</li>
+</ul>
+<h3 id="list-trigger-data-in-the-export" class="wysiwyg-text-align-justify">List Trigger data in the Export</h3>
+<p class="wysiwyg-text-align-justify">In the example shown above, three elements are selected at random from the list of elements that the respondents selected in the questionnaire. The list trigger writes these, or rather their labels, in three user-defined variables.</p>
+<h2 id="bonus-trigger" class="wysiwyg-text-align-justify">Bonus trigger</h2>
+<p class="wysiwyg-text-align-justify">In panel and master data surveys, you can award bonus points for reaching a particular page of the questionnaire, for giving a correct answer, or for other events.</p>
+<h3 id="features-2" class="wysiwyg-text-align-justify">Features</h3>
+<p class="wysiwyg-text-align-justify"><em>EFS</em> offers a lot of freedom when allocating bonus points:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>A panelist may receive more allocations in one survey.</p>
+</li>
+<li>
+<p>A potential allocation on the final page of the survey does not affect any bonus point allocations via a bonus trigger. In particular, you may use triggers and the final page to allocate different amounts of points.</p>
+</li>
+<li>
+<p>You may use multiple bonus triggers within one survey.</p>
+</li>
+<li>
+<p>You can use the bonus trigger only for allocating points. The subtraction of points makes no sense within the context of a survey and is therefore not possible.</p>
+</li>
+</ul>
+<h3 id="configuring-bonus-triggers" class="wysiwyg-text-align-justify">Configuring Bonus Triggers</h3>
+<p class="wysiwyg-text-align-justify">The basic settings are the same as for other trigger types. Additionally, the following settings specific to this type of trigger have to be performed:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Bonus points to be allocated: In this field, you define how many points the trigger is supposed to allocate to the panelists.</p>
+</li>
+<li>
+<p>Trigger behavior: If the respective panelist has already been allocated points by another bonus trigger, it is up to you to decide whether the current trigger shall be executed.</p>
+</li>
+</ul>
+<h3 id="configuring-bonus-trigger-entry-in-the-bonus-points-history" class="wysiwyg-text-align-justify">Configuring bonus trigger entry in the bonus points history</h3>
+<p class="wysiwyg-text-align-justify">Every allocation of bonus points is logged in the respective panelist’s bonus points history. At the time it is not possible to define a different text for every bonus trigger and every final page. Instead, the message “Entry into panelist’s bonus points history” is defined in the <strong>Project properties</strong>→ <strong>Survey messages</strong> menu and is used for all allocations within the project. Therefore, make sure to enter a meaningful general text.</p>
+<h2 id="panel-group-trigger" class="wysiwyg-text-align-justify">Panel group trigger</h2>
+<p class="wysiwyg-text-align-justify">After they have taken part in a survey, it may often be convenient to collect the panelists in a specific panel group, e.g. to facilitate incentivization or other follow-up processes. The panel group trigger allows you to do this without much effort. It is also possible to remove panelists from a group.</p>
+<h3 id="configuring-the-panel-group-trigger" class="wysiwyg-text-align-justify">Configuring the Panel Group Trigger</h3>
+<p class="wysiwyg-text-align-justify">The panel group trigger is available in panel surveys and master data surveys. The basic settings are the same as for other trigger types. Additionally, the following settings specific to this type of trigger have to be performed:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Group category</p>
+</li>
+<li>
+<p>Target group.</p>
+</li>
+<li>
+<p>Trigger mode: You can choose whether the respective panelist is to be added to or removed from the group.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The update rule “Copy from survey to group” provides the “Add panelist to group” function for the updating of groups.</p>
+<h2 id="pre-qualification-trigger" class="wysiwyg-text-align-justify">Pre-qualification trigger</h2>
+<p class="wysiwyg-text-align-justify">The <em>Pre-Qualification trigger</em> can be used to import participants as panelists. They have to take part in an <em>Anonymous survey</em> (AN), a <em>Personalized survey</em> (PE), <em>Employee survey</em> (ES).

@@ -1,0 +1,78 @@
+</em> can be created on any page of the survey project. If the <em>Task Trigger</em> is created on the final page, for example, it will be triggered upon completion of the survey. The <em>Task Trigger</em> is configured on the basis of a selected Employee project storing the required organizational structure and the respective Action module the <em>Task Trigger</em> accesses when triggering the task. A number of conditions and settings define if a task is created and what content is stored in this task. The target unit for a task needs to be provided in a variable of the originating survey. In case a unit cannot be found, a survey runtime error is thrown and the survey‘s error notification recipients will be notified. The survey wildcards can be used to dynamically fill Action Planner variables. Conditions can be defined to provide different content based on predefined rules. Default fields for defining the task cannot be removed and must have a value.</p>
+<p>To create the Task Trigger, proceed as follows:</p>
+<ul>
+<li>
+<p>Navigate via the following path to the Task Trigger in your survey project:</p>
+</li>
+</ul>
+<p>[Selected project] → <strong>Questionnaire editor</strong> → [Selected page] → <strong>Triggers</strong></p>
+<ul>
+<li>
+<p>The Trigger list is opened.</p>
+</li>
+<li>
+<p>Click on the button <strong>+ Trigger</strong>.</p>
+</li>
+<li>
+<p>Enter a<strong> Title</strong> for the trigger into the text field. Alternatively, you can enter the title in step 5.</p>
+</li>
+<li>
+<p>Activate the option<strong> Task Trigger</strong> and click on the button <strong>Create</strong>.</p>
+</li>
+</ul>
+<p>The <em>Task Trigger</em> is created and the tab <strong>Settings</strong> is opened.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017112887442" alt="image2019-5-15_15-22-47.png"></p>
+<ul>
+<li>
+<p>Assign a <strong>Title </strong>for the trigger if not yet done.</p>
+</li>
+<li>
+<p>Optionally, you can fill in a <strong>Description</strong>.</p>
+</li>
+<li>
+<p>Via the<strong> Execution position</strong>, you can define when the trigger is going to be executed. If you want the trigger to be executed directly, it will be triggered upon loading of the page, that is as soon as a survey participant reaches this page. If you want the trigger to be executed after submitting page, it will be triggered upon submitting the page, that is as soon as a survey participant leaves this page.</p>
+</li>
+</ul>
+<p>On the final page, only the direct execution of the <em>Task Trigger</em> is possible. If you want to perform step 8, save your previous information first!</p>
+<ul>
+<li>
+<p>Optionally, define a <strong>Condition</strong> for the execution of the trigger to adapt the trigger‘s behavior respectively. In order to do so, click on <strong>Edit</strong> in the row <strong>Condition</strong>, enter as usual variable, condition, and value into the entry mask in the condition editor, and confirm with<strong> Save</strong>.</p>
+</li>
+</ul>
+<p>Switch back to the tab <strong>Settings</strong> by clicking on the link <strong>Back</strong>.</p>
+<ul>
+<li>
+<p>If you want the trigger to be executed in preview mode also, check the respective box.</p>
+</li>
+<li>
+<p>If you want the trigger to be executed multiple times in one survey session, check the respective box.</p>
+</li>
+<li>
+<p><strong>Save</strong> your information.</p>
+</li>
+<li>
+<p>Click on the tab <strong>Detail Configuration</strong>. The tab<strong> Detail configuration</strong> is opened.</p>
+</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017142426130" alt="image2019-5-15_15-29-17.png"></p>
+<ul>
+<li>
+<p>Select the Employee target project in which the task is going to be created. The section Task definition with a list of definable target variables is opened.</p>
+</li>
+<li>
+<p>Select the survey variable storing the <strong>meta name of the organizational unit</strong>, enabling the trigger to assign the task to the relevant unit.</p>
+</li>
+<li>
+<p>In the section <strong>Task definition</strong>, enter values for the target variables into the five predefined required fields.</p>
+</li>
+<li>
+<p>With the variable <strong>Completion date</strong>, you define how many days the task has to be finished.</p>
+</li>
+<li>
+<p>With the variable <strong>Action status</strong>, you define if the task has the status <em>Not started</em>, <em>Started,</em> or <em>Finished</em>.</p>
+</li>
+<li>
+<p>Optionally, you can add new assignments. In order to do so, click on the button <strong>Add</strong> and define more target variables and their values.</p>
+</li>
+<li>
+<p>Optionally, you can define a condition for each assignment. In order to do so, click in the column <strong>Condition</strong> on the<strong> sign</strong> icon of the respective assignment, enter as usual variable, condition

@@ -1,0 +1,23 @@
+strong>app</strong> (where it can either clear the app session alone or the app session + the Identity Provider session)</p>
+<p>The <strong>external Identity Provider</strong> session is only invalidated if the user signs out there.</p>
+<p>The different states which can be achieved by that can be seen in the examples above.</p>
+<h2 id="01J5X4BYKHC2NFJFY47QZRD0A0">Default Session Times</h2>
+<p>(Please note that these are times are configured right now in okta)</p>
+<p><strong>Identity Provider Session</strong> (Okta): 2 hours</p>
+<p><strong>Application Session</strong> (EFS): 1 hour </p>
+<p><strong>Application Session</strong> (Portals): 1 day </p>
+<p><strong>External Identity Provider Session</strong>: Not configurable by us, only the client can change that</p>
+<h2 id="01J5X4BYKJBQVSMPGXT5Y5M57H">Where are Sessions stored in our current Architecture?</h2>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20910035913106" alt="Session Lifetimes - Schön.png"></p>
+<p style="text-align: center;">“Locations” of sessions in the architecture diagram</p>strong>app</strong> (where it can either clear the app session alone or the app session + the Identity Provider session)</p>
+<p>The <strong>external Identity Provider</strong> session is only invalidated if the user signs out there.</p>
+<p>The different states which can be achieved by that can be seen in the examples above.</p>
+<h2 id="01J5X4BYKHC2NFJFY47QZRD0A0">Default Session Times</h2>
+<p>(Please note that these are times are configured right now in okta)</p>
+<p><strong>Identity Provider Session</strong> (Okta): 2 hours</p>
+<p><strong>Application Session</strong> (EFS): 1 hour </p>
+<p><strong>Application Session</strong> (Portals): 1 day </p>
+<p><strong>External Identity Provider Session</strong>: Not configurable by us, only the client can change that</p>
+<h2 id="01J5X4BYKJBQVSMPGXT5Y5M57H">Where are Sessions stored in our current Architecture?</h2>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20910035913106" alt="Session Lifetimes - Schön.png"></p>
+<p style="text-align: center;">“Locations” of sessions in the architecture diagram</p>

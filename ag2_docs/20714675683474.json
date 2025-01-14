@@ -1,0 +1,30 @@
+{
+    "id": 20714675683474,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/20714675683474.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20714675683474-Finding-Orphan-Projects-on-Shared-Installations",
+    "author_id": 369584192734,
+    "comments_disabled": false,
+    "draft": false,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20714530860562,
+    "created_at": "2024-08-12T16:55:05Z",
+    "updated_at": "2024-09-10T14:12:08Z",
+    "name": "Finding Orphan Projects on Shared Installations",
+    "title": "Finding Orphan Projects on Shared Installations",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-09-10T14:12:08Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075294,
+    "content_tag_ids": [],
+    "label_names": [],
+    "body": "<h1 id=\"h_01J7E48RZ8BW1HKWPS4560X9MV\">Overview</h1>\n<p>This article will help you identify projects with deleted organisations on shared installations like Unipark or Umfragecenter.</p>\n<p>The underlying issue causing the orphaned state of projects is that when deleting an organisation their respective users and teams get deleted, however their projects remain.</p>\n<h1 id=\"header-1\">Instructions</h1>\n<ol>\n<li>\n<p>In the database of the installation identify the projects (<em>project</em>) that are not linked (<em>projects_org</em>) to any active organisation (<em>admin_contract_org</em>)</p>\n<pre><code class=\"language-text\">SELECT p.pid, po.oid, ao.title, p.ptitle, p.pstart, p.pfinish, p.pauth \nFROM project AS p LEFT JOIN project_org AS po ON p.pid=po.pid LEFT JOIN archive_organizations AS ao ON po.oid=ao.oid \nWHERE p.pid \n    IN (SELECT pid FROM project WHERE pid \n        IN (SELECT pid FROM project_org WHERE oid \n             NOT IN (SELECT id FROM admin_contract_org)\n            )\n        );</code></pre>\n</li>\n<li>\n<p>The information collected with this needs to be passed on to 1st Level.</p>\n</li>\n<li>\n<p>Save the respective project IDs in a file to create a spreadsheet later.<br>(example from outside the database)</p>\n<pre><code class=\"language-text\">mysql -u USER -h HOST --password=PASSWORD -P PORT DBNAME -A -t -e\"SELECT p.pid, po.oid, ao.title, p.ptitle, p.pstart, p.pfinish, p.pauth FROM project AS p LEFT JOIN project_org AS po ON p.pid=po.pid LEFT JOIN archive_organizations AS ao ON po.oid=ao.oid WHERE p.pid IN (SELECT pid FROM project WHERE pid IN (SELECT pid FROM project_org WHERE oid NOT IN (SELECT id FROM admin_contract_org)))\" &gt; /dumps/orphanedprojects.txt</code></pre>\n<p>(from inside the database)</p>\n<pre><code class=\"language-text\">SELECT pid FROM project WHERE pid IN (SELECT pid FROM project_org WHERE oid NOT IN (SELECT id FROM admin_contract_org)) INTO OUTFILE '/nfs/opst14_temp/www.unipark.de/test.csv' FIELDS TERMINATED BY ';' ENCLOSED BY '\"' LINES TERMINATED BY '\\n';</code></pre>\n<p><strong><span style=\"color: #ff5630;\">Remember to replace the information relevant to the installations!</span></strong></p>\n</li>\n<li>\n<p>Create a dummy Organisation, Team and User.<br>Note the Organistation and Team ID for use in the queries <br>and save the User and the Password</p>\n</li>\n<li>\n<p>Now in order for the dummy user to be able to see the projects, the dummy team needs permissions on the projects. This happens in the <em><strong>drago</strong> </em>table. So now we create a file we will source in the last step:</p>\n<pre><code class=\"language-text\">SELECT CONCAT(\"REPLACE INTO drago (oid,gid,rc) VALUES (\",pid,\",DUMMY TEAM ID,3);\") FROM project WHERE pid IN (SELECT pid FROM project_org WHERE oid NOT IN (SELECT id FROM admin_contract_org)) INTO OUTFILE '/nfs/opst8_temp/ww2.unipark.de/test.sql' LINES TERMINATED BY '\\n';</code></pre>\n<p><strong><span style=\"color: #ff5630;\">Remember to replace the information relevant to the installations!</span></strong><br>Alternative if permission denied to the above:</p>\n<pre><code class=\"language-text\">echo 'SELECT CONCAT(\"REPLACE INTO drago (oid,gid,rc) VALUES (\",pid,\",35894,3);\") FROM project WHERE pid IN (SELECT pid FROM project_org WHERE oid NOT IN (SELECT id FROM admin_contract_org))' | efslogin &gt; orphans.sql</code></pre>\n<p>→ need to clean up the first 3 lines in the script!!</p>\n</li>\n<li>\n<p>Copy this file to the htdocs folder of the installation. In this location we can source the file to the sql server.</p>\n<pre><code class=\"language-text\">mv /nfs/opst[]_temp/[ab1234].customervoice360.com/test.sql .</code></pre>\n<p>The “.” is important. </p>\n</li>\n<li>\n<p>To link the orphaned projects to the dummy organisation we need to add the following statement to the first line of the <em>test.sql</em> file created in the previous step:</p>\n<pre><code class=\"language-text\">UPDATE project_org\nSET oid= DUMMY ORGANISATION ID\nWHERE pid\nIN ();</code></pre>\n<p>The () of the statement needs to be filled in an SQL conform notation with the <em>pid</em>s from:</p>\n<pre><code class=\"language-text\">SELECT pid FROM project WHERE pid IN (SELECT pid FROM project_org WHERE oid NOT IN (SELECT id FROM admin_contract_org));</code></pre>\n<p><strong><span style=\"color: #ff5630;\">This statement will only work until this step. Make sure you have the project ids saved if you need them elsewhere!</span></strong></p>\n</li>\n<li>\n<p>Source the file.</p>\n<pre><code class=\"language-text\">SOURCE test.sql;</code></pre>\n<p> </p>\n</li>\n<li>\n<p>Now all the orphaned installations should be visible upon login as the dummy user. You can find the projects in the projects list and in the archive.</p>\n</li>\n</ol>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

@@ -1,0 +1,98 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K" class="wysiwyg-text-align-justify">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article explains how to use the Print version feature in the Questionnaire editor of EFS. It covers the purpose of the print version, its configuration, and various display options available to users.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">The Print version feature allows users to view and print the entire contents of a questionnaire in a neutral print design, independent of the layout settings. This is useful for testing, proofreading, and future reference purposes.</p>
+<ul class="wysiwyg-text-align-justify">
+<ul>
+<ul>
+<ul>
+<li><a href="#overview">Print version Overview</a></li>
+<li><a href="#configuring-the-print-version">Configuring the Print Version</a></li>
+<li><a href="#display-options-in-detail">Display Options in Detail</a></li>
+</ul>
+</ul>
+</ul>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<h3 id="overview" class="wysiwyg-text-align-justify">Print version Overview</h3>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The entire contents of the questionnaire will be displayed in a neutral print design which is independent of the layout settings you selected. For EFS 9.1, the print design has been overhauled. In particular, the content is now arranged more clearly and the questions are aligned on the left hand.</p>
+</li>
+<li>
+<p>In multilingual projects, you can specify the display language of the questionnaire.</p>
+</li>
+<li>
+<p>Optionally, the page ID can be displayed as a clickable link: It takes you directly to</p>
+<p>the page view of the questionnaire editor.</p>
+</li>
+<li>
+<p>Another optionally-displayed link (<strong>L</strong>) allows you to switch directly to the language editor.</p>
+</li>
+<li>
+<p>Additional information such as filters or pretest comments can be displayed as well, if necessary.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The “Responsive layout” question types newly introduced from EFS 10.0 onwards are mapped to their basic question types. I.e. “Single response list with icons” and “Star rating” are displayed like a vertical single response list, and the “Responsive layout” slider is displayed as a question type 911.</p>
+<h3 id="configuring-the-print-version" class="wysiwyg-text-align-justify">Configuring the Print Version</h3>
+<p class="wysiwyg-text-align-justify">Please proceed as follows:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>
+<p>Click on the menu item <strong>Projects</strong> → {<strong>Selected project</strong>} → <strong>Print version</strong>.</p>
+</li>
+<li>
+<p>This will prompt a new window with a printer-friendly HTML version of the questionnaire.</p>
+</li>
+<li>
+<p>In multilingual projects, you can specify the language and confirm your selection by clicking on <strong>Save settings</strong>.</p>
+</li>
+<li>
+<p>Optionally, you can select various additional information and activate their display by clicking on <strong>Save settings</strong>.</p>
+</li>
+<li>
+<p>Click on the <strong>Print </strong>icon.</p>
+</li>
+</ol>
+<h3 id="display-options-in-detail" class="wysiwyg-text-align-justify">Display Options in Detail</h3>
+<p class="wysiwyg-text-align-justify">Optionally, you can select the following additional options and display them by clicking on <strong>Save settings</strong>.</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Option</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Print options</p>
+</td>
+<td>
+<p>Usually, the sections “Display options” and “Information on survey x” are not included when printing the questionnaire. If necessary, these sections may be included.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Show internal links</p>
+</td>
+<td>
+<p>Optionally, the page ID can be displayed as a clickable link to the page view of the questionnaire editor. Furthermore, an <strong>L </strong>link allows you to switch directly to the language editor.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Show filters / plausibility checks / triggers</p>
+</td>
+<td>
+<p>The conditions are displayed.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Enable randomization of answer options</p>
+</td>
+<td>
+<p>The answer options are

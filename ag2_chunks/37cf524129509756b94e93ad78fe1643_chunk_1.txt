@@ -1,0 +1,65 @@
+creating-a-form" class="wysiwyg-text-align-justify"><strong>Creating a Form</strong></h3>
+<p class="wysiwyg-text-align-justify">By clicking on the Create form button you can open the dialog used to configure a new form.</p>
+<h3 id="form-properties" class="wysiwyg-text-align-justify"><strong>Form Properties</strong></h3>
+<p class="wysiwyg-text-align-justify">The table lists the properties a form can have.</p>
+<table class="wrapped wysiwyg-text-align-justify" style="margin-right: auto; margin-left: auto;" border="1">
+<colgroup> <col> <col> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center">Field</th>
+<th class="wysiwyg-text-align-center">Description</th>
+</tr>
+<tr>
+<td>Website / Language version</td>
+<td>
+<p>Website and language version to which the form belongs. Cannot be changed subsequently.</p>
+</td>
+</tr>
+<tr>
+<td>Form name</td>
+<td>Name of the form</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Description for internal purposes only</td>
+</tr>
+<tr>
+<td>Form type</td>
+<td>
+<p>The form type determines the function module where the form can be used.</p>
+<p>You can choose from the following types</p>
+<ul>
+<li>Registration: Available in the “Registration form” function module.</li>
+<li>Changing data (logged-in panelists only): Available in the “Change data” function module.</li>
+<li>Profile: Available in the “Profile search” function module.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Default form</td>
+<td>
+<p>Depending on the form type, the default form is either displayed on the “Registration” or “Change data” page, if they were created with EFS version 5.1 or earlier.</p>
+<p>The default form’s “Additionally save in” option is used for the current language/use case when panelists register or change their data per Web service.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="configuring-the-variables-of-a-form" class="wysiwyg-text-align-justify"><strong>Configuring the Variables of a Form</strong></h2>
+<h3 id="overview-of-form-variables" class="wysiwyg-text-align-justify"><strong>Overview of Form Variables</strong></h3>
+<p class="wysiwyg-text-align-justify">To view the variables belonging to a form, click on the form name in the overview table. Alternatively, you can also click on the <strong>Edit Variables</strong> button in the form’s properties dialog. This takes you to an overview table that lists the form’s variables along with their key properties.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014859864338" alt="variables.png"></p>
+<h3 id="configuring-variables" class="wysiwyg-text-align-justify"><strong>Configuring Variables</strong></h3>
+<p class="wysiwyg-text-align-justify">If you wish to change an existing variable configuration, click on the <strong>Edit variable x in the form y</strong> icon in the overview.</p>
+<h3 id="creating-a-new-variable" class="wysiwyg-text-align-justify"><strong>Creating a New Variable</strong></h3>
+<p class="wysiwyg-text-align-justify">If you wish to create a new variable, click on the <strong>Add variable</strong> icon in the overview.</p>
+<h3 id="outputting-variable-characteristics-in-a-form" class="wysiwyg-text-align-justify"><strong>Outputting Variable Characteristics in a Form</strong></h3>
+<p class="wysiwyg-text-align-justify">The order in which the variable characteristics are displayed in the form depends on the codes; it starts with the smallest available code. It is not possible to set a divergent order or define different language-dependent orders.</p>
+<h2 id="special-features-of-registration-and-data-change-forms" class="wysiwyg-text-align-justify"><strong>Special Features of Registration and Data Change Forms</strong></h2>
+<p class="wysiwyg-text-align-justify">Correct collection of registration data and their subsequent maintenance, in particular of panelists’ contact data, is essential for panel operation:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Collected data should be as accurate as possible.</li>
+<li>Registration data should be stored in such a way that they are available later for processes in which they are necessary. Gender, for example, is often required for forming groups and should therefore be available as a master data item. Panelists’ first names, on the other hand, are not needed for forming groups and drawing samples, but are important for establishing contact: They should be stored as address data items.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The form types “Registration” and “Data change” provide you with great flexibility in adjusting the forms to the requirements of a specific panel:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>As in the past, you can perform plausibility checks on data entered by candidates as soon as on entry. This reduces the risk of erroneous or deliberately false entry of important data, such as names and e-mail addresses. In E

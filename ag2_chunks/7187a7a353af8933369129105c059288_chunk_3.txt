@@ -1,0 +1,89 @@
+ class="wysiwyg-text-align-justify">Project check</h2>
+<p class="wysiwyg-text-align-justify">The project check informs you about the progress and faults made during project creation.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The upper part of the dialog contains an overview of central topics.</p>
+</li>
+<li>
+<p>Furthermore, questionnaire structure, filter conditions, timing etc. are checked for logical consistency. Potential problems are listed with the respective problem grade.</p>
+</li>
+<li>
+<p>The Project check or Check layout cannot be used for the “Responsive Layout”. The checks are optimized for the scope of the classic system layout.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017213595538" alt="Project check.jpg"></p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 325.0px;"> <col style="width: 435.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Check</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Errors while processing the survey</p>
+</td>
+<td>
+<p><em>EFS</em> checks for errors in LUA filters, quotas, and triggers while processing the survey.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Current selected language</p>
+</td>
+<td>
+<p>Indicates the standard language.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>In multilingual projects: Translation status</p>
+</td>
+<td>
+<p>Indicates whether all of the text elements of the different survey languages have been filled and has a link to the overview of the To-dos.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Only for projects with classic system layout: Layout status</p>
+</td>
+<td>
+<p>Provides information on the correctness of the layouts in use.</p>
+<p>If the layout is no longer current, you have the option of clicking on the <strong>Check layout</strong> link to switch to the Pro editor, where you can fix the problem.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Number of variables in the survey table</p>
+</td>
+<td>
+<p>Several variables. The number may change when compiling the project.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="reset-survey" class="wysiwyg-text-align-justify">Reset survey</h2>
+<p class="wysiwyg-text-align-justify">All data created e.g. by tests in productive mode must be deleted before the start of the survey. Open the <strong>Test and Validation → Reset survey</strong> menu. Select “...reset survey completely...” and click on Reset survey. Now the database is cleaned and all test data is deleted.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017213598738" alt="Reset survey.jpg"></p>
+<p class="wysiwyg-text-align-justify"><strong>Complete resetting of a survey before starting into the field</strong></p>
+<p class="wysiwyg-text-align-justify">Before starting into the field, i.e. the start of the proper data collection phase, the survey is usually reset completely to clean various types of unwanted data from the database. For this purpose, the option “Reset survey completely and delete all survey data collected so far” is used.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Usually, projects are reset completely before starting into the field to remove any results created during the test phase. This is recommendable, in particular, if you have created real data records while testing an anonymous project or if you have used not only dedicated test accounts but true participant accounts when testing a personalized project.</p>
+</li>
+<li>
+<p>If superfluous questions or pages were created and deleted later, the variables of these questions or pages are kept in the database. When resetting prior to the field start, these superfluous variables are displayed and you can optionally delete them. They can also be used to restore data. In principle, it is no problem to keep superfluous variables in the database. But in big, complex projects this clean-up may improve the performance.</p>
+</li>
+<li>
+<p>If you have used the pretest feature, it is optionally possible to delete the comments as well.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Resetting in later stages</strong></p>
+<p class="wysiwyg-text-align-justify">As soon as the survey is in the field, i.e. as soon as the data collection starts, <strong>the Reset feature should in principle not be used anymore</strong>. In exceptional situations, it may be necessary: then, you must use the option “Keep result data collected so far”.</p>
+<ul class="wysiwyg-text-align-justify">
+<li

@@ -1,0 +1,103 @@
+<p><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p>This article provides an overview of SQL functions and operators, including arithmetic, comparison, and logical operators, as well as a list of accepted and not accepted functions in EFS.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>This guide focuses on SQL functions and operators for internal use, covering various types of operators and functions that are accepted or not accepted in the system.</p>
+<ul>
+<li><a href="#arithmetic_operators">Arithmetic Operators</a></li>
+<li><a href="#comparison_operators">Comparison Operators</a></li>
+<li><a href="#logical_operators">Logical Operators</a></li>
+<li><a href="#accepted_functions">Accepted Functions</a></li>
+<li><a href="#not_accepted_functions">Not Accepted Functions</a></li>
+<li><a href="#date_functions">Date Functions</a></li>
+</ul>
+<p> </p>
+<h2 id="arithmetic_operators">Arithmetic Operators</h2>
+<p>The following arithmetic operators are supported:</p>
+<ul>
+<li>Addition: <code>+</code>
+</li>
+<li>Subtraction: <code>-</code>
+</li>
+<li>Multiplication: <code>*</code>
+</li>
+<li>Division: <code>/</code>
+</li>
+<li>Modulus: <code>%</code>
+</li>
+</ul>
+<h2 id="comparison_operators">Comparison Operators</h2>
+<p>The following comparison operators are supported:</p>
+<ul>
+<li>Equal: <code>=</code> or <code>==</code>
+</li>
+<li>Identical: <code>=</code>
+</li>
+<li>Not Equal: <code>!=</code> or <code>&lt;&gt;</code>
+</li>
+<li>Not Identical: <code>==</code>
+</li>
+<li>Less Than: <code>&lt;</code>
+</li>
+<li>Greater Than: <code>&gt;</code>
+</li>
+<li>Less Than or Equal: <code>&lt;=</code>
+</li>
+<li>Greater Than or Equal: <code>&gt;=</code>
+</li>
+</ul>
+<h2 id="logical_operators">Logical Operators</h2>
+<p>The following logical operators are supported:</p>
+<ul>
+<li>AND: <code>AND</code> or <code>&amp;&amp;</code>
+</li>
+<li>OR: <code>OR</code> or <code>||</code>
+</li>
+</ul>
+<h2 id="accepted_functions">Accepted Functions</h2>
+<p>The following functions are accepted:</p>
+<ul>
+<li><code>abs($value)</code></li>
+<li><code>accessval($var)</code></li>
+<li><code>checkemail($var)</code></li>
+<li><code>checkformat($var,$regex)</code></li>
+<li><code>checkkombination($questname, $oper, $value)</code></li>
+<li><code>checkkombination_range($questname, $min, $max)</code></li>
+<li><code>checkrange($var,$start,$end)</code></li>
+<li><code>getmonthdiff($year,$month)</code></li>
+<li><code>isalpha($value)</code></li>
+<li><code>isalpha_de($value)</code></li>
+<li><code>isalphanumeric($value)</code></li>
+<li><code>isalphanumeric_de($value)</code></li>
+<li><code>isblank($value)</code></li>
+<li><code>ishidden($variable)</code></li>
+<li><code>isinrange($value,$min,$max)</code></li>
+<li><code>isint($value)</code></li>
+<li><code>ismissing($value)</code></li>
+<li><code>isnegative($value)</code></li>
+<li><code>isnumber($value)</code></li>
+<li><code>ispositive($value)</code></li>
+<li><code>issamestring($value1,$value2)</code></li>
+<li><code>isvaliddate($value)</code></li>
+<li><code>iszero($value)</code></li>
+<li><code>lowercase($value)</code></li>
+<li><code>matches($var,$regx)</code></li>
+<li><code>matches_regex($var,$regx)</code></li>
+<li><code>netstringlength($value)</code></li>
+<li><code>not_matches($var,$regx)</code></li>
+<li><code>not_only_numbers($var)</code></li>
+<li><code>numberformat($value, $precision)</code></li>
+<li><code>outofrange($var,$start,$end)</code></li>
+<li><code>pow($exp,$base)</code></li>
+<li><code>setval($value)</code></li>
+<li><code>sgn($value)</code></li>
+<li><code>stringlength($value)</code></li>
+<li><code>trim($value)</code></li>
+<li><code>uppercase($value)</code></li>
+</ul>
+<h2 id="not_accepted_functions">Not Accepted Functions</h2>
+<p>The following functions are NOT accepted:</p>
+<ul>
+<li><code>ceil($value)</code></li>
+<li><code>floor($value)</code></li>
+<li><code>get_value($

@@ -1,0 +1,109 @@
+;">
+<p class="wysiwyg-text-align-center">Questions related to compliance, ex: Security concerns, GDPR, Penetration Tests, etc..</p>
+</td>
+<td style="background-color: #ffffff; width: 388.625px; height: 44px;">
+<p>Follow the standard <a href="https://docs.google.com/document/d/1klpECOz0AZSawIxL5kMjfNl9J4g6vITKBqMbh-8ZafU/edit#bookmark=id.ihois2ih8zzt">Central Compliance process</a></p>
+<p> </p>
+<p>If it is for Payback organization, please raise it to BU and SC.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p> </p>
+</div>
+</div>
+</section>
+<h1 id="severity_levels">Severity Levels</h1>
+<p>There are three severity levels assigned to exception reports:</p>
+<ul>
+<li>
+<p><strong>Minor:</strong> One installation or a not commonly used Service is not available in one environment.</p>
+</li>
+<li>
+<p><strong>Medium:</strong> Multiple Installations or a heavily used Service (e.g., Mailing) is not available in one environment.</p>
+</li>
+<li>
+<p><strong>Major:</strong> All installations in one environment are not available.</p>
+</li>
+</ul>
+<h1 id="h_01J8GYT1K0KBB8GBYZAYJTE2C2">Guidelines to follow while elevating to Engineering</h1>
+<p>When submitting a ticket, it is important to provide the necessary information so the team can assess and address the issue as quickly as possible. Below are the required fields and guidelines for every ticket.</p>
+<p>Important &amp; relevant information: Engineering has NO ACCESS to production or sandbox instances. Also, no 24.2 bugfix is going to be considered as it's deprecated.</p>
+<p> </p>
+<h3 id="h_01J8GYVSKTYC0V54N9A42D013Q">Required Information</h3>
+<ol>
+<li>
+<strong>Project File (project.gpx) &amp; </strong><a href="https://drive.google.com/open?id=14LMN6YtVlFZYKIej8ChX_8tWyi1NCUsD"><strong><span class="wysiwyg-underline" style="color: #1155cc;">Master Data</span></strong></a><strong> ( View the recording on how to export it) :</strong>
+<ul>
+<li>Attach the relevant <span style="color: #188038;">project.gpx</span> file, and master data if required, that demonstrates the issue.</li>
+<li>Ensure that the project file is from the environment where the issue was detected.</li>
+</ul>
+</li>
+<li>
+<strong>Build Number:</strong>
+<ul>
+<li>Provide the build number where the issue was <strong>reproduced by Customer Support agent</strong>.</li>
+<li>Format: <strong>24.1.xyz</strong> (Ensure it matches the exact version used during testing).</li>
+</ul>
+</li>
+<li>
+<strong>Clear Reproduction Steps:</strong>
+<ul>
+<li>
+<strong>Important:</strong> DO NOT use URLs to production installations or customer-specific installations.</li>
+<li>Outline clear, step-by-step instructions on how to reproduce the issue.</li>
+<li>Steps should be described in detail with expected and actual results.</li>
+<li>A video is worth millions of words.</li>
+</ul>
+</li>
+<li>
+<strong>Logs (If Applicable):</strong>
+<ul>
+<li>Attach any relevant logs that could help diagnose the issue (e.g., server logs, browser console output).</li>
+</ul>
+</li>
+<li>
+<strong>Screenshots or Videos:</strong>
+<ul>
+<li>If applicable, provide screenshots or videos demonstrating the issue.</li>
+</ul>
+</li>
+</ol>
+<p> </p>
+</article> style="color: #188038;">project.gpx</span> file, and master data if required, that demonstrates the issue.</li>
+<li>Ensure that the project file is from the environment where the issue was detected.</li>
+</ul>
+</li>
+<li>
+<strong>Build Number:</strong>
+<ul>
+<li>Provide the build number where the issue was <strong>reproduced by Customer Support agent</strong>.</li>
+<li>Format: <strong>24.1.xyz</strong> (Ensure it matches the exact version used during testing).</li>
+</ul>
+</li>
+<li>
+<strong>Clear Reproduction Steps:</strong>
+<ul>
+<li>
+<strong>Important:</strong> DO NOT use URLs to production installations or customer-specific installations.</li>
+<li>Outline clear, step-by-step instructions on how to reproduce the issue.</li>
+<li>Steps should be described in detail with expected and actual results.</li>
+<li>A video is worth millions of words.</li>
+</ul>
+</li>
+<li>
+<strong>Logs (If Applicable):</strong>
+<ul>
+<li>Attach any relevant logs that could help diagnose the issue (e.g., server logs, browser console output).</li>
+</ul>
+</li>
+<li>
+<strong>Screenshots or Videos:</strong>
+<ul>
+<li>If applicable, provide screenshots or videos demonstrating the issue.</li>
+</ul>
+</li>
+</ol>
+<p> </p>
+</article>

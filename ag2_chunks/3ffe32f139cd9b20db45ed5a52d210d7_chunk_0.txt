@@ -1,0 +1,63 @@
+<p><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p>This article provides a comprehensive change log for the Survey Layout in Enterprise Feedback Suite (EFS). It covers updates, new features, and important information for various versions of Responsive Layout, focusing on versions 3 and 3.1.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>The Survey Layout Change-Log details the evolution of the Responsive Layout, highlighting new features, bug fixes, and updates across different EFS versions. It also includes important information for users of older layout versions and introduces new question types and layout options.</p>
+<ul>
+<li><a href="#responsive_layout_3_1_efs_24_1">Responsive Layout 3.1 (EFS 24.1)</a></li>
+<li><a href="#responsive_layout_3_1_efs_22_2">Responsive Layout 3.1 (EFS 22.2)</a></li>
+<li><a href="#important_information_rl1_rl2">Important Information for Responsive Layouts 1 and 2 Users</a></li>
+<li><a href="#responsive_layout_3_1_efs_22_1">Responsive Layout 3.1 (EFS 22.1)</a></li>
+<li><a href="#responsive_layout_3_1_efs_21_2">Responsive Layout 3.1 (EFS 21.2)</a></li>
+</ul>
+<h2 id="responsive_layout_3_1_efs_24_1">Responsive Layout 3.1 (EFS 24.1)</h2>
+<h3 id="h_01J35MQT3VYD4MPB152VKN9FZD">New Features and Updates</h3>
+<ul>
+<li>Introduction of a new Video Recorder Question Type</li>
+<li>Updated File Size Limits for Upload Question Types (Audio, Video, and Upload)</li>
+<li>Configurable Page Breaks in Receipts</li>
+</ul>
+<p> </p>
+<h2 id="responsive_layout_3_1_efs_22_2">Responsive Layout 3.1 (EFS 22.2)</h2>
+<ul>
+<li>New audio recorder question type</li>
+<li>Improved screen reader support for scaled and text question types</li>
+<li>Ranking question type: min/max of required answers can now be configured</li>
+</ul>
+<p> </p>
+<h2 id="important_information_rl1_rl2">Important Information for Responsive Layouts 1 and 2 Users (EFS 22.1)</h2>
+<p>Users of Responsive Layout 1, Responsive Layout 2, and custom layouts based on these versions are strongly encouraged to migrate their projects to Responsive Layout 3.1. This version offers frequent bug fixes, updates, and improved browser support across devices.</p>
+<p><strong>Note:</strong> Tivian plans to deprecate Responsive Layout 1 and 2 and remove them from EFS in one of the releases in 2024.</p>
+<p> </p>
+<h2 id="responsive_layout_3_1_efs_22_1">Responsive Layout 3.1 (EFS 22.1)</h2>
+<h3 id="h_01J35MQT3WAJP3WXCEVK40H5Z4">New Features</h3>
+<p>Introduction of PDF participation receipts for respondents.</p>
+<h3 id="h_01J35MQT3WH5MNQ2GDYP2SB0B3">Bugfixes and Updates</h3>
+<ul>
+<li>Fixed exception in Do-Answer-Checks with Datepicker question type</li>
+<li>Resolved issues with Hierarchy search question type in Employee projects</li>
+<li>Rebuilt Hotspot question type to fix iOS compatibility issues</li>
+<li>Provided fixes for "Dynamic in browser" question hiding conditions</li>
+<li>Extended Block email question type to support unsubscription of mobile phone numbers</li>
+<li>Updated jQuery version to 2.2.4-patched in Responsive Layout versions 3 and 3.1</li>
+<li>Added new security headers in the "Security" tab of project properties</li>
+</ul>
+<h3 id="h_01J35MQT3WPE1X711S4W1DF8T3">Custom Question Type Editor Updates</h3>
+<ul>
+<li>Improved cache management for custom question type source files</li>
+<li>Added resourcePath and descriptionHash variables for better resource handling</li>
+<li>Added preview of uploaded images in the resources tab</li>
+</ul>
+<p> </p>
+<h2 id="responsive_layout_3_1_efs_21_2">Responsive Layout 3.1 (EFS 21.2)</h2>
+<h3 id="h_01J35MQT3WVYMPVPZV79M7WGKE">New Features</h3>
+<ul>
+<li>Introduction of the Carousel question type</li>
+<li>New layout option: Page fade-in for improved participant experience</li>
+<li>Client-side question hiding conditions for dynamic page interactions</li>
+<li>Improvements to the Upload question type, including MIME-type checking and automatic camera start</li>
+</ul>
+<h3 id="h_01J35MQT3WRKTNKMACP1314CKA">Updates and Changes</h3>
+<ul>
+<li>Removed Firefox word-break workaround</li>
+<li>Added "Layout subrelease support" configuration for Custom

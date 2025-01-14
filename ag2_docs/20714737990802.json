@@ -1,0 +1,30 @@
+{
+    "id": 20714737990802,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/20714737990802.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20714737990802-Relevant-ID",
+    "author_id": 369584192734,
+    "comments_disabled": false,
+    "draft": true,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20714530860562,
+    "created_at": "2024-08-12T16:58:04Z",
+    "updated_at": "2024-08-12T16:58:06Z",
+    "name": "Relevant ID",
+    "title": "Relevant ID",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-08-12T16:58:06Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075294,
+    "content_tag_ids": [],
+    "label_names": [],
+    "body": "<p><b>Original Confluence URL:</b> <a href=\"https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1293418694\">https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1293418694</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>\n\n<h2>Table of Contents</h2>\n<ul class=\"toc\">\n<ul>\n<li><a href=\"#header-1\">Introduction</a></li>\n<ul>\n<li><a href=\"#header-3\">Activating the feature</a></li>\n</ul>\n</ul>\n</ul><h1 id=\"header-1\">Introduction</h1><p>QB US has signed a contract with an external service provider Relevant View (<a href=\"http://www.relevantview.com\">www.relevantview.com</a>).</p><p><strong>This service provider helps identifying invalid respondents in EFS surveys</strong>. In this context, \"invalid\" means that the respondent is from a country not allowed for the survey or is a duplicate responder.</p><p>Validation is done per survey. Checking the country is done by validating the IP address of the respondent against an IP database at Relevant View. Checking whether the respondent is a duplicate is done by collecting values from the respondent's browser and matching them against other values at Relevant View. A respondent will be counted as \"duplicate\" if he/she has taken part in the same survey already (with the same invitation code or link or with a different one).</p><p>The service can optionally be activated per installation. It can then be turned on or off for specific surveys of an installation.</p><p><strong>The service is turned off by default on all installations</strong>. GP US will be charged a service fee by Imperium for each call to the service. This means every survey participation will cost GP US money if the feature is enabled for an installation and a survey.</p><p><strong>Please contact GP US (Carol Lee Andersen or Anne Collins) and negotiate terms before promising the service to a client.</strong></p><h2 id=\"header-3\">Activating the feature</h2><p>To activate the feature for a survey, the following needs to be done:</p><ul><li>\n<p>Each client needs its own authentication key. Keys can be acquired by the client directly at Imperium but the client has to mention that the key is used within Questback (EFS).</p>\n<ul><li><p>This key is needed to identify calls to the external service to be coming from Questback.</p></li></ul>\n</li></ul><p></p><ul><li>\n<p>In the installation's configuration (using root account):</p>\n<ul>\n<li><p>Create custom config variable \"relevantid_auth\" of type string and enter the auth key you or the client got from Imperium.</p></li>\n<li><p>Adjust config variable \"modules\" and add \"relevantid\".</p></li>\n</ul>\n</li></ul><p></p><ul><li>\n<p>Configure the survey (mostly done by the client)</p>\n<ul>\n<li><p>The survey must be of type panel, master data, anonymous, or personalized</p></li>\n<li><p>The survey must have the feature \"Check whether the respondent has Javascript enabled or not\" enabled</p></li>\n<li>\n<p>The \"Relevant ID configuration\" section in the \"survey properties\" section for the survey must be configured properly:</p>\n<ul>\n<li><p>\"Activate \"RelevantID verification for this survey\" -&gt; select the checkbox to activate the feature</p></li>\n<li><p>Create user defined variables in tab \"User-defined variables\" and assign them in tab \"RelevantID configuration\"</p></li>\n<li>\n<p>User defined variables have to have the following data types:</p>\n<ul>\n<li><p>GeoIP Verification: Integer</p></li>\n<li><p>ConfidenceValue: Integer</p></li>\n<li><p>FraudProfile: Integer</p></li>\n<li><p>City: Short text</p></li>\n<li><p>Domain: Short text</p></li>\n<li><p>Country: Short text</p></li>\n<li><p>Region: Short text</p></li>\n<li><p>RVID: Short text</p></li>\n<li><p>OldID<a href=\"https://it.globalpark.de/twiki/bin/edit/Development/OldID?topicparent=Development.KonzeptRelevantID\">?</a>: Short text</p></li>\n<li><p>OldIdDate<a href=\"https://it.globalpark.de/twiki/bin/edit/Development/OldIdDate?topicparent=Development.KonzeptRelevantID\">?</a>: Short text</p></li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n</li></ul><p></p><ul>\n<li>\n<p>The web server EFS runs on (all front ends in a load balanced environment) must be able to connect to domain \"<a href=\"http://rid.imperium.com\">rid.imperium.com</a>\" (former \"<a href=\"http://rid.relevantid.com\">rid.relevantid.com</a>\") on port 80.</p>\n<ul><li><p>Sysadmin dept confirmed this is the case for all servers hosted by Questback in Bremen, however, for externally hosted servers this might still be an issue.</p></li></ul>\n</li>\n<li>\n<p>In Globis:</p>\n<ul>\n<li><p>Add an update and add comment \"Activated relevant Id (case #)\"</p></li>\n<li><p>Add modules \"relevantid\" and \"relevantid_auth\" to list of modules</p></li>\n</ul>\n</li>\n</ul>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

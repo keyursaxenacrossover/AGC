@@ -1,0 +1,30 @@
+ configuration</strong> it is possible to set both the title of an action, as well as specifying the person responsible for the action and the action creator. For the action title you can either enter a hard-coded title, or more typically you can enter the variable from which you wish to pull the title of the action. For thecreator and assignee fields you can either enter the appropriate variable in the <em>survey variable</em> setting, enter a specific email-address in the fallback setting.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998458228498" alt="image2018-10-26_14-14-36.png"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998464929042" alt="image2018-10-26_14-15-18.png"></p>
+<h2 id="header-18">Privacy Assistant (GDPR)</h2>
+<h3 id="header-20">Activating the Privacy Assistant and its consequences</h3>
+<p>The GDPR consent form has been separated into two sections; data retention period and consent form and only the <strong>data retention</strong> is absolutely required in order to activate a project. For existing projects, you activate the <em>Privacy Assistant </em>by checking it under <strong>Project properties</strong> and clicking <strong>Save</strong>. The survey status will then be automatically set to <strong>No further participations</strong>. This change in status remains in effect until you have configured the duration of the data retention for this survey. A convenient pop up message will confirm this and take you to simple screen where you are only required to set the data retention period. Where appropriate you can of course configure the full and complete consent form.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998403857042" alt="image2018-10-26_14-23-12.png"></p>
+<p>For new or copied projects, the <em>Privacy Assistant</em> will automatically be activated, and the survey will (depending on how it was created) be created with a status of <strong>Survey compiled</strong> or <strong>No further participations</strong>. Again, the data retention must be set before the status can be updated to <strong>Active</strong>.</p>
+<h3 id="header-21">Flagging c_ and p_ variables as personal data</h3>
+<p>It is now possible to flag <strong>User-defined variables</strong> as personal data. These c_ and p_ variables are created under the the User-defined variables tab accessible from the <strong>Project properties</strong> under the main Survey menu. When deleting a participants data, the variables will be set to null.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998404078866" alt="image2018-10-26_14-29-31.png"></p>
+<h3 id="header-22">Multi-Lingual consent page</h3>
+<p>In addition to the new subdivision of the GDPR area into <strong>Data retention period</strong> and <strong>Consent form</strong>, the consent form can now be configured in the different languages the survey is available in. Each survey language is configured individually.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998459106962" alt="image2018-10-26_14-31-35.png"></p>
+<p>The colored background for the two sections indicates to what extent the two areas have been configured. The data retention period will turn green as soon as you specify a duration, either<strong> Exact</strong> or <strong>Unlimited</strong>. The new “Status” column shows you which languages have already been configured. These are marked either red (not configured) or green (configured). The overall status of the consent form results from the configuration status of the individual languages. Three statuses can be displayed in color:</p>
+<ul>
+<li>
+<p><span style="color: #ff0000;">Red</span>: Neither the default language nor any of the other languages have been edited.</p>
+</li>
+<li>
+<p><span style="color: #ffcc00;">Yellow</span>: The default language has been configured, but at least one of the other languages has not been configured.</p>
+</li>
+<li>
+<p><span style="color: #008000;">Green</span>: All languages have been edited.</p>
+</li>
+</ul>
+<p>The project can be activated even when the consent form is red.</p>
+<h3 id="header-23">Language switch</h3>
+<p>The new language switch is available on the GDPR consent form with <em>Responsive Layout 2</em> and <em>3</em>. As soon as the switch has been activated under the <strong>Internal organizatio</strong>n tab in the survey settings, it will be displayed on the approval page and not only in the questionnaire of this control element. Participants can select the desired language on the approval page. If the page is not available in the selected language, it will be displayed in the default language that is used as a fallback.</p>
+<h3 id="header-24">Personal data flagging</h3>
+<p>In order to make it easier for you to see which participant variables and questions in your project are flagged as personal data we have added a new menu option when viewing the GDPR settings. By clicking on the menu item <strong>Data retention period</strong> or <strong

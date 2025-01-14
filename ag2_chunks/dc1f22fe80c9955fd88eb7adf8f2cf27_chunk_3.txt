@@ -1,0 +1,42 @@
+-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-makefile">v=spf1 mx a <span class="hljs-keyword">include</span>:mail.zendesk.com <span class="hljs-keyword">include</span>:_spf.tivian.com ~all
+</code></div>
+</div>
+<p class="wysiwyg-text-align-justify"><strong>Adding the SPF Record</strong></p>
+<p class="wysiwyg-text-align-justify">To prevent emails from being marked as spam due to SPF checks, your system administrator should add the following to your domain's SPF record:</p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium wysiwyg-text-align-justify">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-makefile"><span class="hljs-section">include:_spf.tivian.com</span>
+</code></div>
+</div>
+<p class="wysiwyg-text-align-justify">This ensures the TIVIAN mail servers are recognized. Note that directly adding IPs instead of the SPF record is not recommended, as IP addresses may change without notice. For detailed IP information, visit <a href="http://www.mxtoolbox.com" target="_new" rel="noreferrer">SPF Check &amp; SPF Lookup - MxToolBox</a>. For more information, refer to <a href="http://www.openspf.org" target="_new" rel="noreferrer">Sender Policy Framework</a>.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h3 id="h_01HGKSMPRTQYJQX9QJXD9XBXNS" class="wysiwyg-text-align-justify">DKIM (Domain Keys Identified Mail)</h3>
+<p class="wysiwyg-text-align-justify">DKIM is a method of email authentication. DKIM adds a signature to the email, which is assigned to the sender domain and is used for all outgoing emails. The use of a domain key is a technique (similar to SPF) that is intended to make it more difficult to forge the sender of an email.</p>
+<p class="wysiwyg-text-align-justify"><strong>Adding a DKIM Record</strong><br>There are two different scenarios for adding a DKIM record. Which one is right for you depends on whether you manage the domain yourself or whether it is managed by TIVIAN. The domain key is free of charge for you.</p>
+<p class="wysiwyg-text-align-justify"><strong>If you manage the domain, proceed as follows:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Request the domain key from Support, naming the technical contact person in your organization who will be responsible for implementation.</li>
+<li>IT Operations creates the key and Support forwards the key to the technical contact person you have specified.</li>
+<li>The technical contact person you have specified stores the key in the DNS.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>If the domain is managed by TIVIAN, proceed as follows:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Request the domain key from Support.</li>
+<li>IT Operations will create the key and you will be informed by Support after implementation.</li>
+</ul>
+<h3 id="h_01J3J5AA0D6V35RXXHW75C4B76" class="wysiwyg-text-align-justify"> </h3>
+<h3 id="h_01HGKSMPRTV0YJQX9QJXD9XBXNT" class="wysiwyg-text-align-justify">DMARC (Domain-based Message Authentication, Reporting and Conformance)</h3>
+<p class="wysiwyg-text-align-justify">DMARC (Domain-based Message Authentication, Reporting and Conformance) aims to reduce email misuse by addressing authentication issues. It works alongside DKIM and SPF records to define how recipients should handle non-compliant emails and specify addresses for reporting violations. More information can be found <a href="https://www.netplace.de/de/blog/dmarc" target="_new" rel="noreferrer">here</a>.</p>
+<p class="wysiwyg-text-align-justify"><strong>Adding a DMARC Record:</strong></p>
+<p class="wysiwyg-text-align-justify"><strong>Prerequisites:</strong> Existing SPF and DKIM entries.</p>
+<p class="wysiwyg-text-align-justify"><strong>If You Manage the Domain:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Store the DMARC record yourself. Start with "v=DMARC1; p=none" and later configure a policy suitable for your company. Further guidance is available <a target="_new" rel="noreferrer">here</a>.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>If TIVIAN Manages the Domain:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Request DMARC from Support.</li>
+<li>IT Operations will set up the DMARC record.</li>
+<li>Support will inform you after implementation.</li>
+</ul>
+<h3 id="h_01HGKSMPRTYJQX9QJXD9XBXNR" class="wysiwyg-text-align-justify">Own/External Mail Server</h3>
+<p class="

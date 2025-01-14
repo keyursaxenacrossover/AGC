@@ -1,0 +1,40 @@
+ the CMS can take over their maintenance without requiring a great deal of training.</li>
+<li>You can create a new area for each language version of the website(s).</li>
+<li>You can create news items that are restricted to certain panel groups.</li>
+<li>You can predefine the publication period of articles; subsequent manual release is not required.</li>
+<li>The rich text editor is available for designing news items.</li>
+<li>You can sort the news items into different lists and place these on the panel pages at your discretion. The standard panel comprises a list of current news the content of which is displayed in the “News” menu. Further lists can be created as required.</li>
+<li>You can position the news lists on the panel pages and modify how they are displayed with the help of the “News” function module. Further changes to display and layout can be made using the “func_news” template.</li>
+<li>You can optionally offer RSS news feeds.</li>
+<li>EFS allows you to subscribe to feeds from high-quality blogs, for example, and to import those items directly into the news section.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">This Chapter will show you how to maintain the content of the news area. The “News list” function module is presented in Chapter "  ".</p>
+<h3 id="managing-news" class="wysiwyg-text-align-justify"><strong>Managing News</strong></h3>
+<p class="wysiwyg-text-align-justify">The starting point for news management is the <strong>Website → Standard content → News management</strong> menu. In this menu you can view and maintain the current news items, create new ones and assign them to the various lists.</p>
+<p class="wysiwyg-text-align-justify">The news overview comprises all the news items created for the predefined language version and contains the following information:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Title (internal): The internal news title.</li>
+<li>Headline: The headline that will be output for the panelists.</li>
+<li>Subtitle: The subheading.</li>
+<li>Teaser: A short introduction to the news that will be displayed in the news list together with the link to the news item.</li>
+<li>Author</li>
+<li>Publication start date/time / Publication end date/time (GMT): The period in which the news item is published.</li>
+<li>Displayed date of publication: Date displayed in the list of news both in the admin area and on the panel page.</li>
+<li>Active:
+<ul>
+<li>Green traffic-light icon = Yes: The news item is displayed.</li>
+<li>Red traffic-light icon = No: The news item is not displayed.</li>
+</ul>
+</li>
+<li>List: Shows which news list the news item belongs to.</li>
+<li>Viewed: Indicates how often the panelists have opened a news item. If a panelist opens a message twice, this is also counted as two hits.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If you want to view news items of another language version in a given installation with several websites and/or language versions, simply change the settings in the upper section of the dialog. You can use the <strong>View</strong> function to change the number of table columns displayed as well as the number of rows per page.</p>
+<p class="wysiwyg-text-align-justify">You can search the content of news items in the overview table. The advanced search allows you to selectively search by publication period, target group, activity status, list name or author.</p>
+<p class="wysiwyg-text-align-justify">Click on the icons in the “Actions” column to<strong> Edit, Copy,</strong> or<strong> Delete</strong> individual news items.</p>
+<p class="wysiwyg-text-align-justify"><strong>Creating a new news item</strong></p>
+<ol class="wysiwyg-text-align-justify">
+<li>Click on the<strong> Create News</strong> button in the <strong>News Management</strong> menu.</li>
+<li>In the header and the “News options” section, the properties of the article are defined. Please refer to Table 22.2 for details. Optionally, you can activate the rich text editor and use it to format the texts.<br>– Title (internal): This title is for orientation purposes only, it will not be seen by panelists.<br>– Publication start and end date/time (GMT): These drop-down lists allow you to define the period in which the news item is to be displayed.<br>– List name: By assigning an item to a list you determine which panel page the news item will be displayed on. In the standard panel, for example, you can find a list of “main” whose items are displayed on the news page. Select this list.<br>– Active: Only active news items will be displayed. Therefore select “Yes” so you can immediately see your new item on the news page.<br>– Access control: You do not wish to restrict access, all visitors and panelists are to have access. Therefore select “Public”.<br><br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015039347474" alt="edit_news.png"><br><br>
+</li>
+<li>Next, enter the content. The most important fields are listed below.<br>– Displayed date of publication (GMT) (shown on the website): The date displayed in the news.<br>– Heading and optional subtitles.<br>– Teaser: The teaser displayed on the news page together

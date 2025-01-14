@@ -1,0 +1,22 @@
+:</strong> \\GAZZA\data\_infothek\_officially_available_manuals\\EFSPanelCMSUpgrade81\Upgrade 8.0 auf 8.1_2011-11-23.zip (von Ende 2011)</p></li>
+</ul><p>Letzen beiden Dokumente sind veraltet. Immer noch auf die System Templates/Template Bibliothek hinweisen, da dort die Neuerungen enthalten sind.</p><h1 id="header-17">
+<a href="https://it.globalpark.de/twiki/bin/view/Development/SINC"><u>SINC</u></a> App aufsetzen bis 8.0 - deprecated</h1><p>Für neuere EFS-Versionen und aktuelles <a href="https://it.globalpark.de/twiki/bin/view/Development/SINC"><u>SINC</u></a> bitte die Anleitung oben verwenden!</p><h2 id="header-19">Registrierung der App bei Facebook</h2><ul>
+<li><p>Man braucht einen User bei Facebook</p></li>
+<li><p>[RI] Man muss den User verifizieren: <a href="https://it.globalpark.de/twiki/pub/Development/SINCAppAufsetzen/CreatingAVerifiedAccount.pdf"><u>CreatingAVerifiedAccount.pdf</u></a></p></li>
+<li><p>Man braucht die Facebook Developer App <a href="http://www.facebook.com/developers/"><u>http://www.facebook.com/developers/</u></a></p></li>
+</ul><ac:image ac:align="center" ac:layout="center" ac:src="https://it.globalpark.de/twiki/pub/Development/SINCAppAufsetzen/2011-02-28-153559_1600x1200_scrot.png"><ri:url ri:value="https://it.globalpark.de/twiki/pub/Development/SINCAppAufsetzen/2011-02-28-153559_1600x1200_scrot.png"></ri:url></ac:image><ul><li><p>Klicken auf "Setup new app", dann einen Namen vergeben und die Sicherheitsabfrage überleben</p></li></ul><ac:image ac:align="center" ac:layout="center" ac:src="https://it.globalpark.de/twiki/pub/Development/SINCAppAufsetzen/2011-02-28-153622_1600x1200_scrot.png"><ri:url ri:value="https://it.globalpark.de/twiki/pub/Development/SINCAppAufsetzen/2011-02-28-153622_1600x1200_scrot.png"></ri:url></ac:image><ul><li>
+<p>Danach stellt man die App ein</p>
+<ul><li><p>Unter Web Site und trägt eine URL ein, der die App "gehört" (also so dass Facebook weiss, wem die App gehört). Das ist NICHT unbedingt die URL, die nachher im IFrame gezeigt wird</p></li></ul>
+</li></ul><ac:image ac:align="center" ac:layout="center" ac:src="https://it.globalpark.de/twiki/pub/Development/SINCAppAufsetzen/2011-02-28-153851_1600x1200_scrot.png"><ri:url ri:value="https://it.globalpark.de/twiki/pub/Development/SINCAppAufsetzen/2011-02-28-153851_1600x1200_scrot.png"></ri:url></ac:image><ul><li>
+<p>Unter Facebookintegration</p>
+<ul>
+<li><p>Sucht man sich eine URL aus, unter der die App in Facebook auftaucht (<a href="http://apps.facebook.com/xxxx">apps.facebook.com/xxxx</a>)</p></li>
+<li><p>Dann (wichtig) trägt man die Canvas URL ein. Das ist die URL, die facebook nachher in einem IFrame öffnet. Heisst, da kommt jetzt die URL vom Panel rein. Da kann man bspw. auch URL Parameter benutzen (?lang_id=2), wenn die App unter einer anderen Sprachversion erreichbar sein soll</p></li>
+<li><p>Sofern SSL aktiv trägt man das ganze nochmal unter Secure Canvas URL ein</p></li>
+<li><p>WICHTIG! Bei dem IFrame Size muss Auto-Resize eingeschaltet werden. IM SCREENSHOT IST EIN FEHLER!</p></li>
+<li><p>Den Rest lässt man so wie er ist (siehe Screenshot)</p></li>
+</ul>
+</li></ul><ac:image ac:align="center" ac:layout="center" ac:src="https://it.globalpark.de/twiki/pub/Development/SINCAppAufsetzen/2011-02-28-154455_1600x1200_scrot.png"><ri:url ri:value="https://it.globalpark.de/twiki/pub/Development/SINCAppAufsetzen/2011-02-28-154455_1600x1200_scrot.png"></ri:url></ac:image><ul><li>
+<p>Unter Advanced stellt man dann das Deauthorize Callback ein. Dazu nimmt man die URL und packt ?fbdeauth=1 dran (siehe Screenshot)</p>
+<ul><li><p>Dort muss ausserdem "Upgrade to Request 2.0" abgeschaltet sein. Sonst funktioniert der Counter nicht.</p></li></ul>
+</li></

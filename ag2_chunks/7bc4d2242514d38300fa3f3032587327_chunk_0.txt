@@ -1,0 +1,54 @@
+<p><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p>This article explains how to change the description of the "Next" button in a survey, specifically to display "Submit" on the second to last page.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>This guide provides step-by-step instructions on modifying the "Next" button description in a survey using user-defined variables and recoding triggers.</p>
+<ul>
+<li><a href="#create_variable">Create a User-Defined Variable</a></li>
+<li><a href="#first_trigger">Create First Recoding Trigger</a></li>
+<li><a href="#second_trigger">Create Second Recoding Trigger</a></li>
+<li><a href="#language_editor">Modify Language Editor Settings</a></li>
+</ul>
+<p> </p>
+<h2 id="create_variable">Create a User-Defined Variable</h2>
+<p>To begin, you need to create a user-defined variable in your survey project.</p>
+<h3 id="step1_variable">Step 1</h3>
+<p>Navigate to Survey menu → Project Properties → User-defined variables.</p>
+<p> </p>
+<h2 id="first_trigger">Create First Recoding Trigger</h2>
+<p>Next, you'll create a recoding trigger on the first page of your questionnaire.</p>
+<h3 id="step1_first_trigger">Step 1</h3>
+<p>Go to the questionnaire editor and create a recoding trigger on the first page with the following settings:</p>
+<ul>
+<li>Execution position: "Directly"</li>
+<li>Also execute trigger in preview mode: Yes</li>
+<li>Execute this trigger multiple times in one survey session: Yes</li>
+<li>Detail configuration: c_0001 → Value: "next" (or your preferred button text for most of the survey, <strong>make sure to use "" around the word</strong>)</li>
+</ul>
+<p class="wysiwyg-indent2"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014837321106"></p>
+<p> </p>
+<h2 id="second_trigger">Create Second Recoding Trigger</h2>
+<p>Create another recoding trigger on the second to last page of your survey.</p>
+<h3 id="step1_second_trigger">Step 1</h3>
+<p>Create a recoding trigger on the page that is second to last with these settings:</p>
+<ul>
+<li>Execution position: "Directly"</li>
+<li>Also execute trigger in preview mode: Yes</li>
+<li>Execute this trigger multiple times in one survey session: Yes</li>
+<li>Detail configuration: c_0001 → Value: "Submit" (or your preferred button text for the second to last page)</li>
+</ul>
+<p class="wysiwyg-indent2"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014837318546"></p>
+<p> </p>
+<h2 id="language_editor">Modify Language Editor Settings</h2>
+<p>Finally, you need to update the language settings to use the variable for the button text.</p>
+<h3 id="step1_language_editor">Step 1</h3>
+<p>Navigate to Questionnaire editor → Language editor → Survey messages → Label for Submit button: #c_0001#</p>
+<p class="wysiwyg-indent2"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014837319954"></p>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq1">When is this programming useful?</h3>
+<p>This programming is only useful when the survey does not use a "back" button.</p>
+<h3 id="faq2">What should I be cautious about when setting the button text?</h3>
+<p>Make sure to use quotation marks around the word when setting the value for the c_0001 variable (e.g., "next", "Submit").</p>
+<p> </p>
+</article>

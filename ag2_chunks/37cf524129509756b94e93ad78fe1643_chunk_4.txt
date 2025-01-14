@@ -1,0 +1,165 @@
+ the amount of a value without an algebraic sign.</p>
+</td>
+<td colspan="1">
+<p>$value: The value to be edited</p>
+</td>
+<td colspan="1">
+<p>Amount of the value without an algebraic sign</p>
+</td>
+<td colspan="1">abs(self)</td>
+</tr>
+<tr>
+<td colspan="1">
+<p>base64_decode</p>
+</td>
+<td colspan="1">
+<p>base64_decode (action: decode Base64)</p>
+</td>
+<td colspan="1">
+<p>Decodes the value using the Base64 algorithm.</p>
+</td>
+<td colspan="1">
+<p>$value: The value to be decoded</p>
+</td>
+<td colspan="1">
+<p>Base64 decoded value</p>
+</td>
+<td colspan="1"> </td>
+</tr>
+<tr>
+<td colspan="1">
+<p>base64_encode</p>
+</td>
+<td colspan="1">
+<p>base64_encode (action: encode Base64)</p>
+</td>
+<td colspan="1">
+<p>Encodes the value using the Base64 algorithm.</p>
+</td>
+<td colspan="1">
+<p>$value: The value to be decoded</p>
+</td>
+<td colspan="1">
+<p>Base64 decoded value</p>
+</td>
+<td colspan="1"> </td>
+</tr>
+<tr>
+<td colspan="1">contact</td>
+<td colspan="1">
+<p>concat (action: connect)</p>
+</td>
+<td colspan="1">
+<p>Connects two or more strings.</p>
+</td>
+<td colspan="1">
+<p>$string1 - $stringN: strings to be connected (an unlimited number of strings can be transferred)</p>
+</td>
+<td colspan="1">
+<p>concatenated strings</p>
+</td>
+<td colspan="1">
+<p>concat(self, u_firstname, md_0077)</p>
+</td>
+</tr>
+<tr>
+<td colspan="1">
+<p>get_date_diff</p>
+</td>
+<td colspan="1">
+<p>get_date_diff (action: difference between two dates)</p>
+</td>
+<td colspan="1">
+<p>Calculate the difference between two dates in days or years (rounded off).</p>
+</td>
+<td colspan="1">
+<p>$date1: first date, $date2: second date, $format: "d" (days), "y" (years)</p>
+</td>
+<td colspan="1">
+<p>Difference between the two transferred dates</p>
+</td>
+<td colspan="1">
+<p>get_date_-diff('05.03.1982', '26.08.2008', 'y' ), get_date_-diff('1982-03-05', '26.08.2008', 'd' )</p>
+</td>
+</tr>
+<tr>
+<td colspan="1">
+<p>get_gmt_date</p>
+</td>
+<td colspan="1">
+<p>get_gmt_date (action: date in GMT)</p>
+</td>
+<td colspan="1">
+<p>Returns the current time (GMT) in the desired format.</p>
+</td>
+<td colspan="1">
+<p>$format: desired date format</p>
+</td>
+<td colspan="1">
+<p>Current, formatted date</p>
+</td>
+<td colspan="1">
+<p>get_gmt_- date('d.m.Y H:i:s')</p>
+</td>
+</tr>
+<tr>
+<td colspan="1">get_timestamp</td>
+<td colspan="1">
+<p>get_timestamp (action: date in timestamp)</p>
+</td>
+<td colspan="1">
+<p>Returns the Unix timestamp (number of seconds that have passed since January 11970 00:00:00 GMT) of the transferred date. Where no date has been transferred, the timestamp of the current date is returned.</p>
+</td>
+<td colspan="1">
+<p>$date (optional): date the timestamp of which is required</p>
+</td>
+<td colspan="1">Unix timestamp</td>
+<td colspan="1">
+<p>get_timestamp('13.04.2008'), get_timestamp('2008-04-13')</p>
+</td>
+</tr>
+<tr>
+<td colspan="1">
+<p>is_date_de</p>
+</td>
+<td colspan="1">
+<p>is_date_de (check: German date format)</p>
+</td>
+<td colspan="1">
+<p>Check whether the transferred value is a date in German format (TT.MM.YYYY).</p>
+</td>
+<td colspan="1">
+<p>$value: Date to be checked</p>
+</td>
+<td colspan="1">
+<p>1, if German date, otherwise 0</p>
+</td>
+<td colspan="1">
+<p>is_date_de('05.03.1982')</p>
+</td>
+</tr>
+<tr>
+<td colspan="1">
+<p>is_date_int</p>
+</td>
+<td colspan="1">
+<p>is_date_int (check: int. date format)</p>
+</td>
+<td colspan="1">
+<p>Check whether the transferred value is a date in international format (TT.MM.YYYY).</p>
+</td>
+<td colspan="1">
+<p>$value: Date to be checked</p>
+</td>
+<td colspan="1">
+<p>1, if international date, otherwise 0</p>
+</td>
+<td colspan="1">
+<p>is_date_de('05.03.1982')</p>
+</td>
+</tr>
+<tr>
+<td colspan="1">is_email</td>
+<td colspan="1">
+<p>is_email (check: valid e-mail format)</p>
+</td>

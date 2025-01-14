@@ -1,0 +1,53 @@
+<p><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p class="wysiwyg-text-align-justify">This article provides a comprehensive guide on exchanging files using the EFS Secure Exchange platform. It covers various aspects of file management, including accessing the exchange platform, uploading and downloading files, notifying team members, and managing file statuses.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">The EFS Secure Exchange platform allows users to securely share and manage files within teams. This guide explains how to use the platform effectively, from basic file operations to advanced features like status management and team notifications.</p>
+<ul class="wysiwyg-text-align-justify">
+<li><a href="#accessing_exchange_platform">Accessing the Exchange Platform</a></li>
+<li><a href="#overview_of_files">The Overview of Files</a></li>
+<li><a href="#uploading_new_file">Uploading a New File</a></li>
+<li><a href="#notifying_team_members">Notifying Team Members of New Files</a></li>
+<li><a href="#downloading_file">Downloading a File</a></li>
+<li><a href="#changing_file_status">Changing File Status</a></li>
+<li><a href="#deleting_file">Deleting a File</a></li>
+</ul>
+<h2 id="accessing_exchange_platform" class="wysiwyg-text-align-justify">Accessing the Exchange Platform</h2>
+<p class="wysiwyg-text-align-justify">There are two ways to access the exchange platform, depending on your assigned access rights:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>If authorized to access the admin area of EFS, find the exchange platform in the <strong>Options → File exchange</strong> menu.</li>
+<li>If only authorized for EFS Secure Exchange, log in at http://www.your-domain.com/fm/.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Note:</strong> The <strong>File exchange</strong> menu in the admin area is only visible if you're a member of an existing exchange team.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="overview_of_files" class="wysiwyg-text-align-justify">The Overview of Files</h2>
+<p class="wysiwyg-text-align-justify">After logging in at http://www.your-domain.com/fm/ or opening the File exchange menu,, you'll see an overview of files for all exchange teams where you have at least read rights. The overview includes search functions and a detailed list of files.</p>
+<h3 id="h_01J3HXQKTX8D1KFXPE9T57ZZK4">Search Functions</h3>
+<ul>
+<li>
+<strong>Simple search:</strong> Enter a term to search in "Title", "File name", "Comment", and "Author" fields.</li>
+<li>
+<strong>Extended search:</strong> Specify status, team, or upload period in addition to keyword search.</li>
+</ul>
+<h3 id="h_01J3HXQKTXBJMMQEP1AZJ3114W">File List Details</h3>
+<p>The file list includes information such as Date, Title, Comment, File Name, Size, Author, Security, Status, and Team Name.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21018333349522"></p>
+<p> </p>
+<h2 id="uploading_new_file">Uploading a New File</h2>
+<p class="wysiwyg-text-align-justify">You may upload files of any format, except for PHP and HTML. The maximum possible file size of the respective installation is displayed in the import dialog. Please note that the name of the file you want to upload has to be unique; i.e. if test.doc already exists, you cannot upload a second file named test.doc.</p>
+<ol>
+<li>Click on the <strong>Upload new file</strong> button in the <strong>File exchange</strong> menu.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21018302790290">
+</li>
+<li>Enter a title for file identification.</li>
+<li>Optionally, set an additional password for file protection.</li>
+<li>Use the <strong>Browse</strong> function to select the file from your computer.</li>
+<li>Add a comment if needed.</li>
+<li>Select the team for which you're uploading the file.</li>
+<li>Choose whether to send an info mail to the team.</li>
+<li>Click <strong>Upload</strong> to start the process.</li>
+<li>If sending an info mail, edit the default text as needed.</li>
+<li>Confirm sending the mail by clicking "Yes" in the "Send info mail" field.</li>
+<li>Click <strong>Continue</strong> to complete the upload.</li>
+</ol>
+<h2 id="notifying_team_members">Notifying Team Members of New Files</h2>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="3935">When uploading a file, the info service of EFS Secure Exchange allows you to directly notify the team for which this file is intended. To do so, tick the checkbox “Send info mail to team

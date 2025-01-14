@@ -1,0 +1,114 @@
+>
+<tr>
+<td>Allow threads</td>
+<td> </td>
+<td>
+<p>If this option is activated, panelists can create new threads.</p>
+</td>
+</tr>
+<tr>
+<td>Publishing mode</td>
+<td> </td>
+<td>
+<p>You can decide for yourself if the posts of the participants should be published immediately or only with the approval of a moderator. Available publishing modes are:</p>
+<ul>
+<li>Publish immediately: All posts that are not blocked are displayed to all panelists.</li>
+<li>Publish after approval: Initially, posts can only be seen by their respective author. Other panelists can only see the posts after a moderator has set their release status to “approved”.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Allowed file types for file upload</p>
+</td>
+<td> </td>
+<td>
+<p>Optionally, you can allow panelists to upload files. If you check at least one file type as “permitted” and a maximum upload file size &gt; 0 is defined in the neighboring field, a file upload field will be displayed on the panel’s board page.</p>
+<p>Please mind:</p>
+<ul>
+<li>Only the file types named in the edit dialog are permitted.</li>
+<li>For films in “flv” format, EFS provides a player, i.e. they are embedded properly into the post. The display of other video formats depends on the operating system, browser, and the plugins of the panelists.</li>
+</ul>
+<p>As a moderator, you can upload files into posts via the admin area, regardless of the settings made here.</p>
+</td>
+</tr>
+<tr>
+<td colspan="1">
+<p>Maximum upload file size</p>
+</td>
+<td colspan="1"> </td>
+<td colspan="1">
+<p>If you enable file upload for panelists, you can specify the maximum file size in this field.</p>
+<ul>
+<li>The default value is 100 kb.</li>
+<li>If you enter “0” or do not enter anything, the file upload function will be hidden.</li>
+<li>The maximum technically possible value is installation- specifc; it is displayed in the dialog.</li>
+</ul>
+<p>We recommend only permitting the upload of very small files, as all uploaded files must be stored and increase the size of the installation’s backup.</p>
+<p>If you upload files as board administrator via the admin area, the settings made do not impose any restrictions on the size of files you upload. The maximum technically possible value for admins is installation-specifc; in case of doubt, please check with Support.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>From EFS 10.4: Active</p>
+</td>
+<td> </td>
+<td>
+<p>This option activates the granting of bonus points per post.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Bonus points per forum post</p>
+</td>
+<td> </td>
+<td>
+<p>Every new post within a topic will be rewarded with a specified amount of bonus points.</p>
+<p>When creating a new thread, the first post within the thread is created automatically, too. This initial post is rewarded, too.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Maximum number of rewarded posts per panelist</p>
+</td>
+<td> </td>
+<td>
+<p>This option allows for restricting the amount of bonus points granted to very active panelists.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Text in the bonus points history</p>
+</td>
+<td> </td>
+<td>
+<p>Text entered in the bonus points history and the account balance.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Assigned bonus points</p>
+</td>
+<td> </td>
+<td>Bonus points are granted for approved posts on this topic.</td>
+</tr>
+<tr>
+<td>
+<p>Pending bonus points</p>
+</td>
+<td> </td>
+<td>
+<p>Bonus points for posts that have not been approved yet.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="creating-and-managing-threads" class="wysiwyg-text-align-justify"><strong>Creating and Managing Threads</strong></h2>
+<p class="wysiwyg-text-align-justify">A topic usually contains different discussion threads. They are started by the moderator or, if you configure the topic accordingly, by the panelists as well.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify">Please mind: In panels set up with EFS 7.1 or later, threads are implemented in the forum templates from the beginning. In older upgraded panels, it is necessary to adapt the forum templates. Should this be the case in your panel, please contact Support.</p>
+<p class="wysiwyg-text-align-justify"><strong>Overview of threads for a topic</strong></p>
+<p class="wysiwyg-text-align-justify">To view existing threads for a topic in the admin area, just click the title of the desired topic in the topic list. Alternatively, use the<strong> Edit Posts</strong> icon.</p>
+<p class="wysiwyg-text-align-justify">The list of threads contains all threads of the selected topic with several posts, “Locked” status, and rating statistics.</p>
+<p class="wysiwyg-text-align-justify"><strong>Editing options</strong></p>
+<p class="wysiwyg-text-align-justify

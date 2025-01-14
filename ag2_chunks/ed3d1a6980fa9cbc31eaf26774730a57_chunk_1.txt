@@ -1,0 +1,63 @@
+ Okta</li>
+</ul>
+<pre><code class="language-sql">CREATE TABLE `iam_user_reference` (
+	`id` INT(11) NOT NULL AUTO_INCREMENT,
+	`user_id` INT(11) NULL DEFAULT NULL,
+	`uuid` BINARY(20) NULL DEFAULT NULL,
+	`created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	`updated_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (`id`),
+	INDEX `id` (`id`),
+	INDEX `user_id` (`user_id`),
+	INDEX `uuid` (`uuid`),
+	CONSTRAINT `user_id_users_uid_idx` FOREIGN KEY (`user_id`) REFERENCES `users` (`uid`) ON UPDATE CASCADE ON DELETE CASCADE
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB
+;</code></pre>
+<h2 id="header-7" class="auto-cursor-target">iam_portal_user_group_unassignment_queue</h2>
+<ul>
+<li>Contains Portal Users which have to be unassigned in Okta after MassDelete</li>
+</ul>
+<pre><code class="language-sql">CREATE TABLE `iam_portal_user_group_unassignment_queue` (
+	`id` INT(11) NOT NULL AUTO_INCREMENT,
+	`user_id` INT(11) NULL DEFAULT NULL,
+	`uuid` BINARY(20) NULL DEFAULT NULL,
+	`email` VARCHAR(255) NULL DEFAULT NULL,
+	`created_at` DATETIME NULL DEFAULT CURRENT_TIMESTAMP,
+	`updated_at` DATETIME NULL DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (`id`),
+	UNIQUE INDEX `user_id` (`user_id`)
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB
+;</code></pre>
+<p class="auto-cursor-target"> </p>` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	`updated_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (`id`),
+	INDEX `id` (`id`),
+	INDEX `user_id` (`user_id`),
+	INDEX `uuid` (`uuid`),
+	CONSTRAINT `user_id_users_uid_idx` FOREIGN KEY (`user_id`) REFERENCES `users` (`uid`) ON UPDATE CASCADE ON DELETE CASCADE
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB
+;</code></pre>
+<h2 id="header-7" class="auto-cursor-target">iam_portal_user_group_unassignment_queue</h2>
+<ul>
+<li>Contains Portal Users which have to be unassigned in Okta after MassDelete</li>
+</ul>
+<pre><code class="language-sql">CREATE TABLE `iam_portal_user_group_unassignment_queue` (
+	`id` INT(11) NOT NULL AUTO_INCREMENT,
+	`user_id` INT(11) NULL DEFAULT NULL,
+	`uuid` BINARY(20) NULL DEFAULT NULL,
+	`email` VARCHAR(255) NULL DEFAULT NULL,
+	`created_at` DATETIME NULL DEFAULT CURRENT_TIMESTAMP,
+	`updated_at` DATETIME NULL DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (`id`),
+	UNIQUE INDEX `user_id` (`user_id`)
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB
+;</code></pre>
+<p class="auto-cursor-target"> </p>

@@ -1,0 +1,47 @@
+ 00893794).</p></td>
+</tr>
+<tr>
+<td><p>reporting_data_update_period</p></td>
+<td><p>time (seconds) which the user have to wait until the dataUpdate can be started again</p></td>
+<td><p>3600</p></td>
+<td><p></p></td>
+<td><p>Auf 500 gestellt auf Installation <a href="http://bv3297.customervoice360.com/www/">bv3297.customervoice360.com/www/</a>, wegen einer Sonderprogrammierung von Guido<br>Auf 60 gestellt auf interner Installation <a href="http://rf6673.customervoice360.com/www/">rf6673.customervoice360.com/www/</a></p></td>
+</tr>
+<tr>
+<td><p>reporting_load_limit</p></td>
+<td><p>number of certain type of requests which can run simultaneously. the following acts are impacted: "create", "copy", "dataUpdate"</p></td>
+<td><p>2</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>reporting_ignore_report_limit</p></td>
+<td><p>Ignore reporting limits. Users can create unlimited reports and exports</p></td>
+<td><p>false</p></td>
+<td><p></p></td>
+<td><p>(siehe Betriebshandbuch: Kunden dürfen für eine Installation maximal <br>drei Reports je EFS-Projekt (pid) anlegen und in jedem der Reports <br>maximal drei Exports erzeugen. Bei Sammelinstallationen gibt es auch nur<br>diesen einen Wert; ein Einstellen nach gewissen Kriterien gibt es <br>nicht. <br>Darf nur auf true gesetzt werden, wenn ein Vertrag zwischen Kunde und <br>GP vereinbart wurde. Mit dem setzen auf true ist die Beschränkung <br>aufgehoben und der Kunde kann beliebig viele Reports/Exports generieren.<br>Wünscht der Kunde eine Erweiterung muss dies mit dem zuständigen <br>Vertriebsmitarbeiter geklärt werden und entsprechend vertraglich <br>festgehalten werden. Der Lizenzvertrag wird dann zur Grundlage des <br>Limits.)</p></td>
+</tr>
+</tbody>
+</table><p><strong>Im Tab "GP ONLY:: EFS Analytics Admin" im Plattform Cockpit:</strong></p><p></p><table data-layout="default"><tbody>
+<tr>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/SupportEFSAnalyticsLab?sortcol=0;table=2;up=0#sorted_table">Option</a></p></th>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/SupportEFSAnalyticsLab?sortcol=1;table=2;up=0#sorted_table">Beschreibung</a></p></th>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/SupportEFSAnalyticsLab?sortcol=2;table=2;up=0#sorted_table">Standardlimit</a></p></th>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/SupportEFSAnalyticsLab?sortcol=3;table=2;up=0#sorted_table">Bisher max gesetzt auf</a></p></th>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/SupportEFSAnalyticsLab?sortcol=4;table=2;up=0#sorted_table">Kommentar</a></p></th>
+</tr>
+<tr>
+<td><p>User number</p></td>
+<td><p>Anzahl der gleichzeitigen Reporting+ Nutzer</p></td>
+<td><p>10</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>Request number</p></td>
+<td><p>Anzahl der gleichzeitigen Requests</p></td>
+<td><p>50</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+</tbody></table><h2 id="header-8">pload Customized Templates</h2><p><strong>!!!!! NIEMALS DAS TEMPLATE "reporting_template.ppt" ODER "reporting_template_blank.ppt" NENNEN -&gt; SONST WIRD DAS TEMPLATE VON ALLEN INSTS IN BREMEN BENUTZT !!!!!</strong></p><p>Siehe auch <a href="https://it.globalpark.de/twiki/bin/view/Development/Reporting#Howto_create_templates_for_the_P">Howto create templates for the PPT/PDF Export service</a></p><p>QB:SB: Es ist nicht einfach möglich, ein vom Kunden angepasstes ppt(x) Template hochzuladen, da die Vorlagen nicht den sehr speziellen Anforderungen von Reporting+ entsprechen. Wie mir mitgeteilt wurde, reicht es leider nicht aus, die Vorlage nach den eigenen Wünschen in PowerPoint<a href="https://it.globalpark.de/twiki/bin/edit/Support/PowerPoint?topicparent=Support.SupportEFSAnalyticsLab">?</a> zu erstellen und im Format .ppt abzuspeichern bzw. die

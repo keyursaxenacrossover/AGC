@@ -1,0 +1,129 @@
+]</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79PBQ9835ZVXV4V3VX0"> </h4>
+<h3 id="header-310">GET /survey/surveys/find/active</h3>
+<p>Get a list of active surveys the user has access to</p>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[
+  {
+    "id": 1234,
+    "title": "Example title",
+    "description": "Example description",
+    "marked": true,
+    "author": "Example",
+    "staff": "",
+    "comment": "",
+    "isMarked": false,
+    "url": "http://example.questback.com/uc/main/1234/",
+    "createTime": "2020-07-02T12:53:50+00:00",
+    "fieldTime": {
+      "startTime": "2020-07-02T12:53:50+00:00",
+      "endTime": "2020-08-02T12:53:50+00:00"
+    },
+    "status": "ACTIVE",
+    "type": "ANONYMOUS",
+    "numberOfParameters": 0,
+    "bonusPoints": {
+      "label": "",
+      "value": 0
+    }
+  }
+]</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79PQEQAYAFJ5Z2931MS"> </h4>
+<h3 id="header-311">GET /survey/surveys/{surveyId}</h3>
+<p>Get basic information about a survey</p>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">{
+  "id": 1234,
+  "title": "Example title",
+  "description": "Example description",
+  "marked": true,
+  "author": "Example",
+  "staff": "",
+  "comment": "",
+  "isMarked": false,
+  "url": "http://example.questback.com/uc/main/1234/",
+  "createTime": "2020-07-02T12:53:50+00:00",
+  "fieldTime": {
+    "startTime": "2020-07-02T12:53:50+00:00",
+    "endTime": "2020-08-02T12:53:50+00:00"
+  },
+  "status": "ACTIVE",
+  "type": "ANONYMOUS",
+  "numberOfParameters": 0,
+  "bonusPoints": {
+    "label": "",
+    "value": 0
+  }
+}</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>surveyId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>id of survey to delete <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79P9XBTBD5SSQ4R50K6"> </h4>
+<h3 id="header-312">POST /survey/surveys/</h3>
+<p>Creates a new survey, returns project id. Valid options for <code>type</code>: <em>ANONYMOUS, PERSONALIZED, ES, LOFT, PANEL, GEN_MASTERDATA, DIARY</em>.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "surveyData": {
+    "title": "Example title",
+    "author": "Example",
+    "type": "ANONYMOUS",
+    "description": "Example description",
+    "staff": "",
+    "comment": ""
+  }
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">1234</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79PVD6VTZR2X06C44GA"> </h4>
+<h3 id="header-313">PATCH /survey/surveys/{surveyId}</h3>
+<p>Change a survey's field period and status. Valid options for <code>surveyStatus</code>: <em>GENERATED, ACTIVE, CLOSING, FINISHED, ARCHIVED</em></p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "surveyStatus": "ACTIVE",
+  "surveyFieldTime": {
+    "startTime": "2020-07-02T12:53:50+00:00",
+    "endTime": "2020-08-02T12:53:

@@ -1,0 +1,128 @@
+>
+<td style="width: 358.194px;">
+<p>Select whether a header with X-Frame-Options should be sent to the client</p>
+</td>
+<td style="width: 412.465px;">
+<p>Today, almost any browser makes it possible for web applications to send an HTTP header „X-Frame-Options“ which declares to the browser if a certain website is allowed to be shown in a frame or not.</p>
+<p>Possible value options are:</p>
+<ul>
+<li>
+<p><strong>Do not send</strong>: By the mentioned default value the header is not sent, which effectively leads to permission of framing.</p>
+</li>
+<li>
+<p><strong>Deny</strong>: The header is sent and will prevent any framing.</p>
+</li>
+<li>
+<p><strong>Same origin</strong>: The header is sent and will allow framing only by the website of the same domain.</p>
+</li>
+</ul>
+<p>By default, this header is not sent. “Deny" denies the display of pages in all frames, regardless of their domain. With "Same domain" pages are only displayed in frames whose parent page belongs to the same domain. Please note that the behavior depends on the client browser used.</p>
+<p>If you want to prevent XSS you can set the option to "Deny" (very strict) or to "Same domain" (then you can embed the survey in frames on the same page e.g. the panel website or portals).</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="internal-organization" class="wysiwyg-text-align-justify"><strong>Internal Organization</strong></h2>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 268.0px;"> <col style="width: 492.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Section</strong></p>
+</th>
+<th data-highlight-colour="#57d9a3">
+<p class="wysiwyg-text-align-center"><strong>Brief description</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Show to-do marker in the questionnaire editor</p>
+</td>
+<td>
+<p>Enables the entry of to-do notes in the questionnaire view.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Debug console and links to the questionnaire editor</p>
+</td>
+<td>
+<p>Displays debug info icon in the toolbar and direct links to page and question view in the questionnaire for testing purposes.</p>
+<p>For question type 911, the links are not available.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>To-do marker in the survey</p>
+</td>
+<td>
+<p>Ticking this checkbox will show the to-do marker icon in the toolbar and you can directly enter to-do notes from the questionnaire.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Pretest comments in the survey</p>
+</td>
+<td>
+<p>Ticking this checkbox will show the pretest icon in the toolbar, allowing testers to enter their comments.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Boss button and page selection in the survey</p>
+</td>
+<td>
+<p>The boss button in the toolbar allows you to skip plausibility and completeness checks.</p>
+<p>The drop-down list in the toolbar makes it possible to navigate directly to specific questionnaire pages.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Language selection in the survey</p>
+</td>
+<td>
+<p>In multilingual projects, this drop-down list in the toolbar makes it possible to switch directly to another language.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Links to EFS Translator Interface</p>
+</td>
+<td>
+<p>In the questionnaire and the preview, links are activated which enable you, your testers, and translators (depending on access rights) to jump directly into the respective editing pages of the <strong>Language editor</strong> or EFS Translator Interface.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Algorithm for creating the external variable names</p>
+</td>
+<td>
+<p>The external variable names can be uniformly labeled according to a predefined pattern.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="login-options" class="wysiwyg-text-align-justify"><strong>Login Options</strong></h2>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 197.0px;"> <col style="width: 167.0px;"> <col style="width: 396.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Project type</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Login type</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Description</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Personalized survey</p>
+</td>
+<td>
+<p>E-mail and password</p>
+</td>
+<td>
+<p>

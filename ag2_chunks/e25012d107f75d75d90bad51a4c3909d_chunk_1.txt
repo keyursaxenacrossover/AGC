@@ -1,0 +1,97 @@
+User (Browser)-&gt;Portals Frontend: Enter landing page
+Portals Frontend-&gt;User (Browser): Store current hash/query status
+Portals Frontend-&gt;User (Browser): Redirect to IdP
+User (Browser)-&gt;IdP: Follow Redirect
+IdP-&gt;User (Browser):  Show login page
+User (Browser)-&gt;IdP: Enter login credentials, click login
+IdP-&gt;+IdP: Validate credentials
+IdP-&gt;User (Browser): Redirect back with ID and access token in hash
+User (Browser)-&gt;Portals Frontend: Follow Redirect
+Portals Frontend-&gt;User (Browser): Store ID and access token
+Portals Frontend-&gt;User (Browser): Restore hash/query state
+alt authorized and exists
+Portals Frontend-&gt;User (Browser): Show portal private home
+else not authorized or not exists
+Portals Frontend-&gt;User (Browser): Show Error page</code></pre>
+<p> </p>
+<p> </p>
+<p> </p>
+<h2 id="header-7">Session Management</h2>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20909657910162" alt="Session Management - EFS Admin __ IdP(1).png"></p>
+<p> </p>
+<pre><code class="language-text">title Session Management - EFS Admin &lt;&gt; IdP
+ 
+participant User (Browser)
+participant IdP
+participant EFS
+ 
+ 
+note right of EFS: User is logged in, server has refresh-token
+User (Browser)-&gt;EFS: User triggers any route at EFS
+note right of EFS: Session lifetime is about to expire
+EFS-&gt;IdP: request a new access token using the refresh-token
+alt Refresh token is valid
+IdP-&gt;EFS: send new access token
+EFS-&gt;EFS: validate access token
+EFS-&gt;EFS: Store access token and renew session
+EFS-&gt;User (Browser): respond to the triggered action
+else Refresh token expired
+EFS-&gt;EFS: remove session
+EFS-&gt;User (Browser): redirect user to IdP
+note left of User (Browser): start with authentication
+end</code></pre>
+<p> </p>
+<h2 id="header-8">Logout</h2>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20909686630930" alt="Logout - EFS Admin __ IdP.png"></p>
+<p> </p>
+<pre><code class="language-text">title Logout - EFS Admin &lt;&gt; IdP
+ 
+participant User (Browser)
+participant IdP
+participant EFS
+ 
+ 
+note right of EFS: User is logged in
+User (Browser)-&gt;EFS: User triggers logout
+EFS-&gt;EFS: Remove local session
+EFS-&gt;User (Browser): Redirect user to IdP logout
+User (Browser)-&gt;IdP: Follow Redirect
+IdP-&gt;IdP: Remove master session
+IdP-&gt;User (Browser): Redirect user back to installation
+User (Browser)-&gt;EFS: Follow redirect
+EFS-&gt;User (Browser): Show logout/login page</code></pre>
+<h2 id="header-9">Create new EFS account user</h2>
+<p> </p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20909657916562" alt="create new account user.png"></p>
+<p> </p>
+<pre><code class="language-text">title Sync data on create EFS user account
+
+participant EFS
+participant IdP
+
+
+note right of EFS: user is logged in and has access rights to create user
+EFS-&gt;EFS: Admin user opens "create user account" page
+EFS-&gt;EFS: Admin user enters new account user information \n (user name, first name, name, email and other necessary information) 
+EFS-&gt;EFS: Admin clicks save 
+EFS-&gt;EFS: new entry in users table
+EFS-&gt;IdP: GET request to /api/v1/users/[email address]
+IdP-&gt;IdP: Checks if entry exists
+IdP-&gt;EFS: Send response
+note right of IdP: {email, firstName, lastName}
+alt
+EFS-&gt;EFS: Response user: use insert()
+EFS-&gt;IdP: POST request to /api/v1/users?activate=true
+IdP-&gt;IdP: Creates new IdP entry
+else
+EFS-&gt;EFS: Response user: use update()
+EFS-&gt;IdP: POST request to /api/v1/users/[oktaId]
+IdP-&gt;IdP: Update IdP entry
+end
+note right of IdP: {\n id: string unique identifier, \n profile: { \n     email: string email, \n     login: string email, \n     firstName: string firstName, \n     lastName: string lastName \n }\n}
+note right of IdP: @see https://developer.okta.com/docs/reference/api/users/#response-example-10
+IdP-&gt;EFS: Send Response
+alt
+EFS-&gt;EFS: create entry in iam_user_reference table
+else
+EFS-&gt;EFS

@@ -1,0 +1,81 @@
+<li>
+<p>#v_000n | label#: the label of the respective variable.</p>
+</li>
+<li>
+<p>#v_000n|code#: the code of the respective variable.</p>
+</li>
+<li>
+<p>For variables that refer to open-ended text fields, the entry made by the respondent will be displayed in both cases.</p>
+</li>
+<li>
+<p>URL parameter (p_000n): The wildcards are #p_0001# for the first URL parameter, #p_0002# for the second URL parameter, etc.</p>
+</li>
+<li>
+<p>User-defined variables c_000n: The wildcard is #c_000n#.</p>
+</li>
+<li>
+<p>From EFS 10.5: Scoring variables #s_000x#: The wildcard is #s_000x#.</p>
+</li>
+<li>
+<p>Participant variables u_000n: The wildcard for the participant administration contents is #variablename# (e.g. #u_language#).</p>
+</li>
+<li>
+<p>Participant variables of the panelists in EFS Panel installations u_000n: The wildcard for the user table contents listed in Table <em>11.3 </em>is #u_nameofvariable# (e.g. #u_name#).</p>
+</li>
+<li>
+<p>Master data of the panelists in EFS Panel installations: The wildcards for master data, m_000n, and md_000n, are #m_000n# and #md_000n#.</p>
+</li>
+<li>
+<p>Other variables: #code# can be used to output the current participant’s access code in a personalized project. This option is needed e.g. for custom programming.</p>
+</li>
+</ul>
+<h3 id="transferring-answers-from-another-project" class="wysiwyg-text-align-justify"><strong>Transferring Answers from Another Project</strong></h3>
+<p class="wysiwyg-text-align-justify">In personalized projects and in panel and master data surveys on EFS Panel installations, you are able to transfer the contents of variables from another project, i.e. if a participant has completed the source project, you can automatically import their answers into the variables of the second project and use them there for filtering, evaluation and other purposes. Participation is assigned via the participant’s e-mail address.</p>
+<p class="wysiwyg-text-align-justify"><strong>Before you start</strong></p>
+<p class="wysiwyg-text-align-justify">Please note:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Only data from permitted project types (personalized, panel, and master data surveys) can be imported.</p>
+</li>
+<li>
+<p>You can transfer the contents of project variables (v_000n), URL parameters (p_000n), and user-defined variables (c_000n).</p>
+</li>
+<li>
+<p>The source and destination variables must have the same variable type.</p>
+</li>
+<li>
+<p>The attribute levels must correspond with regard to content.</p>
+</li>
+<li>
+<p>Attribute levels of the source variable that do not have an equivalent in the destination variable will not be transferred.</p>
+</li>
+<li>
+<p>This feature should not be used in combination with data cleaning.</p>
+</li>
+</ul>
+<h3 id="making-assignments" class="wysiwyg-text-align-justify">Making assignments</h3>
+<p class="wysiwyg-text-align-justify">Open the <strong>Project properties</strong> → <strong>Variable data import </strong>menu.</p>
+<ol class="wysiwyg-text-align-justify" start="1">
+<li>
+<p>Select the source project.</p>
+</li>
+<li>
+<p>Confirm by clicking on <strong>Select source project</strong>.</p>
+</li>
+<li>
+<p>Assign the first source variable from the source project to the respective destination variable in the current project.</p>
+</li>
+<li>
+<p>Confirm by clicking on <strong>Save</strong>.</p>
+</li>
+<li>
+<p>Repeat this operation for all variables that have to be assigned.</p>
+</li>
+</ol>
+<h2 id="the-preview" class="wysiwyg-text-align-justify">The Preview</h2>
+<p class="wysiwyg-text-align-justify">When creating and editing the questionnaire, it is helpful to be able to directly monitor the impact the changes have on the questionnaire’s appearance. Via <strong>Preview</strong> icons located at all important places in the admin area you can preview the complete questionnaire, the respective question (“Preview question”) or the respective questionnaire page (“Page preview”) in a pop-up window.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h1 id="h_01HGKSMPRTNYJGQX3QXBXBJ8WN" class="wysiwyg-text-align-justify">FAQ</h1>
+<h3 id="h_01HGKSMPRTRY0QQXBJ8XBXJ8WN" class="wysiwyg-text-align-justify">Can I change the question type after creating a question?</h3>
+<p class="wysiwyg-text-align-justify">Yes, you can change the question type using the "Change question type" function in the detail view. However, some special settings may not be transferred when changing the question type.</p>
+<h3 id="h_01HGKSMPRTVY0QQXBJ8XBX

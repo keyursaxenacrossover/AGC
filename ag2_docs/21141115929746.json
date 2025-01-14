@@ -1,0 +1,30 @@
+{
+    "id": 21141115929746,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/21141115929746.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21141115929746-Globis-New-Agents-Onboarding-and-Usage",
+    "author_id": 369584192734,
+    "comments_disabled": false,
+    "draft": false,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20389541164690,
+    "created_at": "2024-09-03T15:35:34Z",
+    "updated_at": "2024-10-17T10:11:53Z",
+    "name": "Globis New Agents Onboarding and Usage",
+    "title": "Globis New Agents Onboarding and Usage",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-10-17T10:11:53Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075274,
+    "content_tag_ids": [],
+    "label_names": [],
+    "body": "<h1 id=\"h_01J6W63JTT7AF3QM0KYY9TNWZ5\">Overview</h1>\n<p>Globis is the Tivian DXI system used to centralize all DXI installations. In Globis you can find all the information required for an instance in order to troubleshoot and access it. Therefore, it is mandatory that agents have access to it.</p>\n<h1 id=\"h_01J6W63FXFM4S0DKKV20Y3R70W\">Onboarding New Agents</h1>\n<p>Each agent will need their own account in Globis, as the login is session-based and having a shared user will mean that each new login will invalidate the previous login.</p>\n<p>Follow the below steps to add a new user to Globis:</p>\n<ol>\n<li>Login to Globis via the URL <a href=\"https://globis.3uu.de/\">https://globis.3uu.de/</a> and the root user documented in PasswordState.</li>\n<li>(Optional) Duplicate the browser tab</li>\n<li>(Optional) In one browser tab, go to <strong>Staffer &gt; Staff List</strong> and select Ciprian's account to view its Team config and mirror it to the new account</li>\n<li>In the other tab, go to <strong>Staffer &gt; Add new Staff</strong> account and configure the new account:\n<ol>\n<li>\n<strong>Account details:</strong><br>Account name (*)<br>First Name (*)<br>Last Name (*)<br>e-mail (*)<br>Password (*)<br>Password (second entry) (*)</li>\n<li>\n<strong>Team configuration:</strong>\n<ol>\n<li>GLOBIS-Team (Minimalrechte)</li>\n<li>Mitarbeiter Globalpark GmbH</li>\n<li>Supporter</li>\n<li>Support-Aktiv</li>\n<li>SupportSecondLevel</li>\n<li>SupportFirstLevel</li>\n<li>TicketSystem</li>\n</ol>\n</li>\n<li>Set Primary Team to <strong>SupportFirstLevel</strong><br><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21141115918226\" width=\"578\" height=\"228\">\n</li>\n<li>Click <strong>Create Account</strong>\n</li>\n</ol>\n</li>\n<li>Once the account is created, Riga needs to be accessed so that the agent is able to <strong>Create New Installation</strong>\n<ol>\n<li><strong>This is, for now, reserved only to legacy Tivian resources; once this gap is filled, we will update this runbook accordingly.</strong></li>\n</ol>\n</li>\n<li>Share the account and password with the new agent via G-chat or privnote (or any other similar service)</li>\n</ol>\n<h1 id=\"h_01J7G4R00TSPF0S761TBG5APEA\">Using Globis</h1>\n<p>Globis will be your go-to system when receiving any DXI/EFS ticket. This is because it centralizes all of the customer instance information, and you will therefore use it to identify customer instance details and organizations.</p>\n<h2 id=\"h_01J7G4TQREK5DFC8A73A4SAWEM\">Finding instance/customer details</h2>\n<ol>\n<li>After logging into Globis, you will be by default redirected to the <strong>Installations</strong> screen</li>\n<li>In here, use the <strong>Search in all fields</strong> option in order to conduct your search<br><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21299524484498\" width=\"418\" height=\"210\">\n</li>\n<li>In this field, you can search for instance <strong>technical names</strong> (eg: tx3689), <strong>customer names</strong> (Payback) and even <strong>module names</strong> to identify instances that have specific modules enabled<br><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21299507861650\" width=\"422\" height=\"138\">\n</li>\n<li>However, <span class=\"wysiwyg-underline\"><strong>this field will not return results</strong></span> if what you are searching for are <strong>organizations nested in shared installation.</strong>\n</li>\n</ol>\n<h2 id=\"h_01J7G53GNC7QNAPGQMM7EWPYH3\">Finding organizations in shared installations</h2>\n<p>While this may not be an often request, you may still get it, usually from the BU, asking for instance URL's, based on a customer list. As mentioned above, organizations will not appear in the installations search, so whenever you are not finding a customer name in the installations list, you will need to:</p>\n<ol>\n<li>Click on <strong>Overview organisations</strong>\n</li>\n<li>Search for the customer name that didn't show up above and voila!<br><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21299524487698\"><br><br>\n</li>\n</ol>\n<p><strong>Note:</strong> If you are failing to find a specific installation, you can also check the <strong>Deleted installations</strong> from the same menu:</p>\n<p class=\"wysiwyg-text-align-center\"><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/22036111314322\" width=\"582\" height=\"189\"></p>\n<p class=\"wysiwyg-text-align-center\"><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/22036074768274\" width=\"617\" height=\"112\"></p>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

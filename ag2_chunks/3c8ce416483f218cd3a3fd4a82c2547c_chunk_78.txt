@@ -1,0 +1,138 @@
+="1320.6132">
+<colgroup> <col style="width: 99.0px;"> <col style="width: 97.0px;"> <col style="width: 196.0px;"> <col style="width: 98.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" style="width: 106.111px;">
+<p><strong>Description</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 221.736px;">
+<p><strong>Wildcard</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 201.076px;">
+<p><strong>Explanation</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 115.59px;">
+<p><strong>Preallocation in the standard panel</strong></p>
+</th>
+</tr>
+<tr>
+<td style="width: 98.0903px;">
+<p>Name of panel</p>
+</td>
+<td style="width: 213.715px;">
+<p>{$env.panel_name}</p>
+</td>
+<td style="width: 193.056px;">
+<p>Name of the panel, which can be output via wildcards. This is also used in the emails sent by panel visitors or panelists to the panel operator via the contact form.</p>
+</td>
+<td style="width: 107.569px;">
+<p>Your Panel</p>
+</td>
+</tr>
+<tr>
+<td style="width: 98.0903px;">
+<p>First day of week</p>
+</td>
+<td style="width: 213.715px;">
+<p> </p>
+</td>
+<td style="width: 193.056px;">
+<p>Sunday or monday can be selected. From EFS 8.2, you can choose any day of the week.</p>
+<p>The setting affects the calculation of the upper limit of friends to be recruited per week and the display of the survey of the week for the current language version. If nothing is selected, the global setting will be used.</p>
+</td>
+<td style="width: 107.569px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 98.0903px;">
+<p>Date format</p>
+</td>
+<td style="width: 213.715px;">
+<p>{$env.locale.date_format}</p>
+</td>
+<td style="width: 193.056px;">
+<p> </p>
+</td>
+<td style="width: 107.569px;">
+<p>d.m.Y</p>
+</td>
+</tr>
+<tr>
+<td style="width: 98.0903px;">
+<p>Date format</p>
+</td>
+<td style="width: 213.715px;">
+<p>{$env.locale.date_format2}</p>
+</td>
+<td style="width: 193.056px;">
+<p> </p>
+</td>
+<td style="width: 107.569px;">
+<p>d-m-Y</p>
+</td>
+</tr>
+<tr>
+<td style="width: 98.0903px;">
+<p>Time format</p>
+</td>
+<td style="width: 213.715px;">
+<p>{$env.locale.time_format}</p>
+</td>
+<td style="width: 193.056px;">
+<p> </p>
+</td>
+<td style="width: 107.569px;">
+<p>h:i a (T)</p>
+</td>
+</tr>
+<tr>
+<td style="width: 98.0903px;">
+<p>Time format</p>
+</td>
+<td style="width: 213.715px;">
+<p>{$env.locale.time_format2}</p>
+</td>
+<td style="width: 193.056px;">
+<p> </p>
+</td>
+<td style="width: 107.569px;">
+<p>H:i:s</p>
+</td>
+</tr>
+<tr>
+<td style="width: 98.0903px;">
+<p>Time zone for date display on panel pages</p>
+</td>
+<td style="width: 213.715px;">
+<p> </p>
+</td>
+<td style="width: 193.056px;">
+<p> </p>
+</td>
+<td style="width: 107.569px;">
+<p>Europe / Paris</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify"><strong>3. Debugging</strong></p>
+<p class="wysiwyg-text-align-justify">Starting in <strong>Website editor</strong>, click on<strong> Website settings</strong>, then go to the tab <strong>Debugging</strong>.</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default">
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" style="width: 149.34px;">
+<p><strong>Description</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 397.76px;">
+<p><strong>Explanation</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 142.517px;">
+<p><strong>Preallocation in the standard panel</strong></p>
+</th>
+</tr>
+<tr>
+<td style="width: 141.319px;">
+<p>Show debug information on the website</p>
+</

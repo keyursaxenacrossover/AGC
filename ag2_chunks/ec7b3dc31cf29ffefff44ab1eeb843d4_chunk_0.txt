@@ -1,0 +1,34 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1055129716">https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1055129716</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">DV 5 - AWS</a></li>
+<li><a href="#header-2">OLD - AWS</a></li>
+<li><a href="#header-3">OLD - Set up DV 4 using scripts</a></li>
+<ul>
+<li><a href="#header-5">DV 4.1 (Report Manager)</a></li>
+<ul>
+<li><a href="#header-7">Handover to Sysadmins</a></li>
+<li><a href="#header-8">TS Setup Checklist</a></li>
+</ul>
+<li><a href="#header-10">DV 4.0</a></li>
+</ul>
+<li><a href="#header-12">OLD - Set up DV manually</a></li>
+<ul>
+<li><a href="#header-14">Activate Report Manager</a></li>
+</ul>
+<li><a href="#header-16">OLD - Updates and Rollout</a></li>
+<li><a href="#header-17">Remove Datavoyager</a></li>
+</ul>
+</ul><p><ac:link ac:card-appearance="inline"><ri:page ri:content-title="DV - system dependencies" ri:space-key="EN" ri:version-at-save="28"></ri:page><ac:link-body>DV - system dependencies</ac:link-body></ac:link></p><p><ac:link ac:card-appearance="inline"><ri:page ri:content-title="DV - Support Information" ri:space-key="EN" ri:version-at-save="1"></ri:page><ac:link-body>DV - Support Information</ac:link-body></ac:link> → from the developers </p><p></p><ac:parameter ac:name="minLevel">1</ac:parameter><ac:parameter ac:name="maxLevel">7</ac:parameter><p></p><h1 id="header-1">DV 5 - AWS</h1><p>this is true since the 21.1 Upgrade June 2021</p><ac:rich-text-body><p>The entry is pending a proper wording and translation</p></ac:rich-text-body><blockquote>
+<p>jeder DV hat eine Instanz ID</p>
+<p>Alt:<br>dv nutzt ordnerstruktur zur Zuordnung: ie. technical name (ordnername, i.e. bakingfeedback, oder so 3uu blödisnn wie in Globis) + ordnername mit dv Nummer (auch am orderpfad orientiert)</p>
+<p>Neu:<br>DVs nicht mehr in den Installations ordnern:<br>/nfs/dv-instances  (parallel zu /nfs/installation)<br>ID ist jetzt config Option: kann frei gewählt werden, aber um zuordnung machbar zu machen<br>technical name + nummerierung: ab1234-no1<br>Aber auch frei wählbar, ie Telekom bekommt für die Infoplatform so was (siehe Doku für Migrationspfad <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Migration Path to DV5" ri:space-key="PLATE" ri:version-at-save="55"></ri:page><ac:link-body>Migration Path to DV5</ac:link-body></ac:link>  )</p>
+<p>InstanzID gibt den Ordner in /nfs/dv-instances vor</p>
+<p>DV hat entgegen EFS die Config nicht im nfs liegen.<br>Version wird nciht wie bei EFS festgelegt<br>DVs laufen mit der aktuellen Version im Container.</p>
+<p>DV hat gemäß Instanz ID eine generische DV domain, also: <a href="http://dv-ab1234-no1.customervoice360.com">dv-ab1234-no1.customervoice360.com</a></p>
+<p>Bei Legacy:<br>alle existierenden DVs haben altes DNS setup bekommen: Pro EFS instanz 1(eins!) DV der angesprochen werden kann<br>Wird unter dem alten Pfad zur Verfügung gestellt</p>
+<p>Wenn benutzt mit dem Interface, dann login erreichbar unter alter domain, nach dem login ist das dann /datavoyager, aber grundsätzlich alles erreichbar unter dem alten pfad</p>
+<p>Bei neuen Instanzen:<br>Passwort für root selbes wie früher<br>db heißt nun: dv_ab1234_no1<br>bekommt eigene Passwörter und user für diese DB: dv-techsupport (PW siehe Keypass)<br>Application Ini not available for TS<br>Customizings werden sich im /nfs/dv-instances/ab1234-no1 Verezichnis direkt finden, nicht sepparat wie bei EFS (Interview mal gordon)<br>Cstomizings sind hier aus git zu nehmen. nono bad nfs only terrible dont<br>-&gt; mit diesem Namen zu finden in bitbucket :) simple as cake</p>
+<p>Bei Troubleshooting bis auf

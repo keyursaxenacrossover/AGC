@@ -1,0 +1,122 @@
+0px;"> <col style="width: 167.0px;"> </colgroup>
+<tbody>
+<tr style="height: 44px;">
+<th class="wysiwyg-text-align-center" style="height: 44px; width: 159.705px;">
+<p><strong>Description</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="height: 44px; width: 271.927px;">
+<p><strong>Explanation</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="height: 44px; width: 217.986px;">
+<p><strong>Preallocation in the standard panel</strong></p>
+</th>
+</tr>
+<tr style="height: 372px;">
+<td style="height: 372px; width: 151.684px;">
+<p>Survey of the week (previously: Survey that shall be linked...)</p>
+</td>
+<td style="height: 372px; width: 263.906px;">
+<p>This survey is displayed from the first day of the week onwards, until either the panelists have participated or the week is over.</p>
+<ul>
+<li>
+<p>Wildcard {$env.weekly_survey}</p>
+</li>
+</ul>
+<p>To define the starting point of the weekly intervals, select the first day of the week in the global website configuration or in the settings of a specific language version</p>
+</td>
+<td style="height: 372px; width: 209.965px;">
+<p> </p>
+</td>
+</tr>
+<tr style="height: 179px;">
+<td style="height: 179px; width: 151.684px;">
+<p>User-defined labels 1 to 3</p>
+</td>
+<td style="height: 179px; width: 263.906px;">
+<p>You can highlight selected surveys additionally with specific notes or icons. This makes sense, for example, in the case of new surveys, surveys with special incentives, or regular weekly surveys.</p>
+</td>
+<td style="height: 179px; width: 209.965px;">
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"><strong>Bonus points</strong></p>
+<table class="wysiwyg-text-align-justify" style="height: 766px;" border="1" width="658" data-layout="full-width" data-table-width="1513.4687999999999">
+<colgroup> <col style="width: 111.0px;"> <col style="width: 220.0px;"> <col style="width: 159.0px;"> </colgroup>
+<tbody>
+<tr>
+<th style="width: 145.694px;">
+<p><strong>Description</strong></p>
+</th>
+<th style="width: 291.84px;">
+<p><strong>Explanation</strong></p>
+</th>
+<th style="width: 210.069px;">
+<p><strong>Preallocation in the standard panel</strong></p>
+</th>
+</tr>
+<tr>
+<td style="width: 137.674px;">
+<p>Name of bonus points (short form)</p>
+</td>
+<td style="width: 283.819px;">
+<p>Can be inserted and output via the {$env.credit_name}) wildcard.</p>
+</td>
+<td style="width: 202.049px;">
+<p>PP</p>
+</td>
+</tr>
+<tr>
+<td style="width: 137.674px;">
+<p>Name of bonus points (long form)</p>
+</td>
+<td style="width: 283.819px;">
+<p>Can be inserted and output via the {$env.credit_name_long} wildcard.</p>
+</td>
+<td style="width: 202.049px;">
+<p>Panel points</p>
+</td>
+</tr>
+<tr>
+<td style="width: 137.674px;">
+<p>Label for “no bonus points available”</p>
+</td>
+<td style="width: 283.819px;">
+<p>Will be output when a respondent has not earned any bonus points yet.</p>
+</td>
+<td style="width: 202.049px;">
+<p>No panel points are available</p>
+</td>
+</tr>
+<tr>
+<td style="width: 137.674px;">
+<p>Allow multiple invitation of the same member in promotions</p>
+</td>
+<td style="width: 283.819px;">
+<p> </p>
+</td>
+<td style="width: 202.049px;">
+<p>No</p>
+</td>
+</tr>
+<tr>
+<td style="width: 137.674px;">
+<p>Text to be entered in the bonus points history when redeeming points.</p>
+</td>
+<td style="width: 283.819px;">
+<p>Is used to document the history of redeemed points. Use the wildcard %s to insert the name of the requested bonus item.</p>
+</td>
+<td style="width: 202.049px;">
+<p>%s</p>
+</td>
+</tr>
+<tr>
+<td style="width: 137.674px;">
+<p>Name of panel</p>
+</td>
+<td style="width: 283.819px;">
+<p>The name of the wildcard for a link to the panel, which is inserted into the e-mail form for “Tell-a-friend” campaigns. When the email is dispatched, the wildcard will be replaced with a clickable link.</p>
+</td>
+<td style="width: 202.049px;">
+<p>&lt;link to the panel&gt;</

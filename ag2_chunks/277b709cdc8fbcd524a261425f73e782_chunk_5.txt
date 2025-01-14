@@ -1,0 +1,49 @@
+ mentioned in the installation request</p></li>
+<li>
+<p>The script already changes</p>
+<ul>
+<li><p>tmp_path</p></li>
+<li><p>tmp_path_export</p></li>
+<li><p>watchdog_path</p></li>
+<li><p>gp_id</p></li>
+<li><p>the root password and prints it out on the console</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>TS adds the installation to US PasswordSafe and adds the password created by the script before</p></li>
+<li><p>TS adds additional modules if requested</p></li>
+<li><p>TS "changes the service layer token" (because it is copied from the master too)</p></li>
+<li>
+<p>In case of Rackspace: TS changes</p>
+<ul>
+<li><p><strong>memcache_servers</strong> -&gt; 172.24.48.112</p></li>
+<li><p><strong>sftp_host</strong> -&gt; 172.24.48.40</p></li>
+<li><p><strong>mysight_user_provisioning_service</strong> -&gt; <a href="http://172.24.48.40:49866/app/api/process/userprovision/">http://172.24.48.40:49866/app/api/process/userprovision/</a></p></li>
+<li><p>(if not done by admins already) <strong>$_SERVER["SERVER_PORT"]</strong> in EFS configuration file (config.inc.php3) -&gt; 8443 // Frankfurt: 443</p></li>
+</ul>
+</li>
+<li><p>TS adds correct Salesforce ID to Organizations "SMX_Admin" and "Ipsos SMX"</p></li>
+<li><p>TS executes healself</p></li>
+<li>
+<p>TS resets activity stream to create the elastic search index for this installation</p>
+<pre><code class="language-sql">cd www
+php support/panel_reset_activitystream.php =&gt; [ 1 ] - Delete and reset complete activity stream [WARNING: maybe slow]</code></pre>
+</li>
+<li>
+<p>TS also might have to sync the panelists</p>
+<pre><code class="language-sql">cd www/
+php support/panel_sync_panelists.php =&gt; [ 0 ] - Update all panelists [WARNING: maybe slow]</code></pre>
+</li>
+<li><p>TS executes installation check</p></li>
+</ul><h3 id="header-10">Kantar (TNS)</h3><p>The process and especially keeping the deadline currently still is in discussion because there are going to be different types of installations.<br>Based on the type of installation, a different set of modules and customizings will be enabled. <br>Important for EFS TS: You have to execute script "helpersCreateNewInstallation" because we don't have a master installation yet. When executing the script, select "used_by: TNS". </p><p></p><ul>
+<li><p>195.66.99.177 - IP for Kantar installations with <a href="https://it.globalpark.de/twiki/bin/view/Support/SSL">SSL</a></p></li>
+<li><p>195.66.99.233 - deafult-IP for Kantar Installations without <a href="https://it.globalpark.de/twiki/bin/view/Support/SSL">SSL</a></p></li>
+<li><p><a href="http://subdomain.mypersonalroutine.com.edgekey.net">subdomain.mypersonalroutine.com.edgekey.net</a> - Example Domain for Installations using Akamai</p></li>
+</ul><hr><h2 id="header-12">Check a cloned shared installation to be used by different customer</h2><p><em><strong>How to delete objects of other clients on new installation</strong></em></p><p>Example case 00460199<br>In this example shared installation <a href="http://ww3.efs-survey.com">ww3.efs-survey.com</a> was cloned to be used by client ING-DiBa. On the cloned installation all data and objects of the other clients needs to be deleted.<br>Here is how you can delete these objects.</p><ac:parameter ac:name="minLevel">4</ac:parameter><h3 id="header-14">Delete organisations and all related objects (projects, teams, users, mail templates, mail senders, etc.)</h3><ul>
+<li><p>Delete all organisations of all other clients on the cloned installation. If everything was set up without inconsistencies, all related objects projects, teams, users, mail templates, mail senders, etc. will be deleted with the organization. If there are nconsistencies, these have to be cleaned afterwards.</p></li>
+<li>
+<p>Fix inconsistencies afterwards: </p>
+<ul><li><p>[installation path]/htdocs/www<br>php support/fix_inconsistencies.php</p></li></ul>
+</li>
+</ul><h4 id="header-16">Find out all organisation related items</h4><p>Find out all organisatzion related items, like projects, macros, scale options etc see list in SELECT below:</p><pre><code class="language-sql">SELECT d.gid, d.rc, oi.*, ot.tname FROM obj_inst oi, obj_type ot, obj_type ot2, drago d WHERE d.gid IN (120276) AND

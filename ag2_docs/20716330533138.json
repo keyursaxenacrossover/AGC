@@ -1,0 +1,30 @@
+{
+    "id": 20716330533138,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/20716330533138.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20716330533138-Essentials-Setup",
+    "author_id": 369584192734,
+    "comments_disabled": false,
+    "draft": true,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20714711445138,
+    "created_at": "2024-08-12T18:56:42Z",
+    "updated_at": "2024-08-12T18:56:44Z",
+    "name": "Essentials Setup",
+    "title": "Essentials Setup",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-08-12T18:56:44Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075294,
+    "content_tag_ids": [],
+    "label_names": [],
+    "body": "<p><b>Original Confluence URL:</b> <a href=\"https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1057226792\">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1057226792</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>\n\n<h2>Table of Contents</h2>\n<ul class=\"toc\">\n<ul>\n<li><a href=\"#header-1\">General (once):</a></li>\n</ul>\n</ul><p><strong><ac:parameter ac:name=\"colour\">Red</ac:parameter><ac:parameter ac:name=\"title\">Under Construction</ac:parameter></strong></p><p><br></p><p><br></p><p><strong>Per tenant (every tenant):</strong></p><ul>\n<li>Add the respective users to the Essentials app on Okta side</li>\n<li>Enable Okta federation in Essentials for the respective account and users</li>\n</ul><h1 id=\"header-1\"><strong>General (once):</strong></h1><ul>\n<li>\n<u><strong>Create an application (Essentials)</strong></u><ul>\n<li>Type: web</li>\n<li>Sign on method: SAML</li>\n<li>SSO URL: &lt;essentials-domain&gt;/sso/consumeresponse</li>\n<li>Recipient URL: &lt;essentials-domain&gt;/sso/consumeresponse</li>\n<li>Destination URL: &lt;essentials-domain&gt;/sso/consumeresponse</li>\n<li>Audience restriction: &lt;essentials-domain&gt;</li>\n<li>Name ID Format: Email</li>\n<li>Response: Signed</li>\n<li>Assertion Signature: Signed</li>\n<li>SAML Single logout: disabled</li>\n<li>SAML Issuer ID: <span class=\"nolink\">https://www.okta.com/${org.externalKey</span>}</li>\n<li>ess-production-public.cer (CN=*.questback.com)</li>\n<li>configuration that is not highlighted here should be standard</li>\n</ul>\n</li>\n<li>\n<u><strong>Send metadata URL to Essentials Support (check the URL before):</strong></u><ul><li><span class=\"nolink\">https://&lt;okta-domain&gt;/app/&lt;okta-app-id&gt;/sso/saml/metadata</span></li></ul>\n</li>\n<li>\n<u><strong>What has to be done to get Essentials running on Okta?</strong></u><ul>\n<li>Work-In-Progress: has to be confirmed by Essentials developers</li>\n<li>Import the SAML document</li>\n<li>Enable account</li>\n<li>Optionally correct usernames</li>\n</ul>\n</li>\n<li><u><strong>Follow as with other applications (groups, etc.)</strong></u></li>\n</ul>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

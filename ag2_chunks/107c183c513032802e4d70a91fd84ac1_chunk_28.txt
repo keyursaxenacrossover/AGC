@@ -1,0 +1,74 @@
+>
+<p>If you want to reset the initial passwords of one or more users, or if you want to generate a new password, locate the respective users in the user list and then use either the action “Generate passwords” or the action “Reset passwords”. After that, mail the passwords to the users again.</p>
+</li>
+<li>
+<p>The detailed view of the users offers you additional edit options:</p>
+<ul>
+<li>
+<p>As long as the user has not logged in, i.e., as long as he has not changed his initial password, you can view the initial password.</p>
+</li>
+<li>
+<p>As soon as the user has changed the password, you cannot view it any longer. So, if the user loses or forgets his password, you have to either reset the password or generate a new one and mail it to the user.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Alternatively, refer your users to the “Reset password” dialog.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If you want users to be able to change the account data and allocations of other users, you need to assign the right manager_edit and/or manager_alloc to the appropriate roles.</p>
+<p class="wysiwyg-text-align-justify">Please note:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>A user can not assume multiple roles within one unit.</p>
+</li>
+<li>
+<p>A user cannot assume the same role twice within a branch of the structure, i.e., he cannot have the same role in a unit and in its parent unit.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If you want users to be able to (re-)generate or reset the passwords of other users, you need to assign the right <em>manager_set_pw</em> and/or <em>manager_reset_pw</em> to the appropriate roles.</p>
+<p class="wysiwyg-text-align-justify">Initial passwords and passwords that were generated anew are visible for the project managers in the admin area and can be dispatched by mail. As soon as a user has changed their password, though, you can not access it via the admin area anymore. Dispatch per mail is not possible anymore, either: the characters are replaced by *****.</p>
+<h3 id="viewing-a-user-s-reports-in-a-centralized-manner" class="wysiwyg-text-align-justify"><strong>Viewing a user’s reports in a centralized manner</strong></h3>
+<p class="wysiwyg-text-align-justify">On the <strong>Reports</strong> tab in the detail view in the centralized user management, you can see which reports have been stored for the respective user.</p>
+<h3 id="sending-e-mail-in-org-processor" class="wysiwyg-text-align-justify">
+<strong>Sending E-Mail in </strong><em><strong>Org Processor</strong></em>
+</h3>
+<p class="wysiwyg-text-align-justify">In the course of the project, you will both write to users and manage users who in turn write to other users. You usually write to users in the following situations:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>You have created new user accounts and want to provide the owners with their login information.</p>
+</li>
+<li>
+<p>If the login information is not delivered by e-mail but by other means, you might use e-mail to notify the new users that they will soon receive a letter with their login information through their company's in-house mail.</p>
+</li>
+<li>
+<p>You want to notify the users of the project start or the start of a new phase.</p>
+</li>
+<li>
+<p>You want to ask the users to start with a particular job or to finish a job in due time.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The necessary tasks are presented in the following:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Creating mail templates to be used in the Org Processor and linking them with the project.</p>
+</li>
+<li>
+<p>Mailing users from the admin area</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Depending on how you organize your project, your users may be required to e-mail other users in turn:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The users have created new user accounts for their area of responsibility and want to provide these new users with their login information.</p>
+</li>
+<li>
+<p>The owner of a higher-level unit wants to ask the users in the subunits to conclude a particular work phase.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">This is also possible in the Org Processor: You can create mail templates for typical contact situations and make these available to the users. You have access to the main function of the Org Processor from all views and menus where the sending of e-mail makes sense (e.g. organizational structure, user management, logistics sites).</p>
+<h3 id="mailing-users" class="wysiwyg-text-align-justify"><strong>Mailing users</strong></h3>
+<p class="wysiwyg-text-align-justify">If you want to e-mail users in your area of responsibility, please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Open the appropriate area of the<em> Org Processor</em>. In the example shown

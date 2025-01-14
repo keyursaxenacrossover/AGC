@@ -1,0 +1,75 @@
+You are surveying customers of an online shop to find out how satisfied they are and when they expect to receive the goods they bought: Depending on the expected date of delivery, the interview participants will receive an email inviting them to a second survey after a certain delay. The respondents are entered into the sample as active participants.</p>
+<h3 id="features" class="wysiwyg-text-align-justify">Features</h3>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The sample trigger can be set up and executed in all quantitative project types (AN, PE, PA, MD, ES, MSF).</p>
+</li>
+<li>
+<p>For the target project, you can use all project types with participant administration, i.e. personalized projects, employee surveys, multi-source feedback, panel surveys, and master data surveys.</p>
+</li>
+<li>
+<p>You can only invite participants with existing panelist accounts to panel surveys or master data surveys. The e-mail address is used to match the participant and panelist account.</p>
+</li>
+</ul>
+<h3 id="configuring-sample-trigger" class="wysiwyg-text-align-justify">Configuring Sample Trigger</h3>
+<p class="wysiwyg-text-align-justify">The basic settings are the same as for other trigger types. When configuring the details, please mind:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Select the participant administration or sample of the target project to which the participants are to be added and invited.</p>
+</li>
+<li>
+<p>In the “Mail dynamically to” field, select the variable that contains the e-mail address of the participants:</p>
+<ul>
+<li>
+<p>This e-mail address will be used not only for delivering the invitations, but to create the participant accounts in the target project, or to insert the panelists into the sample of the target project in panel and master data surveys.</p>
+</li>
+<li>
+<p>In projects with participant administration, this is usually<em> u_email</em>.</p>
+</li>
+<li>
+<p>In anonymous projects, similar to the mail trigger, you can select the variables for single row text fields (141) and “Other” fields (answer option + text). It is recommendable to apply an “e-mail” input format check to the selected variable.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Just as with the mail trigger, you have to configure the e-mail to be sent. You can define the mail in the trigger editor. Alternatively, you can import the content of a mail template, too.</p>
+<ul>
+<li>
+<p>The mail sender must be specified.</p>
+</li>
+<li>
+<p>The mail text must contain an access code or link for the secondary survey. For this purpose, use the wildcard #url#, #code# and #code_complete#: if participant administration or sample of the secondary project are selected, the wildcards will be filled with the URL and/or code of the target project.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Define the dispatch date:</p>
+<ul>
+<li>
+<p>Per default, the emails will be dispatched immediately upon activation of the trigger.</p>
+</li>
+<li>
+<p>Optionally, another dispatch date can be defined. Create a user-defined variable (c variable) or project variable of type “text”. This variable should contain the number of days from the execution of the trigger to the dispatch of the mail, for the proper dispatch date, <em>EFS</em> will then add another 12 hours to the value of this variable. Select this variable in the reinvitation trigger.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="re-invitation-trigger" class="wysiwyg-text-align-justify">Re-invitation trigger</h2>
+<p class="wysiwyg-text-align-justify">The reinvitation trigger reinvites participants to take part in a survey, depending on a condition that you have defined. The data records of the participants are reset without deletion of data to disposition code 11 or 12, i.e. if the participants restart at a later date, they will be routed to the first page of the survey again.</p>
+<h3 id="example-1" class="wysiwyg-text-align-justify">Example</h3>
+<p class="wysiwyg-text-align-justify">At the start of a long, complex survey, you want to offer participants the option to interrupt and participate at a later date. On one of the first pages, you ask if the participant does have sufficient time to respond at the moment. If not, you offer to send a reminder mail. If a participant does not have sufficient time and wishes a reminder mail, he’s routed to a final page via a filter. On this final page, the reinvitation trigger is executed. It resets the data record and sends the reminder mail at the desired later date.</p>
+<h3 id="features-1" class="wysiwyg-text-align-justify">Features</h3>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The reinvitation trigger is only available on the final pages.</p>
+</li>
+<li>
+<p>It can be used in personalized surveys, employee surveys, multi-source feedback, panel surveys, and master data surveys. In anonymous surveys, this trigger type is not available.</p>
+</li>
+<li>
+<p>The participants’ disposition code will be reset to 11 resp. 12.</p>
+</li>
+<li>
+<p>The data records are reset without deleting, i.e. already-given answers of the participant are not deleted.</p>
+</li>
+<li>

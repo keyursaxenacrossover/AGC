@@ -1,0 +1,46 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K" class="wysiwyg-text-align-justify">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article covers the process of editing texts, messages, FAQs, and news in the EFS Panel system. It provides detailed instructions on how to manage and customize various content elements within the panel website.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">This guide focuses on the tools and techniques for maintaining and updating different types of content in the EFS Panel, including text editing, message management, FAQ creation, and news article publishing.</p>
+<ul class="wysiwyg-text-align-justify">
+<li><a href="#editing-texts">Editing Texts</a></li>
+<li><a href="#editing-messages">Editing Messages</a></li>
+<li><a href="#maintaining-faq-and-news">Maintaining FAQ and News</a></li>
+</ul>
+<h1 id="editing-texts" class="wysiwyg-text-align-justify">Editing Texts</h1>
+<p class="wysiwyg-text-align-justify">This chapter will teach you how to design the texts on your website.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>You can edit text directly in the preview. This practical new function is presented in this chapter.</li>
+<li>After that, you will learn about various options for designing your text in an appealing manner and for inserting dynamic elements. For example, you can change the typeface with HTML and CSS, insert images and links, or insert personalized data using wildcards.</li>
+</ul>
+<h2 id="editing-texts-directly-in-the-preview" class="wysiwyg-text-align-justify"><strong>Editing Texts Directly in the Preview</strong></h2>
+<p class="wysiwyg-text-align-justify">The texts that the panelists see originate from various sources. Page names and texts of function modules, for example, are defined in the website editor on the respective page. Error messages and wildcards, however, are managed in dedicated menus.</p>
+<p class="wysiwyg-text-align-justify">The more familiar you are with the EFS Panel, the fewer problems you will have finding the right place and editing the desired text directly at the source. However, you can edit most of the text directly in the preview:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>The following types of text can be edited: Wildcards, messages, texts from page modules, and page titles. Texts which are not part of the CMS, such as news or forum posts, cannot be edited directly. They are managed in dedicated menus.</li>
+<li>Templates can be edited as well.</li>
+<li>The direct editing feature is only available for users logged into the admin area.</li>
+<li>As usual, the changes are made in the preview, not in the publicly accessible version of the page. You have to publish them explicitly.</li>
+<li>This feature is protected by the ACL right “panel_online_editing”. Write rights are required.</li>
+</ul>
+<h3 id="working-directly-in-the-preview" class="wysiwyg-text-align-justify"><strong>Working Directly in the Preview</strong></h3>
+<p class="wysiwyg-text-align-justify">To work directly in the preview, please proceed as follows:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>In the preview drop-down list, select “Direct editing”. The preview is opened in a new window.</li>
+<li>Open the page you wish to edit.</li>
+<li>Switch to editing mode by clicking on the <strong>Edit</strong> button in the header section of the preview window.<br><br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015069377554" alt="image2024-1-15_12-16-58.png"><br><br>
+</li>
+<li>
+<p>Move your mouse pointer over the text elements. A green frame will indicate a text element that can be edited. Click on the desired text element.</p>
+</li>
+<li>
+<p>The editing window will open.<br>– The title will indicate the source of the text. In this case, the source is a page module.<br>– Change the text as desired.</p>
+</li>
+<li>
+<p><strong>Save</strong> your changes. Check the result before publishing the changed version of the page via the website editor.</p>
+</li>
+</ol>
+<h2 id="formatting-text-with-html-and-css" class="wysiwyg-text-align-justify"><strong>Formatting Text with HTML and CSS</strong></h2>
+<p class="wysiwyg-text-align-justify">The formatting of text elements – font, font size, color, etc. – is defined by the page module’s template in combination with the panel’s CSS classes. This gives you efficient, centralized control over the layout properties of the entire panel. Details such as line breaks or formatting of individual words, on the other hand, can be directly defined with HTML and CSS in the text input fields.</p>
+<p class="wysiwyg-text-align-justify">The following tables give an overview of the most important HTML tags.</p>
+<p class="wysiwyg-text-align-justify"><em>Information: </em

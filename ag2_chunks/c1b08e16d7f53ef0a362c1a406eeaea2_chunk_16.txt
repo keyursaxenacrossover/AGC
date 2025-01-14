@@ -1,0 +1,109 @@
+From EFS 10.5)</p>
+</td>
+<td>
+<p>s_000n</p>
+</td>
+<td>
+<p>s_000n</p>
+</td>
+<td>
+<p>Scoring variables.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="overview-of-variable-preallocations" class="wysiwyg-text-align-justify"><strong>Overview of Variable Preallocations</strong></h3>
+<table class="wysiwyg-text-align-justify" style="height: 519px;" border="1" width="777" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" style="width: 231.562px;" data-highlight-colour="#57d9a3">
+<p><strong>Preallocation value</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 538.142px;" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td style="width: 223.542px;">
+<p>-77</p>
+</td>
+<td style="width: 530.122px;">
+<ul>
+<li>
+<p>Project variables of the v_000 type, with the exception of variables that refer to text fields: The participant did not see the question, for example, because they dropped out or because the relevant page or question was not displayed due to routing.</p>
+</li>
+<li>
+<p>Master data for EFS People installations: Preallocation for master data of the md_xxx and m_xxx type.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="width: 223.542px;">
+<p>0</p>
+</td>
+<td style="width: 530.122px;">
+<ul>
+<li>
+<p>Project variables of the v_000 type, with the exception of variables that refer to text fields: The participant saw the respective question, but did not respond to it.</p>
+</li>
+<li>
+<p>Participant administration variables of the “text field” type: Preallocation if the variable was not filled.</p>
+</li>
+<li>
+<p>Participantadministrationvariablesofthe“selectbox”type:Preallocationof those variables that are available per default and set to “Please select”. For example, the standard variables <em>u_gender</em>, <em>u_language</em> and <em>u_group</em>.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="width: 223.542px;">
+<p>-66</p>
+</td>
+<td style="width: 530.122px;">
+<ul>
+<li>
+<p>Project variables of the v_000 type that refer to text fields: The participant did not see the respective question, because it was hidden.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="width: 223.542px;">
+<p>-99</p>
+</td>
+<td style="width: 530.122px;">
+<ul>
+<li>
+<p>Project variables of the v_000 type that refer to text fields: The participant saw the respective question, but did not respond to it.</p>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify">You can specify the missing values in the export data records yourself.</p>
+<h2 id="efs-survey-variables" class="wysiwyg-text-align-justify"><strong>EFS Survey Variables</strong></h2>
+<h3 id="overview-of-the-various-variable-types" class="wysiwyg-text-align-justify">Overview of the Various Variable Types</h3>
+<p class="wysiwyg-text-align-justify">The locations in the database, in which answers given by the respondents, participant administration data or system information regarding the course of the survey are saved, are identified using variables. In defining routing, e.g. via a filter or when importing saved contents via wildcards you can access the database contents via these variables. A range of variable types are used in EFS surveys:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Project variables (v_000n): The results of the survey are saved in these variables. They are automatically created when new questions are created.</p>
+</li>
+<li>
+<p>URL parameters (p_000n): These variables allow you to pass variables to a survey from outside. They are created and configured manually.</p>
+</li>
+<li>
+<p>User-defined variables c_000n: These variables are used to store interim results. They are created and configured manually.</p>
+</li>
+<li>
+<p>Participant variables (u_000n): Information regarding survey participants is stored in these variables. A set of frequently used variables is available by default and additional variables may also be created.</p>
+</li>
+<li>
+<p>System variables: The variables are used to store meta-information regarding participants and the course of the interviewing process. System variables are automatically generated when a project is created.</p>
+</li>
+<li>
+<p>For <em>EFS People</em> installations only: Participant data of the panelists (u_000n). These variables are preset by the <em>EFS People</em> and are not configurable.</p>
+</li>
+<li>

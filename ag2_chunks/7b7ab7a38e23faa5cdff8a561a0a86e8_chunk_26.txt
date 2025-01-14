@@ -1,0 +1,115 @@
+ the switch of color</p>
+</td>
+<td>
+<p>In this field, you can specify the threshold for the color switch.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2> </h2>
+<h2 id="advanced">Advanced</h2>
+<p>You can supplement the typified standard question types with their predefined arrangement of form elements by creating question types of your own. For this purpose, the question type 911 (“User-defined”) is available to advanced users with knowledge of HTML. In this question type, the arrangement of the form elements can be laid out as required.</p>
+<h3 id="user-defined">User Defined</h3>
+<p>You can supplement the typified standard question types with their predefined arrangement of form elements by creating question types of your own. For this purpose, the question type 911 (“User-defined”) is available to advanced users with knowledge of HTML. In this question type, the arrangement of the form elements can be laid out as required.</p>
+<p>The following EFS Survey features are supported when using 911 variables:</p>
+<ul>
+<li>
+<p>Plausibility checks. Please note: server-side format checks (PHP) can only be applied to variables of type “text” or “short text”.</p>
+</li>
+<li>
+<p>Depot questions</p>
+</li>
+<li>
+<p>Multilingual capability for entries into the “Edit HTML” field.</p>
+</li>
+<li>
+<p>Output of variable contents via wildcards</p>
+</li>
+</ul>
+<h4 id="creating-a-user-defined-question">Creating a user-defined question</h4>
+<ul>
+<li>
+<p>In the drop-down list of question types, select the question type 911 (“User defined”).</p>
+</li>
+<li>
+<p>You will see a two-part form. The upper part of the form shows the variables created for this question. The “Edit HTML” section is where you enter the HTML code for outputting your question.</p>
+</li>
+<li>
+<p>Add new variables as required, or tick the checkbox “Delete” to delete superfluous variables. The example above will output a text field, with the data saved in the “v_40” variable.</p>
+</li>
+<li>
+<p><strong>Save</strong> your entries.</p>
+</li>
+</ul>
+<p>You can check the appearance of the user-defined question in the preview. However, for user-defined questions, in particular, it is important to test in live operation whether the data are also being saved as desired and included in the export dataset.</p>
+<h4 id="variable-names-and-types">Variable names and types</h4>
+<p>Creating a question of the type 911 will automatically create five variables. You can add more variables by entering a label into the “New” row and selecting a type.</p>
+<ul>
+<li>
+<p>The “answer option” serves as an internal description of an individual variable in the question type 911. It will be output in the codebook and used to label the variable for the SPSS export.</p>
+</li>
+<li>
+<p>As with all other question types, an external variable name may be entered.</p>
+</li>
+<li>
+<p>The “Variable type” defines how the variable is to be created in the database:</p>
+</li>
+</ul>
+<h4 id="overview-of-variables-for-question-type-911">Overview of variables for question type 911</h4>
+<table class="" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 327.0px;"> <col style="width: 433.0px;"> </colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour="#c0b6f2">
+<p><strong>Variable type</strong></p>
+</th>
+<th data-highlight-colour="#c0b6f2">
+<p><strong>Use</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Integer</p>
+</td>
+<td>
+<p>Saves numbers up to 11-figure numbers (variable type “integer”). Threshold values: -2147483648 bis 2147483647</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Short text</p>
+</td>
+<td>
+<p>Saves a short text up to 255 characters (variable type “varchar”).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Text</p>
+</td>
+<td>
+<p>Saves a text up to 65535 characters (variable type “blob”</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h4 id="use-the-following-table-for-orientation-when-defining-your-variables">Use the following table for orientation when defining your variables</h4>
+<table class="" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 225.0px;"> <col style="width: 535.0px;"> </colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour="#c0b6f2">
+<p><strong>Form type</strong></p>
+</th>
+<th data-highlight-colour="#c0b6f2">
+<p><strong>Use</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Question with radio<br>buttons</p>
+</td>
+<td>
+<p>One variable of the “Integer” type for the whole radio button group:</p>
+<p>&lt;input type="radio" name="v_15" value="1" /&gt; Characteristic 1</p>
+<p>&lt;input type

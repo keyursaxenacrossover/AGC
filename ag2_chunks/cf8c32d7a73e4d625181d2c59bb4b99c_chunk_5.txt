@@ -1,0 +1,47 @@
+10px; text-align: left; vertical-align: top; width: 230.66px;">2</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 667.604px;">
+<p>The panelists are available for surveys. They are participating in panel activities.</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 127.292px; padding: 7px 10px !important;">Active (user-defined)</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 230.66px;">3</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 667.604px;">Used-defined</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 127.292px; padding: 7px 10px !important;">Inactive</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 230.66px;">4</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 667.604px;">
+<p>The panelists cannot log into the panel and are blocked for surveys. But their data are still fully available.</p>
+<p>The blocking for surveys is realized by a change of disposition code: In all samples in which the inactivated panelists had disposition code 11 or 12 (i.e. they had not participated so far), they are assigned disposition code 13 instead.</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 127.292px; padding: 7px 10px !important;">Inactive (user-defined)</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 230.66px;">5</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 667.604px;">Used-defined</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 127.292px; padding: 7px 10px !important;">
+<p>User-defined statuses 1 - 9</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 230.66px;">6-15</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 667.604px;">
+<p>These panel statuses can be used to classify the panelists better, depending on the requirements of your panel.</p>
+<ul>
+<li>These statuses are not used in EFS Panel as it is configured when delivered: You can define the significance yourself.</li>
+<li>You can assign the user-defined statuses automatically or manually according to the instructions given above.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 127.292px; padding: 7px 10px !important;">Deleted</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 230.66px;">8</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 667.604px;">
+<p>If you delete panelists, they, or to be more exact the remaining rests of their anonymized data records, will be assigned this status.</p>
+<p>Deleted panelists are removed past recovery: You cannot access the data records anymore, the participant data are deleted completely. Only data which are needed to maintain the consistency of panel statistics and survey results and community posts are preserved.</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 127.292px; padding: 7px 10px !important;">Tester</td>
+<td class="confluenceTd" style="border: 1px solid

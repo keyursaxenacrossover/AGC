@@ -1,0 +1,5 @@
+docdir = r"C:\AGC\ag2_docs"
+chunkdir = r"C:\AGC\ag2_chunks"
+embeddir = r"C:\AGC\ag2_embeds"
+imagedir = r"C:\AGC\images"
+imagetodeletedir = r"C:\AGC\images_to_delete"

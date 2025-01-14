@@ -1,0 +1,56 @@
+_01HGKSMPRTPYJQJY0QJXQX8ZGT">Preparations</h3>
+<p>We will take up the above example and create a quota with the variables "age" and "gender" in the next step. Our target values: 150 females and 150 males between 20-30, 150 females and 150 males between 30-40, and 150 females and 150 males between 40-50.</p>
+<p>In the first step, we need to create a grouping filter that will determine the actuals of our panel. To do this, proceed as follows:</p>
+<ul>
+<li>In the People module, select the Groups menu item on the left-hand side.</li>
+<li>Then select the Grouping Filters menu item on the left-hand side.</li>
+<li>Click on the Create filter condition.</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014859816466"></p>
+<ul>
+<li>Enter a name for the filter. In our case: "Age_gender".</li>
+<li>Enter a filter description if required. For the age of panelists, we have the master data variable "md_age" with the response categories "1 (20-30 years)", "2 (30-40 years)" and "3 (40-50 years)". Our filter should include all panelists in these age ranges. Proceed as follows to configure the filter criteria:</li>
+<li>Under Variable, select the master data variable md_age, under Condition the option equal, and under Value the number 1.</li>
+<li>Click on Save.</li>
+<li>In the next line, select OR as the conjunction, the master data variable md_age under Variable, the option equal under Condition, and the number 2 under Value.</li>
+<li>Click on Save.</li>
+<li>In the next line, select OR as the conjunction, the master data variable md_age under Variable, the option equal under Condition, and the number 3 under Value.</li>
+<li>Click on Save.</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014859816850"></p>
+<p>=&gt; Your filter now includes all panelists between the ages of 20 and 50.</p>
+<h3 id="h_01HGKSMPRTTKQJXQX3YJXQX8ZGV">Create Quota</h3>
+<p>We can now create the quota. To do this, follow the steps below:</p>
+<ul>
+<li>In the People module, select the Statistics menu item on the left-hand side.</li>
+<li>Then select the menu item Panel quotas on the left-hand side.</li>
+<li>
+<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014859806610"><br>Click on Create Quota.</li>
+<li>Enter the name for your quota under the Quota name. In our case "Age_Gender".</li>
+<li>Under the Grouping filter to use when calculating actuals, select the filter you created in the previous step.</li>
+<li>Select the variable md_age: Age under Quota variable 1.</li>
+<li>Under Quota variable 2, select the variable u_gender: Gender.</li>
+<li>Click on Save.</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014859808658"></p>
+<h3 id="h_01HGKSMPRTXKQJXQX3YJXQX8ZGW">Upload Target Values</h3>
+<p>The last step is to upload the target values for the quota. To do this, proceed as follows:</p>
+<ul>
+<li>Click on the upload symbol in the line with your newly created quota.</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014812867346"></p>
+<ul>
+<li>Click on the Download import template button, fill in the template and save it. The template already contains the variables that you selected when creating the quota. We want 150 participants as the target value for all three age ranges – "1 (20-30 years)", "2 (30-40 years)" and "3 (40-50 years)". Our import file therefore contains the following data:</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014812868114"></p>
+<ul>
+<li>Click on Choose file and select your saved import template.</li>
+<li>Click on Import.</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014812869010"></p>
+<h3 id="h_01HGKSMPRV1KQJXQX3YJXQX8ZGX">Show Cell Values</h3>
+<p>You can now display the quota allocation for the quota you have created and compare the target values with the actual values.</p>
+<ul>
+<li>In the line with the quota you have created, click on the symbol Show cell values.</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014812870418"><br>The quota allocation is displayed immediately. Cells for which the quota has been met are displayed in green. If the quota has not been met, the corresponding cell is displayed in red. In the example below, you can see at a glance that you need to recruit both

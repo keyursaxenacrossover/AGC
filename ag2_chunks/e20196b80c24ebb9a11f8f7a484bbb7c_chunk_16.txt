@@ -1,0 +1,90 @@
+ be exceeded. If you wish to export data with SPSS check in projects with complex loops whether the data can be exported subsequently by SPSS as desired before commencing with the survey.</p>
+<ol class="wysiwyg-text-align-justify" start="1">
+<li>
+<p>You can initiate the process from the <strong>Export</strong> menu as usual: first, choose the “Data (all answers)” option.</p>
+</li>
+<li>
+<p>In the next dialog, select the desired basic and advanced options.</p>
+</li>
+<li>
+<p>Tick the checkbox in the “Select data” area.</p>
+</li>
+<li>
+<p>Confirm with <strong>Export</strong>.</p>
+</li>
+<li>
+<p>In the next dialog, select the desired variables. The loop variables are not listed individually: they can be selected or de-selected using the “All loop variables of the questionnaire” option.</p>
+</li>
+<li>
+<p>Confirm with <strong>Export</strong>.</p>
+</li>
+<li>
+<p>Once the file has been generated, you will be notified via e-mail. Clicking on the link contained in the notification mail will take you directly to the download page.</p>
+</li>
+<li>
+<p>In the<strong> Export Tasks</strong> menu, you can check the status of the export job.</p>
+</li>
+<li>
+<p>After clicking on <strong>Copy file to local PC</strong>, you can continue the download as usual.</p>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify">If you are taken to the login form after clicking on the link contained in the notification mail, login, in and then click on the link in the e-mail again.</p>
+<p class="wysiwyg-text-align-justify"><strong>Export variables</strong></p>
+<p class="wysiwyg-text-align-justify">The export variables are composed as follows:</p>
+<p class="wysiwyg-text-align-justify"><code>v_variablenumber_listelementnumber</code></p>
+<p class="wysiwyg-text-align-justify">When one loop is nested into another, this becomes:</p>
+<p class="wysiwyg-text-align-justify"><code>v_variablenumber_listelementnumberlist1_listelementnumberlist2</code></p>
+<p class="wysiwyg-text-align-justify"><strong>Raw data export</strong></p>
+<p class="wysiwyg-text-align-justify">Raw data of the loops in a project allow you to trace exactly what and in which order a respondent has seen and answered in the loop.</p>
+<p class="wysiwyg-text-align-justify">To export the raw data selectively, you must first choose the “Raw loop data” option in the <strong>Export</strong> menu. Then choose the desired basic and advanced options, as usual.</p>
+<p class="wysiwyg-text-align-justify">For each participant, the raw loop data record contains a column for every list element used, comprising the following information:</p>
+<table class="wysiwyg-text-align-justify" style="height: 535px;" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 121.0px;"> <col style="width: 639.0px;"> </colgroup>
+<tbody>
+<tr style="height: 22px;">
+<th class="wysiwyg-text-align-center" style="height: 22px; width: 114.965px;" data-highlight-colour="#c0b6f2">
+<p><strong>Variable</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="height: 22px; width: 577.743px;" data-highlight-colour="#c0b6f2">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px; width: 106.944px;">
+<p>lfdn</p>
+</td>
+<td style="height: 22px; width: 569.722px;">
+<p>The respondent’s consecutive number</p>
+</td>
+</tr>
+<tr style="height: 44px;">
+<td style="height: 44px; width: 106.944px;">
+<p>tester</p>
+</td>
+<td style="height: 44px; width: 569.722px;">
+<p>Indicates whether the participant in question is a tester (not for anonymous projects), 1 being for a tester and 0 for a normal participant.</p>
+</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px; width: 106.944px;">
+<p>dispcode</p>
+</td>
+<td style="height: 22px; width: 569.722px;">
+<p>The participant’s disposition code</p>
+</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px; width: 106.944px;">
+<p>loop</p>
+</td>
+<td style="height: 22px; width: 569.722px;">
+<p>Loop ID</p>
+</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px; width: 106.944px;">
+<p>loopnumber</p>
+</td>
+<td style="height: 22px; width: 569.722px;">
+<p>Number of the loop cycle</p>
+</td

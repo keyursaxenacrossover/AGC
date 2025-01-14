@@ -1,0 +1,124 @@
+: 243.212px; height: 230px;">
+<p>Deactivated</p>
+</td>
+</tr>
+<tr style="height: 520px;">
+<td style="width: 147.014px; height: 520px;">
+<p>Mail template for thread subscription mail</p>
+</td>
+<td style="width: 386.319px; height: 520px;">
+<p>The subscription feature is activated by selecting a mail template that contains the accompanying text for the notification.</p>
+<p>Available are templates of the “standard mail” type.</p>
+<p>The following wildcards can be used:</p>
+<ul>
+<li>
+<p>#subscription_title#: Title of the section</p>
+</li>
+<li>
+<p>#subscription_post_title#: Title of the new post</p>
+</li>
+<li>
+<p>#subscription_post_link#: Link to post</p>
+</li>
+<li>
+<p>#subscription_unsubscribe#: Link that allows to unsubscribe</p>
+</li>
+</ul>
+<p>Once the feature is activated, <strong>Subscribe-/Unsubscribe</strong> links will be displayed in the forum threads.</p>
+<ul>
+<li>
+<p>When panelists have subscribed to a forum thread they will receive an e-mail notification whenever a new post has been added.</p>
+</li>
+<li>
+<p>Panelists with panel status “inactive” (i.e. usually panelists who left the panel) will not get e-mails.</p>
+</li>
+</ul>
+</td>
+<td style="width: 243.212px; height: 520px;">
+<p> </p>
+</td>
+</tr>
+<tr style="height: 337px;">
+<td style="width: 147.014px; height: 337px;">
+<p>Allow editing</p>
+</td>
+<td style="width: 386.319px; height: 337px;">
+<p>You can decide for yourself whether you want to allow the members of your community to subsequently edit their forum posts. You can choose among the following options:</p>
+<ul>
+<li>
+<p>Always allow editing</p>
+</li>
+<li>
+<p>Allow editing for 20 minutes after creation</p>
+</li>
+<li>
+<p>Disallow editing completely</p>
+</li>
+</ul>
+<p>When editing is enabled, the panelists will see an <strong>Edit</strong> icon in their posts.</p>
+<p>Moderators and other community members can identify subsequently edited posts via the date of the last change, which is displayed in the post itself on the website and in the list of posts in the admin area.</p>
+</td>
+<td style="width: 243.212px; height: 337px;">
+<p> </p>
+</td>
+</tr>
+<tr style="height: 586px;">
+<td style="width: 147.014px; height: 586px;">
+<p>Header for quotes</p>
+</td>
+<td style="width: 386.319px; height: 586px;">
+<p>Where panelists use the “Reply w/ quote” function, the text they are replying to is displayed as a quote in their post.</p>
+<p>In this field, you can determine whether, and if so, which information is to be displayed in the header line of the quote.</p>
+<p>In doing so you can use the following wildcards:</p>
+<ul>
+<li>
+<p>#poster_account#: The quoted panelist’s account</p>
+</li>
+<li>
+<p>#poster_firstname#: The quoted panelist’s first name</p>
+</li>
+<li>
+<p>#poster_name#: The quoted panelist’s last name</p>
+</li>
+<li>
+<p>#poster_email#: The quoted panelist’s e-mail address</p>
+</li>
+<li>
+<p>#post_date#: Date the quoted post was created</p>
+</li>
+<li>
+<p>#post_title#: Title of the quoted post</p>
+</li>
+</ul>
+<p>Example:</p>
+<p>On #post_date# #poster_firstname# #poster_name”:</p>
+<p>is filled with:</p>
+<p>On January 1, 2008, John Doe wrote:</p>
+</td>
+<td style="width: 243.212px; height: 586px;">
+<p> </p>
+</td>
+</tr>
+<tr style="height: 99px;">
+<td style="width: 147.014px; height: 99px;">
+<p>Default Title of replies</p>
+</td>
+<td style="width: 386.319px; height: 99px;">
+<p>When a panelist is answering a post, a default text can be inserted as the title. In this field, you can define this text. You can use the same wildcards as in “Header for quotes”.</p>
+</td>
+<td style="width: 243.212px; height: 99px;">
+<p> </p>
+</td>
+</tr>
+<tr style="height: 242px;">
+<td style="width: 147.014px; height: 242px;">
+<p>Style for quotes</p>
+</td>
+<td style="width: 386.319px; height: 242px;">
+<p>You can decide how quotes should be displayed:</p>
+<ul>
+<li>
+<p>Display quotes with leading &gt; symbol: Word wraps are inserted into the quoted text, each line starting with a &gt;.</p>
+</li>
+<li>
+<p>Display quotes in nested div elements: The quoted text will be enclosed by a div named “quote-main”. Via the CSS file (usually the “css_default” included), you can define how the quotes will be displayed.</

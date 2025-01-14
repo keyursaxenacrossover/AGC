@@ -1,0 +1,120 @@
+, triggers, and hiding conditions.</p>
+</li>
+<li>
+<p>The frequently-used restrictions by disposition code and date of participation can be activated with a few clicks via separate fields.</p>
+</li>
+<li>
+<p>To protect the anonymity of the participants, you can define anonymity limits both for the entire report and for particular sections.</p>
+</li>
+<li>
+<p>Displaying test data instead of real result data will speed up your work.</p>
+</li>
+</ul>
+<h3 id="overview-of-limiting-the-base" class="wysiwyg-text-align-justify"><strong>Overview of limiting the base</strong></h3>
+<p class="wysiwyg-text-align-justify">Using the filters familiar from the questionnaire editor, you can restrict the base either for the entire report or just for a particular section. </p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The base for the entire report is defined via the <strong>Report filter</strong> in the<strong> Report</strong> menu.</p>
+</li>
+<li>
+<p>Furthermore, you can create separate filters to limit the base within a specific section of the report.</p>
+</li>
+<li>
+<p>In the filter section of the sources window, you will find the filters from your questionnaire. You can create additional filters via the toolbar the way you are familiar with from the chapters.</p>
+</li>
+<li>
+<p>Place the defined filters in the appropriate positions of your report structure. Then drag all those elements into this filter to which a filter shall be applied or in which the base shall be limited using the filter.</p>
+</li>
+</ul>
+<h3 id="defining-restricting-conditions" class="wysiwyg-text-align-justify"><strong>Defining restricting conditions</strong></h3>
+<p class="wysiwyg-text-align-justify">The report filter menu and filter dialog share largely the same structure.</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default">
+<colgroup> <col style="width: 221.0px;"> <col style="width: 539.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Option</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Name</p>
+</td>
+<td>
+<p>In standard configuration, the header sections of all tables and charts of the report will show the respective base. In this field, you can change the default label.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Condition editor</p>
+</td>
+<td>
+<p>The condition editor is familiar with the questionnaire editor. The condition will be applied to the entire report or - in the case of filters - to the respective report section.</p>
+<p>Please note that<em> EFS Reporting+</em> does not support all operators that are available in the questionnaire editor.</p>
+<ul>
+<li>
+<p>The following operators are available: equal, greater, greater equal, less equal, less, unequal, contains, and matches regex.</p>
+</li>
+<li>
+<p>The following operators are not available: contains any, in, in, or below, in the branch.</p>
+</li>
+</ul>
+<p>If a questionnaire filter contains one of these unsupported operators, the condition will be blank after transfer into <em>EFS Reporting+</em>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Only in the report filter: Use test data in the workpad</p>
+</td>
+<td>
+<p>In order to speed up the work process, you may optionally display predefined test data in the workplace instead of the actual live data.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Anonymity limit</p>
+</td>
+<td>
+<p>Optionally, you can define an anonymity limit for the entire report or - in the case of filters - for a specific report section.</p>
+<ul>
+<li>
+<p>By default, the drag-and-drop list is preset at “0”, i.e., all results will be displayed.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Disposition codes</p>
+</td>
+<td>
+<p>The base can be limited via the disposition code.</p>
+<ul>
+<li>
+<p>Usually, only data from participants who completed the questionnaire are used. Therefore, only the disposition codes 31 and 32 are activated.</p>
+</li>
+<li>
+<p>To display rarely used disposition codes as e.g. 15 = not available, use the more icon.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Date of participation</p>
+</td>
+<td>
+<p>The base can be limited to participants who participated within a particular period.</p>
+<p>The feature can be used to restrict the base for the complete report as well.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="using-test-data-instead-of-live-data" class="wysiwyg-text-align-justify"><strong>Using Test Data Instead of Live Data</strong></h3>
+<p class="wysiwyg-text-align-justify">Optionally, you can have predefined test data displayed instead of the real result data when working in the workpad. This means:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>For all

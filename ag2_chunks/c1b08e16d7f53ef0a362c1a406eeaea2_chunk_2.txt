@@ -1,0 +1,91 @@
+ can be inserted into an <em>Excel</em> worksheet, the exported data are automatically distributed on several worksheets, as necessary.</p>
+<p>Please note: If you allow only numerical entries in an open answer (e.g. by using corresponding plausibility checks or input formats), these details will be exported nevertheless as strings. For evaluation purposes it occasionally makes sense to format these answers as numbers instead, Excel does not automatically make this format though. Please proceed as follows:</p>
+<ul>
+<li>
+<p>In older versions of <em>Excel,</em> you mark the corresponding cells first. Then choose in the <strong>Format</strong> → <strong>Cells </strong>menu the option “number” on the <strong>Numbers </strong>tab and confirm with <strong>OK</strong>.</p>
+</li>
+<li>
+<p>In newer versions of <em>Excel,</em> the function for changing the cell format is hidden under the exclamation mark which you find beside the cells.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr style="height: 285px;">
+<td style="width: 319.653px; height: 285px;">
+<p>Triple-S</p>
+</td>
+<td style="width: 416.007px; height: 285px;">
+<p>For exports in Triple-S, an XML description file and a record file are generated. These files are always output in compressed format, by default as a zip file, unless other specifications were made.</p>
+<p>Please note: As Triple-S only supports character set ISO-8859-1, Triple-S exports are always in character set ISO-8859-1 even if another character set has been specified. As a result, problems may arise if non-ASCII characters are used. Should this occur, export the closed-ended question results as a workaround with Triple-S and select another format for open-ended answers.</p>
+</td>
+</tr>
+<tr style="height: 154px;">
+<td style="width: 319.653px; height: 154px;">
+<p>topStud</p>
+</td>
+<td style="width: 416.007px; height: 154px;">
+<p>This export format provides an interface to TopCom’s offline evaluation software TopStud.</p>
+<p>Please contact TopCom directly at <a href="http://www.topcom.de">http://www.topcom.de</a> if you have any questions about the TopStud format and the export interface.</p>
+</td>
+</tr>
+<tr style="height: 60px;">
+<td style="width: 319.653px; height: 60px;">
+<p>XML</p>
+</td>
+<td style="width: 416.007px; height: 60px;">
+<p>XML files can be converted into any other format, or displayed using self-written XSLT-style sheets.</p>
+</td>
+</tr>
+<tr style="height: 145px;">
+<td style="width: 319.653px; height: 145px;">
+<p>HTML</p>
+</td>
+<td style="width: 416.007px; height: 145px;">
+<p>Address or result data exported as an HTML file have the advantage that they can be immediately opened and viewed in the browser. If you wish to forward survey data, this format has the advantage that it can be opened with an Internet browser without requiring a special program.</p>
+</td>
+</tr>
+<tr style="height: 31px;">
+<td style="width: 319.653px; height: 31px;">
+<p>SPSS</p>
+</td>
+<td style="width: 416.007px; height: 31px;">
+<p>File format for the SPSS evaluation program.</p>
+</td>
+</tr>
+<tr style="height: 88px;">
+<td style="width: 319.653px; height: 88px;">
+<p>SPSS Portable file format</p>
+</td>
+<td style="width: 416.007px; height: 88px;">
+<p>Files in this format can be opened by SPSS and other statistics programs, such as Statistica. You can use it if you are editing the exported files in a statistics program other than SPSS.</p>
+</td>
+</tr>
+<tr style="height: 31px;">
+<td style="width: 319.653px; height: 31px;">
+<p>SAS</p>
+</td>
+<td style="width: 416.007px; height: 31px;">
+<p>File format for the SAS evaluation program.</p>
+</td>
+</tr>
+<tr style="height: 88px;">
+<td style="width: 319.653px; height: 88px;">
+<p>Fixed Format</p>
+</td>
+<td style="width: 416.007px; height: 88px;">
+<p>In this format, the columns are separated by blank spaces. Fixed Format is employed, for example, if the Quantum program is being used for evaluation.</p>
+</td>
+</tr>
+<tr style="height: 537px;">
+<td style="width: 319.653px; height: 537px;">
+<p>Quantum</p>
+</td>
+<td style="width: 416.007px; height: 537px;">
+<p>Data files for further evaluation in Quantum. The exported zip folder contains the actual result data and additionally the basic, tab, and axis files.</p>
+<p>To supplement this feature, the following optional settings are available:</p>
+<ul>
+<li>
+<p>You can optionally adjust column widths or have them automatically expanded.</p>
+</li>
+<li>
+<p>The sys missings in the Quantum

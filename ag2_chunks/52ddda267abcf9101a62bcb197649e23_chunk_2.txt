@@ -1,0 +1,73 @@
+</span> -s panelwebsite document_root
+</code><br><br>
+</div>
+</div>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Activate the Panel Module</strong></p>
+<ul>
+<li>In the EFS Admin UI, navigate to: <code>Options &gt; Platform Cockpit &gt; System Configuration (root only)</code>
+</li>
+<li>Edit the <strong>modules</strong> variable and add <code>panel</code>.</li>
+<li>Set <code>installation_type</code> to <code>panel</code>, unless it’s already set to <code>leadership</code> or <code>employee</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Execute <code>healself</code></strong>(as explained above)</p>
+</li>
+<li>
+<p><strong>Resolve <code>healself</code> Errors (If Any)</strong></p>
+<ul>
+<li>If you encounter an error like the following:
+<div class="dark bg-gray-950 contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative">
+<div class="sticky top-9 md:top-[5.75rem]">
+<div class="absolute bottom-0 right-2 flex h-9 items-center">
+<div class="flex items-center rounded bg-token-main-surface-secondary px-2 font-sans text-xs text-token-text-secondary">
+<pre><code class="language-plaintext">The following tasks failed with errors: <br>- panel_healself_jobs_902::regeneratePanelistsPasswordHashes [Warning: regenerate panelists password hashes live - without tmp table]: <br>   - Query failed: SELECT uid, BASE64DECODE(u_ppasswd) AS plain_password FROM panelists. Reason: execute command denied to user 'opst_nh7146'@'%' for routine 'opst_nh7146.BASE64DECODE'</code></pre>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>Execute the following commands to address permission issues:
+<div class="dark bg-gray-950 contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative">
+<div class="sticky top-9 md:top-[5.75rem]">
+<div class="absolute bottom-0 right-2 flex h-9 items-center">
+<div class="flex items-center rounded bg-token-main-surface-secondary px-2 font-sans text-xs text-token-text-secondary"> </div>
+</div>
+</div>
+<div class="overflow-y-auto p-4" dir="ltr">
+<code class="!whitespace-pre hljs language-sql"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">FUNCTION</span> BASE64DECODE (sourceString <span class="hljs-type">varchar</span>(<span class="hljs-number">200</span>)) <span class="hljs-keyword">RETURNS</span> <span class="hljs-type">varchar</span>(<span class="hljs-number">200</span>) <span class="hljs-keyword">DETERMINISTIC</span> <span class="hljs-keyword">RETURN</span> FROM_BASE64(sourceString);
+<span class="hljs-keyword">GRANT</span> <span class="hljs-keyword">EXECUTE</span> <span class="hljs-keyword">ON</span> <span class="hljs-keyword">PROCEDURE</span> <span class="hljs-string">'opst_&lt;instance&gt;.BASE64DECODE'</span> <span class="hljs-keyword">TO</span> <span class="hljs-string">'opst_&lt;instance&gt;'</span>@<span class="hljs-string">'%'</span>;
+</code><br><br>
+</div>
+</div>
+</li>
+<li>Confirm permissions using:
+<div class="dark bg-gray-950 contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative">
+<div class="sticky top-9 md:top-[5.75rem]">
+<div class="absolute bottom-0 right-2 flex h-9 items-center">
+<div class="flex items-center rounded bg-token-main-surface-secondary px-2 font-sans text-xs text-token-text-secondary"> </div>
+</div>
+</div>
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-sql"><span class="hljs-keyword">SHOW</span> GRANTS;
+</code></div>
+</div>
+You should see <code>GRANT EXECUTE ON FUNCTION 'opst_nh7146'.'BASE64DECODE' TO 'opst_nh7146'@'%'</code>.</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="h_01J9V15GXMTAZYGJ0FYKSZWEZG">Additional Notes</h3>
+<ul>
+<li>
+<strong>Module Compatibility:</strong> You can enable the <strong>Panel</strong> module independently of the <strong>Employee</strong> module, and vice versa.</li>
+<li>
+<strong>Dependencies:</strong> Features such as <strong>Portal</strong> and <strong>MySight</strong> require the <strong>Panel</strong> module. However, the <strong>Panel</strong> module can function without <strong>Portal</strong> or <strong>MySight</strong>.</li>
+</ul>
+<h3 id="h_01J

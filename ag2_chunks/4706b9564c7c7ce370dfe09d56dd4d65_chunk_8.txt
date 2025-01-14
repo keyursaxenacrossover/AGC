@@ -1,0 +1,35 @@
+ car in the master data survey created in the previous step, they will be added to the "Car owner" group.</p>
+<h3 id="Specifying-Update-Rules" class="wysiwyg-text-align-justify" data-renderer-start-pos="10936"><strong data-renderer-mark="true"> Specifying Update Rules</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="10962">In order for the grouping to work automatically, you need to create a rule for updating the panel group. To do this, simply follow the steps below.</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="11114">Select the <strong data-renderer-mark="true">Update rules</strong> menu item from the menu on the left-hand side.</p>
+</li>
+<li>
+<p class="wysiwyg-text-align-left" data-renderer-start-pos="11188">Click on the <strong data-renderer-mark="true">Create update rule</strong> button.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21018302920850"></p>
+</li>
+</ul>
+<ul class="wysiwyg-text-align-justify">
+<li data-renderer-start-pos="11188">A new page for creating an update rule is displayed.</li>
+<li data-renderer-start-pos="11292">First enter a name for your rule. In our case: "Car".</li>
+<li data-renderer-start-pos="11349">Select "default" as the group category from the drop-down menu.</li>
+<li data-renderer-start-pos="11416">Under <strong data-renderer-mark="true">Panel group to be updated</strong>, select the <strong data-renderer-mark="true">Car owner</strong> group that you created in the previous step from the drop-down menu.</li>
+<li data-renderer-start-pos="11542">Activate the checkbox for the option <strong data-renderer-mark="true">Execute rule automatically?</strong>.</li>
+<li data-renderer-start-pos="11611">Set the start time.</li>
+<li data-renderer-start-pos="11634">Select an interval from the <strong data-renderer-mark="true">Interval type</strong> drop-down menu. We will select <strong data-renderer-mark="true">Day</strong> as an example.</li>
+<li data-renderer-start-pos="11729">Enter a value in the <strong data-renderer-mark="true">Interval value</strong> field. We will enter the value <strong data-renderer-mark="true">1</strong>, which means that the rule is executed once a day.</li>
+<li data-renderer-start-pos="11852">Now we need to select the action to be performed as part of the update: In the <strong data-renderer-mark="true">Create new action</strong> drop-down menu, select the <strong data-renderer-mark="true">Apply grouping filter</strong> option.</li>
+<li class="wysiwyg-text-align-left" data-renderer-start-pos="12009">Click on <strong data-renderer-mark="true">Save</strong>.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21018333466002">
+</li>
+<li data-renderer-start-pos="12009">The selected action must now be configured further: In the drop-down menu under <strong data-renderer-mark="true">Value</strong>, select the grouping filter to be applied. In our case "Car".</li>
+<li data-renderer-start-pos="12009">Then select the filter operation to be performed from the drop-down menu below. In our case: "<strong data-renderer-mark="true">Add panelists that match condition</strong>".</li>
+<li class="wysiwyg-text-align-left" data-renderer-start-pos="12009">Click on <strong data-renderer-mark="true">Save</strong>.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21018302909970">
+</li>
+</ul>
+<p>The system will now automatically check once a day, whether there are panelists who have indicated that they own a car in the master data survey, and if so, they will be automatically added to the “Car owner” group.</p>
+<p> </p>
+<hr>
+<h2 id="Inviting-Panelists-to-the-Master-Data-Survey" class="wysiwyg-text-align-justify" data-renderer-start-pos="12557"><strong data-renderer-mark="true">Inviting Panelists to the Master Data Survey</strong></h2>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="12603">So far, you have imported panelists into the panelist administration, created a master data record, set up a master data survey and assigned the corresponding master data record to a question as an example. Additionally, you have created a group, a grouping filter and an appropriate update rule for the group. In the next step, we will search for the imported panelists, invite them to our created master data survey and then check whether the configured grouping filter works as expected.</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="13095">The panel status of the panelists we imported in the previous step is "Admitted temporarily". Panelists with this status can be found in the panelist administration under <strong data-renderer-mark="true">Candidates</strong>.</p>
+<ul class="ak-ul wysiwyg-text-align

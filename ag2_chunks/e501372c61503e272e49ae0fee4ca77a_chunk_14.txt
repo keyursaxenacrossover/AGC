@@ -1,0 +1,127 @@
+ confirmation prompt. Please note that all data are irrevocably lost in the process. If you no longer need a certain topic, we recommend exporting the posts before deleting them.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Topic Properties</strong></p>
+<p class="wysiwyg-text-align-justify">The table lists all properties a topic can have.</p>
+<table class="relative-table wrapped wysiwyg-text-align-justify" style="width: 100.362%; margin-right: auto; margin-left: auto; height: 2780px;" border="1">
+<colgroup> <col style="width: 23.8975%;"> </colgroup> <colgroup> <col style="width: 16.7585%;"> </colgroup> <colgroup> <col style="width: 59.3348%;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center">Field</th>
+<th class="wysiwyg-text-align-center">Wildcard</th>
+<th class="wysiwyg-text-align-center">Meaning</th>
+</tr>
+<tr>
+<td>
+<p>Website / Language version</p>
+</td>
+<td> </td>
+<td>
+<p>Website and language version to which the topic belongs. Cannot be changed subsequently.</p>
+</td>
+</tr>
+<tr>
+<td>Name of forum</td>
+<td>{$board.board_title}</td>
+<td>
+<p>Forum to which the topic belongs. Cannot be changed subsequently.</p>
+</td>
+</tr>
+<tr>
+<td>Topic</td>
+<td>{$s.topic_title}</td>
+<td>
+<p>Discussion topic. This is displayed both in the admin area and on the panel page. Mandatory entry.</p>
+</td>
+</tr>
+<tr>
+<td>Topic description</td>
+<td>{$s.topic_description</td>
+<td>
+<p>Topic description. For orientation in the admin area, but can optionally be integrated into the panel page using wildcards.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>From EFS 10.4: Image</p>
+</td>
+<td> </td>
+<td>
+<p>Optionally, an image can be used to illustrate the topic.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Field period from... / until...</p>
+</td>
+<td> </td>
+<td>
+<p>At the defined dates, the topic will be put online resp. offline automatically.</p>
+</td>
+</tr>
+<tr>
+<td>Access control</td>
+<td> </td>
+<td>
+<p>Select one of the following options:</p>
+<ul>
+<li>Public: All panel visitors can see the forum, but only logged-in panelists can post.</li>
+<li>All logged-in panelists: All logged-in panelists can see the forum, other visitors have no access.</li>
+<li>For logged-in panelists of a panel group only: If you choose this option, a drop-down list is displayed, from which you can select a certain panel group. Only members of the selected group can see and use the forum.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Treat as a qualitative project</p>
+</td>
+<td> </td>
+<td>
+<p>If the checkbox is activated, the topic will be treated as a qualitative project, i.e. it will be integrated into the project list of the admin area. If you have set up a to-do list for your panelists, it will be displayed in that list, too.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Displayed date of creation</p>
+</td>
+<td> </td>
+<td>
+<p>The date is displayed in the list of topics both in the admin area and on the panel page. Mandatory entry.</p>
+<p>By default, the current date is set when you add a topic; however, a different date can also be displayed.</p>
+</td>
+</tr>
+<tr>
+<td>Read-only</td>
+<td> </td>
+<td>
+<p>If this option is activated, panelists cannot publish new posts. Board administrators can still publish and edit posts in the admin area.</p>
+</td>
+</tr>
+<tr>
+<td>Allow threads</td>
+<td> </td>
+<td>
+<p>If this option is activated, panelists can create new threads.</p>
+</td>
+</tr>
+<tr>
+<td>Publishing mode</td>
+<td> </td>
+<td>
+<p>You can decide for yourself if the posts of the participants should be published immediately or only with the approval of a moderator. Available publishing modes are:</p>
+<ul>
+<li>Publish immediately: All posts that are not blocked are displayed to all panelists.</li>
+<li>Publish after approval: Initially, posts can only be seen by their respective author. Other panelists can only see the posts after a moderator has set their release status to “approved”.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Allowed file types for file upload</p>
+</td>
+<td> </td>
+<td>
+<p>Optionally, you can allow panelists to upload files. If you check at least one file type as “permitted” and a maximum upload file size &gt; 0 is defined in the neighboring field, a file upload field will be displayed on the panel’s board page.</p>
+<p>Please mind:</p>
+<ul>
+<li>Only the file types named in the edit dialog are permitted.</li>
+<li>For films in “flv” format, EFS provides a player, i.e. they are embedded properly into the post

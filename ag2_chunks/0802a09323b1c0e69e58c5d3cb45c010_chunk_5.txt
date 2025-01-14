@@ -1,0 +1,153 @@
+</p>
+</li>
+<li>
+<p>can be changed by adding the desired duration using pipe parameters (e.g. #portal_access_url|24#)</p>
+</li>
+</ul>
+</td>
+<td style="width: 163.976px;">
+<p>US, ME, IDEA</p>
+</td>
+</tr>
+<tr>
+<td style="width: 254.983px;">
+<p><em>#u_personal_manager_message#</em></p>
+</td>
+<td style="width: 310.59px;">
+<p>The personal message of the guide initiator entered in the guide setup will be displayed.</p>
+</td>
+<td style="width: 163.976px;">
+<p>US, ME, IDEA</p>
+</td>
+</tr>
+<tr>
+<td style="width: 254.983px;">
+<p><em>#u_guidewave_rater_group#</em></p>
+</td>
+<td style="width: 310.59px;">
+<p>The rater group of the invited participant (e.g. manager) will be displayed.</p>
+</td>
+<td style="width: 163.976px;">
+<p>ME</p>
+</td>
+</tr>
+<tr>
+<td style="width: 254.983px;">
+<p><em>#u_wave_expire_date#</em></p>
+</td>
+<td style="width: 310.59px;">
+<p>End date of the guide survey</p>
+</td>
+<td style="width: 163.976px;">
+<p>US, ME, IDEA</p>
+</td>
+</tr>
+<tr>
+<td style="width: 254.983px;">
+<p><em>#u_wave_date#</em></p>
+</td>
+<td style="width: 310.59px;">
+<p>Start date of the guide survey</p>
+</td>
+<td style="width: 163.976px;">
+<p>US, ME, IDEA</p>
+</td>
+</tr>
+<tr>
+<td style="width: 254.983px;">
+<p><em>#u_wave_name#</em></p>
+</td>
+<td style="width: 310.59px;">
+<p>Name of the invited group (US-Guide), name of the guide (ME-Guide)</p>
+</td>
+<td style="width: 163.976px;">
+<p>US, ME</p>
+</td>
+</tr>
+<tr>
+<td style="width: 254.983px;">
+<p><em>#u_wave_locale#</em></p>
+</td>
+<td style="width: 310.59px;">
+<p>Selected portal language of the invited panelist (guide)</p>
+</td>
+<td style="width: 163.976px;">
+<p>US, ME, IDEA</p>
+</td>
+</tr>
+<tr>
+<td style="width: 254.983px;">
+<p><em>#voting_page_link#</em></p>
+</td>
+<td style="width: 310.59px;">
+<p>The complete and unencrypted link to the voting page</p>
+</td>
+<td style="width: 163.976px;">
+<p>IDEA</p>
+</td>
+</tr>
+<tr>
+<td style="width: 254.983px;">
+<p><em>#action_board_link#</em></p>
+</td>
+<td style="width: 310.59px;">
+<p>The complete and unencrypted link to the <em>Action Board</em></p>
+</td>
+<td style="width: 163.976px;">
+<p>IDEA</p>
+</td>
+</tr>
+<tr>
+<td style="width: 254.983px;">
+<p><em>#guide_status_link#</em></p>
+</td>
+<td style="width: 310.59px;">
+<p>The complete and unencrypted link to the status page of your guide. The duration of the generated login code will be stored in the new placeholder and will be corresponding to the time specified on the <strong>Settings</strong> tab.</p>
+<ul>
+<li>
+<p>configuration for the grouping phase. The duration can be changed by means of pipe parameters:</p>
+</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li>
+<p><em>#guide_status_link|20m#</em> (= 20 minutes)</p>
+</li>
+<li>
+<p><em>#guide_status_link|5h#</em>   (= 5 hours)</p>
+</li>
+<li>
+<p><em>#guide_status_link|2d#</em>  (= 2 days)</p>
+</li>
+</ul>
+</td>
+<td style="width: 163.976px;">
+<p>IDEA</p>
+</td>
+</tr>
+<tr>
+<td style="width: 254.983px;">
+<p><em>#guideinitiator#</em></p>
+</td>
+<td style="width: 310.59px;">
+<p>First and last name of the guide initiator</p>
+</td>
+<td style="width: 163.976px;">
+<p>IDEA</p>
+</td>
+</tr>
+<tr>
+<td style="width: 254.983px;">
+<p><em>#guideinitiator|firstname#</em></p>
+</td>
+<td style="width: 310.59px;">
+<p>First name of the guide initiator</p>
+</td>
+<td style="width: 163.976px;">
+<p>IDEA</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="offline-participants" class="wysiwyg-text-align-justify"><strong>Offline participants</strong></h3>
+<p class="w

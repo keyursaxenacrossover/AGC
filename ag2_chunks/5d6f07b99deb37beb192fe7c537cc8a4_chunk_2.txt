@@ -1,0 +1,129 @@
+ be removed.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 198.594px;">
+<p>Reset Password</p>
+</td>
+<td style="width: 198.594px;">
+<p>Never</p>
+</td>
+<td style="width: 198.594px;">
+<p>The user will get a confusing email about a password reset. But this password will never be used.</p>
+</td>
+<td style="width: 198.663px;">
+<p>Not suitable for managed users</p>
+</td>
+</tr>
+<tr>
+<td style="width: 198.594px;">
+<p>Reset Multifactor</p>
+</td>
+<td style="width: 198.594px;">
+<p>In case a user has to changed their device or misconfigured MFA.</p>
+</td>
+<td style="width: 198.594px;">
+<p>Multifactor information is removed and the user has to enroll MFA again.</p>
+</td>
+<td style="width: 198.663px;">
+<p>Users do not have the chance to reset MFA on their own in the current version of the project.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 198.594px;">
+<p>Suspend</p>
+</td>
+<td style="width: 198.594px;">
+<p>This should be used in cases a user should not be able to login anymore. e.g. a user is not employee of a company anymore</p>
+</td>
+<td style="width: 198.594px;">
+<p>A user is not able to login anymore to any Tivian application.</p>
+</td>
+<td style="width: 198.663px;">
+<p>A user might be part of multiple companies (e.g. panelist in one company, admin in another company). In that case suspending the user might not be desired.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 198.594px;">
+<p>Deactivate</p>
+</td>
+<td style="width: 198.594px;">
+<p>This should only be used if a user is about to be removed.</p>
+</td>
+<td style="width: 198.594px;">
+<p>A user not able to login anymore to any Tivian application.</p>
+<p>The user will loose app and group memberships etc.</p>
+</td>
+<td style="width: 198.663px;">
+<p>Prefer suspending users.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 198.594px;">
+<p>Delete (user has to be deactivated)</p>
+</td>
+<td style="width: 198.594px;">
+<p>In case a user should not have access anymore.</p>
+</td>
+<td style="width: 198.594px;">
+<p>A user is entirely removed from Okta. Login to all applications with Tivian Access enabled is not possible anymore. The user cannot be restored.</p>
+</td>
+<td style="width: 198.663px;">
+<p>First deactivate the user.</p>
+<p>This can also be triggered via script - especially for bulk operations.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 198.594px;">
+<p>Assign Application</p>
+</td>
+<td style="width: 198.594px;">
+<p>Never</p>
+</td>
+<td style="width: 198.594px;">
+<p>No effect - users are assigned to all applications anyway</p>
+</td>
+<td style="width: 198.663px;">
+<p>Application assignments are currently not used. Access rights are managed in the respective applications (EFS, Portals).</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<h2 id="h_01J6CQKXZAYWRX4J2VJMD6TVF6">Manage local users</h2>
+<p>Local users are users that exist in Okta with credentials and login via Okta. They are not stored in any external Identity Provider.</p>
+<table border="1" data-layout="wide">
+<colgroup>
+<col style="width: 170.0px;">
+<col style="width: 170.0px;">
+<col style="width: 170.0px;">
+<col style="width: 170.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p><strong>What</strong></p>
+</th>
+<th>
+<p><strong>When to use</strong></p>
+</th>
+<th>
+<p><strong>Effect</strong></p>
+</th>
+<th>
+<p><strong>Notes</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Convert Local Users to Federated users</p>
+</td>
+<td>
+<p>When a user was synced without the “federated” domains set correctly the user might be synced with a local Okta password. To prevent future emails and a password in Okta, the user can be switched to federated.</p>
+</td>
+<td>
+<p>The local Okta password of the user is removed and the user can just login via federation.</p>
+</td>
+<td>
+<p><a href="https://support.okta.com/help/s/article/How-to-convert-Okta-user-to-Federated-provider-type?language=en_US" data-card-appearance="inline">https://support.okta.com/help/s/article/How-to-convert-Okta-user-to-Federated-provider-type?language=en_US</a></p>
+<p>This is a help Article how to do that. This could also be done by a postman collection

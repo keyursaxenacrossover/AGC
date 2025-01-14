@@ -1,0 +1,109 @@
+p>
+</li>
+<li>
+<p>Reasons for quitting can be stored in a master data variable.</p>
+</li>
+<li>
+<p>After sending the form a confirmation message will be displayed.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">In the standard panel, you can use the “func_quit_membership” template to change the appearance of the quit membership form and the quit membership confirmation.</p>
+<p class="wysiwyg-text-align-justify"><strong>Options</strong></p>
+<p class="wysiwyg-text-align-justify">The “Quit membership” function module offers the following options.</p>
+<table class="wysiwyg-text-align-justify" style="height: 846px;" border="1" width="759" data-layout="default" data-table-width="760">
+<colgroup>
+<col style="width: 346.0px;">
+<col style="width: 346.0px;">
+<col style="width: 346.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" style="width: 239.427px;" data-highlight-colour="#57d9a3">
+<p><strong>Option</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 241.649px;" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 267.535px;" data-highlight-colour="#57d9a3">
+<p><strong>Standard panel</strong></p>
+<p><strong>"Quit membership" page</strong></p>
+</th>
+</tr>
+<tr>
+<td style="width: 231.406px;">
+<p>Reference name for template</p>
+</td>
+<td style="width: 233.628px;">
+<p>Name that can be used to trigger the module in positioning templates.</p>
+</td>
+<td style="width: 259.514px;">
+<p>quit_membership</p>
+</td>
+</tr>
+<tr>
+<td style="width: 231.406px;">
+<p>Page module title</p>
+</td>
+<td style="width: 233.628px;">
+<p>Name of the module in the page’s module overview</p>
+</td>
+<td style="width: 259.514px;">
+<p>Quit membership</p>
+</td>
+</tr>
+<tr>
+<td style="width: 231.406px;">
+<p>Module template</p>
+</td>
+<td style="width: 233.628px;">
+<p>Module-specific template that controls how data provided by the module are displayed.</p>
+</td>
+<td style="width: 259.514px;">
+<p>func_quit_membership</p>
+</td>
+</tr>
+<tr>
+<td style="width: 231.406px;">
+<p>Panel status after quitting membership</p>
+</td>
+<td style="width: 233.628px;">
+<p>You can define the status to be assigned to panelists after they submit the form. The setting applies to the respective language version.</p>
+<p>Please note: Once panelists have been assigned the status “Deleted” you will no longer be able to access their data. You should therefore structure the quitting process in such a way that you still have access to data such as the reason for quitting before the panelists are finally deleted. In the standard panel such panelists who quit their membership are assigned the status “Inactive”, for example.</p>
+</td>
+<td style="width: 259.514px;">
+<p>inactive</p>
+</td>
+</tr>
+<tr>
+<td style="width: 231.406px;">
+<p>Save the reason for quitting in the master data variable</p>
+</td>
+<td style="width: 233.628px;">
+<p>The reason for quitting is saved in a master data item.</p>
+</td>
+<td style="width: 259.514px;">
+<p>m_yquit: Reason for quitting the panel</p>
+</td>
+</tr>
+<tr>
+<td style="width: 231.406px;">
+<p>Message upon successful deregistration</p>
+</td>
+<td style="width: 233.628px;">
+<p>Is displayed upon successful deregistration.</p>
+</td>
+<td style="width: 259.514px;">
+<p>Your membership in this panel has ended.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="function-module-news" class="wysiwyg-text-align-justify"><strong>Function Module: News</strong></h3>
+<p class="wysiwyg-text-align-justify">You can use the “News” function module to create panel pages specifically for news items or to incorporate news sections in panel pages. News items are maintained via a separate GUI.</p>
+<p class="wysiwyg-text-align-justify">The following figures show the standard panel’s news overview and an individual news item. In the standard panel, you can use the “func_news” template to change the appearance of the news area.</p>
+<p class="wysiwyg-text-align-justify"><strong>Options</strong></p>
+<p class="wysiwyg-text-align-justify">The “News” function module offers the following options:</p>
+<table class="wysiwyg-text-align-justify" style="height: 684px;" border="1" width="760" data-layout="default" data-table-width="760">
+<colgroup>
+<col style="width: 198.0px;">
+<col style="

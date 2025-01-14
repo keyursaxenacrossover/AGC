@@ -1,0 +1,70 @@
+, apply, and delete filters from the list of created filters.</p>
+<p class="wysiwyg-text-align-justify"><strong>Testing Filters:</strong> Click on the <strong>Test filter condition</strong> icon to check the number of panelists the filter would apply to.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014812736530"></p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="h_01HGKSMPRS7YJHG8XJDE1QW3TN" class="wysiwyg-text-align-justify">Update Rules</h2>
+<p class="wysiwyg-text-align-justify">Static panel groups can be updated automatically or manually using self-defined rules. To manage these rules, navigate to <strong>People → Groups → Update rules</strong>.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014859650706"></p>
+<h3 id="h_01J3G14YZ57YW2NMQ4TYTTVVX8" class="wysiwyg-text-align-justify">Overview of Update Rules</h3>
+<p class="wysiwyg-text-align-justify">If update rules are already created, they will be listed in an overview table showing:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<strong>Name of Rule</strong>: The identifier for each rule.</li>
+<li>
+<strong>Number of Actions</strong>: List of actions executed during updates.</li>
+<li>
+<strong>Group</strong>: The name of the group the rule applies to.</li>
+<li>
+<strong>Group Size</strong>: The number of panelists in the group.</li>
+<li>
+<strong>Automated</strong>: Indicates if the update is automated and the interval set.</li>
+<li>
+<strong>Last Executed Automatically</strong>: Date and time of the last automatic update.</li>
+</ul>
+<h3 id="h_01J3G14YZ5PAYYCY4ADGD2R3CG" class="wysiwyg-text-align-justify">Editing Options</h3>
+<p class="wysiwyg-text-align-justify">In the "Actions" column, you have the following options:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<strong>Edit</strong>: Opens the menu for editing the update rule.</li>
+<li>
+<strong>Copy</strong>: Duplicates the rule.</li>
+<li>
+<strong>Apply Rule Now</strong>: Executes the update immediately.</li>
+<li>
+<strong>Delete</strong>: Removes the rule after confirmation.</li>
+</ul>
+<h3 id="h_01J3G14YZ52YX5SRTM9NKNFMXZ" class="wysiwyg-text-align-justify">Performance Recommendations</h3>
+<ul class="wysiwyg-text-align-justify">
+<li>Limit to 100 update rules per installation. Regularly check and remove unnecessary rules.</li>
+<li>Automate no more than 20 update rules per installation to maintain performance</li>
+</ul>
+<h3 id="h_01J3G179TMKKHSXGNJGQYYREJA" class="wysiwyg-text-align-justify">Creating New Update Rules</h3>
+<h4 id="h_01J3G179TMBNS7V5ZFQB4X2CBA" class="wysiwyg-text-align-justify">Defining Basic Parameters</h4>
+<ol class="wysiwyg-text-align-justify">
+<li>Click on the <strong>Create update rule</strong> button.</li>
+<li>Provide the following details:
+<ul>
+<li><strong>Name of rule</strong></li>
+<li><strong>Comment</strong></li>
+<li>
+<strong>Group category</strong>: Name of the category where the group to be updated is located.</li>
+<li>
+<strong>Panel group to be updated</strong>: Name of the group to which the update applies.</li>
+<li>
+<strong>Execute rule automatically</strong>: Check this option if the update should run automatically at set intervals.</li>
+<li>
+<strong>Start time</strong>: Set the date and time for the rule to start.</li>
+<li>
+<strong>Interval type</strong>: Choose from hours, days, weeks, months, or years.</li>
+<li>
+<strong>Interval value</strong>: Specify the interval size (e.g., every 3 days).</li>
+</ul>
+</li>
+</ol>
+<h4 id="h_01J3G179TQ9JNZH5Y2SXSQQGED" class="wysiwyg-text-align-justify">Defining Actions</h4>
+<p class="wysiwyg-text-align-justify">Once the basic parameters are set, define the actions for the update rule. Each action may require advanced configuration, including execution conditions. The following actions can be selected:</p>
+<div class="pm-table-container with-shadow-observer wysiwyg-text-align-justify" data-layout="default">
+<div class="pm-table-wrapper">
+<table style="border-collapse: collapse; height: 2815px; width: 814px;" border="1" data-testid="renderer-table" data-number-column="false" data-table-width="760" data-layout="default">
+<colgroup> <col style="width: 252px;"> <col style="width: 253px;"> <col style="width: 252px;"> </colgroup>
+<tbody>
+<tr style="height: 47.416

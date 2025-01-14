@@ -1,0 +1,135 @@
+v2"</h2>
+<ul>
+<li>
+<p>Log in to the required installation with root account</p>
+</li>
+<li>
+<p>Navigate to <strong>Options &gt;&gt; Platform cockpit &gt;&gt; root only:: System configuration</strong></p>
+<ul>
+<li>
+<p>add value <code>custom</code> in the <code>modules</code> variable (if not existent yet)</p>
+</li>
+<li>
+<p>add a new variable</p>
+<ul>
+<li>
+<p><strong>Variable name: </strong><code>custom_triggers_allowed</code></p>
+</li>
+<li>
+<p><strong>Value Type:</strong> Array</p>
+</li>
+<li>
+<p><strong>Key:</strong> surveytopanelistv2</p>
+</li>
+<li>
+<p><strong>Type:</strong> Boolean</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Set variable to <code>true</code> afterwards</p>
+</li>
+</ul>
+</li>
+<li>Add an update to installation entry in Globis mentioning that you have enabled custom triggers
+<ul>
+<li>
+<p>via console and <strong>htdocs</strong> folder:</p>
+<ul>
+<li>
+<p><code>u set has_custom_triggers to true, case [ZD_ticket_ID]</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p>via <strong>Globis</strong>:</p>
+<ul>
+<li>
+<p>Open details of installation</p>
+</li>
+<li>
+<p>Click link "Add update for this installation"</p>
+</li>
+<li>
+<p>Files (*): All</p>
+</li>
+<li>
+<p>Description (*): <code>set has_custom_triggers to true, case [ZD_ticket_ID]</code> * Also add the module to the list of modules</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="header-5">Semantic and key phrase triggers (text analytics) activation</h2>
+<p>These custom triggers live in the "azuresentiment.php" or "azurekeyphrase.php" files for installations that have it. It's a core trigger, not custom.</p>
+<ul>
+<li>Log in to the required installation with <strong>root</strong> account</li>
+<li>Navigate to <strong>Options &gt;&gt; Platform cockpit &gt;&gt; root only:: System configuration</strong>
+</li>
+<li>
+<p>Set <code>azure_detect_phrases_service</code> to '<code>http://textanalyzer/azure/cognitive/detect/phrases</code>'</p>
+</li>
+<li>Set <code>sentiment_detect_service_url</code> to '<code>http://textanalyzer/azure/cognitive/detect/sentiment</code>
+</li>
+</ul>
+<p>Next you can use the below method or Curl command:</p>
+<ul>
+<li>
+<p>Go to <a href="http://10.250.10.115/ui">http://10.250.10.115/ui</a> to create a new key for the customer to use when configuring the trigger.</p>
+</li>
+<li>
+<p>Open PUT /account.<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20714627396242" alt="image-20210114-073807.png" width="446" height="283"></p>
+</li>
+<li>
+<p>Click on the red/blue info bubble on the right hand (depending if you already entered the root API key).</p>
+<ul>
+<li>
+<p>A dialog opens where you have to enter the root key to authenticate yourself.</p>
+</li>
+<li>
+<p>The key can be found in the password safe under 'Root key Portal zur Accountverwaltung Textanalytics'</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Click on the text field under 'example value' on the right side. The example value filled array will be copied to the text area for value of the account.<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20714575527698" alt="image-20210114-074035.png" width="404" height="256"></p>
+</li>
+<li>
+<p>Hit 'Try it out!'. The key will appear in a textfield below (Response Body).</p>
+</li>
+<li>
+<p>Copy the key and send it to the customer (add it to the case).</p>
+</li>
+<li>Add an update to installation entry in Globis mentioning that you have enabled custom triggers
+<ul>
+<li>
+<p>via console and <strong>htdocs</strong> folder:</p>
+<ul>
+<li>
+<p><code>u set has_custom_triggers to true, case [ZD_ticket_ID]</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p>via <strong>Globis</strong>:</p>
+<ul>
+<li>
+<p>Open details of installation</p>
+</li>
+<li>
+<p>Click link "Add update for this installation"</p>
+</li>
+<li>
+<p>Files (*): All</p>
+</li>
+<li>
+<p>Description (*): <code>set has_custom_triggers to true, case [ZD_ticket_ID]</code> * Also add the module to the list of modules</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>OR <strong>Curl Command</strong>: Sample command below-- replace Installation name and technical name</p>
+<pre><span

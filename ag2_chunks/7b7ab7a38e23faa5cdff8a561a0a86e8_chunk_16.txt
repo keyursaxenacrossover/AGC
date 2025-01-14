@@ -1,0 +1,101 @@
+li>
+</ul>
+<p>With question type 340, you have the option of modifying the area between the question and the answer block by inserting an additional template, e.g. to change the distance.</p>
+<h3 id="drop-down-matrix">Drop-down matrix</h3>
+<p>This question type can be used to ask questions for which different time states (e.g. for certain university years) or different factual aspects (e.g. geographical limits, such as continents) are given. The time-based or factual differentiation is reflected in the column. The question itself is documented in the row. The following is an example from a survey conducted to assess lectures.</p>
+<p>There are two question types which allow you to create a drop-down matrix:</p>
+<ul>
+<li>
+<p>The figure above shows a normal drop-down matrix (question type 361).</p>
+</li>
+<li>
+<p>Alternatively, you can create a vertical drop-down matrix (question type 364), i.e. a mirrored version of question type 361.</p>
+</li>
+</ul>
+<h4 id="base-elements-15">Base Elements</h4>
+<ul>
+<li>
+<p>Question text</p>
+</li>
+<li>
+<p>Fill-in instruction</p>
+</li>
+<li>
+<p>Help text</p>
+</li>
+<li>
+<p>Columns 1-m</p>
+</li>
+<li>
+<p>Scale options 1-n</p>
+</li>
+<li>
+<p>Dimensions 1-o</p>
+</li>
+</ul>
+<p>In the closed drop-down lists, you should set up one scale option with the text “Please select” for each of the two answer scales and assign code “0” to it. During evaluation, this will help you to track whether or not a participant has answered the question.</p>
+<p>The Mandatory and DAC functions only work with question types 361 and 364, if a “Please select” scale option with code “0” exists. Under this condition, the DAC function allows you to force respondents to answer an individual dimension. A completeness check for an individual item is not possible with this question type.</p>
+<h3 id="checkbox-matrix">Checkbox matrix</h3>
+<p>Using a checkbox matrix allows you to query facts, for which differing temporal states (e.g. before, during, following a course of study) or different factual aspects (e.g. delineated geographically, such as continents) are required. The temporal or factual differentiation is reflected in the column. The question itself is documented in the row. Below is an example from a survey in which the subsequent career of university graduates is polled.</p>
+<h4 id="base-elements-16">Base Elements</h4>
+<ul>
+<li>
+<p>Question text</p>
+</li>
+<li>
+<p>Fill-in instruction</p>
+</li>
+<li>
+<p>Help text</p>
+</li>
+<li>
+<p>Columns 1-n</p>
+</li>
+<li>
+<p>Dimensions 1-m</p>
+</li>
+</ul>
+<p>There is no cell-specific information. There is no description text for the checkboxes.</p>
+<h4 id="entry-dialog-7">Entry Dialog</h4>
+<p>The checkbox matrix entry dialog is largely similar to the entry dialog for a standard scale matrix. Only the section “Scale” differs slightly: the columns are created in this section. Furthermore, you can tag the columns of the checkbox matrix as „exclusive“.</p>
+<h3 id="text-field-matrix">Text field matrix</h3>
+<p>This complex question type allows you to collect a variety of information. This question type is a combination of rows and columns, thus forming a matrix. The information stored in the cells of this matrix is collected using text fields. This question type is therefore called a “text field matrix”.</p>
+<h4 id="base-elements-17">Base Elements</h4>
+<ul>
+<li>
+<p>Question text</p>
+</li>
+<li>
+<p>Fill-in instruction</p>
+</li>
+<li>
+<p>Help text</p>
+</li>
+<li>
+<p>Columns 1-n</p>
+</li>
+<li>
+<p>Dimensions 1-m</p>
+</li>
+<li>
+<p>Cell text for each cell, i.e., with m rows and n columns, m x n cells. Each cell contains text which can be placed before the text field and text which can be placed after the text field.</p>
+</li>
+</ul>
+<h4 id="entry-dialog-8">Entry Dialog</h4>
+<p>There are some special features in the text field matrix entry dialog:</p>
+<ul>
+<li>
+<p>In the “Scale” section the columns are created as explained for the checkbox matrix in the preceding Chapter.</p>
+</li>
+<li>
+<p>In the “Answers” section you can specify the maximum length of the entry for each text field. Default in “Responsive layout” projects: 255 characters. A maximum of 255 characters is permitted.</p>
+</li>
+<li>
+<p>In projects with classic layout, the display width can be specified as well.</p>
+</li>
+<li>
+<p>If you wish to specify text around the entry field click the<strong> Edit cell text</strong> link. Using the “%s” wildcard you can also specify as with other text field questions where the entry field is to appear.</p>
+</li>
+</ul>
+<h3 id="accordion-matrix">Accordion matrix</h3>
+<p>This question type allows a more accessible display of matrix questions on mobile devices. In addition to making the question more accessible on mobile devices, the nature of the layout of this question type reduces the likelihood of people straight-lining their answers. Along with the

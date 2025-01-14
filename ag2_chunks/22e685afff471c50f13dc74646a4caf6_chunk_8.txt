@@ -1,0 +1,83 @@
+>
+<td><p>gone</p></td>
+</tr>
+<tr>
+<td><p>Nagios_GSA2</p></td>
+<td><p><a href="http://10.250.1.3:83/"><u>http://10.250.1.3:83/</u></a></p></td>
+<td><p>monitoring of all production hosts</p></td>
+<td><p>-</p></td>
+<td><p>Sysadmins</p></td>
+<td><p>gone</p></td>
+</tr>
+<tr>
+<td><p>Nagios_SLA</p></td>
+<td><p><a href="http://10.250.1.33/nagios/"><u>http://10.250.1.33/nagios/</u></a></p></td>
+<td><p>monitoring of all production hosts</p></td>
+<td><p>-</p></td>
+<td><p>Sysadmins</p></td>
+<td><p>gone</p></td>
+</tr>
+<tr>
+<td><p>Nagios_Office</p></td>
+<td><p><a href="http://nagios.globalpark.de:83/"><u>http://nagios.globalpark.de:83/</u></a></p></td>
+<td><p><del>monitoring of office systems</del></p></td>
+<td><p>-</p></td>
+<td><p>Sysadmins</p></td>
+<td><p>gone</p></td>
+</tr>
+<tr>
+<td><p>Pingdom</p></td>
+<td><p><a href="https://my.pingdom.com/"><u>https://my.pingdom.com</u></a></p></td>
+<td><p>Website Performance and Availability Monitoring</p></td>
+<td><p>see KeePass</p></td>
+<td><p>Syadmins</p></td>
+<td><p>check with Sysadmins</p></td>
+</tr>
+<tr>
+<td><p>AWS Account</p></td>
+<td><p><ac:link ac:card-appearance="inline"><ri:page ri:content-title="AWS Account Tivian" ri:space-key="PROC" ri:version-at-save="135"></ri:page><ac:link-body>AWS Account Tivian</ac:link-body></ac:link> </p></td>
+<td><p>AWS Database Logfiles, etc</p></td>
+<td><p><em>firstname.lastname + 2FA</em></p></td>
+<td><p>Sysadmins</p></td>
+<td><p>in use</p></td>
+</tr>
+<tr>
+<td><p>Graffana</p></td>
+<td><p><a href="https://grafana.questback.com/login">https://grafana.questback.com/login</a> </p></td>
+<td><p>Dashboards for AWS</p></td>
+<td><p><em>Microsoft SSO</em></p></td>
+<td><p>you, Office IT</p></td>
+<td>
+<p>Every cluster has its own now:<br><br><a href="https://grafana.prod-de-03.customervoice360.com/">https://grafana.prod-de-03.customervoice360.com/</a><br><br><a href="https://grafana.prod-us-03.customervoice360.com/">https://grafana.prod-us-03.customervoice360.com/</a></p>
+<p></p>
+<p><a href="https://grafana.sandbox-de-02.customervoice360.com/login">https://grafana.sandbox-de-02.customervoice360.com/login</a></p>
+<p></p>
+<p><a data-card-appearance="inline" href="https://grafana.bofa-us-01.customervoice360.com/login">https://grafana.bofa-us-01.customervoice360.com/login</a> </p>
+</td>
+</tr>
+<tr>
+<td><p>Kibana</p></td>
+<td><p><a href="https://prod-us-01-kibana.questback.com/app/kibana"><u>https://prod-us-01-kibana.questback.com/app/kibana</u></a></p></td>
+<td><p>All Questback Cloud logfiles</p></td>
+<td><p>see KeePass</p></td>
+<td><p>Sysadmins</p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>Salt</p></td>
+<td><p><a href="http://salt01.bre.globalpark.de/repo/SG.html"><u>http://salt01.bre.globalpark.de/repo/SG.html</u></a></p></td>
+<td><p>tiles of FE pools with all related informations (ip addresses, efs installations, php version, etc.)</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p><del>Continuous delivery</del></p></td>
+<td><p><a href="http://api.globalpark.de/delivery/clm/"><u>http://api.globalpark.de/delivery/clm/</u></a></p></td>
+<td><p>Build changelog management</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p><del>EFS DEV

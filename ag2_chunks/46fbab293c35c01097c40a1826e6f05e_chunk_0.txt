@@ -1,0 +1,60 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K" class="wysiwyg-text-align-justify">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article provides comprehensive information about various types of triggers in the EFS Survey, including mail triggers, page triggers, logout triggers, sample triggers, re-invitation triggers, variable split triggers, recoding triggers, random triggers, list triggers, bonus triggers, panel group triggers, and pre-qualification triggers. Each trigger type is explained in detail, along with its features, configuration steps, and usage examples.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">Triggers are powerful tools in EFS Survey that allow you to automate various actions based on specific conditions or events during a survey. This article covers the different types of triggers available, their functionalities, and how to configure them effectively.</p>
+<ul>
+<li><a href="#mail-trigger">Mail trigger</a></li>
+<li><a href="#page-trigger">Page trigger</a></li>
+<li><a href="#logout-trigger">Logout trigger</a></li>
+<li><a href="#sample-trigger">Sample trigger</a></li>
+<li><a href="#re-invitation-trigger">Re-invitation trigger</a></li>
+<li><a href="#variable-split-trigger">Variable split trigger</a></li>
+<li><a href="#recoding-trigger">Recoding trigger</a></li>
+<li><a href="#random-trigger">Random trigger</a></li>
+<li><a href="#list-trigger">List trigger</a></li>
+<li><a href="#bonus-trigger">Bonus trigger</a></li>
+<li><a href="#panel-group-trigger">Panel group trigger</a></li>
+<li><a href="#pre-qualification-trigger">Pre-qualification trigger</a></li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="mail-trigger" class="wysiwyg-text-align-justify">Mail trigger</h2>
+<p class="wysiwyg-text-align-justify">The mail trigger is available for all survey types. When a defined event occurs, it will trigger the dispatch of an e-mail whose content was predefined, dynamically generated, or entered by the respondent to an address that was either defined in advance or collected during the survey.</p>
+<h3 id="basic-settings" class="wysiwyg-text-align-justify">Basic Settings</h3>
+<p class="wysiwyg-text-align-justify">When configuring basic settings for a mail trigger please note the following features:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Execution position: As the execution position you should choose “After submitting page, after filter”.</p>
+</li>
+<li>
+<p>Condition: Definition of an appropriate condition is of special significance for mail triggers. For example, you can ensure that e-mails are only sent when the participant has completely filled a comments field.</p>
+</li>
+</ul>
+<h3 id="details" class="wysiwyg-text-align-justify">Details</h3>
+<p class="wysiwyg-text-align-justify">In addition, the following specific settings must be made for this trigger type:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Mail template: Optionally, the contents to be dispatched by the trigger can be imported from a mail template and then modified and stored in the trigger editor.</p>
+</li>
+<li>
+<p>Mail sender</p>
+<ul>
+<li>
+<p>Manually defined mail sender: The e-mail address of the sender must be entered, it cannot be adopted from a mail template. Entering a real name (e.g. John Doe &lt;<a href="mailto:john.doe@example.com">john.doe@example.com</a>&gt;) is not possible in triggers.</p>
+</li>
+<li>
+<p>Dynamic mail sender: here you can select the variables for single-row text fields (141) and “Other” fields (answer option + text). In personalized projects, the additional “u_email” wildcard is available, which is filled with the stored survey participant’s e-mail address.</p>
+</li>
+<li>
+<p>If you use the ACL right “mail_reply“ to hide “Reply-To” and “Return-Path” for a user team (usually for privacy protection), please take care to enter clearly defined values in the mail template which the team members are supposed to use for the trigger. The default options “Reply-To = From” and “Return-Path = From” cannot be used, because they are filled with the mail sender entered manually by the responsible user.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Mail recipient:</p>
+<ul>
+<li>
+<p>Manually defined recipient: In this field, you can define one or more recipients who do not necessarily have to be included in the<em> EFS Survey</em> system. You may either enter a single e-mail address or several e-mail addresses separated by commas. The e-mail will be sent to all the recipients you have defined.</p>
+</li>
+<li>
+<p>Dynamic mail recipient: You can select the variables for single row text fields (141) and “Other” fields (answer option + text). In personalized projects, the additional <em>u_email</em> wildcard is available, which is filled

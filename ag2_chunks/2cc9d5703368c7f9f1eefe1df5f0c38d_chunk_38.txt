@@ -1,0 +1,129 @@
+</td>
+<td style="width: 377.066px;">
+<p>Module-specific template that controls how data provided by the module are displayed.</p>
+</td>
+<td style="width: 170.729px;">
+<p>func_change_password</p>
+</td>
+</tr>
+<tr>
+<td style="width: 167.76px;">
+<p>The previous password must be entered for confirmation?</p>
+</td>
+<td style="width: 377.066px;">
+<p>The previous password must be entered again.</p>
+</td>
+<td style="width: 170.729px;">
+<p>yes</p>
+</td>
+</tr>
+<tr>
+<td style="width: 167.76px;">
+<p>Message upon successful change</p>
+</td>
+<td style="width: 377.066px;">
+<p>This text is displayed once the change has been saved.</p>
+</td>
+<td style="width: 170.729px;">
+<p>You have changed your password successfully.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="function-module-recover-password-functionality" class="wysiwyg-text-align-justify"><strong>Function Module: Recover Password Functionality</strong></h3>
+<p class="wysiwyg-text-align-justify">The “Recover password” module creates a form via which panelists can request a link for resetting their forgotten password. In the standard panel, panelists can access such a form by clicking on the <strong>forgot your password</strong> link.</p>
+<p class="wysiwyg-text-align-justify">EFS Panel provides various design options:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>You can select the mail template used to deliver the reset link.</p>
+</li>
+<li>
+<p>Once the reset link has been successfully delivered a confirmation message will be displayed.</p>
+</li>
+<li>
+<p>You can optionally restrict the validity period for the “Reset password” link.</p>
+</li>
+<li>
+<p>Optionally, a security question can be integrated into the “Request reset link” process.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">In the standard panel, the “func_password_recover” template is responsible for the appearance of the “Recover password” page and confirmation message.</p>
+<p class="wysiwyg-text-align-justify"><strong>Options</strong></p>
+<p class="wysiwyg-text-align-justify">The “Recover password” function module offers the following options.</p>
+<table class="wysiwyg-text-align-justify" style="height: 605px;" border="1" width="755" data-layout="default" data-table-width="760">
+<colgroup>
+<col style="width: 151.0px;">
+<col style="width: 464.0px;">
+<col style="width: 145.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" style="width: 141.91px;" data-highlight-colour="#57d9a3">
+<p><strong>Option</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 428.056px;" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 174.653px;" data-highlight-colour="#57d9a3">
+<p><strong>Standard panel “Password recover” page</strong></p>
+</th>
+</tr>
+<tr>
+<td style="width: 133.889px;">
+<p>Reference name for template</p>
+</td>
+<td style="width: 420.035px;">
+<p>Name that can be used to trigger the module in positioning templates.</p>
+</td>
+<td style="width: 166.632px;">
+<p>password_recovery</p>
+</td>
+</tr>
+<tr>
+<td style="width: 133.889px;">
+<p>Page module title</p>
+</td>
+<td style="width: 420.035px;">
+<p>Name of the module in the page’s module overview.</p>
+</td>
+<td style="width: 166.632px;">
+<p>Password recovery</p>
+</td>
+</tr>
+<tr>
+<td style="width: 133.889px;">
+<p>Module template</p>
+</td>
+<td style="width: 420.035px;">
+<p>Module-specific template that controls how data provided by the module are displayed.</p>
+</td>
+<td style="width: 166.632px;">
+<p>func_password_recover</p>
+</td>
+</tr>
+<tr>
+<td style="width: 133.889px;">
+<p>Mail template for password recovery mail</p>
+</td>
+<td style="width: 420.035px;">
+<p>Mail template used for password delivery.</p>
+<p>The “Password recovery” mail templates are available. Please make sure that the selected template contains all necessary wildcards.</p>
+</td>
+<td style="width: 166.632px;">
+<p>Password recovery</p>
+</td>
+</tr>
+<tr>
+<td style="width: 133.889px;">
+<p>Hint for e-mail address</p>
+</td>
+<td style="width: 420.035px;">
+<p> </p>
+</td>
+<td style="width: 166.632px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 133.889px;">
+<p>

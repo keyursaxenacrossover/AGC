@@ -1,0 +1,39 @@
+ used in a production setup.</p>
+<p>see Business Decisions</p>
+<p> </p>
+<p><strong>Which groups of users are affected?</strong></p>
+<p>Only EFS Admin users and Panelists are in scope of the current IAM project status. Therefore only these users are affected by the current solution and only these users will benefit from SSO features. (also see Business Decisions )</p>
+<p> </p>
+<h2 id="h_01J6EX5HNDPHA8C0YXN5V2EQ6E"> </h2>
+<h2 id="header-4">Tivian Access - Business</h2>
+<h4 id="How-is-authorization-handled-/-How-do-users-get-access-to-an-installation?" data-renderer-start-pos="28"><strong data-renderer-mark="true">How is authorization handled / How do users get access to an installation?</strong></h4>
+<p data-renderer-start-pos="104">Authorization will be handled by the respective applications. </p>
+<p data-renderer-start-pos="217">E.g: For EFS Admin that means that users still have to be added as an admin user in the installation before a user can login via Tivian Access (Okta) and gain access.</p>
+<h4 id="How/When-can-Tivian-support-employees-access-installations-using-Tivian-Access-?" data-renderer-start-pos="385"><strong data-renderer-mark="true">How/When can Tivian support employees access installations using Tivian Access ?</strong></h4>
+<p data-renderer-start-pos="467">Since the Tivian AD will be connected to Okta, every support employee will have the possibility to sign in with Okta.</p>
+<p data-renderer-start-pos="586">The access to an installation depends on two factors:</p>
+<ul class="ak-ul" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="643">Is Tivian Access enabled on the installation (aka: Did the customer buy Tivian Access)</p>
+</li>
+<li>
+<p data-renderer-start-pos="733">Is an admin user present for the support employee (since authorization will still be handled in the application)</p>
+</li>
+</ul>
+<p data-renderer-start-pos="849">If both factors are given, the access to the installation should be granted</p>
+<p data-renderer-start-pos="984"> </p>
+<h3 id="Changes-in-ESS" data-renderer-start-pos="986"><strong data-renderer-mark="true">Changes in ESS</strong></h3>
+<p data-renderer-start-pos="1004"><strong data-renderer-mark="true">Can I still manage the password for Panelists in EFS?</strong></p>
+<p data-renderer-start-pos="1059">Yes, adding / editing / resetting password is still possible for panelists, but will only have impact on Panelists using Panelwebsite. Passwords for Admin users and Panelists using Portals are handled within the IdP</p>
+<p data-renderer-start-pos="1277"> </p>
+<h4 id="Is-there-a-self-registration-for-users?-(either-Portals-or-EFS-Admin)" data-renderer-start-pos="1279"><strong data-renderer-mark="true">Is there a self registration for users? (either Portals or EFS Admin)</strong></h4>
+<p data-renderer-start-pos="1350">No, only authentication is handled when enabling Tivian Access. Registration is still handled in the respective apps.</p>
+<p data-renderer-start-pos="1469"> </p>
+<h4 id="Are-there-existing-features-in-EFS-or-Portals-that-change-after-enabling-Tivian-Access?" data-renderer-start-pos="1471"><strong data-renderer-mark="true">Are there existing features in EFS or Portals that change after enabling Tivian Access?</strong></h4>
+<p data-renderer-start-pos="1560">Yes, especially changing the email-addresses of Panelists and EFS Admin users is disabled. But also changing the password of an EFS Admin user in EFS is not necessary anymore. Changing the password of Panelists will only affect Panelwebsite.</p>
+<p> </p>
+<h2 id="h_01J6EX5HNDG1KNPZJPYQWDHPVV"> </h2>
+<h2 id="header-5">Tivian Access - Technical</h2>
+<h3 id="Settings-on-Okta" data-renderer-start-pos="4"><strong data-renderer-mark="true">Settings on Okta</strong></h3>
+<h4 id="I-need-to-setup-a-tenant-in-Okta,-how-do-I-do-it-?" data-renderer-start-pos="22"><strong data-renderer-mark="true">I need to setup a tenant in Okta, how do I do it ?</strong></h4>
+<p data-renderer-start-pos="74">Start looking here: <span data-inline-card="true" data-card-url="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1077280827"><span class="loader-wrapper"><span aria-expanded="false" aria-haspopup="true" data-testid="hover-card-trigger-wrapper"><a class="css-118vsk3 e26bri0" tabindex="0" role="button" href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1077280827" data-testid="inline-card-resolved-view"><span class="css-1cwva94 e1a3lu074" data

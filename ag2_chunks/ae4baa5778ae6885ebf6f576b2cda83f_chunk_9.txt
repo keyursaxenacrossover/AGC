@@ -1,0 +1,27 @@
+ languages have been edited.</p>
+</li>
+<li>
+<p><span style="color: #ffcc00;">Yellow</span>: The default language has been configured, but at least one of the other languages has not been configured.</p>
+</li>
+<li>
+<p><span style="color: #008000;">Green</span>: All languages have been edited.</p>
+</li>
+</ul>
+<p>The project can be activated even when the consent form is red.</p>
+<h3 id="header-23">Language switch</h3>
+<p>The new language switch is available on the GDPR consent form with <em>Responsive Layout 2</em> and <em>3</em>. As soon as the switch has been activated under the <strong>Internal organizatio</strong>n tab in the survey settings, it will be displayed on the approval page and not only in the questionnaire of this control element. Participants can select the desired language on the approval page. If the page is not available in the selected language, it will be displayed in the default language that is used as a fallback.</p>
+<h3 id="header-24">Personal data flagging</h3>
+<p>In order to make it easier for you to see which participant variables and questions in your project are flagged as personal data we have added a new menu option when viewing the GDPR settings. By clicking on the menu item <strong>Data retention period</strong> or <strong>Consent form</strong> you will reach the GDPR settings, where you will find an overview area under the menu item “Personal data flagging“.</p>
+<h3 id="header-25">Write and read rights for the consent form</h3>
+<p>Your read/write access to the different language consent forms is determined by your language rights for the project the consent form is associated with. If you have only read access to a given survey languages (based on the team your user is assigned to) you will only be able to view the consent form, whereas if you have write access to the survey language you will be able to edit and update the consent form.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998435158162" alt="image2018-10-26_14-38-46.png"></p>
+<h3 id="header-26">Portal registration</h3>
+<p>It is now possible to obtain consent to process personal data from new users registering on your portals. When this setting is configured, the portal login dialog has a second checkbox under the<strong> Register</strong> tab.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998435383570" alt="image2018-10-26_14-40-8.png"></p>
+<p>You activate this under General settings in the portal CMS by ticking the option “Activate Privacy consent form”. In the module People under <strong>Panel configuration</strong> you will find the menu item “Consent form”, where you can create the consent form for the purpose of registering a panelist. In order to be able to use this feature to capture the consent of future portal participants, you must configure the consent form in default language, otherwise the checkbox will not be displayed. One configuration applies to all portals. This feature is available both for the login dialog via the portal and for inviting other panelists via e-mail.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998420696978" alt="image2018-10-26_14-41-27.png"></p>
+<h3 id="header-27">New filter function</h3>
+<p>To make it easier for you to maintain your consent forms, we have added a simple filter function under the menu item Consent form templates in the main<strong> Libraries</strong> area. This language identifier allows you to filter the templates of the consent forms according to the language.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998420940562" alt="image2018-10-26_14-43-5.png"></p>
+<h3 id="header-28">New disposition code</h3>
+<p>Participants who have one of the disposition codes 20, 21, 22 and 23 will receive the disposition code 43 after deletion of their personal data. The purpose of this new disposition code is that participants who are in an 'intermediate state' such as 'participant is responding' (disposition code 21) can no longer participate in the survey after the deletion of their data.</p>

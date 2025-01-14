@@ -1,0 +1,146 @@
+ in the asset library yourself.</p>
+</li>
+<li>
+<p>You can also choose the file type yourself.</p>
+</li>
+<li>
+<p>You can define the maximum number of files for selection.</p>
+</li>
+<li>
+<p>Random selection can be either chosen once per session or every time the respective page is invoked.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Options</strong></p>
+<p class="wysiwyg-text-align-justify">The “Random file selection” function module offers the following options.</p>
+<table class="wysiwyg-text-align-justify" style="height: 587px;" border="1" width="739" data-layout="default" data-table-width="760">
+<colgroup>
+<col style="width: 183.0px;">
+<col style="width: 404.0px;">
+<col style="width: 173.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" style="width: 174.635px;" data-highlight-colour="#57d9a3">
+<p><strong>Option</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 385.712px;" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 168.264px;" data-highlight-colour="#57d9a3">
+<p><strong>Standard panel</strong></p>
+</th>
+</tr>
+<tr>
+<td style="width: 166.615px;">
+<p>Reference name for template</p>
+</td>
+<td style="width: 377.691px;">
+<p>Name that can be used to trigger the module in positioning templates.</p>
+</td>
+<td style="width: 160.243px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 166.615px;">
+<p>Page module title</p>
+</td>
+<td style="width: 377.691px;">
+<p>Name of the module in the page’s module overview</p>
+</td>
+<td style="width: 160.243px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 166.615px;">
+<p>Module template</p>
+</td>
+<td style="width: 377.691px;">
+<p>Module-specific template that controls how data provided by the module are displayed.</p>
+</td>
+<td style="width: 160.243px;">
+<p>func_random_files</p>
+</td>
+</tr>
+<tr>
+<td style="width: 166.615px;">
+<p>File selection type</p>
+</td>
+<td style="width: 377.691px;">
+<p>Available options are:</p>
+<ul>
+<li>
+<p>Random selection (once per session)</p>
+</li>
+<li>
+<p>Random selection (on each request)</p>
+</li>
+</ul>
+</td>
+<td style="width: 160.243px;">
+<p>Random selection (once per session)</p>
+</td>
+</tr>
+<tr>
+<td style="width: 166.615px;">
+<p>Directory for file selection</p>
+</td>
+<td style="width: 377.691px;">
+<p>All asset library directories of the respective panel installation are available.</p>
+</td>
+<td style="width: 160.243px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 166.615px;">
+<p>Permitted file types</p>
+</td>
+<td style="width: 377.691px;">
+<p>Available options are:</p>
+<ul>
+<li>
+<p>gif</p>
+</li>
+<li>
+<p>png</p>
+</li>
+<li>
+<p>jpeg</p>
+</li>
+<li>
+<p>jpg</p>
+</li>
+<li>
+<p>swf</p>
+</li>
+<li>
+<p>CSS</p>
+</li>
+</ul>
+</td>
+<td style="width: 160.243px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 166.615px;">
+<p>Maximum number of files to be picked</p>
+</td>
+<td style="width: 377.691px;">
+<p>If you do not wish to limit the number of files, enter “0” or delete the existing value.</p>
+</td>
+<td style="width: 160.243px;">
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="function-module-random-number-draw" class="wysiwyg-text-align-justify"><strong>Function Module: Random Number Draw</strong></h3>
+<p class="wysiwyg-text-align-justify">The “Random number draw” function module generates a random number that can be used for random sample processes, for example. The module is controlled by the “random_draw” template, which is located in the template library.</p>
+<p class="wysiwyg-text-align-justify"><strong>Options</strong></p>
+<p class="wysiwyg-text-align-justify">The “Random number draw” function module offers the following options.</p>
+<table class="wysiwyg-text-align-justify" style="height: 346px;" border="1" width="730" data-layout="default" data-table-width="760">
+<colgroup>
+<col style="width:

@@ -1,0 +1,56 @@
+ The portal also has to have a claim. Otherwise the panelists of course can not access the portal via the app.</p>
+<p></p>
+<h2 id="header-8">Other general information:</h2>
+<ul>
+<li><p>The app does not show an address bar so manually navigating to a different URL is not possible but if the portal includes a link (an external link or a link to a survey) and it is clicked, the corresponding content will be shown</p></li>
+<li><p>By swiping left and right (at least iOS app) you can navigate a page back and forth (like using the corresponding browser navigation buttons</p></li>
+</ul>
+<p></p>
+<h1 id="header-10">Portals Limits and other settings</h1>
+<p><strong>In der Config (Tab "root only:: System configuration"):</strong></p>
+<p></p>
+<table ac:local-id="913033c6-6757-48d9-82fa-19f5fb04d5d3" data-layout="default" data-table-width="760"><tbody>
+<tr>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/SupportEFSPortals?sortcol=0;table=1;up=0#sorted_table">Config Flag</a></p></th>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/SupportEFSPortals?sortcol=1;table=1;up=0#sorted_table">Beschreibung</a></p></th>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/SupportEFSPortals?sortcol=2;table=1;up=0#sorted_table">Standardlimit</a></p></th>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/SupportEFSPortals?sortcol=3;table=1;up=0#sorted_table">Bisher max gesetzt auf</a></p></th>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/SupportEFSPortals?sortcol=4;table=1;up=0#sorted_table">Kommentar</a></p></th>
+</tr>
+<tr>
+<td><p>portal_max_quantity</p></td>
+<td><p>maximum quantity of portals for installation</p></td>
+<td><p>6</p></td>
+<td><p>18(?)</p></td>
+<td><p>Es wurde auf der Telekom Installation erhöht (<a href="http://internalsurveys.telekom.com">internalsurveys.telekom.com</a>, Case 00901510). Erhöht auf 18</p></td>
+</tr>
+</tbody></table>
+<p></p>
+<h2 id="header-12">Survey image not shown in portal survey list</h2>
+<ul>
+<li><p>Q: I have set an image for a survey under Project properties &gt;&gt; Portal settings but it is not shown in the survey list of my Portal.</p></li>
+<li><p>A: Currently only images that are stored in the project specific media library can be shown in the portal survey list. Images that are stored in the common or questback library can be selected in the portal settings of the survey but are not shown in the portal. We have created a Kanban ticket for that: <a href="https://jira.3uu.de/browse/KANBAN-11054">KANBAN-11054</a></p></li>
+</ul>
+<p></p>
+<h2 id="header-13">Discussion board can not be viewed by panelist</h2>
+<ul>
+<li><p>Q: I have invited a panelist to a discussion board but this panelist can not see it. The panelist already is a member of the specific panel group that has access to the discucssion board.</p></li>
+<li><p>A: Besides the general access permissions that you can set in the settings of a portal, you also can set specific access rights on the content of a portal. Please check the access settings for the discussion board on the content tab of the portal.</p></li>
+</ul>
+<p></p>
+<h2 id="header-14">How many portal participants are online?</h2>
+<p> Here is how you can check how many portal participants are online<br><br><strong>&lt; EFS 17.4</strong> <br>Please check on slave DB.</p>
+<ul>
+<li><p>i [installation]</p></li>
+<li><p>cd conf</p></li>
+<li><p>echo "SELECT count(*) as num FROM portal_user_online_status WHERE portal_id=[ID] AND DATE_SUB(NOW(), INTERVAL 300 SECOND) &lt; current_at;" | mysql -h [host] -u [user] -p"[password]" -P [port] [database]</p></li>
+<li><p>Output: num 238</p></li>
+</ul>
+<p><br><strong>&gt;= EFS 17.4</strong> <br>You can add a page module in the Portals cms called statistics</p>
+<ul>
+<li><p>add a new chart</p></li>
+<li><p>Chart type e.g. Column chart</p></li>
+<li><p>Source type = users</p></li>
+<li><p>Content Type e.g. Number of online users with app</p></li>
+</ul>
+<p></p>

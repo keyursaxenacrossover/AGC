@@ -1,0 +1,160 @@
+Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79MXA3FEJ6TB3F9SZGB"> </h4>
+<h3 id="header-252">PATCH /survey/participants/{sampleId}</h3>
+<p>Sends mails to participants in a sample. Request is not available for anonymous surveys. With dis-codes you can decide which participants will receive the mail, e.g. when sending a reminder email, use codes 11 and 12 (and 10 in GDPR enabled projects).</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "uids": [
+    1
+  ],
+  "mailTemplateId": 1234,
+  "dispcodes": [
+    "11", "12"
+  ],
+  "sendOptions": {
+    "sendDate": "2020-07-02T12:53:50+00:00",
+    "useRecipientTimezone": true
+  }
+}</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>sampleId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>id of sample <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79MYTWQF2YTSGQH607Y"> </h4>
+<h3 id="header-253">PUT /survey/participants/{surveyId}</h3>
+<p>Sends mails to every participiant in a survey. Please note This service will fail on anonymous surveys and sending of SMS is not supported by this service.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+    "mailTemplate": {
+        "subject": "Example",
+        "textContent": "Example",
+        "htmlContent": "Example",
+        "charset": "UTF-8",
+        "replyTo": "Example",
+        "returnPath": "Example",
+        "priority": "NO_PRIORITY",
+        "sensitivity": "NORMAL",
+        "notify": "NO_NOTIFICATION",
+        "toRealname": true,
+        "from": "Example",
+        "sms_from": "Example",
+        "sms_content": "Example",
+        "cc": "Example",
+        "bcc": "Example",
+        "fromRealname": "Example"
+    },
+    "uids": [
+        1
+    ],
+    "dispcodes": [
+        "10"
+    ],
+    "sendOptions": {
+        "sendDate": "2020-07-02T12:53:50+00:00",
+        "useRecipientTimezone": true
+    }
+}</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>surveyId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>Survey id <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="header-255">Samples</h2>
+<div class="expand-macro">
+<h4 id="h_01J441N79M42TXDY79GYBFNT30"> </h4>
+<h3 id="header-257">GET /survey/samples/</h3>
+<p>return the list of samples for all surveys</p>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[
+    {
+        "sampleId": 2287,
+        "title": "(internal)",
+        "desc": "",
+        "cdate": "2020-02-13T10:11:11+00:00",
+        "isInternal": true,
+        "surveyId": 2286
+    }, ...
+]</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79M988AQ80T4P6CTJFA"> </h4>
+<h3 id="header-258">GET /survey/samples/survey/{surveyId}</h3>
+<p>return the

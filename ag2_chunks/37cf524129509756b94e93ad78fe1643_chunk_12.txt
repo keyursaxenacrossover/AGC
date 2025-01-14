@@ -1,0 +1,115 @@
+ style="height: 73px;">
+<p>Website and language version to which the bonus belongs. Cannot be changed subsequently.</p>
+</td>
+</tr>
+<tr style="height: 72px;">
+<td style="height: 72px;">Bonus category</td>
+<td style="height: 72px;"> </td>
+<td style="height: 72px;">
+<p>Bonus categories allow you to classify bonuses, both in the admin area and on the panel page, according to self-defined criteria.</p>
+</td>
+</tr>
+<tr style="height: 53px;">
+<td style="height: 53px;">Title (internal)</td>
+<td style="height: 53px;"> </td>
+<td style="height: 53px;">
+<p>The internal bonus title. For orientation purposes only, it will not be seen by panelists.</p>
+</td>
+</tr>
+<tr style="height: 44px;">
+<td style="height: 44px;">Title (on website)</td>
+<td style="height: 44px;">{$s.item_title}</td>
+<td style="height: 44px;">The title is displayed on the panel page.</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px;">Description</td>
+<td style="height: 22px;">
+<p>{$s.item_description}</p>
+</td>
+<td style="height: 22px;">Description of the bonus.</td>
+</tr>
+<tr style="height: 44px;">
+<td style="height: 44px;">Description 2</td>
+<td style="height: 44px;">
+<p>{$s.item_description2}</p>
+</td>
+<td style="height: 44px;">Optional, additional description text.</td>
+</tr>
+<tr style="height: 78px;">
+<td style="height: 78px;">Image</td>
+<td style="height: 78px;"> </td>
+<td style="height: 78px;">
+<p>Optionally, you can use an image, such as a photo of a gift. To do so, insert an image from the media library using HTML.</p>
+</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px;">Image 2</td>
+<td style="height: 22px;"> </td>
+<td style="height: 22px;">Further optional image field.</td>
+</tr>
+<tr style="height: 109px;">
+<td style="height: 109px;">Sort Order</td>
+<td style="height: 109px;"> </td>
+<td style="height: 109px;">
+<p>This field controls the order in which bonuses are listed on the panel page. If the display is limited to one bonus category, bonuses from this category will be displayed according to the order defined.</p>
+</td>
+</tr>
+<tr style="height: 67px;">
+<td style="height: 67px;">Manufacturer</td>
+<td style="height: 67px;"> </td>
+<td style="height: 67px;">
+<p>Can be used to display the bonus manufacturer on the panel page.</p>
+</td>
+</tr>
+<tr style="height: 138px;">
+<td style="height: 138px;">
+<p>Final description - for confirmation page after bonus points have been redeemed.</p>
+</td>
+<td style="height: 138px;">{final_desc}</td>
+<td style="height: 138px;">
+<p>Displayed on the confirmation page when bonus points have been redeemed.</p>
+</td>
+</tr>
+<tr style="height: 69px;">
+<td style="height: 69px;">Final description 2</td>
+<td style="height: 69px;">{final_desc2}</td>
+<td style="height: 69px;">
+<p>Can be additionally displayed on the confirmation page when bonus points have been redeemed.</p>
+</td>
+</tr>
+<tr style="height: 44px;">
+<td style="height: 44px;">Type of payment</td>
+<td style="height: 44px;"> </td>
+<td style="height: 44px;">See the following chapter.</td>
+</tr>
+<tr style="height: 128px;">
+<td style="height: 128px;">Status</td>
+<td style="height: 128px;"> </td>
+<td style="height: 128px;">
+<p>Available options are:</p>
+<ul>
+<li>Inactive</li>
+<li>Active</li>
+</ul>
+<p>Only active bonuses will be displayed.</p>
+</td>
+</tr>
+<tr style="height: 138px;">
+<td style="height: 138px;">
+<p>Minimum/maximum value of payment</p>
+</td>
+<td style="height: 138px;"> </td>
+<td style="height: 138px;">
+<p>If you wish to let the panelists enter the amount themselves in a text field, you can use these thresholds to define the range of the amount. At the same time, defining a minimum value of payment prevents panelists with fewer points from redeeming the respective bonus.</p>
+</td>
+</tr>
+<tr style="height: 42px;">
+<td style="height: 42px;">Limits of payment</td>
+<td style="height: 42px;"> </td>
+<td style="height: 42px;">
+<p>Predefined payment amounts that can be determined by the panel administrator in advance.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify">The following figures illustrate the position of text elements in the standard panel which were inserted

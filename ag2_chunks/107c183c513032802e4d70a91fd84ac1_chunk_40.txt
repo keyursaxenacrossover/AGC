@@ -1,0 +1,41 @@
+The CLF configuration overview of your Employee project is displayed.</p>
+<p class="wysiwyg-text-align-justify">For access to the CLF configuration overview, the prior activation of the add-on module CLF is required</p>
+<h2 id="accessing-org-processor-data-in-condition-editor" class="wysiwyg-text-align-justify"><strong>Accessing Org Processor Data in Condition Editor</strong></h2>
+<p class="wysiwyg-text-align-justify">You can access Org Processor data when defining filters, hiding conditions, etc. in the condition editor. The following Org Processor data are available:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>org_code_structureID (Primary Structure.OrgCodePreAllocation): Unit in the named structure to which the participants have been allocated. E.g. org_code_1 is the unit of the participants in the primary view (structure ID = 1).</p>
+</li>
+<li>
+<p>org_allocation_structureID (Primary Structure.OrgCodeSelfAllocation): Unit in the named structure to which the participants have allocated themselves. E.g. org_allocation_1 is the self-allocated unit of the participants in the primary view (structure ID = 1.</p>
+</li>
+<li>
+<p>org_function_structureID (Primary Structure.OrgFunction): Function of a participant in the named structure. E.g. org_function_1 is the function of the participant in the primary structure (Struktur-ID = 1).</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The following operators have been created specifically for filtering on Org Processor data:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>in: The variable selected must contain the unit named in the “code” field.</p>
+</li>
+<li>
+<p>in or below: The variable selected must contain either the variable named in the “code” field or one of its subunits.</p>
+</li>
+<li>
+<p>in branch: The variable selected must contain either the unit named in the “code” field or any other unit from the complete branch (from the root unit down to the lowest level). This operator is usually not used for routing purposes in the questionnaire but for report definitions.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Releasing units for filtering</strong></p>
+<p class="wysiwyg-text-align-justify">Only project management can release units for filtering. Users can not access this function.</p>
+<p class="wysiwyg-text-align-justify">To display the Org Processor data described above in the code drop-down list in the condition editor, you have to explicitly release the unit(s) required for filtering. Otherwise, you have to enter the data manually, you cannot select them from the list.</p>
+<p class="wysiwyg-text-align-justify">This limitation has been introduced for two reasons. First, it helps to improve the performance: querying all possible units in complex structures requires considerable server resources. Second, by releasing only units that are actually required, you can improve transparency in the condition editor.</p>
+<p class="wysiwyg-text-align-justify">The actions “Release units for filtering” and “Revoke filter release for units” on the <strong>Organizational Structure</strong> tab are used to release units. If a unit has been released, it is marked by a white F icon in the organizational structure.</p>
+<p class="wysiwyg-text-align-justify">If a unit has been released and you select one of the variables named above in the condition editor, you can access the units as usual via the <strong>Binoculars</strong> icon. Units used in a filter definition are marked by a lilac <strong>F</strong> icon in the organizational structure.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863" class="wysiwyg-text-align-justify">FAQ</h1>
+<h3 id="faq_1" class="wysiwyg-text-align-justify">How many users can the system handle?</h3>
+<p class="wysiwyg-text-align-justify">The system is designed for up to 10,000 users. With higher numbers, you might experience performance issues depending on the circumstances.</p>
+<h3 id="faq_2" class="wysiwyg-text-align-justify">Can users have multiple roles within a unit?</h3>
+<p class="wysiwyg-text-align-justify">No, a user cannot assume multiple roles within one unit. Additionally, a user cannot have the same role twice within a branch of the structure.</p>
+<h3 id="faq_3" class="wysiwyg-text-align-justify">How often are return data updated?</h3>
+<p class="wysiwyg-text-align-justify">The data in the return overview are updated every five minutes. You can use the "Update participant numbers" icon to trigger a manual update if necessary.</p>

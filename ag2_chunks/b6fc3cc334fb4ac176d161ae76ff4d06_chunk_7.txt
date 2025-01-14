@@ -1,0 +1,28 @@
+1"><pre><span style="color: rgb(0,128,0);">portal.mail.parser.votingPageLinkHandler.prepareReplacementsAfter</span></pre></td>
+<td colspan="1">modules/portal/components/mail/parser/handler/votingpagelink.inc.php:prepareReplacements()</td>
+<td colspan="1"><pre><span>Portal\Events\Mail\Parser\VotingPageLinkHandler\</span><span>PrepareReplacementsAfter([<br></span><span>    </span><span style="color: rgb(0,128,0);">'component' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$this</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'replacements' </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$replacements</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'additional_recipient_info' </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$additionalRecipientInfo<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">portal.mail.parser.portalAccessUrlHandler.prepareReplacementsAfter</span></pre></td>
+<td colspan="1">modules/portal/components/mail/parser/handler/portalaccessurl.inc.php:prepareReplacements()</td>
+<td colspan="1"><pre><span>Portal\Events\Mail\Parser\PortalAccessUrlHandler\</span><span>PrepareReplacementsAfter([<br></span><span>    </span><span style="color: rgb(0,128,0);">'component' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$this</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'replacements' </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$replacements</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'additional_recipient_info' </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$additionalRecipientInfo<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">portal.controllers.api.cms.portals.sendData.before</span></pre></td>
+<td colspan="1">modules/portal/app/controllers/Api/Cms/V0m1/PortalsController.php:getList()</td>
+<td colspan="1"><pre><span>Portal\Events\Controllers\Api\Cms\Portals\SendData\</span><span>Before([<br></span><span>    </span><span style="color: rgb(0,128,0);">'event_data' </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$data<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">portal.controllers.api.client.password.change.save.user.before</span></pre></td>
+<td colspan="1">modules/portal/app/controllers/Api/Client/V0m1/PasswordController.php:postChangeAction()</td>
+<td colspan="1"><pre><span>Portal\Events\Controllers\Api\Client\Password\Change\Save\User\Before</span><span>([<br></span><span>    </span><span style="color: rgb(0,128,0);">'user' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$user<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">portals.cms.import.after</span></pre></td>
+<td colspan="1">modules/portal/components/import/portal/service.inc.php:handleImport()</td>
+<td colspan="1"><pre><span>Portal\Events\Portals\Cms\Import\After</span><span>([<br></span><span>    </span><span style="color: rgb(0,128,0);">'portal' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$portal<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">efs.session.insert.after</span></pre></td>
+<td colspan="1">modules/efs/components/session.inc.php:write()</td>
+<td colspan="1"><pre><span>Efs\Events\Session\Insert\After</span><span>([<br></span><span>    </span><span style="color: rgb(0,128,0);">'result' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$result</

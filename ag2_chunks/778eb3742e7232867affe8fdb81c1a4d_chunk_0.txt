@@ -1,0 +1,41 @@
+<h1 id="h_01HTM51P6CZKNZ4P66Z7NHYQRR">Overview</h1>
+<p>As an agent who supports DXI, you will need to ensure that you have access to the following Common and product Specific resources and tools listed below. Check each of the items below and ensure that you have access once you have completed training and are ready to start supporting the product.</p>
+<h1 id="h_01HTM51P6C9G3X9G005GRGRS16">Access List</h1>
+<table style="width: 100%; height: 2501px;" border="1px">
+<tbody>
+<tr style="height: 22px;">
+<th class="wysiwyg-text-align-center" style="background-color: #c9add1; width: 20%; padding: 5px; height: 22px;"><strong>Access</strong></th>
+<th class="wysiwyg-text-align-center" style="background-color: #c9add1; padding: 5px; width: 79.8571%; height: 22px;"><strong>How to Get Access</strong></th>
+</tr>
+<tr style="height: 384px;">
+<td class="wysiwyg-text-align-center" style="width: 20%; padding: 5px; height: 384px;">
+<p><strong>PasswordState</strong></p>
+</td>
+<td class="wysiwyg-indent1" style="width: 79.8571%; padding: 5px; height: 384px;">
+<p>When certified in Tempo, you should be able to see a <strong>Discover XI</strong> entry in Passwordstate.</p>
+<p class="undefined"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20434985068306"></p>
+<p class="undefined">If you are unable to see the above in PasswordState, request access using this <strong><a href="https://supportportal-df.atlassian.net/servicedesk/customer/portal/6/group/86/create/490" target="_blank" rel="noopener noreferrer">dedicated ITOps form</a></strong> and select the product from the drop-down:</p>
+<p class="undefined"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20434969275794" width="252" height="195"></p>
+</td>
+</tr>
+<tr style="height: 370px;">
+<td class="wysiwyg-text-align-center" style="width: 20%; padding: 5px; height: 370px;"><strong>Customer Instance Access</strong></td>
+<td class="wysiwyg-indent1" style="width: 79.8571%; padding: 5px; height: 370px;">
+<p>Two logins will be available for troubleshooting in customer instances:</p>
+<ol>
+<li>A <strong>root</strong> user (god-like admin) - which can be found in PasswordState</li>
+<li>
+<strong>Your own user</strong> - access via your user will be done on a per-instance basis by an automated script once you go over the training.</li>
+</ol>
+<p>The automated script will add an account in all EFS instances for you, <span class="wysiwyg-underline">so don't panic if you receive 500 emails</span> with the onboarding; you can ignore/delete them, and whenever you need to access a customer instance, you can simply <strong>reset your password</strong> and you're in!<br><br>To <strong>reset your password, </strong>access the EFS installation rather than the panel website. EFS installation is usually (it might be different in some cases) the &lt;url&gt;/www, for example: If the installation URL is <a href="https://gg9936.customervoice360.com/" target="_blank" rel="noopener nofollow noreferrer">https://gg9936.customervoice360.com/</a> , the URL to be used for reset password would <a href="https://gg9936.customervoice360.com/" target="_blank" rel="noopener nofollow noreferrer">https://gg9936.customervoice360.com/www</a></p>
+<p><br>The EFS installation would not ask for the email address rather your username.</p>
+<p>Your <strong><em>username</em></strong> is your <strong><em>surname.<br><br></em></strong></p>
+<p><strong><a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21344474790418-Create-EFS-Accounts-via-Shell-Script">Create EFS Accounts via Shell Script</a></strong></p>
+</td>
+</tr>
+<tr style="height: 81px;">
+<td class="wysiwyg-text-align-center" style="width: 20%; padding: 5px; height: 81px;"><strong>Shared Confluence/JIRA user</strong></td>
+<td style="width: 79.8571%; padding: 5px; height: 81px;">
+<p>This is a temp user for accessing the old Confluence/JIRA Tivian instances. </p>
+<p><a href="mailto:tivian-support@trilogy.com">tivian-support@trilogy.com</a> is the user, and the password for it can be found in PasswordState.</p>
+<p>The above user is linked to a Google group to which all of you have access, for password resets and other comms

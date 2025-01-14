@@ -1,0 +1,38 @@
+;&amp;1 | awk '{print "[onecron:jx3065_customervoice360_com] " $0}' &gt; /proc/1/fd/1</code><br>
+<ul>
+<li>Ensure to have a carriage return at the end of the lines.</li>
+<li>This is how the cron file would look like after having added the above line:<br><img src="https://central-supportdesk.zendesk.com/attachments/token/MlHj3uX03zngfL9sD6EM28ks7/?name=image.png" width="532" height="199">
+</li>
+</ul>
+</li>
+</ol>
+<h1 id="h_01J84RVY92XK5PQHDXRDXAYBDV">Activating Existing Cronjobs</h1>
+<p>The process is identical to the one above (the first 6 steps), <strong>Step 7</strong> will be different:</p>
+<ul>
+<li>You only need to uncomment the cronjobs that you want to activate by removing the <strong>#</strong> in front of it and save the file.<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21464822861970" width="357" height="114">
+</li>
+</ul>
+<h1 id="h_01J73XYZCM260XM2WP6ZCB6QRM">Summary</h1>
+<p>This article provides a step-by-step guide on how to add custom cronjobs to DXI instances in a customer's setup. The process involves accessing the Rancher platform, navigating to the appropriate directories, and adding the necessary lines of code to the crontabs for each instance.</p>
+<h2 id="h_01J73XYZCMTEHHC88SVF01S69H">FAQ</h2>
+<ol>
+<li>
+<strong>What is an onecron job?</strong><br>An onecron job is a type of task scheduled to run automatically at specific intervals on a server.</li>
+<li>
+<strong>What is a crontab?</strong><br>A crontab is a simple text file that contains a list of commands meant to be run at specified times. It is edited using the command line editor 'vi'.</li>
+<li>
+<strong>What does the 'carriage return at the end of the lines' mean?</strong><br>This refers to pressing the 'Enter' key after the last line of code, which creates a new line at the end of the file. This is often necessary for proper execution of scripts and commands.</li>
+</ol>esk.com/hc/article_attachments/21464822861970" width="357" height="114">
+</li>
+</ul>
+<h1 id="h_01J73XYZCM260XM2WP6ZCB6QRM">Summary</h1>
+<p>This article provides a step-by-step guide on how to add custom cronjobs to DXI instances in a customer's setup. The process involves accessing the Rancher platform, navigating to the appropriate directories, and adding the necessary lines of code to the crontabs for each instance.</p>
+<h2 id="h_01J73XYZCMTEHHC88SVF01S69H">FAQ</h2>
+<ol>
+<li>
+<strong>What is an onecron job?</strong><br>An onecron job is a type of task scheduled to run automatically at specific intervals on a server.</li>
+<li>
+<strong>What is a crontab?</strong><br>A crontab is a simple text file that contains a list of commands meant to be run at specified times. It is edited using the command line editor 'vi'.</li>
+<li>
+<strong>What does the 'carriage return at the end of the lines' mean?</strong><br>This refers to pressing the 'Enter' key after the last line of code, which creates a new line at the end of the file. This is often necessary for proper execution of scripts and commands.</li>
+</ol>

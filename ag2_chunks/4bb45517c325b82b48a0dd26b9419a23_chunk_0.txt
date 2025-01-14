@@ -1,0 +1,72 @@
+<h1 id="h_01JAMY3QTZHHC3R15CVH1BZEW8">Overview</h1>
+<p>This KB is designed to help agents troubleshoot issues related to survey replies, specifically tracing them from the user’s submission to AWS DB logs, MariaDB, and Grafana PHP logs. This guide will also assist in troubleshooting scenarios where survey-related updates, such as master data updates, fail to reflect correctly in the system.</p>
+<p>Key troubleshooting areas include:</p>
+<ol>
+<li>Use GUI or MariaDB to detect the exact timings of requests when a Specific User Filled a specific Survey</li>
+<li>Locating survey replies in the database (MariaDB)</li>
+<li>Reviewing AWS DB logs to investigate issues with connection IDs and master data transfers</li>
+<li>Examining Grafana PHP logs for errors during survey completion</li>
+<li>Understanding how the system processes master data allocations from surveys</li>
+</ol>
+<hr>
+<h1 id="01JAMY6CPVCVPQE07E9PSFRSD5">Solution</h1>
+<h3 id="h_01JAMY3QTZFTZF2NVFF0A9NP3Z"><strong>1. How to Find When a Specific User Filled a Survey Through the GUI</strong></h3>
+<h4 id="h_01JAN33CA9RSM2WG03F3QMDNEQ"><strong>Panel Surveys (PA)</strong></h4>
+<ul>
+<li>
+<strong>Path</strong>: <code>Survey menu &gt;&gt; Statistics &gt;&gt; Detail view</code> (search for the specific panelist)<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/22091322769554">
+</li>
+<li>
+<strong>Alternate Path</strong>: <code>People &gt;&gt; Panelist administration &gt;&gt; Detail view &gt;&gt; Surveys</code>
+</li>
+<li>
+<strong>Master Data Allocation: </strong>check <code>Survey Menu &gt;&gt; Master Data Allocation</code> for Survey to Master Data mapping</li>
+</ul>
+<p>Look for:</p>
+<ul>
+<li>
+<strong>Date of last access</strong>: Shows when the user last accessed the survey.</li>
+<li>
+<strong>Disposition code</strong>: Indicates if the survey was completed, abandoned, etc.</li>
+<li>If the <strong>Date of last access</strong> is not visible, click the "View" button and select it.</li>
+</ul>
+<h4 id="h_01JAN33CAA8GMNWAB5F44AKNZG"><strong>Personalized Surveys (PE/ES/MSF)</strong></h4>
+<ul>
+<li>
+<strong>Path</strong>: <code>Survey menu &gt;&gt; Statistics &gt;&gt; Detail view</code> (search for the specific participant)</li>
+<li>This section shows the user’s survey activity, including <strong>Date of last access</strong> and <strong>Disposition code</strong>.</li>
+</ul>
+<h4 id="h_01JAN33CAAQMERRNAJ22E505FE"><strong>Anonymous Surveys (AS)</strong></h4>
+<ul>
+<li>
+<strong>Path</strong>: <code>Survey menu &gt;&gt; Statistics &gt;&gt; Detail view</code> (search for the specific LFDN)</li>
+<li>For anonymous participants, search by <strong>LFDN</strong> (Participant #) to find survey completion details. </li>
+</ul>
+<p>To check <strong>all the page requests</strong> related to a survey by a user, please check the table <strong>ospe_time_log </strong>as mentioned below.</p>
+<h3 id="h_01JAN3FY97YSFG41E7FB070Q2V"><strong>2. Finding Survey Replies in MariaDB</strong></h3>
+<p>Survey replies can be traced using various tables depending on the <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20370699710866-Projects#project-types">survey type</a> (PA, PE, ES, MSF). To check if a user completed a specific survey, follow these steps:</p>
+<h4 id="h_01JAMY3QTZJW2KNRA708A1AQR8">
+<strong>Tables to Query</strong>:</h4>
+<ul>
+<li>
+<p><strong>PA (Panel Attendees)</strong>:</p>
+<ul>
+<li>
+<code>sample_data</code>: Contains metadata about survey participation (including <code>date_of_last_access</code>).</li>
+<li>
+<code>panelists</code>: Contains user-specific information.</li>
+<li>
+<code>panel_att</code>: contains additional information you can see in the detail view of panelists like pseudonym, panelist_code, credit points etc.)</li>
+<li>
+<code>survey_{{PID}}</code>: Holds survey variables and answers provided by the participants.</li>
+<li>
+<code>md_data</code>: Stores master data variables transferred from surveys. <br><br>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>PE/MSF/ES (<a href="#h_01JAMY3QTZY2V3E78R7QGJR831">Personalized</a> Surveys)</strong>:</p>
+<ul>
+<li>
+<code>sample_data</code>: Contains metadata about survey participations i.e. date of last access.</li>
+<li

@@ -1,0 +1,54 @@
+ migrate password as they arise</p></li>
+</ol><p>These ideas are depicted here:</p><p><a href="https://lucid.app/lucidchart/e73fec1a-434a-4f13-bc2d-069338808bf9/edit?from_docslist=true&amp;invitationId=inv_9139740a-bfdc-4a9f-8b39-076dbfd2d536&amp;page=qluAsnbQ95mN#">https://lucid.app/lucidchart/e73fec1a-434a-4f13-bc2d-069338808bf9/edit?from_docslist=true&amp;invitationId=inv_9139740a-bfdc-4a9f-8b39-076dbfd2d536&amp;page=qluAsnbQ95mN#</a></p><h2 id="header-13">What does the client have to do?</h2><p><strong>Provide a test user.</strong></p><p></p><h3 id="header-15">OIDC</h3><p><strong>Azure AD (tested)</strong></p><p>Change the existing App Registration to accept more Redirect URIs.</p><p>The old Redirect URIs should stay the same and have to be kept for now.</p><p>Add new Redirect URIs for the new Okta account:</p><ul>
+<li><p><a href="https://tivian.okta.com/oauth2/v1/authorize/callback">https://tivian.okta.com/oauth2/v1/authorize/callback</a> (general Okta domain)</p></li>
+<li><p><a href="https://access.tivian.com/oauth2/v1/authorize/callback">https://access.tivian.com/oauth2/v1/authorize/callback</a> - (tivian okta domain - <u>this one is more important - the other one is a fallback</u>)</p></li>
+</ul><p></p><p><strong>Other (not tested)</strong></p><p>Do the same as above. If not possible create a second IdP connection to the new Okta account.</p><p></p><h3 id="header-16">SAML</h3><p>Setup a new connection for the new client.</p><p>Keep both connections for the migration phase - the one for the new and the old Okta account.</p><p></p><h3 id="header-17">Customer contacts (second contact → Cc)</h3><table data-layout="full-width" ac:local-id="10bf24ec-ffd9-48d3-9351-cfda8ae10be8">
+<colgroup>
+<col style="width: 98.0px;">
+<col style="width: 233.0px;">
+<col style="width: 113.0px;">
+<col style="width: 67.0px;">
+<col style="width: 67.0px;">
+<col style="width: 67.0px;">
+<col style="width: 67.0px;">
+<col style="width: 83.0px;">
+<col style="width: 85.0px;">
+<col style="width: 78.0px;">
+<col style="width: 80.0px;">
+<col style="width: 81.0px;">
+<col style="width: 212.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p><strong>customer</strong></p></th>
+<th><p><strong>contact customer</strong></p></th>
+<th><p><strong>accountant</strong></p></th>
+<th><p><strong>language</strong></p></th>
+<th><p><strong>IdP</strong></p></th>
+<th><p><strong>protocol</strong></p></th>
+<th><p><strong>user</strong></p></th>
+<th><p><strong>federated users</strong></p></th>
+<th><p><strong>active users</strong></p></th>
+<th><p><strong>pending users</strong></p></th>
+<th><p><strong>user in another state</strong></p></th>
+<th><p><strong>done</strong></p></th>
+<th><p><strong>reaction</strong></p></th>
+</tr>
+<tr>
+<td><p>Doka GmbH</p></td>
+<td><p><a href="mailto:rudolf.dornik@doka.com">rudolf.dornik@doka.com</a>, <a href="mailto:heinz.plotzki@doka.com">heinz.plotzki@doka.com</a></p></td>
+<td><p>Stefan Max</p></td>
+<td><p>german</p></td>
+<td><p>Azure AD</p></td>
+<td><p>OIDC</p></td>
+<td><p>59</p></td>
+<td><p>58</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>5</p></td>
+<td><p>x</p></td>
+<td><p>x</p></td>
+</tr>
+<tr>
+<td><p>Hotelbeds</p></td>
+<td><p><a href="mailto:noam.brosh@hotelbeds.com">noam.brosh@hotelbeds.com</a>, <a href="mailto:ltulleken@hotelbeds.com">

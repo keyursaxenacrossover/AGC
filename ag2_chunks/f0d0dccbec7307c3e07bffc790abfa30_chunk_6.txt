@@ -1,0 +1,128 @@
+strong></em></p>
+<pre><code class="language-json">{
+  "mailTemplateTypes": [
+    "default_mail"
+  ]
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[
+  {
+    "meta": {
+      "description": "Example message",
+      "type": "default_mail",
+      "site_id": "7",
+      "active": true
+    },
+    "content": {
+      "from": "example@domain.tld",
+      "subject": "Example message",
+      "format": "TEXT",
+      "text_content": "Dear #u_firstname#, \r\n\r\nyou have a new message.",
+      "attachments": false
+    },
+    "options": {
+      "charset": "ISO-8859-1",
+      "reply_to": "example@domain.tld",
+      "return_path": "example@domain.tld",
+      "to_realname": false,
+      "send_copy": false,
+      "priority": "NO_PRIORITY",
+      "sensitivity": "NORMAL",
+      "notify": "NO_NOTIFICATION"
+    },
+    "id": 1234
+  }
+]</code></pre>
+<p> </p>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79D1FHW4JP7M6RQBVYF"> </h4>
+<h3 id="header-20">POST /efs/mailtemplates/listWithAttachments</h3>
+<p>Get a list of mailtemplates. You can restrict the list of templates, by providing a POST body with the list of types.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "mailTemplateTypes": [
+    "default_mail"
+  ]
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[
+  {
+    "meta": {
+      "description": "Example message",
+      "type": "default_mail",
+      "site_id": "7",
+      "active": true
+    },
+    "content": {
+      "from": "example@domain.tld",
+      "subject": "Example message",
+      "format": "TEXT",
+      "text_content": "Dear #u_firstname#, \r\n\r\nyou have a new message.",
+      "attachments": false
+    },
+    "attachments": [
+    ]
+    "options": {
+      "charset": "ISO-8859-1",
+      "reply_to": "example@domain.tld",
+      "return_path": "example@domain.tld",
+      "to_realname": false,
+      "send_copy": false,
+      "priority": "NO_PRIORITY",
+      "sensitivity": "NORMAL",
+      "notify": "NO_NOTIFICATION"
+    },
+    "id": 1234
+  }
+]</code></pre>
+<p> </p>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79D5AK98XF0R1BE8PMV"> </h4>
+<h3 id="header-21">POST /efs/mailtemplates/send</h3>
+<p>Send a preview email. Similar to the mail template preview send functionality in the EFS UI.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+    "id": 353,
+    "recieverMails":"example@example.tld",
+    "localeString":"de_DE",
+    "placeholders": [
+        {"placeholderName":"#test#", "placeholderValue":"Test"}
+    ]
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">{
+    "success": true
+}</code></pre>
+<p> </p>
+</div>
+<p> </p>
+<h2 id="header-23">Management of EFS organisations</h2>
+<div class="expand-macro">
+<h4 id="h_01J441N79D57VFDAH0CR2W2B3D"> </h4>
+<h3 id="header-25">DELETE /efs/organizations/</h3>
+<p>Deletes an EFS admin organisation.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "adminOrgIdentifierType": "id",
+  "adminOrgIdentifierValue": "1234"
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">true</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79DC7W5Q5BD7686CKYR"> </h4>
+<h3 id="header-26">PATCH /efs/organizations/</h3>
+<p>Sets an organization's value. See <code>POST /efs/organizations/</code> for possible <em>adminOrgField</em> names.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "adminOrgIdentifierType": "id",
+  "adminOrgIdentifierValue": "1234",
+  "adminOrgField": "customer_no_common",
+  "adminOrgValue": "KD1234"
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">true</code></pre>
+</div>
+<div class="expand-m

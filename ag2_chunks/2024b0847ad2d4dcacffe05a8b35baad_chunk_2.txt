@@ -1,0 +1,42 @@
+ Sync of Portal users (panelists) to Okta</p></li>
+</ul></ac:layout-cell></ac:layout-section><ac:layout-section ac:breakout-mode="default" ac:type="fixed-width"><ac:layout-cell><p></p>
+<p><strong>Solution 2a: Do Activation Later</strong></p>
+<p>Same as Solution 2, but do not activate users directly when creating, but at a later point in time after the activation of Questback Access.</p>
+<p>Timeline: ---(Import Users)----------------(Activate Questback Access)--(Activate Users)--------------&gt;</p></ac:layout-cell></ac:layout-section><ac:layout-section ac:breakout-mode="default" ac:type="three_equal"><ac:layout-cell><p><strong>Pro</strong></p>
+<ul><li><p>More control about when the users will receive the activation mail</p></li></ul></ac:layout-cell><ac:layout-cell><p><strong>Contra</strong></p>
+<ul><li><p><strong>Activation will also be done via API and suffer from the same API limits</strong></p></li></ul></ac:layout-cell><ac:layout-cell><p><strong>Solves</strong></p>
+<ul>
+<li><p>Initial Sync of EFS admin users to Okta</p></li>
+<li><p>Initial Sync of Portal users (panelists) to Okta</p></li>
+</ul></ac:layout-cell></ac:layout-section><ac:layout-section ac:breakout-mode="default" ac:type="fixed-width"><ac:layout-cell><p></p>
+<p><strong>Solution 3: On-Demand user import</strong></p>
+<p>Do not import all users before the activation of Questback Access but import them once they try to sign in to an installation.</p>
+<p>This will require some implementation which is “intercepting” the login on the login page, triggering an EFS installation to do the API import for the one user and then the user would receive an email to activate his account to sign in.</p></ac:layout-cell></ac:layout-section><ac:layout-section ac:breakout-mode="default" ac:type="three_equal"><ac:layout-cell><p><strong>Pro</strong></p>
+<ul>
+<li><p>No “dead users” in Okta (Panel Website Users)</p></li>
+<li><p>No timing issues with the activation mail</p></li>
+</ul></ac:layout-cell><ac:layout-cell><p><strong>Contra</strong></p>
+<ul>
+<li><p>Not a supported flow by Okta/OpenID Connect (Custom Integration)</p></li>
+<li><p>Big effort compared to the other solutions</p></li>
+</ul></ac:layout-cell><ac:layout-cell><p><strong>Solves</strong></p>
+<ul>
+<li><p>Initial Sync of EFS admin users to Okta</p></li>
+<li><p>Initial Sync of Portal users (panelists) to Okta</p></li>
+<li><p>Import via CSV for EFS Admin users</p></li>
+<li><p>Import via CSV for Portal users</p></li>
+</ul></ac:layout-cell></ac:layout-section></ac:layout>cepting” the login on the login page, triggering an EFS installation to do the API import for the one user and then the user would receive an email to activate his account to sign in.</p></ac:layout-cell></ac:layout-section><ac:layout-section ac:breakout-mode="default" ac:type="three_equal"><ac:layout-cell><p><strong>Pro</strong></p>
+<ul>
+<li><p>No “dead users” in Okta (Panel Website Users)</p></li>
+<li><p>No timing issues with the activation mail</p></li>
+</ul></ac:layout-cell><ac:layout-cell><p><strong>Contra</strong></p>
+<ul>
+<li><p>Not a supported flow by Okta/OpenID Connect (Custom Integration)</p></li>
+<li><p>Big effort compared to the other solutions</p></li>
+</ul></ac:layout-cell><ac:layout-cell><p><strong>Solves</strong></p>
+<ul>
+<li><p>Initial Sync of EFS admin users to Okta</p></li>
+<li><p>Initial Sync of Portal users (panelists) to Okta</p></li>
+<li><p>Import via CSV for EFS Admin users</p></li>
+<li><p>Import via CSV for Portal users</p></li>
+</ul></ac:layout-cell></ac:layout-section></ac:layout>

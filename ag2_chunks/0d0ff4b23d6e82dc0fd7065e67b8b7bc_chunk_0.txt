@@ -1,0 +1,71 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K" class="wysiwyg-text-align-justify">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article covers the process of creating and configuring results in EFS Reporting+. It includes information on recoding, configuring tables, creating charts, handling multilingual questionnaires, and generating reports.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">EFS Reporting+ offers various tools and features for analyzing survey results, creating visual representations, and generating comprehensive reports. This guide will walk you through the key aspects of working with results in the platform.</p>
+<ul class="wysiwyg-text-align-justify">
+<li><a href="#overview-of-recode-configuration">Overview of recode configuration</a></li>
+<li><a href="#configuring-tables">Configuring tables</a></li>
+<li><a href="#creating-charts">Creating charts</a></li>
+<li><a href="#creating-reports-for-multilingual-questionnaires">Creating reports for multilingual questionnaires</a></li>
+<li><a href="#creating-and-distributing-reports">Creating and distributing reports</a></li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify">Recoding allows you to compact your survey results or to combine various individual results.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>In <em>EFS Reporting +</em>, not only single response questions can be represented in recoding variables, but also multiple response situations.</p>
+</li>
+<li>
+<p>In a survey with e.g. irregular gender distribution, weighting allows to balance the share of the underrepresented gender.</p>
+</li>
+<li>
+<p>The recoding conditions are formulated using the condition editor that you are already familiar with from the questionnaire editor.</p>
+</li>
+<li>
+<p>The recoding results can be displayed directly in the report, integrated in filters and split dimensions, or used in other recodes.</p>
+</li>
+</ul>
+<h2 id="overview-of-recode-configuration" class="wysiwyg-text-align-justify"><strong>Overview of recode configuration</strong></h2>
+<p class="wysiwyg-text-align-justify">The creation of recodes is largely similar to that of filters and split dimensions. All the recodes required for the report are prepared in the sources window.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Click on the <strong>Create recodes</strong> icon in the toolbar. Then select the desired recode type.</p>
+</li>
+<li>
+<p>Define the conditions in the recode editor.</p>
+</li>
+<li>
+<p>If you wish to display recoding results in the report, simply drag the respective recodes to their desired positions in the report.</p>
+</li>
+<li>
+<p>Recoding results often serve as the basis for further recodes, filters, or split dimensions. For this purpose, you can select the recoding variables marked “rec_” for the relevant subsequent recodes, filters, or split dimensions.</p>
+</li>
+</ul>
+<h3 id="defining-recodes" class="wysiwyg-text-align-justify"><strong>Defining recodes</strong></h3>
+<p class="wysiwyg-text-align-justify">As is the case with the split dimensions, there is a separate editor for recodes. You open the editor by clicking on the <strong>Create recodes</strong> icon, or by selecting an existing recode and then clicking on<strong> Edit</strong>.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>To the left you see a list of the already existing categories.</p>
+</li>
+<li>
+<p>Scroll over a category to display its condition and recoding variable.</p>
+</li>
+<li>
+<p>To edit a category, simply click on it: The recoding condition of that category will be opened in the condition editor. In the input field above, you can change the label of the category.</p>
+</li>
+<li>
+<p>Via the toolbar, you can create additional categories, delete superfluous ones, or preview the recoding results.</p>
+</li>
+<li>
+<p>In the “Name” field of the header section, you can change the internal labels of the recodes.</p>
+</li>
+<li>
+<p>You can change the sequence of recoding categories per Drag&amp;Drop.</p>
+</li>
+<li>
+<p>Once you have defined the conditions for all categories, you trigger the recoding process by clicking on <strong>Execute</strong>.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Do not click on <strong>Execute</strong> before all categories have been created and all conditions have been defined!</p>
+<h3 id="recode-types" class="wysiwyg-text-align-justify"><strong>Recode types</strong></h3>
+<p class="wysiwyg-text-align-justify">In <em>EFS Reporting +</em>, you can realize two types of recodes: <strong>Simple recoding</strong> and <strong>Multiple recoding</strong>. <strong>Recoding for use as weighting template</strong> has been added as a third option.

@@ -1,0 +1,31 @@
+blog.chromium.org/2019/10/developers-get-ready-for-new.html" href="https://blog.chromium.org/2019/10/developers-get-ready-for-new.html" data-testid="link-with-safety" data-renderer-mark="true">https://blog.chromium.org/2019/10/developers-get-ready-for-new.html</a></p>
+<p> </p>
+<h2 id="h_01J6EY4CEC6CPV7N89N064K8EH"> </h2>
+<h2 id="header-9">Integrations</h2>
+<h4 id="What-is-an-Identity-Provider-?" data-renderer-start-pos="4"><strong data-renderer-mark="true">What is an Identity Provider ?</strong></h4>
+<p data-renderer-start-pos="36">An Identity Provider is a service which is used to handle authentication for other services. The authentication process is specified by protocols.<br>It is commonly used to achieve Single-Sign-On (SSO) across multiple applications.</p>
+<p data-renderer-start-pos="266">A few common ones are:</p>
+<ul class="ak-ul" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="292"><a class="cc-1rn59kg" title="https://www.okta.com/" href="https://www.okta.com/" data-testid="link-with-safety" data-renderer-mark="true">https://www.okta.com/</a></p>
+</li>
+<li>
+<p data-renderer-start-pos="317"><a class="cc-1rn59kg" title="https://auth0.com/" href="https://auth0.com/" data-testid="link-with-safety" data-renderer-mark="true">https://auth0.com/</a></p>
+</li>
+<li>
+<p data-renderer-start-pos="339">Social Identity Providers (Facebook, Twitter, Google)</p>
+</li>
+</ul>
+<h4 id="How-do-we-integrate-with-Identity-Providers-?" data-renderer-start-pos="396"><strong data-renderer-mark="true">How do we integrate with Identity Providers ?</strong></h4>
+<p data-renderer-start-pos="443">We integrate with customer’s Identity Providers using standardised protocols. </p>
+<p data-renderer-start-pos="569">Also Okta offers documentation on <a class="cc-1rn59kg" title="https://developer.okta.com/docs/concepts/identity-providers" href="https://developer.okta.com/docs/concepts/identity-providers" data-testid="link-with-safety" data-renderer-mark="true">integration with external Identity Providers</a></p>
+<p data-renderer-start-pos="649">For a more detailed description please have a look at OpenID Connect or SAML 2.0 on how they do authentication for apps. This applies because our Identity Provider is an application from the customer’s perspective.</p>
+<h4 id="Which-Identity-Providers-are-supported?" data-renderer-start-pos="865"><strong data-renderer-mark="true">Which Identity Providers are supported?</strong></h4>
+<p data-renderer-start-pos="906">We support Identity Providers which support authentication via the protocol SAML 2.0 or OpenID Connect. They also have to be publicly available (not in a private network).<br>It does not matter if it is a cloud hosted service or an on-premise solution. Due to the fact that every piece of software implements a protocol slightly different, each Identity Provider has to be tested so that we can guarantee that it works.</p>
+<h4 id="Is-the-Identity-Provider-“X”-supported-?" data-renderer-start-pos="1324"><strong data-renderer-mark="true">Is the Identity Provider “X” supported ?</strong></h4>
+<p data-renderer-start-pos="1366">These are the providers which have been tested and where the setup is known.</p>
+<p data-renderer-start-pos="1446">Please have a look at the <span data-inline-card="true" data-card-url="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1067024391"><span class="loader-wrapper"><span aria-expanded="false" aria-haspopup="true" data-testid="hover-card-trigger-wrapper"><a class="css-118vsk3 e26bri0" tabindex="0" role="button" href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1067024391" data-testid="inline-card-resolved-view"><span class="css-1cwva94 e1a3lu074" data-testid="inline-card-icon-and-title"><span class="smart-link-title-wrapper css-0 e1a3lu0710">List of tested Identity Providers</span></span></a></span></span></span>.</p>
+<h4 id="What-to-do-if-the-Identity-Provider-is-not-tested-yet-?" data-renderer-start-pos="1476"><strong data-renderer-mark="true">What to do if the Identity Provider is not tested yet ?</strong></h4>
+<p data-renderer-start-pos="1533">Not tested does not mean not working. Please contact 2nd level support or the IAM team to find out if an integration is possible or not.</p>
+<h4 id="How-is-an-Identity-Provider-tested-?" data-renderer-start-pos="1671"><strong data-renderer-mark="true">How is an Identity Provider tested ?</strong></h4>
+<p data-renderer-start-pos="1709">Identity Providers are tested by testing out the login to Okta via the Identity Provider. Testing an Identity Provider

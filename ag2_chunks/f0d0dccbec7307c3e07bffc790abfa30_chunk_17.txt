@@ -1,0 +1,144 @@
+Example",
+    "data_retention_headline": "Example",
+    "data_retention_value": "Example"
+  }
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">true</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79E819ZP3V8QQB0NS7Y"> </h4>
+<h3 id="header-85">GET /gdpr/survey/{surveyId}/{languageId}</h3>
+<p>Returns GDPR consent for given surveyId and languageId</p>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">{
+  "content_value": "Example",
+  "welcome_text_value": "Example",
+  "title_headline": "Example",
+  "contact_us_headline_headline": "Example",
+  "company_name_value": "Example",
+  "contact_detail_value": "Example",
+  "representative_headline": "Example",
+  "representative_value": "Example",
+  "data_scope_headline": "Example",
+  "data_scope_value": "Example",
+  "data_category_headline": "Example",
+  "data_category_value": "Example",
+  "legal_basis_headline": "Example",
+  "legal_basis_value": "Example",
+  "recipient_headline": "Example",
+  "recipient_value": "Example",
+  "transfer_data_headline": "Example",
+  "transfer_data_value": "Example",
+  "contractual_requirement_headline": "Example",
+  "contractual_requirement_value": "Example",
+  "auto_decision_headline": "Example",
+  "auto_decision_value": "Example",
+  "info_subject_headline": "Example",
+  "info_subject_value": "Example",
+  "info_withdrawal_headline": "Example",
+  "info_withdrawal_value": "Example",
+  "info_supervisor_headline": "Example",
+  "info_supervisor_value": "Example",
+  "contact_officer_headline": "Example",
+  "contact_officer_value": "Example",
+  "data_retention_headline": "Example",
+  "data_retention_value": "Example",
+  "data_retention_type": "YEAR",
+  "data_retention_amount": 1
+}</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>surveyId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>Survey Id <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>languageId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>Language Id <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79EHJP3304XHVXC8V92"> </h4>
+<h3 id="header-86">POST /gdpr/survey/{surveyId}/{languageId}</h3>
+<p>Set content of GDPR consent for given surveyId and languageId</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "consentData": {
+    "content_value": "Example",
+    "welcome_text_value": "Example",
+    "title_headline": "Example",
+    "contact_us_headline_headline": "Example",
+    "company_name_value": "Example",
+    "contact_detail_value": "Example",
+    "representative_headline": "Example",
+    "representative_value": "Example",
+    "data_scope_headline": "Example",
+    "data_scope_value": "Example",
+    "data_category_headline": "Example",
+    "data_category_value": "Example",
+    "legal_basis_headline": "Example",
+    "legal_basis_value": "Example",
+    "recipient_headline": "Example",
+    "recipient_value": "Example",
+    "transfer_data_headline": "Example",
+    "transfer_data_value": "Example",
+    "contractual_requirement_headline": "Example",
+    "contractual_requirement_value": "Example",
+    "auto_decision_headline": "Example",
+    "auto_decision_value": "Example",
+    "info_subject_headline": "Example",
+    "info_subject_value": "Example",
+    "info_withdrawal_headline": "Example",
+    "info_withdrawal_value": "Example",
+    "info_supervisor_headline": "Example",
+    "info_supervisor_value": "Example",
+    "contact_officer_headline": "Example",
+    "contact_officer_value": "Example",
+    "data_retention_headline": "Example",
+    "data_retention_value": "Example",
+    "data_retention_type": "YEAR",
+    "data_ret

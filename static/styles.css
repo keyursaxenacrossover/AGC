@@ -1,0 +1,144 @@
+:root {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --input-bg: #1e1e1e;
+    --button-bg: #3a3a3a;
+    --button-hover-bg: #5a5a5a;
+    --border-color: #3a3a3a;
+    --error-color: #ff4c4c;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.chat-header {
+    background-color: var(--button-bg);
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.chat-window {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.chat-message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.chat-message.user {
+    background-color: var(--button-hover-bg);
+    text-align: right;
+}
+
+.chat-message.bot {
+    background-color: var(--button-bg);
+}
+
+.chat-message p {
+    margin: 0;
+}
+
+.chat-message .error {
+    color: var(--error-color);
+}
+
+.chat-form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: var(--input-bg);
+    border-top: 1px solid var(--border-color);
+}
+
+.chat-form textarea {
+    resize: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+
+.chat-form input {
+    margin-bottom: 10px;
+}
+
+.chat-form button {
+    background-color: var(--button-bg);
+    color: var(--text-color);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.chat-form button:hover {
+    background-color: var(--button-hover-bg);
+}
+
+.image-preview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.image-item {
+    position: relative;
+}
+
+.image-item img {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 5px;
+}
+
+.image-item button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: var(--error-color);
+    color: #fff;
+    border: none;
+    padding: 2px 5px;
+    font-size: 12px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensure it is above other elements */
+    pointer-events: none; /* Prevent interaction with the overlay */
+}

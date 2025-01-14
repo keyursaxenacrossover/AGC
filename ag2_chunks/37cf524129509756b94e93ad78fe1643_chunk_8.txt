@@ -1,0 +1,207 @@
+7.79541%;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center">Variable</th>
+<th class="wysiwyg-text-align-center">Description</th>
+<th class="wysiwyg-text-align-center">Order</th>
+<th class="wysiwyg-text-align-center">Group ID</th>
+<th class="wysiwyg-text-align-center">
+<p>Check expression</p>
+</th>
+<th class="wysiwyg-text-align-center">Error message</th>
+<th class="wysiwyg-text-align-center">
+<p>Form "Registration"</p>
+</th>
+<th class="wysiwyg-text-align-center">
+<p>Form "Change data"</p>
+</th>
+</tr>
+<tr>
+<td>u_account</td>
+<td>
+<p>Panelist's login name</p>
+</td>
+<td>1</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>u_firstname</td>
+<td>First name</td>
+<td>2</td>
+<td> </td>
+<td>
+<p>!matches('/ [^\s]/ ',request.u_firstname)</p>
+</td>
+<td>
+<p>Please enter your first name.</p>
+</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>u_name</td>
+<td>Name</td>
+<td>3</td>
+<td> </td>
+<td>
+<p>!matches('/ [^\s]/ ',request.u_name)</p>
+</td>
+<td>
+<p>Please enter your last name.</p>
+</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>u_street</td>
+<td>Street</td>
+<td>4</td>
+<td> </td>
+<td>
+<p>!matches('/[^\s]/ ',request.u_street)</p>
+</td>
+<td>
+<p>Please enter your street name.</p>
+</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>u_zip</td>
+<td>Zip code</td>
+<td>5</td>
+<td> </td>
+<td>
+<p>!matches('/^\s*\d{5}\s*$/ ',request.u_zip)</p>
+</td>
+<td>
+<p>Please enter your zip code.</p>
+</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>u_city</td>
+<td>City</td>
+<td>6</td>
+<td> </td>
+<td>
+<p>!matches('/[^\s]/ ',request.u_city)</p>
+</td>
+<td>
+<p>Please enter your city name.</p>
+</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>m_0000</td>
+<td>Country</td>
+<td>7</td>
+<td> </td>
+<td>
+<p>!matches('/^[^0]/ ',request.m_0000)</p>
+</td>
+<td>
+<p>Please enter your country name.</p>
+</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>md_0001</td>
+<td>Day of birth</td>
+<td>8</td>
+<td>1</td>
+<td>
+<p>!matches('/^[^0]/ ',request.m_0001)</p>
+</td>
+<td>
+<p>Please choose your day of birth.</p>
+</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>md_0002</td>
+<td>Month of birth</td>
+<td>9</td>
+<td>1</td>
+<td>
+<p>!matches('/^[^0]/ ',request.m_0002)</p>
+</td>
+<td>
+<p>Please choose your month of birth.</p>
+</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>md_0003</td>
+<td>Year of birth</td>
+<td>10</td>
+<td>1</td>
+<td>
+<p>!matches('/^[^0]/ ',request.m_0003)</p>
+</td>
+<td>
+<p>Please choose your year of birth.</p>
+</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>u_gender</td>
+<td>Gender</td>
+<td>11</td>
+<td> </td>
+<td>
+<p>!matches('/^[12]$/ ',request.u_gender)</p>
+</td>
+<td>
+<p>Please choose your gender.</p>
+</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>u_email</td>
+<td>E-Mail Address</td>
+<td>12</td>
+<td> </td>
+<td>
+<p>!matches('/[^\s]/ ',request.u_email)</p>
+</td>
+<td>
+<p>Please enter your email address.</p>
+</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>u_passwd</td>
+<td>Password</td>
+<td>13</td>
+<td> </td>
+<td>
+<p>!matches('/[^\s]/ ',request.u_passwd)</p>
+</td>
+<td>
+<p>Please enter a valid password.</p>
+</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>
+<p>Ab EFS 9.1: u_sec_quest</p>
+</td>
+<td>Security question</td>
+<td>14</td>
+<td> </td>
+<td> </td>
+<td>

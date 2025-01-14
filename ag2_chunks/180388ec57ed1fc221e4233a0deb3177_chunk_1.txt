@@ -1,0 +1,149 @@
+://it.globalpark.de/twiki/bin/view/Support/Customizing-Modules:CustomRouting#Example"><u>CustomRouting</u></a></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Initialize Firewall in routing plugin:</p>
+<pre><code class="language-text">        @include_once gp_conf::get('basepath_extensions').'/TsCodeHelper/Firewall/Firewall.php';
+        TsCodeHelper\Firewall\Firewall::getInstance()
+                                      -&gt;run();</code></pre>
+</li>
+<li>
+<p>Enable routing plugin in EFS config using the root account</p>
+<ul>
+<li>
+<p>has_routing_plugin = true</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Don't forget to add an update to the installation in Globis mentioning the config flags changed and the support case</p>
+</li>
+</ul>
+<p><br>At various points closures can be injected to react to individual situations.<br>E.g. in case of Respondi we do not simply use php function <strong>die()</strong> to show a blank page but show a custom message. This can be done as follows:</p>
+<pre><code class="language-text">        // FW: Override what happens when Request was detected as malicious (default just ... get’s murdered)
+        $firewallRequestClosure = function(){
+            die("add custom message here");
+        };
+
+        @include_once gp_conf::get('basepath_extensions').'/TsCodeHelper/Firewall/Firewall.php';
+        TsCodeHelper\Firewall\Firewall::getInstance()
+                                      -&gt;setRequestClosure($firewallRequestClosure)
+                                      -&gt;run();</code></pre>
+<p> </p>
+<h3 id="header-5">Possible options for requestMatch</h3>
+<ul>
+<li>
+<p>Check for domain</p>
+<ul>
+<li>
+<pre><code class="language-text">preg_match('/millsadvisorypanel.com/i', $_SERVER['SERVER_NAME'])</code></pre>
+</li>
+<li>
+<p>/i means case insensitive</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Check for request method</p>
+<ul>
+<li>
+<pre><code class="language-text">$_SERVER['REQUEST_METHOD'] == "POST"</code></pre>
+</li>
+<li>
+<pre><code class="language-text">$_SERVER['REQUEST_METHOD'] == "GET"</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>Check for specific session</p>
+<ul>
+<li>
+<pre><code class="language-text">preg_match('/index\.php\?SES\=a48e110c0e5199c6c41c231be1d79552/', $_SERVER["REQUEST_URI"])</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>Combined Checks</p>
+<ul>
+<li>
+<pre><code class="language-text">$_SERVER['REQUEST_METHOD'] == "POST" &amp;&amp; preg_match('/index\.php/',$_SERVER['REQUEST_URI']),</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<p> </p>
+<h2 id="header-7">Installations that have the firewall installed (17.08.2023):</h2>
+<p> </p>
+<p><strong>Prod-DE</strong></p>
+<table style="width: 684px;" data-layout="default" data-table-width="760">
+<tbody>
+<tr>
+<th style="width: 143.828px;">
+<p><strong>technical name</strong></p>
+</th>
+<th style="width: 133.766px;">
+<p><strong>customer</strong></p>
+</th>
+<th style="width: 180.5px;">
+<p><strong>routing plugin active</strong></p>
+</th>
+<th style="width: 212.906px;">
+<p><strong>comment</strong></p>
+</th>
+</tr>
+<tr>
+<td style="width: 135.828px;">
+<p>as1525</p>
+</td>
+<td style="width: 125.766px;">
+<p>Telekom</p>
+</td>
+<td style="width: 172.5px;">
+<p>yes</p>
+</td>
+<td style="width: 204.906px;">
+<p>will be purged 2024-02-19</p>
+</td>
+</tr>
+<tr>
+<td style="width: 135.828px;">
+<p>bf7332</p>
+</td>
+<td style="width: 125.766px;">
+<p>Kantar</p>
+</td>
+<td style="width: 172.5px;">
+<p>yes</p>
+</td>
+<td style="width: 204.906px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 135.828px;">
+<p>eq5267</p>
+</td>
+<td style="width: 125.766px;">
+<p>Kantar</p>
+</td>
+<td style="width: 172.5px;">
+<p>yes</p>
+</td>
+<td style="width: 204.906px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 135.828px;">
+<p>fd9643</p>
+</td>
+<td style="width: 125.766px;">
+<p>Ipsos ICP</p>
+</td>
+<td style="width: 172.5px;">
+<p>yes</p>
+</td>
+<td style="width: 204.

@@ -1,0 +1,103 @@
+p>
+</li>
+</ul>
+</li>
+<li>
+<p>Maximum width of the images. Default: 100 pixels.</p>
+</li>
+</ul>
+<h3 id="drop-down-list">Drop-down list</h3>
+<p>With drop-down lists, issues will be examined, for which there is only one possible correct answer.</p>
+<h4 id="base-elements-2">Base Elements</h4>
+<ul>
+<li>
+<p>Question text</p>
+</li>
+<li>
+<p>Fill-in instruction</p>
+</li>
+<li>
+<p>Help text</p>
+</li>
+<li>
+<p>Answer options 1-n</p>
+</li>
+<li>
+<p>Optional: Answer option with a text entry field</p>
+</li>
+</ul>
+<p>It is not possible to create inside titles or several columns.</p>
+<h4 id="entry-dialog-and-question-options">Entry dialog and question options</h4>
+<p>The entry dialog for configuring a drop-down list is on the whole identical with the entry dialog for question type 111. However the type “Inside title” and the column “New column” are missing.</p>
+<p>The question type-specific question options are also largely identical, only “Dynamic column text wrap” and “Wrap item text” are missing. Characteristic for question type 131 and the following question type 132 is that the select box can be placed within, in front of, or behind a text. To do so simply enter the desired text in the “Text around the select box” field and place the “%s” wildcard where you wish to insert the box into the text.</p>
+<p>With a drop-down list of type 131, you should always use an answer option called “Please select” with code “0”. This will help you to track, during evaluation, whether or not a participant has answered the question.</p>
+<p>The Mandatory function will only work in connection with question type 131 if an answer option called “Please select” with code “0” exists.</p>
+<h3 id="open-response-list">Open response list</h3>
+<p>Open response lists are used for questions to which there is only one possible correct answer. You have the option of setting any number of answer categories to be displayed.</p>
+<h4 id="base-elements-3">Base Elements</h4>
+<ul>
+<li>
+<p>Question text</p>
+</li>
+<li>
+<p>Fill-in instruction</p>
+</li>
+<li>
+<p>Help text</p>
+</li>
+<li>
+<p>Answer options 1-n</p>
+</li>
+</ul>
+<h4 id="entry-dialog-and-question-options-1">Entry dialog and question options</h4>
+<p>The entry dialog for configuring an open response list is on the whole identical to the entry dialog for question type 111. However, it is not possible to change the type of answer option: Only normal answer options are possible. Moreover, the column “new column” is not there.</p>
+<p>The question type-specific question options are also largely identical, only “Dynamic column text wrap” and “Wrap item text” are missing. As with question type 131, you can also place the select box within, in front of, or behind the text.</p>
+<h3 id="hotspot"><strong>Hotspot</strong></h3>
+<p>The hotspot question type is very similar to the hotspot question type for matrix questions. The hotspot question type enables you to place answer options onto particular areas of a selected picture. Before uploading your picture, note that you should start by defining the necessary dimensions and scales.</p>
+<h4 id="base-elements-4">Base Elements</h4>
+<ul>
+<li>
+<p>Question text</p>
+</li>
+<li>
+<p>Fill-in instruction</p>
+</li>
+<li>
+<p>Help text</p>
+</li>
+<li>
+<p>Scale options 1-n</p>
+</li>
+<li>
+<p>Answer options 1-n</p>
+</li>
+</ul>
+<p>When making a matrix question (type 311 or comparable) mandatory (DAC), the check only validates a question of one random dimension. If you wish to have all dimensions answered as a prerequisite please activate DAC on the item level.</p>
+<h4 id="detail-configuration-2">Detail Configuration</h4>
+<ul>
+<li>
+<p><strong>Exclusive mode for areas</strong>: Only one area can be rated. If other areas have been previously rated, they will be reset.</p>
+</li>
+<li>
+<p><strong>Show answer texts as a tooltip</strong>: The respective answer text will be displayed as a tooltip when hovering over it.</p>
+</li>
+<li>
+<p><strong>Initial state for areas</strong>: States how areas are displayed initially and whether a button to display unrated areas should be included.</p>
+</li>
+<li>
+<p><strong>Color for unselected areas</strong>: States the color for areas that have not yet been rated.</p>
+</li>
+<li>
+<p><strong>Label of the button for displaying areas</strong>: Defines the button for displaying areas.</p>
+</li>
+<li>
+<p><strong>Text of the default value in the selected box</strong>: Defines the text of the default value in the selected box.</p>
+</li>
+<li>
+<p><strong>Label of the button for closing the dialog</strong>: Defines the button which closes the dialog.</p>
+</li>
+<li>
+<p><strong>Image</strong>: Upload images, or change and delete previously uploaded images.</p>
+</li>
+</ul>
+<p>Please note that when deleting an image all shapes created will be deleted, too! However, if you swap one image for

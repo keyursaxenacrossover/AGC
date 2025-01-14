@@ -1,0 +1,87 @@
+uc /dumps/EFS_19.3_0124/* .</code></pre>
+</li>
+<li>
+<p>Actual sync (log errors into file)</p>
+<pre><code class="language-text">rsync -avzq --delete --exclude=/conf --exclude=/panelwebsite --exclude=/masterpanel --exclude=/uc /dumps/EFS_19.3_0124/* .  &gt; EFS_19.3_0124_rsync_error.log 2&gt;&amp;1</code></pre>
+</li>
+</ul>
+</li>
+</ul><p></p><ul>
+<li>
+<p><strong>Execute healself</strong></p>
+<pre><code class="language-text">cd www
+php support/healself.php</code></pre>
+</li>
+<li>
+<p>Log in to installation and <strong>execute installation check</strong> * To <strong>clean up</strong>, the following folders can be deleted if they no longer are symlinked (since EFS 8.0/8.1):</p>
+<ul>
+<li><p>provider_gui</p></li>
+<li><p>static_directories</p></li>
+<li><p>In conf folder all files except from config.inc.php3, hostnames.inc.php and VERSION can be deleted</p></li>
+</ul>
+</li>
+</ul><h1 id="header-15">Procus</h1><h2 id="header-17">Update an installation on Procus</h2><ul>
+<li><p>Login to procus4 (e.g. via putty)</p></li>
+<li>
+<p>Navigate into /dumps folder</p>
+<ul><li><p>cd /dumps</p></li></ul>
+</li>
+<li>
+<p>Check which is the latest (sub) version of EFS</p>
+<ul>
+<li><p>helpersGetEfsVersion [version number]</p></li>
+<li><p>(example: helpersGetEfsVersion 16.3)</p></li>
+<li>
+<p>to be able to use this helpers script, you might have to add the following line to your <strong>/home/[lastname]/.bashrc first</strong></p>
+<ul><li><p><strong>. /dumps/skripte_von_dennie/EFS_TS_bashhelpers.sh</strong></p></li></ul>
+</li>
+</ul>
+</li>
+<li>
+<p>If this version isn't already available in /dumps, download it:</p>
+<pre><code class="language-text">helpersGetEfsBuild [version number]</code></pre>
+<ul><li><p><em>(example: helpersGetEfsBuild EFS_16.3)</em></p></li></ul>
+</li>
+<li>
+<p><u>Alternatively</u> you can use "wget" to download the build version:</p>
+<pre><code class="language-text">wget -N -T 30 -A zip --no-check-certificate --http-user=efsbuilds --http-password=ocieXo3eeR https://efsbuilds.3uu.de/[version number].zip</code></pre>
+<ul><li><p><em>(example: wget -N -T 30 -A zip --no-check-certificate --http-user=efsbuilds --http-password=ocieXo3eeR https://efsbuilds.3uu.de/EFS_16.3_0151.zip)</em></p></li></ul>
+</li>
+<li>
+<p>Unzip the downloaded build file</p>
+<pre><code class="language-text">unzip -q EFS_16.3_0151.zip</code></pre>
+</li>
+<li>
+<p>Navigate to the installation you would like to update</p>
+<pre><code class="language-text">cd /nfs/opstX/[installation URL]/htdocs</code></pre>
+</li>
+</ul><ul><li>
+<p>If customizings are available update Zend Library / check it out again</p>
+<ul>
+<li><p>navigate to projekte/ProductCustomizingTeam/ folder of installation</p></li>
+<li>
+<p>delete zendframeworkLibrary folder</p>
+<pre><code class="language-text">rm -rf zendframeworkLibrary</code></pre>
+</li>
+<li>
+<p>navigate back to installation's main folder (/nfs/opstX/[installation URL]/)</p>
+<pre><code class="language-text">cd ../..</code></pre>
+</li>
+<li>
+<p>and check it out again from within installation's main folder</p>
+<pre><code class="language-text">cvs co projekte/ProductCustomizingTeam/zendframeworkLibrary</code></pre>
+</li>
+</ul>
+</li></ul><ul>
+<li><p>Navigate to installation's htdocs folder</p></li>
+<li>
+<p>Execute <a href="http://linux.die.net/man/1/rsync">rsync[ext]</a> to synchronize the current files in htdocs with the build files in /dumps/[buildname]</p>
+<ul>
+<li>
+<p>Dry run</p>
+<pre><code class="language-text">rsync -anvz --delete --exclude=/conf --exclude=/panelwebsite --exclude=/masterpanel --exclude=/uc /dumps/EFS_11.0_0160/* .</code></pre>
+</li>
+<li><p>Actual synchronization</p></li>
+<li>
+<p></p>
+<pre><code class="language-text">rsync -avz --delete --exclude=/conf --exclude=/panelwebsite --exclude=/master

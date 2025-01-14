@@ -1,0 +1,64 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1057226792">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1057226792</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">General (once):</a></li>
+</ul>
+</ul><p><strong><ac:parameter ac:name="colour">Red</ac:parameter><ac:parameter ac:name="title">Under Construction</ac:parameter></strong></p><p><br></p><p><br></p><p><strong>Per tenant (every tenant):</strong></p><ul>
+<li>Add the respective users to the Essentials app on Okta side</li>
+<li>Enable Okta federation in Essentials for the respective account and users</li>
+</ul><h1 id="header-1"><strong>General (once):</strong></h1><ul>
+<li>
+<u><strong>Create an application (Essentials)</strong></u><ul>
+<li>Type: web</li>
+<li>Sign on method: SAML</li>
+<li>SSO URL: &lt;essentials-domain&gt;/sso/consumeresponse</li>
+<li>Recipient URL: &lt;essentials-domain&gt;/sso/consumeresponse</li>
+<li>Destination URL: &lt;essentials-domain&gt;/sso/consumeresponse</li>
+<li>Audience restriction: &lt;essentials-domain&gt;</li>
+<li>Name ID Format: Email</li>
+<li>Response: Signed</li>
+<li>Assertion Signature: Signed</li>
+<li>SAML Single logout: disabled</li>
+<li>SAML Issuer ID: <span class="nolink">https://www.okta.com/${org.externalKey</span>}</li>
+<li>ess-production-public.cer (CN=*.questback.com)</li>
+<li>configuration that is not highlighted here should be standard</li>
+</ul>
+</li>
+<li>
+<u><strong>Send metadata URL to Essentials Support (check the URL before):</strong></u><ul><li><span class="nolink">https://&lt;okta-domain&gt;/app/&lt;okta-app-id&gt;/sso/saml/metadata</span></li></ul>
+</li>
+<li>
+<u><strong>What has to be done to get Essentials running on Okta?</strong></u><ul>
+<li>Work-In-Progress: has to be confirmed by Essentials developers</li>
+<li>Import the SAML document</li>
+<li>Enable account</li>
+<li>Optionally correct usernames</li>
+</ul>
+</li>
+<li><u><strong>Follow as with other applications (groups, etc.)</strong></u></li>
+</ul>&gt;/sso/consumeresponse</li>
+<li>Audience restriction: &lt;essentials-domain&gt;</li>
+<li>Name ID Format: Email</li>
+<li>Response: Signed</li>
+<li>Assertion Signature: Signed</li>
+<li>SAML Single logout: disabled</li>
+<li>SAML Issuer ID: <span class="nolink">https://www.okta.com/${org.externalKey</span>}</li>
+<li>ess-production-public.cer (CN=*.questback.com)</li>
+<li>configuration that is not highlighted here should be standard</li>
+</ul>
+</li>
+<li>
+<u><strong>Send metadata URL to Essentials Support (check the URL before):</strong></u><ul><li><span class="nolink">https://&lt;okta-domain&gt;/app/&lt;okta-app-id&gt;/sso/saml/metadata</span></li></ul>
+</li>
+<li>
+<u><strong>What has to be done to get Essentials running on Okta?</strong></u><ul>
+<li>Work-In-Progress: has to be confirmed by Essentials developers</li>
+<li>Import the SAML document</li>
+<li>Enable account</li>
+<li>Optionally correct usernames</li>
+</ul>
+</li>
+<li><u><strong>Follow as with other applications (groups, etc.)</strong></u></li>
+</ul>

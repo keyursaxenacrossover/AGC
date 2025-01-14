@@ -1,0 +1,48 @@
+(--custom-palette-color,inherit);" data-renderer-mark="true" data-text-custom-color="#ff5630">no</span></strong></p>
+</td>
+</tr>
+<tr>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; width: 325.703px;" colspan="1" rowspan="1" data-colwidth="228">
+<p data-renderer-start-pos="5773"><em data-renderer-mark="true">Windows Mail</em></p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; width: 51.1406px;" colspan="1" rowspan="1" data-colwidth="226">
+<p data-renderer-start-pos="5789"><strong data-renderer-mark="true"><span class="fabric-text-color-mark" style="color: var(--custom-palette-color,inherit);" data-renderer-mark="true" data-text-custom-color="#ff5630">no</span></strong></p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; width: 49.1562px;" colspan="1" rowspan="1" data-colwidth="226">
+<p data-renderer-start-pos="5795"><strong data-renderer-mark="true"><span class="fabric-text-color-mark" style="color: var(--custom-palette-color,inherit);" data-renderer-mark="true" data-text-custom-color="#ff5630">no</span></strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<h2 id="best_practices">EFS Best Practices</h2>
+<p>The recommended approach is to:</p>
+<ol>
+<li>Use unsubscribe placeholders in the email text to ensure participants always have a way to unsubscribe.</li>
+<li>Set the "List-Unsubscribe Header" for RFC compliance and potential email server requirements.</li>
+<li>Consider using additional headers like "List-Unsubscribe-Post" for enhanced functionality with supporting email clients.</li>
+</ol>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq_1">Why are unsubscribe features limited on collective installations?</h3>
+<p>The limitation was originally implemented to prevent customers on collective installations from blocking participants for other customers. If a participant from Customer A globally unsubscribed, they would not receive emails from Customer B either.</p>
+<h3 id="faq_2">How can I implement a one-click unsubscribe feature?</h3>
+<p>While EFS doesn't directly support one-click unsubscribe, you can use additional headers like "List-Unsubscribe-Post" to enable this functionality for email clients that support it. However, this is not widely supported by most email clients.</p>
+<p> </p>
+<p><strong>Tags: </strong>EFS, unsubscribe, email marketing, collective installations, email headers</p>
+</article></table>
+<p> </p>
+<h2 id="best_practices">EFS Best Practices</h2>
+<p>The recommended approach is to:</p>
+<ol>
+<li>Use unsubscribe placeholders in the email text to ensure participants always have a way to unsubscribe.</li>
+<li>Set the "List-Unsubscribe Header" for RFC compliance and potential email server requirements.</li>
+<li>Consider using additional headers like "List-Unsubscribe-Post" for enhanced functionality with supporting email clients.</li>
+</ol>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq_1">Why are unsubscribe features limited on collective installations?</h3>
+<p>The limitation was originally implemented to prevent customers on collective installations from blocking participants for other customers. If a participant from Customer A globally unsubscribed, they would not receive emails from Customer B either.</p>
+<h3 id="faq_2">How can I implement a one-click unsubscribe feature?</h3>
+<p>While EFS doesn't directly support one-click unsubscribe, you can use additional headers like "List-Unsubscribe-Post" to enable this functionality for email clients that support it. However, this is not widely supported by most email clients.</p>
+<p> </p>
+<p><strong>Tags: </strong>EFS, unsubscribe, email marketing, collective installations, email headers</p>
+</article>

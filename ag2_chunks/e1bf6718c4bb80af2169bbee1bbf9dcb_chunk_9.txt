@@ -1,0 +1,64 @@
+g-text-align-justify">The quota results will be recorded in two variables:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>quota: This variable contains the ID of the allocated quota (i.e. the quota selected via allocation mode). It is used to screen out unsuitable participants.</p>
+</li>
+<li>
+<p>quota_assignment: This variable contains the IDs of all quotas in which the respective participant has been counted. It may help with the evaluation if you have activated option 3, for example, and thus allocated participants to all matching open quotas. In this case, “quota” will contain only the quota selected via allocation mode. “quota_assignment” will contain all the quotas to which the participant has been allocated, i.e. it allows you to understand exactly how the allocation figures are generated. Please bear in mind that “quota_assignment” cannot be used for filtering and other routing processes.</p>
+</li>
+</ul>
+<h3 id="disposition-codes-of-screened-out-participants" class="wysiwyg-text-align-justify">Disposition codes of screened-out participants</h3>
+<p class="wysiwyg-text-align-justify">At which point in the quota process a participant has been excluded from participation will be recorded i.a. in the field report, in the participant administration, and in the export data record via the following disposition code.</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default">
+<colgroup> <col style="width: 228.0px;"> <col style="width: 532.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p><strong>Disposition codes</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Rejected at login (quota closed) (code 35</p>
+</td>
+<td>
+<p>Is set for respondents in personalized projects who want to use the link from the invitation mail to log into the survey after a quota has been closed.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Rejected (quota closed) (code 36)</p>
+</td>
+<td>
+<p>Statuses 36 and 37 are set in a project with quotas when an intermediate final page has been reached. The survey administrator can use these codes to mark respondents as rejected (i.e. screened out by quota; there are already enough participants with the respective features) or screened out (= unsuitable). The status to be set is manually specified by the administrator at the intermediate final page.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Screened out (code 37)</p>
+</td>
+<td>
+<p>Statuses 36 and 37 are set in a project with quotas when an intermediate final page has been reached. The survey administrator can use these codes to mark respondents as rejected (i.e. screened out by quota; there are already enough participants with the respective features) or screened out (= unsuitable). The status to be set is manually specified by the administrator at the intermediate final page.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Filtered out before the beginning of the survey, because quota is already closed (code 41)</p>
+</td>
+<td>
+<p>If a quota is full, this status will be assigned to all participants, who match the quota condition, but have not started with the survey yet.</p>
+<p>If one of these participants tries to log in, then he will be rejected and the disposition code will be set to 35.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="reactivating-participants-when-increasing-size-of-an-external-quota" class="wysiwyg-text-align-justify">Reactivating participants when increasing the size of an external quota</h3>
+<p class="wysiwyg-text-align-justify">Under certain circumstances, it may be necessary to subsequently increase the quota size during the field phase. In projects with a preset pool of participants (personalized survey, panel and master data surveys), this is problematic if external quota is used, the option to reject participantts on survey start is activated and one of the external quotas has already been closed. That is because, in this case, all respondents who have not yet participated but fall under the quota that has already been closed are automatically set to the “Quota closed” status.</p>
+<p class="wysiwyg-text-align-justify">In projects that use external quotas exclusively, it is possible to reactivate the respondents in such a case, thus allowing them to participate. To do so, increase the quota size, change the status to “active”, and confirm by clicking on<strong> Change</strong>. After that, you can choose for which of the changed quotas the participants are to be reactivated. After you have confirmed by clicking on <strong>Submit</strong>, the participant’s status is changed to “active”.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863" class="wysiwyg-text-align-justify">FAQ</h1>
+<h3 id="faq_1" class="wysiwyg-text-align-justify">How many quotas can I have in a project?</h3>
+<p class="wysiwyg-text-align-justify">It is recommended to use not more than 

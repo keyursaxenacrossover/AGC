@@ -1,0 +1,37 @@
+ Click on <strong>Download</strong> and save the data on your PC.</p>
+<p class="wysiwyg-text-align-justify">The export file contains all the posts from the selected blog section or blog with the following information:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Selected user data: the author’s pseudonym (pseudonym), account name (u_account), first name (u_firstname), name (u_name), e-mail address (u_email), an alternative ID (u_other_id), and cell phone number (u_mobile)</li>
+<li>Selected system data: panel entry date (penter_date), panel status (pstatus)</li>
+<li>Blog-specific data: date and time of post (dt), blog ID (instance_id) and blog title (instance_title), post ID (id), position within the thread structure (parent), type (type; P = post, C = comment), anonymity status (anonymous; 0 = no, 1 = yes), title (title), text (description) and number and result of the community rating (rating_cont, rating_average).</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If you have activated “Export including attached files”, the export file described above and the associated files will be exported in a compressed zip file. The associated files are named according to the following scheme: PostID_UserID_filename.extension.</p>
+<h2 id="integrating-panelist-blogs-into-the-website" class="wysiwyg-text-align-justify"><strong>Integrating Panelist Blogs into the Website</strong></h2>
+<p class="wysiwyg-text-align-justify">If you want to set up panelist blogs, please proceed as follows:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>On the desired page, create a page module of the “Panelist blog” type.</li>
+<li>Configure the setting options as required.<br>– Select the “func_blog” module template.<br>– As a template for media presentation select “tpl_media_display”. This controls the display of uploaded files.</li>
+</ol>
+<h2 id="providing-a-rich-text-editor-for-panelists-posts" class="wysiwyg-text-align-justify"><strong>Providing a Rich Text Editor for Panelists’ Posts</strong></h2>
+<p class="wysiwyg-text-align-justify"><br>The TinyMCE rich text editor has been implemented in the blogs, forums, and discussions of standard panels. This allows the panelists to create appealing posts without great effort. The functional scope in brief:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>TinyMCE is a Javascript-based WYSIWYG editor. It is used quite frequently for internet applications. Detailed information is available at <span class="nolink">http://tinymce.moxiecode</span>.com/.</li>
+<li>For use in community posts, the most important functions have been selected (bold, italic, underline, undo, redo, color).</li>
+<li>Also available is a bar with emoticons.</li>
+<li>TinyMCE does not support mobile devices. Therefore it is deactivated automatically for such devices, based on the browser identifier.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify">TinyMCE is also used in the admin area of EFS, e.g. for the designing of Panel news or, more recently, for designing HTML emails and question texts.</p>
+<h2 id="integrating-images-in-posts-and-setting-up-image-galleries" class="wysiwyg-text-align-justify"><strong>Integrating Images in Posts and Setting up Image Galleries</strong></h2>
+<p class="wysiwyg-text-align-justify">Blog and forum posts can be illustrated with images.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Per each blog or forum post multiple images can be uploaded. The necessary additional form fields are opened by clicking on the <strong>Add Fileupload</strong> button.</li>
+<li>With the familiar [file]file name[/file] tags, the images can be integrated into the text of a post.</li>
+<li>To ensure a uniform appearance, the images will be reduced automatically to thumbnails of uniform size during upload. When clicking on these thumbnails, the images will open in a separate layer. Both the size of the thumbnails and the maximum size of the images in the layer can be modified via the function modules for forums and blogs, if necessary.</li>
+<li>Blog authors are free to choose whether they want to present their images as usual within the text of their blog posts or in a special image gallery. To create an opened image gallery that allows you to conveniently flip back and forth between images, the panelists only have to tick the checkbox “Show image gallery” when publishing their posts.</li>
+</ul>
+<h2 id="integrating-multimedia-contents-in-posts-with-special-tags" class="wysiwyg-text-align-justify"><strong>Integrating Multimedia Content in Posts with Special Tags</strong></h2>
+<p class="wysiwyg-text-align-justify">Simple tags allow panelists to embed YouTube videos or Flickr image galleries in blogs, forums, or discussion posts.</p>
+<p class="wysiwyg-text-align-justify">If you want to encourage panelists to make more use of multimedia, you may include a reference to these tags in or beneath the post form.</p>
+<p class="wysiwyg-text-align-justify">Please note:</p>
+<ul class="wysi

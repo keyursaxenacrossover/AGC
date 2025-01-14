@@ -1,0 +1,21 @@
+ the instance is hosted.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21139555797010"></p>
+<h3 id="h_01J7E2EAEQBC7D3V482RV0X5Z6">5. Service Gateway Purpose and Usage</h3>
+<p>A lot of the L2 tasks are tied to the service gateways, and they usually entail running some scripts and/or accessing the DB. Check the below resources:</p>
+<ul>
+<li><a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20714568035218" target="_blank" rel="noopener noreferrer">Provisioning new DXI installations</a></li>
+<li><a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21140364670866" target="_blank" rel="noopener noreferrer">How to Access and Work with MariaDB on DXI Service Gateways</a></li>
+<li><a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20714583378706" target="_blank" rel="noopener noreferrer">Helperscripts</a></li>
+</ul>
+<h3 id="01J8QS4CEBNQQ6KPMT655G7Y13">6. Access Hurricane GUI for Hurricane configurations and logs</h3>
+<p>Hurricane is hosted on an on Prem network, but that network has direct VPN connection with our Service Gateways. So once you login to service gateway, you should be able to reach Hurricane server via port forwarding and your local browser.</p>
+<p><strong>Steps for access:</strong></p>
+<ol>
+<li>Connect to a service gateway using any command line tool with the following command:<br>Note that this is the same command used for Gateway connection, but added an attribute for port forwarding: <strong style="font-family: monospace, monospace; font-size: 13px; white-space: pre;">-L8085:<a href="http://10.250.10.142:8085" target="_blank" rel="noopener nofollow noreferrer">10.250.10.142:8085</a> </strong><br>
+<pre>ssh -i ~/.ssh/&lt;SSH_KEY&gt; &lt;EMAIL_USERNAME&gt;@servicegw.prod-de-03.customervoice360.com -p 65222 <strong style="font-size: 1em; background-color: #e9ebed; font-family: monospace, monospace; white-space: pre;">-L8085:<a href="http://10.250.10.142:8085" target="_blank" rel="noopener nofollow noreferrer">10.250.10.142:8085</a></strong></pre>
+<strong style="background-color: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 15px;">Example:</strong>
+<pre><code class="!whitespace-pre hljs language-bash" style="font-size: 13px; white-space: pre;">ssh -i ~/.ssh/id_xxx raymond.guirguis@servicegw.prod-de-03.customervoice360.com -p 65222</code> <strong style="font-family: monospace, monospace; font-size: 13px; white-space: pre;">-L8085:<a href="http://10.250.10.142:8085" target="_blank" rel="noopener nofollow noreferrer">10.250.10.142:8085</a> <br></strong></pre>
+<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21624678110994">
+</li>
+<li>Open your browser and navigate to: <a href="http://localhost:8085/">http://localhost:8085/</a> , this will automatically connect to Hurricane server GUI, since port forwarding is configured and active in the SSH command window.</li>
+<li>Login to server: Credentials on password state<br><img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&amp;content_type=image%2Fpng&amp;attachment_token=AOo0EEWveQIOj4bf1LaxrXmGxeog00VDHT1yKG50djEQ3JIhv1kb3jm1gZEaIJVYuYh1B6Y0qgwGd1zFWUh0jtNu%2Ff5MTSfE4ycLXJaswALx9iu13%2FtImYfhJkJ3%2F4vqmKyAv4aJxKEsTHePFqenaSWnUu1FpqfNARg6uyn5zQtDeGdeIuZ6mIXaWqTJMtuy1%2BdsaT7W3hVqr9URTXeQJ9WFdYGlK%2F0nPiIqY2LFy%2F8lkoIpf%2FMnc9VoeL6dzpTJiq0RWxXrnBXrWhMyOG6OvWibr1eeiV8SlOqV%2BZKa7Y2jxClfeCZPTgXg6UM96O9vz%2Fg7CSJQYzB%2F6iQYzMmJjVVXVVE60kzAyO5%2BtCA6oY2DRUMm

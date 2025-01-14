@@ -1,0 +1,45 @@
+<p><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p>This article provides a step-by-step guide on how to calculate with user-defined variables in a project. It covers the process of setting up variables, creating input fields, and configuring triggers to perform calculations.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>Learn how to use user-defined variables for calculations within your project, allowing you to sum variables and display the results.</p>
+<ul>
+<li><a href="#setting_up_variables">Setting Up User-Defined Variables</a></li>
+<li><a href="#creating_input_fields">Creating Input Fields</a></li>
+<li><a href="#configuring_triggers">Configuring Triggers for Calculations</a></li>
+<li><a href="#displaying_results">Displaying Calculation Results</a></li>
+</ul>
+<h2 id="setting_up_variables">Setting Up User-Defined Variables</h2>
+<p>To begin using user-defined variables for calculations, you need to set them up in your project properties.</p>
+<h3 id="step1_setup">Step 1: Access Project Properties</h3>
+<p>Navigate to Project -&gt; Properties -&gt; Survey Options -&gt; user-defined variables.</p>
+<h3 id="step2_setup">Step 2: Select Number of Variables</h3>
+<p>Choose the number of user-defined variables you want to use for your calculations.</p>
+<h2 id="creating_input_fields">Creating Input Fields</h2>
+<p>Create input fields to allow users to enter values for the calculation.</p>
+<h3 id="step1_input">Step 1: Create a Multi Text Field</h3>
+<p>Add a new question of type multi-text field (143) where users can input different numbers for the calculation.</p>
+<h3 id="step2_input">Step 2: Set Input Format</h3>
+<p>For the Input-Format, select "only Floats allowed" to ensure numerical input. Save your changes after setting this option.</p>
+<h2 id="configuring_triggers">Configuring Triggers for Calculations</h2>
+<p>Set up triggers to perform the calculations based on user input.</p>
+<h3 id="step1_trigger">Step 1: Create a Recording Trigger</h3>
+<p>Go to your new page -&gt; Triggers -&gt; Create a recording trigger.</p>
+<h3 id="step2_trigger">Step 2: Enable Preview Mode Execution</h3>
+<p>Check the option "Also execute trigger in preview mode".</p>
+<h3 id="step3_trigger">Step 3: Configure Calculation</h3>
+<p>In the detail configuration, choose your defined variable (e.g., c_0001) and insert the calculation formula in the "value" field. For example: #v_1# + #v_2# + #v_3#. You can use operators +, -, /, and * in your calculations.</p>
+<h2 id="displaying_results">Displaying Calculation Results</h2>
+<p>Create a page to show the results of your calculations.</p>
+<h3 id="step1_display">Step 1: Create a Result Page</h3>
+<p>Create a new page, preferably of Type 998 (result page).</p>
+<h3 id="step2_display">Step 2: Display the Result</h3>
+<p>In the question text of the result page, use #c_0001# to display the result of the calculation.</p>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq1">Can I display the individual values used in the calculation?</h3>
+<p>Yes, you can display the values of the variables used in the calculation. For example, you can write "The result of your calculation #v_1# + #v_2# + #v_3# is: #c_0001#" in the question text to show both the input values and the final result.</p>
+<h3 id="faq2">What types of calculations can I perform?</h3>
+<p>You can perform basic arithmetic operations using the operators +, -, /, and *. More complex calculations may require additional configuration or custom scripting.</p>
+<p> </p>
+</article>

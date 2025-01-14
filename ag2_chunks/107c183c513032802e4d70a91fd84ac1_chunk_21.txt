@@ -1,0 +1,220 @@
+</strong>. The following table lists the variables of the user management in the standard configuration.</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default">
+<colgroup> <col style="width: 130.0px;"> <col style="width: 136.0px;"> <col style="width: 219.0px;"> <col style="width: 119.0px;"> <col style="width: 156.0px;"> </colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour="#57d9a3">
+<p><strong>Variable</strong></p>
+</th>
+<th data-highlight-colour="#57d9a3">
+<p><strong>Label</strong></p>
+</th>
+<th data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+<th data-highlight-colour="#57d9a3">
+<p><strong>File type</strong></p>
+</th>
+<th data-highlight-colour="#57d9a3">
+<p><strong>Size</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p><em>u_firstname</em></p>
+</td>
+<td>
+<p>First name</p>
+</td>
+<td>
+<p>First name</p>
+</td>
+<td>
+<p>Text field</p>
+</td>
+<td>
+<p>255 characters</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>u_name</em></p>
+</td>
+<td>
+<p>Name</p>
+</td>
+<td>
+<p>Name</p>
+</td>
+<td>
+<p>Text field</p>
+</td>
+<td>
+<p>255 characters</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>u_email</em></p>
+</td>
+<td>
+<p>E-Mail</p>
+</td>
+<td>
+<p>E-mail. Serves as the unique identifier in the system.</p>
+</td>
+<td>
+<p>Text field</p>
+</td>
+<td>
+<p>255 characters</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>u_gender</em></p>
+</td>
+<td>
+<p>Gender</p>
+</td>
+<td>
+<p>Gender</p>
+</td>
+<td>
+<p>Text field</p>
+</td>
+<td>
+<p>255 characters</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>u_unit</em></p>
+</td>
+<td>
+<p>Organizational unit</p>
+</td>
+<td>
+<p>This field can be used to specify the membership in a subsidiary or a department.</p>
+</td>
+<td>
+<p>Text field</p>
+</td>
+<td>
+<p>255 characters</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>u_city</em></p>
+</td>
+<td>
+<p>City</p>
+</td>
+<td>
+<p>City</p>
+</td>
+<td>
+<p>Text field</p>
+</td>
+<td>
+<p>255 characters</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>u_country</em></p>
+</td>
+<td>
+<p>Country</p>
+</td>
+<td>
+<p>Country</p>
+</td>
+<td>
+<p>Text field</p>
+</td>
+<td>
+<p>255 characters</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>lang</em></p>
+</td>
+<td>
+<p>lang</p>
+</td>
+<td>
+<p>The language of the user interface in the <em>Org Processor</em> upon login. You can choose between:</p>
+<ul>
+<li>
+<p>English (code: en)</p>
+</li>
+<li>
+<p>German (code: de)</p>
+</li>
+</ul>
+</td>
+<td>
+<p>Text field</p>
+</td>
+<td>
+<p>255 characters</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>m_date</em></p>
+</td>
+<td>
+<p>Date of change</p>
+</td>
+<td>
+<p>The date of the last change.</p>
+</td>
+<td>
+<p>Text field</p>
+</td>
+<td>
+<p>255 characters</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>u_initial_password</em></p>
+</td>
+<td>
+<p>Initial password</p>
+</td>
+<td>
+<p>Initial password of the users. You can view the initial password via the user<br>interface. Once the users have<br>changed the initial password, you cannot see it anymore. Then you can only reset the password or generate a new one.</p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>c_date</em></p>
+</td>
+<td>
+<p>Date of creation</p>
+</td>
+<td>
+<p>Date of creation</p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-central-user-list" class="wysiwyg-text-align-justify"><strong>The central user list</strong></h3>
+<p class="wysiwyg-text-align-justify">You will find the centralized user management in the<strong> Projects</strong> → {Selected project} → <strong>Org Processor → Org Processor users</strong> menu. It allows you to

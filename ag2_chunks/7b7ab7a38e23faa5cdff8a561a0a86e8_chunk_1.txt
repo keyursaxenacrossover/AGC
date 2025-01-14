@@ -1,0 +1,127 @@
+<p>Only on panel installations: Link to panel</p>
+</td>
+<td>
+<p>Insert the panel URL.</p>
+<p>Syntax: <a href="http://your-domain.com/?SES=#panel_ses#">http://your-domain.com/?SES=#panel_ses#</a></p>
+<p>In most panels, the personal homepage is called home.php. If this is not the case in your panel, please change the link accordingly.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Insert URL for layout images</p>
+</td>
+<td>
+<p>Inserts the URL for images in the Layout directory.</p>
+<p>Syntax: http://www.your_domain.com/uc/your_team/layout/</p>
+<p>The file name of the desired image must still be added.</p>
+<p>To insert images from the media library, please use the Insert/edit image icon. To initially upload the images, please use the dedicated<strong> Media Library</strong> icon.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Insert the <strong>Close window</strong> button</p>
+</td>
+<td>
+<p>The code output generates a <strong>Close window</strong> button. This is frequently used on final pages.</p>
+<p>&lt;br&gt;&lt;div align=center&gt;&lt;input type="button" onClick="window.close()" value="Close window"&gt;&lt;/div&gt;&lt;br&gt;</p>
+<p>Please note: A window can only be closed via JavaScript if it has also been opened via JavaScript.</p>
+<ul>
+<li>
+<p>In Firefox - a browser strictly adhering to source code - the <strong>Close window</strong> button will thus not work if the questionnaire has been opened, for example, by clicking on a link.</p>
+</li>
+<li>
+<p>In Internet Explorer, however, the button will also work if the questionnaire window has not been opened via JavaScript.</p>
+</li>
+<li>
+<p>When using EFS Mobile Extension, you should check whether the browsers used support JavaScript, before using this button.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Protect page content</p>
+</td>
+<td>
+<p>This feature is used to protect content: It deactivates the context menu on the respective page. Please note:</p>
+<ul>
+<li>
+<p>This form of protection is always for the entire current page and not merely for individual elements and never extends to the entire survey. If the survey participant presses the right mouse button, this will be intercepted, and an alert box will be displayed.</p>
+</li>
+<li>
+<p>Keyboard commands however will not be suppressed.</p>
+</li>
+<li>
+<p>Using the project property “Disable right mouse button in the survey”, you can realize the same behavior for the entire questionnaire.</p>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<h4 id="h_01J3YPRH65QS0Z7TJP2CEDFHHA"> </h4>
+<h4 id="integrating-multimedia-elements">Integrating multimedia elements</h4>
+<p>The following features are available for the integration of multimedia elements:</p>
+<table border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour="#c0b6f2">
+<p><strong>Icon</strong></p>
+</th>
+<th data-highlight-colour="#c0b6f2">
+<p><strong>Code</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Insert/edit image</p>
+</td>
+<td>
+<p>This feature allows to reference of externally-hosted images.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Insert / edit video</p>
+</td>
+<td>
+<p>Via the <strong>Embed</strong> tab, videos from YouTube and other external sources can be integrated.</p>
+<p>Via the <strong>General</strong> tab, it is possible to integrate videos that are hosted externally or that are uploaded to the media library.</p>
+<ul>
+<li>
+<p>Format: mp4.</p>
+</li>
+<li>
+<p>Encoding process: H.264 codec for video content and AAC codec for audio content.</p>
+</li>
+<li>
+<p>Recommended size: 90 % of the screen, 300 px.</p>
+</li>
+</ul>
+<p>Please note: The feature is not supported for Internet Explorer 8 and below.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Insert URL of user-defined images</p>
+</td>
+<td>
+<p>Inserts the URL of images taken from the media library: http://your_domain.de/uc/your_team/images/</p>
+<p>Add the image‘s file name.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Media library</p>
+</td>
+<td>
+<p>Files from the media library can be used.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h4 id="h_01J3YPRH65X0PA1BHR8BP2T4WD"> </h4>
+<h4 id="traditional-formatting-options">Traditional formatting options</h4>
+<p>If you do not use the TinyMCE editor, the various formatting icons are located just above the input field.</p>
+<table border="1" data-layout="default" data-table-width="760">

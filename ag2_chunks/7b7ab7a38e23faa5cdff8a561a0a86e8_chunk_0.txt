@@ -1,0 +1,86 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K">Overview</h1>
+<p>This article provides a comprehensive guide to the various question types available in the EFS Survey. It covvariouse of question formats, from simple text inputs to complex matrix questions and advanced custom types.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>EFS Survey offers a diverse set of question types to cater to different survey needs. This guide explains each type, its use cases, and configuration options.</p>
+<ul>
+<li><a href="#recently-used">Recently used</a></li>
+<li><a href="#text-and-multimedia">Text and multimedia</a></li>
+<li><a href="#single-response">Single response</a></li>
+<li><a href="#multiple-response-list">Multiple response list</a></li>
+<li><a href="#fields-for-text-input">Fields for text input</a></li>
+<li><a href="#matrix-questions">Matrix questions</a></li>
+<li><a href="#sliders">Sliders</a></li>
+<li><a href="#ranking-rating">Ranking - Rating</a></li>
+<li><a href="#advanced">Advanced</a></li>
+</ul>
+<p> </p>
+<h2 id="recently-used">Recently used</h2>
+<h3 id="recently-used-question-types">Recently used question types</h3>
+<p>The new question type dialog provides a "recently used" view, which contains up to ten last-used question types per user. Since most surveys use only a small subset of our question types, this speeds up the creation of a survey, by showing all recently used question types from different categories in a single view.</p>
+<p> </p>
+<h2 id="text-and-multimedia">Text and multimedia</h2>
+<h3 id="text-and-image"><strong>Text and image</strong></h3>
+<p>The “Text and image” question type (998) allows you to freely enter text, images, and, if necessary, HTML code. It is primarily used for inserting and layouting information texts. For the creation of questions, on the other hand, the “Text and image” question type is not suitable, as no variables are available.</p>
+<h4 id="entry-dialog"><strong>Entry Dialog</strong></h4>
+<p>You can use the TinyMCE editor for layout texts. From HTML emails and various panel functionalities, you may already be familiar with the TinyMCE editor.</p>
+<ul>
+<li>
+<p>TinyMCE is a modern WYSIWYG editor. WYSIWYG = what you see is what you get.</p>
+</li>
+<li>
+<p>If necessary, <strong>Edit HTML source</strong> provides direct access to the source code.</p>
+</li>
+<li>
+<p>If you do not want to use the TinyMCE editor, you can easily deactivate the feature in the menu <strong>Options → Personal preferences</strong> on the tab <strong>Behavior of questionnaire editor</strong>.</p>
+</li>
+</ul>
+<h4 id="insert-code-automatically"><strong>Insert code automatically</strong></h4>
+<p>You can have HTML code inserted automatically for frequently used functions. To do so, select the desired function via the<strong> Insert code automatically</strong> drop-down list.</p>
+<table border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour="#c0b6f2">
+<p><strong>Command</strong></p>
+</th>
+<th data-highlight-colour="#c0b6f2">
+<p><strong>Code</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Insert survey URL</p>
+</td>
+<td>
+<p>Insert the survey URL.</p>
+<p>Syntax: http://www.your_domain.com/uc/your_team/</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Only on panel installations: Link to panel</p>
+</td>
+<td>
+<p>Insert the panel URL.</p>
+<p>Syntax: <a href="http://your-domain.com/?SES=#panel_ses#">http://your-domain.com/?SES=#panel_ses#</a></p>
+<p>In most panels, the personal homepage is called home.php. If this is not the case in your panel, please change the link accordingly.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Insert URL for layout images</p>
+</td>
+<td>
+<p>Inserts the URL for images in the Layout directory.</p>
+<p>Syntax: http://www.your_domain.com/uc/your_team/layout/</p>
+<p>The file name of the desired image must still be added.</p>
+<p>To insert images from the media library, please use the Insert/edit image icon. To initially upload the images, please use the dedicated<strong> Media Library</strong> icon.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Insert the <strong>Close window</strong> button</p>
+</td>
+<td>
+<p>The code output generates a <strong>Close window</strong> button. This is frequently used on final pages.</p>
+<p>&lt;br&gt;&lt;div align=center&gt;&lt;input type="button" onClick="window.close()" value="Close window

@@ -1,0 +1,30 @@
+{
+    "id": 20714611742866,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/20714611742866.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20714611742866-EFS-Orbit",
+    "author_id": 369584192734,
+    "comments_disabled": false,
+    "draft": true,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20714530860562,
+    "created_at": "2024-08-12T16:49:45Z",
+    "updated_at": "2024-08-12T16:49:47Z",
+    "name": "EFS Orbit",
+    "title": "EFS Orbit",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-08-12T16:49:47Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075294,
+    "content_tag_ids": [],
+    "label_names": [],
+    "body": "<p><b>Original Confluence URL:</b> <a href=\"https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1055031401\">https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1055031401</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>\n\n<h2>Table of Contents</h2>\n<ul class=\"toc\">\n<ul>\n<li><a href=\"#header-1\">Dependencies</a></li>\n<ul>\n<li><a href=\"#header-3\">Activation</a></li>\n<ul>\n<li><a href=\"#header-5\">Manual</a></li>\n</ul>\n</ul>\n</ul>\n</ul><p></p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:src=\"https://it.globalpark.de/twiki/pub/Support/SupportEFSOrbit/orbit.jpg\" ac:width=\"340\"><ri:url ri:value=\"https://it.globalpark.de/twiki/pub/Support/SupportEFSOrbit/orbit.jpg\"></ri:url></ac:image><h1 id=\"header-1\">Dependencies</h1><p>Other modules needed by Orbit:</p><p></p><ul>\n<li><p><a href=\"https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1054933094/EFS+Panel\">EFS Panel</a></p></li>\n<li><p><a href=\"https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1055129698/EFS+Employee\">EFS Employee</a></p></li>\n</ul><h2 id=\"header-3\">Activation</h2><p>To activate Orbit, the following config variables need to be set:</p><p></p><ul><li><p><em>modules</em>: add \"library\" and \"orbit\" (SINCE EFS 16.3)</p></li></ul><p></p><p>Execute healself:</p><ul>\n<li><p>cd www</p></li>\n<li><p>php support/healself.php</p></li>\n</ul><p></p><h3 id=\"header-5\">Manual</h3><p> see P:\\ceur\\_share_folder\\TPM-share\\_officially_available_manuals</p>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

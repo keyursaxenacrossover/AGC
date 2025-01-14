@@ -1,0 +1,100 @@
+ see whether the field contains no numbers.</p>
+</li>
+<li>
+<p>Checking to see whether the field contains only uppercase letters.</p>
+</li>
+<li>
+<p>Checking to see whether the field contains only lowercase letters.</p>
+</li>
+<li>
+<p>Checking to see whether the field contains only numbers with periods or commas.</p>
+</li>
+<li>
+<p>Checking to see whether the field contains only numbers with or without periods.</p>
+</li>
+<li>
+<p>Checking to see whether the field contains only numbers with or without commas.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">To create the format check, please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Select the variable you want to check.</p>
+</li>
+<li>
+<p>Select the format for which you want to check the variable you previously set.</p>
+</li>
+</ul>
+<h3 id="regex-check-and-noregex-check" class="wysiwyg-text-align-justify">RegEx Check and NoRegEx Check</h3>
+<p class="wysiwyg-text-align-justify">The RegEx and NoRegEx checks check the variable to be set to see whether it complies with a regular expression, also set by you. Regular expressions are defined as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Regular expressions, or RegEx for short, are used to check strings. They are used very frequently, especially in the UNIX environment, and make it easier to check strings containing many conditions.</p>
+</li>
+<li>
+<p>There are two possible types of RegEx:</p>
+<ul>
+<li>
+<p>RegEx check</p>
+</li>
+<li>
+<p>NoRegEx check</p>
+</li>
+</ul>
+</li>
+<li>
+<p>If a RegEx check returns “true”, an error message is output. The logic of the NoRegEx check is exactly the other way around.</p>
+</li>
+<li>
+<p>RegEx checks are enclosed in “/”. Optionally, a so-called pattern modifier can be placed at the end. Please note that RegEx checks in PHP and JS may show a differing behavior. For JS checks, the results might even differ among various browsers. Because of the complexity of regular expressions, we recommend testing the check in the system first.</p>
+<ul>
+<li>
+<p>Examples:</p>
+<ul>
+<li>
+<p>Zip code check =&gt; /^[0-9]{5}$/ (exactly 5 digits)</p>
+</li>
+<li>
+<p>Money field =&gt; /^[0-9]+ (EUR|USD)$/ (as many numbers as required + currency, either EUR or USD)</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>References: <a href="http://www.php.net/manual/en/ref.pcre.php" data-card-appearance="inline">http://www.php.net/manual/en/ref.pcre.php</a></p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Complications can arise when in a survey that is encoded in UTF-8 RegEx checks with JavaScript or JavaScript and PHP are carried out in order to compare strings containing more than just numbers: JavaScript is unable to recognize umlauts or other special characters that are reproduced in UTF-8 as doublebyte character (thus takes up two characters).</p>
+<p class="wysiwyg-text-align-justify">To create a RegEx check, please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Select the variable you want to check.</p>
+</li>
+<li>
+<p>In the text field, specify the regular expression whose entry is to trigger the RegEx check.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">To create a NoRegEx check, please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Select the variable you want to check.</p>
+</li>
+<li>
+<p>In the text field, specify the regular expression whose entry is not supposed to trigger the NoRegEx check. For all entries of other types in the field to be checked, the check will be triggered.</p>
+</li>
+</ul>
+<h3 id="range-check-old" class="wysiwyg-text-align-justify">Range Check Old</h3>
+<p class="wysiwyg-text-align-justify">In contrast to the range check explained above, the range check old checks the invalid range of the variable to be set. This means that the value entered by the participant must be outside the number range you set. Otherwise, the plausibility check will be triggered.</p>
+<h3 id="combination-check-and-combination-check-range" class="wysiwyg-text-align-justify">Combination Check and Combination Check (range)</h3>
+<p class="wysiwyg-text-align-justify">Two other plausibility checks are available for questions with multiple response lists (question types 121, 122, 362, 521, 522, 621):</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The combination check allows you to check whether a respondent has ticked a required number of checkboxes.</p>
+</li>
+<li>
+<p>The combination check (range) checks whether the number of checkboxes ticked is within a preset range.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<h1 id="h_

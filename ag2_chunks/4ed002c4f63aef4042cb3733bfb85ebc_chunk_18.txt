@@ -1,0 +1,103 @@
+); text-align: left; vertical-align: top; width: 308.75px;" colspan="1">
+<p>YEAR('98-02-03');</p>
+<p>→ 1998</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p class="wysiwyg-text-align-justify"><strong>2. Creating a recoding</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>In the <strong>People → Master data → Recoding of master data</strong> menu, click on the <strong>Create recoding variable (formula)</strong> button.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017112906898">
+</li>
+<li>Enter the title of the recodes definition.</li>
+<li>
+<p>Enter the formula.</p>
+</li>
+<li>
+<p>Specify whether automatic recoding should be applied. In the example shown above, the panelists’ age is calculated. In this case, automatic triggering does not make sense: instead, you could e.g. allocate the recoding to a recoding group and trigger it only once a week.</p>
+</li>
+<li>
+<p>Optionally, you can assign the recodes definition to a recoding group.</p>
+</li>
+<li>
+<p>Optionally, you can specify the recoding order.</p>
+</li>
+<li>
+<p>Confirm by clicking on Submit.</p>
+</li>
+<li>
+<p>A new master data variable is created: it will be used to store the results of the recoding process. The newly created recodes definition appears in the overview table.</p>
+</li>
+<li>
+<p><span class="legacy-color-text-red2" style="color: #ff0000;"><span class="legacy-color-text-default" style="color: #000000;">To execute the recoding process directly, follow the instructions in this chapter. Alternatively, you can either execute the recoding process in self-defined intervals, or use automated recoding.</span></span></p>
+</li>
+</ul>
+<h3 id="h_01J3FNEC37KAYE96AGEARSHHSJ" class="wysiwyg-text-align-justify">Using Allocation Tables to Define Recodings</h3>
+<p class="wysiwyg-text-align-justify">A third recoding method uses allocation tables (lookups) containing source and destination values, like recoding zip codes by state.</p>
+<ol class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Creating the Allocation List (Lookup)</strong></p>
+<ul>
+<li>
+<p>Lookups are lists with source and destination codes for recoding.</p>
+</li>
+<li>
+<p>Create and edit lookups in People → Master data → Recoding of master data → Lookups.</p>
+</li>
+<li>
+<p><strong>Format:</strong> Two columns; left for source values (unique), right for destination codes (not unique). Use numeric values ≥ 0 or strings (e.g., AU, AT). Save in CSV or XLS format.</p>
+</li>
+<li>
+<p><strong>Creating a Lookup:</strong></p>
+<ul>
+<li>Go to People → Master data → Recoding of master data → Lookups.</li>
+<li>Click on <strong>Create lookup</strong>.</li>
+<li>Enter data manually or import CSV/XLS data.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Using Lookups for Recoding</strong></p>
+<ul>
+<li>
+<p>Go to Master data recodes menu.</p>
+</li>
+<li>
+<p>Click <strong>Create recoding variable (lookup)</strong>.</p>
+</li>
+<li>
+<p>Enter the title, select the lookup table, and source variable.</p>
+</li>
+<li>
+<p>Specify if recoding should be automatic.</p>
+</li>
+<li>
+<p>Optionally, assign to a recoding group and specify the order.</p>
+</li>
+<li>
+<p>Click <strong>Create</strong>. A new master data variable is created for storing recoding results.</p>
+</li>
+<li>
+<p><strong>Executing Recoding:</strong></p>
+<ul>
+<li>Follow the instructions in this chapter to execute the recoding process now, at self-defined intervals, or automatically.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="h_01J3FNEC37M4SFGTKJTQK71ECQ" class="wysiwyg-text-align-justify">Specifying the Order of Recoding Processes</h3>
+<p class="wysiwyg-text-align-justify">To specify the order when recodings depend on other recodings:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Click on the <strong>Change order</strong> button.</li>
+<li>Specify the sequence in the “Recoding order” field.</li>
+<li>Confirm with <strong>Save</strong>.</li>
+</ul>
+<h3 id="h_01J3FNEC37PT76S733EYY4PBN3" class="wysiwyg-text-align-justify">Executing Recodings Manually</h3>
+<p class="wysiwyg-text-align-justify">You can trigger recodings manually, individually or as a block:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<strong>Individual Recoding:</strong> Locate it in the overview table and click the <strong>Run recoding procedure</strong> icon.</li

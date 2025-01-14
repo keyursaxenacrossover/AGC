@@ -1,0 +1,119 @@
+enders Dashboards into Iframe embedded into Portals</p>
+<ul>
+<li>
+<p>Dashboards individually configured by Product-Customizing</p>
+</li>
+<li>
+<p>Data individually prepared in Exasol by Product-Customizing with Altery</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="header-36">Okta</h3>
+<p>Okta is used as optional module in EFS. It is an Identity Provider that is used to implement SSO capabilities. Users are synced to this provider.</p>
+<ul>
+<li>
+<p>SSO SaaS provider</p>
+</li>
+<li>
+<p>Identity provider for EFS and Portal accounts</p>
+</li>
+<li>
+<p>Individually setup by 2nd level support for customers using EFS IdentityAccessManager module</p>
+</li>
+</ul>
+<h3 id="header-37">Hurricane MTA</h3>
+<p>The Hurricane is a self hosted Email relay that gives EFS capabilities to send and track emails.</p>
+<ul>
+<li>
+<p>Tivian managed on VMWare esxi guest</p>
+<ul>
+<li>
+<p>Software provided by vendor</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Handles delivery and status-tracking of all emails sent by EFS</p>
+<ul>
+<li>
+<p>Mailstatus is published via RabbitMQ back to EFS</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="header-38">Tyntec SMS</h3>
+<ul>
+<li>
+<p>SMS delivery SaaS provider</p>
+</li>
+<li>
+<p>Handles delivery of SMS from EFS</p>
+</li>
+<li>
+<p>Individually setup by 2nd level support for customers using EFS SMS module</p>
+<ul>
+<li>
+<p>Optional, SMS delivery services are configurable in EFS</p>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="h_01J4KMC3H0YXQ01BAXG1XMQ84A">Continuous Tasks</h1>
+<p>There are several different occasions where tasks have to run independently from a request-response cycle. Reasons for that are:</p>
+<ul>
+<li>
+<p>time based tasks</p>
+</li>
+<li>
+<p>tasks that would run too long in a request-response cycle</p>
+</li>
+<li>
+<p>tasks that are run in background as they are not bound to any request-response cycle but other triggers like database entries</p>
+</li>
+</ul>
+<p>For this purpose a dedicated machine is setup that runs these different tasks. There are four overall concepts that run these tasks:</p>
+<ul>
+<li>
+<p><strong>snailmail:</strong> Snailmail is a cronjob that executes a fixed script to send out emails</p>
+</li>
+<li>
+<p><strong>dbreport:</strong> The DB Report is also a fixed script that gets executed as a cronjob. Is cleans up the database.</p>
+</li>
+<li>
+<p><strong>jobmaker:</strong> The Jobmaker is a cronjob that relies on tasks in a database table. </p>
+</li>
+<li>
+<p><strong>custom cron jobs:</strong> Custom cron jobs are used to run installation specific custom tasks that are requested by a customer and implemented as a customization for the installation. The tasks they fulfill depend on the requested solution.</p>
+</li>
+</ul>
+<p> </p>
+<p> </p> several different occasions where tasks have to run independently from a request-response cycle. Reasons for that are:</p>
+<ul>
+<li>
+<p>time based tasks</p>
+</li>
+<li>
+<p>tasks that would run too long in a request-response cycle</p>
+</li>
+<li>
+<p>tasks that are run in background as they are not bound to any request-response cycle but other triggers like database entries</p>
+</li>
+</ul>
+<p>For this purpose a dedicated machine is setup that runs these different tasks. There are four overall concepts that run these tasks:</p>
+<ul>
+<li>
+<p><strong>snailmail:</strong> Snailmail is a cronjob that executes a fixed script to send out emails</p>
+</li>
+<li>
+<p><strong>dbreport:</strong> The DB Report is also a fixed script that gets executed as a cronjob. Is cleans up the database.</p>
+</li>
+<li>
+<p><strong>jobmaker:</strong> The Jobmaker is a cronjob that relies on tasks in a database table. </p>
+</li>
+<li>
+<p><strong>custom cron jobs:</strong> Custom cron jobs are used to run installation specific custom tasks that are requested by a customer and implemented as a customization for the installation. The tasks they fulfill depend on the requested solution.</p>
+</li>
+</ul>
+<p> </p>
+<p> </p>

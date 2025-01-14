@@ -1,0 +1,64 @@
+→ <strong>Survey messages</strong> menu, you will find an overview of all the survey messages for which you hold read rights. The following essential processes can be invoked via buttons:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Create survey messages</strong>: After entering a name and a description, a new empty set of messages is created.</p>
+</li>
+<li>
+<p><strong>Import survey messages</strong>: This allows you to import new survey messages in an Excel file.</p>
+</li>
+<li>
+<p><strong>Export all survey messages</strong>: Triggers the export of all existing messages.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Furthermore, you can export survey messages selected via the “Actions” checkbox and the drop-down list. You can edit individual sets using the “Actions” icons:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>For default sets only: <strong>Preview</strong>: Opens the dialog, where you can view the default set. Please note that the default sets cannot be edited. If you want to edit a default set, copy it and subsequently modify the copy.</p>
+</li>
+<li>
+<p>For user-defined sets only:<strong> Edit</strong>: Opens the edit dialog.</p>
+</li>
+<li>
+<p><strong>Copy</strong>: You can copy a set of survey messages and then modify this copy as required. This is particularly recommended if you want to modify standard messages: the standard texts themselves cannot be edited directly.</p>
+</li>
+<li>
+<p>For user-defined sets that were created by copying the standard messages: <strong>Recover</strong>: Resets the content to its original status, i.e. the texts of the standard message.</p>
+</li>
+<li>
+<p>For user-defined sets only: <strong>Rights</strong>: Opens the dialog where you can assign rights for the messages to the desired teams. The default sets are available to all users.</p>
+</li>
+</ul>
+<h3 id="transferring-survey-messages-to-another-efs-installation" class="wysiwyg-text-align-justify"><strong>Transferring survey messages to another EFS installation</strong></h3>
+<p class="wysiwyg-text-align-justify">Survey messages can be exported and imported into another installation. There are two options:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>To export one or several sets of survey messages, tick the checkboxes in the “Actions” column of the <strong>Libraries</strong> → <strong>Survey messages</strong> menu, select the action “Export”, and confirm by clicking on <strong>Execute</strong>. An Excel file containing the selected message sets will be generated.</p>
+</li>
+<li>
+<p>If you want to export all existing messages, use the <strong>Export all survey messages</strong> button.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">In the target installation, go to the <strong>Libraries</strong> → <strong>Survey messages</strong> menu, and click on the <strong>Import survey messages</strong> button. Via the import dialog, you can upload an Excel file with the desired messages.</p>
+<p class="wysiwyg-text-align-justify"><strong>Defining default survey messages for an installation</strong></p>
+<p class="wysiwyg-text-align-justify">As an administrator, you can determine what default set of messages is to be used across the installation when creating a new project. When administering an installation where English is predominantly used, this allows you to ensure, for example, that an English message set is always imported.</p>
+<p class="wysiwyg-text-align-justify">To do so, navigate to the <strong>Options → System settings</strong> menu. In the “Default survey messages” field you can select one of the available message sets and then save it with <strong>Change</strong>.</p>
+<p class="wysiwyg-text-align-justify">The <strong>Options</strong> → <strong>System settings</strong> menu is only accessible to members of the administrator team or the system administrator team.</p>
+<p class="wysiwyg-text-align-justify"><strong>Comparing survey messages</strong></p>
+<p class="wysiwyg-text-align-justify">You can compare two sets of survey messages. This may be useful, for example, if two sets are linguistically very similar, such as survey messages in American and British English. Please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Open the <strong>Comparison of Survey Messages</strong> submenu.</p>
+</li>
+<li>
+<p>Specify which sets are to be compared.</p>
+</li>
+<li>
+<p>By clicking on <strong>Compare</strong>, you trigger the check.</p>
+</li>
+<li>
+<p>The two sets will be listed in full, highlighting any divergent fields.</p>
+</li>
+</ul>
+<h2 id="macros" class="wysiwyg-text-align-justify"><strong>Macros</strong></h2>
+<p class="wysiwyg-text-align-justify">In the <strong>Libraries</strong> → <strong>Macros</strong> menu, you can find all macros of the installation that you’re authorized to access. The following editing functions are available:</p>
+<ul class="

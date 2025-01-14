@@ -1,0 +1,30 @@
+{
+    "id": 20716325185170,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/20716325185170.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20716325185170-Tivian-Access-DB-Tables",
+    "author_id": 369584192734,
+    "comments_disabled": false,
+    "draft": false,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20714711445138,
+    "created_at": "2024-08-12T18:56:36Z",
+    "updated_at": "2024-08-22T13:37:52Z",
+    "name": "Tivian Access DB Tables",
+    "title": "Tivian Access DB Tables",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-08-22T13:37:47Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075294,
+    "content_tag_ids": [],
+    "label_names": [],
+    "body": "<h1 id=\"h_01J5X4SGPQDZS711VZDVATB220\">Table of Contents</h1>\n<ul>\n<li><a href=\"#header-1\">iam_error_log</a></li>\n<li><a href=\"#header-3\">iam_portal_settings</a></li>\n<li><a href=\"#header-4\">iam_portal_user_reference</a></li>\n<li><a href=\"#header-5\">iam_token_data</a></li>\n<li><a href=\"#header-6\">iam_user_reference</a></li>\n<li><a href=\"#header-7\">iam_portal_user_group_unassignment_queue</a></li>\n</ul>\n<h2 id=\"header-1\" class=\"auto-cursor-target\">iam_error_log</h2>\n<ul>\n<li>Contains all error received from Okta</li>\n</ul>\n<pre><code class=\"language-sql\">CREATE TABLE `iam_error_log` (\n\t`id` INT(11) NOT NULL AUTO_INCREMENT,\n\t`created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,\n\t`message` TEXT NULL,\n\t`status_code` SMALLINT(3) NOT NULL DEFAULT '0',\n\t`trace` LONGTEXT NULL,\n\t`error_code` VARCHAR(36) NOT NULL DEFAULT '',\n\tPRIMARY KEY (`id`)\n)\nCOLLATE='utf8_general_ci'\nENGINE=InnoDB\n;</code></pre>\n<h2 id=\"header-3\" class=\"auto-cursor-target\">iam_portal_settings</h2>\n<ul>\n<li>Contains the Okta client_id for each portal</li>\n</ul>\n<pre><code class=\"language-sql\">CREATE TABLE `iam_portal_settings` (\n\t`id` INT(11) NOT NULL AUTO_INCREMENT,\n\t`portal_id` INT(11) NOT NULL,\n\t`key` VARCHAR(50) NULL DEFAULT NULL,\n\t`value` VARCHAR(255) NULL DEFAULT NULL,\n\tPRIMARY KEY (`id`),\n\tINDEX `id` (`id`),\n\tINDEX `portal_id` (`portal_id`)\n)\nCOLLATE='utf8_general_ci'\nENGINE=InnoDB\n;</code></pre>\n<h2 id=\"header-4\" class=\"auto-cursor-target\">iam_portal_user_reference</h2>\n<ul>\n<li>Contain the reference to each panelist and portal of successfully synced portal/panelist-users to Okta</li>\n</ul>\n<pre><code class=\"language-sql\">CREATE TABLE `iam_portal_user_reference` (\n\t`id` INT(11) NOT NULL AUTO_INCREMENT,\n\t`portal_id` INT(11) NULL DEFAULT NULL,\n\t`user_id` INT(11) NULL DEFAULT NULL,\n\t`uuid` BINARY(20) NULL DEFAULT NULL,\n\t`created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,\n\t`updated_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,\n\t`status` TINYINT(4) NULL DEFAULT NULL,\n\t`has_data_changes` TINYINT(1) NULL DEFAULT '0',\n\tPRIMARY KEY (`id`),\n\tINDEX `id` (`id`),\n\tINDEX `user_id` (`user_id`),\n\tINDEX `portal_id` (`portal_id`),\n\tINDEX `uuid` (`uuid`),\n\tINDEX `status` (`status`),\n\tINDEX `has_data_changes` (`has_data_changes`),\n\tCONSTRAINT `user_id_panelists_uid_idx` FOREIGN KEY (`user_id`) REFERENCES `panelists` (`uid`) ON UPDATE CASCADE ON DELETE CASCADE\n)\nCOLLATE='utf8_general_ci'\nENGINE=InnoDB\n;</code></pre>\n<h2 id=\"header-5\" class=\"auto-cursor-target\">iam_token_data</h2>\n<ul>\n<li>Contains token relevant data, these information will be stored in memcache in V2</li>\n</ul>\n<pre><code class=\"language-sql\">CREATE TABLE `iam_token_data` (\n\t`session_id` VARBINARY(50) NOT NULL,\n\t`idp_response` LONGTEXT NULL,\n\tINDEX `session_id` (`session_id`)\n)\nCOLLATE='utf8_general_ci'\nENGINE=InnoDB\n;</code></pre>\n<h2 id=\"header-6\" class=\"auto-cursor-target\">iam_user_reference</h2>\n<ul>\n<li>Contains EFS-Admin User reference for successfully created and synced users to Okta</li>\n</ul>\n<pre><code class=\"language-sql\">CREATE TABLE `iam_user_reference` (\n\t`id` INT(11) NOT NULL AUTO_INCREMENT,\n\t`user_id` INT(11) NULL DEFAULT NULL,\n\t`uuid` BINARY(20) NULL DEFAULT NULL,\n\t`created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,\n\t`updated_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,\n\tPRIMARY KEY (`id`),\n\tINDEX `id` (`id`),\n\tINDEX `user_id` (`user_id`),\n\tINDEX `uuid` (`uuid`),\n\tCONSTRAINT `user_id_users_uid_idx` FOREIGN KEY (`user_id`) REFERENCES `users` (`uid`) ON UPDATE CASCADE ON DELETE CASCADE\n)\nCOLLATE='utf8_general_ci'\nENGINE=InnoDB\n;</code></pre>\n<h2 id=\"header-7\" class=\"auto-cursor-target\">iam_portal_user_group_unassignment_queue</h2>\n<ul>\n<li>Contains Portal Users which have to be unassigned in Okta after MassDelete</li>\n</ul>\n<pre><code class=\"language-sql\">CREATE TABLE `iam_portal_user_group_unassignment_queue` (\n\t`id` INT(11) NOT NULL AUTO_INCREMENT,\n\t`user_id` INT(11) NULL DEFAULT NULL,\n\t`uuid` BINARY(20) NULL DEFAULT NULL,\n\t`email` VARCHAR(255) NULL DEFAULT NULL,\n\t`created_at` DATETIME NULL DEFAULT CURRENT_TIMESTAMP,\n\t`updated_at` DATETIME NULL DEFAULT CURRENT_TIMESTAMP,\n\tPRIMARY KEY (`id`),\n\tUNIQUE INDEX `user_id` (`user_id`)\n)\nCOLLATE='utf8_general_ci'\nENGINE=InnoDB\n;</code></pre>\n<p class=\"auto-cursor-target\"> </p>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

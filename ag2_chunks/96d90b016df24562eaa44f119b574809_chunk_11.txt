@@ -1,0 +1,114 @@
+ At least one of these wildcards should be entered in the template.</p>
+</li>
+</ul>
+<p>The <em>#overview_action_german#</em> and <em>#overview_action_english#</em> wildcards can only be used in e-mails of type "Text". The use of these placeholders in e-mails of type "HTML" is not supported.</p>
+<p><strong>Assigning the mail template to the current project</strong></p>
+<p>In the next step, the new mail template is allocated to the current project, Otherwise, it would not be available for status e-mails in this project.</p>
+<ul>
+<li>
+<p>Switch back to your project and open the project’s <strong>Mail templates</strong> menu.</p>
+</li>
+<li>
+<p>Locate the mail template you have just created.</p>
+</li>
+<li>
+<p>In the column “Project template”, its current assignment status is indicated. Usually, a new template has the status “No”. If you click on the status link, it will change to “Yes”.</p>
+</li>
+</ul>
+<p><strong>Configuring the status e-mail</strong></p>
+<p>To configure and activate the status e-mail, open the <strong>Org Processor</strong> → <strong>Configuration</strong> → <strong>Action Planner configuratio</strong>n menu. On the<strong> Settings</strong> tab, go to the “Status e-mails section”:</p>
+<ul>
+<li>
+<p>In the “Mail template for e-mails containing status information” field, select the template created above.</p>
+</li>
+<li>
+<p>In the “Start date to send status e-mails” field, define from which date onwards the mails should be sent.</p>
+</li>
+<li>
+<p>In the “Send interval of status e-mails” field, you can define how often the emails will be sent. You can choose between daily, weekly, and monthly dispatch.</p>
+</li>
+<li>
+<p>In the “Dispatch of status e-mails active” field, the dispatch process is activated. As long as this field is not activated, no emails will be sent.</p>
+</li>
+<li>
+<p>In the “Mail template for notifications (Portals)” field, you can optionally select a mail template to inform responsible persons when new tasks are being created for their organizational unit.</p>
+</li>
+<li>
+<p><strong>Save</strong> the settings.</p>
+</li>
+</ul>
+<p>New tasks can either be created manually or automatically (by the<em> Task Trigger</em>).</p>
+<p><strong>Subscribing to status e-mails</strong></p>
+<p>If <em>Action Planner</em> users wish to receive status e-mails for their area of responsibility, all they need to do is open the detail view of the parent unit, go to the Statistics tab, and enter their mail address in the “Recipients of status e-mail” field.</p>
+<h3 id="h_01J3N2HWAB7HWRMW7424NCS37G"><strong>Setting up automated dispatch of reminders and auto-escalation</strong></h3>
+<p>It is possible to send automated reminders to the persons responsible for the follow-up process before the completion date of actions is reached.</p>
+<ul>
+<li>
+<p>The automated dispatch can be activated optionally.</p>
+</li>
+<li>
+<p>Several mails can be defined, to fit various recipients and various situations.</p>
+</li>
+<li>
+<p>You can define if the reminder should be sent to the user who created the action (individual-related), or if users with a specific role in the respective unit should be contacted.</p>
+</li>
+<li>
+<p>If individual-related reminders are used, a dedicated dialog allows the users to enter recipients for specific actions.</p>
+</li>
+</ul>
+<p><strong>Creating a mail template for the reminder mail</strong></p>
+<p>As for other automated dispatch processes, the content of the reminder mail is defined via a mail template. In the <strong>System</strong> → <strong>Libraries</strong> → <strong>Mail templates</strong> menu, create a new mail template. Please mind:</p>
+<ul>
+<li>
+<p>Select the “Org Processor mail” type.</p>
+</li>
+<li>
+<p>Dedicated wildcards are available for the reminder e-mails, enabling you to insert the necessary information. The table provides an overview.</p>
+</li>
+</ul>
+<table class="" border="1" data-layout="default">
+<colgroup>
+<col style="width: 334.0px;">
+<col style="width: 426.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour="#57d9a3">
+<p style="text-align: center;"><strong>Wildcard</strong></p>
+</th>
+<th data-highlight-colour="#57d9a3">
+<p style="text-align: center;"><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p><em>#ac_name#</em></p>
+</td>
+<td>
+<p>Title of action</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>#ac_headline#</em></p>
+</td>
+<td>
+<p>Problem description</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>#ac_desc#</em></p>
+</td>
+<td>
+<p>Description of action</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>#ac_response#</em></p>
+</td>
+<td>
+<p>Responsible person</p>
+</td>
+</tr>

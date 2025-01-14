@@ -1,0 +1,92 @@
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="making-chart-specific-settings" class="wysiwyg-text-align-justify"><strong>Making chart-specific settings</strong></h3>
+<p class="wysiwyg-text-align-justify">You can edit the key properties of charts such as the colors and units (frequencies or percentages) to be used. You can also display or hide additional information such as legends, as required.</p>
+<p class="wysiwyg-text-align-justify"><strong>Workpad toolbar → Charts → Chart settings</strong>.</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 239.0px;"> <col style="width: 521.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Option</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Chart type</p>
+</td>
+<td>
+<p>Chart types may be changed using the drop-down list.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Color scheme</p>
+</td>
+<td>
+<p>There are various color combinations available.</p>
+<p>More color combinations are available. Furthermore, it is possible to create a user-defined color scheme.</p>
+<p>The color schemes cannot be edited, the sequence of<br>color gradients are fixed. However, you can use the colors to emphasize the relevance of particular answer options, i.e., by displaying a negative answer option in red. Simply order the answer options in the table editor in such a way that they match the desired colors.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Show values in charts</p>
+</td>
+<td>
+<p>The bars, segments, etc. of a chart are labeled with the corresponding values. Whether the chart will show frequencies or percentages is specified in the section “values of the chart”.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Show legend</p>
+</td>
+<td>
+<p>A legend listing all answer options along with their respective colors will be displayed next to the actual chart.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Values of the chart</p>
+</td>
+<td>
+<p>Charts can be labeled either with frequencies or with percentages.</p>
+<ul>
+<li>
+<p>If you deactivate “Limit scale to 100%“, the width resp.height of the scale depends on the values displayed.</p>
+</li>
+<li>
+<p>The combination “Percentage“ and “Limit scale to<br>100%“ is preselected. The standardized form of representation makes it easier to compare several questions. (For the chart types which are fixed to 100 %, activating this option is not necessary, of course.)</p>
+</li>
+<li>
+<p>The chart types Stacked bars and columns (100%) can only be labeled with percentages. For these chart types, activating the “Limit scale to 100%“ option is not necessary, of course.</p>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify">Excel does not adopt the <em>EFS</em> chart settings described below but applies its own default settings instead. I.e. the legend is usually activated, the values are hidden and Excel’s default colors are used.</p>
+<h2 id="creating-reports-for-multilingual-questionnaires" class="wysiwyg-text-align-justify"><strong>Creating reports for multilingual questionnaires</strong></h2>
+<p class="wysiwyg-text-align-justify"><em>EFS Reporting+</em> provides enhanced support for multilingual projects. From now on, if you want to create report versions with identical content and structure, but text elements from various languages, it is sufficient to create a single report.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Via <strong>Report → Language</strong>, you can switch between the default language of your questionnaire and the language you selected when creating the report. If you selected the <strong>All Languages</strong> option when creating the report, all languages that were created for the questionnaire are available for selection under <strong>Report → Language</strong>. The content of the structure window and workpad is reloaded automatically, containing the text elements for the selected language. The labels in the sources window are not affected by the switch.</p>
+</li>
+<li>
+<p>Initially, the original text elements from the questionnaire are inserted. If you change texts in <em>EFS Reporting+</em>, e.g. via the table editor, they are stored and kept in the background when you switch to another language.</p>
+</li>
+<li>
+<p>When exporting, you can select the language whose text elements are to be inserted.</p>
+</li>
+<li>
+<p>If you insert key figures and aggregations, you can modify the labels in the various language versions.</p>
+</li>
+<li>
+<p>Please mind that standard texts e.g. the table headers for “Answer option” and “Code” can only be displayed either in English or in German. During the creation of the report, they are automatically preset in the current admin area language, or in English if you‘re using Finnish, French,

@@ -1,0 +1,60 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K" class="wysiwyg-text-align-justify">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article provides comprehensive information about participant variables in EFS, including their types, properties, and management. It covers the standard variables, creating new variables, and best practices for handling participant data.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">Participant variables are essential for managing and organizing participant data in EFS projects. This guide explains how to view, create, and modify these variables, as well as their impact on project functionality.</p>
+<ul class="wysiwyg-text-align-justify">
+<li><a href="#table-overview-of-the-participant-variables">Table Overview of the Participant Variables</a></li>
+<li><a href="#creating-new-variables">Creating new variables</a></li>
+<li><a href="#further-information">Further Information</a></li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<table class=" wysiwyg-text-align-justify" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 680.0px;"> </colgroup>
+<tbody>
+<tr>
+<td>
+<p><em>Switch to the <strong>Participant Administration</strong> → <strong>Participant variables</strong> menu. You will find an overview table listing the existing participant variables. You will also be allowed to create new participant variables.</em></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="table-overview-of-the-participant-variables" class="wysiwyg-text-align-justify">Table Overview of the Participant Variables</h2>
+<p class="wysiwyg-text-align-justify">The table contains the following information for each variable:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Order</strong>: The order of the variables, which is defined via the <strong>Arrow</strong> icons in the “Move” column, is used both for the entry and search forms of the participant administration and for the export data records.</p>
+</li>
+<li>
+<p><strong>Internal label</strong>: The actual name of the variable. In the format #internal_label#, this is used as a wildcard in the questionnaire and e-mails. All the participant variables begin with the prefix “u_” so that they can be unambiguously identified, for example, during filtering.</p>
+</li>
+<li>
+<p><strong>Label</strong>: The field does not have multilingual capability. For projects with international staff, you should therefore choose a name that can be understood by all of those involved.</p>
+</li>
+<li>
+<p><strong>Type</strong>: The available display types are “Text field”, “Checkbox”, “Select box” and “Radio buttons”. For variables of the “Select box” or “Radio buttons” type, you can specify answer options that can be selected via select boxes in participant administration. In the case of “u_gender”, for example, you can choose between “Male”, “Female” and “Not entered”.</p>
+</li>
+<li>
+<p><strong>Properties</strong>: This column indicates whether a variable is visible in participant administration, can be filled with data, if new characteristics can be created by import, or if serves as the language variable.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The following editing options can be used:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Using the <strong>Arrow</strong> icons in the “Move” column you can change the order of the participant variables both in the entry and search form of the participant administration and in the export data records. Particularly in projects with large numbers of variables, this facilitates operating in the participant administration and working with the exported data.</p>
+</li>
+<li>
+<p>Clicking on the internal label or the <strong>Edit</strong> icon will open the dialog in which the respective variable is configured.</p>
+</li>
+<li>
+<p>User-defined variables can be deleted by clicking on the familiar<strong> Delete</strong> icon.</p>
+</li>
+</ul>
+<h3 id="overview-of-the-standard-variables-of-participant-administration" class="wysiwyg-text-align-justify">Overview of the standard variables of participant administration</h3>
+<p class="wysiwyg-text-align-justify">The following table lists all defaulted participant variables. The list also contains the project types for which each variable can be used (PE: Personalized project, ES: Employee survey, MSF: Multi-source feedback).</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 207.0px;"> <col style="width: 160.0px;"> <col style="width: 139.0px;"> <col style="width: 99.0px;"> <col style="width: 155.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p>Label</p>

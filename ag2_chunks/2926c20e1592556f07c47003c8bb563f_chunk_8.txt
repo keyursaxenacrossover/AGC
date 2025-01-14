@@ -1,0 +1,118 @@
+p>email</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>10006</p></td>
+<td><p>user6@questback.com</p></td>
+<td><p>zombie</p></td>
+</tr>
+<tr>
+<td><p>20006</p></td>
+<td><p>user6@tivian.com</p></td>
+<td><p>assign correct groups etc. otherwise no change</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><u>EFS - EFS User to Okta User Mapping</u></strong></p>
+<table ac:local-id="ee151d94-c4b3-4d91-acc1-b786fb1c126a" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p>EFS User ID</p></th>
+<th><p>Okta User ID</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>16</p></td>
+<td><p>20006</p></td>
+<td><p>update mapping</p></td>
+</tr>
+</tbody>
+</table>
+</div><p></p><h3 id="header-35">Case 7</h3><p>User only exists in EFS but no user is present for/in Okta.</p><div class="expand-macro">
+<h4 string="Case 7"></h4>
+<h4 id="header-37">Initial state:</h4>
+<p><strong><u>EFS - User Table</u></strong></p>
+<table ac:local-id="b183dba3-478f-44f5-b955-af4bf371e9cd" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p>EFS User ID</p></th>
+<th><p>email</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>17</p></td>
+<td><p><a href="mailto:user5@questback.com">user7@tivian.com</a></p></td>
+<td><p>-</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><u>Okta - User List</u></strong></p>
+<table ac:local-id="b25a127c-bafb-49a9-8246-03f911f13ddc" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p>Okta User ID</p></th>
+<th><p>email</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p><strong><span style="color: rgb(255,86,48);">empty</span></strong></p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><u>EFS - EFS User to Okta User Mapping</u></strong></p>
+<table ac:local-id="82a922ad-8d7a-4fea-b68e-7b416da5fd84" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p>EFS User ID</p></th>
+<th><p>Okta User ID</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p><strong><span style="color: rgb(255,86,48);">empty</span></strong></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="header-38">Future state:</h4>
+<p>Just ignore that the user </p>
+<p><strong><u>EFS - User Table</u></strong></p>
+<table ac:local-id="3432f8ba-bdf0-4537-b735-c9093a45cd58" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p>EFS User ID</p></th>
+<th><p>email</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>17</p></td>
+<td><p><a href="mailto:user5@tivian.com">user7@tivian.com</a></p></td>
+<td><p><ac:inline-comment-marker ac:ref="d0fb0c82-150b-4016-b8bd-f831c10972b

@@ -1,0 +1,39 @@
+-text-align-justify" data-layout="center" data-width="760" data-width-type="pixel" data-node-type="mediaSingle" data-renderer-start-pos="11586">
+<div class="cc-e6a54o">
+<div class="cc-k4ngfq" data-mark-type="border" data-color="#091e4224" data-size="2">
+<div data-context-id="4149608460" data-type="file" data-node-type="media" data-width="1663" data-height="372" data-id="6339757d-7087-47d6-96c0-5d2d496f07d2" data-collection="contentId-4149608460" data-file-name="file" data-file-size="1" data-file-mime-type="" data-alt="image-20240320-111259.png" data-renderer-start-pos="11587"> </div>
+</div>
+</div>
+</div>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="11589"><strong data-renderer-mark="true">New employees – phase 3</strong></p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="11614">First – as described under <a class="cc-1rn59kg" title="https://qbdocs.atlassian.net/wiki/spaces/DOC/pages/edit-v2/4149608460?draftShareId=77f2e92c-cc13-4bb3-abc2-2cbc316317bb#Grouping-filters" href="#:~:text=newly%20created%20group.-,Grouping%20Filters,-By%20means%20of" data-testid="link-with-safety" data-renderer-mark="true">Grouping filters</a> – create the "New employees – phase 3" grouping filter in the <em data-renderer-mark="true">People</em> module under <strong data-renderer-mark="true">Groups &gt; Grouping filter</strong>. Afterwards, we will configure the following filter criteria:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="11830">We specify that panelists who were added to the panel 6 months ago should be added to the group. To do so, we select <strong data-renderer-mark="true">penter_date (Date of entry)</strong> as the <strong data-renderer-mark="true">Variable</strong> and <strong data-renderer-mark="true">less</strong> as <strong data-renderer-mark="true">Condition</strong>. We enter <strong data-renderer-mark="true">#NOW-6m#</strong> as <strong data-renderer-mark="true">Value</strong>. This stands for the current date minus 6 months.</p>
+</li>
+<li>
+<p data-renderer-start-pos="12094">We also specify that panelists who are in phase 3 of the workflow for new employees should be added to the group. To do this, we select the master data record <strong data-renderer-mark="true">md_phase</strong> that we created in the previous step as the variable, with the condition <strong data-renderer-mark="true">equal</strong> and the value <strong data-renderer-mark="true">3</strong>.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="12361"> </p>
+<h3 id="Create-Update-Rules" class="wysiwyg-text-align-justify" data-renderer-start-pos="12363"><strong data-renderer-mark="true">Create Update Rules</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="12384">We have now made all the preparations and can start creating the update rules for our three groups. We have already created an update rule for the "New employees" group at the beginning. We will now edit this group and configure it in detail.</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="12628"><strong data-renderer-mark="true">Update Rule for the "New Employees" Group</strong></p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="12671">Proceed as follows to edit the group and configure it in detail:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="12739">Open the <em data-renderer-mark="true">People</em> module and select the <strong data-renderer-mark="true">Groups</strong> menu item from the menu on the left-hand side.</p>
+</li>
+<li>
+<p data-renderer-start-pos="12834">Select the sub-item <strong data-renderer-mark="true">Update rules</strong>.</p>
+</li>
+<li>
+<p data-renderer-start-pos="12871">Click on the corresponding link to select the "New employees" update rule you have created from the list.</p>
+</li>
+<li>
+<p data-renderer-start-pos="12980">So far, you have only defined one action: the "New employees" grouping filter you defined should be applied and panelists who meet the condition should be added to the group. Now we will add a few more actions:</p>
+</li>
+</ul>
+<ol class="ak-ol wysiwyg-text-align-justify" start="1" data-indent-level="1">
+<li>
+<p data-render

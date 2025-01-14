@@ -1,0 +1,76 @@
+>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013838105234" alt="image-20230922-101843.png"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013850374930" alt="image-20230925-071258.png"></p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify">In case the participant enters another answer than Canberra, the following question is displayed on the same page: “That’s wrong”. That being so, the following hiding conditions apply for this question: v_1 = 0 (question is hidden, if participant hasn’t made any entries yet) OR v_1 = Canberra (question is hidden, if the participant enters “Canberra”).</p>
+<p class="wysiwyg-text-align-justify">When using text variables as source question (as in the above example), questions are only hidden or displayed, if the focus does not remain in the text entry field, e.g. when the participant clicks another area of the survey window or presses the Tab key. So the software does not check after every single keystroke, whether hiding conditions are met or not. This behavior also applies to question type<strong> Slider (numbers) (911), </strong>for which you can choose the option <strong>Editable text field</strong> in the <strong>Detail configuration</strong> for participants to be able to enter a number into the text field.</p>
+<p class="wysiwyg-text-align-justify">Please note that dynamic lists <em>cannot</em> be used, if the source and target question are placed on the same page – even if a dynamic hiding condition is in place.</p>
+<h4 id="dynamic-answers" class="wysiwyg-text-align-justify">Dynamic answers</h4>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p><strong>Feature</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p><strong>Description</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Dynamic answers</p>
+</td>
+<td>
+<p>If the answers are to be dynamically read from a list, you can make the corresponding settings in this area.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h4 id="answers" class="wysiwyg-text-align-justify">Answers</h4>
+<table class="wysiwyg-text-align-justify" style="height: 3148px;" border="1" width="731" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" style="width: 281.858px;" data-highlight-colour="#c0b6f2">
+<p><strong>Feature</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 441.84px;" data-highlight-colour="#c0b6f2">
+<p><strong>Description</strong></p>
+</th>
+</tr>
+<tr>
+<td style="width: 273.837px;">
+<p>Variable name</p>
+</td>
+<td style="width: 433.819px;">
+<p>Depending on the question type and type of text field, this field is located either in the „Question options“ section or in a dedicated column.</p>
+<p>Internal variable names are automatically allocated by the system when creating a question</p>
+</td>
+</tr>
+<tr>
+<td style="width: 273.837px;">
+<p>External variable name</p>
+</td>
+<td style="width: 433.819px;">
+<p>Depending on the question type and type of text field, this field is located either in the „Question options“ section or in a dedicated column.</p>
+<p>External variable names can be changed and are then used on export instead of the internal variable names.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 273.837px;">
+<p>No</p>
+</td>
+<td style="width: 433.819px;">
+<p>When creating the items, the numbering is automatically assigned by the system. You may change the numbering, but the changed numbering should be unique.</p>
+<p>If the numbering you assigned is not unique, an automatic, unique numbering will be assigned.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 273.837px;">
+<p>Code</p>
+</td>
+<td style="width: 433.819px;">
+<p>Serves to identify an answer option for single response lists and matrix questions. An overview of all encodings is provided in the codebook.</p>
+<ul>
+<li>
+<p>You can edit the encoding. However, you should never do this while the survey is in progress because otherwise, the encoded information will be lost or it will no longer be possible to assign it correctly. Filters and other functions that are based on codes can also

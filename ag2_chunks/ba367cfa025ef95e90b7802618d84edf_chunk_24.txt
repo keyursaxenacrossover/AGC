@@ -1,0 +1,38 @@
+-align-justify">You make the information about the panelists available to the <em>group</em> user so that they can be uniquely identified.</p>
+<p class="wysiwyg-text-align-justify">Information</p>
+<p class="wysiwyg-text-align-justify"><span style="color: #333333;">The panelist information must be released first in the EFS Panel (</span><strong>Panelist administration</strong><span style="color: #333333;"> → </span><strong>Profile Settings</strong><span style="color: #333333;">) before the information becomes available to use in Portals. The option </span><strong>Show profile to others</strong><span style="color: #333333;"> must be checked.</span></p>
+<h3 id="portal-switch" class="sc-eNNmBn lmEGgd wysiwyg-text-align-justify"><strong>Portal Switch</strong></h3>
+<p class="auto-cursor-target wysiwyg-text-align-justify"><span style="color: #091e42;">With the Portal Switch, portal users can switch from one portal to another without having to log in again.  Before you run this switch, you make some settings under the tab </span><strong>Portal Switch</strong><span style="color: #091e42;">. </span>You check the checkboxes to:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>indicate whether the portal selection should be shown in the header</li>
+<li>select the portals displayed in the exterior view</li>
+<li>highlight the new portal in the portal section</li>
+<li>show a counter for new portals in the header</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><span style="color: #091e42;">You use the drop-down list in the row "Selectable Portals" to select those portals that can be switched between in the exterior view of your portal. You can either select individual portals that you want to switch between, or you can simply choose all portals. All portals created in the portal overview are available for your selection.</span></p>
+<h3 id="mobile-integration" class="sc-eNNmBn lmEGgd wysiwyg-text-align-justify"><strong>Mobile Integration</strong></h3>
+<p class="wysiwyg-text-align-justify">The <em>TivianPortals</em> app allows panelists mobile access to a portal. For this to work, there are a few prerequisites that must be met:</p>
+<p class="wysiwyg-text-align-justify"><strong>Claim:</strong></p>
+<p class="wysiwyg-text-align-justify"><span style="color: #091e42;"><span style="color: #091e42;">A claim must be defined to allow panelists access to the portal through the mobile App. </span></span>You define a claim by clicking on the input field and typing in your desired name. You use this name as a claim if you want to log in to your portal using the app.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>The maximum number of characters that can be used is 255.</li>
+<li>
+<span style="color: #091e42;">If a claim has already been created by another user and is used in the <em>Portals</em> app<em>, </em>you cannot create the same claim. In this case, you just have to define another claim, that has not been assigned yet</span><span style="color: #091e42;">.</span>
+</li>
+<li>When specifying a claim, consider that the string must be entered in the app. For practical reasons, it is therefore advisable to limit the number of characters to a manageable number.</li>
+<li>You can assign a maximum of 3 claims per installation.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If you want to access a specific portal using an app, enter the claim previously assigned. The desired portal opens immediately on the mobile device.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify"><strong>Proper settings in Portal:</strong></p>
+<p class="wysiwyg-text-align-justify">For the <em>Portals</em> app to be properly displayed, you have to make the following settings:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Open the <strong>Settings</strong> page of your portal.</li>
+<li>Under the <strong>General settings</strong> menu item, find the option <strong>Select whether a header with X-Frame-Options should be sent to the client</strong>.</li>
+<li>From the drop-down menu to the right, choose <strong>Do not send</strong> for the above option.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015039209106" alt="image2024-2-14_9-53-24.png"></p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify"><em>Information: If you do make this setting and try to use the Portals app, this will lead to a display error in the app.</em></p>
+<p class="auto-cursor-target wysiwyg-text-align-justify"> </p>
+<h

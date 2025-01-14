@@ -1,0 +1,70 @@
+questionoutput-text" class="wysiwyg-text-align-justify"><em><strong>setQuestionOutput(text)</strong></em></h4>
+<p class="wysiwyg-text-align-justify">Sets the output of the LUA-question. This function should only be used once, as subsequent calls overwrite previous values, also this function only generates output as part of code executed during rendering of the question.</p>
+<p class="wysiwyg-text-align-justify"><em>Data types</em></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>text <em>string </em>- string to be shown in LUA-question</p>
+</li>
+</ul>
+<h4 id="remove_sys_miss-varvalue" class="wysiwyg-text-align-justify"><em><strong>remove_sys_miss(varValue) </strong></em></h4>
+<p class="wysiwyg-text-align-justify">Converts the system missing (code -77) to 0 in order to ease arithmetic operations. For example, when using the calculation-based LUA filter "<em>return v_1+v_2+v_3&gt;10</em>", System Missings (Code -77) will negatively affect the calculations, therefore "<em>return remove_sys_miss(v_1)+remove_sys_miss(v_2)+remove_sys_miss(v_3)&gt;10</em>" can be used to avoid this issue.</p>
+<p class="wysiwyg-text-align-justify"><em>Data types</em></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>varValue <em>mixed</em> - provided answer of a variable, e.g. <em>remove_sys_missing(_G["v_1"])</em></p>
+</li>
+<li>
+<p>returns <em>int</em></p>
+</li>
+</ul>
+<h4 id="get_range_count-values-min_code-max_code" class="wysiwyg-text-align-justify"><em><strong>get_range_count(values, min_code, max_code)</strong></em></h4>
+<p class="wysiwyg-text-align-justify">Returns how many times the values specified are in the range provided by <em>min_code</em> and <em>max_code</em>. For example, the condition <em>return get_range_count({v_1,v_2,v_3,v_4,v_5},1,3)&gt;2</em> is true, if the participant answered more than 2 times in the first three categories of the matrix question represented by v_1-v_5.</p>
+<p class="wysiwyg-text-align-justify"><em>Data types</em></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>values <em>array</em> - List of values, e.g.<em> {v_1, v_2, v_3, v_4, v_5}</em></p>
+</li>
+<li>
+<p>min_code <em>mixed</em></p>
+</li>
+<li>
+<p>max_code <em>mixed</em></p>
+</li>
+<li>
+<p>returns <em>int</em></p>
+</li>
+</ul>
+<h4 id="getquotadebitvalue-id" class="wysiwyg-text-align-justify"><em><strong>getQuotaDebitValue(id)</strong></em></h4>
+<p class="wysiwyg-text-align-justify">Returns the quota's debit value.</p>
+<p class="wysiwyg-text-align-justify"><em>Data types</em></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>id <em>int</em> - quota ID</p>
+</li>
+<li>
+<p>returns <em>int</em></p>
+</li>
+</ul>
+<h4 id="getquotacurrentvalue-id" class="wysiwyg-text-align-justify"><em><strong>getQuotaCurrentValue(id)</strong></em></h4>
+<p class="wysiwyg-text-align-justify">Returns the quota's current value, e.g. <em>setVariableValue("v_1", getQuotaCurrentValue(1))</em></p>
+<p class="wysiwyg-text-align-justify"><em>Data types</em></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>id <em>int</em> - quota ID</p>
+</li>
+<li>
+<p>returns <em>int</em></p>
+</li>
+</ul>
+<h4 id="getquotafillingdegree-id" class="wysiwyg-text-align-justify"><em><strong>getQuotaFillingDegree(id)</strong></em></h4>
+<p class="wysiwyg-text-align-justify">Returns the quota's filling degree. E.g. <em>setVariableValue("v_1", </em>getQuotaFillingDegree(1)*100 .. " %")</p>
+<p class="wysiwyg-text-align-justify"><em>Data types</em></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>id <em>int</em> - quota ID</p>
+</li>
+<li>
+<p>returns <em>double</em></p>
+</li>
+</ul>
+<h4 id="getquotaids" class="wysiwyg-text-align-justify"><em><strong>getQuotaIds()</strong

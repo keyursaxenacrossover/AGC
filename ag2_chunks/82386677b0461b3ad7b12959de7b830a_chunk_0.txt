@@ -1,0 +1,119 @@
+<h1 id="h_01J6A1E9Y0MBVMERF7QKJBNCAK">Overview</h1>
+<p>Rolling out the integration between a client’s Identity Provider (IdP) and Okta for the Enterprise Feedback System (EFS) involves a structured process to ensure a smooth transition from testing to production. This guide outlines the prerequisites and preferred steps for the rollout process, ensuring that the integration meets both technical and business requirements.</p>
+<h2 id="header-1">Prerequisites</h2>
+<ul>
+<li>
+<p>The client has an installation</p>
+</li>
+<li>
+<p>The installation and the client’s needs meet our requirements (see Business Decisions)</p>
+</li>
+<li>
+<p>The installation is on the latest version and uses MariaDB</p>
+</li>
+<li>
+<p>The technical details of the client’s provider are present and well known</p>
+</li>
+<li>
+<p>The setup on our end as well as customized solution are known</p>
+</li>
+<li>
+<p>There is a contact person on the client’s side that is capable of configuring the proposed Identity Provider solution</p>
+</li>
+</ul>
+<h2 id="header-3">Preferred rollout process</h2>
+<ol>
+<li>
+<p><strong>Setup connection between IdP and Okta with the client’s technical team</strong></p>
+<ol>
+<li>
+<p>Setup IdP for SAML or OpenID Connect</p>
+</li>
+<li>
+<p>Test connection with test app</p>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>Test and migration phase</strong></p>
+<ol>
+<li>
+<p>Create a mirror installation</p>
+</li>
+<li>
+<p>Configure Okta Basic Setup for the Tenant (possibly with external Identity Provider)</p>
+<ol>
+<li>
+<p>Configure Okta - see Okta setup</p>
+</li>
+<li>
+<p>Configure EFS Admin - see Questback Application Setup</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Invite test users to the mirror installation</p>
+</li>
+<li>
+<p>Check if everything works</p>
+</li>
+<li>
+<p>Start migrating users to Okta without sending out a mail</p>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>Production phase</strong></p>
+<ol>
+<li>
+<p>Configure the original production installation the same way as the mirror</p>
+</li>
+<li>
+<p>Migrate changes to the user table that occurred during test-phase</p>
+</li>
+<li>
+<p>Set IdentityAccessManager module “is_active” status to “true”</p>
+</li>
+<li>
+<p>Send out activation emails</p>
+</li>
+</ol>
+</li>
+</ol>
+<p> </p>
+<h1 id="h_01J6A1G9Q2FPS35FW4TJ6GGVKD">FAQ</h1>
+<p><strong>Why is a mirror installation necessary?</strong></p>
+<p>A mirror installation allows for thorough testing without affecting the live production environment, ensuring that any issues can be identified and resolved before going live.</p>
+<p><strong>What happens if issues are found during the test phase?</strong></p>
+<p>Any issues identified during the test phase should be resolved before proceeding to the production phase to ensure a smooth rollout.</p>
+<p><strong>Why are activation emails sent out last?</strong></p>
+<p>Activation emails are sent out after the production environment is fully configured and tested to ensure that users can access the system immediately upon receiving the email.</p> to Okta without sending out a mail</p>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>Production phase</strong></p>
+<ol>
+<li>
+<p>Configure the original production installation the same way as the mirror</p>
+</li>
+<li>
+<p>Migrate changes to the user table that occurred during test-phase</p>
+</li>
+<li>
+<p>Set IdentityAccessManager module “is_active” status to “true”</p>
+</li>
+<li>
+<p>Send out activation emails</p>
+</li>
+</ol>
+</li>
+</ol>
+<p> </p>
+<h1 id="h_01J6A1G9Q2FPS35FW4TJ6GGVKD">FAQ</h1>
+<p><strong>Why is a mirror installation necessary?</strong></p>
+<p>A mirror installation allows for thorough testing without affecting the live production environment, ensuring that any issues can be identified and resolved before going live.</p>
+<p><strong>What happens if issues are found during the test phase?</strong></p>
+<p>Any issues identified during the test phase should be resolved before proceeding to the production phase to ensure a smooth rollout.</p>
+<p><strong>Why are activation emails sent out last?</strong></p>
+<p>Activation emails are sent out after the production environment is fully configured and tested to ensure that users can access the system immediately upon receiving the email.</p>

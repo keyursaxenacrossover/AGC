@@ -1,0 +1,57 @@
+ or edit the users of a particular unit, open the <strong>User Management</strong> tab in the detail view of this unit. The user list lists all the participants of the unit with their first names, last names, email addresses, and roles. Click on the <strong>Edit</strong> icon to view the details of a particular user.</p>
+<p class="wysiwyg-text-align-justify"><strong>Display and search functions</strong></p>
+<p class="wysiwyg-text-align-justify">As usual, you can modify the list display with the help of different display and search functions:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The search function above the list allows you to easily locate any particular user.</p>
+</li>
+<li>
+<p>By clicking on the <strong>View</strong> button you can display a dialog that allows you to specify whether the various table columns are to be shown or hidden. You can also change the number of rows per page. After you have confirmed by clicking on <strong>Send</strong> the table will be expanded accordingly.</p>
+</li>
+<li>
+<p>With the<strong> Show users from subunits</strong> button, you can expand the display by the users of the subunit. (This button is only visible if you hold access rights to the subunits.)</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If you want users to be able to view the user list, you need to assign the right <em>manager_view</em> to the appropriate roles.</p>
+<h3 id="detail-view-in-the-unit-specific-user-list" class="wysiwyg-text-align-justify"><strong>Detail view in the unit-specific User List</strong></h3>
+<p class="wysiwyg-text-align-justify">In the unit-specific user management, you also open the detail view by clicking on the <strong>Edit</strong> icon. Here you will find:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>the account data</p>
+</li>
+<li>
+<p>the role in the current unit</p>
+</li>
+</ul>
+<h3 id="actions-of-the-user-management" class="wysiwyg-text-align-justify"><strong>Actions of the user management</strong></h3>
+<p class="wysiwyg-text-align-justify">Both in the centralized user management and in the unit-specific lists various actions are available to be applied to individual, selected, or all users.</p>
+<p class="wysiwyg-text-align-justify"><strong>Actions for editing individual users</strong></p>
+<p class="wysiwyg-text-align-justify">The following actions that you can call up by clicking the icons in the “Actions” column are used for editing individual users, such as, for example, to subsequently edit or view the allocated units.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Edit</strong>: Opens the edit dialog</p>
+</li>
+<li>
+<p><strong>Show allocated reports</strong>: A pop-up window shows a list of the reports stored for the respective user. If you want users to be able to use this function, you need to assign the right <em>manager_view_report_alloc</em> to the appropriate roles.</p>
+</li>
+<li>
+<p><strong>Show allocated units</strong>: A pop-up window shows a list of the units that the respective user is allocated to. If you want users to be able to use this function, you need to assign the right<em> manager_view_node_alloc</em> to the appropriate roles.</p>
+</li>
+<li>
+<p><strong>Delete user allocations</strong>: This function is located in the unit-specific user management. The function removes the allocation of the users to the current unit. Please note: The user accounts are not deleted, the users can still log into the <em>Org Processor</em> and see at least the start page, and maybe also other units that they have not allocated to yet. If you want to prevent this, use the action “Lock accounts” (see below). If you want to remove users from the system completely,_use the<strong> Delete</strong> function of the centralized user management.</p>
+</li>
+<li>
+<p><strong>Delete</strong>: This function is only available in the centralized user management. The desired users are deleted from the system following a security prompt. Please note: Users that are allocated to a reshipment point or a logistics site cannot be deleted. You have to assign the responsibility to another user first.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Actions for editing all or selected users</strong></p>
+<p class="wysiwyg-text-align-justify">The following actions can be applied to selected or all users:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Mail users</strong>: This function allows you to contact the selected users via e-mail. How you can enable your users to e-mail other users in turn.</p>
+</li>
+<li>
+<p><strong>Generate passwords</strong>: This function allows you to change the selected users’ passwords or to generate new ones. If you want users to be able to use this function, you need to assign the right <em>manager_set_pw</em> to the appropriate roles.</p>
+</li>
+<li>
+<p><strong>Reset passwords</strong>: This function allows you to reset the selected users’ passwords to the initial password. If you want users to be

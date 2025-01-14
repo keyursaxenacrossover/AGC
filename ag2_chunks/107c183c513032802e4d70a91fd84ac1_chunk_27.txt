@@ -1,0 +1,71 @@
+ are no account data to be entered, but allocations between user accounts, units, and roles. The import file contains the following columns:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The column “u_email”: The e-mail address serves as the linking variable.</p>
+</li>
+<li>
+<p>The column “metaname”: The meta name indicates which unit the user is to be allocated to.</p>
+</li>
+<li>
+<p>The column “role”: In this column, you enter the abbreviation for the role the user is to assume in the unit identified by the meta name.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The rows list the individual allocations user:unit.</p>
+<p class="wysiwyg-text-align-justify">If a user is to be allocated to multiple units, you have to list him multiple times. In the example shown, the user “Frank Sample” is allocated to one unit as owner and to a second unit as a report recipient.</p>
+<p class="wysiwyg-text-align-justify">Please note:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>A user can not assume multiple roles within one unit.</p>
+</li>
+<li>
+<p>A user cannot assume the same role twice within a branch of the structure, i.e., he cannot have the same role in a unit and in its parent unit.</p>
+</li>
+</ul>
+<h3 id="subsequently-editing-user-data" class="wysiwyg-text-align-justify"><strong>Subsequently editing user data</strong></h3>
+<p class="wysiwyg-text-align-justify">From time to time, you may have to edit existing user accounts, for example, due to changes in the roles of users. The most important edit options are described in the following.</p>
+<p class="wysiwyg-text-align-justify"><strong>Changing account data</strong></p>
+<p class="wysiwyg-text-align-justify">If you want to change the account data of a user, open the detail view of this user (either in the centralized user management or in the unit-specific user list). Here you can edit the account data of the user.</p>
+<p class="wysiwyg-text-align-justify"><strong>Changing roles and allocations to units</strong></p>
+<p class="wysiwyg-text-align-justify">If you want to change or delete the unit allocation of a user, there are two alternatives to choose from, depending on whether only the allocation to one unit is to be changed or multiple allocations.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>If you want to change the role of a user within a particular unit, locate this user in the user list.</p>
+<ul>
+<li>
+<p>Open the detail view as described above (either in the centralized user management or in the unit-specific user list). Here you can change the role of this user within the current unit.</p>
+</li>
+<li>
+<p>If you want to delete this allocation altogether, select the user from the list and use either the <strong>Delete</strong> icon or the action <strong>Delete user allocations</strong>.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>If you want to view and edit the allocations of a user to organizational units in a centralized manner, do this via the <strong>Organizational Units</strong> tab in the detail view in the centralized user management. The search function in the upper section allows you to restrict the list of organizational units. For example, with “Show only linked units” you can restrict the list to those units that the user is already allocated to.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Editing passwords</strong></p>
+<p class="wysiwyg-text-align-justify">Occasionally, you may have to provide “first aid” to users working with the <em>Org Processor</em>. One of the most common problems is forgotten passwords. In this case, you can help by resetting the initial password or generating a new password and then mailing it to the user:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>If you want to reset the initial passwords of one or more users, or if you want to generate a new password, locate the respective users in the user list and then use either the action “Generate passwords” or the action “Reset passwords”. After that, mail the passwords to the users again.</p>
+</li>
+<li>
+<p>The detailed view of the users offers you additional edit options:</p>
+<ul>
+<li>
+<p>As long as the user has not logged in, i.e., as long as he has not changed his initial password, you can view the initial password.</p>
+</li>
+<li>
+<p>As soon as the user has changed the password, you cannot view it any longer. So, if the user loses or forgets his password, you have to either reset the password or generate a new one and mail it to the user.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Alternatively, refer your users to the “Reset password” dialog.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If you want users to be able to change the account data and allocations of other users, you need to assign the right manager_edit and/or manager_alloc to the appropriate roles.</p>
+<p class="wysiwyg-text-align-justify">Please note:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>A user can not assume

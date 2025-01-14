@@ -1,0 +1,87 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1054867750">https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1054867750</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<p></p><ul>
+<li><p>Create installation based on <a href="https://it.globalpark.de/twiki/bin/view/Support/SupportBremennewInstallation">new installation in Bremen</a></p></li>
+<li>
+<p>Activate the following <strong>modules</strong> in the config of EFS (admin area, log in with root account)</p>
+<ul><li><p>loft, website</p></li></ul>
+</li>
+<li>
+<p>Optional <strong>modules</strong>:</p>
+<ul>
+<li><p>receipt</p></li>
+<li><p>HR reporting (it still needs to be clarified whether this module still is maintained and supported)</p></li>
+<li>
+<p>osm (Offline Survey Module), see (<a href="https://it.globalpark.de/twiki/bin/view/Support/SupportEFSHybridExtension">EFSHybridExtension</a>)</p>
+<ul><li>
+<p>Dennie created a script that helps us generate the needed key (create key manually? see <a href="https://it.globalpark.de/twiki/bin/view/Support/SupportEFSHybridExtension">EFSHybridExtension</a>)</p>
+<ul>
+<li><p>ssh bre104v</p></li>
+<li><p>cd /home/visser/osm</p></li>
+<li><p>php createOsmLib.php [Installation name]</p></li>
+<li><p>Log in to installation using the root account</p></li>
+<li>
+<p>Open the config tab under Options &gt;&gt; Platform cockpit</p>
+<ul>
+<li><p>Add key in variable "pdflib_licence_client_key" (make sure to keep line breaks!)</p></li>
+<li><p>Add server URL to "pdflib_licence_server_url" (i.e.<a href="http://info.opst.de/www/pdflib_licence_server.php?v=7">http://info.opst.de/www/pdflib_licence_server.php?v=7</a>)</p></li>
+</ul>
+</li>
+<li>
+<p>Add key to database</p>
+<ul>
+<li><p>mysql -h 127.0.0.1 -u gpadmin -P 5428 -A opst_info</p></li>
+<li>
+<p>INSERT INTO pdflib_licence_clients SET gpid=[GPID],public_key='[PUBLIC_KEY]' *</p>
+<pre><code class="language-text">                      INSERT INTO pdflib_licence_clients SET gpid=[gpid],public_key="-----BEGIN CERTIFICATE-----
+                     [Some
+                     data
+                     with
+                     line breaks]
+                     -----END CERTIFICATE-----";
+                    </code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li></ul>
+</li>
+</ul>
+</li>
+<li><p>Set <strong>installation_type</strong> to "leadership"</p></li>
+<li><p>Check whether folder "../privatedocs/website/reports/" exists on the server</p></li>
+<li>
+<p>Execute healself</p>
+<ul>
+<li><p>cd www</p></li>
+<li><p>php support/healself.php</p></li>
+</ul>
+</li>
+</ul><p><strong>Specialities:</strong> <br>Reporting+ is not available in Employee (ES) and Multi Source Feedback (MSF) projects because the Data Voayager is designed to be used in this case. In case of MSF Projects the whole "statistics" part was removed. There already are Jira tickets requesting that this feature is made available again.</p>P 5428 -A opst_info</p></li>
+<li>
+<p>INSERT INTO pdflib_licence_clients SET gpid=[GPID],public_key='[PUBLIC_KEY]' *</p>
+<pre><code class="language-text">                      INSERT INTO pdflib_licence_clients SET gpid=[gpid],public_key="-----BEGIN CERTIFICATE-----
+                     [Some
+                     data
+                     with
+                     line breaks]
+                     -----END CERTIFICATE-----";
+                    </code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li></ul>
+</li>
+</ul>
+</li>
+<li><p>Set <strong>installation_type</strong> to "leadership"</p></li>
+<li><p>Check whether folder "../privatedocs/website/reports/" exists on the server</p></li>
+<li>
+<p>Execute healself</p>
+<ul>
+<li><p>cd www</p></li>
+<li><p>php support/healself.php</p></li>
+</ul>
+</li>
+</ul><p><strong>Specialities:</strong> <br>Reporting+ is not available in Employee (ES) and Multi Source Feedback (MSF) projects because the Data Voayager is designed to be used in this case. In case of MSF Projects the whole "statistics" part was removed. There already are Jira tickets requesting that this feature is made available again.</p>

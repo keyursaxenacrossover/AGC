@@ -1,0 +1,61 @@
+" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 127.292px; padding: 7px 10px !important;">Deleted</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 230.66px;">8</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 667.604px;">
+<p>If you delete panelists, they, or to be more exact the remaining rests of their anonymized data records, will be assigned this status.</p>
+<p>Deleted panelists are removed past recovery: You cannot access the data records anymore, the participant data are deleted completely. Only data which are needed to maintain the consistency of panel statistics and survey results and community posts are preserved.</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 127.292px; padding: 7px 10px !important;">Tester</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 230.66px;">16</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 667.604px;">
+<p>This special status is used e.g. for the panelist accounts of users who check the functionality of a panel or a newly created survey before it is finally released.</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 127.292px; padding: 7px 10px !important;">Moderator</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 230.66px;">32</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 667.604px;">
+<p>This special status is used e.g. for the panelist accounts of users responsible for forum moderation in Community panels.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="confluence-information-macro confluence-information-macro-information conf-macro output-block" data-hasbody="true" data-macro-id="ad73a63c-fb75-4f4b-b4c1-d416743d3e2a" data-macro-name="info">
+<p class="title">Note: <span style="color: #333333;">The list of panel statuses cannot be extended.</span></p>
+<p><strong>Configuring Panel Statuses</strong></p>
+<p>You can configure panel statuses in the People → Panel configuration → Panel status menu. The overview lists all existing statuses with the following information and editing options:</p>
+<ul>
+<li>
+<strong>Label</strong>: Change the names of the panel statuses (one language only).</li>
+<li>
+<strong>Number of panelists</strong>: Shows how many panelists are assigned to each status.</li>
+<li>
+<strong>Activated</strong>: Mark user-defined statuses to be used by ticking the checkboxes. Unused statuses are hidden and cannot be assigned.
+<ul>
+<li>All panel statuses are initially activated.</li>
+<li>Default statuses cannot be deactivated.</li>
+<li>User-defined statuses assigned to panelists cannot be deactivated.</li>
+<li>Be aware of automatic rules that may still assign deactivated statuses.</li>
+</ul>
+</li>
+<li>
+<strong>Preselected in sampling</strong>: Define which statuses are preselected in sampling by ticking the checkboxes.</li>
+</ul>
+<p>Configuring panel status requires write rights for “panel_status”.</p>
+<p><strong>Changing Panel Status Assignment in Panel Processes</strong></p>
+<p>Panel status changes are usually automatic, but you can control assignments in some processes:</p>
+<ul>
+<li>
+<strong>Panel login</strong>: Define allowed statuses in the field “Panel login is possible for panelists with the following panel statuses” in Website → Global configuration.</li>
+<li>
+<strong>Participation in panel surveys</strong>: Define allowed statuses in the field “Participation in panel surveys is possible for panelists with the following panel statuses” in Website → Global configuration.</li>
+<li>
+<strong>Participation in master data surveys</strong>: Define allowed statuses in the field “Participation in master data surveys is possible for panelists with the following panel statuses” in Website → Global configuration.</li>
+<li>
+<strong>Status upon registration</strong>: Set in “Panel status assigned during registration” in the Registration form module (default: “Admitted temporarily”).</li>
+<li>
+<strong>Status after quitting membership</strong>: Set in “Panel status after quitting membership” in the Quit membership form module (default: “Inactive”). In older panels, find this in Website → {Selected language version} → Configuration tab → End of membership.</li>
+</ul>
+<p><strong>Changing the Panel Status of Individual Panel

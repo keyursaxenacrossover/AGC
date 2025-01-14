@@ -1,0 +1,73 @@
+ only executed as long as the project is in one of the following statuses: “created”, “survey compiled”, “active”, and “no further participations”. Once the project status has changed to “inactive”, “finished” or “archived”, the update is triggered one last time. Afterward, the rule will be deleted and the automated update deactivated.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">You will find this function in the<strong> Report </strong>→ <strong>Report settings</strong> menu on the General tab. Please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Tick the “Update report data automatically” checkbox.</p>
+</li>
+<li>
+<p>Specify the first day of execution and the time. It is recommended to use periods when the server traffic is low.</p>
+</li>
+<li>
+<p>Define the execution interval. You can select x days, weeks, or months.</p>
+</li>
+<li>
+<p>Confirm with <strong>Save</strong>.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Completed report files can be updated as well. This is useful, for example, if you want to offer fresh results for download on<em> EFS Survey Status</em>. Additionally, you will have the choice to save the last ten exports. If this option is checked, the latest export will not be overwritten by a later one.</p>
+<p class="wysiwyg-text-align-justify">Just go to the export dialog, select Automatic export update, and configure the update process as explained above.</p>
+<h3 id="restricting-access-to-reporting" class="wysiwyg-text-align-justify">
+<strong>Restricting access to </strong><em><strong>Reporting+</strong></em>
+</h3>
+<p class="wysiwyg-text-align-justify">The rights system of <em>EFS</em> provides you with the means to control access to both<em> Reporting+</em> and the created reports.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Access to <em>Reporting+</em> is protected by the new ACL right <em>report_reporting</em>. Your staff needs to write access to see the menu item EFS Reporting+ and to use the tool.</p>
+</li>
+<li>
+<p>With the new <em>EFS</em> ACL right<em> reporting_plus_only</em> it is possible to restrict the <em>EFS</em> user interface to Reporting+ only. With this user right being active, any other functionality is disabled. Your staff needs read access for at least one <em>EFS</em> project. Users with this right will jump directly to the project list after login. By clicking on a project <em>Reporting+</em> will be launched.</p>
+</li>
+<li>
+<p>This right should not be used, if users need to have additional rights on top of <em>Reporting+</em>, such as access to the field report.</p>
+</li>
+<li>
+<p><em>area www</em> is needed for accessing /www. In this context, your staff needs read and write access.</p>
+</li>
+<li>
+<p>If you handle the distribution of the reports created with <em>EFS Reporting+</em> using <em>EFS Survey Status</em>, you can control access to the individual files via ACL and object rights as usual.</p>
+</li>
+<li>
+<p>The conventional EFS Reporting continues to be protected by the right<em> report_onlinereport</em>.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The recommended ACL rights combination for <em>Reporting+</em> is the following:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>area_www</p>
+</li>
+<li>
+<p>report_reporting</p>
+</li>
+<li>
+<p>reporting_plus_only</p>
+</li>
+</ul>
+<h2 id="building-a-report-structure" class="wysiwyg-text-align-justify"><strong>Building a report structure</strong></h2>
+<p class="wysiwyg-text-align-justify">A report can only be edited by one user at a time. If you open a report that somebody else is already working on, it will be displayed in read-only mode. The<br>drag-and-drop function and other actions will be disabled, and all icons, buttons, and settings will be greyed out. Creating a new report or opening an existing report via the report manager will take you to the actual edit dialog of <em>EFS Reporting+</em>.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The Sources window on the left-hand side contains all available source data, recodes, and structuring elements such as filters for restricting the base and split dimensions for creating contingency tables.</p>
+</li>
+<li>
+<p>In the Structure window, you build your report.</p>
+</li>
+<li>
+<p>In the Workpad on the right-hand side, you can open and edit individual tables and charts.</p>
+</li>
+<li>
+<p>In the <strong>View</strong> menu, you can define how the questions shall be labeled in the sources and structure windows. By default, the question types and titles are displayed. Alternatively, you can have the question texts or question IDs displayed. Please note that this function only serves as an aid to orientation. Which information will be displayed in the report will be configured elsewhere.</p>
+</li>
+<li>
+<p

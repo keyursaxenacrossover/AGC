@@ -1,0 +1,67 @@
+ calculation interval in the Update interval tab:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>Tick “Enable automatic PCI calculation”.</li>
+<li>Set the initial execution date and time.</li>
+<li>Select the interval type (hour, day) and value (e.g., every 3 days).</li>
+<li>Save the settings.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21018302779922">
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify">To execute a manual PCI update, click “Update PCI values now” on the PCI codes tab and confirm.</p>
+<h2 id="panel-tracking" class="wysiwyg-text-align-justify">Panel Tracking</h2>
+<p class="wysiwyg-text-align-justify">The panel tracking feature allows you to track and measure response behavior in panel and master data surveys. This includes tracking the number of invitations, completed surveys, and sample memberships over time. This data helps improve panel quality and meet ESOMAR guidelines.</p>
+<p class="wysiwyg-text-align-justify"><strong>Functional Scope</strong>:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<strong>Counter Variables and Ratios</strong>: Updated based on panelists’ behavior, with derived ratios for reporting and analysis.</li>
+<li>
+<strong>Data Viewing and Usage</strong>: Tracking data can be viewed or used for individual panelists, groups, the entire panel, grouping filters, or export for evaluation.</li>
+<li>
+<strong>Storage and Update</strong>: Data is stored for 380 days and updated once daily. The update time can be changed.</li>
+<li>
+<strong>Tracking Intervals</strong>: You can define three tracking intervals. Deactivating tracking data collection for specific surveys is possible via the “Taken into account in tracking?” field in project information.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Configuring the Tracking</strong>:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Update Timing</strong>:</p>
+<ul>
+<li>Change the daily update time (default is 00:00 GMT) to suit your panel’s time zone.</li>
+<li>Prefer low-traffic times, such as at night.</li>
+</ul>
+</li>
+<li>
+<p><strong>Tracking Intervals</strong>:</p>
+<ul>
+<li>Default intervals are 4, 8, and 12 weeks.</li>
+<li>Change intervals as needed, but additional intervals cannot be defined.</li>
+</ul>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Steps to Configure</strong>:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>Go to People → Panel configuration → Panel tracking (requires read rights for “panel_config”).</li>
+<li>View the time of the most recent update.</li>
+<li>In the “Time of update” field, change the daily update time as necessary.</li>
+<li>Adjust the intervals in the “Interval value” fields if needed.</li>
+<li>Click Save to confirm the settings.</li>
+</ol>
+<h2 id="panel-statuses" class="wysiwyg-text-align-justify">Panel Statuses</h2>
+<p class="wysiwyg-text-align-justify">The most important attribute of the panelists is their panel status, which describes their current role and activity. In a standard panel, statuses include “admitted temporarily”, “active”, “inactive”, and “deleted”. After registration, a candidate gets the status “admitted temporarily” and is assigned “active” status upon completing the master data survey. Panel statuses are characteristics of the system variable “pstatus” and are usually assigned automatically.</p>
+<p class="wysiwyg-text-align-justify"><strong>Customizing Panel Statuses in People</strong>:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Control which panel statuses are assigned in various panel processes (e.g., allowing "inactive" panelists to log in).</li>
+<li>Utilize additional user-defined statuses if needed.</li>
+<li>Change the names of all statuses.</li>
+<li>Deactivate any redundant statuses.</li>
+<li>Special statuses for specific roles and functions, such as “tester” status for functionality checks (allowing repeated survey participation) and “moderator” status for forum moderation.</li>
+</ul>
+<p id="PanelConfiguration-Overviewofthepanelstatuses" class="wysiwyg-text-align-justify"><strong>Overview of the panel statuses</strong></p>
+<p class="wysiwyg-text-align-justify">The table provides an overview of the panel statuses and their meanings in a normally configured standard panel.</p>
+<p class="wysiwyg-text-align-justify">Codes and characteristics of the “pstatus” variable:</p>
+<div class="table-wrap wysiwyg-text-align-justify">
+<div class="table-wrap">
+<table class="relative-table wrapped tablesorter tablesorter-default confluenceTable" style="margin: 0px auto; border-collapse: collapse; width: 1080px; height: 788px;" border="1">
+<colgroup> <col style="width: 161.695px;"> </colgroup> <colgroup> <col style="width: 296.203px;"> </colgroup> <colgroup> <col style="width: 830.062px;"> </colgroup>
+<tbody>
+<tr class="tablesorter-headerRow">
+<th class="tablesorter-header sortableHeader tablesort

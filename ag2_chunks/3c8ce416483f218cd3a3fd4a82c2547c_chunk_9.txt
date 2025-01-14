@@ -1,0 +1,105 @@
+.573px; height: 60px;">
+<p>see above</p>
+</td>
+</tr>
+<tr style="height: 31px;">
+<td style="width: 179.08px; height: 31px;">
+<p>Prevent re-use</p>
+</td>
+<td style="width: 515.573px; height: 31px;">
+<p>In the period specified (see below), a password cannot be used again.</p>
+</td>
+</tr>
+<tr style="height: 31px;">
+<td style="width: 179.08px; height: 31px;">
+<p>Re-use interval</p>
+</td>
+<td style="width: 515.573px; height: 31px;">
+<p>see above</p>
+</td>
+</tr>
+<tr style="height: 60px;">
+<td style="width: 179.08px; height: 60px;">
+<p>Validity period for the “Reset password” link</p>
+</td>
+<td style="width: 515.573px; height: 60px;">
+<p>After the period specified, the “Reset password” link will not be valid anymore.</p>
+</td>
+</tr>
+<tr style="height: 174px;">
+<td style="width: 179.08px; height: 174px;">
+<p>Activate security question</p>
+</td>
+<td style="width: 515.573px; height: 174px;">
+<p>Optionally, a security question can be used.</p>
+<ul>
+<li>
+<p>If you want to use this feature, please add appropriate entry fields and check expressions to the forms <strong>Registration form,</strong> and <strong>Change account data</strong>.</p>
+</li>
+<li>
+<p>Dedicated participant variables “u_sec_quest” and “u_sec_quest_answer” (newly introduced with EFS 9.1) allow to store security question and answer.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr style="height: 134px;">
+<td style="width: 179.08px; height: 134px;">
+<p>Activate brute force protection</p>
+</td>
+<td style="width: 515.573px; height: 134px;">
+<p>This option activates brute force protection dedicated to the answering of the security question. If the security question is entered wrong too many times, this feature will temporarily disable the panelist's account. Find more information on this topic above under "Activate brute force login protection".</p>
+</td>
+</tr>
+<tr style="height: 232px;">
+<td style="width: 179.08px; height: 232px;">
+<p>Brute force account deactivation time (in seconds)</p>
+</td>
+<td style="width: 515.573px; height: 232px;">
+<p>In this field, you specify for how long the panelist accounts are to be suspended upon triggering the brute force protection via the security question.</p>
+<p>Please note:</p>
+<ul>
+<li>
+<p>The messages "brute_force" and "brute_forced", used in case of a suspension, can be edited in the <strong>Website → Standard content → Messages</strong> menu.</p>
+</li>
+<li>
+<p>Manual reactivation ahead of time is not possible.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr style="height: 89px;">
+<td style="width: 179.08px; height: 89px;">
+<p>Number of allowed failed login attempts</p>
+</td>
+<td style="width: 515.573px; height: 89px;">
+<p>In this field, you specify how many failed attempts are allowed to answer the security question. If the specified number is exceeded, the respective panelist account will be suspended.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"><strong>Profiles</strong></p>
+<table class="wysiwyg-text-align-justify" style="height: 195px;" border="1" width="716" data-layout="full-width" data-table-width="1473.0605999999998">
+<colgroup> <col style="width: 117.0px;"> <col style="width: 373.0px;"> </colgroup>
+<tbody>
+<tr style="height: 32px;">
+<th class="wysiwyg-text-align-center" style="width: 167.587px; height: 32px;">
+<p><strong>Description</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 541.111px; height: 32px;">
+<p><strong>Explanation</strong></p>
+</th>
+</tr>
+<tr style="height: 163px;">
+<td style="width: 159.566px; height: 163px;">
+<p>Master data group 1 to 5</p>
+</td>
+<td style="width: 533.09px; height: 163px;">
+<p>Optionally, the visibility of master data may be made configurable.</p>
+<p>To keep the profile settings form clearly structured despite large numbers of master data variables, these variables are grouped. The panelists can then define the visibility for each group.</p>
+<p>In this section, you can assemble the groups. Use the Ctrl or Shift keys to select multiple variables for each group.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"><strong>Performance</strong></p>
+<table class="wysiwyg-text-align-justify" style

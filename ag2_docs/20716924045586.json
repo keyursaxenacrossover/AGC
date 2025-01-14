@@ -1,0 +1,30 @@
+{
+    "id": 20716924045586,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/20716924045586.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20716924045586-Initial-IdP-Testing-with-Test-Application",
+    "author_id": 369584192734,
+    "comments_disabled": false,
+    "draft": false,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20714711445138,
+    "created_at": "2024-08-12T19:59:13Z",
+    "updated_at": "2024-08-28T15:34:12Z",
+    "name": "Initial IdP Testing with Test-Application",
+    "title": "Initial IdP Testing with Test-Application",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-08-28T15:34:09Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075294,
+    "content_tag_ids": [],
+    "label_names": [],
+    "body": "<div class=\"flex-shrink-0 flex flex-col relative items-end\">\n<div class=\"pt-0\">\n<div class=\"gizmo-shadow-stroke flex h-8 w-8 items-center justify-center overflow-hidden rounded-full\">\n<div class=\"h-full w-full\">\n<h1 id=\"h_01J6CSXTC68G8YEPFZDAD33DC2\" class=\"gizmo-shadow-stroke overflow-hidden rounded-full\"><span style=\"font-size: 1.2em; font-weight: 600;\">Overview</span></h1>\n</div>\n</div>\n</div>\n</div>\n<div class=\"group/conversation-turn relative flex w-full min-w-0 flex-col agent-turn\">\n<div class=\"flex-col gap-1 md:gap-3\">\n<div class=\"flex max-w-full flex-col flex-grow\">\n<div class=\"min-h-[20px] text-message flex w-full flex-col items-end gap-2 break-words [.text-message+&amp;]:mt-5 overflow-x-auto whitespace-normal\" dir=\"auto\" data-message-author-role=\"assistant\" data-message-id=\"a712d449-6ec6-447c-bac3-a0ad47787577\">\n<div class=\"flex w-full flex-col gap-1 empty:hidden first:pt-[3px]\">\n<div class=\"markdown prose w-full break-words dark:prose-invert light\">\n<p>This guide provides instructions for performing initial Identity Provider (IdP) testing using a test application within the Okta environment. The testing process is an essential first step before enabling full Tivian Access, particularly when federating with an external IdP.</p>\n<p> </p>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n<p>Enabling Tivian Access should ideally be a two-step process. Especially if an external IdP should be federated.</p>\n<ul>\n<li>The frist step is to connect Okta to the external IdP and check that connection. The second would be to enabled EFS.</li>\n<li>For the first step there is a test-application in our Okta Production Account that could be reused. It is called “Tivian Testapplication” and points to <a href=\"https://jwt.ms\">jwt.ms</a>. The purpose of this application is to check if the connection to an external IdP works and the correct values are in the application before enabling anything in EFS.</li>\n</ul>\n<p> </p>\n<h1 id=\"header-1\">How to check?</h1>\n<ol>\n<li>\n<p>First setup the tenant and the IdP in Okta (also think about the correct routing rules) also see Okta tenant setup and Identity Provider Setup</p>\n</li>\n<li>\n<p>Create a link to the login of that appliaction. You can just use the following link<br><strong>https://access.questback.com/oauth2/aus1x1935G6IFpNvj416/v1/authorize?client_id=0oa2bqfp37yPmZ6i0416&amp;nonce=eff0ac6a-72a1-5964-b6f6-914e6f86926b&amp;redirect_uri=https%3A%2F%2Fjwt.ms%2F&amp;scope=openid+email+profile+offline_access&amp;state=state-0ee1775554ef915790ea00f1034b7bfb&amp;response_type=id_token%20token</strong></p>\n</li>\n<li>\n<p>Send the link to the respective client/tenant so that the client can check with one of their accounts if the login works (in case we have a test-account in their IdP we can test on our own). This could also be part of an interactive session with the client.</p>\n</li>\n<li>\n<p>If everything is configured correctly, the client should be able to login at the configured IdP and see a screen on jwt.ms that will show the correct token results. The token has to contain <em>email</em>, <em>first_name</em> and <em>last_name </em>(see the following screenshot)</p>\n</li>\n</ol>\n<p><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716916522642\" alt=\"questback_test_application.PNG\"></p>\n<p> </p>\n<p> </p>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

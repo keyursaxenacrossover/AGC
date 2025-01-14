@@ -1,0 +1,106 @@
+ of paper-pencil questionnaires</p>
+</td>
+<td>
+<p>The sum of the paper-pencil questionnaires to be distributed in this unit and all its subunits. This column is only visible if either of the survey types “Paper-pencil survey” or “Hybrid survey” has been selected.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>If adjustment of target figures is activated: Correction factor</p>
+</td>
+<td>
+<p>The direct correction factor, i.e. the value entered for this unit.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>If adjustment of target figures is activated: Correction factor abs.</p>
+</td>
+<td>
+<p>Aggregated correction factor, i.e. the sum of correction values for this unit and all its subunits.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>N</p>
+</td>
+<td>
+<p>Depending on the survey type chosen and the activation of target figure adjustment, this column contains the following sum:</p>
+<p>(aggregated target value paper-pencil questionnaire data) + (aggregated target value participant data) + (correction factor abs.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Staff (preset value)</p>
+</td>
+<td>
+<p>Preset number of employees of the respective unit to participate in the survey.</p>
+<p>This value is preset when creating the unit and serves to check the target numbers calculated based on the list of participants and the number of requested questionnaires.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Process status</p>
+</td>
+<td>
+<p>The icons help you to identify the process status of the units and potential problems at a glance:</p>
+<ul>
+<li>
+<p>A white F icon signals that a unit has been released for filtering. If a unit is actually used in a filter definition, the icon is lilac.</p>
+</li>
+<li>
+<p>The lock icon indicates whether the unit is still released for editing or is already locked.</p>
+</li>
+<li>
+<p>The traffic light icon indicates the editing status. The symbols have the following meanings:</p>
+</li>
+</ul>
+<p>Red: No preset number of employees has been defined yet, no participant data have been stored, and/or no paper-pencil questionnaires have been requested.</p>
+<p>Yellow: No participant data have been stored for the current unit and/or no paper-pencil questionnaires have been requested. The preset number has already been defined, though. Also, participant data have been stored, and/or paper-pencil questionnaires have been requested for the subunits.</p>
+<p>Green: The preset number of employees has been defined for the current unit, participant data have been stored and paper-pencil questionnaires have been requested.</p>
+<p>Exclamation point: The preset number of employees for this unit is considerably lower than the number of requested paper-pencil questionnaires or the number of registered participants.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Actions</p>
+</td>
+<td>
+<p>The icons and checkboxes in this column provide access to a variety of actions</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify">The calculation of the sum of all participants in HR Reporting differs slightly from the Org Processor values. Participants with disposition codes 13, 14, and 15 are not included in this sum in the Org Processor but are included in HR reporting.</p>
+<h3 id="actions" class="wysiwyg-text-align-justify"><strong>Actions</strong></h3>
+<p class="wysiwyg-text-align-justify">A variety of actions are available that can be applied to individual, selected, or all units of the organizational structure.</p>
+<p class="wysiwyg-text-align-justify"><strong>Actions for editing individual units</strong></p>
+<p class="wysiwyg-text-align-justify">The following actions are used to edit individual units, e.g., to subsequently edit or to move units to another position. They are mostly used during the construction phase.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Edit</strong>: Opens the dialog with the data of the respective unit for subsequent editing.</p>
+</li>
+<li>
+<p><strong>Create unit</strong>: Opens the dialog where you can enter the data for a new unit. By default, this unit is created below the respective unit.</p>
+</li>
+<li>
+<p><strong>Export to Excel</strong>: Triggers the export of the respective unit and all subunits.</p>
+</li>
+<li>
+<p><strong>Import structure</strong>: Allows the import of new substructures under the respective unit.</p>
+</li>
+<li>
+<p><strong>Participants</strong>: Opens the <strong>Participants</strong> tab in the detailed view of the respective unit.</p>
+</li>
+<li>
+<p><strong>Move up</strong> / <strong>down</strong>: Moves the respective unit and all its subunits up or down one position in its branch. Please note that this will merely modify the display while the structure remains unchanged.</p>
+</li>
+<li>
+<p><strong>Adjust target figure</strong>: You can define a correction value that will be applied to the aggregated participant numbers of the respective unit.</p>
+</li>
+<li>
+<p><strong>Delete</strong>: This option allows you to delete the respective unit while moving any existing participant data or subunits to another position.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">These actions are located in

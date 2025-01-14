@@ -1,0 +1,80 @@
+<h1 id="h_01J6CQZD727JKMPP7A5BPA380N">Overview</h1>
+<p>This guide provides an in-depth explanation of the current Okta solution used to manage multiple tenants and admins within a unified Okta organization. Given the diverse requirements and use cases across different companies, this solution is designed to efficiently handle multi-tenancy while maximizing synergies and reducing administrative overhead.</p>
+<p> </p>
+<ul>
+<li><a href="#header-1">Why this solution?</a></li>
+<li><a href="#h_01J6CQHWCN1QBBKWTXCE6H54HP">Manage federated Users</a></li>
+<li><a href="#h_01J6CQKXZAYWRX4J2VJMD6TVF6">Manage local users</a></li>
+<li><a href="#h_01J6CQSXA72SE18M1J6ECW65WF">Special users and API tokens</a></li>
+<li><a href="#h_01J6CQWJXN6S30P091GTAD8E7K">Manage Groups</a></li>
+</ul>
+<p>The current Okta solution is used for all tenants as well as for admins accessing Okta itself. Thus there are a lot of users from different companies having different requirements and use cases.</p>
+<h2 id="header-1">Why this solution?</h2>
+<p>An alternative to this solution would be to have multiple organizations in Okta with a more separated user base. That would make managing users in Okta a little bit simpler but has the drawback that synergies might not be used as well as if all users are in one Okta organization.</p>
+<p>Another drawback would be the orchestration of Okta organizations instead of handling multi tenancy in one Okta organization.</p>
+<p><u>Synergies are:</u></p>
+<ul>
+<li>
+<p>Configure global settings once and do not replicate across tenants</p>
+</li>
+<li>
+<p>Have one user for different tenants (especially for Tivian)</p>
+</li>
+</ul>
+<p> </p>
+<p>Group based policies and naming conventions are used to take care of different clients/tenants. also see Naming conventions in Okta</p>
+<h2 id="header-3">Our user types in Okta</h2>
+<p>(Hint: There is also a construct called <em>types </em>in the the Okta API - this is not part of the current topic)</p>
+<p>Depending on the setup there are different types of users in our Okta solution (also see Federated Authentication (Federation)).</p>
+<ol>
+<li>
+<p>Installation user - <u>out of scope for Okta user management</u></p>
+</li>
+<li>
+<p>local user: A user that is stored in Okta with credentials. This user will login at Okta directly. also see Manage local users</p>
+</li>
+<li>
+<p>federated user: A user that only has a reference with some values in Okta but not the credentials. This kind of user is federated from an external Identity Provider and will login via the external Identity Provider. User Management possibilities are very limited in this case. also see Manage federated Users</p>
+</li>
+</ol>
+<p> </p>
+<h2 id="h_01J6CQHWCN1QBBKWTXCE6H54HP">Manage federated Users</h2>
+<p>Federated users are users that exist only as a reference in Okta. Okta does not store any of their credentials.</p>
+<p>The user data that is stored for those users in Okta is taken from the external system during the first login to Okta. The user data is not updated once it changes in the external system.</p>
+<p>If there is a user that should be federated but it is not seen Usually Federated User is not Federated .</p>
+<p>The following table lists actions that can be done as well as the effect they cause:</p>
+<table style="height: 2012px;" border="1" width="840" data-layout="wide">
+<colgroup>
+<col style="width: 170.0px;">
+<col style="width: 170.0px;">
+<col style="width: 170.0px;">
+<col style="width: 170.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th style="width: 206.615px;">
+<p><strong>What</strong></p>
+</th>
+<th style="width: 206.615px;">
+<p><strong>When to use</strong></p>
+</th>
+<th style="width: 206.615px;">
+<p><strong>Effect</strong></p>
+</th>
+<th style="width: 206.684px;">
+<p><strong>Notes</strong></p>
+</th>
+</tr>
+<tr>
+<td style="width: 198.594px;">
+<p>Create</p>
+</td>
+<td style="width: 198.594px;">
+<p>Generally never because users are created via JIT (Just-in-Time creation).</p>
+<p>A federated user might be created if JIT provisioning does not work properly. This should better be done by API.</p>
+</td>
+<td style="width: 198.594px;">
+<p>A reference user will be created that is used to create a mapping between our Identity Provider and the external Identity Provider</p>
+</td>
+<td style="width: 198.663px;">
+<p>Do not

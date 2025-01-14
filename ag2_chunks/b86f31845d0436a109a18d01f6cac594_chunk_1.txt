@@ -1,0 +1,83 @@
+ user</li>
+<li>Send password via <a href="https://onetimesecret.com/">https://onetimesecret.com/</a>
+</li>
+</ul>
+</li>
+</ol>
+<p>Note: The customer can check available services by calling the WSDL with the token: <strong><a href="https://customers_domain/service/?handler=soap&amp;wsdl=1&amp;token=[TOKEN]">https://customers_domain/service/?handler=soap&amp;wsdl=1&amp;token=[TOKEN]</a></strong></p>
+<h2 id="customer_test">Customer Test Service Layer on TRIAL Installation (NEED TO CONFIRM WITH TIVIAN FURTHER)</h2>
+<h3 id="first_level_support_todo">First Level Support to do:</h3>
+<ol>
+<li>Create a new user: servicelayer_OrganizationXY</li>
+<li>Add User in Test-Team of the customer</li>
+<li>Create Token and assign user (from step 1)</li>
+</ol>
+<h3 id="after_testing">After testing period is finished:</h3>
+<ul>
+<li>Delete Token</li>
+<li>Delete User 'servicelayer_ORGANIZATION'</li>
+</ul>
+<p><strong>Important:</strong> For installations with multiple organizations, some steps may not be applicable.</p>
+<h2 id="text_template">Text Template for Customers</h2>
+<h3 id="english_template">English Template</h3>
+<p>All service methods "System &gt;&gt; Options &gt;&gt; Service-Layer" are inactive by default. To use a service, please follow these steps:</p>
+<ol>
+<li>To activate a service, click on "No" in column "Activated"</li>
+<li>Grant the team (i.e., "servicelayer") access to a service by editing the "Rights" in column "Actions"</li>
+<li>Grant the team the needed ACL rights</li>
+<li>Grant the team the needed object rights</li>
+</ol>
+<h3 id="german_template">German Template</h3>
+<p>Alle Methoden der Service-Layer "System &gt;&gt; Optionen &gt;&gt; Service-Schicht" sind standardmäßig inaktiv. Um eine Service-Layer-Methode zu verwenden, folgen Sie bitte diesen Schritten:</p>
+<ol>
+<li>Um eine Service-Layer-Methode zu aktivieren, klicken Sie auf "Nein" in der Spalte "Aktiviert"</li>
+<li>Erteilen Sie dem Team Zugriff auf die Methoden der Service-Layer</li>
+<li>Gewähren Sie dem Team die benötigten ACL-Rechte</li>
+<li>Erteilen Sie dem Team die benötigten Objektrechte</li>
+</ol>
+<h2 id="support_requests">Help for Support Requests</h2>
+<p>When handling web service requests, always perform the following checks before forwarding cases to Technical Support:</p>
+<ol>
+<li>
+<p>Is the token valid (expiry date)?</p>
+<ol>
+<li>
+<p>Check if the “<strong>Access date</strong>” of the used token is still in the future → <strong>System &gt; Options &gt; Service-Layer &gt; qb only:: Tokens</strong></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Is the service '[used service]' active?</p>
+<ol>
+<li>
+<p>Check if service is active → <strong>System &gt; Options &gt; Service-Layer</strong></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Does <strong>the team in which the user to whom the used token is assigned have access to the web service?</strong> <strong>Under System &gt; Options &gt; Services &gt;&gt; Actions (rights/paragraph icon)</strong> Check:</p>
+<ol>
+<li>
+<p>Which user/token accesses the used service → <strong>System &gt; Options &gt; Service-Layer &gt; Access log</strong></p>
+</li>
+<li>
+<p>If any of the teams of the user the token is assigned to has object rights for the service → <strong>System &gt; Options &gt; Service-Layer &gt; ‘[used service]’ Actions column &gt; Rights</strong></p>
+</li>
+<li>
+<p>If the used service is limited by an IP range and if the call is within this range → Compare IP in <strong>System &gt; Options &gt;&gt; Service-Layer &gt; Access log</strong> with <strong>System &gt; Options &gt; Service-Layer &gt; ‘[used service]’ column “IP range”</strong></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Does the team in which the user to whom the used token is assigned have the appropriate ACL rights that are required for the functionality that is to be accessed via web service?</p>
+<ol>
+<li>
+<p>Check if any of the teams of the user the token is assigned to has the needed ACL rights → <strong>System &gt; Users &gt; Teams” “Detail view &gt; Change rights of team</strong></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Does any of <strong>the teams of the account the used token is assigned to have access to the object</strong> (i. e. a project)?</p>
+<ol>
+<li>
+<p>Check if the any of the teams of the user the token is assigned to has object rights → <strong>Projects &gt;

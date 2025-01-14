@@ -1,0 +1,147 @@
+>
+<td style="width: 127.847px;">
+<p>Blog</p>
+</td>
+</tr>
+<tr>
+<td style="width: 170.347px;">
+<p>Page module title</p>
+</td>
+<td style="width: 418.351px;">
+<p>Name of the module in the page’s module overview.</p>
+</td>
+<td style="width: 127.847px;">
+<p>Blog</p>
+</td>
+</tr>
+<tr>
+<td style="width: 170.347px;">
+<p>Module template</p>
+</td>
+<td style="width: 418.351px;">
+<p>Module-specific template that controls how data provided by the module are displayed.</p>
+</td>
+<td style="width: 127.847px;">
+<p>func_blog</p>
+</td>
+</tr>
+<tr>
+<td style="width: 170.347px;">
+<p>Template for media display</p>
+</td>
+<td style="width: 418.351px;">
+<p>In this field, you can enter the template that controls how uploaded files are output.</p>
+<p>Images are usually displayed. A download link is available for other file types.</p>
+</td>
+<td style="width: 127.847px;">
+<p>tpl_media_display</p>
+</td>
+</tr>
+<tr>
+<td style="width: 170.347px;">
+<p>Blog section</p>
+</td>
+<td style="width: 418.351px;">
+<p>All blog sections of the respective language versions are available.</p>
+</td>
+<td style="width: 127.847px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 170.347px;">
+<p>Maximum number of posts displayed per page</p>
+</td>
+<td style="width: 418.351px;">
+<p>Limits the length of the display per page. Excess posts are displayed on subsequent pages.</p>
+</td>
+<td style="width: 127.847px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 170.347px;">
+<p>Mail template for thread subscription mail</p>
+</td>
+<td style="width: 418.351px;">
+<p>The subscription feature is activated by selecting a mail template that contains the accompanying text for the notification.</p>
+<p>Available are templates of the “standard mail” type.</p>
+<p>The following wildcards can be used:</p>
+<ul>
+<li>
+<p>#subscription_title#: Title of the section</p>
+</li>
+<li>
+<p>#subscription_post_title#: Title of the new post</p>
+</li>
+<li>
+<p>#subscription_post_link#: Link to post</p>
+</li>
+<li>
+<p>#subscription_unsubscribe#: Link that allows to unsubscribe</p>
+</li>
+</ul>
+<p>Once the feature is activated, <strong>Subscribe-/Unsubscribe</strong> links will be displayed in the blogs.</p>
+<ul>
+<li>
+<p>When panelists have subscribed to a blog they will receive an e-mail notification whenever a new post has been added.</p>
+</li>
+<li>
+<p>Panelists with panel status “inactive” (i.e. usually panelists who left the panel) will not get e-mails.</p>
+</li>
+</ul>
+</td>
+<td style="width: 127.847px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 170.347px;">
+<p>Maximum width of thumbnails (in pixels)</p>
+</td>
+<td style="width: 418.351px;">
+<p>Maximum width of the thumbnails for the images uploaded by the panelists or the moderators.</p>
+</td>
+<td style="width: 127.847px;">
+<p>100</p>
+</td>
+</tr>
+<tr>
+<td style="width: 170.347px;">
+<p>Maximum height of thumbnails (in pixels)</p>
+</td>
+<td style="width: 418.351px;">
+<p>Maximum height of the thumbnails for the uploaded images, see above.</p>
+</td>
+<td style="width: 127.847px;">
+<p>100</p>
+</td>
+</tr>
+<tr>
+<td style="width: 170.347px;">
+<p>Maximum width of scaled images</p>
+</td>
+<td style="width: 418.351px;">
+<p>Maximum width in pixels.</p>
+<p>Please mind: A change in this option affects only newly uploaded images. Existing images are not modified retroactively.</p>
+</td>
+<td style="width: 127.847px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 170.347px;">
+<p>Maximum height of scaled images</p>
+</td>
+<td style="width: 418.351px;">
+<p>Maximum height in pixels, see above.</p>
+</td>
+<td style="width: 127.847px;">
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="function-module-change-password-facility" class="wysiwyg-text-align-justify"><strong>Function Module: Change Password Facility</strong></h3>
+<p class="wysiwyg-text-align-justify">It is essential for panel operation that panelists can change their password. EFS Panel therefore provides a module that allows you to create a special form for changing passwords.</p>
+<p class="wysiwyg-text-align-justify">In the standard panel, you can find such a form on the <strong>Change details → Change password</strong> page, for

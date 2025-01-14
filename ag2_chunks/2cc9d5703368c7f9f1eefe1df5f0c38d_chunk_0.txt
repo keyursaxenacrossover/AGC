@@ -1,0 +1,80 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K" class="wysiwyg-text-align-justify">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article provides a comprehensive guide on creating and editing panel pages in the EFS Panel. It covers various function modules, their options, and how to configure them for optimal panel management.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">This guide focuses on the process of creating and editing panel pages, including managing pages, editing options, and configuring various function modules. It provides detailed information on each module's settings and their impact on panel functionality.</p>
+<ul class="wysiwyg-text-align-justify">
+<li><a href="#managing-pages">Managing Pages</a></li>
+<li><a href="#editing-pages">Editing Pages</a></li>
+<li><a href="#referencing-page-modules-from-multiple-pages">Referencing Page Modules from Multiple Pages</a></li>
+<li><a href="#a-detailed-look-at-modules">A Detailed Look at Modules</a></li>
+</ul>
+<p> </p>
+<p class="wysiwyg-text-align-justify"><strong>Before you start</strong></p>
+<p class="wysiwyg-text-align-justify">If the website you are editing contains several language versions, please note:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>There is only a one-page structure available for each website, which is used by all language versions. If you create a new page it will be incorporated in all language versions.</p>
+</li>
+<li>
+<p>You can configure a page differently to some extent in the various language versions.</p>
+</li>
+<li>
+<p>Content and functions on a certain page can differ between language versions.</p>
+</li>
+<li>
+<p>Each language version has its own set of templates, meaning that you can link a page to other templates in each language version.</p>
+</li>
+<li>
+<p>A page’s online and offline status can differ in different language versions. In particular, when publishing a new page, the publication always only refers to the current language version.</p>
+</li>
+</ul>
+<h2 id="managing-pages" class="wysiwyg-text-align-justify"><strong>Managing Pages</strong></h2>
+<h3 id="page-overview" class="wysiwyg-text-align-justify"><strong>Page Overview</strong></h3>
+<p class="wysiwyg-text-align-justify">To view the pages of a website, open it in the<strong> Website editor</strong>, then change to the <strong>Pages</strong> tab.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>If you create more than one language version or even set up several websites, there will be a set of pages for each website; page configuration and content, however, may differ between language versions. You can use the selection function in the upper part of the dialog to switch from the current language version to the other versions.</p>
+</li>
+<li>
+<p>The tree view on the left-hand shows all pages. The tree arrangement reflects the external navigation structure.</p>
+<ul>
+<li>
+<p>Clicking on a page title opens its corresponding edit dialog on the right hand.</p>
+</li>
+<li>
+<p><strong>Traffic light</strong>: publishing status of the page.</p>
+</li>
+<li>
+<p><strong>i</strong>: The links and the wildcard used to address the page.</p>
+</li>
+<li>
+<p><strong>Copy page</strong>: The page is copied, and a new page name has to be entered.</p>
+</li>
+<li>
+<p><strong>Delete page</strong>: The page and all its subpages in all language versions will be deleted following a confirmation prompt.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>+ Page</strong>: Opens the dialog where you can enter the data for a new page.</p>
+</li>
+<li>
+<p><strong>Search</strong>: Opens a list of all pages along with detailed information (status, page identifier, internal page name, HTML title, URL alias) and a search function. The actions in the drop-down list below the overview allow you to change several selected pages en bloc.</p>
+<ul>
+<li>
+<p>Delete selected pages: The pages and all their subpages in all language versions will be deleted following a confirmation prompt.</p>
+</li>
+<li>
+<p>Publish selected pages: The pages are published, i.e. they are available both in the working version and the online version.</p>
+</li>
+<li>
+<p>Set selected pages offline: The selected pages are no longer available online.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="editing-pages" class="wysiwyg-text-align-justify"><strong>Editing Pages</strong></h2>
+<h3 id="edit-dialog" class="wysiwyg-text-align-justify"><strong>Edit Dialog</strong></h3>
+<p class="wysiwyg-text-align-justify">Open any page, for example, “Home”.</p>
+<p class="wysiwyg-text-align-justify"><strong>Actions</strong></p>
+<p class="wysiwyg-text-align-justify">Actions can be carried out with the help of buttons and drop-down lists in the head section:</p

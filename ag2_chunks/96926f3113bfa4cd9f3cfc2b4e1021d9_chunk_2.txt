@@ -1,0 +1,37 @@
+=Customer XYZ (Business Name) 
+OU=IT (Department Name) 
+CN= The fully qualified domain name of the domain, that shall be secured like www.3uu.de</code></pre>
+<p>After the CSR is generated, it is supplied for the customer, who has to provide us with the SSL certificate, in the format found in the next section.</p>
+<h3 id="no_csr_from_tivian">No CSR from Tivian</h3>
+<p>If the customer generates the CSR, they can also generate the certificate by themselves. The customer must provide Tivian with the certificate in the following format:</p>
+<ul>
+<li>Format: ApacheModSSL</li>
+<li>Files: CA + CRT (unencrypted)</li>
+<li>Key (encrypted)</li>
+<li>Type: x509 PEM</li>
+</ul>
+<h2 id="h_01J3YVS3KESA1124N73W9PZ87Y">Processing a Custom Domain Request (TBR WITH TIVIAN)</h2>
+<p>Sales has to create an Opportunity in Salesforce. <br>Support needs a technical contact person from customer.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20426930500242" alt="Alias_(Domain).png" width="369" height="739"></p>
+<p> </p>
+<p><strong>Once you receive the requested information from the customer, please engage the Infrastructure (SaaS) Team.</strong></p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="01J3YV9D4FCT7541MYKX99DNQ2">What is SSL?</h3>
+<p>SSL (Secure Sockets Layer) is a protocol that ensures encrypted data transmission over the Internet.</p>
+<h3 id="01J3YV9D4FQ6Z5E3FVCGHS12Q7">How do I know if a domain already has SSL?</h3>
+<p>Enter the domain with https:// in your browser's address bar. If there's no error message and you see a green lock next to the URL, the domain has SSL.</p>
+<h3 id="01J3YV9D4F46J292RCYV9V4TTE">What is an Alias?</h3>
+<p>An alias is a second domain name for an existing website. For example, if the generic domain is ab1234.customervoice360.com, an alias could be i-love-kitkat.com. The alias points to the generic domain, displaying the same page.</p>
+<h3 id="custom_url_alias">What is a "custom URL Alias managed by Tivian"?</h3>
+<p>This likely refers to sub-domains of a customer's main domain (e.g., www.kundendomain.de, umfrage.kundendomain.de) managed by Tivian. These should be treated as separate aliases due to potential for unlimited sub-domains.</p>
+<h3 id="scenario_costs">What are the costs associated with different scenarios?</h3>
+<p>Costs vary depending on the scenario, including domain registration, renewal, SSL certificates, and additional setup processes. Scenario 1 incurs the least costs, while Scenario 4 is preferred by Tivian for maximum control and minimal customer communication.</p>
+</article>">How do I know if a domain already has SSL?</h3>
+<p>Enter the domain with https:// in your browser's address bar. If there's no error message and you see a green lock next to the URL, the domain has SSL.</p>
+<h3 id="01J3YV9D4F46J292RCYV9V4TTE">What is an Alias?</h3>
+<p>An alias is a second domain name for an existing website. For example, if the generic domain is ab1234.customervoice360.com, an alias could be i-love-kitkat.com. The alias points to the generic domain, displaying the same page.</p>
+<h3 id="custom_url_alias">What is a "custom URL Alias managed by Tivian"?</h3>
+<p>This likely refers to sub-domains of a customer's main domain (e.g., www.kundendomain.de, umfrage.kundendomain.de) managed by Tivian. These should be treated as separate aliases due to potential for unlimited sub-domains.</p>
+<h3 id="scenario_costs">What are the costs associated with different scenarios?</h3>
+<p>Costs vary depending on the scenario, including domain registration, renewal, SSL certificates, and additional setup processes. Scenario 1 incurs the least costs, while Scenario 4 is preferred by Tivian for maximum control and minimal customer communication.</p>
+</article>

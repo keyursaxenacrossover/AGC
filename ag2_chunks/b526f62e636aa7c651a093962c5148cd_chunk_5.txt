@@ -1,0 +1,73 @@
+><strong>Pass: </strong>The Sender-IP has been explicitly authorized by the Domain-Administrator.</p>
+</li>
+<li>
+<p><strong>Fail: </strong>The Domain-Administrator specifically states that the Sender-IP is not authorized.</p>
+</li>
+<li>
+<p><strong>Softfail: </strong>The Sender-IP probably is not authorized, but not explicit stated as such by the Domain-Administrator resulting in this “weak” statement. Sometimes also referenced / used as a “Testing-Mode”.</p>
+</li>
+<li>
+<p><strong>Temperror: </strong>The SPF-verification encountered a transient error (generally caused by the DNS lookup. A later retry might succeed without further intervention.</p>
+</li>
+<li>
+<p><strong>Permerror: </strong>The published SPF-Record is in itself invalid and required intervention by the Domain-Administrator to be fixed.</p>
+</li>
+</ul>
+<h4 id="structure-contents-of-the-spf-record">Structure / contents of the SPF-Record</h4>
+<p>As shown before, an SPF-Record declares a number of mechanisms (at least 1) which are to be evaluated during SPF-Validation.</p>
+<p>They are processed from left to right, where each mechanism may result in either a “match”, “not-match” or return an exception:</p>
+<ul>
+<li>
+<p>“<strong>match</strong>” will stop evaluation and set the over-all validation result based on the noted qualifier to either: Pass (“+”), Fail (“-”), Softfail (“~”) or Neutral (“?”). In case no qualifier is provided, the qualifier “+” is asumed.</p>
+</li>
+<li>
+<p>“<strong>not-match</strong>” will continue the evaluation with the next mechanism in line. If no further mechanism is present, the overall evaluation result will be “Neutral” (There something like ”-all” should be last).</p>
+</li>
+<li>
+<p>If the qualifier produces an <strong>exception</strong>, evaluation will stop with the exception value being returned as the over all evaluation result.</p>
+</li>
+</ul>
+<p>See also: <a href="https://postmarkapp.com/blog/explaining-spf">Explaining the structure of a TXT-Record, what mechanisms are available and how they work</a></p>
+<h4 id="pitfalls-and-other-noteworthy-stuff">Pitfalls and other noteworthy stuff</h4>
+<p>There exists a global DNS-lookup limit for <strong>10 Lookups</strong> during SPF-validation, which results in a ‘Permerror’ if violated. All mechanisms except ‘ip4’, ‘ip6’ and ‘all’ as well as the ‘exp’ modifier result in such a lookup.</p>
+<p>When processing an <strong>include-</strong>statement the Sender-IP is validated against the SPF-Record of the domain provided, opposed to it’s naming. So it actually does not directly affect the result of the original Domain-Target. Instead said validation result is mapped to one of the known results of “match” (in case of “pass”), “not match” (in case of “fail”, “softfail”, “neutral” or a corresponding “exception” (in case of occurred exceptions or “none”), which are processed like any other mechanism.</p>
+<h4 id="further-reading">Further reading</h4>
+<ul>
+<li>
+<p>Verification-Tool: <a href="https://www.mail-tester.com/spf-dkim-check">https://www.mail-tester.com/spf-dkim-check</a></p>
+</li>
+</ul>
+<h3 id="dkim-domainkeys-identified-mail-sending-receiving-validation">DKIM - DomainKeys Identified Mail (sending &amp; receiving-validation)</h3>
+<p>The idea behind DKIM is to enable the detection of in-transit email-manipulation to a point.</p>
+<p>It is a two stage process:</p>
+<ol start="1">
+<li>
+<p>Computation and appendment of the DKIM-Signature by the Sending-Mail-Server</p>
+</li>
+<li>
+<p>Validating the mail based on the attached signature</p>
+</li>
+</ol>
+<h4 id="computation-and-appendment-of-the-dkim-signature">Computation and appendment of the DKIM-Signature</h4>
+<p>This requires an existing Key-Pair of a public and a matching private key and is usually build into the software of the sending-mail-server.</p>
+<p>To generate the DKIM-Signature 2 hashes are computed:</p>
+<ol start="1">
+<li>
+<p>Over a canonicalized version of the message body</p>
+</li>
+<li>
+<p>Over a canonicalized version of selected Email-Header fields</p>
+</li>
+</ol>
+<p>Each of the hashes is then signed with the previously mentioned Private-Key before being included into the DKIM-Signature together with any additional info needed for verification, noteworthy being:</p>
+<ul>
+<li>
+<p>The domain at which to look for the Public-Key (Tag: d)</p>
+</li>
+<li>
+<p>The selector to be used when looking up the Public-Key at the specified domain (Tag: s)</p>
+</li>
+</ul>
+<p>For additional info: <a href="http://dkim.org/specs/rfc4871-dkimbase.html#dkim-sig-hdr">http://dkim.org/specs/rfc4871-dkimbase.html#dkim-sig-hdr</a></p>
+<h4 id="validation-stage">Validation Stage</h4>
+<p>This happens when the receiving

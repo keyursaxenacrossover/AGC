@@ -1,0 +1,119 @@
+>Order in which the input fields for the form’s different variables are output.</p>
+</td>
+</tr>
+<tr>
+<td>Group ID</td>
+<td>
+<p>The group ID is available in the templates and can therefore be used in many different ways, for example to group related form fields or to divide the form into different sections. If you assign the same group ID (e.g. 1) to several form fields, for example, you can output these fields next to instead of beneath each other (e.g. day, month, and year for three related date fields). In doing so you can apply the label of the first grouped element to the whole line.</p>
+</td>
+</tr>
+<tr>
+<td>Check expression</td>
+<td>
+<p>You can enter a check expression, which is executed before saving the data. If the check expression is correct, the data are not stored; instead, the specified error message is displayed.</p>
+<ul>
+<li>Move the cursor over the? icon to obtain an overview of available functions.</li>
+<li>You can use the pseudo variable “self” to access the current variable.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Error message</td>
+<td>
+<p>Error message, which is displayed if the aforementioned check expression detects a problem.</p>
+</td>
+</tr>
+<tr>
+<td>Additionally, save in</td>
+<td>
+<p>You can optionally save an entry in an additional master data item or user variable.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Only in the “Change data” form:</p>
+<p>If the panelists use the “Change data” form, skip updating this variable if nothing was entered.</p>
+</td>
+<td>
+<p>When using the form, panelists often only change a single variable and leave all the other input fields unchanged. By choosing this option you determine that only those values that were altered by the panelists will be added when they subsequently save their changes. Default setting: “Yes”.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Transformation formula for saving</p>
+</td>
+<td>
+<p>You can enter a transformation formula, which is executed upon saving. This allows you to merge the values of several individual variables and store them in the current variable, for example.</p>
+<ul>
+<li>Move the cursor over the? icon to obtain an overview of available functions.</li>
+<li>You can use the pseudo variable “self” to access the current variable.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="functions-for-transformation-formulae-and-check-expressions" class="wysiwyg-text-align-justify"><strong>Functions for Transformation Formulae and Check Expressions</strong></h3>
+<p class="wysiwyg-text-align-justify">You can use the following functions in transformation formulae and check expressions.</p>
+<table class="wrapped relative-table wysiwyg-text-align-justify" style="width: 90.8097%; margin-right: auto; margin-left: auto;" border="1">
+<colgroup> <col style="width: 13.4394%;"> </colgroup> <colgroup> <col style="width: 15.3813%;"> </colgroup> <colgroup> <col style="width: 17.1466%;"> </colgroup> <colgroup> <col style="width: 16.1235%;"> </colgroup> <colgroup> <col style="width: 15.4743%;"> </colgroup> <colgroup> <col style="width: 22.4535%;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center">(cont.)</th>
+<th class="wysiwyg-text-align-center">Function</th>
+<th class="wysiwyg-text-align-center">Explanation</th>
+<th class="wysiwyg-text-align-center">Parameter</th>
+<th class="wysiwyg-text-align-center">Return value</th>
+<th class="wysiwyg-text-align-center">Example</th>
+</tr>
+<tr>
+<td colspan="1">abs</td>
+<td colspan="1">abs (action: amount)</td>
+<td colspan="1">
+<p>Returns the amount of a value without an algebraic sign.</p>
+</td>
+<td colspan="1">
+<p>$value: The value to be edited</p>
+</td>
+<td colspan="1">
+<p>Amount of the value without an algebraic sign</p>
+</td>
+<td colspan="1">abs(self)</td>
+</tr>
+<tr>
+<td colspan="1">
+<p>base64_decode</p>
+</td>
+<td colspan="1">
+<p>base64_decode (action: decode Base64)</p>
+</td>
+<td colspan="1">
+<p>Decodes the value using the Base64 algorithm.</p>
+</td>
+<td colspan="1">
+<p>$value: The value to be decoded</p>
+</td>
+<td colspan="1">
+<p>Base64 decoded value</p>
+</td>
+<td colspan="1"> </td>
+</tr>
+<tr>
+<td colspan="1">
+<p>base64_encode</p>
+</td>
+<td colspan="1">
+<p>base64_encode (action: encode Base64)</p>
+</td>
+<td colspan="1">
+<p>Encodes the value using the Base64 algorithm.</p>
+</td>
+<td colspan="1">
+<p>$value: The value to be decoded</p>
+</td>
+<td colspan="1">
+<p>Base64 decoded value</p>
+</td>
+<td colspan="1"> </td>
+</tr>
+<tr>
+<td colspan="1">

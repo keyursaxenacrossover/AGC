@@ -1,0 +1,27 @@
+soap&amp;wsdl=1&amp;token={{TOKEN}}</code><br>(replace <em>{{TOKEN}}</em> with the token provided via <em>Onetimesecret</em>)</p></li></ul>
+<p>The RAML documantation of the REST services can be found here:</p>
+<ul><li><p><code>https://AB1234.customervoice360.com/service/?handler=rest&amp;raml=1&amp;token={{TOKEN}}</code><br>(replace <em>{{TOKEN}}</em> with the token provided via <em>Onetimesecret</em>)</p></li></ul>
+<p>Notes:</p>
+<p>All <em>service layer methods</em> "<code>System &gt;&gt; Options &gt;&gt; Service-Layer</code>" are inactive by default. To use a <em>service layer methods</em> please follow these steps:</p>
+<ol start="1">
+<li><p>To acitvate a <em>service layer methods</em> click on "<code>No</code>" in column "<code>Activated</code>"</p></li>
+<li><p>Grant the team (i.e. "<code>servicelayer</code>") access to a <em>service layer methods</em> by editing the "<code>Rights</code>" (<em>paragraph icon</em>) in column "<code>Actions</code>" by selecting the checkbox for the needed "<code>Access group</code>"</p></li>
+<li><p>Grant the <em>team</em> (i.e. "<code>servicelayer</code>") the needed <em>ACL rights</em>. This is completely analogue to the <em>ACL rights management</em> of <em>EFS admin users</em> (i.e. you could grant the "<code>servicelayer</code>" team the same <em>ACL rights</em> as the "<code>Project manager</code>" team. The team can use the same functionalities in <em>EFS</em> then)</p></li>
+<li><p>Grant the <em>team</em> (i.e. "<code>servicelayer</code>") the needed <em>object rights</em>. This is completely analogue to the <em>object rights management</em> of EFS admin users (i.e. grant the "<code>servicelayer</code>" team access to a certain project, mailtemplate etc. to edit it via a <em>service layer method</em>)</p></li>
+</ol>
+<p>Viele Grüße</p>
+<p>Ihr TIVIAN Support</p>
+</div><h2 id="header-3">FAQ</h2><h3 id="header-5">Get usage statistics for Service Layer</h3><p> Case 00861615<br>YouthSight asked for usage statistics for the Service Layer, especially broken down by number of calls per hour and more importantly by method<br>These statistics can be grabbed from the database:<br></p><pre><code class="language-text">SELECT COUNT(*) as 'Number of API calls', DATE_FORMAT(dt, "%d-%m-%y") 'Date', name as 'Servicemethod' FROM efs_service_log JOIN efs_services ON service_id = id WHERE dt BETWEEN '2017-11-17 00:00:00' AND '2017-11-17 23:59:59' GROUP BY MONTH(dt),DAY(dt),service_id ORDER BY Date,COUNT(*) DESC
+
+SELECT COUNT(*) as 'Number of API calls', DATE_FORMAT(dt, "%Y-%m-%d %h:%i:%s") as 'Date', name as 'Servicemethod' FROM efs_service_log JOIN efs_services ON (service_id = id) WHERE dt BETWEEN '2017-10-30 00:00:00' AND '2017-11-01 23:59:59' GROUP BY MONTH(dt),DAY(dt),service_id ORDER BY Date ASC;</code></pre><h3 id="header-6">Wichtige Links</h3><ul>
+<li>
+<p><a href="http://mindreef.net">Mindreef.net</a></p>
+<ul><li><p></p></li></ul>
+<p><strong>Seite um die einen Webservice auszuprobieren</strong></p>
+</li>
+<li>
+<p><a href="http://www.soapui.org/">soapUI</a></p>
+<ul><li><p></p></li></ul>
+<p><strong>Seite um die einen Webservice-Application downzuloaden</strong></p>
+</li>
+</ul>

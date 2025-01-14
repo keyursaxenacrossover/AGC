@@ -1,0 +1,19 @@
+5sZXdpcy5jby51azANBgkqhkiG 9w0BAQsFAAOCAQEANXaCFoGH3HnWUTp0DV2hpX3yHgftDgVs/bKTB7qAWDlIshYY68OXemhBWHPH DZFidi6ynZVr90rnakgrVyOb1WdN85rALuVE1GdJd3WDFkMEUmuw6hGA9Vt3ahA+9HpvFhssCdJw Aa0rQV7Xy/+0v+xuUrQu9FWQFkpG4kRB2KfJhR/a0Ta6Ad1Sxj/h+iA8ISM9LV/lUCTuWq7x1vIC R97K41PHU/VOWs8jd/CRZ3UeFz+pes2YRTe4rCKRwWmSkM9U56ZxB4lDjYbLbgk6JbFs52xrKGEG jPD8zWq0M7xN+iIvbgac4G/o+YI3dtQJk21lQAQ7ML54h6b40XbA0g==
+                &lt;/ds:X509Certificate&gt;
+            &lt;/ds:X509Data&gt;
+        &lt;/ds:KeyInfo&gt;
+    &lt;/ds:Signature&gt;
+    &lt;samlp:Status&gt;
+        &lt;samlp:StatusCode Value="urn:oasis:names:tc:SAML:2.0:status:Requester"/&gt;
+        &lt;samlp:StatusMessage&gt;Signature required&lt;/samlp:StatusMessage&gt;
+    &lt;/samlp:Status&gt;
+&lt;/samlp:Response&gt;</code></pre><p></p><h3 id="header-6"><strong>Step 3: Solve Signature Issue</strong></h3><p>This issue can be solved by enabling the Auth Request Signature in Okta. Navigate to the respective Identity Provider and enable “Request Signature” in the advanced settings:</p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716923324178" alt="john_lewis_8.PNG"><p></p>CKRwWmSkM9U56ZxB4lDjYbLbgk6JbFs52xrKGEG jPD8zWq0M7xN+iIvbgac4G/o+YI3dtQJk21lQAQ7ML54h6b40XbA0g==
+                &lt;/ds:X509Certificate&gt;
+            &lt;/ds:X509Data&gt;
+        &lt;/ds:KeyInfo&gt;
+    &lt;/ds:Signature&gt;
+    &lt;samlp:Status&gt;
+        &lt;samlp:StatusCode Value="urn:oasis:names:tc:SAML:2.0:status:Requester"/&gt;
+        &lt;samlp:StatusMessage&gt;Signature required&lt;/samlp:StatusMessage&gt;
+    &lt;/samlp:Status&gt;
+&lt;/samlp:Response&gt;</code></pre><p></p><h3 id="header-6"><strong>Step 3: Solve Signature Issue</strong></h3><p>This issue can be solved by enabling the Auth Request Signature in Okta. Navigate to the respective Identity Provider and enable “Request Signature” in the advanced settings:</p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716923324178" alt="john_lewis_8.PNG"><p></p>

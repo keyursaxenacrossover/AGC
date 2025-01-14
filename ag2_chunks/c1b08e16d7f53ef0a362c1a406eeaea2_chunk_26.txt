@@ -1,0 +1,41 @@
+="viewing-the-quality-index-in-the-export-data-record" class="wysiwyg-text-align-justify"><strong>Viewing the Quality Index in the Export Data Record</strong></h3>
+<p class="wysiwyg-text-align-justify">The quality index of a participant will be stored in the variable “quality”. This is contained within the export data record, and therefore you can identify the data records of participants with critical values and where necessary delete them before making an evaluation.</p>
+<h2 id="general-tips-and-tricks-on-exporting-data" class="wysiwyg-text-align-justify"><strong>General Tips and Tricks on Exporting Data</strong></h2>
+<p class="wysiwyg-text-align-justify">The following applies to all exports:</p>
+<p class="wysiwyg-text-align-justify"><strong>Export duration</strong></p>
+<p class="wysiwyg-text-align-justify">The exported data are not created in advance, they are created according to the settings you made the moment you click on the <strong>Export </strong>button. Depending on the desired content, selected format, and number of records, the export can therefore take a considerable amount of time.</p>
+<p class="wysiwyg-text-align-justify"><strong>First, save, then open the file!</strong></p>
+<p class="wysiwyg-text-align-justify">Once you create the file after having made all settings, a dialog window will open, in which you can choose whether you wish to save the file on your local PC or open it directly.</p>
+<p class="wysiwyg-text-align-justify">Please always save the file on your local PC. This procedure has several advantages:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The file only needs to be created once. Newly creating the file each time would cause an unnecessary load on the server.</p>
+</li>
+<li>
+<p>Depending on the browser used, you may not be able to open the actual application and specify the file type when opening the file directly. Instead, the browser may attempt to automatically open the file itself. However, it may be the case that the browser’s file type recognition was incorrectly implemented, i.e. the browser does not identify the file type correctly, cannot open the file, and produces an error message.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Characters which cannot be exported</strong></p>
+<p class="wysiwyg-text-align-justify">An effective export process into a variety of formats requires a few rather marginal modifications of the result data:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Backslashes are removed.</p>
+</li>
+<li>
+<p>The special characters \n (Newline), \t (Horizontal tab), \r (Carriage return), and " (Double quote) are removed as well.</p>
+</li>
+<li>
+<p>NULL values are replaced by an empty string.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">These modifications affect all result data exports including the panel exports.</p>
+<p class="wysiwyg-text-align-justify">The CSV export is preffered to the Excel export in order to execute high volume data exports at a greater performance rate.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863" class="wysiwyg-text-align-justify">FAQ</h1>
+<h3 id="faq_1" class="wysiwyg-text-align-justify">What is the maximum number of variables available per project?</h3>
+<p class="wysiwyg-text-align-justify">Up to 7,000 variables are available per project. However, the actual number may be lower depending on various factors such as variable types and sizes.</p>
+<h3 id="faq_2" class="wysiwyg-text-align-justify">Can I export data from incomplete surveys?</h3>
+<p class="wysiwyg-text-align-justify">Yes, you can export data from incomplete surveys. However, data cleaning only takes completed interviews (status 31 or 32) into consideration.</p>
+<h3 id="faq_3" class="wysiwyg-text-align-justify">How can I identify cleaned data in the export record?</h3>
+<p class="wysiwyg-text-align-justify">Cleaned data is identified by the "cleaned" variable in the export record. It can have values of 0 (uncleaned), 1 (cleaned), or 2 (checked but did not require cleaning).</p>
+<p class="wysiwyg-text-align-justify"> </p>

@@ -1,0 +1,56 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1199243429">https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1199243429</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">PLEASE CHECK IF MAINTENANTE PAGE IS LIVE BEFORE AND DURING UPGRADE PROCESS</a></li>
+<li><a href="#header-2">Issues during upgrade process</a></li>
+</ul>
+</ul><p> zHow this list works:</p><ul>
+<li><p>finished 19.5 will be deleted from the list</p></li>
+<li><p>all requested installations are entered here</p></li>
+<li><p>Deadline is either given deadline or requested Date +14d/21d</p></li>
+<li><p>check for menu.xml and index.php files following links under htdocs, that don't point to the core. If none exist, set customizing in the table to no. Otherwise put findings there.</p></li>
+<li><p>Before requesting customizing check, migrate crons to php 5.6</p></li>
+<li><p>Sysadmins take Installations to be migrated from this pool</p></li>
+<li><p>according to Gordon all Ipsos Loyalty Customizings are ready for 19.5</p></li>
+<li><p>check for size and amount of MyISAM and InnoDB tables:u 'Moved DB TO mariadbmaster14 → mariadbslave08 &amp; switched tables to InnoDB where possible - EFSITO-11570'</p></li>
+</ul><pre><code class="language-text">ssh salt
+
+sudo /home/buchloh/get_upgrade_info.sh -Inb0973 (-I for info, nb0973 instname)</code></pre><p style="text-align: center;"></p><h1 id="header-1" style="text-align: center;"><strong><span style="color: rgb(255,86,48);">PLEASE CHECK IF MAINTENANTE PAGE IS LIVE BEFORE AND DURING UPGRADE PROCESS</span></strong></h1><p></p><table data-layout="full-width">
+<colgroup>
+<col style="width: 362.0px;">
+<col style="width: 484.0px;">
+<col style="width: 187.0px;">
+<col style="width: 167.0px;">
+<col style="width: 109.0px;">
+<col style="width: 175.0px;">
+<col style="width: 292.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p><strong>Customer</strong></p></th>
+<th><p><strong>technical name</strong></p></th>
+<th><p><strong>customizings</strong></p></th>
+<th><p><strong>MariaDB</strong></p></th>
+<th><p><strong>SF case</strong></p></th>
+<th><p><strong>Deadline by customer</strong></p></th>
+<th><p><strong>comments</strong></p></th>
+</tr>
+<tr>
+<td><p><ac:inline-comment-marker ac:ref="a305ec0f-4a45-404b-8fde-708c2fb8513f">Questback</ac:inline-comment-marker></p></td>
+<td><p><ac:inline-comment-marker ac:ref="a305ec0f-4a45-404b-8fde-708c2fb8513f">training.umfragecenter.de</ac:inline-comment-marker></p></td>
+<td><p><ac:inline-comment-marker ac:ref="a305ec0f-4a45-404b-8fde-708c2fb8513f">no</ac:inline-comment-marker></p></td>
+<td><p><ac:inline-comment-marker ac:ref="a305ec0f-4a45-404b-8fde-708c2fb8513f">bre103v</ac:inline-comment-marker></p></td>
+<td><p></p></td>
+<td><p><time datetime="2020-09-22"></time> </p></td>
+<td><p><span style="color: rgb(255,86,48);">NOT kw 37 (0.7 - 13.09.) !!</span><br><span style="color: rgb(255,86,48);">There are Live-Trainings!</span></p></td>
+</tr>
+<tr>
+<td><p><span style="color: rgb(64,50,148);">QuestBack GmbH</span></p></td>
+<td><p><a href="http://akamai-test.customervoice360.com">akamai-test.customervoice360.com</a></p></td>
+<td><p><span style="color: rgb(64,50,148);">type-menu.xml, type-index.php, type-symlinked, type-folder</span></p></td>
+<td><p><span style="color: rgb(64,50,148);">bre065v</span></p></td>
+<td><p></p></td>
+<td><p><time datetime="2020-10-16"></time> </p></td>
+<td><p>not migrating</p

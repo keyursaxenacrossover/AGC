@@ -1,0 +1,55 @@
+units is hidden.</p>
+</li>
+</ul>
+</td>
+<td>
+<p>Checkbox</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="action-planner-configuration" class="wysiwyg-text-align-justify"><strong>Action Planner configuration</strong></h3>
+<p class="wysiwyg-text-align-justify">The <em>Action Planner</em> and the add-on module <em>CLF</em> are activated. In the sidebar, two new menus are displayed: the <em><strong>Action Planner</strong></em><strong> configuration</strong> menu and the <em><strong>CLF</strong></em><strong> configuration overview</strong>. Also, if you go back to the<strong> Org Processor</strong> menu, you will find the <em>Action Planner</em> itself on a newly inserted tab. The configuration options in this menu, which will be introduced in the following Chapters, enable you to adapt the Action Planner to your specific survey process. The <em>CLF </em>configuration overview gives you an overview of the configuration process of <em>CLF</em> related applications in the context of preparing the Action Planner. With the <em>Action Planner</em>, you can create new tasks in <em>Portals</em>. Furthermore, you gain insight into statistic overviews of your tasks. You can export your tasks and statistics to organizational units and have additional access to the user administration.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015039445778" alt="Action Planner configuration.jpg"></p>
+<h3 id="clf-configuration-overview" class="wysiwyg-text-align-justify"><strong>CLF configuration overview</strong></h3>
+<p class="wysiwyg-text-align-justify">After activating the add-on module <em>CLF</em>, you can consult the<em> CLF</em> configuration overview as a guideline when preparing the Action Planner and implementing <em>CLF</em> in your project settings. This <em>EFS</em> page gives you an overview of required and optional settings. The fields are highlighted in color to show the status of each setting in your current project: blue fields indicate settings in your Employee project which already have been configured, red fields indicate settings (still) not set. All settings required should be highlighted in blue at the end of the configuration process.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015069484178" alt="CLF overview.jpg"></p>
+<p class="wysiwyg-text-align-justify">You can reach the CLF configuration overview over two different paths:</p>
+<p class="wysiwyg-text-align-justify"><strong>Path 1:</strong></p>
+<ol class="wysiwyg-text-align-justify">
+<li>
+<p>In the EFS admin area, open <strong>Projects</strong> → {Selected project} → <strong>Org Processor</strong> → <strong>Configuration</strong>.</p>
+</li>
+<li>
+<p>In the sidebar <strong>Configuration</strong>, click on the button <strong>CLF configuration overview</strong>.</p>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify">The CLF configuration overview of your Employee project is displayed.</p>
+<p class="wysiwyg-text-align-justify"><strong>Path 2:</strong></p>
+<ol class="wysiwyg-text-align-justify">
+<li>
+<p>In the header menu, hover over the tab <strong>System</strong> and click on the button <strong>Options</strong>.</p>
+</li>
+<li>
+<p>In the sidebar <strong>Options</strong>, click on the button <strong>CLF configuration overview</strong>.</p>
+</li>
+<li>
+<p>Select your <strong>Employee project</strong> from the drop-down list.</p>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify">The CLF configuration overview of your Employee project is displayed.</p>
+<p class="wysiwyg-text-align-justify">For access to the CLF configuration overview, the prior activation of the add-on module CLF is required</p>
+<h2 id="accessing-org-processor-data-in-condition-editor" class="wysiwyg-text-align-justify"><strong>Accessing Org Processor Data in Condition Editor</strong></h2>
+<p class="wysiwyg-text-align-justify">You can access Org Processor data when defining filters, hiding conditions, etc. in the condition editor. The following Org Processor data are available:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>org_code_structureID (Primary Structure.OrgCodePreAllocation): Unit in the named structure to which the participants have been allocated. E.g. org_code_1 is the unit of the participants in the primary view (structure ID = 1).</p>
+</li>
+<li>
+<p>org_allocation_structureID (Primary Structure.OrgCodeSelfAllocation): Unit in the named structure to which the participants have allocated themselves. E.g. org_allocation_1 is the self-allocated unit of the participants in the primary view (structure ID = 1.</p>
+</li>
+<li>
+<p>org_function_structureID (Primary Structure.OrgFunction): Function of a participant in the named structure. E.g. org_function_1 is the function

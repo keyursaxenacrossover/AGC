@@ -1,0 +1,77 @@
+ Master Data Manually:</strong></h3>
+<p class="wysiwyg-text-align-justify">Clicking on the Create master data button will open the entry form that allows you to create new master data.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017142437522"></p>
+<ol class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Enter Variable Details:</strong></p>
+<ul>
+<li>Variable name: Must start with <code>m_</code> or <code>md_</code> and not exceed 20 characters. If not specified, the system assigns a name automatically.</li>
+<li>Title: Enter the title. For panels with a registration form or large panels, a nomenclature is recommended for clarity.</li>
+</ul>
+</li>
+<li>
+<p><strong>Select Settings:</strong></p>
+<ul>
+<li>Master data type and size range.</li>
+<li>Appropriate master data category.</li>
+</ul>
+</li>
+<li>
+<p><strong>Confirm:</strong></p>
+<ul>
+<li>Click on <strong>Create</strong> to save the new master data.</li>
+</ul>
+</li>
+</ol>
+<h3 id="h_01J3FKHV5J52SK5768E25KMM1P" class="wysiwyg-text-align-justify">Creating Answer Categories for "Integer" Type Master Data</h3>
+<p class="wysiwyg-text-align-justify">For "Integer" type master data, follow these additional steps to create answer categories:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Create Answer Categories:</strong></p>
+<ul>
+<li>After saving, the section for creating answer categories appears.</li>
+<li>Enter the first answer category (e.g., code = 1, answer category = "yes") in the "New" line and click <strong>Save</strong>.</li>
+<li>Enter the second answer category (e.g., code = 2, answer category = "no") and click <strong>Save</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Check and Modify:</strong></p>
+<ul>
+<li>Check the result in the Master data codebook. The variable (e.g., titled "Smoker") will display with the different answer categories and codes.</li>
+<li>To modify or expand answer categories later, open the edit dialog of the master data item, then click <strong>Edit answer categories</strong> to access modifiable input fields.</li>
+</ul>
+</li>
+</ol>
+<h3 id="h_01J3FKHV5JGWKFPEKT6DDXNGS9" class="wysiwyg-text-align-justify">Tips</h3>
+<ul class="wysiwyg-text-align-justify">
+<li>For a large number of answer categories or repeated use across multiple questions, use the <strong>Mass-import answer categories</strong> function.</li>
+</ul>
+<h3 id="h_01J3FKSAHMXJNF3PW4H91KBF5Z" class="wysiwyg-text-align-justify">Sorting Master Data by Categories</h3>
+<p class="wysiwyg-text-align-justify"><strong>Managing Master Data Categories</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<strong>Open Manage Categories Dialog:</strong> Click on the <strong>Manage categories</strong> button in the master data overview.</li>
+<li>
+<strong>Overview Table:</strong> Lists all existing categories with their IDs, titles, descriptions, and number of assigned master data. The "Default" category cannot be deleted, and all master data are assigned to it by default.</li>
+<li>
+<strong>Create New Categories:</strong> Click on the <strong>Create category</strong> button to open the dialog for creating new categories. Enter the category title and description.</li>
+<li>
+<strong>Edit Existing Categories:</strong> Use the icons in the “Actions” column to edit or delete categories.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Assigning Master Data to Categories</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<strong>Via Overview:</strong> Use the “Assign category” action in the master data overview to assign several master data at once.</li>
+<li>
+<strong>Via Editing Dialog:</strong> Change the assignment of a specific master data via its editing dialog.</li>
+</ul>
+<h3 id="h_01J3FKSAHMC1KYCN0NWH01ZT4E" class="wysiwyg-text-align-justify">Quick Changes to Master Data Labels</h3>
+<p class="wysiwyg-text-align-justify"><strong>Purpose:</strong> Labeling helps internal orientation and appears in the codebook and export functions.</p>
+<p class="wysiwyg-text-align-justify"><strong>Quick Change Function:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<strong>Open Quick Change Labels Dialog:</strong> Click the <strong>Quick change labels</strong> button in the People → Master data menu.</li>
+<li>
+<strong>Entry Form:</strong> Shows all created master data. Each line contains the master data variable (unchangeable) and the title serving as the label. Change the labels as desired.</li>
+<li>
+<strong>Submit Changes:</strong> Click the <strong>Submit</strong> button to save changes.</li

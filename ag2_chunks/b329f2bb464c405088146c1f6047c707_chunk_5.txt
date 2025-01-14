@@ -1,0 +1,111 @@
+<th class="wysiwyg-text-align-center" style="width: 134.67px; height: 58px;" data-highlight-colour="#c0b6f2">
+<p><strong>Size</strong></p>
+</th>
+</tr>
+<tr style="height: 90px;">
+<td style="width: 89.0278px; height: 90px;">
+<p>Text field</p>
+</td>
+<td style="width: 133.611px; height: 90px;">
+<p>input field</p>
+</td>
+<td style="width: 133.281px; height: 90px;">
+<p>Unfilled text fields are filled with “0”.</p>
+</td>
+<td style="width: 134.653px; height: 90px;">
+<p>Text entered into the open entry field</p>
+</td>
+<td style="width: 101.997px; height: 90px;">
+<p>mediumtext</p>
+</td>
+<td style="width: 126.649px; height: 90px;">
+<p>16,777,215 (2^24 - 1) characters</p>
+</td>
+</tr>
+<tr style="height: 61px;">
+<td style="width: 89.0278px; height: 61px;">
+<p>Text Area</p>
+</td>
+<td style="width: 133.611px; height: 61px;">
+<p> </p>
+</td>
+<td style="width: 133.281px; height: 61px;">
+<p> </p>
+</td>
+<td style="width: 134.653px; height: 61px;">
+<p> </p>
+</td>
+<td style="width: 101.997px; height: 61px;">
+<p>text</p>
+</td>
+<td style="width: 126.649px; height: 61px;">
+<p>65,535 (2^16 - 1) characters</p>
+</td>
+</tr>
+<tr style="height: 281px;">
+<td style="width: 89.0278px; height: 281px;">
+<p>Checkbox</p>
+</td>
+<td style="width: 133.611px; height: 281px;">
+<p>Used to output information that can be given by answering “Yes” or “No”.</p>
+<p>Variables of the type “Checkbox” can only assume the values “0” and “1”. Imported values that are not “0” are recoded to “1”.</p>
+</td>
+<td style="width: 133.281px; height: 281px;">
+<p> </p>
+</td>
+<td style="width: 134.653px; height: 281px;">
+<p>Variable with codes 0 (disabled) and 1 (enabled)</p>
+</td>
+<td style="width: 101.997px; height: 281px;">
+<p>integer</p>
+</td>
+<td style="width: 126.649px; height: 281px;">
+<p>11 digits</p>
+</td>
+</tr>
+<tr style="height: 309px;">
+<td style="width: 89.0278px; height: 309px;">
+<p>Select box</p>
+</td>
+<td style="width: 133.611px; height: 309px;">
+<p>Generates a select box in which user-defined answer options can be selected.</p>
+<p>If a “Selectbox” type variable is created anew, all existing participants are assigned the value “0”.</p>
+</td>
+<td style="width: 133.281px; height: 309px;">
+<p>Select boxes that are set to<br>“Please select” by default will be preset at “0”. This is the case, for example, with the standard variables<em> u_gender</em>, <em>u_language</em><br>and <em>u_group</em>.</p>
+<p> </p>
+</td>
+<td style="width: 134.653px; height: 309px;">
+<p>Variable with user-defined codes</p>
+</td>
+<td style="width: 101.997px; height: 309px;">
+<p>integer</p>
+</td>
+<td style="width: 126.649px; height: 309px;">
+<p>11 digits</p>
+</td>
+</tr>
+<tr style="height: 261px;">
+<td style="width: 89.0278px; height: 261px;">
+<p>Radio buttons</p>
+</td>
+<td style="width: 133.611px; height: 261px;">
+<p>Generates a single response list in which user-defined answer options can be selected.</p>
+<p>If a “radio buttons” type variable is created anew, all existing participants are assigned the value “0”.</p>
+</td>
+<td style="width: 133.281px; height: 261px;">
+<p> </p>
+</td>
+<td style="width: 134.653px; height: 261px;">
+<p>Variable with user-defined codes</p>
+</td>
+<td style="width: 101.997px; height: 261px;">
+<p>integer</p>
+</td>
+<td style="width: 126.649px; height: 261px;">
+<p>11 digits</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify">If the number of characters is exceeded, everything above it is truncated. When importing, please

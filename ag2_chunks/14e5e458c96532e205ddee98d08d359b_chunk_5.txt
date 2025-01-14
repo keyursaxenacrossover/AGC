@@ -1,0 +1,48 @@
+ 1.29816%;"> </td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;"> </td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">csrf_mode</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">Activates the CSRF (Cross-Site-Request-Forgery) checks in the whole system</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;">false, true</td>
+<td style="padding: 2px 3px; vertical-align: middle; text-align: center; width: 15.536%;">FALSE</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;"> </td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;"> </td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">csrf_send_mail</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;"> </td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;">true = sending mail to -&gt; efs_errornotification_recipients::getMail('TOKEN_ERROR') false -&gt; no mailing</td>
+<td style="padding: 2px 3px; vertical-align: middle; text-align: center; width: 15.536%;">FALSE</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;"> </td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;"> </td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">csrf_whitelist</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">List of controllers an action which should been whitelisted for the CSRF checks</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;"> </td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 15.536%;">array ( 'login' =&gt; '*', 'logo' =&gt; '*', )</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;"> </td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;"> </td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">customer_accesslevel</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">Login to Customer Center</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;">0=&gt;no access 1 =&gt; limited (for test installations) 4 =&gt; full</td>
+<td style="padding: 2px 3px; vertical-align: middle; text-align: right; width: 15.536%;">4</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;">no</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;">no</td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">customproject_name</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">Optional custom project name</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;"> </td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 15.536%;">'</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;">no</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;">no</td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">customproject_path</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">Optional custom path to custom projects</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;"> </td>
+<td

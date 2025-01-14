@@ -1,0 +1,63 @@
+ or any other cases, where a temporary second iframe is required.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998006535442" alt="Popup-dialogs.png"></p>
+<p> </p>
+<h3 id="header-13"><strong>Additional verification of users</strong></h3>
+<p>In scenarios, where additional logins are not desired, the application running in the extension module of Portals is able to verify the current user by validating the access token of a user with the <em>EFS Service-Layer</em>.</p>
+<h2 id="header-15"><strong>Guides Improvements</strong></h2>
+<h3 id="header-17">
+<strong>Process Control:</strong> <strong>Order Report</strong>
+</h3>
+<p>On the <strong>Process Control</strong> tab, you are able to specify the report ordering as a follow-up action in the event of a successful process. Up to now, the ordered reports have only been output in PDF format. As of this release, the PPTX file format will be used as a fallback if the report definition is not available as PDF file.</p>
+<h3 id="header-18"><strong>Restricted Access for Panel Groups</strong></h3>
+<p>You can restrict <em>Guides</em> not only to a portal user role, but also to one of the available panel groups. To do this, use the new setting option (“Restrict guide usage to the following panel groups”) on the <strong>Settings </strong>tab. The guides you created will only be visible on the guides overview page to portal users who belong to the selected panel group. If you restrict the use of guides to a specific portal user role, guides can only be started by those who have been assigned the role, but they will still be displayed to all portal users.</p>
+<h3 id="header-19">
+<strong>New </strong><em><strong>Guides</strong></em><strong> View</strong>
+</h3>
+<p>You can now specify whether the guides available to a guide initiator are displayed in the list view or in the tile view. Open the <em>Guides</em> module configuration. The list view is activated by default. In the exterior view, portal users can also switch between the two modes, list or tile, via the buttons.</p>
+<h3 id="header-20"><strong>Guides Monitoring: Increased Visibility (US-Guide and ME-Guide)</strong></h3>
+<p>The portal page module <em>Guides-Monitoring</em> has been enhanced. You now have breadcrumb navigation to better navigate through the various drill-down options. The clarity is also increased in this way. Three levels can be accessed:</p>
+<ul>
+<li>
+<p>Tile view of the started guide</p>
+</li>
+<li>
+<p>Process overview</p>
+</li>
+<li>
+<p>Process details of the guide initiator</p>
+</li>
+</ul>
+<p>The process details provide you, the name, email address and profile icon of the guide initiator. A vertical timeline displays the guides started by the guide initiator. Each date on which this initiator started a guide is marked with a dot on the timeline. The following process details are displayed for the started guide:</p>
+<ul>
+<li>
+<p>Start of the guide</p>
+</li>
+<li>
+<p>End of the guide</p>
+</li>
+<li>
+<p>Quota of the feedback rater groups</p>
+<ul>
+<li>
+<p>Self-assessment (ME Guide)</p>
+</li>
+<li>
+<p>e.g. manager and team (ME Guide)</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Report downloaded (ME Guide)</p>
+</li>
+</ul>
+<p>Please note, that the ideation guide is not supported by <em>Guides-Monitoring.</em></p>
+<h3 id="header-21"><strong>Guides Monitoring: The Export Function</strong></h3>
+<p>You can export the table as an Excel file, which in turn enables the HR department to evaluate, prepare, and use the data. Simply click on the <strong>Export </strong>button to start the download. The export contains all guide initiators that have started a process.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20997981955346" alt="The Export Function.png"></p>
+<h3 id="header-22"><strong>Guide Status Page: New Layout</strong></h3>
+<p>The Layout of the <em>Portals</em> page module <em>Guide Status</em> has been redesigned. A timline shows you what to expect and when, and additional controls allow you to send reminders, invite additional people and extend the process.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20997992916242" alt="Guide Status.png"></p>
+<h3 id="header-23"><strong>Bulk invitation via Email-Address-List (ME and US Guide)</strong></h3>
+<p>To make it easier to invite people, it is now possible to invite people to your guide by using a list of email addresses. Use the free text field. You have to activate the option "Allow invitations from email addresses". it is now possible to invite people to your guide from a list of email addresses.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20997992295954" alt="Email-Addresses Link.png"></p>
+<p>Clicking on the link opens

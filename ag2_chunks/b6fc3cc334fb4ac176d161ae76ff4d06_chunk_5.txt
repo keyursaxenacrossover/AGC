@@ -1,0 +1,21 @@
+span><span>    </span><span style="color: rgb(0,128,0);">'portal_id' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$portalId</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'db_result'    </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$res<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">portal.user.status.update.after</span></pre></td>
+<td colspan="1">modules/portal/components/user/repository.inc.php:saveUserStatus()</td>
+<td colspan="1"><pre><span>Portal\Events\User\Status</span><span>([<br></span><span> </span><span style="color: rgb(0,128,0);">'user_id' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$userId</span><span>,<br></span><span> </span><span style="color: rgb(0,128,0);">'status' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$status</span><span>,<br></span><span> </span><span style="color: rgb(0,128,0);">'portal_id' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$portalId</span><span>,<br></span><span> </span><span style="color: rgb(0,128,0);">'db_result' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$res<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">portal.create.after</span></pre></td>
+<td colspan="1">modules/portal/app/controllers/Api/Cms/V0m1/PortalsController.php:createPackageWithPortalData()</td>
+<td colspan="1"><pre><span>Portal\Events\Controllers\Api\Cms\Portals\Create\After</span><span>([<br></span><span>    </span><span style="color: rgb(0,128,0);">'portal'        </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$portal</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'portal_data'   </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$portalData</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'response_data' </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$response</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'controller'    </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$this<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">portal.delete.after</span></pre></td>
+<td colspan="1">modules/portal/app/controllers/Api/Cms/V0m1/PortalsController.php:delete()</td>
+<td colspan="1"><pre><span>Portal\Events\Controllers\Api\Cms\Portals\Delete\After</span><span>([<br></span><span>    </span><span style="color: rgb(0,128,0);">'id' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$id<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">portal.update.after</span></pre></td>
+<td colspan="1">modules/portal/app/controllers/Api/Cms/V0m1/PortalsController.php:update()</td>
+<td colspan="1"><pre><span>Portal\Events\Controllers\Api\Cms\Portals\Update\After</span><span>([<br></span><span>    </span><span style="color: rgb(0,128,0);">'id'          </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$id</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'result'      </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$res</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'slug_name'    </span><span>=&gt; </span><span

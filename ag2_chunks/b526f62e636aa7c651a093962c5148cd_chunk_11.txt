@@ -1,0 +1,95 @@
+-Record</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>See also:</p>
+<ul>
+<li>
+<p><a href="https://datatracker.ietf.org/doc/html/rfc8659" data-card-appearance="inline">https://datatracker.ietf.org/doc/html/rfc8659</a> , especially section</p>
+<ul>
+<li>
+<p><a href="https://datatracker.ietf.org/doc/html/rfc8659#section-3" data-card-appearance="inline">https://datatracker.ietf.org/doc/html/rfc8659#section-3</a> - Section 3 (The lookup algorithm)</p>
+</li>
+<li>
+<p><a href="https://datatracker.ietf.org/doc/html/rfc8659#section-4.1.1" data-card-appearance="inline">https://datatracker.ietf.org/doc/html/rfc8659#section-4.1.1</a> - Sections 4.1.1 and onwards (For a more detailed exmplanation of the different parts of a CAA DNS-Record</p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="https://letsencrypt.org/docs/caa/" data-card-appearance="inline">https://letsencrypt.org/docs/caa/</a> - An explanation as relevant for Let’s Encrypt</p>
+</li>
+<li>
+<p><a href="https://support.dnsimple.com/articles/caa-record/" data-card-appearance="inline">https://support.dnsimple.com/articles/caa-record/</a> - An article explaining the CAA record</p>
+</li>
+</ul>
+<h2 id="dns-and-email-in-efs-how-to-pitfalls">DNS and Email in EFS (How-to / Pitfalls)</h2>
+<p> </p>
+<p>There are 4 theoretic Use-Cases regarding Domains and Email for how they are used in EFS:</p>
+<ol start="1">
+<li>
+<p>Domain will be used <strong>only for sending</strong> of mail, <strong>no Alias</strong> will be configured</p>
+<ol start="1">
+<li>
+<p>Only customer is responsible</p>
+</li>
+<li>
+<p>We recommend an SPF-Record as shown below</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Domain will be configured as EFS-Alias &amp; used <strong>only for accessing</strong> the installation (<strong>Note-</strong> L1 agent helper for Alias setup: <a href="https://ww2.efs-survey.com/uc/alias_setup/">https://ww2.efs-survey.com/uc/alias_setup/</a>)</p>
+<ol start="1">
+<li>
+<p>IP-Related records shown below are relevant</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Configured as EFS-Alias &amp; used<strong> only for sending mai</strong>l (Mail-Sender)</p>
+<ol start="1">
+<li>
+<p>Mail-Related records shown below are relevant</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Configured as EFS-Alias &amp; used for <strong>accessing + sending mails</strong> (Browser-Address-Bar &amp; Mail-Sender)</p>
+<ol start="1">
+<li>
+<p>IP-Related records shown below are relevant</p>
+</li>
+<li>
+<p>Mail-Related records shown below are relevant</p>
+</li>
+</ol>
+</li>
+</ol>
+<p>Nearly all of these use-cases require some for of DNS-Record configuration. Configuration goal:</p>
+<ul>
+<li>
+<p>Domain-IP in all cases is the same as the one used by the installation itself</p>
+</li>
+<li>
+<p>Customer does not need to do any DNS-Modification, if the IP has to be changed</p>
+</li>
+<li>
+<p>Mailing-Configuration is not restricted in any way</p>
+</li>
+</ul>
+<p>The following will describe the optimal set of DNS Records for a EFS-Alias-Domain &amp; Steps on how to reach this goal / possible workarounds.</p>
+<h3 id="recommended-efs-alias-domain-dns-records-directly-pointing-to-efs">Recommended EFS-Alias-Domain DNS Records directly pointing to EFS</h3>
+<h4 id="ip-related-entries-for-apex-domain-incl-www-subdomain">IP-Related entries - For Apex-Domain incl. www-Subdomain</h4>
+<pre><code class="language-text">example.com IN ALIAS(or ANAME or Flattened-CNAME) &lt;ab1234&gt;.customervoice360.com.
+
+www.example.com IN CNAME example.com.
+or
+www.example.com IN ALIAS(or ANAME or Flattened-CNAME) example.com.</code></pre>
+<h4 id="ip-related-entries-for-sub-domain-only">IP-Related entries - For Sub-Domain only</h4>
+<pre><code class="language-text">some.example.com IN ALIAS(or ANAME) &lt;ab1234&gt;.customervoice360.com.</code></pre>
+<h4 id="mail-related-entries">Mail-related entries</h4>
+<pre><code class="language-text">(some.)example.com IN MX &lt; e.g. 10 {customer-recieveing-mail-host}&gt;
+
+(some.)example.com IN TXT "v=spf1 &lt;additional-mechanisms&gt; include:spf.qb-feedback.com -all"
+

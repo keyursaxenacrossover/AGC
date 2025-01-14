@@ -1,0 +1,33 @@
+pre>
+<p> </p>
+<h2 id="create_secret">Create Secret</h2>
+<p>A secret is required for secure communication between your application and Azure AD.</p>
+<h3 id="step6_create_secret">Step 6: Create and Store Secret</h3>
+<p>Create a secret for the App Registration and make sure to store it securely. You will need this secret for configuring your application.</p>
+<h3 id="step7_note_client_id">Step 7: Note Client ID</h3>
+<p>Remember to note down the client ID of the App Registration, as you will need it for configuration purposes.</p>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq1">What is the preferred federation method for Azure AD?</h3>
+<p>The preferred federation method for Azure AD is OpenID Connect. While SAML might be possible, it is not the recommended configuration.</p>
+<h3 id="faq2">Why do we need to add optional claims to the manifest?</h3>
+<p>Optional claims, specifically the family_name and given_name, are added to ensure that these user details are included in the token sent by Azure AD. This information is often necessary for user identification and personalization within the application.</p>
+<p> </p>
+<p> </p>
+</article>pre>
+<p> </p>
+<h2 id="create_secret">Create Secret</h2>
+<p>A secret is required for secure communication between your application and Azure AD.</p>
+<h3 id="step6_create_secret">Step 6: Create and Store Secret</h3>
+<p>Create a secret for the App Registration and make sure to store it securely. You will need this secret for configuring your application.</p>
+<h3 id="step7_note_client_id">Step 7: Note Client ID</h3>
+<p>Remember to note down the client ID of the App Registration, as you will need it for configuration purposes.</p>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq1">What is the preferred federation method for Azure AD?</h3>
+<p>The preferred federation method for Azure AD is OpenID Connect. While SAML might be possible, it is not the recommended configuration.</p>
+<h3 id="faq2">Why do we need to add optional claims to the manifest?</h3>
+<p>Optional claims, specifically the family_name and given_name, are added to ensure that these user details are included in the token sent by Azure AD. This information is often necessary for user identification and personalization within the application.</p>
+<p> </p>
+<p> </p>
+</article>

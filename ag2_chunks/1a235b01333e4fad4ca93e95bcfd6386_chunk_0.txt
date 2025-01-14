@@ -1,0 +1,44 @@
+<p><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p>This article explains how to use smileys as an answer scale in EFS Survey, providing both a simple method and a more customizable approach.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>Smileys are frequently used as a response scale for measuring satisfaction in surveys. This guide demonstrates how to implement smiley-based answer scales in EFS Survey.</p>
+<ul>
+<li><a href="#h_01HGKSMPRT1QJXZ3YJVQ9XBPNM">Quick Method: Single Response List with Icons</a></li>
+<li><a href="#h_01HGKSMPRT2WNQX4YJXQX3QNKR">Custom Method: Using Smileys with Radio Buttons</a></li>
+</ul>
+<h2 id="h_01HGKSMPRT1QJXZ3YJVQ9XBPNM">Quick Method: Single Response List with Icons</h2>
+<p>The easiest way to implement smileys as an answer scale is to use the question type "Single response list with icons" in EFS Survey.</p>
+<h2 id="h_01HGKSMPRT2WNQX4YJXQX3QNKR">Custom Method: Using Smileys with Radio Buttons</h2>
+<p>For a more traditional look with radio buttons beneath the smileys, follow these steps:</p>
+<h3 id="h_01HGKSMPRT3YJGQNQJXBXJQNKR">Step 1: Upload Smiley Images</h3>
+<p>First, upload the smiley images to the media library in EFS Survey.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013850126226"></p>
+<h3 id="h_01HGKSMPRT4ZKHRNRKXCXKQNKR">Step 2: Add Smiley Images to Answer Options</h3>
+<p>Replace the text of each answer option with the HTML code for the corresponding smiley image. For example, instead of "very satisfied", use:</p>
+<p><code>&lt;img src="images/griening.gif" width="32" height="32" border="0"&gt;</code></p>
+<p>Replace "griening.gif" with the name of your uploaded smiley image file.</p>
+<h3 id="h_01HGKSMPRT5ALKSNSKXDXLQNKR">Step 3: Copy File Path (Alternative Method)</h3>
+<p>Alternatively, you can copy the file path directly from the media library.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013850122258"></p>
+<h3><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013837870098"></h3>
+<h3 id="h_01HGKSMPRT6BMLTOTLXEXMQNKR">Step 4: Verify Results</h3>
+<p>After saving your changes, you should see smileys instead of text descriptions for each answer option.</p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="h_01HGKSMPRT7CNMUPUTXFXNQNKR">Can I use custom smiley images?</h3>
+<p>Yes, you can upload and use your own custom smiley images as long as they are in a supported file format (e.g., GIF, PNG, JPG).</p>
+<h3 id="h_01HGKSMPRT8DOVVQVTXGXOQNKR">Is it possible to use smileys with other question types?</h3>
+<p>While the method described here works best with single response questions, you can adapt it for other question types that support custom HTML in answer options.</p>
+<p> </p>
+</article> copy the file path directly from the media library.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013850122258"></p>
+<h3><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013837870098"></h3>
+<h3 id="h_01HGKSMPRT6BMLTOTLXEXMQNKR">Step 4: Verify Results</h3>
+<p>After saving your changes, you should see smileys instead of text descriptions for each answer option.</p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="h_01HGKSMPRT7CNMUPUTXFXNQNKR">Can I use custom smiley images?</h3>
+<p>Yes, you can upload and use your own custom smiley images as long as they are in a supported file format (e.g., GIF, PNG, JPG).</p>
+<h3 id="h_01HGKSMPRT8DOVVQVTXGXOQNKR">Is it possible to use smileys with other question types?</h3>
+<p>While the method described here works best with single response questions, you can adapt it for other question types that support custom HTML in answer options.</p>
+<p> </p>
+</article>

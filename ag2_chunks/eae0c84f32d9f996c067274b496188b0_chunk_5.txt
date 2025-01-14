@@ -1,0 +1,31 @@
+ds-background-accent-blue-subtlest,#deebff); color: #172b4d; align-items: normal; min-width: 48px; display: flex; position: relative; clear: both; font-family: -apple-system, BlinkMacSystemFont, ' Segoe UI' , Roboto, Oxygen, Ubuntu, ' Fira Sans' , ' Droid Sans' , ' Helvetica Neue' , sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: pre-wrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; padding: var(--ds-space-100,8px) var(--ds-space-200,16px) var(--ds-space-100,8px) var(--ds-space-100,8px);" data-panel-type="info">
+<div class="ak-editor-panel__content" style="margin: var(--ds-space-025,2px)0 var(--ds-space-025,2px); padding: 0px; flex: 1 0 0px; min-width: 0px;">
+<p style="margin: 0px; padding: 0px; letter-spacing: -0.005em; font-size: 1em; font-weight: 400; line-height: 1.714;" data-renderer-start-pos="6736">If you wish inactive admin accounts to be expired after a given time of inactivity too, please contact support for the setup of appropriate policies. Expired accounts can no longer log into EFS. To re-enable an expired account, an admin account with sufficient user administrative rights is required.</p>
+</div>
+</div>
+</div>
+</div>
+<h3 id="Changing-user-account-data" class="wysiwyg-text-align-justify" data-renderer-start-pos="7039"><strong data-renderer-mark="true">Changing user account data</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="7067">With the necessary rights, you can view the account data of other users, correct their data if required, and send them a link for resetting the password.</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="7224">Via the user list, owners of root accounts can access the account data by just clicking on the desired user. Via <strong data-renderer-mark="true">Change user data</strong>, you can access the edit dialog. Via <strong data-renderer-mark="true">Send password</strong>, you can access the dialog for resetting the password.</p>
+</li>
+<li>
+<p data-renderer-start-pos="7463">With read rights for the ACL right <em data-renderer-mark="true">org_groupadmin</em>, you can open your teams and access the account data of the team members. With read rights, you can change the account data or send a link for resetting the password.</p>
+</li>
+</ul>
+<h3 id="Sending-a-link-for-resetting-the-password-by-e-mail" class="wysiwyg-text-align-justify" data-renderer-start-pos="7683"><strong data-renderer-mark="true">Sending a link for resetting the password by e-mail</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="7736">With the necessary access rights, you can send your users links for resetting their passwords.</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="7834">If you have a root account, search for the desired user in the user list. Then, open the dispatch dialog via the <strong data-renderer-mark="true">Send password</strong> icon.</p>
+</li>
+<li>
+<p data-renderer-start-pos="7970">If you have read rights for <em data-renderer-mark="true">org_groupadmin</em>, open the desired team, click on the appropriate team member, and choose the <strong data-renderer-mark="true">Send password</strong> button.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="8114">The text of the mail is predefined. In the dispatch dialog, only the basic contact data are displayed.</p>
+<h3 id="Checking-user-accounts-for-brute-force-suspension" class="wysiwyg-text-align-justify" data-renderer-start-pos="8218"><strong data-renderer-mark="true">Checking user accounts for brute force suspension</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="8269">The admin area has protection against brute force attacks, i.e. hacking of an account using automated, rapidly consecutive entries of possible passwords. There is only a limited number of incorrect entries possible; exceeding this value will deactivate the staff account for a predetermined period. The person logging in will then see an error message, in which the remaining waiting period will be displayed.</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="8680">By default the account will be suspended after six incorrect entries, the

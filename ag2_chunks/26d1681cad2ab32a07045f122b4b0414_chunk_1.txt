@@ -1,0 +1,96 @@
+</li>
+<li>
+<p><code>Add, delete, and edit scope, claim, and policy on an authorization server</code> - API Access Management Admins</p>
+</li>
+<li>
+<p>Sign on: <code>Add/update/delete policies</code> - Org. Admins</p>
+</li>
+<li>
+<p><code>Create User Tokens</code> → Will be performed by a designated user, see Token Admin</p>
+</li>
+<li>
+<p><code>Add a social IDP</code> - Org. Admins</p>
+<ul>
+<li>
+<p>Also needed: <code>Manage profile mappings</code> - Org. Admins, App. Admins and API Access Management Admins</p>
+</li>
+</ul>
+</li>
+<li>
+<p><code>Add and configure applications</code> - App. Admins and API Access Management Admins</p>
+</li>
+<li>
+<p><code>Edit MFA factors</code> - Org. Admin</p>
+</li>
+<li>
+<p>Password Policy</p>
+</li>
+</ul>
+<p><strong>Required Okta Admin Roles:</strong></p>
+<ul>
+<li>
+<p>Org. Admin</p>
+</li>
+<li>
+<p>API Access Management Admins</p>
+</li>
+</ul>
+<p><strong>People in this Group</strong></p>
+<ul>
+<li>
+<p>All 2nd Level support Employees</p>
+</li>
+</ul>
+<h2 id="header-5">User Manager</h2>
+<p>User managers were typically people from L1 support which assist users having problems to sign in etc.</p>
+<p>Considering the current organizational structure, no <strong>User Manager</strong> accesses are required for support.</p>
+<h2 id="header-6">Token Users</h2>
+<p>The token user is a special Okta user which is not mapped to a real person.</p>
+<p>API tokens in Okta inherit the permissions from the user creating that token. The token is created with that special user to avoid invalid tokens due to user off-boardings or similar.</p>
+<p><strong>The following permissions are (currently) needed from EFS and Portals, and need to be granted to the token creator:</strong></p>
+<ul>
+<li>
+<p><code>Create users</code> - Org. Admins or Group Admins</p>
+</li>
+<li>
+<p><code>Add users to groups</code> - Org. Admin or Group Admin</p>
+</li>
+<li>
+<p><code>Add and configure applications</code> - App. Admins and API Access Management Admins</p>
+</li>
+</ul>
+<p><strong>Required Okta Admin Roles:</strong></p>
+<ul>
+<li>
+<p>Org Admin</p>
+</li>
+<li>
+<p>App. Admin OR API Access Management Admin</p>
+</li>
+</ul>
+<p>Note: If additional applications are connected to the Tivian Okta account (apart from EFS and Portals) which do additional API calls and need additional permissions they either have to be added to this group or another group has to be created especially for them.</p>.</p>
+<h2 id="header-6">Token Users</h2>
+<p>The token user is a special Okta user which is not mapped to a real person.</p>
+<p>API tokens in Okta inherit the permissions from the user creating that token. The token is created with that special user to avoid invalid tokens due to user off-boardings or similar.</p>
+<p><strong>The following permissions are (currently) needed from EFS and Portals, and need to be granted to the token creator:</strong></p>
+<ul>
+<li>
+<p><code>Create users</code> - Org. Admins or Group Admins</p>
+</li>
+<li>
+<p><code>Add users to groups</code> - Org. Admin or Group Admin</p>
+</li>
+<li>
+<p><code>Add and configure applications</code> - App. Admins and API Access Management Admins</p>
+</li>
+</ul>
+<p><strong>Required Okta Admin Roles:</strong></p>
+<ul>
+<li>
+<p>Org Admin</p>
+</li>
+<li>
+<p>App. Admin OR API Access Management Admin</p>
+</li>
+</ul>
+<p>Note: If additional applications are connected to the Tivian Okta account (apart from EFS and Portals) which do additional API calls and need additional permissions they either have to be added to this group or another group has to be created especially for them.</p>

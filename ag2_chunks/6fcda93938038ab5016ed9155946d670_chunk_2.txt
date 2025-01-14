@@ -1,0 +1,61 @@
+ style="width: 151.0px;">
+<col style="width: 135.0px;">
+<col style="width: 48.0px;">
+<col style="width: 53.0px;">
+<col style="width: 368.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/SupportEFSAnalyticsLab?sortcol=0;table=1;up=0#sorted_table">Config Flag</a></p></th>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/SupportEFSAnalyticsLab?sortcol=1;table=1;up=0#sorted_table">Beschreibung</a></p></th>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/SupportEFSAnalyticsLab?sortcol=2;table=1;up=0#sorted_table">Standardlimit</a></p></th>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/SupportEFSAnalyticsLab?sortcol=3;table=1;up=0#sorted_table">Bisher max gesetzt auf</a></p></th>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/SupportEFSAnalyticsLab?sortcol=4;table=1;up=0#sorted_table">Kommentar</a></p></th>
+</tr>
+<tr>
+<td><p>reporting_max_reports</p></td>
+<td><p>maximum number of reports and exports per project</p></td>
+<td><p>3</p></td>
+<td><p>70</p></td>
+<td><p>Können wir bis zu 5 kostenlos erhöhen. Wurde in der Vergangenheit auf eigenen Installationen auch schon auf bis zu 30 hoch gesetzt.<br>Case 00273212: Wunsch: Erhöhen auf 70. Hinweis zu möglicherweise auftretenden Performanzproblemen und die mögliche Auswirkung auch auf andere Installationen gegeben.</p></td>
+</tr>
+<tr>
+<td><p>reporting_crossbreak_max_cols</p></td>
+<td><p>crossbreak limits. Default: 25 items in a row</p></td>
+<td><p>25</p></td>
+<td><p>150</p></td>
+<td><p>ursprüngliche info war: können wir bis auf 40 kostenlos erhöhen. Technisch bedingt können wir den Wert aktuell nicht höher als 40 setzen, da dies ansonsten negative Auswirkungen auf unseren Generierungsserver hat. Aus Erfahrung wissen wir, dass dieser bei höheren Werten in die Knie gehen kann.<br>Aktuell ist es aber auf <a href="http://efs.questback.co.uk">efs.questback.co.uk</a> auf 150 gesetzt und scheint zu laufen</p></td>
+</tr>
+<tr>
+<td><p>reporting_crossbreak_max_rows</p></td>
+<td><p>crossbreak limits. Default: 3 rows</p></td>
+<td><p>3</p></td>
+<td><p>150</p></td>
+<td><p>auf 150 gesetzt auf <a href="http://efs.questback.co.uk">efs.questback.co.uk</a></p></td>
+</tr>
+<tr>
+<td><p>reporting_participant_limit</p></td>
+<td><p>the access to reporting and creation of new reports will be restricted if the max number of participants is over the limit</p></td>
+<td><p>20000</p></td>
+<td><p>7000000</p></td>
+<td><p>Wurde bei Rovio sehr hoch gesetzt. Bisher keine Probleme.<br>Bei Hofer KG auf 300.000 gesetzt (case 00458058)<br>Für Ipsos Loyalty GmbH und das Projekt "IPSOS - RSA UK" ist auf "3 500 000" hochgesetzt (case 00893794).</p></td>
+</tr>
+<tr>
+<td><p>reporting_data_update_period</p></td>
+<td><p>time (seconds) which the user have to wait until the dataUpdate can be started again</p></td>
+<td><p>3600</p></td>
+<td><p></p></td>
+<td><p>Auf 500 gestellt auf Installation <a href="http://bv3297.customervoice360.com/www/">bv3297.customervoice360.com/www/</a>, wegen einer Sonderprogrammierung von Guido<br>Auf 60 gestellt auf interner Installation <a href="http://rf6673.customervoice360.com/www/">rf6673.customervoice360.com/www/</a></p></td>
+</tr>
+<tr>
+<td><p>reporting_load_limit</p></td>
+<td><p>number of certain type of requests which can run simultaneously. the following acts are impacted: "create", "copy", "dataUpdate"</p></td>
+<td><p>2</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>reporting_ignore_report_limit</p></td>
+<td><p>Ignore reporting limits. Users can create unlimited reports and exports</p></td>
+<td><p>false</p></td>
+<td><p></p

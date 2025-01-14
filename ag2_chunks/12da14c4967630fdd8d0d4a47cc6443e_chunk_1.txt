@@ -1,0 +1,42 @@
+<p class="wysiwyg-text-align-justify">The work process required for this consists of three sections which are described below:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Saving the layout setting as a template</p>
+</li>
+<li>
+<p>Exporting the layout template from the original EFS installation</p>
+<ul>
+<li>
+<p>Switch to the <strong>Layout templates </strong>menu.</p>
+</li>
+<li>
+<p>Select the desired template from the <strong>Layout list </strong>tab and click on the <strong>Export </strong>icon.</p>
+</li>
+<li>
+<p>The “File Download” dialog will open. Check that “Save file to disk” is selected, and confirm by clicking on <strong>OK</strong>.</p>
+</li>
+<li>
+<p>In the window that will then open, select the folder on your hard disk to which you want to store the layout file, and specify the name of the file.</p>
+</li>
+<li>
+<p>The layout template will now be stored on your hard disk as a zip file. The export operation is completed.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Importing the layout template into another EFS installation</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">From EFS 10.0, all layout settings are closely associated with the selected layout generation (“Responsive layout” or traditional system layout). When exporting a layout template, its layout generation will be transferred as well. I.e. on the target installation, the template will only be available for projects of the appropriate generation, too.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="layout-migration" class="wysiwyg-text-align-justify">Layout Migration</h2>
+<p class="wysiwyg-text-align-justify">Sometimes we will make changes to a survey layout version to apply security updates, bug fixes, and enhancements. In the past these changes have been applied directly to the layout version and therefore all projects using that layout version. In some cases, this has led to issues with the project where local changes or customizations have not been compatible with the new version. From now on, any changes Tivian makes to a layout version will be introduced as a new layout version. For example, changes to Responsive Layout 3 included in this release will now be introduced as Responsive Layout 3.1.</p>
+<p class="wysiwyg-text-align-justify">This means you can now control when you would like to apply the latest layout version to your live projects, for example, after the field phase has ended, using our <em>Layout migration</em> feature. It is also possible to revert projects to earlier layout versions, so should you have local changes in your project that are not compatible with the latest layout version you can simply migrate the project back to a previous version with which the project was compatible.</p>
+<p class="wysiwyg-text-align-justify">It is possible to migrate a layout version to an earlier version or a later version within the same major version (e.g. moving between Responsive Layout 3 and 3.1) but not between major versions (e.g. you cannot migrate a survey’s layout from Responsive Layout 2 to Responsive Layout 3).</p>
+<p class="wysiwyg-text-align-justify">Please note, that customized layouts are not automatically updated with a new version release, and custom question types are not automatically available in later versions (these must be manually updated to support a later layout version).</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863" class="wysiwyg-text-align-justify">FAQ</h1>
+<h3 id="faq_customized_layouts" class="wysiwyg-text-align-justify">Are customized layouts automatically updated with new version releases?</h3>
+<p class="wysiwyg-text-align-justify">No, customized layouts are not automatically updated with a new version release. Custom question types are also not automatically available in later versions and must be manually updated to support a later layout version.</p>
+<h3 id="faq_layout_generations" class="wysiwyg-text-align-justify">How are layout settings associated with layout generations?</h3>
+<p class="wysiwyg-text-align-justify">From EFS 10.0, all layout settings are closely associated with the selected layout generation ("Responsive layout" or traditional system layout). When exporting a layout template, its layout generation will be transferred as well. This means that on the target installation, the template will only be available for projects of the appropriate generation.</p>

@@ -1,0 +1,171 @@
+ actions, export the list of existing actions instead.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Open the file in a suitable program, e.g., in Excel, and enter the new actions resp. change the existing data. Please make sure that no action ID (ac_id) is entered for new actions!</p>
+</li>
+<li>
+<p>Then, save the file in Excel or CSV format.</p>
+</li>
+<li>
+<p>Use the<strong> Import actions</strong> button to open the import dialog and import the file as usual.</p>
+</li>
+</ul>
+<p><strong>Formatting of the import file</strong></p>
+<p>Please check the table to learn which data fits into which column of the import file.</p>
+<table class="" border="1" data-layout="default">
+<colgroup>
+<col style="width: 192.0px;">
+<col style="width: 568.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour="#57d9a3">
+<p style="text-align: center;"><strong>Column</strong></p>
+</th>
+<th data-highlight-colour="#57d9a3">
+<p style="text-align: center;"><strong>Description</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p><em>ac_id</em></p>
+</td>
+<td>
+<p>Unique identifier of the action</p>
+<ul>
+<li>
+<p>If you want to create a new action, keep this field blank.</p>
+</li>
+<li>
+<p>If you want to update an existing action, the ID can be found in the unit-specific overview of actions</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>ac_editable</em></p>
+</td>
+<td>
+<p>Editability of the measure code:</p>
+<ul>
+<li>
+<p>1: editable</p>
+</li>
+<li>
+<p>0: not editable</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>ac_name</em></p>
+</td>
+<td>
+<p>Title of action</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>ac_cat</em></p>
+</td>
+<td>
+<p>ID of the subject group</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>ac_headline</em></p>
+</td>
+<td>
+<p>Problem description</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>ac_desc</em></p>
+</td>
+<td>
+<p>Action description</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>ac_response</em></p>
+</td>
+<td>
+<p>Responsible person</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>ac_status</em></p>
+</td>
+<td>
+<p>Process status code:</p>
+<ul>
+<li>
+<p>not started</p>
+</li>
+<li>
+<p>2: started</p>
+</li>
+<li>
+<p>3: completed</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>ac_scope</em></p>
+</td>
+<td>
+<p>Scope code</p>
+<ul>
+<li>
+<p>1: own unit</p>
+</li>
+<li>
+<p>2: cross departmental</p>
+</li>
+<li>
+<p>3: cross location</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>ac_date</em></p>
+</td>
+<td>
+<p>Completion date</p>
+<p>The period includes the past three years, plus two years into the future.</p>
+<p>Format:</p>
+<p>YYYY-MM-DD</p>
+<p>HH:MM:SS</p>
+<p>e.g. 2010-05-28</p>
+<p>14:00:01</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>metaname</p>
+</td>
+<td>
+<p>Meta name: Unique identifier of the unit.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="h_01J3N2HWAAMAG9SE6ATRH4Y31N"><strong>Exporting actions</strong></h3>
+<p>You can export the actions of your area of responsibility, e.g. for a workshop or for external editing. Switch to the<strong> Export</strong> tab.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017142408850" alt="image2019-5-15_10-52-29.png"></p>
+<p>Activate the “All actions for organizational unit and child units” option and confirm by clicking on the <strong>Send</strong> button. Then, save the file on your PC.</p>
+<h3 id="h_01J3N2HWAAKHHZRY1F61621451"><strong>Viewing the status of actions</strong></h3>
+<p>On the <strong>Statistics</strong> tab, you can monitor the progress of the follow-up process in your area of responsibility in real time.</p>
+<p>While the <strong>Actions</strong> tab shows the content of the single actions and their current status, the <strong>Statistics</strong> tab classifies the actions according to the subject groups chosen and the process status. The overall status is calculated from all actions subordinated to the respective subject areas and their status respectively.</p

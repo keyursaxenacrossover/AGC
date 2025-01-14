@@ -1,0 +1,64 @@
+ data for a selection of variables, eliminating the need to repeatedly select variables for selective export.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Restricting Export to Individual Panelist Groups</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Export data for selected participants instead of all panelists by applying restrictions:
+<ul>
+<li>
+<strong>Group category</strong>: Restrict to a specific group category.</li>
+<li>
+<strong>Panel group</strong>: Restrict to a panel group, selectable after choosing the category.</li>
+</ul>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Restricting Export to Panelists with Specific Status</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Export data of panelists with specific statuses (e.g., “Admitted temporarily”).</li>
+<li>Select desired statuses by ticking the appropriate checkboxes in the “Apply to panelists with status” row. All checkboxes are ticked by default.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Restricting Export to Selected Variables</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Use selective export to export only chosen variables, suitable for managing large amounts of master data.</li>
+<li>Example: Export variables for age, gender, and profession for sociodemographic information or export only email addresses.</li>
+<li>To perform selective export:
+<ol>
+<li>Tick the “Selective export” checkbox.</li>
+<li>Click Export to see the list of possible variables and select the desired ones.</li>
+</ol>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Exporting Special Features for Evaluation in SPSS</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<strong>Creating SPSS Labels for Your Own Syntax Jobs</strong>:
+<ol>
+<li>Choose “SPSS labels for master data” from the People → Export menu.</li>
+<li>Confirm by clicking on Next.</li>
+<li>The export file will be in .dat format, containing labels and variable names for relabeling in SPSS.</li>
+</ol>
+</li>
+</ul>
+<h2 id="h_01HGKSMPRTGXJ4YJXQXHM0XJNM" class="wysiwyg-text-align-justify">Export Templates</h2>
+<p class="wysiwyg-text-align-justify">The basic settings and advanced options in the Panel → Export menu are similar to those detailed in the “EFS Survey” manual. Below are the differences in export templates and restriction options.</p>
+<h4 id="h_01J3FDRACKWEJK41Y8JCVVR6H9" class="wysiwyg-text-align-justify">Selecting an Export Template</h4>
+<p class="wysiwyg-text-align-justify">The following export templates are available:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<strong>Master data</strong>: System data and master data.</li>
+<li>
+<strong>Participant data</strong>: Data from the participant database.</li>
+</ul>
+<p id="h_01J3FDRACK043Y3KCGD79JWMB7" class="wysiwyg-text-align-justify"><em><strong>Note:</strong> In the People → Export → Template editor menu, you can create and save custom export templates for panel data. This is particularly useful if you frequently export data for a selection of variables, avoiding the need to repeatedly select variables for selective export.</em></p>
+<p id="h_01J3FDRACKD2D4CWJS7HPWHPN4" class="wysiwyg-text-align-justify"><strong>Restricting Export to Individual Panelist Groups</strong></p>
+<p class="wysiwyg-text-align-justify">Instead of exporting data for all panelists, you can export data for selected participants by applying the following restrictions:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<strong>Group category</strong>: Restrict to a specific group category.</li>
+<li>
+<strong>Panel group</strong>: Restrict to a panel group, selectable after choosing the category.</li>
+</ul>
+<p id="h_01J3FDRACK53NG1N5T2WJMWWXT" class="wysiwyg-text-align-justify"><strong>Restricting Export to Panelists with Specific Status</strong></p>
+<p class="wysiwyg-text-align-justify">You can export data of panelists with specific statuses. For example, export data of panelists with the “Admitted temporarily” status or exclude data for statuses such as “Tester” and “Moderator”. To do so, tick only the checkboxes for the desired statuses in the “Apply to panelists with status” row. By default, all checkboxes are ticked.</p>
+<p id="h_01J3FDRACK63WK1AXM4WTVPWSZ" class="wysiwyg-text-align-justify"><strong>Restricting Export to Selected Variables</strong></p>
+<p class="wysiwyg-text-align-justify">In the case of selective export, only selected variables will be exported. This is useful for export processes that include master data, as large panels can quickly become unmanageable. For example, you can export only variables that provide sociodemographic information like age, gender, and profession, or only email addresses.</p>
+<p class

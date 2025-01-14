@@ -1,0 +1,86 @@
+<td>
+<p>For questions with multiple response lists, checks whether the number of checkboxes ticked is within a preset range.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 class="wysiwyg-text-align-justify"> </h3>
+<h3 id="range-check" class="wysiwyg-text-align-justify">Range Check</h3>
+<p class="wysiwyg-text-align-justify">The range check checks whether the number entered by the survey participant is within the number range you set. Otherwise, the plausibility check will be triggered and report an error. For this, the preset limits are included in the permissible range of values. The check also works with negative numbers.</p>
+<p class="wysiwyg-text-align-justify">If you set up a range check to do a JavaScript plausibility check or a combined PHP plausibility check, please note: JavaScript gives a value of “0” to an empty string (nothing entered). That is, if a respondent enters nothing, it will not be seen as an incorrect entry, rather it will be given a value of “0”, which is either permitted or prohibited depending on how each area is defined. In order to prevent this kind of misevaluation, please run a separate OnlyNumbers check (do not use AND conjunctions with the Range check) on the input field.</p>
+<h3 id="e-mail-address-check" class="wysiwyg-text-align-justify">E-mail Address Check</h3>
+<p class="wysiwyg-text-align-justify">The e-mail address check checks the variable to be set for a correctly entered e-mail address. A correct e-mail address consists of four parts.</p>
+<p class="wysiwyg-text-align-justify">Example: <a href="mailto:tester@email.de">tester@email.de</a></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>An individual user name (tester in the example).</p>
+</li>
+<li>
+<p>The @ character.</p>
+</li>
+<li>
+<p>A domain name (email in the example).</p>
+</li>
+<li>
+<p>A country ID, separated from the domain name by a period (.de in the example).</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The e-mail address check checks the four parts for the following form:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The individual user name: The individual user name may contain letters and numbers as well as the characters “.”, “_” and “–”. Umlauts are not allowed.</p>
+</li>
+<li>
+<p>The domain name: The domain name may contain letters, numbers and periods. Umlauts are not allowed. The domain name can be subdivided by any number of periods.</p>
+</li>
+<li>
+<p>The country ID: The domain name may only contain letters, with a minimum of 2 and a maximum of 6 letters allowed. Umlauts are not allowed.</p>
+</li>
+</ul>
+<h3 id="standard-check" class="wysiwyg-text-align-justify">Standard Check</h3>
+<p class="wysiwyg-text-align-justify">The standard check checks the variable to be set to see whether it meets a condition set through the mathematical operators (= , &lt; , &gt; , &lt;= , &gt;= , !=).</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Select the variable you want to check.</p>
+</li>
+<li>
+<p>Select the mathematical operator you want to use to check the variable.</p>
+</li>
+<li>
+<p>Enter the value of the variable for which the check is to be performed.</p>
+</li>
+</ul>
+<h3 id="format-check" class="wysiwyg-text-align-justify">Format Check</h3>
+<p class="wysiwyg-text-align-justify">The format check checks the variable to be set to see whether it complies with a format, also set by you. You have the choice of the following formats:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Checking to see whether the field contains no numbers.</p>
+</li>
+<li>
+<p>Checking to see whether the field contains only uppercase letters.</p>
+</li>
+<li>
+<p>Checking to see whether the field contains only lowercase letters.</p>
+</li>
+<li>
+<p>Checking to see whether the field contains only numbers with periods or commas.</p>
+</li>
+<li>
+<p>Checking to see whether the field contains only numbers with or without periods.</p>
+</li>
+<li>
+<p>Checking to see whether the field contains only numbers with or without commas.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">To create the format check, please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Select the variable you want to check.</p>
+</li>
+<li>
+<p>Select the format for which you want to check the variable you previously set.</p>
+</li>
+</ul>
+<h3 id="regex-check-and-noregex-check" class="wysiwyg-text-align-justify">RegEx Check and NoRegEx Check</h3>
+<p class="wysiwyg-text-align-justify">The RegEx and NoRegEx checks check the variable to be set to see whether it complies with a regular expression, also set by you. Regular expressions are defined as follows:</p>
+<ul class="wysiwyg-text-align

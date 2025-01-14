@@ -1,0 +1,103 @@
+ the dialog in which you can specify inclusion conditions will appear.</p>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify">The variables of source questions for list elements are marked with the <strong>L</strong> icon in the question view to indicate that they are accessed by a list.</p>
+<h3 id="adopting-item-specific-properties-from-source-questions" class="wysiwyg-text-align-justify">Adopting item-specific properties from source questions</h3>
+<p class="wysiwyg-text-align-justify">Optionally, various item properties from source questions can be automatically adopted in the list. They can then be displayed with target questions in the editor but cannot be edited. Automatic property and content adoption are enabled when creating a new list or manually on the <strong>General settings</strong> tab in the list editor.</p>
+<p class="wysiwyg-text-align-justify">The table provides an overview of available options.</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default">
+<colgroup> <col style="width: 304.0px;"> <col style="width: 456.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p><strong>Option</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Adopt grouping of source questions in target questions</p>
+</td>
+<td>
+<p>Grouping is automatically adopted</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Adopt randomization at the item level from the source question in target questions</p>
+</td>
+<td>
+<p>If randomization is enabled for an item in the source question this setting is also adopted in the target question. Randomization is however performed anew and the state is not adopted from the source question (unless “Adopt ...randomization state” is also been enabled</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Adopt source question randomization state for target questions</p>
+</td>
+<td>
+<p>Randomization status of source question items is automatically adopted in target questions – i.e. items from the source questions are displayed to the respondent in the order seen in the source question. Static elements or other static lists contained in the same dynamic list are likewise placed above, below, or in between, according to their numbering.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Adopt wording from the source question in target questions</p>
+</td>
+<td>
+<p>The wording of the source and target question is automatically synchronized. Any change to the source question is automatically adopted in target questions.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Adopt images from the source question in target questions</p>
+</td>
+<td>
+<p>The images of the source and target question are automatically synchronized. Any change to the source question is automatically adopted in target questions.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Adopt item sequence from the source question in target questions</p>
+</td>
+<td>
+<p>The sequence of items in the source and target question is automatically synchronized. Any change to the source question is automatically adopted in target questions.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Adopt DAC at item level from the source question in target questions</p>
+</td>
+<td>
+<p>If DAC is enabled for an item in the source question this setting is also adopted in the target question.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="h_01J3YY8HMQRZ7G7EMHP8G1PYVD" class="wysiwyg-text-align-justify"> </h3>
+<h3 id="specifying-properties-of-the-list-elements" class="wysiwyg-text-align-justify">Specifying properties of the list elements</h3>
+<p class="wysiwyg-text-align-justify">After you have created a list and made the general settings, the<strong> Inclusion conditions</strong> tab will appear. It lists the following information and setting options for each list element:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Variable name: The variable and label of the respective option in the source question.</p>
+</li>
+<li>
+<p>Editable text field: List element no.</p>
+</li>
+<li>
+<p>Fixed number: The sort number of the option in the source question.</p>
+</li>
+<li>
+<p>Source variable: The label used for the source variable in the source question.</p>
+</li>
+<li>
+<p>Type</p>
+</li>
+<li>
+<p>Inclusion conditions: The conditions under which the element concerned is displayed in a target question. The following chapters explain how to specify in advance inclusion conditions individually, for the entire list or for elements yet to be added.</p>
+</li>
+<li>
+<p>Output text: The text that will be output in the questionnaire. (If you are using the list in a loop, you can use wildcards to incorporate the list elements into the questionnaire. In this case, you can click on the links in the “Output text” column to open a dialog that allows you to create additional wildcards with alternate text versions.)</p>
+</li>
+</ul>
+<h3 id="specifying-inclusion-conditions-for-individual-list-elements" class="wysi

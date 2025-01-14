@@ -1,0 +1,58 @@
+><h3 id="header-21">3. Activate Mysight Custom Content Handler for panel website (Custom Output Modul)</h3><ul>
+<li><p><strong>Login to installation using the root account</strong></p></li>
+<li>
+<p><strong>Change config flag "panel_special_features":</strong></p>
+<ul><li><p>string(0 =&gt; 'have_experimental_content_handlers')</p></li></ul>
+</li>
+<li><p><strong>Check whether folder panelwebsite/custom exists, create it if it doesn't exist (rights need to be <ac:inline-comment-marker ac:ref="06544031-d458-4021-841d-222711144eed">775</ac:inline-comment-marker>)</strong></p></li>
+<li>
+<p><strong>Check out custom content handler from CVS</strong></p>
+<ul>
+<li><p>Change into main directory of installation (above htdocs (so, that ls shows htdocs and projekte Ordner, if that one exists))</p></li>
+<li><pre><code class="language-text">cvs co projekte/ProductCustomizingTeam/mySightWebsite/customcontenthandler</code></pre></li>
+<li>
+<p>Create symlinks for both Custom content handlers</p>
+<pre><code class="language-text">cd htdocs/panelwebsite/custom
+         ln -s ../../../projekte/ProductCustomizingTeam/mySightWebsite/customcontenthandler/class_custom_panel_action_mysightdashboard.php class_custom_panel_action_mysightdashboard.php
+         ln -s ../../../projekte/ProductCustomizingTeam/mySightWebsite/customcontenthandler/class_custom_panel_action_mysightselectgroup.php class_custom_panel_action_mysightselectgroup.php</code></pre>
+</li>
+</ul>
+</li>
+</ul><p><strong>Documentation Gordon (custom content handler Setup):</strong> <a href="https://it.globalpark.de/twiki/pub/Support/MySight/MySight_installieren.docx">MySight_installieren.docx</a></p><p><strong>Documentation regarding trusted ticket for custom content handler</strong></p><h3 id="header-22">4. Import Mysight website</h3><ul>
+<li><p><strong>Login to installation</strong></p></li>
+<li>
+<p><strong>Navigate to Website &gt;&gt; qb only:: Import website</strong></p>
+<ul>
+<li><p>Name of new website: "MySight"</p></li>
+<li><p>Theme: -- No theme --</p></li>
+<li><p><ac:inline-comment-marker ac:ref="e18af07d-7977-4d76-9fde-e27b803f55bf">File</ac:inline-comment-marker>:</p></li>
+</ul>
+</li>
+</ul><p class="media-group"><ac:parameter ac:name="name"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20714628616722" alt="mysight_website.gpx"></ac:parameter></p><p></p><ul>
+<li>
+<p><strong>Check whether the custom content handlers are set accordingly</strong></p>
+<ul>
+<li><p>Website editor &gt; Pages &gt; Select panelgroup &gt; QB-ONLY Show page module config &gt; Custom class should be "panel_action_mysightselectgroup"</p></li>
+<li><p>Website editor &gt; Pages &gt; MySight &gt; QB-ONLY Show page module config &gt; Custom class should be "panel_action_mysightdashboard"</p></li>
+<li><p>(You reach the website editor by clicking the language version [in this case it is the list item of 'MySight'])</p></li>
+</ul>
+</li>
+<li>
+<p><strong>Change the access rights for panel website and language version</strong> so that the following teams have access to both</p>
+<ul><li><p>Administrator, Paneladministrator</p></li></ul>
+</li>
+<li><p><strong>Change status of panel website and language version to "Online"</strong></p></li>
+</ul><h3 id="header-23">5. Check configuration</h3><ul>
+<li><p><strong>Execute installation check</strong></p></li>
+<li>
+<p><strong>Alternatively you can check as follows:</strong></p>
+<ul>
+<li><p>Open any EFS project (except for forum discussions (FD))</p></li>
+<li><p>If MySight has been activated correctly, you will see menu "MySight" in Survey menu</p></li>
+<li><p>Click on "MySight" and check whether you see message "No export job has been scheduled yet." in the top right corner. (If you can see it everything is fine??? -Daniel).</p></li>
+</ul>
+</li>
+</ul><h2 id="header-25">Overview EFS configuration variables and values for MySight v1</h2><h3 id="header-27">
+<ac:inline-comment-marker ac:ref="73ea6c7a-8401-4892-9399-fc8737468763">SFTP </ac:inline-comment-marker>Data:</h3><p></p><ul>
+<li><p><strong>sftp_host</strong>(default:YES)______________________________________: <a href="http://mysight-data.bre.globalpark.com">mysight-data.bre.globalpark.com</a> <strong>(FRANKFURT)</strong></p></li>
+<li><p><strong>sftp

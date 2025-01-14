@@ -1,0 +1,51 @@
+ and calculated DB size packed into a txt file </font></p>
+</li>
+</ol>
+<p> </p>
+<h2 id="header-5">Send mail from command line or from shell scripts</h2>
+<p>This has been possible using the mailx command in the Corbox</p>
+<pre><code class="language-text">mailx -s "Post aus Bremen" -r mathias.thurn@tivian.com -a jf3233_injections.zip  mathias.thurn@tivian.com</code></pre>
+<p>In the example an attched file is sent from <code>mathias.thurn@tivian.com</code> to <code>mathias.thurn@tivian.com</code></p>
+<p>In the AWS we have the msmtp command. It can be used with a configuration file in your home folder</p>
+<p><code>~/.msmtprc</code></p>
+<pre><code class="language-text">thurn_mathias@servicegw-prod-de-03:~$ cat .msmtprc
+defaults
+tls off
+
+account techsupport
+auth off
+host postfix-adhoc.global-services.svc.cluster.local
+port 25
+from techsupport@tivian.com
+
+account default : techsupport
+</code></pre>
+<p>You can send text from a file, that includes data like the recipient. The Subject is always part of the message and is not passed via parameter.</p>
+<p><code>message_0001.txt</code></p>
+<pre><code class="language-text">To: mathias.thurn@tivian.com
+Subject: Testmail 0001
+Hi,
+dies ist eine Testmail.
+Viele Gruesse,
+Mathias</code></pre>
+<p>You can send mails like this</p>
+<pre><code class="language-text">cat message_0001.txt | msmtp -vt 
+or
+msmtp -vt &lt; message_0001.txt </code></pre>
+<p>You can specify the location of the configuration file or pass all info as parameters like in this example:</p>
+<pre><code class="language-text">cat &lt;(echo "Subject: Some Subject for the mail") &lt;(iconv -f UTF-8 -t ISO8859-1 message_only.txt) | msmtp --host="postfix-adhoc.global-services.svc.cluster.local" --port=25 --from="techsupport@tivian.com" --auth=off --tls=off mathias.thurn@tivian.com</code></pre>
+<p>In this example the message_only.txt is converted from UTF-8 to ISO.8859-1 on the fly to avoid, that Umlaute aren’t displayed properly in mail clients like Outlook.</p> data like the recipient. The Subject is always part of the message and is not passed via parameter.</p>
+<p><code>message_0001.txt</code></p>
+<pre><code class="language-text">To: mathias.thurn@tivian.com
+Subject: Testmail 0001
+Hi,
+dies ist eine Testmail.
+Viele Gruesse,
+Mathias</code></pre>
+<p>You can send mails like this</p>
+<pre><code class="language-text">cat message_0001.txt | msmtp -vt 
+or
+msmtp -vt &lt; message_0001.txt </code></pre>
+<p>You can specify the location of the configuration file or pass all info as parameters like in this example:</p>
+<pre><code class="language-text">cat &lt;(echo "Subject: Some Subject for the mail") &lt;(iconv -f UTF-8 -t ISO8859-1 message_only.txt) | msmtp --host="postfix-adhoc.global-services.svc.cluster.local" --port=25 --from="techsupport@tivian.com" --auth=off --tls=off mathias.thurn@tivian.com</code></pre>
+<p>In this example the message_only.txt is converted from UTF-8 to ISO.8859-1 on the fly to avoid, that Umlaute aren’t displayed properly in mail clients like Outlook.</p>

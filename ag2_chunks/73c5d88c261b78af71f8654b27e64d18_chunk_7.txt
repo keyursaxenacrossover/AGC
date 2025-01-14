@@ -1,0 +1,43 @@
+> which are still empty. Missing logos and buttons will be filled with #undefined#. If no character set has been specified before the change, the character set will also be set to "#undefined#" and needs to be defined.</p>
+<p class="wysiwyg-text-align-justify"><strong>Blocking changes to the default language</strong></p>
+<p class="wysiwyg-text-align-justify">If several staff members are working in the admin area at the same time, problems might occur. These can be prevented by incorporating the language selection blocker:</p>
+<p class="wysiwyg-text-align-justify">Let us assume that user A sets his or her native language, German, as the default language and starts work in the questionnaire editor. User B does not know about this and changes the default language to English. Now, user A wants to save his or her changes to the German-language questionnaire. However, while saving, the changes will not be entered in the originally set default language of German, but will instead overwrite the English text elements.</p>
+<p class="wysiwyg-text-align-justify">To avoid such overlapping, the change function will be blocked for all users after a change of the default language, and the<strong> Activate language</strong> button will no longer appear.</p>
+<p class="wysiwyg-text-align-justify">Only the user who last made the change as well as users with “root” rights will now see a button labeled <strong>Enable language selection</strong> instead of the <strong>Use as default language</strong> icon, and can unblock language selection by clicking on this button. The blocker remains active until the user who made the change logs out or their session ends.</p>
+<p class="wysiwyg-text-align-justify">After language selection has been unblocked or the last user’s session has ended, the default language can be changed again by any user.</p>
+<h3 id="setting-the-output-language-via-a-language-selection-variable" class="wysiwyg-text-align-justify"><strong>Setting the Output Language Via a Language Selection Variable</strong></h3>
+<p class="wysiwyg-text-align-justify">The language displayed at the start of the survey can be set via a data item known in advance, such as information from participant administration. In the “Read language selection by survey start from” drop-down list, you can define the variable from which the ID of the displayed language will be read at the start of the survey. Which variables are available depends on the project type:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><em>Anonymous projects</em>: URL parameters</p>
+</li>
+<li>
+<p><em>Personalized projects</em>: The standard variables in participant administration except <em>c_date</em> and <em>m_date</em>, and all additionally created participant variables as well as URL parameters. If you would like to use a participant variable, especially for saving language information, then use the standard variable<em> u_language</em> which was introduced especially for this purpose.</p>
+</li>
+<li>
+<p><em>Panel</em> and <em>master data surveys</em>: Participant data, master data, system data, and URL parameters.</p>
+</li>
+</ul>
+<h3 id="entering-the-language-setting-variable-in-participant-administration" class="wysiwyg-text-align-justify"><strong>Entering the language-setting variable in participant administration</strong></h3>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>In language administration, specify from which variable the language setting is to be read.</p>
+</li>
+<li>
+<p>Confirm your entry by clicking on<strong> Save</strong>.</p>
+</li>
+<li>
+<p>Switch to <strong>Participant administration</strong>.</p>
+</li>
+<li>
+<p>If you select the <strong>Add participant</strong> button, you will find that the data item that was defined as the language variable (in the example shown below, the language version stored in u_language) can no longer be freely entered but only selected via a drop-down list.</p>
+</li>
+<li>
+<p>Now proceed entering or importing the participant data as usual</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If the participant data were entered before setting the language variable, the drop-down list will automatically be completed and set to the default language.<br>Then, it is necessary to add the language data for the participants. Therefore it is strongly recommended to configure languages and participant variables before adding participant data.</p>
+<h3 id="tracing-changes-made-in-language-administration-via-the-log" class="wysiwyg-text-align-justify"><strong>Tracing Changes Made in Language Administration via the Log</strong></h3>
+<p class="wysiwyg-text-align-justify">The “Language selection log” section displays important operations within language administration (e.g. creating and deleting languages and changing the default language) in chronological order. Therefore, you can also see here, among other things, who last changed the default language and is thus responsible for unblocking the language selection.</p>
+<h2 id="variable-data-import" class="wysiwyg-text-align-justify"><strong>Variable Data Import</strong></h2>
+<p class="wysiwyg-text-align-justify">In personalized projects and panel and master data surveys on EFS Panel installations, you can transfer the contents of variables from another project, i.e. if a participant has completed the source project, you can automatically import their answers into the variables of the second project and use them there for filtering, evaluation, and other purposes

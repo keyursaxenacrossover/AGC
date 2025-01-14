@@ -1,0 +1,103 @@
+wyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Meaning in standard configuration</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Owner</p>
+</td>
+<td>
+<p>OWN</p>
+</td>
+<td>
+<p>Owner</p>
+<p>These persons are responsible for an individual unit or a whole part of the structure. They have all the rights necessary for developing the organizational structure in their area of responsibility and for entering data. Furthermore, usually, they can create other users and delegate responsibility to them.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Superior</p>
+</td>
+<td>
+<p>SUP</p>
+</td>
+<td>
+<p>Superior</p>
+<p>This role is allocated to superiors who are officially responsible for the respective unit in the company. They can view the organizational structure of the unit and its subunits, access the data entered, monitor the return, and download reports.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Report recipient</p>
+</td>
+<td>
+<p>REP</p>
+</td>
+<td>
+<p>Recipient of reports</p>
+<p>The users allocated to this role can monitor the return and access reports in their area of responsibility.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Read-only users</p>
+</td>
+<td>
+<p>RO</p>
+</td>
+<td>
+<p>Person to inform</p>
+<p>This role has the same scope as the “Owner” role, i.e. passive access to all parts of the Org Processor. It might be allocated, for example, to representatives of the employees<br>(e.g. a representative of the workers union or a person responsible for privacy protection).</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"><br>The following information is available:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Name of role</p>
+</li>
+<li>
+<p>Reports: The reports allocated to the role.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The following actions are available:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Edit</strong>: Opens the edit dialog</p>
+</li>
+<li>
+<p><strong>Copy</strong>: The role is copied.</p>
+</li>
+<li>
+<p><strong>Rights</strong>: Opens a dialog for configuring the rights of the role</p>
+</li>
+<li>
+<p><strong>Delete</strong>: The desired role will be deleted following a confirmation prompt. Please note: The role “Owner” cannot be deleted, it can only be reconfigured. Roles that have been allocated to a report or users cannot be deleted either.</p>
+</li>
+</ul>
+<h3 id="creating-user-roles" class="wysiwyg-text-align-justify"><strong>Creating user roles</strong></h3>
+<p class="wysiwyg-text-align-justify">In the <strong>Projects</strong> → {Selected project} → <strong>Process configuration</strong> menu, click on the <strong>Create role</strong> button on the <strong>Roles</strong> tab.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013838179346" alt="Create role.jpg"></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The system automatically assigns an ID to the role.</p>
+</li>
+<li>
+<p>Select a label and an abbreviation.</p>
+</li>
+<li>
+<p>Specify which reports users with this new role are to receive.</p>
+</li>
+<li>
+<p>Confirm by clicking on <strong>Save</strong>.</p>
+</li>
+</ul>
+<h3 id="changing-the-allocation-of-roles-to-reports" class="wysiwyg-text-align-justify"><strong>Changing the allocation of roles to reports</strong></h3>
+<p class="wysiwyg-text-align-justify">You can change the allocation of roles to reports later. To do so, go to the role overview and use the <strong>Edit</strong> icon to open the editing dialog. In the “Allocation of role to report” section, you can find all defined reports. Change the allocation as required.</p>
+<h3 id="changing-rights-for-a-user-role" class="wysiwyg-text-align-justify"><strong>Changing rights for a user role</strong></h3>
+<p class="wysiwyg-text-align-justify">Open the <strong>Projects</strong> → { Selected project} → <strong>Process configuration</strong> menu. On the <strong>Roles</strong> tab, you can find an overview of the existing roles. Select the role whose rights you intend to change and click the <strong>Rights Administration</strong> icon. A list of the available rights is opened. Rights that can not be changed, e.g. because they relate to a deactivated feature (e.g. Logistics or Action Planner), or because a more general right has been deactivated, are colored in grey.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013850443154" alt="Rights.jpg"></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Assign the rights as required and confirm with <strong>Save</strong>.</

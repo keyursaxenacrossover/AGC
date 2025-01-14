@@ -1,0 +1,97 @@
+ reports, it is recommended to compress them into a Zip file for upload.</p>
+<p class="wysiwyg-text-align-justify">The amount of reports that can be uploaded in a single step is limited due to network performance and disk capacity.</p>
+<h3 id="report-manager" class="wysiwyg-text-align-justify"><strong>Report manager</strong></h3>
+<p class="wysiwyg-text-align-justify">For system-generated reports, the report allocations will require no further editing. But you can access the allocations. Click the<strong> Report Manager</strong> tab.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013850454802" alt="Report manager.jpg"></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Click the <strong>Consistency check button</strong> to trigger a check of the report allocations. The allocations of newly uploaded reports will only be visible after running the consistency check!</p>
+</li>
+<li>
+<p>All existing reports are shown, including already existing report allocations and errors.</p>
+</li>
+<li>
+<p>Now all reports and common documents uploaded into the media library are displayed, including already existing report allocations and errors. For system-generated reports, the allocations have usually been created by Globalpark, for externally generated reports and common documents, you have to create the allocations yourself. Use the Excel export or CSV export button to download the report allocations in the appropriate format</p>
+</li>
+<li>
+<p>Save the file locally.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Content of the exported file</strong></p>
+<p class="wysiwyg-text-align-justify">The exported file contains the following data for the selected report allocations:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Organizational unit: Short label of the organizational unit. When specifying allocations for common documents that are supposed to be available to all users, please take care to keep this field blank.</p>
+</li>
+<li>
+<p>Report ID: Unique number characterizing the report</p>
+</li>
+<li>
+<p>Language ID: Language of the report version</p>
+</li>
+<li>
+<p>File name: Name of the file in the media library, e.g. example.pdf</p>
+</li>
+<li>
+<p>File type: Format of the file, e.g. doc, pdf, or xls.</p>
+</li>
+<li>
+<p>Type of report: Label of the report type. (Options: “System-generated report”, “Externally generated report” and “Common information and documents”.)</p>
+</li>
+<li>
+<p>Report title: If you have defined individual titles for the reports, they are also contained in the export file</p>
+</li>
+<li>
+<p>File size</p>
+</li>
+<li>
+<p>Last file modification</p>
+</li>
+<li>
+<p>Error code</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Formatting the import file</strong></p>
+<p class="wysiwyg-text-align-justify">On the <strong>Report Manager</strong> tab in the <strong>Process configuration → Report definition</strong> menu, select the <strong>Import</strong> button. Via <strong>Download import template</strong>, download a template. The export file can serve as a base for filling it. The following allocation data are needed:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>meta name: Meta name of the unit. In the export file, you can find the meta name in the column “Organizational unit”. Please take care not to enter any meta name when specifying the allocations for common documents.</p>
+</li>
+<li>
+<p>report_id: Report ID*: Unique number characterizing the report. On the<strong> Reports</strong> tab, you can find this number in the column “ID”.</p>
+</li>
+<li>
+<p>lang_id: Language ID*: You can find this ID in the <strong>Project properties</strong> → <strong>Survey languages</strong> menu.</p>
+</li>
+<li>
+<p>type: File type: Format of the file, e.g. doc, pdf, or xls.</p>
+</li>
+<li>
+<p>report_file: File name: Name of the file, e.g. example.pdf</p>
+</li>
+<li>
+<p>Report title: Optionally, you can define a title. Otherwise, the title pattern will be used.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Importing report allocations</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>On the <strong>Report Manager</strong> tab in the <strong>Process configuration</strong> →<strong> Report definition</strong> menu, select the<strong> Import</strong> button.</p>
+</li>
+<li>
+<p>Select the appropriate character set.</p>
+</li>
+<li>
+<p>Search for the source file on your local PC.</p>
+</li>
+<li>
+<p>Decide if the first row includes the column label.</p>
+</li>
+<li>
+<p>Confirm by clicking <strong>Send file</strong>.</p>
+</li>
+<li>
+<p>Match the database fields with the corresponding files of the import file.</p>
+</li>
+<li>
+<p>Again, confirm by clicking <strong>Send file

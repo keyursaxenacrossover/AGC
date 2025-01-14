@@ -1,0 +1,45 @@
+ 191px; width: 328.212px;">Number format</td>
+<td style="text-align: left; height: 191px; width: 336.441px;">The setting is activated via the on/off slide switch. You specify the number of decimal places to round to. Separators, dots or commas, are set individually to match the language setting. For example, if you choose German as the language for your report, use the comma as the decimal separator and the dot as the thousand digit.</td>
+</tr>
+</tbody>
+</table>
+<p class="auto-cursor-target wysiwyg-text-align-justify"> </p>
+<h2 id="subnavigation-data" class="auto-cursor-target wysiwyg-text-align-justify"><strong>Subnavigation: Data</strong></h2>
+<p class="wysiwyg-text-align-justify">Dataspace entities and Collections are used as elements for the cell mapping. On the sub-navigation field Data, you select the appropriate tab for the element to be created at first. You click on the green button and the inspector opens.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013850350482" alt="Page Data Add Collection.png"></p>
+<p class="wysiwyg-text-align-justify">For both DSEs and Collections, you do the following steps: </p>
+<ol class="wysiwyg-text-align-justify">
+<li> You assign a unique meta name</li>
+<li>Selection of the type
+<ol>
+<li>You create DSEs as a <strong>Simple unit</strong> or as a <strong>Unit relation</strong>.</li>
+<li>Collections are created as a <strong>Unit collection</strong> or as a<strong> Dimension collection</strong>.</li>
+</ol>
+</li>
+<li>You<strong> save</strong>.</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><span style="color: #091e42;">After saving, the inspector will switch to edit mode.</span></p>
+<h3 id="dataspace-entity-dse-simple-unit" class="wysiwyg-text-align-justify"><strong>Dataspace-Entity (DSE): Simple unit</strong></h3>
+<p class="wysiwyg-text-align-justify">The DSE type <strong>Simple unit</strong> offers you time savings. You shorten longer picker path that you need to determine the unit picker path by creating a DSE.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>If you do the mapping for a comparison unit of a configured comparison group, it is worthwhile to create a DSE. </li>
+<li>Of course, you also use the other unit elements to create a DSE-type <strong>Simple unit</strong>: <strong>Fixed unit</strong>, <strong>Focus unit</strong>, <strong>Comparison unit</strong>, (<strong>Internal comparison</strong> and <strong>Configured comparisons</strong>).</li>
+<li>The DSE type <strong>Simple unit</strong> can be used as minuend and a subtrahend in the <strong>Unit relation</strong>, the second DSE type.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The path is: <em>Comparison unit</em> → <em>Configured comparison</em> → [<em>created comparison group</em>] → <em>Comparison unit x</em></p>
+<p class="wysiwyg-text-align-justify"><em>Information: <span style="color: #333333;">Depending on how many diagrams or table cells you fill with a constant unit path, it is worthwhile to create a DSE.</span></em></p>
+<h3 id="dataspace-entity-dse-unit-releation" class="wysiwyg-text-align-justify"><strong>Dataspace-Entity (DSE): Unit relation</strong></h3>
+<p class="wysiwyg-text-align-justify">The DSE-type <strong>Unit relation</strong> fulfills the promise of a novel exploration of the data space. DSEs are constructed separately from the rigid organizational units that used to be the starting point of the data space query. To create a DSE of type <strong>Unit relation</strong>:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>You assign a label that is output in the report cells.</li>
+<li>For a minuend and subtrahend, you select the units you want to relate to each other.
+<ul>
+<li>The minuend must be taken from the current wave.</li>
+<li>You use all unit elements for the subtrahend.</li>
+<li>You use the following unit elements: <strong>Fixed unit</strong>, <strong>Focus unit</strong>, <strong>DSE,</strong> and <strong>Comparison units</strong>.</li>
+</ul>
+</li>
+<li>You <strong>save</strong>.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">While the DSE <strong>Simple unit</strong> is used to simplify work, you use the <strong>Unit relation</strong> to represent a difference value that correlates the selected units with each other. For example, you represent a trend by placing a focus unit from the current wave in relation to one from the historical wave or a focus unit in relation to the comparison unit.</p>
+<ul class="

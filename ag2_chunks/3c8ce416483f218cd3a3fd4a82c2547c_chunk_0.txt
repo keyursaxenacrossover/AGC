@@ -1,0 +1,51 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K" class="wysiwyg-text-align-justify">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article covers the configuration and management of websites and language versions in the EFS Panel. It provides detailed information on setting up websites, managing language versions, configuring global and individual settings, and performing automated checks on the CMS configuration.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">EFS Panel offers a wide variety of configuration options for managing websites and language versions. This guide will walk you through the process of setting up and managing these features effectively.</p>
+<ul>
+<li><a href="#putting-a-website-or-language-version-online-offline">Configuring and Managing Websites and Language Versions</a></li>
+<li><a href="#creating-websites-and-language-versions">Creating Websites and Language Versions</a></li>
+<li><a href="#general-settings">General Settings</a></li>
+<li><a href="#domain-mapping">Domain Mapping</a></li>
+<li><a href="#facebook-configuration">Facebook Configuration</a></li>
+<li><a href="#automatic-checking-of-the-cms-configuration">Automatic Checking of the CMS Configuration</a></li>
+</ul>
+<h3 id="putting-a-website-or-language-version-online-offline" class="wysiwyg-text-align-justify"><strong>Putting a Website or Language Version Online/Offline</strong></h3>
+<p class="wysiwyg-text-align-justify">Using the buttons <strong>Online - Set website / language version offline</strong> and <strong>Offline - Set website / language version online</strong>, you can put the various websites and language versions online or offline.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>If a website is offline, none of its language versions are accessible to visitors.</p>
+</li>
+<li>
+<p>If a language version is offline, then it is no longer accessible to visitors.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">It is not possible to put the default website and its default language version offline.</p>
+<h3 id="information" class="wysiwyg-text-align-justify">Information</h3>
+<p class="wysiwyg-text-align-justify">We recommend that you create and display a replacement page with an error or maintenance message, for example, if you deactivate a website or language version.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h3 id="defining-access-rights-on-panel-sites-or-language-versions" class="wysiwyg-text-align-justify"><strong>Defining Access Rights on Panel Sites or Language Versions</strong></h3>
+<p class="wysiwyg-text-align-justify">You can limit access to the different websites and language versions by assigning object rights to specific user teams.</p>
+<p class="wysiwyg-text-align-justify">To do so, choose the desired panel site or language version and select the <strong>Set Rights</strong> icon. The standard rights dialog opens, in which you can assign different teams read or write rights.</p>
+<p class="wysiwyg-text-align-justify">The read or write rights refer to all those website or language version specific ACL rights, which were assigned to the team in general. If t, the team has for example general write rights on the news functions (news_admin), then it can edit the news only for those language versions for which it has write rights.</p>
+<h3 id="information-1" class="wysiwyg-text-align-justify">Information</h3>
+<p class="wysiwyg-text-align-justify">You can assign rights to News and FAQ, the menus containing community features, forms etc. in specific languages to user teams, <em>without granting them access to the website editor</em>. This is of special importance if you want to delegate community management to users who are not familiar with the website editor.</p>
+<p class="wysiwyg-text-align-justify">To realize such a constellation, you have to combine</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Write rights for “mod_panelsite”, which grants access to the<strong> Website</strong> module,</p>
+</li>
+<li>
+<p>Rights for those language versions and corresponding parent websites which the team is supposed to manage,</p>
+</li>
+<li>
+<p>ACL rights for the respective menus</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">and abstain from granting read or write rights on “panel_cms”.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h3 id="editing-text-elements-of-the-cms-externally" class="wysiwyg-text-align-justify"><strong>Editing Text Elements of the CMS Externally</strong></h3>
+<p class="wysiwyg-text-align-justify">Key text elements of the CMS can be exported for external editing or translation. Afterwards, the changed content is imported back into EFS. External editing allows to add new text elements, too, which is particularly useful when upgrading panel installations:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>it is possible to create new text elements. This is

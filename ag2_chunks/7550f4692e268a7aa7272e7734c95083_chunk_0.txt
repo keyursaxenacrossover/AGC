@@ -1,0 +1,95 @@
+<p><supportagent><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/1LS/pages/1599930386/SSO%2C+TIVIAN+Access%2C+Okta%2C+MFA">https://qbdocs.atlassian.net/wiki/spaces/1LS/pages/1599930386/SSO%2C+TIVIAN+Access%2C+Okta%2C+MFA</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</supportagent></p>
+
+<article>
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K">Overview</h1>
+<p>
+  This article provides information about Single Sign-On (SSO), TIVIAN Access, Okta, and Multi-Factor Authentication (MFA). It includes instructions for resetting MFA for users with new devices and links to additional resources.
+</p>
+
+<p> </p>
+
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>
+  This guide focuses on managing user access and authentication through Okta, specifically addressing MFA reset procedures and providing links to related documentation.
+</p>
+
+<p> </p>
+
+<ul>
+  <li>
+    <a href="#h_01HGKSMPRT0QJQX3YJVJ8XBXNM">Okta Dashboard Access</a>
+  </li>
+  <li>
+    <a href="#h_01HGKSMPRT5YJCQXQZ0JXCR9NQ">Resetting MFA for Users with New Devices</a>
+  </li>
+  <li>
+    <a href="#h_01HGKSMPRTBXJ4QXHGX2KCGJ0V">Additional Resources</a>
+  </li>
+</ul>
+
+<p> </p>
+
+<h2 id="h_01HGKSMPRT0QJQX3YJVJ8XBXNM">Okta Dashboard Access</h2>
+<p>
+  To access the Okta Dashboard, use the following link: <a href="https://questback-admin.okta.com/admin/dashboard">https://questback-admin.okta.com/admin/dashboard</a>
+</p>
+
+<p> </p>
+
+<h2 id="h_01HGKSMPRT5YJCQXQZ0JXCR9NQ">Resetting MFA for Users with New Devices</h2>
+<p>
+  When a user has a new device and needs to re-enroll for Multi-Factor Authentication (MFA), follow these steps:
+</p>
+
+<h3 id="h_01HGKSMPRTGXJ1QXHGX2KCGJ0W">Step 1</h3>
+<p>
+  Navigate to Directory &gt; People in the Okta Dashboard.
+</p>
+
+<h3 id="h_01HGKSMPRTM4J5QXHGX2KCGJ0X">Step 2</h3>
+<p>
+  Search for the user's name or email address.
+</p>
+
+<h3 id="h_01HGKSMPRTRMJ8QXHGX2KCGJ0Y">Step 3</h3>
+<p>
+  Select the user from the search results.
+</p>
+
+<h3 id="h_01HGKSMPRTXMJCQXHGX2KCGJ0Z">Step 4</h3>
+<p>
+  Click on "More Actions" in the user's profile.
+</p>
+
+<h3 id="h_01HGKSMPRT2MJFQXHGX2KCGJ10">Step 5</h3>
+<p>
+  Choose "Reset Multifactor" from the dropdown menu.
+</p>
+
+<p> </p>
+
+<h2 id="h_01HGKSMPRTBXJ4QXHGX2KCGJ0V">Additional Resources</h2>
+<p>
+  For more information on Okta setup and TIVIAN Access, refer to the following resources:
+</p>
+<ul>
+  <li>Global Okta Setup</li>
+  <li>Tivian Access: IAM with Okta</li>
+</ul>
+
+<p> </p>
+
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+
+<h3 id="h_01HGKSMPRT7MJJQXHGX2KCGJ11">What is MFA?</h3>
+<p>MFA stands for Multi-Factor Authentication. It is a security measure that requires users to provide two or more verification factors to gain access to an account or system.</p>
+
+<h3 id="h_01HGKSMPRTCMJMQXHGX2KCGJ12">Why do I need to reset MFA for a user with a new device?</h3>
+<p>When a user gets a new device, they need to re-enroll in MFA to ensure that the new device is properly authenticated and can receive MFA prompts or codes.</p>
+
+<p> </p>
+
+<p>
+  <strong>Tags: </strong>SSO, TIVIAN Access, Okta, MFA, Multi-Factor Authentication, User Management
+</p>
+</article>

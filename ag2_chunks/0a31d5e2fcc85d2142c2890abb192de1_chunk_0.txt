@@ -1,0 +1,69 @@
+<p><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p>This article explains the High Security Mode feature in Enterprise Feedback Suite (EFS), which provides additional protective measures for enhanced web application security. It covers various aspects of this mode, including stricter password criteria, tightened brute force protection, and other security enhancements.</p>
+<p> </p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>High Security Mode in EFS activates supplementary protective measures to meet advanced requirements for web application security. This article details the various security features and their implications for system usage.</p>
+<p> </p>
+<ul>
+<li><a href="#high-security-mode-features">High Security Mode Features</a></li>
+<li><a href="#password-security">Password Security</a></li>
+<li><a href="#brute-force-protection">Brute Force Protection</a></li>
+<li><a href="#session-security">Session Security</a></li>
+<li><a href="#other-security-measures">Other Security Measures</a></li>
+</ul>
+<p> </p>
+<h2 id="high-security-mode-features">High Security Mode Features</h2>
+<p>High Security Mode in Enterprise Feedback Suite includes the following features:</p>
+<ul>
+<li>Stricter security criteria for account names and passwords</li>
+<li>Tightened brute force mechanism</li>
+<li>HTML Escaping</li>
+<li>Session limitations to a single IP or IP address range</li>
+<li>Reduced session time</li>
+<li>Prevention of URL manipulations (referer checking)</li>
+<li>Deactivation of caching in sensitive areas</li>
+<li>Enforcing HTTP-only cookies</li>
+</ul>
+<p>Note that while these features enhance security, they may impose certain restrictions on usability. High Security Mode is not included in the standard version of EFS and must be activated by the support team.</p>
+<p> </p>
+<h2 id="password-security">Password Security</h2>
+<p>High Security Mode implements stricter criteria for passwords:</p>
+<ul>
+<li>Account names are checked for proper usage of upper and lower case</li>
+<li>No character may be used twice in passwords</li>
+<li>Passwords must be at least eight characters long</li>
+</ul>
+<p>These criteria apply to the admin area, EFS Survey Status, EFS Translator Interface, and Org Processor logins.</p>
+<h3 id="h_01J3HVXM5WWPG3TN1KQEPAV7QK">Additional Password Requests</h3>
+<p>When working with accounts in the EFS Users admin or People module, additional password validation requests will be shown for:</p>
+<ul>
+<li>Creating new EFS admin users</li>
+<li>Editing existing EFS admin users</li>
+<li>Creating new panelists in the People module</li>
+<li>Changing passwords of panelists in the People module</li>
+</ul>
+<p> </p>
+<h2 id="brute-force-protection">Brute Force Protection</h2>
+<p>High Security Mode enhances brute force protection:</p>
+<ul>
+<li>Staff members are logged out and their accounts suspended for 30 minutes after six incorrect password attempts when changing passwords</li>
+<li>The Login Interface no longer indicates the reason for suspension, preventing discovery of existing account names</li>
+</ul>
+<p> </p>
+<h2 id="session-security">Session Security</h2>
+<p>Session security is enhanced in the following ways:</p>
+<ul>
+<li>Session time for staff members in the admin area is reduced to 15 minutes</li>
+<li>Sessions are tied to the IP or IP address range from which the user logs in</li>
+<li>Users are logged out if their IP or IP range changes during a session</li>
+</ul>
+<p> </p>
+<h2 id="other-security-measures">Other Security Measures</h2>
+<h3 id="h_01J3HVXM5WJB9T7ESX5VN8N6GM">HTML Escaping</h3>
+<p>When High Security Mode is activated, HTML code is not interpreted within the admin area. For instance, an image inserted in an answer text using <code>&lt;img src="xxx"&gt;</code> will display correctly in the questionnaire, but in online statistics, only the HTML code will be shown, not the image.</p>
+<h3 id="h_01J3HWA6R95N6CCMWTRNHVZWFY">Preventing URL Manipulations (Referer Checking)</h3>
+<p>In High Security Mode, EFS checks if URLs in the admin area are accessed internally to prevent manipulation or external access. Manually changed URLs cause the browser to stop transmitting a referer. Note that anonymity and security tools removing referers will prevent use in High Security Mode. From EFS 7.0, referer checks are not performed for users with Microsoft Internet Explorer due to its handling of http referers.</p>
+<h3 id="h_01J3HWA6R9CCDRQ6C9PMWEH9SH">Smarty Security Mode</h3>
+<p>In EFS Survey, Smarty’s security mode is always active. For panel installations on EFS 7.1 or later, it is always activated, whereas for earlier versions it is only active in High Security mode.</p>
+<h3 id="h_01J3HWA6R9H6CSTV0FR4FGARF3">Deactivation of Caching in Sensitive Areas</h3>

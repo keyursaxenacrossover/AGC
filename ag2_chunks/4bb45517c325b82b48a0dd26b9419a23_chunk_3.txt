@@ -1,0 +1,75 @@
+</strong></h3>
+<p>If a survey’s master data allocation fails (e.g., <code>md_us_ca_corn</code> is not updated), this indicates that the transfer of data from the survey to the master data section encountered an issue. All the above steps apply, in addition to the below.</p>
+<h4 id="h_01JAMY3QTZ26R87DTYX4GG3F4C">
+<strong>Steps</strong>:</h4>
+<ol>
+<li>
+<p><strong>Master Data Allocation Setup</strong>:</p>
+<ul>
+<li>Verify that the master data allocation rules in the survey setup were correct. This can be checked in the survey configuration under <strong>Survey menu &gt;&gt; Master Data Allocation</strong>.</li>
+</ul>
+</li>
+<li>
+<strong>Check the step which should transfer the master data, and when should the transfer EXECUTE</strong>
+<ul>
+<li>For instance, check this example survey where the participant had been set to dispostione code/status 31 respectively 32 and we know that this is happening on the final page.
+<p><span style="opacity: 1;"><img id="image_39a7b195-25a6-4b5e-b470-34545b99be52" class="image_resized" style="width: 788px;" src="https://central-supportdesk.zendesk.com/attachments/token/EtF7IJ2IZ02qPycuv2oLEedAU/?name=inlineImage.png"></span></p>
+<p> </p>
+</li>
+<li>
+<p><strong>Important: </strong>Check when is the <strong>transfer of the master data allocation</strong> processed. <br>For example, in the below it is configured when completing the survey (in other words when reaching the final page).</p>
+<p><span style="opacity: 1;"><img id="image_4778ccd0-520c-409d-91b8-f969bcc11825" class="image_resized" style="width: 870px;" src="https://central-supportdesk.zendesk.com/attachments/token/ckOFRFnKqSzq0diEZIhMPLUMS/?name=inlineImage.png"></span></p>
+<p>Therefore we know "when" this should happen, which is at around the same time the participant was set to "<em>status</em> = 31" which is the "<em>date_of_last_access</em>". Both are meta data of the survey and could be found in the `sample_data` table</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Check Transfer in Logs</strong>:</p>
+<ul>
+<li>Use AWS logs to trace when the system attempted to update the master data. Cross-check these logs with the timestamps for the survey completion.</li>
+</ul>
+</li>
+<li>
+<p><strong>Investigate Missing Updates</strong>:</p>
+<ul>
+<li>If the logs indicate that the transfer did not happen, check if the participant’s connection was abandoned or if a specific variable (e.g., <code>md_us_ca_corn</code>) had a trigger issue.</li>
+</ul>
+</li>
+<li>
+<strong>DB Updates</strong> additional note:
+<ul>
+<li>
+<p>Please also note. If you looking for anything survey related you always will have updates of the <strong>sample_data</strong> and the <strong>survey</strong> table each time a participant sends a survey page (hits the Next/Continue button in a survey)</p>
+</li>
+<li>
+<p>You can always limit this (in CW logs) by the unique values for a participant (i.e. uid, lfdn, session_id).</p>
+</li>
+<li>
+<p>You also can look at the page if there are further things which could affect other tables (i.e. triggers on a page which are executed when sending the page or triggers on the follow up page which are executed "directly", which is more or less at the same time...)</p>
+<p> </p>
+</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h1 id="h_01JAMY3QTZGN238T5JEQNAZBK0">Summary</h1>
+<p>To effectively troubleshoot survey reply issues and master data updates, follow these steps:</p>
+<ul>
+<li>
+<strong>Step1: </strong>Use GUI or MariaDB to detect the exact timings of requests when a Specific User Filled a specific Survey</li>
+<li>
+<strong>Step 2</strong> Use MariaDB to trace survey replies via tables like <code>sample_data</code> and <code>survey_{{PID}}</code>.</li>
+<li>
+<strong>Step 3</strong>: Review AWS logs to track incomplete or failed connections that might have prevented survey data from being transferred.</li>
+<li>
+<strong>Step 4</strong>: Check Grafana PHP logs to identify errors during survey submission on PHP level.</li>
+<li>
+<strong>Step 5</strong>: Ensure that master data allocations are set up correctly and transferred properly by analyzing logs and database entries.</li>
+</ul>
+<hr>
+<h1 id="h_01JAMY3QTZYJB16XD0N1SS9YZ8">FAQ</h1>
+<ol>
+<li>
+<p><strong>What if I can’t find a participant’s survey reply in the <code>sample_data</code> table?</strong></p>
+<ul>
+<li>Double-check the <code>uid</code>, <code>lfdn</code>, and <code>pid</code>

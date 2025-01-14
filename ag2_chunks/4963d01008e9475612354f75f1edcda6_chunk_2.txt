@@ -1,0 +1,69 @@
+ can be ignored</p>
+</li>
+</ul>
+<h3 id="header-11">Step 8: OPTIONAL - Migrate portals applications, Panelists and EFS Admin users with installation group ID</h3>
+<p>If the installation was setup with IAM in <strong>19.5</strong> this migration is mandatory. It will assign all users (EFS Admin users and Panelists) from the current installation to the installation specific group set in the EFS configuration.</p>
+<ul>
+<li>
+<p>Login to the console of the installation to start the migration script.</p>
+</li>
+<li>
+<p>Navigate to the “www“-folder of the installation</p>
+</li>
+<li>
+<p>Execute the migration script in “support/iam/migration.php”</p>
+</li>
+<li>
+<p>Chose “Portal ClientGroup migration“ - wait until done</p>
+</li>
+<li>
+<p>Execute the migration script again</p>
+</li>
+<li>
+<p>Chose “User ClientGroup migration“</p>
+</li>
+</ul>
+<p> </p>
+<h3 id="header-12">Sync “Exclusion” (iam_federated_domains)</h3>
+<p>Users from EFS will be synced to Okta. A synced user will be created in Okta and will get an activation e-mail. The link in the activation e-mail will navigate the user to a page where the Okta password has to be provided.</p>
+<p>Also users from an Identity Provider would receive such an e-mail and would provide a password they would never use as they do not user their Okta user but their external Identity Provider user.</p>
+<p>To prevent such confusing e-mails users that are using their own Identity Provider will get synced to Okta without that kind of activation. Thus every e-mail domain that will get routed to an Identity Provider for this installation has to be added in the iam_federated_domains option.</p>
+<p>This has to happen before the sync is enabled. Else a wrong set of users will be migrated to Okta.</p>
+<p>Also see EFS Admin Setup</p>
+<h3 id="header-13">Identity Provider ID (iam_idp_id)</h3>
+<p>If a customer has their own Identity Provider this provider is created as resource in Okta. In case a client wants their user to skip the identity provider discovery page that is shown in Okta, the ID of the identity provider resource in Okta could be set here.</p>
+<p>In that case the identity provider ID is already known in case a user tries to sign in and the user will be redirected to the identity provider directly without seeing an Okta page.</p>
+<p>This might have an effect on how Tivian users login.</p>
+<p> </p>
+<p><strong>Proxy:</strong></p>
+<p>In the current setup EFS runs in a proxy setup. Because of that the proxy has to be configured in the IAM config. But the URL also has to be whitelisted in the proxy. Otherwise EFS cannot reach Okta.</p>
+<p>3 incomplete <span class="placeholder-inline-tasks"> please provide more details</span></p>
+<p> </p>
+<h2 id="h_01J6C35SARP9V5ESNPRZPPZCBD">Data Voyager Configuration</h2>
+<h3 id="01J6C37A570WBRY43MP6ZYEG21">Step 0: Whitelist</h3>
+<p>Take care that the Okta production address is whitelisted in our Proxy. Usually this should already be the case.</p>
+<h2 id="01J6C37A57AATKDC2MY72YRRV5">Step 1: Navigate to Data Voyager settings</h2>
+<ol>
+<li>
+<p>login as root</p>
+</li>
+<li>
+<p>click on “Configurations (root)”</p>
+</li>
+<li>
+<p>search for “iam”</p>
+</li>
+</ol>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013437735826" alt="image-20200306-163314.png"></p>
+<p> </p>
+<h3 id="01J6C37A57MCMB75MFQR569K6S">Step 2: Configure</h3>
+<p>also see General Tenant Setup and Data Voyager Setup and Authorization Server Setup</p>
+<p><strong>Values:</strong></p>
+<p><em><strong>iam.sso.well_known_url: </strong></em> URL to the well known document from the Okta authorization server (see Authorization Server Setup )</p>
+<p><em><strong>iam.sso.redirect_url: </strong></em>&lt;dv-installation-url&gt;/dv/account/redirect/</p>
+<p><em><strong>iam.sso.client_id: </strong></em>ID of the DV application in Okta (see Data Voyager Setup )</p>
+<p><em><strong>iam.sso.client_secret: </strong></em>secret of the DV application in Okta (see Data Voyager Setup )</p>
+<p><em><strong>iam.sso.audience: </strong></em>audience value from the Okta authorization server (see Authorization Server Setup )</p>
+<p> </p>
+<h3 id="01J6C37A5753M863AESN4XG1RB">Step 4: Create users</h3>
+<p>Users are created and managed manually in Okta and Datavoyager. Take care to assign the correct application specific group the the client.</p

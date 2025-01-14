@@ -1,0 +1,40 @@
+<h1 id="h_01J6CFYBB7ZGF0QPYXJAPHFPZC">Information</h1>
+<p>The healself tasks run to change the database and environment to reflect new builds or reveal errors during the upgrade.</p>
+<p>If the healself fails, this will be logged in the database of the installation, under the <code class="language-text">healself_task_log</code> table. with the following schema:</p>
+<pre><code class="language-text">MariaDB &gt; DESC healself_task_log;
++-------------+--------------+------+-----+---------+-------+
+| Field       | Type         | Null | Key | Default | Extra |
++-------------+--------------+------+-----+---------+-------+
+| module      | varchar(50)  | NO   | PRI |         |       |
+| task        | varchar(255) | NO   | PRI |         |       |
+| result      | tinyint(1)   | YES  |     | NULL    |       |
+| time        | datetime     | YES  |     | NULL    |       |
+| version     | int(11)      | NO   | PRI | 0       |       |
+| duration    | double       | YES  |     | NULL    |       |
+| memory_peak | double       | YES  |     | NULL    |       |
+| failed_line | double       | YES  |     | NULL    |       |
++-------------+--------------+------+-----+---------+-------+</code></pre>
+<p>The column “result” describes the outcome of the healself task:</p>
+<ul>
+<li>0= job has not run/failed</li>
+<li>1= job has succeeded</li>
+</ul>
+<p>If healself tasks fail, then set the status “BROKEN” in the conf/VERSION file to 1. Broken installations will be skipped by the Nightly.</p>language-text">MariaDB &gt; DESC healself_task_log;
++-------------+--------------+------+-----+---------+-------+
+| Field       | Type         | Null | Key | Default | Extra |
++-------------+--------------+------+-----+---------+-------+
+| module      | varchar(50)  | NO   | PRI |         |       |
+| task        | varchar(255) | NO   | PRI |         |       |
+| result      | tinyint(1)   | YES  |     | NULL    |       |
+| time        | datetime     | YES  |     | NULL    |       |
+| version     | int(11)      | NO   | PRI | 0       |       |
+| duration    | double       | YES  |     | NULL    |       |
+| memory_peak | double       | YES  |     | NULL    |       |
+| failed_line | double       | YES  |     | NULL    |       |
++-------------+--------------+------+-----+---------+-------+</code></pre>
+<p>The column “result” describes the outcome of the healself task:</p>
+<ul>
+<li>0= job has not run/failed</li>
+<li>1= job has succeeded</li>
+</ul>
+<p>If healself tasks fail, then set the status “BROKEN” in the conf/VERSION file to 1. Broken installations will be skipped by the Nightly.</p>

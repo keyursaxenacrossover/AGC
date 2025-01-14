@@ -1,0 +1,41 @@
+ Fancy
+
+modifiers:
+
+- cat                       =&gt; {$variable|cat:" concat string"}                                                                 =&gt; concatination
+- count_characters          =&gt; {$variable|count_characters}                                                                     =&gt; counting chars
+- count_paragraphs          =&gt; {$variable|count_paragraphs}                                                                     =&gt; counting paragraphs
+- count_sentences           =&gt; {$variable|count_sentences}                                                                      =&gt; counting sentences
+- count_words               =&gt; {$variable|count_words}                                                                          =&gt; counting words
+- date_format               =&gt; {$smarty.now|date_format:"%H:%M:%S"}                                                             =&gt; Format
+- debug_print_var           =&gt; {$variable|debug_print_var}                                                                      =&gt; basically a print_r
+- default                   =&gt; {$variable|default:'Default string if variable is empty'}                                        =&gt; Fallback for empty var
+- escape                    =&gt; {$variable|escape:"html"}                                                                        =&gt; Escape ... 
+- indent                    =&gt; {$variable|indent:10}  -&gt; only in &lt;pre&gt;                                                          =&gt; Indents string X spaces
+- lower                     =&gt; {$variable|lower}                                                                                =&gt; String to lower
+- nl2br                     =&gt; {$variable|nl2br}                                                                                =&gt; HTMLify newlines
+- regex_replace             =&gt; {$variable|regex_replace:"/[\r\t\n]/":" "}                                                       =&gt; regex replace
+- replace                   =&gt; {$variable|replace:"Bob":"Hans"}                                                                 =&gt; well ... it replaces ^^
+- round                     =&gt; {$a-$b|round:2}                                                                                  =&gt; Print with rounding precision
+- spacify                   =&gt; {$variable|spacify}                                                                              =&gt; Adds Spaces between Chars
+- string_format             =&gt; {$variable|string_format:"%.2f"}                                                                 =&gt; See PHP's sprint_f
+- strip                     =&gt; {$variable|strip}                                                                                =&gt; Removes spaces and linebreaks
+- strip_tags                =&gt; {$variable|strip_tags}                                                                           =&gt; See PHP's strip tags
+- to_timestamp              =&gt; {"2017-02-02 00:00:00"|to_timestamp}                                                             =&gt; Timestamp conversion
+- truncate                  =&gt; {$variable|truncate:30:"---"}                                                                    =&gt; Cut string at X and add some other stuff
+- upper                     =&gt; {$variable|upper}                                                                                =&gt; Upper Case
+- utf8_encode               =&gt; {$variable|utf8_encode}                                                                          =&gt; Encodes ... in utf8 ... duh!
+- wordwrap                  =&gt; {$artikelTitel|wordwrap:50}                                                                      =&gt; New line after 50 chars
+</code></pre>[\r\t\n]/":" "}                                                       =&gt; regex replace
+- replace                   =&gt; {$variable|replace:"Bob":"Hans"}                                                                 =&gt; well ... it replaces ^^
+- round                     =&gt; {$a-$b|round:2}                                                                                  =&gt; Print with rounding precision
+- spacify                   =&gt; {$variable|spacify}                                                                              =&gt; Adds Spaces between Chars
+- string_format             =&gt; {$variable|string_format:"%.2f"}                                                                 =&gt; See PHP's sprint_f
+- strip                     =&gt; {$variable|strip}                                                                                =&gt; Removes spaces and linebreaks
+- strip_tags                =&gt; {$variable|strip_tags}                                                                           =&gt; See PHP's strip tags
+- to_timestamp              =&gt; {"2017-02-02 00:00:00"|to_timestamp}                                                             =&gt; Timestamp conversion
+- truncate                  =&gt; {$variable|truncate:30:"---"}                                                                    =&gt; Cut string at X and add some other stuff
+- upper                     =&gt; {$variable|upper}                                                                                =&gt; Upper Case
+- utf8_encode               =&gt; {$variable|utf8_encode}                                                                          =&gt; Encodes ... in utf8 ... duh!
+- wordwrap                  =&gt; {$artikelTitel|wordwrap:50}                                                                      =&gt; New line after 50 chars
+</code></pre>

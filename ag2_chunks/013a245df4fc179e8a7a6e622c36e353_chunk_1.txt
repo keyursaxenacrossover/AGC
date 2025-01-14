@@ -1,0 +1,65 @@
+ This code will be sent to you via authenticator apps such as the <em>Google Authenticator</em>.</p>
+<p> </p>
+<p>By default <em>TIVIAN Access</em> is disabled. So the login works as you are used to. If you want to enable <em>TIVIAN Access</em>, please contact our support team.</p>
+<h2 id="header-7">
+<strong>The</strong><em><strong> Portals</strong></em><strong> platform</strong>
+</h2>
+<p>As of the winter 2019 release, the Platform <em>Portals</em> will have two new modules, namely <em>Expansion</em> and <em>Guides Monitoring</em>. In addition, minor innovations have been added. </p>
+<h3 id="header-9">
+<strong>The new </strong><em><strong>Extension</strong></em><strong> Module</strong>
+</h3>
+<p>With the <em>Extension </em>module it is possible for experienced users to write a web application on a third-party system and thanks to the JavaScript Api it is possible to query information about the current Portal or the current user, to communicate between open extension modules on a single page or to query or manipulate the<em> MySight</em> module, e.g. to set certain filters in the dashboard. Together with our service layer in the backend, extensive and interactive applications can be created.</p>
+<h3 id="header-10"><strong>Guides - Monitoring</strong></h3>
+<p>The <em>Guides - Monitoring</em> module has a trend display: The graph turns green, red or grey according to the development within the selected time period. Green symbolizes a positive trend, red a negative trend and grey a neutral trend. The trend tile for a guide is displayed as soon as a guide has been started. In addition, this module gives you an overview of who started and ended a guide and when. For this purpose, you assign the new <em>HR Manager</em> role to selected participants on the subnavigation <strong>Participants</strong>.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20997985641618" alt="HR_Manager.png"></p>
+<p>By clicking the <strong>Process overview</strong> button on the guide's tile of the <em>Guides - Monitoring</em> module, participants who have been assigned to this role can access the process overview in your portal.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20997998245522" alt="process_overview.png"></p>
+<p>The process overview is a tabular list which, in addition to the first name, surname and e-mail address of the participants, provides information on who started how many guides and how many of these guides were successfully or unsuccessfully completed.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998014912402" alt="Table.png"></p>
+<p>The table has a search function that you can use to search for the e-mail address, first name or surname of the participants. There is also a filter that allows you to filter the list based on the process status:</p>
+<ul>
+<li>
+<p>All</p>
+<ul>
+<li>
+<p>Selected by default</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Process ended</p>
+<ul>
+<li>
+<p>The participants who have completed a process for the selected guide (successful and unsuccessful) are displayed.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Process started</p>
+<ul>
+<li>
+<p>The participants who have started a process for the selected guide will be displayed.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Process not started yet</p>
+<ul>
+<li>
+<p>All participants who have access to this portal (according to the access authorization of their portal) and have not yet started a process will be displayed.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>Please note, that the ideation guide is not supported by Guides-Monitoring.</p>
+<h3 id="header-11">
+<strong>Identifier for the </strong><em><strong>MySight</strong></em><strong> Page Module</strong>
+</h3>
+<p>To control the <em>MySight</em> page module via the Portal Api, you can assign a unique identifier in the module configuration. This identifier is appended to the DOM element of the <em>MySight</em> module. By default, no value is assigned.</p>
+<h3 id="header-12"><strong>Push Notifications</strong></h3>
+<p>From now on, push notifications will no longer be delivered if users have logged off from the portal app or if the panel status of the user is <em>inactive</em>. In this way, both users and panel admins can decide whether push notifications are received.</p>
+<h2 id="header-14">
+<strong>Enhancements for </strong><em><strong>Guides</strong></em>
+</h2>
+<p>The process control of the <em>Leadership-Guide</em> (ME Guide) has been improved. To present the result of your <em>Team Improvement Guide</em> (US-Guide), you are now able to use predefined dashboard templates. You can now delete a guide processes.</p>
+<h3 id="header-16"><strong>Allow Deletion of Guide Processes (ME- &amp; US-Guide

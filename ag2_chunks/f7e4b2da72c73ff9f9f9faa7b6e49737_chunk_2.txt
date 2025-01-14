@@ -1,0 +1,84 @@
+-justify">
+<li>
+<p>Do not start preparing the import until you have created all the required participant variables.</p>
+</li>
+<li>
+<p>When using Excel, consider the following restrictions imposed by manufacturer specifications:</p>
+<ul>
+<li>
+<p>Only the first sheet of the file will be processed. You should not exceed the maximum of 256 columns and 65,000 rows. Should you require more columns or rows, select a different program and save your import file in CSV format.</p>
+</li>
+<li>
+<p>Excel import is only possible for files created or saved using Excel 97+. Excel files that were created or saved using Excel for Mac”, “Neo Office” or “Numbers”, for example, cannot be imported.</p>
+</li>
+<li>
+<p>The file format XLSX, newly introduced by Microsoft with Office 2007, is not supported by<em> EFS</em>.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="formatting-of-the-import-file-in-detail" class="wysiwyg-text-align-justify">Formatting of the import file in detail</h3>
+<p class="wysiwyg-text-align-justify">When filling in the import template or creating your own import file you have to consider various formatting rules.</p>
+<h4 id="file-format" class="wysiwyg-text-align-justify">File format</h4>
+<p class="wysiwyg-text-align-justify">The import file can be created in Excel or CSV. Data columns may be separated by tab, comma, or semicolon. When using <em>Excel</em>, consider the following restrictions imposed by manufacturer specifications:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Only the first sheet of the file will be processed. You should not exceed the maximum of 256 columns and 65,000 rows.</p>
+</li>
+<li>
+<p>Excel import is only possible for files created or saved using Excel 97+. Excel files that were created or saved using “Excel for Mac”, “Neo Office” or “Numbers”, for example, cannot be imported.</p>
+</li>
+<li>
+<p>The file format XLSX is supported by <em>EFS</em>.</p>
+</li>
+</ul>
+<h4 id="file-structure" class="wysiwyg-text-align-justify">File structure</h4>
+<p class="wysiwyg-text-align-justify">An individual column is created for each participant variable to be imported.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>We recommend entering the respective column labels in the first row.</p>
+<ul>
+<li>
+<p>Where possible use the name of the respective variable as the label: The software will automatically identify the columns and assign them to the appropriate database fields. If you choose this option, make sure to tick the checkbox “First row includes column labels” in the import dialog.</p>
+</li>
+<li>
+<p>Should you deviate from these recommendations, make sure that the first row does not contain any blank spaces or special characters such as dots or umlauts. Otherwise, these will be uniformly replaced with “_”.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Optionally, you can dispense with using the column labels in the file. In this case, untick the checkbox labeled “First row includes column labels” in the import dialog.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The values of the individual data records are entered in the rows of the file.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The code of the desired characteristic must be specified for data imported into “radio buttons”, “selectbox” or “checkbox” fields. You will find it in the <strong>Codebook</strong>. (Tick the checkbox labeled “Show participant variables” in order to display the respective section.) Empty cells are automatically set to the default value “0” upon import. How codes that do not yet exist or entries that cannot be interpreted as code are treated depends on the display type and fine-tune settings.</p>
+</li>
+<li>
+<p>Optionally, you can create new characteristics for an existing variable during import. To do this, the relevant option must be activated for the respective variable.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Special features of certain standard variables</strong></p>
+<p class="wysiwyg-text-align-justify">Some variables require special consideration:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>In principle, an e-mail address should only be registered once, unless you wish to permit duplicate participation and explicitly select the “Allow duplicate e-mail addresses” field.</p>
+</li>
+<li>
+<p>Sometimes it is necessary to create dummy accounts. In such cases, you can use e-mail addresses on the @3uu.eu domain: these addresses are owned by TIVIAN, mails sent to them are deleted automatically.</p>
+</li>
+<li>
+<p>The access code must not be longer than the number of characters defined for option "Type of codes which will be generated" under the 'project properties' menu of your project.</p>
+</li>
+<li>
+<p>The mobile phone numbers of participants in <em>u_mobile</em> must be formatted according to international formatting rules:</p>
+<ul>
+<li>
+<p>A total of seventy digits</p>
+</li>
+<li>
+<p>Two zeros at the start</p>
+</li>
+<li>
+<p>Country prefix, e.g. 49 for Germany</

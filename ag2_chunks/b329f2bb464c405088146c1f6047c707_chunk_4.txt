@@ -1,0 +1,93 @@
+ result in the following:</p>
+<ul>
+<li>
+<p>Numerical values that do not correspond to any existing code are interpreted as new codes. Required characteristics are automatically generated, using the numerical value as a label.</p>
+</li>
+<li>
+<p>New characteristics are also generated for entries not interpretable as code, such as texts or combinations of letters and numbers. The codes of these characteristics are allocated by the system.</p>
+</li>
+<li>
+<p>If the function is not activated, this will result in the following:</p>
+<ul>
+<li>
+<p>Numerical values that differ from coding are imported but displayed with a question mark prompting you to check and subsequently create the missing characteristic.</p>
+</li>
+<li>
+<p>Entries not interpretable as code are set to the default value “0”.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>If the display type of the variable is “Select box” or “Radio buttons”, a table for creating the answer options will be shown.</p>
+</li>
+<li>
+<p>The value “0” is treated as a default value. This means, for example, that with “select box” type variables the “Please select” option is preset with this value and this value is assigned to empty cells on import. For that reason when creating answer options similarly use the “0” code only for settings preset as default such as “Please select”.</p>
+</li>
+<li>
+<p>Enter the label of the first answer category.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Confirm by clicking on<strong> Save</strong>.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Create all other required answer categories.</p>
+</li>
+<li>
+<p>Lastly, click on the “Back to Overview” link to return to the overview of participant variables.</p>
+</li>
+<li>
+<p>The newly created variable will be listed in the table.</p>
+</li>
+</ul>
+<h3 id="variable-types-encoding-and-missing-values" class="wysiwyg-text-align-justify">Variable types, encoding, and missing values</h3>
+<p class="wysiwyg-text-align-justify">The following table lists the different display types with related encodings and missing value definitions. The display type of standard variables cannot be changed.</p>
+<table class="wysiwyg-text-align-justify" style="height: 1060px;" border="1" width="787" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 93.0px;"> <col style="width: 117.0px;"> <col style="width: 147.0px;"> <col style="width: 149.0px;"> <col style="width: 114.0px;"> <col style="width: 140.0px;"> </colgroup>
+<tbody>
+<tr style="height: 58px;">
+<th class="wysiwyg-text-align-center" style="width: 97.0486px; height: 58px;" data-highlight-colour="#c0b6f2">
+<p><strong>Display type</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 141.632px; height: 58px;" data-highlight-colour="#c0b6f2">
+<p><strong>Meaning</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 141.302px; height: 58px;" data-highlight-colour="#c0b6f2">
+<p><strong>Missing values</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 142.674px; height: 58px;" data-highlight-colour="#c0b6f2">
+<p><strong>Export data record</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 110.017px; height: 58px;" data-highlight-colour="#c0b6f2">
+<p><strong>Data type</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 134.67px; height: 58px;" data-highlight-colour="#c0b6f2">
+<p><strong>Size</strong></p>
+</th>
+</tr>
+<tr style="height: 90px;">
+<td style="width: 89.0278px; height: 90px;">
+<p>Text field</p>
+</td>
+<td style="width: 133.611px; height: 90px;">
+<p>input field</p>
+</td>
+<td style="width: 133.281px; height: 90px;">
+<p>Unfilled text fields are filled with “0”.</p>
+</td>
+<td style="width: 134.653px; height: 90px;">
+<p>Text entered into the open entry field</p>
+</td>
+<td style="width: 101.997px; height: 90px;">
+<p>mediumtext</p>
+</td>
+<td style="width: 126.649px; height: 90px;">
+<p>16,777,215 (2^24 - 1) characters</p>
+</td>
+</tr>
+<tr style="height: 61px;">
+<td style="width: 89.0278px; height: 61px;">
+<p>Text Area</p>
+</td>
+<td style="width: 133.

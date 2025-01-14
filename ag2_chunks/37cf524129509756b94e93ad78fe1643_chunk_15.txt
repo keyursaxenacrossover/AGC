@@ -1,0 +1,41 @@
+-align-justify">Please note that panelists with fewer points will then generally not be able to use the respective bonus list: No differentiation is made between new panelists and panelists who had a higher number of points in the past, but who have redeemed points in the meantime.</p>
+<h2 id="handling-of-bank-payments" class="wysiwyg-text-align-justify"><strong>Handling of Bank Payments</strong></h2>
+<p class="wysiwyg-text-align-justify">You can use the EFS Panel bonus system for the handling of bank payments. The bank details of the panelists need not be stored on a long-term basis (e.g. via provision upon registration and subsequent storage as part of the master data), rather they are collected in the course of the payment process.</p>
+<p class="wysiwyg-text-align-justify">EFS offers the following design options:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Various combinations of the following bank details can be used: account holder, SWIFT code, IBAN, bank code, and account number.</li>
+<li>You can define your own Regex checks to validate bank code and account number.</li>
+<li>Optionally, you can store the bank details entered by the panelists in selected master data and use them to prefill the forms in future payment processes.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Example</strong></p>
+<p class="wysiwyg-text-align-justify">The payment process works as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>The bonuses of the “bank payment” type are listed with all the other bonuses on the bonus redemption page.</li>
+<li>If the panelist chooses a bank payment bonus, he will then be asked to enter his bank details in a specially configured form.</li>
+<li>The administrator then processes the bank payment requests in the <strong>People → Incentive management → Bonus system → Payment lis</strong>t menu in just the same way as other bonuses.</li>
+</ul>
+<h3 id="work-steps" class="wysiwyg-text-align-justify"><strong>Work Steps</strong></h3>
+<p class="wysiwyg-text-align-justify">To create a bank payment, please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Create a bonus of the “bank payment” type for the desired language version as described in Chapter 24.1.2, S. 485. Select “Bank payment” as the payment type. As with other bonuses, there will be a free entry field displayed on the panel page if no limits on payment have been defined. If you do define payment limits, these will be displayed in a drop-down list.</li>
+<li>Use the “Bonus list and redemption” function module to create a page for the redemption of bonuses. If such a page already exists in the desired language version of your panel, then the new bonus will be displayed there automatically once it has been activated.</li>
+<li>Configure the options dedicated to bank payment in the “Bonus list and redemption” function module.</li>
+<li>If you want to store the entered details and use them to prefill the form for future payments, you need to activate the option “Store entered data for bank payments in selected master data variables and use master data variables for preselection” in the “Bonus list and redemption” function module. Create appropriate master data (data type: text) and select these from the drop-down lists in the field “The following fields should be displayed for bank payments”.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><em>Information: </em>Authentification for PayPal is frequently handled via the e-mail address. In panels that were set up with EFS 8.1 or later, you can realize this based on the account holder field: it allows to storage of up to 100 characters.</p>
+<h2 id="sending-vouchers" class="wysiwyg-text-align-justify"><strong>Sending Vouchers</strong></h2>
+<p class="wysiwyg-text-align-justify">The EFS Panel bonus administration supports the use of voucher codes. With this method, you purchase a list of voucher codes from your partner, for example, an online shop. You forward these by e-mail to your panelists and the panelists redeem the voucher codes at the partner business.</p>
+<p class="wysiwyg-text-align-justify">To manage the voucher lists of your panel, go to the Website-&gt;Bonus management menu and click on the Voucher code lists button. Use the drop-down lists in the head section to display the desired language version.</p>
+<h3 id="creating-a-voucher-code-list" class="wysiwyg-text-align-justify"><strong>Creating a Voucher Code List</strong></h3>
+<p class="wysiwyg-text-align-justify">Normally you receive lists from your partner, which respectively contain voucher codes for a particular amount of money. For each of these lists, create a corresponding list in EFS:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>Ensure that the website and language version have been correctly configured.</li>
+<li>Click on the <strong>Create voucher code list</strong> button.</li>
+<li>
+<p>Enter the title.</p>
+</li>
+<li>
+<p>Set the number of bonus points that the voucher code of the list will have.</p>
+</li>
+<li>
+<p>Optionally, you can enter a description. Using the wildcard #description#, you can later insert this description into the voucher mail

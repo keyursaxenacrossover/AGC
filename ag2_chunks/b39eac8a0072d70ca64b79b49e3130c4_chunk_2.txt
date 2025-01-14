@@ -1,0 +1,77 @@
+ _E-mail *_: `sys_api_{{TECHNICALNAME}}@3uu.eu`
+- Set value for _Password (qb_only)_: `***` (i.e. generate in KeePass)
+- Set value for _Expires at_: `2038-01-01`
+- Set value for _User account status_: `Active` (select checkbox)
+- Set value for _REST-API access token (qb_only)_: ` ` {i.e. generate in EFS, copy and delete}  !!!NEVER PRINT OUT HERE!!!
+
+[] Globis update[x] Globis update (EFS and DataVoyager)
+
+Update here: `{{INSTALLATIONPATHHTDOCS}}`
+
+- Execute: `u [initials] [date]: Activated Dashbo \(TIVI-ID\)`
+
+_Notes:_
+
+
+&gt;**Re-Sync Dashbo data**
+
+[] Delete Dashbo data (DynamoDB/Druid)
+
+Execute here: "`{{INSTALLATIONPATHWWW}}$`"
+
+- Execute: `php support/sendGuideKafkaEvents.php --allGuides --deleteMode`
+
+_Log_:
+```
+{{log}}
+```
+
+[] Sync Dashbo data (DynamoDB/Druid)
+
+Execute here: "`{{INSTALLATIONPATHWWW}}$`"
+
+- Execute: `php support/sendGuideKafkaEvents.php --allGuides`
+
+_Log_:
+```
+{{log}}
+```</code></pre>
+<p> </p> _E-mail *_: `sys_api_{{TECHNICALNAME}}@3uu.eu`
+- Set value for _Password (qb_only)_: `***` (i.e. generate in KeePass)
+- Set value for _Expires at_: `2038-01-01`
+- Set value for _User account status_: `Active` (select checkbox)
+- Set value for _REST-API access token (qb_only)_: ` ` {i.e. generate in EFS, copy and delete}  !!!NEVER PRINT OUT HERE!!!
+
+[] Globis update[x] Globis update (EFS and DataVoyager)
+
+Update here: `{{INSTALLATIONPATHHTDOCS}}`
+
+- Execute: `u [initials] [date]: Activated Dashbo \(TIVI-ID\)`
+
+_Notes:_
+
+
+&gt;**Re-Sync Dashbo data**
+
+[] Delete Dashbo data (DynamoDB/Druid)
+
+Execute here: "`{{INSTALLATIONPATHWWW}}$`"
+
+- Execute: `php support/sendGuideKafkaEvents.php --allGuides --deleteMode`
+
+_Log_:
+```
+{{log}}
+```
+
+[] Sync Dashbo data (DynamoDB/Druid)
+
+Execute here: "`{{INSTALLATIONPATHWWW}}$`"
+
+- Execute: `php support/sendGuideKafkaEvents.php --allGuides`
+
+_Log_:
+```
+{{log}}
+```</code></pre>
+<p> </p>

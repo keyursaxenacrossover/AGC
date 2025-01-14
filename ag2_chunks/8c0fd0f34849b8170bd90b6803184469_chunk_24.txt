@@ -1,0 +1,21 @@
+><h3 id="header-81">(MySight new) Are we able to manually sync not synched data (logfile analysis) and is this feasible (consistency)?</h3><p> Answer: It should not be necessary to manually sync data because of the transactions and the rollback in case of non availability. Non synched data will remain in the queue and will be synched during the next jobmaker execution.</p><h3 id="header-82">(MySight new) How can I add text variables as split variables /dimensions in Mysight?</h3><p> By default only integer variables can be used as split variables in mysight.<br>Since EFS 16.4 there is a new config flag that allows to enable specified text variables to be used as split as well: allowed_text_split.<br>Variables of type date can not be used as split variables.<br><br>Please make sure that these text variables though only include integer values or text values that are all the same or otherwise a split would not make sense. Please also mind that each additional split variable increases the risk of <strong>performance issues</strong> when tableau fetches data from Exasol.</p><h3 id="header-83">(MySight new) Failed Queries and what to do in that case (still needs to be documented)</h3><p></p><h4 id="header-85">[EXASOL][EXASolution driver]insufficient privileges for creating connection</h4><p></p><h4 id="header-86">[EXASOL][EXASolution driver]insufficient privileges for using connection</h4><p> Example case: 00502310<br>Error message shown in failed query mail: <strong>insufficient privileges for using connection</strong> Error messages shown in <a href="https://it.globalpark.de/twiki/bin/view/Support/MySight">https://it.globalpark.de/twiki/bin/view/Support/MySight</a>-Log on installation:</p><ul>
+<li><p><strong>The result sync in context of 'transferSurveyParticipationByInstanceIdAndPid' for PID x after y sec failed.</strong></p></li>
+<li><p>When clicking on ?-icon: *Error copy table content to exasol*<br></p></li>
+<li><p><strong>The initial sync of results failed.</strong></p></li>
+</ul><p><br>Solution: Forward the case to sysadmins and ask them to grant the Exasol user rights for using the connection.<br>Information that sysadmins need (see Options &gt;&gt; MySight settings &gt;&gt; MySight connections &gt;&gt; Edit Exasol connection):</p><ul>
+<li><p>Installation URL</p></li>
+<li><p>Exasol DB scheme</p></li>
+<li><p>Exasol User</p></li>
+<li><p>Exasol Host</p></li>
+<li><p>Exasol Port</p></li>
+</ul><p></p><h4 id="header-87">[EXASOL][EXASolution driver]insufficient privileges for replacing connection</h4><p> Case 00436112<br>When accessing Exasol an error message was shown informing about insufficient privileges. Also an error was shown under Options &gt;&gt; MySight settings &gt;&gt; My Sight Log<br><strong>Instance publishing failed Error copy table to Exasol</strong> <br>Solution: Forward case to Sysadmins and ask to change rights of the Exasol user:</p><ul><li><p>Needed rights: <strong>DROP ANY CONNECTION</strong> and <strong>ALTER ANY CONNECTION</strong></p></li></ul><p> Information that sysadmins need (see Options &gt;&gt; MySight settings &gt;&gt; MySight connections &gt;&gt; Edit Exasol connection):</p><ul>
+<li><p>Installation URL</p></li>
+<li><p>Exasol DB scheme</p></li>
+<li><p>Exasol User</p></li>
+<li><p>Exasol Host</p></li>
+<li><p>Exasol Port</p></li>
+</ul><h3 id="header-89">(MySight new) Open questions regarding Mysight v2</h3><p> Please feel free to add yours</p><p></p><h4 id="header-91">Team-Rechte für MySight-Funktionen</h4><p><strong>Es gibt die folgende ACL-Rechte:</strong></p><ul>
+<li><p><strong>mysight_self_siteadmin</strong> - Mit Schreibrecht erhalten Sie die Möglichkeit Ihren Tableau User-Account zu verwalten. Beim Anlegen eines neuen Tableau User-Account wird zudem die Rolle "Site-Administrator" zugewiesen (Hinweis: Dieses Recht ist höherwertig als "mysight_self_sitepublisher").</p></li>
+<li><p><strong>mysight_self_sitepublisher</strong> - Mit Schreibrecht erhalten Sie die Möglichkeit Ihren Tableau User-Account zu verwalten. Beim Anlegen eines neuen Tableau User-Account wird zudem die Rolle "Publisher" zugewiesen.</p></li>
+</ul><p><strong>Wie gehen wir hier nun per Default vor?</strong></p><ul>
+<li><p><strong>Erstellen wir im EFS nur ein "mysight"-Team und vergeben wir beide Rechte?</strong> (Das

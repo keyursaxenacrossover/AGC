@@ -1,0 +1,57 @@
+ all you need to do is create one or multiple <em>categories/organizations</em> within the groups area of the People module, and one or multiple panel groups for each group of panelists that you wish to separate from others in the panel. Once your groups have been created, any new users invited to join the portal will be automatically added to the correct group. Users joining the portal via the registration module will be added to the default panel group and category/organization.</p>
+<p> </p>
+<h3 id="header-20">Other new features in Portals</h3>
+<ul>
+<li>
+<p><strong>More convenient portal testing</strong>: As an admin user you typically want to preview or test the changes that you have done in the backend. This workflow has been simplified with our new direct login feature that will be visible in the breadcrumbs of the portals module. All panelists with the status tester will be available for direct, one-click login into the portal. No need to copy &amp; paste the email and remember the password anymore!</p>
+</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21036835464594" alt="image-20210914-151151.png"></p>
+<ul>
+<li>
+<p><strong>Page access via user roles</strong>: In addition to panel groups, pages can now also be restricted to user roles within the portal.</p>
+</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21036845695250" alt="image-20210825-071235.png"></p>
+<ul>
+<li>
+<p><strong>Allow deletion of logos</strong>: You now have the option to reset the customized logo and favicon to the default value.</p>
+</li>
+<li>
+<p><strong>Displaying the IDEA and TOPIC guides in cards:</strong> From now on it is possible to display the survey from IDEA and TOPIC guides directly in the portal using the <em>Cards</em> page module Cards. Some other minor enhancements have been made to this portals page module.</p>
+</li>
+<li>
+<p><strong>Prevent selection of offline users in IDEA guide setup: </strong>Offline users can no longer be added through the IDEA Guide Setup search, as they will not be able to participate in the guide type.</p>
+</li>
+<li>
+<p><strong>Mandatory self-assessment for ME guide</strong>: The ME guide has been amended so that any guide configured to include a self-assessment step requires the completion of that self-assessment. It is no longer possible to have an optional self-assessment as part of the process.</p>
+</li>
+<li>
+<p><strong>Updated Login/Registration module: </strong>It is now possible to hide the Account, First Name and Last Name fields from the registration module. In addition these fields can also be mandated.</p>
+</li>
+<li>
+<p><strong>Immediate login after registration : </strong>Previously, when users were invited to register for a portal, they would complete their registration details and would then be directed to log into the portal. With this release, new users will be logged in immediately after registration is complete.</p>
+</li>
+</ul>
+<p> </p>
+<h2 id="header-22">Enhancements to People</h2>
+<hr>
+<p>We have made some minor changes in the People module:</p>
+<ul>
+<li>
+<p><strong>Bonus point deduction using update rules : </strong>It has always been possible to add bonus points to a panelist using our update rules, but now we have also added the ability to subtract bonus points using update rules. <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20229223482514" target="_blank" rel="noopener noreferrer">Read more</a></p>
+</li>
+<li>
+<p><strong>Dependency checking when deleting groups</strong>: It is no longer possible to delete a group that is used elsewhere in the platform. If you are being prevented from deleting a group, you can use our new <em>Usage </em>tab in the detail view for each group to see where the group is currently being used. <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20229223482514" target="_blank" rel="noopener noreferrer">Read more</a></p>
+</li>
+<li>
+<p><strong>Fix to </strong><em><strong>Update data</strong></em><strong> batch update function</strong>: When updating a panelist to a status of <em>Inactive </em>via the panel administration area, these panelists were automatically deactivated in any surveys they were included in. However, when doing a batch update using the <em>Update data</em> function to set panelists to <em>Inactive</em> this deactivation in the survey was not taking place. This issue has now been resolved.</p>
+</li>
+<li>
+<p><strong>Sample overview update: </strong>The panelist's survey expiry is now displayed in the sample overview of Panel and Master Data surveys.</p>
+</li>
+</ul>
+<p> </p>
+<h2 id="header-23">Enhancement to MySight</h2>
+<hr>
+<p>In the MySight module the support for Employee projects has been extended. The data sources now use the new <a href="https://help.tableau.com/current/pro/desktop/en-gb/datasource_datamodel.htm" target="_blank" rel="noopener noreferrer" data-card-appearance="inline">Tableau Data Model</a>, and the organizational structures of a

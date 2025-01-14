@@ -1,0 +1,93 @@
+.997px; height: 309px;">
+<p>integer</p>
+</td>
+<td style="width: 126.649px; height: 309px;">
+<p>11 digits</p>
+</td>
+</tr>
+<tr style="height: 261px;">
+<td style="width: 89.0278px; height: 261px;">
+<p>Radio buttons</p>
+</td>
+<td style="width: 133.611px; height: 261px;">
+<p>Generates a single response list in which user-defined answer options can be selected.</p>
+<p>If a “radio buttons” type variable is created anew, all existing participants are assigned the value “0”.</p>
+</td>
+<td style="width: 133.281px; height: 261px;">
+<p> </p>
+</td>
+<td style="width: 134.653px; height: 261px;">
+<p>Variable with user-defined codes</p>
+</td>
+<td style="width: 101.997px; height: 261px;">
+<p>integer</p>
+</td>
+<td style="width: 126.649px; height: 261px;">
+<p>11 digits</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify">If the number of characters is exceeded, everything above it is truncated. When importing, please note that <em>Excel</em> may have a limit on the number of characters per cell.</p>
+<p class="wysiwyg-text-align-justify">Please note that participant administration variables of the “text field” type and project variables that refer to text fields are preallocated differently:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Participant variables that are imported by the project manager and not filled by the participant are set to “0”.</p>
+</li>
+<li>
+<p>Project variables that refer to text fields are preallocated<br>with the value -66 or - 99, depending on whether the participant did not see the question or saw, but did not answer the question.</p>
+</li>
+</ul>
+<h3 id="recoding-the-answer-categories-of-participant-variables" class="wysiwyg-text-align-justify">Recoding the answer categories of participant variables</h3>
+<p class="wysiwyg-text-align-justify">Please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Switch to the <strong>Participant variables</strong> menu, and click on Edit to open the dialog for the desired variable.</p>
+</li>
+<li>
+<p>Change the code.</p>
+</li>
+<li>
+<p>Then click on<strong> Save</strong>.</p>
+<ul>
+<li>
+<p>Please note that renamings comprising several steps must be performed in individual steps, i.e. if you wish to recode code 1 to code 2 and code 2 to code 3, you must first recode code 2 to code 3 and then code 1 to code 2.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>The recoding dialog will be opened. Here, you must re-confirm the recodings explicitly.</p>
+</li>
+<li>
+<p>You can trigger the recoding by clicking on <strong>Save</strong>.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">You can recode answer categories as desired. However, please note the following:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The recoding may have an impact, for example, on import data records that have already been prepared or on filters in the questionnaire that have already been configured. Therefore, after recoding, you should check all functionalities that depend on the recoded code.</p>
+</li>
+<li>
+<p>If participant administration already contains data records, all those in which the code to be recoded appears will be recoded accordingly.</p>
+</li>
+</ul>
+<h3 id="deleting-variables-and-answer-categories" class="wysiwyg-text-align-justify">Deleting variables and answer categories</h3>
+<p class="wysiwyg-text-align-justify">In general, standard variables cannot be deleted. Answer categories and user-defined variables can be deleted. However, this function should be used with care.</p>
+<p class="wysiwyg-text-align-justify"><strong>Deleting user-defined variables</strong></p>
+<p class="wysiwyg-text-align-justify">Please note:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>If participant administration already contains data records, the contents of the respective variable will be irretrievably deleted from all participant records containing the variable.</p>
+</li>
+<li>
+<p>If participant administration is still empty, deleting the variable may have an impact, for example, on import data records that have already been prepared or on<br>filters in the questionnaire that have already been configured. Please check all functionalities to make sure that no dependency has been overlooked.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Deleting answer categories</strong></p>
+<p class="wysiwyg-text-align-justify">Please note:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>If participant administration already contains data records, the respective answer category will be recoded to “-77” in all participant records containing the current variable with the code of the answer category.</p>
+</li>
+<li>
+<p>If participant administration is still empty, deleting the answer

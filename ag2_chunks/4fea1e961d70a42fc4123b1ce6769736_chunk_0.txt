@@ -1,0 +1,96 @@
+<h1 id="h_01J43XZQK0B1HVJ30TXAPE7BBY" class="wysiwyg-text-align-justify">Overview</h1>
+<article>
+<p>This article provides information about Identity Providers and Protocols used in authentication and authorization systems. It covers common Identity Providers, OIDC Federation, and SAML Federation, along with their key components and configurations.</p>
+<p> </p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>This guide focuses on the prerequisites for connecting to existing IAM/SSO solutions, popular Identity Providers, and the details of OIDC and SAML Federation protocols.</p>
+</article>
+<ul class="wysiwyg-text-align-justify">
+<li><a href="#identity-providers">Identity Providers</a></li>
+<li><a href="#oidc-federation">OIDC Federation</a></li>
+<li><a href="#saml-federation">SAML Federation</a></li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify">Pre-requisites for a successful connection to an existing IAM/SSO solution are that the existing IAM/SSO solution is capable of connecting apps via SAML 2.0 <strong>or </strong>OpenID connect and is publicly available (and not just in your internal network/infrastructure).</p>
+<h3 id="identity-providers" class="wysiwyg-text-align-justify"><strong>Identity Providers</strong></h3>
+<p class="wysiwyg-text-align-justify">A list of Identity Providers that are commonly used across our customer base:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Azure AD B2C</p>
+</li>
+<li>
+<p>Okta</p>
+</li>
+<li>
+<p>Azure AD</p>
+</li>
+<li>
+<p>Active Directory + ADFS</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Products/services that support the required protocols OIDC Federation or SAML Federation can be considered as well.</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default">
+<colgroup> <col style="width: 380.0px;"> <col style="width: 380.0px;"> </colgroup>
+<tbody>
+<tr>
+<td>
+<p>Azure AD B2C</p>
+</td>
+<td>
+<p><a href="https://azure.microsoft.com/en-us/services/active-directory-b2c/">https://azure.microsoft.com/en-us/services/active-directory-b2c/</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Okta</p>
+</td>
+<td>
+<p><a href="https://www.okta.com/">https://www.okta.com/</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Azure AD</p>
+</td>
+<td>
+<p><a href="https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis">https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Active Directory + ADFS</p>
+</td>
+<td>
+<p><a href="https://en.wikipedia.org/wiki/Active_Directory_Federation_Services">https://en.wikipedia.org/wiki/Active_Directory_Federation_Services</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"> </p>
+<h3 class="wysiwyg-text-align-justify"> </h3>
+<h3 id="oidc-federation" class="wysiwyg-text-align-justify"><strong>OIDC Federation</strong></h3>
+<p class="wysiwyg-text-align-justify">Open ID Connect (OIDC) is an authentication (and authorization) protocol that can be used to federate authentication. Therefore an OIDC IdP can be used to be federated with Okta.</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<td>
+<p>OIDC Spec</p>
+</td>
+<td>
+<p><a href="https://openid.net/developers/specs/">https://openid.net/developers/specs/</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>OIDC</p>
+<p>(based on OAuth 2.0)</p>
+</td>
+<td>
+<p><a href="https://tools.ietf.org/html/rfc6749">https://tools.ietf.org/html/rfc6749</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify">In our case, the OIDC federation creates trust between Okta and an external OIDC IDP. Therefore Okta will send a specific group of users to the external IDP to authenticate and get a trusted result of that authentication containing some user information. </p>
+<p class="wysiwyg-text-align-justify">When using OIDC a discovery document (well-known) can be used to get the basic information about the authentication and authorization flows that are supported. It is usually publicly available as it

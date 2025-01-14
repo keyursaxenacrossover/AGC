@@ -1,0 +1,65 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1055096992">https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1055096992</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">MySight v2</a></li>
+<ul>
+<li><a href="#header-3">Activation of MySight v2 and Settings</a></li>
+<ul>
+<li><a href="#header-5">Requirements</a></li>
+<li><a href="#header-6">1. Request intermediate and Exasol DB</a></li>
+<li><a href="#header-7">2. Activate Mysight v2 in EFS Configuration</a></li>
+<li><a href="#header-8">3. Setup Intermediate mysql-database between EFS-installation and EXASOL in EFS Configuration (root)</a></li>
+<li><a href="#header-9">4. Setup Tableau server in EFS admin area (Mysight settings)</a></li>
+<li><a href="#header-10">5. Add a new MySQL or EXASOL connection in EFS admin area (MySight settings)</a></li>
+<li><a href="#header-11">6. Final checks</a></li>
+</ul>
+</ul>
+<li><a href="#header-14">MySight v1 - discontinued</a></li>
+<ul>
+<li><a href="#header-16">Activation of MySight v1 and custom content handler for the panel website</a></li>
+<ul>
+<li><a href="#header-18">Requirements</a></li>
+<li><a href="#header-19">1. Activate Mysight in EFS (change config in platform cockpit)</a></li>
+<li><a href="#header-20">2. Store the SFTP Key - Only necessary for installations upgraded from &lt; EFS 10.8</a></li>
+<li><a href="#header-21">3. Activate Mysight Custom Content Handler for panel website (Custom Output Modul)</a></li>
+<li><a href="#header-22">4. Import Mysight website</a></li>
+<li><a href="#header-23">5. Check configuration</a></li>
+</ul>
+<li><a href="#header-25">Overview EFS configuration variables and values for MySight v1</a></li>
+<ul>
+<li><a href="#header-27">SFTP Data:</a></li>
+<li><a href="#header-28">Tableau SFTP Variables</a></li>
+<li><a href="#header-29">Mysight variables</a></li>
+</ul>
+</ul>
+<li><a href="#header-32">Support</a></li>
+<ul>
+<li><a href="#header-34">Alteryx and Tableau Contacts</a></li>
+<li><a href="#header-35">Logins</a></li>
+<ul>
+<li><a href="#header-37">MySight Citrix Server</a></li>
+<li><a href="#header-38">MySight PREPROD and PREPROD2 Tableau Servers and aliases</a></li>
+<li><a href="#header-39">MySight Production Tableau Server</a></li>
+<li><a href="#header-40">MySight Tableau Server for Testkanal installations (TABTKA)</a></li>
+<li><a href="#header-41">MySight SFTP Server</a></li>
+<li><a href="#header-42">MySight Portal Address</a></li>
+</ul>
+<li><a href="#header-44">Documentation</a></li>
+<ul>
+<li><a href="#header-46">Preparation in EFS</a></li>
+<li><a href="#header-47">Site Roles for users</a></li>
+<li><a href="#header-48">Documentation page</a></li>
+<li><a href="#header-49">Mysight Overview/Cheat Sheet</a></li>
+<li><a href="#header-50">MySight Checklist</a></li>
+<li><a href="#header-51">Alteryx Data field types:</a></li>
+<li><a href="#header-52">MySight Websites installieren und Ipsos CLS aufsetzen (Professional Services/Customizing)</a></li>
+<li><a href="#header-53">Process for switching from PREPROD to PREPROD2/PROD and publishing data from PREPROD2 to PROD</a></li>
+<li><a href="#header-54">How to manually publish your Dashboards (Author: Gordon Fiedler)</a></li>
+<li><a href="#header-55">How to manually publish Data Sources and for the first time a new Dashboard (Author: Gordon Fiedler)</a></li>
+<li><a href="#header-56">How to reinitiate the initial sync of result data to Exasol</a></li>
+<li><a href="#header-57">MySight v2 Publication status</a></li>
+<li><a href="#header-58">MySight v2 EFS Tables and description</a></li>
+<li><a href="#header-59">MySight v2 Intermediate/Exasol tables and descriptions</a></li>
+<li><

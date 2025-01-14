@@ -1,0 +1,119 @@
+<p> </p>
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K">Overview</h1>
+<p>This article provides comprehensive information about disposition codes in survey management. Disposition codes are used to track the status of participants in a survey field, providing valuable insights into the progress and state of your survey at any given time.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>Every participant in a field has a so-called disposition code which describes their status in the field. This records, for example, whether participants have already been invited and whether they have already begun the survey or completed it. The field statistics, which builds on these statuses, give you extensive information on the status of your field, i.e. your survey, at any time. The disposition codes have two digits. The areas are defined as follows:</p>
+<ul>
+<li>
+<p>10s: before the survey</p>
+</li>
+<li>
+<p>20s: during the survey</p>
+</li>
+<li>
+<p>30s: after the survey</p>
+</li>
+</ul>
+<p>The disposition codes are mutually exclusive: Any person can have only one disposition code at any given time. Therefore, the status variable can only assume one of the above characteristics at a time. The majority of disposition codes is assigned automatically and changed depending on the progress of the survey.</p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 159.0px;">
+<col style="width: 169.0px;">
+<col style="width: 432.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour="#57d9a3">
+<p style="text-align: center;"><strong>Disposition code</strong></p>
+</th>
+<th data-highlight-colour="#57d9a3">
+<p style="text-align: center;"><strong>Status</strong></p>
+</th>
+<th data-highlight-colour="#57d9a3">
+<p style="text-align: center;"><strong>Comment</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">10</p>
+</td>
+<td>
+<p style="text-align: center;">Consent seen</p>
+</td>
+<td>
+<p style="text-align: center;">This status is set when an anonymous survey is started and the consent form is displayed, but the participant does not give consent or reject the consent prompt.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">11</p>
+</td>
+<td>
+<p style="text-align: center;">Not yet invited</p>
+</td>
+<td>
+<p style="text-align: center;">The participant has not yet been invited.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">12</p>
+</td>
+<td>
+<p style="text-align: center;">Invited</p>
+</td>
+<td>
+<p style="text-align: center;">The link has not yet been used.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">13</p>
+</td>
+<td>
+<p style="text-align: center;">Inactive</p>
+</td>
+<td>
+<p style="text-align: center;">Only on EFS Panel installations: If you change the panel status<br>of panelists to “inactive” or “deleted”, their disposition code<br>will be changed to 13 in all samples in which they had disposition code 11 or 12 so far (i.e. they haven’t participated yet). Thus, the panelists can not start any new surveys, even if they have already been invited.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">14</p>
+</td>
+<td>
+<p style="text-align: center;">E-mail could not be delivered</p>
+</td>
+<td>
+<p style="text-align: center;">Assigned automatically if the mail server does not accept a mail repeatedly or if it is not possible to connect to the mail server at all repeatedly. Per default, four attempts are made. The number can be configured.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">15</p>
+</td>
+<td>
+<p style="text-align: center;">Cannot be reached</p>
+</td>
+<td>
+<p style="text-align: center;">This code is used in order to mark participants that cannot be reached. You will be notified that mails could not be delivered by a means outside the <em>EFS</em> system:</p>
+<ul>
+<li>
+<p>through messages that take place offline (for example by post or telephone).</p>
+</li>
+<li>
+<p>through out-of-office mails, messages regarding a full mailbox, messages from the postmaster that an e-mail address no longer exists or that a further delivery attempt will follow, etc. Because these e-mails are directed at the sender of an invitation or follow a return path, they can not be documented by <em>EFS</em>.</p>
+</li>
+</ul>
+<p style="text-align: center;">In all of these cases the assignment of the code must be done manually. You can use the trim participants function.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">16</p>
+</td>
+<td>
+<p style="text-align: center;">Reserved 1</p>
+</td>
+<td>
+<p style="text-align: center;">Correspond

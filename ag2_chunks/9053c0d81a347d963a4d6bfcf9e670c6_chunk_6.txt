@@ -1,0 +1,95 @@
+>Save allocation</strong> on both tabs.</li>
+<li>Click on <strong>Proceed to preview</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Preview and Correct Data:</strong></p>
+<ul>
+<li>Review the import preview. Traffic-light icons indicate data record status. Hover over red icons for error details.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017191604370">
+</li>
+<li>Use <strong>Edit</strong> and <strong>Delete</strong> icons to correct or remove specific data records.</li>
+<li>Return to the overview using the <strong>Back</strong> link.</li>
+</ul>
+</li>
+<li>
+<p><strong>Execute Import:</strong></p>
+<ul>
+<li>Click on the <strong>Import</strong> button to start the import.</li>
+<li>The import may take time; do not close the browser. Use another browser window if needed. For large imports (&gt;5,000 records), use smaller import files.</li>
+</ul>
+</li>
+<li>
+<p><strong>Review Results:</strong></p>
+<ul>
+<li>After completion, the import summary will show the number of successful and failed records.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017221225874">
+</li>
+<li>Click on <strong>Download results</strong> to get an Excel file with:
+<ul>
+<li>All data from the import file.</li>
+<li>Import results (e.g., “Data record import successful” or “Data record not imported”).</li>
+<li>Error reasons in the “messages” column.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Correct and Re-import:</strong></p>
+<ul>
+<li>Correct unsuccessful records in the Excel file, remove successfully created records, and use the file for a new import attempt if necessary.</li>
+</ul>
+</li>
+</ol>
+<h3 id="h_01J3FX17CTAQSB51HJQKWJ39R9" class="wysiwyg-text-align-justify">Data to be Imported in Detail</h3>
+<p class="wysiwyg-text-align-justify">Before importing panelists, specify which data to import and how to save it. The following data is required or optional for a panelist import:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Participant Data:</strong></p>
+<ul>
+<li>
+<strong>Required:</strong> Email address.</li>
+<li>
+<strong>Optional:</strong> Passwords, bonus points, and a reason for bonus points allocation.</li>
+</ul>
+</li>
+<li>
+<p><strong>Master Data:</strong></p>
+<ul>
+<li>
+<strong>Optional:</strong> Import all or selected master data. Ensure master data variables are created in advance (see Chapter "Master Data").</li>
+</ul>
+</li>
+<li>
+<p><strong>System Data:</strong></p>
+<ul>
+<li>Automatically set during import (see table below).</li>
+</ul>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Importing Passwords:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Initial passwords for imported panelists are usually generated automatically, with a reset link sent out.</li>
+<li>To import existing passwords, enter them in the “u_passwd” column of the import file.</li>
+<li>Passwords must meet security criteria defined for the respective language version.</li>
+<li>Use the wildcard #password_recovery_url# to send reset links to imported panelists in the invitation.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Importing Bonus Points and Reasons:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>To credit bonus points during import, enter the desired number in the “credit_points” column.</li>
+<li>For a reason displayed in the account statement and bonus points log, enter text in the “descr” column. If no text is added, the default “Balance on YYYY-MM-DD HH:MM
+<div> </div>
+” will be used.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Importing Master Data:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Optionally include selected or all master data. Master data variables must be pre-created.</li>
+<li>To update existing accounts, use the Update panelist data function. This updates records without creating new accounts.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>System Data Automatically Set During Import:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>System variables are automatically assigned values during import.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Ensure all necessary fields are filled in correctly before proceeding with the import.</p>
+<table class="relative-table wrapped tablesorter tablesorter-default confluenceTable wysiwyg-text-align-justify" style="margin: 0px auto; border-collapse: collapse; background-color: #ffffff; height: 576px; width: 646px;" border="1">
+<colgroup> <col style="width: 0px;"> </colgroup> <colgroup> <col style="width: 0px;"> </colgroup> <colgroup> <col style="width: 0px;"> </colgroup>
+<tbody>
+<tr class="tablesort

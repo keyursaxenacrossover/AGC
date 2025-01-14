@@ -1,0 +1,45 @@
+ an import (even when throttled by the API limits) will be done in a reasonable amount of time.</p>
+<p>If a client wants to import a bigger number of users, he will receive a message telling him that he needs to contact support for this. In case a really big import is requested, we also may need to request an exception for the API limits from Okta.</p>
+<p>Bulk updates could be handled the same way.</p></ac:layout-cell></ac:layout-section><ac:layout-section ac:breakout-mode="default" ac:type="three_equal"><ac:layout-cell><p><strong>Pro</strong></p>
+<ul>
+<li><p>Not many clients will do really big user imports</p></li>
+<li><p>2nd level support can fine tune the threshold if needed (e.g: increase limit to 7000 users)</p></li>
+<li><p>Cheap implementation</p></li>
+<li><p>Approved by Heiko</p></li>
+</ul></ac:layout-cell><ac:layout-cell><p><strong>Contra</strong></p>
+<ul>
+<li><p>Limits current EFS functionality</p></li>
+<li><p>More work for 2nd level support in case of big imports</p></li>
+</ul></ac:layout-cell><ac:layout-cell><p><strong>Solves</strong></p>
+<ul>
+<li><p>Import via CSV for EFS Admin users</p></li>
+<li><p>Import via CSV for Portal users</p></li>
+<li><p>Bulk update of users</p></li>
+</ul></ac:layout-cell></ac:layout-section><ac:layout-section ac:breakout-mode="default" ac:type="fixed-width"><ac:layout-cell><p></p>
+<p><strong>Solution 2: Import Early (and request exception)</strong></p>
+<p>To understand the problem better a simple example calculation:</p>
+<p>Import 1.000.000 users - <code>600 requests/minute</code> limit</p>
+<p>1.000.000 / 600 = 1666.67 minutes / 60 = 27.78 hours</p>
+<p><strong>Note</strong>: This is not taking into consideration that also other clients may use the same API at the time and the throughput is lower (and it takes longer).</p>
+<p>It is mostly unknown how long a current user import for 1.000.000 users would take, but <ac:link><ri:user ri:userkey="8a7f8085680f7144016812deb4300167"></ri:user></ac:link> estimated based on experience that it would also take up to hours.</p>
+<p>If the number of users is known before the migration, the import should be done at least x hours before activating Questback Access, where x is the estimated import duration based on the limits.</p>
+<p>In extreme cases the Okta support can be contacted to request an exception of the API limit (<a href="https://developer.okta.com/docs/reference/rate-limits/#requesting-exceptions">https://developer.okta.com/docs/reference/rate-limits/#requesting-exceptions</a>)</p>
+<p>Timeline: ---(Import and Activate Users)----------------(Activate Questback Access)-------------------&gt;</p></ac:layout-cell></ac:layout-section><ac:layout-section ac:breakout-mode="default" ac:type="three_equal"><ac:layout-cell><p><strong>Pro</strong></p>
+<ul><li><p>No special implementation needed</p></li></ul></ac:layout-cell><ac:layout-cell><p><strong>Contra</strong></p>
+<ul>
+<li><p>Potentially long sync times</p></li>
+<li><p>Activation mails will go out (~hours) before the activation of Questback Access happens</p></li>
+<li><p>Okta may not do exceptions on a regular basis</p></li>
+</ul></ac:layout-cell><ac:layout-cell><p><strong>Solves</strong></p>
+<ul>
+<li><p>Initial Sync of EFS admin users to Okta</p></li>
+<li><p>Initial Sync of Portal users (panelists) to Okta</p></li>
+</ul></ac:layout-cell></ac:layout-section><ac:layout-section ac:breakout-mode="default" ac:type="fixed-width"><ac:layout-cell><p></p>
+<p><strong>Solution 2a: Do Activation Later</strong></p>
+<p>Same as Solution 2, but do not activate users directly when creating, but at a later point in time after the activation of Questback Access.</p>
+<p>Timeline: ---(Import Users)----------------(Activate Questback Access)--(Activate Users)--------------&gt;</p></ac:layout-cell></ac:layout-section><ac:layout-section ac:breakout-mode="default" ac:type="three_equal"><ac:layout-cell><p><strong>Pro</strong></p>
+<ul><li><p>More control about when the users will receive the activation mail</p></li></ul></ac:layout-cell><ac:layout-cell><p><strong>Contra</strong></p>
+<ul><li><p><strong>Activation will also be done via API and suffer from the same API limits</strong></p></li></ul></ac:layout-cell><ac:layout-cell><p><strong>Solves</strong></p>
+<ul>
+<li><p>Initial Sync of EFS admin users to Okta</p></li>
+<li><p>Initial Sync of

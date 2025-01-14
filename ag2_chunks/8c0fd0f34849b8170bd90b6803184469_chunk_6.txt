@@ -1,0 +1,26 @@
+<tr>
+<td><p><strong>Rackspace/AWS</strong></p></td>
+<td><p>rs-exasol</p></td>
+<td><p>172.24.16.47</p></td>
+<td><p>/opt/pdp/opst/apps/EXASolution_ODBC-6.0.rc2/lib/linux/x86_64/libexaodbc-uo2214lv2.so</p></td>
+<td><p><strong>default driver for all new installations</strong></p></td>
+</tr>
+<tr>
+<td><p><strong>PROD-US-02</strong></p></td>
+<td><p></p></td>
+<td><p>172.30.3.168</p></td>
+<td><p>/opt/pdp/opst/apps/EXASolution_ODBC-6.0.rc2/lib/linux/x86_64/libexaodbc-uo2214lv2.so</p></td>
+<td><p><strong>default driver for all new installations</strong></p></td>
+</tr>
+</tbody>
+</table><p><strong>Former settings</strong></p><p><strong>INFO: All other necessary data like "Database user", "Database password" and "Database name" (Database name = "SCHEMA") will be provided by our System Engineers</strong> <br><strong>(System Engineers List of EXASOL Servers: </strong><a href="https://paper.dropbox.com/doc/Exasol-Server-Production-DEV-bKw7N25djwBGLqs8BzDx9"><strong>https://paper.dropbox.com/doc/Exasol-Server-Production-DEV-bKw7N25djwBGLqs8BzDx9</strong></a><strong>)</strong><br></p><ul><li>
+<p>Tableau Settings</p>
+<ul>
+<li><p>Tableau Server Url: <strong>choose a Tableau Server from the drop down menu</strong> (label PREPROD2 for internal installations, label PROD for customer installations)</p></li>
+<li><p>Tableau user: <strong>support</strong></p></li>
+<li><p>Tableau password: <strong>(see password safe)</strong></p></li>
+</ul>
+</li></ul><p><strong>INFO:</strong><a href="https://it.globalpark.de/twiki/bin/view/Support/ListeAlleInstallationenMitMySightV2MitAngabeDerEXASOLVerbindungenUndDriver"><strong>List of all installations with activated MySight v2 (EXASOL connections, drivers, etc.)</strong></a></p><h3 id="header-11">6. Final checks</h3><p>[] add <strong>"mysight"</strong> team in EFS</p><p>[] set ACL rights for this team: <strong>"mysight_self_siteadmin"</strong> &amp; <strong>"mysight_text_dimension"</strong>, WRITE &amp; READ</p><p>[] grant <strong>"mysight"</strong> team access to exasol connection by clicking on <strong>"§"</strong> next to the connection (System &gt;&gt; Options &gt;&gt; qb:: MySight settings &gt;&gt; MySight connections)</p><p>[] add users to <strong>"mysight"</strong> team (if requested by the customer)</p><p>[] remove right to create new Tableau users:</p><p style="margin-left: 30.0px;">log in to Tableau server (<strong>"PROD"</strong> or <strong>"PREPROD2"</strong>)</p><p style="margin-left: 30.0px;">select correct site (e.g. <a href="http://tr0044.customervoice360.com">tr0044.customervoice360.com</a>)</p><p style="margin-left: 30.0px;">navigate to Settings and change setting <strong>"Who is allowed to add and remove users."</strong> to <strong>"Only server administrators"</strong></p><p></p><h1 id="header-14">MySight v1 - discontinued</h1><h2 id="header-16">Activation of MySight v1 and custom content handler for the panel website</h2><h3 id="header-18">Requirements</h3><p>EFS Panel has to have been sold and activated.</p><p>The reason mus be known why MySight V1 is absolutely necessary. As it is deprecated, it should only be activated if there is no other way to build the desired functionality.</p><h3 id="header-19">1. Activate Mysight in EFS (change config in platform cockpit)</h3><ul>
+<li><p><strong>mysight_enabled</strong>(default:false): <strong>TRUE</strong> (boolean)</p></li>
+<li><p><strong>mysight_user_provisioning_service</strong> / <ac:inline-comment-marker ac:ref="315448fc-c94b-4e14-a48b-9fd8edf667bf">VALUE</ac:inline-comment-marker>: '<a href="http://mysight-api.bre.globalpark.com:49865/app/api/process/userprovision/">http://mysight-api.bre.globalpark.com:49865/app/api/process/userprovision/</a>' (<strong>FRANKFURT</strong>, PREPROD2/PROD, internal installations &amp; customers installations)</p></li>
+<li><p><strong>mysight_user_provisioning_service

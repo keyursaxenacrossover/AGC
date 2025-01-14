@@ -1,0 +1,90 @@
+): Sorting is done based on entries made by respondents in source questions with text fields.</p>
+</li>
+<li>
+<p>Sorted alphabetically by list element label (ascending/descending): It will be sorted by list element label.</p>
+</li>
+</ul>
+<h3 id="extended-random-selection-of-list-element" class="wysiwyg-text-align-justify">Extended Random Selection of List Element</h3>
+<p class="wysiwyg-text-align-justify">You can make the random selection, which was introduced in the previous chapter, dependent on the number of elements chosen by the participant. </p>
+<p class="wysiwyg-text-align-justify"><strong>Extended random selection</strong></p>
+<p class="wysiwyg-text-align-justify">Extended random selection can only be used in combination with the following types of inclusion conditions:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>if selected, always in a random selection</p>
+</li>
+<li>
+<p>in random selection if ...</p>
+</li>
+<li>
+<p>always in a random selection</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Configuring extended random selection</strong></p>
+<ol class="wysiwyg-text-align-justify">
+<li>
+<p>Click on the <strong>Options </strong>button in the page view of the desired questionnaire page.</p>
+</li>
+<li>
+<p>Among the random selection options you already know, you will find the <strong>Configure extended random selection </strong>button. Clicking on the button will open the condition editor.</p>
+</li>
+<li>
+<p>Enter the desired condition and confirm by clicking on <strong>Save</strong>.</p>
+</li>
+<li>
+<p>If required, you can define additional conditions which will be processed in the order you define.</p>
+</li>
+<li>
+<p>Return to the “Options” dialog by clicking on <strong>Back</strong>.</p>
+</li>
+<li>
+<p>If you click on the <strong>Info </strong>icon, the condition will be displayed. This icon will also appear in the question view.</p>
+</li>
+</ol>
+<h3 id="incorporating-dynamic-lists-into-questions" class="wysiwyg-text-align-justify">Incorporating dynamic lists into questions</h3>
+<p class="wysiwyg-text-align-justify">The list function offers you the possibility to incorporate static and dynamic lists into your questionnaire by using questions.</p>
+<h3 id="incorporating-dynamic-lists" class="wysiwyg-text-align-justify">Incorporating Dynamic Lists</h3>
+<ol class="wysiwyg-text-align-justify">
+<li>
+<p>Create a page titled in the Questionnaire Editor, and create a question of the “Multiple response list (vertical)” type (type 121).</p>
+</li>
+<li>
+<p>All question types in which using lists is advisable contain the “Dynamic answers” section. Later, if a list has been integrated, this section can optionally be hidden.</p>
+</li>
+<li>
+<p>Clicking on the <strong>(No list selected yet) </strong>link allows you to select a list.</p>
+</li>
+<li>
+<p>Select the corresponding list and confirm by clicking on <strong>Save</strong>.</p>
+</li>
+<li>
+<p>Click on the <strong>&lt;&lt; </strong>icon to return to the question you are editing. Here you will find the elements of the selected list in the “Dynamic answers” area.</p>
+</li>
+<li>
+<p>Depending on the target question type, item-specific functionalities such as randomization, grouping, and DAC are available with dynamic list elements. If desired, you can set these separately for each target question. Alternatively, you can also adopt the settings from the source question.</p>
+</li>
+<li>
+<p>You have the choice of</p>
+<ul>
+<li>
+<p>offering only list elements as answer options. In this case, you should tick the “Delete” checkbox for all other answer options and then click on <strong>Save</strong>.</p>
+</li>
+<li>
+<p>offering list elements as well as standard answer options. In this case, you can change the positions of the elements by changing their numbering. Then click on <strong>Save</strong>.</p>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="outputting-lists-in-the-questionnaire" class="wysiwyg-text-align-justify">Outputting lists in the questionnaire</h3>
+<p class="wysiwyg-text-align-justify">You can output entire lists in the questionnaire, e.g. to issue a confirmation to respondents of what they have selected. If you use this feature, the output will be subject to the inclusion conditions defined for the list, i.e. if you have specified, for example, a dynamic list and the inclusion condition “if selected, always in the list”, the selected elements will be output via wildcard.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The list-ID (#1_xxx#) serves as a wildcard.</p>
+</li>
+<li>
+<p>You can specify which general separator to use and the separator between the last two elements of the list.</p>
+</li>
+<li>
+<p>You can define alternative labeling for the list elements.</p>
+</li>
+<li>
+<p>It is not possible to use this wildcard to output list elements, which come from the multimedia question types 511 and 521: Instead

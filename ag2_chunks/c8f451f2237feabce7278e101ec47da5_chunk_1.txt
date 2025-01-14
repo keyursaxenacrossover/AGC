@@ -1,0 +1,57 @@
+ System Administration has to create an extra Intermediate and Exasol database for the mirror installation and it has to be configured in EFS.</p></li>
+</ul>
+</li>
+<li>
+<p>Open config file on console:</p>
+<ul>
+<li><p>Has the gpname been changed to the name of the mirror installation?</p></li>
+<li><p>Have the database settings been changed to match the database of the mirror installation?</p></li>
+</ul>
+</li>
+<li>
+<p>Execute installation check:</p>
+<ul><li>
+<p>You can ignore the following messages</p>
+<ul>
+<li><p>Cron jobs for SnailMail, jobmaker and dbreportstamp (they are not executed on mirror installations)</p></li>
+<li><p>The configuration is missing the installation ID</p></li>
+<li><p>access to external services</p></li>
+</ul>
+</li></ul>
+</li>
+</ul><p> </p><p>If you get Error 404 after logging in to the mirror installation:</p><ul><li>
+<p>check database tables</p>
+<ul><li>
+<pre><code class="language-text">SHOW CREATE TABLE config_variables;</code></pre>
+<p>, if Error</p>
+<pre><code class="language-text">ERROR 1286 (42000): Unknown table engine 'InnoDB'</code></pre>
+</li></ul>
+</li></ul> System Administration has to create an extra Intermediate and Exasol database for the mirror installation and it has to be configured in EFS.</p></li>
+</ul>
+</li>
+<li>
+<p>Open config file on console:</p>
+<ul>
+<li><p>Has the gpname been changed to the name of the mirror installation?</p></li>
+<li><p>Have the database settings been changed to match the database of the mirror installation?</p></li>
+</ul>
+</li>
+<li>
+<p>Execute installation check:</p>
+<ul><li>
+<p>You can ignore the following messages</p>
+<ul>
+<li><p>Cron jobs for SnailMail, jobmaker and dbreportstamp (they are not executed on mirror installations)</p></li>
+<li><p>The configuration is missing the installation ID</p></li>
+<li><p>access to external services</p></li>
+</ul>
+</li></ul>
+</li>
+</ul><p> </p><p>If you get Error 404 after logging in to the mirror installation:</p><ul><li>
+<p>check database tables</p>
+<ul><li>
+<pre><code class="language-text">SHOW CREATE TABLE config_variables;</code></pre>
+<p>, if Error</p>
+<pre><code class="language-text">ERROR 1286 (42000): Unknown table engine 'InnoDB'</code></pre>
+</li></ul>
+</li></ul>

@@ -1,0 +1,63 @@
+ left;">
+<div class="content-wrapper">
+<p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014859916946" alt="Schnittmenge.png"></span></p>
+</div>
+</td>
+<td style="text-align: left;">Menge, die zu A und zu B<br>gehört</td>
+</tr>
+<tr>
+<td style="text-align: left;">Differenz</td>
+<td style="text-align: left;">
+<div class="content-wrapper">
+<p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014812970130" alt="Differenz2.png"></span></p>
+</div>
+</td>
+<td style="text-align: left;">Menge, die zu A, nicht zu B<br>und nicht zu beiden gehört</td>
+</tr>
+<tr>
+<td style="text-align: left;" colspan="1">Symmetrisch Differenz</td>
+<td style="text-align: left;" colspan="1">
+<div class="content-wrapper">
+<p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014859911698" alt="SymDif.png"></span></p>
+</div>
+</td>
+<td style="text-align: left;" colspan="1">Menge, die zu A und B, aber<br>nicht zu beiden gehört4</td>
+</tr>
+</tbody>
+</table>
+<p class="auto-cursor-target"> </p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h3 id="h_01J3Q55Y9G0ZQHC0B5338199D3" class="sc-lhVmIH iJLaKb wysiwyg-text-align-left"> </h3>
+<h3 id="selection-of-the-focus-unit-standard-report" class="sc-lhVmIH iJLaKb wysiwyg-text-align-left"><strong>Selection of the Focus Unit (Standard Report)</strong></h3>
+<p><span style="color: #091e42;">The great advantage of the report type</span><strong>Standard Report </strong><span style="color: #091e42;">is that a report is ordered for one focus unit and for all subunits that are hung under the selected unit in the organizational structure. To do this, just check the box in front of “Include subunits“. For example, you can select the root unit as the focus unit, then check the box so that a report is ordered for all subunits, each of which acts as a focus unit.</span></p>
+<p class="auto-cursor-target wysiwyg-text-align-left"><em>Information: <span style="color: #333333;">If you select the root unit as the focus unit, no more level-up comparison units are found for this unit and all cells of a shape that require a level-up comparison value remain empty in a generated report or are marked with a character that you have defined for this case in the settings of a Report Definition.</span></em></p>
+<p class="wysiwyg-text-align-left"> </p>
+<h3 id="selection-of-the-focus-unit-condition-based-reports" class="sc-lhVmIH iJLaKb wysiwyg-text-align-left"><strong>Selection of the Focus unit (Condition-based Reports)</strong></h3>
+<p>For c<strong>ondition-based Report</strong>, you use filter conditions to specify the focus unit(s) you want to use. The units to which the set filter conditions apply will act as focus units. A report is ordered for this purpose.</p>
+<ul>
+<li>This report category must first be activated in the settings in the report definition.</li>
+<li>The filters are connected by a logical AND, so that each filter that is set must also apply.</li>
+<li>With each filter setting, more units are screened and the selection becomes finer.</li>
+</ul>
+<p><span style="color: #091e42;"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014859909650" alt="Focus unit condition.png"></span></p>
+<p><span style="color: #091e42;">The page layout is very different from the other two report types. Each line contains two select boxes and a free text field. Below the three lines, you will find a button to check the filter conditions you have selected.</span></p>
+<h3 id="filter-conditions"><strong><span style="color: #091e42;">Filter conditions</span></strong></h3>
+</div>
+</div>
+<p>Structure variables and unit properties can be selected as filters. You use the structure variables and unit properties in the first select box:</p>
+<ul>
+<li> Label</li>
+<li>Metaname</li>
+<li>View_ID</li>
+<li>Level</li>
+<li>Response_anon</li>
+</ul>
+<p>In the second select box, you select the relational operator. The available relational operators are listed in the table below.</p>
+<div class="table-wrap">
+<p class="auto-cursor-target"> </p>
+<table class="relative-table wrapped tablesorter tablesorter-default" style="width: 442px; margin-right: auto; margin-left: auto; height: 408px;" border="1">
+<colgroup> <col style="width:

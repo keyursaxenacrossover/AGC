@@ -1,0 +1,47 @@
+<h1 id="h_01J6CNR5R96N4FDMW9X23M4ZR2">Overview</h1>
+<p>You will receive instance deletion/deprovisioning requests from the Sales team for customers that are cancelling/churning. This article provides a high-level overview of the steps to be taken in order to accomplish this, along with a checklist to follow in order to make sure that all loose ends are tied up.</p>
+<div class="alert alert-danger" role="alert"><strong>Note: If the request is related to shared instances like EFS-Survey.com or Unipark, do not follow the below steps. We just set the expiration date on the individual organization in that case.</strong></div>
+<h1 id="header-1">Process</h1>
+<p>From a high-level standpoint, the procedure will consist of:</p>
+<ol>
+<li>If the requestor is a customer, please reach out to Sales for approval. If the requestor is internal, please proceed with step 2.</li>
+<li>Send an SC to the customer contact, if it is not in the ticket, please reach out to renewals/Sales team and notify aditi.garg@trilogy.com about the same. If it is Ipsos, please reach out to <a href="mailto:nicole.romens@ipsos.com">nicole.romens@ipsos.com</a>.<br><span style="color: #ebebeb; font-family: Inter, sans-serif; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #2b2c2f; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Subject: Important Notice: Scheduled Deletion of Your Instance</span><br>Dear Customer,<br>This is to inform you that your cancellation request for &lt;this instance&gt; has been processed, and it is scheduled to be deleted in the next 48 hours. If you have any questions or wish to discuss this matter further, please don't hesitate to reach out. Thank you for your attention.<br><br>Best Regards<br>Discover Xi Support Team<br><br>
+</li>
+<li>Soft deleting the instance
+<ol>
+<li>Ensuring that the customer cannot access it (via the routing plugin)</li>
+<li>Suspending MySight/Tableau</li>
+<li>Checking last login dates</li>
+<li>Updating Globis</li>
+</ol>
+</li>
+<li>Raising a SaaS CR in order to perform backend cleaning</li>
+<li>⚠️⚠️⚠️ <strong>It is mandatory that VP approval is sought at this stage, so please send a side conversation to <a href="mailto:aditi.garg@trilogy.com">aditi.garg@trilogy.com</a> before moving forward⚠️⚠️⚠️ </strong>
+</li>
+<li>Doing the final deletion (after 30 days) - Tableau, Okta (if applicable), Globis, EFSSFTP</li>
+<li>Informing Sales of the deletion</li>
+</ol>
+<h2 id="header-3">Steps to Follow</h2>
+<ol>
+<li>First of all, we need to make sure that the support ticket contains the <strong>minimum</strong> information below:
+<ul>
+<li>Name of installation: [ab1234].customervoice360.com (can be found in Globis)</li>
+<li>Time for deletion: immediately or <span class="wysiwyg-underline"><strong>at a specific date</strong></span>
+<ul>
+<li>If the above information is missing, you need to <strong>confirm it with the ticket requester</strong>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Similar to <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20714568035218" target="_blank" rel="noopener noreferrer">Provisioning new DXI installations (WIP)</a>, we have a template that can be used in order to fulfill this task.
+<ol>
+<li>The template is attached to this article, and it also contains instructions for how to fulfill each action</li>
+<li>Steps in the template that have been done, are marked with an <strong>x</strong>, and steps where nothing had to be done except checking, get an <strong>o</strong>.</li>
+<li>Replace all <code>{{PLACEHOLDER}}</code> entries with their relevant real counterparts, and this will result in having all the information outlined and just ready to copy/paste.</li>
+</ol>
+</li>
+<li>Once you take any actions, save the changes made to the txt file (and rename it to <strong>EFS_Deletion_Checklist_ticketID.txt</strong>); this is very important, since this will likely go through the hands of multiple agents through the entire lifecycle of the ticket</li>
+<li>In the end, inform the requester that the installation has been purged (a template for this is also found in the TXT file)</li>
+</ol>
+<h2 id="header-7">Reactivating soft-deleted installations</h2>
+<p>In some instances,

@@ -1,0 +1,50 @@
+ Installation check &gt;&gt; select "qb only:: Checks for installation requirements" and run the check</p></li>
+<li>
+<p>You can ignore the following errors and warnings</p>
+<ul><li><p>see <a href="https://it.globalpark.de/twiki/bin/view/Support/TsProcusInstallations#Installation_check_Ignoreable_er">Ignoreable errors and warnings</a></p></li></ul>
+</li>
+<li>
+<p>You also can run the installation check from the console</p>
+<pre><code class="language-text">d /nfs/opst/[installation URL]/htdocs
+
+cd www
+
+php support/test_installation.php --console</code></pre>
+</li>
+</ul>
+</li>
+</ul><h2 id="header-18">Upgrade an installation</h2><p>Basically an upgrade of an installation on procus4 includes the same steps as an update (see above).<br>However, there are several things to consider:</p><ul>
+<li><p>Before upgrading an installation you should update it to the latest version of the current installed main version first (e.g. from EFS_10.9_123 to EFS_10.9_456)</p></li>
+<li><p>If your installation is old (e.g. EFS_10.7) and you would like to upgrade it to the latest EFS version (e.g. EFS_11.0 specifically e.g. EFS_11.0_0160), you can not simply upgrade from 10.7 to 11.0 in one step but have to do upgrades to each version in between, i.e. from latest 10.7 to latest 10.8 to latest 10.9 to latest 11.0</p></li>
+</ul><h2 id="header-19">Installation check - Ignoreable errors and warnings</h2><p> The following errors and warnings of the installation check can be ignored:</p><ul>
+<li>
+<p>Cron Job errors (because crons jobs are not executed on procus3):</p>
+<pre><code class="language-text">Error: SnailMail cron job did not run in the last 15 minute
+Error: jobmaker cron job did not run in the last 25 minutes
+Error: dbreportstamp cron job did not run in the last 25 hours</code></pre>
+</li>
+<li>
+<p>Errors regarding memcache and balancer (none of both is in place on procus3)</p>
+<pre><code class="language-text">Error: could not connect to any memcache server
+Warning: skipping result test: memcache is not active -&gt; If you like, you can change config variable "balancer_url" to "false". The errors will not be shown then.</code></pre>
+</li>
+<li>
+<p>Other errors</p>
+<pre><code class="language-text">Error: Value for config variable 'tmp_path_export' is not specified. -&gt; If you like, you can set config variable 'tmp_path_export' to the same path as 'tmp_path'. The error will not be shown then.</code></pre>
+</li>
+<li>
+<p>Proxy Errors on procus5 frontends because there is no proxy on procus 5, only pn procus4</p>
+<pre><code class="language-text">Unable to Connect to tcp://proxy:8080. Error #111: Connection refused </code></pre>
+</li>
+<li>
+<p>Warnings</p>
+<pre><code class="language-text">Warning: Please consider if '/data/nfs/opst/mz6587.pc.qb-feedback.com/htdocs/conf/../panelwebsite/images/editor/tiny_mce.js' should be deleted.
+Warning: Please consider if file/s 
+/data/nfs/opst/mz6587.pc.qb-feedback.com/htdocs/conf/../panelwebsite/__templates/16/js_default.tpl
+/data/nfs/opst/mz6587.pc.qb-feedback.com/htdocs/conf/../panelwebsite/__templates/8/js_default.tpl
+/data/nfs/opst/mz6587.pc.qb-feedback.com/htdocs/conf/../panelwebsite/__templates/11/js_default.tpl
+/data/nfs/opst/mz6587.pc.qb-feedback.com/htdocs/conf/../panelwebsite/__templates/14/js_default.tpl
+/data/nfs/opst/mz6587.pc.qb-feedback.com/htdocs/conf/../panelwebsite/__templates/13/js_default.tpl
+should be deleted </code></pre>
+</li>
+</ul><p></p>

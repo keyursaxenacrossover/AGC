@@ -1,0 +1,47 @@
+<p><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p>This article explains the difference between local time and UTC/GMT in the EFS admin interface and general Timezone handling. It covers how time zones are displayed in various sections of the system and how to configure personal time zone settings.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>EFS displays time information in different parts of the system. This guide clarifies which time zone is used in each section and how to customize the display of time.</p>
+<ul>
+<li><a href="#local_time">Local Time</a></li>
+<li><a href="#gmt_utc">GMT/UTC</a></li>
+<li><a href="#h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</a></li>
+</ul>
+<h2 id="local_time">Local Time</h2>
+<p>"Local Time" in EFS refers to the time zone set for the EFS Admin Account. This can be configured in the system settings.</p>
+<h3 id="setting_local_time">Setting Local Time</h3>
+<p>To set your local time zone:</p>
+<ol>
+<li>Go to <strong>System &gt; Users &gt; Own User Account &gt; Personal Preferences &gt; Common Settings</strong>
+</li>
+<li>Look for the "Time Zone" option</li>
+<li>Select your preferred time zone</li>
+</ol>
+<p>You can view the current local time at all times by clicking on "System Info" in the left menu of the EFS Admin area.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015069133074" width="567" height="285"></p>
+<h3 id="admin_log">Admin Log</h3>
+<p>The Admin Log and Administration displays times in LOCAL TIME, according to the admin's personal settings.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015039111442" width="504" height="137"></p>
+<h3 id="statistics_detailed_view">Statistics Detailed View</h3>
+<p>The Detailed View in Statistics displays times in LOCAL TIME as well.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015039113746" width="510" height="153"></p>
+<p>It's important to note that all date and time information in the EFS Admin area is converted to the corresponding local time. However, the <strong>default setting</strong> is UTC/GMT, so if not changed, it may appear that GMT is being used throughout the system.</p>
+<h2 id="gmt_utc">GMT/UTC</h2>
+<p>While UTC (Coordinated Universal Time) is the more correct term, EFS uses GMT (Greenwich Mean Time) in its interface. For practical purposes in EFS, <strong>GMT and UTC can be considered equivalent.</strong></p>
+<h3 id="job_list_export">Job List/Result Export</h3>
+<p>In Exports, fields such as datetime, date_of_last_access, and date_of_first_mail are displayed in GMT/UTC.</p>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq_default_time">What is the default time zone in EFS?</h3>
+<p>The default time zone in EFS is UTC/GMT. If you haven't changed your personal settings, all times will appear in UTC/GMT.</p>
+<h3 id="faq_change_time">How can I change the displayed time zone in EFS?</h3>
+<p>You can change the displayed time zone by updating your personal settings in the EFS Admin area. Go to <strong>System &gt; Users &gt; Own User Account &gt; Personal Preferences &gt; Common Settings</strong> and select your preferred time zone.</p>
+<h3 id="faq_utc_gmt">What's the difference between UTC and GMT in EFS?</h3>
+<p>For practical purposes in EFS, there is no difference between UTC and GMT. Although UTC is the more technically correct term, EFS uses GMT in its interface.</p>
+<h3 id="h_01J3Q7CXMWD20SMRB0W50PRJWM">If no time zone is stored for the recipient and the checkbox "Send from" uses the recipient's time zone" is not checked, what time timezone will be used?</h3>
+<p>All participants are always assigned to a time zone. If nothing was defined during import, the time zone is Universal Time (UTC/GMT).</p>
+<h3 id="h_01J3Q7EQQ9EV4M5S335NE0Z2CA">If I schedule an email for delivery, will it be sent according to UTC or my local time?</h3>
+<p>All times within EFS are based on the time zone set by the admin user, unless GMT/UTC is explicitly specified mentioned. So, if you already have a timezone setup, it will be your local time.</p>
+<h3 id="h_01J3Q7MNQCTNVPKMZPR0Z3K0HZ">What time zone is used in filters?</h3>
+<p>For example, if you set a grouping filter that refers to the system variables like #PREVIOUS_DAY_END# and #CURRENT_DAY_END# and put it

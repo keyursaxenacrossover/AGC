@@ -1,0 +1,53 @@
+<h1 id="h_01J7XM1DD5TGVKWF5NH5F54R8E">Overview</h1>
+<p>The customer Payback has a yearly (or bi-yearly) activity where they send large numbers of emails for their surveys. For example:</p>
+<p>The survey is expected to involve 150,000 participants and is scheduled to run from 23.09.2024 to 31.10.2024.</p>
+<p>Payback will request for utilization charts for the invitation and reminder days, which can span for long periods of time (1 month), and they need that information on a <strong>daily basis</strong>. This article contains a runbook for quickly going through the task.</p>
+<p>Sample ticket/s:</p>
+<ul>
+<li>Legacy Tivian ticket: <a href="https://tivian.atlassian.net/browse/TIVI-35150">https://tivian.atlassian.net/browse/TIVI-35150</a>
+</li>
+<li>ZD ticket: <a href="https://central-supportdesk.zendesk.com/agent/tickets/4470152">https://central-supportdesk.zendesk.com/agent/tickets/4470152</a> </li>
+</ul>
+<h1 id="h_01J7XM1DD532M7DC3G8Y0PPH3Q">Solution</h1>
+<ol>
+<li>Customers first need to provide us with the information for <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20304775281554-Handling-High-Usage-Announcements-from-Customers">Handling High Usage Announcements from Customers</a>
+<ol>
+<li>They will most of the time raise a ticket with this information already, and in advance (maybe 2-3 weeks in advance)</li>
+</ol>
+</li>
+<li>Once that is done, we need to <strong>raise a SaaS CR</strong> to make sure that the Payback instances are properly scaled (example: <a href="https://trilogy-eng.atlassian.net/browse/DXI-103">https://trilogy-eng.atlassian.net/browse/DXI-103</a>)</li>
+<li>Once confirmed:
+<ol>
+<li>If the due date of the survey is less than 1 week ahead, place the ticket on <strong>hold</strong> until the <strong>2nd day of the survey</strong>
+</li>
+<li>For this process to work, make sure that the ticket is of <strong>Urgent</strong> priority.</li>
+</ol>
+</li>
+<li>When the ticket comes off hold:
+<ol>
+<li>Navigate to the dedicated Payback Grafana dashboard: <a href="https://grafana.prod-de-03.customervoice360.com/d/cdrxcub8bo64gc/payback-meera?orgId=1">https://grafana.prod-de-03.customervoice360.com/d/cdrxcub8bo64gc/payback-meera?orgId=1</a> </li>
+<li>Take screenshots of the graphs, preferably splitting them into:
+<ol>
+<li>
+<strong>Webserver/FPM pool (nginx, HPA NGINX, FPM Pool)</strong><br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21403640785682" width="238" height="195">
+</li>
+<li>
+<strong>Database</strong><br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21403653714194" width="247" height="193">
+</li>
+<li>Send the customer the obtained screenshots, and <strong>place on hold for 24 hours</strong> for the process to repeat the next day</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h1 id="h_01J7XNGMQ1QK02EJZVDB8WMH1Y">Graph Explanations</h1>
+<ul>
+<li>Of particular interest here are the two web server/FPM pool panels <strong>HPA NGINX</strong> and <strong>HPA FPMPOOL. </strong>As can be seen in these two panels, the current number (yellow line), which corresponds to the minimum number so far (would be a dashed green line, but is covered by the yellow one) of 12 pods each, is sufficient to process the corresponding requests at all times.</li>
+<li>If there were more requests or possible peaks, there would still be a lot of room for improvement, as theoretically up to 40 pods are available.</li>
+<li>This is directly related to the performance of the database server, which, however, if you look at the <strong>CPU Utilization</strong> panel, even at times when the number of requests (Panel: "Number of parallel requests over all pods") and thus also the number of database connections (Panel: "Database Connections") or the associated network traffic (Panel: "Network Receive/Transmit Throughput Average"), could be processed at all times.
+<ul>
+<li>This is ultimately reflected in the fast access times: <strong>AVG Request Time</strong>.</li>
+</ul>
+</li>
+<li>The <strong>Total fpmpool Processes (linear)</strong> and <strong>fpmpool connection rate per Pod</strong> panels provide information on how many active processes were processed simultaneously by the Pod and the speed at which processes were established, but here too there is still room for improvement until the theoretical limit is reached.</li>
+<li>The <strong>Database Connection Peaks

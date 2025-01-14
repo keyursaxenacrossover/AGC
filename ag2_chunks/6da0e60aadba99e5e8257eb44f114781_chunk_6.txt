@@ -1,0 +1,43 @@
+, can now queue them for a specific time in the future, while observing the panelist’s time zone. Send mail, Add to sample and Send survey invitation mail have now the option “When to send”. This option allows the panel administrator to select an hour in panelist's time zone, when the email shall be sent. For panelists, whose time to send the mail has already passed, will have the mail queued for the <em>next day </em>during the selected hour. <em>Default behaviour is to send the mail immediately at run time of the update rule.</em></p>
+<h2 id="header-58"><strong>Data Voyager</strong></h2>
+<h3 id="header-60"><strong>TIVIAN Access</strong></h3>
+<p><em>TIVIAN Access</em> can be used to access the <em>Data Voyager</em>. Once TIVIAN Access has been activated, the e-mail addresses of users cannot be changed, nor can passwords be created.</p>
+<h3 id="header-61"><strong>Layout Improvements</strong></h3>
+<p>In addition to the layout improvements that have been made in this release, the current version number of the <em>Data Voyager </em>you are using is now displayed below the TIVIAN logo.</p>
+<h3 id="header-62"><strong>The new Dimension Tree based on EFS Categories</strong></h3>
+<p>As of this release, you can choose between creating a dimension tree based on the survey structure and creating a dimension tree based on the <em>EFS</em> categories. The dimension tree based on <em>EFS </em>categories uses the following structure:</p>
+<ul>
+<li>
+<p>Meta-dimension (guide name/project name)</p>
+</li>
+<li>
+<p>Dimension (category name)</p>
+</li>
+<li>
+<p>Items: Questions that are assigned to the category</p>
+</li>
+</ul>
+<p>A dimension is created for each category used in the survey</p>
+<p>By default, the creation of a dimension tree based on the survey structure is activated.</p>
+<h3 id="header-63"><strong>The US Guide Loader</strong></h3>
+<p>The <em>US-Guide Loader</em>, available now, allows you to create <em>US-Guides</em> as DV projects to create reports and dashboards for US-Guide processes.</p>
+<h3 id="header-64"><strong>New Column: Data Source ID</strong></h3>
+<p>In order to be able to trace, in which database the imported <em>EFS</em> project has been stored, the project management table has a new column that lists the Data Source ID of the EFS projects.</p>"><strong>The new Dimension Tree based on EFS Categories</strong></h3>
+<p>As of this release, you can choose between creating a dimension tree based on the survey structure and creating a dimension tree based on the <em>EFS</em> categories. The dimension tree based on <em>EFS </em>categories uses the following structure:</p>
+<ul>
+<li>
+<p>Meta-dimension (guide name/project name)</p>
+</li>
+<li>
+<p>Dimension (category name)</p>
+</li>
+<li>
+<p>Items: Questions that are assigned to the category</p>
+</li>
+</ul>
+<p>A dimension is created for each category used in the survey</p>
+<p>By default, the creation of a dimension tree based on the survey structure is activated.</p>
+<h3 id="header-63"><strong>The US Guide Loader</strong></h3>
+<p>The <em>US-Guide Loader</em>, available now, allows you to create <em>US-Guides</em> as DV projects to create reports and dashboards for US-Guide processes.</p>
+<h3 id="header-64"><strong>New Column: Data Source ID</strong></h3>
+<p>In order to be able to trace, in which database the imported <em>EFS</em> project has been stored, the project management table has a new column that lists the Data Source ID of the EFS projects.</p>

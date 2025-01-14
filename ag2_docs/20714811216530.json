@@ -1,0 +1,30 @@
+{
+    "id": 20714811216530,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/20714811216530.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20714811216530-EFS-Maintenances",
+    "author_id": 369584192734,
+    "comments_disabled": false,
+    "draft": true,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20714530860562,
+    "created_at": "2024-08-12T17:02:07Z",
+    "updated_at": "2024-08-12T17:02:19Z",
+    "name": "EFS Maintenances",
+    "title": "EFS Maintenances",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-08-12T17:02:19Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075294,
+    "content_tag_ids": [],
+    "label_names": [],
+    "body": "<p><b>Original Confluence URL:</b> <a href=\"https://qbdocs.atlassian.net/wiki/spaces/TS/pages/2200961029\">https://qbdocs.atlassian.net/wiki/spaces/TS/pages/2200961029</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>\n\n<h2>Table of Contents</h2>\n<ul class=\"toc\">\n<ul>\n<li><a href=\"#header-1\">Set Maintenance AWS</a></li>\n<li><a href=\"#header-2\">Datagroup Maintenance</a></li>\n<ul>\n<li><a href=\"#header-4\">Set Maintenance DG</a></li>\n<li><a href=\"#header-5\">Custom Maintenance page:</a></li>\n</ul>\n</ul>\n</ul><ac:parameter ac:name=\"minLevel\">1</ac:parameter><ac:parameter ac:name=\"maxLevel\">7</ac:parameter><h1 id=\"header-1\">Set Maintenance AWS</h1><p>EFS Maintenance schalten:<br><a data-card-appearance=\"inline\" href=\"https://qbdocs.atlassian.net/wiki/spaces/EN/pages/2095087844/Healself#Uninterrupted-rollout-(update/upgrade)\">https://qbdocs.atlassian.net/wiki/spaces/EN/pages/2095087844/Healself#Uninterrupted-rollout-(update/upgrade)</a> <br>kurz:</p><pre><code class=\"language-bash\">cd www\nphp support/config.php set maintenance_mode false</code></pre><p>mit <code>set maintenance_mode true</code> macht man sie an.</p><p></p><p></p><h1 id=\"header-2\">Datagroup Maintenance </h1><h2 id=\"header-4\">Set Maintenance DG</h2><pre><code class=\"language-text\">ssh salt\ncd /opt/pdp/saltserver/scripts</code></pre><h2 id=\"header-5\">Custom Maintenance page:</h2><p><a href=\"https://m.gpefs.com/?site=www.kundenwerkstatt.ergo.de\">https://m.gpefs.com/?from=</a>ab1234.customervoice360.com</p><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20714863084562\" alt=\"maintenance.png\"><p>Maintenance pages can be configured on bre101v and bre102v.</p><p><strong><span style=\"color: rgb(255,86,48);\">CAUTION: all changes have to be made on both servers, there is no automatic synchronization!</span></strong></p><ol>\n<li><p>ssh bre101v (bre102v)</p></li>\n<li><p>copy from default template and customize it<br><code>cd /opt/pdp/sorryserver/htdocs/maintenance/templates</code><br><code>sudo cp defaultForm_maintenance.tpl [INSTALLATIONNAME]_maintenance.tpl</code><br><code>sudo vi [TEMPLATENAME]_maintenance.tpl</code></p></li>\n<li>\n<p>configure and add new template to config.inc.php<br><code>cd /opt/pdp/sorryserver/htdocs/maintenance/conf</code><br><code>sudo vi config.inc.php</code><br>add new entry at the end, eg:<br><code>),</code><br><code>'[INSTALLATIONNAME].customervoice360.com' =&gt; array(     </code><br><code>'form'         =&gt; '[TEMPLATENAME]_maintenance.tpl',     </code><br><code>'confirmation' =&gt; 'defaultConfirmation.tpl',     </code><br><code>'mail'         =&gt; 'defaultMail.tpl',     </code><br><code>'subject'      =&gt; 'Maintenance (#host#)' )</code></p>\n<p><code>);</code></p>\n</li>\n<li><p><strong><span style=\"color: rgb(255,86,48);\">make sure NOT TO FORGET ANY ‘,' or ')’</span></strong></p></li>\n<li><p>Run php -l on all changed configs!</p></li>\n<li><p>Prev<ac:inline-comment-marker ac:ref=\"31a8c81d-ffd4-40e3-b91d-30addc14d033\">iew maintenance page like so:</ac:inline-comment-marker></p></li>\n</ol><p>https://m.gpefs.com/?from=ab1234.customervoice360.com</p><p></p><p></p><p>New AWS Maintenance page will be customizable with <ac:inline-comment-marker ac:ref=\"c670a044-98af-4851-899f-024f054f3a53\">21.1</ac:inline-comment-marker> from within EFS</p><p>until then it’s fixed to look like this:</p><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20714847823634\" alt=\"Screenshot 2021-11-11 135918.png\"><p></p>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

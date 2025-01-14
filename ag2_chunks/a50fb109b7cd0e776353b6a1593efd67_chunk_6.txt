@@ -1,0 +1,87 @@
+ your evaluation.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>You will find the import function in the <strong>Extras</strong> → <strong>Import external data</strong> menu. In the following, the import will be explained in detail.</p>
+</li>
+<li>
+<p>Upon completion of the import, the data will be available on the <strong>External</strong> tab of the sources window.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Advice for your planning</strong></p>
+<p class="wysiwyg-text-align-justify">The following advice will help you in preparing your import:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>You can import up to 100 additional variables per report. These variables will be created anew. It is not possible to import any values for already existing variables, neither for <em>EFS</em> variables nor for previously imported external data.</p>
+</li>
+<li>
+<p>When importing, you can specify whether the values of the imported variables shall be treated as codes or as text. External variables of the “code” data type may have up to 25 answer options. If you have to import variables with a greater number of answer options, you may alternatively declare those variables as being of the "text" data type: The data will then be displayed in the report as open-ended answers. They cannot be used for crossbreaks, calculations, etc.</p>
+</li>
+<li>
+<p>The usual missing values (“-77”, “-66”, “-99”) can be used in the import file: They will be treated as user-defined missings in the report.</p>
+</li>
+<li>
+<p>If the imported variable names are displayed in the report, the labels can be subsequently adapted via the table editor. It is not possible to subsequently edit the imported values or the data types.</p>
+</li>
+<li>
+<p>When importing answers to multiple response questions, it may make sense to use the recoding function to combine multiple variables into one question or to display the 0/1 encoding (“selected” / “not selected”) as desired.</p>
+</li>
+<li>
+<p>If an import file contains two columns with identical labels or if you import the same variable twice, then two new variables will be created. Internally, <em>EFS</em> will assign unique names to all columns of the import file, there will be no duplicates check.</p>
+</li>
+<li>
+<p>When performing multiple imports, a dedicated, dated file for each import operation will be created on the <strong>External</strong> tab, containing all variables imported within this operation.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Creating an import file</strong></p>
+<p class="wysiwyg-text-align-justify">The import file should be structured as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The import file should be in CSV or Excel format.</p>
+</li>
+<li>
+<p>One column is used for each variable to be imported.</p>
+</li>
+<li>
+<p>A column should contain the consecutive numbers of the participants (“lfdn”) so that the imported data records can be linked to the data records in <em>EFS Reporting+</em>.</p>
+</li>
+<li>
+<p>The first row should contain the labels of the variables.</p>
+</li>
+<li>
+<p>The following rows contain the external data records of the participants.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Performing an import</strong></p>
+<p class="wysiwyg-text-align-justify">Please proceed as follows:</p>
+<ul>
+<li class="wysiwyg-text-align-justify">
+<p>Please make sure that your report contains all current data records. If not, you can trigger an update via <strong>Extras</strong> →<strong> Data update</strong>.</p>
+</li>
+<li class="wysiwyg-text-align-justify">
+<p>Open the menu <strong>Extras</strong> → <strong>Import external data</strong>.</p>
+</li>
+<li class="wysiwyg-text-align-justify">
+<p>Select the appropriate character set.</p>
+</li>
+<li class="wysiwyg-text-align-justify">
+<p>Use the <strong>Browse</strong> function to select the import file on your PC.</p>
+</li>
+<li class="wysiwyg-text-align-justify">
+<p>To start the import process click on <strong>Execute</strong>.</p>
+</li>
+<li class="wysiwyg-text-align-justify">
+<p>Specify which column of the import file contains the consecutive numbers of the participants (“lfdn”).</p>
+</li>
+<li class="wysiwyg-text-align-justify">
+<p>Assign the appropriate data types to the imported variables.</p>
+<ul>
+<li>
+<p>Code (integer): This data type should only be selected if the values of the variables are as suitable for calculation as are the codes of <em>EFS</em>. Upon<br>completion of the import, the values will be available for calculations in <em>EFS Reporting+</em>.</p>
+</li>
+<li>
+<p>Text: The values will be stored in the database as strings, i.e., they will be displayed as open-ended answers and will not be available for crossbreaks, calculations, etc.</p>
+</li>
+</ul>
+</li>
+<li class="wysiwyg-text-align-justify">
+<p>Confirm

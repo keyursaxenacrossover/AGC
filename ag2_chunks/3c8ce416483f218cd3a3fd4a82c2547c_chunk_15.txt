@@ -1,0 +1,61 @@
+1245px;">
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify"><span style="color: #172b4d;">To use app-based two-factor authentication, a compatible authentication app is required. </span></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The activation and deactivation of two-factor authentication is technically implemented via the "Change two-factor authentication" page module. When you create a new website, the page module is included on the "My details" page. For websites created before EFS 24.1, the module must be added manually. Further information can be found here.</p>
+</li>
+<li>
+<p>If individual customizations have been made to the template tpl_errors_and_messages.tpl of your panel website, it is recommended to adapt the page template. Further information can be found here.</p>
+</li>
+<li>
+<p>Two-factor authentication has been implemented for the current Responsive layout of the Panel website. If you would like to use it for a website with an older layout, you can find more information here.</p>
+</li>
+</ul>
+<h3 id="manually-adding-the-change-two-factor-authentication-page-module" class="wysiwyg-text-align-justify">Manually adding the "Change two-factor authentication" page module</h3>
+<p class="wysiwyg-text-align-justify">Newly created websites that are based on a current layout (Portal (Responsive v2) and Community full scope (Responsive v2)) are already set up so that two-factor authentication can be used for them. For websites that were created before version 24.1, all required red templates and placeholders were added as part of the upgrade process to the new release, but the "Change two-factor authentication" page module must be added manually.</p>
+<p class="wysiwyg-text-align-justify">To do this, proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>In the website editor, click on the "My details" page and then on <strong>+ Page module</strong>.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21018333540754" alt="image2024-5-10_10-56-49.png"></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Under <strong>Type</strong>, select the <strong>Change two-factor authentication</strong> option.</p>
+</li>
+<li>
+<p>Under <strong>Reference name for template</strong>, enter the desired reference name.</p>
+</li>
+<li>
+<p>Under <strong>Module template</strong>, select the option <strong>func-change_2fa</strong>.</p>
+</li>
+<li>
+<p>Under <strong>Position</strong>, select the desired position for the new module.</p>
+</li>
+<li>
+<p>Click on<strong> Save</strong>.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21018333537298" alt="image2024-5-10_11-6-17.png"></p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h3 id="adapting-the-template" class="wysiwyg-text-align-justify"><strong>Adapting the template</strong></h3>
+<p class="wysiwyg-text-align-justify">If individual customizations have been made to the template tpl_errors_and_messages.tpl of your Panel website, it is recommended to adjust the page template. This improves the display of the success messages that are displayed at the top of the page when activating, deactivating, or updating two-factor authentication. To do this, proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Under <strong>Website &gt; Website Editor</strong>, click on the <strong>Templates</strong> tab.</p>
+</li>
+<li>
+<p>Select <strong>tpl_errors_and_messages.tpl</strong>.</p>
+</li>
+<li>
+<p>Change line 3 from</p>
+</li>
+</ul>
+<pre class="wysiwyg-text-align-justify"><span class="token tag token tag token punctuation" style="color-scheme: unset; forced-color-adjust: unset; mask: unset; math-depth: unset; position: unset; position-anchor: unset; text-size-adjust: unset; appearance: unset; color: #172b4d; font-family: SFMono-Medium, ' SF Mono' , ' Segoe UI Mono' , ' Roboto Mono' , ' Ubuntu Mono' , Menlo, Consolas, Courier, monospace; font-feature-settings: unset; font-kerning: unset; font-optical-sizing: unset; font-palette: unset; font-size: 14px; font-size-adjust: unset; font-stretch: unset; font-style: normal; font-synthesis: unset; font-variant-alternates: unset; font-variant-caps: normal; font-variant-east-asian: unset; font-variant-ligatures: normal; font-variant-numeric: unset; font-variant-position: unset; font-variation-settings: unset; font-weight: 400; inset-area: unset; text-orientation: unset; text-rendering: unset;

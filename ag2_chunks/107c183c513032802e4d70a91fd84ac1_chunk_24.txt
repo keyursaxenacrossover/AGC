@@ -1,0 +1,57 @@
+use the<strong> Delete</strong> function of the centralized user management.</p>
+</li>
+<li>
+<p><strong>Delete</strong>: This function is only available in the centralized user management. The desired users are deleted from the system following a security prompt. Please note: Users that are allocated to a reshipment point or a logistics site cannot be deleted. You have to assign the responsibility to another user first.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Actions for editing all or selected users</strong></p>
+<p class="wysiwyg-text-align-justify">The following actions can be applied to selected or all users:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Mail users</strong>: This function allows you to contact the selected users via e-mail. How you can enable your users to e-mail other users in turn.</p>
+</li>
+<li>
+<p><strong>Generate passwords</strong>: This function allows you to change the selected users’ passwords or to generate new ones. If you want users to be able to use this function, you need to assign the right <em>manager_set_pw</em> to the appropriate roles.</p>
+</li>
+<li>
+<p><strong>Reset passwords</strong>: This function allows you to reset the selected users’ passwords to the initial password. If you want users to be able to use this function, you need to assign the right <em>manager_reset_pw</em> to the appropriate roles.</p>
+</li>
+<li>
+<p><strong>Lock accounts</strong>: The locked users can no longer log into the <em>Org Processor</em>. This function is only available to the project management in the centralized user management.</p>
+</li>
+<li>
+<p><strong>Unlock accounts</strong>: This function is only available to the project management in the centralized user management.</p>
+</li>
+<li>
+<p><strong>Export users</strong>: This function allows you to download the account data of the selected users. This can be useful, for example, if you want to communicate not just via email but also via regular mail. Thus you can download the stored address data. If you want users to be able to use this function, you need to assign the right <em>manager_export</em> to the appropriate roles. If the password is also to be included in the export, this requires the right <em>manager_export_with_pw</em>.</p>
+</li>
+<li>
+<p><strong>Delete user allocations</strong>: This function is located in the unit-specific user management. The function removes the allocation of the users to the current unit. The user accounts will remain intact. Please note: The user accounts are not deleted, the users can still log into the Org Processor and see at least the start page, and maybe also other units that they have not allocated to yet. If you want to prevent this, use the action “Lock accounts” (see above). If you want to remove users from the system completely,_use the <strong>Delete</strong> function of the centralized user management. If you want users to be able to use this function, you need to assign the right manager_alloc to the appropriate roles.</p>
+</li>
+<li>
+<p><strong>Delete</strong>: This function is only available in the centralized user management. The desired users are deleted from the system following a security prompt. Please note: Users that are allocated to a reshipment point or a logistics site cannot be deleted. You have to assign the responsibility to another user first.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">These actions are located in the drop-down list below the user list. Select the desired users by ticking the checkboxes in the “Actions” column. Alternatively, you can also use the options “Mark all users on this page” or “Mark all found users”. Then specify the desired action and confirm by clicking on<strong> Execute</strong>.</p>
+<h3 id="creating-users" class="wysiwyg-text-align-justify"><strong>Creating users</strong></h3>
+<p class="wysiwyg-text-align-justify">As a project manager, you can both add new users individually and import them.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Manual creation is useful, for example, if you want to subsequently add individual persons.</p>
+</li>
+<li>
+<p>Otherwise, using the import function is more effective in most cases.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Depending on whether you work in the centralized user management or a particular unit, the process may be slightly different. If you work in centralized user management, you have to explicitly allocate the users to one or several units, whereas the allocation is done automatically in unit-specific user management. The allocations can also be imported.</p>
+<p class="wysiwyg-text-align-justify"><strong>Before you start</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The system is designed for up to 10,000 users. With higher numbers, depending on the circumstances, you might experience performance issues.</p>
+</li>
+<li>
+<p>If you partly delegate the creation of user accounts to users, please note that your users have no access to the import function but have to create all user accounts manually.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Creating users manually in the centralized user management</strong></p>
+<p class="wysiwyg-text-align-justify">Creating user accounts from the centralized user management

@@ -1,0 +1,47 @@
+g-text-align-justify">In general, standard variables cannot be deleted. Answer categories and user-defined variables can be deleted. However, this function should be used with care.</p>
+<p class="wysiwyg-text-align-justify"><strong>Deleting user-defined variables</strong></p>
+<p class="wysiwyg-text-align-justify">Please note:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>If participant administration already contains data records, the contents of the respective variable will be irretrievably deleted from all participant records containing the variable.</p>
+</li>
+<li>
+<p>If participant administration is still empty, deleting the variable may have an impact, for example, on import data records that have already been prepared or on<br>filters in the questionnaire that have already been configured. Please check all functionalities to make sure that no dependency has been overlooked.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Deleting answer categories</strong></p>
+<p class="wysiwyg-text-align-justify">Please note:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>If participant administration already contains data records, the respective answer category will be recoded to “-77” in all participant records containing the current variable with the code of the answer category.</p>
+</li>
+<li>
+<p>If participant administration is still empty, deleting the answer category may have an impact, for example, on import data records that have already been prepared or on filters in the questionnaire that have already been configured. Please check all functionalities that depend on the recoded code.</p>
+</li>
+<li>
+<p>Once participant administration contains data, you should avoid deleting variables or answer categories entirely, if possible.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Please be very careful in making use of the possibility to delete variables or answer categories.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="further-information" class="wysiwyg-text-align-justify">Further Information</h2>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>It is recommended to use not more than 200 participant variables. First, the overall number of variables is limited (7,000 variables per project). Second, the variable number affects the performance of the project.</p>
+</li>
+<li>
+<p>Often you need to be able to select specific participant groups in a targeted manner, e.g. to successively send invitation mails to the various departments of a company or to be able to split according to particular characteristics such as customer type, for expample, in the evaluation process. Consider precisely which subsets you will need in the course of the project and in the evaluation process and how they can be optimally represented in the participant administration. Then create the additional required variables.</p>
+</li>
+</ul>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863" class="wysiwyg-text-align-justify">FAQ</h1>
+<h3 id="h_01HGKSMPRVM8JXQX3QJXD4KCNU" class="wysiwyg-text-align-justify">How many participant variables should I use in a project?</h3>
+<p class="wysiwyg-text-align-justify">It is recommended to use no more than 200 participant variables per project. This limit helps maintain project performance and stays within the overall limit of 7,000 variables per project.</p>
+<h3 id="h_01HGKSMPRVY8JXQX3QJXD4KCNV" class="wysiwyg-text-align-justify">How can I optimize participant variables for data analysis?</h3>
+<p class="wysiwyg-text-align-justify">Consider which subsets of data you will need during the project and evaluation process. Create variables that allow you to select specific participant groups, such as departments or customer types, to facilitate targeted analysis and communication.</p> customer type, for expample, in the evaluation process. Consider precisely which subsets you will need in the course of the project and in the evaluation process and how they can be optimally represented in the participant administration. Then create the additional required variables.</p>
+</li>
+</ul>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863" class="wysiwyg-text-align-justify">FAQ</h1>
+<h3 id="h_01HGKSMPRVM8JXQX3QJXD4KCNU" class="wysiwyg-text-align-justify">How many participant variables should I use in a project?</h3>
+<p class="wysiwyg-text-align-justify">It is recommended to use no more than 200 participant variables per project. This limit helps maintain project performance and stays within the overall limit of 7,000 variables per project.</p>
+<h3 id="h_01HGKSMPRVY8JXQX3QJXD4KCNV" class="wysiwyg-text-align-justify">How can I optimize participant variables for data analysis?</h3>
+<p class="wysiwyg-text-align-justify">Consider which subsets of data you will need during the project and evaluation process. Create variables that allow you to select specific participant groups, such as departments or customer types, to facilitate targeted analysis and communication.</p>

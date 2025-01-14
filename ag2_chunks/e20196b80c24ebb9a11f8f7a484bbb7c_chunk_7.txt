@@ -1,0 +1,116 @@
+_000n)</p>
+</li>
+<li>
+<p>System variables: quota, language, output_mode, javascript, flash, user_agent. (The availability depends on project type, project configuration, activated extensions, etc.)</p>
+</li>
+<li>
+<p>The variable quota_assignment, in conjunction with the link "contains", can be used as a filter.</p>
+</li>
+<li>
+<p>List element number</p>
+</li>
+<li>
+<p>Initial size of the list being used: Refers to the size of the list after checking the inclusion conditions for the individual elements <em>(see Dynamic lists)</em>. The possibilities for further query-specific restrictions have not been taken into account.</p>
+</li>
+<li>
+<p>Loop number: Number of times a loop runs. Initially, this filter option does not allocate to which list element each loop cycle will relate. The number refers to the position of the cycle in the dynamically generated sequence.</p>
+</li>
+<li>
+<p>For personalized projects: Participant variables.</p>
+</li>
+<li>
+<p>For Employee surveys: Org Processor data.</p>
+<ul>
+<li>
+<p>org_code_structureID (Primary Structure.OrgCodePreAllocation): Unit in the named structure to which the participants have been allocated. E.g. org_- code_1 is the unit of the participants in the primary view (structure ID = 1).</p>
+</li>
+<li>
+<p>org_allocation_structureID (Primary Structure.OrgCodeSelfAllocation): Unit in the named structure to which the participants have allocated themselves. E.g. org_allocation_1 is the self-allocated unit of the participants in the primary view (structure ID = 1) (Please note that self-allocation requires special programming.)</p>
+</li>
+<li>
+<p>org_function_structureID (Primary Structure.OrgFunction): Function of a participant in the named structure. E.g. org_function_1 is the function of the participant in the primary structure (Struktur-ID = 1).</p>
+</li>
+</ul>
+</li>
+<li>
+<p>For EFS Panel installations: Participant variables containing the data of the panelists.</p>
+</li>
+<li>
+<p>For EFS Panel installations: Master data variables (m_000n, md_000n).</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The <strong>Codebook</strong>, which can be opened in a second window by clicking on the corresponding menu item, contains a detailed breakdown of the variables and codes for the respective project.</p>
+<h3 id="logical-operators" class="wysiwyg-text-align-justify">Logical Operators</h3>
+<p class="wysiwyg-text-align-justify">The following operators can be used:</p>
+<table class="wysiwyg-text-align-justify" style="height: 1257px;" border="1" width="769" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 226.67px;"> <col style="width: 226.67px;"> <col style="width: 226.67px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" style="width: 178.472px;" data-highlight-colour="#c0b6f2">
+<p><strong>Operator</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 170.851px;" data-highlight-colour="#c0b6f2">
+<p><strong>Symbol</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 409.288px;" data-highlight-colour="#c0b6f2">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td style="width: 170.451px;">
+<p>greater</p>
+</td>
+<td style="width: 162.83px;">
+<p>&gt;</p>
+</td>
+<td style="width: 401.267px;">
+<p>Greater than “answer value x”</p>
+</td>
+</tr>
+<tr>
+<td style="width: 170.451px;">
+<p>greater equal</p>
+</td>
+<td style="width: 162.83px;">
+<p>&gt;=</p>
+</td>
+<td style="width: 401.267px;">
+<p>Greater than or equal to “answer value x”</p>
+</td>
+</tr>
+<tr>
+<td style="width: 170.451px;">
+<p>equal</p>
+</td>
+<td style="width: 162.83px;">
+<p>==</p>
+</td>
+<td style="width: 401.267px;">
+<p>Equal to “answer value x”</p>
+</td>
+</tr>
+<tr>
+<td style="width: 170.451px;">
+<p>less equal</p>
+</td>
+<td style="width: 162.83px;">
+<p>&lt;=</p>
+</td>
+<td style="width: 401.267px;">
+<p>Less than or equal to “answer value x”</p>
+</td>
+</tr>
+<tr>
+<td style="width: 170.451px;">
+<p>less</p>
+</td>
+<td style="width: 162.83px;">
+<p>&lt;</p>
+</td>
+<td style="width: 401.267px;">
+<p>Less than “answer value x”</p>
+</td>
+</tr>
+<tr>
+<td style="width: 170.451px;">
+<p>unequal</p>

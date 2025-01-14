@@ -1,0 +1,60 @@
+ the column “Number of reports“ under the tab <strong>Report Overview</strong>, which can be downloaded by clicking on the corresponding unit. This chapter explains how to organize the distribution to EFS Employees. You will also learn how to download the reports from the external view of <em>Portals</em>.</p>
+<h3 id="add-reporting"><strong>Add reporting</strong></h3>
+<p>To use the distribution function in the Report Manager, you create a reporting function in your Employee project.</p>
+<p>You navigate by the means of the following path:</p>
+<p>[<em>selected Project</em>] → <em>Process configuration</em> → <em>Report definition</em> → <em>Create report</em></p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014812961682" alt="Add reporting.png"></p>
+<p>You must assign a description and enter a category.</p>
+<p>The default setting is for the category std. You use the user-defined text field to create a separate category to which the reports belong. Using <strong>Extended search</strong> [(<em>Select Project</em>] &gt; Process Configuration &gt; Report Definition], you can then search for this category and its reports.</p>
+<p>You use the select box to set the report type to <strong>Exchange</strong>.</p>
+<p>They indicate in which phase the reports can be downloaded. The phases are:</p>
+<ul>
+<li class="auto-cursor-target">Setup</li>
+<li class="auto-cursor-target">Pretest</li>
+<li class="auto-cursor-target">Field</li>
+<li class="auto-cursor-target">Postprocessing</li>
+<li class="auto-cursor-target">Reporting</li>
+<li class="auto-cursor-target">Project end</li>
+</ul>
+<p>You set the minimum number of entries for report generation and the minimum number of entries per item.</p>
+Information
+<p><span style="color: #333333;">You cannot distribute the reports to any Employee projects, but only to those used in the <em>Report Manager</em>.</span></p>
+<h3 id="allocation-of-a-role" class="auto-cursor-target"><strong>Allocation of a role</strong></h3>
+<p>You can assign a role to the report for both a created role and an existing role.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014812960274" alt="Create role.png"></p>
+<p>You click: [<em>selected project</em>] → <em>Process configuration</em> → <em>Configuration</em> → <em>Create role</em></p>
+<ul>
+<li>You set a checkmark next to the reports created for this role and save them.</li>
+<li>If you want to assign Reportings to an existing role, you click on the icon <strong>Edit</strong> under the tab <strong>Roles</strong> in the “Actions“ column.</li>
+<li>You assign the Reportings that the role can consult to the role.</li>
+<li>You must then assign this role to the org.- users who are allowed to download the report.</li>
+<li>You use the tab <strong>Project Phases</strong> to control when the individual roles have access to the reports.</li>
+</ul>
+<p>You click: [<em>selected project</em>] → <em>Process configuration</em> → <em>Configuration</em> → <em>roles</em></p>
+<h3 id="download-plattform"><strong>Download platform</strong></h3>
+<p>To make the reports available via the download platform, you set a checkmark in the settings of your EFS project.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014859906578" alt="Download platform.png"></p>
+<p>You click: [<em>selected project</em>] → <em>Org Processor</em> → <em>Configuration</em></p>
+<p><span style="color: #091e42;">In the section "External view" set a checkmark in the line "Activate download platform". <span style="color: #333333;">All modifications have to be saved in order to be valid.</span></span></p>
+<p>You send reports from the <strong>Report Manager</strong> to EFS Employee.</p>
+<h3 id="distribution"><strong>Distribution</strong></h3>
+<p>You have to complete the following steps:</p>
+<ol>
+<li>Selecting the reports to be distributed by clicking on the distribution icon.</li>
+<li>On the distribution page:
+<ul>
+<li>Check the file formats of the reports: PPTX and/or PDF.</li>
+<li>Enter the meta name of the unit to which the reports are assigned.</li>
+<li>Selection of the report definition created in your Employee project.</li>
+</ul>
+</li>
+<li>
+<strong>Distribute reports</strong>.</li>
+</ol>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014812955282" alt="Distribute reports.png"></p>
+<div>
+<div class="sc-bbmXgH inLjth">
+<div>
+<div class="page view">
+<div class="wiki-content">
+<p>If the distribution process starts successfully, an activation message appears. In addition, the status and further information about the report distribution can be viewed under the tab <strong>Report Distributions</strong

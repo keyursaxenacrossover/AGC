@@ -1,0 +1,59 @@
+<li>
+<p>email → has additionally be provided as attribute</p>
+</li>
+<li>
+<p>firstName → this should be the first name of the user</p>
+</li>
+<li>
+<p>lastName → this should be the last name of the user</p>
+</li>
+</ul>
+<p> </p>
+<h2 id="01J6A0MY3X0FDY4W1CWESK7HWG">If the client is using <strong>Azure AD</strong>
+</h2>
+<p>If the client is using Azure AD with OpenID Connect the following information are sufficient ( from the information listed inOIDC Federation) :</p>
+<ul>
+<li>
+<p><strong>Client ID</strong> and <strong>Client Secret</strong> ( created when following the instructions from: Azure AD Federation - Configuration (usually sent as a PDF to the client in the first email)</p>
+<ul>
+<li>
+<p>The client ID can also be later found in the “App registrations” in Azure (example below)</p>
+</li>
+<li><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998279944338" alt="image-20200721-154158.png"></li>
+</ul>
+</li>
+<li>
+<p><strong>Microsoft Tenant ID</strong></p>
+<ul>
+<li>
+<p>Can be found in the Azure Portal / Azure AD (example below)</p>
+</li>
+<li><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998306620178" alt="image-20200721-154038.png"></li>
+<li>
+<p>All information which are usually expected in the discovery document can be build using the tenant id and generic microsoft urls. E.g: the jwks_uri is build using the following template: <a href="https://login.microsoftonline.com/dc79dd1a-883e-438c-b396-dc9fb7f66bf1/discovery/v2.0/keys">https://login.microsoftonline.com/{tenantId}/discovery/v2.0/keys</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<p> </p>
+<h1 id="h_01J69XFY5RTVDNXJ60R8S47YZE">FAQ</h1>
+<p><strong>Why do we need a test user from the client?</strong></p>
+<p>A test user is essential for validating the SSO integration and ensuring that authentication processes work correctly before going live.</p>
+<p><strong>What is the advantage of using OpenID Connect over SAML 2.0?</strong></p>
+<p>OpenID Connect is a more modern and flexible protocol, providing better support for mobile and single-page applications.</p>
+<p><strong>Why can't we use email or SMS for MFA?</strong></p>
+<p>The decision to exclude email and SMS from MFA options is based on security and process considerations, ensuring stronger and more reliable authentication methods.</p>038.png"></li>
+<li>
+<p>All information which are usually expected in the discovery document can be build using the tenant id and generic microsoft urls. E.g: the jwks_uri is build using the following template: <a href="https://login.microsoftonline.com/dc79dd1a-883e-438c-b396-dc9fb7f66bf1/discovery/v2.0/keys">https://login.microsoftonline.com/{tenantId}/discovery/v2.0/keys</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<p> </p>
+<h1 id="h_01J69XFY5RTVDNXJ60R8S47YZE">FAQ</h1>
+<p><strong>Why do we need a test user from the client?</strong></p>
+<p>A test user is essential for validating the SSO integration and ensuring that authentication processes work correctly before going live.</p>
+<p><strong>What is the advantage of using OpenID Connect over SAML 2.0?</strong></p>
+<p>OpenID Connect is a more modern and flexible protocol, providing better support for mobile and single-page applications.</p>
+<p><strong>Why can't we use email or SMS for MFA?</strong></p>
+<p>The decision to exclude email and SMS from MFA options is based on security and process considerations, ensuring stronger and more reliable authentication methods.</p>

@@ -1,0 +1,39 @@
+<p><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p>This article addresses the issue of respondents receiving the message "survey already completed" when attempting to take a survey. It explains the causes of this problem and provides solutions for survey administrators.</p>
+<p> </p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>The "survey already completed" message occurs due to session conflicts between respondents. This guide will explain why this happens and how to prevent it.</p>
+<ul>
+<li><a href="#h_01HGKSMPRT1QJXZ3NQJD5XBPEM">Causes of the "Survey Already Completed" Message</a></li>
+<li><a href="#h_01HGKSMPRT2KFVQ4YJGQX3WNBR">Solutions for Multiple Respondents on the Same PC</a></li>
+<li><a href="#h_01HGKSMPRT3BXGQ9YJHM0QKPVT">Addressing Issues in Shared Networks</a></li>
+</ul>
+<p> </p>
+<h2 id="h_01HGKSMPRT1QJXZ3NQJD5XBPEM">Causes of the "Survey Already Completed" Message</h2>
+<p>This issue typically occurs when respondents fall within the session of a previous respondent. Common scenarios include:</p>
+<ul>
+<li>The survey URL has been copied from a browser and shared (e.g., via social media)</li>
+<li>The shared URL contains information about the previous respondent</li>
+</ul>
+<p>To prevent this, always use the survey link provided in the survey menu for sharing. If you want respondents to share the survey, post a shareable link on the first and/or last page of the survey.</p>
+<p> </p>
+<h2 id="h_01HGKSMPRT2KFVQ4YJGQX3WNBR">Solutions for Multiple Respondents on the Same PC</h2>
+<p>If multiple respondents are using the same computer to take the survey, follow these steps:</p>
+<h3 id="h_01HGKSMPRT4KFHGQYJ8M7QKPVW">Step 1: Disable Cookies</h3>
+<p>Go to "Project settings" → "Login options" and disable cookies. This ensures that a new session begins whenever the browser is closed after completing the survey.</p>
+<h3 id="h_01HGKSMPRT5BXHQ9YJ9N0QKPVX">Step 2: Use New Windows</h3>
+<p>Instruct respondents to launch each new survey in a new browser window.</p>
+<p> </p>
+<h2 id="h_01HGKSMPRT3BXGQ9YJHM0QKPVT">Addressing Issues in Shared Networks</h2>
+<p>If surveys are completed from different PCs on the same network (e.g., a college network), the issue may be caused by the use of proxies. To resolve this:</p>
+<h3 id="h_01HGKSMPRT6KFJHQYJ0P7QKPVY">Use HTTPS</h3>
+<p>Access the survey using https:// instead of http://. This activates SSL encryption and can solve the problem in some cases.</p>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="h_01HGKSMPRT7BXKQ9YJ1Q0QKPVZ">Why shouldn't I share the survey URL directly from my browser?</h3>
+<p>Sharing the URL directly from your browser may include session information specific to your visit. This can cause other respondents to receive the "survey already completed" message. Always use the official survey link provided in the survey menu for sharing.</p>
+<h3 id="h_01HGKSMPRT8KFLHQYJ2R7QKPW0">How can I allow respondents to share my survey safely?</h3>
+<p>To encourage safe sharing, post a shareable link on the first and/or last page of your survey. This link will not contain any session-specific information and can be safely shared by respondents.</p>
+<p> </p>
+</article>

@@ -1,0 +1,185 @@
+> </u></p>
+</th>
+</tr>
+<tr>
+<td>
+<p><font>1</font></p>
+</td>
+<td>
+<p>STATUS_UNARCHIVED</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><font>2</font></p>
+</td>
+<td>
+<p>STATUS_ARCHIVED</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><font>3</font></p>
+</td>
+<td>
+<p>STATUS_ARCHIVING</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<h2 id="header-22"><font>Rights status</font></h2>
+<p><font>Table: drago </font> <br><font>Column: rc</font></p>
+<table data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<th>
+<p><u> <font>Status</font> </u></p>
+</th>
+<th>
+<p><u> <font>Meaning</font> </u></p>
+</th>
+</tr>
+<tr>
+<td>
+<p><font>1</font></p>
+</td>
+<td>
+<p><font>Reading right</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><font>2</font></p>
+</td>
+<td>
+<p><font>Write permission</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><font>3</font></p>
+</td>
+<td>
+<p><font>Read &amp; write rights</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><font>4</font></p>
+</td>
+<td>
+<p><font>no access rights (no longer used)</font></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<h2 id="header-23">EFS Teams (standard)</h2>
+<p><font>Table: user_grp </font> <br><font>Column: gid</font></p>
+<table data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<th>
+<p><u>Value</u></p>
+</th>
+<th>
+<p><u> <font>Meaning</font> </u></p>
+</th>
+</tr>
+<tr>
+<td>
+<p><font>2</font></p>
+</td>
+<td>
+<p>System Administrator</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>140</p>
+</td>
+<td>
+<p>Administrator</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>141</p>
+</td>
+<td>
+<p>Project_Manager</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>142</p>
+</td>
+<td>
+<p>Panel_Administrator</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>143</p>
+</td>
+<td>
+<p>Reporting_Team</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>145</p>
+</td>
+<td>
+<p>Statistic_Analysis</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>146</p>
+</td>
+<td>
+<p>decontrol_privacy</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>147</p>
+</td>
+<td>
+<p>exchange_administrator</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>148</p>
+</td>
+<td>
+<p>orgmanager_administrator</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<h2 id="h_01J7E8849REGAXGCHR5XDFQ1B0">Status Bonus Points</h2>
+<p>(From modules/panel/components/types.inc.php)</p>
+<p>BONUS_TRANSFER = 10<br>BONUS_TRANSFER_CREDIT = 11<br>BONUS_BONUS_ASSIGN = 20<br>BONUS_SURVEY_PARTICIPATION = 21<br>BONUS_SURVEY_BLOCK = 22<br>BONUS_QUOTA_FULL = 23<br>BONUS_MASTERDATA = 24<br>BONUS_REGISTRATION = 25<br>BONUS_TRIGGER = 26<br>BONUS_PROMOTION_GRATIFICATION = 30<br>BONUS_PROMOTION_ASSIGN = 31<br>BONUS_MISC = 40<br>BONUS_BY_ADMINISTRATOR = 41<br>BONUS_STORNO = 42<br>BONUS_TRANSFER2 = 50<br>BONUS_TRANSFER_DEBIT = 51<br>BONUS_COUPON_PAYOUTS = 60<br>BONUS_DONATION_PAYOUTS = 70<br>BONUS_MISC_DEDUCTION = 80<br>BONUS_ADMIN_DEDUCTION = 81<br>BONUS_COMMUNITY_PARTICIPATION = 91<br>BONUS_TODOLIST = 92</p>
+<p> </p>
+<h2 id="header-25">Reporting+ Codes</h2>
+<table data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<th>
+<p><u>Status</u></p>
+</th>
+<th>
+<p><u> <font>Meaning</font> </u></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>400</p>

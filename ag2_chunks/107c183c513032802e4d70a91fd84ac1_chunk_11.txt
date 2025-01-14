@@ -1,0 +1,73 @@
+-justify">
+<li>
+<p>Locate the desired unit in the organizational structure. Click on the <strong>Actions</strong> icon to open the selection layer and then click on the link <strong>Edit</strong>. This opens the detailed view of the unit. The<strong> Edit</strong> <strong>unit</strong> tab with the dialog is displayed automatically. If you want to edit data on another tab, click on that tab.</p>
+</li>
+<li>
+<p>Locate the desired unit in the organizational structure and click on the title. The detail view is opened, and the <strong>Status information</strong> tab is displayed automatically. Switch to the desired tab.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If you want users to be able to edit units subsequently, you need to assign the right <em>structure_edit_node</em> to the appropriate roles</p>
+<h3 id="moving-units" class="wysiwyg-text-align-justify"><strong>Moving units</strong></h3>
+<p class="wysiwyg-text-align-justify">It may be necessary to move individual units or entire structures within the organizational structure. This is the case, for example, when certain parts of the company have been restructured and the structure needs to be updated accordingly. Instead of deleting the entire affected structure and recreating it elsewhere, you can also move it.</p>
+<p class="wysiwyg-text-align-justify">There are two functions for moving files:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>the function described here allows you to move a unit under another parent unit, i.e., you modify the structure.</p>
+</li>
+<li>
+<p>with the “move up / down” function in the <strong>Actions</strong> layer you merely change the order in which the units of a branch are displayed in the organizational structure.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Locate the unit you want to move to another position along with its subunits.</p>
+</li>
+<li>
+<p>Click on the title of the unit to open its detail view and select the <strong>Edit Unit</strong> tab.</p>
+</li>
+<li>
+<p>This takes you to the dialog. In the field “Parent unit” you can select another parent unit. To do so, click on the<strong> binoculars</strong> icon.</p>
+</li>
+<li>
+<p>This prompts a list of all available units. Browse this list and select the desired new parent unit by clicking on <strong>Select</strong>.</p>
+</li>
+<li>
+<p>Confirm by clicking on Save.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If there is no <strong>Select</strong> icon displayed next to a unit, this is usually because it is either the current unit or the currently assigned parent unit.</p>
+<h3 id="merging-units" class="wysiwyg-text-align-justify"><strong>Merging units</strong></h3>
+<p class="wysiwyg-text-align-justify">It may be necessary to merge units. This is the case, for example, if parts of a company have been restructured or if, for logistical reasons, a particular department along with its subdepartments is to be mapped as one single unit. The function <strong>Merge units</strong> allow you to perform two actions in one step: The already existing participants and paper-pencil questionnaire data of the source unit are imported into the target unit and the source unit is then deleted. If the source unit consists of further subunits, then you can either move the contents of these subunits into the target unit as well, subsequently deleting the subunits, or adopt the subunits unchanged into the target unit.</p>
+<p class="wysiwyg-text-align-justify">Please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Click on the <strong>Merge Units</strong> button.</p>
+</li>
+<li>
+<p>Select the target unit, i.e., the unit where you want to move the contents of the source unit.</p>
+</li>
+<li>
+<p>Select the source unit, i.e., the unit the contents of which are to be moved or that is to be deleted itself.</p>
+</li>
+<li>
+<p>Confirm by clicking on<strong> Save</strong>.</p>
+</li>
+<li>
+<p>In case the source units have subunits, there are two options:</p>
+<ul>
+<li>
+<p>Merge units: The online participants and paper-pencil questionnaire data of the subunits are moved to the target unit, and the subunits themselves are deleted. The users of the subunits are not adopted.</p>
+</li>
+<li>
+<p>Move units: The subunits complete with online participants, paper-pencil questionnaire data, and users are moved below the target unit.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Confirm again by clicking on <strong>Save</strong>.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If you want users to be able to merge units, you need to assign the right <em>structure_combine_nodes</em> to the appropriate roles.</p>
+<p class="wysiwyg-text-align-justify">The users of the source unit are not adopted in the merging process.</p>
+<h3 id="deleting-units" class="wysiwyg-text-align

@@ -1,0 +1,126 @@
+>
+<p><strong>Move</strong>: You can use the arrow icons to change the order of the modules.</p>
+</li>
+<li>
+<p><strong>Edit page module</strong>: From EFS 10.4, you can find the reference name, page module title, and module template below this icon.</p>
+</li>
+<li>
+<p><strong>Delete page module</strong>: The respective module is deleted after a confirmation prompt.</p>
+</li>
+</ul>
+<h3 id="page-configuration-in-detail" class="wysiwyg-text-align-justify"><strong>Page Configuration in Detail</strong></h3>
+<p class="wysiwyg-text-align-justify">You can define page properties, such as position in the navigation and access rights, in the<strong> Page Configuration</strong> tab. The tables explain the configuration options.</p>
+<p class="wysiwyg-text-align-justify"><strong>Language-independent configuration options</strong></p>
+<table class="wysiwyg-text-align-justify" style="height: 199px;" border="1" data-layout="default" data-table-width="760">
+<colgroup>
+<col style="width: 199.0px;">
+<col style="width: 561.0px;">
+</colgroup>
+<tbody>
+<tr style="height: 22px;">
+<th class="wysiwyg-text-align-center" style="height: 22px; width: 183.021px;" data-highlight-colour="#57d9a3">
+<p><strong>Field</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="height: 22px; width: 509.688px;" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr style="height: 89px;">
+<td style="height: 89px; width: 175px;">
+<p>Page identifier</p>
+</td>
+<td style="height: 89px; width: 501.667px;">
+<p>Page identifier: The page identifier is used to uniquely identify the page within the system, regardless of language settings. It is particularly used in the browser address bar and for internal links. Therefore it should not contain any blank spaces or special characters.</p>
+</td>
+</tr>
+<tr style="height: 44px;">
+<td style="height: 44px; width: 175px;">
+<p>Parent page</p>
+</td>
+<td style="height: 44px; width: 501.667px;">
+<p>You can change the level of the page in the page tree and the navigation.</p>
+</td>
+</tr>
+<tr style="height: 44px;">
+<td style="height: 44px; width: 175px;">
+<p>Position</p>
+</td>
+<td style="height: 44px; width: 501.667px;">
+<p>You can change the position of the page in the page tree and the navigation.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"><br><strong>Language-specific configuration options</strong></p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup>
+<col style="width: 201.0px;">
+<col style="width: 559.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Field</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Internal page name</p>
+</td>
+<td>
+<p>Name of the page in the tree view. Can be defined individually for each language version.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Main template</p>
+</td>
+<td>
+<p>Template responsible for the overall structure of the page. Usually “main_default”.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Positioning template</p>
+</td>
+<td>
+<p>If several content modules have been defined for a page you can define their location with the help of the positioning template.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>HTML title</p>
+</td>
+<td>
+<p>The HTML title is the name of the page, which is displayed in the browser header. In addition, the HTML title is also used as a label in the website navigation for the link to this page.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Access control</p>
+</td>
+<td>
+<p>You can restrict access to the page. Select one of the following options:</p>
+<ul>
+<li>
+<p>Public: All panel visitors can see the page.</p>
+</li>
+<li>
+<p>All logged-in panelists: All logged-in panelists can see the page.</p>
+</li>
+<li>
+<p>For logged-in panelists of a panel group only: If you choose this option, a drop-down list is displayed, from which you can select a certain panel group. Only members of the selected group can see the page.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Show in navigation</p>
+</td>
+<td>
+<p>Depending on the setting the page is either shown or hidden in the navigation. The following options are available:</p>
+<ul>

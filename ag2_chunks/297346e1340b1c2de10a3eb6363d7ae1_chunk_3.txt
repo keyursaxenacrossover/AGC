@@ -1,0 +1,78 @@
+();
+        }
+        // Nagios monitoring and office CGN are allowed, everyone else will get a blank page
+}</code></pre><p></p><h3 id="header-9">Firewall based on Custom Routing Plugin</h3><p>Please see Firewall code hinzufügen <ac:link ac:card-appearance="inline"><ri:page ri:content-title="TS-Firewall based on Custom Routing Plugin" ri:version-at-save="4"></ri:page><ac:link-body>TS-Firewall based on Custom Routing Plugin</ac:link-body></ac:link> </p><pre><code class="language-text">&lt;?php
+/*
+s. Doku: https://it.globalpark.de/twiki/bin/view/Development/DevEFSGuidelineCustomizing#Custom_Request_handling_Routing
+*/
+
+function custom_routing_plugin($originalUri)
+{
+        @include_once gp_conf::get('basepath_extensions').'/TsCodeHelper/Firewall/Firewall.php';
+        TsCodeHelper\Firewall\Firewall::getInstance()
+        -&gt;run();
+}</code></pre><p></p><p><strong>Example for using a custom domain to open one specific survey:</strong></p><pre><code class="language-text">&lt;?php
+/*
+s. Doku: https://it.globalpark.de/twiki/bin/view/Development/DevEFSGuidelineCustomizing#Custom_Request_handling_Routing
+*/
+
+function custom_routing_plugin($originalUri)
+{
+    if (preg_match('/^http[s]{0,1}:\/\/(www.)?pwcspaperspectives.com(:443){0,1}\/$/',$originalUri))
+    {
+       header('Location: https://www.pwcspaperspectives.com/uc/ISPAIndustryRegistrationSite/');
+       die();
+    }
+
+    if (preg_match('/^http[s]{0,1}:\/\/www.coachingsurvey2015.com(:443){0,1}\/$/',$originalUri))
+    {
+       header('Location: https://pwcresearch.com/uc/ICFReg/');
+       die();
+    }
+}</code></pre><p></p><p><strong>Example for routing participants using an obsolete path to a survey, with which they have been invited before the path has been changed.</strong></p><pre><code class="language-text">&lt;?php
+/*
+s. Doku: https://it.globalpark.de/twiki/bin/view/Development/DevEFSGuidelineCustomizing#Custom_Request_handling_Routing
+*/
+
+function custom_routing_plugin($originalUri)
+{
+        if (preg_match('/\/uc\/main\/9f89\/\?code=/',$originalUri)) {
+                $url = preg_replace('/main\/9f89/','Hirslanden_Umfrage_Press_Ganey_stationaer',$originalUri);
+                header('Location: '.$url);
+                die();
+        }
+        if (preg_match('/\/uc\/Project_Manager2\/8d87\/\?code=/',$originalUri)) {
+                $url = preg_replace('/Project_Manager2\/8d87/','Hirslanden_Umfrage_Tagesklinik',$originalUri);
+                header('Location: '.$url);
+                die();
+        }
+
+        if (preg_match('/\/uc\/Project_Manager2\/1453\/\?code=/',$originalUri)) {
+                $url = preg_replace('/Project_Manager2\/1453/','Hirslanden_Umfrage_Notfallstation',$originalUri);
+                header('Location: '.$url);
+                die();
+        }
+}</code></pre><p></p><p><strong>an example for redirecting using a fixed number of parameters</strong></p><pre><code class="language-text">&lt;?php
+/*
+s. Doku: https://it.globalpark.de/twiki/bin/view/Development/DevEFSGuidelineCustomizing#Custom_Request_handling_Routing
+*/      
+
+function custom_routing_plugin($originalUri)
+{      
+        if (preg_match('/http(s)?:\/\/www.efs-survey.com(:443)?\/uc\/bonprix\_pers\_2017\/(\?a=(.+)?\&amp;b=(.+)?\&amp;c=(.+)?)?/',$originalUri, $matches)) {
+            header('Location: https://nn1980.customervoice360.com/uc/bonprix_pers_2017/?a='.$matches[4].'&amp;b='.$matches[5].'&amp;c='.$matches[6]);
+            die();
+        }
+}</code></pre><p></p><p>another example for logging requests. In this case it was used to investigate SOAP requests.</p><pre><code class="language-text">function custom_routing_plugin($originalUri)
+{
+    // handle all requests for https://www.peng.com/hihi* originaluri everytime include the protocol(e.g.https and a closing Slash)
+
+    //JIRA: https://jira.3uu.de/browse/KANBAN-11837 do not change this if statement only the kanban is solved or there are some other issues
+    // has apparently been taken out. The KANBAN has been closed in the meantime
+
+    // this is for debugging purpose due to case 00889096
+    //if ($_SERVER['HTTP_X_FORWARDED_FOR']=='87.79.30.2'){     //or 87.79.30.37 when connected via office vpn, OLD: REMOTE_ADDR, NEW: HTTP_X_FORWARDED_FOR
+        // actual routing code
+        if (preg_match('/handler=soap/',$originalUri)) {
+                //log complete request into file
+                $logfile = '/nfs/opst/xm2207.customervoice360

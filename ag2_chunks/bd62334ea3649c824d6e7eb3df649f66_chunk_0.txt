@@ -1,0 +1,54 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K" class="wysiwyg-text-align-justify">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article provides information on testing personalized projects using tester accounts in Tivian's survey platform. It covers the properties of tester accounts, how to create and import them, and their specific behaviors compared to regular participant accounts.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">Tester accounts are special participant accounts used for testing purposes in personalized projects. They have unique characteristics that allow for multiple survey completions and easier testing of questionnaires.</p>
+<ul>
+<li><a href="#overview-of-the-properties-of-the-tester-account">Overview of the Properties of the Tester Account</a></li>
+<li><a href="#creating-tester-accounts">Creating Tester Accounts</a></li>
+<li><a href="#importing-tester-accounts">Importing Tester Accounts</a></li>
+</ul>
+<h2 id="overview-of-the-properties-of-the-tester-account" class="wysiwyg-text-align-justify">Overview of the Properties of the Tester Account</h2>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Testers can complete a questionnaire several times, whereas “normal” respondents can do this only once.</p>
+</li>
+<li>
+<p>If a tester with the “Completed” disposition code accesses the questionnaire for a second time, the existing data will be deleted. The tester will begin the new entry on the first page of the project.</p>
+</li>
+<li>
+<p>Testers do not “resume their work“. If a tester interrupts editing the questionnaire for a prolonged period of time (more than 30 minutes) and then accesses the questionnaire again, they will resume the questionnaire on page 1. “Normal” respondents see the page last sent.</p>
+</li>
+<li>
+<p>Within the export record, tester records can be identified by the tester export variable which is 0-1 encoded.</p>
+</li>
+<li>
+<p>Tester data can be selectively deleted using the <strong>Compile</strong> function.</p>
+</li>
+<li>
+<p>Sometimes you need dummy accounts for testing purposes, which do not correspond to any real mail recipient. In such cases, you can use e-mail addresses on the @3uu.eu domain: these addresses are owned by Tivian, and emails sent to them are deleted automatically.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="creating-tester-accounts" class="wysiwyg-text-align-justify">Creating Tester Accounts</h2>
+<p class="wysiwyg-text-align-justify">When creating the participant account select “yes” in the “tester” field.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="importing-tester-accounts" class="wysiwyg-text-align-justify">Importing Tester Accounts</h2>
+<p class="wysiwyg-text-align-justify">It is easy to import tester accounts: The import template contains a “tester” column. In this column, enter the desired value for the variable “tester” for all participants:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>0 and blank field: normal participant</p>
+</li>
+<li>
+<p>1: tester</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">When matching the column of your import file with the database fields the “tester” column is automatically allocated to the “tester” database field.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863" class="wysiwyg-text-align-justify">FAQ</h1>
+<h3 id="faq1" class="wysiwyg-text-align-justify">What happens if a tester accesses a completed questionnaire?</h3>
+<p class="wysiwyg-text-align-justify">If a tester with the "Completed" disposition code accesses the questionnaire for a second time, the existing data will be deleted. The tester will begin the new entry on the first page of the project.</p>
+<h3 id="faq2" class="wysiwyg-text-align-justify">How do tester accounts behave differently when resuming a questionnaire?</h3>
+<p class="wysiwyg-text-align-justify">Testers do not "resume their work" in the same way as normal respondents. If a tester interrupts editing the questionnaire for more than 30 minutes and then accesses it again, they will resume the questionnaire on page 1. Normal respondents see the page last sent.</p>
+<h3 id="faq3" class="wysiwyg-text-align-justify">Can tester data be identified in exports?</h3>
+<p class="wysiwyg-text-align-justify">Yes, within the export record, tester records can be identified by the tester export variable which is 0-1 encoded.</p>

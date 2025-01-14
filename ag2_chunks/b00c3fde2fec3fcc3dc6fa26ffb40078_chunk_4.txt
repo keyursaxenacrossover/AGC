@@ -1,0 +1,28 @@
+ displayed.</p>
+<p class="wysiwyg-text-align-justify"><strong>Reply-To: = From</strong></p>
+<p class="wysiwyg-text-align-justify">The “Reply-To” information in an e-mail indicates where the recipient is to send any replies. Making different entries may be advisable, for example, in surveys you conduct for a third party. Under “Sender”, you can then enter your customer’s address: This will be displayed for the recipient and may increase their willingness to respond. However, the “Reply-To” address makes sure that the reply mail will be sent to you as the supervisor of the survey. Furthermore, server messages indicating that an e-mail could not be delivered will also be sent to the “Reply-To” address. You can set the “Reply-To” address using the drop-down list contained in the row of the same name.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Read rights for “mail_reply” are required for accessing and using this field, plus the “Return-Path” and “Read confirmation” options explained in the following sections.</p>
+</li>
+<li>
+<p>The default setting is “Reply-To = From”, i.e. the sender’s address will be used.</p>
+</li>
+<li>
+<p>If you complete a mail form without read rights for “mail_reply”, i.e. without seeing the “Reply-To” and “Return-Path” options, the default setting “Reply-To = From” will be used. “Read confirmation” will be deactivated as per default. If you do not have read rights and use a mail template in which “Reply-To”, “Return-Path” or “Read confirmation” have been defined, the values from the mail template will be used.</p>
+</li>
+<li>
+<p>Additionally, the same addresses as in the “Sender” field are available for selection. If you wish to change the sender addresses, you can do so in the <strong>Mail templates</strong> → <strong>Mail senders</strong> menu.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Before you use a third party’s address, remember to make sure they approve! Also, contact the recipients’ postmaster to find out whether the sender's address is permissible. Some mail gateways of larger companies, in particular, do not permit any emails from the Internet if the sender indicates is a “faked” address for their mail domains.</p>
+<p class="wysiwyg-text-align-justify">Sometimes, autoresponders (e.g. notifications of absence, such as vacations) are poorly configured. Normally, the automatic message should not be generated at all because <em>EFS Survey</em> has placed a corresponding mail header. Nevertheless, there are mail systems that have been carelessly configured. Often, such mail systems do not evaluate the information in “Reply-To”, either, but send the automatic replies to the (assumed) sender address.</p>
+<p class="wysiwyg-text-align-justify"><strong>Return-Path</strong></p>
+<p class="wysiwyg-text-align-justify">Error messages and other transfer errors (e.g. “bounce messages”) will be sent to the address configured in the field “Return-Path”. These messages will be forwarded to the mail sender if no address has been configured. Access to the “Return-Path” option is controlled by the “mail_reply” right described above. The default setting is “Reply-To = From”, i.e. the sender’s address will be used. Assuming that you have the required read rights, the addresses in the drop-down list are the same as those found in the drop-down list in the field “Mail sender”.</p>
+<p class="wysiwyg-text-align-justify"><strong>X-Priority (importance)</strong></p>
+<p class="wysiwyg-text-align-justify">This information allows you to assign the e-mail a status. Commonly used mail clients can use this information to highlight or arrange your e-mail according to the recipient’s settings. Five statuses are available, “1” is used for the lowest significance and “5” for the highest priority.</p>
+<p class="wysiwyg-text-align-justify">As senders of unwanted advertising mails (spammers) also frequently use this option to attach greater importance to their e-mails, using this feature may also turn out to be a disadvantage. Some mail clients or mail filters in gateways are set up to simply delete e-mails indicating a (high) priority. Therefore, if you have set a high priority in an invitation mail, be sure to avoid using another priority setting for a reminder mail.</p>
+<p class="wysiwyg-text-align-justify"><strong>Sensitivity</strong></p>
+<p class="wysiwyg-text-align-justify">For recipients using Outlook, you can set the message’s sensitivity.</p>
+<p class="wysiwyg-text-align-justify"><strong>Read confirmation</strong></p>
+<p class="wysiwyg-text-align-justify">Commonly used mail clients support sending automatic read confirmations. Once the recipient opens the e-mail, a message is automatically sent to the recipient you selected (sender or Reply-To). Since this happens automatically, such a read confirmation of course does not mean that the recipient has actually read or even understood your e-mail. It merely indicates that the message has been displayed in the recipient’s mail program. Also, it is not mandatory for a mail client to send a read confirmation. The recipient may also have deactivated this option or deliberately decided not to send a read confirmation for this particular mail. They may nevertheless have read the mail. Also, in particular, in

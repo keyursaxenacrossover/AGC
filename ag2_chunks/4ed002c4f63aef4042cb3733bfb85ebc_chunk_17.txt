@@ -1,0 +1,63 @@
+="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 308.75px;" colspan="1">
+<p>TRIM(' bar ');</p>
+<p>→ 'bar'</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 153.264px;" colspan="1">upper</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 274.115px;" colspan="1">UPPER(str)</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 254.306px;" colspan="1">
+<p>Returns the string str with all characters changed to uppercase according to the current character set mapping.</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 308.75px;" colspan="1">
+<p>UPPER('Hej');</p>
+<p>→  'HEJ'</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 153.264px;" colspan="1">unix_timestamp</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 274.115px;" colspan="1">
+<p>UNIX_TIMESTAMP()</p>
+<p>UNIX_TIMESTAMP(date)</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 254.306px;" colspan="1">
+<p>If called with no argument, returns a Unix timestamp</p>
+<p>(seconds since '1970-01-01 00:00:00' UTC) as an unsigned integer. If UNIX_TIMESTAMP() is called with a date argument, it returns the value of the argument as seconds since '1970-01-01 00:00:00' UTC.</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 308.75px;" colspan="1">
+<p>UNIX_TIMESTAMP('1997-10-04 22:23:00');</p>
+<p>→ 875996580</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 153.264px;" colspan="1">year</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 274.115px;" colspan="1">YEAR(date)</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); padding: 7px 10px; text-align: left; vertical-align: top; width: 254.306px;" colspan="1">
+<p>Returns the year for date, in the range 1000 to 9999, or 0 for the “zero” date.</p>
+</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 308.75px;" colspan="1">
+<p>YEAR('98-02-03');</p>
+<p>→ 1998</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p class="wysiwyg-text-align-justify"><strong>2. Creating a recoding</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>In the <strong>People → Master data → Recoding of master data</strong> menu, click on the <strong>Create recoding variable (formula)</strong> button.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017112906898">
+</li>
+<li>Enter the title of the recodes definition.</li>
+<li>
+<p>Enter the formula.</p>
+</li>
+<li>
+<p>Specify whether automatic recoding should be applied. In the example shown above, the panelists’ age is calculated. In this case, automatic triggering does not make sense: instead, you could e.g. allocate the recoding to a recoding group and trigger it only once a week.</p>
+</li>
+<li>
+<p>Optionally, you can assign the recodes definition to a recoding group.</p>
+</li>
+<li>
+<p>Optionally, you can specify the recoding order.</p>
+</

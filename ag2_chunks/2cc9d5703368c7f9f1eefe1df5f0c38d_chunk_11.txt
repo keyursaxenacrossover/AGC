@@ -1,0 +1,165 @@
+.</p>
+<p class="wysiwyg-text-align-justify">You can use the “func_change_details” template to change the appearance of the “Change data” form.</p>
+<p class="wysiwyg-text-align-justify"><strong>Options</strong></p>
+<p class="wysiwyg-text-align-justify">The following options are available:</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup>
+<col style="width: 172.0px;">
+<col style="width: 70.0px;">
+<col style="width: 361.0px;">
+<col style="width: 157.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Option</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Wildcard</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Standard panel "Change details" page</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Reference name for template</p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p>Name that can be used to trigger the module in positioning templates.</p>
+</td>
+<td>
+<p>change_details</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Page module title</p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p>Name of the module in the page’s module overview</p>
+</td>
+<td>
+<p>Change details</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Module template</p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p>Module-specific template that controls how data provided by the module are displayed.</p>
+</td>
+<td>
+<p>func_change_details</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Form configuration</p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p>In this field, you choose the appropriate form</p>
+</td>
+<td>
+<p>Change data form</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>A new e-mail address must be entered twice (for confirmation).</p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p>An input field in which the new email address must be confirmed is displayed.</p>
+</td>
+<td>
+<p>yes</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>The new password must be entered twice (for confirmation).</p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p>An input field in which the new password must be confirmed is displayed.</p>
+</td>
+<td>
+<p>yes</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Mail template for confirming change of e-mail address</p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p>The selected mail template is sent to the panelist’s new e-mail address, to validate the changes.</p>
+<ul>
+<li>
+<p>The “Standard mail” mail templates are available.</p>
+</li>
+<li>
+<p>The data required for verification should be inserted into the mail template using wildcards. Use #mail_validation_code# to insert the actual verification code; by using #mail_validation_code_complete# you can create a complete clickable link</p>
+</li>
+<li>
+<p>GET Paramater: validation_code</p>
+</li>
+</ul>
+</td>
+<td>
+<p>Change email confirm</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Message upon successful change of data</p>
+</td>
+<td>
+<p>{$change_data.success_message}</p>
+</td>
+<td>
+<p>In this field, you should enter the message to be displayed once data have been successfully changed.</p>
+</td>
+<td>
+<p>Your data was changed successfully.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="function-module-discussion" class="wysiwyg-text-align-justify"><strong>Function Module: Discussion</strong></h3>
+<p class="wysiwyg-text-align-justify">The “Discussion” function module allows to set up discussions.</p>
+<p class="wysiwyg-text-align-justify">In the standard panel, the appearance of the form is determined by the “func_discussion” template.</p>
+<p class="wysiwyg-text-align-justify"><strong>Options</strong></p>
+<p class="wysiwyg-text-align-justify">The “Discussion” function module provides the following setting options:</p>
+<table class="wysiwyg-text-align-justify" style="height: 456px;" border="1" width="812" data-layout="default" data-table-width="760">
+<colgroup>
+<col style="width: 170.0px;">
+<col style="width: 515.0px;">
+<col style="width: 75.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" style="width: 167.778px;" data

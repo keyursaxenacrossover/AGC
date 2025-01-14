@@ -1,0 +1,35 @@
+<p>Overview</p>
+<article>
+<p>This article provides information about the unsubscribe feature in EFS (Enterprise Feedback Suite), including its limitations on collective installations and workarounds for implementing unsubscribe functionality.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>The unsubscribe feature in EFS allows participants to opt out of receiving emails. However, its implementation varies depending on the type of installation and email client support.</p>
+<ul>
+<li><a href="#collective_installations">Collective Installations</a></li>
+<li><a href="#general_information">General Information</a></li>
+<li><a href="#best_practices">EFS Best Practices</a></li>
+</ul>
+<h2 id="collective_installations">Collective Installations</h2>
+<p>On collective installations, the "<strong>List-Unsubscribe Header</strong>" option is not available in the "<strong>Advanced Mail Settings</strong>". This also applies to the placeholders <strong>#unsubscribe_survey#</strong> and<strong> #unsubscribe_global#</strong>, which are not available in the email text or other fields such as "Additional Headers".</p>
+<p>Unfortunately, these placeholders are listed here in the help text of the "Additional headers" option and are not listed dynamically. The extended question type "Block email" (911), which can be created on end pages, is also not available on bulk installations.</p>
+<p>The below workarounds were found in order to prevent collective installation customers from blocking each other's subscribers. If customer A were to invite a subscriber and this subscriber were to unsubscribe "globally", they would no longer be able to receive emails from customer B. </p>
+<h3 id="workaround_1">Workaround 1</h3>
+<p>For collective installations, manually import participants via Excel/CSV file into the "No-Mails List" under <strong>System &gt; Options &gt; Mail Queue &gt; Do-Not-Email List</strong>:</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20675979184146" width="480" height="98"></p>
+<p>For example, the customer could create an extra pseudo unsubscribe survey in which the email address could be entered via URL parameter, or in which the participant enters his or her email address, which in turn triggers a mail trigger that sends the customer an email, that a participant has unsubscribed.</p>
+<p>The email must then be imported manually and it is therefore not completely automated.</p>
+<h3 id="workaround_2">Workaround 2</h3>
+<p>A participant is not automatically placed on an unsubscribe list, but in this project they will no longer receive mails because they have already been screened out. </p>
+<p>Use a questionnaire with a filter and URL parameters to prevent further emails to participants who have unsubscribed, without automatically adding them to an unsubscribe list.</p>
+<p><strong>Prerequisites:</strong> No data protection assistant, a URL parameter</p>
+<p><strong>Questionnaire with filter:</strong></p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20675947382674"></p>
+<p><strong>Invitation email:</strong></p>
+<p>Link to participate: <code>#code_complete#&amp;a=2</code></p>
+<p>Link to unsubscribe: <code>#code_complete#&amp;a=1</code></p>
+<p><strong>There is a ready-made PDF for customers in the Tivian Sharepoint: <a href="https://tivian.sharepoint.com/sites/PublicShareFolder/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FPublicShareFolder%2FShared%20Documents%2F04%2D1%20Customer%20Service%2F06%20Knowledge%20Base%2FB%20%2D%20Survey%2FHow%20to%2E%2E%2E%20Unsubsribe%20Workaround%20f%C3%BCr%20Sammelinstallationen%2Epdf&amp;parent=%2Fsites%2FPublicShareFolder%2FShared%20Documents%2F04%2D1%20Customer%20Service%2F06%20Knowledge%20Base%2FB%20%2D%20Survey" target="_blank" rel="noopener noreferrer">How to... Unsubscribe Workaround for collective installations</a>. Once access is provided to this resource, we can create the required knowledge.</strong></p>
+<h2 id="general_information">General Information</h2>
+<h3 id="placeholders">Placeholders</h3>
+<p>The unsubscribe placeholders (<code>#unsubscribe_survey#</code> and <code>#unsubscribe_global#</code>) create URLs that require participants to confirm their unsubscribe request by clicking an "OK" button. These links only work when the placeholders are used in the email text.</p>
+<h3 id="technical_header">Email Header Information</h3>
+<p>For RFC-compliant meta-information in headers, use the "List-Unsubscribe Header" or "Additional Headers" options. The "List-Unsubscribe Header" can contain either a mailto: or an HTTP link, or both.</p>
+<p>However, there are a few things to consider here, as support for the “List-Unsubscribe Header” is not very widespread and even if a valid RFC-compliant header is included, very few email clients offer the subscriber an unsubscribe function. This Support is even less when working with the HTTP variant

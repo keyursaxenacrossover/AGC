@@ -1,0 +1,94 @@
+175.052px;">
+<p>Minimum number of points for redeeming bonuses</p>
+</td>
+<td style="height: 252px; width: 399.497px;">
+<p>By entering a minimum number of points you can ensure that only panelists who have this amount of points can redeem bonuses on the respective page.</p>
+<p>Please note that panelists with fewer points will then generally not be able to use the respective bonus list: No differentiation is made between new panelists and panelists who had a higher number of points in the past, but who have redeemed points in the meantime.</p>
+<p>If you do not wish to enter a minimum number of points, enter “0” or delete the existing value.</p>
+</td>
+<td style="height: 252px; width: 156.997px;">
+<p> </p>
+</td>
+</tr>
+<tr style="height: 391px;">
+<td style="height: 391px; width: 175.052px;">
+<p>Mail template for confirmation mail</p>
+</td>
+<td style="height: 391px; width: 399.497px;">
+<p>The selected mail template will be sent to the specified recipient every time a panelist redeems bonus points. Alternatively, it may be sent to the panelists themselves to confirm the redemption of points.</p>
+<ul>
+<li>
+<p>The “Standard mail” mail templates are available.</p>
+</li>
+<li>
+<p>The necessary data should be inserted into the mail template using wildcards. Information on the redeeming panelist can be entered as usual via the participant variables u_000n. Information on the redeemed bonus will be displayed using the following wildcards only available for this particular function: #item_title#: Bonus title; #item_description#: Description; #item_description2#: Description 2; #item_category_title#: Bonus category title; #item_selected_amount#. Value of payment; #item_vendor#: Manufacturer</p>
+</li>
+</ul>
+</td>
+<td style="height: 391px; width: 156.997px;">
+<p> </p>
+</td>
+</tr>
+<tr style="height: 44px;">
+<td style="height: 44px; width: 175.052px;">
+<p>Confirmation mail recipients</p>
+</td>
+<td style="height: 44px; width: 399.497px;">
+<p>In this field, specify to whom the mail template selected above is to be sent.</p>
+</td>
+<td style="height: 44px; width: 156.997px;">
+<p> </p>
+</td>
+</tr>
+<tr style="height: 380px;">
+<td style="height: 380px; width: 175.052px;">
+<p>The following fields should be displayed for bank payments</p>
+</td>
+<td style="height: 380px; width: 399.497px;">
+<p>It is up to you to decide which bank details should be used.</p>
+<ul>
+<li>
+<p>The following bank details can be used: account holder, bank code, account number, SWIFT code, and IBAN. The data are stored in preconfigured database fields in the backend.</p>
+</li>
+<li>
+<p>For PayPal, authentification can be handled based on the e-mail address. In panels that were set up with EFS 8.1 or later, the “account_holder” field can store up to 100 characters. That way, it can be used to store e-mail addresses.</p>
+</li>
+<li>
+<p>If you want to store the entered details in master data, e.g. to use them to prefill the form for future payments, create appropriate master data (data type: text) and select these from the drop-down lists.</p>
+</li>
+</ul>
+</td>
+<td style="height: 380px; width: 156.997px;">
+<p> </p>
+</td>
+</tr>
+<tr style="height: 118px;">
+<td style="height: 118px; width: 175.052px;">
+<p>Validation of bank code number</p>
+</td>
+<td style="height: 118px; width: 399.497px;">
+<p>You can define your own Regex check to validate the bank code.</p>
+<p>E.g. to validate against a 1 to the 10-digit sized number you can specify the following expression: ^([0-9]{1,10})$</p>
+</td>
+<td style="height: 118px; width: 156.997px;">
+<p> </p>
+</td>
+</tr>
+<tr style="height: 118px;">
+<td style="height: 118px; width: 175.052px;">
+<p>Validation of account number</p>
+</td>
+<td style="height: 118px; width: 399.497px;">
+<p>You can define your own Regex check to validate the account number.</p>
+<p>I.e. to validate against a 1 to 10-digit sized number you can specify the following expression: ^([0-9]{1,10})$</p>
+</td>
+<td style="height: 118px; width: 156.997px;">
+<p> </p>
+</td>
+</tr>
+<tr style="height: 163px;">
+<td style="height: 163px; width: 175.052px;">
+<p>Store entered data for bank payments in selected master data variables and use master data variables for preselection</p>
+</td>
+<td style="height: 163px; width: 399.497px;">
+<p>Activate this option if you want to store the entered details and use

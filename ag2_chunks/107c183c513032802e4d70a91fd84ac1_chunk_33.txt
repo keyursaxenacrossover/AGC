@@ -1,0 +1,113 @@
+>
+<li>
+<p>In contrast to the admin area, a monthly change of the password is not required for <em>Org Processor</em>. This cannot be changed.</p>
+</li>
+</ul>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default">
+<colgroup> <col style="width: 124.0px;"> <col style="width: 258.0px;"> <col style="width: 216.0px;"> <col style="width: 162.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Field</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Setting options</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Default settings</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Password check</p>
+</td>
+<td>
+<p>You can choose from several<br>sets of security requirements for<br>the password.</p>
+<p>This setting affects both <em>Org Processor</em><br>and download platform.</p>
+</td>
+<td>
+<p>Various options are available:</p>
+<ul>
+<li>
+<p>Upper and lowercase,<br>numbers or special characters and at least 8 characters long</p>
+</li>
+<li>
+<p>Characters and numbers or characters and special characters, at least 8 characters long</p>
+</li>
+<li>
+<p>Upper and lower case, numbers and at least 8 characters</p>
+</li>
+<li>
+<p>Characters, numbers, and at least 8 characters</p>
+</li>
+</ul>
+</td>
+<td>
+<p>Upper and lower<br>case, numbers, or special characters<br>and at least 8 characters long</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Number of wrong logins</p>
+</td>
+<td>
+<p>To protect the download platform against brute force attacks, you can define the maximum number of permitted wrong logins. If, after reaching this number, a further wrong login occurs, the account will be blocked for a defined period of time.</p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p>0, i.e. the number of wrong logins is not limited.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>How long is the<br>account blocked?</p>
+</td>
+<td>
+<p>If the number of wrong logins exceeds the permitted maximum number defined above, the account is blocked for the period of time defined in this field.</p>
+</td>
+<td>
+<p>Seconds</p>
+</td>
+<td>
+<p>0, i.e. the account will not be blocked.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="org-processor-messages" class="wysiwyg-text-align-justify">
+<br><em><strong>Org Processor</strong></em><strong> messages</strong>
+</h3>
+<p class="wysiwyg-text-align-justify">You can also modify the info texts on the most important <em>Org Processor</em> tabs to meet the requirements of your project. These texts are visible both in the separate <em>Org Processor</em> login and in the admin area. Switch to the <strong>Org Processor</strong> → <strong>Configuration</strong> menu. Open the <strong>Org Processor messages</strong> tab. Here you will find two fields for each of the following Org Processor tabs, where you can edit the German and English info texts:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Organizational structure</strong> tab</p>
+</li>
+<li>
+<p><strong>Return</strong> tab</p>
+</li>
+<li>
+<p><strong>Report overview</strong> tab</p>
+</li>
+<li>
+<p>If Action Planner is activated: <strong>Action Planner</strong> tab and overview of the actions in the detail view of a unit.</p>
+</li>
+</ul>
+<h3 id="historical-assignment" class="wysiwyg-text-align-justify"><strong>Historical assignment</strong></h3>
+<p class="wysiwyg-text-align-justify">It is possible to compare the current structure to its historical version. Historical comparisons can be created automatically if both projects were created through an Orbit snapshot. Historical comparisons can be used e. g. in the Data Voyager Analyst, to compare the survey results of both structures.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Go to the Org Processor‘s <strong>Configuration settings</strong> and select the <strong>Historical Assignment</strong> tab.</p>
+</li>
+<li>
+<p>Choose a specific historical project from all projects available.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If the project selected has been created with Orbit, two algorithms will be available for mapping.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Historical comparison based on people: This algorithm is set to compare participants to those in units contained in the historical structure. Once a match

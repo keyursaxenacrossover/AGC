@@ -1,0 +1,48 @@
+ are subject to limitations on the part of Microsoft:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>A Power Point report (PPT, PPTX) or a PDF report generated on the basis of Power Point can contain a maximum of 250 slides. An Excel report can contain a maximum of 250 work sheets, i.e., 250 chapters. A work sheet can have a maximum of 256 columns and 65,000 rows.</p>
+</li>
+<li>
+<p>The generation of reports in Excel, PPT, PPTX and PDFs requires a web service running via a .NET server. If your installation is hosted externally in a closed system, an additional Windows server is required for report generation.</p>
+</li>
+</ul>
+<h3 id="the-generation-process" class="wysiwyg-text-align-justify"><strong>The generation process</strong></h3>
+<p class="wysiwyg-text-align-justify">When generating a report, the statistical values will be updated once again. If you were working with test data, the real data will be inserted automatically and the statistical values will be calculated. Afterwards, the completed report will be converted into a file of the desired format.</p>
+<p class="wysiwyg-text-align-justify">This is a resource-intensive process. To ensure a good performance of the installation, it will be executed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>If it is only one report, it will be generated instantly.</p>
+</li>
+<li>
+<p>If several generation processes are initiated at the same time - if either you or several different users wish to generate different reports - then these generation requests will be placed in a queue and processed successively.</p>
+</li>
+<li>
+<p>As soon as the generation of your report is completed, you will be notified via email.</p>
+</li>
+</ul>
+<h3 id="making-reports-available-in-efs-survey-status" class="wysiwyg-text-align-justify">
+<strong>Making reports available in </strong><em><strong>EFS Survey Status</strong></em>
+</h3>
+<p class="wysiwyg-text-align-justify">If you use EFS Survey Status to provide your clients with up-to-date information on your projects, you can make your completed reports available right there.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>For those report files that you want to put up in <em>EFS Survey Status</em>, tick the “Publish” checkbox in the overview.</p>
+</li>
+<li>
+<p>Click on the <strong>Rights</strong> icon to open the dialog for setting the object rights for a particular report. Assign read rights to all staff teams you want to be able to access the report and confirm by clicking on <strong>Save</strong>.</p>
+</li>
+<li>
+<p>Make sure that these teams also have read rights to the ACL right “reportlist”, i.e., that they have general access to the menu <strong>List of reports</strong> in <em>EFS Survey Status</em>.</p>
+</li>
+<li>
+<p>Please note that any files that are supposed to be available in<strong> EFS Survey Status</strong> must be stored in the admin area.</p>
+</li>
+</ul>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863" class="wysiwyg-text-align-justify">FAQ</h1>
+<h3 id="h_01HGKSMPRVA3JXQX3QBXQZ8YR0" class="wysiwyg-text-align-justify">What is the difference between simple recoding and multiple recoding?</h3>
+<p class="wysiwyg-text-align-justify">Simple recoding corresponds to a single response question, where each participant is uniquely assigned to a single category. Multiple recoding corresponds to a multiple response question, where each participant can be counted once for each category.</p>
+<h3 id="h_01HGKSMPRVC3JXQX3QBXQZ8YR1" class="wysiwyg-text-align-justify">How can I customize the color scheme for charts?</h3>
+<p class="wysiwyg-text-align-justify">You can customize the color scheme for charts by going to "Report" → "Report settings" → "Chart" tab. Here, you can select a default color scheme or create a custom color scheme using the color picker.</p>
+<h3 id="h_01HGKSMPRVE3JXQX3QBXQZ8YR2" class="wysiwyg-text-align-justify">What file formats are available for exporting reports?</h3>
+<p class="wysiwyg-text-align-justify">EFS Reporting+ supports exporting reports in HTML, XLS (Excel), PPT (PowerPoint), PDF, PPTX, and PPTX-PDF formats. The availability of these formats may depend on your specific installation and solution.</p>

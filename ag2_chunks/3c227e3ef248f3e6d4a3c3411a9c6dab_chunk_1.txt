@@ -1,0 +1,135 @@
+ URI:</strong> <code>optional</code> - Enter the URI for violation reports.</p>
+</li>
+<li>
+<p><strong>Enforcement:</strong> <code>Not enforced (Report-only mode)</code></p>
+</li>
+</ul>
+<ol start="5">
+<li>
+<p>Click Save to draft.</p>
+</li>
+</ol>
+<p>If you'd like to see the previous solution (discontinued), you can consult Confluence: <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1063813180/Login+Customization">Login Customization - Tivian Access - Confluence</a></p>
+<h1 id="h_01J67CASSS38891HM888ANKBCR">Okta Error Customization</h1>
+<p>See <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20716789326994-Okta-Errors" target="_blank" rel="noopener noreferrer">Okta errors</a> to get more information about the type of Okta errors that can be encountered.</p>
+<p>Error page customization especially takes place in case of errors that occur on Okta side that will not redirect back to the respective installation. </p>
+<p>The error customization takes place in a Bitbucket repository:</p>
+<p><a href="https://bitbucket.org/qbengineering/okta_resource_login_customization/src/master/" data-card-appearance="inline">https://bitbucket.org/qbengineering/okta_resource_login_customization/src/master/</a></p>
+<p><strong>Also see:</strong></p>
+<p><a href="https://developer.okta.com/docs/guides/custom-error-pages/overview/">https://developer.okta.com/docs/guides/custom-error-pages/overview/</a></p>
+<h1 id="h_01J67CQK3YWK0KBT6EYP5TCJJ7">Okta E-mail Customization</h1>
+<p>Okta offers e-mail templating for different e-mail types. Okta will send e-mails directly to a user in all cases that are related to identity management. Currently e-mail notifications cannot be switched off.</p>
+<h2 id="header-1">Cases for Okta E-Mails:</h2>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 183.0px;">
+<col style="width: 277.0px;">
+<col style="width: 299.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p><strong>Flow</strong></p>
+</th>
+<th>
+<p><strong>User Action</strong></p>
+</th>
+<th>
+<p><strong>Explanation</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>User Activation</p>
+</td>
+<td>
+<p>User gets an activation link to set a password.</p>
+</td>
+<td>
+<p>An Okta managed user should activate their account. This can happend when a user is create or activated.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Forgot Password Denied</p>
+</td>
+<td>
+<p>No Action</p>
+</td>
+<td>
+<p>A user tried to change their password but is not allowed to do that. This can happen in case a user tries to follow the forgot password flow without ever being logged in.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Password Reset by Admin</p>
+</td>
+<td>
+<p>User gets an activation link to set a new password</p>
+</td>
+<td>
+<p>Admin triggered resetting a password.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Forgot Password</p>
+</td>
+<td>
+<p>User gets an forgot password link to set a new password.</p>
+</td>
+<td>
+<p>A user fogort a password and triggers the forgot password flow. The user has to be allowed to do that - at least logged in onces</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>MFA Factor Enrollment</p>
+</td>
+<td>
+<p>No action</p>
+</td>
+<td>
+<p>A user gets informed that another factor has be configured for their account. This occurs for example if a user adds Google Authenticator as second factor.</p>
+<p><strong>This e-mail could be disabled</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>MFA Factor Reset</p>
+</td>
+<td>
+<p>No action</p>
+</td>
+<td>
+<p>A user gets informed that the multi factor configuration was removed. The user has to provide MFA enrollment again.</p>
+<p><strong>This e-mail could be disabled</strong></p>
+</td>
+</tr>
+<tr>
+<td data-highlight-colour="#fff0b3">
+<p>New Device Notification</p>
+<p>New Sign-On Notification</p>
+</td>
+<td>
+<p>No action</p>
+</td>
+<td>
+<p>It seems this e-mail is related to a new device that performs a login.</p>
+<p><strong>This e-mail could be disabled</strong></p>
+</td>
+</tr>
+<tr>
+<td data-highlight-colour="#fff0b3">
+<p>Change Email Notification</p>
+</td>
+<td>
+<p>???</p>
+</td>
+<td>
+<p>This might occur if an admin changes an e-mail address. This should be an extremly rare case.</p>
+<p>It might also happen in case e-mails are changed from lower-case to uper-case or the like.</p>
+</td>
+</tr>
+<tr>
+<td data-highlight-colour="#ffbdad">

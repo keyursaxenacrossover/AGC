@@ -1,0 +1,40 @@
+ class="wysiwyg-text-align-justify">
+<li>Language version info: This field provides basic information on the language version. Use the drop-down list <em>to switch between website language versions</em>. Ensure that the version you want to edit is selected. This is automatically the case when you open the editor from the website overview by clicking on the desired language version.</li>
+<li>Left-hand dialog: Depending on the selected tab, this dialog contains the basic settings or the page, template, or include structure of the current language version.</li>
+<li>Right-hand dialog: This dialog contains the actual <em>editing dialog</em> of the selected page, template, or include.</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015039516690" alt="image2024-1-15_9-59-29.png"></p>
+<p class="wysiwyg-text-align-justify"><strong>Tree view</strong></p>
+<p class="wysiwyg-text-align-justify">The tree view displays the page structure of the language version currently opened and the various tools available for editing.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015039530642" alt="baumansicht.png"></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Settings: In this dialog, you configure the properties of the language version.</li>
+<li>Pages: This tab contains the panel pages. The tree view displays the page structure:
+<ul>
+<li>
+<p>The panel navigation bar lists the menu items according to the order of the pages in the tree view, e.g. Home – Registration – How it works – News</p>
+</li>
+<li>
+<p>Pages located at the sublevel in the tree view are also displayed at the sublevel in the external navigation, e.g. How it works → FAQ<br><br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015069554450" alt="image2024-1-15_10-2-0.png"></p>
+</li>
+</ul>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Templates: Templates control how various data from modules and the panel database are processed and displayed on panel pages.</p>
+</li>
+<li>
+<p>Includes: Files that are incorporated e.g. in the main template. These include, for example, the CSS file, which is largely responsible for the layout of a website.</p>
+</li>
+</ul>
+<h3 id="adding-a-new-panel-page" class="wysiwyg-text-align-justify"><strong>Adding a New Panel Page</strong></h3>
+<p class="wysiwyg-text-align-justify">In your community panel, the panelists have their blogs. As these blogs are crucial for your research, you want to provide information for potential panelists and encourage them to ask questions via a dedicated form. Assume you want to create a new panel page that will allow prospective panelists to request information material. The new page is to be entitled “Blogging”. It is to be accessible to visitors and panelists and located in the navigation bar in the submenu of “How it works”. It should contain two elements: A section with explanations of what you can do on the page, and a form for requesting information.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015039527954" alt="image2019-7-15_15-43-59.png"></p>
+<h3 id="creating-a-new-panel-page" class="wysiwyg-text-align-justify"><strong>Creating a New Panel Page</strong></h3>
+<ol class="wysiwyg-text-align-justify">
+<li>Open the <strong>Pages</strong> tab and then click on the <strong>+ Page</strong> button.<br><br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015039525010" alt="image2019-7-18_9-15-37.png">
+</li>
+<li>
+<p>Enter the following data:<br><br>– Page identifier: The page identifier is used to uniquely identify the page within the system, regardless of language settings. It is particularly used in the browser address bar and for internal links. Therefore it should not contain any blank spaces or special characters. Enter: “blogging”.<br>– Parent page: You want to locate the page at the top level of navigation. Therefore select the following folder: “Pages → How it works”.<br>– Position: In the submenu of “How it works”, you want to place the page “at the beginning”.<br>– Internal page name: Name of the page in the tree structure. If you are editing a website with several language versions, you can choose a different name for each version. Enter: “Blogging”.<br>– Main template: This is the main template that defines the overall page structure. Select “main_default”.<br>– Positioning template: The template allows you to change the default position of content elements. This is not necessary for new sample pages.<br>– HTML title: Title used in the browser, the navigation, and in the breadcrumb. Enter: “Blogging”.<br>– Access control:

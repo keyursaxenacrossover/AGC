@@ -1,0 +1,68 @@
+ Employee surveys with EFS Employees)</p>
+</td>
+<td style="width: 162.83px;">
+<p>in</p>
+</td>
+<td style="width: 401.267px;">
+<p>The variable selected must contain the organizational unit named in the “code” field.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 170.451px;">
+<p>in or below</p>
+<p>(For Employee surveys with EFS Employees)</p>
+</td>
+<td style="width: 162.83px;">
+<p>in or below</p>
+</td>
+<td style="width: 401.267px;">
+<p>The variable selected must contain either the unit named in the “code” field or one of its subunits.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 170.451px;">
+<p>in branch</p>
+<p>(For Employee surveys with EFS Employees)</p>
+</td>
+<td style="width: 162.83px;">
+<p>in branch</p>
+</td>
+<td style="width: 401.267px;">
+<p>The variable selected must contain either the unit named in the “code” field or any other unit from the complete branch (from the root unit down to the lowest level). This operator is usually not used for routing purposes in the questionnaire but for report definitions.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify">If you want to evaluate your survey in EFS Reporting+, please note that EFS Reporting+ does not support all operators listed above.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The following operators are available: greater, greater equal, equal, less equal, less, unequal.</p>
+</li>
+</ul>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The following operators are not available: contains, contains any, matches the regex, in, in, or below, in the branch.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If a standard questionnaire filter contains one of these unsupported operators, the condition will be blank after transfer into EFS Reporting+. Alternative filters with unsupported operators will not be transferred at all.</p>
+<h3 id="selecting-codes" class="wysiwyg-text-align-justify">Selecting Codes</h3>
+<p class="wysiwyg-text-align-justify">The condition editor helps you to select suitable codes.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>If the data type of the selected variable includes codes resp. characteristics, these codes resp. characteristics are automatically offered in the “Code” field. All you need to do is select the appropriate code.</p>
+</li>
+<li>
+<p>For variables of data type “text”, you have to enter the code value for the condition yourself. This may happen, for example, if a free entry field is used to query a staff number or a zip code, or if the condition refers to a participant variable of type “text”.</p>
+</li>
+<li>
+<p>For variables of data type “text”, the filtering is case-sensitive. Blank spaces will be regarded as an incorrect entry. Umlauts can be used.</p>
+</li>
+<li>
+<p>If you wish to identify participants who did not enter anything in a specific text field, leave the “code” field empty. If, for example, all participants who left the v_1 text field empty are taken to an additional page below the filter, the condition could be “v_1 equal ”. (The condition “v_1 equal 0” would <em>not </em>work: Due to the predefined code “0”, the software expects a number that is not equal to 0. If the respondent enters a text, PHP classifies this as 0.)</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Please note: Using filters on open answers is generally problematic. It is virtually impossible to predict what participants will enter – on the other hand, you can only correctly formulate filter conditions if you know which data type is to be expected as input, for example. You should therefore use <a href="https://qbdocs.atlassian.net/wiki/spaces/DOC/pages/2750349427/Questionnaire#Plausibility-checks">plausibility checks</a> or type checks to restrict input options from the outset. If, for example, you ask for a percentage and then want to filter the value, a numbers-only check allows you to make sure that participants have not entered texts or negative numbers.</p>
+<p class="wysiwyg-text-align-justify">Please note that in the alternative filter conditions of the questionnaire, it is essential to use quotation marks for the text in the case of text comparisons. Example: IF (u_language = "en"). As always, please test the correct/expected behavior when creating filters.</p>
+<h3 id="conjunctions-with-and-and-or" class="wysiwyg-text-align-justify"><strong>Conjunctions with AND and OR</strong></h3>
+<p class="wysiwyg-text-align-justify">A filter is designed to only route a participant to a subpage if they simultaneously meet two conditions resulting from two different questions. To achieve this, you must set at least two filter definitions and create an AND conjunction between them.</p>
+<p class="wysiwyg-text-align-justify">If you create an OR conjunction between the filter conditions, the subpage below the filter will be shown to the respondent if they meet the condition resulting from

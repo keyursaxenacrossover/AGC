@@ -1,0 +1,37 @@
+ will inform you when the switch will be done. We do not expect noticable amount of time where user are not able to login.</p><p>We are asking you to put the changes in place on your end as soon as possible. We cannit wait any longer than end of February with the switch and want to prevent any timeframe where users are not able to login.</p><p></p><p></p><p></p><h1 id="header-1">Notes</h1><ul>
+<li><p>Changes on our end → domain of Tivian Access will change from <a href="http://access.questback.com">http://access.questback.com</a>  to <a href="http://access.tivian.com">http://access.tivian.com</a>  (login screen)</p></li>
+<li>
+<p>UI Changes <strong><span style="color: rgb(255,86,48);">SCREENSHOTS</span></strong></p>
+<ul>
+<li><p>Login will look like Tivian</p></li>
+<li><p>Emails will have a Tivian branding</p></li>
+</ul>
+</li>
+<li>
+<p>IdP changes</p>
+<ul>
+<li>
+<p>SAML → redo connection with new metadata exchange</p>
+<ul><li><p><strong><span style="color: rgb(255,86,48);">FIRST CHECK:</span></strong> test with one customer if they only have to apply our new metadata-file or if a new metadata file from their end is also required</p></li></ul>
+</li>
+<li>
+<p>OIDC → if possible just add another domain, if not create a new app (client ID, client secret)</p>
+<ul><li><p><strong><span style="color: rgb(255,86,48);">WHAT DOMAINS HAVE TO BE CHANGED</span></strong></p></li></ul>
+</li>
+</ul>
+</li>
+<li><p>Users not part of IdP → <strong><span style="color: rgb(255,86,48);">FIRST CHECK WITH LUDGER / FRANCESCO</span></strong></p></li>
+<li><p>We will resync users → might take a while → actual switch will happen after resync (time taken depends on size of userbase) <strong><span style="color: rgb(255,86,48);">MORE EXPLANATION</span></strong></p></li>
+<li><p>Downtime/Service unavailable/Login not possible → we do not expect a significant time where users cannot login (possibly a few minutes)</p></li>
+</ul><p></p><p><strong>Deadline:</strong></p><p>Things have to be entirely done at end of February (including resync)</p>FIRST CHECK:</span></strong> test with one customer if they only have to apply our new metadata-file or if a new metadata file from their end is also required</p></li></ul>
+</li>
+<li>
+<p>OIDC → if possible just add another domain, if not create a new app (client ID, client secret)</p>
+<ul><li><p><strong><span style="color: rgb(255,86,48);">WHAT DOMAINS HAVE TO BE CHANGED</span></strong></p></li></ul>
+</li>
+</ul>
+</li>
+<li><p>Users not part of IdP → <strong><span style="color: rgb(255,86,48);">FIRST CHECK WITH LUDGER / FRANCESCO</span></strong></p></li>
+<li><p>We will resync users → might take a while → actual switch will happen after resync (time taken depends on size of userbase) <strong><span style="color: rgb(255,86,48);">MORE EXPLANATION</span></strong></p></li>
+<li><p>Downtime/Service unavailable/Login not possible → we do not expect a significant time where users cannot login (possibly a few minutes)</p></li>
+</ul><p></p><p><strong>Deadline:</strong></p><p>Things have to be entirely done at end of February (including resync)</p>

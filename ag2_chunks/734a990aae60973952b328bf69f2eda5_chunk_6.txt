@@ -1,0 +1,88 @@
+-colour="#c0b6f2">
+<p><strong>Option</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="height: 22px; width: 336.91px;" data-highlight-colour="#c0b6f2">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr style="height: 67px;">
+<td style="height: 67px; width: 328.889px;">
+<p>Manual selection of the stratification variables and entry of the target distribution (absolute values)</p>
+</td>
+<td style="height: 67px; width: 328.889px;">
+<p>The stratification is defined manually, as usual, the target distribution will be specified in absolute values</p>
+</td>
+</tr>
+<tr style="height: 67px;">
+<td style="height: 67px; width: 328.889px;">
+<p>Manual selection of the stratification variables and entry of the target distribution (percentages)</p>
+</td>
+<td style="height: 67px; width: 328.889px;">
+<p>The traditional stratification method involves the entry of target distribution as a percentage.</p>
+</td>
+</tr>
+<tr style="height: 67px;">
+<td style="height: 67px; width: 328.889px;">
+<p>Import of a file containing the stratification settings<br>(absolute values)</p>
+</td>
+<td style="height: 67px; width: 328.889px;">
+<p>The stratification is defined by import, and the target distribution will be specified in absolute values.</p>
+</td>
+</tr>
+<tr style="height: 67px;">
+<td style="height: 67px; width: 328.889px;">
+<p>Import of a file containing the stratification settings<br>(percentages)</p>
+</td>
+<td style="height: 67px; width: 328.889px;">
+<p>The stratification is defined by import, and the target distribution will be specified in percentages.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"><br><strong>Cell definition mode</strong></p>
+<p class="wysiwyg-text-align-justify">Similar to the quotas, there are two ways to define the target values for stratification:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Interlaced: The distribution is defined in detail for all possible combinations of attributes. In the example below, it is defined exactly how many male soccer fans, female soccer fans, and male and female baseball fans the sample contains.</p>
+</li>
+<li>
+<p>Non-interlaced: The stratification distribution is defined for each selected answer category of the stratification variables. The internal distribution is ignored. If this mode was applied in the example below, this might mean that soccer and baseball fans would each account for 50% of the participants, 50% of the participants were male, while the soccer fans could be made up of 20% men and 80% women.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Manual stratification</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Create a sample as usual and define the basic set.</p>
+</li>
+<li>
+<p>Switch to the<strong> Stratification</strong> tab.</p>
+</li>
+<li>
+<p>Select one of the manual stratification methods and confirm by clicking on <strong>Continue</strong>.</p>
+</li>
+<li>
+<p>Select the appropriate cell value specification mode. You can choose between “interlaced” and “non-interlaced”. Per default, “interlaced” is activated. If you change the setting, please confirm with <strong>Restrict</strong>.</p>
+</li>
+<li>
+<p>Optionally you can restrict the list of available variables to a specific master data category. If you do so, confirm with<strong> Restrict</strong>.</p>
+</li>
+<li>
+<p>The variables available for stratification are listed in the bottom section of the tab. Select the appropriate stratification variable(s) and confirm by clicking on <strong>Continue</strong>. In the example, the variables <em>u_gender</em> and <em>m_favoritesports</em> are used.</p>
+</li>
+<li>
+<p>All answer categories of the selected stratification variables are listed.</p>
+</li>
+<li>
+<p>Select the answer categories you wish to use for stratification. It is advisable to exclude missing categories such as “no answer”. Confirm by clicking on <strong>Continue</strong>.</p>
+</li>
+<li>
+<p>An overview of the stratification cells with their current proportions will be displayed. The number of surveys completed by the prospective sample members over the past weeks will also be indicated: Thus, you can check in time whether a high percentage of the panelists might be overworked or whether many candidates have not participated in any survey for some time i.e. might be inactive.</p>
+</li>
+<li>
+<p>Enter the target values in absolute numbers or percentages, as required. When expressing target values as percentages, you also have to predefine the absolute total amount to be reached. It should be defined in such a manner that the specific target values can be met based on the number of existing candidates.</p>
+</li>
+<li>
+<p>Click on <strong>Check</strong> to see whether your stratification can be achieved with the current basic set.</p>
+<ul>
+<li>
+<p>Target values or

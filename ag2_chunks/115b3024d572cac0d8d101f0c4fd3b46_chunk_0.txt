@@ -1,0 +1,72 @@
+<h1 id="h_01J5X9KCC9E6GEZYZCF3BGQW0S">Table of Contents</h1>
+<ul>
+<li>
+<a href="#header-1">Azure AD Configuration:</a>
+<ul>
+<li>
+<a href="#header-3">Step 1: Create an App registration in Azure AD (tab App Registrations)</a>
+<ul>
+<li><a href="#header-5">Step 2: Configure Supported Account types</a></li>
+<li><a href="#header-6">Step 3: Add a redirect URI to the App Registration</a></li>
+<li><a href="#header-7">Step 4: Add permission for “UserRead” to that App Registration</a></li>
+<li><a href="#header-8">Step 5: Add optional claims to the manifest of the created App Registration in Azure AD.</a></li>
+<li><a href="#header-9">Step 6: Create a secret for that App Registration and remember it</a></li>
+<li><a href="#header-10">Step 7: Remember the client ID of that App Registration</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>An Azure Active Directory Federation should be setup as OpenID Connect federation. SAML might be possible but is not the preferred configuration.</p>
+<p>The following are tips for clients how to configure an Azure AD instance. This is just an experience report. The following will always be part of the clients infrastructure and we will not configure anything in there.</p>
+<p><strong>WHILE THIS IS PUBLISHED, WE NEED TO CONFIRM WITH TIVIAN THE VALIDITY OF THIS PROCESS, AS THE SOURCE OF THIS KNOWLEDGE DATES FROM 2020</strong></p>
+<h1 id="header-1">Azure AD Configuration:</h1>
+<h3 id="header-3">Step 1: Create an App registration in Azure AD (tab App Registrations)</h3>
+<h3 id="header-5">Step 2: Configure Supported Account types</h3>
+<p>The value should be “Only Account from this AD” (single tenant)</p>
+<p>Also see <a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-convert-app-to-be-multi-tenant">https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-convert-app-to-be-multi-tenant</a></p>
+<h3 id="header-6">Step 3: Add a redirect URI to the App Registration</h3>
+<p>The redirect URI will be the following with a replacement for our okta domain: <a>https://&lt;our-okta-domain&gt;/oauth2/v1/authorize/callback</a></p>
+<p>For Production: <a href="https://access.questback.com/oauth2/v1/authorize/callback">https://access.questback.com/oauth2/v1/authorize/callback</a></p>
+<h3 id="header-7">Step 4: Add permission for “UserRead” to that App Registration</h3>
+<p>The value will be https://graph.microsoft.com/User.Read</p>
+<h3 id="header-8">Step 5: Add optional claims to the manifest of the created App Registration in Azure AD.</h3>
+<p>The family_name and the given_name have to be sent.</p>
+<pre><code class="language-json">"optionalClaims": {
+    "idToken": [
+        {
+            "name": "family_name",
+            "essential": true
+        },
+        {
+            "name": "given_name",
+            "essential": true
+        }
+    ]
+},
+"accessToken": [],
+"saml2Token": []</code></pre>
+<h3 id="header-9">Step 6: Create a secret for that App Registration and remember it</h3>
+<h3 id="header-10">Step 7: Remember the client ID of that App Registration</h3> App Registration</h3>
+<p>The redirect URI will be the following with a replacement for our okta domain: <a>https://&lt;our-okta-domain&gt;/oauth2/v1/authorize/callback</a></p>
+<p>For Production: <a href="https://access.questback.com/oauth2/v1/authorize/callback">https://access.questback.com/oauth2/v1/authorize/callback</a></p>
+<h3 id="header-7">Step 4: Add permission for “UserRead” to that App Registration</h3>
+<p>The value will be https://graph.microsoft.com/User.Read</p>
+<h3 id="header-8">Step 5: Add optional claims to the manifest of the created App Registration in Azure AD.</h3>
+<p>The family_name and the given_name have to be sent.</p>
+<pre><code class="language-json">"optionalClaims": {
+    "idToken": [
+        {
+            "name": "family_name",
+            "essential": true
+        },
+        {
+            "name": "given_name",
+            "essential": true
+        }
+    ]
+},
+"accessToken": [],
+"saml2Token": []</code></pre>
+<h3 id="header-9">Step 6: Create a secret for that App Registration and remember it</h3>
+<h3 id="header-10">Step 7: Remember the client ID of that App Registration</h3>

@@ -1,0 +1,35 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1054867866">https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1054867866</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">How to activate the "receipt" module?</a></li>
+<ul>
+<li><a href="#header-3">How to configure the receipts?</a></li>
+<ul>
+<li><a href="#header-5">General information</a></li>
+<li><a href="#header-6">How do you regenerate a pdf receipt?</a></li>
+<li><a href="#header-7">Hintergrund</a></li>
+<li><a href="#header-8">Notwendige Schritte</a></li>
+<li><a href="#header-9">Häufige Fehlerursachen</a></li>
+</ul>
+</ul>
+</ul>
+</ul><h1 id="header-1">How to activate the "receipt" module?</h1><p></p><ul>
+<li><p>Add the module "receipt" to the config.</p></li>
+<li><p>execute healself</p></li>
+</ul><p>In 8.0 and higher</p><ul><li><p>only activate <strong>receipt</strong> in config</p></li></ul><p>The customers aren't allowed to see the receipt admin GUI. There is a special config flag called $__has_receipt_admin and this should remain false. QuestBack<a href="https://it.globalpark.de/twiki/bin/edit/Support/QuestBack?topicparent=Support.PDFQuittungenAllg">?</a> user can always see the receipts. The only exception at the moment is Kingsley and it shouldn't be activated anywhere else!</p><div class="expand-macro">
+<h4 string="in 7.0"></h4>
+<ul>
+<li><p>checkout <strong>receipt</strong> and <strong>receipt_admin</strong> under <strong>modules</strong></p></li>
+<li><p>cvs -d <a>:pserver:gpinst@cvs.3uu.de</a>:/vol/cvs co -r SIEBEN-0 modules/receipt</p></li>
+<li><p>cvs -d <a>:pserver:gpinst@cvs.3uu.de</a>:/vol/cvs co -r SIEBEN-0 modules/receipt_admin</p></li>
+</ul>
+</div><div class="expand-macro">
+<h4 string="in 6.0"></h4>
+<ul>
+<li><p>checkout <strong>receipt</strong> and <strong>receipt_admin</strong> under <strong>modules</strong></p></li>
+<li><p>cvs -d <a>:pserver:gpinst@cvs.3uu.de</a>:/vol/cvs co -r SECHS-0 modules/receipt</p></li>
+<li><p>cvs -d <a>:pserver:gpinst@cvs.3uu.de</a>:/vol/cvs co -r SECHS-0 modules/receipt_admin</p></li>
+</ul>
+</div><h2 id="header-3">How to configure the receipts?</h2><p> On the EFS start page there is a button called "receipt admin". When you click on the button you'll see all the existing projects with the standard layout. To activate a receipt for a certain project, find the corresponding project in the list and click on the PDF symbol. There you can configure a few options like which pages to hide, the watermark, etc. for more detailed customisation you need to change files directly in the installation and the project.</p><p><strong>German Version:</strong> <br>Auf der EFS Startseite gibt es den Menüpunkt "Quittungen Verwaltung", dort findet man alle existierenden Projekte. Um für ein Projekt die Quittungen zu aktivieren sucht man dsa Projekt und erzeugt die PDF Quittung indem man auf das PDF Symbol klickt. Dort können weitere rudimentäre Einstellungen vorgenommen werden. Möchte man z.B. das alle Fragen angezeigt werden, wählt man einfach keine aus. Bei Watermark kann man wohl ein PDF mit dem Firmenlogo etc. hochladen, für mehr customizing muss man auf die Console gehen.</p><h3 id="header-5">General information</h3><p><strong>Responsive Layout</strong> <br>The module now does support responsive layout projects, too.</p><p><strong>Location</strong> <br>You find the receipts in uc/receipts/xxx (xxx = pid). In "images" you can customize the design. Changes on the spacing can be configured in pdfquittung.tex.</p><p><strong>How to integrate?</strong> <br>The participant can get the receipt at the end of the questionnaire and on the last page. You have to copy the link you find on top of the receipt admin UI to the endpage of the survey. For personalized surveys you can use the SESSION or the CODE. For anonymous surveys you only have the SESSION option. For example: <a href="http://www.example.com/uc/super_project/get_survey_pdf.php?code=#code#">www.example.com/uc/super_project/get_survey_pdf.php?

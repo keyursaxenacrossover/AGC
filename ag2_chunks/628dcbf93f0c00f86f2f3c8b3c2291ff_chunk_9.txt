@@ -1,0 +1,238 @@
+>
+<p>2</p>
+</td>
+<td>
+<p>ERR_SENDER_REJECTED</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>3</p>
+</td>
+<td>
+<p>ERR_RECIPIENT_REJECTED</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>4</p>
+</td>
+<td>
+<p>ERR_MESSAGE_REJECTED</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>5</p>
+</td>
+<td>
+<p>ERR_INVALID_SUPPLIER</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>6</p>
+</td>
+<td>
+<p>ERR_UNSUPPORTED_DELIVERY</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>7</p>
+</td>
+<td>
+<p>ERR_TLS_FAILURE</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>8</p>
+</td>
+<td>
+<p>ERR_DELIVERY_FAILED</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>10</p>
+</td>
+<td>
+<p>ERR_DELIVERY_SMS_AMOUNT</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>11</p>
+</td>
+<td>
+<p><font>ERR_INVALID_RECIPIENT</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>50</p>
+</td>
+<td>
+<p>ERR_PANEL_PASSWORD_RECOVERY</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>98</p>
+</td>
+<td>
+<p>ERR_NUM_TRY_EXCEEDED</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<h2 id="header-14"><font>Status of mails in the mails table:</font></h2>
+<p><font>Status 1: Can be sent </font></p>
+<p><font>Status 0: Sending stopped</font></p>
+<p> </p>
+<h2 id="header-15">SMS  and mail sending codes from mail_rcpt</h2>
+<h3 id="header-17"><font>Up to EFS 10.5</font></h3>
+<p><font>Table: mail_rcpt </font> <br><font>Column: status</font></p>
+<p> </p>
+<table data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<th>
+<p><u> <font>Status</font> </u></p>
+</th>
+<th>
+<p><u> <font>Meaning</font> </u></p>
+</th>
+</tr>
+<tr>
+<td>
+<p><font>1</font></p>
+</td>
+<td>
+<p><font>Mail sent</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><font>2</font></p>
+</td>
+<td>
+<p><font>Mail held</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><font>3</font></p>
+</td>
+<td>
+<p><font>Invalid email</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><font>98</font></p>
+</td>
+<td>
+<p><font>Invalid email</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><font>99</font></p>
+</td>
+<td>
+<p><font>Mail queue deleted</font></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<h3 id="header-18">After EFS 10.6</h3>
+<p>modules/efs/components/mail/status.inc.php</p>
+<table data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<th>
+<p><u> <font>Status</font> </u></p>
+</th>
+<th>
+<p><u> <font>Meaning</font> </u></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>-77</p>
+</td>
+<td>
+<p>STATUS_PENDING</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>0</p>
+</td>
+<td>
+<p>STATUS_QUEUED / Queued</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><font>1</font></p>
+</td>
+<td>
+<p><font>Mail sent</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><font>2</font></p>
+</td>
+<td>
+<p><font>Mail held</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><font>3</font></p>
+</td>
+<td>
+<p><font>Invalid email</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><font>98</font></p>
+</td>
+<td>
+<p><font>Invalid email</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><font>99</font></p>
+</td>
+<td>
+<p><font>Mail queue deleted</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>101</p>
+</td>
+<td>
+<p>STATUS_FAILED</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>102</p>
+</td>
+<td>
+<p>STATUS_UNREACHABLE</p>
+</td>
+</tr>
+<tr>

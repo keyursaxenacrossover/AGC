@@ -1,0 +1,35 @@
+For example, you use the </span><strong>Description</strong><span style="color: #091e42;"> to depict a description in the </span><em>Report Manager </em><span style="color: #091e42;">of how the shape cell is to be filled. You can always add such a tag.</span></p>
+<p class="wysiwyg-text-align-justify"><span style="color: #091e42;"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013838151570" alt="Tag Shape description.png"></span></p>
+<ul class="wysiwyg-text-align-justify">
+<li>For this, you use Shape_Description as the name and use the value of the requested text description. For example, if you enter "Focus unit" as a reference to the unit element to be selected for the cell, this note is displayed in the <em>Report Manager</em>.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013838149778" alt="Hint.png"></p>
+<h3 id="the-tagging-of-text-box" class="sc-erNlkL cxUUMl wysiwyg-text-align-justify"><strong>The tagging of the text box</strong></h3>
+<p class="wysiwyg-text-align-justify">You tag a shape cell with <strong>Text Box</strong> to mark this cell for example with a label in the mapping on the sub-navigation filed <strong>Pages</strong>.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>You click on <strong>Add Tag</strong> in the <em>Tagging Tool</em>. </li>
+</ul>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013850408594" alt="Text Box.png"></p>
+<h3 id="the-tagging-of-the-loop-mode" class="sc-erNlkL cxUUMl wysiwyg-text-align-justify"><strong>The tagging of the Loop mode</strong></h3>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify">In order to use the <strong>Loop mode</strong> on the sub-navigation field <strong>Pages</strong> you create three tags. Of course, you are able to create a fourth one. It is the description tag that serves as a helpful description of the elements.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Again you start by setting the shape type: You enter Shape_Type as the name and Table as the value.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013838144914" alt="Loop mode 2.png"></p>
+<ul class="wysiwyg-text-align-justify">
+<li>In the second tag, you set Loop_Mode as the name and you set the value the way it should be looped: rows or columns.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013850406290" alt="Loop mode row.png"></p>
+<ul class="wysiwyg-text-align-justify">
+<li>The third tag contains the information on which cell will be mapped. Again you start with the name and you enter EDITABLECELLS. In order to set a value you select the cells which should be mapped. For this, you use the table icon.</li>
+<li>Necessarily you have to select the whole column and the whole row to activate the<strong> Loop mode</strong>.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013850403602" alt="EDITABLECELLS 2.png"></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Due to this definition a slide switch appears in the <em>Report Manager</em> which you use to activate the <strong>Loop mode</strong>.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013850402578" alt="Loop_mode_marked.png"></p>
+<p class="wysiwyg-text-align-justify">Information</p>
+<p class="wysiwyg-text-align-justify"><span style="color: #333333;">Both the Dimension and the Unit collection are iterated either via the row or the column. If you use </span><strong>Rows </strong><span style="color: #333333;">as the value for the </span><strong>Loop mode</strong><span style="color: #333333;"> tag, the values are filled row by row into the cells automatically. If you use </span><strong>Columns</strong><span style="color: #333333;"> as the value for the </span><strong>Loop mode</strong><span style="color: #333333;"> tag, the values are set column by column next to each other automatically.</span></p>
+<h2 id="starting-page" class="auto-cursor-target wysiwyg-text-align-justify

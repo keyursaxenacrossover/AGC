@@ -1,0 +1,93 @@
+mysight-sheetapplyhierarchicalfilter" class="wysiwyg-text-align-justify">mySight.sheetApplyHierarchicalFilter</h3>
+<p class="wysiwyg-text-align-justify">Applies the hierarchical filter for a sheet specified by its name.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.sheetApplyHierarchicalFilter(pageModuleIdentifier, sheetName, fieldName, values, options)
+    .then(function(fieldName) {
+        ...
+    });</code></pre>
+<h3 id="mysight-sheetclearfilter" class="wysiwyg-text-align-justify">mySight.sheetClearFilter</h3>
+<p class="wysiwyg-text-align-justify">Clears the filter for a sheet specified by its name.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.sheetClearFilter(pageModuleIdentifier, sheetName, fieldName)
+    .then(function(fieldName) {
+        ...
+    });</code></pre>
+<hr>
+<h2 id="listening-to-mysight-tableau-events" class="wysiwyg-text-align-justify">Listening to MySight Tableau events</h2>
+<p class="wysiwyg-text-align-justify">The api supports registering for a number of Tableau events. The supported events are:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>FIRST_INTERACTIVE</p>
+</li>
+<li>
+<p>VIZ_RESIZE</p>
+</li>
+<li>
+<p>TAB_SWITCH</p>
+</li>
+<li>
+<p>FILTER_CHANGE</p>
+</li>
+<li>
+<p>PARAMETER_VALUE_CHANGE</p>
+</li>
+<li>
+<p>MARKS_SELECTION</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">To register a listener for an event use the apis bus methods together with the apis tableau event constants:</p>
+<pre><code class="language-text">Questback.portalsApi.bus.subscribe(
+  Questback.portalsApi.mySight.tableauEventFirstInteractive, function(event) {
+    console.log(event);
+});
+
+Questback.portalsApi.bus.subscribe(
+  Questback.portalsApi.mySight.tableauEventVizResize, function(event) {
+    console.log(event);
+});
+
+Questback.portalsApi.bus.subscribe(
+  Questback.portalsApi.mySight.tableauEventFilterChange, function(event) {
+    console.log(event);
+});
+
+Questback.portalsApi.bus.subscribe(
+  Questback.portalsApi.mySight.tableauEventTabSwitch, function(event) {
+    console.log(event);
+});
+
+Questback.portalsApi.bus.subscribe(
+  Questback.portalsApi.mySight.tableauEventParameterValueChange, function(event) {
+    console.log(event);
+});
+
+Questback.portalsApi.bus.subscribe(
+  Questback.portalsApi.mySight.tableauEventMarksSelection, function(event) {
+    console.log(event);
+});</code></pre>
+<p class="wysiwyg-text-align-justify">Note that you will receive events coming from any MySight Tableau instance on the page, so upon receiving an event you might have to make sure that you are only handling events coming from a specific instance by checking the <em>pageModuleIdentifier</em> in the <em>event</em> object.</p>
+<pre><code class="language-js">Questback.portalsApi.bus.subscribe(
+  Questback.portalsApi.mySight.tableauEventVizResize, function(event) {
+    if (event.mysight.pageModuleIdentifier === 'page-module-identifier-to-handle') {
+        // Do something
+    }
+});</code></pre>
+<h2 id="use-portals-styles" class="wysiwyg-text-align-justify">Use Portals styles</h2>
+<p class="wysiwyg-text-align-justify">You can use Portals CSS styles by importing its stylesheets into your iframe. The following examples will guide you through the setup process.</p>
+<h3 id="retrieve-file-paths" class="wysiwyg-text-align-justify">Retrieve file paths</h3>
+<p class="wysiwyg-text-align-justify">First you need to get the paths of the stylesheet files and font definitions:</p>
+<pre><code class="language-text">Questback.portalsApi.initialize().then(function() {
+    Questback.portalsApi.query.portalInfo().then(function(result) {
+        // Continue here with step 7.2
+    });
+});</code></pre>
+<p class="wysiwyg-text-align-justify">The <em>result</em> parameter will contain the necessary information in its <em>layout</em> field:</p>
+<pre><code class="language-text">{
+    portal: {...},
+    layout: {
+        customCss: "&lt;https://PORTALS-DOMAIN/portals/PORTALS-ID/css/compile.css?v=123456",&gt;
+        portalsCss: "&lt;https://PORTALS-DOMAIN/portals/PORTALS-ID/css/custom.css?v=123456",&gt;
+        extensionCss: "&lt;https://PORTALS-DOMAIN/portals/PORTALS-ID/css/extension.css?v=123456",&gt;
+        fontCss: "&lt;https://fonts.googleapis.com/css?family=Lato",&gt;
+        fontDefinition: "'Lato', sans-serif",
+    }
+}</code></pre>
+<p class="wysiwyg-text-align-justify">These paths do not change for a given portal (besides the value of the cachebuster parameter called <em>v</em>), so it is possible to retrieve them once, store them and hardcode them into your code, to save postMessage requests and improve startup times a little.</p>

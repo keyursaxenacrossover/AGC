@@ -1,0 +1,54 @@
+<p><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p>This article provides a comprehensive guide to the Malware Scanner service, covering its architecture, implementation, and integration within Tivian's software ecosystem. It details the system's components, deployment strategy, and operational considerations.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>Starting with EFS 22.2, in addition to the regular scans, all EFS installations are protected out of the box with the popular open sourced ClamAV® against anti-virus and malware. The anti-virus signatures are automatically being updated and the service is scaling automatically depending on the load and overall performance of the malware scanner.</p>
+<p>Uploaded files are immediately scanned, before being processed further or moved to their final destination within EFS and in case malware was found, the user will be informed about the exception and his upload will be immediately destroyed.</p>
+<p>In the survey module, the message can be modified in the configuration of the question type.</p>
+<ul>
+<li><a href="#introduction">Introduction and Goals</a></li>
+<li><a href="#architecture">System Architecture</a></li>
+<li><a href="#implementation">Implementation Details</a></li>
+<li><a href="#deployment">Deployment and Operations</a></li>
+<li><a href="#integration">Integration and Usage</a></li>
+<li><a href="#quality">Quality and Performance</a></li>
+<li><a href="#risks">Risks and Technical Debt</a></li>
+<li><a href="#h_01J3JPXA882KGP28RDCK6BE78S">Helpful links</a></li>
+</ul>
+<h2 id="introduction">Introduction and Goals</h2>
+<p>The Malware Scanner is designed to enhance security measures by automatically scanning all uploaded files to detect and prevent the distribution of malware, viruses, or other harmful content. This system aims to protect the integrity of the application and mitigate threats to users' data and systems.</p>
+<h3 id="h_01J3FZNNARVY9V8BT0SHX50J0G">Quality Goals / Cross Functional Goals</h3>
+<ul>
+<li>Implement stringent security measures to protect sensitive data</li>
+<li>Ensure high maintainability for easy updates and extensions</li>
+<li>Provide reliable and continuous operation with minimal downtime</li>
+<li>Scale horizontally to accommodate increasing loads</li>
+</ul>
+<h2 id="architecture">System Architecture</h2>
+<p>The system is designed to be accessed internally by Tivian systems and is not directly accessible by external parties. It connects to an external service (freshclam server) to update malware signatures and scanning algorithms.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20346625528850" width="574" height="436"></p>
+<h3 id="h_01J3JEFD6WPHJP2Y1XWV391MSP">Key components</h3>
+<table style="margin-right: 0px; margin-left: 0px; border-collapse: collapse; width: 760px; border: 1px solid var(--ds-background-accent-gray-subtler,#c1c7d0); height: 1px; background-color: #ffffff;" data-testid="renderer-table" data-number-column="false" data-table-width="760" data-layout="default">
+<colgroup> <col style="width: 224px;"> <col style="width: 532px;"> </colgroup>
+<tbody>
+<tr style="height: 46.4219px;">
+<th class="ak-renderer-tableHeader-sortable-column__wrapper" style="padding: 0px; text-align: left; vertical-align: top; background-color: var(--ds-background-accent-gray-subtlest,#f4f5f7);" colspan="1" rowspan="1" data-colwidth="225" aria-sort="none">
+<div class="ak-renderer-tableHeader-sortable-column">
+<p data-renderer-start-pos="415"><strong data-renderer-mark="true">Component</strong></p>
+<figure class="ak-renderer-tableHeader-sorting-icon__wrapper ak-renderer-tableHeader-sorting-icon__no-order">
+<div role="presentation">
+<div class="ak-renderer-tableHeader-sorting-icon  cc-1eczmg9" tabindex="0" role="button" aria-label="No sort applied to the column" aria-disabled="false">
+<div class="sorting-icon-svg__no_order ak-renderer-tableHeader-sorting-icon-inactive cc-37vp66">
+<div class="cc-1uj2pwb"> </div>
+</div>
+</div>
+</div>
+</figure>
+</div>
+</th>
+<th class="ak-renderer-tableHeader-sortable-column__wrapper" style="padding: 0px; text-align: left; vertical-align: top; background-color: var(--ds-background-accent-gray-subtlest,#f4f5f7);" colspan="1" rowspan="1" data-colwidth="533" aria-sort="none">
+<div class="ak-renderer-tableHeader-sortable-column">
+<p data-renderer-start-pos="428"><strong data-renderer-mark="true">Purpose</strong></p>
+<figure class="ak-renderer-tableHeader-sorting-icon__wrapper ak-renderer-tableHeader-sorting-icon__no-order">
+<div role="presentation">
+<div class="ak-renderer-tableHeader-sorting-icon  cc-1eczmg9" tabindex="0" role="button" aria

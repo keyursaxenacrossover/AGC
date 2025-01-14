@@ -1,0 +1,80 @@
+Insert survey link</strong> button above the entry form. Clicking on this button will prompt a window where you can select the desired survey. The syntax for the link will then be inserted into your post automatically.</li>
+<li>If a panelist belonging to an active sample of this survey reads your post, he will see his personal clickable authentication link.</li>
+</ul>
+<h2 id="assigning-bonus-points" class="wysiwyg-text-align-justify"><strong>Assigning Bonus Points</strong></h2>
+<p class="wysiwyg-text-align-justify">In many communities, bonus points are awarded for participation in forum discussions. From EFS 10.4, the bonus points can be awarded automatically. But manual, focused allocations are possible as well.</p>
+<p class="wysiwyg-text-align-justify"><strong>Assigning bonus points</strong></p>
+<ol class="wysiwyg-text-align-justify">
+<li>To assign points, click on the <strong>Assign bonus points</strong> icon in the overview.</li>
+<li>Fill in the form.</li>
+<li>Confirm by clicking on <strong>Check</strong>.</li>
+<li>The software then checks how many panelists the specified criteria apply to and how many bonus points will be assigned if you proceed.</li>
+<li>Click on <strong>Assign Points</strong> to trigger the assignment of points.</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><strong>Configuration options</strong></p>
+<p class="wysiwyg-text-align-justify">The table lists the configuration options for the assignment of bonus points.</p>
+<table class="wrapped wysiwyg-text-align-justify" style="margin-right: 0px; margin-left: auto;" border="1">
+<colgroup> <col> <col> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center">Field</th>
+<th class="wysiwyg-text-align-center">Meaning</th>
+</tr>
+<tr>
+<td>Website / Language version</td>
+<td>
+<p>Website and language version to which the forum belongs. Cannot be changed subsequently.</p>
+</td>
+</tr>
+<tr>
+<td>Text for bonus points history</td>
+<td>
+<p>Text entered in the bonus points history and displayed on the standard panel’s “Account balance” page.</p>
+<p>Mandatory entry.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Bonus points are creditable per post</p>
+</td>
+<td>
+<p>Number of bonus points assigned per post.</p>
+<p>Mandatory entry.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Maximum number of points (cap) creditable per panel</p>
+</td>
+<td>
+<p>Maximum number of points that can be assigned to a panelist. Defining such a cap helps you prevent panelists from artificially inflating their number of posts.</p>
+</td>
+</tr>
+<tr>
+<td>Exclude testers from crediting</td>
+<td>
+<p>Ticking this checkbox allows you to exclude panelists with a tester status from the assignment of bonus points.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Assign points for postings from /until</p>
+</td>
+<td>
+<p>Period for which points are to be assigned. Automatically filled with the current date.</p>
+<p>Mandatory entry.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="exporting-posts-from-a-forum-or-a-selected-topic" class="wysiwyg-text-align-justify"><strong>Exporting Posts from a Forum or a Selected Topic</strong></h2>
+<p class="wysiwyg-text-align-justify">You can export the posts of a forum or a selected topic, e.g. for external analysis. Images and other files which are used by the panelists to enrich their posts can be included, if necessary.</p>
+<p class="wysiwyg-text-align-justify">To do so, please proceed as follows: Search for the forum you wish to select in the forum overview or the topic in the topic list, respectively. Specify the file type (Excel or CSV) and the character set. If you need the uploaded files, tick “Export including attached files”. Click on Download and save the data on your PC.</p>
+<p class="wysiwyg-text-align-justify">The export file contains all posts of the forum or the topic, respectively, with the following details:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Selected panelist data: The author’s pseudonym (pseudonym), account name (u_account), first name (u_firstname), name (u_name), e-mail address (u_email), an alternative ID (u_other_id) and cell phone number (u_mobile)</li>
+<li>Selected system data: Panel entry date (penter_date), panel status (pstatus)</li>
+<li>Forum-specific data: Date and time of post (dt), ID (topic_id) and title (topic_title) of the topic, post ID (id), position in the thread structure (path), title (title), text (description) and number and result of the community rating (rating_cont, rating_average).</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If you have activated “Export including attached files”, the export file described above and the associated files will be exported in a compressed zip file. The associated files are named according to the following scheme: TopicD_UserID_filename.extension.</p>
+<h1 id="discussions" class="sc-iGrrsa eYmPYl wysiwy

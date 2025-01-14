@@ -1,0 +1,42 @@
+ assignment of an action, the status change of an action, the sharing of an action and the commenting of an action can now be found in the module configuration of the<em> Action Board</em>. All e-mail templates are created under the <strong>Libraries</strong> tab. The e-mail templates should be created first in the main system <strong>Libraries</strong> area and they can then be selected in page module configuration. Please note that every additional <em>Action Board</em> that will be added to an individual portal will be actually a clone of the first board added so these settings do not need to be configured more than once.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998443398162" alt="image2018-10-26_11-12-5.png"></p>
+<p><u>The archive of the </u><em><u>Action Board</u></em></p>
+<p>A new <strong>Show archived</strong> link will appear for any action board that has at least one ticket which has been archived. The column “Rating” has been added to the archive view, allowing you to see the average rating of an archived ticket. This way you can see at a glance which ticket has been rated high/low. In addition, the archived tickets can be sorted according to the average rating.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998413163538" alt="image2018-10-26_11-13-50.png"></p>
+<p><u>The overview of the </u><em><u>Action Board</u></em></p>
+<p>A new filter drop-down makes it easier to get an overview of the tickets created on the board. For example, you can use the filter function to filter your view so that you are only seeing those tickets that have been assigned to you, by selecting <strong>Assigned to me</strong> from the drop-down list. Alternatively, you can select a specific group to see all the actions that have been shared with that group. If you select <strong>All</strong>, all tickets to which you have access to will be displayed. The new search field can be used to search for actions by category, responsible person or the title of the action. You can also use this search feature in the archive view. In order to ensure you do not miss any changes made by another user to an action, a notification will be displayed at the bottom of the screen until the board has been updated. You will be informed about the following:</p>
+<ul>
+<li>
+<p>Change of ticket titles</p>
+</li>
+<li>
+<p>Moving the ticket from one column to the next</p>
+</li>
+<li>
+<p>Changing the vertical ticket order</p>
+</li>
+<li>
+<p>Deleting tickets</p>
+</li>
+<li>
+<p>Modification of ticket descriptions</p>
+</li>
+<li>
+<p>Ticket assignments</p>
+</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998413353234" alt="image2018-10-26_11-18-27.png"></p>
+<p><u>The link for tickets of the </u><em><u>Action Board</u></em></p>
+<p>It is possible to send a link in a notification e-mail that opens an action ticket directly as long as a valid session is running. To do this, you use the placeholder #detailview_link#. You can also access the link under <strong>More</strong> in the detail view of the action ticket and copy it directly into an e-mail.</p>
+<p><u>Improving the assignment of an action ticket</u></p>
+<p>The process of assigning a ticket to someone with whom you have shared the ticket has been simplified. The assignment can be made by simply clicking the edit icon by the name of the person responsible. The <strong>Assign to</strong> list will then appear, from which you can choose the new responsible person.</p>
+<p><u>Publishing of private groups by sharing of an action ticket</u></p>
+<p>Previously, when sharing an action ticket, only public groups were shown in the selection dropdown. From now on, also private groups are listed. When sharing with a private group, that group will be published and will no longer be private. This publishing of a private group needs to be confirmed through a dialog and cannot be undone.</p>
+<p><u>Maximum number of actions</u></p>
+<p>By default, the maximum number of actions that can be created is 200 per installation. If this value is exceeded, the tickets created after the 200th action ticket are hidden until the value fall below the maximum value again due to the deletion or archiving of tickets. The hidden tickets are still saved and can be archived.</p>
+<p>If you wish to increase this value, please contact support.</p>
+<p><u>Actions presented in the module </u><em><u>Activity stream</u></em></p>
+<p>The activities in the <em>Action Board</em> are now displayed in the page module <em>Activity stream</em>, so that you always have a good overview of what is happening on the <em>Action Board</em>. The stream will show changes to the tickets that are visible to you.</p>
+<h3 id="header-7">Further module modifications</h3>
+<p><em><u>Portal invitation</u></em></p>
+<p>In the <em>Portal Invitation</em> page module configuration, it is now possible to assign invited participants to any or all of

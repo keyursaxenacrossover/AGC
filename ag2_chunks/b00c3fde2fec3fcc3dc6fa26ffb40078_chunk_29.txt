@@ -1,0 +1,88 @@
+ The #PID# wildcard in the file name will be replaced with the ID of the current project.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 138.438px;">
+<p>Save the questionnaire as a .mht file</p>
+</td>
+<td style="width: 176.597px;">
+<p>create_print</p>
+</td>
+<td style="width: 435.521px;">
+<p>This action allows you to save the questionnaire as a .mht file. The function internally selects the <strong>Print</strong><br><strong>version</strong> menu item and saves its output. In the file name, the #PID# wildcard will automatically be replaced with the project ID.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify">.mht files (Format MHTML: Multipurpose Internet Mail Extension HTML) are used to save Internet pages. They contain all the images and other elements of the saved pages as embedded objects so that the pages can be represented true to the original and with functioning hyperlinks. .mht files can be opened in a browser, though it may be necessary to install a dedicated plugin or add-on.</p>
+<h3 id="granting-access-rights-to-macros" class="wysiwyg-text-align-justify"><strong>Granting access rights to macros</strong></h3>
+<p class="wysiwyg-text-align-justify">To be able to define macros and to determine who will be allowed to execute them, a user must belong to a team that has write rights for<em> create_macro</em>. You can use the <strong>Rights</strong> icon in the overview to assign write or read rights for specific macros to individual teams.</p>
+<h3 id="checking-the-application-of-macros" class="wysiwyg-text-align-justify"><strong>Checking the application of macros</strong></h3>
+<p class="wysiwyg-text-align-justify">The <strong>Macro log</strong> menu logs all macro executions.</p>
+<h2 id="question-types" class="wysiwyg-text-align-justify"><strong>Question types</strong></h2>
+<p class="wysiwyg-text-align-justify">If you want to create user-defined question types not only temporarily, but add them to the library, you can do this in the menu <strong>Libraries</strong> → <strong>Question types</strong>. The newly defined question types are available across all projects in the Questionnaire Editor. You can add or import a new question type from another existing <em>EFS</em> installation. Click the <strong>New</strong> button or the drop-down menu →<strong> Import</strong>.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Enter the title of your new question type and select the appropriate category. Assign your newly created question type to one of the following categories of question types: <strong>Single response list</strong>, <strong>Multiple response list</strong>, <strong>Standard matrix</strong>,<strong> Text field,</strong> or <strong>911 special</strong>. Also in the Questionnaire Editor, you can find the newly created question type in the selected category.</p>
+</li>
+<li>
+<p>The newly created question type will be listed in the overview. To edit it, click on its title. This opens an HTML editor that allows you to create a new question type. Here you can customize the template, the stylesheet, the Javascript, the exact settings, and the resources.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The following actions are available in addition to the further editing of the question types.</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default">
+<colgroup> <col style="width: 144.0px;"> <col style="width: 616.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Icon</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Action</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Preview</p>
+</td>
+<td>
+<p>Have a look at the preview of your newly created question type.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Rights</p>
+</td>
+<td>
+<p>Open the menu <strong>Rights Admin</strong> to specify which user groups should have read and/or write access to the question type.</p>
+<p>Please note that you can only assign rights to users within your teams.</p>
+<p>You can also define if the question type supports an installation-wide rollout or team-based access.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Copy</p>
+</td>
+<td>
+<p>Copy a question type, which is then also listed in the overview and can be edited.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Download</p>
+</td>
+<td>
+<p>Download a question type in a ZIP file and save it on your computer.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Delete</p>
+</td>
+<td>
+<p>Delete a question type.</p>
+</td>
+</tr>
+<tr>
+<td>

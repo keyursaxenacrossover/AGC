@@ -1,0 +1,72 @@
+091e42;"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014859909650" alt="Focus unit condition.png"></span></p>
+<p><span style="color: #091e42;">The page layout is very different from the other two report types. Each line contains two select boxes and a free text field. Below the three lines, you will find a button to check the filter conditions you have selected.</span></p>
+<h3 id="filter-conditions"><strong><span style="color: #091e42;">Filter conditions</span></strong></h3>
+</div>
+</div>
+<p>Structure variables and unit properties can be selected as filters. You use the structure variables and unit properties in the first select box:</p>
+<ul>
+<li> Label</li>
+<li>Metaname</li>
+<li>View_ID</li>
+<li>Level</li>
+<li>Response_anon</li>
+</ul>
+<p>In the second select box, you select the relational operator. The available relational operators are listed in the table below.</p>
+<div class="table-wrap">
+<p class="auto-cursor-target"> </p>
+<table class="relative-table wrapped tablesorter tablesorter-default" style="width: 442px; margin-right: auto; margin-left: auto; height: 408px;" border="1">
+<colgroup> <col style="width: 0.0px;"> <col style="width: 0.0px;"> <col style="width: 0.0px;"> </colgroup>
+<tbody>
+<tr class="tablesorter-headerRow">
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted" style="text-align: left; width: 155.399px;" scope="col">
+<div class="tablesorter-header-inner">Operator</div>
+</th>
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted" style="text-align: left; width: 129.062px;" scope="col">
+<div class="tablesorter-header-inner">Symbol</div>
+</th>
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted" style="text-align: left; width: 147.153px;" scope="col">
+<div class="tablesorter-header-inner">Meaning</div>
+</th>
+</tr>
+<tr>
+<td style="text-align: left; width: 147.378px;">greater</td>
+<td style="text-align: left; width: 121.042px;">&gt;</td>
+<td style="text-align: left; width: 139.132px;">greater than</td>
+</tr>
+<tr>
+<td style="text-align: left; width: 147.378px;">greater than or equal to</td>
+<td style="text-align: left; width: 121.042px;">&gt;=</td>
+<td style="text-align: left; width: 139.132px;">greater than or equal to</td>
+</tr>
+<tr>
+<td style="text-align: left; width: 147.378px;">equal to</td>
+<td style="text-align: left; width: 121.042px;">==</td>
+<td style="text-align: left; width: 139.132px;">equal to</td>
+</tr>
+<tr>
+<td style="text-align: left; width: 147.378px;">less</td>
+<td style="text-align: left; width: 121.042px;">&lt;</td>
+<td style="text-align: left; width: 139.132px;">less than</td>
+</tr>
+<tr>
+<td style="text-align: left; width: 147.378px;">less than or equal to</td>
+<td style="text-align: left; width: 121.042px;">&lt;=</td>
+<td style="text-align: left; width: 139.132px;">less than or equal to</td>
+</tr>
+<tr>
+<td style="text-align: left; width: 147.378px;">not equal to</td>
+<td style="text-align: left; width: 121.042px;">!=</td>
+<td style="text-align: left; width: 139.132px;">not equal to</td>
+</tr>
+<tr>
+<td style="text-align: left; width: 147.378px;">contains</td>
+<td style="text-align: left; width: 121.042px;">~=</td>
+<td style="text-align: left; width: 139.132px;">filtering by words</td>
+</tr>
+</tbody>
+</table>
+<p class="auto-cursor-target"> </p>
+</div>
+<p class="auto-cursor-target"><span style="color: #091e42;">After selecting the relational operators, you define a value. For example, if you select a </span><strong>Metaname</strong><span style="color: #091e42;"> as a filter and ~= as the operator, you can enter a part of the unit's </span><strong>Metaname</strong><span style="color: #091e42;"> as the value to get a checkable record. </span><strong>Label</strong><span style="color: #091e42;"> and </span><strong>Metaname</strong><span style="color: #091e42;">allow filtering that targets text elements.</span></p>
+<h3 id="import-of-variables"><strong>Import of variables</strong></h3>
+<p>You can also use

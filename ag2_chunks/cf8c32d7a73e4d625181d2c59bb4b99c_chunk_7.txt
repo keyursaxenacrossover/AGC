@@ -1,0 +1,57 @@
+ which statuses are preselected in sampling by ticking the checkboxes.</li>
+</ul>
+<p>Configuring panel status requires write rights for “panel_status”.</p>
+<p><strong>Changing Panel Status Assignment in Panel Processes</strong></p>
+<p>Panel status changes are usually automatic, but you can control assignments in some processes:</p>
+<ul>
+<li>
+<strong>Panel login</strong>: Define allowed statuses in the field “Panel login is possible for panelists with the following panel statuses” in Website → Global configuration.</li>
+<li>
+<strong>Participation in panel surveys</strong>: Define allowed statuses in the field “Participation in panel surveys is possible for panelists with the following panel statuses” in Website → Global configuration.</li>
+<li>
+<strong>Participation in master data surveys</strong>: Define allowed statuses in the field “Participation in master data surveys is possible for panelists with the following panel statuses” in Website → Global configuration.</li>
+<li>
+<strong>Status upon registration</strong>: Set in “Panel status assigned during registration” in the Registration form module (default: “Admitted temporarily”).</li>
+<li>
+<strong>Status after quitting membership</strong>: Set in “Panel status after quitting membership” in the Quit membership form module (default: “Inactive”). In older panels, find this in Website → {Selected language version} → Configuration tab → End of membership.</li>
+</ul>
+<p><strong>Changing the Panel Status of Individual Panelists Manually</strong></p>
+<ul>
+<li>
+<strong>Selected Panelists</strong>: Change status using the drop-down list in Panelists administration.</li>
+<li>
+<strong>Individual Panelist</strong>: Assign a new status in the detail view.</li>
+</ul>
+<p class="undefined"> </p>
+</div>
+</div>
+<h2 id="capacity-filters" class="wysiwyg-text-align-justify">Capacity Filters</h2>
+<p class="wysiwyg-text-align-justify">An important factor for response willingness and answer quality is the capacity of the panelists. Surveys should not exceed their capacity, and intervals between surveys should not be too long to maintain their interest. EFS's scheduling system, based on grouping filters, offers flexibility:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>A capacity filter specifies which panelists are available for sample draws, ensuring they have not exceeded their capacity.</li>
+<li>Use the capacity filter during sampling to limit the basic set.</li>
+<li>Create any number of capacity filters in an EFS Panel installation and select the appropriate one during the sampling procedure.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Creating Capacity Filters</strong></p>
+<p class="wysiwyg-text-align-justify">Capacity filters are managed in the People → Panel configuration → Capacity filters menu, defined similarly to grouping filters using system data and tracking variables. Date calculations are particularly important.</p>
+<p class="wysiwyg-text-align-justify"><strong>Using Capacity Filters</strong></p>
+<p class="wysiwyg-text-align-justify">Use the capacity filter when drawing samples to limit the basic set. Note that the accuracy of capacity filters depends on the accuracy and timeliness of the underlying data, which may be updated daily.</p>
+<h2 id="password-configuration" class="wysiwyg-text-align-justify">Password Configuration</h2>
+<p class="wysiwyg-text-align-justify">Under the Password configuration menu item of the panel configuration, you define the 'design' of passwords for the module Portals by specifying the minimum and maximum password length. You can also set the password policy via a drop-down list to select what the password may contain:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>No restrictions</li>
+<li>Characters and numbers</li>
+<li>Characters and either numbers or special characters</li>
+<li>Upper and lower case and numbers</li>
+<li>Upper and lower case with either numbers or special characters</li>
+</ul>
+<p class="wysiwyg-text-align-justify">These settings apply only to the Portals module.</p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863" class="wysiwyg-text-align-justify">FAQ</h1>
+<h3 id="faq-1" class="wysiwyg-text-align-justify">What is the purpose of the consent form configuration?</h3>
+<p class="wysiwyg-text-align-justify">The consent form configuration allows you to create and manage the consent form that panelists must agree to during registration. It ensures compliance with data protection regulations and informs panelists about how their data will be used.</p>
+<h3 id="faq-2" class="wysiwyg-text-align-justify">How often are panel tracking data updated?</h3>
+<p class="wysiwyg-text-align-justify">Panel tracking data are updated once a day. The time of update can be configured in the Panel tracking settings.</p>
+<h3 id="faq-3" class="wysiwyg-text-align-justify">Can I create custom panel statuses?</h3>
+<p class="wysiwyg-text-align-justify">While you cannot create new panel statuses, you can customize existing user-defined statuses to fit your panel's needs. You can change their names, activate or deactivate them, and assign them to panelists as needed.</p>
+<h3 id="faq-4" class="wysiwyg-text-align-justify">What are capacity filters used for?</h3>
+<p class="wysiwyg-text-align-justify">Capacity filters are used to manage panelist availability for sample draws

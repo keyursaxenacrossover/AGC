@@ -1,0 +1,168 @@
+</tr>
+<tr>
+<td>
+<p>Force vertical alignment</p>
+</td>
+<td>
+<p>Per default, the display of the options depends on the screen width of the device used: For wide screens horizontal, for small screens vertical. Optionally vertical alignment can be enforced for all devices.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Resettable</p>
+</td>
+<td>
+<p>An additional button is displayed, enabling participants to reset the slider value to the initial state. The button label can be edited in<strong> Project properties</strong> → <strong>Survey messages</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Initial state</p>
+</td>
+<td>
+<p>The initial state of the selection marker.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>The behavior of the textbox</p>
+</td>
+<td>
+<p>Optionally, you can display a text field that displays the current value of the slider or that enables participants to enter the desired value directly.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Unit</p>
+</td>
+<td>
+<p>The unit symbol is shown after the text field.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Minimum value</p>
+</td>
+<td>
+<p>-50 (minus 50)</p>
+<p>If you enter a lower value, the value 0 is automatically set after saving.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Maximum value</p>
+</td>
+<td>
+<p>+1000000 (+1000000)</p>
+<p>If you enter a higher value, the value 100 is automatically set after saving.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Values to be displayed on the scale</p>
+</td>
+<td>
+<p>The label for the displayed unit of the sliders.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Mandatory (DAC)</p>
+</td>
+<td>
+<p>This option can be used if the initial state is “invisible”. If it is activated, the participants have to select a value.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h4 id="color-switch-configuration-1">Color Switch Configuration</h4>
+<table class="" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 208.0px;"> <col style="width: 552.0px;"> </colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour="#c0b6f2">
+<p><strong>Feature</strong></p>
+</th>
+<th data-highlight-colour="#c0b6f2">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Activate color switch</p>
+</td>
+<td>
+<p>Optionally, the slider can change its color once a certain user-defined value has been reached. When activating this feature, please specify the threshold and the second color.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Foreground color</p>
+</td>
+<td>
+<p>This color is used for the slider's foreground.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>End value for color<br>switch</p>
+</td>
+<td>
+<p>This color is displayed as soon as the threshold has been reached.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Threshold value for<br>switch of color</p>
+</td>
+<td>
+<p>In this field, you can specify the threshold for the color switch.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2> </h2>
+<h2 id="ranking-rating">Ranking - Rating</h2>
+<h3 id="stars-rating">Stars Rating</h3>
+<p>The question type “Stars rating” allows us to easily visualize answer options, by integrating e.g. smileys, thumbs for Yes/No questions, dice, numbers, gender icons, or other visual elements.</p>
+<ul>
+<li>
+<p>Depending on the screen width of the device used, the star rating scale will be displayed horizontally or vertically. Optionally vertical alignment can be enforced for all devices.</p>
+</li>
+<li>
+<p>When creating a new question, smileys are integrated automatically.</p>
+</li>
+<li>
+<p>The rating direction is from left to right.</p>
+</li>
+<li>
+<p>You can resort to other predefined images in the Tivian library or upload your images to the media library.</p>
+</li>
+<li>
+<p>Technically, the new question type is based on the familiar single response list (111).</p>
+</li>
+<li>
+<p>3 - 10 answer options are recommendable for methodic reasons. Technically, up to 20 stars can be displayed.</p>
+</li>
+</ul>
+<h4 id="base-elements-21">Base Elements</h4>
+<ul>
+<li>
+<p>Question text</p>
+</li>
+<li>
+<p>Fill-in instruction</p>
+</li>
+<li>
+<p>Help text</p>
+</li>
+<li>
+<p>Answer options 1-n</p>
+</li>
+</ul>
+<h4 id="entry-dialog-9">Entry Dialog</h4>
+<p>The entry dialog is closely related to the familiar entry dialog of question type 111. However several special features were not implemented because they are not suitable for a question type with such a clear-cut purpose.</p>
+<h4 id="detail-configuration-9">Detail Configuration</h4>
+<ul>
+<li>
+<p>Show answer texts: Per default, the texts of the answer options are used

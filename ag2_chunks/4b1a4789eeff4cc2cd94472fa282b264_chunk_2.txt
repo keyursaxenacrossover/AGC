@@ -1,0 +1,146 @@
+>
+<p style="text-align: center;">applies data cleaning to the survey data.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">Apply predefined survey messages</p>
+</td>
+<td>
+<p style="text-align: center;">apply_messageset</p>
+</td>
+<td>
+<p style="text-align: center;">This action allows to import of a predefined set of survey messages.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">Change project field period</p>
+</td>
+<td>
+<p style="text-align: center;">set_project_time</p>
+</td>
+<td>
+<p style="text-align: center;">This action allows you to change the field period of the project. You can either specify a fixed date or select relative times that refer to the next weeks, the current month, or the current year.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">Change project status</p>
+</td>
+<td>
+<p style="text-align: center;">set_project_status</p>
+</td>
+<td>
+<p style="text-align: center;">set_project_status This action allows you to change the project status. This permits automation of the process of ending or activating the project.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">Compile survey</p>
+</td>
+<td>
+<p style="text-align: center;">generate_survey</p>
+</td>
+<td>
+<p style="text-align: center;">This action generates a new survey. It is identical to the <strong>Compile</strong> menu item. You can choose whether the result data are to be deleted while generating the survey.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">Create blank pages in the questionnaire</p>
+</td>
+<td>
+<p style="text-align: center;">create_pages</p>
+</td>
+<td>
+<p style="text-align: center;">With this action, you can create several blank pages at once in the questionnaire. Optionally, it is possible to create one filter per blank page, indenting the pages automatically below the filters.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">Create dynamic block</p>
+</td>
+<td>
+<p style="text-align: center;">create_page_block</p>
+</td>
+<td>
+<p style="text-align: center;">With this action, you can insert a dynamic block into the questionnaire, i.e. a random selection of pages, a random sequence, or a loop. The subpages can be created automatically.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">Data export</p>
+</td>
+<td>
+<p style="text-align: center;">export_data</p>
+</td>
+<td>
+<p style="text-align: center;">This action allows you to export results or address data from the current project. Setting the file type as well as further export options is possible.</p>
+<p style="text-align: center;">The action is available for anonymous and personalized projects.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">Delete all plausibility checks</p>
+</td>
+<td>
+<p style="text-align: center;">delete_plausichecks</p>
+</td>
+<td>
+<p style="text-align: center;">This action will delete all plausibility checks in the selected project.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">Delete all pretest comments</p>
+</td>
+<td>
+<p style="text-align: center;">delete_pretest</p>
+</td>
+<td>
+<p style="text-align: center;">This action deletes all pretest comments of the current project.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">Delete all type checks</p>
+</td>
+<td>
+<p style="text-align: center;">delete_type_checks</p>
+</td>
+<td>
+<p style="text-align: center;">This action will delete all types of checks that have been defined in the project's questionnaire. The questions will not be deleted.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">Enable advanced completeness checks</p>
+</td>
+<td>
+<p style="text-align: center;">toggle_hardcore_dacs</p>
+</td>
+<td>
+<p style="text-align: center;">With this action you can configure all completeness checks (DACs) in the survey to check for every answer category of type "answer option + text" if the related text field has also been filled in by the respondent.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">Enable/disable debugging features in the survey</p>
+</td>
+<td>
+<p style="text-align: center;">toggle_debug</p>
+</td>
+<td>
+<p style="text-align: center;">This option activates or deactivates the debug features that can be used in a survey.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;">Enable deselectable radio buttons</p>
+</td>
+<td>
+<p style="text-align: center;">apply_triple_state</p>
+</td>
+<td>
+<p style="text-align: center;">With this action, you can configure all radio buttons in all single-response questions of the survey to be deselectable. That means answers in single-response questions can be deselected again by clicking the selected radio button again. This feature will only work for participants that have JavaScript enabled.</

@@ -1,0 +1,30 @@
+{
+    "id": 20716427075474,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/20716427075474.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20716427075474-Sign-On-Policy-Setup",
+    "author_id": 369584192734,
+    "comments_disabled": false,
+    "draft": true,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20714711445138,
+    "created_at": "2024-08-12T19:03:48Z",
+    "updated_at": "2024-08-12T19:04:02Z",
+    "name": "Sign-On Policy Setup",
+    "title": "Sign-On Policy Setup",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-08-12T19:04:02Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075294,
+    "content_tag_ids": [],
+    "label_names": [],
+    "body": "<p><b>Original Confluence URL:</b> <a href=\"https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1076232814\">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1076232814</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>\n\n<h2>Table of Contents</h2>\n<ul class=\"toc\">\n<ul>\n<li><a href=\"#header-1\">Step 1: Navigate to Authentication → Sign on</a></li>\n<ul>\n<li><a href=\"#header-3\">Step 2: Add new Okta Sign-on Policy</a></li>\n<ul>\n<li><a href=\"#header-5\">Step 3: Add rule</a></li>\n</ul>\n</ul>\n</ul>\n</ul><p>See <ac:link ac:card-appearance=\"inline\"><ri:page ri:content-title=\"Naming conventions in Okta\" ri:version-at-save=\"9\"></ri:page><ac:link-body>Naming conventions in Okta</ac:link-body></ac:link> </p><p>Also see <ac:link ac:card-appearance=\"inline\"><ri:page ri:content-title=\"Sign-On Policy\" ri:version-at-save=\"1\"></ri:page><ac:link-body>Sign-On Policy</ac:link-body></ac:link> </p><hr><h1 id=\"header-1\">Step 1: Navigate to Authentication → Sign on</h1><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716417864978\" alt=\"navigation.png\"><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716417723538\" alt=\"sign-on.png\"><h2 id=\"header-3\">Step 2: Add new Okta Sign-on Policy</h2><p><strong>Values:</strong></p><p>Policy Name: The client’s name</p><p>Policy Description: The client’s name</p><p>Assign to Group: The group which was previously created for this client ( <ac:link ac:card-appearance=\"inline\"><ri:page ri:content-title=\"Group Setup\" ri:version-at-save=\"6\"></ri:page><ac:link-body>Group Setup</ac:link-body></ac:link> )</p><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716432019986\" alt=\"create-sign-on-policy.png\"><h3 id=\"header-5\">Step 3: Add rule</h3><p><strong>Values:</strong></p><p>Leave everyt<ac:inline-comment-marker ac:ref=\"78cd0c92-b83a-4b01-a8f0-078820a95840\">hing at default excep</ac:inline-comment-marker>t:</p><p>Session expires after: The okta master session time (leave on default if not otherwise specified by the client)</p><p></p><img src=\"https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716417488530\" alt=\"add rule.png\"><p></p>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

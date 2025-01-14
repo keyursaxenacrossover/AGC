@@ -1,0 +1,37 @@
+ proceed as follows:</p>
+<ul>
+<li data-renderer-start-pos="5489">In the questionnaire editor, choose the page on which you want to perform the plausibility check. Click on the title of that page. The page view will open.</li>
+<li>Click on the Plausibility checks menu.</li>
+</ul>
+<p class="wysiwyg-indent3"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015011205522"></p>
+<ul>
+<li data-renderer-start-pos="5648">The overview of plausibility checks is opened. No checks have been defined yet.</li>
+<li data-renderer-start-pos="5778">Click on the + Plausibility check button.</li>
+<li data-renderer-start-pos="5823">Enter the title.</li>
+<li data-renderer-start-pos="5843">Select the “Range check” check type. For detailed explanations of the check types, please see this post.​</li>
+</ul>
+<p class="wysiwyg-indent3"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015011206162"></p>
+<ul>
+<li data-renderer-start-pos="5843">Confirm with Proceed.</li>
+<li data-renderer-start-pos="5982">The entry dialog is opened.</li>
+<li>In the “User may ignore this check” field, the “No” option should be activated. This means that the person completing the questionnaire must correct any incorrect entry. Otherwise, the next survey page will not be displayed.</li>
+<li data-renderer-start-pos="6241">Only in projects with classic system layout: In the “Systems to use for check” field, the “Client (JavaScript) AND Server (PHP)” option should be activated.</li>
+<li data-renderer-start-pos="6401">Do not change the setting of the field „Execute check if one or more items are hidden??“. In the current example situation, it does not matter as there are no hidden items.</li>
+<li data-renderer-start-pos="6577">When executing JavaScript plausibility checks you may choose to let the participant neglect the plausibility check. In this case, check Yes with the option offered.</li>
+<li data-renderer-start-pos="6744">Choose which system you would like to check in the responsive layout: Client (JavaScript), Server (PHP), or Client (JavaScript) AND Server (PHP).</li>
+<li data-renderer-start-pos="6892">In the following field, you can edit the message which is displayed if the check condition applies. Please replace the default message “An error occurred!” with “Please enter your year of birth as a four-digit number!”.</li>
+<li data-renderer-start-pos="7113">Next, define the check condition itself: First, select the variable which you want to check.</li>
+<li data-renderer-start-pos="7209">Then, enter the range within which the values are to be valid. In the example shown, “1900” is the minimum, “2000” is the maximum.</li>
+<li data-renderer-start-pos="7340">Click on the Save button.</li>
+<li data-renderer-start-pos="7369">To see the pop-up that will be displayed to the respondents, open the Page Preview tab and enter an erroneous value to trigger the check. </li>
+<li data-renderer-start-pos="7512">The new check is listed in the overview.</li>
+</ul>
+<p> </p>
+<h1 id="h_01HGKSMPRW28YJQM5SXLBP4XNZV">FAQ</h1>
+<h3 id="h_01HGKSMPRWA8YJQN6TXMBP5XNZW">What are the benefits of using plausibility checks?</h3>
+<p>Plausibility checks help ensure data quality, reduce errors, and minimize the need for follow-up questions by catching issues during data entry.</p>
+<h3 id="h_01HGKSMPRWJ8YJQO7UXNBP6XNZX">How many plausibility checks should I use per page?</h3>
+<p>It is recommended to use no more than 50 plausibility checks per page to maintain good performance.</p>
+<h3 id="h_01HGKSMPRWR8YJQP8VXOBP7XNZY">Can I use complex conditions in plausibility checks?</h3>
+<p>While possible, it's better to use multiple simple plausibility checks instead of complex ones to avoid unexpected results and maintain clarity.</p>
+</article>

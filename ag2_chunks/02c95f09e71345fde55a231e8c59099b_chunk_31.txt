@@ -1,0 +1,54 @@
+div>
+</div>
+<h2 id="Providing-Respondent-Data" class="wysiwyg-text-align-justify" data-renderer-start-pos="25626"><strong data-renderer-mark="true">Providing Respondent Data</strong></h2>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="25653">You can make the respondent export available to your staff and customers in <em data-renderer-mark="true">EFS Survey Status</em>. This export contains the so-called <em data-renderer-mark="true">respondents</em>, i.e. all those participants,</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="25828">who have called up the survey</p>
+</li>
+<li>
+<p data-renderer-start-pos="25861">who have at least answered the first page, or</p>
+</li>
+<li>
+<p data-renderer-start-pos="25910">who have completed the survey</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="25943">Such a data record is useful, for example, if you want to inform an address provider which of his respondents actually participated: You can give your address provider an account for EFS Survey Status to log in and export lists of the respondents.</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="26192">The functional scope in brief:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="26226">The respondent export is available in personalized projects and employee surveys.</p>
+</li>
+<li>
+<p data-renderer-start-pos="26311">The exported XLS file contains the address data and various survey-specific data of those participants who actually participated. The access code and disposition code of the participants can optionally be included.</p>
+</li>
+<li>
+<p data-renderer-start-pos="26529">Which teams are to be granted access to the data record and exactly which data are to be included in this record can be controlled via ACL rights.</p>
+</li>
+</ul>
+<h3 id="Setting-up-Access-to-the-Respondent-Data-in-EFS-Survey-Status" class="wysiwyg-text-align-justify" data-renderer-start-pos="26679">
+<strong data-renderer-mark="true">Setting up Access to the Respondent Data in </strong><em data-renderer-mark="true"><strong data-renderer-mark="true">EFS Survey Status</strong></em>
+</h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="26742">Which teams are to be granted access to the data record and exactly which data are to be included in this record can be controlled via ACL rights.</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="26892">Access to the respondent export in <em data-renderer-mark="true">EFS Survey Status</em> is granted to teams possessing “read” to <em data-renderer-mark="true">ct42partadm</em>.</p>
+</li>
+<li>
+<p data-renderer-start-pos="27002">For teams that have the <em data-renderer-mark="true">export_code</em> right, the access code is included in the export, otherwise, this is not the case.</p>
+</li>
+<li>
+<p data-renderer-start-pos="27123">You can control whether the export file should contain the disposition code by assigning read rights to <em data-renderer-mark="true">show_dispcode</em>.</p>
+</li>
+</ul>
+<h3 id="Downloading-Respondent-Data-via-Project-List" class="wysiwyg-text-align-justify" data-renderer-start-pos="27245"><strong data-renderer-mark="true">Downloading Respondent Data via Project List</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="27291">You can find the icon for downloading the respondent export in the project list.</p>
+<h3 id="Content-of-the-Export-File" class="wysiwyg-text-align-justify" data-renderer-start-pos="27373"><strong data-renderer-mark="true">Content of the Export File</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="27401">The respondent export contains the following variables:</p>
+<div class="pm-table-container with-shadow-observer wysiwyg-text-align-justify" data-layout="default">
+<div class="pm-table-wrapper">
+<table style="border-collapse: collapse; border-top-style: ; border-top-width: ; border-right-style: ; border-right-width: ; border-bottom-style: ; border-bottom-width: ; border-left-style: ; border-left-width: ; border-image-source: ; border-image-slice: ; border-image-width: ; border-image-outset: ; border-image-repeat: ; height: 1px; width: 760px;" border="1" data-testid="renderer-table" data-number-column="false" data-table-width="760" data-layout="default">
+<colgroup> <col style="width: 339px;"> <col style="width: 339px;"> </colgroup>
+<tbody>
+<tr style="height: 46.7361px;">
+<th class="ak-renderer-tableHeader-sortable-column__wrapper wysiwyg

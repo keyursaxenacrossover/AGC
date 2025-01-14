@@ -1,0 +1,43 @@
+ with their size (i.e. the number of mails).</p>
+</li>
+<li>
+<p>It will be checked whether the sum total of the mail to be sent is greater than the maximum mail volume allowed per dispatch interval. The maximum mail volume can be configured.</p>
+</li>
+<li>
+<p>If the sum total is smaller than the maximum mail volume, all mail will be sent.</p>
+</li>
+<li>
+<p>If the sum total is greater than the maximum mail volume, the dispatch orders are sorted by ascending size. Then, the dispatch resources are distributed equally among the dispatch orders. I.e. one by one, each order is assigned one mail, until the limit is reached. This way, smaller orders are completed quickly. The remaining mails would be processed according to the same principle in the subsequent dispatch intervals.</p>
+</li>
+<li>
+<p>If the mail server does not accept mail at all, the system will try to dispatch it again eight hours later. After four failed dispatch attempts, the mail will be deleted and the recipient will be assigned disposition code 14. The number of repeats can be configured.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Syntax check for e-mail addresses during dispatch</strong></p>
+<p class="wysiwyg-text-align-justify">Generally, EFS performs a syntax check on every mail address. This happens once when entering mail addresses and also, to be on the safe side, a second time when generating and sending mail. If EFS detects a mail address that does not comply with the RFC, this address will automatically be excluded from mail sending, and a corresponding message will be output on the screen. EFS Survey only allows addresses with the following format:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>local_part@domain</p>
+</li>
+<li>
+<p>Please note that “domain” must be an Internet domain with a valid syntax.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If, despite all this, an invalid mail address has found its way into the database, e.g. through subsequent corrections, the mail will be checked again when it is sent. The sender will then be notified that the e-mail address is incorrect and, therefore, the e-mail cannot be delivered.</p>
+<p class="wysiwyg-text-align-justify"><strong>Standard mail headers</strong></p>
+<p class="wysiwyg-text-align-justify">As EFS performs mailings in the form of bulk dispatch, a corresponding header line (“Precedence: bulk”) is added to each e-mail, which enables automatic recognition as a bulk mailing. So-called auto responders should detect this. Unfortunately, not every mail system is properly configured. Therefore, it may still occur that you receive automatically generated notifications of absence as replies.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>If necessary, installation-specific mail headers can be used.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Limiting the Mail Volume per Mail Interval</strong></p>
+<p class="wysiwyg-text-align-justify">The mails in the queue are processed in packages: per default, up to 300 emails will be processed in 10-minute intervals. You can change the value of 300 emails. To do so, open the Options-&gt;System settings menu and enter the new maximum value in the “Job size for mail sending” field. Up to 2,000 emails can be sent per package.</p>
+<p class="wysiwyg-text-align-justify"><strong>Defining the number of repeats for dispatch problems</strong></p>
+<p class="wysiwyg-text-align-justify">If the mail server does not accept mail or if it is not possible to connect to the mail server at all, the system will try to dispatch it again eight hours later. After four unsuccessful attempts, the mail will be deleted and the recipient will be assigned disposition code 14. You can change the maximum number of dispatch attempts. To do so, open the <strong>Options</strong> → <strong>System settings</strong> menu and enter the new maximum value in the “Maximum number of attempts to dispatch the mail” field.</p>
+<p class="wysiwyg-text-align-justify"><strong>The delay between delivery attempts</strong></p>
+<p class="wysiwyg-text-align-justify">You may define the amount of time (in minutes) to pass between delivery attempts. Find the respective option in the Options menu → <strong>System</strong> <strong>Settings</strong>.</p>
+<p class="wysiwyg-text-align-justify"><strong>Using installation-specific mail headers</strong></p>
+<p class="wysiwyg-text-align-justify">Installation-specific mail headers can be attached to the mail sent from an EFS installation. This is particularly useful for external bounce systems, for example. To do so, our support has to activate this function and define the desired mail header values. In the mail form, you will then find a field “Value for wildcard #extra_values# in additional mail headers”. There you can specify the values that were predefined by the support.</p>
+<p class="wysiwyg-text-align-justify">These mail headers are specified for an <em>EFS</em> installation, not for an individual project. They cannot be used in collective installations.</p>
+<h3 id="controlling-dispatch-processes-and-intervening-in-processes" class="wysiwyg-text-align-justify"><strong>Controlling dispatch processes and intervening in processes</strong></

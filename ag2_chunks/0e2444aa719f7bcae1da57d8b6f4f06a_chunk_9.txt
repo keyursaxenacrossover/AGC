@@ -1,0 +1,102 @@
+-center overflow-hidden rounded-full">
+<div class="relative p-1 rounded-sm flex items-center justify-center bg-token-main-surface-primary text-token-text-primary h-8 w-8"> </div>
+</div>
+</div>
+</div>
+</div>
+<div class="group/conversation-turn relative flex w-full min-w-0 flex-col agent-turn">
+<div class="flex-col gap-1 md:gap-3">
+<div class="flex flex-grow flex-col max-w-full">
+<div class="min-h-[20px] text-message flex w-full flex-col items-end gap-2 whitespace-pre-wrap break-words [.text-message+&amp;]:mt-5 overflow-x-auto" dir="auto" data-message-author-role="assistant" data-message-id="d503453a-06c6-47f0-9e28-53e44536a689">
+<div class="flex w-full flex-col gap-1 empty:hidden first:pt-[3px]">
+<div class="markdown prose w-full break-words dark:prose-invert light">
+<h3 id="h_01J3G0B0G7SHMJ5XNV6B4FX4SD">Master Data Filter</h3>
+<p>The master data filter uses characteristics collected during initial master data surveys to check your group. To use this filter:</p>
+<ol>
+<li>
+<p><strong>Access Master Data Filter:</strong></p>
+<ul>
+<li>Click on the <strong>Master data filter</strong> button to display all master data defined in the system, including u_gender, pstatus, and site_id.</li>
+<li>Optionally, restrict the selection to a specific master data category.</li>
+</ul>
+</li>
+<li>
+<p><strong>Select Variables:</strong></p>
+<ul>
+<li>Choose one or more variables from the master data list (e.g., year of birth).</li>
+<li>Use the “Tick all checkboxes” to select all master data and then manually de-select individual fields as needed.</li>
+</ul>
+</li>
+<li>
+<p><strong>Define Characteristics:</strong></p>
+<ul>
+<li>For variables with answer categories (e.g., age groups), select the desired characteristics (e.g., age &lt; 30).</li>
+<li>For text and decimal variables, enter the desired characteristic using operators like “equal”, “not equal”, “greater than”, “less than”, etc.</li>
+</ul>
+</li>
+<li>
+<p><strong>Confirm Selection:</strong></p>
+<ul>
+<li>Click on <strong>Continue</strong> to apply the filter.</li>
+</ul>
+</li>
+</ol>
+<h3 id="h_01J3G0B0G7E1KFNKSN7X5SHM91">Sample Data Filter</h3>
+<p>The sample data filter restricts the group to members of a specific project with a given disposition code. If the disposition code is irrelevant, select all available codes instead.</p>
+<h3 id="h_01J3G0B0G79Y49PAX7GQTQKXC5">Project Filter</h3>
+<p>The project filter narrows the group to members of a chosen project based on specific answer values:</p>
+<ol>
+<li>
+<p><strong>Select Project:</strong></p>
+<ul>
+<li>Open the filter menu and choose a project from the list, which includes project type and status.</li>
+<li>Click on the project title.</li>
+</ul>
+</li>
+<li>
+<p><strong>Select Answer Values:</strong></p>
+<ul>
+<li>Choose answer values for filtering.</li>
+<li>Participants who gave the selected answers in the project are assigned to the new group.</li>
+</ul>
+</li>
+</ol>
+<h3 id="h_01J3G0B0G7CBQA8X6ZCV3VNRMP">Quick Poll Filter</h3>
+<p>The quick poll filter uses results from panelist polls to create groups:</p>
+<ol>
+<li>
+<p><strong>Select Quick Polls:</strong></p>
+<ul>
+<li>Open the filter dialog and choose one or more quick polls.</li>
+<li>Select answer options from these polls.</li>
+</ul>
+</li>
+<li>
+<p><strong>Filter Results:</strong></p>
+<ul>
+<li>Depending on the filtering mode, the filter selects panelists from the current group or entire panel who answered at least one of the listed options.</li>
+</ul>
+</li>
+</ol>
+<h3 id="h_01J3G0B0G7YEX2QFMTYBDTAKSB">Grouping Filter</h3>
+<p>The grouping filter combines various criteria to create complex filter conditions:</p>
+<ol>
+<li>
+<p><strong>Access and Define Filters:</strong></p>
+<ul>
+<li>Use all address and master data, along with system data like pstatus, last_poll_date, pcredit_points, date_last_login, etc.</li>
+<li>Include tracking variables and perform date calculations.</li>
+<li>Combine AND and OR conjunctions for complex conditions.</li>
+</ul>
+</li>
+<li>
+<p><strong>Administer Filters:</strong></p>
+<ul>
+<li>Access defined filters from the Filters tab in a group's edit dialog via the <strong>Grouping filter</strong> button or through the <strong>People → Groups → Grouping filters</strong> menu.</li>
+</ul>
+</li>
+<li>
+<p><strong>Create and Test Filters:</strong></p>
+<ul>
+<li>Click on the <strong>Create filter condition</strong> button.</li>
+<li>Define the condition by selecting variable, condition, code, and conjunction

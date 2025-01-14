@@ -1,0 +1,93 @@
+p>Can all be ignored because cron jobs are not running on mirror installations</p></td>
+<td>
+<ul><li><p>Check if still running (then its locked - see table ‘db_locks’)</p></li></ul>
+<ul><li><p>If not try start manually</p></li></ul>
+<ul><li><p>If it cant be executed ask SA it its locked otherwise or if crons are not activated</p></li></ul>
+<ul><li><p>If errors (PHP etc.) occur while executing do further analysis</p></li></ul>
+</td>
+</tr>
+<tr>
+<td><p>Error: Missing stream transport support in PHP. The following transports are missing: sslv2</p></td>
+<td><p>Error</p></td>
+<td><p><br></p></td>
+<td><p><br></p></td>
+<td><p><br></p></td>
+</tr>
+<tr>
+<td><p>Error: Your pdflib licence does not seem to be valid: Your client is unknown!</p></td>
+<td><p>Error</p></td>
+<td><p><br></p></td>
+<td><p><br></p></td>
+<td>
+<p>If the OSM module is activated but no pdflib licence key is in place. In case of productive installation add key</p>
+<p><a href="https://it.globalpark.de/twiki/bin/view/Support/SupportEFSHybridExtension">https://it.globalpark.de/twiki/bin/view/Support/SupportEFSHybridExtension</a></p>
+</td>
+</tr>
+<tr>
+<td><p>Error: could not connect to any memcache server</p></td>
+<td><p>Error</p></td>
+<td><p><br></p></td>
+<td><p><br></p></td>
+<td><p>Check config and add the correct memcache server (Frankfurt and Rackspace are different). If server is correct forward to SA.</p></td>
+</tr>
+<tr>
+<td><p>Error: Response error from MySight dataflow pipeline at '<a href="http://10.4.0.101:49866/app/api/process/userprovision/">http://10.4.0.101:49866/app/api/process/userprovision/</a>': Internal Server Error</p></td>
+<td><p>Error</p></td>
+<td><p><br></p></td>
+<td><p><br></p></td>
+<td><p><br></p></td>
+</tr>
+<tr>
+<td><p>Warning:The configuration is missing the installation ID (__gp_id). This may cause errors in order to create a DB-Report.</p></td>
+<td><p>Warning</p></td>
+<td><p><br></p></td>
+<td><p>Mirror installations do not have a gp_id (Globis ID). You can ignore this message on mirror installations</p></td>
+<td><p><br></p></td>
+</tr>
+<tr>
+<td><p>Warning: skipping result test: memcache is not active</p></td>
+<td><p>Warning</p></td>
+<td><p><br></p></td>
+<td><p><br></p></td>
+<td><p><br></p></td>
+</tr>
+<tr>
+<td><p>Warning: Access to service domain <a href="http://new-york.globalpark.de">new-york.globalpark.de</a> is not available via fsockopen on port 443. Certain EFS features (e.g. feed subscriptions) will not work.</p></td>
+<td><p>Warning</p></td>
+<td><p><br></p></td>
+<td><p><br></p></td>
+<td><p><br></p></td>
+</tr>
+<tr>
+<td><p>Error: The panel templates directory (/nfs/opst3/support01-tka.qb-feedback.com/htdocs/conf/../panelwebsite/__templates/68) for site 'english' is not writable. You may not add new panel templates.</p></td>
+<td><p>Error</p></td>
+<td><p><br></p></td>
+<td><p><br></p></td>
+<td><p><br></p></td>
+</tr>
+<tr>
+<td>
+<p>Warning: Please consider if file/s</p>
+<p>/nfs/opst3/support01-tka.qb-feedback.com/htdocs/conf/../panelwebsite/__templates/34/js_default.tpl</p>
+<p>should be deleted.</p>
+</td>
+<td><p>Warning</p></td>
+<td><p><br></p></td>
+<td><p><br></p></td>
+<td><p><br></p></td>
+</tr>
+<tr>
+<td><p>Warning: Relevantid module is active but no relevantid_auth value is set in configuration.</p></td>
+<td><p>Warning</p></td>
+<td><p><br></p></td>
+<td><p><br></p></td>
+<td><p><br></p></td>
+</tr>
+<tr>
+<td><p>Error: SFTP private-key file doesn't exist at '/nfs/opst/qr4773-pc.qb-feedback.com/htdocs/conf/../../privatedocs/EFSsftp_private'.</p></td>
+<td><p>Error</p></td>
+<td><p><br></p></td>
+<td><p><br></p></td>
+<td>
+<ul><li><p>If MySight v1 is not active it cant be ignored</p></li></ul>
+<ul><li><p>If MySight v

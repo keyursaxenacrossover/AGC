@@ -1,0 +1,42 @@
+>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>activity_id</p></li>
+<li><p>activity_title</p></li>
+<li><p>activity_description</p></li>
+<li><p>activity_files</p></li>
+<li><p>activity_section</p></li>
+<li><p>activity_section_type_id</p></li>
+<li><p>context_external_filename</p></li>
+<li><p>context_internal_filename</p></li>
+<li><p>context_filesize</p></li>
+<li><p>context_lang_id</p></li>
+<li><p>context_download_section_id</p></li>
+<li><p>context_download_section_title</p></li>
+<li><p>meta_created_at</p></li>
+<li><p>meta_updated_at</p></li>
+<li><p>meta_access_groups</p></li>
+<li><p>meta_published</p></li>
+<li><p>meta_created_at_time</p></li>
+<li><p>meta_updated_at_time</p></li>
+<li><p>meta_is_updated</p></li>
+<li><p>sync_at</p></li>
+<li><p>meta_read_user_ids</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>In the database check table <strong>panel_activities_sync_log</strong></p>
+<ul><li><pre><code class="language-text">select * from panel_activities_sync_log where object_id=[id]</code></pre></li></ul>
+</li>
+</ul><h3 id="header-13">How to delete an index from elastic search:</h3><ul><li><pre><code class="language-text">curl -XDELETE 'http://elasticsearch.{{TECHNICALNAME}}.svc.cluster.local:9200/[dbname]'</code></pre></li></ul><h3 id="header-14">How to get the amount read requests per Elastic Search index (installation)</h3><p> Get Read Stats per Index</p><ul>
+<li><p>cd /opt/pdp/support/localScripts</p></li>
+<li><p>/opt/pdp/opst/apps/php-5.3.6/bin/php /opt/pdp/support/localScripts/getElasticSearchReads.php</p></li>
+<li>
+<p>output looks like this:</p>
+<pre><code class="language-text">Index: opst_xyz             had: 123456789   read requests</code></pre>
+</li>
+</ul><h1 id="header-17">Elastic Search in Cloud</h1><p>check Elastic Search config in database settings, the value is called “conenctions” and should look something like : elasticsearch.ab1234.svc.cluster.local </p><p>(efslogin -&gt;select * from config_variables where name like “%elastic%”\G)</p><p>Then the curl is similar to the old one:</p><pre><code class="language-text">curl -XGET 'http://elasticsearch.{{TECHNICALNAME}}.svc.cluster.local:9200/_cat/indices?v' </code></pre><p></p><h2 id="header-19"><strong>Good-to-know curls</strong></h2><h3 id="header-21">Check Cluster Health</h3><p>Checking the detailed health of your cluster, especially around the affected index. This can provide insights into which shards are unallocated or causing the issue:</p><pre><code class="language-text">curl -XGET 'http://elasticsearch.{{TECHNICALNAME}}.svc.cluster.local:9200/_cluster/health/opst_xh0589?pretty'</code></pre><h3 id="header-22">Ensure Enough Disk Space</h3><p>Check if there is enough disk space on the nodes. Elasticsearch will not allocate shards to a node that has crossed a certain disk watermark (by default, 85% full). You can check the disk usage with:</p><pre><code class="language-text">curl -XGET 'http://elasticsearch.{{TECHNICALNAME}}.svc.cluster.local:9200/_cat/nodes?v&amp;h=ip,disk.avail'</code></pre><h3 id="header-23">Check Node Availability</h3><p>Make sure that all nodes expected to be part of the cluster are up and running. A missing node which holds replicas could be the cause:</p><pre><code class="language-text">curl -XGET 'http://elasticsearch.{{TECHNICALNAME}}.svc.cluster.local:9200/_cat/nodes?v'</code></pre><h3 id="header-24">Summary of all shards for an index</h3><p>This command is used to retrieve a readable summary of all the shards for an index, including details like shard number, primary or replica status, state, and more. It's useful for quick diagnostics and monitoring of the shard distribution and health within an Elasticsearch cluster.</p><pre><code class="language-text">curl -XGET 'http://elasticsearch.{{TECHNICALNAME}}.svc.cluster.local:9200/_cat/shards/opst_{{TECHNICALNAME}}?v'</code></pre><p></p><h2 id="header-26">Handling Translog Corruption in Elasticsearch</h2><p><strong>Overview</strong><br>The transaction log (translog) in Elasticsearch plays a critical role in ensuring data durability between flushes to disk, by recording all operations that modify data. Corruption of the translog can prevent shards from recovering

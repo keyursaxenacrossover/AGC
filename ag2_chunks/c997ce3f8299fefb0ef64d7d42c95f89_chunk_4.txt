@@ -1,0 +1,62 @@
+ is to be performed.</p>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="3699"><br><strong data-renderer-mark="true">Format check </strong><br>The format check checks the variable to be set to see whether it complies with a format, also set by you.<br>You have the choice of the following formats:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="3869">Checking to see whether the field contains no numbers.</p>
+</li>
+<li>
+<p data-renderer-start-pos="3927">Checking to see whether the field contains only uppercase letters.</p>
+</li>
+<li>
+<p data-renderer-start-pos="3997">Checking to see whether the field contains only lowercase letters.</p>
+</li>
+<li>
+<p data-renderer-start-pos="4067">Checking to see whether the field contains only numbers with periods or commas.</p>
+</li>
+<li>
+<p data-renderer-start-pos="4150">Checking to see whether the field contains only numbers with or without periods.</p>
+</li>
+<li>
+<p data-renderer-start-pos="4234">Checking to see whether the field contains only numbers with or without commas.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="4317">If you set up a range check to do a JavaScript plausibility check or a combined PHP plausibility check, please note: JavaScript gives a value of “0” to an empty string (nothing entered). That is, if a respondent enters nothing, it will not be seen as an incorrect entry, rather it will be given a value of “0”, which is either permitted or prohibited depending on how each area is defined. In order to prevent this kind of misevaluation, please run a separate OnlyNumbers check (do not use AND conjunctions with the Range check) on the input field.</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="4867">To create the format check, please proceed as follows:</p>
+<ol class="ak-ol wysiwyg-text-align-justify" start="1" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="4925">Select the variable you want to check.</p>
+</li>
+<li>
+<p data-renderer-start-pos="4967">Select the format for which you want to check the variable you previously set.</p>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="5049"><br><strong data-renderer-mark="true">RegEx check and NoRegEx check</strong><br>The RegEx and NoRegEx checks check the variable to be set to see whether it complies with a regular expression, also set by you.</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="5210">Regular expressions are defined as follows:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="5257">Regular expressions, or RegEx for short, are used to check strings. They are used very frequently, especially in the UNIX environment, and make it easier to check strings containing many conditions.</p>
+</li>
+<li>
+<p data-renderer-start-pos="5459">There are to possible types of RegEx:</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="5500">– RegEx check</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="5515">– NoRegEx check</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="5534">If a RegEx check returns “true”, an error message is output. The logic of the NoRegEx check is exactly the other way around.</p>
+</li>
+<li>
+<p data-renderer-start-pos="5662">RegEx checks are enclosed in “/”. Optionally, a so-called pattern modifier can be placed at the end. Please note that RegEx checks in PHP and JS may show a differing behavior. For JS checks, the results might even differ among various browsers. Because of the complexity of regular expressions, we recommend testing the check in the system first.</p>
+</li>
+<li>
+<p data-renderer-start-pos="6012">Examples: </p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="6026">– Zip code check =&gt; /^[0-9]{5}$/ (exactly 5 digits)</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="6079">– Money field =&gt; /^[0-9]+ (EUR|USD)$/ (as many numbers as required + currency, either EUR or USD)</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="6180">References: <span data-inline-card="true" data-card-url="http://www.php.net/manual/en/ref.pcre.php"><span class="loader-wrapper"><span aria-expanded="false" aria-haspopup="true" data-testid="hover-card-trigger-wrapper"><a class="css-118vsk3 e26bri0" tabindex="0" role="button" href="http

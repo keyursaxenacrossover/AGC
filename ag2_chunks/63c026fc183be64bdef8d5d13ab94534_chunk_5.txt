@@ -1,0 +1,55 @@
+>
+<h3 id="h_01J3FFJKHSS77QMA77KCC70TST">Viewing the Payment Requests</h3>
+<h4 id="h_01J3FFJKHSBM6PC170JTRZXVSH">1. Aggregate View</h4>
+<p>In the People → Incentive management → Bonus system → Payment list menu, you can view and edit payment requests.</p>
+<ul>
+<li>The overview lists requests aggregated by bonus type and month.</li>
+<li>
+<strong>Bonus types with open requests</strong>: Click the title or Edit icon to open and process lists of requests with statuses “earmarked” and “exported”.</li>
+<li>
+<strong>Bonus types without open requests</strong>: Not clickable.</li>
+<li>
+<strong>Detail View button</strong>: Access a list of all payment requests, including processed ones.</li>
+<li>Use the search function to filter by request status, bonus type and category, accounting date, and type of payment.</li>
+</ul>
+<h4 id="h_01J3FFJKHS0D3VJNAE010EB074">2. Detail View</h4>
+<p>Click the Detail view button in the aggregated view to see all payment requests, including processed ones.</p>
+<p><strong>Alternative Recipient Address:</strong></p>
+<ul>
+<li>Optionally, panelists can specify an alternative recipient address (e.g., workplace or friend's address). This feature requires special programming.</li>
+<li>The alternative address is stored during redemption and listed in the “Altern. recipient” column in the detail view and export.</li>
+</ul>
+<p><strong>Search and Export:</strong></p>
+<ul>
+<li>Use the search function to find individual panelists or restrict the list by request status, bonus type and category, accounting date, and type of payment. You can also display deleted panelists.</li>
+<li>Download the list using the Excel export and CSV export buttons. Exporting changes the status of all “earmarked” records to “exported” to prevent duplicate export and payment.</li>
+</ul>
+<h4 id="h_01J3FFJKHSN5A0BYANQYNFEQ5J">3. Payment Statuses in Detail</h4>
+<p>The request statuses describe whether a payment request has been processed and the result.</p>
+<table class="relative-table tablesorter tablesorter-default wrapped confluenceTable" style="margin: 0px auto; border-collapse: collapse; background-color: #ffffff; height: 647px; width: 690px;" border="1">
+<colgroup> <col style="width: 0px;"> <col style="width: 0px;"> </colgroup>
+<tbody>
+<tr class="tablesorter-headerRow">
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; background-color: var(--ds-background-accent-gray-subtlest,#f0f0f0); padding: 7px 10px !important; width: 309.028px;" scope="col">
+<div class="tablesorter-header-inner">Status</div>
+</th>
+<th class="tablesorter-header sortableHeader tablesorter-headerUnSorted confluenceTh" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; background-color: var(--ds-background-accent-gray-subtlest,#f0f0f0); width: 355.66px;" scope="col">
+<div class="tablesorter-header-inner">Meaning</div>
+</th>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 309.028px;">earmarked</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 347.639px;">
+<p>This status is automatically assigned to all new payment requests. It is changed as soon as an administrator exports the data for external processing or changes the status to “paid” resp. “canceled”.</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 309.028px;">exported</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 347.639px;">
+<p>As soon as you export the data from the detail view, the status of “earmarked” payment requests is changed to “exported”. Thus, payment requests which have been exported for external processing can be recognized easily and you can prevent duplicate export and duplicate payment.</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important; width: 309.028px;">paid</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; width: 347.639px;">
+<p>This status

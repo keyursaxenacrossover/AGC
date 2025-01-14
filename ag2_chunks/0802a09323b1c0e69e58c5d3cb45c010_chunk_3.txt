@@ -1,0 +1,31 @@
+-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015136658066" alt="Filter Definition.png"></p>
+<p class="wysiwyg-text-align-justify">Now, the additional questions are ready to use. On the <strong>Questionnaire</strong> tab, you can also enter a description of the context variable. You can use a slide switch to determine whether the additional questions should be enabled by default. If you activate this option, the additional questions will be part of the survey.</p>
+<p class="wysiwyg-text-align-justify">After you have published the guide, you will not be able to select another questionnaire. The selection will be final.</p>
+<p class="wysiwyg-text-align-justify"><strong>Multilingualism</strong></p>
+<p class="wysiwyg-text-align-justify">In order to send out the survey in the language preferred by the participants, switch to the Language editor and define a language selection variable like <em>u_wave_locale</em>. If participants have been assigned one of the standard languages via <em>Locale</em>, the survey is sent out in the assigned language. Another prerequisite is that the survey is available in the language.</p>
+<p class="wysiwyg-text-align-justify"><strong>Language versions</strong></p>
+<p class="wysiwyg-text-align-justify">To be able to offer different labels and phrases in different languages in one survey, which is common practice in 360° leadership surveys, you now have the possibility to create variants (e.g. of English) within a language by assigning a condition variable, defining a comparison value, setting <em>u_wave_locale</em> as language selection variable and checking the option "Assign language based on ISO code".</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015166708370" alt="Language Editor.png"></p>
+<p class="wysiwyg-text-align-justify">Proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>In the questionnaire editor, select the menu item <strong>Language Editor</strong> and click <strong>Create Language</strong>.</p>
+</li>
+<li>
+<p>In addition to the known settings that you have to make, assign a name, select the language identifier, and choose the language from which survey messages and text elements are to be taken, create a condition such as <em>u_guidewave_rater_group = sys_rg_self_assessment</em>.</p>
+</li>
+<li>
+<p>The operator used for the condition is <strong>=</strong> and cannot be changed.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Survey participants whose preferred language has been stored in the panelist administration via the Locale will not only be given the language corresponding to this code at the start of the survey but also the variants of the preferred language corresponding to the condition. For example, the team participating in a 360° leadership survey answers the questions in a variant of German that is tailored to them in terms of phrases, while in the self-assessment the phrases of the preferred survey language that are tailored to the guide initiator are asked.</p>
+<p class="wysiwyg-text-align-justify">As soon as you check the option "Assign language by ISO code" and click the <strong>Save</strong> button, you can specify the condition for the language variants.</p>
+<p class="wysiwyg-text-align-justify">A prerequisite is that the phrases have been created.</p>
+<h3 id="e-mail-settings" class="wysiwyg-text-align-justify"><strong>E-Mail settings</strong></h3>
+<p class="wysiwyg-text-align-justify">On the <strong>E-Mail settings </strong>tab, you can select e-mail templates, e.g. for the invitations e-mails and results e-mails.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015166706066" alt="E-Mail Settings.png"></p>
+<p class="wysiwyg-text-align-justify">To create an e-mail template on your own or to edit an existing template, first click on the link. A template that will be used for your guide project must be created as a <strong>New draft for projects</strong>. Therefore, click on the <strong>+ New draft</strong> button and select <strong>+ New draft for projects</strong>.</p>
+<p class="wysiwyg-text-align-justify">To create multilingual e-mail templates, first open the <strong>Mail templates </strong>menu item. Either select an existing e-mail template or create a completely new template in the default language. Add then the translation. For this purpose, each template has an "Additional translations" section. This area will be enabled, as soon as you will save the template you created.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015136649362" alt="Additional Translations.png"></p>
+<p class="wysiwyg-text-align-justify">Click on the <strong>+ New </strong>button to create your translation of the e-mail template. A selection and input dialog will be opened.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015136645650" alt

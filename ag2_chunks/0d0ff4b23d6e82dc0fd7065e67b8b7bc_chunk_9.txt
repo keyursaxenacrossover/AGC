@@ -1,0 +1,102 @@
+0”.</p>
+<p>When displaying participants with code “0” in the tables, please check whether these should also be included in the calculation of the total or of statistical values. You will find the respective functions in the Settings dialog on the Missings tab</p>
+</td>
+</tr>
+<tr style="height: 346px;">
+<td style="width: 133.941px; height: 346px;">
+<p>User-defined<br>missings</p>
+</td>
+<td style="width: 89.7917px; height: 346px;">
+<p>x</p>
+</td>
+<td style="width: 70.8681px; height: 346px;">
+<p>x</p>
+</td>
+<td style="width: 174.948px; height: 346px;">
+<p>Single response,<br>matrix, simple recoding</p>
+</td>
+<td style="width: 273.785px; height: 346px;">
+<p>By default, answer options that have been marked as missing values in the questionnaire editor will not be displayed in the tables. This function allows you to display these options.</p>
+<p>When displaying options marked as missing (e.g. “No selection”) in the tables, please check whether these<br>should also be included in the calculation of the total or of statistical values. You will find the respective functions in the<strong> Settings</strong> dialog on the <strong>Missings</strong> tab</p>
+</td>
+</tr>
+<tr style="height: 403px;">
+<td style="width: 133.941px; height: 403px;">
+<p>Userdefined calculation</p>
+</td>
+<td style="width: 89.7917px; height: 403px;">
+<ul>
+<li>
+<p> </p>
+</li>
+</ul>
+</td>
+<td style="width: 70.8681px; height: 403px;">
+<p>x</p>
+</td>
+<td style="width: 174.948px; height: 403px;">
+<p>Single response,<br>matrix</p>
+</td>
+<td style="width: 273.785px; height: 403px;">
+<p>If you select this option, an editor is opened which is designed quite analog to the familiar admin area condition editor. By combining the following elements, you can specify calculations:</p>
+<ul>
+<li>
+<p>Reference / Number: Answer options of the current question, integers (positive and negative) or floating numbers (the decimal separator of the currently-selected interface language is used, i.e. engl = 1.1; de = 1,1).</p>
+</li>
+<li>
+<p>Operations: + addition, - subtraction, * multiplication, /<br>division</p>
+</li>
+<li>
+<p>Brackets</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr style="height: 190px;">
+<td style="width: 133.941px; height: 190px;">
+<p>Inside title</p>
+</td>
+<td style="width: 89.7917px; height: 190px;">
+<ul>
+<li>
+<p> </p>
+</li>
+</ul>
+</td>
+<td style="width: 70.8681px; height: 190px;">
+<p>x</p>
+</td>
+<td style="width: 174.948px; height: 190px;">
+<p>Single response,<br>matrix, multiple<br>response, simple recoding, multiple recoding</p>
+</td>
+<td style="width: 273.785px; height: 190px;">
+<p>Manually created inside titles which may be used to organize a list of answer options, for example.</p>
+<p>Please note: Inside titles or group items created in the source question in the questionnaire editor will not be included in the reports.</p>
+</td>
+</tr>
+<tr style="height: 389px;">
+<td style="width: 133.941px; height: 389px;">
+<p>Net</p>
+</td>
+<td style="width: 89.7917px; height: 389px;">
+<p>x</p>
+</td>
+<td style="width: 70.8681px; height: 389px;">
+<p>x</p>
+</td>
+<td style="width: 174.948px; height: 389px;">
+<p>Multiple response, multiple recoding</p>
+</td>
+<td style="width: 273.785px; height: 389px;">
+<p>Net participation.</p>
+<p>The net participation indicates how many participants have answered a multiple response question, or particular answer options of that question, respectively. Thus, the aggregation shows how many participants have selected at least one answer, and not how many answers have been selected how many times altogether.</p>
+<p>Optionally, you can aggregate several related answer options and then have the net participation calculated for this particular aggregation. For each aggregation, the participants will be counted only once</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="controlling-the-inclusion-of-missings" class="wysiwyg-text-align-justify"><strong>Controlling the inclusion of missings</strong></h3>
+<p class="wysiwyg-text-align-justify">You can decide for yourself whether missing values shall be included in the calculation of the total or other key figures. You will find the respective options by following these click paths:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>For the entire report: Menu <strong>Report</strong> → <strong>Report settings

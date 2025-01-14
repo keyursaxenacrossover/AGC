@@ -1,0 +1,89 @@
+ to errors!</em></p>
+<p> </p>
+<h1 id="h_01J7DPTGR3ZKK9346QME9GXCV6">Activation of CLF (Closed Loop Feedback)</h1>
+<h3 id="h_01J7DPX93G47W56CCYVKJT2KB1">Dependencies</h3>
+<p>Other modules needed for the Closed Loop Feedback:</p>
+<ul>
+<li>MySight v2</li>
+<li>Employee</li>
+</ul>
+<h3 id="h_01J7DPXNQQ0P6AGKM0WD5Y91VD">Activate CLF</h3>
+<ul>
+<li>
+<p>As the root user, go to <strong>Options -&gt; Platform cockpit -&gt; root only:: System configuration</strong> and change</p>
+<ul>
+<li>
+<p><code>clf_enable</code> to <strong>true</strong></p>
+</li>
+</ul>
+</li>
+<li>Run <strong>healself</strong> in the Service Gateway (<a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21139518716562" target="_blank" rel="noopener noreferrer">How to Access and Work with DXI Service Gateways</a>)</li>
+<li>
+<p>add an update to Globis for the installation by mentioning the activated modules and the support case</p>
+<ul>
+<li><code>u activated clf_enable [ZD_ticket_ID]</code></li>
+</ul>
+</li>
+</ul>
+<h1 id="h_01J7DRSKZZS1T7FA23Q8800E1T">Activation of EFS Secure Exchange (Filemanager)</h1>
+<p>The Exchange Platform for Teams to securely upload and download files, and is available since EFS 10.1 and above:</p>
+<ul>
+<li>
+<p>As the root user, go to <strong>Options -&gt; Platform cockpit -&gt; root only:: System configuration</strong> and change</p>
+<ul>
+<li>
+<p><code>provider_gui_dir</code> and add <strong>fm</strong></p>
+</li>
+<li>
+<code>modules</code> and add <strong>fm</strong>
+</li>
+</ul>
+</li>
+<li>Run <strong>healself</strong> in the Service Gateway (<a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21139518716562" target="_blank" rel="noopener noreferrer">How to Access and Work with DXI Service Gateways</a>)</li>
+<li>
+<p>add an update to Globis for the installation by mentioning the activated modules and the support case</p>
+<ul>
+<li><code>u activated fm [ZD_ticket_ID]</code></li>
+</ul>
+</li>
+</ul>
+<h1 id="h_01J7DRSP79KTF2V85Z1DDT9YF0">Activation of EFS High Security Mode</h1>
+<h3 id="h_01J7DS48ZFWAMXNGYT4VVWKHVK">Prerequisites</h3>
+<p>Please check if the standard “high security mode” is needed or the newer “high security” that is exclusive for the panelwebsite.</p>
+<ul>
+<li>If the panelwebsite is needed enable config variable:  <code>panelwebsite_high_security</code>
+</li>
+<li>If the standard version is needed proceed with the steps below.</li>
+</ul>
+<p>The installation and all aliases need to have SSL certificates or otherwise an SSL warning will be shown!</p>
+<h3 id="h_01J7DS4VBFPNT1KQXJRAT0SR09">Module Activation</h3>
+<ul>
+<li>
+<p>As the root user, go to <strong>Options -&gt; Platform cockpit -&gt; root only:: System configuration</strong> and change</p>
+<ul>
+<li>
+<p><code>high_security</code> to <strong>true</strong></p>
+</li>
+<li>
+<code>force_ssl</code> to <strong>true</strong>
+<ul>
+<li><strong>This last option requires frontend restarts, so a SaaS CR needs to be logged to finalize this.</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="h_01J7DS8TEC77KQ21XA9QWXYZXY">Optional flags that can be set</h3>
+<ul>
+<li>
+<code>admin_session_highsecurity_timeout</code>: Timeout for admin session iof high security mode is enabled. <br><strong>Default:</strong> 900</li>
+<li>
+<code>password_repeat_count</code>: password history. check the last x passwords if the password has been used before. <br><strong>Default:</strong> 0</li>
+<li>
+<code>password_len</code>: Minimum password length. If high_security is on and this option is configured to 6 characters, the minimum used is 8 characters. <br><strong>Default: </strong>'8 characters'</li>
+<li>
+<code>password_alg</code>: Algorithm used to check password complexity. <br><strong>Default: </strong>7 (Upper and lower case and either numbers or special characters)</li>
+<li>
+<code>pass_interval</code>: period of validity (in days). <br><strong>Default: </strong>100</li>
+<li>
+<code>brute_force</code>: Number of failed logins after

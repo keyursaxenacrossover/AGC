@@ -1,0 +1,70 @@
+<p><strong>General Migration Information</strong></p>
+<ul>
+<li>
+<p><strong>What is the Hurricane to SES migration?</strong><br>We are migrating our email-sending service from Hurricane to Amazon SES to improve email deliverability and reliability.</p>
+</li>
+<li>
+<p><strong>Do I need to take any action?</strong><br>If you received a domain verification communication, update your DNS records. Otherwise, the transition will be seamless for you.</p>
+</li>
+<li>
+<strong>Would we be impacted if we use our own mail relay server?</strong><br>They should have received an communication. New Server hostname should be changed to outboundemail1.tivian.com</li>
+</ul>
+<hr>
+<p><strong>Domain Verification</strong></p>
+<ul>
+<li>
+<p><strong>Why am I being asked to verify domains I don't use?</strong><br>All domains in your instance are included for future-proofing. Ignore unused domains but verify those you want to send emails from.</p>
+</li>
+<li>
+<p><strong>How do I know which domains I need to verify?</strong><br>Check the list of domains in our communication. It covers all the domains. And according to our records, <a href="#h_01JEEGR1AW8GF7HETPYKX6TV0P">here is the list of the domains that you have used in the past year.</a></p>
+</li>
+<li>
+<p><strong>I received communications for different cohorts. Why?</strong><br>If you have multiple instances, please verify domains for each instance as instructed.</p>
+</li>
+<li>
+<strong>When can the old DKIM entry be deleted?<br></strong>We will notify you before older DKIM entries can be deleted. <br>Deletion of older DKIM entries before the new DNS entries have been verified by us, will lead to loss of email functionality.</li>
+</ul>
+<hr>
+<p><strong>Time Constraints and Extensions</strong></p>
+<ul>
+<li>
+<p><strong>Can I get an extension for verifying my domains?</strong><br>Extensions are possible until December 16 at the latest. Complete verification as soon as possible to avoid email interruptions.</p>
+</li>
+<li>
+<p><strong>What happens if I don't verify my domains in time?</strong><br>You won’t be able to send emails from unverified domains, and email functionalities like surveys may fail.</p>
+</li>
+</ul>
+<hr>
+<p><strong>Domain Control and Responsibility</strong></p>
+<ul>
+<li>
+<p><strong>You control our domain. Why do I need to make changes?</strong><br>If we control your domain, we’ll make the changes. The request applies only to domains we don’t control. If you believe there is an error, please help us with the domains that you believe are controlled by us.</p>
+</li>
+<li>
+<p><strong>Who is responsible for making the DNS changes?</strong><br>You or your IT team must make changes for domains not under our control. We’ve provided the DKIM and CNAME records in the communication.</p>
+</li>
+<li>
+<strong>Where can I find all the domain names which will be impacted with this migration? <br></strong>List of domains based on the folder which was sent in the comms. Each folder has a set of zone files. The names of the zone files correspond to the domain names.<strong><br></strong>
+</li>
+</ul>
+<hr>
+<p><strong>Post-Migration</strong></p>
+<ul>
+<li>
+<p><strong>What should I do if my emails stop working after the migration?</strong><br>Contact us immediately and ensure all required domains are verified.</p>
+</li>
+<li>
+<p><strong>Will there be any changes to how I use the email functionality?</strong><br>The migration should be seamless, with no changes to email functionality. Contact us if you notice any issues.</p>
+</li>
+<li>
+<p><strong>What will be the process for the future?</strong><br>Please submit a ticket with us. We will supply you with the necessary zone file, and after you update the DNS entry, please be aware that it may take up to 72 hours for the changes to fully propagate on the AWS side. <br>For such requests, the process would be:<span style="color: #2f3941; font-family: system-ui, -apple-system, ' system-ui' , ' Segoe UI' , Roboto, Oxygen-Sans, Ubuntu, Cantarell, ' Helvetica Neue' , Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #fff7ed; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"><br></span></p>
+<ul>
+<li>CS -&gt; SaaS:<br>
+<ul>
+<li>File a ticket for SaaS to add the domain into the system under SES</li>
+<li>SaaS will generate the new zone file and provide this Zone file to CS</li>
+</ul>
+</li>
+<li> CS -&gt; Customer<br>
+<ul>
+<li>CS sends the zone file to the customer and waits for confirmation from the customer that the zone file has

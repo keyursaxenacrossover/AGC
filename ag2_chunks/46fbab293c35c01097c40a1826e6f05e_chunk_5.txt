@@ -1,0 +1,84 @@
+-text-align-justify">
+<li>
+<p>If a variable split trigger is used on the first page of a survey, then the execution position cannot be “=directly”.</p>
+</li>
+<li>
+<p>Variables located within a loop branch cannot be used as a split attribute.</p>
+</li>
+<li>
+<p>The following variables cannot be used as source or target variables for data privacy reasons: <em>u_account</em>, <em>u_ppasswd</em>, <em>u_passwd</em>, <em>u_email</em>, <em>u_initial_passwd</em>. Existing recodings of these variables are not supported either.</p>
+</li>
+</ul>
+<h3 id="application-example" class="wysiwyg-text-align-justify">Application Example</h3>
+<p class="wysiwyg-text-align-justify">You are planning an advertising effectiveness study intended to test a new form of advertising. Your cooperation partner sets a cookie with every website visitor who has seen the new form of advertising. Now, you want to find out whether there are connections between answer patterns in your study and the form of advertising (e.g. “Do people who have seen the form of advertising remember its contents?”).</p>
+<p class="wysiwyg-text-align-justify">At the beginning of the survey, all cookies will automatically be read and saved, collectively, in a system variable. The variable split trigger will pinpoint one cookie value, read it from the collection, and save it in a user-defined variable.</p>
+<p class="wysiwyg-text-align-justify">For reasons of privacy, the browsers only allow certain cookies to be read. If you run the study at the <a href="http://survey.mycompany.com">survey.mycompany.com</a> domain, for example, you can read all cookies in the <a href="http://mycompany.com" data-card-appearance="inline">http://mycompany.com</a> domain group. This includes, e.g., <a href="http://advert.mycompany.com">advert.mycompany.com</a> or <a href="http://survey.mycompany.com">survey.mycompany.com</a>, but not <a href="http://www.somethingelseentirely.com">www.somethingelseentirely.com</a> or <a href="http://www.mycompany.net">www.mycompany.net</a>. However, this will only work if the cookie is set in such a way that other subdomains are allowed to read it. Clarify this in advance with those responsible for setting the cookie.</p>
+<p class="wysiwyg-text-align-justify">To read the respondents’ cookies and save a cookie value in a user-defined variable, please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Create a new variable in the <strong>Project properties</strong> menu on the <strong>User-defined variables</strong> tab. As you want to save the cookie name, choose the “Text” type. Assign a meaningful label. You can output the variable’s content via #Label# or #c_000n#, where n is the number of the user-defined variable.</p>
+</li>
+<li>
+<p>Then, switch to the page of the survey on which you wish to create the trigger.</p>
+</li>
+<li>
+<p>Click on the<strong> Trigger</strong> tab and create a trigger of the “Variable split trigger” type.</p>
+</li>
+<li>
+<p>First, specify the condition for which the trigger is to be activated. You will normally want to execute the trigger on the first page of your survey. If this page does not contain a variable, create a dummy variable with question type 911.</p>
+</li>
+<li>
+<p>In the trigger editor, various source variables are visible:</p>
+</li>
+</ul>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default">
+<colgroup> <col style="width: 344.0px;"> <col style="width: 416.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p><strong>Variable</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Cookies (start_cookies)</p>
+</td>
+<td>
+<p>All readable cookies.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>GET variables at the beginning of the survey (start_get_vars)</p>
+</td>
+<td>
+<p>All parameters were transferred at the beginning of the survey.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Quota (quota)</p>
+</td>
+<td>
+<p>Contains the result of quota processes.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Project variables (v_xxx)</p>
+</td>
+<td>
+<p>The “normal” project variables.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>A cookie, when it is set, has a name and a value, e.g. opst_demopanel_108 and “7a8cc5c05df7820217d9bf3f6c5b0781”. The “Array field” allows you to define which of the collected cookies is to be written into the user-defined variable.</p>
+</li>
+<li>
+<p>The cookie

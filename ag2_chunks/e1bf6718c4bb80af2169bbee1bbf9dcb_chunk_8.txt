@@ -1,0 +1,76 @@
+branch, for example.</p>
+</li>
+</ul>
+<h3 id="tagging-the-appropriate-questionnaire-page-s" class="wysiwyg-text-align-justify">Tagging the appropriate questionnaire page(s)</h3>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>In the questionnaire editor, locate the page following the processing of which the quotas are to be analysed, and open its list view.</p>
+</li>
+<li>
+<p>Open the <strong>Properties</strong> menu.</p>
+</li>
+<li>
+<p>Select the option “Check internal quotas”.</p>
+</li>
+<li>
+<p>Click on <strong>Save</strong>. The page will now be marked with a <strong>Q</strong> icon in the questionnaire view.</p>
+</li>
+</ul>
+<h3 id="screening-out-unsuitable-respondents-by-quota" class="wysiwyg-text-align-justify">Screening out unsuitable respondents by quota</h3>
+<p class="wysiwyg-text-align-justify">Respondents that are identified as unsuitable due to the quota must be screened out. They are usually redirected to an intermediate final page using a filter:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>On this intermediate final page, the survey supervisor will thank the respondents for their willingness to participate.</p>
+</li>
+<li>
+<p>Upon reaching the intermediate final page, the participants can optionally be assigned a special disposition code (36, 37) by which they can be recognized in the subsequent analysis.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">You can see this typical routing structure in the sample questionnaire shown in figure.</p>
+<h3 id="selecting-a-suitable-point-in-the-questionnaire" class="wysiwyg-text-align-justify">Selecting a suitable point in the questionnaire</h3>
+<p class="wysiwyg-text-align-justify">Please note:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The screening out should not be performed until all quotas have been checked.</p>
+</li>
+<li>
+<p>You should select a point in the questionnaire which all participants will have to pass, i.e. it should not be located in a filter branch, for example.</p>
+</li>
+</ul>
+<h3 id="setting-up-filter-and-a-final-page" class="wysiwyg-text-align-justify">Setting up the filter and a final page</h3>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>In the questionnaire editor, locate the page following the processing of which the unsuitable respondents are to be screened out.</p>
+</li>
+<li>
+<p>Create a filter. In most cases, the filter condition will be “quota = 0”, i.e. the system will screen out all those respondents who have not been allocated to an open quota. If you want to screen out respondents that have been allocated to the quota with the ID 1, you will select “quota = 1” instead.</p>
+</li>
+<li>
+<p>Create a final page under the filter and open its list view.</p>
+</li>
+<li>
+<p>Click on the <strong>Properties</strong> menu.</p>
+</li>
+<li>
+<p>In the field “Disposition code”, select the disposition code that the participants are to be assigned upon reaching this intermediate final page. A range of disposition codes (31-40) is available.</p>
+<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013838018194" alt="Screenshot 2023-03-20 at 08.31.15.png">
+</li>
+<li>
+<p>Confirm by clicking on <strong>Change</strong>.</p>
+</li>
+</ul>
+<h2 id="routing-and-evaluation" class="wysiwyg-text-align-justify">Routing and evaluation</h2>
+<h3 id="two-variables-quota-and-quota_assigment" class="wysiwyg-text-align-justify">Two Variables <em>quota</em> and <em>quota_assigment</em>
+</h3>
+<p class="wysiwyg-text-align-justify">The quota results will be recorded in two variables:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>quota: This variable contains the ID of the allocated quota (i.e. the quota selected via allocation mode). It is used to screen out unsuitable participants.</p>
+</li>
+<li>
+<p>quota_assignment: This variable contains the IDs of all quotas in which the respective participant has been counted. It may help with the evaluation if you have activated option 3, for example, and thus allocated participants to all matching open quotas. In this case, “quota” will contain only the quota selected via allocation mode. “quota_assignment” will contain all the quotas to which the participant has been allocated, i.e. it allows you to understand exactly how the allocation figures are generated. Please bear in mind that “quota_assignment” cannot be used for filtering and other routing processes.</p>
+</li>
+</ul>
+<h3 id="disposition-codes-of-screened-out-participants" class="wysiwyg-text-align-justify">Disposition codes of screened-out participants</h3>
+<p class="wysiwyg-text-align-justify">At which point in the quota process a participant has been excluded from participation will be recorded i.a. in the field report, in the participant administration, and in the export data record via the following disposition code.</p>
+<table class="wysiwyg-text-align

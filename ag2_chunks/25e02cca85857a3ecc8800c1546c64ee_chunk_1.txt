@@ -1,0 +1,48 @@
+h3>
+<p>You can now use #wildcards#, e.g. #v_1#, as a value in standard filters of a survey, allowing users to compare answers of a question with a given answer of a different question without the need to use the alternative or LUA filter.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20997902264722" alt="image-20201019-094547.png"></p>
+<h3 id="header-8">Layout templates for question types</h3>
+<p>EFS Survey now supports editing of templates for all question types in Responsive Layout 3. Until now, it was only possible to edit some selected templates, with this release, it is now possible to introduce small modifications through the Pro-Editor to any question type, without the need to use the question type editor.</p>
+<p>In a project, by going to the layout editor and selecting the Pro editor, a new template section “Additional Question-Type templates” is available, with a list of all templates used by the various question types. Click on edit on any of the templates, to customise it.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20997849264914" alt="image-20200629-102631.png"></p>
+<h3 id="header-9">IP Restrictions in Survey Projects</h3>
+<p>It is now possible to change the mode of the IP access control in Project properties &gt; Login options for project types AN, PE, ES and MSF. Previously the list of IPs functioned as an allow list, now it is also possible to block an IP range or individual IPs through the select box. A mixed mode, where some IPs are allowed and some blocked from access is not possible.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20997872204562" alt="Screenshot 2020-07-22 at 08.42.57.png"></p>
+<h3 id="header-10">Other changes in EFS Survey</h3>
+<ul>
+<li>
+<p>All slider question types now also optionally provide a reset functionality, which allows respondents to reset their answer to the default value.</p>
+</li>
+<li>
+<p>The LUA question type is now also executed in the preview and any runtime errors will be shown immediately to the admin user. Please note when accessing survey variables from within LUA, that some of these don’t exist or are not populated during preview.</p>
+</li>
+<li>
+<p>LUA date() and time() functions from the os library are now also available as os.time(), os.date(), allowing easier portability and reuse of 3rd party LUA scripts. We have added support for os.difftime().</p>
+</li>
+<li>
+<p>The recoding trigger now allows u_email to be recoded in PE projects.</p>
+</li>
+<li>
+<p>EFS now provides GDPR Purpose Statements for following languages: DE, EN. FI, ES, FR, IT, NB, DA, SV.</p>
+</li>
+<li>
+<p>When a panelist is deleted through the privacy assistant, all scheduled emails for that panelist will also be deleted.</p>
+</li>
+<li>
+<p>When deleting a participant in a personalised survey, any scheduled emails to that participant will also be deleted.</p>
+</li>
+</ul>
+<h1 id="header-12">EFS Panel</h1>
+<h3 id="header-14">Domain mapping for Portals and Panel Websites</h3>
+<p>The existing feature domain mapping has been enhanced to support Portals. It is now possible to specify the redirect for the default root-website of a domain (e.g. <a href="https://qubie.app/">https://qubie.app/</a>) to a specific portal, just like it was possible to specify a language version of a website previously. The feature now is also located in People &gt; Panel configuration, since not all installations have the older Website module activated.</p>
+<p>This allows easier hosting and management of multiple portals, with different domains on a single EFS installation.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20997849618450" alt="image-20200629-103755.png"></p>
+<h3 id="header-15">Adding of panelists to multiple groups</h3>
+<p>Panelists can now be added to multiple groups at the same time through the panelist administration.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20997903018770" alt="image-20200629-130747.png"></p>
+<h1 id="header-17">Portals</h1>
+<h3 id="header-19">New guide type: Topic</h3>
+<p>With the new Topic guide, you can collect feedback not related to a persona or a team, but to a specific topic. A topic could be for example an event, a supplier or a marketing campaign.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20997903214354" alt="image-20201019-103049.png"></p>
+<p>A topic can be entered by the guide-initiator during the guide-setup or provided as a list (prepared in guide-configuration) for the initiator to select from. Validation for topics entered is available, and the topic can be optionally checked to be an URL, Hashtag or Email address.</p>
+<h3 id="header-20">New invitation mode for guides: Shareable link</h3>

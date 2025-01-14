@@ -1,0 +1,60 @@
+><p>Adjust config and change tmp path, watchdog path and gp_id</p></li>
+<li><p>Execute installation check</p></li>
+<li><p>If a Data Voyager needs to be copied as well, see <a href="https://it.globalpark.de/twiki/bin/view/Support/StephanieBeckerEinarbeitungTS#02_06_2015_Copy_Clone_a_Data_Voy">Copy/Clone a Data Voyager</a></p></li>
+<li><p>If MySight v2 projects were copied as well and have to be republished, see <a href="https://it.globalpark.de/twiki/bin/view/Support/MySight#MySight_new_Republish_MySight_pr">republish MySight project</a></p></li>
+</ul>
+</li>
+</ul><h2 id="header-4">Check a cloned installation</h2><ac:rich-text-body><p>Special Installations include: Kantar TNS, Ipsos Check <a href="https://qbdocs.atlassian.net/wiki/spaces/TS/pages/1053622522/Set+up+cloned+Installations#Special-Installations">Special Installations</a> for these!</p></ac:rich-text-body><p>A live installation has been copied in Bremen and the copy is to be used as a new live installation for the same customer. The following things have to be kept in mind respectively need to be changed/checked:</p><ul>
+<li><p>System Administration has copied the installation, renamed the database and has changed the database information in the config file (database name and gp_name)</p></li>
+<li>
+<p>Technical Support has to change further settings and check the installation afterwards:</p>
+<ul>
+<li>
+<p>TS adds installation to Globis by executing script "helpersAddInstallationInGlobis"</p>
+<ul>
+<li><p>If not defined otherwise in the case, select 2 "Kundeninstallation"</p></li>
+<li><p>select corresponding QB country</p></li>
+<li><p>Enter Salesforce account ID and contact ID as mentioned in the installation request</p></li>
+<li>
+<p>The script already changes</p>
+<ul>
+<li><p>tmp_path</p></li>
+<li><p>tmp_path_export (please mind that Rackspace only has /nfs/export1/ and that needs to be changed manually in the config!)</p></li>
+<li><p>watchdog_path</p></li>
+<li><p>gp_id</p></li>
+<li><p>the root password and prints it out on the console</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>TS adds additional modules if requested</p></li>
+<li><p>Login to installation using the root account</p></li>
+<li>
+<p>Check for modified variables and whether further paths needs to be adjusted to the new domain e.g.</p>
+<ul>
+<li><p>upload path</p></li>
+<li><p>relevantid_auth</p></li>
+<li><p>session DB</p></li>
+<li><p>intermediate DB for <a href="https://it.globalpark.de/twiki/bin/view/Support/MySight">EFS Mysight</a> v2</p></li>
+<li><p>export path (in case of Rackspace it needs to be /nfs/export1)</p></li>
+</ul>
+</li>
+<li><p>Add root password to password safe</p></li>
+<li>
+<p>Reset activity stream to create the elastic search index for this installation</p>
+<ul>
+<li><p>go to <strong>www</strong> folder</p></li>
+<li>
+<p>execute <strong>php support/panel_reset_activitystream.php</strong> =&gt; [ 1 ] - Delete and reset complete activity stream [WARNING: maybe slow]) </p>
+<ul><li><p>the script doesn´t end by itself. Kill with STRG + c when done</p></li></ul>
+</li>
+<li>
+<p>Optional check  -&gt; Look for <strong>yellow open</strong></p>
+<pre><code class="language-bash">curl -XGET --silent 'http://elasticsearch.[ab1234].svc.cluster.local:9200/_cat/indices?v' | awk 'NR&gt;1 {print "Health: "$1"\n" "Status: "$2"\n" "Index: "$3"\n" "Pri: "$4"\n" "Rep: "$5"\n" "Docs count: "$6"\n" "Docs deleted: "$7"\n" "Store size: "$8"\n" "Pri store size: "$9}'</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul><p>If Data Voyagers were cloned as well, they have to be checked, too. Please see step Clone a Data Voyager.</p><hr><h2 id="header-5">Special Installations</h2><h3 id="header-7">IPSOS Loyalty | EFM | CX</h3><p>The process for Ipsos Loyalty has been evolved already and all employees (Tech Support and Sysadmins) already should know about it.<br>Here is a documentation on how to set them up:</p><ul>
+<li><p>Christian fills out a survey to request the IPSOS EFM installation (<a href="https://ww2.efs-survey.com/uc/main/73d5/">https://ww2.efs-survey.com/uc/main/73

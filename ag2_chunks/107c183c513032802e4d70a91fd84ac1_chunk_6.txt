@@ -1,0 +1,82 @@
+-justify"><strong>Download import template</strong></p>
+<p class="wysiwyg-text-align-justify">Open the import dialog. There are three different methods to choose from:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>If there is no organizational structure yet, use the<strong> Import structure</strong> button. The illustrations in this chapter show such a complete import.</p>
+</li>
+<li>
+<p>Otherwise, you need to locate the reference unit within the organizational structure, i.e., the unit under which to import the new structural portion. Open the<strong> Actions</strong> layer and click on the link <strong>Import structure</strong>.</p>
+</li>
+<li>
+<p>If you are already in the detail view of the unit under which to import the new structural portion, open the <strong>Import Structure</strong> tab.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">For each import format, i.e. level import and connected list, there is an already preformatted import template available, containing all the required columns. This<br>template can be downloaded by clicking on the Import template “Level import” or Import template “Connected list” respectively. The illustrations in this chapter show a level of import.</p>
+<p class="wysiwyg-text-align-justify"><strong>Format the import file</strong></p>
+<p class="wysiwyg-text-align-justify">Open the file in a suitable program, e.g., in Excel.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Enter the data.</p>
+</li>
+<li>
+<p>Save the file in Excel or CSV format.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Match the fields of the import file with the database fields</strong></p>
+<p class="wysiwyg-text-align-justify">Again, open the import dialog.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>If you import into an already existing structure instead of performing a complete import, the field “Update existing structure data” will be displayed. Tick this checkbox if you wish to perform an update.</p>
+</li>
+<li>
+<p>Select the appropriate character set.</p>
+</li>
+<li>
+<p>Use the <strong>Browse</strong> function to select the import file on your PC.</p>
+</li>
+<li>
+<p>Make sure that the checkbox in the field “First row includes column labels” is ticked or unticked accordingly. Usually, it should be ticked.</p>
+</li>
+<li>
+<p>If your import file is formatted as a “Connected list”, activate the checkbox.</p>
+</li>
+<li>
+<p>Automatically generate meta name prefixes: If you are importing an already existing structure, you can modify the meta names and render them unique by entering a prefix in this field. This can be helpful when two subareas of a company have identical substructures which are duplicated by export and import.</p>
+</li>
+<li>
+<p>To start the import process click on <strong>Send file</strong>.</p>
+</li>
+<li>
+<p>In the next step, the columns of the import file have to be matched to appropriate fields of the database. If you have retained the column labels as recommended, then the software will perform the allocation automatically.</p>
+</li>
+<li>
+<p>After checking the allocation, confirm by clicking on <strong>Open Preview</strong>.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Check the import data in the preview</strong></p>
+<p class="wysiwyg-text-align-justify">The import preview shows all data records as they are imported into the project.  This step allows you to subsequently change data with the aid of the following new information and edit options:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Status</strong>: The traffic light icon in the “Status” column tells you whether the data record is complete and logically coherent. A red icon indicates an error. Move your mouse pointer over the icon to display the reason for this error.</p>
+</li>
+<li>
+<p><strong>Edit</strong>: By clicking on this actions icon you can open a dialog to subsequently change the respective data record.</p>
+</li>
+<li>
+<p><strong>Delete</strong>: The respective data record will be deleted after a confirmation prompt.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Perform the import and download the results</strong></p>
+<p class="wysiwyg-text-align-justify">If you are satisfied with your data in the preview, click on<strong> Import</strong> to trigger the actual import process. Following the completion of the import process, the program will indicate how many data records were successfully created and how many were not created due to certain problems. An Excel file containing the following information can be downloaded by clicking on the<strong> Download results</strong> button:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>all the data in the import file</p>
+</li>
+<li>
+<p>The “result” column contains the result of the import, i.e., either the message “Data record import successful” or “Data record not imported”.</p>
+</li>
+<li>
+<p>If any problems occur, the reason will be indicated in the “messages” column.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If necessary, you can correct the data records that were

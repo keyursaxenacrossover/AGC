@@ -1,0 +1,58 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K" class="wysiwyg-text-align-justify">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article provides comprehensive information on exporting data from EFS Survey projects. It covers various export formats, options, and best practices for handling survey data.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">This guide focuses on the export functionality in the EFS Survey, including different export types, data cleaning, quality correction, and tips for effective data management.</p>
+<ul class="wysiwyg-text-align-justify">
+<li><a href="#detailed-description-of-result-master-and-address-data-export">Detailed Description of Result, Master, and Address Data Export</a></li>
+<li><a href="#exporting-participant-and-status-codes">Exporting Participant and Status Codes</a></li>
+<li><a href="#exporting-answers-to-open-questions-for-quantum">Exporting Answers to Open Questions for Quantum</a></li>
+<li><a href="#special-functions-for-sas-export">Special Functions for SAS Export</a></li>
+<li><a href="#special-functions-for-fixed-format-export">Special Functions for Fixed Format Export</a></li>
+<li><a href="#what-do-the-exported-result-data-reveal">What does the Exported Result Data Reveal?</a></li>
+<li><a href="#efs-survey-variables">EFS Survey Variables</a></li>
+<li><a href="#defining-export-templates">Defining Export Templates</a></li>
+<li><a href="#data-cleaning">Data Cleaning</a></li>
+<li><a href="#quality-correction">Quality Correction</a></li>
+<li><a href="#general-tips-and-tricks-on-exporting-data">General Tips and Tricks on Exporting Data</a></li>
+</ul>
+<p> </p>
+<p class="wysiwyg-text-align-justify">In the <strong>Projects </strong>module, various options for exporting project-related records can be found under the <strong>Export </strong>menu item of each project. If you export result data from a project with loops, you can check the status of your export job or download the complete file in the <strong>Export Tasks </strong>menu. In <em>EFS People</em> installations, the <strong>Export </strong>menu item in the <strong>People </strong>module allows you to additionally export people-specific data (e.g. master data or address data of panelists).</p>
+<p class="wysiwyg-text-align-justify">Before exporting, you should consider exactly which data you need and which programs are to be used for further evaluation.</p>
+<p class="wysiwyg-text-align-justify"><strong>Example: Exporting result data for evaluation in SPSS</strong></p>
+<p class="wysiwyg-text-align-justify">The example below illustrates the export of project result data. The following requirements should be met:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Only the results of closed-ended questions should be exported.</p>
+</li>
+<li>
+<p>Only survey data of respondents who have completed the survey should be exported.</p>
+</li>
+<li>
+<p>Further evaluation is conducted using SPSS.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Please proceed as follows:</p>
+<ol class="wysiwyg-text-align-justify" start="1">
+<li>
+<p>Start the export process under <strong>Projects</strong> → {<strong>Selected project</strong>} → <strong>Export </strong>by selecting the data type “Result data”, and confirm by clicking on <strong>Next</strong>.</p>
+</li>
+<li>
+<p>In the list which then appears for selecting the export template, format, and extensive fine-tuning adjustments, you can make the desired restrictions. In the “Export settings” area, choose “SPSS” as the file format and “Project, closed-ended questions only” as the export template. Leave the default settings for data compression (“No compression”) and language (“English (default)”) unchanged.</p>
+</li>
+<li>
+<p>Open the “Restrict export to disposition codes” section and deactiveate all disposition codes except 31 (Completed) and 32 (Completed after break) according to the requirement defined above.</p>
+</li>
+<li>
+<p>Then, click on the <strong>Export </strong>button and reconfirm the export by clicking on <strong>Copy file to local PC </strong>on the following page.</p>
+</li>
+<li>
+<p>The download will begin. A pop-up window will open, in which you can choose to either open or save the file. Click on the <strong>Save button</strong>.</p>
+</li>
+<li>
+<p>A further dialog window will open, in which you can choose the folder you wish to save the file to. You can also rename the file. Confirm by clicking on <strong>Save</strong>.</p>
+</li>
+<li>
+<p>Once the download has been completed you can close the window by clicking on <strong>Close window</strong>.</p>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify">On several large collective installations, which are used by a number

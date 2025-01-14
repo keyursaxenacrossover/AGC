@@ -1,0 +1,87 @@
+height: 44px;">List name</td>
+<td style="height: 44px;">
+<p>By assigning an item to a list you determine which panel page the news item will be displayed on.</p>
+</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px;">Active</td>
+<td style="height: 22px;">Only active news items will be displayed.</td>
+</tr>
+<tr style="height: 190px;">
+<td style="height: 190px;">Access control</td>
+<td style="height: 190px;">
+<p>at one of the following options:</p>
+<ul>
+<li>Public: All panel visitors can see the news item.</li>
+<li>All logged-in panelists: All logged-in panelists can see the news item.</li>
+<li>For logged-in panelists of a panel group onlyp: If you choose this option, a drop-down list is displayed, from which you can select a certain panel group. Only members of the selected group can see the news item.</li>
+</ul>
+</td>
+</tr>
+<tr style="height: 89px;">
+<td style="height: 89px;">
+<p>Panel groups that have access</p>
+</td>
+<td style="height: 89px;">
+<p>If you have selected “Only for logged-in panelists” in the previous field, you may optionally further restrict access to a certain panel group. By default, “Default Panel Group”, which contains all active panelists, is preset.</p>
+</td>
+</tr>
+<tr style="height: 67px;">
+<td style="height: 67px;">
+<p>Displayed date of publication (GMT) (shown on website)</p>
+</td>
+<td style="height: 67px;">The date is displayed in the news.</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px;">Headline</td>
+<td style="height: 22px;">Headline.</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px;">Subtitle</td>
+<td style="height: 22px;">Subheading.</td>
+</tr>
+<tr style="height: 84px;">
+<td style="height: 84px;">Tags</td>
+<td style="height: 84px;">
+<p>Optionally, you can enter one or more tags (each consisting of the characters a-z, 0-9 and _) to add special markings. The tags are available in the output templates for output and/or filtering. Several tags can be entered, separated by commas.</p>
+</td>
+</tr>
+<tr style="height: 67px;">
+<td style="height: 67px;">Teaser</td>
+<td style="height: 67px;">
+<p>The teaser displayed on the news page together with the link to the full text of the news item. Optionally, you may design your items using the rich text editor.</p>
+</td>
+</tr>
+<tr style="height: 44px;">
+<td style="height: 44px;">Content</td>
+<td style="height: 44px;">
+<p>The actual news. Optionally, you may design your items using the rich text editor.</p>
+</td>
+</tr>
+<tr style="height: 44px;">
+<td style="height: 44px;">Link</td>
+<td style="height: 44px;">Provided as an RSS feed if the RSS feed function was activated.</td>
+</tr>
+<tr style="height: 44px;">
+<td style="height: 44px;">Author</td>
+<td style="height: 44px;">
+<p>Can be output via wildcard. The information is also provided as an RSS feed if the RSS feed function was activated.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="managing-news-lists" class="wysiwyg-text-align-justify"><strong>Managing News Lists</strong></h3>
+<p class="wysiwyg-text-align-justify">Many panels offer various news pages with different contents within one language version, e.g. a page with current news and a news archive. This is realized with the help of so-called news lists:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>For each purpose, you create an individual news list.</li>
+<li>Then you allocate the individual articles to the appropriate news lists.</li>
+<li>The news pages are created with the “News” function module. From this module, the appropriate news list is referenced.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">When delivered, there is only one news list in the standard panel, containing all the articles of the news menu. Usually, it is labelled “main”.</p>
+<p class="wysiwyg-text-align-justify">To access the news lists of your panel, click on the <strong>Manage lists</strong> button in the<strong> News management</strong>.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>The overview list shows all existing lists with their respective titles and descriptions.</li>
+<li>To create another list, click on the <strong>Create List</strong> button and enter the desired title and description. After clicking on <strong>Save</strong> the list is created and you can start allocating articles to it.</li>
+<li>You can rename or delete the lists.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015069380882" alt="listen_verwalten.png"></p

@@ -1,0 +1,49 @@
+<h1 id="h_01J3FB04HDNWD8SG024DHB8EEV" class="wysiwyg-text-align-justify">Overview</h1>
+<article>
+<p class="wysiwyg-text-align-justify">This article covers various aspects of panel configuration in EFS Panel, including consent form configuration, automatic deletion of invited panelists, ways of entry, PCI configuration, panel tracking, panel statuses, capacity filters, and password configuration.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">Panel configuration is essential for managing and maintaining an effective online panel. This guide provides detailed information on how to set up and customize various aspects of your panel to ensure optimal performance and data quality.</p>
+<ul class="wysiwyg-text-align-justify">
+<li><a href="#consent-form-configuration">Consent Form Configuration</a></li>
+<li><a href="#automatic-deletion">Automatic Deletion of Invited Panelists</a></li>
+<li><a href="#ways-of-entry">Ways of Entry</a></li>
+<li><a href="#pci-configuration">PCI Configuration</a></li>
+<li><a href="#panel-tracking">Panel Tracking</a></li>
+<li><a href="#panel-statuses">Panel Statuses</a></li>
+<li><a href="#capacity-filters">Capacity Filters</a></li>
+<li><a href="#password-configuration">Password Configuration</a></li>
+</ul>
+<h2 id="consent-form-configuration" class="wysiwyg-text-align-justify">Consent Form Configuration</h2>
+<p class="wysiwyg-text-align-justify">The consent form configuration allows you to create and manage the consent form for panelist registration. This feature is available for both login dialogs via the portal and for inviting panelists via email.</p>
+<h3 id="h_01J3F8Q9X2KKCYTMD0DGZCW43M" class="wysiwyg-text-align-justify">Key Points:</h3>
+<ul class="wysiwyg-text-align-justify">
+<li>Configure the consent form in the default language to display the checkbox.</li>
+<li>One configuration applies to all portals.</li>
+<li>Access the language overview in the People module under Panel Configuration Consent form configuration.</li>
+</ul>
+<h2 id="automatic-deletion" class="wysiwyg-text-align-justify">Automatic Deletion of Invited Panelists</h2>
+<p class="wysiwyg-text-align-justify">This feature allows you to automate the deletion of both Tell-a-friend panelists and panelists with panel status.</p>
+<h3 id="h_01J3F8Q9X28MJ2JBCTMYMWXJB8" class="wysiwyg-text-align-justify">Configuration Steps:</h3>
+<ol class="wysiwyg-text-align-justify">
+<li>Access the feature in People Panel configuration Automatic deletion of invited panelists.</li>
+<li>Set deletion criteria for Tell-a-friend panelists.</li>
+<li>Set deletion criteria for panelists with panel status, including specific panel statuses.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21018333335698">
+</li>
+</ol>
+<h2 id="ways-of-entry" class="wysiwyg-text-align-justify">Ways of Entry</h2>
+<p class="wysiwyg-text-align-justify">Ways of entry record how panelists entered the panel and are used for grouping and evaluation purposes. The “reg_code” variable records the entry method of a panelist and can be used for group creation or evaluation (see "Creating and Editing Groups" for details). Registration keys, generated for a specified entry method, are required for authentication in closed panels and are used in promotional campaigns to identify canvassing panelists and evaluate campaign success.</p>
+<p class="wysiwyg-text-align-justify"><em>Note - <span style="color: #333333; background-color: #f1f2f4;" data-colorid="hn7jcbi85k">Read rights for reg_code are required for accessing the </span><strong>People → Panel configuration → Ways of entry </strong><span style="color: #333333; background-color: #f1f2f4;" data-colorid="hkw6r8z7f2">menu.</span></em></p>
+<h3 id="h_01J3F8Q9X2216FZK99TRZ4PZFJ" class="wysiwyg-text-align-justify">Key Features:</h3>
+<ul class="wysiwyg-text-align-justify">
+<li>Create and manage ways of entry</li>
+<li>Organize ways of entry using categories</li>
+<li>Generate and manage registration keys</li>
+<li>Import user-defined keys</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Planning the Mapping of Registration Processes and Ways of Entry</strong></p>
+<p class="wysiwyg-text-align-justify">The entry method of panelists is important for statistics and grouping processes. Therefore, defining specific ways of entry for different registration processes is crucial.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Standard Registration Process with Form</strong>:</p>
+<ul>
+<li>You can assign a way of entry unless candidates have keys from a

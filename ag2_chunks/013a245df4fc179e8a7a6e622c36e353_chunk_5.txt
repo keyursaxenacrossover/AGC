@@ -1,0 +1,57 @@
+/import</strong> of the <strong>Language editor</strong>, the tab<strong> Export/import all languages</strong> is available. You use this to export and import all survey languages. In the <strong>Export</strong> section you will find a <strong>Download</strong> button which you can use to create the export of all survey languages of the selected project. An xslx file is downloaded. The xslx files are project-related and cannot be exchanged between different EFS projects.</p>
+<p>The <strong>Import</strong> section allows you to select and import a file. Only xslx files can be uploaded. You can create a report about the changed phrases.</p>
+<h3 id="header-31"><strong>Export Survey Data</strong></h3>
+<p>The new export format Triple-S v2.0 CSV allows to export very large projects in the Triple-S format and is supported by many current software products.</p>
+<h2 id="header-33"><strong>Web Services</strong></h2>
+<p>New web services have been developed. As of this winter release, it is possible to change participants and the participations. A service for multilingual templates and participant import is also available.</p>
+<h3 id="header-35"><strong>Changing Participants and Participations</strong></h3>
+<p>The <em>survey.results.updateSurveyResults</em> service layer API is now available that allows you to replace a specific variable of a specific participation with a new value.</p>
+<p>This service is available for the following project types:</p>
+<ul>
+<li>
+<p>Anonymous surveys (AN)</p>
+</li>
+<li>
+<p>Personalized surveys (PE)</p>
+</li>
+<li>
+<p>Employee surveys (ES)</p>
+</li>
+</ul>
+<p>Optionally, triggers can be executed on the end side. Loop variables are not supported. When the trigger is executed, a maximum of 100 Ifdns is allowed. If more are used, an error message is issued. The service always outputs a list of the data sets provided. Furthermore, the function<em> survey.participants.update</em> allows you to update participants who have not yet participated in the survey.</p>
+<h3 id="header-36"><strong>Services for Multilingual Templates</strong></h3>
+<p>The following web services have been extended with the translations of the e-mail templates. The add/change translations have been marked as optional:</p>
+<ul>
+<li>
+<p>efs.mailtemplates.getList</p>
+</li>
+<li>
+<p>efs.mailtemplates.get</p>
+</li>
+<li>
+<p>efs.mailtemplates.change</p>
+</li>
+<li>
+<p>efs.mailtemplates.add</p>
+</li>
+</ul>
+<h3 id="header-37"><strong>Enhanced Import Participants API</strong></h3>
+<p>To handle imports of participants exceeding 100000 participants, the web service<em> survey.participants.addListV2</em> has been extended by the service <em>survey.participants.addListAsynchronous</em> and <em>efs.taskqueue.getResult</em>. The service <em>survey.participants.addListAsynchronous</em> receives the same parameter as<em> survey.participants.addListV2</em> and displays the task ID. The service <em>eefs.taskqueue.getResult</em> gets the parameter Task-ID and returns the current processing status of the import.</p>The service always outputs a list of the data sets provided. Furthermore, the function<em> survey.participants.update</em> allows you to update participants who have not yet participated in the survey.</p>
+<h3 id="header-36"><strong>Services for Multilingual Templates</strong></h3>
+<p>The following web services have been extended with the translations of the e-mail templates. The add/change translations have been marked as optional:</p>
+<ul>
+<li>
+<p>efs.mailtemplates.getList</p>
+</li>
+<li>
+<p>efs.mailtemplates.get</p>
+</li>
+<li>
+<p>efs.mailtemplates.change</p>
+</li>
+<li>
+<p>efs.mailtemplates.add</p>
+</li>
+</ul>
+<h3 id="header-37"><strong>Enhanced Import Participants API</strong></h3>
+<p>To handle imports of participants exceeding 100000 participants, the web service<em> survey.participants.addListV2</em> has been extended by the service <em>survey.participants.addListAsynchronous</em> and <em>efs.taskqueue.getResult</em>. The service <em>survey.participants.addListAsynchronous</em> receives the same parameter as<em> survey.participants.addListV2</em> and displays the task ID. The service <em>eefs.taskqueue.getResult</em> gets the parameter Task-ID and returns the current processing status of the import.</p>

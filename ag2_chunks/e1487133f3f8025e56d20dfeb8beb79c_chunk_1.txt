@@ -1,0 +1,142 @@
+>
+<li>
+<p>Login / Registration module: Sign in button instead of login mask</p>
+</li>
+<li>
+<p>Settings &gt; Access permissions &gt; Login mask configuration disabled</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Master Data survey &gt; Master data allocation: survey variables cannot be allocated to Panelist E-mail anymore, ie panelist E-mail cannot be changed via allocation anymore</p>
+</li>
+<li>
+<p>Webservices adaptation</p>
+</li>
+</ul>
+<p> </p>
+<h2 id="header-6">Portals</h2>
+<ul>
+<li>
+<p>Login mask replaced by sign in button with redirect to IdP</p>
+</li>
+<li>
+<p>Portal user &gt; Profile settings:</p>
+<ul>
+<li>
+<p>e-mail cannot be changed anymore, read-only</p>
+</li>
+<li>
+<p>edit password option removed</p>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="header-8">Login / Logout workflow</h1>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20907039918866" width="479" height="349"></p>
+<h2 id="header-10">EFS Admin user - customer without own IdP</h2>
+<ul>
+<li>
+<p>User starts EFS app to access EFS admin area</p>
+</li>
+<li>
+<p>He is redirected to Okta discovery page, where he enters his e-mail address, instead of getting redirected to the EFS Admin login page</p>
+</li>
+<li>
+<p>Is user already existing in Okta, he will be forwarded to new login page (Okta), where he enters his IdP password</p>
+</li>
+<li>
+<p>When signing in, he is redirected from login page into EFS landing page</p>
+</li>
+<li>
+<p>When user logs out, he is redirected to a new logout page with a back to login link, which redirects him to Okta discovery page</p>
+</li>
+</ul>
+<p> </p>
+<h2 id="header-11">Portal user - customer without own IdP</h2>
+<ul>
+<li>
+<p>User starts Portals app</p>
+</li>
+<li>
+<p>He sees a public page with a sign in button instead of Login mask</p>
+</li>
+<li>
+<p>When clicking on call to action button, he is redirected to IdP discovery page (Okta)</p>
+</li>
+<li>
+<p>User adds e-mail address</p>
+</li>
+<li>
+<p>If E-mail exists in Okta, on the next page he adds his IdP password</p>
+</li>
+<li>
+<p>When signing in, he is redirected from login page into Portal landing page</p>
+</li>
+<li>
+<p>When user logs out, he is redirected to public page with sign in button</p>
+</li>
+</ul>
+<p> </p>
+<h2 id="header-12">EFS Admin &amp; Portal user - customer with own IdP</h2>
+<ul>
+<li>
+<p>User starts an app</p>
+</li>
+<li>
+<p>If user local session (Active Directory) is valid, user access the app directly</p>
+</li>
+<li>
+<p>If user local session is expired, user will be redirected to Customer IdP login page, eg Conti login page instead of Okta login page, to enter e-mail and password</p>
+</li>
+<li>
+<p>User accesses the app</p>
+</li>
+<li>
+<p>User will be logged in EFS / Portals as long as he is logged into his AD</p>
+</li>
+<li>
+<p>If user logs out from EFS / Portals he is forwarded to a logout page</p>
+</li>
+<li>
+<p>In order to sign into the app again he just needs to enter his E-mail address and click on Next and he will be directly logged into the QB app</p>
+</li>
+</ul>
+<p> </p>
+<h1 id="header-14">Multifactor Authentication</h1>
+<ul>
+<li>
+<p>When MFA is activated, user will add his e-mail address on IdP discovery page</p>
+</li>
+<li>
+<p>On the next page he will select for once an authentication type (sms, app, etc.) and configure it, in case several authentication types are set</p>
+</li>
+<li>
+<p>User will be forwarded to the next page where he will see his encrypted mobile number or app authenticator and click on Send code</p>
+</li>
+<li>
+<p>User will get a sms or an app notification with a code to enter on the IdP login page</p>
+</li>
+<li>
+<p>User will finally accesses app after successfull login</p>
+</li>
+</ul>
+<p> </p>
+<h1 id="header-15">Forgot password workflow</h1>
+<ul>
+<li>
+<p>User clicks on IdP login page on Forgot password</p>
+</li>
+<li>
+<p>He is forwarded to a new page where to enter his e-mail address</p>
+</li>
+<li>
+<p>He will see a confirmation page and get a mail with a link to set a new password</p>
+</li>
+<li>
+<p>Does the user add a new password successfully, he lands to a generic landing page “Thank you for using Tivian Access”</p>
+</li>
+</ul>
+<p> </p>
+<h1 id="header-16">IdP activation mail</h1>
+<p><strong>Case</strong

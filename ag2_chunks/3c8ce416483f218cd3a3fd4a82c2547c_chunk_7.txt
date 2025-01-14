@@ -1,0 +1,92 @@
+>
+<tbody>
+<tr style="height: 64px;">
+<th class="wysiwyg-text-align-center" style="width: 201.632px; height: 64px;">
+<p><strong>Description</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 354.462px; height: 64px;">
+<p><strong>Explanation</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 150.521px; height: 64px;">
+<p><strong>Preallocation in the standard panel</strong></p>
+</th>
+</tr>
+<tr style="height: 295px;">
+<td style="width: 193.611px; height: 295px;">
+<p>Panel login is possible for panelists with the following panel statuses</p>
+</td>
+<td style="width: 346.441px; height: 295px;">
+<p>With this option, you can define the statuses under which the panelists are allowed to log in.</p>
+<p>For example, you may allow a temporarily admitted candidate to already log in.</p>
+<p>If all panel statuses are deselected, the internal website areas become inaccessible while surveys remain accessible irrespective of the website.</p>
+<p>Please note: The panel statuses are not website-specific, but all panelists are described by the same panel statuses. Therefore, the selected setting will apply to all websites of the panel installation.</p>
+</td>
+<td style="width: 142.5px; height: 295px;">
+<p>All panelists can log in except those with a “deleted” status and those with user-defined statuses.</p>
+</td>
+</tr>
+<tr style="height: 114px;">
+<td style="width: 193.611px; height: 114px;">
+<p>Participation in panel surveys is possible for panelists with the following panel statuses</p>
+</td>
+<td style="width: 346.441px; height: 114px;">
+<p>With this option, you can define the status under which the panelists are allowed to participate in panel surveys (given that they belong to an appropriate sample, of course).</p>
+</td>
+<td style="width: 142.5px; height: 114px;">
+<p> </p>
+</td>
+</tr>
+<tr style="height: 117px;">
+<td style="width: 193.611px; height: 117px;">
+<p>Participation in master data surveys is possible for panelists with the following panel statuses</p>
+</td>
+<td style="width: 346.441px; height: 117px;">
+<p>With this option you can define the status under which the panelists are allowed to participate in master data surveys (given that they belong to an appropriate sample, of course).</p>
+</td>
+<td style="width: 142.5px; height: 117px;">
+<p> </p>
+</td>
+</tr>
+<tr style="height: 246px;">
+<td style="width: 193.611px; height: 246px;">
+<p>Direct panelists to the website/language version they´ve been assigned to after login</p>
+</td>
+<td style="width: 346.441px; height: 246px;">
+<p>This setting ensures that when logging in, panelists will be directed to the website/language version they are assigned to.</p>
+<p>Please note: This option influences the behavior of the system during the login process, it does not control access to language versions in general. If you want to control access to specific pages, please go to the Page Configuration tab and restrict access to appropriate panelist groups.</p>
+</td>
+<td style="width: 142.5px; height: 246px;">
+<p>No</p>
+</td>
+</tr>
+<tr style="height: 272px;">
+<td style="width: 193.611px; height: 272px;">
+<p>Activate brute force login protection</p>
+</td>
+<td style="width: 346.441px; height: 272px;">
+<p>This option activates the brute force protection for the panelists’ personal area. Brute force protection is activated, once the panelist has reached the defined number of failed login attempts. The panelist account is then deactivated for a set amount of time, and an error message is displayed to the panelist upon each new login attempt during that time. New login attempts during the deactivation phase will not extend the duration of deactivation, and they will not be counted as additional failed login attempts.</p>
+</td>
+<td style="width: 142.5px; height: 272px;">
+<p> </p>
+</td>
+</tr>
+<tr style="height: 240px;">
+<td style="width: 193.611px; height: 240px;">
+<p>Brute force account deactivation time (in seconds)</p>
+</td>
+<td style="width: 346.441px; height: 240px;">
+<p>In this field, you specify for how long the panelist accounts are to be suspended upon triggering the brute force protection.</p>
+<p>Please note:</p>
+<ul>
+<li>
+<p>The messages "brute_force" and "brute_forced", used in case of a suspension, can be edited in the <strong>Website → Standard content → Messages</strong> menu.</p>
+</li>
+<li>
+<p>Manual reactivation ahead of time is not possible.</p>
+</li>
+</ul>
+</td>
+<td style="width: 142.5px; height: 240px;">
+<p> </p>
+</td>
+</

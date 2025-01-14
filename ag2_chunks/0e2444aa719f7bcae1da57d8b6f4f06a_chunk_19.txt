@@ -1,0 +1,69 @@
+ data-renderer-start-pos="33034">Send survey invitation mail</p>
+</td>
+<td style="padding: var(--ds-space-100, 8px); text-align: left; vertical-align: top; width: 283.385px; height: 359px;" colspan="1" rowspan="1" data-colwidth="254">
+<p data-renderer-start-pos="33065">This action will send a survey invitation mail or a reminder mail to panelists from a specific sample in a panel survey or master data survey. Mails will be sent only to panelists who are already in the sample and who have a certain disposition code in it.</p>
+</td>
+<td style="padding: var(--ds-space-100, 8px); text-align: left; vertical-align: top; width: 249.479px; height: 359px;" colspan="1" rowspan="1" data-colwidth="253">
+<p data-renderer-start-pos="33325">The following parameters should be defined:</p>
+<ul class="ak-ul" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="33372">Sample</p>
+</li>
+<li>
+<p data-renderer-start-pos="33382">Add panelists to sample only if the survey is in the field and active</p>
+</li>
+<li>
+<p data-renderer-start-pos="33455">Mail template for the invitation</p>
+</li>
+<li>
+<p data-renderer-start-pos="33491">Send mail to panelists with the following disposition codes</p>
+</li>
+<li>
+<p data-renderer-start-pos="33554">Send mail only to panelists who have so far received at most x mails in the sample</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr style="height: 117px;">
+<td style="padding: var(--ds-space-100, 8px); text-align: left; vertical-align: top; width: 228.767px; height: 117px;" colspan="1" rowspan="1" data-colwidth="253">
+<p data-renderer-start-pos="33644">Copy from survey to group</p>
+</td>
+<td style="padding: var(--ds-space-100, 8px); text-align: left; vertical-align: top; width: 283.385px; height: 117px;" colspan="1" rowspan="1" data-colwidth="254">
+<p data-renderer-start-pos="33673">This action adds panelists from a selected survey with a given disposition code to a panel group.</p>
+</td>
+<td style="padding: var(--ds-space-100, 8px); text-align: left; vertical-align: top; width: 249.479px; height: 117px;" colspan="1" rowspan="1" data-colwidth="253">
+<p data-renderer-start-pos="33774">The following parameters should be defined:</p>
+<ul class="ak-ul" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="33821">Project</p>
+</li>
+<li>
+<p data-renderer-start-pos="33832">Disposition codes</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr style="height: 431px;">
+<td style="padding: var(--ds-space-100, 8px); text-align: left; vertical-align: top; width: 228.767px; height: 431px;" colspan="1" rowspan="1" data-colwidth="253">
+<p data-renderer-start-pos="33857">Invalidate e-mail addresses</p>
+</td>
+<td style="padding: var(--ds-space-100, 8px); text-align: left; vertical-align: top; width: 283.385px; height: 431px;" colspan="1" rowspan="1" data-colwidth="254">
+<p data-renderer-start-pos="33888">This action allows you to invalidate e-mail addresses of panelists by attaching the content of an arbitrary master data item to the e-mail address. This is advisable, for example, in the following cases:</p>
+<ul class="ak-ul" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="34095">If you want to deactivate the panelist but allow them to register again in future. This gives you two separate data records for a single panelist, which may, however, be intended.</p>
+</li>
+<li>
+<p data-renderer-start-pos="34278">If you want to prevent a deactivated panelist from being invited to a survey, for example, because they were already assigned to a sample.</p>
+</li>
+</ul>
+</td>
+<td style="padding: var(--ds-space-100, 8px); text-align: left; vertical-align: top; width: 249.479px; height: 431px;" colspan="1" rowspan="1" data-colwidth="253">
+<p data-renderer-start-pos="34422">The master data item to be attached to the e-mail addresses must be chosen.</p>
+</td>
+</tr>
+<tr style="height: 49px;">
+<td style="padding: var(--ds-space-100, 8px); text-align: left; vertical-align: top; width: 228.767px; height: 49px;" colspan="1" rowspan="1" data-colwidth="253">
+<p data-renderer-start-pos="34503">Execute quota</p>
+</td>
+<td style="padding: var(--ds-space-100, 8px); text-align: left; vertical-align: top; width: 283.385px; height: 49px;" colspan="1"

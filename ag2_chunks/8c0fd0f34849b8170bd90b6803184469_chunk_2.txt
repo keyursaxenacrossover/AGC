@@ -1,0 +1,53 @@
+li>
+<li><a href="#header-86">[EXASOL][EXASolution driver]insufficient privileges for using connection</a></li>
+<li><a href="#header-87">[EXASOL][EXASolution driver]insufficient privileges for replacing connection</a></li>
+</ul>
+<li><a href="#header-89">(MySight new) Open questions regarding Mysight v2</a></li>
+<ul>
+<li><a href="#header-91">Team-Rechte für MySight-Funktionen</a></li>
+<li><a href="#header-92">Site-Administratoren und Tableau-Rechte</a></li>
+</ul>
+<li><a href="#header-94">(MySight new) - Dashboard is not shown in Portals</a></li>
+<li><a href="#header-95">(MySight new) Republish MySight projects on cloned installations</a></li>
+<li><a href="#header-96">Create client account on tableau server and send login credentials</a></li>
+<li><a href="#header-97">Mass import of client new accounts on tableau server</a></li>
+<li><a href="#header-98">Add ODBC connection to Alteryx Server</a></li>
+</ul>
+</ul>
+</ul>
+</ul><ac:parameter ac:name="maxLevel">2</ac:parameter><h1 id="header-1">MySight v2</h1><h2 id="header-3">Activation of MySight v2 and Settings</h2><h3 id="header-5">Requirements</h3><p></p><p><strong>EFS Panel and Portals have to have been sold and activated </strong><br><strong>Please check first wether the installation uses the old debian frontends respectively uses PDF receipts</strong><br><strong>(Mysight v2 does not work on the old debian frontends because the necessary ODBC drivers are not included in PHP there)</strong></p><p></p><h3 id="header-6">1. Request intermediate and Exasol DB</h3><ul><li><p>Send case to Sysadmins requesting a new intermediate and new Exasol DB</p></li></ul><div class="expand-macro">
+<h4 string="Checklist"></h4>
+<p>Hi Admins,</p>
+<p>please set up a new intermediate and Exasol DB:</p>
+<p>Installation: [xy1234].customervoice360.com<br>Server: [Frankfurt]</p>
+<p>EFS DB data (grep __db conf/config.inc.php3):<br>$__dbhost = [ip address]<br>$__dbuser = "[username]";<br>$__dbpasswd = "[password]";<br>$__dbname = "[db name]";<br>$__dbport = "[port]";</p>
+<p>Thanks,<br>X</p>
+</div><h3 id="header-7">2. Activate Mysight v2 in EFS Configuration</h3><p> When the case is back from Sysadmins and they have created the intermediate and Exasol DB</p><ul>
+<li><p>log in to installation using the root account and change the config</p></li>
+<li><p>variable <strong>"modules"</strong></p></li>
+<li><p>add <strong>"mysight"</strong> (&gt;EFS 16.3)</p></li>
+<li><p>Execute <strong>healself</strong></p></li>
+</ul><h3 id="header-8">3. Setup Intermediate mysql-database between EFS-installation and EXASOL in EFS Configuration (root)</h3><ul>
+<li><p>variable <strong>"mysight_intermediate_db"</strong></p></li>
+<li>
+<p>add values for <strong>"dbhost", "dbuser", "dbpasswd", "dbname", "dbport", "dbsocket"</strong></p>
+<ul><li><p>dbsocket: <strong>/tmp/mysql.sock</strong></p></li></ul>
+</li>
+</ul><p><strong>INFO: All necessary data will be provided by the System Engineers.</strong></p><h3 id="header-9">4. Setup Tableau server in EFS admin area (Mysight settings)</h3><ul>
+<li><p><strong>Where: System &gt;&gt; Options &gt;&gt; qb:: MySight settings &gt;&gt; MySight connections &gt;&gt; Manage Tableau-Server &gt;&gt; Add new Tableau-Server</strong></p></li>
+<li>
+<p>fill up "Label for Tableau-Server" and "Server Url" ( use HTTPS for Questback Tableau Server)</p>
+<ul><li><p>Take Label from the following table:</p></li></ul>
+</li>
+</ul><table data-layout="default" data-table-width="760" ac:local-id="8b920445-e88e-423f-8a4b-9b1b2618fff0">
+<colgroup>
+<col style="width: 159.0px;">
+<col style="width: 142.0px;">
+<col style="width: 150.0px;">
+<col style="width: 150.0px;">
+<col style="width: 159.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p><strong>enviroment</strong></p></th>
+<th><p><strong>used for</strong

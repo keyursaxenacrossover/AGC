@@ -1,0 +1,38 @@
+ varValue into the variable. Any variables in the survey, including the question type‘s variables can be written into. Example: set variable value('v_1',1)</p>
+</li>
+<li>
+<p><strong>setQuestionOutput</strong>(text): Instead of using print, you should use setQuestionOut- put, which prints text in the proper HTML container in the questionnaire. Subse- quent request will replace <em>text</em>.</p>
+</li>
+<li>
+<p><strong>getQuotaIds</strong>(): Returns a list of all quota IDs in the survey.</p>
+</li>
+<li>
+<p><strong>getQuotaDebitValue</strong>(quotaId): Returns the target value for the quota ID.</p>
+</li>
+<li>
+<p><strong>getQuotaCurrentValue</strong>(quotaId): Returns the current quota count for quota ID.</p>
+</li>
+<li>
+<p><strong>getQuotaFillingDegree</strong>(quotaId): Returns the filling degree as a float for quota ID.</p>
+</li>
+</ul>
+<p>Please note that LUA functions <strong>file, load, load file, require, rawequal, rawget, </strong>and <strong>rawset </strong>cannot be executed from the sandbox for security reasons. Instead of <strong>print </strong>use <strong>setQuestionOutput(text) </strong>to set (text) as a result.</p>
+<p>The LUA question type comes with two code boxes, the first one is executed before sending the page to the participant, and the second code box is executed when a user submits the page containing the LUA question type.</p>
+<p>You can include your function libraries from the media library (global or project-specific, text files with the extension .txt or .lua). Hiding conditions can be employed and you may define whether the script should be executed every time the page is called or only once (e.g. when using a page trigger or the back button).</p>
+<p>Find the LUA question type in the questionnaire editor in the <strong>Advanced </strong>section.</p>
+<h3 id="audio-recorder">Audio recorder</h3>
+<p>The <em>Audio recorder</em> question type allows participants the record audio feedback through a simple-to-use UI on desktops and mobile devices. The recordings are stored in the same way as for the <em>Upload </em>question type and can be accessed through the <strong>Statistics</strong> menu. The maximum file size for this question type is 32 MB. By clicking on <strong>Start recording</strong> participants can start the recording of their audio feedback, and the <strong>Stop</strong> symbol will end it. Afterwards, participants can play their recording, or delete it and start another one.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015166791186" alt="image-20231027-071520.png"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015166789138" alt="image-20231027-071558.png"></p>
+<p> </p>
+<p>Find the <em>Audio recorder</em> question type in the questionnaire editor in the <strong>Advanced </strong>section.</p>
+<h3 id="video-recorder">Video recorder</h3>
+<p>With the <em>Video recorder</em> question type, your participants can record and upload a video as an answer to a question. The recordings are saved in the same way as with the upload question type, and you can access them via the <strong>Statistics</strong> menu. If you want to allow participants to upload a previously recorded video, you can activate the checkbox for <strong>Allow file upload</strong> under <strong>Detail configuration</strong> and set the maximum allowed file size. Under <strong>Text configuration,</strong> you can also change the labels for the different buttons and messages in the recorder.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015166785042" alt="image-20240506-103233.png"></p>
+<p>By clicking on <strong>Activate Camera</strong> participants can activate the camera and have to grant EFS access to it. To start the recording, they have to click on <strong>Start Recording</strong>. The stop icon will stop the recording. Afterwards, participants can play their recording, or delete it and start another one.</p>
+<p>To upload a previously recorded video, participants can click the <strong>Select file</strong> link. They can then choose a file. Once it is uploaded, they can play their video, or delete it again.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015136735250" alt="image-20240506-103426.png"></p>
+<p> </p>
+<h3 id="reference-question">Reference question</h3>
+<p>If a specific question is used repeatedly in your questionnaire, you can define a depot question and reference it on all appropriate pages. Reference questions do not have dedicated variables, but refer to the variables of the respective depot question. More information on this topic can be found here.</p>
+<h3 id="hierarchy-question-types">Hierarchy question types</h3>
+<p>The two question types <em>Hierarchy </em>and <em>Hierarchy search</em> allow browsing and the selection of a unit in non-employee projects. The meta name of the selected unit is stored in a variable. An ES project

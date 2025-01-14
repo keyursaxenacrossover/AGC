@@ -1,0 +1,119 @@
+FULL(2)
+STATUS_SYNCTABLEAU_INPROGRESS (64) </code></pre></td>
+</tr>
+<tr>
+<td><p>publication_status = 138</p></td>
+<td><pre><code class="language-text">STATUS_PUBLICATION_SUCCESSFULL(2)
+STATUS_SYNCRESULT_INPROGRESS (8)
+STATUS_SYNCTABLEAU_SUCCESSFULL (128) </code></pre></td>
+</tr>
+<tr>
+<td><p>publication_status = 146</p></td>
+<td><pre><code class="language-text">STATUS_PUBLICATION_SUCCESSFULL (2)
+STATUS_SYNCRESULT_SUCCESSFULL (16)
+STATUS_SYNCTABLEAU_SUCCESSFULL (128)</code></pre></td>
+</tr>
+<tr>
+<td><p>publication_status = 162</p></td>
+<td><pre><code class="language-text">STATUS_PUBLICATION_SUCCESSFULL (2)
+STATUS_SYNCRESULT_FAILED (32)
+STATUS_SYNCTABLEAU_SUCCESSFULL (128)</code></pre></td>
+</tr>
+<tr>
+<td><p>publication_status = x</p></td>
+<td><pre><code class="language-text">x
+y
+z</code></pre></td>
+</tr>
+</tbody>
+</table><p></p><p></p><pre><code class="language-text">UPDATE mysight_instance SET publication_status=[calculated status] WHERE id=[mysight instance id]</code></pre><p></p><h3 id="header-58">MySight v2 EFS Tables and description</h3><p> List of tables and table names can be changed at all times, so this list might not be accurate<br></p><table data-layout="default" data-table-width="760" ac:local-id="2d413f45-cd5c-4a17-bab4-49f07cc839f4">
+<colgroup>
+<col style="width: 340.0px;">
+<col style="width: 340.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/MySight?sortcol=0;table=4;up=0#sorted_table">Table name</a></p></th>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/MySight?sortcol=1;table=4;up=0#sorted_table">Description</a></p></th>
+</tr>
+<tr>
+<td><p>mysight_actionplanner_queue</p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>mysight_connection</p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>mysight_instance</p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>mysight_instance_config</p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>mysight_instance_log</p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>mysight_instance_map</p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>mysight_instance_notification_recipient</p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>mysight_instance_user_groups</p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>mysight_panel_group_queue</p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>mysight_pushservice_token_info</p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>mysight_survey_participation_queue</p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>mysight_tableau_group</p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>mysight_tableau_group2project</p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>mysight_tableau_host</p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>mysight_tableau_project</p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>mysight_tableau_site</p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>mysight_tableau_user</p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>mysight_tableau_user2group</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table><p></p><h3 id="header-59">MySight v2 Intermediate/Exasol tables and descriptions</h3><p> List of tables and table names can be changed at all times, so this list might not be accurate</p><p></p><table data-layout="default" data-table-width="760" ac:local-id="70102850-3dfc-4443-bb8f-c3fa49d0ea1b">
+<colgroup>
+<col style="width: 340.0px;">
+<col style="width: 340.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p><a href="https://it.globalpark.de/twiki/bin/view/Support/MySight?sortcol=0;table=5;up=0#sorted_table">Table name</a

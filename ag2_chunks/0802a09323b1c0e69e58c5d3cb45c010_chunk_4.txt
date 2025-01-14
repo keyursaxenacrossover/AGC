@@ -1,0 +1,81 @@
+="wysiwyg-text-align-justify">To create an e-mail template on your own or to edit an existing template, first click on the link. A template that will be used for your guide project must be created as a <strong>New draft for projects</strong>. Therefore, click on the <strong>+ New draft</strong> button and select <strong>+ New draft for projects</strong>.</p>
+<p class="wysiwyg-text-align-justify">To create multilingual e-mail templates, first open the <strong>Mail templates </strong>menu item. Either select an existing e-mail template or create a completely new template in the default language. Add then the translation. For this purpose, each template has an "Additional translations" section. This area will be enabled, as soon as you will save the template you created.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015136649362" alt="Additional Translations.png"></p>
+<p class="wysiwyg-text-align-justify">Click on the <strong>+ New </strong>button to create your translation of the e-mail template. A selection and input dialog will be opened.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015136645650" alt="E-Mail Text.png"></p>
+<p class="wysiwyg-text-align-justify">You have to select the language ID according to the desired language. You can now translate the mail text (including HTML). Then click on the <strong>Save </strong>button. The created translations are listed in the "Additional translations" area and can be edited or deleted there. To edit them, simply click on the link or the <strong>Edit</strong> icon.</p>
+<p class="wysiwyg-text-align-justify">In order to send panelists an e-mail or an SMS in their preferred language, a language must be defined in the <em>u_locale</em> variable (e.g. French). This variable is used to check whether an e-mail template has the corresponding translation. If no translation is available, the e-mail is sent in the default language. This also applies if no language has been stored in the <em>u_locale</em> variable.</p>
+<p class="wysiwyg-text-align-justify"><strong>Placeholders</strong></p>
+<p class="wysiwyg-text-align-justify">You can use placeholders. Especially for the Ideation Guide, many helpful placeholders are available.</p>
+<table class="wysiwyg-text-align-justify" style="height: 1294px;" border="1" width="764" data-layout="default">
+<colgroup> <col style="width: 226.67px;"> <col style="width: 226.67px;"> <col style="width: 226.67px;"> </colgroup>
+<tbody>
+<tr>
+<th style="width: 263.003px;" data-highlight-colour="#57d9a3">
+<p><strong>Placeholder</strong></p>
+</th>
+<th style="width: 318.611px;" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+<th style="width: 171.997px;" data-highlight-colour="#57d9a3">
+<p><strong>Guide Types</strong></p>
+</th>
+</tr>
+<tr>
+<td style="width: 254.983px;">
+<p><em>#link_to_portal#</em></p>
+</td>
+<td style="width: 310.59px;">
+<p>Link to the portal (with registration code valid for one day)</p>
+</td>
+<td style="width: 163.976px;">
+<p>US, ME, IDEA</p>
+</td>
+</tr>
+<tr>
+<td style="width: 254.983px;">
+<p><em>#portal_access_url#</em></p>
+</td>
+<td style="width: 310.59px;">
+<p>Link to portal with login code</p>
+<ul>
+<li>
+<p>valid for 2 hours by default</p>
+</li>
+<li>
+<p>can be changed by adding the desired duration using pipe parameters (e.g. #portal_access_url|24#)</p>
+</li>
+</ul>
+</td>
+<td style="width: 163.976px;">
+<p>US, ME, IDEA</p>
+</td>
+</tr>
+<tr>
+<td style="width: 254.983px;">
+<p><em>#u_personal_manager_message#</em></p>
+</td>
+<td style="width: 310.59px;">
+<p>The personal message of the guide initiator entered in the guide setup will be displayed.</p>
+</td>
+<td style="width: 163.976px;">
+<p>US, ME, IDEA</p>
+</td>
+</tr>
+<tr>
+<td style="width: 254.983px;">
+<p><em>#u_guidewave_rater_group#</em></p>
+</td>
+<td style="width: 310.59px;">
+<p>The rater group of the invited participant (e.g. manager) will be displayed.</p>
+</td>
+<td style="width: 163.976px;">
+<p>ME</p>
+</td>
+</tr>
+<tr>
+<td style="width: 254.983px;">
+<p><em>#u_wave_expire_date#</em></p>
+</td>
+<td style="width: 310.59px;">
+<p>End date of the guide

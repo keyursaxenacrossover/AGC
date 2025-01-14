@@ -1,0 +1,26 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3489103903">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3489103903</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">Diagram</a></li>
+<ul>
+<li><a href="#header-3">Description</a></li>
+<ul>
+<li><a href="#header-5">KeyCloak Database</a></li>
+<li><a href="#header-6">KeyCloak</a></li>
+<li><a href="#header-7">Ingestion Service</a></li>
+<li><a href="#header-8">Interfaces</a></li>
+<ul>
+<li><a href="#header-10">Ingestion Service - Message bus</a></li>
+<li><a href="#header-11">Security Admin - KeyCloak</a></li>
+<li><a href="#header-12">Tivian Admin - KeyCloak</a></li>
+<li><a href="#header-13">Employee - KeyCloak</a></li>
+<li><a href="#header-14">Tivian Application - KeyCloak</a></li>
+</ul>
+<li><a href="#header-16">Possibly Missing Components</a></li>
+</ul>
+</ul>
+</ul>
+</ul><p></p><ac:rich-text-body><p><strong>Caution</strong></p>
+<p>Caching components are not shown here. The same is true for CDNs and similar components.</p></ac:rich-text-body><p></p><h1 id="header-1">Diagram</h1><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20717143429266" alt="Architecture Diagrams - Building Blocks(1).png"><p></p><h2 id="header-3">Description</h2><h3 id="header-5">KeyCloak Database</h3><p>The keycloak database is an SQL Database that stores the data of KeyCloak. It contains users, passwords and configuration.</p><p></p><h3 id="header-6">KeyCloak</h3><p>KeyCloak is an identity provider having identity management and identity broker capabilities. It supports several protocolls like SAML and OIDC.</p><p>It hosts the backend of the identity solution but also the frontend.</p><p></p><h3 id="header-7">Ingestion Service</h3><p>The ingestion service pushes data from the message bus in KeyCloak to create users or tenants that have been originally created in the user or tenant management.</p><p></p><h3 id="header-8">Interfaces</h3><h4 id="header-10">Ingestion Service - Message bus</h4><p>The ingestion service consumes user and tenant data from the message bus to provide them for KeyCloak.</p><p></p><h4 id="header-11">Security Admin - KeyCloak</h4><p>A security admin can configure a clients security policy.</p><p></p><h4 id="header-12">Tivian Admin - KeyCloak</h4><p>A Tivian Admin can analyse issues in KeyCloak or with specific users.</p><p></p><h4 id="header-13">Employee - KeyCloak</h4><p>Eymployees login using KeyCloak. Also password resets, MFA and other security credential operations are handled in KeyCloak.</p><p></p><h4 id="header-14">Tivian Application - KeyCloak</h4><p>Tivian Applications validate token and get public keys and other public information from KeyCloak to validate tokens.</p><p></p><h3 id="header-16">Possibly Missing Components</h3><p><strong>Emailing </strong>- A shared service to perform emailing; check if needed</p><p><strong>Specific UIs for specific use cases or users</strong> - Like the Security Admin, Employee Home Screen etc.; check if needed</p>

@@ -1,0 +1,42 @@
+ class="wysiwyg-text-align-justify"><strong>Inviting testers to the master data survey</strong></p>
+<ol class="wysiwyg-text-align-justify">
+<li>Switch to the<strong> People → Panelists administration</strong> menu. Display the respective person.</li>
+<li>Tick the checkbox in the “Actions” column, and choose the “Master data survey” action from the drop-down list.</li>
+<li>After that, click on the <strong>Submit</strong> button.</li>
+</ol>
+<h2 id="working-with-csv-files" class="wysiwyg-text-align-justify"><strong>Working with CSV Files</strong></h2>
+<p class="wysiwyg-text-align-justify">CSV (Character Separated Values) is an exchange format that is mainly used for exchanging data between different computer programs.</p>
+<p class="wysiwyg-text-align-justify"><strong>Creating CSV files in MS Exce</strong>l</p>
+<ol class="wysiwyg-text-align-justify">
+<li>Create the desired table in MS Excel.</li>
+<li>Save it in the CSV format: To do so, click on<strong> File → Save as</strong> and check that instead of the standard format *.xls the format *.csv has been chosen.</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><strong>Creating a CSV file in a text editor of your choice</strong></p>
+<ol class="wysiwyg-text-align-justify">
+<li>Enter the data, marking the desired table columns with a semicolon.</li>
+<li>Save the file in the CSV format by giving it the extension “.csv”.</li>
+</ol>
+<p class="wysiwyg-text-align-justify"><strong>Opening CSV Files in MS Excel</strong></p>
+<p class="wysiwyg-text-align-justify">Many panel functions allow you to export EFS Panel data in the CSV format, and then view or edit it externally. Please proceed as follows:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>Export the desired file from the EFS Panel.</li>
+<li>Open MS Excel.</li>
+<li>Choose <strong>File → Open</strong>.</li>
+<li>Select the “Text files (*.csv)” file type.</li>
+<li>Navigate to the desired file and click on it, so that the title appears in the “File name” field.</li>
+<li>Confirm by clicking on<strong> Open</strong>.</li>
+</ol>
+<h2 id="renting-panelists-out-to-externally-conducted-surveys" class="wysiwyg-text-align-justify"><strong>Renting Panelists out to Externally Conducted Surveys</strong></h2>
+<p class="wysiwyg-text-align-justify">This section describes how panelists can participate in a survey that does not take place within the panel but in another EFS Panel installation or, as the case may be, in another software environment. The challenge here is to provide incentives to the panelists promptly.</p>
+<p class="wysiwyg-text-align-justify">Determine firstly whether the software used to survey your panelists can save transferred parameters and insert them back into the link when returned to the panel site (in technospeak: Individual parameters for each panelist are transferred via GET and must be dynamically inserted into the return-to-panel-site link).</p>
+<p class="wysiwyg-text-align-justify">Should the software used on the actual survey platform be capable of the above, then it is recommended that you implement this using the external survey start feature. The survey is executed in three parts: An introductory page is located on your panel installation. After clicking on the Continue button you are sent to the external software, and at the end you are sent back to the panel installation. The transfer of parameters during transfer, transfer back and in the export data record makes it possible to perform matching between the two surveys. The dedicated manual “External Survey Start” explains in detail how to configure this.</p>
+<p class="wysiwyg-text-align-justify"><strong>Anonymous export of the panelist sample</strong></p>
+<p class="wysiwyg-text-align-justify">An alternative is the anonymous export of the panelist sample:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>Form a group of the panelists that will be surveyed.</li>
+<li>Using the selective master data export, export the information that you would like to make available to the external cooperation partner, containing at least the pseudonym (the “pseudonym” variable).</li>
+<li>The external cooperation partner enters the pseudonym into the participant administration of their project. You invite the panelists from your system via email, indicating in the e-mail a URL to the survey of the co-operation partner. (Please note that you must enter this manually, you cannot use the usual mail wildcards from EFS Panel.) Indicate in the e-mail that the incentive for this project can only be given out after a certain delay at the end of the project.</li>
+<li>At the end of the survey, you will need a list of the people who successfully completed the survey from the external co-operation partner. The list must contain the pseudonym.</li>
+<li>Extract the mentioned pseudonyms into a one-column CSV file. Import the pseudonym file as a new group (see Chapter 8.3, p. 156). The group created this way can be given incentives using the appropriate functions of group administration.</li>
+</ol>
+<h2 id="personalized-projects-without-a-list-of-participants" class="wysiwyg

@@ -1,0 +1,163 @@
+0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>surveyId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>surveyId <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79J87WHCWCNH5MZ5A06"> </h4>
+<h3 id="header-222">PATCH /survey/languages/{surveyId}</h3>
+<p>change language data</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "language": {
+    "label": "Deutsch",
+    "localestring": "de_DE",
+    "languageId": 1
+  }
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">true</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>surveyId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>surveyId <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79JV5PGSVW2SW0E3G6B"> </h4>
+<h3 id="header-223">DELETE /survey/languages/{surveyId}</h3>
+<p>deletes a language</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{ "languageId": 1 }</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">true</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>surveyId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>surveyId <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="header-225">Layouts</h2>
+<div class="expand-macro">
+<h4 id="h_01J441N79JQEQZ58DE4NT80GVW"> </h4>
+<h3 id="header-227">GET /survey/layouts/</h3>
+<p>returns a list of all survey layouts the user has access to</p>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[ { "layoutId": 1, "name": "Example" } ]</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79KPM2SZ6WNBNMDZH1B"> </h4>
+<h3 id="header-228">POST /survey/layouts/find</h3>
+<p>returns a list of survey layouts the user has access to, based on search criteria. See <a href="https://qbdocs.atlassian.net/wiki/spaces/DOC/pages/1273102351/How-to%3A+Service+Layer#Filtering-results-with-conditions">filtering results with conditions</a> for help on building conditions.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "logicalCondition": {
+    "comparison": {
+      "variable": "title",
+      "operator": "CONTAINS",
+      "value": "Example"
+    }
+  }
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[ { "layoutId

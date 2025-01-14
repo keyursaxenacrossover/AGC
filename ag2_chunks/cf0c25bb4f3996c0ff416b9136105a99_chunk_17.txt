@@ -1,0 +1,52 @@
+ vertical-align: top;" colspan="1" rowspan="1" data-colwidth="340">
+<div class="fabric-editor-block-mark fabric-editor-alignment cc-5inqjd" data-align="center">
+<p data-renderer-start-pos="26544">Message</p>
+</div>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="340">
+<div class="fabric-editor-block-mark fabric-editor-alignment cc-5inqjd" data-align="center">
+<p data-renderer-start-pos="26555">Survey message</p>
+</div>
+</td>
+</tr>
+<tr>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="340">
+<div class="fabric-editor-block-mark fabric-editor-alignment cc-5inqjd" data-align="center">
+<p data-renderer-start-pos="26575">Scale</p>
+</div>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="340">
+<div class="fabric-editor-block-mark fabric-editor-alignment cc-5inqjd" data-align="center">
+<p data-renderer-start-pos="26584">Scale</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="sentinel-right"> </div>
+</div>
+</div>
+<div class="ak-editor-panel cc-tqp4ke wysiwyg-text-align-justify" data-panel-type="info">
+<div class="ak-editor-panel__icon">By default the setting for the export dialog is such that the column “internal” is hidden, the column “Status” is activated and the Excel sheet is protected with a Protect Sheet.</div>
+<div class="ak-editor-panel__content">
+<p data-renderer-start-pos="26775">The password for deactivating the Protect Sheet is located in the export dialog under the <strong data-renderer-mark="true">Question mark </strong>icon: It is constant and applies installation-wide. Deactivation of Protect Sheet is done in MS Excel in the <strong data-renderer-mark="true">Extras </strong>→<strong data-renderer-mark="true"> Protect... </strong>→<strong data-renderer-mark="true"> Deactivate Protect Sheet</strong>.</p>
+</div>
+</div>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="27038"><strong data-renderer-mark="true">Optimizing the structure of the Excel file for external editing</strong></p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="27103">You can adjust the file structure to your needs. The following special options can be selected in the download dialog:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="27225">Also export unchangeable data rows: If this option has been activated, (unchangeable) context and structure data, such as page title, question title, or question type will be output to the Excel file. This makes the exported file somewhat more extensive and makes it possible for the translator to make more targeted inquiries to the questionnaire programmer.</p>
+</li>
+<li>
+<p data-renderer-start-pos="27589">Protect unchangeable columns in Excel files against modifications: If this option is activated, cells with only informational purposes are protected against erroneous changes. Changes to the Excel file are only possible in the column “new content”, i.e. the area highlighted in color.</p>
+<p data-renderer-start-pos="27876">You can disable the function that protects against changes: This function can be found in MS Excel in the <strong data-renderer-mark="true">Extras </strong>→ <strong data-renderer-mark="true">Protect... </strong>→<strong data-renderer-mark="true"> Deactivate Protect Sheet </strong>menu. The required password can be found in the EFS Translator Interface under the <strong data-renderer-mark="true">Question mark </strong>icon. (It is constant and applies installation-wide.)</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="28179">By default change protection (2) and display of the Todo column (3) are activated.</p>
+<h3 id="Translating-Externally-with-SDLX" class="wysiwyg-text-align-justify" data-renderer-start-pos="28264"><strong data-renderer-mark="true">Translating Externally with SDLX</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="28298">You can use the professional translation software SDLX for external editing, using an HTML file for exporting and importing the text elements.</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="28442">Please take note of the following when translating with SDLX:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="28507">If HTML has been used to format the questionnaire, you should check carefully, whether all HTML tags are correct before exporting: Because SDLX does not produce HTML error messages, rather it tries to repair incorrect HTML, it is possible that information may get lost. If for example the HTML tag at the

@@ -1,0 +1,83 @@
+<li>
+<p><strong>Report overview</strong> tab</p>
+</li>
+<li>
+<p>If Action Planner is activated: <strong>Action Planner</strong> tab and overview of the actions in the detail view of a unit.</p>
+</li>
+</ul>
+<h3 id="historical-assignment" class="wysiwyg-text-align-justify"><strong>Historical assignment</strong></h3>
+<p class="wysiwyg-text-align-justify">It is possible to compare the current structure to its historical version. Historical comparisons can be created automatically if both projects were created through an Orbit snapshot. Historical comparisons can be used e. g. in the Data Voyager Analyst, to compare the survey results of both structures.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Go to the Org Processor‘s <strong>Configuration settings</strong> and select the <strong>Historical Assignment</strong> tab.</p>
+</li>
+<li>
+<p>Choose a specific historical project from all projects available.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If the project selected has been created with Orbit, two algorithms will be available for mapping.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Historical comparison based on people: This algorithm is set to compare participants to those in units contained in the historical structure. Once a match has been found where two units are considered identical in regard to their participants, the historical comparison will be saved. You may further refine the precision of the comparison by setting a specific percentage that must be met.</p>
+</li>
+<li>
+<p>Historical comparison based on identical metanames: The second algorithm creates a mapping based on identical meta names. Metanames can be selected individually, additionally, additionally added information from re-imported Excel files can be available for selection.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">In historical comparisons, both algorithms fill their results into empty fields only. However, note that the order of the execution will influence your results. The first algorithm selected and executed will provide results for the variable concerning the historical meta names, while the second algorithm executed will apply only to the remaining empty fields.</p>
+<h3 id="structure-administration" class="wysiwyg-text-align-justify"><strong>Structure administration</strong></h3>
+<p class="wysiwyg-text-align-justify">By default, the <em>Org Processor</em> shows the primary structure. If further views are available, you will find a drop-down list in the upper sections of the tabs <strong>Organizational Structure</strong>, <strong>Return</strong>, and <strong>Report Overview</strong>, where you can select the desired view.</p>
+<p class="wysiwyg-text-align-justify"><strong>Administrating structure views</strong></p>
+<p class="wysiwyg-text-align-justify">The structure views are administrated in the menu <strong>Projects</strong> → {Selected project} →<strong> Org Processor → Configuration → Structure administration</strong>. The overview table provides the following information for each view.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>ID</p>
+</li>
+<li>
+<p>Name</p>
+</li>
+<li>
+<p>Type</p>
+</li>
+<li>
+<p>Identifier</p>
+</li>
+<li>
+<p>Multiple allocations of participants allowed?</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Via the icons in the “Actions” column you can open the views for editing or delete them (except for the primary structure).</p>
+<p class="wysiwyg-text-align-justify"><strong>Creating additional structure views</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Click on the <strong>Create Structure view</strong> button.</p>
+</li>
+<li>
+<p>You have to specify:</p>
+<ul>
+<li>
+<p>Name</p>
+</li>
+<li>
+<p>Identifier: The identifier is used, for example, for the import. The identifier must not contain any special characters or blank spaces. It must be unique. Example: “FunctionalStructure”.</p>
+</li>
+<li>
+<p>Multiple allocation of participants allowed: Activates additional features that allow you to allocate individual participants to multiple units within the same structure.</p>
+</li>
+<li>
+<p>Use “Function”: Activates additional features that allow you, in the matrix representation, to differentiate between the various functions a participant<br>has. For example, a participant may be the “Manager” in one department while counting only as “Staff” within the product line.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Confirm by clicking on <strong>Save settings</strong>.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Manual allocation to multiple structure views</strong></p>
+<p class="wysiwyg-text-align-justify">If there are multiple structure views, additional functions allowing you the manual allocation of the participants to the structures will be displayed in the following locations:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Centralized participant administration-&gt;Form for adding a new participant → Section “Allocation of the participant to structure views”: In this section, you can<br>allocate the participants to one node per structure view (more nodes are possible when using multiple allocations, see below).</p>
+</li>
+<li>
+<p>Centralized participant administration-&gt;Detail view of the

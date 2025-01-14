@@ -1,0 +1,136 @@
+>Question text</p>
+</li>
+<li>
+<p>Fill-in instruction</p>
+</li>
+<li>
+<p>Help text</p>
+</li>
+<li>
+<p>Text around the entry field</p>
+</li>
+<li>
+<p>Number of columns (width of the text area)</p>
+</li>
+<li>
+<p>Number of rows (height of the text area</p>
+</li>
+</ul>
+<h3 id="multi-text-field-vertical-horizontal">Multi Text Field (Vertical / Horizontal)</h3>
+<p>Vertical and horizontal multi-text fields can be used to ask questions to which the answer is to be entered into an open-ended text field area. The following is an example of a vertical multi-text field.</p>
+<h4 id="base-elements-9">Base Elements</h4>
+<ul>
+<li>
+<p>Question text</p>
+</li>
+<li>
+<p>Fill-in instruction</p>
+</li>
+<li>
+<p>Help text</p>
+</li>
+<li>
+<p>143: Texts for the entry fields 1-n</p>
+<ul>
+<li>
+<p>In projects with a classic system layout, you can position the entry fields within, before, or after the texts. Please mind: If the space between the left part of the text and the entry field is too big, use the “Width of the left column with the question texts (in pixels)” field to minimize it.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>144: Texts around the entry fields 1-n. You can position the entry fields within, before, or after the texts.</p>
+</li>
+<li>
+<p>Text field width:</p>
+<ul>
+<li>
+<p>“Responsive layout”: Specified in %. The maximum value is 100%.</p>
+</li>
+<li>
+<p>Classic system layout: Default: 255 characters.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>The maximum length of the entry. Default in “Responsive layout” projects: 255 characters.<br>A maximum of 255 characters is permitted.</p>
+</li>
+<li>
+<p>The maximum length of entries is 255 characters.</p>
+</li>
+</ul>
+<h3 id="constant-sum">Constant sum</h3>
+<p>The<em> Constant sum</em> question type is used when asking participants to distribute a fixed amount of points, percentages, or money among various answer options. The values can be entered into text fields, the sum is automatically calculated and displayed. If necessary, the complete distribution of the predefined amount can be enforced.</p>
+<h4 id="base-elements-10">Base Elements</h4>
+<ul>
+<li>
+<p>Question text</p>
+</li>
+<li>
+<p>Fill-in instruction</p>
+</li>
+<li>
+<p>Help text</p>
+</li>
+<li>
+<p>Labels of the text fields</p>
+</li>
+<li>
+<p>Automatically calculated sum</p>
+</li>
+</ul>
+<p>This question type does not allow negative values.</p>
+<h4 id="entry-dialog-4">Entry dialog</h4>
+<p>The entry dialog is closely related to the entry dialog of question type 143. However several functions were not implemented because they are not suitable for a question type with such a clear-cut purpose.</p>
+<p>The section “Detail configuration” is almost identical to the analog section of the “Linked slider”. It contains the following features:</p>
+<ul>
+<li>
+<p>Maximum value: The desired maximum value.</p>
+</li>
+<li>
+<p>Force maximum value: The sum of all values has to equal the maximum value.</p>
+</li>
+<li>
+<p>Error message if the maximum value is not reached: Default: “Please total the choices to %s.”</p>
+</li>
+<li>
+<p>Sum caption: Caption in the sum row. Default: “Total.”</p>
+</li>
+<li>
+<p>Unit: The label for the displayed unit of the entered values.</p>
+</li>
+<li>
+<p>Position of the unit: The chosen unit can be positioned before or after the input field.</p>
+</li>
+<li>
+<p>Alternating rows: Every second row can be shown in a different color.</p>
+</li>
+</ul>
+<h3 id="date-picker">Date picker</h3>
+<p>The date picker allows to creation of appealing calendar questions without customization. Technically, the new question type is based on the vertical multi text field (143). On desktop PCs, a calendar is displayed. On mobile devices, the date picker is displayed with native elements (see below). If JavaScript is not activated on the participant’s device, a simple text field is used as a fallback.</p>
+<h4 id="base-elements-11">Base Elements</h4>
+<ul>
+<li>
+<p>Question text</p>
+</li>
+<li>
+<p>Fill-in instruction</p>
+</li>
+<li>
+<p>Help text</p>
+</li>
+<li>
+<p>Calendar icon</p>
+</li>
+</ul>
+<h4 id="entry-dialog-5">Entry dialog</h4>
+<p>The entry dialog is closely related to the entry dialog of question type 143. However many functions were not implemented because they are not suitable for a question type with such a clear-cut purpose.</p>
+<h4 id="detail-configuration-4">Detail configuration</h4>
+<ul>
+<li>
+<p>Beginning date: Optionally, the earliest possible beginning date can be specified.</p>
+</li>
+<li>
+<p>End date: Optionally, the latest possible end date can be specified.</p>
+</li>
+<li>
+<p>Calendar icon: To use another icon, simply click on the default icons

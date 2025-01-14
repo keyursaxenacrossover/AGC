@@ -1,0 +1,27 @@
+ service_id = id WHERE dt BETWEEN '2017-11-17 00:00:00' AND '2017-11-17 23:59:59' GROUP BY MONTH(dt),DAY(dt),service_id ORDER BY Date,COUNT(*) DESC
+
+SELECT COUNT(*) as 'Number of API calls', DATE_FORMAT(dt, "%Y-%m-%d %h:%i:%s") as 'Date', name as 'Servicemethod' FROM efs_service_log JOIN efs_services ON (service_id = id) WHERE dt BETWEEN '2017-10-30 00:00:00' AND '2017-11-01 23:59:59' GROUP BY MONTH(dt),DAY(dt),service_id ORDER BY Date ASC;</code></pre><h3 id="header-6">Wichtige Links</h3><ul>
+<li>
+<p><a href="http://mindreef.net">Mindreef.net</a></p>
+<ul><li><p></p></li></ul>
+<p><strong>Seite um die einen Webservice auszuprobieren</strong></p>
+</li>
+<li>
+<p><a href="http://www.soapui.org/">soapUI</a></p>
+<ul><li><p></p></li></ul>
+<p><strong>Seite um die einen Webservice-Application downzuloaden</strong></p>
+</li>
+</ul> service_id = id WHERE dt BETWEEN '2017-11-17 00:00:00' AND '2017-11-17 23:59:59' GROUP BY MONTH(dt),DAY(dt),service_id ORDER BY Date,COUNT(*) DESC
+
+SELECT COUNT(*) as 'Number of API calls', DATE_FORMAT(dt, "%Y-%m-%d %h:%i:%s") as 'Date', name as 'Servicemethod' FROM efs_service_log JOIN efs_services ON (service_id = id) WHERE dt BETWEEN '2017-10-30 00:00:00' AND '2017-11-01 23:59:59' GROUP BY MONTH(dt),DAY(dt),service_id ORDER BY Date ASC;</code></pre><h3 id="header-6">Wichtige Links</h3><ul>
+<li>
+<p><a href="http://mindreef.net">Mindreef.net</a></p>
+<ul><li><p></p></li></ul>
+<p><strong>Seite um die einen Webservice auszuprobieren</strong></p>
+</li>
+<li>
+<p><a href="http://www.soapui.org/">soapUI</a></p>
+<ul><li><p></p></li></ul>
+<p><strong>Seite um die einen Webservice-Application downzuloaden</strong></p>
+</li>
+</ul>

@@ -1,0 +1,21 @@
+<h1 id="h_01J5891SZAFPE1FPJAV9C4A0ZF">Overview</h1>
+<p>Agents or customers might wonder how is the public landing page loaded for an EFS installation without using the /www routing in the URL (ex: <a href="https://uv3425.customervoice360.com/">https://uv3425.customervoice360.com/</a>).<br><br></p>
+<h1 id="h_01J5891SZACFZA31Q775Q12A9N">Answer</h1>
+<p>For EFS installations with the 'Panel' module active, the public landing page of the language version belonging to the default website will open. This is indicated by the purple star icon in the 'Info' column. If the domain is mapped to a language version, that version will open instead. <br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20750415610258"></p>
+<p><br>An exception to this would be if a global redirection URL had been set under 'Website Global configuration'.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20750415616786"></p>
+<p><br>For EFS installations where no Panel module is active, a blank page will open when you access the 'root'. The only exceptions here would be if a custom HTML document had been placed in the document root or if the routing plugin is active and intercepts the request on the 'root' and redirects it somewhere else.</p>
+<h1 id="h_01J5891SZAPP05QMJSGH863DBR">Summary</h1>
+<p>Depending on whether the 'Panel' module is active or not, different scenarios can occur when trying to load the public landing page for an EFS installation without using the /www routing in the URL. Understanding these scenarios can help in troubleshooting and resolving the issue.</p>
+<p> </p>
+<h2 id="h_01J5891SZAP5DVTVVVPBM33P59">FAQ</h2>
+<p><strong>Q: What happens if a global redirection URL has been set?</strong><br>A: If a global redirection URL has been set under 'Website Global configuration', this URL will be loaded instead of the default website or mapped domain.</p>
+<p><strong>Q: What happens if no Panel module is active?</strong><br>A: If no Panel module is active, a blank page will open when you access the 'root', unless a custom HTML document has been placed in the document root or if the routing plugin is active and redirects the request.</p>
+<p><strong>Q: How can I identify the default website?</strong><br>A: The default website is indicated by the purple star icon in the 'Info' column.</p> placed in the document root or if the routing plugin is active and intercepts the request on the 'root' and redirects it somewhere else.</p>
+<h1 id="h_01J5891SZAPP05QMJSGH863DBR">Summary</h1>
+<p>Depending on whether the 'Panel' module is active or not, different scenarios can occur when trying to load the public landing page for an EFS installation without using the /www routing in the URL. Understanding these scenarios can help in troubleshooting and resolving the issue.</p>
+<p> </p>
+<h2 id="h_01J5891SZAP5DVTVVVPBM33P59">FAQ</h2>
+<p><strong>Q: What happens if a global redirection URL has been set?</strong><br>A: If a global redirection URL has been set under 'Website Global configuration', this URL will be loaded instead of the default website or mapped domain.</p>
+<p><strong>Q: What happens if no Panel module is active?</strong><br>A: If no Panel module is active, a blank page will open when you access the 'root', unless a custom HTML document has been placed in the document root or if the routing plugin is active and redirects the request.</p>
+<p><strong>Q: How can I identify the default website?</strong><br>A: The default website is indicated by the purple star icon in the 'Info' column.</p>

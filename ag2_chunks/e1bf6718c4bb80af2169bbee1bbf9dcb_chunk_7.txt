@@ -1,0 +1,112 @@
+colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p><strong>Quota type</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p><strong>Rule</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p><strong>Configuration</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>non-interlocking</p>
+</td>
+<td>
+<p>If at least one already filled quota applies to the participant, he will be screened out by quota.</p>
+<p>Otherwise, the participant will be allocated to all matching, open quotas.</p>
+</td>
+<td>
+<p>Options 1, 2, 3</p>
+<p>Allocation mode: First matching open quota</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>interlocking</p>
+</td>
+<td>
+<p>If at least one open quota applies to the participant, he can participate and will be allocated to all matching quotas.</p>
+</td>
+<td>
+<p>Option 3</p>
+<p>Allocation mode: First matching, open quota</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Prioritized quotas - standard</p>
+</td>
+<td>
+<p>If at least one already filled quota applies to the participant, he will be screened out by quota.</p>
+<p>Otherwise, the quota conditions will be processed in the predefined order and the participant will be allocated to the first matching, open quota.</p>
+</td>
+<td>
+<p>Options 1, 2,</p>
+<p>Allocation mode: First matching, open quota</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Prioritized quotas - extended</p>
+</td>
+<td>
+<p>If at least one open quota applies to the participant, he can participate. The quota conditions will be processed in the predefined order and the participant will be allocated to the first matching, open quota.</p>
+</td>
+<td>
+<p>All options disabled</p>
+<p>Allocation mode: First matching, open quota</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Low Bucket Fill (Fill up the quotas with the lowest allocation figure first)</p>
+</td>
+<td>
+<p>Difference from the prioritized extended quotas: The prioritization is dynamic.</p>
+<p>If at least one open quota applies to the participant, he can participate. The quota conditions will be processed in the predefined order and the participant will be allocated to the quota with the fewest participants.</p>
+</td>
+<td>
+<p>All options disabled</p>
+<p>Allocation mode: Matching, open quota with the fewest participants</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 class="wysiwyg-text-align-justify"> </h2>
+<h2 id="questionnaire-checking-internal-quotas" class="wysiwyg-text-align-justify">Questionnaire: checking internal quotas</h2>
+<p class="wysiwyg-text-align-justify">Whether the participants fulfill internal quotas can only be checked when there are values for all required variables, i.e. in the course of the survey. For reasons of performance, this check will not be done automatically after each questionnaire page, but only after a page that you have tagged accordingly. The Figure below shows a sample questionnaire. On the page marked with a Q icon, the internal quota are checked.</p>
+<h3 id="selecting-the-appropriate-questionnaire-page-s" class="wysiwyg-text-align-justify">Selecting the appropriate questionnaire page(s)</h3>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>At the time that the check is to be performed, there must be values for all required variables. As the check is triggered when the page is sent, you can, for example, select the page that contains the last question needed for the quota.</p>
+</li>
+<li>
+<p>You should select a page that all participants will have to view, i.e. it should not be located in a filter-branch, for example.</p>
+</li>
+</ul>
+<h3 id="tagging-the-appropriate-questionnaire-page-s" class="wysiwyg-text-align-justify">Tagging the appropriate questionnaire page(s)</h3>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>In the questionnaire editor, locate the page following the processing of which the quotas are to be analysed, and open its list view.</p>
+</li>
+<li>
+<p>Open the <strong>Properties</strong> menu.</p>
+</li>
+<li>
+<p>Select the option “Check internal quotas”.</p>
+</li>
+<li>
+<p>Click on <strong>Save</strong>. The page will now be marked with a <strong>Q</strong> icon in the questionnaire view.</p>
+</li>
+</ul>
+<h3 id="screening-out-unsuitable-respondents-by-quota" class="wysiwyg-text-align-justify">Screening out unsuitable respondents by quota</h3>
+<p class="wysiwyg-text-align-justify">Respondents that are identified as unsuitable due to the quota must be screened out. They are usually redirected to an intermediate final page using a filter:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>On this intermediate final page, the survey supervisor will thank the respondents for their willingness to participate.</p>
+</li>
+<li>

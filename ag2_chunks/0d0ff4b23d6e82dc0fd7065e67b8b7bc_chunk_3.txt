@@ -1,0 +1,114 @@
+ options, as is usual in the Anglo-Saxon world. You will find the respective display options by following these click paths:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>For the entire report: Menu<strong> Report</strong> → <strong>Report settings</strong> → Tab<strong> Table display</strong> → Section “Display options for tables”.</p>
+</li>
+<li>
+<p>For individual tables: <strong>Workpad toolbar</strong> → <strong>Settings</strong> → Tab<strong> Table display</strong> → Section “Display options for tables”.</p>
+</li>
+</ul>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 246.0px;"> <col style="width: 514.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Option</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Show code in tables</p>
+</td>
+<td>
+<p>If this checkbox is ticked, the “Codes” column will be displayed.</p>
+<p>Depending on the question type and situation, the display of codes may not be advisable. For example, for each answer option of multiple response questions (121, 362, 521, 522, 621, and checkbox matrix 362) there is always a corresponding variable with the code “0” “1”. You should check, therefore, whether it may be more practical to hide the codes for these question types.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Show row percentage in split dimensions</p>
+</td>
+<td>
+<p>If you have inserted a “Total” column in a contingency table and this option is activated, the percentages in the “Total” column are calculated by summing up all percentages in the respective row.</p>
+<p>If this option is deactivated, the percentages in the “Total” column show which percentage of the base falls upon the respective row.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Show columns</p>
+</td>
+<td>
+<p>Via the drop-down list you can control which columns will be displayed. The following options are available:</p>
+<ul>
+<li>
+<p>Show frequencies and percentages (default)</p>
+</li>
+<li>
+<p>Show frequencies</p>
+</li>
+<li>
+<p>Show percentages</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Only for report settings:<br>Always insert Total on first position</p>
+</td>
+<td>
+<p>If this checkbox is ticked, the “Total” row will be inserted above the answer options and not below. This is the typical mode of display in the Anglo-Saxon world.</p>
+<p>As this option makes sense for the entire report only, it is only available in the <strong>Report settings</strong> menu.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="displaying-useful-information" class="wysiwyg-text-align-justify"><strong>Displaying useful information</strong></h3>
+<p class="wysiwyg-text-align-justify">Information from the questionnaire editor that is helpful for understanding the evaluation, such as fill-in instructions, internal variable names, and question types, can be hidden and displayed at will.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>For the entire report: Menu <strong>Report</strong> → <strong>Report settings</strong> → Tab <strong>Table display</strong> → Section “Display options”</p>
+</li>
+<li>
+<p>For individual tables: <strong>Workpad toolbar</strong>→ <strong>Settings</strong> → Tab <strong>Table display</strong> → Section “Display options”</p>
+</li>
+</ul>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 280.0px;"> <col style="width: 480.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Option</strong></p>
+</th>
+<th data-highlight-colour="#57d9a3">
+<p class="wysiwyg-text-align-center"><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Show question text</p>
+</td>
+<td>
+<p>The question text will be displayed.</p>
+<p>You can edit the question text in the table editor</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Show fill-in instructions</p>
+</td>
+<td>
+<p>The fill-in instructions will be displayed.</p>
+<p>You can edit the fill-in instructions in the table editor</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Show base description</p>
+</td>
+<td>
+<p>In standard configuration, the header sections of all tables and charts of the report will show the respective base. You can disable the display by unticking the checkbox.</p>
+<p>If you wish to change the default labeling of the base field, you can do so in the <strong>Report →

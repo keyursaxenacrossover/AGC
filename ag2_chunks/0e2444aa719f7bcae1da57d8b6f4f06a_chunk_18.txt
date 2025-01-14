@@ -1,0 +1,63 @@
+; width: 283.385px; height: 49px;" colspan="1" rowspan="1" data-colwidth="254">
+<p data-renderer-start-pos="32050">This action changes the value of a master data item.</p>
+</td>
+<td style="padding: var(--ds-space-100, 8px); text-align: left; vertical-align: top; width: 249.479px; height: 49px;" colspan="1" rowspan="1" data-colwidth="253">
+<p data-renderer-start-pos="32106">Master data item and characteristic must be chosen.</p>
+</td>
+</tr>
+<tr style="height: 73px;">
+<td style="padding: var(--ds-space-100, 8px); text-align: left; vertical-align: top; width: 228.767px; height: 73px;" colspan="1" rowspan="1" data-colwidth="253">
+<p data-renderer-start-pos="32163">Increase / decrease value of master data variable</p>
+</td>
+<td style="padding: var(--ds-space-100, 8px); text-align: left; vertical-align: top; width: 283.385px; height: 73px;" colspan="1" rowspan="1" data-colwidth="254">
+<p data-renderer-start-pos="32216">This action increases or reduces the value of the selected master data variable.</p>
+</td>
+<td style="padding: var(--ds-space-100, 8px); text-align: left; vertical-align: top; width: 249.479px; height: 73px;" colspan="1" rowspan="1" data-colwidth="253">
+<p data-renderer-start-pos="32300">The master data item and the size of the change interval must be chosen.</p>
+</td>
+</tr>
+<tr style="height: 535px;">
+<td style="padding: var(--ds-space-100, 8px); text-align: left; vertical-align: top; width: 228.767px; height: 535px;" colspan="1" rowspan="1" data-colwidth="253">
+<p data-renderer-start-pos="32378">Add to sample</p>
+</td>
+<td style="padding: var(--ds-space-100, 8px); text-align: left; vertical-align: top; width: 283.385px; height: 535px;" colspan="1" rowspan="1" data-colwidth="254">
+<p data-renderer-start-pos="32395">This action adds the users chosen during the previous steps to the selected sample.</p>
+</td>
+<td style="padding: var(--ds-space-100, 8px); text-align: left; vertical-align: top; width: 249.479px; height: 535px;" colspan="1" rowspan="1" data-colwidth="253">
+<p data-renderer-start-pos="32482">The sample must be chosen. You must also specify whether panelists are to be added only if the survey is in the field and active. This option is activated by default.</p>
+<p data-renderer-start-pos="32650">The following parameters should be defined:</p>
+<ul class="ak-ul" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="32697">Sample</p>
+</li>
+<li>
+<p data-renderer-start-pos="32707">Add panelists to sample only if the survey is in the field and active</p>
+</li>
+<li>
+<p data-renderer-start-pos="32780">optionally: Mail template for invitation mail</p>
+</li>
+<li>
+<p data-renderer-start-pos="32829">optionally: Master data variable with expiry date for participation.If you set an expiry date, it will be used to check whether or not the panelists are still alllowed to participate in the survey.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr style="height: 359px;">
+<td style="padding: var(--ds-space-100, 8px); text-align: left; vertical-align: top; width: 228.767px; height: 359px;" colspan="1" rowspan="1" data-colwidth="253">
+<p data-renderer-start-pos="33034">Send survey invitation mail</p>
+</td>
+<td style="padding: var(--ds-space-100, 8px); text-align: left; vertical-align: top; width: 283.385px; height: 359px;" colspan="1" rowspan="1" data-colwidth="254">
+<p data-renderer-start-pos="33065">This action will send a survey invitation mail or a reminder mail to panelists from a specific sample in a panel survey or master data survey. Mails will be sent only to panelists who are already in the sample and who have a certain disposition code in it.</p>
+</td>
+<td style="padding: var(--ds-space-100, 8px); text-align: left; vertical-align: top; width: 249.479px; height: 359px;" colspan="1" rowspan="1" data-colwidth="253">
+<p data-renderer-start-pos="33325">The following parameters should be defined:</p>
+<ul class="ak-ul" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="33372">Sample</p>
+</li>
+<li>
+<p data-renderer-start-pos="33382">Add panelists to sample only if the survey is in the field and active</p>
+</li>
+<li>
+<p data-renderer-start-pos="33455">Mail template for the invitation</p>
+</li

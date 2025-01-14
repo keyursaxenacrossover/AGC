@@ -1,0 +1,80 @@
+<h1 id="h_01J4KM3D5SR1YHTJX36705TZ0J">Overview</h1>
+<p>This article provides an in-depth overview of the EFS Architecture, detailing its customer-facing, backend, and storage components. It covers the high-level architecture, general concepts, and specifics of various frontends, APIs, backend systems, storage solutions, message bus/queue systems, and additional services.</p>
+<p><strong><em>The source code URL's are not yet accessible to Central Support, however, once the migration is done, the article will be adjusted.</em></strong></p>
+<h2 id="h_01J4KKM83PQ8V1JN9268A7R6XM">Table of Contents</h2>
+<ul>
+<li><a href="#header-1">High level architecture</a></li>
+<li><a href="#h_01J4KN37DSTPDWYFH9V8CZ609W">Deployment view</a></li>
+<li><a href="#h_01J4KNNZ15QBEKZPGY94V72XZ1">EFS System Context</a></li>
+<li>
+<a href="#header-3">General concepts</a>
+<ul>
+<li>
+<a href="#header-4">Customer facing components</a>
+<ul>
+<li><a href="#header-6">EFS Admin frontend</a></li>
+<li><a href="#header-7">EFS Survey frontend</a></li>
+<li><a href="#header-8">EFS Websites frontend</a></li>
+<li><a href="#header-9">EFS Portals frontend</a></li>
+<li><a href="#header-10">EFS Reporting+ frontend</a></li>
+<li><a href="#header-11">EFS external API</a></li>
+</ul>
+</li>
+<li>
+<a href="#header-13">Backend components</a>
+<ul>
+<li><a href="#header-15">EFS internal API</a></li>
+<li><a href="#header-16">EFS Backend</a></li>
+<li><a href="#header-17">EFS Jobs</a></li>
+</ul>
+</li>
+<li>
+<a href="#header-19">Storage</a>
+<ul>
+<li><a href="#header-21">MariaDB</a></li>
+<li><a href="#header-22">Exasol</a></li>
+<li><a href="#header-23">Memcached</a></li>
+<li><a href="#header-24">Elasticsearch</a></li>
+<li><a href="#header-25">NFS</a></li>
+</ul>
+</li>
+<li>
+<a href="#header-27">Message Bus / Queues</a>
+<ul>
+<li><a href="#header-29">Kafka</a></li>
+<li><a href="#header-30">RabbitMQ</a></li>
+</ul>
+</li>
+<li>
+<a href="#header-32">Services</a>
+<ul>
+<li><a href="#header-34">Aspose PPTX-Service</a></li>
+<li><a href="#header-35">Tableau</a></li>
+<li><a href="#header-36">Okta</a></li>
+<li><a href="#header-37">Hurricane MTA</a></li>
+<li><a href="#header-38">Tyntec SMS</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#h_01J4KMC3H0YXQ01BAXG1XMQ84A">Continuous Tasks</a></li>
+</ul>
+<h1 id="header-1">High level architecture</h1>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20591458751250" alt="EFS high level architecture - Seite 1.png"></p>
+<h1 id="h_01J4KN37DSTPDWYFH9V8CZ609W">Deployment view</h1>
+<p>The core EFS deployment consists of several components that have interfaces to external systems or infrastructural components.</p>
+<p>A core EFS instance can also be seen in the following repository: <a href="https://bitbucket.org/qbengineering/efs-chart/src/master/">https://bitbucket.org/qbengineering/efs-chart/src/master/</a> <strong>(this will be replaced with Github URL once the import is finished)</strong></p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20593336125202" alt="System Scope and Context - Deployment LvL 2(1).png"></p>
+<ul>
+<li>
+<p data-renderer-start-pos="454"><strong data-renderer-mark="true">nginx:</strong> The webserver container that serves static files and forwards traffic via fast CGI to the PHP container.</p>
+</li>
+<li>
+<p data-renderer-start-pos="567"><strong data-renderer-mark="true">PHP FPM:</strong> A process pool container that serves PHP related requests and contains the main business logic.</p>
+</li>
+<li>
+<p data-renderer-start-pos="673"><strong data-renderer-mark="true">maria db:</strong> The database that stores the data of EFS. It is part of an RDS instance.</p>
+</li>
+<li>
+<p data-renderer-start-pos="757"><strong data-renderer-mark="true">memcached: </strong>An in-memory cache that caches data of the PHP FPM container.</p>
+</

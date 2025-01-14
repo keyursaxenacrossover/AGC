@@ -1,0 +1,19 @@
+7KFA453MFYKRWM34H51">Basic Idea</h2>
+<p>The below picture shows roughly where the service and other resources are located:</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21034844929042" alt="Okta Migration Tivian Questback - Static Service.png"></p>
+<h3 id="01J6EHQ7KF3W8XMSY2BVX78DPN">Description:</h3>
+<p>The Okta Tivian is an Okta tenant used by our clients. Inside there are configuration options for customization. They contain static HTML files containing the basic login screen and a basic error screen but they only contain one HTML file.</p>
+<p>To also serve additional static assets like images, javascript and css there is an Okta static service in our kubernetes cluster that only contains an nginx with the static resources that are loaded by the customized login screen.</p>
+<p>Any arbitrary app (like EFS or Tivian Analytics) will redirect to Okta and Okta will show the login screen (index.html) and load the static assets for that purpose.</p>
+<p> </p>
+<p><strong>Only Tivian Okta</strong></p>
+<p>Current there are two Okta tenants. Only the new tenant contains this kind of customization. The old that is fading out does not use that customization.</p>7KFA453MFYKRWM34H51">Basic Idea</h2>
+<p>The below picture shows roughly where the service and other resources are located:</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21034844929042" alt="Okta Migration Tivian Questback - Static Service.png"></p>
+<h3 id="01J6EHQ7KF3W8XMSY2BVX78DPN">Description:</h3>
+<p>The Okta Tivian is an Okta tenant used by our clients. Inside there are configuration options for customization. They contain static HTML files containing the basic login screen and a basic error screen but they only contain one HTML file.</p>
+<p>To also serve additional static assets like images, javascript and css there is an Okta static service in our kubernetes cluster that only contains an nginx with the static resources that are loaded by the customized login screen.</p>
+<p>Any arbitrary app (like EFS or Tivian Analytics) will redirect to Okta and Okta will show the login screen (index.html) and load the static assets for that purpose.</p>
+<p> </p>
+<p><strong>Only Tivian Okta</strong></p>
+<p>Current there are two Okta tenants. Only the new tenant contains this kind of customization. The old that is fading out does not use that customization.</p>

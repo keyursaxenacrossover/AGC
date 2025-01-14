@@ -1,0 +1,66 @@
+ing”</code> (in the KeyDescriptor tag), copy the value and save it as a certificate to your computer. Then upload it.</p>
+</li>
+<li>
+<p>Store the certificate file in keypass as attachement of the entry for the installation!</p>
+<ul>
+<li>
+<p>For formatting the certificate tools like <code>https://www.samltool.com/format_x509cert.php</code> can be used</p>
+</li>
+</ul>
+</li>
+<li>
+<p>In case this is not present put a dummy certificate in there and correct later</p>
+<ul>
+<li>
+<p>the dummy certificate can be created here: <a href="https://www.samltool.com/self_signed_certs.php">https://www.samltool.com/self_signed_certs.php</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p>The dummy certificate can be a any self-signed certificate</p>
+</li>
+</ul>
+<p> </p>
+<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716894001426" alt="Screenshot_2019-12-11 Questback - Identity Providers_123.png">
+<p><strong>Advanced Settings:</strong></p>
+<p><strong>Request Binding</strong>: HTTP POST is preferred, if not available use HTTP REDIRECT instead. The available options can be seen in the Metadata, depending on what <code>md:SingleSignOnService</code> options are available</p>
+<p><strong>Request Signature</strong>: This can be found in the Metadata: <code>WantAuthnRequestsSigned="true/false"</code>. If not explicitly set, do not sign Request</p>
+<p><strong>Request Signature Verification</strong>: This is depending on what the client answers in the first mail, wether they want to sign the assertion, the response or both. Select the matching value (“Response or Assertion” if unknown or both are signed)</p>
+<p><strong>Okta Assertion Consumer Service URL: </strong>Trust-specific</p>
+<p><strong>Destination</strong>: Leave it empty</p>
+<p><strong>Update attributes for existing users: </strong>has to be switched <strong>off</strong></p>
+<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716894060818" alt="Screenshot_2019-12-11 Questback - Identity Providers(3).png">
+<p> </p>
+</div>
+<h2 id="header-12">Send Over Metadata</h2>
+<div class="expand-macro">
+<h3 id="header-13">Step 1: Provide Metadata to the client</h3>
+<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716917563154" alt="Screenshot_2019-12-11 Questback - Identity Providers_456.png">
+<p> </p>
+<p>After the metadata is downloaded it can be attached to a mail</p>
+</div>
+<h3 id="h_01J6C1GK5XYNCX7W91NAVPC69B"> </h3>
+<h2 id="header-14">Update the Identity Provider</h2>
+<div class="expand-macro">
+<h3 id="header-15">Step 1: Click on Configure Identity Provider</h3>
+<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716927303954" alt="Screenshot_2019-12-11 Questback - Identity Providers(4).png">
+<h3 id="header-16">
+<strong>Step 2</strong>: Follow Step 3 + 4 from the section “Setup the Identity Provider”</h3>
+</div>18" alt="Screenshot_2019-12-11 Questback - Identity Providers(3).png">
+<p> </p>
+</div>
+<h2 id="header-12">Send Over Metadata</h2>
+<div class="expand-macro">
+<h3 id="header-13">Step 1: Provide Metadata to the client</h3>
+<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716917563154" alt="Screenshot_2019-12-11 Questback - Identity Providers_456.png">
+<p> </p>
+<p>After the metadata is downloaded it can be attached to a mail</p>
+</div>
+<h3 id="h_01J6C1GK5XYNCX7W91NAVPC69B"> </h3>
+<h2 id="header-14">Update the Identity Provider</h2>
+<div class="expand-macro">
+<h3 id="header-15">Step 1: Click on Configure Identity Provider</h3>
+<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716927303954" alt="Screenshot_2019-12-11 Questback - Identity Providers(4).png">
+<h3 id="header-16">
+<strong>Step 2</strong>: Follow Step 3 + 4 from the section “Setup the Identity Provider”</h3>
+</div>

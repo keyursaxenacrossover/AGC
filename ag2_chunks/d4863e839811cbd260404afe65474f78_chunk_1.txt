@@ -1,0 +1,62 @@
+ Emoji' font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><span style="box-sizing: border-box; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: pre-wrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; color: #2f3941; font-family: SFMono-Regular, Consolas, ' Liberation Mono' , Menlo, Courier, monospace; font-size: 12px; background-color: #ffffff; display: inline !important;">/nfs/opst/xxxxx.customervoice360.com/<strong style="box-sizing: border-box; font-weight: bolder;">projekte</strong>/</span>
+</li>
+</ul>
+</li>
+<li>
+<strong>Dictionary and Export Problems:</strong> Issues related to the dictionary files (CSV files referred to as "dictionaries") such as importing, conversion, or export of data. Problems with data exports not functioning correctly or missing export files.</li>
+<li>
+<strong>Survey Generation Failures:</strong> When a survey is not generated or imported correctly into the system.</li>
+<li>
+<strong>Customization Requests:</strong> Any requests for additional customizations or enhancements specific to Kantar's operations.</li>
+<li>
+<strong>Server-Specific Configuration Issues:</strong> Problems related to server configurations, such as changing the settings in the INI files or other server-side setups that are unique to Kantar.</li>
+</ul>
+<p><strong>Central Support (CS) Tasks:</strong></p>
+<ul>
+<li>Standard Survey Functionality Issues: If a survey is active and not working as expected, it's a standard CS issue. Examples include surveys not loading master data correctly, issues with routing within the survey, or any problems with standard survey settings or functionalities.</li>
+<li>Panelist Data and Survey Interaction: Issues involving panelist data, such as problems with panelist records or routing based on master data variables, provided these issues do not involve importing/exporting data or custom code.</li>
+<li>General System Support: Troubleshooting user errors or standard system functionality, such as login issues, interface navigation problems, or misconfigured survey settings that do not involve custom modules.</li>
+</ul>
+<p>Key Indicators for Routing Tickets</p>
+<p>To determine the correct routing for a ticket, consider the following indicators:</p>
+<ul>
+<li>Survey Generation vs. Survey Execution:</li>
+<ul>
+<li>PS: If the survey is not generated at all or the system fails to import the survey, route to PS.</li>
+<li>CS: If the survey is generated and imported successfully but is not functioning as expected when users interact with it, route to CS.</li>
+</ul>
+<li>Dictionary (CSV Files) Issues:</li>
+<ul>
+<li>PS: If there are issues with the dictionary files themselves, such as missing data, incorrect formatting, or conversion errors, route to PS.</li>
+<li>CS: If the dictionary is correctly imported but there are issues with the survey content or structure that derive from standard settings or filters, route to CS.</li>
+</ul>
+<li>Export and Import Problems:</li>
+<ul>
+<li>PS: Issues with exporting data or failures in receiving expected export files generally fall under PS.</li>
+<li>CS: If the export appears to be working but data in the survey itself isn't behaving as expected, this could be a CS issue.</li>
+</ul>
+<li>Custom Functionality Requests:</li>
+<ul>
+<li>PS: Requests for changes or enhancements to functionality, such as new features or additional custom modules, should always be routed to PS.</li>
+</ul>
+<li>Master Data Handling:</li>
+<ul>
+<li>PS: If the issue is related to the import/export or configuration of master data that involves custom handling, it's a PS task.</li>
+<li>CS: If it's a problem with the usage of master data within a survey that is functioning otherwise, route to CS.</li>
+</ul>
+</ul>
+<p>Examples of Ticket Routing</p>
+<ul>
+<li>Ticket Example 1: "The survey did not generate after the latest dictionary upload."</li>
+<ul>
+<li>Route to PS: This is a survey generation issue linked to the dictionary conversion process.</li>
+</ul>
+<li>Ticket Example 2: "Panelists are not routed correctly based on their master data in the survey."</li>
+<ul>
+<li>Route to CS: This is an issue with survey routing logic and does not involve custom modules or dictionary imports.</li>
+</ul>
+<li>Ticket Example 3: "We did not receive the expected export files on our SFTP server."</li>
+<ul>
+<li>Route to PS: This is an export-related issue likely linked to the custom SFTP configuration or custom export processes.</li>
+</ul>
+<li>Ticket Example 4: "The survey is active, but users report that one of

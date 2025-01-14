@@ -1,0 +1,68 @@
+strong></p>
+<table class="wrapped wysiwyg-text-align-justify" style="margin-right: auto; margin-left: auto; width: 226px; height: 95px;" border="1">
+<colgroup> <col> <col> </colgroup>
+<tbody>
+<tr>
+<th style="width: 134.688px;">Tag</th>
+<th style="width: 84.0104px;">Meaning</th>
+</tr>
+<tr>
+<td style="width: 126.667px;">&lt;b&gt;Text&lt;/b&gt;</td>
+<td style="width: 75.9896px;">Bold</td>
+</tr>
+<tr>
+<td style="width: 126.667px;">&lt;i&gt;Text&lt;/i&gt;</td>
+<td style="width: 75.9896px;">Italics</td>
+</tr>
+</tbody>
+</table>
+<p class="auto-cursor-target wysiwyg-text-align-justify"><strong>HTML entities for German umlauts:</strong></p>
+<table class="relative-table wrapped wysiwyg-text-align-justify" style="width: 31.9391%; margin-right: auto; margin-left: auto; height: 192px;" border="1">
+<colgroup> <col style="width: 27.6339%;"> </colgroup> <colgroup> <col style="width: 72.5446%;"> </colgroup>
+<tbody>
+<tr>
+<th>Tag</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td>ä / Ä</td>
+<td>&amp;auml; / &amp;Auml;</td>
+</tr>
+<tr>
+<td>ö / Ö</td>
+<td>&amp;ouml; / &amp;Ouml;</td>
+</tr>
+<tr>
+<td>ü / Ü</td>
+<td>&amp;uuml; / &amp;Uuml;</td>
+</tr>
+</tbody>
+</table>
+<p class="auto-cursor-target wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify"><em>Information:</em> A detailed introduction to HTML and CSS can be found, for example, at <span class="nolink">http://selfhtml.org</span>.</p>
+<h2 id="uploading-and-managing-images" class="wysiwyg-text-align-justify"><strong>Uploading and Managing Images</strong></h2>
+<p class="wysiwyg-text-align-justify">Images and other media files for the website are managed with a panel-specific version of the EFS media library:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>The library is located in the menu <strong>Website → Asset library</strong> (until EFS 10.3: <strong>Media library</strong>).</li>
+<li>From EFS 10.4, the files are separated as follows:
+<ul>
+<li>Website assets: website-specific files.</li>
+<li>Panel assets: files that can be used on all websites.</li>
+<li>TIVIAN</li>
+<li>assets: read-only assets provided by TIVIAN, sorted by website themes.</li>
+</ul>
+</li>
+<li>You can use not only images but SVG graphics, flash, and video formats e.g. RealVideo or Quicktime. To access a detailed list of the permitted file types, open the <strong>Upload file</strong> dialog and click on the <strong>Question mark</strong> icon.</li>
+<li>The maximum file size is installation-specific. If you exceed the threshold value, a note will be displayed.</li>
+</ul>
+<h2 id="inserting-links" class="wysiwyg-text-align-justify"><strong>Inserting Links</strong></h2>
+<p class="wysiwyg-text-align-justify">Panel CMS contains different types of links.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>External links: Refer to a page outside the respective panel language version, usually an external domain. They are inserted in modules or templates using normal HTML tags. See the following section “1. External links”.</li>
+<li>Internal links: Refer to a page that is part of the respective panel language version. Internal links are also inserted using HTML tags; however, the so-called <em>page identifier</em> is inserted instead of the full URL. See the section “2. Internal links” for instructions.</li>
+<li>Short URLs: It is possible to display URLs shortened with a Smarty modifier, which is widely used on Twitter or in smartphone communication. Instructions can be found in section 3 “Optimized short URLs for Twitter”.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><em>Information: </em>The menu of the website is dynamically generated in EFS Panel, depending on the page configuration (the fields “Parent page”, “Position”, “Access control”, and “Show in navigation” in particular). Manual maintenance of menu links is therefore not required.</p>
+<p class="auto-cursor-target wysiwyg-text-align-justify"><strong>1. External Links</strong></p>
+<p class="auto-cursor-target wysiwyg-text-align-justify">Links to other domains (e.g. <span class="nolink">http://www.domain.com</span>) can be inserted into modules or templates in a “normal” way, i.e. with the HTML tag &lt;a href=http://www.domain.com&gt;Linkname&lt;/a&gt;.</p>
+<p class="auto-cursor-target wysi

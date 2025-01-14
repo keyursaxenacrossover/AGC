@@ -1,0 +1,30 @@
+{
+    "id": 20716796165778,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/20716796165778.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20716796165778-Sign-On-Policy",
+    "author_id": 369584192734,
+    "comments_disabled": false,
+    "draft": true,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20714711445138,
+    "created_at": "2024-08-12T19:44:14Z",
+    "updated_at": "2024-08-12T19:44:16Z",
+    "name": "Sign-On Policy",
+    "title": "Sign-On Policy",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-08-12T19:44:16Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075294,
+    "content_tag_ids": [],
+    "label_names": [],
+    "body": "<p><b>Original Confluence URL:</b> <a href=\"https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1077936258\">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1077936258</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>\n\n<p>A Sign-On Policy defines the session lifetime for a user and how often a user is asked for additional factors (MFA). </p><p></p><p>A Sign-On-Policy Contains of a container construct bundling a set of rules.</p><table data-layout=\"default\"><tbody>\n<tr>\n<th><p><strong>What</strong></p></th>\n<th><p><strong>Explanation</strong></p></th>\n</tr>\n<tr>\n<td data-highlight-colour=\"#f4f5f7\"><p><strong>General settings</strong></p></td>\n<td><p></p></td>\n</tr>\n<tr>\n<td><p>Group Assignment</p></td>\n<td><p>The Group for which this policy takes effect.</p></td>\n</tr>\n<tr>\n<td data-highlight-colour=\"#f4f5f7\"><p><strong>Rule Settings</strong></p></td>\n<td><p></p></td>\n</tr>\n<tr>\n<td><p>Prompt for Factor</p></td>\n<td>\n<p>This enables MFA. It has to take care of the factor enrollment settings. Else the login might be broken.</p>\n<p>MFA can have it’s own session lifetime or it could be enabled only once per device or every time.</p>\n</td>\n</tr>\n<tr>\n<td><p>Session lifetime</p></td>\n<td>\n<p>The lifetime of the Okta session.</p>\n<p>Also see <ac:link ac:card-appearance=\"inline\"><ri:page ri:content-title=\"Sessions\" ri:version-at-save=\"4\"></ri:page><ac:link-body>Sessions</ac:link-body></ac:link> and <ac:link ac:card-appearance=\"inline\"><ri:page ri:content-title=\"Sessions Explained\" ri:version-at-save=\"1\"></ri:page><ac:link-body>Sessions Explained</ac:link-body></ac:link> </p>\n</td>\n</tr>\n</tbody></table><p></p><p><strong><u>For API Access see:</u></strong></p><p><strong>Sign-On Policy:</strong></p><p><a href=\"https://developer.okta.com/docs/reference/api/policy/#okta-sign-on-policy\">https://developer.okta.com/docs/reference/api/policy/#okta-sign-on-policy</a></p><p><strong>Rules (also Sign-On Policy rules):</strong></p><p><a href=\"https://developer.okta.com/docs/reference/api/policy/#rules-operations\">https://developer.okta.com/docs/reference/api/policy/#rules-operations</a></p>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

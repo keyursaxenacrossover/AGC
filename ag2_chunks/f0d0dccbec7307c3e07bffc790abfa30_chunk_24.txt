@@ -1,0 +1,121 @@
+ "externalSurveyType": 1234,
+    "externalSurveyAttributes": [
+      {
+        "attributeName": "Name",
+        "attributeValue": "Example"
+      }
+    ],
+    "externalSurveyModificationDate": "2020-07-02T12:53:50+00:00"
+  }
+]</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79F4CVMJMJ0FDR0DWM4"> </h4>
+<h3 id="header-117">PATCH /panel/externalsurveys/</h3>
+<p>Updates an existing external survey with new attributes. The survey's external ID cannot be changed.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "identifierType": "internal_id",
+  "identifierValue": "Example",
+  "title": "Example",
+  "type": 1234,
+  "attributes": [
+    {
+      "attributeName": "Name",
+      "attributeValue": "Example"
+    }
+  ]
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">true</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79FF33P3HF5ZGQS845A"> </h4>
+<h3 id="header-118">POST /panel/externalsurveys/</h3>
+<p>Retrieves a list of external surveys that were modified since a given timestamp</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "timestamp": "2020-07-02T12:53:50+00:00"
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[
+  {
+    "externalSurveyId": 1,
+    "externalSurveyExternalId": "1234",
+    "externalSurveyTitle": "Example",
+    "externalSurveyType": 1234,
+    "externalSurveyAttributes": [
+      {
+        "attributeName": "Name",
+        "attributeValue": "Example"
+      }
+    ],
+    "externalSurveyModificationDate": "2020-07-02T12:53:50+00:00"
+  }
+]</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79FC0XDKF20C73X1J0G"> </h4>
+<h3 id="header-119">POST /panel/externalsurveys/add</h3>
+<p>Adds a new external survey, returns ID</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "title": "Example",
+  "type": 1234,
+  "attributes": [
+    {
+      "attributeName": "some_attribute",
+      "attributeValue": "Example"
+    }
+  ]
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">1</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79F8J75V6Y06JJ4R9VY"> </h4>
+<h3 id="header-120">POST /panel/externalsurveys/data</h3>
+<p>Retrieves the data of the external survey</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "identifierType": "internal_id",
+  "identifierValue": "Example"
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">{
+  "externalSurveyId": 1,
+  "externalSurveyExternalId": "123",
+  "externalSurveyTitle": "Example",
+  "externalSurveyType": 1234,
+  "externalSurveyAttributes": [
+    {
+      "attributeName": "Name",
+      "attributeValue": "Example"
+    }
+  ],
+  "externalSurveyModificationDate": "2020-07-02T12:53:50+00:00"
+}</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79FSS0WK7P7Q4R4G7P8"> </h4>
+<h3 id="header-121">POST /panel/externalsurveys/participants</h3>
+<p>Adds or updates the participation status of multiple participants in an external survey</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "identifierType": "internal_id",
+  "identifierValue": "Example",
+  "panelistIdentifierType": "u_email",
+  "surveyParticipations": [
+    {
+      "panelistIdentifierValue": "example@domain.tld",
+      "participationStatus": "10",
+      "participationDate": "2020-07-02T12:53:50+00:00",
+      "participationPoints": 1.345,
+      "participationScore": 1.345
+    }
+  ]
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">true</code></pre>
+</div>
+<h2

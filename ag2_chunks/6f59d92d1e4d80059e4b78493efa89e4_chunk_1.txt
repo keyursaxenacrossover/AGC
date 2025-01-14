@@ -1,0 +1,36 @@
+”: all you need to do is to adapt this template for your panel and reference it from the “Send private messages to panelists” page module on the “Send messages” page.</p>
+<p class="wysiwyg-text-align-justify">Please note:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>The template should be of the “standard mail” type.</li>
+<li>For the sender, you should use a dedicated e-mail address of the panel domain. Please note that it is not possible to dynamically insert different sender addresses. In particular, it is not possible to use the e-mail addresses of the mailing panelists.</li>
+<li>The following wildcards can be used:<br>– #sender_u_firstname#: The sender’s first name<br>– #sender_u_name#: The sender’s last name<br>– #message_title#: The message header<br>– #message_text#: The message text</li>
+<li>The template should always mention an e-mail address or contact form for abuse cases.</li>
+</ul>
+<h2 id="configuring-the-visibility-options" class="wysiwyg-text-align-justify"><strong>Configuring the Visibility Options</strong></h2>
+<p class="wysiwyg-text-align-justify">For reasons of privacy, it is possible to write only to panelists who have explicitly agreed to receive private messages, i.e. the visibility option “Receive private messages” must be activated. Depending on which processes and privacy policies apply to your panel, this is the responsibility of either the moderator or the panelist.</p>
+<p class="wysiwyg-text-align-justify">If you want to encourage your panelists to make use of the private messaging function, you should explain how to activate the visibility option “Receive private messages” in a suitable location. For example, you can introduce the new function in a forum post or create a FAQ.</p>
+<h2 id="sending-messages-to-panelists" class="wysiwyg-text-align-justify"><strong>Sending Messages to Panelists</strong></h2>
+<p class="wysiwyg-text-align-justify">As a moderator, you can use the messaging functionality as well, of course. If you want to address panelist groups instead of individual persons, a dedicated feature in the admin area allows you to send messages that are displayed in the inbox on the website but not dispatched by e-mail.</p>
+<p class="wysiwyg-text-align-justify">You can find the new feature in the admin area in the menu <strong>People → Contacts → Messages</strong>.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Similar to other moderation features, moderator and test accounts can be selected as senders. Please ensure that visibility is activated for the first name and/or name of the used account. Otherwise, the recipients may have problems understanding who sent the message.</li>
+<li>All groups of the panel can be addressed.</li>
+<li>The dispatched messages are logged.</li>
+<li>Both this new messaging function and read access to the panelists’ private messages in the admin area are protected by ACL rights (“panel_send_private_message” and “panel_view_private_message”).</li>
+</ul>
+<h2 id="integrating-panelist-messages-into-the-website" class="wysiwyg-text-align-justify"><strong>Integrating Panelist Messages into the Website</strong></h2>
+<p class="wysiwyg-text-align-justify">To create the entry form for the messages, please proceed as follows:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>On the desired page, create a page module of the “Send private messages to panelists” type.</li>
+<li>Configure the setting options as required. Table 19.30 provides an overview.<br>– Select the “func_messages_send” module template. You may have to adapt the templates to the layout of your panel.<br>– Select the appropriate mail template with the accompanying text.</li>
+</ol>
+<p class="wysiwyg-text-align-justify">To create a message list, proceed as follows:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>On the desired page, create a page module of the “Display of private messages” type.</li>
+<li>Configure the setting options as required.</li>
+<li>Depending on the type of list you want to display, select one of the following module templates. You may have to adapt the templates to the layout of your panel.<br>– func_messages_light: Message overview, e.g. on the personalized homepage.<br>– func_messages: Detailed list of the received messages.</li>
+</ol>
+<h1 id="reporting-spam" class="sc-chbbiW dCajGG wysiwyg-text-align-justify">Reporting Spam</h1>
+<p class="wysiwyg-text-align-justify">Unsolicited advertising, disrespectful posts, and other forms of inappropriate content are a widespread problem in Internet forums. Experience shows that the smaller and more personal the community is, and the more experienced the team of moderators is, the less frequent such spam and abuse problems occur. Consequently, they arise only rarely in EFS Panel communities. To enable you to identify and counter any such problem cases in a timely and effective manner, EFS includes a spam reporting function. This allows panelists to report abusive posts themselves; instead of closely monitoring all discussions on the platform or checking all posts before release, you can rely on the community‘s powers of self-organization.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>From any blog, forum, or discussion post, panelists can open a dedicated form and report abusive content.</

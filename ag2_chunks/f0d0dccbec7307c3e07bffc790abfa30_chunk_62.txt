@@ -1,0 +1,161 @@
+ style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th style="width: 160.903px;">
+<p>Name</p>
+</th>
+<th style="width: 158.906px;">
+<p>Type</p>
+</th>
+<th style="width: 158.906px;">
+<p>Required</p>
+</th>
+<th style="width: 158.906px;">
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td style="width: 152.882px;">
+<p>surveyId</p>
+</td>
+<td style="width: 150.885px;">
+<p>integer</p>
+</td>
+<td style="width: 150.885px;">
+<p>true</p>
+</td>
+<td style="width: 150.885px;">
+<p>id of survey <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 152.882px;">
+<p>varname</p>
+</td>
+<td style="width: 150.885px;">
+<p>string</p>
+</td>
+<td style="width: 150.885px;">
+<p>true</p>
+</td>
+<td style="width: 150.885px;">
+<p>variable name <strong>Examples:</strong> <code>Example</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="header-279">Reporting+</h2>
+<div class="expand-macro">
+<h4 id="h_01J441N79NPJEDJAM9FMF5YHYJ"> </h4>
+<h3 id="header-281">POST /survey/reports/{surveyId}</h3>
+<p>Create a standard Reporting+ report for a survey</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{ "title": "Example", "description": "Example" }</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">1</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>surveyId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>id of survey <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79NBD6EMQFWKWJCVDPJ"> </h4>
+<h3 id="header-282">POST /survey/reports/v2/{reportId}/publication</h3>
+<p>Create a Reporting+ export, valid options for <code>reportType</code>: <em>html, xls, pdf, ppt, pptx, pptxpdf</em></p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "reportType": "html",
+  "fileName": "Example.html",
+  "languageId": 1,
+  "guiLanguage": "en"
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">1</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>reportId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>id of survey report (to be created with createStandardReport) <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79NZ36SA3YD3NQA5RHG"> </h4>
+<h3 id="header-283">DELETE /survey/reports/{reportId}</h3>
+<p>Delete a Reporting+ export</p>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">true</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width

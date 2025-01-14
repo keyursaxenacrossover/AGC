@@ -1,0 +1,36 @@
+ &gt; Action Planner variables</em>. This menu is available to users with the access right <em>ac_variable_editor</em>.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998612230418" alt="f7f2886c-ce8a-4e22-8bf9-41db356d45e1"></p>
+<h3 id="header-16">Action Trigger</h3>
+<p>This trigger creates a new action in the target ES project. A range of conditions and settings defines if an action is created and what content is stored in the action.</p>
+<p>The target unit for an action needs to be provided in a variable of the originating survey. If a unit cannot be found, a survey runtime error is thrown and the surveys error notification recipients will be notified.</p>
+<p>The surveys wildcards can be used to dynamically fill action planner variables. Conditions can be defined to provide different content based on pre-defined rules. Default fields cannot be removed and must have a value.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998628610066" alt="a6361676-decf-44b4-8d9c-27dd31f0bc70"></p>
+<h3 id="header-17">Action Planner data in MySight</h3>
+<p>Action planner data can be synchronized with MySight. All selected variables will be available as dimensions. The fields <em>date of creation</em>, <em>put in progress at </em>and <em>closed at </em>are always available.</p>
+<h3 id="header-18">Import of org-structure users to People</h3>
+<p>In Panelist administration, functionality <em>Panelist</em> <em>import from Employee project </em>has been extended<br>to also support org-structure users. Users can be added to an existing panel group.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998581462162" alt="de78cacf-b757-4b6f-b268-6f44a2faf24e"></p>
+<h3 id="header-19">Hierarchy question types</h3>
+<p>New question types <em>Hierarchy </em>and <em>Hierarchy search </em>are available on installations with the Employee module enabled. They allow browsing and selection of a unit in non-Employee projects. The meta name of the selected unit is stored in a variable. An ES project with an org-structure needs to be selected as source in the question editor.</p>
+<p> </p>
+<h2 id="header-21">Change Requests</h2>
+<h3 id="header-23">New question type: <em>Blacklist email</em>
+</h3>
+<p>You can use this new question type to build unsubscribe surveys with user-defined layout, text and questions. This question type extends the existing black list feature introduced in the EFS Winter 2016 release.</p>
+<p>You can select the variable in the question editor, which stores the email address of current participant. Furthermore, you can define the question type’s behavior. Users can either be added to the global or the project based blacklist or be removed from all lists.</p>
+<p>This new question type is only available on final pages.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998585150738" alt="a846eaa5-bd99-47a5-b7b2-0765f3cd223c"></p>
+<h3 id="header-24">Update of master data in LUA question type</h3>
+<p>By using the function <em>setMasterDataValue (varName, var Value) </em>you can update master data of a panelist directly from the survey.</p>
+<p>This function is only available in PA and MD project types. The function returns “true” on success and “false” on error.</p>
+<h3 id="header-25">
+<em>X-Frame-Options</em>: HTTP header settings in Panel and Survey</h3>
+<p>This setting controls the behavior of EFS, when embedding the Panel website or a survey in a different website. Possible choices are “Do not send”, “Deny”, “Same origin”. The default “Do not send” does not change the existing behavior.</p>
+<p>Panel: <em>Website &gt; Global configuration</em>: “Select whether a header with X-Frame- Options should be sent to the client”.</p>
+<p>Survey: <em>Project properties &gt; General options</em>: “Select whether a header with X- Frame-Options should be sent to the client”.</p>
+<h3 id="header-26">SMS-Report</h3>
+<p>On installations with the SMS module enabled, in <em>Options &gt; SMS admin</em>, there is a new functionality called <em>SMS report</em>.</p>
+<p>This detailed list shows all SMS that were sent by EFS to the provider along with the initial response received from the SMS provider.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998627994258" alt="d071c4ce-9a04-4d64-9dc5-864d99907d88"></p>
+<h3 id="header-27">New service layer methods</h3>
+<p>

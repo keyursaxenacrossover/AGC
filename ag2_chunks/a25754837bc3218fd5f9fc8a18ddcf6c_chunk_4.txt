@@ -1,0 +1,58 @@
+ in the statistics in the focus persons overview.</em></p>
+<p> </p>
+</div>
+</div>
+<h2 id="configuring_feedback_statuses">Configuring Feedback Statuses</h2>
+<p>Feedback statuses map complex workflows in EFS Leadership, describing the progress of the overall feedback process (Feedback phase → Reporting phase → Closure of process) and individual participants (Feedback phase → Feedback finished) in a specific feedback constellation.</p>
+<h3 id="h_01J3DA86Y08FZY7N63RFWJ3PAP">Feedback Statuses in Detail</h3>
+<p>The table below lists the default feedback statuses. Processes related to these statuses depend on the specific feedback scenario. The "Default scenario" column describes the process in a default multi-source project without customization.</p>
+<ul>
+<li>Default statuses are fixed; only labels can be changed.</li>
+<li>The sequence of statuses is defined by the ID.</li>
+<li>Additional user-defined statuses should be between 5 ("Initial") and 100 ("Process closed").</li>
+<li>Only additional user-defined statuses can be deleted.</li>
+</ul>
+<table style="border-collapse: collapse; height: 1px; background-color: #ffffff; width: 880px;" border="1" data-testid="renderer-table" data-number-column="false" data-table-width="760" data-layout="default">
+<tbody>
+<tr style="height: 47.9062px;">
+<th class="ak-renderer-tableHeader-sortable-column__wrapper" style="padding: 0px; text-align: left; vertical-align: top; background-color: var(--ds-background-accent-gray-subtlest,#f4f5f7); width: 58.6285px;" colspan="1" rowspan="1" data-colwidth="62" aria-sort="none">
+<div class="ak-renderer-tableHeader-sortable-column">
+<p class="wysiwyg-indent1" data-renderer-start-pos="10948"><strong data-renderer-mark="true">ID</strong></p>
+</div>
+</th>
+<th class="ak-renderer-tableHeader-sortable-column__wrapper" style="padding: 0px; text-align: left; vertical-align: top; background-color: var(--ds-background-accent-gray-subtlest,#f4f5f7); width: 133.889px;" colspan="1" rowspan="1" data-colwidth="149" aria-sort="none">
+<div class="ak-renderer-tableHeader-sortable-column">
+<p class="wysiwyg-indent1" data-renderer-start-pos="10954"><strong data-renderer-mark="true">Label</strong></p>
+</div>
+</th>
+<th class="ak-renderer-tableHeader-sortable-column__wrapper" style="padding: 0px; text-align: left; vertical-align: top; background-color: var(--ds-background-accent-gray-subtlest,#f4f5f7); width: 683.038px;" colspan="1" rowspan="1" data-colwidth="548" aria-sort="none">
+<div class="ak-renderer-tableHeader-sortable-column">
+<p class="wysiwyg-indent1" data-renderer-start-pos="10963"><strong data-renderer-mark="true">Default scenario</strong></p>
+</div>
+</th>
+</tr>
+<tr>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; width: 42.6562px;" colspan="1" rowspan="1" data-colwidth="62">
+<p data-renderer-start-pos="10985">5</p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; width: 117.917px;" colspan="1" rowspan="1" data-colwidth="149">
+<p data-renderer-start-pos="10990">Initial</p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; width: 667.066px;" colspan="1" rowspan="1" data-colwidth="548">
+<p data-renderer-start-pos="11001">The initial status of the feedback.</p>
+<p data-renderer-start-pos="11034">When the focus person gets the invitation, he or she can log in to the feedback center.</p>
+</td>
+</tr>
+<tr>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; width: 42.6562px;" colspan="1" rowspan="1" data-colwidth="62">
+<p data-renderer-start-pos="11127">10</p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; width: 117.917px;" colspan="1" rowspan="1" data-colwidth="149">
+<p data-renderer-start-pos="11133">Password changed</p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; width: 667.066px;" colspan="1" rowspan="1" data-colwidth="548">
+<p data-renderer-start-pos="11153">The focus person has logged in to the feedback center and changed the initial password.</p>
+</td>
+</tr>
+<tr>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top; width: 42.6562px;" colspan="1" rowspan="1" data-colwidth="62">

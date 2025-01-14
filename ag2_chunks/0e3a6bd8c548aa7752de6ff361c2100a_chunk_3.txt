@@ -1,0 +1,37 @@
+ access settings for the discussion board on the content tab of the portal.</p></li>
+</ul>
+<p></p>
+<h2 id="header-14">How many portal participants are online?</h2>
+<p> Here is how you can check how many portal participants are online<br><br><strong>&lt; EFS 17.4</strong> <br>Please check on slave DB.</p>
+<ul>
+<li><p>i [installation]</p></li>
+<li><p>cd conf</p></li>
+<li><p>echo "SELECT count(*) as num FROM portal_user_online_status WHERE portal_id=[ID] AND DATE_SUB(NOW(), INTERVAL 300 SECOND) &lt; current_at;" | mysql -h [host] -u [user] -p"[password]" -P [port] [database]</p></li>
+<li><p>Output: num 238</p></li>
+</ul>
+<p><br><strong>&gt;= EFS 17.4</strong> <br>You can add a page module in the Portals cms called statistics</p>
+<ul>
+<li><p>add a new chart</p></li>
+<li><p>Chart type e.g. Column chart</p></li>
+<li><p>Source type = users</p></li>
+<li><p>Content Type e.g. Number of online users with app</p></li>
+</ul>
+<p></p>
+<h3 id="header-16">How can I log in as a panelist?</h3>
+<p>In Portals use the []-&gt; Button to open the Portal in a new tab.</p>
+<p>Then from the participants of this portal, choose the login you want to use and go to the panelist administration to copy the panelist’s token.</p>
+<p>In the Portal from the new tab, in the url insert “?lc=[token from panleist administration]” in front of the # of the URL</p></ac:layout-cell></ac:layout-section></ac:layout>=[ID] AND DATE_SUB(NOW(), INTERVAL 300 SECOND) &lt; current_at;" | mysql -h [host] -u [user] -p"[password]" -P [port] [database]</p></li>
+<li><p>Output: num 238</p></li>
+</ul>
+<p><br><strong>&gt;= EFS 17.4</strong> <br>You can add a page module in the Portals cms called statistics</p>
+<ul>
+<li><p>add a new chart</p></li>
+<li><p>Chart type e.g. Column chart</p></li>
+<li><p>Source type = users</p></li>
+<li><p>Content Type e.g. Number of online users with app</p></li>
+</ul>
+<p></p>
+<h3 id="header-16">How can I log in as a panelist?</h3>
+<p>In Portals use the []-&gt; Button to open the Portal in a new tab.</p>
+<p>Then from the participants of this portal, choose the login you want to use and go to the panelist administration to copy the panelist’s token.</p>
+<p>In the Portal from the new tab, in the url insert “?lc=[token from panleist administration]” in front of the # of the URL</p></ac:layout-cell></ac:layout-section></ac:layout>

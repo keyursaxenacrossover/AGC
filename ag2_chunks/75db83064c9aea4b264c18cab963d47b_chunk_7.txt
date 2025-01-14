@@ -1,0 +1,72 @@
+ allowable values of a parameter.</p>
+<pre><code class="language-text">Questback.portalsApi.mySight.workbookGetParameterAllowableValues(pageModuleIdentifier, parameterName)
+    .then(function(allowableValues) {
+        ...
+    });</code></pre>
+<h3 id="mysight-workbookgetparameterminvalue" class="wysiwyg-text-align-justify">mySight.workbookGetParameterMinValue</h3>
+<p class="wysiwyg-text-align-justify">Gets the min value of a parameter.</p>
+<pre><code class="language-text">Questback.portalsApi.mySight.workbookGetParameterMinValue(pageModuleIdentifier, parameterName)
+    .then(function(minValue) {
+        ...
+    });</code></pre>
+<h3 id="mysight-workbookgetparametermaxvalue" class="wysiwyg-text-align-justify">mySight.workbookGetParameterMaxValue</h3>
+<p class="wysiwyg-text-align-justify">Gets the max value of a parameter.</p>
+<pre><code class="language-text">Questback.portalsApi.mySight.workbookGetParameterMaxValue(pageModuleIdentifier, parameterName)
+    .then(function(maxValue) {
+        ...
+    });</code></pre>
+<h3 id="mysight-workbookgetparameterstepsize" class="wysiwyg-text-align-justify">mySight.workbookGetParameterStepSize</h3>
+<p class="wysiwyg-text-align-justify">Gets the step size of a parameter.</p>
+<pre><code class="language-text">Questback.portalsApi.mySight.workbookGetParameterStepSize(pageModuleIdentifier, parameterName)
+    .then(function(stepSize) {
+        ...
+    });</code></pre>
+<h3 id="mysight-workbookgetparameterdatestepperiod" class="wysiwyg-text-align-justify">mySight.workbookGetParameterDateStepPeriod</h3>
+<p class="wysiwyg-text-align-justify">Gets the date step period of a parameter.</p>
+<pre><code class="language-text">Questback.portalsApi.mySight.workbookGetParameterDateStepPeriod(pageModuleIdentifier, parameterName)
+    .then(function(dateStepPeriod) {
+        ...
+    });</code></pre>
+<h3 id="mysight-workbookchangeparametervalue" class="wysiwyg-text-align-justify">mySight.workbookChangeParameterValue</h3>
+<p class="wysiwyg-text-align-justify">Sets a parameter to a given value.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.workbookChangeParameterValue(pageModuleIdentifier, parameterName, value)
+    .then(function(newValue) {
+        ...
+    });</code></pre>
+<h3 id="mysight-sheetgetname" class="wysiwyg-text-align-justify">mySight.sheetGetName</h3>
+<p class="wysiwyg-text-align-justify">Gets the name of a sheet by its index.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.sheetGetName(pageModuleIdentifier)
+    .then(function(name) {
+        ...
+    });</code></pre>
+<h3 id="mysight-sheetgetindex" class="wysiwyg-text-align-justify">mySight.sheetGetIndex</h3>
+<p class="wysiwyg-text-align-justify">Gets the index of a sheet by its name.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.sheetGetIndex(pageModuleIdentifier)
+    .then(function(index) {
+        ...
+    });</code></pre>
+<h3 id="mysight-sheetgetisactive" class="wysiwyg-text-align-justify">mySight.sheetGetIsActive</h3>
+<p class="wysiwyg-text-align-justify">Gets whether a sheet is active or not.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.sheetGetIsActive(pageModuleIdentifier, sheetNameOrIndex)
+    .then(function(active) {
+        ...
+    });</code></pre>
+<h3 id="mysight-sheetgetishidden" class="wysiwyg-text-align-justify">mySight.sheetGetIsHidden</h3>
+<p class="wysiwyg-text-align-justify">Gets whether a sheet is hidden or not.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.sheetGetIsHidden(pageModuleIdentifier, sheetNameOrIndex)
+    .then(function(hidden) {
+        ...
+    });</code></pre>
+<h3 id="mysight-sheetgettype" class="wysiwyg-text-align-justify">mySight.sheetGetType</h3>
+<p class="wysiwyg-text-align-justify">Gets the type of the currently active or a specific sheet.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.sheetGetType(pageModuleIdentifier, sheetNameOrIndex)
+    .then(function(type) {
+        ...
+    });</code></pre>
+<h3 id="mysight-sheetgeturl" class="wysiwyg-text-align-justify">mySight.sheetGetUrl</h3>
+<p class="wysiwyg-text-align-justify">Gets the url of the currently active or a specific sheet.</p>
+<pre><code class="language-js">Questback.portalsApi.mySight.sheetGetUrl(pageModuleIdentifier, sheetNameOrIndex)
+    .then(function(url) {
+        ...
+    });</code></pre>
+<h3 id="mysight-sheetgetsize" class="wysiwyg-text-align-justify">mySight.sheetGetSize</

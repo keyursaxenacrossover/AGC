@@ -1,0 +1,40 @@
+li>
+<li>Configure the setting options as required.</li>
+<li>Depending on the type of list you want to display, select one of the following module templates. You may have to adapt the templates to the layout of your panel.<br>– func_messages_light: Message overview, e.g. on the personalized homepage.<br>– func_messages: Detailed list of the received messages.</li>
+</ol>
+<h1 id="reporting-spam" class="sc-chbbiW dCajGG wysiwyg-text-align-justify">Reporting Spam</h1>
+<p class="wysiwyg-text-align-justify">Unsolicited advertising, disrespectful posts, and other forms of inappropriate content are a widespread problem in Internet forums. Experience shows that the smaller and more personal the community is, and the more experienced the team of moderators is, the less frequent such spam and abuse problems occur. Consequently, they arise only rarely in EFS Panel communities. To enable you to identify and counter any such problem cases in a timely and effective manner, EFS includes a spam reporting function. This allows panelists to report abusive posts themselves; instead of closely monitoring all discussions on the platform or checking all posts before release, you can rely on the community‘s powers of self-organization.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>From any blog, forum, or discussion post, panelists can open a dedicated form and report abusive content.</li>
+<li>You can access and process the abuse reports received in the admin area.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Work steps</strong></p>
+<p class="wysiwyg-text-align-justify">Usage of the report feature involves the following steps:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Preparing the report form for use.</li>
+<li>Processing the abuse reports regularly.</li>
+</ul>
+<h2 id="preparing-the-report-form-for-use" class="wysiwyg-text-align-justify"><strong>Preparing the Report Form for Use</strong></h2>
+<p class="wysiwyg-text-align-justify">In a new standard panel, the abuse reporting process is integrated into the website per default. Blog, forum, and discussion posts contain a <strong>Report</strong> icon. By clicking on this, the panelists can open the report form and enter their abuse report.</p>
+<p class="wysiwyg-text-align-justify">To complete the configuration of the process, please proceed as follows:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>In the website editor, select the appropriate website and language version and open the page “Report post”. It contains a module of type “Send private messages to panelists”.</li>
+<li>Configure the setting options as required. Table 19.36 provides an overview.<br>– The “func_report_form” module template should be selected.<br>– In the “Mail sender” field, enter the wildcard #u_email#: It will be filled with the e-mail address of the panelist who sends the report.<br>– Enter a suitable feedback topic and recipient address.</li>
+</ol>
+<h2 id="processing-abuse-reports" class="wysiwyg-text-align-justify"><strong>Processing Abuse Reports</strong></h2>
+<p class="wysiwyg-text-align-justify">In the <strong>People → Contacts → Reported posts</strong> menu you will find all abuse reports received.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Per default, only the open reports are shown. To display reports with other statuses, please use extended search.</li>
+<li>The tab <strong>Frequently Reported Posts</strong> displays the open reports grouped by target post. I.e. if there are several open reports for a post, you will notice at first glance.</li>
+<li>If a post has been reported repeatedly, you can change the processing status of all these reports en bloc. To do so, open one of the reports, change the status and editor, and add your comment. Then, before Saving, activate the “Batch processing” checkbox. This will ensure that your status change is applied to all reports for the respective target post.</li>
+</ul>
+<h1 id="quick-polls" class="wysiwyg-text-align-justify">Quick Polls</h1>
+<p class="wysiwyg-text-align-justify">So-called polls are a vote on individual questions for which the results are always immediately displayed. Polls can, for example, be integrated into the home page of the panel.</p>
+<p class="wysiwyg-text-align-justify">EFS supports two types of polls: polls for panelists on the one hand, and anonymous polls which allow all visitors of the home page to contribute on the other hand.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify">You can create as many quick polls as required. Please mind, though, that panelist polls, in particular, require considerable server resources, i.e. they may affect the performance of the panel installation: For each participant, an answer must be stored, i.e. for n respondents, n new data records are created. The following guiding values provide orientation:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>It is recommended to run not more than ten active quick polls per language version simultaneously.</li>
+<li>It is recommended to restrict the participation for a quick poll to at most 10,000 participants, e.g. by restricting the field time appropriately.</li>
+</ul>
+<p class

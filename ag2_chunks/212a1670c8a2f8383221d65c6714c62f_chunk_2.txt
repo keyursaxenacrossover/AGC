@@ -1,0 +1,55 @@
+athers general data about question type usage
+Quickpolls/Config/DESCRIPTION:Description:      Gathers general usage data about quickpolls
+Quotations/Config/DESCRIPTION:Description:      Gathers statistical data about project quotations
+Reporting/Config/DESCRIPTION:Description:       Gathers statistical data about the old reporting
+Reportingplus/Config/DESCRIPTION:Description:   Gathers general data about reporting+ usage
+Sinc/Config/DESCRIPTION:Description:    Gathers data about Sinc module in EFS
+Sms/Config/DESCRIPTION:Description:     Gathers statistical data about SMS module in EFS
+Teams/Config/DESCRIPTION:Description:   Gathers data about teams on installation
+Trigger/Config/DESCRIPTION:Description: Gathers statistical data about triggers on the Efs installation
+Useragents/Config/DESCRIPTION:Description:      Gathers all useragents used and deciphers them into OS, Browser and Browserversion
+Users/Config/DESCRIPTION:Description:   Gathers data about EFS Admin users
+Websites/Config/DESCRIPTION:Description:        Gathers data about panel websites
+Wildcards/Config/DESCRIPTION:Description:       Gather statistical data about wildcards used in EFS</code></pre>
+<p> </p>
+<h3 id="header-6">Result of the UsagePM job on the last installation in the Corbox:</h3>
+<ul>
+<li class="media-group"><a href="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21108016359826">efs_usage_data_2023-09-01.csv</a></li>
+</ul>
+<h3 id="header-7">Script to extract data from insts in the Corbox toidentify unsused installations</h3>
+<pre><code class="language-text">#!/bin/bash
+# This script checks all installations in Frankfurt Data center to find zombies
+
+for i in `find /nfs/opst* -maxdepth 1 -mindepth 1 -type d|grep -v "temp"| grep -v unipark| grep -v empty | grep -v "_"` # | head`
+do
+ #echo $i
+ cd $i
+
+active_orgas=$(echo 'select count(*) from admin_contract_org where name not like "QB_%"  and name not like "GP_%" and name != "\(default\)" and contract_end &gt; now();' | efslogin 2&gt;/dev/null | grep -v "(^ERROR)|(cat)|(Could)"| tail -1)
+inactive_orgas=$(echo 'select count(*) from admin_contract_org where name not like "QB_%" and name not like "GP_%" and name != "\(default\)" and contract_end &lt; now();' | efslogin efslogin 2&gt;/dev/null | grep -v "(^ERROR)|(cat)|(Could)"| tail -1)
+
+orga_info=$(echo 'select GROUP_CONCAT(name,",",description,",",contract_start,",",contract_end,",",left(customer_no_globis,15) SEPARATOR ";") from admin_contract_org  where name not like "QB_%" AND name not like "GP_%" and name != "\(default\)"' | efslogin 2&gt;/dev/null | grep -v "(^ERROR)|(cat)|(Could)" | tail -1 )
+
+survey_requests=$(echo 'select count(*) from ospe_time_log where DATE_ADD(log_date, INTERVAL 6 WEEK) &gt; NOW();' | efslogin 2&gt;/dev/null | grep -v "(^ERROR)|(cat)|(Could)"| tail -1)
+
+panel_hits=$( echo 'select count(*) from  panel_sitelog_hits where DATE_ADD(dt_when, INTERVAL 6 WEEK) &gt; NOW() AND uid!=0;' | efslogin 2&gt;/dev/null | grep -v "(^ERROR)|(cat)|(Could)"| tail -1)
+
+logins_by_customers=$(echo 'SELECT count(*) from users,user_att,login_att,admin_user_contract,admin_contract_org WHERE admin_user_contract.uid=users.uid AND admin_user_contract.org = admin_contract_org.id AND users.uid=user_att.uid AND users.uid=login_att.uid AND u_email not like "%servicelayer%" AND DATE_ADD(from_unixtime(lastlogin), INTERVAL 6 WEEK) &gt; NOW() AND name!="(default)" AND name not like "QB_%";' | efslogin 2&gt;/dev/null | grep -v "(^ERROR)|(cat)|(Could)"| tail -1)
+
+logins_by_QB=$(echo 'SELECT count(*) AS "QB_Logins" from users,user_att,login_att,admin_user_contract,admin_contract_org WHERE admin_user_contract.uid=users.uid AND admin_user_contract.org = admin_contract_org.id AND users.uid=user_att.uid AND users.uid=login_att.uid AND u_email not like "%servicelayer%" AND DATE_ADD(from_unixtime(lastlogin), INTERVAL 6 WEEK) &gt; NOW() AND name like "QB_%";' | efslogin 2&gt;/dev/null | grep -v "(^ERROR)|(cat)|(Could)"| tail -1)
+
+
+    echo "$i usage: $survey_requests $panel_hits $logins_by_customers $logins_by_QB $active_orgas $inactive_orgas $orga_info"
+done</code></pre>
+<p> </p>
+<h3 id="header-8">script to get info about number of panelists grouped by status in the Corbox</h3>
+<pre><code class="language-text">#!/bin/bash
+#
+inputfile=$1
+
+
+   while read instpath; do
+
+      if [ -d $instpath ]; then
+         cd "$instpath"
+         gpname=$(grep -o "^\

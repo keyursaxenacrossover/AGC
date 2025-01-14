@@ -1,0 +1,125 @@
+ equal</p>
+</td>
+<td style="width: 162.83px;">
+<p>&gt;=</p>
+</td>
+<td style="width: 401.267px;">
+<p>Greater than or equal to “answer value x”</p>
+</td>
+</tr>
+<tr>
+<td style="width: 170.451px;">
+<p>equal</p>
+</td>
+<td style="width: 162.83px;">
+<p>==</p>
+</td>
+<td style="width: 401.267px;">
+<p>Equal to “answer value x”</p>
+</td>
+</tr>
+<tr>
+<td style="width: 170.451px;">
+<p>less equal</p>
+</td>
+<td style="width: 162.83px;">
+<p>&lt;=</p>
+</td>
+<td style="width: 401.267px;">
+<p>Less than or equal to “answer value x”</p>
+</td>
+</tr>
+<tr>
+<td style="width: 170.451px;">
+<p>less</p>
+</td>
+<td style="width: 162.83px;">
+<p>&lt;</p>
+</td>
+<td style="width: 401.267px;">
+<p>Less than “answer value x”</p>
+</td>
+</tr>
+<tr>
+<td style="width: 170.451px;">
+<p>unequal</p>
+</td>
+<td style="width: 162.83px;">
+<p>!=</p>
+</td>
+<td style="width: 401.267px;">
+<p>Unequal (“answer value x” is excepted)</p>
+</td>
+</tr>
+<tr>
+<td style="width: 170.451px;">
+<p>contains</p>
+</td>
+<td style="width: 162.83px;">
+<p>contains</p>
+</td>
+<td style="width: 401.267px;">
+<p>Used primarily for filtering via texts, see the following notes on coding when filtering via content from the participant administration. Produces all texts that contain the entered text element, for example when filtering for “cd” “abcde” will also be filtered out. Filtering is case sensitive, blank spaces will be regarded as an incorrect entry. Umlauts can be used.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 170.451px;">
+<p>contains any</p>
+</td>
+<td style="width: 162.83px;">
+<p>contains any</p>
+</td>
+<td style="width: 401.267px;">
+<p>Firstly, you can use this condition to check whether an entry contains one of several specified elements. Example: Entering “22” would fulfill the condition “contains any = 11,<strong>22</strong>,33”, whereas entering “123” or “122” would not. Secondly, you can use this condition to identify a specific element in an entry that consists of multiple elements, such as a phone number. Example: Entering “0229-<strong>1234</strong>” would fulfill the condition “contains any = 1234”, whereas entering “0229-12345” would not. Acceptable separators are commas, apostrophes, “- “ and “|”.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 170.451px;">
+<p>matches regex</p>
+</td>
+<td style="width: 162.83px;">
+<p>matches regex</p>
+</td>
+<td style="width: 401.267px;">
+<p>Regular expressions can be used in the filter condition. They must be enclosed in slashes.</p>
+<p>The following check, for example, allows to detect 98% of mobile devices: /Mobile|iP(hone|od|ad)|Android|Black- Berry|IEMobile|Kindle|NetFront|Silk-Accelera- ted|(hpw|web)OS|Fennec|Minimo|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/</p>
+</td>
+</tr>
+<tr>
+<td style="width: 170.451px;">
+<p>in</p>
+<p>(For Employee surveys with EFS Employees)</p>
+</td>
+<td style="width: 162.83px;">
+<p>in</p>
+</td>
+<td style="width: 401.267px;">
+<p>The variable selected must contain the organizational unit named in the “code” field.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 170.451px;">
+<p>in or below</p>
+<p>(For Employee surveys with EFS Employees)</p>
+</td>
+<td style="width: 162.83px;">
+<p>in or below</p>
+</td>
+<td style="width: 401.267px;">
+<p>The variable selected must contain either the unit named in the “code” field or one of its subunits.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 170.451px;">
+<p>in branch</p>
+<p>(For Employee surveys with EFS Employees)</p>
+</td>
+<td style="width: 162.83px;">
+<p>in branch</p>
+</td>
+<td style="width: 401.267px;">
+<p>The variable selected must contain either the unit named in the “code” field or any other unit from the complete branch (from the root unit down to the lowest level). This operator is usually not used for routing purposes in the questionnaire but for report definitions.</p>
+</td>
+</tr>
+</tbody>
+</table

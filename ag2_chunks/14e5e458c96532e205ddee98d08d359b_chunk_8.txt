@@ -1,0 +1,43 @@
+ to master. Only values &gt; 0 are used, if you want endless timeout use $__dbslave["force"] flag.</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 15.536%;">array ( 'dbhost' =&gt; '', 'dbuser' =&gt; '', 'dbpasswd' =&gt; '', 'dbport' =&gt; 0, 'dbsocket' =&gt; '', 'force' =&gt; false, 'master_fallback_timeout' =&gt; 0, )</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;"> </td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;"> </td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">debuglevel</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">controls debug output</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;">0= Live installation (no debug output) 1=Development installation (debug output) 2=Test installation (output of some information)</td>
+<td style="padding: 2px 3px; vertical-align: middle; text-align: right; width: 15.536%;">2</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;">no</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;">no</td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">debug_memcache_read</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">debug memcache read access, all values will be written to mysql log</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;">false, true</td>
+<td style="padding: 2px 3px; vertical-align: middle; text-align: center; width: 15.536%;">FALSE</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;"> </td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;"> </td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">debug_memcache_write</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">debug memcache write access, all values will be written to mysql log</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;">false, true</td>
+<td style="padding: 2px 3px; vertical-align: middle; text-align: center; width: 15.536%;">TRUE</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;"> </td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;"> </td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">debug_webservices</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">write incoming xml into mysql log?</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;">false, true</td>
+<td style="padding: 2px 3px; vertical-align: middle; text-align: center; width: 15.536%;">FALSE</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 1.29816%;"> </td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 0.41876%;"> </td>
+</tr>
+<tr style="height: 21px;">
+<td style="padding: 2px 3px; vertical-align: middle; width: 11.0134%;">demo_teaser_url</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 32.9564%;">URL for demo teaser used by demo dialog. e.g "<a class="in-cell-link" href="#" target="_blank" rel="noopener noreferrer">https://pm.customervoice360.com/uc/pop/?"</a>
+</td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 37.1859%;"> </td>
+<td style="padding: 2px 3px; vertical-align: middle; width: 15.536%;">h<a class="in-cell-link" href="#" target="_

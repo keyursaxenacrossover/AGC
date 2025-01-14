@@ -1,0 +1,81 @@
+ are displayed. To configure the Task List, proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Select a<strong> Heading</strong> for the page module.</p>
+</li>
+<li>
+<p>Select the <strong>Employee target project</strong> containing the tasks to be shown in the list display.</p>
+</li>
+<li>
+<p>Using the checkbox “Users can create new tasks”, you can control if users can create new tasks or not. To do so, check or uncheck the box.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">To create new tasks, responsible persons need to have at least the rights of the standard Owner role.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Define the <strong>number of tasks</strong> to be displayed on one page.</p>
+</li>
+<li>
+<p>Define how many days before the expiration of a task a reminder will be sent out for a <strong>warning</strong>.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The expiration warning is set to one day by default.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Optionally, you can add additional fields to tasks. For this purpose, click on the button + <strong>Select field</strong> below <strong>Field‘s order</strong>, select additional fields from the dropdown list, and confirm each selection by clicking the green check. You can adapt the order of displayed fields with the arrows on the right. With the trash icon, you can delete added fields again.</p>
+</li>
+<li>
+<p>Confirm your information by clicking on the button <strong>Publish</strong>.</p>
+</li>
+<li>
+<p>Activate the online button to publish your <em>Task List</em> page.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The configuration of the <em>Task List</em> is completed. In case you want to delete the page module <em>Task List</em> again, click on the trash icon and in the confirmation dialog on the button <strong>Delete</strong>.</p>
+<p class="wysiwyg-text-align-justify"><strong>Notes:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Fields added via the Task List configuration area will be shown in the list display of tasks.</p>
+</li>
+<li>
+<p>These selectable fields are displayed through the variables in the variable editor of the Action Planner configuration. Here, you can create and add any variables to the standard variables.</p>
+</li>
+<li>
+<p>To hide self-created variables in the configuration and exterior view of the Task List, set the setting “Show the content of this variable” to “no”.</p>
+</li>
+<li>
+<p>The adaptable order of variables in the variable editor determines the order of variables displayed in the detail view and the editing mode of tasks in the exterior view of <em>Portals.</em></p>
+</li>
+</ul>
+<h3 id="allocating-rights" class="wysiwyg-text-align-justify"><strong>Allocating rights</strong></h3>
+<p class="wysiwyg-text-align-justify">In the comment area in the detail view of tasks, responsible persons can leave notes, images, and videos while editing tasks. To enable responsible persons to create, edit, or delete comments, they need the respective rights beforehand.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>To allocate comment rights, navigate via the following path to the Rights administration of the role you want to allocate rights:</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">[Selected project] → <strong>Process configuration</strong> → tab <strong>Roles</strong> →<strong> Paragraph icon of the respective role</strong> → <strong>Rights administration</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>To allocate the right of creating comments to tasks and editing and deleting own comments:</p>
+<ul>
+<li>
+<p>check the box in the row “actionplanner_comment_create” of the section <strong>Follow Up - Action Planner</strong>.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>To allocate the right to edit or delete any comment to tasks:</p>
+<ul>
+<li>
+<p>check the box in the row “actionplanner_comment_moderate” of the section <strong>Follow Up - Action Planner</strong>.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Confirm with<strong> Save</strong>.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">You have allocated the comment rights to responsible persons in their respective roles.</p>
+<p class="wysiwyg-text-align-justify"><strong>Allocating access right to survey results</strong></p>
+<p class="wysiwyg-text-align-justify">If a task was created by the <em>Task Trigger</em>, a survey link is created in the detail view of this task routing to the results of the respective survey participation. The responsible user of this task has the possibility to open the survey link by clicking on the form icon in the detail view and to access the survey results of the participants. The form icon is not displayed in the detail view by default. To activate the icon and to make it visible for responsible persons, they need the right of accessing survey results

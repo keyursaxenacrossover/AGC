@@ -1,0 +1,21 @@
+'s best to explicitly define allowed sources in the CSP.</p>
+<p>For more detailed information on Content Security Policy, refer to the Mozilla Developer Network documentation: <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy</a></p>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq_1">What happens if I don't set a Content Security Policy?</h3>
+<p>If you leave the Content-Security-Policy field empty, EFS will not send a CSP header, and all sources will be allowed to load. However, this is not recommended from a security standpoint.</p>
+<h3 id="faq_2">Why does my custom code fail to load external resources?</h3>
+<p>If your custom code is trying to load resources from external domains not specified in the CSP, the browser will block these resources. You need to update the CSP to include these external domains explicitly.</p>
+<h3 id="faq_3">Can I use different CSP settings for different surveys?</h3>
+<p>Yes, you can set different CSP configurations for each survey by modifying the "Content-Security-Policy" field in the survey's security settings.</p>
+</article>'s best to explicitly define allowed sources in the CSP.</p>
+<p>For more detailed information on Content Security Policy, refer to the Mozilla Developer Network documentation: <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy</a></p>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq_1">What happens if I don't set a Content Security Policy?</h3>
+<p>If you leave the Content-Security-Policy field empty, EFS will not send a CSP header, and all sources will be allowed to load. However, this is not recommended from a security standpoint.</p>
+<h3 id="faq_2">Why does my custom code fail to load external resources?</h3>
+<p>If your custom code is trying to load resources from external domains not specified in the CSP, the browser will block these resources. You need to update the CSP to include these external domains explicitly.</p>
+<h3 id="faq_3">Can I use different CSP settings for different surveys?</h3>
+<p>Yes, you can set different CSP configurations for each survey by modifying the "Content-Security-Policy" field in the survey's security settings.</p>
+</article>

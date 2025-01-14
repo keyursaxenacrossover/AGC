@@ -1,0 +1,43 @@
+ data-renderer-start-pos="7547">To ensure uninterrupted email delivery, we recommend immediate action on the following key points:</p>
+<ol>
+<li>
+<p data-renderer-start-pos="7650"><strong data-renderer-mark="true">Authenticate your sending domain:</strong> Utilize DKIM and SPF to authenticate your sending domain properly.</p>
+</li>
+<li>
+<p data-renderer-start-pos="7754"><strong data-renderer-mark="true">Set up DMARC:</strong> Implement DMARC to prevent unauthorized entities from impersonating your domain and sending emails.</p>
+</li>
+<li>
+<p data-renderer-start-pos="7871"><strong data-renderer-mark="true">Maintain a low spam complaint rate:</strong> Regularly monitor and manage your spam complaint rate to ensure it remains within acceptable limits.</p>
+</li>
+</ol>
+<p data-renderer-start-pos="7871"><span style="color: #2f3941;">While Tivian manages numerous best practices on your behalf, as the domain owner or customer overseeing email communication, there are specific actions you need to take. We have conducted assessments on the sender domains associated with your account and identified areas that require attention.</span></p>
+<p data-renderer-start-pos="8311">Please have your technical team review the following domains and promptly implement the specified updates to avoid potential issues:</p>
+<p data-renderer-start-pos="8445"><strong data-renderer-mark="true"><u data-renderer-mark="true">Domain:</u></strong> ……..</p>
+<ol class="ak-ol" start="1" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="8463">Add / include the following Tivian SPF Domain to your SPF record: include:</p>
+</li>
+</ol>
+<p data-renderer-start-pos="8541"><a class="cc-1rn59kg" title="https://linkprotect.cudasvc.com/url?a=https%3a%2f%2f_spf.tivian.com&amp;c=E,1,yXayyiC6fFZOLr2Nt_5f31vc_GQetgTa5zSKKGfRvgxH6grcHXsvNnzufM9-Gbg1SuJtA9ZGuMnw-pFNjgXXXmLygE1-zFjumej-sqIk_e30&amp;typo=0&amp;ancr_add=1" href="https://linkprotect.cudasvc.com/url?a=https%3a%2f%2f_spf.tivian.com&amp;c=E,1,yXayyiC6fFZOLr2Nt_5f31vc_GQetgTa5zSKKGfRvgxH6grcHXsvNnzufM9-Gbg1SuJtA9ZGuMnw-pFNjgXXXmLygE1-zFjumej-sqIk_e30&amp;typo=0&amp;ancr_add=1" data-testid="link-with-safety" data-renderer-mark="true">_spf.tivian.com</a></p>
+<ol class="ak-ol" start="1" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="8560">Add the DNS record for DKIM: if not already setup, please request specific DKIM keys from domains from our support team:</p>
+</li>
+</ol>
+<p data-renderer-start-pos="8685"><a class="cc-1rn59kg" title="mailto:support@tivian.com" href="mailto:support@tivian.com" data-testid="link-with-safety" data-renderer-mark="true">support@tivian.com</a></p>
+<ol class="ak-ol" start="1" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="8707">Add the DNS record for DMARC: again, please request this from our support team:</p>
+</li>
+</ol>
+<p data-renderer-start-pos="8791"><a class="cc-1rn59kg" title="mailto:support@tivian.com" href="mailto:support@tivian.com" data-testid="link-with-safety" data-renderer-mark="true">support@tivian.com</a></p>
+<p data-renderer-start-pos="8811">Upon completing the necessary changes, kindly raise a support ticket with our team to confirm the adjustments for each domain have been made.</p>
+<p data-renderer-start-pos="8954">Should you encounter any difficulties or have questions, please don't hesitate to raise a support ticket in the usual manner. We are here to assist you throughout this process.</p>
+<p data-renderer-start-pos="9132">Your prompt attention to these updates is crucial for maintaining seamless email delivery. We appreciate your cooperation in ensuring the continued success of your email communications.</p>
+</blockquote>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq1">What is SPF and how do I implement it?</h3>
+<p>SPF (Sender Policy Framework) is an email authentication method that specifies which mail servers are authorized to send emails on behalf of your domain. To implement SPF, add the following record to your domain's DNS settings: <code>include:_spf.tivian.com</code></p>
+<h3 id="faq2">How can I check if my domain has a DKIM record?</h3>
+<p>You can check for a DKIM record by using the MX Toolbox

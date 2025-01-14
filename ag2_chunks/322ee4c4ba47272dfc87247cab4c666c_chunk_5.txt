@@ -1,0 +1,28 @@
+/article_attachments/20998346635666" alt="Record.png"></p>
+<p><u>Consent messages</u></p>
+<p>In order to be able to maintain the labels of the Consent form centrally, you can also find the "GDPR Consent Messages" section on the page by clicking on the drop-down arrow when you click on the Consent form in the questionnaire editor. There you enter the corresponding labels in the selected language, which can then be seen in the questionnaire view.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998303163282" alt="Consent messages.png"></p>
+<p><u>Privacy Options</u></p>
+<p>In the section "Privacy information" you will find three radio buttons that allow you to decide, depending on the project requirement, whether you want to create a Consent form and Privacy notice, a consent form only or a Privacy notice only. The selection made regulates which of the fields appear in the questionnaire view and can be filled in.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998357754642" alt="image2018-10-25_14-30-22.png"></p>
+<p><u>Overview of the languages</u></p>
+<p>In the People module, under the "Panel configuration" menu item, you have a language overview so that you can quickly check in which languages the Consent form has already been created.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998350844818" alt="Languages.png"></p>
+<h3 id="header-24">Activities logs and ACL rights</h3>
+<p>If you have been assigned to a team that has read and/or write access to the gdpr_activites logs and gdpr_purpose templates, you can find the GDPR activities logs menu item under <strong>Documentation</strong>, <strong>Master Data</strong> and <strong>Consent form templates</strong>. In addition, under GDPR activity logs a table is available which informs you about GDPR activities by means of the columns "Data", "Actions", "User" and "Log entry". The table is also displayed in the <em>People</em> module.</p>
+<p><u>Read and write permissions for the template of the Consent form</u></p>
+<p>The new <em>gdpr_purpose_templates</em> right, which you tick in <strong>Options</strong> under the menu item "Team rights", allows you to control access to the templates of the Consent form by assigning read and write rights. The Team that obtains the write permission can create, edit, copy, delete, import and export templates. The team that that obtains the read permission can read and export the created Consent form.</p>
+<h3 id="header-25">GDPR: Webservices</h3>
+<p>Two new web services for GDPR are now available. This can be used to create and retrieve a consent form. </p>
+<h2 id="header-27">Report Manager</h2>
+<h3 id="header-29">Direct Report Node and Direct Report Filter</h3>
+<p><u>Direct Report Node</u></p>
+<p>It was previously not possible to directly access the root units aggregating all values of the subunits. If, for example, you now want to display the response rate for a root node, simply take the <em>Direct report node</em> from the organizational structure in the first step of the report ordering process to set it as the focus unit.</p>
+<p>Direct report nodes that you use in the first step of the report ordering process (selecting the focus unit) are activated via the configuration that precedes each <em>Report Manager</em> project in order to make available in a report the values of a root unit that only belong to this root unit.</p>
+<p><u>Direct Report Filter</u></p>
+<p>You can also use filters to create <em>Direct report nodes</em>. You create these filters in two places. You use the <em>Direct reports</em> filter, which can be applied to each mapping cell, to filter individual mappings when creating a report definition in such a way that root units are available without the values of the subunits. In the third step of ordering the report, determining the general filter conditions, you also use the <em>Direct reports</em> filter to apply it to all root nodes of the selected report definition.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998351025426" alt="Direct reports.png"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998358487314" alt="Direct reports 2.png"></p>
+<h3 id="header-30">The Overview sub-navigation</h3>
+<p>The new <strong>Overview</strong> sub-navigation has been set up in the configuration area of the <em>Report Manager</em>. You mainly use the overview to centrally control the copying of elements of an available Report definition. In this way, you use slide switches to specify whether mappings, page conditions, dataspace entities, collections, and settings are to be copied from all Report definitions.</p>
+<p>As soon as you click on the <strong>Copy</strong> button, the Inspector opens and lists the Report definitions created on the installation, from which you can copy mapping, page conditions, Dataspace entities, Collections and settings.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998364620434"

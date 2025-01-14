@@ -1,0 +1,137 @@
+="wysiwyg-text-align-justify">
+<p>Instruction for incomplete questionnaire processing</p>
+</td>
+<td class="wysiwyg-text-align-justify">
+<p>Text displayed if a normal DAC is triggered for a question.</p>
+</td>
+<td class="wysiwyg-text-align-justify">
+<p>Therefore, please please fill in the following questions.</p>
+</td>
+</tr>
+<tr>
+<td class="wysiwyg-text-align-justify">
+<p>Error message for invalid answers to questions with exclusive answer categories</p>
+</td>
+<td class="wysiwyg-text-align-justify">
+<p> </p>
+</td>
+<td class="wysiwyg-text-align-justify">
+<p>You have given an ambiguous answer. Please correct your answer.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="messages-for-type-checks" class="wysiwyg-text-align-justify"><strong>Messages for type checks</strong></h2>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default">
+<colgroup> <col style="width: 256.0px;"> <col style="width: 263.0px;"> <col style="width: 241.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center">
+<p>Message</p>
+</th>
+<th class="wysiwyg-text-align-center">
+<p>Meaning</p>
+</th>
+<th class="wysiwyg-text-align-center">
+<p>English default message</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Type check: Introductory text for type check</p>
+</td>
+<td>
+<p>Introductory text</p>
+</td>
+<td>
+<p>Your statements do not have the correct format</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Type check: Incorrectly answered questions</p>
+</td>
+<td>
+<p>Introduction to a list of the questions that have been filled in incorrectly.</p>
+</td>
+<td>
+<p>Please fill in the following questions correctly:</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Type check: Error message<br>for invalid entry (e-mail address)</p>
+</td>
+<td>
+<p>Will be output if the entry is not a valid e-mail address.</p>
+</td>
+<td>
+<p>Please enter a valid e-mail address</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Type check: Error message<br>for invalid entry<br>(integer</p>
+</td>
+<td>
+<p>Will be output if the entry is not an integer.</p>
+</td>
+<td>
+<p>Please enter whole numbers only.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Type check: Error message<br>for invalid entry (float)</p>
+</td>
+<td>
+<p>Will be output if the entry is not a floating point number.</p>
+</td>
+<td>
+<p>Please enter decimals only.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Type check: Error message for invalid entry (letters only)</p>
+</td>
+<td>
+<p>Will be output if the entry does not contain letters only.</p>
+</td>
+<td>
+<p>Please enter letters only.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Type check: Error message<br>for invalid entry (phone number)</p>
+</td>
+<td>
+<p>Will be output if the entry does not correspond to one of the commonly used formats for phone numbers, i.e. the entry may begin with one or more + signs, but after that, a sequence of numbers is expected. You have the option of grouping these into blocks using brackets or interrupting them with blank spaces, hyphens, or slashes.</p>
+<p>The regular expression is as follows:</p>
+<p>/<br>^((\d+\s*)?\+{1,3}\s*)?(\(\d+\)|\d+)([\s-\/]?\d+)*$/</p>
+</td>
+<td>
+<p>Please enter a valid phone number.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="messages-for-plausibility-checks" class="wysiwyg-text-align-justify"><strong>Messages for plausibility checks</strong></h2>
+<table class="wysiwyg-text-align-justify" style="height: 555px;" border="1" data-layout="default">
+<colgroup> <col style="width: 183.0px;"> <col style="width: 314.0px;"> <col style="width: 263.0px;"> </colgroup>
+<tbody>
+<tr style="height: 22px;">
+<th class="wysiwyg-text-align-center" style="height: 22px; width: 168.594px;" data-highlight-colour="#57d9a3">
+<p><strong>Message</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="height: 22px; width: 280.99px;" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="height: 22px; width: 240.035px;" data-highlight-colour="#57d9a3">
+<p><strong>English default message</strong></p>
+</th>
+</tr>
+<tr style="height: 67px;">
+<td style="height: 67px; width: 160.573px;">
+<p>PHP plausibility

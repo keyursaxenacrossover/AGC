@@ -1,0 +1,32 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3325591573">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/3325591573</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">[1] Admin user migration? (default)</a></li>
+<ul>
+<li><a href="#header-3">[2] Portal migration?</a></li>
+<li><a href="#header-4">[3] Admin users activation?</a></li>
+<li><a href="#header-5">[4] Portal ClientGroup migration?</a></li>
+<li><a href="#header-6">[5] User ClientGroup migration?</a></li>
+<li><a href="#header-7">[6] Convert admin user from questback.com to tivian.com domain</a></li>
+<ul>
+<li><a href="#header-9">[0] Back</a></li>
+<li><a href="#header-10">[1] List questback.com users</a></li>
+<li><a href="#header-11">[2] List tivian.com users</a></li>
+<li><a href="#header-12">[3] List conflicts</a></li>
+<li><a href="#header-13">[4] Convert</a></li>
+</ul>
+<li><a href="#header-15">[7] Convert panelists from questback.com to tivian.com domain</a></li>
+<ul>
+<li><a href="#header-17">[0] Back</a></li>
+<li><a href="#header-18">[1] List http://questback.com  users</a></li>
+<li><a href="#header-19">[2] List http://tivian.com  users</a></li>
+<li><a href="#header-20">[3] List conflicts</a></li>
+<li><a href="#header-21">[4] Convert</a></li>
+</ul>
+<li><a href="#header-23">[8] Portal update (e.g. update redirects after creation of new domain-alias)</a></li>
+<li><a href="#header-24">[9] Exit</a></li>
+</ul>
+</ul>
+</ul><p>Start the migration script as follow:</p><p>php support/iam/migration.php</p><p></p><p>What do you want to do?</p><h1 id="header-1">[1] Admin user migration? (default)</h1><p>{code:sql}<br>SELECT u.uid as id, u.u_firstname as first_name, u.u_name as last_name, u.u_email as email<br>FROM users u LEFT JOIN iam_user_reference iur ON u.uid = iur.user_id<br>WHERE <a href="http://iur.id">iur.id</a> IS NULL AND u.u_account != "root"'<br>{code}<br>-&gt; get all systsm Users (without root)<br>-&gt; if user not exists on OKTA =&gt; crate with Status STAGED<br>-&gt; if user exists on OKTA and the status!= DEPROVISIONED =&gt; status will be set to STAGED<br>-&gt; user reference will be saved in DB</p><h2 id="header-3">[2] Portal migration?</h2><p>{code:sql}<br>SELECT p.* FROM portals p<br>LEFT JOIN iam_portal_settings ips ON <a data-card-appearance="inline" href="http://p.id">http://p.id</a>  = ips.portal_id<br>WHERE ips.portal_id IS NULL<br>{code}<br>-&gt; get all portals that are not in iam_portal_settings Table<br>-&gt; create application on okta and save reference portal_id to Okta client_id</p><h2 id="header-4">[3] Admin users activation?</h2><p>{code:sql}<br>SELECT iur.user_id, iur.uuid as id, u.u_firstname as first_name, u.u_name as last_name, u.u_email as email<br>FROM users u LEFT JOIN iam_user_reference iur ON u.uid = iur.user_id<br>WHERE u.u_account != "root" AND iur.idp_status = 'STAGED'<br>{code}<br>-&gt; all admin user that are stored in iam_user_reference  with status STAGED<br>-&gt; every user will be activated on okta with the option to send E-Mail to User</p><h2 id="header-5">[4] Portal ClientGroup migration?</h2><p>{code:sql}<br>SELECT p.*, ips.value AS client_id FROM portals p<br>LEFT JOIN iam_portal_settings ips ON p.id=ips.portal_id<br>WHERE ips.portal_id IS NOT NULL<br>{code}<br>-&gt; search in iam_portal_settings  Tabelle for all existing portal application on okta side<br>-&gt; in every application remove the group 'everyone' and add the group iam_client_group_id</p><h2 id="header-6">[5] User ClientGroup migration?</h2><p>{code:sql}<br>SELECT uuid<br>FROM iam_user_reference<br>UNION<br>SELECT uuid<br>FROM iam_portal_user_reference<br>{code}<br

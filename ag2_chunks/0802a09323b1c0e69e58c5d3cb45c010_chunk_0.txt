@@ -1,0 +1,27 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K" class="wysiwyg-text-align-justify">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article provides a comprehensive guide on how to create and manage Guides in the Tivian platform. It covers the setup, configuration, and execution of different types of guides, including Leadership Guides, Team Improvement Guides, and Ideation Guides.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">Guides are powerful tools used to send ready-made surveys to groups or participants and manage actions based on the results. This article will walk you through the process of setting up guides, configuring various options, and initiating guide processes.</p>
+<ul>
+<li><a href="#prerequisites">Prerequisites</a></li>
+<li><a href="#creating-a-guide-process">Creating a Guide Process</a></li>
+<li><a href="#configuration-of-the-portals-page-modules">Configuration of the Portals Page Modules</a></li>
+<li><a href="#initiating-the-guide-process">Initiating the Guide Process</a></li>
+</ul>
+<h2 id="prerequisites" class="wysiwyg-text-align-justify"><strong>Prerequisites</strong></h2>
+<p class="wysiwyg-text-align-justify">Two things are necessary to implement a guide project. First, you have to connect the guide project to a <em>Personalized Survey</em>. Second, you have to activate this survey.</p>
+<h3 id="connecting-a-pe-project-to-a-guide" class="wysiwyg-text-align-justify"><strong>Connecting a PE project to a guide</strong></h3>
+<p class="wysiwyg-text-align-justify">Open <em>Projects</em> → {selected project} → <em>Survey Menu</em> → <em>Project Properties</em> → <em>Template Configuration</em>. You have to select <strong>Guides</strong> to specify the usage.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015166732434" alt="Template Configuration.png"></p>
+<p class="wysiwyg-text-align-justify">Click the <strong>Save</strong> button.</p>
+<h3 id="activating-the-pe-project" class="wysiwyg-text-align-justify"><strong>Activating the PE project</strong></h3>
+<p class="wysiwyg-text-align-justify">You have to activate the selected PE project. Change the project status by clicking on <strong>Active</strong>.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015136677394" alt="Survey Menu.png"></p>
+<h3 id="creating-the-survey-for-the-idea-guide" class="wysiwyg-text-align-justify"><strong>Creating the survey for the IDEA-Guide</strong></h3>
+<p class="wysiwyg-text-align-justify">You can use the <em>Suggestions</em> question type to create an <em>Ideation Guide</em> survey. If you use this question type, you will have to specify the <em>Ideation Trigger</em>. Due to this trigger, the suggestions made in the <em>v</em> survey will be transferred to the <em>Voting</em> page module of <em>Portals</em>.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015136673810" alt="Ideation Trigger.png"></p>
+<p class="wysiwyg-text-align-justify">On the<strong> Settings</strong> tab, you assign a name, write a short description, select an execution position, and the conditions. On the <strong>Detail Configuration</strong> tab, you select the source question. The answers of these questions made by the participants will be sent to the <em>Voting</em> page module of Portals. You have to click on <strong>Save</strong>.</p>
+<p class="wysiwyg-text-align-justify"><em><strong>Please Note: To unlock the Ideation Trigger, </strong>you have to connect the PE project to your guide and activate the PE project. Once the portal and guides are created, Go to <strong>Portals &gt;&gt; Portal &gt;&gt; Guides &gt;&gt; Guide &gt;&gt; Questionaire</strong>, On the Questionnaire tab of the Guides sub-navigation, you must also select the Ideation Guide survey and click on the Save button.</em></p>
+<p class="wysiwyg-text-align-justify"><em><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015166733970"></em></p>
+<h3 id="multilingualism" class="wysiwyg-text-align-justify"><strong>Multilingualism</strong></h3>
+<p class="wysiwyg-text-align-justify">It is possible to send the guide survey and the e-mails in the languages preferred by the participants. You have to specify the <strong>Locale</strong> option. You have to switch to the <strong>Participants Administration</strong>. The

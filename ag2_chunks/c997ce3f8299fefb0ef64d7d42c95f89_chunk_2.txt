@@ -1,0 +1,56 @@
+(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="226.67">
+<p data-renderer-start-pos="845">Checks a variable using a freely definable RegEx.<br>Returns “true” if the expression was not successful.</p>
+</td>
+</tr>
+<tr>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="226.67">
+<p data-renderer-start-pos="953">OnlyNumbers check</p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="226.67">
+<p data-renderer-start-pos="974">Variable</p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="226.67">
+<p data-renderer-start-pos="986">Checks whether a variable contains only numbers,<br>comma and period.</p>
+</td>
+</tr>
+<tr>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="226.67">
+<p data-renderer-start-pos="1058">Range check old</p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="226.67">
+<p data-renderer-start-pos="1077">Variable, “int” from,<br>“int” to</p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="226.67">
+<p data-renderer-start-pos="1111">Checks whether the value of the variable is a number<br>outside the range between two values.</p>
+</td>
+</tr>
+<tr>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="226.67">
+<p data-renderer-start-pos="1207">Combination check</p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="226.67">
+<p data-renderer-start-pos="1228">Variable, “int”</p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="226.67">
+<p data-renderer-start-pos="1247">For questions with multiple response lists, checks<br>whether the required number of checkboxes has been<br>ticked.</p>
+</td>
+</tr>
+<tr>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="226.67">
+<p data-renderer-start-pos="1362">Combination check<br>(range)</p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="226.67">
+<p data-renderer-start-pos="1391">Variable, “int” from,<br>“int” to</p>
+</td>
+<td style="padding: var(--ds-space-100,8px); text-align: left; vertical-align: top;" colspan="1" rowspan="1" data-colwidth="226.67">
+<p data-renderer-start-pos="1425">For questions with multiple response lists, checks<br>whether the number of checkboxes ticked is within a<br>preset range.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="sentinel-right"> </div>
+</div>
+</div>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="1546"><br><strong data-renderer-mark="true">Range check</strong><br>The range check checks whether the number entered by the survey participant is within the number range you set. Otherwise, the plausibility check will be triggered and report an error. For this, the preset limits are included in the permissible range of values. The check also works with negative numbers.</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="1866">If you set up a range check to do a JavaScript plausibility check or a combined PHP plausibility check, please note: JavaScript gives a value of “0” to an empty string (nothing entered). That is, if a respondent enters nothing, it will not be seen as an incorrect entry, rather it will be given a value of “0”, which is either permitted or prohibited depending on how each area is defined. In order to prevent this kind of misevaluation, please run a separate OnlyNumbers check (do not use AND conjunctions with the Range check) on the input field.</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="2416"><strong data-renderer-mark="true">E-Mail address check</strong><br

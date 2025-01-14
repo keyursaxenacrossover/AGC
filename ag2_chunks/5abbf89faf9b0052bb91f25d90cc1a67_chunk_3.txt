@@ -1,0 +1,106 @@
+33429-76fb-4a55-ab18-a61bb330a420">Alternative</ac:inline-comment-marker></ac:inline-comment-marker></strong><ac:inline-comment-marker ac:ref="bb2b1626-ae1b-4125-b32a-5f3147730625"><ac:inline-comment-marker ac:ref="e8f33429-76fb-4a55-ab18-a61bb330a420">: user changes from AD are pushed to SSO provider</ac:inline-comment-marker></ac:inline-comment-marker></p>
+<p></p>
+<h4 id="header-18">Application / SSO provider changes</h4>
+<p>In case user data are changed in one application, these are synced to SSO provider <strong>or</strong> in case changes occur in SSO provider data are synced to application BUT</p>
+<ul>
+<li><p>No data sync occurs to AD (Sync Downwards)</p></li>
+<li>
+<p>Customer needs to update data also in one application, </p>
+<ul><li><p>otherwise when user logs out and logs in application again: AD data sync to SSO provider overwrites the application changes again</p></li></ul>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><p><strong>W7</strong></p></td>
+<td><h2 id="header-21">Federation - Delete</h2></td>
+<td>
+<h3 id="header-23">Deletion in AD</h3>
+<p>When user is deleted within AD nothing happens in SSO provider, since system doesn'<br>t get any information</p>
+<ul><li><p>Customer needs to delete data from any single application</p></li></ul>
+<p></p>
+<h4 id="header-25">Deletion in application</h4>
+<p>see above and AD is untouched</p>
+<p></p>
+<h4 id="header-26">Deletion in SSO provider</h4>
+<p>see above and AD is untouched</p>
+</td>
+</tr>
+<tr>
+<td><p><strong>W8</strong></p></td>
+<td><h2 id="header-29">Login mask</h2></td>
+<td><ul>
+<li>
+<p>The Tivian Access Login would contain two input fields</p>
+<ul>
+<li><p>E-mail address</p></li>
+<li><p>PW</p></li>
+<li><p>Forgot PW link</p></li>
+</ul>
+</li>
+<li>
+<p>For inactive session:</p>
+<ul>
+<li>
+<p><strong>Homerealm Discovery page</strong>: In case user enters application url manually he needs to enter his mail address</p>
+<ul>
+<li><p>user is forwarded to the external AD</p></li>
+<li><p>otherwise password needs to be entered </p></li>
+</ul>
+</li>
+<li><p>In case user accesses the application URL via <strong>activation </strong>mail, the email address woul be <strong>prefilled </strong>and cannot be edited</p></li>
+<li><p>In case a wrong PW is entered, an error message appears</p></li>
+</ul>
+</li>
+<li><p>In case of active session login mask is not shown, ie user logs directly into application </p></li>
+</ul></td>
+</tr>
+<tr>
+<td><p><strong>W9</strong></p></td>
+<td><h2 id="header-30">Forgot Password</h2></td>
+<td>
+<p>When user clicks on the link on Login mask </p>
+<ul>
+<li><p>he gets a confirmation message that he will receive a mail</p></li>
+<li><p>he gets a pw recovery mail from SSO provider with a link</p></li>
+<li><p>when clicking on the link he is forwarded to a page where he can set a new password</p></li>
+<li><p>once he confirms the password he is directly logged in the application</p></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><p><strong>W10</strong></p></td>
+<td><h2 id="header-31">Multifactor Authentication</h2></td>
+<td><ul>
+<li><p>Enable MFA option in SSO provider</p></li>
+<li><p>Derive workflow from provider</p></li>
+<li>
+<p>Ideal workflow: see Okta MFA</p>
+<ul>
+<li><p>… </p></li>
+<li><p>E-mail</p></li>
+<li><p>App</p></li>
+<li><p>Biometrie</p></li>
+</ul>
+</li>
+</ul></td>
+</tr>
+<tr>
+<td><p><strong>W11</strong></p></td>
+<td><h2 id="header-32">Logout</h2></td>
+<td><p>In case user logs out from one application he will also be logged out from all other applications directly, ie session is killed (token expires)</p></td>
+</tr>
+<tr>
+<td><p><strong>W12</strong></p></td>
+<td><h2 id="header-33">Registration</h2></td>
+<td><ul>
+<li>
+<p>User registers in <strong>application </strong>with his data</p>
+<ul>
+<li><p>name</p></li>
+<li><p>first name</p></li>
+<li><p>mail</p></li>
+<li><p>(acccount name)</p></li>
+</ul>
+</li>
+<li><

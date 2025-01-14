@@ -1,0 +1,143 @@
+ul>
+<h3 id="messages" class="wysiwyg-text-align-justify"><strong>Messages</strong></h3>
+<p class="wysiwyg-text-align-justify">On the <strong>Messages</strong> tab, you can edit the messages used on the download platform and create additional messages. The messages are integrated into the download platform by inserting the respective wildcards into Smarty templates, the same way as it is done in the <em>EFS Survey</em>.</p>
+<p class="wysiwyg-text-align-justify"><strong>Display</strong></p>
+<p class="wysiwyg-text-align-justify">In multilingual projects, you can choose to edit the messages of one language version or all language versions at the same time. To do so, select the language required in the “Language selection” section and confirm with <strong>Edit language</strong>.</p>
+<p class="wysiwyg-text-align-justify">Creating a message</p>
+<p class="wysiwyg-text-align-justify">Open the dialog for creating a new message by clicking on <strong>Create message</strong>. After entering the data, click on <strong>Save</strong>.</p>
+<h3 id="structure" class="wysiwyg-text-align-justify"><strong>Structure</strong></h3>
+<p class="wysiwyg-text-align-justify">On the <strong>Structure</strong> tab, you can edit the templates of the download platform. One set of templates is available per language version. The templates are the same sort of Smarty templates that you might know from the Pro editor. Please follow the same rules when editing them. For detailed documentation on Smarty, please see <a href="http://www.smarty.net">http://www.smarty.net.</a></p>
+<p class="wysiwyg-text-align-justify">Overview of the templates</p>
+<p class="wysiwyg-text-align-justify">The overview lists the templates of the language selected. For each template, the following information is provided:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Template</p>
+</li>
+<li>
+<p>File</p>
+</li>
+<li>
+<p>Size</p>
+</li>
+<li>
+<p>Last modification</p>
+</li>
+<li>
+<p>Modified by</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The following actions are available:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Todo</strong>: Clicking the<strong> Todo</strong> icon opens a pop-up window that can be used to annotate the respective template. If a note has been saved, the icon is highlighted.</p>
+</li>
+<li>
+<p><strong>Edit</strong>: Opens the edit dialog.</p>
+</li>
+<li>
+<p><strong>Copy</strong>: You can copy an existing template.</p>
+</li>
+<li>
+<p><strong>Delete</strong>: The default templates can not be deleted. User-defined templates can be deleted.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Display</strong></p>
+<p class="wysiwyg-text-align-justify">To change to another language version, change the language in the drop-down list in the “Language selection” section and confirm with <strong>Edit language</strong>.</p>
+<p class="wysiwyg-text-align-justify"><strong>Default templates</strong></p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default">
+<colgroup> <col style="width: 397.0px;"> <col style="width: 441.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>File</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>change_language.tpl</p>
+</td>
+<td>
+<p>Language selection</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>change_pw.tpl</p>
+</td>
+<td>
+<p>Password change</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>download.tpl</p>
+</td>
+<td>
+<p>Download area</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>legal_notice.tpl</p>
+</td>
+<td>
+<p>Legal notice</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>login.tpl</p>
+</td>
+<td>
+<p>Login area</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>login_features.tpl</p>
+</td>
+<td>
+<p>Forget password</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>login_form.tpl</p>
+</td>
+<td>
+<p>Login template</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>mainpage.tpl</p>
+</td>
+<td>
+<p>Main layout</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>navigation.tpl</p>
+</td>
+<td>
+<p>Navigation</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>pagenotfound.tpl</p>
+</td>
+<td>
+<p>Error message “page not found”</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>plausitext.tpl</p>
+</td>
+<td>
+<p>Plausibility check</

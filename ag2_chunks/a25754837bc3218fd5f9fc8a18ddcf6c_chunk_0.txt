@@ -1,0 +1,63 @@
+<h1 id="h_01J3DD156TNZ9468MCZMF9CGAT">Overview</h1>
+<article>
+<p class="wysiwyg-text-align-justify">This article provides a comprehensive guide on configuring the process for a multi-source feedback system using EFS Leadership. It covers various aspects of setting up and managing feedback roles, statuses, and the feedback center. </p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p class="wysiwyg-text-align-justify">This guide focuses on the essential steps and considerations for configuring a multi-source feedback process, including planning, report definition, role configuration, status management, and feedback center setup. Settings relevant to the whole feedback process are configured in the menu <strong>Process configuration</strong>.</p>
+<ul>
+<li><a href="#planning_and_organization">Planning and Organization Tips</a></li>
+<li><a href="#defining_reports">Defining Reports</a></li>
+<li><a href="#configuring_feedback_roles">Configuring Feedback Roles</a></li>
+<li><a href="#configuring_feedback_statuses">Configuring Feedback Statuses</a></li>
+<li><a href="#setting_up_feedback_center">Setting up and Configuring the Feedback Center</a></li>
+</ul>
+<h2 id="planning_and_organization">Planning and Organization Tips</h2>
+<p>Proper planning is crucial for a successful multi-source feedback process. Consider the following aspects:</p>
+<h3 id="h_01J3DA86Y0NM41B2PA3P35YKNB">Dashboards and Reports</h3>
+<ul>
+<li>
+<strong>Results Presentation</strong>: Plan how to present feedback results, using dashboards or reports, access levels, and availability phases.</li>
+<li>
+<strong>Additional Documents</strong>: Plan additional documents like general info or data privacy, access levels, and availability phases.</li>
+<li>
+<strong>Downloads</strong>: Organize downloads in the feedback center or as DIN A4 PDF dashboards.</li>
+</ul>
+<h3 id="h_01J3DA86Y0B3JKXQ9CJYCWZYXF">Role Distribution</h3>
+<ul>
+<li>
+<strong>Defining Roles</strong>: Identify participant groups, list access rights, and allocate roles.</li>
+<li>
+<strong>Participant Access Rights</strong>: Plan roles' access to feedback center content, dialogs, reports, and dashboards. Determine access phases and specific permissions.</li>
+</ul>
+<h3 id="h_01J3DA86Y06PJX8ZBBMEJ5BJNQ">Process Progress</h3>
+<ul>
+<li>
+<strong>Determine Feedback Statuses</strong>: Match statuses to feedback process situations and define triggers for status changes.</li>
+<li>
+<strong>Data Access</strong>: Specify accessible data (e.g., questionnaires, reports) for each status.</li>
+<li>
+<strong>Centralized Changes</strong>: Decide if status changes should be triggered centrally for all feedback.</li>
+<li>
+<strong>Automated Changes</strong>: Plan automated status changes and email notifications for these changes.</li>
+</ul>
+<h2 id="defining_reports">Defining Reports</h2>
+<p>First, define the reports based on feedback results. This is essential to:</p>
+<ul>
+<li>Know which reports various groups will access when defining roles and rights.</li>
+<li>Provide additional documents (e.g., feedback process info, privacy protection) to users from the start.</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21018333371410"></p>
+<h2 id="configuring_feedback_roles">Configuring Feedback Roles</h2>
+<p>Roles such as “self-assessment”, “superior”, “direct report”, or “peer” are specified at the project's start. Each role gets a unique ID for participant allocation, e.g., during import. Roles can be labeled bilingually and have defined acronyms. Roles determine questionnaire/report access and feedback center or Data Voyager dashboard access. Define roles in Process configuration → Roles.</p>
+<h3 id="h_01J3DA86Y06XBTH7R5VC6RE83Z">Overview of Existing Roles</h3>
+<p><span style="color: #172b4d; background-color: #ffffff;">You can view and edit the roles of your project in the menu </span><strong data-renderer-mark="true">Projects → {Selected project} → Process configuration</strong><span style="color: #172b4d; background-color: #ffffff;"> on the </span><strong data-renderer-mark="true">Roles</strong><span style="color: #172b4d; background-color: #ffffff;"> tab.</span></p>
+<p><span style="color: #172b4d; background-color: #ffffff;"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21018302807570"></span></p>
+<h3 id="h_01J3DA86Y0E2H0FSSJW4P9T8DK">Roles in Standard Configuration</h3>
+<p>The following table presents the default roles available. The role “self-assessment” cannot be deleted. But the configuration can be modified.</p>
+<p>The table lists each role along with the following information:</p>
+<ul>
+<li>
+<strong>ID</strong>: Unique identifier of the role.</li>
+<li>
+<strong>Role</strong>: Label and abbreviation.</li>
+<li>
+<strong>Gets questionnaire</strong>:

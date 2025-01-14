@@ -1,0 +1,69 @@
+<p> </p>
+<h2 id="h_01J7943JG3GGY7J7YDC726VRS9"><strong>3. Hurricane Server Logs and GUI</strong></h2>
+<p><strong>Goal:</strong> Further investigation using Hurricane server logs and the Hurricane GUI.</p>
+<ul>
+<li>
+<h4 id="h_01J9K63AGHP5JHTGC7AQ140XXN"><strong>Access Hurricane GUI as per the article: <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21139518716562-How-to-Access-and-Work-with-DXI-Service-Gateways#01J8QS4CEBNQQ6KPMT655G7Y13">How to Access Hurricane Server</a></strong></h4>
+<ul>
+<li>
+<p>Log into the Hurricane GUI and check for the account being used to send the emails.</p>
+</li>
+<li>
+<p>According to <a href="#h_01J794AX0EJW61KWMT8MGN18ZJ">EFS GUI configurations</a>, if customer is using postmail configurations, the account name is embedded in the server name in EFS GUI (as explained earlier), but if using an IP, you will need to look for the account name:</p>
+<ul>
+<li>
+<p>Option 1: Click "Accounts" in Hurricane, then you look for the account based on the name of the customer (and having a similar active account name). You can confirm that the username in EFS UI is matching the username in Hurricane UI:<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21238953672210"></p>
+</li>
+<li><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21238953672722" width="494" height="300"></li>
+<li>Option 2: Click "IP Addresses" in Hurricane GUI, and look for accounts matching the IP address in EFS GUI<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21238953673362">
+</li>
+<li>Option 3: check the customer name in <a href="https://qbdocs.atlassian.net/wiki/spaces/PROC/pages/3505422353/Hurricane+Socketlabs+MTA+Overview">this table</a> mapping Public IPs vs Private IPs vs Customer names (these are static values, might be changed very rarely)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h4 id="h_01J9K631HCXWGBRW6SV27DFCKM"><strong>Enable Outbound Logs:</strong></h4>
+<ul>
+<li>To enable more logs in Hurricane server for outbound mails, go to:
+<ul>
+<li>Hurricane GUI &gt; Choose account &gt; Logging &gt; Enable outbound logs <br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21977598898450" width="270" height="214"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21977622004754" width="281" height="218">
+</li>
+</ul>
+</li>
+<li>Note that this would increase the amount of logs, so please make sure to revert it after testing.</li>
+</ul>
+</li>
+<li>
+<h4 id="h_01J9K62X9TY3ZT1WFSVH47K99P"><strong>Review Hurricane Server Logs:</strong></h4>
+<ul>
+<li>Access the Hurricane server logs through the GUI: <code>LogViewer -&gt; Choose Account -&gt; Download</code> (make sure to select the account related to your customer)<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21624761114130">
+</li>
+<li>
+<p><span class="wysiwyg-color-black40">[Obsolete - Ignore] It is possible to Access the Hurricane server logs through the /hurricanelogs/&lt;AccountID&gt;/logfiles directory on Hurricane server backend, but this is not needed/useful since we have GUI access.</span></p>
+<ul>
+<li>
+<span class="wysiwyg-color-black40">Here are the account IDs for some common account names (to save time checking HurricaneUI to get <strong>account ID</strong>):</span>
+<ul>
+<li><span class="wysiwyg-color-black40">EFS-Production: 1006</span></li>
+<li><span class="wysiwyg-color-black40">EFS-Adhoc: 1007</span></li>
+<li><span class="wysiwyg-color-black40">EFS-Pending-Confirmation: 1047</span></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>For more detailed logging information, look for the following:
+<ul>
+<li>
+<strong>Queue logs</strong>: This shows when the mail was queued in Hurricane.</li>
+<li>
+<strong>Process logs</strong>: Indicates when the email was successfully dispatched or if there were issues.</li>
+<li>Review <strong>deferred emails</strong>: These logs indicate when emails were temporarily delayed and retried by the system.</li>
+</ul>
+</li>
+<li>Logs are partitioned by Day.</li>
+<li>You can use the messageID or rcptID for a quick match.</li>
+</ul>
+</li>
+</ul>
+<h2 id="h_01J79604RA91E

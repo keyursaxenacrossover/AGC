@@ -1,0 +1,40 @@
+: Besides triggering e-mails, expired tasks can now be moved one level up to a superior unit. Escalated tasks are still viewable for the origin unit through filter setting. The completion date can be extended upon escalation to avoid further automatic escalation before the next user was able to edit mentioned task.</p>
+<h3 id="header-19">New display types in Action Planner</h3>
+<p>There are two new display types in the Action Planner: image and hyperlink. With image, links can be embedded as an image, hyperlink is interpreted as a link to another page. These display types can be adapted in the Portals page module Task List and have no influence on the exterior view of the Org Processor.</p>
+<h3 id="header-20">Subject groups</h3>
+<p>In addition to the export of subject groups, it is now also possible to import subject groups.</p>
+<h3 id="header-21">Extended completion date</h3>
+<p>The completion date (ac_date) is now a full timestamp with date and time, e.g. 2017- 06-20 10:00:01. – This format is now also expected when importing tasks.</p>
+<h3 id="header-22">Task List in Portals</h3>
+<p>The Action Planner module MyTasks from 17.1 is renamed as Task List.</p>
+<p><strong>Filter</strong></p>
+<p>With Task List, Portals users can filter and search tasks. Toggles provide additional filters for showing only current user’s tasks or only escalated tasks of one’s own unit.</p>
+<p><strong>Survey link</strong></p>
+<p>In detailed view, when using the Task Trigger (formerly named Action Trigger), the single survey participation is available by clicking the form icon. A popup will display the results of the survey participation using the html print preview.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998564244626" alt="d18cb65d-20de-4b5d-b469-88730f218137"></p>
+<p><strong>Tagging of tasks</strong></p>
+<p>The tagging of single tasks is now available in edit view. This can be used to quickly add categorization or solution design.</p>
+<p>Tags currently cannot be exported or used in MySight.</p>
+<p><strong>Portals translation module</strong></p>
+<p>With the translation module in Portals, most strings in the Task List page module, including Workflow labels, can be replaced or translated.</p>
+<p><strong>Notification settings</strong></p>
+<p>Portals users can control what types of notifications they will receive from the Task List page module. Push notifications require the portals app on the mobile device to be installed.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998623870482" alt="c54d6bf1-f169-44a9-b2de-717931ae20b7"></p>
+<h3 id="header-23">Service Layer: Import of data and use of Triggers</h3>
+<p>The new data import function (survey.participants.importParticipantAndSurveyResultFromCSV) imports data to PE and ES projects. It also executes Mail Triggers, Recoding Triggers and Task Triggers on the default final page of the questionnaire.</p>
+<h1 id="header-25">MySight</h1>
+<h3 id="h_01J6CVZ3PS99J8JG96E4NT169W">Recoding of text variables</h3>
+<p>With the new recoding functionality, text strings can be formatted as data types integer (digit), float (decimal number), datetime (date and time) or recoded to a question with up to 100 answer options. The recoding of the data type datetime additionally needs the source format in which date and time are stored in the variable. Information on formatting is available at <a href="http://php.net/manual/en/function.date.php" data-card-appearance="inline">http://php.net/manual/en/function.date.php</a> .</p>
+<p>When choosing the option “Format fact as integer/float/datetime”, the text will get formatted with the selected date type. The formatted value will be found in the correspondent column INT_VALUE/ FLOAT_VALUE/ DATE_VALUE.</p>
+<p>When choosing the option “Convert to dimension as integer/float/datetime”, however, a new column is created in the fact table displaying the relevant data type.</p>
+<p>When choosing the option “Recode value to answer option”, any text can be recoded to a single response question. The following points should be considered:</p>
+<ul>
+<li>
+<p>The number of recoded values is limited to 100. In exceptional cases, our support team may extend this value. Any participation creating answer options beyond this limit will receive the ID ‘NOT ANSWERED’.</p>
+</li>
+<li>
+<p>Recoding is case insensitive. – Should the answer option ‘Example’ already exist, for ‘example’ with lower-case letter no new answer option will be created, but the ID of ‘Example’ will be used. </p>
+</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998592812306" alt="96206f56-58c0-45d0-b825-bfa6233e4e3f"></p>
+<p> </p

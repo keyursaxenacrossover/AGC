@@ -1,0 +1,17 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1078165505">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1078165505</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<p><ac:parameter ac:name="title">Outdated</ac:parameter><ac:parameter ac:name="colour">Red</ac:parameter> </p><ac:task-list>
+<ac:task>
+<ac:task-id>1</ac:task-id>
+<ac:task-status>incomplete</ac:task-status>
+<ac:task-body><span class="placeholder-inline-tasks"><ac:link><ri:user ri:userkey="8a7f8086694ab91b01694cfe74ed0066"></ri:user></ac:link><ac:link><ri:user ri:userkey="8a7f80896a756c2f016a786f18e60297"></ri:user></ac:link> update</span></ac:task-body>
+</ac:task>
+</ac:task-list><p></p><p>Users that are created in EFS have to be synced to Okta. Synchronized users could be activated directly or later.</p><p>Directly activating users has the drawback that users might receive an activation e-mail before Questback Access is enabled. (also see <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Rollout Process" ri:version-at-save="3"></ri:page><ac:link-body>Rollout Process</ac:link-body></ac:link> )</p><p>Synchronization will take place in an asynchronous job that is also used for user imports (not for single user operation). Therefore imports and initial synchronization will be handled the same way.</p><p>To solve these issues there is a configuration field in EFS that can have the followig values:</p><ul>
+<li><p>Deactivated: No users will be synchronized.</p></li>
+<li><p>User Sync: Users will be synchronized to Okta but they will not be activated.</p></li>
+<li><p>User Sync with activation: Users will be synchronized to Okta and activated. Users that have been previously synchronized without activation will get activated.</p></li>
+</ul><p></p><p>User synchronization will be processed by a Jobmaker that will synchronize users in small sets. The same applies to activation.</p><p></p><p>The below figure shows a possible synchronization process.</p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716830562834" alt="User Migration and Activation.png"><p></p><p></p><p></p><p></p> Access is enabled. (also see <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Rollout Process" ri:version-at-save="3"></ri:page><ac:link-body>Rollout Process</ac:link-body></ac:link> )</p><p>Synchronization will take place in an asynchronous job that is also used for user imports (not for single user operation). Therefore imports and initial synchronization will be handled the same way.</p><p>To solve these issues there is a configuration field in EFS that can have the followig values:</p><ul>
+<li><p>Deactivated: No users will be synchronized.</p></li>
+<li><p>User Sync: Users will be synchronized to Okta but they will not be activated.</p></li>
+<li><p>User Sync with activation: Users will be synchronized to Okta and activated. Users that have been previously synchronized without activation will get activated.</p></li>
+</ul><p></p><p>User synchronization will be processed by a Jobmaker that will synchronize users in small sets. The same applies to activation.</p><p></p><p>The below figure shows a possible synchronization process.</p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716830562834" alt="User Migration and Activation.png"><p></p><p></p><p></p><p></p>

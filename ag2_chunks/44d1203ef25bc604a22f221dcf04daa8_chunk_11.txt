@@ -1,0 +1,89 @@
+strong> click on <strong>+ New page</strong>.</p>
+</li>
+<li>
+<p>In the second step, click on <strong>+ New row</strong> and select the desired layout.</p>
+</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015359078290" alt="newmodule_EN.png"></p>
+<p>Then the new module is added. Before that, you assign a title for the new page.</p>
+<ul class="ak-ul">
+<li>
+<p>You click on <strong>+ New module</strong> to open the module list.</p>
+</li>
+<li>
+<p>You select the <em>MySight</em> module from this list.</p>
+</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015359076114" alt="mysight_module_EN.png"></p>
+<p>If you want to add the <em>MySight</em> module on one of the existing default or target pages, the first two points of the described procedure are omitted and you insert with<strong> + New module</strong>.</p>
+<p> </p>
+<div class="fabric-editor-block-mark sc-ixltIz dsUKKC">
+<h2 id="configuration-of-the-mysight-module">
+<strong>Configuration of the </strong><em><strong>MySight</strong></em><strong> Module</strong>
+</h2>
+</div>
+<p>To configure the <em>MySight</em> module, you click on the drop-down arrow, which is bordered in red in the bottom screenshot. The configuration area necessary for module integration opens immediatly.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015359073682" alt="mysight_project_EN.png"></p>
+<p>Now you make the settings for the <em>MySight</em> project to be used:</p>
+<ul class="ak-ul">
+<li>
+<p>the workbook</p>
+</li>
+<li>
+<p>the view</p>
+</li>
+<li>
+<p>the display of the dashboard or the sheet.</p>
+</li>
+<li>
+<p>You assign the heading that the <em>MySight</em> module is to wear in the exterior view of <em>Portals</em>.</p>
+</li>
+<li>
+<p>You can also suppress the heading by simply deleting the heading text.</p>
+</li>
+<li>
+<p>You select the desired <em>MySight</em> project.</p>
+</li>
+<li>
+<p>From the worknooks stored in the selected <em>MySight</em> project, you select the desired workbook.</p>
+</li>
+<li>
+<p>You select one of the available views.</p>
+</li>
+<li>
+<p>You set the height of the dashboards. Setting the height of the dashboard within the <em>MySight</em> window (in the exterior view of the portal) only applies if you have not specified a value in <em>Tableau</em>. Preset in <em>MySight</em> is a height of 500 pixels.</p>
+</li>
+<li>
+<p>You define where the toolbar is to be positioned, i.e. at the top or bottom. The tool list can also be deactivated.</p>
+</li>
+<li>
+<p>To control the <em>MySight</em> page module via the Portal Api, you can assign a unique <strong>Page module identifier</strong> in the module configuration. This identifier is appended to the DOM element of the <em>MySight</em> module. By default, no value is assigned.</p>
+</li>
+<li>
+<p>By means of the <strong>Tab</strong> configuration point it is also possible to activate or deactivate tabs.</p>
+</li>
+</ul>
+<p>You also dedicate yourself to height, position of the toolbar and decide if you want to use tabs. All settings that can be made effect the exterior view of <em>Portals</em>. All additions and settings made must be published in order to be valid.</p>
+<p> </p>
+<div class="fabric-editor-block-mark sc-ixltIz dsUKKC">
+<h2 id="access-permissions-for-panel-groups"><strong>Access Permissions for Panel Groups</strong></h2>
+</div>
+<p>On the sub-navigation field <strong>Settings</strong> you will find the tab <strong>Access permissions</strong>. You use this to restrict access to the dashboards to specific panel groups, as you do in <em>MySight.</em></p>
+<ul class="ak-ul">
+<li>
+<p>In the area "Access permission for panel groups, you use the drop-down list to select "Group members".</p>
+</li>
+<li>
+<p>Then click on the currently appearing button <strong>+ Panel group</strong>.</p>
+</li>
+<li>
+<p>You use another drop-down list to select the panel group you want to allow access to the dashboards.</p>
+</li>
+<li>
+<p>You must confirm your choice with the green check mark. You reject them with <strong>X</strong>.</p>
+</li>
+<li>
+<p>Of course, you can give multiple panel groups access to the dashboards by selecting another group from the second drop-down list.</p>
+</li>
+<li>
+<p>After the confirmation click this group will be added to

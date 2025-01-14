@@ -1,0 +1,54 @@
+<h1 id="h_01JETQVCAEJ9NT4WFADZ2AAKTS">Overview</h1>
+<p>This guide provides steps for agents to identify a customer's DNS provider in case customer is not aware of it, which is critical for assisting with DNS configuration changes such as updating DKIM, SPF, or CNAME records.</p>
+<hr>
+<h3 id="h_01JETS7YGPSGGRCSRDJX30W5S6">Solution</h3>
+<p>Follow these steps to identify the DNS provider for a customer's domain:</p>
+<h4 id="h_01JETS7YGPXZWBCD4ZHP32Z14J"><strong>1. Use the <code>nslookup</code> Command</strong></h4>
+<ul>
+<li>Open your terminal or command prompt.</li>
+<li>Run the <code>nslookup</code> command:
+<ol>
+<li>Type <code>nslookup</code> and press Enter.</li>
+<li>Type <code>set type=ns</code> and press Enter.</li>
+<li>Enter the customer's domain name (e.g., <code>swiss.com</code>) and press Enter.</li>
+</ol>
+</li>
+</ul>
+<p>The output will display the nameservers for the domain. For example:</p>
+<div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary dark:bg-gray-950">
+<pre class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-java">swiss.<span class="hljs-type">com</span>  <span class="hljs-variable">nameserver</span> <span class="hljs-operator">=</span> ns1.swiss.com.
+swiss.<span class="hljs-type">com</span>  <span class="hljs-variable">nameserver</span> <span class="hljs-operator">=</span> ns2.swiss.com.
+swiss.<span class="hljs-type">com</span>  <span class="hljs-variable">nameserver</span> <span class="hljs-operator">=</span> de.ch-inter.net.
+swiss.<span class="hljs-type">com</span>  <span class="hljs-variable">nameserver</span> <span class="hljs-operator">=</span> ch.ch-inter.net.
+swiss.<span class="hljs-type">com</span>  <span class="hljs-variable">nameserver</span> <span class="hljs-operator">=</span> nl.ch-inter.net.
+</code></pre>
+</div>
+<p><strong><br>Analysis:</strong><br>In this example, the nameservers <code>de.ch-inter.net</code>, <code>ch.ch-inter.net</code>, and <code>nl.ch-inter.net</code> suggest "ch-inter.net" is the primary DNS provider.</p>
+<h4 id="h_01JETS7YGPTFTERWT7J3CWS5EP">
+<br><strong>2. Find the Registrar for the Domain</strong>
+</h4>
+<p>If the nameservers are unclear or suggest multiple providers, perform a WHOIS lookup to determine the domain's registrar and associated DNS details. Options include:</p>
+<ul>
+<li>
+<p><strong>Online WHOIS Lookup Tools:</strong></p>
+<ul>
+<li><a href="https://whois.domaintools.com" target="_new" rel="noopener">https://whois.domaintools.com</a></li>
+<li><a href="https://www.whois.com" target="_new" rel="noopener">https://www.whois.com</a></li>
+</ul>
+</li>
+<li>
+<p><strong>AI-Powered Search Tools:</strong></p>
+<ul>
+<li>Use <strong>Ephor</strong> or <strong>Perplexity</strong> to perform an AI-driven search for the domain.</li>
+<li>These tools can provide consolidated information about the registrar, DNS hosting provider, and contact details.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Example Lookup Results for <code>ch-inter.net</code>:</strong><br>Using a WHOIS lookup or AI search, you might find:</p>
+<div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary dark:bg-gray-950">
+<pre class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-yaml"><span class="hljs-attr">Registrar:</span> <span class="hljs-string">1API</span> <span class="hljs-string">GmbH</span>
+<span class="hljs-attr">Registration Date:</span> <span class="hljs-string">Nov</span> <span class="hljs-number">12</span><span class="hljs-string">,</span> <span class="hljs-number">2001</span>
+<span class="hljs-attr">Expiry Date:</span> <span class="hljs-string">Nov</span> <span class="hljs-number">12</span><span class="hljs-string">,</span> <span class="hljs-number">2025</span>
+<span class="hljs-attr">Nameservers:</span> <span class="hljs-string">ns.ch-inter.net,</span> <span class="hljs-string">ns2.ch-inter.net</span>
+</code></pre>
+</div>

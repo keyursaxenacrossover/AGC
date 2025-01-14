@@ -1,0 +1,47 @@
+ a thread, and most 1,000 posts per thread.<br>– Furthermore, you can export the posts of old forums resp. topics and subsequently delete the forums resp. topics.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Forums are maintained with the help of a specially developed optimized GUI. This means that a user who is not familiar with the CMS can take over their maintenance without requiring a great deal of training.</p>
+<p class="wysiwyg-text-align-justify">This chapter shows you how to create bulletin boards and moderate discussions from the admin area:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>The forum is shown from a panelist’s perspective.</li>
+<li>You will learn how to create and maintain forums from the admin area.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Example</strong></p>
+<p class="wysiwyg-text-align-justify">The forum discussions of the selected forum are displayed on the panel page containing the “Forum” function module.</p>
+<p class="wysiwyg-text-align-justify"><strong>A panelist opens the list of forum discussions:</strong></p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017213611026" alt="image2024-1-15_9-34-11.png"></p>
+<h2 id="creating-and-managing-qualitative-projects" class="wysiwyg-text-align-justify"><strong>Creating and Managing Qualitative Projects</strong></h2>
+<p class="wysiwyg-text-align-justify">Forum discussions can be created and managed as separate qualitative projects from within the project list.</p>
+<p class="wysiwyg-text-align-justify">The features in brief:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Forum discussions are integrated into the project list and the field overview.</li>
+<li>Optionally, you can create the forum discussions via the familiar Create project menu.</li>
+<li>If you open a forum discussion from within the project list, the contents will be presented in a navigation structure corresponding to the familiar EFS survey projects.</li>
+<li>Possible project statuses are “active” and “inactive”.</li>
+<li>In contrast to quantitative projects, forum discussions have no project ID, no author, and no project directory. Therefore, these data cannot be retrieved by the search features in the project list and field overview. Furthermore, forum discussions cannot be sorted into folders.</li>
+<li>The forum discussions can be displayed along with quantitative surveys on the panelists’ personal homepages.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Forum discussions in the project list:</strong></p>
+<p class="wysiwyg-text-align-justify"><strong><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017226483986" alt="forumdiscussionsinprojectlist.png"></strong></p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify">Please mind that only the most important features of the project list and field overview are supported for forum discussions. In particular, the actions in the project list are not available for forum discussions, furthermore, neither archiving nor import and export can be used.</p>
+<p class="wysiwyg-text-align-justify"><strong>Activation and access control</strong></p>
+<p class="wysiwyg-text-align-justify">Two requirements must be met to use the display options described above:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>You have to activate the display of the forum discussions. To do this, enter the website editor and open the list of topics. For the topics to be displayed, open the dialog<strong> Edit settings</strong> and tick the checkbox “Treat as qualitative project”. If you create your forum topics from within the project list, this option will be enabled automatically.</li>
+<li>Access rights must be configured appropriately. Access via the project list is controlled with the same rights as in the website menu.<br>– To open a forum discussion from the project list, user teams need to write rights for “board_admin” and read rights for the forum.<br>– To create qualitative projects themselves, user teams need read rights for “cr_project”, write rights for “board_admin” and read rights for the referenced forum.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Creating qualitative projects</strong></p>
+<p class="wysiwyg-text-align-justify">You can keep creating forum topics, as usual, via <strong>Website → Community content → Forum → {Selected forum}</strong>. Alternatively, you can also use the familiar Create project function in the<strong> Projects</strong> module.</p>
+<ol class="wysiwyg-text-align-justify">
+<li class="auto-cursor-target">Open the <strong>Create Projects</strong> dialog.<br><br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017226483090" alt="createproject_forum.png"><br><br>
+</li>
+<li class="auto-cursor-target">
+<p>Select “Forum discussion”.</p>
+</li>
+<li class="auto-cursor-target">
+<p>The dialog is changed automatically.</p>
+</li>
+<li class="auto-cursor-target">
+<p>Enter all usual properties of the topic. In the “Forum” drop-down list, select the forum into which you

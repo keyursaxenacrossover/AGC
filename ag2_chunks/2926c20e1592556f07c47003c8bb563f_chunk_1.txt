@@ -1,0 +1,131 @@
+acro">
+<h4 string="Case 1"></h4>
+<h4 id="header-7">Initial state:</h4>
+<p><strong><u>EFS - User Table</u></strong></p>
+<table ac:local-id="fbd3a2f9-c96e-43d6-be3a-de85fa56c87d" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p>EFS User ID</p></th>
+<th><p>email</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>11</p></td>
+<td><p>user1@questback.com</p></td>
+<td><p>-</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><u>Okta - User List</u></strong></p>
+<table ac:local-id="68bb5301-4668-4d6e-870a-7a0f83c11084" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p>Okta User ID</p></th>
+<th><p>email</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>10001</p></td>
+<td><p>user1@questback.com</p></td>
+<td><p>-</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><u>EFS - EFS User to Okta User Mapping</u></strong></p>
+<table ac:local-id="ce676b30-ef63-452b-a796-ee0cc281bed4" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p>EFS User ID</p></th>
+<th><p>Okta User ID</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>11</p></td>
+<td><p>10001</p></td>
+<td><p>-</p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="header-8">Future state:</h4>
+<p><strong><u>EFS - User Table</u></strong></p>
+<table ac:local-id="d5601d38-9b46-4c51-a29a-bdbf5ceb3015" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p>EFS User ID</p></th>
+<th><p>email</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>11</p></td>
+<td><p>user1@tivian.com</p></td>
+<td><p>updated</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><u>Okta - User List</u></strong></p>
+<table ac:local-id="07f76d58-d014-4da5-8948-ceb45dc87587" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p>Okta User ID</p></th>
+<th><p>email</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>10001</p></td>
+<td><p>user1@questback.com</p></td>
+<td><p>zombie</p></td>
+</tr>
+<tr>
+<td><p>20001</p></td>
+<td><p>user1@tivian.com</p></td>
+<td><p>created + assignment to group etc.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><u>EFS - EFS User to Okta User Mapping</u></strong></p>
+<table ac:local-id="4389ae8d-94f4-4ab6-b386-d5f6169099a4" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p>EFS User ID</p></th>
+<th><p>Okta User ID</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>11</p></td>
+<td><p>20001</p></td>
+<td><p>updated</p></td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="header-10">Case 2

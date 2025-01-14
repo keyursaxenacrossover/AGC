@@ -1,0 +1,51 @@
+<h2 id="h_01J6ESGYQXE17ZBM6ZC5C5TFTV">Table of Contents</h2>
+<ul>
+<li>
+<a href="#header-1">New Features in the Enterprise Feedback Suite</a>
+<ul>
+<li><a href="#header-5">Modernized CAPTCHA for Panel Websites with Responsive v2 Layout</a></li>
+<li><a href="#header-6">Optimized Overview Page for Uploaded Files</a></li>
+<li><a href="#header-7">Modernized SSO Login Page</a></li>
+<li><a href="#header-8">New API Endpoints</a></li>
+</ul>
+</li>
+<li>
+<a href="#header-10">New features for More Effective Dashboard Creation</a>
+<ul>
+<li><a href="#header-12">Tivian Analytics</a></li>
+<li><a href="#header-13">MySight</a></li>
+</ul>
+</li>
+</ul>
+<div class="expand-macro">Below, you will find an overview of the new features and improvements that are part of the new EFS 24.2 release. Among other things, they relate to the website module and the general login experience in EFS.</div>
+<div class="expand-macro">We would also like to share with you some other technical improvements and developments that Tivian has recently implemented to further improve the performance and user experience of our solutions – especially with regard to the creation of dashboards.</div>
+<h2 id="header-1"><strong>New Features in the Enterprise Feedback Suite</strong></h2>
+<p>First of all, we would like to introduce you to all the new features that are directly related to the Enterprise Feedback Suite.</p>
+<h3 id="header-5"><strong>Modernized CAPTCHA for Panel Websites with Responsive v2 Layout</strong></h3>
+<p>On panel websites based on the Responsive v2 layout, the previous CAPTCHA implementation has been replaced by a new, modern ALTCHA-based alternative (<a href="https://altcha.org/" data-card-appearance="inline">https://altcha.org/</a>). ALTCHA does not use external services, does not apply cookies or fingerprinting, does not track users and is fully GDPR compliant.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21037619387794" alt="image-20240624-084323.png"></p>
+<p>ALTCHA is the default setting. As of EFS 24.2, you can now also optionally activate Google reCAPTCHA v2. To do this, simply select the option <strong>Google reCAPTCHA v2</strong> from the drop-down menu <strong>Use CAPTCHA plugin</strong> on the <strong>Registration</strong> page and click <strong>Save</strong> at the top right of the page. You will then see two more fields where you need to enter your site key and secret key.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21037603660946" alt="image-20240624-084245.png"></p>
+<p>Further information about reCAPTCHA and how to register for the service can be found <a href="https://developers.google.com/recaptcha?hl=en">here</a>.<br>We would like to point out that it is your own responsibility to check and ensure the data protection-compliant use of Google reCAPTCHA.</p>
+<p> </p>
+<h3 id="header-6"><strong>Optimized Overview Page for Uploaded Files</strong></h3>
+<p>In your survey project, you can view the questions for which files have been uploaded under <strong>Statistics &gt; Uploaded files</strong>. Previously, you had to click on each question individually to view detailed information. With the new release, we have improved the overview page for uploaded files. You can now see at a glance when the last participation for the corresponding upload question took place and for how many participations a file was uploaded. This significantly reduces the workload, especially for surveys with many upload question types.</p>
+<p> </p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21037618012050" alt="image-20240624-094237.png"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21037619176210" alt="image-20240624-085712.png"></p>
+<h3 id="header-7"><strong>Modernized SSO Login Page</strong></h3>
+<p>For EFS installations with activated single sign-on, the login page has been redesigned and adapted to the EFS look and feel for a more consistent user experience.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21037634748562" alt="image (1)-20240624-090339.png"></p>
+<h3 id="header-8"><strong>New API Endpoints</strong></h3>
+<p>Four new API endpoints are now available:</p>
+<ul>
+<li>
+<p><em>efs.mailtemplates.getWithAttachments</em> for retrieving mail templates with attachments</p>
+</li>
+<li>
+<p><em>efs.mailtemplates.send</em> for sending test mails</p>
+</li>
+<li>
+<p><em>survey.questionnaire.getStructureWithIds</em> for retrieving the questionnaire structure with internal IDs for further use, for example by translation services</p>
+</li>
+<li>
+<p><em>survey.statistics.getListOfDispoCountsGroupedBy</

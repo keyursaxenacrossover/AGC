@@ -1,0 +1,116 @@
+1">
+<p>Is the IdP solution a vital part of the</p>
+<p>companies business case? Is it likely</p>
+<p>that the company is capable of shutting</p>
+<p>down the IdP project?</p>
+</td>
+<td colspan="1">
+<strong>yes</strong>, Azure offers multiple services, IdP is just one new service</td>
+<td colspan="1">
+<strong>no</strong>, very unlikely, Oktas main business is to offer an IdP solution</td>
+</tr>
+<tr>
+<td colspan="1"><strong>Multi tenancy</strong></td>
+<td colspan="1"><br></td>
+<td colspan="1"><strong>2/5 (multi tenant applications and single tenant applications can not be supported at the same time)</strong></td>
+<td colspan="1"><strong>3/5 (multi tenancy seems not to be the main use case supported)</strong></td>
+</tr>
+<tr>
+<td colspan="1"><br></td>
+<td colspan="1">Is there a concept for multi-tenancy?</td>
+<td colspan="1">yes, multiple Azure tenants</td>
+<td colspan="1">yes, either a grouping concept or multiple organizations (similar to Azure, not recommended by us)</td>
+</tr>
+<tr>
+<td colspan="1"><br></td>
+<td colspan="1">Can one tenant use multiple applications?</td>
+<td colspan="1">yes</td>
+<td colspan="1">yes</td>
+</tr>
+<tr>
+<td colspan="1"><br></td>
+<td colspan="1">Can multiple tenants use one application?</td>
+<td colspan="1">no, limitted <ac:link ac:anchor="*3"></ac:link>
+</td>
+<td colspan="1">yes (if grouping is used)</td>
+</tr>
+<tr>
+<td colspan="1"><br></td>
+<td colspan="1">How will separation of tenants happen?</td>
+<td colspan="1">multiple separate Azure tenants</td>
+<td colspan="1">Our recommendation: One organization, multiple Groups and Authorization Servers limitting access/separating clients</td>
+</tr>
+<tr>
+<td colspan="1"><br></td>
+<td colspan="1">Risk of data exposure to other tenants</td>
+<td colspan="1">very low</td>
+<td colspan="1">low (use automation to minimize the risk)</td>
+</tr>
+<tr>
+<td colspan="1"><br></td>
+<td colspan="1">HRD</td>
+<td colspan="1">yes, custom policy</td>
+<td colspan="1">yes, out of the box</td>
+</tr>
+<tr>
+<td colspan="1"><strong>Federation</strong></td>
+<td colspan="1"><br></td>
+<td colspan="1"><strong>4/5 (little pain with custom policies, only recently added)</strong></td>
+<td colspan="1"><strong>5/5</strong></td>
+</tr>
+<tr>
+<td colspan="1"><br></td>
+<td colspan="1">OpenID Connect</td>
+<td colspan="1">yes (since 15.08.2019 general available)</td>
+<td colspan="1">yes</td>
+</tr>
+<tr>
+<td colspan="1"><br></td>
+<td colspan="1">SAML</td>
+<td colspan="1">no, limitted <ac:link ac:anchor="*4"></ac:link><br><br>
+</td>
+<td colspan="1">yes</td>
+</tr>
+<tr>
+<td colspan="1"><br></td>
+<td colspan="1">LDAP/ADFS</td>
+<td colspan="1">via OpenID Connect</td>
+<td colspan="1">yes + connector is present</td>
+</tr>
+<tr>
+<td colspan="1"><strong>Product Changes</strong></td>
+<td colspan="1"><br></td>
+<td colspan="1"><strong>2/5</strong></td>
+<td colspan="1"><strong>4/5</strong></td>
+</tr>
+<tr>
+<td colspan="1"><br></td>
+<td colspan="1">Are there major changes in the platform?</td>
+<td colspan="1">yes, microsoft is working on a lot of basic features in parallel</td>
+<td colspan="1">only incremental changes, supported by a roadmap and a release + test cycle <ac:link ac:anchor="*7"></ac:link><br><br>
+</td>
+</tr>
+<tr>
+<td colspan="1"><br></td>
+<td colspan="1">Are all changes communicated properly?</td>
+<td colspan="1">no, only some are communicated via blog</td>
+<td colspan="1">yes, via beta features, via roadmap and blog <ac:link ac:anchor="*7"></ac:link>
+</td>
+</tr>
+<tr>
+<td colspan="1"><br></td>
+<td colspan="1">Is there a roadmap or release plan?</td>
+<td colspan="1">yes, but without any dates</td>
+<td colspan="1">yes, seems to be in a good shape <ac:link ac:anchor="*7"></ac:link>
+</td>
+</tr>
+<tr>
+<td colspan="1"><strong>Documentation</strong></td>
+<td colspan="1"><br></td>
+<td colspan="1"><strong>2/5</strong></td>
+<td colspan="1"><strong>4/5 (API specs are missing some fields ?)</strong></td>
+</tr>
+<tr>
+<td colspan="1"><br></td>
+<td colspan="1">How is the quality of documentation?</td>
+<td colspan="1">lots of documentation, but semantics, basic concepts and details are missing

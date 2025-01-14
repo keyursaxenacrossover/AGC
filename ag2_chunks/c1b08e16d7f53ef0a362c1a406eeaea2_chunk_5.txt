@@ -1,0 +1,42 @@
+ysiwyg-text-align-justify">In the <strong>Export templates </strong>menu (until EFS 10.3: <strong>Template editor</strong>), you can create and save your export templates. This is particularly recommendable if you frequently only export data for a selection of variables: Selective export saves you from having to repeatedly choose variables.</p>
+<h3 id="restricting-export-to-individual-panel-groups" class="wysiwyg-text-align-justify"><strong>Restricting Export to Individual Panel Groups</strong></h3>
+<p class="wysiwyg-text-align-justify">For panel surveys in <em>EFS People</em> installations, you have the additional option of either exporting data from the entire panel or restricting the export to individual panel groups by choosing the respective option from the drop-down list in the “Restrict export to” field.</p>
+<h3 id="selecting-the-language-and-charset" class="wysiwyg-text-align-justify"><strong>Selecting the Language and Charset</strong></h3>
+<p class="wysiwyg-text-align-justify">For multilingual projects, you can choose the language in which questionnaire texts are to be exported in the “Language” field. This setting <em>only </em>affects the language of text elements (e.g. questions texts, answer options) that are included in the SPSS export as labels and does not affect exported survey data.</p>
+<p class="wysiwyg-text-align-justify">Set the character set of the exported data record in the field “Character set”. This setting affects the <em>entire export data record</em>, i.e. for both the questionnaire texts and any existing open-ended questions.</p>
+<h3 id="user-defined-missing-values-in-exported-data" class="wysiwyg-text-align-justify"><strong>User-Defined Missing Values in Exported Data</strong></h3>
+<p class="wysiwyg-text-align-justify">You can define missing values for strings, numbers, calendar data, and timestamps for further processing in SPSS. Here, the following applies:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>SPSS accepts user-defined missing values for calendar data and timestamps.</p>
+</li>
+<li>
+<p>Missing values for number fields can be numeric or empty. However, SPSS only accepts numeric values.</p>
+</li>
+<li>
+<p>In the case of numeric values, SPSS accepts a maximum of three variables per field. Missing values defined in the questionnaire editor are included in the process.</p>
+</li>
+<li>
+<p>SPSS does not accept user-defined missing values for string variables.</p>
+</li>
+<li>
+<p>For text fields, different missing values can be entered, depending on whether the fields were not seen (default value: –66) or were seen, but not edited (-99).</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">You should ensure that no values defined elsewhere in the questionnaire as characteristics for alternative answers are used as missing values.</p>
+<h3 id="removing-line-breaks" class="wysiwyg-text-align-justify"><strong>Removing Line Breaks</strong></h3>
+<p class="wysiwyg-text-align-justify">Excel and OpenOffice are not able to process and display CSV files containing line breaks properly. If you activate the field “Remove line breaks in values from export file” the line breaks will be removed.</p>
+<p class="wysiwyg-text-align-justify">In EFS 8.2 and more recent versions, this feature does not exist anymore, because from EFS 8.2 onwards, export data do not contain line breaks anymore in principle.</p>
+<h3 id="replacing-codes-with-labels-in-excel-files" class="wysiwyg-text-align-justify"><strong>Replacing Codes with Labels in Excel Files</strong></h3>
+<p class="wysiwyg-text-align-justify">If you export result data in XLS or XLSX format (MS Excel), you have the option of replacing numeric codes with labels. To do so, navigate to the “Advanced options” section of the export dialog, and tick the checkbox labeled “Replace numeric codes with their labels”.</p>
+<h3 id="exporting-open-answers-completely-for-new-spss-versions" class="wysiwyg-text-align-justify"><strong>Exporting Open Answers Completely for New SPSS Versions</strong></h3>
+<p class="wysiwyg-text-align-justify">Until EFS 10.0, SPSS export (based on PSPP) truncated string variables after 254 characters. Until EFS 10.0, it is therefore recommended that you export the answers separately to open-ended questions in another format (e.g. XLS, CSV) and use a different program for viewing the answers.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>From EFS 10.1, when exporting for SPSS from version 14 onwards, it is optionally possible to work without this restriction. To do so, deactivate the new option “Cut text field entries after 254 characters for SPSS export”. Please note that without restriction on the text length, the overall size of the export file can grow significantly, depending on the number of text fields in the questionnaire and the number of participants.</p>
+</li>
+<li>
+<p>For SPSS versions below 14, the text length restriction must be used to ensure downward compatibility.</p>
+</li>
+</ul>
+<h3 id="restricting-the-range-of-exported-data" class="

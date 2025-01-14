@@ -1,0 +1,41 @@
+] border-token-border-medium relative" style="box-sizing: border-box; color: #212529; font-family: -apple-system, BlinkMacSystemFont, ' Segoe UI' , Roboto, ' Helvetica Neue' , Arial, sans-serif, ' Apple Color Emoji' , ' Segoe UI Emoji' , ' Segoe UI Symbol' , ' Noto Color Emoji' font-size:16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">
+<div class="overflow-y-auto p-4" dir="ltr" style="box-sizing: border-box; padding: 1.5rem !important;">
+<code class="!whitespace-pre hljs language-loki" style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, ' Liberation Mono' , ' Courier New' , monospace; font-size: 14px; color: #e83e8c; word-break: break-word; background: #f7f7f7; border: 1px solid #dddddd; border-radius: 3px; padding: 0px 5px; margin: 0px 2px;">{namespace="tr9043", job="tr9043/nginx"} |~ "82.68.16.244"</code><br style="box-sizing: border-box;"><img style="box-sizing: border-box; border-style: none; vertical-align: middle; height: auto; max-width: 100%;" src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21741769632658">
+</div>
+</div>
+</li>
+<li style="box-sizing: border-box;">This query fetches logs from the <code>nginx</code> job (another way to get all web requests) in the <code>tr9043</code> namespace (installation name) and filters them to only show logs that contain the IP address <code>82.68.16.244</code>
+</li>
+</ul>
+<p><strong>Additional Query Tips</strong>:</p>
+<ul>
+<li>
+<strong>Exclude unwanted logs</strong>: You can exclude log messages that are unnecessary using the <code>!~</code> operator, as shown above. For example, filter out system-related logs from Prometheus or Kubernetes probes.</li>
+<li>
+<strong>Filters</strong> can also be done via GUI by selecting text you want to include/exclude, which will automatically show a sub-menu which would allow you to either include or exclude the string from the query:<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21741949800082">
+</li>
+<li>
+<strong>Use labels for precision</strong>: By specifying container names (e.g., <code>container="nginx"</code>) or namespaces, you can reduce the number of irrelevant logs.</li>
+</ul>
+<p>For more advanced log querying, refer to the <a href="https://grafana.com/docs/loki/latest/query/" target="_new" rel="noopener">Grafana Loki Query Documentation</a>.</p>
+<hr>
+<h4 id="h_01J96XFXM2TE4PG299K4Z8MM29"><strong>Additional Resources for Log Manipulation:</strong></h4>
+<p>To process Grafana logs and extract bulk data from logs, you have the following options:</p>
+<ul>
+<li>Simply download the files and process via editor using RegEx search and Replace to process further via Excel</li>
+<li>If you want to find out about parsing/manipulating the displayed logs directly through Grafana, please take a look here: <a style="box-sizing: border-box; background-color: transparent; color: #1f73b7; text-decoration: underline;" href="https://grafana.com/blog/2021/08/09/new-in-loki-2.3-logql-pattern-parser-makes-it-easier-to-extract-data-from-unstructured-logs/">new-in-loki-2.3-logql-pattern-parser</a>
+</li>
+<li style="list-style-type: none;"> </li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h1 id="h_01J96WD026JFXVNA8PM93X7TD3">Summary</h1>
+<p>By following these steps and using the outlined queries, you can efficiently monitor and troubleshoot various system logs in Grafana, including cron jobs, web server logs, and more.</p>
+<h2 id="h_01J96WD026N12DCR04FG11CZVP">FAQ</h2>
+<p>1. <strong>What is Grafana?</strong><br>Grafana is a visual interface used to monitor the performance and status of processes such as cron jobs and server logs.</p>
+<p>2. <strong>What is Loki?</strong><br>Loki is a horizontally-scalable, highly-available, multi-tenant log aggregation system inspired by Prometheus. It is used as a data source for querying logs in Grafana.</p>
+<p>3. <strong>How can I exclude unnecessary logs in Grafana?</strong><br>You can exclude unnecessary logs using the !~

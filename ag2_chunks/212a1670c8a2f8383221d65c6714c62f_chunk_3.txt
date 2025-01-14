@@ -1,0 +1,48 @@
+() AND name!="(default)" AND name not like "QB_%";' | efslogin 2&gt;/dev/null | grep -v "(^ERROR)|(cat)|(Could)"| tail -1)
+
+logins_by_QB=$(echo 'SELECT count(*) AS "QB_Logins" from users,user_att,login_att,admin_user_contract,admin_contract_org WHERE admin_user_contract.uid=users.uid AND admin_user_contract.org = admin_contract_org.id AND users.uid=user_att.uid AND users.uid=login_att.uid AND u_email not like "%servicelayer%" AND DATE_ADD(from_unixtime(lastlogin), INTERVAL 6 WEEK) &gt; NOW() AND name like "QB_%";' | efslogin 2&gt;/dev/null | grep -v "(^ERROR)|(cat)|(Could)"| tail -1)
+
+
+    echo "$i usage: $survey_requests $panel_hits $logins_by_customers $logins_by_QB $active_orgas $inactive_orgas $orga_info"
+done</code></pre>
+<p> </p>
+<h3 id="header-8">script to get info about number of panelists grouped by status in the Corbox</h3>
+<pre><code class="language-text">#!/bin/bash
+#
+inputfile=$1
+
+
+   while read instpath; do
+
+      if [ -d $instpath ]; then
+         cd "$instpath"
+         gpname=$(grep -o "^\$__gp_name[^;]*;" conf/config.inc.php3 | awk '{print $NF}' )
+         echo 'select sum(if(pstatus=1,1,0)) AS status_1, sum(if(pstatus=2,1,0)) AS status2, sum(if(pstatus=3,1,0)) AS status_3, sum(if(pstatus=4,1,0)) AS status_4, sum(if(pstatus=5,1,0)) AS status_5, sum(if(pstatus=6,1,0)) AS status_6, sum(if(pstatus=7,1,0)) AS status_7, sum(if(pstatus=8,1,0)) AS status_8, sum(if(pstatus=9,1,0)) AS status_9, sum(if(pstatus=10,1,0)) AS status10, sum(if(pstatus=11,1,0)) AS status_11, sum(if(pstatus=12,1,0)) AS status_12, sum(if(pstatus=13,1,0)) AS status13, sum(if(pstatus=14,1,0)) AS status_14, sum(if(pstatus=15,1,0)) AS status_15, sum(if(pstatus=16,1,0)) AS status_16, sum(if(pstatus=32,1,0)) AS status_32 from panel_att;' | efslogin | grep -v "Running\|Connect\|u_email" | sed "s/^/$gpname/g" | sed "s/\t/;/g"
+
+         else
+            echo "$instpath not found."
+         fi
+
+   done &lt; "$inputfile"</code></pre>
+<p>in the inputfile the installationpaths ending with htdocs have to be listed</p>
+<p> </p>
+<p>All Queries from the PM job:</p>
+<ul>
+<li><a href="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21108190015890">wrapperQueriesPMJob</a></li>
+</ul>
+<p class="media-group"> </p>
+<p> </p>status=9,1,0)) AS status_9, sum(if(pstatus=10,1,0)) AS status10, sum(if(pstatus=11,1,0)) AS status_11, sum(if(pstatus=12,1,0)) AS status_12, sum(if(pstatus=13,1,0)) AS status13, sum(if(pstatus=14,1,0)) AS status_14, sum(if(pstatus=15,1,0)) AS status_15, sum(if(pstatus=16,1,0)) AS status_16, sum(if(pstatus=32,1,0)) AS status_32 from panel_att;' | efslogin | grep -v "Running\|Connect\|u_email" | sed "s/^/$gpname/g" | sed "s/\t/;/g"
+
+         else
+            echo "$instpath not found."
+         fi
+
+   done &lt; "$inputfile"</code></pre>
+<p>in the inputfile the installationpaths ending with htdocs have to be listed</p>
+<p> </p>
+<p>All Queries from the PM job:</p>
+<ul>
+<li><a href="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21108190015890">wrapperQueriesPMJob</a></li>
+</ul>
+<p class="media-group"> </p>
+<p> </p>

@@ -1,0 +1,62 @@
+g-text-align-justify" data-renderer-start-pos="28808">The functional scope in brief:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="28842">The macros can be executed on a daily or weekly basis. Alternatively, you can also trigger the export manually.</p>
+</li>
+<li>
+<p data-renderer-start-pos="28957">The export format is MS Excel.</p>
+</li>
+<li>
+<p data-renderer-start-pos="28991">Only data collected after the most recent execution will be exported. If there are no</p>
+<p data-renderer-start-pos="29078">data, the macro will not be executed.</p>
+</li>
+<li>
+<p data-renderer-start-pos="29119">In personalized projects and employee surveys, you can formulate a condition based on the participants' data, that has to be fulfilled in order for the macro to be executed.</p>
+</li>
+<li>
+<p data-renderer-start-pos="29294">If you have sufficient access rights, then all the data in the static export template “Participants and result data” are available for export in project types with participant administration. You can limit the extent to particular disposition codes or variables.</p>
+</li>
+<li>
+<p data-renderer-start-pos="29560">The export files are made available in EFS Survey Status. They cannot be accessed in the <em data-renderer-mark="true">EFS Survey</em>.</p>
+</li>
+<li>
+<p data-renderer-start-pos="29660">The export data will be deleted automatically after 30 days. This is to prevent the accumulation, in the EFS installation, of old data which is no longer required.</p>
+</li>
+</ul>
+<h3 id="Managing-Export-Macros" class="wysiwyg-text-align-justify" data-renderer-start-pos="29827"><strong data-renderer-mark="true">Managing Export Macros</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="29851">In the <strong data-renderer-mark="true">Projects</strong> → {<strong data-renderer-mark="true">Selected project</strong>} → <strong data-renderer-mark="true">Export </strong>→<strong data-renderer-mark="true"> Export macros </strong>menu, you can view and edit the existing macros.All export macros that you may access are listed in the overview table along with their respective ID, title, start and end date, frequency, and (if appropriate) condition. The following actions are available:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="30174"><strong data-renderer-mark="true">Export file to EFS Survey Status</strong>: Option for triggering the export manually.</p>
+</li>
+<li>
+<p data-renderer-start-pos="30254"><strong data-renderer-mark="true">Edit macro</strong>: Opens the edit dialog.</p>
+</li>
+<li>
+<p data-renderer-start-pos="30292"><strong data-renderer-mark="true">Change rights for macro</strong>: Opens the dialog for assigning access rights for the export macro.</p>
+</li>
+<li>
+<p data-renderer-start-pos="30387"><strong data-renderer-mark="true">Delete macro</strong>: After a warning message is displayed, the export macro as well as the data records generated with this macro are deleted.</p>
+</li>
+</ul>
+<div class="ak-editor-panel cc-tqp4ke wysiwyg-text-align-justify" data-panel-type="info">
+<div class="ak-editor-panel__icon"><em>To start the export process, click on the "Export file to EFS Survey Status" button (<strong data-renderer-mark="true">Projects </strong>→ {<strong data-renderer-mark="true">Selected project</strong>} → <strong data-renderer-mark="true">Export </strong>→<strong data-renderer-mark="true"> Export macros </strong>menu).</em></div>
+<div class="ak-editor-panel__icon"> </div>
+</div>
+<h3 id="Creating-an-Export-Macro" class="wysiwyg-text-align-justify" data-renderer-start-pos="30676"><strong data-renderer-mark="true">Creating an Export Macro</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="30702">In the  <strong data-renderer-mark="true">Projects </strong>→ {<strong data-renderer-mark="true">Selected project</strong>} → <strong data-renderer-mark="true">Export </strong>→<strong data-renderer-mark="true"> Export macros </strong>menu, click on the <strong data-renderer-mark="true">Create export macro </strong>button. Configure the settings for the new macro:</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="30857">Title and description</p>
+</li>
+<li>
+<p data-renderer-start-pos="30882">Frequency: You can choose between daily or weekly execution.</p>
+</li>
+<li>
+<p data-renderer-start-pos="30946">Start and end date: The period in which the exports are executed automatically.</p>
+</li>
+<li>
+<p data-renderer-start-pos="31029">Disposition codes: Disposition codes for which the data are to be included in the export.</p>
+</li>
+</ul>
+<p class="

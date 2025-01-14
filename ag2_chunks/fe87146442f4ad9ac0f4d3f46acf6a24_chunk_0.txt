@@ -1,0 +1,97 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1293746546">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1293746546</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">Resources to Delete</a></li>
+<ul>
+<li><a href="#header-3">Identity Provider</a></li>
+<ul>
+<li><a href="#header-5">Routing Rules</a></li>
+<li><a href="#header-6">Authentication - Password Policies</a></li>
+<li><a href="#header-7">Authentication - Sign On Policies</a></li>
+<li><a href="#header-8">MFA Factor Enrollment</a></li>
+<li><a href="#header-9">Administrators</a></li>
+<li><a href="#header-10">Tokens</a></li>
+<li><a href="#header-11">Trusted Origins</a></li>
+<li><a href="#header-12">Groups</a></li>
+</ul>
+</ul>
+</ul>
+</ul><h1 id="header-1">Resources to Delete</h1><p>Where possible, the resources which are marked for deletion are set to <strong><span style="color: rgb(255,86,48);"><u>inactive</u></span>.</strong><br>After checking all resources, all inactive ones will be deleted</p><h2 id="header-3">Identity Provider</h2><table data-layout="default"><tbody>
+<tr>
+<th><p><strong>Name</strong></p></th>
+<th><p><strong>Reason</strong></p></th>
+<th><p><strong>Note</strong></p></th>
+</tr>
+<tr>
+<td><p>questback ADFS 123</p></td>
+<td><p>Not in use</p></td>
+<td><p>Duplicate of “Questback ADFS” IdP</p></td>
+</tr>
+<tr>
+<td><p><br>questback Azure Active Directory</p></td>
+<td><p>Not in use</p></td>
+<td><p>Duplicate of “Questback AD - OpenID Connect” IdP</p></td>
+</tr>
+</tbody></table><h3 id="header-5">Routing Rules</h3><table data-layout="default"><tbody>
+<tr>
+<th><p><strong>Name</strong></p></th>
+<th><p><strong>Reason</strong></p></th>
+<th><p><strong>Note</strong></p></th>
+</tr>
+<tr>
+<td><p>ADFS TEST</p></td>
+<td><p>Not in use, only suited for a specific test case</p></td>
+<td><p>Can be easily recreated if needed</p></td>
+</tr>
+<tr>
+<td><p>ADFS TEST OLIVER</p></td>
+<td><p>Not in use, only suited for a specific test case</p></td>
+<td><p>Can be easily recreated if needed</p></td>
+</tr>
+</tbody></table><h3 id="header-6">Authentication - Password Policies</h3><table data-layout="default"><tbody>
+<tr>
+<th><p><strong>Name </strong></p></th>
+<th><p><strong>Reason</strong></p></th>
+<th><p><strong>Note</strong></p></th>
+</tr>
+<tr>
+<td><p>questback string password</p></td>
+<td><p>disabled anyway</p></td>
+<td><p>only used once for testing ?</p></td>
+</tr>
+<tr>
+<td><p>Legacy Policy</p></td>
+<td><p>disabled anyway</p></td>
+<td><p><span style="color: rgb(255,86,48);">ALSO REMOVE IN PROD ?</span></p></td>
+</tr>
+<tr>
+<td><p>Strong Passwords</p></td>
+<td><p>disabled anyway</p></td>
+<td><p>only used once for testing ?</p></td>
+</tr>
+</tbody></table><h3 id="header-7">Authentication - Sign On Policies</h3><table data-layout="default"><tbody>
+<tr>
+<th><p><strong>Name</strong></p></th>
+<th><p><strong>Reason</strong></p></th>
+<th><p><strong>Note</strong></p></th>
+</tr>
+<tr>
+<td><p>MFA for TKA</p></td>
+<td><p>disabled anyway</p></td>
+<td><p><span style="color: rgb(255,86,48);">Needed from QA side?</span></p></td>
+</tr>
+<tr>
+<td><p>Questback Signon Policy</p></td>
+<td><p>disabled anyway</p></td>
+<td><p>Very old policy - only used for the group Questback Employees - MFA is enabled</p></td>
+</tr>
+<tr>
+<td><p>MFATechEnablement</p></td>
+<td><p>disabled anyway</p></td>
+<td><p>not needed anymore since TechEnablement is done - Only used for the group MFATechEnablement which is not managed anymore</p></td>
+</tr>
+<tr>
+<td><p>markus MFA test</p></td>
+<td><p

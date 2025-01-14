@@ -1,0 +1,60 @@
+></li>
+<li><p>Neben diesem Key einen weiteren hinzufügen: <strong>Key: 1</strong>, <strong>Type: String</strong>, <strong>Value:</strong> hier Beschreibung oder Templatenamen eintragen</p></li>
+</ul>
+</li></ul>
+</li>
+<li>
+<p>Template für die gewünschte(n) Organisation(en) freischalten:</p>
+<ul>
+<li><p><strong>Benutzer &gt;&gt; Organisationen &gt;&gt; [Organisation] &gt; qb only:: EFS Reporting+</strong></p></li>
+<li><p>Template markieren</p></li>
+</ul>
+</li>
+</ul><h2 id="header-12">Änderungen in den EFS Versionen</h2><p><strong>Ab 10.2 Neu</strong></p><p>Es gibt ein Config Flag um Loop Daten im Reporting+ zu erlauben: reporting_support_loop<br>reporting_loop_variables_limit gibt die maximale Anzahl an Loop Variablen an, die in einen Bericht importiert werden können.</p><h2 id="header-13">Debugging</h2><p>Die erste Stelle sollte die Tabelle "survey_reporting_log" sein. Dort werden alle Aktionen mitgeloggt.</p><p></p><ul>
+<li><p>den Debug Level temporär in der Config erhöhen (Flag: debug; Werte: 1-3) und man kann die JavaScript<a href="https://it.globalpark.de/twiki/bin/edit/Support/JavaScript?topicparent=Support.SupportEFSAnalyticsLab">?</a> Actions mitlesen (kA wie das geht, bitte erläutern)</p></li>
+<li><p>Debugging kann man über $__reporting_ppt_soap_debug = true; aktivieren, im tmp verzeichnis der Installation wird dann der SOAP Request abgelegt.</p></li>
+</ul><h3 id="header-15">Bei der Datenaktualisierung</h3><ul>
+<li>
+<p>Die Datenaktualisierung kann nicht ausgeführt werden. Fehlermeldung: <strong>Es ist ein Fehler aufgetreten</strong></p>
+<ul>
+<li><p>Datenaktualisierung erneut ausführen und dabei die DB-Logs mitschneiden</p></li>
+<li>
+<p>Prüfen, welche Fehlermeldung ausgegeben werden</p>
+<ul>
+<li>
+<p><strong>ERROR OCCURED: Unsupported type</strong></p>
+<ul>
+<li><p>eine Variable hat einen nicht unterstützten Typ</p></li>
+<li><p>Wurde nach Erstellung des Reporting+ Berichtes eine Variable gelöscht und die Umfrage generiert? Ggf. im Admin log oder in der Dokumentation des Projektes prüfen.</p></li>
+<li><p>Temporärer Fix: Eine neue Frage im Projekt anlegen, dann kann die Datenaktualisierung wieder ausgeführt werden</p></li>
+<li><p>Kanban Ticket hierzu: <a href="https://jira.3uu.de/browse/KANBAN-9376">https://jira.3uu.de/browse/KANBAN-9376</a></p></li>
+<li><p>Beispielcase: 00217799</p></li>
+<li><p>Kanban: KANBAN-9376</p></li>
+</ul>
+</li>
+<li>
+<p><strong>ERROR OCCURED: Code missing</strong></p>
+<ul>
+<li><p>Der Typ einer Frage wurde geändert und es gibt nun bestimmte Codes nicht</p></li>
+<li>
+<p>Um welche Frage/Variable es sich handelt, kann man über das MySQL Logfile herausfinden:</p>
+<ul>
+<li>
+<p>Die Variablen, bis zu denen die Datenaktualisierung funktioniert werden im Logfile geupdated:</p>
+<ul><li><pre><code class="language-text">25848209 Query  UPDATE survey_reporting_variable SET report_id=238,type=2,varname='v_213',data_type=2,db_data_table=1,label_id=287156,description_id=NULL,sys_missing='',category_id=0,properties='a:1:{i:0;b:0;}' WHERE variable_id=13980
+25848209 Query  REPLACE INTO survey_reporting_source SET report_id=238, type=3, id=2914, source_pid=22032, source_id=67145, source_meta=142, status=3
+</code></pre></li></ul>
+</li>
+<li><p>Betroffen ist dann die Variable, die auf die letzte laut Logfile geupdatete Variable folgt. In dem Fall die Variable nach v_213 (siehe Codebuch).</p></li>
+</ul>
+</li>
+<li><p>Beispielcase: 00235836</p></li>
+<li><p>Kanban: KANBAN-9507</p></li>
+</ul>
+</li>
+<li>
+<p><strong>ERROR OCCURED: Unknown language identifier</strong></p>
+<ul>
+<li><p>Beispielmeldung: ERROR OCCURED: Unknown language identifier 0 Available:1</p></li>
+<li><p>Der Bericht enthält nicht die Umfragesprachen, die das Quellprojekt beinhaltet. Das kann dadurch kommen, dass nach Berichtserstellung noch Sprachen im Projekt angelegt wurden.</p></li>
+<li><p>Die Datenaktualisierung aktual

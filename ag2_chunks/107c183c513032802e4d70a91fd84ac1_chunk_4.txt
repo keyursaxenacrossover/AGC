@@ -1,0 +1,62 @@
+>: On this tab, you can subsequently edit basic properties of the unit such as name, meta name, or preset number of staff.</p>
+</li>
+<li>
+<p><strong>Text elements</strong>: Unit-specific Org Processor data, such as names and other unit properties, can be inserted into the questionnaire using wildcards. On this tab, the desired data - and in multilingual surveys, their translation - are entered.</p>
+</li>
+<li>
+<p><strong>Participants</strong>: On this tab, you create and manage the survey participants of the unit.</p>
+</li>
+<li>
+<p><strong>User management</strong>: On this tab, you can view the responsible persons of the unit or define new responsible persons.</p>
+</li>
+<li>
+<p><strong>Paper-pencil questionnaires</strong>: If the logistics functions of EFS Employees are activated, you can register your paper-pencil questionnaire requirements or view already existing requisition notes.</p>
+</li>
+<li>
+<p><strong>Import structure</strong>: The import dialog on this tab allows the import of new substructures under the current unit.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The tabs of the detail view provide access to a wide range of data and functions. You will find detailed explanations in the respective chapters mentioned above.</p>
+<p class="wysiwyg-text-align-justify"><strong>View</strong></p>
+<p class="wysiwyg-text-align-justify">By clicking on the <strong>Show Tree view</strong> button you can have the tree view displayed for better orientation. The current unit will be marked with a red arrow. To hide the tree view again, simply click on<strong> Hide tree view</strong>. The <strong>arrow</strong> icons allow you to switch to the units located directly above or below the current unit in the tree.</p>
+<h3 id="manually-building-the-organizational-structure" class="wysiwyg-text-align-justify"><strong>Manually building the organizational structure</strong></h3>
+<p class="wysiwyg-text-align-justify">The organizational structure in the <em>Org Processor</em> is created top-down, i.e., starting with the topmost unit, the entire corporation, and the corporate structure is mapped down to the smallest unit (depending on the desired level of detail). The organizational structure can either be built up manually, created by import, or<br>created by a combination of both manual build-up and import. The manual build-up of organizational structures may be rather time-consuming but also offers valuable insight into how to store which data. This will improve your understanding of the import process and facilitate any subsequent manual editing.</p>
+<p class="wysiwyg-text-align-justify">If you want users to be able to create units, you need to assign the right<em> structure_add_del_nodes</em> to the appropriate roles.</p>
+<p class="wysiwyg-text-align-justify">Up to 40,000 units can be created in a project. But please keep in mind that very complex structures are confusing and difficult to navigate. Also, server performance is negatively affected by very large structures.</p>
+<h3 id="creating-units" class="wysiwyg-text-align-justify"><strong>Creating units</strong></h3>
+<p class="wysiwyg-text-align-justify">To create a new unit, please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Open the dialog for creating a new unit. There are two ways to do this:</p>
+<ul>
+<li>
+<p>By clicking on the <strong>Create unit</strong> button you can invoke the dialog directly. If the organizational structure is still empty, then this is how you create the main unit (root unit).</p>
+</li>
+<li>
+<p>Look for the unit in the organizational structure below which you want to create the new unit. Click on the <strong>Actions</strong> icon to open the selection layer and then click on the link <strong>Create unit</strong>. This approach has the advantage that the correct unit one level up will automatically be preset in the edit dialog.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Enter the required data</p>
+<ul>
+<li>
+<p>Name of unit: Name of the respective unit</p>
+</li>
+<li>
+<p>Short form of unit name: Name of the respective organizational unit as it is to be displayed in the organizational structure. For greater clarity, a shortened form of the actual name is usually used.</p>
+</li>
+<li>
+<p>Meta name: Unique identifier of the unit. The meta name may contain only the following characters: a-z, A-Z, 0-9, "_", "-"</p>
+</li>
+<li>
+<p>Parent unit: In this field, you specify the parent unit. If you have opened the dialog via the <strong>Actions</strong> layer, the correct unit should be preset automatically. If you have used the <strong>Create Unit</strong> button, you may have to specify the correct unit first. Clicking on the <strong>binoculars</strong> icon will open a list of all organizational units.</p>
+</li>
+<li>
+<p>Staff (preset value): Preset number of employees for this unit.</p>
+</li>
+<li>
+<p>Permit allocation to units in the questionnaire: Activate this action if participants are to be able to allocate themselves to the units.</p>
+</li>
+<li>
+<p>Create another unit afterward: Activate this option if you wish to manually create further units. Upon saving, the dialog for creating units will open again automatically

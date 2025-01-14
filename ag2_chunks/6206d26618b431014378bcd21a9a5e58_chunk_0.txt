@@ -1,0 +1,43 @@
+<h1 id="h_01J9TJEC9452ZKHS3TN44KCQ3F">Overview</h1>
+<p>DXi instances will be provisioned by default with technical URL's like <a href="https://ab1234.customervoice.com">https://ab1234.customervoice.com</a>, and you may want your own URL branding in place. When this happens, you can either provide a domain you already have purchased or ask Tivian to purchase and provision a vanity domain for you.</p>
+<p>If you are in the above situation, then this article is for you!</p>
+<h1 id="h_01J9TJEC95GDMQ5M5GZZZNHWKF">Solution</h1>
+<p>If you haven't yet purchased a domain, and you want to have Tivian provision and manage the new domain (vanity URL) for you, you will need to request this via a support ticket.</p>
+<p>In order to have a new vanity URL provisioned for you, we will need the below information from your side, as it is required when registering the domain with our provider:</p>
+<ul>
+<li>The domain you wish to purchase</li>
+<li>First Name</li>
+<li>Last Name</li>
+<li>Company Name</li>
+<li>Address (Street, ZIP Code, City, Country)</li>
+<li>Phone</li>
+<li>Email Address</li>
+</ul>
+<p>Once this information is supplied to the Support team, we will be able to proceed with the domain purchase and provisioning for you (SSL certificate included).</p>
+<p>Please note that the DNS propagation may take up to 48 hours once the domain is provisioned.</p>
+<p>&lt;supportagent&gt;</p>
+<p>You can check <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20304696897682" target="_blank" rel="noopener noreferrer">Domain, Alias, CNAME, SSL in EFS</a> for the available options when it comes to vanity URL's and DNS in Tivian DXi.</p>
+<div class="alert alert-danger" role="alert">
+<p><em><strong>NOTE:</strong> if customer is IPSOS, purchasing of vanity URL's is pre-approved. If any other customer is requesting this, we need to seek approval from Sales: <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20304714254610" target="_blank" rel="noopener noreferrer">DXI Routing Table &amp; Priority Handling</a>.</em></p>
+</div>
+<p>Below is the high-level overview of how to proceed when the customer requests that we purchase and manage for them a vanity URL:</p>
+<ol>
+<li>Log a SaaS CR with the information provided by the customer; sample template for <a href="https://trilogy-eng.atlassian.net/browse/DXI-390" target="_blank" rel="noopener noreferrer">CR</a>:<br>
+<p><em>We need a new vanity URL (www.vanityurl.com) for the Discover XI installation (https://abcd.customervoice360.com).</em></p>
+<p><em>Historically, Tivian handled the URL purchase and SSL certificate configuration.</em></p>
+<p><em>Actions Required:</em><br><em>- Confirm Tivian's involvement in purchasing the URL and handling SSL certificate configuration.</em><br><em>- DNS setup (CNAME, ALIAS, or relevant records) based on the DNS provider's capabilities.</em><br><em>- Verification of successful DNS propagation and SSL certificate installation.</em></p>
+</li>
+<li>Once the CR is completed, inform the customer accordingly</li>
+</ol>
+<p>&lt;/supportagent&gt;</p>
+<h1 id="h_01J9TJEC9545D91NAV46RJCCQ1">Summary</h1>
+<p>Applying for a new vanity name for a Discover XI installation requires logging a ticket with the support team with the required details, and once completed, waiting for DNS changes to propagate.</p>
+<h2 id="h_01J9TJEC95DJMR6M3NEEHAR951">FAQ</h2>
+<ol>
+<li>
+<strong>Who handles the URL purchase and SSL certificate configuration?</strong><br>Tivian handles the URL purchase and SSL certificate configuration. However, you can also bring in your own domains.</li>
+<li>
+<strong>Why is my information needed if the support team is handling the domain purchase and DNS setup?</strong><br>In some cases, the support team may need your information for verification purposes during domain purchase.</li>
+<li>
+<strong>How long does it take for DNS changes to propagate fully?</strong><br>It can take up to 48 hours for DNS changes to propagate fully.</li>
+</ol>

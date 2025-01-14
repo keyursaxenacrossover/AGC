@@ -1,0 +1,51 @@
+li>
+<li>Calculating (optional)</li>
+<li>Rendering (optional)</li>
+<li>Converting (optional)</li>
+<li>Completed (optional)</li>
+<li>Failed (optional)</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013838138002" alt="Report order table.png"></p>
+<p class="wysiwyg-text-align-justify"><strong>You can use the following functionalities:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>You click on the refresh button to update the table.</li>
+<li>You can scroll using the scroll bar.</li>
+<li>You can also show and hide columns using the table icon.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Each order has one of the statuses that you can find in the column "Order state":</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Created</li>
+<li>Paused</li>
+<li>In Progress</li>
+<li>In Cancellation</li>
+<li>Cancelled</li>
+<li>Done</li>
+<li>Deleted</li>
+</ul>
+<p class="auto-cursor-target wysiwyg-text-align-justify">Initially, every order is set to the status "Created".</p>
+<h3 id="the-report-order-management" class="wysiwyg-text-align-justify"><strong>The report order management</strong></h3>
+<p class="wysiwyg-text-align-justify">The report order management gives you direct access to the processing of an order. This saves you time, especially in the case of orders that contain large quantities of reports to be generated. If a report definition turns out to be in need of correction, the report order management allows you to cancel and delete the corresponding order. Of course, you are able to pause an order and check any possible changes before placing it. You continue the processing with <strong>Resume</strong>.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013850396690" alt="S4 Rahmen.png"></p>
+<p class="wysiwyg-text-align-justify">Via mouseover, the icons available in the current status of the order will appear in the rows of the report order table to control the possible actions. All in all, you have the following actions:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Pause</li>
+<li>Resume</li>
+<li>Cancel</li>
+<li>Delete </li>
+</ul>
+<p class="wysiwyg-text-align-justify">This means for the order status:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>If you click on <strong>Pause</strong>, the status of the order is changed to "Paused". <strong>Resume</strong> rehomes the order state "Paused" again.</li>
+<li>If you click on <strong>Cancel</strong>, the status of the order is changed to "In Cancellation" first and set to "Cancelled" afterward. You must confirm the cancellation of an order via a confirmation modal. The reports with the status "In Process" are terminated while the reports with the status "Created" are transferred directly to the status "Failed".</li>
+<li>If you delete an order, the status of the order does not change. This is removed directly from the order table after you have confirmed the action via a confirmation modal. The deleted reports can no longer be found in the report table under the tab <strong>Reports</strong>.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Not all actions are available in every status. The icons of the unavailable actions are not displayed accordingly. Consider the following:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>You can only <strong>delete</strong> orders that have the status "Created", "Cancelled" and "Done".</li>
+<li>You can <strong>cancel</strong> the order that is in the status "Created". "Paused" or "In Progress".</li>
+<li>You can <strong>pause</strong> the order that is in the status "Created" or "In Progress".</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Information</p>
+<p class="wysiwyg-text-align-justify"><span style="color: #333333;">In principle, only those report orders that have the status "Created" can be canceled or paused. Explanatory, however, must be added: The individual reports of an order are processed one after the other. While some reports already run through the three report statuses "Calculation", "Rendering" and "Converting", others are still in the status "Created". The status of the report order is set to "In progress". If you pause or cancel an order now, this action only applies to the reports that are still in the status "Created", while processing of the remaining reports continues until they are set to the status "Completed" or "Failed".</span></p>
+<h3 id="the-report-distribution-table" class="sc-lhVmIH iJLaKb wysiwyg-text-align-justify"><strong>The report distribution table</strong></h3>
+<p class="sc-lhVmIH iJLaKb wysiwyg-text-align-justify">The report distribution table is displayed under the tab <strong>Report Distributions</strong>. The table icon allows you to fade in and out certain columns. You

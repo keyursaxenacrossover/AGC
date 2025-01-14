@@ -1,0 +1,30 @@
+{
+    "id": 20716308803346,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/20716308803346.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20716308803346-Portals-Frontend-Changes",
+    "author_id": 369584192734,
+    "comments_disabled": false,
+    "draft": true,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20714711445138,
+    "created_at": "2024-08-12T18:56:55Z",
+    "updated_at": "2024-08-12T18:57:04Z",
+    "name": "Portals Frontend Changes",
+    "title": "Portals Frontend Changes",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-08-12T18:57:04Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075294,
+    "content_tag_ids": [],
+    "label_names": [],
+    "body": "<p><b>Original Confluence URL:</b> <a href=\"https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1058275342\">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1058275342</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>\n\n<h2>Table of Contents</h2>\n<ul class=\"toc\">\n<ul>\n<li><a href=\"#header-1\">Portals Frontend Handover - What are Todos: DONEGreen</a></li>\n</ul>\n</ul><p>Most changes in the Portals Frontend took place in the lifecycle management of the app (app start and logout).</p><p>The changed respective workflow is shown below.</p><p><br></p><p><strong>Queues:</strong></p><p>Start App Queue - this queue is run during the start of portals:</p><p><a href=\"https://www.lucidchart.com/documents/edit/cff6789b-6e2c-4faf-b39a-ab6e60e47fa6/0_0?beaconFlowId=0797F3764D4EB949\">https://www.lucidchart.com/documents/edit/cff6789b-6e2c-4faf-b39a-ab6e60e47fa6/0_0?beaconFlowId=0797F3764D4EB949</a></p><p><br></p><p>Logout Queue - this queue is run if a logout is triggered:</p><p><a href=\"https://www.lucidchart.com/documents/edit/cff6789b-6e2c-4faf-b39a-ab6e60e47fa6/aMp3dIqgr6SD?beaconFlowId=0797F3764D4EB949\">https://www.lucidchart.com/documents/edit/cff6789b-6e2c-4faf-b39a-ab6e60e47fa6/aMp3dIqgr6SD?beaconFlowId=0797F3764D4EB949</a></p><p><br></p><p><strong>Notable Changes:</strong></p><ul>\n<li><p>Private pages will redirect to Okta immediately</p></li>\n<li><p>Public pages might show a sign-in button → this trigges the \"<span style=\"color: rgb(0,0,0);\">RedirectUnauthenticatedUserToLogin</span>\" queue</p></li>\n<li><p>An OpenID config gets loaded before authentication that contains some OpenID values but also determines if the IdentityAccessManager is enabled.</p></li>\n<li><p>A login_hint might be passed that will be forwarded when redirecting to Okta</p></li>\n<li><p>An idpID might be passed that will be forwarded when redirecting to Okta</p></li>\n<li><p>The different authentication flows are now separated</p></li>\n<li><p>The different logout flows are also separated</p></li>\n</ul><p><br></p><p><strong>Components:</strong></p><ul>\n<li>\n<p>CMS</p>\n<ul><li><p>Login module will get a hint in Portals CMS that it will only show a login button.</p></li></ul>\n</li>\n<li>\n<p>Outbound view</p>\n<ul>\n<li><p>Login module will show a \"Sign In\" button that redirects to our Identity Provider in case IdentityAccessManager is enabled</p></li>\n<li><p>An error page was added that is shown in case an authenticated user does not exist as panelist in the panel administration or does not have permission to the portal</p></li>\n</ul>\n</li>\n</ul><p><br></p><p><br></p><h1 id=\"header-1\">Portals Frontend Handover - What are Todos: <ac:parameter ac:name=\"title\">DONE</ac:parameter><ac:parameter ac:name=\"colour\">Green</ac:parameter> </h1><ul>\n<li><p>Update documentation to the latest state <ac:emoticon ac:emoji-fallback=\":check_mark:\" ac:emoji-id=\"atlassian-check_mark\" ac:emoji-shortname=\":check_mark:\" ac:name=\"tick\"></ac:emoticon> </p></li>\n<li><p>Create a meeting with the portals team <ac:emoticon ac:emoji-fallback=\":check_mark:\" ac:emoji-id=\"atlassian-check_mark\" ac:emoji-shortname=\":check_mark:\" ac:name=\"tick\"></ac:emoticon> </p></li>\n<li><p>Also talk about tickets that are left (possible offer pairing) <ac:emoticon ac:emoji-fallback=\":check_mark:\" ac:emoji-id=\"atlassian-check_mark\" ac:emoji-shortname=\":check_mark:\" ac:name=\"tick\"></ac:emoticon> </p></li>\n</ul><p><br></p><p><br></p>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

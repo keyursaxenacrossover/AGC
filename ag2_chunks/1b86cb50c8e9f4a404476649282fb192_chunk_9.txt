@@ -1,0 +1,65 @@
+>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify">Please note: Older versions of Internet Explorer cannot display the pop-up windows correctly. If a window is positioned over a drop-down box, the box will shine through. Therefore, pop-up windows can be moved.</p>
+<h3 id="configuring-your-own-default-settings" class="wysiwyg-text-align-justify">Configuring your own default settings</h3>
+<p class="wysiwyg-text-align-justify">If you usually work with a constant set of question options, you can make these the default setting in the <strong>Options</strong> → <strong>Preferences </strong>menu on the <strong>Display of questionnaire editor </strong>tab.</p>
+<h2 id="pipe-survey-data" class="wysiwyg-text-align-justify">Pipe survey data</h2>
+<p class="wysiwyg-text-align-justify">You can use so-called <em>dynamic wildcards </em>to access and display answers already given or data saved in participant administration. When surveying children, for example, you can ask for the name of the child responding and then address the child by name during the further course of the survey.</p>
+<p class="wysiwyg-text-align-justify">For this purpose, the name of the corresponding variable, enclosed in two hash signs, is inserted into a question text or an answer option or at any other place in the questionnaire. For example, the #v_2315# wildcard is replaced with the content of the v_2315 project variable.</p>
+<p class="wysiwyg-text-align-justify">From EFS 10.3, <em>piping </em>simplifies the insertion of dynamic content: A dedicated dialog shows all available data. All you need to do is select the appropriate content.</p>
+<p class="wysiwyg-text-align-justify">Please note:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Dynamic output of content cannot be tested in preview mode, as data generated in the preview cannot be allocated to a participant account and dataset.</p>
+</li>
+<li>
+<p>Not all of the wildcards function in the mail trigger and recoding trigger. The contents of project variables relating to an open text field may also be output using #v_000n# in the trigger. For closed-ended questions the wildcard #v_000n# in the trigger only outputs the code. In the mail trigger, you may, however, issue a question‘s label by using the syntax #v_000n | label# or insert other texts using conditional replacement</p>
+</li>
+</ul>
+<h3 id="using-piping-to-insert-dynamic-content" class="wysiwyg-text-align-justify">Using Piping to Insert Dynamic Content</h3>
+<p class="wysiwyg-text-align-justify">To give the newly introduced piping a try, please proceed as follows:</p>
+<ol class="wysiwyg-text-align-justify" start="1">
+<li>
+<p>Click on the <strong>Pipe survey data </strong>button in the question view.</p>
+</li>
+<li>
+<p>In the drop-down list opened, select the desired data type among the available types, e.g. survey variables, static wildcards, or personalized survey participant variables.</p>
+</li>
+<li>
+<p>Finally, select the specific variable and choose between label or code output. EFS will automatically insert the appropriate wildcard into the question text.</p>
+</li>
+</ol>
+<h3 id="dynamic-wildcards-in-detail" class="wysiwyg-text-align-justify">Dynamic Wildcards in Detail</h3>
+<p class="wysiwyg-text-align-justify">Depending on the variable type, the following replacement rules apply:</p>
+<p class="wysiwyg-text-align-justify">Project variables (v_000n): Depending on whether you want to output the label or the code of the variable, use the following syntax:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>#v_000n#: the label of the respective variable, code in e-mail.</p>
+</li>
+<li>
+<p>#v_000n | label#: the label of the respective variable.</p>
+</li>
+<li>
+<p>#v_000n|code#: the code of the respective variable.</p>
+</li>
+<li>
+<p>For variables that refer to open-ended text fields, the entry made by the respondent will be displayed in both cases.</p>
+</li>
+<li>
+<p>URL parameter (p_000n): The wildcards are #p_0001# for the first URL parameter, #p_0002# for the second URL parameter, etc.</p>
+</li>
+<li>
+<p>User-defined variables c_000n: The wildcard is #c_000n#.</p>
+</li>
+<li>
+<p>From EFS 10.5: Scoring variables #s_000x#: The wildcard is #s_000x#.</p>
+</li>
+<li>
+<p>Participant variables u_000n: The wildcard for the participant administration contents is #variablename# (e.g. #u_language#).</p>
+</li>
+<li>
+<p>Participant variables of the panelists in EFS Panel installations u_000n: The wildcard for the user table contents listed in Table <em>11.3 </em>is #u_nameofvariable# (e.g. #u_name#).</p>
+</li>
+<li>
+<p>Master data of the panelists in EFS

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Interface</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script> <!-- Added Marked.js -->
+    <script defer src="/static/script.js"></script>
+</head>
+<body>
+    <div class="chat-container">
+        <div id="chat-window" class="chat-window">
+            <!-- Chat messages will appear here dynamically -->
+        </div>
+        <form id="chat-form" class="chat-form">
+            <textarea id="user-text" name="user_text" rows="2" placeholder="Type your message here..." required></textarea>
+            <input id="file-input" name="images[]" type="file" multiple accept=".png">
+            <div id="image-preview" class="image-preview"></div>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>

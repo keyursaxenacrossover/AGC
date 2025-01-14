@@ -1,0 +1,49 @@
+-renderer-start-pos="12909">Number of completed surveys (based on variable track_num_complete)</p>
+</td>
+<td class="wysiwyg-text-align-justify" style="padding: var(--ds-space-100, 8px); vertical-align: top; height: 44px; width: 364.375px;" colspan="1" rowspan="1" data-colwidth="382">
+<p data-renderer-start-pos="12979">Evaluates the tracking variable “track_num_completed”.</p>
+</td>
+</tr>
+<tr style="height: 44px;">
+<td class="wysiwyg-text-align-justify" style="padding: var(--ds-space-100, 8px); vertical-align: top; height: 44px; width: 360.347px;" colspan="1" rowspan="1" data-colwidth="378">
+<p data-renderer-start-pos="13039">Number of bonus points</p>
+</td>
+<td class="wysiwyg-text-align-justify" style="padding: var(--ds-space-100, 8px); vertical-align: top; height: 44px; width: 364.375px;" colspan="1" rowspan="1" data-colwidth="382">
+<p data-renderer-start-pos="13065">Evaluates the current sum of the bonus points in the panelist’s account.</p>
+</td>
+</tr>
+<tr style="height: 163px;">
+<td class="wysiwyg-text-align-justify" style="padding: var(--ds-space-100, 8px); vertical-align: top; height: 163px; width: 360.347px;" colspan="1" rowspan="1" data-colwidth="378">
+<p data-renderer-start-pos="13143">deprecated: Number of completed surveys (based on variable n_poll)</p>
+</td>
+<td class="wysiwyg-text-align-justify" style="padding: var(--ds-space-100, 8px); vertical-align: top; height: 163px; width: 364.375px;" colspan="1" rowspan="1" data-colwidth="382">
+<p data-renderer-start-pos="13213">Evaluates the “n_poll” system data item which is increased by 1 when the final page of a panel survey is reached, i.e. only completed surveys are taken into account.</p>
+<p data-renderer-start-pos="13380">Please mind: If tracking is activated, evaluation of “track_num_completed” (see above) provides you with more precise information.</p>
+</td>
+</tr>
+<tr style="height: 67px;">
+<td class="wysiwyg-text-align-justify" style="padding: var(--ds-space-100, 8px); vertical-align: top; height: 67px; width: 360.347px;" colspan="1" rowspan="1" data-colwidth="378">
+<p data-renderer-start-pos="13516">Ignored invitations since &lt;date&gt;</p>
+</td>
+<td class="wysiwyg-text-align-justify" style="padding: var(--ds-space-100, 8px); vertical-align: top; height: 67px; width: 364.375px;" colspan="1" rowspan="1" data-colwidth="382">
+<p data-renderer-start-pos="13552">If a panelist ignores a survey, he will have disposition code 11 or 12 in a sampling, i.e. he has not seen the first page of the survey.</p>
+</td>
+</tr>
+<tr style="height: 67px;">
+<td class="wysiwyg-text-align-justify" style="padding: var(--ds-space-100, 8px); vertical-align: top; height: 67px; width: 360.347px;" colspan="1" rowspan="1" data-colwidth="378">
+<p data-renderer-start-pos="13694">Last completed interview at least / not longer than x months ago</p>
+</td>
+<td class="wysiwyg-text-align-justify" style="padding: var(--ds-space-100, 8px); vertical-align: top; height: 67px; width: 364.375px;" colspan="1" rowspan="1" data-colwidth="382">
+<p data-renderer-start-pos="13762">Evaluates the system data item “last_poll_date”, which is filled with the current system date when the final page of a panel survey is reached.</p>
+</td>
+</tr>
+<tr style="height: 67px;">
+<td class="wysiwyg-text-align-justify" style="padding: var(--ds-space-100, 8px); vertical-align: top; height: 67px; width: 360.347px;" colspan="1" rowspan="1" data-colwidth="378">
+<p data-renderer-start-pos="13911">Date of entry should be between (including) &lt;date&gt; and (including) &lt;date&gt;</p>
+</td>
+<td class="wysiwyg-text-align-justify" style="padding: var(--ds-space-100, 8px); vertical-align: top; height: 67px; width: 364.375px;" colspan="1" rowspan="1" data-colwidth="382">
+<p data-renderer-start-pos="13988">Evaluates the system data item “penter_date”, which is set while filling in the registration or during manual import.</p>
+</td>
+</tr>
+<tr style="height: 67px;">
+<td class="wysiwyg-text-align-justify" style="

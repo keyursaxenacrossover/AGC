@@ -1,0 +1,144 @@
+ start, i.e. the invoking of the first page of the questionnaire.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>date_of_last_access</p>
+</td>
+<td>
+<p>date_of_last_access</p>
+</td>
+<td>
+<p>date of last access</p>
+</td>
+<td>
+<p>Date and time of the last access to the survey.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>date_of_first_mail</p>
+</td>
+<td>
+<p>date_of_first_mail</p>
+</td>
+<td>
+<p>date of first mail</p>
+</td>
+<td>
+<p>Date and time of the first invitation mail sent to the participant. The variable is used for all project types which include invitation processes, i.e. personalized projects, panel surveys, and master data surveys. In anonymous projects, it is not filled.</p>
+<p>Please mind: <em>date_of_first_access</em> is updated upon resumption.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>sid</p>
+</td>
+<td>
+<p>sample_id</p>
+</td>
+<td>
+<p>sid</p>
+</td>
+<td>
+<p>Only in panel and master data surveys : ID of the sample that the panelists belong in.</p>
+<p>For the SPSS export, the codes are labeled with the sample titles.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>dt_send_pag_000n</p>
+</td>
+<td>
+<p>rts_000n</p>
+<p>For pgid &gt; 99999: ts_000n</p>
+</td>
+<td>
+<p>relative timestamp for page xxxx</p>
+</td>
+<td>
+<p>Time variables of standard pages and mixed-external pages. These indicate the time in seconds elapsed from the ats until submission of the respective page.</p>
+<p>If the PGID (page ID = installation-specific ID of a questionnaire page or a dynamic element) is bigger than 99.999, the name of the variable is changed to ts_xxx, to prevent problems caused by the length of the variable name when exporting for SPSS.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>rnd_pg_PGID</p>
+</td>
+<td>
+<p>rnd_pg_PGID</p>
+</td>
+<td>
+<p>random page selection order</p>
+</td>
+<td>
+<p>Random selection.</p>
+<p>For each random selection block in the questionnaire, a variable rndPGID is created. PGID is the ID of the random selection element.</p>
+<p>In this variable, the PGIDs of the selected pages are stored, separated by commas.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>rnd_pg_PGID_x</p>
+</td>
+<td>
+<p>rnd_pg_PGID_x</p>
+</td>
+<td>
+<p>random rotation selection order</p>
+</td>
+<td>
+<p>Random order.</p>
+<p>For each random order block in the questionnaire, variables <em>rnd_pg_PGID_NR</em> are created. PGID is the ID of the random order element, NR is the number of randomized subpages.</p>
+<p>Each of these variables contains the PGID of that subpage which has been placed on the respective position in the current cycle.</p>
+<p>Example: The PGID of the random order element is 123, and the sub-pages have PGID 124, 125, and 126. In the questionnaire, they are displayed to a participant in the following order: 126, 124, 125. Then, you will find the following data in the export file: r123_1 = 126, r123_2 = 124, r123_3 = 125</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>tic</p>
+</td>
+<td>
+<p>tic</p>
+</td>
+<td>
+<p>survey ticket id</p>
+</td>
+<td>
+<p>tic variable used in external survey start. The tic variable is always 32 characters long. This cannot be configured.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>s_000n</p>
+<p>(From EFS 10.5)</p>
+</td>
+<td>
+<p>s_000n</p>
+</td>
+<td>
+<p>s_000n</p>
+</td>
+<td>
+<p>Scoring variables.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="overview-of-variable-preallocations" class="wysiwyg-text-align-justify"><strong>Overview of Variable Preallocations</strong></h3>
+<table class="wysiwyg-text-align-justify" style="height: 519px;" border="1" width="777" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" style="width: 231.562px;" data-highlight-colour="#57d9a3">
+<p><strong>Preallocation value</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 538.142px;" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td style="width: 223.542px;">
+<p>-77</p>
+</td>
+<td style="width: 530.122px

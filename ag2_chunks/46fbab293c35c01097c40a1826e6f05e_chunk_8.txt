@@ -1,0 +1,78 @@
+ in the preview.</p>
+</li>
+<li>
+<p>Decide whether the trigger can be executed repeatedly in one survey session. In this example, it is not necessary.</p>
+</li>
+<li>
+<p>Lastly the settings under “Detail configuration” have to be made, i.e. the recodings need to be defined.</p>
+</li>
+<li>
+<p>Select the variable to be recoded, and enter the value for which the recoding condition applies. In the example, “v_1“ is the variable where the answer to the question relating to pertinent departments and characteristic “1” is saved.</p>
+</li>
+<li>
+<p>Confirm by clicking on <strong>Save</strong>.</p>
+</li>
+<li>
+<p>Click on the<strong> Filter</strong> icon, which will now appear, to define the condition.</p>
+</li>
+<li>
+<p>Choose the variable whose content is to be loaded as well as the condition and the code. In this example, variable v_1 is to be prefilled with code 1 if the participant variable labeled “u_department” equals 1.</p>
+</li>
+<li>
+<p>Click on <strong>Save</strong>.</p>
+</li>
+<li>
+<p>Repeat this operation for all characteristics of the variable v_1, which are to be preallocated.</p>
+</li>
+</ul>
+<h3 id="viewing-the-recodings-performed" class="wysiwyg-text-align-justify">Viewing the recodings performed</h3>
+<p class="wysiwyg-text-align-justify">Navigate to the <strong>Projects</strong> → {Selected project} → <strong>Documentation</strong> → <strong>Recoding log</strong> menu to view all recodings that have been performed.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>After six months, the log data will be deleted.</p>
+</li>
+</ul>
+<h2 id="random-trigger" class="wysiwyg-text-align-justify">Random trigger</h2>
+<p class="wysiwyg-text-align-justify">For scientific projects in particular, it is often necessary to form participant groups to which different questionnaire versions are presented at random. The random trigger allows you to make random assignments: All you have to do is enter a range for the random number, e.g. “1-5“ (depending on the number of different questionnaires). At the beginning of the survey, “dice” are used to generate a number, which is then written into a user-defined variable (“c” variable). These variables can subsequently be used to create the corresponding filters for the various questionnaire versions.</p>
+<p class="wysiwyg-text-align-justify">The additional feature “Approximate uniform distribution within given range” has also been incorporated, to achieve a good uniform distribution of the randomly generated numbers and, consequently, of the selected respondent groups, (see last section).</p>
+<p class="wysiwyg-text-align-justify">The random trigger is available for all survey types.</p>
+<h3 id="configuring-the-random-trigger" class="wysiwyg-text-align-justify">Configuring the Random Trigger</h3>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Switch to the page view and open the <strong>Trigger</strong> menu.</p>
+</li>
+<li>
+<p>Choose a random trigger, and confirm by clicking on <strong>Submit</strong>. The trigger will be created.</p>
+</li>
+<li>
+<p>On the <em>Detail Configuration</em>, select the user-defined variable already created, into which the random number will be subsequently written.</p>
+</li>
+<li>
+<p>Set the user-defined variable: You are free to choose the label, however, the variable type should be “Integer or floating point numbers”.</p>
+</li>
+<li>
+<p>Make the usual settings: “Trigger name”, “Trigger description”, “Execution position” and “Condition”.</p>
+</li>
+<li>
+<p>Decide whether the “Also execute trigger in preview mode” function should be enabled. When testing, it may in certain circumstances be helpful to have conditions that remain constant.</p>
+</li>
+<li>
+<p>Decide whether the trigger can be executed repeatedly in one survey session.</p>
+</li>
+<li>
+<p>Lastly the settings under “Detail configuration” have to be made: Only user-defined variables can be used to save the random number.</p>
+</li>
+<li>
+<p>The minimum and maximum values of the random number are required.</p>
+</li>
+<li>
+<p>You have the option of specifying that a uniform distribution should be approximated.</p>
+</li>
+<li>
+<p>Finally, click on <strong>Save</strong>.</p>
+</li>
+</ul>
+<h3 id="uniform-distribution" class="wysiwyg-text-align-justify">Uniform Distribution</h3>
+<p class="wysiwyg-text-align-justify">The distribution of the randomly generated values will only approximate a uniform distribution only if the number of cases is sufficiently large. The special feature labeled “Approximate uniform distribution within given range” is used to allow you to simulate a uniform distribution even with small and medium numbers of participants. If this function is enabled, the numbers generated will no longer be actual random numbers, rather the numbers will be generated in such a way that, even for a small number of cases, their distribution will tend strongly toward a uniform distribution.</p>
+<h2 id="list-trigger" class="wysiwyg-text-align-justify">List trigger</h2>
+<p class="wysiwyg-text-align-justify">The

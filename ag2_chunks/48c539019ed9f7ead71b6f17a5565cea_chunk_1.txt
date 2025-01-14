@@ -1,0 +1,63 @@
+ usually known at the start; feedback providers are known initially or selected later. The wave overview in participant administration lists all waves, showing focus persons and their feedback providers.</p>
+<h3 id="h_01HGKSMPRTPYJHWQX0QXJQX3QZ">Administrating Waves</h3>
+<p>The wave overview lists the following information: name of the wave (click to access focus person overview), max. process status, number of focus persons, sum of feedback participants (counted multiple times if contributing to several constellations), current return rate, field start, field end, end of process, and activity status (waves must be explicitly activated).</p>
+<p><strong>Available actions for waves:</strong> Edit wave (open editing dialog), archive wave (move to archive), delete wave (remove irrevocably with all content).</p>
+<p><strong>Actions for one or several waves:</strong> Invite/Remind (invite/remind all feedback providers or restrict to a specific role), reset and delete data (reset wave, reset disposition codes, delete collected data, allow feedback providers to participate again), reset without deleting data (reset disposition codes without deleting data), export return rate, change wave status (Instead of triggering the status changes manually, you can specify them beforehand).</p>
+<h3 id="h_01HGKSMPRTX0QXJQX3QZJX8YBG">Archiving Waves</h3>
+<div class="flex-shrink-0 flex flex-col relative items-end">
+<div>
+<div class="pt-0">
+<div class="gizmo-bot-avatar flex h-8 w-8 items-center justify-center overflow-hidden rounded-full">
+<div class="relative p-1 rounded-sm flex items-center justify-center bg-token-main-surface-primary text-token-text-primary h-8 w-8">To move a wave to the archive, click on Archive wave. The wave will be removed from the wave overview and listed on the Wave archive tab. To revive an archived wave, click on Recover wave.</div>
+<div class="relative p-1 rounded-sm flex items-center justify-center bg-token-main-surface-primary text-token-text-primary h-8 w-8"> </div>
+</div>
+</div>
+</div>
+</div>
+<h2 id="h_01HGKSMPRTQXJQX3QZJX8YBGX9">Focus Persons</h2>
+<p>In the focus persons overview, you can find the following information for each feedback constellation: login status, name, first name, personnel number, e-mail, organizational unit, gender, language version, feedback phase, and report status. An overview of feedback providers’ role distribution and current return per role (e.g., "DR 1/2" = direct reports: 1 completed feedback, 2 assigned providers) is also available.</p>
+<p><strong>View</strong> allows modifying the display, and <strong>Extended search</strong> allows specifying complex search criteria.</p>
+<p><strong>Actions for administrating focus persons</strong>:</p>
+<ul>
+<li>
+<strong>Edit focus person</strong>: Opens the dialog for editing master and process data.</li>
+<li>
+<strong>Delete focus person</strong>: Removes the complete feedback constellation irrevocably.</li>
+</ul>
+<p><strong>Actions for one or several feedback constellations</strong>:</p>
+<ul>
+<li>
+<strong>Invite/Remind</strong>: Invite or remind all feedback providers of the selected focus persons, or restrict further (e.g., to a specific role).</li>
+<li>
+<strong>Reset and delete data</strong>: Resets the feedback constellation and disposition codes to 11 ("not yet invited") or 12 ("active"), deletes collected data, allowing providers to participate again.</li>
+<li>
+<strong>Reset without deleting data</strong>: Resets disposition codes without deleting collected data.</li>
+<li>
+<strong>Disposition code 15</strong>: Set feedback providers to code 15 if invitation mails bounce, exempting them from future mailings (see “EFS Survey”, Table 11.5).</li>
+<li><strong>Export return rate</strong></li>
+<li>
+<strong>Change focus person to</strong>: Change the status of the feedback constellation.</li>
+</ul>
+<h2 id="h_01HGKSMPRTX0QXJQX3QZJX8YBG">Feedback Providers</h2>
+<p>In the feedback providers overview, you can find the following information for each feedback provider: name, first name, personnel number, e-mail, organizational unit, gender, role in the current feedback constellation, language version, dispositionscode, and code. <strong>View</strong> allows modifying the display, and <strong>Extended search</strong> allows specifying complex search criteria.</p>
+<p><strong>Actions for administrating feedback providers</strong>:</p>
+<ul>
+<li>
+<strong>Preview</strong>: View the questionnaire.</li>
+<li>
+<strong>Edit feedback provider</strong>: Opens the dialog for editing master and process data.</li>
+<li>
+<strong>Delete feedback provider</strong>: Removes the feedback constellation irrevocably (note: the focus person cannot be deleted).</li>
+</ul>
+<p><strong>Actions for one or several feedback providers</strong>:</p>
+<ul>
+<li>
+<strong>Invite/Remind</strong>: See above.</li>
+<li>
+<strong>Reset and delete data / Reset without deleting data</strong>: See above.</li>
+<li>
+<strong>Disposition code 15</strong>: See above.</li>
+<li>
+<strong>Assign new code</strong>: Generates a new access code.</li>
+</ul>
+<h2 id="h_01HGKSMPRV3QZJX

@@ -1,0 +1,101 @@
+efs/organizations/</h3>
+<p>Deletes an EFS admin organisation.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "adminOrgIdentifierType": "id",
+  "adminOrgIdentifierValue": "1234"
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">true</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79DC7W5Q5BD7686CKYR"> </h4>
+<h3 id="header-26">PATCH /efs/organizations/</h3>
+<p>Sets an organization's value. See <code>POST /efs/organizations/</code> for possible <em>adminOrgField</em> names.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "adminOrgIdentifierType": "id",
+  "adminOrgIdentifierValue": "1234",
+  "adminOrgField": "customer_no_common",
+  "adminOrgValue": "KD1234"
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">true</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79D201JPRA8NX3RC87G"> </h4>
+<h3 id="header-27">POST /efs/organizations/</h3>
+<p>Adds an EFS admin organization.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "adminOrgRecord": {
+    "name": "Example",
+    "description": "Example org",
+    "contract_start": "2020-07-02T12:53:50+00:00",
+    "contract_end": "2022-07-02T12:53:50+00:00",
+    "customer_no_common": "Example",
+    "max_active_projects_allowed": "Example",
+    "max_archived_projects_allowed": "Example",
+  },
+  "adminOrgIdentifierReturnType": "id"
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">1234</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79DYSYRMHDD8Y8EMJZP"> </h4>
+<h3 id="header-28">PUT /efs/organizations/</h3>
+<p>Add an existing staff member to an organization.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "adminUserIdentifierType": "u_email",
+  "adminUserIdentifierValue": "example@domain.tld",
+  "adminOrgIdentifierType": "id",
+  "adminOrgIdentifierValue": "1234"
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">true</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79D7Q7K88Q66KMF7K5X"> </h4>
+<h3 id="header-29">POST /efs/organizations/details</h3>
+<p>Returns an organization.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "adminOrgIdentifierType": "id",
+  "adminOrgIdentifierValue": "1234"
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">{
+  "name": "Example",
+  "description": "Example org",
+  "contract_start": "2019-07-01T00:00:00+00:00",
+  "contract_end": "2023-12-30T00:00:00+00:00",
+  "customer_no_common": "KD1234"
+}</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79DEM0HVBTDD29PPCRR"> </h4>
+<h3 id="header-30">POST /efs/organizations/list</h3>
+<p>Returns a list of organizations specified by a search value.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "adminOrgField": "name",
+  "adminOrgValue": "Example",
+  "pageFrom": 0,
+  "pageLimit": 100
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">[
+  {
+    "name": "Example",
+    "description": "Example org",
+    "contract_start": "2019-07-01T00:00:00+00:00",
+    "contract_end": "2023-12-30T00:00:00+00:00",
+    "customer_no_common": "KD1234"
+  }
+]</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79DYPB14RQMSDQBM5NB"> </h4>
+<h3 id="header-31

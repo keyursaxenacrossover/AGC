@@ -1,0 +1,40 @@
+h=ip,disk.avail'</code></pre><h3 id="header-23">Check Node Availability</h3><p>Make sure that all nodes expected to be part of the cluster are up and running. A missing node which holds replicas could be the cause:</p><pre><code class="language-text">curl -XGET 'http://elasticsearch.{{TECHNICALNAME}}.svc.cluster.local:9200/_cat/nodes?v'</code></pre><h3 id="header-24">Summary of all shards for an index</h3><p>This command is used to retrieve a readable summary of all the shards for an index, including details like shard number, primary or replica status, state, and more. It's useful for quick diagnostics and monitoring of the shard distribution and health within an Elasticsearch cluster.</p><pre><code class="language-text">curl -XGET 'http://elasticsearch.{{TECHNICALNAME}}.svc.cluster.local:9200/_cat/shards/opst_{{TECHNICALNAME}}?v'</code></pre><p></p><h2 id="header-26">Handling Translog Corruption in Elasticsearch</h2><p><strong>Overview</strong><br>The transaction log (translog) in Elasticsearch plays a critical role in ensuring data durability between flushes to disk, by recording all operations that modify data. Corruption of the translog can prevent shards from recovering and cause data loss, often resulting from hardware failures, abrupt system shutdowns, or file system issues.</p><p><strong>Symptoms</strong><br>Typical symptoms of translog corruption include:</p><ul>
+<li><p>Errors during shard recovery, often marked by <code>IndexShardGatewayRecoveryException</code> and <code>TranslogCorruptedException</code> in the Elasticsearch logs.</p></li>
+<li><p>Failure to restart a node or to recover an index after a restart.</p></li>
+</ul><p><strong>Preventive Measures</strong><br>To minimize the risk of translog corruption:</p><ul>
+<li><p>Ensure all Elasticsearch nodes are shut down gracefully.</p></li>
+<li><p>Use reliable hardware and conduct regular health checks on your storage systems.</p></li>
+<li><p>Configure frequent snapshots to safeguard data and facilitate easier recovery.</p></li>
+</ul><p><strong>Diagnosis</strong><br>When suspecting translog corruption, examine the Elasticsearch logs for stack traces or error messages indicating <code>TranslogCorruptedException</code>. These logs provide insights into which shard and node are affected.</p><p><strong>Recovery Steps</strong></p><ol start="1">
+<li>
+<p><strong>Identify and Isolate the Issue:</strong></p>
+<ul>
+<li><p>Confirm the corruption by checking logs for translog-related errors.</p></li>
+<li><p>Identify the affected node and shard.</p></li>
+</ul>
+</li>
+<li>
+<p><strong>Remove Corrupted Translog Files:</strong></p>
+<ul>
+<li><p>Navigate to the translog directory (<code>/var/lib/elasticsearch/nodes/0/indices/[index_name]/[shard_id]/translog</code>).</p></li>
+<li><p>Make a backup of the existing translog files.</p></li>
+<li><p>Remove the corrupted translog files to allow Elasticsearch to attempt to rebuild them from the last successful checkpoint.</p></li>
+</ul>
+</li>
+<li>
+<p><strong>Restart the Node:</strong></p>
+<ul><li><p>Restart the Elasticsearch node to trigger recovery. If the translog was the only issue, the shard should recover successfully.</p></li></ul>
+</li>
+<li>
+<p><strong>Restore from Backup:</strong></p>
+<ul><li><p>If shard recovery fails or significant data loss is observed, restore the affected index or shard from a recent snapshot.</p></li></ul>
+</li>
+<li>
+<p><strong>Monitor and Validate:</strong></p>
+<ul>
+<li><p>After recovery, monitor the logs and cluster health to ensure no further issues occur.</p></li>
+<li><p>Validate the integrity of the data by running consistency checks or comparing document counts.</p></li>
+</ul>
+</li>
+<li><p><strong>Run the panel_reset_activitystream.php script</strong> - the documentcount should recover over time by itself.</p></li>
+</ol><p></p><p></p>

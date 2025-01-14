@@ -1,0 +1,47 @@
+<p><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p>This article provides essential guidelines for creating layouts in EFS (Enterprise Feedback Suite), focusing on key aspects to consider for optimal survey design and user experience.</p>
+<p> </p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>When designing surveys in EFS, it's crucial to pay attention to several factors that can impact the respondent's experience and the overall effectiveness of your survey. This guide covers important considerations for mobile-friendly design, screen resolution, loading times, and JavaScript usage.</p>
+<p> </p>
+<ul>
+<li><a href="#mobile_friendly">Mobile-Friendly Design</a></li>
+<li><a href="#resolution">Screen Resolution</a></li>
+<li><a href="#loading_times">Loading Times</a></li>
+<li><a href="#javascript">JavaScript Considerations</a></li>
+</ul>
+<p> </p>
+<h2 id="mobile_friendly">Mobile-Friendly Design</h2>
+<p>When creating layouts for mobile environments, avoid defining layouts with pixel-level precision. This is particularly important for the new "Responsive layout" feature. To enhance the user experience:</p>
+<ul>
+<li>Allow respondents to view as much of the questionnaire page as possible without scrolling.</li>
+<li>Avoid using excessively large or high logos in the header area of the page.</li>
+</ul>
+<p> </p>
+<h2 id="resolution">Screen Resolution</h2>
+<p>Consider that some respondents may be using PCs with lower screen resolutions. To ensure accessibility:</p>
+<ul>
+<li>Design your survey to be visible without vertical scrolling on screens with a resolution of 800x600.</li>
+<li>Use the Sizer freeware tool (<a href="https://www.brianapps.net/sizer.html">https://www.brianapps.net/sizer.html</a>) to test your project in different resolutions.</li>
+</ul>
+<p> </p>
+<h2 id="loading_times">Loading Times</h2>
+<p>When incorporating images into your survey, be mindful of file sizes to ensure quick loading times:</p>
+<ul>
+<li>Check the file size of each image you use.</li>
+<li>Aim to keep the combined size of all images to approximately 30 to 40 kilobytes or less.</li>
+</ul>
+<p> </p>
+<h2 id="javascript">JavaScript Considerations</h2>
+<p class="wysiwyg-text-align-justify">You can use JavaScript to realize graphical form elements and usability features that facilitate data entry. With JavaScript disabled, those additional options are eliminated, and in extreme cases, the survey can no longer be edited. ​Especially if you are conducting your project in an environment such as a large group of companies, which may be centrally regulated, you should, in advance, check with the responsible technology department whether JavaScript is enabled in the standard configuration of the staff PCs and, if necessary, refrain from using JavaScript-based features. ​You can have the respondents’ browsers checked for functioning JavaScript. If JavaScript is not activated, the graphical form elements will automatically be replaced with HTML form elements.</p>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq_1">Why is mobile-friendly design important for surveys?</h3>
+<p>Mobile-friendly design ensures that your survey is easily accessible and usable on various devices, including smartphones and tablets. This approach increases response rates and improves the overall user experience for respondents.</p>
+<h3 id="faq_2">How can I test my survey's compatibility with different screen resolutions?</h3>
+<p>You can use the Sizer freeware tool (https://www.brianapps.net/sizer.html) to easily test your project in different resolutions, ensuring that your survey is visible without vertical scrolling even on screens with lower resolutions.</p>
+<h3 id="faq_3">What should I do if JavaScript is not allowed in the survey environment?</h3>
+<p>If JavaScript is not allowed or disabled, focus on using standard HTML form elements instead of JavaScript-based features. Ensure that your survey remains functional and easy to use without relying on JavaScript enhancements.</p>
+<p> </p>
+</article>

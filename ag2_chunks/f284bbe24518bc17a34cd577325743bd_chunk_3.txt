@@ -1,0 +1,171 @@
+ APIs on EFS Backend:</p>
+<ul>
+<li>
+<p>HTTP queries</p>
+</li>
+<li>
+<p>Internal Rest-API</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Sourcecode</p>
+<ul>
+<li>
+<p><a href="https://bitbucket.org/qbengineering/questback_client_efs_panel/src/master/" data-card-appearance="inline">https://bitbucket.org/qbengineering/questback_client_efs_panel/src/master/</a></p>
+</li>
+<li>
+<p><a href="https://bitbucket.org/qbengineering/tivian_server_application_efs/src/master/modules/" data-card-appearance="inline">https://bitbucket.org/qbengineering/tivian_server_application_efs/src/master/modules/</a></p>
+</li>
+<li>
+<p><a href="https://bitbucket.org/qbengineering/tivian_server_application_efs/src/master/panelwebsite/" data-card-appearance="inline">https://bitbucket.org/qbengineering/tivian_server_application_efs/src/master/panelwebsite/</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="header-9">EFS Portals frontend</h3>
+<ul>
+<li>
+<p>UI for Portals single-page application</p>
+<ul>
+<li>
+<p>Separate login for portalists either handled directly by EFS Backend or delegated to Okta for SSO intergration.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Used technologies:</p>
+<ul>
+<li>
+<p>Static bootstrap HTML markup rendered at build-time, stored within Docker image</p>
+</li>
+<li>
+<p>JS frameworks: CanJS</p>
+</li>
+<li>
+<p>CSS created via Sass at build-time</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Hosted on EFS Backend pods and NFS</p>
+</li>
+<li>
+<p>Used APIs on EFS Backend:</p>
+<ul>
+<li>
+<p>Internal Rest-API</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Sourcecode</p>
+<ul>
+<li>
+<p><a href="https://bitbucket.org/qbengineering/questback_client_efs_portals/src/master/" data-card-appearance="inline">https://bitbucket.org/qbengineering/questback_client_efs_portals/src/master/</a></p>
+</li>
+<li>
+<p><a href="https://bitbucket.org/qbengineering/questback_client_efs_portals-canjs2-cms/src/master/" data-card-appearance="inline">https://bitbucket.org/qbengineering/questback_client_efs_portals-canjs2-cms/src/master/</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="header-10">EFS Reporting+ frontend</h3>
+<ul>
+<li>
+<p>UI for Reporting+ single-page application</p>
+<ul>
+<li>
+<p>No separate login, accessible from EFS Admin area only.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Used technologies:</p>
+<ul>
+<li>
+<p>Bootstrap HTML markup rendered by PHP on EFS Backend.</p>
+</li>
+<li>
+<p>JS frameworks: Dojo</p>
+</li>
+<li>
+<p>CSS created via Sass at build-time</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Hosted on EFS Backend pods</p>
+</li>
+<li>
+<p>Used APIs on EFS Backend:</p>
+<ul>
+<li>
+<p>Internal Rest-API</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Sourcecode</p>
+<ul>
+<li>
+<p><a href="https://bitbucket.org/qbengineering/tivian_server_application_efs/src/master/reporting/" data-card-appearance="inline">https://bitbucket.org/qbengineering/tivian_server_application_efs/src/master/reporting/</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="header-11">EFS external API</h3>
+<ul>
+<li>
+<p>Customer facing public API</p>
+</li>
+<li>
+<p>Directly integrated into EFS Backend pods, doesn’t use internal API</p>
+</li>
+<li>
+<p>Usable only with access-token or HTTP-Basic auth</p>
+<ul>
+<li>
+<p>Access-token is generated within EFS Admin area for dedicated ACL rights</p>
+</li>
+<li>
+<p>HTTP-Basic auth uses credentials of admininstrator login and inherits resp. ACL rights</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Covers a subset of all functionality available in EFS</p>
+</li>
+<li>
+<p>Used technologies:</p>
+<ul>
+<li>
+<p>PHP</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Hosted on EFS Backend pods</p>
+</li>
+<li>
+<p>Supported protocols:</p>
+<ul>
+<li>
+<p>REST</p>
+</li>
+<li>
+<p>SOAP</p>
+</li>
+<li>
+<p>JSON (homebrew protocol usually used by Product-Customizing)</p>
+</li>
+<li>
+<p>PHP (homebrew protocol usually used by Product-Customizing)</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Sourcecode</p>
+<ul>
+<li>
+<p><a href="https://bitbucket.org/qbengineering/tivian_server_application_efs/src/master/modules/service/" data-card-appearance="inline">https://bitbucket.org/qbengineering/tivian_server_application_efs/src/master/modules/service

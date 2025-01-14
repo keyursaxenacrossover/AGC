@@ -1,0 +1,111 @@
+61bb330a420">Alternative</ac:inline-comment-marker></strong><ac:inline-comment-marker ac:ref="e8f33429-76fb-4a55-ab18-a61bb330a420">: user changes from AD are pushed to SSO provider</ac:inline-comment-marker></p>
+<p></p>
+<h4 id="header-52">Application / SSO provider changes</h4>
+<ul>
+<li>
+<p>In case user data are changed in one application, these are synced to SSO provider <strong>or</strong> in case changes occur in SSO provider data are synced to application BUT</p>
+<ul><li><p>No data sync occurs to AD</p></li></ul>
+</li>
+<li><p>When user logs out and logs in again AD data sync to SSO provider and overwrites the application changes</p></li>
+</ul>
+<h3 id="header-54">Deletion</h3>
+<h4 id="header-56">Deletion in AD</h4>
+<p>When user is deleted within AD his data will be removed from SSO provider and from all applications</p>
+<h4 id="header-57">Deletion in application</h4>
+<p>see above and AD is untouched</p>
+<h4 id="header-58">Deletion in SSO provider</h4>
+<p>see above and AD is untouched</p>
+<p></p>
+<p></p>
+<p></p>
+<h2 id="header-61">Login mask</h2>
+<ul>
+<li>
+<p>The Tivian Access Login would contain two input fields</p>
+<ul>
+<li><p>E-mail address</p></li>
+<li><p>PW</p></li>
+<li><p>Forgot PW link</p></li>
+</ul>
+</li>
+<li><p>In case user enters application url he needs to enter his mail</p></li>
+<li><p>In case user accesses the application URL via mail, the email address woul be prefilled and cannot be edited</p></li>
+<li><p>In case a wrong PW is entered, an error message appears</p></li>
+</ul>
+<p></p>
+<h2 id="header-62">Forgot Password</h2>
+<p>When user clicks on the link on Login mask </p>
+<ul>
+<li><p>he gets a confirmation message that he will receive a mail</p></li>
+<li><p>he gets a pw recovery mail from SSO provider with a link</p></li>
+<li><p>when clicking on the link he is forwarded to a page where he can set a new password</p></li>
+<li><p>once he confirms the password he is directly logged in the application</p></li>
+</ul>
+<p></p>
+<h2 id="header-63">Forgot Account?</h2>
+<p></p>
+<h2 id="header-64">Multifactor Authentication</h2>
+<ul>
+<li><p>Enable MFA option in SSO provider</p></li>
+<li><p>Derive workflow from provider</p></li>
+<li>
+<p>Ideal workflow: see Okta MFA</p>
+<ul>
+<li><p>… </p></li>
+<li><p>E-mail</p></li>
+<li><p>App</p></li>
+<li><p>Biometrie</p></li>
+</ul>
+</li>
+</ul>
+<p></p>
+<h2 id="header-65">Logout</h2>
+<p>In case user logs out from one application he will also be logged out from all other applications directly, ie session is killed (token expires)</p>
+<p></p>
+<h2 id="header-66">Registration</h2>
+<ul>
+<li>
+<p>User registers in application with his data</p>
+<ul>
+<li><p>name</p></li>
+<li><p>first name</p></li>
+<li><p>mail</p></li>
+<li><p>(acccount name)</p></li>
+</ul>
+</li>
+<li><p>He gets the welcome mail with the link </p></li>
+<li>
+<p>When clicking on the link he is forwarded to a page with</p>
+<ul>
+<li><p>a preset e-mail address that cannot be edited </p></li>
+<li><p>a pw input field</p></li>
+</ul>
+</li>
+</ul>
+</div><h2 id="header-67">To be dicussed / evaluated</h2><ul>
+<li>
+<p>E-mail as unique identifier?</p>
+<ul>
+<li>
+<p>If yes</p>
+<ul>
+<li><p>e-mail will not be editable</p></li>
+<li><p>in case user changes e-mail, a new user needs to be created, but previous data will be lost </p></li>
+</ul>
+</li>
+<li>
+<p>If not</p>
+<ul>
+<li><p>e-mail can be changed without any problem</p></li>
+<li><p>user id could be used as unique identifier</p></li>
+<li><p>user id needs to be added in each application</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Layout (<a href="https://www.figma.com/file/mQtPqW3mb2Sm5GZTbkJgM2/Tivian-Access?node-id=0%3A1&amp;t=rHDCVuXO0Da9Jvec-0">Tivian Access</a>) </p>
+<ul><li><p>Can SSO-Provider handle logos and color changes?</p></li></ul>
+</li>
+<li>
+<p>P

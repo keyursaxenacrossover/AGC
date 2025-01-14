@@ -1,0 +1,54 @@
+ variables used in the quota conditions must already exist when you perform the quota check.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Enter the questionnaire before starting with the actual creation of the quotas. Participants should also already exist or, in the case of a panel survey, the sample should already be drawn.</p>
+</li>
+<li>
+<p>Define the quotas in the <strong>Survey menu</strong> → <strong>Questionnaire editor</strong> → <strong>Quotas</strong> menu.</p>
+</li>
+<li>
+<p>Specify the sequence of the quota process on the<strong> Configuration</strong> tab.</p>
+</li>
+<li>
+<p>If you make use of the possibility of excluding participants from the survey due to external quotas, it may be the case that respondents cannot open the questionnaire in the first place. In the Project properties-&gt;Survey messages menu, adapt the text of the message these respondents will receive when trying to log in.</p>
+</li>
+<li>
+<p>If you have defined internal quotas (i.e. quotas whose conditions contain variables that are determined only in the course of the survey), you have to specify after which questionnaire page the checking for these quotas is to be performed. To do so, select an appropriate page in the <strong>Questionnaire editor</strong>, open its <strong>Properties</strong> menu, and select the option “Check internal quotas”.</p>
+</li>
+<li>
+<p>Set up the questionnaire so as to appropriately screen out any respondents no longer required. This is commonly achieved with a filter that redirects<br>respondents with “quota” = “0” (i.e. respondents that have not been allocated to any open quota) to an intermediate final page.</p>
+</li>
+</ul>
+<h3 id="the-quota-schedule" class="wysiwyg-text-align-justify">The quota schedule</h3>
+<p class="wysiwyg-text-align-justify">The quota schedule is fundamental to defining quotas. In this schedule, you list in detail which characteristics are to be displayed by how many participants. To create such a schedule, you enter the relevant characteristics into a matrix. Then you specify the target values for the individual cells. There are two options, that produce different results:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><em>interlocking</em>: The quotas are defined using the inner cells. Thus, the feature combinations for the total of 100 participants admitted in the example shown below will be specified in detail: 25 young men, 25 old men, etc.</p>
+</li>
+<li>
+<p><em>non-interlocking</em>: The quotas are defined using the margin values, without regard to the distribution in the inner cells. In the example shown below, this means: a total of 100 participants will be admitted, among them, firstly, 50 men and 50 women and, secondly, 50 young people and 50 old people. The internal distribution of the quota is not defined, i.e. there may be, for example, 40 young men and 10 old men, 10 young women and 40 old women participating.</p>
+</li>
+</ul>
+<h3 id="internal-and-external-quotas" class="wysiwyg-text-align-justify">Internal and external quotas</h3>
+<p class="wysiwyg-text-align-justify">Two types of quotas are processed at different times and therefore configured in different ways to some extent:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Internal quotas: These quotas contain variables whose value is determined only in the course of the survey.</p>
+</li>
+<li>
+<p>External quotas: These quotes refer solely to variables originating from external sources and existing beforehand, i.e. variables that are not determined in the course of the survey. External quotas are used only in surveys with a predefined pool of participants.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If a quota condition contains both survey variables and external variables, it will be treated as an internal quota, i.e. it will not be automatically executed before login.</p>
+<p class="wysiwyg-text-align-justify">A quota that accesses URL parameters is internal.</p>
+<h3 id="quota-timetable" class="wysiwyg-text-align-justify">Quota timetable</h3>
+<p class="wysiwyg-text-align-justify">Depending on what kind of quota there are in a project and which process has been configured, events can be triggered at different stages in the course of the survey.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Optionally, the participants can be checked for external quotas already before the start of the survey. To do so, select the <strong>Configuration</strong> tab. The checking procedure is as follows:</p>
+<ul>
+<li>
+<p>Every time a participant has completed the questionnaire and the allocation figures in the quota statistics are changed accordingly, all those participants that have not yet started the survey (disposition code &lt; 20) will be checked for external quotas.</p>
+</li>
+<li>
+<p>Of these participants, the system will exclude those that fall within a full external quota from participating, i.e. they are assigned disposition code 41<br>(“quota closed”) in the participant administration. Any data accumulated by the participant (during the respective survey) will be deleted in this process and will not be considered in the survey. If these participants try to log in, they will be rejected and assigned disposition code 35 (“rejected at login (quota closed)

@@ -1,0 +1,36 @@
+ists who have indicated that they own a car in the master data survey, and if so, they will be automatically added to the “Car owner” group.</p>
+<p> </p>
+<hr>
+<h2 id="Inviting-Panelists-to-the-Master-Data-Survey" class="wysiwyg-text-align-justify" data-renderer-start-pos="12557"><strong data-renderer-mark="true">Inviting Panelists to the Master Data Survey</strong></h2>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="12603">So far, you have imported panelists into the panelist administration, created a master data record, set up a master data survey and assigned the corresponding master data record to a question as an example. Additionally, you have created a group, a grouping filter and an appropriate update rule for the group. In the next step, we will search for the imported panelists, invite them to our created master data survey and then check whether the configured grouping filter works as expected.</p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="13095">The panel status of the panelists we imported in the previous step is "Admitted temporarily". Panelists with this status can be found in the panelist administration under <strong data-renderer-mark="true">Candidates</strong>.</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="13281">In the <em data-renderer-mark="true">People</em> module, select the <strong data-renderer-mark="true">Panelist administration</strong> menu item from the menu on the left-hand side.</p>
+</li>
+<li>
+<p data-renderer-start-pos="13388">Then select the <strong data-renderer-mark="true">Candidate</strong> menu item.</p>
+</li>
+<li>
+<p data-renderer-start-pos="13428">Enter the @ sign in the <strong data-renderer-mark="true">Search text</strong> field and click on <strong data-renderer-mark="true">Search</strong>. As an e-mail address is stored for each panelist, you can use the @ sign to display all candidates.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21018302919570"></p>
+</li>
+</ul>
+<ul class="wysiwyg-text-align-justify">
+<li data-renderer-start-pos="13428">The 3 panelists we have previously imported are listed at the bottom of the page under <strong data-renderer-mark="true">Panelists found</strong>.</li>
+<li data-renderer-start-pos="13428">Activate the checkbox on the far right under <strong data-renderer-mark="true">Actions</strong> for all 3 panelists.</li>
+<li data-renderer-start-pos="13428">Select the <strong data-renderer-mark="true">Master data survey</strong> action from the drop-down menu further down.</li>
+<li class="wysiwyg-text-align-left" data-renderer-start-pos="13428">Click on <strong data-renderer-mark="true">Execute</strong>.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21018333476882">
+</li>
+<li data-renderer-start-pos="13428">On the next page, select the master data survey you created from the drop-down menu.</li>
+<li>Click on <strong data-renderer-mark="true">Execute</strong>.</li>
+<li>A new page for composing the invitation email is displayed.</li>
+<li>Either select the desired template for your invitation email from the drop-down menu next to <strong data-renderer-mark="true">Mail template</strong> or – if you have not yet configured a template – fill in the relevant fields manually:</li>
+<li>Under <strong data-renderer-mark="true">Delivery</strong>, select the <strong data-renderer-mark="true">E-mail</strong> option.</li>
+<li>Under <strong data-renderer-mark="true">Mail sender</strong>, select yourself or the person you would like to specify as the mail sender. If no mail sender is displayed in the drop-down menu, you must first add one. </li>
+<li>Select <strong data-renderer-mark="true">HTML only</strong> as the mail format and click on <strong data-renderer-mark="true">Apply mail format</strong>.</li>
+<li>Enter the subject. In our case: "Invitation to master data survey".</li>
+<li>Draft the text for your invitation email in the <em data-renderer-mark="true">Visual editor</em>. You must insert placeholders so that content such as the participant's name and the link to the survey are replaced dynamically for each participant. You can view a list of all available placeholders by clicking on the question mark under the <strong data-renderer-mark="true">Subject</strong> field. In the example below, the placeholder #u_firstname# is replaced by the first name of the panelist, #u_name# by the last name and #code_complete# by the link to the survey.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21018333478930">
+</li>
+<li>If necessary, adjust the date and time for sending the invitation under <strong data-renderer-mark="true">Delivery options</strong>.</li>
+<li>Then click on <strong data-renderer-mark="true">Preview mail</strong> at the bottom right of the page.</li>
+<li>A mail preview is displayed. Check that all placeholders have been replaced

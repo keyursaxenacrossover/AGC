@@ -1,0 +1,91 @@
+ possible workarounds.</p>
+<h3 id="recommended-efs-alias-domain-dns-records-directly-pointing-to-efs">Recommended EFS-Alias-Domain DNS Records directly pointing to EFS</h3>
+<h4 id="ip-related-entries-for-apex-domain-incl-www-subdomain">IP-Related entries - For Apex-Domain incl. www-Subdomain</h4>
+<pre><code class="language-text">example.com IN ALIAS(or ANAME or Flattened-CNAME) &lt;ab1234&gt;.customervoice360.com.
+
+www.example.com IN CNAME example.com.
+or
+www.example.com IN ALIAS(or ANAME or Flattened-CNAME) example.com.</code></pre>
+<h4 id="ip-related-entries-for-sub-domain-only">IP-Related entries - For Sub-Domain only</h4>
+<pre><code class="language-text">some.example.com IN ALIAS(or ANAME) &lt;ab1234&gt;.customervoice360.com.</code></pre>
+<h4 id="mail-related-entries">Mail-related entries</h4>
+<pre><code class="language-text">(some.)example.com IN MX &lt; e.g. 10 {customer-recieveing-mail-host}&gt;
+
+(some.)example.com IN TXT "v=spf1 &lt;additional-mechanisms&gt; include:spf.qb-feedback.com -all"
+
+&lt;selector, usually 'qb'&gt;._domainkey.(some.)example.com IN TXT "v=DKIM1; k=rsa; p=&lt;public-key&gt;"
+
+_dmarc.(some.)example.com IN TXT "v=DMARC1; p=none; pct=100; aspf=s; adkim=s; rua=mailto:&lt;customer-dmarc-reporting-mail&gt;;"
+or
+_dmarc.(some.)example.com IN TXT "v=DMARC1; p=quarantine; pct=100; aspf=s; adkim=s; rua=mailto:&lt;customer-dmarc-reporting-mail&gt;;"
+or
+_dmarc.(some.)example.com IN TXT "v=DMARC1; p=reject; pct=100; aspf=s; adkim=s; rua=mailto:&lt;customer-dmarc-reporting-mail&gt;;"
+
+special case DMARC example:
+_dmarc.some.example.com IN TXT "v=DMARC1; p=reject; pct=100; aspf=s; adkim=s; rua=mailto:dmarc-reporting@example.net;"
+some.example.com._report._dmarc.example.net IN TXT "v=DMARC1"</code></pre>
+<ul>
+<li>
+<p>Verification-Tool for SPF &amp; DKIM: <a href="https://www.mail-tester.com/spf-dkim-check">https://www.mail-tester.com/spf-dkim-check</a></p>
+</li>
+</ul>
+<h4 id="optional-certificate-related-entries">(optional) Certificate-related entries</h4>
+<pre><code class="language-text">(some.)example.com IN CAA issue "letsencrypt.org"</code></pre>
+<h4 id="special-case-domain-will-point-to-cdn-e-g-akamai-waf-e-g-cloudflare">Special case: Domain will point to CDN (e.g. Akamai) / WAF (e.g. Cloudflare)</h4>
+<ul>
+<li>
+<p>The Backend of the Service-Provider <strong>must</strong> be configured to use the <strong>technical domain</strong> of the installation</p>
+</li>
+<li>
+<p>Recommendation:</p>
+<ul>
+<li>
+<p>IP-Related Records are setup as shown above but targeting the Service-Provider-Domain instead</p>
+</li>
+<li>
+<p>Mail-Related records are setup as shown above, if domain is intended for mailing</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="special-case-technical-domain-is-akamized">Special case: Technical domain is Akamized</h4>
+<ol start="1">
+<li>
+<p>An additional technical-domain has to be setup, just for all aliases, see below</p>
+</li>
+<li>
+<p>Afterwards DNS-Records should be setup as described before but instead targeting the technical-alias-domain</p>
+</li>
+</ol>
+<pre><code class="language-text">&lt;installation-short-name&gt;-aliases.customervoice360.com IN CNAME &lt;domain-of-service-backend&gt;.</code></pre>
+<h3 id="how-to-match-recommended-record-setup-as-close-as-possible-for-customer-managed-domain">How to match recommended Record-Setup as close as possible for customer managed domain</h3>
+<p>The following shows the different options available in descending order of preference with corresponding:</p>
+<ul>
+<li>
+<p>Advantages</p>
+</li>
+<li>
+<p>Disadvantages</p>
+</li>
+<li>
+<p>How-To</p>
+</li>
+</ul>
+<h4 id="alias-aname-record-cname-flattening">ALIAS- / ANAME-Record / CNAME Flattening</h4>
+<ul>
+<li>
+<p>Advantages:</p>
+<ul>
+<li>
+<p><span style="color: #36b37e;">Recommended record-set can be created 1-to-1</span></p>
+</li>
+<li>
+<p><span style="color: #36b37e;">All configuration goals can be reached</span></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Disadvantages:</p>
+<ul>
+<li>
+<p><span

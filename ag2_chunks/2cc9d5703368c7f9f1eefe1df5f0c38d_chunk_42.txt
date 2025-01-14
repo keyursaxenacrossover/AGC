@@ -1,0 +1,111 @@
+ bank code.</p>
+<p>E.g. to validate against a 1 to the 10-digit sized number you can specify the following expression: ^([0-9]{1,10})$</p>
+</td>
+<td style="height: 118px; width: 156.997px;">
+<p> </p>
+</td>
+</tr>
+<tr style="height: 118px;">
+<td style="height: 118px; width: 175.052px;">
+<p>Validation of account number</p>
+</td>
+<td style="height: 118px; width: 399.497px;">
+<p>You can define your own Regex check to validate the account number.</p>
+<p>I.e. to validate against a 1 to 10-digit sized number you can specify the following expression: ^([0-9]{1,10})$</p>
+</td>
+<td style="height: 118px; width: 156.997px;">
+<p> </p>
+</td>
+</tr>
+<tr style="height: 163px;">
+<td style="height: 163px; width: 175.052px;">
+<p>Store entered data for bank payments in selected master data variables and use master data variables for preselection</p>
+</td>
+<td style="height: 163px; width: 399.497px;">
+<p>Activate this option if you want to store the entered details and use them to prefill the form for future payments.</p>
+<p>If you use this option, create appropriate master data (data type: text) and select these from the drop-down lists in the field “The following fields should be displayed for bank payments”.</p>
+</td>
+<td style="height: 163px; width: 156.997px;">
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="function-module-send-private-messages-to-panelists" class="wysiwyg-text-align-justify"><strong>Function Module: Send Private Messages to Panelists</strong></h3>
+<p class="wysiwyg-text-align-justify">When using the community function “Messages from panelists to panelists”, the function module “Send private messages to panelists” allows you to create the form for private messages:</p>
+<p class="wysiwyg-text-align-justify">In the standard panel, the appearance of the form is determined by the “func_messages_send” template.</p>
+<p class="wysiwyg-text-align-justify"><strong>Options</strong></p>
+<p class="wysiwyg-text-align-justify">The “Send private messages to panelists” function module offers the following options.</p>
+<table class="wysiwyg-text-align-justify" style="height: 665px;" border="1" width="763" data-layout="default" data-table-width="760">
+<colgroup>
+<col style="width: 160.0px;">
+<col style="width: 464.0px;">
+<col style="width: 136.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" style="width: 152.396px;" data-highlight-colour="#57d9a3">
+<p><strong>Option</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 441.892px;" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 158.316px;" data-highlight-colour="#57d9a3">
+<p><strong>Standard panel</strong></p>
+</th>
+</tr>
+<tr>
+<td style="width: 144.375px;">
+<p>Reference name for template</p>
+</td>
+<td style="width: 433.872px;">
+<p>Name that can be used to trigger the module in positioning templates.</p>
+</td>
+<td style="width: 150.295px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 144.375px;">
+<p>Page module title</p>
+</td>
+<td style="width: 433.872px;">
+<p>Name of the module in the page’s module overview</p>
+</td>
+<td style="width: 150.295px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 144.375px;">
+<p>Module template</p>
+</td>
+<td style="width: 433.872px;">
+<p>Module-specific template that controls how data provided by the module are displayed.</p>
+</td>
+<td style="width: 150.295px;">
+<p>func_messages_send</p>
+</td>
+</tr>
+<tr>
+<td style="width: 144.375px;">
+<p>Message header is optional</p>
+</td>
+<td style="width: 433.872px;">
+<p>If this option is activated, the panelists can leave the “Subject” field blank.</p>
+</td>
+<td style="width: 150.295px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 144.375px;">
+<p>Mail template for messages</p>
+</td>
+<td style="width: 433.872px;">
+<p>Mail template for defining the accompanying text for the e-mail.</p>
+<p>Available are templates of the “standard mail” type.</p>
+<p>The following wildcards can be used:</p>
+<ul>
+<li>
+<p>#sender_u_firstname#: The sender

@@ -1,0 +1,115 @@
+ dispatch SMS via triggers.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">You will usually be on the safe side if you select the “Execution position = After submitting page, before filter” option!</p>
+<p class="wysiwyg-text-align-justify">Make sure you adjust the type of the user-defined variable (Labels and data type link) if you do not want to save integers to the variable. If necessary, change the type to Text or Decimal.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h3 id="condition-editor" class="wysiwyg-text-align-justify">Condition editor</h3>
+<p class="wysiwyg-text-align-justify">In the condition editor, you specify for which event the trigger will be activated/executed. The following operators can be used.</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 226.67px;"> <col style="width: 226.67px;"> <col style="width: 226.67px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" style="width: 160.104px;" data-highlight-colour="#c0b6f2">
+<p><strong>Operator</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 156.493px;" data-highlight-colour="#c0b6f2">
+<p><strong>Symbol</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 373.021px;" data-highlight-colour="#c0b6f2">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td style="width: 152.083px;">
+<p>greater</p>
+</td>
+<td style="width: 148.472px;">
+<p>&gt;</p>
+</td>
+<td style="width: 365px;">
+<p>Greater than “answer value x”</p>
+</td>
+</tr>
+<tr>
+<td style="width: 152.083px;">
+<p>greater equal</p>
+</td>
+<td style="width: 148.472px;">
+<p>&gt;=</p>
+</td>
+<td style="width: 365px;">
+<p>Greater than or equal to “answer value x”</p>
+</td>
+</tr>
+<tr>
+<td style="width: 152.083px;">
+<p>equal</p>
+</td>
+<td style="width: 148.472px;">
+<p>==</p>
+</td>
+<td style="width: 365px;">
+<p>Equal to “answer value x”</p>
+</td>
+</tr>
+<tr>
+<td style="width: 152.083px;">
+<p>less equal</p>
+</td>
+<td style="width: 148.472px;">
+<p>&lt;=</p>
+</td>
+<td style="width: 365px;">
+<p>Less than or equal to “answer value x”</p>
+</td>
+</tr>
+<tr>
+<td style="width: 152.083px;">
+<p>less</p>
+</td>
+<td style="width: 148.472px;">
+<p>&lt;</p>
+</td>
+<td style="width: 365px;">
+<p>Less than “answer value x”</p>
+</td>
+</tr>
+<tr>
+<td style="width: 152.083px;">
+<p>unequal</p>
+</td>
+<td style="width: 148.472px;">
+<p>!=</p>
+</td>
+<td style="width: 365px;">
+<p>Unequal (“answer value x” is excepted)</p>
+</td>
+</tr>
+<tr>
+<td style="width: 152.083px;">
+<p>contains</p>
+</td>
+<td style="width: 148.472px;">
+<p>contains</p>
+</td>
+<td style="width: 365px;">
+<p>Used primarily for filtering via texts, see the following notes on coding when filtering via content from the participant administration. Produces all texts that contain the entered text element, for example when filtering for “cd” “abcde” will also be filtered out. Filtering is case sensitive, blank spaces will be regarded as an incorrect entry. Umlauts can be used.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 152.083px;">
+<p>contains any</p>
+</td>
+<td style="width: 148.472px;">
+<p>contains any</p>
+</td>
+<td style="width: 365px;">
+<p>Firstly, you can use this condition to check whether an entry contains one of several specified elements. Example: Entering “22” would fulfill the condition “contains any = 11,<strong>22</strong>,33”, whereas entering “123” or “122” would not. Secondly, you can use this condition to identify a specific element in an entry that consists of multiple elements, such as a phone number. Example: Entering “0229-<strong>1234</strong>” would fulfill the condition “contains any = 1234”, whereas entering “0229-12345” would not. Acceptable separators are comma, apostrophe, “- “ and “|”.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 152.083px;">
+<p>matches regex</p>
+</td>
+<td style="

@@ -1,0 +1,73 @@
+>
+</th>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px 7px 10px !important;">Created</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important 7px 10px;">The status of a newly created campaign.</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px 7px 10px !important;">Activated</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important 7px 10px;">
+<p>The campaign has been activated. The panelists can use the campaign functions during a specified period.</p>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px 7px 10px !important;">Finished</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important 7px 10px;">The campaign has been finished. Reactivation is possible.</td>
+</tr>
+<tr>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px 7px 10px !important;">Archived</td>
+<td class="confluenceTd" style="border: 1px solid var(--ds-border,#ddd); text-align: left; vertical-align: top; padding: 7px 10px !important 7px 10px;">
+<p>The campaign has beenarchived. Archived campaigns cannot be edited or copied anymore. Please mind that once a campaign has been archived, it is not possible to reactivate it.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<h3 id="h_01J3FGH73WDVPJSKT388G8V4RQ">Creating a Campaign</h3>
+<p><strong>Creating a Mail Template</strong></p>
+<ol>
+<li>Switch to Libraries → Mail templates.</li>
+<li>Create a mail template for a new campaign and assign it the type “promotion mail”.</li>
+</ol>
+<p><strong>Notes:</strong></p>
+<ul>
+<li>
+<strong>Sender</strong>: Select from addresses under Mail templates → Mail senders.</li>
+<li>
+<strong>Subject</strong>: Panelists cannot see the subject, but recipients will. Use a factual, self-explaining title without promotional slogans like “Make money now” to avoid spam perception.</li>
+<li>
+<strong>Text</strong>:
+<ul>
+<li>Include a link to the panel site using the #url# wildcard.</li>
+<li>Use wildcards to incorporate the canvassing panelist's name and email address for credibility.</li>
+<li>Offer a contact address for complaints to identify misuse.</li>
+<li>In standard panels, use wildcards #promotion_header# and #promotion_footer# to insert panelists' personal messages into the mail.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Designing the “Tell-a-friend” Form</strong></p>
+<ul>
+<li>The standard panel form includes two fields for personal messages.</li>
+<li>Use #promotion_header# and #promotion_footer# wildcards to insert these messages.</li>
+<li>If only one or no personal messages are allowed, remove the entry fields in the “func_tell_a_friend” template.</li>
+</ul>
+<p><strong>Creating and Activating a Campaign</strong></p>
+<ol>
+<li>Go to People → Incentive management → Campaign menus.</li>
+<li>Click the <strong>Create campaign</strong> button to open the form for a new campaign.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014859659666">
+</li>
+<li>Enter the necessary data and click <strong>Save</strong>.</li>
+<li>The campaign, now in “Created” status, will appear in the overview table. Click <strong>Activate</strong> to start the campaign.</li>
+</ol>
+<p><strong>Editing a Campaign</strong></p>
+<ol>
+<li>Click on the campaign name in the overview table to access the “Edit campaign” form.</li>
+<li>This form is similar to the creation form, with an added “Status” field showing the current status.</li>
+<li>Edit the entries as needed and click <strong>Save</strong> to apply changes.</li>
+</ol>
+<h3 id="h_01J3FGKCRZG71E98MTQ5SXKZEH">Allocating Candidates from a Campaign to a Way of Entry</h3>
+<p>For each new promotional campaign, a dedicated way of entry with the same name is automatically created to collect canvassed candidates and facilitate the creation of special groups.</p>
+<ol>
+<li>
+<p><strong>Locate the Way of Entry:</strong></

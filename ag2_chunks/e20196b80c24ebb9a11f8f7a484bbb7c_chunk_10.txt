@@ -1,0 +1,44 @@
+. You should therefore use <a href="https://qbdocs.atlassian.net/wiki/spaces/DOC/pages/2750349427/Questionnaire#Plausibility-checks">plausibility checks</a> or type checks to restrict input options from the outset. If, for example, you ask for a percentage and then want to filter the value, a numbers-only check allows you to make sure that participants have not entered texts or negative numbers.</p>
+<p class="wysiwyg-text-align-justify">Please note that in the alternative filter conditions of the questionnaire, it is essential to use quotation marks for the text in the case of text comparisons. Example: IF (u_language = "en"). As always, please test the correct/expected behavior when creating filters.</p>
+<h3 id="conjunctions-with-and-and-or" class="wysiwyg-text-align-justify"><strong>Conjunctions with AND and OR</strong></h3>
+<p class="wysiwyg-text-align-justify">A filter is designed to only route a participant to a subpage if they simultaneously meet two conditions resulting from two different questions. To achieve this, you must set at least two filter definitions and create an AND conjunction between them.</p>
+<p class="wysiwyg-text-align-justify">If you create an OR conjunction between the filter conditions, the subpage below the filter will be shown to the respondent if they meet the condition resulting from one question or the other. You can place the filter page anywhere within the page layout as long as the filter is created after the questions to which it refers.</p>
+<p class="wysiwyg-text-align-justify">It is recommended to use not more than 100 AND/OR conjunctions.</p>
+<p class="wysiwyg-text-align-justify">Tip: Many filters that require a lot of effort when working with EFS standard filter definitions or alternative filter conditions can be realized more easily and more efficiently with LUA.</p>
+<h3 id="using-brackets" class="wysiwyg-text-align-justify"><strong>Using brackets</strong></h3>
+<p class="wysiwyg-text-align-justify">You can specify user-defined brackets in the condition editor. The usual rules of logic apply. This means, in particular:</p>
+<p class="wysiwyg-text-align-justify"><em>Without brackets AND conjunctions will always take priority over OR conjunctions.</em></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>For example, “v_1=1 AND v_2=0 OR v_3=1” will be processed as “(v_1=1 AND v_2=0) OR v_3=1”.</p>
+</li>
+<li>
+<p>If you want the condition to be processed as “v_1=1 AND (v_2=0 OR v_3=1)”, you must insert the corresponding brackets.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><em>Without brackets, negation will always take priority over anything else. </em>Therefore, in most cases, negation must be combined with brackets:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>If you want to negate v_1 &gt; 0 explicitly, for example, the syntax is: !(v_1 &gt; 0).</p>
+</li>
+<li>
+<p>Without brackets, the condition !v_1 &gt; 0 would be processed as (!v_1) &gt; 0. I.e. first the system would check if the variable has one of the two values 0, 1 permitted by boolean logic. Such a check is possible, but in the context of the situation in the condition editor, it is usually not intended by the user. For variables with more characteristics, the boolean check does not make any sense. In the second step, the condition &gt;0 is applied to the result.</p>
+</li>
+<li>
+<p>I.e. when using negation in the condition editor, usually you will want to use brackets to guarantee meaningful results. Alternatively, in many cases, it is possible to replace the negation with other operators and additional conjunctions.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If you have inserted incorrect, i.e. <em>incomplete</em>, brackets, an error message will be displayed on saving, indicating that the filter as such has been saved, but not the brackets. This means:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The condition editor will continue to display the brackets, allowing you to locate and correct the error.</p>
+</li>
+<li>
+<p>If you ignore the error message and leave the incorrect brackets unchanged, the database will not consider the incorrect brackets when processing the data, but proceed according to the usual rules (with AND always taking priority over OR).</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Please note: brackets that do not fulfill the intention of the author, but establish a logically meaningful syntax, cannot be identified automatically.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="dynamics" class="wysiwyg-text-align-justify">Dynamics</h2>
+<p class="wysiwyg-text-align-justify">The sequence of pages, questions, answer options, and scale options in the questionnaire can distort survey data. This can be avoided in an online questionnaire by randomly changing the

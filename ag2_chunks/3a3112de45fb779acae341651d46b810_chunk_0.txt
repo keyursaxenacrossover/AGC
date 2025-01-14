@@ -1,0 +1,63 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/TS/pages/3857252353">https://qbdocs.atlassian.net/wiki/spaces/TS/pages/3857252353</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<p>Quick overview of the values that need to be changed when transitioning from "questback.access" to "tivian.access". For a detailed description, please visit <ac:link ac:card-appearance="inline"><ri:page ri:content-title="EFS Admin Configuration" ri:space-key="IAM" ri:version-at-save="12"></ri:page><ac:link-body>EFS Admin Configuration</ac:link-body></ac:link> </p><table data-layout="wide" ac:local-id="c2f729bc-fb29-4504-b50f-cc7609cac994">
+<ac:adf-fragment-mark><ac:adf-fragment-mark-detail local-id="fb85ae94-0895-4eb6-b69b-889bf960881e" name="Table 1"></ac:adf-fragment-mark-detail></ac:adf-fragment-mark><colgroup>
+<col style="width: 247.0px;">
+<col style="width: 169.0px;">
+<col style="width: 82.0px;">
+<col style="width: 109.0px;">
+<col style="width: 258.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour="#dbe3e8"><p>VARIABLE NAME</p></th>
+<th data-highlight-colour="#dbe3e8"><p>VARIABLE DEFINITION</p></th>
+<th data-highlight-colour="#dbe3e8"><p><strong>CHANGE</strong></p></th>
+<th><p><strong>Same for all Installations per customer</strong></p></th>
+<th><p><strong>DESTINATION</strong></p></th>
+</tr>
+<tr>
+<td><p><a href="https://aw1673.customervoice360.com/www/options.php?act=edit_config_var&amp;varName=iam_admin_bypass_login_route"><u>iam_admin_bypass_login_route</u></a></p></td>
+<td><p>'/iam/admin/auth/login/bypass'</p></td>
+<td><p>no</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+</tr>
+<tr>
+<td><p><a href="https://aw1673.customervoice360.com/www/options.php?act=edit_config_var&amp;varName=iam_api_token"><u>iam_api_token</u></a></p></td>
+<td><p>'00i6B1wE3eeECLJSSn8FSK4N025JJ7aAY5KrzaamDv'</p></td>
+<td><p>yes</p></td>
+<td><p>yes</p></td>
+<td><p>KeePass → MISC → Okta</p></td>
+</tr>
+<tr>
+<td><p><a href="https://aw1673.customervoice360.com/www/options.php?act=edit_config_var&amp;varName=iam_audience"><u>iam_audience</u></a></p></td>
+<td><p>'api://kantar'</p></td>
+<td><p>no</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+</tr>
+<tr>
+<td><p><a href="https://aw1673.customervoice360.com/www/options.php?act=edit_config_var&amp;varName=iam_client_group_id"><u>iam_client_group_id</u></a></p></td>
+<td><p>'00g2jxwo198G2FExG417'</p></td>
+<td><p>yes</p></td>
+<td><p>no</p></td>
+<td><p>OKTA → Groups → Installationname Group (installation identifier)</p></td>
+</tr>
+<tr>
+<td><p><a href="https://aw1673.customervoice360.com/www/options.php?act=edit_config_var&amp;varName=iam_client_id"><u>iam_client_id</u></a></p></td>
+<td><p>'0oa2kkemrf90Gs9fI417'</p></td>
+<td><p>yes</p></td>
+<td><p>no</p></td>
+<td><p>OKTA → Applications → Installationname → Client ID</p></td>
+</tr>
+<tr>
+<td><p><a href="https://aw1673.customervoice360.com/www/options.php?act=edit_config_var&amp;varName=iam_client_secret"><u>iam_client_secret</u></a></p></td>
+<td><p>'Ym4MVCYotP8hUSa_MKBoNXc4K5Ju-5MlvYxmKx0e'</p></td>
+<td><p>yes</p></td>
+<td><p>no</p></td>
+<td><p>OKTA → Applications → Installationname → Client Secret</p></td>
+</tr>
+<tr>
+<td><p><a href="https://aw1673.customervoice360.com/www/options.php?act=edit_config_var&amp;varName=iam_federated_domains"><u>iam_federated_domains</u></a></p></td>
+<td

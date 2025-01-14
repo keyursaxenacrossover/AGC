@@ -1,0 +1,119 @@
+; ACL Rights &gt; Object instances</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "objectId": 1,
+  "right": "read"
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">true</code></pre>
+</div>
+<h2 id="header-49">EFS admin user management</h2>
+<div class="expand-macro">
+<h4 id="h_01J441N79EM7QPE51Q5ANBSWTV"> </h4>
+<h3 id="header-51">DELETE /efs/staff/</h3>
+<p>Deletes a staff member. A successful request has no response body.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "identifierType": "email",
+  "identifier": "example@domain.tld"
+}</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79EVV1W8724GVZ9Y201"> </h4>
+<h3 id="header-52">GET /efs/staff/</h3>
+<p>Return information about the current admin user thats using the service. This method also keeps admin-session alive.</p>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">{
+  "adminUserId": 1234,
+  "accountName": "Example",
+  "firstName": "First",
+  "lastName": "Last",
+  "email": "example@domain.tld",
+  "language": "EN",
+  "expireDate": "2020-07-02T12:53:50+00:00",
+  "organisation": 1,
+  "primaryGroup": 1,
+  "groups": [
+    1
+  ]
+}</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79EPPD960EV665RYEE1"> </h4>
+<h3 id="header-53">PATCH /efs/staff/</h3>
+<p>Changes a staff members data. You only need to provide the fields you want to change.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "identifierType": "email",
+  "identifier": "example@domain.tld",
+  "changes": {
+    "firstName": "First",
+    "lastName": "Last",
+    "email": "example@domain.tld",
+    "password": "New Password",
+    "gender": "NOT_SPECIFIED",
+    "street": "None",
+    "zip": "12345",
+    "city": "Example",
+    "phone": "+491234567890",
+    "country": "Germany",
+    "mobile": "+491234567890",
+    "language": "EN",
+    "expireDate": "2024-07-02T12:53:50+00:00",
+    "organisation": 1,
+    "primaryTeam": 1,
+    "teams": [
+      1
+    ],
+    "enabled": true,
+    "mobile2": "+491234567891",
+    "www": "Some URL",
+    "comment": "Additional Comment",
+    "department": "Department info"
+  }
+}</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79EG7KYAKE5ZE5JYXQC"> </h4>
+<h3 id="header-54">POST /efs/staff/</h3>
+<p>Create a new staff member for the EFS admin interface. To set the staff members organization you need to have the appropriate right. If no organization is set the staff member will inherit the creating staff members organization. Returns the user id.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "staffMember": {
+    "identifierType": "email",
+    "identifier": "example@domain.tld",
+    "changes": {
+      "account": "Example",
+      "firstName": "First",
+      "lastName": "Last",
+      "email": "example@domain.tld",
+      "password": "New Password",
+      "gender": "NOT_SPECIFIED",
+      "street": "None",
+      "zip": "12345",
+      "city": "Example",
+      "phone": "+491234567890",
+      "country": "Germany",
+      "mobile": "+491234567890",
+      "language": "EN",
+      "expireDate": "2024-07-02T12:53:50+00:00",
+      "organisation": 1,
+      "primaryTeam": 1,
+      "teams": [
+        1
+      ],
+      "enabled": true,
+      "mobile2": "+491234567891",
+      "www": "Some URL",
+      "comment": "Additional Comment",
+      "department": "Department info"
+    }
+  }
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">1234</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79EP11A14EANSF87MTP"> </h4>
+<h3 id="header-55">POST /efs/staff/details</h3>
+<p>Return information

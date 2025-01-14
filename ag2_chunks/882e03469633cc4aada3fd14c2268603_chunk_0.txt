@@ -1,0 +1,32 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1077281675">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1077281675</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">Prerequisites:</a></li>
+<ul>
+<li><a href="#header-3">Step 1: Navigate to Identity Providers</a></li>
+<ul>
+<li><a href="#header-5">Step 2: Add a new Open ID Connect Identity Provider</a></li>
+<li><a href="#header-6">Step 3: Provide basic client information</a></li>
+<li><a href="#header-7">Step 4: Configure Endpoints</a></li>
+<li><a href="#header-8">Step 5: Configure advanced settings</a></li>
+<li><a href="#header-9">Step 6: Navigate to the Identity Provider</a></li>
+<li><a href="#header-10">Step 7: Check Redirect Domain</a></li>
+<li><a href="#header-11">Step 8: Routing Rules</a></li>
+<li><a href="#header-12">Step 9: Navigate to Profile Mapping</a></li>
+<li><a href="#header-13">Step 10: Adapt Profile Attributes</a></li>
+<li><a href="#header-14">Step 11: Configure Profile Mappings</a></li>
+<li><a href="#header-15">Values:</a></li>
+<li><a href="#header-16">Step 12: Create Routing Rule</a></li>
+</ul>
+</ul>
+</ul>
+</ul><p>See <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Naming conventions in Okta" ri:version-at-save="14"></ri:page><ac:link-body>Naming conventions in Okta</ac:link-body></ac:link> </p><p>Also see <ac:link ac:card-appearance="inline"><ri:page ri:content-title="OIDC Federation" ri:version-at-save="3"></ri:page><ac:link-body>OIDC Federation</ac:link-body></ac:link> </p><hr><p>Open ID Connect (OIDC) Identity Providers are preferred over SAML due to a more simple setup.</p><h1 id="header-1">Prerequisites:</h1><p>The OIDC provider should send all necessary information in a token request. The mandatory fields are</p><ul>
+<li><p>email address</p></li>
+<li><p>first name</p></li>
+<li><p>last name</p></li>
+</ul><p>A domain (or domains) for routing purposes should be known (with regards to the email-address domain). Otherwise the IdP could not be used as intended.</p><p>A client ID and a client secret have to be provided by the identity provider. And our redirect URI has to be applied to that client ID and client secret.</p><p>A discovery-document/well-known-document have to be provided. also see <ac:link ac:card-appearance="inline"><ri:page ri:content-title="OIDC Federation" ri:version-at-save="3"></ri:page><ac:link-body>OIDC Federation</ac:link-body></ac:link> </p><p>If the customer uses Azure AD this URL can be used with the proper customer domain:</p><p><a href="https://login.microsoftonline.com/tivian.com/v2.0/.well-known/openid-configuration">https://login.microsoftonline.com/tivian.com/v2.0/.well-known/openid-configuration</a></p><p></p><h2 id="header-3">Step 1: Navigate to Identity Providers</h2><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716476127890" alt="Screenshot_2019-11-29 Questback - Dashboard.png"><p></p><h3 id="header-5">Step 2: Add a new Open ID Connect Identity Provider</h3><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716460253586" alt="Screenshot_2019-11-29 Questback - Identity Providers.png"><h3 id="header-6">Step 3: Provide basic client information</h3><p><strong>Values:</strong></p><p>Name: see <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Naming conventions in Okta" ri:version-at-save="14"></ri:page><ac:link-body>Naming conventions in Okta</ac:link-body></ac:link> </p><p>Client ID: this will be provided by the client’s IdP</p><p>Client Secret: this will be provided by the client’s IdP</p><p>Scopes:</p><ul>
+<li><p>always necessary: email, openid, profile </p></li>
+<li><p>there might be custom scopes for this specific IdP</p></li>
+</ul><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716475932946" alt="Screenshot_2019-11-29 Questback -

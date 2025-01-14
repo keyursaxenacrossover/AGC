@@ -1,0 +1,82 @@
+>1. Wildcards available across the panel site</strong></p>
+<table class="relative-table wrapped wysiwyg-text-align-justify" style="width: 85.1757%; margin-right: auto; margin-left: auto; height: 410px;" border="1">
+<colgroup> <col style="width: 26.2025%;"> </colgroup> <colgroup> <col style="width: 73.8537%;"> </colgroup>
+<tbody>
+<tr style="height: 31px;">
+<th class="wysiwyg-text-align-center" style="height: 31px;">Variable name</th>
+<th class="wysiwyg-text-align-center" style="height: 31px;">Meaning</th>
+</tr>
+<tr style="height: 64px;">
+<td style="height: 64px;">{$env.panel_name}</td>
+<td style="height: 64px;">
+<p>Name of the panel. This is defined in the <strong>Panel → Edit settings</strong> menu.</p>
+</td>
+</tr>
+<tr style="height: 120px;">
+<td style="height: 120px;">
+<p>{$env.locale.date_format}</p>
+<p>{$env.locale.date_format2}</p>
+</td>
+<td style="height: 120px;">
+<p>The current date. The formats for both wildcards are defined in the “Locale settings” section of the <strong>Configuration</strong> tab in the <strong>Website → Panel websites → {Selected language version}</strong> menu; the default setting is d.m.Y</p>
+</td>
+</tr>
+<tr style="height: 133px;">
+<td style="height: 133px;">
+<p>{$env.locale.time_format}</p>
+<p>{$env.locale.time_format2}</p>
+</td>
+<td style="height: 133px;">
+<p>The current time. The formats for both wildcards are defined in the “Locale settings” section of the Configuration tab in the <strong>Website → Panel websites → {Selected language version}</strong> menu; the default settings are hi a(T) and H:i:s</p>
+</td>
+</tr>
+<tr style="height: 62px;">
+<td style="height: 62px;">
+<p>{$env.locale.datetime_format}</p>
+<p>{$env.locale.datetime_format2}</p>
+</td>
+<td style="height: 62px;">Additional data formats.</td>
+</tr>
+</tbody>
+</table>
+<p class="auto-cursor-target wysiwyg-text-align-justify"><strong>2. Wildcards available in the internal area of logged-in panelists</strong></p>
+<table class="wrapped wysiwyg-text-align-justify" style="margin-right: auto; margin-left: auto; height: 529px;" border="1">
+<colgroup> <col> <col> </colgroup>
+<tbody>
+<tr style="height: 22px;">
+<th class="wysiwyg-text-align-center" style="height: 22px; width: 203.455px;">Variable name</th>
+<th class="wysiwyg-text-align-center" style="height: 22px; width: 489.253px;">Meaning</th>
+</tr>
+<tr style="height: 89px;">
+<td style="height: 89px; width: 195.434px;">{$respondent.pseudonym}</td>
+<td style="height: 89px; width: 481.233px;">
+<p>The pseudonym is an internal identification number within the panel which allows you to uniquely identify each panelist. It is included in both the master data export and the participant data export and thus allows you to merge (match) the data.</p>
+</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px; width: 195.434px;">{$respondent.u_firstname}</td>
+<td style="height: 22px; width: 481.233px;">First name</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px; width: 195.434px;">{$respondent.u_name}</td>
+<td style="height: 22px; width: 481.233px;">Last name</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px; width: 195.434px;">{$respondent.u_account}</td>
+<td style="height: 22px; width: 481.233px;">Account name: Accounts can optionally be used for authentication.</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px; width: 195.434px;">{$respondent.u_street}</td>
+<td style="height: 22px; width: 481.233px;">Street</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px; width: 195.434px;">{$respondent.u_zip}</td>
+<td style="height: 22px; width: 481.233px;">Zip code</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px; width: 195.434px;">{$respondent.u_city}</td>
+<td style="height: 22px; width: 481.233px;">City</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px; width: 195.434px;">{$respondent.u_phone}</td>
+<td style="height: 22px; width: 481.233px

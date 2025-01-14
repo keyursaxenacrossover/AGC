@@ -1,0 +1,50 @@
+<h1 id="h_01J6VYHGJPCGW1RZA7D5VWSHMA">Overview</h1>
+<p>The Tivian Sales team used to order new installations through the following survey: <a href="https://ww2.efs-survey.com/uc/order_survey/" target="_blank" rel="noopener noreferrer">https://ww2.efs-survey.com/uc/order_survey/</a>. </p>
+<p>Once the survey is filled out by the Sales team, it generates a ZD ticket with the required information. The Trilogy Sales team, on the other hand, is (for now) using the <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20927385435282" target="_blank" rel="noopener noreferrer">Creating a Ticket for Customer Support Team Based on Sales Orders</a> article to manually generate the required tickets. </p>
+<p>We are in the works for streamlining this with the Sales team (for example having customers directly fill out the order survey), however, the CS process should not change.</p>
+<p>From a high-level perspective, the process to configure new/clone installations is:</p>
+<ul>
+<li>Customer reaches to Sales with their request</li>
+<li>Sales fills in the survey OR logs the new ticket as indicated above</li>
+<li>CS logs a SaaS CR so the new instance is provisioned</li>
+<li>CS continues with the rest of the tasks</li>
+<li>In some instances, the PS team may come back to CS requesting additional actions be performed, for example:
+<ul>
+<li><a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21210903397138" target="_blank" rel="noopener noreferrer">Adding Cronjobs to DXI Instances</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="h_01J71BQMH1SGS6P3MP22T1KYYN">Difference between a blank and a mirror/clone</h2>
+<p>Technically, all of them are "new installations", it's only a matter of what data that contain when they are created:</p>
+<ul>
+<li>
+<strong>Blank installations</strong> - standalone installs, not using a "source" installation</li>
+<li>
+<strong>Clone installations</strong> - they are created using a "source" installation that will carry over some configuration into the destination clone</li>
+<li>
+<strong>Mirror installations</strong> - they are also created using a "source" installation, however, they have the very specific purpose of allowing the customer to do recovery, based on a backup taken right before they noticed missing data or any other issues; the mirror installations are short-lived, considering their purpose (usually 14-days).</li>
+<li>
+<strong>Penetration Test for Ipsos - Bofa: </strong>This has a special process, to Sync the production installation into the staging installation, instead of creating a brand new installation. Check<a href="#h_01JA8QGD9V3S9W49M500344YD9"> this section</a> for details</li>
+</ul>
+<p>The current process covers all the possible scenarios that you may encounter for blank and clone installations, and since they are all technically new installs, they can follow the same "checklist".</p>
+<h1 id="h_01J71AXECF0VKGHBEDRHGSQV83">Process</h1>
+<p>The provisioning of DXI instances, as you can see above, requires actions to be taken by separate teams. Given the plethora of features in DXI, the provisioning can seem quite overwhelming, as it would require you to access several areas of DXI/EFS and different platforms. A shortlist of actions to be taken <strong>once the SaaS CR gets completed</strong>:</p>
+<ol>
+<li>Log a SaaS CR in the <a href="https://trilogy-eng.atlassian.net/jira/software/c/projects/DXI/issues" target="_blank" rel="noopener noreferrer"><strong>JIRA DXI project</strong></a> (template for the CR can be found in the <a href="#h_01J71BQMH1XZMB70H38KDEMWBF">Steps to Follow</a>)</li>
+<li>Access service gateway to check installation health and also check/disable SSO (for clone instances)</li>
+<li>Create new installation in Globis</li>
+<li>Adjust the EFS instance
+<ol>
+<li>Staff Management</li>
+<li>Core EFS configuration (property changes, modules etc)</li>
+<li>Special requests (depending on the type of installation and request in the ticket)</li>
+<li>Kantar/Ipsos specific actions</li>
+<li>Okta configuration</li>
+</ol>
+</li>
+<li>Checking instance health after carrying out all of the above</li>
+</ol>
+<h2 id="h_01J71BQMH1XZMB70H38KDEMWBF">Steps to Follow</h2>
+<p>Attached to this article you will find the <strong>EFS_Installation_Checklist</strong><strong>.txt</strong> file which was devised by the legacy Tivian team to encompass all possible scenarios encountered when provisioning new instances.</p>
+<p>While it may seem daunting at first sight, a lot of those sections may be skipped when carrying out a provisioning, as the file was created to cover all potential scenarios. <strong>Work is underway to simplify the steps or come up with a smart form to streamline this.</strong></p>
+<p>In order to successfully carry out a provisioning:</

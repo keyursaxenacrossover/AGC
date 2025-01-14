@@ -1,0 +1,56 @@
+ Data Category</strong>: The category the master data belongs to.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Three columns show coverage values:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<strong>Entry Exists</strong>: Number of panelists with an entry for the variable.</li>
+<li>
+<strong>No Entry Exists</strong>: Number of panelists without an entry for the variable.</li>
+<li>
+<strong>Percentage of Existing Entries</strong>: Percentage of panelists with an entry out of the total panelists.</li>
+</ul>
+<p class="wysiwyg-text-align-left">All panelists are considered, except those with the status “deleted” and “tester”.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017226319250"></p>
+<h4 id="h_01J3G448QG0MPKSJ8A6RDY76TM" class="wysiwyg-text-align-justify">Modifying and Restricting Display</h4>
+<p class="wysiwyg-text-align-justify">You can modify or restrict the display using the following options:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<strong>Column Sorting</strong>: Click on column titles to sort the table by that column.</li>
+<li>
+<strong>Extended Search</strong>: Search and restrict criteria by internal variable name, title, category, data and variable type, panel status, language version, and gender.</li>
+<li>
+<strong>View Function</strong>: Display or hide columns and change the number of lines per page.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The master data coverage figures are updated daily, and you can choose to activate or deactivate this function based on your needs.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h3 id="h_01J3G471CXBQPVTYFJHZGY8YDD" class="wysiwyg-text-align-justify">Master Data Coverage (Grouped)</h3>
+<h4 id="h_01J3G471CX37YDBETW28DSRN49" class="wysiwyg-text-align-justify">Overview</h4>
+<p class="wysiwyg-text-align-justify">The <strong>Master data coverage (grouped)</strong> tab provides coverage figures for each master data category. It displays:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<strong>Entry Exists</strong>: Total entries available for master data in each category.</li>
+<li>
+<strong>No Entry Exists</strong>: Total missing entries for master data in each category.</li>
+<li>
+<strong>Percentage of Existing Entries</strong>: Percentage of existing entries relative to the total required entries for each category.</li>
+</ul>
+<h4 id="h_01J3G471CXTT6JN3TZQ22S37NZ" class="wysiwyg-text-align-justify">Configuring Daily Updates</h4>
+<p class="wysiwyg-text-align-justify">You can activate and schedule daily updates for master data coverage, preferably during low-traffic periods (default is 00:00 GMT). Adjust this time based on your panel's time zone for optimal performance.</p>
+<h4 id="h_01J3G471CX16CQENKG1PZE11FG" class="wysiwyg-text-align-justify">Steps to Configure Updates</h4>
+<ol class="wysiwyg-text-align-justify">
+<li>Go to <strong>People → Statistics → Master data coverage</strong> and open the <strong>Configuration</strong> tab.</li>
+<li>If the update is already active, you’ll see the times of the last and next scheduled update.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21017226313874">
+</li>
+<li>If not activated, check the box in the <strong>Activate</strong> field.</li>
+<li>In the <strong>Time of update</strong> field, set the desired daily update time (default is 00:00 GMT).</li>
+<li>Click <strong>Save</strong> to confirm the settings.</li>
+</ol>
+<p class="wysiwyg-text-align-justify">These steps ensure your master data coverage is assessed regularly, helping maintain data quality and completeness.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="h_01HGKSMPRTJYG13X7QJGQX2Z3T" class="wysiwyg-text-align-justify">Panel Quotas</h2>
+<h4 id="h_01J3G4A6QXDW6GKGR547YXYF9P" class="wysiwyg-text-align-justify">Overview</h4>
+<p class="wysiwyg-text-align-justify">In the <strong>People → Statistics → Panel quotas</strong> menu, you can define multidimensional quotas for statistical evaluation. This feature allows you to set target values for combinations of master data variables (e.g., age, gender, region) and compare them with actual values to manage panel composition effectively.</p>
+<p class="wysiwyg-text-align-justify"><strong>Key Features:</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Multiple independent quotas per panel.</li>
+<li>Up to 8 variables per quota.</li>
+<li>Use of all master data with defined characteristics, panel status (p

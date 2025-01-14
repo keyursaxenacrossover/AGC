@@ -1,0 +1,125 @@
+> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 185.694px;">
+<p>Change of password after first login</p>
+</td>
+<td style="width: 184.462px;">
+<p>You can define if the password must be changed after the first login.</p>
+</td>
+<td style="width: 159.861px;">
+<ul>
+<li>
+<p>Activated</p>
+</li>
+<li>
+<p>Not activated</p>
+</li>
+</ul>
+</td>
+<td style="width: 124.427px;">
+<p>Not activated</p>
+</td>
+</tr>
+<tr>
+<td style="width: 185.694px;">
+<p>Mail template "Recover password functionality</p>
+</td>
+<td style="width: 184.462px;">
+<p>In this field, you select the mail template that is used if a participant triggers the "Recover password" process.</p>
+<ul>
+<li>
+<p>The #link_code# wildcard can be used to insert a link pointing to the “Reset password” dialog.</p>
+</li>
+<li>
+<p>#u_passwd# is only filled as long as the participants haven’t changed their initial password.</p>
+</li>
+</ul>
+<p>Please mind that if no mail template is selected, no “Recover password” functionality will be offered.</p>
+</td>
+<td style="width: 159.861px;">
+<p>Mail templates of the "Default mail" type</p>
+</td>
+<td style="width: 124.427px;">
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="access-restrictions" class="wysiwyg-text-align-justify"><strong>Access Restrictions</strong></h3>
+<p class="wysiwyg-text-align-justify">On the <strong>Access Restrictions</strong> tab, you can define role- and phase-specific restrictions for the individual pages of the download platform.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013838186770" alt="Access restrictions.jpg"></p>
+<h3 id="overview-of-existing-access-restrictions" class="wysiwyg-text-align-justify"><strong>Overview of existing access restrictions</strong></h3>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>If a role-dependent access restriction has been defined, you can find the roles with access rights in the “Restrictions of Access” column.</p>
+</li>
+<li>
+<p>The first traffic light icon in the “Properties“ column shows if the page is active.</p>
+<ul>
+<li>
+<p>Green = active</p>
+</li>
+<li>
+<p>Red = not active</p>
+</li>
+</ul>
+</li>
+<li>
+<p>The second traffic light icon shows if the participant must be logged in.</p>
+<ul>
+<li>
+<p>Green = needs to be logged in</p>
+</li>
+<li>
+<p>Red = it is not necessary to log in</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="changing-access-restrictions" class="wysiwyg-text-align-justify"><strong>Changing access restrictions</strong></h3>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Click the <strong>Edit</strong> icon.</p>
+</li>
+<li>
+<p>Use the field “Only for logged-in persons”, you define if a participant must be logged in to see the page.</p>
+</li>
+<li>
+<p>In the field “Is the page active?”, you define if the page should be available at all. If a page is not active, a participant trying to open it will be routed to the template “Error message ‚page not found’”.</p>
+</li>
+<li>
+<p>If you want to define a role-specific restriction, click the <strong>Add</strong> button.</p>
+</li>
+<li>
+<p>Select the role that should have access.</p>
+</li>
+<li>
+<p>Decide in which status of the the focus person the selected role should have access.</p>
+</li>
+<li>
+<p>Confirm by clicking<strong> Save</strong>.</p>
+</li>
+</ul>
+<h3 id="creating-access-restrictions-for-additional-pages" class="wysiwyg-text-align-justify"><strong>Creating access restrictions for additional pages</strong></h3>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Click the <strong>Create page</strong> button.</p>
+</li>
+<li>
+<p>Enter the name of the page.</p>
+</li>
+<li>
+<p>Decide if the page should be available only for logged-in persons.</p>
+</li>
+<li>
+<p>Decide if the page should be active.</p>
+</li>
+<li>
+<p>Confirm by clicking <strong>Save</strong>.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">You need to write permission for <em>employee_access_restrictions</em> to access the <strong>Access Restrictions</strong> tab in an employee survey.</p>
+<h3 id="language-settings" class="wysiwyg-text-align-justify"><strong>Language Settings</strong></h3>
+<p class="wysiwyg-text-align-justify">On the <strong>Language Settings</strong> tab, you can edit the language versions of the download platform. The overview on the <strong>Language Settings</strong> tab lists all existing language versions and their

@@ -1,0 +1,89 @@
+<h4 id="functions" class="wysiwyg-text-align-justify">Functions</h4>
+<pre><code class="language-text">function myFunction()
+  return 1
+end
+
+function myFunctionWithArgument(a, b)
+  -- ...
+end</code></pre>
+<h4 id="useful-global-functions" class="wysiwyg-text-align-justify">Useful global functions</h4>
+<pre><code class="language-text">type(var) -- Returns type of variable: "nil" | "number" | "string" | "boolean" | "table" | "function" | "thread" | "userdata"
+
+pairs(t) -- iterable list of {key, value}
+ipairs(t) -- iterable list of {index, value}
+
+-- converting strings/unknown formats to numbers using tonumber(e [, base]):
+x = tonumber("34")
+x = tonumber("8f", 16)
+
+-- and to strings:
+x = tostring(101)</code></pre>
+<h4 id="string-api" class="wysiwyg-text-align-justify">String API</h4>
+<pre><code class="language-text">-- Concat:
+y = "world"
+s = "hello "..y -- s == "hello world"
+
+s:upper()
+s:lower()
+s:len() -- Just like #s
+
+s:find()
+s:gfind()
+
+s:match()
+s:gmatch()
+
+s:sub()
+s:gsub()
+
+s:rep()
+s:char()
+s:dump()
+s:reverse()
+s:byte()
+s:format()</code></pre>
+<h4 id="math-api" class="wysiwyg-text-align-justify">Math API</h4>
+<pre><code class="language-text">math.abs math.acos math.asin math.atan math.atan2
+math.ceil math.cos math.cosh math.deg math.exp
+math.floor math.fmod math.frexp math.ldexp math.log
+math.log10 math.max math.min math.modf math.pow
+math.rad math.random math.randomseed math.sin math.sinh
+math.sqrt math.tan math.tanh
+
+math.sqrt(144)
+math</code></pre>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="efs-specific-functions-in-lua-filters-and-lua-question-type" class="wysiwyg-text-align-justify"><strong>EFS-specific functions in LUA filters and LUA question type</strong></h2>
+<p class="wysiwyg-text-align-justify">Please note: Loop variables are not supported within the LUA environment.</p>
+<h4 id="setvariablevalue-varname-varvalue" class="wysiwyg-text-align-justify"><em><strong>setVariableValue(varName, varValue)</strong></em></h4>
+<p class="wysiwyg-text-align-justify">Assigns the given value to the specified v_, c_ or p_ variable. The variable can be anywhere in the questionnaire, shown or hidden. The LUA question type itself provides variables, which can be used to store information.</p>
+<p class="wysiwyg-text-align-justify"><em>Data types</em></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>varName <em>string</em> - variable name</p>
+</li>
+<li>
+<p>varValue <em>string</em> - variable value</p>
+</li>
+</ul>
+<h4 id="setmasterdatavalue-varname-varvalue" class="wysiwyg-text-align-justify"><em><strong>setMasterDataValue(varName, varValue)</strong></em></h4>
+<p class="wysiwyg-text-align-justify">This function only executes in panel surveys and master data surveys. It assigns or overwrites the given value to the specified master-data variable of the current participant and stores it in the database.</p>
+<p class="wysiwyg-text-align-justify"><em>Data types</em></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>varName <em>string</em> - variable name</p>
+</li>
+<li>
+<p>varValue <em>string</em> - variable value</p>
+</li>
+</ul>
+<h4 id="setquestionoutput-text" class="wysiwyg-text-align-justify"><em><strong>setQuestionOutput(text)</strong></em></h4>
+<p class="wysiwyg-text-align-justify">Sets the output of the LUA-question. This function should only be used once, as subsequent calls overwrite previous values, also this function only generates output as part of code executed during rendering of the question.</p>
+<p class="wysiwyg-text-align-justify"><em>Data types</em></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>text <em>string </em>- string to be shown in LUA-question</p>
+</li>
+</ul>
+<h4 id="remove_sys_miss-varvalue" class="wysiwyg-text-align-justify"><em><strong>remove_sys_miss(varValue) </strong></em></h4>
+<p class="wysiwyg-text-align-justify">Converts the system missing (code -77) to 0 in order to ease arithmetic operations. For example, when using the calculation-based LUA filter "<em>return v_1+v_2+v_3&gt;10</em>", System Missings (Code -77) will negatively affect the calculations, therefore "<em>return remove_sys_miss(v_1)+remove_sys_miss(v_2)+remove_sys_miss(v_3)&gt;10</em>" can be used to avoid this

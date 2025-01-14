@@ -1,0 +1,45 @@
+<p><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p>This article discusses a new feature introduced in <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20231377974290" target="_blank" rel="noopener noreferrer">version 23.1</a> that allows for the optional expiration of inactive admin accounts. It explains the configuration process, how the feature works, and its implementation details.</p>
+<p> </p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>Version 23.1 introduces a new feature that allows for the optional expiration of inactive admin accounts. This feature is controlled by a new configuration variable and only affects users not assigned to "internal" organizations.</p>
+<p>The new feature is controlled by the configuration variable <code>admin_login_expire_on_inactivity</code>. Here are the key points:</p>
+<ul>
+<li>The value is stored in days</li>
+<li>By default, the value is set to "0" (inactive)</li>
+<li>This feature only affects users not assigned to "internal" organizations</li>
+</ul>
+<p>The implementation of this feature involves a daily running job, so the effect is not immediate upon activation of the feature.</p>
+<h3 id="implementation_example">Example Scenario</h3>
+<p>For instance, on installation A:</p>
+<ul>
+<li>The job runs daily at 11:30 a.m.</li>
+<li>If the feature is activated at 12:00 a.m.</li>
+<li>It would not affect the corresponding accounts until the next day, after the job has run at 11:30 a.m.</li>
+</ul>
+<h1 id="h_01J3YSEFDHKA8A7FPYM485G01Y">Agent steps</h1>
+<p>To activate the feature, you need to access the account using the 'root' user, then go to <em>Option &gt; Platform Cockpit</em> and enable the option.</p>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq_default_value">What is the default value for the new configuration variable?</h3>
+<p>The default value for "admin_login_expire_on_inactivity" is set to "0", which means the feature is inactive by default.</p>
+<h3 id="faq_affected_users">Which users are affected by this feature?</h3>
+<p>This feature only affects users that are not assigned to "internal" organizations.</p>
+<h3 id="faq_activation_time">When does the feature take effect after activation?</h3>
+<p>The feature takes effect at the earliest after the first run of the corresponding daily job, not immediately upon activation.</p>
+</article> 11:30 a.m.</li>
+<li>If the feature is activated at 12:00 a.m.</li>
+<li>It would not affect the corresponding accounts until the next day, after the job has run at 11:30 a.m.</li>
+</ul>
+<h1 id="h_01J3YSEFDHKA8A7FPYM485G01Y">Agent steps</h1>
+<p>To activate the feature, you need to access the account using the 'root' user, then go to <em>Option &gt; Platform Cockpit</em> and enable the option.</p>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq_default_value">What is the default value for the new configuration variable?</h3>
+<p>The default value for "admin_login_expire_on_inactivity" is set to "0", which means the feature is inactive by default.</p>
+<h3 id="faq_affected_users">Which users are affected by this feature?</h3>
+<p>This feature only affects users that are not assigned to "internal" organizations.</p>
+<h3 id="faq_activation_time">When does the feature take effect after activation?</h3>
+<p>The feature takes effect at the earliest after the first run of the corresponding daily job, not immediately upon activation.</p>
+</article>

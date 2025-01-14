@@ -1,0 +1,32 @@
+/en/function.date.php</a> .</p>
+<p>When choosing the option “Format fact as integer/float/datetime”, the text will get formatted with the selected date type. The formatted value will be found in the correspondent column INT_VALUE/ FLOAT_VALUE/ DATE_VALUE.</p>
+<p>When choosing the option “Convert to dimension as integer/float/datetime”, however, a new column is created in the fact table displaying the relevant data type.</p>
+<p>When choosing the option “Recode value to answer option”, any text can be recoded to a single response question. The following points should be considered:</p>
+<ul>
+<li>
+<p>The number of recoded values is limited to 100. In exceptional cases, our support team may extend this value. Any participation creating answer options beyond this limit will receive the ID ‘NOT ANSWERED’.</p>
+</li>
+<li>
+<p>Recoding is case insensitive. – Should the answer option ‘Example’ already exist, for ‘example’ with lower-case letter no new answer option will be created, but the ID of ‘Example’ will be used. </p>
+</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998592812306" alt="96206f56-58c0-45d0-b825-bfa6233e4e3f"></p>
+<p> </p>
+<h1 id="header-26">EFS Platform</h1>
+<h3 id="header-28">New REST API adapter</h3>
+<p>Besides the legacy adapters SOAP, PHP-RPC and JSON-RPC, you have now also the possibility to access the API with REST. The new REST API is addressed by URLs that contain more than three path-elements, e.g.https://example.questback.com/service/survey/surveys/.</p>
+<p>As with other service layer adapters, individual services need to be activated for the user or group to be used by that user or group.</p>p>
+<ul>
+<li>
+<p>The number of recoded values is limited to 100. In exceptional cases, our support team may extend this value. Any participation creating answer options beyond this limit will receive the ID ‘NOT ANSWERED’.</p>
+</li>
+<li>
+<p>Recoding is case insensitive. – Should the answer option ‘Example’ already exist, for ‘example’ with lower-case letter no new answer option will be created, but the ID of ‘Example’ will be used. </p>
+</li>
+</ul>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20998592812306" alt="96206f56-58c0-45d0-b825-bfa6233e4e3f"></p>
+<p> </p>
+<h1 id="header-26">EFS Platform</h1>
+<h3 id="header-28">New REST API adapter</h3>
+<p>Besides the legacy adapters SOAP, PHP-RPC and JSON-RPC, you have now also the possibility to access the API with REST. The new REST API is addressed by URLs that contain more than three path-elements, e.g.https://example.questback.com/service/survey/surveys/.</p>
+<p>As with other service layer adapters, individual services need to be activated for the user or group to be used by that user or group.</p>

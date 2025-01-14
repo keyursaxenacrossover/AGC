@@ -1,0 +1,154 @@
+format</code></p>
+</td>
+<td>
+<p>TEXT, HTML, TEXT_AND_HTML</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>charset</code></p>
+</td>
+<td>
+<p>UTF-8, UTF-16, ISO-8859-1, ISO-8859-2, ISO-8859-3, ISO-8859-4, ISO-8859-5, ISO-8859-6, ISO-8859-7, ISO-8859-8, ISO-8859-9, ISO-8859-13, ISO-8859-15, US-ASCII, KOI8-R, GB18030, x-EUC-CN, GBK, x-EUC-TW, Big5, Big5-HKSCS, EUC-JP, Shift_JIS, ISO-2022-JP, EUC-KR, ISO-2022-KR, TIS-620</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>priority</code></p>
+</td>
+<td>
+<p>NO_PRIORITY, HIGHEST, HIGH, NORMAL, LOW, LOWEST</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>sensitivity</code></p>
+</td>
+<td>
+<p>NORMAL, PRIVATE, PERSONAL, COMPANY</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>notify</code></p>
+</td>
+<td>
+<p>NO_NOTIFICATION, WITH_RETURN_PATH, WITH_FROM_PATH</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>localeString</code></p>
+</td>
+<td>
+<p><em>See EFS mail template interface for a current list of locales.</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>from</code></p>
+</td>
+<td>
+<p><code>from</code><em> needs to be one of registered sender email addresses in EFS. See: Libraries &gt; Mail templates &gt; Mail senders.</em></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "mailtemplate": {
+    "meta": {
+      "description": "Example description",
+      "type": "default_mail",
+      "site_id": "123",
+      "active": true
+    },
+    "content": {
+      "from": "example@domain.tld",
+      "subject": "Example",
+      "format": "TEXT_AND_HTML",
+      "text_content": "Example",
+      "html_content": "&lt;h1&gt;Example&lt;/h1&gt;"
+    },
+    "options": {
+      "charset": "UTF-8",
+      "reply_to": "example@domain.tld",
+      "return_path": "example@domain.tld",
+      "to_realname": true,
+      "send_copy": true,
+      "cc": "example@domain.tld",
+      "bcc": "example@domain.tld",
+      "priority": "NO_PRIORITY",
+      "sensitivity": "NORMAL",
+      "notify": "NO_NOTIFICATION",
+      "sms_from": "+491234567890",
+      "sms_content": "Example"
+    },
+    "translations": [
+      {
+        "localeString": "de_DE",
+        "subject": "Beispiel",
+        "text_content": "Beispiel",
+        "html_content": "&lt;h1&gt;Beispiel&lt;/h1&gt;",
+        "sms_content": "Beispiel"
+      }
+    ]
+  }
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">1</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79C36SPGZ7543J5D8NV"> </h4>
+<h3 id="header-15">DELETE /efs/mailtemplates/{id}</h3>
+<p>Delete mail template by id. Successful requests have no response body.</p>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>id</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>The mail-template id <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79C3T4QA5H0X49A83XB"> </h4>
+<h3 id="header-16">GET /efs/mailtemplates/{id}</h3>
+<p>Get mail template by id</p>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">{
+  "meta": {
+    "description": "Example message",
+    "type": "default_mail",
+    "site_id": "7",

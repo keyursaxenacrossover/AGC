@@ -1,0 +1,63 @@
+ be resolved.</p></td>
+<td><p><br></p></td>
+<td>
+<p>In case of DNS error contact Sysadmins.</p>
+<p>Check elastic search host in config. Procus and Testkanal use an alternaive domain. Make sure there is an index for the installation in elastic search (check elastic search paper page/twiki for info) and if needed, create it anew (in case of cloned installations).</p>
+</td>
+</tr>
+<tr>
+<td><p>Error: Reporting wordcloud feature enabled but the text analyser service is not working correctly: Text-Analyzer Client Exception:Curl Error: Couldn't resolve host 'text-analyzer'</p></td>
+<td><p>Error</p></td>
+<td><p>Possible DNS error, check if there are other messages regarding domains that can not be resolved.</p></td>
+<td><p><br></p></td>
+<td><p>In case of DNS error contact Sysadmins.</p></td>
+</tr>
+<tr>
+<td>
+<p>Error: Reporting PPT Export could not fetch version from Service. Expected version is 2.0.0.*. Error was: SOAP-ERROR: Parsing WSDL: Couldn't load from '<a href="https://rp.questback.com/PptPlus/PptService.asmx?wsdl">https://rp.questback.com/PptPlus/PptService.asmx?wsdl</a>' : failed to load external entity "<a href="https://rp.questback.com/PptPlus/PptService.asmx?wsdl">https://rp.questback.com/PptPlus/PptService.asmx?wsdl</a>"</p>
+<p>(0)</p>
+</td>
+<td><p>Error</p></td>
+<td><p>Possible DNS error, check if there are other messages regarding domains that can not be resolved.</p></td>
+<td><p><br></p></td>
+<td><p>In case of DNS error contact Sysadmins.</p></td>
+</tr>
+<tr>
+<td>
+<p>Error: Reporting XLS Export is configured but the service doesn't work for reporting_template_1_5.xls. Error was: SOAP-ERROR: Parsing WSDL: Couldn't load from '<a href="https://rp.questback.com/XlsPlus/XlsService.asmx?wsdl">https://rp.questback.com/XlsPlus/XlsService.asmx?wsdl</a>' : failed to load external entity "<a href="https://rp.questback.com/XlsPlus/XlsService.asmx?wsdl">https://rp.questback.com/XlsPlus/XlsService.asmx?wsdl</a>"</p>
+<p>(666)</p>
+</td>
+<td><p>Error</p></td>
+<td><p>Possible DNS error, check if there are other messages regarding domains that can not be resolved.</p></td>
+<td><p><br></p></td>
+<td><p>In case of DNS error contact Sysadmins.</p></td>
+</tr>
+<tr>
+<td>
+<p>Error: Reporting PPT Export was configured but the service doesn't work for reporting_template.ppt. Error was: SOAP-ERROR: Parsing WSDL: Couldn't load from '<a href="https://rp.questback.com/PptPlus/PptService.asmx?wsdl">https://rp.questback.com/PptPlus/PptService.asmx?wsdl</a>' : failed to load external entity "<a href="https://rp.questback.com/PptPlus/PptService.asmx?wsdl">https://rp.questback.com/PptPlus/PptService.asmx?wsdl</a>"</p>
+<p>(666)</p>
+</td>
+<td><p>Error</p></td>
+<td><p>Possible DNS error, check if there are other messages regarding domains that can not be resolved.</p></td>
+<td><p><br></p></td>
+<td><p>In case of DNS error contact Sysadmins.</p></td>
+</tr>
+<tr>
+<td>
+<p>Error: Reporting PPT Export was configured but the service doesn't work for reporting_template_blank.ppt. Error was: SOAP-ERROR: Parsing WSDL: Couldn't load from '<a href="https://rp.questback.com/PptPlus/PptService.asmx?wsdl">https://rp.questback.com/PptPlus/PptService.asmx?wsdl</a>' : failed to load external entity "<a href="https://rp.questback.com/PptPlus/PptService.asmx?wsdl">https://rp.questback.com/PptPlus/PptService.asmx?wsdl</a>"</p>
+<p>(666)</p>
+</td>
+<td><p>Error</p></td>
+<td><p>Possible DNS error, check if there are other messages regarding domains that can not be resolved.</p></td>
+<td><p><br></p></td>
+<td><p>In case of DNS error contact Sysadmins.</p></td>
+</tr>
+<tr>
+<td><p>Error: Reporting PPT Export was configured but the service doesn't work for reporting_template.ppt. Error was: .NET Service returned no binary data. (1)</p></td>
+<td><p>Error</p></td>
+<td><p><br></p></td>
+<td><p><br></p></td>
+<td><p>SB: The error came up temporarily. I can’t say what the reason was. It had disappeared when I wanted to further check it so I wan’t able to further analyze it.</p></td>
+</tr>
+<tr>
+<td><p>Error: Reporting PPT Export was configured but the service doesn't work for reporting_template_blank.ppt. Error was: .NET Service returned no binary data. (1)</p

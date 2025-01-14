@@ -1,0 +1,163 @@
+ Processor mail” type.</p>
+</li>
+<li>
+<p>Dedicated wildcards are available for the reminder e-mails, enabling you to insert the necessary information. The table provides an overview.</p>
+</li>
+</ul>
+<table class="" border="1" data-layout="default">
+<colgroup>
+<col style="width: 334.0px;">
+<col style="width: 426.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour="#57d9a3">
+<p style="text-align: center;"><strong>Wildcard</strong></p>
+</th>
+<th data-highlight-colour="#57d9a3">
+<p style="text-align: center;"><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p><em>#ac_name#</em></p>
+</td>
+<td>
+<p>Title of action</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>#ac_headline#</em></p>
+</td>
+<td>
+<p>Problem description</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>#ac_desc#</em></p>
+</td>
+<td>
+<p>Description of action</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>#ac_response#</em></p>
+</td>
+<td>
+<p>Responsible person</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>#ac_cat#</em></p>
+</td>
+<td>
+<p>Subject ID</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>#ac_status#</em></p>
+</td>
+<td>
+<p>Status ID</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>#ac_scope#</em></p>
+</td>
+<td>
+<p>ID of scope</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>#ac_date#</em></p>
+</td>
+<td>
+<p>Completion date</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>#ac_creator#</em></p>
+</td>
+<td>
+<p>Creator</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>#label#</em></p>
+</td>
+<td>
+<p>Name of unit</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>#metaname#</em></p>
+</td>
+<td>
+<p>Meta name of unit</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p>If you grant users access to “Mail users”, please note: The users will get access to all “Org Processor mail” templates including the reminder emails. By labeling reminder mail templates clearly, you can prevent users from selecting them in the mail dispatch process.</p>
+<p><strong>Assigning the mail template to the current project</strong></p>
+<p>In the next step, the new mail template is allocated to the current project, Otherwise, it would not be available for status e-mails in this project.</p>
+<ul>
+<li>
+<p>Switch back to your project and open the project’s <strong>Mail templates</strong> menu.</p>
+</li>
+<li>
+<p>Locate the mail template you have just created.</p>
+</li>
+<li>
+<p>In the column “Project template”, its current assignment status is indicated. Usually, a new template has the status “No”. If you click on the status link, it will change to “Yes”.</p>
+</li>
+</ul>
+<p><strong>Defining general reminder settings</strong></p>
+<p>In the next step, you define general settings for the reminder.</p>
+<ul>
+<li>
+<p>Go to the <strong>Projects</strong> → {Selected project} → <strong>Org Processor</strong> → <strong>Action Planner configuration</strong> → <strong>Reminder settings</strong> menu.</p>
+</li>
+<li>
+<p>Click “Activate reminder support” and <strong>Save</strong>.</p>
+</li>
+<li>
+<p>Now the other options can be edited.</p>
+</li>
+<li>
+<p>If you want to activate the automated dispatch process immediately, activate “Activate reminder dispatch”. This is not necessary: You can make all necessary settings beforehand, and start the dispatch process later.</p>
+</li>
+<li>
+<p>Use the “Type of reminder” mail to define who should receive the reminders:</p>
+<ul>
+<li>
+<p>Individual-related reminder: Per default, the mail is sent to the user who created an action. Alternatively, the users can enter other recipients in the “Reminder recipients” section of the detail view of the respective action.</p>
+</li>
+<li>
+<p>Role-related reminder: Users with a specific role will get the notification. The role is defined in the next step.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Save</strong> your settings.</p>
+</li>
+</ul>
+<p><strong>Defining specific reminder mail settings and auto-escalation</strong></p>
+<p>Finally, define one or several reminder emails and optionally the auto-escalation. Start by clicking <strong>Add reminder mail setting</strong>. Then, configure each mail as follows and <strong>Save</strong>:</p>
+<ul>
+<li>
+<p>Mail template: In this field, select the mail template which should be used. Mail templates of type “Org Processor mail” are available if they have been assigned to the project.</p>
+</li>
+<li>
+<p>Action status: In this field, you select which status an action should have to trigger the currently-defined reminder

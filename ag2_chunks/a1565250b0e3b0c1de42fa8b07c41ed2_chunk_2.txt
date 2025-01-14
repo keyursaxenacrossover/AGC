@@ -1,0 +1,128 @@
+e.g: IT-OPs, Business, Security Manager) work with the solution</td>
+<td colspan="1">
+<p>no,</p>
+<p>even if features/configuration is available in the UI, as soon as custom policies are used it is not possible</p>
+<p>basic users management could be performed easily</p>
+<p>adding/changing flows/apps via XML is not appropriate</p>
+</td>
+<td colspan="1">yes,<br><br>as long as they find the features in the UI (which covers most)</td>
+</tr>
+<tr>
+<td colspan="1"><strong>MFA</strong></td>
+<td colspan="1"><br></td>
+<td colspan="1"><strong>3/5 (only SMS out of the box)</strong></td>
+<td colspan="1"><strong>5/5</strong></td>
+</tr>
+<tr>
+<td><br></td>
+<td colspan="1">Is MFA possible?</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><br></td>
+<td colspan="1">SMS</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><br></td>
+<td colspan="1">Authenticator App</td>
+<td>no <ac:link ac:anchor="*1"></ac:link>
+</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><br></td>
+<td colspan="1">Hardware Tokens</td>
+<td>no</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><br></td>
+<td colspan="1">more than 2FA</td>
+<td>possibly yes, practically rather no</td>
+<td>we don't know yet</td>
+</tr>
+<tr>
+<td colspan="1"><strong>Management UI</strong></td>
+<td colspan="1"><br></td>
+<td colspan="1"><strong>3/5 (not everything is available)</strong></td>
+<td colspan="1"><strong>4.5/5</strong></td>
+</tr>
+<tr>
+<td><p><br></p></td>
+<td colspan="1">
+<p>Are necessary</p>
+<p>features configurable via UI?</p>
+</td>
+<td>
+<p>no</p>
+<p>custom user attributes are not reflected, custom policies are a black box</p>
+</td>
+<td>
+<p>yes</p>
+<p>The API and the UI mostly align, both are equally powerful</p>
+</td>
+</tr>
+<tr>
+<td colspan="1"><br></td>
+<td colspan="1">Is it intuitive to use ? How complex is the navigation</td>
+<td colspan="1">The borders to other azure services such as Azure AD, App registration are not very clear<br><br>Some features are hard to find</td>
+<td colspan="1">
+<p>Some features are hard to find (unexpected navigation labels)</p>
+<p>Some concepts such as policies appear in multiple places</p>
+</td>
+</tr>
+<tr>
+<td colspan="1"><strong>Troubleshooting</strong></td>
+<td colspan="1"><br></td>
+<td colspan="1"><strong>1/5</strong></td>
+<td colspan="1"><strong>3/5</strong></td>
+</tr>
+<tr>
+<td colspan="1"><br></td>
+<td colspan="1">Is there meaningful error logging?</td>
+<td colspan="1">error logging yes, meaningful no <ac:link ac:anchor="*2"></ac:link>
+</td>
+<td colspan="1">yes</td>
+</tr>
+<tr>
+<td colspan="1"><br></td>
+<td colspan="1">alerting</td>
+<td colspan="1">maybe (Application insights), not directly related to Azure AD B2C but azure services in general</td>
+<td colspan="1">
+<p>Email notifications for certain events (for admins)</p>
+<p>Event hooks for full customizable notifications (in preview)</p>
+<p>Concept of behaviour detection can also be used create own "alerting rules" (this requires an addon / additional costs)</p>
+</td>
+</tr>
+<tr>
+<td colspan="1"><strong>Risk of project shutdown</strong></td>
+<td colspan="1">
+<p>Is the IdP solution a vital part of the</p>
+<p>companies business case? Is it likely</p>
+<p>that the company is capable of shutting</p>
+<p>down the IdP project?</p>
+</td>
+<td colspan="1">
+<strong>yes</strong>, Azure offers multiple services, IdP is just one new service</td>
+<td colspan="1">
+<strong>no</strong>, very unlikely, Oktas main business is to offer an IdP solution</td>
+</tr>
+<tr>
+<td colspan="1"><strong>Multi tenancy</strong></td>
+<td colspan="1"><br></td>
+<td colspan="1"><strong>2/5 (multi tenant applications and single tenant applications can not be supported at the same time)</strong></td>
+<td colspan="1"><strong>3/5 (multi tenancy seems not to be the main use case supported)</strong></td>
+</tr>
+<tr>
+<td colspan="1"><br></td>
+<td colspan="1">Is there a concept for multi-tenancy?</td>
+<td colspan="1">yes, multiple Azure tenants</td>
+<td colspan="1">yes, either a grouping concept or multiple organizations (similar to Azure, not recommended by us)</td>
+</tr>
+<tr>
+<td colspan="1"><br></td>
+<td colspan="1">Can one tenant use multiple applications?</td>
+<td colspan="1">

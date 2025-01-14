@@ -1,0 +1,22 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1063387315">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1063387315</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<h2>Table of Contents</h2>
+<ul class="toc">
+<ul>
+<li><a href="#header-1">Access Token:</a></li>
+<ul>
+<li><a href="#header-3">ID Token:</a></li>
+<li><a href="#header-4">Refresh Token:</a></li>
+</ul>
+</ul>
+</ul><h1 id="header-1">Access Token:</h1><p>The IdP will create the access token with some basic information about the user to give applications the possibility to check whether a user is allowed to access a resource.</p><p><br></p><p>The Access token is a JWT token that has to be validated by a server component. At least the following field should be validated:</p><ul>
+<li><p><strong>Signature:</strong> Every JWT has a signature that can be validated with the information in the header of the JWT as well as public secrets that can be retrieved from the well-known/discovery route of the IdP</p></li>
+<li><p><strong>Audience (JWT name: aud):</strong> The audience has to match the application that requested the token.</p></li>
+<li><p><strong>Expiration Time (JWT name: nbf, exp)</strong>: Check if the token is not valid from a time perspective. nbf (not-before) will give a hint when the token starts to be valid and exp (expires in) give a hint when the token expires.</p></li>
+<li><p><strong>Issuer (JWT name: iss):</strong> This will be the specific Azure AD B2C App that issued the token. It will therefore start with the B2C domain and subdomain followed by the ID of the App Registration that is connected to Azure B2C.</p></li>
+<li><p><strong>Nonce (JWT name: nonce):</strong> The nonce should be set in the authentication request and will be the same value in the authentication response. This should be checked. If possible just use some random value.</p></li>
+</ul><p>There should also be an "<strong>acr</strong>" claim that describes the flow the user used to authenticate. It can be read to identify the specific flow.</p><p><br></p><h2 id="header-3">ID Token:</h2><p>comming soon...</p><p><br></p><h2 id="header-4">Refresh Token:</h2><p>comming soon...</p></strong> The audience has to match the application that requested the token.</p></li>
+<li><p><strong>Expiration Time (JWT name: nbf, exp)</strong>: Check if the token is not valid from a time perspective. nbf (not-before) will give a hint when the token starts to be valid and exp (expires in) give a hint when the token expires.</p></li>
+<li><p><strong>Issuer (JWT name: iss):</strong> This will be the specific Azure AD B2C App that issued the token. It will therefore start with the B2C domain and subdomain followed by the ID of the App Registration that is connected to Azure B2C.</p></li>
+<li><p><strong>Nonce (JWT name: nonce):</strong> The nonce should be set in the authentication request and will be the same value in the authentication response. This should be checked. If possible just use some random value.</p></li>
+</ul><p>There should also be an "<strong>acr</strong>" claim that describes the flow the user used to authenticate. It can be read to identify the specific flow.</p><p><br></p><h2 id="header-3">ID Token:</h2><p>comming soon...</p><p><br></p><h2 id="header-4">Refresh Token:</h2><p>comming soon...</p>

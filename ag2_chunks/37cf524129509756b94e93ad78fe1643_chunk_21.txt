@@ -1,0 +1,33 @@
+ the general page structure.<br>– In the standard panel, the names of these templates start with “main_”.</li>
+<li>Global templates: These templates usually control overall layout components, such as login or navigation. They are incorporated in a main template.<br>– In the standard panel, the names of these templates start with “tpl_”.</li>
+<li>Templates for function modules: Templates linked to function modules.<br>– In the standard panel, the names of these templates start with “func_”.<br>– Function module and template are linked on the <strong>Edit page</strong> tab in the “Module template” field of the desired module.</li>
+<li>Templates for content modules: Templates linked to content modules.<br>– In the standard panel, the names of these templates start with “cont_”.<br>– Content module and template are also linked on the <strong>Edit page</strong> tab in the</li>
+<li>“Module template” field of the desired module.</li>
+<li>Positioning templates: If several content modules are placed on a panel page, the contents are listed beneath each other, by default. With the help of positioning templates, however, you can create a different segmentation. On the standard panel homepage, for example, three text columns – each filled using a separate content module – are output next to each other with the help of a positioning template.<br>– In the standard panel, the names of these templates start with “pos_”.<br>– The positioning template and panel page are linked in the edit dialog of the respective page on the <strong>Page configuration</strong> tab.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Assigning Categories</strong></p>
+<p class="wysiwyg-text-align-justify">The drop-down list for assigning a template to a certain category is located on the editing page of the template in the „Template category“ field.</p>
+<h2 id="editing-templates" class="wysiwyg-text-align-justify"><strong>Editing Templates</strong></h2>
+<h3 id="the-edit-dialog-and-its-features-in-overview" class="wysiwyg-text-align-justify"><strong>The Edit Dialog and its Features in Overview</strong></h3>
+<p class="wysiwyg-text-align-justify">Open any template, for example, the simply structured “cont_headline_text” template that is linked to the “Headline and text” content module.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>In the head section, you can find the template name. This is the name shown in the tree view, for example. From EFS 10.4, it is identical to the file name. When you create a new template, the name is put together from the user-defined template name and the suffix “.tpl”. It should not contain special characters or blank spaces. It is not possible to change the name.</li>
+<li>The dialog’s main component is the source code input field. From EFS 10.4, a new comfortable editor is available. The editor is activated and deactivated in the <strong>Options → Personal preferences</strong> menu via the “Use editor with syntax highlighting for templates” function on the<strong> Panel</strong> tab.</li>
+<li>On the History tab, you can view previous versions, compare two particular versions, or reset a broken template to an earlier, functioning version.</li>
+</ul>
+<h2 id="working-with-includes" class="wysiwyg-text-align-justify"><strong>Working with Includes</strong></h2>
+<p class="wysiwyg-text-align-justify">Includes are files that are incorporated in templates with the help of HTML. They contain CSS definitions for the layout or provide functionalities, for example.</p>
+<p class="wysiwyg-text-align-justify"><strong>Examples included in the standard panel</strong></p>
+<p class="wysiwyg-text-align-justify">There are two types of includes: CSS and JavaScript. In the standard panel, the following files are available in the website editor’s “Includes” folder, among others:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>“CSS” type:<br>– css_default: CSS file primarily responsible for the layout in the standard panel.</li>
+<li>“JavaScript” type:<br>– js_default: Provides various JavaScript functions.<br>– several mootools include: mootools is a JavaScript library that provides various functions, classes, and methods. In the standard panel, mootools provides the show and hide functions and the mouse-over effects in the navigation, for example. See <a href="http://www.mootools.net/">http://www.mootools.net/</a>, for example, for further information.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><em>Information: </em>Please note: Smarty, CSS, JavaScript, etc. are common web technologies that we merely provide.</p>
+<h3 id="managing-includes" class="wysiwyg-text-align-justify"><strong>Managing Includes</strong></h3>
+<p class="wysiwyg-text-align-justify">You will find the includes of a language version on the “Includes” tab in the tree view in the <strong>Website → Website editor</strong> menu.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>All includes and system includes are shown.</li>
+<li>Clicking on an include opens its content in the editor.</li>
+<li>The <strong>Lock</strong> icon indicates the respective publishing status.</li>
+<li

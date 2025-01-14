@@ -1,0 +1,53 @@
+ load on login</p>
+</td>
+<td style="width: 287.5px; height: 148px;">
+<p>This setting temporarily disables login to the website, if the server load exceeds the specified value.</p>
+<p>Please enter “0”, if you do not wish to disable login during high load phases.</p>
+</td>
+<td style="width: 173.542px; height: 148px;">
+<p>0</p>
+</td>
+</tr>
+<tr style="height: 178px;">
+<td style="width: 212.5px; height: 178px;">
+<p>Update panelist’s IP address on every login</p>
+</td>
+<td style="width: 287.5px; height: 178px;">
+<p>If you activate this option, panelists’ current IP address will be entered in their data record every time they log in. If you do not activate this option, the panelists’ IP address will only be collected upon registration.</p>
+</td>
+<td style="width: 173.542px; height: 178px;">
+<p>No</p>
+</td>
+</tr>
+<tr style="height: 1245px;">
+<td style="width: 212.5px; height: 1245px;">
+<h4 id="app-based-two-factor-authentication">App-based Two-Factor Authentication</h4>
+</td>
+<td style="width: 287.5px; height: 1245px;">
+<p><span style="color: #172b4d;">In addition to their password, panelists must enter an app-generated code when logging in with two-factor authentication. The setting options for app-based two-factor authentication are </span><strong>Disabled</strong><span style="color: #172b4d;"> (default setting), </span><strong>Enabled</strong><span style="color: #172b4d;"> and </span><strong>Enforced</strong><span style="color: #172b4d;">.</span><br><br></p>
+<p><strong>Disabled</strong>: Two-factor authentication for the panel website is disabled.</p>
+<p><strong>Enabled</strong>: The panelist has the option of activating two-factor authentication under "My Details". The setup is initiated by clicking on the <strong>Show QR Code</strong> button. </p>
+<p>The displayed QR code must then be scanned using a mobile phone and the code displayed must be entered in the corresponding field. After clicking <strong>Send</strong>, the successful activation of the two-factor authentication is confirmed. If the panelist now attempts to log in to their account, they will be asked to enter the generated code from the app apart from their login credentials. They can only log in once they enter this code. After successful activation, two-factor authentication can be deactivated again in the same area under “My details”.</p>
+<p><strong>Enforced</strong>: If you select the option <strong>Enforced</strong>, panelists will be prompted to scan the QR code and enter the code from the app immediately after entering their login credentials. So they will no longer be able to access the account without setting up two-factor authentication. When setting two-factor authentication to <strong>Enforced,</strong> it can also no longer be deactivated by the panelist once it has been set up. However, panelists have the option of scanning a new code under “My Details”, if desired.</p>
+<p>The behavior in case of incorrect code entry is similar to the behavior of incorrect password entry. The settings (such as the number of permitted failed attempts, brute force account lockout time, etc.) that you configure for your website under <strong>Global Configuration</strong>&gt; <strong>Login </strong>or<strong> Global Configuration</strong>&gt; <strong>Password security</strong> therefore also apply to two-factor authentication. Also, Panelists can reset their password using the "Forgot password" workflow if they have lost it or can no longer remember it. After setting a new password, the 2FA data is removed and the panelist can (or must, if <strong>Enforced</strong> is set) register a new 2FA code.</p>
+</td>
+<td style="width: 173.542px; height: 1245px;">
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify"><span style="color: #172b4d;">To use app-based two-factor authentication, a compatible authentication app is required. </span></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The activation and deactivation of two-factor authentication is technically implemented via the "Change two-factor authentication" page module. When you create a new website, the page module is included on the "My details" page. For websites created before EFS 24.1, the module must be added manually. Further information can be found here.</p>
+</li>
+<li>
+<p>If individual customizations have been made to the template tpl_errors_and_messages.tpl of your panel website, it is recommended to adapt the page template. Further information can be found here.</p>
+</li>
+<li>
+<p>Two-factor authentication has been implemented for the current Responsive layout of the Panel website. If you would like to use it for a website with an older layout, you can find more information here.</p>
+</li>
+</ul>
+<h3 id="manually-adding-the-change-two-factor-authentication-page-module" class="wysiwyg-text-align-justify">Manually adding the "Change two-factor

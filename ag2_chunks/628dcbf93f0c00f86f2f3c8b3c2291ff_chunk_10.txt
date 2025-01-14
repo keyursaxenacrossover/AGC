@@ -1,0 +1,198 @@
+>
+<p>-77</p>
+</td>
+<td>
+<p>STATUS_PENDING</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>0</p>
+</td>
+<td>
+<p>STATUS_QUEUED / Queued</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><font>1</font></p>
+</td>
+<td>
+<p><font>Mail sent</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><font>2</font></p>
+</td>
+<td>
+<p><font>Mail held</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><font>3</font></p>
+</td>
+<td>
+<p><font>Invalid email</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><font>98</font></p>
+</td>
+<td>
+<p><font>Invalid email</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><font>99</font></p>
+</td>
+<td>
+<p><font>Mail queue deleted</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>101</p>
+</td>
+<td>
+<p>STATUS_FAILED</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>102</p>
+</td>
+<td>
+<p>STATUS_UNREACHABLE</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>103</p>
+</td>
+<td>
+<p>STATUS_CANCELED</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>104</p>
+</td>
+<td>
+<p>STATUS_SPAM</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<h3 id="header-19"><font>Hurricane Indicators</font></h3>
+<p><font>Mail status indicators:</font></p>
+<ul>
+<li>
+<p>Queued,</p>
+</li>
+<li>
+<p>Sent,</p>
+</li>
+<li>
+<p>Spam,</p>
+</li>
+<li>
+<p>Delivery failed,</p>
+</li>
+<li>
+<p>Not reachable.</p>
+</li>
+</ul>
+<p> </p>
+<p><font>The mail recipient's </font> <strong> <font>disposition code</font> </strong> <font> will be changed during the process.</font></p>
+<ul>
+<li>
+<p><strong> <font>survey_dispositioncodes::DISPCODE_ACTIVE (12)</font> </strong> <font> if the mail was successful.</font></p>
+</li>
+<li>
+<p><strong> <font>survey_dispositioncodes::DISPCODE_NOT_AVAILABLE(15)</font> </strong> <font> if the recipient is not reachable. (see Efs_Mail_Status::STATUS_UNREACHABLE) </font></p>
+</li>
+<li>
+<p><strong> <font>survey_dispositioncodes::DISPCODE_NO_CONTACT(14)</font> </strong> <font> , all other statuses.</font></p>
+</li>
+</ul>
+<p> </p>
+<p><font> The indicators are stored in the class Efs_Mail_Engine_Hurricane_Notification_Codes. In the folders </font></p>
+<ul>
+<li>
+<p><strong>modules/efs/components/mail/engine/hurricane/notification</strong> und</p>
+</li>
+<li>
+<p><strong>modules/efs/components/mail/engine/connector</strong></p>
+</li>
+</ul>
+<p><font>contains all files required for MBM phases 1 and 4.</font></p>
+<p> </p>
+<h2 id="header-21"><font>Archiving status of groups</font></h2>
+<p><font>Table: panelgrp </font> <br><font>Column: status</font></p>
+<table data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<th>
+<p><u> <font>Status</font> </u></p>
+</th>
+<th>
+<p><u> <font>Meaning</font> </u></p>
+</th>
+</tr>
+<tr>
+<td>
+<p><font>1</font></p>
+</td>
+<td>
+<p>STATUS_UNARCHIVED</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><font>2</font></p>
+</td>
+<td>
+<p>STATUS_ARCHIVED</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><font>3</font></p>
+</td>
+<td>
+<p>STATUS_ARCHIVING</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<h2 id="header-22"><font>Rights status</font></h2>
+<p><font>Table: drago </font> <br><font>Column: rc</font></p>
+<table data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<th>
+<p><u> <font>Status</font> </u></p>
+</th>
+<th>
+<p><u> <font>Meaning</font> </u></p>
+</th>
+</tr>
+<tr>
+<td>
+<p><font>1</font></p>
+</td>
+<td>
+<p><font>Reading right</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<p

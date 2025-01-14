@@ -1,0 +1,107 @@
+</p>
+</td>
+<td style="width: 433.819px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width: 273.837px;">
+<p>Delete</p>
+</td>
+<td style="width: 433.819px;">
+<p>The “Delete” option allows you to reduce the number of answer options.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h4 class="wysiwyg-text-align-justify"> </h4>
+<h4 id="tabs" class="wysiwyg-text-align-justify">Tabs</h4>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p><strong>Feature</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p><strong>Description</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Questionnaire</p>
+</td>
+<td>
+<p>Questionnaire view</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Page</p>
+</td>
+<td>
+<p>Page view</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Preview question</p>
+</td>
+<td>
+<p>The window that opens will now only contain the current question, as opposed to the whole page as displayed in the Page preview.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Only suitable for classic question types: Change question type</p>
+</td>
+<td>
+<p>This function allows you to change a question type to another without having to create the whole question again.</p>
+<p>You can only change the existing question type to the ones displayed in the drop-down list. Select the desired question type and click on <strong>Change</strong>.</p>
+<p>Please note that various special settings cannot be transferred when changing the question type. For example, hiding conditions and type checks will be lost.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Scale Library</p>
+</td>
+<td>
+<p>This function allows you to open the scale library, where you can create a new scale.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Only suitable for classic question types: Add to library</p>
+</td>
+<td>
+<p>This function allows you to copy a finished question into the question library.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Wildcards</p>
+</td>
+<td>
+<p>Clicking on this tab allows you to insert a previously created static wildcard into a question or answer field in the entry form.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 class="wysiwyg-text-align-justify"> </h2>
+<h2 id="showing-and-hiding-question-options" class="wysiwyg-text-align-justify">Showing and Hiding Question Options</h2>
+<p class="wysiwyg-text-align-justify">The “Question” section of the detail view can get quite extensive, due to the number of setting options and specific features for individual question types. This is remedied using layers that react dynamically: Thus, rarely used options can be shown and hidden as required. The saved settings will be valid for the entire project.</p>
+<h3 id="showing-and-hiding-setting-options" class="wysiwyg-text-align-justify">Showing and hiding setting options</h3>
+<ol class="wysiwyg-text-align-justify" start="1">
+<li>
+<p>Switch to the question view, and click on the <strong>View </strong>icon.</p>
+</li>
+<li>
+<p>A layer containing the hidden options will open. As soon as you enable a feature, it will be shown in the question view. Saving is not necessary. To close the layer, click on the <strong>x </strong>icon.</p>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify">Please note: Older versions of Internet Explorer cannot display the pop-up windows correctly. If a window is positioned over a drop-down box, the box will shine through. Therefore, pop-up windows can be moved.</p>
+<h3 id="configuring-your-own-default-settings" class="wysiwyg-text-align-justify">Configuring your own default settings</h3>
+<p class="wysiwyg-text-align-justify">If you usually work with a constant set of question options, you can make these the default setting in the <strong>Options</strong> → <strong>Preferences </strong>menu on the <strong>Display of questionnaire editor </strong>tab.</p>
+<h2 id="pipe-survey-data" class="wysiwyg-text-align-justify">Pipe survey data</h2>
+<p class="wysiwyg-text-align-justify">You can use so-called <em>dynamic wildcards </em>to access and display answers already given or data saved in participant administration. When surveying children, for example, you can ask for the name of the child responding and then address the child by name during the further course of the survey.</p>
+<p class="wysiwyg-text-align-justify">For this purpose, the name of the corresponding variable, enclosed in two hash signs, is inserted into a

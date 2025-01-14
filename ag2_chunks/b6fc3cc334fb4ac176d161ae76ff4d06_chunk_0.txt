@@ -1,0 +1,41 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1031897362">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1031897362</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<p class="auto-cursor-target"><br></p><table class="wrapped">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th>Event name</th>
+<th>file:method</th>
+<th>Event</th>
+</tr>
+<tr>
+<td><pre><span style="color: rgb(0,128,0);">requesthandler.handle.before</span></pre></td>
+<td>modules/efs/components/requesthandler.inc.php:handle()</td>
+<td><pre><span>Efs\Events\Requesthandler\Handle\Before([<br></span><span>    </span><span style="color: rgb(0,128,0);">'request_handler' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$this</span><span>,<br></span><span>    </span><span style="color: rgb(0,128,0);">'request' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$this</span><span>-&gt;getRequest(),<br></span><span>    </span><span style="color: rgb(0,128,0);">'response' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$this</span><span>-&gt;getResponse()<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td><pre><span style="color: rgb(0,128,0);">survey.controller.login.init.before</span></pre></td>
+<td>modules/survey/app/controllers/LoginController.php:init()</td>
+<td><pre><span>Survey\Events\Controllers\</span><span>LoginControllerInitBefore([<br></span><span> </span><span style="color: rgb(0,128,0);">'controller' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$this<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">survey.controller.action.logout.before</span></pre></td>
+<td colspan="1">modules/survey/app/controllers/LoginController.php:logoutAction()</td>
+<td colspan="1"><pre><span>Survey\Events\Controllers\</span><span>LoginControllerActionLogoutBefore</span><span>([<br></span><span> </span><span style="color: rgb(0,128,0);">'controller' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$this<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">survey.controller.action.login.init.before</span></pre></td>
+<td colspan="1">modules/survey/components/controller/action/login.inc.php:init()</td>
+<td colspan="1"><pre><span>Survey\Events\Controllers\</span><span>ActionLoginInitBefore([<br></span><span> </span><span style="color: rgb(0,128,0);">'controller' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$this<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td colspan="1"><pre><span style="color: rgb(0,128,0);">efs.staff.view.print_details.link_addon.before</span></pre></td>
+<td colspan="1">modules/efs/components/staff/view.inc.php:print_user_details()</td>
+<td colspan="1"><pre><span>Efs\Events\Staff\View\</span><span>PrintDetailsLinkAddonBefore([<br></span><span> </span><span style="color: rgb(0,128,0);">'component' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$this</span><span>,<br></span><span> </span><span style="color: rgb(0,128,0);">'html_links' </span><span>=&gt; </span><span style="color: rgb(102,0,0);">$link_addon</span><span>,<br></span><span> </span><span style="color: rgb(0,128,0);">'return' </span><span>=&gt; &amp;</span><span style="color: rgb(102,0,0);">$link_addon</span><span>,<br></span><span> </span><span style="color: rgb(0,128,0);">'user_id' </span><span>=&gt; (</span><span style="color: rgb(0,0,128);">int</span><span>) </span><span style="color: rgb(102,0,0);">$uid<br></span><span>])</span></pre></td>
+</tr>
+<tr>
+<td

@@ -1,0 +1,86 @@
+A quota that accesses URL parameters is internal.</p>
+<h3 id="quota-timetable" class="wysiwyg-text-align-justify">Quota timetable</h3>
+<p class="wysiwyg-text-align-justify">Depending on what kind of quota there are in a project and which process has been configured, events can be triggered at different stages in the course of the survey.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Optionally, the participants can be checked for external quotas already before the start of the survey. To do so, select the <strong>Configuration</strong> tab. The checking procedure is as follows:</p>
+<ul>
+<li>
+<p>Every time a participant has completed the questionnaire and the allocation figures in the quota statistics are changed accordingly, all those participants that have not yet started the survey (disposition code &lt; 20) will be checked for external quotas.</p>
+</li>
+<li>
+<p>Of these participants, the system will exclude those that fall within a full external quota from participating, i.e. they are assigned disposition code 41<br>(“quota closed”) in the participant administration. Any data accumulated by the participant (during the respective survey) will be deleted in this process and will not be considered in the survey. If these participants try to log in, they will be rejected and assigned disposition code 35 (“rejected at login (quota closed)”. The quota variables of the excluded participants are allocated as follows: quota = -77, quota_assignment = -66.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>If the check for external quotas is not performed beforehand as described above, it will be carried out at the start of the survey.</p>
+</li>
+<li>
+<p>The check for internal quotas is triggered by sending a questionnaire page predefined by you.</p>
+</li>
+<li>
+<p>The allocation figures in the quota statistics will be changed according to the check results mentioned above when the participant completes the questionnaire (i.e. when reaching the final page or an intermediate final page and receiving disposition code 31 or 32).</p>
+<ul>
+<li>
+<p>If the participant has been allocated to an open quota i.e. if the quota is greater than 0, the quota count for the respective quota will be increased by 1.<br>Depending on the configuration, the quota count for all other open quotas whose conditions the respondent has met might be increased by 1, too.</p>
+</li>
+<li>
+<p>When the target size of a quota has been reached, the quota is closed. If this is an external quota and you have chosen the option of excluding participants already prior to their login (see 1. above), then all respondents with disposition code &lt; 20 falling within this quota will be set to status 41 (quota closed).</p>
+</li>
+</ul>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">For external quotas, the quota check is performed already at the start of the survey; for internal quotas, in the course of the survey. The allocation figures<br>(quota count), however, will not be changed before completion of the survey. If the questionnaire is very long and/or many participants start taking the survey at the same time, it may therefore be the case that slightly more participants will pass the quota check and complete the questionnaire than planned.</p>
+<h3 id="the-most-important-quota-processes" class="wysiwyg-text-align-justify">The most important quota processes</h3>
+<p class="wysiwyg-text-align-justify"><em>The survey</em> offers a great degree of freedom in designing the quota process.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The following table presents the most frequently desired scenarios.</p>
+</li>
+<li>
+<p>The “Configuration” column lists the combination of options and allocation mode that allows you to realize the respective scenario.</p>
+</li>
+</ul>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default">
+<colgroup> <col style="width: 190.0px;"> <col style="width: 318.0px;"> <col style="width: 252.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p><strong>Quota type</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p><strong>Rule</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p><strong>Configuration</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>non-interlocking</p>
+</td>
+<td>
+<p>If at least one already filled quota applies to the participant, he will be screened out by quota.</p>
+<p>Otherwise, the participant will be allocated to all matching, open quotas.</p>
+</td>
+<td>
+<p>Options 1, 2, 3</p>
+<p>Allocation mode: First matching open quota</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>interlocking</p>
+</td>
+<td>
+<p>If at least one open quota applies to the participant, he can participate and will be allocated to all matching quotas.</p>
+</td>
+<td>
+<p>Option 3</p>
+<p>Allocation mode: First matching, open quota</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Prioritized quotas - standard

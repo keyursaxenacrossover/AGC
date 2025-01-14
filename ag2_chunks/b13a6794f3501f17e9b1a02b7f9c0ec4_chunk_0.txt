@@ -1,0 +1,49 @@
+<p><span style="font-size: 2.1em;">Overview</span></p>
+<article>
+<p>This article provides a comprehensive guide on how to keep track of your panel using the Statistics menu in the People module. It covers two main topics: Panel Statistics and Quotas, offering step-by-step instructions on how to create detailed panel statistics and set up quotas to monitor your panel population.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p>Learn how to efficiently manage and analyze your panel using Questback's People module. This guide focuses on creating panel statistics and setting up quotas to ensure your panel meets specific demographic requirements.</p>
+<ul>
+<li><a href="#h_01HGKSMPRT0QQXQX3YJXQX8ZGM">Panel Statistics</a></li>
+<li><a href="#h_01HGKSMPRT4YJQJY0QJXQX8ZGN">Quotas</a></li>
+</ul>
+<h2 id="h_01HGKSMPRT0QQXQX3YJXQX8ZGM">Panel Statistics</h2>
+<p>Panel statistics allow you to analyze various aspects of your panel, including demographic information, entry methods, and performance data. This section guides you through the process of creating and interpreting panel statistics.</p>
+<h3 id="h_01HGKSMPRTCYJQJY0QJXQX8ZGQ">Create Panel Statistics</h3>
+<p>Follow these steps to create panel statistics:</p>
+<ol>
+<li>Navigate to People &gt; Statistics &gt; Panel statistics</li>
+<li>Configure your desired settings in the Base, Split variables, Panel status, and Performance data areas</li>
+<li>Click on "Create statistics" to generate your report</li>
+</ol>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014812848786"></p>
+<h3 id="h_01HGKSMPRTGYJQJY0QJXQX8ZGR">Example 1: Invitations and Completed Surveys by Gender</h3>
+<p><strong>Example 1: Configuration</strong><br>In our first example, we want to generate statistics on how many invitations the panelists in a particular group have received and how many surveys they have completed. We also want to break down the results by gender. This could then indicate, for example, whether your surveys are more interesting for men or women. To do this, follow the steps below:</p>
+<ul>
+<li>In the Base area, select the corresponding panel group category for the Panel group category. In our case, this is "default".</li>
+<li>Then, under the Panel group, select the desired panel group to which you would like to restrict the results. In our case, this is the "Statistics test" panel group.</li>
+<li>Under Split variables, select the variable u_gender: Gender.</li>
+<li>Retain the default setting Active in the Panel status area.</li>
+<li>
+<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014812855314"><br>Under Performance data, select the variable track_num_completed. This stands for the number of completed surveys.</li>
+<li>Then select the variable track_num_invited. This stands for the number of invitations.</li>
+<li>Click on Create statistics at the bottom right of the page.</li>
+<li>This example demonstrates how to create statistics on invitations and completed surveys, broken down by gender.</li>
+</ul>
+<p><strong>Example 1 – Results</strong><br>After clicking on Create Statistics, your statistics will be displayed immediately. At the top you will find a summary of the base:</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014859800850"><br>Then, the number of completed surveys is displayed, broken down by gender:<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014812851858"></p>
+<ul>
+<li>1 panelist (male) from the Statistics test group has not completed any survey.</li>
+<li>1 panelist (male) from the Statistics test group has completed 2 surveys.</li>
+<li>2 panelists (female) from the Statistics test group have completed 3 surveys.</li>
+</ul>
+<p>Then, you can see the number of invitations broken down by gender:</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014812858898"></p>
+<ul>
+<li>Two male and two female panelists have each received 3 invitations.</li>
+</ul>
+<h3 id="h_01HGKSMPRTK0QJXQX3YJXQX8ZGS">Example 2: Panel Entry Methods by Age</h3>
+<p>This example shows how to generate statistics on panel entry methods, filtered by a specific entry period and broken down by age.</p>
+<p><strong>Example 2 – Configuration</strong><br>In our second example, we want to create statistics on how many panelists entered the panel via a specific way of entry. The results should be broken down by age and filtered according to a specific entry period. To do this, proceed as follows:</p>
+<ul>
+<li>In the Base area, select the variable md_age: Age for Split variables. The age of panelists is recorded in this master data variable. Information on creating and managing master data can be found <a

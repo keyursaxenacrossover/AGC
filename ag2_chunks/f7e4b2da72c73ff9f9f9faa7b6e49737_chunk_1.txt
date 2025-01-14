@@ -1,0 +1,99 @@
+/article_attachments/21017191691666" alt="Importing participants.jpg"></p>
+<h3 id="filling-the-import-template-with-participant-data" class="wysiwyg-text-align-justify">Filling the import template with participant data</h3>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Open the template in a suitable program</p>
+</li>
+<li>
+<p>Enter the data</p>
+</li>
+<li>
+<p>Save the file in Excel or CSV</p>
+</li>
+</ul>
+<h3 id="matching-the-fields-of-the-import-file-with-the-database-fields" class="wysiwyg-text-align-justify">Matching the fields of the import file with the database fields</h3>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Again, open the import dialog by clicking on the Import participants button.</p>
+</li>
+<li>
+<p>Select the appropriate character set.</p>
+</li>
+<li>
+<p> Use<strong> Browse</strong> to select the import file on your computer.</p>
+</li>
+<li>
+<p>Verify that the checkbox in the field “First row includes column labels” is set appropriately. Normally, it should be activated.</p>
+</li>
+<li>
+<p>Verify that the checkbox in the field “Allow duplicate e-mail addresses” is set appropriately. Normally, it should be deactivated.</p>
+</li>
+<li>
+<p>Click on the <strong>Send file</strong> button to start the import operation.</p>
+</li>
+<li>
+<p>In the next step, all columns of the import file must be matched with the appropriate database fields. If you have used the template without changing the column labels, as recommended, the software will carry out the allocations automatically.</p>
+</li>
+<li>
+<p>After checking the allocations confirm by clicking on <strong>Proceed to preview</strong>.</p>
+</li>
+</ul>
+<h3 id="checking-import-data-in-the-preview" class="wysiwyg-text-align-justify">Checking import data in the preview</h3>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>In the import preview all the data records are displayed as they will be imported into the project. The traffic-light icon in the “Status” column indicates whether the data record is complete and logically coherent. If the icon is red, i.e. if an error occurred, the reason for this will be indicated when hovering the cursor over the icon.</p>
+</li>
+<li>
+<p>If necessary, use the<strong> Edit</strong> and <strong>Delete</strong> icons to open and subsequently edit resp. delete specific data records. Afterwards, use the <strong>Back</strong> link to return to the overview.</p>
+</li>
+</ul>
+<h3 id="executing-import-and-downloading-results" class="wysiwyg-text-align-justify">Executing import and downloading results</h3>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>If you are satisfied with the data in the preview, click on <strong>Import</strong> to trigger the actual import.</p>
+</li>
+<li>
+<p>After completion of the import operation, you will be shown how many data records have been created and how many have not been created due to problems.</p>
+</li>
+<li>
+<p>By clicking on the <strong>Download results</strong> button you can retrieve an Excel file containing the following information:</p>
+<ul>
+<li>
+<p>all data contained in the import file</p>
+</li>
+<li>
+<p>the “result” column contains the import result, i.e. a message “Data record import successful” or “Data record not imported”</p>
+</li>
+<li>
+<p>in case of problems, the reason will be indicated in the “messages” column</p>
+</li>
+</ul>
+</li>
+<li>
+<p>If necessary, you can correct the data records that were not successfully created directly within this file, delete the data records created successfully, and use this file for a new import attempt.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Please note:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Do not start preparing the import until you have created all the required participant variables.</p>
+</li>
+<li>
+<p>When using Excel, consider the following restrictions imposed by manufacturer specifications:</p>
+<ul>
+<li>
+<p>Only the first sheet of the file will be processed. You should not exceed the maximum of 256 columns and 65,000 rows. Should you require more columns or rows, select a different program and save your import file in CSV format.</p>
+</li>
+<li>
+<p>Excel import is only possible for files created or saved using Excel 97+. Excel files that were created or saved using Excel for Mac”, “Neo Office” or “Numbers”, for example, cannot be imported.</p>
+</li>
+<li>
+<p>The file format XLSX, newly introduced by Microsoft with Office 2007, is not supported by<em> EFS</em>.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="formatting-of-the-import-file-in-detail" class="wysiwyg-text-align-justify">Formatting of the import file in detail</h3>
+<p class="wysiwyg-text-align-justify">When filling in the import template or creating your own import file you have to consider various formatting rules.</p>
+<h4 id="file-format" class="wysiwyg-text-align-justify">File format</h4>
+<p class="

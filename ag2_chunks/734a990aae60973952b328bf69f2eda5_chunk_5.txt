@@ -1,0 +1,97 @@
+ with more precise information.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Panel member since x months</p>
+</td>
+<td>
+<p>Calculates the time for which the panelist has been a panel member based on the system data item “penter_date”.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Last updating of master data for x months</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>PCI value</p>
+</td>
+<td>
+<p>The Panelist Compliance Index enables the reliability of panelists to be captured and recorded in a variable.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>E-mail verification status</p>
+</td>
+<td>
+<p>Status of the double opt-in e-mail verification</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>The variable used to define the uniqueness</p>
+</td>
+<td>
+<p>Each characteristic of this variable will be in the sample not more than once.</p>
+<p>Please note that finding unique values requires an extra internal processing step. Therefore, if you use this feature, queries will be considerably slower.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"><br><strong>Excluding panelists already participating in other panel surveys</strong></p>
+<p class="wysiwyg-text-align-justify">Panelists who are already participating in other projects can be excluded from the sample draw. This may be useful if you want to avoid overburdening your respondents. Sometimes it may also be the case that several surveys are conducted on the same range of topics at the same time, while you want the panelists to participate in only one of these surveys.</p>
+<p class="wysiwyg-text-align-justify">At the bottom of the<strong> Define basic set</strong> tab, open the section “Choose the projects whose participants shall be excluded from the basic set”. This will open a list of all panel surveys. Select those whose participants you do not want to include in the basic set of the current sample.</p>
+<p class="wysiwyg-text-align-justify">If you create several samples in the same project, each panelist can only be allocated to one of these samples.</p>
+<h2 id="controlling-the-attribute-distribution-within-the-sample" class="wysiwyg-text-align-justify"><strong>Controlling the attribute distribution within the sample</strong></h2>
+<p class="wysiwyg-text-align-justify">If necessary, you can define certain attribute distributions within the sample in detail. This process is also known as “stratification”.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>You define the distribution of attributes for each combination of attributes or each individual attribute.</p>
+</li>
+<li>
+<p>You can either enter the target values by hand or import them.</p>
+</li>
+<li>
+<p>You can enter either absolute numbers or percentages.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The following sections first explain the available definition methods and cell value specification modes. This is followed by a description of both the manual definition and the import.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014859880082" alt="image-20240618-093452.png"></p>
+<p class="wysiwyg-text-align-justify"><strong>Available definition methods</strong></p>
+<p class="wysiwyg-text-align-justify">The table provides an overview of the definition methods available.</p>
+<table class="wysiwyg-text-align-justify" style="height: 290px;" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr style="height: 22px;">
+<th class="wysiwyg-text-align-center" style="height: 22px; width: 336.91px;" data-highlight-colour="#c0b6f2">
+<p><strong>Option</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="height: 22px; width: 336.91px;" data-highlight-colour="#c0b6f2">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr style="height: 67px;">
+<td style="height: 67px; width: 328.889px;">
+<p>Manual selection of the stratification variables and entry of the target distribution (absolute values)</p>
+</td>
+<td style="height: 67px; width: 328.889px;">
+<p>The stratification is defined manually, as usual, the target distribution will be specified in absolute values</p>
+</td>
+</tr>
+<tr style="height: 67px;">
+<td style="height: 67px; width: 328.889px;">
+<p>Manual selection of the stratification variables and entry of the target distribution (percentages)</p>
+</td>
+<td style="height: 67px; width: 328.889px;">
+<p>The traditional stratification method involves the entry of target distribution as a percentage.</p>
+</td>
+</tr>
+<tr style="height: 67px;">
+<td style="height: 67px; width: 328.889px;">
+<p>Import of a file containing the

@@ -1,0 +1,103 @@
+>
+<td style="width: 73.7326px; height: 272px;">
+<p> </p>
+</td>
+<td style="width: 339.479px; height: 272px;">
+<p>The selected mail template is sent to the panelist’s new e-mail address, to verify the changes.</p>
+<ul>
+<li>
+<p>The “Standard mail” mail templates are available.</p>
+</li>
+<li>
+<p>The data required for verification should be inserted into the mail template using wildcards. Use #mail_validation_code# to insert the actual verification code; by using #mail_validation_code_complete# you can create a complete clickable link.</p>
+</li>
+</ul>
+</td>
+<td style="width: 114.514px; height: 272px;">
+<p> </p>
+</td>
+</tr>
+<tr style="height: 82px;">
+<td style="width: 241.719px; height: 82px;">
+<p>Message upon successful change</p>
+</td>
+<td style="width: 73.7326px; height: 82px;">
+<p> </p>
+</td>
+<td style="width: 339.479px; height: 82px;">
+<p>This text is displayed once the panelists have clicked on the verification link in the confirmation mail.</p>
+</td>
+<td style="width: 114.514px; height: 82px;">
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="function-module-faq-list" class="wysiwyg-text-align-justify"><strong>Function Module: FAQ List</strong></h3>
+<p class="wysiwyg-text-align-justify">The “FAQ list” function module allows you to embed an FAQ list in a panel page. In the standard panel, such a list can be found for example on the <strong>How it works → FAQ</strong> page. The contents of the FAQ list are maintained via a separate GUI.</p>
+<p class="wysiwyg-text-align-justify">EFS Panel provides various design options:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>You can optionally limit the number of FAQ items to be displayed.</p>
+</li>
+<li>
+<p>You can create different FAQ lists for each language version and place them on different panel pages.</p>
+</li>
+<li>
+<p>You can sort items according to different criteria.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">You can use the “func_faq” template to change the appearance of the FAQ. In the standard configuration, the questions are displayed; users can display the full text of the FAQ item by clicking on the<strong> [+]</strong> icon.</p>
+<p class="wysiwyg-text-align-justify"><strong>Options</strong></p>
+<p class="wysiwyg-text-align-justify">The “FAQ list” function module offers the following options.</p>
+<table class="wysiwyg-text-align-justify" style="height: 561px;" border="1" width="816" data-layout="default" data-table-width="760">
+<colgroup>
+<col style="width: 203.0px;">
+<col style="width: 401.0px;">
+<col style="width: 156.0px;">
+</colgroup>
+<tbody>
+<tr style="height: 44px;">
+<th class="wysiwyg-text-align-center" style="height: 44px; width: 214.549px;" data-highlight-colour="#57d9a3">
+<p><strong>Option</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="height: 44px; width: 426.858px;" data-highlight-colour="#57d9a3">
+<p><strong>Wildcard</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="height: 44px; width: 164.201px;" data-highlight-colour="#57d9a3">
+<p><strong>Standard panel "FAQ" page</strong></p>
+</th>
+</tr>
+<tr style="height: 44px;">
+<td style="height: 44px; width: 206.528px;">
+<p>Reference name for template</p>
+</td>
+<td style="height: 44px; width: 418.837px;">
+<p>Name that can be used to trigger the module in positioning templates.</p>
+</td>
+<td style="height: 44px; width: 156.181px;">
+<p>FAQ</p>
+</td>
+</tr>
+<tr style="height: 44px;">
+<td style="height: 44px; width: 206.528px;">
+<p>Page module title</p>
+</td>
+<td style="height: 44px; width: 418.837px;">
+<p>Name of the module in the page’s module overview</p>
+</td>
+<td style="height: 44px; width: 156.181px;">
+<p>FAQ</p>
+</td>
+</tr>
+<tr style="height: 44px;">
+<td style="height: 44px; width: 206.528px;">
+<p>Module template</p>
+</td>
+<td style="height: 44px; width: 418.837px;">
+<p>Module-specific template that controls how data provided by the module are displayed.</p>
+</td>
+<td style="height: 44px; width: 156.181px;">
+<p>func_faq</p>
+</td>
+</tr

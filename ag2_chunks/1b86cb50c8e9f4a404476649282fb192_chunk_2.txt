@@ -1,0 +1,135 @@
+&amp;Drop to change the position of a question on the current page.</p>
+<p>To move a question to another page, please switch to the questionnaire view, display all questions, and drag the question to the appropriate position.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Type</p>
+</td>
+<td>
+<p>The icon symbolizes the parent category (e.g. matrix), and the number of the specific question type (e.g. 311).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Title</p>
+</td>
+<td>
+<p>Internally used question title.</p>
+<p>Click on the title to access the detail view.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Question text</p>
+</td>
+<td>
+<p>Question text</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Question ID</p>
+</td>
+<td>
+<p>Unique identifier of the question (q_xxxx). It is used e.g.:</p>
+<ul>
+<li>
+<p>In the<em> EFS Survey</em> reporting: it allows to definition the questions that should be in an evaluation.</p>
+</li>
+<li>
+<p>In the pro editor: you can create a specific design for each question using CSS.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Info</p>
+</td>
+<td>
+<p>The icons symbolize the routing elements and other questionnaire features used in the question.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Randomization on / off</p>
+</td>
+<td>
+<p>The position of all or selected questions on the current page<br>can be randomly switched. To do so, simply click on the icons for the desired questions.</p>
+<p>Please note: The order of randomized questions on a page cannot be saved, so cannot be the subject of an evaluation.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Actions icons</p>
+</td>
+<td>
+<ul>
+<li>
+<p><strong>Preview</strong>: Page preview.</p>
+</li>
+<li>
+<p><strong>Copy</strong>: In the copy dialog, you can optionally change the question title and select another page as a target. Use <strong>Save</strong> to remain in the current page view. If you use <strong>Save and Edit</strong>, you’ll be routed to the copied question.</p>
+</li>
+<li>
+<p><strong>Delete</strong></p>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="overview-of-the-dedicated-detail-view-features" class="wysiwyg-text-align-justify">Overview of the dedicated detail view features</h3>
+<p class="wysiwyg-text-align-justify">Depending on the question type, the detail view contains different functions. The following tables give you an overview of which feature you will normally find and can use with common question types such as single or multiple response lists.</p>
+<h4 id="question" class="wysiwyg-text-align-justify"><strong>Question</strong></h4>
+<table class="wysiwyg-text-align-justify" style="height: 1910px;" border="1" width="743" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 340.0px;"> <col style="width: 340.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" style="width: 296.233px;" data-highlight-colour="#c0b6f2">
+<p><strong>Feature</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" style="width: 439.462px;" data-highlight-colour="#c0b6f2">
+<p><strong>Description</strong></p>
+</th>
+</tr>
+<tr>
+<td style="width: 288.212px;">
+<p>Question type / Change question type</p>
+</td>
+<td style="width: 431.441px;">
+<p>The icon symbolizes the parent category (e.g. matrix), and the number of the specific question type (e.g. 311).</p>
+<p>By clicking on the icon, you can invoke the dialog for changing the question type.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 288.212px;">
+<p>Question Title</p>
+</td>
+<td style="width: 431.441px;">
+<p>This field contains the title of the question.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 288.212px;">
+<p>Question Text</p>
+</td>
+<td style="width: 431.441px;">
+<p>In this field, you can enter the question text as it will appear on the website.</p>
+<ul>
+<li>
+<p>From EFS 10.0 you can use the TinyMCE editor to layout question text, fill-in instructions, and help text.</p>
+</li>
+<li>
+<p>If you do not want to use the TinyMCE editor, you can easily deactivate the feature in the menu <strong>Options</strong> → <strong>Personal preferences </strong>on the tab <strong>Behavior of questionnaire editor</strong></p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="width: 288.212px;">
+<p>Fill-in instruction</p>
+</td>
+<td style="width: 431.441px;">
+<p>Here you can insert explanatory notes on answering the question, e.g.

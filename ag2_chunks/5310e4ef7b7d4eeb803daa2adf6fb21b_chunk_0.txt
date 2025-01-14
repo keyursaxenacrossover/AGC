@@ -1,0 +1,128 @@
+<h1 id="h_01J6C0MX5MPRBBS2HQCV5DP2XJ">Overview</h1>
+<p>This article provides a step-by-step guide for setting up a SAML 2.0 Identity Provider (IdP) in Okta. The process involves gathering client metadata, configuring the IdP in Okta, and sending metadata to the client. This setup is more complex than OpenID Connect due to the variability in how information is required and configured.</p>
+<ul>
+<li><a href="#header-1">Requirements</a></li>
+<li><a href="#header-3">Process</a></li>
+<li><a href="#header-5">Client Metadata available</a></li>
+<li><a href="#header-6">Client Metadata not available</a></li>
+<li><a href="#header-7">Setup the Identity Provider</a></li>
+<li><a href="#header-12">Send Over Metadata</a></li>
+<li><a href="#header-14">Update the Identity Provider</a></li>
+</ul>
+<p>The SAML 2.0 is more complex than the OpenID Connect setup as it is less strict on how the setup can be done and what information is required.</p>
+<p>Before the setup can be completed in Okta the following information must be gathered / the following things need to be done:</p>
+<h2 id="header-1">Requirements</h2>
+<div class="expand-macro">
+<ul>
+<li>
+<p>The <strong>client has to provide the Metadata</strong> for the Identity Provider in the form of</p>
+<ul>
+<li>
+<p>an XML file provided via mail or another medium</p>
+</li>
+<li>
+<p>a link containing the metadata XML</p>
+</li>
+</ul>
+</li>
+<li>
+<p>The client has to be informed that we expect the following information in the SAML assertion (response)</p>
+<ul>
+<li>
+<p><strong>required attributes</strong></p>
+<ul>
+<li>
+<p>firstName</p>
+</li>
+<li>
+<p>lastName</p>
+</li>
+<li>
+<p>email</p>
+</li>
+</ul>
+</li>
+<li>
+<p>the <strong>subjectNameId</strong> (or nameId) <strong>must be the email</strong> address of the user</p>
+</li>
+</ul>
+</li>
+<li>
+<p>The client has to define the following</p>
+<ul>
+<li>
+<p>What part of the SAML response is digitally signed:</p>
+<ul>
+<li>
+<p>Assertion</p>
+</li>
+<li>
+<p>Response</p>
+</li>
+<li>
+<p>Both</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Is the assertion encrypted ?</p>
+</li>
+</ul>
+</li>
+<li>
+<p>In oder to route users to the correct Identity Provider <strong>we need to know the used email domains</strong> of the client (later used/configured in routing rules in Okta)</p>
+<ul>
+<li>
+<p>E.g: The client is using the domain <code>coca-cola.com</code> for all of its users</p>
+</li>
+</ul>
+</li>
+</ul>
+<p> </p>
+</div>
+<h2 id="header-3">Process</h2>
+<p>During a SAML 2.0 <strong>it does not matter who sends over the metadata first</strong>. Normally a “dummy” application/Identity Provider is created to generate the metadata file. This file will contain all necessary information, even if not all values are final.</p>
+<p>Depending on the information available:</p>
+<h3 id="header-5">Client Metadata available</h3>
+<ul>
+<li>
+<p><a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1223852069/SAML+Provider+Setup+-+Prerequisites#Setup-the-Identity-Provider">Setup the Identity Provider</a></p>
+</li>
+<li>
+<p><a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1223852069/SAML+Provider+Setup+-+Prerequisites#Send-Over-Metadata">Send over metadata</a></p>
+</li>
+<li>
+<p>Configure Routing Rules</p>
+</li>
+<li>
+<p>Configure Profile Mapping</p>
+</li>
+</ul>
+<p> </p>
+<h3 id="header-6">Client Metadata not available</h3>
+<ul>
+<li>
+<p>Setup a “dummy” Identity Provider in Okta to generate the Metadata</p>
+</li>
+<li>
+<p><a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1223852069/SAML+Provider+Setup+-+Prerequisites#Send-Over-Metadata">Send over metadata</a></p>
+<ul>
+<li>
+<p>Wait for the client Metadata response</p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1223852069/SAML+Provider+Setup+-+Prerequisites#Update-the-Identity-Provider">Update the Identity Provider</a></p>
+</li>
+<li>
+<p>Configure Routing Rules</p>
+</li>
+<li>
+<p>Configure Profile Mapping</p>
+</li>
+</ul>
+<h2 id="header-7">Setup the Identity Provider</h2>
+<div class="expand-macro">
+<h3 id="header-8">Step 1: Navigate to Identity Providers</h3>
+<img src="https://discoverxi-supportdesk.zendesk.com

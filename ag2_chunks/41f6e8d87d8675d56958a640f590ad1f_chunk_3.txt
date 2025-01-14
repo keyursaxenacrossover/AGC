@@ -1,0 +1,37 @@
+>
+<p>As of EFS 24.2, you can search for participants in the participant administration of personalized projects using their password. In personalized projects, passwords are not defined by participants, but are rather access strings that can be sent to participants by e-mail or postal mail. By default, the <strong>Code</strong> option is selected as the login type for personalized projects. However, you can change this to <strong>Password</strong> under <strong>Survey menu</strong> &gt; <strong>Project properties</strong> &gt; <strong>Login options</strong>.</p>
+<p> </p>
+<h3 id="header-17"><strong>Configurable Page Breaks in Receipts</strong></h3>
+<p>The feature for creating receipts for projects has been optimized with the new release. Previously, a new PDF page was created for each survey page when creating receipts. This resulted in extremely long receipt reports. From now on, you will find the option <strong>Insert page break for each page of the questionnaire</strong> in your survey project under <strong>Survey menu &gt; Questionnaire editor &gt; Receipts</strong>. This option is activated by default so that the standard behavior for creating receipts remains unchanged. However, if you no longer want annoying page breaks in your receipt, you can simply deactivate this option.</p>
+<h3 id="header-18"><strong>Updated File Size Limits for Upload Question Types</strong></h3>
+<p>For the <em>143 Upload</em> question type, you can now select the options <strong>12 MB, 32 MB</strong> and <strong>64 MB</strong> as <strong>Max. file size</strong> in the <strong>Detail configuration</strong>. For the <em>143 Audio recorder </em>question type the options <strong>16 MB</strong> and <strong>32 MB </strong>have been added as file size limits.</p>
+<h3 id="header-19"><strong>Simplified Addition of Variables to Advanced Search</strong></h3>
+<p>Under <strong>PA Project &gt; Sample &gt; Search All Samples &gt; Advanced Search</strong>, you can configure up to five additional variables for use in the advanced search by selecting the gear icon on the right-hand side. Previously, these variables could only be selected statically from a list. From now on, the search field supports text input so that you can search the list of available variables more easily.</p>
+<p> </p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21037583970962" alt="image-20240305-082840.png"></p>
+<p> </p>
+<h3 id="header-20"><strong>Creating a Print Version of Questionnaires</strong></h3>
+<p>Some technical changes have been made to the feature for creating a print version of your questionnaire. However, you can still use the feature as usual.</p>
+<p> </p>
+<h3 id="header-21"><strong>Updated File Format for Export/Import of Translation File</strong></h3>
+<p>Under <strong>Projects &gt; Project &gt; Questionnaire editor &gt; Language editor &gt; Export/Import</strong> you can export the text elements and messages of your questionnaire for external editing or translating with MS Excel or a professional translation software. Afterwards, they can be imported again. In the past, the format of the export/import file was XLS. As this format is outdated, we have updated the format to XLSX. So you don’t have to worry about converting files anymore.</p>
+<p> </p>
+<hr>
+<h2 id="header-23">
+<strong>Updates in </strong><em><strong>People</strong></em>
+</h2>
+<p>The <em>People</em> module has remained mostly unchanged in this release. Only two minor changes have been made.</p>
+<h3 id="header-25"><strong>Mass Generation of Registration Keys</strong></h3>
+<p>The limit for the generation of registration keys has been increased from 100,000 keys for a single way of entry and per generation process to 15,000,000.</p>
+<h3 id="header-26"><strong>Renaming of ACLs</strong></h3>
+<p>Two ACLs related to panel privacy have been renamed: "panel_email_sample" to "panel_privacy_sample" and "panel_email_groups" to "panel_privacy_groups".</p>
+<p>The change only affects the naming of the ACLs, the rights themselves remain unchanged.</p>
+<p><strong>panel_privacy_sample</strong>:<br>With read rights, the first name, surname and email address of panelists can be displayed in the samples of panel surveys and master data surveys.</p>
+<p><strong>panel_privacy_groups</strong>:<br>With read rights, the first name, last name and email address of panelists can be displayed in the editing dialog of panel groups.</p>
+<hr>
+<h2 id="header-28">
+<strong>Updates in </strong><em><strong>Website</strong></em>
+</h2>
+<p>The<em> Website</em> module has also been optimized for you. In the past, many customers have often asked us about the topic of two-factor authentication in particular, so we are now very pleased to present the new feature to you.</p>
+<h3 id="header-30"><strong>Two-Factor Authentication for Panel Websites</strong></h3>
+<p>You can now set up app-based two-factor authentication for websites. This feature is primarily intended to improve security and prevent unauthorized persons from

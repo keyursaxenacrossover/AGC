@@ -1,0 +1,88 @@
+li>
+<li>
+<p>Move your mouse pointer over the text elements. A green frame will indicate a text element that can be edited. Click on the desired text element.</p>
+</li>
+<li>
+<p>The editing window will open.<br>– The title will indicate the source of the text. In this case, the source is a page module.<br>– Change the text as desired.</p>
+</li>
+<li>
+<p><strong>Save</strong> your changes. Check the result before publishing the changed version of the page via the website editor.</p>
+</li>
+</ol>
+<h2 id="formatting-text-with-html-and-css" class="wysiwyg-text-align-justify"><strong>Formatting Text with HTML and CSS</strong></h2>
+<p class="wysiwyg-text-align-justify">The formatting of text elements – font, font size, color, etc. – is defined by the page module’s template in combination with the panel’s CSS classes. This gives you efficient, centralized control over the layout properties of the entire panel. Details such as line breaks or formatting of individual words, on the other hand, can be directly defined with HTML and CSS in the text input fields.</p>
+<p class="wysiwyg-text-align-justify">The following tables give an overview of the most important HTML tags.</p>
+<p class="wysiwyg-text-align-justify"><em>Information: </em>You should use this manual formatting option with care. Cross-panel formatting with the help of templates and CSS files increases uniform appearance and reduces the maintenance effort in case of changes.</p>
+<p class="auto-cursor-target wysiwyg-text-align-justify"><strong>The most important HTML tags:</strong></p>
+<table class="relative-table wrapped wysiwyg-text-align-justify" style="width: 81.1651%; margin-right: auto; margin-left: auto; height: 635px;" border="1">
+<colgroup> <col style="width: 36.6099%;"> </colgroup> <colgroup> <col style="width: 63.4549%;"> </colgroup>
+<tbody>
+<tr>
+<th>Tag</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td>&lt;h[1-6]&gt;Text&lt;/h[1-6]&gt;</td>
+<td>Header</td>
+</tr>
+<tr>
+<td>&lt;p&gt;Text&lt;/p&gt;</td>
+<td>Paragraph</td>
+</tr>
+<tr>
+<td>&lt;br&gt; or &lt;br /&gt;</td>
+<td>Line break</td>
+</tr>
+<tr>
+<td>&lt;hr&gt;</td>
+<td>Dividing line</td>
+</tr>
+<tr>
+<td>
+<p>&lt;ul&gt;<br>&lt;li&gt;List entry&lt;/li&gt;<br>&lt;li&gt;List entry&lt;/li&gt;<br>&lt;/ul&gt;</p>
+</td>
+<td>List with bullet points</td>
+</tr>
+<tr>
+<td>
+<p>&lt;ol&gt;<br>&lt;li&gt;List entry&lt;/li&gt;<br>&lt;li&gt;List entry&lt;/li&gt;<br>&lt;ol&gt;</p>
+</td>
+<td>Numbered list</td>
+</tr>
+<tr>
+<td>
+<p>&lt;table border="thickness"&gt;<br>&lt;tr&gt;<br>&lt;td&gt;data cell&lt;/td&gt;<br>&lt;td&gt;data cell&lt;/td&gt;<br>&lt;/tr&gt;<br>&lt;/table&gt;</p>
+</td>
+<td>
+<p>Table with one row and two columns. Instead of “thickness”, you should give the desired border thickness in pixels.</p>
+</td>
+</tr>
+<tr>
+<td colspan="1">&lt;a href="URL”&gt;link name&lt;/a&gt;</td>
+<td colspan="1">
+<p>Clickable link. Instead of “link name”, you should enter the text that should appear as a clickable link.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="auto-cursor-target wysiwyg-text-align-justify"><strong>HTML tags for formatting text components:</strong></p>
+<table class="wrapped wysiwyg-text-align-justify" style="margin-right: auto; margin-left: auto; width: 226px; height: 95px;" border="1">
+<colgroup> <col> <col> </colgroup>
+<tbody>
+<tr>
+<th style="width: 134.688px;">Tag</th>
+<th style="width: 84.0104px;">Meaning</th>
+</tr>
+<tr>
+<td style="width: 126.667px;">&lt;b&gt;Text&lt;/b&gt;</td>
+<td style="width: 75.9896px;">Bold</td>
+</tr>
+<tr>
+<td style="width: 126.667px;">&lt;i&gt;Text&lt;/i&gt;</td>
+<td style="width: 75.9896px;">Italics</td>
+</tr>
+</tbody>
+</table>
+<p class="auto-cursor-target wysiwyg-text-align-justify"><strong>HTML entities for German umlauts:</strong></p>
+<table class="relative-table wrapped wysiwyg-text-align-justify" style="width: 31.9391%; margin-right: auto; margin-left: auto; height: 192px;" border="1">
+<colgroup> <col style="width: 27.6339%;"> </colgroup> <colgroup> <col style="

@@ -1,0 +1,30 @@
+="2"></ri:page><ac:link-body>Upgradability check for installations with customizings</ac:link-body></ac:link> </p><h1 id="header-4">19.1</h1><p>PHP 5.6:</p><ul>
+<li><p>Alle Alias der EFS 18.4 Installation in einer php 5.6 ServiceGroup<br>check here: <a href="http://10.250.0.17/repo/SG.html">http://10.250.0.17/repo/SG.html</a></p></li>
+<li><p>Best case: Alle Kundenverwalteten DNS-Einträge zeigen per CNAME auf den technical name, damit wir die Installation verschieben können.<br>Verify here: <a href="http://10.250.0.17/repo/efsdns_info.txt">http://10.250.0.17/repo/efsdns_info.txt</a></p></li>
+</ul><p><em><span style="color: rgb(101,84,192);">Steps to be taken:</span></em></p><p>If customer needs to change their own dns record, please contact the respective 1st Level Support.</p><p>Then once ready for the frontend move, assign ticket to SystemEngineering.</p><p>Once move is completed, proceed with usual steps.</p><p>DV needs to be Version 4.1 or higher to support PHP 5.6</p><p></p><p>Also check for SNI-Blocker</p><ul>
+<li>
+<p>check if webservices are enabled - <strong>if no match then you can skip the other checks</strong></p>
+<ul><li><p><code>echo "SELECT COUNT(*) FROM config_variables WHERE name='has_webservices' AND value='b:1;';" | efslogin -n ab1234</code></p></li></ul>
+</li>
+<li>
+<p>check how often webservices have been used</p>
+<ul><li><pre><code class="language-text">echo "SELECT COUNT(*) FROM efs_service_log;" | efslogin -n ab1234</code></pre></li></ul>
+</li>
+<li>
+<p>check if this year webservices have been called</p>
+<ul><li><pre><code class="language-text">​echo "SELECT COUNT(*) FROM efs_service_log;" | efslogin -n ab1234 zgrep "POST /service/" /logfiles/vhosts/2020/*/*/*/ab1234.customervoice360.com.access.log.* | awk ' { print $4 } ' | sort -n | uniq -c</code></pre></li></ul>
+</li>
+</ul> with usual steps.</p><p>DV needs to be Version 4.1 or higher to support PHP 5.6</p><p></p><p>Also check for SNI-Blocker</p><ul>
+<li>
+<p>check if webservices are enabled - <strong>if no match then you can skip the other checks</strong></p>
+<ul><li><p><code>echo "SELECT COUNT(*) FROM config_variables WHERE name='has_webservices' AND value='b:1;';" | efslogin -n ab1234</code></p></li></ul>
+</li>
+<li>
+<p>check how often webservices have been used</p>
+<ul><li><pre><code class="language-text">echo "SELECT COUNT(*) FROM efs_service_log;" | efslogin -n ab1234</code></pre></li></ul>
+</li>
+<li>
+<p>check if this year webservices have been called</p>
+<ul><li><pre><code class="language-text">​echo "SELECT COUNT(*) FROM efs_service_log;" | efslogin -n ab1234 zgrep "POST /service/" /logfiles/vhosts/2020/*/*/*/ab1234.customervoice360.com.access.log.* | awk ' { print $4 } ' | sort -n | uniq -c</code></pre></li></ul>
+</li>
+</ul>

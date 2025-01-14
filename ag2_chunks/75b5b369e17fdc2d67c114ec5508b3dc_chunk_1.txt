@@ -1,0 +1,46 @@
+</li>
+<li>
+<p>Copy this file to the htdocs folder of the installation. In this location we can source the file to the sql server.</p>
+<pre><code class="language-text">mv /nfs/opst[]_temp/[ab1234].customervoice360.com/test.sql .</code></pre>
+<p>The “.” is important. </p>
+</li>
+<li>
+<p>To link the orphaned projects to the dummy organisation we need to add the following statement to the first line of the <em>test.sql</em> file created in the previous step:</p>
+<pre><code class="language-text">UPDATE project_org
+SET oid= DUMMY ORGANISATION ID
+WHERE pid
+IN ();</code></pre>
+<p>The () of the statement needs to be filled in an SQL conform notation with the <em>pid</em>s from:</p>
+<pre><code class="language-text">SELECT pid FROM project WHERE pid IN (SELECT pid FROM project_org WHERE oid NOT IN (SELECT id FROM admin_contract_org));</code></pre>
+<p><strong><span style="color: #ff5630;">This statement will only work until this step. Make sure you have the project ids saved if you need them elsewhere!</span></strong></p>
+</li>
+<li>
+<p>Source the file.</p>
+<pre><code class="language-text">SOURCE test.sql;</code></pre>
+<p> </p>
+</li>
+<li>
+<p>Now all the orphaned installations should be visible upon login as the dummy user. You can find the projects in the projects list and in the archive.</p>
+</li>
+</ol>[]_temp/[ab1234].customervoice360.com/test.sql .</code></pre>
+<p>The “.” is important. </p>
+</li>
+<li>
+<p>To link the orphaned projects to the dummy organisation we need to add the following statement to the first line of the <em>test.sql</em> file created in the previous step:</p>
+<pre><code class="language-text">UPDATE project_org
+SET oid= DUMMY ORGANISATION ID
+WHERE pid
+IN ();</code></pre>
+<p>The () of the statement needs to be filled in an SQL conform notation with the <em>pid</em>s from:</p>
+<pre><code class="language-text">SELECT pid FROM project WHERE pid IN (SELECT pid FROM project_org WHERE oid NOT IN (SELECT id FROM admin_contract_org));</code></pre>
+<p><strong><span style="color: #ff5630;">This statement will only work until this step. Make sure you have the project ids saved if you need them elsewhere!</span></strong></p>
+</li>
+<li>
+<p>Source the file.</p>
+<pre><code class="language-text">SOURCE test.sql;</code></pre>
+<p> </p>
+</li>
+<li>
+<p>Now all the orphaned installations should be visible upon login as the dummy user. You can find the projects in the projects list and in the archive.</p>
+</li>
+</ol>

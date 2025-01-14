@@ -1,0 +1,118 @@
+="#57d9a3">
+<p><strong>Column</strong></p>
+</th>
+<th data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Activated</p>
+</td>
+<td>
+<p>If the variable is activated (Yes = 1), it will be exported in the data record. If it is not activated (No = 0), it will not be exported.</p>
+<p>With the template shown above, you would only export those variables from the address record that contains the participants’ postal addresses (first name, name, street, zip code, city, and country).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Position</p>
+</td>
+<td>
+<p>The position of the column in the exported data record.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Width</p>
+</td>
+<td>
+<p>The width of the column.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Alignment</p>
+</td>
+<td>
+<p>The alignment of the data for Fixed Format and Quantum export.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Ext. varname</p>
+</td>
+<td>
+<p>The SPSS label and header in Excel.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Description</p>
+</td>
+<td>
+<p>The description is used for XML and Triple-S export.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Quantum table name</p>
+</td>
+<td>
+<p>The table name used for Quantum export. This name is automatically generated and cannot be edited.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Question type</p>
+</td>
+<td>
+<p>The question type is displayed to improve editability and structure. It cannot be edited.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Int. varname</p>
+</td>
+<td>
+<p>The EFS Survey variable name.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Data type</p>
+</td>
+<td>
+<p>The type of data that can be entered into the respective database field.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify">For user-defined templates, you will find that there are two additional buttons:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Sort fields by position</strong>: Sort the rows by the content of the “Position” column.</p>
+</li>
+<li>
+<p><strong>Shrink column widths to width of actual data</strong>: This function is required for Fixed Format and Quantum exports.</p>
+</li>
+</ul>
+<h3 id="creating-a-user-defined-template" class="wysiwyg-text-align-justify"><strong>Creating a User-defined Template</strong></h3>
+<p class="wysiwyg-text-align-justify">To define a new template, you must first select the appropriate basic template: This template should at least contain all of the data you wish to export later on. Select the basic template in the “Create a new template” section, and confirm by clicking on <strong>Create </strong>(alternatively, you can also click on the <strong>Save as new template </strong>icon).</p>
+<p class="wysiwyg-text-align-justify">In the next window, enter the name of the template and confirm by clicking on <strong>Save as a new template</strong>. The new template of the “User-defined template” type will be created and displayed in the list of templates.</p>
+<h3 id="downloading-and-uploading-export-templates-and-editing-them-externally" class="wysiwyg-text-align-justify"><strong>Downloading and Uploading Export Templates and Editing Them Externally</strong></h3>
+<p class="wysiwyg-text-align-justify">To edit an export template, you can download it and edit it externally. Please proceed as follows:</p>
+<ol class="wysiwyg-text-align-justify" start="1">
+<li>
+<p>Click on the <strong>Download template as CSV file </strong>or <strong>Download template as Excel file </strong>icon to download the template to your hard disk.</p>
+</li>
+<li>
+<p>Open the file in a suitable program, e.g. in MS Excel. Edit the file according to the rules presented below in the section titled “Editing a user-defined template”, and then save it. In the example shown, some variables are deactivated: “u_group”, “u_email” and “u_www” have already been deactivated.</p>
+</li>
+<li>
+<p>Click on the <strong>Upload definitions for template “...” </strong>icon. Locate the definition file on your hard disk, and then confirm by clicking on Upload. Open the export template, and check the result. In the example shown, all variables after “u_group” were deactivated. You can use the buttons labeled <strong>Sort fields by position </strong>and <strong>Shrink column widths </strong>to the width of actual data to edit the template further.</p>
+</li>
+</ol>
+<h3 id="editing-a-user-defined-template" class="wysiwyg-text-align-justify"><strong>Editing a User-defined Template</strong></h3>
+<p class="wysiwyg-text-align-justify">When editing the template definition, you should pay attention to the following rules:</p>
+<ul class="wysiwy

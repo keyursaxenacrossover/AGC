@@ -1,0 +1,38 @@
+ data</strong> button.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014812827666"></p>
+</li>
+</ul>
+<ul class="wysiwyg-text-align-justify">
+<li data-renderer-start-pos="21202">Click on <strong data-renderer-mark="true">Select file</strong> and select the file that you saved in the previous step.</li>
+<li data-renderer-start-pos="21324">Click on <strong data-renderer-mark="true">Send file</strong>.</li>
+<li data-renderer-start-pos="21347">On the next page, the columns of the import file are assigned to the corresponding fields in the database. As your file only contains the columns u_firstname, u_name, u_email, md_day_of_birth and md_month_of_birth, only these are assigned.</li>
+<li data-renderer-start-pos="21590">Select the <strong data-renderer-mark="true">u_email</strong> option at the bottom of the page under <strong data-renderer-mark="true">Linking variable</strong>.</li>
+<li data-renderer-start-pos="21669">Then select the u_email variable from the drop-down menu under <strong data-renderer-mark="true">Which column in the import file contains the linking variable?</strong>.</li>
+<li data-renderer-start-pos="21799">Click on<strong data-renderer-mark="true"> Save allocation </strong>and then on <strong data-renderer-mark="true">Proceed to preview</strong>.</li>
+<li data-renderer-start-pos="21859">An import preview is displayed. Click on<strong data-renderer-mark="true"> Import</strong> to complete the process.</li>
+</ul>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="21935"> </p>
+<h3 id="Create-Mail-Template" class="wysiwyg-text-align-justify" data-renderer-start-pos="21937"><strong data-renderer-mark="true">Create Mail Template</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="21959">Create a new mail template for a birthday email as described under Mail templates. You can find an example email below:<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014812811538"></p>
+<h3 id="Create-Group" class="wysiwyg-text-align-justify" data-renderer-start-pos="22083"><strong data-renderer-mark="true">Create Group</strong></h3>
+<p class="wysiwyg-text-align-left" data-renderer-start-pos="22097">Now create the new "Birthday" group as described above under Groups.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014859733650"></p>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="22170"> </p>
+<h3 id="Create-Grouping-Filter.1" class="wysiwyg-text-align-justify" data-renderer-start-pos="22172"><strong data-renderer-mark="true">Create Grouping Filter</strong></h3>
+<p class="wysiwyg-text-align-justify" data-renderer-start-pos="22196">We will now create the grouping filter for the "Birthday" group. To do this, follow the steps below.</p>
+<ul class="ak-ul wysiwyg-text-align-justify" data-indent-level="1">
+<li>
+<p data-renderer-start-pos="22300">Create the new grouping filter "Birthday" as described above under Grouping filters.</p>
+</li>
+<li>
+<p data-renderer-start-pos="22388">Under <strong data-renderer-mark="true">Filter condition</strong>, select the master data variable “md_day_of_birth” that you have just created from the <strong data-renderer-mark="true">Variable</strong> drop-down menu. Select the <strong data-renderer-mark="true">equal</strong> option from the <strong data-renderer-mark="true">Condition</strong> drop-down menu and enter "#CURRENT_DAY_DAY#" in the <strong data-renderer-mark="true">Value</strong> field. With this filter criterion panelists whose birthday matches the current day will be added to the group.</p>
+</li>
+<li>
+<p data-renderer-start-pos="22738">Click on <strong data-renderer-mark="true">Save</strong>.</p>
+</li>
+<li>
+<p data-renderer-start-pos="22756">In the line below, select the master data variable “md_month_of_birth” that you have just created. Select the <strong data-renderer-mark="true">equal</strong> option from the <strong data-renderer-mark="true">Condition</strong> drop-down menu and enter "#CURRENT_DAY_MONTH#" in the <strong data-renderer-mark="true">Value</strong> field. This filter criterion will add panelists to the group whose birth month matches the current month.</p>
+</li>
+<li>
+<p class="wysiwyg-text-align-left" data-renderer-start-pos="23067">Click on <strong data-renderer-mark="true">Save</strong>.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014859739666"></p>
+</li>
+</ul>
+<div class="rich-media-item mediaSingleView-content-wrap image-center cc-1q73e46 wysiwyg-text-align-justify" data-layout="center" data-width="760" data-width-type="pixel" data-node-type="mediaSingle" data-render

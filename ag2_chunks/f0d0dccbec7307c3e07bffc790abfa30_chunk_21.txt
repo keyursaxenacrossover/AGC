@@ -1,0 +1,142 @@
+p>
+</td>
+<td style="height: 45px; width: 150.885px;">
+<p>true</p>
+</td>
+<td style="height: 45px; width: 150.885px;">
+<p>Efs project id <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+<tr style="height: 45px;">
+<td style="height: 45px; width: 152.882px;">
+<p>fid</p>
+</td>
+<td style="height: 45px; width: 150.885px;">
+<p>integer</p>
+</td>
+<td style="height: 45px; width: 150.885px;">
+<p>true</p>
+</td>
+<td style="height: 45px; width: 150.885px;">
+<p>Feedback center user id <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+<tr style="height: 90px;">
+<td style="height: 90px; width: 152.882px;">
+<p>token</p>
+</td>
+<td style="height: 90px; width: 150.885px;">
+<p>string</p>
+</td>
+<td style="height: 90px; width: 150.885px;">
+<p>true</p>
+</td>
+<td style="height: 90px; width: 150.885px;">
+<p>token to validate request at data voyager <strong>Examples:</strong> <code>Example</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 id="header-99">MySight</h1>
+<div class="expand-macro">
+<h4 id="h_01J441N79FBKCWHXB3SBRK9NCC"> </h4>
+<h2 id="header-101">PATCH /mysight/groups/{instanceId}</h2>
+<p>Updates additional data of configured panel groups for given mySight instance</p>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">true</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>instanceId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>mySight instanceId <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 id="header-103">People Module / Panel</h1>
+<h2 id="header-105">Panel circles</h2>
+<div class="expand-macro">
+<h4 id="h_01J441N79FQGBJZZBF2K4QPEEQ"> </h4>
+<h3 id="header-107">POST /panel/circles/</h3>
+<p>Adds a new panel circle (portals group), used in Portals</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "circleInitData": {
+    "title": "People in my organization",
+    "circleAccessType": "PRIVATE",
+    "matchVar": "m_gcid_recode",
+    "matchAgainstVar": "m_gcid_recode",
+    "panelGroupId": 1,
+    "startDateTime": "2021-01-09 09:00:00",
+    "intervalType": "DAY",
+    "intervalValue": 1
+  }
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">{
+  "circleId": 123,
+  "title": "People in my organization",
+  "circleType": "COMPANY_MANAGED",
+  "circleAccessType": "PRIVATE",
+  "circleProcessStatus": "IDLE"
+}</code></pre>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79FZESAXCBB4W8GXCVQ"> </h4>
+<h3 id="header-108">POST /panel/circles/generate/{id}</h3>
+<p>Generates a company managed panel circle (portals group)</p>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">true</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p

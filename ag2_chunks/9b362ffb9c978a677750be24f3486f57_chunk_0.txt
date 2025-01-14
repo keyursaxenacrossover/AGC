@@ -1,0 +1,53 @@
+<p> </p>
+<h1 id="h_01J6A3TP08FJ87T0A19EHBBSQ1">Overview</h1>
+<p>This guide outlines the steps necessary to set up an EFS (Enterprise Feedback System) Admin application in Okta. It details the process of creating groups, configuring the application, and managing aliases for multiple domain installations. Each step ensures that the EFS Admin application is properly integrated with Okta and ready for use by the client.</p>
+<p> </p>
+<h2 id="h_01J6A3ZRWQN97QV06KNCQTZ5JV">Setup</h2>
+<p>For EFS Admin the general tenant setup has to be done already. The only entity that has to be created for EFS Admin itself is an application in Okta.</p>
+<p><strong>Note</strong>: this has to be done for every installation a client has/wants Tivian Access enabled on.</p>
+<p> </p>
+<h3 id="header-1">Step 1: Navigate to Groups</h3>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716841216018" alt="Screenshot_2020-02-13 Questback - Groups.png"></p>
+<p> </p>
+<h3 id="header-3">Step 2: Create an application specific group</h3>
+<p><strong>Reminder:</strong></p>
+<p>Rember the group name for further steps and the group ID for configuring the EFS application.</p>
+<p><strong>Values:</strong></p>
+<p><strong>Name: </strong> unique customer name - main domain of the installation - also see Naming conventions in Okta</p>
+<p><strong>Group Description:</strong> no preference - usually repeating the name above is enough</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716858117010" alt="Screenshot_2020-02-13 Questback - Groups(1).png"></p>
+<p> </p>
+<p><u>Rembember Group ID for configuring the EFS application.</u></p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716875074194" alt="okta_group_id.PNG"></p>
+<p> </p>
+<h3 id="header-5">Step 3: Navigate to Applications</h3>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716885525266" alt="applications_step_1.png"></p>
+<p> </p>
+<h3 id="header-6">Step 4: Add an Application</h3>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716892585234" alt="applications_step_2.png"></p>
+<p> </p>
+<h3 id="header-7">Step 5: Create a new Application to be added</h3>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716866979858" alt="applications_step_3.png"></p>
+<p> </p>
+<h3 id="header-8">Step 6: Select App Type</h3>
+<p><strong>Values:</strong></p>
+<p>EFS is of type “Web” and will use “OpenID Connect”</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716892438034" alt="applications_step_4.png"></p>
+<p> </p>
+<h3 id="header-9">Step 7: Save Application</h3>
+<p><strong>Values:</strong></p>
+<p>Name: see Naming conventions in Okta</p>
+<p>Login redirect: &lt;URL of installation&gt;/iam/admin/auth/login</p>
+<p>Logout redirect: &lt;URL of installation&gt;/iam/admin/auth/logoutSuccess</p>
+<p><strong>Note</strong>: If an installation is available via multiple alias-domains, they also have to be registered in order for them to work. For that just add multiple entries for both login redirect URIs and Logout redirect URIs with &lt;URL of installation&gt;/iam/admin/auth/login, where &lt;URL of installation&gt; is replaced by the alias-domains.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716892354066" alt="Screenshot_2019-11-28 Questback - Applications.png"></p>
+<p> </p>
+<h3 id="header-10">Step 6: Check Application Settings and copy ClientID and Client secret</h3>
+<p><strong>Values:</strong></p>
+<p>The grant type should be “Authorization Code” - that should be the default value.</p>
+<p>Also add the Grant-Type <strong>“Refresh Token”</strong>.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/20716866151314" alt="Screenshot_2020-03-06 Questback GmbH - OpenID Connect Client questback beat customervoice360 com EFS admin.png"></p>
+<p> </p>
+<h3 id="header-11">Step 7: Assign Group</h3>
+<p>The group that was created above should be assigned here. This is the group that is specific to this application.</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/h

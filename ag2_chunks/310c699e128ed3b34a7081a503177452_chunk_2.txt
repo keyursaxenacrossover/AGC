@@ -1,0 +1,48 @@
+</ul>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="checking-dispatch" class="wysiwyg-text-align-justify">Checking SMS Dispatch</h2>
+<p class="wysiwyg-text-align-justify">You can check the status of sent SMS in:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>The Mail Report</li>
+<li>Participant administration → Mail transmission report</li>
+<li>Platform cockpit → Project mail overview</li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="planning-dispatch" class="wysiwyg-text-align-justify">Planning SMS Dispatch</h2>
+<p class="wysiwyg-text-align-justify">Thorough planning of SMS dispatch and early ordering of SMS packages are essential for a smooth process.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Contact support to order the required amount of SMS and obtain a current list of prices. As the owner of an installation, you are responsible for all SMS dispatched from and billed on it.</li>
+<li>Estimate the number of SMS needed for a survey, keeping in mind that longer messages might require multiple SMS. Regularly check your remaining SMS resources and order a new package before they are completely used up.</li>
+<li>To ensure that an important survey process is not interrupted, SMS resources can be exceeded by up to 2,000 SMS, which will be billed as usual. If you exceed this limit, dispatch will be interrupted and can only be reactivated after ordering additional SMS.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="managing-resources" class="wysiwyg-text-align-justify">Managing the SMS Resources of an Installation</h2>
+<p class="wysiwyg-text-align-justify">Check available SMS in the "Options → SMS overview" menu:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>"Assigned SMS packages" shows ordered packages</li>
+<li>"SMS amount" displays remaining SMS</li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="do-not-sms" class="wysiwyg-text-align-justify">Do-Not-SMS List</h2>
+<p class="wysiwyg-text-align-left">The Do-Not-SMS list can be accessed via "Options → Mail Queue → Do-Not-SMS list". This list excludes numbers from SMS communication globally or per project.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014684727698"></p>
+<p class="wysiwyg-text-align-justify"><strong>Adding Participants to the Do-Not-SMS List</strong><br>You can easily add participants or their mobile phone numbers to the Do-Not-SMS list by importing them. Proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Click on the Import button.</li>
+<li>Download the import template and fill it out. In the rcpt column, enter the mobile phone numbers you want to add to the list. In the pid column, enter a specific project ID or 0 for global exclusion. Save the file.</li>
+<li><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014721611026"></li>
+<li class="wysiwyg-text-align-left">Click on Choose file, select the filled template, and click Send file.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21014684728338">
+</li>
+<li>In the next step, simply click Proceed to preview and then click Import. The numbers will now be in the Do-Not-SMS list.</li>
+<li>You can export the mobile numbers in Excel or CSV format, or remove them from the list by selecting the desired number, choosing Remove from list, and clicking Execute.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Inserting an Unsubscribe Link in SMS</strong><br>To add an unsubscribe link in SMS messages, insert the placeholders #unsubscribe_global# and/or #unsubscribe_survey# in your SMS or SMS template. These placeholders will be replaced by the corresponding unsubscribe link when the SMS is sent. If the participant clicks on the link, they will be added to the Do-Not-SMS list.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863" class="wysiwyg-text-align-justify">FAQ</h1>
+<h3 id="faq-1" class="wysiwyg-text-align-justify">Can SMS Extension be used with other SMS providers?</h3>
+<p class="wysiwyg-text-align-justify">Yes, the SMS dispatch can be switched from TynTec to another SMS provider. This requires special programming and some TynTec-specific features may not be available. Contact support for more information.</p>
+<h3 id="faq-2" class="wysiwyg-text-align-justify">What happens if SMS resources are exceeded?</h3>
+<p class="wysiwyg-text-align-justify">SMS resources can be exceeded by up to 2,000 SMS. Beyond that, dispatch will be interrupted until additional SMS are ordered.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+</article>

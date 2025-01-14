@@ -1,0 +1,27 @@
+only SINC).zip) und das SINC Handbuch. Leider steht da nicht alles drin, da zwischenzeitlich Templates geändert wurden. Generell gilt: Neue Panelwebsite! (außer es geht einfach nicht)</p><ul><li><p>Für <strong>tpl_login_out.tpl</strong> muss der Button so eingebunden werden, sonst funktioniert er nicht.</p></li></ul><pre><code class="language-text">{if $facebook}
+    &lt;img id="fblateperm" class="gpLatePerms" src="images/connect-facebook.png" alt="" /&gt;
+{/if}
+</code></pre><p>UND</p><ul>
+<li><p>functions_facebook.tpl muss up to date sein!!!</p></li>
+<li><p>JQuery kommt sich in die Quere mit unserem FB Login Button.</p></li>
+</ul><p>Lässt sich eventuell durch:</p><pre><code class="language-text">&lt;script type="text/javascript"&gt;
+    jQuery.noConflict();
+&lt;/script&gt;</code></pre><p>verhindern</p><ul><li><p>Um das Profilbild zu übertragung bedarf es Änderungen an <strong>tpl_login_in.tpl</strong> und <strong>js_default.tpl</strong> bzw.</p></li></ul><p>Im Website-Editor -&gt; Includes -&gt; functions_facebook die Zeile(64)</p><pre><code class="language-text">var profilePicture = new Element('img', { src: result.picture });
+ändern zu
+var profilePicture = new Element('img', { src: result.picture.data.url });
+</code></pre><h2 id="header-14">Was tun wenn jemand SINC Start bestellt?</h2><p>CS Projektleiter bestellt einen Spiegel von unserem SINC-Start Master (<a href="http://sinc-light.3uu.de/"><u>http://sinc-light.3uu.de</u></a>) und erhält eine generische Domain (inkl. <a href="https://it.globalpark.de/twiki/bin/view/Support/SSL"><u>SSL</u></a>)</p><ul>
+<li><p>Support leitet alles an die Admins weiter</p></li>
+<li><p>Tech Support testet ob der Spiegel korrekt aufgesetzt wurde</p></li>
+<li><p>Tech Support fügt Spiegel in den Passwort Safe und die Instliste (als Spiegel markieren) ein.</p></li>
+<li><p>Tech Support ändert die gp_id in der Config</p></li>
+<li><p>Fertigstellung wird an CS Projektleiter kommuniziert</p></li>
+<li><p>Support ist jetzt raus</p></li>
+</ul><h2 id="header-15">Betriebshandbuch &amp; Dokumentation - </h2><ac:rich-text-body><p>neu verlinken!!!</p></ac:rich-text-body><p><a href="https://it.globalpark.de/twiki/bin/view/Sysadmin/BetriebsHandbuch"><u>Übersicht alle Betriebshandbücher</u></a></p><ul><li><p><strong>Source:</strong> \\GAZZA\data\development\06_Services\04_Betriebshandbücher\Facebook_GER_EN_2011-02-11.doc</p></li></ul><p><strong>Für Extern</strong></p><ul>
+<li><p><strong>Source:</strong> \\GAZZA\data\development\06_Services\02_Dokumentation\howtos_extern\HowtoSetUpFacebookApp (Vom 26.10.2012)</p></li>
+<li><p><strong>Source:</strong> \\GAZZA\data\_infothek\_officially_available_manuals\EFSPanelCMSUpgrade80\Upgrade 7.1 to 8.0 (only SINC).zip (von Mitte 2011)</p></li>
+<li><p><strong>Source:</strong> \\GAZZA\data\_infothek\_officially_available_manuals\\EFSPanelCMSUpgrade81\Upgrade 8.0 auf 8.1_2011-11-23.zip (von Ende 2011)</p></li>
+</ul><p>Letzen beiden Dokumente sind veraltet. Immer noch auf die System Templates/Template Bibliothek hinweisen, da dort die Neuerungen enthalten sind.</p><h1 id="header-17">
+<a href="https://it.globalpark.de/twiki/bin/view/Development/SINC"><u>SINC</u></a> App aufsetzen bis 8.0 - deprecated</h1><p>Für neuere EFS-Versionen und aktuelles <a href="https://it.globalpark.de/twiki/bin/view/Development/SINC"><u>SINC</u></a> bitte die Anleitung oben verwenden!</p><h2 id="header-19">Registrierung der App bei Facebook</h2><ul>
+<li><p>Man braucht einen User bei Facebook</p></li>
+<li><p>[RI] Man muss den User verifizieren: <a href="https://it.globalpark.de/twiki/pub/Development/SINCAppAufsetzen/CreatingAVerifiedAccount.pdf"><u>CreatingAVerifiedAccount.pdf</u></a></p></li>
+<li><

@@ -1,0 +1,100 @@
+ing-an-existing-website" class="wysiwyg-text-align-justify"><strong>Copying an Existing Website</strong></h3>
+<ol class="wysiwyg-text-align-justify" start="1">
+<li>
+<p>Switch to the <strong>Website</strong> menu.</p>
+</li>
+<li>
+<p>Search for the website you wish to copy. In the “Actions” column, click on the <strong>Copy website</strong> icon.</p>
+</li>
+<li>
+<p>Enter the name of the new website.</p>
+</li>
+<li>
+<p>Specify the existing content you wish to copy. You can copy messages, wildcards, page modules, templates and includes, form configuration, news items, FAQ, quick polls, bulletin boards, mail templates and bonus items.</p>
+</li>
+<li>
+<p>Specify the language version you wish to copy.</p>
+</li>
+<li>
+<p>Confirm by clicking on <strong>Create</strong>.</p>
+</li>
+</ol>
+<h3 id="information-5" class="wysiwyg-text-align-justify">Information</h3>
+<p class="wysiwyg-text-align-justify">Please note:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>At least one language version must be copied.</p>
+</li>
+<li>
+<p>Results from quick polls, contributions to forums, discussions, chats, blogs, and download files are not copied.</p>
+</li>
+<li>
+<p>The counter registering the hits for news items is reset during copying.</p>
+</li>
+<li>
+<p>Social Insight Connect: The settings on the language version-specific tab<strong> Facebook configuration</strong> are not copied, Social Insight Connect will be deactivated in the copy.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<h3 id="copying-an-existing-language-version" class="wysiwyg-text-align-justify"><strong>Copying an Existing Language Version</strong></h3>
+<ol class="wysiwyg-text-align-justify" start="1">
+<li>
+<p>Switch to the<strong> Website</strong> menu.</p>
+</li>
+<li>
+<p>Search for the language version you wish to copy. In the “Actions” column, click on the <strong>Copy language version</strong> icon.</p>
+</li>
+<li>
+<p>Enter the name of the new language version.</p>
+</li>
+<li>
+<p>Specify the existing content you wish to copy. You can copy messages, wildcards, news items, mail templates, bonus items, quick polls, page modules, and templates, and includes, form configuration, FAQ, forums, download sections, discussions, chats, and blogs. In language versions with Social Insight Connect, the settings on the tab <strong>Facebook configuration</strong> are not copied, Social Insight Connect will be deactivated in the copy.</p>
+</li>
+<li>
+<p>Confirm by clicking on <strong>Create</strong>.</p>
+</li>
+</ol>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="general-settings" class="wysiwyg-text-align-justify"><strong>General Settings</strong></h2>
+<p class="wysiwyg-text-align-justify">EFS Panel offers a wide variety of configuration options, both global options that apply to the entire panel installation and options that apply to individual websites and language versions. These features are presented in detail in the following.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h3 id="global-settings-for-the-entire-panel" class="wysiwyg-text-align-justify"><strong>Global Settings for the Entire Panel</strong></h3>
+<p class="wysiwyg-text-align-justify">In the <strong>Website → Global configuration</strong> menu you can define parameters that apply to the entire EFS People installation.</p>
+<p class="wysiwyg-text-align-justify"><strong>Global settings for all websites</strong></p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default">
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center">
+<p><strong>Description</strong></p>
+</th>
+<th class="wysiwyg-text-align-center">
+<p><strong>Explanation</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Global redirection URL for all websites</p>
+</td>
+<td>
+<p>Occasionally, clients may want to use the panelist's administration of EFS People and conduct their surveys with EFS People while using an external website as their panel’s address.</p>
+<p>In this case, the global redirection allows you to redirect all traffic from websites of the specific panel installation to your desired alternative domain.</p>
+<ul>
+<li>
+<p>The panel websites will be de facto inaccessible.</p>
+</li>
+<li>
+<p>Panel surveys and master data surveys, however, will remain accessible.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Select whether a header with X-Frame-Options should be sent to the client</p>
+</td>
+<td>
+<p>Today, almost any browser makes it possible for web applications to send an HTTP header "X-Frame-Options" which declares to the browser if a certain website is allowed to be shown in a frame or not.</p>
+<p>Possible value options are:</p>
+<ul>
+<li>
+<p><strong>"Do not send"</strong>: By the mentioned default value the header is not sent, which effectively leads to a permission of

@@ -1,0 +1,91 @@
+, more frequently given responses will be displayed in bigger font size and bolder colors than less frequent responses.</p>
+</li>
+</ul>
+<h3 id="word-cloud" class="wysiwyg-text-align-justify"><strong>Word cloud</strong></h3>
+<p class="wysiwyg-text-align-justify">The word cloud will let you display responses in a visual form. More frequently given responses will be displayed in bigger font size and bolder colors than less frequent responses.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Select an element of the type “open-ended answers“. The question selected will be displayed in the workpad.</p>
+</li>
+<li>
+<p>Select the word cloud option from the workpad as displayed above. Your results will now be displayed in the form of a word cloud.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">You may configure the word cloud within the <strong>Table settings</strong> to meet your requirements. Select a different font type or size or change the default color into another. The Advanced options will let you set a specific language or whether the language should be recognized automatically. When selecting a language, the system will automatically run your results by a predefined stopword list. Activate the Stemming option to summarize words of the same origin.</p>
+<p class="wysiwyg-text-align-justify">The word cloud can be used for visual analysis of question types 141, 142, and 143 (open-ended answers). Please note that an export into Excel is not possible.</p>
+<p class="wysiwyg-text-align-justify">Data provided will not be handled or processed by third-party providers.</p>
+<p class="wysiwyg-text-align-justify">Configuring your own word filter in the Advanced options within the Table settings will let you filter additional words from the list of responses. Entries must be comma-seperated. If additionally the option Group similar words? is activated, typos will be neglected.</p>
+<h3 id="assigning-chart-types-to-question-types" class="wysiwyg-text-align-justify"><strong>Assigning chart types to question types</strong></h3>
+<p class="wysiwyg-text-align-justify">Not every question type can be represented in a meaningful way by every chart type. For your convenience, <em>EFS Reporting+</em> will only offer you the chart types that suit the respective question type. The following table shows which chart type may be used for which question type.</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 249.0px;"> <col style="width: 511.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Question type</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Chart type</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Single response (111, 112, 113, 131, 132, 511, 611)</p>
+</td>
+<td>
+<p>Bar chart, stacked bars, stacked bars (100 %), column chart, stacked columns, stacked columns (100 %), pie chart, line chart</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Multiple response (121, 362, 521, 522, 621 and<br>checkbox matrix 362)</p>
+</td>
+<td>
+<p>Bar chart, stacked bars, column chart, stacked columns, line chart</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Matrix (311, 312, 313, 351, 361, 364, 611, semantic differential 340, scroll bar 341, 342, ranking 411)</p>
+</td>
+<td>
+<p>Bar chart, stacked bars, stacked bars (100 %), column chart, stacked columns, stacked columns (100 %), line chart, radar chart</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Open-ended question<br>types (141, 142, 143)</p>
+</td>
+<td>
+<p>Word cloud</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Contingency tables</p>
+</td>
+<td>
+<p>Column chart, stacked columns, stacked columns (100 %), from EFS 9.1 line chart</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Simple recoding</p>
+</td>
+<td>
+<p>Bar chart, stacked bars, stacked bars (100 %), column chart, stacked columns, stacked columns (100 %), pie chart, line chart</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Multiple recoding</p>
+</td>
+<td>
+<p>Bar chart, stacked bars, column chart, stacked columns, line chart</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify">You can choose to hide columns without content by checking the option <strong>Hide columns without results in split dimensions</strong> from the report settings → table<br>display.</p>
+<h3 id="specifying-chart-settings-for-the-report" class="wysiwyg-text-align-justify"><strong>Specifying chart settings for the

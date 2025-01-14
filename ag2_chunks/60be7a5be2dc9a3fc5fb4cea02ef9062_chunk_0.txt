@@ -1,0 +1,40 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K">Overview</h1>
+<article>
+<p>This article explains how to limit the number of answer items that can be selected in a survey question using the plausibility check feature.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK">Information</h1>
+<p data-renderer-start-pos="29">Let's assume that you want to create a question where the survey respondents are only allowed to select 3 out of 6 answer items. In order to check the number of selected items, you can use the <em data-renderer-mark="true"><strong data-renderer-mark="true">plausibility check</strong></em>.</p>
+<p data-renderer-start-pos="244"> </p>
+<p data-renderer-start-pos="244"><strong>Step 1:</strong> Create a plausibility (standard check) check on the respective survey page</p>
+<p data-renderer-start-pos="244"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013850139410"></p>
+<p> </p>
+<p data-renderer-start-pos="244"><strong>Step 2:</strong> In order to access the code editor, you have to first enter a random plausibility check definition, otherwise the code editor will not show up (weird I know).</p>
+<p data-renderer-start-pos="244"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013837880722"></p>
+<p data-renderer-start-pos="244"> </p>
+<p data-renderer-start-pos="244"><strong>Step 3:</strong> After you have clicked on save, the meta pro editor is visible.</p>
+<p data-renderer-start-pos="244"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21013850137490"></p>
+<p data-renderer-start-pos="244">Enter the following code into the editor:</p>
+<p data-renderer-start-pos="625">if (( v_43 + v_44 + v_45 + v_46+v_47+v_48) != 3 ) print "Please select 3 items";</p>
+<p data-renderer-start-pos="625"> </p>
+<div>
+<p><strong>Note:</strong> You must adjust the variables according to your specific survey.</p>
+</div>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq_adjust_variables">How do I adjust the variables in the code?</h3>
+<p>The variables (v_43, v_44, etc.) in the code represent the answer options in your survey. Replace these with the actual variable names or numbers corresponding to your survey's answer options.</p>
+<h3 id="faq_change_limit">Can I change the limit to a different number?</h3>
+<p>Yes, you can change the number in the code from 3 to any other number to set a different limit on selectable items. For example, to limit to 4 items, change the code to: <code>if (( v_43 + v_44 + v_45 + v_46+v_47+v_48) != 4 ) print "Please select 4 items";</code></p>
+<p> </p>
+</article> data-renderer-start-pos="625">if (( v_43 + v_44 + v_45 + v_46+v_47+v_48) != 3 ) print "Please select 3 items";</p>
+<p data-renderer-start-pos="625"> </p>
+<div>
+<p><strong>Note:</strong> You must adjust the variables according to your specific survey.</p>
+</div>
+<p> </p>
+<h1 id="h_01HGKSMPRSER9ENY5QWWRZZ863">FAQ</h1>
+<h3 id="faq_adjust_variables">How do I adjust the variables in the code?</h3>
+<p>The variables (v_43, v_44, etc.) in the code represent the answer options in your survey. Replace these with the actual variable names or numbers corresponding to your survey's answer options.</p>
+<h3 id="faq_change_limit">Can I change the limit to a different number?</h3>
+<p>Yes, you can change the number in the code from 3 to any other number to set a different limit on selectable items. For example, to limit to 4 items, change the code to: <code>if (( v_43 + v_44 + v_45 + v_46+v_47+v_48) != 4 ) print "Please select 4 items";</code></p>
+<p> </p>
+</article>

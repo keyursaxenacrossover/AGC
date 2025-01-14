@@ -1,0 +1,81 @@
+endesk.com/hc/article_attachments/20997850571410" alt="image-20200629-132413.png"></p>
+<p>If enabled, IDEA Guide users can add their own category to the guide during creation of a new guide wave. This custom category will then be used across all functions in Portals, including action planning/ ideation.</p>
+<p>Custom categories are stored in the same table as regular categories and can also be managed in the Libraries &gt; Categories EFS Administration tool. Newly created categories will receive an automatically created meta name in the format: <em>custom_{id}</em>.</p>
+<h1 id="header-25">Service Layer</h1>
+<p>EFS now has following new Service-Layer methods in SOAP and REST.</p>
+<ul>
+<li>
+<p>Functions for managing group categories in the people module</p>
+<ul>
+<li>
+<p><strong>panel.groups.getGroupCategoryById(id)</strong>, <br><em>REST: GET /service/panel/groups/category/{id} </em><br>Returns id, label and description of the matching group category</p>
+</li>
+<li>
+<p><strong>panel.groups.getGroupCategoryByName(label)</strong>, <br><em>REST: POST /service/panel/groups/categoryByName</em><br>Returns array of id, label and description of each group category matching the name.</p>
+</li>
+<li>
+<p><strong>panel.groups.addGroupCategory(label, description)</strong>,<br><em>REST: POST /panel/groups/categories</em><br>Creates a new group category, returns id, label and description.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Functions for managing of Portals groups (circles) in the People module</p>
+<ul>
+<li>
+<p><strong>panel.circles.add(circleInitData)</strong>,<br><em>REST: POST /service/panel/circles</em><br>Creates the circle with specified definition.</p>
+</li>
+<li>
+<p><strong>panel.circles.delete(id)</strong>,<br><em>REST: DELETE /service/panel/circles/{id}</em><br>Deletes the specified circle</p>
+</li>
+<li>
+<p><strong>panel.circles.generate(id)</strong>,<br><em>REST: POST /service/panel/circles/generate/{id}</em><br>Generates (updates contents) of a managed panel circle</p>
+</li>
+<li>
+<p><strong>panel.circles.getById(id)</strong>,<br><em>REST: GET /service/panel/circles/{id}</em><br>Returns the circle</p>
+</li>
+<li>
+<p><strong>panel.circles.getListByCriteria(condition , offset, limit)</strong>,<br><em>REST: POST /service/panel/circles/listByCondition</em><br>Returns an array of panel circles</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Functions for management of object access rights:</p>
+<ul>
+<li>
+<p><strong>efs.privileges.removeRight(objectId, groupId, right)</strong>,<br><em>REST: POST /service/efs/privileges/addright</em><br>Allows removing of a specific right from a specific object.</p>
+</li>
+<li>
+<p><strong>efs.privileges.addRight (objectId, groupId, right)</strong>,<br><em>REST: POST /service/efs/privileges/addright</em><br>Allows setting of a specific right, even if a different one is already set.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>panel.panelists.addV1()</strong> now also supports immediate assignment to a group category (gc_id).</p>
+</li>
+<li>
+<p>The error handling of the REST service has been improved and standardised. Additional info is now included in the RAML file and the automatically created documentation.</p>
+</li>
+</ul>
+<p>Please also refer to our updated <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20229615093778" target="_blank" rel="noopener noreferrer">Service Layer documentation</a>.</p>: POST /service/panel/circles/listByCondition</em><br>Returns an array of panel circles</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Functions for management of object access rights:</p>
+<ul>
+<li>
+<p><strong>efs.privileges.removeRight(objectId, groupId, right)</strong>,<br><em>REST: POST /service/efs/privileges/addright</em><br>Allows removing of a specific right from a specific object.</p>
+</li>
+<li>
+<p><strong>efs.privileges.addRight (objectId, groupId, right)</strong>,<br><em>REST: POST /service/efs/privileges/addright</em><br>Allows setting of a specific right, even if a different one is already set.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>panel.panelists.addV1()</strong> now also supports immediate assignment to a group category (gc_id).</p>
+</li>
+<li>
+<p>The error handling of the REST service has been improved and standardised. Additional info is now included in the RAML file and the automatically created documentation.</p>
+</li>
+</ul>
+<p>Please also refer to our updated <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20229615093778" target="_blank" rel="noopener noreferrer">Service Layer documentation</a>.</p>

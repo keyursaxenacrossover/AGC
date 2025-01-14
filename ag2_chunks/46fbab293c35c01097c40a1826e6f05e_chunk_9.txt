@@ -1,0 +1,70 @@
+<p>Decide whether the trigger can be executed repeatedly in one survey session.</p>
+</li>
+<li>
+<p>Lastly the settings under “Detail configuration” have to be made: Only user-defined variables can be used to save the random number.</p>
+</li>
+<li>
+<p>The minimum and maximum values of the random number are required.</p>
+</li>
+<li>
+<p>You have the option of specifying that a uniform distribution should be approximated.</p>
+</li>
+<li>
+<p>Finally, click on <strong>Save</strong>.</p>
+</li>
+</ul>
+<h3 id="uniform-distribution" class="wysiwyg-text-align-justify">Uniform Distribution</h3>
+<p class="wysiwyg-text-align-justify">The distribution of the randomly generated values will only approximate a uniform distribution only if the number of cases is sufficiently large. The special feature labeled “Approximate uniform distribution within given range” is used to allow you to simulate a uniform distribution even with small and medium numbers of participants. If this function is enabled, the numbers generated will no longer be actual random numbers, rather the numbers will be generated in such a way that, even for a small number of cases, their distribution will tend strongly toward a uniform distribution.</p>
+<h2 id="list-trigger" class="wysiwyg-text-align-justify">List trigger</h2>
+<p class="wysiwyg-text-align-justify">The list trigger allows you to transfer the contents of a list into user-defined variables. The contents of the user-defined variables can in turn be displayed in the questionnaire via wildcards. The main purpose of this new function consists in presenting - in certain work situations - an alternative to the use of loops, which are considerably more complex to evaluate. For example, at the beginning of a survey, respondents are often presented with a range of brands and products and asked to select the ones they know. The questions in the subsequent survey will only involve those brands and products marked as “known”. In the past, this kind of questionnaire was realized with the help of loops. Alternatively, the list trigger now allows you to encode the “known” brands or products in user-defined variables and to import these during the subsequent survey via wildcards. Thus, the export data record remains reasonably sized.</p>
+<p class="wysiwyg-text-align-justify">The functional scope at a glance:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The list elements remaining after processing the list inclusion conditions, list options, and sort order, can be written in user-defined variables.</p>
+</li>
+<li>
+<p>You can choose whether to record the element number or the element label. Please note that in multilingual projects, labels can only be recorded and displayed in the default language.</p>
+</li>
+<li>
+<p>The various list processing options can be separately configured for the trigger. The list trigger is independent of the settings that are made when using the list on the pages of the questionnaire.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The list trigger is available for all survey types.</p>
+<h3 id="configuring-the-list-trigger" class="wysiwyg-text-align-justify">Configuring the List Trigger</h3>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>First, create the list.</p>
+</li>
+<li>
+<p>Next, you have to create the required variables in the <strong>Project Properties</strong> menu on the <strong>User-defined Variables</strong> tab.</p>
+</li>
+<li>
+<p>To create the list trigger, open the <strong>Trigger</strong> menu on the appropriate page, select the type “List trigger” and confirm by clicking on<strong> Submit</strong>.</p>
+</li>
+<li>
+<p>Make the usual basic trigger settings (name, execution position, etc.).</p>
+</li>
+<li>
+<p>Select the desired list and click on <strong>Save</strong>.</p>
+</li>
+<li>
+<p>Further setting options will now be displayed in the lower part of the dialog.</p>
+</li>
+<li>
+<p>In the “Settings” section, successively specify for each remaining list element (i. e. for each list element that remains after processing all inclusion conditions, etc.) which list property is to be transferred into which destination variable. The available list properties are element number and element label.</p>
+</li>
+<li>
+<p>After clicking on <strong>Save</strong>, the settings will be adopted and the line “New” for selecting the next list element will be displayed again.</p>
+</li>
+<li>
+<p>In the lower sections, you can set list options and sort the order of the list elements.</p>
+</li>
+<li>
+<p>Then, confirm by clicking on <strong>Save</strong>.</p>
+</li>
+</ul>
+<h3 id="list-trigger-data-in-the-export" class="wysiwyg-text-align-justify">List Trigger data in the Export</h3>
+<p class="wysiwyg-text-align-justify">In the example shown above, three elements are selected at random from the list of elements that the respondents selected in the questionnaire. The list trigger writes these, or rather their labels, in three user-defined variables.</p>
+<h2 id="bonus-trigger" class="wysiwyg-text-align-justify">Bonus trigger</h2>
+<p class="wysiwyg-text-align-justify">In panel and master data surveys, you can award bonus points for reaching a particular page of the questionnaire, for giving a correct answer, or for other events.</p>
+<h3 id="features-2" class="wysiwyg

@@ -1,0 +1,67 @@
+<h1 id="h_01J6EJSM73YRCV26WCWQFDYZDK">Overview</h1>
+<p>This guide outlines the steps to set up a password inline hook and static service, which allows for the migration of user passwords without requiring them to reset or receive activation emails. This method ensures a seamless transition for users, making their experience identical to a standard login.</p>
+<p> </p>
+<ul>
+<li><a href="#h_01J6EHQR8WQFVNHWV03W3NFD31">Password Inline Hook Setup</a></li>
+<li><a href="#h_01J6EHQFR2ND5ET5D4P0QV67Y6">Static Service</a></li>
+</ul>
+<p> </p>
+<h2 id="h_01J6EHQR8WQFVNHWV03W3NFD31">Password Inline Hook Setup</h2>
+<p>When migrating users with a password from one Okta account to another we have two options:</p>
+<ol>
+<li>
+<p>Just copy users from one account to the other without setting any password, users will get an activation email in that case</p>
+</li>
+<li>
+<p>Use a passwort import inline hook from Okta to migrate the passwords</p>
+</li>
+</ol>
+<p>The scope of this page if the second option that might be desired by the customer.</p>
+<p> </p>
+<h2 id="header-1">Resources</h2>
+<h3 id="header-3">Repositories</h3>
+<ul>
+<li>
+<p><a href="https://bitbucket.org/qbengineering/tivian_resource_helm_okta-hooks/src/master/">Helm Okta Hooks</a></p>
+</li>
+<li>
+<p><a href="https://bitbucket.org/qbengineering/tivian_server_application_okta-hooks/src/master/">Source Code Okta Hooks</a></p>
+</li>
+</ul>
+<h3 id="header-5">Pipelines</h3>
+<ul>
+<li>
+<p><a href="https://concourse.live.tivian.com/teams/engineering/pipelines/build.tivian_resource_helm_okta-hooks">Helm Okta Hooks</a></p>
+</li>
+<li>
+<p><a href="https://concourse.live.tivian.com/teams/engineering/pipelines/build.tivian_server_application_okta-hooks">Build Image Okta Hooks</a></p>
+</li>
+</ul>
+<p> </p>
+<h3 id="header-7">Basic Idea</h3>
+<p>The basic idea is describe in the following links:</p>
+<p><a href="https://developer.okta.com/blog/2020/09/18/password-hook-migration" data-card-appearance="inline">https://developer.okta.com/blog/2020/09/18/password-hook-migration</a></p>
+<p><a href="https://developer.okta.com/docs/reference/password-hook/#value" data-card-appearance="inline">https://developer.okta.com/docs/reference/password-hook/#value</a></p>
+<p> </p>
+<p>On our end the technical components and the flow would look like the following:</p>
+<p><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21034905149970" alt="Okta Migration Tivian Questback - Inline Hook(2).png"></p>
+<p> </p>
+<p>A user would not see the inline hook. The workflow for a user looks like a normal login.</p>
+<p> </p>
+<h2 id="header-8">How to configure?</h2>
+<h3 id="header-10">Service</h3>
+<p>The service will be deployed in the dev-qa and in the production cluster. It has some configuration:</p>
+<p><code>auth token</code></p>
+<p>The auth token is a string that will be sent via header to create trust between Okta and the inline hook service. It can be a random string. It has to be configured in the helm release (see values file of <a href="https://bitbucket.org/qbengineering/tivian_resource_helm_okta-hooks/src/master/" data-card-appearance="inline">https://bitbucket.org/qbengineering/tivian_resource_helm_okta-hooks/src/master/</a> ) and in Okta (see below)</p>
+<p> </p>
+<p><code>oktaQuestbackBaseUrl</code></p>
+<p>This URL is the base URL to the Okta where the service should validate the credentials of the user.</p>
+<p>For <strong>dev-qa</strong> it will be: <a href="https://questback-poc.oktapreview.com">https://questback-poc.oktapreview.com</a></p>
+<p>For <strong>production </strong>it will be: <a href="https://questback.okta.com">https://questback.okta.com</a></p>
+<p> </p>
+<h3 id="header-11">In Okta</h3>
+<p><strong>Name: </strong>Some good name</p>
+<p><strong>URL:</strong> The base URL to the inline hook service adding the path <code>/inline-hooks/importpassword</code></p>
+<p><strong>Authentication field:</strong> authorization</p>
+<p><strong>Authentication secret:</strong> The secret token prefixed with <code>Bearer </code></p>
+<p>Nothing else has to be configured. The secret token will be stored by IT OPs/2nd LvL Support</

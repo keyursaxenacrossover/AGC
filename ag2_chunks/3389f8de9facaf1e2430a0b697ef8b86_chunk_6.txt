@@ -1,0 +1,35 @@
+u>https://jira.3uu.de/browse/KANBAN-4789</u></a> hinsichtlich Änderungen zwischen 8.0 und 8.1.)</p></li>
+<li><p>Soll den Panelisten, die sich über Facebook registrieren, ein besonderer Eintrittsweg zugewiesen werden? Dann trägt man dessen Link im Pfad zu der Seite, auf die neue User geroutet werden (siehe unten), folgendermaßen ein: $__facebook_registration='appregistration.php?rc=Mg%3D%3D'; (Mg%3D%3D ist die eindeutige Kennung im Eintrittswege-Link)</p></li>
+</ul>
+</li>
+</ul><p><a href="https://it.globalpark.de/twiki/bin/editsection/Development/SINCAppAufsetzen?t=1576593304&amp;sec=4#SECEDITBOX"><u>Edit</u></a></p><p></p><h2 id="header-24">Integration ins Panel CMS</h2><ul>
+<li><p>Auf welche Sprachversion soll die Facebook App zeigen? Die Id in $__facebook_app_lang_id</p></li>
+<li>
+<p>Auf welche Seite soll geroutet werden, wenn ein neuer User ankommt?</p>
+<ul>
+<li><p>Dazu muss im Panel CMS eine neue Seite angelegt werden und das Registrierungsmodul auf die Seite gesetzt werden</p></li>
+<li><p>Dazu braucht man dann auch noch ein dazu passendes Regstrierungsformular</p></li>
+<li><p>Wichtig ist dabei noch, dass im Formular nicht nochmal die Eigenschaften enthält, die man von Facebook haben will. Das läuft separat über __facebook_profile_sync</p></li>
+<li><p>Die resultierende Seite trägt man dann in __facebook_registration ein</p></li>
+</ul>
+</li>
+<li>
+<p>Dann gibts noch einen Spezialfall, bei dem ein Panelist schon vorher im Panel war, aber jetzt später nochmal die App dazuinstalliert.</p>
+<ul>
+<li><p>Damit man darüber nicht einen Account übernehmen kann, leiten wir in dem Fall nochmal auf eine Seite, wo man nochmal sein Passwort eintippen muss (Identifikation läuft wie immer im Panel über Email)</p></li>
+<li><p>Dafür legt man eine weitere Seite mit dem Contentmodul "Externe Emailüberprüfung an"</p></li>
+</ul>
+</li>
+<li><p>Danach braucht man im Panel Frontend noch einiges an Integration. Dafür bitte die entsprechenden Templates aus dem Masterpanel</p></li>
+</ul><h2 id="header-25">Facebook Late Permissions Requests</h2><p>Wenn man nicht möchte, dass das Panel sofort nach dem Aufruf der App seine Permissions verlangt, kann man das auch später machen. Dafür benötigt es lediglich eine marginale Änderung im Template und dann einen button o.ä., der den Login dann auslöst. Im Diff (hansi.diff) ist der Beispiel JS Code und die Änderung zum Stand von 8.0 Masterpanel.</p>ende Seite trägt man dann in __facebook_registration ein</p></li>
+</ul>
+</li>
+<li>
+<p>Dann gibts noch einen Spezialfall, bei dem ein Panelist schon vorher im Panel war, aber jetzt später nochmal die App dazuinstalliert.</p>
+<ul>
+<li><p>Damit man darüber nicht einen Account übernehmen kann, leiten wir in dem Fall nochmal auf eine Seite, wo man nochmal sein Passwort eintippen muss (Identifikation läuft wie immer im Panel über Email)</p></li>
+<li><p>Dafür legt man eine weitere Seite mit dem Contentmodul "Externe Emailüberprüfung an"</p></li>
+</ul>
+</li>
+<li><p>Danach braucht man im Panel Frontend noch einiges an Integration. Dafür bitte die entsprechenden Templates aus dem Masterpanel</p></li>
+</ul><h2 id="header-25">Facebook Late Permissions Requests</h2><p>Wenn man nicht möchte, dass das Panel sofort nach dem Aufruf der App seine Permissions verlangt, kann man das auch später machen. Dafür benötigt es lediglich eine marginale Änderung im Template und dann einen button o.ä., der den Login dann auslöst. Im Diff (hansi.diff) ist der Beispiel JS Code und die Änderung zum Stand von 8.0 Masterpanel.</p>

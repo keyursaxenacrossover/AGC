@@ -1,0 +1,47 @@
+ sender that can be defined from survey responses.</p>
+</li>
+</ul>
+<h3 id="sending-to" class="wysiwyg-text-align-justify"><strong>Sending TO</strong></h3>
+<p class="wysiwyg-text-align-justify">Only for <em>EFS People</em> installations: The <strong>People </strong>→ <strong>Contacts</strong> → <strong>Send e-mail</strong> menu contains a mail-sending function that allows you to contact individual recipients in a targeted manner. Whereas in all other action areas,, the group of recipients is determined in advance (e.g. a group of participants identified through the disposition code or the sample drawn from a panel), the mail-sending function in this menu allows you to contact individual recipients whose data are not even present in the EFS Panel system. Enter the address in the “To” field.</p>
+<p class="wysiwyg-text-align-justify"><strong>Mail Format</strong></p>
+<p class="wysiwyg-text-align-justify">You can send either text or real HTML emails from the EFS Survey. To do so, you must specify the format before writing the mail. The following options are available:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Text only (default)</p>
+</li>
+<li>
+<p>HTML only</p>
+</li>
+<li>
+<p>Text and HTML</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">After you have confirmed the selection by clicking on <strong>Apply mail format</strong>, the appropriate input field(s) will be shown.</p>
+<p class="wysiwyg-text-align-justify"><strong>HTML format</strong></p>
+<p class="wysiwyg-text-align-justify">By default, EFS sends e-mails in plain text format. Alternatively,, you can also send HTML emails. The line breaks are not automatically inserted with the “HTML format” checkbox ticked. <em>EFS</em> generates the HTML emails as content type “multipart/alternative”. This means that the actual text is contained in the e-mail in duplicate. This allows mail clients that cannot display HTML to display the alternate text. Webmail services, in particular, often warn users against displaying e-mails in HTML format and suggest displaying the alternate text (if available).</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Old e-mail clients e.g. Outlook 2003 cannot process the content type “multipart/alternative” properly. E.g. if a recipient has restricted Outlook 2003 to “Text only”, the client will not output the alternative text, but the HTML part converted into text.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Disadvantages of e-mails in HTML format</strong></p>
+<p class="wysiwyg-text-align-justify">In particular, the doubled amount of data in HTML emails is considered unnecessary by some Internet users and, because of the longer loading time, often also as impolite. Since both scripts and so-called web bugs may be hidden in HTML code, some mail systems classify these messages as potentially dangerous. Insofar, as it cannot be ruled out the post master of a recipient system may remove the HTML code or tag it with a security alert. If you still want to send HTML emails and can easily narrow the group of the recipients of your mailing (e.g. in the case of employee surveys), you should contact the recipients’ postmaster in advance to find out how they deal with these emails.</p>
+<p class="wysiwyg-text-align-justify"><strong>Subject</strong></p>
+<p class="wysiwyg-text-align-justify">In the “Subject” field you enter the title of your e-mail. Wildcards can be used.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>You should avoid special characters, such as the German umlauts, in this field. The line is part of the so-called mail headers. Encoding special characters, as in the email’s content, is not possible here.</p>
+</li>
+<li>
+<p>Please note that mail subjects should in general not be longer than 60 characters. Many servers make a cut after 248 characters for security reasons.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Masking special characters in the subject</strong></p>
+<p class="wysiwyg-text-align-justify">If you still need special characters, you will have to mask them appropriately. For example, “Ä” (A umlaut) will then become “=?ISO-8859-1?Q?=C4?=”. However, please note that these maskings are not supported by all mail clients and that some mail gateways or virus scanners shorten very long subject lines. In extreme cases, a virus scanner may even mistake very long subjects for an attack on the mail client and immediately delete the entire mail. <em>EFS</em> therefore limits the permissible number of characters to 254, which is within the commonly used limits.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The best way to create a subject with masked special characters is to use your mail program and send yourself an e-mail with the subject. Then, copy the masked string from the source text of your mail into the entry form’s subject row.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Mail text</strong></p>
+<p class="wysiwy

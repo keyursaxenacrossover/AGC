@@ -1,0 +1,68 @@
+9819%;"> </colgroup>
+<tbody>
+<tr>
+<th>Search string</th>
+<th>Result</th>
+</tr>
+<tr>
+<td>peace</td>
+<td>Result which contains: peace OR Peace OR PEACE</td>
+</tr>
+<tr>
+<td>peace*</td>
+<td>Result which contains: peace OR peacemaker</td>
+</tr>
+<tr>
+<td>+peace +war</td>
+<td>Result which contains: peace AND war</td>
+</tr>
+<tr>
+<td>+peace -war</td>
+<td>Result which contains: peace AND doesn‘t contain: war</td>
+</tr>
+<tr>
+<td>peace agreement</td>
+<td>Result which contains: peace agreement OR agreement of peace</td>
+</tr>
+<tr>
+<td>„peace agreement“</td>
+<td>Result which contains exactly: peace agreement</td>
+</tr>
+</tbody>
+</table>
+<p class="auto-cursor-target wysiwyg-text-align-justify">Words with three or less letters are ignored.</p>
+<p class="auto-cursor-target wysiwyg-text-align-justify">A list of common words is ignored. For details, please check out:</p>
+<p class="auto-cursor-target wysiwyg-text-align-justify"><span class="nolink">http://dev.mysql.com/doc/refman/5.1/en/fulltext--</span>? stopwords.html</p>
+<h2 id="integrating-text-search-into-the-website" class="wysiwyg-text-align-justify"><strong>Integrating Text Search into the Website</strong></h2>
+<p class="wysiwyg-text-align-justify">To set up a search page, please proceed as follows:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>On the desired page, create a page module of the “Search for text in modules” type.</li>
+<li>Configure the setting options as required.<br>– Select the “func_search” module template. You may have to adapt the templates to the layout of your panel.<br>– Keep the “Template for media display” field empty.<br>– The other options are the same as the options in the menu <strong>Global configuration</strong>, but specific to this module and restricted to the maximum scope you defined in <strong>Global configuration</strong>.</li>
+</ol>
+<p class="wysiwyg-text-align-justify">To create a search form for the side-bar navigation, please proceed as follows:</p>
+<ol class="wysiwyg-text-align-justify">
+<li>On the „GLOBAL“ page dedicated to referenced content, create a page module of the “Form for text search in modules” type.</li>
+<li>Configure the setting options as required.<br>– Select the “func_searchform” module template. You may have to adapt the templates to the layout of your panel.<br>– Keep the “Template for media presentation” field empty.<br>– In the “Display results using” drop-down list, select the search page created in the previous chapter.</li>
+<li>Reference the GLOBAL module from all pages on which the side-bar navigation is used, as e.g. “My home”.</li>
+</ol>
+<h1 id="rating-of-community-contents" class="sc-fzsDOv xgiDk wysiwyg-text-align-justify"><strong>Rating of Community Contents</strong></h1>
+<p class="wysiwyg-text-align-justify">You can allow your panelists to rate not only other panelists, but contents as well.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>You can enable your panelists to rate forum and discussion posts, blog posts and entire individual blogs.</li>
+<li>There is a uniform rating system, i.e. a scale, for each installation. Various predefined scales are available.</li>
+<li>EFS 10.3 includes new scales for “Like” and “Like and dislike”, symbolized by thumbs showing up- or downwards.</li>
+<li>The panelists can usually see their own ratings and the resulting average ratings. When using scales with positive values, the values can optionally be represented by stars.</li>
+<li>In the admin area and in the export you will find the number of performed ratings and the resulting average rating.</li>
+<li>From EFS 10.3, rating data are integrated into the panel tracking. Furthermore, the rating data have been made available for grouping filters. Thus, it is now possible e.g. to create a group of very active or influential community members.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Work steps</strong></p>
+<p class="wysiwyg-text-align-justify">In order to use the rating function, please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Configure the rating function.</li>
+<li>Integrate the rating function into the website.</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The necessary operations will be explained in detail in the following chapters.</p>
+<h2 id="configuring-the-rating-function" class="wysiwyg-text-align-justify"><strong>Configuring the Rating Function</strong></h2>
+<p class="wysiwyg-text-align-justify">The rating function is configured in the “Rating settings” section of the <strong>Website → Global configuration</strong> menu:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>In the field “Rating scale”, one of the available scales can be selected.<br>– It is not possible to create additional scales or change the predefined

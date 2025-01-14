@@ -1,0 +1,55 @@
+--&gt;PortalFe: send portal configuration object
+PortalFe--&gt;IdP: redirect to
+IdP--&gt;IdP: LoginProcess by user
+alt:
+note right of IdP: user exists and has access rights
+IdP--&gt;AD: prompt password
+AD--&gt;AD: sign in
+AD--&gt;IdP: send status
+IdP--&gt;IdP: create session
+IdP--&gt;PortalFe: redirect with id_token and access_token
+PortalFe--&gt;PortalBe: post data to /api/iam/auth/signIn
+PortalBe--&gt;PortalBe: get identity from id_token and access_token
+PortalBe--&gt;PortalBe: check in portal_users_reference
+alt:
+PortalBe--&gt;PortalFe: user not exists
+else:
+PortalBe--&gt;PortalBe: create X-Authorization token
+PortalBe--&gt;PortalBe: create local session
+PortalBe--&gt;PortalFe: send header and payload
+PortalFe--&gt;PortalFe: show screen after logged in
+end:
+else:
+note right of IdP: user does not exists or has no access rights
+AD--&gt;IdP: send status
+IdP--&gt;IdP: show login screen
+end:
+end:</code></pre>
+<p> </p>--&gt;PortalFe: send portal configuration object
+PortalFe--&gt;IdP: redirect to
+IdP--&gt;IdP: LoginProcess by user
+alt:
+note right of IdP: user exists and has access rights
+IdP--&gt;AD: prompt password
+AD--&gt;AD: sign in
+AD--&gt;IdP: send status
+IdP--&gt;IdP: create session
+IdP--&gt;PortalFe: redirect with id_token and access_token
+PortalFe--&gt;PortalBe: post data to /api/iam/auth/signIn
+PortalBe--&gt;PortalBe: get identity from id_token and access_token
+PortalBe--&gt;PortalBe: check in portal_users_reference
+alt:
+PortalBe--&gt;PortalFe: user not exists
+else:
+PortalBe--&gt;PortalBe: create X-Authorization token
+PortalBe--&gt;PortalBe: create local session
+PortalBe--&gt;PortalFe: send header and payload
+PortalFe--&gt;PortalFe: show screen after logged in
+end:
+else:
+note right of IdP: user does not exists or has no access rights
+AD--&gt;IdP: send status
+IdP--&gt;IdP: show login screen
+end:
+end:</code></pre>
+<p> </p>

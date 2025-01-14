@@ -1,0 +1,34 @@
+ including IP addresses, request methods, response statuses, etc... This can help track down specific customer interactions or performance issues.</li>
+</ul>
+</li>
+<li>
+<strong>Checking HPA (Horizontal Pod Autoscaler) for performance reasons</strong>
+<ul>
+<li>
+<code>Dashboards &gt; Legacy &gt; EFS Single Installation &gt; choose Installation &gt; HPA</code><br>Checking HPA pool section (for horizontal scaling)</li>
+<li>Expected result from a prod installation:<br style="box-sizing: border-box; line-height: inherit;"><span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background: transparent; box-sizing: border-box; line-height: inherit; opacity: 1;"><img style="vertical-align: baseline; border: 0px; margin: 0px; padding: 0px; outline: 0px; background: transparent; box-sizing: border-box; line-height: inherit; object-fit: scale-down; aspect-ratio: auto; inline-size: auto; max-block-size: 75dvb; block-size: auto; max-width: 100%; max-inline-size: 100%;" src="https://central-supportdesk.zendesk.com/attachments/token/6PpENWKe3OC0D5goYLb6wpSEh/?name=image.png"></span>
+</li>
+<li>This result for example indicates a periodic upscaling, so we might need to check the reasons and maybe increase resources:<br><span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background: transparent; box-sizing: border-box; line-height: inherit; opacity: 1;"><img style="vertical-align: baseline; border: 0px; margin: 0px; padding: 0px; outline: 0px; background: transparent; box-sizing: border-box; line-height: inherit; object-fit: scale-down; aspect-ratio: auto; inline-size: auto; max-block-size: 75dvb; block-size: auto; max-width: 100%; max-inline-size: 100%;" src="https://central-supportdesk.zendesk.com/attachments/token/2T7e0OY2vI4RWfxQGsz4zaQCD/?name=image.png"></span>
+</li>
+</ul>
+</li>
+</ol>
+<h4 id="h_01J96XFXM2SWJH5JKAR0HRYXZM"><strong>Querying Logs in Grafana (Loki)</strong></h4>
+<p><strong>Basic Query Structure:</strong> Loki follows a query syntax similar to Prometheus, but instead of metrics, it operates on log data. Each log entry is associated with labels, which can be used to filter specific logs.</p>
+<p><strong>Common Loki Query Example:</strong> To check logs for an Nginx container in a specific namespace, you can use:</p>
+<div class="dark bg-gray-950 contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative">
+<div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-logql">{namespace="av5081", container="nginx"} !~ `iLert|Prometheus/|kube-probe` |= `/uc`
+</code></div>
+</div>
+<p><strong>Explanation:</strong></p>
+<ul>
+<li>
+<code>{namespace="av5081", container="nginx"}</code> filters logs based on the <code>namespace</code> and <code>container</code> labels.</li>
+<li>
+<code>!~</code> excludes certain logs (e.g., iLert, Prometheus, kube-probe).</li>
+<li>
+<code>|=</code> looks for logs containing <code>/uc</code> in the message body.</li>
+</ul>
+<p><strong>Other Example:</strong></p>
+<ul>
+<li><strong><span style="color: #212529; font-family: -apple-system, BlinkMacSystemFont, ' Segoe UI' , Roboto, ' Helvetica Neue' , Arial, sans-serif, ' Apple Color Emoji' , ' Segoe UI Emoji' , ' Segoe UI Symbol' , ' Noto Color Emoji' font-size:16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Example of </span><a style="box-sizing: border-box; background-color: #ffffff; color: #1f73b7; text-decoration: underline; font-family: -apple-system, BlinkMacSystemFont, ' Segoe UI' , Roboto, ' Helvetica Neue' , Arial, sans-serif, ' Apple Color Emoji' , ' Segoe UI Emoji' , ' Segoe UI Symbol' , ' Noto Color Emoji' font-size:16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 

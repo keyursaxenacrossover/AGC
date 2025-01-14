@@ -1,0 +1,79 @@
+ master data surveys, you may also use panel-specific data such as master data or performance data.</p>
+</li>
+<li>
+<p>Data collected outside of <em>EFS</em> can be imported as well.</p>
+</li>
+<li>
+<p>Up to 100 additional external variables can be generated via import and filled with data.</p>
+</li>
+<li>
+<p>A report may contain up to 50,000 data records.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The complexity of a report depends on both the number of variables and the number of data records. Depending on the size of these two factors, you may experience extended calculation times below the thresholds mentioned above.</p>
+<h3 id="overview-of-source-data" class="wysiwyg-text-align-justify"><strong>Overview of source data</strong></h3>
+<p class="wysiwyg-text-align-justify">In the header section of the sources window, you will find several tabs with all the data that is available for evaluation.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Tab <strong>Survey</strong>: automatically available data from the respective project, i.e.,</p>
+<ul>
+<li>
+<p>all questions of the projects (v variables) including open-ended questions and text input fields. Exception: the unsupported question type text matrix 363.</p>
+</li>
+<li>
+<p>loop result data: can be imported optionally when creating the report. If this is necessary. Please mind: Up to 1,000 loop variables can be imported. However, a high number of variables may have a negative impact on the installation’s performance.</p>
+</li>
+<li>
+<p>GET parameters (p variables)</p>
+</li>
+<li>
+<p>user-defined variables (c variables)</p>
+</li>
+<li>
+<p>important survey data: disposition code, quota assignment (quota_assignment), sample number.Additionally available: language, browser identification (user_agent), output mode (output mode), http_referer, JavaScript version (javascript), Flash plugin version (flash), and quota ID of the respondent (quota).</p>
+</li>
+<li>
+<p>participant data: can be imported optionally in personalized surveys when creating the report.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Tab <strong>Panel</strong>: in panel and master data surveys, optionally available panel-specific data such as master data or performance data</p>
+</li>
+<li>
+<p>Tab <strong>External</strong>: external data that were manually uploaded into the report</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Various display features and icons help you locate the desired source data quickly:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>To see more information on a question and a simple frequency distribution of the answers, mark the respective question and then open the <strong>Preview</strong>.</p>
+</li>
+<li>
+<p>Questions located in a filter branch, i.e., questions that have been viewed and answered by selected participants only, are marked with a filter icon.</p>
+</li>
+<li>
+<p>Text input fields for open-ended answers to closed-ended questions (e.g. “Other:...”) are listed as separate elements and marked [A+T] (“answer and text”).</p>
+</li>
+<li>
+<p>Survey data containing no values will be greyed out. For example, the sample number will not be filled in anonymous surveys.</p>
+</li>
+<li>
+<p>Unsupported question types like the text matrix 363 question type will be greyed out as well. Until EFS 9.0, the multi text fields 143 and 144 and the user-defined question type 911 were not being supported either.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Please note that <em>Reporting+</em> does not support depot questions and reference questions. They will not be displayed and will not be grayed out!</p>
+<h3 id="using-participant-data" class="wysiwyg-text-align-justify"><strong>Using participant data</strong></h3>
+<p class="wysiwyg-text-align-justify">When evaluating personalized surveys, you may optionally use participant data (u variables).</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>To have them available in the report, please include them when you create your report. It is not possible to include them at a later date.</p>
+</li>
+<li>
+<p>You can find the data on the <strong>Survey</strong> tab in the <strong>Participant Data</strong> section.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Metanames</strong></p>
+<p class="wysiwyg-text-align-justify">If data is available from the Org Processor it will be imported when creating the report. This data includes a participant‘s entire set of metaname-variables and will be displayed separately by spaces.</p>
+<h3 id="using-panel-specific-data" class="wysiwyg-text-align-justify"><strong>Using panel-specific data</strong></h3>
+<p class="wysiwyg-text-align-justify">To import panel-specific data or to access them via the<strong> Panel</strong> tab in the source window, you need appropriate ACL rights. Panelist data: read rights to “panelsexport”; master data: read rights to “panelstats”; panel basic data, tracking data, and panel group data: read rights to “panelstatus”. Please note that

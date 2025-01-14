@@ -1,0 +1,54 @@
+14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: pre; background-color: rgba(9, 30, 66, 0.06); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;" data-testid="renderer-code-block-line-11" data-ds--code--row="">&lt;td valign="top" width="45%"&gt;#REPLACE_COID_13995#&lt;/td&gt; &lt;/tr&gt; </span><span class="" style="display: flex; margin-right: -8px; padding-right: 8px !important; color: #172b4d; font-family: SFMono-Medium, ' SF Mono' , ' Segoe UI Mono' , ' Roboto Mono' , ' Ubuntu Mono' , Menlo, Consolas, Courier, monospace; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: pre; background-color: rgba(9, 30, 66, 0.06); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;" data-testid="renderer-code-block-line-12" data-ds--code--row="">&lt;/table&gt;</span></pre>
+<p class="wysiwyg-text-align-justify">You can use dedicated page-specific templates instead of mixed-external pages to define page layout and positioning of questions.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Create a template that fits your layout requirements, then select it in the  <strong>Properties </strong>menu in the field “Layout template for displaying questions”.</p>
+</li>
+<li>
+<p>In “Responsive layout” projects, you can create a two-column layout with the ready-made template “layout_two_column_page.tpl”.</p>
+</li>
+</ul>
+<h3 id="import-pages" class="wysiwyg-text-align-justify">Import pages</h3>
+<p class="wysiwyg-text-align-justify">Page import allows you to copy pages from one project to the next. This is particularly helpful if you want to repeatedly use entire sections of a questionnaire. If, for example, you have created a questionnaire section or collecting demographic data using filters, randomization, plausibility checks, and other features, the page import function allows you to transfer this section en bloc into other questionnaires.</p>
+<p class="wysiwyg-text-align-justify"><strong>Proceeding</strong></p>
+<p class="wysiwyg-text-align-justify">Depending on the situation, there are two ways to invoke the page import in the questionnaire editor of the destination project:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The Split button <strong>+ Page </strong>allows you to access the “Import pages” feature. This allows you to import pages into an empty project.</p>
+</li>
+<li>
+<p>Via the <strong>+ </strong>icon in the “Actions” column, you will also find <strong>Import pages</strong>.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Open the questionnaire editor of the destination project.</p>
+</li>
+<li>
+<p>Find the page under which you want to import the page tree. In the example shown, the filter branch is to be inserted under the page “Surfing the Internet”. Via the <strong>+ </strong>icon you can trigger <strong>Import pages</strong>.</p>
+</li>
+<li>
+<p>Specify the desired source project.</p>
+</li>
+<li>
+<p>Select the source page.</p>
+</li>
+<li>
+<p>Click on <strong>Import </strong>to initiate copying of the page tree.</p>
+</li>
+<li>
+<p>If necessary, you can further adjust the position of the imported page tree via drag &amp; drop.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">You can copy pages both within a project and from one project to another. It is not possible to copy from one EFS installation to another.</p>
+<p class="wysiwyg-text-align-justify"><strong>The Functional Scope</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>You can copy pages from EFS 10.3 questions both within one project and from one project to another. It is not possible, however, to copy from one EFS installation to the next.</p>
+</li>
+<li>
+<p>Pages, questions, and variables will be newly created during the import process, i.e. their IDs will change.</p>
+</li>
+<li>
+<p>When copying filters, plausibility checks, etc. the conditions will be adopted as defined in the source project; i.e. if the

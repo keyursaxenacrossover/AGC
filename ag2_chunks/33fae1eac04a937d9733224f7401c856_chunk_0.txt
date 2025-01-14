@@ -1,0 +1,53 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K" class="wysiwyg-text-align-justify">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article explains how to use and manage wildcards in the questionnaire editor. Wildcards are useful for incorporating frequently used text elements or images into surveys efficiently.</p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">The questionnaire editor’s menu (<strong>Projects</strong> → {Selected Project} → <strong>Questionnaire editor</strong>) contains a menu item called Wildcards. Wildcards are a powerful feature in the questionnaire editor that allows users to define and reuse text or HTML elements across their surveys. This guide covers how to create, manage, and use wildcards effectively.</p>
+<ul>
+<li><a href="#defining-new-wildcards">Defining new wildcards</a></li>
+<li><a href="#transferring-wildcards-from-other-projects">Transferring wildcards from other projects</a></li>
+<li><a href="#wildcards-in-multilingual-projects">Wildcards in multilingual projects</a></li>
+<li><a href="#managing-frequently-used-text-elements-effektively">Managing Frequently-used Text Elements Effectively</a></li>
+<li><a href="#defining-and-managing-static-wildcards">Defining and Managing Static Wildcards</a></li>
+<li><a href="#using-static-wildcards-in-the-questionnaire">Using static wildcards in the questionnaire</a></li>
+<li><a href="#example-using-wildcards-to-incorporate-images">Example: Using Wildcards to Incorporate Images</a></li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h3 id="defining-new-wildcards" class="wysiwyg-text-align-justify">Defining new wildcards</h3>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>To create new wildcards, click on the <strong>Create wildcard</strong> button.</p>
+</li>
+<li>
+<p>In the dialog that opens, enter the name of the new wildcard in the “Wildcard” field. It may contain the characters a-z, A-Z, and 0-9 and must be enclosed in two hash signs (#). Furthermore, the name should not be reserved for variables or other wildcards (e.g. project variables v_xxx, participant variables u_xxx, system variables).</p>
+</li>
+<li>
+<p>In the “Text” field, enter whatever you wish to replace with the wildcard. This may be text, but you can also enter, for example, an HTML tag for an image file.</p>
+</li>
+<li>
+<p>You can then save the new wildcard by clicking on the <strong>Create wildcard</strong> button.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If you wish to use wildcards to incorporate images, you have the option of defining a wildcard for an image even as you are uploading it.</p>
+<h3 id="transferring-wildcards-from-other-projects" class="wysiwyg-text-align-justify">Transferring wildcards from other projects</h3>
+<p class="wysiwyg-text-align-justify">Clicking on the <strong>Import wildcards from other survey</strong> button will open a list of the projects on the platform. If you select the radio buttons for the project(s) whose wildcards you want to transfer, you can import the wildcards by clicking on the confirmation button.</p>
+<h3 id="wildcards-in-multilingual-projects" class="wysiwyg-text-align-justify">Wildcards in multilingual projects</h3>
+<p class="wysiwyg-text-align-justify">If you are using the wildcard to incorporate text in multilingual projects, you can click on the <strong>Edit language elements</strong> button to insert and change the corresponding text elements in the various languages.</p>
+<h3 id="managing-frequently-used-text-elements-effektively" class="wysiwyg-text-align-justify">Managing Frequently-used Text Elements Effectively</h3>
+<p class="wysiwyg-text-align-justify">You can use wildcards defined by yourself in numerous places in the questionnaire, e.g to facilitate the entry of frequently recurrent text sections or the frequent incorporation of the same image:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>in the question text, answer text and fill in instructions for questions with single response lists, questions with multiple response lists, and matrix questions,</p>
+</li>
+<li>
+<p>for the HTML question type,</p>
+</li>
+<li>
+<p>on mixed-external pages, and</p>
+</li>
+<li>
+<p>for questions of the above types in the container depot.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The following sections explain how to create, use, and manage these self-defined wildcards. Below, you will find a practical example that gives a step-by-step explanation of how to, in particular, make frequently incorporating images clearer and easier by using wildcards.</p>
+<p class="wysiwyg-text-align-justify">The wildcard administration is designed for up to 250 wildcards. If you use

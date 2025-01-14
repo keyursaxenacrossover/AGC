@@ -1,0 +1,120 @@
+37px;">
+<p>Name of the website</p>
+</td>
+<td style="width: 141.441px; height: 37px;">
+<p>Default</p>
+</td>
+</tr>
+<tr style="height: 37px;">
+<td style="width: 140.712px; height: 37px;">
+<p>Description</p>
+</td>
+<td style="width: 391.389px; height: 37px;">
+<p>Description for internal purposes only</p>
+</td>
+<td style="width: 141.441px; height: 37px;">
+<p> </p>
+</td>
+</tr>
+<tr style="height: 271px;">
+<td style="width: 140.712px; height: 271px;">
+<p>Default language version</p>
+</td>
+<td style="width: 391.389px; height: 271px;">
+<p>In this field, you can specify the default language version.</p>
+<ul>
+<li>
+<p>The default version is displayed if visitors cannot yet be assigned to a language version (i.e. they have not yet expressly chosen a language, there are no cookies containing information on previous visits, a language version has not been assigned to the domain accessed and the site_id cannot be accessed before login to a possible panelist account).</p>
+</li>
+<li>
+<p>The default version cannot be deleted.</p>
+</li>
+</ul>
+</td>
+<td style="width: 141.441px; height: 271px;">
+<p>english</p>
+</td>
+</tr>
+<tr style="height: 178px;">
+<td style="width: 140.712px; height: 178px;">
+<p>Only for installations with several websites and/or language versions: Choose this website as the default installation website.</p>
+</td>
+<td style="width: 391.389px; height: 178px;">
+<p>In this field, you can specify the default website.</p>
+<ul>
+<li>
+<p>The default version is selected where there is no information regarding the website and language version to be assigned to a user.</p>
+</li>
+</ul>
+</td>
+<td style="width: 141.441px; height: 178px;">
+<p>yes</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"><strong>Login</strong></p>
+<table class="wysiwyg-text-align-justify" style="height: 1810px;" border="1" width="708" data-layout="full-width" data-table-width="1338.9804">
+<colgroup> <col style="width: 155.0px;"> <col style="width: 207.0px;"> <col style="width: 128.0px;"> </colgroup>
+<tbody>
+<tr style="height: 69px;">
+<th style="width: 220.521px; height: 69px;">
+<p><strong>Description</strong></p>
+</th>
+<th style="width: 295.521px; height: 69px;">
+<p><strong>Explanation</strong></p>
+</th>
+<th style="width: 181.562px; height: 69px;">
+<p><strong>Preallocation in the standard panel</strong></p>
+</th>
+</tr>
+<tr style="height: 170px;">
+<td style="width: 212.5px; height: 170px;">
+<p>Authentication method for panel login (this setting applies to all panel sites)</p>
+</td>
+<td style="width: 287.5px; height: 170px;">
+<p>You can choose between the options:</p>
+<ul>
+<li>
+<p>Login with e-mail address and password</p>
+</li>
+<li>
+<p>Login with account and password</p>
+</li>
+<li>
+<p>Login with e-mail address and password or account and password</p>
+</li>
+</ul>
+</td>
+<td style="width: 173.542px; height: 170px;">
+<p>Login with e-mail address and password</p>
+</td>
+</tr>
+<tr style="height: 148px;">
+<td style="width: 212.5px; height: 148px;">
+<p>Maximal permissible load on login</p>
+</td>
+<td style="width: 287.5px; height: 148px;">
+<p>This setting temporarily disables login to the website, if the server load exceeds the specified value.</p>
+<p>Please enter “0”, if you do not wish to disable login during high load phases.</p>
+</td>
+<td style="width: 173.542px; height: 148px;">
+<p>0</p>
+</td>
+</tr>
+<tr style="height: 178px;">
+<td style="width: 212.5px; height: 178px;">
+<p>Update panelist’s IP address on every login</p>
+</td>
+<td style="width: 287.5px; height: 178px;">
+<p>If you activate this option, panelists’ current IP address will be entered in their data record every time they log in. If you do not activate this option, the panelists’ IP address will only be collected upon registration.</p>
+</td>
+<td style="width: 173.542px; height: 178px;">
+<p>No</p>
+</td>
+</tr>
+<tr style="height: 1245px;">
+<td style="width: 212.5px; height: 1245px;">
+<h4 id="app-based-two-factor-authentication">App-based Two-Factor Authentication</h4>
+</td>
+<td style="width: 287.

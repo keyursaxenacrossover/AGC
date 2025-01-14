@@ -1,0 +1,107 @@
+;description/&gt;
+                  &lt;marked&gt;false&lt;/marked&gt;
+                  &lt;author&gt;Example User&lt;/author&gt;
+                  &lt;staff/&gt;
+                  &lt;comment/&gt;
+                  &lt;isMarked&gt;false&lt;/isMarked&gt;
+                  &lt;url&gt;https://efs-installation.com/uc/main/12345/&lt;/url&gt;
+                  &lt;createTime&gt;2019-10-18T13:44:43+00:00&lt;/createTime&gt;
+                  &lt;fieldTime&gt;
+                     &lt;startTime&gt;2019-10-18T00:00:00+00:00&lt;/startTime&gt;
+                     &lt;endTime&gt;2019-11-01T00:00:00+00:00&lt;/endTime&gt;
+                  &lt;/fieldTime&gt;
+                  &lt;status&gt;GENERATED&lt;/status&gt;
+                  &lt;type&gt;PERSONALIZED&lt;/type&gt;
+                  &lt;numberOfParameters&gt;0&lt;/numberOfParameters&gt;
+                  &lt;bonusPoints&gt;
+                     &lt;label/&gt;
+                     &lt;value&gt;0&lt;/value&gt;
+                  &lt;/bonusPoints&gt;
+               &lt;/survey&gt;
+            &lt;/return&gt;
+         &lt;/survey_surveys_getListResponseValue&gt;
+      &lt;/ns1:survey_surveys_getListResponse&gt;
+   &lt;/SOAP-ENV:Body&gt;
+&lt;/SOAP-ENV:Envelope&gt;</code></pre>
+<p> </p>
+<p>Example: JSON call with http authentication using PHP and Zend Framework</p>
+<pre><code class="language-php">&lt;?php
+/* Example requires Zend Framework */
+require_once('Zend/Loader/Autoloader.php');
+function serviceLayerCall($method, $params=null)
+{
+    $autoloader = Zend_Loader_Autoloader::getInstance();
+    $url="http://EFSINSTALLATIONURL/service/index.php?handler=json&amp;token=TOKEN";
+    $client = new Zend_Http_Client();
+    $client-&gt;setUri($url);
+    $client-&gt;setConfig(array('timeout' =&gt; 30));
+    $client-&gt;setMethod(Zend_Http_Client::POST);
+    /* not using TOKEN? Here is basic auth: */
+    //$user = "USER";
+    //$passwd = "PASSWORD";
+    //$client-&gt;setAuth($user, $passwd);
+    
+    $client-&gt;setRawData(json_encode(array('method' =&gt; $method, 'jsonrpc' =&gt; '2.0', 'id' =&gt; 1, 'params' =&gt; $params)));
+    $request = $client-&gt;request();
+    //print "&lt;pre&gt;";
+    //var_dump($request-&gt;getBody());
+    $return = json_decode($request-&gt;getBody());
+    $return=$return-&gt;result;
+    return $return-&gt;return;
+}
+
+/* 1. Step - Get projects
+ */
+print "&lt;h3&gt;1. step - get projects&lt;/h3&gt;";
+$projects=serviceLayerCall("survey.surveys.getList");
+
+foreach($projects as $project)
+{
+    print "- ".$project-&gt;title." (".$project-&gt;id.")&lt;br&gt;";
+}
+
+
+//2. Step - Get Structure for Pid 1112
+, first a helper function:
+function sub($pages, &amp;$myquestions)
+{
+    foreach($pages as $page)
+    {
+        if(count($page-&gt;subPages) &gt; 0)
+            $this-&gt;sub($page-&gt;subPages, $myquestions);
+        foreach($page-&gt;questions as $question)
+        {
+            $myquestions[]=$question;
+        }
+    }
+    return $myquestions;
+}
+
+$relevantVars=array();
+print "&lt;hr&gt;&lt;h3&gt;2. step - get structure for Pid 1112&lt;/h3&gt;";
+$project=serviceLayerCall("survey.surveys.getQuestionnaireStructure", array("surveyId" =&gt; 1112));
+$questions=sub($project, $myquestions);
+foreach($questions as $question)
+{
+    if($question-&gt;questiontext) {
+        print $question-&gt;questiontext . "&lt;br&gt;";
+        foreach ($question-&gt;variables as $variable) {
+            if ($variable-&gt;type == "char" || $variable-&gt;type == "text") {
+                print "Text-Var: ".$variable-&gt;varname . "&lt;br&gt;";
+                //add to $relevantVars for export
+                $relevantVars[] = $variable-&gt;varname;
+            }
+        }
+    }
+}
+
+/* 3 - Relevant vars for export */
+print "&lt;hr&gt;&lt;h3&gt;3. Collected variables for export:&lt;/h3&gt;";
+var_dump($relevantVars);
+print "&lt;/pre&gt;";
+
+/* 4 - Get CSV export */
+print "&lt;hr&gt;&lt;h3&gt;4. Get results for specific vars&lt;/h3&gt;";
+$exportData=serviceLayerCall("survey.results.getRawdataCSV", array("surveyId" =&gt; 1112, "exportTypes" =&gt; array("QUESTIONNAIRE"), "includeVariables" =&gt; $relevantVars));
+print base64_decode($exportData);</code></pre>
+<p>The full <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/203

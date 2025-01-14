@@ -1,0 +1,13 @@
+justify">Can I communicate between different iFrames in Portals?</h3>
+<p class="wysiwyg-text-align-justify">Yes, you can use the Portals message bus to send and receive messages between different iFrames. Use <code>Questback.portalsApi.bus.send()</code> to send messages and <code>Questback.portalsApi.bus.subscribe()</code> to listen for messages.</p>
+<h3 id="faq-4" class="wysiwyg-text-align-justify">How can I apply Portals styles to my application?</h3>
+<p class="wysiwyg-text-align-justify">You can import Portals CSS stylesheets into your iframe. Retrieve the stylesheet paths using <code>Questback.portalsApi.query.portalInfo()</code> and then add them to your document's head using JavaScript.</p>
+<h3 id="faq-5" class="wysiwyg-text-align-justify">Can I open dialogs from my application in Portals?</h3>
+<p class="wysiwyg-text-align-justify">Yes, the Portals API provides methods to open dialogs outside the scope of your iframe. You can use methods like <code>Questback.portalsApi.trigger.openDialog()</code> or <code>Questback.portalsApi.trigger.openIframeDialog()</code> to open dialogs in Portals.</p>
+<p class="wysiwyg-text-align-justify"> </p>justify">Can I communicate between different iFrames in Portals?</h3>
+<p class="wysiwyg-text-align-justify">Yes, you can use the Portals message bus to send and receive messages between different iFrames. Use <code>Questback.portalsApi.bus.send()</code> to send messages and <code>Questback.portalsApi.bus.subscribe()</code> to listen for messages.</p>
+<h3 id="faq-4" class="wysiwyg-text-align-justify">How can I apply Portals styles to my application?</h3>
+<p class="wysiwyg-text-align-justify">You can import Portals CSS stylesheets into your iframe. Retrieve the stylesheet paths using <code>Questback.portalsApi.query.portalInfo()</code> and then add them to your document's head using JavaScript.</p>
+<h3 id="faq-5" class="wysiwyg-text-align-justify">Can I open dialogs from my application in Portals?</h3>
+<p class="wysiwyg-text-align-justify">Yes, the Portals API provides methods to open dialogs outside the scope of your iframe. You can use methods like <code>Questback.portalsApi.trigger.openDialog()</code> or <code>Questback.portalsApi.trigger.openIframeDialog()</code> to open dialogs in Portals.</p>
+<p class="wysiwyg-text-align-justify"> </p>

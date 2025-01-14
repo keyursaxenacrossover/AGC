@@ -1,0 +1,79 @@
+link ac:card-appearance="inline"><ri:space ri:space-key="IAM"></ri:space><ac:link-body>https://qbdocs.atlassian.net/wiki/spaces/IAM</ac:link-body></ac:link>  (especially <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Vendor Analysis" ri:version-at-save="1"></ri:page><ac:link-body>Vendor Analysis</ac:link-body></ac:link> )</p></td>
+</tr>
+</tbody>
+</table></ac:rich-text-body><h1 id="header-1">
+<ac:emoticon ac:emoji-fallback="\uD83D\uDCDA" ac:emoji-id="1f4da" ac:emoji-shortname=":books:" ac:name="blue-star"></ac:emoticon> Relevant data</h1><h2 id="header-3">Basic Requirements:</h2><ul>
+<li><p>SAML and OIDC federation is present</p></li>
+<li><p>APIs for managing the solution are present</p></li>
+<li><p>OIDC for authentication towards own services / for SSO capabilities</p></li>
+<li><p>Hosting in Europe is possible</p></li>
+<li><p>Customization of user facing UI is possible</p></li>
+<li><p>Customization of user facing Emails is possible</p></li>
+<li><p>A concept used for tenant management could be used</p></li>
+</ul><h3 id="header-5">Requirements for self-hosted solutions:</h3><ul>
+<li><p>Hosting in kubernetes is possible</p></li>
+<li><p>Horizontal scaling is possible</p></li>
+<li><p>All components could be built within kubernets or with AWS services</p></li>
+</ul><h3 id="header-6">Other Factors:</h3><ul>
+<li><p>flexible pricing and no fixed contingent pricing is available (e.g. pay-as-you-go pricing)</p></li>
+<li><p>flexible API limits for masses of users are possible (e.g. scaling the API limits with the number of users)</p></li>
+<li><p>avoid additional vendor in contracts with customers</p></li>
+</ul><p></p><ac:rich-text-body><p>Hint: There has already been a past vendor analysis for identity providers. See <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Vendor Analysis" ri:version-at-save="1"></ri:page><ac:link-body>Vendor Analysis</ac:link-body></ac:link>  and <ac:link ac:card-appearance="inline"><ri:page ri:content-title="Matrix" ri:version-at-save="14"></ri:page><ac:link-body>Matrix</ac:link-body></ac:link> </p></ac:rich-text-body><h3 id="header-7">List of existing products in scope (not an exhaustive list!)</h3><table data-layout="default" ac:local-id="467cecdd-3af3-465d-95bf-7a5ded6d2649">
+<colgroup>
+<col style="width: 168.0px;">
+<col style="width: 590.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p><strong>Product</strong></p></th>
+<th><p><strong>Current status / comment</strong></p></th>
+</tr>
+<tr>
+<td><p>EFS Admin</p></td>
+<td>
+<p>Tivian Access using OIDC towards Okta as optional opt-in</p>
+<p>Custom SSO solutions using SAML or OIDC</p>
+<p>otherwise local login</p>
+</td>
+</tr>
+<tr>
+<td><p>Portals</p></td>
+<td>
+<p>Tivian Access using OIDC towards Okta as optional opt-in</p>
+<p>Custom SSO solutions using SAML or OIDC</p>
+<p>otherwise local login</p>
+</td>
+</tr>
+<tr>
+<td><p>Panelwebsite</p></td>
+<td>
+<p>Custom SSO solutions using SAML or OIDC</p>
+<p>otherwise local login</p>
+</td>
+</tr>
+<tr>
+<td><p>Tableau</p></td>
+<td><p>Uses Tableau Login</p></td>
+</tr>
+<tr>
+<td><p>Dashboarding (Dashbo)</p></td>
+<td><p>Token forwarding through iframe with self-made public-key infrastructure</p></td>
+</tr>
+<tr>
+<td><p>Tivian Analytics</p></td>
+<td><p>Using Okta via OIDC</p></td>
+</tr>
+<tr>
+<td><p>Communicate XI</p></td>
+<td><p>Self-made identity provider (ellis-island) using OAuth2</p></td>
+</tr>
+<tr>
+<td><p>Datavoyager</p></td>
+<td>
+<p>Tivian Access using OIDC towards Okta as optional opt-in</p>
+<p>otherwise local login</p>
+</td>
+</tr>
+</tbody>
+</table><p></p><h2 id="header-9">
+<ac:emoticon ac:emoji-fallback="\uD83D\uDCD8" ac:emoji-id="1f4d8" ac:emoji-shortname=":blue_book:" ac:name="blue-star"></ac:emoticon> Background</h2><p>Currently

@@ -1,0 +1,30 @@
+{
+    "id": 20716967570578,
+    "url": "https://discoverxi-supportdesk.zendesk.com/api/v2/help_center/en-us/articles/20716967570578.json",
+    "html_url": "https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20716967570578-Milestone-MMP",
+    "author_id": 369584192734,
+    "comments_disabled": false,
+    "draft": true,
+    "promoted": false,
+    "position": 0,
+    "vote_sum": 0,
+    "vote_count": 0,
+    "section_id": 20714711445138,
+    "created_at": "2024-08-12T20:02:03Z",
+    "updated_at": "2024-08-12T20:02:05Z",
+    "name": "Milestone MMP",
+    "title": "Milestone MMP",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-08-12T20:02:05Z",
+    "user_segment_id": 360000084973,
+    "permission_group_id": 1075294,
+    "content_tag_ids": [],
+    "label_names": [],
+    "body": "<p><b>Original Confluence URL:</b> <a href=\"https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1321893891\">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1321893891</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>\n\n<h2>Table of Contents</h2>\n<ul class=\"toc\">\n<ul>\n<li><a href=\"#header-1\">Independence</a></li>\n<ul>\n<li><a href=\"#header-3\">Easy to Setup</a></li>\n<li><a href=\"#header-4\">Incorporate First Feedback</a></li>\n<li><a href=\"#header-5\">Integrate Tivian Tenant and Tivian Application concept</a></li>\n<li><a href=\"#header-6\">Cleanup</a></li>\n<li><a href=\"#header-7\">Integrate Data Voyager</a></li>\n<li><a href=\"#header-8\">Continuous Deployment/Delivery for the product</a></li>\n</ul>\n</ul>\n</ul><p><strong><u>Minimum Maintainable Product</u></strong></p><p>The main purpose of that milestone is to cleanup previous short cut debt and to enhance maintainability and thus <strong><span style=\"color: rgb(54,179,126);\">reduce cost</span></strong> and <strong><span style=\"color: rgb(54,179,126);\">increase quality</span></strong> of the product. This milestone is neccessary due to the forced short cuts that the team had to take while implementing the first version.</p><p></p><p><strong>Goals:</strong></p><h1 id=\"header-1\">Independence</h1><ul>\n<li><p>Get more indepentend from Okta to prevent a vendor lockin and to in a more flexible way with Okta APIs</p></li>\n<li><p>Make integrated products independent from Okta specific APIs to react to changes more quickly</p></li>\n<li><p>Move Okta specific logic away from Tivian products to create leaner products that take care of their business and do not have to take care of other products business - enhance EFS development</p></li>\n</ul><p></p><h2 id=\"header-3\">Easy to Setup</h2><ul>\n<li><p>Reduce amount of mistakes that could arise when configuring Tivian Access to increase the perceived quality of the product</p></li>\n<li><p>Reduce amount of time and other effort to setup and configure Tivian Access for the respective integrated products</p></li>\n<li><p>Keep expert and domain knowledge in the expert team instead of spreading it to domain unrelated teams - streamline rollout processes and strengthen domain knowledge</p></li>\n</ul><p></p><h2 id=\"header-4\">Incorporate First Feedback</h2><ul><li><p>Enhance the quality of the product by implementing the feedback we get from clients using the first version of the product</p></li></ul><p></p><h2 id=\"header-5\">Integrate Tivian Tenant and Tivian Application concept</h2><ul>\n<li><p>Give Tivian an overview of the tenants using that product and the applications that are integrated with Tivian Access - improve business decisions and increase quality of the rollout process</p></li>\n<li><p>First step to more automation and self-service in setting up Tivian products</p></li>\n</ul><p></p><h2 id=\"header-6\">Cleanup</h2><ul>\n<li><p>see current Jira board</p></li>\n<li><p>Cleanup technical debt that was built up during the first phase of the product to reduce errors and increase quality</p></li>\n<li><p>Also cleanup inconsistencies in the user flow to get a more streamlined process for the user and thus increase the quality of the product further</p></li>\n</ul><p></p><h2 id=\"header-7\">Integrate Data Voyager</h2><ul>\n<li><p>Data Voyager should be added to the list of products that can be integrated with Tivian Access to increase the capabilities of Tivian Access to represent the Tivian products world</p></li>\n<li><p>Create a more streamlined process for tenants that already use Tivian Access and want to use Data Voyager in future - increase upsell potential</p></li>\n</ul><p></p><h2 id=\"header-8\">Continuous Deployment/Delivery for the product</h2><ul>\n<li><p>Currently the product is not leveraging the advantages of CI/CD because most of the logic is integrated in the respective products - CI/CD could lead to faster adapting to changes - especially regarding Okta - to get rid of the very strict release cycles that are coupled between technology and marketing</p></li>\n<li><p>CI/CD could only be implemented for the parts of the products that are not the integrated Tivian products like EFS/Portals/Data Voyager</p></li>\n</ul><p></p><p></p>",
+    "user_segment_ids": [
+        360000084973
+    ]
+}

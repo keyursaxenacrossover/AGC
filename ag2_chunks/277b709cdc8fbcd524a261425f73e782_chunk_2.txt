@@ -1,0 +1,43 @@
+ash">curl -XGET --silent 'http://elasticsearch.[ab1234].svc.cluster.local:9200/_cat/indices?v' | awk 'NR&gt;1 {print "Health: "$1"\n" "Status: "$2"\n" "Index: "$3"\n" "Pri: "$4"\n" "Rep: "$5"\n" "Docs count: "$6"\n" "Docs deleted: "$7"\n" "Store size: "$8"\n" "Pri store size: "$9}'</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul><p>If Data Voyagers were cloned as well, they have to be checked, too. Please see step Clone a Data Voyager.</p><hr><h2 id="header-5">Special Installations</h2><h3 id="header-7">IPSOS Loyalty | EFM | CX</h3><p>The process for Ipsos Loyalty has been evolved already and all employees (Tech Support and Sysadmins) already should know about it.<br>Here is a documentation on how to set them up:</p><ul>
+<li><p>Christian fills out a survey to request the IPSOS EFM installation (<a href="https://ww2.efs-survey.com/uc/main/73d5/">https://ww2.efs-survey.com/uc/main/73d5/</a> ,"Ipsos Order Form_DO NOT DELETE")</p></li>
+<li><p>The installation is a clone of <a href="http://tk1309.customervoice360.com"><strong>tk1309.customervoice360.com</strong></a> (if not defined otherwise)</p></li>
+<li><p>A support case is created at our 1st Level Support</p></li>
+<li><p>1st Level Support forwards the support case to Sysadmins so they create the installation (they copy a master installation)</p></li>
+<li><p>Sysadmins pass the case to Techsupport</p></li>
+<li>
+<p>Use "helpersAddInstallationInGlobis" to add the new installation to Globis and select "CUSTOMER-IPSOS"</p>
+<ul><li><p>The script will ask for needed information and will print out a ToDo list</p></li></ul>
+</li>
+<li><p>Make sure to complete all !ToDos including granting mentioned users SiteAdmin rights on preprod2</p></li>
+<li>
+<p>Reset activity stream to create the elastic search index for this installation</p>
+<ul>
+<li><p>go to <strong>www</strong> folder</p></li>
+<li>
+<p>execute <strong>php support/panel_reset_activitystream.php</strong> =&gt; [ 1 ] - Delete and reset complete activity stream [WARNING: maybe slow]) </p>
+<ul><li><p>the script doesn´t end by itself. Kill with STRG + c when done</p></li></ul>
+</li>
+<li>
+<p>Optional check  -&gt; Look for <strong>green open</strong></p>
+<pre><code class="language-bash"> curl --silent -XGET 'http://elasticsearch:9200/_cat/indices?v' | grep opst_ab1234</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>Sync the panelists (optional if panelists exist)</p>
+<ul><li><p><strong>php support/panel_sync_panelists.php</strong> =&gt; [ 0 ] - Update all panelists [WARNING: maybe slow])</p></li></ul>
+</li>
+<li><p>Forward the case to the corresponding 1st Level</p></li>
+</ul><p><br></p><div class="expand-macro">
+<h4 string="To do IPSOS EFM"></h4>
+<p>[] Check config due to new paths and if necessary all other values<br>[] Execute installation check (currently only valid for EFS and DV 1.1)<br>[] Did you changed the root password?<br>[] Safe the new password in our password safe on the server dili</p>
+<p>___IPSOS SPECIALS___<br>TWIKI-LINK: <a href="https://it.globalpark.de/twiki/bin/view/Support/CHDDocumentationCustomerSpecialsIpsos">https://it.globalpark.de/twiki/bin/view/Support/CHDDocumentationCustomerSpecialsIpsos</a></p>
+<p>[] Was the name of the organisation in EFS replaced from "IPSOS - master installation master installation" to something like this: " IPSOS [Ipsos client name] [Client project name]"<br>[] Did the script replace the old token "***" to this new token "***". You check it by doing this: select \* from efs_service_token<br>[] Add Ipsos members as site administrators for this site on PREPROD2. For more Details see case description.</p>
+<p><br>__TODO__ FIRST LEVEL</p>
+<p>[] Send information concerning the new token "***" to the client (holger.hetterling@<a href="http://ipsos.com">ipsos.com</a>)<br>[] Send information to <a href="mailto:gordon.fiedler@questback.com">gordon.fiedler@questback.com</a>, <a href="mailto:johannes.hubrich@questback.com">johannes.hubrich@questback.com</a>, <a href="mailto:christian.kamp@questback.com">christian.kamp@questback.com</a><br

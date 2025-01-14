@@ -1,0 +1,38 @@
+, tick “Export including attached files”. Click on Download and save the data on your PC.</p>
+<p class="wysiwyg-text-align-justify">The export file contains all posts of the forum or the topic, respectively, with the following details:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Selected panelist data: The author’s pseudonym (pseudonym), account name (u_account), first name (u_firstname), name (u_name), e-mail address (u_email), an alternative ID (u_other_id) and cell phone number (u_mobile)</li>
+<li>Selected system data: Panel entry date (penter_date), panel status (pstatus)</li>
+<li>Forum-specific data: Date and time of post (dt), ID (topic_id) and title (topic_title) of the topic, post ID (id), position in the thread structure (path), title (title), text (description) and number and result of the community rating (rating_cont, rating_average).</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If you have activated “Export including attached files”, the export file described above and the associated files will be exported in a compressed zip file. The associated files are named according to the following scheme: TopicD_UserID_filename.extension.</p>
+<h1 id="discussions" class="sc-iGrrsa eYmPYl wysiwyg-text-align-justify"><strong>Discussions</strong></h1>
+<p class="wysiwyg-text-align-justify">If you want to encourage a quick exchange of ideas among your panelists or create a guestbook, you can create a discussion.</p>
+<p class="wysiwyg-text-align-justify">The discussion tool is the “light” version of the forum. You can use it for types of communication that are characterized by a quick and unstructured sequence of short posts, such as a bulletin board or a guestbook, for example. For detailed discussions requiring a thread structure and features such as “reply w/quote” or embedding images, you may want to use the familiar forum.</p>
+<p class="wysiwyg-text-align-justify">Due to its flexibility, the discussion tool supports a variety of different scenarios:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>You can create and manage various discussions (“discussion sections”) for each language version of your website.</li>
+<li>From EFS 10.3, it is possible to create a teaser that automatically displays the most recent, best rated, or most frequently rated discussion posts.</li>
+<li>As in the forum, you can decide whether all visitors, only panelists, or only members of a specific panel group will be permitted to visit a discussion and whether the panelists may be actively involved in any discussions or merely allowed to read.</li>
+<li>The moderation features familiar from the forum (e.g. selection of publishing mode, stickying) are available as well.</li>
+<li>A simple WYSIWYG editor allows the panelists to create appealing posts. Such an editor has been integrated into the sample pages of the standard panel.</li>
+<li>A post usually consists of a name, date, and body text. It is up to you to decide whether a subject header should be used.</li>
+<li>If a panelist posts a new comment, an automatic reload of the list is triggered.</li>
+<li>You can create as many discussions as you like. Please mind, though, that the resulting amounts of data may affect the performance of the panel installation. Therefore, it is recommended to limit the discussions to at most 1,000 posts. Furthermore, you can export the posts of old discussions and subsequently delete the discussions.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Work steps</strong></p>
+<p class="wysiwyg-text-align-justify">Setting up a discussion involves the following steps:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>Creating a discussion section.</li>
+<li>Publishing a first post and/or enabling the panelists to post.</li>
+<li>Creating a page for the discussion and referencing the appropriate section.</li>
+<li>Monitoring, and if necessary, actively controlling the discussion if the panelists are allowed to post.</li>
+</ul>
+<h2 id="managing-discussions" class="wysiwyg-text-align-justify"><strong>Managing Discussions</strong></h2>
+<p class="wysiwyg-text-align-justify">The discussions are managed from the <strong>Website → Panel websites → {Selected language version} → Discussions</strong> menu. In this menu, you can edit existing discussion sections, create new sections, and moderate ongoing discussions.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify">With read rights for “panel_messages”, you can manage discussions. With write rights, you can export the posts of a discussion.</p>
+<p class="wysiwyg-text-align-justify"><strong>Overview of discussions</strong></p>
+<p class="wysiwyg-text-align-justify">The overview table lists all the discussion sections created for the respective language version along with their titles, descriptions, and the number of posts.</p>
+<p class="wysiwyg-text-align-justify">If, in an installation with multiple websites and/or language versions, you want to view the discussions of another language version, change the setting in the upper part of the dialog. With the View function, you can specify which table columns and how many rows per page will be displayed. You can search the contents of the overview table.</p>
+<p class

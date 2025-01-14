@@ -1,0 +1,89 @@
+="wysiwyg-text-align-justify">Another option that was set up specifically for Fixed Format export allows you to download the export template, including the information on the column width you configured yourself, as a CSV file.</p>
+<p class="wysiwyg-text-align-justify">To do so, you must first perform export selection as usual. The dialog shown in the figure, in which you can finally download the file, also contains a green bar displaying the <strong>here </strong>link you can click on to download the CSV file.</p>
+<p class="wysiwyg-text-align-justify">If, for a Fixed Format export, you additionally choose to compress the data into a zip file, this zip file will automatically also contain the export template in CSV format.</p>
+<h3 id="excursion-merging-records-in-spss-matching" class="wysiwyg-text-align-justify"><strong>Excursion: Merging Records in SPSS (Matching)</strong></h3>
+<p class="wysiwyg-text-align-justify">Under certain conditions, various system files can be merged to create one system file. There are two possible ways of merging:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Merging cases where variables are identical or almost identical (Add Files).</p>
+</li>
+<li>
+<p>Merging variables where cases are identical or almost identical (Match Files).</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">For the 'add files' command, cases are added from one or more records to an existing record (vertical conjunction). For identical variables, syntax in SPSS is as follows:</p>
+
+<p class="wysiwyg-text-align-justify">For the 'match file' command, several records can be merged using a key variable (horizontal conjunction).</p>
+<p class="wysiwyg-text-align-justify">The prerequisites for successful matching are:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>All files must contain the same number of cases.</p>
+</li>
+<li>
+<p>All files must contain a key variable with an identification number (e.g. lfdn).</p>
+</li>
+<li>
+<p>Each case must be assigned to a different identification number.</p>
+</li>
+<li>
+<p>A certain case must always have the same number in different files.</p>
+</li>
+<li>
+<p>All files must be sorted by identification number.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">In this case, the consecutive number 'Lfdn' is chosen as a key variable, and the records must be sorted by this variable. For an identical number of cases, syntax in SPSS is as follows:</p>
+
+<p class="wysiwyg-text-align-justify">Should problems occur when matching two EFS Survey data files in SPSS format, save the records in POR format (Portable Document) and repeat matching.</p>
+<h2 id="what-do-the-exported-result-data-reveal" class="wysiwyg-text-align-justify"><strong>What do the Exported Result Data Reveal?</strong></h2>
+<h3 id="overview-of-variables" class="wysiwyg-text-align-justify"><strong>Overview of Variables</strong></h3>
+<p class="wysiwyg-text-align-justify">Depending on project, project properties, choice of export options and authorization of the user who executes the export, the result data record may contain the following variables:</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 194.0px;"> <col style="width: 182.0px;"> <col style="width: 163.0px;"> <col style="width: 221.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Internal variable name</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>External variable name</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Description</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#57d9a3">
+<p><strong>Meaning</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>lfdn</p>
+</td>
+<td>
+<p>lfdn</p>
+</td>
+<td>
+<p>number</p>
+</td>
+<td>
+<p>Every participant in the questionnaire will be assigned a consecutive number.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>external_lfdn</p>
+</td>
+<td>
+<p>external_lfdn</p>
+</td>
+<td>
+<p>external lfdn</p>
+</td>
+<td>
+<p>If an external survey start is used, external_lfdn is used in the secondary project to store the participants’ ldfn from the primary project. You can download a dedicated documentation for external survey starting in the customer center.</p>
+<p>If several surveys are linked by external survey start, the variable <em>external_lfdn</em> will contain the lfdn of the primary project in all following surveys.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>tester</p>

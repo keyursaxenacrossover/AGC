@@ -1,0 +1,120 @@
+>
+</table>
+<p><strong><u>Okta - User List</u></strong></p>
+<table ac:local-id="3fe8b0da-d6de-4b6b-b68a-c96d06e832d2" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p>Okta User ID</p></th>
+<th><p>email</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>10004</p></td>
+<td><p>another.user@something.com</p></td>
+<td><p>zombie</p></td>
+</tr>
+<tr>
+<td><p>20004</p></td>
+<td><p>user4@tivian.com</p></td>
+<td><p>created + assignment to group etc.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><u>EFS - EFS User to Okta User Mapping</u></strong></p>
+<table ac:local-id="b734b579-6c7f-4dc5-aa1e-4c12eac64cf1" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p>EFS User ID</p></th>
+<th><p>Okta User ID</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>14</p></td>
+<td><p>20004</p></td>
+<td><p>updated - fixed mapping</p></td>
+</tr>
+</tbody>
+</table>
+</div><p></p><h3 id="header-25">Case 5</h3><p>User only exists in EFS but no user is present for/in Okta.</p><div class="expand-macro">
+<h4 string="Case 5"></h4>
+<h4 id="header-27">Initial state:</h4>
+<p><strong><u>EFS - User Table</u></strong></p>
+<table ac:local-id="6066f709-ad12-4779-b5f2-0d86fad7e364" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p>EFS User ID</p></th>
+<th><p>email</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>15</p></td>
+<td><p>user5@questback.com</p></td>
+<td><p>-</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><u>Okta - User List</u></strong></p>
+<table ac:local-id="9ae68527-f6b1-4dda-bfe2-d11fc423b81a" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p>Okta User ID</p></th>
+<th><p>email</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p><strong><span style="color: rgb(255,86,48);">empty</span></strong></p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><u>EFS - EFS User to Okta User Mapping</u></strong></p>
+<table ac:local-id="5e8813f2-6262-44ec-b749-7bc381ee74a4" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th><p>EFS User ID</p></th>
+<th><p>Okta User ID</p></th>
+<th><p>comment</p></th>
+</tr>
+<tr>
+<td><p>-</p></td>
+<td><p>-</p></td>
+<td><p><strong><span style="color: rgb(255,86,48);">empty</span></strong></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="header-28">Future state:</h4>
+<p>Just ignore that the user </p>
+<p><strong><u>EFS - User Table</u></strong></p>
+<table ac:local-id="e83f0edc-d5f1-4d50-b5d8-133cb6b7d2d7" data-layout="default">
+<colgroup>
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+<col style="width: 226.67px;">
+</

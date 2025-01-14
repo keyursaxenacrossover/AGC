@@ -1,0 +1,53 @@
+<h1 id="h_01HGKSMPRS9JVGC6E9EA3DB98K" class="wysiwyg-text-align-justify">Overview</h1>
+<p class="wysiwyg-text-align-justify">This article provides information about container depots in questionnaire creation, including depot questions, text elements, and the codebook. It explains how to create and reference depot questions, manage text elements for multiple languages, and understand the codebook's role in survey analysis.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h1 id="h_01HGKSMPRSYYE7GMM7DZ0VCKXK" class="wysiwyg-text-align-justify">Information</h1>
+<p class="wysiwyg-text-align-justify">Container depots are essential tools for efficiently managing recurring questions in surveys. This article focuses on the creation and use of depot questions, managing text elements, and understanding the codebook for survey analysis.</p>
+<ul>
+<li><a href="#depot-questions">Depot questions</a></li>
+<li><a href="#text-elements">Text elements</a></li>
+<li><a href="#codebook">Codebook</a></li>
+</ul>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="depot-questions" class="wysiwyg-text-align-justify">Depot questions</h2>
+<p class="wysiwyg-text-align-justify">Depot questions significantly facilitate the creation of questionnaires. If a specific question is used repeatedly in your questionnaire, you can define a depot question and reference it on all appropriate pages. This may be useful, for example, if identical demographic data are queried in several filter branches. Variables are created only for the depot question. The reference questions do not have dedicated variables, but refer to the variables of the respective depot question. This simplifies, among others, filter conditions referring to the repeatedly-occurring question. If you have to change these frequently recurring questions, it is not necessary anymore to edit each of them individually: the need to bet is that changes to the depot question directly affect all other reference questions based thereon.</p>
+<p class="wysiwyg-text-align-justify">Please note that <em>Reporting+</em> does not support depot questions and reference questions.</p>
+<h3 id="creating-depot-questions" class="wysiwyg-text-align-justify">Creating depot questions</h3>
+<p class="wysiwyg-text-align-justify">A questionnaire contains two branches which will be passed by different participant groups. In each branch, the same demographic data are queried. To avoid having to enter these demographic questions twice, use depot questions.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>To create the depot question, click on the<strong> Container Depot</strong> menu item.</p>
+</li>
+<li>
+<p>Enter the title (e.g. “Gender”) and type of the depot question.</p>
+</li>
+<li>
+<p>Confirm by clicking on <strong>Save</strong>.</p>
+</li>
+<li>
+<p>Then, enter the question text and answer options in the standard question view as usual.</p>
+</li>
+</ul>
+<h3 id="referencing-a-depot-question" class="wysiwyg-text-align-justify">Referencing a depot question</h3>
+<p class="wysiwyg-text-align-justify">You want to use the question defined in the depot on every page of the survey.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Open the page “Demographics 1” in the first filter branch.</p>
+</li>
+<li>
+<p>Enter a suitable question title and select question type “921 - Reference question” from the question types list.</p>
+</li>
+<li>
+<p>In the following entry dialog, first select the question component to be shown, i.e. the question “Gender”.</p>
+</li>
+<li>
+<p>If you wish to assume the whole question from the depot, click directly on <strong>Save</strong>. If, instead, you wish to change the question text, enter the desired text in the lower field: it will be combined with the answer options of the depot question.</p>
+</li>
+<li>
+<p>You have now created a reference question on the page “Demographics 1”, which is based on the depot question “Gender”. To reference the depot question “Gender” from the page „Demographics 2“ in the second branch as well, repeat the procedure. Then, you can create additional depot questions and reference them in both filter branches, too.</p>
+</li>
+</ul>
+<h2 id="text-elements" class="wysiwyg-text-align-justify">Text elements</h2>
+<p class="wysiwyg-text-align-justify">Under the<strong> Text Elements</strong> menu item you edit the text elements of the questions available under the menu item Questions of the <strong>Container Depot</strong>. This is how you create translations for the various survey languages for the questions listed here.</p>
+<h2 id="codebook" class="wysiwyg-text-align-justify">Codebook</h2>
+<p class="wysiwyg-text-align-justify">The codebook contains an overview of all variables and all encodings used in a project. I.e. it shows which memory locations have been created for your questions and how the answers have been encoded. The codebook is used, for example, whenever you want to incorporate control information into your survey, e.g. when setting filters or defining triggers

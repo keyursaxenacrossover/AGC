@@ -1,0 +1,74 @@
+-renderer-start-pos="16425">Link ID (u_link_id): This is an unambiguous identifier of the individual feedback. The feedback can be numbered consecutively, for example, or the personnel number of the focus person can be used to identify the feedback.</p>
+</li>
+<li>
+<p data-renderer-start-pos="16651">Role (u_role): See Chapter 3.3, p. 19.</p>
+</li>
+<li>
+<p data-renderer-start-pos="16693">Personnel number (u_account): Unambiguous identifier of the participant. Is stored in the column "u_account".</p>
+</li>
+<li>
+<p data-renderer-start-pos="16806">E-Mail-Adresse (u_email): Needed for inviting the participants.</p>
+</li>
+</ul>
+</li>
+<li>
+<p data-renderer-start-pos="16875">Furthermore, you can enter title, first name, name, organizational unit, gender, initial password, language version, and user-defined master and process data.<img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015069099538"></p>
+</li>
+</ul>
+<p>Save the file in XLS or CSV.</p>
+<div class="ak-editor-panel cc-tqp4ke" data-panel-type="info">
+<div class="ak-editor-panel__content">
+<p data-renderer-start-pos="17070"> </p>
+</div>
+</div>
+<h3 id="h_01HGKSMPRWPYJHWQX0QXJQX3QZ">Importing Participant List</h3>
+<ol>
+<li>Open the Participant administration and click on the wave’s title to access the focus persons overview.</li>
+<li>Click on the Import button, select Download import template, and save the file locally.</li>
+<li>Enter your data into the template, save the completed file, and select it for import.</li>
+<li>Choose the appropriate character set, activate “First row includes column label,” and click Send file to upload the list.</li>
+<li>Allocate the import file columns to database fields, check the allocation on the Process data tab, then click Proceed to Preview.</li>
+<li>Confirm the preview with Import, and a success message will confirm the data import.</li>
+<li>In the focus persons overview, view the imported feedback. Clicking on a focus person shows their feedback providers, and all participants of the wave can be found in the participant pool.</li>
+</ol>
+<p><strong>Allowing Focus Persons to Select Their Feedback Providers</strong></p>
+<p><em>*This feature is optional and requires special programming.</em></p>
+<p><strong>Activating Validation of Selected Focus Providers</strong></p>
+<p>*This feature is optional and requires special programming.</p>
+<p>To activate validation by the focus person’s superior and set up notification mail, follow these steps:</p>
+<ol>
+<li>
+<p data-renderer-start-pos="19083">Create a mail template of type “Default mail”.</p>
+</li>
+<li>
+<p data-renderer-start-pos="19133">In the menu<strong data-renderer-mark="true"> Process configuration → Feedback center</strong> in the section “Approval of feedback providers by the manager”, activate the checkbox “Validation process active”.</p>
+</li>
+<li>
+<p data-renderer-start-pos="19303">In the drop-down list “Mail template”, select the appropriate template and <strong data-renderer-mark="true">Save</strong>.</p>
+</li>
+</ol>
+<h2 id="h_01HGKSMPRWJX8YBGX9YJHWQX0Q">Sending E-mails in Feedback Processes</h2>
+<p>During the feedback process, you may need to contact all participants or specific individuals. Semi-automatic emails are sent in cases such as a forgotten feedback center password. Invitation processes use the familiar EFS Survey participant administration functionalities.</p>
+<p>Below are MSF-specific explanations for:</p>
+<ol>
+<li>Personalizing Emails</li>
+<li>Preparing Mail Templates</li>
+<li>Linking Mail Templates with Semi-Automatic Features such as:
+<ul>
+<li>Resetting passwords</li>
+<li>Requests to validate a list of feedback providers</li>
+</ul>
+</li>
+</ol>
+<h3 id="h_01HGKSMPRWX0QXJQX3QZJX8YBG">Personalizing E-mails</h3>
+<p>Information on using wildcards to personalize emails and mail templates is provided, including tables of available wildcards for different purposes.</p>
+<ul>
+<li>The first table's wildcards insert master and process data of the mail recipient and are supported in the questionnaire.</li>
+<li>The second table's wildcards insert master and process data of the focus person in the feedback constellation and are also supported in the questionnaire.</li>
+<li>The third table's wildcards, only supported in emails, insert information on the current feedback wave.</li>
+<li>Click the Question mark icon above the mail text field to open a context-dependent overview.</li>
+</ul>
+<p data-renderer-start-pos="20909"><strong data-renderer-mark="true">Participant:</strong></p>
+<div class="pm-table-container with-shadow-observer" data-layout="default">
+<div class="pm-table-wrapper">
+<table style="border-collapse: collapse; border-top-style: ; border-top-width: ; border-right-style: ; border-right-width: ; border-bottom-style: ; border-bottom-width: ; border-left-style: ; border-left-width: ; border-image-source: ; border-image-slice: ; border-image-width: ; border-image-outset: ; border-image-repeat: ; height

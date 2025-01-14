@@ -1,0 +1,30 @@
+strong> : helpersCreateNewInstallation<br><strong>Example</strong> : helpersCreateNewInstallation #execute without parameter<br><strong>Known Change Request</strong>:</p>
+<h3 id="header-23">Get last 10 logins to EFS installation</h3>
+<p>=====================================================================<br><strong>Needed files</strong> : getLastLogin.sh<br><strong>Aliases</strong> : helpersGetEfsLastLogins,helpersEfsGetLastLogins<br><strong>Usage</strong> : helpersGetEfsLastLogins<br><strong>Example</strong> : helpersGetEfsLastLogins #execute without parameter<br><strong>Known Change Request</strong>:</p>
+<h3 id="header-24">Become root user and login with your password</h3>
+<p>=====================================================================<br><strong>Needed files</strong> : makeMeRootEasier.sh<br><strong>Aliases</strong> : helpersSetMeRoot,helpersEfsSetMeRoot<br><strong>Usage</strong> : helpersSetMeRoot #execute without parameter<br><strong>Example</strong> : helpersSetMeRoot<br><strong>Known Change Request</strong>:</p>
+<h3 id="header-25">Become user x and login with your password</h3>
+<p>=====================================================================<br><strong>Needed files</strong> : makeMeUser.sh<br><strong>Aliases</strong> : helpersSetMeUser,helpersEfsSetMeUser<br><strong>Usage</strong> : helpersSetMeUser #execute without parameter<br><strong>Example</strong> : : helpersSetMeUser<br><strong>Known Change Request</strong>:</p>
+<h3 id="header-26">Log in to current DV and give you a list of information</h3>
+<p>=====================================================================<br><strong>Needed files</strong> : helpersDVLogin.sh<br><strong>Aliases</strong> : helpersDVLogin oder dvlogin<br><strong>Usage</strong> : helpersDVLogin #execute without parameter<br><strong>Example</strong> : helpersDVLogin<br><strong>Known Change Request</strong>:</p>
+<h3 id="header-27">Create a new DV 2.x - <span style="color: #ff5630;">obsolete</span>
+</h3>
+<p>=====================================================================<br><strong>Needed files</strong> : createDV2.sh<br><strong>Aliases</strong> : helpersCreateNewDataVoyager,helpersDVCreateNew<br><strong>Usage</strong> : helpersCreateNewDataVoyager #Parameter werden vom Skript abgefragt<br><strong>Example</strong> : helpersCreateNewDataVoyager<br><strong>Known Change Request</strong>:</p>
+<h3 id="header-28">Get last 10 logins to DV</h3>
+<p>=====================================================================</p>
+<p><strong> Needed files</strong> : helpersGetDVLastLogins.sh</p>
+<p><strong>Aliases</strong> : helpersGetDVLastLogins,helpersDVGetLastLogins</p>
+<p><strong>Usage</strong> : helpersGetDVLastLogins #execute without parameter</p>
+<p><strong>Example</strong> : helpersGetDVLastLogins</p>
+<p><strong>Known Change Request</strong>:</p>
+<h3 id="header-29">Write full processlist into a folder - <span style="color: #ffc400;">must be fixed</span>
+</h3>
+<p>=====================================================================<br><strong>Needed files</strong> : getCurrentProcessList.sh<br><strong>Aliases</strong> : helpersGetProcessList,helpersMysqlProcessList<br><strong>Usage</strong> : helpersGetProcessList #execute without parameter<br><strong>Example</strong> : helpersGetProcessList<br><strong>Known Change Request</strong>:</p>
+<h3 id="header-30">Kill SELECTs from current processlist</h3>
+<p>=====================================================================<br><strong>Needed files</strong> : NightmareonElmStreet.sh<br><strong>Aliases</strong> : helpersMysqlKillSleeps<br><strong>Usage</strong> : helpersMysqlKillSleeps #execute without parameter<br><strong>Example</strong> : helpersMysqlKillSleeps<br><strong>Known Change Request</strong>:</p>
+<h3 id="header-31">Tail live PHP error logs</h3>
+<p>=====================================================================<br><strong>Needed files</strong> : tailPhpErrorlog.sh<br><strong>Aliases</strong> : tailphperror,helpersLogPhpTailErrors,helpersPhpTailErrors<br><strong>Usage</strong> : tailphperror #execute without parameter<br><strong>Example</strong> : tailphperror<br><strong>Known Change Request</strong>:</p>
+<h3 id="header-32">Get list of current CDA (Customer Data Access)</h3>
+<p>=====================================================================<br><strong>Needed files</strong> : getCdaAccesses.php<br><strong>Aliases</strong> : helpersCDA,helpersEfsCDA<br><strong>Usage</strong> : helpersCDA #execute without parameter<br><strong>Example</strong> : helpersCDA<br><strong>Known Change Request</strong>:</p>
+<h3 id="header-33">Check whether a domain is akamaized</h3>
+<p>=====================================================================<br><strong>Needed files</strong> : Framework by Freddy, we just call the file cli<br><strong>Aliases</strong> : helpersAkamai<br><strong>Usage</strong> : helpersAkamai #Freddy prints out a

@@ -1,0 +1,48 @@
+<p><b>Original Confluence URL:</b> <a href="https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1059389495">https://qbdocs.atlassian.net/wiki/spaces/IAM/pages/1059389495</a> - please cross-check the quality of the ZD article with the Confluence counterpart and remove this line before publishing the ZD article</p>
+
+<p><strong>External Identity-Provider / Federated Authentication</strong></p><ul><li><p>Do you have an existing IAM/SSO solutions which you want your users to sign in to ? If yes which ?</p></li></ul><p>[if any solution is given]</p><ul>
+<li><p>Which email domain(s) do your users have ? (e.g: @tivian.com)</p></li>
+<li><p>Is the IAM/SSO solution capable of connecting apps via SAML or OpenID Connect ?</p></li>
+</ul><p>[if OpenID Connect]</p><ul><li><p>Is it publicly available (for Okta) or just in your internal network/infrastructure ?</p></li></ul><p></p><p><strong>MFA</strong></p><ul><li><p>Do you want Tivian to perform MFA for user authentication (only if not already done by your SSO solution)</p></li></ul><p>[if yes]</p><ul>
+<li><p>Do you want a specific Factor to be mandatory or do you want to offer each users a list where at least one factor is mandatory ?</p></li>
+<li>
+<p>Which factor(s) should be included:</p>
+<ul>
+<li><p>Google Authenticator</p></li>
+<li><p>Okta Verify</p></li>
+<li><p>SMS Authentication</p></li>
+</ul>
+</li>
+</ul><ul><li><p>Do you want to require MFA every time a user logs in or do you want MFA to be remembered for [x] time</p></li></ul><hr><p>the below options are possible but shouldn’t be offered if not asked for</p><p><strong> Password Policy (Default Available)(Only relevant for clients without own Identity Provider)</strong></p><ul>
+<li><p>Minimal Length for a password</p></li>
+<li><p>Contains:</p></li>
+</ul><ac:task-list>
+<ac:task>
+<ac:task-id>46</ac:task-id>
+<ac:task-status>incomplete</ac:task-status>
+<ac:task-body><span class="placeholder-inline-tasks">lowerCase</span></ac:task-body>
+</ac:task>
+<ac:task>
+<ac:task-id>47</ac:task-id>
+<ac:task-status>incomplete</ac:task-status>
+<ac:task-body><span class="placeholder-inline-tasks">upperCase</span></ac:task-body>
+</ac:task>
+<ac:task>
+<ac:task-id>48</ac:task-id>
+<ac:task-status>incomplete</ac:task-status>
+<ac:task-body><span class="placeholder-inline-tasks">numbers</span></ac:task-body>
+</ac:task>
+<ac:task>
+<ac:task-id>49</ac:task-id>
+<ac:task-status>incomplete</ac:task-status>
+<ac:task-body><span class="placeholder-inline-tasks">symbols</span></ac:task-body>
+</ac:task>
+</ac:task-list><ul>
+<li><p>Can not contain userName, firstName, lastName ?</p></li>
+<li><p>Can not be a “common” or “simple” password</p></li>
+<li><p>How often does the password needs to be refreshed</p></li>
+</ul><p><strong>Session Times</strong></p><ul>
+<li><p>How long should users be logged in to okta ([x] time) (default can be applied, optional)</p></li>
+<li><p>How long should users be logged in to EFS (existing configuration available, optional)</p></li>
+<li><p>How long should users be logged in to Portals (existing configuration available, optional)</p></li>
+</ul>

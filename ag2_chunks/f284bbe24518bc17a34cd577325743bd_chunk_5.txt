@@ -1,0 +1,228 @@
+ian_server_application_efs/src/master/</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="header-17">EFS Jobs</h3>
+<ul>
+<li>
+<p>Background jobs for EFS</p>
+</li>
+<li>
+<p>Runs various background-jobs for EFS i.e.</p>
+<ul>
+<li>
+<p>Mail/sms delivery</p>
+</li>
+<li>
+<p>Datasync to Kafka/Exasol</p>
+</li>
+<li>
+<p>Reportgeneration for Reporting+</p>
+</li>
+<li>
+<p>Bouncemanagement handling from Hurricane MTA via RabbitMQ</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Used technologies</p>
+<ul>
+<li>
+<p>Separate PHP pods with EFS codebase</p>
+<ul>
+<li>
+<p>Handling jobs for all EFS installations</p>
+</li>
+</ul>
+</li>
+<li>
+<p>PHP</p>
+</li>
+<li>
+<p>crond</p>
+</li>
+<li>
+<p>Storage</p>
+<ul>
+<li>
+<p>MariaDB</p>
+</li>
+<li>
+<p>Exasol</p>
+</li>
+<li>
+<p>Elasticsearch</p>
+</li>
+<li>
+<p>NFS</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Message Bus/Queue</p>
+<ul>
+<li>
+<p>Kafka</p>
+</li>
+<li>
+<p>RabbitMQ</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Services</p>
+<ul>
+<li>
+<p>Aspose PPTX-Service</p>
+</li>
+<li>
+<p>Hurricane MTA</p>
+</li>
+<li>
+<p>Tyntec SMS</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Sourcecode</p>
+<ul>
+<li>
+<p><a href="https://bitbucket.org/qbengineering/tivian_server_application_efs/src/master/www/support/jobmaker.php3" data-card-appearance="inline">https://bitbucket.org/qbengineering/tivian_server_application_efs/src/master/www/support/jobmaker.php3</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="header-19">Storage</h2>
+<h3 id="header-21">MariaDB</h3>
+<ul>
+<li>
+<p>Primary storage of EFS</p>
+<ul>
+<li>
+<p>Needs to provide ACID-compliance to avoid data-loss/inconsistencies (strong-consistency)</p>
+</li>
+</ul>
+</li>
+<li>
+<p>AWS managed RDS instances</p>
+</li>
+<li>
+<p>Vertical scalable on high load</p>
+<ul>
+<li>
+<p>EFS can handle an additional read-replica to separate reads from writes on hot-tables</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Contains all data of all domains/modules</p>
+<ul>
+<li>
+<p>Admin-account data and credentials</p>
+<ul>
+<li>
+<p>If no SSO integration is enabled (Okta)</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Survey/Project/Questionnaire definitions</p>
+</li>
+<li>
+<p>Participants/Panelists data</p>
+</li>
+<li>
+<p>Survey result data</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="header-22">Exasol</h3>
+<ul>
+<li>
+<p>Analytics database for Tableau Dashboards</p>
+</li>
+<li>
+<p>Tivian managed on VMWare esxi guest</p>
+<ul>
+<li>
+<p>Software provided by vendor</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Contains snapshots of survey participants</p>
+<ul>
+<li>
+<p>Data is transferred from MariaDB to Exasol by Cron-Jobs</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="header-23">Memcached</h3>
+<ul>
+<li>
+<p>Cache for query results from MariaDB</p>
+</li>
+<li>
+<p>Caches non volatile data from hot-tables only</p>
+<ul>
+<li>
+<p>Questionnaire definitions</p>
+</li>
+<li>
+<p>Survey table definitions</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="header-24">Elasticsearch</h3>
+<ul>
+<li>
+<p>Fulltext search engine for panelists/panelwebsite data</p>
+</li>
+<li>
+<p>Tivian managed in k8s cluster</p>
+</li>
+<li>
+<p>Contains data from hot-tables for better search performance on high-volume installations</p>
+<ul>
+<li>
+<p>Panelists data</p>
+</li>
+<li>
+<p>System error notifications</p>
+</li>
+<li>
+<p>Panelwebsite community content (discussions, blogs, forum)</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="header-25">NFS</h3>
+<ul>
+<li>
+<p>Filesystem for shared content</p>
+<ul>
+<li>
+<p>Needed for horizontal scaling of Nginx/PHP-FPM pods</p>
+</li>
+</ul>
+</li>
+<li>
+<p>AWS managed EFS</p>
+</li>
+<li>
+<p>Contains files shared between different pods</p>
+<ul>
+<li>
+<p>Images/CSS/Templates for customization of survey layouts</p>
+</li>
+<li>
+<p>Results export files</p>
+</li>
+<li>
+<p>

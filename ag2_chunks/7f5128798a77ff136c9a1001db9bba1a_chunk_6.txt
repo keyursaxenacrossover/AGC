@@ -1,0 +1,56 @@
+-text-align-justify">Replaces os.time() and returns the current time when called without arguments, or a time representing the date and time specified by the given table. Please refer to <a href="https://www.lua.org/manual/5.1/manual.html#pdf-os.time">os.time documentation</a>.</p>
+<h2 id="examples-for-lua-in-efs" class="wysiwyg-text-align-justify"><strong>Examples of LUA in EFS</strong></h2>
+<h3 id="block-specific-ips-from-accessing-a-survey-using-a-lua-filter" class="wysiwyg-text-align-justify">Block specific IPs from accessing a survey using an LUA filter</h3>
+<p class="wysiwyg-text-align-justify">If you have a manageable list of IPs, that you want to block from accessing your survey, you can use a LUA filter to screen out these participants. This example code blocks the IPs 78.34.112.1, 78.34.112.2, and 78.34.112.3 and the list can be extended by providing additional comma-separated IPs. The last item should not have a comma after it.</p>
+<p class="wysiwyg-text-align-justify"><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/21015359142546" alt="Screenshot 2019-03-14 at 13.20.26.png"><br><em>Example survey structure</em></p>
+<h5 id="example-code" class="wysiwyg-text-align-justify"><strong>Example code</strong></h5>
+<pre><code class="language-delphi">function Set (list)
+  local set = {}
+  for _, l in ipairs(list) do set[l] = true end
+  return set
+end
+
+local blockedIps = Set {
+
+"78.34.112.1",
+"78.34.112.2",
+"78.34.112.3" 
+ 
+}
+ 
+if blockedIps[remote_addr] then
+  return false
+else
+  return true
+end</code></pre>
+<h3 id="show-a-item-of-the-day-to-all-participants" class="wysiwyg-text-align-justify"><strong>Show an item of the day to all participants</strong></h3>
+<p class="wysiwyg-text-align-justify">Select a random item from a list once per day, hour, or minute and store it in variable v_1 for all participants for the defined time. The function math.randomseed sets the randomizing integer for the random function, by providing the same integer for other participants, the same random value will be returned. To get the size of an array, put # in front of the name, e.g. #randomRestaurants.</p>
+<h5 id="example-code-1" class="wysiwyg-text-align-justify"><strong>Example code</strong></h5>
+<pre><code class="language-delphi">local randomRestaurants = {
+  "Indian Curry Basmati House",
+  "Calypso Grillbar",
+  "Rim Kong",
+  "Hayati",
+  "Metzgerei Kremer",
+  "Nakwon",
+  "KuroMaku Poke",
+  "Sushi Ninja",
+  "Vina Asia Express",
+  "485Grad",
+  "Osman Bey"
+}
+ 
+-- Initialize the randomiser with the current day, use "%y%m%d%H" for hours or "%y%m%d%H%M" for minutes
+math.randomseed( date("%y%m%d") )
+setVariableValue("v_1", randomRestaurants[math.random( #randomRestaurants )])</code></pre>
+<h3 id="detect-first-name-last-name-and-company-name-from-email-address" class="wysiwyg-text-align-justify"><strong>Detect first name, last name, and company name from email address</strong></h3>
+<p class="wysiwyg-text-align-justify">This example takes the email address stored in v_1 and assigns the company, first and last name to variables v_10, v_11 and v_12. This works on email aliases using firstname.lastname@company.tld or <a href="mailto:firstname_lastname@company.tld">firstname_lastname@company.tld</a> as their format. If the first or last name are not detected, then the variables will not be assigned a value.  </p>
+<h5 id="example-code-2" class="wysiwyg-text-align-justify"><strong>Example code</strong></h5>
+<pre><code class="language-delphi">-- pattern for company name
+setVariableValue("v_10",_G["v_1"]:match("@([%w+%-_]*)%.?"):gsub("^%l", string.upper))
+-- pattern for first name
+setVariableValue("v_11",_G["v_1"]:match("^([%w%-]+)[%._]"):gsub("^%l", string.upper))
+-- pattern for last name
+setVariableValue("v_12",_G["v_1"]:match("[%._]([%w%-]+)@"):gsub("^%l", string.upper))</code></pre>
+<h3 id="look-up-participant_country-code-in-a-list-of-countries" class="wysiwyg-text-align-justify"><strong>Look up participant_country code in a list of countries</strong></h3>
+<p class="wysiwyg-text-align-justify">If you have enabled the setting "Detect participants' location using the IP address" in the survey's project properties, then EFS will store the code of the

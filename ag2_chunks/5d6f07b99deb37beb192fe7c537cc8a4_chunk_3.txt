@@ -1,0 +1,89 @@
+.0px;">
+<col style="width: 170.0px;">
+<col style="width: 170.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p><strong>What</strong></p>
+</th>
+<th>
+<p><strong>When to use</strong></p>
+</th>
+<th>
+<p><strong>Effect</strong></p>
+</th>
+<th>
+<p><strong>Notes</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Convert Local Users to Federated users</p>
+</td>
+<td>
+<p>When a user was synced without the “federated” domains set correctly the user might be synced with a local Okta password. To prevent future emails and a password in Okta, the user can be switched to federated.</p>
+</td>
+<td>
+<p>The local Okta password of the user is removed and the user can just login via federation.</p>
+</td>
+<td>
+<p><a href="https://support.okta.com/help/s/article/How-to-convert-Okta-user-to-Federated-provider-type?language=en_US" data-card-appearance="inline">https://support.okta.com/help/s/article/How-to-convert-Okta-user-to-Federated-provider-type?language=en_US</a></p>
+<p>This is a help Article how to do that. This could also be done by a postman collection or a script.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Reset Password</p>
+</td>
+<td>
+<p>Rarely. A user is able to reset their password in their own.</p>
+<p>If a user is not able to - this option could be used.</p>
+</td>
+<td>
+<p>The user has no password anymore and will get an activation mail. The user has to provide a new password.</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<h2 id="h_01J6CQSXA72SE18M1J6ECW65WF">Special users and API tokens</h2>
+<h3 id="01J6CQTMPP63EYEAKNKPGN02YS">Noreply</h3>
+<p>There is a user in Okta with the email-address “noreply@questback.com”. This user is deactivated and has to stay in exaclty that state.</p>
+<p>A user that exists in Okta is identified by it’s email address in EFS and other applications. The special address “noreply@questback.com” is used for the root user of EFS. The root user of EFS has to login via the bypass route configured in EFS. Therefore this user exists in Okta to avoid accidental login via Okta.</p>
+<p> </p>
+<h3 id="01J6CQTMPQHM29R2PFQCWYGSC7">Shared users and API tokens</h3>
+<p>In general shared users should be avoided. We currently have one exception:</p>
+<p> </p>
+<h3 id="header-5">Okta API User:</h3>
+<p>There is only one shared user that is not directly tied to a natural person. This is the API Token User. This user is only used for the purpose to manage API tokens for different installations.</p>
+<p>Users that are tied to persons might be removed or changed. This user can stay the same. There should be a very limited number of people having access to that user. It is only used to create new API tokens. These tokens have to be stored somewhere else.</p>
+<p>This user should never be used to fulfill any other tasks than creating and removing API tokens.</p>
+<p>Technically every admin user is able to create API Tokens but per convention only the API Token User is allowed to create tokens for production purposes.</p>
+<p> </p>
+<p>In case one shared admin user is a security issue multiple API users could be created. But they should not be tied to the account of a natural person.</p>
+<p> </p>
+<h3 id="header-6">Development API Tokens:</h3>
+<p>Tokens that are used for development purposes should be tied to the person using the token so that it will be removed as soon as the person is removed.</p>
+<p> </p>
+<h2 id="h_01J6CQWJXN6S30P091GTAD8E7K">Manage Groups</h2>
+<h3 id="01J6CQWYNW3MC0JCYR46JN0Z2K">Global Tivian Internal Groups</h3>
+<p>There are Groups to grant Access to Okta itself. These groups are used for Tivian only. Take care that no other users are assigned to these groups. also see Okta Admin Users</p>
+<p>The following Groups are present in Okta:</p>
+<ul>
+<li>
+<p>tivian super admins</p>
+</li>
+<li>
+<p>tivian access installers</p>
+</li>
+<li>
+<p>tivian user manager</p>
+</li>
+</ul>
+<p>More groups might follow as needed.</p>
+<p>Also see: <a href="https://help.okta.com/en/prev/Content/Topics/Security/Administrators.htm?cshid=Security_Administrators#Security_Administrators">https://help.okta.com/en/prev/Content/Topics/Security/Administrators.htm?cshid=Security_Administrators#Security_Administrators</a></p>
+<p> </p

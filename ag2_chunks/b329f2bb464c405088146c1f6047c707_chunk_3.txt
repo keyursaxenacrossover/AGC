@@ -1,0 +1,123 @@
+>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Reminder date (This variable is not visible in the overview, but can be imported or exported.)</p>
+</td>
+<td>
+<p>internal: <em>date_of_remind</em> / external: <em>dateofremind</em></p>
+</td>
+<td>
+<p>PE, ES</p>
+</td>
+<td>
+<p>timestamp</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Expiry date (This variable is not visible in the overview, but can be imported or exported.)</p>
+</td>
+<td>
+<p>internal: <em>date_of_expire</em> / external: <em>dateofexpire</em></p>
+</td>
+<td>
+<p>PE, ES</p>
+</td>
+<td>
+<p>timestamp</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Time zone</p>
+</td>
+<td>
+<p>u_timezone</p>
+</td>
+<td>
+<p>PE, ES, MSF</p>
+</td>
+<td>
+<p>timestamp</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="creating-new-variables" class="wysiwyg-text-align-justify">Creating new variables</h2>
+<p class="wysiwyg-text-align-justify">Click on the <strong>Create variable</strong> button. The following details are required:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Internal label</strong>: This is used within EFS to label the variable.</p>
+<ul>
+<li>
+<p>You may use up to 62 characters (a-z, A-Z, 0-9).</p>
+</li>
+<li>
+<p>Only letters and numbers (i.e. ASCII characters) may be used; special characters or Japanese kanji, for example, are not allowed. The underscore character (_) can also be used.</p>
+</li>
+<li>
+<p>The prefix “u_” will be attached automatically.</p>
+</li>
+<li>
+<p>The internal label cannot be subsequently changed.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Label</strong>: The field does not have multilingual capability. For projects with international staff, you should therefore choose a name that can be understood by all of those involved.</p>
+</li>
+<li>
+<p><strong>Label</strong>: The field does not have multilingual capability. For projects with international staff, you should therefore choose a name that can be understood by all of those involved.</p>
+</li>
+<li>
+<p><strong>Type</strong>: The available display types are “Text field”, “Checkbox”, “Select box” and “Radio buttons”. For variables of the “Select box” or “Radio buttons” type, you can specify answer options that can be selected via select boxes in participant administration. In the case of “u_gender”, for example, you can choose between “Male”, “Female” and “Not entered”.</p>
+</li>
+<li>
+<p><strong>Allow editing of the content of a variable:</strong> The content of a variable for which editing is allowed can be changed via participant administration. If a variable has not been released, you cannot change the corresponding participant data in participant administration.</p>
+</li>
+<li>
+<p><strong>Show the content of a variable in participant administration:</strong> A variable for which the corresponding option is enabled is displayed in participant administration.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">Confirm by clicking on <strong>Save</strong>.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Data from participant import can be used to expand the characteristics of this variable:</strong> This function is available for “radio buttons” and “selectbox” fields. If it has been activated and data are imported that do not correspond to codes of an existing characteristic, this will result in the following:</p>
+<ul>
+<li>
+<p>Numerical values that do not correspond to any existing code are interpreted as new codes. Required characteristics are automatically generated, using the numerical value as a label.</p>
+</li>
+<li>
+<p>New characteristics are also generated for entries not interpretable as code, such as texts or combinations of letters and numbers. The codes of these characteristics are allocated by the system.</p>
+</li>
+<li>
+<p>If the function is not activated, this will result in the following:</p>
+<ul>
+<li>
+<p>Numerical values that differ from coding are imported but displayed with a question mark prompting you to check and subsequently create the missing characteristic.</p>
+</li>
+<li>
+<p>Entries not interpretable as code are set to the default value “0”.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>If the display type of the variable is “Select box” or “Radio buttons”, a table for creating the answer options will be shown.</p>
+</li>
+<li>
+<p>The value “0” is treated as a default value. This means, for example, that with “select box” type variables the “Please select” option is preset with this value and this value is assigned to empty cells on import. For that reason when creating answer options similarly use the “0” code only for settings preset as default such as “Please select”.</p>

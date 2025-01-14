@@ -1,0 +1,53 @@
+/upgrade in a 'screen'.</p>
+<ul>
+<li><p>Start screen: screen -S "[any description of the screen]"</p></li>
+<li>
+<p>Execute nightly script in screen:</p>
+<ul>
+<li>
+<p>Frankfurt:</p>
+<pre><code class="language-text">/bin/bash /opt/pdp/support/nightlyUpgradeSkript/nightlyUpgradeScript.sh</code></pre>
+</li>
+<li>
+<p><del>Rackspace:</del></p>
+<pre><code class="language-text">/bin/bash /dumps/visser/mercurials/applications/nightlyUpgradeSkript/nightlyUpgradeScript.sh
+ Wenn mann anstatt dem kompletten Pfad den vorhandenen Symlink benutzt, wird support/portal_compile_css.php nicht ausgefürt. Man muss dann nachträglich prüfen, ob Portals aktiviert ist und dann aus htdocs/www heraus das Skript per php support/portal_compile_css.php ausführen.</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul><h4 id="header-9">Cronjob</h4><p>The nightly script is executed automatically via a cron job </p><p></p><ul>
+<li>
+<p>The cron can be found here:</p>
+<ul><li><p>/etc/cron.d/rom_nightly</p></li></ul>
+</li>
+<li>
+<p>Contents:</p>
+<pre><code class="language-text"># mm4mathias: daily cron for nightly upgrade
+0 2     * * 1,2,3,4     nfsnobody /bin/bash /opt/pdp/support/nightlyUpgradeSkript/nightlyUpgradeScript.sh
+</code></pre>
+</li>
+</ul></code></pre>
+</li>
+<li>
+<p><del>Rackspace:</del></p>
+<pre><code class="language-text">/bin/bash /dumps/visser/mercurials/applications/nightlyUpgradeSkript/nightlyUpgradeScript.sh
+ Wenn mann anstatt dem kompletten Pfad den vorhandenen Symlink benutzt, wird support/portal_compile_css.php nicht ausgefürt. Man muss dann nachträglich prüfen, ob Portals aktiviert ist und dann aus htdocs/www heraus das Skript per php support/portal_compile_css.php ausführen.</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul><h4 id="header-9">Cronjob</h4><p>The nightly script is executed automatically via a cron job </p><p></p><ul>
+<li>
+<p>The cron can be found here:</p>
+<ul><li><p>/etc/cron.d/rom_nightly</p></li></ul>
+</li>
+<li>
+<p>Contents:</p>
+<pre><code class="language-text"># mm4mathias: daily cron for nightly upgrade
+0 2     * * 1,2,3,4     nfsnobody /bin/bash /opt/pdp/support/nightlyUpgradeSkript/nightlyUpgradeScript.sh
+</code></pre>
+</li>
+</ul>

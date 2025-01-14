@@ -1,0 +1,56 @@
+;" data-colorid="hn7jcbi85k">Read rights for reg_code are required for accessing the </span><strong>People → Panel configuration → Ways of entry </strong><span style="color: #333333; background-color: #f1f2f4;" data-colorid="hkw6r8z7f2">menu.</span></em></p>
+<h3 id="h_01J3F8Q9X2216FZK99TRZ4PZFJ" class="wysiwyg-text-align-justify">Key Features:</h3>
+<ul class="wysiwyg-text-align-justify">
+<li>Create and manage ways of entry</li>
+<li>Organize ways of entry using categories</li>
+<li>Generate and manage registration keys</li>
+<li>Import user-defined keys</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Planning the Mapping of Registration Processes and Ways of Entry</strong></p>
+<p class="wysiwyg-text-align-justify">The entry method of panelists is important for statistics and grouping processes. Therefore, defining specific ways of entry for different registration processes is crucial.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p><strong>Standard Registration Process with Form</strong>:</p>
+<ul>
+<li>You can assign a way of entry unless candidates have keys from a specific invitation or tell-a-friend campaign.</li>
+<li>Using multiple registration forms (e.g., normal process, Social Insight Connect) allows segmentation by entry process.</li>
+</ul>
+</li>
+<li>
+<p><strong>Recruitment for Closed Panels with Registration Keys</strong>:</p>
+<ul>
+<li>Create a dedicated way of entry for each invitation campaign and generate registration keys for it.</li>
+</ul>
+</li>
+<li>
+<p><strong>Tell-a-Friend Campaign</strong>:</p>
+<ul>
+<li>A dedicated way of entry with the same name is created automatically for each new promotional campaign.</li>
+</ul>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Creating New Ways of Entry</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>Click "Create way of entry", enter a name, and choose a category (default is “Default”).</li>
+<li>To assign bonus points differing from the standard setting, enter the desired number in “Number of bonus points”.</li>
+<li>Click “Save”. In the overview table, click the Edit icon to see the details and settings.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Organizing Ways of Entry by Categories</strong></p>
+<p class="wysiwyg-text-align-justify">Go to People → Panel configuration → Categories for ways of entry. Click "Create category", fill in the form, and click "Save". Assign user teams with various access rights by clicking on the Edit rights for category icon.</p>
+<p class="wysiwyg-text-align-justify"><strong>Generating and Editing Registration Keys</strong></p>
+<ul class="wysiwyg-text-align-justify">
+<li>In Panel configuration → Ways of entry, select the appropriate way of entry. Click “Generate keys”, specify the number, and confirm by clicking “Generate keys”.</li>
+<li>Click “Export keys” to export keys as a tab-delimited text file. Click “Export link” to export full links with attached keys in the same format.</li>
+<li>Click “Deactivate keys” to block keys, or “Activate keys” to enable them. Use “Delete keys” and “Delete unused keys” to remove keys.</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Importing User-Defined Keys</strong></p>
+<p class="wysiwyg-text-align-justify">Ensure keys are 8-32 characters long, using 0-9, a-z, A-Z. Prepare a file with one column containing the keys (CSV or Excel). In the editing dialog of the way of entry, click “Import keys”, select the character set and import file, then click “Send”.</p>
+<p class="wysiwyg-text-align-justify"><strong>Dispatching Registration Keys</strong></p>
+<p class="wysiwyg-text-align-justify">As a GET parameter in a link: Send the link via email, including the #ar_key# wildcard. Manual entry: Send the key via email for panelists to manually enter on a special page (additional programming required).</p>
+<p class="wysiwyg-text-align-justify"><strong>Dispatching Keys from a Personalized Project</strong></p>
+<p class="wysiwyg-text-align-justify">Import email addresses and activated registration keys into participant administration. Assign the “Registration key” column during participant import.</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h2 id="pci-configuration" class="wysiwyg-text-align-justify">PCI Configuration</h2>
+<p class="wysiwyg-text-align-justify">The Panelist Compliance Index (PCI) captures panelist reliability and stores it in a variable. Configure a classification system (e.g., “Top panelist”, “reliable panelist”) in the People → Panel configuration → PCI configuration menu. The PCI, updated regularly based on events like survey participation or panel logins, is also available for group building.</p>
+<p class="wysiwyg-text-align-justify"><strong>Developing Your Own Classification System</strong></p>
+<p class="wysiwyg-text-align-justify">A

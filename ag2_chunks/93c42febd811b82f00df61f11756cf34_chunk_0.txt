@@ -1,0 +1,45 @@
+<h1 id="h_01J7B1ET75A8CWA0CKPYQR8DMT">Overview</h1>
+<p>In DXI/EFS, the L2 scope usually spans over the below components:</p>
+<ul>
+<li>EFS Leadership</li>
+<li>Email Services</li>
+<li>New installations (blank, clone)</li>
+<li>New Modules Activation</li>
+<li>SMS Services</li>
+<li>SSO - Identity Providers / OKTA</li>
+<li>Text Analysis (Azure Cognitive Services)</li>
+</ul>
+<p>As an L2, you will also be interacting a lot with the service gateways and the backend MariaDB, along with the Platform Cockpit, Hurricane mail server and Grafana/Rancher. This article provides a blueprint of the must-reads in order to be prepped to successfully tackle DXI L2 tickets.</p>
+<h1 id="h_01J7B1EW2DJ51B6YREVFTN2PN7">Information</h1>
+<h2 id="h_01J7B29A2EK3XZV7Z7PDTM89VV">EFS Leadership</h2>
+<ul>
+<li>This is a special personalized survey type (Self-service 360 Leadership survey) for leaders to evaluate their performance and gather feedback from others. Includes an HR view for reviewing statistics​​.</li>
+<li>This is recently being implemented/replaced using Guides in Portal configurations, and therefore in L2 Scope</li>
+</ul>
+<p><strong>Topic Article: <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20229513405202" target="_blank" rel="noopener noreferrer">EFS Leadership</a></strong></p>
+<h2 id="h_01J7B29WAK191VAZPA9WVYTF2N">New installations/module activation</h2>
+<ul>
+<li>This is a type of request that you may encounter frequently, as customers (especially Kantar and Ipsos) will often require blank/clone installs.</li>
+<li>The process consists of a multitude of steps that need to be taken, and until we somehow (at least partially automate it), it will be done against a checklist-style approach</li>
+<li>The same checklist/guide can be used as well for module activation.</li>
+</ul>
+<p><strong>Topic Article: <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20714568035218" target="_blank" rel="noopener noreferrer">Provisioning new DXI installations</a></strong></p>
+<h2 id="h_01J7B2FYGKTYD2JDN10DFAAK73">Service Gateways/Maria DB</h2>
+<ul>
+<li>Service gateways are machines to which you connect via SSH in order to view and change customer installations.</li>
+<li>They are an integral part of supporting DXI as an L2 agent</li>
+</ul>
+<p><strong>Topic Articles:</strong></p>
+<ul>
+<li><strong><a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21139518716562-How-to-Access-and-Work-with-DXI-Service-Gateways" target="_blank" rel="noopener noreferrer">How to Access and Work with DXI Service Gateways</a></strong></li>
+<li><strong><a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21140364670866-How-to-Access-and-Work-with-MariaDB-on-DXI-Service-Gateways" target="_blank" rel="noopener noreferrer">How to Access and Work with MariaDB on DXI Service Gateways</a></strong></li>
+</ul>
+<h2 id="h_01J7B2RFN78BD717WJM0DNQTJQ">Email Services</h2>
+<ul>
+<li><a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20384449907602" target="_blank" rel="noopener noreferrer">Hurricane Socketlabs MTA Overview</a></li>
+<li><a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21139650545298" target="_blank" rel="noopener noreferrer">Generating a new DKIM Key for a given domain</a></li>
+<li><a style="background-color: #ffffff;" href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/21236040590994-Troubleshooting-Mail-Delivery-Issues-A-Comprehensive-Guide" target="_blank" rel="noopener noreferrer">Troubleshooting Mail Delivery Issues: A Comprehensive Guide</a></li>
+</ul>
+<p>SSO (WIP)</p>
+<p>SMS Services (WIP)</p>
+<p> </p>

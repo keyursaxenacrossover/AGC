@@ -1,0 +1,84 @@
+ defined as “missing” when used in a plausibility check. Therefore, in this case, the actual value of the variable cannot be determined by means of a plausibility check. If you cannot or do not want to work without the plausibility check, you might want to consider using a list instead of hiding conditions.</p>
+</li>
+<li>
+<p>If a plausibility check checks several variables, and only one or a few of these are affected by hiding conditions, it may make sense to deploy the option “Execute check if one or more items are blinded out?”. If this option is activated, the variables affected by the hiding condition will simply be skipped when executing the check. Mind that if all variables of the check are affected, it will not be executed, to prevent those participants get stuck on the page.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="example-plausibility-check" class="wysiwyg-text-align-justify">Example: Plausibility Check</h3>
+<p class="wysiwyg-text-align-justify">Let’s assume that you ask the participants of your survey to enter their year of birth into an open entry field. You want to ensure that they enter only reasonable values: The values should be four-digit numbers inside a reasonable range, e.g. between 1900 and 2000. To realize this with a plausibility check, please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>In the questionnaire editor, choose the page on which you want to perform the plausibility check. Click on the title of that page. The page view will open.</p>
+</li>
+<li>
+<p> Click on the <strong>Plausibility Checks</strong> menu</p>
+</li>
+<li>
+<p>The overview of plausibility checks is opened. No checks have been defined yet.</p>
+</li>
+<li>
+<p>Click on the +<strong> Plausibility check</strong> button.</p>
+</li>
+<li>
+<p>Enter the title.</p>
+</li>
+<li>
+<p>Select the “Range check” check type.</p>
+</li>
+<li>
+<p>Confirm with <strong>Proceed</strong>.</p>
+</li>
+<li>
+<p>The entry dialog is opened.</p>
+</li>
+<li>
+<p>In the “User may ignore this check” field, the “No” option should be activated. This means that the person completing the questionnaire must correct any incorrect entry. Otherwise, the next survey page will not be displayed.</p>
+</li>
+<li>
+<p>Only in projects with classic system layout: In the “Systems to use for check” field, the “Client (JavaScript) AND Server (PHP)” option should be activated.</p>
+</li>
+<li>
+<p>Do not change the setting of the field „Execute check if one or more items are hidden??“. In the current example situation, it does not matter as there are no hidden items.</p>
+</li>
+<li>
+<p>When executing JavaScript plausibility checks you may choose to let the participant neglect the plausibility check. In this case, check Yes with the option offered.</p>
+</li>
+<li>
+<p>Choose which system you would like to check in the responsive layout: Client (JavaScript), Server (PHP), or Client (JavaScript) AND Server (PHP).</p>
+</li>
+<li>
+<p>In the following field, you can edit the message which is displayed if the check condition applies. Please replace the default message “An error occurred!” by “Please enter your year of birth as a four-digit number!”.</p>
+</li>
+<li>
+<p>Next, define the check condition itself: First, select the variable which you want to check.</p>
+</li>
+<li>
+<p>Then, enter the range within which the values are to be valid. In the example shown, “1900” is the minimum, “2000” is the maximum.</p>
+</li>
+<li>
+<p>Click on the <strong>Save</strong> button.</p>
+</li>
+<li>
+<p>To see the pop-up that will be displayed to the respondents, open the <strong>Page Preview</strong> tab and enter an erroneous value to trigger the check.<br>pop-up.</p>
+</li>
+<li>
+<p>The new check is listed in the overview.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">If you do not enter a message, a client-side JavaScript check will not be triggered!</p>
+<p class="wysiwyg-text-align-justify"> </p>
+<h3 id="predefined-plausibility-checks-plausibility-check-types" class="wysiwyg-text-align-justify">Predefined Plausibility Checks (Plausibility Check Types)</h3>
+<p class="wysiwyg-text-align-justify">The following plausibility check types are available by default.</p>
+<table class="wysiwyg-text-align-justify" border="1" data-layout="default" data-table-width="760">
+<colgroup> <col style="width: 171.0px;"> <col style="width: 191.0px;"> <col style="width: 398.0px;"> </colgroup>
+<tbody>
+<tr>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p><strong>Type</strong></p>
+</th>
+<th class="wysiwyg-text-align-center" data-highlight-colour="#c0b6f2">
+<p><strong>Parameter</strong></p>
+</th>
+<th class="wysiwyg-text

@@ -1,0 +1,45 @@
+<h1 id="h_01JAA6TGBXT65QVHSWYDK9NTCN">Overview</h1>
+<p><span style="color: #212529; font-family: -apple-system, BlinkMacSystemFont, ' Segoe UI' , Roboto, ' Helvetica Neue' , Arial, sans-serif, ' Apple Color Emoji' , ' Segoe UI Emoji' , ' Segoe UI Symbol' , ' Noto Color Emoji' font-size:16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: #ffffff; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">This article provides guidance on how </span>to access and query AWS Cloudwatch Database (DB) Logs. </p>
+<h1 id="h_01JAA6TGBXKT3X6TWB7BVMHNKN">Solution</h1>
+<ol>
+<li>Access the <strong>AWS account</strong> related to your customer's datacenter as per the <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20434985085586-Discover-XI-DXI-Agent-Access-Guide-WIP">Access Guide</a>.<br><span style="opacity: 1;"><img id="image_1a383911-3516-4006-9756-69309cf378c1" class="image_resized" style="width: 317px;" src="https://central-supportdesk.zendesk.com/attachments/token/Fy5trweb30RMAzlXLdq4kZeJ3/?name=inlineImage.png"></span>
+</li>
+<li>Search for CloudWatch. If you are dealing with a German datacenter, make sure to select the Frankfurt zone.<br><img id="image_f2077bcd-d4a2-49a6-8bc4-c3185b306a50" src="https://central-supportdesk.zendesk.com/attachments/token/mktcfIw4fZz7KEsr3Qt63IVR1/?name=image.png">
+</li>
+<li>Search for <strong>Cloudwatch</strong> </li>
+<li>Now you can either use <strong>LogGroup</strong> search (which is free), or <strong>LogInsights</strong> (which inquires costs based on data scanned).</li>
+<li>In both cases, you will need to know the <strong>LogGroup</strong>:
+<ul>
+<li>
+<strong>LogGroup </strong>is the category of logs you need to check.</li>
+<li>You will need to get the Database Host from either Service Gateway (<strong>i</strong> command) or <a href="https://globis.3uu.de/login.php3">Globis</a>; then use it to filter the CloudWatch logs.
+<ul>
+<li>For example: <code>prod-de-02-db-07</code>.<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/22013372956306"><br><img id="image_f7c25316-9a99-4de0-b240-3ce8a95d8f70" src="https://central-supportdesk.zendesk.com/attachments/token/PscQL2VZVkaU2HKYwUa0opJ2Z/?name=image.png">
+</li>
+</ul>
+</li>
+<li>Define one or more of the following log groups:</li>
+<li>
+<img id="image_6e05a0cf-327d-40b6-b393-413f403dbe9a" src="https://central-supportdesk.zendesk.com/attachments/token/kI5TnjOPhTwwzJzk7KKqVcgvM/?name=image.png">
+<ol>
+<li>
+<strong>Error</strong>: For DB errors (not PHP errors)</li>
+<li>
+<strong>Slowquery</strong>: Slow query on the DB level, not PHP level (since PHP will send several DB queries in 1 command)</li>
+<li>
+<strong>General</strong>: All queries sent to the DB</li>
+<li>
+<strong>Audit</strong>: Seems not used</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>In both cases, it is recommended to search using the <strong>ConnectionID</strong> if possible:<br>This can be found in different logs, example <code>EFS GUI -&gt; System -&gt; Options -&gt; Platform cockpit -&gt; Admin log</code><br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/22013356500242">
+</li>
+<li>It is recommended to start searching using "<strong>Log groups</strong>" at least to define the exact minute having the issue.
+<ul>
+<li>Select the correct <strong>log group</strong>, then select "<code>Log Streams -&gt; Search All Log Streams</code>", then search for the target string (recommended to use connection ID)<br><img src="https://discoverxi-supportdesk.zendesk.com/hc/article_attachments/22012889188498">
+</li>
+</ul>
+</li>
+<li>

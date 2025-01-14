@@ -1,0 +1,151 @@
+ respective row is always entered in the<br>column corresponding to the level of the unit relative to the reference unit.</p>
+</td>
+<td>
+<p>Text field</p>
+</td>
+<td>
+<p>65,536 characters</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>status</p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p>Process status. Indicates whether the unit is released or locked.</p>
+<p>Available options are:</p>
+<ul>
+<li>
+<p>0: Unit is released, i.e., it can be edited.</p>
+</li>
+<li>
+<p>1: Unit is locked.</p>
+</li>
+</ul>
+</td>
+<td>
+<p>Checkbox</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>co_target</p>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p>Preset number of employees for this unit.</p>
+</td>
+<td>
+<p>int(11)</p>
+</td>
+<td>
+<p>max 2,147,483,647</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>visible</p>
+</td>
+<td>
+<p>Permit allocation<br>to unit in the<br>questionnaire</p>
+</td>
+<td>
+<p>This variable is only relevant in combination with the special programming for self-allocation. It specifies whether a<br>participant who is allowed to allocate himself may view and select the respective unit in the questionnaire. Available options are:</p>
+<ul>
+<li>
+<p>0: Unit is not offered.</p>
+</li>
+<li>
+<p>1: Unit is offered.</p>
+</li>
+</ul>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>historic_code</p>
+</td>
+<td>
+<p>Comparison unit of the preceding year</p>
+</td>
+<td>
+<p>In the past, the code of the comparison unit from the previous survey was stored in this variable. The meta names are used to identify comparison units</p>
+</td>
+<td>
+<p>int(11)</p>
+</td>
+<td>
+<p>max<br>2,147,483,647</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>hide_unit</p>
+</td>
+<td>
+<p>Hide unit in questionnaire (including subunits)</p>
+</td>
+<td>
+<p>This variable is only relevant in combination with the selfallocation. It<br>specifies whether a participant who is allowed to allocate himself may see the respective unit and its subunits in the questionnaire. Available options are:</p>
+<ul>
+<li>
+<p>0: The unit including its subunits is displayed.</p>
+</li>
+<li>
+<p>1: The unit including its subunits is hidden.</p>
+</li>
+</ul>
+</td>
+<td>
+<p>Checkbox</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="wysiwyg-text-align-justify"> </p>
+<h3 id="formatting-of-the-import-file-in-detail-connected-list" class="wysiwyg-text-align-justify"><strong>Formatting of the import file in detail: Connected List</strong></h3>
+<p class="wysiwyg-text-align-justify">You can export and if necessary, externally edit and reimport the organizational structure or parts thereof. This can be useful in various situations:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>You want to check the stored structures and/or numbers or relay these data to third parties for verification.</p>
+</li>
+<li>
+<p>You want to change the names of the units or update already stored numerical values in an already existing structure.</p>
+</li>
+<li>
+<p>You want to reuse parts of the organizational structure elsewhere in the same project. If, for example, two departments have the same or very similar<br>substructures, then you can export the completed substructure of the first department, adjust the names and values for the second department in the export file, and subsequently import it into this second department.</p>
+</li>
+<li>
+<p>You want to reuse the entire organizational structure or parts thereof in another project (e.g., in an intermediate survey).</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify"><strong>Before you start</strong></p>
+<p class="wysiwyg-text-align-justify">Please note: Via import you can insert new substructures in already existing structures, change the names of existing units, or update stored numbers. It is not possible, however, to move, merge, or delete existing units via import.</p>
+<h3 id="exporting-modifying-and-reimporting-an-existing-structure" class="wysiwyg-text-align-justify"><strong>Exporting, modifying, and reimporting an existing structure</strong></h3>
+<p class="wysiwyg-text-align-justify">If you want to modify a structure or parts thereof and reuse it elsewhere in the project, please proceed as follows:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>You want to check the stored structures and/or numbers or relay these data to third parties for verification.</p>
+</li>
+<li>
+<p>You want to change the names of the units or update already stored numerical values in an already existing structure.</p>
+</li>
+<li>
+<p>You want to reuse parts of the organizational structure elsewhere in

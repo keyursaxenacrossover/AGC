@@ -1,0 +1,144 @@
+>GET /efs/taskqueue/{taskId}</code>.</p>
+<p>This is the recommended call for importing bigger batches of participants to a survey and this call is request body compatible to /v2.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "returnIdentifierType": "u_email",
+  "participantList": [
+    {
+      "u_passwd": "123456",
+      "u_firstname": "First",
+      "u_name": "Last",
+      "u_email": "example@domain.tld",
+      "u_mobile": "0049123456",
+      "u_title": "Dr.",
+      "u_gender": "NOT_SPECIFIED",
+      "u_group": 1,
+      "u_language": 1,
+      "u_timezone": "+0:00",
+      "additionalFields": [
+        {
+          "key": "u_example",
+          "value": "test"
+        }
+      ]
+    }
+  ],
+  "allowDuplicateEmails": true
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">1234</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>sampleId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>id of sample to add the participants to <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79KMFB0RCDKS2N45H9A"> </h4>
+<h3 id="header-244">POST /survey/participants/{sampleId}/csv</h3>
+<p>Add multiple participants from a CSV file to a survey or update existing participants using data from a CSV file. Note: this operation works on surveys of type "personalized" only.</p>
+<p>Unlike in the interface, the first row of the CSV data needs to have the correct column labels from the import template of the project. Only <em>u_email</em> is required.</p>
+<p>This call corresponds to the participant import of the participant administration.</p>
+<p><code>returnIdentifierType</code> returns the specified identifier variable as <code>internalReturnValue</code>, usually you will want to know the “uid” of the participant.</p>
+<p><code>mappingColumn</code> returns the specified participant variable as <code>externalReturnValue</code>. This can used to store back information in your system, e.g. by uploading u_crm_id in your CSV data and using that variable as a mappingColumn.</p>
+<p><em><strong>Request body</strong></em></p>
+<pre><code class="language-json">{
+  "csvData": "u_email,u_first,u_name\nexample@domain.tld,First,Last\nexample2@domain.tld,First2,Last2",
+  "returnIdentifierType": "uid",
+  "allowDuplicateEmails": true,
+  "mappingColumn": "u_email"
+}</code></pre>
+<p><em><strong>Response body</strong></em></p>
+<pre><code class="language-json">{
+    "successful": 3,
+    "failed": -1,
+    "failedRows": [],
+    "returnIdentifiers": [
+        {
+            "internalReturnValue": "1",
+            "externalReturnValue": "example@domain.tld"
+        },
+        {
+            "internalReturnValue": "2",
+            "externalReturnValue": "example2@domain.tld"
+        }
+    ]
+}</code></pre>
+<p><em><strong>URI Parameters</strong></em></p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 164.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+<col style="width: 162.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th>
+<p>Name</p>
+</th>
+<th>
+<p>Type</p>
+</th>
+<th>
+<p>Required</p>
+</th>
+<th>
+<p>Description</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>sampleId</p>
+</td>
+<td>
+<p>integer</p>
+</td>
+<td>
+<p>true</p>
+</td>
+<td>
+<p>id of sample to add the participants to or to update the participants in <strong>Examples:</strong> <code>2</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="expand-macro">
+<h4 id="h_01J441N79KDXZRBD5Y80W88K54"> </h4>
+<h3 id="header-245">POST /survey/participants/{sampleId}/csv2</h3>
+<p>Add multiple participants and optionally survey results from a CSV file to a survey or update existing participants

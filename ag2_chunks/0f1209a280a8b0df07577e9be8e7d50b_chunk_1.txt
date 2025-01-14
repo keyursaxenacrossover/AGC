@@ -1,0 +1,108 @@
+Client ID</p>
+</td>
+<td>
+<p>This is an identifier used by OIDC to identify a specific application that wants to use the login from Okta. It will be used in all requests to the Identity Provider to match the correct connection.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Client Secret</p>
+</td>
+<td>
+<p>The client secret is only used in code-flow scenarios to create trust between Okta and the application.</p>
+</td>
+</tr>
+<tr>
+<td colspan="2" data-highlight-colour="#f4f5f7">
+<p class="wysiwyg-text-align-center"><strong>Sign On</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Issuer and Audience</p>
+</td>
+<td>
+<p>Issuer is the one that created the token and audience is the group of entities that is should get access with that token. Both values can be used to check validity of a token.</p>
+</td>
+</tr>
+<tr>
+<td data-highlight-colour="#f4f5f7">
+<p><strong>Assignments</strong></p>
+</td>
+<td>
+<p>Applications can be assigned to groups. Only members of these groups are allowed to access. This is currently not used. See Access and Authorization with IAM module</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p><strong>***</strong> If an application corresponds with an EFS installation which is configured for many different domain-aliases, for each such alias the Login Redirect URI / Logout Redirect URI have to be entered manually in OKTA. In case of portal-specific applications the redirect URI will be configured for each domain-alias registered in EFS (Options / Domains) at creation or edit application. The migration script offers an additional option to update all portal-specific applications to get their redirect links up-to-date.</p>
+<p><strong><u>For API Access see: <a href="https://developer.okta.com/docs/reference/api/apps/">https://developer.okta.com/docs/reference/api/apps/</a></u></strong></p>
+<h1 id="h_01J679R075MB44V7NHKF8FZNJN">Okta Sign-on Policy</h1>
+<p>A Sign-On Policy defines the session lifetime for a user and how often a user is asked for additional factors (MFA).</p>
+<p>A Sign-On-Policy Contains of a container construct bundling a set of rules.</p>
+<table border="1" data-layout="default">
+<tbody>
+<tr>
+<th>
+<p><strong>What</strong></p>
+</th>
+<th>
+<p><strong>Explanation</strong></p>
+</th>
+</tr>
+<tr>
+<td colspan="2" data-highlight-colour="#f4f5f7">
+<p class="wysiwyg-text-align-center"><strong>General settings</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Group Assignment</p>
+</td>
+<td>
+<p>The Group for which this policy takes effect.</p>
+</td>
+</tr>
+<tr>
+<td class="wysiwyg-text-align-center" colspan="2" data-highlight-colour="#f4f5f7">
+<p><strong>Rule Settings</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Prompt for Factor</p>
+</td>
+<td>
+<p>This enables MFA. It has to take care of the factor enrollment settings. Else the login might be broken.</p>
+<p>MFA can have it’s own session lifetime or it could be enabled only once per device or every time.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Session lifetime</p>
+</td>
+<td>
+<p>The lifetime of the Okta session.</p>
+<p>Also see <a href="https://discoverxi-supportdesk.zendesk.com/hc/en-us/articles/20716301558418" target="_blank" rel="noopener noreferrer">Sessions Explained</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p><strong><u>For API Access see:</u></strong></p>
+<p><strong>Sign-On Policy:</strong></p>
+<p><a href="https://developer.okta.com/docs/reference/api/policy/#okta-sign-on-policy">https://developer.okta.com/docs/reference/api/policy/#okta-sign-on-policy</a></p>
+<p><strong>Rules (also Sign-On Policy rules):</strong></p>
+<p><a href="https://developer.okta.com/docs/reference/api/policy/#rules-operations">https://developer.okta.com/docs/reference/api/policy/#rules-operations</a></p>
+<p> </p>
+<h1 id="h_01J679RW2J93J5WE1Y5BG3YD7P">Okta Groups</h1>
+<p>Groups are a way in Okta to manage people and create scoped sets of rules.</p>
+<p>In our case groups are not used for authorization but to create a scope for specific use cases. As we are managing multiple tenants in one Okta tenant this is also a tool to separate tenants.</p>
+<p>Okta Authorization Server</p>
+<p>An Authorization Server is an entity that is used to gather tokens. It defined the security boundary from one tenant to another. The tokens from one Authorization Server could not be used in the scope of another authorization server.</p>
+<p>An Authorization Server requires some configuration.</p>
+<table border="1" data-layout="default">
+<colgroup>
+<col style="width: 170.0px;">
+<col style="width: 508.0

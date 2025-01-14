@@ -1,0 +1,71 @@
+ define your own color scheme for the report. All related functions are located in the Report-&gt;Report settings menu on the Chart tab.</p>
+</li>
+<li>
+<p>To convert a specific table into a chart, you open the<strong> Charts</strong> menu in the workpad toolbar and select the desired chart type.</p>
+</li>
+<li>
+<p>If you wish to enlarge a chart, e.g. to check the values or the legend, all you need to do is to double-click on the chart: It will then be opened in an additional window.</p>
+</li>
+<li>
+<p>All chart-specific setting options, such as color schemes or the display of legends, are combined in the <strong>Charts</strong> → <strong>Chart settings</strong> menu.</p>
+</li>
+<li>
+<p>General settings such as the number format or the display of additional information are made via the dialogs already familiar from the tables, either for the entire report (<strong>Report</strong> →<strong> Report settings</strong> → tab <strong>Table display</strong>) or for a specific chart (<strong>Settings</strong> icon of the workpad toolbar), as required. The only exception is the <strong>Missings</strong> tab, which is not available for charts: The handling of missings in charts is predefined, see the info box below.</p>
+</li>
+<li>
+<p>If you wish to change texts or the sorting order of answer options, you open the equally familiar table editor by clicking on the <strong>Edit</strong> icon of the workpad toolbar.</p>
+</li>
+<li>
+<p>Significance: a z-test and a t-test have been added for significance testing.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">The appearance of the chart varies according to question type, chart type, and selected settings.</p>
+<p class="wysiwyg-text-align-justify">The handling of missings in charts is predefined and cannot be manipulated:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>The missing settings for tables and charts are not interrelated. The Missings tab, in particular, is not available for charts. Table settings made before activating chart display are ignored. If you turn a chart back into a table, you will return to the missing settings made before activating chart display.</p>
+</li>
+<li>
+<p>Optionally, you can insert code „0“ and user-defined missings into charts. If you choose to do so, they will always be included in the calculation of percentages.</p>
+</li>
+<li>
+<p>System missings are ignored for charts.</p>
+</li>
+</ul>
+<h3 id="chart-types" class="wysiwyg-text-align-justify"><strong>Chart types</strong></h3>
+<p class="wysiwyg-text-align-justify"><em>EFS Reporting+</em> supports the following chart types:</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Simple bar and column charts: These charts are used to represent frequency distributions.</p>
+</li>
+<li>
+<p>Stacked bar and column charts: These charts allow you to compare partial and total frequencies for different dimensions.</p>
+</li>
+<li>
+<p>Stacked bar and column charts (100 %): The maximum length or height of the bars and columns, respectively, is 100 %. This concise form of representation makes it easier to compare several questions using identical rating scales.</p>
+</li>
+<li>
+<p>Pie charts: Pie charts are used when frequencies can be added up to a meaningful total sum that equals 100 %.</p>
+</li>
+<li>
+<p>Line charts: This chart type is used to represent the results of several waves or progressions over time.</p>
+</li>
+<li>
+<p>Radar charts: These charts, which are also called “Spider Web” charts, are used to visualize matrix questions. Please mind: that radar charts are currently not supported yet for contingency tables.</p>
+</li>
+<li>
+<p>Displaying the results of the question types 141, 142, and 143 (open-ended answers) in the form of a word cloud. If this type of display is selected in the workpad, more frequently given responses will be displayed in bigger font size and bolder colors than less frequent responses.</p>
+</li>
+</ul>
+<h3 id="word-cloud" class="wysiwyg-text-align-justify"><strong>Word cloud</strong></h3>
+<p class="wysiwyg-text-align-justify">The word cloud will let you display responses in a visual form. More frequently given responses will be displayed in bigger font size and bolder colors than less frequent responses.</p>
+<ul class="wysiwyg-text-align-justify">
+<li>
+<p>Select an element of the type “open-ended answers“. The question selected will be displayed in the workpad.</p>
+</li>
+<li>
+<p>Select the word cloud option from the workpad as displayed above. Your results will now be displayed in the form of a word cloud.</p>
+</li>
+</ul>
+<p class="wysiwyg-text-align-justify">You may configure the word cloud within the <strong>Table settings</strong> to meet your requirements. Select a different font type or size or change the default color into another. The Advanced options will let you set a specific language or whether the language should be recognized automatically. When selecting a language, the system will automatically run your results by a predefined stopword list. Activate the Stemming option to summarize words of the same origin.</p>
+<p class="wysiwyg-text-align-justify">
