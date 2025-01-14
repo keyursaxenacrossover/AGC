@@ -1,7 +1,6 @@
 import os
 from autogen import ConversableAgent, register_function
 from faisslookup import faiss_lookup
-from config import openaikey
 
 # Step 1: Define the Assistant Agent
 assistant = ConversableAgent(
@@ -16,7 +15,7 @@ assistant = ConversableAgent(
         " 5. Ensure that you print 'FINAL LLM RESPONSE' on a new line after your response if the result is **not** 'NO LLM INFO' and you have composed a suitable response to the user. Otherwise, your response is just 'NO LLM INFO' because there is no relevant data in the FAISS lookup(s) to address the user input."
     ),
     llm_config={
-        "config_list": [{"model": "gpt-4o", "api_key": openaikey}]
+        "config_list": [{"model": "gpt-4o", "api_key": os.getenv("OPENAI_API_KEY")}]
     },
 )
 
