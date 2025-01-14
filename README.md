@@ -5,7 +5,7 @@ This is an autogen-based chatbot that relies on a FAISS-based index to lookup an
 
 ## How It Works
 1. **`main.py`** handles the workflow.
-2. The combined user input (text + images) is sent to **`securityagent.py`**, which processes it for malicious intent after generating descriptions from attached images. If malicious intent is detected, the user is informed, and the workflow ends. Otherwise, the process continues.
+2. The combined user input (text + images) is sent to **`securityagent.py`**, which processes it for malicious intent after generating descriptions from attached images. Only PNG format is supported for images. If malicious intent is detected, the user is informed, and the workflow ends. Otherwise, the process continues.
 3. If iumages are provided, they are sent to the **`.\images`** directory and after processing, transferred to the **`.\images_to_delete`** directory.
 4. The input (with image descriptions) is handed off to **`orchestrator.py`**, which passes it to **`thinker.py`**. This acts as the first responder, searching the local FAISS index for relevant data using **`faisslookup.py`**, a tool registered with the autogen agent. If no data is found, the orchestrator terminates the workflow and informs the user about the lack of sufficient information.
 5. If the thinker finds information, it composes a draft response and sends it to the orchestrator.
@@ -42,7 +42,7 @@ Extrapolate these instructions for Mac and Linux as needed.
      * Debugger PIN: 806-584-423
     ```
 9. Open your web browser (avoid using IE) and go to [http://127.0.0.1:5000/](http://127.0.0.1:5000/).
-10. The chatbot interface will load. Use the input box at the bottom to type your message. You can attach PNG images using the browse button or drag and drop them.
+10. The chatbot interface will load. Use the input box at the bottom to type your message. You can attach only PNG images using the browse button or drag and drop them.
 11. Click "Send". The application will process your input, showing a "Processing" message. The workflow can be observed in the PowerShell window.
 
 ## Thoughts about Autogen
