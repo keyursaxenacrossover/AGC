@@ -1,7 +1,7 @@
 # Autogen-Based Chatbot
 
 ## About
-This is an autogen-based chatbot that relies on a FAISS-based index to lookup answers for user inputs. The index is currently built using the Discover XI (Tivian) knowledge base articles from Zendesk.
+This is an autogen-based chatbot that relies on a FAISS-based index to lookup answers for user inputs. The index is currently built using the [Discover XI (Tivian) knowledge base](https://discoverxi-supportdesk.zendesk.com/hc/en-us) articles from Zendesk.
 
 ## How It Works
 1. **`main.py`** handles the workflow.
