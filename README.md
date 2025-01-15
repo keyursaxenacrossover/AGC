@@ -42,8 +42,8 @@ Extrapolate these instructions for Mac and Linux as needed.
      * Debugger PIN: 806-584-423
     ```
 9. Open your web browser (avoid using IE) and go to [http://127.0.0.1:5000/](http://127.0.0.1:5000/).
-10. The chatbot interface will load. Use the input box at the bottom to type your message. You can attach only PNG images using the browse button or drag and drop them.
-11. Click "Send". The application will process your input, showing a "Processing" message. The workflow can be observed in the PowerShell window.
+10. The chatbot interface will load. Use the input box at the bottom to type your message. You can attach PNG images if you like, to provide more context to the text input, using the browse button or drag and drop them on this button.
+11. Click "Send". The application will process your input, showing a "Processing" message. The detailed workflow can be observed in the PowerShell window and the web app will only show the final response. You can continue the conversation after the chatbot has responded - it has basic context retention capabilities.
 
 ## Thoughts about Autogen
 Don't.
